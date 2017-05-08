@@ -16,7 +16,7 @@ module.exports = {
 
   output: {
     filename: 'index.js',
-    path: path.resolve('docs'),
+    path: path.resolve(path.join('docs', 'roboto')),
     libraryTarget: 'umd'
   },
 
@@ -61,6 +61,7 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('styles.css'),
     new StaticSiteGeneratorPlugin({
+      basename: '/roboto',
       crawl: true
     })
   ],

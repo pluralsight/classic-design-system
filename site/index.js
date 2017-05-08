@@ -9,11 +9,11 @@ import Home from './home'
 
 export default locals => {
   return ReactDOMServer.renderToStaticMarkup(
-    <StaticRouter location={locals.path} context={{}}>
+    <StaticRouter basename="/roboto" location={locals.path} context={{}}>
       <Chrome>
         <Route exact path="/" component={Home} />
-        <Route exact path="/components" component={Components} />
-        <Route path="/components/:componentId" component={ComponentDetail} />
+        <Route exact path="/components/" component={Components} />
+        <Route path="/components/:componentId/" component={ComponentDetail} />
       </Chrome>
     </StaticRouter>
   )

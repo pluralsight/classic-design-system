@@ -3,13 +3,13 @@ import React from 'react'
 export default props => (
   <html>
     <head>
-      <link rel="stylesheet" href="/styles.css" />
+      <link rel="stylesheet" href="/roboto/styles.css" />
     </head>
     <body>
       <div>
         {props.children}
       </div>
-      <script src="/index.js" />
+      <script src="/roboto/index.js" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" />
       <link
         rel="stylesheet"
