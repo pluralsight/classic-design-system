@@ -5,12 +5,9 @@ const serve = require('koa-static')
 
 const app = new koa()
 
-app.use(
-  mount(
-    '/roboto',
-    serve(path.resolve(path.join(__dirname, '..', '..', 'docs')))
-  )
-)
+const generatedSiteDir = path.resolve(path.join(__dirname, '..', '..', 'docs'))
+
+app.use(mount('/roboto', serve(generatedSiteDir)))
 
 app.listen(1337)
 
