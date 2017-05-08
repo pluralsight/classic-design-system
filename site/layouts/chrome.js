@@ -3,6 +3,7 @@ import React from 'react'
 export default props => (
   <html>
     <head>
+      <title>roboto</title>
       <link rel="stylesheet" href="/roboto/styles.css" />
     </head>
     <body>

@@ -12937,6 +12937,11 @@ object-assign
               'head',
               null,
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'title',
+                null,
+                'roboto'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'link',
                 { rel: 'stylesheet', href: '/roboto/styles.css' }
               )
