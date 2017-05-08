@@ -1,6 +1,7 @@
 import React from 'react'
 
 import ButtonReadme from '../../packages/button/README.md'
+import Chrome from '../layouts/chrome'
 
 const COMPONENT_PATH_PREFIX = '../../components/'
 
@@ -9,10 +10,10 @@ const docs = {
 }
 
 const ComponentDoc = props => (
-  <div>
+  <Chrome title={props.componentId}>
     Detail doc component for {props.componentId}:
     {React.createElement(docs[props.componentId])}
-  </div>
+  </Chrome>
 )
 
 export default props => (
