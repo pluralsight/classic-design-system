@@ -16,7 +16,7 @@ module.exports = {
 
   output: {
     filename: 'index.js',
-    path: path.resolve(path.join('docs', 'roboto')),
+    path: path.resolve(path.join('docs')),
     libraryTarget: 'umd'
   },
 

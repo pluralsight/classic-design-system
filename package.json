@@ -6,7 +6,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "precommit": "lint-staged",
-    "site": "rimraf docs && concurrently \"webpack --watch --config ./site/build/webpack.config.babel.js\" \"http-server docs\"",
+    "site": "rimraf docs && concurrently \"webpack --watch --config ./site/build/webpack.config.babel.js\" \"node site/build/dev-server.js\"",
     "start": "npm run site"
   },
   "keywords": [
@@ -28,8 +28,10 @@
     "extract-text-webpack-plugin": "^2.1.0",
     "front-matter": "^2.1.2",
     "html-loader": "^0.4.5",
-    "http-server": "^0.9.0",
     "husky": "^0.13.3",
+    "koa": "^2.2.0",
+    "koa-mount": "^3.0.0",
+    "koa-static": "^3.0.0",
     "lerna": "^2.0.0-rc.4",
     "lint-staged": "^3.4.1",
     "prettier": "^1.3.1",
