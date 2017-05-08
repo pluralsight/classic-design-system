@@ -12956,14 +12956,14 @@ object-assign
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'script',
                 {
-                  src: 'http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js'
+                  src: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js'
                 }
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'link',
                 {
                   rel: 'stylesheet',
-                  href: 'http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css',
+                  href: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css',
                   type: 'text/css',
                   media: 'all'
                 }
