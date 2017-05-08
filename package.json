@@ -6,7 +6,8 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "precommit": "lint-staged",
-    "start": "rimraf dist && concurrently \"webpack --watch\" \"http-server dist\""
+    "site": "rimraf docs && concurrently \"webpack --watch --config ./site/build/webpack.config.babel.js\" \"http-server docs\"",
+    "start": "npm run site"
   },
   "keywords": [
     "pluralsight",
