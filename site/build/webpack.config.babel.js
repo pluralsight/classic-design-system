@@ -2,13 +2,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 
-const babelLoader = {
-  loader: 'babel-loader',
-  options: {
-    presets: ['react', 'stage-2']
-  }
-}
-
 module.exports = {
   entry: {
     index: path.join(__dirname, '..', 'index.js')
@@ -25,18 +18,18 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: [babelLoader]
+        use: ['babel-loader']
       },
       {
         test: /\.md$/,
         exclude: /node_modules/,
-        use: [babelLoader, 'react-markdown-loader']
+        use: ['babel-loader', 'react-markdown-loader']
       },
       {
         test: /\.html$/,
         exclude: /node_modules/,
         use: [
-          babelLoader,
+          'babel-loader',
           'import-react-loader',
           'react-styleable-classname-loader',
           'rename-jsx-attributes-loader'
@@ -69,6 +62,7 @@ module.exports = {
   resolveLoader: {
     alias: {
       'import-react-loader': path.join(__dirname, 'import-react-loader.js'),
+      'react-html-loader': path.join(__dirname, 'react-html-loader/index.js'),
       'react-markdown-loader': path.join(
         __dirname,
         'react-markdown-loader/index.js'

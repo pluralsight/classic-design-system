@@ -1,6 +1,6 @@
 ---
 imports: 
-  html: '!!raw-loader!./button.html'
+  html: '!!raw-loader!react-html-loader!babel-loader!./button.js'
   css: '!!raw-loader!./button.css'
   Button: './button.js'
 ---
@@ -14,7 +14,6 @@ The readme file
 ```render html
 {html}
 ```
-
 ## This is CSS
 
 ```render css
@@ -30,5 +29,3 @@ This is it:
 ```
 
 Wowzers.
-
-
