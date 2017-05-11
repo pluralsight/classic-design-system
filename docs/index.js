@@ -13109,6 +13109,24 @@ object-assign
           value: true
         })
 
+        var _extends =
+          Object.assign ||
+          function(target) {
+            for (var i = 1; i < arguments.length; i++) {
+              var source = arguments[i]
+              for (var key in source) {
+                if (Object.prototype.hasOwnProperty.call(source, key)) {
+                  target[key] = source[key]
+                }
+              }
+            }
+            return target
+          }
+
+        var _propTypes = __webpack_require__(8)
+
+        var _propTypes2 = _interopRequireDefault(_propTypes)
+
         var _reactStyleable = __webpack_require__(210)
 
         var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
@@ -13128,14 +13146,13 @@ object-assign
         var Button = function Button(props) {
           return _react2.default.createElement(
             'button',
-            { className: props.css['root'] },
-            _react2.default.createElement(
-              'span',
-              { className: props.css['icon'] },
-              'ICON\xA0'
-            ),
+            _extends({ className: props.css['root'] }, props),
             props.children
           )
+        }
+
+        Button.propTypes = {
+          size: _propTypes2.default.string
         }
 
         exports.default = (0, _reactStyleable2.default)(_button2.default)(
@@ -13320,10 +13337,7 @@ object-assign
       /* 101 */
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
-        module.exports = {
-          root: '_13BjwsVpEMskJKLdmOEeay',
-          icon: '_2hlJZ2OZEebXLLv9T1ZX8h'
-        }
+        module.exports = { root: '_13BjwsVpEMskJKLdmOEeay' }
 
         /***/
       },
@@ -15954,14 +15968,13 @@ object-assign
       /* 124 */
       /***/ function(module, exports) {
         module.exports =
-          '.root {\n  background: orange;\n}\n.icon {\n  height: 25px;\n  width: 25px;\n}'
+          '.root {\n  display: inline-block;\n  padding: 8px 16px;\n  border: 0;\n  border-radius: 2px;\n  font-weight: 500;\n\n  font-size: 14px;\n  line-height: 24px;\n  text-align: center;\n\n  /* TODO: font family */\n  color: #fff;\n  background: #F96816;\n}'
 
         /***/
       },
       /* 125 */
       /***/ function(module, exports) {
-        module.exports =
-          '<button class="root"><span class="icon">ICON </span></button>'
+        module.exports = '<button class="root"></button>'
 
         /***/
       },

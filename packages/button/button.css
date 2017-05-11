@@ -1,7 +1,15 @@
 .root {
-  background: orange;
-}
-.icon {
-  height: 25px;
-  width: 25px;
+  display: inline-block;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 2px;
+  font-weight: 500;
+
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  /* TODO: font family */
+  color: #fff;
+  background: #F96816;
 }
