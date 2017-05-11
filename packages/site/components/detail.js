@@ -1,10 +1,10 @@
 import React from 'react'
 
-import ButtonReadme from '../../button/README.md'
+import ButtonDoc from './button'
 import Chrome from '../layouts/chrome'
 
 const docs = {
-  button: ButtonReadme
+  button: ButtonDoc
 }
 
 const ComponentDoc = props => (

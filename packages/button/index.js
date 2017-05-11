@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import styleable from 'react-styleable'
 import React from 'react'
 
-import css from './button.css'
+import css from './index.css'
 
 const getClassName = props => {
   // TODO: handle sizes here
