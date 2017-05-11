@@ -7,6 +7,7 @@ Run:
 
 ```
 npm install 
+npm run bootstrap
 npm start
 ```
 
@@ -16,6 +17,7 @@ Test:
 
 ```
 npm install
+npm run bootstrap
 npm test
 ```
 
@@ -47,6 +49,6 @@ Package dependencies should be specified in the individual package's `package.js
 
 Many of these packages (ie, those using react), list `react` and `react-dom` as `peerDependencies`. Lerna [will not install those](https://github.com/lerna/lerna/issues/160), so `lerna bootstrap` will fail.  These peer dependencies are an exception and are stored in the project root `package.json` `dependencies`.
 
-### Site README build dependencies
+### Site doc build dependencies
 
-Packages store their own README doc.  Dependencies used to build this are also an exception and stored in the `devDependencies` of the root project.
+Dependencies used to build this are also an exception and stored in the `devDependencies` of the root project.

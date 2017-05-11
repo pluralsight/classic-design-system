@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "style": "index.css",
   "scripts": {
     "test": "echo \"Error: tests run in as a single design system suite\" && exit 1"
   },
