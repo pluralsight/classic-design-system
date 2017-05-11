@@ -1,9 +1,7 @@
 import React from 'react'
 
-import ButtonReadme from '../../packages/button/README.md'
+import ButtonReadme from '../../button/README.md'
 import Chrome from '../layouts/chrome'
-
-const COMPONENT_PATH_PREFIX = '../../components/'
 
 const docs = {
   button: ButtonReadme
