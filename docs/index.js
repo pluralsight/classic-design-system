@@ -9470,6 +9470,20 @@ object-assign
                 return emptyFunction.thatReturnsNull
               }
 
+              for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+                var checker = arrayOfTypeCheckers[i]
+                if (typeof checker !== 'function') {
+                  warning(
+                    false,
+                    'Invalid argument supplid to oneOfType. Expected an array of check functions, but ' +
+                      'received %s at index %s.',
+                    getPostfixForTypeWarning(checker),
+                    i
+                  )
+                  return emptyFunction.thatReturnsNull
+                }
+              }
+
               function validate(
                 props,
                 propName,
@@ -9661,6 +9675,9 @@ object-assign
             // This handles more types than `getPropType`. Only used for error messages.
             // See `createPrimitiveTypeChecker`.
             function getPreciseType(propValue) {
+              if (typeof propValue === 'undefined' || propValue === null) {
+                return '' + propValue
+              }
               var propType = getPropType(propValue)
               if (propType === 'object') {
                 if (propValue instanceof Date) {
@@ -9670,6 +9687,23 @@ object-assign
                 }
               }
               return propType
+            }
+
+            // Returns a string that is postfixed to a warning about an invalid type.
+            // For example, "undefined" or "of type array"
+            function getPostfixForTypeWarning(value) {
+              var type = getPreciseType(value)
+              switch (type) {
+                case 'array':
+                case 'object':
+                  return 'an ' + type
+                case 'boolean':
+                case 'date':
+                case 'regexp':
+                  return 'a ' + type
+                default:
+                  return type
+              }
             }
 
             // Returns class name of the object, if any.
@@ -13121,7 +13155,8 @@ object-assign
               }
             }
             return target
-          }
+          } // TODO: resolve dependency once site is run as a lerna package
+        // import { capitalize } from '@pluralsight/ds-util'
 
         var _propTypes = __webpack_require__(8)
 
@@ -13143,10 +13178,15 @@ object-assign
           return obj && obj.__esModule ? obj : { default: obj }
         }
 
+        var getClassName = function getClassName(props) {
+          // TODO: handle sizes here
+          return 'root'
+        }
+
         var Button = function Button(props) {
           return _react2.default.createElement(
             'button',
-            _extends({ className: props.css['root'] }, props),
+            _extends({ className: getClassName(props) }, props),
             props.children
           )
         }

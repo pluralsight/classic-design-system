@@ -9,5 +9,11 @@
   "keywords": [],
   "author": "jaketrent",
   "license": "Apache 2.0",
-  "repository": "ps-dev/roboto"
+  "repository": "ps-dev/roboto",
+  "peerDependencies": {
+    "react": ">=0.15.0 < 16.0.0"
+  },
+  "dependencies": {
+    "@pluralsight/ds-util": "^1.0.0"
+  }
 }
