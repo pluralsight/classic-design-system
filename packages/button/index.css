@@ -1,4 +1,7 @@
-.root {
+.test {
+  color:red;
+}
+.ps-button {
   display: inline-block;
   padding: 8px 16px;
   border: 0;
@@ -12,4 +15,7 @@
   /* TODO: font family */
   color: #fff;
   background: #F96816;
+}
+.ps-button-medium {
+  composes: ps-button;
 }
