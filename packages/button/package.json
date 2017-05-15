@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@pluralsight/ds-util": "^1.0.0",
+    "classnames": "^2.2.5",
     "react-styleable": "^2.2.5"
   }
 }

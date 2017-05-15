@@ -18694,6 +18694,10 @@ object-assign
             return target
           }
 
+        var _classnames = __webpack_require__(283)
+
+        var _classnames2 = _interopRequireDefault(_classnames)
+
         var _dsUtil = __webpack_require__(145)
 
         var _dsUtil2 = _interopRequireDefault(_dsUtil)
@@ -18727,14 +18731,18 @@ object-assign
         var propDefs = (exports.propDefs = {
           size: {
             type: 'oneOf',
-            value: ['small', 'medium', 'large'],
+            value: ['tiny', 'small', 'medium', 'large'],
             default: 'medium'
           }
         })
 
         var getClassName = function getClassName(props) {
-          return props.css['ps-button-' + props.size]
+          return (0, _classnames2.default)(
+            'ps-button',
+            'ps-button-' + props.size
+          )
         }
+
         var rmSystemProps = function rmSystemProps(props) {
           var css = props.css,
             size = props.size,
@@ -19096,9 +19104,11 @@ object-assign
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
         module.exports = {
-          test: '_3xAYYwPI6xxCrX14k0z-pp',
           'ps-button': '_2hSPmRUQtTz-MXPz7pjdtI',
-          'ps-button-medium': '_2t69Xb7gM4efmfqXVijkTt _2hSPmRUQtTz-MXPz7pjdtI'
+          'ps-button-tiny': '_1SwKByBBiG_GjK2jvOHeOI',
+          'ps-button-small': '_2ckK82FZnQMcxTSuLWyPMO',
+          'ps-button-medium': '_2t69Xb7gM4efmfqXVijkTt',
+          'ps-button-large': '_2vDjKNt20V2Gk7pcHLXQF6'
         }
 
         /***/
@@ -21744,20 +21754,20 @@ object-assign
       /* 173 */
       /***/ function(module, exports) {
         module.exports =
-          "import util from '@pluralsight/ds-util'\nimport styleable from 'react-styleable'\nimport React from 'react'\n\nimport css from './index.css'\n\nexport const propDefs = {\n  size: {\n    type: 'oneOf',\n    value: ['small', 'medium', 'large'],\n    default: 'medium'\n  }\n}\n\nconst getClassName = props => props.css['ps-button-' + props.size]\nconst rmSystemProps = props => {\n  const { css, size, ...rest } = props\n  return rest\n}\n\nexport const Button = props => (\n  <button className={getClassName(props)} {...rmSystemProps(props)}>\n    {props.children}\n  </button>\n)\n\n// TODO: hoc these\nButton.propTypes = util.propDefs.generatePropTypes(propDefs)\nButton.defaultProps = util.propDefs.generateDefaultProps(propDefs)\n\nexport default styleable(css)(Button)\n"
+          "import classNames from 'classnames'\nimport util from '@pluralsight/ds-util'\nimport styleable from 'react-styleable'\nimport React from 'react'\n\nimport css from './index.css'\n\nexport const propDefs = {\n  size: {\n    type: 'oneOf',\n    value: ['tiny', 'small', 'medium', 'large'],\n    default: 'medium'\n  }\n}\n\nconst getClassName = props =>\n        classNames(\n          'ps-button',\n          'ps-button-' + props.size\n        )\n\nconst rmSystemProps = props => {\n  const { css, size, ...rest } = props\n  return rest\n}\n\nexport const Button = props => (\n  <button className={getClassName(props)} {...rmSystemProps(props)}>\n    {props.children}\n  </button>\n)\n\n// TODO: hoc these\nButton.propTypes = util.propDefs.generatePropTypes(propDefs)\nButton.defaultProps = util.propDefs.generateDefaultProps(propDefs)\n\nexport default styleable(css)(Button)\n"
 
         /***/
       },
       /* 174 */
       /***/ function(module, exports) {
-        module.exports = '<button class="ps-button-medium"></button>'
+        module.exports = '<button class="ps-button ps-button-medium"></button>'
 
         /***/
       },
       /* 175 */
       /***/ function(module, exports) {
         module.exports =
-          '.test {\n  color:red;\n}\n.ps-button {\n  display: inline-block;\n  padding: 8px 16px;\n  border: 0;\n  border-radius: 2px;\n  font-weight: 500;\n\n  font-size: 14px;\n  line-height: 24px;\n  text-align: center;\n\n  /* TODO: font family */\n  color: #fff;\n  background: #F96816;\n}\n.ps-button-medium {\n  composes: ps-button;\n}'
+          '.ps-button {\n  display: inline-block;\n  padding: 8px 16px;\n  border: 0;\n  border-radius: 2px;\n\n  font-size: 14px;\n  line-height: 24px;\n  font-weight: 500;\n  text-align: center;\n\n  /* TODO: font family */\n  color: #fff;\n  background: #F96816;\n}\n.ps-button-tiny {\n  font-size: 14px;\n  line-height: 24px;\n}\n.ps-button-small {\n  font-size: 14px;\n  line-height: 24px;\n}\n.ps-button-medium {\n  font-size: 14px;\n  line-height: 24px;\n}\n.ps-button-large {\n  font-size: 18px;\n  line-height: 32px;\n}'
 
         /***/
       },
@@ -36746,6 +36756,69 @@ object-assign
         }
 
         exports.default = valueEqual
+
+        /***/
+      },
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      /* 277 */ /* 278 */ /* 279 */ /* 280 */ /* 281 */ /* 282 */ /* 283 */
+      /***/ function(module, exports, __webpack_require__) {
+        var __WEBPACK_AMD_DEFINE_ARRAY__,
+          __WEBPACK_AMD_DEFINE_RESULT__ /*!
+  Copyright (c) 2016 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+        /* global define */
+
+        ;(function() {
+          'use strict'
+          var hasOwn = {}.hasOwnProperty
+
+          function classNames() {
+            var classes = []
+
+            for (var i = 0; i < arguments.length; i++) {
+              var arg = arguments[i]
+              if (!arg) continue
+
+              var argType = typeof arg
+
+              if (argType === 'string' || argType === 'number') {
+                classes.push(arg)
+              } else if (Array.isArray(arg)) {
+                classes.push(classNames.apply(null, arg))
+              } else if (argType === 'object') {
+                for (var key in arg) {
+                  if (hasOwn.call(arg, key) && arg[key]) {
+                    classes.push(key)
+                  }
+                }
+              }
+            }
+
+            return classes.join(' ')
+          }
+
+          if (typeof module !== 'undefined' && module.exports) {
+            module.exports = classNames
+          } else if (true) {
+            // register as 'classnames', consistent with npm package name
+            !((__WEBPACK_AMD_DEFINE_ARRAY__ = []), (__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+              return classNames
+            }.apply(
+              exports,
+              __WEBPACK_AMD_DEFINE_ARRAY__
+            )), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined &&
+              (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))
+          } else {
+            window.classNames = classNames
+          }
+        })()
 
         /***/
       }

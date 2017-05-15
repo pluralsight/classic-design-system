@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import util from '@pluralsight/ds-util'
 import styleable from 'react-styleable'
 import React from 'react'
@@ -7,12 +8,13 @@ import css from './index.css'
 export const propDefs = {
   size: {
     type: 'oneOf',
-    value: ['small', 'medium', 'large'],
+    value: ['tiny', 'small', 'medium', 'large'],
     default: 'medium'
   }
 }
 
-const getClassName = props => props.css['ps-button-' + props.size]
+const getClassName = props => classNames('ps-button', 'ps-button-' + props.size)
+
 const rmSystemProps = props => {
   const { css, size, ...rest } = props
   return rest

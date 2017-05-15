@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <button
-  className="ps-button-medium"
+  className="ps-button ps-button-medium"
 >
   Label
 </button>
