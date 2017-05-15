@@ -1,0 +1,5 @@
+@import "@pluralsight/ds-core";
+
+.root {
+  color: var(--psColorsWhite);
+}

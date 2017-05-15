@@ -1,0 +1,10 @@
+:root {
+  /* spacing */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXl: 40px;
+  --psLayoutSpacingXxl: 56px;
+}

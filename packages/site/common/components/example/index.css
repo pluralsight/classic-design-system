@@ -1,0 +1,15 @@
+@import "@pluralsight/ds-core";
+
+.root {
+  outline: 1px solid blue;
+}
+.output {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--psLayoutSpacingLarge);
+  background: var(--psColorsGray06);
+}
+.src {
+  padding: var(--psLayoutSpacingLarge);
+  background: var(--psColorsGray03);
+}
