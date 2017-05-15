@@ -1,5 +1,3 @@
 import React from 'react'
 
-export default props => (
-  <div dangerouslySetInnerHTML={{ __html: props.children }} />
-)
+export default props => <div>{props.children}</div>

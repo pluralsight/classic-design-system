@@ -1,4 +1,7 @@
-._2hSPmRUQtTz-MXPz7pjdtI {
+.root__3shuw {
+}.root__PQ8v_ {
+  outline: 1px solid red;
+}.ps-button__2hSPm {
   display: inline-block;
   padding: 8px 16px;
   border: 0;
@@ -13,22 +16,43 @@
   color: #fff;
   background: #F96816;
 }
-._1SwKByBBiG_GjK2jvOHeOI {
+
+/* size */
+
+.ps-button--tiny__2OADV {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.ps-button--small__dz_BG {
   font-size: 14px;
   line-height: 24px;
 }
-._2ckK82FZnQMcxTSuLWyPMO {
+
+.ps-button--medium__33x7N {
   font-size: 14px;
   line-height: 24px;
 }
-._2t69Xb7gM4efmfqXVijkTt {
-  font-size: 14px;
-  line-height: 24px;
-}
-._2vDjKNt20V2Gk7pcHLXQF6 {
+
+.ps-button--large__2aoJi {
   font-size: 18px;
   line-height: 32px;
-}._3shuwbOqrxn17kUy5Uo89 {
-}.PQ8v_kRDsNTz23XbLY2fu {
-  outline: 1px solid red;
 }
+
+/* appearance */
+
+.ps-button--stroke__1c8f6 {
+  border: 1px solid #F96816;
+  color: #F96816;
+  background: none;
+}
+
+.ps-button--flat__1S8n0 {
+  border: none;
+  color: #F96816;
+  background: none;
+}
+
+/* icon and iconAlign */
+
+/* disabled */

@@ -1,4 +1,4 @@
-<div><div><html><head><title>button</title><link rel="stylesheet" href="/roboto/styles.css"/></head><body><div>Detail doc component for button:<div class="PQ8v_kRDsNTz23XbLY2fu"><pre class="_3shuwbOqrxn17kUy5Uo89"><code class="language-html hljs html">&lt;button class=&quot;ps-button ps-button-medium&quot;&gt;&lt;/button&gt;</code></pre><pre class="_3shuwbOqrxn17kUy5Uo89"><code class="language-css hljs css">.ps-button {
+<div><div><html><head><title>button</title><link rel="stylesheet" href="/roboto/styles.css"/></head><body><div>Detail doc component for button:<div class="root__PQ8v_"><pre class="root__3shuw"><code class="language-html hljs html">&lt;button class=&quot;ps-button ps-button--medium&quot;&gt;&lt;/button&gt;</code></pre><pre class="root__3shuw"><code class="language-css hljs css">.ps-button {
   display: inline-block;
   padding: 8px 16px;
   border: 0;
@@ -13,23 +13,47 @@
   color: #fff;
   background: #F96816;
 }
-.ps-button-tiny {
+
+/* size */
+
+.ps-button--tiny {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.ps-button--small {
   font-size: 14px;
   line-height: 24px;
 }
-.ps-button-small {
+
+.ps-button--medium {
   font-size: 14px;
   line-height: 24px;
 }
-.ps-button-medium {
-  font-size: 14px;
-  line-height: 24px;
-}
-.ps-button-large {
+
+.ps-button--large {
   font-size: 18px;
   line-height: 32px;
-}</code></pre><pre class="_3shuwbOqrxn17kUy5Uo89"><code class="language-html hljs html">
-  &lt;Button&gt;react docs&lt;/Button&gt;
-</code></pre><div>
-  <Button>react docs</Button>
-</div></div></div><script src="/roboto/index.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css" type="text/css" media="all"/><script>hljs.initHighlightingOnLoad();</script></body></html></div></div>
+}
+
+/* appearance */
+
+.ps-button--stroke {
+  border: 1px solid #F96816;
+  color: #F96816;
+  background: none;
+}
+
+.ps-button--flat {
+  border: none;
+  color: #F96816;
+  background: none;
+}
+
+/* icon and iconAlign */
+
+/* disabled */</code></pre><pre class="root__3shuw"><code class="language-javascript hljs javascript">import React from &#x27;react&#x27;
+import DsButton from &#x27;@pluralsight/ds-button&#x27;
+
+export default &lt;DsButton&gt;wowzers&lt;/DsButton&gt;
+</code></pre><div><button class="ps-button__2hSPm ps-button--medium__33x7N">wowzers</button></div></div></div><script src="/roboto/index.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css" type="text/css" media="all"/><script>hljs.initHighlightingOnLoad();</script></body></html></div></div>
