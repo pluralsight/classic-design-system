@@ -1,4 +1,6 @@
 :root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
   /* font size */
   --psTypeFontSizeGigantic: 60px;
   --psTypeFontSizeXxxl: 48px;

@@ -1,0 +1,8 @@
+@import "@pluralsight/ds-core";
+
+.root {
+  font-size: var(--psTypeFontSizeLarge);
+  letter-spacing: var(--psTypeLetterSpacingLarge);
+  font-weight: var(--psTypeFontWeightBook);
+  color: var(--psColorsGray06);
+}

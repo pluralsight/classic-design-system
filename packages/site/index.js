@@ -6,6 +6,7 @@ import Chrome from './layouts/chrome'
 import Components from './components'
 import ComponentDetail from './components/detail'
 import Home from './home'
+import './index.css'
 
 export default locals => {
   return ReactDOMServer.renderToStaticMarkup(

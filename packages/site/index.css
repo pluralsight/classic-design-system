@@ -1,0 +1,9 @@
+@import url(https://cloud.typography.com/6966154/691568/css/fonts.css);
+@import "@pluralsight/ds-core";
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: var(--psTypeFontFamily);
+}
