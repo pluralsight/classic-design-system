@@ -15,7 +15,7 @@ export default styleable(css)(props => {
     <div className={props.css.root}>
       <Code lang="html">{srcHtml}</Code>
       <Code lang="css">{srcCss}</Code>
-      <Code lang="javascript">{srcJs}</Code>
+      <Code lang="html">{srcJs}</Code>
       <CodeOutput>{srcJsOutput}</CodeOutput>
     </div>
   )

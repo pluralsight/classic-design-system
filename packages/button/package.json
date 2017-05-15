@@ -15,6 +15,7 @@
     "react": ">=0.15.0 < 16.0.0"
   },
   "dependencies": {
+    "@pluralsight/ds-core": "^1.0.0",
     "@pluralsight/ds-util": "^1.0.0",
     "classnames": "^2.2.5",
     "react-styleable": "^2.2.5"

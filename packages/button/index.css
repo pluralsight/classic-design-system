@@ -1,46 +1,48 @@
+@import "@pluralsight/ds-core";
+
 .ps-button {
   display: inline-block;
   padding: 8px 16px;
   border: 0;
   border-radius: 2px;
 
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 500;
+  font-size: var(--psTypeFontSizeSmall);
+  line-height: var(--psTypeLineHeightStandard);
+  font-weight: var(--psTypeFontWeightMedium);
   text-align: center;
 
   /* TODO: font family */
   color: #fff;
-  background: #F96816;
+  background: var(--psColorsOrange);
 }
 
 /* size */
 .ps-button--tiny {
-  font-size: 12px;
-  line-height: 24px;
+  font-size: var(--psTypeFontSizeExtraSmall);
+  line-height: var(--psTypeLineHeightStandard);
 }
 .ps-button--small {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: var(--psTypeFontSizeSmall);
+  line-height: var(--psTypeLineHeightStandard);
 }
 .ps-button--medium {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: var(--psTypeFontSizeSmall);
+  line-height: var(--psTypeLineHeightStandard);
 }
 .ps-button--large {
-  font-size: 18px;
-  line-height: 32px;
+  font-size: var(--psTypeFontSizeMedium);
+  line-height: var(--psTypeLineHeightExtra);
 }
 
 /* appearance */
 .ps-button--stroke {
-  border: 1px solid #F96816;
-  color: #F96816;
+  border: 1px solid var(--psColorsOrange);
+  color: var(--psColorsOrange);
   background: none;
 }
 .ps-button--flat {
   border: none;
-  color: #F96816;
+  color: var(--psColorsOrange);
   background: none;
 }
 

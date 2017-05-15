@@ -1,0 +1,27 @@
+:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* role colors */
+  --psColorsRoleYellowLighter: #fd39bc;
+  --psColorsRoleYellowLight: #fbcd64;
+  --psColorsRoleYellow: #f8b721;
+  --psColorsRoleYellowDark: #ae8017;
+  --psColorsRoleYellowDarker: #7c5b12;
+}

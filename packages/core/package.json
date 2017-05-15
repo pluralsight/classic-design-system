@@ -1,0 +1,14 @@
+{
+  "name": "@pluralsight/ds-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "style": "css/index.css",
+  "scripts": {
+    "test": "echo \"Error: tests run in as a single design system suite\" && exit 1"
+  },
+  "keywords": [],
+  "author": "jaketrent",
+  "license": "Apache 2.0",
+  "repository": "ps-dev/roboto"
+}
