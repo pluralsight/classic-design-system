@@ -11,11 +11,11 @@ class Example extends React.Component {
     console.log('evt', evt)
   }
   renderOutputs(props) {
-    return props.permutations.map((p, i) =>
+    return [{}, ...props.permutations].map((p, i) =>
       React.cloneElement(props.component, {
         key: i,
-        onClick: this.handleOutputClick.bind(this, p),
-        ...p
+        ...p,
+        onClick: this.handleOutputClick.bind(this, p)
       })
     )
   }
@@ -23,7 +23,6 @@ class Example extends React.Component {
     return (
       <div className={this.props.css.root}>
         <div className={this.props.css.output}>
-          {this.props.component}
           {this.renderOutputs(this.props)}
         </div>
         <div className={this.props.css.src}>

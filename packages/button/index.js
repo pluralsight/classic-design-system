@@ -25,7 +25,7 @@ const getClassName = props =>
   })
 
 const rmSystemProps = props => {
-  const { css, size, ...rest } = props
+  const { css, size, appearance, ...rest } = props
   return rest
 }
 
