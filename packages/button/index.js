@@ -10,10 +10,19 @@ export const propDefs = {
     type: 'oneOf',
     value: ['tiny', 'small', 'medium', 'large'],
     default: 'medium'
+  },
+  appearance: {
+    type: 'oneOf',
+    value: ['stroke', 'flat']
   }
 }
 
-const getClassName = props => classNames('ps-button', 'ps-button-' + props.size)
+const getClassName = props =>
+  classNames({
+    [props.css['ps-button']]: true,
+    [props.css['ps-button--' + props.size]]: props.size,
+    [props.css['ps-button--' + props.appearance]]: props.appearance
+  })
 
 const rmSystemProps = props => {
   const { css, size, ...rest } = props

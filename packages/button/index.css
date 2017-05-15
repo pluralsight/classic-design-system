@@ -13,19 +13,37 @@
   color: #fff;
   background: #F96816;
 }
-.ps-button-tiny {
+
+/* size */
+.ps-button--tiny {
+  font-size: 12px;
+  line-height: 24px;
+}
+.ps-button--small {
   font-size: 14px;
   line-height: 24px;
 }
-.ps-button-small {
+.ps-button--medium {
   font-size: 14px;
   line-height: 24px;
 }
-.ps-button-medium {
-  font-size: 14px;
-  line-height: 24px;
-}
-.ps-button-large {
+.ps-button--large {
   font-size: 18px;
   line-height: 32px;
 }
+
+/* appearance */
+.ps-button--stroke {
+  border: 1px solid #F96816;
+  color: #F96816;
+  background: none;
+}
+.ps-button--flat {
+  border: none;
+  color: #F96816;
+  background: none;
+}
+
+/* icon and iconAlign */
+
+/* disabled */
