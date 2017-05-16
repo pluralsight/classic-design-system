@@ -82,7 +82,7 @@
 }
 .src___3iREM {
   padding: var(--psLayoutSpacingLarge);
-  background: var(--psColorsGray03);
+  background: var(--psColorsGray04);
 }
 .srcOptions___23pDb {
   margin: 0;
@@ -91,7 +91,8 @@
 .react___2UUp_ {
   background: none;
   padding: 0;
-}:root {
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
