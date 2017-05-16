@@ -1,5 +1,6 @@
-# roboto
-ps design system
+# Pluralsight Design System
+
+Light WIP -- 50% less fat!
 
 ## Reference Site
 
@@ -14,7 +15,7 @@ npm start
 
 Live URL:
 
-[ps-dev.github.io/roboto](https://ps-dev.github.io/roboto)
+[pluralsight.github.io/design-system](https://pluralsight.github.io/design-system)
 
 ## Packages
 

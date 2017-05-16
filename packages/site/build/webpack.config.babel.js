@@ -59,7 +59,7 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('styles.css'),
     new StaticSiteGeneratorPlugin({
-      basename: '/roboto',
+      basename: '/design-system',
       crawl: true
     })
   ],

@@ -20,27 +20,27 @@ const routes = (
 const Html = props => (
   <html>
     <head>
-      <title>{props.title || 'roboto'}</title>
+      <title>{props.title || 'design-system'}</title>
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css"
         type="text/css"
         media="all"
       />
-      <link rel="stylesheet" href="/roboto/styles.css" />
+      <link rel="stylesheet" href="/design-system/styles.css" />
     </head>
     <body>
       <div id="app">
         {props.children}
       </div>
-      <script src="/roboto/index.js" />
+      <script src="/design-system/index.js" />
     </body>
   </html>
 )
 
 export default locals => {
   return ReactDOMServer.renderToStaticMarkup(
-    <StaticRouter basename="/roboto" location={locals.path} context={{}}>
+    <StaticRouter basename="/design-system" location={locals.path} context={{}}>
       <Html>
         {routes}
       </Html>
@@ -50,7 +50,7 @@ export default locals => {
 
 if (typeof document != 'undefined') {
   ReactDOM.render(
-    <BrowserRouter basename="/roboto">{routes}</BrowserRouter>,
+    <BrowserRouter basename="/design-system">{routes}</BrowserRouter>,
     document.getElementById('app')
   )
 }
