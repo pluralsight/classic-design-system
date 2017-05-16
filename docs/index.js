@@ -20257,6 +20257,10 @@ object-assign
           )
         }
 
+        var highlight = function highlight(el) {
+          return hljs.highlightBlock(el)
+        }
+
         var Example = (function(_React$Component) {
           _inherits(Example, _React$Component)
 
@@ -20282,6 +20286,18 @@ object-assign
           }
 
           _createClass(Example, [
+            {
+              key: 'componentDidMount',
+              value: function componentDidMount() {
+                ;[this.htmlEl, this.reactEl].forEach(highlight)
+              }
+            },
+            {
+              key: 'componentDidUpdate',
+              value: function componentDidUpdate() {
+                ;[this.htmlEl, this.reactEl].forEach(highlight)
+              }
+            },
             {
               key: 'handleOutputClick',
               value: function handleOutputClick(permutation) {
@@ -20321,6 +20337,8 @@ object-assign
             {
               key: 'render',
               value: function render() {
+                var _this3 = this
+
                 return _react2.default.createElement(
                   'div',
                   { className: this.props.css.root },
@@ -20334,14 +20352,30 @@ object-assign
                     { className: this.props.css.src },
                     _react2.default.createElement(_srcSwitcher2.default, null),
                     _react2.default.createElement(
-                      'div',
-                      { className: this.props.css.html },
-                      this.state.htmlSrc
-                    ),
-                    _react2.default.createElement(
-                      'div',
-                      { className: this.props.css.react },
-                      this.state.reactSrc
+                      'pre',
+                      { className: this.props.css.srcOptions },
+                      _react2.default.createElement(
+                        'code',
+                        {
+                          className: 'language-html hljs html ' +
+                            this.props.css.html,
+                          ref: function ref(el) {
+                            return (_this3.htmlEl = el)
+                          }
+                        },
+                        this.state.htmlSrc
+                      ),
+                      _react2.default.createElement(
+                        'code',
+                        {
+                          className: 'language-html hljs javascript ' +
+                            this.props.css.react,
+                          ref: function ref(el) {
+                            return (_this3.reactEl = el)
+                          }
+                        },
+                        this.state.reactSrc
+                      )
                     )
                   )
                 )
@@ -20772,6 +20806,12 @@ object-assign
               ),
               _react2.default.createElement('link', {
                 rel: 'stylesheet',
+                href: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css',
+                type: 'text/css',
+                media: 'all'
+              }),
+              _react2.default.createElement('link', {
+                rel: 'stylesheet',
                 href: '/roboto/styles.css'
               })
             ),
@@ -20785,12 +20825,6 @@ object-assign
               ),
               _react2.default.createElement('script', {
                 src: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js'
-              }),
-              _react2.default.createElement('link', {
-                rel: 'stylesheet',
-                href: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css',
-                type: 'text/css',
-                media: 'all'
               }),
               _react2.default.createElement(
                 'script',
@@ -20953,7 +20987,10 @@ object-assign
         module.exports = {
           root: 'root___1l14T',
           output: 'output___2Kojm',
-          src: 'src___3iREM'
+          src: 'src___3iREM',
+          srcOptions: 'srcOptions___23pDb',
+          html: 'html___3SbRg',
+          react: 'react___2UUp_'
         }
 
         /***/

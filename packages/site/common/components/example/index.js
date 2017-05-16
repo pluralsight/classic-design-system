@@ -22,6 +22,8 @@ const renderAttributes = permutation =>
 const renderReactSrc = (name, children, permutation) =>
   `<${name}${renderAttributes(permutation)}>${children}</${name}>`
 
+const highlight = el => hljs.highlightBlock(el)
+
 class Example extends React.Component {
   constructor(props) {
     super(props)
@@ -34,6 +36,12 @@ class Example extends React.Component {
       )
     }
     this.handleOutputClick = this.handleOutputClick.bind(this)
+  }
+  componentDidMount() {
+    ;[this.htmlEl, this.reactEl].forEach(highlight)
+  }
+  componentDidUpdate() {
+    ;[this.htmlEl, this.reactEl].forEach(highlight)
   }
   handleOutputClick(permutation) {
     this.setState({
@@ -62,12 +70,22 @@ class Example extends React.Component {
         </div>
         <div className={this.props.css.src}>
           <SrcSwitcher />
-          <div className={this.props.css.html}>
-            {this.state.htmlSrc}
-          </div>
-          <div className={this.props.css.react}>
-            {this.state.reactSrc}
-          </div>
+          <pre className={this.props.css.srcOptions}>
+            <code
+              className={'language-html hljs html ' + this.props.css.html}
+              ref={el => (this.htmlEl = el)}
+            >
+              {this.state.htmlSrc}
+            </code>
+            <code
+              className={
+                'language-html hljs javascript ' + this.props.css.react
+              }
+              ref={el => (this.reactEl = el)}
+            >
+              {this.state.reactSrc}
+            </code>
+          </pre>
         </div>
       </div>
     )

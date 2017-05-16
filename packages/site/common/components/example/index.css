@@ -13,3 +13,11 @@
   padding: var(--psLayoutSpacingLarge);
   background: var(--psColorsGray03);
 }
+.srcOptions {
+  margin: 0;
+}
+.html,
+.react {
+  background: none;
+  padding: 0;
+}
