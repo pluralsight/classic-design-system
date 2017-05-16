@@ -1,3 +1,4 @@
+import Highlight from 'react-highlight'
 import PropTypes from 'prop-types'
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
@@ -26,8 +27,6 @@ const renderReactSrc = (name, children, permutation) =>
 
 <${name}${renderAttributes(permutation)}>${children}</${name}>`
 
-const highlight = el => hljs.highlightBlock(el)
-
 class Example extends React.Component {
   constructor(props) {
     super(props)
@@ -37,15 +36,11 @@ class Example extends React.Component {
         this.props.name,
         this.props.component.props.children,
         this.props.permutations[0]
-      )
+      ),
+      srcOption: 'react'
     }
     this.handleOutputClick = this.handleOutputClick.bind(this)
-  }
-  componentDidMount() {
-    ;[this.htmlEl, this.reactEl].forEach(highlight)
-  }
-  componentDidUpdate() {
-    ;[this.htmlEl, this.reactEl].forEach(highlight)
+    this.handleSrcOptionClick = this.handleSrcOptionClick.bind(this)
   }
   handleOutputClick(permutation) {
     this.setState({
@@ -57,6 +52,9 @@ class Example extends React.Component {
       )
     })
   }
+  handleSrcOptionClick(srcOption) {
+    this.setState({ srcOption })
+  }
   renderOutputs(props) {
     return props.permutations.map((p, i) =>
       React.cloneElement(props.component, {
@@ -66,6 +64,21 @@ class Example extends React.Component {
       })
     )
   }
+  renderSrc() {
+    if (this.state.srcOption === 'react') {
+      return (
+        <Highlight className={'javascript ' + this.props.css.react}>
+          {this.state.reactSrc}
+        </Highlight>
+      )
+    } else if (this.state.srcOption === 'html') {
+      return (
+        <Highlight className={'html ' + this.props.css.html}>
+          {this.state.htmlSrc}
+        </Highlight>
+      )
+    }
+  }
   render() {
     return (
       <div className={this.props.css.root}>
@@ -73,23 +86,10 @@ class Example extends React.Component {
           {this.renderOutputs(this.props)}
         </div>
         <div className={this.props.css.src}>
-          <SrcSwitcher />
-          <pre className={this.props.css.srcOptions}>
-            <code
-              className={'language-html hljs html ' + this.props.css.html}
-              ref={el => (this.htmlEl = el)}
-            >
-              {this.state.htmlSrc}
-            </code>
-            <code
-              className={
-                'language-javascript hljs javascript ' + this.props.css.react
-              }
-              ref={el => (this.reactEl = el)}
-            >
-              {this.state.reactSrc}
-            </code>
-          </pre>
+          <SrcSwitcher onClick={this.handleSrcOptionClick} />
+          <div className={this.props.css.srcOptions}>
+            {this.renderSrc()}
+          </div>
         </div>
       </div>
     )
