@@ -20,6 +20,7 @@ export default styleable(css)(props => {
 
       <Example
         component={<Button>Click here</Button>}
+        name="Button"
         permutations={[{ appearance: 'stroke' }, { appearance: 'flat' }]}
       />
 

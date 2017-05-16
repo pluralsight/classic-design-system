@@ -20227,9 +20227,33 @@ object-assign
           return _server2.default.renderToStaticMarkup(reactElement)
         }
 
-        var renderSrc = function renderSrc(component, permutation) {
+        var renderHtmlSrc = function renderHtmlSrc(component, permutation) {
           return rmCssModuleHashes(
             toHtml(_react2.default.cloneElement(component, permutation))
+          )
+        }
+
+        var renderAttributes = function renderAttributes(permutation) {
+          return Object.keys(permutation).reduce(function(acc, key) {
+            acc += ' ' + key + '="' + permutation[key] + '"'
+            return acc
+          }, '')
+        }
+
+        var renderReactSrc = function renderReactSrc(
+          name,
+          children,
+          permutation
+        ) {
+          return (
+            '<' +
+            name +
+            renderAttributes(permutation) +
+            '>' +
+            children +
+            '</' +
+            name +
+            '>'
           )
         }
 
@@ -20246,7 +20270,12 @@ object-assign
             )
 
             _this.state = {
-              src: renderSrc(_this.props.component, {})
+              htmlSrc: renderHtmlSrc(_this.props.component, {}),
+              reactSrc: renderReactSrc(
+                _this.props.name,
+                _this.props.component.props.children,
+                {}
+              )
             }
             _this.handleOutputClick = _this.handleOutputClick.bind(_this)
             return _this
@@ -20257,7 +20286,12 @@ object-assign
               key: 'handleOutputClick',
               value: function handleOutputClick(permutation) {
                 this.setState({
-                  src: renderSrc(this.props.component, permutation)
+                  htmlSrc: renderHtmlSrc(this.props.component, permutation),
+                  reactSrc: renderReactSrc(
+                    this.props.name,
+                    this.props.component.props.children,
+                    permutation
+                  )
                 })
               }
             },
@@ -20299,7 +20333,16 @@ object-assign
                     'div',
                     { className: this.props.css.src },
                     _react2.default.createElement(_srcSwitcher2.default, null),
-                    this.state.src
+                    _react2.default.createElement(
+                      'div',
+                      { className: this.props.css.html },
+                      this.state.htmlSrc
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: this.props.css.react },
+                      this.state.reactSrc
+                    )
                   )
                 )
               }
@@ -20311,9 +20354,11 @@ object-assign
 
         Example.propTypes = {
           component: _propTypes2.default.element.isRequired,
+          name: _propTypes2.default.string,
           permutations: _propTypes2.default.arrayOf(_propTypes2.default.object)
         }
         Example.defaultProps = {
+          name: 'Component',
           permutations: [{}]
         }
 
@@ -20596,6 +20641,7 @@ object-assign
                 null,
                 'Click here'
               ),
+              name: 'Button',
               permutations: [{ appearance: 'stroke' }, { appearance: 'flat' }]
             }),
             _react2.default.createElement(
