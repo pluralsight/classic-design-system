@@ -20656,6 +20656,11 @@ object-assign
                 { appearance: 'flat' }
               ]
             }),
+            _react2.default.createElement(
+              _components.Heading.Large,
+              null,
+              'Button sizes'
+            ),
             _react2.default.createElement(_components.Example, {
               component: _react2.default.createElement(
                 _dsButton2.default,

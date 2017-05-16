@@ -12,13 +12,13 @@ export default styleable(css)(props => {
       <Heading.Xxl>Buttons</Heading.Xxl>
 
       <Heading.Large>Button appearance</Heading.Large>
-
       <Example
         component={<Button>Click me</Button>}
         name="Button"
         permutations={[{}, { appearance: 'stroke' }, { appearance: 'flat' }]}
       />
 
+      <Heading.Large>Button sizes</Heading.Large>
       <Example
         component={<Button>Click me</Button>}
         name="Button"
