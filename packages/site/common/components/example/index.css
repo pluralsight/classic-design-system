@@ -1,7 +1,6 @@
 @import "@pluralsight/ds-core";
 
 .root {
-  outline: 1px solid blue;
 }
 .output {
   display: flex;

@@ -14,11 +14,20 @@ export default styleable(css)(props => {
       <Heading.Large>Button appearance</Heading.Large>
 
       <Example
-        component={<Button>Click here</Button>}
+        component={<Button>Click me</Button>}
         name="Button"
-        permutations={[{ appearance: 'stroke' }, { appearance: 'flat' }]}
+        permutations={[{}, { appearance: 'stroke' }, { appearance: 'flat' }]}
       />
 
+      <Example
+        component={<Button>Click me</Button>}
+        name="Button"
+        permutations={[
+          { size: 'large' },
+          { size: 'medium' },
+          { size: 'small' }
+        ]}
+      />
     </div>
   )
 })

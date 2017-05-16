@@ -28,11 +28,11 @@ class Example extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      htmlSrc: renderHtmlSrc(this.props.component, {}),
+      htmlSrc: renderHtmlSrc(this.props.component, this.props.permutations[0]),
       reactSrc: renderReactSrc(
         this.props.name,
         this.props.component.props.children,
-        {}
+        this.props.permutations[0]
       )
     }
     this.handleOutputClick = this.handleOutputClick.bind(this)
@@ -54,7 +54,7 @@ class Example extends React.Component {
     })
   }
   renderOutputs(props) {
-    return [{}, ...props.permutations].map((p, i) =>
+    return props.permutations.map((p, i) =>
       React.cloneElement(props.component, {
         key: i,
         ...p,

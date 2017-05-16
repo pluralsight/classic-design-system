@@ -20166,17 +20166,6 @@ object-assign
           return obj && obj.__esModule ? obj : { default: obj }
         }
 
-        function _toConsumableArray(arr) {
-          if (Array.isArray(arr)) {
-            for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
-              arr2[i] = arr[i]
-            }
-            return arr2
-          } else {
-            return Array.from(arr)
-          }
-        }
-
         function _classCallCheck(instance, Constructor) {
           if (!(instance instanceof Constructor)) {
             throw new TypeError('Cannot call a class as a function')
@@ -20274,11 +20263,14 @@ object-assign
             )
 
             _this.state = {
-              htmlSrc: renderHtmlSrc(_this.props.component, {}),
+              htmlSrc: renderHtmlSrc(
+                _this.props.component,
+                _this.props.permutations[0]
+              ),
               reactSrc: renderReactSrc(
                 _this.props.name,
                 _this.props.component.props.children,
-                {}
+                _this.props.permutations[0]
               )
             }
             _this.handleOutputClick = _this.handleOutputClick.bind(_this)
@@ -20316,22 +20308,20 @@ object-assign
               value: function renderOutputs(props) {
                 var _this2 = this
 
-                return [{}]
-                  .concat(_toConsumableArray(props.permutations))
-                  .map(function(p, i) {
-                    return _react2.default.cloneElement(
-                      props.component,
-                      _extends(
-                        {
-                          key: i
-                        },
-                        p,
-                        {
-                          onClick: _this2.handleOutputClick.bind(_this2, p)
-                        }
-                      )
+                return props.permutations.map(function(p, i) {
+                  return _react2.default.cloneElement(
+                    props.component,
+                    _extends(
+                      {
+                        key: i
+                      },
+                      p,
+                      {
+                        onClick: _this2.handleOutputClick.bind(_this2, p)
+                      }
                     )
-                  })
+                  )
+                })
               }
             },
             {
@@ -20657,10 +20647,27 @@ object-assign
               component: _react2.default.createElement(
                 _dsButton2.default,
                 null,
-                'Click here'
+                'Click me'
               ),
               name: 'Button',
-              permutations: [{ appearance: 'stroke' }, { appearance: 'flat' }]
+              permutations: [
+                {},
+                { appearance: 'stroke' },
+                { appearance: 'flat' }
+              ]
+            }),
+            _react2.default.createElement(_components.Example, {
+              component: _react2.default.createElement(
+                _dsButton2.default,
+                null,
+                'Click me'
+              ),
+              name: 'Button',
+              permutations: [
+                { size: 'large' },
+                { size: 'medium' },
+                { size: 'small' }
+              ]
             })
           )
         })
