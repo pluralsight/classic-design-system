@@ -20229,13 +20229,21 @@ object-assign
           }, '')
         }
 
+        var renderReactImport = function renderReactImport(name) {
+          return '@pluralsight/ds-' + name.toLowerCase()
+        }
+
         var renderReactSrc = function renderReactSrc(
           name,
           children,
           permutation
         ) {
           return (
-            '<' +
+            'import ' +
+            name +
+            " from '" +
+            renderReactImport(name) +
+            "'\n\n<" +
             name +
             renderAttributes(permutation) +
             '>' +
@@ -20358,7 +20366,7 @@ object-assign
                       _react2.default.createElement(
                         'code',
                         {
-                          className: 'language-html hljs javascript ' +
+                          className: 'language-javascript hljs javascript ' +
                             this.props.css.react,
                           ref: function ref(el) {
                             return (_this3.reactEl = el)

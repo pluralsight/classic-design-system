@@ -19,8 +19,12 @@ const renderAttributes = permutation =>
     return acc
   }, '')
 
+const renderReactImport = name => `@pluralsight/ds-${name.toLowerCase()}`
+
 const renderReactSrc = (name, children, permutation) =>
-  `<${name}${renderAttributes(permutation)}>${children}</${name}>`
+  `import ${name} from '${renderReactImport(name)}'
+
+<${name}${renderAttributes(permutation)}>${children}</${name}>`
 
 const highlight = el => hljs.highlightBlock(el)
 
@@ -79,7 +83,7 @@ class Example extends React.Component {
             </code>
             <code
               className={
-                'language-html hljs javascript ' + this.props.css.react
+                'language-javascript hljs javascript ' + this.props.css.react
               }
               ref={el => (this.reactEl = el)}
             >
