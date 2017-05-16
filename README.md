@@ -6,6 +6,7 @@ ps design system
 Run:
 
 ```
+nvm use
 npm install 
 npm run bootstrap
 npm start
@@ -20,6 +21,7 @@ Live URL:
 Test:
 
 ```
+nvm use
 npm install
 npm run bootstrap
 npm test
