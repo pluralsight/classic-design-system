@@ -1,14 +1,28 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import ReactDOMServer from 'react-dom/server'
 import styleable from 'react-styleable'
 
 import css from './index.css'
 import SrcSwitcher from './src-switcher'
 
+const rmCssModuleHashes = src => src.replace(/___\S{5}/g, '')
+
+const toHtml = reactElement => ReactDOMServer.renderToStaticMarkup(reactElement)
+
+const renderSrc = (component, permutation) =>
+  rmCssModuleHashes(toHtml(React.cloneElement(component, permutation)))
+
 class Example extends React.Component {
-  handleOutputClick(permutation, evt) {
-    console.log('permutation', permutation)
-    console.log('evt', evt)
+  constructor(props) {
+    super(props)
+    this.state = {
+      src: renderSrc(this.props.component, {})
+    }
+    this.handleOutputClick = this.handleOutputClick.bind(this)
+  }
+  handleOutputClick(permutation) {
+    this.setState({ src: renderSrc(this.props.component, permutation) })
   }
   renderOutputs(props) {
     return [{}, ...props.permutations].map((p, i) =>
@@ -27,7 +41,7 @@ class Example extends React.Component {
         </div>
         <div className={this.props.css.src}>
           <SrcSwitcher />
-          {this.props.src}
+          {this.state.src}
         </div>
       </div>
     )
