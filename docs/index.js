@@ -20633,22 +20633,6 @@ object-assign
 
         var _dsButton2 = _interopRequireDefault(_dsButton)
 
-        var _src = __webpack_require__(198)
-
-        var _src2 = _interopRequireDefault(_src)
-
-        var _dsButton3 = __webpack_require__(196)
-
-        var _dsButton4 = _interopRequireDefault(_dsButton3)
-
-        var _src3 = __webpack_require__(197)
-
-        var _src4 = _interopRequireDefault(_src3)
-
-        var _src5 = __webpack_require__(161)
-
-        var _src6 = _interopRequireDefault(_src5)
-
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
         }
@@ -20677,60 +20661,14 @@ object-assign
               ),
               name: 'Button',
               permutations: [{ appearance: 'stroke' }, { appearance: 'flat' }]
-            }),
-            _react2.default.createElement(
-              _components.Code,
-              { lang: 'html' },
-              _dsButton4.default
-            ),
-            _react2.default.createElement(
-              _components.Code,
-              { lang: 'css' },
-              _src2.default
-            ),
-            _react2.default.createElement(
-              _components.Code,
-              { lang: 'html' },
-              _src4.default
-            ),
-            _react2.default.createElement(
-              _components.CodeOutput,
-              null,
-              _src6.default
-            )
+            })
           )
         })
 
         /***/
       },
-      /* 161 */
-      /***/ function(module, exports, __webpack_require__) {
-        'use strict'
-        Object.defineProperty(exports, '__esModule', {
-          value: true
-        })
-
-        var _react = __webpack_require__(4)
-
-        var _react2 = _interopRequireDefault(_react)
-
-        var _dsButton = __webpack_require__(85)
-
-        var _dsButton2 = _interopRequireDefault(_dsButton)
-
-        function _interopRequireDefault(obj) {
-          return obj && obj.__esModule ? obj : { default: obj }
-        }
-
-        exports.default = _react2.default.createElement(
-          _dsButton2.default,
-          null,
-          'wowzers'
-        )
-
-        /***/
-      },
-      /* 162 */
+      ,
+      /* 161 */ /* 162 */
       /***/ function(module, exports, __webpack_require__) {
         'use strict'
         Object.defineProperty(exports, '__esModule', {
@@ -23654,27 +23592,10 @@ object-assign
 
         /***/
       },
-      /* 196 */
-      /***/ function(module, exports) {
-        module.exports = '<button class="ps-button ps-button--medium"></button>'
-
-        /***/
-      },
-      /* 197 */
-      /***/ function(module, exports) {
-        module.exports =
-          "import React from 'react'\nimport DsButton from '@pluralsight/ds-button'\n\nexport default <DsButton>wowzers</DsButton>\n"
-
-        /***/
-      },
-      /* 198 */
-      /***/ function(module, exports) {
-        module.exports =
-          ':root {\n  /* ui colors */\n  --psColorsWhite: #ffffff;\n  --psColorsBone: #f2f2f2;\n  --psColorsGray01: #cccccc;\n  --psColorsGray02: #aaaaaa;\n  --psColorsGray03: #555555;\n  --psColorsGray04: #363636;\n  --psColorsGray05: #222222;\n  --psColorsGray06: #181818;\n  --psColorsBlack: #000000;\n\n  --psColorsPink: #e80a89;\n  --psColorsRed: #de3636;\n  --psColorsOrange: #f96816;\n  --psColorsOrangeLight: #ff7b39;\n  --psColorsYellow: #ffc200;\n  --psColorsGreenLight: #86ce21;\n  --psColorsBlue: #137bc2;\n\n  /* role colors */\n  --psColorsRoleYellowLighter: #fd39bc;\n  --psColorsRoleYellowLight: #fbcd64;\n  --psColorsRoleYellow: #f8b721;\n  --psColorsRoleYellowDark: #ae8017;\n  --psColorsRoleYellowDarker: #7c5b12;\n}\n:root {\n  /* spacing */\n  --psLayoutSpacingTiny: 4px;\n  --psLayoutSpacingExtraSmall: 8px;\n  --psLayoutSpacingSmall: 12px;\n  --psLayoutSpacingMedium: 16px;\n  --psLayoutSpacingLarge: 24px;\n  --psLayoutSpacingXl: 40px;\n  --psLayoutSpacingXxl: 56px;\n}\n:root {\n  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;\n\n  /* font size */\n  --psTypeFontSizeGigantic: 60px;\n  --psTypeFontSizeXxxl: 48px;\n  --psTypeFontSizeXxl: 36px;\n  --psTypeFontSizeXl: 30px;\n  --psTypeFontSizeLarge: 24px;\n  --psTypeFontSizeMedium: 18px;\n  --psTypeFontSizeSmall: 14px;\n  --psTypeFontSizeExtraSmall: 12px;\n\n  /* letter spacing */\n  --psTypeLetterSpacingGigantic: -1px;\n  --psTypeLetterSpacingXxxl: -0.72px;\n  --psTypeLetterSpacingXxl: -0.54px;\n  --psTypeLetterSpacingXl: -0.45px;\n  --psTypeLetterSpacingLarge: 0.36px;\n  --psTypeLetterSpacingMedium: 0;\n  --psTypeLetterSpacingSmall: 0;\n  --psTypeLetterSpacingExtraSmall: 0;\n\n  /* font weight */\n  --psTypeFontWeightBold: 700;\n  --psTypeFontWeightMedium: 500;\n  --psTypeFontWeightBook: 400;\n  --psTypeFontWeightLight: 300;\n  --psTypeFontWeightExtraLight: 200;\n\n  /* line height */\n  --psTypeLineHeightTight: 20px;\n  --psTypeLineHeightStandard: 24px;\n  --psTypeLineHeightExtra: 32px;\n  --psTypeLineHeightHuge: 40px;\n}\n.ps-button {\n  display: inline-block;\n  padding: 8px 16px;\n  border: 0;\n  border-radius: 2px;\n\n  font-size: var(--psTypeFontSizeSmall);\n  line-height: var(--psTypeLineHeightStandard);\n  font-weight: var(--psTypeFontWeightMedium);\n  text-align: center;\n\n  /* TODO: font family */\n  color: #fff;\n  background: var(--psColorsOrange);\n}\n/* size */\n.ps-button--tiny {\n  font-size: var(--psTypeFontSizeExtraSmall);\n  line-height: var(--psTypeLineHeightStandard);\n}\n.ps-button--small {\n  font-size: var(--psTypeFontSizeSmall);\n  line-height: var(--psTypeLineHeightStandard);\n}\n.ps-button--medium {\n  font-size: var(--psTypeFontSizeSmall);\n  line-height: var(--psTypeLineHeightStandard);\n}\n.ps-button--large {\n  font-size: var(--psTypeFontSizeMedium);\n  line-height: var(--psTypeLineHeightExtra);\n}\n/* appearance */\n.ps-button--stroke {\n  border: 1px solid var(--psColorsOrange);\n  color: var(--psColorsOrange);\n  background: none;\n}\n.ps-button--flat {\n  border: none;\n  color: var(--psColorsOrange);\n  background: none;\n}\n/* icon and iconAlign */\n/* disabled */'
-
-        /***/
-      },
-      /* 199 */
+      ,
+      ,
+      ,
+      /* 196 */ /* 197 */ /* 198 */ /* 199 */
       /***/ function(module, exports, __webpack_require__) {
         'use strict'
         /**
