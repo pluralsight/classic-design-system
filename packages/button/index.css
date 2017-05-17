@@ -49,3 +49,7 @@
 /* icon and iconAlign */
 
 /* disabled */
+.ps-button--disabled {
+  color: var(--psColorsGray02);
+  background: var(--psColorsGray04);
+}

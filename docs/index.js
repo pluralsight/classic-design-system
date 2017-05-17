@@ -19980,14 +19980,18 @@ object-assign
         }
 
         var propDefs = (exports.propDefs = {
+          appearance: {
+            type: 'oneOf',
+            value: ['stroke', 'flat']
+          },
+          disabled: {
+            type: 'bool',
+            default: false
+          },
           size: {
             type: 'oneOf',
             value: ['tiny', 'small', 'medium', 'large'],
             default: 'medium'
-          },
-          appearance: {
-            type: 'oneOf',
-            value: ['stroke', 'flat']
           }
         })
 
@@ -20001,33 +20005,47 @@ object-assign
               true
             ), _defineProperty(
               _classNames,
+              props.css['ps-button--' + props.appearance],
+              props.appearance
+            ), _defineProperty(
+              _classNames,
               props.css['ps-button--' + props.size],
               props.size
             ), _defineProperty(
               _classNames,
-              props.css['ps-button--' + props.appearance],
-              props.appearance
+              props.css['ps-button--disabled'],
+              props.disabled
             ), _classNames)
           )
         }
 
         var rmSystemProps = function rmSystemProps(props) {
-          var css = props.css,
+          var appearance = props.appearance,
+            disabled = props.disabled,
+            css = props.css,
             size = props.size,
-            appearance = props.appearance,
             rest = _objectWithoutProperties(props, [
+              'appearance',
+              'disabled',
               'css',
-              'size',
-              'appearance'
+              'size'
             ])
 
           return rest
         }
 
+        var formatProps = function formatProps(props) {
+          return _extends({}, rmSystemProps(props), {
+            className: getClassName(props),
+            disabled: props.disabled
+          })
+        }
+
         var Button = (exports.Button = function Button(props) {
+          var attrs = rmSystemProps(props)
           return _react2.default.createElement(
             'button',
-            _extends({ className: getClassName(props) }, rmSystemProps(props)),
+            formatProps(props),
             props.children
           )
         })
@@ -21075,6 +21093,23 @@ object-assign
                 { size: 'medium' },
                 { size: 'small' }
               ]
+            }),
+            _react2.default.createElement(
+              _components.Heading.Large,
+              null,
+              'Disabled button'
+            ),
+            _react2.default.createElement(_components.Example, {
+              component: _react2.default.createElement(
+                _psButton2.default,
+                null,
+                'Disabled button'
+              ),
+              name: 'Button',
+              permutations: [
+                { disabled: true },
+                { disabled: true, appearance: 'flat' }
+              ]
             })
           )
         })
@@ -21316,7 +21351,8 @@ object-assign
           'ps-button--medium': 'ps-button--medium___33x7N',
           'ps-button--large': 'ps-button--large___2aoJi',
           'ps-button--stroke': 'ps-button--stroke___1c8f6',
-          'ps-button--flat': 'ps-button--flat___1S8n0'
+          'ps-button--flat': 'ps-button--flat___1S8n0',
+          'ps-button--disabled': 'ps-button--disabled___2ioM5'
         }
 
         /***/

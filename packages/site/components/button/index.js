@@ -28,6 +28,16 @@ export default styleable(css)(props => {
           { size: 'small' }
         ]}
       />
+
+      <Heading.Large>Disabled button</Heading.Large>
+      <Example
+        component={<Button>Disabled button</Button>}
+        name="Button"
+        permutations={[
+          { disabled: true },
+          { disabled: true, appearance: 'flat' }
+        ]}
+      />
     </div>
   )
 })

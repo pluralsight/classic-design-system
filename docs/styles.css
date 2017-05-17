@@ -634,7 +634,11 @@
   background: none;
 }
 /* icon and iconAlign */
-/* disabled */:root {
+/* disabled */
+.ps-button--disabled___2ioM5 {
+  color: var(--psColorsGray02);
+  background: var(--psColorsGray04);
+}:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
