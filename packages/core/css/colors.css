@@ -18,6 +18,10 @@
   --psColorsGreenLight: #86ce21;
   --psColorsBlue: #137bc2;
 
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to left, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
   /* role colors */
   --psColorsRoleYellowLighter: #fd39bc;
   --psColorsRoleYellowLight: #fbcd64;

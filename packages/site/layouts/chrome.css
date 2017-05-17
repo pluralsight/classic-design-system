@@ -1,0 +1,14 @@
+@import "@pluralsight/ps-design-system-core";
+
+.root {
+}
+.topGrad {
+  height: 8px;
+  background: var(--psColorsGradientHorz);
+}
+.content {
+  display: flex;
+}
+.main {
+  padding: 64px 110px; /* TODO: spacing not in ds? */
+}

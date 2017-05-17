@@ -1,4 +1,91 @@
-@import url(https://cloud.typography.com/6966154/691568/css/fonts.css);.root___3shuw {
+@import url(https://cloud.typography.com/6966154/691568/css/fonts.css);:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to left, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
+  /* role colors */
+  --psColorsRoleYellowLighter: #fd39bc;
+  --psColorsRoleYellowLight: #fbcd64;
+  --psColorsRoleYellow: #f8b721;
+  --psColorsRoleYellowDark: #ae8017;
+  --psColorsRoleYellowDarker: #7c5b12;
+}
+:root {
+  /* spacing */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXl: 40px;
+  --psLayoutSpacingXxl: 56px;
+}
+:root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+  /* font size */
+  --psTypeFontSizeGigantic: 60px;
+  --psTypeFontSizeXxxl: 48px;
+  --psTypeFontSizeXxl: 36px;
+  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeLarge: 24px;
+  --psTypeFontSizeMedium: 18px;
+  --psTypeFontSizeSmall: 14px;
+  --psTypeFontSizeExtraSmall: 12px;
+
+  /* letter spacing */
+  --psTypeLetterSpacingGigantic: -1px;
+  --psTypeLetterSpacingXxxl: -0.72px;
+  --psTypeLetterSpacingXxl: -0.54px;
+  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingLarge: 0.36px;
+  --psTypeLetterSpacingMedium: 0;
+  --psTypeLetterSpacingSmall: 0;
+  --psTypeLetterSpacingExtraSmall: 0;
+
+  /* font weight */
+  --psTypeFontWeightBold: 700;
+  --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightBook: 400;
+  --psTypeFontWeightLight: 300;
+  --psTypeFontWeightExtraLight: 200;
+
+  /* line height */
+  --psTypeLineHeightTight: 20px;
+  --psTypeLineHeightStandard: 24px;
+  --psTypeLineHeightExtra: 32px;
+  --psTypeLineHeightHuge: 40px;
+}
+.root___3rc2t {
+}
+.topGrad___DBLyq {
+  height: 8px;
+  background: var(--psColorsGradientHorz);
+}
+.content___30TPk {
+  display: flex;
+}
+.main___1V9IZ {
+  padding: 64px 110px; /* TODO: spacing not in ds? */
 }:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
@@ -18,6 +105,121 @@
   --psColorsYellow: #ffc200;
   --psColorsGreenLight: #86ce21;
   --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to left, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
+  /* role colors */
+  --psColorsRoleYellowLighter: #fd39bc;
+  --psColorsRoleYellowLight: #fbcd64;
+  --psColorsRoleYellow: #f8b721;
+  --psColorsRoleYellowDark: #ae8017;
+  --psColorsRoleYellowDarker: #7c5b12;
+}
+:root {
+  /* spacing */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXl: 40px;
+  --psLayoutSpacingXxl: 56px;
+}
+:root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+  /* font size */
+  --psTypeFontSizeGigantic: 60px;
+  --psTypeFontSizeXxxl: 48px;
+  --psTypeFontSizeXxl: 36px;
+  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeLarge: 24px;
+  --psTypeFontSizeMedium: 18px;
+  --psTypeFontSizeSmall: 14px;
+  --psTypeFontSizeExtraSmall: 12px;
+
+  /* letter spacing */
+  --psTypeLetterSpacingGigantic: -1px;
+  --psTypeLetterSpacingXxxl: -0.72px;
+  --psTypeLetterSpacingXxl: -0.54px;
+  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingLarge: 0.36px;
+  --psTypeLetterSpacingMedium: 0;
+  --psTypeLetterSpacingSmall: 0;
+  --psTypeLetterSpacingExtraSmall: 0;
+
+  /* font weight */
+  --psTypeFontWeightBold: 700;
+  --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightBook: 400;
+  --psTypeFontWeightLight: 300;
+  --psTypeFontWeightExtraLight: 200;
+
+  /* line height */
+  --psTypeLineHeightTight: 20px;
+  --psTypeLineHeightStandard: 24px;
+  --psTypeLineHeightExtra: 32px;
+  --psTypeLineHeightHuge: 40px;
+}
+.root___2UHuV {
+  width: 200px;
+  border-right: 1px solid var(--psColorsGray01);
+}
+.logo___1vpie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border-bottom: 1px solid var(--psColorsGray01);
+}
+.logoImg___1jMAt {
+  height: 31px;
+  width: 31px;
+  margin-right: 8px;
+  background: var(--psColorsGradientVert);
+  border-radius: 50%;
+}
+.logoText___1Ws28 {
+  margin: 0;
+}
+.logoTextCompany___hZFKX {
+  display: block;
+  letter-spacing: .15em;
+  font-size: var(--psTypeFontSizeSmall);
+  font-weight: var(--psTypeFontWeightLight);
+  color: #000; /* TODO: real colorz */
+  font-family: var(--psTypeFontFamily);
+}
+.logoTextTitle___2k8LY {
+  font-size: 8px; /* TODO: not in ds */
+  color: var(--psColorsGray03);
+  font-weight: var(--psTypeFontWeightMedium);
+}.root___3shuw {
+}:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to left, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
 
   /* role colors */
   --psColorsRoleYellowLighter: #fd39bc;
@@ -116,6 +318,10 @@
   --psColorsGreenLight: #86ce21;
   --psColorsBlue: #137bc2;
 
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to left, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
   /* role colors */
   --psColorsRoleYellowLighter: #fd39bc;
   --psColorsRoleYellowLight: #fbcd64;
@@ -190,6 +396,10 @@
   --psColorsYellow: #ffc200;
   --psColorsGreenLight: #86ce21;
   --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to left, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
 
   /* role colors */
   --psColorsRoleYellowLighter: #fd39bc;
@@ -281,6 +491,7 @@
 .optionActiveBg___Jv_aZ {
   position: absolute;
   top: 2px;
+  width: calc(100% - 6px);
   background: var(--psColorsWhite);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, .6);
 }:root {
@@ -302,6 +513,10 @@
   --psColorsYellow: #ffc200;
   --psColorsGreenLight: #86ce21;
   --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to left, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
 
   /* role colors */
   --psColorsRoleYellowLighter: #fd39bc;
@@ -381,6 +596,10 @@
   --psColorsGreenLight: #86ce21;
   --psColorsBlue: #137bc2;
 
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to left, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
   /* role colors */
   --psColorsRoleYellowLighter: #fd39bc;
   --psColorsRoleYellowLight: #fbcd64;
@@ -459,6 +678,10 @@
   --psColorsGreenLight: #86ce21;
   --psColorsBlue: #137bc2;
 
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to left, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
   /* role colors */
   --psColorsRoleYellowLighter: #fd39bc;
   --psColorsRoleYellowLight: #fbcd64;
@@ -534,6 +757,10 @@
   --psColorsYellow: #ffc200;
   --psColorsGreenLight: #86ce21;
   --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to left, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
 
   /* role colors */
   --psColorsRoleYellowLighter: #fd39bc;
@@ -656,6 +883,10 @@
   --psColorsGreenLight: #86ce21;
   --psColorsBlue: #137bc2;
 
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to left, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
   /* role colors */
   --psColorsRoleYellowLighter: #fd39bc;
   --psColorsRoleYellowLight: #fbcd64;
@@ -712,6 +943,8 @@
 * {
   box-sizing: border-box;
 }
-html {
+html, body {
   font-family: var(--psTypeFontFamily);
+  margin: 0;
+  padding: 0;
 }

@@ -4,6 +4,8 @@
 * {
   box-sizing: border-box;
 }
-html {
+html, body {
   font-family: var(--psTypeFontFamily);
+  margin: 0;
+  padding: 0;
 }

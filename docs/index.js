@@ -5067,13 +5067,43 @@ object-assign
 
         var _react2 = _interopRequireDefault(_react)
 
+        var _reactStyleable = __webpack_require__(18)
+
+        var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
+
+        var _chrome = __webpack_require__(492)
+
+        var _chrome2 = _interopRequireDefault(_chrome)
+
+        var _sideNav = __webpack_require__(494)
+
+        var _sideNav2 = _interopRequireDefault(_sideNav)
+
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
         }
 
-        exports.default = function(props) {
-          return _react2.default.createElement('main', null, props.children)
-        }
+        exports.default = (0, _reactStyleable2.default)(
+          _chrome2.default
+        )(function(props) {
+          return _react2.default.createElement(
+            'div',
+            { className: props.css.root },
+            _react2.default.createElement('div', {
+              className: props.css.topGrad
+            }),
+            _react2.default.createElement(
+              'div',
+              { className: props.css.content },
+              _react2.default.createElement(_sideNav2.default, null),
+              _react2.default.createElement(
+                'main',
+                { className: props.css.main },
+                props.children
+              )
+            )
+          )
+        })
 
         /***/
       },
@@ -57347,6 +57377,104 @@ https://highlightjs.org/
         }
 
         exports.default = valueEqual
+
+        /***/
+      },
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      /* 479 */ /* 480 */ /* 481 */ /* 482 */ /* 483 */ /* 484 */ /* 485 */ /* 486 */ /* 487 */ /* 488 */ /* 489 */ /* 490 */ /* 491 */ /* 492 */
+      /***/ function(module, exports) {
+        // removed by extract-text-webpack-plugin
+        module.exports = {
+          root: 'root___3rc2t',
+          topGrad: 'topGrad___DBLyq',
+          content: 'content___30TPk',
+          main: 'main___1V9IZ'
+        }
+
+        /***/
+      },
+      ,
+      /* 493 */ /* 494 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+
+        var _react = __webpack_require__(4)
+
+        var _react2 = _interopRequireDefault(_react)
+
+        var _reactStyleable = __webpack_require__(18)
+
+        var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
+
+        var _index = __webpack_require__(495)
+
+        var _index2 = _interopRequireDefault(_index)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        var version = '1.0.0' // TODO: make read package.json
+
+        exports.default = (0, _reactStyleable2.default)(
+          _index2.default
+        )(function(props) {
+          return _react2.default.createElement(
+            'nav',
+            { className: props.css.root },
+            _react2.default.createElement(
+              'div',
+              { className: props.css.logo },
+              _react2.default.createElement('div', {
+                className: props.css.logoImg
+              }),
+              _react2.default.createElement(
+                'h2',
+                { className: props.css.logoText },
+                _react2.default.createElement(
+                  'span',
+                  { className: props.css.logoTextCompany },
+                  'PLURALSIGHT'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  { className: props.css.logoTextTitle },
+                  'DESIGN SYSTEM v',
+                  version
+                )
+              )
+            )
+          )
+        })
+
+        /***/
+      },
+      /* 495 */
+      /***/ function(module, exports) {
+        // removed by extract-text-webpack-plugin
+        module.exports = {
+          root: 'root___2UHuV',
+          logo: 'logo___1vpie',
+          logoImg: 'logoImg___1jMAt',
+          logoText: 'logoText___1Ws28',
+          logoTextCompany: 'logoTextCompany___hZFKX',
+          logoTextTitle: 'logoTextTitle___2k8LY'
+        }
 
         /***/
       }

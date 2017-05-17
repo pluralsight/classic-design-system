@@ -1,0 +1,36 @@
+@import "@pluralsight/ps-design-system-core";
+
+.root {
+  width: 200px;
+  border-right: 1px solid var(--psColorsGray01);
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border-bottom: 1px solid var(--psColorsGray01);
+}
+.logoImg {
+  height: 31px;
+  width: 31px;
+  margin-right: 8px;
+  background: var(--psColorsGradientVert);
+  border-radius: 50%;
+}
+.logoText {
+  margin: 0;
+}
+.logoTextCompany {
+  display: block;
+  letter-spacing: .15em;
+  font-size: var(--psTypeFontSizeSmall);
+  font-weight: var(--psTypeFontWeightLight);
+  color: #000; /* TODO: real colorz */
+  font-family: var(--psTypeFontFamily);
+}
+.logoTextTitle {
+  font-size: 8px; /* TODO: not in ds */
+  color: var(--psColorsGray03);
+  font-weight: var(--psTypeFontWeightMedium);
+}
