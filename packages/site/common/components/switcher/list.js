@@ -34,14 +34,14 @@ class List extends React.Component {
       width: node.offsetWidth,
       height: node.offsetHeight
     }
-    return <li className={this.props.css.optionActiveBg} style={style} />
+    return <div className={this.props.css.optionActiveBg} style={style} />
   }
   render() {
     return (
-      <ul className={this.props.css.root}>
+      <div className={this.props.css.root}>
         {this.renderActivePill(this.state.selectedOption)}
         {this.renderChildren(this.props.children, this.props)}
-      </ul>
+      </div>
     )
   }
 }

@@ -15,7 +15,7 @@ export default class SwitcherOption extends React.Component {
   }
   render() {
     return (
-      <li
+      <button
         className={
           this.props.isSelected
             ? this.props.css.optionActive
@@ -25,7 +25,7 @@ export default class SwitcherOption extends React.Component {
         ref={el => (this.el = el)}
       >
         {this.props.children}
-      </li>
+      </button>
     )
   }
 }

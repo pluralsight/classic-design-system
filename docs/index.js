@@ -20467,24 +20467,13 @@ object-assign
         exports.default = (0, _reactStyleable2.default)(
           _srcSwitcher2.default
         )(function(props) {
-          var options = [
-            {
-              label: 'React',
-              value: 'react'
-            },
-            {
-              label: 'HTML',
-              value: 'html'
-            }
-          ]
-
           return _react2.default.createElement(
             _switcher2.default.List,
             { onSelect: props.onClick, value: props.value },
             _react2.default.createElement(
               _switcher2.default.Option,
               { value: 'react' },
-              'React'
+              'REACT'
             ),
             _react2.default.createElement(
               _switcher2.default.Option,
@@ -20836,7 +20825,7 @@ object-assign
                   width: node.offsetWidth,
                   height: node.offsetHeight
                 }
-                return _react2.default.createElement('li', {
+                return _react2.default.createElement('div', {
                   className: this.props.css.optionActiveBg,
                   style: style
                 })
@@ -20846,7 +20835,7 @@ object-assign
               key: 'render',
               value: function render() {
                 return _react2.default.createElement(
-                  'ul',
+                  'div',
                   { className: this.props.css.root },
                   this.renderActivePill(this.state.selectedOption),
                   this.renderChildren(this.props.children, this.props)
@@ -20994,7 +20983,7 @@ object-assign
                 var _this3 = this
 
                 return _react2.default.createElement(
-                  'li',
+                  'button',
                   {
                     className: this.props.isSelected
                       ? this.props.css.optionActive
