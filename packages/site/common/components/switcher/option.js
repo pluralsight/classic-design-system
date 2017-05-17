@@ -7,8 +7,11 @@ export default class SwitcherOption extends React.Component {
     super(props)
     this.handleClick = this.handleClick.bind(this)
   }
+  componentDidMount() {
+    if (this.props.isSelected) setTimeout(_ => this.handleClick(), 0)
+  }
   handleClick() {
-    this.props.onSelect(this.props.value)
+    this.props.onSelect(this.props.value, this.el)
   }
   render() {
     return (
@@ -19,6 +22,7 @@ export default class SwitcherOption extends React.Component {
             : this.props.css.option
         }
         onClick={this.handleClick}
+        ref={el => (this.el = el)}
       >
         {this.props.children}
       </li>

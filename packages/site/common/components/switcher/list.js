@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import ReactDOM from 'react-dom'
 import styleable from 'react-styleable'
 
 import css from './index.css'
@@ -11,20 +10,12 @@ class List extends React.Component {
     this.state = { selectedOption: {} }
     this.handleSelect = this.handleSelect.bind(this)
   }
-  componentDidMount() {
-    this.setSelectedOption(this.getSelectedNode())
-  }
   setSelectedOption(node) {
     this.setState({
       selectedOption: node
     })
   }
-  getSelectedNode(value) {
-    const selectedOption = this.refs[value || this.props.value]
-    return selectedOption ? ReactDOM.findDOMNode(selectedOption) : {}
-  }
-  handleSelect(value) {
-    const node = this.getSelectedNode(value)
+  handleSelect(value, node) {
     this.setSelectedOption(node)
     this.props.onSelect(value)
   }
@@ -33,8 +24,7 @@ class List extends React.Component {
       return React.cloneElement(child, {
         css: this.props.css,
         isSelected: props.value === child.props.value,
-        onSelect: this.handleSelect,
-        ref: child.props.value
+        onSelect: this.handleSelect
       })
     })
   }

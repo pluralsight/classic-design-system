@@ -20453,10 +20453,7 @@ object-assign
 
           return _react2.default.createElement(
             _switcher2.default.List,
-            {
-              onSelect: props.onClick,
-              value: props.value
-            },
+            { onSelect: props.onClick, value: props.value },
             _react2.default.createElement(
               _switcher2.default.Option,
               { value: 'react' },
@@ -20701,10 +20698,6 @@ object-assign
 
         var _react2 = _interopRequireDefault(_react)
 
-        var _reactDom = __webpack_require__(48)
-
-        var _reactDom2 = _interopRequireDefault(_reactDom)
-
         var _reactStyleable = __webpack_require__(18)
 
         var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
@@ -20777,12 +20770,6 @@ object-assign
 
           _createClass(List, [
             {
-              key: 'componentDidMount',
-              value: function componentDidMount() {
-                this.setSelectedOption(this.getSelectedNode())
-              }
-            },
-            {
               key: 'setSelectedOption',
               value: function setSelectedOption(node) {
                 this.setState({
@@ -20791,18 +20778,8 @@ object-assign
               }
             },
             {
-              key: 'getSelectedNode',
-              value: function getSelectedNode(value) {
-                var selectedOption = this.refs[value || this.props.value]
-                return selectedOption
-                  ? _reactDom2.default.findDOMNode(selectedOption)
-                  : {}
-              }
-            },
-            {
               key: 'handleSelect',
-              value: function handleSelect(value) {
-                var node = this.getSelectedNode(value)
+              value: function handleSelect(value, node) {
                 this.setSelectedOption(node)
                 this.props.onSelect(value)
               }
@@ -20819,8 +20796,7 @@ object-assign
                   return _react2.default.cloneElement(child, {
                     css: _this2.props.css,
                     isSelected: props.value === child.props.value,
-                    onSelect: _this2.handleSelect,
-                    ref: child.props.value
+                    onSelect: _this2.handleSelect
                   })
                 })
               }
@@ -20969,21 +20945,37 @@ object-assign
 
           _createClass(SwitcherOption, [
             {
+              key: 'componentDidMount',
+              value: function componentDidMount() {
+                var _this2 = this
+
+                if (this.props.isSelected)
+                  setTimeout(function(_) {
+                    return _this2.handleClick()
+                  }, 0)
+              }
+            },
+            {
               key: 'handleClick',
               value: function handleClick() {
-                this.props.onSelect(this.props.value)
+                this.props.onSelect(this.props.value, this.el)
               }
             },
             {
               key: 'render',
               value: function render() {
+                var _this3 = this
+
                 return _react2.default.createElement(
                   'li',
                   {
                     className: this.props.isSelected
                       ? this.props.css.optionActive
                       : this.props.css.option,
-                    onClick: this.handleClick
+                    onClick: this.handleClick,
+                    ref: function ref(el) {
+                      return (_this3.el = el)
+                    }
                   },
                   this.props.children
                 )
