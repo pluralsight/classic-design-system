@@ -20342,17 +20342,25 @@ object-assign
             {
               key: 'renderOutputs',
               value: function renderOutputs(props) {
-                return props.permutations.map(function(p, i) {
-                  return _react2.default.cloneElement(
-                    props.component,
-                    _extends(
-                      {
-                        key: i
-                      },
-                      p
-                    )
-                  )
-                })
+                return props.permutations.reduce(function(acc, p, i) {
+                  return acc.concat([
+                    _react2.default.cloneElement(
+                      props.component,
+                      _extends(
+                        {
+                          key: 'output' + i
+                        },
+                        p
+                      )
+                    ),
+                    i < props.permutations.length - 1
+                      ? _react2.default.createElement('div', {
+                          className: props.css.outputDivider,
+                          key: 'div' + i
+                        })
+                      : null
+                  ])
+                }, [])
               }
             },
             {
@@ -21370,6 +21378,7 @@ object-assign
         module.exports = {
           root: 'root___1l14T',
           output: 'output___2Kojm',
+          outputDivider: 'outputDivider___2P5zy',
           src: 'src___3iREM',
           srcOptions: 'srcOptions___23pDb',
           html: 'html___3SbRg',

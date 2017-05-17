@@ -76,9 +76,13 @@
 }
 .output___2Kojm {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: var(--psLayoutSpacingLarge);
   background: var(--psColorsGray06);
+}
+.outputDivider___2P5zy {
+  display: block;
+  width: 98px;
 }
 .src___3iREM {
   padding: var(--psLayoutSpacingLarge);

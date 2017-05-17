@@ -4,9 +4,13 @@
 }
 .output {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: var(--psLayoutSpacingLarge);
   background: var(--psColorsGray06);
+}
+.outputDivider {
+  display: block;
+  width: 98px;
 }
 .src {
   padding: var(--psLayoutSpacingLarge);
