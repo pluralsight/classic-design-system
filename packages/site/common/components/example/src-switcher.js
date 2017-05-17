@@ -2,6 +2,7 @@ import React from 'react'
 import styleable from 'react-styleable'
 
 import css from './src-switcher.css'
+import Switcher from '../switcher'
 
 export default styleable(css)(props => {
   const options = [
@@ -16,14 +17,9 @@ export default styleable(css)(props => {
   ]
 
   return (
-    <div className={props.css.root}>
-      {options.map(opt => {
-        return (
-          <a key={opt.value} onClick={props.onClick.bind(null, opt.value)}>
-            {opt.label}
-          </a>
-        )
-      })}
-    </div>
+    <Switcher.List onSelect={props.onClick} value={props.value}>
+      <Switcher.Option value="react">React</Switcher.Option>
+      <Switcher.Option value="html">HTML</Switcher.Option>
+    </Switcher.List>
   )
 })

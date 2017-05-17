@@ -80,7 +80,10 @@ class Example extends React.Component {
           {this.renderOutputs(this.props)}
         </div>
         <div className={this.props.css.src}>
-          <SrcSwitcher onClick={this.handleSrcOptionClick} />
+          <SrcSwitcher
+            onClick={this.handleSrcOptionClick}
+            value={this.state.srcOption}
+          />
           <div className={this.props.css.srcOptions}>
             {this.renderSrc()}
           </div>
