@@ -55,7 +55,11 @@ class Example extends React.Component {
             ...p
           }),
           i < props.permutations.length - 1
-            ? <div className={props.css.outputDivider} key={'div' + i} />
+            ? <div
+                aria-hidden={true}
+                className={props.css.outputDivider}
+                key={'div' + i}
+              />
             : null
         ]),
       []
