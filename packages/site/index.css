@@ -1,5 +1,5 @@
 @import url(https://cloud.typography.com/6966154/691568/css/fonts.css);
-@import "@pluralsight/ds-core";
+@import "@pluralsight/ps-design-system-core";
 
 * {
   box-sizing: border-box;

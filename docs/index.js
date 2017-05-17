@@ -19935,9 +19935,9 @@ object-assign
 
         var _classnames2 = _interopRequireDefault(_classnames)
 
-        var _dsUtil = __webpack_require__(162)
+        var _psDesignSystemUtil = __webpack_require__(162)
 
-        var _dsUtil2 = _interopRequireDefault(_dsUtil)
+        var _psDesignSystemUtil2 = _interopRequireDefault(_psDesignSystemUtil)
 
         var _reactStyleable = __webpack_require__(147)
 
@@ -20033,8 +20033,10 @@ object-assign
         })
 
         // TODO: hoc these
-        Button.propTypes = _dsUtil2.default.propDefs.generatePropTypes(propDefs)
-        Button.defaultProps = _dsUtil2.default.propDefs.generateDefaultProps(
+        Button.propTypes = _psDesignSystemUtil2.default.propDefs.generatePropTypes(
+          propDefs
+        )
+        Button.defaultProps = _psDesignSystemUtil2.default.propDefs.generateDefaultProps(
           propDefs
         )
 
@@ -20246,7 +20248,7 @@ object-assign
         }
 
         var renderReactImport = function renderReactImport(name) {
-          return '@pluralsight/ds-' + name.toLowerCase()
+          return '@pluralsight/ps-' + name.toLowerCase()
         }
 
         var renderReactSrc = function renderReactSrc(
@@ -20652,9 +20654,9 @@ object-assign
 
         var _index2 = _interopRequireDefault(_index)
 
-        var _dsButton = __webpack_require__(150)
+        var _psButton = __webpack_require__(150)
 
-        var _dsButton2 = _interopRequireDefault(_dsButton)
+        var _psButton2 = _interopRequireDefault(_psButton)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -20678,7 +20680,7 @@ object-assign
             ),
             _react2.default.createElement(_components.Example, {
               component: _react2.default.createElement(
-                _dsButton2.default,
+                _psButton2.default,
                 null,
                 'Click me'
               ),
@@ -20696,7 +20698,7 @@ object-assign
             ),
             _react2.default.createElement(_components.Example, {
               component: _react2.default.createElement(
-                _dsButton2.default,
+                _psButton2.default,
                 null,
                 'Click me'
               ),

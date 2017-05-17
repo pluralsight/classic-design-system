@@ -1,5 +1,5 @@
 {
-  "name": "@pluralsight/ds-site",
+  "name": "@pluralsight/ps-site",
   "version": "1.0.0",
   "description": "Reference site",
   "main": "index.js",
@@ -17,8 +17,8 @@
   "author": "jaketrent",
   "license": "Apache 2.0",
   "devDependencies": {
-    "@pluralsight/ds-button": "~1.0.0",
-    "@pluralsight/ds-core": "~1.0.0",
+    "@pluralsight/ps-button": "~1.0.0",
+    "@pluralsight/ps-design-system-core": "~1.0.0",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",

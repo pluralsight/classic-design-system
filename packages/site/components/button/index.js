@@ -4,7 +4,7 @@ import styleable from 'react-styleable'
 import { Example, Heading } from '../../common/components'
 import css from './index.css'
 
-import Button from '@pluralsight/ds-button'
+import Button from '@pluralsight/ps-button'
 
 export default styleable(css)(props => {
   return (

@@ -20,7 +20,7 @@ const renderAttributes = permutation =>
     return acc
   }, '')
 
-const renderReactImport = name => `@pluralsight/ds-${name.toLowerCase()}`
+const renderReactImport = name => `@pluralsight/ps-${name.toLowerCase()}`
 
 const renderReactSrc = (name, children, permutation) =>
   `import ${name} from '${renderReactImport(name)}'

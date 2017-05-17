@@ -1,4 +1,4 @@
-@import "@pluralsight/ds-core";
+@import "@pluralsight/ps-design-system-core";
 
 .root {
   font-size: var(--psTypeFontSizeLarge);

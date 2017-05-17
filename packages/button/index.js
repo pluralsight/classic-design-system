@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import util from '@pluralsight/ds-util'
+import util from '@pluralsight/ps-design-system-util'
 import styleable from 'react-styleable'
 import React from 'react'
 

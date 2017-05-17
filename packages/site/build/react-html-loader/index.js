@@ -8,7 +8,7 @@ const css = require('./css')
 module.exports = function(content) {
   this.cacheable && this.cacheable()
 
-  // TODO: add replacement for `@pluralsight/ds-util` imports, which seem to
+  // TODO: add replacement for `@pluralsight/ps-design-system-util` imports, which seem to
   // not work with this loader -- possibly because they're sym linked
   // or not in the context where the node_modules are that count
   content = css.replaceCssImportsWithModules(content, this.resourcePath)
