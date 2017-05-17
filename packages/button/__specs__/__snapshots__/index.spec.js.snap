@@ -3,6 +3,7 @@
 exports[`renders correctly 1`] = `
 <button
   className="ps-button ps-button--medium"
+  disabled={undefined}
 >
   Label
 </button>
