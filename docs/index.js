@@ -20240,6 +20240,17 @@ object-assign
           )
         }
 
+        var renderHtmlSources = function renderHtmlSources(
+          component,
+          permutations
+        ) {
+          return permutations
+            .map(function(p) {
+              return renderHtmlSrc(component, p)
+            })
+            .join('\n')
+        }
+
         var renderAttributes = function renderAttributes(permutation) {
           return Object.keys(permutation).reduce(function(acc, key) {
             acc += ' ' + key + '="' + permutation[key] + '"'
@@ -20248,7 +20259,13 @@ object-assign
         }
 
         var renderReactImport = function renderReactImport(name) {
-          return '@pluralsight/ps-' + name.toLowerCase()
+          return (
+            'import ' +
+            name +
+            " from '@pluralsight/ps-" +
+            name.toLowerCase() +
+            "'\n\n"
+          )
         }
 
         var renderReactSrc = function renderReactSrc(
@@ -20257,19 +20274,25 @@ object-assign
           permutation
         ) {
           return (
-            'import ' +
-            name +
-            " from '" +
-            renderReactImport(name) +
-            "'\n\n<" +
+            '<' +
             name +
             renderAttributes(permutation) +
             '>' +
             children +
             '</' +
             name +
-            '>'
+            '>\n'
           )
+        }
+
+        var renderReactSources = function renderReactSources(
+          name,
+          children,
+          permutations
+        ) {
+          return permutations.reduce(function(acc, p) {
+            return (acc += renderReactSrc(name, children, p))
+          }, renderReactImport(name))
         }
 
         var Example = (function(_React$Component) {
@@ -20285,36 +20308,13 @@ object-assign
             )
 
             _this.state = {
-              htmlSrc: renderHtmlSrc(
-                _this.props.component,
-                _this.props.permutations[0]
-              ),
-              reactSrc: renderReactSrc(
-                _this.props.name,
-                _this.props.component.props.children,
-                _this.props.permutations[0]
-              ),
               srcOption: 'react'
             }
-            _this.handleOutputClick = _this.handleOutputClick.bind(_this)
             _this.handleSrcOptionClick = _this.handleSrcOptionClick.bind(_this)
             return _this
           }
 
           _createClass(Example, [
-            {
-              key: 'handleOutputClick',
-              value: function handleOutputClick(permutation) {
-                this.setState({
-                  htmlSrc: renderHtmlSrc(this.props.component, permutation),
-                  reactSrc: renderReactSrc(
-                    this.props.name,
-                    this.props.component.props.children,
-                    permutation
-                  )
-                })
-              }
-            },
             {
               key: 'handleSrcOptionClick',
               value: function handleSrcOptionClick(srcOption) {
@@ -20324,8 +20324,6 @@ object-assign
             {
               key: 'renderOutputs',
               value: function renderOutputs(props) {
-                var _this2 = this
-
                 return props.permutations.map(function(p, i) {
                   return _react2.default.cloneElement(
                     props.component,
@@ -20333,10 +20331,7 @@ object-assign
                       {
                         key: i
                       },
-                      p,
-                      {
-                        onClick: _this2.handleOutputClick.bind(_this2, p)
-                      }
+                      p
                     )
                   )
                 })
@@ -20348,14 +20343,21 @@ object-assign
                 if (this.state.srcOption === 'react') {
                   return _react2.default.createElement(
                     _reactHighlight2.default,
-                    { className: 'javascript ' + this.props.css.react },
-                    this.state.reactSrc
+                    { className: 'html ' + this.props.css.react },
+                    renderReactSources(
+                      this.props.name,
+                      this.props.component.props.children,
+                      this.props.permutations
+                    )
                   )
                 } else if (this.state.srcOption === 'html') {
                   return _react2.default.createElement(
                     _reactHighlight2.default,
                     { className: 'html ' + this.props.css.html },
-                    this.state.htmlSrc
+                    renderHtmlSources(
+                      this.props.component,
+                      this.props.permutations
+                    )
                   )
                 }
               }

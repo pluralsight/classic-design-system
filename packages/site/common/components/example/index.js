@@ -14,43 +14,34 @@ const toHtml = reactElement => ReactDOMServer.renderToStaticMarkup(reactElement)
 const renderHtmlSrc = (component, permutation) =>
   rmCssModuleHashes(toHtml(React.cloneElement(component, permutation)))
 
+const renderHtmlSources = (component, permutations) =>
+  permutations.map(p => renderHtmlSrc(component, p)).join('\n')
+
 const renderAttributes = permutation =>
   Object.keys(permutation).reduce((acc, key) => {
     acc += ` ${key}="${permutation[key]}"`
     return acc
   }, '')
 
-const renderReactImport = name => `@pluralsight/ps-${name.toLowerCase()}`
+const renderReactImport = name =>
+  `import ${name} from '@pluralsight/ps-${name.toLowerCase()}'\n\n`
 
 const renderReactSrc = (name, children, permutation) =>
-  `import ${name} from '${renderReactImport(name)}'
+  `<${name}${renderAttributes(permutation)}>${children}</${name}>\n`
 
-<${name}${renderAttributes(permutation)}>${children}</${name}>`
+const renderReactSources = (name, children, permutations) =>
+  permutations.reduce(
+    (acc, p) => (acc += renderReactSrc(name, children, p)),
+    renderReactImport(name)
+  )
 
 class Example extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      htmlSrc: renderHtmlSrc(this.props.component, this.props.permutations[0]),
-      reactSrc: renderReactSrc(
-        this.props.name,
-        this.props.component.props.children,
-        this.props.permutations[0]
-      ),
       srcOption: 'react'
     }
-    this.handleOutputClick = this.handleOutputClick.bind(this)
     this.handleSrcOptionClick = this.handleSrcOptionClick.bind(this)
-  }
-  handleOutputClick(permutation) {
-    this.setState({
-      htmlSrc: renderHtmlSrc(this.props.component, permutation),
-      reactSrc: renderReactSrc(
-        this.props.name,
-        this.props.component.props.children,
-        permutation
-      )
-    })
   }
   handleSrcOptionClick(srcOption) {
     this.setState({ srcOption })
@@ -59,22 +50,25 @@ class Example extends React.Component {
     return props.permutations.map((p, i) =>
       React.cloneElement(props.component, {
         key: i,
-        ...p,
-        onClick: this.handleOutputClick.bind(this, p)
+        ...p
       })
     )
   }
   renderSrc() {
     if (this.state.srcOption === 'react') {
       return (
-        <Highlight className={'javascript ' + this.props.css.react}>
-          {this.state.reactSrc}
+        <Highlight className={'html ' + this.props.css.react}>
+          {renderReactSources(
+            this.props.name,
+            this.props.component.props.children,
+            this.props.permutations
+          )}
         </Highlight>
       )
     } else if (this.state.srcOption === 'html') {
       return (
         <Highlight className={'html ' + this.props.css.html}>
-          {this.state.htmlSrc}
+          {renderHtmlSources(this.props.component, this.props.permutations)}
         </Highlight>
       )
     }
