@@ -1249,6 +1249,7 @@
   /* TODO: font family */
   color: #fff;
   background: var(--psColorsOrange);
+  cursor: pointer;
 }
 /* size */
 .ps-button--tiny___2OADV {
@@ -1275,8 +1276,12 @@
 }
 .ps-button--flat___1S8n0 {
   border: none;
-  color: var(--psColorsOrange);
+  color: var(--psColorsGray02);
   background: none;
+}
+.ps-button--flat___1S8n0:hover {
+  color: var(--psColorsWhite);
+  background: var(--psColorsGray04);
 }
 /* icon and iconAlign */
 /* disabled */
@@ -1285,6 +1290,13 @@
 }
 .ps-button--disabled___2ioM5:not(.ps-button--flat___1S8n0) {
   background: var(--psColorsGray04);
+}
+.ps-button--disabled___2ioM5.ps-button--flat___1S8n0 {
+  opacity: 0.4;
+}
+.ps-button--disabled___2ioM5.ps-button--flat___1S8n0:hover {
+  color: var(--psColorsGray02);
+  background: none;
 }:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
