@@ -1200,6 +1200,8 @@
 /* disabled */
 .ps-button--disabled___2ioM5 {
   color: var(--psColorsGray02);
+}
+.ps-button--disabled___2ioM5:not(.ps-button--flat___1S8n0) {
   background: var(--psColorsGray04);
 }:root {
   /* ui colors */

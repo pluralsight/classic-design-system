@@ -51,5 +51,7 @@
 /* disabled */
 .ps-button--disabled {
   color: var(--psColorsGray02);
+}
+.ps-button--disabled:not(.ps-button--flat) {
   background: var(--psColorsGray04);
 }
