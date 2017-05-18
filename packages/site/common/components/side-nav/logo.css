@@ -6,6 +6,7 @@
   align-items: center;
   height: 150px;
   border-bottom: 1px solid var(--psColorsGray01);
+  text-decoration: none;
 }
 .img {
   height: 31px;

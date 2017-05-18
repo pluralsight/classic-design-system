@@ -1,0 +1,11 @@
+@import "@pluralsight/ps-design-system-core";
+
+.root {
+  padding-left: 14px; /* TODO: how to handle additive spacing scenarios? */
+}
+.link {
+  font-size: var(--psTypeFontSizeSmall);
+  line-height: var(--psTypeLineHeightExtra);
+  text-decoration: none;
+  color: var(--psColorsGray03);
+}

@@ -1,0 +1,10 @@
+@import "@pluralsight/ps-design-system-core";
+
+:root {
+  --topBarHeight: 8px;
+}
+
+.root {
+  height: var(--topBarHeight);
+  background: var(--psColorsGradientHorz);
+}

@@ -1,10 +1,4 @@
-@import "@pluralsight/ps-design-system-core";
-
 .root {
-}
-.topGrad {
-  height: 8px;
-  background: var(--psColorsGradientHorz);
 }
 .content {
   display: flex;
