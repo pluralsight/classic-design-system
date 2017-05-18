@@ -20705,11 +20705,13 @@ object-assign
 
         var _index2 = _interopRequireDefault(_index)
 
+        var _logo = __webpack_require__(497)
+
+        var _logo2 = _interopRequireDefault(_logo)
+
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
         }
-
-        var version = '1.0.0' // TODO: make read package.json
 
         exports.default = (0, _reactStyleable2.default)(
           _index2.default
@@ -20717,28 +20719,7 @@ object-assign
           return _react2.default.createElement(
             'nav',
             { className: props.css.root },
-            _react2.default.createElement(
-              'div',
-              { className: props.css.logo },
-              _react2.default.createElement('div', {
-                className: props.css.logoImg
-              }),
-              _react2.default.createElement(
-                'h2',
-                { className: props.css.logoText },
-                _react2.default.createElement(
-                  'span',
-                  { className: props.css.logoTextCompany },
-                  'PLURALSIGHT'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: props.css.logoTextTitle },
-                  'DESIGN SYSTEM v',
-                  version
-                )
-              )
-            )
+            _react2.default.createElement(_logo2.default, null)
           )
         })
 
@@ -21496,14 +21477,7 @@ object-assign
       /* 176 */
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
-        module.exports = {
-          root: 'root___2UHuV',
-          logo: 'logo___1vpie',
-          logoImg: 'logoImg___1jMAt',
-          logoText: 'logoText___1Ws28',
-          logoTextCompany: 'logoTextCompany___hZFKX',
-          logoTextTitle: 'logoTextTitle___2k8LY'
-        }
+        module.exports = { root: 'root___2UHuV' }
 
         /***/
       },
@@ -57461,6 +57435,86 @@ https://highlightjs.org/
         }
 
         exports.default = valueEqual
+
+        /***/
+      },
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      /* 482 */ /* 483 */ /* 484 */ /* 485 */ /* 486 */ /* 487 */ /* 488 */ /* 489 */ /* 490 */ /* 491 */ /* 492 */ /* 493 */ /* 494 */ /* 495 */ /* 496 */ /* 497 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+
+        var _react = __webpack_require__(4)
+
+        var _react2 = _interopRequireDefault(_react)
+
+        var _reactStyleable = __webpack_require__(15)
+
+        var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
+
+        var _logo = __webpack_require__(498)
+
+        var _logo2 = _interopRequireDefault(_logo)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        var version = '1.0.0' // TODO: make read package.json
+
+        exports.default = (0, _reactStyleable2.default)(
+          _logo2.default
+        )(function(props) {
+          return _react2.default.createElement(
+            'div',
+            { className: props.css.root },
+            _react2.default.createElement('div', { className: props.css.img }),
+            _react2.default.createElement(
+              'h2',
+              { className: props.css.text },
+              _react2.default.createElement(
+                'span',
+                { className: props.css.textCompany },
+                'PLURALSIGHT'
+              ),
+              _react2.default.createElement(
+                'span',
+                { className: props.css.textTitle },
+                'DESIGN SYSTEM v',
+                version
+              )
+            )
+          )
+        })
+
+        /***/
+      },
+      /* 498 */
+      /***/ function(module, exports) {
+        // removed by extract-text-webpack-plugin
+        module.exports = {
+          root: 'root___1Bv0C',
+          img: 'img___1fqNA',
+          text: 'text___3vg-7',
+          textCompany: 'textCompany___2HUpX',
+          textTitle: 'textTitle___2rfmx'
+        }
 
         /***/
       }
