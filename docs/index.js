@@ -17115,6 +17115,8 @@ object-assign
 
         var _chrome2 = _interopRequireDefault(_chrome)
 
+        var _components = __webpack_require__(158)
+
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
         }
@@ -17124,17 +17126,20 @@ object-assign
             _chrome2.default,
             null,
             _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: '/' },
-              'Home'
+              _components.Heading.Gigantic,
+              null,
+              'Welcome!'
             ),
             _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: '/components/button/' },
-              'Button'
+              _components.P,
+              null,
+              'Welcome to the Pluralsight Design System.'
             ),
-            _react2.default.createElement('br', null),
-            'Awesome Home'
+            _react2.default.createElement(
+              _components.P,
+              null,
+              'This project is being WIPped up as we you read this.  Feel free to have a look around.  Inspect a gradient or two.'
+            )
           )
         }
 
@@ -20524,6 +20529,10 @@ object-assign
           value: true
         })
 
+        var _gigantic = __webpack_require__(512)
+
+        var _gigantic2 = _interopRequireDefault(_gigantic)
+
         var _xxl = __webpack_require__(157)
 
         var _xxl2 = _interopRequireDefault(_xxl)
@@ -20537,6 +20546,7 @@ object-assign
         }
 
         exports.default = {
+          Gigantic: _gigantic2.default,
           Xxl: _xxl2.default,
           Large: _large2.default
         }
@@ -20619,7 +20629,7 @@ object-assign
         Object.defineProperty(exports, '__esModule', {
           value: true
         })
-        exports.P = exports.Heading = exports.Example = exports.CodeOutput = exports.Code = undefined
+        exports.TopBar = exports.Switcher = exports.SideNav = exports.P = exports.Heading = exports.Example = exports.CodeOutput = exports.Code = undefined
 
         var _code = __webpack_require__(152)
 
@@ -20641,6 +20651,18 @@ object-assign
 
         var _p2 = _interopRequireDefault(_p)
 
+        var _sideNav = __webpack_require__(160)
+
+        var _sideNav2 = _interopRequireDefault(_sideNav)
+
+        var _switcher = __webpack_require__(161)
+
+        var _switcher2 = _interopRequireDefault(_switcher)
+
+        var _topBar = __webpack_require__(509)
+
+        var _topBar2 = _interopRequireDefault(_topBar)
+
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
         }
@@ -20650,6 +20672,9 @@ object-assign
         exports.Example = _example2.default
         exports.Heading = _heading2.default
         exports.P = _p2.default
+        exports.SideNav = _sideNav2.default
+        exports.Switcher = _switcher2.default
+        exports.TopBar = _topBar2.default
 
         /***/
       },
@@ -57720,6 +57745,49 @@ https://highlightjs.org/
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
         module.exports = { root: 'root___CTiLj' }
+
+        /***/
+      },
+      ,
+      /* 511 */ /* 512 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+
+        var _react = __webpack_require__(4)
+
+        var _react2 = _interopRequireDefault(_react)
+
+        var _reactStyleable = __webpack_require__(15)
+
+        var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
+
+        var _gigantic = __webpack_require__(513)
+
+        var _gigantic2 = _interopRequireDefault(_gigantic)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        exports.default = (0, _reactStyleable2.default)(
+          _gigantic2.default
+        )(function(props) {
+          return _react2.default.createElement(
+            'h2',
+            { className: props.css.root },
+            props.children
+          )
+        })
+
+        /***/
+      },
+      /* 513 */
+      /***/ function(module, exports) {
+        // removed by extract-text-webpack-plugin
+        module.exports = { root: 'root___1HMN-' }
 
         /***/
       }
