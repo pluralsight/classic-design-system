@@ -1,7 +1,7 @@
 import React from 'react'
 import styleable from 'react-styleable'
 
-import { Example, Heading } from '../../common/components'
+import { Code, Example, Heading, P } from '../../common/components'
 import css from './index.css'
 
 import Button from '@pluralsight/ps-button/react'
@@ -10,6 +10,13 @@ export default styleable(css)(props => {
   return (
     <div className={props.css.root}>
       <Heading.Xxl>Buttons</Heading.Xxl>
+
+      <P>
+        Include a React component in your project:
+      </P>
+      <Code language="javascript">
+        import Button from '@pluralsight/ps-button/react'
+      </Code>
 
       <Heading.Large>Button appearance</Heading.Large>
       <Example

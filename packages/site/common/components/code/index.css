@@ -1,2 +1,7 @@
 .root {
+  padding: var(--psLayoutSpacingLarge);
+  background: var(--psColorsGray04);
+}
+.code {
+  background: none;
 }

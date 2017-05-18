@@ -551,6 +551,11 @@
   height: var(--topBarHeight);
   background: var(--psColorsGradientHorz);
 }.root___3shuw {
+  padding: var(--psLayoutSpacingLarge);
+  background: var(--psColorsGray04);
+}
+.code___antz_ {
+  background: none;
 }:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
@@ -1173,6 +1178,7 @@
 }
 .root___1CHxl {
   color: var(--psColorsGray04);
+  font-size: var(--psTypeFontSizeSmall);
 }.root___PQ8v_ {
 }:root {
   /* ui colors */

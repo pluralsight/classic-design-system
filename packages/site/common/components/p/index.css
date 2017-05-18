@@ -2,4 +2,5 @@
 
 .root {
   color: var(--psColorsGray04);
+  font-size: var(--psTypeFontSizeSmall);
 }

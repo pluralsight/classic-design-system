@@ -20300,6 +20300,10 @@ object-assign
           value: true
         })
 
+        var _reactHighlight = __webpack_require__(458)
+
+        var _reactHighlight2 = _interopRequireDefault(_reactHighlight)
+
         var _react = __webpack_require__(3)
 
         var _react2 = _interopRequireDefault(_react)
@@ -20320,13 +20324,9 @@ object-assign
 
         var Code = function Code(props) {
           return _react2.default.createElement(
-            'pre',
-            { className: props.css.root },
-            _react2.default.createElement(
-              'code',
-              { className: 'language-' + props.lang + ' hljs ' + props.lang },
-              props.children
-            )
+            _reactHighlight2.default,
+            { className: 'javascript ' + props.css.root },
+            props.children
           )
         }
 
@@ -21414,6 +21414,16 @@ object-assign
               'Buttons'
             ),
             _react2.default.createElement(
+              _components.P,
+              null,
+              'Include a React component in your project:'
+            ),
+            _react2.default.createElement(
+              _components.Code,
+              { language: 'javascript' },
+              "import Button from '@pluralsight/ps-button/react'"
+            ),
+            _react2.default.createElement(
               _components.Heading.Large,
               null,
               'Button appearance'
@@ -21715,7 +21725,7 @@ object-assign
       /* 176 */
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
-        module.exports = { root: 'root___3shuw' }
+        module.exports = { root: 'root___3shuw', code: 'code___antz_' }
 
         /***/
       },
