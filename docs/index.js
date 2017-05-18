@@ -21394,9 +21394,9 @@ object-assign
 
         var _index2 = _interopRequireDefault(_index)
 
-        var _psButton = __webpack_require__(154)
+        var _react3 = __webpack_require__(154)
 
-        var _psButton2 = _interopRequireDefault(_psButton)
+        var _react4 = _interopRequireDefault(_react3)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -21420,7 +21420,7 @@ object-assign
             ),
             _react2.default.createElement(_components.Example, {
               component: _react2.default.createElement(
-                _psButton2.default,
+                _react4.default,
                 null,
                 'Click me'
               ),
@@ -21438,7 +21438,7 @@ object-assign
             ),
             _react2.default.createElement(_components.Example, {
               component: _react2.default.createElement(
-                _psButton2.default,
+                _react4.default,
                 null,
                 'Click me'
               ),
@@ -21456,7 +21456,7 @@ object-assign
             ),
             _react2.default.createElement(_components.Example, {
               component: _react2.default.createElement(
-                _psButton2.default,
+                _react4.default,
                 null,
                 'Disabled button'
               ),
@@ -21700,14 +21700,14 @@ object-assign
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
         module.exports = {
-          'ps-button': 'ps-button___2hSPm',
-          'ps-button--tiny': 'ps-button--tiny___2OADV',
-          'ps-button--small': 'ps-button--small___dz_BG',
-          'ps-button--medium': 'ps-button--medium___33x7N',
-          'ps-button--large': 'ps-button--large___2aoJi',
-          'ps-button--stroke': 'ps-button--stroke___1c8f6',
-          'ps-button--flat': 'ps-button--flat___1S8n0',
-          'ps-button--disabled': 'ps-button--disabled___2ioM5'
+          'ps-button': 'ps-button___1bHjx',
+          'ps-button--tiny': 'ps-button--tiny___1z0fi',
+          'ps-button--small': 'ps-button--small___1eqvh',
+          'ps-button--medium': 'ps-button--medium___MSkXS',
+          'ps-button--large': 'ps-button--large___1Qlq6',
+          'ps-button--stroke': 'ps-button--stroke___1x77A',
+          'ps-button--flat': 'ps-button--flat___zh39U',
+          'ps-button--disabled': 'ps-button--disabled___38PFY'
         }
 
         /***/

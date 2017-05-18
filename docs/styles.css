@@ -1251,7 +1251,7 @@
   --psTypeLineHeightExtra: 32px;
   --psTypeLineHeightHuge: 40px;
 }
-.ps-button___2hSPm {
+.ps-button___1bHjx {
   display: inline-block;
   padding: 8px 16px;
   border: 0;
@@ -1268,49 +1268,49 @@
   cursor: pointer;
 }
 /* size */
-.ps-button--tiny___2OADV {
+.ps-button--tiny___1z0fi {
   font-size: var(--psTypeFontSizeExtraSmall);
   line-height: var(--psTypeLineHeightStandard);
 }
-.ps-button--small___dz_BG {
+.ps-button--small___1eqvh {
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightStandard);
 }
-.ps-button--medium___33x7N {
+.ps-button--medium___MSkXS {
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightStandard);
 }
-.ps-button--large___2aoJi {
+.ps-button--large___1Qlq6 {
   font-size: var(--psTypeFontSizeMedium);
   line-height: var(--psTypeLineHeightExtra);
 }
 /* appearance */
-.ps-button--stroke___1c8f6 {
+.ps-button--stroke___1x77A {
   border: 1px solid var(--psColorsOrange);
   color: var(--psColorsOrange);
   background: none;
 }
-.ps-button--flat___1S8n0 {
+.ps-button--flat___zh39U {
   border: none;
   color: var(--psColorsGray02);
   background: none;
 }
-.ps-button--flat___1S8n0:hover {
+.ps-button--flat___zh39U:hover {
   color: var(--psColorsWhite);
   background: var(--psColorsGray04);
 }
 /* icon and iconAlign */
 /* disabled */
-.ps-button--disabled___2ioM5 {
+.ps-button--disabled___38PFY {
   color: var(--psColorsGray02);
 }
-.ps-button--disabled___2ioM5:not(.ps-button--flat___1S8n0) {
+.ps-button--disabled___38PFY:not(.ps-button--flat___zh39U) {
   background: var(--psColorsGray04);
 }
-.ps-button--disabled___2ioM5.ps-button--flat___1S8n0 {
+.ps-button--disabled___38PFY.ps-button--flat___zh39U {
   opacity: 0.4;
 }
-.ps-button--disabled___2ioM5.ps-button--flat___1S8n0:hover {
+.ps-button--disabled___38PFY.ps-button--flat___zh39U:hover {
   color: var(--psColorsGray02);
   background: none;
 }:root {
