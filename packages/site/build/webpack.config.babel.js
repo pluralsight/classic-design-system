@@ -47,11 +47,6 @@ module.exports = {
             'postcss-loader'
           ]
         })
-      },
-      {
-        test: /\.(png)$/i,
-        exclude: /node_modules/,
-        use: ['file-loader', 'image-webpack-loader']
       }
     ]
   },
