@@ -91,7 +91,7 @@
   background: var(--psColorsGradientHorz);
 }
 .root___2UHuV {
-  width: 200px;
+  min-width: 200px;
   min-height: calc(100vh - var(--topBarHeight));
   border-right: 1px solid var(--psColorsGray01);
   border-bottom: 1px solid var(--psColorsGray01);
