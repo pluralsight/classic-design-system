@@ -1,6 +1,5 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
-const postcssImport = require('postcss-import')
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 
 module.exports = {
@@ -45,12 +44,7 @@ module.exports = {
                 localIdentName: '[local]___[hash:base64:5]'
               }
             },
-            {
-              loader: 'postcss-loader',
-              options: {
-                plugins: [postcssImport]
-              }
-            }
+            'postcss-loader'
           ]
         })
       }
