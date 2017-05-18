@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-site@1.1.0...@pluralsight/ps-site@1.1.1) (2017-05-18)
+
+
+### Bug Fixes
+
+* **site:** react component import path ([1c20fc8](https://github.com/pluralsight/design-system/commit/1c20fc8))
+
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2017-05-18)
 
