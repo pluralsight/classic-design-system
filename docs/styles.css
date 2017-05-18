@@ -84,6 +84,14 @@
   --psTypeLineHeightHuge: 40px;
 }
 :root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
+:root {
   --topBarHeight: 8px;
 }
 .root___2UHuV {
@@ -173,6 +181,14 @@
   --psTypeLineHeightExtra: 32px;
   --psTypeLineHeightHuge: 40px;
 }
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
 .root___L4j9q {
   padding: var(--psLayoutSpacingExtraSmall) var(--psLayoutSpacingLarge);
   border-bottom: 1px solid var(--psColorsGray01);
@@ -252,6 +268,14 @@
   --psTypeLineHeightStandard: 24px;
   --psTypeLineHeightExtra: 32px;
   --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
 }
 .root___1jALo {
   margin: 0;
@@ -335,6 +359,14 @@
   --psTypeLineHeightStandard: 24px;
   --psTypeLineHeightExtra: 32px;
   --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
 }
 .root___iRUsh {
   padding-left: 14px; /* TODO: how to handle additive spacing scenarios? */
@@ -436,6 +468,14 @@
   --psTypeLineHeightStandard: 24px;
   --psTypeLineHeightExtra: 32px;
   --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
 }
 .root___1Bv0C {
   display: flex;
@@ -545,6 +585,14 @@
   --psTypeLineHeightHuge: 40px;
 }
 :root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
+:root {
   --topBarHeight: 8px;
 }
 .root___CTiLj {
@@ -632,6 +680,14 @@
   --psTypeLineHeightStandard: 24px;
   --psTypeLineHeightExtra: 32px;
   --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
 }
 .root___1l14T {
 }
@@ -734,6 +790,14 @@
   --psTypeLineHeightExtra: 32px;
   --psTypeLineHeightHuge: 40px;
 }
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
 .root___1V9Uk {
   color: var(--psColorsWhite);
 }:root {
@@ -812,6 +876,14 @@
   --psTypeLineHeightStandard: 24px;
   --psTypeLineHeightExtra: 32px;
   --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
 }
 :root {
   --outerHeight: 24px;
@@ -930,6 +1002,14 @@
   --psTypeLineHeightExtra: 32px;
   --psTypeLineHeightHuge: 40px;
 }
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
 .root___1HMN- {
   font-size: var(--psTypeFontSizeGigantic);
   letter-spacing: var(--psTypeLetterSpacingGigantic);
@@ -1011,6 +1091,14 @@
   --psTypeLineHeightStandard: 24px;
   --psTypeLineHeightExtra: 32px;
   --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
 }
 .root___EyfF9 {
   font-size: var(--psTypeFontSizeXxl);
@@ -1094,6 +1182,14 @@
   --psTypeLineHeightExtra: 32px;
   --psTypeLineHeightHuge: 40px;
 }
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
 .root___2M4v3 {
   font-size: var(--psTypeFontSizeLarge);
   letter-spacing: var(--psTypeLetterSpacingLarge);
@@ -1176,6 +1272,14 @@
   --psTypeLineHeightExtra: 32px;
   --psTypeLineHeightHuge: 40px;
 }
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
 .root___1CHxl {
   color: var(--psColorsGray04);
   font-size: var(--psTypeFontSizeSmall);
@@ -1257,9 +1361,17 @@
   --psTypeLineHeightExtra: 32px;
   --psTypeLineHeightHuge: 40px;
 }
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
 .ps-button___1bHjx {
   display: inline-block;
-  padding: 8px 16px;
+  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingMedium);
   border: 0;
   border-radius: 2px;
 
@@ -1269,37 +1381,56 @@
   text-align: center;
 
   /* TODO: font family */
-  color: #fff;
+  color: var(--psColorsWhite);
   background: var(--psColorsOrange);
   cursor: pointer;
+
+  transition: all var(--psMotionSpeedNormal);
+}
+.ps-button___1bHjx:hover {
+  background: var(--psColorsOrangeLight);
 }
 /* size */
 .ps-button--tiny___1z0fi {
   font-size: var(--psTypeFontSizeExtraSmall);
   line-height: var(--psTypeLineHeightStandard);
+  padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingMedium);
 }
 .ps-button--small___1eqvh {
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightStandard);
+  padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingMedium);
+  height: 32px;
 }
 .ps-button--medium___MSkXS {
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightStandard);
+  padding: var(--psLayoutSpacingExtraSmall) var(--psLayoutSpacingMedium);
+  height: 40px;
 }
 .ps-button--large___1Qlq6 {
   font-size: var(--psTypeFontSizeMedium);
   line-height: var(--psTypeLineHeightExtra);
+  padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingMedium);
+  height: 48px;
 }
 /* appearance */
 .ps-button--stroke___1x77A {
   border: 1px solid var(--psColorsOrange);
   color: var(--psColorsOrange);
   background: none;
+  transition: all var(--psMotionSpeedNormal);
+}
+.ps-button--stroke___1x77A:hover {
+  color: var(--psColorsOrangeLight);
+  border: 1px solid var(--psColorsOrangeLight);
+  background: var(--psColorsBlack);
 }
 .ps-button--flat___zh39U {
   border: none;
   color: var(--psColorsGray02);
   background: none;
+  transition: all var(--psMotionSpeedNormal);
 }
 .ps-button--flat___zh39U:hover {
   color: var(--psColorsWhite);
@@ -1311,7 +1442,7 @@
   color: var(--psColorsGray02);
 }
 .ps-button--disabled___38PFY:not(.ps-button--flat___zh39U) {
-  background: var(--psColorsGray04);
+  background: var(--psColorsGray03);
 }
 .ps-button--disabled___38PFY.ps-button--flat___zh39U {
   opacity: 0.4;
@@ -1319,7 +1450,8 @@
 .ps-button--disabled___38PFY.ps-button--flat___zh39U:hover {
   color: var(--psColorsGray02);
   background: none;
-}:root {
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
@@ -1395,6 +1527,14 @@
   --psTypeLineHeightStandard: 24px;
   --psTypeLineHeightExtra: 32px;
   --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
 }
 * {
   box-sizing: border-box;
