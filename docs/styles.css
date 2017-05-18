@@ -339,11 +339,27 @@
 .root___iRUsh {
   padding-left: 14px; /* TODO: how to handle additive spacing scenarios? */
 }
+.box___GW9zs {
+  display: none;
+  height: 8px;
+  width: 8px;
+  margin-right: 12px;
+  background: var(--psColorsGradientHorz);
+}
 .link___3Vb8k {
+  display: flex;
+  align-items: center;
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightExtra);
   text-decoration: none;
   color: var(--psColorsGray03);
+}
+.link___3Vb8k.active {
+  color: var(--psColorsBlack);
+  font-weight: var(--psTypeFontWeightBold);
+}
+.link___3Vb8k.active .box___GW9zs {
+  display: inline-block;
 }:root {
   /* ui colors */
   --psColorsWhite: #ffffff;

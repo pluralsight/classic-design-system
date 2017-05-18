@@ -12,7 +12,7 @@ export default styleable(css)(props => (
     <Logo />
     <Group>
       <GroupTitle>COMPONENTS</GroupTitle>
-      <Link href={`/components/button`}>Button</Link>
+      <Link href={`/components/button`}>Buttons</Link>
     </Group>
   </nav>
 ))

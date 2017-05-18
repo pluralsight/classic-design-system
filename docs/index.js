@@ -12176,7 +12176,7 @@ object-assign
               _react2.default.createElement(
                 _link2.default,
                 { href: '/components/button' },
-                'Button'
+                'Buttons'
               )
             )
           )
@@ -20961,8 +20961,12 @@ object-assign
             'div',
             { className: props.css.root },
             _react2.default.createElement(
-              _reactRouterDom.Link,
+              _reactRouterDom.NavLink,
               { to: props.href, className: props.css.link },
+              _react2.default.createElement('span', {
+                'aria-hidden': 'true',
+                className: props.css.box
+              }),
               props.children
             )
           )
@@ -21778,7 +21782,11 @@ object-assign
       /* 186 */
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
-        module.exports = { root: 'root___iRUsh', link: 'link___3Vb8k' }
+        module.exports = {
+          root: 'root___iRUsh',
+          box: 'box___GW9zs',
+          link: 'link___3Vb8k'
+        }
 
         /***/
       },

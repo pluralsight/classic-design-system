@@ -3,9 +3,25 @@
 .root {
   padding-left: 14px; /* TODO: how to handle additive spacing scenarios? */
 }
+.box {
+  display: none;
+  height: 8px;
+  width: 8px;
+  margin-right: 12px;
+  background: var(--psColorsGradientHorz);
+}
 .link {
+  display: flex;
+  align-items: center;
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightExtra);
   text-decoration: none;
   color: var(--psColorsGray03);
+}
+.link:global(.active) {
+  color: var(--psColorsBlack);
+  font-weight: var(--psTypeFontWeightBold);
+}
+.link:global(.active) .box {
+  display: inline-block;
 }
