@@ -21416,6 +21416,16 @@ object-assign
             _react2.default.createElement(
               _components.P,
               null,
+              'Install the component dependency:'
+            ),
+            _react2.default.createElement(
+              _components.Code,
+              { language: 'bash' },
+              'npm install @pluralsight/ps-button --save-dev'
+            ),
+            _react2.default.createElement(
+              _components.P,
+              null,
               'Include a React component in your project:'
             ),
             _react2.default.createElement(

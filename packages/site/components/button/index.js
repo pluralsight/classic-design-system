@@ -12,6 +12,13 @@ export default styleable(css)(props => {
       <Heading.Xxl>Buttons</Heading.Xxl>
 
       <P>
+        Install the component dependency:
+      </P>
+      <Code language="bash">
+        npm install @pluralsight/ps-button --save-dev
+      </Code>
+
+      <P>
         Include a React component in your project:
       </P>
       <Code language="javascript">
