@@ -1,8 +1,0 @@
-:root {
-  /* motion */
-  --psMotionSpeedFastest: 100ms;
-  --psMotionSpeedFaster: 150ms;
-  --psMotionSpeedNormal: 200ms;
-  --psMotionSpeedSlower: 250ms;
-  --psMotionSpeedSlowest: 300ms;
-}

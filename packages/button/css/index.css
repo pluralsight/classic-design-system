@@ -2,7 +2,7 @@
 
 .ps-button {
   display: inline-block;
-  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingMedium);
+  padding: 8px 16px;
   border: 0;
   border-radius: 2px;
 
@@ -12,40 +12,27 @@
   text-align: center;
 
   /* TODO: font family */
-  color: var(--psColorsWhite);
+  color: #fff;
   background: var(--psColorsOrange);
   cursor: pointer;
-
-  transition: all var(--psMotionSpeedNormal);
-}
-
-.ps-button:hover {
-  background: var(--psColorsOrangeLight);
 }
 
 /* size */
 .ps-button--tiny {
   font-size: var(--psTypeFontSizeExtraSmall);
   line-height: var(--psTypeLineHeightStandard);
-  padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingMedium);
 }
 .ps-button--small {
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightStandard);
-  padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingMedium);
-  height: 32px;
 }
 .ps-button--medium {
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightStandard);
-  padding: var(--psLayoutSpacingExtraSmall) var(--psLayoutSpacingMedium);
-  height: 40px;
 }
 .ps-button--large {
   font-size: var(--psTypeFontSizeMedium);
   line-height: var(--psTypeLineHeightExtra);
-  padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingMedium);
-  height: 48px;
 }
 
 /* appearance */
@@ -53,18 +40,11 @@
   border: 1px solid var(--psColorsOrange);
   color: var(--psColorsOrange);
   background: none;
-  transition: all var(--psMotionSpeedNormal);
-}
-.ps-button--stroke:hover {
-  color: var(--psColorsOrangeLight);
-  border: 1px solid var(--psColorsOrangeLight);
-  background: var(--psColorsBlack);
 }
 .ps-button--flat {
   border: none;
   color: var(--psColorsGray02);
   background: none;
-  transition: all var(--psMotionSpeedNormal);
 }
 .ps-button--flat:hover {
   color: var(--psColorsWhite);
@@ -78,7 +58,7 @@
   color: var(--psColorsGray02);
 }
 .ps-button--disabled:not(.ps-button--flat) {
-  background: var(--psColorsGray03);
+  background: var(--psColorsGray04);
 }
 .ps-button--disabled.ps-button--flat {
   opacity: 0.4;
