@@ -85,6 +85,7 @@
   display: flex;
 }
 .main___1V9IZ {
+  flex: 1;
   padding: 64px 110px; /* TODO: spacing not in ds? */
 }:root {
   /* ui colors */
