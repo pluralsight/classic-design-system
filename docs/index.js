@@ -20962,7 +20962,11 @@ object-assign
             { className: props.css.root },
             _react2.default.createElement(
               _reactRouterDom.NavLink,
-              { to: props.href, className: props.css.link },
+              {
+                activeClassName: props.css.linkActive,
+                to: props.href,
+                className: props.css.link
+              },
               _react2.default.createElement('span', {
                 'aria-hidden': 'true',
                 className: props.css.box
@@ -21785,7 +21789,8 @@ object-assign
         module.exports = {
           root: 'root___iRUsh',
           box: 'box___GW9zs',
-          link: 'link___3Vb8k'
+          link: 'link___3Vb8k',
+          linkActive: 'linkActive___d7z-g'
         }
 
         /***/

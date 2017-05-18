@@ -354,11 +354,11 @@
   text-decoration: none;
   color: var(--psColorsGray03);
 }
-.link___3Vb8k.active {
+.linkActive___d7z-g {
   color: var(--psColorsBlack);
   font-weight: var(--psTypeFontWeightBold);
 }
-.link___3Vb8k.active .box___GW9zs {
+.linkActive___d7z-g .box___GW9zs {
   display: inline-block;
 }:root {
   /* ui colors */

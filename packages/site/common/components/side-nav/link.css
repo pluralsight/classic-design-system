@@ -18,10 +18,10 @@
   text-decoration: none;
   color: var(--psColorsGray03);
 }
-.link:global(.active) {
+.linkActive {
   color: var(--psColorsBlack);
   font-weight: var(--psTypeFontWeightBold);
 }
-.link:global(.active) .box {
+.linkActive .box {
   display: inline-block;
 }
