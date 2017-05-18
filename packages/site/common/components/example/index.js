@@ -24,7 +24,7 @@ const renderAttributes = permutation =>
   }, '')
 
 const renderReactImport = name =>
-  `import ${name} from '@pluralsight/ps-${name.toLowerCase()}'\n\n`
+  `import ${name} from '@pluralsight/ps-${name.toLowerCase()}/react'\n\n`
 
 const renderReactSrc = (name, children, permutation) =>
   `<${name}${renderAttributes(permutation)}>${children}</${name}>\n`

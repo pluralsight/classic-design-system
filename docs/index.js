@@ -20492,7 +20492,7 @@ object-assign
             name +
             " from '@pluralsight/ps-" +
             name.toLowerCase() +
-            "'\n\n"
+            "/react'\n\n"
           )
         }
 
