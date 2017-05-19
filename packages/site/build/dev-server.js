@@ -9,7 +9,7 @@ const generatedSiteDir = path.resolve(
   path.join(__dirname, '..', '..', '..', 'docs')
 )
 
-app.use(mount('/design-system', serve(generatedSiteDir)))
+app.use(mount('/', serve(generatedSiteDir)))
 
 app.listen(1337)
 
