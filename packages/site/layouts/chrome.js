@@ -10,9 +10,11 @@ export default styleable(css)(props => (
     <TopBar />
     <div className={props.css.content}>
       <SideNav />
-      <main className={props.css.main}>
-        {props.children}
-      </main>
+      <div className={props.css.wrapper}>
+        <main className={props.css.main}>
+          {props.children}
+        </main>
+      </div>
     </div>
   </div>
 ))

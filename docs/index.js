@@ -5238,9 +5238,13 @@ object-assign
               { className: props.css.content },
               _react2.default.createElement(_sideNav2.default, null),
               _react2.default.createElement(
-                'main',
-                { className: props.css.main },
-                props.children
+                'div',
+                { className: props.css.wrapper },
+                _react2.default.createElement(
+                  'main',
+                  { className: props.css.main },
+                  props.children
+                )
               )
             )
           )
@@ -21866,6 +21870,7 @@ object-assign
         module.exports = {
           root: 'root___3rc2t',
           content: 'content___30TPk',
+          wrapper: 'wrapper___2zYmM',
           main: 'main___1V9IZ'
         }
 

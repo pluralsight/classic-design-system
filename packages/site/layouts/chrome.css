@@ -4,6 +4,13 @@
   display: flex;
   height: calc(100% - var(--topBarHeight))
 }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+  min-width: 300px;
+}
+
 .main {
   flex: 1;
   padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge);

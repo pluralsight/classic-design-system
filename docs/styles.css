@@ -4,6 +4,11 @@
   display: flex;
   height: calc(100% - var(--topBarHeight))
 }
+.wrapper___2zYmM {
+  margin: 0 auto;
+  max-width: 900px;
+  min-width: 300px;
+}
 .main___1V9IZ {
   flex: 1;
   padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge);
@@ -1332,9 +1337,7 @@ Media Queries
   margin: var(--psLayoutSpacingTiny) 0;
 }
 .root___PQ8v_ {
-  margin: 0 auto;
-  max-width: 900px;
-  min-width: 300px;
+
 }
 :root {
   /* ui colors */
