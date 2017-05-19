@@ -3,7 +3,7 @@
 
 .root {
   /*min-width: 200px;*/
-  min-height: calc(100% - var(--topBarHeight));
+  min-height: 100%;
   height: inherit;
   flex: 0 0 200px;
   border-right: 1px solid var(--psColorsGray01);
