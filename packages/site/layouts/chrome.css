@@ -6,6 +6,26 @@
 }
 .main {
   flex: 1;
-  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge); 
+  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge);
   overflow-x: auto;
+}
+
+
+/*
+========================
+Media Queries
+========================
+*/
+
+/* --- > 768 - Reposition nav below content --- */
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column-reverse;
+        height: auto;
+      }
+
+    .main {
+        overflow: visible;
+    }
 }

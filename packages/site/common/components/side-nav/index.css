@@ -2,11 +2,29 @@
 @import "../top-bar/top-bar.css";
 
 .root {
-  /*min-width: 200px;*/
   min-height: 100%;
   height: inherit;
+  display: flex;
+  flex-direction: column;
   flex: 0 0 200px;
   border-right: 1px solid var(--psColorsGray01);
   background: var(--psColorsBone);
   overflow: auto;
+}
+
+/*
+========================
+Media Queries
+========================
+*/
+
+/* --- > 768 - Reposition nav below content --- */
+
+@media (max-width: 768px) {
+    .root {
+        min-height: inherit;
+        overflow: visible;
+        flex-direction: column-reverse;
+        border: none;
+    }
 }

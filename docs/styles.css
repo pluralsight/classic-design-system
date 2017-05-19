@@ -6,8 +6,24 @@
 }
 .main___1V9IZ {
   flex: 1;
-  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge); 
+  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge);
   overflow-x: auto;
+}
+/*
+========================
+Media Queries
+========================
+*/
+/* --- > 768 - Reposition nav below content --- */
+@media (max-width: 768px) {
+    .content___30TPk {
+        flex-direction: column-reverse;
+        height: auto;
+      }
+
+    .main___1V9IZ {
+        overflow: visible;
+    }
 }
 :root {
   /* ui colors */
@@ -102,13 +118,28 @@
   background: var(--psColorsGradientHorz);
 }
 .root___2UHuV {
-  /*min-width: 200px;*/
   min-height: 100%;
   height: inherit;
+  display: flex;
+  flex-direction: column;
   flex: 0 0 200px;
   border-right: 1px solid var(--psColorsGray01);
   background: var(--psColorsBone);
   overflow: auto;
+}
+/*
+========================
+Media Queries
+========================
+*/
+/* --- > 768 - Reposition nav below content --- */
+@media (max-width: 768px) {
+    .root___2UHuV {
+        min-height: inherit;
+        overflow: visible;
+        flex-direction: column-reverse;
+        border: none;
+    }
 }
 :root {
   /* ui colors */
@@ -1303,7 +1334,7 @@
 .root___PQ8v_ {
   margin: 0 auto;
   max-width: 900px;
-  min-width: 600px;
+  min-width: 300px;
 }
 :root {
   /* ui colors */
