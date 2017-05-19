@@ -21562,7 +21562,7 @@ object-assign
               _react2.default.createElement(
                 'title',
                 null,
-                props.title || 'design-system'
+                props.title || 'Pluralsight Design System'
               ),
               _react2.default.createElement('link', {
                 rel: 'stylesheet',
@@ -21572,7 +21572,7 @@ object-assign
               }),
               _react2.default.createElement('link', {
                 rel: 'stylesheet',
-                href: '/design-system/styles.css'
+                href: '/styles.css'
               })
             ),
             _react2.default.createElement(
@@ -21583,9 +21583,7 @@ object-assign
                 { id: 'app' },
                 props.children
               ),
-              _react2.default.createElement('script', {
-                src: '/design-system/index.js'
-              })
+              _react2.default.createElement('script', { src: '/index.js' })
             )
           )
         }
@@ -21594,11 +21592,7 @@ object-assign
           return _server2.default.renderToStaticMarkup(
             _react2.default.createElement(
               _reactRouterDom.StaticRouter,
-              {
-                basename: '/design-system',
-                location: locals.path,
-                context: {}
-              },
+              { location: locals.path, context: {} },
               _react2.default.createElement(Html, null, routes)
             )
           )
@@ -21608,7 +21602,7 @@ object-assign
           _reactDom2.default.render(
             _react2.default.createElement(
               _reactRouterDom.BrowserRouter,
-              { basename: '/design-system' },
+              null,
               routes
             ),
             document.getElementById('app')
