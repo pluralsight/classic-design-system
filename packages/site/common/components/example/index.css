@@ -1,6 +1,7 @@
 @import "@pluralsight/ps-design-system-core";
 
 .root {
+  padding: var(--psLayoutSpacingMedium) 0;
 }
 .output {
   display: flex;

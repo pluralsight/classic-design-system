@@ -21437,6 +21437,11 @@ object-assign
               null,
               'Button appearance'
             ),
+            _react2.default.createElement(
+              _components.P,
+              null,
+              'Define a button appearance by ...'
+            ),
             _react2.default.createElement(_components.Example, {
               component: _react2.default.createElement(
                 _react4.default,

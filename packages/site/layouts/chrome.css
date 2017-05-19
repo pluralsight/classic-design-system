@@ -6,6 +6,6 @@
 }
 .main {
   flex: 1;
-  padding: var(--psLayoutSpacingXl) var(--psLayoutSpacingLarge); 
+  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge); 
   overflow-x: auto;
 }

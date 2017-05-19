@@ -5,4 +5,6 @@
   letter-spacing: var(--psTypeLetterSpacingLarge);
   font-weight: var(--psTypeFontWeightBook);
   color: var(--psColorsGray06);
+  margin: 0;
+  padding-top: var(--psLayoutSpacingXl);
 }

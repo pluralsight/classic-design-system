@@ -26,6 +26,9 @@ export default styleable(css)(props => {
       </Code>
 
       <Heading.Large>Button appearance</Heading.Large>
+      <P>
+        Define a button appearance by ...{' '}
+      </P>
       <Example
         component={<Button>Click me</Button>}
         name="Button"
