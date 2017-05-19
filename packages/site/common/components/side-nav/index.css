@@ -4,8 +4,6 @@
 .root {
   min-height: 100%;
   height: inherit;
-  display: flex;
-  flex-direction: column;
   flex: 0 0 200px;
   border-right: 1px solid var(--psColorsGray01);
   background: var(--psColorsBone);
@@ -24,7 +22,9 @@ Media Queries
     .root {
         min-height: inherit;
         overflow: visible;
+        display: flex;
         flex-direction: column-reverse;
+        flex: 0 0 auto;
         border: none;
     }
 }

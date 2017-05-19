@@ -5238,11 +5238,11 @@ object-assign
               { className: props.css.content },
               _react2.default.createElement(_sideNav2.default, null),
               _react2.default.createElement(
-                'div',
-                { className: props.css.wrapper },
+                'main',
+                { className: props.css.main },
                 _react2.default.createElement(
-                  'main',
-                  { className: props.css.main },
+                  'div',
+                  { className: props.css.wrapper },
                   props.children
                 )
               )
