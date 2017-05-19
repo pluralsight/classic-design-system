@@ -2,9 +2,11 @@
 @import "../top-bar/top-bar.css";
 
 .root {
-  min-width: 200px;
-  min-height: calc(100vh - var(--topBarHeight));
+  /*min-width: 200px;*/
+  min-height: calc(100% - var(--topBarHeight));
+  height: inherit;
+  flex: 0 0 200px;
   border-right: 1px solid var(--psColorsGray01);
-  border-bottom: 1px solid var(--psColorsGray01);
   background: var(--psColorsBone);
+  overflow: auto;
 }

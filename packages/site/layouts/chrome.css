@@ -2,8 +2,10 @@
 }
 .content {
   display: flex;
+  height: calc(100% - var(--topBarHeight))
 }
 .main {
   flex: 1;
   padding: 64px 110px; /* TODO: spacing not in ds? */
+  overflow-x: auto;
 }

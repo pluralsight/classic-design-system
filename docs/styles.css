@@ -2,11 +2,14 @@
 }
 .content___30TPk {
   display: flex;
+  height: calc(100% - var(--topBarHeight))
 }
 .main___1V9IZ {
   flex: 1;
   padding: 64px 110px; /* TODO: spacing not in ds? */
-}:root {
+  overflow-x: auto;
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
@@ -99,12 +102,15 @@
   background: var(--psColorsGradientHorz);
 }
 .root___2UHuV {
-  min-width: 200px;
-  min-height: calc(100vh - var(--topBarHeight));
+  /*min-width: 200px;*/
+  min-height: calc(100% - var(--topBarHeight));
+  height: inherit;
+  flex: 0 0 200px;
   border-right: 1px solid var(--psColorsGray01);
-  border-bottom: 1px solid var(--psColorsGray01);
   background: var(--psColorsBone);
-}:root {
+  overflow: auto;
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
@@ -280,10 +286,11 @@
 .root___1jALo {
   margin: 0;
   color: var(--psColorsBlack);
-  font-size: var(--psTypeFontSizeSmall);
+  font-size: var(--psTypeFontSizeExtraSmall);
   line-height: var(--psTypeLineHeightExtra);
   font-weight: var(--psTypeFontWeightMedium);
-}:root {
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
@@ -498,16 +505,18 @@
 .textCompany___2HUpX {
   display: block;
   letter-spacing: .15em;
-  font-size: var(--psTypeFontSizeSmall);
-  font-weight: var(--psTypeFontWeightLight);
+  font-size: var(--psTypeFontSizeExtraSmall);
+  font-weight: var(--psTypeFontWeightMedium);
   color: #000; /* TODO: real colorz */
   font-family: var(--psTypeFontFamily);
+  padding-top: var(--psLayoutSpacingExtraSmall)
 }
 .textTitle___2rfmx {
   font-size: 8px; /* TODO: not in ds */
   color: var(--psColorsGray03);
   font-weight: var(--psTypeFontWeightMedium);
-}:root {
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
