@@ -6,6 +6,6 @@
 }
 .main {
   flex: 1;
-  padding: 64px 110px; /* TODO: spacing not in ds? */
+  padding: var(--psLayoutSpacingXl) var(--psLayoutSpacingLarge); 
   overflow-x: auto;
 }

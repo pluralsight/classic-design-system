@@ -1,2 +1,5 @@
 .root {
+  margin: 0 auto;
+  max-width: 900px;
+  min-width: 600px;
 }

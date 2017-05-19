@@ -6,7 +6,7 @@
 }
 .main___1V9IZ {
   flex: 1;
-  padding: 64px 110px; /* TODO: spacing not in ds? */
+  padding: var(--psLayoutSpacingXl) var(--psLayoutSpacingLarge); 
   overflow-x: auto;
 }
 :root {
@@ -1293,7 +1293,11 @@
   color: var(--psColorsGray04);
   font-size: var(--psTypeFontSizeSmall);
 }.root___PQ8v_ {
-}:root {
+  margin: 0 auto;
+  max-width: 900px;
+  min-width: 600px;
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
