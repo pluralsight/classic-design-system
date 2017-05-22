@@ -58,7 +58,7 @@
 .ps-button--stroke:hover {
   color: var(--psColorsOrangeLight);
   border: 1px solid var(--psColorsOrangeLight);
-  background: var(--psColorsBlack);
+  background: none;
 }
 .ps-button--flat {
   border: none;

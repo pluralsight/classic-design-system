@@ -1480,7 +1480,7 @@ Media Queries
 .ps-button--stroke___2-hZL:hover {
   color: var(--psColorsOrangeLight);
   border: 1px solid var(--psColorsOrangeLight);
-  background: var(--psColorsBlack);
+  background: none;
 }
 .ps-button--flat___3IG4H {
   border: none;
