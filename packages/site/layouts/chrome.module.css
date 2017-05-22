@@ -1,10 +1,16 @@
+@import "../common/styles/responsive.css";
+
 .root {
 }
 .content {
   display: flex;
   height: calc(100% - var(--topBarHeight))
 }
-
+.main {
+  flex: 1;
+  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge);
+  overflow-x: auto;
+}
 .wrapper {
   margin: 0 auto;
   width: 100%;
@@ -12,28 +18,13 @@
   min-width: 300px;
 }
 
-.main {
-  flex: 1;
-  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge);
-  overflow-x: auto;
-}
-
-
-/*
-========================
-Media Queries
-========================
-*/
-
-/* --- > 768 - Reposition nav below content --- */
-
 @media (max-width: 768px) {
-    .content {
-        flex-direction: column-reverse;
-        height: auto;
-      }
+  .content {
+    flex-direction: column-reverse;
+    height: auto;
+  }
 
-    .main {
-        overflow: visible;
-    }
+  .main {
+    overflow: visible;
+  }
 }

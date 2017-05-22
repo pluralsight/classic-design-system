@@ -1,35 +1,37 @@
-@import url(https://cloud.typography.com/6966154/691568/css/fonts.css);.root___3vxVq {
+@import url(https://cloud.typography.com/6966154/691568/css/fonts.css);:root {
+  --psResponsiveBreakPointMedium: 768px;
 }
+
+.root___3vxVq {
+}
+
 .content___1nfao {
   display: flex;
   height: calc(100% - var(--topBarHeight))
 }
+
+.main___5e9UJ {
+  flex: 1;
+  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge);
+  overflow-x: auto;
+}
+
 .wrapper___1yDcr {
   margin: 0 auto;
   width: 100%;
   max-width: 900px;
   min-width: 300px;
 }
-.main___5e9UJ {
-  flex: 1;
-  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge);
-  overflow-x: auto;
-}
-/*
-========================
-Media Queries
-========================
-*/
-/* --- > 768 - Reposition nav below content --- */
-@media (max-width: 768px) {
-    .content___1nfao {
-        flex-direction: column-reverse;
-        height: auto;
-      }
 
-    .main___5e9UJ {
-        overflow: visible;
-    }
+@media (max-width: 768px) {
+  .content___1nfao {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .main___5e9UJ {
+    overflow: visible;
+  }
 }
 :root {
   /* ui colors */

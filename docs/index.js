@@ -21876,8 +21876,8 @@ object-assign
         module.exports = {
           root: 'root___3vxVq',
           content: 'content___1nfao',
-          wrapper: 'wrapper___1yDcr',
-          main: 'main___5e9UJ'
+          main: 'main___5e9UJ',
+          wrapper: 'wrapper___1yDcr'
         }
 
         /***/
