@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-site@1.1.2...@pluralsight/ps-site@1.2.0) (2017-05-22)
+
+
+### Bug Fixes
+
+* **site:** fix some more layout issues ([2891878](https://github.com/pluralsight/design-system/commit/2891878))
+* **site:** fixing default width of content ([5d1cc5e](https://github.com/pluralsight/design-system/commit/5d1cc5e))
+* **site:** sidenav height/padding fix ([896ca62](https://github.com/pluralsight/design-system/commit/896ca62))
+
+
+### Features
+
+* **site:** add react import usage to button ([42ea9e3](https://github.com/pluralsight/design-system/commit/42ea9e3))
+* **site:** button install instructions ([097bc79](https://github.com/pluralsight/design-system/commit/097bc79))
+* **site:** headings and logo size and positon adjustments ([46b9ce0](https://github.com/pluralsight/design-system/commit/46b9ce0))
+* **site:** very basic responsive layout ([5dcec1c](https://github.com/pluralsight/design-system/commit/5dcec1c))
+* distinguish all css as *.module.css ([ab6b6b6](https://github.com/pluralsight/design-system/commit/ab6b6b6))
+
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-site@1.1.0...@pluralsight/ps-site@1.1.1) (2017-05-18)
 
