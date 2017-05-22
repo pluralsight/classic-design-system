@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-button",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
   "main": "index.js",
   "style": "css/index.module.css",
@@ -15,7 +15,7 @@
     "react": ">=0.15.0 < 16.0.0"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^1.2.0",
+    "@pluralsight/ps-design-system-core": "^1.2.1",
     "@pluralsight/ps-design-system-util": "^1.1.1",
     "classnames": "^2.2.5",
     "react-styleable": "^2.2.5"
