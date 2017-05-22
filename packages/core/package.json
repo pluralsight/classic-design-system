@@ -2,8 +2,8 @@
   "name": "@pluralsight/ps-design-system-core",
   "version": "1.1.1",
   "description": "",
-  "main": "css/index.css",
-  "style": "css/index.css",
+  "main": "css/index.module.css",
+  "style": "css/index.module.css",
   "scripts": {
     "test": "echo \"Error: tests run in as a single design system suite\" && exit 1"
   },

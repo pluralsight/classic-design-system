@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import React from 'react'
 import styleable from 'react-styleable'
 
-import css from './logo.css'
+import css from './logo.module.css'
 
 const version = '1.0.0' // TODO: make read package.json
 

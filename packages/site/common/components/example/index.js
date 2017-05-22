@@ -4,7 +4,7 @@ import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import styleable from 'react-styleable'
 
-import css from './index.css'
+import css from './index.module.css'
 import SrcSwitcher from './src-switcher'
 
 const rmCssModuleHashes = src => src.replace(/___\S{5}/g, '')

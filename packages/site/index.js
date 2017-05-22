@@ -7,7 +7,7 @@ import Chrome from './layouts/chrome'
 import Components from './components'
 import ComponentDetail from './components/detail'
 import Home from './home'
-import './index.css'
+import './index.module.css'
 
 const routes = (
   <div>

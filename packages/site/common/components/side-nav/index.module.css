@@ -1,5 +1,5 @@
 @import "@pluralsight/ps-design-system-core";
-@import "../top-bar/top-bar.css";
+@import "../top-bar/top-bar.module.css";
 
 .root {
   min-height: 100%;

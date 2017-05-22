@@ -2,7 +2,7 @@ import React from 'react'
 import styleable from 'react-styleable'
 
 import { Code, Example, Heading, P } from '../../common/components'
-import css from './index.css'
+import css from './index.module.css'
 
 import Button from '@pluralsight/ps-button/react'
 

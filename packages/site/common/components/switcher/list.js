@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styleable from 'react-styleable'
 
-import css from './index.css'
+import css from './index.module.css'
 
 class List extends React.Component {
   constructor(props) {

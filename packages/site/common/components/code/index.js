@@ -3,7 +3,7 @@ import React from 'react'
 import { string } from 'prop-types'
 import styleable from 'react-styleable'
 
-import css from './index.css'
+import css from './index.module.css'
 
 const Code = props => (
   <Highlight className={'javascript ' + props.css.root}>

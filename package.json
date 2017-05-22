@@ -57,5 +57,6 @@
     "transformIgnorePatterns": [
       "<rootDir>.*(node_modules)(?!.*@pluralsight.*).*$"
     ]
-  }
+  },
+  "browserslist": "last 4 versions"
 }

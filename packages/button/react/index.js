@@ -3,7 +3,7 @@ import util from '@pluralsight/ps-design-system-util'
 import styleable from 'react-styleable'
 import React from 'react'
 
-import css from '../css/index.css'
+import css from '../css/index.module.css'
 
 export const propDefs = {
   appearance: {

@@ -1,7 +1,7 @@
 import React from 'react'
 import styleable from 'react-styleable'
 
-import css from './index.css'
+import css from './index.module.css'
 import Group from './group'
 import GroupTitle from './group-title'
 import Link from './link'

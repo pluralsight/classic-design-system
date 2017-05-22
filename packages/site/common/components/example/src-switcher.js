@@ -1,7 +1,7 @@
 import React from 'react'
 import styleable from 'react-styleable'
 
-import css from './src-switcher.css'
+import css from './src-switcher.module.css'
 import Switcher from '../switcher'
 
 export default styleable(css)(props => (

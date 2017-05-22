@@ -1,7 +1,7 @@
 import React from 'react'
 import styleable from 'react-styleable'
 
-import css from './chrome.css'
+import css from './chrome.module.css'
 import SideNav from '../common/components/side-nav'
 import TopBar from '../common/components/top-bar'
 
