@@ -8,10 +8,10 @@ import TopBar from '../common/components/top-bar'
 export default styleable(css)(props => (
   <div className={props.css.root}>
     <TopBar />
-    <div className={props.css.content}>
+    <div className={props.css.page}>
       <SideNav />
       <main className={props.css.main}>
-        <div className={props.css.wrapper}>
+        <div className={props.css.content}>
           {props.children}
         </div>
       </main>

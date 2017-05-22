@@ -1,8 +1,6 @@
-@import "../common/styles/responsive.css";
-
 .root {
 }
-.content {
+.page {
   display: flex;
   height: calc(100% - var(--topBarHeight))
 }
@@ -11,7 +9,7 @@
   padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge);
   overflow-x: auto;
 }
-.wrapper {
+.content {
   margin: 0 auto;
   width: 100%;
   max-width: 900px;
@@ -19,11 +17,10 @@
 }
 
 @media (max-width: 768px) {
-  .content {
+  .page {
     flex-direction: column-reverse;
     height: auto;
   }
-
   .main {
     overflow: visible;
   }

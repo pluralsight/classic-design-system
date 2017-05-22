@@ -5235,14 +5235,14 @@ object-assign
             _react2.default.createElement(_topBar2.default, null),
             _react2.default.createElement(
               'div',
-              { className: props.css.content },
+              { className: props.css.page },
               _react2.default.createElement(_sideNav2.default, null),
               _react2.default.createElement(
                 'main',
                 { className: props.css.main },
                 _react2.default.createElement(
                   'div',
-                  { className: props.css.wrapper },
+                  { className: props.css.content },
                   props.children
                 )
               )
@@ -21875,9 +21875,9 @@ object-assign
         // removed by extract-text-webpack-plugin
         module.exports = {
           root: 'root___3vxVq',
-          content: 'content___1nfao',
+          page: 'page___2dd2J',
           main: 'main___5e9UJ',
-          wrapper: 'wrapper___1yDcr'
+          content: 'content___1nfao'
         }
 
         /***/

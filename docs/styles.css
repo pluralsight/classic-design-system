@@ -1,34 +1,25 @@
-@import url(https://cloud.typography.com/6966154/691568/css/fonts.css);:root {
-  --psResponsiveBreakPointMedium: 768px;
+@import url(https://cloud.typography.com/6966154/691568/css/fonts.css);.root___3vxVq {
 }
-
-.root___3vxVq {
-}
-
-.content___1nfao {
+.page___2dd2J {
   display: flex;
   height: calc(100% - var(--topBarHeight))
 }
-
 .main___5e9UJ {
   flex: 1;
   padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge);
   overflow-x: auto;
 }
-
-.wrapper___1yDcr {
+.content___1nfao {
   margin: 0 auto;
   width: 100%;
   max-width: 900px;
   min-width: 300px;
 }
-
 @media (max-width: 768px) {
-  .content___1nfao {
+  .page___2dd2J {
     flex-direction: column-reverse;
     height: auto;
   }
-
   .main___5e9UJ {
     overflow: visible;
   }
