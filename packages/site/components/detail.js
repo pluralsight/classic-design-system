@@ -8,7 +8,7 @@ const docs = {
 }
 
 export default props => (
-  <Chrome title={props.componentId}>
+  <Chrome title={props.match.params.componentId}>
     {docs[props.match.params.componentId]}
   </Chrome>
 )
