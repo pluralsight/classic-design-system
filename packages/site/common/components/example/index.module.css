@@ -8,10 +8,10 @@
   justify-content: flex-start;
   padding: var(--psLayoutSpacingLarge);
   background: var(--psColorsGray06);
+  overflow: hidden;
 }
-.outputDivider {
-  display: block;
-  width: 98px;
+.outputChild {
+  margin: 0 98px 0 0;
 }
 .src {
   padding: var(--psLayoutSpacingLarge);
@@ -24,4 +24,13 @@
 .react {
   background: none;
   padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .output {
+    flex-direction: column;
+  }
+  .outputChild {
+    margin: 10px 0 0 0;
+  }
 }

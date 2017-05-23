@@ -736,10 +736,10 @@ Media Queries
   justify-content: flex-start;
   padding: var(--psLayoutSpacingLarge);
   background: var(--psColorsGray06);
+  overflow: hidden;
 }
-.outputDivider___3pCc3 {
-  display: block;
-  width: 98px;
+.outputChild___3G74e {
+  margin: 0 98px 0 0;
 }
 .src___3Fj1T {
   padding: var(--psLayoutSpacingLarge);
@@ -753,7 +753,14 @@ Media Queries
   background: none;
   padding: 0;
 }
-:root {
+@media screen and (max-width: 768px) {
+  .output___1LIav {
+    flex-direction: column;
+  }
+  .outputChild___3G74e {
+    margin: 10px 0 0 0;
+  }
+}:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;

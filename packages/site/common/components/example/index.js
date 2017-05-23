@@ -47,23 +47,11 @@ class Example extends React.Component {
     this.setState({ srcOption })
   }
   renderOutputs(props) {
-    return props.permutations.reduce(
-      (acc, p, i) =>
-        acc.concat([
-          React.cloneElement(props.component, {
-            key: 'output' + i,
-            ...p
-          }),
-          i < props.permutations.length - 1
-            ? <div
-                aria-hidden={true}
-                className={props.css.outputDivider}
-                key={'div' + i}
-              />
-            : null
-        ]),
-      []
-    )
+    return props.permutations.map((p, i) => (
+      <div key={i} className={this.props.css.outputChild}>
+        {React.cloneElement(props.component, p)}
+      </div>
+    ))
   }
   renderSrc() {
     if (this.state.srcOption === 'react') {
