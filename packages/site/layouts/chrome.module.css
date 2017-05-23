@@ -1,27 +1,33 @@
+@import "@pluralsight/ps-design-system-core";
+
 .root {
 }
 .page {
   display: flex;
-  height: calc(100% - var(--topBarHeight))
+  flex-direction: column-reverse;
+}
+.side {
 }
 .main {
-  flex: 1;
   padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge);
-  overflow-x: auto;
 }
 .content {
   margin: 0 auto;
   width: 100%;
-  max-width: 900px;
-  min-width: 300px;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 769px) {
   .page {
-    flex-direction: column-reverse;
-    height: auto;
+    flex-direction: row;
+  }
+  .side {
+    min-width: 200px;
   }
   .main {
-    overflow: visible;
+    flex: 1;
+  }
+  .content {
+    max-width: 900px;
+    min-width: 300px;
   }
 }

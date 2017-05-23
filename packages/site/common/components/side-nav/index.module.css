@@ -1,30 +1,12 @@
 @import "@pluralsight/ps-design-system-core";
-@import "../top-bar/top-bar.module.css";
 
 .root {
-  min-height: 100%;
-  height: inherit;
-  flex: 0 0 200px;
-  border-right: 1px solid var(--psColorsGray01);
   background: var(--psColorsBone);
-  overflow: auto;
 }
 
-/*
-========================
-Media Queries
-========================
-*/
-
-/* --- > 768 - Reposition nav below content --- */
-
-@media (max-width: 768px) {
-    .root {
-        min-height: inherit;
-        overflow: visible;
-        display: flex;
-        flex-direction: column-reverse;
-        flex: 0 0 auto;
-        border: none;
-    }
+@media screen and (min-width: 769px) {
+  .root {
+    min-height: 100%;
+    border-right: 1px solid var(--psColorsGray01);
+  }
 }

@@ -21,7 +21,9 @@ export default styleable(css)(props => (
     </Helmet>
     <TopBar />
     <div className={props.css.page}>
-      <SideNav />
+      <div className={props.css.side}>
+        <SideNav />
+      </div>
       <main className={props.css.main}>
         <div className={props.css.content}>
           {props.children}

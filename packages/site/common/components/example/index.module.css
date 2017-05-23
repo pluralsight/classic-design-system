@@ -5,13 +5,14 @@
 }
 .output {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   padding: var(--psLayoutSpacingLarge);
   background: var(--psColorsGray06);
   overflow: hidden;
 }
 .outputChild {
-  margin: 0 98px 0 0;
+  margin: 10px 0 0 0;
 }
 .src {
   padding: var(--psLayoutSpacingLarge);
@@ -26,11 +27,11 @@
   padding: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
   .output {
-    flex-direction: column;
+    flex-direction: row;
   }
   .outputChild {
-    margin: 10px 0 0 0;
+    margin: 0 98px 0 0;
   }
 }
