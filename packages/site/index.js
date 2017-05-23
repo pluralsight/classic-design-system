@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom'
 import ReactDOMServer from 'react-dom/server'
 
 import Chrome from './layouts/chrome'
-import Components from './components'
 import ComponentDetail from './components/detail'
 import Home from './home'
 import './index.module.css'
@@ -12,7 +11,6 @@ import './index.module.css'
 const routes = (
   <div>
     <Route exact path="/" component={Home} />
-    <Route exact path="/components/" component={Components} />
     <Route path="/components/:componentId/" component={ComponentDetail} />
   </div>
 )

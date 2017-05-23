@@ -17388,43 +17388,8 @@ object-assign
 
         /***/
       },
-      /* 133 */
-      /***/ function(module, exports, __webpack_require__) {
-        'use strict'
-        Object.defineProperty(exports, '__esModule', {
-          value: true
-        })
-
-        var _reactRouterDom = __webpack_require__(28)
-
-        var _react = __webpack_require__(3)
-
-        var _react2 = _interopRequireDefault(_react)
-
-        var _chrome = __webpack_require__(37)
-
-        var _chrome2 = _interopRequireDefault(_chrome)
-
-        function _interopRequireDefault(obj) {
-          return obj && obj.__esModule ? obj : { default: obj }
-        }
-
-        exports.default = function() {
-          return _react2.default.createElement(
-            _chrome2.default,
-            { title: 'Components' },
-            _react2.default.createElement('h2', null, 'Components'),
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: '/components/button' },
-              'Button'
-            )
-          )
-        }
-
-        /***/
-      },
-      /* 134 */
+      ,
+      /* 133 */ /* 134 */
       /***/ function(module, exports, __webpack_require__) {
         'use strict'
         Object.defineProperty(exports, '__esModule', {
@@ -21933,10 +21898,6 @@ object-assign
 
         var _chrome2 = _interopRequireDefault(_chrome)
 
-        var _components = __webpack_require__(133)
-
-        var _components2 = _interopRequireDefault(_components)
-
         var _detail = __webpack_require__(132)
 
         var _detail2 = _interopRequireDefault(_detail)
@@ -21958,11 +21919,6 @@ object-assign
             exact: true,
             path: '/',
             component: _home2.default
-          }),
-          _react2.default.createElement(_reactRouterDom.Route, {
-            exact: true,
-            path: '/components/',
-            component: _components2.default
           }),
           _react2.default.createElement(_reactRouterDom.Route, {
             path: '/components/:componentId/',
