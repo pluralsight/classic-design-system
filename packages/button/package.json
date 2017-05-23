@@ -12,7 +12,8 @@
   "license": "Apache 2.0",
   "repository": "pluralsight/design-system",
   "peerDependencies": {
-    "react": ">=0.15.0 < 16.0.0"
+    "react": ">=0.15.0 < 16.0.0",
+    "@pluralsight/ps-design-system-normalize": "^2.1.0"
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^1.2.1",
