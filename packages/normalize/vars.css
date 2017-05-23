@@ -1,0 +1,12 @@
+:root {
+  --typeFontGotham: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+
+  --typeBaseFontFamily: var(--typeFontGotham);
+  --typeBaseFontSize: 14px;
+
+  --typeBaseFontWeight: 300;
+  --typeBaseHeadingWeight: 300;
+
+  --typeBaseLineHeight: 24px;
+  --typeBaseListMargin: 24px;
+}

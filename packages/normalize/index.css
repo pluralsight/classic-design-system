@@ -1,0 +1,64 @@
+@import "normalize.css";
+@import "./vars.css";
+
+html {
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+  font-family: var(--typeBaseFontFamily);
+  font-size: .875em; /* --typeBaseFontSize / 16px * 1em */
+  font-weight: var(--typeBaseFontWeight);
+  line-height: 1.71429; /* --typeBaseLineHeight / --typeBaseFontSize  * 1em */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6,
+ul, ol, dl,
+blockquote, p, address,
+hr,
+table,
+fieldset, figure,
+pre {
+  margin-top: 0;
+  margin-bottom: var(--typeBaseLineHeight);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--typeBaseHeadingWeight);
+}
+
+ul, ol, dd {
+  margin-left: var(--typeBaseListMargin);
+}
+
+ul,
+ol {
+  padding-left: 0;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+img[width],
+img[height] {
+  max-width: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
