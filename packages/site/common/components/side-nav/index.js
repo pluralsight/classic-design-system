@@ -12,7 +12,8 @@ export default styleable(css)(props => (
     <Logo />
     <Group>
       <GroupTitle>COMPONENTS</GroupTitle>
-      <Link href={`/components/button`}>Buttons</Link>
+      <Link href="/components/installation">Installation</Link>
+      <Link href="/components/button">Buttons</Link>
     </Group>
   </nav>
 ))

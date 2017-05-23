@@ -1500,7 +1500,8 @@ Media Queries
   color: var(--psColorsGray02);
   background: none;
 }
-:root {
+.root___2GPyS {
+}:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;

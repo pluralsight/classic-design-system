@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import React from 'react'
 import styleable from 'react-styleable'
 
@@ -24,6 +25,15 @@ export default styleable(css)(props => {
       <Code language="javascript">
         import Button from '@pluralsight/ps-button/react'
       </Code>
+
+      <P>
+        For more project setup guidance, see the
+        {' '}
+        <Link to="/components/installation">
+          Component Installation Instructions
+        </Link>
+        .
+      </P>
 
       <Heading.Large>Button appearance</Heading.Large>
       <P>

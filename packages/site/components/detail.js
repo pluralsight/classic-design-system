@@ -1,10 +1,12 @@
 import React from 'react'
 
 import ButtonDoc from './button'
+import InstallationDoc from './installation'
 import Chrome from '../layouts/chrome'
 
 const docs = {
-  button: <ButtonDoc />
+  button: <ButtonDoc />,
+  installation: <InstallationDoc />
 }
 
 export default props => (
