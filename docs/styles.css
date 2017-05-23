@@ -1443,7 +1443,8 @@ Media Queries
 .ps-button--tiny___cmVTE {
   font-size: var(--psTypeFontSizeExtraSmall);
   line-height: var(--psTypeLineHeightStandard);
-  padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingMedium);
+  padding: 0 var(--psLayoutSpacingMedium);
+  height: 24px;
 }
 .ps-button--small___3bU65 {
   font-size: var(--psTypeFontSizeSmall);

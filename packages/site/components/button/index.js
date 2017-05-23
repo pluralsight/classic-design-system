@@ -52,7 +52,8 @@ export default styleable(css)(props => {
         permutations={[
           { size: 'large' },
           { size: 'medium' },
-          { size: 'small' }
+          { size: 'small' },
+          { size: 'tiny' }
         ]}
       />
 

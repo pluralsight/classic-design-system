@@ -4137,168 +4137,6 @@ object-assign
         /***/
       },
       /* 28 */
-      /***/ function(module, exports, __webpack_require__) {
-        'use strict'
-        /* WEBPACK VAR INJECTION */ ;(function(process) {
-          /**
- * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- */
-
-          var emptyObject = {}
-
-          if (process.env.NODE_ENV !== 'production') {
-            Object.freeze(emptyObject)
-          }
-
-          module.exports = emptyObject
-          /* WEBPACK VAR INJECTION */
-        }.call(exports, __webpack_require__(0)))
-
-        /***/
-      },
-      /* 29 */
-      /***/ function(module, exports, __webpack_require__) {
-        'use strict'
-        /**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- */
-
-        var DOMNamespaces = __webpack_require__(61)
-        var setInnerHTML = __webpack_require__(47)
-
-        var createMicrosoftUnsafeLocalFunction = __webpack_require__(68)
-        var setTextContent = __webpack_require__(122)
-
-        var ELEMENT_NODE_TYPE = 1
-        var DOCUMENT_FRAGMENT_NODE_TYPE = 11
-
-        /**
- * In IE (8-11) and Edge, appending nodes with no children is dramatically
- * faster than appending a full subtree, so we essentially queue up the
- * .appendChild calls here and apply them so each node is added to its parent
- * before any children are added.
- *
- * In other browsers, doing so is slower or neutral compared to the other order
- * (in Firefox, twice as slow) so we only do this inversion in IE.
- *
- * See https://github.com/spicyj/innerhtml-vs-createelement-vs-clonenode.
- */
-        var enableLazy =
-          (typeof document !== 'undefined' &&
-            typeof document.documentMode === 'number') ||
-          (typeof navigator !== 'undefined' &&
-            typeof navigator.userAgent === 'string' &&
-            /\bEdge\/\d/.test(navigator.userAgent))
-
-        function insertTreeChildren(tree) {
-          if (!enableLazy) {
-            return
-          }
-          var node = tree.node
-          var children = tree.children
-          if (children.length) {
-            for (var i = 0; i < children.length; i++) {
-              insertTreeBefore(node, children[i], null)
-            }
-          } else if (tree.html != null) {
-            setInnerHTML(node, tree.html)
-          } else if (tree.text != null) {
-            setTextContent(node, tree.text)
-          }
-        }
-
-        var insertTreeBefore = createMicrosoftUnsafeLocalFunction(function(
-          parentNode,
-          tree,
-          referenceNode
-        ) {
-          // DocumentFragments aren't actually part of the DOM after insertion so
-          // appending children won't update the DOM. We need to ensure the fragment
-          // is properly populated first, breaking out of our lazy approach for just
-          // this level. Also, some <object> plugins (like Flash Player) will read
-          // <param> nodes immediately upon insertion into the DOM, so <object>
-          // must also be populated prior to insertion into the DOM.
-          if (
-            tree.node.nodeType === DOCUMENT_FRAGMENT_NODE_TYPE ||
-            (tree.node.nodeType === ELEMENT_NODE_TYPE &&
-              tree.node.nodeName.toLowerCase() === 'object' &&
-              (tree.node.namespaceURI == null ||
-                tree.node.namespaceURI === DOMNamespaces.html))
-          ) {
-            insertTreeChildren(tree)
-            parentNode.insertBefore(tree.node, referenceNode)
-          } else {
-            parentNode.insertBefore(tree.node, referenceNode)
-            insertTreeChildren(tree)
-          }
-        })
-
-        function replaceChildWithTree(oldNode, newTree) {
-          oldNode.parentNode.replaceChild(newTree.node, oldNode)
-          insertTreeChildren(newTree)
-        }
-
-        function queueChild(parentTree, childTree) {
-          if (enableLazy) {
-            parentTree.children.push(childTree)
-          } else {
-            parentTree.node.appendChild(childTree.node)
-          }
-        }
-
-        function queueHTML(tree, html) {
-          if (enableLazy) {
-            tree.html = html
-          } else {
-            setInnerHTML(tree.node, html)
-          }
-        }
-
-        function queueText(tree, text) {
-          if (enableLazy) {
-            tree.text = text
-          } else {
-            setTextContent(tree.node, text)
-          }
-        }
-
-        function toString() {
-          return this.node.nodeName
-        }
-
-        function DOMLazyTree(node) {
-          return {
-            node: node,
-            children: [],
-            html: null,
-            text: null,
-            toString: toString
-          }
-        }
-
-        DOMLazyTree.insertTreeBefore = insertTreeBefore
-        DOMLazyTree.replaceChildWithTree = replaceChildWithTree
-        DOMLazyTree.queueChild = queueChild
-        DOMLazyTree.queueHTML = queueHTML
-        DOMLazyTree.queueText = queueText
-
-        module.exports = DOMLazyTree
-
-        /***/
-      },
-      /* 30 */
       /***/ function(module, __webpack_exports__, __webpack_require__) {
         'use strict'
         Object.defineProperty(__webpack_exports__, '__esModule', {
@@ -4434,6 +4272,168 @@ object-assign
             return __WEBPACK_IMPORTED_MODULE_12__withRouter__['a']
           }
         )
+
+        /***/
+      },
+      /* 29 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        /* WEBPACK VAR INJECTION */ ;(function(process) {
+          /**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ */
+
+          var emptyObject = {}
+
+          if (process.env.NODE_ENV !== 'production') {
+            Object.freeze(emptyObject)
+          }
+
+          module.exports = emptyObject
+          /* WEBPACK VAR INJECTION */
+        }.call(exports, __webpack_require__(0)))
+
+        /***/
+      },
+      /* 30 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        /**
+ * Copyright 2015-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ */
+
+        var DOMNamespaces = __webpack_require__(61)
+        var setInnerHTML = __webpack_require__(47)
+
+        var createMicrosoftUnsafeLocalFunction = __webpack_require__(68)
+        var setTextContent = __webpack_require__(122)
+
+        var ELEMENT_NODE_TYPE = 1
+        var DOCUMENT_FRAGMENT_NODE_TYPE = 11
+
+        /**
+ * In IE (8-11) and Edge, appending nodes with no children is dramatically
+ * faster than appending a full subtree, so we essentially queue up the
+ * .appendChild calls here and apply them so each node is added to its parent
+ * before any children are added.
+ *
+ * In other browsers, doing so is slower or neutral compared to the other order
+ * (in Firefox, twice as slow) so we only do this inversion in IE.
+ *
+ * See https://github.com/spicyj/innerhtml-vs-createelement-vs-clonenode.
+ */
+        var enableLazy =
+          (typeof document !== 'undefined' &&
+            typeof document.documentMode === 'number') ||
+          (typeof navigator !== 'undefined' &&
+            typeof navigator.userAgent === 'string' &&
+            /\bEdge\/\d/.test(navigator.userAgent))
+
+        function insertTreeChildren(tree) {
+          if (!enableLazy) {
+            return
+          }
+          var node = tree.node
+          var children = tree.children
+          if (children.length) {
+            for (var i = 0; i < children.length; i++) {
+              insertTreeBefore(node, children[i], null)
+            }
+          } else if (tree.html != null) {
+            setInnerHTML(node, tree.html)
+          } else if (tree.text != null) {
+            setTextContent(node, tree.text)
+          }
+        }
+
+        var insertTreeBefore = createMicrosoftUnsafeLocalFunction(function(
+          parentNode,
+          tree,
+          referenceNode
+        ) {
+          // DocumentFragments aren't actually part of the DOM after insertion so
+          // appending children won't update the DOM. We need to ensure the fragment
+          // is properly populated first, breaking out of our lazy approach for just
+          // this level. Also, some <object> plugins (like Flash Player) will read
+          // <param> nodes immediately upon insertion into the DOM, so <object>
+          // must also be populated prior to insertion into the DOM.
+          if (
+            tree.node.nodeType === DOCUMENT_FRAGMENT_NODE_TYPE ||
+            (tree.node.nodeType === ELEMENT_NODE_TYPE &&
+              tree.node.nodeName.toLowerCase() === 'object' &&
+              (tree.node.namespaceURI == null ||
+                tree.node.namespaceURI === DOMNamespaces.html))
+          ) {
+            insertTreeChildren(tree)
+            parentNode.insertBefore(tree.node, referenceNode)
+          } else {
+            parentNode.insertBefore(tree.node, referenceNode)
+            insertTreeChildren(tree)
+          }
+        })
+
+        function replaceChildWithTree(oldNode, newTree) {
+          oldNode.parentNode.replaceChild(newTree.node, oldNode)
+          insertTreeChildren(newTree)
+        }
+
+        function queueChild(parentTree, childTree) {
+          if (enableLazy) {
+            parentTree.children.push(childTree)
+          } else {
+            parentTree.node.appendChild(childTree.node)
+          }
+        }
+
+        function queueHTML(tree, html) {
+          if (enableLazy) {
+            tree.html = html
+          } else {
+            setInnerHTML(tree.node, html)
+          }
+        }
+
+        function queueText(tree, text) {
+          if (enableLazy) {
+            tree.text = text
+          } else {
+            setTextContent(tree.node, text)
+          }
+        }
+
+        function toString() {
+          return this.node.nodeName
+        }
+
+        function DOMLazyTree(node) {
+          return {
+            node: node,
+            children: [],
+            html: null,
+            text: null,
+            toString: toString
+          }
+        }
+
+        DOMLazyTree.insertTreeBefore = insertTreeBefore
+        DOMLazyTree.replaceChildWithTree = replaceChildWithTree
+        DOMLazyTree.queueChild = queueChild
+        DOMLazyTree.queueHTML = queueHTML
+        DOMLazyTree.queueText = queueText
+
+        module.exports = DOMLazyTree
 
         /***/
       },
@@ -7969,7 +7969,7 @@ object-assign
  *
  */
 
-          var DOMLazyTree = __webpack_require__(29)
+          var DOMLazyTree = __webpack_require__(30)
           var Danger = __webpack_require__(407)
           var ReactDOMComponentTree = __webpack_require__(6)
           var ReactInstrumentation = __webpack_require__(10)
@@ -10653,7 +10653,7 @@ object-assign
           var ReactNoopUpdateQueue = __webpack_require__(79)
 
           var canDefineProperty = __webpack_require__(48)
-          var emptyObject = __webpack_require__(28)
+          var emptyObject = __webpack_require__(29)
           var invariant = __webpack_require__(1)
           var warning = __webpack_require__(2)
 
@@ -14794,7 +14794,7 @@ object-assign
 
           var _prodInvariant = __webpack_require__(4)
 
-          var DOMLazyTree = __webpack_require__(29)
+          var DOMLazyTree = __webpack_require__(30)
           var DOMProperty = __webpack_require__(19)
           var React = __webpack_require__(24)
           var ReactBrowserEventEmitter = __webpack_require__(43)
@@ -14810,7 +14810,7 @@ object-assign
           var ReactUpdateQueue = __webpack_require__(67)
           var ReactUpdates = __webpack_require__(15)
 
-          var emptyObject = __webpack_require__(28)
+          var emptyObject = __webpack_require__(29)
           var instantiateReactComponent = __webpack_require__(72)
           var invariant = __webpack_require__(1)
           var setInnerHTML = __webpack_require__(47)
@@ -17395,7 +17395,7 @@ object-assign
           value: true
         })
 
-        var _reactRouterDom = __webpack_require__(30)
+        var _reactRouterDom = __webpack_require__(28)
 
         var _react = __webpack_require__(3)
 
@@ -17431,7 +17431,7 @@ object-assign
           value: true
         })
 
-        var _reactRouterDom = __webpack_require__(30)
+        var _reactRouterDom = __webpack_require__(28)
 
         var _react = __webpack_require__(3)
 
@@ -21100,7 +21100,7 @@ object-assign
           value: true
         })
 
-        var _reactRouterDom = __webpack_require__(30)
+        var _reactRouterDom = __webpack_require__(28)
 
         var _react = __webpack_require__(3)
 
@@ -21149,7 +21149,7 @@ object-assign
           value: true
         })
 
-        var _reactRouterDom = __webpack_require__(30)
+        var _reactRouterDom = __webpack_require__(28)
 
         var _react = __webpack_require__(3)
 
@@ -21539,7 +21539,7 @@ object-assign
           value: true
         })
 
-        var _reactRouterDom = __webpack_require__(30)
+        var _reactRouterDom = __webpack_require__(28)
 
         var _react = __webpack_require__(3)
 
@@ -21597,7 +21597,8 @@ object-assign
             _react2.default.createElement(
               _components.P,
               null,
-              'For more project setup guidance, see the ',
+              'For more project setup guidance, see the',
+              ' ',
               _react2.default.createElement(
                 _reactRouterDom.Link,
                 { to: '/components/installation' },
@@ -21644,7 +21645,8 @@ object-assign
               permutations: [
                 { size: 'large' },
                 { size: 'medium' },
-                { size: 'small' }
+                { size: 'small' },
+                { size: 'tiny' }
               ]
             }),
             _react2.default.createElement(
@@ -21721,7 +21723,8 @@ object-assign
               _react2.default.createElement(
                 'li',
                 null,
-                'Installing modules from NPM - eg, ',
+                'Installing modules from NPM - eg,',
+                ' ',
                 _react2.default.createElement(
                   'a',
                   { href: 'https://nodejs.org/', target: '_blank' },
@@ -21731,7 +21734,8 @@ object-assign
               _react2.default.createElement(
                 'li',
                 null,
-                'Loading assets (JS and CSS) as modules - eg, ',
+                'Loading assets (JS and CSS) as modules - eg,',
+                ' ',
                 _react2.default.createElement(
                   'a',
                   { href: 'https://webpack.js.org/', target: '_blank' },
@@ -21741,7 +21745,8 @@ object-assign
               _react2.default.createElement(
                 'li',
                 null,
-                'Transpiling nextgen JS - eg, ',
+                'Transpiling nextgen JS - eg,',
+                ' ',
                 _react2.default.createElement(
                   'a',
                   {
@@ -21780,13 +21785,16 @@ object-assign
             _react2.default.createElement(
               _components.P,
               null,
-              'The Design System components are published to npm in their source ES6 format.  They require transpilation to be used in browsers only supporting ES5.  We recommend ',
+              'The Design System components are published to npm in their source ES6 format.  They require transpilation to be used in browsers only supporting ES5.  We recommend',
+              ' ',
               _react2.default.createElement(
                 'a',
                 { href: 'http://babeljs.io/', target: '_blank' },
                 'Babel'
               ),
-              " for transpilation. Presumably you're using ",
+              ' ',
+              "for transpilation. Presumably you're using",
+              ' ',
               _react2.default.createElement(
                 'a',
                 {
@@ -21795,7 +21803,8 @@ object-assign
                 },
                 'babel-loader'
               ),
-              ' already.'
+              ' ',
+              'already.'
             ),
             _react2.default.createElement(
               _components.P,
@@ -21820,7 +21829,8 @@ object-assign
             _react2.default.createElement(
               _components.P,
               null,
-              'The Design System components use ',
+              'The Design System components use',
+              ' ',
               _react2.default.createElement(
                 'a',
                 {
@@ -21829,7 +21839,9 @@ object-assign
                 },
                 'CSS Modules'
               ),
-              ' and ',
+              ' ',
+              'and',
+              ' ',
               _react2.default.createElement(
                 'a',
                 {
@@ -21843,7 +21855,8 @@ object-assign
             _react2.default.createElement(
               _components.P,
               null,
-              'Modify your webpack.config.js to support CSS module importing.'
+              'Modify your webpack.config.js to support CSS module importing.',
+              ' '
             ),
             _react2.default.createElement(
               _components.Code,
@@ -21858,7 +21871,8 @@ object-assign
             _react2.default.createElement(
               _components.P,
               null,
-              'Note: If you use traditional CSS stylesheets in addition to CSS modules, you will need to follow these ',
+              'Note: If you use traditional CSS stylesheets in addition to CSS modules, you will need to follow these',
+              ' ',
               _react2.default.createElement(
                 'a',
                 {
@@ -21901,7 +21915,7 @@ object-assign
           value: true
         })
 
-        var _reactRouterDom = __webpack_require__(30)
+        var _reactRouterDom = __webpack_require__(28)
 
         var _react = __webpack_require__(3)
 
@@ -44922,7 +44936,7 @@ https://highlightjs.org/
 
           var _prodInvariant = __webpack_require__(4)
 
-          var DOMLazyTree = __webpack_require__(29)
+          var DOMLazyTree = __webpack_require__(30)
           var ExecutionEnvironment = __webpack_require__(9)
 
           var createNodesFromMarkup = __webpack_require__(204)
@@ -45779,7 +45793,7 @@ https://highlightjs.org/
             var checkReactTypeSpec = __webpack_require__(459)
           }
 
-          var emptyObject = __webpack_require__(28)
+          var emptyObject = __webpack_require__(29)
           var invariant = __webpack_require__(1)
           var shallowEqual = __webpack_require__(56)
           var shouldUpdateReactComponent = __webpack_require__(74)
@@ -47321,7 +47335,7 @@ https://highlightjs.org/
 
           var AutoFocusUtils = __webpack_require__(403)
           var CSSPropertyOperations = __webpack_require__(405)
-          var DOMLazyTree = __webpack_require__(29)
+          var DOMLazyTree = __webpack_require__(30)
           var DOMNamespaces = __webpack_require__(61)
           var DOMProperty = __webpack_require__(19)
           var DOMPropertyOperations = __webpack_require__(100)
@@ -48682,7 +48696,7 @@ https://highlightjs.org/
 
         var _assign = __webpack_require__(5)
 
-        var DOMLazyTree = __webpack_require__(29)
+        var DOMLazyTree = __webpack_require__(30)
         var ReactDOMComponentTree = __webpack_require__(6)
 
         var ReactDOMEmptyComponent = function(instantiate) {
@@ -49815,7 +49829,7 @@ https://highlightjs.org/
             _assign = __webpack_require__(5)
 
           var DOMChildrenOperations = __webpack_require__(60)
-          var DOMLazyTree = __webpack_require__(29)
+          var DOMLazyTree = __webpack_require__(30)
           var ReactDOMComponentTree = __webpack_require__(6)
 
           var escapeTextContentForBrowser = __webpack_require__(46)
@@ -52396,7 +52410,7 @@ https://highlightjs.org/
           var ReactServerRenderingTransaction = __webpack_require__(114)
           var ReactUpdates = __webpack_require__(15)
 
-          var emptyObject = __webpack_require__(28)
+          var emptyObject = __webpack_require__(29)
           var instantiateReactComponent = __webpack_require__(72)
           var invariant = __webpack_require__(1)
 
@@ -58902,7 +58916,7 @@ https://highlightjs.org/
           var ReactPropTypeLocationNames = __webpack_require__(130)
           var ReactNoopUpdateQueue = __webpack_require__(79)
 
-          var emptyObject = __webpack_require__(28)
+          var emptyObject = __webpack_require__(29)
           var invariant = __webpack_require__(1)
           var warning = __webpack_require__(2)
 
@@ -60041,7 +60055,7 @@ https://highlightjs.org/
         var ReactComponent = __webpack_require__(78)
         var ReactNoopUpdateQueue = __webpack_require__(79)
 
-        var emptyObject = __webpack_require__(28)
+        var emptyObject = __webpack_require__(29)
 
         /**
  * Base class helpers for the updating state of a component.
