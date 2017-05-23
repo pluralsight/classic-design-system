@@ -21,6 +21,9 @@ const Html = props => (
   <html>
     <head>
       <title>{props.title || 'Pluralsight Design System'}</title>
+      <meta name="HandheldFriendly" content="True" />
+      <meta name="MobileOptimized" content="320" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css"

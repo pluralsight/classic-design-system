@@ -1434,6 +1434,9 @@ Media Queries
   background: var(--psColorsOrange);
   cursor: pointer;
 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   transition: all var(--psMotionSpeedNormal);
 }
 .ps-button___2EFfR:hover {
