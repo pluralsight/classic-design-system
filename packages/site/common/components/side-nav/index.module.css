@@ -1,12 +1,12 @@
 @import "@pluralsight/ps-design-system-core";
 
 .root {
-  background: var(--psColorsBone);
+  border-top: 1px solid var(--psColorsGray01);
 }
 
 @media screen and (min-width: 769px) {
   .root {
     min-height: 100%;
-    border-right: 1px solid var(--psColorsGray01);
+    border-top: none;
   }
 }

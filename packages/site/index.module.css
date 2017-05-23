@@ -8,4 +8,5 @@ html, body {
   font-family: var(--psTypeFontFamily);
   margin: 0;
   padding: 0;
+  background: var(--psColorsBone);
 }

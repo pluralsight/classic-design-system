@@ -10,6 +10,7 @@
 }
 .main {
   padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge);
+  background: var(--psColorsWhite);
 }
 .content {
   margin: 0 auto;
@@ -25,6 +26,7 @@
   }
   .main {
     flex: 1;
+    border-left: 1px solid var(--psColorsGray01);
   }
   .content {
     max-width: 900px;
