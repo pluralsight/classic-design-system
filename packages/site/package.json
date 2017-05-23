@@ -9,11 +9,8 @@
     "npm": ">= 4.2"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "site": "rimraf docs && concurrently \"webpack --watch --config ./build/webpack.config.babel.js\" \"node ./build/dev-server.js\"",
-    "start": "npm run site",
-    "test": "jest",
-    "test:watch": "npm run test -- --watchAll"
+    "start": "npm run site"
   },
   "author": "jaketrent",
   "license": "Apache 2.0",
