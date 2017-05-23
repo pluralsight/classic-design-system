@@ -1,13 +1,14 @@
 @import "normalize.css";
-@import "./vars.css";
+
+@import "@pluralsight/ps-design-system-core";
 
 html {
   box-sizing: border-box;
   text-size-adjust: 100%;
-  font-family: var(--typeBaseFontFamily);
-  font-size: .875em; /* --typeBaseFontSize / 16px * 1em */
-  font-weight: var(--typeBaseFontWeight);
-  line-height: 1.71429; /* --typeBaseLineHeight / --typeBaseFontSize  * 1em */
+  font-family: var(--psTypeFontFamily);
+  font-size: calc(var(--psTypeFontSizeSmall) / 16px * 1em)
+  font-weight: var(--psTypeFontWeightBook);
+  line-height: calc(var(--psTypeLineHeightStandard) / var(--psTypeFontSizeSmall));
 }
 
 *, *:before, *:after {
@@ -22,15 +23,15 @@ table,
 fieldset, figure,
 pre {
   margin-top: 0;
-  margin-bottom: var(--typeBaseLineHeight);
+  margin-bottom: var(--psTypeLineHeightStandard);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: var(--typeBaseHeadingWeight);
+  font-weight: var(--psTypeFontWeightBook);
 }
 
 ul, ol, dd {
-  margin-left: var(--typeBaseListMargin);
+  margin-left: var(--psLayoutSpacingLarge);
 }
 
 ul,

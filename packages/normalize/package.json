@@ -10,5 +10,9 @@
   "keywords": [],
   "author": "jaketrent",
   "license": "Apache 2.0",
-  "repository": "pluralsight/design-system"
+  "repository": "pluralsight/design-system",
+  "dependencies": {
+    "@pluralsight/ps-design-system-core": "^1.2.1",
+    "normalize.css": "^7.0.0"
+  }
 }
