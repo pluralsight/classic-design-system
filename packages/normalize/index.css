@@ -6,7 +6,7 @@ html {
   box-sizing: border-box;
   text-size-adjust: 100%;
   font-family: var(--psTypeFontFamily);
-  font-size: calc(var(--psTypeFontSizeSmall) / 16px * 1em)
+  font-size: calc(var(--psTypeFontSizeSmall) / 16px * 1em);
   font-weight: var(--psTypeFontWeightBook);
   line-height: calc(var(--psTypeLineHeightStandard) / var(--psTypeFontSizeSmall));
 }
