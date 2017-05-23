@@ -1,12 +1,7 @@
 @import url(https://cloud.typography.com/6966154/691568/css/fonts.css);
+@import "@pluralsight/ps-design-system-normalize";
 @import "@pluralsight/ps-design-system-core";
 
-* {
-  box-sizing: border-box;
-}
 html, body {
-  font-family: var(--psTypeFontFamily);
-  margin: 0;
-  padding: 0;
   background: var(--psColorsBone);
 }

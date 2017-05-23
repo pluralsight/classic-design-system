@@ -17,6 +17,7 @@
   "devDependencies": {
     "@pluralsight/ps-button": "^1.2.1",
     "@pluralsight/ps-design-system-core": "^1.2.1",
+    "@pluralsight/ps-design-system-normalize": "^2.1.0",
     "@pluralsight/ps-design-system-util": "^1.1.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
