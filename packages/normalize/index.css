@@ -6,7 +6,7 @@ html {
   box-sizing: border-box;
   text-size-adjust: 100%;
   font-family: var(--psTypeFontFamily);
-  font-size: calc(var(--psTypeFontSizeSmall) / 16px * 1em);
+  font-size: .875em;
   font-weight: var(--psTypeFontWeightBook);
   line-height: calc(var(--psTypeLineHeightStandard) / var(--psTypeFontSizeSmall));
 }
@@ -22,8 +22,7 @@ hr,
 table,
 fieldset, figure,
 pre {
-  margin-top: 0;
-  margin-bottom: var(--psTypeLineHeightStandard);
+  margin:0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,6 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ul, ol, dd {
   margin-left: var(--psLayoutSpacingLarge);
+  line-height: var(--psTypeLineHeightStandard);
 }
 
 ul,
