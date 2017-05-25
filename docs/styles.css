@@ -929,6 +929,7 @@
 }
 .root___3LLvR {
   color: var(--psColorsWhite);
+  margin-bottom: var(--psLayoutSpacingXl);
 }:root {
   /* ui colors */
   --psColorsWhite: #ffffff;

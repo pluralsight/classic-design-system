@@ -17047,17 +17047,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = (0, _reactStyleable2.default)(_srcSwitcherModule2.default)(function (props) {
   return _react2.default.createElement(
-    _switcher2.default.List,
-    { onSelect: props.onClick, value: props.value },
+    'div',
+    { className: props.css.root },
     _react2.default.createElement(
-      _switcher2.default.Option,
-      { value: 'react' },
-      'REACT'
-    ),
-    _react2.default.createElement(
-      _switcher2.default.Option,
-      { value: 'html' },
-      'HTML'
+      _switcher2.default.List,
+      { onSelect: props.onClick, value: props.value },
+      _react2.default.createElement(
+        _switcher2.default.Option,
+        { value: 'react' },
+        'REACT'
+      ),
+      _react2.default.createElement(
+        _switcher2.default.Option,
+        { value: 'html' },
+        'HTML'
+      )
     )
   );
 });

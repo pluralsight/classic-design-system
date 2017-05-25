@@ -2,4 +2,5 @@
 
 .root {
   color: var(--psColorsWhite);
+  margin-bottom: var(--psLayoutSpacingXl);
 }
