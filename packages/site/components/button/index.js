@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
+import { Link as RouterLink } from 'react-router-dom'
 import React from 'react'
 import styleable from 'react-styleable'
 
-import { Code, Example, Heading, P } from '../../common/components'
+import { Code, Example, Heading, P, Link } from '../../common/components'
 import css from './index.module.css'
 
 import Button from '@pluralsight/ps-button/react'
@@ -30,9 +30,9 @@ export default styleable(css)(props => {
       <P>
         For more project setup guidance, see the
         {' '}
-        <Link to="/components/installation">
+        <RouterLink to="/components/installation">
           Component Installation Instructions
-        </Link>
+        </RouterLink>
         .
       </P>
 

@@ -7648,7 +7648,7 @@ object-assign
         Object.defineProperty(exports, '__esModule', {
           value: true
         })
-        exports.TopBar = exports.Switcher = exports.SideNav = exports.P = exports.Heading = exports.Example = exports.CodeOutput = exports.Code = undefined
+        exports.TopBar = exports.Switcher = exports.SideNav = exports.P = exports.Link = exports.Heading = exports.Example = exports.CodeOutput = exports.Code = undefined
 
         var _code = __webpack_require__(163)
 
@@ -7665,6 +7665,10 @@ object-assign
         var _heading = __webpack_require__(167)
 
         var _heading2 = _interopRequireDefault(_heading)
+
+        var _link = __webpack_require__(534)
+
+        var _link2 = _interopRequireDefault(_link)
 
         var _p = __webpack_require__(170)
 
@@ -7690,6 +7694,7 @@ object-assign
         exports.CodeOutput = _codeOutput2.default
         exports.Example = _example2.default
         exports.Heading = _heading2.default
+        exports.Link = _link2.default
         exports.P = _p2.default
         exports.SideNav = _sideNav2.default
         exports.Switcher = _switcher2.default
@@ -22121,7 +22126,7 @@ object-assign
                 'Installing modules from NPM - eg,',
                 ' ',
                 _react2.default.createElement(
-                  'a',
+                  _components.Link,
                   { href: 'https://nodejs.org/', target: '_blank' },
                   'Node'
                 )
@@ -22132,7 +22137,7 @@ object-assign
                 'Loading assets (JS and CSS) as modules - eg,',
                 ' ',
                 _react2.default.createElement(
-                  'a',
+                  _components.Link,
                   { href: 'https://webpack.js.org/', target: '_blank' },
                   'Webpack'
                 )
@@ -22143,7 +22148,7 @@ object-assign
                 'Transpiling nextgen JS - eg,',
                 ' ',
                 _react2.default.createElement(
-                  'a',
+                  _components.Link,
                   {
                     href: 'https://github.com/babel/babel-loader',
                     target: '_blank'
@@ -22183,7 +22188,7 @@ object-assign
               'The Design System components are published to npm in their source ES6 format.  They require transpilation to be used in browsers only supporting ES5.  We recommend',
               ' ',
               _react2.default.createElement(
-                'a',
+                _components.Link,
                 { href: 'http://babeljs.io/', target: '_blank' },
                 'Babel'
               ),
@@ -22191,7 +22196,7 @@ object-assign
               "for transpilation. Presumably you're using",
               ' ',
               _react2.default.createElement(
-                'a',
+                _components.Link,
                 {
                   href: 'https://github.com/babel/babel-loader',
                   target: '_blank'
@@ -22227,7 +22232,7 @@ object-assign
               'The Design System components use',
               ' ',
               _react2.default.createElement(
-                'a',
+                _components.Link,
                 {
                   href: 'https://github.com/css-modules/css-modules',
                   target: '_blank'
@@ -22238,7 +22243,7 @@ object-assign
               'and',
               ' ',
               _react2.default.createElement(
-                'a',
+                _components.Link,
                 {
                   href: 'https://github.com/postcss/postcss',
                   target: '_blank'
@@ -22269,7 +22274,7 @@ object-assign
               'Note: If you use traditional CSS stylesheets in addition to CSS modules, you will need to follow these',
               ' ',
               _react2.default.createElement(
-                'a',
+                _components.Link,
                 {
                   href: 'https://jaketrent.com/post/load-both-css-and-css-modules-webpack/',
                   target: '_blank'
@@ -60469,6 +60474,101 @@ https://highlightjs.org/
         }
 
         exports.default = valueEqual
+
+        /***/
+      },
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      /* 511 */ /* 512 */ /* 513 */ /* 514 */ /* 515 */ /* 516 */ /* 517 */ /* 518 */ /* 519 */ /* 520 */ /* 521 */ /* 522 */ /* 523 */ /* 524 */ /* 525 */ /* 526 */ /* 527 */ /* 528 */ /* 529 */ /* 530 */ /* 531 */ /* 532 */ /* 533 */ /* 534 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+
+        var _extends =
+          Object.assign ||
+          function(target) {
+            for (var i = 1; i < arguments.length; i++) {
+              var source = arguments[i]
+              for (var key in source) {
+                if (Object.prototype.hasOwnProperty.call(source, key)) {
+                  target[key] = source[key]
+                }
+              }
+            }
+            return target
+          }
+
+        var _react = __webpack_require__(3)
+
+        var _react2 = _interopRequireDefault(_react)
+
+        var _reactStyleable = __webpack_require__(8)
+
+        var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
+
+        var _indexModule = __webpack_require__(535)
+
+        var _indexModule2 = _interopRequireDefault(_indexModule)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        function _objectWithoutProperties(obj, keys) {
+          var target = {}
+          for (var i in obj) {
+            if (keys.indexOf(i) >= 0) continue
+            if (!Object.prototype.hasOwnProperty.call(obj, i)) continue
+            target[i] = obj[i]
+          }
+          return target
+        }
+
+        var rmSystemProps = function rmSystemProps(props) {
+          var css = props.css, rest = _objectWithoutProperties(props, ['css'])
+
+          return rest
+        }
+
+        exports.default = (0, _reactStyleable2.default)(
+          _indexModule2.default
+        )(function(props) {
+          return _react2.default.createElement(
+            'a',
+            _extends({ className: props.css.root }, rmSystemProps(props)),
+            props.children
+          )
+        })
+
+        /***/
+      },
+      /* 535 */
+      /***/ function(module, exports) {
+        // removed by extract-text-webpack-plugin
+        module.exports = { root: 'root___1ziYz' }
 
         /***/
       }

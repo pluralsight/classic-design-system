@@ -1,0 +1,10 @@
+@import "@pluralsight/ps-design-system-core";
+
+.root {
+  color: var(--psColorsOrange);
+  text-decoration: none;
+}
+
+.root:hover {
+  text-decoration: underline;
+}
