@@ -4,9 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 168px;
   border-bottom: 1px solid var(--psColorsGray01);
   text-decoration: none;
+  padding: var(--psLayoutSpacingLarge) 0;
 }
 .img {
   height: 31px;
@@ -25,10 +25,16 @@
   font-weight: var(--psTypeFontWeightMedium);
   color: #000; /* TODO: real colorz */
   font-family: var(--psTypeFontFamily);
-  padding-top: var(--psLayoutSpacingExtraSmall)
+  padding-top: var(--psLayoutSpacingExtraSmall);
 }
 .textTitle {
   font-size: 8px; /* TODO: not in ds */
   color: var(--psColorsGray03);
   font-weight: var(--psTypeFontWeightMedium);
+}
+
+@media screen and (min-width: 769px) {
+  .root {
+    padding: 72px 0;
+  }
 }

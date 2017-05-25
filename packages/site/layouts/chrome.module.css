@@ -9,7 +9,7 @@
 .side {
 }
 .main {
-  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge);
+  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge) var(--psLayoutSpacingLarge) var(--psLayoutSpacingLarge);
   background: var(--psColorsWhite);
 }
 .content {
