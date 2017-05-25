@@ -6,6 +6,7 @@ import styleable from 'react-styleable'
 
 import css from './index.module.css'
 import SrcSwitcher from './src-switcher'
+import util from '@pluralsight/ps-design-system-util'
 
 const rmCssModuleHashes = src => src.replace(/___\S{5}/g, '')
 
@@ -17,9 +18,12 @@ const renderHtmlSrc = (component, permutation) =>
 const renderHtmlSources = (component, permutations) =>
   permutations.map(p => renderHtmlSrc(component, p)).join('\n')
 
-const renderAttributes = permutation =>
+const renderReactProps = permutation =>
   Object.keys(permutation).reduce((acc, key) => {
-    acc += ` ${key}="${permutation[key]}"`
+    if (/^example/.test(key)) return acc
+
+    const exampleKey = 'example' + util.string.capitalize(key)
+    acc += ` ${key}=${permutation[exampleKey] ? permutation[exampleKey] : `"${permutation[key]}"`}`
     return acc
   }, '')
 
@@ -27,13 +31,19 @@ const renderReactImport = name =>
   `import ${name} from '@pluralsight/ps-${name.toLowerCase()}/react'\n\n`
 
 const renderReactSrc = (name, children, permutation) =>
-  `<${name}${renderAttributes(permutation)}>${children}</${name}>\n`
+  `<${name}${renderReactProps(permutation)}>${children}</${name}>\n`
 
 const renderReactSources = (name, children, permutations) =>
   permutations.reduce(
     (acc, p) => (acc += renderReactSrc(name, children, p)),
     renderReactImport(name)
   )
+
+const filterNonExampleProps = permutation =>
+  Object.keys(permutation).reduce((acc, key) => {
+    if (!/^example/.test(key)) acc[key] = permutation[key]
+    return acc
+  }, {})
 
 class Example extends React.Component {
   constructor(props) {
@@ -49,7 +59,7 @@ class Example extends React.Component {
   renderOutputs(props) {
     return props.permutations.map((p, i) => (
       <div key={i} className={this.props.css.outputChild}>
-        {React.cloneElement(props.component, p)}
+        {React.cloneElement(props.component, filterNonExampleProps(p))}
       </div>
     ))
   }

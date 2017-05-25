@@ -20907,6 +20907,10 @@ object-assign
 
         var _srcSwitcher2 = _interopRequireDefault(_srcSwitcher)
 
+        var _psDesignSystemUtil = __webpack_require__(91)
+
+        var _psDesignSystemUtil2 = _interopRequireDefault(_psDesignSystemUtil)
+
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
         }
@@ -20978,9 +20982,19 @@ object-assign
             .join('\n')
         }
 
-        var renderAttributes = function renderAttributes(permutation) {
+        var renderReactProps = function renderReactProps(permutation) {
           return Object.keys(permutation).reduce(function(acc, key) {
-            acc += ' ' + key + '="' + permutation[key] + '"'
+            if (/^example/.test(key)) return acc
+
+            var exampleKey =
+              'example' + _psDesignSystemUtil2.default.string.capitalize(key)
+            acc +=
+              ' ' +
+              key +
+              '=' +
+              (permutation[exampleKey]
+                ? permutation[exampleKey]
+                : '"' + permutation[key] + '"')
             return acc
           }, '')
         }
@@ -21003,7 +21017,7 @@ object-assign
           return (
             '<' +
             name +
-            renderAttributes(permutation) +
+            renderReactProps(permutation) +
             '>' +
             children +
             '</' +
@@ -21020,6 +21034,15 @@ object-assign
           return permutations.reduce(function(acc, p) {
             return (acc += renderReactSrc(name, children, p))
           }, renderReactImport(name))
+        }
+
+        var filterNonExampleProps = function filterNonExampleProps(
+          permutation
+        ) {
+          return Object.keys(permutation).reduce(function(acc, key) {
+            if (!/^example/.test(key)) acc[key] = permutation[key]
+            return acc
+          }, {})
         }
 
         var Example = (function(_React$Component) {
@@ -21057,7 +21080,10 @@ object-assign
                   return _react2.default.createElement(
                     'div',
                     { key: i, className: _this2.props.css.outputChild },
-                    _react2.default.cloneElement(props.component, p)
+                    _react2.default.cloneElement(
+                      props.component,
+                      filterNonExampleProps(p)
+                    )
                   )
                 })
               }
@@ -22002,11 +22028,13 @@ object-assign
               name: 'Button',
               permutations: [
                 {
+                  exampleIcon: '{<Icon id="logo" />}',
                   icon: _react2.default.createElement(_react6.default, {
                     id: 'logo'
                   })
                 },
                 {
+                  exampleIcon: '{<Icon id="logo" />}',
                   icon: _react2.default.createElement(_react6.default, {
                     id: 'logo'
                   }),

@@ -63,8 +63,13 @@ export default styleable(css)(props => {
         component={<Button>Click me</Button>}
         name="Button"
         permutations={[
-          { icon: <Icon id="logo" /> },
-          { icon: <Icon id="logo" />, iconAlign: 'right', appearance: 'flat' }
+          { exampleIcon: '{<Icon id="logo" />}', icon: <Icon id="logo" /> },
+          {
+            exampleIcon: '{<Icon id="logo" />}',
+            icon: <Icon id="logo" />,
+            iconAlign: 'right',
+            appearance: 'flat'
+          }
         ]}
       />
 

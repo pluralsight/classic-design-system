@@ -18,7 +18,18 @@ module.exports = {
       {
         test: /\.svg$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'react-svg-loader']
+        use: [
+          'babel-loader',
+          {
+            loader: 'string-replace-loader',
+            options: {
+              search: 'className="(\w+)"',
+              replace: "className={(props.css || {})['$1']}",
+              flags: 'g'
+            }
+          },
+          'react-svg-loader'
+        ]
       },
       {
         test: /\.js$/,
