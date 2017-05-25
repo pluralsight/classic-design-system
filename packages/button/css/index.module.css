@@ -76,10 +76,17 @@
 }
 
 /* icon and iconAlign */
+.ps-button--icon-align-right {
+  flex-direction: row-reverse;
+}
 .ps-button__icon {
   height: 24px;
   width: 24px;
   margin-right: var(--psLayoutSpacingExtraSmall);
+}
+.ps-button--icon-align-right .ps-button__icon {
+  margin-right: 0;
+  margin-left: var(--psLayoutSpacingExtraSmall);
 }
 
 /* disabled */

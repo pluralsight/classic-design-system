@@ -29,11 +29,13 @@ const getClassName = props =>
     [props.css['ps-button']]: true,
     [props.css['ps-button--' + props.appearance]]: props.appearance,
     [props.css['ps-button--' + props.size]]: props.size,
-    [props.css['ps-button--disabled']]: props.disabled
+    [props.css['ps-button--disabled']]: props.disabled,
+    [props.css['ps-button--icon-align-right']]: props.icon &&
+      props.iconAlign === 'right'
   })
 
 const rmSystemProps = props => {
-  const { appearance, disabled, css, icon, size, ...rest } = props
+  const { appearance, disabled, css, icon, iconAlign, size, ...rest } = props
   return rest
 }
 
@@ -55,7 +57,7 @@ export const Button = props => {
   return (
     <button {...formatProps(props)}>
       {renderIcon(props)}
-      {props.children}
+      <span>{props.children}</span>
     </button>
   )
 }

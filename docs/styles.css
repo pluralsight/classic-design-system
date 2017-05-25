@@ -1580,10 +1580,17 @@
   background: var(--psColorsGray04);
 }
 /* icon and iconAlign */
+.ps-button--icon-align-right___1H91Q {
+  flex-direction: row-reverse;
+}
 .ps-button__icon___3o9gL {
   height: 24px;
   width: 24px;
   margin-right: var(--psLayoutSpacingExtraSmall);
+}
+.ps-button--icon-align-right___1H91Q .ps-button__icon___3o9gL {
+  margin-right: 0;
+  margin-left: var(--psLayoutSpacingExtraSmall);
 }
 /* disabled */
 .ps-button--disabled___2IvkE {

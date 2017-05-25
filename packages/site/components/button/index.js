@@ -62,7 +62,10 @@ export default styleable(css)(props => {
       <Example
         component={<Button>Click me</Button>}
         name="Button"
-        permutations={[{ icon: <Icon id="logo" /> }]}
+        permutations={[
+          { icon: <Icon id="logo" /> },
+          { icon: <Icon id="logo" />, iconAlign: 'right', appearance: 'flat' }
+        ]}
       />
 
       <Heading.Large>Disabled button</Heading.Large>
