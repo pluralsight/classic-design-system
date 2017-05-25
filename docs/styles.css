@@ -1508,7 +1508,7 @@
   --psMotionSpeedSlowest: 300ms;
 }
 .ps-button___2EFfR {
-  display: inline-block;
+  display: inline-flex;
   padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingMedium);
   border: 0;
   border-radius: 2px;
@@ -1579,6 +1579,11 @@
   background: var(--psColorsGray04);
 }
 /* icon and iconAlign */
+.ps-button__icon___3o9gL {
+  height: 24px;
+  width: 24px;
+  margin-right: var(--psLayoutSpacingExtraSmall);
+}
 /* disabled */
 .ps-button--disabled___2IvkE {
   color: var(--psColorsGray02);
@@ -1593,7 +1598,110 @@
   color: var(--psColorsGray02);
   background: none;
 }
-.root___2GPyS {
+:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
+  /* role colors */
+  --psColorsRoleYellowLighter: #fd39bc;
+  --psColorsRoleYellowLight: #fbcd64;
+  --psColorsRoleYellow: #f8b721;
+  --psColorsRoleYellowDark: #ae8017;
+  --psColorsRoleYellowDarker: #7c5b12;
+}
+:root {
+  /* spacing */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXl: 40px;
+  --psLayoutSpacingXxl: 56px;
+}
+:root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+  /* font size */
+  --psTypeFontSizeGigantic: 60px;
+  --psTypeFontSizeXxxl: 48px;
+  --psTypeFontSizeXxl: 36px;
+  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeLarge: 24px;
+  --psTypeFontSizeMedium: 18px;
+  --psTypeFontSizeSmall: 14px;
+  --psTypeFontSizeExtraSmall: 12px;
+
+  /* letter spacing */
+  --psTypeLetterSpacingGigantic: -1px;
+  --psTypeLetterSpacingXxxl: -0.72px;
+  --psTypeLetterSpacingXxl: -0.54px;
+  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingLarge: 0.36px;
+  --psTypeLetterSpacingMedium: 0;
+  --psTypeLetterSpacingSmall: 0;
+  --psTypeLetterSpacingExtraSmall: 0;
+
+  /* font weight */
+  --psTypeFontWeightBold: 700;
+  --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightBook: 400;
+  --psTypeFontWeightLight: 300;
+  --psTypeFontWeightExtraLight: 200;
+
+  /* line height */
+  --psTypeLineHeightTight: 20px;
+  --psTypeLineHeightStandard: 24px;
+  --psTypeLineHeightExtra: 32px;
+  --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
+:root {
+  --psIconHeight: 24px;
+  --psIconWidth: 24px;
+}
+.root___IRYBD {
+  display: inline-block;
+  height: var(--psIconHeight);
+  width: var(--psIconWidth);
+}
+/* TODO: consider a custom loader
+   that makes passing custom css module possible.
+   Might have to in order to make overrides
+   reliable and avoid the cascade. */
+.root___IRYBD .ps-icon__fg--fill {
+  fill: var(--psColorsWhite);
+}
+.root___IRYBD .ps-icon__fg--stroke {
+  stroke: var(--psColorsWhite);
+}.root___2GPyS {
 }/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */

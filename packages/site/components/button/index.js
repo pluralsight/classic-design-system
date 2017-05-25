@@ -6,6 +6,7 @@ import { Code, Example, Heading, P } from '../../common/components'
 import css from './index.module.css'
 
 import Button from '@pluralsight/ps-button/react'
+import Icon from '@pluralsight/ps-icon/react'
 
 export default styleable(css)(props => {
   return (
@@ -55,6 +56,13 @@ export default styleable(css)(props => {
           { size: 'small' },
           { size: 'tiny' }
         ]}
+      />
+
+      <Heading.Large>Button with icon</Heading.Large>
+      <Example
+        component={<Button>Click me</Button>}
+        name="Button"
+        permutations={[{ icon: <Icon id="logo" /> }]}
       />
 
       <Heading.Large>Disabled button</Heading.Large>
