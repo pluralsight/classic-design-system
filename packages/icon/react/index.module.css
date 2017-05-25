@@ -10,13 +10,9 @@
   height: var(--psIconHeight);
   width: var(--psIconWidth);
 }
-/* TODO: consider a custom loader
-   that makes passing custom css module possible.
-   Might have to in order to make overrides
-   reliable and avoid the cascade. */
-.root :global(.ps-icon__fg--fill) {
+.ps-icon__fg--fill {
   fill: var(--psColorsWhite);
 }
-.root :global(.ps-icon__fg--stroke) {
+.ps-icon__fg--stroke {
   stroke: var(--psColorsWhite);
 }

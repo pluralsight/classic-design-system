@@ -65,8 +65,13 @@ export default styleable(css)(props => {
         permutations={[
           { exampleIcon: '{<Icon id="logo" />}', icon: <Icon id="logo" /> },
           {
-            exampleIcon: '{<Icon id="logo" />}',
-            icon: <Icon id="logo" />,
+            exampleIcon: "{<Icon id=\"logo\" css={{ 'ps-icon__fg--fill': 'cssModuleSelector' }}/>}",
+            icon: (
+              <Icon
+                id="logo"
+                css={{ 'ps-icon__fg--fill': props.css.flatIcon }}
+              />
+            ),
             iconAlign: 'right',
             appearance: 'flat'
           }

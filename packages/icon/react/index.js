@@ -11,6 +11,6 @@ const ids = {
 
 export default styleable(css)(props => (
   <span className={props.css.root}>
-    {React.createElement(ids[props.id])}
+    {React.createElement(ids[props.id], { css: props.css })}
   </span>
 ))

@@ -23,9 +23,17 @@ module.exports = {
           {
             loader: 'string-replace-loader',
             options: {
-              search: 'className="(\w+)"',
-              replace: "className={(props.css || {})['$1']}",
-              flags: 'g'
+              multiple: [
+                {
+                  search: ' {...this.props}',
+                  replace: ''
+                },
+                {
+                  search: 'className=(\'|")([^\'"]+)(\'|")',
+                  replace: "className={(this.props.css || {})['$2']}",
+                  flags: 'g'
+                }
+              ]
             }
           },
           'react-svg-loader'

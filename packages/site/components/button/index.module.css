@@ -1,3 +1,9 @@
+@import "@pluralsight/ps-design-system-core";
+
 .root {
 
 }
+.flatIcon {
+  fill: var(--psColorsGray02);
+}
+/* TODO: solve hover state -- the parent has to pass to the child icon what its appearance/state/varient is in order to easily coordinate the inner icon fill color */

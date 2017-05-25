@@ -50,6 +50,7 @@
     "remarkable": "^1.7.1",
     "rimraf": "^2.6.1",
     "static-site-generator-webpack-plugin": "alexlande/static-site-generator-webpack-plugin#feature-basenameCrawling",
+    "string-replace-loader": "^1.2.0",
     "style-loader": "^0.17.0",
     "webpack": "^2.4.1"
   }
