@@ -482,11 +482,12 @@
   padding-left: 14px; /* TODO: how to handle additive spacing scenarios? */
 }
 .box___E_LfL {
-  display: none;
+  display: inline-block;
   height: 8px;
-  width: 8px;
-  margin-right: 12px;
+  width: 0px;
+  margin-right: 0px;
   background: var(--psColorsGradientHorz);
+  transition: all var(--psMotionSpeedFastest) ease-in-out;
 }
 .link___1vryl {
   display: flex;
@@ -495,14 +496,24 @@
   line-height: var(--psTypeLineHeightExtra);
   text-decoration: none;
   color: var(--psColorsGray03);
+  transition: all var(--psMotionSpeedFastest) ease-in-out;
+}
+.link___1vryl:hover {
+  color: var(--psColorsBlack);
+}
+.link___1vryl:hover .box___E_LfL{
+  width: 8px;
+  margin-right: 12px;
 }
 .linkActive___-b0tf {
   color: var(--psColorsBlack);
   font-weight: var(--psTypeFontWeightBold);
 }
 .linkActive___-b0tf .box___E_LfL {
-  display: inline-block;
-}:root {
+  width: 8px;
+  margin-right: 12px;
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;

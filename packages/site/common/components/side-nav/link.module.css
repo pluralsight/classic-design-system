@@ -4,11 +4,12 @@
   padding-left: 14px; /* TODO: how to handle additive spacing scenarios? */
 }
 .box {
-  display: none;
+  display: inline-block;
   height: 8px;
-  width: 8px;
-  margin-right: 12px;
+  width: 0px;
+  margin-right: 0px;
   background: var(--psColorsGradientHorz);
+  transition: all var(--psMotionSpeedFastest) ease-in-out;
 }
 .link {
   display: flex;
@@ -17,11 +18,22 @@
   line-height: var(--psTypeLineHeightExtra);
   text-decoration: none;
   color: var(--psColorsGray03);
+  transition: all var(--psMotionSpeedFastest) ease-in-out;
 }
+.link:hover {
+  color: var(--psColorsBlack);
+}
+
+.link:hover .box{
+  width: 8px;
+  margin-right: 12px;
+}
+
 .linkActive {
   color: var(--psColorsBlack);
   font-weight: var(--psTypeFontWeightBold);
 }
 .linkActive .box {
-  display: inline-block;
+  width: 8px;
+  margin-right: 12px;
 }
