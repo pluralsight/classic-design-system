@@ -31,7 +31,9 @@ const getClassName = props =>
     [props.css['ps-button--' + props.size]]: props.size,
     [props.css['ps-button--disabled']]: props.disabled,
     [props.css['ps-button--icon-align-right']]: props.icon &&
-      props.iconAlign === 'right'
+      props.iconAlign === 'right',
+    [props.css['ps-button--icon-only']]: React.Children.count(props.children) <=
+      0
   })
 
 const rmSystemProps = props => {
@@ -48,12 +50,16 @@ const formatProps = props => ({
 const renderIcon = props =>
   props.icon
     ? <div className={props.css['ps-button__icon']}>
-        {props.icon}
+        {React.cloneElement(props.icon, {
+          css: {
+            'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
+            'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
+          }
+        })}
       </div>
     : null
 
 export const Button = props => {
-  let attrs = rmSystemProps(props)
   return (
     <button {...formatProps(props)}>
       {renderIcon(props)}

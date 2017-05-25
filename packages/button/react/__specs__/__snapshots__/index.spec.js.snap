@@ -5,6 +5,8 @@ exports[`renders correctly 1`] = `
   className="ps-button ps-button--medium"
   disabled={undefined}
 >
-  Label
+  <span>
+    Label
+  </span>
 </button>
 `;

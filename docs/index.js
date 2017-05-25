@@ -20681,6 +20681,10 @@ object-assign
               _classNames,
               props.css['ps-button--icon-align-right'],
               props.icon && props.iconAlign === 'right'
+            ), _defineProperty(
+              _classNames,
+              props.css['ps-button--icon-only'],
+              _react2.default.Children.count(props.children) <= 0
             ), _classNames)
           )
         }
@@ -20716,13 +20720,17 @@ object-assign
             ? _react2.default.createElement(
                 'div',
                 { className: props.css['ps-button__icon'] },
-                props.icon
+                _react2.default.cloneElement(props.icon, {
+                  css: {
+                    'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
+                    'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
+                  }
+                })
               )
             : null
         }
 
         var Button = (exports.Button = function Button(props) {
-          var attrs = rmSystemProps(props)
           return _react2.default.createElement(
             'button',
             formatProps(props),
@@ -22104,12 +22112,43 @@ object-assign
                   })
                 },
                 {
+                  exampleIcon: '{<Icon id="logo" />}',
+                  icon: _react2.default.createElement(_react6.default, {
+                    id: 'logo'
+                  }),
+                  appearance: 'stroke'
+                },
+                {
+                  exampleIcon: '{<Icon id="logo" />}',
+                  icon: _react2.default.createElement(_react6.default, {
+                    id: 'logo'
+                  }),
+                  iconAlign: 'right',
+                  appearance: 'flat'
+                }
+              ]
+            }),
+            _react2.default.createElement(
+              _components.Heading.Large,
+              null,
+              'Button with lone icon'
+            ),
+            _react2.default.createElement(_components.Example, {
+              component: _react2.default.createElement(_react4.default, null),
+              name: 'Button',
+              permutations: [
+                {
+                  exampleIcon: '{<Icon id="logo" />}',
+                  icon: _react2.default.createElement(_react6.default, {
+                    id: 'logo'
+                  })
+                },
+                {
                   exampleIcon: "{<Icon id=\"logo\" css={{ 'ps-icon__fg--fill': 'cssModuleSelector' }}/>}",
                   icon: _react2.default.createElement(_react6.default, {
                     id: 'logo',
                     css: { 'ps-icon__fg--fill': props.css.flatIcon }
                   }),
-                  iconAlign: 'right',
                   appearance: 'flat'
                 }
               ]
@@ -22885,6 +22924,9 @@ object-assign
           'ps-button--flat': 'ps-button--flat___3IG4H',
           'ps-button--icon-align-right': 'ps-button--icon-align-right___1H91Q',
           'ps-button__icon': 'ps-button__icon___3o9gL',
+          'ps-icon__fg--fill': 'ps-icon__fg--fill___2t5_8',
+          'ps-icon__fg--stroke': 'ps-icon__fg--stroke___2ym0E',
+          'ps-button--icon-only': 'ps-button--icon-only___1iOv7',
           'ps-button--disabled': 'ps-button--disabled___2IvkE'
         }
 
@@ -23033,7 +23075,7 @@ object-assign
       /* 205 */
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
-        module.exports = { root: 'root___3cnsB', flatIcon: 'flatIcon___UUOOk' }
+        module.exports = { root: 'root___3cnsB' }
 
         /***/
       },

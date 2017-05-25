@@ -1611,10 +1611,6 @@
 .root___3cnsB {
 
 }
-.flatIcon___UUOOk {
-  fill: var(--psColorsGray02);
-}
-/* TODO: solve hover state -- the parent has to pass to the child icon what its appearance/state/varient is in order to easily coordinate the inner icon fill color */
 :root {
   /* ui colors */
   --psColorsWhite: #ffffff;
@@ -1780,9 +1776,42 @@
   width: 24px;
   margin-right: var(--psLayoutSpacingExtraSmall);
 }
+.ps-button___2EFfR .ps-icon__fg--fill___2t5_8 {
+  fill: var(--psColorsWhite);
+}
+.ps-button___2EFfR .ps-icon__fg--stroke___2ym0E {
+  stroke: var(--psColorsWhite);
+}
+.ps-button--stroke___2-hZL .ps-icon__fg--fill___2t5_8 {
+  fill: var(--psColorsOrange);
+}
+.ps-button--stroke___2-hZL .ps-icon__fg--stroke___2ym0E {
+  stroke: var(--psColorsOrange);
+}
+.ps-button--stroke___2-hZL:hover .ps-icon__fg--fill___2t5_8 {
+  fill: var(--psColorsOrangeLight);
+}
+.ps-button--stroke___2-hZL:hover .ps-icon__fg--stroke___2ym0E {
+  stroke: var(--psColorsOrangeLight);
+}
+.ps-button--flat___3IG4H .ps-icon__fg--fill___2t5_8 {
+  fill: var(--psColorsGray02);
+}
+.ps-button--flat___3IG4H .ps-icon__fg--stroke___2ym0E {
+  stroke: var(--psColorsGray02);
+}
+.ps-button--flat___3IG4H:hover .ps-icon__fg--fill___2t5_8 {
+  fill: var(--psColorsWhite);
+}
+.ps-button--flat___3IG4H:hover .ps-icon__fg--stroke___2ym0E {
+  stroke: var(--psColorsWhite);
+}
 .ps-button--icon-align-right___1H91Q .ps-button__icon___3o9gL {
   margin-right: 0;
   margin-left: var(--psLayoutSpacingExtraSmall);
+}
+.ps-button--icon-only___1iOv7 .ps-button__icon___3o9gL {
+  margin: 0;
 }
 /* disabled */
 .ps-button--disabled___2IvkE {
@@ -1887,6 +1916,8 @@
   --psIconHeight: 24px;
   --psIconWidth: 24px;
 }
+/* TODO: move to ../css */
+/* TODO: rename ps-icon */
 .root___IRYBD {
   display: inline-block;
   height: var(--psIconHeight);

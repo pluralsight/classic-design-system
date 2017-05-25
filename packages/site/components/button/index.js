@@ -65,6 +65,26 @@ export default styleable(css)(props => {
         permutations={[
           { exampleIcon: '{<Icon id="logo" />}', icon: <Icon id="logo" /> },
           {
+            exampleIcon: '{<Icon id="logo" />}',
+            icon: <Icon id="logo" />,
+            appearance: 'stroke'
+          },
+          {
+            exampleIcon: '{<Icon id="logo" />}',
+            icon: <Icon id="logo" />,
+            iconAlign: 'right',
+            appearance: 'flat'
+          }
+        ]}
+      />
+
+      <Heading.Large>Button with lone icon</Heading.Large>
+      <Example
+        component={<Button />}
+        name="Button"
+        permutations={[
+          { exampleIcon: '{<Icon id="logo" />}', icon: <Icon id="logo" /> },
+          {
             exampleIcon: "{<Icon id=\"logo\" css={{ 'ps-icon__fg--fill': 'cssModuleSelector' }}/>}",
             icon: (
               <Icon
@@ -72,7 +92,6 @@ export default styleable(css)(props => {
                 css={{ 'ps-icon__fg--fill': props.css.flatIcon }}
               />
             ),
-            iconAlign: 'right',
             appearance: 'flat'
           }
         ]}
