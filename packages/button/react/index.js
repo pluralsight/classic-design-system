@@ -31,7 +31,9 @@ const getClassName = props =>
     [props.css['ps-button--' + props.size]]: props.size,
     [props.css['ps-button--disabled']]: props.disabled,
     [props.css['ps-button--icon-align-right']]: props.icon &&
-      props.iconAlign === 'right'
+      props.iconAlign === 'right',
+    [props.css['ps-button--icon-only']]: React.Children.count(props.children) <=
+      0
   })
 
 const rmSystemProps = props => {

@@ -20681,6 +20681,10 @@ object-assign
               _classNames,
               props.css['ps-button--icon-align-right'],
               props.icon && props.iconAlign === 'right'
+            ), _defineProperty(
+              _classNames,
+              props.css['ps-button--icon-only'],
+              _react2.default.Children.count(props.children) <= 0
             ), _classNames)
           )
         }
@@ -22052,6 +22056,31 @@ object-assign
             _react2.default.createElement(
               _components.Heading.Large,
               null,
+              'Button with lone icon'
+            ),
+            _react2.default.createElement(_components.Example, {
+              component: _react2.default.createElement(_react4.default, null),
+              name: 'Button',
+              permutations: [
+                {
+                  exampleIcon: '{<Icon id="logo" />}',
+                  icon: _react2.default.createElement(_react6.default, {
+                    id: 'logo'
+                  })
+                },
+                {
+                  exampleIcon: "{<Icon id=\"logo\" css={{ 'ps-icon__fg--fill': 'cssModuleSelector' }}/>}",
+                  icon: _react2.default.createElement(_react6.default, {
+                    id: 'logo',
+                    css: { 'ps-icon__fg--fill': props.css.flatIcon }
+                  }),
+                  appearance: 'flat'
+                }
+              ]
+            }),
+            _react2.default.createElement(
+              _components.Heading.Large,
+              null,
               'Disabled button'
             ),
             _react2.default.createElement(_components.Example, {
@@ -22820,6 +22849,7 @@ object-assign
           'ps-button--flat': 'ps-button--flat___3IG4H',
           'ps-button--icon-align-right': 'ps-button--icon-align-right___1H91Q',
           'ps-button__icon': 'ps-button__icon___3o9gL',
+          'ps-button--icon-only': 'ps-button--icon-only___1iOv7',
           'ps-button--disabled': 'ps-button--disabled___2IvkE'
         }
 

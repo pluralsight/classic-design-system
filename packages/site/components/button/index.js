@@ -78,6 +78,25 @@ export default styleable(css)(props => {
         ]}
       />
 
+      <Heading.Large>Button with lone icon</Heading.Large>
+      <Example
+        component={<Button />}
+        name="Button"
+        permutations={[
+          { exampleIcon: '{<Icon id="logo" />}', icon: <Icon id="logo" /> },
+          {
+            exampleIcon: "{<Icon id=\"logo\" css={{ 'ps-icon__fg--fill': 'cssModuleSelector' }}/>}",
+            icon: (
+              <Icon
+                id="logo"
+                css={{ 'ps-icon__fg--fill': props.css.flatIcon }}
+              />
+            ),
+            appearance: 'flat'
+          }
+        ]}
+      />
+
       <Heading.Large>Disabled button</Heading.Large>
       <Example
         component={<Button>Disabled button</Button>}

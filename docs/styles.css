@@ -1773,6 +1773,9 @@
   margin-right: 0;
   margin-left: var(--psLayoutSpacingExtraSmall);
 }
+.ps-button--icon-only___1iOv7 .ps-button__icon___3o9gL {
+  margin: 0;
+}
 /* disabled */
 .ps-button--disabled___2IvkE {
   color: var(--psColorsGray02);

@@ -88,6 +88,9 @@
   margin-right: 0;
   margin-left: var(--psLayoutSpacingExtraSmall);
 }
+.ps-button--icon-only .ps-button__icon {
+  margin: 0;
+}
 
 /* disabled */
 .ps-button--disabled {
