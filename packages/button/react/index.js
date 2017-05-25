@@ -50,12 +50,16 @@ const formatProps = props => ({
 const renderIcon = props =>
   props.icon
     ? <div className={props.css['ps-button__icon']}>
-        {props.icon}
+        {React.cloneElement(props.icon, {
+          css: {
+            'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
+            'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
+          }
+        })}
       </div>
     : null
 
 export const Button = props => {
-  let attrs = rmSystemProps(props)
   return (
     <button {...formatProps(props)}>
       {renderIcon(props)}

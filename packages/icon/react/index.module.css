@@ -5,6 +5,8 @@
   --psIconWidth: 24px;
 }
 
+/* TODO: move to ../css */
+/* TODO: rename ps-icon */
 .root {
   display: inline-block;
   height: var(--psIconHeight);

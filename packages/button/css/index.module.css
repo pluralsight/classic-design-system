@@ -84,6 +84,36 @@
   width: 24px;
   margin-right: var(--psLayoutSpacingExtraSmall);
 }
+.ps-button .ps-icon__fg--fill {
+  fill: var(--psColorsWhite);
+}
+.ps-button .ps-icon__fg--stroke {
+  stroke: var(--psColorsWhite);
+}
+.ps-button--stroke .ps-icon__fg--fill {
+  fill: var(--psColorsOrange);
+}
+.ps-button--stroke .ps-icon__fg--stroke {
+  stroke: var(--psColorsOrange);
+}
+.ps-button--stroke:hover .ps-icon__fg--fill {
+  fill: var(--psColorsOrangeLight);
+}
+.ps-button--stroke:hover .ps-icon__fg--stroke {
+  stroke: var(--psColorsOrangeLight);
+}
+.ps-button--flat .ps-icon__fg--fill {
+  fill: var(--psColorsGray02);
+}
+.ps-button--flat .ps-icon__fg--stroke {
+  stroke: var(--psColorsGray02);
+}
+.ps-button--flat:hover .ps-icon__fg--fill {
+  fill: var(--psColorsWhite);
+}
+.ps-button--flat:hover .ps-icon__fg--stroke {
+  stroke: var(--psColorsWhite);
+}
 .ps-button--icon-align-right .ps-button__icon {
   margin-right: 0;
   margin-left: var(--psLayoutSpacingExtraSmall);
