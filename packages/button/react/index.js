@@ -14,6 +14,9 @@ export const propDefs = {
     type: 'bool',
     default: false
   },
+  icon: {
+    type: 'element'
+  },
   size: {
     type: 'oneOf',
     value: ['tiny', 'small', 'medium', 'large'],
@@ -30,7 +33,7 @@ const getClassName = props =>
   })
 
 const rmSystemProps = props => {
-  const { appearance, disabled, css, size, ...rest } = props
+  const { appearance, disabled, css, icon, size, ...rest } = props
   return rest
 }
 
@@ -40,10 +43,18 @@ const formatProps = props => ({
   disabled: props.disabled
 })
 
+const renderIcon = props =>
+  props.icon
+    ? <div className={props.css['ps-button__icon']}>
+        {props.icon}
+      </div>
+    : null
+
 export const Button = props => {
   let attrs = rmSystemProps(props)
   return (
     <button {...formatProps(props)}>
+      {renderIcon(props)}
       {props.children}
     </button>
   )
