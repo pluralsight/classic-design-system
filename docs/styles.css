@@ -808,7 +808,10 @@
   overflow: hidden;
 }
 .outputChild___3G74e {
-  margin: 10px 0 0 0;
+  margin: var(--psLayoutSpacingLarge) 0 0 0;
+}
+.outputChild___3G74e:first-child {
+  margin-top: 0;
 }
 .src___3Fj1T {
   padding: var(--psLayoutSpacingLarge);

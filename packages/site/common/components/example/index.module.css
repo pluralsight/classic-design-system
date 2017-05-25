@@ -11,7 +11,10 @@
   overflow: hidden;
 }
 .outputChild {
-  margin: 10px 0 0 0;
+  margin: var(--psLayoutSpacingLarge) 0 0 0;
+}
+.outputChild:first-child {
+  margin-top: 0;
 }
 .src {
   padding: var(--psLayoutSpacingLarge);
