@@ -20874,6 +20874,7 @@ object-assign
         Object.defineProperty(exports, '__esModule', {
           value: true
         })
+        exports.formatHtml = undefined
 
         var _createClass = (function() {
           function defineProperties(target, props) {
@@ -20978,9 +20979,52 @@ object-assign
           return _server2.default.renderToStaticMarkup(reactElement)
         }
 
+        var formatHtml = (exports.formatHtml = function formatHtml(str) {
+          if (!str) return ''
+
+          var tabs = function tabs(count) {
+            return '  '.repeat(count)
+          }
+
+          var formatTag = function formatTag(bit) {
+            return '<' + bit + '>'
+          }
+
+          var stripTag = function stripTag(bit) {
+            return bit.replace(/^<?([^<>]+)>?$/, '$1')
+          }
+
+          var isClosingTag = function isClosingTag(bit) {
+            return bit[0] === '/'
+          }
+
+          var isSelfClosingTag = function isSelfClosingTag(bit) {
+            return bit[bit.length - 1] === '/'
+          }
+
+          var isTagClosingOverText = function isTagClosingOverText(bit) {
+            return bit.match(/<\//)
+          }
+
+          var depth = 0
+          return str.split('><').map(stripTag).reduce(function(html, bit) {
+            if (isClosingTag(bit)) {
+              --depth
+              html += '\n' + tabs(depth) + formatTag(bit)
+            } else {
+              html += (html ? '\n' : '') + tabs(depth) + formatTag(bit)
+
+              if (!isSelfClosingTag(bit) && !isTagClosingOverText(bit)) ++depth
+            }
+            return html
+          }, '')
+        })
+
         var renderHtmlSrc = function renderHtmlSrc(component, permutation) {
-          return rmCssModuleHashes(
-            toHtml(_react2.default.cloneElement(component, permutation))
+          return formatHtml(
+            rmCssModuleHashes(
+              toHtml(_react2.default.cloneElement(component, permutation))
+            )
           )
         }
 
