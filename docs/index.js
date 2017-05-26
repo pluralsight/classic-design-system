@@ -21032,7 +21032,7 @@ object-assign
             name +
             renderReactProps(permutation) +
             '>' +
-            children +
+            (children || '') +
             '</' +
             name +
             '>\n'

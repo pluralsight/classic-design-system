@@ -31,7 +31,7 @@ const renderReactImport = name =>
   `import ${name} from '@pluralsight/ps-${name.toLowerCase()}/react'\n\n`
 
 const renderReactSrc = (name, children, permutation) =>
-  `<${name}${renderReactProps(permutation)}>${children}</${name}>\n`
+  `<${name}${renderReactProps(permutation)}>${children || ''}</${name}>\n`
 
 const renderReactSources = (name, children, permutations) =>
   permutations.reduce(
