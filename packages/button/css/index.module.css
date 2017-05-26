@@ -30,19 +30,19 @@
 .ps-button--tiny {
   font-size: var(--psTypeFontSizeExtraSmall);
   line-height: var(--psTypeLineHeightStandard);
-  padding: 0 var(--psLayoutSpacingMedium);
+  padding: 0 var(--psLayoutSpacingExtraSmall);
   height: 24px;
 }
 .ps-button--small {
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightStandard);
-  padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingMedium);
+  padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingSmall);
   height: 32px;
 }
 .ps-button--medium {
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightStandard);
-  padding: var(--psLayoutSpacingExtraSmall) var(--psLayoutSpacingMedium);
+  padding: var(--psLayoutSpacingExtraSmall) var(--psLayoutSpacingSmall);
   height: 40px;
 }
 .ps-button--large {
