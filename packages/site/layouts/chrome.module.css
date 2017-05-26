@@ -23,10 +23,14 @@
   }
   .side {
     min-width: 200px;
+    height: calc(100vh - 8px);
+    overflow: auto;
   }
   .main {
     flex: 1;
     border-left: 1px solid var(--psColorsGray01);
+    height: calc(100vh - 8px);
+    overflow: auto;
   }
   .content {
     max-width: 900px;
