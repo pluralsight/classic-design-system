@@ -75,6 +75,27 @@
   background: var(--psColorsGray04);
 }
 
+/* disabled */
+.ps-button--disabled {
+  color: var(--psColorsGray02);
+}
+.ps-button--disabled:hover {
+  color: var(--psColorsGray02);
+}
+.ps-button--disabled.ps-button--stroke {
+  border: none;
+}
+.ps-button--disabled:not(.ps-button--flat) {
+  background: var(--psColorsGray03);
+}
+.ps-button--disabled.ps-button--flat {
+  opacity: 0.4;
+}
+.ps-button--disabled.ps-button--flat:hover {
+  color: var(--psColorsGray02);
+  background: none;
+}
+
 /* icon and iconAlign */
 .ps-button--icon-align-right {
   flex-direction: row-reverse;
@@ -114,25 +135,16 @@
 .ps-button--flat:hover .ps-icon__fg--stroke {
   stroke: var(--psColorsWhite);
 }
+.ps-button--disabled .ps-icon__fg--fill {
+  fill: var(--psColorsGray02);
+}
+.ps-button--disabled .ps-icon__fg--stroke {
+  stroke: var(--psColorsGray02);
+}
 .ps-button--icon-align-right .ps-button__icon {
   margin-right: 0;
   margin-left: var(--psLayoutSpacingExtraSmall);
 }
 .ps-button--icon-only .ps-button__icon {
   margin: 0;
-}
-
-/* disabled */
-.ps-button--disabled {
-  color: var(--psColorsGray02);
-}
-.ps-button--disabled:not(.ps-button--flat) {
-  background: var(--psColorsGray03);
-}
-.ps-button--disabled.ps-button--flat {
-  opacity: 0.4;
-}
-.ps-button--disabled.ps-button--flat:hover {
-  color: var(--psColorsGray02);
-  background: none;
 }

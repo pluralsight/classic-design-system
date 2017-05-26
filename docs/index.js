@@ -22167,7 +22167,14 @@ object-assign
               name: 'Button',
               permutations: [
                 { disabled: true },
-                { disabled: true, appearance: 'flat' }
+                { disabled: true, appearance: 'flat' },
+                {
+                  disabled: true,
+                  exampleIcon: '{<Icon id="logo" />}',
+                  icon: _react2.default.createElement(_react6.default, {
+                    id: 'logo'
+                  })
+                }
               ]
             })
           )
@@ -22922,12 +22929,12 @@ object-assign
           'ps-button--large': 'ps-button--large___1zAYp',
           'ps-button--stroke': 'ps-button--stroke___2-hZL',
           'ps-button--flat': 'ps-button--flat___3IG4H',
+          'ps-button--disabled': 'ps-button--disabled___2IvkE',
           'ps-button--icon-align-right': 'ps-button--icon-align-right___1H91Q',
           'ps-button__icon': 'ps-button__icon___3o9gL',
           'ps-icon__fg--fill': 'ps-icon__fg--fill___2t5_8',
           'ps-icon__fg--stroke': 'ps-icon__fg--stroke___2ym0E',
-          'ps-button--icon-only': 'ps-button--icon-only___1iOv7',
-          'ps-button--disabled': 'ps-button--disabled___2IvkE'
+          'ps-button--icon-only': 'ps-button--icon-only___1iOv7'
         }
 
         /***/

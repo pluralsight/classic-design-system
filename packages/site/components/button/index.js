@@ -103,7 +103,12 @@ export default styleable(css)(props => {
         name="Button"
         permutations={[
           { disabled: true },
-          { disabled: true, appearance: 'flat' }
+          { disabled: true, appearance: 'flat' },
+          {
+            disabled: true,
+            exampleIcon: '{<Icon id="logo" />}',
+            icon: <Icon id="logo" />
+          }
         ]}
       />
     </div>
