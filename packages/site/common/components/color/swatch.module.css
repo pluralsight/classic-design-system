@@ -1,0 +1,30 @@
+@import "@pluralsight/ps-design-system-core";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  width: 150px;
+  padding: var(--psLayoutSpacingExtraSmall);
+  margin: 0 var(--psLayoutSpacingLarge) var(--psLayoutSpacingLarge) 0;
+}
+.rootLight {
+  composes: root;
+  border: 1px solid var(--psColorsGray01);
+}
+.rootDark {
+  composes: root;
+}
+.hex,
+.var {
+  white-space: nowrap;
+}
+.rootLight .hex,
+.rootLight .var {
+  color: var(--psColorsGray05);
+}
+.rootDark .hex,
+.rootDark .var {
+  color: var(--psColorsWhite);
+}

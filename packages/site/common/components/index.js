@@ -1,5 +1,6 @@
 export Code from './code'
 export CodeOutput from './code-output'
+export Color from './color'
 export Example from './example'
 export Heading from './heading'
 export Link from './link'

@@ -5,12 +5,14 @@ import ReactDOMServer from 'react-dom/server'
 
 import Chrome from './layouts/chrome'
 import ComponentDetail from './components/detail'
+import FoundationDetail from './foundation/detail'
 import Home from './home'
 import './index.module.css'
 
 const routes = (
   <div>
     <Route exact path="/" component={Home} />
+    <Route path="/foundations/:foundationId/" component={FoundationDetail} />
     <Route path="/components/:componentId/" component={ComponentDetail} />
   </div>
 )

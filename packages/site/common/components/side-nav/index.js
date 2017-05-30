@@ -11,6 +11,10 @@ export default styleable(css)(props => (
   <nav className={props.css.root}>
     <Logo />
     <Group>
+      <GroupTitle>FOUNDATIONS</GroupTitle>
+      <Link href="/foundations/color">Color</Link>
+    </Group>
+    <Group>
       <GroupTitle>COMPONENTS</GroupTitle>
       <Link href="/components/installation">Installation</Link>
       <Link href="/components/button">Buttons</Link>
