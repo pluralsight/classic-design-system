@@ -1,13 +1,11 @@
 @import "@pluralsight/ps-design-system-core";
 
 .root {
+  flex: 0 0 auto;
   display: flex;
-  flex: 1;
+  width: calc(50% - (2 * var(--psLayoutSpacingLarge)));
   height: 120px;
   padding: var(--psLayoutSpacingLarge) var(--psLayoutSpacingSmall);
-}
-.root + .root {
-  margin-left: var(--psLayoutSpacingLarge);
 }
 .label {
   color: var(--psColorsWhite);

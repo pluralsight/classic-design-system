@@ -732,9 +732,98 @@
 }
 .code___TUlcA {
   background: none;
-}.root___23TJa {
+}:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
+  /* role colors */
+  --psColorsRoleYellowLighter: #fd39bc;
+  --psColorsRoleYellowLight: #fbcd64;
+  --psColorsRoleYellow: #f8b721;
+  --psColorsRoleYellowDark: #ae8017;
+  --psColorsRoleYellowDarker: #7c5b12;
+}
+:root {
+  /* spacing */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXl: 40px;
+  --psLayoutSpacingXxl: 56px;
+}
+:root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+  /* font size */
+  --psTypeFontSizeGigantic: 60px;
+  --psTypeFontSizeXxxl: 48px;
+  --psTypeFontSizeXxl: 36px;
+  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeLarge: 24px;
+  --psTypeFontSizeMedium: 18px;
+  --psTypeFontSizeSmall: 14px;
+  --psTypeFontSizeExtraSmall: 12px;
+
+  /* letter spacing */
+  --psTypeLetterSpacingGigantic: -1px;
+  --psTypeLetterSpacingXxxl: -0.72px;
+  --psTypeLetterSpacingXxl: -0.54px;
+  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingLarge: 0.36px;
+  --psTypeLetterSpacingMedium: 0;
+  --psTypeLetterSpacingSmall: 0;
+  --psTypeLetterSpacingExtraSmall: 0;
+
+  /* font weight */
+  --psTypeFontWeightBold: 700;
+  --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightBook: 400;
+  --psTypeFontWeightLight: 300;
+  --psTypeFontWeightExtraLight: 200;
+
+  /* line height */
+  --psTypeLineHeightTight: 20px;
+  --psTypeLineHeightStandard: 24px;
+  --psTypeLineHeightExtra: 32px;
+  --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
+.root___23TJa {
   display: flex;
   flex-wrap: wrap;
+  margin: calc(-0.5 * var(--psLayoutSpacingLarge)) calc(-0.5 * var(--psLayoutSpacingLarge));
+}
+.root___23TJa > div {
+  margin: calc(var(--psLayoutSpacingLarge) / 2);
 }:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
@@ -827,7 +916,6 @@
   height: 120px;
   width: 150px;
   padding: var(--psLayoutSpacingSmall);
-  margin: 0 var(--psLayoutSpacingLarge) var(--psLayoutSpacingLarge) 0;
 }
 .rootLight___3s0lB {
   border: 1px solid var(--psColorsGray01);
@@ -934,13 +1022,11 @@
   --psMotionSpeedSlowest: 300ms;
 }
 .root___3w_5r {
+  flex: 0 0 auto;
   display: flex;
-  flex: 1;
+  width: calc(50% - (2 * var(--psLayoutSpacingLarge)));
   height: 120px;
   padding: var(--psLayoutSpacingLarge) var(--psLayoutSpacingSmall);
-}
-.root___3w_5r + .root___3w_5r {
-  margin-left: var(--psLayoutSpacingLarge);
 }
 .label___3-G72 {
   color: var(--psColorsWhite);
