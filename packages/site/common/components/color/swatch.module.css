@@ -6,7 +6,7 @@
   justify-content: center;
   height: 120px;
   width: 150px;
-  padding: var(--psLayoutSpacingExtraSmall);
+  padding: var(--psLayoutSpacingSmall);
   margin: 0 var(--psLayoutSpacingLarge) var(--psLayoutSpacingLarge) 0;
 }
 .rootLight {

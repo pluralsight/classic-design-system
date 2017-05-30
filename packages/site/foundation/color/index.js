@@ -4,6 +4,7 @@ import styleable from 'react-styleable'
 
 import { Code, Example, Heading, P, Link } from '../../common/components'
 import css from './index.module.css'
+import GradientColors from './gradient'
 import GrayscaleColors from './grayscale'
 import UiColors from './ui'
 
@@ -21,6 +22,12 @@ export default styleable(css)(props => {
         UI colors emphasize interface elements such as buttons, links, accents and vizualization.
       </P>
       <UiColors />
+
+      <Heading.Large>Gradient</Heading.Large>
+      <P>
+        So fresh. Use the standard gradient to emphasize and showcase the brand. Use sparingly.
+      </P>
+      <GradientColors />
 
     </div>
   )

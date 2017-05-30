@@ -22542,6 +22542,10 @@ object-assign
 
         var _indexModule2 = _interopRequireDefault(_indexModule)
 
+        var _gradient = __webpack_require__(554)
+
+        var _gradient2 = _interopRequireDefault(_gradient)
+
         var _grayscale = __webpack_require__(541)
 
         var _grayscale2 = _interopRequireDefault(_grayscale)
@@ -22586,7 +22590,18 @@ object-assign
               null,
               'UI colors emphasize interface elements such as buttons, links, accents and vizualization.'
             ),
-            _react2.default.createElement(_ui2.default, null)
+            _react2.default.createElement(_ui2.default, null),
+            _react2.default.createElement(
+              _components.Heading.Large,
+              null,
+              'Gradient'
+            ),
+            _react2.default.createElement(
+              _components.P,
+              null,
+              'So fresh. Use the standard gradient to emphasize and showcase the brand. Use sparingly.'
+            ),
+            _react2.default.createElement(_gradient2.default, null)
           )
         })
 
@@ -60906,6 +60921,14 @@ https://highlightjs.org/
 
         var _swatch2 = _interopRequireDefault(_swatch)
 
+        var _horzGradient = __webpack_require__(552)
+
+        var _horzGradient2 = _interopRequireDefault(_horzGradient)
+
+        var _vertGradient = __webpack_require__(553)
+
+        var _vertGradient2 = _interopRequireDefault(_vertGradient)
+
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
         }
@@ -60923,7 +60946,9 @@ https://highlightjs.org/
               _swatch2.default,
               _extends({}, props, { dark: false })
             )
-          }
+          },
+          HorzGradient: _horzGradient2.default,
+          VertGradient: _vertGradient2.default
         }
 
         /***/
@@ -60997,7 +61022,7 @@ https://highlightjs.org/
             'div',
             {
               className: props.dark ? props.css.rootDark : props.css.rootLight,
-              style: { 'background-color': '#' + props.hex }
+              style: { backgroundColor: '#' + props.hex }
             },
             _react2.default.createElement(
               'div',
@@ -61007,7 +61032,7 @@ https://highlightjs.org/
             _react2.default.createElement(
               'div',
               { className: props.css.var },
-              '--psColors',
+              'psColors',
               props.var
             )
           )
@@ -61076,7 +61101,7 @@ https://highlightjs.org/
               var: 'Pink'
             }),
             _react2.default.createElement(_components.Color.DarkSwatch, {
-              hex: 'AAAAAA',
+              hex: 'DE3636',
               var: 'Red'
             }),
             _react2.default.createElement(_components.Color.DarkSwatch, {
@@ -61104,6 +61129,211 @@ https://highlightjs.org/
               var: 'Blue'
             })
           )
+        }
+
+        /***/
+      },
+      /* 552 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+
+        var _react = __webpack_require__(2)
+
+        var _react2 = _interopRequireDefault(_react)
+
+        var _reactStyleable = __webpack_require__(7)
+
+        var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
+
+        var _horzGradientModule = __webpack_require__(558)
+
+        var _horzGradientModule2 = _interopRequireDefault(_horzGradientModule)
+
+        var _propTypes = __webpack_require__(8)
+
+        var _propTypes2 = _interopRequireDefault(_propTypes)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        var VertGradient = (0, _reactStyleable2.default)(
+          _horzGradientModule2.default
+        )(function(props) {
+          return _react2.default.createElement(
+            'div',
+            {
+              className: props.css.root,
+              style: {
+                background: 'linear-gradient(to right, #' +
+                  props.start +
+                  ', #' +
+                  props.stop +
+                  ')'
+              }
+            },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'div',
+                { className: props.css.start },
+                props.start
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: props.css.var },
+                'psColorsGradientHorz'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: props.css.stop },
+              props.stop
+            )
+          )
+        })
+
+        VertGradient.propTypes = {
+          start: _propTypes2.default.string.isRequired,
+          stop: _propTypes2.default.string.isRequired
+        }
+
+        exports.default = VertGradient
+
+        /***/
+      },
+      /* 553 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+
+        var _react = __webpack_require__(2)
+
+        var _react2 = _interopRequireDefault(_react)
+
+        var _reactStyleable = __webpack_require__(7)
+
+        var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
+
+        var _vertGradientModule = __webpack_require__(559)
+
+        var _vertGradientModule2 = _interopRequireDefault(_vertGradientModule)
+
+        var _propTypes = __webpack_require__(8)
+
+        var _propTypes2 = _interopRequireDefault(_propTypes)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        var VertGradient = (0, _reactStyleable2.default)(
+          _vertGradientModule2.default
+        )(function(props) {
+          return _react2.default.createElement(
+            'div',
+            {
+              className: props.css.root,
+              style: {
+                background: 'linear-gradient(to bottom, #' +
+                  props.start +
+                  ', #' +
+                  props.stop +
+                  ')'
+              }
+            },
+            _react2.default.createElement(
+              'div',
+              { className: props.css.start },
+              props.start
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: props.css.var },
+              'psColorsGradientVert'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: props.css.stop },
+              props.stop
+            )
+          )
+        })
+
+        VertGradient.propTypes = {
+          start: _propTypes2.default.string.isRequired,
+          stop: _propTypes2.default.string.isRequired
+        }
+
+        exports.default = VertGradient
+
+        /***/
+      },
+      /* 554 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+
+        var _react = __webpack_require__(2)
+
+        var _react2 = _interopRequireDefault(_react)
+
+        var _components = __webpack_require__(43)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        exports.default = function(props) {
+          return _react2.default.createElement(
+            _components.Color.Palette,
+            null,
+            _react2.default.createElement(_components.Color.HorzGradient, {
+              start: 'F05A28',
+              stop: 'E80A89',
+              var: 'Horz'
+            }),
+            _react2.default.createElement(_components.Color.VertGradient, {
+              start: 'F05A28',
+              stop: 'E80A89',
+              var: 'Vert'
+            })
+          )
+        }
+
+        /***/
+      },
+      ,
+      ,
+      ,
+      /* 555 */ /* 556 */ /* 557 */ /* 558 */
+      /***/ function(module, exports) {
+        // removed by extract-text-webpack-plugin
+        module.exports = {
+          root: 'root___Ri5mE root___3w_5r',
+          start: 'start___2Qlta label___3-G72',
+          stop: 'stop___Y3mh1 label___3-G72',
+          var: 'var___3uinq label___3-G72 var___2f9O6'
+        }
+
+        /***/
+      },
+      /* 559 */
+      /***/ function(module, exports) {
+        // removed by extract-text-webpack-plugin
+        module.exports = {
+          root: 'root___2s3O1 root___3w_5r',
+          start: 'start___31UKH label___3-G72',
+          stop: 'stop___3XZK1 label___3-G72',
+          var: 'var___7zF_L label___3-G72 var___2f9O6'
         }
 
         /***/

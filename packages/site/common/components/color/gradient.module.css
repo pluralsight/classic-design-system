@@ -1,0 +1,18 @@
+@import "@pluralsight/ps-design-system-core";
+
+.root {
+  display: flex;
+  flex: 1;
+  height: 120px;
+  padding: var(--psLayoutSpacingLarge) var(--psLayoutSpacingSmall);
+}
+.root + .root {
+  margin-left: var(--psLayoutSpacingLarge);
+}
+.label {
+  color: var(--psColorsWhite);
+  white-space: nowrap;
+}
+.var {
+  opacity: 0.75;
+}
