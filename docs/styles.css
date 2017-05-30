@@ -838,6 +838,9 @@
 .var___1N2ZH {
   white-space: nowrap;
 }
+.var___1N2ZH {
+  opacity: 0.75;
+}
 .rootLight___3s0lB .hex___ycjB8,
 .rootLight___3s0lB .var___1N2ZH {
   color: var(--psColorsGray05);

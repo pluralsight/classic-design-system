@@ -5,6 +5,7 @@ import styleable from 'react-styleable'
 import { Code, Example, Heading, P, Link } from '../../common/components'
 import css from './index.module.css'
 import GrayscaleColors from './grayscale'
+import UiColors from './ui'
 
 export default styleable(css)(props => {
   return (
@@ -14,6 +15,12 @@ export default styleable(css)(props => {
       <Heading.Large>Grayscale colors</Heading.Large>
       <P>Grayscale colors are used for containers, text, lines and borders.</P>
       <GrayscaleColors />
+
+      <Heading.Large>UI colors</Heading.Large>
+      <P>
+        UI colors emphasize interface elements such as buttons, links, accents and vizualization.
+      </P>
+      <UiColors />
 
     </div>
   )

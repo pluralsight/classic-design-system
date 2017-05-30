@@ -20,6 +20,9 @@
 .var {
   white-space: nowrap;
 }
+.var {
+  opacity: 0.75;
+}
 .rootLight .hex,
 .rootLight .var {
   color: var(--psColorsGray05);

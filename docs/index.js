@@ -22546,6 +22546,10 @@ object-assign
 
         var _grayscale2 = _interopRequireDefault(_grayscale)
 
+        var _ui = __webpack_require__(551)
+
+        var _ui2 = _interopRequireDefault(_ui)
+
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
         }
@@ -22571,7 +22575,18 @@ object-assign
               null,
               'Grayscale colors are used for containers, text, lines and borders.'
             ),
-            _react2.default.createElement(_grayscale2.default, null)
+            _react2.default.createElement(_grayscale2.default, null),
+            _react2.default.createElement(
+              _components.Heading.Large,
+              null,
+              'UI colors'
+            ),
+            _react2.default.createElement(
+              _components.P,
+              null,
+              'UI colors emphasize interface elements such as buttons, links, accents and vizualization.'
+            ),
+            _react2.default.createElement(_ui2.default, null)
           )
         })
 
@@ -61027,6 +61042,68 @@ https://highlightjs.org/
           rootDark: 'rootDark___jXjZX root___2J8uO',
           hex: 'hex___ycjB8',
           var: 'var___1N2ZH'
+        }
+
+        /***/
+      },
+      ,
+      ,
+      ,
+      ,
+      /* 547 */ /* 548 */ /* 549 */ /* 550 */ /* 551 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+
+        var _react = __webpack_require__(2)
+
+        var _react2 = _interopRequireDefault(_react)
+
+        var _components = __webpack_require__(43)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        exports.default = function(props) {
+          return _react2.default.createElement(
+            _components.Color.Palette,
+            null,
+            _react2.default.createElement(_components.Color.DarkSwatch, {
+              hex: 'E80A89',
+              var: 'Pink'
+            }),
+            _react2.default.createElement(_components.Color.DarkSwatch, {
+              hex: 'AAAAAA',
+              var: 'Red'
+            }),
+            _react2.default.createElement(_components.Color.DarkSwatch, {
+              hex: 'F96816',
+              var: 'Orange'
+            }),
+            _react2.default.createElement(_components.Color.DarkSwatch, {
+              hex: 'FF7B39',
+              var: 'OrangeLight'
+            }),
+            _react2.default.createElement(_components.Color.DarkSwatch, {
+              hex: 'FFC200',
+              var: 'Yellow'
+            }),
+            _react2.default.createElement(_components.Color.DarkSwatch, {
+              hex: '86CE21',
+              var: 'GreenLight'
+            }),
+            _react2.default.createElement(_components.Color.DarkSwatch, {
+              hex: '23AA5A',
+              var: 'Green'
+            }),
+            _react2.default.createElement(_components.Color.DarkSwatch, {
+              hex: '137BC2',
+              var: 'Blue'
+            })
+          )
         }
 
         /***/
