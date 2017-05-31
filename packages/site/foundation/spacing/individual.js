@@ -1,12 +1,26 @@
 import React from 'react'
 
-import Spacing from '../../common/components/spacing'
+import { Example, Spacing } from '../../common/components'
+
+const increments = [
+  { side: 'top', attrName: 'margin-top' },
+  { side: 'right', attrName: 'margin-right' },
+  { side: 'bottom', attrName: 'margin-bottom' },
+  { side: 'left', attrName: 'margin-left' }
+]
 
 export default props => (
-  <Spacing.Parent>
-    <Spacing.Example width={24} sides="top" />
-    <Spacing.Example width={24} sides="right" />
-    <Spacing.Example width={24} sides="bottom" />
-    <Spacing.Example width={24} sides="left" />
-  </Spacing.Parent>
+  <Example.CssVar
+    output={
+      <Spacing.Parent>
+        {increments.map((x, i) => (
+          <Spacing.Example key={i} width={24} sides={x.side} />
+        ))}
+      </Spacing.Parent>
+    }
+    attributes={increments.map(x => ({
+      varName: 'psLayoutSpacingLarge',
+      attrName: x.attrName
+    }))}
+  />
 )

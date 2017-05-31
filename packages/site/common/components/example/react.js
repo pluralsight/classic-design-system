@@ -14,7 +14,7 @@ const filterNonExampleProps = permutation =>
     return acc
   }, {})
 
-class Example extends React.Component {
+class ReactExample extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -70,14 +70,14 @@ class Example extends React.Component {
     )
   }
 }
-Example.propTypes = {
+ReactExample.propTypes = {
   component: PropTypes.element.isRequired,
   name: PropTypes.string,
   permutations: PropTypes.arrayOf(PropTypes.object)
 }
-Example.defaultProps = {
+ReactExample.defaultProps = {
   name: 'Component',
   permutations: [{}]
 }
 
-export default styleable(css)(Example)
+export default styleable(css)(ReactExample)

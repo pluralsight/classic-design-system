@@ -1,0 +1,16 @@
+@import "@pluralsight/ps-design-system-core";
+
+.root {
+}
+.output {
+  margin-bottom: var(--psLayoutSpacingLarge);
+}
+.src {
+  padding: var(--psLayoutSpacingLarge);
+  background: var(--psColorsGray04);
+}
+.css
+ {
+  background: none;
+  padding: 0;
+}

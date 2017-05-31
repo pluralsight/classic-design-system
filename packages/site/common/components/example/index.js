@@ -1,7 +1,7 @@
-import Css from './css'
+import CssVar from './css-var'
 import React from './react'
 
 export default {
-  Css,
+  CssVar,
   React
 }
