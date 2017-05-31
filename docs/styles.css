@@ -2358,7 +2358,235 @@
 .root___STF9s {
 
 }
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
+  /* role colors */
+  --psColorsRoleYellowLighter: #fd39bc;
+  --psColorsRoleYellowLight: #fbcd64;
+  --psColorsRoleYellow: #f8b721;
+  --psColorsRoleYellowDark: #ae8017;
+  --psColorsRoleYellowDarker: #7c5b12;
+}
+:root {
+  /* spacing */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXl: 40px;
+  --psLayoutSpacingXxl: 56px;
+}
+:root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+  /* font size */
+  --psTypeFontSizeGigantic: 60px;
+  --psTypeFontSizeXxxl: 48px;
+  --psTypeFontSizeXxl: 36px;
+  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeLarge: 24px;
+  --psTypeFontSizeMedium: 18px;
+  --psTypeFontSizeSmall: 14px;
+  --psTypeFontSizeExtraSmall: 12px;
+
+  /* letter spacing */
+  --psTypeLetterSpacingGigantic: -1px;
+  --psTypeLetterSpacingXxxl: -0.72px;
+  --psTypeLetterSpacingXxl: -0.54px;
+  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingLarge: 0.36px;
+  --psTypeLetterSpacingMedium: 0;
+  --psTypeLetterSpacingSmall: 0;
+  --psTypeLetterSpacingExtraSmall: 0;
+
+  /* font weight */
+  --psTypeFontWeightBold: 700;
+  --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightBook: 400;
+  --psTypeFontWeightLight: 300;
+  --psTypeFontWeightExtraLight: 200;
+
+  /* line height */
+  --psTypeLineHeightTight: 20px;
+  --psTypeLineHeightStandard: 24px;
+  --psTypeLineHeightExtra: 32px;
+  --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
+.root___2qu9_ {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(-0.5 * var(--psLayoutSpacingLarge)) calc(-0.5 * var(--psLayoutSpacingLarge));
+}:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
+  /* role colors */
+  --psColorsRoleYellowLighter: #fd39bc;
+  --psColorsRoleYellowLight: #fbcd64;
+  --psColorsRoleYellow: #f8b721;
+  --psColorsRoleYellowDark: #ae8017;
+  --psColorsRoleYellowDarker: #7c5b12;
+}
+:root {
+  /* spacing */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXl: 40px;
+  --psLayoutSpacingXxl: 56px;
+}
+:root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+  /* font size */
+  --psTypeFontSizeGigantic: 60px;
+  --psTypeFontSizeXxxl: 48px;
+  --psTypeFontSizeXxl: 36px;
+  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeLarge: 24px;
+  --psTypeFontSizeMedium: 18px;
+  --psTypeFontSizeSmall: 14px;
+  --psTypeFontSizeExtraSmall: 12px;
+
+  /* letter spacing */
+  --psTypeLetterSpacingGigantic: -1px;
+  --psTypeLetterSpacingXxxl: -0.72px;
+  --psTypeLetterSpacingXxl: -0.54px;
+  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingLarge: 0.36px;
+  --psTypeLetterSpacingMedium: 0;
+  --psTypeLetterSpacingSmall: 0;
+  --psTypeLetterSpacingExtraSmall: 0;
+
+  /* font weight */
+  --psTypeFontWeightBold: 700;
+  --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightBook: 400;
+  --psTypeFontWeightLight: 300;
+  --psTypeFontWeightExtraLight: 200;
+
+  /* line height */
+  --psTypeLineHeightTight: 20px;
+  --psTypeLineHeightStandard: 24px;
+  --psTypeLineHeightExtra: 32px;
+  --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
+.root___yY542 {
+  margin: calc(var(--psLayoutSpacingLarge) / 2);
+}
+.box___1RhKO {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background: #C6E0F2; /* TODO: color from design system? */
+}
+.border___27M56 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-color: rgba(42, 147, 219, 0.35); /* TODO: pull color out of DS? */
+  border-width: 0;
+}
+.line___Imr80 {
+  position: absolute;
+  border-style: dashed;
+  border-color: #FF00CE;
+  border-width: 0;
+}
+.lineTop___K4eIH {
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom-width: 1px;
+}
+.lineRight___R5ITb {
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-left-width: 1px;
+}
+.lineBottom___1bW80 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top-width: 1px;
+}
+.lineLeft___3KlQx {
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-right-width: 1px;
+}
+.label___2fKTV {
+  margin-top: var(--psLayoutSpacingTiny);
+  font-size: var(--psTypeFontSizeExtraSmall);
+  font-weight: var(--psTypeFontWeightBook);
+  line-height: var(--psTypeLineHeightTight);
+}/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
