@@ -26,6 +26,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "camelize": "^1.0.0",
+    "classnames": "^2.2.5",
     "concurrently": "^3.4.0",
     "css-loader": "^0.28.0",
     "eval": "^0.1.2",

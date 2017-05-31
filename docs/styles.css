@@ -2548,7 +2548,7 @@
   height: 100%;
   width: 100%;
   border-style: solid;
-  border-color: rgba(42, 147, 219, 0.35); /* TODO: pull color out of DS? */
+  border-color: #8FC4E9;
   border-width: 0;
 }
 .line___Imr80 {
@@ -2556,6 +2556,9 @@
   border-style: dashed;
   border-color: #FF00CE;
   border-width: 0;
+}
+.lineSingleSide___TwjMg {
+  background: #8FC4E9;
 }
 .lineTop___K4eIH {
   top: 0;

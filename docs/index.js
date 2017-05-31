@@ -23191,12 +23191,12 @@ object-assign
             _react2.default.createElement(
               _components.Heading.Large,
               null,
-              'Spacing increments'
+              'Individual spacing'
             ),
             _react2.default.createElement(
               _components.P,
               null,
-              'Spacing can be applied using margin or padding. There are 7 available spacing sizes. Both margin and padding share the same predefined scale.'
+              'Individual spacing can be applied to a singe side of an element. Both margin and padding share the same predefined scale. The same 7 sizes are available.'
             ),
             _react2.default.createElement(_individual2.default, null)
           )
@@ -61479,6 +61479,10 @@ https://highlightjs.org/
           value: true
         })
 
+        var _classnames2 = __webpack_require__(572)
+
+        var _classnames3 = _interopRequireDefault(_classnames2)
+
         var _react = __webpack_require__(1)
 
         var _react2 = _interopRequireDefault(_react)
@@ -61521,16 +61525,27 @@ https://highlightjs.org/
           return side === 'left' || side === 'right' ? 'width' : 'height'
         }
 
-        var renderSingleLine = function renderSingleLine(props, side) {
-          var i = arguments.length > 2 && arguments[2] !== undefined
-            ? arguments[2]
-            : -1
+        var renderSingleLine = function renderSingleLine(props, side, i) {
+          var _classnames
+
+          var className = (0, _classnames3.default)(
+            ((_classnames = {}), _defineProperty(
+              _classnames,
+              props.css.lineSingleSide,
+              props.sides !== 'all'
+            ), _defineProperty(
+              _classnames,
+              props.css[
+                'line' + _psDesignSystemUtil2.default.string.capitalize(side)
+              ],
+              true
+            ), _classnames)
+          )
+
           return _react2.default.createElement('div', {
             style: _defineProperty({}, dimension(side), props.width),
             key: i,
-            className: props.css[
-              'line' + _psDesignSystemUtil2.default.string.capitalize(side)
-            ]
+            className: className
           })
         }
 
@@ -61543,14 +61558,16 @@ https://highlightjs.org/
         var renderLines = function renderLines(props) {
           return props.sides === 'all'
             ? renderAllLines(props)
-            : renderSingleLine(props, props.side)
+            : renderSingleLine(props, props.sides)
         }
 
         var renderBorder = function renderBorder(props) {
-          return _react2.default.createElement('div', {
-            style: { borderWidth: props.width },
-            className: props.css.border
-          })
+          return props.sides === 'all'
+            ? _react2.default.createElement('div', {
+                style: { borderWidth: props.width },
+                className: props.css.border
+              })
+            : null
         }
 
         var renderLabel = function renderLabel(props) {
@@ -61666,6 +61683,7 @@ https://highlightjs.org/
           box: 'box___1RhKO',
           border: 'border___27M56',
           line: 'line___Imr80',
+          lineSingleSide: 'lineSingleSide___TwjMg line___Imr80',
           lineTop: 'lineTop___K4eIH line___Imr80',
           lineRight: 'lineRight___R5ITb line___Imr80',
           lineBottom: 'lineBottom___1bW80 line___Imr80',
@@ -61729,6 +61747,63 @@ https://highlightjs.org/
             })
           )
         }
+
+        /***/
+      },
+      /* 572 */
+      /***/ function(module, exports, __webpack_require__) {
+        var __WEBPACK_AMD_DEFINE_ARRAY__,
+          __WEBPACK_AMD_DEFINE_RESULT__ /*!
+  Copyright (c) 2016 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+        /* global define */
+
+        ;(function() {
+          'use strict'
+          var hasOwn = {}.hasOwnProperty
+
+          function classNames() {
+            var classes = []
+
+            for (var i = 0; i < arguments.length; i++) {
+              var arg = arguments[i]
+              if (!arg) continue
+
+              var argType = typeof arg
+
+              if (argType === 'string' || argType === 'number') {
+                classes.push(arg)
+              } else if (Array.isArray(arg)) {
+                classes.push(classNames.apply(null, arg))
+              } else if (argType === 'object') {
+                for (var key in arg) {
+                  if (hasOwn.call(arg, key) && arg[key]) {
+                    classes.push(key)
+                  }
+                }
+              }
+            }
+
+            return classes.join(' ')
+          }
+
+          if (typeof module !== 'undefined' && module.exports) {
+            module.exports = classNames
+          } else if (true) {
+            // register as 'classnames', consistent with npm package name
+            !((__WEBPACK_AMD_DEFINE_ARRAY__ = []), (__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+              return classNames
+            }.apply(
+              exports,
+              __WEBPACK_AMD_DEFINE_ARRAY__
+            )), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined &&
+              (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))
+          } else {
+            window.classNames = classNames
+          }
+        })()
 
         /***/
       }

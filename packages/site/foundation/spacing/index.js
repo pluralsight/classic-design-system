@@ -15,9 +15,9 @@ export default props => (
     </P>
     <SpacingIncrements />
 
-    <Heading.Large>Spacing increments</Heading.Large>
+    <Heading.Large>Individual spacing</Heading.Large>
     <P>
-      Spacing can be applied using margin or padding. There are 7 available spacing sizes. Both margin and padding share the same predefined scale.
+      Individual spacing can be applied to a singe side of an element. Both margin and padding share the same predefined scale. The same 7 sizes are available.
     </P>
     <IndividualSpacing />
   </div>

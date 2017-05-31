@@ -1,3 +1,4 @@
+import classnames from 'classnames'
 import React from 'react'
 import styleable from 'react-styleable'
 
@@ -7,13 +8,20 @@ import util from '@pluralsight/ps-design-system-util'
 const dimension = side =>
   side === 'left' || side === 'right' ? 'width' : 'height'
 
-const renderSingleLine = (props, side, i = -1) => (
-  <div
-    style={{ [dimension(side)]: props.width }}
-    key={i}
-    className={props.css['line' + util.string.capitalize(side)]}
-  />
-)
+const renderSingleLine = (props, side, i) => {
+  const className = classnames({
+    [props.css.lineSingleSide]: props.sides !== 'all',
+    [props.css['line' + util.string.capitalize(side)]]: true
+  })
+
+  return (
+    <div
+      style={{ [dimension(side)]: props.width }}
+      key={i}
+      className={className}
+    />
+  )
+}
 
 const renderAllLines = props =>
   ['top', 'right', 'bottom', 'left'].map(renderSingleLine.bind(this, props))
@@ -21,11 +29,12 @@ const renderAllLines = props =>
 const renderLines = props =>
   props.sides === 'all'
     ? renderAllLines(props)
-    : renderSingleLine(props, props.side)
+    : renderSingleLine(props, props.sides)
 
-const renderBorder = props => (
-  <div style={{ borderWidth: props.width }} className={props.css.border} />
-)
+const renderBorder = props =>
+  props.sides === 'all'
+    ? <div style={{ borderWidth: props.width }} className={props.css.border} />
+    : null
 
 const renderLabel = props =>
   props.label
