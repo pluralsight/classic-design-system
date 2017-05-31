@@ -21272,6 +21272,10 @@ object-assign
           value: true
         })
 
+        var _css = __webpack_require__(570)
+
+        var _css2 = _interopRequireDefault(_css)
+
         var _react = __webpack_require__(172)
 
         var _react2 = _interopRequireDefault(_react)
@@ -21281,6 +21285,7 @@ object-assign
         }
 
         exports.default = {
+          Css: _css2.default,
           React: _react2.default
         }
 
@@ -21292,7 +21297,6 @@ object-assign
         Object.defineProperty(exports, '__esModule', {
           value: true
         })
-        exports.formatHtml = undefined
 
         var _createClass = (function() {
           function defineProperties(target, props) {
@@ -21323,10 +21327,6 @@ object-assign
 
         var _react2 = _interopRequireDefault(_react)
 
-        var _server = __webpack_require__(83)
-
-        var _server2 = _interopRequireDefault(_server)
-
         var _reactStyleable = __webpack_require__(5)
 
         var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
@@ -21335,13 +21335,17 @@ object-assign
 
         var _reactModule2 = _interopRequireDefault(_reactModule)
 
+        var _formatReact = __webpack_require__(573)
+
+        var _formatReact2 = _interopRequireDefault(_formatReact)
+
+        var _formatReactToHtml = __webpack_require__(574)
+
+        var _formatReactToHtml2 = _interopRequireDefault(_formatReactToHtml)
+
         var _srcSwitcher = __webpack_require__(173)
 
         var _srcSwitcher2 = _interopRequireDefault(_srcSwitcher)
-
-        var _psDesignSystemUtil = __webpack_require__(44)
-
-        var _psDesignSystemUtil2 = _interopRequireDefault(_psDesignSystemUtil)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -21387,128 +21391,6 @@ object-assign
             Object.setPrototypeOf
               ? Object.setPrototypeOf(subClass, superClass)
               : (subClass.__proto__ = superClass)
-        }
-
-        var rmCssModuleHashes = function rmCssModuleHashes(src) {
-          return src.replace(/___\S{5}/g, '')
-        }
-
-        var toHtml = function toHtml(reactElement) {
-          return _server2.default.renderToStaticMarkup(reactElement)
-        }
-
-        var formatHtml = (exports.formatHtml = function formatHtml(str) {
-          if (!str) return ''
-
-          var tabs = function tabs(count) {
-            return '  '.repeat(count)
-          }
-
-          var formatTag = function formatTag(bit) {
-            return '<' + bit + '>'
-          }
-
-          var stripTag = function stripTag(bit) {
-            return bit.replace(/^<?([^<>]+)>?$/, '$1')
-          }
-
-          var isClosingTag = function isClosingTag(bit) {
-            return bit[0] === '/'
-          }
-
-          var isSelfClosingTag = function isSelfClosingTag(bit) {
-            return bit[bit.length - 1] === '/'
-          }
-
-          var isTagClosingOverText = function isTagClosingOverText(bit) {
-            return bit.match(/<\//)
-          }
-
-          var depth = 0
-          return str.split('><').map(stripTag).reduce(function(html, bit) {
-            if (isClosingTag(bit)) {
-              --depth
-              html += '\n' + tabs(depth) + formatTag(bit)
-            } else {
-              html += (html ? '\n' : '') + tabs(depth) + formatTag(bit)
-
-              if (!isSelfClosingTag(bit) && !isTagClosingOverText(bit)) ++depth
-            }
-            return html
-          }, '')
-        })
-
-        var renderHtmlSrc = function renderHtmlSrc(component, permutation) {
-          return formatHtml(
-            rmCssModuleHashes(
-              toHtml(_react2.default.cloneElement(component, permutation))
-            )
-          )
-        }
-
-        var renderHtmlSources = function renderHtmlSources(
-          component,
-          permutations
-        ) {
-          return permutations
-            .map(function(p) {
-              return renderHtmlSrc(component, p)
-            })
-            .join('\n')
-        }
-
-        var renderReactProps = function renderReactProps(permutation) {
-          return Object.keys(permutation).reduce(function(acc, key) {
-            if (/^example/.test(key)) return acc
-
-            var exampleKey =
-              'example' + _psDesignSystemUtil2.default.string.capitalize(key)
-            acc +=
-              ' ' +
-              key +
-              '=' +
-              (permutation[exampleKey]
-                ? permutation[exampleKey]
-                : '"' + permutation[key] + '"')
-            return acc
-          }, '')
-        }
-
-        var renderReactImport = function renderReactImport(name) {
-          return (
-            'import ' +
-            name +
-            " from '@pluralsight/ps-" +
-            name.toLowerCase() +
-            "/react'\n\n"
-          )
-        }
-
-        var renderReactSrc = function renderReactSrc(
-          name,
-          children,
-          permutation
-        ) {
-          return (
-            '<' +
-            name +
-            renderReactProps(permutation) +
-            '>' +
-            (children || '') +
-            '</' +
-            name +
-            '>\n'
-          )
-        }
-
-        var renderReactSources = function renderReactSources(
-          name,
-          children,
-          permutations
-        ) {
-          return permutations.reduce(function(acc, p) {
-            return (acc += renderReactSrc(name, children, p))
-          }, renderReactImport(name))
         }
 
         var filterNonExampleProps = function filterNonExampleProps(
@@ -21570,7 +21452,7 @@ object-assign
                   return _react2.default.createElement(
                     _reactHighlight2.default,
                     { className: 'html ' + this.props.css.react },
-                    renderReactSources(
+                    (0, _formatReact2.default)(
                       this.props.name,
                       this.props.component.props.children,
                       this.props.permutations
@@ -21580,7 +21462,7 @@ object-assign
                   return _react2.default.createElement(
                     _reactHighlight2.default,
                     { className: 'html ' + this.props.css.html },
-                    renderHtmlSources(
+                    (0, _formatReactToHtml2.default)(
                       this.props.component,
                       this.props.permutations
                     )
@@ -61789,6 +61671,558 @@ https://highlightjs.org/
         }
 
         exports.default = valueEqual
+
+        /***/
+      },
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      /* 538 */ /* 539 */ /* 540 */ /* 541 */ /* 542 */ /* 543 */ /* 544 */ /* 545 */ /* 546 */ /* 547 */ /* 548 */ /* 549 */ /* 550 */ /* 551 */ /* 552 */ /* 553 */ /* 554 */ /* 555 */ /* 556 */ /* 557 */ /* 558 */ /* 559 */ /* 560 */ /* 561 */ /* 562 */ /* 563 */ /* 564 */ /* 565 */ /* 566 */ /* 567 */ /* 568 */ /* 569 */ /* 570 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+        exports.formatHtml = undefined
+
+        var _createClass = (function() {
+          function defineProperties(target, props) {
+            for (var i = 0; i < props.length; i++) {
+              var descriptor = props[i]
+              descriptor.enumerable = descriptor.enumerable || false
+              descriptor.configurable = true
+              if ('value' in descriptor) descriptor.writable = true
+              Object.defineProperty(target, descriptor.key, descriptor)
+            }
+          }
+          return function(Constructor, protoProps, staticProps) {
+            if (protoProps) defineProperties(Constructor.prototype, protoProps)
+            if (staticProps) defineProperties(Constructor, staticProps)
+            return Constructor
+          }
+        })()
+
+        var _reactHighlight = __webpack_require__(126)
+
+        var _reactHighlight2 = _interopRequireDefault(_reactHighlight)
+
+        var _propTypes = __webpack_require__(7)
+
+        var _propTypes2 = _interopRequireDefault(_propTypes)
+
+        var _react = __webpack_require__(1)
+
+        var _react2 = _interopRequireDefault(_react)
+
+        var _server = __webpack_require__(83)
+
+        var _server2 = _interopRequireDefault(_server)
+
+        var _reactStyleable = __webpack_require__(5)
+
+        var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
+
+        var _cssModule = __webpack_require__(571)
+
+        var _cssModule2 = _interopRequireDefault(_cssModule)
+
+        var _srcSwitcher = __webpack_require__(173)
+
+        var _srcSwitcher2 = _interopRequireDefault(_srcSwitcher)
+
+        var _psDesignSystemUtil = __webpack_require__(44)
+
+        var _psDesignSystemUtil2 = _interopRequireDefault(_psDesignSystemUtil)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        function _classCallCheck(instance, Constructor) {
+          if (!(instance instanceof Constructor)) {
+            throw new TypeError('Cannot call a class as a function')
+          }
+        }
+
+        function _possibleConstructorReturn(self, call) {
+          if (!self) {
+            throw new ReferenceError(
+              "this hasn't been initialised - super() hasn't been called"
+            )
+          }
+          return call &&
+            (typeof call === 'object' || typeof call === 'function')
+            ? call
+            : self
+        }
+
+        function _inherits(subClass, superClass) {
+          if (typeof superClass !== 'function' && superClass !== null) {
+            throw new TypeError(
+              'Super expression must either be null or a function, not ' +
+                typeof superClass
+            )
+          }
+          subClass.prototype = Object.create(
+            superClass && superClass.prototype,
+            {
+              constructor: {
+                value: subClass,
+                enumerable: false,
+                writable: true,
+                configurable: true
+              }
+            }
+          )
+          if (superClass)
+            Object.setPrototypeOf
+              ? Object.setPrototypeOf(subClass, superClass)
+              : (subClass.__proto__ = superClass)
+        }
+
+        var rmCssModuleHashes = function rmCssModuleHashes(src) {
+          return src.replace(/___\S{5}/g, '')
+        }
+
+        var toHtml = function toHtml(reactElement) {
+          return _server2.default.renderToStaticMarkup(reactElement)
+        }
+
+        var formatHtml = (exports.formatHtml = function formatHtml(str) {
+          if (!str) return ''
+
+          var tabs = function tabs(count) {
+            return '  '.repeat(count)
+          }
+
+          var formatTag = function formatTag(bit) {
+            return '<' + bit + '>'
+          }
+
+          var stripTag = function stripTag(bit) {
+            return bit.replace(/^<?([^<>]+)>?$/, '$1')
+          }
+
+          var isClosingTag = function isClosingTag(bit) {
+            return bit[0] === '/'
+          }
+
+          var isSelfClosingTag = function isSelfClosingTag(bit) {
+            return bit[bit.length - 1] === '/'
+          }
+
+          var isTagClosingOverText = function isTagClosingOverText(bit) {
+            return bit.match(/<\//)
+          }
+
+          var depth = 0
+          return str.split('><').map(stripTag).reduce(function(html, bit) {
+            if (isClosingTag(bit)) {
+              --depth
+              html += '\n' + tabs(depth) + formatTag(bit)
+            } else {
+              html += (html ? '\n' : '') + tabs(depth) + formatTag(bit)
+
+              if (!isSelfClosingTag(bit) && !isTagClosingOverText(bit)) ++depth
+            }
+            return html
+          }, '')
+        })
+
+        var renderHtmlSrc = function renderHtmlSrc(component, permutation) {
+          return formatHtml(
+            rmCssModuleHashes(
+              toHtml(_react2.default.cloneElement(component, permutation))
+            )
+          )
+        }
+
+        var renderHtmlSources = function renderHtmlSources(
+          component,
+          permutations
+        ) {
+          return permutations
+            .map(function(p) {
+              return renderHtmlSrc(component, p)
+            })
+            .join('\n')
+        }
+
+        var renderReactProps = function renderReactProps(permutation) {
+          return Object.keys(permutation).reduce(function(acc, key) {
+            if (/^example/.test(key)) return acc
+
+            var exampleKey =
+              'example' + _psDesignSystemUtil2.default.string.capitalize(key)
+            acc +=
+              ' ' +
+              key +
+              '=' +
+              (permutation[exampleKey]
+                ? permutation[exampleKey]
+                : '"' + permutation[key] + '"')
+            return acc
+          }, '')
+        }
+
+        var renderReactImport = function renderReactImport(name) {
+          return (
+            'import ' +
+            name +
+            " from '@pluralsight/ps-" +
+            name.toLowerCase() +
+            "/react'\n\n"
+          )
+        }
+
+        var renderReactSrc = function renderReactSrc(
+          name,
+          children,
+          permutation
+        ) {
+          return (
+            '<' +
+            name +
+            renderReactProps(permutation) +
+            '>' +
+            (children || '') +
+            '</' +
+            name +
+            '>\n'
+          )
+        }
+
+        var renderReactSources = function renderReactSources(
+          name,
+          children,
+          permutations
+        ) {
+          return permutations.reduce(function(acc, p) {
+            return (acc += renderReactSrc(name, children, p))
+          }, renderReactImport(name))
+        }
+
+        var filterNonExampleProps = function filterNonExampleProps(
+          permutation
+        ) {
+          return Object.keys(permutation).reduce(function(acc, key) {
+            if (!/^example/.test(key)) acc[key] = permutation[key]
+            return acc
+          }, {})
+        }
+
+        var Example = (function(_React$Component) {
+          _inherits(Example, _React$Component)
+
+          function Example(props) {
+            _classCallCheck(this, Example)
+
+            var _this = _possibleConstructorReturn(
+              this,
+              (Example.__proto__ || Object.getPrototypeOf(Example))
+                .call(this, props)
+            )
+
+            _this.state = {
+              srcOption: 'react'
+            }
+            _this.handleSrcOptionClick = _this.handleSrcOptionClick.bind(_this)
+            return _this
+          }
+
+          _createClass(Example, [
+            {
+              key: 'handleSrcOptionClick',
+              value: function handleSrcOptionClick(srcOption) {
+                this.setState({ srcOption: srcOption })
+              }
+            },
+            {
+              key: 'renderOutputs',
+              value: function renderOutputs(props) {
+                var _this2 = this
+
+                return props.permutations.map(function(p, i) {
+                  return _react2.default.createElement(
+                    'div',
+                    { key: i, className: _this2.props.css.outputChild },
+                    _react2.default.cloneElement(
+                      props.component,
+                      filterNonExampleProps(p)
+                    )
+                  )
+                })
+              }
+            },
+            {
+              key: 'renderSrc',
+              value: function renderSrc() {
+                if (this.state.srcOption === 'react') {
+                  return _react2.default.createElement(
+                    _reactHighlight2.default,
+                    { className: 'html ' + this.props.css.react },
+                    renderReactSources(
+                      this.props.name,
+                      this.props.component.props.children,
+                      this.props.permutations
+                    )
+                  )
+                } else if (this.state.srcOption === 'html') {
+                  return _react2.default.createElement(
+                    _reactHighlight2.default,
+                    { className: 'html ' + this.props.css.html },
+                    renderHtmlSources(
+                      this.props.component,
+                      this.props.permutations
+                    )
+                  )
+                }
+              }
+            },
+            {
+              key: 'render',
+              value: function render() {
+                return _react2.default.createElement(
+                  'div',
+                  { className: this.props.css.root },
+                  _react2.default.createElement(
+                    'div',
+                    { className: this.props.css.output },
+                    this.renderOutputs(this.props)
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: this.props.css.src },
+                    _react2.default.createElement(_srcSwitcher2.default, {
+                      onClick: this.handleSrcOptionClick,
+                      value: this.state.srcOption
+                    }),
+                    _react2.default.createElement(
+                      'div',
+                      { className: this.props.css.srcOptions },
+                      this.renderSrc()
+                    )
+                  )
+                )
+              }
+            }
+          ])
+
+          return Example
+        })(_react2.default.Component)
+
+        Example.propTypes = {
+          component: _propTypes2.default.element.isRequired,
+          name: _propTypes2.default.string,
+          permutations: _propTypes2.default.arrayOf(_propTypes2.default.object)
+        }
+        Example.defaultProps = {
+          name: 'Component',
+          permutations: [{}]
+        }
+
+        exports.default = (0, _reactStyleable2.default)(_cssModule2.default)(
+          Example
+        )
+
+        /***/
+      },
+      /* 571 */
+      /***/ function(module, exports) {
+        // removed by extract-text-webpack-plugin
+        module.exports = {
+          root: 'root___1cUwm',
+          output: 'output___KnWJ4',
+          outputChild: 'outputChild___8kupI',
+          src: 'src____Xn7O',
+          srcOptions: 'srcOptions___Orsyx',
+          html: 'html___3b_FL',
+          react: 'react___3xfUB'
+        }
+
+        /***/
+      },
+      ,
+      /* 572 */ /* 573 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+
+        var _psDesignSystemUtil = __webpack_require__(44)
+
+        var _psDesignSystemUtil2 = _interopRequireDefault(_psDesignSystemUtil)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        var renderReactProps = function renderReactProps(permutation) {
+          return Object.keys(permutation).reduce(function(acc, key) {
+            if (/^example/.test(key)) return acc
+
+            var exampleKey =
+              'example' + _psDesignSystemUtil2.default.string.capitalize(key)
+            acc +=
+              ' ' +
+              key +
+              '=' +
+              (permutation[exampleKey]
+                ? permutation[exampleKey]
+                : '"' + permutation[key] + '"')
+            return acc
+          }, '')
+        }
+
+        var renderReactImport = function renderReactImport(name) {
+          return (
+            'import ' +
+            name +
+            " from '@pluralsight/ps-" +
+            name.toLowerCase() +
+            "/react'\n\n"
+          )
+        }
+
+        var renderReactSrc = function renderReactSrc(
+          name,
+          children,
+          permutation
+        ) {
+          return (
+            '<' +
+            name +
+            renderReactProps(permutation) +
+            '>' +
+            (children || '') +
+            '</' +
+            name +
+            '>\n'
+          )
+        }
+
+        exports.default = function(name, children, permutations) {
+          return permutations.reduce(function(acc, p) {
+            return (acc += renderReactSrc(name, children, p))
+          }, renderReactImport(name))
+        }
+
+        /***/
+      },
+      /* 574 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+        exports.formatHtml = undefined
+
+        var _react = __webpack_require__(1)
+
+        var _react2 = _interopRequireDefault(_react)
+
+        var _server = __webpack_require__(83)
+
+        var _server2 = _interopRequireDefault(_server)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        var rmCssModuleHashes = function rmCssModuleHashes(src) {
+          return src.replace(/___\S{5}/g, '')
+        }
+
+        var toHtml = function toHtml(reactElement) {
+          return _server2.default.renderToStaticMarkup(reactElement)
+        }
+
+        var formatHtml = (exports.formatHtml = function formatHtml(str) {
+          if (!str) return ''
+
+          var tabs = function tabs(count) {
+            return '  '.repeat(count)
+          }
+
+          var formatTag = function formatTag(bit) {
+            return '<' + bit + '>'
+          }
+
+          var stripTag = function stripTag(bit) {
+            return bit.replace(/^<?([^<>]+)>?$/, '$1')
+          }
+
+          var isClosingTag = function isClosingTag(bit) {
+            return bit[0] === '/'
+          }
+
+          var isSelfClosingTag = function isSelfClosingTag(bit) {
+            return bit[bit.length - 1] === '/'
+          }
+
+          var isTagClosingOverText = function isTagClosingOverText(bit) {
+            return bit.match(/<\//)
+          }
+
+          var depth = 0
+          return str.split('><').map(stripTag).reduce(function(html, bit) {
+            if (isClosingTag(bit)) {
+              --depth
+              html += '\n' + tabs(depth) + formatTag(bit)
+            } else {
+              html += (html ? '\n' : '') + tabs(depth) + formatTag(bit)
+
+              if (!isSelfClosingTag(bit) && !isTagClosingOverText(bit)) ++depth
+            }
+            return html
+          }, '')
+        })
+
+        var renderHtmlSrc = function renderHtmlSrc(component, permutation) {
+          return formatHtml(
+            rmCssModuleHashes(
+              toHtml(_react2.default.cloneElement(component, permutation))
+            )
+          )
+        }
+
+        exports.default = function(component, permutations) {
+          return permutations
+            .map(function(p) {
+              return renderHtmlSrc(component, p)
+            })
+            .join('\n')
+        }
 
         /***/
       }

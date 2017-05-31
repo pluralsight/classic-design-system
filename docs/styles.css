@@ -1146,9 +1146,9 @@
   --psMotionSpeedSlower: 250ms;
   --psMotionSpeedSlowest: 300ms;
 }
-.root___3YG2a {
+.root___1cUwm {
 }
-.output___wQB7z {
+.output___KnWJ4 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1156,29 +1156,29 @@
   background: var(--psColorsGray06);
   overflow: hidden;
 }
-.outputChild___3QK6i {
+.outputChild___8kupI {
   margin: var(--psLayoutSpacingLarge) 0 0 0;
 }
-.outputChild___3QK6i:first-child {
+.outputChild___8kupI:first-child {
   margin-top: 0;
 }
-.src___3PC8V {
+.src____Xn7O {
   padding: var(--psLayoutSpacingLarge);
   background: var(--psColorsGray04);
 }
-.srcOptions___1yeyx {
+.srcOptions___Orsyx {
   margin: var(--psLayoutSpacingLarge) 0 0 0;
 }
-.html___N3aFi,
-.react___3L7f- {
+.html___3b_FL,
+.react___3xfUB {
   background: none;
   padding: 0;
 }
 @media screen and (min-width: 769px) {
-  .output___wQB7z {
+  .output___KnWJ4 {
     flex-direction: row;
   }
-  .outputChild___3QK6i {
+  .outputChild___8kupI {
     margin: 0 98px 0 0;
   }
 }
@@ -1396,6 +1396,127 @@
   background: var(--psColorsWhite);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, .6);
 }:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
+  /* role colors */
+  --psColorsRoleYellowLighter: #fd39bc;
+  --psColorsRoleYellowLight: #fbcd64;
+  --psColorsRoleYellow: #f8b721;
+  --psColorsRoleYellowDark: #ae8017;
+  --psColorsRoleYellowDarker: #7c5b12;
+}
+:root {
+  /* spacing */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXl: 40px;
+  --psLayoutSpacingXxl: 56px;
+}
+:root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+  /* font size */
+  --psTypeFontSizeGigantic: 60px;
+  --psTypeFontSizeXxxl: 48px;
+  --psTypeFontSizeXxl: 36px;
+  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeLarge: 24px;
+  --psTypeFontSizeMedium: 18px;
+  --psTypeFontSizeSmall: 14px;
+  --psTypeFontSizeExtraSmall: 12px;
+
+  /* letter spacing */
+  --psTypeLetterSpacingGigantic: -1px;
+  --psTypeLetterSpacingXxxl: -0.72px;
+  --psTypeLetterSpacingXxl: -0.54px;
+  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingLarge: 0.36px;
+  --psTypeLetterSpacingMedium: 0;
+  --psTypeLetterSpacingSmall: 0;
+  --psTypeLetterSpacingExtraSmall: 0;
+
+  /* font weight */
+  --psTypeFontWeightBold: 700;
+  --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightBook: 400;
+  --psTypeFontWeightLight: 300;
+  --psTypeFontWeightExtraLight: 200;
+
+  /* line height */
+  --psTypeLineHeightTight: 20px;
+  --psTypeLineHeightStandard: 24px;
+  --psTypeLineHeightExtra: 32px;
+  --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
+.root___3YG2a {
+}
+.output___wQB7z {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--psLayoutSpacingLarge);
+  background: var(--psColorsGray06);
+  overflow: hidden;
+}
+.outputChild___3QK6i {
+  margin: var(--psLayoutSpacingLarge) 0 0 0;
+}
+.outputChild___3QK6i:first-child {
+  margin-top: 0;
+}
+.src___3PC8V {
+  padding: var(--psLayoutSpacingLarge);
+  background: var(--psColorsGray04);
+}
+.srcOptions___1yeyx {
+  margin: var(--psLayoutSpacingLarge) 0 0 0;
+}
+.html___N3aFi,
+.react___3L7f- {
+  background: none;
+  padding: 0;
+}
+@media screen and (min-width: 769px) {
+  .output___wQB7z {
+    flex-direction: row;
+  }
+  .outputChild___3QK6i {
+    margin: 0 98px 0 0;
+  }
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
