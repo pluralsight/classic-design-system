@@ -40,14 +40,14 @@ export default styleable(css)(props => {
       <P>
         Define a button appearance by ...{' '}
       </P>
-      <Example
+      <Example.React
         component={<Button>Click me</Button>}
         name="Button"
         permutations={[{}, { appearance: 'stroke' }, { appearance: 'flat' }]}
       />
 
       <Heading.Large>Button sizes</Heading.Large>
-      <Example
+      <Example.React
         component={<Button>Click me</Button>}
         name="Button"
         permutations={[
@@ -59,7 +59,7 @@ export default styleable(css)(props => {
       />
 
       <Heading.Large>Button with icon</Heading.Large>
-      <Example
+      <Example.React
         component={<Button>Click me</Button>}
         name="Button"
         permutations={[
@@ -79,7 +79,7 @@ export default styleable(css)(props => {
       />
 
       <Heading.Large>Button with lone icon</Heading.Large>
-      <Example
+      <Example.React
         component={<Button />}
         name="Button"
         permutations={[
@@ -98,7 +98,7 @@ export default styleable(css)(props => {
       />
 
       <Heading.Large>Disabled button</Heading.Large>
-      <Example
+      <Example.React
         component={<Button>Disabled button</Button>}
         name="Button"
         permutations={[
