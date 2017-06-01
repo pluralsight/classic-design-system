@@ -1,3 +1,6 @@
+# builds from source that live in npm only
+dist
+
 # Logs
 logs
 *.log
