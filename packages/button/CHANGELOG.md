@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.2.1...@pluralsight/ps-button@1.3.0) (2017-06-01)
+
+
+### Bug Fixes
+
+* **button:** add peerDependency on normalize ([70fcebd](https://github.com/pluralsight/design-system/commit/70fcebd))
+* **button:** don't constrain background color of stroke appearance ([6b0802b](https://github.com/pluralsight/design-system/commit/6b0802b))
+* **button:** update snapshot ([e4a748d](https://github.com/pluralsight/design-system/commit/e4a748d))
+
+
+### Features
+
+* **button:** add basic button on the left support ([ed4cb42](https://github.com/pluralsight/design-system/commit/ed4cb42))
+* **button:** add iconAlign support ([ce423ea](https://github.com/pluralsight/design-system/commit/ce423ea))
+* **button:** add size=tiny ([fbb3214](https://github.com/pluralsight/design-system/commit/fbb3214))
+* **button:** dont wrap or overflow if small horz space ([c3fc0a1](https://github.com/pluralsight/design-system/commit/c3fc0a1))
+* **button:** handle stroke and icon buttons in disabled state ([201fd6d](https://github.com/pluralsight/design-system/commit/201fd6d))
+* **button:** match icon color with the standard button colors ([27e1409](https://github.com/pluralsight/design-system/commit/27e1409))
+* **button:** support for icon-only button ([a87cd08](https://github.com/pluralsight/design-system/commit/a87cd08))
+
+
+
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.2.0...@pluralsight/ps-button@1.2.1) (2017-05-22)
 
