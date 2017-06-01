@@ -25,33 +25,37 @@ const transformPropName = name => {
 
 const autoprefixerOptions = { browsers: 'last 4 versions' }
 const postcssCssVarSelectorsOptions = { transformPropName }
-const postcssTransformChain = [
-  postcssImport,
-  postcssCssVarSelectors(postcssCssVarSelectorsOptions),
-  autoprefixer(autoprefixerOptions)
-]
-;(async _ => {
+
+const transform = async (src, dest, postcssTransforms) => {
   let css
   try {
-    css = await fs.readFile(path.join('css', 'index.css'), 'utf8')
+    css = await fs.readFile(src, 'utf8')
   } catch (err) {
-    console.error('Error reading source css: ', err)
+    console.error('Error reading source css: ', src, err)
     return process.exit(1)
   }
 
   try {
-    const result = await postcss(postcssTransformChain).process(css, {
-      from: path.join('css', 'index.css'),
-      to: path.join('dist', 'index.css')
+    const result = await postcss(postcssTransforms).process(css, {
+      from: src,
+      to: dest
     })
 
-    await fs.mkdir('dist')
-    await fs.writeFile(path.join('dist', 'index.css'), result.css)
+    await fs.writeFile(dest, result.css)
 
-    if (result.map)
-      await fs.writeFile(path.join('dist', 'index.css.map'), result.map)
+    if (result.map) await fs.writeFile(dest + '.map', result.map)
   } catch (err) {
     console.error('Error processing css', err)
     process.exit(1)
   }
+}
+;(async _ => {
+  await fs.mkdir('dist')
+
+  const src = path.join('css', 'index.css')
+  transform(src, path.join('dist', 'index.css'), [
+    postcssImport,
+    postcssCssVarSelectors(postcssCssVarSelectorsOptions),
+    autoprefixer(autoprefixerOptions)
+  ])
 })()
