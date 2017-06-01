@@ -2,6 +2,7 @@ const promisify = require('promisify-node')
 
 const autoprefixer = require('autoprefixer')
 const fs = promisify('fs')
+const path = require('path')
 const postcss = require('postcss')
 const postcssImport = require('postcss-import')
 
@@ -32,7 +33,7 @@ const postcssTransformChain = [
 ;(async _ => {
   let css
   try {
-    css = await fs.readFile('css/index.css', 'utf8')
+    css = await fs.readFile(path.join('css', 'index.css'), 'utf8')
   } catch (err) {
     console.error('Error reading source css: ', err)
     return process.exit(1)
@@ -40,13 +41,15 @@ const postcssTransformChain = [
 
   try {
     const result = await postcss(postcssTransformChain).process(css, {
-      from: 'css/index.css',
-      to: 'dist/index.css'
+      from: path.join('css', 'index.css'),
+      to: path.join('dist', 'index.css')
     })
 
-    fs.writeFile('dist/index.css', result.css)
+    await fs.mkdir('dist')
+    await fs.writeFile(path.join('dist', 'index.css'), result.css)
 
-    if (result.map) fs.writeFile('dist/index.css.map', result.map)
+    if (result.map)
+      await fs.writeFile(path.join('dist', 'index.css.map'), result.map)
   } catch (err) {
     console.error('Error processing css', err)
     process.exit(1)
