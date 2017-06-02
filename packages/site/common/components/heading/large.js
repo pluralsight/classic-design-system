@@ -3,8 +3,8 @@ import styleable from 'react-styleable'
 
 import css from './large.module.css'
 
-export default styleable(css)(props => (
+export default styleable(css)(props =>
   <h2 className={props.css.root}>
     {props.children}
   </h2>
-))
+)

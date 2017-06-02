@@ -5,7 +5,9 @@ const renderReactProps = permutation =>
     if (/^example/.test(key)) return acc
 
     const exampleKey = 'example' + util.string.capitalize(key)
-    acc += ` ${key}=${permutation[exampleKey] ? permutation[exampleKey] : `"${permutation[key]}"`}`
+    acc += ` ${key}=${permutation[exampleKey]
+      ? permutation[exampleKey]
+      : `"${permutation[key]}"`}`
     return acc
   }, '')
 

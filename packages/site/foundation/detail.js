@@ -9,8 +9,7 @@ const docs = {
   spacing: <SpacingDoc />
 }
 
-export default props => (
+export default props =>
   <Chrome title={props.match.params.foundationId}>
     {docs[props.match.params.foundationId]}
   </Chrome>
-)

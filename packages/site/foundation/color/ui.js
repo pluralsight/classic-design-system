@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Color } from '../../common/components'
 
-export default props => (
+export default props =>
   <Color.Palette>
     <Color.DarkSwatch hex="E80A89" var="Pink" />
     <Color.DarkSwatch hex="DE3636" var="Red" />
@@ -13,4 +13,3 @@ export default props => (
     <Color.DarkSwatch hex="23AA5A" var="Green" />
     <Color.DarkSwatch hex="137BC2" var="Blue" />
   </Color.Palette>
-)

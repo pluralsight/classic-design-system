@@ -17,7 +17,7 @@ const routes = (
   </div>
 )
 
-const Html = props => (
+const Html = props =>
   <html>
     <head>
       <title>{props.title || 'Pluralsight Design System'}</title>
@@ -39,7 +39,6 @@ const Html = props => (
       <script src="/index.js" />
     </body>
   </html>
-)
 
 export default locals => {
   return ReactDOMServer.renderToStaticMarkup(

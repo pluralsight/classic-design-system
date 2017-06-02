@@ -14,7 +14,7 @@ const formatTitle = props =>
     ? util.string.capitalize(props.title) + ' | ' + defaultTitle
     : defaultTitle
 
-export default styleable(css)(props => (
+export default styleable(css)(props =>
   <div className={props.css.root}>
     <Helmet>
       <title>{formatTitle(props)}</title>
@@ -31,4 +31,4 @@ export default styleable(css)(props => (
       </main>
     </div>
   </div>
-))
+)

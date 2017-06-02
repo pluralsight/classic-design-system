@@ -3,7 +3,7 @@ import styleable from 'react-styleable'
 
 import css from './horz-gradient.module.css'
 
-const VertGradient = styleable(css)(props => (
+const VertGradient = styleable(css)(props =>
   <div
     className={props.css.root}
     style={{
@@ -16,7 +16,7 @@ const VertGradient = styleable(css)(props => (
     </div>
     <div className={props.css.stop}>{props.stop}</div>
   </div>
-))
+)
 
 import PropTypes from 'prop-types'
 VertGradient.propTypes = {

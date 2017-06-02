@@ -5,11 +5,10 @@ import styleable from 'react-styleable'
 
 import css from './index.module.css'
 
-const Code = props => (
+const Code = props =>
   <Highlight className={'javascript ' + props.css.root}>
     {props.children}
   </Highlight>
-)
 
 Code.propTypes = {
   lang: string

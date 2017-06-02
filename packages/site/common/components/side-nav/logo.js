@@ -6,7 +6,7 @@ import css from './logo.module.css'
 
 const version = '1.0.0' // TODO: make read package.json
 
-export default styleable(css)(props => (
+export default styleable(css)(props =>
   <Link to="/" className={props.css.root}>
     <div className={props.css.img} />
     <h2 className={props.css.text}>
@@ -16,4 +16,4 @@ export default styleable(css)(props => (
       </span>
     </h2>
   </Link>
-))
+)

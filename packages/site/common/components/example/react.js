@@ -26,11 +26,11 @@ class ReactExample extends React.Component {
     this.setState({ srcOption })
   }
   renderOutputs(props) {
-    return props.permutations.map((p, i) => (
+    return props.permutations.map((p, i) =>
       <div key={i} className={this.props.css.outputChild}>
         {React.cloneElement(props.component, filterNonExampleProps(p))}
       </div>
-    ))
+    )
   }
   renderSrc() {
     if (this.state.srcOption === 'react') {

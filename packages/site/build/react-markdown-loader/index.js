@@ -2,7 +2,8 @@
 
 'use strict'
 
-const build = require('./build.js'), parser = require('./parser.js')
+const build = require('./build.js'),
+  parser = require('./parser.js')
 
 /**
  * Main function

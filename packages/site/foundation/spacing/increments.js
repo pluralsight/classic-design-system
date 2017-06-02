@@ -12,18 +12,18 @@ const increments = [
   { width: 56, label: 'XX-Large', varName: 'psLayoutSpacingXxl' }
 ]
 
-export default props => (
+export default props =>
   <Example.CssVar
     output={
       <Spacing.Parent>
-        {increments.map((x, i) => (
+        {increments.map((x, i) =>
           <Spacing.Example
             key={i}
             width={x.width}
             label={x.label}
             sides="all"
           />
-        ))}
+        )}
       </Spacing.Parent>
     }
     attributes={increments.map(x => ({
@@ -31,4 +31,3 @@ export default props => (
       attrName: 'margin'
     }))}
   />
-)

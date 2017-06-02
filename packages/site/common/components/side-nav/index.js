@@ -7,7 +7,7 @@ import GroupTitle from './group-title'
 import Link from './link'
 import Logo from './logo'
 
-export default styleable(css)(props => (
+export default styleable(css)(props =>
   <nav className={props.css.root}>
     <Logo />
     <Group>
@@ -21,4 +21,4 @@ export default styleable(css)(props => (
       <Link href="/components/button">Buttons</Link>
     </Group>
   </nav>
-))
+)

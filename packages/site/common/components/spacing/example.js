@@ -43,7 +43,7 @@ const renderLabel = props =>
       </div>
     : null
 
-const Example = styleable(css)(props => (
+const Example = styleable(css)(props =>
   <div className={props.css.root}>
     <div className={props.css.box}>
       {renderBorder(props)}
@@ -51,7 +51,7 @@ const Example = styleable(css)(props => (
     </div>
     {renderLabel(props)}
   </div>
-))
+)
 
 import PropTypes from 'prop-types'
 Example.propTypes = {

@@ -4,7 +4,7 @@ import styleable from 'react-styleable'
 
 import css from './link.module.css'
 
-export default styleable(css)(props => (
+export default styleable(css)(props =>
   <div className={props.css.root}>
     <NavLink
       activeClassName={props.css.linkActive}
@@ -15,4 +15,4 @@ export default styleable(css)(props => (
       {props.children}
     </NavLink>
   </div>
-))
+)

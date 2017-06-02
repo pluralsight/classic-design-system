@@ -8,8 +8,8 @@ const rmSystemProps = props => {
   return rest
 }
 
-export default styleable(css)(props => (
+export default styleable(css)(props =>
   <a className={props.css.root} {...rmSystemProps(props)}>
     {props.children}
   </a>
-))
+)

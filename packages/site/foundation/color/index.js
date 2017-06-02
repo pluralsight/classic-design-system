@@ -19,13 +19,15 @@ export default styleable(css)(props => {
 
       <Heading.Large>UI colors</Heading.Large>
       <P>
-        UI colors emphasize interface elements such as buttons, links, accents and vizualization.
+        UI colors emphasize interface elements such as buttons, links, accents
+        and vizualization.
       </P>
       <UiColors />
 
       <Heading.Large>Gradient</Heading.Large>
       <P>
-        So fresh. Use the standard gradient to emphasize and showcase the brand. Use sparingly.
+        So fresh. Use the standard gradient to emphasize and showcase the brand.
+        Use sparingly.
       </P>
       <GradientColors />
 

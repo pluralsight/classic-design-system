@@ -3,7 +3,7 @@ import styleable from 'react-styleable'
 
 import css from './swatch.module.css'
 
-const Swatch = styleable(css)(props => (
+const Swatch = styleable(css)(props =>
   <div
     className={props.dark ? props.css.rootDark : props.css.rootLight}
     style={{ backgroundColor: '#' + props.hex }}
@@ -11,7 +11,7 @@ const Swatch = styleable(css)(props => (
     <div className={props.css.hex}>{props.hex}</div>
     <div className={props.css.var}>psColors{props.var}</div>
   </div>
-))
+)
 
 import PropTypes from 'prop-types'
 Swatch.propTypes = {

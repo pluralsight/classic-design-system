@@ -4,13 +4,14 @@ import styleable from 'react-styleable'
 import css from './index.css'
 import { Code, Heading, P, Link } from '../../common/components'
 
-export default styleable(css)(props => (
+export default styleable(css)(props =>
   <div className={props.css.root}>
     <Heading.Xxl>Component Installation</Heading.Xxl>
 
     <Heading.Large>0. Determine Your Build System Compatibility</Heading.Large>
     <P>
-      You'll need a build system in your development environment that supports the following:
+      You'll need a build system in your development environment that supports
+      the following:
     </P>
     <ul>
       <li>
@@ -40,12 +41,17 @@ export default styleable(css)(props => (
       npm install @pluralsight/ps-button --save-dev
     </Code>
     <P>
-      Note: Each component is installed independently.  This will lead to more package.json entries.  It will importantly allow you to bring into your project only what you need.  It will allow you to independently upgrade and test components as they are improved.
+      Note: Each component is installed independently. This will lead to more
+      package.json entries. It will importantly allow you to bring into your
+      project only what you need. It will allow you to independently upgrade and
+      test components as they are improved.
     </P>
 
     <Heading.Large>2. Support JavaScript Transpiling</Heading.Large>
     <P>
-      The Design System components are published to npm in their source ES6 format.  They require transpilation to be used in browsers only supporting ES5.  We recommend
+      The Design System components are published to npm in their source ES6
+      format. They require transpilation to be used in browsers only supporting
+      ES5. We recommend
       {' '}
       <Link href="http://babeljs.io/" target="_blank">Babel</Link>
       {' '}
@@ -58,7 +64,8 @@ export default styleable(css)(props => (
       already.
     </P>
     <P>
-      Make sure that your Babel setup handles the transforms that the Design System requires:
+      Make sure that your Babel setup handles the transforms that the Design
+      System requires:
     </P>
     <Code language="bash">
       npm install babel-preset-react babel-preset-stage-2 --save-dev
@@ -82,7 +89,9 @@ export default styleable(css)(props => (
       <Link href="https://github.com/postcss/postcss" target="_blank">
         PostCSS
       </Link>
-      .  The component's CSS modules are published to npm alongside the source JavaScript.  The source JavaScript will take care of importing it, but your Webpack config needs to support it.
+      . The component's CSS modules are published to npm alongside the source
+      JavaScript. The source JavaScript will take care of importing it, but your
+      Webpack config needs to support it.
     </P>
     <P>
       Modify your webpack.config.js to support CSS module importing.{' '}
@@ -114,7 +123,8 @@ export default styleable(css)(props => (
 }`}
     </Code>
     <P>
-      Note: If you use traditional CSS stylesheets in addition to CSS modules, you will need to follow these
+      Note: If you use traditional CSS stylesheets in addition to CSS modules,
+      you will need to follow these
       {' '}
       <Link
         href="https://jaketrent.com/post/load-both-css-and-css-modules-webpack/"
@@ -127,10 +137,12 @@ export default styleable(css)(props => (
 
     <Heading.Large>4. Use Component in Your Project</Heading.Large>
     <P>
-      Currently the only component type the Design System supports is React components.  But it is setup to support other types in the future.
+      Currently the only component type the Design System supports is React
+      components. But it is setup to support other types in the future.
     </P>
     <P>
-      To use the React component in your project, note the slightly different import path:
+      To use the React component in your project, note the slightly different
+      import path:
     </P>
     <Code language="bash">
       {`import React from 'react'
@@ -141,4 +153,4 @@ export default props =>
 `}
     </Code>
   </div>
-))
+)

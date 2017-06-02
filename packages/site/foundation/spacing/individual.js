@@ -9,13 +9,13 @@ const increments = [
   { side: 'left', attrName: 'margin-left' }
 ]
 
-export default props => (
+export default props =>
   <Example.CssVar
     output={
       <Spacing.Parent>
-        {increments.map((x, i) => (
+        {increments.map((x, i) =>
           <Spacing.Example key={i} width={24} sides={x.side} />
-        ))}
+        )}
       </Spacing.Parent>
     }
     attributes={increments.map(x => ({
@@ -23,4 +23,3 @@ export default props => (
       attrName: x.attrName
     }))}
   />
-)
