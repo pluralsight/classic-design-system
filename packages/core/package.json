@@ -14,6 +14,9 @@
   "license": "Apache 2.0",
   "repository": "pluralsight/design-system",
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.0.0"
+    "@pluralsight/ps-design-system-build": "^1.0.0",
+    "autoprefixer": "^7.1.1",
+    "postcss-import": "^10.0.0",
+    "promisify-node": "^0.4.0"
   }
 }
