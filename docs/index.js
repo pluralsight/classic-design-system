@@ -16824,7 +16824,7 @@ var _reactStyleable = __webpack_require__(158);
 
 var _reactStyleable2 = _interopRequireDefault(_reactStyleable);
 
-var _indexModule = __webpack_require__(211);
+var _indexModule = __webpack_require__(578);
 
 var _indexModule2 = _interopRequireDefault(_indexModule);
 
@@ -16841,7 +16841,7 @@ var ids = {
 exports.default = (0, _reactStyleable2.default)(_indexModule2.default)(function (props) {
   return _react2.default.createElement(
     'span',
-    { className: props.css.root },
+    { className: props.css['ps-icon'] },
     _react2.default.createElement(ids[props.id], { css: props.css })
   );
 });
@@ -19595,13 +19595,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*!
 module.exports = {"ps-button":"ps-button___2EFfR","ps-button--tiny":"ps-button--tiny___cmVTE","ps-button--small":"ps-button--small___3bU65","ps-button--medium":"ps-button--medium___ATQAu","ps-button--large":"ps-button--large___1zAYp","ps-button--stroke":"ps-button--stroke___2-hZL","ps-button--flat":"ps-button--flat___3IG4H","ps-button--disabled":"ps-button--disabled___2IvkE","ps-button--icon-align-right":"ps-button--icon-align-right___1H91Q","ps-button__icon":"ps-button__icon___3o9gL","ps-icon__fg--fill":"ps-icon__fg--fill___2t5_8","ps-icon__fg--stroke":"ps-icon__fg--stroke___2ym0E","ps-button--icon-only":"ps-button--icon-only___1iOv7"};
 
 /***/ }),
-/* 211 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"root":"root___IRYBD","ps-icon__fg--fill":"ps-icon__fg--fill___3t2vC","ps-icon__fg--stroke":"ps-icon__fg--stroke___3wOf0"};
-
-/***/ }),
+/* 211 */,
 /* 212 */
 /***/ (function(module, exports) {
 
@@ -52644,6 +52638,46 @@ var valueEqual = function valueEqual(a, b) {
 };
 
 exports.default = valueEqual;
+
+/***/ }),
+/* 545 */,
+/* 546 */,
+/* 547 */,
+/* 548 */,
+/* 549 */,
+/* 550 */,
+/* 551 */,
+/* 552 */,
+/* 553 */,
+/* 554 */,
+/* 555 */,
+/* 556 */,
+/* 557 */,
+/* 558 */,
+/* 559 */,
+/* 560 */,
+/* 561 */,
+/* 562 */,
+/* 563 */,
+/* 564 */,
+/* 565 */,
+/* 566 */,
+/* 567 */,
+/* 568 */,
+/* 569 */,
+/* 570 */,
+/* 571 */,
+/* 572 */,
+/* 573 */,
+/* 574 */,
+/* 575 */,
+/* 576 */,
+/* 577 */,
+/* 578 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"ps-icon":"ps-icon___2krFn","ps-icon__fg--fill":"ps-icon__fg--fill___33RB2","ps-icon__fg--stroke":"ps-icon__fg--stroke___3xx8p"};
 
 /***/ })
 /******/ ]);

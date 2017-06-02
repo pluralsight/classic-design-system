@@ -2592,17 +2592,15 @@
   --psIconHeight: 24px;
   --psIconWidth: 24px;
 }
-/* TODO: move to ../css */
-/* TODO: rename ps-icon */
-.root___IRYBD {
+.ps-icon___2krFn {
   display: inline-block;
   height: var(--psIconHeight);
   width: var(--psIconWidth);
 }
-.ps-icon__fg--fill___3t2vC {
+.ps-icon__fg--fill___33RB2 {
   fill: var(--psColorsWhite);
 }
-.ps-icon__fg--stroke___3wOf0 {
+.ps-icon__fg--stroke___3xx8p {
   stroke: var(--psColorsWhite);
 }
 .root___2GPyS {
