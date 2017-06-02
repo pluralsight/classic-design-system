@@ -1,7 +1,7 @@
 {
   "name": "@pluralsight/ps-design-system-util",
   "version": "1.1.2",
-  "description": "",
+  "description": "Runtime dependencies for utilitarian tasks.  Analogous to a lodash.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: tests run in as a single design system suite\" && exit 1"

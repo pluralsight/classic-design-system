@@ -2,6 +2,7 @@ const dashify = require('dashify')
 const postcss = require('postcss')
 
 const defaultOptions = {
+  // TODO: rename to formatPropName, keep "transform" special for the postcss process
   transformPropName(x) {
     return x
   }

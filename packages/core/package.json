@@ -14,11 +14,6 @@
   "license": "Apache 2.0",
   "repository": "pluralsight/design-system",
   "devDependencies": {
-    "autoprefixer": "^7.1.1",
-    "dashify": "^0.2.2",
-    "postcss": "^6.0.1",
-    "postcss-import": "^10.0.0",
-    "precss": "^1.4.0",
-    "promisify-node": "^0.4.0"
+    "@pluralsight/ps-design-system-build": "^1.0.0"
   }
 }
