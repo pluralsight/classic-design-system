@@ -24,7 +24,7 @@
   color: var(--psColorsBlack);
 }
 
-.link:hover .box{
+.link:hover .box {
   width: 8px;
   margin-right: 12px;
 }

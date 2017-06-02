@@ -8,21 +8,33 @@ html {
   font-family: var(--psTypeFontFamily);
   font-size: .875em;
   font-weight: var(--psTypeFontWeightBook);
-  line-height: calc(var(--psTypeLineHeightStandard) / var(--psTypeFontSizeSmall));
+  line-height: calc(
+    var(--psTypeLineHeightStandard) / var(--psTypeFontSizeSmall)
+  );
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6,
-ul, ol, dl,
-blockquote, p, address,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
 hr,
 table,
-fieldset, figure,
+fieldset,
+figure,
 pre {
-  margin:0;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,14 +46,12 @@ ul, ol, dd {
   line-height: var(--psTypeLineHeightStandard);
 }
 
-ul,
-ol {
+ul, ol {
   padding-left: 0;
 }
 
 li {
-  > ul,
-  > ol {
+  > ul, > ol {
     margin-bottom: 0;
   }
 }
@@ -51,15 +61,10 @@ img {
   vertical-align: middle;
 }
 
-img[width],
-img[height] {
+img[width], img[height] {
   max-width: none;
 }
 
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
   font-family: inherit;
 }

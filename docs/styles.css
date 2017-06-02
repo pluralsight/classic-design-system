@@ -1,4 +1,5 @@
-@import url(https://cloud.typography.com/6966154/691568/css/fonts.css);:root {
+@import url(https://cloud.typography.com/6966154/691568/css/fonts.css);
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
@@ -92,7 +93,10 @@
 .side___J4pMy {
 }
 .main___5e9UJ {
-  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge) var(--psLayoutSpacingLarge) var(--psLayoutSpacingLarge);
+  padding: var(--psLayoutSpacingSmall)
+    var(--psLayoutSpacingLarge)
+    var(--psLayoutSpacingLarge)
+    var(--psLayoutSpacingLarge);
   background: var(--psColorsWhite);
 }
 .content___1nfao {
@@ -501,7 +505,7 @@
 .link___1vryl:hover {
   color: var(--psColorsBlack);
 }
-.link___1vryl:hover .box___E_LfL{
+.link___1vryl:hover .box___E_LfL {
   width: 8px;
   margin-right: 12px;
 }
@@ -726,13 +730,15 @@
 .root___1jeml {
   height: var(--topBarHeight);
   background: var(--psColorsGradientHorz);
-}.root___3j3d1 {
+}
+.root___3j3d1 {
   padding: var(--psLayoutSpacingLarge);
   background: var(--psColorsGray04);
 }
 .code___TUlcA {
   background: none;
-}:root {
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
@@ -820,11 +826,13 @@
 .root___23TJa {
   display: flex;
   flex-wrap: wrap;
-  margin: calc(-0.5 * var(--psLayoutSpacingLarge)) calc(-0.5 * var(--psLayoutSpacingLarge));
+  margin: calc(-0.5 * var(--psLayoutSpacingLarge))
+    calc(-0.5 * var(--psLayoutSpacingLarge));
 }
 .root___23TJa > div {
   margin: calc(var(--psLayoutSpacingLarge) / 2);
-}:root {
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
@@ -922,21 +930,19 @@
 }
 .rootDark___jXjZX {
 }
-.hex___ycjB8,
-.var___1N2ZH {
+.hex___ycjB8, .var___1N2ZH {
   white-space: nowrap;
 }
 .var___1N2ZH {
   opacity: 0.75;
 }
-.rootLight___3s0lB .hex___ycjB8,
-.rootLight___3s0lB .var___1N2ZH {
+.rootLight___3s0lB .hex___ycjB8, .rootLight___3s0lB .var___1N2ZH {
   color: var(--psColorsGray05);
 }
-.rootDark___jXjZX .hex___ycjB8,
-.rootDark___jXjZX .var___1N2ZH {
+.rootDark___jXjZX .hex___ycjB8, .rootDark___jXjZX .var___1N2ZH {
   color: var(--psColorsWhite);
-}:root {
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
@@ -1034,34 +1040,31 @@
 }
 .var___2f9O6 {
   opacity: 0.75;
-}.root___Ri5mE {
 }
-.start___2Qlta,
-.stop___Y3mh1,
-.var___3uinq {
+.root___Ri5mE {
+}
+.start___2Qlta, .stop___Y3mh1, .var___3uinq {
 }
 .start___2Qlta {
-  
 }
 .root___Ri5mE .stop___Y3mh1 {
   margin-left: auto;
 }
 .var___3uinq {
-}.root___2s3O1 {
+}
+.root___2s3O1 {
   flex-direction: column;
 }
-.start___31UKH,
-.stop___3XZK1,
-.var___7zF_L {
+.start___31UKH, .stop___3XZK1, .var___7zF_L {
 }
 .start___31UKH {
-  
 }
 .root___2s3O1 .stop___3XZK1 {
   margin-top: auto;
 }
 .var___7zF_L {
-}:root {
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
@@ -1155,8 +1158,7 @@
   padding: var(--psLayoutSpacingLarge);
   background: var(--psColorsGray04);
 }
-.css___yt8Ch
- {
+.css___yt8Ch {
   background: none;
   padding: 0;
 }
@@ -1268,8 +1270,7 @@
 .srcOptions___1yeyx {
   margin: var(--psLayoutSpacingLarge) 0 0 0;
 }
-.html___N3aFi,
-.react___3L7f- {
+.html___N3aFi, .react___3L7f- {
   background: none;
   padding: 0;
 }
@@ -1369,7 +1370,8 @@
 .root___3LLvR {
   color: var(--psColorsWhite);
   margin-bottom: var(--psLayoutSpacingXl);
-}:root {
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
@@ -1494,7 +1496,8 @@
   width: calc(50% - 6px);
   background: var(--psColorsWhite);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, .6);
-}:root {
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
@@ -1584,7 +1587,8 @@
   letter-spacing: var(--psTypeLetterSpacingGigantic);
   font-weight: var(--psTypeFontWeightLight);
   color: var(--psColorsGray06);
-}:root {
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
@@ -2039,8 +2043,10 @@
 .root___2qu9_ {
   display: flex;
   flex-wrap: wrap;
-  margin: calc(-0.5 * var(--psLayoutSpacingLarge)) calc(-0.5 * var(--psLayoutSpacingLarge));
-}:root {
+  margin: calc(-0.5 * var(--psLayoutSpacingLarge))
+    calc(-0.5 * var(--psLayoutSpacingLarge));
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
@@ -2182,7 +2188,8 @@
   font-size: var(--psTypeFontSizeExtraSmall);
   font-weight: var(--psTypeFontWeightBook);
   line-height: var(--psTypeLineHeightTight);
-}:root {
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
@@ -2268,7 +2275,6 @@
   --psMotionSpeedSlowest: 300ms;
 }
 .root___3cnsB {
-
 }
 :root {
   /* ui colors */
@@ -2599,8 +2605,10 @@
 }
 .ps-icon__fg--stroke___3wOf0 {
   stroke: var(--psColorsWhite);
-}.root___2GPyS {
-}:root {
+}
+.root___2GPyS {
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
@@ -2686,7 +2694,6 @@
   --psMotionSpeedSlowest: 300ms;
 }
 .root___STF9s {
-
 }
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -2712,12 +2719,7 @@ body {
 /**
  * Add the correct display in IE 9-.
  */
-article,
-aside,
-footer,
-header,
-nav,
-section {
+article, aside, footer, header, nav, section {
   display: block;
 }
 /**
@@ -2734,9 +2736,8 @@ h1 {
  * Add the correct display in IE 9-.
  * 1. Add the correct display in IE.
  */
-figcaption,
-figure,
-main { /* 1 */
+figcaption, figure, main {
+  /* 1 */
   display: block;
 }
 /**
@@ -2784,24 +2785,20 @@ abbr[title] {
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
-b,
-strong {
+b, strong {
   font-weight: inherit;
 }
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-b,
-strong {
+b, strong {
   font-weight: bolder;
 }
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-code,
-kbd,
-samp {
+code, kbd, samp {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
@@ -2828,8 +2825,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -2846,8 +2842,7 @@ sup {
 /**
  * Add the correct display in IE 9-.
  */
-audio,
-video {
+audio, video {
   display: inline-block;
 }
 /**
@@ -2875,11 +2870,7 @@ svg:not(:root) {
  * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
   font-family: sans-serif; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
@@ -2889,16 +2880,16 @@ textarea {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-button,
-input { /* 1 */
+button, input {
+  /* 1 */
   overflow: visible;
 }
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-button,
-select { /* 1 */
+button, select {
+  /* 1 */
   text-transform: none;
 }
 /**
@@ -2906,10 +2897,8 @@ select { /* 1 */
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-button,
-html [type="button"], /* 1 */
-[type="reset"],
-[type="submit"] {
+button, html [type="button"], /* 1 */
+[type="reset"], [type="submit"] {
   -webkit-appearance: button; /* 2 */
 }
 /**
@@ -2969,8 +2958,7 @@ textarea {
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-[type="checkbox"],
-[type="radio"] {
+[type="checkbox"], [type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -3133,19 +3121,31 @@ html {
   font-family: var(--psTypeFontFamily);
   font-size: .875em;
   font-weight: var(--psTypeFontWeightBook);
-  line-height: calc(var(--psTypeLineHeightStandard) / var(--psTypeFontSizeSmall));
+  line-height: calc(
+    var(--psTypeLineHeightStandard) / var(--psTypeFontSizeSmall)
+  );
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-h1, h2, h3, h4, h5, h6,
-ul, ol, dl,
-blockquote, p, address,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
 hr,
 table,
-fieldset, figure,
+fieldset,
+figure,
 pre {
-  margin:0;
+  margin: 0;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: var(--psTypeFontWeightBook);
@@ -3154,13 +3154,11 @@ ul, ol, dd {
   margin-left: var(--psLayoutSpacingLarge);
   line-height: var(--psTypeLineHeightStandard);
 }
-ul,
-ol {
+ul, ol {
   padding-left: 0;
 }
 li {
-  > ul,
-  > ol {
+  > ul, > ol {
     margin-bottom: 0;
   }
 }
@@ -3168,15 +3166,10 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-img[width],
-img[height] {
+img[width], img[height] {
   max-width: none;
 }
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
   font-family: inherit;
 }
 html, body {

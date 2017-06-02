@@ -23,8 +23,7 @@
 .srcOptions {
   margin: var(--psLayoutSpacingLarge) 0 0 0;
 }
-.html,
-.react {
+.html, .react {
   background: none;
   padding: 0;
 }

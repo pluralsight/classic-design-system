@@ -45,7 +45,7 @@
     "react-test-renderer": "^15.5.4"
   },
   "lint-staged": {
-    "*.js": [
+    "*.(js|css)": [
       "node_modules/.bin/prettier --single-quote --no-semi --write",
       "git add"
     ]

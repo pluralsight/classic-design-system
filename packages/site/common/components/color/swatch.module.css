@@ -15,18 +15,15 @@
 .rootDark {
   composes: root;
 }
-.hex,
-.var {
+.hex, .var {
   white-space: nowrap;
 }
 .var {
   opacity: 0.75;
 }
-.rootLight .hex,
-.rootLight .var {
+.rootLight .hex, .rootLight .var {
   color: var(--psColorsGray05);
 }
-.rootDark .hex,
-.rootDark .var {
+.rootDark .hex, .rootDark .var {
   color: var(--psColorsWhite);
 }
