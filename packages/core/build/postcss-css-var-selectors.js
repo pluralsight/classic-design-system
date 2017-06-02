@@ -26,7 +26,7 @@ module.exports = postcss.plugin('css-var-selectors', options => {
         const isCssVar = /^--/.test(decl.prop)
         if (isCssVar) createSelectorForVar(decl, options)
       })
-      // TODO: instead, remove parents with no decls
+
       const isCssVarRoot = rule.selector === ':root'
       if (isCssVarRoot) rule.remove()
     })
