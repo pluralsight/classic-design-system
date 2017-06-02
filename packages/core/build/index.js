@@ -1,3 +1,4 @@
+// TODO: upgrade node 8, rm this for util.promisify
 const promisify = require('promisify-node')
 
 const autoprefixer = require('autoprefixer')
@@ -6,6 +7,7 @@ const path = require('path')
 const postcss = require('postcss')
 const postcssImport = require('postcss-import')
 
+const postcssCssVarSassVar = require('./postcss-css-var-sass-var')
 const postcssCssVarSelectors = require('./postcss-css-var-selectors')
 
 const transformPropName = name => {
@@ -56,6 +58,12 @@ const transform = async (src, dest, postcssTransforms) => {
   transform(src, path.join('dist', 'index.css'), [
     postcssImport,
     postcssCssVarSelectors(postcssCssVarSelectorsOptions),
+    autoprefixer(autoprefixerOptions)
+  ])
+
+  transform(src, path.join('dist', 'index.sass'), [
+    postcssImport,
+    postcssCssVarSassVar(),
     autoprefixer(autoprefixerOptions)
   ])
 })()
