@@ -15,7 +15,7 @@ export const propDefs = {
 
 const getClassName = props =>
   classNames({
-    [props.className]: true,
+    [props.className]: props.className,
     [props.css['ps-heading']]: true,
     [props.css['ps-heading--' + props.size]]: props.size
   })
