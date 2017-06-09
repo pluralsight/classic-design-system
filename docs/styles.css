@@ -2362,6 +2362,7 @@
 }
 .ps-button___2EFfR {
   display: inline-flex;
+  justify-content: center;
   align-items: stretch;
   padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingMedium);
   border: 0;
@@ -2501,6 +2502,21 @@
 .ps-button--icon-align-right___1H91Q .ps-button__icon___3o9gL {
   margin-right: 0;
   margin-left: var(--psLayoutSpacingExtraSmall);
+}
+.ps-button--icon-only___1iOv7 {
+  padding: 0;
+}
+.ps-button--icon-only___1iOv7.ps-button--tiny___cmVTE {
+  width: 24px;
+}
+.ps-button--icon-only___1iOv7.ps-button--small___3bU65 {
+  width: 32px;
+}
+.ps-button--icon-only___1iOv7.ps-button--medium___ATQAu {
+  width: 40px;
+}
+.ps-button--icon-only___1iOv7.ps-button--large___1zAYp {
+  width: 48px;
 }
 .ps-button--icon-only___1iOv7 .ps-button__icon___3o9gL {
   margin: 0;

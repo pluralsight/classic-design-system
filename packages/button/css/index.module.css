@@ -2,6 +2,7 @@
 
 .ps-button {
   display: inline-flex;
+  justify-content: center;
   align-items: stretch;
   padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingMedium);
   border: 0;
@@ -146,6 +147,21 @@
 .ps-button--icon-align-right .ps-button__icon {
   margin-right: 0;
   margin-left: var(--psLayoutSpacingExtraSmall);
+}
+.ps-button--icon-only {
+  padding: 0;
+}
+.ps-button--icon-only.ps-button--tiny {
+  width: 24px;
+}
+.ps-button--icon-only.ps-button--small {
+  width: 32px;
+}
+.ps-button--icon-only.ps-button--medium {
+  width: 40px;
+}
+.ps-button--icon-only.ps-button--large {
+  width: 48px;
 }
 .ps-button--icon-only .ps-button__icon {
   margin: 0;
