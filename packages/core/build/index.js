@@ -18,7 +18,6 @@ const propNameTests = [
   { match: /psColorsGradient/, prop: 'background-color' }
 ]
 const postcssCssVarSelectorsOptions = { propNameTests }
-
 ;(async _ => {
   await fs.mkdir('dist')
 

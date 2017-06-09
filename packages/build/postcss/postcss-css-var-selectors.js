@@ -25,7 +25,9 @@ module.exports = postcss.plugin('css-var-selectors', options => {
       rule.walkDecls((decl, i) => {
         const isCssVar = /^--/.test(decl.prop)
         if (isCssVar)
-          decl.root().insertAfter(decl.root(), createSelectorForVar(decl, options))
+          decl
+            .root()
+            .insertAfter(decl.root(), createSelectorForVar(decl, options))
       })
 
       const isCssVarRoot = rule.selector === ':root'

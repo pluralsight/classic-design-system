@@ -20,10 +20,10 @@ export const propDefs = {
 }
 
 const getClassName = props =>
-          classNames({
-            [props.css['ps-icon']]: true,
-            [props.css['ps-icon--' + props.size]]: props.size
-          })
+  classNames({
+    [props.css['ps-icon']]: true,
+    [props.css['ps-icon--' + props.size]]: props.size
+  })
 
 const Icon = props =>
   <span className={getClassName(props)}>

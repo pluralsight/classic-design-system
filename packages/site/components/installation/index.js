@@ -22,13 +22,17 @@ export default styleable(css)(props =>
       <li>
         Loading assets (JS and CSS) as modules - eg,
         {' '}
-        <Link><a href="https://webpack.js.org/" target="_blank">Webpack</a></Link>
+        <Link>
+          <a href="https://webpack.js.org/" target="_blank">Webpack</a>
+        </Link>
       </li>
       <li>
         Transpiling nextgen JS - eg,
         {' '}
-        <Link><a href="https://github.com/babel/babel-loader" target="_blank">
-          babel-loader</a>
+        <Link>
+          <a href="https://github.com/babel/babel-loader" target="_blank">
+            babel-loader
+          </a>
         </Link>
       </li>
     </ul>
@@ -57,8 +61,10 @@ export default styleable(css)(props =>
       {' '}
       for transpilation. Presumably you're using
       {' '}
-      <Link><a href="https://github.com/babel/babel-loader" target="_blank">
-        babel-loader</a>
+      <Link>
+        <a href="https://github.com/babel/babel-loader" target="_blank">
+          babel-loader
+        </a>
       </Link>
       {' '}
       already.
@@ -80,14 +86,18 @@ export default styleable(css)(props =>
     <P>
       The Design System components use
       {' '}
-      <Link><a href="https://github.com/css-modules/css-modules" target="_blank">
-        CSS Modules</a>
+      <Link>
+        <a href="https://github.com/css-modules/css-modules" target="_blank">
+          CSS Modules
+        </a>
       </Link>
       {' '}
       and
       {' '}
-      <Link><a href="https://github.com/postcss/postcss" target="_blank">
-        PostCSS</a>
+      <Link>
+        <a href="https://github.com/postcss/postcss" target="_blank">
+          PostCSS
+        </a>
       </Link>
       . The component's CSS modules are published to npm alongside the source
       JavaScript. The source JavaScript will take care of importing it, but your
@@ -126,12 +136,14 @@ export default styleable(css)(props =>
       Note: If you use traditional CSS stylesheets in addition to CSS modules,
       you will need to follow these
       {' '}
-      <Link><a
-        className="graybeard"
-        href="https://jaketrent.com/post/load-both-css-and-css-modules-webpack/"
-        target="_blank"
-      >
-        special instructions</a>
+      <Link>
+        <a
+          className="graybeard"
+          href="https://jaketrent.com/post/load-both-css-and-css-modules-webpack/"
+          target="_blank"
+        >
+          special instructions
+        </a>
       </Link>
       .
     </P>
