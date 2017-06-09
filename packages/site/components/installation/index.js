@@ -8,9 +8,11 @@ import { Code, P } from '../../common/components'
 
 export default styleable(css)(props =>
   <div className={props.css.root}>
-    <Heading.Xxl>Component Installation</Heading.Xxl>
+    <Heading size="xx-large"><h1>Component Installation</h1></Heading>
 
-    <Heading.Large>0. Determine Your Build System Compatibility</Heading.Large>
+    <Heading size="large">
+      <h2>0. Determine Your Build System Compatibility</h2>
+    </Heading>
     <P>
       You'll need a build system in your development environment that supports
       the following:
@@ -39,7 +41,7 @@ export default styleable(css)(props =>
       </li>
     </ul>
 
-    <Heading.Large>1. Add the Component Dependency</Heading.Large>
+    <Heading size="large"><h2>1. Add the Component Dependency</h2></Heading>
     <P>
       Install the component dependency using NPM:
     </P>
@@ -53,7 +55,7 @@ export default styleable(css)(props =>
       test components as they are improved.
     </P>
 
-    <Heading.Large>2. Support JavaScript Transpiling</Heading.Large>
+    <Heading size="large"><h2>2. Support JavaScript Transpiling</h2></Heading>
     <P>
       The Design System components are published to npm in their source ES6
       format. They require transpilation to be used in browsers only supporting
@@ -84,7 +86,7 @@ export default styleable(css)(props =>
 }`}
     </Code>
 
-    <Heading.Large>3. Support CSS Imports</Heading.Large>
+    <Heading size="large"><h2>3. Support CSS Imports</h2></Heading>
     <P>
       The Design System components use
       {' '}
@@ -150,7 +152,7 @@ export default styleable(css)(props =>
       .
     </P>
 
-    <Heading.Large>4. Use Component in Your Project</Heading.Large>
+    <Heading size="large"><h2>4. Use Component in Your Project</h2></Heading>
     <P>
       Currently the only component type the Design System supports is React
       components. But it is setup to support other types in the future.

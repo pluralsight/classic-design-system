@@ -2,6 +2,7 @@
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
+  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
   --psTypeFontSizeXxxl: 48px;
   --psTypeFontSizeXxl: 36px;

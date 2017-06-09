@@ -1,5 +1,6 @@
 :root {
   /* spacing */
+  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
   --psLayoutSpacingExtraSmall: 8px;
   --psLayoutSpacingSmall: 12px;

@@ -12,7 +12,7 @@ import Icon from '@pluralsight/ps-icon/react'
 export default styleable(css)(props => {
   return (
     <div className={props.css.root}>
-      <Heading.Xxl>Buttons</Heading.Xxl>
+      <Heading size="xx-large"><h1>Buttons</h1></Heading>
 
       <P>
         Install the component dependency:
@@ -37,7 +37,7 @@ export default styleable(css)(props => {
         .
       </P>
 
-      <Heading.Large>Button appearance</Heading.Large>
+      <Heading size="large"><h2>Button appearance</h2></Heading>
       <P>
         Define a button appearance by ...{' '}
       </P>
@@ -47,7 +47,7 @@ export default styleable(css)(props => {
         permutations={[{}, { appearance: 'stroke' }, { appearance: 'flat' }]}
       />
 
-      <Heading.Large>Button sizes</Heading.Large>
+      <Heading size="large"><h2>Button sizes</h2></Heading>
       <Example.React
         component={<Button>Click me</Button>}
         name="Button"
@@ -59,7 +59,7 @@ export default styleable(css)(props => {
         ]}
       />
 
-      <Heading.Large>Button with icon</Heading.Large>
+      <Heading size="large"><h2>Button with icon</h2></Heading>
       <Example.React
         component={<Button>Click me</Button>}
         name="Button"
@@ -79,7 +79,7 @@ export default styleable(css)(props => {
         ]}
       />
 
-      <Heading.Large>Button with lone icon</Heading.Large>
+      <Heading size="large"><h2>Button with lone icon</h2></Heading>
       <Example.React
         component={<Button />}
         name="Button"
@@ -99,7 +99,7 @@ export default styleable(css)(props => {
         ]}
       />
 
-      <Heading.Large>Disabled button</Heading.Large>
+      <Heading size="large"><h2>Disabled button</h2></Heading>
       <Example.React
         component={<Button>Disabled button</Button>}
         name="Button"

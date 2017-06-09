@@ -1,0 +1,23 @@
+@import "@pluralsight/ps-design-system-core";
+
+.ps-heading {
+}
+
+.ps-heading--xx-large {
+  font-size: var(--psTypeFontSizeXxl);
+  letter-spacing: var(--psTypeLetterSpacingXxl);
+  font-weight: var(--psTypeFontWeightLight);
+  margin: var(--psLayoutSpacingXxl) 0;
+}
+.ps-heading--large {
+  font-size: var(--psTypeFontSizeLarge);
+  letter-spacing: var(--psTypeLetterSpacingLarge);
+  font-weight: var(--psTypeFontWeightBook);
+  margin: var(--psLayoutSpacingXl) 0 var(--psLayoutSpacingSmall) 0;
+}
+.ps-heading--medium {
+  font-size: var(--psTypeFontSizeMedium);
+  letter-spacing: var(--psTypeLetterSpacingMedium);
+  font-weight: var(--psTypeFontWeightMedium);
+  margin: var(--psLayoutSpacingMedium) 0 var(--psLayoutSpacingSmall) 0;
+}

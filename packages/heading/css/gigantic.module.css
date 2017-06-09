@@ -1,8 +1,0 @@
-@import "@pluralsight/ps-design-system-core";
-
-.root {
-  font-size: var(--psTypeFontSizeGigantic);
-  letter-spacing: var(--psTypeLetterSpacingGigantic);
-  font-weight: var(--psTypeFontWeightLight);
-  color: var(--psColorsGray06);
-}

@@ -7,7 +7,7 @@ import { P } from '../common/components'
 
 export default () =>
   <Chrome>
-    <Heading.Gigantic>Welcome!</Heading.Gigantic>
+    <Heading size="xx-large"><h2>Welcome!</h2></Heading>
     <P>
       Welcome to the Pluralsight Design System.
     </P>

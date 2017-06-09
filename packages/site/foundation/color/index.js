@@ -12,20 +12,20 @@ import UiColors from './ui'
 export default styleable(css)(props => {
   return (
     <div className={props.css.root}>
-      <Heading.Xxl>Color</Heading.Xxl>
+      <Heading size="xx-large"><h1>Color</h1></Heading>
 
-      <Heading.Large>Grayscale colors</Heading.Large>
+      <Heading size="large"><h2>Grayscale colors</h2></Heading>
       <P>Grayscale colors are used for containers, text, lines and borders.</P>
       <GrayscaleColors />
 
-      <Heading.Large>UI colors</Heading.Large>
+      <Heading size="large"><h2>UI colors</h2></Heading>
       <P>
         UI colors emphasize interface elements such as buttons, links, accents
         and vizualization.
       </P>
       <UiColors />
 
-      <Heading.Large>Gradient</Heading.Large>
+      <Heading size="large"><h2>Gradient</h2></Heading>
       <P>
         So fresh. Use the standard gradient to emphasize and showcase the brand.
         Use sparingly.
