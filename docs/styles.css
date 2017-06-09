@@ -1856,11 +1856,11 @@
   --psMotionSpeedSlower: 250ms;
   --psMotionSpeedSlowest: 300ms;
 }
-.root___1ziYz {
+.ps-link___k4GsR {
   color: var(--psColorsOrange);
   text-decoration: none;
 }
-.root___1ziYz:hover {
+.ps-link___k4GsR:hover {
   text-decoration: underline;
 }
 :root {

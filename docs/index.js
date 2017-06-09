@@ -17899,8 +17899,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
@@ -17915,21 +17913,12 @@ var _indexModule2 = _interopRequireDefault(_indexModule);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-var rmSystemProps = function rmSystemProps(props) {
-  var css = props.css,
-      rest = _objectWithoutProperties(props, ['css']);
-
-  return rest;
-};
-
 exports.default = (0, _reactStyleable2.default)(_indexModule2.default)(function (props) {
-  return _react2.default.createElement(
-    'a',
-    _extends({ className: props.css.root }, rmSystemProps(props)),
-    props.children
-  );
+  var child = _react2.default.Children.only(props.children);
+  var newProps = {
+    className: (child.props.className ? child.props.className + ' ' : '') + props.css['ps-link']
+  };
+  return _react2.default.cloneElement(child, newProps);
 });
 
 /***/ }),
@@ -18720,8 +18709,12 @@ exports.default = (0, _reactStyleable2.default)(_index2.default)(function (props
         ' ',
         _react2.default.createElement(
           _components.Link,
-          { href: 'https://nodejs.org/', target: '_blank' },
-          'Node'
+          null,
+          _react2.default.createElement(
+            'a',
+            { href: 'https://nodejs.org/', target: '_blank' },
+            'Node'
+          )
         )
       ),
       _react2.default.createElement(
@@ -18731,8 +18724,12 @@ exports.default = (0, _reactStyleable2.default)(_index2.default)(function (props
         ' ',
         _react2.default.createElement(
           _components.Link,
-          { href: 'https://webpack.js.org/', target: '_blank' },
-          'Webpack'
+          null,
+          _react2.default.createElement(
+            'a',
+            { href: 'https://webpack.js.org/', target: '_blank' },
+            'Webpack'
+          )
         )
       ),
       _react2.default.createElement(
@@ -18742,8 +18739,12 @@ exports.default = (0, _reactStyleable2.default)(_index2.default)(function (props
         ' ',
         _react2.default.createElement(
           _components.Link,
-          { href: 'https://github.com/babel/babel-loader', target: '_blank' },
-          'babel-loader'
+          null,
+          _react2.default.createElement(
+            'a',
+            { href: 'https://github.com/babel/babel-loader', target: '_blank' },
+            'babel-loader'
+          )
         )
       )
     ),
@@ -18779,16 +18780,24 @@ exports.default = (0, _reactStyleable2.default)(_index2.default)(function (props
       ' ',
       _react2.default.createElement(
         _components.Link,
-        { href: 'http://babeljs.io/', target: '_blank' },
-        'Babel'
+        null,
+        _react2.default.createElement(
+          'a',
+          { href: 'http://babeljs.io/', target: '_blank' },
+          'Babel'
+        )
       ),
       ' ',
       'for transpilation. Presumably you\'re using',
       ' ',
       _react2.default.createElement(
         _components.Link,
-        { href: 'https://github.com/babel/babel-loader', target: '_blank' },
-        'babel-loader'
+        null,
+        _react2.default.createElement(
+          'a',
+          { href: 'https://github.com/babel/babel-loader', target: '_blank' },
+          'babel-loader'
+        )
       ),
       ' ',
       'already.'
@@ -18820,16 +18829,24 @@ exports.default = (0, _reactStyleable2.default)(_index2.default)(function (props
       ' ',
       _react2.default.createElement(
         _components.Link,
-        { href: 'https://github.com/css-modules/css-modules', target: '_blank' },
-        'CSS Modules'
+        null,
+        _react2.default.createElement(
+          'a',
+          { href: 'https://github.com/css-modules/css-modules', target: '_blank' },
+          'CSS Modules'
+        )
       ),
       ' ',
       'and',
       ' ',
       _react2.default.createElement(
         _components.Link,
-        { href: 'https://github.com/postcss/postcss', target: '_blank' },
-        'PostCSS'
+        null,
+        _react2.default.createElement(
+          'a',
+          { href: 'https://github.com/postcss/postcss', target: '_blank' },
+          'PostCSS'
+        )
       ),
       '. The component\'s CSS modules are published to npm alongside the source JavaScript. The source JavaScript will take care of importing it, but your Webpack config needs to support it.'
     ),
@@ -18856,11 +18873,16 @@ exports.default = (0, _reactStyleable2.default)(_index2.default)(function (props
       ' ',
       _react2.default.createElement(
         _components.Link,
-        {
-          href: 'https://jaketrent.com/post/load-both-css-and-css-modules-webpack/',
-          target: '_blank'
-        },
-        'special instructions'
+        null,
+        _react2.default.createElement(
+          'a',
+          {
+            className: 'graybeard',
+            href: 'https://jaketrent.com/post/load-both-css-and-css-modules-webpack/',
+            target: '_blank'
+          },
+          'special instructions'
+        )
       ),
       '.'
     ),
@@ -19779,7 +19801,7 @@ module.exports = {"root":"root___2kWyE"};
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"root":"root___1ziYz"};
+module.exports = {"ps-link":"ps-link___k4GsR"};
 
 /***/ }),
 /* 225 */

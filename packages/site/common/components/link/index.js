@@ -3,13 +3,12 @@ import styleable from 'react-styleable'
 
 import css from './index.module.css'
 
-const rmSystemProps = props => {
-  const { css, ...rest } = props
-  return rest
-}
-
 export default styleable(css)(props =>
-  <a className={props.css.root} {...rmSystemProps(props)}>
-    {props.children}
-  </a>
-)
+                              {
+                                const child = React.Children.only(props.children)
+                                const newProps = {
+                                  className: (child.props.className ? `${child.props.className} ` : '') + props.css['ps-link']
+                                }
+                                return React.cloneElement(child, newProps)
+                              }
+                             )

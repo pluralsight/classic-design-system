@@ -17,18 +17,18 @@ export default styleable(css)(props =>
       <li>
         Installing modules from NPM - eg,
         {' '}
-        <Link href="https://nodejs.org/" target="_blank">Node</Link>
+        <Link><a href="https://nodejs.org/" target="_blank">Node</a></Link>
       </li>
       <li>
         Loading assets (JS and CSS) as modules - eg,
         {' '}
-        <Link href="https://webpack.js.org/" target="_blank">Webpack</Link>
+        <Link><a href="https://webpack.js.org/" target="_blank">Webpack</a></Link>
       </li>
       <li>
         Transpiling nextgen JS - eg,
         {' '}
-        <Link href="https://github.com/babel/babel-loader" target="_blank">
-          babel-loader
+        <Link><a href="https://github.com/babel/babel-loader" target="_blank">
+          babel-loader</a>
         </Link>
       </li>
     </ul>
@@ -53,12 +53,12 @@ export default styleable(css)(props =>
       format. They require transpilation to be used in browsers only supporting
       ES5. We recommend
       {' '}
-      <Link href="http://babeljs.io/" target="_blank">Babel</Link>
+      <Link><a href="http://babeljs.io/" target="_blank">Babel</a></Link>
       {' '}
       for transpilation. Presumably you're using
       {' '}
-      <Link href="https://github.com/babel/babel-loader" target="_blank">
-        babel-loader
+      <Link><a href="https://github.com/babel/babel-loader" target="_blank">
+        babel-loader</a>
       </Link>
       {' '}
       already.
@@ -80,14 +80,14 @@ export default styleable(css)(props =>
     <P>
       The Design System components use
       {' '}
-      <Link href="https://github.com/css-modules/css-modules" target="_blank">
-        CSS Modules
+      <Link><a href="https://github.com/css-modules/css-modules" target="_blank">
+        CSS Modules</a>
       </Link>
       {' '}
       and
       {' '}
-      <Link href="https://github.com/postcss/postcss" target="_blank">
-        PostCSS
+      <Link><a href="https://github.com/postcss/postcss" target="_blank">
+        PostCSS</a>
       </Link>
       . The component's CSS modules are published to npm alongside the source
       JavaScript. The source JavaScript will take care of importing it, but your
@@ -126,11 +126,12 @@ export default styleable(css)(props =>
       Note: If you use traditional CSS stylesheets in addition to CSS modules,
       you will need to follow these
       {' '}
-      <Link
+      <Link><a
+        className="graybeard"
         href="https://jaketrent.com/post/load-both-css-and-css-modules-webpack/"
         target="_blank"
       >
-        special instructions
+        special instructions</a>
       </Link>
       .
     </P>

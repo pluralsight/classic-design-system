@@ -1,10 +1,9 @@
 @import "@pluralsight/ps-design-system-core";
 
-.root {
+.ps-link {
   color: var(--psColorsOrange);
   text-decoration: none;
 }
-
-.root:hover {
+.ps-link:hover {
   text-decoration: underline;
 }
