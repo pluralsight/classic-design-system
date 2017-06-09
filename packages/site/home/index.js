@@ -1,8 +1,9 @@
+import Heading from '@pluralsight/ps-heading/react'
 import { Link } from 'react-router-dom'
 import React from 'react'
 
 import Chrome from '../layouts/chrome'
-import { Heading, P } from '../common/components'
+import { P } from '../common/components'
 
 export default () =>
   <Chrome>

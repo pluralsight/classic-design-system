@@ -1,10 +1,10 @@
 import React from 'react'
 import styleable from 'react-styleable'
 
-import css from './xxl.module.css'
+import css from '../css/gigantic.module.css'
 
 export default styleable(css)(props =>
-  <h1 className={props.css.root}>
+  <h2 className={props.css.root}>
     {props.children}
-  </h1>
+  </h2>
 )

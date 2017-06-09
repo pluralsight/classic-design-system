@@ -1,9 +1,10 @@
+import Heading from '@pluralsight/ps-heading/react'
 import Link from '@pluralsight/ps-link/react'
 import React from 'react'
 import styleable from 'react-styleable'
 
 import css from './index.css'
-import { Code, Heading, P } from '../../common/components'
+import { Code, P } from '../../common/components'
 
 export default styleable(css)(props =>
   <div className={props.css.root}>

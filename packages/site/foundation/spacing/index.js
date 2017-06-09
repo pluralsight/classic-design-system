@@ -1,7 +1,8 @@
+import Heading from '@pluralsight/ps-heading/react'
 import { Link as RouterLink } from 'react-router-dom'
 import React from 'react'
 
-import { Heading, P } from '../../common/components'
+import { P } from '../../common/components'
 import SpacingIncrements from './increments'
 import IndividualSpacing from './individual'
 

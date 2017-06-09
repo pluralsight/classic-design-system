@@ -731,6 +731,281 @@
   height: var(--topBarHeight);
   background: var(--psColorsGradientHorz);
 }
+:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
+  /* role colors */
+  --psColorsRoleYellowLighter: #fd39bc;
+  --psColorsRoleYellowLight: #fbcd64;
+  --psColorsRoleYellow: #f8b721;
+  --psColorsRoleYellowDark: #ae8017;
+  --psColorsRoleYellowDarker: #7c5b12;
+}
+:root {
+  /* spacing */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXl: 40px;
+  --psLayoutSpacingXxl: 56px;
+}
+:root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+  /* font size */
+  --psTypeFontSizeGigantic: 60px;
+  --psTypeFontSizeXxxl: 48px;
+  --psTypeFontSizeXxl: 36px;
+  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeLarge: 24px;
+  --psTypeFontSizeMedium: 18px;
+  --psTypeFontSizeSmall: 14px;
+  --psTypeFontSizeExtraSmall: 12px;
+
+  /* letter spacing */
+  --psTypeLetterSpacingGigantic: -1px;
+  --psTypeLetterSpacingXxxl: -0.72px;
+  --psTypeLetterSpacingXxl: -0.54px;
+  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingLarge: 0.36px;
+  --psTypeLetterSpacingMedium: 0;
+  --psTypeLetterSpacingSmall: 0;
+  --psTypeLetterSpacingExtraSmall: 0;
+
+  /* font weight */
+  --psTypeFontWeightBold: 700;
+  --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightBook: 400;
+  --psTypeFontWeightLight: 300;
+  --psTypeFontWeightExtraLight: 200;
+
+  /* line height */
+  --psTypeLineHeightTight: 20px;
+  --psTypeLineHeightStandard: 24px;
+  --psTypeLineHeightExtra: 32px;
+  --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
+.root___1jWPt {
+  font-size: var(--psTypeFontSizeGigantic);
+  letter-spacing: var(--psTypeLetterSpacingGigantic);
+  font-weight: var(--psTypeFontWeightLight);
+  color: var(--psColorsGray06);
+}
+:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
+  /* role colors */
+  --psColorsRoleYellowLighter: #fd39bc;
+  --psColorsRoleYellowLight: #fbcd64;
+  --psColorsRoleYellow: #f8b721;
+  --psColorsRoleYellowDark: #ae8017;
+  --psColorsRoleYellowDarker: #7c5b12;
+}
+:root {
+  /* spacing */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXl: 40px;
+  --psLayoutSpacingXxl: 56px;
+}
+:root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+  /* font size */
+  --psTypeFontSizeGigantic: 60px;
+  --psTypeFontSizeXxxl: 48px;
+  --psTypeFontSizeXxl: 36px;
+  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeLarge: 24px;
+  --psTypeFontSizeMedium: 18px;
+  --psTypeFontSizeSmall: 14px;
+  --psTypeFontSizeExtraSmall: 12px;
+
+  /* letter spacing */
+  --psTypeLetterSpacingGigantic: -1px;
+  --psTypeLetterSpacingXxxl: -0.72px;
+  --psTypeLetterSpacingXxl: -0.54px;
+  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingLarge: 0.36px;
+  --psTypeLetterSpacingMedium: 0;
+  --psTypeLetterSpacingSmall: 0;
+  --psTypeLetterSpacingExtraSmall: 0;
+
+  /* font weight */
+  --psTypeFontWeightBold: 700;
+  --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightBook: 400;
+  --psTypeFontWeightLight: 300;
+  --psTypeFontWeightExtraLight: 200;
+
+  /* line height */
+  --psTypeLineHeightTight: 20px;
+  --psTypeLineHeightStandard: 24px;
+  --psTypeLineHeightExtra: 32px;
+  --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
+.root___22OTA {
+  font-size: var(--psTypeFontSizeXxl);
+  letter-spacing: var(--psTypeLetterSpacingXxl);
+  font-weight: var(--psTypeFontWeightLight);
+  color: var(--psColorsGray06);
+  margin: var(--psLayoutSpacingXxl) 0;
+}
+:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
+  /* role colors */
+  --psColorsRoleYellowLighter: #fd39bc;
+  --psColorsRoleYellowLight: #fbcd64;
+  --psColorsRoleYellow: #f8b721;
+  --psColorsRoleYellowDark: #ae8017;
+  --psColorsRoleYellowDarker: #7c5b12;
+}
+:root {
+  /* spacing */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXl: 40px;
+  --psLayoutSpacingXxl: 56px;
+}
+:root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+  /* font size */
+  --psTypeFontSizeGigantic: 60px;
+  --psTypeFontSizeXxxl: 48px;
+  --psTypeFontSizeXxl: 36px;
+  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeLarge: 24px;
+  --psTypeFontSizeMedium: 18px;
+  --psTypeFontSizeSmall: 14px;
+  --psTypeFontSizeExtraSmall: 12px;
+
+  /* letter spacing */
+  --psTypeLetterSpacingGigantic: -1px;
+  --psTypeLetterSpacingXxxl: -0.72px;
+  --psTypeLetterSpacingXxl: -0.54px;
+  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingLarge: 0.36px;
+  --psTypeLetterSpacingMedium: 0;
+  --psTypeLetterSpacingSmall: 0;
+  --psTypeLetterSpacingExtraSmall: 0;
+
+  /* font weight */
+  --psTypeFontWeightBold: 700;
+  --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightBook: 400;
+  --psTypeFontWeightLight: 300;
+  --psTypeFontWeightExtraLight: 200;
+
+  /* line height */
+  --psTypeLineHeightTight: 20px;
+  --psTypeLineHeightStandard: 24px;
+  --psTypeLineHeightExtra: 32px;
+  --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
+.root___3d55s {
+  font-size: var(--psTypeFontSizeLarge);
+  letter-spacing: var(--psTypeLetterSpacingLarge);
+  font-weight: var(--psTypeFontWeightBook);
+  color: var(--psColorsGray06);
+  margin: var(--psLayoutSpacingXl) 0 var(--psLayoutSpacingSmall) 0;
+}
 .root___3j3d1 {
   padding: var(--psLayoutSpacingLarge);
   background: var(--psColorsGray04);
@@ -1496,281 +1771,6 @@
   width: calc(50% - 6px);
   background: var(--psColorsWhite);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, .6);
-}
-:root {
-  /* ui colors */
-  --psColorsWhite: #ffffff;
-  --psColorsBone: #f2f2f2;
-  --psColorsGray01: #cccccc;
-  --psColorsGray02: #aaaaaa;
-  --psColorsGray03: #555555;
-  --psColorsGray04: #363636;
-  --psColorsGray05: #222222;
-  --psColorsGray06: #181818;
-  --psColorsBlack: #000000;
-
-  --psColorsPink: #e80a89;
-  --psColorsRed: #de3636;
-  --psColorsOrange: #f96816;
-  --psColorsOrangeLight: #ff7b39;
-  --psColorsYellow: #ffc200;
-  --psColorsGreenLight: #86ce21;
-  --psColorsBlue: #137bc2;
-
-  /* gradients */
-  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
-  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
-
-  /* role colors */
-  --psColorsRoleYellowLighter: #fd39bc;
-  --psColorsRoleYellowLight: #fbcd64;
-  --psColorsRoleYellow: #f8b721;
-  --psColorsRoleYellowDark: #ae8017;
-  --psColorsRoleYellowDarker: #7c5b12;
-}
-:root {
-  /* spacing */
-  --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
-  --psLayoutSpacingSmall: 12px;
-  --psLayoutSpacingMedium: 16px;
-  --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
-}
-:root {
-  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
-
-  /* font size */
-  --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
-  --psTypeFontSizeLarge: 24px;
-  --psTypeFontSizeMedium: 18px;
-  --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
-
-  /* letter spacing */
-  --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
-  --psTypeLetterSpacingLarge: 0.36px;
-  --psTypeLetterSpacingMedium: 0;
-  --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
-
-  /* font weight */
-  --psTypeFontWeightBold: 700;
-  --psTypeFontWeightMedium: 500;
-  --psTypeFontWeightBook: 400;
-  --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
-
-  /* line height */
-  --psTypeLineHeightTight: 20px;
-  --psTypeLineHeightStandard: 24px;
-  --psTypeLineHeightExtra: 32px;
-  --psTypeLineHeightHuge: 40px;
-}
-:root {
-  /* motion */
-  --psMotionSpeedFastest: 100ms;
-  --psMotionSpeedFaster: 150ms;
-  --psMotionSpeedNormal: 200ms;
-  --psMotionSpeedSlower: 250ms;
-  --psMotionSpeedSlowest: 300ms;
-}
-.root___2wsCN {
-  font-size: var(--psTypeFontSizeGigantic);
-  letter-spacing: var(--psTypeLetterSpacingGigantic);
-  font-weight: var(--psTypeFontWeightLight);
-  color: var(--psColorsGray06);
-}
-:root {
-  /* ui colors */
-  --psColorsWhite: #ffffff;
-  --psColorsBone: #f2f2f2;
-  --psColorsGray01: #cccccc;
-  --psColorsGray02: #aaaaaa;
-  --psColorsGray03: #555555;
-  --psColorsGray04: #363636;
-  --psColorsGray05: #222222;
-  --psColorsGray06: #181818;
-  --psColorsBlack: #000000;
-
-  --psColorsPink: #e80a89;
-  --psColorsRed: #de3636;
-  --psColorsOrange: #f96816;
-  --psColorsOrangeLight: #ff7b39;
-  --psColorsYellow: #ffc200;
-  --psColorsGreenLight: #86ce21;
-  --psColorsBlue: #137bc2;
-
-  /* gradients */
-  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
-  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
-
-  /* role colors */
-  --psColorsRoleYellowLighter: #fd39bc;
-  --psColorsRoleYellowLight: #fbcd64;
-  --psColorsRoleYellow: #f8b721;
-  --psColorsRoleYellowDark: #ae8017;
-  --psColorsRoleYellowDarker: #7c5b12;
-}
-:root {
-  /* spacing */
-  --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
-  --psLayoutSpacingSmall: 12px;
-  --psLayoutSpacingMedium: 16px;
-  --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
-}
-:root {
-  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
-
-  /* font size */
-  --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
-  --psTypeFontSizeLarge: 24px;
-  --psTypeFontSizeMedium: 18px;
-  --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
-
-  /* letter spacing */
-  --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
-  --psTypeLetterSpacingLarge: 0.36px;
-  --psTypeLetterSpacingMedium: 0;
-  --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
-
-  /* font weight */
-  --psTypeFontWeightBold: 700;
-  --psTypeFontWeightMedium: 500;
-  --psTypeFontWeightBook: 400;
-  --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
-
-  /* line height */
-  --psTypeLineHeightTight: 20px;
-  --psTypeLineHeightStandard: 24px;
-  --psTypeLineHeightExtra: 32px;
-  --psTypeLineHeightHuge: 40px;
-}
-:root {
-  /* motion */
-  --psMotionSpeedFastest: 100ms;
-  --psMotionSpeedFaster: 150ms;
-  --psMotionSpeedNormal: 200ms;
-  --psMotionSpeedSlower: 250ms;
-  --psMotionSpeedSlowest: 300ms;
-}
-.root___2kWyE {
-  font-size: var(--psTypeFontSizeXxl);
-  letter-spacing: var(--psTypeLetterSpacingXxl);
-  font-weight: var(--psTypeFontWeightLight);
-  color: var(--psColorsGray06);
-  margin: var(--psLayoutSpacingXxl) 0;
-}
-:root {
-  /* ui colors */
-  --psColorsWhite: #ffffff;
-  --psColorsBone: #f2f2f2;
-  --psColorsGray01: #cccccc;
-  --psColorsGray02: #aaaaaa;
-  --psColorsGray03: #555555;
-  --psColorsGray04: #363636;
-  --psColorsGray05: #222222;
-  --psColorsGray06: #181818;
-  --psColorsBlack: #000000;
-
-  --psColorsPink: #e80a89;
-  --psColorsRed: #de3636;
-  --psColorsOrange: #f96816;
-  --psColorsOrangeLight: #ff7b39;
-  --psColorsYellow: #ffc200;
-  --psColorsGreenLight: #86ce21;
-  --psColorsBlue: #137bc2;
-
-  /* gradients */
-  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
-  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
-
-  /* role colors */
-  --psColorsRoleYellowLighter: #fd39bc;
-  --psColorsRoleYellowLight: #fbcd64;
-  --psColorsRoleYellow: #f8b721;
-  --psColorsRoleYellowDark: #ae8017;
-  --psColorsRoleYellowDarker: #7c5b12;
-}
-:root {
-  /* spacing */
-  --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
-  --psLayoutSpacingSmall: 12px;
-  --psLayoutSpacingMedium: 16px;
-  --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
-}
-:root {
-  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
-
-  /* font size */
-  --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
-  --psTypeFontSizeLarge: 24px;
-  --psTypeFontSizeMedium: 18px;
-  --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
-
-  /* letter spacing */
-  --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
-  --psTypeLetterSpacingLarge: 0.36px;
-  --psTypeLetterSpacingMedium: 0;
-  --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
-
-  /* font weight */
-  --psTypeFontWeightBold: 700;
-  --psTypeFontWeightMedium: 500;
-  --psTypeFontWeightBook: 400;
-  --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
-
-  /* line height */
-  --psTypeLineHeightTight: 20px;
-  --psTypeLineHeightStandard: 24px;
-  --psTypeLineHeightExtra: 32px;
-  --psTypeLineHeightHuge: 40px;
-}
-:root {
-  /* motion */
-  --psMotionSpeedFastest: 100ms;
-  --psMotionSpeedFaster: 150ms;
-  --psMotionSpeedNormal: 200ms;
-  --psMotionSpeedSlower: 250ms;
-  --psMotionSpeedSlowest: 300ms;
-}
-.root___2MvgH {
-  font-size: var(--psTypeFontSizeLarge);
-  letter-spacing: var(--psTypeLetterSpacingLarge);
-  font-weight: var(--psTypeFontWeightBook);
-  color: var(--psColorsGray06);
-  margin: var(--psLayoutSpacingXl) 0 var(--psLayoutSpacingSmall) 0;
 }
 :root {
   /* ui colors */

@@ -1,7 +1,7 @@
 import React from 'react'
 import styleable from 'react-styleable'
 
-import css from './gigantic.module.css'
+import css from '../css/large.module.css'
 
 export default styleable(css)(props =>
   <h2 className={props.css.root}>
