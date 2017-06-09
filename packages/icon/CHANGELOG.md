@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-icon@1.1.2...@pluralsight/ps-icon@1.2.0) (2017-06-09)
+
+
+### Bug Fixes
+
+* prettier to run on js and css separately in precommit; re-ran ([866b137](https://github.com/pluralsight/design-system/commit/866b137))
+* **icon:** style entry point corrected ([5124684](https://github.com/pluralsight/design-system/commit/5124684))
+
+
+### Features
+
+* **icon:** size variant ([5086e38](https://github.com/pluralsight/design-system/commit/5086e38))
+
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-icon@1.1.1...@pluralsight/ps-icon@1.1.2) (2017-06-02)
 

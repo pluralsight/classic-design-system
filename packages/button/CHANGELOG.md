@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.3.2...@pluralsight/ps-button@1.4.0) (2017-06-09)
+
+
+### Bug Fixes
+
+* **button:** make icon-only buttons square ([c104ef7](https://github.com/pluralsight/design-system/commit/c104ef7))
+
+
+### Features
+
+* **button:** transition child icon ([0e592c6](https://github.com/pluralsight/design-system/commit/0e592c6))
+* **icon:** size variant ([5086e38](https://github.com/pluralsight/design-system/commit/5086e38))
+
+
+
+
 <a name="1.3.2"></a>
 ## [1.3.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.3.1...@pluralsight/ps-button@1.3.2) (2017-06-02)
 
