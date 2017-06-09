@@ -59,7 +59,6 @@
   border: 1px solid var(--psColorsOrange);
   color: var(--psColorsOrange);
   background: none;
-  transition: all var(--psMotionSpeedNormal);
 }
 .ps-button--stroke:hover {
   color: var(--psColorsOrangeLight);
@@ -70,7 +69,6 @@
   border: none;
   color: var(--psColorsGray02);
   background: none;
-  transition: all var(--psMotionSpeedNormal);
 }
 .ps-button--flat:hover {
   color: var(--psColorsWhite);
@@ -110,9 +108,11 @@
 }
 .ps-button .ps-icon__fg--fill {
   fill: var(--psColorsWhite);
+  transition: all var(--psMotionSpeedNormal);
 }
 .ps-button .ps-icon__fg--stroke {
   stroke: var(--psColorsWhite);
+  transition: all var(--psMotionSpeedNormal);
 }
 .ps-button--stroke .ps-icon__fg--fill {
   fill: var(--psColorsOrange);

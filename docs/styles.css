@@ -2416,7 +2416,6 @@
   border: 1px solid var(--psColorsOrange);
   color: var(--psColorsOrange);
   background: none;
-  transition: all var(--psMotionSpeedNormal);
 }
 .ps-button--stroke___2-hZL:hover {
   color: var(--psColorsOrangeLight);
@@ -2427,7 +2426,6 @@
   border: none;
   color: var(--psColorsGray02);
   background: none;
-  transition: all var(--psMotionSpeedNormal);
 }
 .ps-button--flat___3IG4H:hover {
   color: var(--psColorsWhite);
@@ -2465,9 +2463,11 @@
 }
 .ps-button___2EFfR .ps-icon__fg--fill___2t5_8 {
   fill: var(--psColorsWhite);
+  transition: all var(--psMotionSpeedNormal);
 }
 .ps-button___2EFfR .ps-icon__fg--stroke___2ym0E {
   stroke: var(--psColorsWhite);
+  transition: all var(--psMotionSpeedNormal);
 }
 .ps-button--stroke___2-hZL .ps-icon__fg--fill___2t5_8 {
   fill: var(--psColorsOrange);
