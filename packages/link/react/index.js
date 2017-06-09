@@ -1,7 +1,7 @@
 import React from 'react'
 import styleable from 'react-styleable'
 
-import css from './index.module.css'
+import css from '../css/index.module.css'
 
 export default styleable(css)(props => {
   const child = React.Children.only(props.children)
