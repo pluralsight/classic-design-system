@@ -7,24 +7,17 @@ const path = require('path')
 const { postcss } = require('@pluralsight/ps-design-system-build')
 const postcssImport = require('postcss-import')
 
-// TODO: move into build package, generalize to take tests, default
-const transformPropName = name => {
-  const tests = [
-    { match: /psMotion/, prop: 'transition-duration' },
-    { match: /psTypeLineHeight/, prop: 'line-height' },
-    { match: /psTypeFontWeight/, prop: 'font-weight' },
-    { match: /psTypeLetterSpacing/, prop: 'letter-spacing' },
-    { match: /psTypeFontSize/, prop: 'font-size' },
-    { match: /psLayoutSpacing/, prop: 'margin' },
-    { match: /psColorsGradient/, prop: 'background-color' }
-  ]
-
-  const match = tests.find(t => t.match.test(name))
-  return match ? match.prop : 'color'
-}
-
 const autoprefixerOptions = { browsers: 'last 4 versions' }
-const postcssCssVarSelectorsOptions = { transformPropName }
+const propNameTests = [
+  { match: /psMotion/, prop: 'transition-duration' },
+  { match: /psTypeLineHeight/, prop: 'line-height' },
+  { match: /psTypeFontWeight/, prop: 'font-weight' },
+  { match: /psTypeLetterSpacing/, prop: 'letter-spacing' },
+  { match: /psTypeFontSize/, prop: 'font-size' },
+  { match: /psLayoutSpacing/, prop: 'margin' },
+  { match: /psColorsGradient/, prop: 'background-color' }
+]
+const postcssCssVarSelectorsOptions = { propNameTests }
 
 ;(async _ => {
   await fs.mkdir('dist')

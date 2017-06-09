@@ -16815,6 +16815,7 @@ exports.default = (0, _reactStyleable2.default)(_indexModule2.default)(Button);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.propDefs = undefined;
 
 var _react = __webpack_require__(30);
 
@@ -16836,6 +16837,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var ids = {
   logo: _logoIcon2.default
+};
+
+var propDefs = exports.propDefs = {
+  size: {
+    type: 'oneOf',
+    value: ['tiny', 'small', 'medium', 'large', 'xlarge'],
+    default: 'small'
+  }
 };
 
 exports.default = (0, _reactStyleable2.default)(_indexModule2.default)(function (props) {
