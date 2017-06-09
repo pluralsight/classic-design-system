@@ -4612,7 +4612,7 @@ object-assign
           return (0, _classnames2.default)(
             (
               (_classNames = {}),
-              _defineProperty(_classNames, props.className, true),
+              _defineProperty(_classNames, props.className, props.className),
               _defineProperty(_classNames, props.css['ps-heading'], true),
               _defineProperty(
                 _classNames,
@@ -12404,6 +12404,11 @@ object-assign
               ),
               _react2.default.createElement(
                 _link2.default,
+                { href: '/components/text-styles' },
+                'Text styles'
+              ),
+              _react2.default.createElement(
+                _link2.default,
                 { href: '/components/button' },
                 'Buttons'
               )
@@ -17557,6 +17562,10 @@ object-assign
 
         var _chrome2 = _interopRequireDefault(_chrome)
 
+        var _textStyles = __webpack_require__(584)
+
+        var _textStyles2 = _interopRequireDefault(_textStyles)
+
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
         }
@@ -17565,6 +17574,10 @@ object-assign
           button: _react2.default.createElement(_button2.default, null),
           installation: _react2.default.createElement(
             _installation2.default,
+            null
+          ),
+          'text-styles': _react2.default.createElement(
+            _textStyles2.default,
             null
           )
         }
@@ -64129,6 +64142,128 @@ https://highlightjs.org/
         }
 
         exports.default = valueEqual
+
+        /***/
+      },
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      /* 553 */ /* 554 */ /* 555 */ /* 556 */ /* 557 */ /* 558 */ /* 559 */ /* 560 */ /* 561 */ /* 562 */ /* 563 */ /* 564 */ /* 565 */ /* 566 */ /* 567 */ /* 568 */ /* 569 */ /* 570 */ /* 571 */ /* 572 */ /* 573 */ /* 574 */ /* 575 */ /* 576 */ /* 577 */ /* 578 */ /* 579 */ /* 580 */ /* 581 */ /* 582 */ /* 583 */ /* 584 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+
+        var _react = __webpack_require__(34)
+
+        var _react2 = _interopRequireDefault(_react)
+
+        var _reactRouterDom = __webpack_require__(22)
+
+        var _react3 = __webpack_require__(1)
+
+        var _react4 = _interopRequireDefault(_react3)
+
+        var _components = __webpack_require__(18)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        exports.default = function(props) {
+          return _react4.default.createElement(
+            'div',
+            null,
+            _react4.default.createElement(
+              _react2.default,
+              { size: 'xx-large' },
+              _react4.default.createElement('h1', null, 'Text styles')
+            ),
+            _react4.default.createElement(
+              _react2.default,
+              { size: 'large' },
+              _react4.default.createElement('h2', null, 'Headings')
+            ),
+            _react4.default.createElement(
+              _components.P,
+              null,
+              'Install the component dependency:'
+            ),
+            _react4.default.createElement(
+              _components.Code,
+              { language: 'bash' },
+              'npm install @pluralsight/ps-heading --save-dev'
+            ),
+            _react4.default.createElement(
+              _components.P,
+              null,
+              'Include a React component in your project:'
+            ),
+            _react4.default.createElement(
+              _components.Code,
+              { language: 'javascript' },
+              "import Heading from '@pluralsight/ps-heading/react'"
+            ),
+            _react4.default.createElement(
+              _components.P,
+              null,
+              'For more project setup guidance, see the',
+              ' ',
+              _react4.default.createElement(
+                _reactRouterDom.Link,
+                { to: '/components/installation' },
+                'Component Installation Instructions'
+              ),
+              '.'
+            ),
+            _react4.default.createElement(_components.Example.React, {
+              component: _react4.default.createElement(
+                _react2.default,
+                null,
+                _react4.default.createElement(
+                  'h2',
+                  { style: { color: 'white' } },
+                  'Heading'
+                )
+              ),
+              name: 'Heading',
+              permutations: [
+                { size: 'xx-large' },
+                { size: 'large' },
+                { size: 'medium' }
+              ]
+            })
+          )
+        }
 
         /***/
       }

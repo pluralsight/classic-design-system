@@ -3,10 +3,12 @@ import React from 'react'
 import ButtonDoc from './button'
 import InstallationDoc from './installation'
 import Chrome from '../layouts/chrome'
+import TextStylesDoc from './text-styles'
 
 const docs = {
   button: <ButtonDoc />,
-  installation: <InstallationDoc />
+  installation: <InstallationDoc />,
+  'text-styles': <TextStylesDoc />
 }
 
 export default props =>

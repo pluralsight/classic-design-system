@@ -18,6 +18,7 @@ export default styleable(css)(props =>
     <Group>
       <GroupTitle>COMPONENTS</GroupTitle>
       <Link href="/components/installation">Installation</Link>
+      <Link href="/components/text-styles">Text styles</Link>
       <Link href="/components/button">Buttons</Link>
     </Group>
   </nav>
