@@ -36,6 +36,16 @@ const getClassName = props =>
       React.Children.count(props.children) <= 0
   })
 
+const mapIconSize = props => {
+  const btnToIconSizes = {
+    tiny: 'tiny',
+    small: 'small',
+    medium: 'small',
+    large: 'small'
+  }
+  return btnToIconSizes[props.size] ? btnToIconSizes[props.size] : 'small'
+}
+
 const rmSystemProps = props => {
   const { appearance, disabled, css, icon, iconAlign, size, ...rest } = props
   return rest
@@ -54,7 +64,8 @@ const renderIcon = props =>
           css: {
             'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
             'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
-          }
+          },
+          size: mapIconSize(props)
         })}
       </div>
     : null

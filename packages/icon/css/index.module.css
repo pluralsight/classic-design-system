@@ -16,3 +16,26 @@
 .ps-icon__fg--stroke {
   stroke: var(--psColorsWhite);
 }
+
+/* size */
+.ps-icon--x-large {
+  height: 160px;
+  width: 160px;
+}
+.ps-icon--large {
+  height: 96px;
+  width: 96px;
+}
+.ps-icon--medium {
+  height: 48px;
+  width: 48px;
+}
+.ps-icon--small {
+  height: 24px;
+  width: 24px;
+}
+.ps-icon--tiny {
+  height: 12px;
+  width: 12px;
+}
+
