@@ -35,6 +35,7 @@ export default props =>
     <Example.React
       component={<Heading><h2 style={{ color: 'white' }}>Heading</h2></Heading>}
       name="Heading"
+      orient="vertical"
       permutations={[
         { size: 'xx-large' },
         { size: 'large' },

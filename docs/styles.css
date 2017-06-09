@@ -1388,6 +1388,10 @@
   background: var(--psColorsGray06);
   overflow: hidden;
 }
+.outputHorizontal___1W9Su {
+}
+.outputVertical___2pwn2 {
+}
 .outputChild___3QK6i {
   margin: var(--psLayoutSpacingLarge) 0 0 0;
 }
@@ -1406,7 +1410,7 @@
   padding: 0;
 }
 @media screen and (min-width: 769px) {
-  .output___wQB7z {
+  .outputHorizontal___1W9Su {
     flex-direction: row;
   }
   .outputChild___3QK6i {

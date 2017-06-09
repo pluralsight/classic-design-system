@@ -22862,6 +22862,12 @@ object-assign
           }, {})
         }
 
+        var getOutputClassName = function getOutputClassName(props) {
+          return props.orient === 'vertical'
+            ? props.css.outputVertical
+            : props.css.outputHorizontal
+        }
+
         var ReactExample = (function(_React$Component) {
           _inherits(ReactExample, _React$Component)
 
@@ -22938,7 +22944,7 @@ object-assign
                   { className: this.props.css.root },
                   _react2.default.createElement(
                     'div',
-                    { className: this.props.css.output },
+                    { className: getOutputClassName(this.props) },
                     this.renderOutputs(this.props)
                   ),
                   _react2.default.createElement(
@@ -22965,10 +22971,12 @@ object-assign
         ReactExample.propTypes = {
           component: _propTypes2.default.element.isRequired,
           name: _propTypes2.default.string,
+          orient: _propTypes2.default.oneOf(['vertical', 'horizontal']),
           permutations: _propTypes2.default.arrayOf(_propTypes2.default.object)
         }
         ReactExample.defaultProps = {
           name: 'Component',
+          orient: 'horizontal',
           permutations: [{}]
         }
 
@@ -25410,6 +25418,8 @@ object-assign
         module.exports = {
           root: 'root___3YG2a',
           output: 'output___wQB7z',
+          outputHorizontal: 'outputHorizontal___1W9Su output___wQB7z',
+          outputVertical: 'outputVertical___2pwn2 output___wQB7z',
           outputChild: 'outputChild___3QK6i',
           src: 'src___3PC8V',
           srcOptions: 'srcOptions___1yeyx',
@@ -64256,6 +64266,7 @@ https://highlightjs.org/
                 )
               ),
               name: 'Heading',
+              orient: 'vertical',
               permutations: [
                 { size: 'xx-large' },
                 { size: 'large' },

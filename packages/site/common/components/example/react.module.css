@@ -10,6 +10,12 @@
   background: var(--psColorsGray06);
   overflow: hidden;
 }
+.outputHorizontal {
+  composes: output;
+}
+.outputVertical {
+  composes: output;
+}
 .outputChild {
   margin: var(--psLayoutSpacingLarge) 0 0 0;
 }
@@ -29,7 +35,7 @@
 }
 
 @media screen and (min-width: 769px) {
-  .output {
+  .outputHorizontal {
     flex-direction: row;
   }
   .outputChild {

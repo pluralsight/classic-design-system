@@ -14,6 +14,11 @@ const filterNonExampleProps = permutation =>
     return acc
   }, {})
 
+const getOutputClassName = props =>
+  props.orient === 'vertical'
+    ? props.css.outputVertical
+    : props.css.outputHorizontal
+
 class ReactExample extends React.Component {
   constructor(props) {
     super(props)
@@ -54,7 +59,7 @@ class ReactExample extends React.Component {
   render() {
     return (
       <div className={this.props.css.root}>
-        <div className={this.props.css.output}>
+        <div className={getOutputClassName(this.props)}>
           {this.renderOutputs(this.props)}
         </div>
         <div className={this.props.css.src}>
@@ -73,10 +78,12 @@ class ReactExample extends React.Component {
 ReactExample.propTypes = {
   component: PropTypes.element.isRequired,
   name: PropTypes.string,
+  orient: PropTypes.oneOf(['vertical', 'horizontal']),
   permutations: PropTypes.arrayOf(PropTypes.object)
 }
 ReactExample.defaultProps = {
   name: 'Component',
+  orient: 'horizontal',
   permutations: [{}]
 }
 
