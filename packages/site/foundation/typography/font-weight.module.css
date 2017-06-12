@@ -25,6 +25,6 @@
   letter-spacing: var(--psTypeLetterSpacingGigantic);
 }
 .weightLabel {
-  color: var(--psColorsGray04);
+  color: var(--psColorsGray03);
   font-size: var(--psTypeFontSizeExtraSmall);
 }

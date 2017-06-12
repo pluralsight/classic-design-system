@@ -3,6 +3,7 @@ import { Link as RouterLink } from 'react-router-dom'
 import React from 'react'
 
 import FontFamily from './font-family'
+import FontSize from './font-size'
 import FontWeight from './font-weight'
 import { P } from '../../common/components'
 
@@ -21,4 +22,10 @@ export default props =>
       Five Gotham SSm font weights are available for use.
     </P>
     <FontWeight />
+
+    <Heading size="large"><h2>Font size</h2></Heading>
+    <P>
+      Eight Gotham SSm font sizes are available.
+    </P>
+    <FontSize />
   </div>

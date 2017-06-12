@@ -24982,6 +24982,10 @@ object-assign
 
         var _fontFamily2 = _interopRequireDefault(_fontFamily)
 
+        var _fontSize = __webpack_require__(592)
+
+        var _fontSize2 = _interopRequireDefault(_fontSize)
+
         var _fontWeight = __webpack_require__(213)
 
         var _fontWeight2 = _interopRequireDefault(_fontWeight)
@@ -25022,7 +25026,18 @@ object-assign
               null,
               'Five Gotham SSm font weights are available for use.'
             ),
-            _react4.default.createElement(_fontWeight2.default, null)
+            _react4.default.createElement(_fontWeight2.default, null),
+            _react4.default.createElement(
+              _react2.default,
+              { size: 'large' },
+              _react4.default.createElement('h2', null, 'Font size')
+            ),
+            _react4.default.createElement(
+              _components.P,
+              null,
+              'Eight Gotham SSm font sizes are available.'
+            ),
+            _react4.default.createElement(_fontSize2.default, null)
           )
         }
 
@@ -64504,6 +64519,107 @@ https://highlightjs.org/
           weight: 'weight___2q8sc',
           weightLetters: 'weightLetters___1S676',
           weightLabel: 'weightLabel___1HjB8'
+        }
+
+        /***/
+      },
+      ,
+      /* 591 */ /* 592 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+
+        var _react = __webpack_require__(1)
+
+        var _react2 = _interopRequireDefault(_react)
+
+        var _reactStyleable = __webpack_require__(5)
+
+        var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
+
+        var _fontSizeModule = __webpack_require__(593)
+
+        var _fontSizeModule2 = _interopRequireDefault(_fontSizeModule)
+
+        var _components = __webpack_require__(10)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        var sizes = [
+          {
+            label: 'Gigantic',
+            size: '60px',
+            varName: 'psTypeFontSizeGigantic'
+          },
+          { label: 'XXX-Large', size: '48px', varName: 'psTypeFontSizeXxxl' },
+          { label: 'XX-Large', size: '36px', varName: 'psTypeFontSizeXxl' },
+          { label: 'X-Large', size: '30px', varName: 'psTypeFontSizeXl' },
+          { label: 'Large', size: '24px', varName: 'psTypeFontSizeLarge' },
+          { label: 'Medium', size: '18px', varName: 'psTypeFontSizeMedium' },
+          { label: 'Small', size: '14px', varName: 'psTypeFontSizeSmall' },
+          {
+            label: 'X-Small',
+            size: '12px',
+            varName: 'psTypeFontSizeExtraSmall'
+          }
+        ]
+
+        var Sizes = (0, _reactStyleable2.default)(
+          _fontSizeModule2.default
+        )(function(props) {
+          return _react2.default.createElement(
+            'div',
+            { className: props.css.root },
+            props.sizes.map(function(w) {
+              return _react2.default.createElement(
+                'div',
+                { className: props.css.size },
+                _react2.default.createElement(
+                  'div',
+                  {
+                    style: { fontSize: w.size },
+                    className: props.css.sizeSentence
+                  },
+                  'The quick brown fox jumps over the lazy dog.'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: props.css.sizeLabel },
+                  w.size,
+                  ' - ',
+                  w.label
+                )
+              )
+            })
+          )
+        })
+
+        exports.default = function(props) {
+          return _react2.default.createElement(_components.Example.CssVar, {
+            output: _react2.default.createElement(Sizes, { sizes: sizes }),
+            attributes: sizes.map(function(x) {
+              return {
+                varName: x.varName,
+                attrName: 'font-size'
+              }
+            })
+          })
+        }
+
+        /***/
+      },
+      /* 593 */
+      /***/ function(module, exports) {
+        // removed by extract-text-webpack-plugin
+        module.exports = {
+          root: 'root___1L9PW',
+          size: 'size___3ifqL',
+          sizeSentence: 'sizeSentence___1sRT9',
+          sizeLabel: 'sizeLabel___2QqkQ'
         }
 
         /***/
