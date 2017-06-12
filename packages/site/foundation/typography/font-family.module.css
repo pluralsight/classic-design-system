@@ -1,0 +1,9 @@
+@import "@pluralsight/ps-design-system-core";
+
+.root {
+  background: var(--psColorsBone);
+  padding: var(--psLayoutSpacingLarge);
+}
+.line {
+  letter-spacing: var(--psLayoutSpacingSmall);
+}
