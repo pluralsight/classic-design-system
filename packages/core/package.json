@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-core",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "",
   "main": "css/index.css",
   "style": "css/index.css",
