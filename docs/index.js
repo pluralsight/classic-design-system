@@ -24922,7 +24922,8 @@ object-assign
               _components.P,
               null,
               "Pluralsight's font family for the web is Gotham SSm."
-            )
+            ),
+            _react4.default.createElement(_fontFamily2.default, null)
           )
         }
 
@@ -25759,7 +25760,7 @@ object-assign
       /* 248 */
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
-        module.exports = { root: 'root___1QXcG', line: 'line___YPTs6' }
+        module.exports = { root: 'root___1QXcG' }
 
         /***/
       },

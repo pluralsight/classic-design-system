@@ -13,4 +13,5 @@ export default props =>
     <P>
       Pluralsight's font family for the web is Gotham SSm.
     </P>
+    <FontFamily />
   </div>
