@@ -25398,6 +25398,21 @@ object-assign
             _react4.default.createElement(
               _react2.default,
               { size: 'large' },
+              _react4.default.createElement('h2', null, 'Install the Font')
+            ),
+            _react4.default.createElement(
+              _components.P,
+              null,
+              "To use the Pluralsight font-family on your site, you must install it by importing it from typography.com using Pluralsight's assigned CSS Key."
+            ),
+            _react4.default.createElement(
+              _components.Code,
+              { lang: 'css' },
+              '@import url(https://cloud.typography.com/6966154/691568/css/fonts.css);'
+            ),
+            _react4.default.createElement(
+              _react2.default,
+              { size: 'large' },
               _react4.default.createElement('h2', null, 'Font family')
             ),
             _react4.default.createElement(
