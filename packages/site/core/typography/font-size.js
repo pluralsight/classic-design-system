@@ -17,8 +17,8 @@ const sizes = [
 
 const Sizes = styleable(css)(props =>
   <div className={props.css.root}>
-    {props.sizes.map(w =>
-      <div className={props.css.size}>
+    {props.sizes.map((w, i) =>
+      <div className={props.css.size} key={i}>
         <div style={{ fontSize: w.size }} className={props.css.sizeSentence}>
           The quick brown fox jumps over the lazy dog.
         </div>

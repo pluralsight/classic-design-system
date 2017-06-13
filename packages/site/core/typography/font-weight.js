@@ -14,8 +14,8 @@ const weights = [
 
 const Weights = styleable(css)(props =>
   <div className={props.css.root}>
-    {props.weights.map(w =>
-      <div className={props.css.weight}>
+    {props.weights.map((w, i) =>
+      <div className={props.css.weight} key={i}>
         <div
           style={{ fontWeight: w.weight }}
           className={props.css.weightLetters}

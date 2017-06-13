@@ -25229,10 +25229,10 @@ object-assign
           return _react2.default.createElement(
             'div',
             { className: props.css.root },
-            props.sizes.map(function(w) {
+            props.sizes.map(function(w, i) {
               return _react2.default.createElement(
                 'div',
-                { className: props.css.size },
+                { className: props.css.size, key: i },
                 _react2.default.createElement(
                   'div',
                   {
@@ -25310,10 +25310,10 @@ object-assign
           return _react2.default.createElement(
             'div',
             { className: props.css.root },
-            props.weights.map(function(w) {
+            props.weights.map(function(w, i) {
               return _react2.default.createElement(
                 'div',
-                { className: props.css.weight },
+                { className: props.css.weight, key: i },
                 _react2.default.createElement(
                   'div',
                   {
