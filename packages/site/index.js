@@ -12,7 +12,7 @@ import './index.module.css'
 const routes = (
   <div>
     <Route exact path="/" component={Home} />
-    <Route path="/cores/:coreId/" component={CoreDetail} />
+    <Route path="/core/:coreId/" component={CoreDetail} />
     <Route path="/components/:componentId/" component={ComponentDetail} />
   </div>
 )

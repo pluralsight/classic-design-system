@@ -12413,22 +12413,22 @@ object-assign
               _react2.default.createElement(_groupTitle2.default, null, 'CORE'),
               _react2.default.createElement(
                 _link2.default,
-                { href: '/cores/installation' },
+                { href: '/core/installation' },
                 'Installation'
               ),
               _react2.default.createElement(
                 _link2.default,
-                { href: '/cores/color' },
+                { href: '/core/color' },
                 'Color'
               ),
               _react2.default.createElement(
                 _link2.default,
-                { href: '/cores/typography' },
+                { href: '/core/typography' },
                 'Typography'
               ),
               _react2.default.createElement(
                 _link2.default,
-                { href: '/cores/spacing' },
+                { href: '/core/spacing' },
                 'Spacing'
               )
             ),
@@ -25485,7 +25485,7 @@ object-assign
             component: _home2.default
           }),
           _react2.default.createElement(_reactRouterDom.Route, {
-            path: '/cores/:coreId/',
+            path: '/core/:coreId/',
             component: _detail4.default
           }),
           _react2.default.createElement(_reactRouterDom.Route, {

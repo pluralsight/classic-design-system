@@ -12,10 +12,10 @@ export default styleable(css)(props =>
     <Logo />
     <Group>
       <GroupTitle>CORE</GroupTitle>
-      <Link href="/cores/installation">Installation</Link>
-      <Link href="/cores/color">Color</Link>
-      <Link href="/cores/typography">Typography</Link>
-      <Link href="/cores/spacing">Spacing</Link>
+      <Link href="/core/installation">Installation</Link>
+      <Link href="/core/color">Color</Link>
+      <Link href="/core/typography">Typography</Link>
+      <Link href="/core/spacing">Spacing</Link>
     </Group>
     <Group>
       <GroupTitle>COMPONENTS</GroupTitle>
