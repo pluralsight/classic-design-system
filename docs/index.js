@@ -24585,26 +24585,6 @@ object-assign
               _react4.default.createElement('h1', null, 'Color')
             ),
             _react4.default.createElement(
-              _components.P,
-              null,
-              'To access these style variables, install:'
-            ),
-            _react4.default.createElement(
-              _components.Code,
-              { language: 'bash' },
-              'npm install @pluralsight/ps-design-system-core --save-dev'
-            ),
-            _react4.default.createElement(
-              _components.P,
-              null,
-              'To use color variables:'
-            ),
-            _react4.default.createElement(
-              _components.Code,
-              { language: 'css' },
-              '@import "@pluralsight/ps-design-system-core";\n\n.my-selector {\n  color: var(--psColorsWhite);\n}\n'
-            ),
-            _react4.default.createElement(
               _react2.default,
               { size: 'large' },
               _react4.default.createElement('h2', null, 'Grayscale colors')
