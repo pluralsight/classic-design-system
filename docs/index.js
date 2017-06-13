@@ -24293,7 +24293,7 @@ object-assign
             _react6.default.createElement(
               _components.P,
               null,
-              'Add the required `postcss.config.js` file to your project root:'
+              'Add the required postcss.config.js file to your project root:'
             ),
             _react6.default.createElement(
               _components.Code,
@@ -24908,7 +24908,7 @@ object-assign
             _react6.default.createElement(
               _components.P,
               null,
-              'Add the required `postcss.config.js` file to your project root:'
+              'Add the required postcss.config.js file to your project root:'
             ),
             _react6.default.createElement(
               _components.Code,

@@ -142,7 +142,7 @@ export default props =>
   }
 }`}
     </Code>
-    <P>Add the required `postcss.config.js` file to your project root:</P>
+    <P>Add the required postcss.config.js file to your project root:</P>
     <Code language="javascript">
       {`module.exports = { plugins: {} }`}
     </Code>
