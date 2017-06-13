@@ -14,6 +14,13 @@ export default styleable(css)(props => {
     <div className={props.css.root}>
       <Heading size="xx-large"><h1>Color</h1></Heading>
 
+      <P>
+        To access these style variables, install:
+      </P>
+      <Code language="bash">
+        npm install @pluralsight/ps-design-system-core --save-dev
+      </Code>
+
       <Heading size="large"><h2>Grayscale colors</h2></Heading>
       <P>Grayscale colors are used for containers, text, lines and borders.</P>
       <GrayscaleColors />
