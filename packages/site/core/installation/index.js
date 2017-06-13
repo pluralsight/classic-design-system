@@ -6,7 +6,7 @@ import { Code, P } from '../../common/components'
 
 export default props =>
   <div>
-    <Heading size="xx-large"><h1>Foundations Installation</h1></Heading>
+    <Heading size="xx-large"><h1>Core Installation</h1></Heading>
 
     <Heading size="large">
       <h2>0. Determine Your Build System Compatibility</h2>
@@ -36,9 +36,9 @@ export default props =>
       </li>
     </ul>
 
-    <Heading size="large"><h2>1. Add the Foundation Dependency</h2></Heading>
+    <Heading size="large"><h2>1. Add the Core Dependency</h2></Heading>
     <P>
-      Install the foundation dependency using NPM:
+      Install the core dependency using NPM:
     </P>
     <Code language="bash">
       npm install @pluralsight/ps-design-system-core --save-dev
@@ -46,7 +46,7 @@ export default props =>
 
     <Heading size="large"><h2>2. Support PostCSS Parsing</h2></Heading>
     <P>
-      The Design System foundations use nextgen CSS via PostCSS{' '}
+      The Design System core use nextgen CSS via PostCSS{' '}
       <Link>
         <a href="https://github.com/postcss/postcss" target="_blank">
           PostCSS
@@ -100,10 +100,10 @@ export default props =>
     </Code>
 
     <Heading size="large">
-      <h2>3. Use Foundation Styles in Your Project</h2>
+      <h2>3. Use Core Styles in Your Project</h2>
     </Heading>
     <P>
-      Currently all the foundation style variables are available in one package,
+      Currently all the core style variables are available in one package,
       available in a single CSS import:
     </P>
     <Code language="css">

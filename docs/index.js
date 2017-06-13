@@ -12410,29 +12410,25 @@ object-assign
             _react2.default.createElement(
               _group2.default,
               null,
-              _react2.default.createElement(
-                _groupTitle2.default,
-                null,
-                'FOUNDATIONS'
-              ),
+              _react2.default.createElement(_groupTitle2.default, null, 'CORE'),
               _react2.default.createElement(
                 _link2.default,
-                { href: '/foundations/installation' },
+                { href: '/cores/installation' },
                 'Installation'
               ),
               _react2.default.createElement(
                 _link2.default,
-                { href: '/foundations/color' },
+                { href: '/cores/color' },
                 'Color'
               ),
               _react2.default.createElement(
                 _link2.default,
-                { href: '/foundations/typography' },
+                { href: '/cores/typography' },
                 'Typography'
               ),
               _react2.default.createElement(
                 _link2.default,
-                { href: '/foundations/spacing' },
+                { href: '/cores/spacing' },
                 'Spacing'
               )
             ),
@@ -17687,8 +17683,8 @@ object-assign
         exports.default = function(props) {
           return _react2.default.createElement(
             _chrome2.default,
-            { title: props.match.params.foundationId },
-            docs[props.match.params.foundationId]
+            { title: props.match.params.coreId },
+            docs[props.match.params.coreId]
           )
         }
 
@@ -24752,11 +24748,7 @@ object-assign
             _react6.default.createElement(
               _react2.default,
               { size: 'xx-large' },
-              _react6.default.createElement(
-                'h1',
-                null,
-                'Foundations Installation'
-              )
+              _react6.default.createElement('h1', null, 'Core Installation')
             ),
             _react6.default.createElement(
               _react2.default,
@@ -24830,13 +24822,13 @@ object-assign
               _react6.default.createElement(
                 'h2',
                 null,
-                '1. Add the Foundation Dependency'
+                '1. Add the Core Dependency'
               )
             ),
             _react6.default.createElement(
               _components.P,
               null,
-              'Install the foundation dependency using NPM:'
+              'Install the core dependency using NPM:'
             ),
             _react6.default.createElement(
               _components.Code,
@@ -24855,7 +24847,7 @@ object-assign
             _react6.default.createElement(
               _components.P,
               null,
-              'The Design System foundations use nextgen CSS via PostCSS',
+              'The Design System core use nextgen CSS via PostCSS',
               ' ',
               _react6.default.createElement(
                 _react4.default,
@@ -24921,13 +24913,13 @@ object-assign
               _react6.default.createElement(
                 'h2',
                 null,
-                '3. Use Foundation Styles in Your Project'
+                '3. Use Core Styles in Your Project'
               )
             ),
             _react6.default.createElement(
               _components.P,
               null,
-              'Currently all the foundation style variables are available in one package, available in a single CSS import:'
+              'Currently all the core style variables are available in one package, available in a single CSS import:'
             ),
             _react6.default.createElement(
               _components.Code,
@@ -25493,7 +25485,7 @@ object-assign
             component: _home2.default
           }),
           _react2.default.createElement(_reactRouterDom.Route, {
-            path: '/foundations/:foundationId/',
+            path: '/cores/:coreId/',
             component: _detail4.default
           }),
           _react2.default.createElement(_reactRouterDom.Route, {
@@ -26258,14 +26250,14 @@ object-assign
       /* 249 */
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
-        module.exports = { root: 'root___STF9s' }
+        module.exports = { root: 'root___3aaNk' }
 
         /***/
       },
       /* 250 */
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
-        module.exports = { root: 'root___1QXcG' }
+        module.exports = { root: 'root___26wBI' }
 
         /***/
       },
@@ -26273,10 +26265,10 @@ object-assign
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
         module.exports = {
-          root: 'root___1L9PW',
-          size: 'size___3ifqL',
-          sizeSentence: 'sizeSentence___1sRT9',
-          sizeLabel: 'sizeLabel___2QqkQ'
+          root: 'root___1QcR4',
+          size: 'size___179HT',
+          sizeSentence: 'sizeSentence___2PMIP',
+          sizeLabel: 'sizeLabel___1iNW1'
         }
 
         /***/
@@ -26285,10 +26277,10 @@ object-assign
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
         module.exports = {
-          root: 'root___26bvw',
-          weight: 'weight___2q8sc',
-          weightLetters: 'weightLetters___1S676',
-          weightLabel: 'weightLabel___1HjB8'
+          root: 'root___1OcXZ',
+          weight: 'weight___2qRYF',
+          weightLetters: 'weightLetters___13D27',
+          weightLabel: 'weightLabel___3l9r5'
         }
 
         /***/

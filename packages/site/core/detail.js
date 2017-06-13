@@ -14,6 +14,6 @@ const docs = {
 }
 
 export default props =>
-  <Chrome title={props.match.params.foundationId}>
-    {docs[props.match.params.foundationId]}
+  <Chrome title={props.match.params.coreId}>
+    {docs[props.match.params.coreId]}
   </Chrome>

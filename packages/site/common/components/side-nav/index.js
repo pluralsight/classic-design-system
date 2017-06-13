@@ -11,11 +11,11 @@ export default styleable(css)(props =>
   <nav className={props.css.root}>
     <Logo />
     <Group>
-      <GroupTitle>FOUNDATIONS</GroupTitle>
-      <Link href="/foundations/installation">Installation</Link>
-      <Link href="/foundations/color">Color</Link>
-      <Link href="/foundations/typography">Typography</Link>
-      <Link href="/foundations/spacing">Spacing</Link>
+      <GroupTitle>CORE</GroupTitle>
+      <Link href="/cores/installation">Installation</Link>
+      <Link href="/cores/color">Color</Link>
+      <Link href="/cores/typography">Typography</Link>
+      <Link href="/cores/spacing">Spacing</Link>
     </Group>
     <Group>
       <GroupTitle>COMPONENTS</GroupTitle>

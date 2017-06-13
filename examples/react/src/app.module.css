@@ -4,7 +4,7 @@
 /* you are required to import the font yourself */
 @import url(https://cloud.typography.com/6966154/691568/css/fonts.css);
 
-/* foundation import example */
+/* core import example */
 @import "@pluralsight/ps-design-system-core";
 
 .app {
