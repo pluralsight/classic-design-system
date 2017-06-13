@@ -1,7 +1,7 @@
 ## To Run
 
 ```
-invm use
+nvm use
 npm install
 npm start
 open http://localhost:8080
