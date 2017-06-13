@@ -1,13 +1,11 @@
 import Heading from '@pluralsight/ps-heading/react'
 import Link from '@pluralsight/ps-link/react'
 import React from 'react'
-import styleable from 'react-styleable'
 
-import css from './index.css'
 import { Code, P } from '../../common/components'
 
-export default styleable(css)(props =>
-  <div className={props.css.root}>
+export default props =>
+  <div>
     <Heading size="xx-large"><h1>Component Installation</h1></Heading>
 
     <Heading size="large">
@@ -28,6 +26,14 @@ export default styleable(css)(props =>
         {' '}
         <Link>
           <a href="https://webpack.js.org/" target="_blank">Webpack</a>
+        </Link>
+      </li>
+      <li>
+        Transpiling PostCSS - eg,{' '}
+        <Link>
+          <a href="https://github.com/postcss/postcss-loader" target="_blank">
+            postcss-loader
+          </a>
         </Link>
       </li>
       <li>
@@ -170,4 +176,3 @@ export default props =>
 `}
     </Code>
   </div>
-)

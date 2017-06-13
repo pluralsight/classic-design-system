@@ -1,0 +1,32 @@
+<html><head><title>Pluralsight Design System</title><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css" type="text/css" media="all"/><link rel="stylesheet" href="/styles.css"/></head><body><div id="app"><div><div class="root___3vxVq"><div class="root___1jeml"></div><div class="page___2dd2J"><div class="side___J4pMy"><nav class="root___35N9E"><a class="root___xcUTw" href="/"><div class="img___1Gbga"></div><h2 class="text___8eLIk"><span class="textCompany___2oKIi">PLURALSIGHT</span><span class="textTitle___36w9a">DESIGN SYSTEM v1.0.0</span></h2></a><div class="root___2oknb"><h3 class="root___34dIs">FOUNDATIONS</h3><div class="root___fBSkO"><a class="linkActive___-b0tf link___1vryl" href="/foundations/installation"><span aria-hidden="true" class="box___E_LfL"></span>Installation</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/foundations/color"><span aria-hidden="true" class="box___E_LfL"></span>Color</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/foundations/typography"><span aria-hidden="true" class="box___E_LfL"></span>Typography</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/foundations/spacing"><span aria-hidden="true" class="box___E_LfL"></span>Spacing</a></div></div><div class="root___2oknb"><h3 class="root___34dIs">COMPONENTS</h3><div class="root___fBSkO"><a class="link___1vryl" href="/components/installation"><span aria-hidden="true" class="box___E_LfL"></span>Installation</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/components/text-styles"><span aria-hidden="true" class="box___E_LfL"></span>Text styles</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/components/button"><span aria-hidden="true" class="box___E_LfL"></span>Buttons</a></div></div></nav></div><main class="main___5e9UJ"><div class="content___1nfao"><div><h1 class="ps-heading___18ic- ps-heading--xx-large___asI5a">Component Installation</h1><h2 class="ps-heading___18ic- ps-heading--large___2Vc0v">0. Determine Your Build System Compatibility</h2><p class="root___34odr">You&#x27;ll need a build system in your development environment that supports the following:</p><ul><li>Installing CSS modules from NPM - eg, <a href="https://nodejs.org/" target="_blank" class="ps-link___3ZC5j">Node</a></li><li>Loading assets (CSS) as modules - eg, <a href="https://webpack.js.org/" target="_blank" class="ps-link___3ZC5j">Webpack</a></li><li>Transpiling PostCSS - eg, <a href="https://github.com/postcss/postcss-loader" target="_blank" class="ps-link___3ZC5j">postcss-loader</a></li></ul><h2 class="ps-heading___18ic- ps-heading--large___2Vc0v">1. Add the Foundation Dependency</h2><p class="root___34odr">Install the foundation dependency using NPM:</p><pre><code class="javascript root___3j3d1">npm install @pluralsight/ps-design-system-core --save-dev</code></pre><h2 class="ps-heading___18ic- ps-heading--large___2Vc0v">2. Support PostCSS Parsing</h2><p class="root___34odr">The Design System foundations use nextgen CSS via PostCSS <a href="https://github.com/postcss/postcss" target="_blank" class="ps-link___3ZC5j">PostCSS</a>. The CSS is published to npm just as JavaScript would be. It is in its source format that needs to be parsed by PostCSS. Depending on your build system, this may be accomplished differently. Here we&#x27;ll assume that the module loader, Webpack, is parsing it via the <a href="https://github.com/postcss/postcss-loader" target="_blank" class="ps-link___3ZC5j">postcss-loader</a>.</p><p class="root___34odr">Install the needed dependencies based on your build:</p><pre><code class="javascript root___3j3d1">npm install style-loader css-loader postcss-loader --save-dev</code></pre><p class="root___34odr">Modify your webpack.config.js to support PostCSS parsing and loading:</p><pre><code class="javascript root___3j3d1">{
+  module: {
+    rules: [
+      {
+        test: /\.module\.css$/,
+        use: [
+          &#x27;style-loader&#x27;,
+          {
+            loader: &#x27;css-loader&#x27;,
+            options: {
+              modules: true,
+              importLoaders: 1,
+              localIdentName: &#x27;[local]___[hash:base64:5]&#x27;
+            }
+          },
+          &#x27;postcss-loader&#x27;
+        ]
+      }
+    ]
+  }
+}</code></pre><h2 class="ps-heading___18ic- ps-heading--large___2Vc0v">3. Use Foundation Styles in Your Project</h2><p class="root___34odr">Currently all the foundation style variables are available in one package, available in a single CSS import:</p><pre><code class="javascript root___3j3d1">@import &quot;@pluralsight/ps-design-system-core&quot;;
+
+.selector-needing-color {
+  color: var(--psColorsPink);
+}
+.selector-needing-spacing {
+  margin: var(--psLayoutSpacingLarge);
+}
+.selector-needing-font-help {
+  line-height: var(--psTypeLineHeightExtra);
+}
+</code></pre></div></div></main></div></div></div></div><script src="/index.js"></script></body></html>

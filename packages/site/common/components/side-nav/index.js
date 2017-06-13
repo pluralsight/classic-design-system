@@ -12,6 +12,7 @@ export default styleable(css)(props =>
     <Logo />
     <Group>
       <GroupTitle>FOUNDATIONS</GroupTitle>
+      <Link href="/foundations/installation">Installation</Link>
       <Link href="/foundations/color">Color</Link>
       <Link href="/foundations/typography">Typography</Link>
       <Link href="/foundations/spacing">Spacing</Link>
