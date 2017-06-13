@@ -1,0 +1,30 @@
+{
+  "name": "ps-design-system-example-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "jaketrent",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@pluralsight/ps-button": "^1.4.0",
+    "@pluralsight/ps-design-system-normalize": "^2.2.3",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "html-webpack-plugin": "^2.28.0",
+    "html-webpack-template": "^6.0.1",
+    "postcss-loader": "^2.0.5",
+    "react-dom": "^15.6.0",
+    "react-styleable": "^2.2.5",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}

@@ -1,0 +1,33 @@
+/* the design system depends on this normalize baseline */
+@import "@pluralsight/ps-design-system-normalize";
+
+/* you are required to import the font yourself */
+@import url(https://cloud.typography.com/6966154/691568/css/fonts.css);
+
+/* foundation import example */
+@import "@pluralsight/ps-design-system-core";
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-size: 18px;
+  text-align: center;
+}
+
+h2, h3 {
+  /* design system style usage */
+  font-family: var(--psTypeFontFamily);
+  font-weight: var(--psTypeFontWeightExtraLight);
+}
+
+.box {
+  margin-top: var(--psLayoutSpacingLarge);
+  padding: var(--psLayoutSpacingLarge);
+  background: var(--psColorsBone);
+  border-radius: 4px;
+}
