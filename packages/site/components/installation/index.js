@@ -142,6 +142,10 @@ export default props =>
   }
 }`}
     </Code>
+    <P>Add the required `postcss.config.js` file to your project root:</P>
+    <Code language="javascript">
+      {`module.exports = { plugins: {} }`}
+    </Code>
     <P>
       Note: If you use traditional CSS stylesheets in addition to CSS modules,
       you will need to follow these
@@ -175,4 +179,21 @@ export default props =>
   <div><Button>Love, the Design System</Button></div>
 `}
     </Code>
+
+    <Heading size="large">
+      <h2>5. See a Working Example</h2>
+    </Heading>
+    <P>
+      Explore the working examples of integration. See the{' '}
+      <Link>
+        <a
+          href="https://github.com/pluralsight/design-system/tree/master/examples"
+          target="_blank"
+        >
+          examples
+        </a>
+      </Link>
+      {' '}
+      directory on Github.
+    </P>
   </div>

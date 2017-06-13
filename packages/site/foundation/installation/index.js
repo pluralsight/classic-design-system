@@ -6,7 +6,7 @@ import { Code, P } from '../../common/components'
 
 export default props =>
   <div>
-    <Heading size="xx-large"><h1>Component Installation</h1></Heading>
+    <Heading size="xx-large"><h1>Foundations Installation</h1></Heading>
 
     <Heading size="large">
       <h2>0. Determine Your Build System Compatibility</h2>
@@ -94,6 +94,10 @@ export default props =>
   }
 }`}
     </Code>
+    <P>Add the required `postcss.config.js` file to your project root:</P>
+    <Code language="javascript">
+      {`module.exports = { plugins: {} }`}
+    </Code>
 
     <Heading size="large">
       <h2>3. Use Foundation Styles in Your Project</h2>
@@ -116,4 +120,21 @@ export default props =>
 }
 `}
     </Code>
+
+    <Heading size="large">
+      <h2>5. See a Working Example</h2>
+    </Heading>
+    <P>
+      Explore the working examples of integration. See the{' '}
+      <Link>
+        <a
+          href="https://github.com/pluralsight/design-system/tree/master/examples"
+          target="_blank"
+        >
+          examples
+        </a>
+      </Link>
+      {' '}
+      directory on Github.
+    </P>
   </div>
