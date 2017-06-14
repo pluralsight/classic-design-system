@@ -9,7 +9,7 @@ import css from './index.module.css'
 
 const tabList = (
   <Tab.List>
-    <Tab.ListItem active={true}>Menu Item</Tab.ListItem>
+    <Tab.ListItem>Menu Item</Tab.ListItem>
     <Tab.ListItem>Menu Item</Tab.ListItem>
     <Tab.ListItem>Menu Item</Tab.ListItem>
     <Tab.ListItem>Menu Item</Tab.ListItem>

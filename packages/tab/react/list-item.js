@@ -12,6 +12,11 @@ export const propDefs = {
   }
 }
 
+const rmSystemProps = props => {
+  const { active, css, listItemIndex, originalOnClick, ...rest } = props
+  return rest
+}
+
 const getClassName = props =>
   classNames({
     [props.css['ps-tab-list-item']]: true,
@@ -19,7 +24,9 @@ const getClassName = props =>
   })
 
 const ListItem = styleable(css)(props =>
-  <button className={getClassName(props)}>{props.children}</button>
+  <button {...rmSystemProps(props)} className={getClassName(props)}>
+    {props.children}
+  </button>
 )
 
 ListItem.propTypes = util.propDefs.generatePropTypes(propDefs)
