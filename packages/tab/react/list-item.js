@@ -20,7 +20,8 @@ const rmSystemProps = props => {
 const getClassName = props =>
   classNames({
     [props.css['ps-tab-list-item']]: true,
-    [props.css['ps-tab-list-item--active']]: props.active
+    [props.css['ps-tab-list-item--active']]: props.active,
+    [props.className]: props.className
   })
 
 const ListItem = styleable(css)(props =>
