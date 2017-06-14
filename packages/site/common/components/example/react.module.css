@@ -38,7 +38,7 @@
   .outputHorizontal {
     flex-direction: row;
   }
-  .outputChild {
-    margin: 0 98px 0 0;
+  .outputChild + .outputChild {
+    margin: 0 0 0 98px;
   }
 }

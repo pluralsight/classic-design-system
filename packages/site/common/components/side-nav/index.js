@@ -22,6 +22,7 @@ export default styleable(css)(props =>
       <Link href="/components/installation">Installation</Link>
       <Link href="/components/text-styles">Text styles</Link>
       <Link href="/components/button">Buttons</Link>
+      <Link href="/components/tabs">Tabs</Link>
     </Group>
   </nav>
 )

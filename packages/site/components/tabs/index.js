@@ -2,14 +2,14 @@ import Heading from '@pluralsight/ps-heading/react'
 import { Link as RouterLink } from 'react-router-dom'
 import React from 'react'
 import styleable from 'react-styleable'
-import Tab from '@pluralsight/ps-tab'
+import Tab from '@pluralsight/ps-tab/react'
 
 import { Code, Example, P } from '../../common/components'
 import css from './index.module.css'
 
 const tabList = (
   <Tab.List>
-    <Tab.ListItem>Menu Item</Tab.ListItem>
+    <Tab.ListItem active={true}>Menu Item</Tab.ListItem>
     <Tab.ListItem>Menu Item</Tab.ListItem>
     <Tab.ListItem>Menu Item</Tab.ListItem>
     <Tab.ListItem>Menu Item</Tab.ListItem>
@@ -27,7 +27,12 @@ export default styleable(css)(props => {
         subsections of an interface.
       </P>
 
-      <Example.React component={tabList} name="Tab.List" permutations={[{}]} />
+      <Example.React
+        orient="vertical"
+        component={tabList}
+        name="Tab"
+        permutations={[{}]}
+      />
     </div>
   )
 })
