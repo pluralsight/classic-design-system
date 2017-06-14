@@ -22,6 +22,7 @@
     "@pluralsight/ps-heading": "^1.0.1",
     "@pluralsight/ps-icon": "^1.2.1",
     "@pluralsight/ps-link": "^1.0.2",
+    "@pluralsight/ps-tab": "^1.0.0",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
