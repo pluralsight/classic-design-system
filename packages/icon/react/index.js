@@ -22,7 +22,8 @@ export const propDefs = {
 const getClassName = props =>
   classNames({
     [props.css['ps-icon']]: true,
-    [props.css['ps-icon--' + props.size]]: props.size
+    [props.css['ps-icon--' + props.size]]: props.size,
+    [props.className]: props.className
   })
 
 const Icon = props =>
