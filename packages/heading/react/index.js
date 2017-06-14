@@ -17,7 +17,8 @@ const getClassName = props =>
   classNames({
     [props.className]: props.className,
     [props.css['ps-heading']]: true,
-    [props.css['ps-heading--' + props.size]]: props.size
+    [props.css['ps-heading--' + props.size]]: props.size,
+    [props.className]: props.className
   })
 
 const Heading = props => {
