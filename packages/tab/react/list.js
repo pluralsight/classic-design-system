@@ -3,6 +3,12 @@ import styleable from 'react-styleable'
 
 import css from '../css/list.module.css'
 
-export default styleable(css)(props =>
-  <div className={props.css['ps-tab-list']}>{props.children}</div>
-)
+class List extends React.Component {
+  render() {
+    return (
+      <div className={this.props.css['ps-tab-list']}>{this.props.children}</div>
+    )
+  }
+}
+
+export default styleable(css)(List)
