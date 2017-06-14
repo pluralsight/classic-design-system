@@ -33,7 +33,8 @@ const getClassName = props =>
     [props.css['ps-button--icon-align-right']]:
       props.icon && props.iconAlign === 'right',
     [props.css['ps-button--icon-only']]:
-      React.Children.count(props.children) <= 0
+      React.Children.count(props.children) <= 0,
+    [props.className]: props.className
   })
 
 const mapIconSize = props => {
