@@ -9,11 +9,11 @@ import css from './index.module.css'
 
 const tabList = (
   <Tab.List>
-    <Tab.ListItem>Menu Item</Tab.ListItem>
-    <Tab.ListItem>Menu Item</Tab.ListItem>
-    <Tab.ListItem>Menu Item</Tab.ListItem>
-    <Tab.ListItem>Menu Item</Tab.ListItem>
-    <Tab.ListItem>Menu Item</Tab.ListItem>
+    <Tab.ListItem id="menu1">Menu Item</Tab.ListItem>
+    <Tab.ListItem id="menu2">Menu Item</Tab.ListItem>
+    <Tab.ListItem id="menu3">Menu Item</Tab.ListItem>
+    <Tab.ListItem id="menu4">Menu Item</Tab.ListItem>
+    <Tab.ListItem id="menu5">Menu Item</Tab.ListItem>
   </Tab.List>
 )
 
