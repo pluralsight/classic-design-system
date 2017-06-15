@@ -1,28 +1,8 @@
 import classNames from 'classnames'
-import util from '@pluralsight/ps-design-system-util'
 import styleable from 'react-styleable'
 import React from 'react'
 
 import css from '../css/index.module.css'
-
-export const propDefs = {
-  appearance: {
-    type: 'oneOf',
-    value: ['stroke', 'flat']
-  },
-  disabled: {
-    type: 'bool',
-    default: false
-  },
-  icon: {
-    type: 'element'
-  },
-  size: {
-    type: 'oneOf',
-    value: ['tiny', 'small', 'medium', 'large'],
-    default: 'medium'
-  }
-}
 
 const getClassName = props =>
   classNames({
@@ -80,8 +60,16 @@ export const Button = props => {
   )
 }
 
-// TODO: hoc these
-Button.propTypes = util.propDefs.generatePropTypes(propDefs)
-Button.defaultProps = util.propDefs.generateDefaultProps(propDefs)
+import PropTypes from 'prop-types'
+Button.propTypes = {
+  appearance: PropTypes.oneOf(['stroke', 'flat']),
+  disabled: PropTypes.bool,
+  icon: PropTypes.element,
+  size: PropTypes.oneOf(['tiny', 'small', 'medium', 'large'])
+}
+Button.defaultProps = {
+  disabled: false,
+  size: 'medium'
+}
 
 export default styleable(css)(Button)
