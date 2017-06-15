@@ -4,17 +4,6 @@ import styleable from 'react-styleable'
 
 import css from '../css/list-item.module.css'
 
-export const propDefs = {
-  active: {
-    type: 'bool',
-    default: false
-  },
-  id: {
-    type: 'string',
-    required: true
-  }
-}
-
 const rmSystemProps = props => {
   const { active, css, listItemIndex, originalOnClick, ...rest } = props
   return rest

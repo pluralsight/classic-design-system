@@ -1,13 +1,6 @@
 import React from 'react'
 import styleable from 'react-styleable'
 
-export const propDefs = {
-  labelledBy: {
-    type: 'string',
-    required: true
-  }
-}
-
 const rmSystemProps = props => {
   const { css, ...rest } = props
   return rest
