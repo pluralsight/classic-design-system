@@ -19,8 +19,11 @@ In summary, the format is:
   - `docs`
 - Common types for this project are: 
   - `feat` - new functionality
+  - `fix` - fix for existing bug/deficiency
   - `refactor` - internal or external changes; not new
   - `chore` - project house cleaning
+- The change `type` helps drive version changes.
+- The words `BREAKING CHANGE <shortDescription>` should be included in the body or footer and helps drive major version changes.  Breaking changes can be the result of `feat`, `refactor`, or anything.
 
 ### Commit Scope
 
