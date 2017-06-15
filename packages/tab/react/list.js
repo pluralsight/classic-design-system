@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import React from 'react'
 import styleable from 'react-styleable'
 
@@ -13,7 +14,12 @@ const rmSystemProps = props => {
   return rest
 }
 
-// touch
+const getClassName = props =>
+  classNames({
+    [props.css['ps-tab-list']]: true,
+    [props.className]: props.className
+  })
+
 class List extends React.Component {
   constructor(props) {
     super(props)
@@ -39,9 +45,9 @@ class List extends React.Component {
   render() {
     return (
       <div
-        className={this.props.css['ps-tab-list']}
         role="tablist"
         {...rmSystemProps(this.props)}
+        className={getClassName(this.props)}
       >
         {this.renderListItems(this.props.children)}
       </div>

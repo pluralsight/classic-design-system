@@ -18,10 +18,10 @@ const getClassName = props =>
 
 const ListItem = styleable(css)(props =>
   <button
-    className={getClassName(props)}
     role="tab"
     aria-selected={props.active}
     {...rmSystemProps(props)}
+    className={getClassName(props)}
   >
     {props.children}
   </button>
