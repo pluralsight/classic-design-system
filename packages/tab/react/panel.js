@@ -1,6 +1,5 @@
 import React from 'react'
 import styleable from 'react-styleable'
-import util from '@pluralsight/ps-design-system-util'
 
 export const propDefs = {
   labelledBy: {
@@ -19,7 +18,9 @@ const Panel = props =>
     {props.children}
   </div>
 
-Panel.propTypes = util.propDefs.generatePropTypes(propDefs)
-Panel.defaultProps = util.propDefs.generateDefaultProps(propDefs)
+import PropTypes from 'prop-types'
+Panel.propTypes = {
+  labelledBy: PropTypes.string.isRequired
+}
 
 export default styleable()(Panel)

@@ -1,7 +1,6 @@
 import classNames from 'classnames'
 import React from 'react'
 import styleable from 'react-styleable'
-import util from '@pluralsight/ps-design-system-util'
 
 import css from '../css/list-item.module.css'
 
@@ -39,7 +38,13 @@ const ListItem = styleable(css)(props =>
   </button>
 )
 
-ListItem.propTypes = util.propDefs.generatePropTypes(propDefs)
-ListItem.defaultProps = util.propDefs.generateDefaultProps(propDefs)
+import PropTypes from 'prop-types'
+ListItem.propTypes = {
+  active: PropTypes.bool,
+  id: PropTypes.string.isRequired
+}
+ListItem.defaultProps = {
+  active: false
+}
 
 export default styleable(css)(ListItem)
