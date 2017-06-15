@@ -2,9 +2,17 @@
 
 Light WIP -- 50% less fat!
 
+## What is this Design System?
+
+This Design System is the codified style guide for Pluralsight.  It bridges the gap from our design sense to our engineering implementation. The Pluralsight Style Guide is a design artifact that is the distillation of the common design principles and elements that we use across the product at Pluralsight.  If something is in the Style Guide, it can be in the Design System.
+
+## What is it not?
+
+The Design System does not include or share anything that is not in the Style Guide.  It has to be *that* common and general to the product design to be here.  Just because more than one team is sharing a component or something similar doesn't mean it should be here.  The Style Guide favors legitimately general (as in, everyone can or should use it) things.  This means that the design elements included in the Style Guide are usually of a foundational and basic nature.
+
 ## Reference Site
 
-Run:
+To run locally:
 
 ```
 nvm use
@@ -13,9 +21,7 @@ npm run bootstrap
 npm start
 ```
 
-Live URL:
-
-[pluralsight.github.io/design-system](https://pluralsight.github.io/design-system)
+Or visit the [live site](https://design-system.pluralsight.com).
 
 ## Packages
 
@@ -29,7 +35,6 @@ npm test
 ```
 
 Tests can be run as an entire suite.  If anything changes in a component, subdependency, or site, the system should break.  Test suites are not run on isolated components.  Test dependencies and setup is done in the project root.
-
 
 # Dev Guides
 
