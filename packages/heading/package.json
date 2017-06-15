@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-heading",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Design system component for heading ui",
   "main": "index.js",
   "style": "css/index.module.css",

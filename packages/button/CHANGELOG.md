@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.4.1...@pluralsight/ps-button@1.5.0) (2017-06-15)
+
+
+### Features
+
+* **button:** allow overriding className ([41b6dbd](https://github.com/pluralsight/design-system/commit/41b6dbd))
+* **tab:** accessibility attributes; put props overrides last ([7e28392](https://github.com/pluralsight/design-system/commit/7e28392))
+
+
+
+
 <a name="1.4.1"></a>
 ## [1.4.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.4.0...@pluralsight/ps-button@1.4.1) (2017-06-12)
 

@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@1.4.0...@pluralsight/ps-design-system-site@1.5.0) (2017-06-15)
+
+
+### Bug Fixes
+
+* **site:** add required id prop to tab.listitem ([e487029](https://github.com/pluralsight/design-system/commit/e487029))
+* **site:** missing key warning ([55b5ec8](https://github.com/pluralsight/design-system/commit/55b5ec8))
+* **site:** restore webpack.config.babel.js ([8775d30](https://github.com/pluralsight/design-system/commit/8775d30))
+
+
+### Features
+
+* **site:** add font install instructions ([f447d9a](https://github.com/pluralsight/design-system/commit/f447d9a))
+* **site:** add font size ref ([9e82ab0](https://github.com/pluralsight/design-system/commit/9e82ab0))
+* **site:** add foundation install instructions ([1e6cf87](https://github.com/pluralsight/design-system/commit/1e6cf87))
+* **site:** add install to color ref ([5c72310](https://github.com/pluralsight/design-system/commit/5c72310))
+* **site:** add reference to the examples in installation ([071bf55](https://github.com/pluralsight/design-system/commit/071bf55))
+* **site:** display font family ([598654b](https://github.com/pluralsight/design-system/commit/598654b))
+* **site:** show font weight reference ([23f37cc](https://github.com/pluralsight/design-system/commit/23f37cc))
+* **site:** stub usage for tab ([f16b082](https://github.com/pluralsight/design-system/commit/f16b082))
+* **site:** usage to color ref ([a1abd9e](https://github.com/pluralsight/design-system/commit/a1abd9e))
+* **tab:** basic style ([1301bb0](https://github.com/pluralsight/design-system/commit/1301bb0))
+* **tab:** handle click for activating tab listitem ([543bf9f](https://github.com/pluralsight/design-system/commit/543bf9f))
+* **tab:** setup stub project ([74fe56c](https://github.com/pluralsight/design-system/commit/74fe56c))
+
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@1.3.3...@pluralsight/ps-design-system-site@1.4.0) (2017-06-12)
 
