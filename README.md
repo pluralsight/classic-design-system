@@ -33,13 +33,11 @@ Tests can be run as an entire suite.  If anything changes in a component, subdep
 
 # Dev Guides
 
+See [CONTRIBUTING.md] for information on how to submit code to the project.
+
 ## Formatting
 
 All JavaScript in the codebase is automatically formatted with [prettier](https://github.com/prettier/prettier).  Dependencies for and setup for this feature is kept in the root of the project.  It should not need reconfigured for every package.  But every package should conform to it.
-
-## Commit Messages
-
-This project conforms to the [Conventional Commits format](https://conventionalcommits.org/) for all commit messages.  Version changes are determined by adherence to this convention.
 
 ## Make a package dependent on another
 
