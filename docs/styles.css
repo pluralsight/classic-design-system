@@ -2713,6 +2713,7 @@
   border: 0;
   cursor: pointer;
   overflow: hidden;
+  padding-bottom: 4px;
 }
 .ps-tab-list-item___2FBfq + .ps-tab-list-item___2FBfq {
   margin-left: var(--psLayoutSpacingLarge);
@@ -2724,6 +2725,7 @@
 .ps-tab-list-item--active___3LTXw {
   color: var(--psColorsWhite);
   font-weight: var(--psTypeFontWeightMedium);
+  padding-bottom: 0;
   border-bottom: 4px solid var(--psColorsOrange);
 }
 :root {

@@ -11,6 +11,7 @@
   border: 0;
   cursor: pointer;
   overflow: hidden;
+  padding-bottom: 4px;
 }
 .ps-tab-list-item + .ps-tab-list-item {
   margin-left: var(--psLayoutSpacingLarge);
@@ -22,5 +23,6 @@
 .ps-tab-list-item--active {
   color: var(--psColorsWhite);
   font-weight: var(--psTypeFontWeightMedium);
+  padding-bottom: 0;
   border-bottom: 4px solid var(--psColorsOrange);
 }
