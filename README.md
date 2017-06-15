@@ -38,7 +38,7 @@ Tests can be run as an entire suite.  If anything changes in a component, subdep
 
 # Dev Guides
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for information on how to submit code to the project.
+See [CONTRIBUTING](CONTRIBUTING.md) guide for information on how to submit code to the project.
 
 ## Formatting
 
