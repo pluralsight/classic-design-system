@@ -1,7 +1,6 @@
 import classNames from 'classnames'
 import React from 'react'
 import styleable from 'react-styleable'
-import util from '@pluralsight/ps-design-system-util'
 
 import css from '../css/index.module.css'
 
@@ -9,14 +8,6 @@ import logo from '../svg/logo.icon.svg'
 
 const ids = {
   logo
-}
-
-export const propDefs = {
-  size: {
-    type: 'oneOf',
-    value: ['tiny', 'small', 'medium', 'large', 'x-large'],
-    default: 'small'
-  }
 }
 
 const getClassName = props =>
@@ -31,7 +22,11 @@ const Icon = props =>
     {React.createElement(ids[props.id], { css: props.css })}
   </span>
 
-Icon.propTypes = util.propDefs.generatePropTypes(propDefs)
-Icon.defaultProps = util.propDefs.generateDefaultProps(propDefs)
-
+import PropTypes from 'prop-types'
+Icon.propTypes = {
+  size: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'x-large'])
+}
+Icon.defaultProps = {
+  size: 'small'
+}
 export default styleable(css)(Icon)
