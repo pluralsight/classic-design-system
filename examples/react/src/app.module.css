@@ -31,3 +31,11 @@ h2, h3 {
   background: var(--psColorsBone);
   border-radius: 4px;
 }
+
+/* styles used to override button using react-styleable */
+.buttonOverride {
+  background: rebeccapurple;
+  color: #fff;
+  border: 3px solid #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}

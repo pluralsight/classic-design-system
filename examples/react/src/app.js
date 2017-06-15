@@ -16,5 +16,10 @@ export default styleable(css)(props =>
         Design System component
       </Button>
     </div>
+    <div className={props.css.box}>
+      <Button size="large" css={{ 'ps-button': props.css.buttonOverride }}>
+        Override all styles with react-stylable
+      </Button>
+    </div>
   </div>
 )

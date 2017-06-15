@@ -1,5 +1,6 @@
 {
   "name": "ps-design-system-example-react",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +12,7 @@
   "author": "jaketrent",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@pluralsight/ps-button": "^1.4.0",
+    "@pluralsight/ps-button": "^1.5.1",
     "@pluralsight/ps-design-system-normalize": "^2.2.3",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
