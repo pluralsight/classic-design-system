@@ -1,17 +1,8 @@
 import classNames from 'classnames'
 import React from 'react'
 import styleable from 'react-styleable'
-import util from '@pluralsight/ps-design-system-util'
 
 import css from '../css/index.module.css'
-
-export const propDefs = {
-  size: {
-    type: 'oneOf',
-    value: ['medium', 'large', 'xx-large'],
-    default: 'large'
-  }
-}
 
 const getClassName = props =>
   classNames({
@@ -29,7 +20,11 @@ const Heading = props => {
   return React.cloneElement(child, newProps)
 }
 
-Heading.propTypes = util.propDefs.generatePropTypes(propDefs)
-Heading.defaultProps = util.propDefs.generateDefaultProps(propDefs)
-
+import PropTypes from 'prop-types'
+Heading.propTypes = {
+  size: PropTypes.oneOf(['medium', 'large', 'xx-large'])
+}
+Heading.defaultProps = {
+  size: 'large'
+}
 export default styleable(css)(Heading)
