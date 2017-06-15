@@ -1,4 +1,4 @@
-## The Example
+## React Install Example
 
 An example of how to integrate the Pluralsight Design System Core and Components into a React-based project.
 

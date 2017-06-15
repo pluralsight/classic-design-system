@@ -1,10 +1,5 @@
-/* the design system depends on this normalize baseline */
 @import "@pluralsight/ps-design-system-normalize";
-
-/* you are required to import the font yourself */
 @import url(https://cloud.typography.com/6966154/691568/css/fonts.css);
-
-/* core import example */
 @import "@pluralsight/ps-design-system-core";
 
 .app {
@@ -18,13 +13,10 @@
   font-size: 18px;
   text-align: center;
 }
-
 h2, h3 {
-  /* design system style usage */
   font-family: var(--psTypeFontFamily);
   font-weight: var(--psTypeFontWeightExtraLight);
 }
-
 .box {
   margin-top: var(--psLayoutSpacingLarge);
   padding: var(--psLayoutSpacingLarge);
@@ -32,10 +24,23 @@ h2, h3 {
   border-radius: 4px;
 }
 
-/* styles used to override button using react-styleable */
-.buttonOverride {
+/* for overriding/composing component styles */
+.buttonOverrideStyleable {
   background: rebeccapurple;
   color: #fff;
   border: 3px solid #fff;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.buttonComposesStyleable {
+  composes: ps-button from "@pluralsight/ps-button/css/index.module.css";
+  background: green;
+}
+.buttonComposesStyleable:hover {
+  background: limegreen;
+}
+
+.buttonComposeClassName {
+  background: #c0ffee;
+  color: black;
 }
