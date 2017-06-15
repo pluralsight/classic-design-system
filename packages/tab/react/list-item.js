@@ -9,6 +9,10 @@ export const propDefs = {
   active: {
     type: 'bool',
     default: false
+  },
+  id: {
+    type: 'string',
+    required: true
   }
 }
 
@@ -25,7 +29,12 @@ const getClassName = props =>
   })
 
 const ListItem = styleable(css)(props =>
-  <button {...rmSystemProps(props)} className={getClassName(props)}>
+  <button
+    className={getClassName(props)}
+    role="tab"
+    aria-selected={props.active}
+    {...rmSystemProps(props)}
+  >
     {props.children}
   </button>
 )

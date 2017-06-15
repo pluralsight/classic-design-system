@@ -39,8 +39,9 @@ class List extends React.Component {
   render() {
     return (
       <div
-        {...rmSystemProps(this.props)}
         className={this.props.css['ps-tab-list']}
+        role="tablist"
+        {...rmSystemProps(this.props)}
       >
         {this.renderListItems(this.props.children)}
       </div>

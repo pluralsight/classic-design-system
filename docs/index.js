@@ -21811,10 +21811,13 @@ object-assign
         }
 
         var formatProps = function formatProps(props) {
-          return _extends({}, rmSystemProps(props), {
-            className: getClassName(props),
-            disabled: props.disabled
-          })
+          return _extends(
+            {
+              className: getClassName(props),
+              disabled: props.disabled
+            },
+            rmSystemProps(props)
+          )
         }
 
         var renderIcon = function renderIcon(props) {
@@ -25749,13 +25752,18 @@ object-assign
 
         var _listItem2 = _interopRequireDefault(_listItem)
 
+        var _panel = __webpack_require__(609)
+
+        var _panel2 = _interopRequireDefault(_panel)
+
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
         }
 
         exports.default = {
           List: _list2.default,
-          ListItem: _listItem2.default
+          ListItem: _listItem2.default,
+          Panel: _panel2.default
         }
 
         /***/
@@ -25834,6 +25842,10 @@ object-assign
           active: {
             type: 'bool',
             default: false
+          },
+          id: {
+            type: 'string',
+            required: true
           }
         })
 
@@ -25875,9 +25887,14 @@ object-assign
         )(function(props) {
           return _react2.default.createElement(
             'button',
-            _extends({}, rmSystemProps(props), {
-              className: getClassName(props)
-            }),
+            _extends(
+              {
+                className: getClassName(props),
+                role: 'tab',
+                'aria-selected': props.active
+              },
+              rmSystemProps(props)
+            ),
             props.children
           )
         })
@@ -26070,9 +26087,13 @@ object-assign
               value: function render() {
                 return _react2.default.createElement(
                   'div',
-                  _extends({}, rmSystemProps(this.props), {
-                    className: this.props.css['ps-tab-list']
-                  }),
+                  _extends(
+                    {
+                      className: this.props.css['ps-tab-list'],
+                      role: 'tablist'
+                    },
+                    rmSystemProps(this.props)
+                  ),
                   this.renderListItems(this.props.children)
                 )
               }
@@ -65760,6 +65781,126 @@ https://highlightjs.org/
           return Component.displayName || Component.name || 'Component'
         }
         //# sourceMappingURL=get-display-name.js.map
+
+        /***/
+      },
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      /* 573 */ /* 574 */ /* 575 */ /* 576 */ /* 577 */ /* 578 */ /* 579 */ /* 580 */ /* 581 */ /* 582 */ /* 583 */ /* 584 */ /* 585 */ /* 586 */ /* 587 */ /* 588 */ /* 589 */ /* 590 */ /* 591 */ /* 592 */ /* 593 */ /* 594 */ /* 595 */ /* 596 */ /* 597 */ /* 598 */ /* 599 */ /* 600 */ /* 601 */ /* 602 */ /* 603 */ /* 604 */ /* 605 */ /* 606 */ /* 607 */ /* 608 */ /* 609 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+        exports.propDefs = undefined
+
+        var _extends =
+          Object.assign ||
+          function(target) {
+            for (var i = 1; i < arguments.length; i++) {
+              var source = arguments[i]
+              for (var key in source) {
+                if (Object.prototype.hasOwnProperty.call(source, key)) {
+                  target[key] = source[key]
+                }
+              }
+            }
+            return target
+          }
+
+        var _react = __webpack_require__(11)
+
+        var _react2 = _interopRequireDefault(_react)
+
+        var _reactStyleable = __webpack_require__(134)
+
+        var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
+
+        var _psDesignSystemUtil = __webpack_require__(566)
+
+        var _psDesignSystemUtil2 = _interopRequireDefault(_psDesignSystemUtil)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        function _objectWithoutProperties(obj, keys) {
+          var target = {}
+          for (var i in obj) {
+            if (keys.indexOf(i) >= 0) continue
+            if (!Object.prototype.hasOwnProperty.call(obj, i)) continue
+            target[i] = obj[i]
+          }
+          return target
+        }
+
+        var propDefs = (exports.propDefs = {
+          labelledBy: {
+            type: 'string',
+            required: true
+          }
+        })
+
+        var rmSystemProps = function rmSystemProps(props) {
+          var css = props.css,
+            rest = _objectWithoutProperties(props, ['css'])
+
+          return rest
+        }
+
+        var Panel = function Panel(props) {
+          return _react2.default.createElement(
+            'div',
+            _extends(
+              { role: 'tabpanel', 'aria-labelledby': props.label },
+              rmSystemProps(props)
+            ),
+            props.children
+          )
+        }
+
+        Panel.propTypes = _psDesignSystemUtil2.default.propDefs.generatePropTypes(
+          propDefs
+        )
+        Panel.defaultProps = _psDesignSystemUtil2.default.propDefs.generateDefaultProps(
+          propDefs
+        )
+
+        exports.default = (0, _reactStyleable2.default)()(Panel)
 
         /***/
       }
