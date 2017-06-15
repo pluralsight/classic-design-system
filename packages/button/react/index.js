@@ -33,9 +33,9 @@ const rmSystemProps = props => {
 }
 
 const formatProps = props => ({
-  className: getClassName(props),
   disabled: props.disabled,
-  ...rmSystemProps(props)
+  ...rmSystemProps(props),
+  className: getClassName(props)
 })
 
 const renderIcon = props =>
