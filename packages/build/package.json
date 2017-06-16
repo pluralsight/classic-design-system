@@ -13,7 +13,11 @@
   "repository": "pluralsight/design-system",
   "devDependencies": {
     "dashify": "^0.2.2",
+    "idempotent-fs": "^1.2.0",
     "postcss": "^6.0.1",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-import": "^10.0.0",
     "promisify-node": "^0.4.0"
   }
 }
