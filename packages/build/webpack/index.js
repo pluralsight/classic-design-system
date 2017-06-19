@@ -23,22 +23,22 @@ const validateRules = config =>
 const commonRules = include => [
   {
     test: /\.js/,
-    use: ['babel-loader'],
+    use: [require.resolve('babel-loader')],
     include
   },
   {
     test: /\.module\.css$/,
     use: [
-      'style-loader',
+      require.resolve('style-loader'),
       {
-        loader: 'css-loader',
+        loader: require.resolve('css-loader'),
         options: {
           modules: true,
           importLoaders: 1,
           localIdentName: '[local]___[hash:base64:5]'
         }
       },
-      'postcss-loader'
+      require.resolve('postcss-loader')
     ],
     include
   }
