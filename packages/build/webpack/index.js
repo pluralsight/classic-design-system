@@ -1,8 +1,11 @@
 const path = require('path')
+const chalk = require('chalk')
 
 const error = msg => {
   throw new Error(msg)
 }
+
+const info = msg => console.log(chalk.dim(msg))
 
 const validateOptions = options => {
   if (!(options && options.packageJson))
@@ -20,10 +23,32 @@ const validateRules = config =>
     }
   })
 
-const commonRules = include => [
+const browserlist = ['Last 2 versions', 'IE >= 10']
+
+const defaultOptions = {
+  autoprefixer: browserlist,
+  postcssCssnext: { browsers: browserlist }
+}
+
+const commonRules = (options, include) => [
   {
     test: /\.js/,
-    use: [require.resolve('babel-loader')],
+    use: [
+      {
+        loader: require.resolve('babel-loader'),
+        options: {
+          babelrc: false,
+          presets: [
+            require.resolve('babel-preset-react'),
+            require.resolve('babel-preset-stage-2'),
+            [
+              require.resolve('babel-preset-env'),
+              { targets: { browsers: browserlist } }
+            ]
+          ]
+        }
+      }
+    ],
     include
   },
   {
@@ -38,7 +63,15 @@ const commonRules = include => [
           localIdentName: '[local]___[hash:base64:5]'
         }
       },
-      require.resolve('postcss-loader')
+      {
+        loader: require.resolve('postcss-loader'),
+        options: {
+          plugins: _ => [
+            require('postcss-import')(),
+            require('postcss-cssnext')(options.postcssCssnext)
+          ]
+        }
+      }
     ],
     include
   }
@@ -64,14 +97,19 @@ const decorateRules = (config, options) => {
     .filter(relatedToDesignSystem)
     .map(dependencyDirName)
 
+  designSystemPaths
+    .map(p => `ps-design-system-build: module.rule.include ${p}`)
+    .map(info)
+
   config.module.rules = config.module.rules.concat(
-    commonRules(designSystemPaths)
+    commonRules(options, designSystemPaths)
   )
   return config
 }
 
 const decorateConfig = (config, options) => {
   // TODO: handle extracttextplugin initialization
+  options = Object.assign({}, defaultOptions, options)
 
   validateOptions(options)
   validateRules(config)
