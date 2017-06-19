@@ -26568,6 +26568,7 @@ object-assign
           children,
           permutation
         ) {
+          console.log('children', children)
           return (
             '<' +
             name +

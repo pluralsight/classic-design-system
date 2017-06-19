@@ -5,6 +5,8 @@
   "main": "index.js",
   "style": "css/index.module.css",
   "scripts": {
+    "build": "node ./build",
+    "prepublish": "npm run build",
     "test": "echo \"Error: tests run in as a single design system suite\" && exit 1"
   },
   "keywords": [],
@@ -20,5 +22,8 @@
     "classnames": "^2.2.5",
     "prop-types": "^15.5.10",
     "react-styleable": "^2.2.5"
+  },
+  "devDependencies": {
+    "@pluralsight/ps-design-system-build": "^1.0.5"
   }
 }
