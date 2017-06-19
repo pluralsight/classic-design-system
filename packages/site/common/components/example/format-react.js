@@ -15,7 +15,6 @@ const renderReactImport = name =>
   `import ${name} from '@pluralsight/ps-${name.toLowerCase()}/react'\n\n`
 
 const renderReactSrc = (name, children, permutation) => {
-  console.log('children', children)
   return `<${name}${renderReactProps(permutation)}>${children ||
     ''}</${name}>\n`
 }
