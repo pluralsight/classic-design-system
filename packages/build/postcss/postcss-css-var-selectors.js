@@ -11,7 +11,7 @@ const createSelectorsForVar = (decl, options) => {
   }).props
     .map((p, i, newProps) =>
       postcss.parse(`
-.${prop + (newProps.length > 1 ? `-${p}` : '')} { ${p}: ${value}; }
+.${prop + (newProps.length > 1 ? `--${p}` : '')} { ${p}: ${value}; }
 `)
     )
 }
