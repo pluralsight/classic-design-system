@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.5"></a>
+## [1.5.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@1.5.4...@pluralsight/ps-design-system-core@1.5.5) (2017-06-20)
+
+
+### Bug Fixes
+
+* **core:** ensure all colors are built into vanillaz ([0eee0b1](https://github.com/pluralsight/design-system/commit/0eee0b1))
+
+
+
+
 <a name="1.5.4"></a>
 ## [1.5.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@1.5.3...@pluralsight/ps-design-system-core@1.5.4) (2017-06-20)
 
