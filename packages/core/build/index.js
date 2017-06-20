@@ -25,7 +25,7 @@ const propNameTests = [
       'padding-left'
     ]
   },
-  { match: /psColorsGradient/, props: ['color', 'background-color'] }
+  { match: /psColors/, props: ['color', 'background-color'] }
 ]
 const postcssCssVarSelectorsOptions = { propNameTests }
 ;(async _ => {
