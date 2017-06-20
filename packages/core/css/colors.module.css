@@ -21,11 +21,4 @@
   /* gradients */
   --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
   --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
-
-  /* role colors */
-  --psColorsRoleYellowLighter: #fd39bc;
-  --psColorsRoleYellowLight: #fbcd64;
-  --psColorsRoleYellow: #f8b721;
-  --psColorsRoleYellowDark: #ae8017;
-  --psColorsRoleYellowDarker: #7c5b12;
 }
