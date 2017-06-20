@@ -1,7 +1,7 @@
-const mkdir = require('./mkdir')
+const fs = require('./fs')
 const postcss = require('./postcss')
 
 module.exports = {
-  mkdir,
+  fs,
   postcss
 }
