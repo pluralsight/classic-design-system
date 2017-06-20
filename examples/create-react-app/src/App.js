@@ -14,7 +14,9 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Button>Click me</Button>
+        <div className="ps-colors-gray03--background-color ps-layout-spacing-large--padding box">
+          <Button>Click me</Button>
+        </div>
       </div>
     )
   }
