@@ -25,7 +25,6 @@ const validateRules = (config, options) =>
           `module.rule ${rules.test} uses "exclude". This may be fine. "include" is recommended as a safer alternative to avoid clashing rules with the design system. See https://webpack.js.org/configuration/module/#rule-include`
         )
       } else if (!options.defaultInclude) {
-        console.log('rules', rules)
         error(
           `module.rule {$rules.test} is missing an "include" property and no "defaultInclude" options has been given to #decorateConfig.  Please implement one or the other avoid rule clashes with the design system. See https://webpack.js.org/configuration/module/#rule-include`
         )
@@ -96,7 +95,7 @@ const prepForDecoration = config => {
 
 const getDependencies = pkgJson =>
   Object.keys(pkgJson.devDependencies || []).concat(
-    Object.keys(pkgJson.dependences || [])
+    Object.keys(pkgJson.dependencies || [])
   )
 
 const relatedToDesignSystem = dep => /^@pluralsight\/ps-.*$/.test(dep)
