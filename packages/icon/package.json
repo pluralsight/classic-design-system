@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-icon",
-  "version": "1.3.7",
+  "version": "1.3.8",
   "description": "",
   "main": "index.js",
   "style": "css/index.module.css",
@@ -16,7 +16,7 @@
     "react": ">=0.15.0 < 16.0.0"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^1.5.3",
+    "@pluralsight/ps-design-system-core": "^1.5.4",
     "classnames": "^2.2.5",
     "prop-types": "^15.5.10",
     "react-styleable": "^2.2.5"
