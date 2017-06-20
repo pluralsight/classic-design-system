@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.1.2...@pluralsight/ps-design-system-build@1.1.3) (2017-06-20)
+
+
+### Bug Fixes
+
+* **build:** bundle build deps all the time ([64438be](https://github.com/pluralsight/design-system/commit/64438be))
+
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.1.1...@pluralsight/ps-design-system-build@1.1.2) (2017-06-20)
 
