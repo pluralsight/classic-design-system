@@ -2734,20 +2734,24 @@
   align-items: center;
   height: calc(100% + 1px);
   margin-bottom: -1px;
-  color: var(--psColorsGray03);
+  color: var(--psColorsGray02);
   font-weight: var(--psTypeFontWeightBook);
   background: none;
   border: 0;
   cursor: pointer;
   overflow: hidden;
-  padding-bottom: 4px;
+  padding: 0 0 var(--psLayoutSpacingTiny) 0;
+  transition: color var(--psMotionSpeedNormal);
 }
 .ps-tab-list-item___2FBfq + .ps-tab-list-item___2FBfq {
   margin-left: var(--psLayoutSpacingLarge);
 }
+.ps-tab-list-item___2FBfq:focus {
+  color: var(--psColorsWhite);
+  outline: 0;
+}
 .ps-tab-list-item___2FBfq:hover {
   color: var(--psColorsWhite);
-  font-weight: var(--psTypeFontWeightMedium);
 }
 .ps-tab-list-item___2FBfq:focus {
   outline: none;
@@ -2758,7 +2762,7 @@
   color: var(--psColorsWhite);
   font-weight: var(--psTypeFontWeightMedium);
   padding-bottom: 0;
-  border-bottom: 4px solid var(--psColorsOrange);
+  border-bottom: var(--psLayoutSpacingTiny) solid var(--psColorsOrange);
 }
 :root {
   /* ui colors */
