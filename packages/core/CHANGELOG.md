@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@1.4.5...@pluralsight/ps-design-system-core@1.5.0) (2017-06-20)
+
+
+### Features
+
+* **core:** add padding, bg color variants and directions ([2cc54d8](https://github.com/pluralsight/design-system/commit/2cc54d8))
+
+
+
+
 <a name="1.4.5"></a>
 ## [1.4.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@1.4.4...@pluralsight/ps-design-system-core@1.4.5) (2017-06-15)
 

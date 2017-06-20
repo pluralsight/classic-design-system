@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.0.5...@pluralsight/ps-design-system-build@1.1.0) (2017-06-20)
+
+
+### Bug Fixes
+
+* **build:** get the correct paths for dependencies to include ([087dd11](https://github.com/pluralsight/design-system/commit/087dd11))
+
+
+### Features
+
+* **build:** add js build step for components; use on btn ([ffb8d90](https://github.com/pluralsight/design-system/commit/ffb8d90))
+* **build:** add webpack decorator function for easy config ([883f55e](https://github.com/pluralsight/design-system/commit/883f55e))
+* **build:** component build css process ([c2de444](https://github.com/pluralsight/design-system/commit/c2de444))
+* **build:** generate multiple css selectors with one replacement ([75bb14a](https://github.com/pluralsight/design-system/commit/75bb14a))
+* **build:** protect webpack config merging from clashes better ([ec8fa74](https://github.com/pluralsight/design-system/commit/ec8fa74))
+* **build:** specify babel and postcss pipeline ([4fb9a0e](https://github.com/pluralsight/design-system/commit/4fb9a0e))
+
+
+
+
 <a name="1.0.5"></a>
 ## [1.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.0.4...@pluralsight/ps-design-system-build@1.0.5) (2017-06-15)
 

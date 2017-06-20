@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@1.5.3...@pluralsight/ps-design-system-site@1.6.0) (2017-06-20)
+
+
+### Features
+
+* **build:** add js build step for components; use on btn ([ffb8d90](https://github.com/pluralsight/design-system/commit/ffb8d90))
+
+
+
+
 <a name="1.5.3"></a>
 ## [1.5.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@1.5.2...@pluralsight/ps-design-system-site@1.5.3) (2017-06-15)
 
