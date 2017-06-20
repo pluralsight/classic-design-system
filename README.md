@@ -21,7 +21,7 @@ npm run bootstrap
 npm start
 ```
 
-Or visit the [live site](https://design-system.pluralsight.com).
+Or visit the [live site](http://design-system.pluralsight.com).
 
 ## Packages
 
