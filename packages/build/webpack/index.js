@@ -109,9 +109,7 @@ const decorateRules = (config, options) => {
     .map(dependencyDirName)
     .concat(options.extraInclude)
 
-  designSystemPaths
-    .map(p => `ps-design-system-build: module.rule.include ${p}`)
-    .map(info)
+  designSystemPaths.map(p => info(`module.rule.include ${p}`))
 
   config.module.rules = config.module.rules.concat(
     commonRules(options, designSystemPaths)
@@ -130,6 +128,7 @@ const decorateRules = (config, options) => {
 const decorateConfig = (config, options) => {
   // TODO: handle extracttextplugin initialization
   options = Object.assign({}, defaultOptions, options)
+  prepForDecoration(config)
 
   validateOptions(options)
   validateRules(config, options)
