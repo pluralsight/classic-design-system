@@ -1,0 +1,25 @@
+/* core import example */
+@import "~@pluralsight/ps-design-system-core/dist/index.scss";
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-size: 18px;
+  text-align: center;
+}
+h2, h3 {
+  /* design system style usage */
+  font-family: $ps-type-font-family;
+  font-weight: $ps-type-font-weight-extra-light;
+}
+.box {
+  margin-top: $ps-layout-spacing-large;
+  padding: $ps-layout-spacing-large;
+  background: $ps-colors-bone;
+  border-radius: 4px;
+}
