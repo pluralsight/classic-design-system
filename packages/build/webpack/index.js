@@ -37,6 +37,7 @@ const browserlist = ['Last 2 versions', 'IE >= 10']
 const defaultOptions = {
   autoprefixer: browserlist,
   defaultInclude: null,
+  extraInclude: [],
   postcssCssnext: { browsers: browserlist }
 }
 
@@ -106,6 +107,7 @@ const decorateRules = (config, options) => {
   const designSystemPaths = getDependencies(options.packageJson)
     .filter(relatedToDesignSystem)
     .map(dependencyDirName)
+    .concat(options.extraInclude)
 
   designSystemPaths
     .map(p => `ps-design-system-build: module.rule.include ${p}`)
