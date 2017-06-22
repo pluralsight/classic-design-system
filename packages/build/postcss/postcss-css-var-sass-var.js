@@ -1,8 +1,9 @@
+const dashify = require('dashify')
 const postcss = require('postcss')
 
 const createSassVar = (decl, options) => {
   const node = postcss.parse(`
-$${decl.prop.replace('--', '')}: ${decl.value};
+$${dashify(decl.prop.replace('--', ''))}: ${decl.value};
 `)
 
   decl.root().insertAfter(decl.root(), node)
