@@ -8,9 +8,7 @@ html {
   font-family: var(--psTypeFontFamily);
   font-size: .875em;
   font-weight: var(--psTypeFontWeightBook);
-  line-height: calc(
-    var(--psTypeLineHeightStandard) / var(--psTypeFontSizeSmall)
-  );
+  line-height: 1.71429; /* calc(var(--psTypeLineHeightStandard) / var(--psTypeFontSizeSmall)); */
 }
 
 *, *:before, *:after {
