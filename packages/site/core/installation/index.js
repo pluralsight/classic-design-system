@@ -50,11 +50,13 @@ npm install style-loader css-loader postcss-loader postcss-import postcss-cssnex
 The add a \`module.rule\` to your \`webpack.config.js\`:
 
 \`\`\`js
+const path = require('path')
+
 module: {
   rules: [
     {
       test: /\\.module\\.css$/,
-      include: require('path').resolve('src'),
+      include: [path.resolve(path.join('node_modules', '@pluralsight', 'ps-design-system-core'))],
       use: [
         'style-loader',
         {
