@@ -1,0 +1,31 @@
+@import "@pluralsight/ps-design-system-core";
+
+/*
+  NOTE: this is the tradeoff for being able to write markdown docs.
+  We get the nice flow of prose in markdown, but we have to deal with
+  styling the generated HTML by duplicating component styles (like heading)
+  here.
+*/
+.root {
+}
+.root :global(h1) {
+  font-size: var(--psTypeFontSizeXxl);
+  letter-spacing: var(--psTypeLetterSpacingXxl);
+  font-weight: var(--psTypeFontWeightLight);
+  margin: var(--psLayoutSpacingXxl) 0;
+}
+.root :global(h2) {
+  font-size: var(--psTypeFontSizeLarge);
+  letter-spacing: var(--psTypeLetterSpacingLarge);
+  font-weight: var(--psTypeFontWeightBook);
+  margin: var(--psLayoutSpacingXl) 0 var(--psLayoutSpacingSmall) 0;
+}
+.root :global(pre) {
+  padding: var(--psLayoutSpacingLarge);
+  background: var(--psColorsGray04);
+  color: var(--psColorsWhite);
+  margin: var(--psLayoutSpacingSmall) 0;
+}
+.root :global(pre > code) {
+  background: none;
+}

@@ -2,139 +2,100 @@ import Heading from '@pluralsight/ps-heading/react'
 import Link from '@pluralsight/ps-link/react'
 import React from 'react'
 
-import { Code, P } from '../../common/components'
+import { Code, Doc, P } from '../../common/components'
 
 export default props =>
   <div>
     <Heading size="xx-large"><h1>Core Installation</h1></Heading>
+    <Doc>{`
+## Recommended Usage
 
-    <Heading size="large">
-      <h2>0. Determine Your Build System Compatibility</h2>
-    </Heading>
-    <P>
-      You'll need a build system in your development environment that supports
-      the following:
-    </P>
-    <ul>
-      <li>
-        Installing CSS modules from NPM - eg,{' '}
-        <Link><a href="https://nodejs.org/" target="_blank">Node</a></Link>
-      </li>
-      <li>
-        Loading assets (CSS) as modules - eg,{' '}
-        <Link>
-          <a href="https://webpack.js.org/" target="_blank">Webpack</a>
-        </Link>
-      </li>
-      <li>
-        Transpiling PostCSS - eg,{' '}
-        <Link>
-          <a href="https://github.com/postcss/postcss-loader" target="_blank">
-            postcss-loader
-          </a>
-        </Link>
-      </li>
-    </ul>
+The recommended way to use the Core elements of the design system is via the provided CSS variables.
+There are two languages for variables exposed: cssnext and sass.
+Use of variables, because of a lack of widespread browser support, requires a css build.
+You can use the Design System's (easy) or provide your own (custom).
 
-    <Heading size="large"><h2>1. Add the Core Dependency</h2></Heading>
-    <P>
-      Install the core dependency using NPM:
-    </P>
-    <Code language="bash">
+## PostCSS Easy Config
+
+To use the Design System config, you must use Webpack.
+
+First, install the build dependency:
+
+\`\`\`bash
+npm install @pluralsight/ps-design-system-build --save-dev
+\`\`\`
+
+Then in your \`webpack.config.js\`, decorate your config:
+
+\`\`\`js
+const { decorateConfig } = require('@pluralsight/ps-design-system-build/webpack')
+module.exports = decorateConfig({
+  // ... your project's normal webpack config
+}, {
+  extraInclude: [require('path').resolve('src')]
+  packageJson: require('./package.json')
+})
+\`\`\`
+
+The array of paths in the \`extraInclude\` option will process all \`*.module.css\` files in those paths using the Design System PostCSS setup.
+
+## PostCSS Custom Config
+
+If you want to setup your own PostCSS config to consume the CSSNext variables, you'll want install the needed dependencies:
+
+\`\`\`bash
+npm install style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev
+\`\`\`
+
+The add a \`module.rule\` to your \`webpack.config.js\`:
+
+\`\`\`js
+module: {
+  rules: [
+    {
+      test: /\\.module\\.css$/,
+      include: require('path').resolve('src'),
+      use: [
+        'style-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            modules: true,
+            importLoaders: 1,
+            localIdentName: '[local]___[hash:base64:5]'
+          }
+        },
+        {
+          loader: 'postcss-loader',
+          options: {
+            plugins: _ => [
+              require('postcss-import')(),
+              require('postcss-cssnext')()
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+\`\`\`
+
+## Sass Easy Config
+
+## Sass Custom Config
+
+## Import the Library
+
       npm install @pluralsight/ps-design-system-core --save-dev
-    </Code>
+TODO - postcss and sass
+..see core pages and examples
+href="https://github.com/pluralsight/design-system/tree/master/examples"
 
-    <Heading size="large"><h2>2. Support PostCSS Parsing</h2></Heading>
-    <P>
-      The Design System core use nextgen CSS via PostCSS{' '}
-      <Link>
-        <a href="https://github.com/postcss/postcss" target="_blank">
-          PostCSS
-        </a>
-      </Link>
-      . The CSS is published to npm just as JavaScript would be. It is in its
-      source format that needs to be parsed by PostCSS. Depending on your build
-      system, this may be accomplished differently. Here we'll assume that the
-      module loader, Webpack, is parsing it via the{' '}
-      <Link>
-        <a href="https://github.com/postcss/postcss-loader" target="_blank">
-          postcss-loader
-        </a>
-      </Link>.
-    </P>
-    <P>
-      Install the needed dependencies based on your build:
-    </P>
-    <Code language="bash">
-      npm install style-loader css-loader postcss-loader --save-dev
-    </Code>
-    <P>
-      Modify your webpack.config.js to support PostCSS parsing and loading:
-    </P>
-    <Code language="javascript">
-      {`{
-  module: {
-    rules: [
-      {
-        test: /\\.module\\.css$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-              importLoaders: 1,
-              localIdentName: '[local]___[hash:base64:5]'
-            }
-          },
-          'postcss-loader'
-        ]
-      }
-    ]
-  }
-}`}
-    </Code>
-    <P>Add the required postcss.config.js file to your project root:</P>
-    <Code language="javascript">
-      {`module.exports = { plugins: {} }`}
-    </Code>
+## No-Build Alternatives
 
-    <Heading size="large">
-      <h2>3. Use Core Styles in Your Project</h2>
-    </Heading>
-    <P>
-      Currently all the core style variables are available in one package,
-      available in a single CSS import:
-    </P>
-    <Code language="css">
-      {`@import "@pluralsight/ps-design-system-core";
+TODO...
 
-.selector-needing-color {
-  color: var(--psColorsPink);
-}
-.selector-needing-spacing {
-  margin: var(--psLayoutSpacingLarge);
-}
-.selector-needing-font-help {
-  line-height: var(--psTypeLineHeightExtra);
-}
-`}
-    </Code>
+For those not wanting to deal with a build, a CSS utility class approach is available.  These selectors are generated from the source variables.
 
-    <Heading size="large">
-      <h2>5. See a Working Example</h2>
-    </Heading>
-    <P>
-      Explore the working examples of integration. See the{' '}
-      <Link>
-        <a
-          href="https://github.com/pluralsight/design-system/tree/master/examples"
-          target="_blank"
-        >
-          examples
-        </a>
-      </Link>
-      {' '}
-      directory on Github.
-    </P>
+`}</Doc>
   </div>
