@@ -6,10 +6,11 @@ const postcssImport = require('postcss-import')
 const autoprefixerOptions = { browsers: 'last 4 versions' }
 const propNameTests = [
   { match: /psMotion/, props: ['transition-duration'] },
-  { match: /psTypeLineHeight/, props: ['line-height'] },
-  { match: /psTypeFontWeight/, props: ['font-weight'] },
-  { match: /psTypeLetterSpacing/, props: ['letter-spacing'] },
+  { match: /psTypeFontFamily/, props: ['font-family'] },
   { match: /psTypeFontSize/, props: ['font-size'] },
+  { match: /psTypeLetterSpacing/, props: ['letter-spacing'] },
+  { match: /psTypeFontWeight/, props: ['font-weight'] },
+  { match: /psTypeLineHeight/, props: ['line-height'] },
   {
     match: /psLayoutSpacing/,
     props: [
