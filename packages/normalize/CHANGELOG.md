@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.2.18"></a>
+## [2.2.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@2.2.9...@pluralsight/ps-design-system-normalize@2.2.18) (2017-06-22)
+
+
+### Bug Fixes
+
+* **normalize:** make line-height unitless; cssnext was calcing px ([93851c0](https://github.com/pluralsight/design-system/commit/93851c0))
+
+
+
+
 <a name="2.2.17"></a>
 ## [2.2.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@2.2.9...@pluralsight/ps-design-system-normalize@2.2.17) (2017-06-22)
 
