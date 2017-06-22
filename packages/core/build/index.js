@@ -39,7 +39,7 @@ const postcssCssVarSelectorsOptions = { propNameTests }
     autoprefixer(autoprefixerOptions)
   ])
 
-  postcss.transform(src, path.join('dist', 'index.scss'), [
+  postcss.transform(src, path.join('dist', 'index.module.scss'), [
     postcssImport,
     postcss.postcssCssVarSassVar(),
     autoprefixer(autoprefixerOptions)
