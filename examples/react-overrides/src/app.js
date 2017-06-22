@@ -12,17 +12,17 @@ export default styleable(css)(props =>
     </header>
     <div className={props.css.box}>
       <Button>
-        The Style Guide standard
+        The Design System standard
       </Button>
     </div>
     <div className={props.css.box}>
       <Button css={{ 'ps-button': props.css.buttonOverrideStyleable }}>
-        Override everything with react-stylable
+        Override everything with react-styleable
       </Button>
     </div>
     <div className={props.css.box}>
       <Button css={{ 'ps-button': props.css.buttonComposesStyleable }}>
-        Compose with react-stylable
+        Compose with react-styleable
       </Button>
     </div>
     <div className={props.css.box}>
