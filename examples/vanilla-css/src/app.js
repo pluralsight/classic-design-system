@@ -1,16 +1,13 @@
 import Button from '@pluralsight/ps-button/react'
 import React from 'react'
 
-// NOTE: css imports not possible here without app config
-
-// TODO: finish styling when core can output vanilla bg-color and padding
 export default _ =>
-  <div className="app">
+  <div className="app ps-type-font-family">
     <header>
       <h3>Pluralsight Design System</h3>
       <h2>Webpack Config Decoration</h2>
     </header>
-    <div className="box">
+    <div className="ps-colors-gray03--background-color ps-layout-spacing-large--padding box">
       <Button
         className="ps-layout-spacing-large"
         size="large"

@@ -9,16 +9,6 @@ const path = require('path')
 module.exports = decorateConfig(
   {
     entry: './src/index.js',
-    module: {
-      rules: [
-        {
-          // NOTE: you'll still rarely get out of building your app react code
-          test: /\.js/,
-          use: ['babel-loader'],
-          include: [path.resolve('src')]
-        }
-      ]
-    },
     plugins: [
       new HtmlWebpackPlugin({
         inject: false,
@@ -26,6 +16,10 @@ module.exports = decorateConfig(
         appMountId: 'app',
         // NOTE: get your non-component css some old-fashioned way
         links: [
+          {
+            rel: 'preload',
+            href: 'https://cloud.typography.com/6966154/691568/css/fonts.css'
+          },
           'node_modules/@pluralsight/ps-design-system-normalize/index.css',
           'node_modules/@pluralsight/ps-design-system-core/dist/index.css',
           'src/app.css'
@@ -33,5 +27,8 @@ module.exports = decorateConfig(
       })
     ]
   },
-  { packageJson: require('./package.json') }
+  {
+    extraInclude: [path.resolve('src')],
+    packageJson: require('./package.json')
+  }
 )
