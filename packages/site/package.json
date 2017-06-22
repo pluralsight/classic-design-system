@@ -50,7 +50,7 @@
     "react-highlight": "^0.10.0",
     "react-markdown": "^2.5.0",
     "react-router-dom": "^4.1.1",
-    "react-styleable": "^2.2.5",
+    "react-styleable": "^3.0.0",
     "react-svg-loader": "^1.1.1",
     "remarkable": "^1.7.1",
     "rimraf": "^2.6.1",
