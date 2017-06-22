@@ -29,3 +29,9 @@
 .root :global(pre > code) {
   background: none;
 }
+.root :global(p) {
+  color: var(--psColorsGray04);
+  font-size: var(--psTypeFontSizeSmall);
+  margin: var(--psLayoutSpacingSmall) 0;
+  line-height: var(--psTypeLineHeightStandard);
+}

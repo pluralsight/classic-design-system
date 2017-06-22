@@ -1,7 +1,7 @@
-<html><head><title>Pluralsight Design System</title><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css" type="text/css" media="all"/><link rel="stylesheet" href="/styles.css"/></head><body><div id="app"><div><div class="root___3vxVq"><div class="root___1jeml"></div><div class="page___2dd2J"><div class="side___J4pMy"><nav class="root___35N9E"><a class="root___xcUTw" href="/"><div class="img___1Gbga"></div><h2 class="text___8eLIk"><span class="textCompany___2oKIi">PLURALSIGHT</span><span class="textTitle___36w9a">DESIGN SYSTEM v1.0.0</span></h2></a><div class="root___2oknb"><h3 class="root___34dIs">CORE</h3><div class="root___fBSkO"><a class="linkActive___-b0tf link___1vryl" href="/core/installation"><span aria-hidden="true" class="box___E_LfL"></span>Installation</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/core/color"><span aria-hidden="true" class="box___E_LfL"></span>Color</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/core/typography"><span aria-hidden="true" class="box___E_LfL"></span>Typography</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/core/spacing"><span aria-hidden="true" class="box___E_LfL"></span>Spacing</a></div></div><div class="root___2oknb"><h3 class="root___34dIs">COMPONENTS</h3><div class="root___fBSkO"><a class="link___1vryl" href="/components/installation"><span aria-hidden="true" class="box___E_LfL"></span>Installation</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/components/text-styles"><span aria-hidden="true" class="box___E_LfL"></span>Text styles</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/components/button"><span aria-hidden="true" class="box___E_LfL"></span>Buttons</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/components/tabs"><span aria-hidden="true" class="box___E_LfL"></span>Tabs</a></div></div></nav></div><main class="main___5e9UJ"><div class="content___1nfao"><div><h1 class="ps-heading___18ic- ps-heading--xx-large___asI5a">Core Installation</h1><div class="root___av_2d"><h2>Recommended Usage</h2><p>The recommended way to use the Core elements of the design system is via the provided CSS variables.
-There are two languages for variables exposed: cssnext and sass.
-Use of variables, because of a lack of widespread browser support, requires a css build.
-You can use the Design System&#x27;s (easy) or provide your own (custom).</p><h2>PostCSS Easy Config</h2><p>To use the Design System config, you must use Webpack.</p><p>First, install the build dependency:</p><pre><code class="language-bash">npm install @pluralsight/ps-design-system-build --save-dev
+<html><head><title>Pluralsight Design System</title><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css" type="text/css" media="all"/><link rel="stylesheet" href="/styles.css"/></head><body><div id="app"><div><div class="root___3vxVq"><div class="root___1jeml"></div><div class="page___2dd2J"><div class="side___J4pMy"><nav class="root___35N9E"><a class="root___xcUTw" href="/"><div class="img___1Gbga"></div><h2 class="text___8eLIk"><span class="textCompany___2oKIi">PLURALSIGHT</span><span class="textTitle___36w9a">DESIGN SYSTEM v1.0.0</span></h2></a><div class="root___2oknb"><h3 class="root___34dIs">CORE</h3><div class="root___fBSkO"><a class="linkActive___-b0tf link___1vryl" href="/core/installation"><span aria-hidden="true" class="box___E_LfL"></span>Installation</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/core/color"><span aria-hidden="true" class="box___E_LfL"></span>Color</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/core/typography"><span aria-hidden="true" class="box___E_LfL"></span>Typography</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/core/spacing"><span aria-hidden="true" class="box___E_LfL"></span>Spacing</a></div></div><div class="root___2oknb"><h3 class="root___34dIs">COMPONENTS</h3><div class="root___fBSkO"><a class="link___1vryl" href="/components/installation"><span aria-hidden="true" class="box___E_LfL"></span>Installation</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/components/text-styles"><span aria-hidden="true" class="box___E_LfL"></span>Text styles</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/components/button"><span aria-hidden="true" class="box___E_LfL"></span>Buttons</a></div><div class="root___fBSkO"><a class="link___1vryl" href="/components/tabs"><span aria-hidden="true" class="box___E_LfL"></span>Tabs</a></div></div></nav></div><main class="main___5e9UJ"><div class="content___1nfao"><div><h1 class="ps-heading___18ic- ps-heading--xx-large___asI5a">Core Installation</h1><div class="root___1JMro"><h2>Recommended Usage</h2><p>The recommended way to use the Core elements of the Design System is via the provided variables in CSSNext.
+There are two languages for variables exposed: CSSNext and SASS.
+Use of variables, because of a lack of widespread browser support, requires a CSS build.
+You can use the Design System&#x27;s (easy) or provide your own (custom).</p><h2>PostCSS Easy Config</h2><p>To use the Design System config helpers, you must use Webpack.</p><p>First, install the build dependency:</p><pre><code class="language-bash">npm install @pluralsight/ps-design-system-build --save-dev
 </code></pre><p>Then in your <code>webpack.config.js</code>, decorate your config:</p><pre><code class="language-js">const { decorateConfig } = require(&#x27;@pluralsight/ps-design-system-build/webpack&#x27;)
 module.exports = decorateConfig({
   // ... your project&#x27;s normal webpack config
@@ -10,11 +10,13 @@ module.exports = decorateConfig({
   packageJson: require(&#x27;./package.json&#x27;)
 })
 </code></pre><p>The array of paths in the <code>extraInclude</code> option will process all <code>*.module.css</code> files in those paths using the Design System PostCSS setup.</p><h2>PostCSS Custom Config</h2><p>If you want to setup your own PostCSS config to consume the CSSNext variables, you&#x27;ll want install the needed dependencies:</p><pre><code class="language-bash">npm install style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev
-</code></pre><p>The add a <code>module.rule</code> to your <code>webpack.config.js</code>:</p><pre><code class="language-js">module: {
+</code></pre><p>The add a <code>module.rule</code> to your <code>webpack.config.js</code>:</p><pre><code class="language-js">const path = require(&#x27;path&#x27;)
+
+module: {
   rules: [
     {
       test: /\.module\.css$/,
-      include: require(&#x27;path&#x27;).resolve(&#x27;src&#x27;),
+      include: [path.resolve(path.join(&#x27;node_modules&#x27;, &#x27;@pluralsight&#x27;, &#x27;ps-design-system-core&#x27;))],
       use: [
         &#x27;style-loader&#x27;,
         {
@@ -38,7 +40,36 @@ module.exports = decorateConfig({
     }
   ]
 }
-</code></pre><h2>Sass Easy Config</h2><h2>Sass Custom Config</h2><h2>Import the Library</h2><pre><code>  npm install @pluralsight/ps-design-system-core --save-dev
-</code></pre><p>TODO - postcss and sass
-..see core pages and examples
-href=&quot;https://github.com/pluralsight/design-system/tree/master/examples&quot;</p><h2>No-Build Alternatives</h2><p>TODO...</p><p>For those not wanting to deal with a build, a CSS utility class approach is available.  These selectors are generated from the source variables.</p></div></div></div></main></div></div></div></div><script src="/index.js"></script></body></html>
+</code></pre><h2>Sass Custom Config</h2><p>If you wish to use the Sass variables, a custom config is necessary.  First install the required dependencies:</p><pre><code class="language-bash">npm install style-loader css-loader sass-loader node-sass --save-dev
+</code></pre><p>The add a <code>module.rule</code> to your <code>webpack.config.js</code>:</p><pre><code class="language-js">const path = require(&#x27;path&#x27;)
+
+module: {
+  rules: [
+    {
+      test: /\.module\.scss/,
+      include: [path.resolve(&#x27;src&#x27;)]
+      use: [
+        &#x27;style-loader&#x27;,
+        {
+          loader: &#x27;css-loader&#x27;,
+          options: {
+            modules: true,
+            importLoaders: 1,
+            localIdentName: &#x27;[local]___[hash:base64:5]&#x27;
+          }
+        },
+        &#x27;sass-loader&#x27;
+      ]
+    }
+  ]
+}
+</code></pre><h2>Install the Core Library</h2><pre><code class="language-bash">npm install @pluralsight/ps-design-system-core --save-dev
+</code></pre><h2>Import in CSSNext</h2><pre><code class="language-css">@import &quot;@pluralsight/ps-design-system-core&quot;;
+
+.mySelector { color: var(--psColorsPink); }
+</code></pre><h2>Import in SASS</h2><pre><code class="language-scss">@import &quot;~@pluralsight/ps-design-system-core/dist/index.scss&quot;;
+
+.mySelector { color: $ps-colors-pink; }
+</code></pre><h2>Install Examples</h2><p>For full working examples, please see the <a href="https://github.com/pluralsight/design-system/tree/master/examples">examples</a> directory in the Github repo.</p><h2>No-Build Alternatives</h2><p>For those not wanting to deal with a build, a CSS utility class approach is available.  These selectors are generated from the source variables.  This is not recommended.</p><p>First include the vanilla CSS stylesheet via traditional means:means</p><pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;node_modules/@pluralsight/ps-design-system-core/dist/index.css&quot; /&gt;
+</code></pre><p>And apply utility classes directly to the HTML elements:</p><pre><code class="language-html">&lt;div class=&quot;ps-colors-pink--color&quot;&gt;&lt;/div&gt;
+</code></pre></div></div></div></main></div></div></div></div><script src="/index.js"></script></body></html>

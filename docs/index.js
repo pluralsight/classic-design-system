@@ -28910,16 +28910,16 @@ object-assign
 
         var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
 
-        var _index = __webpack_require__(287)
+        var _indexModule = __webpack_require__(668)
 
-        var _index2 = _interopRequireDefault(_index)
+        var _indexModule2 = _interopRequireDefault(_indexModule)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
         }
 
         exports.default = (0, _reactStyleable2.default)(
-          _index2.default
+          _indexModule2.default
         )(function(props) {
           return _react2.default.createElement(_reactMarkdown2.default, {
             className: props.css.root,
@@ -31374,7 +31374,7 @@ object-assign
             _react6.default.createElement(
               _components.Doc,
               null,
-              "\n## Recommended Usage\n\nThe recommended way to use the Core elements of the design system is via the provided CSS variables.\nThere are two languages for variables exposed: cssnext and sass.\nUse of variables, because of a lack of widespread browser support, requires a css build.\nYou can use the Design System's (easy) or provide your own (custom).\n\n## PostCSS Easy Config\n\nTo use the Design System config, you must use Webpack.\n\nFirst, install the build dependency:\n\n```bash\nnpm install @pluralsight/ps-design-system-build --save-dev\n```\n\nThen in your `webpack.config.js`, decorate your config:\n\n```js\nconst { decorateConfig } = require('@pluralsight/ps-design-system-build/webpack')\nmodule.exports = decorateConfig({\n  // ... your project's normal webpack config\n}, {\n  extraInclude: [require('path').resolve('src')]\n  packageJson: require('./package.json')\n})\n```\n\nThe array of paths in the `extraInclude` option will process all `*.module.css` files in those paths using the Design System PostCSS setup.\n\n## PostCSS Custom Config\n\nIf you want to setup your own PostCSS config to consume the CSSNext variables, you'll want install the needed dependencies:\n\n```bash\nnpm install style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev\n```\n\nThe add a `module.rule` to your `webpack.config.js`:\n\n```js\nmodule: {\n  rules: [\n    {\n      test: /\\.module\\.css$/,\n      include: require('path').resolve('src'),\n      use: [\n        'style-loader',\n        {\n          loader: 'css-loader',\n          options: {\n            modules: true,\n            importLoaders: 1,\n            localIdentName: '[local]___[hash:base64:5]'\n          }\n        },\n        {\n          loader: 'postcss-loader',\n          options: {\n            plugins: _ => [\n              require('postcss-import')(),\n              require('postcss-cssnext')()\n            ]\n          }\n        }\n      ]\n    }\n  ]\n}\n```\n\n## Sass Easy Config\n\n## Sass Custom Config\n\n## Import the Library\n\n      npm install @pluralsight/ps-design-system-core --save-dev\nTODO - postcss and sass\n..see core pages and examples\nhref=\"https://github.com/pluralsight/design-system/tree/master/examples\"\n\n## No-Build Alternatives\n\nTODO...\n\nFor those not wanting to deal with a build, a CSS utility class approach is available.  These selectors are generated from the source variables.\n\n"
+              "\n## Recommended Usage\n\nThe recommended way to use the Core elements of the Design System is via the provided variables in CSSNext.\nThere are two languages for variables exposed: CSSNext and SASS.\nUse of variables, because of a lack of widespread browser support, requires a CSS build.\nYou can use the Design System's (easy) or provide your own (custom).\n\n## PostCSS Easy Config\n\nTo use the Design System config helpers, you must use Webpack.\n\nFirst, install the build dependency:\n\n```bash\nnpm install @pluralsight/ps-design-system-build --save-dev\n```\n\nThen in your `webpack.config.js`, decorate your config:\n\n```js\nconst { decorateConfig } = require('@pluralsight/ps-design-system-build/webpack')\nmodule.exports = decorateConfig({\n  // ... your project's normal webpack config\n}, {\n  extraInclude: [require('path').resolve('src')]\n  packageJson: require('./package.json')\n})\n```\n\nThe array of paths in the `extraInclude` option will process all `*.module.css` files in those paths using the Design System PostCSS setup.\n\n## PostCSS Custom Config\n\nIf you want to setup your own PostCSS config to consume the CSSNext variables, you'll want install the needed dependencies:\n\n```bash\nnpm install style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev\n```\n\nThe add a `module.rule` to your `webpack.config.js`:\n\n```js\nconst path = require('path')\n\nmodule: {\n  rules: [\n    {\n      test: /\\.module\\.css$/,\n      include: [path.resolve(path.join('node_modules', '@pluralsight', 'ps-design-system-core'))],\n      use: [\n        'style-loader',\n        {\n          loader: 'css-loader',\n          options: {\n            modules: true,\n            importLoaders: 1,\n            localIdentName: '[local]___[hash:base64:5]'\n          }\n        },\n        {\n          loader: 'postcss-loader',\n          options: {\n            plugins: _ => [\n              require('postcss-import')(),\n              require('postcss-cssnext')()\n            ]\n          }\n        }\n      ]\n    }\n  ]\n}\n```\n\n## Sass Custom Config\n\nIf you wish to use the Sass variables, a custom config is necessary.  First install the required dependencies:\n\n```bash\nnpm install style-loader css-loader sass-loader node-sass --save-dev\n```\n\nThe add a `module.rule` to your `webpack.config.js`:\n\n```js\nconst path = require('path')\n\nmodule: {\n  rules: [\n    {\n      test: /\\.module\\.scss/,\n      include: [path.resolve('src')]\n      use: [\n        'style-loader',\n        {\n          loader: 'css-loader',\n          options: {\n            modules: true,\n            importLoaders: 1,\n            localIdentName: '[local]___[hash:base64:5]'\n          }\n        },\n        'sass-loader'\n      ]\n    }\n  ]\n}\n```\n\n## Install the Core Library\n\n```bash\nnpm install @pluralsight/ps-design-system-core --save-dev\n```\n\n## Import in CSSNext\n\n```css\n@import \"@pluralsight/ps-design-system-core\";\n\n.mySelector { color: var(--psColorsPink); }\n```\n\n## Import in SASS\n\n```scss\n@import \"~@pluralsight/ps-design-system-core/dist/index.scss\";\n\n.mySelector { color: $ps-colors-pink; }\n```\n\n## Install Examples\n\nFor full working examples, please see the [examples](https://github.com/pluralsight/design-system/tree/master/examples) directory in the Github repo.\n\n## No-Build Alternatives\n\nFor those not wanting to deal with a build, a CSS utility class approach is available.  These selectors are generated from the source variables.  This is not recommended.\n\nFirst include the vanilla CSS stylesheet via traditional means:means\n\n```html\n<link rel=\"stylesheet\" href=\"node_modules/@pluralsight/ps-design-system-core/dist/index.css\" />\n```\n\nAnd apply utility classes directly to the HTML elements:\n\n```html\n<div class=\"ps-colors-pink--color\"></div>\n```\n\n"
             )
           )
         }
@@ -37610,14 +37610,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
         /***/
       },
-      /* 287 */
-      /***/ function(module, exports) {
-        // removed by extract-text-webpack-plugin
-        module.exports = { root: 'root___av_2d' }
-
-        /***/
-      },
-      /* 288 */
+      ,
+      /* 287 */ /* 288 */
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
         module.exports = {
@@ -80109,6 +80103,50 @@ Authors: Nera Liu <neraliu@yahoo-inc.com>
           return Component.displayName || Component.name || 'Component'
         }
         //# sourceMappingURL=get-display-name.js.map
+
+        /***/
+      },
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      /* 631 */ /* 632 */ /* 633 */ /* 634 */ /* 635 */ /* 636 */ /* 637 */ /* 638 */ /* 639 */ /* 640 */ /* 641 */ /* 642 */ /* 643 */ /* 644 */ /* 645 */ /* 646 */ /* 647 */ /* 648 */ /* 649 */ /* 650 */ /* 651 */ /* 652 */ /* 653 */ /* 654 */ /* 655 */ /* 656 */ /* 657 */ /* 658 */ /* 659 */ /* 660 */ /* 661 */ /* 662 */ /* 663 */ /* 664 */ /* 665 */ /* 666 */ /* 667 */ /* 668 */
+      /***/ function(module, exports) {
+        // removed by extract-text-webpack-plugin
+        module.exports = { root: 'root___1JMro' }
 
         /***/
       }
