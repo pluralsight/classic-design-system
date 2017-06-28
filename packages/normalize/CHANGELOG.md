@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@2.2.9...@pluralsight/ps-design-system-normalize@3.0.0) (2017-06-28)
+
+
+### Bug Fixes
+
+* **normalize:** make line-height unitless; cssnext was calcing px ([93851c0](https://github.com/pluralsight/design-system/commit/93851c0))
+
+
+### Code Refactoring
+
+* **normalize:** add build; always build; entry point is built ([24cef46](https://github.com/pluralsight/design-system/commit/24cef46))
+
+
+### BREAKING CHANGES
+
+* **normalize:** this is now normal css, diff entry point.  Possibly no
+huge deal, because vanilla css should be a subset of and work in
+preprocessors.  Just being careful.
+
+
+
+
 <a name="2.2.18"></a>
 ## [2.2.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@2.2.9...@pluralsight/ps-design-system-normalize@2.2.18) (2017-06-22)
 
