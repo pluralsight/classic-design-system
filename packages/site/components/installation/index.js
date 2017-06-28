@@ -2,198 +2,110 @@ import Heading from '@pluralsight/ps-heading/react'
 import Link from '@pluralsight/ps-link/react'
 import React from 'react'
 
-import { Code, P } from '../../common/components'
+import { Code, Doc, P } from '../../common/components'
 
 export default props =>
   <div>
     <Heading size="xx-large"><h1>Component Installation</h1></Heading>
+    <Doc>{`
+## Recommended Usage
 
-    <Heading size="large">
-      <h2>0. Determine Your Build System Compatibility</h2>
-    </Heading>
-    <P>
-      You'll need a build system in your development environment that supports
-      the following:
-    </P>
-    <ul>
-      <li>
-        Installing modules from NPM - eg,
-        {' '}
-        <Link><a href="https://nodejs.org/" target="_blank">Node</a></Link>
-      </li>
-      <li>
-        Loading assets (JS and CSS) as modules - eg,
-        {' '}
-        <Link>
-          <a href="https://webpack.js.org/" target="_blank">Webpack</a>
-        </Link>
-      </li>
-      <li>
-        Transpiling PostCSS - eg,{' '}
-        <Link>
-          <a href="https://github.com/postcss/postcss-loader" target="_blank">
-            postcss-loader
-          </a>
-        </Link>
-      </li>
-      <li>
-        Transpiling nextgen JS - eg,
-        {' '}
-        <Link>
-          <a href="https://github.com/babel/babel-loader" target="_blank">
-            babel-loader
-          </a>
-        </Link>
-      </li>
-    </ul>
+The recommended way to use the Components of the Design System is by building them from source into your app bundle.
+You will install from NPM and transpile the source on import via webpack.
+You can use the Design System's webpack config decorator to make this easy.
+The components are currently implemented in React that are styled with CSS modules written in CSSNext and compiled via PostCSS.
 
-    <Heading size="large"><h2>1. Add the Component Dependency</h2></Heading>
-    <P>
-      Install the component dependency using NPM:
-    </P>
-    <Code language="bash">
-      npm install @pluralsight/ps-button --save-dev
-    </Code>
-    <P>
-      Note: Each component is installed independently. This will lead to more
-      package.json entries. It will importantly allow you to bring into your
-      project only what you need. It will allow you to independently upgrade and
-      test components as they are improved.
-    </P>
+## Easy Config
 
-    <Heading size="large"><h2>2. Support JavaScript Transpiling</h2></Heading>
-    <P>
-      The Design System components are published to npm in their source ES6
-      format. They require transpilation to be used in browsers only supporting
-      ES5. We recommend
-      {' '}
-      <Link><a href="http://babeljs.io/" target="_blank">Babel</a></Link>
-      {' '}
-      for transpilation. Presumably you're using
-      {' '}
-      <Link>
-        <a href="https://github.com/babel/babel-loader" target="_blank">
-          babel-loader
-        </a>
-      </Link>
-      {' '}
-      already.
-    </P>
-    <P>
-      Make sure that your Babel setup handles the transforms that the Design
-      System requires:
-    </P>
-    <Code language="bash">
-      npm install babel-preset-react babel-preset-stage-2 --save-dev
-    </Code>
-    <Code language="json">
-      {`{
-  "presets": ["react", "stage-2"]
-}`}
-    </Code>
+To use the Design System config helpers, you must use Webpack.
 
-    <Heading size="large"><h2>3. Support CSS Imports</h2></Heading>
-    <P>
-      The Design System components use
-      {' '}
-      <Link>
-        <a href="https://github.com/css-modules/css-modules" target="_blank">
-          CSS Modules
-        </a>
-      </Link>
-      {' '}
-      and
-      {' '}
-      <Link>
-        <a href="https://github.com/postcss/postcss" target="_blank">
-          PostCSS
-        </a>
-      </Link>
-      . The component's CSS modules are published to npm alongside the source
-      JavaScript. The source JavaScript will take care of importing it, but your
-      Webpack config needs to support it.
-    </P>
-    <P>
-      Modify your webpack.config.js to support CSS module importing.{' '}
-    </P>
-    <Code language="bash">
-      npm install style-loader css-loader postcss-loader --save-dev
-    </Code>
-    <Code language="javascript">
-      {`{
-  module: {
-    rules: [
-      {
-        test: /\\.module\\.css$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-              importLoaders: 1,
-              localIdentName: '[local]___[hash:base64:5]'
-            }
-          },
-          'postcss-loader'
-        ]
-      }
-    ]
-  }
-}`}
-    </Code>
-    <P>Add the required postcss.config.js file to your project root:</P>
-    <Code language="javascript">
-      {`module.exports = { plugins: {} }`}
-    </Code>
-    <P>
-      Note: If you use traditional CSS stylesheets in addition to CSS modules,
-      you will need to follow these
-      {' '}
-      <Link>
-        <a
-          className="graybeard"
-          href="https://jaketrent.com/post/load-both-css-and-css-modules-webpack/"
-          target="_blank"
-        >
-          special instructions
-        </a>
-      </Link>
-      .
-    </P>
+First, install the build dependency:
 
-    <Heading size="large"><h2>4. Use Component in Your Project</h2></Heading>
-    <P>
-      Currently the only component type the Design System supports is React
-      components. But it is setup to support other types in the future.
-    </P>
-    <P>
-      To use the React component in your project, note the slightly different
-      import path:
-    </P>
-    <Code language="bash">
-      {`import React from 'react'
-import Button from '@pluralsight/ps-button/react'
+\`\`\`bash
+npm install @pluralsight/ps-design-system-build --save-dev
+\`\`\`
 
-export default props =>
-  <div><Button>Love, the Design System</Button></div>
-`}
-    </Code>
+Then in your \`webpack.config.js\`, decorate your config:
 
-    <Heading size="large">
-      <h2>5. See a Working Example</h2>
-    </Heading>
-    <P>
-      Explore the working examples of integration. See the{' '}
-      <Link>
-        <a
-          href="https://github.com/pluralsight/design-system/tree/master/examples"
-          target="_blank"
-        >
-          examples
-        </a>
-      </Link>
-      {' '}
-      directory on Github.
-    </P>
+\`\`\`js
+const { decorateConfig } = require('@pluralsight/ps-design-system-build/webpack')
+module.exports = decorateConfig({
+  // ... your project's normal webpack config
+}, {
+  packageJson: require('./package.json')
+})
+\`\`\`
+
+## Custom Config
+
+If you want to setup your own webpakc config to consume the components (markup and styles), you'll want install the needed dependencies:
+
+\`\`\`bash
+npm install babel-loader babel-preset-react babel-preset-stage-2 babel-preset-env style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev
+\`\`\`
+
+The add a \`module.rule\` to your \`webpack.config.js\`:
+
+\`\`\`js
+const path = require('path')
+
+module: {
+  rules: [
+    {
+      test: /\.js/,
+      use: [
+        {
+          loader: 'babel-loader'
+          options: {
+            babelrc: false,
+            presets: [
+              'babel-preset-react',
+              'babel-preset-stage-2'
+              require.resolve('babel-preset-stage-2'),
+              [
+                'babel-preset-env',
+                { targets: { browsers: browserlist } }
+              ]
+            ]
+          }
+        }
+      ],
+      include: [path.resolve(path.join('node_modules', '@pluralsight'))],
+    },
+    {
+      test: /\\.module\\.css$/,
+      include: [path.resolve(path.join('node_modules', '@pluralsight', 'ps-design-system-core'))],
+      use: [
+        'style-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            modules: true,
+            importLoaders: 1,
+            localIdentName: '[local]___[hash:base64:5]'
+          }
+        },
+        {
+          loader: 'postcss-loader',
+          options: {
+            plugins: _ => [
+              require('postcss-import')(),
+              require('postcss-cssnext')()
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+\`\`\`
+
+Note that you may want to change the \`include\` to include only the specific directories of the components your project uses.
+
+## Install Examples
+
+For full working examples, please see the [examples](https://github.com/pluralsight/design-system/tree/master/examples) directory in the Github repo.
+
+`}</Doc>
+
   </div>
