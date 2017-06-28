@@ -2749,7 +2749,12 @@
   color: var(--psColorsWhite);
   font-weight: var(--psTypeFontWeightMedium);
 }
-.ps-tab-list-item--active___3LTXw {
+.ps-tab-list-item___2FBfq:focus {
+  outline: none;
+  color: var(--psColorsWhite);
+  border-bottom: 4px solid var(--psColorsGray02);
+}
+.ps-tab-list-item--active___3LTXw, .ps-tab-list-item--active___3LTXw:focus {
   color: var(--psColorsWhite);
   font-weight: var(--psTypeFontWeightMedium);
   padding-bottom: 0;

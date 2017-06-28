@@ -20,7 +20,12 @@
   color: var(--psColorsWhite);
   font-weight: var(--psTypeFontWeightMedium);
 }
-.ps-tab-list-item--active {
+.ps-tab-list-item:focus {
+  outline: none;
+  color: var(--psColorsWhite);
+  border-bottom: 4px solid var(--psColorsGray02);
+}
+.ps-tab-list-item--active, .ps-tab-list-item--active:focus {
   color: var(--psColorsWhite);
   font-weight: var(--psTypeFontWeightMedium);
   padding-bottom: 0;
