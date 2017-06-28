@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "jaketrent",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^2.1.0",

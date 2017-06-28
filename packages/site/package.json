@@ -13,7 +13,7 @@
     "start": "npm run site"
   },
   "author": "jaketrent",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@pluralsight/ps-button": "^1.6.10",
     "@pluralsight/ps-design-system-core": "^1.6.2",
