@@ -35,7 +35,6 @@ const validateRules = (config, options) =>
 const browserlist = ['Last 2 versions', 'IE >= 10']
 
 const defaultOptions = {
-  autoprefixer: browserlist,
   defaultInclude: null,
   extraInclude: [],
   postcssCssnext: { browsers: browserlist }
