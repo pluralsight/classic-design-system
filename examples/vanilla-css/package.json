@@ -20,7 +20,7 @@
   "dependencies": {
     "@pluralsight/ps-button": "^1.6.10",
     "@pluralsight/ps-design-system-build": "^1.0.5",
-    "@pluralsight/ps-design-system-normalize": "^2.1.0",
+    "@pluralsight/ps-design-system-normalize": "^3.0.0",
     "@pluralsight/ps-design-system-core": "^1.6.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.0"
