@@ -19,7 +19,8 @@ export default _ =>
       permutations={[
         { size: 'xx-large' },
         { size: 'large' },
-        { size: 'medium' }
+        { size: 'medium' },
+        { size: 'small-caps' }
       ]}
     />
   </div>

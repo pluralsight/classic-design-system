@@ -796,6 +796,13 @@
   font-weight: var(--psTypeFontWeightMedium);
   margin: var(--psLayoutSpacingMedium) 0 var(--psLayoutSpacingSmall) 0;
 }
+.ps-heading--small-caps___1lKpW {
+  font-size: var(--psTypeFontSizeExtraSmall);
+  letter-spacing: var(--psTypeLetterSpacingExtraSmall);
+  font-weight: var(--psTypeFontWeightMedium);
+  margin: var(--psLayoutSpacingMedium) 0 var(--psLayoutSpacingSmall) 0;
+  text-transform: uppercase;
+}
 :root {
   /* ui colors */
   --psColorsWhite: #ffffff;

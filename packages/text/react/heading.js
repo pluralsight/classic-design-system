@@ -21,7 +21,7 @@ const Heading = props => {
 
 import PropTypes from 'prop-types'
 Heading.propTypes = {
-  size: PropTypes.oneOf(['medium', 'large', 'xx-large'])
+  size: PropTypes.oneOf(['small-caps', 'medium', 'large', 'xx-large'])
 }
 Heading.defaultProps = {
   size: 'large'

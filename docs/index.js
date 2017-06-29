@@ -29423,7 +29423,8 @@ object-assign
               permutations: [
                 { size: 'xx-large' },
                 { size: 'large' },
-                { size: 'medium' }
+                { size: 'medium' },
+                { size: 'small-caps' }
               ]
             })
           )
@@ -31173,7 +31174,12 @@ object-assign
         }
 
         Heading.propTypes = {
-          size: _propTypes2.default.oneOf(['medium', 'large', 'xx-large'])
+          size: _propTypes2.default.oneOf([
+            'small-caps',
+            'medium',
+            'large',
+            'xx-large'
+          ])
         }
         Heading.defaultProps = {
           size: 'large'
@@ -36699,7 +36705,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           'ps-heading': 'ps-heading___1seKB',
           'ps-heading--xx-large': 'ps-heading--xx-large___1vs6u',
           'ps-heading--large': 'ps-heading--large___12bkX',
-          'ps-heading--medium': 'ps-heading--medium___2btc0'
+          'ps-heading--medium': 'ps-heading--medium___2btc0',
+          'ps-heading--small-caps': 'ps-heading--small-caps___1lKpW'
         }
 
         /***/
