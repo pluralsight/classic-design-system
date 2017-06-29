@@ -37,8 +37,18 @@ const browserlist = ['Last 2 versions', 'IE >= 10']
 const defaultOptions = {
   defaultInclude: null,
   extraInclude: [],
+  extractTextPlugin: null,
   postcssCssnext: { browsers: browserlist }
 }
+
+const decorateStyleLoaders = options =>
+  options.extractTextPlugin
+    ? loaders =>
+        options.extractTextPlugin.extract({
+          fallback: require.resolve('style-loader'),
+          use: loaders
+        })
+    : loaders => [require.resolve('style-loader'), ...loaders]
 
 const commonRules = (options, include) => [
   {
@@ -63,8 +73,7 @@ const commonRules = (options, include) => [
   },
   {
     test: /\.module\.css$/,
-    use: [
-      require.resolve('style-loader'),
+    use: decorateStyleLoaders(options)([
       {
         loader: require.resolve('css-loader'),
         options: {
@@ -82,7 +91,7 @@ const commonRules = (options, include) => [
           ]
         }
       }
-    ],
+    ]),
     include
   }
 ]
@@ -125,7 +134,6 @@ const decorateRules = (config, options) => {
 }
 
 const decorateConfig = (config, options) => {
-  // TODO: handle extracttextplugin initialization
   options = Object.assign({}, defaultOptions, options)
   prepForDecoration(config)
 
@@ -133,8 +141,6 @@ const decorateConfig = (config, options) => {
   validateRules(config, options)
 
   config = decorateRules(config, options)
-
-  // TODO: decorate plugins for extracttextplugin
 
   return config
 }
