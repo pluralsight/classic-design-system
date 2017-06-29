@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.2.6...@pluralsight/ps-design-system-build@1.3.0) (2017-06-29)
+
+
+### Features
+
+* **build:** add extracttextplugin support ([709ebc8](https://github.com/pluralsight/design-system/commit/709ebc8))
+
+
+
+
 <a name="1.2.6"></a>
 ## [1.2.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.2.5...@pluralsight/ps-design-system-build@1.2.6) (2017-06-28)
 

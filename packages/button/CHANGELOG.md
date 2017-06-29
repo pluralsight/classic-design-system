@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.13"></a>
+## [1.6.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.9...@pluralsight/ps-button@1.6.13) (2017-06-29)
+
+
+
+
 <a name="1.6.12"></a>
 ## [1.6.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.9...@pluralsight/ps-button@1.6.12) (2017-06-28)
 
