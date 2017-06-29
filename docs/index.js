@@ -31259,8 +31259,6 @@ object-assign
           return obj
         }
 
-        console.log('ListItem', _listItem2.default)
-
         var getClassName = function getClassName(props) {
           var _classNames
 

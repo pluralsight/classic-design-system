@@ -4,7 +4,6 @@ import styleable from 'react-styleable'
 
 import css from '../../css/list.module.css'
 import ListItem from './list-item'
-console.log('ListItem', ListItem)
 
 const getClassName = props =>
   classNames({
