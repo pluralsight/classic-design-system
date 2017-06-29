@@ -30769,6 +30769,10 @@ object-assign
 
         var _react4 = _interopRequireDefault(_react3)
 
+        var _bodyText = __webpack_require__(671)
+
+        var _bodyText2 = _interopRequireDefault(_bodyText)
+
         var _headingStyles = __webpack_require__(240)
 
         var _headingStyles2 = _interopRequireDefault(_headingStyles)
@@ -30791,7 +30795,8 @@ object-assign
               _react4.default.createElement('h1', null, 'Text styles')
             ),
             _react4.default.createElement(_install2.default, null),
-            _react4.default.createElement(_headingStyles2.default, null)
+            _react4.default.createElement(_headingStyles2.default, null),
+            _react4.default.createElement(_bodyText2.default, null)
           )
         }
 
@@ -79885,6 +79890,95 @@ Authors: Nera Liu <neraliu@yahoo-inc.com>
           return Component.displayName || Component.name || 'Component'
         }
         //# sourceMappingURL=get-display-name.js.map
+
+        /***/
+      },
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      /* 634 */ /* 635 */ /* 636 */ /* 637 */ /* 638 */ /* 639 */ /* 640 */ /* 641 */ /* 642 */ /* 643 */ /* 644 */ /* 645 */ /* 646 */ /* 647 */ /* 648 */ /* 649 */ /* 650 */ /* 651 */ /* 652 */ /* 653 */ /* 654 */ /* 655 */ /* 656 */ /* 657 */ /* 658 */ /* 659 */ /* 660 */ /* 661 */ /* 662 */ /* 663 */ /* 664 */ /* 665 */ /* 666 */ /* 667 */ /* 668 */ /* 669 */ /* 670 */ /* 671 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+
+        var _react = __webpack_require__(19)
+
+        var _react2 = _interopRequireDefault(_react)
+
+        var _react3 = __webpack_require__(1)
+
+        var _react4 = _interopRequireDefault(_react3)
+
+        var _components = __webpack_require__(9)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        exports.default = function(_) {
+          return _react4.default.createElement(
+            'div',
+            null,
+            _react4.default.createElement(
+              _react2.default,
+              { size: 'large' },
+              _react4.default.createElement('h2', null, 'Body text')
+            ),
+            _react4.default.createElement(
+              _components.P,
+              null,
+              'Try to use common paragraph style when possible.'
+            ),
+            _react4.default.createElement(_components.Example.React, {
+              component: _react4.default.createElement(
+                _components.P,
+                null,
+                'Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+              ),
+              name: 'P',
+              orient: 'vertical',
+              permutations: [{}]
+            })
+          )
+        }
+
+        // TODO: extract P component
 
         /***/
       }

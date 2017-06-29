@@ -1,6 +1,7 @@
 import Heading from '@pluralsight/ps-heading/react'
 import React from 'react'
 
+import BodyText from './body-text'
 import HeadingStyles from './heading-styles'
 import Install from './install'
 
@@ -11,4 +12,7 @@ export default _ =>
     <Install />
 
     <HeadingStyles />
+
+    <BodyText />
+
   </div>
