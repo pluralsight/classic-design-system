@@ -1520,6 +1520,9 @@
   .outputChild___3QK6i + .outputChild___3QK6i {
     margin: 0 0 0 98px;
   }
+  .outputVertical___2pwn2 .outputChild___3QK6i + .outputChild___3QK6i {
+    margin: 0;
+  }
 }
 :root {
   /* ui colors */
