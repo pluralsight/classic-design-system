@@ -1,7 +1,7 @@
 {
-  "name": "@pluralsight/ps-heading",
-  "version": "1.1.17",
-  "description": "Design system component for heading ui",
+  "name": "@pluralsight/ps-design-system-text",
+  "version": "1.0.0",
+  "description": "Design system component for text-related ui",
   "main": "index.js",
   "style": "css/index.module.css",
   "scripts": {

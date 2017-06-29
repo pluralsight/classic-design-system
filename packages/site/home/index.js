@@ -1,4 +1,4 @@
-import Heading from '@pluralsight/ps-heading/react'
+import { Heading } from '@pluralsight/ps-design-system-text/react'
 import { Link } from 'react-router-dom'
 import React from 'react'
 

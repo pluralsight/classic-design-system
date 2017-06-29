@@ -776,21 +776,21 @@
   --psMotionSpeedSlower: 250ms;
   --psMotionSpeedSlowest: 300ms;
 }
-.ps-heading___18ic- {
+.ps-heading___3wxML {
 }
-.ps-heading--xx-large___asI5a {
+.ps-heading--xx-large___3Jjqy {
   font-size: var(--psTypeFontSizeXxl);
   letter-spacing: var(--psTypeLetterSpacingXxl);
   font-weight: var(--psTypeFontWeightLight);
   margin: var(--psLayoutSpacingXxl) 0;
 }
-.ps-heading--large___2Vc0v {
+.ps-heading--large___3lmKL {
   font-size: var(--psTypeFontSizeLarge);
   letter-spacing: var(--psTypeLetterSpacingLarge);
   font-weight: var(--psTypeFontWeightBook);
   margin: var(--psLayoutSpacingXl) 0 var(--psLayoutSpacingSmall) 0;
 }
-.ps-heading--medium___14rvE {
+.ps-heading--medium___1U1Uy {
   font-size: var(--psTypeFontSizeMedium);
   letter-spacing: var(--psTypeLetterSpacingMedium);
   font-weight: var(--psTypeFontWeightMedium);

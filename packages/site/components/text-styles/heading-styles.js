@@ -1,4 +1,4 @@
-import Heading from '@pluralsight/ps-heading/react'
+import { Heading } from '@pluralsight/ps-design-system-text/react'
 import React from 'react'
 
 import { Example, P, Link } from '../../common/components'
