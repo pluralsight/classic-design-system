@@ -886,7 +886,7 @@ object-assign
         Object.defineProperty(exports, '__esModule', {
           value: true
         })
-        exports.TopBar = exports.Switcher = exports.Spacing = exports.SideNav = exports.P = exports.Example = exports.Doc = exports.Color = exports.CodeOutput = exports.Code = undefined
+        exports.TopBar = exports.Switcher = exports.Spacing = exports.SideNav = exports.Example = exports.Doc = exports.Color = exports.CodeOutput = exports.Code = undefined
 
         var _code = __webpack_require__(204)
 
@@ -907,10 +907,6 @@ object-assign
         var _example = __webpack_require__(215)
 
         var _example2 = _interopRequireDefault(_example)
-
-        var _p = __webpack_require__(218)
-
-        var _p2 = _interopRequireDefault(_p)
 
         var _sideNav = __webpack_require__(112)
 
@@ -937,7 +933,6 @@ object-assign
         exports.Color = _color2.default
         exports.Doc = _doc2.default
         exports.Example = _example2.default
-        exports.P = _p2.default
         exports.SideNav = _sideNav2.default
         exports.Spacing = _spacing2.default
         exports.Switcher = _switcher2.default
@@ -1681,17 +1676,22 @@ object-assign
         Object.defineProperty(exports, '__esModule', {
           value: true
         })
-        exports.Heading = undefined
+        exports.P = exports.Heading = undefined
 
         var _heading = __webpack_require__(253)
 
         var _heading2 = _interopRequireDefault(_heading)
+
+        var _p = __webpack_require__(672)
+
+        var _p2 = _interopRequireDefault(_p)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
         }
 
         var Heading = (exports.Heading = _heading2.default)
+        var P = (exports.P = _p2.default)
 
         /***/
       },
@@ -21408,8 +21408,6 @@ object-assign
 
         var _chrome2 = _interopRequireDefault(_chrome)
 
-        var _components = __webpack_require__(9)
-
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
         }
@@ -21424,12 +21422,12 @@ object-assign
               _react3.default.createElement('h2', null, 'Welcome!')
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'Welcome to the Pluralsight Design System.'
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'This project is being WIPped up as we you read this. Feel free to have a look around. Inspect a gradient or two.'
             )
@@ -28192,42 +28190,8 @@ object-assign
 
         /***/
       },
-      /* 218 */
-      /***/ function(module, exports, __webpack_require__) {
-        'use strict'
-        Object.defineProperty(exports, '__esModule', {
-          value: true
-        })
-
-        var _react = __webpack_require__(1)
-
-        var _react2 = _interopRequireDefault(_react)
-
-        var _reactStyleable = __webpack_require__(5)
-
-        var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
-
-        var _indexModule = __webpack_require__(286)
-
-        var _indexModule2 = _interopRequireDefault(_indexModule)
-
-        function _interopRequireDefault(obj) {
-          return obj && obj.__esModule ? obj : { default: obj }
-        }
-
-        exports.default = (0, _reactStyleable2.default)(
-          _indexModule2.default
-        )(function(props) {
-          return _react2.default.createElement(
-            'p',
-            { className: props.css.root },
-            props.children
-          )
-        })
-
-        /***/
-      },
-      /* 219 */
+      ,
+      /* 218 */ /* 219 */
       /***/ function(module, exports, __webpack_require__) {
         'use strict'
         Object.defineProperty(exports, '__esModule', {
@@ -28993,7 +28957,7 @@ object-assign
               _react3.default.createElement('h1', null, 'Buttons')
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'Install the component dependency:'
             ),
@@ -29003,7 +28967,7 @@ object-assign
               'npm install @pluralsight/ps-button --save-dev'
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'Include a React component in your project:'
             ),
@@ -29013,7 +28977,7 @@ object-assign
               "import Button from '@pluralsight/ps-button/react'"
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'For more project setup guidance, see the',
               ' ',
@@ -29030,7 +28994,7 @@ object-assign
               _react3.default.createElement('h2', null, 'Button appearance')
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'Define a button appearance by ...',
               ' '
@@ -29280,7 +29244,7 @@ object-assign
               _react3.default.createElement('h1', null, 'Tabs')
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'Tabs are a navigational element used to show and pivot between related subsections of an interface.'
             ),
@@ -29324,13 +29288,13 @@ object-assign
               _react3.default.createElement('h2', null, 'Body text')
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'Try to use common paragraph style when possible.'
             ),
             _react3.default.createElement(_components.Example.React, {
               component: _react3.default.createElement(
-                _components.P,
+                _react.P,
                 null,
                 'Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
               ),
@@ -29340,8 +29304,6 @@ object-assign
             })
           )
         }
-
-        // TODO: extract P component
 
         /***/
       },
@@ -29374,7 +29336,7 @@ object-assign
               _react3.default.createElement('h2', null, 'Heading styles')
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'Heading styles compose complimentary typography attributes for simplified implementation. Try to use common heading styles when possible.'
             ),
@@ -29454,15 +29416,17 @@ object-assign
           value: true
         })
 
+        var _react = __webpack_require__(17)
+
         var _reactRouterDom = __webpack_require__(19)
 
-        var _react = __webpack_require__(64)
+        var _react2 = __webpack_require__(64)
 
-        var _react2 = _interopRequireDefault(_react)
+        var _react3 = _interopRequireDefault(_react2)
 
-        var _react3 = __webpack_require__(1)
+        var _react4 = __webpack_require__(1)
 
-        var _react4 = _interopRequireDefault(_react3)
+        var _react5 = _interopRequireDefault(_react4)
 
         var _components = __webpack_require__(9)
 
@@ -29471,38 +29435,38 @@ object-assign
         }
 
         exports.default = function(_) {
-          return _react4.default.createElement(
+          return _react5.default.createElement(
             'div',
             null,
-            _react4.default.createElement(
-              _components.P,
+            _react5.default.createElement(
+              _react.P,
               null,
               'Install the component dependency:'
             ),
-            _react4.default.createElement(
+            _react5.default.createElement(
               _components.Code,
               { language: 'bash' },
               'npm install @pluralsight/ps-design-system-text --save-dev'
             ),
-            _react4.default.createElement(
-              _components.P,
+            _react5.default.createElement(
+              _react.P,
               null,
               'Include a React component in your project:'
             ),
-            _react4.default.createElement(
+            _react5.default.createElement(
               _components.Code,
               { language: 'javascript' },
               "import Text from '@pluralsight/ps-design-system-text/react'"
             ),
-            _react4.default.createElement(
-              _components.P,
+            _react5.default.createElement(
+              _react.P,
               null,
               'For more project setup guidance, see the',
               ' ',
-              _react4.default.createElement(
-                _react2.default,
+              _react5.default.createElement(
+                _react3.default,
                 null,
-                _react4.default.createElement(
+                _react5.default.createElement(
                   _reactRouterDom.Link,
                   { to: '/components/installation' },
                   'Component Installation Instructions'
@@ -29671,7 +29635,7 @@ object-assign
               _react3.default.createElement('h2', null, 'Grayscale colors')
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'Grayscale colors are used for containers, text, lines and borders.'
             ),
@@ -29682,7 +29646,7 @@ object-assign
               _react3.default.createElement('h2', null, 'UI colors')
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'UI colors emphasize interface elements such as buttons, links, accents and vizualization.'
             ),
@@ -29693,7 +29657,7 @@ object-assign
               _react3.default.createElement('h2', null, 'Gradient')
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'So fresh. Use the standard gradient to emphasize and showcase the brand. Use sparingly.'
             ),
@@ -29873,8 +29837,6 @@ object-assign
 
         var _react3 = _interopRequireDefault(_react2)
 
-        var _components = __webpack_require__(9)
-
         var _increments = __webpack_require__(240)
 
         var _increments2 = _interopRequireDefault(_increments)
@@ -29902,7 +29864,7 @@ object-assign
               _react3.default.createElement('h2', null, 'Spacing increments')
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'Spacing can be applied using margin or padding. There are 7 available spacing sizes. Both margin and padding share the same predefined scale.'
             ),
@@ -29913,7 +29875,7 @@ object-assign
               _react3.default.createElement('h2', null, 'Individual spacing')
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'Individual spacing can be applied to a singe side of an element. Both margin and padding share the same predefined scale. The same 7 sizes are available.'
             ),
@@ -30239,7 +30201,7 @@ object-assign
               _react3.default.createElement('h2', null, 'Install the Font')
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               "To use the Pluralsight font-family on your site, you must install it by importing it from typography.com using Pluralsight's assigned CSS Key."
             ),
@@ -30254,7 +30216,7 @@ object-assign
               _react3.default.createElement('h2', null, 'Font family')
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               "Pluralsight's font family for the web is Gotham SSm."
             ),
@@ -30265,7 +30227,7 @@ object-assign
               _react3.default.createElement('h2', null, 'Font weight')
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'Five Gotham SSm font weights are available for use.'
             ),
@@ -30276,7 +30238,7 @@ object-assign
               _react3.default.createElement('h2', null, 'Font size')
             ),
             _react3.default.createElement(
-              _components.P,
+              _react.P,
               null,
               'Eight Gotham SSm font sizes are available.'
             ),
@@ -31030,9 +30992,9 @@ object-assign
 
         var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
 
-        var _indexModule = __webpack_require__(305)
+        var _headingModule = __webpack_require__(675)
 
-        var _indexModule2 = _interopRequireDefault(_indexModule)
+        var _headingModule2 = _interopRequireDefault(_headingModule)
 
         var _propTypes = __webpack_require__(160)
 
@@ -31089,9 +31051,9 @@ object-assign
         Heading.defaultProps = {
           size: 'large'
         }
-        exports.default = (0, _reactStyleable2.default)(_indexModule2.default)(
-          Heading
-        )
+        exports.default = (0, _reactStyleable2.default)(
+          _headingModule2.default
+        )(Heading)
 
         /***/
       },
@@ -36143,14 +36105,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
         /***/
       },
-      /* 286 */
-      /***/ function(module, exports) {
-        // removed by extract-text-webpack-plugin
-        module.exports = { root: 'root___34odr' }
-
-        /***/
-      },
-      /* 287 */
+      ,
+      /* 286 */ /* 287 */
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
         module.exports = { root: 'root___34dIs' }
@@ -36322,19 +36278,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
         /***/
       },
-      /* 305 */
-      /***/ function(module, exports) {
-        // removed by extract-text-webpack-plugin
-        module.exports = {
-          'ps-heading': 'ps-heading___3wxML',
-          'ps-heading--xx-large': 'ps-heading--xx-large___3Jjqy',
-          'ps-heading--large': 'ps-heading--large___3lmKL',
-          'ps-heading--medium': 'ps-heading--medium___1U1Uy'
-        }
-
-        /***/
-      },
-      /* 306 */
+      ,
+      /* 305 */ /* 306 */
       /***/ function(module, exports, __webpack_require__) {
         'use strict'
         /**
@@ -79929,6 +79874,129 @@ Authors: Nera Liu <neraliu@yahoo-inc.com>
           return Component.displayName || Component.name || 'Component'
         }
         //# sourceMappingURL=get-display-name.js.map
+
+        /***/
+      },
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      ,
+      /* 635 */ /* 636 */ /* 637 */ /* 638 */ /* 639 */ /* 640 */ /* 641 */ /* 642 */ /* 643 */ /* 644 */ /* 645 */ /* 646 */ /* 647 */ /* 648 */ /* 649 */ /* 650 */ /* 651 */ /* 652 */ /* 653 */ /* 654 */ /* 655 */ /* 656 */ /* 657 */ /* 658 */ /* 659 */ /* 660 */ /* 661 */ /* 662 */ /* 663 */ /* 664 */ /* 665 */ /* 666 */ /* 667 */ /* 668 */ /* 669 */ /* 670 */ /* 671 */ /* 672 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+
+        var _classnames = __webpack_require__(627)
+
+        var _classnames2 = _interopRequireDefault(_classnames)
+
+        var _react = __webpack_require__(11)
+
+        var _react2 = _interopRequireDefault(_react)
+
+        var _reactStyleable = __webpack_require__(632)
+
+        var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
+
+        var _pModule = __webpack_require__(673)
+
+        var _pModule2 = _interopRequireDefault(_pModule)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        function _defineProperty(obj, key, value) {
+          if (key in obj) {
+            Object.defineProperty(obj, key, {
+              value: value,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            })
+          } else {
+            obj[key] = value
+          }
+          return obj
+        }
+
+        var getClassName = function getClassName(props) {
+          var _classNames
+
+          return (0, _classnames2.default)(
+            (
+              (_classNames = {}),
+              _defineProperty(_classNames, props.className, props.className),
+              _defineProperty(_classNames, props.css['ps-p'], true),
+              _classNames
+            )
+          )
+        }
+
+        exports.default = (0, _reactStyleable2.default)(
+          _pModule2.default
+        )(function(props) {
+          return _react2.default.createElement(
+            'p',
+            { className: getClassName(props) },
+            props.children
+          )
+        })
+
+        /***/
+      },
+      /* 673 */
+      /***/ function(module, exports) {
+        // removed by extract-text-webpack-plugin
+        module.exports = { 'ps-p': 'ps-p___2GCbM' }
+
+        /***/
+      },
+      ,
+      /* 674 */ /* 675 */
+      /***/ function(module, exports) {
+        // removed by extract-text-webpack-plugin
+        module.exports = {
+          'ps-heading': 'ps-heading___1seKB',
+          'ps-heading--xx-large': 'ps-heading--xx-large___1vs6u',
+          'ps-heading--large': 'ps-heading--large___12bkX',
+          'ps-heading--medium': 'ps-heading--medium___2btc0'
+        }
 
         /***/
       }

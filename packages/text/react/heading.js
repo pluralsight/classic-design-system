@@ -2,10 +2,11 @@ import classNames from 'classnames'
 import React from 'react'
 import styleable from 'react-styleable'
 
-import css from '../css/index.module.css'
+import css from '../css/heading.module.css'
 
 const getClassName = props =>
   classNames({
+    // TODO: resolve this dup
     [props.className]: props.className,
     [props.css['ps-heading']]: true,
     [props.css['ps-heading--' + props.size]]: props.size,

@@ -1,10 +1,10 @@
-import { Heading } from '@pluralsight/ps-design-system-text/react'
+import { Heading, P } from '@pluralsight/ps-design-system-text/react'
 import { Link as RouterLink } from 'react-router-dom'
 import React from 'react'
 import styleable from 'react-styleable'
 import Tab from '@pluralsight/ps-tab/react'
 
-import { Code, Example, P } from '../../common/components'
+import { Code, Example } from '../../common/components'
 import css from './index.module.css'
 
 const tabList = (

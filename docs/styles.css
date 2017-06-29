@@ -776,25 +776,111 @@
   --psMotionSpeedSlower: 250ms;
   --psMotionSpeedSlowest: 300ms;
 }
-.ps-heading___3wxML {
+.ps-heading___1seKB {
 }
-.ps-heading--xx-large___3Jjqy {
+.ps-heading--xx-large___1vs6u {
   font-size: var(--psTypeFontSizeXxl);
   letter-spacing: var(--psTypeLetterSpacingXxl);
   font-weight: var(--psTypeFontWeightLight);
   margin: var(--psLayoutSpacingXxl) 0;
 }
-.ps-heading--large___3lmKL {
+.ps-heading--large___12bkX {
   font-size: var(--psTypeFontSizeLarge);
   letter-spacing: var(--psTypeLetterSpacingLarge);
   font-weight: var(--psTypeFontWeightBook);
   margin: var(--psLayoutSpacingXl) 0 var(--psLayoutSpacingSmall) 0;
 }
-.ps-heading--medium___1U1Uy {
+.ps-heading--medium___2btc0 {
   font-size: var(--psTypeFontSizeMedium);
   letter-spacing: var(--psTypeLetterSpacingMedium);
   font-weight: var(--psTypeFontWeightMedium);
   margin: var(--psLayoutSpacingMedium) 0 var(--psLayoutSpacingSmall) 0;
+}
+:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+}
+:root {
+  /* spacing */
+  /* TODO: rename for naming convention */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXl: 40px;
+  --psLayoutSpacingXxl: 56px;
+}
+:root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+  /* font size */
+  /* TODO: rename according to new conventions */
+  --psTypeFontSizeGigantic: 60px;
+  --psTypeFontSizeXxxl: 48px;
+  --psTypeFontSizeXxl: 36px;
+  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeLarge: 24px;
+  --psTypeFontSizeMedium: 18px;
+  --psTypeFontSizeSmall: 14px;
+  --psTypeFontSizeExtraSmall: 12px;
+
+  /* letter spacing */
+  --psTypeLetterSpacingGigantic: -1px;
+  --psTypeLetterSpacingXxxl: -0.72px;
+  --psTypeLetterSpacingXxl: -0.54px;
+  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingLarge: 0.36px;
+  --psTypeLetterSpacingMedium: 0;
+  --psTypeLetterSpacingSmall: 0;
+  --psTypeLetterSpacingExtraSmall: 0;
+
+  /* font weight */
+  --psTypeFontWeightBold: 700;
+  --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightBook: 400;
+  --psTypeFontWeightLight: 300;
+  --psTypeFontWeightExtraLight: 200;
+
+  /* line height */
+  --psTypeLineHeightTight: 20px;
+  --psTypeLineHeightStandard: 24px;
+  --psTypeLineHeightExtra: 32px;
+  --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
+.ps-p___2GCbM {
+  color: var(--psColorsGray04);
+  font-size: var(--psTypeFontSizeSmall);
+  margin: var(--psLayoutSpacingSmall) 0;
+  line-height: var(--psTypeLineHeightStandard);
 }
 :root {
   /* ui colors */
@@ -1728,92 +1814,6 @@
   width: calc(50% - 6px);
   background: var(--psColorsWhite);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, .6);
-}
-:root {
-  /* ui colors */
-  --psColorsWhite: #ffffff;
-  --psColorsBone: #f2f2f2;
-  --psColorsGray01: #cccccc;
-  --psColorsGray02: #aaaaaa;
-  --psColorsGray03: #555555;
-  --psColorsGray04: #363636;
-  --psColorsGray05: #222222;
-  --psColorsGray06: #181818;
-  --psColorsBlack: #000000;
-
-  --psColorsPink: #e80a89;
-  --psColorsRed: #de3636;
-  --psColorsOrange: #f96816;
-  --psColorsOrangeLight: #ff7b39;
-  --psColorsYellow: #ffc200;
-  --psColorsGreenLight: #86ce21;
-  --psColorsBlue: #137bc2;
-
-  /* gradients */
-  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
-  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
-}
-:root {
-  /* spacing */
-  /* TODO: rename for naming convention */
-  --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
-  --psLayoutSpacingSmall: 12px;
-  --psLayoutSpacingMedium: 16px;
-  --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
-}
-:root {
-  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
-
-  /* font size */
-  /* TODO: rename according to new conventions */
-  --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
-  --psTypeFontSizeLarge: 24px;
-  --psTypeFontSizeMedium: 18px;
-  --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
-
-  /* letter spacing */
-  --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
-  --psTypeLetterSpacingLarge: 0.36px;
-  --psTypeLetterSpacingMedium: 0;
-  --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
-
-  /* font weight */
-  --psTypeFontWeightBold: 700;
-  --psTypeFontWeightMedium: 500;
-  --psTypeFontWeightBook: 400;
-  --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
-
-  /* line height */
-  --psTypeLineHeightTight: 20px;
-  --psTypeLineHeightStandard: 24px;
-  --psTypeLineHeightExtra: 32px;
-  --psTypeLineHeightHuge: 40px;
-}
-:root {
-  /* motion */
-  --psMotionSpeedFastest: 100ms;
-  --psMotionSpeedFaster: 150ms;
-  --psMotionSpeedNormal: 200ms;
-  --psMotionSpeedSlower: 250ms;
-  --psMotionSpeedSlowest: 300ms;
-}
-.root___34odr {
-  color: var(--psColorsGray04);
-  font-size: var(--psTypeFontSizeSmall);
-  margin: var(--psLayoutSpacingSmall) 0;
-  line-height: var(--psTypeLineHeightStandard);
 }
 :root {
   /* ui colors */
