@@ -18,6 +18,7 @@
 }
 .outputChild {
   margin: var(--psLayoutSpacingLarge) 0 0 0;
+  color: var(--psColorsWhite);
 }
 .outputChild:first-child {
   margin-top: 0;

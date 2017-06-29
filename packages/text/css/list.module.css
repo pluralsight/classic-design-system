@@ -1,0 +1,15 @@
+@import "@pluralsight/ps-design-system-core";
+
+.ps-list {
+  list-style: none;
+  margin-left: 0;
+  color: var(--psColorsBone);
+  font-size: var(--psTypeFontSizeSmall);
+  line-height: var(--psTypeLineHeightExtra);
+}
+.ps-list--bulleted, .ps-list--numbered {
+  list-style: inherit;
+}
+.ps-list--numbered {
+  list-style-type: decimal;
+}

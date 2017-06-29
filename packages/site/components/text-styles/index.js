@@ -4,6 +4,7 @@ import React from 'react'
 import BodyText from './body-text'
 import HeadingStyles from './heading-styles'
 import Install from './install'
+import Lists from './lists'
 
 export default _ =>
   <div>
@@ -14,5 +15,7 @@ export default _ =>
     <HeadingStyles />
 
     <BodyText />
+
+    <Lists />
 
   </div>

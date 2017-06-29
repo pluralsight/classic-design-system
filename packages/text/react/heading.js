@@ -6,8 +6,6 @@ import css from '../css/heading.module.css'
 
 const getClassName = props =>
   classNames({
-    // TODO: resolve this dup
-    [props.className]: props.className,
     [props.css['ps-heading']]: true,
     [props.css['ps-heading--' + props.size]]: props.size,
     [props.className]: props.className
