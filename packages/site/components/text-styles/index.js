@@ -1,8 +1,8 @@
-import { Heading } from '@pluralsight/ps-design-system-text/react'
 import React from 'react'
 
 import BodyText from './body-text'
 import HeadingStyles from './heading-styles'
+import { Heading } from '../../common/components'
 import Install from './install'
 import Lists from './lists'
 

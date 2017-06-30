@@ -1,0 +1,6 @@
+@import "@pluralsight/ps-design-system-core";
+
+.root {
+  color: var(--psColorsGray06);
+  /* TODO: someday move the big margins in here too */
+}

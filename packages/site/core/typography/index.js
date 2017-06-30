@@ -1,11 +1,10 @@
-import { Heading, P } from '@pluralsight/ps-design-system-text/react'
 import { Link as RouterLink } from 'react-router-dom'
 import React from 'react'
 
 import FontFamily from './font-family'
 import FontSize from './font-size'
 import FontWeight from './font-weight'
-import { Code } from '../../common/components'
+import { Code, Heading, P } from '../../common/components'
 
 export default props =>
   <div>

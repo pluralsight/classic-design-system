@@ -1,9 +1,8 @@
-import { P } from '@pluralsight/ps-design-system-text/react'
 import { Link as RouterLink } from 'react-router-dom'
 import Link from '@pluralsight/ps-link/react'
 import React from 'react'
 
-import { Code } from '../../common/components'
+import { Code, P } from '../../common/components'
 
 export default _ =>
   <div>

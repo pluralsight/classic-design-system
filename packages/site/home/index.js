@@ -1,8 +1,8 @@
-import { Heading, P } from '@pluralsight/ps-design-system-text/react'
 import { Link } from 'react-router-dom'
 import React from 'react'
 
 import Chrome from '../layouts/chrome'
+import { Heading, P } from '../common/components'
 
 export default () =>
   <Chrome>

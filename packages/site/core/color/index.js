@@ -1,9 +1,8 @@
-import { Heading, P } from '@pluralsight/ps-design-system-text/react'
 import { Link as RouterLink } from 'react-router-dom'
 import React from 'react'
 import styleable from 'react-styleable'
 
-import { Code, Example, Link } from '../../common/components'
+import { Code, Example, Heading, Link, P } from '../../common/components'
 import css from './index.module.css'
 import GradientColors from './gradient'
 import GrayscaleColors from './grayscale'

@@ -1,7 +1,7 @@
-import { Heading, List, P } from '@pluralsight/ps-design-system-text/react'
+import { List } from '@pluralsight/ps-design-system-text/react'
 import React from 'react'
 
-import { Example } from '../../common/components'
+import { Example, Heading, P } from '../../common/components'
 
 export default _ =>
   <div>
