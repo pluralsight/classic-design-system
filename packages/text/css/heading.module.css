@@ -1,6 +1,7 @@
 @import "@pluralsight/ps-design-system-core";
 
 .ps-heading {
+  color: var(--psColorsWhite);
 }
 
 .ps-heading--xx-large {
@@ -22,6 +23,7 @@
   margin: var(--psLayoutSpacingMedium) 0 var(--psLayoutSpacingSmall) 0;
 }
 .ps-heading--small-caps {
+  color: var(--psColorsGray02);
   font-size: var(--psTypeFontSizeExtraSmall);
   letter-spacing: var(--psTypeLetterSpacingExtraSmall);
   font-weight: var(--psTypeFontWeightMedium);
