@@ -13752,12 +13752,28 @@ object-assign
             _react2.default.createElement(
               _group2.default,
               null,
-              _react2.default.createElement(_groupTitle2.default, null, 'CORE'),
+              _react2.default.createElement(
+                _groupTitle2.default,
+                null,
+                'INTRODUCTION'
+              ),
               _react2.default.createElement(
                 _link2.default,
                 { href: '/core/installation' },
-                'Installation'
+                'Install ',
+                _react2.default.createElement('code', null, 'core')
               ),
+              _react2.default.createElement(
+                _link2.default,
+                { href: '/components/installation' },
+                'Install ',
+                _react2.default.createElement('code', null, 'components')
+              )
+            ),
+            _react2.default.createElement(
+              _group2.default,
+              null,
+              _react2.default.createElement(_groupTitle2.default, null, 'CORE'),
               _react2.default.createElement(
                 _link2.default,
                 { href: '/core/color' },
@@ -13781,11 +13797,6 @@ object-assign
                 _groupTitle2.default,
                 null,
                 'COMPONENTS'
-              ),
-              _react2.default.createElement(
-                _link2.default,
-                { href: '/components/installation' },
-                'Installation'
               ),
               _react2.default.createElement(
                 _link2.default,

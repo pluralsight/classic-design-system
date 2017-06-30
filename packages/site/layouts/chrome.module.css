@@ -25,7 +25,7 @@
     flex-direction: row;
   }
   .side {
-    min-width: 200px;
+    width: 200px;
   }
   .main {
     flex: 1;

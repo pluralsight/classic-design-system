@@ -18,22 +18,34 @@
   line-height: var(--psTypeLineHeightExtra);
   text-decoration: none;
   color: var(--psColorsGray03);
+  white-space: nowrap;
   transition: all var(--psMotionSpeedFastest) ease-in-out;
 }
 .link:hover {
   color: var(--psColorsBlack);
 }
-
 .link:hover .box {
   width: 8px;
+  padding-left: 8px;
   margin-right: 12px;
 }
-
 .linkActive {
   color: var(--psColorsBlack);
   font-weight: var(--psTypeFontWeightBold);
 }
 .linkActive .box {
   width: 8px;
+  padding-left: 8px;
   margin-right: 12px;
+}
+.link code {
+  display: inline-block;
+  color: var(--psColorsPink);
+  font-size: var(--psTypeFontSizeExtraSmall);
+  line-height: var(--psTypeLineHeightTight);
+  border: 1px solid var(--psColorsGray01);
+  background: var(--psColorsBone);
+  border-radius: 2px;
+  padding: 0 var(--psLayoutSpacingTiny);
+  margin: 0 var(--psLayoutSpacingTiny);
 }
