@@ -14,9 +14,13 @@ You will install from NPM and transpile the source on import via webpack.
 You can use the Design System's webpack config decorator to make this easy.
 The components are currently implemented in React that are styled with CSS modules written in CSSNext and compiled via PostCSS.
 
-## Easy Config
+## Step 0: Setup Build Config
+
+### Option 0: Easy Config
 
 To use the Design System config helpers, you must use Webpack.
+
+Note: If you've used this "Easy Config" method to setup your build config for Core element usage, your build config is done and will support Component use as well.
 
 First, install the build dependency:
 
@@ -35,7 +39,7 @@ module.exports = decorateConfig({
 })
 \`\`\`
 
-## Custom Config
+### Option 1: Custom Config
 
 If you want to setup your own webpakc config to consume the components (markup and styles), you'll want install the needed dependencies:
 
@@ -100,6 +104,10 @@ module: {
 \`\`\`
 
 Note that you may want to change the \`include\` to include only the specific directories of the components your project uses.
+
+## Step 2: Find and Use a Component
+
+Each component is installed separately.  Find and use what you need.
 
 ## Install Examples
 

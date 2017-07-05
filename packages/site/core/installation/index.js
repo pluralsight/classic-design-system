@@ -14,9 +14,13 @@ There are two languages for variables exposed: CSSNext and SASS.
 Use of variables, because of a lack of widespread browser support, requires a CSS build.
 You can use the Design System's (easy) or provide your own (custom).
 
-## PostCSS Easy Config
+## Step 0: Setup Build Config
+
+### Option 0: PostCSS Easy Config
 
 To use the Design System config helpers, you must use Webpack.
+
+Note: If you've used this "Easy Config" method to setup your build config for Component usage, your build config is done and will support Core element use as well.
 
 First, install the build dependency:
 
@@ -38,7 +42,7 @@ module.exports = decorateConfig({
 
 The array of paths in the \`extraInclude\` option will process all \`*.module.css\` files in those paths using the Design System PostCSS setup.
 
-## PostCSS Custom Config
+### Option 1: PostCSS Custom Config
 
 If you want to setup your own PostCSS config to consume the CSSNext variables, you'll want install the needed dependencies:
 
@@ -81,7 +85,7 @@ module: {
 }
 \`\`\`
 
-## Sass Custom Config
+### Option 2: Sass Custom Config
 
 If you wish to use the Sass variables, a custom config is necessary.  First install the required dependencies:
 
@@ -116,13 +120,15 @@ module: {
 }
 \`\`\`
 
-## Install the Core Library
+## Step 1: Install the Core Library
 
 \`\`\`bash
 npm install @pluralsight/ps-design-system-core --save-dev
 \`\`\`
 
-## Import in CSSNext
+## Step 2: Import and Use Library
+
+### Option 0: Import CSSNext
 
 \`\`\`css
 @import "@pluralsight/ps-design-system-core";
@@ -130,7 +136,7 @@ npm install @pluralsight/ps-design-system-core --save-dev
 .mySelector { color: var(--psColorsPink); }
 \`\`\`
 
-## Import in SASS
+### Option 1: Import SASS
 
 \`\`\`scss
 @import "~@pluralsight/ps-design-system-core/dist/index.scss";
@@ -138,11 +144,7 @@ npm install @pluralsight/ps-design-system-core --save-dev
 .mySelector { color: $ps-colors-pink; }
 \`\`\`
 
-## Install Examples
-
-For full working examples, please see the [examples](https://github.com/pluralsight/design-system/tree/master/examples) directory in the Github repo.
-
-## No-Build Alternatives
+### Option 2: Import Vanilla CSS
 
 For those not wanting to deal with a build, a CSS utility class approach is available.  These selectors are generated from the source variables.  This is not recommended.
 
@@ -158,5 +160,8 @@ And apply utility classes directly to the HTML elements:
 <div class="ps-colors-pink--color"></div>
 \`\`\`
 
+## Install Examples
+
+For full working examples, please see the [examples](https://github.com/pluralsight/design-system/tree/master/examples) directory in the Github repo.
 `}</Doc>
   </div>

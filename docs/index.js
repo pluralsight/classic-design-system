@@ -651,6 +651,76 @@ object-assign
       /* 8 */
       /***/ function(module, exports, __webpack_require__) {
         'use strict'
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        })
+        exports.TopBar = exports.Switcher = exports.Spacing = exports.SideNav = exports.P = exports.Heading = exports.Example = exports.Doc = exports.Color = exports.CodeOutput = exports.Code = undefined
+
+        var _code = __webpack_require__(206)
+
+        var _code2 = _interopRequireDefault(_code)
+
+        var _codeOutput = __webpack_require__(205)
+
+        var _codeOutput2 = _interopRequireDefault(_codeOutput)
+
+        var _color = __webpack_require__(208)
+
+        var _color2 = _interopRequireDefault(_color)
+
+        var _doc = __webpack_require__(212)
+
+        var _doc2 = _interopRequireDefault(_doc)
+
+        var _example = __webpack_require__(217)
+
+        var _example2 = _interopRequireDefault(_example)
+
+        var _heading = __webpack_require__(220)
+
+        var _heading2 = _interopRequireDefault(_heading)
+
+        var _p = __webpack_require__(221)
+
+        var _p2 = _interopRequireDefault(_p)
+
+        var _sideNav = __webpack_require__(115)
+
+        var _sideNav2 = _interopRequireDefault(_sideNav)
+
+        var _spacing = __webpack_require__(227)
+
+        var _spacing2 = _interopRequireDefault(_spacing)
+
+        var _switcher = __webpack_require__(116)
+
+        var _switcher2 = _interopRequireDefault(_switcher)
+
+        var _topBar = __webpack_require__(117)
+
+        var _topBar2 = _interopRequireDefault(_topBar)
+
+        function _interopRequireDefault(obj) {
+          return obj && obj.__esModule ? obj : { default: obj }
+        }
+
+        exports.Code = _code2.default
+        exports.CodeOutput = _codeOutput2.default
+        exports.Color = _color2.default
+        exports.Doc = _doc2.default
+        exports.Example = _example2.default
+        exports.Heading = _heading2.default
+        exports.P = _p2.default
+        exports.SideNav = _sideNav2.default
+        exports.Spacing = _spacing2.default
+        exports.Switcher = _switcher2.default
+        exports.TopBar = _topBar2.default
+
+        /***/
+      },
+      /* 9 */
+      /***/ function(module, exports, __webpack_require__) {
+        'use strict'
         /* WEBPACK VAR INJECTION */ ;(function(process) {
           /**
  * Copyright 2013-present, Facebook, Inc.
@@ -877,76 +947,6 @@ object-assign
           module.exports = ReactDOMComponentTree
           /* WEBPACK VAR INJECTION */
         }.call(exports, __webpack_require__(0)))
-
-        /***/
-      },
-      /* 9 */
-      /***/ function(module, exports, __webpack_require__) {
-        'use strict'
-        Object.defineProperty(exports, '__esModule', {
-          value: true
-        })
-        exports.TopBar = exports.Switcher = exports.Spacing = exports.SideNav = exports.P = exports.Heading = exports.Example = exports.Doc = exports.Color = exports.CodeOutput = exports.Code = undefined
-
-        var _code = __webpack_require__(206)
-
-        var _code2 = _interopRequireDefault(_code)
-
-        var _codeOutput = __webpack_require__(205)
-
-        var _codeOutput2 = _interopRequireDefault(_codeOutput)
-
-        var _color = __webpack_require__(208)
-
-        var _color2 = _interopRequireDefault(_color)
-
-        var _doc = __webpack_require__(212)
-
-        var _doc2 = _interopRequireDefault(_doc)
-
-        var _example = __webpack_require__(217)
-
-        var _example2 = _interopRequireDefault(_example)
-
-        var _heading = __webpack_require__(220)
-
-        var _heading2 = _interopRequireDefault(_heading)
-
-        var _p = __webpack_require__(221)
-
-        var _p2 = _interopRequireDefault(_p)
-
-        var _sideNav = __webpack_require__(115)
-
-        var _sideNav2 = _interopRequireDefault(_sideNav)
-
-        var _spacing = __webpack_require__(227)
-
-        var _spacing2 = _interopRequireDefault(_spacing)
-
-        var _switcher = __webpack_require__(116)
-
-        var _switcher2 = _interopRequireDefault(_switcher)
-
-        var _topBar = __webpack_require__(117)
-
-        var _topBar2 = _interopRequireDefault(_topBar)
-
-        function _interopRequireDefault(obj) {
-          return obj && obj.__esModule ? obj : { default: obj }
-        }
-
-        exports.Code = _code2.default
-        exports.CodeOutput = _codeOutput2.default
-        exports.Color = _color2.default
-        exports.Doc = _doc2.default
-        exports.Example = _example2.default
-        exports.Heading = _heading2.default
-        exports.P = _p2.default
-        exports.SideNav = _sideNav2.default
-        exports.Spacing = _spacing2.default
-        exports.Switcher = _switcher2.default
-        exports.TopBar = _topBar2.default
 
         /***/
       },
@@ -8888,7 +8888,7 @@ object-assign
 
           var DOMLazyTree = __webpack_require__(33)
           var Danger = __webpack_require__(527)
-          var ReactDOMComponentTree = __webpack_require__(8)
+          var ReactDOMComponentTree = __webpack_require__(9)
           var ReactInstrumentation = __webpack_require__(12)
 
           var createMicrosoftUnsafeLocalFunction = __webpack_require__(81)
@@ -17410,7 +17410,7 @@ object-assign
  */
 
           var DOMProperty = __webpack_require__(22)
-          var ReactDOMComponentTree = __webpack_require__(8)
+          var ReactDOMComponentTree = __webpack_require__(9)
           var ReactInstrumentation = __webpack_require__(12)
 
           var quoteAttributeValueForBrowser = __webpack_require__(587)
@@ -17753,7 +17753,7 @@ object-assign
           var _assign = __webpack_require__(7)
 
           var LinkedValueUtils = __webpack_require__(77)
-          var ReactDOMComponentTree = __webpack_require__(8)
+          var ReactDOMComponentTree = __webpack_require__(9)
           var ReactUpdates = __webpack_require__(17)
 
           var warning = __webpack_require__(3)
@@ -18085,7 +18085,7 @@ object-assign
         var HTMLDOMPropertyConfig = __webpack_require__(531)
         var ReactComponentBrowserEnvironment = __webpack_require__(533)
         var ReactDOMComponent = __webpack_require__(536)
-        var ReactDOMComponentTree = __webpack_require__(8)
+        var ReactDOMComponentTree = __webpack_require__(9)
         var ReactDOMEmptyComponent = __webpack_require__(537)
         var ReactDOMTreeTraversal = __webpack_require__(548)
         var ReactDOMTextComponent = __webpack_require__(546)
@@ -18554,7 +18554,7 @@ object-assign
           var React = __webpack_require__(27)
           var ReactBrowserEventEmitter = __webpack_require__(46)
           var ReactCurrentOwner = __webpack_require__(20)
-          var ReactDOMComponentTree = __webpack_require__(8)
+          var ReactDOMComponentTree = __webpack_require__(9)
           var ReactDOMContainerInfo = __webpack_require__(131)
           var ReactDOMFeatureFlags = __webpack_require__(538)
           var ReactFeatureFlags = __webpack_require__(136)
@@ -21496,7 +21496,7 @@ object-assign
 
         var _chrome2 = _interopRequireDefault(_chrome)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -29116,7 +29116,7 @@ object-assign
 
         var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         var _indexModule = __webpack_require__(304)
 
@@ -29326,7 +29326,7 @@ object-assign
 
         var _react4 = _interopRequireDefault(_react3)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -29348,7 +29348,7 @@ object-assign
             _react4.default.createElement(
               _components.Doc,
               null,
-              "\n## Recommended Usage\n\nThe recommended way to use the Components of the Design System is by building them from source into your app bundle.\nYou will install from NPM and transpile the source on import via webpack.\nYou can use the Design System's webpack config decorator to make this easy.\nThe components are currently implemented in React that are styled with CSS modules written in CSSNext and compiled via PostCSS.\n\n## Easy Config\n\nTo use the Design System config helpers, you must use Webpack.\n\nFirst, install the build dependency:\n\n```bash\nnpm install @pluralsight/ps-design-system-build --save-dev\n```\n\nThen in your `webpack.config.js`, decorate your config:\n\n```js\nconst { decorateConfig } = require('@pluralsight/ps-design-system-build/webpack')\nmodule.exports = decorateConfig({\n  // ... your project's normal webpack config\n}, {\n  packageJson: require('./package.json')\n})\n```\n\n## Custom Config\n\nIf you want to setup your own webpakc config to consume the components (markup and styles), you'll want install the needed dependencies:\n\n```bash\nnpm install babel-loader babel-preset-react babel-preset-stage-2 babel-preset-env style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev\n```\n\nThe add a `module.rule` to your `webpack.config.js`:\n\n```js\nconst path = require('path')\n\nmodule: {\n  rules: [\n    {\n      test: /.js/,\n      use: [\n        {\n          loader: 'babel-loader'\n          options: {\n            babelrc: false,\n            presets: [\n              'babel-preset-react',\n              'babel-preset-stage-2'\n              require.resolve('babel-preset-stage-2'),\n              [\n                'babel-preset-env',\n                { targets: { browsers: browserlist } }\n              ]\n            ]\n          }\n        }\n      ],\n      include: [path.resolve(path.join('node_modules', '@pluralsight'))],\n    },\n    {\n      test: /\\.module\\.css$/,\n      include: [path.resolve(path.join('node_modules', '@pluralsight', 'ps-design-system-core'))],\n      use: [\n        'style-loader',\n        {\n          loader: 'css-loader',\n          options: {\n            modules: true,\n            importLoaders: 1,\n            localIdentName: '[local]___[hash:base64:5]'\n          }\n        },\n        {\n          loader: 'postcss-loader',\n          options: {\n            plugins: _ => [\n              require('postcss-import')(),\n              require('postcss-cssnext')()\n            ]\n          }\n        }\n      ]\n    }\n  ]\n}\n```\n\nNote that you may want to change the `include` to include only the specific directories of the components your project uses.\n\n## Install Examples\n\nFor full working examples, please see the [examples](https://github.com/pluralsight/design-system/tree/master/examples) directory in the Github repo.\n\n"
+              "\n## Recommended Usage\n\nThe recommended way to use the Components of the Design System is by building them from source into your app bundle.\nYou will install from NPM and transpile the source on import via webpack.\nYou can use the Design System's webpack config decorator to make this easy.\nThe components are currently implemented in React that are styled with CSS modules written in CSSNext and compiled via PostCSS.\n\n## Step 0: Setup Build Config\n\n### Option 0: Easy Config\n\nTo use the Design System config helpers, you must use Webpack.\n\nNote: If you've used this \"Easy Config\" method to setup your build config for Core element usage, your build config is done and will support Component use as well.\n\nFirst, install the build dependency:\n\n```bash\nnpm install @pluralsight/ps-design-system-build --save-dev\n```\n\nThen in your `webpack.config.js`, decorate your config:\n\n```js\nconst { decorateConfig } = require('@pluralsight/ps-design-system-build/webpack')\nmodule.exports = decorateConfig({\n  // ... your project's normal webpack config\n}, {\n  packageJson: require('./package.json')\n})\n```\n\n### Option 1: Custom Config\n\nIf you want to setup your own webpakc config to consume the components (markup and styles), you'll want install the needed dependencies:\n\n```bash\nnpm install babel-loader babel-preset-react babel-preset-stage-2 babel-preset-env style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev\n```\n\nThe add a `module.rule` to your `webpack.config.js`:\n\n```js\nconst path = require('path')\n\nmodule: {\n  rules: [\n    {\n      test: /.js/,\n      use: [\n        {\n          loader: 'babel-loader'\n          options: {\n            babelrc: false,\n            presets: [\n              'babel-preset-react',\n              'babel-preset-stage-2'\n              require.resolve('babel-preset-stage-2'),\n              [\n                'babel-preset-env',\n                { targets: { browsers: browserlist } }\n              ]\n            ]\n          }\n        }\n      ],\n      include: [path.resolve(path.join('node_modules', '@pluralsight'))],\n    },\n    {\n      test: /\\.module\\.css$/,\n      include: [path.resolve(path.join('node_modules', '@pluralsight', 'ps-design-system-core'))],\n      use: [\n        'style-loader',\n        {\n          loader: 'css-loader',\n          options: {\n            modules: true,\n            importLoaders: 1,\n            localIdentName: '[local]___[hash:base64:5]'\n          }\n        },\n        {\n          loader: 'postcss-loader',\n          options: {\n            plugins: _ => [\n              require('postcss-import')(),\n              require('postcss-cssnext')()\n            ]\n          }\n        }\n      ]\n    }\n  ]\n}\n```\n\nNote that you may want to change the `include` to include only the specific directories of the components your project uses.\n\n## Step 2: Find and Use a Component\n\nEach component is installed separately.  Find and use what you need.\n\n## Install Examples\n\nFor full working examples, please see the [examples](https://github.com/pluralsight/design-system/tree/master/examples) directory in the Github repo.\n\n"
             )
           )
         }
@@ -29376,7 +29376,7 @@ object-assign
 
         var _react4 = _interopRequireDefault(_react3)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         var _indexModule = __webpack_require__(305)
 
@@ -29454,7 +29454,7 @@ object-assign
 
         var _react2 = _interopRequireDefault(_react)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -29500,7 +29500,7 @@ object-assign
 
         var _react2 = _interopRequireDefault(_react)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -29563,7 +29563,7 @@ object-assign
 
         var _headingStyles2 = _interopRequireDefault(_headingStyles)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         var _install = __webpack_require__(237)
 
@@ -29612,7 +29612,7 @@ object-assign
 
         var _react4 = _interopRequireDefault(_react3)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -29676,7 +29676,7 @@ object-assign
 
         var _react3 = _interopRequireDefault(_react2)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -29729,7 +29729,7 @@ object-assign
 
         var _react2 = _interopRequireDefault(_react)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -29765,7 +29765,7 @@ object-assign
 
         var _react2 = _interopRequireDefault(_react)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -29833,7 +29833,7 @@ object-assign
 
         var _reactStyleable2 = _interopRequireDefault(_reactStyleable)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         var _indexModule = __webpack_require__(306)
 
@@ -29915,7 +29915,7 @@ object-assign
 
         var _react2 = _interopRequireDefault(_react)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -29977,7 +29977,7 @@ object-assign
 
         var _react4 = _interopRequireDefault(_react3)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -29995,7 +29995,7 @@ object-assign
             _react4.default.createElement(
               _components.Doc,
               null,
-              "\n## Recommended Usage\n\nThe recommended way to use the Core elements of the Design System is via the provided variables in CSSNext.\nThere are two languages for variables exposed: CSSNext and SASS.\nUse of variables, because of a lack of widespread browser support, requires a CSS build.\nYou can use the Design System's (easy) or provide your own (custom).\n\n## PostCSS Easy Config\n\nTo use the Design System config helpers, you must use Webpack.\n\nFirst, install the build dependency:\n\n```bash\nnpm install @pluralsight/ps-design-system-build --save-dev\n```\n\nThen in your `webpack.config.js`, decorate your config:\n\n```js\nconst { decorateConfig } = require('@pluralsight/ps-design-system-build/webpack')\nmodule.exports = decorateConfig({\n  // ... your project's normal webpack config\n}, {\n  extraInclude: [require('path').resolve('src')]\n  packageJson: require('./package.json')\n})\n```\n\nThe array of paths in the `extraInclude` option will process all `*.module.css` files in those paths using the Design System PostCSS setup.\n\n## PostCSS Custom Config\n\nIf you want to setup your own PostCSS config to consume the CSSNext variables, you'll want install the needed dependencies:\n\n```bash\nnpm install style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev\n```\n\nThe add a `module.rule` to your `webpack.config.js`:\n\n```js\nconst path = require('path')\n\nmodule: {\n  rules: [\n    {\n      test: /\\.module\\.css$/,\n      include: [path.resolve(path.join('node_modules', '@pluralsight', 'ps-design-system-core'))],\n      use: [\n        'style-loader',\n        {\n          loader: 'css-loader',\n          options: {\n            modules: true,\n            importLoaders: 1,\n            localIdentName: '[local]___[hash:base64:5]'\n          }\n        },\n        {\n          loader: 'postcss-loader',\n          options: {\n            plugins: _ => [\n              require('postcss-import')(),\n              require('postcss-cssnext')()\n            ]\n          }\n        }\n      ]\n    }\n  ]\n}\n```\n\n## Sass Custom Config\n\nIf you wish to use the Sass variables, a custom config is necessary.  First install the required dependencies:\n\n```bash\nnpm install style-loader css-loader sass-loader node-sass --save-dev\n```\n\nThe add a `module.rule` to your `webpack.config.js`:\n\n```js\nconst path = require('path')\n\nmodule: {\n  rules: [\n    {\n      test: /\\.module\\.scss/,\n      include: [path.resolve('src')]\n      use: [\n        'style-loader',\n        {\n          loader: 'css-loader',\n          options: {\n            modules: true,\n            importLoaders: 1,\n            localIdentName: '[local]___[hash:base64:5]'\n          }\n        },\n        'sass-loader'\n      ]\n    }\n  ]\n}\n```\n\n## Install the Core Library\n\n```bash\nnpm install @pluralsight/ps-design-system-core --save-dev\n```\n\n## Import in CSSNext\n\n```css\n@import \"@pluralsight/ps-design-system-core\";\n\n.mySelector { color: var(--psColorsPink); }\n```\n\n## Import in SASS\n\n```scss\n@import \"~@pluralsight/ps-design-system-core/dist/index.scss\";\n\n.mySelector { color: $ps-colors-pink; }\n```\n\n## Install Examples\n\nFor full working examples, please see the [examples](https://github.com/pluralsight/design-system/tree/master/examples) directory in the Github repo.\n\n## No-Build Alternatives\n\nFor those not wanting to deal with a build, a CSS utility class approach is available.  These selectors are generated from the source variables.  This is not recommended.\n\nFirst include the vanilla CSS stylesheet via traditional means:means\n\n```html\n<link rel=\"stylesheet\" href=\"node_modules/@pluralsight/ps-design-system-core/dist/index.css\" />\n```\n\nAnd apply utility classes directly to the HTML elements:\n\n```html\n<div class=\"ps-colors-pink--color\"></div>\n```\n\n"
+              "\n## Recommended Usage\n\nThe recommended way to use the Core elements of the Design System is via the provided variables in CSSNext.\nThere are two languages for variables exposed: CSSNext and SASS.\nUse of variables, because of a lack of widespread browser support, requires a CSS build.\nYou can use the Design System's (easy) or provide your own (custom).\n\n## Step 0: Setup Build Config\n\n### Option 0: PostCSS Easy Config\n\nTo use the Design System config helpers, you must use Webpack.\n\nNote: If you've used this \"Easy Config\" method to setup your build config for Component usage, your build config is done and will support Core element use as well.\n\nFirst, install the build dependency:\n\n```bash\nnpm install @pluralsight/ps-design-system-build --save-dev\n```\n\nThen in your `webpack.config.js`, decorate your config:\n\n```js\nconst { decorateConfig } = require('@pluralsight/ps-design-system-build/webpack')\nmodule.exports = decorateConfig({\n  // ... your project's normal webpack config\n}, {\n  extraInclude: [require('path').resolve('src')]\n  packageJson: require('./package.json')\n})\n```\n\nThe array of paths in the `extraInclude` option will process all `*.module.css` files in those paths using the Design System PostCSS setup.\n\n### Option 1: PostCSS Custom Config\n\nIf you want to setup your own PostCSS config to consume the CSSNext variables, you'll want install the needed dependencies:\n\n```bash\nnpm install style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev\n```\n\nThe add a `module.rule` to your `webpack.config.js`:\n\n```js\nconst path = require('path')\n\nmodule: {\n  rules: [\n    {\n      test: /\\.module\\.css$/,\n      include: [path.resolve(path.join('node_modules', '@pluralsight', 'ps-design-system-core'))],\n      use: [\n        'style-loader',\n        {\n          loader: 'css-loader',\n          options: {\n            modules: true,\n            importLoaders: 1,\n            localIdentName: '[local]___[hash:base64:5]'\n          }\n        },\n        {\n          loader: 'postcss-loader',\n          options: {\n            plugins: _ => [\n              require('postcss-import')(),\n              require('postcss-cssnext')()\n            ]\n          }\n        }\n      ]\n    }\n  ]\n}\n```\n\n### Option 2: Sass Custom Config\n\nIf you wish to use the Sass variables, a custom config is necessary.  First install the required dependencies:\n\n```bash\nnpm install style-loader css-loader sass-loader node-sass --save-dev\n```\n\nThe add a `module.rule` to your `webpack.config.js`:\n\n```js\nconst path = require('path')\n\nmodule: {\n  rules: [\n    {\n      test: /\\.module\\.scss/,\n      include: [path.resolve('src')]\n      use: [\n        'style-loader',\n        {\n          loader: 'css-loader',\n          options: {\n            modules: true,\n            importLoaders: 1,\n            localIdentName: '[local]___[hash:base64:5]'\n          }\n        },\n        'sass-loader'\n      ]\n    }\n  ]\n}\n```\n\n## Step 1: Install the Core Library\n\n```bash\nnpm install @pluralsight/ps-design-system-core --save-dev\n```\n\n## Step 2: Import and Use Library\n\n### Option 0: Import CSSNext\n\n```css\n@import \"@pluralsight/ps-design-system-core\";\n\n.mySelector { color: var(--psColorsPink); }\n```\n\n### Option 1: Import SASS\n\n```scss\n@import \"~@pluralsight/ps-design-system-core/dist/index.scss\";\n\n.mySelector { color: $ps-colors-pink; }\n```\n\n### Option 2: Import Vanilla CSS\n\nFor those not wanting to deal with a build, a CSS utility class approach is available.  These selectors are generated from the source variables.  This is not recommended.\n\nFirst include the vanilla CSS stylesheet via traditional means:means\n\n```html\n<link rel=\"stylesheet\" href=\"node_modules/@pluralsight/ps-design-system-core/dist/index.css\" />\n```\n\nAnd apply utility classes directly to the HTML elements:\n\n```html\n<div class=\"ps-colors-pink--color\"></div>\n```\n\n## Install Examples\n\nFor full working examples, please see the [examples](https://github.com/pluralsight/design-system/tree/master/examples) directory in the Github repo.\n"
             )
           )
         }
@@ -30013,7 +30013,7 @@ object-assign
 
         var _react2 = _interopRequireDefault(_react)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -30070,7 +30070,7 @@ object-assign
 
         var _react2 = _interopRequireDefault(_react)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         var _increments = __webpack_require__(244)
 
@@ -30131,7 +30131,7 @@ object-assign
 
         var _react2 = _interopRequireDefault(_react)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -30235,7 +30235,7 @@ object-assign
 
         var _fontSizeModule2 = _interopRequireDefault(_fontSizeModule)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -30323,7 +30323,7 @@ object-assign
 
         var _fontWeightModule2 = _interopRequireDefault(_fontWeightModule)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -30413,7 +30413,7 @@ object-assign
 
         var _fontWeight2 = _interopRequireDefault(_fontWeight)
 
-        var _components = __webpack_require__(9)
+        var _components = __webpack_require__(8)
 
         function _interopRequireDefault(obj) {
           return obj && obj.__esModule ? obj : { default: obj }
@@ -59389,7 +59389,7 @@ https://highlightjs.org/
  *
  */
 
-        var ReactDOMComponentTree = __webpack_require__(8)
+        var ReactDOMComponentTree = __webpack_require__(9)
 
         var focusNode = __webpack_require__(122)
 
@@ -60159,7 +60159,7 @@ https://highlightjs.org/
         var EventPluginHub = __webpack_require__(36)
         var EventPropagators = __webpack_require__(37)
         var ExecutionEnvironment = __webpack_require__(11)
-        var ReactDOMComponentTree = __webpack_require__(8)
+        var ReactDOMComponentTree = __webpack_require__(9)
         var ReactUpdates = __webpack_require__(17)
         var SyntheticEvent = __webpack_require__(21)
 
@@ -60670,7 +60670,7 @@ https://highlightjs.org/
  */
 
         var EventPropagators = __webpack_require__(37)
-        var ReactDOMComponentTree = __webpack_require__(8)
+        var ReactDOMComponentTree = __webpack_require__(9)
         var SyntheticMouseEvent = __webpack_require__(47)
 
         var eventTypes = {
@@ -62797,7 +62797,7 @@ https://highlightjs.org/
 
           /* globals __REACT_DEVTOOLS_GLOBAL_HOOK__*/
 
-          var ReactDOMComponentTree = __webpack_require__(8)
+          var ReactDOMComponentTree = __webpack_require__(9)
           var ReactDefaultInjection = __webpack_require__(134)
           var ReactMount = __webpack_require__(140)
           var ReactReconciler = __webpack_require__(26)
@@ -62977,7 +62977,7 @@ https://highlightjs.org/
           var EventPluginRegistry = __webpack_require__(45)
           var ReactBrowserEventEmitter = __webpack_require__(46)
           var ReactDOMComponentFlags = __webpack_require__(130)
-          var ReactDOMComponentTree = __webpack_require__(8)
+          var ReactDOMComponentTree = __webpack_require__(9)
           var ReactDOMInput = __webpack_require__(540)
           var ReactDOMOption = __webpack_require__(543)
           var ReactDOMSelect = __webpack_require__(132)
@@ -64333,7 +64333,7 @@ https://highlightjs.org/
         var _assign = __webpack_require__(7)
 
         var DOMLazyTree = __webpack_require__(33)
-        var ReactDOMComponentTree = __webpack_require__(8)
+        var ReactDOMComponentTree = __webpack_require__(9)
 
         var ReactDOMEmptyComponent = function(instantiate) {
           // ReactCompositeComponent uses this:
@@ -64421,7 +64421,7 @@ https://highlightjs.org/
  */
 
         var DOMChildrenOperations = __webpack_require__(73)
-        var ReactDOMComponentTree = __webpack_require__(8)
+        var ReactDOMComponentTree = __webpack_require__(9)
 
         /**
  * Operations used to process updates to DOM nodes.
@@ -64462,7 +64462,7 @@ https://highlightjs.org/
 
           var DOMPropertyOperations = __webpack_require__(129)
           var LinkedValueUtils = __webpack_require__(77)
-          var ReactDOMComponentTree = __webpack_require__(8)
+          var ReactDOMComponentTree = __webpack_require__(9)
           var ReactUpdates = __webpack_require__(17)
 
           var invariant = __webpack_require__(2)
@@ -65056,7 +65056,7 @@ https://highlightjs.org/
           var _assign = __webpack_require__(7)
 
           var React = __webpack_require__(27)
-          var ReactDOMComponentTree = __webpack_require__(8)
+          var ReactDOMComponentTree = __webpack_require__(9)
           var ReactDOMSelect = __webpack_require__(132)
 
           var warning = __webpack_require__(3)
@@ -65466,7 +65466,7 @@ https://highlightjs.org/
 
           var DOMChildrenOperations = __webpack_require__(73)
           var DOMLazyTree = __webpack_require__(33)
-          var ReactDOMComponentTree = __webpack_require__(8)
+          var ReactDOMComponentTree = __webpack_require__(9)
 
           var escapeTextContentForBrowser = __webpack_require__(49)
           var invariant = __webpack_require__(2)
@@ -65668,7 +65668,7 @@ https://highlightjs.org/
             _assign = __webpack_require__(7)
 
           var LinkedValueUtils = __webpack_require__(77)
-          var ReactDOMComponentTree = __webpack_require__(8)
+          var ReactDOMComponentTree = __webpack_require__(9)
           var ReactUpdates = __webpack_require__(17)
 
           var invariant = __webpack_require__(2)
@@ -66704,7 +66704,7 @@ https://highlightjs.org/
         var EventListener = __webpack_require__(121)
         var ExecutionEnvironment = __webpack_require__(11)
         var PooledClass = __webpack_require__(25)
-        var ReactDOMComponentTree = __webpack_require__(8)
+        var ReactDOMComponentTree = __webpack_require__(9)
         var ReactUpdates = __webpack_require__(17)
 
         var getEventTarget = __webpack_require__(84)
@@ -68646,7 +68646,7 @@ https://highlightjs.org/
 
         var EventPropagators = __webpack_require__(37)
         var ExecutionEnvironment = __webpack_require__(11)
-        var ReactDOMComponentTree = __webpack_require__(8)
+        var ReactDOMComponentTree = __webpack_require__(9)
         var ReactInputSelection = __webpack_require__(138)
         var SyntheticEvent = __webpack_require__(21)
 
@@ -68880,7 +68880,7 @@ https://highlightjs.org/
 
           var EventListener = __webpack_require__(121)
           var EventPropagators = __webpack_require__(37)
-          var ReactDOMComponentTree = __webpack_require__(8)
+          var ReactDOMComponentTree = __webpack_require__(9)
           var SyntheticAnimationEvent = __webpack_require__(568)
           var SyntheticClipboardEvent = __webpack_require__(569)
           var SyntheticEvent = __webpack_require__(21)
@@ -70113,7 +70113,7 @@ https://highlightjs.org/
           var _prodInvariant = __webpack_require__(4)
 
           var ReactCurrentOwner = __webpack_require__(20)
-          var ReactDOMComponentTree = __webpack_require__(8)
+          var ReactDOMComponentTree = __webpack_require__(9)
           var ReactInstanceMap = __webpack_require__(38)
 
           var getHostComponentFromComposite = __webpack_require__(148)

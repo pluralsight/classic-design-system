@@ -20,6 +20,12 @@
   font-weight: var(--psTypeFontWeightBook);
   margin: var(--psLayoutSpacingXl) 0 var(--psLayoutSpacingSmall) 0;
 }
+.root :global(h3) {
+  font-size: var(--psTypeFontSizeMedium);
+  letter-spacing: var(--psTypeLetterSpacingMedium);
+  font-weight: var(--psTypeFontWeightBook);
+  margin: var(--psLayoutSpacingXl) 0 var(--psLayoutSpacingSmall) 0;
+}
 .root :global(pre) {
   padding: var(--psLayoutSpacingLarge);
   background: var(--psColorsGray04);
