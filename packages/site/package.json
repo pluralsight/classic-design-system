@@ -16,6 +16,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@pluralsight/ps-button": "^1.6.13",
+    "@pluralsight/ps-design-system-card": "^1.0.0",
     "@pluralsight/ps-design-system-core": "^1.6.5",
     "@pluralsight/ps-design-system-normalize": "^3.0.2",
     "@pluralsight/ps-design-system-text": "^1.0.0",

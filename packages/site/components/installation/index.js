@@ -16,6 +16,8 @@ The components are currently implemented in React that are styled with CSS modul
 
 ## Step 0: Setup Build Config
 
+Choose one of the following options:
+
 ### Option 0: Easy Config
 
 To use the Design System config helpers, you must use Webpack.

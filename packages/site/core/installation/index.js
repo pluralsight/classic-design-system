@@ -16,6 +16,8 @@ You can use the Design System's (easy) or provide your own (custom).
 
 ## Step 0: Setup Build Config
 
+Choose one of the following options:
+
 ### Option 0: PostCSS Easy Config
 
 To use the Design System config helpers, you must use Webpack.
