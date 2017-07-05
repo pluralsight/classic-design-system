@@ -7,17 +7,21 @@ import css from '../css/index.module.css'
 const getClassName = props =>
   classNames({
     [props.css['ps-card']]: true,
+    [props.css['ps-card--' + props.size]]: props.size,
     [props.className]: props.className
   })
 
 const rmSystemProps = props => {
-  const { css, ...rest } = props
+  const { css, size, ...rest } = props
   return rest
 }
 
 export const Card = props => {
   return (
-    <div {...rmSystemProps(props)}>
+    <div {...rmSystemProps(props)} className={getClassName(props)}>
+      <div className={props.css['ps-card__image-frame']}>
+        IMG
+      </div>
       I am card.
       {props.children}
     </div>
@@ -25,7 +29,11 @@ export const Card = props => {
 }
 
 import PropTypes from 'prop-types'
-Card.propTypes = {}
-Card.defaultProps = {}
+Card.propTypes = {
+  size: PropTypes.oneOf(['small', 'medium', 'large'])
+}
+Card.defaultProps = {
+  size: 'medium'
+}
 
 export default styleable(css)(Card)

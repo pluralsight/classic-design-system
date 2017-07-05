@@ -2,4 +2,27 @@
 
 .ps-card {
   outline: 1px solid red;
+  width: 100%;
+}
+
+/* size */
+.ps-card--small {
+  max-width: 140px;
+}
+.ps-card--medium {
+  max-width: 320px;
+}
+.ps-card--large {
+  max-width: 640px;
+}
+
+.ps-card__image-frame {
+  height: 96px;
+  outline: 1px solid green;
+}
+.ps-card--medium .ps-card__image-frame {
+  height: 108px;
+}
+.ps-card--large .ps-card__image-frame {
+  height: 208px;
 }

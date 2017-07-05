@@ -28709,6 +28709,20 @@ object-assign
         })
         exports.Card = undefined
 
+        var _extends =
+          Object.assign ||
+          function(target) {
+            for (var i = 1; i < arguments.length; i++) {
+              var source = arguments[i]
+              for (var key in source) {
+                if (Object.prototype.hasOwnProperty.call(source, key)) {
+                  target[key] = source[key]
+                }
+              }
+            }
+            return target
+          }
+
         var _classnames = __webpack_require__(196)
 
         var _classnames2 = _interopRequireDefault(_classnames)
@@ -28764,6 +28778,11 @@ object-assign
             (
               (_classNames = {}),
               _defineProperty(_classNames, props.css['ps-card'], true),
+              _defineProperty(
+                _classNames,
+                props.css['ps-card--' + props.size],
+                props.size
+              ),
               _defineProperty(_classNames, props.className, props.className),
               _classNames
             )
@@ -28780,14 +28799,25 @@ object-assign
         var Card = (exports.Card = function Card(props) {
           return _react2.default.createElement(
             'div',
-            rmSystemProps(props),
+            _extends({}, rmSystemProps(props), {
+              className: getClassName(props)
+            }),
+            _react2.default.createElement(
+              'div',
+              { className: props.css['ps-card__image-frame'] },
+              'IMG'
+            ),
             'I am card.',
             props.children
           )
         })
 
-        Card.propTypes = {}
-        Card.defaultProps = {}
+        Card.propTypes = {
+          size: _propTypes2.default.oneOf(['small', 'medium', 'large'])
+        }
+        Card.defaultProps = {
+          size: 'medium'
+        }
 
         exports.default = (0, _reactStyleable2.default)(_indexModule2.default)(
           Card
@@ -31153,12 +31183,12 @@ object-assign
             _react2.default.createElement(
               _components.Heading,
               { size: 'large' },
-              _react2.default.createElement('h2', null, 'Card')
+              _react2.default.createElement('h2', null, 'Card sizes')
             ),
             _react2.default.createElement(_components.Example.React, {
               component: _react2.default.createElement(_react4.default, null),
               name: 'Card',
-              permutations: [{}]
+              permutations: [{ size: 'large' }, {}, { size: 'small' }]
             })
           )
         }
@@ -38368,7 +38398,13 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       /* 297 */
       /***/ function(module, exports) {
         // removed by extract-text-webpack-plugin
-        module.exports = { 'ps-card': 'ps-card___2zSSP' }
+        module.exports = {
+          'ps-card': 'ps-card___2zSSP',
+          'ps-card--small': 'ps-card--small___3gxtm',
+          'ps-card--medium': 'ps-card--medium___5eDWG',
+          'ps-card--large': 'ps-card--large___xbvHu',
+          'ps-card__image-frame': 'ps-card__image-frame___1ocA2'
+        }
 
         /***/
       },

@@ -22,6 +22,10 @@ export default _ =>
       import Card from '@pluralsight/ps-design-system-card/react'
     </Code>
 
-    <Heading size="large"><h2>Card</h2></Heading>
-    <Example.React component={<Card />} name="Card" permutations={[{}]} />
+    <Heading size="large"><h2>Card sizes</h2></Heading>
+    <Example.React
+      component={<Card />}
+      name="Card"
+      permutations={[{ size: 'large' }, {}, { size: 'small' }]}
+    />
   </div>

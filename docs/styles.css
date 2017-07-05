@@ -2853,8 +2853,28 @@
 }
 .ps-card___2zSSP {
   outline: 1px solid red;
+  width: 100%;
 }
-
+/* size */
+.ps-card--small___3gxtm {
+  max-width: 140px;
+}
+.ps-card--medium___5eDWG {
+  max-width: 320px;
+}
+.ps-card--large___xbvHu {
+  max-width: 640px;
+}
+.ps-card__image-frame___1ocA2 {
+  height: 96px;
+  outline: 1px solid green;
+}
+.ps-card--medium___5eDWG .ps-card__image-frame___1ocA2 {
+  height: 108px;
+}
+.ps-card--large___xbvHu .ps-card__image-frame___1ocA2 {
+  height: 208px;
+}
 :root {
   /* ui colors */
   --psColorsWhite: #ffffff;
