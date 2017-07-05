@@ -25,9 +25,10 @@ export default styleable(css)(props =>
     </Group>
     <Group>
       <GroupTitle>COMPONENTS</GroupTitle>
-      <Link href="/components/text-styles">Text styles</Link>
       <Link href="/components/button">Buttons</Link>
+      <Link href="/components/card">Card</Link>
       <Link href="/components/tabs">Tabs</Link>
+      <Link href="/components/text-styles">Text styles</Link>
     </Group>
   </nav>
 )

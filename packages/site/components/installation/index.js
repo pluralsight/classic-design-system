@@ -49,7 +49,7 @@ If you want to setup your own webpakc config to consume the components (markup a
 npm install babel-loader babel-preset-react babel-preset-stage-2 babel-preset-env style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev
 \`\`\`
 
-The add a \`module.rule\` to your \`webpack.config.js\`:
+Then add a \`module.rule\` to your \`webpack.config.js\`:
 
 \`\`\`js
 const path = require('path')

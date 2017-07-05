@@ -1,13 +1,15 @@
 import React from 'react'
 
 import ButtonDoc from './button'
-import InstallationDoc from './installation'
+import CardDoc from './card'
 import Chrome from '../layouts/chrome'
+import InstallationDoc from './installation'
 import TabsDoc from './tabs'
 import TextStylesDoc from './text-styles'
 
 const docs = {
   button: <ButtonDoc />,
+  card: <CardDoc />,
   installation: <InstallationDoc />,
   tabs: <TabsDoc />,
   'text-styles': <TextStylesDoc />

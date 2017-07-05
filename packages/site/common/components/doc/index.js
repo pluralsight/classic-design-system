@@ -11,7 +11,7 @@ class Doc extends React.Component {
       .querySelectorAll('.' + this.props.css.root + ' pre code')
       .forEach(node => hljs.highlightBlock(node))
   }
-  componentShouldUpdate() {
+  shouldComponentUpdate() {
     return false
   }
   render() {

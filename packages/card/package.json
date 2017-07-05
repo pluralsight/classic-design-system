@@ -1,0 +1,24 @@
+{
+  "name": "@pluralsight/ps-design-system-card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "style": "css/index.module.css",
+  "scripts": {
+    "test": "echo \"Error: tests run in as a single design system suite\" && exit 1"
+  },
+  "keywords": [],
+  "author": "jaketrent",
+  "license": "Apache-2.0",
+  "repository": "pluralsight/design-system",
+  "peerDependencies": {
+    "@pluralsight/ps-design-system-normalize": "^2.1.0",
+    "react": ">=0.15.0 < 16.0.0"
+  },
+  "dependencies": {
+    "@pluralsight/ps-design-system-core": "^1.6.5",
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.10",
+    "react-styleable": "^3.0.0"
+  }
+}
