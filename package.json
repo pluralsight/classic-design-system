@@ -58,6 +58,7 @@
     "moduleNameMapper": {
       "\\.css$": "identity-obj-proxy"
     },
+    "testRegex": "packages/.*(/__tests__/.*|(\\.|/)(test|spec))\\.jsx?$",
     "transformIgnorePatterns": [
       "<rootDir>.*(node_modules)(?!.*@pluralsight.*).*$"
     ]

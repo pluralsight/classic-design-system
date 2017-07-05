@@ -1,4 +1,4 @@
-import { formatHtml } from '../index'
+import { formatHtml } from '../format-react-to-html'
 
 describe('#formatHtml', () => {
   test('empty', () => {
