@@ -2948,6 +2948,18 @@
 .ps-card__metadata__datum___-Ixrv:nth-of-type(1) {
   flex-shrink: 1;
 }
+.ps-card__title___CCHuG a, .ps-card__metadata__datum___-Ixrv a {
+  color: inherit;
+}
+.ps-card__title___CCHuG a:hover,
+.ps-card__title___CCHuG a:active,
+.ps-card__metadata__datum___-Ixrv a:hover,
+.ps-card__metadata__datum___-Ixrv a:active {
+  color: var(--psColorsWhite);
+  text-decoration: underline;
+  transition: all var(--psMotionSpeedNormal);
+  cursor: pointer;
+}
 .ps-card__metadata__dot___1c4pP {
   display: inline-block;
   margin: 0 var(--psLayoutSpacingExtraSmall);

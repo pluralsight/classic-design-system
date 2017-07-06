@@ -102,6 +102,18 @@
 .ps-card__metadata__datum:nth-of-type(1) {
   flex-shrink: 1;
 }
+.ps-card__title a, .ps-card__metadata__datum a {
+  color: inherit;
+}
+.ps-card__title a:hover,
+.ps-card__title a:active,
+.ps-card__metadata__datum a:hover,
+.ps-card__metadata__datum a:active {
+  color: var(--psColorsWhite);
+  text-decoration: underline;
+  transition: all var(--psMotionSpeedNormal);
+  cursor: pointer;
+}
 .ps-card__metadata__dot {
   display: inline-block;
   margin: 0 var(--psLayoutSpacingExtraSmall);

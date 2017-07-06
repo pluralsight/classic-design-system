@@ -28900,11 +28900,10 @@ object-assign
 
         Card.propTypes = {
           image: _propTypes2.default.element.isRequired,
-          // TODO: convert to array of elements, styled internally (eg, links)
-          metadata1: _propTypes2.default.arrayOf(_propTypes2.default.string),
-          metadata2: _propTypes2.default.arrayOf(_propTypes2.default.string),
+          metadata1: _propTypes2.default.arrayOf(_propTypes2.default.node),
+          metadata2: _propTypes2.default.arrayOf(_propTypes2.default.node),
           progress: _propTypes2.default.number,
-          title: _propTypes2.default.string.isRequired,
+          title: _propTypes2.default.node.isRequired,
           size: _propTypes2.default.oneOf(['small', 'medium', 'large'])
         }
         Card.defaultProps = {
@@ -31244,7 +31243,7 @@ object-assign
         }
 
         var defaultCard = _react2.default.createElement(_react4.default, {
-          title: 'The Card Title',
+          title: _react2.default.createElement('a', null, 'The Card Title'),
           image: _react2.default.createElement('img', {
             src: 'http://via.placeholder.com/350x150'
           })
@@ -31319,7 +31318,11 @@ object-assign
                 },
                 {
                   metadata1: [
-                    'The Honorable Simon Allardice Hailing From Shores Abroad'
+                    _react2.default.createElement(
+                      'a',
+                      null,
+                      'The Honorable Simon Allardice Hailing From Shores Abroad'
+                    )
                   ],
                   metadata2: [
                     'Only about the Best Level in the World for Learning',

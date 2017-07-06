@@ -6,7 +6,7 @@ import Card from '@pluralsight/ps-design-system-card/react'
 
 const defaultCard = (
   <Card
-    title="The Card Title"
+    title={<a>The Card Title</a>}
     image={<img src="http://via.placeholder.com/350x150" />}
   />
 )
@@ -55,7 +55,7 @@ export default _ =>
         },
         {
           metadata1: [
-            'The Honorable Simon Allardice Hailing From Shores Abroad'
+            <a>The Honorable Simon Allardice Hailing From Shores Abroad</a>
           ],
           metadata2: [
             'Only about the Best Level in the World for Learning',

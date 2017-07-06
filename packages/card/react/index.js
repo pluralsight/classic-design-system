@@ -90,11 +90,10 @@ export const Card = props => {
 import PropTypes from 'prop-types'
 Card.propTypes = {
   image: PropTypes.element.isRequired,
-  // TODO: convert to array of elements, styled internally (eg, links)
-  metadata1: PropTypes.arrayOf(PropTypes.string),
-  metadata2: PropTypes.arrayOf(PropTypes.string),
+  metadata1: PropTypes.arrayOf(PropTypes.node),
+  metadata2: PropTypes.arrayOf(PropTypes.node),
   progress: PropTypes.number,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.node.isRequired,
   size: PropTypes.oneOf(['small', 'medium', 'large'])
 }
 Card.defaultProps = {
