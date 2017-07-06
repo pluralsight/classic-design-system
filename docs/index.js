@@ -28853,7 +28853,11 @@ object-assign
                 { className: props.css['ps-card__metadata'] },
                 metadata.map(function(m, i) {
                   return [
-                    _react2.default.createElement('span', null, m),
+                    _react2.default.createElement(
+                      'span',
+                      { className: props.css['ps-card__metadata__datum'] },
+                      m
+                    ),
                     i < metadata.length - 1 &&
                       _react2.default.createElement('span', {
                         className: props.css['ps-card__metadata__dot']
@@ -28888,6 +28892,7 @@ object-assign
 
         Card.propTypes = {
           image: _propTypes2.default.element.isRequired,
+          // TODO: convert to array of elements, styled internally (eg, links)
           metadata1: _propTypes2.default.arrayOf(_propTypes2.default.string),
           metadata2: _propTypes2.default.arrayOf(_propTypes2.default.string),
           progress: _propTypes2.default.number,
@@ -31303,6 +31308,16 @@ object-assign
                 {
                   metadata1: ['Simon Allardice'],
                   metadata2: ['Intermediate', '2hr 20min', 'July 24, 1847']
+                },
+                {
+                  metadata1: [
+                    'The Honorable Simon Allardice Hailing From Shores Abroad'
+                  ],
+                  metadata2: [
+                    'Only about the Best Level in the World for Learning',
+                    '2hr 20min or longer depending',
+                    "July 24, 1847 or year thereabouts, it's unclear"
+                  ]
                 }
               ]
             })
@@ -38525,6 +38540,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           'ps-card__progress__bar': 'ps-card__progress__bar___41-QK',
           'ps-card__title': 'ps-card__title___CCHuG',
           'ps-card__metadata': 'ps-card__metadata___3YV1n',
+          'ps-card__metadata__datum': 'ps-card__metadata__datum___-Ixrv',
           'ps-card__metadata__dot': 'ps-card__metadata__dot___1c4pP'
         }
 

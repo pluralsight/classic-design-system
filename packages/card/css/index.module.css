@@ -75,6 +75,7 @@
   align-items: center;
   font-weight: var(--psTypeFontWeightBook);
   color: var(--psColorsGray02);
+  max-width: 100%;
 }
 .ps-card--small .ps-card__metadata {
   font-size: var(--psTypeFontSizeExtraSmall);
@@ -88,11 +89,20 @@
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightTight);
 }
+.ps-card__metadata__datum {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 2;
+}
+.ps-card__metadata__datum:nth-of-type(1) {
+  flex-shrink: 1;
+}
 .ps-card__metadata__dot {
   display: inline-block;
   margin: 0 var(--psLayoutSpacingExtraSmall);
-  height: 4px;
-  width: 4px;
+  min-height: 4px;
+  min-width: 4px;
   border-radius: 50%;
   background-color: var(--psColorsGray02);
 }

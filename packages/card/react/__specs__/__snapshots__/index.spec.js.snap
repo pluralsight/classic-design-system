@@ -3,7 +3,6 @@
 exports[`renders correctly 1`] = `
 <div
   className="ps-card ps-card--medium"
-  title="The card title"
 >
   <div
     className="ps-card__image-frame"

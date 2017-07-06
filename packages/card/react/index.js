@@ -60,7 +60,7 @@ const renderMetaData = (props, metadata) =>
   metadata
     ? <div className={props.css['ps-card__metadata']}>
         {metadata.map((m, i) => [
-          <span>{m}</span>,
+          <span className={props.css['ps-card__metadata__datum']}>{m}</span>,
           i < metadata.length - 1 &&
             <span className={props.css['ps-card__metadata__dot']} />
         ])}
@@ -84,6 +84,7 @@ export const Card = props => {
 import PropTypes from 'prop-types'
 Card.propTypes = {
   image: PropTypes.element.isRequired,
+  // TODO: convert to array of elements, styled internally (eg, links)
   metadata1: PropTypes.arrayOf(PropTypes.string),
   metadata2: PropTypes.arrayOf(PropTypes.string),
   progress: PropTypes.number,

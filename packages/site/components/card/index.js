@@ -52,6 +52,16 @@ export default _ =>
         {
           metadata1: ['Simon Allardice'],
           metadata2: ['Intermediate', '2hr 20min', 'July 24, 1847']
+        },
+        {
+          metadata1: [
+            'The Honorable Simon Allardice Hailing From Shores Abroad'
+          ],
+          metadata2: [
+            'Only about the Best Level in the World for Learning',
+            '2hr 20min or longer depending',
+            "July 24, 1847 or year thereabouts, it's unclear"
+          ]
         }
       ]}
     />
