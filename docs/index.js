@@ -32110,6 +32110,7 @@ object-assign
             _react6.default.createElement(_components.Example.React, {
               component: defaultCard,
               name: 'Card',
+              orient: 'vertical',
               permutations: [
                 { metadata1: ['Simon Allardice'] },
                 {

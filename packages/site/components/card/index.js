@@ -53,6 +53,7 @@ export default _ =>
     <Example.React
       component={defaultCard}
       name="Card"
+      orient="vertical"
       permutations={[
         { metadata1: ['Simon Allardice'] },
         {
