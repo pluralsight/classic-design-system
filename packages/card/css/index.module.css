@@ -1,7 +1,6 @@
 @import "@pluralsight/ps-design-system-core";
 
 .ps-card {
-  outline: 1px solid red;
   width: 100%;
 }
 
@@ -20,9 +19,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 96px;
   overflow: hidden;
   outline: 1px solid green;
+}
+.ps-card--small .ps-card__image-frame {
+  height: 96px;
 }
 .ps-card--medium .ps-card__image-frame {
   height: 108px;
@@ -49,4 +50,20 @@
   width: 0%;
   height: 5px;
   background-color: var(--psColorsWhite);
+}
+.ps-card__title {
+  margin-top: var(--psLayoutSpacingExtraSmall);
+  font-weight: var(--psTypeFontWeightMedium);
+}
+.ps-card--small .ps-card__title {
+  font-size: var(--psTypeFontSizeExtraSmall);
+  line-height: var(--psTypeLineHeightTight);
+}
+.ps-card--medium .ps-card__title {
+  font-size: var(--psTypeFontSizeSmall);
+  line-height: var(--psTypeLineHeightTight);
+}
+.ps-card--large .ps-card__title {
+  font-size: var(--psTypeFontSizeMedium);
+  line-height: var(--psTypeLineHeightStandard);
 }

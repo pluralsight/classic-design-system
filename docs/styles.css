@@ -2852,7 +2852,6 @@
   --psMotionSpeedSlowest: 300ms;
 }
 .ps-card___2zSSP {
-  outline: 1px solid red;
   width: 100%;
 }
 /* size */
@@ -2869,9 +2868,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 96px;
   overflow: hidden;
   outline: 1px solid green;
+}
+.ps-card--small___3gxtm .ps-card__image-frame___1ocA2 {
+  height: 96px;
 }
 .ps-card--medium___5eDWG .ps-card__image-frame___1ocA2 {
   height: 108px;
@@ -2896,6 +2897,22 @@
   width: 0%;
   height: 5px;
   background-color: var(--psColorsWhite);
+}
+.ps-card__title___CCHuG {
+  margin-top: var(--psLayoutSpacingExtraSmall);
+  font-weight: var(--psTypeFontWeightMedium);
+}
+.ps-card--small___3gxtm .ps-card__title___CCHuG {
+  font-size: var(--psTypeFontSizeExtraSmall);
+  line-height: var(--psTypeLineHeightTight);
+}
+.ps-card--medium___5eDWG .ps-card__title___CCHuG {
+  font-size: var(--psTypeFontSizeSmall);
+  line-height: var(--psTypeLineHeightTight);
+}
+.ps-card--large___xbvHu .ps-card__title___CCHuG {
+  font-size: var(--psTypeFontSizeMedium);
+  line-height: var(--psTypeLineHeightStandard);
 }
 :root {
   /* ui colors */

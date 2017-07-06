@@ -4,6 +4,13 @@ import { Code, Example, Heading, Link, P } from '../../common/components'
 
 import Card from '@pluralsight/ps-design-system-card/react'
 
+const defaultCard = (
+  <Card
+    title="The Card Title"
+    image={<img src="http://via.placeholder.com/350x150" />}
+  />
+)
+
 export default _ =>
   <div>
     <Heading size="xx-large"><h1>Card</h1></Heading>
@@ -24,18 +31,14 @@ export default _ =>
 
     <Heading size="large"><h2>Card sizes</h2></Heading>
     <Example.React
-      component={
-        <Card image={<img src="http://via.placeholder.com/350x150" />} />
-      }
+      component={defaultCard}
       name="Card"
       permutations={[{ size: 'large' }, {}, { size: 'small' }]}
     />
 
     <Heading size="large"><h2>Card progress</h2></Heading>
     <Example.React
-      component={
-        <Card image={<img src="http://via.placeholder.com/350x150" />} />
-      }
+      component={defaultCard}
       name="Card"
       permutations={[{ progress: 0.25 }, { progress: 0.66 }, { progress: 1 }]}
     />

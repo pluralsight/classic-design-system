@@ -54,7 +54,7 @@ export const Card = props => {
         {renderImage(props)}
       </div>
       {renderProgress(props)}
-      I am card.
+      <div className={props.css['ps-card__title']}>{props.title}</div>
       {props.children}
     </div>
   )

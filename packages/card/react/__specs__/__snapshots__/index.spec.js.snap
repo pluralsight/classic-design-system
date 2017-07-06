@@ -3,6 +3,7 @@
 exports[`renders correctly 1`] = `
 <div
   className="ps-card ps-card--medium"
+  title="The card title"
 >
   <div
     className="ps-card__image-frame"
@@ -11,6 +12,10 @@ exports[`renders correctly 1`] = `
       className="ps-card__image"
     />
   </div>
-  I am card.
+  <div
+    className="ps-card__title"
+  >
+    The card title
+  </div>
 </div>
 `;

@@ -28852,7 +28852,11 @@ object-assign
               renderImage(props)
             ),
             renderProgress(props),
-            'I am card.',
+            _react2.default.createElement(
+              'div',
+              { className: props.css['ps-card__title'] },
+              props.title
+            ),
             props.children
           )
         })
@@ -31198,6 +31202,13 @@ object-assign
           return obj && obj.__esModule ? obj : { default: obj }
         }
 
+        var defaultCard = _react2.default.createElement(_react4.default, {
+          title: 'The Card Title',
+          image: _react2.default.createElement('img', {
+            src: 'http://via.placeholder.com/350x150'
+          })
+        })
+
         exports.default = function(_) {
           return _react2.default.createElement(
             'div',
@@ -31233,11 +31244,7 @@ object-assign
               _react2.default.createElement('h2', null, 'Card sizes')
             ),
             _react2.default.createElement(_components.Example.React, {
-              component: _react2.default.createElement(_react4.default, {
-                image: _react2.default.createElement('img', {
-                  src: 'http://via.placeholder.com/350x150'
-                })
-              }),
+              component: defaultCard,
               name: 'Card',
               permutations: [{ size: 'large' }, {}, { size: 'small' }]
             }),
@@ -31247,11 +31254,7 @@ object-assign
               _react2.default.createElement('h2', null, 'Card progress')
             ),
             _react2.default.createElement(_components.Example.React, {
-              component: _react2.default.createElement(_react4.default, {
-                image: _react2.default.createElement('img', {
-                  src: 'http://via.placeholder.com/350x150'
-                })
-              }),
+              component: defaultCard,
               name: 'Card',
               permutations: [
                 { progress: 0.25 },
@@ -38475,7 +38478,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           'ps-card__image-frame': 'ps-card__image-frame___1ocA2',
           'ps-card__image': 'ps-card__image___2MmCd',
           'ps-card__progress': 'ps-card__progress___3pVLT',
-          'ps-card__progress__bar': 'ps-card__progress__bar___41-QK'
+          'ps-card__progress__bar': 'ps-card__progress__bar___41-QK',
+          'ps-card__title': 'ps-card__title___CCHuG'
         }
 
         /***/
