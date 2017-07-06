@@ -4,10 +4,14 @@ import styleable from 'react-styleable'
 
 import css from '../css/index.module.css'
 
+import bookmark from '../svg/bookmark.icon.svg'
 import logo from '../svg/logo.icon.svg'
+import more from '../svg/more.icon.svg'
 
 const ids = {
-  logo
+  bookmark,
+  logo,
+  more
 }
 
 const getClassName = props =>

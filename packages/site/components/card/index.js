@@ -77,7 +77,15 @@ export default _ =>
       component={defaultCard}
       name="Card"
       permutations={[
-        { actions: [<Button appearance="flat" icon={<Icon id="logo" />} />] }
+        {
+          actions: [<Button appearance="flat" icon={<Icon id="bookmark" />} />]
+        },
+        {
+          actions: [
+            <Button appearance="flat" icon={<Icon id="bookmark" />} />,
+            <Button appearance="flat" icon={<Icon id="more" />} />
+          ]
+        }
       ]}
     />
   </div>
