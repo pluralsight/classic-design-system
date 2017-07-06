@@ -12,7 +12,16 @@ const getClassName = props =>
   })
 
 const rmSystemProps = props => {
-  const { css, image, metadata1, metadata2, progress, size, ...rest } = props
+  const {
+    css,
+    image,
+    metadata1,
+    metadata2,
+    progress,
+    size,
+    title,
+    ...rest
+  } = props
   return rest
 }
 

@@ -28796,13 +28796,15 @@ object-assign
             metadata2 = props.metadata2,
             progress = props.progress,
             size = props.size,
+            title = props.title,
             rest = _objectWithoutProperties(props, [
               'css',
               'image',
               'metadata1',
               'metadata2',
               'progress',
-              'size'
+              'size',
+              'title'
             ])
 
           return rest
