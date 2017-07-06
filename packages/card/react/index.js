@@ -12,7 +12,7 @@ const getClassName = props =>
   })
 
 const rmSystemProps = props => {
-  const { css, image, size, ...rest } = props
+  const { css, image, progress, size, ...rest } = props
   return rest
 }
 
@@ -28,12 +28,32 @@ const renderImage = props =>
       })
     : null
 
+const percent = num => {
+  try {
+    return parseFloat(num) * 100 + '%'
+  } catch (_) {
+    return '0%'
+  }
+}
+
+// TODO: a11y
+const renderProgress = props =>
+  props.progress
+    ? <div className={props.css['ps-card__progress']}>
+        <div
+          className={props.css['ps-card__progress__bar']}
+          style={{ width: percent(props.progress) }}
+        />
+      </div>
+    : null
+
 export const Card = props => {
   return (
     <div {...rmSystemProps(props)} className={getClassName(props)}>
       <div className={props.css['ps-card__image-frame']}>
         {renderImage(props)}
       </div>
+      {renderProgress(props)}
       I am card.
       {props.children}
     </div>
@@ -42,7 +62,8 @@ export const Card = props => {
 
 import PropTypes from 'prop-types'
 Card.propTypes = {
-  image: PropTypes.element,
+  image: PropTypes.element.isRequired,
+  progress: PropTypes.number,
   size: PropTypes.oneOf(['small', 'medium', 'large'])
 }
 Card.defaultProps = {

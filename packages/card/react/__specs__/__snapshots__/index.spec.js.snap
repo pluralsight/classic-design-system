@@ -1,3 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `<div />`;
+exports[`renders correctly 1`] = `
+<div
+  className="ps-card ps-card--medium"
+>
+  <div
+    className="ps-card__image-frame"
+  >
+    <div
+      className="ps-card__image"
+    />
+  </div>
+  I am card.
+</div>
+`;

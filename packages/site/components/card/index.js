@@ -30,4 +30,13 @@ export default _ =>
       name="Card"
       permutations={[{ size: 'large' }, {}, { size: 'small' }]}
     />
+
+    <Heading size="large"><h2>Card progress</h2></Heading>
+    <Example.React
+      component={
+        <Card image={<img src="http://via.placeholder.com/350x150" />} />
+      }
+      name="Card"
+      permutations={[{ progress: 0.25 }, { progress: 0.66 }, { progress: 1 }]}
+    />
   </div>

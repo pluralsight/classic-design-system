@@ -28792,8 +28792,14 @@ object-assign
         var rmSystemProps = function rmSystemProps(props) {
           var css = props.css,
             image = props.image,
+            progress = props.progress,
             size = props.size,
-            rest = _objectWithoutProperties(props, ['css', 'image', 'size'])
+            rest = _objectWithoutProperties(props, [
+              'css',
+              'image',
+              'progress',
+              'size'
+            ])
 
           return rest
         }
@@ -28812,6 +28818,28 @@ object-assign
             : null
         }
 
+        var percent = function percent(num) {
+          try {
+            return parseFloat(num) * 100 + '%'
+          } catch (_) {
+            return '0%'
+          }
+        }
+
+        // TODO: a11y
+        var renderProgress = function renderProgress(props) {
+          return props.progress
+            ? _react2.default.createElement(
+                'div',
+                { className: props.css['ps-card__progress'] },
+                _react2.default.createElement('div', {
+                  className: props.css['ps-card__progress__bar'],
+                  style: { width: percent(props.progress) }
+                })
+              )
+            : null
+        }
+
         var Card = (exports.Card = function Card(props) {
           return _react2.default.createElement(
             'div',
@@ -28823,13 +28851,15 @@ object-assign
               { className: props.css['ps-card__image-frame'] },
               renderImage(props)
             ),
+            renderProgress(props),
             'I am card.',
             props.children
           )
         })
 
         Card.propTypes = {
-          image: _propTypes2.default.element,
+          image: _propTypes2.default.element.isRequired,
+          progress: _propTypes2.default.number,
           size: _propTypes2.default.oneOf(['small', 'medium', 'large'])
         }
         Card.defaultProps = {
@@ -31210,6 +31240,24 @@ object-assign
               }),
               name: 'Card',
               permutations: [{ size: 'large' }, {}, { size: 'small' }]
+            }),
+            _react2.default.createElement(
+              _components.Heading,
+              { size: 'large' },
+              _react2.default.createElement('h2', null, 'Card progress')
+            ),
+            _react2.default.createElement(_components.Example.React, {
+              component: _react2.default.createElement(_react4.default, {
+                image: _react2.default.createElement('img', {
+                  src: 'http://via.placeholder.com/350x150'
+                })
+              }),
+              name: 'Card',
+              permutations: [
+                { progress: 0.25 },
+                { progress: 0.66 },
+                { progress: 1 }
+              ]
             })
           )
         }
@@ -38425,7 +38473,9 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           'ps-card--medium': 'ps-card--medium___5eDWG',
           'ps-card--large': 'ps-card--large___xbvHu',
           'ps-card__image-frame': 'ps-card__image-frame___1ocA2',
-          'ps-card__image': 'ps-card__image___2MmCd'
+          'ps-card__image': 'ps-card__image___2MmCd',
+          'ps-card__progress': 'ps-card__progress___3pVLT',
+          'ps-card__progress__bar': 'ps-card__progress__bar___41-QK'
         }
 
         /***/
