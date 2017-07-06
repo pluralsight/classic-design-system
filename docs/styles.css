@@ -2866,7 +2866,11 @@
   max-width: 640px;
 }
 .ps-card__image-frame___1ocA2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 96px;
+  overflow: hidden;
   outline: 1px solid green;
 }
 .ps-card--medium___5eDWG .ps-card__image-frame___1ocA2 {
@@ -2874,6 +2878,9 @@
 }
 .ps-card--large___xbvHu .ps-card__image-frame___1ocA2 {
   height: 208px;
+}
+.ps-card__image___2MmCd {
+  width: 100%;
 }
 :root {
   /* ui colors */

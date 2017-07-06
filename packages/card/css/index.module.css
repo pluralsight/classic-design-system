@@ -17,7 +17,11 @@
 }
 
 .ps-card__image-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 96px;
+  overflow: hidden;
   outline: 1px solid green;
 }
 .ps-card--medium .ps-card__image-frame {
@@ -25,4 +29,8 @@
 }
 .ps-card--large .ps-card__image-frame {
   height: 208px;
+}
+
+.ps-card__image {
+  width: 100%;
 }

@@ -12,15 +12,27 @@ const getClassName = props =>
   })
 
 const rmSystemProps = props => {
-  const { css, size, ...rest } = props
+  const { css, image, size, ...rest } = props
   return rest
 }
+
+const formatImageClassName = props =>
+  props.image.props.className
+    ? `${props.image.props.className} ${props.css['ps-card__image']}`
+    : props.css['ps-card__image']
+
+const renderImage = props =>
+  props.image
+    ? React.cloneElement(props.image, {
+        className: formatImageClassName(props)
+      })
+    : null
 
 export const Card = props => {
   return (
     <div {...rmSystemProps(props)} className={getClassName(props)}>
       <div className={props.css['ps-card__image-frame']}>
-        IMG
+        {renderImage(props)}
       </div>
       I am card.
       {props.children}
@@ -30,6 +42,7 @@ export const Card = props => {
 
 import PropTypes from 'prop-types'
 Card.propTypes = {
+  image: PropTypes.element,
   size: PropTypes.oneOf(['small', 'medium', 'large'])
 }
 Card.defaultProps = {

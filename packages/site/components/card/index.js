@@ -24,7 +24,9 @@ export default _ =>
 
     <Heading size="large"><h2>Card sizes</h2></Heading>
     <Example.React
-      component={<Card />}
+      component={
+        <Card image={<img src="http://via.placeholder.com/350x150" />} />
+      }
       name="Card"
       permutations={[{ size: 'large' }, {}, { size: 'small' }]}
     />

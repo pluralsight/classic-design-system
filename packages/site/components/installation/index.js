@@ -51,6 +51,7 @@ npm install babel-loader babel-preset-react babel-preset-stage-2 babel-preset-en
 
 Then add a \`module.rule\` to your \`webpack.config.js\`:
 
+
 \`\`\`js
 const path = require('path')
 

@@ -28791,9 +28791,25 @@ object-assign
 
         var rmSystemProps = function rmSystemProps(props) {
           var css = props.css,
-            rest = _objectWithoutProperties(props, ['css'])
+            image = props.image,
+            size = props.size,
+            rest = _objectWithoutProperties(props, ['css', 'image', 'size'])
 
           return rest
+        }
+
+        var formatImageClassName = function formatImageClassName(props) {
+          return props.image.props.className
+            ? props.image.props.className + ' ' + props.css['ps-card__image']
+            : props.css['ps-card__image']
+        }
+
+        var renderImage = function renderImage(props) {
+          return props.image
+            ? _react2.default.cloneElement(props.image, {
+                className: formatImageClassName(props)
+              })
+            : null
         }
 
         var Card = (exports.Card = function Card(props) {
@@ -28805,7 +28821,7 @@ object-assign
             _react2.default.createElement(
               'div',
               { className: props.css['ps-card__image-frame'] },
-              'IMG'
+              renderImage(props)
             ),
             'I am card.',
             props.children
@@ -28813,6 +28829,7 @@ object-assign
         })
 
         Card.propTypes = {
+          image: _propTypes2.default.element,
           size: _propTypes2.default.oneOf(['small', 'medium', 'large'])
         }
         Card.defaultProps = {
@@ -31186,7 +31203,11 @@ object-assign
               _react2.default.createElement('h2', null, 'Card sizes')
             ),
             _react2.default.createElement(_components.Example.React, {
-              component: _react2.default.createElement(_react4.default, null),
+              component: _react2.default.createElement(_react4.default, {
+                image: _react2.default.createElement('img', {
+                  src: 'http://via.placeholder.com/350x150'
+                })
+              }),
               name: 'Card',
               permutations: [{ size: 'large' }, {}, { size: 'small' }]
             })
@@ -31232,7 +31253,7 @@ object-assign
             _react4.default.createElement(
               _components.Doc,
               null,
-              "\n## Recommended Usage\n\nThe recommended way to use the Components of the Design System is by building them from source into your app bundle.\nYou will install from NPM and transpile the source on import via webpack.\nYou can use the Design System's webpack config decorator to make this easy.\nThe components are currently implemented in React that are styled with CSS modules written in CSSNext and compiled via PostCSS.\n\n## Step 0: Setup Build Config\n\nChoose one of the following options:\n\n### Option 0: Easy Config\n\nTo use the Design System config helpers, you must use Webpack.\n\nNote: If you've used this \"Easy Config\" method to setup your build config for Core element usage, your build config is done and will support Component use as well.\n\nFirst, install the build dependency:\n\n```bash\nnpm install @pluralsight/ps-design-system-build --save-dev\n```\n\nThen in your `webpack.config.js`, decorate your config:\n\n```js\nconst { decorateConfig } = require('@pluralsight/ps-design-system-build/webpack')\nmodule.exports = decorateConfig({\n  // ... your project's normal webpack config\n}, {\n  packageJson: require('./package.json')\n})\n```\n\n### Option 1: Custom Config\n\nIf you want to setup your own webpakc config to consume the components (markup and styles), you'll want install the needed dependencies:\n\n```bash\nnpm install babel-loader babel-preset-react babel-preset-stage-2 babel-preset-env style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev\n```\n\nThen add a `module.rule` to your `webpack.config.js`:\n\n```js\nconst path = require('path')\n\nmodule: {\n  rules: [\n    {\n      test: /.js/,\n      use: [\n        {\n          loader: 'babel-loader'\n          options: {\n            babelrc: false,\n            presets: [\n              'babel-preset-react',\n              'babel-preset-stage-2'\n              require.resolve('babel-preset-stage-2'),\n              [\n                'babel-preset-env',\n                { targets: { browsers: browserlist } }\n              ]\n            ]\n          }\n        }\n      ],\n      include: [path.resolve(path.join('node_modules', '@pluralsight'))],\n    },\n    {\n      test: /\\.module\\.css$/,\n      include: [path.resolve(path.join('node_modules', '@pluralsight', 'ps-design-system-core'))],\n      use: [\n        'style-loader',\n        {\n          loader: 'css-loader',\n          options: {\n            modules: true,\n            importLoaders: 1,\n            localIdentName: '[local]___[hash:base64:5]'\n          }\n        },\n        {\n          loader: 'postcss-loader',\n          options: {\n            plugins: _ => [\n              require('postcss-import')(),\n              require('postcss-cssnext')()\n            ]\n          }\n        }\n      ]\n    }\n  ]\n}\n```\n\nNote that you may want to change the `include` to include only the specific directories of the components your project uses.\n\n## Step 2: Find and Use a Component\n\nEach component is installed separately.  Find and use what you need.\n\n## Install Examples\n\nFor full working examples, please see the [examples](https://github.com/pluralsight/design-system/tree/master/examples) directory in the Github repo.\n\n"
+              "\n## Recommended Usage\n\nThe recommended way to use the Components of the Design System is by building them from source into your app bundle.\nYou will install from NPM and transpile the source on import via webpack.\nYou can use the Design System's webpack config decorator to make this easy.\nThe components are currently implemented in React that are styled with CSS modules written in CSSNext and compiled via PostCSS.\n\n## Step 0: Setup Build Config\n\nChoose one of the following options:\n\n### Option 0: Easy Config\n\nTo use the Design System config helpers, you must use Webpack.\n\nNote: If you've used this \"Easy Config\" method to setup your build config for Core element usage, your build config is done and will support Component use as well.\n\nFirst, install the build dependency:\n\n```bash\nnpm install @pluralsight/ps-design-system-build --save-dev\n```\n\nThen in your `webpack.config.js`, decorate your config:\n\n```js\nconst { decorateConfig } = require('@pluralsight/ps-design-system-build/webpack')\nmodule.exports = decorateConfig({\n  // ... your project's normal webpack config\n}, {\n  packageJson: require('./package.json')\n})\n```\n\n### Option 1: Custom Config\n\nIf you want to setup your own webpakc config to consume the components (markup and styles), you'll want install the needed dependencies:\n\n```bash\nnpm install babel-loader babel-preset-react babel-preset-stage-2 babel-preset-env style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev\n```\n\nThen add a `module.rule` to your `webpack.config.js`:\n\n\n```js\nconst path = require('path')\n\nmodule: {\n  rules: [\n    {\n      test: /.js/,\n      use: [\n        {\n          loader: 'babel-loader'\n          options: {\n            babelrc: false,\n            presets: [\n              'babel-preset-react',\n              'babel-preset-stage-2'\n              require.resolve('babel-preset-stage-2'),\n              [\n                'babel-preset-env',\n                { targets: { browsers: browserlist } }\n              ]\n            ]\n          }\n        }\n      ],\n      include: [path.resolve(path.join('node_modules', '@pluralsight'))],\n    },\n    {\n      test: /\\.module\\.css$/,\n      include: [path.resolve(path.join('node_modules', '@pluralsight', 'ps-design-system-core'))],\n      use: [\n        'style-loader',\n        {\n          loader: 'css-loader',\n          options: {\n            modules: true,\n            importLoaders: 1,\n            localIdentName: '[local]___[hash:base64:5]'\n          }\n        },\n        {\n          loader: 'postcss-loader',\n          options: {\n            plugins: _ => [\n              require('postcss-import')(),\n              require('postcss-cssnext')()\n            ]\n          }\n        }\n      ]\n    }\n  ]\n}\n```\n\nNote that you may want to change the `include` to include only the specific directories of the components your project uses.\n\n## Step 2: Find and Use a Component\n\nEach component is installed separately.  Find and use what you need.\n\n## Install Examples\n\nFor full working examples, please see the [examples](https://github.com/pluralsight/design-system/tree/master/examples) directory in the Github repo.\n\n"
             )
           )
         }
@@ -38403,7 +38424,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           'ps-card--small': 'ps-card--small___3gxtm',
           'ps-card--medium': 'ps-card--medium___5eDWG',
           'ps-card--large': 'ps-card--large___xbvHu',
-          'ps-card__image-frame': 'ps-card__image-frame___1ocA2'
+          'ps-card__image-frame': 'ps-card__image-frame___1ocA2',
+          'ps-card__image': 'ps-card__image___2MmCd'
         }
 
         /***/
