@@ -28792,11 +28792,15 @@ object-assign
         var rmSystemProps = function rmSystemProps(props) {
           var css = props.css,
             image = props.image,
+            metadata1 = props.metadata1,
+            metadata2 = props.metadata2,
             progress = props.progress,
             size = props.size,
             rest = _objectWithoutProperties(props, [
               'css',
               'image',
+              'metadata1',
+              'metadata2',
               'progress',
               'size'
             ])
@@ -28840,6 +28844,24 @@ object-assign
             : null
         }
 
+        var renderMetaData = function renderMetaData(props, metadata) {
+          return metadata
+            ? _react2.default.createElement(
+                'div',
+                { className: props.css['ps-card__metadata'] },
+                metadata.map(function(m, i) {
+                  return [
+                    _react2.default.createElement('span', null, m),
+                    i < metadata.length - 1 &&
+                      _react2.default.createElement('span', {
+                        className: props.css['ps-card__metadata__dot']
+                      })
+                  ]
+                })
+              )
+            : null
+        }
+
         var Card = (exports.Card = function Card(props) {
           return _react2.default.createElement(
             'div',
@@ -28857,13 +28879,17 @@ object-assign
               { className: props.css['ps-card__title'] },
               props.title
             ),
-            props.children
+            renderMetaData(props, props.metadata1),
+            renderMetaData(props, props.metadata2)
           )
         })
 
         Card.propTypes = {
           image: _propTypes2.default.element.isRequired,
+          metadata1: _propTypes2.default.arrayOf(_propTypes2.default.string),
+          metadata2: _propTypes2.default.arrayOf(_propTypes2.default.string),
           progress: _propTypes2.default.number,
+          title: _propTypes2.default.string.isRequired,
           size: _propTypes2.default.oneOf(['small', 'medium', 'large'])
         }
         Card.defaultProps = {
@@ -31260,6 +31286,22 @@ object-assign
                 { progress: 0.25 },
                 { progress: 0.66 },
                 { progress: 1 }
+              ]
+            }),
+            _react2.default.createElement(
+              _components.Heading,
+              { size: 'large' },
+              _react2.default.createElement('h2', null, 'Card metadata')
+            ),
+            _react2.default.createElement(_components.Example.React, {
+              component: defaultCard,
+              name: 'Card',
+              permutations: [
+                { metadata1: ['Simon Allardice'] },
+                {
+                  metadata1: ['Simon Allardice'],
+                  metadata2: ['Intermediate', '2hr 20min', 'July 24, 1847']
+                }
               ]
             })
           )
@@ -38479,7 +38521,9 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           'ps-card__image': 'ps-card__image___2MmCd',
           'ps-card__progress': 'ps-card__progress___3pVLT',
           'ps-card__progress__bar': 'ps-card__progress__bar___41-QK',
-          'ps-card__title': 'ps-card__title___CCHuG'
+          'ps-card__title': 'ps-card__title___CCHuG',
+          'ps-card__metadata': 'ps-card__metadata___3YV1n',
+          'ps-card__metadata__dot': 'ps-card__metadata__dot___1c4pP'
         }
 
         /***/

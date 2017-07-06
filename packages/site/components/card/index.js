@@ -42,4 +42,17 @@ export default _ =>
       name="Card"
       permutations={[{ progress: 0.25 }, { progress: 0.66 }, { progress: 1 }]}
     />
+
+    <Heading size="large"><h2>Card metadata</h2></Heading>
+    <Example.React
+      component={defaultCard}
+      name="Card"
+      permutations={[
+        { metadata1: ['Simon Allardice'] },
+        {
+          metadata1: ['Simon Allardice'],
+          metadata2: ['Intermediate', '2hr 20min', 'July 24, 1847']
+        }
+      ]}
+    />
   </div>

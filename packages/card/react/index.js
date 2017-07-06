@@ -12,7 +12,7 @@ const getClassName = props =>
   })
 
 const rmSystemProps = props => {
-  const { css, image, progress, size, ...rest } = props
+  const { css, image, metadata1, metadata2, progress, size, ...rest } = props
   return rest
 }
 
@@ -47,6 +47,17 @@ const renderProgress = props =>
       </div>
     : null
 
+const renderMetaData = (props, metadata) =>
+  metadata
+    ? <div className={props.css['ps-card__metadata']}>
+        {metadata.map((m, i) => [
+          <span>{m}</span>,
+          i < metadata.length - 1 &&
+            <span className={props.css['ps-card__metadata__dot']} />
+        ])}
+      </div>
+    : null
+
 export const Card = props => {
   return (
     <div {...rmSystemProps(props)} className={getClassName(props)}>
@@ -55,7 +66,8 @@ export const Card = props => {
       </div>
       {renderProgress(props)}
       <div className={props.css['ps-card__title']}>{props.title}</div>
-      {props.children}
+      {renderMetaData(props, props.metadata1)}
+      {renderMetaData(props, props.metadata2)}
     </div>
   )
 }
@@ -63,7 +75,10 @@ export const Card = props => {
 import PropTypes from 'prop-types'
 Card.propTypes = {
   image: PropTypes.element.isRequired,
+  metadata1: PropTypes.arrayOf(PropTypes.string),
+  metadata2: PropTypes.arrayOf(PropTypes.string),
   progress: PropTypes.number,
+  title: PropTypes.string.isRequired,
   size: PropTypes.oneOf(['small', 'medium', 'large'])
 }
 Card.defaultProps = {
