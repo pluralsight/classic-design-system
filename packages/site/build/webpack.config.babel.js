@@ -1,8 +1,14 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const {
+  decorateConfig
+} = require('@pluralsight/ps-design-system-build/webpack')
 const path = require('path')
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 
+const extractTextPlugin = new ExtractTextPlugin('styles.css')
+
 module.exports = {
+  //decorateConfig(
   entry: {
     index: path.join(__dirname, '..', 'index.js')
   },
@@ -39,6 +45,7 @@ module.exports = {
           'react-svg-loader'
         ]
       },
+      // TODO: put src into subdir so can use build/webpack/decorateConfig to also run over site src
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -76,7 +83,7 @@ module.exports = {
   },
 
   plugins: [
-    new ExtractTextPlugin('styles.css'),
+    extractTextPlugin,
     new StaticSiteGeneratorPlugin({
       basename: '/design-system',
       crawl: true
@@ -102,3 +109,8 @@ module.exports = {
     }
   }
 }
+/* {
+       *   extractTextPlugin,
+       *   packageJson: require(path.join(__dirname, '..', 'package.json'))
+       * }
+         )*/
