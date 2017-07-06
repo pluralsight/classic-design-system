@@ -1,3 +1,5 @@
+import Button from '@pluralsight/ps-button/react'
+import Icon from '@pluralsight/ps-icon/react'
 import React from 'react'
 
 import { Code, Example, Heading, Link, P } from '../../common/components'
@@ -6,7 +8,7 @@ import Card from '@pluralsight/ps-design-system-card/react'
 
 const defaultCard = (
   <Card
-    title={<a>The Card Title</a>}
+    title={'The Card Title'}
     image={<img src="http://via.placeholder.com/350x150" />}
   />
 )
@@ -29,14 +31,14 @@ export default _ =>
       import Card from '@pluralsight/ps-design-system-card/react'
     </Code>
 
-    <Heading size="large"><h2>Card sizes</h2></Heading>
+    <Heading size="large"><h2>Size</h2></Heading>
     <Example.React
       component={defaultCard}
       name="Card"
-      permutations={[{ size: 'large' }, {}, { size: 'small' }]}
+      permutations={[{ size: 'large' }, { size: 'medium' }, { size: 'small' }]}
     />
 
-    <Heading size="large"><h2>Card progress</h2></Heading>
+    <Heading size="large"><h2>Progress</h2></Heading>
     <Example.React
       component={defaultCard}
       name="Card"
@@ -47,7 +49,7 @@ export default _ =>
       ]}
     />
 
-    <Heading size="large"><h2>Card metadata</h2></Heading>
+    <Heading size="large"><h2>Metadata</h2></Heading>
     <Example.React
       component={defaultCard}
       name="Card"
@@ -67,6 +69,15 @@ export default _ =>
             "July 24, 1847 or year thereabouts, it's unclear"
           ]
         }
+      ]}
+    />
+
+    <Heading size="large"><h2>Actions</h2></Heading>
+    <Example.React
+      component={defaultCard}
+      name="Card"
+      permutations={[
+        { actions: [<Button appearance="flat" icon={<Icon id="logo" />} />] }
       ]}
     />
   </div>

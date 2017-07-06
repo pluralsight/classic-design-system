@@ -14,6 +14,7 @@ const getClassName = props =>
 
 const rmSystemProps = props => {
   const {
+    actions,
     css,
     image,
     metadata1,
@@ -57,6 +58,7 @@ const renderProgress = props =>
       </div>
     : null
 
+// TODO: fix when node (not string) shiitake warning
 const renderTitle = props =>
   <Shiitake lines={2} className={props.css['ps-card__title']}>
     {props.title}
@@ -66,10 +68,34 @@ const renderMetaData = (props, metadata) =>
   metadata
     ? <div className={props.css['ps-card__metadata']}>
         {metadata.map((m, i) => [
-          <span className={props.css['ps-card__metadata__datum']}>{m}</span>,
+          <span
+            key={`datum${i}`}
+            className={props.css['ps-card__metadata__datum']}
+          >
+            {m}
+          </span>,
           i < metadata.length - 1 &&
-            <span className={props.css['ps-card__metadata__dot']} />
+            <span
+              key={`dot${i}`}
+              className={props.css['ps-card__metadata__dot']}
+            />
         ])}
+      </div>
+    : null
+
+const renderActionBar = props =>
+  Array.isArray(props.actions) && props.actions.length > 0
+    ? <div className={props.css['ps-card__action-bar']}>
+        {React.Children.map(props.actions, (action, i) =>
+          React.cloneElement(action, {
+            css: {
+              'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
+              'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
+            },
+            key: i,
+            size: 'small'
+          })
+        )}
       </div>
     : null
 
@@ -78,6 +104,7 @@ export const Card = props => {
     <div {...rmSystemProps(props)} className={getClassName(props)}>
       <div className={props.css['ps-card__image-frame']}>
         {renderImage(props)}
+        {renderActionBar(props)}
       </div>
       {renderProgress(props)}
       {renderTitle(props)}
@@ -89,6 +116,7 @@ export const Card = props => {
 
 import PropTypes from 'prop-types'
 Card.propTypes = {
+  actions: PropTypes.arrayOf(PropTypes.node),
   image: PropTypes.element.isRequired,
   metadata1: PropTypes.arrayOf(PropTypes.node),
   metadata2: PropTypes.arrayOf(PropTypes.node),

@@ -2865,6 +2865,7 @@
   max-width: 640px;
 }
 .ps-card__image-frame___1ocA2 {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2881,9 +2882,23 @@
   height: 208px;
 }
 .ps-card__image___2MmCd {
+  position: relative;
   object-fit: cover;
   min-height: 100%;
   min-width: 100%;
+}
+.ps-card__action-bar___2d3QI {
+  position: absolute;
+  top: var(--psLayoutSpacingSmall);
+  right: var(--psLayoutSpacingSmall);
+}
+.ps-card__action-bar___2d3QI .ps-icon__fg--fill___1Nbfk {
+  fill: var(--psColorsWhite);
+  transition: all var(--psMotionSpeedNormal);
+}
+.ps-card__action-bar___2d3QI .ps-icon__fg--stroke___2deYS {
+  stroke: var(--psColorsWhite);
+  transition: all var(--psMotionSpeedNormal);
 }
 .ps-card__progress___3pVLT {
   position: relative;

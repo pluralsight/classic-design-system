@@ -16,6 +16,7 @@
 }
 
 .ps-card__image-frame {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,9 +34,24 @@
 }
 
 .ps-card__image {
+  position: relative;
   object-fit: cover;
   min-height: 100%;
   min-width: 100%;
+}
+
+.ps-card__action-bar {
+  position: absolute;
+  top: var(--psLayoutSpacingSmall);
+  right: var(--psLayoutSpacingSmall);
+}
+.ps-card__action-bar .ps-icon__fg--fill {
+  fill: var(--psColorsWhite);
+  transition: all var(--psMotionSpeedNormal);
+}
+.ps-card__action-bar .ps-icon__fg--stroke {
+  stroke: var(--psColorsWhite);
+  transition: all var(--psMotionSpeedNormal);
 }
 
 .ps-card__progress {
