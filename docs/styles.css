@@ -2903,18 +2903,22 @@
 .ps-card__title___CCHuG {
   margin-top: var(--psLayoutSpacingExtraSmall);
   font-weight: var(--psTypeFontWeightMedium);
+  overflow: hidden;
 }
 .ps-card--small___3gxtm .ps-card__title___CCHuG {
   font-size: var(--psTypeFontSizeExtraSmall);
   line-height: var(--psTypeLineHeightTight);
+  max-height: calc(2 * var(--psTypeLineHeightTight));
 }
 .ps-card--medium___5eDWG .ps-card__title___CCHuG {
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightTight);
+  max-height: calc(2 * var(--psTypeLineHeightTight));
 }
 .ps-card--large___xbvHu .ps-card__title___CCHuG {
   font-size: var(--psTypeFontSizeMedium);
   line-height: var(--psTypeLineHeightStandard);
+  max-height: calc(2 * var(--psTypeLineHeightStandard));
 }
 .ps-card__metadata___3YV1n {
   display: flex;

@@ -14,7 +14,87 @@ exports[`renders correctly 1`] = `
   <div
     className="ps-card__title"
   >
-    The card title
+    <span
+      style={
+        Object {
+          "display": "block",
+          "maxHeight": "0px",
+          "overflow": "hidden",
+          "position": "relative",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "display": "block",
+            "width": "100%",
+          }
+        }
+      >
+        
+        …
+      </span>
+      <span
+        style={
+          Object {
+            "display": "block",
+            "height": "0px",
+            "overflow": "hidden",
+            "width": "100%",
+          }
+        }
+      >
+        The card title
+      </span>
+      <span
+        style={
+          Object {
+            "display": "block",
+            "left": "-20000px",
+            "position": "absolute",
+            "width": "100%",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "display": "block",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "display": "block",
+              }
+            }
+          >
+            W
+          </span>
+          <span
+            style={
+              Object {
+                "display": "block",
+              }
+            }
+          >
+            W
+          </span>
+        </span>
+        <span
+          style={
+            Object {
+              "display": "block",
+            }
+          }
+        >
+          
+          …
+        </span>
+      </span>
+    </span>
   </div>
 </div>
 `;

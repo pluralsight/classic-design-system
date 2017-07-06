@@ -56,18 +56,22 @@
 .ps-card__title {
   margin-top: var(--psLayoutSpacingExtraSmall);
   font-weight: var(--psTypeFontWeightMedium);
+  overflow: hidden;
 }
 .ps-card--small .ps-card__title {
   font-size: var(--psTypeFontSizeExtraSmall);
   line-height: var(--psTypeLineHeightTight);
+  max-height: calc(2 * var(--psTypeLineHeightTight));
 }
 .ps-card--medium .ps-card__title {
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightTight);
+  max-height: calc(2 * var(--psTypeLineHeightTight));
 }
 .ps-card--large .ps-card__title {
   font-size: var(--psTypeFontSizeMedium);
   line-height: var(--psTypeLineHeightStandard);
+  max-height: calc(2 * var(--psTypeLineHeightStandard));
 }
 
 .ps-card__metadata {

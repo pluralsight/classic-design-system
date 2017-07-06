@@ -19,6 +19,7 @@
     "@pluralsight/ps-design-system-core": "^1.6.5",
     "classnames": "^2.2.5",
     "prop-types": "^15.5.10",
-    "react-styleable": "^3.0.0"
+    "react-styleable": "^3.0.0",
+    "shiitake": "^2.1.1"
   }
 }

@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import styleable from 'react-styleable'
 import React from 'react'
+import Shiitake from 'shiitake'
 
 import css from '../css/index.module.css'
 
@@ -56,6 +57,11 @@ const renderProgress = props =>
       </div>
     : null
 
+const renderTitle = props =>
+  <Shiitake lines={2} className={props.css['ps-card__title']}>
+    {props.title}
+  </Shiitake>
+
 const renderMetaData = (props, metadata) =>
   metadata
     ? <div className={props.css['ps-card__metadata']}>
@@ -74,7 +80,7 @@ export const Card = props => {
         {renderImage(props)}
       </div>
       {renderProgress(props)}
-      <div className={props.css['ps-card__title']}>{props.title}</div>
+      {renderTitle(props)}
       {renderMetaData(props, props.metadata1)}
       {renderMetaData(props, props.metadata2)}
     </div>
