@@ -20,7 +20,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  outline: 1px solid green;
+  background-color: var(--psColorsBlack);
 }
 .ps-card--small .ps-card__image-frame {
   height: 96px;

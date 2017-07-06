@@ -2869,7 +2869,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  outline: 1px solid green;
+  background-color: var(--psColorsBlack);
 }
 .ps-card--small___3gxtm .ps-card__image-frame___1ocA2 {
   height: 96px;
