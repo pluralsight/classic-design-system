@@ -28830,19 +28830,19 @@ object-assign
 
         var percent = function percent(num) {
           try {
-            return parseFloat(num) * 100 + '%'
+            return parseFloat(num).toFixed() + '%'
           } catch (_) {
             return '0%'
           }
         }
 
-        // TODO: a11y
         var renderProgress = function renderProgress(props) {
           return props.progress
             ? _react2.default.createElement(
                 'div',
                 { className: props.css['ps-card__progress'] },
                 _react2.default.createElement('div', {
+                  'aria-label': percent(props.progress) + ' complete',
                   className: props.css['ps-card__progress__bar'],
                   style: { width: percent(props.progress) }
                 })
@@ -31297,9 +31297,9 @@ object-assign
               component: defaultCard,
               name: 'Card',
               permutations: [
-                { progress: 0.25 },
-                { progress: 0.66 },
-                { progress: 1 }
+                { progress: 25 },
+                { progress: 66.666667 },
+                { progress: 100 }
               ]
             }),
             _react2.default.createElement(

@@ -40,17 +40,17 @@ const renderImage = props =>
 
 const percent = num => {
   try {
-    return parseFloat(num) * 100 + '%'
+    return parseFloat(num).toFixed() + '%'
   } catch (_) {
     return '0%'
   }
 }
 
-// TODO: a11y
 const renderProgress = props =>
   props.progress
     ? <div className={props.css['ps-card__progress']}>
         <div
+          aria-label={`${percent(props.progress)} complete`}
           className={props.css['ps-card__progress__bar']}
           style={{ width: percent(props.progress) }}
         />

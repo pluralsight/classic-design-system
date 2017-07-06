@@ -40,7 +40,11 @@ export default _ =>
     <Example.React
       component={defaultCard}
       name="Card"
-      permutations={[{ progress: 0.25 }, { progress: 0.66 }, { progress: 1 }]}
+      permutations={[
+        { progress: 25 },
+        { progress: 66.666667 },
+        { progress: 100 }
+      ]}
     />
 
     <Heading size="large"><h2>Card metadata</h2></Heading>
