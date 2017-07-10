@@ -94,6 +94,13 @@ export default _ =>
             <Button appearance="flat" icon={<Icon id="bookmark" />} />,
             <Button appearance="flat" icon={<Icon id="more" />} />
           ]
+        },
+        {
+          actionBar: [
+            <Button appearance="flat" icon={<Icon id="bookmark" />} />,
+            <Button appearance="flat" icon={<Icon id="more" />} />
+          ],
+          actionBarVisible: true
         }
       ]}
     />
@@ -134,6 +141,10 @@ export default _ =>
           ],
           fullOverlay: <a>Custom Thing</a>,
           tag: [<Icon id="logo" />, <span>Course</span>]
+        },
+        {
+          fullOverlay: <div>Play</div>,
+          fullOverlayVisible: true
         }
       ]}
     />

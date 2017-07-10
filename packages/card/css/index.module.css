@@ -71,6 +71,7 @@
 .ps-card--full-overlay .ps-card__action-bar {
   background: none;
 }
+.ps-card--action-bar-visible .ps-card__action-bar,
 .ps-card__image-frame:hover .ps-card__action-bar,
 .ps-card__image-frame:active .ps-card__action-bar {
   opacity: 1;
@@ -90,6 +91,7 @@
   transition: opacity var(--psMotionSpeedNormal);
   opacity: 0;
 }
+.ps-card--full-overlay-visible .ps-card__full-overlay,
 .ps-card__image-frame:hover .ps-card__full-overlay,
 .ps-card__image-frame:active .ps-card__full-overlay {
   opacity: 1;

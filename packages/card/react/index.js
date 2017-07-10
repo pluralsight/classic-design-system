@@ -10,15 +10,19 @@ const getClassName = props =>
     [props.css['ps-card']]: true,
     [props.css['ps-card--' + props.size]]: props.size,
     [props.css['ps-card--full-overlay']]: props.fullOverlay,
+    [props.css['ps-card--action-bar-visible']]: props.actionBarVisible,
+    [props.css['ps-card--full-overlay-visible']]: props.fullOverlayVisible,
     [props.className]: props.className
   })
 
 const rmSystemProps = props => {
   const {
     actionBar,
+    actionBarVisible,
     bonusBar,
     css,
     fullOverlay,
+    fullOverlayVisible,
     image,
     metadata1,
     metadata2,
@@ -163,8 +167,10 @@ export const Card = props => {
 import PropTypes from 'prop-types'
 Card.propTypes = {
   actionBar: PropTypes.arrayOf(PropTypes.node),
+  actionBarVisible: PropTypes.bool,
   bonusBar: PropTypes.node,
   fullOverlay: PropTypes.element,
+  fullOverlayVisible: PropTypes.bool,
   image: PropTypes.element.isRequired,
   metadata1: PropTypes.arrayOf(PropTypes.node),
   metadata2: PropTypes.arrayOf(PropTypes.node),
@@ -174,6 +180,8 @@ Card.propTypes = {
   size: PropTypes.oneOf(['small', 'medium', 'large'])
 }
 Card.defaultProps = {
+  actionBarVisible: false,
+  fullOverlayVisible: false,
   size: 'medium'
 }
 

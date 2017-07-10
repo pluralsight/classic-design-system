@@ -2916,6 +2916,7 @@
 .ps-card--full-overlay___14Isw .ps-card__action-bar___2d3QI {
   background: none;
 }
+.ps-card--action-bar-visible___1BAxp .ps-card__action-bar___2d3QI,
 .ps-card__image-frame___1ocA2:hover .ps-card__action-bar___2d3QI,
 .ps-card__image-frame___1ocA2:active .ps-card__action-bar___2d3QI {
   opacity: 1;
@@ -2934,6 +2935,7 @@
   transition: opacity var(--psMotionSpeedNormal);
   opacity: 0;
 }
+.ps-card--full-overlay-visible___3dcHV .ps-card__full-overlay___351f7,
 .ps-card__image-frame___1ocA2:hover .ps-card__full-overlay___351f7,
 .ps-card__image-frame___1ocA2:active .ps-card__full-overlay___351f7 {
   opacity: 1;

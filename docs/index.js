@@ -23960,14 +23960,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var getClassName = function getClassName(props) {
   var _classNames;
 
-  return (0, _classnames2.default)((_classNames = {}, _defineProperty(_classNames, props.css['ps-card'], true), _defineProperty(_classNames, props.css['ps-card--' + props.size], props.size), _defineProperty(_classNames, props.css['ps-card--full-overlay'], props.fullOverlay), _defineProperty(_classNames, props.className, props.className), _classNames));
+  return (0, _classnames2.default)((_classNames = {}, _defineProperty(_classNames, props.css['ps-card'], true), _defineProperty(_classNames, props.css['ps-card--' + props.size], props.size), _defineProperty(_classNames, props.css['ps-card--full-overlay'], props.fullOverlay), _defineProperty(_classNames, props.css['ps-card--action-bar-visible'], props.actionBarVisible), _defineProperty(_classNames, props.css['ps-card--full-overlay-visible'], props.fullOverlayVisible), _defineProperty(_classNames, props.className, props.className), _classNames));
 };
 
 var rmSystemProps = function rmSystemProps(props) {
   var actionBar = props.actionBar,
+      actionBarVisible = props.actionBarVisible,
       bonusBar = props.bonusBar,
       css = props.css,
       fullOverlay = props.fullOverlay,
+      fullOverlayVisible = props.fullOverlayVisible,
       image = props.image,
       metadata1 = props.metadata1,
       metadata2 = props.metadata2,
@@ -23975,7 +23977,7 @@ var rmSystemProps = function rmSystemProps(props) {
       size = props.size,
       tag = props.tag,
       title = props.title,
-      rest = _objectWithoutProperties(props, ['actionBar', 'bonusBar', 'css', 'fullOverlay', 'image', 'metadata1', 'metadata2', 'progress', 'size', 'tag', 'title']);
+      rest = _objectWithoutProperties(props, ['actionBar', 'actionBarVisible', 'bonusBar', 'css', 'fullOverlay', 'fullOverlayVisible', 'image', 'metadata1', 'metadata2', 'progress', 'size', 'tag', 'title']);
 
   return rest;
 };
@@ -24120,8 +24122,10 @@ var Card = exports.Card = function Card(props) {
 
 Card.propTypes = {
   actionBar: _propTypes2.default.arrayOf(_propTypes2.default.node),
+  actionBarVisible: _propTypes2.default.bool,
   bonusBar: _propTypes2.default.node,
   fullOverlay: _propTypes2.default.element,
+  fullOverlayVisible: _propTypes2.default.bool,
   image: _propTypes2.default.element.isRequired,
   metadata1: _propTypes2.default.arrayOf(_propTypes2.default.node),
   metadata2: _propTypes2.default.arrayOf(_propTypes2.default.node),
@@ -24131,6 +24135,8 @@ Card.propTypes = {
   size: _propTypes2.default.oneOf(['small', 'medium', 'large'])
 };
 Card.defaultProps = {
+  actionBarVisible: false,
+  fullOverlayVisible: false,
   size: 'medium'
 };
 
@@ -25986,6 +25992,9 @@ exports.default = function (_) {
         actionBar: [_react6.default.createElement(_react2.default, { appearance: 'flat', icon: _react6.default.createElement(_react4.default, { id: 'bookmark' }) })]
       }, {
         actionBar: [_react6.default.createElement(_react2.default, { appearance: 'flat', icon: _react6.default.createElement(_react4.default, { id: 'bookmark' }) }), _react6.default.createElement(_react2.default, { appearance: 'flat', icon: _react6.default.createElement(_react4.default, { id: 'more' }) })]
+      }, {
+        actionBar: [_react6.default.createElement(_react2.default, { appearance: 'flat', icon: _react6.default.createElement(_react4.default, { id: 'bookmark' }) }), _react6.default.createElement(_react2.default, { appearance: 'flat', icon: _react6.default.createElement(_react4.default, { id: 'more' }) })],
+        actionBarVisible: true
       }]
     }),
     _react6.default.createElement(
@@ -26051,6 +26060,13 @@ exports.default = function (_) {
           null,
           'Course'
         )]
+      }, {
+        fullOverlay: _react6.default.createElement(
+          'div',
+          null,
+          'Play'
+        ),
+        fullOverlayVisible: true
       }]
     }),
     _react6.default.createElement(
@@ -31490,7 +31506,7 @@ module.exports = {"ps-button":"ps-button___2EFfR","ps-button--tiny":"ps-button--
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"ps-card":"ps-card___2zSSP","ps-card--small":"ps-card--small___3gxtm","ps-card--medium":"ps-card--medium___5eDWG","ps-card--large":"ps-card--large___xbvHu","ps-icon__fg--fill":"ps-icon__fg--fill___1Nbfk","ps-icon__fg--stroke":"ps-icon__fg--stroke___2deYS","ps-card__image-frame":"ps-card__image-frame___1ocA2","ps-card__image":"ps-card__image___2MmCd","ps-card__action-bar":"ps-card__action-bar___2d3QI","ps-card--full-overlay":"ps-card--full-overlay___14Isw","ps-card__full-overlay":"ps-card__full-overlay___351f7","ps-card__tag":"ps-card__tag___aRZAY","ps-card__tag__part":"ps-card__tag__part___1rjkA","ps-card__tag__part--icon":"ps-card__tag__part--icon___4cg9Q","ps-card__bonus-bar":"ps-card__bonus-bar___1g5FL","ps-card__progress":"ps-card__progress___3pVLT","ps-card__progress__bar":"ps-card__progress__bar___41-QK","ps-card__title":"ps-card__title___CCHuG","ps-card__metadata":"ps-card__metadata___3YV1n","ps-card__metadata__datum":"ps-card__metadata__datum___-Ixrv","ps-card__metadata__dot":"ps-card__metadata__dot___1c4pP"};
+module.exports = {"ps-card":"ps-card___2zSSP","ps-card--small":"ps-card--small___3gxtm","ps-card--medium":"ps-card--medium___5eDWG","ps-card--large":"ps-card--large___xbvHu","ps-icon__fg--fill":"ps-icon__fg--fill___1Nbfk","ps-icon__fg--stroke":"ps-icon__fg--stroke___2deYS","ps-card__image-frame":"ps-card__image-frame___1ocA2","ps-card__image":"ps-card__image___2MmCd","ps-card__action-bar":"ps-card__action-bar___2d3QI","ps-card--full-overlay":"ps-card--full-overlay___14Isw","ps-card--action-bar-visible":"ps-card--action-bar-visible___1BAxp","ps-card__full-overlay":"ps-card__full-overlay___351f7","ps-card--full-overlay-visible":"ps-card--full-overlay-visible___3dcHV","ps-card__tag":"ps-card__tag___aRZAY","ps-card__tag__part":"ps-card__tag__part___1rjkA","ps-card__tag__part--icon":"ps-card__tag__part--icon___4cg9Q","ps-card__bonus-bar":"ps-card__bonus-bar___1g5FL","ps-card__progress":"ps-card__progress___3pVLT","ps-card__progress__bar":"ps-card__progress__bar___41-QK","ps-card__title":"ps-card__title___CCHuG","ps-card__metadata":"ps-card__metadata___3YV1n","ps-card__metadata__datum":"ps-card__metadata__datum___-Ixrv","ps-card__metadata__dot":"ps-card__metadata__dot___1c4pP"};
 
 /***/ }),
 /* 303 */
