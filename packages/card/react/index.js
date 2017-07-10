@@ -16,6 +16,7 @@ const rmSystemProps = props => {
   const {
     actionBar,
     css,
+    fullOverlay,
     image,
     metadata1,
     metadata2,
@@ -101,21 +102,26 @@ const renderActionBar = props =>
       </div>
     : null
 
+const isNativeElement = el => el && typeof el.type === 'string'
+
 const renderTag = props =>
   props.tag
     ? <div className={props.css['ps-card__tag']}>
         {React.Children.map(props.tag, (part, i) => {
-          return React.cloneElement(part, {
-            css: {
-              'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
-              'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
-            },
+          const elProps = {
             className: classNames({
               [part.props.className]: part.props.className,
               [props.css['ps-card__tag__part']]: true
             }),
             key: i
-          })
+          }
+          if (!isNativeElement(part))
+            elProps.css = {
+              'ps-icon': props.css['ps-card__tag__part--icon'],
+              'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
+              'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
+            }
+          return React.cloneElement(part, elProps)
         })}
       </div>
     : null

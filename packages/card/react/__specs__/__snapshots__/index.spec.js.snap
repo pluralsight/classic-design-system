@@ -3,11 +3,6 @@
 exports[`renders fullOverlay 1`] = `
 <div
   className="ps-card ps-card--medium"
-  fullOverlay={
-    <div>
-      FakePlayBtn
-    </div>
-  }
 >
   <div
     className="ps-card__image-frame"
@@ -225,23 +220,11 @@ exports[`renders tag 1`] = `
     >
       <div
         className="ps-card__tag__part"
-        css={
-          Object {
-            "ps-icon__fg--fill": "ps-icon__fg--fill",
-            "ps-icon__fg--stroke": "ps-icon__fg--stroke",
-          }
-        }
       >
         FakeSVG
       </div>
       <span
         className="ps-card__tag__part"
-        css={
-          Object {
-            "ps-icon__fg--fill": "ps-icon__fg--fill",
-            "ps-icon__fg--stroke": "ps-icon__fg--stroke",
-          }
-        }
       >
         Course
       </span>
