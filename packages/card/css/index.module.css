@@ -15,6 +15,16 @@
   max-width: 640px;
 }
 
+/* child icons */
+.ps-card .ps-icon__fg--fill {
+  fill: var(--psColorsWhite);
+  transition: all var(--psMotionSpeedNormal);
+}
+.ps-card .ps-icon__fg--stroke {
+  stroke: var(--psColorsWhite);
+  transition: all var(--psMotionSpeedNormal);
+}
+
 .ps-card__image-frame {
   position: relative;
   display: flex;
@@ -61,13 +71,26 @@
 .ps-card__image-frame:hover .ps-card__action-bar {
   opacity: 1;
 }
-.ps-card__action-bar .ps-icon__fg--fill {
-  fill: var(--psColorsWhite);
-  transition: all var(--psMotionSpeedNormal);
+
+.ps-card__tag {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: var(--psLayoutSpacingSmall);
+  left: 0;
+  min-width: 118px;
+  padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingExtraSmall);
+  background: var(--psColorsGray04);
 }
-.ps-card__action-bar .ps-icon__fg--stroke {
-  stroke: var(--psColorsWhite);
-  transition: all var(--psMotionSpeedNormal);
+.ps-card__tag__part {
+  color: var(--psColorsWhite);
+  text-transform: uppercase;
+  font-size: var(--psTypeFontSizeExtraSmall);
+  line-height: var(--psTypeLineHeightTight);
+}
+.ps-card__tag__part + .ps-card__tag__part {
+  margin-left: var(--psLayoutSpacingExtraSmall);
 }
 
 .ps-card__progress {

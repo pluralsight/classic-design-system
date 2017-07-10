@@ -56,7 +56,8 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "\\.css$": "identity-obj-proxy"
+      "\\.css$": "identity-obj-proxy",
+      "\\.svg$": "<rootDir>/test/__mocks__/svg-mock.js"
     },
     "testRegex": "packages/.*(/__tests__/.*|(\\.|/)(test|spec))\\.jsx?$",
     "transformIgnorePatterns": [

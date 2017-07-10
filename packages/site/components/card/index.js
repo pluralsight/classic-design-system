@@ -15,30 +15,32 @@ const defaultCard = (
 
 export default _ =>
   <div>
-    <Heading size="xx-large"><h1>Card</h1></Heading>
+    <Heading size="xx-large">
+      <h1>Card</h1>
+    </Heading>
 
-    <P>
-      Install the component dependency:
-    </P>
+    <P>Install the component dependency:</P>
     <Code language="bash">
       npm install @pluralsight/ps-design-system-card --save-dev
     </Code>
 
-    <P>
-      Include a React component in your project:
-    </P>
+    <P>Include a React component in your project:</P>
     <Code language="javascript">
       import Card from '@pluralsight/ps-design-system-card/react'
     </Code>
 
-    <Heading size="large"><h2>Size</h2></Heading>
+    <Heading size="large">
+      <h2>Size</h2>
+    </Heading>
     <Example.React
       component={defaultCard}
       name="Card"
       permutations={[{ size: 'large' }, { size: 'medium' }, { size: 'small' }]}
     />
 
-    <Heading size="large"><h2>Progress</h2></Heading>
+    <Heading size="large">
+      <h2>Progress</h2>
+    </Heading>
     <Example.React
       component={defaultCard}
       name="Card"
@@ -49,7 +51,9 @@ export default _ =>
       ]}
     />
 
-    <Heading size="large"><h2>Metadata</h2></Heading>
+    <Heading size="large">
+      <h2>Metadata</h2>
+    </Heading>
     <Example.React
       component={defaultCard}
       name="Card"
@@ -73,7 +77,9 @@ export default _ =>
       ]}
     />
 
-    <Heading size="large"><h2>Actions</h2></Heading>
+    <Heading size="large">
+      <h2>Actions</h2>
+    </Heading>
     <Example.React
       component={defaultCard}
       name="Card"
@@ -86,6 +92,19 @@ export default _ =>
             <Button appearance="flat" icon={<Icon id="bookmark" />} />,
             <Button appearance="flat" icon={<Icon id="more" />} />
           ]
+        }
+      ]}
+    />
+
+    <Heading size="large">
+      <h2>Tag</h2>
+    </Heading>
+    <Example.React
+      component={defaultCard}
+      name="Card"
+      permutations={[
+        {
+          tag: [<Icon id="logo" />, <span>Course</span>]
         }
       ]}
     />

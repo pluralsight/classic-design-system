@@ -21,12 +21,14 @@ const rmSystemProps = props => {
     metadata2,
     progress,
     size,
+    tag,
     title,
     ...rest
   } = props
   return rest
 }
 
+// TODO: use className instead
 const formatImageClassName = props =>
   props.image.props.className
     ? `${props.image.props.className} ${props.css['ps-card__image']}`
@@ -99,12 +101,28 @@ const renderActionBar = props =>
       </div>
     : null
 
+const renderTag = props =>
+  props.tag
+    ? <div className={props.css['ps-card__tag']}>
+        {React.Children.map(props.tag, (part, i) => {
+          return React.cloneElement(part, {
+            className: classNames({
+              [part.props.className]: part.props.className,
+              [props.css['ps-card__tag__part']]: true
+            }),
+            key: i
+          })
+        })}
+      </div>
+    : null
+
 export const Card = props => {
   return (
     <div {...rmSystemProps(props)} className={getClassName(props)}>
       <div className={props.css['ps-card__image-frame']}>
         {renderImage(props)}
         {renderActionBar(props)}
+        {renderTag(props)}
       </div>
       {renderProgress(props)}
       {renderTitle(props)}
@@ -121,6 +139,7 @@ Card.propTypes = {
   metadata1: PropTypes.arrayOf(PropTypes.node),
   metadata2: PropTypes.arrayOf(PropTypes.node),
   progress: PropTypes.number,
+  tag: PropTypes.arrayOf(PropTypes.element),
   title: PropTypes.node.isRequired,
   size: PropTypes.oneOf(['small', 'medium', 'large'])
 }
