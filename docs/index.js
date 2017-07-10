@@ -24061,7 +24061,7 @@ var isNativeElement = function isNativeElement(el) {
 };
 
 var renderTag = function renderTag(props) {
-  return props.tag ? _react2.default.createElement(
+  return props.tag && props.size !== 'small' ? _react2.default.createElement(
     'div',
     { className: props.css['ps-card__tag'] },
     _react2.default.Children.map(props.tag, function (part, i) {
@@ -26000,6 +26000,13 @@ exports.default = function (_) {
           'span',
           null,
           'Channel'
+        )]
+      }, {
+        size: 'small',
+        tag: [_react6.default.createElement(_react4.default, { id: 'logo' }), _react6.default.createElement(
+          'span',
+          null,
+          'Course'
         )]
       }]
     }),

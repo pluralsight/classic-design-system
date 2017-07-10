@@ -110,6 +110,10 @@ export default _ =>
         },
         {
           tag: [<span>Channel</span>]
+        },
+        {
+          size: 'small',
+          tag: [<Icon id="logo" />, <span>Course</span>]
         }
       ]}
     />

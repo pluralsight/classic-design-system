@@ -106,7 +106,7 @@ const renderActionBar = props =>
 const isNativeElement = el => el && typeof el.type === 'string'
 
 const renderTag = props =>
-  props.tag
+  props.tag && props.size !== 'small'
     ? <div className={props.css['ps-card__tag']}>
         {React.Children.map(props.tag, (part, i) => {
           const elProps = {

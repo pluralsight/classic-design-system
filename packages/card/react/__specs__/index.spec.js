@@ -20,6 +20,21 @@ test('renders tag', () => {
   ).toMatchSnapshot()
 })
 
+test('renders no tag if size is small', () => {
+  const tag = [<div>FakeSVG</div>, <span>Course</span>]
+  expect(
+    renderer.create(
+      <Card
+        css={identity}
+        image={<div />}
+        title="The card title"
+        size="small"
+        tag={tag}
+      />
+    )
+  ).toMatchSnapshot()
+})
+
 test('renders fullOverlay', () => {
   expect(
     renderer.create(
