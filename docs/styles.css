@@ -2913,8 +2913,12 @@
   transition: opacity var(--psMotionSpeedNormal);
   opacity: 0;
 }
-.ps-card__image-frame___1ocA2:hover .ps-card__action-bar___2d3QI {
+.ps-card__image-frame___1ocA2:hover .ps-card__action-bar___2d3QI,
+.ps-card__image-frame___1ocA2:active .ps-card__action-bar___2d3QI {
   opacity: 1;
+}
+.ps-card--full-overlay___14Isw .ps-card__action-bar___2d3QI {
+  background: none;
 }
 .ps-card__full-overlay___351f7 {
   display: flex;
@@ -2925,7 +2929,16 @@
   left: 0;
   height: 100%;
   width: 100%;
+  /* TODO: update postcss to make styleguide psColorsBlack (hex) available here */
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity var(--psMotionSpeedNormal);
+  opacity: 0;
 }
+.ps-card__image-frame___1ocA2:hover .ps-card__full-overlay___351f7,
+.ps-card__image-frame___1ocA2:active .ps-card__full-overlay___351f7 {
+  opacity: 1;
+}
+/* TODO: hide if small */
 .ps-card__tag___aRZAY {
   display: flex;
   justify-content: flex-start;

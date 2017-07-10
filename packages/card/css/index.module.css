@@ -68,8 +68,12 @@
   transition: opacity var(--psMotionSpeedNormal);
   opacity: 0;
 }
-.ps-card__image-frame:hover .ps-card__action-bar {
+.ps-card__image-frame:hover .ps-card__action-bar,
+.ps-card__image-frame:active .ps-card__action-bar {
   opacity: 1;
+}
+.ps-card--full-overlay .ps-card__action-bar {
+  background: none;
 }
 
 .ps-card__full-overlay {
@@ -81,8 +85,17 @@
   left: 0;
   height: 100%;
   width: 100%;
+  /* TODO: update postcss to make styleguide psColorsBlack (hex) available here */
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity var(--psMotionSpeedNormal);
+  opacity: 0;
+}
+.ps-card__image-frame:hover .ps-card__full-overlay,
+.ps-card__image-frame:active .ps-card__full-overlay {
+  opacity: 1;
 }
 
+/* TODO: hide if small */
 .ps-card__tag {
   display: flex;
   justify-content: flex-start;

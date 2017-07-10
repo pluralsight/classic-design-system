@@ -23960,7 +23960,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var getClassName = function getClassName(props) {
   var _classNames;
 
-  return (0, _classnames2.default)((_classNames = {}, _defineProperty(_classNames, props.css['ps-card'], true), _defineProperty(_classNames, props.css['ps-card--' + props.size], props.size), _defineProperty(_classNames, props.className, props.className), _classNames));
+  return (0, _classnames2.default)((_classNames = {}, _defineProperty(_classNames, props.css['ps-card'], true), _defineProperty(_classNames, props.css['ps-card--' + props.size], props.size), _defineProperty(_classNames, props.css['ps-card--full-overlay'], props.fullOverlay), _defineProperty(_classNames, props.className, props.className), _classNames));
 };
 
 var rmSystemProps = function rmSystemProps(props) {
@@ -24097,8 +24097,8 @@ var Card = exports.Card = function Card(props) {
       'div',
       { className: props.css['ps-card__image-frame'] },
       renderImage(props),
-      renderActionBar(props),
       renderFullOverlay(props),
+      renderActionBar(props),
       renderTag(props)
     ),
     renderProgress(props),
@@ -25995,6 +25995,12 @@ exports.default = function (_) {
           null,
           'Course'
         )]
+      }, {
+        tag: [_react6.default.createElement(
+          'span',
+          null,
+          'Channel'
+        )]
       }]
     }),
     _react6.default.createElement(
@@ -26015,6 +26021,18 @@ exports.default = function (_) {
           null,
           'Play'
         )
+      }, {
+        actionBar: [_react6.default.createElement(_react2.default, { appearance: 'flat', icon: _react6.default.createElement(_react4.default, { id: 'bookmark' }) })],
+        fullOverlay: _react6.default.createElement(
+          'a',
+          null,
+          'Custom Thing'
+        ),
+        tag: [_react6.default.createElement(_react4.default, { id: 'logo' }), _react6.default.createElement(
+          'span',
+          null,
+          'Course'
+        )]
       }]
     })
   );
@@ -31434,7 +31452,7 @@ module.exports = {"ps-button":"ps-button___2EFfR","ps-button--tiny":"ps-button--
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"ps-card":"ps-card___2zSSP","ps-card--small":"ps-card--small___3gxtm","ps-card--medium":"ps-card--medium___5eDWG","ps-card--large":"ps-card--large___xbvHu","ps-icon__fg--fill":"ps-icon__fg--fill___1Nbfk","ps-icon__fg--stroke":"ps-icon__fg--stroke___2deYS","ps-card__image-frame":"ps-card__image-frame___1ocA2","ps-card__image":"ps-card__image___2MmCd","ps-card__action-bar":"ps-card__action-bar___2d3QI","ps-card__full-overlay":"ps-card__full-overlay___351f7","ps-card__tag":"ps-card__tag___aRZAY","ps-card__tag__part":"ps-card__tag__part___1rjkA","ps-card__tag__part--icon":"ps-card__tag__part--icon___4cg9Q","ps-card__progress":"ps-card__progress___3pVLT","ps-card__progress__bar":"ps-card__progress__bar___41-QK","ps-card__title":"ps-card__title___CCHuG","ps-card__metadata":"ps-card__metadata___3YV1n","ps-card__metadata__datum":"ps-card__metadata__datum___-Ixrv","ps-card__metadata__dot":"ps-card__metadata__dot___1c4pP"};
+module.exports = {"ps-card":"ps-card___2zSSP","ps-card--small":"ps-card--small___3gxtm","ps-card--medium":"ps-card--medium___5eDWG","ps-card--large":"ps-card--large___xbvHu","ps-icon__fg--fill":"ps-icon__fg--fill___1Nbfk","ps-icon__fg--stroke":"ps-icon__fg--stroke___2deYS","ps-card__image-frame":"ps-card__image-frame___1ocA2","ps-card__image":"ps-card__image___2MmCd","ps-card__action-bar":"ps-card__action-bar___2d3QI","ps-card--full-overlay":"ps-card--full-overlay___14Isw","ps-card__full-overlay":"ps-card__full-overlay___351f7","ps-card__tag":"ps-card__tag___aRZAY","ps-card__tag__part":"ps-card__tag__part___1rjkA","ps-card__tag__part--icon":"ps-card__tag__part--icon___4cg9Q","ps-card__progress":"ps-card__progress___3pVLT","ps-card__progress__bar":"ps-card__progress__bar___41-QK","ps-card__title":"ps-card__title___CCHuG","ps-card__metadata":"ps-card__metadata___3YV1n","ps-card__metadata__datum":"ps-card__metadata__datum___-Ixrv","ps-card__metadata__dot":"ps-card__metadata__dot___1c4pP"};
 
 /***/ }),
 /* 303 */

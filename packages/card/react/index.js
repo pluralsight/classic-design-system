@@ -9,6 +9,7 @@ const getClassName = props =>
   classNames({
     [props.css['ps-card']]: true,
     [props.css['ps-card--' + props.size]]: props.size,
+    [props.css['ps-card--full-overlay']]: props.fullOverlay,
     [props.className]: props.className
   })
 
@@ -138,8 +139,8 @@ export const Card = props => {
     <div {...rmSystemProps(props)} className={getClassName(props)}>
       <div className={props.css['ps-card__image-frame']}>
         {renderImage(props)}
-        {renderActionBar(props)}
         {renderFullOverlay(props)}
+        {renderActionBar(props)}
         {renderTag(props)}
       </div>
       {renderProgress(props)}

@@ -107,6 +107,9 @@ export default _ =>
       permutations={[
         {
           tag: [<Icon id="logo" />, <span>Course</span>]
+        },
+        {
+          tag: [<span>Channel</span>]
         }
       ]}
     />
@@ -120,6 +123,13 @@ export default _ =>
       permutations={[
         {
           fullOverlay: <div>Play</div>
+        },
+        {
+          actionBar: [
+            <Button appearance="flat" icon={<Icon id="bookmark" />} />
+          ],
+          fullOverlay: <a>Custom Thing</a>,
+          tag: [<Icon id="logo" />, <span>Course</span>]
         }
       ]}
     />
