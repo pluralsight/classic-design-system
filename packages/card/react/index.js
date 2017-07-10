@@ -16,6 +16,7 @@ const getClassName = props =>
 const rmSystemProps = props => {
   const {
     actionBar,
+    bonusBar,
     css,
     fullOverlay,
     image,
@@ -134,6 +135,13 @@ const renderFullOverlay = props =>
       </div>
     : null
 
+const renderBonusBar = props =>
+  props.bonusBar
+    ? <div className={props.css['ps-card__bonus-bar']}>
+        {props.bonusBar}
+      </div>
+    : null
+
 export const Card = props => {
   return (
     <div {...rmSystemProps(props)} className={getClassName(props)}>
@@ -141,6 +149,7 @@ export const Card = props => {
         {renderImage(props)}
         {renderFullOverlay(props)}
         {renderActionBar(props)}
+        {renderBonusBar(props)}
         {renderTag(props)}
       </div>
       {renderProgress(props)}
@@ -154,6 +163,7 @@ export const Card = props => {
 import PropTypes from 'prop-types'
 Card.propTypes = {
   actionBar: PropTypes.arrayOf(PropTypes.node),
+  bonusBar: PropTypes.node,
   fullOverlay: PropTypes.element,
   image: PropTypes.element.isRequired,
   metadata1: PropTypes.arrayOf(PropTypes.node),

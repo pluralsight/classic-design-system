@@ -47,3 +47,16 @@ test('renders fullOverlay', () => {
     )
   ).toMatchSnapshot()
 })
+
+test('renders bonusBar', () => {
+  expect(
+    renderer.create(
+      <Card
+        css={identity}
+        image={<div />}
+        title="The card title"
+        bonusBar={<div>Anything</div>}
+      />
+    )
+  ).toMatchSnapshot()
+})

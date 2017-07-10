@@ -2961,6 +2961,11 @@
   height: 16px;
   width: 16px;
 }
+.ps-card__bonus-bar___1g5FL {
+  position: absolute;
+  bottom: var(--psLayoutSpacingSmall);
+  left: var(--psLayoutSpacingSmall);
+}
 .ps-card__progress___3pVLT {
   position: relative;
   width: 100%;

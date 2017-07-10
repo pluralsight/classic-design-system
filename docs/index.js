@@ -23965,6 +23965,7 @@ var getClassName = function getClassName(props) {
 
 var rmSystemProps = function rmSystemProps(props) {
   var actionBar = props.actionBar,
+      bonusBar = props.bonusBar,
       css = props.css,
       fullOverlay = props.fullOverlay,
       image = props.image,
@@ -23974,7 +23975,7 @@ var rmSystemProps = function rmSystemProps(props) {
       size = props.size,
       tag = props.tag,
       title = props.title,
-      rest = _objectWithoutProperties(props, ['actionBar', 'css', 'fullOverlay', 'image', 'metadata1', 'metadata2', 'progress', 'size', 'tag', 'title']);
+      rest = _objectWithoutProperties(props, ['actionBar', 'bonusBar', 'css', 'fullOverlay', 'image', 'metadata1', 'metadata2', 'progress', 'size', 'tag', 'title']);
 
   return rest;
 };
@@ -24089,6 +24090,14 @@ var renderFullOverlay = function renderFullOverlay(props) {
   ) : null;
 };
 
+var renderBonusBar = function renderBonusBar(props) {
+  return props.bonusBar ? _react2.default.createElement(
+    'div',
+    { className: props.css['ps-card__bonus-bar'] },
+    props.bonusBar
+  ) : null;
+};
+
 var Card = exports.Card = function Card(props) {
   return _react2.default.createElement(
     'div',
@@ -24099,6 +24108,7 @@ var Card = exports.Card = function Card(props) {
       renderImage(props),
       renderFullOverlay(props),
       renderActionBar(props),
+      renderBonusBar(props),
       renderTag(props)
     ),
     renderProgress(props),
@@ -24110,6 +24120,7 @@ var Card = exports.Card = function Card(props) {
 
 Card.propTypes = {
   actionBar: _propTypes2.default.arrayOf(_propTypes2.default.node),
+  bonusBar: _propTypes2.default.node,
   fullOverlay: _propTypes2.default.element,
   image: _propTypes2.default.element.isRequired,
   metadata1: _propTypes2.default.arrayOf(_propTypes2.default.node),
@@ -26040,6 +26051,26 @@ exports.default = function (_) {
           null,
           'Course'
         )]
+      }]
+    }),
+    _react6.default.createElement(
+      _components.Heading,
+      { size: 'large' },
+      _react6.default.createElement(
+        'h2',
+        null,
+        'Bonus Bar'
+      )
+    ),
+    _react6.default.createElement(_components.Example.React, {
+      component: defaultCard,
+      name: 'Card',
+      permutations: [{
+        bonusBar: _react6.default.createElement(
+          'div',
+          null,
+          'Just bonus'
+        )
       }]
     })
   );
@@ -31459,7 +31490,7 @@ module.exports = {"ps-button":"ps-button___2EFfR","ps-button--tiny":"ps-button--
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"ps-card":"ps-card___2zSSP","ps-card--small":"ps-card--small___3gxtm","ps-card--medium":"ps-card--medium___5eDWG","ps-card--large":"ps-card--large___xbvHu","ps-icon__fg--fill":"ps-icon__fg--fill___1Nbfk","ps-icon__fg--stroke":"ps-icon__fg--stroke___2deYS","ps-card__image-frame":"ps-card__image-frame___1ocA2","ps-card__image":"ps-card__image___2MmCd","ps-card__action-bar":"ps-card__action-bar___2d3QI","ps-card--full-overlay":"ps-card--full-overlay___14Isw","ps-card__full-overlay":"ps-card__full-overlay___351f7","ps-card__tag":"ps-card__tag___aRZAY","ps-card__tag__part":"ps-card__tag__part___1rjkA","ps-card__tag__part--icon":"ps-card__tag__part--icon___4cg9Q","ps-card__progress":"ps-card__progress___3pVLT","ps-card__progress__bar":"ps-card__progress__bar___41-QK","ps-card__title":"ps-card__title___CCHuG","ps-card__metadata":"ps-card__metadata___3YV1n","ps-card__metadata__datum":"ps-card__metadata__datum___-Ixrv","ps-card__metadata__dot":"ps-card__metadata__dot___1c4pP"};
+module.exports = {"ps-card":"ps-card___2zSSP","ps-card--small":"ps-card--small___3gxtm","ps-card--medium":"ps-card--medium___5eDWG","ps-card--large":"ps-card--large___xbvHu","ps-icon__fg--fill":"ps-icon__fg--fill___1Nbfk","ps-icon__fg--stroke":"ps-icon__fg--stroke___2deYS","ps-card__image-frame":"ps-card__image-frame___1ocA2","ps-card__image":"ps-card__image___2MmCd","ps-card__action-bar":"ps-card__action-bar___2d3QI","ps-card--full-overlay":"ps-card--full-overlay___14Isw","ps-card__full-overlay":"ps-card__full-overlay___351f7","ps-card__tag":"ps-card__tag___aRZAY","ps-card__tag__part":"ps-card__tag__part___1rjkA","ps-card__tag__part--icon":"ps-card__tag__part--icon___4cg9Q","ps-card__bonus-bar":"ps-card__bonus-bar___1g5FL","ps-card__progress":"ps-card__progress___3pVLT","ps-card__progress__bar":"ps-card__progress__bar___41-QK","ps-card__title":"ps-card__title___CCHuG","ps-card__metadata":"ps-card__metadata___3YV1n","ps-card__metadata__datum":"ps-card__metadata__datum___-Ixrv","ps-card__metadata__dot":"ps-card__metadata__dot___1c4pP"};
 
 /***/ }),
 /* 303 */

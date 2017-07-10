@@ -119,6 +119,12 @@
   width: 16px;
 }
 
+.ps-card__bonus-bar {
+  position: absolute;
+  bottom: var(--psLayoutSpacingSmall);
+  left: var(--psLayoutSpacingSmall);
+}
+
 .ps-card__progress {
   position: relative;
   width: 100%;

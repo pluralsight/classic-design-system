@@ -137,4 +137,17 @@ export default _ =>
         }
       ]}
     />
+
+    <Heading size="large">
+      <h2>Bonus Bar</h2>
+    </Heading>
+    <Example.React
+      component={defaultCard}
+      name="Card"
+      permutations={[
+        {
+          bonusBar: <div>Just bonus</div>
+        }
+      ]}
+    />
   </div>
