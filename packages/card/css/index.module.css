@@ -72,6 +72,17 @@
   opacity: 1;
 }
 
+.ps-card__full-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .ps-card__tag {
   display: flex;
   justify-content: flex-start;

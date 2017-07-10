@@ -110,4 +110,17 @@ export default _ =>
         }
       ]}
     />
+
+    <Heading size="large">
+      <h2>Full Overlay</h2>
+    </Heading>
+    <Example.React
+      component={defaultCard}
+      name="Card"
+      permutations={[
+        {
+          fullOverlay: <div>Play</div>
+        }
+      ]}
+    />
   </div>

@@ -120,12 +120,20 @@ const renderTag = props =>
       </div>
     : null
 
+const renderFullOverlay = props =>
+  props.fullOverlay
+    ? <div className={props.css['ps-card__full-overlay']}>
+        {props.fullOverlay}
+      </div>
+    : null
+
 export const Card = props => {
   return (
     <div {...rmSystemProps(props)} className={getClassName(props)}>
       <div className={props.css['ps-card__image-frame']}>
         {renderImage(props)}
         {renderActionBar(props)}
+        {renderFullOverlay(props)}
         {renderTag(props)}
       </div>
       {renderProgress(props)}
@@ -139,6 +147,7 @@ export const Card = props => {
 import PropTypes from 'prop-types'
 Card.propTypes = {
   actionBar: PropTypes.arrayOf(PropTypes.node),
+  fullOverlay: PropTypes.element,
   image: PropTypes.element.isRequired,
   metadata1: PropTypes.arrayOf(PropTypes.node),
   metadata2: PropTypes.arrayOf(PropTypes.node),

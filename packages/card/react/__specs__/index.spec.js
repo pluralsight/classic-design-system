@@ -19,3 +19,16 @@ test('renders tag', () => {
     )
   ).toMatchSnapshot()
 })
+
+test('renders fullOverlay', () => {
+  expect(
+    renderer.create(
+      <Card
+        css={identity}
+        image={<div />}
+        title="The card title"
+        fullOverlay={<div>FakePlayBtn</div>}
+      />
+    )
+  ).toMatchSnapshot()
+})

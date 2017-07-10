@@ -2916,6 +2916,16 @@
 .ps-card__image-frame___1ocA2:hover .ps-card__action-bar___2d3QI {
   opacity: 1;
 }
+.ps-card__full-overlay___351f7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
 .ps-card__tag___aRZAY {
   display: flex;
   justify-content: flex-start;
