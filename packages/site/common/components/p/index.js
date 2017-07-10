@@ -4,6 +4,13 @@ import styleable from 'react-styleable'
 
 import css from './index.module.css'
 
+const rmSystemProps = props => {
+  const { css, ...rest } = props
+  return rest
+}
+
 export default styleable(css)(props =>
-  <P {...props} className={props.css.root}>{props.children}</P>
+  <P {...rmSystemProps(props)} className={props.css.root}>
+    {props.children}
+  </P>
 )
