@@ -6,13 +6,16 @@
 
 /* size */
 .ps-card--small {
-  max-width: 140px;
+  min-width: 120px;
+  max-width: 240px;
 }
 .ps-card--medium {
-  max-width: 320px;
+  min-width: 240px;
+  max-width: 440;
 }
 .ps-card--large {
-  max-width: 640px;
+  min-width: 440px;
+  max-width: 680px;
 }
 
 /* child icons */
