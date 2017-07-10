@@ -109,6 +109,32 @@ exports[`renders tag 1`] = `
     <div
       className="ps-card__image"
     />
+    <div
+      className="ps-card__tag"
+    >
+      <div
+        className="ps-card__tag__part"
+        css={
+          Object {
+            "ps-icon__fg--fill": "ps-icon__fg--fill",
+            "ps-icon__fg--stroke": "ps-icon__fg--stroke",
+          }
+        }
+      >
+        FakeSVG
+      </div>
+      <span
+        className="ps-card__tag__part"
+        css={
+          Object {
+            "ps-icon__fg--fill": "ps-icon__fg--fill",
+            "ps-icon__fg--stroke": "ps-icon__fg--stroke",
+          }
+        }
+      >
+        Course
+      </span>
+    </div>
   </div>
   <div
     className="ps-card__title"
