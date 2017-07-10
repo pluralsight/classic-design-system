@@ -2933,18 +2933,21 @@
   position: absolute;
   top: var(--psLayoutSpacingSmall);
   left: 0;
-  min-width: 118px;
   padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingExtraSmall);
   background: var(--psColorsGray04);
 }
 .ps-card__tag__part___1rjkA {
   color: var(--psColorsWhite);
   text-transform: uppercase;
-  font-size: var(--psTypeFontSizeExtraSmall);
-  line-height: var(--psTypeLineHeightTight);
+  font-size: 10px;
+  line-height: 16px;
 }
 .ps-card__tag__part___1rjkA + .ps-card__tag__part___1rjkA {
   margin-left: var(--psLayoutSpacingExtraSmall);
+}
+.ps-card__tag__part--icon___4cg9Q {
+  height: 16px;
+  width: 16px;
 }
 .ps-card__progress___3pVLT {
   position: relative;

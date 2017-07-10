@@ -21219,29 +21219,29 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 exports.default = styleable;
 
-var _getDisplayName = __webpack_require__(197);
-
-var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
-
 var _invariant = __webpack_require__(191);
 
 var _invariant2 = _interopRequireDefault(_invariant);
+
+var _propTypes = __webpack_require__(116);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(116);
+var _getDisplayName = __webpack_require__(197);
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21251,86 +21251,93 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-function getSelectorsNotInStylesheet(cssProps, stylesheet) {
-  var propKeys = Object.keys(cssProps);
-  var cssKeys = Object.keys(stylesheet);
-  return propKeys.filter(function (prop) {
-    return cssKeys.indexOf(prop) === -1;
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var isSpecialKey = function isSpecialKey(selector) {
+  return selector === 'compose';
+};
+
+function getSelectorsInSetDifference() {
+  var newCss = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var origCss = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  var newSet = Object.keys(newCss);
+  var origSet = Object.keys(origCss);
+  return newSet.filter(function (selector) {
+    return origSet.indexOf(selector) === -1;
+  }).filter(function (selector) {
+    return !isSpecialKey(selector);
   });
 }
 
-function isPropsAnOverride(cssProps, stylesheet) {
-  return getSelectorsNotInStylesheet(cssProps, stylesheet).length <= 0;
+function areSelectorsMatchingSet(newCss, origCss) {
+  return getSelectorsInSetDifference(newCss, origCss).length <= 0;
 }
 
-function hasDefinedStyles(stylesheet) {
-  return stylesheet && Object.keys(stylesheet).length > 0;
-}
+var rmSpecialCss = function rmSpecialCss(css) {
+  var compose = css.compose,
+      rest = _objectWithoutProperties(css, ['compose']);
 
-function stylesAreOverrides(cssProps, stylesheet) {
-  return hasDefinedStyles(stylesheet) ? isPropsAnOverride(cssProps, stylesheet) : true;
-}
+  return rest;
+};
 
-function isClass(Comp) {
-  // :( try/catch flow control -- want something better
-  try {
-    Comp();
-  } catch (e) {
-    return e && e.message && /Cannot call a class as a function/.test(e.message);
-  }
-  return false;
-}
+var compose = function compose() {
+  var toCompose = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var css = arguments[1];
+  return Object.keys(toCompose).reduce(function (acc, selector) {
+    acc[selector] = css[selector] + ' ' + toCompose[selector];
+    return acc;
+  }, css);
+};
 
-function styleable(stylesheet) {
-  if (!stylesheet) stylesheet = {};
+var validate = function validate(origCss, newCss) {
+  (0, _invariant2.default)(areSelectorsMatchingSet(newCss, origCss), 'Expected "this.props.css" to provide only selectors in the original stylesheet.  These selectors "%s" are not included in the stylesheet keys, "%s".', getSelectorsInSetDifference(newCss, origCss), Object.keys(origCss));
 
-  if ((typeof stylesheet === 'undefined' ? 'undefined' : _typeof(stylesheet)) !== 'object' || Array.isArray(stylesheet)) throw new Error('stylesheet must be an object (eg, export object from a css module)');
+  (0, _invariant2.default)(areSelectorsMatchingSet(newCss.compose, origCss), 'Expected "this.props.css.compose" to provide only selectors in the original stylesheet.  These selectors "%s" are not included in the stylesheet keys, "%s".', getSelectorsInSetDifference(newCss.compose, origCss), Object.keys(origCss));
+};
+
+function styleable(origCss) {
+  if (!origCss) origCss = {};
+
+  if ((typeof origCss === 'undefined' ? 'undefined' : _typeof(origCss)) !== 'object' || Array.isArray(origCss)) throw new Error('stylesheet must be an object (ie, export object from a css module)');
 
   return function decorateSource(DecoratedComponent) {
-    if (!isClass(DecoratedComponent)) {
-      var styledFn = function styledFn(props) {
-        return DecoratedComponent(_extends({}, props, {
-          css: _extends({}, stylesheet, props.css)
-        }));
-      };
-      styledFn.defaultProps = DecoratedComponent.defaultProps;
-      styledFn.propTypes = DecoratedComponent.propTypes;
-      return styledFn;
-    } else {
-      var Styleable = function (_React$Component) {
-        _inherits(Styleable, _React$Component);
+    var Styleable = function (_React$Component) {
+      _inherits(Styleable, _React$Component);
 
-        function Styleable() {
-          _classCallCheck(this, Styleable);
+      function Styleable() {
+        _classCallCheck(this, Styleable);
 
-          return _possibleConstructorReturn(this, (Styleable.__proto__ || Object.getPrototypeOf(Styleable)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Styleable.__proto__ || Object.getPrototypeOf(Styleable)).apply(this, arguments));
+      }
+
+      _createClass(Styleable, [{
+        key: 'getCss',
+        value: function getCss() {
+          var newCss = this.props.css || {};
+          validate(origCss, newCss);
+          var overridden = _extends({}, origCss, rmSpecialCss(newCss));
+          var composed = compose(newCss.compose, overridden);
+          return composed;
         }
+      }, {
+        key: 'render',
+        value: function render() {
+          return _react2.default.createElement(DecoratedComponent, _extends({}, this.props, { css: this.getCss() }));
+        }
+      }]);
 
-        _createClass(Styleable, [{
-          key: 'getCss',
-          value: function getCss() {
-            (0, _invariant2.default)(stylesAreOverrides(this.props.css, stylesheet), 'Expected "this.props.css" to provide only overrides to the given stylesheet.  Selectors "%s" not included in the stylesheet keys, "%s".', getSelectorsNotInStylesheet(this.props.css, stylesheet), Object.keys(stylesheet));
-            return _extends({}, stylesheet, this.props.css);
-          }
-        }, {
-          key: 'render',
-          value: function render() {
-            return _react2.default.createElement(DecoratedComponent, _extends({}, this.props, { css: this.getCss() }));
-          }
-        }]);
-
-        return Styleable;
-      }(_react2.default.Component);
-
-      Styleable.displayName = 'Styleable(' + (0, _getDisplayName2.default)(DecoratedComponent) + ')';
-      Styleable.defaultProps = _extends({}, DecoratedComponent.defaultProps, {
-        css: {}
-      });
-      Styleable.propTypes = _extends({}, DecoratedComponent.propTypes, {
-        css: _propTypes2.default.object
-      });
       return Styleable;
-    }
+    }(_react2.default.Component);
+
+    Styleable.displayName = 'Styleable(' + (0, _getDisplayName2.default)(DecoratedComponent) + ')';
+    Styleable.defaultProps = _extends({}, DecoratedComponent.defaultProps, {
+      css: {}
+    });
+    Styleable.propTypes = _extends({}, DecoratedComponent.propTypes, {
+      css: _propTypes2.default.object
+    });
+    return Styleable;
   };
 }
 //# sourceMappingURL=styleable.js.map
@@ -22137,29 +22144,29 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 exports.default = styleable;
 
-var _getDisplayName = __webpack_require__(205);
-
-var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
-
 var _invariant = __webpack_require__(199);
 
 var _invariant2 = _interopRequireDefault(_invariant);
+
+var _propTypes = __webpack_require__(45);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(45);
+var _getDisplayName = __webpack_require__(205);
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22169,86 +22176,93 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-function getSelectorsNotInStylesheet(cssProps, stylesheet) {
-  var propKeys = Object.keys(cssProps);
-  var cssKeys = Object.keys(stylesheet);
-  return propKeys.filter(function (prop) {
-    return cssKeys.indexOf(prop) === -1;
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var isSpecialKey = function isSpecialKey(selector) {
+  return selector === 'compose';
+};
+
+function getSelectorsInSetDifference() {
+  var newCss = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var origCss = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  var newSet = Object.keys(newCss);
+  var origSet = Object.keys(origCss);
+  return newSet.filter(function (selector) {
+    return origSet.indexOf(selector) === -1;
+  }).filter(function (selector) {
+    return !isSpecialKey(selector);
   });
 }
 
-function isPropsAnOverride(cssProps, stylesheet) {
-  return getSelectorsNotInStylesheet(cssProps, stylesheet).length <= 0;
+function areSelectorsMatchingSet(newCss, origCss) {
+  return getSelectorsInSetDifference(newCss, origCss).length <= 0;
 }
 
-function hasDefinedStyles(stylesheet) {
-  return stylesheet && Object.keys(stylesheet).length > 0;
-}
+var rmSpecialCss = function rmSpecialCss(css) {
+  var compose = css.compose,
+      rest = _objectWithoutProperties(css, ['compose']);
 
-function stylesAreOverrides(cssProps, stylesheet) {
-  return hasDefinedStyles(stylesheet) ? isPropsAnOverride(cssProps, stylesheet) : true;
-}
+  return rest;
+};
 
-function isClass(Comp) {
-  // :( try/catch flow control -- want something better
-  try {
-    Comp();
-  } catch (e) {
-    return e && e.message && /Cannot call a class as a function/.test(e.message);
-  }
-  return false;
-}
+var compose = function compose() {
+  var toCompose = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var css = arguments[1];
+  return Object.keys(toCompose).reduce(function (acc, selector) {
+    acc[selector] = css[selector] + ' ' + toCompose[selector];
+    return acc;
+  }, css);
+};
 
-function styleable(stylesheet) {
-  if (!stylesheet) stylesheet = {};
+var validate = function validate(origCss, newCss) {
+  (0, _invariant2.default)(areSelectorsMatchingSet(newCss, origCss), 'Expected "this.props.css" to provide only selectors in the original stylesheet.  These selectors "%s" are not included in the stylesheet keys, "%s".', getSelectorsInSetDifference(newCss, origCss), Object.keys(origCss));
 
-  if ((typeof stylesheet === 'undefined' ? 'undefined' : _typeof(stylesheet)) !== 'object' || Array.isArray(stylesheet)) throw new Error('stylesheet must be an object (eg, export object from a css module)');
+  (0, _invariant2.default)(areSelectorsMatchingSet(newCss.compose, origCss), 'Expected "this.props.css.compose" to provide only selectors in the original stylesheet.  These selectors "%s" are not included in the stylesheet keys, "%s".', getSelectorsInSetDifference(newCss.compose, origCss), Object.keys(origCss));
+};
+
+function styleable(origCss) {
+  if (!origCss) origCss = {};
+
+  if ((typeof origCss === 'undefined' ? 'undefined' : _typeof(origCss)) !== 'object' || Array.isArray(origCss)) throw new Error('stylesheet must be an object (ie, export object from a css module)');
 
   return function decorateSource(DecoratedComponent) {
-    if (!isClass(DecoratedComponent)) {
-      var styledFn = function styledFn(props) {
-        return DecoratedComponent(_extends({}, props, {
-          css: _extends({}, stylesheet, props.css)
-        }));
-      };
-      styledFn.defaultProps = DecoratedComponent.defaultProps;
-      styledFn.propTypes = DecoratedComponent.propTypes;
-      return styledFn;
-    } else {
-      var Styleable = function (_React$Component) {
-        _inherits(Styleable, _React$Component);
+    var Styleable = function (_React$Component) {
+      _inherits(Styleable, _React$Component);
 
-        function Styleable() {
-          _classCallCheck(this, Styleable);
+      function Styleable() {
+        _classCallCheck(this, Styleable);
 
-          return _possibleConstructorReturn(this, (Styleable.__proto__ || Object.getPrototypeOf(Styleable)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Styleable.__proto__ || Object.getPrototypeOf(Styleable)).apply(this, arguments));
+      }
+
+      _createClass(Styleable, [{
+        key: 'getCss',
+        value: function getCss() {
+          var newCss = this.props.css || {};
+          validate(origCss, newCss);
+          var overridden = _extends({}, origCss, rmSpecialCss(newCss));
+          var composed = compose(newCss.compose, overridden);
+          return composed;
         }
+      }, {
+        key: 'render',
+        value: function render() {
+          return _react2.default.createElement(DecoratedComponent, _extends({}, this.props, { css: this.getCss() }));
+        }
+      }]);
 
-        _createClass(Styleable, [{
-          key: 'getCss',
-          value: function getCss() {
-            (0, _invariant2.default)(stylesAreOverrides(this.props.css, stylesheet), 'Expected "this.props.css" to provide only overrides to the given stylesheet.  Selectors "%s" not included in the stylesheet keys, "%s".', getSelectorsNotInStylesheet(this.props.css, stylesheet), Object.keys(stylesheet));
-            return _extends({}, stylesheet, this.props.css);
-          }
-        }, {
-          key: 'render',
-          value: function render() {
-            return _react2.default.createElement(DecoratedComponent, _extends({}, this.props, { css: this.getCss() }));
-          }
-        }]);
-
-        return Styleable;
-      }(_react2.default.Component);
-
-      Styleable.displayName = 'Styleable(' + (0, _getDisplayName2.default)(DecoratedComponent) + ')';
-      Styleable.defaultProps = _extends({}, DecoratedComponent.defaultProps, {
-        css: {}
-      });
-      Styleable.propTypes = _extends({}, DecoratedComponent.propTypes, {
-        css: _propTypes2.default.object
-      });
       return Styleable;
-    }
+    }(_react2.default.Component);
+
+    Styleable.displayName = 'Styleable(' + (0, _getDisplayName2.default)(DecoratedComponent) + ')';
+    Styleable.defaultProps = _extends({}, DecoratedComponent.defaultProps, {
+      css: {}
+    });
+    Styleable.propTypes = _extends({}, DecoratedComponent.propTypes, {
+      css: _propTypes2.default.object
+    });
+    return Styleable;
   };
 }
 //# sourceMappingURL=styleable.js.map
@@ -23545,29 +23559,29 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 exports.default = styleable;
 
-var _getDisplayName = __webpack_require__(216);
-
-var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
-
 var _invariant = __webpack_require__(210);
 
 var _invariant2 = _interopRequireDefault(_invariant);
+
+var _propTypes = __webpack_require__(119);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(119);
+var _getDisplayName = __webpack_require__(216);
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23577,86 +23591,93 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-function getSelectorsNotInStylesheet(cssProps, stylesheet) {
-  var propKeys = Object.keys(cssProps);
-  var cssKeys = Object.keys(stylesheet);
-  return propKeys.filter(function (prop) {
-    return cssKeys.indexOf(prop) === -1;
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var isSpecialKey = function isSpecialKey(selector) {
+  return selector === 'compose';
+};
+
+function getSelectorsInSetDifference() {
+  var newCss = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var origCss = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  var newSet = Object.keys(newCss);
+  var origSet = Object.keys(origCss);
+  return newSet.filter(function (selector) {
+    return origSet.indexOf(selector) === -1;
+  }).filter(function (selector) {
+    return !isSpecialKey(selector);
   });
 }
 
-function isPropsAnOverride(cssProps, stylesheet) {
-  return getSelectorsNotInStylesheet(cssProps, stylesheet).length <= 0;
+function areSelectorsMatchingSet(newCss, origCss) {
+  return getSelectorsInSetDifference(newCss, origCss).length <= 0;
 }
 
-function hasDefinedStyles(stylesheet) {
-  return stylesheet && Object.keys(stylesheet).length > 0;
-}
+var rmSpecialCss = function rmSpecialCss(css) {
+  var compose = css.compose,
+      rest = _objectWithoutProperties(css, ['compose']);
 
-function stylesAreOverrides(cssProps, stylesheet) {
-  return hasDefinedStyles(stylesheet) ? isPropsAnOverride(cssProps, stylesheet) : true;
-}
+  return rest;
+};
 
-function isClass(Comp) {
-  // :( try/catch flow control -- want something better
-  try {
-    Comp();
-  } catch (e) {
-    return e && e.message && /Cannot call a class as a function/.test(e.message);
-  }
-  return false;
-}
+var compose = function compose() {
+  var toCompose = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var css = arguments[1];
+  return Object.keys(toCompose).reduce(function (acc, selector) {
+    acc[selector] = css[selector] + ' ' + toCompose[selector];
+    return acc;
+  }, css);
+};
 
-function styleable(stylesheet) {
-  if (!stylesheet) stylesheet = {};
+var validate = function validate(origCss, newCss) {
+  (0, _invariant2.default)(areSelectorsMatchingSet(newCss, origCss), 'Expected "this.props.css" to provide only selectors in the original stylesheet.  These selectors "%s" are not included in the stylesheet keys, "%s".', getSelectorsInSetDifference(newCss, origCss), Object.keys(origCss));
 
-  if ((typeof stylesheet === 'undefined' ? 'undefined' : _typeof(stylesheet)) !== 'object' || Array.isArray(stylesheet)) throw new Error('stylesheet must be an object (eg, export object from a css module)');
+  (0, _invariant2.default)(areSelectorsMatchingSet(newCss.compose, origCss), 'Expected "this.props.css.compose" to provide only selectors in the original stylesheet.  These selectors "%s" are not included in the stylesheet keys, "%s".', getSelectorsInSetDifference(newCss.compose, origCss), Object.keys(origCss));
+};
+
+function styleable(origCss) {
+  if (!origCss) origCss = {};
+
+  if ((typeof origCss === 'undefined' ? 'undefined' : _typeof(origCss)) !== 'object' || Array.isArray(origCss)) throw new Error('stylesheet must be an object (ie, export object from a css module)');
 
   return function decorateSource(DecoratedComponent) {
-    if (!isClass(DecoratedComponent)) {
-      var styledFn = function styledFn(props) {
-        return DecoratedComponent(_extends({}, props, {
-          css: _extends({}, stylesheet, props.css)
-        }));
-      };
-      styledFn.defaultProps = DecoratedComponent.defaultProps;
-      styledFn.propTypes = DecoratedComponent.propTypes;
-      return styledFn;
-    } else {
-      var Styleable = function (_React$Component) {
-        _inherits(Styleable, _React$Component);
+    var Styleable = function (_React$Component) {
+      _inherits(Styleable, _React$Component);
 
-        function Styleable() {
-          _classCallCheck(this, Styleable);
+      function Styleable() {
+        _classCallCheck(this, Styleable);
 
-          return _possibleConstructorReturn(this, (Styleable.__proto__ || Object.getPrototypeOf(Styleable)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Styleable.__proto__ || Object.getPrototypeOf(Styleable)).apply(this, arguments));
+      }
+
+      _createClass(Styleable, [{
+        key: 'getCss',
+        value: function getCss() {
+          var newCss = this.props.css || {};
+          validate(origCss, newCss);
+          var overridden = _extends({}, origCss, rmSpecialCss(newCss));
+          var composed = compose(newCss.compose, overridden);
+          return composed;
         }
+      }, {
+        key: 'render',
+        value: function render() {
+          return _react2.default.createElement(DecoratedComponent, _extends({}, this.props, { css: this.getCss() }));
+        }
+      }]);
 
-        _createClass(Styleable, [{
-          key: 'getCss',
-          value: function getCss() {
-            (0, _invariant2.default)(stylesAreOverrides(this.props.css, stylesheet), 'Expected "this.props.css" to provide only overrides to the given stylesheet.  Selectors "%s" not included in the stylesheet keys, "%s".', getSelectorsNotInStylesheet(this.props.css, stylesheet), Object.keys(stylesheet));
-            return _extends({}, stylesheet, this.props.css);
-          }
-        }, {
-          key: 'render',
-          value: function render() {
-            return _react2.default.createElement(DecoratedComponent, _extends({}, this.props, { css: this.getCss() }));
-          }
-        }]);
-
-        return Styleable;
-      }(_react2.default.Component);
-
-      Styleable.displayName = 'Styleable(' + (0, _getDisplayName2.default)(DecoratedComponent) + ')';
-      Styleable.defaultProps = _extends({}, DecoratedComponent.defaultProps, {
-        css: {}
-      });
-      Styleable.propTypes = _extends({}, DecoratedComponent.propTypes, {
-        css: _propTypes2.default.object
-      });
       return Styleable;
-    }
+    }(_react2.default.Component);
+
+    Styleable.displayName = 'Styleable(' + (0, _getDisplayName2.default)(DecoratedComponent) + ')';
+    Styleable.defaultProps = _extends({}, DecoratedComponent.defaultProps, {
+      css: {}
+    });
+    Styleable.propTypes = _extends({}, DecoratedComponent.propTypes, {
+      css: _propTypes2.default.object
+    });
+    return Styleable;
   };
 }
 //# sourceMappingURL=styleable.js.map
@@ -23753,29 +23774,29 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 exports.default = styleable;
 
-var _getDisplayName = __webpack_require__(220);
-
-var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
-
 var _invariant = __webpack_require__(217);
 
 var _invariant2 = _interopRequireDefault(_invariant);
+
+var _propTypes = __webpack_require__(110);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(110);
+var _getDisplayName = __webpack_require__(220);
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23785,86 +23806,93 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-function getSelectorsNotInStylesheet(cssProps, stylesheet) {
-  var propKeys = Object.keys(cssProps);
-  var cssKeys = Object.keys(stylesheet);
-  return propKeys.filter(function (prop) {
-    return cssKeys.indexOf(prop) === -1;
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var isSpecialKey = function isSpecialKey(selector) {
+  return selector === 'compose';
+};
+
+function getSelectorsInSetDifference() {
+  var newCss = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var origCss = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  var newSet = Object.keys(newCss);
+  var origSet = Object.keys(origCss);
+  return newSet.filter(function (selector) {
+    return origSet.indexOf(selector) === -1;
+  }).filter(function (selector) {
+    return !isSpecialKey(selector);
   });
 }
 
-function isPropsAnOverride(cssProps, stylesheet) {
-  return getSelectorsNotInStylesheet(cssProps, stylesheet).length <= 0;
+function areSelectorsMatchingSet(newCss, origCss) {
+  return getSelectorsInSetDifference(newCss, origCss).length <= 0;
 }
 
-function hasDefinedStyles(stylesheet) {
-  return stylesheet && Object.keys(stylesheet).length > 0;
-}
+var rmSpecialCss = function rmSpecialCss(css) {
+  var compose = css.compose,
+      rest = _objectWithoutProperties(css, ['compose']);
 
-function stylesAreOverrides(cssProps, stylesheet) {
-  return hasDefinedStyles(stylesheet) ? isPropsAnOverride(cssProps, stylesheet) : true;
-}
+  return rest;
+};
 
-function isClass(Comp) {
-  // :( try/catch flow control -- want something better
-  try {
-    Comp();
-  } catch (e) {
-    return e && e.message && /Cannot call a class as a function/.test(e.message);
-  }
-  return false;
-}
+var compose = function compose() {
+  var toCompose = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var css = arguments[1];
+  return Object.keys(toCompose).reduce(function (acc, selector) {
+    acc[selector] = css[selector] + ' ' + toCompose[selector];
+    return acc;
+  }, css);
+};
 
-function styleable(stylesheet) {
-  if (!stylesheet) stylesheet = {};
+var validate = function validate(origCss, newCss) {
+  (0, _invariant2.default)(areSelectorsMatchingSet(newCss, origCss), 'Expected "this.props.css" to provide only selectors in the original stylesheet.  These selectors "%s" are not included in the stylesheet keys, "%s".', getSelectorsInSetDifference(newCss, origCss), Object.keys(origCss));
 
-  if ((typeof stylesheet === 'undefined' ? 'undefined' : _typeof(stylesheet)) !== 'object' || Array.isArray(stylesheet)) throw new Error('stylesheet must be an object (eg, export object from a css module)');
+  (0, _invariant2.default)(areSelectorsMatchingSet(newCss.compose, origCss), 'Expected "this.props.css.compose" to provide only selectors in the original stylesheet.  These selectors "%s" are not included in the stylesheet keys, "%s".', getSelectorsInSetDifference(newCss.compose, origCss), Object.keys(origCss));
+};
+
+function styleable(origCss) {
+  if (!origCss) origCss = {};
+
+  if ((typeof origCss === 'undefined' ? 'undefined' : _typeof(origCss)) !== 'object' || Array.isArray(origCss)) throw new Error('stylesheet must be an object (ie, export object from a css module)');
 
   return function decorateSource(DecoratedComponent) {
-    if (!isClass(DecoratedComponent)) {
-      var styledFn = function styledFn(props) {
-        return DecoratedComponent(_extends({}, props, {
-          css: _extends({}, stylesheet, props.css)
-        }));
-      };
-      styledFn.defaultProps = DecoratedComponent.defaultProps;
-      styledFn.propTypes = DecoratedComponent.propTypes;
-      return styledFn;
-    } else {
-      var Styleable = function (_React$Component) {
-        _inherits(Styleable, _React$Component);
+    var Styleable = function (_React$Component) {
+      _inherits(Styleable, _React$Component);
 
-        function Styleable() {
-          _classCallCheck(this, Styleable);
+      function Styleable() {
+        _classCallCheck(this, Styleable);
 
-          return _possibleConstructorReturn(this, (Styleable.__proto__ || Object.getPrototypeOf(Styleable)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Styleable.__proto__ || Object.getPrototypeOf(Styleable)).apply(this, arguments));
+      }
+
+      _createClass(Styleable, [{
+        key: 'getCss',
+        value: function getCss() {
+          var newCss = this.props.css || {};
+          validate(origCss, newCss);
+          var overridden = _extends({}, origCss, rmSpecialCss(newCss));
+          var composed = compose(newCss.compose, overridden);
+          return composed;
         }
+      }, {
+        key: 'render',
+        value: function render() {
+          return _react2.default.createElement(DecoratedComponent, _extends({}, this.props, { css: this.getCss() }));
+        }
+      }]);
 
-        _createClass(Styleable, [{
-          key: 'getCss',
-          value: function getCss() {
-            (0, _invariant2.default)(stylesAreOverrides(this.props.css, stylesheet), 'Expected "this.props.css" to provide only overrides to the given stylesheet.  Selectors "%s" not included in the stylesheet keys, "%s".', getSelectorsNotInStylesheet(this.props.css, stylesheet), Object.keys(stylesheet));
-            return _extends({}, stylesheet, this.props.css);
-          }
-        }, {
-          key: 'render',
-          value: function render() {
-            return _react2.default.createElement(DecoratedComponent, _extends({}, this.props, { css: this.getCss() }));
-          }
-        }]);
-
-        return Styleable;
-      }(_react2.default.Component);
-
-      Styleable.displayName = 'Styleable(' + (0, _getDisplayName2.default)(DecoratedComponent) + ')';
-      Styleable.defaultProps = _extends({}, DecoratedComponent.defaultProps, {
-        css: {}
-      });
-      Styleable.propTypes = _extends({}, DecoratedComponent.propTypes, {
-        css: _propTypes2.default.object
-      });
       return Styleable;
-    }
+    }(_react2.default.Component);
+
+    Styleable.displayName = 'Styleable(' + (0, _getDisplayName2.default)(DecoratedComponent) + ')';
+    Styleable.defaultProps = _extends({}, DecoratedComponent.defaultProps, {
+      css: {}
+    });
+    Styleable.propTypes = _extends({}, DecoratedComponent.propTypes, {
+      css: _propTypes2.default.object
+    });
+    return Styleable;
   };
 }
 //# sourceMappingURL=styleable.js.map
@@ -23938,6 +23966,7 @@ var getClassName = function getClassName(props) {
 var rmSystemProps = function rmSystemProps(props) {
   var actionBar = props.actionBar,
       css = props.css,
+      fullOverlay = props.fullOverlay,
       image = props.image,
       metadata1 = props.metadata1,
       metadata2 = props.metadata2,
@@ -23945,7 +23974,7 @@ var rmSystemProps = function rmSystemProps(props) {
       size = props.size,
       tag = props.tag,
       title = props.title,
-      rest = _objectWithoutProperties(props, ['actionBar', 'css', 'image', 'metadata1', 'metadata2', 'progress', 'size', 'tag', 'title']);
+      rest = _objectWithoutProperties(props, ['actionBar', 'css', 'fullOverlay', 'image', 'metadata1', 'metadata2', 'progress', 'size', 'tag', 'title']);
 
   return rest;
 };
@@ -24027,6 +24056,10 @@ var renderActionBar = function renderActionBar(props) {
   ) : null;
 };
 
+var isNativeElement = function isNativeElement(el) {
+  return el && typeof el.type === 'string';
+};
+
 var renderTag = function renderTag(props) {
   return props.tag ? _react2.default.createElement(
     'div',
@@ -24034,14 +24067,16 @@ var renderTag = function renderTag(props) {
     _react2.default.Children.map(props.tag, function (part, i) {
       var _classNames2;
 
-      return _react2.default.cloneElement(part, {
-        css: {
-          'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
-          'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
-        },
+      var elProps = {
         className: (0, _classnames2.default)((_classNames2 = {}, _defineProperty(_classNames2, part.props.className, part.props.className), _defineProperty(_classNames2, props.css['ps-card__tag__part'], true), _classNames2)),
         key: i
-      });
+      };
+      if (!isNativeElement(part)) elProps.css = {
+        'ps-icon': props.css['ps-card__tag__part--icon'],
+        'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
+        'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
+      };
+      return _react2.default.cloneElement(part, elProps);
     })
   ) : null;
 };
@@ -25016,10 +25051,19 @@ var _indexModule2 = _interopRequireDefault(_indexModule);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var rmSystemProps = function rmSystemProps(props) {
+  var css = props.css,
+      rest = _objectWithoutProperties(props, ['css']);
+
+  return rest;
+};
+
 exports.default = (0, _reactStyleable2.default)(_indexModule2.default)(function (props) {
   return _react3.default.createElement(
     _react.Heading,
-    _extends({}, props, { className: props.css.root }),
+    _extends({}, rmSystemProps(props), { className: props.css.root }),
     props.children
   );
 });
@@ -25053,10 +25097,19 @@ var _indexModule2 = _interopRequireDefault(_indexModule);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var rmSystemProps = function rmSystemProps(props) {
+  var css = props.css,
+      rest = _objectWithoutProperties(props, ['css']);
+
+  return rest;
+};
+
 exports.default = (0, _reactStyleable2.default)(_indexModule2.default)(function (props) {
   return _react3.default.createElement(
     _react.P,
-    _extends({}, props, { className: props.css.root }),
+    _extends({}, rmSystemProps(props), { className: props.css.root }),
     props.children
   );
 });
@@ -31381,7 +31434,7 @@ module.exports = {"ps-button":"ps-button___2EFfR","ps-button--tiny":"ps-button--
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"ps-card":"ps-card___2zSSP","ps-card--small":"ps-card--small___3gxtm","ps-card--medium":"ps-card--medium___5eDWG","ps-card--large":"ps-card--large___xbvHu","ps-icon__fg--fill":"ps-icon__fg--fill___1Nbfk","ps-icon__fg--stroke":"ps-icon__fg--stroke___2deYS","ps-card__image-frame":"ps-card__image-frame___1ocA2","ps-card__image":"ps-card__image___2MmCd","ps-card__action-bar":"ps-card__action-bar___2d3QI","ps-card__full-overlay":"ps-card__full-overlay___351f7","ps-card__tag":"ps-card__tag___aRZAY","ps-card__tag__part":"ps-card__tag__part___1rjkA","ps-card__progress":"ps-card__progress___3pVLT","ps-card__progress__bar":"ps-card__progress__bar___41-QK","ps-card__title":"ps-card__title___CCHuG","ps-card__metadata":"ps-card__metadata___3YV1n","ps-card__metadata__datum":"ps-card__metadata__datum___-Ixrv","ps-card__metadata__dot":"ps-card__metadata__dot___1c4pP"};
+module.exports = {"ps-card":"ps-card___2zSSP","ps-card--small":"ps-card--small___3gxtm","ps-card--medium":"ps-card--medium___5eDWG","ps-card--large":"ps-card--large___xbvHu","ps-icon__fg--fill":"ps-icon__fg--fill___1Nbfk","ps-icon__fg--stroke":"ps-icon__fg--stroke___2deYS","ps-card__image-frame":"ps-card__image-frame___1ocA2","ps-card__image":"ps-card__image___2MmCd","ps-card__action-bar":"ps-card__action-bar___2d3QI","ps-card__full-overlay":"ps-card__full-overlay___351f7","ps-card__tag":"ps-card__tag___aRZAY","ps-card__tag__part":"ps-card__tag__part___1rjkA","ps-card__tag__part--icon":"ps-card__tag__part--icon___4cg9Q","ps-card__progress":"ps-card__progress___3pVLT","ps-card__progress__bar":"ps-card__progress__bar___41-QK","ps-card__title":"ps-card__title___CCHuG","ps-card__metadata":"ps-card__metadata___3YV1n","ps-card__metadata__datum":"ps-card__metadata__datum___-Ixrv","ps-card__metadata__dot":"ps-card__metadata__dot___1c4pP"};
 
 /***/ }),
 /* 303 */
@@ -79486,29 +79539,29 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 exports.default = styleable;
 
-var _getDisplayName = __webpack_require__(635);
-
-var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
-
 var _invariant = __webpack_require__(35);
 
 var _invariant2 = _interopRequireDefault(_invariant);
+
+var _propTypes = __webpack_require__(6);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(6);
+var _getDisplayName = __webpack_require__(635);
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -79518,86 +79571,93 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-function getSelectorsNotInStylesheet(cssProps, stylesheet) {
-  var propKeys = Object.keys(cssProps);
-  var cssKeys = Object.keys(stylesheet);
-  return propKeys.filter(function (prop) {
-    return cssKeys.indexOf(prop) === -1;
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var isSpecialKey = function isSpecialKey(selector) {
+  return selector === 'compose';
+};
+
+function getSelectorsInSetDifference() {
+  var newCss = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var origCss = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  var newSet = Object.keys(newCss);
+  var origSet = Object.keys(origCss);
+  return newSet.filter(function (selector) {
+    return origSet.indexOf(selector) === -1;
+  }).filter(function (selector) {
+    return !isSpecialKey(selector);
   });
 }
 
-function isPropsAnOverride(cssProps, stylesheet) {
-  return getSelectorsNotInStylesheet(cssProps, stylesheet).length <= 0;
+function areSelectorsMatchingSet(newCss, origCss) {
+  return getSelectorsInSetDifference(newCss, origCss).length <= 0;
 }
 
-function hasDefinedStyles(stylesheet) {
-  return stylesheet && Object.keys(stylesheet).length > 0;
-}
+var rmSpecialCss = function rmSpecialCss(css) {
+  var compose = css.compose,
+      rest = _objectWithoutProperties(css, ['compose']);
 
-function stylesAreOverrides(cssProps, stylesheet) {
-  return hasDefinedStyles(stylesheet) ? isPropsAnOverride(cssProps, stylesheet) : true;
-}
+  return rest;
+};
 
-function isClass(Comp) {
-  // :( try/catch flow control -- want something better
-  try {
-    Comp();
-  } catch (e) {
-    return e && e.message && /Cannot call a class as a function/.test(e.message);
-  }
-  return false;
-}
+var compose = function compose() {
+  var toCompose = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var css = arguments[1];
+  return Object.keys(toCompose).reduce(function (acc, selector) {
+    acc[selector] = css[selector] + ' ' + toCompose[selector];
+    return acc;
+  }, css);
+};
 
-function styleable(stylesheet) {
-  if (!stylesheet) stylesheet = {};
+var validate = function validate(origCss, newCss) {
+  (0, _invariant2.default)(areSelectorsMatchingSet(newCss, origCss), 'Expected "this.props.css" to provide only selectors in the original stylesheet.  These selectors "%s" are not included in the stylesheet keys, "%s".', getSelectorsInSetDifference(newCss, origCss), Object.keys(origCss));
 
-  if ((typeof stylesheet === 'undefined' ? 'undefined' : _typeof(stylesheet)) !== 'object' || Array.isArray(stylesheet)) throw new Error('stylesheet must be an object (eg, export object from a css module)');
+  (0, _invariant2.default)(areSelectorsMatchingSet(newCss.compose, origCss), 'Expected "this.props.css.compose" to provide only selectors in the original stylesheet.  These selectors "%s" are not included in the stylesheet keys, "%s".', getSelectorsInSetDifference(newCss.compose, origCss), Object.keys(origCss));
+};
+
+function styleable(origCss) {
+  if (!origCss) origCss = {};
+
+  if ((typeof origCss === 'undefined' ? 'undefined' : _typeof(origCss)) !== 'object' || Array.isArray(origCss)) throw new Error('stylesheet must be an object (ie, export object from a css module)');
 
   return function decorateSource(DecoratedComponent) {
-    if (!isClass(DecoratedComponent)) {
-      var styledFn = function styledFn(props) {
-        return DecoratedComponent(_extends({}, props, {
-          css: _extends({}, stylesheet, props.css)
-        }));
-      };
-      styledFn.defaultProps = DecoratedComponent.defaultProps;
-      styledFn.propTypes = DecoratedComponent.propTypes;
-      return styledFn;
-    } else {
-      var Styleable = function (_React$Component) {
-        _inherits(Styleable, _React$Component);
+    var Styleable = function (_React$Component) {
+      _inherits(Styleable, _React$Component);
 
-        function Styleable() {
-          _classCallCheck(this, Styleable);
+      function Styleable() {
+        _classCallCheck(this, Styleable);
 
-          return _possibleConstructorReturn(this, (Styleable.__proto__ || Object.getPrototypeOf(Styleable)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Styleable.__proto__ || Object.getPrototypeOf(Styleable)).apply(this, arguments));
+      }
+
+      _createClass(Styleable, [{
+        key: 'getCss',
+        value: function getCss() {
+          var newCss = this.props.css || {};
+          validate(origCss, newCss);
+          var overridden = _extends({}, origCss, rmSpecialCss(newCss));
+          var composed = compose(newCss.compose, overridden);
+          return composed;
         }
+      }, {
+        key: 'render',
+        value: function render() {
+          return _react2.default.createElement(DecoratedComponent, _extends({}, this.props, { css: this.getCss() }));
+        }
+      }]);
 
-        _createClass(Styleable, [{
-          key: 'getCss',
-          value: function getCss() {
-            (0, _invariant2.default)(stylesAreOverrides(this.props.css, stylesheet), 'Expected "this.props.css" to provide only overrides to the given stylesheet.  Selectors "%s" not included in the stylesheet keys, "%s".', getSelectorsNotInStylesheet(this.props.css, stylesheet), Object.keys(stylesheet));
-            return _extends({}, stylesheet, this.props.css);
-          }
-        }, {
-          key: 'render',
-          value: function render() {
-            return _react2.default.createElement(DecoratedComponent, _extends({}, this.props, { css: this.getCss() }));
-          }
-        }]);
-
-        return Styleable;
-      }(_react2.default.Component);
-
-      Styleable.displayName = 'Styleable(' + (0, _getDisplayName2.default)(DecoratedComponent) + ')';
-      Styleable.defaultProps = _extends({}, DecoratedComponent.defaultProps, {
-        css: {}
-      });
-      Styleable.propTypes = _extends({}, DecoratedComponent.propTypes, {
-        css: _propTypes2.default.object
-      });
       return Styleable;
-    }
+    }(_react2.default.Component);
+
+    Styleable.displayName = 'Styleable(' + (0, _getDisplayName2.default)(DecoratedComponent) + ')';
+    Styleable.defaultProps = _extends({}, DecoratedComponent.defaultProps, {
+      css: {}
+    });
+    Styleable.propTypes = _extends({}, DecoratedComponent.propTypes, {
+      css: _propTypes2.default.object
+    });
+    return Styleable;
   };
 }
 //# sourceMappingURL=styleable.js.map
@@ -83422,29 +83482,29 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 exports.default = styleable;
 
-var _getDisplayName = __webpack_require__(659);
-
-var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
-
 var _invariant = __webpack_require__(654);
 
 var _invariant2 = _interopRequireDefault(_invariant);
+
+var _propTypes = __webpack_require__(100);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(100);
+var _getDisplayName = __webpack_require__(659);
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -83454,86 +83514,93 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-function getSelectorsNotInStylesheet(cssProps, stylesheet) {
-  var propKeys = Object.keys(cssProps);
-  var cssKeys = Object.keys(stylesheet);
-  return propKeys.filter(function (prop) {
-    return cssKeys.indexOf(prop) === -1;
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var isSpecialKey = function isSpecialKey(selector) {
+  return selector === 'compose';
+};
+
+function getSelectorsInSetDifference() {
+  var newCss = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var origCss = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  var newSet = Object.keys(newCss);
+  var origSet = Object.keys(origCss);
+  return newSet.filter(function (selector) {
+    return origSet.indexOf(selector) === -1;
+  }).filter(function (selector) {
+    return !isSpecialKey(selector);
   });
 }
 
-function isPropsAnOverride(cssProps, stylesheet) {
-  return getSelectorsNotInStylesheet(cssProps, stylesheet).length <= 0;
+function areSelectorsMatchingSet(newCss, origCss) {
+  return getSelectorsInSetDifference(newCss, origCss).length <= 0;
 }
 
-function hasDefinedStyles(stylesheet) {
-  return stylesheet && Object.keys(stylesheet).length > 0;
-}
+var rmSpecialCss = function rmSpecialCss(css) {
+  var compose = css.compose,
+      rest = _objectWithoutProperties(css, ['compose']);
 
-function stylesAreOverrides(cssProps, stylesheet) {
-  return hasDefinedStyles(stylesheet) ? isPropsAnOverride(cssProps, stylesheet) : true;
-}
+  return rest;
+};
 
-function isClass(Comp) {
-  // :( try/catch flow control -- want something better
-  try {
-    Comp();
-  } catch (e) {
-    return e && e.message && /Cannot call a class as a function/.test(e.message);
-  }
-  return false;
-}
+var compose = function compose() {
+  var toCompose = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var css = arguments[1];
+  return Object.keys(toCompose).reduce(function (acc, selector) {
+    acc[selector] = css[selector] + ' ' + toCompose[selector];
+    return acc;
+  }, css);
+};
 
-function styleable(stylesheet) {
-  if (!stylesheet) stylesheet = {};
+var validate = function validate(origCss, newCss) {
+  (0, _invariant2.default)(areSelectorsMatchingSet(newCss, origCss), 'Expected "this.props.css" to provide only selectors in the original stylesheet.  These selectors "%s" are not included in the stylesheet keys, "%s".', getSelectorsInSetDifference(newCss, origCss), Object.keys(origCss));
 
-  if ((typeof stylesheet === 'undefined' ? 'undefined' : _typeof(stylesheet)) !== 'object' || Array.isArray(stylesheet)) throw new Error('stylesheet must be an object (eg, export object from a css module)');
+  (0, _invariant2.default)(areSelectorsMatchingSet(newCss.compose, origCss), 'Expected "this.props.css.compose" to provide only selectors in the original stylesheet.  These selectors "%s" are not included in the stylesheet keys, "%s".', getSelectorsInSetDifference(newCss.compose, origCss), Object.keys(origCss));
+};
+
+function styleable(origCss) {
+  if (!origCss) origCss = {};
+
+  if ((typeof origCss === 'undefined' ? 'undefined' : _typeof(origCss)) !== 'object' || Array.isArray(origCss)) throw new Error('stylesheet must be an object (ie, export object from a css module)');
 
   return function decorateSource(DecoratedComponent) {
-    if (!isClass(DecoratedComponent)) {
-      var styledFn = function styledFn(props) {
-        return DecoratedComponent(_extends({}, props, {
-          css: _extends({}, stylesheet, props.css)
-        }));
-      };
-      styledFn.defaultProps = DecoratedComponent.defaultProps;
-      styledFn.propTypes = DecoratedComponent.propTypes;
-      return styledFn;
-    } else {
-      var Styleable = function (_React$Component) {
-        _inherits(Styleable, _React$Component);
+    var Styleable = function (_React$Component) {
+      _inherits(Styleable, _React$Component);
 
-        function Styleable() {
-          _classCallCheck(this, Styleable);
+      function Styleable() {
+        _classCallCheck(this, Styleable);
 
-          return _possibleConstructorReturn(this, (Styleable.__proto__ || Object.getPrototypeOf(Styleable)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Styleable.__proto__ || Object.getPrototypeOf(Styleable)).apply(this, arguments));
+      }
+
+      _createClass(Styleable, [{
+        key: 'getCss',
+        value: function getCss() {
+          var newCss = this.props.css || {};
+          validate(origCss, newCss);
+          var overridden = _extends({}, origCss, rmSpecialCss(newCss));
+          var composed = compose(newCss.compose, overridden);
+          return composed;
         }
+      }, {
+        key: 'render',
+        value: function render() {
+          return _react2.default.createElement(DecoratedComponent, _extends({}, this.props, { css: this.getCss() }));
+        }
+      }]);
 
-        _createClass(Styleable, [{
-          key: 'getCss',
-          value: function getCss() {
-            (0, _invariant2.default)(stylesAreOverrides(this.props.css, stylesheet), 'Expected "this.props.css" to provide only overrides to the given stylesheet.  Selectors "%s" not included in the stylesheet keys, "%s".', getSelectorsNotInStylesheet(this.props.css, stylesheet), Object.keys(stylesheet));
-            return _extends({}, stylesheet, this.props.css);
-          }
-        }, {
-          key: 'render',
-          value: function render() {
-            return _react2.default.createElement(DecoratedComponent, _extends({}, this.props, { css: this.getCss() }));
-          }
-        }]);
-
-        return Styleable;
-      }(_react2.default.Component);
-
-      Styleable.displayName = 'Styleable(' + (0, _getDisplayName2.default)(DecoratedComponent) + ')';
-      Styleable.defaultProps = _extends({}, DecoratedComponent.defaultProps, {
-        css: {}
-      });
-      Styleable.propTypes = _extends({}, DecoratedComponent.propTypes, {
-        css: _propTypes2.default.object
-      });
       return Styleable;
-    }
+    }(_react2.default.Component);
+
+    Styleable.displayName = 'Styleable(' + (0, _getDisplayName2.default)(DecoratedComponent) + ')';
+    Styleable.defaultProps = _extends({}, DecoratedComponent.defaultProps, {
+      css: {}
+    });
+    Styleable.propTypes = _extends({}, DecoratedComponent.propTypes, {
+      css: _propTypes2.default.object
+    });
+    return Styleable;
   };
 }
 //# sourceMappingURL=styleable.js.map
@@ -84279,29 +84346,29 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 exports.default = styleable;
 
-var _getDisplayName = __webpack_require__(665);
-
-var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
-
 var _invariant = __webpack_require__(660);
 
 var _invariant2 = _interopRequireDefault(_invariant);
+
+var _propTypes = __webpack_require__(105);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(105);
+var _getDisplayName = __webpack_require__(665);
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -84311,86 +84378,93 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-function getSelectorsNotInStylesheet(cssProps, stylesheet) {
-  var propKeys = Object.keys(cssProps);
-  var cssKeys = Object.keys(stylesheet);
-  return propKeys.filter(function (prop) {
-    return cssKeys.indexOf(prop) === -1;
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var isSpecialKey = function isSpecialKey(selector) {
+  return selector === 'compose';
+};
+
+function getSelectorsInSetDifference() {
+  var newCss = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var origCss = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  var newSet = Object.keys(newCss);
+  var origSet = Object.keys(origCss);
+  return newSet.filter(function (selector) {
+    return origSet.indexOf(selector) === -1;
+  }).filter(function (selector) {
+    return !isSpecialKey(selector);
   });
 }
 
-function isPropsAnOverride(cssProps, stylesheet) {
-  return getSelectorsNotInStylesheet(cssProps, stylesheet).length <= 0;
+function areSelectorsMatchingSet(newCss, origCss) {
+  return getSelectorsInSetDifference(newCss, origCss).length <= 0;
 }
 
-function hasDefinedStyles(stylesheet) {
-  return stylesheet && Object.keys(stylesheet).length > 0;
-}
+var rmSpecialCss = function rmSpecialCss(css) {
+  var compose = css.compose,
+      rest = _objectWithoutProperties(css, ['compose']);
 
-function stylesAreOverrides(cssProps, stylesheet) {
-  return hasDefinedStyles(stylesheet) ? isPropsAnOverride(cssProps, stylesheet) : true;
-}
+  return rest;
+};
 
-function isClass(Comp) {
-  // :( try/catch flow control -- want something better
-  try {
-    Comp();
-  } catch (e) {
-    return e && e.message && /Cannot call a class as a function/.test(e.message);
-  }
-  return false;
-}
+var compose = function compose() {
+  var toCompose = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var css = arguments[1];
+  return Object.keys(toCompose).reduce(function (acc, selector) {
+    acc[selector] = css[selector] + ' ' + toCompose[selector];
+    return acc;
+  }, css);
+};
 
-function styleable(stylesheet) {
-  if (!stylesheet) stylesheet = {};
+var validate = function validate(origCss, newCss) {
+  (0, _invariant2.default)(areSelectorsMatchingSet(newCss, origCss), 'Expected "this.props.css" to provide only selectors in the original stylesheet.  These selectors "%s" are not included in the stylesheet keys, "%s".', getSelectorsInSetDifference(newCss, origCss), Object.keys(origCss));
 
-  if ((typeof stylesheet === 'undefined' ? 'undefined' : _typeof(stylesheet)) !== 'object' || Array.isArray(stylesheet)) throw new Error('stylesheet must be an object (eg, export object from a css module)');
+  (0, _invariant2.default)(areSelectorsMatchingSet(newCss.compose, origCss), 'Expected "this.props.css.compose" to provide only selectors in the original stylesheet.  These selectors "%s" are not included in the stylesheet keys, "%s".', getSelectorsInSetDifference(newCss.compose, origCss), Object.keys(origCss));
+};
+
+function styleable(origCss) {
+  if (!origCss) origCss = {};
+
+  if ((typeof origCss === 'undefined' ? 'undefined' : _typeof(origCss)) !== 'object' || Array.isArray(origCss)) throw new Error('stylesheet must be an object (ie, export object from a css module)');
 
   return function decorateSource(DecoratedComponent) {
-    if (!isClass(DecoratedComponent)) {
-      var styledFn = function styledFn(props) {
-        return DecoratedComponent(_extends({}, props, {
-          css: _extends({}, stylesheet, props.css)
-        }));
-      };
-      styledFn.defaultProps = DecoratedComponent.defaultProps;
-      styledFn.propTypes = DecoratedComponent.propTypes;
-      return styledFn;
-    } else {
-      var Styleable = function (_React$Component) {
-        _inherits(Styleable, _React$Component);
+    var Styleable = function (_React$Component) {
+      _inherits(Styleable, _React$Component);
 
-        function Styleable() {
-          _classCallCheck(this, Styleable);
+      function Styleable() {
+        _classCallCheck(this, Styleable);
 
-          return _possibleConstructorReturn(this, (Styleable.__proto__ || Object.getPrototypeOf(Styleable)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Styleable.__proto__ || Object.getPrototypeOf(Styleable)).apply(this, arguments));
+      }
+
+      _createClass(Styleable, [{
+        key: 'getCss',
+        value: function getCss() {
+          var newCss = this.props.css || {};
+          validate(origCss, newCss);
+          var overridden = _extends({}, origCss, rmSpecialCss(newCss));
+          var composed = compose(newCss.compose, overridden);
+          return composed;
         }
+      }, {
+        key: 'render',
+        value: function render() {
+          return _react2.default.createElement(DecoratedComponent, _extends({}, this.props, { css: this.getCss() }));
+        }
+      }]);
 
-        _createClass(Styleable, [{
-          key: 'getCss',
-          value: function getCss() {
-            (0, _invariant2.default)(stylesAreOverrides(this.props.css, stylesheet), 'Expected "this.props.css" to provide only overrides to the given stylesheet.  Selectors "%s" not included in the stylesheet keys, "%s".', getSelectorsNotInStylesheet(this.props.css, stylesheet), Object.keys(stylesheet));
-            return _extends({}, stylesheet, this.props.css);
-          }
-        }, {
-          key: 'render',
-          value: function render() {
-            return _react2.default.createElement(DecoratedComponent, _extends({}, this.props, { css: this.getCss() }));
-          }
-        }]);
-
-        return Styleable;
-      }(_react2.default.Component);
-
-      Styleable.displayName = 'Styleable(' + (0, _getDisplayName2.default)(DecoratedComponent) + ')';
-      Styleable.defaultProps = _extends({}, DecoratedComponent.defaultProps, {
-        css: {}
-      });
-      Styleable.propTypes = _extends({}, DecoratedComponent.propTypes, {
-        css: _propTypes2.default.object
-      });
       return Styleable;
-    }
+    }(_react2.default.Component);
+
+    Styleable.displayName = 'Styleable(' + (0, _getDisplayName2.default)(DecoratedComponent) + ')';
+    Styleable.defaultProps = _extends({}, DecoratedComponent.defaultProps, {
+      css: {}
+    });
+    Styleable.propTypes = _extends({}, DecoratedComponent.propTypes, {
+      css: _propTypes2.default.object
+    });
+    return Styleable;
   };
 }
 //# sourceMappingURL=styleable.js.map

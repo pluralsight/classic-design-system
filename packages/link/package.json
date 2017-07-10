@@ -17,6 +17,6 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^1.6.5",
-    "react-styleable": "^3.0.0"
+    "react-styleable": "^3.1.0"
   }
 }
