@@ -34,6 +34,7 @@ export default _ =>
     </Heading>
     <Example.React
       component={defaultCard}
+      orient="vertical"
       name="Card"
       permutations={[{ size: 'large' }, { size: 'medium' }, { size: 'small' }]}
     />
@@ -43,6 +44,7 @@ export default _ =>
     </Heading>
     <Example.React
       component={defaultCard}
+      orient="vertical"
       name="Card"
       permutations={[
         { progress: 25 },
@@ -82,6 +84,7 @@ export default _ =>
     </Heading>
     <Example.React
       component={defaultCard}
+      orient="vertical"
       name="Card"
       permutations={[
         {
@@ -110,6 +113,7 @@ export default _ =>
     </Heading>
     <Example.React
       component={defaultCard}
+      orient="vertical"
       name="Card"
       permutations={[
         {
@@ -130,6 +134,7 @@ export default _ =>
     </Heading>
     <Example.React
       component={defaultCard}
+      orient="vertical"
       name="Card"
       permutations={[
         {

@@ -1441,7 +1441,7 @@
     margin: 0 0 0 98px;
   }
   .outputVertical___2pwn2 .outputChild___3QK6i + .outputChild___3QK6i {
-    margin: 0;
+    margin: 45px 0 0 0;
   }
 }
 :root {
@@ -2855,13 +2855,16 @@
 }
 /* size */
 .ps-card--small___3gxtm {
-  max-width: 140px;
+  min-width: 120px;
+  max-width: 240px;
 }
 .ps-card--medium___5eDWG {
-  max-width: 320px;
+  min-width: 240px;
+  max-width: 440;
 }
 .ps-card--large___xbvHu {
-  max-width: 640px;
+  min-width: 440px;
+  max-width: 680px;
 }
 /* child icons */
 .ps-card___2zSSP .ps-icon__fg--fill___1Nbfk {

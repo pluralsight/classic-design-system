@@ -25934,6 +25934,7 @@ exports.default = function (_) {
     ),
     _react6.default.createElement(_components.Example.React, {
       component: defaultCard,
+      orient: 'vertical',
       name: 'Card',
       permutations: [{ size: 'large' }, { size: 'medium' }, { size: 'small' }]
     }),
@@ -25948,6 +25949,7 @@ exports.default = function (_) {
     ),
     _react6.default.createElement(_components.Example.React, {
       component: defaultCard,
+      orient: 'vertical',
       name: 'Card',
       permutations: [{ progress: 25 }, { progress: 66.666667 }, { progress: 100 }]
     }),
@@ -25987,6 +25989,7 @@ exports.default = function (_) {
     ),
     _react6.default.createElement(_components.Example.React, {
       component: defaultCard,
+      orient: 'vertical',
       name: 'Card',
       permutations: [{
         actionBar: [_react6.default.createElement(_react2.default, { appearance: 'flat', icon: _react6.default.createElement(_react4.default, { id: 'bookmark' }) })]
@@ -26008,6 +26011,7 @@ exports.default = function (_) {
     ),
     _react6.default.createElement(_components.Example.React, {
       component: defaultCard,
+      orient: 'vertical',
       name: 'Card',
       permutations: [{
         tag: [_react6.default.createElement(_react4.default, { id: 'logo' }), _react6.default.createElement(
@@ -26041,6 +26045,7 @@ exports.default = function (_) {
     ),
     _react6.default.createElement(_components.Example.React, {
       component: defaultCard,
+      orient: 'vertical',
       name: 'Card',
       permutations: [{
         fullOverlay: _react6.default.createElement(
