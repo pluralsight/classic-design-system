@@ -23936,7 +23936,7 @@ var getClassName = function getClassName(props) {
 };
 
 var rmSystemProps = function rmSystemProps(props) {
-  var actions = props.actions,
+  var actionBar = props.actionBar,
       css = props.css,
       image = props.image,
       metadata1 = props.metadata1,
@@ -23945,7 +23945,7 @@ var rmSystemProps = function rmSystemProps(props) {
       size = props.size,
       tag = props.tag,
       title = props.title,
-      rest = _objectWithoutProperties(props, ['actions', 'css', 'image', 'metadata1', 'metadata2', 'progress', 'size', 'tag', 'title']);
+      rest = _objectWithoutProperties(props, ['actionBar', 'css', 'image', 'metadata1', 'metadata2', 'progress', 'size', 'tag', 'title']);
 
   return rest;
 };
@@ -24011,10 +24011,10 @@ var renderMetaData = function renderMetaData(props, metadata) {
 };
 
 var renderActionBar = function renderActionBar(props) {
-  return Array.isArray(props.actions) && props.actions.length > 0 ? _react2.default.createElement(
+  return Array.isArray(props.actionBar) && props.actionBar.length > 0 ? _react2.default.createElement(
     'div',
     { className: props.css['ps-card__action-bar'] },
-    _react2.default.Children.map(props.actions, function (action, i) {
+    _react2.default.Children.map(props.actionBar, function (action, i) {
       return _react2.default.cloneElement(action, {
         css: {
           'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
@@ -24035,6 +24035,10 @@ var renderTag = function renderTag(props) {
       var _classNames2;
 
       return _react2.default.cloneElement(part, {
+        css: {
+          'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
+          'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
+        },
         className: (0, _classnames2.default)((_classNames2 = {}, _defineProperty(_classNames2, part.props.className, part.props.className), _defineProperty(_classNames2, props.css['ps-card__tag__part'], true), _classNames2)),
         key: i
       });
@@ -24061,7 +24065,7 @@ var Card = exports.Card = function Card(props) {
 };
 
 Card.propTypes = {
-  actions: _propTypes2.default.arrayOf(_propTypes2.default.node),
+  actionBar: _propTypes2.default.arrayOf(_propTypes2.default.node),
   image: _propTypes2.default.element.isRequired,
   metadata1: _propTypes2.default.arrayOf(_propTypes2.default.node),
   metadata2: _propTypes2.default.arrayOf(_propTypes2.default.node),
@@ -25898,16 +25902,16 @@ exports.default = function (_) {
       _react6.default.createElement(
         'h2',
         null,
-        'Actions'
+        'Action Bar'
       )
     ),
     _react6.default.createElement(_components.Example.React, {
       component: defaultCard,
       name: 'Card',
       permutations: [{
-        actions: [_react6.default.createElement(_react2.default, { appearance: 'flat', icon: _react6.default.createElement(_react4.default, { id: 'bookmark' }) })]
+        actionBar: [_react6.default.createElement(_react2.default, { appearance: 'flat', icon: _react6.default.createElement(_react4.default, { id: 'bookmark' }) })]
       }, {
-        actions: [_react6.default.createElement(_react2.default, { appearance: 'flat', icon: _react6.default.createElement(_react4.default, { id: 'bookmark' }) }), _react6.default.createElement(_react2.default, { appearance: 'flat', icon: _react6.default.createElement(_react4.default, { id: 'more' }) })]
+        actionBar: [_react6.default.createElement(_react2.default, { appearance: 'flat', icon: _react6.default.createElement(_react4.default, { id: 'bookmark' }) }), _react6.default.createElement(_react2.default, { appearance: 'flat', icon: _react6.default.createElement(_react4.default, { id: 'more' }) })]
       }]
     }),
     _react6.default.createElement(

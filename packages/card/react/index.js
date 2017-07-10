@@ -14,7 +14,7 @@ const getClassName = props =>
 
 const rmSystemProps = props => {
   const {
-    actions,
+    actionBar,
     css,
     image,
     metadata1,
@@ -86,9 +86,9 @@ const renderMetaData = (props, metadata) =>
     : null
 
 const renderActionBar = props =>
-  Array.isArray(props.actions) && props.actions.length > 0
+  Array.isArray(props.actionBar) && props.actionBar.length > 0
     ? <div className={props.css['ps-card__action-bar']}>
-        {React.Children.map(props.actions, (action, i) =>
+        {React.Children.map(props.actionBar, (action, i) =>
           React.cloneElement(action, {
             css: {
               'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
@@ -106,6 +106,10 @@ const renderTag = props =>
     ? <div className={props.css['ps-card__tag']}>
         {React.Children.map(props.tag, (part, i) => {
           return React.cloneElement(part, {
+            css: {
+              'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
+              'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
+            },
             className: classNames({
               [part.props.className]: part.props.className,
               [props.css['ps-card__tag__part']]: true
@@ -134,7 +138,7 @@ export const Card = props => {
 
 import PropTypes from 'prop-types'
 Card.propTypes = {
-  actions: PropTypes.arrayOf(PropTypes.node),
+  actionBar: PropTypes.arrayOf(PropTypes.node),
   image: PropTypes.element.isRequired,
   metadata1: PropTypes.arrayOf(PropTypes.node),
   metadata2: PropTypes.arrayOf(PropTypes.node),

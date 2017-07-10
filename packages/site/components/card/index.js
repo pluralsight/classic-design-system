@@ -78,17 +78,19 @@ export default _ =>
     />
 
     <Heading size="large">
-      <h2>Actions</h2>
+      <h2>Action Bar</h2>
     </Heading>
     <Example.React
       component={defaultCard}
       name="Card"
       permutations={[
         {
-          actions: [<Button appearance="flat" icon={<Icon id="bookmark" />} />]
+          actionBar: [
+            <Button appearance="flat" icon={<Icon id="bookmark" />} />
+          ]
         },
         {
-          actions: [
+          actionBar: [
             <Button appearance="flat" icon={<Icon id="bookmark" />} />,
             <Button appearance="flat" icon={<Icon id="more" />} />
           ]
