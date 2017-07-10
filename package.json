@@ -45,11 +45,11 @@
     "react-test-renderer": "^15.5.4"
   },
   "lint-staged": {
-    "(examples|packages)/**/*.js": [
+    "packages/*.js": [
       "node_modules/.bin/prettier --single-quote --no-semi --write",
       "git add"
     ],
-    "(examples|packages)/**/*.css": [
+    "packages/**/*.css": [
       "node_modules/.bin/prettier --single-quote --no-semi --write",
       "git add"
     ]
