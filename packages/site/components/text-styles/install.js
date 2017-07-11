@@ -1,21 +1,17 @@
 import { Link as RouterLink } from 'react-router-dom'
-import Link from '@pluralsight/ps-link/react'
+import Link from '@pluralsight/ps-design-system-link/react'
 import React from 'react'
 
 import { Code, P } from '../../common/components'
 
 export default _ =>
   <div>
-    <P>
-      Install the component dependency:
-    </P>
+    <P>Install the component dependency:</P>
     <Code language="bash">
       npm install @pluralsight/ps-design-system-text --save-dev
     </Code>
 
-    <P>
-      Include a React component in your project:
-    </P>
+    <P>Include a React component in your project:</P>
     <Code language="javascript">
       import Text from '@pluralsight/ps-design-system-text/react'
     </Code>
