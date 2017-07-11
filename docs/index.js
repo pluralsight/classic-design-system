@@ -84663,6 +84663,10 @@ var _chrome = __webpack_require__(40);
 
 var _chrome2 = _interopRequireDefault(_chrome);
 
+var _custom = __webpack_require__(712);
+
+var _custom2 = _interopRequireDefault(_custom);
+
 var _webpack = __webpack_require__(711);
 
 var _webpack2 = _interopRequireDefault(_webpack);
@@ -84670,6 +84674,7 @@ var _webpack2 = _interopRequireDefault(_webpack);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var docs = {
+  custom: _react2.default.createElement(_custom2.default, null),
   webpack: _react2.default.createElement(_webpack2.default, null)
 };
 
@@ -84717,6 +84722,46 @@ exports.default = function (_) {
       _components.Doc,
       null,
       '\n## Build Lib Purpose\n\nThe `@pluralsight/ps-design-system-build` library is meant to provide tooling to build the design system core elements and components.\n\nIt is used internally on components, and it can be used in your app that uses the Design System.\n\n## Webpack Config Decorator\n\nThe most immediately-useful utility for your project will be the `decorateConfig` function.  It is meant to wrap your project\'s webpack config.  This allows the Design System to embrace the requirement of a build without requiring you to see or know about the guts of it.\n\nTo use this utility properly, you should familiarize yourself with its usage and several parameters.\n\n### Install\n\nTo install, simply:\n\n```bash\nnpm install @pluralsight/ps-design-system-build --save-dev\n```\n\n### Usage\n\nThen in your `webpack.config.js`, import it:\n\n```js\nconst { decorateConfig } = require(\'@pluralsight/ps-design-system-build/webpack\')\n```\n\nAnd use it to wrap your project\'s original webpack configuration object.\n\n```js\nconst yourOriginalConfig = { /* ... */ }\nconst options = {}\nmodule.exports = decorateConfig(yourOriginalConfig, options)\n```\n\nThe second argument to `decorateConfig` is an options object.  There is one required option, `packageJson`.\n\n### Options\n\nThese are all the potential options to `decorateConfig`:\n\n- `packageJson` - _Object. Required._ - The JSON content of your `package.json`.  Used to discover what elements of the Design System you\'re using in your project.  Most commonly, the value is simply `require(\'./package.json\')`.\n\n- `extraInclude` - _Array<String>. Optional._ - List of absolute filesystem paths.  The Design System will process its own code with its own predetermined webpack config.  If you\'d like to use this Design System config on your own app code, list your code\'s paths here. An example value: `[path.resolve(\'src\')]`.\n\n- `defaultInclude` - _String. Optional._ - Single absolute filesystem path.  `decorateConfig` requires that your project\'s `module.rules` all have an `include` property.  This is to ensure no unintended cross-loading of files between your app and the Design System.  If you don\'t want to specify an `include` per rule, you can set this as a fallback that the Design System will assign. An example value: `path.resolve(\'src\')`.\n\n- `extractTextPlugin` - _Instance<ExtractTextPlugin>. Optional._ - Provide this if you would like to produce an external stylesheet, either combined with or separate from your app\'s stylesheet, in your app build process.  `style-loader` is used as a fallback if this is not specified. An example value: `new ExtractTextPlugin({ filename: \'[name].[hash].css\' })`.\n\n- `postcssCssnext` - _Object. Optional._ - Overrides the [postcss-cssnext](https://github.com/MoOx/postcss-cssnext) options used internally.  Defaults to `{ browsers: [\'Last 2 versions\', \'IE >= 10\'] }`.\n\n'
+    )
+  );
+};
+
+/***/ }),
+/* 712 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _components = __webpack_require__(9);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (_) {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      _components.Heading,
+      { size: 'xx-large' },
+      _react2.default.createElement(
+        'h1',
+        null,
+        'Custom Build'
+      )
+    ),
+    _react2.default.createElement(
+      _components.Doc,
+      null,
+      '\n## Recommended Usage\n\nIt\'s recommended that you follow the streamlined setup outlined in the [install docs](/install).  If you\'d like to set up your Design System build in a different way, that is available and possible.  Please see some of the potential setups below.\n\n## Core: PostCSS Custom Config\n\nIf you want to setup your own PostCSS config to consume the CSSNext variables, you\'ll want install the needed dependencies:\n\n```bash\nnpm install style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev\n```\n\nThe add a `module.rule` to your `webpack.config.js`:\n\n```js\nconst path = require(\'path\')\n\nmodule: {\n  rules: [\n    {\n      test: /\\.module\\.css$/,\n      include: [path.resolve(path.join(\'node_modules\', \'@pluralsight\', \'ps-design-system-core\'))],\n      use: [\n        \'style-loader\',\n        {\n          loader: \'css-loader\',\n          options: {\n            modules: true,\n            importLoaders: 1,\n            localIdentName: \'[local]___[hash:base64:5]\'\n          }\n        },\n        {\n          loader: \'postcss-loader\',\n          options: {\n            plugins: _ => [\n              require(\'postcss-import\')(),\n              require(\'postcss-cssnext\')()\n            ]\n          }\n        }\n      ]\n    }\n  ]\n}\n```\n\n## Core: Sass Custom Config\n\nIf you wish to use the Sass variables, a custom config is necessary.  First install the required dependencies:\n\n```bash\nnpm install style-loader css-loader sass-loader node-sass --save-dev\n```\n\nThe add a `module.rule` to your `webpack.config.js`:\n\n```js\nconst path = require(\'path\')\n\nmodule: {\n  rules: [\n    {\n      test: /\\.module\\.scss/,\n      include: [path.resolve(\'src\')]\n      use: [\n        \'style-loader\',\n        {\n          loader: \'css-loader\',\n          options: {\n            modules: true,\n            importLoaders: 1,\n            localIdentName: \'[local]___[hash:base64:5]\'\n          }\n        },\n        \'sass-loader\'\n      ]\n    }\n  ]\n}\n```\n\n## Core: Import Vanilla CSS\n\nFor those not wanting to deal with a build, a CSS utility class approach is available.  These selectors are generated from the source variables.  This is not recommended.\n\nFirst include the vanilla CSS stylesheet via traditional means:means\n\n```html\n<link rel="stylesheet" href="node_modules/@pluralsight/ps-design-system-core/dist/index.css" />\n```\n\nAnd apply utility classes directly to the HTML elements:\n\n```html\n<div class="ps-colors-pink--color"></div>\n```\n\n## Components: Custom Config\n\nIf you want to setup your own webpakc config to consume the components (markup and styles), you\'ll want install the needed dependencies:\n\n```bash\nnpm install babel-loader babel-preset-react babel-preset-stage-2 babel-preset-env style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev\n```\n\nThen add a `module.rule` to your `webpack.config.js`:\n\n```js\nconst path = require(\'path\')\n\nmodule: {\n  rules: [\n    {\n      test: /.js/,\n      use: [\n        {\n          loader: \'babel-loader\'\n          options: {\n            babelrc: false,\n            presets: [\n              \'babel-preset-react\',\n              \'babel-preset-stage-2\'\n              require.resolve(\'babel-preset-stage-2\'),\n              [\n                \'babel-preset-env\',\n                { targets: { browsers: browserlist } }\n              ]\n            ]\n          }\n        }\n      ],\n      include: [path.resolve(path.join(\'node_modules\', \'@pluralsight\'))],\n    },\n    {\n      test: /\\.module\\.css$/,\n      include: [path.resolve(path.join(\'node_modules\', \'@pluralsight\', \'ps-design-system-core\'))],\n      use: [\n        \'style-loader\',\n        {\n          loader: \'css-loader\',\n          options: {\n            modules: true,\n            importLoaders: 1,\n            localIdentName: \'[local]___[hash:base64:5]\'\n          }\n        },\n        {\n          loader: \'postcss-loader\',\n          options: {\n            plugins: _ => [\n              require(\'postcss-import\')(),\n              require(\'postcss-cssnext\')()\n            ]\n          }\n        }\n      ]\n    }\n  ]\n}\n```\n\nNote that you may want to change the `include` to include only the specific directories of the components your project uses.\n\n## Examples\n\nFor full working examples of some custom configurations, please see the [examples on github](https://github.com/pluralsight/design-system/tree/master/examples).\n\n'
     )
   );
 };

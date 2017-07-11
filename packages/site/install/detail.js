@@ -1,9 +1,11 @@
 import React from 'react'
 
 import Chrome from '../layouts/chrome'
+import CustomDoc from './custom'
 import WebpackDoc from './webpack'
 
 const docs = {
+  custom: <CustomDoc />,
   webpack: <WebpackDoc />
 }
 
