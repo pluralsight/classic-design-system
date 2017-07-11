@@ -2738,12 +2738,7 @@ throw new Error("Module build failed: Error: ENOENT: no such file or directory, 
 /***/ }),
 /* 116 */,
 /* 117 */,
-/* 118 */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/jaketrent/dev/roboto/packages/icon/node_modules/prop-types/index.js'");
-
-/***/ }),
+/* 118 */,
 /* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2860,81 +2855,7 @@ Button.defaultProps = {
 exports.default = (0, _reactStyleable2.default)(_indexModule2.default)(Button);
 
 /***/ }),
-/* 120 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _classnames = __webpack_require__(210);
-
-var _classnames2 = _interopRequireDefault(_classnames);
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactStyleable = __webpack_require__(215);
-
-var _reactStyleable2 = _interopRequireDefault(_reactStyleable);
-
-var _indexModule = __webpack_require__(306);
-
-var _indexModule2 = _interopRequireDefault(_indexModule);
-
-var _bookmarkIcon = __webpack_require__(273);
-
-var _bookmarkIcon2 = _interopRequireDefault(_bookmarkIcon);
-
-var _logoIcon = __webpack_require__(274);
-
-var _logoIcon2 = _interopRequireDefault(_logoIcon);
-
-var _moreIcon = __webpack_require__(275);
-
-var _moreIcon2 = _interopRequireDefault(_moreIcon);
-
-var _propTypes = __webpack_require__(118);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var ids = {
-  bookmark: _bookmarkIcon2.default,
-  logo: _logoIcon2.default,
-  more: _moreIcon2.default
-};
-
-var getClassName = function getClassName(props) {
-  var _classNames;
-
-  return (0, _classnames2.default)((_classNames = {}, _defineProperty(_classNames, props.css['ps-icon'], true), _defineProperty(_classNames, props.css['ps-icon--' + props.size], props.size), _defineProperty(_classNames, props.className, props.className), _classNames));
-};
-
-var Icon = function Icon(props) {
-  return _react2.default.createElement(
-    'span',
-    { className: getClassName(props) },
-    _react2.default.createElement(ids[props.id], { css: props.css })
-  );
-};
-
-Icon.propTypes = {
-  size: _propTypes2.default.oneOf(['tiny', 'small', 'medium', 'large', 'x-large'])
-};
-Icon.defaultProps = {
-  size: 'small'
-};
-exports.default = (0, _reactStyleable2.default)(_indexModule2.default)(Icon);
-
-/***/ }),
+/* 120 */,
 /* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5435,22 +5356,12 @@ throw new Error("Module build failed: Error: ENOENT: no such file or directory, 
 throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/jaketrent/dev/roboto/packages/card/node_modules/shiitake/dist/index.js'");
 
 /***/ }),
-/* 210 */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/jaketrent/dev/roboto/packages/icon/node_modules/classnames/index.js'");
-
-/***/ }),
+/* 210 */,
 /* 211 */,
 /* 212 */,
 /* 213 */,
 /* 214 */,
-/* 215 */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/jaketrent/dev/roboto/packages/icon/node_modules/react-styleable/index.js'");
-
-/***/ }),
+/* 215 */,
 /* 216 */,
 /* 217 */,
 /* 218 */,
@@ -7269,7 +7180,7 @@ var _react3 = __webpack_require__(119);
 
 var _react4 = _interopRequireDefault(_react3);
 
-var _react5 = __webpack_require__(120);
+var _react5 = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"@pluralsight/ps-design-system-icon/react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 var _react6 = _interopRequireDefault(_react5);
 
@@ -7332,8 +7243,7 @@ exports.default = (0, _reactStyleable2.default)(_indexModule2.default)(function 
     _react2.default.createElement(
       _components.P,
       null,
-      'Define a button appearance by ...',
-      ' '
+      'Define a button appearance by ... '
     ),
     _react2.default.createElement(_components.Example.React, {
       component: _react2.default.createElement(
@@ -7402,10 +7312,10 @@ exports.default = (0, _reactStyleable2.default)(_indexModule2.default)(function 
       component: _react2.default.createElement(_react4.default, null),
       name: 'Button',
       permutations: [{ exampleIcon: '{<Icon id="logo" />}', icon: _react2.default.createElement(_react6.default, { id: 'logo' }) }, {
-        exampleIcon: "{<Icon id=\"logo\" css={{ 'ps-icon__fg--fill': 'cssModuleSelector' }}/>}",
+        exampleIcon: "{<Icon id=\"logo\" css={{ 'ps-design-system-icon__fg--fill': 'cssModuleSelector' }}/>}",
         icon: _react2.default.createElement(_react6.default, {
           id: 'logo',
-          css: { 'ps-icon__fg--fill': props.css.flatIcon }
+          css: { 'ps-design-system-icon__fg--fill': props.css.flatIcon }
         }),
         appearance: 'flat'
       }]
@@ -7450,7 +7360,7 @@ var _react = __webpack_require__(119);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _react3 = __webpack_require__(120);
+var _react3 = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"@pluralsight/ps-design-system-icon/react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 var _react4 = _interopRequireDefault(_react3);
 
@@ -8963,181 +8873,9 @@ exports.default = function (_) {
 };
 
 /***/ }),
-/* 273 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var SVG = function (_React$Component) {
-  _inherits(SVG, _React$Component);
-
-  function SVG() {
-    _classCallCheck(this, SVG);
-
-    return _possibleConstructorReturn(this, (SVG.__proto__ || Object.getPrototypeOf(SVG)).apply(this, arguments));
-  }
-
-  _createClass(SVG, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "svg",
-        { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" },
-        _react2.default.createElement(
-          "title",
-          null,
-          "Bookmarks icon"
-        ),
-        _react2.default.createElement("path", { d: "M20 6V3c0-2-1.045-3-2-3h-7C7.944 0 6 .998 6 4v18l1-1 4-4 4 4c.154.094 1 1 1 1V4c0-2 1.5-3 1.5-3H16s-1 1-1 3v17-1.5l-4-4-4 4V21 4C6.875 1.494 8.427.898 11 1h6.5c.402-.096 1.5 0 1.499 2C18.997 5 19 5 19 5h-3v1h4z", className: (this.props.css || {})['ps-icon__fg--fill'] })
-      );
-    }
-  }]);
-
-  return SVG;
-}(_react2.default.Component);
-
-exports.default = SVG;
-
-/***/ }),
-/* 274 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var SVG = function (_React$Component) {
-  _inherits(SVG, _React$Component);
-
-  function SVG() {
-    _classCallCheck(this, SVG);
-
-    return _possibleConstructorReturn(this, (SVG.__proto__ || Object.getPrototypeOf(SVG)).apply(this, arguments));
-  }
-
-  _createClass(SVG, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "svg",
-        { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" },
-        _react2.default.createElement(
-          "title",
-          null,
-          "Pluralsight logo icon"
-        ),
-        _react2.default.createElement(
-          "g",
-          { className: (this.props.css || {})['ps-icon__fg--fill'] },
-          _react2.default.createElement("path", { d: "M15.072 1.685C9.66-.285 3.655 2.515 1.685 7.928c-1.97 5.412.83 11.417 6.242 13.387 5.412 1.97 11.418-.831 13.388-6.242 1.97-5.412-.83-11.418-6.243-13.388M11.5 23C5.16 23 0 17.84 0 11.5 0 5.159 5.16 0 11.5 0 17.841 0 23 5.159 23 11.5 23 17.84 17.841 23 11.5 23" }),
-          _react2.default.createElement("path", { d: "M8 5v13l11-6.5L8 5zm1 2l8 4.5L9 16V7z" }),
-          _react2.default.createElement("path", { d: "M6 6.5v10l8-5-8-5zM7 9l5 2.5L7 14V9z" })
-        )
-      );
-    }
-  }]);
-
-  return SVG;
-}(_react2.default.Component);
-
-exports.default = SVG;
-
-/***/ }),
-/* 275 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var SVG = function (_React$Component) {
-  _inherits(SVG, _React$Component);
-
-  function SVG() {
-    _classCallCheck(this, SVG);
-
-    return _possibleConstructorReturn(this, (SVG.__proto__ || Object.getPrototypeOf(SVG)).apply(this, arguments));
-  }
-
-  _createClass(SVG, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "svg",
-        { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" },
-        _react2.default.createElement(
-          "title",
-          null,
-          "More icon"
-        ),
-        _react2.default.createElement(
-          "g",
-          { className: (this.props.css || {})['ps-icon__fg--fill'] },
-          _react2.default.createElement("path", { d: "M4.5 10c-.827 0-1.5.673-1.5 1.5S3.673 13 4.5 13 6 12.327 6 11.5 5.327 10 4.5 10m0 4A2.504 2.504 0 0 1 2 11.5C2 10.122 3.122 9 4.5 9S7 10.122 7 11.5 5.878 14 4.5 14M11.5 10c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5m0 4A2.504 2.504 0 0 1 9 11.5C9 10.122 10.122 9 11.5 9s2.5 1.122 2.5 2.5-1.122 2.5-2.5 2.5M18.5 10c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5m0 4a2.504 2.504 0 0 1-2.5-2.5c0-1.378 1.122-2.5 2.5-2.5s2.5 1.122 2.5 2.5-1.122 2.5-2.5 2.5" })
-        )
-      );
-    }
-  }]);
-
-  return SVG;
-}(_react2.default.Component);
-
-exports.default = SVG;
-
-/***/ }),
+/* 273 */,
+/* 274 */,
+/* 275 */,
 /* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9732,12 +9470,7 @@ throw new Error("Module build failed: ModuleBuildError: Module build failed: Err
 throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: Failed to find '@pluralsight/ps-design-system-core'\n    in [ \n        /Users/jaketrent/dev/roboto/packages/site/common/components/switcher,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/spacing,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/example,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/heading,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/color,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/doc,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/p,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/code,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/top-bar,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/side-nav,\n        /Users/jaketrent/dev/roboto/packages/site/core/typography,\n        /Users/jaketrent/dev/roboto/packages/site/components/tabs,\n        /Users/jaketrent/dev/roboto/packages/site/core/color,\n        /Users/jaketrent/dev/roboto/packages/site/components/button,\n        /Users/jaketrent/dev/roboto/packages/text/css,\n        /Users/jaketrent/dev/roboto/packages/tab/css,\n        /Users/jaketrent/dev/roboto/packages/site/layouts,\n        /Users/jaketrent/dev/roboto/packages/site,\n        /Users/jaketrent/dev/roboto/packages/link/css,\n        /Users/jaketrent/dev/roboto/packages/icon/css,\n        /Users/jaketrent/dev/roboto/packages/card/css,\n        /Users/jaketrent/dev/roboto/packages/button/css\n    ]\n    at /Users/jaketrent/dev/roboto/packages/site/node_modules/postcss-import/lib/resolve-id.js:61:11\n    at runLoaders (/Users/jaketrent/dev/roboto/packages/site/node_modules/webpack/lib/NormalModule.js:192:19)\n    at /Users/jaketrent/dev/roboto/packages/site/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/jaketrent/dev/roboto/packages/site/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/jaketrent/dev/roboto/packages/site/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Promise.resolve.then.then.catch (/Users/jaketrent/dev/roboto/packages/site/node_modules/postcss-loader/lib/index.js:176:71)\n    at process._tickCallback (internal/process/next_tick.js:109:7)");
 
 /***/ }),
-/* 306 */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: Failed to find '@pluralsight/ps-design-system-core'\n    in [ \n        /Users/jaketrent/dev/roboto/packages/site/common/components/switcher,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/spacing,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/example,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/heading,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/color,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/doc,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/p,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/code,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/top-bar,\n        /Users/jaketrent/dev/roboto/packages/site/common/components/side-nav,\n        /Users/jaketrent/dev/roboto/packages/site/core/typography,\n        /Users/jaketrent/dev/roboto/packages/site/components/tabs,\n        /Users/jaketrent/dev/roboto/packages/site/core/color,\n        /Users/jaketrent/dev/roboto/packages/site/components/button,\n        /Users/jaketrent/dev/roboto/packages/text/css,\n        /Users/jaketrent/dev/roboto/packages/tab/css,\n        /Users/jaketrent/dev/roboto/packages/site/layouts,\n        /Users/jaketrent/dev/roboto/packages/site,\n        /Users/jaketrent/dev/roboto/packages/link/css,\n        /Users/jaketrent/dev/roboto/packages/icon/css,\n        /Users/jaketrent/dev/roboto/packages/card/css,\n        /Users/jaketrent/dev/roboto/packages/button/css\n    ]\n    at /Users/jaketrent/dev/roboto/packages/site/node_modules/postcss-import/lib/resolve-id.js:61:11\n    at runLoaders (/Users/jaketrent/dev/roboto/packages/site/node_modules/webpack/lib/NormalModule.js:192:19)\n    at /Users/jaketrent/dev/roboto/packages/site/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/jaketrent/dev/roboto/packages/site/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/jaketrent/dev/roboto/packages/site/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Promise.resolve.then.then.catch (/Users/jaketrent/dev/roboto/packages/site/node_modules/postcss-loader/lib/index.js:176:71)\n    at process._tickCallback (internal/process/next_tick.js:109:7)");
-
-/***/ }),
+/* 306 */,
 /* 307 */
 /***/ (function(module, exports) {
 

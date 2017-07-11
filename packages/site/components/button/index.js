@@ -7,47 +7,44 @@ import { Code, Example, Heading, Link, P } from '../../common/components'
 import css from './index.module.css'
 
 import Button from '@pluralsight/ps-button/react'
-import Icon from '@pluralsight/ps-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon/react'
 
 export default styleable(css)(props => {
   return (
     <div className={props.css.root}>
-      <Heading size="xx-large"><h1>Buttons</h1></Heading>
+      <Heading size="xx-large">
+        <h1>Buttons</h1>
+      </Heading>
 
-      <P>
-        Install the component dependency:
-      </P>
-      <Code language="bash">
-        npm install @pluralsight/ps-button --save-dev
-      </Code>
+      <P>Install the component dependency:</P>
+      <Code language="bash">npm install @pluralsight/ps-button --save-dev</Code>
 
-      <P>
-        Include a React component in your project:
-      </P>
+      <P>Include a React component in your project:</P>
       <Code language="javascript">
         import Button from '@pluralsight/ps-button/react'
       </Code>
 
       <P>
-        For more project setup guidance, see the
-        {' '}
+        For more project setup guidance, see the{' '}
         <RouterLink to="/components/installation">
           Component Installation Instructions
         </RouterLink>
         .
       </P>
 
-      <Heading size="large"><h2>Button appearance</h2></Heading>
-      <P>
-        Define a button appearance by ...{' '}
-      </P>
+      <Heading size="large">
+        <h2>Button appearance</h2>
+      </Heading>
+      <P>Define a button appearance by ... </P>
       <Example.React
         component={<Button>Click me</Button>}
         name="Button"
         permutations={[{}, { appearance: 'stroke' }, { appearance: 'flat' }]}
       />
 
-      <Heading size="large"><h2>Button sizes</h2></Heading>
+      <Heading size="large">
+        <h2>Button sizes</h2>
+      </Heading>
       <Example.React
         component={<Button>Click me</Button>}
         name="Button"
@@ -59,7 +56,9 @@ export default styleable(css)(props => {
         ]}
       />
 
-      <Heading size="large"><h2>Button with icon</h2></Heading>
+      <Heading size="large">
+        <h2>Button with icon</h2>
+      </Heading>
       <Example.React
         component={<Button>Click me</Button>}
         name="Button"
@@ -79,7 +78,9 @@ export default styleable(css)(props => {
         ]}
       />
 
-      <Heading size="large"><h2>Button with lone icon</h2></Heading>
+      <Heading size="large">
+        <h2>Button with lone icon</h2>
+      </Heading>
       <Example.React
         component={<Button />}
         name="Button"
@@ -87,11 +88,11 @@ export default styleable(css)(props => {
           { exampleIcon: '{<Icon id="logo" />}', icon: <Icon id="logo" /> },
           {
             exampleIcon:
-              "{<Icon id=\"logo\" css={{ 'ps-icon__fg--fill': 'cssModuleSelector' }}/>}",
+              "{<Icon id=\"logo\" css={{ 'ps-design-system-icon__fg--fill': 'cssModuleSelector' }}/>}",
             icon: (
               <Icon
                 id="logo"
-                css={{ 'ps-icon__fg--fill': props.css.flatIcon }}
+                css={{ 'ps-design-system-icon__fg--fill': props.css.flatIcon }}
               />
             ),
             appearance: 'flat'
@@ -99,7 +100,9 @@ export default styleable(css)(props => {
         ]}
       />
 
-      <Heading size="large"><h2>Disabled button</h2></Heading>
+      <Heading size="large">
+        <h2>Disabled button</h2>
+      </Heading>
       <Example.React
         component={<Button>Disabled button</Button>}
         name="Button"

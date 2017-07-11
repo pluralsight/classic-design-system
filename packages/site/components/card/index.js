@@ -1,5 +1,5 @@
 import Button from '@pluralsight/ps-button/react'
-import Icon from '@pluralsight/ps-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 
 import { Code, Example, Heading, Link, P } from '../../common/components'
