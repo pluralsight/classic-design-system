@@ -1,5 +1,5 @@
 {
-  "name": "@pluralsight/ps-tab",
+  "name": "@pluralsight/ps-design-system-tab",
   "version": "1.3.1",
   "description": "Design system component for tab list ui",
   "main": "index.js",
