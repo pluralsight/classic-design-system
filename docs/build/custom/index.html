@@ -52,9 +52,7 @@ module: {
     }
   ]
 }
-</code></pre><h2>Core: Import Vanilla CSS</h2><p>For those not wanting to deal with a build, a CSS utility class approach is available.  These selectors are generated from the source variables.  This is not recommended.</p><p>First include the vanilla CSS stylesheet via traditional means:means</p><pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;node_modules/@pluralsight/ps-design-system-core/dist/index.css&quot; /&gt;
-</code></pre><p>And apply utility classes directly to the HTML elements:</p><pre><code class="language-html">&lt;div class=&quot;ps-colors-pink--color&quot;&gt;&lt;/div&gt;
-</code></pre><h2>Components: Custom Config</h2><p>If you want to setup your own webpakc config to consume the components (markup and styles), you&#x27;ll want install the needed dependencies:</p><pre><code class="language-bash">npm install babel-loader babel-preset-react babel-preset-stage-2 babel-preset-env style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev
+</code></pre><h2>Core: Import Vanilla CSS</h2><p>For those not wanting to deal with a build, a CSS utility class approach is available.  These selectors are generated from the source variables.  This is not recommended.  No build is technically necessary.  See the <a href="/core/usage">core usage docs</a> for details.</p><h2>Components: Custom Config</h2><p>If you want to setup your own webpakc config to consume the components (markup and styles), you&#x27;ll want install the needed dependencies:</p><pre><code class="language-bash">npm install babel-loader babel-preset-react babel-preset-stage-2 babel-preset-env style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev
 </code></pre><p>Then add a <code>module.rule</code> to your <code>webpack.config.js</code>:</p><pre><code class="language-js">const path = require(&#x27;path&#x27;)
 
 module: {

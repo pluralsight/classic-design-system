@@ -29,7 +29,7 @@ module.exports = decorateConfig({
 })
 \`\`\`
 
-For more details on the build decorator, see the [webpack docs](/build/webpack).
+For more details on the build decorator, see the [webpack build docs](/build/webpack).
 
 For custom alternatives, see the [custom build docs](/build/custom).
 

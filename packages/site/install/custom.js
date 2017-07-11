@@ -91,19 +91,7 @@ module: {
 
 ## Core: Import Vanilla CSS
 
-For those not wanting to deal with a build, a CSS utility class approach is available.  These selectors are generated from the source variables.  This is not recommended.
-
-First include the vanilla CSS stylesheet via traditional means:means
-
-\`\`\`html
-<link rel="stylesheet" href="node_modules/@pluralsight/ps-design-system-core/dist/index.css" />
-\`\`\`
-
-And apply utility classes directly to the HTML elements:
-
-\`\`\`html
-<div class="ps-colors-pink--color"></div>
-\`\`\`
+For those not wanting to deal with a build, a CSS utility class approach is available.  These selectors are generated from the source variables.  This is not recommended.  No build is technically necessary.  See the [core usage docs](/core/usage) for details.
 
 ## Components: Custom Config
 
