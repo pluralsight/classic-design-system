@@ -38,14 +38,3 @@
   padding-left: 8px;
   margin-right: 12px;
 }
-.link code {
-  display: inline-block;
-  color: var(--psColorsPink);
-  font-size: var(--psTypeFontSizeExtraSmall);
-  line-height: var(--psTypeLineHeightTight);
-  border: 1px solid var(--psColorsGray01);
-  background: var(--psColorsBone);
-  border-radius: 2px;
-  padding: 0 var(--psLayoutSpacingTiny);
-  margin: 0 var(--psLayoutSpacingTiny);
-}

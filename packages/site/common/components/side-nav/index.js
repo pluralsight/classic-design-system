@@ -12,10 +12,7 @@ export default styleable(css)(props =>
     <Logo />
     <Group>
       <GroupTitle>INTRODUCTION</GroupTitle>
-      <Link href="/core/installation">Install <code>core</code></Link>
-      <Link href="/components/installation">
-        Install <code>components</code>
-      </Link>
+      <Link href="/install">Install</Link>
     </Group>
     <Group>
       <GroupTitle>CORE</GroupTitle>

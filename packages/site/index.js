@@ -7,11 +7,13 @@ import Chrome from './layouts/chrome'
 import ComponentDetail from './components/detail'
 import CoreDetail from './core/detail'
 import Home from './home'
+import Install from './install'
 import './index.module.css'
 
 const routes = (
   <div>
     <Route exact path="/" component={Home} />
+    <Route path="/install" component={Install} />
     <Route path="/core/:coreId/" component={CoreDetail} />
     <Route path="/components/:componentId/" component={ComponentDetail} />
   </div>
@@ -20,7 +22,9 @@ const routes = (
 const Html = props =>
   <html>
     <head>
-      <title>{props.title || 'Pluralsight Design System'}</title>
+      <title>
+        {props.title || 'Pluralsight Design System'}
+      </title>
       <meta name="HandheldFriendly" content="True" />
       <meta name="MobileOptimized" content="320" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -52,7 +56,9 @@ export default locals => {
 
 if (typeof document != 'undefined') {
   ReactDOM.render(
-    <BrowserRouter>{routes}</BrowserRouter>,
+    <BrowserRouter>
+      {routes}
+    </BrowserRouter>,
     document.getElementById('app')
   )
 }
