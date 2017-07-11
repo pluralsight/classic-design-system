@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@pluralsight/ps-button": "^1.6.10",
+    "@pluralsight/ps-design-system-button": "^1.6.10",
     "@pluralsight/ps-design-system-core": "^1.5.5",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
