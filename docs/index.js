@@ -27304,6 +27304,10 @@ var _install = __webpack_require__(173);
 
 var _install2 = _interopRequireDefault(_install);
 
+var _detail5 = __webpack_require__(710);
+
+var _detail6 = _interopRequireDefault(_detail5);
+
 __webpack_require__(174);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -27313,6 +27317,7 @@ var routes = _react2.default.createElement(
   null,
   _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
   _react2.default.createElement(_reactRouterDom.Route, { path: '/install', component: _install2.default }),
+  _react2.default.createElement(_reactRouterDom.Route, { path: '/build/:buildId', component: _detail6.default }),
   _react2.default.createElement(_reactRouterDom.Route, { path: '/core/:coreId/', component: _detail4.default }),
   _react2.default.createElement(_reactRouterDom.Route, { path: '/components/:componentId/', component: _detail2.default })
 );
@@ -84595,6 +84600,126 @@ function getDisplayName(Component) {
   return Component.displayName || Component.name || 'Component';
 }
 //# sourceMappingURL=get-display-name.js.map
+
+/***/ }),
+/* 667 */,
+/* 668 */,
+/* 669 */,
+/* 670 */,
+/* 671 */,
+/* 672 */,
+/* 673 */,
+/* 674 */,
+/* 675 */,
+/* 676 */,
+/* 677 */,
+/* 678 */,
+/* 679 */,
+/* 680 */,
+/* 681 */,
+/* 682 */,
+/* 683 */,
+/* 684 */,
+/* 685 */,
+/* 686 */,
+/* 687 */,
+/* 688 */,
+/* 689 */,
+/* 690 */,
+/* 691 */,
+/* 692 */,
+/* 693 */,
+/* 694 */,
+/* 695 */,
+/* 696 */,
+/* 697 */,
+/* 698 */,
+/* 699 */,
+/* 700 */,
+/* 701 */,
+/* 702 */,
+/* 703 */,
+/* 704 */,
+/* 705 */,
+/* 706 */,
+/* 707 */,
+/* 708 */,
+/* 709 */,
+/* 710 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _chrome = __webpack_require__(40);
+
+var _chrome2 = _interopRequireDefault(_chrome);
+
+var _webpack = __webpack_require__(711);
+
+var _webpack2 = _interopRequireDefault(_webpack);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var docs = {
+  webpack: _react2.default.createElement(_webpack2.default, null)
+};
+
+exports.default = function (props) {
+  return _react2.default.createElement(
+    _chrome2.default,
+    { title: props.match.params.buildId },
+    docs[props.match.params.buildId]
+  );
+};
+
+/***/ }),
+/* 711 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _components = __webpack_require__(9);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (_) {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      _components.Heading,
+      { size: 'xx-large' },
+      _react2.default.createElement(
+        'h1',
+        null,
+        'Build / Webpack'
+      )
+    ),
+    _react2.default.createElement(
+      _components.Doc,
+      null,
+      '\n## Build Lib Purpose\n\nThe `@pluralsight/ps-design-system-build` library is meant to provide tooling to build the design system core elements and components.\n\nIt is used internally on components, and it can be used in your app that uses the Design System.\n\n## Webpack Config Decorator\n\nThe most immediately-useful utility for your project will be the `decorateConfig` function.  It is meant to wrap your project\'s webpack config.  This allows the Design System to embrace the requirement of a build without requiring you to see or know about the guts of it.\n\nTo use this utility properly, you should familiarize yourself with its usage and several parameters.\n\n### Install\n\nTo install, simply:\n\n```bash\nnpm install @pluralsight/ps-design-system-build --save-dev\n```\n\n### Usage\n\nThen in your `webpack.config.js`, import it:\n\n```js\nconst { decorateConfig } = require(\'@pluralsight/ps-design-system-build/webpack\')\n```\n\nAnd use it to wrap your project\'s original webpack configuration object.\n\n```js\nconst yourOriginalConfig = { /* ... */ }\nconst options = {}\nmodule.exports = decorateConfig(yourOriginalConfig, options)\n```\n\nThe second argument to `decorateConfig` is an options object.  There is one required option, `packageJson`.\n\n### Options\n\nThese are all the potential options to `decorateConfig`:\n\n- `packageJson` - _Object. Required._ - The JSON content of your `package.json`.  Used to discover what elements of the Design System you\'re using in your project.  Most commonly, the value is simply `require(\'./package.json\')`.\n\n- `extraInclude` - _Array<String>. Optional._ - List of absolute filesystem paths.  The Design System will process its own code with its own predetermined webpack config.  If you\'d like to use this Design System config on your own app code, list your code\'s paths here. An example value: `[path.resolve(\'src\')]`.\n\n- `defaultInclude` - _String. Optional._ - Single absolute filesystem path.  `decorateConfig` requires that your project\'s `module.rules` all have an `include` property.  This is to ensure no unintended cross-loading of files between your app and the Design System.  If you don\'t want to specify an `include` per rule, you can set this as a fallback that the Design System will assign. An example value: `path.resolve(\'src\')`.\n\n- `extractTextPlugin` - _Instance<ExtractTextPlugin>. Optional._ - Provide this if you would like to produce an external stylesheet, either combined with or separate from your app\'s stylesheet, in your app build process.  `style-loader` is used as a fallback if this is not specified. An example value: `new ExtractTextPlugin({ filename: \'[name].[hash].css\' })`.\n\n- `postcssCssnext` - _Object. Optional._ - Overrides the [postcss-cssnext](https://github.com/MoOx/postcss-cssnext) options used internally.  Defaults to `{ browsers: [\'Last 2 versions\', \'IE >= 10\'] }`.\n\n'
+    )
+  );
+};
 
 /***/ })
 /******/ ]);

@@ -8,12 +8,14 @@ import ComponentDetail from './components/detail'
 import CoreDetail from './core/detail'
 import Home from './home'
 import Install from './install'
+import InstallDetail from './install/detail'
 import './index.module.css'
 
 const routes = (
   <div>
     <Route exact path="/" component={Home} />
     <Route path="/install" component={Install} />
+    <Route path="/build/:buildId" component={InstallDetail} />
     <Route path="/core/:coreId/" component={CoreDetail} />
     <Route path="/components/:componentId/" component={ComponentDetail} />
   </div>
