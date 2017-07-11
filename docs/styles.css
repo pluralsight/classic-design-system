@@ -24,45 +24,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -139,45 +137,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -231,45 +227,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -315,45 +309,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -372,7 +364,7 @@
 .root___34dIs {
   margin: 0;
   color: var(--psColorsBlack);
-  font-size: var(--psTypeFontSizeExtraSmall);
+  font-size: var(--psTypeFontSizeXSmall);
   line-height: var(--psTypeLineHeightExtra);
   font-weight: var(--psTypeFontWeightMedium);
 }
@@ -402,45 +394,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -520,45 +510,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -595,11 +583,11 @@
 .textCompany___2oKIi {
   display: block;
   letter-spacing: .15em;
-  font-size: var(--psTypeFontSizeExtraSmall);
+  font-size: var(--psTypeFontSizeXSmall);
   font-weight: var(--psTypeFontWeightMedium);
   color: #000; /* TODO: real colorz */
   font-family: var(--psTypeFontFamily);
-  padding-top: var(--psLayoutSpacingExtraSmall);
+  padding-top: var(--psLayoutSpacingXSmall);
 }
 .textTitle___36w9a {
   font-size: 8px; /* TODO: not in ds */
@@ -637,45 +625,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -724,45 +710,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -811,45 +795,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -900,45 +882,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -1005,45 +985,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -1122,45 +1100,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -1185,22 +1161,22 @@
 .root___1JMro {
 }
 .root___1JMro h1 {
-  font-size: var(--psTypeFontSizeXxl);
-  letter-spacing: var(--psTypeLetterSpacingXxl);
+  font-size: var(--psTypeFontSizeXXLarge);
+  letter-spacing: var(--psTypeLetterSpacingXXLarge);
   font-weight: var(--psTypeFontWeightLight);
-  margin: var(--psLayoutSpacingXxl) 0;
+  margin: var(--psLayoutSpacingXXLarge) 0;
 }
 .root___1JMro h2 {
   font-size: var(--psTypeFontSizeLarge);
   letter-spacing: var(--psTypeLetterSpacingLarge);
   font-weight: var(--psTypeFontWeightBook);
-  margin: var(--psLayoutSpacingXl) 0 var(--psLayoutSpacingSmall) 0;
+  margin: var(--psLayoutSpacingXLarge) 0 var(--psLayoutSpacingSmall) 0;
 }
 .root___1JMro h3 {
   font-size: var(--psTypeFontSizeMedium);
   letter-spacing: var(--psTypeLetterSpacingMedium);
   font-weight: var(--psTypeFontWeightBook);
-  margin: var(--psLayoutSpacingXl) 0 var(--psLayoutSpacingSmall) 0;
+  margin: var(--psLayoutSpacingXLarge) 0 var(--psLayoutSpacingSmall) 0;
 }
 .root___1JMro pre {
   padding: var(--psLayoutSpacingLarge);
@@ -1243,45 +1219,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -1336,45 +1310,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -1459,45 +1431,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -1515,7 +1485,7 @@
 }
 .root___3LLvR {
   color: var(--psColorsWhite);
-  margin-bottom: var(--psLayoutSpacingXl);
+  margin-bottom: var(--psLayoutSpacingXLarge);
 }
 :root {
   /* ui colors */
@@ -1543,45 +1513,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -1664,45 +1632,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -1722,16 +1688,16 @@
   color: var(--psColorsWhite);
 }
 .ps-heading--xx-large___1vs6u {
-  font-size: var(--psTypeFontSizeXxl);
-  letter-spacing: var(--psTypeLetterSpacingXxl);
+  font-size: var(--psTypeFontSizeXXLarge);
+  letter-spacing: var(--psTypeLetterSpacingXXLarge);
   font-weight: var(--psTypeFontWeightLight);
-  margin: var(--psLayoutSpacingXxl) 0;
+  margin: var(--psLayoutSpacingXXLarge) 0;
 }
 .ps-heading--large___12bkX {
   font-size: var(--psTypeFontSizeLarge);
   letter-spacing: var(--psTypeLetterSpacingLarge);
   font-weight: var(--psTypeFontWeightBook);
-  margin: var(--psLayoutSpacingXl) 0 var(--psLayoutSpacingSmall) 0;
+  margin: var(--psLayoutSpacingXLarge) 0 var(--psLayoutSpacingSmall) 0;
 }
 .ps-heading--medium___2btc0 {
   font-size: var(--psTypeFontSizeMedium);
@@ -1741,8 +1707,8 @@
 }
 .ps-heading--small-caps___1lKpW {
   color: var(--psColorsGray02);
-  font-size: var(--psTypeFontSizeExtraSmall);
-  letter-spacing: var(--psTypeLetterSpacingExtraSmall);
+  font-size: var(--psTypeFontSizeXSmall);
+  letter-spacing: var(--psTypeLetterSpacingXSmall);
   font-weight: var(--psTypeFontWeightMedium);
   margin: var(--psLayoutSpacingMedium) 0 var(--psLayoutSpacingSmall) 0;
   text-transform: uppercase;
@@ -1773,45 +1739,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -1868,45 +1832,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -1954,45 +1916,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -2038,45 +1998,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -2121,45 +2079,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -2207,45 +2163,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -2315,7 +2269,7 @@
 }
 .label___2fKTV {
   margin-top: var(--psLayoutSpacingTiny);
-  font-size: var(--psTypeFontSizeExtraSmall);
+  font-size: var(--psTypeFontSizeXSmall);
   font-weight: var(--psTypeFontWeightBook);
   line-height: var(--psTypeLineHeightTight);
 }
@@ -2345,45 +2299,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -2427,45 +2379,679 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
+
+  /* line height */
+  --psTypeLineHeightTight: 20px;
+  --psTypeLineHeightStandard: 24px;
+  --psTypeLineHeightExtra: 32px;
+  --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
+.ps-button___2EFfR {
+  display: inline-flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingMedium);
+  border: 0;
+  border-radius: 2px;
+
+  font-size: var(--psTypeFontSizeSmall);
+  line-height: var(--psTypeLineHeightStandard);
+  font-weight: var(--psTypeFontWeightMedium);
+  text-align: center;
+
+  /* TODO: font family */
+  color: var(--psColorsWhite);
+  background: var(--psColorsOrange);
+  cursor: pointer;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: all var(--psMotionSpeedNormal);
+}
+.ps-button___2EFfR:hover {
+  background: var(--psColorsOrangeLight);
+}
+/* size */
+.ps-button--tiny___cmVTE {
+  font-size: var(--psTypeFontSizeXSmall);
+  line-height: var(--psTypeLineHeightStandard);
+  padding: 0 var(--psLayoutSpacingXSmall);
+  height: 24px;
+}
+.ps-button--small___3bU65 {
+  font-size: var(--psTypeFontSizeSmall);
+  line-height: var(--psTypeLineHeightStandard);
+  padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingSmall);
+  height: 32px;
+}
+.ps-button--medium___ATQAu {
+  font-size: var(--psTypeFontSizeSmall);
+  line-height: var(--psTypeLineHeightStandard);
+  padding: var(--psLayoutSpacingXSmall) var(--psLayoutSpacingSmall);
+  height: 40px;
+}
+.ps-button--large___1zAYp {
+  font-size: var(--psTypeFontSizeMedium);
+  line-height: var(--psTypeLineHeightExtra);
+  padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingMedium);
+  height: 48px;
+}
+/* appearance */
+.ps-button--stroke___2-hZL {
+  border: 1px solid var(--psColorsOrange);
+  color: var(--psColorsOrange);
+  background: none;
+}
+.ps-button--stroke___2-hZL:hover {
+  color: var(--psColorsOrangeLight);
+  border: 1px solid var(--psColorsOrangeLight);
+  background: none;
+}
+.ps-button--flat___3IG4H {
+  border: none;
+  color: var(--psColorsGray02);
+  background: none;
+}
+.ps-button--flat___3IG4H:hover {
+  color: var(--psColorsWhite);
+  background: var(--psColorsGray04);
+}
+/* disabled */
+.ps-button--disabled___2IvkE {
+  color: var(--psColorsGray02);
+}
+.ps-button--disabled___2IvkE:hover {
+  color: var(--psColorsGray02);
+}
+.ps-button--disabled___2IvkE.ps-button--stroke___2-hZL {
+  border: none;
+}
+.ps-button--disabled___2IvkE:not(.ps-button--flat___3IG4H) {
+  background: var(--psColorsGray03);
+}
+.ps-button--disabled___2IvkE.ps-button--flat___3IG4H {
+  opacity: 0.4;
+}
+.ps-button--disabled___2IvkE.ps-button--flat___3IG4H:hover {
+  color: var(--psColorsGray02);
+  background: none;
+}
+/* icon and iconAlign */
+.ps-button--icon-align-right___1H91Q {
+  flex-direction: row-reverse;
+}
+.ps-button__icon___3o9gL {
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  margin-right: var(--psLayoutSpacingXSmall);
+}
+.ps-button___2EFfR .ps-icon__fg--fill___2t5_8 {
+  fill: var(--psColorsWhite);
+  transition: all var(--psMotionSpeedNormal);
+}
+.ps-button___2EFfR .ps-icon__fg--stroke___2ym0E {
+  stroke: var(--psColorsWhite);
+  transition: all var(--psMotionSpeedNormal);
+}
+.ps-button--stroke___2-hZL .ps-icon__fg--fill___2t5_8 {
+  fill: var(--psColorsOrange);
+}
+.ps-button--stroke___2-hZL .ps-icon__fg--stroke___2ym0E {
+  stroke: var(--psColorsOrange);
+}
+.ps-button--stroke___2-hZL:hover .ps-icon__fg--fill___2t5_8 {
+  fill: var(--psColorsOrangeLight);
+}
+.ps-button--stroke___2-hZL:hover .ps-icon__fg--stroke___2ym0E {
+  stroke: var(--psColorsOrangeLight);
+}
+.ps-button--flat___3IG4H .ps-icon__fg--fill___2t5_8 {
+  fill: var(--psColorsGray02);
+}
+.ps-button--flat___3IG4H .ps-icon__fg--stroke___2ym0E {
+  stroke: var(--psColorsGray02);
+}
+.ps-button--flat___3IG4H:hover .ps-icon__fg--fill___2t5_8 {
+  fill: var(--psColorsWhite);
+}
+.ps-button--flat___3IG4H:hover .ps-icon__fg--stroke___2ym0E {
+  stroke: var(--psColorsWhite);
+}
+.ps-button--disabled___2IvkE .ps-icon__fg--fill___2t5_8 {
+  fill: var(--psColorsGray02);
+}
+.ps-button--disabled___2IvkE .ps-icon__fg--stroke___2ym0E {
+  stroke: var(--psColorsGray02);
+}
+.ps-button--icon-align-right___1H91Q .ps-button__icon___3o9gL {
+  margin-right: 0;
+  margin-left: var(--psLayoutSpacingXSmall);
+}
+.ps-button--icon-only___1iOv7 {
+  padding: 0;
+}
+.ps-button--icon-only___1iOv7.ps-button--tiny___cmVTE {
+  width: 24px;
+}
+.ps-button--icon-only___1iOv7.ps-button--small___3bU65 {
+  width: 32px;
+}
+.ps-button--icon-only___1iOv7.ps-button--medium___ATQAu {
+  width: 40px;
+}
+.ps-button--icon-only___1iOv7.ps-button--large___1zAYp {
+  width: 48px;
+}
+.ps-button--icon-only___1iOv7 .ps-button__icon___3o9gL {
+  margin: 0;
+}
+:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+}
+:root {
+  /* spacing */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingXSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
+}
+:root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+  /* font size */
+  --psTypeFontSizeGigantic: 60px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
+  --psTypeFontSizeLarge: 24px;
+  --psTypeFontSizeMedium: 18px;
+  --psTypeFontSizeSmall: 14px;
+  --psTypeFontSizeXSmall: 12px;
+
+  /* letter spacing */
+  --psTypeLetterSpacingGigantic: -1px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
+  --psTypeLetterSpacingLarge: 0.36px;
+  --psTypeLetterSpacingMedium: 0;
+  --psTypeLetterSpacingSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
+
+  /* font weight */
+  --psTypeFontWeightBold: 700;
+  --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightBook: 400;
+  --psTypeFontWeightLight: 300;
+  --psTypeFontWeightXLight: 200;
+
+  /* line height */
+  --psTypeLineHeightTight: 20px;
+  --psTypeLineHeightStandard: 24px;
+  --psTypeLineHeightExtra: 32px;
+  --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
+:root {
+  --psIconHeight: 24px;
+  --psIconWidth: 24px;
+}
+.ps-icon___2krFn {
+  display: inline-block;
+  height: var(--psIconHeight);
+  width: var(--psIconWidth);
+}
+.ps-icon__fg--fill___33RB2 {
+  fill: var(--psColorsWhite);
+}
+.ps-icon__fg--stroke___3xx8p {
+  stroke: var(--psColorsWhite);
+}
+/* size */
+.ps-icon--x-large___35PdO {
+  height: 160px;
+  width: 160px;
+}
+.ps-icon--large___2lD9w {
+  height: 96px;
+  width: 96px;
+}
+.ps-icon--medium_____wF0 {
+  height: 48px;
+  width: 48px;
+}
+.ps-icon--small___32ekv {
+  height: 24px;
+  width: 24px;
+}
+.ps-icon--tiny___3jZTf {
+  height: 12px;
+  width: 12px;
+}
+
+:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+}
+:root {
+  /* spacing */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingXSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
+}
+:root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+  /* font size */
+  --psTypeFontSizeGigantic: 60px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
+  --psTypeFontSizeLarge: 24px;
+  --psTypeFontSizeMedium: 18px;
+  --psTypeFontSizeSmall: 14px;
+  --psTypeFontSizeXSmall: 12px;
+
+  /* letter spacing */
+  --psTypeLetterSpacingGigantic: -1px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
+  --psTypeLetterSpacingLarge: 0.36px;
+  --psTypeLetterSpacingMedium: 0;
+  --psTypeLetterSpacingSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
+
+  /* font weight */
+  --psTypeFontWeightBold: 700;
+  --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightBook: 400;
+  --psTypeFontWeightLight: 300;
+  --psTypeFontWeightXLight: 200;
+
+  /* line height */
+  --psTypeLineHeightTight: 20px;
+  --psTypeLineHeightStandard: 24px;
+  --psTypeLineHeightExtra: 32px;
+  --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
+.ps-card___2zSSP {
+  width: 100%;
+}
+/* size */
+.ps-card--small___3gxtm {
+  min-width: 120px;
+  max-width: 240px;
+}
+.ps-card--medium___5eDWG {
+  min-width: 240px;
+  max-width: 440;
+}
+.ps-card--large___xbvHu {
+  min-width: 440px;
+  max-width: 680px;
+}
+/* child icons */
+.ps-card___2zSSP .ps-icon__fg--fill___1Nbfk {
+  fill: var(--psColorsWhite);
+  transition: all var(--psMotionSpeedNormal);
+}
+.ps-card___2zSSP .ps-icon__fg--stroke___2deYS {
+  stroke: var(--psColorsWhite);
+  transition: all var(--psMotionSpeedNormal);
+}
+.ps-card__image-frame___1ocA2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--psColorsBlack);
+}
+.ps-card--small___3gxtm .ps-card__image-frame___1ocA2 {
+  height: 96px;
+}
+.ps-card--medium___5eDWG .ps-card__image-frame___1ocA2 {
+  height: 108px;
+}
+.ps-card--large___xbvHu .ps-card__image-frame___1ocA2 {
+  height: 208px;
+}
+.ps-card__image___2MmCd {
+  position: relative;
+  object-fit: cover;
+  min-height: 100%;
+  min-width: 100%;
+}
+.ps-card__action-bar___2d3QI {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 64px;
+  padding: var(--psLayoutSpacingSmall)
+    var(--psLayoutSpacingSmall)
+    0
+    var(--psLayoutSpacingSmall);
+  /* TODO: update site webpack to use build/webpack to support this postcss update */
+  /* background: linear-gradient(to bottom, color(var(--psColorsBlack), alpha(-20%)), transparent); */
+  background: linear-gradient(to bottom, var(--psColorsBlack), transparent);
+  transition: opacity var(--psMotionSpeedNormal);
+  opacity: 0;
+}
+.ps-card--full-overlay___14Isw .ps-card__action-bar___2d3QI {
+  background: none;
+}
+.ps-card--action-bar-visible___1BAxp .ps-card__action-bar___2d3QI,
+.ps-card__image-frame___1ocA2:hover .ps-card__action-bar___2d3QI,
+.ps-card__image-frame___1ocA2:active .ps-card__action-bar___2d3QI {
+  opacity: 1;
+}
+.ps-card__full-overlay___351f7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* TODO: update postcss to make styleguide psColorsBlack (hex) available here */
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity var(--psMotionSpeedNormal);
+  opacity: 0;
+}
+.ps-card--full-overlay-visible___3dcHV .ps-card__full-overlay___351f7,
+.ps-card__image-frame___1ocA2:hover .ps-card__full-overlay___351f7,
+.ps-card__image-frame___1ocA2:active .ps-card__full-overlay___351f7 {
+  opacity: 1;
+}
+.ps-card__tag___aRZAY {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: var(--psLayoutSpacingSmall);
+  left: 0;
+  padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingXSmall);
+  background: var(--psColorsGray04);
+}
+.ps-card__tag__part___1rjkA {
+  color: var(--psColorsWhite);
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 16px;
+}
+.ps-card__tag__part___1rjkA + .ps-card__tag__part___1rjkA {
+  margin-left: var(--psLayoutSpacingXSmall);
+}
+.ps-card__tag__part--icon___4cg9Q {
+  height: 16px;
+  width: 16px;
+}
+.ps-card__bonus-bar___1g5FL {
+  position: absolute;
+  bottom: var(--psLayoutSpacingSmall);
+  left: var(--psLayoutSpacingSmall);
+}
+.ps-card__progress___3pVLT {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: var(--psColorsGray03);
+  overflow: hidden;
+}
+.ps-card__progress__bar___41-QK {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background-color: var(--psColorsWhite);
+}
+.ps-card__title___CCHuG {
+  margin-top: var(--psLayoutSpacingXSmall);
+  font-weight: var(--psTypeFontWeightMedium);
+  overflow: hidden;
+}
+.ps-card--small___3gxtm .ps-card__title___CCHuG {
+  font-size: var(--psTypeFontSizeXSmall);
+  line-height: var(--psTypeLineHeightTight);
+  max-height: calc(2 * var(--psTypeLineHeightTight));
+}
+.ps-card--medium___5eDWG .ps-card__title___CCHuG {
+  font-size: var(--psTypeFontSizeSmall);
+  line-height: var(--psTypeLineHeightTight);
+  max-height: calc(2 * var(--psTypeLineHeightTight));
+}
+.ps-card--large___xbvHu .ps-card__title___CCHuG {
+  font-size: var(--psTypeFontSizeMedium);
+  line-height: var(--psTypeLineHeightStandard);
+  max-height: calc(2 * var(--psTypeLineHeightStandard));
+}
+.ps-card__metadata___3YV1n {
+  display: flex;
+  align-items: center;
+  font-weight: var(--psTypeFontWeightBook);
+  color: var(--psColorsGray02);
+  max-width: 100%;
+}
+.ps-card--small___3gxtm .ps-card__metadata___3YV1n {
+  font-size: var(--psTypeFontSizeXSmall);
+  line-height: var(--psTypeLineHeightSmall);
+}
+.ps-card--medium___5eDWG .ps-card__metadata___3YV1n {
+  font-size: var(--psTypeFontSizeXSmall);
+  line-height: var(--psTypeLineHeightSmall);
+}
+.ps-card--large___xbvHu .ps-card__metadata___3YV1n {
+  font-size: var(--psTypeFontSizeSmall);
+  line-height: var(--psTypeLineHeightTight);
+}
+.ps-card__metadata__datum___-Ixrv {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 2;
+}
+.ps-card__metadata__datum___-Ixrv:nth-of-type(1) {
+  flex-shrink: 1;
+}
+.ps-card__title___CCHuG a, .ps-card__metadata__datum___-Ixrv a {
+  color: inherit;
+}
+.ps-card__title___CCHuG a:hover,
+.ps-card__title___CCHuG a:active,
+.ps-card__metadata__datum___-Ixrv a:hover,
+.ps-card__metadata__datum___-Ixrv a:active {
+  color: var(--psColorsWhite);
+  text-decoration: underline;
+  transition: all var(--psMotionSpeedNormal);
+  cursor: pointer;
+}
+.ps-card__metadata__dot___1c4pP {
+  display: inline-block;
+  margin: 0 var(--psLayoutSpacingXSmall);
+  min-height: 4px;
+  min-width: 4px;
+  border-radius: 50%;
+  background-color: var(--psColorsGray02);
+}
+:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+}
+:root {
+  /* spacing */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingXSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
+}
+:root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+  /* font size */
+  --psTypeFontSizeGigantic: 60px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
+  --psTypeFontSizeLarge: 24px;
+  --psTypeFontSizeMedium: 18px;
+  --psTypeFontSizeSmall: 14px;
+  --psTypeFontSizeXSmall: 12px;
+
+  /* letter spacing */
+  --psTypeLetterSpacingGigantic: -1px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
+  --psTypeLetterSpacingLarge: 0.36px;
+  --psTypeLetterSpacingMedium: 0;
+  --psTypeLetterSpacingSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
+
+  /* font weight */
+  --psTypeFontWeightBold: 700;
+  --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightBook: 400;
+  --psTypeFontWeightLight: 300;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -2513,45 +3099,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -2628,45 +3212,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -2710,45 +3292,128 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
+
+  /* line height */
+  --psTypeLineHeightTight: 20px;
+  --psTypeLineHeightStandard: 24px;
+  --psTypeLineHeightExtra: 32px;
+  --psTypeLineHeightHuge: 40px;
+}
+:root {
+  /* motion */
+  --psMotionSpeedFastest: 100ms;
+  --psMotionSpeedFaster: 150ms;
+  --psMotionSpeedNormal: 200ms;
+  --psMotionSpeedSlower: 250ms;
+  --psMotionSpeedSlowest: 300ms;
+}
+.ps-link___3ZC5j {
+  color: var(--psColorsOrange);
+  text-decoration: none;
+}
+.ps-link___3ZC5j:hover {
+  text-decoration: underline;
+}
+:root {
+  /* ui colors */
+  --psColorsWhite: #ffffff;
+  --psColorsBone: #f2f2f2;
+  --psColorsGray01: #cccccc;
+  --psColorsGray02: #aaaaaa;
+  --psColorsGray03: #555555;
+  --psColorsGray04: #363636;
+  --psColorsGray05: #222222;
+  --psColorsGray06: #181818;
+  --psColorsBlack: #000000;
+
+  --psColorsPink: #e80a89;
+  --psColorsRed: #de3636;
+  --psColorsOrange: #f96816;
+  --psColorsOrangeLight: #ff7b39;
+  --psColorsYellow: #ffc200;
+  --psColorsGreenLight: #86ce21;
+  --psColorsBlue: #137bc2;
+
+  /* gradients */
+  --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
+  --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+}
+:root {
+  /* spacing */
+  --psLayoutSpacingTiny: 4px;
+  --psLayoutSpacingXSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
+}
+:root {
+  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+  /* font size */
+  --psTypeFontSizeGigantic: 60px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
+  --psTypeFontSizeLarge: 24px;
+  --psTypeFontSizeMedium: 18px;
+  --psTypeFontSizeSmall: 14px;
+  --psTypeFontSizeXSmall: 12px;
+
+  /* letter spacing */
+  --psTypeLetterSpacingGigantic: -1px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
+  --psTypeLetterSpacingLarge: 0.36px;
+  --psTypeLetterSpacingMedium: 0;
+  --psTypeLetterSpacingSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
+
+  /* font weight */
+  --psTypeFontWeightBold: 700;
+  --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightBook: 400;
+  --psTypeFontWeightLight: 300;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -2792,45 +3457,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -2881,45 +3544,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -2950,11 +3611,11 @@
 }
 .sizeSentence___2PMIP {
   color: var(--psColorsGray06);
-  margin-bottom: var(--psLayoutSpacingExtraSmall);
+  margin-bottom: var(--psLayoutSpacingXSmall);
 }
 .sizeLabel___1iNW1 {
   color: var(--psColorsGray03);
-  font-size: var(--psTypeFontSizeExtraSmall);
+  font-size: var(--psTypeFontSizeXSmall);
 }
 :root {
   /* ui colors */
@@ -2982,45 +3643,43 @@
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
@@ -3062,7 +3721,7 @@
 }
 .weightLabel___3l9r5 {
   color: var(--psColorsGray03);
-  font-size: var(--psTypeFontSizeExtraSmall);
+  font-size: var(--psTypeFontSizeXSmall);
 }
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html{line-height:1.15}
@@ -3142,45 +3801,43 @@ button,input,optgroup,select,textarea{font-family:inherit}
 }
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
   /* font size */
-  /* TODO: rename according to new conventions */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXxxl: 48px;
-  --psTypeFontSizeXxl: 36px;
-  --psTypeFontSizeXl: 30px;
+  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeXXLarge: 36px;
+  --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
   --psTypeFontSizeMedium: 18px;
   --psTypeFontSizeSmall: 14px;
-  --psTypeFontSizeExtraSmall: 12px;
+  --psTypeFontSizeXSmall: 12px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXxxl: -0.72px;
-  --psTypeLetterSpacingXxl: -0.54px;
-  --psTypeLetterSpacingXl: -0.45px;
+  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingXXLarge: -0.54px;
+  --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
   --psTypeLetterSpacingMedium: 0;
   --psTypeLetterSpacingSmall: 0;
-  --psTypeLetterSpacingExtraSmall: 0;
+  --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
   --psTypeFontWeightBold: 700;
   --psTypeFontWeightMedium: 500;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
-  --psTypeFontWeightExtraLight: 200;
+  --psTypeFontWeightXLight: 200;
 
   /* line height */
   --psTypeLineHeightTight: 20px;

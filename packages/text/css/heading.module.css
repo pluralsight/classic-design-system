@@ -5,16 +5,16 @@
 }
 
 .ps-heading--xx-large {
-  font-size: var(--psTypeFontSizeXxl);
-  letter-spacing: var(--psTypeLetterSpacingXxl);
+  font-size: var(--psTypeFontSizeXXLarge);
+  letter-spacing: var(--psTypeLetterSpacingXXLarge);
   font-weight: var(--psTypeFontWeightLight);
-  margin: var(--psLayoutSpacingXxl) 0;
+  margin: var(--psLayoutSpacingXXLarge) 0;
 }
 .ps-heading--large {
   font-size: var(--psTypeFontSizeLarge);
   letter-spacing: var(--psTypeLetterSpacingLarge);
   font-weight: var(--psTypeFontWeightBook);
-  margin: var(--psLayoutSpacingXl) 0 var(--psLayoutSpacingSmall) 0;
+  margin: var(--psLayoutSpacingXLarge) 0 var(--psLayoutSpacingSmall) 0;
 }
 .ps-heading--medium {
   font-size: var(--psTypeFontSizeMedium);
@@ -24,8 +24,8 @@
 }
 .ps-heading--small-caps {
   color: var(--psColorsGray02);
-  font-size: var(--psTypeFontSizeExtraSmall);
-  letter-spacing: var(--psTypeLetterSpacingExtraSmall);
+  font-size: var(--psTypeFontSizeXSmall);
+  letter-spacing: var(--psTypeLetterSpacingXSmall);
   font-weight: var(--psTypeFontWeightMedium);
   margin: var(--psLayoutSpacingMedium) 0 var(--psLayoutSpacingSmall) 0;
   text-transform: uppercase;

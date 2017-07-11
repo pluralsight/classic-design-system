@@ -26,5 +26,5 @@
 }
 .weightLabel {
   color: var(--psColorsGray03);
-  font-size: var(--psTypeFontSizeExtraSmall);
+  font-size: var(--psTypeFontSizeXSmall);
 }

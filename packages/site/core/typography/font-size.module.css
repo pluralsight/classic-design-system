@@ -15,9 +15,9 @@
 }
 .sizeSentence {
   color: var(--psColorsGray06);
-  margin-bottom: var(--psLayoutSpacingExtraSmall);
+  margin-bottom: var(--psLayoutSpacingXSmall);
 }
 .sizeLabel {
   color: var(--psColorsGray03);
-  font-size: var(--psTypeFontSizeExtraSmall);
+  font-size: var(--psTypeFontSizeXSmall);
 }

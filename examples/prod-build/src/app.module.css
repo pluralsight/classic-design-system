@@ -15,7 +15,7 @@
 }
 h2, h3 {
   font-family: var(--psTypeFontFamily);
-  font-weight: var(--psTypeFontWeightExtraLight);
+  font-weight: var(--psTypeFontWeightXLight);
 }
 .box {
   margin-top: var(--psLayoutSpacingLarge);

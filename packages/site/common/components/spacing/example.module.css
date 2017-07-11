@@ -59,7 +59,7 @@
 }
 .label {
   margin-top: var(--psLayoutSpacingTiny);
-  font-size: var(--psTypeFontSizeExtraSmall);
+  font-size: var(--psTypeFontSizeXSmall);
   font-weight: var(--psTypeFontWeightBook);
   line-height: var(--psTypeLineHeightTight);
 }

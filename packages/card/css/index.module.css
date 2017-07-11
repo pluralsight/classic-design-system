@@ -107,7 +107,7 @@
   position: absolute;
   top: var(--psLayoutSpacingSmall);
   left: 0;
-  padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingExtraSmall);
+  padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingXSmall);
   background: var(--psColorsGray04);
 }
 .ps-card__tag__part {
@@ -117,7 +117,7 @@
   line-height: 16px;
 }
 .ps-card__tag__part + .ps-card__tag__part {
-  margin-left: var(--psLayoutSpacingExtraSmall);
+  margin-left: var(--psLayoutSpacingXSmall);
 }
 .ps-card__tag__part--icon {
   height: 16px;
@@ -146,12 +146,12 @@
   background-color: var(--psColorsWhite);
 }
 .ps-card__title {
-  margin-top: var(--psLayoutSpacingExtraSmall);
+  margin-top: var(--psLayoutSpacingXSmall);
   font-weight: var(--psTypeFontWeightMedium);
   overflow: hidden;
 }
 .ps-card--small .ps-card__title {
-  font-size: var(--psTypeFontSizeExtraSmall);
+  font-size: var(--psTypeFontSizeXSmall);
   line-height: var(--psTypeLineHeightTight);
   max-height: calc(2 * var(--psTypeLineHeightTight));
 }
@@ -174,11 +174,11 @@
   max-width: 100%;
 }
 .ps-card--small .ps-card__metadata {
-  font-size: var(--psTypeFontSizeExtraSmall);
+  font-size: var(--psTypeFontSizeXSmall);
   line-height: var(--psTypeLineHeightSmall);
 }
 .ps-card--medium .ps-card__metadata {
-  font-size: var(--psTypeFontSizeExtraSmall);
+  font-size: var(--psTypeFontSizeXSmall);
   line-height: var(--psTypeLineHeightSmall);
 }
 .ps-card--large .ps-card__metadata {
@@ -208,7 +208,7 @@
 }
 .ps-card__metadata__dot {
   display: inline-block;
-  margin: 0 var(--psLayoutSpacingExtraSmall);
+  margin: 0 var(--psLayoutSpacingXSmall);
   min-height: 4px;
   min-width: 4px;
   border-radius: 50%;

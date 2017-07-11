@@ -1,11 +1,10 @@
 :root {
   /* spacing */
-  /* TODO: rename for naming convention */
   --psLayoutSpacingTiny: 4px;
-  --psLayoutSpacingExtraSmall: 8px;
+  --psLayoutSpacingXSmall: 8px;
   --psLayoutSpacingSmall: 12px;
   --psLayoutSpacingMedium: 16px;
   --psLayoutSpacingLarge: 24px;
-  --psLayoutSpacingXl: 40px;
-  --psLayoutSpacingXxl: 56px;
+  --psLayoutSpacingXLarge: 40px;
+  --psLayoutSpacingXXLarge: 56px;
 }

@@ -30,9 +30,9 @@
 
 /* size */
 .ps-button--tiny {
-  font-size: var(--psTypeFontSizeExtraSmall);
+  font-size: var(--psTypeFontSizeXSmall);
   line-height: var(--psTypeLineHeightStandard);
-  padding: 0 var(--psLayoutSpacingExtraSmall);
+  padding: 0 var(--psLayoutSpacingXSmall);
   height: 24px;
 }
 .ps-button--small {
@@ -44,7 +44,7 @@
 .ps-button--medium {
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightStandard);
-  padding: var(--psLayoutSpacingExtraSmall) var(--psLayoutSpacingSmall);
+  padding: var(--psLayoutSpacingXSmall) var(--psLayoutSpacingSmall);
   height: 40px;
 }
 .ps-button--large {
@@ -104,7 +104,7 @@
   display: flex;
   min-height: 100%;
   align-items: center;
-  margin-right: var(--psLayoutSpacingExtraSmall);
+  margin-right: var(--psLayoutSpacingXSmall);
 }
 .ps-button .ps-icon__fg--fill {
   fill: var(--psColorsWhite);
@@ -146,7 +146,7 @@
 }
 .ps-button--icon-align-right .ps-button__icon {
   margin-right: 0;
-  margin-left: var(--psLayoutSpacingExtraSmall);
+  margin-left: var(--psLayoutSpacingXSmall);
 }
 .ps-button--icon-only {
   padding: 0;

@@ -9,7 +9,7 @@ const weights = [
   { label: 'MEDIUM', weight: 500, varName: 'psTypeFontWeightMedium' },
   { label: 'BOOK', weight: 400, varName: 'psTypeFontWeightBook' },
   { label: 'LIGHT', weight: 300, varName: 'psTypeFontWeightLight' },
-  { label: 'EXTRA LIGHT', weight: 200, varName: 'psTypeFontWeightExtraLight' }
+  { label: 'EXTRA LIGHT', weight: 200, varName: 'psTypeFontWeightXLight' }
 ]
 
 const Weights = styleable(css)(props =>
