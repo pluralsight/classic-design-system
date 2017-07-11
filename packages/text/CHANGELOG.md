@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2017-07-11)
+
+
+### Code Refactoring
+
+* **text:** from ps-heading ([c70f2c1](https://github.com/pluralsight/design-system/commit/c70f2c1))
+
+
+### Features
+
+* **text:** add color to heading ([ee6c3aa](https://github.com/pluralsight/design-system/commit/ee6c3aa))
+* **text:** list component ([1f9090e](https://github.com/pluralsight/design-system/commit/1f9090e))
+* **text:** promote p component from site ([9de8c8b](https://github.com/pluralsight/design-system/commit/9de8c8b))
+* **text:** small-caps heading ([c87fe4b](https://github.com/pluralsight/design-system/commit/c87fe4b))
+
+
+### BREAKING CHANGES
+
+* **text:** convert ps-heading into ps-design-system-text
+
+
+
+
 <a name="1.1.17"></a>
 ## [1.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-heading@1.1.9...@pluralsight/ps-heading@1.1.17) (2017-06-29)
 

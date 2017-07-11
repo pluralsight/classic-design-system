@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.20"></a>
+## [1.0.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-link@1.0.9...@pluralsight/ps-link@1.0.20) (2017-07-11)
+
+
+
+
 <a name="1.0.19"></a>
 ## [1.0.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-link@1.0.9...@pluralsight/ps-link@1.0.19) (2017-06-29)
 

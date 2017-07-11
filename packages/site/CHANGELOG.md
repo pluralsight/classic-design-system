@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@1.7.3...@pluralsight/ps-design-system-site@2.0.0) (2017-07-11)
+
+
+### Bug Fixes
+
+* **site:** fix dark theme colored-components; site wrapper component ([bb419b2](https://github.com/pluralsight/design-system/commit/bb419b2))
+* **site:** remove non-html props from heading and p ([99a51ae](https://github.com/pluralsight/design-system/commit/99a51ae))
+* **tests:** update snapshot, renames, no examples dir tests ([5aa8d6a](https://github.com/pluralsight/design-system/commit/5aa8d6a))
+
+
+### Code Refactoring
+
+* **text:** from ps-heading ([c70f2c1](https://github.com/pluralsight/design-system/commit/c70f2c1))
+
+
+### Features
+
+* **card:** actionBarVisible and fullOverlayVisible ([487a10a](https://github.com/pluralsight/design-system/commit/487a10a))
+* **card:** allow node in title and metadata ([d39895d](https://github.com/pluralsight/design-system/commit/d39895d))
+* **card:** basic metadata ([8e02fd9](https://github.com/pluralsight/design-system/commit/8e02fd9))
+* **card:** basic size prop ([ad160e1](https://github.com/pluralsight/design-system/commit/ad160e1))
+* **card:** progress ([8e7b99b](https://github.com/pluralsight/design-system/commit/8e7b99b))
+* **card:** render bonusBar ([3036ab4](https://github.com/pluralsight/design-system/commit/3036ab4))
+* **card:** render buttons in action bar ([6c1586b](https://github.com/pluralsight/design-system/commit/6c1586b))
+* **card:** render fullOverlay ([5f68fcd](https://github.com/pluralsight/design-system/commit/5f68fcd))
+* **card:** render tag ([4ee1390](https://github.com/pluralsight/design-system/commit/4ee1390))
+* **card:** show action bar on hover ([4726263](https://github.com/pluralsight/design-system/commit/4726263))
+* **card:** show fullOverlay on hover only ([cac606a](https://github.com/pluralsight/design-system/commit/cac606a))
+* **card:** size image ([e68269a](https://github.com/pluralsight/design-system/commit/e68269a))
+* **card:** stub card files ([b3bd8de](https://github.com/pluralsight/design-system/commit/b3bd8de))
+* **card:** title ([c3f0fb8](https://github.com/pluralsight/design-system/commit/c3f0fb8))
+* **card:** truncate metadata ([2d7ef2d](https://github.com/pluralsight/design-system/commit/2d7ef2d))
+* **icon:** add bookmark and more ids ([7acaf00](https://github.com/pluralsight/design-system/commit/7acaf00))
+* **site:** body text ([983e856](https://github.com/pluralsight/design-system/commit/983e856))
+* **site:** code highlight install markdown docs ([1dcb1e6](https://github.com/pluralsight/design-system/commit/1dcb1e6))
+* **text:** list component ([1f9090e](https://github.com/pluralsight/design-system/commit/1f9090e))
+* **text:** promote p component from site ([9de8c8b](https://github.com/pluralsight/design-system/commit/9de8c8b))
+* **text:** small-caps heading ([c87fe4b](https://github.com/pluralsight/design-system/commit/c87fe4b))
+
+
+### BREAKING CHANGES
+
+* **text:** convert ps-heading into ps-design-system-text
+
+
+
+
 <a name="1.7.3"></a>
 ## [1.7.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@1.7.2...@pluralsight/ps-design-system-site@1.7.3) (2017-06-29)
 
