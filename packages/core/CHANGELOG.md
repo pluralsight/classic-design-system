@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@1.6.9...@pluralsight/ps-design-system-core@2.0.0) (2017-07-11)
+
+
+### Code Refactoring
+
+* **core:** use xSmaall instead of extraSmall-type conventions ([9c702bb](https://github.com/pluralsight/design-system/commit/9c702bb))
+
+
+### BREAKING CHANGES
+
+* **core:** public api var changes
+
+
+
+
 <a name="1.6.10"></a>
 ## [1.6.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@1.6.9...@pluralsight/ps-design-system-core@1.6.10) (2017-07-11)
 
