@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-link",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "",
   "main": "index.js",
   "style": "css/index.module.css",
@@ -16,7 +16,7 @@
     "react": ">=0.15.0 < 16.0.0"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^1.6.8",
+    "@pluralsight/ps-design-system-core": "^1.6.9",
     "react-styleable": "^3.1.0"
   }
 }
