@@ -1,7 +1,7 @@
 {
   "name": "@pluralsight/ps-design-system-build",
   "version": "1.3.7",
-  "description": "Internal utilities for building the design system packages",
+  "description": "Utilities for building and configuring Design System packages",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: tests run in as a single design system suite\" && exit 1"

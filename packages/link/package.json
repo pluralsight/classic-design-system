@@ -1,7 +1,7 @@
 {
   "name": "@pluralsight/ps-design-system-link",
   "version": "2.0.4",
-  "description": "",
+  "description": "Design System component for link/anchor ui",
   "main": "index.js",
   "style": "css/index.module.css",
   "scripts": {

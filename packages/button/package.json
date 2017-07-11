@@ -1,7 +1,7 @@
 {
   "name": "@pluralsight/ps-design-system-button",
   "version": "3.0.1",
-  "description": "",
+  "description": "Design System component for button ui",
   "main": "index.js",
   "style": "css/index.module.css",
   "scripts": {
