@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2017-07-11)
+
+
+### Bug Fixes
+
+* **tab:** don't jump vertically in active state ([7617b7d](https://github.com/pluralsight/design-system/commit/7617b7d))
+
+
+### Code Refactoring
+
+* **tab:** rename to [@pluralsight](https://github.com/pluralsight)/ps-design-system-tab ([5b2be2e](https://github.com/pluralsight/design-system/commit/5b2be2e))
+
+
+### Features
+
+* **tab:** accessibility attributes; put props overrides last ([7e28392](https://github.com/pluralsight/design-system/commit/7e28392))
+* **tab:** allow overriding listItem className ([67a4e3a](https://github.com/pluralsight/design-system/commit/67a4e3a))
+* **tab:** basic style ([1301bb0](https://github.com/pluralsight/design-system/commit/1301bb0))
+* **tab:** customize focus state ([dd148ec](https://github.com/pluralsight/design-system/commit/dd148ec))
+* **tab:** handle click for activating tab listitem ([543bf9f](https://github.com/pluralsight/design-system/commit/543bf9f))
+* **tab:** setup stub project ([74fe56c](https://github.com/pluralsight/design-system/commit/74fe56c))
+* **tabs:** styling tab items ([1415ae5](https://github.com/pluralsight/design-system/commit/1415ae5))
+
+
+### BREAKING CHANGES
+
+* **tab:** package rename
+
+
+
+
 <a name="1.3.1"></a>
 ## [1.3.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@1.3.0...@pluralsight/ps-design-system-tab@1.3.1) (2017-07-11)
 

@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@2.0.1...@pluralsight/ps-design-system-site@3.0.0) (2017-07-11)
+
+
+### Bug Fixes
+
+* **button:** fix missed package name changes ([0c31f32](https://github.com/pluralsight/design-system/commit/0c31f32))
+
+
+### Code Refactoring
+
+* **icon:** rename to [@pluralsight](https://github.com/pluralsight)/ps-design-system-icon ([e9b8f7f](https://github.com/pluralsight/design-system/commit/e9b8f7f))
+* **link:** rename to [@pluralsight](https://github.com/pluralsight)/ps-design-system-link ([90a76ab](https://github.com/pluralsight/design-system/commit/90a76ab))
+* **tab:** rename to [@pluralsight](https://github.com/pluralsight)/ps-design-system-tab ([5b2be2e](https://github.com/pluralsight/design-system/commit/5b2be2e))
+
+
+### Features
+
+* **site:** add webpack build doc ([07c003d](https://github.com/pluralsight/design-system/commit/07c003d))
+
+
+### BREAKING CHANGES
+
+* **button:** package rename
+* **tab:** package rename
+* **link:** package name change
+* **icon:** rename package
+
+
+
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@2.0.0...@pluralsight/ps-design-system-site@2.0.1) (2017-07-11)
 

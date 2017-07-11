@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2017-07-11)
+
+
+### Code Refactoring
+
+* **link:** rename to [@pluralsight](https://github.com/pluralsight)/ps-design-system-link ([90a76ab](https://github.com/pluralsight/design-system/commit/90a76ab))
+
+
+### BREAKING CHANGES
+
+* **link:** package name change
+
+
+
+
 <a name="1.0.21"></a>
 ## [1.0.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@1.0.9...@pluralsight/ps-design-system-link@1.0.21) (2017-07-11)
 
