@@ -33,7 +33,7 @@ h2, h3 {
 }
 
 .buttonComposesStyleable {
-  composes: ps-button from "@pluralsight/ps-button/css/index.module.css";
+  composes: ps-button from "@pluralsight/ps-design-system-button/css/index.module.css";
   background: green;
 }
 .buttonComposesStyleable:hover {

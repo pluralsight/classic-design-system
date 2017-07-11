@@ -1,4 +1,4 @@
-import Button from '@pluralsight/ps-button/react'
+import Button from '@pluralsight/ps-design-system-button/react'
 import React from 'react'
 import styleable from 'react-styleable'
 
@@ -11,9 +11,7 @@ export default styleable(css)(props =>
       <h2>React Style Overrides Example</h2>
     </header>
     <div className={props.css.box}>
-      <Button>
-        The Design System standard
-      </Button>
+      <Button>The Design System standard</Button>
     </div>
     <div className={props.css.box}>
       <Button css={{ 'ps-button': props.css.buttonOverrideStyleable }}>

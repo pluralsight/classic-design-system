@@ -1,4 +1,4 @@
-import Button from '@pluralsight/ps-button/react'
+import Button from '@pluralsight/ps-design-system-button/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 

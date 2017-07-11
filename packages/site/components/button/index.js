@@ -6,7 +6,7 @@ import styleable from 'react-styleable'
 import { Code, Example, Heading, Link, P } from '../../common/components'
 import css from './index.module.css'
 
-import Button from '@pluralsight/ps-button/react'
+import Button from '@pluralsight/ps-design-system-button/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 
 export default styleable(css)(props => {
@@ -17,11 +17,13 @@ export default styleable(css)(props => {
       </Heading>
 
       <P>Install the component dependency:</P>
-      <Code language="bash">npm install @pluralsight/ps-button --save-dev</Code>
+      <Code language="bash">
+        npm install @pluralsight/ps-design-system-button --save-dev
+      </Code>
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Button from '@pluralsight/ps-button/react'
+        import Button from '@pluralsight/ps-design-system-button/react'
       </Code>
 
       <P>

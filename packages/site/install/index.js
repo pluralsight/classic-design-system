@@ -46,7 +46,7 @@ For core usage details, see the [core usage docs](/core/usage).
 Each component is installed separately.  Find and use what you need.  For example:
 
 \`\`\`bash
-npm install @pluralsight/ps-button --save-dev
+npm install @pluralsight/ps-design-system-button --save-dev
 \`\`\`
 
 For full, working examples, see the [examples on github](https://github.com/pluralsight/design-system/tree/master/examples).

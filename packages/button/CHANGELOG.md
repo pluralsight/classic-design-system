@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 <a name="1.6.15"></a>
-## [1.6.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.9...@pluralsight/ps-button@1.6.15) (2017-07-11)
+## [1.6.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.6.9...@pluralsight/ps-design-system-button@1.6.15) (2017-07-11)
 
 
 ### Bug Fixes
@@ -15,7 +15,7 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 
 
 <a name="1.6.14"></a>
-## [1.6.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.9...@pluralsight/ps-button@1.6.14) (2017-07-11)
+## [1.6.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.6.9...@pluralsight/ps-design-system-button@1.6.14) (2017-07-11)
 
 
 ### Bug Fixes
@@ -26,85 +26,85 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 
 
 <a name="1.6.13"></a>
-## [1.6.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.9...@pluralsight/ps-button@1.6.13) (2017-06-29)
+## [1.6.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.6.9...@pluralsight/ps-design-system-button@1.6.13) (2017-06-29)
 
 
 
 
 <a name="1.6.12"></a>
-## [1.6.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.9...@pluralsight/ps-button@1.6.12) (2017-06-28)
+## [1.6.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.6.9...@pluralsight/ps-design-system-button@1.6.12) (2017-06-28)
 
 
 
 
 <a name="1.6.11"></a>
-## [1.6.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.9...@pluralsight/ps-button@1.6.11) (2017-06-28)
+## [1.6.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.6.9...@pluralsight/ps-design-system-button@1.6.11) (2017-06-28)
 
 
 
 
 <a name="1.6.10"></a>
-## [1.6.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.9...@pluralsight/ps-button@1.6.10) (2017-06-22)
+## [1.6.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.6.9...@pluralsight/ps-design-system-button@1.6.10) (2017-06-22)
 
 
 
 
 <a name="1.6.9"></a>
-## [1.6.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.8...@pluralsight/ps-button@1.6.9) (2017-06-22)
+## [1.6.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.6.8...@pluralsight/ps-design-system-button@1.6.9) (2017-06-22)
 
 
 
 
 <a name="1.6.8"></a>
-## [1.6.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.7...@pluralsight/ps-button@1.6.8) (2017-06-22)
+## [1.6.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.6.7...@pluralsight/ps-design-system-button@1.6.8) (2017-06-22)
 
 
 
 
 <a name="1.6.7"></a>
-## [1.6.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.6...@pluralsight/ps-button@1.6.7) (2017-06-22)
+## [1.6.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.6.6...@pluralsight/ps-design-system-button@1.6.7) (2017-06-22)
 
 
 
 
 <a name="1.6.6"></a>
-## [1.6.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.5...@pluralsight/ps-button@1.6.6) (2017-06-22)
+## [1.6.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.6.5...@pluralsight/ps-design-system-button@1.6.6) (2017-06-22)
 
 
 
 
 <a name="1.6.5"></a>
-## [1.6.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.4...@pluralsight/ps-button@1.6.5) (2017-06-20)
+## [1.6.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.6.4...@pluralsight/ps-design-system-button@1.6.5) (2017-06-20)
 
 
 
 
 <a name="1.6.4"></a>
-## [1.6.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.3...@pluralsight/ps-button@1.6.4) (2017-06-20)
+## [1.6.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.6.3...@pluralsight/ps-design-system-button@1.6.4) (2017-06-20)
 
 
 
 
 <a name="1.6.3"></a>
-## [1.6.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.2...@pluralsight/ps-button@1.6.3) (2017-06-20)
+## [1.6.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.6.2...@pluralsight/ps-design-system-button@1.6.3) (2017-06-20)
 
 
 
 
 <a name="1.6.2"></a>
-## [1.6.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.1...@pluralsight/ps-button@1.6.2) (2017-06-20)
+## [1.6.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.6.1...@pluralsight/ps-design-system-button@1.6.2) (2017-06-20)
 
 
 
 
 <a name="1.6.1"></a>
-## [1.6.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.6.0...@pluralsight/ps-button@1.6.1) (2017-06-20)
+## [1.6.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.6.0...@pluralsight/ps-design-system-button@1.6.1) (2017-06-20)
 
 
 
 
 <a name="1.6.0"></a>
-# [1.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.5.3...@pluralsight/ps-button@1.6.0) (2017-06-20)
+# [1.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.5.3...@pluralsight/ps-design-system-button@1.6.0) (2017-06-20)
 
 
 ### Features
@@ -115,25 +115,25 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 
 
 <a name="1.5.3"></a>
-## [1.5.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.5.2...@pluralsight/ps-button@1.5.3) (2017-06-15)
+## [1.5.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.5.2...@pluralsight/ps-design-system-button@1.5.3) (2017-06-15)
 
 
 
 
 <a name="1.5.2"></a>
-## [1.5.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.5.1...@pluralsight/ps-button@1.5.2) (2017-06-15)
+## [1.5.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.5.1...@pluralsight/ps-design-system-button@1.5.2) (2017-06-15)
 
 
 
 
 <a name="1.5.1"></a>
-## [1.5.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.5.0...@pluralsight/ps-button@1.5.1) (2017-06-15)
+## [1.5.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.5.0...@pluralsight/ps-design-system-button@1.5.1) (2017-06-15)
 
 
 
 
 <a name="1.5.0"></a>
-# [1.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.4.1...@pluralsight/ps-button@1.5.0) (2017-06-15)
+# [1.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.4.1...@pluralsight/ps-design-system-button@1.5.0) (2017-06-15)
 
 
 ### Features
@@ -145,13 +145,13 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 
 
 <a name="1.4.1"></a>
-## [1.4.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.4.0...@pluralsight/ps-button@1.4.1) (2017-06-12)
+## [1.4.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.4.0...@pluralsight/ps-design-system-button@1.4.1) (2017-06-12)
 
 
 
 
 <a name="1.4.0"></a>
-# [1.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.3.2...@pluralsight/ps-button@1.4.0) (2017-06-09)
+# [1.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.3.2...@pluralsight/ps-design-system-button@1.4.0) (2017-06-09)
 
 
 ### Bug Fixes
@@ -168,19 +168,19 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 
 
 <a name="1.3.2"></a>
-## [1.3.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.3.1...@pluralsight/ps-button@1.3.2) (2017-06-02)
+## [1.3.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.3.1...@pluralsight/ps-design-system-button@1.3.2) (2017-06-02)
 
 
 
 
 <a name="1.3.1"></a>
-## [1.3.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.3.0...@pluralsight/ps-button@1.3.1) (2017-06-01)
+## [1.3.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.3.0...@pluralsight/ps-design-system-button@1.3.1) (2017-06-01)
 
 
 
 
 <a name="1.3.0"></a>
-# [1.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.2.1...@pluralsight/ps-button@1.3.0) (2017-06-01)
+# [1.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.2.1...@pluralsight/ps-design-system-button@1.3.0) (2017-06-01)
 
 
 ### Bug Fixes
@@ -204,13 +204,13 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 
 
 <a name="1.2.1"></a>
-## [1.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.2.0...@pluralsight/ps-button@1.2.1) (2017-05-22)
+## [1.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.2.0...@pluralsight/ps-design-system-button@1.2.1) (2017-05-22)
 
 
 
 
 <a name="1.2.0"></a>
-# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.1.2...@pluralsight/ps-button@1.2.0) (2017-05-22)
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.1.2...@pluralsight/ps-design-system-button@1.2.0) (2017-05-22)
 
 
 ### Features
@@ -222,7 +222,7 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 
 
 <a name="1.1.1"></a>
-## [1.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-button@1.1.0...@pluralsight/ps-button@1.1.1) (2017-05-18)
+## [1.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@1.1.0...@pluralsight/ps-design-system-button@1.1.1) (2017-05-18)
 
 
 
