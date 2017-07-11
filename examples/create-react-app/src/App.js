@@ -1,5 +1,6 @@
-import Button from '@pluralsight/ps-button/react'
+import Button from '@pluralsight/ps-design-system-button/react'
 import React, { Component } from 'react'
+
 import logo from './logo.svg'
 import './App.css'
 
