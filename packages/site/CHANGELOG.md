@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.4"></a>
+## [4.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@4.0.3...@pluralsight/ps-design-system-site@4.0.4) (2017-07-12)
+
+
+### Bug Fixes
+
+* **site:** show design system P component in example ([ae9e5fe](https://github.com/pluralsight/design-system/commit/ae9e5fe))
+
+
+
+
 <a name="4.0.3"></a>
 ## [4.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@4.0.2...@pluralsight/ps-design-system-site@4.0.3) (2017-07-12)
 

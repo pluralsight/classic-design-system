@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.7"></a>
+## [2.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@2.0.6...@pluralsight/ps-design-system-tab@2.0.7) (2017-07-12)
+
+
+### Bug Fixes
+
+* **tab:** hover/active padding pop ([7263375](https://github.com/pluralsight/design-system/commit/7263375))
+
+
+
+
 <a name="2.0.6"></a>
 ## [2.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@2.0.5...@pluralsight/ps-design-system-tab@2.0.6) (2017-07-12)
 
