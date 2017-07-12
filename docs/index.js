@@ -26526,35 +26526,37 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(69);
 
-var _react2 = _interopRequireDefault(_react);
+var _react2 = __webpack_require__(1);
+
+var _react3 = _interopRequireDefault(_react2);
 
 var _components = __webpack_require__(8);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = function (_) {
-  return _react2.default.createElement(
+  return _react3.default.createElement(
     'div',
     null,
-    _react2.default.createElement(
+    _react3.default.createElement(
       _components.Heading,
       { size: 'large' },
-      _react2.default.createElement(
+      _react3.default.createElement(
         'h2',
         null,
         'Body text'
       )
     ),
-    _react2.default.createElement(
+    _react3.default.createElement(
       _components.P,
       null,
       'Try to use common paragraph style when possible.'
     ),
-    _react2.default.createElement(_components.Example.React, {
-      component: _react2.default.createElement(
-        _components.P,
+    _react3.default.createElement(_components.Example.React, {
+      component: _react3.default.createElement(
+        _react.P,
         null,
         'Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       ),
