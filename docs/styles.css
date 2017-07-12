@@ -1686,31 +1686,32 @@
 }
 .ps-heading___1seKB {
   color: var(--psColorsWhite);
+  margin: var(--psLayoutSpacingMedium) 0;
 }
 .ps-heading--xx-large___1vs6u {
   font-size: var(--psTypeFontSizeXXLarge);
   letter-spacing: var(--psTypeLetterSpacingXXLarge);
+  line-height: var(--psTypeLineHeightHuge);
   font-weight: var(--psTypeFontWeightLight);
-  margin: var(--psLayoutSpacingXXLarge) 0;
 }
 .ps-heading--large___12bkX {
   font-size: var(--psTypeFontSizeLarge);
   letter-spacing: var(--psTypeLetterSpacingLarge);
+  line-height: var(--psTypeLineHeightExtra);
   font-weight: var(--psTypeFontWeightBook);
-  margin: var(--psLayoutSpacingXLarge) 0 var(--psLayoutSpacingSmall) 0;
 }
 .ps-heading--medium___2btc0 {
   font-size: var(--psTypeFontSizeMedium);
   letter-spacing: var(--psTypeLetterSpacingMedium);
+  line-height: var(--psTypeLineHeightStandard);
   font-weight: var(--psTypeFontWeightMedium);
-  margin: var(--psLayoutSpacingMedium) 0 var(--psLayoutSpacingSmall) 0;
 }
 .ps-heading--small-caps___1lKpW {
   color: var(--psColorsGray02);
   font-size: var(--psTypeFontSizeXSmall);
   letter-spacing: var(--psTypeLetterSpacingXSmall);
+  line-height: var(--psTypeLineHeightTight);
   font-weight: var(--psTypeFontWeightMedium);
-  margin: var(--psLayoutSpacingMedium) 0 var(--psLayoutSpacingSmall) 0;
   text-transform: uppercase;
 }
 :root {
