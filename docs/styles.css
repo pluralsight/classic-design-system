@@ -1193,7 +1193,13 @@
   margin: var(--psLayoutSpacingSmall) 0;
   line-height: var(--psTypeLineHeightStandard);
 }
-:root {
+.root___1JMro a {
+  color: var(--psColorsOrange);
+  text-decoration: none;
+}
+.root___1JMro a:hover {
+  text-decoration: underline;
+}:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;

@@ -41,3 +41,10 @@
   margin: var(--psLayoutSpacingSmall) 0;
   line-height: var(--psTypeLineHeightStandard);
 }
+.root :global(a) {
+  color: var(--psColorsOrange);
+  text-decoration: none;
+}
+.root :global(a):hover {
+  text-decoration: underline;
+}
