@@ -17,19 +17,18 @@
 .ps-tab-list-item + .ps-tab-list-item {
   margin-left: var(--psLayoutSpacingLarge);
 }
-.ps-tab-list-item:focus {
-  color: var(--psColorsWhite);
-  outline: 0;
-}
 .ps-tab-list-item:hover {
   color: var(--psColorsWhite);
 }
-.ps-tab-list-item:focus {
+.ps-tab-list-item:focus, .ps-tab-list-item:active {
   outline: none;
   color: var(--psColorsWhite);
   border-bottom: 4px solid var(--psColorsGray02);
+  padding: 0;
 }
-.ps-tab-list-item--active, .ps-tab-list-item--active:focus {
+.ps-tab-list-item--active,
+.ps-tab-list-item--active:focus,
+.ps-tab-list-item--active:active {
   color: var(--psColorsWhite);
   font-weight: var(--psTypeFontWeightMedium);
   padding-bottom: 0;

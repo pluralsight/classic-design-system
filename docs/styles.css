@@ -3169,19 +3169,19 @@
 .ps-tab-list-item___2FBfq + .ps-tab-list-item___2FBfq {
   margin-left: var(--psLayoutSpacingLarge);
 }
-.ps-tab-list-item___2FBfq:focus {
-  color: var(--psColorsWhite);
-  outline: 0;
-}
 .ps-tab-list-item___2FBfq:hover {
   color: var(--psColorsWhite);
 }
-.ps-tab-list-item___2FBfq:focus {
+.ps-tab-list-item___2FBfq:focus,
+.ps-tab-list-item___2FBfq:active {
   outline: none;
   color: var(--psColorsWhite);
   border-bottom: 4px solid var(--psColorsGray02);
+  padding: 0;
 }
-.ps-tab-list-item--active___3LTXw, .ps-tab-list-item--active___3LTXw:focus {
+.ps-tab-list-item--active___3LTXw,
+.ps-tab-list-item--active___3LTXw:focus,
+.ps-tab-list-item--active___3LTXw:active {
   color: var(--psColorsWhite);
   font-weight: var(--psTypeFontWeightMedium);
   padding-bottom: 0;
