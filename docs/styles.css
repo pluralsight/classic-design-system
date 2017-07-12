@@ -3172,8 +3172,7 @@
 .ps-tab-list-item___2FBfq:hover {
   color: var(--psColorsWhite);
 }
-.ps-tab-list-item___2FBfq:focus,
-.ps-tab-list-item___2FBfq:active {
+.ps-tab-list-item___2FBfq:focus, .ps-tab-list-item___2FBfq:active {
   outline: none;
   color: var(--psColorsWhite);
   border-bottom: 4px solid var(--psColorsGray02);
