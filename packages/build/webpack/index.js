@@ -93,6 +93,30 @@ const commonRules = (options, include) => [
       }
     ]),
     include
+  },
+  {
+    test: /\.svg$/,
+    use: [
+      require.resolve('babel-loader'),
+      {
+        loader: require.resolve('string-replace-loader'),
+        options: {
+          multiple: [
+            {
+              search: ' {...this.props}',
+              replace: ''
+            },
+            {
+              search: 'className=(\'|")([^\'"]+)(\'|")',
+              replace: "className={(this.props.css || {})['$2']}",
+              flags: 'g'
+            }
+          ]
+        }
+      },
+      require.resolve('react-svg-loader')
+    ],
+    include
   }
 ]
 
