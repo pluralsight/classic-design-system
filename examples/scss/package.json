@@ -19,7 +19,7 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^1.6.10",
+    "@pluralsight/ps-design-system-button": "^3.0.3",
     "@pluralsight/ps-design-system-normalize": "^2.2.3",
     "react-dom": "^15.6.0",
     "react": "^15.6.1"
