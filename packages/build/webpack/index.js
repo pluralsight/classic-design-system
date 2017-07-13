@@ -133,12 +133,19 @@ const getDependencies = pkgJson =>
 
 const relatedToDesignSystem = dep => /^@pluralsight\/ps-.*$/.test(dep)
 
-const dependencyDirName = dep => path.dirname(require.resolve(dep))
+const dependencyDirName = dep => {
+  try {
+    return path.dirname(require.resolve(dep))
+  } catch (err) {
+    warn(`package.json dependency not resolved: ${dep}`)
+  }
+}
 
 const decorateRules = (config, options) => {
   const designSystemPaths = getDependencies(options.packageJson)
     .filter(relatedToDesignSystem)
     .map(dependencyDirName)
+    .filter(dep => dep)
     .concat(options.extraInclude)
 
   designSystemPaths.map(p => info(`module.rule.include ${p}`))
