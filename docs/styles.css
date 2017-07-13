@@ -1199,7 +1199,8 @@
 }
 .root___1JMro a:hover {
   text-decoration: underline;
-}:root {
+}
+:root {
   /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;

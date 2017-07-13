@@ -40,6 +40,31 @@ export default _ =>
     />
 
     <Heading size="large">
+      <h2>Image</h2>
+    </Heading>
+    <P>
+      The image will cover the space given. This space is variable width but set
+      height according to the `size` property.
+    </P>
+    <Example.React
+      component={<Card />}
+      orient="vertical"
+      name="Card"
+      permutations={[
+        {
+          size: 'medium',
+          image: <img src="http://via.placeholder.com/350x150" />,
+          title: 'Wide image'
+        },
+        {
+          size: 'medium',
+          image: <img src="http://via.placeholder.com/200x400" />,
+          title: 'Tall image'
+        }
+      ]}
+    />
+
+    <Heading size="large">
       <h2>Progress</h2>
     </Heading>
     <Example.React
