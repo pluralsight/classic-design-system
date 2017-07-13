@@ -10,7 +10,7 @@ const extractTextPlugin = new ExtractTextPlugin('styles.css')
 module.exports = {
   //decorateConfig(
   entry: {
-    index: path.join(__dirname, '..', 'index.js')
+    index: path.join(__dirname, '..', 'src', 'index.js')
   },
 
   output: {
