@@ -47,7 +47,7 @@ export default _ =>
       height according to the `size` property.
     </P>
     <Example.React
-      component={<Card />}
+      component={<Card image={<img />} title="fake" />}
       orient="vertical"
       name="Card"
       permutations={[

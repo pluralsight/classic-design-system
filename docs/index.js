@@ -26456,7 +26456,7 @@ exports.default = function (_) {
       'The image will cover the space given. This space is variable width but set height according to the `size` property.'
     ),
     _react6.default.createElement(_components.Example.React, {
-      component: _react6.default.createElement(_react8.default, null),
+      component: _react6.default.createElement(_react8.default, { image: _react6.default.createElement('img', null), title: 'fake' }),
       orient: 'vertical',
       name: 'Card',
       permutations: [{
