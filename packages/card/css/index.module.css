@@ -175,11 +175,11 @@
 }
 .ps-card--small .ps-card__metadata {
   font-size: var(--psTypeFontSizeXSmall);
-  line-height: var(--psTypeLineHeightSmall);
+  line-height: var(--psTypeLineHeightTight);
 }
 .ps-card--medium .ps-card__metadata {
   font-size: var(--psTypeFontSizeXSmall);
-  line-height: var(--psTypeLineHeightSmall);
+  line-height: var(--psTypeLineHeightTight);
 }
 .ps-card--large .ps-card__metadata {
   font-size: var(--psTypeFontSizeSmall);
