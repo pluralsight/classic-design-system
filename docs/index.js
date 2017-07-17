@@ -24330,10 +24330,15 @@ var renderMetaData = function renderMetaData(props, metadata) {
           className: props.css['ps-card__metadata__datum']
         },
         m
-      ), i < metadata.length - 1 && _react2.default.createElement('span', {
-        key: 'dot' + i,
-        className: props.css['ps-card__metadata__dot']
-      })];
+      ), i < metadata.length - 1 && _react2.default.createElement(
+        'span',
+        {
+          'aria-hidden': true,
+          key: 'dot' + i,
+          className: props.css['ps-card__metadata__dot']
+        },
+        '\xB7'
+      )];
     })
   ) : null;
 };
