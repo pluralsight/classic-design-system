@@ -65,9 +65,11 @@
     var(--psLayoutSpacingSmall)
     0
     var(--psLayoutSpacingSmall);
-  /* TODO: update site webpack to use build/webpack to support this postcss update */
-  /* background: linear-gradient(to bottom, color(var(--psColorsBlack), alpha(-20%)), transparent); */
-  background: linear-gradient(to bottom, var(--psColorsBlack), transparent);
+  background: linear-gradient(
+    to bottom,
+    color(var(--psColorsBlack) alpha(75%)),
+    transparent
+  );
   transition: opacity var(--psMotionSpeedNormal);
   opacity: 0;
 }
@@ -89,8 +91,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  /* TODO: update postcss to make styleguide psColorsBlack (hex) available here */
-  background: rgba(0, 0, 0, 0.5);
+  background: color(var(--psColorsBlack) alpha(50%));
   transition: opacity var(--psMotionSpeedNormal);
   opacity: 0;
 }
