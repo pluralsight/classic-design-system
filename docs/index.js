@@ -24345,6 +24345,9 @@ var renderActionBar = function renderActionBar(props) {
     _react2.default.Children.map(props.actionBar, function (action, i) {
       return _react2.default.cloneElement(action, {
         css: {
+          compose: {
+            'ps-button--flat': props.css['ps-button--flat--action-bar']
+          },
           'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
           'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
         },
@@ -32791,7 +32794,7 @@ module.exports = {"ps-button":"ps-button___2EFfR","ps-button--tiny":"ps-button--
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"ps-card":"ps-card___2zSSP","ps-card--small":"ps-card--small___3gxtm","ps-card--medium":"ps-card--medium___5eDWG","ps-card--large":"ps-card--large___xbvHu","ps-icon__fg--fill":"ps-icon__fg--fill___1Nbfk","ps-icon__fg--stroke":"ps-icon__fg--stroke___2deYS","ps-card__image-frame":"ps-card__image-frame___1ocA2","ps-card__image":"ps-card__image___2MmCd","ps-card__action-bar":"ps-card__action-bar___2d3QI","ps-card--full-overlay":"ps-card--full-overlay___14Isw","ps-card--action-bar-visible":"ps-card--action-bar-visible___1BAxp","ps-card__full-overlay":"ps-card__full-overlay___351f7","ps-card--full-overlay-visible":"ps-card--full-overlay-visible___3dcHV","ps-card__tag":"ps-card__tag___aRZAY","ps-card__tag__part":"ps-card__tag__part___1rjkA","ps-card__tag__part--icon":"ps-card__tag__part--icon___4cg9Q","ps-card__bonus-bar":"ps-card__bonus-bar___1g5FL","ps-card__progress":"ps-card__progress___3pVLT","ps-card__progress__bar":"ps-card__progress__bar___41-QK","ps-card__title":"ps-card__title___CCHuG","ps-card__metadata":"ps-card__metadata___3YV1n","ps-card__metadata__datum":"ps-card__metadata__datum___-Ixrv","ps-card__metadata__dot":"ps-card__metadata__dot___1c4pP"};
+module.exports = {"ps-card":"ps-card___2zSSP","ps-card--small":"ps-card--small___3gxtm","ps-card--medium":"ps-card--medium___5eDWG","ps-card--large":"ps-card--large___xbvHu","ps-icon__fg--fill":"ps-icon__fg--fill___1Nbfk","ps-icon__fg--stroke":"ps-icon__fg--stroke___2deYS","ps-card__image-frame":"ps-card__image-frame___1ocA2","ps-card__image":"ps-card__image___2MmCd","ps-card__action-bar":"ps-card__action-bar___2d3QI","ps-card--full-overlay":"ps-card--full-overlay___14Isw","ps-card--action-bar-visible":"ps-card--action-bar-visible___1BAxp","ps-button--flat--action-bar":"ps-button--flat--action-bar___1LQMj","ps-card__full-overlay":"ps-card__full-overlay___351f7","ps-card--full-overlay-visible":"ps-card--full-overlay-visible___3dcHV","ps-card__tag":"ps-card__tag___aRZAY","ps-card__tag__part":"ps-card__tag__part___1rjkA","ps-card__tag__part--icon":"ps-card__tag__part--icon___4cg9Q","ps-card__bonus-bar":"ps-card__bonus-bar___1g5FL","ps-card__progress":"ps-card__progress___3pVLT","ps-card__progress__bar":"ps-card__progress__bar___41-QK","ps-card__title":"ps-card__title___CCHuG","ps-card__metadata":"ps-card__metadata___3YV1n","ps-card__metadata__datum":"ps-card__metadata__datum___-Ixrv","ps-card__metadata__dot":"ps-card__metadata__dot___1c4pP"};
 
 /***/ }),
 /* 308 */

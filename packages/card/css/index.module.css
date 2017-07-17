@@ -81,6 +81,9 @@
 .ps-card__image-frame:active .ps-card__action-bar {
   opacity: 1;
 }
+.ps-button--flat--action-bar:hover {
+  background: none;
+}
 
 .ps-card__full-overlay {
   display: flex;

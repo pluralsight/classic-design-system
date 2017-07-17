@@ -1428,6 +1428,9 @@
 .ps-card__image-frame___1ocA2:active .ps-card__action-bar___2d3QI {
   opacity: 1;
 }
+.ps-button--flat--action-bar___1LQMj:hover {
+  background: none;
+}
 .ps-card__full-overlay___351f7 {
   display: -webkit-box;
   display: -ms-flexbox;

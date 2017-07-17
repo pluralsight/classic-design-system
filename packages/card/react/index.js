@@ -98,6 +98,9 @@ const renderActionBar = props =>
         {React.Children.map(props.actionBar, (action, i) =>
           React.cloneElement(action, {
             css: {
+              compose: {
+                'ps-button--flat': props.css['ps-button--flat--action-bar']
+              },
               'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
               'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
             },
