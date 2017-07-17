@@ -113,6 +113,7 @@
   left: 0;
   padding: var(--psLayoutSpacingTiny) var(--psLayoutSpacingXSmall);
   background: var(--psColorsGray04);
+  border-radius: 0 2px 2px 0;
 }
 .ps-card__tag__part {
   color: var(--psColorsWhite);
