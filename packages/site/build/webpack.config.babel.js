@@ -1,14 +1,10 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const {
-  decorateConfig
-} = require('@pluralsight/ps-design-system-build/webpack')
 const path = require('path')
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 
 const extractTextPlugin = new ExtractTextPlugin('styles.css')
 
 module.exports = {
-  //decorateConfig(
   entry: {
     index: path.join(__dirname, '..', 'src', 'index.js')
   },
@@ -109,8 +105,3 @@ module.exports = {
     }
   }
 }
-/* {
-       *   extractTextPlugin,
-       *   packageJson: require(path.join(__dirname, '..', 'package.json'))
-       * }
-         )*/
