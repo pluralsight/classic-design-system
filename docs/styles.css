@@ -1576,10 +1576,6 @@
 .ps-card__metadata__dot___1c4pP {
   display: inline-block;
   margin: 0 8px;
-  min-height: 4px;
-  min-width: 4px;
-  border-radius: 50%;
-  background-color: #aaaaaa;
 }
 :root {
   /* ui colors */

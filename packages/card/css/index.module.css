@@ -214,8 +214,4 @@
 .ps-card__metadata__dot {
   display: inline-block;
   margin: 0 var(--psLayoutSpacingXSmall);
-  min-height: 4px;
-  min-width: 4px;
-  border-radius: 50%;
-  background-color: var(--psColorsGray02);
 }

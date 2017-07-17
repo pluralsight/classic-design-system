@@ -85,9 +85,12 @@ const renderMetaData = (props, metadata) =>
           </span>,
           i < metadata.length - 1 &&
             <span
+              aria-hidden={true}
               key={`dot${i}`}
               className={props.css['ps-card__metadata__dot']}
-            />
+            >
+              ·
+            </span>
         ])}
       </div>
     : null
