@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@2.0.4...@pluralsight/ps-design-system-card@2.1.0) (2017-07-18)
+
+
+### Bug Fixes
+
+* **card:** misnamed line-height var ([f563d3d](https://github.com/pluralsight/design-system/commit/f563d3d))
+
+
+### Features
+
+* **card:** ensure title is white ([c614128](https://github.com/pluralsight/design-system/commit/c614128))
+* **card:** line clamp title link; underline title and meta elements ([3685571](https://github.com/pluralsight/design-system/commit/3685571))
+* **card:** make progress bar green when completed ([e8e7717](https://github.com/pluralsight/design-system/commit/e8e7717))
+
+
+
+
 <a name="2.0.4"></a>
 ## [2.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@2.0.3...@pluralsight/ps-design-system-card@2.0.4) (2017-07-12)
 

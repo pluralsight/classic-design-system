@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@4.0.4...@pluralsight/ps-design-system-site@4.1.0) (2017-07-18)
+
+
+### Bug Fixes
+
+* **site:** warnings about missing props ([50d6f16](https://github.com/pluralsight/design-system/commit/50d6f16))
+
+
+### Features
+
+* **card:** line clamp title link; underline title and meta elements ([3685571](https://github.com/pluralsight/design-system/commit/3685571))
+* **card:** make progress bar green when completed ([e8e7717](https://github.com/pluralsight/design-system/commit/e8e7717))
+* **site:** add image overflow example for card ([c9d6d12](https://github.com/pluralsight/design-system/commit/c9d6d12))
+* **site:** cssnext-process stylesheet ([a7b07b8](https://github.com/pluralsight/design-system/commit/a7b07b8))
+* **site:** on-page card example ([18896bf](https://github.com/pluralsight/design-system/commit/18896bf))
+
+
+
+
 <a name="4.0.4"></a>
 ## [4.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@4.0.3...@pluralsight/ps-design-system-site@4.0.4) (2017-07-12)
 

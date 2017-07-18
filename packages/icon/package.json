@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-icon",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "Design System component for icon ui",
   "main": "index.js",
   "style": "css/index.module.css",
@@ -16,7 +16,7 @@
     "react": ">=0.15.0 < 16.0.0"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^2.0.4",
+    "@pluralsight/ps-design-system-core": "^2.1.0",
     "classnames": "^2.2.5",
     "prop-types": "^15.5.10",
     "react-styleable": "^3.1.0"
