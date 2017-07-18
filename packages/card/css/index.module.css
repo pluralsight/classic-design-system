@@ -168,6 +168,7 @@
   margin-top: var(--psLayoutSpacingXSmall);
   font-weight: var(--psTypeFontWeightMedium);
   overflow: hidden;
+  color: var(--psColorsWhite);
 }
 .ps-card__title--link {
   composes: ps-card__link;
