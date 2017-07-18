@@ -43,6 +43,10 @@ export default _ =>
     <Heading size="large">
       <h2>Size</h2>
     </Heading>
+    <P>
+      While the component is flexible, the size will determine certain base
+      proportions and flexibility min and max bounds.
+    </P>
     <Example.React
       component={defaultCard}
       orient="vertical"
@@ -78,6 +82,10 @@ export default _ =>
     <Heading size="large">
       <h2>Progress</h2>
     </Heading>
+    <P>
+      Progress, if given, should be a number between 0 and 100 that describes
+      the completion level of the content represented on the card.
+    </P>
     <Example.React
       component={defaultCard}
       orient="vertical"
@@ -119,6 +127,14 @@ export default _ =>
     <Heading size="large">
       <h2>Metadata</h2>
     </Heading>
+    <P>
+      Metadata is free-form strings or displayable elements like links. Each bit
+      of metadata is separated by an interpunct.
+    </P>
+    <P>
+      Metadata is constrained to a single line, overflowing with an ellipsis
+      indicated. The first datum is given display space precendence.
+    </P>
     <Example.React
       component={defaultCard}
       name="Card"
@@ -145,6 +161,10 @@ export default _ =>
     <Heading size="large">
       <h2>Action Bar</h2>
     </Heading>
+    <P>
+      The action bar contains the on-card affordances a user can take besides
+      linking straight to the content. These are usually buttons.
+    </P>
     <Example.React
       component={defaultCard}
       orient="vertical"
@@ -174,6 +194,7 @@ export default _ =>
     <Heading size="large">
       <h2>Tag</h2>
     </Heading>
+    <P>The tag provides a label usually categorizing the card's content.</P>
     <Example.React
       component={defaultCard}
       orient="vertical"
@@ -195,6 +216,10 @@ export default _ =>
     <Heading size="large">
       <h2>Full Overlay</h2>
     </Heading>
+    <P>
+      A special main action representing the main interaction for the card can
+      be provided here. It will appear overlaid in the center of the image.
+    </P>
     <Example.React
       component={defaultCard}
       orient="vertical"
@@ -220,6 +245,10 @@ export default _ =>
     <Heading size="large">
       <h2>Bonus Bar</h2>
     </Heading>
+    <P>
+      Some cards may make use of a freeform area of content overlaid in the
+      bottom-left corner of the image area. Use with dignity.
+    </P>
     <Example.React
       component={defaultCard}
       name="Card"

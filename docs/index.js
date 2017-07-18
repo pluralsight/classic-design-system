@@ -26587,6 +26587,11 @@ exports.default = function (_) {
         'Size'
       )
     ),
+    _react8.default.createElement(
+      _components.P,
+      null,
+      'While the component is flexible, the size will determine certain base proportions and flexibility min and max bounds.'
+    ),
     _react8.default.createElement(_components.Example.React, {
       component: defaultCard,
       orient: 'vertical',
@@ -26629,6 +26634,11 @@ exports.default = function (_) {
         null,
         'Progress'
       )
+    ),
+    _react8.default.createElement(
+      _components.P,
+      null,
+      'Progress, if given, should be a number between 0 and 100 that describes the completion level of the content represented on the card.'
     ),
     _react8.default.createElement(_components.Example.React, {
       component: defaultCard,
@@ -26678,6 +26688,16 @@ exports.default = function (_) {
         'Metadata'
       )
     ),
+    _react8.default.createElement(
+      _components.P,
+      null,
+      'Metadata is free-form strings or displayable elements like links. Each bit of metadata is separated by an interpunct.'
+    ),
+    _react8.default.createElement(
+      _components.P,
+      null,
+      'Metadata is constrained to a single line, overflowing with an ellipsis indicated. The first datum is given display space precendence.'
+    ),
     _react8.default.createElement(_components.Example.React, {
       component: defaultCard,
       name: 'Card',
@@ -26703,6 +26723,11 @@ exports.default = function (_) {
         'Action Bar'
       )
     ),
+    _react8.default.createElement(
+      _components.P,
+      null,
+      'The action bar contains the on-card affordances a user can take besides linking straight to the content. These are usually buttons.'
+    ),
     _react8.default.createElement(_components.Example.React, {
       component: defaultCard,
       orient: 'vertical',
@@ -26724,6 +26749,11 @@ exports.default = function (_) {
         null,
         'Tag'
       )
+    ),
+    _react8.default.createElement(
+      _components.P,
+      null,
+      'The tag provides a label usually categorizing the card\'s content.'
     ),
     _react8.default.createElement(_components.Example.React, {
       component: defaultCard,
@@ -26758,6 +26788,11 @@ exports.default = function (_) {
         null,
         'Full Overlay'
       )
+    ),
+    _react8.default.createElement(
+      _components.P,
+      null,
+      'A special main action representing the main interaction for the card can be provided here. It will appear overlaid in the center of the image.'
     ),
     _react8.default.createElement(_components.Example.React, {
       component: defaultCard,
@@ -26798,6 +26833,11 @@ exports.default = function (_) {
         null,
         'Bonus Bar'
       )
+    ),
+    _react8.default.createElement(
+      _components.P,
+      null,
+      'Some cards may make use of a freeform area of content overlaid in the bottom-left corner of the image area. Use with dignity.'
     ),
     _react8.default.createElement(_components.Example.React, {
       component: defaultCard,
