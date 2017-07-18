@@ -1,10 +1,10 @@
 import Button from '@pluralsight/ps-design-system-button/react'
+import Card from '@pluralsight/ps-design-system-card/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 
+import Carousel from './carousel'
 import { Code, Example, Heading, Link, P } from '../../common/components'
-
-import Card from '@pluralsight/ps-design-system-card/react'
 
 const defaultCard = (
   <Card
@@ -28,6 +28,17 @@ export default _ =>
     <Code language="javascript">
       import Card from '@pluralsight/ps-design-system-card/react'
     </Code>
+
+    <Heading size="large">
+      <h2>On-page example</h2>
+    </Heading>
+    <P>
+      The card is a flexible component that will fit the container it's given
+      within certain bounds. A carousel is a common container layout that
+      one might encounter in the product. This is an example implementation of
+      how your carousel might look in your app.
+    </P>
+    <Carousel />
 
     <Heading size="large">
       <h2>Size</h2>

@@ -1523,6 +1523,7 @@
   margin-top: 8px;
   font-weight: 500;
   overflow: hidden;
+  color: #ffffff;
 }
 .ps-card__title--link___2ut-T {
 }
@@ -1580,6 +1581,43 @@
 .ps-card__metadata__dot___1c4pP {
   display: inline-block;
   margin: 0 8px;
+}
+:root {
+  /* ui colors */
+
+  /* gradients */
+}
+:root {
+  /* spacing */
+}
+:root {
+
+  /* font size */
+
+  /* letter spacing */
+
+  /* font weight */
+
+  /* line height */
+}
+:root {
+  /* motion */
+}
+.carousel___BxKmS {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+  background: #181818;
+}
+.cardContainer___dazjx {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.cardContainer___dazjx + .cardContainer___dazjx {
+  margin-left: 16px;
 }
 :root {
   /* ui colors */
