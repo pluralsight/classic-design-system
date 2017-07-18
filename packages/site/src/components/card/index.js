@@ -79,6 +79,33 @@ export default _ =>
     />
 
     <Heading size="large">
+      <h2>Title</h2>
+    </Heading>
+    <P>
+      The title can be a string or a some other element, such as a link, that
+      contains a string
+    </P>
+    <P>
+      Strings are line-clamped to 2 lines max, then the text will overflow with
+      an ellipsis appended.
+    </P>
+    <Example.React
+      component={defaultCard}
+      name="Card"
+      orient="vertical"
+      permutations={[
+        { title: 'String Title' },
+        {
+          title: <a>Link Title</a>
+        },
+        {
+          title:
+            'Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania'
+        }
+      ]}
+    />
+
+    <Heading size="large">
       <h2>Metadata</h2>
     </Heading>
     <Example.React

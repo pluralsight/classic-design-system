@@ -1359,6 +1359,18 @@
   -webkit-transition: all 200ms;
   transition: all 200ms;
 }
+/* generic links w/in component */
+.ps-card__link___1R35W {
+  color: inherit;
+  cursor: pointer;
+}
+.ps-card__link___1R35W:hover,
+.ps-card__link___1R35W:active {
+  color: #ffffff;
+  text-decoration: underline;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
 .ps-card__image-frame___1ocA2 {
   position: relative;
   display: -webkit-box;
@@ -1508,9 +1520,12 @@
   background-color: #ffffff;
 }
 .ps-card__title___CCHuG {
+  display: block;
   margin-top: 8px;
   font-weight: 500;
   overflow: hidden;
+}
+.ps-card__title--link___2ut-T {
 }
 .ps-card--small___3gxtm .ps-card__title___CCHuG {
   font-size: 12px;
@@ -1561,18 +1576,7 @@
   -ms-flex-negative: 1;
       flex-shrink: 1;
 }
-.ps-card__title___CCHuG a, .ps-card__metadata__datum___-Ixrv a {
-  color: inherit;
-}
-.ps-card__title___CCHuG a:hover,
-.ps-card__title___CCHuG a:active,
-.ps-card__metadata__datum___-Ixrv a:hover,
-.ps-card__metadata__datum___-Ixrv a:active {
-  color: #ffffff;
-  text-decoration: underline;
-  -webkit-transition: all 200ms;
-  transition: all 200ms;
-  cursor: pointer;
+.ps-card__metadata__datum--link___1GmT- {
 }
 .ps-card__metadata__dot___1c4pP {
   display: inline-block;

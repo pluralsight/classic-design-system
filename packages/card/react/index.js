@@ -67,22 +67,48 @@ const renderProgress = props =>
       </div>
     : null
 
-// TODO: fix when node (not string) shiitake warning
+const getTitleLinkClassName = props =>
+  classNames({
+    [props.title.className]: props.title.className,
+    [props.css['ps-card__title--link']]: true
+  })
+
+const isReactElement = el => el && el.type
+
 const renderTitle = props =>
-  <Shiitake lines={2} className={props.css['ps-card__title']}>
-    {props.title}
-  </Shiitake>
+  isReactElement(props.title)
+    ? React.cloneElement(props.title, {
+        className: getTitleLinkClassName(props),
+        children: (
+          <Shiitake lines={2}>
+            {props.title.props.children}
+          </Shiitake>
+        )
+      })
+    : <Shiitake lines={2} className={props.css['ps-card__title']}>
+        {props.title}
+      </Shiitake>
+
+const getMetaDataLinkClassName = (props, el) =>
+  classNames({
+    [el.className]: el.className,
+    [props.css['ps-card__metadata__datum--link']]: true
+  })
 
 const renderMetaData = (props, metadata) =>
   metadata
     ? <div className={props.css['ps-card__metadata']}>
         {metadata.map((m, i) => [
-          <span
-            key={`datum${i}`}
-            className={props.css['ps-card__metadata__datum']}
-          >
-            {m}
-          </span>,
+          isReactElement(m)
+            ? React.cloneElement(m, {
+                className: getMetaDataLinkClassName(props, m)
+              })
+            : <span
+                key={`datum${i}`}
+                className={props.css['ps-card__metadata__datum']}
+              >
+                {m}
+              </span>,
           i < metadata.length - 1 &&
             <span
               aria-hidden={true}

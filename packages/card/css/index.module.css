@@ -28,6 +28,17 @@
   transition: all var(--psMotionSpeedNormal);
 }
 
+/* generic links w/in component */
+.ps-card__link {
+  color: inherit;
+  cursor: pointer;
+}
+.ps-card__link:hover, .ps-card__link:active {
+  color: var(--psColorsWhite);
+  text-decoration: underline;
+  transition: all var(--psMotionSpeedNormal);
+}
+
 .ps-card__image-frame {
   position: relative;
   display: flex;
@@ -151,10 +162,15 @@
   height: 5px;
   background-color: var(--psColorsWhite);
 }
+
 .ps-card__title {
+  display: block;
   margin-top: var(--psLayoutSpacingXSmall);
   font-weight: var(--psTypeFontWeightMedium);
   overflow: hidden;
+}
+.ps-card__title--link {
+  composes: ps-card__link;
 }
 .ps-card--small .ps-card__title {
   font-size: var(--psTypeFontSizeXSmall);
@@ -200,17 +216,8 @@
 .ps-card__metadata__datum:nth-of-type(1) {
   flex-shrink: 1;
 }
-.ps-card__title a, .ps-card__metadata__datum a {
-  color: inherit;
-}
-.ps-card__title a:hover,
-.ps-card__title a:active,
-.ps-card__metadata__datum a:hover,
-.ps-card__metadata__datum a:active {
-  color: var(--psColorsWhite);
-  text-decoration: underline;
-  transition: all var(--psMotionSpeedNormal);
-  cursor: pointer;
+.ps-card__metadata__datum--link {
+  composes: ps-card__link;
 }
 .ps-card__metadata__dot {
   display: inline-block;
