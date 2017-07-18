@@ -1364,8 +1364,7 @@
   color: inherit;
   cursor: pointer;
 }
-.ps-card__link___1R35W:hover,
-.ps-card__link___1R35W:active {
+.ps-card__link___1R35W:hover, .ps-card__link___1R35W:active {
   color: #ffffff;
   text-decoration: underline;
   -webkit-transition: all 200ms;
