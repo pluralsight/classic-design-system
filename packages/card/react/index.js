@@ -50,18 +50,25 @@ const renderImage = props =>
 
 const percent = num => {
   try {
-    return parseFloat(num).toFixed() + '%'
+    return Math.min(parseFloat(num).toFixed(), 100) + '%'
   } catch (_) {
     return '0%'
   }
 }
+
+const getProgressBarClassName = props =>
+  classNames({
+    [props.css['ps-card__progress__bar']]: true,
+    [props.css['ps-card__progress__bar--completed']]:
+      percent(props.progress) === '100%'
+  })
 
 const renderProgress = props =>
   props.progress
     ? <div className={props.css['ps-card__progress']}>
         <div
           aria-label={`${percent(props.progress)} complete`}
-          className={props.css['ps-card__progress__bar']}
+          className={getProgressBarClassName(props)}
           style={{ width: percent(props.progress) }}
         />
       </div>

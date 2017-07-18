@@ -24291,10 +24291,16 @@ var renderImage = function renderImage(props) {
 
 var percent = function percent(num) {
   try {
-    return parseFloat(num).toFixed() + '%';
+    return Math.min(parseFloat(num).toFixed(), 100) + '%';
   } catch (_) {
     return '0%';
   }
+};
+
+var getProgressBarClassName = function getProgressBarClassName(props) {
+  var _classNames2;
+
+  return (0, _classnames2.default)((_classNames2 = {}, _defineProperty(_classNames2, props.css['ps-card__progress__bar'], true), _defineProperty(_classNames2, props.css['ps-card__progress__bar--completed'], percent(props.progress) === '100%'), _classNames2));
 };
 
 var renderProgress = function renderProgress(props) {
@@ -24303,16 +24309,16 @@ var renderProgress = function renderProgress(props) {
     { className: props.css['ps-card__progress'] },
     _react2.default.createElement('div', {
       'aria-label': percent(props.progress) + ' complete',
-      className: props.css['ps-card__progress__bar'],
+      className: getProgressBarClassName(props),
       style: { width: percent(props.progress) }
     })
   ) : null;
 };
 
 var getTitleLinkClassName = function getTitleLinkClassName(props) {
-  var _classNames2;
+  var _classNames3;
 
-  return (0, _classnames2.default)((_classNames2 = {}, _defineProperty(_classNames2, props.title.className, props.title.className), _defineProperty(_classNames2, props.css['ps-card__title--link'], true), _classNames2));
+  return (0, _classnames2.default)((_classNames3 = {}, _defineProperty(_classNames3, props.title.className, props.title.className), _defineProperty(_classNames3, props.css['ps-card__title--link'], true), _classNames3));
 };
 
 var isReactElement = function isReactElement(el) {
@@ -24335,9 +24341,9 @@ var renderTitle = function renderTitle(props) {
 };
 
 var getMetaDataLinkClassName = function getMetaDataLinkClassName(props, el) {
-  var _classNames3;
+  var _classNames4;
 
-  return (0, _classnames2.default)((_classNames3 = {}, _defineProperty(_classNames3, el.className, el.className), _defineProperty(_classNames3, props.css['ps-card__metadata__datum--link'], true), _classNames3));
+  return (0, _classnames2.default)((_classNames4 = {}, _defineProperty(_classNames4, el.className, el.className), _defineProperty(_classNames4, props.css['ps-card__metadata__datum--link'], true), _classNames4));
 };
 
 var renderMetaData = function renderMetaData(props, metadata) {
@@ -24396,10 +24402,10 @@ var renderTag = function renderTag(props) {
     'div',
     { className: props.css['ps-card__tag'] },
     _react2.default.Children.map(props.tag, function (part, i) {
-      var _classNames4;
+      var _classNames5;
 
       var elProps = {
-        className: (0, _classnames2.default)((_classNames4 = {}, _defineProperty(_classNames4, part.props.className, part.props.className), _defineProperty(_classNames4, props.css['ps-card__tag__part'], true), _classNames4)),
+        className: (0, _classnames2.default)((_classNames5 = {}, _defineProperty(_classNames5, part.props.className, part.props.className), _defineProperty(_classNames5, props.css['ps-card__tag__part'], true), _classNames5)),
         key: i
       };
       if (!isNativeElement(part)) elProps.css = {
@@ -26432,6 +26438,7 @@ exports.default = (0, _reactStyleable2.default)(_carouselModule2.default)(functi
         { className: props.css.cardContainer },
         _react4.default.createElement(_react2.default, {
           title: 'Advanced TypeScript',
+          progress: 0,
           image: _react4.default.createElement('img', { src: 'http://via.placeholder.com/350x150' }),
           metadata1: ['Brice Wilson', 'Advanced'],
           metadata2: ['0m watched'],
@@ -26443,9 +26450,10 @@ exports.default = (0, _reactStyleable2.default)(_carouselModule2.default)(functi
         { className: props.css.cardContainer },
         _react4.default.createElement(_react2.default, {
           title: 'Getting Started with Reactive Programming Using RxJS',
+          progress: 20,
           image: _react4.default.createElement('img', { src: 'http://via.placeholder.com/350x150' }),
           metadata1: ['Scott Allen', 'Intermediate'],
-          metadata2: ['0m watched'],
+          metadata2: ['23m watched'],
           size: 'small'
         })
       ),
@@ -26454,9 +26462,10 @@ exports.default = (0, _reactStyleable2.default)(_carouselModule2.default)(functi
         { className: props.css.cardContainer },
         _react4.default.createElement(_react2.default, {
           title: 'Building a JavaScript Development Environment',
+          progress: 67,
           image: _react4.default.createElement('img', { src: 'http://via.placeholder.com/350x150' }),
           metadata1: ['Cory House', 'Intermediate'],
-          metadata2: ['0m watched'],
+          metadata2: ['3 hr 23m watched'],
           size: 'small'
         })
       ),
@@ -26465,8 +26474,9 @@ exports.default = (0, _reactStyleable2.default)(_carouselModule2.default)(functi
         { className: props.css.cardContainer },
         _react4.default.createElement(_react2.default, {
           title: 'Webpack Fundamentals',
+          progress: 100,
           metadata1: ['Joe Eames', 'Intermediate'],
-          metadata2: ['0m watched'],
+          metadata2: ['90m watched'],
           image: _react4.default.createElement('img', { src: 'http://via.placeholder.com/350x150' }),
           size: 'small'
         })
@@ -32966,7 +32976,7 @@ module.exports = {"ps-button":"ps-button___2EFfR","ps-button--tiny":"ps-button--
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"ps-card":"ps-card___2zSSP","ps-card--small":"ps-card--small___3gxtm","ps-card--medium":"ps-card--medium___5eDWG","ps-card--large":"ps-card--large___xbvHu","ps-icon__fg--fill":"ps-icon__fg--fill___1Nbfk","ps-icon__fg--stroke":"ps-icon__fg--stroke___2deYS","ps-card__link":"ps-card__link___1R35W","ps-card__image-frame":"ps-card__image-frame___1ocA2","ps-card__image":"ps-card__image___2MmCd","ps-card__action-bar":"ps-card__action-bar___2d3QI","ps-card--full-overlay":"ps-card--full-overlay___14Isw","ps-card--action-bar-visible":"ps-card--action-bar-visible___1BAxp","ps-button--flat--action-bar":"ps-button--flat--action-bar___1LQMj","ps-card__full-overlay":"ps-card__full-overlay___351f7","ps-card--full-overlay-visible":"ps-card--full-overlay-visible___3dcHV","ps-card__tag":"ps-card__tag___aRZAY","ps-card__tag__part":"ps-card__tag__part___1rjkA","ps-card__tag__part--icon":"ps-card__tag__part--icon___4cg9Q","ps-card__bonus-bar":"ps-card__bonus-bar___1g5FL","ps-card__progress":"ps-card__progress___3pVLT","ps-card__progress__bar":"ps-card__progress__bar___41-QK","ps-card__title":"ps-card__title___CCHuG","ps-card__title--link":"ps-card__title--link___2ut-T ps-card__link___1R35W","ps-card__metadata":"ps-card__metadata___3YV1n","ps-card__metadata__datum":"ps-card__metadata__datum___-Ixrv","ps-card__metadata__datum--link":"ps-card__metadata__datum--link___1GmT- ps-card__link___1R35W","ps-card__metadata__dot":"ps-card__metadata__dot___1c4pP"};
+module.exports = {"ps-card":"ps-card___2zSSP","ps-card--small":"ps-card--small___3gxtm","ps-card--medium":"ps-card--medium___5eDWG","ps-card--large":"ps-card--large___xbvHu","ps-icon__fg--fill":"ps-icon__fg--fill___1Nbfk","ps-icon__fg--stroke":"ps-icon__fg--stroke___2deYS","ps-card__link":"ps-card__link___1R35W","ps-card__image-frame":"ps-card__image-frame___1ocA2","ps-card__image":"ps-card__image___2MmCd","ps-card__action-bar":"ps-card__action-bar___2d3QI","ps-card--full-overlay":"ps-card--full-overlay___14Isw","ps-card--action-bar-visible":"ps-card--action-bar-visible___1BAxp","ps-button--flat--action-bar":"ps-button--flat--action-bar___1LQMj","ps-card__full-overlay":"ps-card__full-overlay___351f7","ps-card--full-overlay-visible":"ps-card--full-overlay-visible___3dcHV","ps-card__tag":"ps-card__tag___aRZAY","ps-card__tag__part":"ps-card__tag__part___1rjkA","ps-card__tag__part--icon":"ps-card__tag__part--icon___4cg9Q","ps-card__bonus-bar":"ps-card__bonus-bar___1g5FL","ps-card__progress":"ps-card__progress___3pVLT","ps-card__progress__bar":"ps-card__progress__bar___41-QK","ps-card__progress__bar--completed":"ps-card__progress__bar--completed___1Czvz","ps-card__title":"ps-card__title___CCHuG","ps-card__title--link":"ps-card__title--link___2ut-T ps-card__link___1R35W","ps-card__metadata":"ps-card__metadata___3YV1n","ps-card__metadata__datum":"ps-card__metadata__datum___-Ixrv","ps-card__metadata__datum--link":"ps-card__metadata__datum--link___1GmT- ps-card__link___1R35W","ps-card__metadata__dot":"ps-card__metadata__dot___1c4pP"};
 
 /***/ }),
 /* 309 */

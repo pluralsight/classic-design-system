@@ -162,6 +162,9 @@
   height: 5px;
   background-color: var(--psColorsWhite);
 }
+.ps-card__progress__bar--completed {
+  background-color: var(--psColorsGreen);
+}
 
 .ps-card__title {
   display: block;
