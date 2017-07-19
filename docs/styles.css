@@ -1412,10 +1412,10 @@
   right: 0;
   width: 100%;
   height: 64px;
-  padding: 4px
-    4px
+  padding: 8px
+    8px
     0
-    4px;
+    8px;
   background: -webkit-gradient(
     linear,
     left top, left bottom,
@@ -1438,6 +1438,9 @@
 .ps-card__image-frame___1ocA2:hover .ps-card__action-bar___2d3QI,
 .ps-card__image-frame___1ocA2:active .ps-card__action-bar___2d3QI {
   opacity: 1;
+}
+.ps-card__action-bar__action___3lYAq + .ps-card__action-bar__action___3lYAq {
+  margin-left: 4px;
 }
 .ps-button--flat--action-bar___1LQMj:hover {
   background: none;

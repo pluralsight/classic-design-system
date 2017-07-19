@@ -132,17 +132,19 @@ const renderActionBar = props =>
   Array.isArray(props.actionBar) && props.actionBar.length > 0
     ? <div className={props.css['ps-card__action-bar']}>
         {React.Children.map(props.actionBar, (action, i) =>
-          React.cloneElement(action, {
-            css: {
-              compose: {
-                'ps-button--flat': props.css['ps-button--flat--action-bar']
+          <div className={props.css['ps-card__action-bar__action']}>
+            {React.cloneElement(action, {
+              css: {
+                compose: {
+                  'ps-button--flat': props.css['ps-button--flat--action-bar']
+                },
+                'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
+                'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
               },
-              'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
-              'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
-            },
-            key: i,
-            size: 'small'
-          })
+              key: i,
+              size: 'small'
+            })}
+          </div>
         )}
       </div>
     : null
