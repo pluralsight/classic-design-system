@@ -138,8 +138,9 @@ const renderActionBar = props =>
                 compose: {
                   'ps-button--flat': props.css['ps-button--flat--action-bar']
                 },
-                'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
-                'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
+                'ps-icon__fg--fill': props.css['ps-icon__fg--fill--action-bar'],
+                'ps-icon__fg--stroke':
+                  props.css['ps-icon__fg--stroke--action-bar']
               },
               key: i,
               size: 'small'
@@ -165,8 +166,8 @@ const renderTag = props =>
           if (!isNativeElement(part))
             elProps.css = {
               'ps-icon': props.css['ps-card__tag__part--icon'],
-              'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
-              'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
+              'ps-icon__fg--fill': props.css['ps-icon__fg--fill--tag'],
+              'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke--tag']
             }
           return React.cloneElement(part, elProps)
         })}
@@ -187,23 +188,20 @@ const renderBonusBar = props =>
       </div>
     : null
 
-export const Card = props => {
-  return (
-    <div {...rmSystemProps(props)} className={getClassName(props)}>
-      <div className={props.css['ps-card__image-frame']}>
-        {renderImage(props)}
-        {renderFullOverlay(props)}
-        {renderActionBar(props)}
-        {renderBonusBar(props)}
-        {renderTag(props)}
-      </div>
-      {renderProgress(props)}
-      {renderTitle(props)}
-      {renderMetaData(props, props.metadata1)}
-      {renderMetaData(props, props.metadata2)}
+export const Card = props =>
+  <div {...rmSystemProps(props)} className={getClassName(props)}>
+    <div className={props.css['ps-card__image-frame']}>
+      {renderImage(props)}
+      {renderFullOverlay(props)}
+      {renderActionBar(props)}
+      {renderBonusBar(props)}
+      {renderTag(props)}
     </div>
-  )
-}
+    {renderProgress(props)}
+    {renderTitle(props)}
+    {renderMetaData(props, props.metadata1)}
+    {renderMetaData(props, props.metadata2)}
+  </div>
 
 import PropTypes from 'prop-types'
 Card.propTypes = {

@@ -18,16 +18,6 @@
   max-width: 680px;
 }
 
-/* child icons */
-.ps-card .ps-icon__fg--fill {
-  fill: var(--psColorsWhite);
-  transition: all var(--psMotionSpeedNormal);
-}
-.ps-card .ps-icon__fg--stroke {
-  stroke: var(--psColorsWhite);
-  transition: all var(--psMotionSpeedNormal);
-}
-
 /* generic links w/in component */
 .ps-card__link {
   color: inherit;
@@ -95,8 +85,24 @@
 .ps-card__action-bar__action + .ps-card__action-bar__action {
   margin-left: var(--psLayoutSpacingTiny);
 }
-.ps-button--flat--action-bar:hover {
+.ps-button--flat--action-bar:hover, .ps-button--flat--action-bar:active {
   background: none;
+}
+.ps-icon__fg--fill--action-bar {
+  fill: var(--psColorsGray02);
+  transition: all var(--psMotionSpeedNormal);
+}
+.ps-button--flat--action-bar:hover .ps-icon__fg--fill--action-bar,
+.ps-button--flat--action-bar:active .ps-icon__fg--fill--action-bar {
+  fill: var(--psColorsWhite);
+}
+.ps-icon__fg--stroke--action-bar {
+  stroke: var(--psColorsGray02);
+  transition: all var(--psMotionSpeedNormal);
+}
+.ps-button--flat--action-bar:hover .ps-icon__fg--stroke--action-bar,
+.ps-button--flat--action-bar:active .ps-icon__fg--stroke--action-bar {
+  stroke: var(--psColorsWhite);
 }
 
 .ps-card__full-overlay {
@@ -141,6 +147,12 @@
 .ps-card__tag__part--icon {
   height: 16px;
   width: 16px;
+}
+.ps-icon__fg--fill--tag {
+  fill: var(--psColorsWhite);
+}
+.ps-icon__fg--stroke--tag {
+  stroke: var(--psColorsWhite);
 }
 
 .ps-card__bonus-bar {
