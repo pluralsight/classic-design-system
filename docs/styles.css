@@ -1444,7 +1444,7 @@
   background: none;
 }
 .ps-icon__fg--fill--action-bar___SETDA {
-  fill: #aaaaaa;
+  fill: rgba(255, 255, 255, 0.8);
   -webkit-transition: all 200ms;
   transition: all 200ms;
 }
@@ -1453,7 +1453,7 @@
   fill: #ffffff;
 }
 .ps-icon__fg--stroke--action-bar___2jWOm {
-  stroke: #aaaaaa;
+  stroke: rgba(255, 255, 255, 0.8);
   -webkit-transition: all 200ms;
   transition: all 200ms;
 }

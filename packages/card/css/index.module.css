@@ -93,7 +93,7 @@
   background: none;
 }
 .ps-icon__fg--fill--action-bar {
-  fill: var(--psColorsGray02);
+  fill: color(var(--psColorsWhite) alpha(80%));
   transition: all var(--psMotionSpeedNormal);
 }
 .ps-button--flat--action-bar:hover .ps-icon__fg--fill--action-bar,
@@ -101,7 +101,7 @@
   fill: var(--psColorsWhite);
 }
 .ps-icon__fg--stroke--action-bar {
-  stroke: var(--psColorsGray02);
+  stroke: color(var(--psColorsWhite) alpha(80%));
   transition: all var(--psMotionSpeedNormal);
 }
 .ps-button--flat--action-bar:hover .ps-icon__fg--stroke--action-bar,
