@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import styleable from 'react-styleable'
 import React from 'react'
 import Shiitake from 'shiitake'
+import voidElements from 'void-elements'
 
 import css from '../css/index.module.css'
 
@@ -35,16 +36,25 @@ const rmSystemProps = props => {
   return rest
 }
 
-// TODO: use className instead
-const formatImageClassName = props =>
-  props.image.props.className
-    ? `${props.image.props.className} ${props.css['ps-card__image']}`
-    : props.css['ps-card__image']
+const formatImageClassName = (props, node) =>
+  classNames({
+    [props.css['ps-card__image']]: true,
+    [node.props.className]: node.props.className
+  })
 
 const renderImage = props =>
   props.image
     ? React.cloneElement(props.image, {
-        className: formatImageClassName(props)
+        className: formatImageClassName(props, props.image),
+        ...(voidElements[props.image.type]
+          ? {}
+          : {
+              children: React.Children.map(props.image.props.children, child =>
+                React.cloneElement(child, {
+                  className: formatImageClassName(props, child)
+                })
+              )
+            })
       })
     : null
 
@@ -204,6 +214,7 @@ export const Card = props =>
   </div>
 
 import PropTypes from 'prop-types'
+// TODO: offer more specific guides where real constraints exist (component types)
 Card.propTypes = {
   actionBar: PropTypes.arrayOf(PropTypes.node),
   actionBarVisible: PropTypes.bool,

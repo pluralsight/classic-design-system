@@ -75,6 +75,23 @@ export default _ =>
           size: 'medium',
           image: <img src="http://via.placeholder.com/200x400" />,
           title: 'Tall image'
+        },
+        {
+          actionBar: [
+            <Button appearance="flat" icon={<Icon id="bookmark" />} />
+          ],
+          fullOverlay: (
+            <a href="https://google.com?q=full%20overlay" target="_blank">
+              Full Overlay
+            </a>
+          ),
+          size: 'medium',
+          image: (
+            <a href="https://google.com" target="_blank">
+              <img src="http://via.placeholder.com/300x300" />
+            </a>
+          ),
+          title: 'Linked image'
         }
       ]}
     />
