@@ -41,10 +41,10 @@
   height: 96px;
 }
 .ps-card--medium .ps-card__image-frame {
-  height: 108px;
+  height: 144px;
 }
 .ps-card--large .ps-card__image-frame {
-  height: 208px;
+  height: 240px;
 }
 
 .ps-card__image {
