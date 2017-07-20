@@ -26,14 +26,6 @@ export default styleable(css)(props => {
         import Button from '@pluralsight/ps-design-system-button/react'
       </Code>
 
-      <P>
-        For more project setup guidance, see the{' '}
-        <RouterLink to="/components/installation">
-          Component Installation Instructions
-        </RouterLink>
-        .
-      </P>
-
       <Heading size="large">
         <h2>Button appearance</h2>
       </Heading>

@@ -26317,18 +26317,6 @@ exports.default = (0, _reactStyleable2.default)(_indexModule2.default)(function 
       'import Button from \'@pluralsight/ps-design-system-button/react\''
     ),
     _react2.default.createElement(
-      _components.P,
-      null,
-      'For more project setup guidance, see the',
-      ' ',
-      _react2.default.createElement(
-        _reactRouterDom.Link,
-        { to: '/components/installation' },
-        'Component Installation Instructions'
-      ),
-      '.'
-    ),
-    _react2.default.createElement(
       _components.Heading,
       { size: 'large' },
       _react2.default.createElement(
@@ -27176,8 +27164,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _reactRouterDom = __webpack_require__(18);
-
 var _react = __webpack_require__(225);
 
 var _react2 = _interopRequireDefault(_react);
@@ -27213,22 +27199,6 @@ exports.default = function (_) {
       _components.Code,
       { language: 'javascript' },
       'import Text from \'@pluralsight/ps-design-system-text/react\''
-    ),
-    _react4.default.createElement(
-      _components.P,
-      null,
-      'For more project setup guidance, see the',
-      ' ',
-      _react4.default.createElement(
-        _react2.default,
-        null,
-        _react4.default.createElement(
-          _reactRouterDom.Link,
-          { to: '/components/installation' },
-          'Component Installation Instructions'
-        )
-      ),
-      '.'
     )
   );
 };

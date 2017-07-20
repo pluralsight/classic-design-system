@@ -1,4 +1,3 @@
-import { Link as RouterLink } from 'react-router-dom'
 import Link from '@pluralsight/ps-design-system-link/react'
 import React from 'react'
 
@@ -15,14 +14,4 @@ export default _ =>
     <Code language="javascript">
       import Text from '@pluralsight/ps-design-system-text/react'
     </Code>
-
-    <P>
-      For more project setup guidance, see the{' '}
-      <Link>
-        <RouterLink to="/components/installation">
-          Component Installation Instructions
-        </RouterLink>
-      </Link>
-      .
-    </P>
   </div>
