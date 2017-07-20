@@ -27367,37 +27367,39 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(46);
 
-var _react2 = _interopRequireDefault(_react);
+var _react2 = __webpack_require__(1);
+
+var _react3 = _interopRequireDefault(_react2);
 
 var _components = __webpack_require__(7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = function (_) {
-  return _react2.default.createElement(
+  return _react3.default.createElement(
     'div',
     null,
-    _react2.default.createElement(
+    _react3.default.createElement(
       _components.Heading,
       { size: 'large' },
-      _react2.default.createElement(
+      _react3.default.createElement(
         'h2',
         null,
         'Heading styles'
       )
     ),
-    _react2.default.createElement(
+    _react3.default.createElement(
       _components.P,
       null,
       'Heading styles compose complimentary typography attributes for simplified implementation. Try to use common heading styles when possible.'
     ),
-    _react2.default.createElement(_components.Example.React, {
-      component: _react2.default.createElement(
-        _components.Heading,
+    _react3.default.createElement(_components.Example.React, {
+      component: _react3.default.createElement(
+        _react.Heading,
         null,
-        _react2.default.createElement(
+        _react3.default.createElement(
           'h2',
           { style: { color: 'white' } },
           'Heading'
