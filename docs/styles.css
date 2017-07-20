@@ -1339,6 +1339,7 @@
 }
 .ps-card___2zSSP {
   width: 100%;
+  text-align: left;
 }
 /* size */
 .ps-card--small___3gxtm {
@@ -1347,7 +1348,7 @@
 }
 .ps-card--medium___5eDWG {
   min-width: 240px;
-  max-width: 440;
+  max-width: 440px;
 }
 .ps-card--large___xbvHu {
   min-width: 440px;
