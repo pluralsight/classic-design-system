@@ -1,12 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-    <title>path.icon</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="path.icon" fill="#FFFFFF">
-            <path d="M0,5.0476 L4,5.0476 L4,6.0476 L2.124,6.0476 L7,11.8426 L7,20.0476 L6,20.0476 L6,12.2076 L1,6.2666 L1,9.0486 L0,9.0486 L0,5.0476 Z M18.9999,5.0476 L23.0009,5.0476 L23.0009,9.0486 L21.9999,9.0486 L21.9999,6.2666 L16.9999,12.2076 L16.9999,20.0476 L15.9999,20.0476 L15.9999,11.8426 L20.8769,6.0476 L18.9999,6.0476 L18.9999,5.0476 Z M11.502,3.0001 L13.982,5.7581 L13.238,6.4251 L12,5.0491 L12,20.0481 L11,20.0481 L11,5.0541 L9.765,6.4251 L9.022,5.7581 L11.502,3.0001 Z" id="Combined-Shape"></path>
-        </g>
-    </g>
+<svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <title>Path icon</title>
+  <g class="ps-icon__fg--fill">
+    <path d="M0,5.0476 L4,5.0476 L4,6.0476 L2.124,6.0476 L7,11.8426 L7,20.0476 L6,20.0476 L6,12.2076 L1,6.2666 L1,9.0486 L0,9.0486 L0,5.0476 Z M18.9999,5.0476 L23.0009,5.0476 L23.0009,9.0486 L21.9999,9.0486 L21.9999,6.2666 L16.9999,12.2076 L16.9999,20.0476 L15.9999,20.0476 L15.9999,11.8426 L20.8769,6.0476 L18.9999,6.0476 L18.9999,5.0476 Z M11.502,3.0001 L13.982,5.7581 L13.238,6.4251 L12,5.0491 L12,20.0481 L11,20.0481 L11,5.0541 L9.765,6.4251 L9.022,5.7581 L11.502,3.0001 Z"></path>
+  </g>
 </svg>

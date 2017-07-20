@@ -222,14 +222,14 @@ export default _ =>
       name="Card"
       permutations={[
         {
-          tag: [<Icon id="logo" />, <span>Course</span>]
+          tag: [<Icon id="path" />, <span>Path</span>]
         },
         {
-          tag: [<span>Channel</span>]
+          tag: [<span>Course</span>]
         },
         {
           size: 'small',
-          tag: [<Icon id="logo" />, <span>Course</span>]
+          tag: [<Icon id="channel" />, <span>Channel</span>]
         }
       ]}
     />
@@ -254,7 +254,7 @@ export default _ =>
             <Button appearance="flat" icon={<Icon id="bookmark" />} />
           ],
           fullOverlay: <a>Custom Thing</a>,
-          tag: [<Icon id="logo" />, <span>Course</span>]
+          tag: [<Icon id="channel" />, <span>Channel</span>]
         },
         {
           fullOverlay: <div>Play</div>,

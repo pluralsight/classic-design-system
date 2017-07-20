@@ -5,13 +5,21 @@ import styleable from 'react-styleable'
 import css from '../css/index.module.css'
 
 import bookmark from '../svg/bookmark.icon.svg'
+import bookmarkFill from '../svg/bookmark-fill.icon.svg'
+import channel from '../svg/channel.icon.svg'
 import logo from '../svg/logo.icon.svg'
 import more from '../svg/more.icon.svg'
+import path from '../svg/path.icon.svg'
+import play from '../svg/play.icon.svg'
 
 const ids = {
   bookmark,
+  bookmarkFill,
+  channel,
   logo,
-  more
+  more,
+  path,
+  play
 }
 
 const getClassName = props =>
