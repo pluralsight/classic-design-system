@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.3.0"></a>
+# [4.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@4.2.0...@pluralsight/ps-design-system-site@4.3.0) (2017-07-20)
+
+
+### Bug Fixes
+
+* **site:** remove dead links ([5ed1175](https://github.com/pluralsight/design-system/commit/5ed1175))
+
+
+### Features
+
+* **icon:** cleanup new icons and use on site ([5bd4f3d](https://github.com/pluralsight/design-system/commit/5bd4f3d))
+* **site:** code examples for colors ([dcd4783](https://github.com/pluralsight/design-system/commit/dcd4783))
+* **site:** larger margins on headings ([a7cbc02](https://github.com/pluralsight/design-system/commit/a7cbc02))
+
+
+
+
 <a name="4.2.0"></a>
 # [4.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@4.1.0...@pluralsight/ps-design-system-site@4.2.0) (2017-07-20)
 
