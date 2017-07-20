@@ -51,7 +51,11 @@ export default _ =>
       component={defaultCard}
       orient="vertical"
       name="Card"
-      permutations={[{ size: 'large' }, { size: 'medium' }, { size: 'small' }]}
+      permutations={[
+        { size: 'large', metadata1: ['Great Author'] },
+        { size: 'medium', metadata1: ['Great Author'] },
+        { size: 'small', metadata1: ['Great Author'] }
+      ]}
     />
 
     <Heading size="large">
