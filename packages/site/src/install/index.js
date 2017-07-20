@@ -14,6 +14,8 @@ Use npm. Use webpack@2+.  Follow these streamlined install instructions. Fun. Pr
 
 ## Step 0: Build
 
+This assumes have build config for your app.  What follows is the additional config need to support the Design System.
+
 \`\`\`bash
 npm install @pluralsight/ps-design-system-build --save-dev
 \`\`\`
