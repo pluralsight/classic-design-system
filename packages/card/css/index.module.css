@@ -197,7 +197,7 @@
   color: var(--psColorsWhite);
 }
 .ps-card__title--link {
-  composes: ps-card__link;
+  composes: ps-card__title ps-card__link;
 }
 .ps-card--small .ps-card__title {
   font-size: var(--psTypeFontSizeXSmall);
