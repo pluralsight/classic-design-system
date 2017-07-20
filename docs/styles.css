@@ -899,9 +899,14 @@
 :root {
   /* motion */
 }
-.root___1SM3Z {
+.heading___1JaLL {
   color: #181818;
-  /* TODO: someday move the big margins in here too */
+}
+.heading--xx-large___umPms {
+  margin: 56px 0;
+}
+.heading--large___1rEjq {
+  margin: 56px 0 0 0;
 }
 :root {
   /* ui colors */

@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import { Heading } from '@pluralsight/ps-design-system-text/react'
 import React from 'react'
 import styleable from 'react-styleable'
@@ -9,8 +10,14 @@ const rmSystemProps = props => {
   return rest
 }
 
+const formatClassName = props =>
+  classNames({
+    [props.css.heading]: true,
+    [props.css['heading--' + props.size]]: props.size
+  })
+
 export default styleable(css)(props =>
-  <Heading {...rmSystemProps(props)} className={props.css.root}>
+  <Heading {...rmSystemProps(props)} className={formatClassName(props)}>
     {props.children}
   </Heading>
 )

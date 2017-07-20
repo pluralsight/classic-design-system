@@ -25641,6 +25641,10 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
+var _classnames = __webpack_require__(289);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
 var _react = __webpack_require__(46);
 
 var _react2 = __webpack_require__(1);
@@ -25657,6 +25661,8 @@ var _indexModule2 = _interopRequireDefault(_indexModule);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 var rmSystemProps = function rmSystemProps(props) {
@@ -25666,10 +25672,16 @@ var rmSystemProps = function rmSystemProps(props) {
   return rest;
 };
 
+var formatClassName = function formatClassName(props) {
+  var _classNames;
+
+  return (0, _classnames2.default)((_classNames = {}, _defineProperty(_classNames, props.css.heading, true), _defineProperty(_classNames, props.css['heading--' + props.size], props.size), _classNames));
+};
+
 exports.default = (0, _reactStyleable2.default)(_indexModule2.default)(function (props) {
   return _react3.default.createElement(
     _react.Heading,
-    _extends({}, rmSystemProps(props), { className: props.css.root }),
+    _extends({}, rmSystemProps(props), { className: formatClassName(props) }),
     props.children
   );
 });
@@ -33131,7 +33143,7 @@ module.exports = {"root":"root___1d5_f"};
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"root":"root___1SM3Z"};
+module.exports = {"heading":"heading___1JaLL","heading--xx-large":"heading--xx-large___umPms","heading--large":"heading--large___1rEjq"};
 
 /***/ }),
 /* 322 */
