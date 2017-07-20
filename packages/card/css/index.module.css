@@ -72,6 +72,7 @@
     transparent
   );
   transition: opacity var(--psMotionSpeedNormal);
+  pointer-events: none;
   opacity: 0;
 }
 .ps-card--full-overlay .ps-card__action-bar {
@@ -81,6 +82,9 @@
 .ps-card__image-frame:hover .ps-card__action-bar,
 .ps-card__image-frame:active .ps-card__action-bar {
   opacity: 1;
+}
+.ps-card__action-bar__action {
+  pointer-events: all;
 }
 .ps-card__action-bar__action + .ps-card__action-bar__action {
   margin-left: var(--psLayoutSpacingTiny);
@@ -116,12 +120,16 @@
   width: 100%;
   background: color(var(--psColorsBlack) alpha(50%));
   transition: opacity var(--psMotionSpeedNormal);
+  pointer-events: none;
   opacity: 0;
 }
 .ps-card--full-overlay-visible .ps-card__full-overlay,
 .ps-card__image-frame:hover .ps-card__full-overlay,
 .ps-card__image-frame:active .ps-card__full-overlay {
   opacity: 1;
+}
+.ps-card__full-overlay__child {
+  pointer-events: all;
 }
 
 .ps-card__tag {

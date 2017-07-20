@@ -184,10 +184,18 @@ const renderTag = props =>
       </div>
     : null
 
+const formatFullOverlayChildClassName = props =>
+  classNames({
+    [props.fullOverlay.props.className]: props.fullOverlay.props.className,
+    [props.css['ps-card__full-overlay__child']]: true
+  })
+
 const renderFullOverlay = props =>
   props.fullOverlay
     ? <div className={props.css['ps-card__full-overlay']}>
-        {props.fullOverlay}
+        {React.cloneElement(props.fullOverlay, {
+          className: formatFullOverlayChildClassName(props)
+        })}
       </div>
     : null
 
