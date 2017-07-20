@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@2.1.0...@pluralsight/ps-design-system-card@2.2.0) (2017-07-20)
+
+
+### Bug Fixes
+
+* **card:** allow image, action bar, and full overlay to be clicked ([26a045f](https://github.com/pluralsight/design-system/commit/26a045f))
+* **card:** style title link like string ([08439c6](https://github.com/pluralsight/design-system/commit/08439c6))
+
+
+### Features
+
+* **card:** linkable, styled image ([a893483](https://github.com/pluralsight/design-system/commit/a893483))
+* **site:** show metadata on card sizing ([0268071](https://github.com/pluralsight/design-system/commit/0268071))
+
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@2.0.4...@pluralsight/ps-design-system-card@2.1.0) (2017-07-18)
 

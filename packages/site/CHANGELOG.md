@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@4.1.0...@pluralsight/ps-design-system-site@4.2.0) (2017-07-20)
+
+
+### Features
+
+* **card:** linkable, styled image ([a893483](https://github.com/pluralsight/design-system/commit/a893483))
+* **site:** add prose to card examples ([f724a2d](https://github.com/pluralsight/design-system/commit/f724a2d))
+* **site:** show metadata on card sizing ([0268071](https://github.com/pluralsight/design-system/commit/0268071))
+
+
+
+
 <a name="4.1.0"></a>
 # [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@4.0.4...@pluralsight/ps-design-system-site@4.1.0) (2017-07-18)
 
