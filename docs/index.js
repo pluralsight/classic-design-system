@@ -11823,9 +11823,9 @@ var Card = exports.Card = function Card(props) {
       renderFullOverlay(props),
       renderActionBar(props),
       renderBonusBar(props),
-      renderTag(props)
+      renderTag(props),
+      renderProgress(props)
     ),
-    renderProgress(props),
     renderTitle(props),
     renderMetaData(props, props.metadata1),
     renderMetaData(props, props.metadata2)
@@ -26786,7 +26786,7 @@ exports.default = (0, _reactStyleable2.default)(_carouselModule2.default)(functi
         _react4.default.createElement(_react2.default, {
           title: 'Advanced TypeScript',
           progress: 0,
-          image: _react4.default.createElement('img', { src: 'http://via.placeholder.com/350x150' }),
+          image: _react4.default.createElement('img', { src: 'http://lorempixel.com/output/people-q-c-300-200-4.jpg' }),
           metadata1: ['Brice Wilson', 'Advanced'],
           metadata2: ['0m watched'],
           size: 'small'
@@ -26798,7 +26798,7 @@ exports.default = (0, _reactStyleable2.default)(_carouselModule2.default)(functi
         _react4.default.createElement(_react2.default, {
           title: 'Getting Started with Reactive Programming Using RxJS',
           progress: 20,
-          image: _react4.default.createElement('img', { src: 'http://via.placeholder.com/350x150' }),
+          image: _react4.default.createElement('img', { src: 'http://lorempixel.com/output/people-q-c-300-200-2.jpg' }),
           metadata1: ['Scott Allen', 'Intermediate'],
           metadata2: ['23m watched'],
           size: 'small'
@@ -26810,7 +26810,7 @@ exports.default = (0, _reactStyleable2.default)(_carouselModule2.default)(functi
         _react4.default.createElement(_react2.default, {
           title: 'Building a JavaScript Development Environment',
           progress: 67,
-          image: _react4.default.createElement('img', { src: 'http://via.placeholder.com/350x150' }),
+          image: _react4.default.createElement('img', { src: 'http://lorempixel.com/output/people-q-c-300-200-7.jpg' }),
           metadata1: ['Cory House', 'Intermediate'],
           metadata2: ['3 hr 23m watched'],
           size: 'small'
@@ -26824,7 +26824,7 @@ exports.default = (0, _reactStyleable2.default)(_carouselModule2.default)(functi
           progress: 100,
           metadata1: ['Joe Eames', 'Intermediate'],
           metadata2: ['90m watched'],
-          image: _react4.default.createElement('img', { src: 'http://via.placeholder.com/350x150' }),
+          image: _react4.default.createElement('img', { src: 'http://lorempixel.com/output/people-q-c-300-200-5.jpg' }),
           size: 'small'
         })
       )
@@ -26943,7 +26943,20 @@ exports.default = function (_) {
       component: defaultCard,
       orient: 'vertical',
       name: 'Card',
-      permutations: [{ size: 'large', metadata1: ['Great Author'] }, { size: 'medium', metadata1: ['Great Author'] }, { size: 'small', metadata1: ['Great Author'] }]
+      permutations: [{
+        size: 'large',
+        metadata1: ['Great Author'],
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/technics-q-c-680-320-6.jpg' })
+      }, {
+        size: 'medium',
+        metadata1: ['Great Author'],
+
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/technics-q-c-680-320-6.jpg' })
+      }, {
+        size: 'small',
+        metadata1: ['Great Author'],
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/technics-q-c-680-320-6.jpg' })
+      }]
     }),
     _react8.default.createElement(
       _components.Heading,
@@ -26982,7 +26995,7 @@ exports.default = function (_) {
         image: _react8.default.createElement(
           'a',
           { href: 'https://google.com', target: '_blank' },
-          _react8.default.createElement('img', { src: 'http://via.placeholder.com/300x300' })
+          _react8.default.createElement('img', { src: 'http://lorempixel.com/output/technics-q-c-680-320-2.jpg' })
         ),
         title: 'Linked image'
       }]
@@ -27005,7 +27018,16 @@ exports.default = function (_) {
       component: defaultCard,
       orient: 'vertical',
       name: 'Card',
-      permutations: [{ progress: 25 }, { progress: 66.666667 }, { progress: 100 }]
+      permutations: [{
+        progress: 25,
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/technics-q-c-680-320-1.jpg' })
+      }, {
+        progress: 66.666667,
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/technics-q-c-680-320-1.jpg' })
+      }, {
+        progress: 100,
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/technics-q-c-680-320-1.jpg' })
+      }]
     }),
     _react8.default.createElement(
       _components.Heading,
@@ -27063,10 +27085,15 @@ exports.default = function (_) {
       component: defaultCard,
       name: 'Card',
       orient: 'vertical',
-      permutations: [{ metadata1: ['Simon Allardice'] }, {
+      permutations: [{
         metadata1: ['Simon Allardice'],
-        metadata2: ['Intermediate', '2hr 20min', 'July 24, 1847']
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/abstract-q-c-680-320-4.jpg' })
       }, {
+        metadata1: ['Simon Allardice'],
+        metadata2: ['Intermediate', '2hr 20min', 'July 24, 1847'],
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/abstract-q-c-680-320-4.jpg' })
+      }, {
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/abstract-q-c-680-320-4.jpg' }),
         metadata1: [_react8.default.createElement(
           'a',
           null,
@@ -27094,12 +27121,15 @@ exports.default = function (_) {
       orient: 'vertical',
       name: 'Card',
       permutations: [{
-        actionBar: [_react8.default.createElement(_react2.default, { appearance: 'flat', icon: _react8.default.createElement(_react6.default, { id: 'bookmark' }) })]
-      }, {
-        actionBar: [_react8.default.createElement(_react2.default, { appearance: 'flat', icon: _react8.default.createElement(_react6.default, { id: 'bookmark' }) }), _react8.default.createElement(_react2.default, { appearance: 'flat', icon: _react8.default.createElement(_react6.default, { id: 'more' }) })]
+        actionBar: [_react8.default.createElement(_react2.default, { appearance: 'flat', icon: _react8.default.createElement(_react6.default, { id: 'bookmark' }) })],
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/food-q-c-680-320-8.jpg' })
       }, {
         actionBar: [_react8.default.createElement(_react2.default, { appearance: 'flat', icon: _react8.default.createElement(_react6.default, { id: 'bookmark' }) }), _react8.default.createElement(_react2.default, { appearance: 'flat', icon: _react8.default.createElement(_react6.default, { id: 'more' }) })],
-        actionBarVisible: true
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/food-q-c-680-320-8.jpg' })
+      }, {
+        actionBar: [_react8.default.createElement(_react2.default, { appearance: 'flat', icon: _react8.default.createElement(_react6.default, { id: 'bookmark' }) }), _react8.default.createElement(_react2.default, { appearance: 'flat', icon: _react8.default.createElement(_react6.default, { id: 'more' }) })],
+        actionBarVisible: true,
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/food-q-c-680-320-8.jpg' })
       }]
     }),
     _react8.default.createElement(
@@ -27125,20 +27155,23 @@ exports.default = function (_) {
           'span',
           null,
           'Path'
-        )]
+        )],
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/technics-q-c-680-320-5.jpg' })
       }, {
         tag: [_react8.default.createElement(
           'span',
           null,
           'Course'
-        )]
+        )],
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/technics-q-c-680-320-5.jpg' })
       }, {
         size: 'small',
         tag: [_react8.default.createElement(_react6.default, { id: 'channel' }), _react8.default.createElement(
           'span',
           null,
           'Channel'
-        )]
+        )],
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/technics-q-c-680-320-5.jpg' })
       }]
     }),
     _react8.default.createElement(
@@ -27164,7 +27197,8 @@ exports.default = function (_) {
           'div',
           null,
           'Play'
-        )
+        ),
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/nature-q-c-680-320-5.jpg' })
       }, {
         actionBar: [_react8.default.createElement(_react2.default, { appearance: 'flat', icon: _react8.default.createElement(_react6.default, { id: 'bookmark' }) })],
         fullOverlay: _react8.default.createElement(
@@ -27176,14 +27210,16 @@ exports.default = function (_) {
           'span',
           null,
           'Channel'
-        )]
+        )],
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/nature-q-c-680-320-5.jpg' })
       }, {
         fullOverlay: _react8.default.createElement(
           'div',
           null,
           'Play'
         ),
-        fullOverlayVisible: true
+        fullOverlayVisible: true,
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/nature-q-c-680-320-5.jpg' })
       }]
     }),
     _react8.default.createElement(
@@ -27208,7 +27244,8 @@ exports.default = function (_) {
           'div',
           null,
           'Just bonus'
-        )
+        ),
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/animals-q-c-680-320-8.jpg' })
       }]
     })
   );

@@ -214,8 +214,8 @@ export const Card = props =>
       {renderActionBar(props)}
       {renderBonusBar(props)}
       {renderTag(props)}
+      {renderProgress(props)}
     </div>
-    {renderProgress(props)}
     {renderTitle(props)}
     {renderMetaData(props, props.metadata1)}
     {renderMetaData(props, props.metadata2)}
