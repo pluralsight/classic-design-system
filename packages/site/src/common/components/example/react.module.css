@@ -29,6 +29,12 @@
   overflow: hidden;
   padding: var(--psLayoutSpacingLarge);
 }
+.editor :global(.CodeMirror) {
+  background: none;
+}
+.editor :global(.CodeMirror), .editor :global(.CodeMirror-scroll) {
+  height: auto;
+}
 .src {
   padding: var(--psLayoutSpacingLarge);
   background: var(--psColorsGray04);

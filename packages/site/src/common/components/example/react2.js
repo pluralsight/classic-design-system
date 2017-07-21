@@ -1,5 +1,13 @@
-import 'codemirror/lib/codemirror.css'
 import CodeMirror from 'react-codemirror'
+import 'codemirror/lib/codemirror.css'
+import './codemirror-theme-monokai-sublime.css'
+
+let modeLoaded = false
+if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
+  require('codemirror/mode/javascript/javascript')
+  modeLoaded = true
+}
+
 import Highlight from 'react-highlight'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -27,7 +35,7 @@ const unmountOutput = el => ReactDOM.unmountComponentAtNode(el)
 class ReactExample extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { code: props.code, error: null }
+    this.state = { code: props.code.trim(), error: null }
     this.handleCodeChange = this.handleCodeChange.bind(this)
   }
   componentDidMount() {
@@ -55,9 +63,14 @@ class ReactExample extends React.Component {
     }
   }
   renderSrc() {
-    const options = { mode: 'javascript' }
+    const options = {
+      readOnly: true,
+      theme: 'monokai-sublime'
+    }
+    if (modeLoaded) options.mode = 'javascript'
     return (
       <CodeMirror
+        className={this.props.css.editor}
         value={this.state.code}
         onChange={this.handleCodeChange}
         options={options}

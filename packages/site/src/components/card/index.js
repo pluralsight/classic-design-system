@@ -49,7 +49,12 @@ export default _ =>
     </P>
     <Example.React2
       code={`
-<Card size="large" metadata={['Great author']} image={<img src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />} />`}
+<Card
+  size="large"
+  metadata={['Great author']}
+  image={<img src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />}
+/>
+`}
     />
 
     <Example.React
