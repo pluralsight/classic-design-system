@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.2.3"></a>
+## [2.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@2.2.2...@pluralsight/ps-design-system-card@2.2.3) (2017-07-21)
+
+
+### Bug Fixes
+
+* **card:** allow context menu to bleed out of card ([86479cb](https://github.com/pluralsight/design-system/commit/86479cb))
+
+
+
+
 <a name="2.2.2"></a>
 ## [2.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@2.2.1...@pluralsight/ps-design-system-card@2.2.2) (2017-07-20)
 

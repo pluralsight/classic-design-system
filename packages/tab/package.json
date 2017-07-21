@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-tab",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "description": "Design system component for tab list ui",
   "main": "index.js",
   "style": "css/index.module.css",
@@ -16,7 +16,7 @@
     "react": ">=0.15.0 < 16.0.0"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^2.1.3",
+    "@pluralsight/ps-design-system-core": "^2.1.4",
     "classnames": "^2.2.5",
     "prop-types": "^15.5.10",
     "react-styleable": "^3.1.0"
