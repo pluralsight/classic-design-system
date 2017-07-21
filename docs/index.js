@@ -11644,15 +11644,19 @@ var formatImageClassName = function formatImageClassName(props, node) {
 };
 
 var renderImage = function renderImage(props) {
-  return props.image ? _react2.default.cloneElement(props.image, _extends({
-    className: formatImageClassName(props, props.image)
-  }, _voidElements2.default[props.image.type] ? {} : {
-    children: _react2.default.Children.map(props.image.props.children, function (child) {
-      return _react2.default.cloneElement(child, {
-        className: formatImageClassName(props, child)
-      });
-    })
-  })) : null;
+  return props.image ? _react2.default.createElement(
+    'div',
+    { className: props.css['ps-card__image-frame'] },
+    _react2.default.cloneElement(props.image, _extends({
+      className: formatImageClassName(props, props.image)
+    }, _voidElements2.default[props.image.type] ? {} : {
+      children: _react2.default.Children.map(props.image.props.children, function (child) {
+        return _react2.default.cloneElement(child, {
+          className: formatImageClassName(props, child)
+        });
+      })
+    }))
+  ) : null;
 };
 
 var percent = function percent(num) {
@@ -11818,7 +11822,7 @@ var Card = exports.Card = function Card(props) {
     _extends({}, rmSystemProps(props), { className: getClassName(props) }),
     _react2.default.createElement(
       'div',
-      { className: props.css['ps-card__image-frame'] },
+      { className: props.css['ps-card__overlays'] },
       renderImage(props),
       renderFullOverlay(props),
       renderActionBar(props),
@@ -33382,7 +33386,7 @@ module.exports = {"ps-button":"ps-button___2EFfR","ps-button--tiny":"ps-button--
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"ps-card":"ps-card___2zSSP","ps-card--small":"ps-card--small___3gxtm","ps-card--medium":"ps-card--medium___5eDWG","ps-card--large":"ps-card--large___xbvHu","ps-card__link":"ps-card__link___1R35W","ps-card__image-frame":"ps-card__image-frame___1ocA2","ps-card__image":"ps-card__image___2MmCd","ps-card__action-bar":"ps-card__action-bar___2d3QI","ps-card--full-overlay":"ps-card--full-overlay___14Isw","ps-card--action-bar-visible":"ps-card--action-bar-visible___1BAxp","ps-card__action-bar__action":"ps-card__action-bar__action___3lYAq","ps-button--flat--action-bar":"ps-button--flat--action-bar___1LQMj","ps-icon__fg--fill--action-bar":"ps-icon__fg--fill--action-bar___SETDA","ps-icon__fg--stroke--action-bar":"ps-icon__fg--stroke--action-bar___2jWOm","ps-card__full-overlay":"ps-card__full-overlay___351f7","ps-card--full-overlay-visible":"ps-card--full-overlay-visible___3dcHV","ps-card__full-overlay__child":"ps-card__full-overlay__child___1cNRf","ps-card__tag":"ps-card__tag___aRZAY","ps-card__tag__part":"ps-card__tag__part___1rjkA","ps-card__tag__part--icon":"ps-card__tag__part--icon___4cg9Q","ps-icon__fg--fill--tag":"ps-icon__fg--fill--tag___TN08i","ps-icon__fg--stroke--tag":"ps-icon__fg--stroke--tag___2q5qW","ps-card__bonus-bar":"ps-card__bonus-bar___1g5FL","ps-card__progress":"ps-card__progress___3pVLT","ps-card__progress__bar":"ps-card__progress__bar___41-QK","ps-card__progress__bar--completed":"ps-card__progress__bar--completed___1Czvz","ps-card__title":"ps-card__title___CCHuG","ps-card__title--link":"ps-card__title--link___2ut-T ps-card__title___CCHuG ps-card__link___1R35W","ps-card__metadata":"ps-card__metadata___3YV1n","ps-card__metadata__datum":"ps-card__metadata__datum___-Ixrv","ps-card__metadata__datum--link":"ps-card__metadata__datum--link___1GmT- ps-card__link___1R35W","ps-card__metadata__dot":"ps-card__metadata__dot___1c4pP"};
+module.exports = {"ps-card":"ps-card___2zSSP","ps-card--small":"ps-card--small___3gxtm","ps-card--medium":"ps-card--medium___5eDWG","ps-card--large":"ps-card--large___xbvHu","ps-card__link":"ps-card__link___1R35W","ps-card__overlays":"ps-card__overlays___2pb7F","ps-card__image-frame":"ps-card__image-frame___1ocA2","ps-card__image":"ps-card__image___2MmCd","ps-card__action-bar":"ps-card__action-bar___2d3QI","ps-card--full-overlay":"ps-card--full-overlay___14Isw","ps-card--action-bar-visible":"ps-card--action-bar-visible___1BAxp","ps-card__action-bar__action":"ps-card__action-bar__action___3lYAq","ps-button--flat--action-bar":"ps-button--flat--action-bar___1LQMj","ps-icon__fg--fill--action-bar":"ps-icon__fg--fill--action-bar___SETDA","ps-icon__fg--stroke--action-bar":"ps-icon__fg--stroke--action-bar___2jWOm","ps-card__full-overlay":"ps-card__full-overlay___351f7","ps-card--full-overlay-visible":"ps-card--full-overlay-visible___3dcHV","ps-card__full-overlay__child":"ps-card__full-overlay__child___1cNRf","ps-card__tag":"ps-card__tag___aRZAY","ps-card__tag__part":"ps-card__tag__part___1rjkA","ps-card__tag__part--icon":"ps-card__tag__part--icon___4cg9Q","ps-icon__fg--fill--tag":"ps-icon__fg--fill--tag___TN08i","ps-icon__fg--stroke--tag":"ps-icon__fg--stroke--tag___2q5qW","ps-card__bonus-bar":"ps-card__bonus-bar___1g5FL","ps-card__progress":"ps-card__progress___3pVLT","ps-card__progress__bar":"ps-card__progress__bar___41-QK","ps-card__progress__bar--completed":"ps-card__progress__bar--completed___1Czvz","ps-card__title":"ps-card__title___CCHuG","ps-card__title--link":"ps-card__title--link___2ut-T ps-card__title___CCHuG ps-card__link___1R35W","ps-card__metadata":"ps-card__metadata___3YV1n","ps-card__metadata__datum":"ps-card__metadata__datum___-Ixrv","ps-card__metadata__datum--link":"ps-card__metadata__datum--link___1GmT- ps-card__link___1R35W","ps-card__metadata__dot":"ps-card__metadata__dot___1c4pP"};
 
 /***/ }),
 /* 314 */

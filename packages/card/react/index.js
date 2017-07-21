@@ -44,18 +44,22 @@ const formatImageClassName = (props, node) =>
 
 const renderImage = props =>
   props.image
-    ? React.cloneElement(props.image, {
-        className: formatImageClassName(props, props.image),
-        ...(voidElements[props.image.type]
-          ? {}
-          : {
-              children: React.Children.map(props.image.props.children, child =>
-                React.cloneElement(child, {
-                  className: formatImageClassName(props, child)
-                })
-              )
-            })
-      })
+    ? <div className={props.css['ps-card__image-frame']}>
+        {React.cloneElement(props.image, {
+          className: formatImageClassName(props, props.image),
+          ...(voidElements[props.image.type]
+            ? {}
+            : {
+                children: React.Children.map(
+                  props.image.props.children,
+                  child =>
+                    React.cloneElement(child, {
+                      className: formatImageClassName(props, child)
+                    })
+                )
+              })
+        })}
+      </div>
     : null
 
 const percent = num => {
@@ -208,7 +212,7 @@ const renderBonusBar = props =>
 
 export const Card = props =>
   <div {...rmSystemProps(props)} className={getClassName(props)}>
-    <div className={props.css['ps-card__image-frame']}>
+    <div className={props.css['ps-card__overlays']}>
       {renderImage(props)}
       {renderFullOverlay(props)}
       {renderActionBar(props)}

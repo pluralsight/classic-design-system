@@ -1365,6 +1365,27 @@
   -webkit-transition: all 200ms;
   transition: all 200ms;
 }
+.ps-card__overlays___2pb7F {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ps-card--small___3gxtm .ps-card__overlays___2pb7F {
+  height: 96px;
+}
+.ps-card--medium___5eDWG .ps-card__overlays___2pb7F {
+  height: 144px;
+}
+.ps-card--large___xbvHu .ps-card__overlays___2pb7F {
+  height: 240px;
+}
 .ps-card__image-frame___1ocA2 {
   position: relative;
   display: -webkit-box;
@@ -1376,17 +1397,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   background-color: #000000;
-}
-.ps-card--small___3gxtm .ps-card__image-frame___1ocA2 {
-  height: 96px;
-}
-.ps-card--medium___5eDWG .ps-card__image-frame___1ocA2 {
-  height: 144px;
-}
-.ps-card--large___xbvHu .ps-card__image-frame___1ocA2 {
-  height: 240px;
 }
 .ps-card__image___2MmCd {
   position: relative;
@@ -1431,8 +1445,8 @@
   background: none;
 }
 .ps-card--action-bar-visible___1BAxp .ps-card__action-bar___2d3QI,
-.ps-card__image-frame___1ocA2:hover .ps-card__action-bar___2d3QI,
-.ps-card__image-frame___1ocA2:active .ps-card__action-bar___2d3QI {
+.ps-card__overlays___2pb7F:hover .ps-card__action-bar___2d3QI,
+.ps-card__overlays___2pb7F:active .ps-card__action-bar___2d3QI {
   opacity: 1;
 }
 .ps-card__action-bar__action___3lYAq {
@@ -1484,8 +1498,8 @@
   opacity: 0;
 }
 .ps-card--full-overlay-visible___3dcHV .ps-card__full-overlay___351f7,
-.ps-card__image-frame___1ocA2:hover .ps-card__full-overlay___351f7,
-.ps-card__image-frame___1ocA2:active .ps-card__full-overlay___351f7 {
+.ps-card__overlays___2pb7F:hover .ps-card__full-overlay___351f7,
+.ps-card__overlays___2pb7F:active .ps-card__full-overlay___351f7 {
   opacity: 1;
 }
 .ps-card__full-overlay__child___1cNRf {
