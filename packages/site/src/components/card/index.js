@@ -52,9 +52,28 @@ export default _ =>
       orient="vertical"
       name="Card"
       permutations={[
-        { size: 'large', metadata1: ['Great Author'] },
-        { size: 'medium', metadata1: ['Great Author'] },
-        { size: 'small', metadata1: ['Great Author'] }
+        {
+          size: 'large',
+          metadata1: ['Great Author'],
+          image: (
+            <img src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+          )
+        },
+        {
+          size: 'medium',
+          metadata1: ['Great Author'],
+
+          image: (
+            <img src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+          )
+        },
+        {
+          size: 'small',
+          metadata1: ['Great Author'],
+          image: (
+            <img src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+          )
+        }
       ]}
     />
 
@@ -92,7 +111,7 @@ export default _ =>
           size: 'medium',
           image: (
             <a href="https://google.com" target="_blank">
-              <img src="http://via.placeholder.com/300x300" />
+              <img src="http://lorempixel.com/output/technics-q-c-680-320-2.jpg" />
             </a>
           ),
           title: 'Linked image'
@@ -112,9 +131,24 @@ export default _ =>
       orient="vertical"
       name="Card"
       permutations={[
-        { progress: 25 },
-        { progress: 66.666667 },
-        { progress: 100 }
+        {
+          progress: 25,
+          image: (
+            <img src="http://lorempixel.com/output/technics-q-c-680-320-1.jpg" />
+          )
+        },
+        {
+          progress: 66.666667,
+          image: (
+            <img src="http://lorempixel.com/output/technics-q-c-680-320-1.jpg" />
+          )
+        },
+        {
+          progress: 100,
+          image: (
+            <img src="http://lorempixel.com/output/technics-q-c-680-320-1.jpg" />
+          )
+        }
       ]}
     />
 
@@ -161,12 +195,23 @@ export default _ =>
       name="Card"
       orient="vertical"
       permutations={[
-        { metadata1: ['Simon Allardice'] },
         {
           metadata1: ['Simon Allardice'],
-          metadata2: ['Intermediate', '2hr 20min', 'July 24, 1847']
+          image: (
+            <img src="http://lorempixel.com/output/abstract-q-c-680-320-4.jpg" />
+          )
         },
         {
+          metadata1: ['Simon Allardice'],
+          metadata2: ['Intermediate', '2hr 20min', 'July 24, 1847'],
+          image: (
+            <img src="http://lorempixel.com/output/abstract-q-c-680-320-4.jpg" />
+          )
+        },
+        {
+          image: (
+            <img src="http://lorempixel.com/output/abstract-q-c-680-320-4.jpg" />
+          ),
           metadata1: [
             <a>The Honorable Simon Allardice Hailing From Shores Abroad</a>
           ],
@@ -194,20 +239,29 @@ export default _ =>
         {
           actionBar: [
             <Button appearance="flat" icon={<Icon id="bookmark" />} />
-          ]
-        },
-        {
-          actionBar: [
-            <Button appearance="flat" icon={<Icon id="bookmark" />} />,
-            <Button appearance="flat" icon={<Icon id="more" />} />
-          ]
+          ],
+          image: (
+            <img src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />
+          )
         },
         {
           actionBar: [
             <Button appearance="flat" icon={<Icon id="bookmark" />} />,
             <Button appearance="flat" icon={<Icon id="more" />} />
           ],
-          actionBarVisible: true
+          image: (
+            <img src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />
+          )
+        },
+        {
+          actionBar: [
+            <Button appearance="flat" icon={<Icon id="bookmark" />} />,
+            <Button appearance="flat" icon={<Icon id="more" />} />
+          ],
+          actionBarVisible: true,
+          image: (
+            <img src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />
+          )
         }
       ]}
     />
@@ -222,14 +276,23 @@ export default _ =>
       name="Card"
       permutations={[
         {
-          tag: [<Icon id="path" />, <span>Path</span>]
+          tag: [<Icon id="path" />, <span>Path</span>],
+          image: (
+            <img src="http://lorempixel.com/output/technics-q-c-680-320-5.jpg" />
+          )
         },
         {
-          tag: [<span>Course</span>]
+          tag: [<span>Course</span>],
+          image: (
+            <img src="http://lorempixel.com/output/technics-q-c-680-320-5.jpg" />
+          )
         },
         {
           size: 'small',
-          tag: [<Icon id="channel" />, <span>Channel</span>]
+          tag: [<Icon id="channel" />, <span>Channel</span>],
+          image: (
+            <img src="http://lorempixel.com/output/technics-q-c-680-320-5.jpg" />
+          )
         }
       ]}
     />
@@ -247,18 +310,27 @@ export default _ =>
       name="Card"
       permutations={[
         {
-          fullOverlay: <div>Play</div>
+          fullOverlay: <div>Play</div>,
+          image: (
+            <img src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />
+          )
         },
         {
           actionBar: [
             <Button appearance="flat" icon={<Icon id="bookmark" />} />
           ],
           fullOverlay: <a>Custom Thing</a>,
-          tag: [<Icon id="channel" />, <span>Channel</span>]
+          tag: [<Icon id="channel" />, <span>Channel</span>],
+          image: (
+            <img src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />
+          )
         },
         {
           fullOverlay: <div>Play</div>,
-          fullOverlayVisible: true
+          fullOverlayVisible: true,
+          image: (
+            <img src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />
+          )
         }
       ]}
     />
@@ -275,7 +347,10 @@ export default _ =>
       name="Card"
       permutations={[
         {
-          bonusBar: <div>Just bonus</div>
+          bonusBar: <div>Just bonus</div>,
+          image: (
+            <img src="http://lorempixel.com/output/animals-q-c-680-320-8.jpg" />
+          )
         }
       ]}
     />

@@ -12,7 +12,9 @@ export default styleable(css)(props =>
         <Card
           title="Advanced TypeScript"
           progress={0}
-          image={<img src="http://via.placeholder.com/350x150" />}
+          image={
+            <img src="http://lorempixel.com/output/people-q-c-300-200-4.jpg" />
+          }
           metadata1={['Brice Wilson', 'Advanced']}
           metadata2={['0m watched']}
           size="small"
@@ -22,7 +24,9 @@ export default styleable(css)(props =>
         <Card
           title="Getting Started with Reactive Programming Using RxJS"
           progress={20}
-          image={<img src="http://via.placeholder.com/350x150" />}
+          image={
+            <img src="http://lorempixel.com/output/people-q-c-300-200-2.jpg" />
+          }
           metadata1={['Scott Allen', 'Intermediate']}
           metadata2={['23m watched']}
           size="small"
@@ -32,7 +36,9 @@ export default styleable(css)(props =>
         <Card
           title="Building a JavaScript Development Environment"
           progress={67}
-          image={<img src="http://via.placeholder.com/350x150" />}
+          image={
+            <img src="http://lorempixel.com/output/people-q-c-300-200-7.jpg" />
+          }
           metadata1={['Cory House', 'Intermediate']}
           metadata2={['3 hr 23m watched']}
           size="small"
@@ -44,7 +50,9 @@ export default styleable(css)(props =>
           progress={100}
           metadata1={['Joe Eames', 'Intermediate']}
           metadata2={['90m watched']}
-          image={<img src="http://via.placeholder.com/350x150" />}
+          image={
+            <img src="http://lorempixel.com/output/people-q-c-300-200-5.jpg" />
+          }
           size="small"
         />
       </div>
