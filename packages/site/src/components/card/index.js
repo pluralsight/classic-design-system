@@ -168,13 +168,30 @@ export default _ =>
       name="Card"
       orient="vertical"
       permutations={[
-        { title: 'String Title' },
         {
-          title: <a>Link Title</a>
+          title: <a>Link Title</a>,
+          image: (
+            <img src="http://lorempixel.com/output/nature-q-c-680-320-10.jpg" />
+          )
         },
         {
           title:
-            'Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania'
+            'Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania',
+          image: (
+            <img src="http://lorempixel.com/output/nature-q-c-680-320-10.jpg" />
+          )
+        },
+        {
+          title: (
+            <a>
+              Link with Super Long Title of the Technology of the Century as
+              Brought to You By Tech Groupsoft in the Stunning Desert of British
+              Lithuania
+            </a>
+          ),
+          image: (
+            <img src="http://lorempixel.com/output/nature-q-c-680-320-10.jpg" />
+          )
         }
       ]}
     />

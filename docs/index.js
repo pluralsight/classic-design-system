@@ -27052,14 +27052,23 @@ exports.default = function (_) {
       component: defaultCard,
       name: 'Card',
       orient: 'vertical',
-      permutations: [{ title: 'String Title' }, {
+      permutations: [{
         title: _react8.default.createElement(
           'a',
           null,
           'Link Title'
-        )
+        ),
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/nature-q-c-680-320-10.jpg' })
       }, {
-        title: 'Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania'
+        title: 'Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania',
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/nature-q-c-680-320-10.jpg' })
+      }, {
+        title: _react8.default.createElement(
+          'a',
+          null,
+          'Link with Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania'
+        ),
+        image: _react8.default.createElement('img', { src: 'http://lorempixel.com/output/nature-q-c-680-320-10.jpg' })
       }]
     }),
     _react8.default.createElement(
