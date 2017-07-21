@@ -5,11 +5,15 @@ exports[`renders bonusBar 1`] = `
   className="ps-card ps-card--medium"
 >
   <div
-    className="ps-card__image-frame"
+    className="ps-card__overlays"
   >
     <div
-      className="ps-card__image"
-    />
+      className="ps-card__image-frame"
+    >
+      <div
+        className="ps-card__image"
+      />
+    </div>
     <div
       className="ps-card__bonus-bar"
     >
@@ -111,11 +115,15 @@ exports[`renders fullOverlay 1`] = `
   className="ps-card ps-card--medium ps-card--full-overlay"
 >
   <div
-    className="ps-card__image-frame"
+    className="ps-card__overlays"
   >
     <div
-      className="ps-card__image"
-    />
+      className="ps-card__image-frame"
+    >
+      <div
+        className="ps-card__image"
+      />
+    </div>
     <div
       className="ps-card__full-overlay"
     >
@@ -219,11 +227,15 @@ exports[`renders no tag if size is small 1`] = `
   className="ps-card ps-card--small"
 >
   <div
-    className="ps-card__image-frame"
+    className="ps-card__overlays"
   >
     <div
-      className="ps-card__image"
-    />
+      className="ps-card__image-frame"
+    >
+      <div
+        className="ps-card__image"
+      />
+    </div>
   </div>
   <div
     className="ps-card__title"
@@ -318,11 +330,15 @@ exports[`renders required props 1`] = `
   className="ps-card ps-card--medium"
 >
   <div
-    className="ps-card__image-frame"
+    className="ps-card__overlays"
   >
     <div
-      className="ps-card__image"
-    />
+      className="ps-card__image-frame"
+    >
+      <div
+        className="ps-card__image"
+      />
+    </div>
   </div>
   <div
     className="ps-card__title"
@@ -417,11 +433,15 @@ exports[`renders tag 1`] = `
   className="ps-card ps-card--medium"
 >
   <div
-    className="ps-card__image-frame"
+    className="ps-card__overlays"
   >
     <div
-      className="ps-card__image"
-    />
+      className="ps-card__image-frame"
+    >
+      <div
+        className="ps-card__image"
+      />
+    </div>
     <div
       className="ps-card__tag"
     >
