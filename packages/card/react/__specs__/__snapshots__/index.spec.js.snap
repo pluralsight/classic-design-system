@@ -119,7 +119,9 @@ exports[`renders fullOverlay 1`] = `
     <div
       className="ps-card__full-overlay"
     >
-      <div>
+      <div
+        className="ps-card__full-overlay__child"
+      >
         FakePlayBtn
       </div>
     </div>
