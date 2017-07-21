@@ -47,6 +47,11 @@ export default _ =>
       While the component is flexible, the size will determine certain base
       proportions and flexibility min and max bounds.
     </P>
+    <Example.React2
+      code={`
+<Card size="large" metadata={['Great author']} image={<img src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />} />`}
+    />
+
     <Example.React
       component={defaultCard}
       orient="vertical"

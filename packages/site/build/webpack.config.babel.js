@@ -58,7 +58,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/,
+        test: /\.module\.css$/,
         exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
@@ -73,6 +73,14 @@ module.exports = {
             },
             'postcss-loader'
           ]
+        })
+      },
+      {
+        test: /^(?!.*?\.module).*\.css$/,
+        include: /codemirror/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader']
         })
       }
     ]

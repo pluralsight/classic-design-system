@@ -23,6 +23,12 @@
 .outputChild:first-child {
   margin-top: 0;
 }
+.error {
+  background: var(--psColorsRed);
+  color: var(--psColorsWhite);
+  overflow: hidden;
+  padding: var(--psLayoutSpacingLarge);
+}
 .src {
   padding: var(--psLayoutSpacingLarge);
   background: var(--psColorsGray04);
