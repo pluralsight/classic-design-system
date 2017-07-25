@@ -109,6 +109,10 @@ module.exports = {
       'rename-jsx-attributes-loader': path.join(
         __dirname,
         'rename-jsx-attributes-loader.js'
+      ),
+      'code-example-dependencies-loader': path.join(
+        __dirname,
+        'code-example-dependencies-loader.js'
       )
     }
   }

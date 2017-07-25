@@ -1,5 +1,6 @@
 import React from 'react'
 
+import 'code-example-dependencies-loader!'
 import ButtonDoc from './button'
 import CardDoc from './card'
 import Chrome from '../layouts/chrome'

@@ -1,6 +1,7 @@
 import CodeMirror from 'react-codemirror'
 import 'codemirror/lib/codemirror.css'
 import './codemirror-theme-monokai-sublime.css'
+import debounce from 'debounce'
 
 let modeLoaded = false
 if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
@@ -24,13 +25,18 @@ const compileSrc = src =>
       'react',
       'stage-2'
     ]
-  })
+  }).code
 
 const evalSrc = compiled => eval(compiled)
 
 const renderOutput = (evaled, el) => ReactDOM.render(evaled, el)
 
 const unmountOutput = el => ReactDOM.unmountComponentAtNode(el)
+
+const getOutputClassName = props =>
+  props.orient === 'vertical'
+    ? props.css.outputVertical
+    : props.css.outputHorizontal
 
 class ReactExample extends React.Component {
   constructor(props) {
@@ -48,23 +54,28 @@ class ReactExample extends React.Component {
     unmountOutput(this.outputEl)
   }
   handleCodeChange(code) {
-    this.setState({ code })
+    this.setState(_ => ({ code }), debounce(this.renderOutput, 200))
   }
   renderError() {}
   renderOutput() {
     unmountOutput(this.outputEl)
-    try {
-      const compiled = compileSrc(this.state.code)
-      const evaled = evalSrc(compiled)
-      renderOutput(evaled, this.outputEl)
-    } catch (err) {
-      unmountOutput(this.outputEl)
-      this.setState({ error: err.toString() })
-    }
+    this.setState(
+      _ => ({ error: null }),
+      _ => {
+        try {
+          const compiled = compileSrc(this.state.code)
+          const evaled = evalSrc(compiled)
+          renderOutput(evaled, this.outputEl)
+        } catch (err) {
+          console.log('err', err)
+          unmountOutput(this.outputEl)
+          this.setState(_ => ({ error: err.toString() }))
+        }
+      }
+    )
   }
   renderSrc() {
     const options = {
-      readOnly: true,
       theme: 'monokai-sublime'
     }
     if (modeLoaded) options.mode = 'javascript'
@@ -85,8 +96,10 @@ class ReactExample extends React.Component {
   render() {
     return (
       <div className={this.props.css.root}>
-        <div ref={el => (this.outputEl = el)} />
         {this.renderError()}
+        <div className={getOutputClassName(this.props)}>
+          <div ref={el => (this.outputEl = el)} />
+        </div>
         <div className={this.props.css.src}>
           <div className={this.props.css.srcOptions}>
             {this.renderSrc()}
