@@ -13,10 +13,12 @@ import Highlight from 'react-highlight'
 import PropTypes from 'prop-types'
 import React from 'react'
 import ReactDOM from 'react-dom'
+import SrcSwitcher from './src-switcher'
 import styleable from 'react-styleable'
 import { transform } from 'babel-standalone'
 
 import css from './react.module.css'
+import formatReactToHtml from './format-react-to-html2'
 
 const compileSrc = src =>
   transform(src, {
@@ -55,8 +57,9 @@ const getOutputClassName = props =>
 class ReactExample extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { codes: props.codes, error: null }
+    this.state = { codes: props.codes, error: null, srcOption: 'react' }
     this.handleCodeChange = this.handleCodeChange.bind(this)
+    this.handleSrcOptionClick = this.handleSrcOptionClick.bind(this)
   }
   componentDidMount() {
     this.renderOutput()
@@ -66,6 +69,9 @@ class ReactExample extends React.Component {
   }
   componentWillUnmount() {
     unmountOutput(this.outputEl)
+  }
+  handleSrcOptionClick(srcOption) {
+    this.setState({ srcOption })
   }
   handleCodeChange(code, i) {
     const codes = [...this.state.codes]
@@ -96,15 +102,35 @@ class ReactExample extends React.Component {
       theme: 'monokai-sublime'
     }
     if (modeLoaded) options.mode = 'javascript'
-    return this.state.codes.map((code, i) =>
-      <CodeMirror
-        key={i}
-        className={this.props.css.editor}
-        value={formatSrc(code)}
-        onChange={code => this.handleCodeChange(code, i)}
-        options={options}
-      />
-    )
+
+    if (this.state.srcOption === 'react') {
+      return this.state.codes.map((code, i) =>
+        <CodeMirror
+          key={this.state.srcOption + i}
+          className={this.props.css.editor}
+          value={formatSrc(code)}
+          onChange={code => this.handleCodeChange(code, i)}
+          options={options}
+        />
+      )
+    } else if (this.state.srcOption === 'html') {
+      options.readOnly = true
+      return this.state.codes
+        .map(code => {
+          const src = this.state.codes
+          const compiled = compileSrc(src)
+          const evaled = evalSrc(compiled)
+          return formatReactToHtml(evaled)
+        })
+        .map((html, i) =>
+          <CodeMirror
+            key={this.state.srcOption + i}
+            className={this.props.css.editor}
+            value={html}
+            options={options}
+          />
+        )
+    }
   }
   renderError() {
     return this.state.error
@@ -119,6 +145,10 @@ class ReactExample extends React.Component {
           <div ref={el => (this.outputEl = el)} />
         </div>
         <div className={this.props.css.src}>
+          <SrcSwitcher
+            onClick={this.handleSrcOptionClick}
+            value={this.state.srcOption}
+          />
           <div className={this.props.css.srcOptions}>
             {this.renderSrc()}
           </div>
