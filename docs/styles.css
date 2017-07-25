@@ -962,6 +962,13 @@
   overflow: hidden;
   padding: 24px;
 }
+.editor___3PHDV {}
+.editor___3PHDV .CodeMirror {
+  background: none;
+}
+.editor___3PHDV .CodeMirror, .editor___3PHDV .CodeMirror-scroll {
+  height: auto;
+}
 .src___3sIMm {
   padding: 24px;
   background: #363636;

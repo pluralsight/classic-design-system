@@ -27,6 +27,20 @@ const compileSrc = src =>
     ]
   }).code
 
+const formatSrc = code => code.trim()
+
+const decorateSrc = (props, codes) => {
+  let decorated = '<div>'
+
+  codes.forEach(code => {
+    decorated += `<div className="${props.css.outputChild}">${code}</div>`
+  })
+
+  decorated += '</div>'
+
+  return decorated
+}
+
 const evalSrc = compiled => eval(compiled)
 
 const renderOutput = (evaled, el) => ReactDOM.render(evaled, el)
@@ -41,7 +55,7 @@ const getOutputClassName = props =>
 class ReactExample extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { code: props.code.trim(), error: null }
+    this.state = { codes: props.codes, error: null }
     this.handleCodeChange = this.handleCodeChange.bind(this)
   }
   componentDidMount() {
@@ -53,8 +67,10 @@ class ReactExample extends React.Component {
   componentWillUnmount() {
     unmountOutput(this.outputEl)
   }
-  handleCodeChange(code) {
-    this.setState(_ => ({ code }), debounce(this.renderOutput, 200))
+  handleCodeChange(code, i) {
+    const codes = [...this.state.codes]
+    codes[i] = code
+    this.setState(_ => ({ codes }), debounce(this.renderOutput, 200))
   }
   renderError() {}
   renderOutput() {
@@ -63,7 +79,8 @@ class ReactExample extends React.Component {
       _ => ({ error: null }),
       _ => {
         try {
-          const compiled = compileSrc(this.state.code)
+          const src = decorateSrc(this.props, this.state.codes)
+          const compiled = compileSrc(src)
           const evaled = evalSrc(compiled)
           renderOutput(evaled, this.outputEl)
         } catch (err) {
@@ -79,11 +96,12 @@ class ReactExample extends React.Component {
       theme: 'monokai-sublime'
     }
     if (modeLoaded) options.mode = 'javascript'
-    return (
+    return this.state.codes.map((code, i) =>
       <CodeMirror
+        key={i}
         className={this.props.css.editor}
-        value={this.state.code}
-        onChange={this.handleCodeChange}
+        value={formatSrc(code)}
+        onChange={code => this.handleCodeChange(code, i)}
         options={options}
       />
     )
@@ -109,11 +127,12 @@ class ReactExample extends React.Component {
     )
   }
 }
-ReactExample.propTypes = {}
+
+ReactExample.propTypes = {
+  codes: PropTypes.arrayOf(PropTypes.string)
+}
 ReactExample.defaultProps = {
-  name: 'Component',
-  orient: 'horizontal',
-  permutations: [{}]
+  orient: 'horizontal'
 }
 
 export default styleable(css)(ReactExample)

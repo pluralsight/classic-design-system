@@ -29,6 +29,8 @@
   overflow: hidden;
   padding: var(--psLayoutSpacingLarge);
 }
+.editor {
+}
 .editor :global(.CodeMirror) {
   background: none;
 }

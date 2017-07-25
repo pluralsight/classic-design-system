@@ -49,34 +49,33 @@ export default props => {
         proportions and flexibility min and max bounds.
       </P>
       <Example.React2
-        code={`
+        orient="vertical"
+        codes={[
+          `
 <Card
   size="large"
   title="Large Card"
   metadata1={['Jim Cooper']}
   image={<img src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />}
 />
-`}
-      />
-      <Example.React2
-        code={`
+`,
+          `
 <Card
   size="medium"
   title="Medium Card"
   metadata1={['Joe Eames']}
   image={<img src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />}
 />
-`}
-      />
-      <Example.React2
-        code={`
+`,
+          `
 <Card
   size="small"
   title="Small Card"
   metadata1={['Cory House']}
   image={<img src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />}
 />
-`}
+`
+        ]}
       />
 
       <Heading size="large">
