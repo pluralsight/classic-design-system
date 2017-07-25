@@ -19,8 +19,14 @@ const makeGloballyAvailable = ${makeGloballyAvailable}
 
 const codeExampleDependencies = {
   React: ${formatRequireExpression('react')},
+  Button: ${formatRequireExpression(
+    '@pluralsight/ps-design-system-button/react'
+  )}.default,
   Card: ${formatRequireExpression(
     '@pluralsight/ps-design-system-card/react'
+  )}.default,
+  Icon: ${formatRequireExpression(
+    '@pluralsight/ps-design-system-icon/react'
   )}.default
 }
 

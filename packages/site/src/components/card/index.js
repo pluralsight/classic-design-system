@@ -86,38 +86,37 @@ export default props => {
         set
         height according to the `size` property.
       </P>
-      <Example.React
-        component={<Card image={<img />} title="fake" />}
+      <Example.React2
         orient="vertical"
-        name="Card"
-        permutations={[
-          {
-            size: 'medium',
-            image: <img src="http://via.placeholder.com/350x150" />,
-            title: 'Wide image'
-          },
-          {
-            size: 'medium',
-            image: <img src="http://via.placeholder.com/200x400" />,
-            title: 'Tall image'
-          },
-          {
-            actionBar: [
-              <Button appearance="flat" icon={<Icon id="bookmark" />} />
-            ],
-            fullOverlay: (
-              <a href="https://google.com?q=full%20overlay" target="_blank">
-                Full Overlay
-              </a>
-            ),
-            size: 'medium',
-            image: (
-              <a href="https://google.com" target="_blank">
-                <img src="http://lorempixel.com/output/technics-q-c-680-320-2.jpg" />
-              </a>
-            ),
-            title: 'Linked image'
-          }
+        codes={[
+          `
+<Card
+  image={<img src="http://via.placeholder.com/350x150" />}
+  title="Wide image"
+/>
+`,
+          `
+<Card
+  image={<img src="http://via.placeholder.com/200x400" />}
+  title="Tall image"
+/>
+`,
+          `
+<Card
+  image={
+    <a href="https://google.com" target="_blank">
+      <img src="http://lorempixel.com/output/technics-q-c-680-320-2.jpg" />
+    </a>
+  }
+  title="Linked image with other overlays"
+  actionBar={[<Button appearance="flat" icon={<Icon id="bookmark" />} />]}
+  fullOverlay={
+    <a href="https://google.com?q=full%20overlay" target="_blank">
+      Full Overlay
+    </a>
+  }
+/>
+            `
         ]}
       />
 
@@ -128,29 +127,27 @@ export default props => {
         Progress, if given, should be a number between 0 and 100 that describes
         the completion level of the content represented on the card.
       </P>
-      <Example.React
-        component={defaultCard}
+      <Example.React2
         orient="vertical"
-        name="Card"
-        permutations={[
-          {
-            progress: 25,
-            image: (
-              <img src="http://lorempixel.com/output/technics-q-c-680-320-1.jpg" />
-            )
-          },
-          {
-            progress: 66.666667,
-            image: (
-              <img src="http://lorempixel.com/output/technics-q-c-680-320-1.jpg" />
-            )
-          },
-          {
-            progress: 100,
-            image: (
-              <img src="http://lorempixel.com/output/technics-q-c-680-320-1.jpg" />
-            )
-          }
+        codes={[
+          `
+<Card
+  progress={25}
+  title="The Card Title"
+  image={<img src="http://lorempixel.com/output/technics-q-c-680-320-1.jpg" />}
+/> `,
+          `
+<Card
+  progress={66.6666667}
+  title="The Card Title"
+  image={<img src="http://lorempixel.com/output/technics-q-c-680-320-1.jpg" />}
+/> `,
+          `
+<Card
+  progress={100}
+  title="The Card Title"
+  image={<img src="http://lorempixel.com/output/technics-q-c-680-320-1.jpg" />}
+/> `
         ]}
       />
 
@@ -166,37 +163,27 @@ export default props => {
         with
         an ellipsis appended.
       </P>
-      <Example.React
-        component={defaultCard}
-        name="Card"
+      <Example.React2
         orient="vertical"
-        permutations={[
-          {
-            title: <a>Link Title</a>,
-            image: (
-              <img src="http://lorempixel.com/output/nature-q-c-680-320-10.jpg" />
-            )
-          },
-          {
-            title:
-              'Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania',
-            image: (
-              <img src="http://lorempixel.com/output/nature-q-c-680-320-10.jpg" />
-            )
-          },
-          {
-            title: (
-              <a>
-                Link with Super Long Title of the Technology of the Century as
-                Brought to You By Tech Groupsoft in the Stunning Desert of
-                British
-                Lithuania
-              </a>
-            ),
-            image: (
-              <img src="http://lorempixel.com/output/nature-q-c-680-320-10.jpg" />
-            )
-          }
+        codes={[
+          `
+<Card
+  title={<a>Link Title</a>}
+  image={<img src="http://lorempixel.com/output/nature-q-c-680-320-10.jpg" />}
+/>
+`,
+          `
+<Card
+  title="Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania"
+  image={<img src="http://lorempixel.com/output/nature-q-c-680-320-10.jpg" />}
+/>
+`,
+          `
+<Card
+  title={<a>Link with Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania</a>}
+  image={<img src="http://lorempixel.com/output/nature-q-c-680-320-10.jpg" />}
+/>
+`
         ]}
       />
 
@@ -212,37 +199,38 @@ export default props => {
         Metadata is constrained to a single line, overflowing with an ellipsis
         indicated. The first datum is given display space precendence.
       </P>
-      <Example.React
-        component={defaultCard}
-        name="Card"
+      <Example.React2
         orient="vertical"
-        permutations={[
-          {
-            metadata1: ['Simon Allardice'],
-            image: (
-              <img src="http://lorempixel.com/output/abstract-q-c-680-320-4.jpg" />
-            )
-          },
-          {
-            metadata1: ['Simon Allardice'],
-            metadata2: ['Intermediate', '2hr 20min', 'July 24, 1847'],
-            image: (
-              <img src="http://lorempixel.com/output/abstract-q-c-680-320-4.jpg" />
-            )
-          },
-          {
-            image: (
-              <img src="http://lorempixel.com/output/abstract-q-c-680-320-4.jpg" />
-            ),
-            metadata1: [
-              <a>The Honorable Simon Allardice Hailing From Shores Abroad</a>
-            ],
-            metadata2: [
-              'Only about the Best Level in the World for Learning',
-              '2hr 20min or longer depending',
-              "July 24, 1847 or year thereabouts, it's unclear"
-            ]
-          }
+        codes={[
+          `
+<Card
+  metadata1={['Simon Allardice']}
+  title="Card Title"
+  image={<img src="http://lorempixel.com/output/abstract-q-c-680-320-4.jpg" />}
+/>
+`,
+          `
+<Card
+  metadata1={['Simon Allardice']}
+  metadata2={['Intermediate', '2hr 20min', 'July 24, 1847']}
+  title="Card with Two Lines of Meta"
+  image={<img src="http://lorempixel.com/output/abstract-q-c-680-320-4.jpg" />}
+/>
+`,
+          `
+<Card
+  metadata1={[
+    <a>The Honorable Simon Allardice Hailing From Shores Abroad</a>
+  ]}
+  metadata2={[
+    'Only about the Best Level in the World for Learning',
+    '2hr 20min or longer depending',
+    "July 24, 1847 or year thereabouts, it's unclear"
+  ]}
+  title="Super-long Metadata"
+  image={<img src="http://lorempixel.com/output/abstract-q-c-680-320-4.jpg" />}
+/>
+`
         ]}
       />
 
@@ -253,38 +241,39 @@ export default props => {
         The action bar contains the on-card affordances a user can take besides
         linking straight to the content. These are usually buttons.
       </P>
-      <Example.React
-        component={defaultCard}
+      <Example.React2
         orient="vertical"
-        name="Card"
-        permutations={[
-          {
-            actionBar: [
-              <Button appearance="flat" icon={<Icon id="bookmark" />} />
-            ],
-            image: (
-              <img src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />
-            )
-          },
-          {
-            actionBar: [
-              <Button appearance="flat" icon={<Icon id="bookmark" />} />,
-              <Button appearance="flat" icon={<Icon id="more" />} />
-            ],
-            image: (
-              <img src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />
-            )
-          },
-          {
-            actionBar: [
-              <Button appearance="flat" icon={<Icon id="bookmark" />} />,
-              <Button appearance="flat" icon={<Icon id="more" />} />
-            ],
-            actionBarVisible: true,
-            image: (
-              <img src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />
-            )
-          }
+        codes={[
+          `
+<Card
+  actionBar={[<Button appearance="flat" icon={<Icon id="bookmark" />} />]}
+  title="Action bar appears on hover"
+  image={<img src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />}
+/>
+`,
+
+          `
+<Card
+  actionBar={[
+    <Button appearance="flat" icon={<Icon id="bookmark" />} />,
+    <Button appearance="flat" icon={<Icon id="more" />} />
+  ]}
+  title="Multiple actions"
+  image={<img src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />}
+/>
+`,
+
+          `
+<Card
+  actionBar={[
+    <Button appearance="flat" icon={<Icon id="bookmark" />} />,
+    <Button appearance="flat" icon={<Icon id="more" />} />
+  ]}
+  actionBarVisible={true}
+  title="Action bar locked visible"
+  image={<img src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />}
+/>
+`
         ]}
       />
 
@@ -292,30 +281,37 @@ export default props => {
         <h2>Tag</h2>
       </Heading>
       <P>The tag provides a label usually categorizing the card's content.</P>
-      <Example.React
-        component={defaultCard}
+      <Example.React2
         orient="vertical"
-        name="Card"
-        permutations={[
-          {
-            tag: [<Icon id="path" />, <span>Path</span>],
-            image: (
-              <img src="http://lorempixel.com/output/technics-q-c-680-320-5.jpg" />
-            )
-          },
-          {
-            tag: [<span>Course</span>],
-            image: (
-              <img src="http://lorempixel.com/output/technics-q-c-680-320-5.jpg" />
-            )
-          },
-          {
-            size: 'small',
-            tag: [<Icon id="channel" />, <span>Channel</span>],
-            image: (
-              <img src="http://lorempixel.com/output/technics-q-c-680-320-5.jpg" />
-            )
-          }
+        codes={[
+          `
+<Card
+  tag={[<Icon id="path" />, <span>Path</span>]}
+  title="Icon and text"
+  image={
+    <img src="http://lorempixel.com/output/technics-q-c-680-320-5.jpg" />
+  }
+/>
+`,
+          `
+<Card
+  tag={[<span>Course</span>]}
+  title="Text only"
+  image={
+    <img src="http://lorempixel.com/output/technics-q-c-680-320-5.jpg" />
+  }
+/>
+`,
+          `
+<Card
+  size="small"
+  tag={[<Icon id="channel" />, <span>Channel</span>]}
+  title="Tag hidden if card small"
+  image={
+    <img src="http://lorempixel.com/output/technics-q-c-680-320-5.jpg" />
+  }
+/>
+`
         ]}
       />
 
@@ -326,34 +322,33 @@ export default props => {
         A special main action representing the main interaction for the card can
         be provided here. It will appear overlaid in the center of the image.
       </P>
-      <Example.React
-        component={defaultCard}
+      <Example.React2
         orient="vertical"
-        name="Card"
-        permutations={[
-          {
-            fullOverlay: <div>Play</div>,
-            image: (
-              <img src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />
-            )
-          },
-          {
-            actionBar: [
-              <Button appearance="flat" icon={<Icon id="bookmark" />} />
-            ],
-            fullOverlay: <a>Custom Thing</a>,
-            tag: [<Icon id="channel" />, <span>Channel</span>],
-            image: (
-              <img src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />
-            )
-          },
-          {
-            fullOverlay: <div>Play</div>,
-            fullOverlayVisible: true,
-            image: (
-              <img src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />
-            )
-          }
+        codes={[
+          `
+<Card
+  fullOverlay={<div>Play</div>}
+  title="Custom element centered on card image"
+  image={<img src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />}
+/>
+`,
+          `
+<Card
+  fullOverlay={<div>Play</div>}
+  fullOverlayVisible={true}
+  title="Full overlay locked visible"
+  image={<img src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />}
+/>
+`,
+          `
+<Card
+  fullOverlay={<a>Custom Thing</a>}
+  actionBar={[<Button appearance="flat" icon={<Icon id="bookmark" />} />]}
+  tag={[<Icon id="channel" />, <span>Channel</span>]}
+  title="Combined with other overlays"
+  image={<img src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />}
+/>
+`
         ]}
       />
 
@@ -364,16 +359,15 @@ export default props => {
         Some cards may make use of a freeform area of content overlaid in the
         bottom-left corner of the image area. Use with dignity.
       </P>
-      <Example.React
-        component={defaultCard}
-        name="Card"
-        permutations={[
-          {
-            bonusBar: <div>Just bonus</div>,
-            image: (
-              <img src="http://lorempixel.com/output/animals-q-c-680-320-8.jpg" />
-            )
-          }
+      <Example.React2
+        codes={[
+          `
+<Card
+  bonusBar={<div>Just bonus</div>}
+  title="Custom elements in lower-left"
+  image={<img src="http://lorempixel.com/output/animals-q-c-680-320-8.jpg" />}
+/>
+`
         ]}
       />
     </div>
