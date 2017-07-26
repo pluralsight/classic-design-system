@@ -30,84 +30,60 @@ export default styleable(css)(props => {
         <h2>Button appearance</h2>
       </Heading>
       <P>Define a button appearance by ... </P>
-      <Example.React
-        component={<Button>Click me</Button>}
-        name="Button"
-        permutations={[{}, { appearance: 'stroke' }, { appearance: 'flat' }]}
+      <Example.React2
+        codes={[
+          `<Button>Click me</Button>`,
+          `<Button appearance="stroke">Click me</Button>`,
+          `<Button appearance="flat">Click me</Button>`
+        ]}
       />
 
       <Heading size="large">
         <h2>Button sizes</h2>
       </Heading>
-      <Example.React
-        component={<Button>Click me</Button>}
-        name="Button"
-        permutations={[
-          { size: 'large' },
-          { size: 'medium' },
-          { size: 'small' },
-          { size: 'tiny' }
+      <Example.React2
+        codes={[
+          `<Button size="large">Large</Button>`,
+          `<Button size="medium">Medium</Button>`,
+          `<Button size="small">Small</Button>`,
+          `<Button size="tiny">Tiny</Button>`
         ]}
       />
 
       <Heading size="large">
         <h2>Button with icon</h2>
       </Heading>
-      <Example.React
-        component={<Button>Click me</Button>}
-        name="Button"
-        permutations={[
-          { exampleIcon: '{<Icon id="logo" />}', icon: <Icon id="logo" /> },
-          {
-            exampleIcon: '{<Icon id="logo" />}',
-            icon: <Icon id="logo" />,
-            appearance: 'stroke'
-          },
-          {
-            exampleIcon: '{<Icon id="logo" />}',
-            icon: <Icon id="logo" />,
-            iconAlign: 'right',
-            appearance: 'flat'
-          }
+      <Example.React2
+        codes={[
+          `<Button icon={<Icon id="logo" />}>With Icon</Button>`,
+          `<Button icon={<Icon id="channel" appearance="flat" />}>With Icon</Button>`,
+          `<Button icon={<Icon id="play" iconAlign="right" appearance="flat" />}>Aligned to Right</Button>`
         ]}
       />
 
       <Heading size="large">
         <h2>Button with lone icon</h2>
       </Heading>
-      <Example.React
-        component={<Button />}
-        name="Button"
-        permutations={[
-          { exampleIcon: '{<Icon id="logo" />}', icon: <Icon id="logo" /> },
-          {
-            exampleIcon:
-              "{<Icon id=\"logo\" css={{ 'ps-design-system-icon__fg--fill': 'cssModuleSelector' }}/>}",
-            icon: (
-              <Icon
-                id="logo"
-                css={{ 'ps-design-system-icon__fg--fill': props.css.flatIcon }}
-              />
-            ),
-            appearance: 'flat'
-          }
+      <Example.React2
+        codes={[
+          `<Button icon={<Icon id="logo" />} />`,
+          `
+<Button
+  icon={<Icon id="logo"
+  css={{ 'ps-design-system-icon__fg--fill': ${props.css.flatIcon} }} />}
+  appearance="flat"
+/>`
         ]}
       />
 
       <Heading size="large">
         <h2>Disabled button</h2>
       </Heading>
-      <Example.React
-        component={<Button>Disabled button</Button>}
-        name="Button"
-        permutations={[
-          { disabled: true },
-          { disabled: true, appearance: 'flat' },
-          {
-            disabled: true,
-            exampleIcon: '{<Icon id="logo" />}',
-            icon: <Icon id="logo" />
-          }
+      <Example.React2
+        codes={[
+          `<Button disabled={true}>Disabled</Button>`,
+          `<Button disabled={true} appearance="flat">Disabled</Button>`,
+          `<Button disabled={true} icon={<Icon id="logo" />}>Disabled</Button>`
         ]}
       />
     </div>
