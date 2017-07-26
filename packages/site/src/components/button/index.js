@@ -30,7 +30,7 @@ export default styleable(css)(props => {
         <h2>Button appearance</h2>
       </Heading>
       <P>Define a button appearance by ... </P>
-      <Example.React2
+      <Example.React
         codes={[
           `<Button>Click me</Button>`,
           `<Button appearance="stroke">Click me</Button>`,
@@ -41,7 +41,7 @@ export default styleable(css)(props => {
       <Heading size="large">
         <h2>Button sizes</h2>
       </Heading>
-      <Example.React2
+      <Example.React
         codes={[
           `<Button size="large">Large</Button>`,
           `<Button size="medium">Medium</Button>`,
@@ -53,7 +53,7 @@ export default styleable(css)(props => {
       <Heading size="large">
         <h2>Button with icon</h2>
       </Heading>
-      <Example.React2
+      <Example.React
         codes={[
           `<Button icon={<Icon id="logo" />}>With Icon</Button>`,
           `<Button icon={<Icon id="channel" appearance="flat" />}>With Icon</Button>`,
@@ -64,7 +64,7 @@ export default styleable(css)(props => {
       <Heading size="large">
         <h2>Button with lone icon</h2>
       </Heading>
-      <Example.React2
+      <Example.React
         codes={[
           `<Button icon={<Icon id="logo" />} />`,
           `
@@ -79,7 +79,7 @@ export default styleable(css)(props => {
       <Heading size="large">
         <h2>Disabled button</h2>
       </Heading>
-      <Example.React2
+      <Example.React
         codes={[
           `<Button disabled={true}>Disabled</Button>`,
           `<Button disabled={true} appearance="flat">Disabled</Button>`,

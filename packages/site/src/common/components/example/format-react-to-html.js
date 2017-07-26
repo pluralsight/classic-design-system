@@ -34,10 +34,4 @@ export const formatHtml = str => {
   }, '')
 }
 
-const renderHtmlSrc = (component, permutation) =>
-  formatHtml(
-    rmCssModuleHashes(toHtml(React.cloneElement(component, permutation)))
-  )
-
-export default (component, permutations) =>
-  permutations.map(p => renderHtmlSrc(component, p)).join('\n')
+export default component => formatHtml(rmCssModuleHashes(toHtml(component)))

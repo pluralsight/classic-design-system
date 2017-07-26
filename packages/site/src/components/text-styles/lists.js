@@ -12,7 +12,7 @@ export default _ =>
       Nothing fancy, just simple lists. You’ll know when you need them.
     </P>
 
-    <Example.React2
+    <Example.React
       codes={[
         `
 <Text.List>

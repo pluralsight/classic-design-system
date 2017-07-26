@@ -28,7 +28,7 @@ export default styleable(css)(props => {
         subsections of an interface.
       </P>
 
-      <Example.React2 orient="vertical" codes={[tabList]} />
+      <Example.React orient="vertical" codes={[tabList]} />
     </div>
   )
 })

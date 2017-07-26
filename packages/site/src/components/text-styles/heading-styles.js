@@ -12,7 +12,7 @@ export default _ =>
       implementation. Try to use common heading styles when possible.
     </P>
 
-    <Example.React2
+    <Example.React
       orient="vertical"
       codes={[
         `

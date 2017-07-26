@@ -11,7 +11,7 @@ export default _ =>
 
     <P>Try to use common paragraph style when possible.</P>
 
-    <Example.React2
+    <Example.React
       codes={[
         `
 <Text.P>

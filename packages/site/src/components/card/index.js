@@ -48,7 +48,7 @@ export default props => {
         While the component is flexible, the size will determine certain base
         proportions and flexibility min and max bounds.
       </P>
-      <Example.React2
+      <Example.React
         orient="vertical"
         codes={[
           `
@@ -86,7 +86,7 @@ export default props => {
         set
         height according to the `size` property.
       </P>
-      <Example.React2
+      <Example.React
         orient="vertical"
         codes={[
           `
@@ -127,7 +127,7 @@ export default props => {
         Progress, if given, should be a number between 0 and 100 that describes
         the completion level of the content represented on the card.
       </P>
-      <Example.React2
+      <Example.React
         orient="vertical"
         codes={[
           `
@@ -163,7 +163,7 @@ export default props => {
         with
         an ellipsis appended.
       </P>
-      <Example.React2
+      <Example.React
         orient="vertical"
         codes={[
           `
@@ -199,7 +199,7 @@ export default props => {
         Metadata is constrained to a single line, overflowing with an ellipsis
         indicated. The first datum is given display space precendence.
       </P>
-      <Example.React2
+      <Example.React
         orient="vertical"
         codes={[
           `
@@ -241,7 +241,7 @@ export default props => {
         The action bar contains the on-card affordances a user can take besides
         linking straight to the content. These are usually buttons.
       </P>
-      <Example.React2
+      <Example.React
         orient="vertical"
         codes={[
           `
@@ -281,7 +281,7 @@ export default props => {
         <h2>Tag</h2>
       </Heading>
       <P>The tag provides a label usually categorizing the card's content.</P>
-      <Example.React2
+      <Example.React
         orient="vertical"
         codes={[
           `
@@ -322,7 +322,7 @@ export default props => {
         A special main action representing the main interaction for the card can
         be provided here. It will appear overlaid in the center of the image.
       </P>
-      <Example.React2
+      <Example.React
         orient="vertical"
         codes={[
           `
@@ -359,7 +359,7 @@ export default props => {
         Some cards may make use of a freeform area of content overlaid in the
         bottom-left corner of the image area. Use with dignity.
       </P>
-      <Example.React2
+      <Example.React
         codes={[
           `
 <Card
