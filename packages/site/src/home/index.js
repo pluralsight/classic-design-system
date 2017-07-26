@@ -37,7 +37,6 @@ const Header = props =>
 
 const Home = props =>
   <Chrome fullWidthContent={<Header css={props.css} />}>
-    <Heading size="xx-large"><h2>Welcome!</h2></Heading>
     <Point css={props.css} title="Purpose">
       Welcome to the Pluralsight Design System! So good to have you here. The
       Design System strives toward a cohesive design language for Pluralsight’s

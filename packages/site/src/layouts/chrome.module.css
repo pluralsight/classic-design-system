@@ -9,15 +9,13 @@
 .side {
 }
 .main {
-  padding: var(--psLayoutSpacingSmall)
-    var(--psLayoutSpacingLarge)
-    var(--psLayoutSpacingLarge)
-    var(--psLayoutSpacingLarge);
   background: var(--psColorsWhite);
 }
 .content {
   margin: 0 auto;
   width: 100%;
+  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge)
+    var(--psLayoutSpacingLarge) var(--psLayoutSpacingLarge);
 }
 
 @media screen and (min-width: 769px) {

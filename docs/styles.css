@@ -37,11 +37,11 @@
 }
 .content___2fqeR {
   margin: 0 auto;
+  width: 100%;
   padding: 12px
     24px
     24px
     24px;
-  width: 100%;
 }
 @media screen and (min-width: 769px) {
   .page___2ecub {
@@ -2437,7 +2437,8 @@ span.CodeMirror-selectedtext { background: none; }
 .point___iqZxW {
   margin-bottom: 84px;
 }
-.pointTitle___1uraS {}
+.pointTitle___1uraS {
+}
 .action___1a6vs {
   display: block;
   margin-bottom: 44px;
@@ -2450,7 +2451,8 @@ span.CodeMirror-selectedtext { background: none; }
     max-width: 900px;
     min-width: 300px;
   }
-}/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+}
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html{line-height:1.15}
 body{margin:0}
 article,aside,footer,header,nav,section{display:block}
@@ -2492,7 +2494,7 @@ details,menu{display:block}
 summary{display:list-item}
 canvas{display:inline-block}
 [hidden],template{display:none}
-html{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%;font-family:Gotham SSm A,Gotham SSm B,sans-serif;font-size:.875em;font-weight:400;line-height:1.71429}
+html{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;font-family:Gotham SSm A,Gotham SSm B,sans-serif;font-size:.875em;font-weight:400;line-height:1.71429}
 *,:after,:before{-webkit-box-sizing:inherit;box-sizing:inherit}
 address,blockquote,dl,fieldset,figure,h1,h2,h3,h4,h5,h6,hr,ol,p,pre,table,ul{margin:0}
 h1,h2,h3,h4,h5,h6{font-weight:400}
