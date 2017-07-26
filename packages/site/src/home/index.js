@@ -63,7 +63,9 @@ const Home = props =>
     <Action css={props.css} href="https://github.com/pluralsight/design-system">
       View on Github
     </Action>
-    <Action css={props.css} href="?broken">Download the Sketch UI Kit</Action>
+    <Action css={props.css} href="https://www.sketchapp.com/">
+      Download the Sketch UI Kit
+    </Action>
   </Chrome>
 
 export default styleable(css)(Home)
