@@ -8,6 +8,7 @@ export default styleable(css)(props =>
   <div className={props.css.root}>
     <NavLink
       activeClassName={props.css.linkActive}
+      exact
       to={props.href}
       className={props.css.link}
     >

@@ -13,7 +13,8 @@ const rmSystemProps = props => {
 const formatClassName = props =>
   classNames({
     [props.css.heading]: true,
-    [props.css['heading--' + props.size]]: props.size
+    [props.css['heading--' + props.size]]: props.size,
+    [props.className]: props.className
   })
 
 export default styleable(css)(props =>

@@ -12,6 +12,7 @@ export default styleable(css)(props =>
     <Logo />
     <Group>
       <GroupTitle>INTRODUCTION</GroupTitle>
+      <Link href="/">Get Started</Link>
       <Link href="/install">Install</Link>
     </Group>
     <Group>

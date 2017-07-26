@@ -33,14 +33,14 @@
 .side___22xgp {
 }
 .main___2FH7c {
-  padding: 12px
-    24px
-    24px
-    24px;
   background: #ffffff;
 }
 .content___2fqeR {
   margin: 0 auto;
+  padding: 12px
+    24px
+    24px
+    24px;
   width: 100%;
 }
 @media screen and (min-width: 769px) {
@@ -1997,6 +1997,34 @@ span.CodeMirror-selectedtext { background: none; }
 :root {
   /* motion */
 }
+.ps-link___3ZC5j {
+  color: #f96816;
+  text-decoration: none;
+}
+.ps-link___3ZC5j:hover {
+  text-decoration: underline;
+}
+:root {
+  /* ui colors */
+
+  /* gradients */
+}
+:root {
+  /* spacing */
+}
+:root {
+
+  /* font size */
+
+  /* letter spacing */
+
+  /* font weight */
+
+  /* line height */
+}
+:root {
+  /* motion */
+}
 .root___1mjE0 {
   color: #363636;
 }
@@ -2213,34 +2241,6 @@ span.CodeMirror-selectedtext { background: none; }
 :root {
   /* motion */
 }
-.ps-link___3ZC5j {
-  color: #f96816;
-  text-decoration: none;
-}
-.ps-link___3ZC5j:hover {
-  text-decoration: underline;
-}
-:root {
-  /* ui colors */
-
-  /* gradients */
-}
-:root {
-  /* spacing */
-}
-:root {
-
-  /* font size */
-
-  /* letter spacing */
-
-  /* font weight */
-
-  /* line height */
-}
-:root {
-  /* motion */
-}
 .root___1mQlj {
 }
 :root {
@@ -2378,7 +2378,79 @@ span.CodeMirror-selectedtext { background: none; }
   color: #555555;
   font-size: 12px;
 }
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+:root {
+  /* ui colors */
+
+  /* gradients */
+}
+:root {
+  /* spacing */
+}
+:root {
+
+  /* font size */
+
+  /* letter spacing */
+
+  /* font weight */
+
+  /* line height */
+}
+:root {
+  /* motion */
+}
+.header___1HvyY {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2BB2E3), to(#137BC2));
+  background: linear-gradient(to bottom, #2BB2E3, #137BC2);
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.title___-ODN0 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
+  width: 100%;
+  text-align: left;
+}
+.titleIcon___2wk_i {
+  margin-right: 12px;
+}
+.point___iqZxW {
+  margin-bottom: 84px;
+}
+.pointTitle___1uraS {}
+.action___1a6vs {
+  display: block;
+  margin-bottom: 44px;
+}
+@media screen and (min-width: 769px) {
+  .header___1HvyY {
+    height: 428px;
+  }
+  .title___-ODN0 {
+    max-width: 900px;
+    min-width: 300px;
+  }
+}/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html{line-height:1.15}
 body{margin:0}
 article,aside,footer,header,nav,section{display:block}

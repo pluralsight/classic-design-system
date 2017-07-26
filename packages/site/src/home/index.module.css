@@ -1,0 +1,44 @@
+@import "@pluralsight/ps-design-system-core";
+
+.header {
+  background: linear-gradient(to bottom, #2BB2E3, #137BC2);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.title {
+  display: flex;
+  align-items: center;
+  color: var(--psColorsWhite);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 var(--psLayoutSpacingLarge);
+  width: 100%;
+  text-align: left;
+}
+.titleIcon {
+  margin-right: var(--psLayoutSpacingSmall);
+}
+
+.point {
+  margin-bottom: 84px;
+}
+.pointTitle {
+}
+
+.action {
+  display: block;
+  margin-bottom: 44px;
+}
+
+@media screen and (min-width: 769px) {
+  .header {
+    height: 428px;
+  }
+  .title {
+    max-width: 900px;
+    min-width: 300px;
+  }
+}
