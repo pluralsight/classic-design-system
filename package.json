@@ -36,11 +36,11 @@
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "husky": "^0.13.3",
+    "husky": "^0.14.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^20.0.0",
     "lerna": "^2.0.0-rc.4",
-    "lint-staged": "^3.4.1",
+    "lint-staged": "^4.0.2",
     "prettier": "^1.4.0",
     "react-test-renderer": "^15.5.4"
   },
