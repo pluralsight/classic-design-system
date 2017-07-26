@@ -32,7 +32,7 @@ const compileSrc = src =>
 const formatSrc = code => code.trim()
 
 const decorateSrc = (props, codes) => {
-  let decorated = '<div>'
+  let decorated = `<div className="${getOutputClassName(props)}">`
 
   codes.forEach(code => {
     decorated += `<div className="${props.css.outputChild}">${code}</div>`
@@ -141,9 +141,7 @@ class ReactExample extends React.Component {
     return (
       <div className={this.props.css.root}>
         {this.renderError()}
-        <div className={getOutputClassName(this.props)}>
-          <div ref={el => (this.outputEl = el)} />
-        </div>
+        <div ref={el => (this.outputEl = el)} />
         <div className={this.props.css.src}>
           <SrcSwitcher
             onClick={this.handleSrcOptionClick}
