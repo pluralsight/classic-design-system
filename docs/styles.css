@@ -336,6 +336,120 @@
 :root {
   /* motion */
 }
+.ps-heading___1seKB {
+  color: #ffffff;
+  margin: 16px 0;
+}
+.ps-heading--xx-large___1vs6u {
+  font-size: 36px;
+  letter-spacing: -0.54px;
+  line-height: 40px;
+  font-weight: 300;
+}
+.ps-heading--large___12bkX {
+  font-size: 24px;
+  letter-spacing: 0.36px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.ps-heading--medium___2btc0 {
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24px;
+  font-weight: 500;
+}
+.ps-heading--small-caps___1lKpW {
+  color: #aaaaaa;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+:root {
+  /* ui colors */
+
+  /* gradients */
+}
+:root {
+  /* spacing */
+}
+:root {
+
+  /* font size */
+
+  /* letter spacing */
+
+  /* font weight */
+
+  /* line height */
+}
+:root {
+  /* motion */
+}
+.ps-list___2HiLR {
+  list-style: none;
+  margin-left: 0;
+  color: #f2f2f2;
+  font-size: 14px;
+  line-height: 32px;
+}
+.ps-list--bulleted___3vYHK, .ps-list--numbered___1RRu1 {
+  list-style: inherit;
+}
+.ps-list--numbered___1RRu1 {
+  list-style-type: decimal;
+}
+.ps-list-item___Q1WS2 {
+}
+:root {
+  /* ui colors */
+
+  /* gradients */
+}
+:root {
+  /* spacing */
+}
+:root {
+
+  /* font size */
+
+  /* letter spacing */
+
+  /* font weight */
+
+  /* line height */
+}
+:root {
+  /* motion */
+}
+.ps-p___2GCbM {
+  color: #f2f2f2;
+  font-size: 14px;
+  margin: 12px 0;
+  line-height: 24px;
+}
+:root {
+  /* ui colors */
+
+  /* gradients */
+}
+:root {
+  /* spacing */
+}
+:root {
+
+  /* font size */
+
+  /* letter spacing */
+
+  /* font weight */
+
+  /* line height */
+}
+:root {
+  /* motion */
+}
 .ps-button___2EFfR {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1831,120 +1945,6 @@ span.CodeMirror-selectedtext { background: none; }
 }
 .cm-s-monokai-sublime .CodeMirror-linenumber {
   color: #75715E;
-}
-:root {
-  /* ui colors */
-
-  /* gradients */
-}
-:root {
-  /* spacing */
-}
-:root {
-
-  /* font size */
-
-  /* letter spacing */
-
-  /* font weight */
-
-  /* line height */
-}
-:root {
-  /* motion */
-}
-.ps-heading___1seKB {
-  color: #ffffff;
-  margin: 16px 0;
-}
-.ps-heading--xx-large___1vs6u {
-  font-size: 36px;
-  letter-spacing: -0.54px;
-  line-height: 40px;
-  font-weight: 300;
-}
-.ps-heading--large___12bkX {
-  font-size: 24px;
-  letter-spacing: 0.36px;
-  line-height: 32px;
-  font-weight: 400;
-}
-.ps-heading--medium___2btc0 {
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: 24px;
-  font-weight: 500;
-}
-.ps-heading--small-caps___1lKpW {
-  color: #aaaaaa;
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: 20px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-:root {
-  /* ui colors */
-
-  /* gradients */
-}
-:root {
-  /* spacing */
-}
-:root {
-
-  /* font size */
-
-  /* letter spacing */
-
-  /* font weight */
-
-  /* line height */
-}
-:root {
-  /* motion */
-}
-.ps-list___2HiLR {
-  list-style: none;
-  margin-left: 0;
-  color: #f2f2f2;
-  font-size: 14px;
-  line-height: 32px;
-}
-.ps-list--bulleted___3vYHK, .ps-list--numbered___1RRu1 {
-  list-style: inherit;
-}
-.ps-list--numbered___1RRu1 {
-  list-style-type: decimal;
-}
-.ps-list-item___Q1WS2 {
-}
-:root {
-  /* ui colors */
-
-  /* gradients */
-}
-:root {
-  /* spacing */
-}
-:root {
-
-  /* font size */
-
-  /* letter spacing */
-
-  /* font weight */
-
-  /* line height */
-}
-:root {
-  /* motion */
-}
-.ps-p___2GCbM {
-  color: #f2f2f2;
-  font-size: 14px;
-  margin: 12px 0;
-  line-height: 24px;
 }
 :root {
   /* ui colors */

@@ -30,7 +30,8 @@ const codeExampleDependencies = {
   )}.default,
   Tab: ${formatRequireExpression(
     '@pluralsight/ps-design-system-tab/react'
-  )}.default
+  )}.default,
+  Text: ${formatRequireExpression('@pluralsight/ps-design-system-text/react')}
 }
 
 makeGloballyAvailable(codeExampleDependencies)
