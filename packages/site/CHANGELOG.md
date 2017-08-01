@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.4.0"></a>
+# [4.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@4.3.2...@pluralsight/ps-design-system-site@4.4.0) (2017-08-01)
+
+
+### Bug Fixes
+
+* **site:** card react src renderings ([1a462b9](https://github.com/pluralsight/design-system/commit/1a462b9))
+* **site:** fix bad render/crawl of site ([4f4ddbd](https://github.com/pluralsight/design-system/commit/4f4ddbd))
+* **site:** horz orientation of new react output ([98ff19b](https://github.com/pluralsight/design-system/commit/98ff19b))
+* **site:** landing page content and layout ([b9dbf57](https://github.com/pluralsight/design-system/commit/b9dbf57))
+
+
+### Features
+
+* **site:** add html view back to component examples ([566678c](https://github.com/pluralsight/design-system/commit/566678c))
+* **site:** eval and render of jsx, component in scope ([422b4f1](https://github.com/pluralsight/design-system/commit/422b4f1))
+* **site:** first-pass render hidef react example ([6a2bab3](https://github.com/pluralsight/design-system/commit/6a2bab3))
+* **site:** handle multiple code renderings per block ([5a75919](https://github.com/pluralsight/design-system/commit/5a75919))
+* **site:** readonly and colored react example ([eea5669](https://github.com/pluralsight/design-system/commit/eea5669))
+* **site:** real home page content sans icons ([01d619f](https://github.com/pluralsight/design-system/commit/01d619f))
+
+
+
+
 <a name="4.3.2"></a>
 ## [4.3.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@4.3.1...@pluralsight/ps-design-system-site@4.3.2) (2017-07-21)
 
