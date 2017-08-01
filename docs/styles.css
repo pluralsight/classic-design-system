@@ -2217,6 +2217,29 @@ span.CodeMirror-selectedtext { background: none; }
 :root {
   /* motion */
 }
+.overrideFill___3x3-l {
+  fill: #e80a89;
+}:root {
+  /* ui colors */
+
+  /* gradients */
+}
+:root {
+  /* spacing */
+}
+:root {
+
+  /* font size */
+
+  /* letter spacing */
+
+  /* font weight */
+
+  /* line height */
+}
+:root {
+  /* motion */
+}
 .icons___2tFFA {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2241,7 +2264,8 @@ span.CodeMirror-selectedtext { background: none; }
 .iconLabel___2s8Dr {
   margin-left: 16px;
   font-size: 12px;
-}:root {
+}
+:root {
   /* ui colors */
 
   /* gradients */

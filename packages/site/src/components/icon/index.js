@@ -2,6 +2,7 @@ import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 
 import { Code, Example, Heading, Link, P } from '../../common/components'
+import Color from './color'
 import CommonSet from './common-set'
 
 export default props => {
@@ -54,6 +55,7 @@ export default props => {
         ]}
       />
 
+      <Color />
       <CommonSet />
     </div>
   )
