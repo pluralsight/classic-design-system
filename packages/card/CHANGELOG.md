@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.2.5"></a>
+## [2.2.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@2.2.4...@pluralsight/ps-design-system-card@2.2.5) (2017-08-01)
+
+
+### Bug Fixes
+
+* **card:** style links in content without text-decoration by default ([50d596e](https://github.com/pluralsight/design-system/commit/50d596e))
+
+
+
+
 <a name="2.2.4"></a>
 ## [2.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@2.2.3...@pluralsight/ps-design-system-card@2.2.4) (2017-08-01)
 

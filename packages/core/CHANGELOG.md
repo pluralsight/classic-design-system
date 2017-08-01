@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.6"></a>
+## [2.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@2.1.5...@pluralsight/ps-design-system-core@2.1.6) (2017-08-01)
+
+
+
+
 <a name="2.1.5"></a>
 ## [2.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@2.1.4...@pluralsight/ps-design-system-core@2.1.5) (2017-08-01)
 
