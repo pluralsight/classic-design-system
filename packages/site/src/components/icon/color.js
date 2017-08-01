@@ -20,18 +20,12 @@ export default styleable(css)(props => {
         codes={[
           `
 <div style={{ color: '#ffffff' }}>
-<Icon
-  id="logo"
-  size="medium"
-/>
+  <Icon id="logo" size="medium" />
 </div>
 `,
           `
 <div style={{ color: '#ffc200' }}>
-<Icon
-  id="logo"
-  size="medium"
-/>
+  <Icon id="logo" size="medium" />
 </div>
 `,
           `
