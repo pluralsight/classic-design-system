@@ -11,10 +11,10 @@
   width: var(--psIconWidth);
 }
 .ps-icon__fg--fill {
-  fill: var(--psColorsWhite);
+  fill: currentColor;
 }
 .ps-icon__fg--stroke {
-  stroke: var(--psColorsWhite);
+  stroke: currentColor;
 }
 
 /* size */
@@ -38,4 +38,3 @@
   height: 12px;
   width: 12px;
 }
-
