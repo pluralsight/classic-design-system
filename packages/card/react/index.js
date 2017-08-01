@@ -112,7 +112,7 @@ const renderTitle = props =>
 
 const getMetaDataLinkClassName = (props, el) =>
   classNames({
-    [el.className]: el.className,
+    [el.props.className]: el.props.className,
     [props.css['ps-card__metadata__datum--link']]: true
   })
 

@@ -60,3 +60,16 @@ test('renders bonusBar', () => {
     )
   ).toMatchSnapshot()
 })
+
+test('renders custom metadata classes', () => {
+  expect(
+    renderer.create(
+      <Card
+        css={identity}
+        image={<div />}
+        title="The card title"
+        metadata1={[<span className="keepme">Custom</span>]}
+      />
+    )
+  ).toMatchSnapshot()
+})
