@@ -214,7 +214,7 @@ exports[`renders custom metadata classes 1`] = `
     className="ps-card__metadata"
   >
     <span
-      className="keepme ps-card__metadata__datum--link"
+      className="keepme"
     >
       Custom
     </span>
@@ -330,6 +330,129 @@ exports[`renders fullOverlay 1`] = `
         </span>
       </span>
     </span>
+  </div>
+</div>
+`;
+
+exports[`renders link class on meta only if anchor tag 1`] = `
+<div
+  className="ps-card ps-card--medium"
+>
+  <div
+    className="ps-card__overlays"
+  >
+    <div
+      className="ps-card__image-frame"
+    >
+      <div
+        className="ps-card__image"
+      />
+    </div>
+  </div>
+  <div
+    className="ps-card__title"
+  >
+    <span
+      style={
+        Object {
+          "display": "block",
+          "maxHeight": "0px",
+          "overflow": "hidden",
+          "position": "relative",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "display": "block",
+            "width": "100%",
+          }
+        }
+      >
+        
+        …
+      </span>
+      <span
+        style={
+          Object {
+            "display": "block",
+            "height": "0px",
+            "overflow": "hidden",
+            "width": "100%",
+          }
+        }
+      >
+        The card title
+      </span>
+      <span
+        style={
+          Object {
+            "display": "block",
+            "left": "-20000px",
+            "position": "absolute",
+            "width": "100%",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "display": "block",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "display": "block",
+              }
+            }
+          >
+            W
+          </span>
+          <span
+            style={
+              Object {
+                "display": "block",
+              }
+            }
+          >
+            W
+          </span>
+        </span>
+        <span
+          style={
+            Object {
+              "display": "block",
+            }
+          }
+        >
+          
+          …
+        </span>
+      </span>
+    </span>
+  </div>
+  <div
+    className="ps-card__metadata"
+  >
+    <span
+      className=""
+    >
+      No link class
+    </span>
+    <span
+      aria-hidden={true}
+      className="ps-card__metadata__dot"
+    >
+      ·
+    </span>
+    <a
+      className="ps-card__metadata__datum--link"
+    >
+      yes link class
+    </a>
   </div>
 </div>
 `;

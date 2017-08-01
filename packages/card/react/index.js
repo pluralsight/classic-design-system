@@ -96,6 +96,8 @@ const getTitleLinkClassName = props =>
 
 const isReactElement = el => el && el.type
 
+const isAnchorElement = el => isReactElement(el) && el.type === 'a'
+
 const renderTitle = props =>
   isReactElement(props.title)
     ? React.cloneElement(props.title, {
@@ -113,7 +115,7 @@ const renderTitle = props =>
 const getMetaDataLinkClassName = (props, el) =>
   classNames({
     [el.props.className]: el.props.className,
-    [props.css['ps-card__metadata__datum--link']]: true
+    [props.css['ps-card__metadata__datum--link']]: isAnchorElement(el)
   })
 
 const renderMetaData = (props, metadata) =>

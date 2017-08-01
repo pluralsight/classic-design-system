@@ -73,3 +73,16 @@ test('renders custom metadata classes', () => {
     )
   ).toMatchSnapshot()
 })
+
+test('renders link class on meta only if anchor tag', () => {
+  expect(
+    renderer.create(
+      <Card
+        css={identity}
+        image={<div />}
+        title="The card title"
+        metadata1={[<span>No link class</span>, <a>yes link class</a>]}
+      />
+    )
+  ).toMatchSnapshot()
+})
