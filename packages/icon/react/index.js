@@ -12,7 +12,7 @@ import more from '../svg/more.icon.svg'
 import path from '../svg/path.icon.svg'
 import play from '../svg/play.icon.svg'
 
-const ids = {
+export const ids = {
   bookmark,
   bookmarkFill,
   channel,
