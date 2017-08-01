@@ -553,8 +553,10 @@
 .ps-card__link___1R35W {
   color: inherit;
   cursor: pointer;
+  text-decoration: none;
 }
-.ps-card__link___1R35W:hover, .ps-card__link___1R35W:active {
+.ps-card__link___1R35W:hover,
+.ps-card__link___1R35W:active {
   color: #ffffff;
   text-decoration: underline;
   -webkit-transition: all 200ms;
@@ -616,9 +618,7 @@
   right: 0;
   width: 100%;
   height: 64px;
-  padding: 8px
-    8px
-    0
+  padding: 8px 8px 0
     8px;
   background: -webkit-gradient(
     linear,
@@ -650,7 +650,8 @@
 .ps-card__action-bar__action___3lYAq + .ps-card__action-bar__action___3lYAq {
   margin-left: 4px;
 }
-.ps-button--flat--action-bar___1LQMj:hover, .ps-button--flat--action-bar___1LQMj:active {
+.ps-button--flat--action-bar___1LQMj:hover,
+.ps-button--flat--action-bar___1LQMj:active {
   background: none;
 }
 .ps-icon__fg--fill--action-bar___SETDA {
@@ -798,7 +799,8 @@
   color: #aaaaaa;
   max-width: 100%;
 }
-.ps-card--small___3gxtm .ps-card__metadata___3YV1n, .ps-card--medium___5eDWG .ps-card__metadata___3YV1n {
+.ps-card--small___3gxtm .ps-card__metadata___3YV1n,
+.ps-card--medium___5eDWG .ps-card__metadata___3YV1n {
   font-size: 12px;
 }
 .ps-card--large___xbvHu .ps-card__metadata___3YV1n {

@@ -23,8 +23,10 @@
 .ps-card__link {
   color: inherit;
   cursor: pointer;
+  text-decoration: none;
 }
-.ps-card__link:hover, .ps-card__link:active {
+.ps-card__link:hover,
+.ps-card__link:active {
   color: var(--psColorsWhite);
   text-decoration: underline;
   transition: all var(--psMotionSpeedNormal);
@@ -72,9 +74,7 @@
   right: 0;
   width: 100%;
   height: 64px;
-  padding: var(--psLayoutSpacingXSmall)
-    var(--psLayoutSpacingXSmall)
-    0
+  padding: var(--psLayoutSpacingXSmall) var(--psLayoutSpacingXSmall) 0
     var(--psLayoutSpacingXSmall);
   background: linear-gradient(
     to bottom,
@@ -99,7 +99,8 @@
 .ps-card__action-bar__action + .ps-card__action-bar__action {
   margin-left: var(--psLayoutSpacingTiny);
 }
-.ps-button--flat--action-bar:hover, .ps-button--flat--action-bar:active {
+.ps-button--flat--action-bar:hover,
+.ps-button--flat--action-bar:active {
   background: none;
 }
 .ps-icon__fg--fill--action-bar {
@@ -235,7 +236,8 @@
   color: var(--psColorsGray02);
   max-width: 100%;
 }
-.ps-card--small .ps-card__metadata, .ps-card--medium .ps-card__metadata {
+.ps-card--small .ps-card__metadata,
+.ps-card--medium .ps-card__metadata {
   font-size: var(--psTypeFontSizeXSmall);
 }
 .ps-card--large .ps-card__metadata {

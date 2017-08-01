@@ -220,7 +220,7 @@ export default props => {
           `
 <Card
   metadata1={[
-    <a>The Honorable Simon Allardice Hailing From Shores Abroad</a>
+    <a href="https://google.com?query=simon%20allardice">The Honorable Simon Allardice Hailing From Shores Abroad</a>
   ]}
   metadata2={[
     'Only about the Best Level in the World for Learning',
