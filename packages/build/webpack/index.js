@@ -26,7 +26,7 @@ const validateRules = (config, options) =>
         )
       } else if (!options.defaultInclude) {
         error(
-          `module.rule {$rules.test} is missing an "include" property and no "defaultInclude" options has been given to #decorateConfig.  Please implement one or the other avoid rule clashes with the design system. See https://webpack.js.org/configuration/module/#rule-include`
+          `module.rule ${rules.test} is missing an "include" property and no "defaultInclude" options has been given to #decorateConfig. Please implement one or the other avoid rule clashes with the design system. See https://webpack.js.org/configuration/module/#rule-include`
         )
       }
     }
