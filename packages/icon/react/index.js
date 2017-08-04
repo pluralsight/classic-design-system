@@ -1,44 +1,71 @@
-import classNames from 'classnames'
+import core from '@pluralsight/ps-design-system-core'
+import glamorous from 'glamorous'
 import React from 'react'
-import styleable from 'react-styleable'
 
-import css from '../css/index.module.css'
+import icons from './icons'
 
-import bookmark from '../svg/bookmark.icon.svg'
-import bookmarkFill from '../svg/bookmark-fill.icon.svg'
-import channel from '../svg/channel.icon.svg'
-import logo from '../svg/logo.icon.svg'
-import more from '../svg/more.icon.svg'
-import path from '../svg/path.icon.svg'
-import play from '../svg/play.icon.svg'
+export const ids = Object.keys(icons)
 
-export const ids = {
-  bookmark,
-  bookmarkFill,
-  channel,
-  logo,
-  more,
-  path,
-  play
+export const sizes = {
+  tiny: 'tiny',
+  small: 'small',
+  medium: 'medium',
+  large: 'large',
+  xLarge: 'xLarge'
 }
 
-const getClassName = props =>
-  classNames({
-    [props.css['ps-icon']]: true,
-    [props.css['ps-icon--' + props.size]]: props.size,
-    [props.className]: props.className
-  })
+const styleSize = ({ size }) =>
+  ({
+    tiny: {
+      height: '12px',
+      width: '12px'
+    },
+    small: {
+      height: '24px',
+      width: '24px'
+    },
+    medium: {
+      height: '48px',
+      width: '48px'
+    },
+    large: {
+      height: '96px',
+      width: '96px'
+    },
+    xLarge: {
+      height: '160px',
+      width: '160px'
+    }
+  }[size])
+
+const IconContainer = glamorous.div(
+  {
+    display: 'inline-block',
+    height: '24px',
+    width: '24px',
+    '> svg': {
+      fill: 'currentColor'
+    }
+  },
+  styleSize
+)
+
+const rmNonHtmlProps = props => {
+  const { id, ...rest } = props
+  return rest
+}
 
 const Icon = props =>
-  <span className={getClassName(props)}>
-    {React.createElement(ids[props.id], { css: props.css })}
-  </span>
+  <IconContainer {...rmNonHtmlProps(props)}>
+    {eval(icons[props.id])}
+  </IconContainer>
 
 import PropTypes from 'prop-types'
 Icon.propTypes = {
-  size: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'x-large'])
+  id: PropTypes.oneOf(ids).isRequired,
+  size: PropTypes.oneOf(Object.keys(sizes))
 }
 Icon.defaultProps = {
   size: 'small'
 }
-export default styleable(css)(Icon)
+export default Icon
