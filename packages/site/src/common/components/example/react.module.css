@@ -34,7 +34,8 @@
 .editor :global(.CodeMirror) {
   background: none;
 }
-.editor :global(.CodeMirror), .editor :global(.CodeMirror-scroll) {
+.editor :global(.CodeMirror),
+.editor :global(.CodeMirror-scroll) {
   height: auto;
 }
 .src {
@@ -44,7 +45,8 @@
 .srcOptions {
   margin: var(--psLayoutSpacingLarge) 0 0 0;
 }
-.html, .react {
+.html,
+.react {
   background: none;
   padding: 0;
 }
@@ -52,6 +54,10 @@
 @media screen and (min-width: 769px) {
   .outputHorizontal {
     flex-direction: row;
+    align-items: center;
+  }
+  .outputVertical {
+    align-items: flex-start;
   }
   .outputChild + .outputChild {
     margin: 0 0 0 98px;
