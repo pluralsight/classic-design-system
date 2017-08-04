@@ -1,11 +1,17 @@
-import glamorous from 'glamorous'
-
-import classNames from 'classnames'
 import core from '@pluralsight/ps-design-system-core'
-import styleable from 'react-styleable'
+import glamorous from 'glamorous'
 import React from 'react'
 
-const sizes = { tiny: 'tiny', small: 'small', medium: 'medium', large: 'large' }
+export const appearances = { stroke: 'stroke', flat: 'flat' }
+
+export const sizes = {
+  tiny: 'tiny',
+  small: 'small',
+  medium: 'medium',
+  large: 'large'
+}
+
+export const iconAligns = { left: 'left', right: 'right' }
 
 const styleSize = ({ size }) =>
   ({
@@ -62,14 +68,40 @@ const styleDisabled = ({ disabled, appearance }) =>
   disabled
     ? {
         color: core.colors.gray02,
-        ':hover': core.colors.gray02,
-        ...(appearance === 'stroke' ? { border: 'none' } : null),
-        ...(appearance === 'flat'
-          ? {
-              opacity: 0.4,
-              ':hover': { color: core.colors.gray02, background: 'none' }
-            }
-          : { background: core.colors.gray03 })
+        background: core.colors.gray03,
+        ':hover': { color: core.colors.gray02, background: core.colors.gray03 }
+      }
+    : null
+
+const styleDisabledStroke = ({ disabled, appearance }) =>
+  disabled && appearance === 'stroke'
+    ? {
+        border: 'none',
+        ':hover': {
+          border: 'none'
+        }
+      }
+    : null
+
+const styleDisabledFlat = ({ disabled, appearance }) =>
+  disabled && appearance === 'flat'
+    ? {
+        opacity: 0.4,
+        background: 'none',
+        ':hover': { color: core.colors.gray02, background: 'none' }
+      }
+    : null
+
+const styleIconAlign = ({ iconAlign }) =>
+  iconAlign === 'right' ? { flexDirection: 'row-reverse' } : null
+
+const styleIconOnly = ({ iconOnly, size }) =>
+  iconOnly
+    ? {
+        padding: 0,
+        width: { tiny: '24px', small: '32px', medium: '40px', large: '48px' }[
+          size
+        ]
       }
     : null
 
@@ -91,83 +123,92 @@ const Button = glamorous.button(
     overflow: 'hidden',
     whiteSpace: 'nowrap',
     textOverflow: 'ellipsis',
-    transition: `all ${core.motion.speedNormal}`
+    transition: `all ${core.motion.speedNormal}`,
+    ':hover': {
+      background: core.colors.orangeLight
+    }
   },
   styleSize,
   styleAppearance,
-  styleDisabled
+  styleDisabled,
+  styleDisabledStroke,
+  styleDisabledFlat,
+  styleIconAlign,
+  styleIconOnly
 )
 
-export default props => <Button {...props}>{props.children}</Button>
+const styleIconAlignIconContainer = ({ iconAlign }) =>
+  iconAlign === 'right'
+    ? {
+        marginRight: 0,
+        marginLeft: core.layout.spacingXSmall
+      }
+    : null
 
-// import css from '../css/index.module.css'
+const styleIconOnlyIconContainer = ({ iconOnly }) =>
+  iconOnly ? { margin: 0 } : null
 
-// const getClassName = props =>
-//   classNames({
-//     [props.css['ps-button']]: true,
-//     [props.css['ps-button--' + props.appearance]]: props.appearance,
-//     [props.css['ps-button--' + props.size]]: props.size,
-//     [props.css['ps-button--disabled']]: props.disabled,
-//     [props.css['ps-button--icon-align-right']]:
-//       props.icon && props.iconAlign === 'right',
-//     [props.css['ps-button--icon-only']]:
-//       React.Children.count(props.children) <= 0,
-//     [props.className]: props.className
-//   })
+const IconContainer = glamorous.div(
+  {
+    display: 'flex',
+    alignItems: 'center',
+    minHeight: '100%',
+    marginRight: core.layout.spacingXSmall
+  },
+  styleIconAlignIconContainer,
+  styleIconOnlyIconContainer
+)
 
-// const mapIconSize = props => {
-//   const btnToIconSizes = {
-//     tiny: 'tiny',
-//     small: 'small',
-//     medium: 'small',
-//     large: 'small'
-//   }
-//   return btnToIconSizes[props.size] ? btnToIconSizes[props.size] : 'small'
-// }
+const mapIconSize = props => {
+  const btnToIconSizes = {
+    tiny: 'tiny',
+    small: 'small',
+    medium: 'small',
+    large: 'small'
+  }
+  return btnToIconSizes[props.size] ? btnToIconSizes[props.size] : 'small'
+}
 
-// const rmSystemProps = props => {
-//   const { appearance, disabled, css, icon, iconAlign, size, ...rest } = props
-//   return rest
-// }
+const styleIcon = _ => ({
+  '> svg': { transition: `all ${core.motion.speedNormal}` }
+})
 
-// const formatProps = props => ({
-//   disabled: props.disabled,
-//   ...rmSystemProps(props),
-//   className: getClassName(props)
-// })
+const rmNonHtmlProps = props => {
+  const { icon, ...rest } = props
+  return rest
+}
 
-// const renderIcon = props =>
-//   props.icon
-//     ? <div className={props.css['ps-button__icon']}>
-//         {React.cloneElement(props.icon, {
-//           css: {
-//             'ps-icon__fg--fill': props.css['ps-icon__fg--fill'],
-//             'ps-icon__fg--stroke': props.css['ps-icon__fg--stroke']
-//           },
-//           size: mapIconSize(props)
-//         })}
-//       </div>
-//     : null
+const renderIcon = props =>
+  props.icon
+    ? <IconContainer
+        {...rmNonHtmlProps(props)}
+        iconOnly={React.Children.count(props.children) <= 0}
+      >
+        {React.cloneElement(props.icon, {
+          css: styleIcon(),
+          size: mapIconSize(props)
+        })}
+      </IconContainer>
+    : null
 
-// export const Button = props => {
-//   return (
-//     <button {...formatProps(props)}>
-//       {renderIcon(props)}
-//       <span>{props.children}</span>
-//     </button>
-//   )
-// }
+const Btn = props =>
+  <Button
+    {...rmNonHtmlProps(props)}
+    iconOnly={React.Children.count(props.children) <= 0}
+  >
+    {renderIcon(props)}<span>{props.children}</span>
+  </Button>
 
-// import PropTypes from 'prop-types'
-// Button.propTypes = {
-//   appearance: PropTypes.oneOf(['stroke', 'flat']),
-//   disabled: PropTypes.bool,
-//   icon: PropTypes.element,
-//   size: PropTypes.oneOf(['tiny', 'small', 'medium', 'large'])
-// }
-// Button.defaultProps = {
-//   disabled: false,
-//   size: 'medium'
-// }
+import PropTypes from 'prop-types'
+Btn.propTypes = {
+  appearance: PropTypes.oneOf(Object.keys(appearances)),
+  disabled: PropTypes.bool,
+  icon: PropTypes.element,
+  size: PropTypes.oneOf(Object.keys(sizes))
+}
+Btn.defaultProps = {
+  disabled: false,
+  size: sizes.medium
+}
 
-// export default styleable(css)(Button)
+export default Btn

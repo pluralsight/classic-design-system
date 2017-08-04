@@ -69,8 +69,7 @@ export default styleable(css)(props => {
           `<Button icon={<Icon id="logo" />} />`,
           `
 <Button
-  icon={<Icon id="logo"
-  css={{ 'ps-design-system-icon__fg--fill': ${props.css.flatIcon} }} />}
+  icon={<Icon id="logo" />}
   appearance="flat"
 />`
         ]}
@@ -81,9 +80,10 @@ export default styleable(css)(props => {
       </Heading>
       <Example.React
         codes={[
-          `<Button disabled={true}>Disabled</Button>`,
-          `<Button disabled={true} appearance="flat">Disabled</Button>`,
-          `<Button disabled={true} icon={<Icon id="logo" />}>Disabled</Button>`
+          `<Button disabled>Disabled</Button>`,
+          `<Button disabled appearance="stroke">Disabled</Button>`,
+          `<Button disabled appearance="flat">Disabled</Button>`,
+          `<Button disabled icon={<Icon id="logo" />}>Disabled</Button>`
         ]}
       />
     </div>
