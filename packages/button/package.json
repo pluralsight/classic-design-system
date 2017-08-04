@@ -2,7 +2,7 @@
   "name": "@pluralsight/ps-design-system-button",
   "version": "3.0.11",
   "description": "Design System component for button ui",
-  "main": "./index.js",
+  "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir dist --ignore spec.js",
     "prepublish": "npm run build",
