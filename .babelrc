@@ -1,7 +1,8 @@
 {
   "plugins": [
     "syntax-export-extensions",
-    "transform-export-extensions"
+    "transform-export-extensions",
+    "preval"
   ],
   "presets": [
     "react",
