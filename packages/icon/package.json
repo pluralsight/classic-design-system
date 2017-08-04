@@ -4,6 +4,8 @@
   "description": "Design System component for icon ui",
   "main": "index.js",
   "scripts": {
+    "build": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "prepublish": "npm run build",
     "test": "echo \"Error: tests run in as a single design system suite\" && exit 1"
   },
   "keywords": [],
@@ -18,5 +20,8 @@
     "@pluralsight/ps-design-system-core": "^2.1.6",
     "glamorous": "^4.1.0",
     "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1"
   }
 }
