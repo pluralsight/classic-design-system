@@ -17,16 +17,16 @@ module.exports = {
   letterSpacingXXLarge: '-0.54px',
   letterSpacingXLarge: '-0.45px',
   letterSpacingLarge: '0.36px',
-  letterSpacingMedium: '0',
-  letterSpacingSmall: '0',
-  letterSpacingXSmall: '0',
+  letterSpacingMedium: 0,
+  letterSpacingSmall: 0,
+  letterSpacingXSmall: 0,
 
   /* font weight */
-  fontWeightBold: '700px',
-  fontWeightMedium: '500px',
-  fontWeightBook: '400px',
-  fontWeightLight: '300px',
-  fontWeightXLight: '200px',
+  fontWeightBold: 700,
+  fontWeightMedium: 500,
+  fontWeightBook: 400,
+  fontWeightLight: 300,
+  fontWeightXLight: 200,
 
   /* line height */
   lineHeightTight: '20px',
