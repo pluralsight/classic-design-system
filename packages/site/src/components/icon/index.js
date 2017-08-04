@@ -29,7 +29,7 @@ export default props => {
       <Example.React
         codes={[
           `
-<Icon id="logo" size="x-large" />
+<Icon id="logo" size="xLarge" />
 `,
           `
 <Icon id="logo" size="large" />

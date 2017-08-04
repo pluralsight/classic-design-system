@@ -1,3 +1,4 @@
+import core from '@pluralsight/ps-design-system-core'
 import Icon, { ids } from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 import styleable from 'react-styleable'
@@ -30,7 +31,7 @@ export default styleable(css)(props => {
 `,
           `
 <Icon
-  css={{ 'ps-icon__fg--fill': '${props.css.overrideFill}' }}
+  css={{ '> svg': { fill: '${core.colors.pink}' } }}
   id="logo"
   size="medium"
 />

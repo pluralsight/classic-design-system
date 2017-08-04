@@ -18,7 +18,7 @@ export default styleable(css)(props => {
         </Link>.
       </P>
       <div className={props.css.icons}>
-        {Object.keys(ids).map((id, i) =>
+        {ids.map((id, i) =>
           <div className={props.css.icon} key={i}>
             <Icon id={id} size="medium" />
             <div className={props.css.iconLabel}>{id}</div>
