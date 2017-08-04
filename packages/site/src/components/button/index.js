@@ -56,8 +56,8 @@ export default styleable(css)(props => {
       <Example.React
         codes={[
           `<Button icon={<Icon id="logo" />}>With Icon</Button>`,
-          `<Button icon={<Icon id="channel" appearance="flat" />}>With Icon</Button>`,
-          `<Button icon={<Icon id="play" iconAlign="right" appearance="flat" />}>Aligned to Right</Button>`
+          `<Button icon={<Icon id="channel" />} appearance="stroke">With Icon</Button>`,
+          `<Button icon={<Icon id="play" />} iconAlign="right" appearance="flat">Aligned to Right</Button>`
         ]}
       />
 
