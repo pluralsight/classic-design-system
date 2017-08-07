@@ -3,6 +3,69 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.0"></a>
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@4.0.7...@pluralsight/ps-design-system-text@7.0.0) (2017-08-07)
+
+
+### Bug Fixes
+
+* **text:** font weight on heading large ([3ff8bbb](https://github.com/pluralsight/design-system/commit/3ff8bbb))
+
+
+### Features
+
+* **text:** inline styles ([c347205](https://github.com/pluralsight/design-system/commit/c347205))
+
+
+### BREAKING CHANGES
+
+* **text:** inline styles will change public api
+
+
+
+
+<a name="6.0.0"></a>
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@4.0.7...@pluralsight/ps-design-system-text@6.0.0) (2017-08-07)
+
+
+### Bug Fixes
+
+* **text:** font weight on heading large ([3ff8bbb](https://github.com/pluralsight/design-system/commit/3ff8bbb))
+
+
+### Features
+
+* **text:** inline styles ([c347205](https://github.com/pluralsight/design-system/commit/c347205))
+
+
+### BREAKING CHANGES
+
+* **text:** inline styles will change public api
+
+
+
+
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@4.0.7...@pluralsight/ps-design-system-text@5.0.0) (2017-08-07)
+
+
+### Bug Fixes
+
+* **text:** font weight on heading large ([3ff8bbb](https://github.com/pluralsight/design-system/commit/3ff8bbb))
+
+
+### Features
+
+* **text:** inline styles ([c347205](https://github.com/pluralsight/design-system/commit/c347205))
+
+
+### BREAKING CHANGES
+
+* **text:** inline styles will change public api
+
+
+
+
 <a name="4.0.7"></a>
 ## [4.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@4.0.6...@pluralsight/ps-design-system-text@4.0.7) (2017-08-01)
 

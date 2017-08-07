@@ -3,6 +3,72 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.0.0"></a>
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@3.0.9...@pluralsight/ps-design-system-button@6.0.0) (2017-08-07)
+
+
+### Code Refactoring
+
+* **button:** use inline styles ([ce33a81](https://github.com/pluralsight/design-system/commit/ce33a81))
+
+
+### Features
+
+* **button:** add build for dist on npm ([69af15c](https://github.com/pluralsight/design-system/commit/69af15c))
+* **button:** start change to glamorous css ([081baef](https://github.com/pluralsight/design-system/commit/081baef))
+
+
+### BREAKING CHANGES
+
+* **button:** inline styles via glamorous change api and styling strat
+
+
+
+
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@3.0.9...@pluralsight/ps-design-system-button@5.0.0) (2017-08-07)
+
+
+### Code Refactoring
+
+* **button:** use inline styles ([ce33a81](https://github.com/pluralsight/design-system/commit/ce33a81))
+
+
+### Features
+
+* **button:** add build for dist on npm ([69af15c](https://github.com/pluralsight/design-system/commit/69af15c))
+* **button:** start change to glamorous css ([081baef](https://github.com/pluralsight/design-system/commit/081baef))
+
+
+### BREAKING CHANGES
+
+* **button:** inline styles via glamorous change api and styling strat
+
+
+
+
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@3.0.9...@pluralsight/ps-design-system-button@4.0.0) (2017-08-07)
+
+
+### Code Refactoring
+
+* **button:** use inline styles ([ce33a81](https://github.com/pluralsight/design-system/commit/ce33a81))
+
+
+### Features
+
+* **button:** add build for dist on npm ([69af15c](https://github.com/pluralsight/design-system/commit/69af15c))
+* **button:** start change to glamorous css ([081baef](https://github.com/pluralsight/design-system/commit/081baef))
+
+
+### BREAKING CHANGES
+
+* **button:** inline styles via glamorous change api and styling strat
+
+
+
+
 <a name="3.0.11"></a>
 ## [3.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@3.0.9...@pluralsight/ps-design-system-button@3.0.11) (2017-08-01)
 

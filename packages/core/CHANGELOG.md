@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@2.1.6...@pluralsight/ps-design-system-core@2.4.0) (2017-08-07)
+
+
+### Bug Fixes
+
+* **core:** fix type measurements that arent pixel units ([38267d6](https://github.com/pluralsight/design-system/commit/38267d6))
+
+
+### Features
+
+* **core:** add js version of css vars ([7d6b46b](https://github.com/pluralsight/design-system/commit/7d6b46b))
+
+
+
+
+<a name="2.3.0"></a>
+# [2.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@2.1.6...@pluralsight/ps-design-system-core@2.3.0) (2017-08-07)
+
+
+### Bug Fixes
+
+* **core:** fix type measurements that arent pixel units ([38267d6](https://github.com/pluralsight/design-system/commit/38267d6))
+
+
+### Features
+
+* **core:** add js version of css vars ([7d6b46b](https://github.com/pluralsight/design-system/commit/7d6b46b))
+
+
+
+
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@2.1.6...@pluralsight/ps-design-system-core@2.2.0) (2017-08-07)
+
+
+### Bug Fixes
+
+* **core:** fix type measurements that arent pixel units ([38267d6](https://github.com/pluralsight/design-system/commit/38267d6))
+
+
+### Features
+
+* **core:** add js version of css vars ([7d6b46b](https://github.com/pluralsight/design-system/commit/7d6b46b))
+
+
+
+
 <a name="2.1.6"></a>
 ## [2.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@2.1.5...@pluralsight/ps-design-system-core@2.1.6) (2017-08-01)
 

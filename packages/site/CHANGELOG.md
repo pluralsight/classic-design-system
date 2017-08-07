@@ -3,6 +3,90 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.0"></a>
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@4.4.1...@pluralsight/ps-design-system-site@7.0.0) (2017-08-07)
+
+
+### Bug Fixes
+
+* **site:** fix button icon attrs in example ([0d39402](https://github.com/pluralsight/design-system/commit/0d39402))
+
+
+### Code Refactoring
+
+* **button:** use inline styles ([ce33a81](https://github.com/pluralsight/design-system/commit/ce33a81))
+
+
+### Features
+
+* **site:** add icon color reference ([a1ddaea](https://github.com/pluralsight/design-system/commit/a1ddaea))
+* **site:** add icon set reference ([b00491b](https://github.com/pluralsight/design-system/commit/b00491b))
+* **site:** add initial icon reference ([1b080fe](https://github.com/pluralsight/design-system/commit/1b080fe))
+
+
+### BREAKING CHANGES
+
+* **button:** inline styles via glamorous change api and styling strat
+
+
+
+
+<a name="6.0.0"></a>
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@4.4.1...@pluralsight/ps-design-system-site@6.0.0) (2017-08-07)
+
+
+### Bug Fixes
+
+* **site:** fix button icon attrs in example ([0d39402](https://github.com/pluralsight/design-system/commit/0d39402))
+
+
+### Code Refactoring
+
+* **button:** use inline styles ([ce33a81](https://github.com/pluralsight/design-system/commit/ce33a81))
+
+
+### Features
+
+* **site:** add icon color reference ([a1ddaea](https://github.com/pluralsight/design-system/commit/a1ddaea))
+* **site:** add icon set reference ([b00491b](https://github.com/pluralsight/design-system/commit/b00491b))
+* **site:** add initial icon reference ([1b080fe](https://github.com/pluralsight/design-system/commit/1b080fe))
+
+
+### BREAKING CHANGES
+
+* **button:** inline styles via glamorous change api and styling strat
+
+
+
+
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@4.4.1...@pluralsight/ps-design-system-site@5.0.0) (2017-08-07)
+
+
+### Bug Fixes
+
+* **site:** fix button icon attrs in example ([0d39402](https://github.com/pluralsight/design-system/commit/0d39402))
+
+
+### Code Refactoring
+
+* **button:** use inline styles ([ce33a81](https://github.com/pluralsight/design-system/commit/ce33a81))
+
+
+### Features
+
+* **site:** add icon color reference ([a1ddaea](https://github.com/pluralsight/design-system/commit/a1ddaea))
+* **site:** add icon set reference ([b00491b](https://github.com/pluralsight/design-system/commit/b00491b))
+* **site:** add initial icon reference ([1b080fe](https://github.com/pluralsight/design-system/commit/1b080fe))
+
+
+### BREAKING CHANGES
+
+* **button:** inline styles via glamorous change api and styling strat
+
+
+
+
 <a name="4.4.1"></a>
 ## [4.4.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@4.4.0...@pluralsight/ps-design-system-site@4.4.1) (2017-08-01)
 

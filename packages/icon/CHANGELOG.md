@@ -3,6 +3,93 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@2.2.4...@pluralsight/ps-design-system-icon@5.0.0) (2017-08-07)
+
+
+### Bug Fixes
+
+* **icon:** adjust tiny/small sizes ([965dcab](https://github.com/pluralsight/design-system/commit/965dcab))
+
+
+### Code Refactoring
+
+* **icon:** rewrite using inline styles ([e4f94be](https://github.com/pluralsight/design-system/commit/e4f94be))
+
+
+### Features
+
+* **icon:** add build for dist on npm ([6c1fc4a](https://github.com/pluralsight/design-system/commit/6c1fc4a))
+* **icon:** default color to currentColor ([2244f03](https://github.com/pluralsight/design-system/commit/2244f03))
+* **site:** add icon set reference ([b00491b](https://github.com/pluralsight/design-system/commit/b00491b))
+
+
+### BREAKING CHANGES
+
+* **icon:** uses glamorous inline styles; styling api changes
+* **icon:** changes visuals and app style requirements
+
+
+
+
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@2.2.4...@pluralsight/ps-design-system-icon@4.0.0) (2017-08-07)
+
+
+### Bug Fixes
+
+* **icon:** adjust tiny/small sizes ([965dcab](https://github.com/pluralsight/design-system/commit/965dcab))
+
+
+### Code Refactoring
+
+* **icon:** rewrite using inline styles ([e4f94be](https://github.com/pluralsight/design-system/commit/e4f94be))
+
+
+### Features
+
+* **icon:** add build for dist on npm ([6c1fc4a](https://github.com/pluralsight/design-system/commit/6c1fc4a))
+* **icon:** default color to currentColor ([2244f03](https://github.com/pluralsight/design-system/commit/2244f03))
+* **site:** add icon set reference ([b00491b](https://github.com/pluralsight/design-system/commit/b00491b))
+
+
+### BREAKING CHANGES
+
+* **icon:** uses glamorous inline styles; styling api changes
+* **icon:** changes visuals and app style requirements
+
+
+
+
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@2.2.4...@pluralsight/ps-design-system-icon@3.0.0) (2017-08-07)
+
+
+### Bug Fixes
+
+* **icon:** adjust tiny/small sizes ([965dcab](https://github.com/pluralsight/design-system/commit/965dcab))
+
+
+### Code Refactoring
+
+* **icon:** rewrite using inline styles ([e4f94be](https://github.com/pluralsight/design-system/commit/e4f94be))
+
+
+### Features
+
+* **icon:** add build for dist on npm ([6c1fc4a](https://github.com/pluralsight/design-system/commit/6c1fc4a))
+* **icon:** default color to currentColor ([2244f03](https://github.com/pluralsight/design-system/commit/2244f03))
+* **site:** add icon set reference ([b00491b](https://github.com/pluralsight/design-system/commit/b00491b))
+
+
+### BREAKING CHANGES
+
+* **icon:** uses glamorous inline styles; styling api changes
+* **icon:** changes visuals and app style requirements
+
+
+
+
 <a name="2.2.4"></a>
 ## [2.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@2.2.3...@pluralsight/ps-design-system-icon@2.2.4) (2017-08-01)
 
