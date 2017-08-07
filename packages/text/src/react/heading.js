@@ -30,7 +30,7 @@ const styleSize = ({ size }) =>
       fontSize: core.type.fontSizeLarge,
       letterSpacing: core.type.letterSpacingLarge,
       lineHeight: core.type.lineHeightStandard,
-      fontWeight: core.type.fontWeightMedium
+      fontWeight: core.type.fontWeightBook
     },
     xxLarge: {
       fontSize: core.type.fontSizeXXLarge,
