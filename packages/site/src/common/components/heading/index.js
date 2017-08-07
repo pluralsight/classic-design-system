@@ -1,24 +1,27 @@
-import classNames from 'classnames'
+import core from '@pluralsight/ps-design-system-core'
+import * as glamor from 'glamor'
 import { Heading } from '@pluralsight/ps-design-system-text/react'
 import React from 'react'
-import styleable from 'react-styleable'
 
-import css from './index.module.css'
+const styleSize = ({ size }) =>
+  ({
+    large: {
+      margin: '56px 0 0 0'
+    },
+    xxLarge: {
+      margin: '56px 0'
+    }
+  }[size])
 
-const rmSystemProps = props => {
-  const { css, ...rest } = props
-  return rest
-}
+const style = props =>
+  glamor.css(
+    {
+      color: core.colors.gray06
+    },
+    styleSize(props)
+  )
 
-const formatClassName = props =>
-  classNames({
-    [props.css.heading]: true,
-    [props.css['heading--' + props.size]]: props.size,
-    [props.className]: props.className
-  })
-
-export default styleable(css)(props =>
-  <Heading {...rmSystemProps(props)} className={formatClassName(props)}>
+export default props =>
+  <Heading {...props} className={style(props)}>
     {props.children}
   </Heading>
-)
