@@ -16,7 +16,7 @@ const defaultCard = (
 export default props => {
   return (
     <div>
-      <Heading size="xx-large">
+      <Heading size="xxLarge">
         <h1>Card</h1>
       </Heading>
 
