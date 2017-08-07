@@ -17,8 +17,8 @@ export const sizes = {
 const styleSize = ({ size }) =>
   ({
     tiny: {
-      height: '12px',
-      width: '12px'
+      height: '16px',
+      width: '16px'
     },
     small: {
       height: '24px',
