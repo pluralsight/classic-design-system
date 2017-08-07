@@ -2,6 +2,7 @@ import core from '@pluralsight/ps-design-system-core'
 import glamorous from 'glamorous'
 import React from 'react'
 
+// TODO: move to Button fn
 export const appearances = { stroke: 'stroke', flat: 'flat' }
 
 export const sizes = {
