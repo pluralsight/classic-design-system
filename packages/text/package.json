@@ -3,8 +3,9 @@
   "version": "4.0.7",
   "description": "Design system component for text-related ui",
   "main": "index.js",
-  "style": "css/index.module.css",
   "scripts": {
+    "build": "babel src --out-dir dist --ignore spec.js",
+    "prepublish": "npm run build",
     "test": "echo \"Error: tests run in as a single design system suite\" && exit 1"
   },
   "keywords": [],
@@ -18,7 +19,10 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^2.1.6",
     "classnames": "^2.2.5",
-    "prop-types": "^15.5.10",
-    "react-styleable": "^3.1.0"
+    "glamorous": "^4.1.0",
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1"
   }
 }
