@@ -6,7 +6,9 @@
   "scripts": {
     "build": "babel src --out-dir dist --ignore spec.js",
     "prepublish": "npm run build",
-    "test": "echo \"Error: tests run in as a single design system suite\" && exit 1"
+    "test": "echo \"Error: tests run in as a single design system suite\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "jaketrent",
@@ -23,6 +25,8 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
+    "@storybook/addon-backgrounds": "^3.0.0",
+    "@storybook/react": "^3.2.3",
     "babel-cli": "^6.24.1"
   }
 }
