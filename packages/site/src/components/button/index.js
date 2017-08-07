@@ -12,7 +12,7 @@ import Icon from '@pluralsight/ps-design-system-icon/react'
 export default styleable(css)(props => {
   return (
     <div className={props.css.root}>
-      <Heading size="xx-large">
+      <Heading size="xxLarge">
         <h1>Buttons</h1>
       </Heading>
 

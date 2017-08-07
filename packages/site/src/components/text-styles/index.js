@@ -8,7 +8,7 @@ import Lists from './lists'
 
 export default _ =>
   <div>
-    <Heading size="xx-large"><h1>Text styles</h1></Heading>
+    <Heading size="xxLarge"><h1>Text styles</h1></Heading>
 
     <Install />
 

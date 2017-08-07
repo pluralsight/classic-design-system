@@ -19,7 +19,7 @@ const tabList = `
 export default styleable(css)(props => {
   return (
     <div className={props.css.root}>
-      <Heading size="xx-large">
+      <Heading size="xxLarge">
         <h1>Tabs</h1>
       </Heading>
 

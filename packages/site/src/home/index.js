@@ -27,7 +27,7 @@ const Action = props =>
 
 const Header = props =>
   <header className={props.css.header}>
-    <Heading size="xx-large" className={props.css.title}>
+    <Heading size="xxLarge" className={props.css.title}>
       <h1>
         <Icon id="logo" size="medium" className={props.css.titleIcon} />
         Design System

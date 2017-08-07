@@ -8,7 +8,7 @@ import CommonSet from './common-set'
 export default props => {
   return (
     <div>
-      <Heading size="xx-large">
+      <Heading size="xxLarge">
         <h1>Icon</h1>
       </Heading>
 

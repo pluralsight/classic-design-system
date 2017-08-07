@@ -8,7 +8,7 @@ import { Code, Heading, P } from '../../common/components'
 
 export default props =>
   <div>
-    <Heading size="xx-large"><h1>Typography</h1></Heading>
+    <Heading size="xxLarge"><h1>Typography</h1></Heading>
 
     <Heading size="large"><h2>Install the Font</h2></Heading>
     <P>

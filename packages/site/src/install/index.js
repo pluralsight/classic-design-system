@@ -4,7 +4,7 @@ import { Code, Doc, Heading, P } from '../common/components'
 
 export default _ =>
   <Chrome title="Install">
-    <Heading size="xx-large">
+    <Heading size="xxLarge">
       <h1>Install FTW!</h1>
     </Heading>
     <Doc>{`

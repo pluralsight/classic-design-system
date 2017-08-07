@@ -11,7 +11,7 @@ import UiColors from './ui'
 export default styleable(css)(props => {
   return (
     <div className={props.css.root}>
-      <Heading size="xx-large"><h1>Color</h1></Heading>
+      <Heading size="xxLarge"><h1>Color</h1></Heading>
 
       <Heading size="large"><h2>Grayscale colors</h2></Heading>
       <P>Grayscale colors are used for containers, text, lines and borders.</P>

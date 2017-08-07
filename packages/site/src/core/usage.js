@@ -3,7 +3,7 @@ import { Code, Doc, Heading, P } from '../common/components'
 
 export default _ =>
   <div>
-    <Heading size="xx-large">
+    <Heading size="xxLarge">
       <h1>Core Usage</h1>
     </Heading>
     <Doc>{`

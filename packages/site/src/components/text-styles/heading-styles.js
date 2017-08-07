@@ -16,7 +16,7 @@ export default _ =>
       orient="vertical"
       codes={[
         `
-<Text.Heading size="xx-large">
+<Text.Heading size="xxLarge">
   <h2>XX Large</h2>
 </Text.Heading>
 `,
@@ -31,7 +31,7 @@ export default _ =>
 </Text.Heading>
 `,
         `
-<Text.Heading size="small-caps">
+<Text.Heading size="smallCaps">
   <h2>Small Caps</h2>
 </Text.Heading>
 `

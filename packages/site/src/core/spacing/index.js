@@ -7,7 +7,7 @@ import IndividualSpacing from './individual'
 
 export default props =>
   <div>
-    <Heading size="xx-large"><h1>Spacing</h1></Heading>
+    <Heading size="xxLarge"><h1>Spacing</h1></Heading>
 
     <Heading size="large"><h2>Spacing increments</h2></Heading>
     <P>
