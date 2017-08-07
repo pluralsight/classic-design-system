@@ -1,8 +1,0 @@
-@import "@pluralsight/ps-design-system-core";
-
-.ps-p {
-  color: var(--psColorsBone);
-  font-size: var(--psTypeFontSizeSmall);
-  margin: var(--psLayoutSpacingSmall) 0;
-  line-height: var(--psTypeLineHeightStandard);
-}
