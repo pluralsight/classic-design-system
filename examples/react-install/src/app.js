@@ -1,20 +1,33 @@
-// import of react version of design system component
 import Button from '@pluralsight/ps-design-system-button/react'
+import Icon from '@pluralsight/ps-design-system-icon/react'
+import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
-import styleable from 'react-styleable'
+import { Heading } from '@pluralsight/ps-design-system-text/react'
 
-import css from './app.module.css'
-
-export default styleable(css)(props =>
-  <div className={props.css.app}>
+export default _ =>
+  <div className="app">
     <header>
-      <h3>Pluralsight Design System</h3>
-      <h2>React Install Example</h2>
+      <Heading size="medium" style={{ color: core.colors.gray06 }}>
+        <h3>Pluralsight Design System</h3>
+      </Heading>
+      <Heading size="large" style={{ color: core.colors.gray06 }}>
+        <h2>React Install Example</h2>
+      </Heading>
     </header>
-    <div className={props.css.box}>
-      <Button size="large" onClick={_ => alert("It's working")}>
+    <div
+      style={{
+        marginTop: core.layout.spacingLarge,
+        padding: core.layout.spacingLarge,
+        background: core.colors.bone,
+        borderRadius: 4
+      }}
+    >
+      <Button
+        size="large"
+        onClick={_ => alert("It's working")}
+        icon={<Icon id="logo" />}
+      >
         Design System component
       </Button>
     </div>
   </div>
-)
