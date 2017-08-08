@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-card",
-  "version": "2.2.8",
+  "version": "2.2.9",
   "description": "Design System component for card ui",
   "main": "index.js",
   "style": "css/index.module.css",
@@ -16,7 +16,7 @@
     "react": ">=0.15.0 < 16.0.0"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^2.4.0",
+    "@pluralsight/ps-design-system-core": "^2.4.1",
     "classnames": "^2.2.5",
     "prop-types": "^15.5.10",
     "react-styleable": "^3.1.0",
