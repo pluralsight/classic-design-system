@@ -55,10 +55,13 @@ const rmNonHtmlProps = props => {
   return rest
 }
 
-const Icon = props =>
-  <IconContainer {...rmNonHtmlProps(props)}>
-    {eval(icons[props.id])}
-  </IconContainer>
+const Icon = props => {
+  return (
+    <IconContainer {...rmNonHtmlProps(props)}>
+      {icons[props.id](React)}
+    </IconContainer>
+  )
+}
 
 import PropTypes from 'prop-types'
 Icon.propTypes = {
