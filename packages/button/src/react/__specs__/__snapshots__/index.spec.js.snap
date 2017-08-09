@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <button
-  className="ps-button ps-button--medium"
+  className="css-gs8szy"
   disabled={false}
 >
   <span>
