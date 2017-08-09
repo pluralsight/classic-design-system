@@ -1751,8 +1751,8 @@ span.CodeMirror-selectedtext { background: none; }
   /* motion */
 }
 .header___1HvyY {
-  background: -webkit-gradient(linear, left top, left bottom, from(#2BB2E3), to(#137BC2));
-  background: linear-gradient(to bottom, #2BB2E3, #137BC2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#2bb2e3), to(#137bc2));
+  background: linear-gradient(to bottom, #2bb2e3, #137bc2);
   height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1768,7 +1768,7 @@ span.CodeMirror-selectedtext { background: none; }
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.title___-ODN0 {
+.header___1HvyY .title___-ODN0 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
