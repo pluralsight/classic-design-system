@@ -21,7 +21,6 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^2.4.1",
-    "classnames": "^2.2.5",
     "glamorous": "^4.1.0",
     "prop-types": "^15.5.10"
   },

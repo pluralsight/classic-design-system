@@ -1,4 +1,3 @@
-import classNames from 'classnames'
 import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import React from 'react'
@@ -40,24 +39,22 @@ const styleSize = ({ size }) =>
     }
   }[size])
 
-const formatClassName = props =>
-  classNames({
-    [glamor.css(
-      {
-        color: core.colors.white,
-        margin: `${core.layout.spacingMedium} 0`
-      },
-      styleSize(props)
-    )]: true,
-    [props.className]: props.className
-  })
+const style = props =>
+  glamor.css(
+    {
+      color: core.colors.white,
+      margin: `${core.layout.spacingMedium} 0`
+    },
+    styleSize(props)
+  )
 
 const rmChildren = ({ children, ...rest }) => rest
 
 const Heading = props =>
   React.cloneElement(React.Children.only(props.children), {
     ...rmChildren(props),
-    className: formatClassName(props)
+    ...style(props),
+    className: props.className
   })
 
 import PropTypes from 'prop-types'
