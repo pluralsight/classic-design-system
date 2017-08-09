@@ -11,7 +11,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "precommit": "lint-staged",
-    "publish": "lerna publish --conventional-commits --force-publish=*",
+    "publish": "lerna publish --conventional-commits",
     "publish:beta": "npm run publish -- --npm-tag=beta",
     "site": "cd packages/site && npm run site",
     "start": "npm run site",
