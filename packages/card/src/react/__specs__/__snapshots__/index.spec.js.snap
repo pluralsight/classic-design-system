@@ -2,20 +2,21 @@
 
 exports[`renders bonusBar 1`] = `
 <div
-  className="ps-card ps-card--medium"
+  className="css-19wk7ys"
 >
   <div
-    className="ps-card__overlays"
+    className="css-iwdsn5"
   >
     <div
-      className="ps-card__image-frame"
+      className="css-1r7bzjg"
     >
       <div
-        className="ps-card__image"
+        className={undefined}
+        data-css-jpg3o=""
       />
     </div>
     <div
-      className="ps-card__bonus-bar"
+      className="css-1nqeg2a"
     >
       <div>
         Anything
@@ -23,7 +24,7 @@ exports[`renders bonusBar 1`] = `
     </div>
   </div>
   <div
-    className="ps-card__title"
+    className="css-1qp7lpj"
   >
     <span
       style={
@@ -112,21 +113,22 @@ exports[`renders bonusBar 1`] = `
 
 exports[`renders custom metadata classes 1`] = `
 <div
-  className="ps-card ps-card--medium"
+  className="css-19wk7ys"
 >
   <div
-    className="ps-card__overlays"
+    className="css-iwdsn5"
   >
     <div
-      className="ps-card__image-frame"
+      className="css-1r7bzjg"
     >
       <div
-        className="ps-card__image"
+        className={undefined}
+        data-css-jpg3o=""
       />
     </div>
   </div>
   <div
-    className="ps-card__title"
+    className="css-1qp7lpj"
   >
     <span
       style={
@@ -211,7 +213,7 @@ exports[`renders custom metadata classes 1`] = `
     </span>
   </div>
   <div
-    className="ps-card__metadata"
+    className="css-bcrrqv"
   >
     <span
       className="keepme"
@@ -224,30 +226,32 @@ exports[`renders custom metadata classes 1`] = `
 
 exports[`renders fullOverlay 1`] = `
 <div
-  className="ps-card ps-card--medium ps-card--full-overlay"
+  className="css-19wk7ys"
 >
   <div
-    className="ps-card__overlays"
+    className="css-iwdsn5"
   >
     <div
-      className="ps-card__image-frame"
+      className="css-1r7bzjg"
     >
       <div
-        className="ps-card__image"
+        className={undefined}
+        data-css-jpg3o=""
       />
     </div>
     <div
-      className="ps-card__full-overlay"
+      className="css-1opv87a"
     >
       <div
-        className="ps-card__full-overlay__child"
+        className={undefined}
+        data-css-1fxa3fl=""
       >
         FakePlayBtn
       </div>
     </div>
   </div>
   <div
-    className="ps-card__title"
+    className="css-1qp7lpj"
   >
     <span
       style={
@@ -336,21 +340,22 @@ exports[`renders fullOverlay 1`] = `
 
 exports[`renders link class on meta only if anchor tag 1`] = `
 <div
-  className="ps-card ps-card--medium"
+  className="css-19wk7ys"
 >
   <div
-    className="ps-card__overlays"
+    className="css-iwdsn5"
   >
     <div
-      className="ps-card__image-frame"
+      className="css-1r7bzjg"
     >
       <div
-        className="ps-card__image"
+        className={undefined}
+        data-css-jpg3o=""
       />
     </div>
   </div>
   <div
-    className="ps-card__title"
+    className="css-1qp7lpj"
   >
     <span
       style={
@@ -435,21 +440,22 @@ exports[`renders link class on meta only if anchor tag 1`] = `
     </span>
   </div>
   <div
-    className="ps-card__metadata"
+    className="css-bcrrqv"
   >
     <span
-      className=""
+      className={undefined}
     >
       No link class
     </span>
     <span
       aria-hidden={true}
-      className="ps-card__metadata__dot"
+      className="css-kykfz1"
     >
       ·
     </span>
     <a
-      className="ps-card__metadata__datum--link"
+      className={undefined}
+      data-css-ohpd3v=""
     >
       yes link class
     </a>
@@ -459,21 +465,22 @@ exports[`renders link class on meta only if anchor tag 1`] = `
 
 exports[`renders no tag if size is small 1`] = `
 <div
-  className="ps-card ps-card--small"
+  className="css-1hal8pq"
 >
   <div
-    className="ps-card__overlays"
+    className="css-b22ep1"
   >
     <div
-      className="ps-card__image-frame"
+      className="css-1r7bzjg"
     >
       <div
-        className="ps-card__image"
+        className={undefined}
+        data-css-jpg3o=""
       />
     </div>
   </div>
   <div
-    className="ps-card__title"
+    className="css-1qc3euk"
   >
     <span
       style={
@@ -562,21 +569,22 @@ exports[`renders no tag if size is small 1`] = `
 
 exports[`renders required props 1`] = `
 <div
-  className="ps-card ps-card--medium"
+  className="css-19wk7ys"
 >
   <div
-    className="ps-card__overlays"
+    className="css-iwdsn5"
   >
     <div
-      className="ps-card__image-frame"
+      className="css-1r7bzjg"
     >
       <div
-        className="ps-card__image"
+        className={undefined}
+        data-css-jpg3o=""
       />
     </div>
   </div>
   <div
-    className="ps-card__title"
+    className="css-1qp7lpj"
   >
     <span
       style={
@@ -665,35 +673,40 @@ exports[`renders required props 1`] = `
 
 exports[`renders tag 1`] = `
 <div
-  className="ps-card ps-card--medium"
+  className="css-19wk7ys"
 >
   <div
-    className="ps-card__overlays"
+    className="css-iwdsn5"
   >
     <div
-      className="ps-card__image-frame"
+      className="css-1r7bzjg"
     >
       <div
-        className="ps-card__image"
+        className={undefined}
+        data-css-jpg3o=""
       />
     </div>
     <div
-      className="ps-card__tag"
+      className="css-1gmxx97"
     >
       <div
-        className="ps-card__tag__part"
+        className={undefined}
+        data-css-1c199zc=""
+        size="tiny"
       >
         FakeSVG
       </div>
       <span
-        className="ps-card__tag__part"
+        className={undefined}
+        data-css-1c199zc=""
+        size="tiny"
       >
         Course
       </span>
     </div>
   </div>
   <div
-    className="ps-card__title"
+    className="css-1qp7lpj"
   >
     <span
       style={

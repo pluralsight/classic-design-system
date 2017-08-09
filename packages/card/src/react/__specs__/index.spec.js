@@ -2,7 +2,7 @@ import identity from 'identity-obj-proxy'
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import { Card } from '../index'
+import Card from '../index'
 
 test('renders required props', () => {
   const tree = renderer.create(

@@ -1,3 +1,3 @@
-import React from './react'
+const React = require('./dist/react')
 
-export default { React }
+module.exports = { React }
