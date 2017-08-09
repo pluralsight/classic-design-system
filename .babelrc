@@ -2,7 +2,8 @@
   "plugins": [
     "syntax-export-extensions",
     "transform-export-extensions",
-    "preval"
+    "preval",
+    "glamorous-displayname"
   ],
   "presets": [
     "react",
