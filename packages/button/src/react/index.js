@@ -170,6 +170,7 @@ const mapIconSize = props => {
   return btnToIconSizes[props.size] ? btnToIconSizes[props.size] : 'small'
 }
 
+// TODO: want to use glamor.css here?
 const styleIcon = _ => ({
   '> svg': { transition: `all ${core.motion.speedNormal}` }
 })
