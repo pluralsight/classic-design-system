@@ -1,5 +1,6 @@
 # builds from source that live in npm only
 dist
+*.dist.js
 
 # Logs
 logs
