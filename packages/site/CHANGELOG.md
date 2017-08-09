@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.3"></a>
+## [7.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.0.2...@pluralsight/ps-design-system-site@7.0.3) (2017-08-09)
+
+
+### Bug Fixes
+
+* **site:** make override selector for heading more specific ([1782199](https://github.com/pluralsight/design-system/commit/1782199))
+
+
+
+
 <a name="7.0.2"></a>
 ## [7.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.0.1...@pluralsight/ps-design-system-site@7.0.2) (2017-08-09)
 
