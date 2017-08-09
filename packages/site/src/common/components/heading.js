@@ -22,6 +22,6 @@ const style = props =>
   )
 
 export default props =>
-  <Heading {...props} className={style(props)}>
+  <Heading {...props} {...style(props)}>
     {props.children}
   </Heading>

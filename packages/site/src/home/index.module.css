@@ -1,14 +1,14 @@
 @import "@pluralsight/ps-design-system-core";
 
 .header {
-  background: linear-gradient(to bottom, #2BB2E3, #137BC2);
+  background: linear-gradient(to bottom, #2bb2e3, #137bc2);
   height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
 }
-.title {
+.header .title {
   display: flex;
   align-items: center;
   color: var(--psColorsWhite);
