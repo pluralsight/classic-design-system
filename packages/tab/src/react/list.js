@@ -1,26 +1,20 @@
-import classNames from 'classnames'
+import core from '@pluralsight/ps-design-system-core'
+import glamorous from 'glamorous'
 import React from 'react'
-import styleable from 'react-styleable'
 
-import css from '../css/list.module.css'
+const List = glamorous.div({
+  display: 'flex',
+  width: '100%',
+  height: '64px',
+  borderBottom: `1px solid ${core.colors.gray03}`
+})
 
 const findActiveIndex = els => {
   const i = (els || []).findIndex(el => el.props.active)
   return i > -1 ? i : 0
 }
 
-const rmSystemProps = props => {
-  const { css, ...rest } = props
-  return rest
-}
-
-const getClassName = props =>
-  classNames({
-    [props.css['ps-tab-list']]: true,
-    [props.className]: props.className
-  })
-
-class List extends React.Component {
+export default class extends React.Component {
   constructor(props) {
     super(props)
     this.state = { activeIndex: findActiveIndex(this.props.children) }
@@ -44,15 +38,9 @@ class List extends React.Component {
   }
   render() {
     return (
-      <div
-        role="tablist"
-        {...rmSystemProps(this.props)}
-        className={getClassName(this.props)}
-      >
+      <List role="tablist" {...this.props}>
         {this.renderListItems(this.props.children)}
-      </div>
+      </List>
     )
   }
 }
-
-export default styleable(css)(List)

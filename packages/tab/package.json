@@ -3,8 +3,10 @@
   "version": "2.0.19",
   "description": "Design system component for tab list ui",
   "main": "index.js",
-  "style": "css/index.module.css",
   "scripts": {
+    "build": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build:watch": "npm run build -- --watch",
+    "prepublish": "npm run build",
     "test": "echo \"Error: tests run in as a single design system suite\" && exit 1"
   },
   "keywords": [],
@@ -17,8 +19,10 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^2.4.2",
-    "classnames": "^2.2.5",
-    "prop-types": "^15.5.10",
-    "react-styleable": "^3.1.0"
+    "glamorous": "^4.1.0",
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1"
   }
 }
