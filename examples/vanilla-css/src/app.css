@@ -9,3 +9,6 @@
   font-size: 18px;
   text-align: center;
 }
+.app .app-button-override {
+  color: white;
+}

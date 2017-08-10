@@ -5,16 +5,16 @@ export default _ =>
   <div className="app ps-type-font-family">
     <header>
       <h3>Pluralsight Design System</h3>
-      <h2>Webpack Config Decoration</h2>
+      <h2>Srsly Vanilla CSS</h2>
     </header>
     <div className="ps-colors-gray03--background-color ps-layout-spacing-large--padding box">
       <Button
-        className="ps-layout-spacing-large"
+        className="app-button-override"
         size="large"
         appearance="stroke"
         onClick={_ => alert("It's working")}
       >
-        Design System component
+        Overridden Design System component
       </Button>
     </div>
   </div>

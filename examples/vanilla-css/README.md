@@ -2,13 +2,13 @@
 
 An example of how to integrate the Pluralsight Design System Core and Components into a project with vanilla CSS.
 
-In addition, project uses:
 
-- react
-- react-dom
-- babel
-- webpack
+This project uses:
+
+- webpack - to bundle modules and serve the html
 - NO css loader
+- babel - to load js
+- vanilla css - for app page styles
 
 ## To Run
 
