@@ -1,6 +1,20 @@
-<svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <title>Path icon</title>
-  <g>
-    <path d="M0,5.0476 L4,5.0476 L4,6.0476 L2.124,6.0476 L7,11.8426 L7,20.0476 L6,20.0476 L6,12.2076 L1,6.2666 L1,9.0486 L0,9.0486 L0,5.0476 Z M18.9999,5.0476 L23.0009,5.0476 L23.0009,9.0486 L21.9999,9.0486 L21.9999,6.2666 L16.9999,12.2076 L16.9999,20.0476 L15.9999,20.0476 L15.9999,11.8426 L20.8769,6.0476 L18.9999,6.0476 L18.9999,5.0476 Z M11.502,3.0001 L13.982,5.7581 L13.238,6.4251 L12,5.0491 L12,20.0481 L11,20.0481 L11,5.0541 L9.765,6.4251 L9.022,5.7581 L11.502,3.0001 Z"></path>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/path.icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.41132031,10 L7.99710674,13.5857864 L7.99710674,22 L6,22 L5.99710674,14.4142136 L3,11.4171068 L3,14 L1,14 L1,8 L7,8 L7,10 L4.41132031,10 Z M21,11.4142136 L18,14.4142136 L18,22 L16,22 L16,13.5857864 L19.5857864,10 L17,10 L17,8 L23,8 L23,14 L21,14 L21,11.4142136 Z M13,5.82578621 L13,22 L11,22 L11,5.83106804 L9.17421379,7.65685425 L7.76000023,6.24264069 L12.0026409,2 L16.2452816,6.24264069 L14.831068,7.65685425 L13,5.82578621 L13,5.82578621 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/path">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="paths" fill="#000000" xlink:href="#path-1"></use>
+            <g id="Color/Neutral/White" mask="url(#mask-2)" fill="#FFFFFF">
+                <rect id="222222-Fill" x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
 </svg>

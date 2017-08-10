@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
-    <title>Icon/bookmark-fill.icon</title>
+    <title>Icon/share.icon</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <path d="M17.5012444,2 L9,2 C6.794,2 5,3.795 5,6 L5,23 L10.5,17 L16,23 L16,10 L20,10 C20.552,10 21,9.553 21,9 L21,6 C21,3.795 19.7082444,2 17.5012444,2 Z M19,8 L16,8 L16,6 C16,4.896 16.3982444,4 17.5012444,4 C18.6032444,4 19,4.896 19,6 L19,8 Z" id="path-1"></path>
+        <path d="M17,16.08 C16.24,16.08 15.56,16.38 15.04,16.85 L7.91,12.7 C7.96,12.47 8,12.24 8,12 C8,11.76 7.96,11.53 7.91,11.3 L14.96,7.19 C15.5,7.69 16.21,8 17,8 C18.6568542,8 20,6.65685425 20,5 C20,3.34314575 18.6568542,2 17,2 C15.3431458,2 14,3.34314575 14,5 C14,5.24 14.04,5.47 14.09,5.7 L7.04,9.81 C6.5,9.31 5.79,9 5,9 C3.34314575,9 2,10.3431458 2,12 C2,13.6568542 3.34314575,15 5,15 C5.79,15 6.5,14.69 7.04,14.19 L14.16,18.34 C14.11,18.55 14.08,18.77 14.08,19 C14.08,20.61 15.39,21.91 17,21.91 C18.61,21.91 19.92,20.61 19.92,19 C19.92,17.3873285 18.6126715,16.08 17,16.08 Z" id="path-1"></path>
     </defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Icon/bookmark-fill">
+        <g id="Icon/share">
             <mask id="mask-2" fill="white">
                 <use xlink:href="#path-1"></use>
             </mask>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
-    <title>Icon/more.icon</title>
+    <title>Icon/mic.icon</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <path d="M6,14.5 C4.8954305,14.5 4,13.6045695 4,12.5 C4,11.3954305 4.8954305,10.5 6,10.5 C7.1045695,10.5 8,11.3954305 8,12.5 C8,13.6045695 7.1045695,14.5 6,14.5 Z M18,14.5 C16.8954305,14.5 16,13.6045695 16,12.5 C16,11.3954305 16.8954305,10.5 18,10.5 C19.1045695,10.5 20,11.3954305 20,12.5 C20,13.6045695 19.1045695,14.5 18,14.5 Z M12,14.5 C10.8954305,14.5 10,13.6045695 10,12.5 C10,11.3954305 10.8954305,10.5 12,10.5 C13.1045695,10.5 14,11.3954305 14,12.5 C14,13.6045695 13.1045695,14.5 12,14.5 Z" id="path-1"></path>
+        <path d="M12,14 C13.66,14 14.99,12.66 14.99,11 L15,5 C15,3.34 13.66,2 12,2 C10.34,2 9,3.34 9,5 L9,11 C9,12.66 10.34,14 12,14 Z M10.8,4.9 C10.8,4.24 11.34,3.7 12,3.7 C12.66,3.7 13.2,4.24 13.2,4.9 L13.19,11.1 C13.19,11.76 12.66,12.3 12,12.3 C11.34,12.3 10.8,11.76 10.8,11.1 L10.8,4.9 Z M17.3,11 C17.3,14 14.76,16.1 12,16.1 C9.24,16.1 6.7,14 6.7,11 L5,11 C5,14.41 7.72,17.23 11,17.72 L11,21 L13,21 L13,17.72 C16.28,17.24 19,14.42 19,11 L17.3,11 Z" id="path-1"></path>
     </defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Icon/more">
+        <g id="Icon/mic">
             <mask id="mask-2" fill="white">
                 <use xlink:href="#path-1"></use>
             </mask>
-            <use id="Combined-Shape" fill="#000000" xlink:href="#path-1"></use>
+            <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
             <g id="Color/Neutral/White" mask="url(#mask-2)" fill="#FFFFFF">
                 <rect id="222222-Fill" x="0" y="0" width="24" height="24"></rect>
             </g>

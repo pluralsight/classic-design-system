@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
-    <title>Icon/more.icon</title>
+    <title>Icon/note.icon</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <path d="M6,14.5 C4.8954305,14.5 4,13.6045695 4,12.5 C4,11.3954305 4.8954305,10.5 6,10.5 C7.1045695,10.5 8,11.3954305 8,12.5 C8,13.6045695 7.1045695,14.5 6,14.5 Z M18,14.5 C16.8954305,14.5 16,13.6045695 16,12.5 C16,11.3954305 16.8954305,10.5 18,10.5 C19.1045695,10.5 20,11.3954305 20,12.5 C20,13.6045695 19.1045695,14.5 18,14.5 Z M12,14.5 C10.8954305,14.5 10,13.6045695 10,12.5 C10,11.3954305 10.8954305,10.5 12,10.5 C13.1045695,10.5 14,11.3954305 14,12.5 C14,13.6045695 13.1045695,14.5 12,14.5 Z" id="path-1"></path>
+        <path d="M19,2 C20.104,2 21,2.896 21,4 L21,20 C21,21.103 20.104,22 19,22 L7,22 C5.896,22 5,21.103 5,20 L5,18 L3,18 L3,16 L5,16 L5,13 L3,13 L3,11 L5,11 L5,8 L3,8 L3,6 L5,6 L5,4 C5,2.896 5.896,2 7,2 L19,2 Z M7,20 L19.002,20 L19,4 L7,4 L7,6 L8,6 L8,8 L7,8 L7,11 L8,11 L8,13 L7,13 L7,16 L8,16 L8,18 L7,18 L7,20 Z M10,7 L17,7 L17,13 L10,13 L10,7 Z M12,9 L12,11 L15,11 L15,9 L12,9 Z" id="path-1"></path>
     </defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Icon/more">
+        <g id="Icon/note">
             <mask id="mask-2" fill="white">
                 <use xlink:href="#path-1"></use>
             </mask>
-            <use id="Combined-Shape" fill="#000000" xlink:href="#path-1"></use>
+            <use id="Combined-Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
             <g id="Color/Neutral/White" mask="url(#mask-2)" fill="#FFFFFF">
                 <rect id="222222-Fill" x="0" y="0" width="24" height="24"></rect>
             </g>

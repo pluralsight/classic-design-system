@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
-    <title>Icon/bookmark-fill.icon</title>
+    <title>Icon/briefcase.icon</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <path d="M17.5012444,2 L9,2 C6.794,2 5,3.795 5,6 L5,23 L10.5,17 L16,23 L16,10 L20,10 C20.552,10 21,9.553 21,9 L21,6 C21,3.795 19.7082444,2 17.5012444,2 Z M19,8 L16,8 L16,6 C16,4.896 16.3982444,4 17.5012444,4 C18.6032444,4 19,4.896 19,6 L19,8 Z" id="path-1"></path>
+        <path d="M20,7 L17,7 L17,5 C17,3.898 16.103,3 15,3 L9,3 C7.897,3 7,3.898 7,5 L7,7 L4,7 C2.346,7 1,8.346 1,10 L1,14 L2,14 L2,19 C2,20.654 3.346,22 5,22 L19,22 C20.654,22 22,20.654 22,19 L22,14 L23,14 L23,10 C23,8.346 21.654,7 20,7 Z M9,5 L15,5 L15,7 L9,7 L9,5 Z M20,19 C20,19.553 19.551,20 19,20 L5,20 C4.449,20 4,19.553 4,19 L4,14 L8,14 C8,15.103 8.897,16 10,16 L14,16 C15.103,16 16,15.103 16,14 L20,14 L20,19 Z M10,14 L10,12 L14,12 L13.997,14 L10,14 Z M21,12 L16,12 C16,10.898 15.103,10 14,10 L10,10 C8.897,10 8,10.898 8,12 L3,12 L3,10 C3,9.448 3.449,9 4,9 L20,9 C20.551,9 21,9.448 21,10 L21,12 Z" id="path-1"></path>
     </defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Icon/bookmark-fill">
+        <g id="Icon/briefcase">
             <mask id="mask-2" fill="white">
                 <use xlink:href="#path-1"></use>
             </mask>

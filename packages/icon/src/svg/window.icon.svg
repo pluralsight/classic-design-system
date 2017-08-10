@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
-    <title>Icon/bookmark-fill.icon</title>
+    <title>Icon/window.icon</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <path d="M17.5012444,2 L9,2 C6.794,2 5,3.795 5,6 L5,23 L10.5,17 L16,23 L16,10 L20,10 C20.552,10 21,9.553 21,9 L21,6 C21,3.795 19.7082444,2 17.5012444,2 Z M19,8 L16,8 L16,6 C16,4.896 16.3982444,4 17.5012444,4 C18.6032444,4 19,4.896 19,6 L19,8 Z" id="path-1"></path>
+        <path d="M22,7.975 L20,7.975 L20,9.975 L22,9.975 L22,11.975 L20,11.975 L20,13.975 L21.999,13.975 L21.997,19.975 L8,19.975 L8,17.975 L6,17.975 L6,19.975 C6,21.079 6.897,21.975 8,21.975 L22,21.975 C23.103,21.975 24,21.079 24,19.975 L24,9.975 C24,8.873 23.103,7.975 22,7.975 Z M18,13.975 L18,3.975 C18,2.873 17.103,1.975 16,1.975 L2,1.975 C0.896,1.975 0,2.873 0,3.975 L0,13.975 C0,15.079 0.896,15.975 2,15.975 L16,15.975 C17.103,15.975 18,15.078 18,13.975 Z M16,5.975 L10,5.975 L10,3.975 L16,3.975 L16,5.975 Z M6,5.975 L6,3.975 L8,3.975 L8,5.975 L6,5.975 Z M4,3.975 L4,5.975 L2,5.975 L2,3.975 L4,3.975 L4,3.975 Z M2,13.975 L2,7.975 L15.999,7.975 L15.997,13.975 L2,13.975 Z" id="path-1"></path>
     </defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Icon/bookmark-fill">
+        <g id="Icon/window">
             <mask id="mask-2" fill="white">
                 <use xlink:href="#path-1"></use>
             </mask>
