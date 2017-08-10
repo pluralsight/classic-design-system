@@ -1,12 +1,12 @@
 import core from '@pluralsight/ps-design-system-core'
+import * as glamor from 'glamor'
 import glamorous from 'glamorous'
 import React from 'react'
 
-// TODO: move to Button fn
-export const appearances = { stroke: 'stroke', flat: 'flat' }
+const appearances = { stroke: 'stroke', flat: 'flat' }
 
-export const sizes = {
-  tiny: 'tiny',
+const sizes = {
+  xSmall: 'xSmall',
   small: 'small',
   medium: 'medium',
   large: 'large'
@@ -16,25 +16,25 @@ export const iconAligns = { left: 'left', right: 'right' }
 
 const styleSize = ({ size }) =>
   ({
-    tiny: {
+    [sizes.xSmall]: {
       fontSize: core.type.fontSizeXSmall,
       lineHeight: core.type.lineHeightStandard,
       padding: `0 ${core.layout.spacingXSmall}`,
       height: '24px'
     },
-    small: {
+    [sizes.small]: {
       fontSize: core.type.fontSizeSmall,
       lineHeight: core.type.lineHeightStandard,
       padding: `${core.layout.spacingTiny} ${core.layout.spacingXSmall}`,
       height: '32px'
     },
-    medium: {
+    [sizes.medium]: {
       fontSize: core.type.fontSizeSmall,
       lineHeight: core.type.lineHeightStandard,
       padding: `${core.layout.spacingTiny} ${core.layout.spacingMedium}`,
       height: '40px'
     },
-    large: {
+    [sizes.large]: {
       fontSize: core.type.fontSizeMedium,
       lineHeight: core.type.lineHeightExtra,
       padding: `${core.layout.spacingTiny} ${core.layout.spacingMedium}`,
@@ -100,9 +100,12 @@ const styleIconOnly = ({ iconOnly, size }) =>
   iconOnly
     ? {
         padding: 0,
-        width: { tiny: '24px', small: '32px', medium: '40px', large: '48px' }[
-          size
-        ]
+        width: {
+          [sizes.xSmall]: '24px',
+          [sizes.small]: '32px',
+          [sizes.medium]: '40px',
+          [sizes.large]: '48px'
+        }[size]
       }
     : null
 
@@ -162,18 +165,18 @@ const IconContainer = glamorous.div(
 
 const mapIconSize = props => {
   const btnToIconSizes = {
-    tiny: 'tiny',
-    small: 'small',
-    medium: 'small',
-    large: 'small'
+    [sizes.xSmall]: 'tiny',
+    [sizes.small]: 'small',
+    [sizes.medium]: 'small',
+    [sizes.large]: 'small'
   }
   return btnToIconSizes[props.size] ? btnToIconSizes[props.size] : 'small'
 }
 
-// TODO: want to use glamor.css here?
-const styleIcon = _ => ({
-  '> svg': { transition: `all ${core.motion.speedNormal}` }
-})
+const styleIcon = _ =>
+  glamor.css({
+    '& svg': { transition: `all ${core.motion.speedNormal}` }
+  })
 
 const rmNonHtmlProps = props => {
   const { icon, ...rest } = props
@@ -212,5 +215,7 @@ Btn.defaultProps = {
   disabled: false,
   size: sizes.medium
 }
+Btn.appearances = appearances
+Btn.sizes = sizes
 
 export default Btn
