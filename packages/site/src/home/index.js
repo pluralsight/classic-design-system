@@ -45,7 +45,7 @@ const Home = props =>
       development.
     </Point>
     <Point css={props.css} title="Core">
-      The Core consists of predifined variables for basic design elements such
+      The Core consists of predefined variables for basic design elements such
       as <Link href="/core/color">color</Link>,{' '}
       <Link href="/core/typography">typography</Link>, and{' '}
       <Link href="/core/spacing">spacing</Link>. These system properties allow

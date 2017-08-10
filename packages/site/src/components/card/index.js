@@ -280,7 +280,7 @@ export default props => {
       <Heading size="large">
         <h2>Tag</h2>
       </Heading>
-      <P>The tag provides a label usually categorizing the card's content.</P>
+      <P>The tag provides a label, usually categorizing the card's content.</P>
       <Example.React
         orient="vertical"
         codes={[
