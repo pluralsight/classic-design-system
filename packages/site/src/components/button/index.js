@@ -46,7 +46,7 @@ export default styleable(css)(props => {
           `<Button size="large">Large</Button>`,
           `<Button size="medium">Medium</Button>`,
           `<Button size="small">Small</Button>`,
-          `<Button size="tiny">Tiny</Button>`
+          `<Button size="xSmall">XSmall</Button>`
         ]}
       />
 
