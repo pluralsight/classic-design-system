@@ -18,7 +18,7 @@ export default props =>
 
     <Heading size="large"><h2>Individual spacing</h2></Heading>
     <P>
-      Individual spacing can be applied to a singe side of an element. Both
+      Individual spacing can be applied to a single side of an element. Both
       margin and padding share the same predefined scale. The same 7 sizes are
       available.
     </P>
