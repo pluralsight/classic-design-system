@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@2.0.9...@pluralsight/ps-design-system-tab@3.0.0) (2017-08-10)
+
+
+### Code Refactoring
+
+* **tab:** inline styles ([f286857](https://github.com/pluralsight/design-system/commit/f286857))
+
+
+### BREAKING CHANGES
+
+* **tab:** changes styling api
+
+
+
+
 <a name="2.0.19"></a>
 ## [2.0.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@2.0.9...@pluralsight/ps-design-system-tab@2.0.19) (2017-08-09)
 
