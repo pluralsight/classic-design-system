@@ -13,10 +13,9 @@ const jsx = str => ({ __html: str })
 
 module.exports = fileNames.reduce((acc, fileName) => {
   const filePath = path.join(dirPath, fileName)
-  const id = camelize(fileName.split('.')[0])
-  acc[id] = fs.readFileSync(filePath, 'utf8')
   const outputFileName = fileName + '.dist.js'
   const outputFilePath = path.join(__dirname, outputFileName)
+
   fs.writeFileSync(
     outputFilePath,
     'module.exports = function (React) { return (' +
@@ -26,6 +25,8 @@ module.exports = fileNames.reduce((acc, fileName) => {
         .replace(';', '') +
       ') }'
   )
+
+  const id = camelize(fileName.split('.')[0])
   acc[id] = require('./' + outputFileName)
   return acc
 }, {})
