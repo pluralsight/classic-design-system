@@ -2,14 +2,12 @@
 
 An example of how to integrate the Pluralsight Design System Core and Components into a React-based project.
 
-In addition, project uses:
+This project uses:
 
-- react
-- react-dom
-- babel
-- css-modules
-- postcss
-- webpack
+- webpack - to bundle modules and serve the html
+- babel - to load js
+- vanilla css - for app page styles
+- inline styles - to use design system core 
 
 ## To Run
 
