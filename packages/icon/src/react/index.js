@@ -7,6 +7,7 @@ import icons from './icons'
 export const ids = Object.keys(icons)
 
 export const sizes = {
+  // TODO: rename xSmall
   tiny: 'tiny',
   small: 'small',
   medium: 'medium',
