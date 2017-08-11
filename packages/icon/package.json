@@ -6,6 +6,7 @@
   "scripts": {
     "build": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build -- --watch",
+    "svg:clean": "node build/svg-clean",
     "prepublish": "npm run build",
     "test": "echo \"Error: tests run in as a single design system suite\" && exit 1"
   },
@@ -23,6 +24,8 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1"
+    "@tsuyoshiwada/htmltojsx": "0.0.4",
+    "babel-cli": "^6.24.1",
+    "svgo": "0.5.6"
   }
 }
