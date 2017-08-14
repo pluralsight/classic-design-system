@@ -43,19 +43,15 @@ const ListItem = glamorous.button(
   styleActive
 )
 
-const ListItemComponent = props => {
-  console.log('props', props)
-  return (
-    <ListItem
-      role="tab"
-      aria-selected={props.active}
-      active={props.active}
-      {...props}
-    >
-      {props.children}
-    </ListItem>
-  )
-}
+const ListItemComponent = props =>
+  <ListItem
+    role="tab"
+    aria-selected={props.active}
+    active={props.active}
+    {...props}
+  >
+    {props.children}
+  </ListItem>
 
 import PropTypes from 'prop-types'
 ListItemComponent.propTypes = {
