@@ -11,8 +11,6 @@ const React = require('react')
 const dirPath = path.join(__dirname, '..', 'svg')
 const fileNames = fs.readdirSync(dirPath)
 
-const jsx = str => ({ __html: str })
-
 module.exports = fileNames.reduce((acc, fileName) => {
   if (path.extname(fileName) !== '.svg') return acc
 
