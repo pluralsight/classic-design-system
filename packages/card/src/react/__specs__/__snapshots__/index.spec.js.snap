@@ -24,7 +24,7 @@ exports[`renders bonusBar 1`] = `
     </div>
   </div>
   <div
-    className="css-1qp7lpj"
+    className="css-8n0rg6"
   >
     <span
       style={
@@ -128,7 +128,7 @@ exports[`renders custom metadata classes 1`] = `
     </div>
   </div>
   <div
-    className="css-1qp7lpj"
+    className="css-8n0rg6"
   >
     <span
       style={
@@ -251,7 +251,7 @@ exports[`renders fullOverlay 1`] = `
     </div>
   </div>
   <div
-    className="css-1qp7lpj"
+    className="css-8n0rg6"
   >
     <span
       style={
@@ -355,7 +355,7 @@ exports[`renders link class on meta only if anchor tag 1`] = `
     </div>
   </div>
   <div
-    className="css-1qp7lpj"
+    className="css-8n0rg6"
   >
     <span
       style={
@@ -480,7 +480,7 @@ exports[`renders no tag if size is small 1`] = `
     </div>
   </div>
   <div
-    className="css-1qc3euk"
+    className="css-aoggyi"
   >
     <span
       style={
@@ -584,7 +584,7 @@ exports[`renders required props 1`] = `
     </div>
   </div>
   <div
-    className="css-1qp7lpj"
+    className="css-8n0rg6"
   >
     <span
       style={
@@ -706,7 +706,7 @@ exports[`renders tag 1`] = `
     </div>
   </div>
   <div
-    className="css-1qp7lpj"
+    className="css-8n0rg6"
   >
     <span
       style={
