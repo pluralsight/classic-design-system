@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
 import React from 'react'
 import styleable from 'react-styleable'
 
 import css from './logo.module.css'
+import Link from '../link'
 
 const Svg = props =>
   <svg
@@ -33,7 +33,7 @@ const Svg = props =>
   </svg>
 
 export default styleable(css)(props =>
-  <Link to="/" className={props.css.root}>
+  <Link href="/" className={props.css.root}>
     <Svg css={props.css} />
     <h2 className={props.css.text}>
       <span className={props.css.textCompany}>PLURALSIGHT</span>

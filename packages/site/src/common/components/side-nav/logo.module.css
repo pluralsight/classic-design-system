@@ -8,6 +8,9 @@
   text-decoration: none;
   padding: var(--psLayoutSpacingLarge) 0;
 }
+.root:hover {
+  text-decoration: none !important;
+}
 .img {
   height: 31px;
   width: 31px;

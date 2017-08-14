@@ -11,7 +11,7 @@
   background: var(--psColorsGradientHorz);
   transition: all var(--psMotionSpeedFastest) ease-in-out;
 }
-.link {
+.root .link {
   display: flex;
   align-items: center;
   font-size: var(--psTypeFontSizeSmall);
@@ -21,8 +21,9 @@
   white-space: nowrap;
   transition: all var(--psMotionSpeedFastest) ease-in-out;
 }
-.link:hover {
+.root .link:hover {
   color: var(--psColorsBlack);
+  text-decoration: none;
 }
 .link:hover .box {
   width: 8px;

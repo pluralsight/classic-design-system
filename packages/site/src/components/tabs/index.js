@@ -1,4 +1,3 @@
-import { Link as RouterLink } from 'react-router-dom'
 import React from 'react'
 import styleable from 'react-styleable'
 import Tab from '@pluralsight/ps-design-system-tab/react'
