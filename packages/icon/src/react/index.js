@@ -62,14 +62,14 @@ const rmNonHtmlProps = props => {
 const Icon = props => {
   return (
     <IconContainer {...rmNonHtmlProps(props)}>
-      {icons[props.id](React)}
+      {props.children || icons[props.id](React)}
     </IconContainer>
   )
 }
 
 import PropTypes from 'prop-types'
 Icon.propTypes = {
-  id: PropTypes.oneOf(Object.keys(ids)).isRequired,
+  id: PropTypes.oneOf(Object.keys(ids)),
   size: PropTypes.oneOf(Object.keys(sizes))
 }
 Icon.defaultProps = {
