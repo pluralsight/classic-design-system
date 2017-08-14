@@ -9,7 +9,6 @@ if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
   modeLoaded = true
 }
 
-import Highlight from 'react-highlight'
 import PropTypes from 'prop-types'
 import React from 'react'
 import ReactDOM from 'react-dom'

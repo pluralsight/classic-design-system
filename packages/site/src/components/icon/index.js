@@ -4,6 +4,7 @@ import React from 'react'
 import { Code, Example, Heading, Link, P } from '../../common/components'
 import Color from './color'
 import CommonSet from './common-set'
+import Custom from './custom'
 
 export default props => {
   return (
@@ -48,6 +49,7 @@ export default props => {
 
       <Color />
       <CommonSet />
+      <Custom />
     </div>
   )
 }
