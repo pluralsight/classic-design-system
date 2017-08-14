@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.6"></a>
+## [7.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.0.4...@pluralsight/ps-design-system-site@7.0.6) (2017-08-14)
+
+
+### Bug Fixes
+
+* correct 2 typos, add a comma ([5937660](https://github.com/pluralsight/design-system/commit/5937660))
+* **site:** fix scss usage doc ([9db6757](https://github.com/pluralsight/design-system/commit/9db6757))
+
+
+
+
 <a name="7.0.5"></a>
 ## [7.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.0.4...@pluralsight/ps-design-system-site@7.0.5) (2017-08-14)
 

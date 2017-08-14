@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.0"></a>
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@5.0.2...@pluralsight/ps-design-system-icon@7.0.0) (2017-08-14)
+
+
+### Bug Fixes
+
+* add glamor dependency ([7c09972](https://github.com/pluralsight/design-system/commit/7c09972))
+* **icon:** ids enum is now an object ([961310d](https://github.com/pluralsight/design-system/commit/961310d))
+
+
+### Code Refactoring
+
+* upgrade peerDependency on normalize for all ([ea0342f](https://github.com/pluralsight/design-system/commit/ea0342f))
+* **icon:** change size tiny to xSmall ([c4f9d91](https://github.com/pluralsight/design-system/commit/c4f9d91))
+* **icon:** remove logo ([93d63e7](https://github.com/pluralsight/design-system/commit/93d63e7))
+
+
+### Features
+
+* **icon:** add new svgs ([e783091](https://github.com/pluralsight/design-system/commit/e783091))
+* **icon:** add svg cleanup script ([e0dbe1a](https://github.com/pluralsight/design-system/commit/e0dbe1a))
+* **icon:** handle custom icon ([a9d5094](https://github.com/pluralsight/design-system/commit/a9d5094)), closes [#48](https://github.com/pluralsight/design-system/issues/48)
+* **icon:** new, thicker icons ([ee951d5](https://github.com/pluralsight/design-system/commit/ee951d5))
+
+
+### BREAKING CHANGES
+
+* **icon:** removes an icon
+* **icon:** renamed prop enum
+* **icon:** entirely new, visual set
+* changes normalize file path
+
+
+
+
 <a name="6.0.0"></a>
 # [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@5.0.2...@pluralsight/ps-design-system-icon@6.0.0) (2017-08-14)
 

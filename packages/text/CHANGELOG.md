@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="9.0.0"></a>
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@7.0.3...@pluralsight/ps-design-system-text@9.0.0) (2017-08-14)
+
+
+### Bug Fixes
+
+* add glamor dependency ([7c09972](https://github.com/pluralsight/design-system/commit/7c09972))
+
+
+### Code Refactoring
+
+* upgrade peerDependency on normalize for all ([ea0342f](https://github.com/pluralsight/design-system/commit/ea0342f))
+
+
+### BREAKING CHANGES
+
+* changes normalize file path
+
+
+
+
 <a name="8.0.0"></a>
 # [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@7.0.3...@pluralsight/ps-design-system-text@8.0.0) (2017-08-14)
 
