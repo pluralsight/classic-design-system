@@ -190,7 +190,7 @@
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
-.link___39ybE {
+.root___2a0NR .link___39ybE {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,8 +205,9 @@
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
-.link___39ybE:hover {
+.root___2a0NR .link___39ybE:hover {
   color: #000000;
+  text-decoration: none;
 }
 .link___39ybE:hover .box___GDXzH {
   width: 8px;
@@ -256,6 +257,9 @@
   border-bottom: 1px solid #cccccc;
   text-decoration: none;
   padding: 24px 0;
+}
+.root___fjNbW:hover {
+  text-decoration: none !important;
 }
 .img___2Y4PG {
   height: 31px;
