@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^2.4.2",
-    "glamor": "^2.20.39"
+    "glamor": "^2.20.40"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1"
