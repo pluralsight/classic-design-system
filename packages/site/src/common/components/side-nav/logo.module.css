@@ -12,8 +12,6 @@
   height: 31px;
   width: 31px;
   margin-right: 8px;
-  background: var(--psColorsGradientVert);
-  border-radius: 50%;
 }
 .text {
   margin: 0;

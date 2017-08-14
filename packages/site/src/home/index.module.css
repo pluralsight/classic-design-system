@@ -18,8 +18,11 @@
   width: 100%;
   text-align: left;
 }
-.titleIcon {
-  margin-right: var(--psLayoutSpacingSmall);
+.titleSvg {
+  fill: var(--psColorsWhite);
+  height: 56px;
+  width: 486px;
+  max-width: 100%;
 }
 
 .point {
