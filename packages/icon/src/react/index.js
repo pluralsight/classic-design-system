@@ -10,8 +10,7 @@ const ids = Object.keys(icons).reduce((acc, id) => {
 }, {})
 
 const sizes = {
-  // TODO: rename xSmall
-  tiny: 'tiny',
+  xSmall: 'xSmall',
   small: 'small',
   medium: 'medium',
   large: 'large',
@@ -20,23 +19,23 @@ const sizes = {
 
 const styleSize = ({ size }) =>
   ({
-    tiny: {
+    [sizes.xSmall]: {
       height: '16px',
       width: '16px'
     },
-    small: {
+    [sizes.small]: {
       height: '24px',
       width: '24px'
     },
-    medium: {
+    [sizes.medium]: {
       height: '48px',
       width: '48px'
     },
-    large: {
+    [sizes.large]: {
       height: '96px',
       width: '96px'
     },
-    xLarge: {
+    [sizes.xLarge]: {
       height: '160px',
       width: '160px'
     }
@@ -47,6 +46,7 @@ const IconContainer = glamorous.div(
     display: 'inline-block',
     height: '24px',
     width: '24px',
+    // TODO: make more general
     '> svg': {
       fill: 'currentColor'
     }
@@ -73,7 +73,7 @@ Icon.propTypes = {
   size: PropTypes.oneOf(Object.keys(sizes))
 }
 Icon.defaultProps = {
-  size: 'small'
+  size: sizes.small
 }
 Icon.ids = ids
 Icon.sizes = sizes
