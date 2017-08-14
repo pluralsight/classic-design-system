@@ -299,18 +299,15 @@ const styleTitle = ({ size }) =>
     {
       small: {
         fontSize: core.type.fontSizeXSmall,
-        lineHeight: core.lineHeightTight,
-        maxHeight: `calc(2 * ${core.type.lineHeightTight})`
+        lineHeight: core.lineHeightTight
       },
       medium: {
         fontSize: core.type.fontSizeSmall,
-        lineHeight: core.lineHeightTight,
-        maxHeight: `calc(2 * ${core.type.lineHeightTight})`
+        lineHeight: core.lineHeightTight
       },
       large: {
         fontSize: core.type.fontSizeMedium,
-        lineHeight: core.lineHeightStandard,
-        maxHeight: `calc(2 * ${core.type.lineHeightStandard})`
+        lineHeight: core.lineHeightStandard
       }
     }[size]
   )
