@@ -29,7 +29,7 @@ const Header = props =>
   <header className={props.css.header}>
     <Heading size="xxLarge" className={props.css.title}>
       <h1>
-        <Icon id="logo" size="medium" className={props.css.titleIcon} />
+        <Icon id="gear" size="medium" className={props.css.titleIcon} />
         Design System
       </h1>
     </Heading>

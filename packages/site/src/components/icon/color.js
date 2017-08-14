@@ -21,18 +21,18 @@ export default styleable(css)(props => {
         codes={[
           `
 <div style={{ color: '#ffffff' }}>
-  <Icon id="logo" size="medium" />
+  <Icon id="path" size="medium" />
 </div>
 `,
           `
 <div style={{ color: '#ffc200' }}>
-  <Icon id="logo" size="medium" />
+  <Icon id="path" size="medium" />
 </div>
 `,
           `
 <Icon
   css={{ '> svg': { fill: '${core.colors.pink}' } }}
-  id="logo"
+  id="path"
   size="medium"
 />
 `
