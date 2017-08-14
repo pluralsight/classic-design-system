@@ -4,7 +4,10 @@ import React from 'react'
 
 import icons from './icons'
 
-const ids = Object.keys(icons)
+const ids = Object.keys(icons).reduce((acc, id) => {
+  acc[id] = `${id}`
+  return acc
+}, {})
 
 const sizes = {
   // TODO: rename xSmall
@@ -66,7 +69,7 @@ const Icon = props => {
 
 import PropTypes from 'prop-types'
 Icon.propTypes = {
-  id: PropTypes.oneOf(ids).isRequired,
+  id: PropTypes.oneOf(Object.keys(ids)).isRequired,
   size: PropTypes.oneOf(Object.keys(sizes))
 }
 Icon.defaultProps = {
