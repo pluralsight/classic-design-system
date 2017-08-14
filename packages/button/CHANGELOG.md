@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="8.0.1"></a>
+## [8.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@8.0.0...@pluralsight/ps-design-system-button@8.0.1) (2017-08-14)
+
+
+### Bug Fixes
+
+* **button:** reference to xSmall icon size ([d331dbc](https://github.com/pluralsight/design-system/commit/d331dbc))
+
+
+
+
 <a name="8.0.0"></a>
 # [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@6.0.3...@pluralsight/ps-design-system-button@8.0.0) (2017-08-14)
 
