@@ -30,12 +30,6 @@ const Html = props =>
       <meta name="HandheldFriendly" content="True" />
       <meta name="MobileOptimized" content="320" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css"
-        type="text/css"
-        media="all"
-      />
       <link rel="stylesheet" href="/styles.css" />
     </head>
     <body>
