@@ -10,6 +10,11 @@
   background: var(--psColorsGray04);
 }
 .css {
+}
+.css :global(.CodeMirror) {
   background: none;
-  padding: 0;
+}
+.css :global(.CodeMirror),
+.css :global(.CodeMirror-scroll) {
+  height: auto;
 }

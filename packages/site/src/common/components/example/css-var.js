@@ -1,4 +1,13 @@
-import Highlight from 'react-highlight'
+import CodeMirror from 'react-codemirror'
+import 'codemirror/lib/codemirror.css'
+import './codemirror-theme-monokai-sublime.css'
+
+let modeLoaded = false
+if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
+  require('codemirror/mode/css/css')
+  modeLoaded = true
+}
+
 import PropTypes from 'prop-types'
 import React from 'react'
 import styleable from 'react-styleable'
@@ -11,10 +20,17 @@ class CssVarExample extends React.Component {
     super(props)
   }
   renderSrc() {
+    const options = {
+      readOnly: 'nocursor',
+      theme: 'monokai-sublime'
+    }
+    if (modeLoaded) options.mode = 'css'
     return (
-      <Highlight className={'css ' + this.props.css.css}>
-        {formatCssVars(this.props.attributes)}
-      </Highlight>
+      <CodeMirror
+        className={this.props.css.css}
+        value={formatCssVars(this.props.attributes)}
+        options={options}
+      />
     )
   }
   render() {

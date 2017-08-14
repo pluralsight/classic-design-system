@@ -4,6 +4,10 @@
   padding: var(--psLayoutSpacingLarge);
   background: var(--psColorsGray04);
 }
-.code {
+.root :global(.CodeMirror) {
   background: none;
+}
+.root :global(.CodeMirror),
+.root :global(.CodeMirror-scroll) {
+  height: auto;
 }
