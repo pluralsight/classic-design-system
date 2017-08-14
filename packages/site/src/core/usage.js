@@ -35,7 +35,7 @@ To use the Core variables in CSSNext:
 To use the Core variables in SASS:
 
 \`\`\`scss
-@import "~@pluralsight/ps-design-system-core/dist/index.scss";
+@import "~@pluralsight/ps-design-system-core/dist/index.module.scss";
 
 .mySelector { color: $ps-colors-pink; }
 \`\`\`
