@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.7"></a>
+## [7.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.0.6...@pluralsight/ps-design-system-site@7.0.7) (2017-08-14)
+
+
+### Bug Fixes
+
+* **site:** scroll to top when nav between pages ([a7d9b1c](https://github.com/pluralsight/design-system/commit/a7d9b1c)), closes [#23](https://github.com/pluralsight/design-system/issues/23)
+
+
+
+
 <a name="7.0.6"></a>
 ## [7.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.0.4...@pluralsight/ps-design-system-site@7.0.6) (2017-08-14)
 

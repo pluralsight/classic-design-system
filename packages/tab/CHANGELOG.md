@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.0.1"></a>
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@5.0.0...@pluralsight/ps-design-system-tab@5.0.1) (2017-08-14)
+
+
+### Bug Fixes
+
+* **tab:** remove console.log ([5a0777b](https://github.com/pluralsight/design-system/commit/5a0777b))
+
+
+
+
 <a name="5.0.0"></a>
 # [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@3.0.0...@pluralsight/ps-design-system-tab@5.0.0) (2017-08-14)
 

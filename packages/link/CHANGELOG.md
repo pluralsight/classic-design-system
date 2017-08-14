@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.0.1"></a>
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@5.0.0...@pluralsight/ps-design-system-link@5.0.1) (2017-08-14)
+
+
+### Bug Fixes
+
+* **link:** pass other props through to link ([1cc36dd](https://github.com/pluralsight/design-system/commit/1cc36dd))
+
+
+
+
 <a name="5.0.0"></a>
 # [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@3.0.0...@pluralsight/ps-design-system-link@5.0.0) (2017-08-14)
 
