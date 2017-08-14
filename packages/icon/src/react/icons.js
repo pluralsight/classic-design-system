@@ -1,5 +1,7 @@
 // @preval
 
+// TODO: is there a bug here where I have to build twice to get *.dist.js in src to move to dist?
+
 const babel = require('babel-core')
 const camelize = require('camelize')
 const fs = require('fs')
@@ -12,6 +14,8 @@ const fileNames = fs.readdirSync(dirPath)
 const jsx = str => ({ __html: str })
 
 module.exports = fileNames.reduce((acc, fileName) => {
+  if (path.extname(fileName) !== '.svg') return acc
+
   const filePath = path.join(dirPath, fileName)
   const outputFileName = fileName + '.dist.js'
   const outputFilePath = path.join(__dirname, outputFileName)
