@@ -17,11 +17,11 @@
   "repository": "pluralsight/design-system",
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^3.0.24",
+    "glamor": "^2.20.0",
     "react": ">=0.15.0 < 16.0.0"
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^2.4.2",
-    "glamor": "^2.20.40",
     "glamorous": "^4.1.0",
     "prop-types": "^15.5.10"
   },
