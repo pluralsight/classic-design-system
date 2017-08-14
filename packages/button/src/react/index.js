@@ -164,7 +164,7 @@ const IconContainer = glamorous.div(
 
 const mapIconSize = props => {
   const btnToIconSizes = {
-    [sizes.xSmall]: 'tiny',
+    [sizes.xSmall]: 'xSmall',
     [sizes.small]: 'small',
     [sizes.medium]: 'small',
     [sizes.large]: 'small'
