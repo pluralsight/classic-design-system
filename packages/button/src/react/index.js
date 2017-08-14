@@ -43,7 +43,7 @@ const styleSize = ({ size }) =>
 
 const styleAppearance = ({ appearance }) =>
   ({
-    stroke: {
+    [appearances.stroke]: {
       border: `1px solid ${core.colors.orange}`,
       color: core.colors.orange,
       background: 'none',
@@ -53,7 +53,7 @@ const styleAppearance = ({ appearance }) =>
         background: 'none'
       }
     },
-    flat: {
+    [appearances.flat]: {
       border: 'none',
       color: core.colors.gray02,
       background: 'none',
@@ -93,7 +93,7 @@ const styleDisabledFlat = ({ disabled, appearance }) =>
     : null
 
 const styleIconAlign = ({ iconAlign }) =>
-  iconAlign === 'right' ? { flexDirection: 'row-reverse' } : null
+  iconAlign === iconAligns.right ? { flexDirection: 'row-reverse' } : null
 
 const styleIconOnly = ({ iconOnly, size }) =>
   iconOnly
@@ -141,7 +141,7 @@ const Button = glamorous.button(
 )
 
 const styleIconAlignIconContainer = ({ iconAlign }) =>
-  iconAlign === 'right'
+  iconAlign === iconAligns.right
     ? {
         marginRight: 0,
         marginLeft: core.layout.spacingXSmall
@@ -202,6 +202,7 @@ Btn.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(appearances)),
   disabled: PropTypes.bool,
   icon: PropTypes.element,
+  iconAlign: PropTypes.oneOf(Object.keys(iconAligns)),
   size: PropTypes.oneOf(Object.keys(sizes))
 }
 Btn.defaultProps = {
@@ -209,6 +210,7 @@ Btn.defaultProps = {
   size: sizes.medium
 }
 Btn.appearances = appearances
+Btn.iconAligns = iconAligns
 Btn.sizes = sizes
 
 export default Btn
