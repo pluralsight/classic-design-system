@@ -25,7 +25,7 @@ export default _ =>
       <Button
         size="large"
         onClick={_ => alert("It's working")}
-        icon={<Icon id="logo" />}
+        icon={<Icon id="gear" />}
       >
         Design System component
       </Button>
