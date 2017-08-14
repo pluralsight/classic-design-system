@@ -1,5 +1,4 @@
 import core from '@pluralsight/ps-design-system-core'
-import * as glamor from 'glamor'
 import glamorous from 'glamorous'
 import React from 'react'
 
@@ -173,11 +172,6 @@ const mapIconSize = props => {
   return btnToIconSizes[props.size] ? btnToIconSizes[props.size] : 'small'
 }
 
-const styleIcon = _ =>
-  glamor.css({
-    '& svg': { transition: `all ${core.motion.speedNormal}` }
-  })
-
 const rmNonHtmlProps = props => {
   const { icon, ...rest } = props
   return rest
@@ -190,7 +184,6 @@ const renderIcon = props =>
         iconOnly={React.Children.count(props.children) <= 0}
       >
         {React.cloneElement(props.icon, {
-          css: styleIcon(),
           size: mapIconSize(props)
         })}
       </IconContainer>
