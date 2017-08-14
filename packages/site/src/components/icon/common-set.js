@@ -1,4 +1,4 @@
-import Icon, { ids } from '@pluralsight/ps-design-system-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 import styleable from 'react-styleable'
 
@@ -18,7 +18,7 @@ export default styleable(css)(props => {
         </Link>.
       </P>
       <div className={props.css.icons}>
-        {ids.map((id, i) =>
+        {Object.keys(Icon.ids).map((id, i) =>
           <div className={props.css.icon} key={i}>
             <Icon id={id} size="medium" />
             <div className={props.css.iconLabel}>{id}</div>
