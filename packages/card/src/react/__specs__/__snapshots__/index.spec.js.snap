@@ -692,14 +692,14 @@ exports[`renders tag 1`] = `
       <div
         className={undefined}
         data-css-1c199zc=""
-        size="tiny"
+        size="xSmall"
       >
         FakeSVG
       </div>
       <span
         className={undefined}
         data-css-1c199zc=""
-        size="tiny"
+        size="xSmall"
       >
         Course
       </span>

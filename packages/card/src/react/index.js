@@ -234,7 +234,7 @@ const renderTag = props =>
             }),
             className: part.props.className,
             key: i,
-            size: 'tiny'
+            size: 'xSmall'
           })
         )}
       </Tag>
