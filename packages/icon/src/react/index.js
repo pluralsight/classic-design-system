@@ -4,9 +4,9 @@ import React from 'react'
 
 import icons from './icons'
 
-export const ids = Object.keys(icons)
+const ids = Object.keys(icons)
 
-export const sizes = {
+const sizes = {
   // TODO: rename xSmall
   tiny: 'tiny',
   small: 'small',
@@ -72,4 +72,7 @@ Icon.propTypes = {
 Icon.defaultProps = {
   size: 'small'
 }
+Icon.ids = ids
+Icon.sizes = sizes
+
 export default Icon
