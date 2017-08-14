@@ -29,16 +29,19 @@ export default props => {
       <Example.React
         codes={[
           `
-<Icon id={Icon.ids.code} size="xLarge" />
+<Icon id={Icon.ids.code} size={Icon.sizes.xLarge} />
 `,
           `
-<Icon id={Icon.ids.code} size="large" />
+<Icon id={Icon.ids.code} size={Icon.sizes.large} />
 `,
           `
-<Icon id={Icon.ids.code} size="medium" />
+<Icon id={Icon.ids.code} size={Icon.sizes.medium} />
 `,
           `
-<Icon id={Icon.ids.code} size="small" />
+<Icon id={Icon.ids.code} size={Icon.sizes.small} />
+`,
+          `
+<Icon id={Icon.ids.code} size={Icon.sizes.xSmall} />
 `
         ]}
       />
