@@ -55,9 +55,9 @@ export default styleable(css)(props => {
       </Heading>
       <Example.React
         codes={[
-          `<Button icon={<Icon id="check" />}>With Icon</Button>`,
-          `<Button icon={<Icon id="channel" />} appearance="stroke">With Icon</Button>`,
-          `<Button icon={<Icon id="play" />} iconAlign="right" appearance="flat">Aligned to Right</Button>`
+          `<Button icon={<Icon id={Icon.ids.check} />}>With Icon</Button>`,
+          `<Button icon={<Icon id={Icon.ids.channel} />} appearance="stroke">With Icon</Button>`,
+          `<Button icon={<Icon id={Icon.ids.play} />} iconAlign="right" appearance="flat">Aligned to Right</Button>`
         ]}
       />
 
@@ -66,10 +66,10 @@ export default styleable(css)(props => {
       </Heading>
       <Example.React
         codes={[
-          `<Button icon={<Icon id="user" />} />`,
+          `<Button icon={<Icon id={Icon.ids.user} />} />`,
           `
 <Button
-  icon={<Icon id="user" />}
+  icon={<Icon id={Icon.ids.user} />}
   appearance="flat"
 />`
         ]}
@@ -83,7 +83,7 @@ export default styleable(css)(props => {
           `<Button disabled>Disabled</Button>`,
           `<Button disabled appearance="stroke">Disabled</Button>`,
           `<Button disabled appearance="flat">Disabled</Button>`,
-          `<Button disabled icon={<Icon id="pencil" />}>Disabled</Button>`
+          `<Button disabled icon={<Icon id={Icon.ids.pencil} />}>Disabled</Button>`
         ]}
       />
     </div>
