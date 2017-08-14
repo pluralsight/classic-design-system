@@ -10,5 +10,13 @@ const linkStyles = glamor.css({
   }
 })
 
+const rmChildren = props => {
+  const { children, ...rest } = props
+  return rest
+}
+
 export default props =>
-  React.cloneElement(React.Children.only(props.children), linkStyles)
+  React.cloneElement(React.Children.only(props.children), {
+    ...linkStyles,
+    ...rmChildren(props)
+  })
