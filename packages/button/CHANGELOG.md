@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.0"></a>
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@6.0.3...@pluralsight/ps-design-system-button@7.0.0) (2017-08-14)
+
+
+### Bug Fixes
+
+* add glamor dependency ([967023c](https://github.com/pluralsight/design-system/commit/967023c))
+* **button:** remove delay on child icon svg transition ([6692f4f](https://github.com/pluralsight/design-system/commit/6692f4f)), closes [#59](https://github.com/pluralsight/design-system/issues/59)
+
+
+### Code Refactoring
+
+* upgrade peerDependency on normalize for all ([ea0342f](https://github.com/pluralsight/design-system/commit/ea0342f))
+* **button:** tiny to xSmall size ([6d1c07a](https://github.com/pluralsight/design-system/commit/6d1c07a))
+
+
+### BREAKING CHANGES
+
+* **button:** prop enum changed
+* changes normalize file path
+
+
+
+
 <a name="6.0.3"></a>
 ## [6.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@6.0.2...@pluralsight/ps-design-system-button@6.0.3) (2017-08-09)
 

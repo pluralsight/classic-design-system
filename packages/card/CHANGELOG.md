@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@3.0.1...@pluralsight/ps-design-system-card@4.0.0) (2017-08-14)
+
+
+### Bug Fixes
+
+* add glamor dependency ([967023c](https://github.com/pluralsight/design-system/commit/967023c))
+* **card:** dont trunc 2nd title line vertically ([4eddb38](https://github.com/pluralsight/design-system/commit/4eddb38)), closes [#58](https://github.com/pluralsight/design-system/issues/58)
+* **card:** update snapshots ([9b2ce20](https://github.com/pluralsight/design-system/commit/9b2ce20))
+
+
+### Code Refactoring
+
+* upgrade peerDependency on normalize for all ([ea0342f](https://github.com/pluralsight/design-system/commit/ea0342f))
+
+
+### BREAKING CHANGES
+
+* changes normalize file path
+
+
+
+
 <a name="3.0.1"></a>
 ## [3.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@3.0.0...@pluralsight/ps-design-system-card@3.0.1) (2017-08-09)
 
