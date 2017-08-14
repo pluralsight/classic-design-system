@@ -2,7 +2,7 @@
 </code></pre><h2>Import CSSNext</h2><p>To use the Core variables in CSSNext:</p><pre><code class="language-css">@import &quot;@pluralsight/ps-design-system-core&quot;;
 
 .mySelector { color: var(--psColorsPink); }
-</code></pre><h2>Import SASS</h2><p>To use the Core variables in SASS:</p><pre><code class="language-scss">@import &quot;~@pluralsight/ps-design-system-core/dist/index.scss&quot;;
+</code></pre><h2>Import SASS</h2><p>To use the Core variables in SASS:</p><pre><code class="language-scss">@import &quot;~@pluralsight/ps-design-system-core/dist/index.module.scss&quot;;
 
 .mySelector { color: $ps-colors-pink; }
 </code></pre><h2>Import Vanilla CSS</h2><p>In vanilla CSS, variables are not yet widely supported.  Instead utility classes, generated from the original variables, are available.  Include the vanilla CSS stylesheet via traditional means:</p><pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;node_modules/@pluralsight/ps-design-system-core/dist/index.css&quot; /&gt;
