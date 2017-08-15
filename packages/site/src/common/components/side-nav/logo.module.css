@@ -29,6 +29,7 @@
   padding-top: var(--psLayoutSpacingXSmall);
 }
 .textTitle {
+  display: block;
   font-size: 8px; /* TODO: not in ds */
   color: var(--psColorsGray03);
   font-weight: var(--psTypeFontWeightMedium);
