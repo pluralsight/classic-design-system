@@ -1,8 +1,31 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const htmlWebpackTemplate = require('html-webpack-template')
 const path = require('path')
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 
 const extractTextPlugin = new ExtractTextPlugin('styles.css')
+
+const isProd = process.NODE_ENV === 'production'
+
+const plugins = [extractTextPlugin]
+
+if (isProd) {
+  plugins.push(
+    new StaticSiteGeneratorPlugin({
+      basename: '/design-system',
+      crawl: true
+    })
+  )
+} else {
+  plugins.push(
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: htmlWebpackTemplate,
+      appMountId: 'app'
+    })
+  )
+}
 
 module.exports = {
   entry: {
@@ -85,15 +108,10 @@ module.exports = {
       }
     ]
   },
-
-  plugins: [
-    extractTextPlugin,
-    new StaticSiteGeneratorPlugin({
-      basename: '/design-system',
-      crawl: true
-    })
-  ],
-
+  plugins,
+  devServer: {
+    port: 1337
+  },
   resolveLoader: {
     alias: {
       'import-react-loader': path.join(__dirname, 'import-react-loader.js'),

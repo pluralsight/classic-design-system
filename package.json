@@ -10,10 +10,11 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
+    "deploy": "cd packages/site && npm run build && git add ../docs && git commit -m \"chore(site): regen\"",
     "precommit": "lint-staged",
     "publish": "lerna publish --conventional-commits",
     "publish:beta": "npm run publish -- --npm-tag=beta",
-    "site": "cd packages/site && npm run site",
+    "site": "cd packages/site && npm start",
     "start": "npm run site",
     "test": "jest",
     "test:watch": "npm run test -- --watchAll",
