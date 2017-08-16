@@ -6,7 +6,7 @@ import { Example, Heading, P } from '../../common/components'
 export default _ =>
   <div>
 
-    <Heading size="large"><h2>Heading styles</h2></Heading>
+    <Heading size="large"><h2>List</h2></Heading>
 
     <P>
       Nothing fancy, just simple lists. You’ll know when you need them.

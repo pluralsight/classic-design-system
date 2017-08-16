@@ -27,7 +27,7 @@ export default styleable(css)(props => {
       <Heading size="large">
         <h2>Button appearance</h2>
       </Heading>
-      <P>Define a button appearance by ... </P>
+      <P>Buttons come in three standard visual styles.</P>
       <Example.React
         codes={[
           `<Button>Click me</Button>`,
@@ -39,6 +39,7 @@ export default styleable(css)(props => {
       <Heading size="large">
         <h2>Button sizes</h2>
       </Heading>
+      <P>Buttons come in four standard sizes. The default size is 'medium'.</P>
       <Example.React
         codes={[
           `<Button size="large">Large</Button>`,
@@ -51,6 +52,7 @@ export default styleable(css)(props => {
       <Heading size="large">
         <h2>Button with icon</h2>
       </Heading>
+      <P>Buttons may include an icon to the left or right of the label. Find out more about icons <Link href="/components/icon">here</Link>.</P>
       <Example.React
         codes={[
           `<Button icon={<Icon id={Icon.ids.check} />}>With Icon</Button>`,
@@ -62,6 +64,7 @@ export default styleable(css)(props => {
       <Heading size="large">
         <h2>Button with lone icon</h2>
       </Heading>
+      <P>Buttons may include an icon without a label. Find out more about icons <Link href="/components/icon">here</Link>.</P>
       <Example.React
         codes={[
           `<Button icon={<Icon id={Icon.ids.user} />} />`,
@@ -76,6 +79,7 @@ export default styleable(css)(props => {
       <Heading size="large">
         <h2>Disabled button</h2>
       </Heading>
+      <P>Each button may be displayed as disabled. Do not use disabled treatment for non-disabled buttons.</P>
       <Example.React
         codes={[
           `<Button disabled>Disabled</Button>`,
