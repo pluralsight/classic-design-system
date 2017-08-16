@@ -26,7 +26,6 @@
   font-weight: var(--psTypeFontWeightMedium);
   color: #000; /* TODO: real colorz */
   font-family: var(--psTypeFontFamily);
-  padding-top: var(--psLayoutSpacingXSmall);
 }
 .textTitle {
   display: block;
