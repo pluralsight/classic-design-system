@@ -28,7 +28,7 @@ const ListItem = glamorous.button(
     padding: `0 0 ${core.layout.spacingTiny} 0`,
     transition: `color ${core.motion.speedNormal}`,
     '& + button': {
-      marginLeft: core.layout.spacingLarge
+      marginLeft: core.layout.spacingXLarge
     },
     ':hover': {
       color: core.colors.white
