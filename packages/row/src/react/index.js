@@ -168,10 +168,6 @@ const renderActionBar = props =>
       </ActionBar>
     : null
 
-const isNativeElement = el => el && typeof el.type === 'string'
-
-const isAnchorElement = el => isNativeElement(el) && el.type === 'a'
-
 const Progress = glamorous.div({
   position: 'absolute',
   left: 0,
