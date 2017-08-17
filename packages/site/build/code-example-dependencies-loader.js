@@ -28,6 +28,9 @@ const codeExampleDependencies = {
   Icon: ${formatRequireExpression(
     '@pluralsight/ps-design-system-icon/react'
   )}.default,
+  Row: ${formatRequireExpression(
+    '@pluralsight/ps-design-system-row/react'
+  )}.default,
   Tab: ${formatRequireExpression(
     '@pluralsight/ps-design-system-tab/react'
   )}.default,

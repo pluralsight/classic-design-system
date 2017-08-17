@@ -26,6 +26,7 @@ export default styleable(css)(props =>
       <Link href="/components/button">Button</Link>
       <Link href="/components/card">Card</Link>
       <Link href="/components/icon">Icon</Link>
+      <Link href="/components/row">Row</Link>
       <Link href="/components/tabs">Tab</Link>
       <Link href="/components/text-styles">Text</Link>
     </Group>
