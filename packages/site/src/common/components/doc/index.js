@@ -3,6 +3,7 @@ import '../example/codemirror-theme-monokai-sublime.css'
 import Markdown from 'react-markdown'
 import React from 'react'
 import styleable from 'react-styleable'
+import { Redirect } from 'react-router-dom'
 
 import css from './index.module.css'
 
@@ -15,6 +16,11 @@ if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
 }
 
 class Doc extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+    this.handleLinkClick = this.handleLinkClick.bind(this)
+  }
   componentDidMount() {
     if (codemirrorLoaded) {
       document
@@ -28,14 +34,31 @@ class Doc extends React.Component {
           })
         )
     }
+
+    this.links = document.querySelectorAll('.' + this.props.css.root + ' a')
+
+    this.links.forEach(a => a.addEventListener('click', this.handleLinkClick))
   }
-  shouldComponentUpdate() {
-    return false
+  componentWillUnmount() {
+    this.links.forEach(a =>
+      a.removeEventListener('click', this.handleLinkClick)
+    )
+  }
+  shouldComponentUpdate(_, nextState) {
+    return this.state.newHref !== nextState.newHref
+  }
+  handleLinkClick(evt) {
+    if (/http/.test(evt.target.href)) return
+    evt.preventDefault()
+    this.setState(_ => ({ newHref: evt.target.getAttribute('href') }))
   }
   render() {
-    return (
-      <Markdown className={this.props.css.root} source={this.props.children} />
-    )
+    return this.state.newHref
+      ? <Redirect to={this.state.newHref} />
+      : <Markdown
+          className={this.props.css.root}
+          source={this.props.children}
+        />
   }
 }
 export default styleable(css)(Doc)
