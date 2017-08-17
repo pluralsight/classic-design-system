@@ -10,47 +10,26 @@ export default _ =>
     <Doc>{`
 ## Recommended Usage
 
-Use npm. Use webpack@2+.  Follow these streamlined install instructions. Fun. Profit.
+Use npm. Follow these streamlined install instructions. Fun. Profit.
 
-## Step 0: Build
+## Step 0: Use Components
 
-This assumes have build config for your app.  What follows is the additional config need to support the Design System.
-
-\`\`\`bash
-npm install @pluralsight/ps-design-system-build --save-dev
-\`\`\`
-
-Then in your \`webpack.config.js\`, decorate your config:
-
-\`\`\`js
-const { decorateConfig } = require('@pluralsight/ps-design-system-build/webpack')
-module.exports = decorateConfig({
-  // ... your project's normal webpack config
-}, {
-  packageJson: require('./package.json')
-})
-\`\`\`
-
-For more details on the build decorator, see the [webpack build docs](/build/webpack).
-
-For custom alternatives, see the [custom build docs](/build/custom).
-
-## Step 1: Core
-
-\`\`\`bash
-npm install @pluralsight/ps-design-system-core --save-dev
-\`\`\`
-
-For core usage details, see the [core usage docs](/core/usage).
-
-## Step 2: Components
-
-Each component is installed separately.  Find and use what you need.  For example:
+Each component is installed separately.  JavaScript is prebuilt as Node modules.  Assets are inlined.  Find and use what you need.  For example:
 
 \`\`\`bash
 npm install @pluralsight/ps-design-system-button --save-dev
 \`\`\`
 
-For full, working examples, see the [examples on github](https://github.com/pluralsight/design-system/tree/master/examples).
+See individual reference pages for usage examples.
+
+## Step 1: Use Core
+
+Core design elements are represented as a set of variables.  We recommend you use either the JavaScript variables or the CSS variables.
+
+For build support, consult the [CSS Build docs](/install/css).
+
+For usage details, see the [Core Usage docs](/core/usage).
+
+For full, working project examples, see the [examples on github](https://github.com/pluralsight/design-system/tree/master/examples).
 `}</Doc>
   </Chrome>
