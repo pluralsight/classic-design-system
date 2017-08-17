@@ -111,7 +111,8 @@ module.exports = {
   },
   plugins,
   devServer: {
-    port: 1337
+    port: 1337,
+    historyApiFallback: true
   },
   resolveLoader: {
     alias: {
