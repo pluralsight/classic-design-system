@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.1.0"></a>
+# [7.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.0.8...@pluralsight/ps-design-system-site@7.1.0) (2017-08-17)
+
+
+### Bug Fixes
+
+* **site:** sidenav subtitle vert over-spacing ([ea306ab](https://github.com/pluralsight/design-system/commit/ea306ab))
+
+
+### Features
+
+* **site:** custom icon example ([1b9a636](https://github.com/pluralsight/design-system/commit/1b9a636))
+
+
+
+
 <a name="7.0.8"></a>
 ## [7.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.0.7...@pluralsight/ps-design-system-site@7.0.8) (2017-08-14)
 
