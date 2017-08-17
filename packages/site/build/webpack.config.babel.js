@@ -22,6 +22,7 @@ if (isProd) {
     new HtmlWebpackPlugin({
       inject: false,
       template: htmlWebpackTemplate,
+      title: 'Pluralsight Design System',
       appMountId: 'app'
     })
   )
