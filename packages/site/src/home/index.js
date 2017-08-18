@@ -79,9 +79,6 @@ const Home = props =>
       >
         View on Github
       </Action>
-      <Action css={props.css} href="https://www.sketchapp.com/">
-        Download the Sketch UI Kit
-      </Action>
     </Content>
   </div>
 
