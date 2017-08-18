@@ -1,0 +1,37 @@
+{
+  "name": "@pluralsight/ps-design-system-badge",
+  "version": "1.0.0",
+  "description": "Design System component for badge ui",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build:watch": "npm run build -- --watch",
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "test": "jest",
+    "test:watch": "npm run test -- --watchAll",
+    "test:updateSnapshot": "npm run test -- --updateSnapshot"
+  },
+  "keywords": [],
+  "author": "jaketrent",
+  "license": "Apache-2.0",
+  "repository": "pluralsight/design-system",
+  "peerDependencies": {
+    "@pluralsight/ps-design-system-normalize": "^3.0.24",
+    "glamor": "^2.20.0",
+    "react": ">=0.15.0 < 16.0.0"
+  },
+  "dependencies": {
+    "@pluralsight/ps-design-system-core": "^2.4.2",
+    "glamorous": "^4.1.0",
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "@storybook/addon-backgrounds": "^3.0.0",
+    "@storybook/addon-storyshots": "^3.2.4",
+    "@storybook/react": "^3.2.3",
+    "babel-cli": "^6.24.1",
+    "jest": "^20.0.4"
+  }
+}
