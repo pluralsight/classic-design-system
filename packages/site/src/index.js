@@ -11,12 +11,14 @@ import Install from './install'
 import './index.module.css'
 
 const routes = (
-  <Switch>
-    <Route exact path="/" component={Home} />
-    <Route exact path="/install" component={Install} />
-    <Route path="/core/:coreId/" component={CoreDetail} />
-    <Route path="/components/:componentId/" component={ComponentDetail} />
-  </Switch>
+  <Chrome>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/install" component={Install} />
+      <Route path="/core/:coreId/" component={CoreDetail} />
+      <Route path="/components/:componentId/" component={ComponentDetail} />
+    </Switch>
+  </Chrome>
 )
 
 const Html = props =>

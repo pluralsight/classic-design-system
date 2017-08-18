@@ -1,9 +1,8 @@
 import React from 'react'
-import Chrome from '../layouts/chrome'
 import { Code, Doc, Heading, P } from '../common/components'
 
 export default _ =>
-  <Chrome title="CSS Build">
+  <div>
     <Heading size="xxLarge">
       <h1>CSS Build</h1>
     </Heading>
@@ -99,4 +98,4 @@ For those not wanting to deal with a build, a CSS utility class approach is avai
 
 For full working examples of some custom configurations, please see the [examples on github](https://github.com/pluralsight/design-system/tree/master/examples).
 `}</Doc>
-  </Chrome>
+  </div>

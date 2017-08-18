@@ -11,12 +11,6 @@
 .main {
   background: var(--psColorsWhite);
 }
-.content {
-  margin: 0 auto;
-  width: 100%;
-  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge)
-    var(--psLayoutSpacingLarge) var(--psLayoutSpacingLarge);
-}
 
 @media screen and (min-width: 769px) {
   .page {
@@ -28,9 +22,5 @@
   .main {
     flex: 1;
     border-left: 1px solid var(--psColorsGray01);
-  }
-  .content {
-    max-width: 900px;
-    min-width: 300px;
   }
 }

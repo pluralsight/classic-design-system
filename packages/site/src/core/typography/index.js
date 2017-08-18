@@ -5,7 +5,7 @@ import FontSize from './font-size'
 import FontWeight from './font-weight'
 import { Code, Heading, P } from '../../common/components'
 
-export default props =>
+export default _ =>
   <div>
     <Heading size="xxLarge"><h1>Typography</h1></Heading>
 

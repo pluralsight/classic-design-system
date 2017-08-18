@@ -1,9 +1,7 @@
 import React from 'react'
-import styleable from 'react-styleable'
 import Tab from '@pluralsight/ps-design-system-tab/react'
 
 import { Code, Example, Heading, P } from '../../common/components'
-import css from './index.module.css'
 
 const tabList = `
 <Tab.List>
@@ -15,19 +13,16 @@ const tabList = `
 </Tab.List>
 `
 
-export default styleable(css)(props => {
-  return (
-    <div className={props.css.root}>
-      <Heading size="xxLarge">
-        <h1>Tabs</h1>
-      </Heading>
+export default _ =>
+  <div>
+    <Heading size="xxLarge">
+      <h1>Tabs</h1>
+    </Heading>
 
-      <P>
-        Tabs are a navigational element used to show and pivot between related
-        subsections of an interface.
-      </P>
+    <P>
+      Tabs are a navigational element used to show and pivot between related
+      subsections of an interface.
+    </P>
 
-      <Example.React orient="vertical" codes={[tabList]} />
-    </div>
-  )
-})
+    <Example.React orient="vertical" codes={[tabList]} />
+  </div>

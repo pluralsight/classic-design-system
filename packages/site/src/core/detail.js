@@ -1,7 +1,7 @@
 import React from 'react'
 
 import ColorDoc from './color'
-import Chrome from '../layouts/chrome'
+import { Content } from '../common/components'
 import BuildDoc from './build'
 import SpacingDoc from './spacing'
 import TypographyDoc from './typography'
@@ -16,6 +16,6 @@ const docs = {
 }
 
 export default props =>
-  <Chrome title={props.match.params.coreId}>
+  <Content title={props.match.params.coreId}>
     {docs[props.match.params.coreId]}
-  </Chrome>
+  </Content>

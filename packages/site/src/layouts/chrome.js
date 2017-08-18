@@ -25,10 +25,7 @@ export default styleable(css)(props =>
         <SideNav />
       </div>
       <main className={props.css.main}>
-        {props.fullWidthContent}
-        <div className={props.css.content}>
-          {props.children}
-        </div>
+        {props.children}
       </main>
     </div>
   </div>

@@ -3,7 +3,7 @@ import React from 'react'
 import 'code-example-dependencies-loader!'
 import ButtonDoc from './button'
 import CardDoc from './card'
-import Chrome from '../layouts/chrome'
+import { Content } from '../common/components'
 import IconDoc from './icon'
 import RowDoc from './row'
 import TabsDoc from './tabs'
@@ -19,6 +19,6 @@ const docs = {
 }
 
 export default props =>
-  <Chrome title={props.match.params.componentId}>
+  <Content title={props.match.params.componentId}>
     {docs[props.match.params.componentId]}
-  </Chrome>
+  </Content>

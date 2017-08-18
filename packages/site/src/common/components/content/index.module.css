@@ -1,0 +1,15 @@
+@import "@pluralsight/ps-design-system-core";
+
+.content {
+  margin: 0 auto;
+  width: 100%;
+  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge)
+    var(--psLayoutSpacingLarge) var(--psLayoutSpacingLarge);
+}
+
+@media screen and (min-width: 769px) {
+  .content {
+    max-width: 900px;
+    min-width: 300px;
+  }
+}

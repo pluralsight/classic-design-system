@@ -17,5 +17,4 @@ export default _ =>
     <BodyText />
 
     <Lists />
-
   </div>

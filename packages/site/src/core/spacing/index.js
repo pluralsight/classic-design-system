@@ -4,7 +4,7 @@ import { Heading, P } from '../../common/components'
 import SpacingIncrements from './increments'
 import IndividualSpacing from './individual'
 
-export default props =>
+export default _ =>
   <div>
     <Heading size="xxLarge"><h1>Spacing</h1></Heading>
 
