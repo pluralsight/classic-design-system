@@ -1,0 +1,7 @@
+.root {
+  margin-top: -10vw;
+  pointer-events: none;
+}
+.robot {
+  width: 100%;
+}

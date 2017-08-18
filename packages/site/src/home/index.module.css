@@ -1,8 +1,9 @@
 @import "@pluralsight/ps-design-system-core";
 
 .header {
-  background: linear-gradient(to bottom, #2bb2e3, #137bc2);
-  height: 200px;
+  background: linear-gradient(to top, #2bb2e3, #137bc2);
+  background: linear-gradient(to top, #00adfd, #137bc2);
+  height: 178px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -26,7 +27,7 @@
 }
 
 .point {
-  margin-bottom: 84px;
+  margin-bottom: 44px;
 }
 .pointTitle {
 }
@@ -35,13 +36,23 @@
   display: block;
   margin-bottom: 44px;
 }
+.robotContainer {
+  padding: 0 var(--psLayoutSpacingLarge) var(--psLayoutSpacingLarge)
+    var(--psLayoutSpacingLarge);
+}
 
 @media screen and (min-width: 769px) {
-  .header {
-    height: 428px;
-  }
   .title {
     max-width: 900px;
     min-width: 300px;
+  }
+  .points {
+    display: flex;
+  }
+  .point {
+    margin-bottom: 24px;
+  }
+  .point + .point {
+    margin-left: var(--psLayoutSpacingLarge);
   }
 }
