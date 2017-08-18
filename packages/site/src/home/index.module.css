@@ -2,7 +2,6 @@
 
 .header {
   background: linear-gradient(to top, #2bb2e3, #137bc2);
-  background: linear-gradient(to top, #00adfd, #137bc2);
   height: 178px;
   display: flex;
   flex-direction: column;
