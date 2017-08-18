@@ -1,6 +1,7 @@
 import React from 'react'
 
 import 'code-example-dependencies-loader!'
+import BadgeDoc from './badge'
 import ButtonDoc from './button'
 import CardDoc from './card'
 import { Content } from '../common/components'
@@ -10,6 +11,7 @@ import TabsDoc from './tabs'
 import TextStylesDoc from './text-styles'
 
 const docs = {
+  badge: <BadgeDoc />,
   button: <ButtonDoc />,
   card: <CardDoc />,
   icon: <IconDoc />,

@@ -23,6 +23,7 @@ export default styleable(css)(props =>
     </Group>
     <Group>
       <GroupTitle>COMPONENTS</GroupTitle>
+      <Link href="/components/badge">Badge</Link>
       <Link href="/components/button">Button</Link>
       <Link href="/components/card">Card</Link>
       <Link href="/components/icon">Icon</Link>

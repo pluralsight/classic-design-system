@@ -15,6 +15,7 @@
   "author": "jaketrent",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@pluralsight/ps-design-system-badge": "^1.1.0",
     "@pluralsight/ps-design-system-button": "^8.0.1",
     "@pluralsight/ps-design-system-card": "^5.0.1",
     "@pluralsight/ps-design-system-core": "^2.4.2",
