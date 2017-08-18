@@ -11,6 +11,7 @@ function getPackageAbbreviations() {
 module.exports = {
   extends: ['@commitlint/config-angular'],
   rules: {
+    lang: [0],
     'scope-enum': _ => [2, 'always', getPackageAbbreviations()]
   }
 }
