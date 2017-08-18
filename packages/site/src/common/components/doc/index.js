@@ -48,13 +48,15 @@ class Doc extends React.Component {
     return this.state.newHref !== nextState.newHref
   }
   handleLinkClick(evt) {
-    if (/http/.test(evt.target.href)) return
+    const href = evt.target.getAttribute('href')
+    if (/http/.test(href)) return
+
     evt.preventDefault()
-    this.setState(_ => ({ newHref: evt.target.getAttribute('href') }))
+    this.setState(_ => ({ newHref: href }))
   }
   render() {
     return this.state.newHref
-      ? <Redirect to={this.state.newHref} />
+      ? <Redirect push exact to={this.state.newHref} />
       : <Markdown
           className={this.props.css.root}
           source={this.props.children}
