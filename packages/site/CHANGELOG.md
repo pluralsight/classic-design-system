@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.2.0"></a>
+# [7.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.1.1...@pluralsight/ps-design-system-site@7.2.0) (2017-08-18)
+
+
+### Bug Fixes
+
+* **site:** copy-paste from readonly code snippets ([e15d148](https://github.com/pluralsight/design-system/commit/e15d148)), closes [#69](https://github.com/pluralsight/design-system/issues/69)
+* **site:** github/issues link on icons docs ([cb87775](https://github.com/pluralsight/design-system/commit/cb87775))
+* **site:** http link detection and push instead of replace state ([1e22d84](https://github.com/pluralsight/design-system/commit/1e22d84))
+* **site:** robot margin overlow ([003bc70](https://github.com/pluralsight/design-system/commit/003bc70))
+
+
+### Features
+
+* **site:** add robot to landing page ([ae94704](https://github.com/pluralsight/design-system/commit/ae94704))
+* **site:** add row reference ([5f715fc](https://github.com/pluralsight/design-system/commit/5f715fc))
+* **site:** robot bg ([60a8da5](https://github.com/pluralsight/design-system/commit/60a8da5))
+
+
+### Reverts
+
+* **site:** to hotter landing page gradient bg ([c395978](https://github.com/pluralsight/design-system/commit/c395978))
+
+
+
+
 <a name="7.1.0"></a>
 # [7.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.0.8...@pluralsight/ps-design-system-site@7.1.0) (2017-08-17)
 
