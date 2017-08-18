@@ -1,4 +1,4 @@
-import { StaticRouter, Route, BrowserRouter } from 'react-router-dom'
+import { Switch, StaticRouter, Route, BrowserRouter } from 'react-router-dom'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import ReactDOMServer from 'react-dom/server'
@@ -8,17 +8,15 @@ import ComponentDetail from './components/detail'
 import CoreDetail from './core/detail'
 import Home from './home'
 import Install from './install'
-import InstallCss from './install/css'
 import './index.module.css'
 
 const routes = (
-  <div>
+  <Switch>
     <Route exact path="/" component={Home} />
     <Route exact path="/install" component={Install} />
-    <Route exact path="/install/css" component={InstallCss} />
     <Route path="/core/:coreId/" component={CoreDetail} />
     <Route path="/components/:componentId/" component={ComponentDetail} />
-  </div>
+  </Switch>
 )
 
 const Html = props =>

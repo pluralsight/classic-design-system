@@ -18,7 +18,9 @@ npm install @pluralsight/ps-design-system-core --save-dev
 
 Core design elements are represented as a set of variables.  We recommend you use either the JavaScript variables or the CSS variables.
 
-For build support, consult the [CSS Build docs](/install/css).
+See individual reference pages for usage examples.
+
+For build support, consult the [CSS Build docs](/core/build).
 
 For usage details, see the [Core Usage docs](/core/usage).
 
