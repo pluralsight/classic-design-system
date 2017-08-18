@@ -8,17 +8,7 @@ export default _ =>
     </Heading>
     <Doc>{`
 
-## Core Lib Purpose
-
-The \`@pluralsight/ps-design-system-core\` library's main purpose is to collect and provide to you Core design elements of the Design System.
-
-These elements are exposed as CSS variables.
-
-## Core Installation
-
-\`\`\`bash
-npm install @pluralsight/ps-design-system-core --save-dev
-\`\`\`
+After, [installation](/install), use in the code flavor of your choice.
 
 ## Import JavaScript
 

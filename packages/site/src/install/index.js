@@ -12,7 +12,7 @@ export default _ =>
 
 Use npm. Follow these streamlined install instructions. Fun. Profit.
 
-## Step 0: Use Components
+## Use Components
 
 Each component is installed separately.  JavaScript is prebuilt as Node modules.  Assets are inlined.  Find and use what you need.  For example:
 
@@ -22,7 +22,13 @@ npm install @pluralsight/ps-design-system-button --save-dev
 
 See individual reference pages for usage examples.
 
-## Step 1: Use Core
+## Use Core
+
+First install the dependency:
+
+\`\`\`bash
+npm install @pluralsight/ps-design-system-core --save-dev
+\`\`\`
 
 Core design elements are represented as a set of variables.  We recommend you use either the JavaScript variables or the CSS variables.
 
