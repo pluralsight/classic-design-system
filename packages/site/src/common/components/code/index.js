@@ -18,7 +18,7 @@ import css from './index.module.css'
 /* TODO: rename CodeBlock, do inline as Code*/
 const Code = props => {
   const options = {
-    readOnly: 'nocursor',
+    readOnly: true,
     theme: 'monokai-sublime'
   }
   if (modeLoaded) options.mode = props.lang

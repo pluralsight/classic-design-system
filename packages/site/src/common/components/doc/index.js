@@ -29,7 +29,7 @@ class Doc extends React.Component {
           CodeMirror(el => node.parentNode.replaceChild(el, node), {
             mode: 'javascript',
             theme: 'monokai-sublime',
-            readOnly: 'nocursor',
+            readOnly: true,
             value: node.innerText.trim()
           })
         )

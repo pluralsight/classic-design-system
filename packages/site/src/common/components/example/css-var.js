@@ -21,7 +21,7 @@ class CssVarExample extends React.Component {
   }
   renderSrc() {
     const options = {
-      readOnly: 'nocursor',
+      readOnly: true,
       theme: 'monokai-sublime'
     }
     if (modeLoaded) options.mode = 'css'
