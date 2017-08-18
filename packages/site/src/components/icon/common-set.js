@@ -13,7 +13,7 @@ export default styleable(css)(props => {
       </Heading>
       <P>
         Current icon set.{' '}
-        <Link href="https://github.com/pluralsight/design-system/issues)">
+        <Link href="https://github.com/pluralsight/design-system/issues">
           Submit new icons through Github
         </Link>.
       </P>
