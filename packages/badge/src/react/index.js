@@ -27,7 +27,8 @@ const Badge = glamorous.div(
     fontWeight: core.type.fontWeightMedium,
     fontSize: core.type.fontSizeXSmall,
     lineHeight: core.type.lineHeightStandard,
-    borderRadius: '2px'
+    borderRadius: '2px',
+    textTransform: 'uppercase'
   },
   ({ color, appearance }) =>
     appearance === appearances.stroke
