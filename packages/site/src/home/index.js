@@ -85,9 +85,7 @@ const Home = props =>
         View on Github
       </Action>
     </Content>
-    <div className={props.css.robotContainer}>
-      <Robot />
-    </div>
+    <Robot />
   </div>
 
 export default styleable(css)(Home)

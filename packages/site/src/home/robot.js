@@ -2342,5 +2342,6 @@ export default styleable(css)(props =>
         </g>
       </g>
     </svg>
+    <div className={props.css.gradient} />
   </div>
 )

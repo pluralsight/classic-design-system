@@ -35,10 +35,6 @@
   display: block;
   margin-bottom: 44px;
 }
-.robotContainer {
-  padding: 0 var(--psLayoutSpacingLarge) var(--psLayoutSpacingLarge)
-    var(--psLayoutSpacingLarge);
-}
 
 @media screen and (min-width: 769px) {
   .title {
