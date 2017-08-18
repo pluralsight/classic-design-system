@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@1.1.0...@pluralsight/ps-design-system-badge@1.2.0) (2017-08-18)
+
+
+### Features
+
+* **badge:** all caps text ([50d686d](https://github.com/pluralsight/design-system/commit/50d686d))
+
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2017-08-18)
 

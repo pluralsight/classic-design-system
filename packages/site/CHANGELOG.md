@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.3.0"></a>
+# [7.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.2.0...@pluralsight/ps-design-system-site@7.3.0) (2017-08-18)
+
+
+### Features
+
+* **site:** add beta badge to badge and row page ([841125e](https://github.com/pluralsight/design-system/commit/841125e))
+* **site:** badge example page ([d9a5944](https://github.com/pluralsight/design-system/commit/d9a5944))
+
+
+
+
 <a name="7.2.0"></a>
 # [7.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.1.1...@pluralsight/ps-design-system-site@7.2.0) (2017-08-18)
 
