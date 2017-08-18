@@ -22,7 +22,7 @@ export default _ =>
 
     <P>Include a React component in your project:</P>
     <Code language="javascript">
-      import Button from '@pluralsight/ps-design-system-badge/react'
+      import Badge from '@pluralsight/ps-design-system-badge/react'
     </Code>
 
     <Heading size="large">
@@ -37,7 +37,7 @@ export default _ =>
     />
 
     <Heading size="large">
-      <h2>Button colors</h2>
+      <h2>Colors</h2>
     </Heading>
     <P>
       Colors come from the Design System. Semantics come from your heart.
