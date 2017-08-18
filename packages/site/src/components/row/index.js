@@ -3,7 +3,14 @@ import Row from '@pluralsight/ps-design-system-row/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 
-import { Code, Example, Heading, Link, P } from '../../common/components'
+import {
+  Code,
+  Example,
+  Heading,
+  Link,
+  P,
+  PageHeading
+} from '../../common/components'
 import Stack from './stack'
 
 const defaultRow = (
@@ -15,9 +22,7 @@ const defaultRow = (
 
 export default _ =>
   <div>
-    <Heading size="xxLarge">
-      <h1>Row</h1>
-    </Heading>
+    <PageHeading beta>Row</PageHeading>
 
     <P>Install the component dependency:</P>
     <Code language="bash">

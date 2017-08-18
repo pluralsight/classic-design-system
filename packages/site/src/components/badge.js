@@ -1,14 +1,19 @@
 import React from 'react'
 
-import { Code, Example, Heading, Link, P } from '../common/components'
+import {
+  Code,
+  Example,
+  Heading,
+  Link,
+  P,
+  PageHeading
+} from '../common/components'
 
 import Badge from '@pluralsight/ps-design-system-badge/react'
 
 export default _ =>
   <div>
-    <Heading size="xxLarge">
-      <h1>Badge</h1>
-    </Heading>
+    <PageHeading beta>Badge</PageHeading>
 
     <P>Install the component dependency:</P>
     <Code language="bash">
