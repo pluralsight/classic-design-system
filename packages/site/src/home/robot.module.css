@@ -6,7 +6,7 @@
   pointer-events: none;
 }
 .robot {
-  width: 100%;
+  width: calc(100% - (2 * var(--psLayoutSpacingLarge)));
   position: relative;
   margin: 0 var(--psLayoutSpacingLarge) var(--psLayoutSpacingLarge)
     var(--psLayoutSpacingLarge);
