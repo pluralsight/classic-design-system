@@ -37,7 +37,9 @@ const Badge = glamorous.div(
           border: `1px solid ${colorHexMap[color].stroke}`
         }
       : {
-          color: core.colors.white,
+          color: color === colors.yellow
+            ? core.colors.black
+            : core.colors.white,
           backgroundColor: colorHexMap[color].bg
         }
 )
