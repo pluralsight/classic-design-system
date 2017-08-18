@@ -111,7 +111,7 @@ const ActionBar = glamorous.div(
   ({ size }) =>
     ({
       [sizes.small]: { paddingTop: core.layout.spacingSmall },
-      [sizes.medium]: { paddingTop: core.layout.spacingLarge }
+      [sizes.medium]: { paddingTop: core.layout.spacingMedium }
     }[size]),
   styleActionBarFullOverlay,
   styleActionBarActionBarVisible
@@ -228,25 +228,29 @@ const formatActionBarWidth = ({ actionBar }) =>
 const Words = glamorous.div({ flex: 1 }, props => ({
   maxWidth: `calc(100% - ${formatImageWidth(props)} - ${formatActionBarWidth(
     props
-  )})`
+  )})`,
+  display: 'flex',
+  flexDirection: 'column',
+  alignSelf: 'center'
 }))
 
 const styleTitleSize = ({ size }) =>
   ({
     [sizes.small]: {
+      // marginTop: core.layout.spacingTiny,
       fontSize: core.type.fontSizeSmall,
-      lineHeight: core.lineHeightTight
+      lineHeight: core.type.lineHeightTight
     },
     [sizes.medium]: {
+      // marginTop: core.layout.spacingSmall,
       fontSize: core.type.fontSizeMedium,
-      lineHeight: core.lineHeightStandard
+      lineHeight: core.type.lineHeightStandard
     }
   }[size])
 
 const Title = glamorous.div(
   {
     display: 'block',
-    marginTop: core.layout.spacingSmall,
     fontWeight: core.type.fontWeightMedium,
     color: core.colors.white,
     textAlign: 'left'
@@ -293,9 +297,12 @@ Text.displayName = 'Row.Text'
 
 const styleMetadataSize = ({ size }) =>
   ({
-    [sizes.small]: { fontSize: core.type.fontSizeXSmall },
-    [sizes.medium]: { fontSize: core.type.fontSizeXSmall },
-    [sizes.large]: { fontSize: core.type.fontSizeSmall }
+    [sizes.small]: {
+      fontSize: core.type.fontSizeXSmall,
+      paddingTop: 0 },
+    [sizes.medium]: {
+      fontSize: core.type.fontSizeXSmall,
+      paddingTop: core.layout.spacingTiny }
   }[size])
 
 const Metadata = glamorous.div(
@@ -305,7 +312,8 @@ const Metadata = glamorous.div(
     fontWeight: core.type.fontWeightBook,
     lineHeight: core.type.lineHeightTight,
     color: core.colors.gray02,
-    maxWidth: '100%'
+    maxWidth: '100%',
+    paddingTop: core.layout.spacingTiny
   },
   styleMetadataSize
 )
