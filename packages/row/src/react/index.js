@@ -225,13 +225,15 @@ const formatActionBarWidth = ({ actionBar }) =>
     ? `(${actionBar.length} * ${actionBarActionWidth} + ${actionBar.length} * ${actionBarActionMarginLeft})`
     : '0px'
 
-const Words = glamorous.div({ flex: 1 }, props => ({
+const Words = glamorous.div({
+    display: 'flex',
+    flex: 1,
+    flexDirection: 'column',
+    alignSelf: 'center'
+  }, props => ({
   maxWidth: `calc(100% - ${formatImageWidth(props)} - ${formatActionBarWidth(
     props
-  )})`,
-  display: 'flex',
-  flexDirection: 'column',
-  alignSelf: 'center'
+  )})`
 }))
 
 const styleTitleSize = ({ size }) =>
