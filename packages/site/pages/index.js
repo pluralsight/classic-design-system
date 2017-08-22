@@ -1,10 +1,8 @@
 import Button from '@pluralsight/ps-design-system-button/react'
 import core from '@pluralsight/ps-design-system-core'
-import Chrome from '../src/ui/chrome'
 import Robot from '../src/ui/robot'
-import styleable from 'react-styleable'
 
-import { Content, Heading, Link, P, TextLink } from '../src/ui'
+import { Chrome, Content, Heading, Link, P, TextLink } from '../src/ui'
 
 const Point = props =>
   <div className="point">
