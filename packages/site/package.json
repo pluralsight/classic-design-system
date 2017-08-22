@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack -p --config ./build/webpack.config.babel.js",
-    "start": "webpack-dev-server --config ./build/webpack.config.babel.js"
+    "start": "next"
   },
   "author": "jaketrent",
   "license": "Apache-2.0",
@@ -28,7 +28,9 @@
     "@pluralsight/ps-design-system-util": "^1.1.40",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.4.0",
+    "babel-plugin-syntax-export-extensions": "^6.13.0",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
@@ -50,6 +52,7 @@
     "koa": "^2.2.0",
     "koa-mount": "^3.0.0",
     "koa-static": "^4.0.1",
+    "next": "^3.0.6",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.5",
