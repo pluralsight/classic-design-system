@@ -172,7 +172,7 @@ const renderActionBar = props =>
             {React.cloneElement(action, {
               ...glamor.css({
                 ':hover, :active': {
-                  background: 'none',
+                  background: 'none !important',
                   '> svg': {
                     fill: core.colors.white
                   }
