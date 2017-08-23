@@ -190,8 +190,8 @@ export default _ =>
       <NavLink href="/components/card">Card</NavLink>
       <NavLink href="/components/icon">Icon</NavLink>
       <NavLink href="/components/row">Row</NavLink>
-      <NavLink href="/components/tabs">Tab</NavLink>
-      <NavLink href="/components/text-styles">Text</NavLink>
+      <NavLink href="/components/tab">Tab</NavLink>
+      <NavLink href="/components/text">Text</NavLink>
     </Group>
     <style jsx>{`
       .root {

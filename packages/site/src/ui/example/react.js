@@ -188,6 +188,8 @@ class ReactExample extends React.Component {
             height: auto;
           }
         `}</style>
+        <CodeMirrorCss />
+        <CodeMirrorTheme />
       </div>
     )
   }
