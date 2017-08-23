@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.0.2"></a>
+## [5.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@5.0.1...@pluralsight/ps-design-system-card@5.0.2) (2017-08-23)
+
+
+### Bug Fixes
+
+* **card:** make button seriously not have a background on hover ([49b3c95](https://github.com/pluralsight/design-system/commit/49b3c95)), closes [#71](https://github.com/pluralsight/design-system/issues/71)
+* **card:** show actionBar background when locked visible with fullOverlay ([02eef5e](https://github.com/pluralsight/design-system/commit/02eef5e))
+
+
+
+
 <a name="5.0.1"></a>
 ## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@5.0.0...@pluralsight/ps-design-system-card@5.0.1) (2017-08-14)
 

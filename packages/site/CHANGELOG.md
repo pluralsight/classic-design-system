@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.3.2"></a>
+## [7.3.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.3.1...@pluralsight/ps-design-system-site@7.3.2) (2017-08-23)
+
+
+
+
 <a name="7.3.1"></a>
 ## [7.3.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.3.0...@pluralsight/ps-design-system-site@7.3.1) (2017-08-18)
 
