@@ -124,8 +124,8 @@ const renderFullOverlay = props =>
       </FullOverlay>
     : null
 
-const styleActionBarFullOverlay = ({ fullOverlay }) =>
-  fullOverlay ? { background: 'none' } : {}
+const styleActionBarFullOverlay = ({ fullOverlay, actionBarVisible }) =>
+  fullOverlay && !actionBarVisible ? { background: 'none' } : {}
 
 const styleActionBarActionBarVisible = ({ actionBarVisible }) =>
   actionBarVisible ? { opacity: 1 } : {}
@@ -165,6 +165,7 @@ const renderActionBar = props =>
     ? <ActionBar
         actionBarVisible={props.actionBarVisible}
         fullOverlay={props.fullOverlay}
+        fullOverlayVisible={props.fullOverlayVisible}
       >
         {React.Children.map(props.actionBar, (action, i) =>
           <ActionBarAction>
