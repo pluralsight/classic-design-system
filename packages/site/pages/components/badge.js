@@ -31,6 +31,7 @@ export default _ =>
       </Heading>
       <P>In either solid or stroked styles.</P>
       <Example.React
+        includes={{ Badge }}
         codes={[
           `<Badge>Badge</Badge>`,
           `<Badge appearance="stroke">Badge</Badge>`
@@ -44,6 +45,7 @@ export default _ =>
         Colors come from the Design System. Semantics come from your heart.
       </P>
       <Example.React
+        includes={{ Badge }}
         codes={Object.keys(Badge.colors).map(
           color => `<Badge color={Badge.colors.${color}}>Badge</Badge>`
         )}

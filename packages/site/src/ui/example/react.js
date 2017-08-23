@@ -30,6 +30,43 @@ const compileSrc = src =>
 
 const formatSrc = code => code.trim()
 
+const OutputDecorationGlobalStyles = _ =>
+  <style global jsx>{`
+    .output {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: ${core.layout.spacingLarge};
+      background: ${core.colors.gray06};
+      overflow: hidden;
+    }
+    .outputChild {
+      margin: ${core.layout.spacingLarge} 0 0 0;
+      color: ${core.colors.white};
+    }
+    .outputChild:first-child {
+      margin-top: 0;
+    }
+    @media screen and (min-width: 769px) {
+      .outputHorizontal {
+        flex-direction: row;
+        align-items: center;
+      }
+      .outputVertical {
+        align-items: flex-start;
+      }
+      .outputChild + .outputChild {
+        margin: 0 0 0 98px;
+      }
+      .outputVertical .outputChild {
+        width: 100%;
+      }
+      .outputVertical .outputChild + .outputChild {
+        margin: 45px 0 0 0;
+      }
+    }
+  `}</style>
+
 const decorateSrc = (props, codes) => {
   let decorated = `<div className="${getOutputClassName(props)}">`
 
@@ -40,6 +77,13 @@ const decorateSrc = (props, codes) => {
   decorated += '</div>'
 
   return decorated
+}
+
+const makeGlobalsAvailable = includes => {
+  window.React = require('react')
+  Object.keys(includes).forEach(name => {
+    window[name] = includes[name]
+  })
 }
 
 const evalSrc = compiled => eval(compiled)
@@ -79,6 +123,8 @@ class ReactExample extends React.Component {
   }
   renderError() {}
   renderOutput() {
+    if (typeof window === 'undefined') return
+
     unmountOutput(this.outputEl)
     this.setState(
       _ => ({ error: null }),
@@ -86,6 +132,7 @@ class ReactExample extends React.Component {
         try {
           const src = decorateSrc(this.props, this.state.codes)
           const compiled = compileSrc(src)
+          makeGlobalsAvailable(this.props.includes)
           const evaled = evalSrc(compiled)
           renderOutput(evaled, this.outputEl)
         } catch (err) {
@@ -163,22 +210,8 @@ class ReactExample extends React.Component {
             {this.renderSrc()}
           </div>
         </div>
+        <OutputDecorationGlobalStyles />
         <style jsx>{`
-          .output {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            padding: ${core.layout.spacingLarge};
-            background: ${core.colors.gray06};
-            overflow: hidden;
-          }
-          .outputChild {
-            margin: ${core.layout.spacingLarge} 0 0 0;
-            color: ${core.colors.white};
-          }
-          .outputChild:first-child {
-            margin-top: 0;
-          }
           .error {
             background: ${core.colors.red};
             color: ${core.colors.white};
@@ -195,24 +228,6 @@ class ReactExample extends React.Component {
           .html, .react {
             background: none;
             padding: 0;
-          }
-          @media screen and (min-width: 769px) {
-            .outputHorizontal {
-              flex-direction: row;
-              align-items: center;
-            }
-            .outputVertical {
-              align-items: flex-start;
-            }
-            .outputChild + .outputChild {
-              margin: 0 0 0 98px;
-            }
-            .outputVertical .outputChild {
-              width: 100%;
-            }
-            .outputVertical .outputChild + .outputChild {
-              margin: 45px 0 0 0;
-            }
           }
         `}</style>
       </div>
