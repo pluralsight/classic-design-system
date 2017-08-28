@@ -1,8 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import Markdown from 'react-markdown'
 import React from 'react'
-import styleable from 'react-styleable'
-import { Redirect } from 'react-router-dom'
+import Router from 'next/router'
 
 import CodeMirrorCss from '../../vendor/codemirror-css'
 import CodeMirrorTheme from '../../vendor/codemirror-theme-monokai-sublime-css'
@@ -18,7 +17,6 @@ if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
 export default class Doc extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {}
     this.handleLinkClick = this.handleLinkClick.bind(this)
   }
   componentDidMount() {
@@ -41,24 +39,20 @@ export default class Doc extends React.Component {
       a.removeEventListener('click', this.handleLinkClick)
     )
   }
-  shouldComponentUpdate(_, nextState) {
-    return this.state.newHref !== nextState.newHref
-  }
   handleLinkClick(evt) {
     const href = evt.target.getAttribute('href')
     if (/http/.test(href)) return
 
     evt.preventDefault()
-    this.setState(_ => ({ newHref: href }))
+    Router.push(href)
   }
   render() {
-    return this.state.newHref
-      ? <Redirect push exact to={this.state.newHref} />
-      : <div className="markdown">
-          <CodeMirrorCss />
-          <CodeMirrorTheme />
-          <Markdown source={this.props.children} />
-          <style jsx>{`
+    return (
+      <div className="markdown">
+        <CodeMirrorCss />
+        <CodeMirrorTheme />
+        <Markdown source={this.props.children} />
+        <style jsx>{`
             /* NOTE: this is the tradeoff for being able to write markdown docs.
   We get the nice flow of prose in markdown, but we have to deal with
   styling the generated HTML by duplicating component styles (like heading)
@@ -76,14 +70,14 @@ export default class Doc extends React.Component {
               letter-spacing: ${core.type.letterSpacingLarge};
               font-weight: ${core.type.fontWeightBook};
               margin: ${core.layout.spacingXLarge} 0 ${core.layout
-            .spacingSmall} 0;
+          .spacingSmall} 0;
             }
             .markdown :global(h3) {
               font-size: ${core.type.fontSizeMedium};
               letter-spacing: ${core.type.letterSpacingMedium};
               font-weight: ${core.type.fontWeightBook};
               margin: ${core.layout.spacingXLarge} 0 ${core.layout
-            .spacingSmall} 0;
+          .spacingSmall} 0;
             }
             .markdown :global(pre:not(.CodeMirror-line)) {
               padding: ${core.layout.spacingLarge};
@@ -112,6 +106,7 @@ export default class Doc extends React.Component {
               text-decoration: underline;
             }
           `}</style>
-        </div>
+      </div>
+    )
   }
 }
