@@ -78,7 +78,7 @@ export default _ =>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
-        npm install @pluralsight/ps-design-system-row@beta --save-dev
+        npm install @pluralsight/ps-design-system-row@beta
       </Code>
 
       <P>Include a React component in your project:</P>

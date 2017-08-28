@@ -17,7 +17,7 @@ Choose the CSS support that you need for your particular project.
 If you want to setup your own PostCSS config to consume the CSSNext variables, you'll want install the needed dependencies:
 
 \`\`\`bash
-npm install style-loader css-loader postcss-loader postcss-import postcss-cssnext --save-dev
+npm install style-loader css-loader postcss-loader postcss-import postcss-cssnext
 \`\`\`
 
 The add a \`module.rule\` to your \`webpack.config.js\`:
@@ -60,7 +60,7 @@ module: {
 If you wish to use the Sass variables, a custom config is necessary.  First install the required dependencies:
 
 \`\`\`bash
-npm install style-loader css-loader sass-loader node-sass --save-dev
+npm install style-loader css-loader sass-loader node-sass
 \`\`\`
 
 The add a \`module.rule\` to your \`webpack.config.js\`:

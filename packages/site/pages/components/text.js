@@ -20,7 +20,7 @@ export default _ =>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
-        npm install @pluralsight/ps-design-system-text --save-dev
+        npm install @pluralsight/ps-design-system-text
       </Code>
 
       <P>Include a React component in your project:</P>

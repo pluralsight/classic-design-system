@@ -18,7 +18,7 @@ export default _ =>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
-        npm install @pluralsight/ps-design-system-badge --save-dev
+        npm install @pluralsight/ps-design-system-badge
       </Code>
 
       <P>Include a React component in your project:</P>
