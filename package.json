@@ -10,9 +10,9 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "deploy": "cd packages/site && npm run build && git add ../../docs && git commit -m \"chore(site): regen\" && git push origin master",
+    "deploy": "cd packages/site && npm run build && git add ../../docs && git checkout -- ../../docs/CNAME ../../docs/.nojekyll && git commit -m \"chore(site): regen\" && git push origin master",
     "precommit": "lint-staged",
-    "postcommit": "cat .git/COMMIT_EDITMSG | commitlint",
+    "commitmsg": "commitlint -e",
     "publish": "lerna publish --conventional-commits",
     "publish:beta": "npm run publish -- --npm-tag=beta",
     "site": "cd packages/site && npm start",

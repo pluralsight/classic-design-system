@@ -9,7 +9,7 @@
     "npm": ">= 4.2"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack -p --config ./build/webpack.config.babel.js",
+    "build": "next build && next export -o dist && node build/cp-dist",
     "start": "next"
   },
   "author": "jaketrent",
@@ -66,6 +66,7 @@
     "react-router-dom": "^4.1.1",
     "react-styleable": "^3.1.0",
     "react-svg-loader": "^1.1.1",
+    "recursive-copy": "^2.0.6",
     "remarkable": "^1.7.1",
     "rimraf": "^2.6.1",
     "static-site-generator-webpack-plugin": "alexlande/static-site-generator-webpack-plugin#feature-basenameCrawling",
