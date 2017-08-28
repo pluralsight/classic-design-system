@@ -45,6 +45,9 @@ export default class Doc extends React.Component {
 
     evt.preventDefault()
     Router.push(href)
+
+    if (document)
+      document.body.scrollTop = document.documentElement.scrollTop = 0
   }
   render() {
     return (
