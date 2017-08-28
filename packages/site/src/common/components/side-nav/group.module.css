@@ -1,6 +1,0 @@
-@import "@pluralsight/ps-design-system-core";
-
-.root {
-  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge);
-  border-bottom: 1px solid var(--psColorsGray01);
-}

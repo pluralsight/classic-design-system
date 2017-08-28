@@ -1,8 +1,0 @@
-@import "@pluralsight/ps-design-system-core";
-
-.root {
-  display: flex;
-  flex-wrap: wrap;
-  margin: calc(-0.5 * var(--psLayoutSpacingLarge))
-    calc(-0.5 * var(--psLayoutSpacingLarge));
-}

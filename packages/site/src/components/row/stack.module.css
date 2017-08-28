@@ -1,7 +1,0 @@
-@import "@pluralsight/ps-design-system-core";
-
-.stack {
-  width: 75%;
-  padding: var(--psLayoutSpacingMedium);
-  background: var(--psColorsGray06);
-}

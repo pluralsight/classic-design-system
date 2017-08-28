@@ -47,7 +47,7 @@ All JavaScript in the codebase is automatically formatted with [prettier](https:
 ## Make a package dependent on another
 
 - Make the dependency package, complete with a package.json with name and version
-- Hand-code this into the source package's `dependencies`. (eg, `pluralsight/ps-design-system-util: ^1.0.0`)
+- Hand-code this into the source package's `dependencies`. (eg, `pluralsight/ps-design-system-button: ^1.0.0`)
 - Run `npm run bootstrap` in the root project dir
 - Run `npm install` in the dependency package root dir
 

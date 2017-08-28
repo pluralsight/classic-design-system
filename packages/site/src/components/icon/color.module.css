@@ -1,5 +1,0 @@
-@import "@pluralsight/ps-design-system-core";
-
-.overrideFill {
-  fill: var(--psColorsPink);
-}

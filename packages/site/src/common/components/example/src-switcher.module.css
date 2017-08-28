@@ -1,6 +1,0 @@
-@import "@pluralsight/ps-design-system-core";
-
-.root {
-  color: var(--psColorsWhite);
-  margin-bottom: var(--psLayoutSpacingXLarge);
-}
