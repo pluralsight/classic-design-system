@@ -9,12 +9,22 @@ export default _ =>
         <h1>Install FTW!</h1>
       </Heading>
       <Doc>{`
+## Normalize
+
+Use of the Core or Components requires the existence of the Design System normalize stylesheet on the page.  Install with:
+
+\`\`\`bash
+npm install @pluralsight/ps-design-system-normalize
+\`\`\`
+
+Include this vanilla CSS in your application in a method appropriate for your project. For usage options, follow the [Core Usage docs](/core/usage) patterns.
+
 ## Use Core
 
 First install the dependency:
 
 \`\`\`bash
-npm install @pluralsight/ps-design-system-core --save-dev
+npm install @pluralsight/ps-design-system-core
 \`\`\`
 
 Core design elements are represented as a set of variables.  We recommend you use either the JavaScript variables or the CSS variables.
@@ -27,15 +37,21 @@ For usage details, see the [Core Usage docs](/core/usage).
 
 ## Use Components
 
-Each component is installed separately.  JavaScript is prebuilt as Node modules.  Assets are inlined.  Find and use what you need.  For example:
+Most components use [glamorous](https://github.com/paypal/glamorous), which has a peerDependency on [glamor](https://github.com/threepointone/glamor).  It needs to be installed exactly once per application that uses these components:
 
 \`\`\`bash
-npm install @pluralsight/ps-design-system-button --save-dev
+npm install glamor
+\`\`\`
+
+Each component is installed separately.  The JavaScript is prebuilt Node modules.  Assets are inlined.  Find and use what you need.  For example:
+
+\`\`\`bash
+npm install @pluralsight/ps-design-system-button
 \`\`\`
 
 See individual reference pages for usage examples.
 
-For full, working project examples, see the [examples on github](https://github.com/pluralsight/design-system/tree/master/examples).
+For full, working project examples, see [github](https://github.com/pluralsight/design-system/tree/master/examples).
 `}</Doc>
     </Content>
   </Chrome>
