@@ -149,7 +149,7 @@ const styleIconAlignIconContainer = ({ iconAlign }) =>
     : null
 
 const styleIconOnlyIconContainer = ({ iconOnly }) =>
-  iconOnly ? { margin: 0 } : null
+  iconOnly ? { justifyContent: 'center', width: '100%', margin: 0 } : null
 
 const IconContainer = glamorous.div(
   {
