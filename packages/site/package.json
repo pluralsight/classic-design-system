@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "next build && next export -o dist && node build/cp-dist",
-    "start": "next"
+    "start": "next -p 1337"
   },
   "author": "jaketrent",
   "license": "Apache-2.0",
