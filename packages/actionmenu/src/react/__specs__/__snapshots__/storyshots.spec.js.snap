@@ -302,3 +302,177 @@ exports[`Storyshots menu items with icons 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots nested origin bottomLeft 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <div
+    className="css-c4zu2z"
+  >
+    <div
+      className="css-wyi7wi"
+    >
+      <div
+        className="css-kfg7gj"
+      >
+        One item
+        <div
+          className="css-c4zu2z"
+        >
+          <div
+            className="css-wyi7wi"
+          >
+            <div
+              className="css-kfg7gj"
+            >
+              One nested item
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots nested origin bottomRight 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <div
+    className="css-c4zu2z"
+  >
+    <div
+      className="css-wyi7wi"
+    >
+      <div
+        className="css-kfg7gj"
+      >
+        One item
+        <div
+          className="css-c4zu2z"
+        >
+          <div
+            className="css-wyi7wi"
+          >
+            <div
+              className="css-kfg7gj"
+            >
+              One nested item
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots nested origin topLeft 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <div
+    className="css-c4zu2z"
+  >
+    <div
+      className="css-wyi7wi"
+    >
+      <div
+        className="css-kfg7gj"
+      >
+        One item
+      </div>
+    </div>
+    <div
+      className="css-rficis"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots nested origin topRight 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <div
+    className="css-c4zu2z"
+  >
+    <div
+      className="css-wyi7wi"
+    >
+      <div
+        className="css-kfg7gj"
+      >
+        One item
+        <div
+          className="css-c4zu2z"
+        >
+          <div
+            className="css-wyi7wi"
+          >
+            <div
+              className="css-kfg7gj"
+            >
+              One nested item
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

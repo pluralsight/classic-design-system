@@ -142,3 +142,61 @@ storiesOf('dividers', module)
       </ActionMenu.Item>
     </ActionMenu>
   )
+
+const nestedStory = storiesOf('nested', module).addDecorator(bg)
+
+Object.keys(ActionMenu.origins).forEach(origin =>
+  nestedStory.add(`origin ${origin}`, _ =>
+    <ActionMenu origin={origin}>
+      <ActionMenu.Item
+        nested={
+          <ActionMenu origin={origin}>
+            <ActionMenu.Item>
+              Nest 1
+            </ActionMenu.Item>
+            <ActionMenu.Item
+              nested={
+                <ActionMenu origin={origin}>
+                  <ActionMenu.Item>
+                    Nest nest 1-1
+                  </ActionMenu.Item>
+                  <ActionMenu.Item>
+                    Nest nest 1-2
+                  </ActionMenu.Item>
+                  <ActionMenu.Item>
+                    Nest nest 1-3
+                  </ActionMenu.Item>
+                </ActionMenu>
+              }
+            >
+              Nest 2
+            </ActionMenu.Item>
+            <ActionMenu.Divider />
+            <ActionMenu.Item>
+              Nest 3
+            </ActionMenu.Item>
+            <ActionMenu.Item
+              nested={
+                <ActionMenu origin={origin}>
+                  <ActionMenu.Item>
+                    Nest nest 2-1
+                  </ActionMenu.Item>
+                  <ActionMenu.Item>
+                    Nest nest 2-2
+                  </ActionMenu.Item>
+                </ActionMenu>
+              }
+            >
+              Nest 4
+            </ActionMenu.Item>
+          </ActionMenu>
+        }
+      >
+        One
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        Two
+      </ActionMenu.Item>
+    </ActionMenu>
+  )
+)
