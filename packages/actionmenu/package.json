@@ -30,7 +30,8 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "glamorous": "^4.1.0",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "react-sizeme": "^2.3.4"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-button": "^8.0.1",
@@ -38,7 +39,6 @@
     "@storybook/addon-storyshots": "^3.2.4",
     "@storybook/react": "^3.2.3",
     "babel-cli": "^6.24.1",
-    "jest": "^20.0.4",
-    "react-sizeme": "^2.3.4"
+    "jest": "^20.0.4"
   }
 }
