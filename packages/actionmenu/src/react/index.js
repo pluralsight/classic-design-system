@@ -5,6 +5,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import sizeMe from 'react-sizeme'
 
+console.log('module')
+
 import Arrow from './arrow'
 
 const origins = {
@@ -28,7 +30,8 @@ const Menu = glamorous.ul({
   maxWidth: '320px',
   // overflow: 'hidden',
   listStyle: 'none',
-  boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`
+  boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
+  fontSize: core.type.fontSizeSmall
 })
 
 const itemHoverStyles = {
@@ -42,6 +45,8 @@ const Item = glamorous.li({
   display: 'flex',
   width: '100%',
   alignItems: 'center',
+  lineHeight: core.type.lineHeightExtra,
+  fontWeight: core.type.fontWeightMedium,
   padding: `0 ${core.layout.spacingMedium}`,
   '> ul': {
     display: 'none'
@@ -58,7 +63,6 @@ const ItemChildrenButton = glamorous.button({
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   textAlign: 'left',
-  fontSize: core.type.fontSizeSmall,
   lineHeight: core.type.lineHeightExtra,
   fontWeight: core.type.fontWeightMedium,
   cursor: 'pointer',
@@ -93,17 +97,42 @@ const renderNested = props =>
 // TODO: if nested, no button, make li the button, add a tabindex
 // when click button, focus on menu
 // TODO: menu role tablist aria-expanded false by default
-const ItemComponent = props => {
-  return (
-    <Item css={props.css} className={props.className} iconId={props.iconId}>
-      {props.iconId && <IconComponent iconId={props.iconId} />}
-      <ItemChildrenButton onClick={props.onClick}>
-        {props.children}
-      </ItemChildrenButton>
-      {props.nested && <NestedArrow />}
-      {renderNested(props)}
-    </Item>
-  )
+class ItemComponent extends React.Component {
+  constructor(props) {
+    super(props)
+    this.handleKeyDown = this.handleKeyDown.bind(this)
+  }
+  componentDidMount() {
+    console.log('mounted')
+  }
+  handleKeyDown(evt) {
+    console.log('keydown', evt.key)
+    if (evt.key === 'ArrowRight') {
+      evt.stopPropagation()
+      evt.preventDefault()
+    }
+  }
+  render() {
+    const filteredProps = {
+      css: this.props.css,
+      className: this.props.className,
+      iconId: this.props.iconId,
+      ...(this.props.nested ? { tabIndex: 0 } : {})
+    }
+    return (
+      <Item {...filteredProps}>
+        {this.props.iconId && <IconComponent iconId={this.props.iconId} />}
+        <ItemChildrenButton
+          onClick={this.props.onClick}
+          onKeyDown={this.handleKeyDown}
+        >
+          {this.props.children}
+        </ItemChildrenButton>
+        {this.props.nested && <NestedArrow />}
+        {renderNested(this.props)}
+      </Item>
+    )
+  }
 }
 ItemComponent.propTypes = {
   iconId: PropTypes.oneOf(Object.keys(Icon.ids)),
