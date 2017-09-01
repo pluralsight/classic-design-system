@@ -22,7 +22,7 @@ const style = props =>
 
 export default props =>
   <div className={`heading ${props.size}`}>
-    <Heading>
+    <Heading size={props.size}>
       {props.children}
     </Heading>
     <style jsx>{`
