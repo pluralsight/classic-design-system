@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="8.0.4"></a>
+## [8.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@8.0.1...@pluralsight/ps-design-system-button@8.0.4) (2017-09-01)
+
+
+### Bug Fixes
+
+* **button:** center lone icon in ios ([9842f30](https://github.com/pluralsight/design-system/commit/9842f30)), closes [#85](https://github.com/pluralsight/design-system/issues/85)
+
+
+
+
+<a name="8.0.3"></a>
+## [8.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@8.0.1...@pluralsight/ps-design-system-button@8.0.3) (2017-09-01)
+
+
+### Bug Fixes
+
+* **button:** center lone icon in ios ([9842f30](https://github.com/pluralsight/design-system/commit/9842f30)), closes [#85](https://github.com/pluralsight/design-system/issues/85)
+
+
+
+
+<a name="8.0.2"></a>
+## [8.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@8.0.1...@pluralsight/ps-design-system-button@8.0.2) (2017-09-01)
+
+
+### Bug Fixes
+
+* **button:** center lone icon in ios ([9842f30](https://github.com/pluralsight/design-system/commit/9842f30)), closes [#85](https://github.com/pluralsight/design-system/issues/85)
+
+
+
+
 <a name="8.0.1"></a>
 ## [8.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@8.0.0...@pluralsight/ps-design-system-button@8.0.1) (2017-08-14)
 

@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.3"></a>
+## [7.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@7.0.0...@pluralsight/ps-design-system-icon@7.0.3) (2017-09-01)
+
+
+
+
+<a name="7.0.2"></a>
+## [7.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@7.0.0...@pluralsight/ps-design-system-icon@7.0.2) (2017-09-01)
+
+
+
+
+<a name="7.0.1"></a>
+## [7.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@7.0.0...@pluralsight/ps-design-system-icon@7.0.1) (2017-09-01)
+
+
+
+
 <a name="7.0.0"></a>
 # [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@5.0.2...@pluralsight/ps-design-system-icon@7.0.0) (2017-08-14)
 
