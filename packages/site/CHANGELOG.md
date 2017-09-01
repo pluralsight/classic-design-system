@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.3.5"></a>
+## [7.3.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.3.2...@pluralsight/ps-design-system-site@7.3.5) (2017-09-01)
+
+
+### Bug Fixes
+
+* **site:** client-side eval of badge example ([3aba4a9](https://github.com/pluralsight/design-system/commit/3aba4a9))
+* **site:** margin and color on overridden heading styles ([9629988](https://github.com/pluralsight/design-system/commit/9629988))
+* **site:** site header gets size adjustments ([f59ca02](https://github.com/pluralsight/design-system/commit/f59ca02)), closes [#93](https://github.com/pluralsight/design-system/issues/93)
+
+
+
+
+<a name="7.3.4"></a>
+## [7.3.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.3.2...@pluralsight/ps-design-system-site@7.3.4) (2017-09-01)
+
+
+### Bug Fixes
+
+* **site:** client-side eval of badge example ([3aba4a9](https://github.com/pluralsight/design-system/commit/3aba4a9))
+* **site:** margin and color on overridden heading styles ([9629988](https://github.com/pluralsight/design-system/commit/9629988))
+* **site:** site header gets size adjustments ([f59ca02](https://github.com/pluralsight/design-system/commit/f59ca02)), closes [#93](https://github.com/pluralsight/design-system/issues/93)
+
+
+
+
+<a name="7.3.3"></a>
+## [7.3.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.3.2...@pluralsight/ps-design-system-site@7.3.3) (2017-09-01)
+
+
+### Bug Fixes
+
+* **site:** client-side eval of badge example ([3aba4a9](https://github.com/pluralsight/design-system/commit/3aba4a9))
+* **site:** margin and color on overridden heading styles ([9629988](https://github.com/pluralsight/design-system/commit/9629988))
+* **site:** site header gets size adjustments ([f59ca02](https://github.com/pluralsight/design-system/commit/f59ca02)), closes [#93](https://github.com/pluralsight/design-system/issues/93)
+
+
+
+
 <a name="7.3.2"></a>
 ## [7.3.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.3.1...@pluralsight/ps-design-system-site@7.3.2) (2017-08-23)
 

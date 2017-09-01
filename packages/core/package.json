@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-core",
-  "version": "2.4.2",
+  "version": "2.4.5",
   "description": "Collection of Core design elements for the Design System",
   "main": "js/index.js",
   "style": "css/index.css",
