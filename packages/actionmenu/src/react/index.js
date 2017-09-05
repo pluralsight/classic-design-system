@@ -30,8 +30,17 @@ const Item = glamorous.button(
     textAlign: 'left',
     cursor: 'pointer',
     border: 'none',
-    padding: `0 ${core.layout.spacingMedium}`
+    paddingTop: '0',
+    paddingBottom: '0'
   },
+  ({ iconId }) =>
+    iconId
+      ? { paddingLeft: core.layout.spacingXSmall }
+      : { paddingLeft: core.layout.spacingMedium },
+  ({ nested }) =>
+    nested
+      ? { paddingRight: core.layout.spacingXSmall }
+      : { paddingRight: core.layout.spacingMedium },
   ({ isActive }) =>
     isActive
       ? {
@@ -108,17 +117,15 @@ class ItemComponent extends React.Component {
       : null
   }
   render() {
-    const filteredProps = {
-      css: this.props.css,
-      className: this.props.className,
-      iconId: this.props.iconId
-    }
     return (
       <div>
         <Item
-          {...filteredProps}
+          css={this.props.css}
+          className={this.props.className}
+          iconId={this.props.iconId}
           isActive={this.props.isActive}
           innerRef={el => (this.item = el)}
+          nested={this.props.nested}
           onClick={this.props.onClick}
           onKeyDown={this.handleKeyDown}
           onMouseOver={this.handleMouseOver}
