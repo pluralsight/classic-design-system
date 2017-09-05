@@ -185,6 +185,7 @@ export default _ =>
     </Group>
     <Group>
       <GroupTitle>COMPONENTS</GroupTitle>
+      <NavLink href="/components/actionmenu">Action Menu</NavLink>
       <NavLink href="/components/badge">Badge</NavLink>
       <NavLink href="/components/button">Button</NavLink>
       <NavLink href="/components/card">Card</NavLink>

@@ -4,6 +4,7 @@ module.exports = {
     return {
       '/': { page: '/' },
       '/install': { page: '/install' },
+      '/components/actionmenu': { page: '/components/actionmenu' },
       '/components/badge': { page: '/components/badge' },
       '/components/button': { page: '/components/button' },
       '/components/card': { page: '/components/card' },

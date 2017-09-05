@@ -68,7 +68,9 @@ const OutputDecorationGlobalStyles = _ =>
   `}</style>
 
 const decorateSrc = (props, codes) => {
-  let decorated = `<div className="${getOutputClassName(props)}">`
+  let decorated = `<div className="${getOutputClassName(
+    props
+  )}" style={${JSON.stringify(props.outputStyle)}}>`
 
   codes.forEach(code => {
     decorated += `<div className="outputChild">${code}</div>`
@@ -238,7 +240,9 @@ class ReactExample extends React.Component {
 }
 
 ReactExample.propTypes = {
-  codes: PropTypes.arrayOf(PropTypes.string)
+  codes: PropTypes.arrayOf(PropTypes.string),
+  includes: PropTypes.object,
+  outputStyle: PropTypes.object
 }
 ReactExample.defaultProps = {
   orient: 'horizontal'
