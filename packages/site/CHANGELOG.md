@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.4.0"></a>
+# [7.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.3.2...@pluralsight/ps-design-system-site@7.4.0) (2017-09-05)
+
+
+### Bug Fixes
+
+* **site:** client-side eval of badge example ([3aba4a9](https://github.com/pluralsight/design-system/commit/3aba4a9))
+* **site:** margin and color on overridden heading styles ([9629988](https://github.com/pluralsight/design-system/commit/9629988))
+* **site:** site header gets size adjustments ([41a3081](https://github.com/pluralsight/design-system/commit/41a3081)), closes [#93](https://github.com/pluralsight/design-system/issues/93)
+
+
+### Features
+
+* **actionmenu:** site reference for rest of states ([2edb86a](https://github.com/pluralsight/design-system/commit/2edb86a))
+* **site:** initial actionmenu ref page ([aac7100](https://github.com/pluralsight/design-system/commit/aac7100))
+
+
+
+
 <a name="7.3.5"></a>
 ## [7.3.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.3.2...@pluralsight/ps-design-system-site@7.3.5) (2017-09-01)
 
