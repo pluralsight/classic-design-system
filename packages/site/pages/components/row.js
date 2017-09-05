@@ -74,11 +74,11 @@ export default _ =>
   <Chrome>
     <Content title="Row">
 
-      <PageHeading>Row</PageHeading>
+      <PageHeading beta>Row</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
-        npm install @pluralsight/ps-design-system-row@beta
+        npm install @pluralsight/ps-design-system-row
       </Code>
 
       <P>Include a React component in your project:</P>
