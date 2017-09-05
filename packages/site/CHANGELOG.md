@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.5.0"></a>
+# [7.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.3.5...@pluralsight/ps-design-system-site@7.5.0) (2017-09-05)
+
+
+### Features
+
+* **actionmenu:** site reference for rest of states ([9d5b3ae](https://github.com/pluralsight/design-system/commit/9d5b3ae))
+* **site:** initial actionmenu ref page ([5f88741](https://github.com/pluralsight/design-system/commit/5f88741))
+
+
+
+
 <a name="7.4.0"></a>
 # [7.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.3.2...@pluralsight/ps-design-system-site@7.4.0) (2017-09-05)
 
