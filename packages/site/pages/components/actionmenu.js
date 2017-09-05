@@ -1,4 +1,6 @@
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
+import Button from '@pluralsight/ps-design-system-button/react'
+import Icon from '@pluralsight/ps-design-system-icon/react'
 
 import {
   Chrome,
@@ -27,14 +29,106 @@ export default _ =>
       </Code>
 
       <Heading size="large">
-        <h2>Nesting</h2>
+        <h2>Action menu triggers</h2>
       </Heading>
+      <P>
+        Menus can originate from various affordance types: buttons, dropdowns,
+        and stand-alone icons. All menus left align with the affordance by
+        default.
+      </P>
       <Example.React
-        includes={{ ActionMenu }}
-        outputStyle={{ minHeight: '170px' }}
+        includes={{ ActionMenu, Button, Icon }}
         codes={[
           `
-<ActionMenu origin={ActionMenu.origins.topLeft}>
+<div>
+  <Button
+    appearance={Button.appearances.flat}
+    size={Button.sizes.small}
+    icon={<Icon id={Icon.ids.more} />}
+  />
+  <ActionMenu origin={ActionMenu.origins.topLeft} css={{ position: 'relative' }}>
+    <ActionMenu.Item>
+      One menu item
+    </ActionMenu.Item>
+    <ActionMenu.Item>
+      Two menu item
+    </ActionMenu.Item>
+    <ActionMenu.Item>
+      Three menu item
+    </ActionMenu.Item>
+  </ActionMenu>
+</div>
+`
+        ]}
+      />
+
+      <Heading size="large">
+        <h2>Icon menu items</h2>
+      </Heading>
+      <P>Use icons to add conext and recognition to action menu items.</P>
+      <Example.React
+        includes={{ ActionMenu, Icon }}
+        codes={[
+          `
+<ActionMenu origin={ActionMenu.origins.topLeft} css={{ position: 'relative' }}>
+  <ActionMenu.Item iconId={Icon.ids.channel}>
+    Channels
+  </ActionMenu.Item>
+  <ActionMenu.Item iconId={Icon.ids.path}>
+    Paths
+  </ActionMenu.Item>
+  <ActionMenu.Item iconId={Icon.ids.report}>
+    Reports
+  </ActionMenu.Item>
+</ActionMenu>
+`
+        ]}
+      />
+
+      <Heading size="large">
+        <h2>Dividers</h2>
+      </Heading>
+      <P>
+        Dividers can be useful to separate similar actions. Dividers are applied
+        at the li level, below the assigned list item.
+      </P>
+      <Example.React
+        includes={{ ActionMenu }}
+        codes={[
+          `
+<ActionMenu origin={ActionMenu.origins.topLeft} css={{ position: 'relative' }}>
+  <ActionMenu.Item>
+    One item
+  </ActionMenu.Item>
+  <ActionMenu.Divider />
+  <ActionMenu.Item>
+    Two item
+  </ActionMenu.Item>
+  <ActionMenu.Item>
+    Three item
+  </ActionMenu.Item>
+  <ActionMenu.Divider />
+  <ActionMenu.Item>
+    Four item
+  </ActionMenu.Item>
+</ActionMenu>
+`
+        ]}
+      />
+
+      <Heading size="large">
+        <h2>Nested menus</h2>
+      </Heading>
+      <P>Nested menu lists may spawn from parent menu list items.</P>
+      <Example.React
+        includes={{ ActionMenu }}
+        codes={[
+          `
+<ActionMenu origin={ActionMenu.origins.topLeft} css={{ position: 'relative' }}>
+  <ActionMenu.Item>
+    One item
+  </ActionMenu.Item>
+  <ActionMenu.Divider />
   <ActionMenu.Item
     nested={
       <ActionMenu origin={ActionMenu.origins.topLeft}>
@@ -59,34 +153,36 @@ export default _ =>
           Nest 2
         </ActionMenu.Item>
         <ActionMenu.Divider />
-        <ActionMenu.Item>
-          Nest 3
-        </ActionMenu.Item>
         <ActionMenu.Item
           nested={
             <ActionMenu origin={ActionMenu.origins.topLeft}>
               <ActionMenu.Item>
-                Nest nest 2-1
+                Nest nest 3-1
               </ActionMenu.Item>
               <ActionMenu.Item>
-                Nest nest 2-2
+                Nest nest 3-2
               </ActionMenu.Item>
             </ActionMenu>
           }
         >
-          Nest 4
+          Nest 3
         </ActionMenu.Item>
       </ActionMenu>
     }
   >
-    One
+    Two item
   </ActionMenu.Item>
   <ActionMenu.Item>
-    Two
+    Three item
+  </ActionMenu.Item>
+  <ActionMenu.Divider />
+  <ActionMenu.Item>
+    Four item
   </ActionMenu.Item>
 </ActionMenu>
 `
         ]}
       />
+
     </Content>
   </Chrome>
