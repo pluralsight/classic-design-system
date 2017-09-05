@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-link",
-  "version": "5.0.4",
+  "version": "5.0.5",
   "description": "Design System component for link/anchor ui",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "react": ">=0.15.0 < 16.0.0"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^2.4.5"
+    "@pluralsight/ps-design-system-core": "^2.4.6"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1"
