@@ -34,11 +34,12 @@ export default _ =>
       <P>Buttons come in three standard visual styles.</P>
       <Example.React
         includes={{ Button, Icon }}
-        codes={[
-          `<Button>Click me</Button>`,
-          `<Button appearance="stroke">Click me</Button>`,
-          `<Button appearance="flat">Click me</Button>`
-        ]}
+        codes={[`<Button>Click me</Button>`].concat(
+          Object.keys(Button.appearances).map(
+            a =>
+              `<Button appearance={Button.appearances.${a}}>Click me</Button>`
+          )
+        )}
       />
 
       <Heading size="large">
@@ -47,12 +48,9 @@ export default _ =>
       <P>Buttons come in four standard sizes. The default size is 'medium'.</P>
       <Example.React
         includes={{ Button, Icon }}
-        codes={[
-          `<Button size="large">Large</Button>`,
-          `<Button size="medium">Medium</Button>`,
-          `<Button size="small">Small</Button>`,
-          `<Button size="xSmall">XSmall</Button>`
-        ]}
+        codes={Object.keys(Button.sizes).map(
+          s => `<Button size={Button.sizes.${s}}>Click me</Button>`
+        )}
       />
 
       <Heading size="large">
@@ -85,7 +83,7 @@ export default _ =>
           `
 <Button
   icon={<Icon id={Icon.ids.user} />}
-  appearance="flat"
+  appearance={Button.apperances.flat}
 />`
         ]}
       />
@@ -101,8 +99,8 @@ export default _ =>
         includes={{ Button, Icon }}
         codes={[
           `<Button disabled>Disabled</Button>`,
-          `<Button disabled appearance="stroke">Disabled</Button>`,
-          `<Button disabled appearance="flat">Disabled</Button>`,
+          `<Button disabled appearance={Button.apperances.stroke}>Disabled</Button>`,
+          `<Button disabled appearance={Button.apperances.flat}>Disabled</Button>`,
           `<Button disabled icon={<Icon id={Icon.ids.pencil} />}>Disabled</Button>`
         ]}
       />

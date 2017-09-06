@@ -39,28 +39,14 @@ export default _ =>
       <Example.React
         orient="vertical"
         includes={{ Text }}
-        codes={[
-          `
-<Text.Heading size="xxLarge">
-  <h2>XX Large</h2>
-</Text.Heading>
-`,
-          `
-<Text.Heading size="large">
-  <h2>Large</h2>
-</Text.Heading>
-`,
-          `
-<Text.Heading size="medium">
-  <h2>Medium</h2>
-</Text.Heading>
-`,
-          `
-<Text.Heading size="smallCaps">
-  <h2>Small Caps</h2>
+        codes={Object.keys(Text.Heading.sizes).map(
+          s =>
+            `
+<Text.Heading size={Text.Heading.sizes.${s}}>
+  <h2>${s}</h2>
 </Text.Heading>
 `
-        ]}
+        )}
       />
 
       <Heading size="large">

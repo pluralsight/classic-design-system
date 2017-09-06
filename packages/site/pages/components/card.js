@@ -14,6 +14,8 @@ import {
   PageHeading
 } from '../../src/ui'
 
+const capitalize = str => str.charAt(0).toUpperCase() + str.substring(1)
+
 const Carousel = props =>
   <div className="root">
     <div className="carousel">
@@ -136,32 +138,16 @@ export default _ =>
       <Example.React
         orient="vertical"
         includes={{ Button, Card, Icon }}
-        codes={[
-          `
+        codes={Object.keys(Card.sizes).map(
+          s => `
 <Card
-  size="large"
-  title="Large Card"
+  size={Card.sizes.${s}}
+  title="${capitalize(s)} Card"
   metadata1={['Jim Cooper']}
   image={<img src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />}
 />
-`,
-          `
-<Card
-  size="medium"
-  title="Medium Card"
-  metadata1={['Joe Eames']}
-  image={<img src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />}
-/>
-`,
-          `
-<Card
-  size="small"
-  title="Small Card"
-  metadata1={['Cory House']}
-  image={<img src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />}
-/>
 `
-        ]}
+        )}
       />
 
       <Heading size="large">
@@ -337,7 +323,7 @@ export default _ =>
         codes={[
           `
 <Card
-  actionBar={[<Button appearance="flat" icon={<Icon id="bookmark" />} />]}
+  actionBar={[<Button appearance={Button.appearances.flat} icon={<Icon id={Icon.ids.bookmark} />} />]}
   title="Action bar appears on hover"
   image={<img src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />}
 />
@@ -346,8 +332,8 @@ export default _ =>
           `
 <Card
   actionBar={[
-    <Button appearance="flat" icon={<Icon id="bookmark" />} />,
-    <Button appearance="flat" icon={<Icon id="more" />} />
+    <Button appearance="flat" icon={<Icon id={Icon.ids.bookmark} />} />,
+    <Button appearance="flat" icon={<Icon id={Icon.ids.more} />} />
   ]}
   title="Multiple actions"
   image={<img src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />}
@@ -357,10 +343,10 @@ export default _ =>
           `
 <Card
   actionBar={[
-    <Button appearance="flat" icon={<Icon id="bookmark" />} />,
-    <Button appearance="flat" icon={<Icon id="more" />} />
+    <Button appearance={Button.appearances.flat} icon={<Icon id={Icon.ids.bookmark} />} />,
+    <Button appearance={Button.appearances.flat} icon={<Icon id={Icon.ids.more} />} />
   ]}
-  actionBarVisible={true}
+  actionBarVisible
   title="Action bar locked visible"
   image={<img src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />}
 />
@@ -378,7 +364,7 @@ export default _ =>
         codes={[
           `
 <Card
-  tag={[<Icon id="path" />, <span>Path</span>]}
+  tag={[<Icon id={Icon.ids.path} />, <span>Path</span>]}
   title="Icon and text"
   image={
     <img src="http://lorempixel.com/output/technics-q-c-680-320-5.jpg" />
@@ -397,7 +383,7 @@ export default _ =>
           `
 <Card
   size="small"
-  tag={[<Icon id="channel" />, <span>Channel</span>]}
+  tag={[<Icon id={Icon.ids.channel} />, <span>Channel</span>]}
   title="Tag hidden if card small"
   image={
     <img src="http://lorempixel.com/output/technics-q-c-680-320-5.jpg" />
@@ -436,8 +422,8 @@ export default _ =>
           `
 <Card
   fullOverlay={<a>Custom Thing</a>}
-  actionBar={[<Button appearance="flat" icon={<Icon id="bookmark" />} />]}
-  tag={[<Icon id="channel" />, <span>Channel</span>]}
+  actionBar={[<Button appearance={Button.appearances.flat} icon={<Icon id={Icon.ids.bookmark} />} />]}
+  tag={[<Icon id={Icon.ids.channel} />, <span>Channel</span>]}
   title="Combined with other overlays"
   image={<img src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />}
 />
