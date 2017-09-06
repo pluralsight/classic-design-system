@@ -132,7 +132,8 @@ class ItemComponent extends React.Component {
             this.props.size.width,
             this.props._origin
           ),
-          onClose: this.handleNestedClose
+          onClose: this.handleNestedClose,
+          origin: this.props._origin
         })
       : null
   }
@@ -298,7 +299,7 @@ class ActionMenuComponent extends React.Component {
       <div>
         <Menu
           css={{
-            ...calcMenuStyle(this.props._origin || this.props.origin),
+            ...calcMenuStyle(this.props.origin),
             ...this.props.css
           }}
           className={this.props.className}
