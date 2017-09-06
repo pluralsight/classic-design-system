@@ -325,6 +325,7 @@ class ActionMenuComponent extends React.Component {
         onKeyDown={this.handleKeyDown}
         onKeyUp={this.handleKeyUp}
         origin={this.props.origin}
+        innerRef={this.props.ref}
       >
         {React.Children.map(this.props.children, (child, i) =>
           React.cloneElement(child, {
