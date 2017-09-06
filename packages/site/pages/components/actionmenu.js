@@ -119,25 +119,43 @@ export default _ =>
       <Heading size="large">
         <h2>Nested menus</h2>
       </Heading>
-      <P>Nested menu lists may spawn from parent menu list items.</P>
+      <P>
+        Nested menu lists may spawn from parent menu list items.
+      </P>
+      <P>
+        The origin prop determines the starting position and direction of nested
+        menus.
+      </P>
+      <Code language="javascript">
+        {Object.keys(ActionMenu.origins)
+          .reduce(
+            (acc, origin) => acc.concat([`ActionMenu.origins.${origin}`]),
+            []
+          )
+          .join('\n')}
+      </Code>
+      <P>
+        Here's an example of ActionMenu.origins.bottomRight in action:
+      </P>
       <Example.React
         includes={{ ActionMenu }}
+        outputStyle={{ minHeight: '300px', position: 'relative' }}
         codes={[
           `
-<ActionMenu origin={ActionMenu.origins.topLeft} css={{ position: 'relative' }}>
+<ActionMenu origin={ActionMenu.origins.topLeft} css={{ position: 'absolute', bottom: '24px', right: '24px' }}>
   <ActionMenu.Item>
     One item
   </ActionMenu.Item>
   <ActionMenu.Divider />
   <ActionMenu.Item
     nested={
-      <ActionMenu origin={ActionMenu.origins.topLeft}>
+      <ActionMenu>
         <ActionMenu.Item>
           Nest 1
         </ActionMenu.Item>
         <ActionMenu.Item
           nested={
-            <ActionMenu origin={ActionMenu.origins.topLeft}>
+            <ActionMenu>
               <ActionMenu.Item>
                 Nest nest 1-1
               </ActionMenu.Item>
@@ -155,7 +173,7 @@ export default _ =>
         <ActionMenu.Divider />
         <ActionMenu.Item
           nested={
-            <ActionMenu origin={ActionMenu.origins.topLeft}>
+            <ActionMenu>
               <ActionMenu.Item>
                 Nest nest 3-1
               </ActionMenu.Item>
@@ -183,6 +201,5 @@ export default _ =>
 `
         ]}
       />
-
     </Content>
   </Chrome>
