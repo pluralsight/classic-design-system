@@ -64,6 +64,26 @@ const NestedArrow = _ =>
     <Arrow />
   </Div>
 
+const calcNestedMenuPosition = (menuWidth, origin) =>
+  ({
+    topLeft: {
+      left: menuWidth + nestedMenuHorzOverlap,
+      top: `calc(-1 * ${menuPaddingVert})`
+    },
+    topRight: {
+      right: menuWidth + nestedMenuHorzOverlap,
+      top: `calc(-1 * ${menuPaddingVert})`
+    },
+    bottomRight: {
+      right: menuWidth + nestedMenuHorzOverlap,
+      bottom: `calc(-1 * ${menuPaddingVert})`
+    },
+    bottomLeft: {
+      left: menuWidth + nestedMenuHorzOverlap,
+      bottom: `calc(-1 * ${menuPaddingVert})`
+    }
+  }[origin])
+
 class ItemComponent extends React.Component {
   constructor(props) {
     super(props)
@@ -108,10 +128,10 @@ class ItemComponent extends React.Component {
       this.props.nested &&
       this.props.isActive
       ? React.cloneElement(this.props.nested, {
-          css: {
-            left: this.props.size.width + nestedMenuHorzOverlap,
-            top: `calc(-1 * ${menuPaddingVert})`
-          },
+          css: calcNestedMenuPosition(
+            this.props.size.width,
+            this.props._origin
+          ),
           onClose: this.handleNestedClose
         })
       : null
@@ -144,7 +164,8 @@ ItemComponent.propTypes = {
   iconId: PropTypes.oneOf(Object.keys(Icon.ids)),
   isActive: PropTypes.bool,
   nested: PropTypes.element, // ActionMenu
-  _onMouseOver: PropTypes.func
+  _onMouseOver: PropTypes.func,
+  _origin: PropTypes.oneOf(Object.keys(origins))
 }
 
 const Divider = glamorous.div({
@@ -193,6 +214,26 @@ const Menu = glamorous.div({
   boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
   fontSize: core.type.fontSizeSmall
 })
+
+const calcMenuStyle = origin =>
+  ({
+    topLeft: {
+      left: 20,
+      top: 20
+    },
+    topRight: {
+      right: 20,
+      top: 20
+    },
+    bottomRight: {
+      bottom: 20,
+      right: 20
+    },
+    bottomLeft: {
+      left: 20,
+      bottom: 20
+    }
+  }[origin])
 
 class ActionMenuComponent extends React.Component {
   constructor(props) {
@@ -245,7 +286,7 @@ class ActionMenuComponent extends React.Component {
     return (
       <div>
         <Menu
-          css={this.props.css}
+          css={{ ...calcMenuStyle(this.props.origin), ...this.props.css }}
           className={this.props.className}
           onKeyDown={this.handleKeyDown}
         >
@@ -254,7 +295,8 @@ class ActionMenuComponent extends React.Component {
               isActive: i === this.state.activeIndex,
               _i: i,
               _onFocus: this.handleDividerFocus,
-              _onMouseOver: this.handleItemMouseOver
+              _onMouseOver: this.handleItemMouseOver,
+              _origin: this.props.origin
             })
           )}
         </Menu>

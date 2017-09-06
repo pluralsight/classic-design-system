@@ -145,58 +145,82 @@ storiesOf('dividers', module)
 
 const nestedStory = storiesOf('nested', module).addDecorator(bg)
 
+const calcContainerStyle = origin => ({
+  position: 'absolute',
+  ...{
+    topLeft: {
+      left: 20,
+      top: 20
+    },
+    topRight: {
+      right: 20,
+      top: 20
+    },
+    bottomRight: {
+      bottom: 20,
+      right: 20
+    },
+    bottomLeft: {
+      left: 20,
+      bottom: 20
+    }
+  }[origin]
+})
+
 Object.keys(ActionMenu.origins).forEach(origin =>
   nestedStory.add(`origin ${origin}`, _ =>
-    <ActionMenu origin={origin}>
-      <ActionMenu.Item
-        nested={
-          <ActionMenu origin={origin}>
-            <ActionMenu.Item>
-              Nest 1
-            </ActionMenu.Item>
-            <ActionMenu.Item
-              nested={
-                <ActionMenu origin={origin}>
-                  <ActionMenu.Item>
-                    Nest nest 1-1
-                  </ActionMenu.Item>
-                  <ActionMenu.Item>
-                    Nest nest 1-2
-                  </ActionMenu.Item>
-                  <ActionMenu.Item>
-                    Nest nest 1-3
-                  </ActionMenu.Item>
-                </ActionMenu>
-              }
-            >
-              Nest 2
-            </ActionMenu.Item>
-            <ActionMenu.Divider />
-            <ActionMenu.Item>
-              Nest 3
-            </ActionMenu.Item>
-            <ActionMenu.Item
-              nested={
-                <ActionMenu origin={origin}>
-                  <ActionMenu.Item>
-                    Nest nest 2-1
-                  </ActionMenu.Item>
-                  <ActionMenu.Item>
-                    Nest nest 2-2
-                  </ActionMenu.Item>
-                </ActionMenu>
-              }
-            >
-              Nest 4
-            </ActionMenu.Item>
-          </ActionMenu>
-        }
-      >
-        One
-      </ActionMenu.Item>
-      <ActionMenu.Item>
-        Two
-      </ActionMenu.Item>
-    </ActionMenu>
+    <div style={calcContainerStyle(origin)}>
+      <ActionMenu origin={origin}>
+        <ActionMenu.Item
+          nested={
+            <ActionMenu origin={origin}>
+              <ActionMenu.Item>
+                Nest 1
+              </ActionMenu.Item>
+              <ActionMenu.Item
+                nested={
+                  <ActionMenu origin={origin}>
+                    <ActionMenu.Item>
+                      Nest nest 1-1
+                    </ActionMenu.Item>
+                    <ActionMenu.Item>
+                      Nest nest 1-2
+                    </ActionMenu.Item>
+                    <ActionMenu.Item>
+                      Nest nest 1-3
+                    </ActionMenu.Item>
+                  </ActionMenu>
+                }
+              >
+                Nest 2
+              </ActionMenu.Item>
+              <ActionMenu.Divider />
+              <ActionMenu.Item>
+                Nest 3
+              </ActionMenu.Item>
+              <ActionMenu.Item
+                nested={
+                  <ActionMenu origin={origin}>
+                    <ActionMenu.Item>
+                      Nest nest 2-1
+                    </ActionMenu.Item>
+                    <ActionMenu.Item>
+                      Nest nest 2-2
+                    </ActionMenu.Item>
+                  </ActionMenu>
+                }
+              >
+                Nest 4
+              </ActionMenu.Item>
+            </ActionMenu>
+          }
+        >
+          One
+        </ActionMenu.Item>
+        <ActionMenu.Item>
+          Two
+        </ActionMenu.Item>
+      </ActionMenu>
+    </div>
   )
 )
