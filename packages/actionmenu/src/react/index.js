@@ -218,20 +218,20 @@ const Menu = glamorous.div({
 const calcMenuStyle = origin =>
   ({
     topLeft: {
-      left: 20,
-      top: 20
+      left: 0,
+      top: 0
     },
     topRight: {
-      right: 20,
-      top: 20
+      right: 0,
+      top: 0
     },
     bottomRight: {
-      bottom: 20,
-      right: 20
+      bottom: 0,
+      right: 0
     },
     bottomLeft: {
-      left: 20,
-      bottom: 20
+      left: 0,
+      bottom: 0
     }
   }[origin])
 
@@ -297,7 +297,10 @@ class ActionMenuComponent extends React.Component {
     return (
       <div>
         <Menu
-          css={{ ...calcMenuStyle(this.props.origin), ...this.props.css }}
+          css={{
+            ...calcMenuStyle(this.props._origin || this.props.origin),
+            ...this.props.css
+          }}
           className={this.props.className}
           onKeyDown={this.handleKeyDown}
           onKeyUp={this.handleKeyUp}
