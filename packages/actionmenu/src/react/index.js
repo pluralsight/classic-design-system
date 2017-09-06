@@ -243,6 +243,7 @@ class ActionMenuComponent extends React.Component {
       activeDirection: 'down'
     }
     this.handleKeyDown = this.handleKeyDown.bind(this)
+    this.handleKeyUp = this.handleKeyUp.bind(this)
     this.handleDividerFocus = this.handleDividerFocus.bind(this)
     this.handleItemMouseOver = this.handleItemMouseOver.bind(this)
   }
@@ -251,20 +252,30 @@ class ActionMenuComponent extends React.Component {
       evt.stopPropagation()
       evt.preventDefault()
       if (typeof this.props.onClose === 'function') this.props.onClose()
-    } else if (evt.key === 'ArrowDown') {
+    } else if (
+      evt.key === 'ArrowDown' ||
+      (evt.key === 'Tab' && !this.isShifting)
+    ) {
       evt.stopPropagation()
       evt.preventDefault()
       const newIndex = this.state.activeIndex + 1
       const itemsCount = React.Children.count(this.props.children)
       const activeIndex = newIndex > itemsCount - 1 ? itemsCount - 1 : newIndex
       this.setState({ activeIndex, activeDirection: 'down' })
-    } else if (evt.key === 'ArrowUp') {
+    } else if (
+      evt.key === 'ArrowUp' ||
+      (evt.key === 'Tab' && this.isShifting)
+    ) {
       evt.stopPropagation()
       evt.preventDefault()
       const newIndex = this.state.activeIndex - 1
       const activeIndex = newIndex <= 0 ? 0 : newIndex
       this.setState({ activeIndex, activeDirection: 'up' })
     }
+    if (this.isShifting || evt.key === 'Shift') this.isShifting = true
+  }
+  handleKeyUp(evt) {
+    if (evt.key === 'Shift') this.isShifting = false
   }
   // TODO: figure out a better way to do this -- count children, determine placement of divider,
   handleDividerFocus() {
@@ -289,6 +300,7 @@ class ActionMenuComponent extends React.Component {
           css={{ ...calcMenuStyle(this.props.origin), ...this.props.css }}
           className={this.props.className}
           onKeyDown={this.handleKeyDown}
+          onKeyUp={this.handleKeyUp}
         >
           {React.Children.map(this.props.children, (child, i) =>
             React.cloneElement(child, {
