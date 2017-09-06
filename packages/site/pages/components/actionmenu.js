@@ -142,7 +142,7 @@ export default _ =>
         outputStyle={{ minHeight: '300px', position: 'relative' }}
         codes={[
           `
-<ActionMenu origin={ActionMenu.origins.topLeft} css={{ position: 'absolute', bottom: '24px', right: '24px' }}>
+<ActionMenu origin={ActionMenu.origins.bottomRight}>
   <ActionMenu.Item>
     One item
   </ActionMenu.Item>
@@ -201,5 +201,6 @@ export default _ =>
 `
         ]}
       />
+
     </Content>
   </Chrome>
