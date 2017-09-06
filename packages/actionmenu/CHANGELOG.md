@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@1.2.0...@pluralsight/ps-design-system-actionmenu@1.3.0) (2017-09-06)
+
+
+### Bug Fixes
+
+* menu placement coordinates; nested menus inherit root origin ([e375f7c](https://github.com/pluralsight/design-system/commit/e375f7c))
+* **actionmenu:** properly pass origin to nested menus ([e91e737](https://github.com/pluralsight/design-system/commit/e91e737))
+
+
+### Features
+
+* **actionmenu:** bind tab/shift-tab to activeIndex ([d541c03](https://github.com/pluralsight/design-system/commit/d541c03))
+* **actionmenu:** origin options for positioning nested menus ([984a5bd](https://github.com/pluralsight/design-system/commit/984a5bd))
+
+
+
+
 <a name="1.2.0"></a>
 # 1.2.0 (2017-09-05)
 
