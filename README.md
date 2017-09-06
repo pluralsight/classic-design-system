@@ -6,6 +6,10 @@ Light WIP -- 50% less fat!
 
 ## Reference Site
 
+Check it out:
+
+[design-system.pluralsight.com](http://design-system.pluralsight.com)
+
 To run locally:
 
 ```
