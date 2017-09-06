@@ -1,4 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
+import * as glamor from 'glamor'
 import glamorous, { Div } from 'glamorous'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
@@ -201,20 +202,39 @@ const Overlay = props =>
     onClick={props.onClick}
   />
 
-const Menu = glamorous.div({
-  position: 'absolute',
-  display: 'inline-block',
-  marginLeft: 0,
-  background: core.colors.white,
-  borderRadius: '2px',
-  padding: `${menuPaddingVert} 0`,
-  minWidth: '160px',
-  maxWidth: '320px',
-  // overflow: 'hidden',
-  listStyle: 'none',
-  boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
-  fontSize: core.type.fontSizeSmall
+const slide = glamor.css.keyframes({
+  '100%': {
+    transform: 'translateX(0)',
+    opacity: 1
+  }
 })
+
+const Menu = glamorous.div(
+  {
+    position: 'absolute',
+    display: 'inline-block',
+    marginLeft: 0,
+    background: core.colors.white,
+    borderRadius: '2px',
+    padding: `${menuPaddingVert} 0`,
+    minWidth: '160px',
+    maxWidth: '320px',
+    // overflow: 'hidden',
+    listStyle: 'none',
+    boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
+    fontSize: core.type.fontSizeSmall,
+    opacity: 0,
+    animation: `${slide} ${core.motion.speedNormal} forwards`
+  },
+  ({ origin }) =>
+    [origins.topRight, origins.bottomRight].includes(origin)
+      ? {
+          transform: `translateX(${core.layout.spacingXSmall})`
+        }
+      : {
+          transform: `translateX(calc(-1 * ${core.layout.spacingXSmall}))`
+        }
+)
 
 const calcMenuStyle = origin =>
   ({
@@ -296,27 +316,26 @@ class ActionMenuComponent extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Menu
-          css={{
-            ...calcMenuStyle(this.props.origin),
-            ...this.props.css
-          }}
-          className={this.props.className}
-          onKeyDown={this.handleKeyDown}
-          onKeyUp={this.handleKeyUp}
-        >
-          {React.Children.map(this.props.children, (child, i) =>
-            React.cloneElement(child, {
-              isActive: i === this.state.activeIndex,
-              _i: i,
-              _onFocus: this.handleDividerFocus,
-              _onMouseOver: this.handleItemMouseOver,
-              _origin: this.props.origin
-            })
-          )}
-        </Menu>
-      </div>
+      <Menu
+        css={{
+          ...calcMenuStyle(this.props.origin),
+          ...this.props.css
+        }}
+        className={this.props.className}
+        onKeyDown={this.handleKeyDown}
+        onKeyUp={this.handleKeyUp}
+        origin={this.props.origin}
+      >
+        {React.Children.map(this.props.children, (child, i) =>
+          React.cloneElement(child, {
+            isActive: i === this.state.activeIndex,
+            _i: i,
+            _onFocus: this.handleDividerFocus,
+            _onMouseOver: this.handleItemMouseOver,
+            _origin: this.props.origin
+          })
+        )}
+      </Menu>
     )
   }
 }

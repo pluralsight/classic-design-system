@@ -46,17 +46,19 @@ export default _ =>
     size={Button.sizes.small}
     icon={<Icon id={Icon.ids.more} />}
   />
-  <ActionMenu origin={ActionMenu.origins.topLeft} css={{ position: 'relative' }}>
-    <ActionMenu.Item>
-      One menu item
-    </ActionMenu.Item>
-    <ActionMenu.Item>
-      Two menu item
-    </ActionMenu.Item>
-    <ActionMenu.Item>
-      Three menu item
-    </ActionMenu.Item>
-  </ActionMenu>
+  <div style={{ position: 'relative' }}>
+    <ActionMenu origin={ActionMenu.origins.topLeft} css={{ position: 'relative' }}>
+      <ActionMenu.Item>
+        One menu item
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        Two menu item
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        Three menu item
+      </ActionMenu.Item>
+    </ActionMenu>
+  </div>
 </div>
 `
         ]}
