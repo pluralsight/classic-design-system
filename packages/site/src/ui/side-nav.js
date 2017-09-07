@@ -38,8 +38,8 @@ const InternalLinks = props =>
         <style jsx>{`
       .links {
         border-left: 3px solid ${core.colors.gray01};
-        margin-left: 2px;
-        padding: ${core.layout.spacingXSmall};
+        margin: ${core.layout.spacingSmall} 0 ${core.layout.spacingSmall} 2px;
+        padding: 0 0 0 14px;
         overflow: hidden;
       }
       .link {
