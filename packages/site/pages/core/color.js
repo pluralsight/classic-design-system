@@ -2,7 +2,16 @@ import core from '@pluralsight/ps-design-system-core'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { Chrome, Code, Content, Example, Heading, Link, P } from '../../src/ui'
+import {
+  Chrome,
+  Code,
+  Content,
+  Example,
+  Heading,
+  Link,
+  P,
+  withServerProps
+} from '../../src/ui'
 
 const Palette = props =>
   <div className="palette">
@@ -168,7 +177,7 @@ const Swatch = props =>
 const DarkSwatch = props => <Swatch {...props} />
 const LightSwatch = props => <Swatch {...props} light />
 
-export default _ =>
+export default withServerProps(_ =>
   <Chrome>
     <Content title="Color">
       <Heading size="xxLarge"><h1>Color</h1></Heading>
@@ -277,3 +286,4 @@ export default _ =>
       }
     `}</style>
   </Chrome>
+)

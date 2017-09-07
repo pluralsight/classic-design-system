@@ -10,7 +10,9 @@ import {
   Heading,
   Link,
   P,
-  PageHeading
+  PageHeading,
+  SectionHeading,
+  withServerProps
 } from '../../src/ui'
 
 const Stack = props =>
@@ -70,7 +72,7 @@ const Stack = props =>
     `}</style>
   </div>
 
-export default _ =>
+export default withServerProps(_ =>
   <Chrome>
     <Content title="Row">
 
@@ -86,9 +88,7 @@ export default _ =>
         import Row from '@pluralsight/ps-design-system-row/react'
       </Code>
 
-      <Heading size="large">
-        <h2>On-page example</h2>
-      </Heading>
+      <SectionHeading>On-page example</SectionHeading>
       <P>
         The row is a flexible component that will expand to fit the container
         it's in. The height and width will grow indefinitely. Define your own
@@ -96,9 +96,7 @@ export default _ =>
       </P>
       <Stack />
 
-      <Heading size="large">
-        <h2>Size</h2>
-      </Heading>
+      <SectionHeading>Size</SectionHeading>
       <P>
         The size will determine certain base measurements.
       </P>
@@ -125,9 +123,7 @@ export default _ =>
         ]}
       />
 
-      <Heading size="large">
-        <h2>Image</h2>
-      </Heading>
+      <SectionHeading>Image</SectionHeading>
       <P>
         The image will cover the image area given. Image dimensions outside of
         this space will be clipped.
@@ -171,9 +167,7 @@ export default _ =>
         ]}
       />
 
-      <Heading size="large">
-        <h2>Progress</h2>
-      </Heading>
+      <SectionHeading>Progress</SectionHeading>
       <P>
         Progress, if given, should be a number between 0 and 100 that describes
         the completion level of the content represented on the row.
@@ -203,9 +197,7 @@ export default _ =>
         ]}
       />
 
-      <Heading size="large">
-        <h2>Title</h2>
-      </Heading>
+      <SectionHeading>Title</SectionHeading>
       <P>
         The title can be a string or a link, defined by a special subcomponent.
       </P>
@@ -237,9 +229,7 @@ export default _ =>
         ]}
       />
 
-      <Heading size="large">
-        <h2>Metadata</h2>
-      </Heading>
+      <SectionHeading>Metadata</SectionHeading>
       <P>
         Metadata is free-form strings or displayable elements like links. Each
         bit
@@ -289,9 +279,7 @@ export default _ =>
         ]}
       />
 
-      <Heading size="large">
-        <h2>Action Bar</h2>
-      </Heading>
+      <SectionHeading>Action Bar</SectionHeading>
       <P>
         The action bar contains the on-row affordances a user can take besides
         linking straight to the content. These are usually buttons.
@@ -333,9 +321,7 @@ export default _ =>
         ]}
       />
 
-      <Heading size="large">
-        <h2>Full Overlay</h2>
-      </Heading>
+      <SectionHeading>Full Overlay</SectionHeading>
       <P>
         A special main action representing the main interaction for the row can
         be provided here. It will appear overlaid in the center of the image.
@@ -375,3 +361,4 @@ export default _ =>
       />
     </Content>
   </Chrome>
+)

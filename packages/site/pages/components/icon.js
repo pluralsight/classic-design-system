@@ -9,14 +9,14 @@ import {
   Heading,
   Link,
   P,
-  PageHeading
+  PageHeading,
+  SectionHeading,
+  withServerProps
 } from '../../src/ui'
 
 const CommonSet = props =>
   <div>
-    <Heading size="large">
-      <h2>Common icon set</h2>
-    </Heading>
+    <SectionHeading>Common icon set</SectionHeading>
     <P>
       Current icon set.{' '}
       <Link href="https://github.com/pluralsight/design-system/issues">
@@ -53,7 +53,7 @@ const CommonSet = props =>
     `}</style>
   </div>
 
-export default _ =>
+export default withServerProps(_ =>
   <Chrome>
     <Content title="Icon">
 
@@ -69,9 +69,7 @@ export default _ =>
         import Icon from '@pluralsight/ps-design-system-icon/react'
       </Code>
 
-      <Heading size="large">
-        <h2>Size</h2>
-      </Heading>
+      <SectionHeading>Size</SectionHeading>
       <P>Icons can take on four standard sizes.</P>
       <Example.React
         includes={{ Icon }}
@@ -83,9 +81,7 @@ export default _ =>
         )}
       />
 
-      <Heading size="large">
-        <h2>Color</h2>
-      </Heading>
+      <SectionHeading>Color</SectionHeading>
       <P>
         Icon color will usually match the surrounding text color. It can also be
         overridden to be any fill.
@@ -115,9 +111,7 @@ export default _ =>
 
       <CommonSet />
 
-      <Heading size="large">
-        <h2>Custom SVG</h2>
-      </Heading>
+      <SectionHeading>Custom SVG</SectionHeading>
       <P>
         What an icon that adheres to the style guide but contains your own
         custom
@@ -140,3 +134,4 @@ export default _ =>
       />
     </Content>
   </Chrome>
+)

@@ -1,7 +1,15 @@
 import React from 'react'
-import { Chrome, Code, Content, Doc, P, PageHeading } from '../../src/ui'
+import {
+  Chrome,
+  Code,
+  Content,
+  Doc,
+  P,
+  PageHeading,
+  withServerProps
+} from '../../src/ui'
 
-export default _ =>
+export default withServerProps(_ =>
   <Chrome>
     <Content title="Core Usage">
       <PageHeading>
@@ -59,3 +67,4 @@ For full working examples, please see the [examples on github](https://github.co
 `}</Doc>
     </Content>
   </Chrome>
+)

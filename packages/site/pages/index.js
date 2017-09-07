@@ -2,7 +2,15 @@ import Button from '@pluralsight/ps-design-system-button/react'
 import core from '@pluralsight/ps-design-system-core'
 import Robot from '../src/ui/robot'
 
-import { Chrome, Content, Heading, Link, P, TextLink } from '../src/ui'
+import {
+  Chrome,
+  Content,
+  Heading,
+  Link,
+  P,
+  TextLink,
+  withServerProps
+} from '../src/ui'
 
 const Point = props =>
   <div className="point">
@@ -111,7 +119,7 @@ const Header = props =>
     `}</style>
   </header>
 
-export default _ =>
+export default withServerProps(_ =>
   <Chrome>
     <Header />
     <Content title="Welcome">
@@ -151,3 +159,4 @@ export default _ =>
       }
     `}</style>
   </Chrome>
+)

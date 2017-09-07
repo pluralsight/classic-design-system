@@ -8,10 +8,12 @@ import {
   Heading,
   Link,
   P,
-  PageHeading
+  PageHeading,
+  SectionHeading,
+  withServerProps
 } from '../../src/ui'
 
-export default _ =>
+export default withServerProps(_ =>
   <Chrome>
     <Content title="Badge">
       <PageHeading beta>Badge</PageHeading>
@@ -26,9 +28,7 @@ export default _ =>
         import Badge from '@pluralsight/ps-design-system-badge/react'
       </Code>
 
-      <Heading size="large">
-        <h2>Appearance</h2>
-      </Heading>
+      <SectionHeading>Appearance</SectionHeading>
       <P>In either solid or stroked styles.</P>
       <Example.React
         includes={{ Badge }}
@@ -39,9 +39,7 @@ export default _ =>
         )}
       />
 
-      <Heading size="large">
-        <h2>Colors</h2>
-      </Heading>
+      <SectionHeading>Colors</SectionHeading>
       <P>
         Colors come from the Design System. Semantics come from your heart.
       </P>
@@ -53,3 +51,4 @@ export default _ =>
       />
     </Content>
   </Chrome>
+)

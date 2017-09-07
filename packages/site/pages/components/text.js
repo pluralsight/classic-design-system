@@ -9,10 +9,12 @@ import {
   Heading,
   Link,
   P,
-  PageHeading
+  PageHeading,
+  SectionHeading,
+  withServerProps
 } from '../../src/ui'
 
-export default _ =>
+export default withServerProps(_ =>
   <Chrome>
     <Content title="Text">
 
@@ -28,14 +30,12 @@ export default _ =>
         import * as Text from '@pluralsight/ps-design-system-text/react'
       </Code>
 
-      <Heading size="large"><h2>Heading styles</h2></Heading>
-
+      <SectionHeading>Heading styles</SectionHeading>
       <P>
         Heading styles compose complimentary typography attributes for
         simplified
         implementation. Try to use common heading styles when possible.
       </P>
-
       <Example.React
         orient="vertical"
         includes={{ Text }}
@@ -49,12 +49,8 @@ export default _ =>
         )}
       />
 
-      <Heading size="large">
-        <h2>Body text</h2>
-      </Heading>
-
+      <SectionHeading>Body text</SectionHeading>
       <P>Try to use common paragraph style when possible.</P>
-
       <Example.React
         includes={{ Text }}
         codes={[
@@ -71,12 +67,10 @@ export default _ =>
         orient="vertical"
       />
 
-      <Heading size="large"><h2>List</h2></Heading>
-
+      <SectionHeading>List</SectionHeading>
       <P>
         Nothing fancy, just simple lists. You’ll know when you need them.
       </P>
-
       <Example.React
         includes={{ Text }}
         codes={[
@@ -111,3 +105,4 @@ export default _ =>
       />
     </Content>
   </Chrome>
+)

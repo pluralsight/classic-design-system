@@ -1,5 +1,12 @@
 import core from '@pluralsight/ps-design-system-core'
-import { Chrome, Code, Content, Heading, P } from '../../src/ui'
+import {
+  Chrome,
+  Code,
+  Content,
+  Heading,
+  P,
+  withServerProps
+} from '../../src/ui'
 
 const FontFamily = props =>
   <div>
@@ -145,7 +152,7 @@ const FontSize = props =>
     `}</style>
   </div>
 
-export default _ =>
+export default withServerProps(_ =>
   <Chrome>
     <Content title="Typography">
       <Heading size="xxLarge"><h1>Typography</h1></Heading>
@@ -179,3 +186,4 @@ export default _ =>
       <FontSize />
     </Content>
   </Chrome>
+)

@@ -1,7 +1,14 @@
 import classnames from 'classnames'
 import core from '@pluralsight/ps-design-system-core'
 
-import { Chrome, Code, Content, Heading, P } from '../../src/ui'
+import {
+  Chrome,
+  Code,
+  Content,
+  Heading,
+  P,
+  withServerProps
+} from '../../src/ui'
 
 const increments = [
   { width: 4, label: 'Tiny', varName: 'psLayoutSpacingTiny' },
@@ -198,7 +205,7 @@ const IndividualSpacing = props =>
     `}</style>
   </div>
 
-export default _ =>
+export default withServerProps(_ =>
   <Chrome>
     <Content>
       <Heading size="xxLarge"><h1>Spacing</h1></Heading>
@@ -219,3 +226,4 @@ export default _ =>
       <IndividualSpacing />
     </Content>
   </Chrome>
+)

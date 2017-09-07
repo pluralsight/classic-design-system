@@ -9,10 +9,12 @@ import {
   Heading,
   Link,
   P,
-  PageHeading
+  PageHeading,
+  SectionHeading,
+  withServerProps
 } from '../../src/ui'
 
-export default _ =>
+export default withServerProps(_ =>
   <Chrome>
     <Content title="Button">
 
@@ -28,9 +30,7 @@ export default _ =>
         import Button from '@pluralsight/ps-design-system-button/react'
       </Code>
 
-      <Heading size="large">
-        <h2>Button appearance</h2>
-      </Heading>
+      <SectionHeading>Button appearance</SectionHeading>
       <P>Buttons come in three standard visual styles.</P>
       <Example.React
         includes={{ Button, Icon }}
@@ -42,9 +42,7 @@ export default _ =>
         )}
       />
 
-      <Heading size="large">
-        <h2>Button sizes</h2>
-      </Heading>
+      <SectionHeading>Button size</SectionHeading>
       <P>Buttons come in four standard sizes. The default size is 'medium'.</P>
       <Example.React
         includes={{ Button, Icon }}
@@ -53,9 +51,7 @@ export default _ =>
         )}
       />
 
-      <Heading size="large">
-        <h2>Button with icon</h2>
-      </Heading>
+      <SectionHeading>Button with icon</SectionHeading>
       <P>
         Buttons may include an icon to the left or right of the label. Find out
         more about icons <Link href="/components/icon">here</Link>.
@@ -69,9 +65,7 @@ export default _ =>
         ]}
       />
 
-      <Heading size="large">
-        <h2>Button with lone icon</h2>
-      </Heading>
+      <SectionHeading>Button with lone icon</SectionHeading>
       <P>
         Buttons may include an icon without a label. Find out more about icons{' '}
         <Link href="/components/icon">here</Link>.
@@ -83,14 +77,12 @@ export default _ =>
           `
 <Button
   icon={<Icon id={Icon.ids.user} />}
-  appearance={Button.apperances.flat}
+  appearance={Button.appearances.flat}
 />`
         ]}
       />
 
-      <Heading size="large">
-        <h2>Disabled button</h2>
-      </Heading>
+      <SectionHeading>Disabled button</SectionHeading>
       <P>
         Each button may be displayed as disabled. Do not use disabled treatment
         for non-disabled buttons.
@@ -99,11 +91,12 @@ export default _ =>
         includes={{ Button, Icon }}
         codes={[
           `<Button disabled>Disabled</Button>`,
-          `<Button disabled appearance={Button.apperances.stroke}>Disabled</Button>`,
-          `<Button disabled appearance={Button.apperances.flat}>Disabled</Button>`,
+          `<Button disabled appearance={Button.appearances.stroke}>Disabled</Button>`,
+          `<Button disabled appearance={Button.appearances.flat}>Disabled</Button>`,
           `<Button disabled icon={<Icon id={Icon.ids.pencil} />}>Disabled</Button>`
         ]}
       />
 
     </Content>
   </Chrome>
+)

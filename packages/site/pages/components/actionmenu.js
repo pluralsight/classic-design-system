@@ -10,10 +10,12 @@ import {
   Heading,
   Link,
   P,
-  PageHeading
+  PageHeading,
+  SectionHeading,
+  withServerProps
 } from '../../src/ui'
 
-export default _ =>
+export default withServerProps(_ =>
   <Chrome>
     <Content title="Action Menu">
       <PageHeading beta>Action Menu</PageHeading>
@@ -28,9 +30,7 @@ export default _ =>
         import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
       </Code>
 
-      <Heading size="large">
-        <h2>Action menu triggers</h2>
-      </Heading>
+      <SectionHeading>Action menu triggers</SectionHeading>
       <P>
         Menus can originate from various affordance types: buttons, dropdowns,
         and stand-alone icons. All menus left align with the affordance by
@@ -64,9 +64,7 @@ export default _ =>
         ]}
       />
 
-      <Heading size="large">
-        <h2>Icon menu items</h2>
-      </Heading>
+      <SectionHeading>Icon menu items</SectionHeading>
       <P>Use icons to add conext and recognition to action menu items.</P>
       <Example.React
         includes={{ ActionMenu, Icon }}
@@ -87,9 +85,7 @@ export default _ =>
         ]}
       />
 
-      <Heading size="large">
-        <h2>Dividers</h2>
-      </Heading>
+      <SectionHeading>Dividers</SectionHeading>
       <P>
         Dividers can be useful to separate similar actions. Dividers are applied
         at the li level, below the assigned list item.
@@ -118,9 +114,7 @@ export default _ =>
         ]}
       />
 
-      <Heading size="large">
-        <h2>Nested menus</h2>
-      </Heading>
+      <SectionHeading>Nested menus</SectionHeading>
       <P>
         Nested menu lists may spawn from parent menu list items.
       </P>
@@ -206,3 +200,4 @@ export default _ =>
 
     </Content>
   </Chrome>
+)

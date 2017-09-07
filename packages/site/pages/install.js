@@ -1,8 +1,16 @@
 import core from '@pluralsight/ps-design-system-core'
 
-import { Chrome, Code, Content, Doc, Heading, P } from '../src/ui'
+import {
+  Chrome,
+  Code,
+  Content,
+  Doc,
+  Heading,
+  P,
+  withServerProps
+} from '../src/ui'
 
-export default _ =>
+export default withServerProps(_ =>
   <Chrome>
     <Content title="Install">
       <Heading size="xxLarge">
@@ -55,3 +63,4 @@ For full, working project examples, see [github](https://github.com/pluralsight/
 `}</Doc>
     </Content>
   </Chrome>
+)

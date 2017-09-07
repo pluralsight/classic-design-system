@@ -1,6 +1,8 @@
 import core from '@pluralsight/ps-design-system-core'
+import PropTypes from 'prop-types'
 
 import Link from './link'
+import { withHeadings } from './content'
 
 const Group = props =>
   <div className="group">
@@ -27,15 +29,52 @@ const GroupTitle = props =>
     `}</style>
   </div>
 
-const NavLink = props =>
-  <div className="navLink">
-    <Link href={props.href}>
-      <span className="link">
-        <span aria-hidden="true" className="box" />
-        {props.children}
-      </span>
-    </Link>
-    <style jsx>{`
+const InternalLinks = props =>
+  Array.isArray(props.headings)
+    ? <div className="links">
+        {props.headings.map(h =>
+          <a className="link" href={h.href} key={h.href}>{h.label}</a>
+        )}
+        <style jsx>{`
+      .links {
+        border-left: 3px solid ${core.colors.gray01};
+        margin-left: 2px;
+        padding: ${core.layout.spacingXSmall};
+        overflow: hidden;
+      }
+      .link {
+        display: block;
+        font-size: ${core.type.fontSizeXSmall};
+        line-height: ${core.type.lineHeightStandard};
+        color: ${core.colors.gray02};
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all ${core.motion.speedFastest} ease-in-out;
+      }
+      .link:hover {
+        color: ${core.colors.black};
+        text-decoration: none;
+      }
+    `}</style>
+      </div>
+    : null
+
+class NavLink extends React.Component {
+  render() {
+    const isActive =
+      (typeof window != 'undefined' &&
+        window.location.pathname === this.props.href) ||
+      this.context.pathname === this.props.href
+    return (
+      <div className="navLink">
+        <Link href={this.props.href}>
+          <span className={`link ${isActive ? 'linkActive' : ''}`}>
+            <span aria-hidden="true" className="box" />
+            {this.props.children}
+          </span>
+        </Link>
+        {isActive && <InternalLinks headings={this.props.headings} />}
+        <style jsx>{`
       .navLink {
         padding-left: 14px; /* TODO: how to handle additive spacing scenarios? */
       }
@@ -78,7 +117,13 @@ const NavLink = props =>
         margin-right: 12px;
       }
     `}</style>
-  </div>
+      </div>
+    )
+  }
+}
+NavLink.contextTypes = {
+  pathname: PropTypes.string
+}
 
 const LogoSvg = props =>
   <svg
@@ -169,7 +214,7 @@ const Logo = _ =>
     `}</style>
   </div>
 
-export default _ =>
+export default withHeadings(props =>
   <div className="sidenav">
     <Logo />
     <Group>
@@ -185,14 +230,20 @@ export default _ =>
     </Group>
     <Group>
       <GroupTitle>COMPONENTS</GroupTitle>
-      <NavLink href="/components/actionmenu">Action Menu</NavLink>
-      <NavLink href="/components/badge">Badge</NavLink>
-      <NavLink href="/components/button">Button</NavLink>
-      <NavLink href="/components/card">Card</NavLink>
-      <NavLink href="/components/icon">Icon</NavLink>
-      <NavLink href="/components/row">Row</NavLink>
-      <NavLink href="/components/tab">Tab</NavLink>
-      <NavLink href="/components/text">Text</NavLink>
+      <NavLink href="/components/actionmenu" headings={props.headings}>
+        Action Menu
+      </NavLink>
+      <NavLink href="/components/badge" headings={props.headings}>
+        Badge
+      </NavLink>
+      <NavLink href="/components/button" headings={props.headings}>
+        Button
+      </NavLink>
+      <NavLink href="/components/card" headings={props.headings}>Card</NavLink>
+      <NavLink href="/components/icon" headings={props.headings}>Icon</NavLink>
+      <NavLink href="/components/row" headings={props.headings}>Row</NavLink>
+      <NavLink href="/components/tab" headings={props.headings}>Tab</NavLink>
+      <NavLink href="/components/text" headings={props.headings}>Text</NavLink>
     </Group>
     <style jsx>{`
       .root {
@@ -209,3 +260,4 @@ export default _ =>
       }
     `}</style>
   </div>
+)

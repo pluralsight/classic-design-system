@@ -9,10 +9,11 @@ import {
   Heading,
   Link,
   P,
-  PageHeading
+  PageHeading,
+  withServerProps
 } from '../../src/ui'
 
-export default _ =>
+export default withServerProps(_ =>
   <Chrome>
     <Content title="Tab">
 
@@ -41,3 +42,4 @@ export default _ =>
 
     </Content>
   </Chrome>
+)
