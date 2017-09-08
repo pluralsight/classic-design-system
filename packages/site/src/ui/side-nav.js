@@ -30,7 +30,7 @@ const GroupTitle = props =>
   </div>
 
 const InternalLinks = props =>
-  Array.isArray(props.headings)
+  Array.isArray(props.headings) && props.headings.length > 0
     ? <div className="links">
         {props.headings.map(h =>
           <a className="link" href={h.href} key={h.href}>{h.label}</a>
