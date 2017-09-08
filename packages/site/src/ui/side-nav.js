@@ -37,19 +37,27 @@ const InternalLinks = props =>
         )}
         <style jsx>{`
       .links {
-        border-left: 3px solid ${core.colors.gray01};
-        margin: ${core.layout.spacingSmall} 0 ${core.layout.spacingSmall} 2px;
-        padding: 0 0 0 14px;
+        border-left: 1px solid ${core.colors.gray01};
+        margin: ${core.layout.spacingSmall} 0 ${core.layout.spacingSmall} ${core.layout.spacingTiny};
+        padding: 0 0 0 ${core.layout.spacingMedium};
         overflow: hidden;
       }
       .link {
         display: block;
         font-size: ${core.type.fontSizeXSmall};
-        line-height: ${core.type.lineHeightStandard};
-        color: ${core.colors.gray02};
+        line-height: ${core.type.lineHeightExtra};
+        color: ${core.colors.gray03};
         white-space: nowrap;
         cursor: pointer;
         transition: all ${core.motion.speedFastest} ease-in-out;
+      }
+      .link:first-child {
+        line-height: 10px;
+        padding-bottom: ${core.layout.spacingSmall};
+      }
+      .link:last-child {
+        line-height: 10px;
+        padding-top: ${core.layout.spacingSmall};
       }
       .link:hover {
         color: ${core.colors.black};
