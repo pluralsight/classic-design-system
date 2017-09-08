@@ -142,6 +142,7 @@ class ItemComponent extends React.Component {
     return (
       <div>
         <Item
+          aria-haspopup={!!this.props.nested}
           css={this.props.css}
           className={this.props.className}
           iconId={this.props.iconId}
@@ -151,6 +152,7 @@ class ItemComponent extends React.Component {
           onClick={this.props.onClick}
           onKeyDown={this.handleKeyDown}
           onMouseOver={this.handleMouseOver}
+          role="menuitem"
         >
           {this.props.iconId && <IconComponent iconId={this.props.iconId} />}
           {this.props.children}
@@ -326,6 +328,7 @@ class ActionMenuComponent extends React.Component {
         onKeyUp={this.handleKeyUp}
         origin={this.props.origin}
         innerRef={this.props.ref}
+        role="menu"
       >
         {React.Children.map(this.props.children, (child, i) =>
           React.cloneElement(child, {
