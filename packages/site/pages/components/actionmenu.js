@@ -30,7 +30,7 @@ export default withServerProps(_ =>
         import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
       </Code>
 
-      <SectionHeading>Action menu triggers</SectionHeading>
+      <SectionHeading>Triggers</SectionHeading>
       <P>
         Menus can originate from various affordance types: buttons, dropdowns,
         and stand-alone icons. All menus left align with the affordance by
@@ -64,7 +64,7 @@ export default withServerProps(_ =>
         ]}
       />
 
-      <SectionHeading>Icon menu items</SectionHeading>
+      <SectionHeading>Icons</SectionHeading>
       <P>Use icons to add conext and recognition to action menu items.</P>
       <Example.React
         includes={{ ActionMenu, Icon }}
@@ -114,7 +114,7 @@ export default withServerProps(_ =>
         ]}
       />
 
-      <SectionHeading>Nested menus</SectionHeading>
+      <SectionHeading>Nesting</SectionHeading>
       <P>
         Nested menu lists may spawn from parent menu list items.
       </P>

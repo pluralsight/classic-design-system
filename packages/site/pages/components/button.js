@@ -30,7 +30,7 @@ export default withServerProps(_ =>
         import Button from '@pluralsight/ps-design-system-button/react'
       </Code>
 
-      <SectionHeading>Button appearance</SectionHeading>
+      <SectionHeading>Appearance</SectionHeading>
       <P>Buttons come in three standard visual styles.</P>
       <Example.React
         includes={{ Button, Icon }}
@@ -42,7 +42,7 @@ export default withServerProps(_ =>
         )}
       />
 
-      <SectionHeading>Button size</SectionHeading>
+      <SectionHeading>Size</SectionHeading>
       <P>Buttons come in four standard sizes. The default size is 'medium'.</P>
       <Example.React
         includes={{ Button, Icon }}
@@ -51,7 +51,7 @@ export default withServerProps(_ =>
         )}
       />
 
-      <SectionHeading>Button with icon</SectionHeading>
+      <SectionHeading>Icon</SectionHeading>
       <P>
         Buttons may include an icon to the left or right of the label. Find out
         more about icons <Link href="/components/icon">here</Link>.
@@ -65,7 +65,7 @@ export default withServerProps(_ =>
         ]}
       />
 
-      <SectionHeading>Button with lone icon</SectionHeading>
+      <SectionHeading>Icon only</SectionHeading>
       <P>
         Buttons may include an icon without a label. Find out more about icons{' '}
         <Link href="/components/icon">here</Link>.
@@ -82,7 +82,7 @@ export default withServerProps(_ =>
         ]}
       />
 
-      <SectionHeading>Disabled button</SectionHeading>
+      <SectionHeading>Disabled</SectionHeading>
       <P>
         Each button may be displayed as disabled. Do not use disabled treatment
         for non-disabled buttons.

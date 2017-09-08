@@ -88,7 +88,7 @@ export default withServerProps(_ =>
         import Row from '@pluralsight/ps-design-system-row/react'
       </Code>
 
-      <SectionHeading>On-page example</SectionHeading>
+      <SectionHeading>In-app example</SectionHeading>
       <P>
         The row is a flexible component that will expand to fit the container
         it's in. The height and width will grow indefinitely. Define your own

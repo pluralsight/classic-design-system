@@ -30,7 +30,7 @@ export default withServerProps(_ =>
         import * as Text from '@pluralsight/ps-design-system-text/react'
       </Code>
 
-      <SectionHeading>Heading styles</SectionHeading>
+      <SectionHeading>Heading</SectionHeading>
       <P>
         Heading styles compose complimentary typography attributes for
         simplified

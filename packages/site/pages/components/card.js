@@ -119,7 +119,7 @@ export default withServerProps(_ =>
         import Card from '@pluralsight/ps-design-system-card/react'
       </Code>
 
-      <SectionHeading>On-page example</SectionHeading>
+      <SectionHeading>In-app example</SectionHeading>
       <P>
         The card is a flexible component that will fit the container it's given
         within certain bounds. A carousel is a common container layout that
