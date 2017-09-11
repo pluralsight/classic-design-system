@@ -36,11 +36,17 @@ const InternalLinks = props =>
           <a className="link" href={h.href} key={h.href}>{h.label}</a>
         )}
         <style jsx>{`
+      @keyframes grow {
+        100% { height: auto; }
+      }
       .links {
         border-left: 1px solid ${core.colors.gray01};
-        margin: ${core.layout.spacingSmall} 0 ${core.layout.spacingSmall} ${core.layout.spacingTiny};
+        margin: ${core.layout.spacingSmall} 0 ${core.layout.spacingSmall} ${core
+          .layout.spacingTiny};
         padding: 0 0 0 ${core.layout.spacingMedium};
         overflow: hidden;
+        height: 0;
+        animation: grow ${core.motion.speedSlowest} forwards;
       }
       .link {
         display: block;
