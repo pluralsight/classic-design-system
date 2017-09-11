@@ -41,7 +41,7 @@ export default class Doc extends React.Component {
   }
   handleLinkClick(evt) {
     const href = evt.target.getAttribute('href')
-    if (/http/.test(href)) return
+    if (/\w+:\/\//.test(href)) return
 
     evt.preventDefault()
     Router.push(href)

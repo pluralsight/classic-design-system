@@ -148,19 +148,19 @@ export default withServerProps(_ =>
       <LevelHeading>Guide</LevelHeading>
       <Doc>{`
 ### Ask for a feature
-Jump on the Github project, and let us know what you need from the Design System.  Once we know what you need, we can work with you to make it more helpful to you.
+Jump on the [Github project](https://github.com/pluralsight/design-system), and let us know what you need from the Design System.  Once we know what you need, we can work with you to make it more helpful to you.
 
 ### Report a bug
-The Design System is used in many places.  We have a hard time keeping our eyes on all of them to keep up with the issues you’re having.  If you see something amiss, please report it via a Github issue so we have insight in order to resolve it.
+The Design System is used in many places.  We have a hard time keeping our eyes on all of them to keep up with the issues you’re having.  If you see something amiss, please report it via a [Github issue](https://github.com/pluralsight/design-system/issues/new) so we have insight in order to resolve it.
 
 ### Offer design direction
-Maybe you have a visual, interactive, or code design insight.  We’d love to chat about your ideas and see how they might fit and be used to improve the Design System.   Join #design-system-dev and share.
+Maybe you have a visual, interactive, or code design insight.  We’d love to chat about your ideas and see how they might fit and be used to improve the Design System.   Join [#design-system-dev](slack://channel?team=pluralsight&id=design-system-dev) and share.
 `}</Doc>
 
       <LevelHeading>Adopt</LevelHeading>
       <Doc>{`
 ### Install it
-Pull out the trusty npm install and use the Design System.  Get it into your project and offload the creation and maintenance of these UI building blocks to a shared library.
+Pull out the trusty [npm install](/install) and use the Design System.  Get it into your project and offload the creation and maintenance of these UI building blocks to a shared library.
 
 ### Design with it
 Use the Design System in your compositions.  When your application designs match the Style Guide (and thus the Design System), you make implementing an app-wide consistent UI straightforward and a joy to write.
@@ -175,7 +175,7 @@ Plan for Design System integration.  If the Design System has elements in it tha
 If you’ve had a good experience with the Design System, share that.  You can help your team and other teams have the same benefits you have had.  The benefit remains locked up in the Design System until teams know about it and try it out.
 
 ### Answer questions
-The Design System has a broad and growing surface area.  You have had an experience with it that gives you the opportunity to help others.  Be ready to help your teammates and others.  Jump into #design-system-help and answer questions that are brought up.  As we share our knowledge, there are more people around to help with us.
+The Design System has a broad and growing surface area.  You have had an experience with it that gives you the opportunity to help others.  Be ready to help your teammates and others.  Jump into [#design-system-help](slack://channel?team=pluralsight&id=design-system-help) and answer questions that are brought up.  As we share our knowledge, there are more people around to help with us.
 
 ### Assist an integration
 We’ve made special effort to make the Design System easy to get started with, but the first steps are always the hardest.  Sit down and spend some time with someone making their first integration.
