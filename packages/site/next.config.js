@@ -3,6 +3,7 @@ module.exports = {
   exportPathMap: function() {
     return {
       '/': { page: '/' },
+      '/contribute': { page: '/contribute' },
       '/install': { page: '/install' },
       '/components/actionmenu': { page: '/components/actionmenu' },
       '/components/badge': { page: '/components/badge' },
