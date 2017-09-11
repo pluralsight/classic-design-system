@@ -3,8 +3,8 @@ module.exports = {
   exportPathMap: function() {
     return {
       '/': { page: '/' },
-      '/contribute': { page: '/contribute' },
       '/install': { page: '/install' },
+      '/contribute': { page: '/contribute' },
       '/components/actionmenu': { page: '/components/actionmenu' },
       '/components/badge': { page: '/components/badge' },
       '/components/button': { page: '/components/button' },
