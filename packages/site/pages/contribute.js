@@ -14,8 +14,7 @@ const Bar = props =>
   <div className="bar" style={props.style}>
     <style jsx>{`
       .bar {
-         margin: ${core.layout.spacingXSmall} auto ${core.layout
-      .spacingSmall} auto;
+         margin: ${core.layout.spacingXSmall} 0;
          height: 5px;
          background: ${core.colors.gradientHorz};
       }
@@ -46,10 +45,9 @@ const Level = props =>
         margin: calc(${core.layout.spacingLarge} / 2);
         background: ${core.colors.bone};
         color: ${core.colors.gray06};
-        text-align: center;
+        text-align: left;
         display: flex;
         flex-direction: column;
-        align-items: center;
         border-radius: 12px;
         overflow: hidden;
       }
@@ -60,10 +58,11 @@ Level.Title = props =>
   <div>
     <h3 className="title">
       {props.children}
+      <Bar />
     </h3>
-    <Bar style={{ width: '70%' }} />
     <style jsx>{`
       .title {
+        display: inline-block;
         font-weight: ${core.type.fontWeightBold}
         text-transform: uppercase;
       }
@@ -76,22 +75,25 @@ Level.Desc = props =>
     <style jsx>{`  `}</style>
   </div>
 
-const LevelHeading = props =>
-  <div className="heading">
-    <SectionHeading>{props.children}</SectionHeading>
-    <Bar
-      style={{ width: '50%', margin: `${core.layout.spacingSmall} auto 0 0` }}
-    />
-    <style jsx>{`  `}</style>
+const LevelHeading = props => <SectionHeading>{props.children}</SectionHeading>
+
+const LevelList = props =>
+  <div className="list">
+    {props.children}
+    <style jsx>{`
+      .list {
+        padding-bottom: ${core.layout.spacingXLarge};
+        border-bottom: 1px solid ${core.colors.gray01};
+        margin-bottom: ${core.layout.spacingSmall};
+      }
+    `}</style>
   </div>
+
 export default withServerProps(_ =>
   <Chrome>
     <Content title="Install">
       <Heading size="xxLarge">
         <h1>Contribute</h1>
-      </Heading>
-      <Heading size="large">
-        <h2>Contribute in Your Best Way</h2>
       </Heading>
       <P>
         The Design System is a project that can help the whole company and needs
@@ -141,12 +143,9 @@ export default withServerProps(_ =>
         </Level>
       </Levels>
 
-      <Heading size="large">
-        <h2>Find a Way to Contribute</h2>
-      </Heading>
-
-      <LevelHeading>Guide</LevelHeading>
-      <Doc>{`
+      <LevelList>
+        <LevelHeading>Guide</LevelHeading>
+        <Doc>{`
 ### Ask for a feature
 Jump on the [Github project](https://github.com/pluralsight/design-system), and let us know what you need from the Design System.  Once we know what you need, we can work with you to make it more helpful to you.
 
@@ -156,9 +155,11 @@ The Design System is used in many places.  We have a hard time keeping our eyes 
 ### Offer design direction
 Maybe you have a visual, interactive, or code design insight.  We’d love to chat about your ideas and see how they might fit and be used to improve the Design System.   Join [#design-system-dev](slack://channel?team=pluralsight&id=design-system-dev) and share.
 `}</Doc>
+      </LevelList>
 
-      <LevelHeading>Adopt</LevelHeading>
-      <Doc>{`
+      <LevelList>
+        <LevelHeading>Adopt</LevelHeading>
+        <Doc>{`
 ### Install it
 Pull out the trusty [npm install](/install) and use the Design System.  Get it into your project and offload the creation and maintenance of these UI building blocks to a shared library.
 
@@ -168,9 +169,11 @@ Use the Design System in your compositions.  When your application designs match
 ### Plan for it
 Plan for Design System integration.  If the Design System has elements in it that will help you go faster, plan on that -- it’s an essential Design System goal.  If the Design System doesn’t have the elements you need, consider planning in time as a team to help create the part of the Design System that you and everyone could use.
 `}</Doc>
+      </LevelList>
 
-      <LevelHeading>Share</LevelHeading>
-      <Doc>{`
+      <LevelList>
+        <LevelHeading>Share</LevelHeading>
+        <Doc>{`
 ### Promote it
 If you’ve had a good experience with the Design System, share that.  You can help your team and other teams have the same benefits you have had.  The benefit remains locked up in the Design System until teams know about it and try it out.
 
@@ -180,6 +183,7 @@ The Design System has a broad and growing surface area.  You have had an experie
 ### Assist an integration
 We’ve made special effort to make the Design System easy to get started with, but the first steps are always the hardest.  Sit down and spend some time with someone making their first integration.
 `}</Doc>
+      </LevelList>
 
       <LevelHeading>Create</LevelHeading>
       <Doc>{`
