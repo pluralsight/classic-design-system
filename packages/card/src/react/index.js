@@ -1,43 +1,94 @@
 import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import glamorous from 'glamorous'
-import { transparentize } from 'polished'
+import PropTypes from 'prop-types'
 import React from 'react'
 import Shiitake from 'shiitake'
-import voidElements from 'void-elements'
+import { transparentize } from 'polished'
 
 const sizes = { small: 'small', medium: 'medium', large: 'large' }
 
-const styleSize = ({ size }) =>
-  ({
-    [sizes.small]: {
-      minWidth: 120,
-      maxWidth: 240
-    },
-    [sizes.medium]: {
-      minWidth: 240,
-      maxWidth: 440
-    },
-    [sizes.large]: {
-      minWidth: 440,
-      maxWidth: 680
-    }
-  }[size])
+const TextLink = glamorous.span({
+  pointerEvents: 'all',
+  '& a': {
+    color: 'inherit',
+    cursor: 'pointer',
+    textDecoration: 'none'
+  },
+  '& a:hover, & a:active': {
+    color: core.colors.white,
+    textDecoration: 'underline',
+    transition: `all ${core.motion.speedNormal}`
+  }
+})
+TextLink.displayName = 'Card.TextLink'
+
+const Text = glamorous.span()
+Text.displayName = 'Card.Text'
+
+const ImageLink = glamorous.span({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  width: '100%',
+  height: '100%',
+  pointerEvents: 'all',
+  '& a': {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%',
+    width: '100%',
+    textDecoration: 'none',
+    transition: `all ${core.motion.speedNormal}`
+  }
+})
+ImageLink.displayName = 'Row.ImageLink'
+
+const ImageDiv = glamorous.div({
+  width: '100%',
+  height: '100%',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat'
+})
+
+const Image = props =>
+  <ImageDiv css={{ backgroundImage: `url(${props.src})` }} />
+Image.displayName = 'Row.Image'
+
+const FullOverlayLinkSpan = glamorous.span({
+  pointerEvents: 'all',
+  color: core.colors.white,
+  '> a': {
+    display: 'flex'
+  }
+})
+const FullOverlayLink = props =>
+  <FullOverlayLinkSpan>{props.children}</FullOverlayLinkSpan>
+FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
 const Card = glamorous.div(
   {
     width: '100%',
     textAlign: 'left'
   },
-  styleSize
+  ({ size }) =>
+    ({
+      [sizes.small]: {
+        minWidth: 120,
+        maxWidth: 240
+      },
+      [sizes.medium]: {
+        minWidth: 240,
+        maxWidth: 440
+      },
+      [sizes.large]: {
+        minWidth: 440,
+        maxWidth: 680
+      }
+    }[size])
 )
-
-const styleOverlaysSize = ({ size }) =>
-  ({
-    [sizes.small]: { height: '96px' },
-    [sizes.medium]: { height: '144px' },
-    [sizes.large]: { height: '240px' }
-  }[size])
 
 const Overlays = glamorous.div(
   {
@@ -50,48 +101,15 @@ const Overlays = glamorous.div(
       opacity: 1
     }
   },
-  styleOverlaysSize
+  ({ size }) =>
+    ({
+      [sizes.small]: { height: '96px' },
+      [sizes.medium]: { height: '144px' },
+      [sizes.large]: { height: '240px' }
+    }[size])
 )
 
-const ImageFrame = glamorous.div({
-  position: 'relative',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  height: '100%',
-  width: '100%',
-  overflow: 'hidden',
-  backgroundColor: core.colors.black
-})
-
-const imageStyles = glamor.css({
-  position: 'relative',
-  objectFit: 'cover',
-  minHeight: '100%',
-  minWidth: '100%'
-})
-
-const renderImage = props =>
-  props.image
-    ? <ImageFrame>
-        {React.cloneElement(props.image, {
-          ...imageStyles,
-          className: props.image.props.className,
-          ...(voidElements[props.image.type]
-            ? {}
-            : {
-                children: React.Children.map(
-                  props.image.props.children,
-                  child =>
-                    React.cloneElement(child, {
-                      ...imageStyles,
-                      className: child.props.className
-                    })
-                )
-              })
-        })}
-      </ImageFrame>
-    : null
+const renderImage = props => (props.image ? props.image : null)
 
 const styleFullOverlayFullOverlayVisible = ({ fullOverlayVisible }) =>
   fullOverlayVisible ? { opacity: 1 } : {}
@@ -117,18 +135,9 @@ const FullOverlay = glamorous.div(
 const renderFullOverlay = props =>
   props.fullOverlay
     ? <FullOverlay fullOverlayVisible={props.fullOverlayVisible}>
-        {React.cloneElement(props.fullOverlay, {
-          ...glamor.css({ pointerEvents: 'all' }),
-          className: props.fullOverlay.props.className
-        })}
+        {props.fullOverlay}
       </FullOverlay>
     : null
-
-const styleActionBarFullOverlay = ({ fullOverlay, actionBarVisible }) =>
-  fullOverlay && !actionBarVisible ? { background: 'none' } : {}
-
-const styleActionBarActionBarVisible = ({ actionBarVisible }) =>
-  actionBarVisible ? { opacity: 1 } : {}
 
 const ActionBar = glamorous.div(
   {
@@ -149,16 +158,45 @@ const ActionBar = glamorous.div(
     pointerEvents: 'none',
     opacity: 0
   },
-  styleActionBarFullOverlay,
-  styleActionBarActionBarVisible
+  ({ fullOverlay, actionBarVisible }) =>
+    fullOverlay && !actionBarVisible ? { background: 'none' } : {},
+  ({ actionBarVisible }) => (actionBarVisible ? { opacity: 1 } : {})
 )
 
-const ActionBarAction = glamorous.div({
-  pointerEvents: 'all',
-  '& + &': {
-    marginLeft: core.layout.spacingTiny
-  }
-})
+const ActionBarAction = props => <ActionButton>{props.icon}</ActionButton>
+
+const ActionButton = glamorous.button(
+  {
+    pointerEvents: 'all',
+    fontSize: core.type.fontSizeXSmall,
+    padding: 0,
+    cursor: 'pointer',
+    border: 'none',
+    color: transparentize(0.2, core.colors.white),
+    background: 'none',
+    transition: `all ${core.motion.speedNormal}`,
+    ':hover, :active': {
+      color: core.colors.white
+    },
+    '& + &': {
+      marginLeft: core.layout.spacingTiny
+    }
+  },
+  ({ disabled }) =>
+    disabled
+      ? {
+          color: core.colors.gray02,
+          background: core.colors.gray03,
+          ':hover': {
+            color: core.colors.gray02,
+            background: core.colors.gray03
+          }
+        }
+      : null
+)
+ActionBarAction.propTypes = {
+  icon: PropTypes.element.isRequired
+}
 
 const renderActionBar = props =>
   Array.isArray(props.actionBar) && props.actionBar.length > 0
@@ -167,33 +205,15 @@ const renderActionBar = props =>
         fullOverlay={props.fullOverlay}
         fullOverlayVisible={props.fullOverlayVisible}
       >
-        {React.Children.map(props.actionBar, (action, i) =>
-          <ActionBarAction>
-            {React.cloneElement(action, {
-              ...glamor.css({
-                ':hover, :active': {
-                  background: 'none !important',
-                  '> svg': {
-                    fill: core.colors.white
-                  }
-                },
-                '> svg': {
-                  fill: transparentize(0.2, core.colors.white),
-                  transition: `all ${core.motion.speedNormal}`
-                }
-              }),
-              key: i,
-              size: 'small'
-            })}
-          </ActionBarAction>
-        )}
+        {props.actionBar}
       </ActionBar>
     : null
 
 const BonusBar = glamorous.div({
   position: 'absolute',
   bottom: core.layout.spacingSmall,
-  left: core.layout.spacingSmall
+  left: core.layout.spacingSmall,
+  color: core.colors.white
 })
 
 const renderBonusBar = props =>
@@ -203,43 +223,37 @@ const renderBonusBar = props =>
       </BonusBar>
     : null
 
-const Tag = glamorous.div({
+const TagDiv = glamorous.div({
   display: 'flex',
-  justifyContent: 'flex-start',
   alignItems: 'center',
   position: 'absolute',
   top: core.layout.spacingSmall,
   left: 0,
   padding: `${core.layout.spacingTiny} ${core.layout.spacingXSmall}`,
   background: core.colors.gray04,
-  borderRadius: '0 2px 2px 0'
+  borderRadius: '0 2px 2px 0',
+  color: core.colors.white,
+  textTransform: 'uppercase',
+  fontSize: '10px',
+  lineHeight: '16px'
 })
 
-const isNativeElement = el => el && typeof el.type === 'string'
+const TagIcon = glamorous.div({
+  display: 'flex',
+  alignItems: 'center',
+  marginRight: core.layout.spacingXSmall
+})
 
-const isAnchorElement = el => isNativeElement(el) && el.type === 'a'
+const Tag = props =>
+  <TagDiv>
+    {props.icon &&
+      <TagIcon>{React.cloneElement(props.icon, { size: 'xSmall' })}</TagIcon>}
+    <span>{props.children}</span>
+  </TagDiv>
+Tag.displayName = 'Card.Tag'
 
 const renderTag = props =>
-  props.tag && props.size !== 'small'
-    ? <Tag>
-        {React.Children.map(props.tag, (part, i) =>
-          React.cloneElement(part, {
-            ...glamor.css({
-              color: core.colors.whitek,
-              textTransform: 'uppercase',
-              fontSize: '10px',
-              lineHeight: '16px',
-              '& + &': {
-                marginLeft: core.layout.spacingXSmall
-              }
-            }),
-            className: part.props.className,
-            key: i,
-            size: 'xSmall'
-          })
-        )}
-      </Tag>
-    : null
+  props.tag && props.size !== 'small' ? props.tag : null
 
 const Progress = glamorous.div({
   position: 'absolute',
@@ -260,13 +274,6 @@ const percent = num => {
   }
 }
 
-const styleProgressBarProgress = ({ progress }) => ({
-  backgroundColor: percent(progress) == '100%'
-    ? core.colors.green
-    : core.colors.white,
-  width: percent(progress)
-})
-
 const ProgressBar = glamorous.div(
   {
     position: 'absolute',
@@ -275,7 +282,12 @@ const ProgressBar = glamorous.div(
     width: '0%',
     height: '5px'
   },
-  styleProgressBarProgress
+  ({ progress }) => ({
+    backgroundColor: percent(progress) == '100%'
+      ? core.colors.green
+      : core.colors.white,
+    width: percent(progress)
+  })
 )
 
 const renderProgress = props =>
@@ -288,16 +300,16 @@ const renderProgress = props =>
       </Progress>
     : null
 
-const styleTitle = ({ size }) =>
-  glamor.css(
-    {
-      display: 'block',
-      marginTop: core.layout.spacingXSmall,
-      fontWeight: core.type.fontWeightMedium,
-      overflow: 'hidden',
-      color: core.colors.white
-    },
-    {
+const TitleDiv = glamorous.div(
+  {
+    display: 'block',
+    paddingTop: core.layout.spacingXSmall,
+    fontWeight: core.type.fontWeightMedium,
+    overflow: 'hidden',
+    color: core.colors.white
+  },
+  ({ size }) =>
+    ({
       small: {
         fontSize: core.type.fontSizeXSmall,
         lineHeight: core.lineHeightTight
@@ -310,48 +322,19 @@ const styleTitle = ({ size }) =>
         fontSize: core.type.fontSizeMedium,
         lineHeight: core.lineHeightStandard
       }
-    }[size]
-  )
+    }[size])
+)
 
-const linkStyles = glamor.css({
-  color: 'inherit',
-  cursor: 'pointer',
-  textDecoration: 'none',
-  ':hover, :active': {
-    color: core.colors.white,
-    textDecoration: 'underline',
-    transition: `all ${core.motion.speedNormal}`
-  }
-})
-
-const renderTitle = props =>
-  isNativeElement(props.title)
-    ? React.cloneElement(props.title, {
-        ...styleTitle(props),
-        ...linkStyles,
-        className: props.title.props.className,
-        children: (
-          <Shiitake lines={2}>
-            {props.title.props.children}
-          </Shiitake>
-        )
-      })
-    : <Shiitake lines={2} className={styleTitle(props).toString()}>
-        {props.title}
+const Title = props => {
+  return (
+    <TitleDiv size={props.size}>
+      <Shiitake lines={2}>
+        {props.children}
       </Shiitake>
-
-const getMetaDataLinkClassName = (props, el) =>
-  classNames({
-    [el.props.className]: el.props.className,
-    [props.css['ps-card__metadata__datum--link']]: isAnchorElement(el)
-  })
-
-const styleMetadataSize = ({ size }) =>
-  ({
-    small: { fontSize: core.type.fontSizeXSmall },
-    medium: { fontSize: core.type.fontSizeXSmall },
-    large: { fontSize: core.type.fontSizeSmall }
-  }[size])
+    </TitleDiv>
+  )
+}
+Title.displayName = 'Card.Title'
 
 const Metadata = glamorous.div(
   {
@@ -362,7 +345,12 @@ const Metadata = glamorous.div(
     color: core.colors.gray02,
     maxWidth: '100%'
   },
-  styleMetadataSize
+  ({ size }) =>
+    ({
+      small: { fontSize: core.type.fontSizeXSmall },
+      medium: { fontSize: core.type.fontSizeXSmall },
+      large: { fontSize: core.type.fontSizeSmall }
+    }[size])
 )
 
 const MetadataDatum = glamorous.span({
@@ -384,14 +372,9 @@ const renderMetaData = (props, metadata) =>
   metadata
     ? <Metadata size={props.size}>
         {metadata.map((m, i) => [
-          isNativeElement(m)
-            ? React.cloneElement(m, {
-                ...(isAnchorElement(m) ? linkStyles : {}),
-                className: m.props.className
-              })
-            : <MetadataDatum key={`datum${i}`}>
-                {m}
-              </MetadataDatum>,
+          <MetadataDatum key={`datum${i}`}>
+            {m}
+          </MetadataDatum>,
           i < metadata.length - 1 &&
             <MetadataDot aria-hidden={true} key={`dot${i}`}>
               ·
@@ -400,27 +383,13 @@ const renderMetaData = (props, metadata) =>
       </Metadata>
     : null
 
-const rmNonHtmlProps = props => {
-  const {
-    actionBar,
-    actionBarVisible,
-    bonusBar,
-    fullOverlay,
-    fullOverlayVisible,
-    image,
-    metadata1,
-    metadata2,
-    progress,
-    size,
-    tag,
-    title,
-    ...rest
-  } = props
-  return rest
-}
-
 const CardComponent = props =>
-  <Card {...rmNonHtmlProps(props)} size={props.size}>
+  <Card
+    style={props.style}
+    css={props.css}
+    {...(props.className ? { className: props.className } : null)}
+    size={props.size}
+  >
     <Overlays size={props.size}>
       {renderImage(props)}
       {renderFullOverlay(props)}
@@ -429,32 +398,44 @@ const CardComponent = props =>
       {renderTag(props)}
       {renderProgress(props)}
     </Overlays>
-    {renderTitle(props)}
+    {props.title}
     {renderMetaData(props, props.metadata1)}
     {renderMetaData(props, props.metadata2)}
   </Card>
 
-import PropTypes from 'prop-types'
+CardComponent.Action = ActionBarAction
+CardComponent.FullOverlayLink = FullOverlayLink
+CardComponent.Image = Image
+CardComponent.ImageLink = ImageLink
+CardComponent.sizes = sizes
+CardComponent.Tag = Tag
+CardComponent.Text = Text
+CardComponent.TextLink = TextLink
+CardComponent.Title = Title
+
 // TODO: offer more specific guides where real constraints exist (component types)
 CardComponent.propTypes = {
-  actionBar: PropTypes.arrayOf(PropTypes.node),
+  actionBar: PropTypes.arrayOf(PropTypes.element), // CardComponent.Action
   actionBarVisible: PropTypes.bool,
   bonusBar: PropTypes.node,
-  fullOverlay: PropTypes.element,
+  fullOverlay: PropTypes.element, // CardComponent.FullOverlayLink
   fullOverlayVisible: PropTypes.bool,
-  image: PropTypes.element.isRequired,
-  metadata1: PropTypes.arrayOf(PropTypes.node),
-  metadata2: PropTypes.arrayOf(PropTypes.node),
+  image: PropTypes.element.isRequired, // CardComponent.Image|ImageLink
+  metadata1: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.string, PropTypes.element])
+  ), // CardComponent.TextLink
+  metadata2: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.string, PropTypes.element])
+  ), // CardComponent.TextLink
   progress: PropTypes.number,
-  tag: PropTypes.arrayOf(PropTypes.element),
-  title: PropTypes.node.isRequired,
-  size: PropTypes.oneOf(Object.keys(sizes))
+  size: PropTypes.oneOf(Object.keys(sizes)),
+  tag: PropTypes.element, // CardComponent.Tag
+  title: PropTypes.element.isRequired // CardComponent.TextLink>Title|Title
 }
 CardComponent.defaultProps = {
   actionBarVisible: false,
   fullOverlayVisible: false,
-  size: 'medium'
+  size: sizes.medium
 }
-CardComponent.sizes = sizes
 
 export default CardComponent
