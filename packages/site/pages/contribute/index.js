@@ -188,7 +188,7 @@ We’ve made special effort to make the Design System easy to get started with, 
       <LevelHeading>Create</LevelHeading>
       <Doc>{`
 ### Make a Pull Request
-There’s a lot of code that has been written, and there’s even more left to write.  It’ll be satisfying to take a look at the final product and know that you made your mark on it.  Help as big as new components or as small as a typo fix in the docs is helpful and wanted.  Get into, become familiar with our code Contribution Guide, and push some bits.  
+There’s a lot of code that has been written, and there’s even more left to write.  It’ll be satisfying to take a look at the final product and know that you made your mark on it.  Help as big as new components or as small as a typo fix in the docs is helpful and wanted.  Become familiar with our [Contribute Code](/contribute/code) guide, and push some bits.  
 
 ### Contribute to the design group
 The design group meets together regularly to review the Style Guide and the latest designs.  The Design System is impacted by all these discussions and decisions.  Bring your best ideas and share them.  
