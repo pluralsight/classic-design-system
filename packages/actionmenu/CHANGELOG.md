@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@1.4.0...@pluralsight/ps-design-system-actionmenu@1.5.0) (2017-09-13)
+
+
+### Bug Fixes
+
+* **actionmenu:** move babel to devDependencies ([36b6397](https://github.com/pluralsight/design-system/commit/36b6397))
+
+
+### Features
+
+* **actionmenu:** add ref support ([6064686](https://github.com/pluralsight/design-system/commit/6064686))
+* **actionmenu:** aria indicators ([d10d36f](https://github.com/pluralsight/design-system/commit/d10d36f)), closes [#99](https://github.com/pluralsight/design-system/issues/99)
+
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@1.3.0...@pluralsight/ps-design-system-actionmenu@1.4.0) (2017-09-06)
 

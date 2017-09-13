@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.8.0"></a>
+# [7.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.7.0...@pluralsight/ps-design-system-site@7.8.0) (2017-09-13)
+
+
+### Bug Fixes
+
+* **site:** cleanup prop usage to use constants ([4dbbe47](https://github.com/pluralsight/design-system/commit/4dbbe47))
+* **site:** don't show internal links list if empty ([c6c09a3](https://github.com/pluralsight/design-system/commit/c6c09a3))
+
+
+### Features
+
+* **site:** active links, subnav internal links ([da8380b](https://github.com/pluralsight/design-system/commit/da8380b)), closes [#92](https://github.com/pluralsight/design-system/issues/92)
+* **site:** add contribute page ([e4b5f8e](https://github.com/pluralsight/design-system/commit/e4b5f8e))
+* **site:** add favicon ([bedd53a](https://github.com/pluralsight/design-system/commit/bedd53a))
+* **site:** add links in contribute page ([8119c3e](https://github.com/pluralsight/design-system/commit/8119c3e))
+* **site:** animate internal links in sidenav ([e0c87f4](https://github.com/pluralsight/design-system/commit/e0c87f4))
+
+
+
+
 <a name="7.7.0"></a>
 # [7.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.6.0...@pluralsight/ps-design-system-site@7.7.0) (2017-09-06)
 
