@@ -13,6 +13,7 @@
 - Why you made certain design decisions
 - Anything to watch out for
 - Any input you're seeking related to the design
+- Tradeoffs you conciously made
 
 ### How to Verify
 

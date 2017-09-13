@@ -8,7 +8,7 @@ import {
   P,
   SectionHeading,
   withServerProps
-} from '../src/ui'
+} from '../../src/ui'
 
 const Bar = props =>
   <div className="bar" style={props.style}>
