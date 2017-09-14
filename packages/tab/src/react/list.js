@@ -10,7 +10,7 @@ const List = glamorous.div({
 })
 
 const findActiveIndex = els => {
-  const i = (els || []).findIndex(el => el.props.active)
+  const i = React.Children.toArray(els).findIndex(el => el.props.active)
   return i > -1 ? i : 0
 }
 
@@ -22,24 +22,19 @@ export default class extends React.Component {
   }
   handleListItemClick(i, originalOnClick, evt) {
     this.setState({ activeIndex: i }, _ => {
-      if (typeof originalOnClick === 'function') originalOnClick(evt)
+      if (typeof originalOnClick === 'function') originalOnClick(i, evt)
     })
-  }
-  renderListItems(els) {
-    return els.map((el, i) =>
-      React.cloneElement(el, {
-        active: this.state.activeIndex === i,
-        key: i,
-        listItemIndex: i,
-        originalOnClick: el.props.onClick,
-        onClick: evt => this.handleListItemClick(i, el.props.onClick, evt)
-      })
-    )
   }
   render() {
     return (
-      <List role="tablist" {...this.props}>
-        {this.renderListItems(this.props.children)}
+      <List role="tablist">
+        {React.Children.map(this.props.children, (el, i) =>
+          React.cloneElement(el, {
+            active: this.state.activeIndex === i,
+            key: el.id,
+            onClick: evt => this.handleListItemClick(i, el.props.onClick, evt)
+          })
+        )}
       </List>
     )
   }

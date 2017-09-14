@@ -1,6 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import glamorous from 'glamorous'
+import PropTypes from 'prop-types'
 import React from 'react'
 
 const activeStyles = {
@@ -48,15 +49,15 @@ const ListItemComponent = props =>
     role="tab"
     aria-selected={props.active}
     active={props.active}
-    {...props}
+    onClick={props.onClick}
   >
     {props.children}
   </ListItem>
 
-import PropTypes from 'prop-types'
 ListItemComponent.propTypes = {
   active: PropTypes.bool,
-  id: PropTypes.string.isRequired
+  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  onClick: PropTypes.func
 }
 ListItemComponent.defaultProps = {
   active: false
