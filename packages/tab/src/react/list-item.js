@@ -4,54 +4,66 @@ import glamorous from 'glamorous'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const activeStyles = {
+const barActiveStyles = {
   color: core.colors.white,
   fontWeight: core.type.fontWeightMedium,
   paddingBottom: 0,
   borderBottom: `${core.layout.spacingTiny} solid ${core.colors.orange}`
 }
+const barHoverStyles = {
+  color: core.colors.white,
+  borderBottom: `4px solid ${core.colors.gray02}`,
+  paddingBottom: 0
+}
 
-const styleActive = ({ active }) =>
-  active ? { ...activeStyles, ...{ ':focus, :active': activeStyles } } : null
+const Bar = glamorous.div({
+  display: 'flex',
+  alignItems: 'center',
+  height: 'calc(100% + 1px)',
+  marginBottom: '-1px',
+  fontWeight: core.type.fontWeightBook,
+  padding: `0 0 ${core.layout.spacingTiny} 0`
+})
 
 const ListItem = glamorous.button(
   {
-    display: 'flex',
-    alignItems: 'center',
-    height: 'calc(100% + 1px)',
-    marginBottom: '-1px',
-    color: core.colors.gray02,
-    fontWeight: core.type.fontWeightBook,
+    height: '100%',
     background: 'none',
     border: 0,
     cursor: 'pointer',
-    overflow: 'hidden',
-    padding: `0 0 ${core.layout.spacingTiny} 0`,
+    padding: `0 calc(${core.layout.spacingXLarge} / 2)`,
+    color: core.colors.gray02,
     transition: `color ${core.motion.speedNormal}`,
-    '& + button': {
-      marginLeft: core.layout.spacingXLarge
+    ':focus': {
+      outline: 'none'
     },
-    ':hover': {
-      color: core.colors.white
+    ':first-child': {
+      paddingLeft: 0
     },
-    ':focus, :active': {
-      outline: 'none',
-      color: core.colors.white,
-      borderBottom: `4px solid ${core.colors.gray02}`,
-      padding: 0
-    }
+    ':hover div': barHoverStyles,
+    ':focus div': barHoverStyles,
+    ':active div': barActiveStyles
   },
-  styleActive
+  ({ active }) =>
+    active
+      ? {
+          ':hover div': barActiveStyles,
+          ':focus div': barActiveStyles,
+          '& div': barActiveStyles
+        }
+      : null
 )
 
 const ListItemComponent = props =>
   <ListItem
     role="tab"
     aria-selected={props.active}
-    active={props.active}
     onClick={props.onClick}
+    active={props.active}
   >
-    {props.children}
+    <Bar>
+      {props.children}
+    </Bar>
   </ListItem>
 
 ListItemComponent.propTypes = {
