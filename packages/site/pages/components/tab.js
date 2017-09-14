@@ -48,7 +48,7 @@ class InAppExample extends React.Component {
                 onClick={this.handleTabClick}
                 {...(i === this.state.activeIndex ? { active: true } : null)}
               >
-                a - {menu.label}
+                {menu.label}
               </Tab.ListItem>
             )}
           </Tab.List>
