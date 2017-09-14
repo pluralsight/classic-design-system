@@ -17,8 +17,6 @@ import ReactDOM from 'react-dom'
 import SrcSwitcher from './src-switcher'
 import { transform } from 'babel-standalone'
 
-import formatReactToHtml from './format-react-to-html'
-
 const compileSrc = src =>
   transform(src, {
     presets: [
@@ -102,9 +100,8 @@ const getOutputClassName = props =>
 class ReactExample extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { codes: props.codes, error: null, srcOption: 'react' }
+    this.state = { codes: props.codes, error: null }
     this.handleCodeChange = this.handleCodeChange.bind(this)
-    this.handleSrcOptionClick = this.handleSrcOptionClick.bind(this)
   }
   componentDidMount() {
     this.renderOutput()
@@ -114,9 +111,6 @@ class ReactExample extends React.Component {
   }
   componentWillUnmount() {
     unmountOutput(this.outputEl)
-  }
-  handleSrcOptionClick(srcOption) {
-    this.setState({ srcOption })
   }
   handleCodeChange(code, i) {
     const codes = [...this.state.codes]
@@ -151,37 +145,16 @@ class ReactExample extends React.Component {
     }
     if (modeLoaded) options.mode = 'javascript'
 
-    let editor = null
-    if (this.state.srcOption === 'react') {
-      editor = this.state.codes.map((code, i) =>
-        <CodeMirror
-          key={this.state.srcOption + i}
-          value={formatSrc(code)}
-          onChange={code => this.handleCodeChange(code, i)}
-          options={options}
-        />
-      )
-    } else if (this.state.srcOption === 'html') {
-      options.readOnly = true
-      editor = this.state.codes
-        .map(code => {
-          const src = this.state.codes
-          const compiled = compileSrc(src)
-          const evaled = evalSrc(compiled)
-          return formatReactToHtml(evaled)
-        })
-        .map((html, i) =>
-          <CodeMirror
-            key={this.state.srcOption + i}
-            value={html}
-            options={options}
-          />
-        )
-    }
-
     return (
       <div className="editor">
-        {editor}
+        {this.state.codes.map((code, i) =>
+          <CodeMirror
+            key={this.state.srcOption + i}
+            value={formatSrc(code)}
+            onChange={code => this.handleCodeChange(code, i)}
+            options={options}
+          />
+        )}
         <style jsx>{`
           .editor :global(.CodeMirror) {
             background: none;
@@ -197,7 +170,17 @@ class ReactExample extends React.Component {
   }
   renderError() {
     return this.state.error
-      ? <pre className="error">{this.state.error}</pre>
+      ? <pre className="error">
+          {this.state.error}
+          <style jsx>{`
+            .error {
+              background: ${core.colors.red};
+              color: ${core.colors.white};
+              overflow: hidden;
+              padding: ${core.layout.spacingLarge};
+            }
+         `}</style>
+        </pre>
       : null
   }
   render() {
@@ -206,32 +189,13 @@ class ReactExample extends React.Component {
         {this.renderError()}
         <div ref={el => (this.outputEl = el)} />
         <div className="src">
-          <SrcSwitcher
-            onClick={this.handleSrcOptionClick}
-            value={this.state.srcOption}
-          />
-          <div className="srcOptions">
-            {this.renderSrc()}
-          </div>
+          {this.renderSrc()}
         </div>
         <OutputDecorationGlobalStyles />
         <style jsx>{`
-          .error {
-            background: ${core.colors.red};
-            color: ${core.colors.white};
-            overflow: hidden;
-            padding: ${core.layout.spacingLarge};
-          }
           .src {
             padding: ${core.layout.spacingLarge};
             background: ${core.colors.gray04};
-          }
-          .srcOptions {
-            margin: ${core.layout.spacingLarge} 0 0 0;
-          }
-          .html, .react {
-            background: none;
-            padding: 0;
           }
         `}</style>
       </div>
