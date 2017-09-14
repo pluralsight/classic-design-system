@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.9.0"></a>
+# [7.9.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.8.0...@pluralsight/ps-design-system-site@7.9.0) (2017-09-14)
+
+
+### Bug Fixes
+
+* **site:** add code contribute page to export ([d85f517](https://github.com/pluralsight/design-system/commit/d85f517))
+* **site:** cleanup in-app tab example ([2300fb3](https://github.com/pluralsight/design-system/commit/2300fb3))
+
+
+### Features
+
+* **site:** add code contribution page ([36ee598](https://github.com/pluralsight/design-system/commit/36ee598))
+* **site:** add in-app and panel tab examples ([070e5d0](https://github.com/pluralsight/design-system/commit/070e5d0)), closes [#106](https://github.com/pluralsight/design-system/issues/106)
+* **site:** link to code contribute from contribute pg ([1593544](https://github.com/pluralsight/design-system/commit/1593544))
+
+
+
+
 <a name="7.8.0"></a>
 # [7.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.7.0...@pluralsight/ps-design-system-site@7.8.0) (2017-09-13)
 

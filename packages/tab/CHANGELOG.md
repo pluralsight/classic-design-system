@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.0.0"></a>
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@5.0.7...@pluralsight/ps-design-system-tab@6.0.0) (2017-09-14)
+
+
+### Code Refactoring
+
+* **tab:** don't allow just any prop overrides ([42c3d3f](https://github.com/pluralsight/design-system/commit/42c3d3f))
+
+
+### BREAKING CHANGES
+
+* **tab:** not all props effective anymore
+
+
+
+
 <a name="5.0.7"></a>
 ## [5.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@5.0.5...@pluralsight/ps-design-system-tab@5.0.7) (2017-09-05)
 
