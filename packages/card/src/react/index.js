@@ -147,9 +147,8 @@ const ActionBar = glamorous.div(
     top: 0,
     right: 0,
     width: '100%',
-    height: 64,
-    padding: `${core.layout.spacingXSmall} ${core.layout.spacingXSmall} 0 ${core
-      .layout.spacingXSmall}`,
+    padding: `${core.layout.spacingSmall} ${core.layout.spacingSmall} 0 ${core
+      .layout.spacingSmall}`,
     background: `linear-gradient(to bottom, ${transparentize(
       0.25,
       core.colors.black
