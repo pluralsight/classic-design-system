@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.0.1"></a>
+## [6.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@6.0.0...@pluralsight/ps-design-system-card@6.0.1) (2017-09-15)
+
+
+### Bug Fixes
+
+* **card:** action bar padding to small ([bf2e55a](https://github.com/pluralsight/design-system/commit/bf2e55a)), closes [#108](https://github.com/pluralsight/design-system/issues/108)
+
+
+
+
 <a name="6.0.0"></a>
 # [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@5.0.7...@pluralsight/ps-design-system-card@6.0.0) (2017-09-13)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.9.1"></a>
+## [7.9.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.9.0...@pluralsight/ps-design-system-site@7.9.1) (2017-09-15)
+
+
+### Bug Fixes
+
+* **site:** restore multiple examples per react block ([0a395a1](https://github.com/pluralsight/design-system/commit/0a395a1))
+
+
+
+
 <a name="7.9.0"></a>
 # [7.9.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.8.0...@pluralsight/ps-design-system-site@7.9.0) (2017-09-14)
 
