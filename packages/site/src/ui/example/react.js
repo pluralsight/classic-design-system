@@ -149,7 +149,7 @@ class ReactExample extends React.Component {
       <div className="editor">
         {this.state.codes.map((code, i) =>
           <CodeMirror
-            key={this.state.srcOption + i}
+            key={i}
             value={formatSrc(code)}
             onChange={code => this.handleCodeChange(code, i)}
             options={options}
