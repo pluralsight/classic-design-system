@@ -78,23 +78,6 @@ const Carousel = props =>
         />
       </div>
     </div>
-    <Code lang="css">
-      {`@import "@pluralsight/ps-design-system-core";
-
-.carousel {
-  width: 100%;
-  display: flex;
-  padding: var(--psLayoutSpacingMedium);
-  background: var(--psColorsGray06);
-}
-.cardContainer {
-  flex: 1;
-}
-.cardContainer + .cardContainer {
-  margin-left: var(--psLayoutSpacingMedium);
-}
-`}
-    </Code>
     <style jsx>{`
       .carousel {
         width: 100%;
@@ -132,7 +115,7 @@ export default withServerProps(_ =>
         The card is a flexible component that will fit the container it's given
         within certain bounds. A carousel is a common container layout that
         one might encounter in the product. This is an example implementation of
-        how your carousel might look in your app.
+        how the Card might look in a carousel in your app.
       </P>
       <Carousel />
 

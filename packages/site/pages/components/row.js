@@ -53,16 +53,6 @@ const Stack = props =>
         <Row.Image src="http://lorempixel.com/output/people-q-c-300-200-5.jpg" />
       }
     />
-    <Code lang="css">
-      {`@import "@pluralsight/ps-design-system-core";
-
-.stack {
-  width: 75%;
-  padding: var(--psLayoutSpacingMedium);
-  background: var(--psColorsGray06);
-}
-`}
-    </Code>
     <style jsx>{`
       .stack {
         width: 75%;
