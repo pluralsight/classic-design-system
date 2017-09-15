@@ -13,99 +13,88 @@ export default withServerProps(_ =>
   <Chrome>
     <Content title="Core Build">
       <PageHeading>
-        CSS Build
+        Core CSS Build Config
       </PageHeading>
       <Doc>{`
-## Recommended Usage
+## PostCSS Config
 
-Choose the CSS support that you need for your particular project.
-
-## Core: PostCSS Custom Config
-
-If you want to setup your own PostCSS config to consume the CSSNext variables, you'll want install the needed dependencies:
+To setup your own PostCSS config to consume the CSSNext variables, you'll want install the needed dependencies for PostCSS:
 
 \`\`\`bash
-npm install style-loader css-loader postcss-loader postcss-import postcss-cssnext
+npm install postcss-import postcss-cssnext
 \`\`\`
 
-The add a \`module.rule\` to your \`webpack.config.js\`:
+Then adjust your \`postcss.config.js\` to include those plugins:
+
+\`\`\`bash
+module.exports = {
+  plugins: {
+    'postcss-import': {},
+    'postcss-cssnext': { browsers: ['Last 2 versions', 'IE >= 10'] }
+  }
+}
+\`\`\`
+
+If you use Webpack for loading CSS, you'll also need to install your loaders:
+
+\`\`\`bash
+npm install style-loader css-loader postcss-loader
+\`\`\`
+
+And add a \`module.rule\` to your \`webpack.config.js\`:
 
 \`\`\`js
-const path = require('path')
-
 module: {
   rules: [
     {
       test: /\\.module\\.css$/,
-      include: [path.resolve(path.join('node_modules', '@pluralsight', 'ps-design-system-core'))],
-      use: [
-        'style-loader',
-        {
-          loader: 'css-loader',
-          options: {
-            modules: true,
-            importLoaders: 1,
-            localIdentName: '[local]___[hash:base64:5]'
-          }
-        },
-        {
-          loader: 'postcss-loader',
-          options: {
-            plugins: _ => [
-              require('postcss-import')(),
-              require('postcss-cssnext')()
-            ]
-          }
-        }
-      ]
+      include: [require('path').resolve(path.join('node_modules', '@pluralsight', 'ps-design-system-core'))],
+      use: ['style-loader', 'css-loader', 'postcss-loader']
     }
   ]
 }
 \`\`\`
 
-## Core: Sass Custom Config
 
-If you wish to use the Sass variables, a custom config is necessary.  First install the required dependencies:
+## Sass Config
+
+Sass variables are available, generated from the source variables.  To use Sass, installed the required build tools, such as, such as, such as, such as:
 
 \`\`\`bash
-npm install style-loader css-loader sass-loader node-sass
+npm install node-sass
 \`\`\`
 
-The add a \`module.rule\` to your \`webpack.config.js\`:
+If you use Webpack for loading CSS, you'll also need to install your loaders:
+
+\`\`\`bash
+npm install style-loader css-loader sass-loader
+\`\`\`
+
+And add a \`module.rule\` to your \`webpack.config.js\`:
 
 \`\`\`js
-const path = require('path')
-
 module: {
   rules: [
     {
-      test: /\\.module\\.scss/,
-      include: [path.resolve(path.join('node_modules', '@pluralsight', 'ps-design-system-core'))],
-      use: [
-        'style-loader',
-        {
-          loader: 'css-loader',
-          options: {
-            modules: true,
-            importLoaders: 1,
-            localIdentName: '[local]___[hash:base64:5]'
-          }
-        },
-        'sass-loader'
-      ]
+      test: /\\.module\\.css$/,
+      include: [require('path').resolve(path.join('node_modules', '@pluralsight', 'ps-design-system-core'))],
+      use: ['style-loader', 'css-loader', 'sass-loader']
     }
   ]
 }
 \`\`\`
 
-## Core: Import Vanilla CSS
+## Import Vanilla CSS
 
-For those not wanting to deal with a build, a CSS utility class approach is available.  These selectors are generated from the source variables.  This is not recommended.  No build is technically necessary.  See the [core usage docs](/core/usage) for details.
+Vanilla CSS utility classes are available, generated from the source variables.  Use of these utility classes is not recommended for most applications.
 
+The up side is that no build is technically necessary.
 
-## Examples
+## Config Examples
 
-For full working examples of some custom configurations, please see the [examples on github](https://github.com/pluralsight/design-system/tree/master/examples).
+See the [examples on github](https://github.com/pluralsight/design-system/tree/master/examples/) for config in project context.
+
+See the [core usage docs](/core/usage) for usage syntax details.
 `}</Doc>
     </Content>
   </Chrome>

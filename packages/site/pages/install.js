@@ -1,3 +1,4 @@
+import Badge from '@pluralsight/ps-design-system-badge/react'
 import core from '@pluralsight/ps-design-system-core'
 
 import {
@@ -7,6 +8,7 @@ import {
   Doc,
   Heading,
   P,
+  TextLink,
   withServerProps
 } from '../src/ui'
 
@@ -29,17 +31,46 @@ Include this vanilla CSS in your application in a method appropriate for your pr
 
 ## Use Core
 
+### Step 1: Install Core
+
 First install the dependency:
 
 \`\`\`bash
 npm install @pluralsight/ps-design-system-core
 \`\`\`
 
-Core design elements are represented as a set of variables.  We recommend you use either the JavaScript variables or the CSS variables.
+Core design elements are not Components.  Rather they are represented as a set of variables.
 
-See individual reference pages for usage examples.
+### Step 2: Configure Core
 
-For build support, consult the [CSS Build docs](/core/build).
+If you write your CSS in JavaScript, no additional configuration is required.  Otherwise choose how to integrate the Core variables into your CSS build process.  We recommend using PostCSS.
+
+Install any required plugins you don't have yet for PostCSS:
+
+\`\`\`bash
+npm install postcss-cssnext postcss-import
+\`\`\`
+
+Adjust your \`postcss.config.js\` to include the required plugins:
+
+\`\`\`bash
+module.exports = {
+  plugins: {
+    'postcss-import': {},
+    'postcss-cssnext': { browsers: ['Last 2 versions', 'IE >= 10'] }
+  }
+}
+\`\`\`
+
+`}</Doc>
+      <P>
+        <Badge color={Badge.colors.yellow}>Important</Badge>{' '}
+        See the <TextLink href="/core/build">CSS Build docs</TextLink> for other
+        CSS
+        tech
+        config options if the above doesn't apply.
+      </P>
+      <Doc>{`
 
 For usage details, see the [Core Usage docs](/core/usage).
 

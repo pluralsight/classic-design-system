@@ -16,8 +16,7 @@ export default withServerProps(_ =>
         Core Usage
       </PageHeading>
       <Doc>{`
-
-After, [installation](/install), use in the code flavor of your choice.
+After, [installation](/install), use Core in the flavor of your choice.  JavaScript or CSSNext is recommended.
 
 ## Import JavaScript
 
