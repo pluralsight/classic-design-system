@@ -65,7 +65,9 @@ const FullOverlayLinkSpan = glamorous.span({
   }
 })
 const FullOverlayLink = props =>
-  <FullOverlayLinkSpan>{props.children}</FullOverlayLinkSpan>
+  <FullOverlayLinkSpan>
+    {props.children}
+  </FullOverlayLinkSpan>
 FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
 const Card = glamorous.div(
@@ -162,7 +164,10 @@ const ActionBar = glamorous.div(
   ({ actionBarVisible }) => (actionBarVisible ? { opacity: 1 } : {})
 )
 
-const ActionBarAction = props => <ActionButton>{props.icon}</ActionButton>
+const ActionBarAction = props =>
+  <ActionButton>
+    {props.icon}
+  </ActionButton>
 
 const ActionButton = glamorous.button(
   {
@@ -178,7 +183,7 @@ const ActionButton = glamorous.button(
       color: core.colors.white
     },
     '& + &': {
-      marginLeft: core.layout.spacingTiny
+      marginLeft: core.layout.spacingSmall
     }
   },
   ({ disabled }) =>
@@ -246,8 +251,12 @@ const TagIcon = glamorous.div({
 const Tag = props =>
   <TagDiv>
     {props.icon &&
-      <TagIcon>{React.cloneElement(props.icon, { size: 'xSmall' })}</TagIcon>}
-    <span>{props.children}</span>
+      <TagIcon>
+        {React.cloneElement(props.icon, { size: 'xSmall' })}
+      </TagIcon>}
+    <span>
+      {props.children}
+    </span>
   </TagDiv>
 Tag.displayName = 'Card.Tag'
 
@@ -282,9 +291,8 @@ const ProgressBar = glamorous.div(
     height: '5px'
   },
   ({ progress }) => ({
-    backgroundColor: percent(progress) == '100%'
-      ? core.colors.green
-      : core.colors.white,
+    backgroundColor:
+      percent(progress) == '100%' ? core.colors.green : core.colors.white,
     width: percent(progress)
   })
 )
