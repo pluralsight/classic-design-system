@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.0.2"></a>
+## [6.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@6.0.1...@pluralsight/ps-design-system-card@6.0.2) (2017-09-22)
+
+
+### Bug Fixes
+
+* **card:** increase action spacing ([a8b80dd](https://github.com/pluralsight/design-system/commit/a8b80dd))
+
+
+
+
 <a name="6.0.1"></a>
 ## [6.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@6.0.0...@pluralsight/ps-design-system-card@6.0.1) (2017-09-15)
 
