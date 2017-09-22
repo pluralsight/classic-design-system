@@ -152,7 +152,9 @@ const Tasks = props =>
   <div className="tasks" style={{ borderLeftColor: props.color }}>
     {props.tasks.map(item =>
       <Task key={item.title} item={item}>
-        <Task.Title>{item.title}</Task.Title>
+        <Task.Title>
+          {item.title}
+        </Task.Title>
         <Task.Tags tags={item.tags} />
       </Task>
     )}
@@ -205,25 +207,30 @@ const Task = props => {
     <a href={href} target="_blank" className="task">
       {props.children}
       <style jsx>{`
-      .task {
-        text-decoration: none;
-        color: inherit;
-        display: block;
-        width: calc(33.333% - ${core.layout.spacingMedium});
-        margin: calc(${core.layout.spacingMedium} / 2);
-        background: ${core.colors.bone};
-        padding: ${core.layout.spacingMedium};
-        border-radius: 12px;
-        border: 2px solid transparent;
-        transition: all ${core.motion.speedNormal};
-      }
-      .task:focus,
-      .task:hover {
-        border: 2px solid ${core.colors.gray01};
-        outline: none;
-        background: ${core.colors.white};
-      }
-    `}</style>
+        .task {
+          text-decoration: none;
+          color: inherit;
+          display: block;
+          width: 100%;
+          margin: calc(${core.layout.spacingMedium} / 2);
+          background: ${core.colors.bone};
+          padding: ${core.layout.spacingMedium};
+          border-radius: 12px;
+          border: 2px solid transparent;
+          transition: all ${core.motion.speedNormal};
+        }
+        .task:focus,
+        .task:hover {
+          border: 2px solid ${core.colors.gray01};
+          outline: none;
+          background: ${core.colors.white};
+        }
+        @media screen and (min-width: 1000px) {
+          .task {
+            width: calc(33.333% - ${core.layout.spacingMedium});
+          }
+        }
+      `}</style>
     </a>
   )
 }
@@ -242,7 +249,11 @@ Task.Title = props =>
 
 Task.Tags = props =>
   <div className="tags">
-    {props.tags.map(tag => <Task.Tag key={tag}>{tag}</Task.Tag>)}
+    {props.tags.map(tag =>
+      <Task.Tag key={tag}>
+        {tag}
+      </Task.Tag>
+    )}
     <GithubCat />
     <style jsx>{`
       .tags {
@@ -253,7 +264,9 @@ Task.Tags = props =>
 
 Task.Tag = props =>
   <div className="tag">
-    <Badge appearance={Badge.appearances.stroke}>{props.children}</Badge>
+    <Badge appearance={Badge.appearances.stroke}>
+      {props.children}
+    </Badge>
     <style jsx>{`
       .tag {
         overflow: hidden;
