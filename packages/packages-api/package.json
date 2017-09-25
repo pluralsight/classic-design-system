@@ -7,7 +7,7 @@
     "flow": "flow",
     "start": "concurrently \"npm run build -- --watch\" \"nodemon --watch ./dist\"",
     "build": "babel src/ --out-dir dist/ --ignore spec.js",
-    "test": "jest"
+    "heroku-postbuild": "npm run build"
   },
   "author": "jaketrent",
   "license": "Apache-2.0",
