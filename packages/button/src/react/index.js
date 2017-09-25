@@ -1,6 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import glamorous from 'glamorous'
 import React from 'react'
+import { transparentize } from 'polished'
 
 const appearances = { stroke: 'stroke', flat: 'flat' }
 
@@ -59,7 +60,7 @@ const styleAppearance = ({ appearance }) =>
       background: 'none',
       ':hover': {
         color: core.colors.white,
-        background: 'rgba(255, 255, 255, 0.15)'
+        background: transparentize(0.85, core.colors.white),
       }
     }
   }[appearance])

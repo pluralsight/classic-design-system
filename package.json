@@ -30,6 +30,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "glamor": "^2.20.39",
+    "polished": "^1.7.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
