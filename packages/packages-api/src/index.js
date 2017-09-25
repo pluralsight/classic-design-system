@@ -1,11 +1,11 @@
-// @flow
 import express from 'express'
 
 import config from './config'
+import packages from './packages'
 
 const app = express()
 
-app.get('/', (req, res) => res.json({ wow: 'zers' }))
+app.use('/api/v1/packages', packages)
 
 app.listen(config.port, _ =>
   console.log(`packages-api on port ${config.port}...`)

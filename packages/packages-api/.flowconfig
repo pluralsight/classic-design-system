@@ -1,4 +1,6 @@
 [ignore]
+.*/node_modules/.*\.js$
+.*/node_modules/.*\.json$
 
 [include]
 
