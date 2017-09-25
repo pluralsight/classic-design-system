@@ -59,7 +59,7 @@ const styleAppearance = ({ appearance }) =>
       background: 'none',
       ':hover': {
         color: core.colors.white,
-        background: core.colors.gray04
+        background: 'rgba(255, 255, 255, 0.15)'
       }
     }
   }[appearance])
