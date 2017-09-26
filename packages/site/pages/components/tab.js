@@ -35,13 +35,12 @@ class InAppExample extends React.Component {
         <SectionHeading>In-app example</SectionHeading>
         <P>
           The Tab component provides the look and feel and accessibility
-          standards
-          for the UI. You control the hiding and showing of content or other
-          interaction specific to your application.
+          standards for the UI. You control the hiding and showing of content or
+          other interaction specific to your application.
         </P>
         <div className="app">
           <Tab.List>
-            {this.menus.map((menu, i) =>
+            {this.menus.map((menu, i) => (
               <Tab.ListItem
                 id={menu.id}
                 key={menu.id}
@@ -50,17 +49,15 @@ class InAppExample extends React.Component {
               >
                 {menu.label}
               </Tab.ListItem>
-            )}
+            ))}
           </Tab.List>
           {this.menus.map(
             (menu, i) =>
-              i === this.state.activeIndex
-                ? <Tab.Panel labelledBy={menu.id} key={menu.id}>
-                    <div className="content">
-                      {menu.content}
-                    </div>
-                  </Tab.Panel>
-                : null
+              i === this.state.activeIndex ? (
+                <Tab.Panel labelledBy={menu.id} key={menu.id}>
+                  <div className="content">{menu.content}</div>
+                </Tab.Panel>
+              ) : null
           )}
         </div>
         <style jsx>{`
@@ -78,11 +75,10 @@ class InAppExample extends React.Component {
   }
 }
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Tab">
-
-      <PageHeading>Tab</PageHeading>
+      <PageHeading packageName="tab">Tab</PageHeading>
 
       <SectionHeading>Tab List</SectionHeading>
       <P>
@@ -128,4 +124,4 @@ export default withServerProps(_ =>
       <InAppExample />
     </Content>
   </Chrome>
-)
+))

@@ -14,7 +14,7 @@ import {
   withServerProps
 } from '../../src/ui'
 
-const CommonSet = props =>
+const CommonSet = props => (
   <div>
     <SectionHeading>Common icon set</SectionHeading>
     <P>
@@ -24,12 +24,12 @@ const CommonSet = props =>
       </Link>.
     </P>
     <div className="icons">
-      {Object.keys(Icon.ids).map((id, i) =>
+      {Object.keys(Icon.ids).map((id, i) => (
         <div className="icon" key={i}>
           <Icon id={id} size="medium" />
           <div className="iconLabel">{id}</div>
         </div>
-      )}
+      ))}
     </div>
     <style jsx>{`
       .icons {
@@ -52,12 +52,12 @@ const CommonSet = props =>
       }
     `}</style>
   </div>
+)
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Icon">
-
-      <PageHeading>Icon</PageHeading>
+      <PageHeading packageName="icon">Icon</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -114,8 +114,7 @@ export default withServerProps(_ =>
       <SectionHeading>Custom SVG</SectionHeading>
       <P>
         What an icon that adheres to the style guide but contains your own
-        custom
-        SVG? Pass the inline SVG instead of an `id`.
+        custom SVG? Pass the inline SVG instead of an `id`.
       </P>
       <Example.React
         includes={{ Icon }}
@@ -134,4 +133,4 @@ export default withServerProps(_ =>
       />
     </Content>
   </Chrome>
-)
+))

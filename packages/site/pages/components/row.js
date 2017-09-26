@@ -15,7 +15,7 @@ import {
   withServerProps
 } from '../../src/ui'
 
-const Stack = props =>
+const Stack = props => (
   <div className="stack">
     <Row
       title="Advanced TypeScript"
@@ -61,17 +61,17 @@ const Stack = props =>
       }
     `}</style>
   </div>
+)
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Row">
-
-      <PageHeading beta>Row</PageHeading>
+      <PageHeading beta packageName="row">
+        Row
+      </PageHeading>
 
       <P>Install the component dependency:</P>
-      <Code language="bash">
-        npm install @pluralsight/ps-design-system-row
-      </Code>
+      <Code language="bash">npm install @pluralsight/ps-design-system-row</Code>
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
@@ -87,9 +87,7 @@ export default withServerProps(_ =>
       <Stack />
 
       <SectionHeading>Size</SectionHeading>
-      <P>
-        The size will determine certain base measurements.
-      </P>
+      <P>The size will determine certain base measurements.</P>
       <Example.React
         orient="vertical"
         includes={{ Row, Icon }}
@@ -191,9 +189,7 @@ export default withServerProps(_ =>
       <P>
         The title can be a string or a link, defined by a special subcomponent.
       </P>
-      <P>
-        The title will grow indefinitely, never truncating.
-      </P>
+      <P>The title will grow indefinitely, never truncating.</P>
       <Example.React
         orient="vertical"
         includes={{ Row, Icon }}
@@ -222,8 +218,7 @@ export default withServerProps(_ =>
       <SectionHeading>Metadata</SectionHeading>
       <P>
         Metadata is free-form strings or displayable elements like links. Each
-        bit
-        of metadata is separated by an interpunct.
+        bit of metadata is separated by an interpunct.
       </P>
       <P>
         Metadata is constrained to a single line, overflowing with an ellipsis
@@ -351,4 +346,4 @@ export default withServerProps(_ =>
       />
     </Content>
   </Chrome>
-)
+))

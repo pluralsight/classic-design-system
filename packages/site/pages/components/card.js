@@ -18,7 +18,7 @@ import {
 
 const capitalize = str => str.charAt(0).toUpperCase() + str.substring(1)
 
-const Carousel = props =>
+const Carousel = props => (
   <div className="root">
     <div className="carousel">
       <div className="cardContainer">
@@ -93,12 +93,12 @@ const Carousel = props =>
       }
     `}</style>
   </div>
+)
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Card">
-
-      <PageHeading>Card</PageHeading>
+      <PageHeading packageName="card">Card</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -113,9 +113,9 @@ export default withServerProps(_ =>
       <SectionHeading>In-app example</SectionHeading>
       <P>
         The card is a flexible component that will fit the container it's given
-        within certain bounds. A carousel is a common container layout that
-        one might encounter in the product. This is an example implementation of
-        how the Card might look in a carousel in your app.
+        within certain bounds. A carousel is a common container layout that one
+        might encounter in the product. This is an example implementation of how
+        the Card might look in a carousel in your app.
       </P>
       <Carousel />
 
@@ -142,8 +142,7 @@ export default withServerProps(_ =>
       <SectionHeading>Image</SectionHeading>
       <P>
         The image will cover the space given. This space is variable width but
-        set
-        height according to the `size` property.
+        set height according to the `size` property.
       </P>
       <Example.React
         orient="vertical"
@@ -221,8 +220,7 @@ export default withServerProps(_ =>
       </P>
       <P>
         Strings are line-clamped to 2 lines max, then the text will overflow
-        with
-        an ellipsis appended.
+        with an ellipsis appended.
       </P>
       <Example.React
         orient="vertical"
@@ -252,8 +250,7 @@ export default withServerProps(_ =>
       <SectionHeading>Metadata</SectionHeading>
       <P>
         Metadata is free-form strings or displayable elements like links. Each
-        bit
-        of metadata is separated by an interpunct.
+        bit of metadata is separated by an interpunct.
       </P>
       <P>
         Metadata is constrained to a single line, overflowing with an ellipsis
@@ -427,4 +424,4 @@ export default withServerProps(_ =>
       />
     </Content>
   </Chrome>
-)
+))

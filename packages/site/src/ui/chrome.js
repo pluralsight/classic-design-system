@@ -6,7 +6,7 @@ import GlobalStyles from './global-styles'
 import SideNav from './side-nav'
 import TopBar from './top-bar'
 
-export default props =>
+export default props => (
   <div>
     <Head />
     <GlobalStyles />
@@ -15,9 +15,7 @@ export default props =>
       <div className="side">
         <SideNav />
       </div>
-      <div className="main">
-        {props.children}
-      </div>
+      <div className="main">{props.children}</div>
     </div>
     <style jsx>{`
       .page {
@@ -41,3 +39,4 @@ export default props =>
       }
     `}</style>
   </div>
+)

@@ -15,10 +15,12 @@ import {
   withServerProps
 } from '../../src/ui'
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Action Menu">
-      <PageHeading beta>Action Menu</PageHeading>
+      <PageHeading beta packageName="actionmenu">
+        Action Menu
+      </PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -115,9 +117,7 @@ export default withServerProps(_ =>
       />
 
       <SectionHeading>Nesting</SectionHeading>
-      <P>
-        Nested menu lists may spawn from parent menu list items.
-      </P>
+      <P>Nested menu lists may spawn from parent menu list items.</P>
       <P>
         The origin prop determines the starting position and direction of nested
         menus.
@@ -130,9 +130,7 @@ export default withServerProps(_ =>
           )
           .join('\n')}
       </Code>
-      <P>
-        Here's an example of ActionMenu.origins.bottomRight in action:
-      </P>
+      <P>Here's an example of ActionMenu.origins.bottomRight in action:</P>
       <Example.React
         includes={{ ActionMenu }}
         outputStyle={{ minHeight: '300px', position: 'relative' }}
@@ -197,7 +195,6 @@ export default withServerProps(_ =>
 `
         ]}
       />
-
     </Content>
   </Chrome>
-)
+))

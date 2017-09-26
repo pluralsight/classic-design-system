@@ -14,11 +14,10 @@ import {
   withServerProps
 } from '../../src/ui'
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Text">
-
-      <PageHeading>Text</PageHeading>
+      <PageHeading packageName="text">Text</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -33,8 +32,8 @@ export default withServerProps(_ =>
       <SectionHeading>Heading</SectionHeading>
       <P>
         Heading styles compose complimentary typography attributes for
-        simplified
-        implementation. Try to use common heading styles when possible.
+        simplified implementation. Try to use common heading styles when
+        possible.
       </P>
       <Example.React
         orient="vertical"
@@ -68,9 +67,7 @@ export default withServerProps(_ =>
       />
 
       <SectionHeading>List</SectionHeading>
-      <P>
-        Nothing fancy, just simple lists. You’ll know when you need them.
-      </P>
+      <P>Nothing fancy, just simple lists. You’ll know when you need them.</P>
       <Example.React
         includes={{ Text }}
         codes={[
@@ -105,4 +102,4 @@ export default withServerProps(_ =>
       />
     </Content>
   </Chrome>
-)
+))

@@ -1,3 +1,4 @@
+export ChangeLog from './change-log'
 export Chrome from './chrome'
 export Code from './code'
 export Content from './content'

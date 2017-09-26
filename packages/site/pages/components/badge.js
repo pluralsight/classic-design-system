@@ -13,10 +13,12 @@ import {
   withServerProps
 } from '../../src/ui'
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Badge">
-      <PageHeading beta>Badge</PageHeading>
+      <PageHeading beta packageName="badge">
+        Badge
+      </PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -40,9 +42,7 @@ export default withServerProps(_ =>
       />
 
       <SectionHeading>Colors</SectionHeading>
-      <P>
-        Colors come from the Design System. Semantics come from your heart.
-      </P>
+      <P>Colors come from the Design System. Semantics come from your heart.</P>
       <Example.React
         includes={{ Badge }}
         codes={Object.keys(Badge.colors).map(
@@ -51,4 +51,4 @@ export default withServerProps(_ =>
       />
     </Content>
   </Chrome>
-)
+))

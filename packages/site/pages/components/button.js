@@ -14,11 +14,10 @@ import {
   withServerProps
 } from '../../src/ui'
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Button">
-
-      <PageHeading>Button</PageHeading>
+      <PageHeading packageName="button">Button</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -96,7 +95,6 @@ export default withServerProps(_ =>
           `<Button disabled icon={<Icon id={Icon.ids.pencil} />}>Disabled</Button>`
         ]}
       />
-
     </Content>
   </Chrome>
-)
+))
