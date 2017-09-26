@@ -11,6 +11,7 @@ import {
   P,
   PageHeading,
   SectionHeading,
+  TextLink,
   withServerProps
 } from '../../src/ui'
 
@@ -84,7 +85,8 @@ export default withServerProps(_ => (
       <SectionHeading>Color</SectionHeading>
       <P>
         Icon color will usually match the surrounding text color. It can also be
-        overridden to be any fill.
+        overridden Core <TextLink href="/core/color">colors</TextLink> or any
+        fill.
       </P>
       <Example.React
         includes={{ Icon }}
@@ -95,10 +97,8 @@ export default withServerProps(_ => (
 </div>
 `,
           `
-<div style={{ color: '#ffc200' }}>
-  <Icon id={Icon.ids.path} size={Icon.sizes.medium} />
-</div>
-`,
+<Icon id={Icon.ids.path} color={Icon.colors.orange} size={Icon.sizes.medium} />
+ `,
           `
 <Icon
   css={{ '> svg': { fill: '${core.colors.pink}' } }}
