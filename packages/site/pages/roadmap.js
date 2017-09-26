@@ -154,12 +154,7 @@ const Bar = _ => (
 
 const Tasks = props => (
   <div className="tasks" style={{ borderLeftColor: props.color }}>
-    {props.tasks.map(item => (
-      <Task key={item.title} item={item}>
-        <Task.Title>{item.title}</Task.Title>
-        <Task.Tags tags={item.tags} />
-      </Task>
-    ))}
+    {props.tasks.map(item => <Task key={item.title} item={item} />)}
     <style jsx>{`
       .tasks {
         display: flex;
@@ -175,61 +170,93 @@ const Tasks = props => (
 
 const GithubCat = props => {
   return (
-    <div className="cat">
+    <div
+      className={`cat ${props.isVisible ? 'cat--is-visible' : ''}`}
+      aria-hidden={true}
+    >
       <GithubIcon color={Icon.colors.gray01} />
       <style jsx>{`
         .cat {
           margin-left: auto;
           height: 24px;
           width: 24px;
+          opacity: 0;
+          transition: opacity ${core.motion.speedNormal};
+        }
+        .cat--is-visible {
+          opacity: 1;
         }
       `}</style>
     </div>
   )
 }
 
-const Task = props => {
-  const { item } = props
-  const title =
-    item.tags.indexOf('Site') > -1
-      ? `site: ${item.title} Roadmap Discussion`
-      : item.title
-          .toLowerCase()
-          .replace(/ /g, '-')
-          .replace(/[\(\)]/g, '') + ': Roadmap Discussion'
-  const href = item.href
-    ? item.href
-    : `https://github.com/pluralsight/design-system/issues/new?title=${title}`
-  return (
-    <a href={href} target="_blank" className="task">
-      {props.children}
-      <style jsx>{`
-        .task {
-          text-decoration: none;
-          color: inherit;
-          display: block;
-          width: 100%;
-          margin: calc(${core.layout.spacingMedium} / 2);
-          background: ${core.colors.bone};
-          padding: ${core.layout.spacingMedium};
-          border-radius: 12px;
-          border: 2px solid transparent;
-          transition: all ${core.motion.speedNormal};
-        }
-        .task:focus,
-        .task:hover {
-          border: 2px solid ${core.colors.gray01};
-          outline: none;
-          background: ${core.colors.white};
-        }
-        @media screen and (min-width: 1000px) {
+class Task extends React.Component {
+  constructor(props) {
+    super(props)
+    this.handleMouseOver = this.handleMouseOver.bind(this)
+    this.handleMouseOut = this.handleMouseOut.bind(this)
+    this.state = { isOver: false }
+  }
+  handleMouseOver() {
+    this.setState({ isOver: true })
+  }
+  handleMouseOut() {
+    this.setState({ isOver: false })
+  }
+  render() {
+    const { item } = this.props
+    const title =
+      item.tags.indexOf('Site') > -1
+        ? `site: ${item.title} Roadmap Discussion`
+        : item.title
+            .toLowerCase()
+            .replace(/ /g, '-')
+            .replace(/[\(\)]/g, '') + ': Roadmap Discussion'
+    const href = item.href
+      ? item.href
+      : `https://github.com/pluralsight/design-system/issues/new?title=${title}`
+    return (
+      <a
+        href={href}
+        target="_blank"
+        className="task"
+        onMouseOver={this.handleMouseOver}
+        onMouseOut={this.handleMouseOut}
+      >
+        <Task.Title>{item.title}</Task.Title>
+        <Task.Tags
+          tags={item.tags}
+          icon={<GithubCat isVisible={this.state.isOver} />}
+        />
+        <style jsx>{`
           .task {
-            width: calc(33.333% - ${core.layout.spacingMedium});
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            width: 100%;
+            margin: calc(${core.layout.spacingMedium} / 2);
+            background: ${core.colors.bone};
+            padding: ${core.layout.spacingMedium};
+            border-radius: 12px;
+            border: 2px solid transparent;
+            transition: all ${core.motion.speedNormal};
           }
-        }
-      `}</style>
-    </a>
-  )
+          .task:focus,
+          .task:hover {
+            border: 2px solid ${core.colors.gray01};
+            outline: none;
+            background: ${core.colors.white};
+          }
+          @media screen and (min-width: 1000px) {
+            .task {
+              width: calc(33.333% - ${core.layout.spacingMedium});
+            }
+          }
+        `}</style>
+      </a>
+    )
+  }
 }
 
 Task.Title = props => (
@@ -248,7 +275,7 @@ Task.Title = props => (
 Task.Tags = props => (
   <div className="tags">
     {props.tags.map(tag => <Task.Tag key={tag}>{tag}</Task.Tag>)}
-    <GithubCat />
+    {props.icon}
     <style jsx>{`
       .tags {
         display: flex;
