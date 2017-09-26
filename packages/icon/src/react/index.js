@@ -1,5 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 import glamorous from 'glamorous'
+import PropTypes from 'prop-types'
 import React from 'react'
 
 import icons from './icons'
@@ -16,6 +17,12 @@ const sizes = {
   large: 'large',
   xLarge: 'xLarge'
 }
+const colors = Object.keys(core.colors)
+  .filter(c => !/gradient/.test(c))
+  .reduce((acc, c) => {
+    acc[c] = c
+    return acc
+  }, {})
 
 const styleSize = ({ size }) =>
   ({
@@ -43,13 +50,21 @@ const styleSize = ({ size }) =>
 
 const IconContainer = glamorous.div(
   {
-    display: 'inline-block',
-    // TODO: make more general
-    '> svg': {
-      fill: 'currentColor'
-    }
+    display: 'inline-block'
   },
-  styleSize
+  styleSize,
+  ({ color }) =>
+    color
+      ? {
+          '> svg': {
+            fill: core.colors[color]
+          }
+        }
+      : {
+          '> svg': {
+            fill: 'currentColor'
+          }
+        }
 )
 
 const rmNonHtmlProps = props => {
@@ -65,14 +80,15 @@ const Icon = props => {
   )
 }
 
-import PropTypes from 'prop-types'
 Icon.propTypes = {
+  color: PropTypes.oneOf(Object.keys(colors)),
   id: PropTypes.oneOf(Object.keys(ids)),
   size: PropTypes.oneOf(Object.keys(sizes))
 }
 Icon.defaultProps = {
   size: sizes.small
 }
+Icon.colors = colors
 Icon.ids = ids
 Icon.sizes = sizes
 
