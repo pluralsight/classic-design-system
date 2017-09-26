@@ -19,8 +19,7 @@
     "start": "npm run site",
     "test": "jest",
     "test:watch": "npm run test -- --watchAll",
-    "test:updateSnapshot": "npm run test -- --updateSnapshot",
-    "heroku-postbuild": "cd packages/packages-api && npm run build"
+    "test:updateSnapshot": "npm run test -- --updateSnapshot"
   },
   "keywords": [
     "pluralsight",
