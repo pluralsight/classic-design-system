@@ -1,8 +1,9 @@
 import 'isomorphic-fetch'
 
+import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 
-import { TextLink } from './index'
+import { GithubIcon, TextLink } from './index'
 
 const ChangeLog = props => {
   const changeLogUrl = `https://github.com/pluralsight/design-system/blob/master/packages/${props.packageName}/CHANGELOG.md`
@@ -10,12 +11,25 @@ const ChangeLog = props => {
   return (
     <div className="version">
       <TextLink href={changeLogUrl} target="_blank">
-        {label}
+        <span className="text">
+          {label}
+          <div className="icon">
+            <GithubIcon />
+          </div>
+        </span>
       </TextLink>
       <style jsx>{`
         .version {
-          top: 0;
-          right: 0;
+          font-size: ${core.type.fontSizeSmall};
+        }
+        .text {
+          display: flex;
+          align-items: center;
+        }
+        .icon {
+          display: flex;
+          align-items: center;
+          margin-left: ${core.layout.spacingXSmall};
         }
       `}</style>
     </div>
