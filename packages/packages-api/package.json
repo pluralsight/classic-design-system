@@ -6,8 +6,10 @@
   "scripts": {
     "flow": "flow",
     "start": "concurrently \"npm run build -- --watch\" \"nodemon --watch ./dist\"",
-    "build": "babel src/ --out-dir dist/ --ignore spec.js",
-    "heroku-postbuild": "npm run build"
+    "build": "babel src/ --out-dir dist/ --ignore spec.js"
+  },
+  "engines": {
+    "node": "8.x"
   },
   "author": "jaketrent",
   "license": "Apache-2.0",
