@@ -44,8 +44,6 @@ const styleSize = ({ size }) =>
 const IconContainer = glamorous.div(
   {
     display: 'inline-block',
-    height: '24px',
-    width: '24px',
     // TODO: make more general
     '> svg': {
       fill: 'currentColor'
