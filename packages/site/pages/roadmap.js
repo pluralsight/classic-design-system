@@ -1,5 +1,6 @@
 import Badge from '@pluralsight/ps-design-system-badge/react'
 import core from '@pluralsight/ps-design-system-core'
+import Icon from '@pluralsight/ps-design-system-icon/react'
 import Text from '@pluralsight/ps-design-system-text/react'
 
 import {
@@ -175,7 +176,7 @@ const Tasks = props => (
 const GithubCat = props => {
   return (
     <div className="cat">
-      <GithubIcon />
+      <GithubIcon color={Icon.colors.gray01} />
       <style jsx>{`
         .cat {
           margin-left: auto;
