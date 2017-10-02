@@ -22,8 +22,6 @@ let cache: Cache = {
 function loadFromEnv(seed: ?Cache): Cache {
   dotenv.config({ silent: true })
 
-  if (process.env.ASDF) process.env.ASDF.split(',')
-
   cache = {
     ...cache,
     ...seed,
