@@ -1,0 +1,6 @@
+{
+  "presets": ["babel-preset-node8"],
+  "plugins": [
+    "babel-plugin-transform-flow-strip-types"
+  ]
+}
