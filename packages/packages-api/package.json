@@ -1,6 +1,7 @@
 {
   "name": "packages-api",
   "version": "1.0.0",
+  "private": true,
   "description": "API for tracking the published packages in the design system",
   "main": "dist/index.js",
   "scripts": {
