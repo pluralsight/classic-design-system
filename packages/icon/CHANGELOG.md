@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.1.0"></a>
+# [7.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@7.0.5...@pluralsight/ps-design-system-icon@7.1.0) (2017-10-03)
+
+
+### Features
+
+* **icon:** add color prop ([dceb63e](https://github.com/pluralsight/design-system/commit/dceb63e))
+
+
+
+
 <a name="7.0.5"></a>
 ## [7.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@7.0.3...@pluralsight/ps-design-system-icon@7.0.5) (2017-09-05)
 

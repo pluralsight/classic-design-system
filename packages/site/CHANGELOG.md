@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.11.0"></a>
+# [7.11.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.9.1...@pluralsight/ps-design-system-site@7.11.0) (2017-10-03)
+
+
+### Features
+
+* **site:** display changelog links with latest version ([5ab89a5](https://github.com/pluralsight/design-system/commit/5ab89a5)), closes [#66](https://github.com/pluralsight/design-system/issues/66)
+* **site:** roadmap ([b9a051d](https://github.com/pluralsight/design-system/commit/b9a051d))
+
+
+
+
 <a name="7.10.0"></a>
 # [7.10.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.9.1...@pluralsight/ps-design-system-site@7.10.0) (2017-09-22)
 

@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-icon",
-  "version": "7.0.5",
+  "version": "7.1.0",
   "description": "Design System component for icon ui",
   "main": "index.js",
   "scripts": {
