@@ -95,6 +95,20 @@ export default withServerProps(_ => (
           `<Button disabled icon={<Icon id={Icon.ids.pencil} />}>Disabled</Button>`
         ]}
       />
+
+      <SectionHeading>As Link</SectionHeading>
+      <P>
+        Elements that are visually equivalent to buttons but change the URL and
+        link to a new experience should be rendered as HTML anchor tags. Provide
+        an <code>href</code> prop, and the button will render as an anchor tag.
+      </P>
+      <Example.React
+        includes={{ Button, Icon }}
+        codes={[
+          `<Button href="https://duckduckgo.com?q=pluralsight" target="_blank">Link</Button>`,
+          `<Button href="https://duckduckgo.com?q=pluralsight%20icons" target="_blank" icon={<Icon id={Icon.ids.pencil} />}>Link with icon</Button>`
+        ]}
+      />
     </Content>
   </Chrome>
 ))
