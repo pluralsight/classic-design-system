@@ -1,7 +1,7 @@
 {
   "name": "@pluralsight/ps-design-system-site",
   "private": true,
-  "version": "7.12.0",
+  "version": "7.13.0",
   "description": "Reference site",
   "main": "index.js",
   "engines": {
@@ -15,10 +15,10 @@
   "author": "jaketrent",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^1.5.2",
+    "@pluralsight/ps-design-system-actionmenu": "^1.5.3",
     "@pluralsight/ps-design-system-badge": "^1.2.6",
-    "@pluralsight/ps-design-system-button": "^8.0.8",
-    "@pluralsight/ps-design-system-card": "^6.0.4",
+    "@pluralsight/ps-design-system-button": "^8.1.0",
+    "@pluralsight/ps-design-system-card": "^6.0.5",
     "@pluralsight/ps-design-system-core": "^2.4.7",
     "@pluralsight/ps-design-system-icon": "^7.1.0",
     "@pluralsight/ps-design-system-link": "^5.0.6",

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="8.1.0"></a>
+# [8.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@8.0.8...@pluralsight/ps-design-system-button@8.1.0) (2017-10-03)
+
+
+### Bug Fixes
+
+* **button:** vertical alignment off in firefox ([2f0f98b](https://github.com/pluralsight/design-system/commit/2f0f98b)), closes [#119](https://github.com/pluralsight/design-system/issues/119)
+
+
+### Features
+
+* **button:** render as an anchor if href given ([f6364fc](https://github.com/pluralsight/design-system/commit/f6364fc))
+
+
+
+
 <a name="8.0.8"></a>
 ## [8.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@8.0.7...@pluralsight/ps-design-system-button@8.0.8) (2017-10-03)
 

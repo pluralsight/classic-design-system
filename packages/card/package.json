@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-card",
-  "version": "6.0.4",
+  "version": "6.0.5",
   "description": "Design System component for card ui",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "shiitake": "^2.1.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-button": "^8.0.8",
+    "@pluralsight/ps-design-system-button": "^8.1.0",
     "@pluralsight/ps-design-system-icon": "^7.1.0",
     "@storybook/addon-backgrounds": "^3.0.0",
     "@storybook/addon-storyshots": "^3.2.4",
