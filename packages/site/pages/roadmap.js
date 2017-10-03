@@ -19,15 +19,11 @@ import {
 const work = {
   now: [
     {
-      title: 'Button Link',
-      tags: ['Component']
+      title: 'Track Usage',
+      tags: ['Resources']
     }
   ],
   next: [
-    {
-      title: 'Track Usage',
-      tags: ['Resources']
-    },
     {
       title: 'Sketch Libraries',
       tags: ['Resources']
