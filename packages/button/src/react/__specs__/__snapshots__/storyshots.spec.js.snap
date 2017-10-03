@@ -21,7 +21,9 @@ exports[`Storyshots appearance default 1`] = `
     className="css-gs8szy"
     disabled={false}
   >
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       Click me
     </span>
   </button>
@@ -49,7 +51,9 @@ exports[`Storyshots appearance flat 1`] = `
     className="css-abvzqe"
     disabled={false}
   >
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       Click me
     </span>
   </button>
@@ -77,7 +81,9 @@ exports[`Storyshots appearance stroke 1`] = `
     className="css-1tz7vdm"
     disabled={false}
   >
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       Click me
     </span>
   </button>
@@ -105,7 +111,9 @@ exports[`Storyshots disabled default 1`] = `
     className="css-6npo6a"
     disabled={true}
   >
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       Disabled
     </span>
   </button>
@@ -133,7 +141,9 @@ exports[`Storyshots disabled flat 1`] = `
     className="css-1r3sves"
     disabled={true}
   >
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       Disabled
     </span>
   </button>
@@ -161,7 +171,9 @@ exports[`Storyshots disabled stroke 1`] = `
     className="css-b5dmat"
     disabled={true}
   >
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       Disabled
     </span>
   </button>
@@ -205,7 +217,9 @@ exports[`Storyshots disabled with icon 1`] = `
         </svg>
       </div>
     </div>
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       Disabled
     </span>
   </button>
@@ -249,7 +263,9 @@ exports[`Storyshots icon default 1`] = `
         </svg>
       </div>
     </div>
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       With Icon
     </span>
   </button>
@@ -293,7 +309,9 @@ exports[`Storyshots icon flat 1`] = `
         </svg>
       </div>
     </div>
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       With Icon
     </span>
   </button>
@@ -337,7 +355,9 @@ exports[`Storyshots icon large 1`] = `
         </svg>
       </div>
     </div>
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       With Icon
     </span>
   </button>
@@ -381,7 +401,9 @@ exports[`Storyshots icon left 1`] = `
         </svg>
       </div>
     </div>
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       With Icon
     </span>
   </button>
@@ -425,7 +447,9 @@ exports[`Storyshots icon lone default 1`] = `
         </svg>
       </div>
     </div>
-    <span />
+    <span
+      className="css-1en8fmq"
+    />
   </button>
 </div>
 `;
@@ -467,7 +491,9 @@ exports[`Storyshots icon lone flat large 1`] = `
         </svg>
       </div>
     </div>
-    <span />
+    <span
+      className="css-1en8fmq"
+    />
   </button>
 </div>
 `;
@@ -509,7 +535,9 @@ exports[`Storyshots icon lone flat medium 1`] = `
         </svg>
       </div>
     </div>
-    <span />
+    <span
+      className="css-1en8fmq"
+    />
   </button>
 </div>
 `;
@@ -551,7 +579,9 @@ exports[`Storyshots icon lone flat small 1`] = `
         </svg>
       </div>
     </div>
-    <span />
+    <span
+      className="css-1en8fmq"
+    />
   </button>
 </div>
 `;
@@ -593,7 +623,9 @@ exports[`Storyshots icon lone flat xSmall 1`] = `
         </svg>
       </div>
     </div>
-    <span />
+    <span
+      className="css-1en8fmq"
+    />
   </button>
 </div>
 `;
@@ -635,7 +667,9 @@ exports[`Storyshots icon lone stroke large 1`] = `
         </svg>
       </div>
     </div>
-    <span />
+    <span
+      className="css-1en8fmq"
+    />
   </button>
 </div>
 `;
@@ -677,7 +711,9 @@ exports[`Storyshots icon lone stroke medium 1`] = `
         </svg>
       </div>
     </div>
-    <span />
+    <span
+      className="css-1en8fmq"
+    />
   </button>
 </div>
 `;
@@ -719,7 +755,9 @@ exports[`Storyshots icon lone stroke small 1`] = `
         </svg>
       </div>
     </div>
-    <span />
+    <span
+      className="css-1en8fmq"
+    />
   </button>
 </div>
 `;
@@ -761,7 +799,9 @@ exports[`Storyshots icon lone stroke xSmall 1`] = `
         </svg>
       </div>
     </div>
-    <span />
+    <span
+      className="css-1en8fmq"
+    />
   </button>
 </div>
 `;
@@ -803,7 +843,9 @@ exports[`Storyshots icon medium 1`] = `
         </svg>
       </div>
     </div>
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       With Icon
     </span>
   </button>
@@ -847,7 +889,9 @@ exports[`Storyshots icon right 1`] = `
         </svg>
       </div>
     </div>
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       With Icon
     </span>
   </button>
@@ -891,7 +935,9 @@ exports[`Storyshots icon small 1`] = `
         </svg>
       </div>
     </div>
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       With Icon
     </span>
   </button>
@@ -935,7 +981,9 @@ exports[`Storyshots icon stroke 1`] = `
         </svg>
       </div>
     </div>
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       With Icon
     </span>
   </button>
@@ -979,7 +1027,9 @@ exports[`Storyshots icon xSmall 1`] = `
         </svg>
       </div>
     </div>
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       With Icon
     </span>
   </button>
@@ -1007,7 +1057,9 @@ exports[`Storyshots size large 1`] = `
     className="css-rxgcpy"
     disabled={false}
   >
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       Click me
     </span>
   </button>
@@ -1035,7 +1087,9 @@ exports[`Storyshots size medium 1`] = `
     className="css-gs8szy"
     disabled={false}
   >
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       Click me
     </span>
   </button>
@@ -1063,7 +1117,9 @@ exports[`Storyshots size small 1`] = `
     className="css-1idmyr9"
     disabled={false}
   >
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       Click me
     </span>
   </button>
@@ -1091,7 +1147,9 @@ exports[`Storyshots size xSmall 1`] = `
     className="css-1us9op2"
     disabled={false}
   >
-    <span>
+    <span
+      className="css-1en8fmq"
+    >
       Click me
     </span>
   </button>

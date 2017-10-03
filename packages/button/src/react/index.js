@@ -60,7 +60,7 @@ const styleAppearance = ({ appearance }) =>
       background: 'none',
       ':hover': {
         color: core.colors.white,
-        background: transparentize(0.85, core.colors.white),
+        background: transparentize(0.85, core.colors.white)
       }
     }
   }[appearance])
@@ -179,24 +179,31 @@ const rmNonHtmlProps = props => {
 }
 
 const renderIcon = props =>
-  props.icon
-    ? <IconContainer
-        {...rmNonHtmlProps(props)}
-        iconOnly={React.Children.count(props.children) <= 0}
-      >
-        {React.cloneElement(props.icon, {
-          size: mapIconSize(props)
-        })}
-      </IconContainer>
-    : null
+  props.icon ? (
+    <IconContainer
+      {...rmNonHtmlProps(props)}
+      iconOnly={React.Children.count(props.children) <= 0}
+    >
+      {React.cloneElement(props.icon, {
+        size: mapIconSize(props)
+      })}
+    </IconContainer>
+  ) : null
 
-const Btn = props =>
+const BtnText = glamorous.span({
+  display: 'inline-flex',
+  alignItems: 'center'
+})
+
+const Btn = props => (
   <Button
     {...rmNonHtmlProps(props)}
     iconOnly={React.Children.count(props.children) <= 0}
   >
-    {renderIcon(props)}<span>{props.children}</span>
+    {renderIcon(props)}
+    <BtnText>{props.children}</BtnText>
   </Button>
+)
 
 import PropTypes from 'prop-types'
 Btn.propTypes = {
