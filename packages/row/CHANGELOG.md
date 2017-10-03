@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.9"></a>
+## [1.2.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@1.2.8...@pluralsight/ps-design-system-row@1.2.9) (2017-10-03)
+
+
+### Bug Fixes
+
+* **button:** add missing polished dependency ([944a945](https://github.com/pluralsight/design-system/commit/944a945))
+
+
+
+
 <a name="1.2.8"></a>
 ## [1.2.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@1.2.6...@pluralsight/ps-design-system-row@1.2.8) (2017-09-05)
 
