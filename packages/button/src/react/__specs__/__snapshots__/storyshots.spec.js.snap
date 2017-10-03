@@ -18,7 +18,7 @@ exports[`Storyshots appearance default 1`] = `
   }
 >
   <button
-    className="css-gs8szy"
+    data-css-2ppt5u=""
     disabled={false}
   >
     <span
@@ -48,7 +48,7 @@ exports[`Storyshots appearance flat 1`] = `
   }
 >
   <button
-    className="css-abvzqe"
+    data-css-34jan8=""
     disabled={false}
   >
     <span
@@ -78,7 +78,7 @@ exports[`Storyshots appearance stroke 1`] = `
   }
 >
   <button
-    className="css-1tz7vdm"
+    data-css-1pb6xuj=""
     disabled={false}
   >
     <span
@@ -87,6 +87,84 @@ exports[`Storyshots appearance stroke 1`] = `
       Click me
     </span>
   </button>
+</div>
+`;
+
+exports[`Storyshots as link default 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <a
+    data-css-2ppt5u=""
+    disabled={false}
+    href="https://duckduckgo.com"
+  >
+    <span
+      className="css-1en8fmq"
+    >
+      Click as link
+    </span>
+  </a>
+</div>
+`;
+
+exports[`Storyshots as link with icon 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <a
+    data-css-2ppt5u=""
+    disabled={false}
+    href="https://duckduckgo.com"
+  >
+    <div
+      className="css-7btetm"
+    >
+      <div
+        className="css-otejxm"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.2762 15.862L5 19l3.1392-.275 8.0858-8.0858-2.863-2.863-8.0858 8.0858zm12.363-6.637l.7668-.7667c.384-.3842.5922-.887.5922-1.4318 0-.5455-.208-1.048-.5932-1.4328-.3838-.3838-.885-.5912-1.4308-.5912-.5446 0-1.047.208-1.4318.5932l-.7662.7663 2.863 2.863zm-.665-6.2225c1.076 0 2.086.418 2.845 1.177.761.76 1.179 1.772 1.179 2.847 0 1.074-.418 2.086-1.178 2.846l-10.409 10.409c-.128.128-.289.22-.464.263l-4.705.427c-.34.085-.702-.015-.949-.264-.248-.247-.348-.608-.264-.949l.427-4.704c.044-.176.135-.336.263-.464l10.409-10.409c.76-.761 1.772-1.179 2.846-1.179z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      className="css-1en8fmq"
+    >
+      Click as link
+    </span>
+  </a>
 </div>
 `;
 
@@ -108,7 +186,7 @@ exports[`Storyshots disabled default 1`] = `
   }
 >
   <button
-    className="css-6npo6a"
+    data-css-ck5bq7=""
     disabled={true}
   >
     <span
@@ -138,7 +216,7 @@ exports[`Storyshots disabled flat 1`] = `
   }
 >
   <button
-    className="css-1r3sves"
+    data-css-10juzpr=""
     disabled={true}
   >
     <span
@@ -168,7 +246,7 @@ exports[`Storyshots disabled stroke 1`] = `
   }
 >
   <button
-    className="css-b5dmat"
+    data-css-1e3x6qb=""
     disabled={true}
   >
     <span
@@ -198,7 +276,7 @@ exports[`Storyshots disabled with icon 1`] = `
   }
 >
   <button
-    className="css-6npo6a"
+    data-css-ck5bq7=""
     disabled={true}
   >
     <div
@@ -244,7 +322,7 @@ exports[`Storyshots icon default 1`] = `
   }
 >
   <button
-    className="css-gs8szy"
+    data-css-2ppt5u=""
     disabled={false}
   >
     <div
@@ -290,7 +368,7 @@ exports[`Storyshots icon flat 1`] = `
   }
 >
   <button
-    className="css-abvzqe"
+    data-css-34jan8=""
     disabled={false}
   >
     <div
@@ -336,7 +414,7 @@ exports[`Storyshots icon large 1`] = `
   }
 >
   <button
-    className="css-rxgcpy"
+    data-css-15xj0eq=""
     disabled={false}
   >
     <div
@@ -382,8 +460,9 @@ exports[`Storyshots icon left 1`] = `
   }
 >
   <button
-    className="css-gs8szy"
+    data-css-2ppt5u=""
     disabled={false}
+    iconAlign="left"
   >
     <div
       className="css-7btetm"
@@ -428,7 +507,7 @@ exports[`Storyshots icon lone default 1`] = `
   }
 >
   <button
-    className="css-1eg3htl"
+    data-css-3fs4b8=""
     disabled={false}
   >
     <div
@@ -472,7 +551,7 @@ exports[`Storyshots icon lone flat large 1`] = `
   }
 >
   <button
-    className="css-1cfnupr"
+    data-css-1y4dx8w=""
     disabled={false}
   >
     <div
@@ -516,7 +595,7 @@ exports[`Storyshots icon lone flat medium 1`] = `
   }
 >
   <button
-    className="css-1hg687w"
+    data-css-1dwn2kq=""
     disabled={false}
   >
     <div
@@ -560,7 +639,7 @@ exports[`Storyshots icon lone flat small 1`] = `
   }
 >
   <button
-    className="css-bsmxf8"
+    data-css-1hxju1l=""
     disabled={false}
   >
     <div
@@ -604,7 +683,7 @@ exports[`Storyshots icon lone flat xSmall 1`] = `
   }
 >
   <button
-    className="css-1nnt5rd"
+    data-css-1qoc4fw=""
     disabled={false}
   >
     <div
@@ -648,7 +727,7 @@ exports[`Storyshots icon lone stroke large 1`] = `
   }
 >
   <button
-    className="css-1uei4sd"
+    data-css-1yg3nm9=""
     disabled={false}
   >
     <div
@@ -692,7 +771,7 @@ exports[`Storyshots icon lone stroke medium 1`] = `
   }
 >
   <button
-    className="css-8sjt0z"
+    data-css-fvx27=""
     disabled={false}
   >
     <div
@@ -736,7 +815,7 @@ exports[`Storyshots icon lone stroke small 1`] = `
   }
 >
   <button
-    className="css-ow1h9l"
+    data-css-8wzr8u=""
     disabled={false}
   >
     <div
@@ -780,7 +859,7 @@ exports[`Storyshots icon lone stroke xSmall 1`] = `
   }
 >
   <button
-    className="css-q2bbuo"
+    data-css-1pqua8q=""
     disabled={false}
   >
     <div
@@ -824,7 +903,7 @@ exports[`Storyshots icon medium 1`] = `
   }
 >
   <button
-    className="css-gs8szy"
+    data-css-2ppt5u=""
     disabled={false}
   >
     <div
@@ -870,8 +949,9 @@ exports[`Storyshots icon right 1`] = `
   }
 >
   <button
-    className="css-rw6ent"
+    data-css-16unde1=""
     disabled={false}
+    iconAlign="right"
   >
     <div
       className="css-1cjmww0"
@@ -916,7 +996,7 @@ exports[`Storyshots icon small 1`] = `
   }
 >
   <button
-    className="css-1idmyr9"
+    data-css-auzszc=""
     disabled={false}
   >
     <div
@@ -962,7 +1042,7 @@ exports[`Storyshots icon stroke 1`] = `
   }
 >
   <button
-    className="css-1tz7vdm"
+    data-css-1pb6xuj=""
     disabled={false}
   >
     <div
@@ -1008,7 +1088,7 @@ exports[`Storyshots icon xSmall 1`] = `
   }
 >
   <button
-    className="css-1us9op2"
+    data-css-rfhejr=""
     disabled={false}
   >
     <div
@@ -1054,7 +1134,7 @@ exports[`Storyshots size large 1`] = `
   }
 >
   <button
-    className="css-rxgcpy"
+    data-css-15xj0eq=""
     disabled={false}
   >
     <span
@@ -1084,7 +1164,7 @@ exports[`Storyshots size medium 1`] = `
   }
 >
   <button
-    className="css-gs8szy"
+    data-css-2ppt5u=""
     disabled={false}
   >
     <span
@@ -1114,7 +1194,7 @@ exports[`Storyshots size small 1`] = `
   }
 >
   <button
-    className="css-1idmyr9"
+    data-css-auzszc=""
     disabled={false}
   >
     <span
@@ -1144,7 +1224,7 @@ exports[`Storyshots size xSmall 1`] = `
   }
 >
   <button
-    className="css-1us9op2"
+    data-css-rfhejr=""
     disabled={false}
   >
     <span

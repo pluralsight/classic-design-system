@@ -77,3 +77,14 @@ disabledStory.add('with icon', _ => (
     Disabled
   </Button>
 ))
+
+const asLink = storiesOf('as link', module)
+  .addDecorator(bg)
+  .add('default', _ => (
+    <Button href="https://duckduckgo.com">Click as link</Button>
+  ))
+  .add('with icon', _ => (
+    <Button href="https://duckduckgo.com" icon={<Icon id={Icon.ids.pencil} />}>
+      Click as link
+    </Button>
+  ))

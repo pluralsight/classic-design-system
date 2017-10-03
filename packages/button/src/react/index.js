@@ -1,5 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
+import * as glamor from 'glamor'
 import glamorous from 'glamorous'
+import PropTypes from 'prop-types'
 import React from 'react'
 import { transparentize } from 'polished'
 
@@ -109,37 +111,45 @@ const styleIconOnly = ({ iconOnly, size }) =>
       }
     : null
 
-const Button = glamorous.button(
-  {
-    display: 'inline-flex',
-    justifyContent: 'center',
-    alignItems: 'stretch',
-    padding: `${core.layout.spacingSmall} ${core.layout.spacingMedium}`,
-    border: 0,
-    borderRadius: 2,
-    fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightStandard,
-    fontWeight: core.type.fontWeightMedium,
-    textAlign: 'center',
-    color: core.colors.white,
-    background: core.colors.orange,
-    cursor: 'pointer',
-    overflow: 'hidden',
-    whiteSpace: 'nowrap',
-    textOverflow: 'ellipsis',
-    transition: `all ${core.motion.speedNormal}`,
-    ':hover': {
-      background: core.colors.orangeLight
-    }
-  },
-  styleSize,
-  styleAppearance,
-  styleDisabled,
-  styleDisabledStroke,
-  styleDisabledFlat,
-  styleIconAlign,
-  styleIconOnly
-)
+const getButtonStyles = props =>
+  glamor.css(
+    {
+      display: 'inline-flex',
+      justifyContent: 'center',
+      alignItems: 'stretch',
+      padding: `${core.layout.spacingSmall} ${core.layout.spacingMedium}`,
+      border: 0,
+      borderRadius: 2,
+      fontSize: core.type.fontSizeSmall,
+      lineHeight: core.type.lineHeightStandard,
+      fontWeight: core.type.fontWeightMedium,
+      textAlign: 'center',
+      color: core.colors.white,
+      background: core.colors.orange,
+      cursor: 'pointer',
+      overflow: 'hidden',
+      whiteSpace: 'nowrap',
+      textOverflow: 'ellipsis',
+      textDecoration: 'none',
+      transition: `all ${core.motion.speedNormal}`,
+      ':hover': {
+        background: core.colors.orangeLight
+      }
+    },
+    styleSize(props),
+    styleAppearance(props),
+    styleDisabled(props),
+    styleDisabledStroke(props),
+    styleDisabledFlat(props),
+    styleIconAlign(props),
+    styleIconOnly(props)
+  )
+
+const Button = props =>
+  React.createElement(props.href ? 'a' : 'button', {
+    ...rmNonHtmlProps(props),
+    ...getButtonStyles(props)
+  })
 
 const styleIconAlignIconContainer = ({ iconAlign }) =>
   iconAlign === iconAligns.right
@@ -174,7 +184,7 @@ const mapIconSize = props => {
 }
 
 const rmNonHtmlProps = props => {
-  const { icon, ...rest } = props
+  const { appearance, icon, iconOnly, size, ...rest } = props
   return rest
 }
 
@@ -196,16 +206,12 @@ const BtnText = glamorous.span({
 })
 
 const Btn = props => (
-  <Button
-    {...rmNonHtmlProps(props)}
-    iconOnly={React.Children.count(props.children) <= 0}
-  >
+  <Button {...props} iconOnly={React.Children.count(props.children) <= 0}>
     {renderIcon(props)}
     <BtnText>{props.children}</BtnText>
   </Button>
 )
 
-import PropTypes from 'prop-types'
 Btn.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(appearances)),
   disabled: PropTypes.bool,
