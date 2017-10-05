@@ -6,7 +6,7 @@ type GHContent = {
   download_url: string
 }
 type GHReposGetContentRes = {
-  data: GHContent[]
+  data: GHContent | GHContent[]
 }
 type GHApi = {
   repos: {
@@ -39,19 +39,19 @@ export const getForRepo = async (
     throw new Error(`Too many content request retries in repo ${config.repo}`)
   try {
     const res = await github.repos.getContent(config)
-    return res.data
+    return Array.isArray(res.data) ? res.data : [res.data]
   } catch (err) {
     if (err.code === 404) {
-      console.log('No content in repo', config.repo)
+      // console.log('No specified content in repo', config.repo, config.path)
       return []
     } else if (err.code === 403 && err.headers['retry-after']) {
       const retryMs = parseInt(err.headers['retry-after'] || 0, 10) * 1000
       if (retryMs < 5000) {
-        console.log(
-          'rate limit. retrying after delay (ms)',
-          config.repo,
-          retryMs
-        )
+        // console.log(
+        //   'rate limit. retrying after delay (ms)',
+        //   config.repo,
+        //   retryMs
+        // )
         await wait(retryMs)
         return await getForRepo(config, github, attempts + 1)
       } else {
