@@ -25,6 +25,10 @@ const work = {
   ],
   next: [
     {
+      title: 'Icon Packs Discovery',
+      tags: ['Resources']
+    },
+    {
       title: 'Sketch Libraries',
       tags: ['Resources']
     },
