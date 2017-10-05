@@ -7,7 +7,7 @@ import type {
   GHReposGetContentConfig
 } from './github'
 type Dependencies = {
-  [name: string]: [string]
+  [name: string]: string
 }
 type PackageJson = {
   dependencies: Dependencies

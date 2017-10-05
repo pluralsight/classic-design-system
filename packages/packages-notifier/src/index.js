@@ -16,7 +16,7 @@ type Usages = {
   }
 }
 
-const github = new GitHubApi({
+const github: GHApi = new GitHubApi({
   // debug: true
 })
 github.authenticate({
