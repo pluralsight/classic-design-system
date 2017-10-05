@@ -1,29 +1,15 @@
 // @flow
-type GHRepo = {
-  full_name: string
-}
-
-type GHRes = {
-  data: GHRepo[]
-}
-
-type GHApi = {
-  repos: {
-    getForOrg: GHConfig => GHRes
-  },
-  getNextPage: (GHRes, GHConfig) => GHRes,
-  hasNextPage: GHRes => boolean
-}
-
-type GHConfig = {
-  org: string,
-  per_page?: number
-}
+import type {
+  GHRepo,
+  GHReposGetForOrgRes,
+  GHApi,
+  GHReposGetForOrgConfig
+} from './github'
 
 const getFirstOrgRepoPage = async (
-  config: GHConfig,
+  config: GHReposGetForOrgConfig,
   github: GHApi
-): Promise<GHRes> => {
+): Promise<GHReposGetForOrgRes> => {
   try {
     const body = await github.repos.getForOrg(config)
     return body
@@ -34,14 +20,17 @@ const getFirstOrgRepoPage = async (
 }
 
 const getNextPage = async (
-  body: GHRes,
-  config: GHConfig,
+  body: GHReposGetForOrgRes,
+  config: GHReposGetForOrgConfig,
   github: GHApi
-): Promise<GHRes> => {
+): Promise<GHReposGetForOrgRes> => {
   return await github.getNextPage(body, config)
 }
 
-export const getAllOrg = async (config: GHConfig, github: GHApi) => {
+export const getAllOrg = async (
+  config: GHReposGetForOrgConfig,
+  github: GHApi
+) => {
   let body = await getFirstOrgRepoPage(config, github)
   let repos = body.data
   let i = 0

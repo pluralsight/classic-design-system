@@ -1,26 +1,11 @@
 // @flow
-type GHContent = {
-  name: string,
-  url: string,
-  html_url: string,
-  download_url: string
-}
-type GHReposGetContentRes = {
-  data: GHContent | GHContent[]
-}
-type GHApi = {
-  repos: {
-    getContent: GHReposGetContentConfig => GHReposGetContentRes
-  }
-}
-type GHHttpConfig = {
-  token: string
-}
-type GHReposGetContentConfig = {
-  owner: string,
-  path: string,
-  repo: string
-}
+import type {
+  GHContent,
+  GHReposGetContentRes,
+  GHApi,
+  GHHttpConfig,
+  GHReposGetContentConfig
+} from './github'
 type Dependencies = {
   [name: string]: [string]
 }
