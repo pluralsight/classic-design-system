@@ -56,7 +56,7 @@ export const getForRepo = async (
 export const readJson = async (
   config: GHHttpConfig,
   dep: GHContent
-): Promise<?string> => {
+): Promise<?PackageJson> => {
   let res
   try {
     res = await fetch(dep.download_url, {

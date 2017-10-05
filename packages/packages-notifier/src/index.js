@@ -1,7 +1,11 @@
+// @flow
 import 'isomorphic-fetch'
 
-import config from './config'
+import type { GHApi } from './github'
+
 import GitHubApi from 'github'
+
+import config from './config'
 
 import * as repos from './repos'
 import * as deps from './deps'
@@ -57,19 +61,21 @@ github.authenticate({
             pkgPackageJson[0]
           )
 
-          const designSystemPackages = deps.filterDesignSystem(json)
-          const count = Object.keys(designSystemPackages).length
-          if (count > 0) {
-            console.log(
-              `Found usages in ${repo.full_name}/${pkgPackageJsonPath}`
-            )
-            console.log(designSystemPackages)
-          } else {
-            // console.log(
-            //   'No usage in repo',
-            //   repo.full_name,
-            //   `in ${pkgPackageJsonPath}`
-            // )
+          if (json) {
+            const designSystemPackages = deps.filterDesignSystem(json)
+            const count = Object.keys(designSystemPackages).length
+            if (count > 0) {
+              console.log(
+                `Found usages in ${repo.full_name}/${pkgPackageJsonPath}`
+              )
+              console.log(designSystemPackages)
+            } else {
+              // console.log(
+              //   'No usage in repo',
+              //   repo.full_name,
+              //   `in ${pkgPackageJsonPath}`
+              // )
+            }
           }
         }
       })
@@ -80,13 +86,15 @@ github.authenticate({
         { token: config.githubToken },
         packageJson
       )
-      const designSystemPackages = deps.filterDesignSystem(json)
-      const count = Object.keys(designSystemPackages).length
-      if (count > 0) {
-        console.log(`Found usages in ${repo.full_name}/package.json`)
-        console.log(designSystemPackages)
-      } else {
-        // console.log('No usage in repo', repo.full_name, 'in /package.json')
+      if (json) {
+        const designSystemPackages = deps.filterDesignSystem(json)
+        const count = Object.keys(designSystemPackages).length
+        if (count > 0) {
+          console.log(`Found usages in ${repo.full_name}/package.json`)
+          console.log(designSystemPackages)
+        } else {
+          // console.log('No usage in repo', repo.full_name, 'in /package.json')
+        }
       }
     }
   })
