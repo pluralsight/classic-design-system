@@ -10,6 +10,12 @@ import config from './config'
 import * as repos from './repos'
 import * as deps from './deps'
 
+type Usages = {
+  [path: string]: {
+    [packageId: string]: string
+  }
+}
+
 const github = new GitHubApi({
   // debug: true
 })
@@ -18,6 +24,7 @@ github.authenticate({
   token: config.githubToken
 })
 ;(async _ => {
+  const usages: Usages = {}
   const allRepos = await repos.getAllOrg(
     { org: 'ps-dev', per_page: 100 },
     github
@@ -65,10 +72,10 @@ github.authenticate({
             const designSystemPackages = deps.filterDesignSystem(json)
             const count = Object.keys(designSystemPackages).length
             if (count > 0) {
-              console.log(
-                `Found usages in ${repo.full_name}/${pkgPackageJsonPath}`
-              )
+              const path = `${repo.full_name}/${pkgPackageJsonPath}`
+              console.log(`Found usages in ${path}`)
               console.log(designSystemPackages)
+              usages[path] = designSystemPackages
             } else {
               // console.log(
               //   'No usage in repo',
@@ -90,8 +97,10 @@ github.authenticate({
         const designSystemPackages = deps.filterDesignSystem(json)
         const count = Object.keys(designSystemPackages).length
         if (count > 0) {
-          console.log(`Found usages in ${repo.full_name}/package.json`)
+          const path = `${repo.full_name}/package.json`
+          console.log(`Found usages in ${path}`)
           console.log(designSystemPackages)
+          usages[path] = designSystemPackages
         } else {
           // console.log('No usage in repo', repo.full_name, 'in /package.json')
         }
@@ -99,21 +108,23 @@ github.authenticate({
     }
   })
 
-  try {
-    const res = await fetch(config.slackWebhookUrl, {
-      method: 'POST',
-      body: JSON.stringify({ text: 'Jake testing' })
-    })
+  // TODO: reenable
+  // try {
+  //   const res = await fetch(config.slackWebhookUrl, {
+  //     method: 'POST',
+  //     body: JSON.stringify({ text: 'Jake testing' })
+  //   })
 
-    if (res.ok) {
-      console.log('posted usage to slack.')
-    } else {
-      const body = await res.json()
-      console.log('failure to post to slack', res.status, body)
-    }
-  } catch (err) {
-    console.log('failure to post to slack', err)
-  }
+  //   if (res.ok) {
+  //     console.log('posted usage to slack.')
+  //   } else {
+  //     const body = await res.json()
+  //     console.log('failure to post to slack', res.status, body)
+  //   }
+  // } catch (err) {
+  //   console.log('failure to post to slack', err)
+  // }
 
+  console.log('usages', usages)
   console.log('done.')
 })()
