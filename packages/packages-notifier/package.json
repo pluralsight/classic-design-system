@@ -4,9 +4,10 @@
   "description": "Job for sending notifications regarding package versions",
   "main": "dist/index.js",
   "scripts": {
+    "debug": "npm run build && node inspect dist/index",
     "flow": "flow",
     "start": "npm run build && node dist/index",
-    "build": "babel src/ --out-dir dist/ --ignore spec.js"
+    "build": "babel src/ --out-dir dist/ --ignore spec.js --source-maps"
   },
   "engines": {
     "node": "8.x"

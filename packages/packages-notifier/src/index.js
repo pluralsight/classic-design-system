@@ -98,4 +98,22 @@ github.authenticate({
       }
     }
   })
+
+  try {
+    const res = await fetch(config.slackWebhookUrl, {
+      method: 'POST',
+      body: JSON.stringify({ text: 'Jake testing' })
+    })
+
+    if (res.ok) {
+      console.log('posted usage to slack.')
+    } else {
+      const body = await res.json()
+      console.log('failure to post to slack', res.status, body)
+    }
+  } catch (err) {
+    console.log('failure to post to slack', err)
+  }
+
+  console.log('done.')
 })()

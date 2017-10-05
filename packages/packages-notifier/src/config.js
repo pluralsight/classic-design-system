@@ -4,7 +4,8 @@ const dotenv = require('dotenv')
 type Cache = {
   githubToken: string,
   env: string,
-  port: number
+  port: number,
+  slackWebhookUrl: string
 }
 
 const getVar = name => {
@@ -16,7 +17,8 @@ const getVar = name => {
 let cache: Cache = {
   githubToken: '',
   env: 'development',
-  port: 3003
+  port: 3003,
+  slackWebhookUrl: ''
 }
 
 function loadFromEnv(seed: ?Cache): Cache {
@@ -28,7 +30,8 @@ function loadFromEnv(seed: ?Cache): Cache {
     ...{
       githubToken: getVar('GITHUB_TOKEN'),
       env: process.env.NODE_ENV || cache.env,
-      port: parseInt(process.env.PORT, 10) || cache.port
+      port: parseInt(process.env.PORT, 10) || cache.port,
+      slackWebhookUrl: getVar('SLACK_WEBHOOK_URL')
     }
   }
 
