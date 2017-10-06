@@ -4,10 +4,12 @@
   "description": "Job for sending notifications regarding package versions",
   "main": "dist/index.js",
   "scripts": {
+    "build": "babel src/ --out-dir dist/ --ignore spec.js --source-maps",
     "debug": "npm run build && node inspect dist/index",
     "flow": "flow",
     "start": "npm run build && node dist/index",
-    "build": "babel src/ --out-dir dist/ --ignore spec.js --source-maps"
+    "test": "jest",
+    "test:watch": "npm run test -- --watch"
   },
   "engines": {
     "node": "8.x"
@@ -20,10 +22,12 @@
     "babel-preset-node8": "^1.2.0",
     "dotenv": "^4.0.0",
     "github": "^11.0.0",
-    "isomorphic-fetch": "^2.2.1"
+    "isomorphic-fetch": "^2.2.1",
+    "semver-truncate": "^1.1.2"
   },
   "devDependencies": {
     "flow-bin": "^0.55.0",
-    "flow-typed": "^2.1.5"
+    "flow-typed": "^2.1.5",
+    "jest": "^21.2.1"
   }
 }

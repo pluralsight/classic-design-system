@@ -2,9 +2,12 @@
 const dotenv = require('dotenv')
 
 type Cache = {
-  githubToken: string,
   env: string,
+  githubApiDebug: boolean,
+  githubToken: string,
+  packagesApiUrl: string,
   port: number,
+  slackChannelName: string,
   slackWebhookUrl: string
 }
 
@@ -15,9 +18,12 @@ const getVar = name => {
 }
 
 let cache: Cache = {
-  githubToken: '',
   env: 'development',
+  githubApiDebug: false,
+  githubToken: '',
+  packagesApiUrl: '',
   port: 3003,
+  slackChannelName: '',
   slackWebhookUrl: ''
 }
 
@@ -28,9 +34,13 @@ function loadFromEnv(seed: ?Cache): Cache {
     ...cache,
     ...seed,
     ...{
-      githubToken: getVar('GITHUB_TOKEN'),
       env: process.env.NODE_ENV || cache.env,
+      githubApiDebug:
+        process.env.GITUB_API_DEBUG === 'true' || cache.githubApiDebug,
+      githubToken: getVar('GITHUB_TOKEN'),
+      packagesApiUrl: getVar('PACKAGES_API_URL'),
       port: parseInt(process.env.PORT, 10) || cache.port,
+      slackChannelName: getVar('SLACK_CHANNEL_NAME'),
       slackWebhookUrl: getVar('SLACK_WEBHOOK_URL')
     }
   }

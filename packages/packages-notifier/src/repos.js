@@ -4,7 +4,7 @@ import type {
   GHReposGetForOrgRes,
   GHApi,
   GHReposGetForOrgConfig
-} from './github'
+} from './types'
 
 const getFirstOrgRepoPage = async (
   config: GHReposGetForOrgConfig,

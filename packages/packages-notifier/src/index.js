@@ -1,23 +1,19 @@
 // @flow
 import 'isomorphic-fetch'
 
-import type { GHApi } from './github'
+import type { GHApi, Usages } from './types'
 
 import GitHubApi from 'github'
 
 import config from './config'
 
-import * as repos from './repos'
 import * as deps from './deps'
-
-type Usages = {
-  [path: string]: {
-    [packageId: string]: string
-  }
-}
+import * as packages from './packages'
+import * as slack from './slack'
+import * as repos from './repos'
 
 const github: GHApi = new GitHubApi({
-  // debug: true
+  debug: config.githubApiDebug
 })
 github.authenticate({
   type: 'oauth',
@@ -112,20 +108,11 @@ github.authenticate({
     })
   )
 
-  // TODO: reenable
-  // try {
-  //   const res = await fetch(config.slackWebhookUrl, {
-  //     method: 'POST',
-  //     body: JSON.stringify({ text: 'Jake testing' })
-  //   })
+  const latestPackages = await packages.getLatest()
 
-  //   if (res.ok) {
-  //     console.log('posted usage to slack.')
-  //   } else {
-  //     const body = await res.json()
-  //     console.log('failure to post to slack', res.status, body)
-  //   }
-  // } catch (err) {
-  //   console.log('failure to post to slack', err)
-  // }
+  const summary = slack.formatUsage(
+    packages.filterUpgradeOpps(latestPackages, usages),
+    latestPackages
+  )
+  await slack.post(summary)
 })()

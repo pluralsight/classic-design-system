@@ -40,3 +40,13 @@ export type GHApi = {
   getNextPage: (T, C) => T,
   hasNextPage: T => boolean
 }
+
+export type Usages = {
+  [path: string]: {
+    [packageId: string]: string
+  }
+}
+
+export type Packages = {
+  [name: string]: string
+}

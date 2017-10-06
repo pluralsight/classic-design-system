@@ -5,7 +5,7 @@ import type {
   GHApi,
   GHHttpConfig,
   GHReposGetContentConfig
-} from './github'
+} from './types'
 type Dependencies = {
   [name: string]: string
 }
