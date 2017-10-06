@@ -1,24 +1,13 @@
 // @flow
 import 'isomorphic-fetch'
 
-import type { GHApi, Usages } from './types'
-
-import GitHubApi from 'github'
-
-import config from './config'
+import type { Usages } from './types'
 
 import * as deps from './deps'
 import * as packages from './packages'
+import github from './github'
 import * as slack from './slack'
 import * as repos from './repos'
-
-const github: GHApi = new GitHubApi({
-  debug: config.githubApiDebug
-})
-github.authenticate({
-  type: 'oauth',
-  token: config.githubToken
-})
 ;(async _ => {
   const usages: Usages = {}
   const allRepos = await repos.getAllOrg(
