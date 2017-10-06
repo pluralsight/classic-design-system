@@ -6,6 +6,9 @@ import type {
   GHHttpConfig,
   GHReposGetContentConfig
 } from './types'
+
+import config from './config'
+
 type Dependencies = {
   [name: string]: string
 }
@@ -83,3 +86,15 @@ export const filterDesignSystem = (pkgJson: PackageJson): Dependencies =>
       acc[name] = pkgJson.dependencies[name]
       return acc
     }, {})
+
+export const getDesignSystemDeps = async (
+  dependency: GHContent
+): Promise<?Dependencies> => {
+  const json = await readJson({ token: config.githubToken }, dependency)
+  if (json) {
+    const designSystemPackages = filterDesignSystem(json)
+    return Object.keys(designSystemPackages).length > 0
+      ? designSystemPackages
+      : null
+  }
+}

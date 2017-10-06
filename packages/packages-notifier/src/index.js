@@ -39,7 +39,6 @@ github.authenticate({
       const lernaJson = allDeps.find(dep => dep.name === 'lerna.json')
 
       if (packagesDir && lernaJson) {
-        // console.log('Found lerna.json and packages/. Recursing', repo.full_name)
         const packageDirs = await deps.getForRepo(
           {
             repo: repo.name,
@@ -60,48 +59,22 @@ github.authenticate({
               github
             )
             if (pkgPackageJson.length > 0) {
-              const json = await deps.readJson(
-                { token: config.githubToken },
+              const designSystemDeps = await deps.getDesignSystemDeps(
                 pkgPackageJson[0]
               )
-              if (json) {
-                const designSystemPackages = deps.filterDesignSystem(json)
-                const count = Object.keys(designSystemPackages).length
-                if (count > 0) {
-                  const path = `${repo.full_name}/${pkgPackageJsonPath}`
-                  // console.log(`Found usages in ${path}`)
-                  // console.log(designSystemPackages)
-                  usages[path] = designSystemPackages
-                } else {
-                  // console.log(
-                  //   'No usage in repo',
-                  //   repo.full_name,
-                  //   `in ${pkgPackageJsonPath}`
-                  // )
-                }
-              }
+              if (designSystemDeps)
+                usages[
+                  `${repo.full_name}/${pkgPackageJsonPath}`
+                ] = designSystemDeps
             }
           })
         )
       }
 
       if (packageJson) {
-        const json = await deps.readJson(
-          { token: config.githubToken },
-          packageJson
-        )
-        if (json) {
-          const designSystemPackages = deps.filterDesignSystem(json)
-          const count = Object.keys(designSystemPackages).length
-          if (count > 0) {
-            const path = `${repo.full_name}/package.json`
-            // console.log(`Found usages in ${path}`)
-            // console.log(designSystemPackages)
-            usages[path] = designSystemPackages
-          } else {
-            // console.log('No usage in repo', repo.full_name, 'in /package.json')
-          }
-        }
+        const designSystemDeps = await deps.getDesignSystemDeps(packageJson)
+        if (designSystemDeps)
+          usages[`${repo.full_name}/package.json`] = designSystemDeps
       }
 
       return Promise.resolve()
