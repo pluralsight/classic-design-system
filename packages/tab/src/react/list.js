@@ -20,6 +20,12 @@ export default class extends React.Component {
     this.state = { activeIndex: findActiveIndex(this.props.children) }
     this.handleListItemClick = this.handleListItemClick.bind(this)
   }
+  componentWillReceiveProps(nextProps) {
+    const nextActiveIndex = findActiveIndex(nextProps.children)
+    if (this.state.activeIndex !== nextActiveIndex) {
+      this.setState({ activeIndex: nextActiveIndex })
+    }
+  }
   handleListItemClick(i, originalOnClick, evt) {
     this.setState({ activeIndex: i }, _ => {
       if (typeof originalOnClick === 'function') originalOnClick(i, evt)
