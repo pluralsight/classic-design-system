@@ -3,12 +3,16 @@ import 'isomorphic-fetch'
 
 import type { Usages } from './types'
 
+import schedule from 'node-schedule'
+
+import config from './config'
 import * as deps from './deps'
 import * as packages from './packages'
 import github from './github'
 import * as slack from './slack'
 import * as repos from './repos'
-;(async _ => {
+
+schedule.scheduleJob(config.cronPattern, async _ => {
   const usages: Usages = {}
   const allRepos = await repos.getAllOrg(
     { org: 'ps-dev', per_page: 100 },
@@ -77,4 +81,6 @@ import * as repos from './repos'
     latestPackages
   )
   await slack.post(summary)
-})()
+})
+
+console.log('job scheduled for ' + config.cronPattern)

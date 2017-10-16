@@ -2,6 +2,7 @@
 const dotenv = require('dotenv')
 
 type Cache = {
+  cronPattern: string,
   env: string,
   githubApiDebug: boolean,
   githubToken: string,
@@ -18,6 +19,7 @@ const getVar = name => {
 }
 
 let cache: Cache = {
+  cronPattern: '0 8 * * 1',
   env: 'development',
   githubApiDebug: false,
   githubToken: '',
@@ -34,6 +36,7 @@ function loadFromEnv(seed: ?Cache): Cache {
     ...cache,
     ...seed,
     ...{
+      cronPattern: process.env.CRON_PATTERN || cache.cronPattern,
       env: process.env.NODE_ENV || cache.env,
       githubApiDebug:
         process.env.GITUB_API_DEBUG === 'true' || cache.githubApiDebug,

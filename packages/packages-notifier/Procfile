@@ -1,0 +1,1 @@
+worker: cd packages/packages-notifier && npm run build && node dist/index.js
