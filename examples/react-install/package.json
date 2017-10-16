@@ -21,11 +21,11 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^6.0.0",
-    "@pluralsight/ps-design-system-core": "^2.4.0",
-    "@pluralsight/ps-design-system-icon": "^5.0.0",
-    "@pluralsight/ps-design-system-normalize": "^3.0.22",
-    "@pluralsight/ps-design-system-text": "^7.0.0",
+    "@pluralsight/ps-design-system-button": "^8.1.0",
+    "@pluralsight/ps-design-system-core": "^2.4.7",
+    "@pluralsight/ps-design-system-icon": "^7.1.0",
+    "@pluralsight/ps-design-system-normalize": "^3.0.29",
+    "@pluralsight/ps-design-system-text": "^9.0.5",
     "react": "^15.6.1",
     "react-dom": "^15.6.0"
   }
