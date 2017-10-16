@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Link from './link'
 import { withHeadings } from './content'
 
-const Group = props =>
+const Group = props => (
   <div className="group">
     {props.children}
     <style jsx>{`
@@ -14,8 +14,9 @@ const Group = props =>
       }
     `}</style>
   </div>
+)
 
-const GroupTitle = props =>
+const GroupTitle = props => (
   <div className="groupTitle">
     {props.children}
     <style jsx>{`
@@ -28,50 +29,55 @@ const GroupTitle = props =>
       }
     `}</style>
   </div>
+)
 
 const InternalLinks = props =>
-  Array.isArray(props.headings) && props.headings.length > 0
-    ? <div className="links">
-        {props.headings.map(h =>
-          <a className="link" href={h.href} key={h.href}>{h.label}</a>
-        )}
-        <style jsx>{`
-      @keyframes grow {
-        100% { height: auto; }
-      }
-      .links {
-        border-left: 1px solid ${core.colors.gray01};
-        margin: ${core.layout.spacingSmall} 0 ${core.layout.spacingSmall} ${core
-          .layout.spacingTiny};
-        padding: 0 0 0 ${core.layout.spacingMedium};
-        overflow: hidden;
-        height: 0;
-        animation: grow ${core.motion.speedSlowest} forwards;
-      }
-      .link {
-        display: block;
-        font-size: ${core.type.fontSizeXSmall};
-        line-height: ${core.type.lineHeightExtra};
-        color: ${core.colors.gray03};
-        white-space: nowrap;
-        cursor: pointer;
-        transition: all ${core.motion.speedFastest} ease-in-out;
-      }
-      .link:first-child {
-        line-height: 10px;
-        padding-bottom: ${core.layout.spacingSmall};
-      }
-      .link:last-child {
-        line-height: 10px;
-        padding-top: ${core.layout.spacingSmall};
-      }
-      .link:hover {
-        color: ${core.colors.black};
-        text-decoration: none;
-      }
-    `}</style>
-      </div>
-    : null
+  Array.isArray(props.headings) && props.headings.length > 0 ? (
+    <div className="links">
+      {props.headings.map(h => (
+        <a className="link" href={h.href} key={h.href}>
+          {h.label}
+        </a>
+      ))}
+      <style jsx>{`
+        @keyframes grow {
+          100% {
+            height: auto;
+          }
+        }
+        .links {
+          border-left: 1px solid ${core.colors.gray01};
+          margin: ${core.layout.spacingSmall} 0 ${core.layout.spacingSmall}
+            ${core.layout.spacingTiny};
+          padding: 0 0 0 ${core.layout.spacingMedium};
+          overflow: hidden;
+          height: 0;
+          animation: grow ${core.motion.speedSlowest} forwards;
+        }
+        .link {
+          display: block;
+          font-size: ${core.type.fontSizeXSmall};
+          line-height: ${core.type.lineHeightExtra};
+          color: ${core.colors.gray03};
+          white-space: nowrap;
+          cursor: pointer;
+          transition: all ${core.motion.speedFastest} ease-in-out;
+        }
+        .link:first-child {
+          line-height: 10px;
+          padding-bottom: ${core.layout.spacingSmall};
+        }
+        .link:last-child {
+          line-height: 10px;
+          padding-top: ${core.layout.spacingSmall};
+        }
+        .link:hover {
+          color: ${core.colors.black};
+          text-decoration: none;
+        }
+      `}</style>
+    </div>
+  ) : null
 
 class NavLink extends React.Component {
   render() {
@@ -89,48 +95,48 @@ class NavLink extends React.Component {
         </Link>
         {isActive && <InternalLinks headings={this.props.headings} />}
         <style jsx>{`
-      .navLink {
-        padding-left: 14px; /* TODO: how to handle additive spacing scenarios? */
-      }
-      .box {
-        display: inline-block;
-        height: 8px;
-        width: 0px;
-        margin-right: 0px;
-        background: ${core.colors.gradientHorz};
-        transition: all ${core.motion.speedFastest} ease-in-out;
-      }
-      .navLink :global(a) {
-        text-decoration: none;
-      }
-      .navLink .link {
-        display: flex;
-        align-items: center;
-        font-size: ${core.type.fontSizeSmall};
-        line-height: ${core.type.lineHeightExtra};
-        color: ${core.colors.gray03};
-        white-space: nowrap;
-        transition: all ${core.motion.speedFastest} ease-in-out;
-      }
-      .navLink .link:hover {
-        color: ${core.colors.black};
-        text-decoration: none;
-      }
-      .link:hover .box {
-        width: 8px;
-        padding-left: 8px;
-        margin-right: 12px;
-      }
-      .linkActive {
-        color: ${core.colors.black};
-        font-weight: ${core.type.fontWeightBold};
-      }
-      .linkActive .box {
-        width: 8px;
-        padding-left: 8px;
-        margin-right: 12px;
-      }
-    `}</style>
+          .navLink {
+            padding-left: 14px; /* TODO: how to handle additive spacing scenarios? */
+          }
+          .box {
+            display: inline-block;
+            height: 8px;
+            width: 0px;
+            margin-right: 0px;
+            background: ${core.colors.gradientHorz};
+            transition: all ${core.motion.speedFastest} ease-in-out;
+          }
+          .navLink :global(a) {
+            text-decoration: none;
+          }
+          .navLink .link {
+            display: flex;
+            align-items: center;
+            font-size: ${core.type.fontSizeSmall};
+            line-height: ${core.type.lineHeightExtra};
+            color: ${core.colors.gray03};
+            white-space: nowrap;
+            transition: all ${core.motion.speedFastest} ease-in-out;
+          }
+          .navLink .link:hover {
+            color: ${core.colors.black};
+            text-decoration: none;
+          }
+          .link:hover .box {
+            width: 8px;
+            padding-left: 8px;
+            margin-right: 12px;
+          }
+          .linkActive {
+            color: ${core.colors.black};
+            font-weight: ${core.type.fontWeightBold};
+          }
+          .linkActive .box {
+            width: 8px;
+            padding-left: 8px;
+            margin-right: 12px;
+          }
+        `}</style>
       </div>
     )
   }
@@ -139,7 +145,7 @@ NavLink.contextTypes = {
   pathname: PropTypes.string
 }
 
-const LogoSvg = props =>
+const LogoSvg = props => (
   <svg
     className="logoSvg"
     viewBox="0 0 32 32"
@@ -173,17 +179,16 @@ const LogoSvg = props =>
       }
     `}</style>
   </svg>
+)
 
-const Logo = _ =>
+const Logo = _ => (
   <div className="logo">
     <Link href="/">
       <span className="box">
         <LogoSvg />
         <h2 className="text">
           <span className="textCompany">PLURALSIGHT</span>
-          <span className="textTitle">
-            DESIGN SYSTEM
-          </span>
+          <span className="textTitle">DESIGN SYSTEM</span>
         </h2>
       </span>
     </Link>
@@ -208,7 +213,7 @@ const Logo = _ =>
       }
       .textCompany {
         display: block;
-        letter-spacing: .15em;
+        letter-spacing: 0.15em;
         font-size: ${core.type.fontSizeXSmall};
         font-weight: ${core.type.fontWeightMedium};
         color: ${core.colors.black};
@@ -227,15 +232,18 @@ const Logo = _ =>
       }
     `}</style>
   </div>
+)
 
-export default withHeadings(props =>
+export default withHeadings(props => (
   <div className="sidenav">
     <Logo />
     <Group>
       <GroupTitle>INTRODUCTION</GroupTitle>
       <NavLink href="/">Get Started</NavLink>
       <NavLink href="/install">Install</NavLink>
-      <NavLink href="/contribute" headings={props.headings}>Contribute</NavLink>
+      <NavLink href="/contribute" headings={props.headings}>
+        Contribute
+      </NavLink>
       <NavLink href="/roadmap">Roadmap</NavLink>
     </Group>
     <Group>
@@ -255,11 +263,21 @@ export default withHeadings(props =>
       <NavLink href="/components/button" headings={props.headings}>
         Button
       </NavLink>
-      <NavLink href="/components/card" headings={props.headings}>Card</NavLink>
-      <NavLink href="/components/icon" headings={props.headings}>Icon</NavLink>
-      <NavLink href="/components/row" headings={props.headings}>Row</NavLink>
-      <NavLink href="/components/tab" headings={props.headings}>Tab</NavLink>
-      <NavLink href="/components/text" headings={props.headings}>Text</NavLink>
+      <NavLink href="/components/card" headings={props.headings}>
+        Card
+      </NavLink>
+      <NavLink href="/components/icon" headings={props.headings}>
+        Icon
+      </NavLink>
+      <NavLink href="/components/row" headings={props.headings}>
+        Row
+      </NavLink>
+      <NavLink href="/components/tab" headings={props.headings}>
+        Tab
+      </NavLink>
+      <NavLink href="/components/text" headings={props.headings}>
+        Text
+      </NavLink>
     </Group>
     <style jsx>{`
       .root {
@@ -276,4 +294,4 @@ export default withHeadings(props =>
       }
     `}</style>
   </div>
-)
+))
