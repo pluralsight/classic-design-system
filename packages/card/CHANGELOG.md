@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.0.6"></a>
+## [6.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@6.0.5...@pluralsight/ps-design-system-card@6.0.6) (2017-10-16)
+
+
+### Bug Fixes
+
+* **card:** don't publish babelrc to npm ([5fac0a9](https://github.com/pluralsight/design-system/commit/5fac0a9))
+
+
+
+
 <a name="6.0.5"></a>
 ## [6.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@6.0.4...@pluralsight/ps-design-system-card@6.0.5) (2017-10-03)
 

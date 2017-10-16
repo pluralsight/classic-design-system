@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="8.1.1"></a>
+## [8.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@8.1.0...@pluralsight/ps-design-system-button@8.1.1) (2017-10-16)
+
+
+### Bug Fixes
+
+* **button:** don't publish babelrc to npm ([e6a5822](https://github.com/pluralsight/design-system/commit/e6a5822))
+
+
+
+
 <a name="8.1.0"></a>
 # [8.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@8.0.8...@pluralsight/ps-design-system-button@8.1.0) (2017-10-03)
 
