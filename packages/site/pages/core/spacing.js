@@ -11,18 +11,18 @@ import {
 } from '../../src/ui'
 
 const increments = [
-  { width: 4, label: 'Tiny', varName: 'psLayoutSpacingTiny' },
+  { width: 4, label: 'XX-Small', varName: 'psLayoutSpacingXXSmall' },
   { width: 8, label: 'X-Small', varName: 'psLayoutSpacingXSmall' },
   { width: 12, label: 'Small', varName: 'psLayoutSpacingSmall' },
   { width: 16, label: 'Medium', varName: 'psLayoutSpacingMedium' },
   { width: 24, label: 'Large', varName: 'psLayoutSpacingLarge' },
-  { width: 40, label: 'X-Large', varName: 'psLayoutSpacingXLarge' },
-  { width: 56, label: 'XX-Large', varName: 'psLayoutSpacingXXLarge' }
+  { width: 48, label: 'X-Large', varName: 'psLayoutSpacingXLarge' },
+  { width: 64, label: 'XX-Large', varName: 'psLayoutSpacingXXLarge' }
 ]
 
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
 
-const Parent = props =>
+const Parent = props => (
   <div className="parent">
     {props.children}
     <style jsx>{`
@@ -34,6 +34,7 @@ const Parent = props =>
       }
     `}</style>
   </div>
+)
 
 const dimension = side =>
   side === 'left' || side === 'right' ? 'width' : 'height'
@@ -55,11 +56,11 @@ const renderSingleLine = (props, side, i) => {
         .line {
           position: absolute;
           border-style: dashed;
-          border-color: #FF00CE;
+          border-color: #ff00ce;
           border-width: 0;
         }
         .lineSingleSide {
-          background: #8FC4E9;
+          background: #8fc4e9;
         }
         .lineTop {
           top: 0;
@@ -99,40 +100,39 @@ const renderLines = props =>
     : renderSingleLine(props, props.sides)
 
 const renderBorder = props =>
-  props.sides === 'all'
-    ? <div style={{ borderWidth: props.width }} className="border">
-        <style jsx>{`
-          .border {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            border-style: solid;
-            border-color: #8FC4E9;
-            border-width: 0;
-          }
-        `}</style>
-      </div>
-    : null
+  props.sides === 'all' ? (
+    <div style={{ borderWidth: props.width }} className="border">
+      <style jsx>{`
+        .border {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          border-style: solid;
+          border-color: #8fc4e9;
+          border-width: 0;
+        }
+      `}</style>
+    </div>
+  ) : null
 
 const renderLabel = props =>
-  props.label
-    ? <div className="label">
-        {`${props.width}px - ${props.label}`}
-        <style jsx>{`
+  props.label ? (
+    <div className="label">
+      {`${props.width}px - ${props.label}`}
+      <style jsx>{`
+        .label {
+          margin-top: ${core.layout.spacingXXSmall};
+          font-size: ${core.type.fontSizeXSmall};
+          font-weight: ${core.type.fontWeightBook};
+          line-height: ${core.type.lineHeightTight};
+        }
+      `}</style>
+    </div>
+  ) : null
 
-      .label {
-        margin-top: ${core.layout.spacingTiny};
-        font-size: ${core.type.fontSizeXSmall};
-        font-weight: ${core.type.fontWeightBook};
-        line-height: ${core.type.lineHeightTight};
-      }
-`}</style>
-      </div>
-    : null
-
-const Example = props =>
+const Example = props => (
   <div className="root">
     <div className="box">
       {renderBorder(props)}
@@ -147,28 +147,29 @@ const Example = props =>
         position: relative;
         height: 150px;
         width: 150px;
-        background: #C6E0F2;
+        background: #c6e0f2;
       }
     `}</style>
   </div>
+)
 
 const Spacing = {
   Parent,
   Example
 }
 
-const SpacingIncrements = props =>
+const SpacingIncrements = props => (
   <div>
     <div className="example">
       <Spacing.Parent>
-        {increments.map((x, i) =>
+        {increments.map((x, i) => (
           <Spacing.Example
             key={i}
             width={x.width}
             label={x.label}
             sides="all"
           />
-        )}
+        ))}
       </Spacing.Parent>
     </div>
     <Code language="css">{`@import "@pluralsight/ps-design-system-core";
@@ -179,6 +180,7 @@ const SpacingIncrements = props =>
       }
     `}</style>
   </div>
+)
 
 const incrementExamples = [
   { side: 'top', attrName: 'margin-top' },
@@ -187,13 +189,13 @@ const incrementExamples = [
   { side: 'left', attrName: 'margin-left' }
 ]
 
-const IndividualSpacing = props =>
+const IndividualSpacing = props => (
   <div>
     <div className="example">
       <Spacing.Parent>
-        {incrementExamples.map((x, i) =>
+        {incrementExamples.map((x, i) => (
           <Spacing.Example key={i} width={24} sides={x.side} />
-        )}
+        ))}
       </Spacing.Parent>
     </div>
     <Code language="css">{`@import "@pluralsight/ps-design-system-core";
@@ -204,20 +206,27 @@ const IndividualSpacing = props =>
       }
     `}</style>
   </div>
+)
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content>
-      <Heading size="xxLarge"><h1>Spacing</h1></Heading>
+      <Heading size="xxLarge">
+        <h1>Spacing</h1>
+      </Heading>
 
-      <Heading size="large"><h2>Spacing increments</h2></Heading>
+      <Heading size="large">
+        <h2>Spacing increments</h2>
+      </Heading>
       <P>
         Spacing can be applied using margin or padding. There are 7 available
         spacing sizes. Both margin and padding share the same predefined scale.
       </P>
       <SpacingIncrements />
 
-      <Heading size="large"><h2>Individual spacing</h2></Heading>
+      <Heading size="large">
+        <h2>Individual spacing</h2>
+      </Heading>
       <P>
         Individual spacing can be applied to a single side of an element. Both
         margin and padding share the same predefined scale. The same 7 sizes are
@@ -226,4 +235,4 @@ export default withServerProps(_ =>
       <IndividualSpacing />
     </Content>
   </Chrome>
-)
+))

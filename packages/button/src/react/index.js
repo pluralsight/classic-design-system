@@ -27,19 +27,19 @@ const styleSize = ({ size }) =>
     [sizes.small]: {
       fontSize: core.type.fontSizeSmall,
       lineHeight: core.type.lineHeightStandard,
-      padding: `${core.layout.spacingTiny} ${core.layout.spacingXSmall}`,
+      padding: `${core.layout.spacingXXSmall} ${core.layout.spacingXSmall}`,
       height: '32px'
     },
     [sizes.medium]: {
       fontSize: core.type.fontSizeSmall,
       lineHeight: core.type.lineHeightStandard,
-      padding: `${core.layout.spacingTiny} ${core.layout.spacingMedium}`,
+      padding: `${core.layout.spacingXXSmall} ${core.layout.spacingMedium}`,
       height: '40px'
     },
     [sizes.large]: {
       fontSize: core.type.fontSizeMedium,
       lineHeight: core.type.lineHeightExtra,
-      padding: `${core.layout.spacingTiny} ${core.layout.spacingMedium}`,
+      padding: `${core.layout.spacingXXSmall} ${core.layout.spacingMedium}`,
       height: '48px'
     }
   }[size])

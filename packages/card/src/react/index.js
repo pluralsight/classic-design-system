@@ -226,7 +226,7 @@ const TagDiv = glamorous.div({
   position: 'absolute',
   top: core.layout.spacingSmall,
   left: 0,
-  padding: `${core.layout.spacingTiny} ${core.layout.spacingXSmall}`,
+  padding: `${core.layout.spacingXXSmall} ${core.layout.spacingXSmall}`,
   background: core.colors.gray04,
   borderRadius: '0 2px 2px 0',
   color: core.colors.white,

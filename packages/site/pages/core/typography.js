@@ -8,18 +8,12 @@ import {
   withServerProps
 } from '../../src/ui'
 
-const FontFamily = props =>
+const FontFamily = props => (
   <div>
     <div className="family">
-      <div>
-        ABCDEFGHIJKLMNOPQRSTUVWXYZ
-      </div>
-      <div>
-        abcdefghijklmnopqrstuvwxyz
-      </div>
-      <div>
-        0123456789
-      </div>
+      <div>ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+      <div>abcdefghijklmnopqrstuvwxyz</div>
+      <div>0123456789</div>
     </div>
     <P>
       Apply the font family to the entire page. The recommended method is to
@@ -40,6 +34,7 @@ const FontFamily = props =>
       }
     `}</style>
   </div>
+)
 
 const weights = [
   { label: 'BOLD', weight: 700, varName: 'psTypeFontWeightBold' },
@@ -49,10 +44,10 @@ const weights = [
   { label: 'EXTRA LIGHT', weight: 200, varName: 'psTypeFontWeightXLight' }
 ]
 
-const FontWeight = props =>
+const FontWeight = props => (
   <div>
     <div className="weights">
-      {weights.map((w, i) =>
+      {weights.map((w, i) => (
         <div className="weight" key={i}>
           <div style={{ fontWeight: w.weight }} className="weightLetters">
             Aa
@@ -61,7 +56,7 @@ const FontWeight = props =>
             {w.label} ({w.weight})
           </div>
         </div>
-      )}
+      ))}
     </div>
     <Code language="css">{`@import "@pluralsight/ps-design-system-core";
 .mySelector { font-weight: var(--psTypeFontWeightBold); }`}</Code>
@@ -70,8 +65,8 @@ const FontWeight = props =>
         display: flex;
         flex-wrap: wrap;
         margin: calc(-1 * ${core.layout.spacingLarge} / 2)
-          calc(-1 * ${core.layout.spacingLarge} / 2) calc(${core.layout
-      .spacingLarge} / 2);
+          calc(-1 * ${core.layout.spacingLarge} / 2)
+          calc(${core.layout.spacingLarge} / 2);
       }
       .weight {
         flex: 1;
@@ -97,11 +92,12 @@ const FontWeight = props =>
       }
     `}</style>
   </div>
+)
 
 // TODO: pull from core js vars
 const sizes = [
   { label: 'Gigantic', size: '60px', varName: 'psTypeFontSizeGigantic' },
-  { label: 'XXX-Large', size: '48px', varName: 'psTypefontSizeXXXLarge' },
+  { label: 'XXX-Large', size: '48px', varName: 'psTypefontSizeJumbo' },
   { label: 'XX-Large', size: '36px', varName: 'psTypeFontSizeXXLarge' },
   { label: 'X-Large', size: '30px', varName: 'psTypeFontSizeXLarge' },
   { label: 'Large', size: '24px', varName: 'psTypeFontSizeLarge' },
@@ -110,10 +106,10 @@ const sizes = [
   { label: 'X-Small', size: '12px', varName: 'psTypeFontSizeXSmall' }
 ]
 
-const FontSize = props =>
+const FontSize = props => (
   <div>
     <div className="sizes">
-      {sizes.map((w, i) =>
+      {sizes.map((w, i) => (
         <div className="size" key={i}>
           <div style={{ fontSize: w.size }} className="sizeSentence">
             The quick brown fox jumps over the lazy dog.
@@ -122,7 +118,7 @@ const FontSize = props =>
             {w.size} - {w.label}
           </div>
         </div>
-      )}
+      ))}
     </div>
     <Code language="css">{`@import "@pluralsight/ps-design-system-core";
 .mySelector { font-size: var(--psTypeFontSizeLarge); }`}</Code>
@@ -133,7 +129,7 @@ const FontSize = props =>
         white-space: nowrap;
         overflow: hidden;
         padding: ${core.layout.spacingLarge};
-        margin-bottom: ${core.layout.spacingMedium}
+        margin-bottom: ${core.layout.spacingMedium};
       }
       .size {
         color: ${core.colors.gray06};
@@ -151,39 +147,43 @@ const FontSize = props =>
       }
     `}</style>
   </div>
+)
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Typography">
-      <Heading size="xxLarge"><h1>Typography</h1></Heading>
+      <Heading size="xxLarge">
+        <h1>Typography</h1>
+      </Heading>
 
-      <Heading size="large"><h2>Install the Font</h2></Heading>
+      <Heading size="large">
+        <h2>Install the Font</h2>
+      </Heading>
       <P>
         To use the Pluralsight font-family on your site, you must install it by
-        importing it from typography.com using Pluralsight's
-        assigned CSS Key.
+        importing it from typography.com using Pluralsight's assigned CSS Key.
       </P>
       <Code lang="css">
         @import url(https://cloud.typography.com/6966154/691568/css/fonts.css);
       </Code>
 
-      <Heading size="large"><h2>Font family</h2></Heading>
-      <P>
-        Pluralsight's font family for the web is Gotham SSm.
-      </P>
+      <Heading size="large">
+        <h2>Font family</h2>
+      </Heading>
+      <P>Pluralsight's font family for the web is Gotham SSm.</P>
       <FontFamily />
 
-      <Heading size="large"><h2>Font weight</h2></Heading>
-      <P>
-        Five Gotham SSm font weights are available for use.
-      </P>
+      <Heading size="large">
+        <h2>Font weight</h2>
+      </Heading>
+      <P>Five Gotham SSm font weights are available for use.</P>
       <FontWeight />
 
-      <Heading size="large"><h2>Font size</h2></Heading>
-      <P>
-        Eight Gotham SSm font sizes are available.
-      </P>
+      <Heading size="large">
+        <h2>Font size</h2>
+      </Heading>
+      <P>Eight Gotham SSm font sizes are available.</P>
       <FontSize />
     </Content>
   </Chrome>
-)
+))

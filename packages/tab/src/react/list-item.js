@@ -8,7 +8,7 @@ const barActiveStyles = {
   color: core.colors.white,
   fontWeight: core.type.fontWeightMedium,
   paddingBottom: 0,
-  borderBottom: `${core.layout.spacingTiny} solid ${core.colors.orange}`
+  borderBottom: `${core.layout.spacingXXSmall} solid ${core.colors.orange}`
 }
 const barHoverStyles = {
   color: core.colors.white,
@@ -22,7 +22,7 @@ const Bar = glamorous.div({
   height: 'calc(100% + 1px)',
   marginBottom: '-1px',
   fontWeight: core.type.fontWeightBook,
-  padding: `0 0 ${core.layout.spacingTiny} 0`
+  padding: `0 0 ${core.layout.spacingXXSmall} 0`
 })
 
 const ListItem = glamorous.button(
@@ -54,17 +54,16 @@ const ListItem = glamorous.button(
       : null
 )
 
-const ListItemComponent = props =>
+const ListItemComponent = props => (
   <ListItem
     role="tab"
     aria-selected={props.active}
     onClick={props.onClick}
     active={props.active}
   >
-    <Bar>
-      {props.children}
-    </Bar>
+    <Bar>{props.children}</Bar>
   </ListItem>
+)
 
 ListItemComponent.propTypes = {
   active: PropTypes.bool,

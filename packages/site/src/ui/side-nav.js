@@ -48,7 +48,7 @@ const InternalLinks = props =>
         .links {
           border-left: 1px solid ${core.colors.gray01};
           margin: ${core.layout.spacingSmall} 0 ${core.layout.spacingSmall}
-            ${core.layout.spacingTiny};
+            ${core.layout.spacingXXSmall};
           padding: 0 0 0 ${core.layout.spacingMedium};
           overflow: hidden;
           height: 0;
@@ -239,7 +239,6 @@ export default withHeadings(props => (
     <Logo />
     <Group>
       <GroupTitle>INTRODUCTION</GroupTitle>
-      <NavLink href="/">Get Started</NavLink>
       <NavLink href="/install">Install</NavLink>
       <NavLink href="/contribute" headings={props.headings}>
         Contribute

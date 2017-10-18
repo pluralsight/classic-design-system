@@ -15,7 +15,7 @@ const origins = {
   bottomLeft: 'bottomLeft'
 }
 
-const menuPaddingVert = core.layout.spacingTiny
+const menuPaddingVert = core.layout.spacingXXSmall
 const nestedMenuHorzOverlap = 0 // 3
 
 const Item = glamorous.button(
@@ -51,19 +51,21 @@ const Item = glamorous.button(
       : { background: 'none' }
 )
 
-const IconComponent = props =>
+const IconComponent = props => (
   <Div
     display="inline-flex"
     alignItems="center"
     marginRight={core.layout.spacingXSmall}
   >
-    <Icon id={props.iconId} size={Icon.sizes.small} />
+    <Icon id={props.iconId} size={Icon.sizes.medium} />
   </Div>
+)
 
-const NestedArrow = _ =>
+const NestedArrow = _ => (
   <Div marginLeft="auto" paddingLeft={core.layout.spacingXSmall}>
     <Arrow />
   </Div>
+)
 
 const calcNestedMenuPosition = (menuWidth, origin) =>
   ({
@@ -176,7 +178,7 @@ const Divider = glamorous.div({
   height: '1px',
   width: '100%',
   backgroundColor: core.colors.gray01,
-  margin: `${core.layout.spacingTiny} 0`
+  margin: `${core.layout.spacingXXSmall} 0`
 })
 
 class DividerComponent extends React.Component {
@@ -194,7 +196,7 @@ DividerComponent.propTypes = {
   _onFocus: PropTypes.func
 }
 
-const Overlay = props =>
+const Overlay = props => (
   <Div
     position="fixed"
     height="100vh"
@@ -203,6 +205,7 @@ const Overlay = props =>
     left="0"
     onClick={props.onClick}
   />
+)
 
 const slide = glamor.css.keyframes({
   '100%': {
