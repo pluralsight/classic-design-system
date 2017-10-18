@@ -27,7 +27,7 @@ const CommonSet = props => (
     <div className="icons">
       {Object.keys(Icon.ids).map((id, i) => (
         <div className="icon" key={i}>
-          <Icon id={id} size="medium" />
+          <Icon id={id} size={Icon.sizes.large} />
           <div className="iconLabel">{id}</div>
         </div>
       ))}
@@ -93,17 +93,17 @@ export default withServerProps(_ => (
         codes={[
           `
 <div style={{ color: '#ffffff' }}>
-  <Icon id={Icon.ids.path} size={Icon.sizes.medium} />
+  <Icon id={Icon.ids.path} size={Icon.sizes.large} />
 </div>
 `,
           `
-<Icon id={Icon.ids.path} color={Icon.colors.orange} size={Icon.sizes.medium} />
+<Icon id={Icon.ids.path} color={Icon.colors.orange} size={Icon.sizes.large} />
  `,
           `
 <Icon
   css={{ '> svg': { fill: '${core.colors.pink}' } }}
   id={Icon.ids.path}
-  size={Icon.sizes.medium}
+  size={Icon.sizes.large}
 />
 `
         ]}
@@ -120,7 +120,7 @@ export default withServerProps(_ => (
         includes={{ Icon }}
         codes={[
           `
-<Icon size={Icon.sizes.medium}>
+<Icon size={Icon.sizes.large}>
   <svg viewBox="0 0 256 230" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
     <path d="M.754 114.75c0 19.215 18.763 37.152 48.343 47.263-5.907 29.737-1.058 53.706 15.136 63.045 16.645 9.6 41.443 2.955 64.98-17.62 22.943 19.744 46.13 27.514 62.31 18.148 16.63-9.627 21.687-35.221 15.617-65.887 30.81-10.186 48.044-25.481 48.044-44.949 0-18.769-18.797-35.006-47.979-45.052 6.535-31.933.998-55.32-15.867-65.045-16.259-9.376-39.716-1.204-62.996 19.056C104.122 2.205 80.897-4.36 64.05 5.392 47.806 14.795 43.171 39.2 49.097 69.487 20.515 79.452.754 96.057.754 114.75z" fill="#FFF"/>
     <path d="M201.025 79.674a151.364 151.364 0 0 0-7.274-2.292 137.5 137.5 0 0 0 1.124-4.961c5.506-26.728 1.906-48.26-10.388-55.348-11.787-6.798-31.065.29-50.535 17.233a151.136 151.136 0 0 0-5.626 5.163 137.573 137.573 0 0 0-3.744-3.458c-20.405-18.118-40.858-25.752-53.139-18.643-11.776 6.817-15.264 27.06-10.307 52.39a150.91 150.91 0 0 0 1.67 7.484c-2.894.822-5.689 1.698-8.363 2.63-23.922 8.34-39.2 21.412-39.2 34.97 0 14.004 16.4 28.05 41.318 36.566a128.44 128.44 0 0 0 6.11 1.91 147.813 147.813 0 0 0-1.775 8.067c-4.726 24.89-1.035 44.653 10.71 51.428 12.131 6.995 32.491-.195 52.317-17.525 1.567-1.37 3.14-2.823 4.715-4.346a148.34 148.34 0 0 0 6.108 5.573c19.204 16.525 38.17 23.198 49.905 16.405 12.12-7.016 16.058-28.247 10.944-54.078-.39-1.973-.845-3.988-1.355-6.04 1.43-.422 2.833-.858 4.202-1.312 25.904-8.582 42.757-22.457 42.757-36.648 0-13.607-15.77-26.767-40.174-35.168z" fill="#53C1DE"/>

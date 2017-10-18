@@ -11,11 +11,9 @@ const ids = Object.keys(icons).reduce((acc, id) => {
 }, {})
 
 const sizes = {
-  xSmall: 'xSmall',
   small: 'small',
   medium: 'medium',
-  large: 'large',
-  xLarge: 'xLarge'
+  large: 'large'
 }
 const colors = Object.keys(core.colors)
   .filter(c => !/gradient/.test(c))
@@ -26,25 +24,17 @@ const colors = Object.keys(core.colors)
 
 const styleSize = ({ size }) =>
   ({
-    [sizes.xSmall]: {
+    [sizes.small]: {
       height: '16px',
       width: '16px'
     },
-    [sizes.small]: {
+    [sizes.medium]: {
       height: '24px',
       width: '24px'
     },
-    [sizes.medium]: {
+    [sizes.large]: {
       height: '48px',
       width: '48px'
-    },
-    [sizes.large]: {
-      height: '96px',
-      width: '96px'
-    },
-    [sizes.xLarge]: {
-      height: '160px',
-      width: '160px'
     }
   }[size])
 
@@ -86,7 +76,7 @@ Icon.propTypes = {
   size: PropTypes.oneOf(Object.keys(sizes))
 }
 Icon.defaultProps = {
-  size: sizes.small
+  size: sizes.medium
 }
 Icon.colors = colors
 Icon.ids = ids

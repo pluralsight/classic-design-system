@@ -21,7 +21,7 @@ const bg = backgrounds([
   { name: 'product', value: core.colors.gray06, default: true }
 ])
 
-const CardWithDefaults = props =>
+const CardWithDefaults = props => (
   <Card
     {...{
       title: <Card.Title>Card Title</Card.Title>,
@@ -31,21 +31,20 @@ const CardWithDefaults = props =>
     }}
     {...props}
   />
+)
 
 const comboStory = storiesOf('combo', module)
   .addDecorator(bg)
-  .add('everything', _ =>
+  .add('everything', _ => (
     <Card
       title={
         <Card.TextLink>
           <a href="http://duckduckgo.com?q=title">
             <Card.Title>
               Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1,
-              2,
-              Action Bar, and More Really. Why Not Put More In? Release a New
+              2, Action Bar, and More Really. Why Not Put More In? Release a New
               Edition Every Year With All the Excesses of our VC Budget?
-              Boundless
-              Features Will Be Yours 2000
+              Boundless Features Will Be Yours 2000
             </Card.Title>
           </a>
         </Card.TextLink>
@@ -54,7 +53,7 @@ const comboStory = storiesOf('combo', module)
         <Card.FullOverlayLink>
           <a href="http://duckduckgo.com?q=overlay">
             <Icon
-              size={Icon.sizes.medium}
+              size={Icon.sizes.large}
               css={{ '& svg': { fill: core.colors.white } }}
               id={Icon.ids.playCircle}
             />
@@ -69,11 +68,11 @@ const comboStory = storiesOf('combo', module)
           </a>
         </Card.ImageLink>
       }
-      metadata1={longStringsMetaData.map(str =>
+      metadata1={longStringsMetaData.map(str => (
         <Card.TextLink>
           <a href="http://duckduckgo.com/?q=jaketrent">{str}</a>
         </Card.TextLink>
-      )}
+      ))}
       metadata2={['Goodness me!']}
       actionBar={[
         <Card.Action key="bookmark" icon={<Icon id={Icon.ids.bookmark} />} />,
@@ -83,51 +82,47 @@ const comboStory = storiesOf('combo', module)
       actionBarVisible
       tag={<Card.Tag icon={<Icon id={Icon.ids.path} />}>Path</Card.Tag>}
     />
-  )
+  ))
 
 const titleStory = storiesOf('title', module)
   .addDecorator(bg)
-  .add('title wrapper', _ =>
+  .add('title wrapper', _ => (
     <CardWithDefaults title={<Card.Title>Text only</Card.Title>} />
-  )
-  .add('text link with title wrapper', _ =>
+  ))
+  .add('text link with title wrapper', _ => (
     <CardWithDefaults
       title={
         <Card.TextLink>
           <a href="http://duckduckgo.com?q=text">
-            <Card.Title>
-              Text link
-            </Card.Title>
+            <Card.Title>Text link</Card.Title>
           </a>
         </Card.TextLink>
       }
     />
-  )
-  .add('long title, title wrapper', _ =>
+  ))
+  .add('long title, title wrapper', _ => (
     <CardWithDefaults title={<Card.Title>{longTitle}</Card.Title>} />
-  )
-  .add('long title, text link with title wrapper', _ =>
+  ))
+  .add('long title, text link with title wrapper', _ => (
     <CardWithDefaults
       title={
         <Card.TextLink>
           <a href="http://duckduckgo.com?q=text">
-            <Card.Title>
-              {longTitle}
-            </Card.Title>
+            <Card.Title>{longTitle}</Card.Title>
           </a>
         </Card.TextLink>
       }
     />
-  )
+  ))
 
 const imageStory = storiesOf('image', module)
   .addDecorator(bg)
-  .add('image only', _ =>
+  .add('image only', _ => (
     <CardWithDefaults
       image={<Card.Image src="http://lorempixel.com/400/200/sports/" />}
     />
-  )
-  .add('image link', _ =>
+  ))
+  .add('image link', _ => (
     <CardWithDefaults
       image={
         <Card.ImageLink>
@@ -137,47 +132,47 @@ const imageStory = storiesOf('image', module)
         </Card.ImageLink>
       }
     />
-  )
+  ))
 
 const actionBarStory = storiesOf('actionBar', module)
   .addDecorator(bg)
-  .add('single action', _ =>
+  .add('single action', _ => (
     <CardWithDefaults
       actionBar={[<Card.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
     />
-  )
-  .add('multiple actions', _ =>
+  ))
+  .add('multiple actions', _ => (
     <CardWithDefaults
       actionBar={[
         <Card.Action key="bookmark" icon={<Icon id={Icon.ids.bookmark} />} />,
         <Card.Action key="paths" icon={<Icon id={Icon.ids.more} />} />
       ]}
     />
-  )
-  .add('locked visible', _ =>
+  ))
+  .add('locked visible', _ => (
     <CardWithDefaults
       actionBar={[<Card.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
       actionBarVisible
     />
-  )
+  ))
 
 const bonusBarStory = storiesOf('bonusBar', module)
   .addDecorator(bg)
   .add('only text', _ => <CardWithDefaults bonusBar="Wow, I'm bonus." />)
-  .add('some element', _ =>
+  .add('some element', _ => (
     <CardWithDefaults
       bonusBar={<Icon id={Icon.ids.channel} size={Icon.sizes.large} />}
     />
-  )
+  ))
 
 const fullOverlayStory = storiesOf('fullOverlay', module)
   .addDecorator(bg)
-  .add('text only', _ =>
+  .add('text only', _ => (
     <CardWithDefaults
       fullOverlay={<Card.FullOverlayLink>Element</Card.FullOverlayLink>}
     />
-  )
-  .add('link', _ =>
+  ))
+  .add('link', _ => (
     <CardWithDefaults
       fullOverlay={
         <Card.FullOverlayLink>
@@ -185,14 +180,14 @@ const fullOverlayStory = storiesOf('fullOverlay', module)
         </Card.FullOverlayLink>
       }
     />
-  )
-  .add('linked icon', _ =>
+  ))
+  .add('linked icon', _ => (
     <CardWithDefaults
       fullOverlay={
         <Card.FullOverlayLink>
           <a href="http://duckduckgo.com?q=overlay">
             <Icon
-              size={Icon.sizes.medium}
+              size={Icon.sizes.large}
               css={{ '& svg': { fill: core.colors.white } }}
               id={Icon.ids.playCircle}
             />
@@ -200,14 +195,14 @@ const fullOverlayStory = storiesOf('fullOverlay', module)
         </Card.FullOverlayLink>
       }
     />
-  )
-  .add('linked icon with image link', _ =>
+  ))
+  .add('linked icon with image link', _ => (
     <CardWithDefaults
       fullOverlay={
         <Card.FullOverlayLink>
           <a href="http://duckduckgo.com?q=overlay">
             <Icon
-              size={Icon.sizes.medium}
+              size={Icon.sizes.large}
               css={{ '& svg': { fill: core.colors.white } }}
               id={Icon.ids.playCircle}
             />
@@ -222,66 +217,58 @@ const fullOverlayStory = storiesOf('fullOverlay', module)
         </Card.ImageLink>
       }
     />
-  )
-  .add('locked visible', _ =>
+  ))
+  .add('locked visible', _ => (
     <CardWithDefaults
       fullOverlay={<Card.FullOverlayLink>Element</Card.FullOverlayLink>}
       fullOverlayVisible
     />
-  )
+  ))
 
 const sizeStory = storiesOf('size', module).addDecorator(bg)
 Object.keys(Card.sizes).forEach(size =>
-  sizeStory.add(size, _ =>
+  sizeStory.add(size, _ => (
     <CardWithDefaults
       size={size}
       title={<Card.Title>{`${size} Card`}</Card.Title>}
     />
-  )
+  ))
 )
 
 const metaDataStory = storiesOf('metadata', module)
   .addDecorator(bg)
   .add('single text', _ => <CardWithDefaults metadata1={['Jim Cooper']} />)
-  .add('multiple text', _ =>
+  .add('multiple text', _ => (
     <CardWithDefaults metadata1={['Jim Cooper', 'Of the Far North']} />
-  )
-  .add('text wrapper', _ =>
+  ))
+  .add('text wrapper', _ => (
     <CardWithDefaults metadata1={[<Card.Text>Jim Cooper</Card.Text>]} />
-  )
-  .add('text link', _ =>
+  ))
+  .add('text link', _ => (
     <CardWithDefaults
       metadata1={[
         <Card.TextLink>
-          <a href="http://duckduckgo.com?q=jim%20cooper">
-            Jim Cooper
-          </a>
+          <a href="http://duckduckgo.com?q=jim%20cooper">Jim Cooper</a>
         </Card.TextLink>
       ]}
     />
-  )
-  .add('two lines, mixed content', _ =>
+  ))
+  .add('two lines, mixed content', _ => (
     <CardWithDefaults
       metadata1={[
         <Card.TextLink>
-          <a href="http://duckduckgo.com?q=jim%20cooper">
-            Jim Cooper
-          </a>
+          <a href="http://duckduckgo.com?q=jim%20cooper">Jim Cooper</a>
         </Card.TextLink>
       ]}
       metadata2={[
         <Card.TextLink>
-          <a href="http://duckduckgo.com?q=react">
-            React Path
-          </a>
+          <a href="http://duckduckgo.com?q=react">React Path</a>
         </Card.TextLink>,
         'Intermediate',
-        <Card.Text>
-          90 mins
-        </Card.Text>
+        <Card.Text>90 mins</Card.Text>
       ]}
     />
-  )
+  ))
 
 const progressStory = storiesOf('progress', module)
   .addDecorator(bg)
@@ -291,11 +278,11 @@ const progressStory = storiesOf('progress', module)
 
 const tagStory = storiesOf('tag', module)
   .addDecorator(bg)
-  .add('text only', _ =>
+  .add('text only', _ => (
     <CardWithDefaults tag={<Card.Tag>Channel</Card.Tag>} />
-  )
-  .add('with icon', _ =>
+  ))
+  .add('with icon', _ => (
     <CardWithDefaults
       tag={<Card.Tag icon={<Icon id={Icon.ids.channel} />}>Channel</Card.Tag>}
     />
-  )
+  ))
