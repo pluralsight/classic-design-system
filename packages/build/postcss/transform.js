@@ -26,6 +26,4 @@ module.exports = async function transform(src, dest, postcssTransforms) {
     console.error('postcss: Error processing css', err)
     return Promise.reject(err)
   }
-
-  return Promise.resolve(result.css)
 }
