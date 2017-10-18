@@ -3,7 +3,7 @@ module.exports = {
 
   /* font size */
   fontSizeGigantic: '60px',
-  fontSizeXXXLarge: '48px',
+  fontSizeJumbo: '48px',
   fontSizeXXLarge: '36px',
   fontSizeXLarge: '30px',
   fontSizeLarge: '24px',
@@ -13,7 +13,7 @@ module.exports = {
 
   /* letter spacing */
   letterSpacingGigantic: '-1px',
-  letterSpacingXXXLarge: '-0.72px',
+  letterSpacingJumbo: '-0.72px',
   letterSpacingXXLarge: '-0.54px',
   letterSpacingXLarge: '-0.45px',
   letterSpacingLarge: '0.36px',
