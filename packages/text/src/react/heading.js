@@ -10,12 +10,10 @@ const sizes = {
 }
 
 const style = props =>
-  glamor.css(
-    {
-      color: core.colors.white,
-      margin: `${core.layout.spacingMedium} 0`
-    },
-    ({ size }) =>
+  glamor.css({
+    color: core.colors.white,
+    margin: `${core.layout.spacingMedium} 0`,
+    ...(({ size }) =>
       ({
         [sizes.smallCaps]: {
           color: core.colors.gray02,
@@ -43,8 +41,8 @@ const style = props =>
           lineHeight: core.type.lineHeightHuge,
           fontWeight: core.type.fontWeightLight
         }
-      }[size])
-  )
+      }[size]))(props)
+  })
 
 const rmChildren = ({ children, ...rest }) => rest
 
@@ -60,7 +58,7 @@ Heading.propTypes = {
   size: PropTypes.oneOf(Object.keys(sizes))
 }
 Heading.defaultProps = {
-  size: sizes.large
+  size: sizes.smallCaps
 }
 Heading.sizes = sizes
 export default Heading
