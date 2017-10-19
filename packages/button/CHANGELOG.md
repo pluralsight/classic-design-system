@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="9.0.4"></a>
+## [9.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@9.0.3...@pluralsight/ps-design-system-button@9.0.4) (2017-10-19)
+
+
+### Bug Fixes
+
+* **button:** make default icon size medium ([0d78e4c](https://github.com/pluralsight/design-system/commit/0d78e4c))
+* **button:** readd icon as dev dependency ([67a96b0](https://github.com/pluralsight/design-system/commit/67a96b0))
+
+
+
+
 <a name="9.0.3"></a>
 ## [9.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@9.0.2...@pluralsight/ps-design-system-button@9.0.3) (2017-10-19)
 

@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-actionmenu",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Design System component for actionmenu ui",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "react-sizeme": "^2.3.4"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-button": "^9.0.3",
+    "@pluralsight/ps-design-system-button": "^9.0.4",
     "@storybook/addon-backgrounds": "^3.0.0",
     "@storybook/addon-storyshots": "^3.2.4",
     "@storybook/react": "^3.2.3",
