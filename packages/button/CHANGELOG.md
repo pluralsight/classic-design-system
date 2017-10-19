@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="9.0.3"></a>
+## [9.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@9.0.2...@pluralsight/ps-design-system-button@9.0.3) (2017-10-19)
+
+
+### Bug Fixes
+
+* **button:** allow passing ref via innerHref ([296ac9f](https://github.com/pluralsight/design-system/commit/296ac9f)), closes [#91](https://github.com/pluralsight/design-system/issues/91)
+* **button:** mapping of icons to new sizes ([14c6f6c](https://github.com/pluralsight/design-system/commit/14c6f6c))
+
+
+
+
 <a name="9.0.2"></a>
 ## [9.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@9.0.1...@pluralsight/ps-design-system-button@9.0.2) (2017-10-19)
 
