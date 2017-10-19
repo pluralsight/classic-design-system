@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-button",
-  "version": "9.0.4",
+  "version": "9.0.5",
   "description": "Design System component for button ui",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-icon": "^8.0.3",
+    "@pluralsight/ps-design-system-icon": "^8.0.4",
     "@storybook/addon-backgrounds": "^3.0.0",
     "@storybook/addon-storyshots": "^3.2.4",
     "@storybook/react": "^3.2.3",

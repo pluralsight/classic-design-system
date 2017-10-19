@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="8.0.4"></a>
+## [8.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.0.3...@pluralsight/ps-design-system-icon@8.0.4) (2017-10-19)
+
+
+### Bug Fixes
+
+* **icon:** allow play icon to be colored ([e3a321f](https://github.com/pluralsight/design-system/commit/e3a321f)), closes [#67](https://github.com/pluralsight/design-system/issues/67)
+
+
+
+
 <a name="8.0.3"></a>
 ## [8.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.0.2...@pluralsight/ps-design-system-icon@8.0.3) (2017-10-19)
 
