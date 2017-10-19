@@ -35,7 +35,7 @@ const renderChangeLog = ({ packageName }) =>
 
 export default props => (
   <div className="pageHeading">
-    <Heading size="xxLarge">
+    <Heading size={Heading.sizes.xLarge}>
       <h1>
         {props.children}
         {renderBeta(props)}

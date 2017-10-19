@@ -26,7 +26,7 @@ export default class extends React.Component {
   render() {
     return (
       <div>
-        <Heading size="large">
+        <Heading size={Heading.sizes.large}>
           <h2>
             <a
               id={formatId(this.props.children)}

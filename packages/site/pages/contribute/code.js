@@ -4,18 +4,15 @@ import {
   Chrome,
   Content,
   Doc,
-  Heading,
   P,
-  SectionHeading,
+  PageHeading,
   withServerProps
 } from '../../src/ui'
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Install">
-      <Heading size="xxLarge">
-        <h1>Contribute Code</h1>
-      </Heading>
+      <PageHeading>Contribute Code</PageHeading>
       <Doc>{`
 ## Goal of contributing
 We want the experience of contributing to be awesome for everyone involved.  When the number of contributors and the number of commits from outside the Design System team proper trends upward over time, we’re excited.  We want the quality of design and implementation in the Design System to improve over time.  From all this, we hope to continue to provide great design and user experience for more teams.
@@ -67,4 +64,4 @@ It worked!  Let’s do that again.
 `}</Doc>
     </Content>
   </Chrome>
-)
+))

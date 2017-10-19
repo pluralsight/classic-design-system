@@ -3,8 +3,9 @@ import {
   Chrome,
   Code,
   Content,
-  Heading,
   P,
+  PageHeading,
+  SectionHeading,
   withServerProps
 } from '../../src/ui'
 
@@ -152,13 +153,9 @@ const FontSize = props => (
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Typography">
-      <Heading size="xxLarge">
-        <h1>Typography</h1>
-      </Heading>
+      <PageHeading>Typography</PageHeading>
 
-      <Heading size="large">
-        <h2>Install the Font</h2>
-      </Heading>
+      <SectionHeading>Install the Font</SectionHeading>
       <P>
         To use the Pluralsight font-family on your site, you must install it by
         importing it from typography.com using Pluralsight's assigned CSS Key.
@@ -167,21 +164,15 @@ export default withServerProps(_ => (
         @import url(https://cloud.typography.com/6966154/691568/css/fonts.css);
       </Code>
 
-      <Heading size="large">
-        <h2>Font family</h2>
-      </Heading>
+      <SectionHeading>Font family</SectionHeading>
       <P>Pluralsight's font family for the web is Gotham SSm.</P>
       <FontFamily />
 
-      <Heading size="large">
-        <h2>Font weight</h2>
-      </Heading>
+      <SectionHeading>Font weight</SectionHeading>
       <P>Five Gotham SSm font weights are available for use.</P>
       <FontWeight />
 
-      <Heading size="large">
-        <h2>Font size</h2>
-      </Heading>
+      <SectionHeading>Font size</SectionHeading>
       <P>Eight Gotham SSm font sizes are available.</P>
       <FontSize />
     </Content>

@@ -4,37 +4,40 @@ import {
   Chrome,
   Content,
   Doc,
-  Heading,
   P,
+  PageHeading,
   SectionHeading,
   withServerProps
 } from '../../src/ui'
 
-const Bar = props =>
+const Bar = props => (
   <div className="bar" style={props.style}>
     <style jsx>{`
       .bar {
-         margin: ${core.layout.spacingXSmall} 0;
-         height: 5px;
-         background: ${core.colors.gradientHorz};
+        margin: ${core.layout.spacingXSmall} 0;
+        height: 5px;
+        background: ${core.colors.gradientHorz};
       }
-  `}</style>
+    `}</style>
   </div>
+)
 
-const Levels = props =>
+const Levels = props => (
   <div className="levels">
     {props.children}
     <style jsx>{`
       .levels {
         display: flex;
         flex-wrap: wrap;
-        margin: ${core.layout.spacingLarge} calc(-1 * ${core.layout
-      .spacingLarge} / 2) calc(${core.layout.spacingLarge} / 2);
+        margin: ${core.layout.spacingLarge}
+          calc(-1 * ${core.layout.spacingLarge} / 2)
+          calc(${core.layout.spacingLarge} / 2);
       }
     `}</style>
   </div>
+)
 
-const Level = props =>
+const Level = props => (
   <div className="level">
     {props.children}
     <style jsx>{`
@@ -53,8 +56,9 @@ const Level = props =>
       }
     `}</style>
   </div>
+)
 
-Level.Title = props =>
+Level.Title = props => (
   <div>
     <h3 className="title">
       {props.children}
@@ -68,16 +72,18 @@ Level.Title = props =>
       }
   `}</style>
   </div>
+)
 
-Level.Desc = props =>
+Level.Desc = props => (
   <div className="desc">
     {props.children}
-    <style jsx>{`  `}</style>
+    <style jsx>{``}</style>
   </div>
+)
 
 const LevelHeading = props => <SectionHeading>{props.children}</SectionHeading>
 
-const LevelList = props =>
+const LevelList = props => (
   <div className="list">
     {props.children}
     <style jsx>{`
@@ -88,13 +94,12 @@ const LevelList = props =>
       }
     `}</style>
   </div>
+)
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Install">
-      <Heading size="xxLarge">
-        <h1>Contribute</h1>
-      </Heading>
+      <PageHeading>Contribute</PageHeading>
       <P>
         The Design System is a project that can help the whole company and needs
         the whole company to succeed in its goals.{' '}
@@ -105,37 +110,28 @@ export default withServerProps(_ =>
       </P>
       <Levels>
         <Level>
-          <Level.Title>
-            Guide
-          </Level.Title>
+          <Level.Title>Guide</Level.Title>
           <Level.Desc>
             You stay in contact with the Design System project and help it move
-            in
-            a helpful direction.
+            in a helpful direction.
           </Level.Desc>
         </Level>
         <Level>
-          <Level.Title>
-            Adopt
-          </Level.Title>
+          <Level.Title>Adopt</Level.Title>
           <Level.Desc>
             You use the Design System on your projects for design consistency
             and engineering speed.
           </Level.Desc>
         </Level>
         <Level>
-          <Level.Title>
-            Share
-          </Level.Title>
+          <Level.Title>Share</Level.Title>
           <Level.Desc>
             You promote the Design System, answer questions, and help other
             teams integrate.
           </Level.Desc>
         </Level>
         <Level>
-          <Level.Title>
-            Create
-          </Level.Title>
+          <Level.Title>Create</Level.Title>
           <Level.Desc>
             You help make the Design System itself. You share ownership of the
             project.
@@ -195,4 +191,4 @@ The design group meets together regularly to review the Style Guide and the late
 `}</Doc>
     </Content>
   </Chrome>
-)
+))

@@ -6,18 +6,16 @@ import {
   Code,
   Content,
   Doc,
-  Heading,
   P,
+  PageHeading,
   TextLink,
   withServerProps
 } from '../src/ui'
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Install">
-      <Heading size="xxLarge">
-        <h1>Install FTW!</h1>
-      </Heading>
+      <PageHeading>Install FTW!</PageHeading>
       <Doc>{`
 ## Normalize
 
@@ -64,11 +62,9 @@ module.exports = {
 
 `}</Doc>
       <P>
-        <Badge color={Badge.colors.yellow}>Important</Badge>{' '}
-        See the <TextLink href="/core/build">CSS Build docs</TextLink> for other
-        CSS
-        tech
-        config options if the above doesn't apply.
+        <Badge color={Badge.colors.yellow}>Important</Badge> See the{' '}
+        <TextLink href="/core/build">CSS Build docs</TextLink> for other CSS
+        tech config options if the above doesn't apply.
       </P>
       <Doc>{`
 
@@ -94,4 +90,4 @@ For full, working project examples, see [github](https://github.com/pluralsight/
 `}</Doc>
     </Content>
   </Chrome>
-)
+))

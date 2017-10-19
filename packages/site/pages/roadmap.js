@@ -8,9 +8,9 @@ import {
   Code,
   Content,
   GithubIcon,
-  Heading,
   Link,
   P,
+  PageHeading,
   SectionHeading,
   TextLink,
   withServerProps
@@ -302,9 +302,7 @@ Task.Tag = props => (
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Install">
-      <Heading size="xxLarge">
-        <h1>Roadmap</h1>
-      </Heading>
+      <PageHeading>Roadmap</PageHeading>
       <Purpose>
         The Roadmap aims to expose what current is and what future work will be
         tackled in the Design System. Explore the items below and follow them on

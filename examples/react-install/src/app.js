@@ -4,13 +4,16 @@ import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import { Heading } from '@pluralsight/ps-design-system-text/react'
 
-export default _ =>
+export default _ => (
   <div className="app">
     <header>
-      <Heading size="medium" style={{ color: core.colors.gray06 }}>
+      <Heading
+        size={Heading.sizes.medium}
+        style={{ color: core.colors.gray06 }}
+      >
         <h3>Pluralsight Design System</h3>
       </Heading>
-      <Heading size="large" style={{ color: core.colors.gray06 }}>
+      <Heading size={Heading.sizes.large} style={{ color: core.colors.gray06 }}>
         <h2>React Install Example</h2>
       </Heading>
     </header>
@@ -31,3 +34,4 @@ export default _ =>
       </Button>
     </div>
   </div>
+)

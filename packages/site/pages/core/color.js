@@ -7,9 +7,10 @@ import {
   Code,
   Content,
   Example,
-  Heading,
   Link,
   P,
+  PageHeading,
+  SectionHeading,
   withServerProps
 } from '../../src/ui'
 
@@ -194,13 +195,9 @@ const LightSwatch = props => <Swatch {...props} light />
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Color">
-      <Heading size="xLarge">
-        <h1>Color</h1>
-      </Heading>
+      <PageHeading>Color</PageHeading>
 
-      <Heading size="large">
-        <h2>Grayscale colors</h2>
-      </Heading>
+      <SectionHeading>Grayscale colors</SectionHeading>
       <P>Grayscale colors are used for containers, text, lines and borders.</P>
       <div>
         <Palette>
@@ -221,9 +218,7 @@ export default withServerProps(_ => (
 }`}</Code>
       </div>
 
-      <Heading size="large">
-        <h2>UI colors</h2>
-      </Heading>
+      <SectionHeading>UI colors</SectionHeading>
       <P>
         UI colors emphasize interface elements such as buttons, links, accents
         and vizualization.
@@ -247,9 +242,7 @@ export default withServerProps(_ => (
 }`}</Code>
       </div>
 
-      <Heading size="large">
-        <h2>Gradient</h2>
-      </Heading>
+      <SectionHeading>Gradient</SectionHeading>
       <P>
         So fresh. Use the standard gradient to emphasize and showcase the brand.
         Use sparingly.

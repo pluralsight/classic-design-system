@@ -5,8 +5,9 @@ import {
   Chrome,
   Code,
   Content,
-  Heading,
   P,
+  PageHeading,
+  SectionHeading,
   withServerProps
 } from '../../src/ui'
 
@@ -211,22 +212,16 @@ const IndividualSpacing = props => (
 export default withServerProps(_ => (
   <Chrome>
     <Content>
-      <Heading size="xLarge">
-        <h1>Spacing</h1>
-      </Heading>
+      <PageHeading>Spacing</PageHeading>
 
-      <Heading size="large">
-        <h2>Spacing increments</h2>
-      </Heading>
+      <SectionHeading>Spacing increments</SectionHeading>
       <P>
         Spacing can be applied using margin or padding. There are 7 available
         spacing sizes. Both margin and padding share the same predefined scale.
       </P>
       <SpacingIncrements />
 
-      <Heading size="large">
-        <h2>Individual spacing</h2>
-      </Heading>
+      <SectionHeading>Individual spacing</SectionHeading>
       <P>
         Individual spacing can be applied to a single side of an element. Both
         margin and padding share the same predefined scale. The same 7 sizes are

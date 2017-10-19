@@ -8,13 +8,14 @@ import {
   Heading,
   Link,
   P,
+  PageHeading,
   TextLink,
   withServerProps
 } from '../src/ui'
 
 const Point = props => (
   <div className="point">
-    <Heading size="large" className="pointTitle">
+    <Heading size={Heading.sizes.large} className="pointTitle">
       <h2>{props.title}</h2>
     </Heading>
     <P>{props.children}</P>
@@ -85,12 +86,9 @@ const Title = props => (
 
 const Header = props => (
   <header className="header">
-      <Heading size="xLarge">
-        <h1>
-          <Title />
-        </h1>
-      </Heading>
-    </div>
+    <PageHeading>
+      <Title />
+    </PageHeading>
     <style jsx>{`
       .header {
         background: linear-gradient(to top, #2bb2e3, #137bc2);
