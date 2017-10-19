@@ -13,7 +13,7 @@ import {
   withServerProps
 } from '../../src/ui'
 
-const Palette = props =>
+const Palette = props => (
   <div className="palette">
     {props.children}
     <style>{`
@@ -25,8 +25,9 @@ const Palette = props =>
       }
     `}</style>
   </div>
+)
 
-const GradientStop = props =>
+const GradientStop = props => (
   <div className="stop">
     {props.children}
     <style jsx>{`
@@ -36,8 +37,9 @@ const GradientStop = props =>
       }
     `}</style>
   </div>
+)
 
-const GradientVar = props =>
+const GradientVar = props => (
   <div className="var">
     {props.children}
     <style jsx>{`
@@ -49,8 +51,9 @@ const GradientVar = props =>
       }
     `}</style>
   </div>
+)
 
-const Gradient = props =>
+const Gradient = props => (
   <div
     className="gradient"
     style={{
@@ -68,8 +71,9 @@ const Gradient = props =>
       }
     `}</style>
   </div>
+)
 
-const HorzGradient = props =>
+const HorzGradient = props => (
   <div
     className="root"
     style={{
@@ -90,7 +94,9 @@ const HorzGradient = props =>
         padding: var(--psLayoutSpacingLarge) var(--psLayoutSpacingSmall);
         margin: calc(${core.layout.spacingLarge} / 2);
       }
-      .start, .stop, .var {
+      .start,
+      .stop,
+      .var {
         color: var(--psColorsWhite);
         white-space: nowrap;
       }
@@ -103,8 +109,9 @@ const HorzGradient = props =>
       }
     `}</style>
   </div>
+)
 
-const VertGradient = props =>
+const VertGradient = props => (
   <div
     className="root"
     style={{
@@ -124,7 +131,9 @@ const VertGradient = props =>
         padding: var(--psLayoutSpacingLarge) var(--psLayoutSpacingSmall);
         margin: calc(${core.layout.spacingLarge} / 2);
       }
-      .start, .stop, .var {
+      .start,
+      .stop,
+      .var {
         color: var(--psColorsWhite);
         white-space: nowrap;
       }
@@ -137,8 +146,9 @@ const VertGradient = props =>
       }
     `}</style>
   </div>
+)
 
-const Swatch = props =>
+const Swatch = props => (
   <div
     className={`swatch ${props.light ? 'swatchLight' : 'swatchDark'}`}
     style={{ backgroundColor: '#' + props.hex }}
@@ -158,31 +168,39 @@ const Swatch = props =>
       .swatchLight {
         border: 1px solid ${core.colors.gray01};
       }
-      .hex, .var {
+      .hex,
+      .var {
         white-space: nowrap;
       }
       .var {
         opacity: 0.75;
         font-size: ${core.type.fontSizeXSmall};
       }
-      .swatchLight .hex, .swatchLight .var {
+      .swatchLight .hex,
+      .swatchLight .var {
         color: ${core.colors.gray05};
       }
-      .swatchDark .hex, .swatchDark .var {
+      .swatchDark .hex,
+      .swatchDark .var {
         color: ${core.colors.white};
       }
     `}</style>
   </div>
+)
 
 const DarkSwatch = props => <Swatch {...props} />
 const LightSwatch = props => <Swatch {...props} light />
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Color">
-      <Heading size="xxLarge"><h1>Color</h1></Heading>
+      <Heading size="xLarge">
+        <h1>Color</h1>
+      </Heading>
 
-      <Heading size="large"><h2>Grayscale colors</h2></Heading>
+      <Heading size="large">
+        <h2>Grayscale colors</h2>
+      </Heading>
       <P>Grayscale colors are used for containers, text, lines and borders.</P>
       <div>
         <Palette>
@@ -203,7 +221,9 @@ export default withServerProps(_ =>
 }`}</Code>
       </div>
 
-      <Heading size="large"><h2>UI colors</h2></Heading>
+      <Heading size="large">
+        <h2>UI colors</h2>
+      </Heading>
       <P>
         UI colors emphasize interface elements such as buttons, links, accents
         and vizualization.
@@ -227,7 +247,9 @@ export default withServerProps(_ =>
 }`}</Code>
       </div>
 
-      <Heading size="large"><h2>Gradient</h2></Heading>
+      <Heading size="large">
+        <h2>Gradient</h2>
+      </Heading>
       <P>
         So fresh. Use the standard gradient to emphasize and showcase the brand.
         Use sparingly.
@@ -236,31 +258,19 @@ export default withServerProps(_ =>
         <Palette>
           <Gradient var={core.colors.gradientHorz}>
             <div>
-              <GradientStop>
-                F05A28
-              </GradientStop>
-              <GradientVar>
-                psColorsGradientHorz
-              </GradientVar>
+              <GradientStop>F05A28</GradientStop>
+              <GradientVar>psColorsGradientHorz</GradientVar>
             </div>
             <div className="gradientHorzStop2">
-              <GradientStop>
-                E80A89
-              </GradientStop>
+              <GradientStop>E80A89</GradientStop>
             </div>
           </Gradient>
           <Gradient var={core.colors.gradientVert}>
             <div className="gradientVert">
-              <GradientStop>
-                F05A28
-              </GradientStop>
-              <GradientVar>
-                psColorsGradientVert
-              </GradientVar>
+              <GradientStop>F05A28</GradientStop>
+              <GradientVar>psColorsGradientVert</GradientVar>
               <div className="gradientVertStop2">
-                <GradientStop>
-                  E80A89
-                </GradientStop>
+                <GradientStop>E80A89</GradientStop>
               </div>
             </div>
           </Gradient>
@@ -286,4 +296,4 @@ export default withServerProps(_ =>
       }
     `}</style>
   </Chrome>
-)
+))

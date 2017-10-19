@@ -211,7 +211,7 @@ const IndividualSpacing = props => (
 export default withServerProps(_ => (
   <Chrome>
     <Content>
-      <Heading size="xxLarge">
+      <Heading size="xLarge">
         <h1>Spacing</h1>
       </Heading>
 

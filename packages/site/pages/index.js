@@ -12,14 +12,12 @@ import {
   withServerProps
 } from '../src/ui'
 
-const Point = props =>
+const Point = props => (
   <div className="point">
     <Heading size="large" className="pointTitle">
       <h2>{props.title}</h2>
     </Heading>
-    <P>
-      {props.children}
-    </P>
+    <P>{props.children}</P>
     <style jsx>{`
       .point {
         margin-bottom: 44px;
@@ -36,8 +34,9 @@ const Point = props =>
       }
     `}</style>
   </div>
+)
 
-const Action = props =>
+const Action = props => (
   <span className="action">
     <Link href={props.href}>
       <Button appearance="stroke" size="large">
@@ -53,15 +52,16 @@ const Action = props =>
         text-decoration: none;
       }
     `}</style>
-
   </span>
+)
 
-const Logo = _ =>
+const Logo = _ => (
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 24C5.3723 24 0 18.627 0 12.0005 0 5.373 5.3728 0 12 0c6.6277 0 12.0005 5.373 12 12.0005C24 18.627 18.6277 24 12 24zm0-1.0313c6.0582 0 10.9688-4.9112 10.9688-10.9682C22.969 5.9425 18.0582 1.0312 12 1.0312c-6.0577 0-10.9688 4.9113-10.9688 10.9693 0 6.057 4.9106 10.9682 10.9688 10.9682zM8.9062 8.5334V5.7187L19.6876 12 8.9062 18.2813v-2.8146L6.4688 16.875v-9.75l2.4375 1.4083zm0 1.191L7.5 8.9118v6.1763l1.4063-.8123V9.7243zm1.0313.596V13.68L12.845 12l-2.9075-1.6798zm0 4.5505v1.616L17.639 12 9.9374 7.513v1.616L14.9064 12l-4.969 2.8708z" />
   </svg>
+)
 
-const Title = props =>
+const Title = props => (
   <svg
     className="titleSvg"
     viewBox="0 0 486 56"
@@ -81,11 +81,11 @@ const Title = props =>
       }
     `}</style>
   </svg>
+)
 
-const Header = props =>
+const Header = props => (
   <header className="header">
-    <div className="title">
-      <Heading size="xxLarge">
+      <Heading size="xLarge">
         <h1>
           <Title />
         </h1>
@@ -118,8 +118,9 @@ const Header = props =>
       }
     `}</style>
   </header>
+)
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Header />
     <Content title="Welcome">
@@ -134,10 +135,8 @@ export default withServerProps(_ =>
           such as <TextLink href="/core/color">color</TextLink>,{' '}
           <TextLink href="/core/typography">typography</TextLink>, and{' '}
           <TextLink href="/core/spacing">spacing</TextLink>. These system
-          properties
-          allow
-          for building layouts and visual
-          styles from defined constraints.
+          properties allow for building layouts and visual styles from defined
+          constraints.
         </Point>
         <Point title="Components">
           Components include a variety of common UI elements to bootstrap
@@ -159,4 +158,4 @@ export default withServerProps(_ =>
       }
     `}</style>
   </Chrome>
-)
+))
