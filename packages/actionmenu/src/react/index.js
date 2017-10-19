@@ -32,7 +32,8 @@ const Item = glamorous.button(
     cursor: 'pointer',
     border: 'none',
     paddingTop: '0',
-    paddingBottom: '0'
+    paddingBottom: '0',
+    transition: `background ${core.motion.speedXFast}`
   },
   ({ iconId }) =>
     iconId
