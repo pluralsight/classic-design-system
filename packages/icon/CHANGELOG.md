@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="8.0.0"></a>
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@7.1.0...@pluralsight/ps-design-system-icon@8.0.0) (2017-10-19)
+
+
+### Code Refactoring
+
+* **core:** redo icon sizes ([52cf758](https://github.com/pluralsight/design-system/commit/52cf758))
+
+
+### BREAKING CHANGES
+
+* **core:** redo icon sizes
+
+
+
+
 <a name="7.1.0"></a>
 # [7.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@7.0.5...@pluralsight/ps-design-system-icon@7.1.0) (2017-10-03)
 

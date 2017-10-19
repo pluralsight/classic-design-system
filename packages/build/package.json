@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-build",
-  "version": "1.4.13",
+  "version": "1.4.14",
   "description": "Utilities for building and configuring Design System packages",
   "main": "index.js",
   "scripts": {

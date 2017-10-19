@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@2.4.7...@pluralsight/ps-design-system-core@3.0.0) (2017-10-19)
+
+
+### Code Refactoring
+
+* **core:** adjust spacing values ([d1bfee7](https://github.com/pluralsight/design-system/commit/d1bfee7))
+* **core:** adjust spacing var names ([ed80319](https://github.com/pluralsight/design-system/commit/ed80319))
+* **core:** rename large font size vars ([2d80505](https://github.com/pluralsight/design-system/commit/2d80505))
+
+
+### BREAKING CHANGES
+
+* **core:** rename large font size vars
+* **core:** spacing values for xL and xxL change
+* **core:** spacing var name changes
+
+
+
+
 <a name="2.4.7"></a>
 ## [2.4.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@2.4.5...@pluralsight/ps-design-system-core@2.4.7) (2017-09-05)
 

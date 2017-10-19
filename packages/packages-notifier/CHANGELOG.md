@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/pluralsight/design-system/compare/packages-notifier@1.1.0...packages-notifier@1.2.0) (2017-10-19)
+
+
+### Features
+
+* **notifier:** schedule the notification ([155fdf7](https://github.com/pluralsight/design-system/commit/155fdf7))
+
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2017-10-16)
 

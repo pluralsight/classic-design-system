@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="10.0.0"></a>
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@9.0.5...@pluralsight/ps-design-system-text@10.0.0) (2017-10-19)
+
+
+### Bug Fixes
+
+* **text:** make heading respect size prop ([481064b](https://github.com/pluralsight/design-system/commit/481064b))
+
+
+### Code Refactoring
+
+* **text:** move xxLarge to xLarge ([d817665](https://github.com/pluralsight/design-system/commit/d817665))
+
+
+### BREAKING CHANGES
+
+* **text:** move xxLarge to xLarge
+
+
+
+
 <a name="9.0.5"></a>
 ## [9.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@9.0.3...@pluralsight/ps-design-system-text@9.0.5) (2017-09-05)
 

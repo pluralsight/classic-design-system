@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.0"></a>
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@6.0.1...@pluralsight/ps-design-system-tab@7.0.0) (2017-10-19)
+
+
+### Code Refactoring
+
+* **core:** adjust spacing var names ([ed80319](https://github.com/pluralsight/design-system/commit/ed80319))
+
+
+### BREAKING CHANGES
+
+* **core:** spacing var name changes
+
+
+
+
 <a name="6.0.1"></a>
 ## [6.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@6.0.0...@pluralsight/ps-design-system-tab@6.0.1) (2017-10-16)
 

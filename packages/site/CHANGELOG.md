@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="8.0.0"></a>
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.9.1...@pluralsight/ps-design-system-site@8.0.0) (2017-10-19)
+
+
+### Bug Fixes
+
+* **site:** restore title page spacing ([1f3560d](https://github.com/pluralsight/design-system/commit/1f3560d))
+
+
+### Code Refactoring
+
+* **core:** adjust spacing var names ([ed80319](https://github.com/pluralsight/design-system/commit/ed80319))
+* **core:** redo icon sizes ([52cf758](https://github.com/pluralsight/design-system/commit/52cf758))
+* **text:** move xxLarge to xLarge ([d817665](https://github.com/pluralsight/design-system/commit/d817665))
+
+
+### Features
+
+* **site:** add button link example ([81e36dd](https://github.com/pluralsight/design-system/commit/81e36dd))
+* **site:** add webengage code for survey ([18d181c](https://github.com/pluralsight/design-system/commit/18d181c))
+* **site:** display changelog links with latest version ([5ab89a5](https://github.com/pluralsight/design-system/commit/5ab89a5)), closes [#66](https://github.com/pluralsight/design-system/issues/66)
+* **site:** roadmap ([b9a051d](https://github.com/pluralsight/design-system/commit/b9a051d))
+
+
+### BREAKING CHANGES
+
+* **text:** move xxLarge to xLarge
+* **core:** redo icon sizes
+* **core:** spacing var name changes
+
+
+
+
 <a name="7.15.0"></a>
 # [7.15.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@7.9.1...@pluralsight/ps-design-system-site@7.15.0) (2017-10-16)
 

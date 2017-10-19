@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.14"></a>
+## [1.4.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.4.8...@pluralsight/ps-design-system-build@1.4.14) (2017-10-19)
+
+
+### Bug Fixes
+
+* **build:** remove reference to unknown var ([a04fb35](https://github.com/pluralsight/design-system/commit/a04fb35))
+* **build:** webpack validation typo ([e80c6f6](https://github.com/pluralsight/design-system/commit/e80c6f6))
+
+
+
+
 <a name="1.4.13"></a>
 ## [1.4.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.4.8...@pluralsight/ps-design-system-build@1.4.13) (2017-08-09)
 

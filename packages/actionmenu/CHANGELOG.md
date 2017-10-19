@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@1.5.4...@pluralsight/ps-design-system-actionmenu@2.0.0) (2017-10-19)
+
+
+### Code Refactoring
+
+* **core:** adjust spacing var names ([ed80319](https://github.com/pluralsight/design-system/commit/ed80319))
+
+
+### BREAKING CHANGES
+
+* **core:** spacing var name changes
+
+
+
+
 <a name="1.5.4"></a>
 ## [1.5.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@1.5.3...@pluralsight/ps-design-system-actionmenu@1.5.4) (2017-10-16)
 
