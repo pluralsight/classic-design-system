@@ -28,7 +28,7 @@ const compileSrc = src =>
 
 const formatSrc = code => code.trim()
 
-const OutputDecorationGlobalStyles = _ =>
+const OutputDecorationGlobalStyles = _ => (
   <style global jsx>{`
     .output {
       display: flex;
@@ -64,6 +64,7 @@ const OutputDecorationGlobalStyles = _ =>
       }
     }
   `}</style>
+)
 
 const decorateSrc = (props, codes) => {
   let decorated = `<div className="${getOutputClassName(
@@ -147,19 +148,20 @@ class ReactExample extends React.Component {
 
     return (
       <div className="editor">
-        {this.state.codes.map((code, i) =>
+        {this.state.codes.map((code, i) => (
           <CodeMirror
             key={i}
             value={formatSrc(code)}
             onChange={code => this.handleCodeChange(code, i)}
             options={options}
           />
-        )}
+        ))}
         <style jsx>{`
           .editor :global(.CodeMirror) {
             background: none;
           }
-          .editor :global(.CodeMirror), .editor :global(.CodeMirror-scroll) {
+          .editor :global(.CodeMirror),
+          .editor :global(.CodeMirror-scroll) {
             height: auto;
           }
         `}</style>
@@ -169,28 +171,26 @@ class ReactExample extends React.Component {
     )
   }
   renderError() {
-    return this.state.error
-      ? <pre className="error">
-          {this.state.error}
-          <style jsx>{`
-            .error {
-              background: ${core.colors.red};
-              color: ${core.colors.white};
-              overflow: hidden;
-              padding: ${core.layout.spacingLarge};
-            }
-         `}</style>
-        </pre>
-      : null
+    return this.state.error ? (
+      <pre className="error">
+        {this.state.error}
+        <style jsx>{`
+          .error {
+            background: ${core.colors.red};
+            color: ${core.colors.white};
+            overflow: hidden;
+            padding: ${core.layout.spacingLarge};
+          }
+        `}</style>
+      </pre>
+    ) : null
   }
   render() {
     return (
       <div>
         {this.renderError()}
         <div ref={el => (this.outputEl = el)} />
-        <div className="src">
-          {this.renderSrc()}
-        </div>
+        <div className="src">{this.renderSrc()}</div>
         <OutputDecorationGlobalStyles />
         <style jsx>{`
           .src {

@@ -64,7 +64,7 @@ class List extends React.Component {
             top: 2px;
             width: calc(50% - 6px);
             background: ${core.colors.white};
-            box-shadow: 1px 1px 2px rgba(0, 0, 0, .6);
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
           }
         `}</style>
       </div>
@@ -86,7 +86,7 @@ class List extends React.Component {
             border-radius: calc(${cssVars.outerHeight} / 2);
             white-space: nowrap;
           }
-          ${optionSelector}
+          ${optionSelector};
         `}</style>
       </div>
     )
@@ -121,8 +121,7 @@ class Option extends React.Component {
         {this.props.children}
 
         <style jsx>{`
-          ${optionSelector}
-          .optionActive {
+          ${optionSelector} .optionActive {
             color: ${core.colors.gray05};
           }
         `}</style>

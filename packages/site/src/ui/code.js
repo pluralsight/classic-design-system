@@ -34,7 +34,8 @@ const Code = props => {
         .code :global(.CodeMirror) {
           background: none;
         }
-        .code :global(.CodeMirror), .code :global(.CodeMirror-scroll) {
+        .code :global(.CodeMirror),
+        .code :global(.CodeMirror-scroll) {
           height: auto;
         }
       `}</style>

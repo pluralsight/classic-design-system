@@ -8,12 +8,11 @@ const createSelectorsForVar = (decl, options) => {
   const value = decl.value
   return (options.propNameTests.find(t => t.match.test(decl.prop)) || {
     props: []
-  }).props
-    .map((p, i, newProps) =>
-      postcss.parse(`
+  }).props.map((p, i, newProps) =>
+    postcss.parse(`
 .${prop + (newProps.length > 1 ? `--${p}` : '')} { ${p}: ${value}; }
 `)
-    )
+  )
 }
 
 module.exports = postcss.plugin('css-var-selectors', options => {

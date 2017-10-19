@@ -1,8 +1,10 @@
 import core from '@pluralsight/ps-design-system-core'
 
-export default _ =>
+export default _ => (
   <style global jsx>{`
-    html, body {
+    html,
+    body {
       background: ${core.colors.bone};
     }
   `}</style>
+)

@@ -9,4 +9,8 @@ const styles = glamor.css({
   lineHeight: core.type.lineHeightStandard
 })
 
-export default props => <p {...props} {...styles}>{props.children}</p>
+export default props => (
+  <p {...props} {...styles}>
+    {props.children}
+  </p>
+)

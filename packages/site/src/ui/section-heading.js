@@ -3,7 +3,11 @@ import core from '@pluralsight/ps-design-system-core'
 import Heading from './heading'
 import { addHeading } from './content'
 
-const formatId = href => href.toLowerCase().split(' ').join('-')
+const formatId = href =>
+  href
+    .toLowerCase()
+    .split(' ')
+    .join('-')
 const formatHref = href => '#' + formatId(href)
 
 export default class extends React.Component {

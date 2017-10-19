@@ -1,6 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 
-export default _ =>
+export default _ => (
   <div className="robotContainer">
     <svg
       className="robot"
@@ -2350,8 +2350,8 @@ export default _ =>
       .robot {
         width: calc(100% - (2 * ${core.layout.spacingLarge}));
         position: relative;
-        margin: 0 ${core.layout.spacingLarge} ${core.layout.spacingLarge} ${core
-      .layout.spacingLarge};
+        margin: 0 ${core.layout.spacingLarge} ${core.layout.spacingLarge}
+          ${core.layout.spacingLarge};
       }
       .gradient {
         position: absolute;
@@ -2367,3 +2367,4 @@ export default _ =>
       }
     `}</style>
   </div>
+)

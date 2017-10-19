@@ -3,10 +3,11 @@ import React from 'react'
 
 const Panel = glamorous.div({})
 
-const PanelComponent = props =>
+const PanelComponent = props => (
   <Panel role="tabpanel" aria-labelledby={props.labelledBy}>
     {props.children}
   </Panel>
+)
 
 import PropTypes from 'prop-types'
 PanelComponent.propTypes = {

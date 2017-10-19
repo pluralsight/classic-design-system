@@ -2,7 +2,7 @@ import core from '@pluralsight/ps-design-system-core'
 
 import Switcher from '../switcher'
 
-export default props =>
+export default props => (
   <div className="switcher">
     <Switcher.List onSelect={props.onClick} value={props.value}>
       <Switcher.Option value="react">REACT</Switcher.Option>
@@ -15,3 +15,4 @@ export default props =>
       }
     `}</style>
   </div>
+)

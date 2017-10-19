@@ -4,10 +4,16 @@ import React from 'react'
 
 // TODO: make handle activeClassName-type thing
 export default props =>
-  /^http/.test(props.href)
-    ? <Link><a {...props} href={props.href}>{props.children}</a></Link>
-    : <NextLink href={props.href}>
-        <Link>
-          <a {...props}>{props.children}</a>
-        </Link>
-      </NextLink>
+  /^http/.test(props.href) ? (
+    <Link>
+      <a {...props} href={props.href}>
+        {props.children}
+      </a>
+    </Link>
+  ) : (
+    <NextLink href={props.href}>
+      <Link>
+        <a {...props}>{props.children}</a>
+      </Link>
+    </NextLink>
+  )

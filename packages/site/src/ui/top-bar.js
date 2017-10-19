@@ -4,7 +4,7 @@ export const cssVars = {
   topBarHeight: '8px'
 }
 
-export default _ =>
+export default _ => (
   <div className="bar">
     <style jsx>{`
       .bar {
@@ -14,3 +14,4 @@ export default _ =>
       }
     `}</style>
   </div>
+)
