@@ -86,9 +86,11 @@ const Title = props => (
 
 const Header = props => (
   <header className="header">
-    <PageHeading>
-      <Title />
-    </PageHeading>
+    <div className="title">
+      <PageHeading>
+        <Title />
+      </PageHeading>
+    </div>
     <style jsx>{`
       .header {
         background: linear-gradient(to top, #2bb2e3, #137bc2);
