@@ -21,7 +21,9 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 
 * **text:** move xxLarge to xLarge
 
+### Upgrade Guide
 
+- Rename `Text.Heading.sizes.xxLarge` usage to `Text.Heading.sizes.xLarge`
 
 
 <a name="9.0.5"></a>

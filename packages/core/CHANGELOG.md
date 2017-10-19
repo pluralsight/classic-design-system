@@ -20,8 +20,12 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 * **core:** spacing values for xL and xxL change
 * **core:** spacing var name changes
 
+### Upgrade Guide
 
-
+- layout: Rename `spacingTiny` usage to `spacingXXSmall`
+- layout: Check visuals on `spacingXLarge` and `spacingXXLarge` usages (resized)
+- type: Rename `fontSizeXXXLarge` usage to `fontSizeJumbo`
+- type: Rename `letterSpacingXXXLarge` usage to `letterSpacingJumbo`
 
 <a name="2.4.7"></a>
 ## [2.4.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@2.4.5...@pluralsight/ps-design-system-core@2.4.7) (2017-09-05)

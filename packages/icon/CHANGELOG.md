@@ -14,10 +14,15 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 
 ### BREAKING CHANGES
 
-* **core:** redo icon sizes
+* **icon:** Redefine icon sizes to just 3: s, m, l
 
+### Upgrade Guide
 
-
+- Rename `Icon.sizes.xSmall` usage to `Icon.sizes.small`
+- Rename `Icon.sizes.small` usage to `Icon.sizes.medium`
+- Rename `Icon.sizes.medium` usage to `Icon.sizes.large`
+- Remove `Icon.sizes.large` and `Icon.sizes.xLarge` usages
+- Check usages of `<Icon />` with no `size` prop (default changed to `Icon.sizes.medium`)
 
 <a name="7.1.0"></a>
 # [7.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@7.0.5...@pluralsight/ps-design-system-icon@7.1.0) (2017-10-03)
