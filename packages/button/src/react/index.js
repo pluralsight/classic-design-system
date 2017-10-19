@@ -95,6 +95,16 @@ const styleDisabledFlat = ({ disabled, appearance }) =>
       }
     : null
 
+const styleIcon = ({ icon, iconOnly, size }) =>
+  icon && !iconOnly
+    ? {
+        [sizes.xSmall]: { paddingLeft: core.layout.spacingXSmall },
+        [sizes.small]: { paddingLeft: core.layout.spacingXSmall },
+        [sizes.medium]: { paddingLeft: core.layout.spacingXSmall },
+        [sizes.large]: { paddingLeft: core.layout.spacingSmall }
+      }[size]
+    : null
+
 const styleIconAlign = ({ iconAlign }) =>
   iconAlign === iconAligns.right ? { flexDirection: 'row-reverse' } : null
 
@@ -141,6 +151,7 @@ const getButtonStyles = props =>
     styleDisabled(props),
     styleDisabledStroke(props),
     styleDisabledFlat(props),
+    styleIcon(props),
     styleIconAlign(props),
     styleIconOnly(props)
   )
