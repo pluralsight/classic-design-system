@@ -3,7 +3,7 @@
 
   /* font size */
   --psTypeFontSizeGigantic: 60px;
-  --psTypeFontSizeXXXLarge: 48px;
+  --psTypeFontSizeJumbo: 48px;
   --psTypeFontSizeXXLarge: 36px;
   --psTypeFontSizeXLarge: 30px;
   --psTypeFontSizeLarge: 24px;
@@ -13,7 +13,7 @@
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
-  --psTypeLetterSpacingXXXLarge: -0.72px;
+  --psTypeLetterSpacingJumbo: -0.72px;
   --psTypeLetterSpacingXXLarge: -0.54px;
   --psTypeLetterSpacingXLarge: -0.45px;
   --psTypeLetterSpacingLarge: 0.36px;
