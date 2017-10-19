@@ -52,7 +52,7 @@ const InternalLinks = props =>
           padding: 0 0 0 ${core.layout.spacingMedium};
           overflow: hidden;
           height: 0;
-          animation: grow ${core.motion.speedSlowest} forwards;
+          animation: grow ${core.motion.speedXSlow} forwards;
         }
         .link {
           display: block;
@@ -61,7 +61,7 @@ const InternalLinks = props =>
           color: ${core.colors.gray03};
           white-space: nowrap;
           cursor: pointer;
-          transition: all ${core.motion.speedFastest} ease-in-out;
+          transition: all ${core.motion.speedXFast} ease-in-out;
         }
         .link:first-child {
           line-height: 10px;
@@ -104,7 +104,7 @@ class NavLink extends React.Component {
             width: 0px;
             margin-right: 0px;
             background: ${core.colors.gradientHorz};
-            transition: all ${core.motion.speedFastest} ease-in-out;
+            transition: all ${core.motion.speedXFast} ease-in-out;
           }
           .navLink :global(a) {
             text-decoration: none;
@@ -116,7 +116,7 @@ class NavLink extends React.Component {
             line-height: ${core.type.lineHeightExtra};
             color: ${core.colors.gray03};
             white-space: nowrap;
-            transition: all ${core.motion.speedFastest} ease-in-out;
+            transition: all ${core.motion.speedXFast} ease-in-out;
           }
           .navLink .link:hover {
             color: ${core.colors.black};
