@@ -145,11 +145,15 @@ const getButtonStyles = props =>
     styleIconOnly(props)
   )
 
-const Button = props =>
-  React.createElement(props.href ? 'a' : 'button', {
-    ...rmNonHtmlProps(props),
-    ...getButtonStyles(props)
-  })
+class Button extends React.Component {
+  render() {
+    return React.createElement(this.props.href ? 'a' : 'button', {
+      ...rmNonHtmlProps(this.props),
+      ...(this.props.innerRef ? { ref: this.props.innerRef } : {}),
+      ...getButtonStyles(this.props)
+    })
+  }
+}
 
 const styleIconAlignIconContainer = ({ iconAlign }) =>
   iconAlign === iconAligns.right
@@ -184,7 +188,7 @@ const mapIconSize = props => {
 }
 
 const rmNonHtmlProps = props => {
-  const { appearance, icon, iconOnly, size, ...rest } = props
+  const { appearance, icon, iconOnly, innerRef, size, ...rest } = props
   return rest
 }
 
@@ -217,6 +221,7 @@ Btn.propTypes = {
   disabled: PropTypes.bool,
   icon: PropTypes.element,
   iconAlign: PropTypes.oneOf(Object.keys(iconAligns)),
+  innerHref: PropTypes.func,
   size: PropTypes.oneOf(Object.keys(sizes))
 }
 Btn.defaultProps = {

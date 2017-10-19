@@ -88,3 +88,9 @@ const asLink = storiesOf('as link', module)
       Click as link
     </Button>
   ))
+
+const refExample = storiesOf('with ref', module)
+  .addDecorator(bg)
+  .add('ref to handle focus', _ => (
+    <Button innerRef={el => el && el.focus()}>Should be focused</Button>
+  ))
