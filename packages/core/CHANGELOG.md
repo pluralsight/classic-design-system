@@ -24,7 +24,10 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 
 ### Upgrade Guide
 
-
+- motion: rename `speedFastest` usages to `speedXFast`
+- motion: rename `speedFaster` usages to `speedFast`
+- motion: rename `speedSlower` usages to `speedSlow`
+- motion: rename `speedSlowest` usages to `speedXSlow`
 
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@2.4.7...@pluralsight/ps-design-system-core@3.0.0) (2017-10-19)
