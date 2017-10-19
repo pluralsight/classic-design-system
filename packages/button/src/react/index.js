@@ -184,7 +184,7 @@ const mapIconSize = props => {
     [sizes.medium]: 'medium',
     [sizes.large]: 'medium'
   }
-  return btnToIconSizes[props.size] ? btnToIconSizes[props.size] : 'small'
+  return btnToIconSizes[props.size] ? btnToIconSizes[props.size] : 'medium'
 }
 
 const rmNonHtmlProps = props => {
