@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@3.0.0...@pluralsight/ps-design-system-core@4.0.0) (2017-10-19)
+
+
+### Code Refactoring
+
+* **core:** rename motion vars and new speeds ([f183a56](https://github.com/pluralsight/design-system/commit/f183a56))
+
+
+### BREAKING CHANGES
+
+* **core:** rename motion vars and new speeds
+
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@2.4.7...@pluralsight/ps-design-system-core@3.0.0) (2017-10-19)
 
