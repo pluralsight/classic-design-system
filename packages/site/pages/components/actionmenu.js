@@ -50,7 +50,7 @@ export default withServerProps(_ =>
     icon={<Icon id={Icon.ids.more} />}
   />
   <div style={{ position: 'relative' }}>
-    <ActionMenu css={{ position: 'relative' }}>
+    <ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
       <ActionMenu.Item>
         One menu item
       </ActionMenu.Item>
@@ -73,7 +73,7 @@ export default withServerProps(_ =>
         includes={{ ActionMenu, Icon }}
         codes={[
           `
-<ActionMenu css={{ position: 'relative' }}>
+<ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
   <ActionMenu.Item iconId={Icon.ids.channel}>
     Channels
   </ActionMenu.Item>
@@ -97,7 +97,7 @@ export default withServerProps(_ =>
         includes={{ ActionMenu }}
         codes={[
           `
-<ActionMenu css={{ position: 'relative' }}>
+<ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
   <ActionMenu.Item>
     One item
   </ActionMenu.Item>
@@ -126,7 +126,7 @@ export default withServerProps(_ =>
         }}
         codes={[
           `
-<ActionMenu css={{ position: 'relative' }}>
+<ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
   <ActionMenu.Item>
     One item
   </ActionMenu.Item>
@@ -214,7 +214,7 @@ export default withServerProps(_ =>
         }}
         codes={[
           `
-<ActionMenu origin={ActionMenu.origins.bottomRight}>
+<ActionMenu origin={ActionMenu.origins.bottomRight} shouldFocusOnMount={false}>
   <ActionMenu.Item>
     One item
   </ActionMenu.Item>
@@ -229,6 +229,15 @@ export default withServerProps(_ =>
 `
         ]}
       />
+
+      <P>
+        <i>
+          Note: Examples on this page use <code>shouldFocusOnMount=false</code>
+          only in order to display the examples without interrupting your
+          browsing experience. In most real-world scenarios, you will want to
+          leave the default focus behavior in tact.
+        </i>
+      </P>
     </Content>
   </Chrome>
 )
