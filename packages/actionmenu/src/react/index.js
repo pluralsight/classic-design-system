@@ -52,7 +52,7 @@ const Item = glamorous.button(
       : { background: 'none' }
 )
 
-const IconComponent = props => (
+const IconComponent = props =>
   <Div
     display="inline-flex"
     alignItems="center"
@@ -60,13 +60,11 @@ const IconComponent = props => (
   >
     <Icon id={props.iconId} size={Icon.sizes.medium} />
   </Div>
-)
 
-const NestedArrow = _ => (
+const NestedArrow = _ =>
   <Div marginLeft="auto" paddingLeft={core.layout.spacingXSmall}>
     <Arrow />
   </Div>
-)
 
 const calcNestedMenuPosition = (menuWidth, origin) =>
   ({
@@ -100,7 +98,7 @@ class ItemComponent extends React.Component {
     this.handleMouseOut = this.handleMouseOut.bind(this)
   }
   componentDidMount() {
-    if (this.props.isActive) this.item.focus()
+    if (this.props.isActive && this.props.shouldFocusOnMount) this.item.focus()
   }
   componentDidUpdate() {
     if (this.props.isActive) {
@@ -129,15 +127,16 @@ class ItemComponent extends React.Component {
   }
   renderNested() {
     return this.state.isNestedRendered &&
-      this.props.nested &&
-      this.props.isActive
+    this.props.nested &&
+    this.props.isActive
       ? React.cloneElement(this.props.nested, {
           css: calcNestedMenuPosition(
             this.props.size.width,
             this.props._origin
           ),
           onClose: this.handleNestedClose,
-          origin: this.props._origin
+          origin: this.props._origin,
+          shouldFocusOnMount: this.props.shouldFocusOnMount
         })
       : null
   }
@@ -197,7 +196,7 @@ DividerComponent.propTypes = {
   _onFocus: PropTypes.func
 }
 
-const Overlay = props => (
+const Overlay = props =>
   <Div
     position="fixed"
     height="100vh"
@@ -206,7 +205,6 @@ const Overlay = props => (
     left="0"
     onClick={props.onClick}
   />
-)
 
 const slide = glamor.css.keyframes({
   '100%': {
@@ -337,6 +335,7 @@ class ActionMenuComponent extends React.Component {
         {React.Children.map(this.props.children, (child, i) =>
           React.cloneElement(child, {
             isActive: i === this.state.activeIndex,
+            shouldFocusOnMount: this.props.shouldFocusOnMount,
             _i: i,
             _onFocus: this.handleDividerFocus,
             _onMouseOver: this.handleItemMouseOver,
@@ -355,10 +354,12 @@ ActionMenuComponent.Overlay = Overlay
 ActionMenuComponent.origins = origins
 ActionMenuComponent.propTypes = {
   onClose: PropTypes.func,
-  origin: PropTypes.oneOf(Object.keys(origins))
+  origin: PropTypes.oneOf(Object.keys(origins)),
+  shouldFocusOnMount: PropTypes.bool
 }
 ActionMenuComponent.defaultProps = {
-  origin: origins.topLeft
+  origin: origins.topLeft,
+  shouldFocusOnMount: true
 }
 
 export default ActionMenuComponent
