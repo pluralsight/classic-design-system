@@ -28,7 +28,7 @@ const compileSrc = src =>
 
 const formatSrc = code => code.trim()
 
-const OutputDecorationGlobalStyles = _ => (
+const OutputDecorationGlobalStyles = _ =>
   <style global jsx>{`
     .output {
       display: flex;
@@ -64,7 +64,6 @@ const OutputDecorationGlobalStyles = _ => (
       }
     }
   `}</style>
-)
 
 const decorateSrc = (props, codes) => {
   let decorated = `<div className="${getOutputClassName(
@@ -72,7 +71,9 @@ const decorateSrc = (props, codes) => {
   )}" style={${JSON.stringify(props.outputStyle)}}>`
 
   codes.forEach(code => {
-    decorated += `<div className="outputChild">${code}</div>`
+    decorated += `<div className="outputChild" style={${JSON.stringify(
+      props.outputChildStyle
+    )}}>${code}</div>`
   })
 
   decorated += '</div>'
@@ -148,14 +149,14 @@ class ReactExample extends React.Component {
 
     return (
       <div className="editor">
-        {this.state.codes.map((code, i) => (
+        {this.state.codes.map((code, i) =>
           <CodeMirror
             key={i}
             value={formatSrc(code)}
             onChange={code => this.handleCodeChange(code, i)}
             options={options}
           />
-        ))}
+        )}
         <style jsx>{`
           .editor :global(.CodeMirror) {
             background: none;
@@ -171,26 +172,28 @@ class ReactExample extends React.Component {
     )
   }
   renderError() {
-    return this.state.error ? (
-      <pre className="error">
-        {this.state.error}
-        <style jsx>{`
-          .error {
-            background: ${core.colors.red};
-            color: ${core.colors.white};
-            overflow: hidden;
-            padding: ${core.layout.spacingLarge};
-          }
-        `}</style>
-      </pre>
-    ) : null
+    return this.state.error
+      ? <pre className="error">
+          {this.state.error}
+          <style jsx>{`
+            .error {
+              background: ${core.colors.red};
+              color: ${core.colors.white};
+              overflow: hidden;
+              padding: ${core.layout.spacingLarge};
+            }
+          `}</style>
+        </pre>
+      : null
   }
   render() {
     return (
       <div>
         {this.renderError()}
         <div ref={el => (this.outputEl = el)} />
-        <div className="src">{this.renderSrc()}</div>
+        <div className="src">
+          {this.renderSrc()}
+        </div>
         <OutputDecorationGlobalStyles />
         <style jsx>{`
           .src {
@@ -206,6 +209,7 @@ class ReactExample extends React.Component {
 ReactExample.propTypes = {
   codes: PropTypes.arrayOf(PropTypes.string),
   includes: PropTypes.object,
+  outputChildStyle: PropTypes.object,
   outputStyle: PropTypes.object
 }
 ReactExample.defaultProps = {

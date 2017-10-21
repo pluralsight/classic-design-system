@@ -1,5 +1,6 @@
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
 import Button from '@pluralsight/ps-design-system-button/react'
+import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 
 import {
@@ -15,7 +16,7 @@ import {
   withServerProps
 } from '../../src/ui'
 
-export default withServerProps(_ => (
+export default withServerProps(_ =>
   <Chrome>
     <Content title="Action Menu">
       <PageHeading beta packageName="actionmenu">
@@ -49,7 +50,7 @@ export default withServerProps(_ => (
     icon={<Icon id={Icon.ids.more} />}
   />
   <div style={{ position: 'relative' }}>
-    <ActionMenu origin={ActionMenu.origins.topLeft} css={{ position: 'relative' }}>
+    <ActionMenu css={{ position: 'relative' }}>
       <ActionMenu.Item>
         One menu item
       </ActionMenu.Item>
@@ -72,7 +73,7 @@ export default withServerProps(_ => (
         includes={{ ActionMenu, Icon }}
         codes={[
           `
-<ActionMenu origin={ActionMenu.origins.topLeft} css={{ position: 'relative' }}>
+<ActionMenu css={{ position: 'relative' }}>
   <ActionMenu.Item iconId={Icon.ids.channel}>
     Channels
   </ActionMenu.Item>
@@ -96,7 +97,7 @@ export default withServerProps(_ => (
         includes={{ ActionMenu }}
         codes={[
           `
-<ActionMenu origin={ActionMenu.origins.topLeft} css={{ position: 'relative' }}>
+<ActionMenu css={{ position: 'relative' }}>
   <ActionMenu.Item>
     One item
   </ActionMenu.Item>
@@ -118,25 +119,14 @@ export default withServerProps(_ => (
 
       <SectionHeading>Nesting</SectionHeading>
       <P>Nested menu lists may spawn from parent menu list items.</P>
-      <P>
-        The origin prop determines the starting position and direction of nested
-        menus.
-      </P>
-      <Code language="javascript">
-        {Object.keys(ActionMenu.origins)
-          .reduce(
-            (acc, origin) => acc.concat([`ActionMenu.origins.${origin}`]),
-            []
-          )
-          .join('\n')}
-      </Code>
-      <P>Here's an example of ActionMenu.origins.bottomRight in action:</P>
       <Example.React
         includes={{ ActionMenu }}
-        outputStyle={{ minHeight: '300px', position: 'relative' }}
+        outputChildStyle={{
+          padding: `0 0 ${core.layout.spacingLarge} 0`
+        }}
         codes={[
           `
-<ActionMenu origin={ActionMenu.origins.bottomRight}>
+<ActionMenu css={{ position: 'relative' }}>
   <ActionMenu.Item>
     One item
   </ActionMenu.Item>
@@ -195,6 +185,50 @@ export default withServerProps(_ => (
 `
         ]}
       />
+
+      <SectionHeading>Origin</SectionHeading>
+      <P>
+        The origin prop determines the starting position and direction of nested
+        menus.
+      </P>
+      <Code language="javascript">
+        {Object.keys(ActionMenu.origins)
+          .reduce(
+            (acc, origin) => acc.concat([`ActionMenu.origins.${origin}`]),
+            []
+          )
+          .join('\n')}
+      </Code>
+      <P>Here's an example of ActionMenu.origins.bottomRight in action:</P>
+      <Example.React
+        includes={{ ActionMenu }}
+        outputStyle={{
+          height: `calc(200px + (2 * ${core.layout.spacingLarge}))`,
+          position: 'relative'
+        }}
+        outputChildStyle={{
+          position: 'relative',
+          height: '200px',
+          width: '100%',
+          padding: core.layout.spacingLarge
+        }}
+        codes={[
+          `
+<ActionMenu origin={ActionMenu.origins.bottomRight}>
+  <ActionMenu.Item>
+    One item
+  </ActionMenu.Item>
+  <ActionMenu.Divider />
+  <ActionMenu.Item>
+    Two item
+  </ActionMenu.Item>
+  <ActionMenu.Item>
+    Three item
+  </ActionMenu.Item>
+</ActionMenu>
+`
+        ]}
+      />
     </Content>
   </Chrome>
-))
+)
