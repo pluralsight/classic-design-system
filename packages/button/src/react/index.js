@@ -1,6 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import glamorous from 'glamorous'
+import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { transparentize } from 'polished'
@@ -190,12 +191,14 @@ const IconContainer = glamorous.div(
 
 const mapIconSize = props => {
   const btnToIconSizes = {
-    [sizes.xSmall]: 'small',
-    [sizes.small]: 'medium',
-    [sizes.medium]: 'medium',
-    [sizes.large]: 'medium'
+    [sizes.xSmall]: iconSizes.small,
+    [sizes.small]: iconSizes.medium,
+    [sizes.medium]: iconSizes.medium,
+    [sizes.large]: iconSizes.medium
   }
-  return btnToIconSizes[props.size] ? btnToIconSizes[props.size] : 'medium'
+  return btnToIconSizes[props.size]
+    ? btnToIconSizes[props.size]
+    : iconSizes.medium
 }
 
 const rmNonHtmlProps = props => {
