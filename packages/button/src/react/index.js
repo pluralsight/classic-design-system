@@ -5,9 +5,9 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { transparentize } from 'polished'
 
-const appearances = { stroke: 'stroke', flat: 'flat' }
+export const appearances = { stroke: 'stroke', flat: 'flat' }
 
-const sizes = {
+export const sizes = {
   xSmall: 'xSmall',
   small: 'small',
   medium: 'medium',
@@ -204,28 +204,29 @@ const rmNonHtmlProps = props => {
 }
 
 const renderIcon = props =>
-  props.icon ? (
-    <IconContainer
-      {...rmNonHtmlProps(props)}
-      iconOnly={React.Children.count(props.children) <= 0}
-    >
-      {React.cloneElement(props.icon, {
-        size: mapIconSize(props)
-      })}
-    </IconContainer>
-  ) : null
+  props.icon
+    ? <IconContainer
+        {...rmNonHtmlProps(props)}
+        iconOnly={React.Children.count(props.children) <= 0}
+      >
+        {React.cloneElement(props.icon, {
+          size: mapIconSize(props)
+        })}
+      </IconContainer>
+    : null
 
 const BtnText = glamorous.span({
   display: 'inline-flex',
   alignItems: 'center'
 })
 
-const Btn = props => (
+const Btn = props =>
   <Button {...props} iconOnly={React.Children.count(props.children) <= 0}>
     {renderIcon(props)}
-    <BtnText>{props.children}</BtnText>
+    <BtnText>
+      {props.children}
+    </BtnText>
   </Button>
-)
 
 Btn.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(appearances)),
