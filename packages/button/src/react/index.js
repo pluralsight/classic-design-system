@@ -154,7 +154,8 @@ const getButtonStyles = props =>
     styleDisabledFlat(props),
     styleIcon(props),
     styleIconAlign(props),
-    styleIconOnly(props)
+    styleIconOnly(props),
+    ...props.css
   )
 
 class Button extends React.Component {
