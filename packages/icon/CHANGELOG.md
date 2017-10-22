@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="8.1.0"></a>
+# [8.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.0.4...@pluralsight/ps-design-system-icon@8.1.0) (2017-10-22)
+
+
+### Features
+
+* **icon:** export statics separately ([380ba25](https://github.com/pluralsight/design-system/commit/380ba25))
+
+
+
+
 <a name="8.0.4"></a>
 ## [8.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.0.3...@pluralsight/ps-design-system-icon@8.0.4) (2017-10-19)
 

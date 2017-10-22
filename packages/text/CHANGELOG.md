@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="10.1.0"></a>
+# [10.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.0.3...@pluralsight/ps-design-system-text@10.1.0) (2017-10-22)
+
+
+### Features
+
+* **text:** export statics separately ([dd88cf6](https://github.com/pluralsight/design-system/commit/dd88cf6))
+
+
+
+
 <a name="10.0.3"></a>
 ## [10.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.0.2...@pluralsight/ps-design-system-text@10.0.3) (2017-10-19)
 

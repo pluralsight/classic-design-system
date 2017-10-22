@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-row",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "Design System component for row ui",
   "main": "index.js",
   "scripts": {

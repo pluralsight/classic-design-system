@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.1.0"></a>
+# [7.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@7.0.5...@pluralsight/ps-design-system-card@7.1.0) (2017-10-22)
+
+
+### Features
+
+* **card:** export statics separately ([b639feb](https://github.com/pluralsight/design-system/commit/b639feb))
+
+
+
+
 <a name="7.0.5"></a>
 ## [7.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@7.0.4...@pluralsight/ps-design-system-card@7.0.5) (2017-10-19)
 

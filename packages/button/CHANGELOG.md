@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="9.1.0"></a>
+# [9.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@9.0.5...@pluralsight/ps-design-system-button@9.1.0) (2017-10-22)
+
+
+### Bug Fixes
+
+* **button:** remove iconAlign from dom attributes ([4f7c45b](https://github.com/pluralsight/design-system/commit/4f7c45b))
+
+
+### Features
+
+* **button:** export statics separately ([26cc5e0](https://github.com/pluralsight/design-system/commit/26cc5e0))
+
+
+
+
 <a name="9.0.5"></a>
 ## [9.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@9.0.4...@pluralsight/ps-design-system-button@9.0.5) (2017-10-19)
 
