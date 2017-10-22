@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-button",
-  "version": "9.1.2",
+  "version": "9.1.3",
   "description": "Design System component for button ui",
   "main": "index.js",
   "scripts": {
