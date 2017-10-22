@@ -96,14 +96,14 @@ const styleDisabledFlat = ({ disabled, appearance }) =>
       }
     : null
 
-const styleIcon = ({ icon, iconOnly, size }) =>
+const styleIcon = ({ icon, iconAlign, iconOnly, size }) =>
   icon && !iconOnly
     ? {
-        [sizes.xSmall]: { paddingLeft: core.layout.spacingXSmall },
-        [sizes.small]: { paddingLeft: core.layout.spacingXSmall },
-        [sizes.medium]: { paddingLeft: core.layout.spacingXSmall },
-        [sizes.large]: { paddingLeft: core.layout.spacingSmall }
-      }[size]
+        [iconAlign === iconAligns.right ? 'paddingRight' : 'paddingLeft']:
+          size === sizes.large
+            ? core.layout.spacingSmall
+            : core.layout.spacingXSmall
+      }
     : null
 
 const styleIconAlign = ({ iconAlign }) =>
