@@ -14,7 +14,7 @@ import {
   withServerProps
 } from '../../src/ui'
 
-export default withServerProps(_ => (
+export default withServerProps(_ =>
   <Chrome>
     <Content title="Button">
       <PageHeading packageName="button">Button</PageHeading>
@@ -59,8 +59,8 @@ export default withServerProps(_ => (
         includes={{ Button, Icon }}
         codes={[
           `<Button icon={<Icon id={Icon.ids.check} />}>With Icon</Button>`,
-          `<Button icon={<Icon id={Icon.ids.channel} />} appearance="stroke">With Icon</Button>`,
-          `<Button icon={<Icon id={Icon.ids.play} />} iconAlign="right" appearance="flat">Aligned to Right</Button>`
+          `<Button icon={<Icon id={Icon.ids.channel} />} appearance={Button.appearances.stroke}>With Icon</Button>`,
+          `<Button icon={<Icon id={Icon.ids.play} />} iconAlign={Button.iconAligns.right} appearance={Button.appearances.flat}>Aligned to Right</Button>`
         ]}
       />
 
@@ -111,4 +111,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)
