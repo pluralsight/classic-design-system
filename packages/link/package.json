@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-link",
-  "version": "5.0.10",
+  "version": "5.1.0",
   "description": "Design System component for link/anchor ui",
   "main": "index.js",
   "scripts": {
