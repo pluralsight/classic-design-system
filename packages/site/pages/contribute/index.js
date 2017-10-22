@@ -10,7 +10,7 @@ import {
   withServerProps
 } from '../../src/ui'
 
-const Bar = props => (
+const Bar = props =>
   <div className="bar" style={props.style}>
     <style jsx>{`
       .bar {
@@ -20,9 +20,8 @@ const Bar = props => (
       }
     `}</style>
   </div>
-)
 
-const Levels = props => (
+const Levels = props =>
   <div className="levels">
     {props.children}
     <style jsx>{`
@@ -35,9 +34,8 @@ const Levels = props => (
       }
     `}</style>
   </div>
-)
 
-const Level = props => (
+const Level = props =>
   <div className="level">
     {props.children}
     <style jsx>{`
@@ -56,9 +54,8 @@ const Level = props => (
       }
     `}</style>
   </div>
-)
 
-Level.Title = props => (
+Level.Title = props =>
   <div>
     <h3 className="title">
       {props.children}
@@ -72,18 +69,19 @@ Level.Title = props => (
       }
   `}</style>
   </div>
-)
 
-Level.Desc = props => (
+Level.Desc = props =>
   <div className="desc">
     {props.children}
     <style jsx>{``}</style>
   </div>
-)
 
-const LevelHeading = props => <SectionHeading>{props.children}</SectionHeading>
+const LevelHeading = props =>
+  <SectionHeading>
+    {props.children}
+  </SectionHeading>
 
-const LevelList = props => (
+const LevelList = props =>
   <div className="list">
     {props.children}
     <style jsx>{`
@@ -94,9 +92,8 @@ const LevelList = props => (
       }
     `}</style>
   </div>
-)
 
-export default withServerProps(_ => (
+export default withServerProps(_ =>
   <Chrome>
     <Content title="Install">
       <PageHeading>Contribute</PageHeading>
@@ -142,6 +139,9 @@ export default withServerProps(_ => (
       <LevelList>
         <LevelHeading>Guide</LevelHeading>
         <Doc>{`
+### Participate in user interviews
+As we create the Design System, we're always looking for people to take part in our user interviews.  We're usually testing a new feature and always looking to gather ideas you have.  Let us know in [#design-system-dev](slack://channel?team=pluralsight&id=design-system-dev) that you're available.
+
 ### Ask for a feature
 Jump on the [Github project](https://github.com/pluralsight/design-system), and let us know what you need from the Design System.  Once we know what you need, we can work with you to make it more helpful to you.
 
@@ -191,4 +191,4 @@ The design group meets together regularly to review the Style Guide and the late
 `}</Doc>
     </Content>
   </Chrome>
-))
+)
