@@ -202,7 +202,15 @@ const mapIconSize = props => {
 }
 
 const rmNonHtmlProps = props => {
-  const { appearance, icon, iconOnly, innerRef, size, ...rest } = props
+  const {
+    appearance,
+    icon,
+    iconAlign,
+    iconOnly,
+    innerRef,
+    size,
+    ...rest
+  } = props
   return rest
 }
 
