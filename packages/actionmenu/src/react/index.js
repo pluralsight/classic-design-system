@@ -8,7 +8,7 @@ import sizeMe from 'react-sizeme'
 
 import Arrow from './arrow'
 
-const origins = {
+export const origins = {
   topLeft: 'topLeft',
   topRight: 'topRight',
   bottomRight: 'bottomRight',
