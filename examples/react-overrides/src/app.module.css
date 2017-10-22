@@ -13,7 +13,8 @@
   font-size: 18px;
   text-align: center;
 }
-h2, h3 {
+h2,
+h3 {
   font-family: var(--psTypeFontFamily);
   font-weight: var(--psTypeFontWeightXLight);
 }
@@ -22,22 +23,6 @@ h2, h3 {
   padding: var(--psLayoutSpacingLarge);
   background: var(--psColorsBone);
   border-radius: 4px;
-}
-
-/* for overriding/composing component styles */
-.buttonOverrideStyleable {
-  background: rebeccapurple;
-  color: #fff;
-  border: 3px solid #fff;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.buttonComposesStyleable {
-  composes: ps-button from "@pluralsight/ps-design-system-button/css/index.module.css";
-  background: green;
-}
-.buttonComposesStyleable:hover {
-  background: limegreen;
 }
 
 .buttonComposeClassName {
