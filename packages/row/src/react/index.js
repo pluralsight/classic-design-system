@@ -6,7 +6,7 @@ import { transparentize } from 'polished'
 
 // import validateComponentType from './validate-component-type'
 
-const sizes = { small: 'small', medium: 'medium' }
+export const sizes = { small: 'small', medium: 'medium' }
 
 const overlaysWidth = '96px'
 const overlaysMarginRight = core.layout.spacingLarge
@@ -38,13 +38,13 @@ const Overlays = glamorous.div({
 })
 
 const renderOverlays = props =>
-  props.image && props.size !== sizes.small ? (
-    <Overlays size={props.size}>
-      {renderImage(props)}
-      {renderFullOverlay(props)}
-      {renderProgress(props)}
-    </Overlays>
-  ) : null
+  props.image && props.size !== sizes.small
+    ? <Overlays size={props.size}>
+        {renderImage(props)}
+        {renderFullOverlay(props)}
+        {renderProgress(props)}
+      </Overlays>
+    : null
 
 const ImageDiv = glamorous.div({
   width: '100%',
@@ -54,9 +54,8 @@ const ImageDiv = glamorous.div({
   backgroundRepeat: 'no-repeat'
 })
 
-const Image = props => (
+const Image = props =>
   <ImageDiv {...props} css={{ backgroundImage: `url(${props.src})` }} />
-)
 Image.displayName = 'Row.Image'
 
 const renderImage = props => (props.image ? props.image : null)
@@ -88,11 +87,11 @@ const FullOverlay = glamorous.div(
 )
 
 const renderFullOverlay = props =>
-  props.fullOverlay ? (
-    <FullOverlay fullOverlayVisible={props.fullOverlayVisible}>
-      {props.fullOverlay}
-    </FullOverlay>
-  ) : null
+  props.fullOverlay
+    ? <FullOverlay fullOverlayVisible={props.fullOverlayVisible}>
+        {props.fullOverlay}
+      </FullOverlay>
+    : null
 
 const styleActionBarFullOverlay = ({ fullOverlay }) =>
   fullOverlay ? { background: 'none' } : {}
@@ -123,9 +122,10 @@ const rmIcon = props => {
   return rest
 }
 
-const ActionBarAction = props => (
-  <ActionButton {...rmIcon(props)}>{props.icon}</ActionButton>
-)
+const ActionBarAction = props =>
+  <ActionButton {...rmIcon(props)}>
+    {props.icon}
+  </ActionButton>
 
 const ActionButton = glamorous.button(
   {
@@ -160,15 +160,15 @@ ActionBarAction.propTypes = {
 }
 
 const renderActionBar = props =>
-  Array.isArray(props.actionBar) && props.actionBar.length > 0 ? (
-    <ActionBar
-      actionBarVisible={props.actionBarVisible}
-      fullOverlay={props.fullOverlay}
-      size={props.size}
-    >
-      {props.actionBar}
-    </ActionBar>
-  ) : null
+  Array.isArray(props.actionBar) && props.actionBar.length > 0
+    ? <ActionBar
+        actionBarVisible={props.actionBarVisible}
+        fullOverlay={props.fullOverlay}
+        size={props.size}
+      >
+        {props.actionBar}
+      </ActionBar>
+    : null
 
 const Progress = glamorous.div({
   position: 'absolute',
@@ -207,14 +207,14 @@ const ProgressBar = glamorous.div(
 )
 
 const renderProgress = props =>
-  props.progress ? (
-    <Progress>
-      <ProgressBar
-        progress={props.progress}
-        aria-label={`${percent(props.progress)} complete`}
-      />
-    </Progress>
-  ) : null
+  props.progress
+    ? <Progress>
+        <ProgressBar
+          progress={props.progress}
+          aria-label={`${percent(props.progress)} complete`}
+        />
+      </Progress>
+    : null
 
 const formatImageWidth = ({ image, size }) =>
   image && size !== sizes.small
@@ -344,18 +344,19 @@ const MetadataDot = glamorous.span({
 })
 
 const renderMetaData = (props, metadata) =>
-  metadata ? (
-    <Metadata size={props.size}>
-      {metadata.map((m, i) => [
-        <MetadataDatum key={`datum${i}`}>{m}</MetadataDatum>,
-        i < metadata.length - 1 && (
-          <MetadataDot aria-hidden={true} key={`dot${i}`}>
-            ·
-          </MetadataDot>
-        )
-      ])}
-    </Metadata>
-  ) : null
+  metadata
+    ? <Metadata size={props.size}>
+        {metadata.map((m, i) => [
+          <MetadataDatum key={`datum${i}`}>
+            {m}
+          </MetadataDatum>,
+          i < metadata.length - 1 &&
+            <MetadataDot aria-hidden={true} key={`dot${i}`}>
+              ·
+            </MetadataDot>
+        ])}
+      </Metadata>
+    : null
 
 const rmNonHtmlProps = props => {
   const {
@@ -374,17 +375,18 @@ const rmNonHtmlProps = props => {
   return rest
 }
 
-const RowComponent = props => (
+const RowComponent = props =>
   <Row {...rmNonHtmlProps(props)} size={props.size}>
     {renderOverlays(props)}
     <Words image={props.image} size={props.size} actionBar={props.actionBar}>
-      <Title size={props.size}>{props.title}</Title>
+      <Title size={props.size}>
+        {props.title}
+      </Title>
       {renderMetaData(props, props.metadata1)}
       {renderMetaData(props, props.metadata2)}
     </Words>
     {renderActionBar(props)}
   </Row>
-)
 
 RowComponent.sizes = sizes
 RowComponent.Text = Text
