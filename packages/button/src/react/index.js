@@ -170,10 +170,13 @@ class Button extends React.Component {
 const styleIconAlignIconContainer = ({ iconAlign }) =>
   iconAlign === iconAligns.right
     ? {
-        marginRight: 0,
-        marginLeft: core.layout.spacingXSmall
+        marginLeft: core.layout.spacingXSmall,
+        marginRight: 0
       }
-    : null
+    : {
+        marginLeft: 0,
+        marginRight: core.layout.spacingXSmall
+      }
 
 const styleIconOnlyIconContainer = ({ iconOnly }) =>
   iconOnly ? { justifyContent: 'center', width: '100%', margin: 0 } : null
@@ -182,8 +185,7 @@ const IconContainer = glamorous.div(
   {
     display: 'flex',
     alignItems: 'center',
-    minHeight: '100%',
-    marginRight: core.layout.spacingXSmall
+    minHeight: '100%'
   },
   styleIconAlignIconContainer,
   styleIconOnlyIconContainer
@@ -218,6 +220,7 @@ const renderIcon = props =>
   props.icon
     ? <IconContainer
         {...rmNonHtmlProps(props)}
+        iconAlign={props.iconAlign}
         iconOnly={React.Children.count(props.children) <= 0}
       >
         {React.cloneElement(props.icon, {
