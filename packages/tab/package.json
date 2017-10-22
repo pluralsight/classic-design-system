@@ -16,7 +16,7 @@
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^3.0.24",
     "glamor": "^2.20.0",
-    "react": ">=0.15.0 < 16.0.0"
+    "react": ">=0.15.0 < 17.0.0"
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.0.2",
