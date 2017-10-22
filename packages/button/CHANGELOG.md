@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="9.1.1"></a>
+## [9.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@9.1.0...@pluralsight/ps-design-system-button@9.1.1) (2017-10-22)
+
+
+### Bug Fixes
+
+* **button:** lessen padding on right if icon aligned on right ([f316a4c](https://github.com/pluralsight/design-system/commit/f316a4c))
+* **button:** put icon margin on correct side when aligned ([b6826c9](https://github.com/pluralsight/design-system/commit/b6826c9))
+
+
+
+
 <a name="9.1.0"></a>
 # [9.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@9.0.5...@pluralsight/ps-design-system-button@9.1.0) (2017-10-22)
 
