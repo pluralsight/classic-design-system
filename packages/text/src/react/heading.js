@@ -2,7 +2,7 @@ import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import React from 'react'
 
-const sizes = {
+export const sizes = {
   smallCaps: 'smallCaps',
   medium: 'medium',
   large: 'large',
