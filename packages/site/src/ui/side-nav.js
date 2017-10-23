@@ -95,9 +95,6 @@ class NavLink extends React.Component {
         </Link>
         {isActive && <InternalLinks headings={this.props.headings} />}
         <style jsx>{`
-          .navLink {
-            padding-left: 14px; /* TODO: how to handle additive spacing scenarios? */
-          }
           .box {
             display: inline-block;
             height: 8px;
