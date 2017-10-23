@@ -19,30 +19,18 @@ import {
 const work = {
   now: [
     {
-      title: 'Track Usage',
-      tags: ['Resources']
+      title: 'Link',
+      tags: ['Component']
+    },
+    {
+      title: 'Prop Type Table',
+      tags: ['Site']
     }
   ],
   next: [
     {
       title: 'Icon Packs Discovery',
       tags: ['Resources']
-    },
-    {
-      title: 'Sketch Libraries',
-      tags: ['Resources']
-    },
-    {
-      title: 'Link',
-      tags: ['Component']
-    },
-    {
-      title: 'Feed',
-      tags: ['Site']
-    },
-    {
-      title: 'Prop Type Table',
-      tags: ['Site']
     },
     {
       title: 'Navigation Updates',
