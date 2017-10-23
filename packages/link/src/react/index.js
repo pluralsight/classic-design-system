@@ -2,21 +2,37 @@ import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import React from 'react'
 
-const linkStyles = glamor.css({
-  color: core.colors.orange,
-  textDecoration: 'none',
-  ':hover': {
-    textDecoration: 'underline'
-  }
-})
+export const appearances = { subtle: 'subtle' }
+
+const style = props =>
+  glamor.css({
+    ':hover': {
+      color: core.colors.orange,
+      textDecoration: 'underline'
+    },
+    ...(({ appearance }) =>
+      appearance === appearances.subtle
+        ? {
+            color: 'currentColor',
+            textDecoration: 'underline'
+          }
+        : {
+            color: core.colors.orange,
+            textDecoration: 'none'
+          })(props)
+  })
 
 const rmChildren = props => {
   const { children, ...rest } = props
   return rest
 }
 
-export default props =>
+const Link = props =>
   React.cloneElement(React.Children.only(props.children), {
-    ...linkStyles,
+    ...style(props),
     ...rmChildren(props)
   })
+
+Link.appearances = appearances
+
+export default Link
