@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots appearance default 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <p
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <a
+      data-css-1skajya=""
+      href="http://duckduckgo.com"
+    >
+      Click me
+    </a>
+  </p>
+</div>
+`;
+
+exports[`Storyshots appearance subtle 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <p
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <a
+      appearance="subtle"
+      data-css-1vzf57m=""
+      href="http://duckduckgo.com"
+    >
+      Click me
+    </a>
+  </p>
+</div>
+`;
