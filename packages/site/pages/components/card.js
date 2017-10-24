@@ -12,6 +12,7 @@ import {
   Link,
   P,
   PageHeading,
+  PropTypes,
   SectionHeading,
   withServerProps
 } from '../../src/ui'
@@ -109,6 +110,123 @@ export default withServerProps(_ => (
       <Code language="javascript">
         import Card from '@pluralsight/ps-design-system-card/react'
       </Code>
+
+      <PropTypes
+        title="Card PropTypes"
+        props={[
+          [
+            'actionBar',
+            <span>
+              <code>Card.Action[]</code>
+            </span>,
+            null,
+            null,
+            'top-right action buttons'
+          ],
+          [
+            'actionBarVisible',
+            'boolean',
+            null,
+            <code>false</code>,
+            'lock action bar on'
+          ],
+          [
+            'bonusBar',
+            'React element',
+            null,
+            null,
+            'freeform space in image bottom-left'
+          ],
+          [
+            'fullOverlay',
+            <code>Card.FullOverlayLink</code>,
+            null,
+            null,
+            'hover state for image'
+          ],
+          [
+            'fullOverlayVisible',
+            'boolean',
+            null,
+            <code>false</code>,
+            'lock full overlay on'
+          ],
+          [
+            'image',
+            <span>
+              <code>Card.Image</code> |
+              <code>Card.ImageLink > a > Card.Image</code>
+            </span>,
+            true,
+            null,
+            'main image or linked image'
+          ],
+          [
+            'metadata1',
+            'string[] | React element[]',
+            null,
+            null,
+            'first row of metadata'
+          ],
+          [
+            'metadata2',
+            'string[] | React element[]',
+            null,
+            null,
+            'second row of metadata'
+          ],
+          ['progress', 'number', null, null, 'progress 0-100'],
+          [
+            'size',
+            PropTypes.union(Card.sizes),
+            null,
+            <code>Card.sizes.medium</code>,
+            'size of card'
+          ],
+          [
+            'tag',
+            <code>Card.Tag</code>,
+            null,
+            null,
+            'categorization label in top-left'
+          ],
+          [
+            'title',
+            <span>
+              <code>Card.TextLink > a > Card.Title</code> |{' '}
+              <code>Card.Title</code>
+            </span>,
+            true,
+            null,
+            'card title or linked title'
+          ]
+        ]}
+      />
+
+      <PropTypes
+        title="Card.Action PropTypes"
+        props={[
+          [
+            'icon',
+            <span>
+              <code>Icon</code>
+            </span>,
+            true,
+            null,
+            'icon representing action'
+          ]
+        ]}
+      />
+
+      <PropTypes
+        title="Card.Image PropTypes"
+        props={[['src', 'string', true, null, 'image url']]}
+      />
+
+      <PropTypes
+        title="Card.Tag PropTypes"
+        props={[['icon', <code>Icon</code>, null, null, 'tag icon']]}
+      />
 
       <SectionHeading>In-app example</SectionHeading>
       <P>

@@ -12,11 +12,12 @@ import {
   Link,
   P,
   PageHeading,
+  PropTypes,
   SectionHeading,
   withServerProps
 } from '../../src/ui'
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Action Menu">
       <PageHeading beta packageName="actionmenu">
@@ -32,6 +33,55 @@ export default withServerProps(_ =>
       <Code language="javascript">
         import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
       </Code>
+
+      <PropTypes
+        title="ActionMenu PropTypes"
+        props={[
+          [
+            'onClose',
+            'function',
+            null,
+            null,
+            'triggered when a menu collapses'
+          ],
+          [
+            'origin',
+            PropTypes.union(ActionMenu.origins),
+            null,
+            <code>ActionMenu.origins.topLeft</code>,
+            'orientation of nested menus'
+          ],
+          [
+            'shouldFocusOnMount',
+            'boolean',
+            null,
+            <code>true</code>,
+            'focus first menu item on render'
+          ]
+        ]}
+      />
+      <PropTypes
+        title="ActionMenu.Item PropTypes"
+        props={[
+          [
+            'iconId',
+            <span>
+              <code>Icon.ids</code> enum
+            </span>,
+            null,
+            null,
+            'id of icon'
+          ],
+          [
+            'isActive',
+            'boolean',
+            null,
+            <code>false</code>,
+            'visually active (set automatically)'
+          ],
+          ['nested', <code>ActionMenu</code>, null, null, 'nested ActionMenu']
+        ]}
+      />
 
       <SectionHeading>Triggers</SectionHeading>
       <P>
@@ -240,4 +290,4 @@ export default withServerProps(_ =>
       </P>
     </Content>
   </Chrome>
-)
+))

@@ -7,6 +7,7 @@ import {
   Example,
   P,
   PageHeading,
+  PropTypes,
   SectionHeading,
   withServerProps
 } from '../../src/ui'
@@ -25,6 +26,18 @@ export default withServerProps(_ => (
       <Code language="javascript">
         import Link from '@pluralsight/ps-design-system-link/react'
       </Code>
+
+      <PropTypes
+        props={[
+          [
+            'appearance',
+            PropTypes.union(Link.appearances),
+            null,
+            null,
+            'visual style'
+          ]
+        ]}
+      />
 
       <SectionHeading>Inline links</SectionHeading>
       <P>

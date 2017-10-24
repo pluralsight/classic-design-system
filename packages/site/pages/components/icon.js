@@ -10,6 +10,7 @@ import {
   Link,
   P,
   PageHeading,
+  PropTypes,
   SectionHeading,
   TextLink,
   withServerProps
@@ -69,6 +70,29 @@ export default withServerProps(_ => (
       <Code language="javascript">
         import Icon from '@pluralsight/ps-design-system-icon/react'
       </Code>
+
+      <PropTypes
+        props={[
+          [
+            'id',
+            <span>
+              <code>Icon.ids</code> enum
+            </span>,
+            true,
+            null,
+            'id for svg to render'
+          ],
+          [
+            'color',
+            <span>
+              <code>Icon.colors</code> enum
+            </span>,
+            null,
+            null,
+            'all flat Core colors'
+          ]
+        ]}
+      />
 
       <SectionHeading>Size</SectionHeading>
       <P>Icons can take on four standard sizes.</P>

@@ -11,6 +11,7 @@ import {
   Link,
   P,
   PageHeading,
+  PropTypes,
   SectionHeading,
   withServerProps
 } from '../../src/ui'
@@ -77,6 +78,103 @@ export default withServerProps(_ => (
       <Code language="javascript">
         import Row from '@pluralsight/ps-design-system-row/react'
       </Code>
+
+      <PropTypes
+        title="Row PropTypes"
+        props={[
+          [
+            'actionBar',
+            <span>
+              <code>Row.Action[]</code>
+            </span>,
+            null,
+            null,
+            'far-right action buttons'
+          ],
+          [
+            'actionBarVisible',
+            'boolean',
+            null,
+            <code>false</code>,
+            'lock action bar on'
+          ],
+          [
+            'fullOverlay',
+            <code>Row.FullOverlayLink</code>,
+            null,
+            null,
+            'hover state for image'
+          ],
+          [
+            'fullOverlayVisible',
+            'boolean',
+            null,
+            <code>false</code>,
+            'lock full overlay on'
+          ],
+          [
+            'image',
+            <span>
+              <code>Row.Image</code> |
+              <code>Row.ImageLink > a > Row.Image</code>
+            </span>,
+            null,
+            null,
+            'main image or linked image'
+          ],
+          [
+            'metadata1',
+            <code>Row.Text, Row.TextLink</code>,
+            null,
+            null,
+            'first row of metadata'
+          ],
+          [
+            'metadata2',
+            <code>Row.Text, Row.TextLink</code>,
+            null,
+            null,
+            'second row of metadata'
+          ],
+          ['progress', 'number', null, null, 'progress 0-100'],
+          [
+            'size',
+            PropTypes.union(Row.sizes),
+            null,
+            <code>Row.sizes.medium</code>,
+            'size of row'
+          ],
+          [
+            'title',
+            <span>
+              <code>Row.TextLink > a > Row.Text</code> | <code>Row.Text</code>
+            </span>,
+            true,
+            null,
+            'row title or linked title'
+          ]
+        ]}
+      />
+
+      <PropTypes
+        title="Row.Action PropTypes"
+        props={[
+          [
+            'icon',
+            <span>
+              <code>Icon</code>
+            </span>,
+            true,
+            null,
+            'icon representing action'
+          ]
+        ]}
+      />
+
+      <PropTypes
+        title="Row.Image PropTypes"
+        props={[['src', 'string', true, null, 'image url']]}
+      />
 
       <SectionHeading>In-app example</SectionHeading>
       <P>

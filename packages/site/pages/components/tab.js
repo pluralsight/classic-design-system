@@ -10,6 +10,7 @@ import {
   Link,
   P,
   PageHeading,
+  PropTypes,
   SectionHeading,
   withServerProps
 } from '../../src/ui'
@@ -80,12 +81,51 @@ export default withServerProps(_ => (
     <Content title="Tab">
       <PageHeading packageName="tab">Tab</PageHeading>
 
+      <PropTypes
+        title="Tab.ListItem PropTypes"
+        props={[
+          [
+            'active',
+            'boolean',
+            null,
+            null,
+            'styled active (automatically set)'
+          ],
+          [
+            'id',
+            <code>string|number</code>,
+            true,
+            null,
+            'id tying list item to panel'
+          ],
+          [
+            'onClick',
+            <code>Event => ()</code>,
+            null,
+            null,
+            'callback when list item clicked'
+          ]
+        ]}
+      />
+
+      <PropTypes
+        title="Tab.Panel PropTypes"
+        props={[
+          [
+            'labelledBy',
+            <code>string|number</code>,
+            true,
+            null,
+            'id tying panel to list item'
+          ]
+        ]}
+      />
+
       <SectionHeading>Tab List</SectionHeading>
       <P>
         Tabs are a navigational element used to show and pivot between related
         subsections of an interface.
       </P>
-
       <Example.React
         orient="vertical"
         includes={{ Tab }}

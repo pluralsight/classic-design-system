@@ -10,6 +10,7 @@ import {
   Link,
   P,
   PageHeading,
+  PropTypes,
   SectionHeading,
   withServerProps
 } from '../../src/ui'
@@ -46,6 +47,18 @@ export default withServerProps(_ => (
 </Text.Heading>
 `
         )}
+      />
+      <PropTypes
+        title="Text.Heading PropTypes"
+        props={[
+          [
+            'size',
+            PropTypes.union(Text.Heading.sizes),
+            null,
+            <code>Text.Heading.sizes.large</code>,
+            'size and style of heading'
+          ]
+        ]}
       />
 
       <SectionHeading>Body text</SectionHeading>
@@ -98,6 +111,19 @@ export default withServerProps(_ => (
   <Text.List.Item>papaya</Text.List.Item>
 </Text.List>
 `
+        ]}
+      />
+
+      <PropTypes
+        title="Text.List PropTypes"
+        props={[
+          [
+            'type',
+            PropTypes.union(Text.List.types),
+            null,
+            'no bullets',
+            'semantics and bullet styles'
+          ]
         ]}
       />
     </Content>
