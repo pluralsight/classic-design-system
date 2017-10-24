@@ -10,11 +10,12 @@ import {
   Link,
   P,
   PageHeading,
+  PropTypes,
   SectionHeading,
   withServerProps
 } from '../../src/ui'
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Button">
       <PageHeading packageName="button">Button</PageHeading>
@@ -29,6 +30,41 @@ export default withServerProps(_ =>
         import Button from '@pluralsight/ps-design-system-button/react'
       </Code>
 
+      <PropTypes
+        props={[
+          [
+            'appearance',
+            PropTypes.union(Button.appearances),
+            null,
+            'orange fill',
+            'visual style'
+          ],
+          [
+            'disabled',
+            'boolean',
+            null,
+            <code>false</code>,
+            'standard input disable flag'
+          ],
+          ['icon', <code>Icon</code>, null, null, 'Icon component'],
+          [
+            'iconAlign',
+            PropTypes.union(Button.iconAligns),
+            null,
+            <code>Button.iconAligns.left</code>,
+            'horizontal icon placement'
+          ],
+          ['innerRef', 'function', null, null, 'react ref callback'],
+          [
+            'size',
+            PropTypes.union(Button.sizes),
+            null,
+            <code>Button.sizes.medium</code>,
+            'button size'
+          ]
+        ]}
+      />
+
       <SectionHeading>Appearance</SectionHeading>
       <P>Buttons come in three standard visual styles.</P>
       <Example.React
@@ -42,7 +78,10 @@ export default withServerProps(_ =>
       />
 
       <SectionHeading>Size</SectionHeading>
-      <P>Buttons come in four standard sizes. The default size is 'medium'.</P>
+      <P>
+        Buttons come in four standard sizes. The default size is 'medium'.jjk
+        3qjjk
+      </P>
       <Example.React
         includes={{ Button, Icon }}
         codes={Object.keys(Button.sizes).map(
@@ -111,4 +150,4 @@ export default withServerProps(_ =>
       />
     </Content>
   </Chrome>
-)
+))
