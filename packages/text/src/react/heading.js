@@ -58,7 +58,7 @@ Heading.propTypes = {
   size: PropTypes.oneOf(Object.keys(sizes))
 }
 Heading.defaultProps = {
-  size: sizes.smallCaps
+  size: sizes.large
 }
 Heading.sizes = sizes
 export default Heading
