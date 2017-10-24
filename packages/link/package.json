@@ -23,7 +23,8 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.0.2"
+    "@pluralsight/ps-design-system-core": "^4.0.2",
+    "prop-types": "^15.6.0"
   },
   "devDependencies": {
     "@storybook/addon-backgrounds": "^3.0.0",

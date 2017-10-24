@@ -1,5 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
+import PropTypes from 'prop-types'
 import React from 'react'
 
 export const appearances = { subtle: 'subtle' }
@@ -34,5 +35,9 @@ const Link = props =>
   })
 
 Link.appearances = appearances
+
+Link.propTypes = {
+  appearances: PropTypes.oneOf(Object.keys(appearances))
+}
 
 export default Link
