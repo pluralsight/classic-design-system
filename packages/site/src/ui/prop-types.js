@@ -1,19 +1,21 @@
+import Badge from '@pluralsight/ps-design-system-badge/react'
 import core from '@pluralsight/ps-design-system-core'
 import PropTypes from 'prop-types'
 
 import { SectionHeading } from './index'
 
-const union = obj => <code>{Object.keys(obj).join('|')}</code>
+const requiredColumnIndex = 2
+
+const union = obj => <code>{Object.keys(obj).join(' | ')}</code>
 
 const Table = props => (
   <div>
-    <SectionHeading>PropTypes</SectionHeading>
+    <SectionHeading>{props.title || 'PropTypes'}</SectionHeading>
     <table className="table">
       <thead className="head">
         <tr className="headRow">
           <th className="headCell">Name</th>
-          <th className="headCell">Type</th>
-          <th className="headCell">Required</th>
+          <th className="headCell">Value</th>
           <th className="headCell">Default</th>
           <th className="headCell">Description</th>
         </tr>
@@ -22,13 +24,23 @@ const Table = props => (
         {props.props.map(row => (
           <tr>
             {row.map(
-              (cell, i) =>
+              (cell, i, rows) =>
                 [
                   <td className="cell name">
                     <code>{cell}</code>
+                    {rows[requiredColumnIndex] ? (
+                      <Badge
+                        appearance={Badge.appearances.stroke}
+                        css={{ marginLeft: core.layout.spacingXXSmall }}
+                      >
+                        Required
+                      </Badge>
+                    ) : (
+                      ''
+                    )}
                   </td>,
                   <td className="cell type">{cell}</td>,
-                  <td className="cell required">{cell}</td>,
+                  null,
                   <td className="cell default">{cell}</td>,
                   <td className="cell description">{cell}</td>
                 ][i]
@@ -56,7 +68,8 @@ const Table = props => (
         padding-bottom: ${core.layout.spacingSmall};
       }
       .cell {
-        padding: ${core.layout.spacingSmall} 0;
+        padding: ${core.layout.spacingSmall} ${core.layout.spacingXXSmall}
+          ${core.layout.spacingSmall} 0;
         border-bottom: 1px solid ${core.colors.gray01};
       }
       .name :global(code) {
@@ -64,6 +77,7 @@ const Table = props => (
       }
       .type :global(code),
       .default :global(code) {
+        white-space: normal;
         color: ${core.colors.blue};
       }
     `}</style>
