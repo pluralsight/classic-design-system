@@ -54,9 +54,13 @@ const ImageDiv = glamorous.div({
   backgroundRepeat: 'no-repeat'
 })
 
-const Image = props =>
+const Image = props => (
   <ImageDiv css={{ backgroundImage: `url(${props.src})` }} />
+)
 Image.displayName = 'Row.Image'
+Image.propTypes = {
+  src: PropTypes.string.isRequired
+}
 
 const FullOverlayLinkSpan = glamorous.span({
   pointerEvents: 'all',
@@ -65,10 +69,9 @@ const FullOverlayLinkSpan = glamorous.span({
     display: 'flex'
   }
 })
-const FullOverlayLink = props =>
-  <FullOverlayLinkSpan>
-    {props.children}
-  </FullOverlayLinkSpan>
+const FullOverlayLink = props => (
+  <FullOverlayLinkSpan>{props.children}</FullOverlayLinkSpan>
+)
 FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
 const Card = glamorous.div(
@@ -136,11 +139,11 @@ const FullOverlay = glamorous.div(
 )
 
 const renderFullOverlay = props =>
-  props.fullOverlay
-    ? <FullOverlay fullOverlayVisible={props.fullOverlayVisible}>
-        {props.fullOverlay}
-      </FullOverlay>
-    : null
+  props.fullOverlay ? (
+    <FullOverlay fullOverlayVisible={props.fullOverlayVisible}>
+      {props.fullOverlay}
+    </FullOverlay>
+  ) : null
 
 const ActionBar = glamorous.div(
   {
@@ -165,10 +168,7 @@ const ActionBar = glamorous.div(
   ({ actionBarVisible }) => (actionBarVisible ? { opacity: 1 } : {})
 )
 
-const ActionBarAction = props =>
-  <ActionButton>
-    {props.icon}
-  </ActionButton>
+const ActionBarAction = props => <ActionButton>{props.icon}</ActionButton>
 
 const ActionButton = glamorous.button(
   {
@@ -204,15 +204,15 @@ ActionBarAction.propTypes = {
 }
 
 const renderActionBar = props =>
-  Array.isArray(props.actionBar) && props.actionBar.length > 0
-    ? <ActionBar
-        actionBarVisible={props.actionBarVisible}
-        fullOverlay={props.fullOverlay}
-        fullOverlayVisible={props.fullOverlayVisible}
-      >
-        {props.actionBar}
-      </ActionBar>
-    : null
+  Array.isArray(props.actionBar) && props.actionBar.length > 0 ? (
+    <ActionBar
+      actionBarVisible={props.actionBarVisible}
+      fullOverlay={props.fullOverlay}
+      fullOverlayVisible={props.fullOverlayVisible}
+    >
+      {props.actionBar}
+    </ActionBar>
+  ) : null
 
 const BonusBar = glamorous.div({
   position: 'absolute',
@@ -222,11 +222,7 @@ const BonusBar = glamorous.div({
 })
 
 const renderBonusBar = props =>
-  props.bonusBar
-    ? <BonusBar>
-        {props.bonusBar}
-      </BonusBar>
-    : null
+  props.bonusBar ? <BonusBar>{props.bonusBar}</BonusBar> : null
 
 const TagDiv = glamorous.div({
   display: 'flex',
@@ -249,17 +245,20 @@ const TagIcon = glamorous.div({
   marginRight: core.layout.spacingXSmall
 })
 
-const Tag = props =>
+const Tag = props => (
   <TagDiv>
-    {props.icon &&
+    {props.icon && (
       <TagIcon>
         {React.cloneElement(props.icon, { size: Icon.sizes.small })}
-      </TagIcon>}
-    <span>
-      {props.children}
-    </span>
+      </TagIcon>
+    )}
+    <span>{props.children}</span>
   </TagDiv>
+)
 Tag.displayName = 'Card.Tag'
+Tag.propTypes = {
+  icon: PropTypes.element
+}
 
 const renderTag = props =>
   props.tag && props.size !== 'small' ? props.tag : null
@@ -299,14 +298,14 @@ const ProgressBar = glamorous.div(
 )
 
 const renderProgress = props =>
-  props.progress
-    ? <Progress>
-        <ProgressBar
-          progress={props.progress}
-          aria-label={`${percent(props.progress)} complete`}
-        />
-      </Progress>
-    : null
+  props.progress ? (
+    <Progress>
+      <ProgressBar
+        progress={props.progress}
+        aria-label={`${percent(props.progress)} complete`}
+      />
+    </Progress>
+  ) : null
 
 const TitleDiv = glamorous.div(
   {
@@ -336,9 +335,7 @@ const TitleDiv = glamorous.div(
 const Title = props => {
   return (
     <TitleDiv size={props.size}>
-      <Shiitake lines={2}>
-        {props.children}
-      </Shiitake>
+      <Shiitake lines={2}>{props.children}</Shiitake>
     </TitleDiv>
   )
 }
@@ -377,26 +374,25 @@ const MetadataDot = glamorous.span({
 })
 
 const renderMetaData = (props, metadata) =>
-  metadata
-    ? <Metadata size={props.size}>
-        {metadata.map((m, i) => [
-          <MetadataDatum key={`datum${i}`}>
-            {m}
-          </MetadataDatum>,
-          i < metadata.length - 1 &&
-            <MetadataDot aria-hidden={true} key={`dot${i}`}>
-              ·
-            </MetadataDot>
-        ])}
-      </Metadata>
-    : null
+  metadata ? (
+    <Metadata size={props.size}>
+      {metadata.map((m, i) => [
+        <MetadataDatum key={`datum${i}`}>{m}</MetadataDatum>,
+        i < metadata.length - 1 && (
+          <MetadataDot aria-hidden={true} key={`dot${i}`}>
+            ·
+          </MetadataDot>
+        )
+      ])}
+    </Metadata>
+  ) : null
 
 const renderTitle = props =>
   React.cloneElement(props.title, {
     size: props.size
   })
 
-const CardComponent = props =>
+const CardComponent = props => (
   <Card
     style={props.style}
     css={props.css}
@@ -415,6 +411,7 @@ const CardComponent = props =>
     {renderMetaData(props, props.metadata1)}
     {renderMetaData(props, props.metadata2)}
   </Card>
+)
 
 CardComponent.Action = ActionBarAction
 CardComponent.FullOverlayLink = FullOverlayLink
