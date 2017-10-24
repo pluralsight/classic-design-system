@@ -1,7 +1,15 @@
 # Change Log
 
 All notable changes to this project will be documented in this file.
-See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="7.2.1"></a>
+## [7.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@7.2.0...@pluralsight/ps-design-system-card@7.2.1) (2017-10-24)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-card
 
 <a name="7.2.0"></a>
 # [7.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@7.1.3...@pluralsight/ps-design-system-card@7.2.0) (2017-10-22)

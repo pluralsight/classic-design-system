@@ -1,7 +1,23 @@
 # Change Log
 
 All notable changes to this project will be documented in this file.
-See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="9.3.0"></a>
+# [9.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.2.0...@pluralsight/ps-design-system-site@9.3.0) (2017-10-24)
+
+
+### Bug Fixes
+
+* **site:** rollback to react@15 and next@3 ([d362747](https://github.com/pluralsight/design-system/commit/d362747))
+
+
+### Features
+
+* **site:** button proptypes table ([7adcb02](https://github.com/pluralsight/design-system/commit/7adcb02))
+
+
+
 
 <a name="9.2.0"></a>
 # [9.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.1.2...@pluralsight/ps-design-system-site@9.2.0) (2017-10-23)
