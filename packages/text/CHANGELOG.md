@@ -1,7 +1,18 @@
 # Change Log
 
 All notable changes to this project will be documented in this file.
-See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="10.2.1"></a>
+## [10.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.2.0...@pluralsight/ps-design-system-text@10.2.1) (2017-10-24)
+
+
+### Bug Fixes
+
+* **text:** change heading back to proper large default ([6aa7460](https://github.com/pluralsight/design-system/commit/6aa7460))
+
+
+
 
 <a name="10.2.0"></a>
 # [10.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.1.0...@pluralsight/ps-design-system-text@10.2.0) (2017-10-22)

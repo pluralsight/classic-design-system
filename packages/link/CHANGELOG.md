@@ -1,7 +1,18 @@
 # Change Log
 
 All notable changes to this project will be documented in this file.
-See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="5.3.0"></a>
+# [5.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@5.2.0...@pluralsight/ps-design-system-link@5.3.0) (2017-10-24)
+
+
+### Features
+
+* **link:** add proptypes ([6ef5ba6](https://github.com/pluralsight/design-system/commit/6ef5ba6))
+
+
+
 
 <a name="5.2.0"></a>
 # [5.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@5.1.0...@pluralsight/ps-design-system-link@5.2.0) (2017-10-23)

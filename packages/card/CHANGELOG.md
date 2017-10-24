@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="7.3.0"></a>
+# [7.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@7.2.1...@pluralsight/ps-design-system-card@7.3.0) (2017-10-24)
+
+
+### Features
+
+* **card:** add missing proptypes ([0c4d8f2](https://github.com/pluralsight/design-system/commit/0c4d8f2))
+
+
+
+
 <a name="7.2.1"></a>
 ## [7.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@7.2.0...@pluralsight/ps-design-system-card@7.2.1) (2017-10-24)
 
