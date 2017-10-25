@@ -18,7 +18,7 @@ exports[`Storyshots appearance stroke 1`] = `
   }
 >
   <div
-    className="css-1ns3hj9"
+    className="css-18uz01l"
   >
     stroke Badge
   </div>
@@ -43,7 +43,7 @@ exports[`Storyshots color blue 1`] = `
   }
 >
   <div
-    className="css-1k6yxql"
+    className="css-qko9jh"
   >
     blue Badge
   </div>
@@ -68,7 +68,7 @@ exports[`Storyshots color blue stroke 1`] = `
   }
 >
   <div
-    className="css-1c9tjbq"
+    className="css-1nf2brk"
   >
     blue stroke Badge
   </div>
@@ -93,7 +93,7 @@ exports[`Storyshots color gray 1`] = `
   }
 >
   <div
-    className="css-ebyhko"
+    className="css-1rwlq8b"
   >
     gray Badge
   </div>
@@ -118,7 +118,7 @@ exports[`Storyshots color gray stroke 1`] = `
   }
 >
   <div
-    className="css-1ns3hj9"
+    className="css-18uz01l"
   >
     gray stroke Badge
   </div>
@@ -143,7 +143,7 @@ exports[`Storyshots color green 1`] = `
   }
 >
   <div
-    className="css-731l77"
+    className="css-eqw0k5"
   >
     green Badge
   </div>
@@ -168,7 +168,7 @@ exports[`Storyshots color green stroke 1`] = `
   }
 >
   <div
-    className="css-h74tif"
+    className="css-1ijjyd4"
   >
     green stroke Badge
   </div>
@@ -193,7 +193,7 @@ exports[`Storyshots color red 1`] = `
   }
 >
   <div
-    className="css-k8xkm0"
+    className="css-6kw6e4"
   >
     red Badge
   </div>
@@ -218,7 +218,7 @@ exports[`Storyshots color red stroke 1`] = `
   }
 >
   <div
-    className="css-16g22id"
+    className="css-1en6ax5"
   >
     red stroke Badge
   </div>
@@ -243,7 +243,7 @@ exports[`Storyshots color yellow 1`] = `
   }
 >
   <div
-    className="css-svwlyj"
+    className="css-y1rz6v"
   >
     yellow Badge
   </div>
@@ -268,7 +268,7 @@ exports[`Storyshots color yellow stroke 1`] = `
   }
 >
   <div
-    className="css-1lahp9y"
+    className="css-10iae72"
   >
     yellow stroke Badge
   </div>
