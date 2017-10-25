@@ -1,0 +1,386 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Heading className override 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <h2
+    className={
+      Object {
+        "data-css-3sgfk1": "",
+      }
+    }
+    data-css-nzo8hv=""
+    size="large"
+  >
+    orange
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Heading size: large 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <h1
+    className={undefined}
+    data-css-nzo8hv=""
+    size="large"
+  >
+    large
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Heading size: medium 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <h1
+    className={undefined}
+    data-css-1a4fjca=""
+    size="medium"
+  >
+    medium
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Heading size: smallCaps 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <h1
+    className={undefined}
+    data-css-1napy4i=""
+    size="smallCaps"
+  >
+    smallCaps
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Heading size: xLarge 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <h1
+    className={undefined}
+    data-css-1oiesip=""
+    size="xLarge"
+  >
+    xLarge
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Heading style override 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <h2
+    className={undefined}
+    data-css-nzo8hv=""
+    size="large"
+    style={
+      Object {
+        "color": "#e80a89",
+      }
+    }
+  >
+    pink
+  </h2>
+</div>
+`;
+
+exports[`Storyshots List type: bulleted 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <ul
+    className={
+      Object {
+        "data-css-15u3tan": "",
+      }
+    }
+  >
+    <li>
+      one
+    </li>
+    <li>
+      two
+    </li>
+    <li>
+      three
+    </li>
+    <li>
+      four
+    </li>
+    <li>
+      five
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots List type: numbered 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <ol
+    className={
+      Object {
+        "data-css-1lj4q5g": "",
+      }
+    }
+  >
+    <li>
+      one
+    </li>
+    <li>
+      two
+    </li>
+    <li>
+      three
+    </li>
+    <li>
+      four
+    </li>
+    <li>
+      five
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`Storyshots List vanilla 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <ul
+    className={
+      Object {
+        "data-css-npip9x": "",
+      }
+    }
+  >
+    <li>
+      one
+    </li>
+    <li>
+      two
+    </li>
+    <li>
+      three
+    </li>
+    <li>
+      four
+    </li>
+    <li>
+      five
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots P className override 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <p
+    className={
+      Object {
+        "data-css-3sgfk1": "",
+      }
+    }
+    data-css-150fsm1=""
+  >
+    orange
+  </p>
+</div>
+`;
+
+exports[`Storyshots P style override 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <p
+    data-css-150fsm1=""
+    style={
+      Object {
+        "color": "#e80a89",
+      }
+    }
+  >
+    pink
+  </p>
+</div>
+`;
+
+exports[`Storyshots P vanilla 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <p
+    data-css-150fsm1=""
+  >
+    lorem ipsum
+  </p>
+</div>
+`;
