@@ -36,8 +36,10 @@ export default withServerProps(_ => (
             'appearance',
             PropTypes.union(Button.appearances),
             null,
-            'orange fill',
-            'visual style'
+            <code>primary</code>,
+            <span>
+              visual style (from <code>Button.appearances</code>)
+            </span>
           ]),
           PropTypes.row([
             'disabled',
