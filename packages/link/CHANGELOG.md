@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.4.0"></a>
+# [5.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@5.3.0...@pluralsight/ps-design-system-link@5.4.0) (2017-10-25)
+
+
+### Bug Fixes
+
+* **link:** don't put appearance prop on dom element ([3b17c4d](https://github.com/pluralsight/design-system/commit/3b17c4d))
+
+
+### Features
+
+* **link:** add explicit default appearance ([7bda8cd](https://github.com/pluralsight/design-system/commit/7bda8cd))
+
+
+
+
 <a name="5.3.0"></a>
 # [5.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@5.2.0...@pluralsight/ps-design-system-link@5.3.0) (2017-10-24)
 

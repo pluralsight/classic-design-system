@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.5.0"></a>
+# [9.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.4.0...@pluralsight/ps-design-system-site@9.5.0) (2017-10-25)
+
+
+### Bug Fixes
+
+* **site:** add misssing link page ([26b6e5e](https://github.com/pluralsight/design-system/commit/26b6e5e))
+* **site:** add react key to proptypes table ([d09ef03](https://github.com/pluralsight/design-system/commit/d09ef03))
+* **site:** dont query webengage node until dom loaded ([5c73294](https://github.com/pluralsight/design-system/commit/5c73294))
+* **site:** remove webengage ([80291bb](https://github.com/pluralsight/design-system/commit/80291bb))
+* **site:** repaste webengage to avoid d is not null error ([3fc38bd](https://github.com/pluralsight/design-system/commit/3fc38bd))
+* **site:** wrap webengage in domcontentloaded ([f9a1bb2](https://github.com/pluralsight/design-system/commit/f9a1bb2))
+
+
+### Features
+
+* **badge:** add explicit default appearance ([55d81cb](https://github.com/pluralsight/design-system/commit/55d81cb))
+* **link:** add explicit default appearance ([7bda8cd](https://github.com/pluralsight/design-system/commit/7bda8cd))
+* **text:** add explicit default list type ([5330e8a](https://github.com/pluralsight/design-system/commit/5330e8a))
+
+
+
+
 <a name="9.4.0"></a>
 # [9.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.3.0...@pluralsight/ps-design-system-site@9.4.0) (2017-10-24)
 
