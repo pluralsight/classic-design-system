@@ -76,7 +76,8 @@ const Table = props => (
         color: ${core.colors.pink};
       }
       .type :global(code),
-      .default :global(code) {
+      .default :global(code),
+      .description :global(code) {
         white-space: normal;
         color: ${core.colors.blue};
       }

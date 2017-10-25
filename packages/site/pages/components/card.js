@@ -180,8 +180,10 @@ export default withServerProps(_ => (
             'size',
             PropTypes.union(Card.sizes),
             null,
-            <code>Card.sizes.medium</code>,
-            'size of card'
+            <code>medium</code>,
+            <span>
+              size of card (from <code>Card.sizes</code>)
+            </span>
           ]),
           PropTypes.row([
             'tag',

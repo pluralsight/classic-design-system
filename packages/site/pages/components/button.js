@@ -57,8 +57,10 @@ export default withServerProps(_ => (
             'iconAlign',
             PropTypes.union(Button.iconAligns),
             null,
-            <code>Button.iconAligns.left</code>,
-            'horizontal icon placement'
+            <code>left</code>,
+            <span>
+              horizontal icon placement (from <code>Button.iconAligns</code>)
+            </span>
           ]),
           PropTypes.row([
             'innerRef',
@@ -71,8 +73,10 @@ export default withServerProps(_ => (
             'size',
             PropTypes.union(Button.sizes),
             null,
-            <code>Button.sizes.medium</code>,
-            'button size'
+            <code>medium</code>,
+            <span>
+              button size (from <code>Button.sizes</code>)
+            </span>
           ])
         ]}
       />

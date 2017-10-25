@@ -45,8 +45,10 @@ export default withServerProps(_ => (
             'color',
             PropTypes.union(Badge.colors),
             null,
-            <code>Badge.colors.gray</code>,
-            'badge color'
+            <code>gray</code>,
+            <span>
+              badge color (from <code>Badge.colors</code>)
+            </span>
           ])
         ]}
       />

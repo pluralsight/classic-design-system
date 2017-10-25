@@ -48,8 +48,10 @@ export default withServerProps(_ => (
             'origin',
             PropTypes.union(ActionMenu.origins),
             null,
-            <code>ActionMenu.origins.topLeft</code>,
-            'orientation of nested menus'
+            <code>topLeft</code>,
+            <span>
+              orientation (from <code>ActionMenu.origins</code>) of nested menus
+            </span>
           ]),
           PropTypes.row([
             'shouldFocusOnMount',

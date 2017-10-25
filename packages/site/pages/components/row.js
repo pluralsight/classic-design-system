@@ -141,8 +141,10 @@ export default withServerProps(_ => (
             'size',
             PropTypes.union(Row.sizes),
             null,
-            <code>Row.sizes.medium</code>,
-            'size of row'
+            <code>medium</code>,
+            <span>
+              size of row (from <code>Row.sizes</code>)
+            </span>
           ]),
           PropTypes.row([
             'title',

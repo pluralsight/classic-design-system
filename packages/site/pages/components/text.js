@@ -55,8 +55,10 @@ export default withServerProps(_ => (
             'size',
             PropTypes.union(Text.Heading.sizes),
             null,
-            <code>Text.Heading.sizes.large</code>,
-            'size and style of heading'
+            <code>large</code>,
+            <span>
+              size and style of heading (from <code>Text.Heading.sizes</code>)
+            </span>
           ])
         ]}
       />
