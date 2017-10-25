@@ -84,40 +84,40 @@ export default withServerProps(_ => (
       <PropTypes
         title="Tab.ListItem PropTypes"
         props={[
-          [
+          PropTypes.row([
             'active',
             'boolean',
             null,
             null,
             'styled active (automatically set)'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'id',
             <code>string|number</code>,
             true,
             null,
             'id tying list item to panel'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'onClick',
             <code>Event => ()</code>,
             null,
             null,
             'callback when list item clicked'
-          ]
+          ])
         ]}
       />
 
       <PropTypes
         title="Tab.Panel PropTypes"
         props={[
-          [
+          PropTypes.row([
             'labelledBy',
             <code>string|number</code>,
             true,
             null,
             'id tying panel to list item'
-          ]
+          ])
         ]}
       />
 

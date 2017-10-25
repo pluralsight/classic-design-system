@@ -29,13 +29,13 @@ export default withServerProps(_ => (
 
       <PropTypes
         props={[
-          [
+          PropTypes.row([
             'appearance',
             PropTypes.union(Link.appearances),
             null,
             null,
             'visual style'
-          ]
+          ])
         ]}
       />
 

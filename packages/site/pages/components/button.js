@@ -32,36 +32,48 @@ export default withServerProps(_ => (
 
       <PropTypes
         props={[
-          [
+          PropTypes.row([
             'appearance',
             PropTypes.union(Button.appearances),
             null,
             'orange fill',
             'visual style'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'disabled',
             'boolean',
             null,
             <code>false</code>,
             'standard input disable flag'
-          ],
-          ['icon', <code>Icon</code>, null, null, 'Icon component'],
-          [
+          ]),
+          PropTypes.row([
+            'icon',
+            <code>Icon</code>,
+            null,
+            null,
+            'Icon component'
+          ]),
+          PropTypes.row([
             'iconAlign',
             PropTypes.union(Button.iconAligns),
             null,
             <code>Button.iconAligns.left</code>,
             'horizontal icon placement'
-          ],
-          ['innerRef', 'function', null, null, 'react ref callback'],
-          [
+          ]),
+          PropTypes.row([
+            'innerRef',
+            'function',
+            null,
+            null,
+            'react ref callback'
+          ]),
+          PropTypes.row([
             'size',
             PropTypes.union(Button.sizes),
             null,
             <code>Button.sizes.medium</code>,
             'button size'
-          ]
+          ])
         ]}
       />
 

@@ -4,9 +4,15 @@ import PropTypes from 'prop-types'
 
 import { SectionHeading } from './index'
 
-const requiredColumnIndex = 2
-
 const union = obj => <code>{Object.keys(obj).join(' | ')}</code>
+
+const row = ([name, value, required, defaultValue, description]) => ({
+  name,
+  value,
+  required,
+  defaultValue,
+  description
+})
 
 const Table = props => (
   <div>
@@ -23,34 +29,22 @@ const Table = props => (
       <tbody>
         {props.props.map((row, i) => (
           <tr key={i}>
-            {row.map(
-              (cell, i, rows) =>
-                [
-                  <td className="cell name" key={i}>
-                    <code>{cell}</code>
-                    {rows[requiredColumnIndex] ? (
-                      <Badge
-                        appearance={Badge.appearances.stroke}
-                        css={{ marginLeft: core.layout.spacingXXSmall }}
-                      >
-                        Required
-                      </Badge>
-                    ) : (
-                      ''
-                    )}
-                  </td>,
-                  <td className="cell type" key={i}>
-                    {cell}
-                  </td>,
-                  null,
-                  <td className="cell default" key={i}>
-                    {cell}
-                  </td>,
-                  <td className="cell description" key={i}>
-                    {cell}
-                  </td>
-                ][i]
-            )}
+            <td className="cell name">
+              <code>{row.name}</code>
+              {row.required ? (
+                <Badge
+                  appearance={Badge.appearances.stroke}
+                  css={{ marginLeft: core.layout.spacingXXSmall }}
+                >
+                  Required
+                </Badge>
+              ) : (
+                ''
+              )}
+            </td>
+            <td className="cell type">{row.value}</td>
+            <td className="cell default">{row.defaultValue}</td>
+            <td className="cell description">{row.description}</td>
           </tr>
         ))}
       </tbody>
@@ -91,11 +85,10 @@ const Table = props => (
 )
 
 Table.propTypes = {
-  props: PropTypes.arrayOf(
-    PropTypes.array // TODO: try to type each element
-  )
+  props: PropTypes.arrayOf(PropTypes.object)
 }
 
+Table.row = row
 Table.union = union
 
 export default Table

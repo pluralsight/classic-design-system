@@ -51,13 +51,13 @@ export default withServerProps(_ => (
       <PropTypes
         title="Text.Heading PropTypes"
         props={[
-          [
+          PropTypes.row([
             'size',
             PropTypes.union(Text.Heading.sizes),
             null,
             <code>Text.Heading.sizes.large</code>,
             'size and style of heading'
-          ]
+          ])
         ]}
       />
 
@@ -117,13 +117,13 @@ export default withServerProps(_ => (
       <PropTypes
         title="Text.List PropTypes"
         props={[
-          [
+          PropTypes.row([
             'type',
             PropTypes.union(Text.List.types),
             null,
             'no bullets',
             'semantics and bullet styles'
-          ]
+          ])
         ]}
       />
     </Content>

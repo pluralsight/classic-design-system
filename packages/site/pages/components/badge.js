@@ -34,20 +34,20 @@ export default withServerProps(_ => (
       <PropTypes
         title="PropTypes"
         props={[
-          [
+          PropTypes.row([
             'appearance',
             PropTypes.union(Badge.appearances),
             null,
             'solid gray03',
             'visual style'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'color',
             PropTypes.union(Badge.colors),
             null,
             <code>Badge.colors.gray</code>,
             'badge color'
-          ]
+          ])
         ]}
       />
 

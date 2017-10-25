@@ -37,33 +37,33 @@ export default withServerProps(_ => (
       <PropTypes
         title="ActionMenu PropTypes"
         props={[
-          [
+          PropTypes.row([
             'onClose',
             'function',
             null,
             null,
             'triggered when a menu collapses'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'origin',
             PropTypes.union(ActionMenu.origins),
             null,
             <code>ActionMenu.origins.topLeft</code>,
             'orientation of nested menus'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'shouldFocusOnMount',
             'boolean',
             null,
             <code>true</code>,
             'focus first menu item on render'
-          ]
+          ])
         ]}
       />
       <PropTypes
         title="ActionMenu.Item PropTypes"
         props={[
-          [
+          PropTypes.row([
             'iconId',
             <span>
               <code>Icon.ids</code> enum
@@ -71,15 +71,21 @@ export default withServerProps(_ => (
             null,
             null,
             'id of icon'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'isActive',
             'boolean',
             null,
             <code>false</code>,
             'visually active (set automatically)'
-          ],
-          ['nested', <code>ActionMenu</code>, null, null, 'nested ActionMenu']
+          ]),
+          PropTypes.row([
+            'nested',
+            <code>ActionMenu</code>,
+            null,
+            null,
+            'nested ActionMenu'
+          ])
         ]}
       />
 

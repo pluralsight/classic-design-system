@@ -82,7 +82,7 @@ export default withServerProps(_ => (
       <PropTypes
         title="Row PropTypes"
         props={[
-          [
+          PropTypes.row([
             'actionBar',
             <span>
               <code>Row.Action[]</code>
@@ -90,29 +90,29 @@ export default withServerProps(_ => (
             null,
             null,
             'far-right action buttons'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'actionBarVisible',
             'boolean',
             null,
             <code>false</code>,
             'lock action bar on'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'fullOverlay',
             <code>Row.FullOverlayLink</code>,
             null,
             null,
             'hover state for image'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'fullOverlayVisible',
             'boolean',
             null,
             <code>false</code>,
             'lock full overlay on'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'image',
             <span>
               <code>Row.Image</code> |
@@ -121,30 +121,30 @@ export default withServerProps(_ => (
             null,
             null,
             'main image or linked image'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'metadata1',
             <code>Row.Text, Row.TextLink</code>,
             null,
             null,
             'first row of metadata'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'metadata2',
             <code>Row.Text, Row.TextLink</code>,
             null,
             null,
             'second row of metadata'
-          ],
-          ['progress', 'number', null, null, 'progress 0-100'],
-          [
+          ]),
+          PropTypes.row(['progress', 'number', null, null, 'progress 0-100']),
+          PropTypes.row([
             'size',
             PropTypes.union(Row.sizes),
             null,
             <code>Row.sizes.medium</code>,
             'size of row'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'title',
             <span>
               <code>Row.TextLink > a > Row.Text</code> | <code>Row.Text</code>
@@ -152,14 +152,14 @@ export default withServerProps(_ => (
             true,
             null,
             'row title or linked title'
-          ]
+          ])
         ]}
       />
 
       <PropTypes
         title="Row.Action PropTypes"
         props={[
-          [
+          PropTypes.row([
             'icon',
             <span>
               <code>Icon</code>
@@ -167,13 +167,13 @@ export default withServerProps(_ => (
             true,
             null,
             'icon representing action'
-          ]
+          ])
         ]}
       />
 
       <PropTypes
         title="Row.Image PropTypes"
-        props={[['src', 'string', true, null, 'image url']]}
+        props={[PropTypes.row(['src', 'string', true, null, 'image url'])]}
       />
 
       <SectionHeading>In-app example</SectionHeading>

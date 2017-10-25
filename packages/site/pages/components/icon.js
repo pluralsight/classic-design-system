@@ -73,7 +73,7 @@ export default withServerProps(_ => (
 
       <PropTypes
         props={[
-          [
+          PropTypes.row([
             'id',
             <span>
               <code>Icon.ids</code> enum
@@ -81,8 +81,8 @@ export default withServerProps(_ => (
             true,
             null,
             'id for svg to render'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'color',
             <span>
               <code>Icon.colors</code> enum
@@ -90,7 +90,7 @@ export default withServerProps(_ => (
             null,
             null,
             'all flat Core colors'
-          ]
+          ])
         ]}
       />
 

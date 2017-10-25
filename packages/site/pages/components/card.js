@@ -114,7 +114,7 @@ export default withServerProps(_ => (
       <PropTypes
         title="Card PropTypes"
         props={[
-          [
+          PropTypes.row([
             'actionBar',
             <span>
               <code>Card.Action[]</code>
@@ -122,36 +122,36 @@ export default withServerProps(_ => (
             null,
             null,
             'top-right action buttons'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'actionBarVisible',
             'boolean',
             null,
             <code>false</code>,
             'lock action bar on'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'bonusBar',
             'React element',
             null,
             null,
             'freeform space in image bottom-left'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'fullOverlay',
             <code>Card.FullOverlayLink</code>,
             null,
             null,
             'hover state for image'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'fullOverlayVisible',
             'boolean',
             null,
             <code>false</code>,
             'lock full overlay on'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'image',
             <span>
               <code>Card.Image</code> |
@@ -160,37 +160,37 @@ export default withServerProps(_ => (
             true,
             null,
             'main image or linked image'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'metadata1',
             'string[] | React element[]',
             null,
             null,
             'first row of metadata'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'metadata2',
             'string[] | React element[]',
             null,
             null,
             'second row of metadata'
-          ],
-          ['progress', 'number', null, null, 'progress 0-100'],
-          [
+          ]),
+          PropTypes.row(['progress', 'number', null, null, 'progress 0-100']),
+          PropTypes.row([
             'size',
             PropTypes.union(Card.sizes),
             null,
             <code>Card.sizes.medium</code>,
             'size of card'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'tag',
             <code>Card.Tag</code>,
             null,
             null,
             'categorization label in top-left'
-          ],
-          [
+          ]),
+          PropTypes.row([
             'title',
             <span>
               <code>Card.TextLink > a > Card.Title</code> |{' '}
@@ -199,14 +199,14 @@ export default withServerProps(_ => (
             true,
             null,
             'card title or linked title'
-          ]
+          ])
         ]}
       />
 
       <PropTypes
         title="Card.Action PropTypes"
         props={[
-          [
+          PropTypes.row([
             'icon',
             <span>
               <code>Icon</code>
@@ -214,18 +214,20 @@ export default withServerProps(_ => (
             true,
             null,
             'icon representing action'
-          ]
+          ])
         ]}
       />
 
       <PropTypes
         title="Card.Image PropTypes"
-        props={[['src', 'string', true, null, 'image url']]}
+        props={[PropTypes.row(['src', 'string', true, null, 'image url'])]}
       />
 
       <PropTypes
         title="Card.Tag PropTypes"
-        props={[['icon', <code>Icon</code>, null, null, 'tag icon']]}
+        props={[
+          PropTypes.row(['icon', <code>Icon</code>, null, null, 'tag icon'])
+        ]}
       />
 
       <SectionHeading>In-app example</SectionHeading>
