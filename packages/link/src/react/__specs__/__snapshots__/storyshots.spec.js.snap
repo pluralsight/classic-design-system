@@ -59,7 +59,6 @@ exports[`Storyshots appearance subtle 1`] = `
     }
   >
     <a
-      appearance="subtle"
       data-css-1vzf57m=""
       href="http://duckduckgo.com"
     >
