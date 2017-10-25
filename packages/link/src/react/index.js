@@ -23,15 +23,15 @@ const style = props =>
           })(props)
   })
 
-const rmChildren = props => {
-  const { children, ...rest } = props
+const rmNonHtmlProps = props => {
+  const { appearance, children, ...rest } = props
   return rest
 }
 
 const Link = props =>
   React.cloneElement(React.Children.only(props.children), {
     ...style(props),
-    ...rmChildren(props)
+    ...rmNonHtmlProps(props)
   })
 
 Link.appearances = appearances
