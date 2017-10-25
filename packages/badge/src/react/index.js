@@ -3,7 +3,7 @@ import glamorous from 'glamorous'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const appearances = { stroke: 'stroke' }
+const appearances = { default: 'default', stroke: 'stroke' }
 const colors = {
   gray: 'gray',
   green: 'green',

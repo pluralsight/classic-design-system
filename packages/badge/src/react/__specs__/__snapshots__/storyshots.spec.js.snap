@@ -1,5 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots appearance default 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <div
+    className="css-1rwlq8b"
+  >
+    default Badge
+  </div>
+</div>
+`;
+
 exports[`Storyshots appearance stroke 1`] = `
 <div
   style={
@@ -25,7 +50,7 @@ exports[`Storyshots appearance stroke 1`] = `
 </div>
 `;
 
-exports[`Storyshots color blue 1`] = `
+exports[`Storyshots color blue default 1`] = `
 <div
   style={
     Object {
@@ -45,7 +70,7 @@ exports[`Storyshots color blue 1`] = `
   <div
     className="css-qko9jh"
   >
-    blue Badge
+    blue default Badge
   </div>
 </div>
 `;
@@ -75,7 +100,7 @@ exports[`Storyshots color blue stroke 1`] = `
 </div>
 `;
 
-exports[`Storyshots color gray 1`] = `
+exports[`Storyshots color gray default 1`] = `
 <div
   style={
     Object {
@@ -95,7 +120,7 @@ exports[`Storyshots color gray 1`] = `
   <div
     className="css-1rwlq8b"
   >
-    gray Badge
+    gray default Badge
   </div>
 </div>
 `;
@@ -125,7 +150,7 @@ exports[`Storyshots color gray stroke 1`] = `
 </div>
 `;
 
-exports[`Storyshots color green 1`] = `
+exports[`Storyshots color green default 1`] = `
 <div
   style={
     Object {
@@ -145,7 +170,7 @@ exports[`Storyshots color green 1`] = `
   <div
     className="css-eqw0k5"
   >
-    green Badge
+    green default Badge
   </div>
 </div>
 `;
@@ -175,7 +200,7 @@ exports[`Storyshots color green stroke 1`] = `
 </div>
 `;
 
-exports[`Storyshots color red 1`] = `
+exports[`Storyshots color red default 1`] = `
 <div
   style={
     Object {
@@ -195,7 +220,7 @@ exports[`Storyshots color red 1`] = `
   <div
     className="css-6kw6e4"
   >
-    red Badge
+    red default Badge
   </div>
 </div>
 `;
@@ -225,7 +250,7 @@ exports[`Storyshots color red stroke 1`] = `
 </div>
 `;
 
-exports[`Storyshots color yellow 1`] = `
+exports[`Storyshots color yellow default 1`] = `
 <div
   style={
     Object {
@@ -245,7 +270,7 @@ exports[`Storyshots color yellow 1`] = `
   <div
     className="css-y1rz6v"
   >
-    yellow Badge
+    yellow default Badge
   </div>
 </div>
 `;

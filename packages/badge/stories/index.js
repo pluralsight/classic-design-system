@@ -11,18 +11,16 @@ const bg = backgrounds([
 
 const appearanceStory = storiesOf('appearance', module).addDecorator(bg)
 Object.keys(Badge.appearances).forEach(app =>
-  appearanceStory.add(app, _ =>
+  appearanceStory.add(app, _ => (
     <Badge appearance={app}>{`${app} Badge`}</Badge>
-  )
+  ))
 )
 
 const colorStory = storiesOf('color', module).addDecorator(bg)
 Object.keys(Badge.colors).forEach(color => {
-  colorStory.add(color, _ => <Badge color={color}>{`${color} Badge`}</Badge>)
-  colorStory.add(`${color} ${Badge.appearances.stroke}`, _ =>
-    <Badge
-      appearance={Badge.appearances.stroke}
-      color={color}
-    >{`${color} ${Badge.appearances.stroke} Badge`}</Badge>
+  Object.keys(Badge.appearances).forEach(app =>
+    colorStory.add(`${color} ${app}`, _ => (
+      <Badge appearance={app} color={color}>{`${color} ${app} Badge`}</Badge>
+    ))
   )
 })

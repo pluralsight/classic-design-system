@@ -38,7 +38,7 @@ export default withServerProps(_ => (
             'appearance',
             PropTypes.union(Badge.appearances),
             null,
-            'solid gray03',
+            <code>default</code>,
             <span>
               visual style (from <code>Badge.appearances</code>)
             </span>
