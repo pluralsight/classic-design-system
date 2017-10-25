@@ -12,6 +12,7 @@ module.exports = {
       '/components/button': { page: '/components/button' },
       '/components/card': { page: '/components/card' },
       '/components/icon': { page: '/components/icon' },
+      '/components/link': { page: '/components/link' },
       '/components/row': { page: '/components/row' },
       '/components/tab': { page: '/components/tab' },
       '/components/text': { page: '/components/text' },
