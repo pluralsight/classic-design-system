@@ -1,35 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots appearance default 1`] = `
-<div
-  style={
-    Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 0.25s ease-in-out",
-    }
-  }
->
-  <button
-    data-css-2ppt5u=""
-    disabled={false}
-  >
-    <span
-      className="css-1en8fmq"
-    >
-      Click me
-    </span>
-  </button>
-</div>
-`;
-
 exports[`Storyshots appearance flat 1`] = `
 <div
   style={
@@ -48,7 +18,37 @@ exports[`Storyshots appearance flat 1`] = `
   }
 >
   <button
-    data-css-34jan8=""
+    data-css-76xffg=""
+    disabled={false}
+  >
+    <span
+      className="css-1en8fmq"
+    >
+      Click me
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots appearance primary 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <button
+    data-css-bzft25=""
     disabled={false}
   >
     <span
@@ -78,7 +78,7 @@ exports[`Storyshots appearance stroke 1`] = `
   }
 >
   <button
-    data-css-1pb6xuj=""
+    data-css-roqos8=""
     disabled={false}
   >
     <span
@@ -108,7 +108,7 @@ exports[`Storyshots as link default 1`] = `
   }
 >
   <a
-    data-css-2ppt5u=""
+    data-css-bzft25=""
     disabled={false}
     href="https://duckduckgo.com"
   >
@@ -139,12 +139,12 @@ exports[`Storyshots as link with icon 1`] = `
   }
 >
   <a
-    data-css-2ppt5u=""
+    data-css-1c0ebuw=""
     disabled={false}
     href="https://duckduckgo.com"
   >
     <div
-      className="css-7btetm"
+      className="css-1mgd019"
     >
       <div
         className="css-otejxm"
@@ -168,36 +168,6 @@ exports[`Storyshots as link with icon 1`] = `
 </div>
 `;
 
-exports[`Storyshots disabled default 1`] = `
-<div
-  style={
-    Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 0.25s ease-in-out",
-    }
-  }
->
-  <button
-    data-css-ck5bq7=""
-    disabled={true}
-  >
-    <span
-      className="css-1en8fmq"
-    >
-      Disabled
-    </span>
-  </button>
-</div>
-`;
-
 exports[`Storyshots disabled flat 1`] = `
 <div
   style={
@@ -216,7 +186,37 @@ exports[`Storyshots disabled flat 1`] = `
   }
 >
   <button
-    data-css-10juzpr=""
+    data-css-1qj35yh=""
+    disabled={true}
+  >
+    <span
+      className="css-1en8fmq"
+    >
+      Disabled
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots disabled primary 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <button
+    data-css-ja7fpz=""
     disabled={true}
   >
     <span
@@ -246,7 +246,7 @@ exports[`Storyshots disabled stroke 1`] = `
   }
 >
   <button
-    data-css-1e3x6qb=""
+    data-css-xmly1y=""
     disabled={true}
   >
     <span
@@ -276,11 +276,11 @@ exports[`Storyshots disabled with icon 1`] = `
   }
 >
   <button
-    data-css-ck5bq7=""
+    data-css-1b4os0c=""
     disabled={true}
   >
     <div
-      className="css-7btetm"
+      className="css-1mgd019"
     >
       <div
         className="css-otejxm"
@@ -304,52 +304,6 @@ exports[`Storyshots disabled with icon 1`] = `
 </div>
 `;
 
-exports[`Storyshots icon default 1`] = `
-<div
-  style={
-    Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 0.25s ease-in-out",
-    }
-  }
->
-  <button
-    data-css-2ppt5u=""
-    disabled={false}
-  >
-    <div
-      className="css-7btetm"
-    >
-      <div
-        className="css-otejxm"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
-          />
-        </svg>
-      </div>
-    </div>
-    <span
-      className="css-1en8fmq"
-    >
-      With Icon
-    </span>
-  </button>
-</div>
-`;
-
 exports[`Storyshots icon flat 1`] = `
 <div
   style={
@@ -368,11 +322,11 @@ exports[`Storyshots icon flat 1`] = `
   }
 >
   <button
-    data-css-34jan8=""
+    data-css-16dse4m=""
     disabled={false}
   >
     <div
-      className="css-7btetm"
+      className="css-1mgd019"
     >
       <div
         className="css-otejxm"
@@ -414,11 +368,11 @@ exports[`Storyshots icon large 1`] = `
   }
 >
   <button
-    data-css-15xj0eq=""
+    data-css-1e6qgdh=""
     disabled={false}
   >
     <div
-      className="css-7btetm"
+      className="css-1mgd019"
     >
       <div
         className="css-otejxm"
@@ -460,12 +414,11 @@ exports[`Storyshots icon left 1`] = `
   }
 >
   <button
-    data-css-2ppt5u=""
+    data-css-1c0ebuw=""
     disabled={false}
-    iconAlign="left"
   >
     <div
-      className="css-7btetm"
+      className="css-1mgd019"
     >
       <div
         className="css-otejxm"
@@ -489,50 +442,6 @@ exports[`Storyshots icon left 1`] = `
 </div>
 `;
 
-exports[`Storyshots icon lone default 1`] = `
-<div
-  style={
-    Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 0.25s ease-in-out",
-    }
-  }
->
-  <button
-    data-css-3fs4b8=""
-    disabled={false}
-  >
-    <div
-      className="css-1nws9sr"
-    >
-      <div
-        className="css-otejxm"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
-          />
-        </svg>
-      </div>
-    </div>
-    <span
-      className="css-1en8fmq"
-    />
-  </button>
-</div>
-`;
-
 exports[`Storyshots icon lone flat large 1`] = `
 <div
   style={
@@ -551,11 +460,11 @@ exports[`Storyshots icon lone flat large 1`] = `
   }
 >
   <button
-    data-css-1y4dx8w=""
+    data-css-1j8mmgf=""
     disabled={false}
   >
     <div
-      className="css-1nws9sr"
+      className="css-y80vay"
     >
       <div
         className="css-otejxm"
@@ -595,11 +504,11 @@ exports[`Storyshots icon lone flat medium 1`] = `
   }
 >
   <button
-    data-css-1dwn2kq=""
+    data-css-1xgyzyz=""
     disabled={false}
   >
     <div
-      className="css-1nws9sr"
+      className="css-y80vay"
     >
       <div
         className="css-otejxm"
@@ -639,11 +548,11 @@ exports[`Storyshots icon lone flat small 1`] = `
   }
 >
   <button
-    data-css-1hxju1l=""
+    data-css-1fp2zy4=""
     disabled={false}
   >
     <div
-      className="css-1nws9sr"
+      className="css-y80vay"
     >
       <div
         className="css-otejxm"
@@ -683,11 +592,187 @@ exports[`Storyshots icon lone flat xSmall 1`] = `
   }
 >
   <button
-    data-css-1qoc4fw=""
+    data-css-6mkhxq=""
     disabled={false}
   >
     <div
-      className="css-1nws9sr"
+      className="css-y80vay"
+    >
+      <div
+        className="css-12f5sv2"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      className="css-1en8fmq"
+    />
+  </button>
+</div>
+`;
+
+exports[`Storyshots icon lone primary large 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <button
+    data-css-qijcsc=""
+    disabled={false}
+  >
+    <div
+      className="css-y80vay"
+    >
+      <div
+        className="css-otejxm"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      className="css-1en8fmq"
+    />
+  </button>
+</div>
+`;
+
+exports[`Storyshots icon lone primary medium 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <button
+    data-css-12ji30o=""
+    disabled={false}
+  >
+    <div
+      className="css-y80vay"
+    >
+      <div
+        className="css-otejxm"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      className="css-1en8fmq"
+    />
+  </button>
+</div>
+`;
+
+exports[`Storyshots icon lone primary small 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <button
+    data-css-qem67e=""
+    disabled={false}
+  >
+    <div
+      className="css-y80vay"
+    >
+      <div
+        className="css-otejxm"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      className="css-1en8fmq"
+    />
+  </button>
+</div>
+`;
+
+exports[`Storyshots icon lone primary xSmall 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <button
+    data-css-1g6m6he=""
+    disabled={false}
+  >
+    <div
+      className="css-y80vay"
     >
       <div
         className="css-12f5sv2"
@@ -727,11 +812,11 @@ exports[`Storyshots icon lone stroke large 1`] = `
   }
 >
   <button
-    data-css-1yg3nm9=""
+    data-css-er35ec=""
     disabled={false}
   >
     <div
-      className="css-1nws9sr"
+      className="css-y80vay"
     >
       <div
         className="css-otejxm"
@@ -771,11 +856,11 @@ exports[`Storyshots icon lone stroke medium 1`] = `
   }
 >
   <button
-    data-css-fvx27=""
+    data-css-1t47sdy=""
     disabled={false}
   >
     <div
-      className="css-1nws9sr"
+      className="css-y80vay"
     >
       <div
         className="css-otejxm"
@@ -815,11 +900,11 @@ exports[`Storyshots icon lone stroke small 1`] = `
   }
 >
   <button
-    data-css-8wzr8u=""
+    data-css-80a0py=""
     disabled={false}
   >
     <div
-      className="css-1nws9sr"
+      className="css-y80vay"
     >
       <div
         className="css-otejxm"
@@ -859,11 +944,11 @@ exports[`Storyshots icon lone stroke xSmall 1`] = `
   }
 >
   <button
-    data-css-1pqua8q=""
+    data-css-6s4gce=""
     disabled={false}
   >
     <div
-      className="css-1nws9sr"
+      className="css-y80vay"
     >
       <div
         className="css-12f5sv2"
@@ -903,11 +988,57 @@ exports[`Storyshots icon medium 1`] = `
   }
 >
   <button
-    data-css-2ppt5u=""
+    data-css-1c0ebuw=""
     disabled={false}
   >
     <div
-      className="css-7btetm"
+      className="css-1mgd019"
+    >
+      <div
+        className="css-otejxm"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      className="css-1en8fmq"
+    >
+      With Icon
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots icon primary 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <button
+    data-css-1c0ebuw=""
+    disabled={false}
+  >
+    <div
+      className="css-1mgd019"
     >
       <div
         className="css-otejxm"
@@ -949,12 +1080,11 @@ exports[`Storyshots icon right 1`] = `
   }
 >
   <button
-    data-css-16unde1=""
+    data-css-1xdedob=""
     disabled={false}
-    iconAlign="right"
   >
     <div
-      className="css-1cjmww0"
+      className="css-8b1vtw"
     >
       <div
         className="css-otejxm"
@@ -996,11 +1126,11 @@ exports[`Storyshots icon small 1`] = `
   }
 >
   <button
-    data-css-auzszc=""
+    data-css-v3efag=""
     disabled={false}
   >
     <div
-      className="css-7btetm"
+      className="css-1mgd019"
     >
       <div
         className="css-otejxm"
@@ -1042,11 +1172,11 @@ exports[`Storyshots icon stroke 1`] = `
   }
 >
   <button
-    data-css-1pb6xuj=""
+    data-css-1jtiqrm=""
     disabled={false}
   >
     <div
-      className="css-7btetm"
+      className="css-1mgd019"
     >
       <div
         className="css-otejxm"
@@ -1088,11 +1218,11 @@ exports[`Storyshots icon xSmall 1`] = `
   }
 >
   <button
-    data-css-rfhejr=""
+    data-css-rd9v03=""
     disabled={false}
   >
     <div
-      className="css-7btetm"
+      className="css-1mgd019"
     >
       <div
         className="css-12f5sv2"
@@ -1134,7 +1264,7 @@ exports[`Storyshots size large 1`] = `
   }
 >
   <button
-    data-css-15xj0eq=""
+    data-css-1r9v2kd=""
     disabled={false}
   >
     <span
@@ -1164,7 +1294,7 @@ exports[`Storyshots size medium 1`] = `
   }
 >
   <button
-    data-css-2ppt5u=""
+    data-css-bzft25=""
     disabled={false}
   >
     <span
@@ -1194,7 +1324,7 @@ exports[`Storyshots size small 1`] = `
   }
 >
   <button
-    data-css-auzszc=""
+    data-css-5t7u9e=""
     disabled={false}
   >
     <span
@@ -1224,13 +1354,43 @@ exports[`Storyshots size xSmall 1`] = `
   }
 >
   <button
-    data-css-rfhejr=""
+    data-css-1l8qhvd=""
     disabled={false}
   >
     <span
       className="css-1en8fmq"
     >
       Click me
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots with ref ref to handle focus 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <button
+    data-css-bzft25=""
+    disabled={false}
+  >
+    <span
+      className="css-1en8fmq"
+    >
+      Should be focused
     </span>
   </button>
 </div>

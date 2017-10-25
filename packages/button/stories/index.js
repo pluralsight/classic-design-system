@@ -11,7 +11,6 @@ const bg = backgrounds([
 ])
 
 const appearanceStory = storiesOf('appearance', module).addDecorator(bg)
-appearanceStory.add('default', _ => <Button>Click me</Button>)
 Object.keys(Button.appearances).forEach(app =>
   appearanceStory.add(app, _ => <Button appearance={app}>Click me</Button>)
 )
@@ -21,11 +20,7 @@ Object.keys(Button.sizes).forEach(size =>
   sizeStory.add(size, _ => <Button size={size}>Click me</Button>)
 )
 
-const iconStory = storiesOf('icon', module)
-  .addDecorator(bg)
-  .add('default', _ => (
-    <Button icon={<Icon id={Icon.ids.check} />}>With Icon</Button>
-  ))
+const iconStory = storiesOf('icon', module).addDecorator(bg)
 Object.keys(Button.appearances).forEach(app =>
   iconStory.add(app, _ => (
     <Button appearance={app} icon={<Icon id={Icon.ids.check} />}>
@@ -47,9 +42,6 @@ Object.keys(Button.sizes).forEach(size =>
     </Button>
   ))
 )
-iconStory.add('lone default', _ => (
-  <Button icon={<Icon id={Icon.ids.check} />} />
-))
 Object.keys(Button.appearances).forEach(app =>
   Object.keys(Button.sizes).forEach(size =>
     iconStory.add(`lone ${app} ${size}`, _ => (
@@ -62,9 +54,7 @@ Object.keys(Button.appearances).forEach(app =>
   )
 )
 
-const disabledStory = storiesOf('disabled', module)
-  .addDecorator(bg)
-  .add('default', _ => <Button disabled>Disabled</Button>)
+const disabledStory = storiesOf('disabled', module).addDecorator(bg)
 Object.keys(Button.appearances).forEach(app =>
   disabledStory.add(app, _ => (
     <Button disabled appearance={app}>

@@ -6,7 +6,11 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { transparentize } from 'polished'
 
-export const appearances = { stroke: 'stroke', flat: 'flat' }
+export const appearances = {
+  primary: 'primary',
+  stroke: 'stroke',
+  flat: 'flat'
+}
 
 export const sizes = {
   xSmall: 'xSmall',
@@ -251,6 +255,7 @@ Btn.propTypes = {
   size: PropTypes.oneOf(Object.keys(sizes))
 }
 Btn.defaultProps = {
+  appearance: appearances.primary,
   disabled: false,
   size: sizes.medium
 }
