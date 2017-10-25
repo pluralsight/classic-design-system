@@ -19,12 +19,8 @@ import {
 const work = {
   now: [
     {
-      title: 'Link',
+      title: 'Theming',
       tags: ['Component']
-    },
-    {
-      title: 'Prop Type Table',
-      tags: ['Site']
     }
   ],
   next: [
@@ -46,10 +42,6 @@ const work = {
     },
     {
       title: 'View Toggle',
-      tags: ['Component']
-    },
-    {
-      title: 'Theming',
       tags: ['Component']
     }
   ],
