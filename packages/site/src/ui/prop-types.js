@@ -22,8 +22,8 @@ const Table = props => (
         <tr className="headRow">
           <th className="headCell">Name</th>
           <th className="headCell">Value</th>
-          <th className="headCell">Default</th>
           <th className="headCell">Description</th>
+          <th className="headCell">Default</th>
         </tr>
       </thead>
       <tbody>
@@ -43,8 +43,8 @@ const Table = props => (
               )}
             </td>
             <td className="cell type">{row.value}</td>
-            <td className="cell default">{row.defaultValue}</td>
             <td className="cell description">{row.description}</td>
+            <td className="cell default">{row.defaultValue}</td>
           </tr>
         ))}
       </tbody>
