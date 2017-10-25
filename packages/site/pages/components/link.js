@@ -33,8 +33,10 @@ export default withServerProps(_ => (
             'appearance',
             PropTypes.union(Link.appearances),
             null,
-            null,
-            'visual style'
+            <code>default</code>,
+            <span>
+              visual style (from <code>Link.appearances</code>)
+            </span>
           ])
         ]}
       />

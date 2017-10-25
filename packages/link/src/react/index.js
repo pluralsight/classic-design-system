@@ -3,7 +3,7 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-export const appearances = { subtle: 'subtle' }
+export const appearances = { default: 'default', subtle: 'subtle' }
 
 const style = props =>
   glamor.css({
@@ -38,6 +38,9 @@ Link.appearances = appearances
 
 Link.propTypes = {
   appearances: PropTypes.oneOf(Object.keys(appearances))
+}
+Link.defaultProps = {
+  appearance: appearances.default
 }
 
 export default Link
