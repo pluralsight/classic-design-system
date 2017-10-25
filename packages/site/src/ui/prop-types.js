@@ -21,12 +21,12 @@ const Table = props => (
         </tr>
       </thead>
       <tbody>
-        {props.props.map(row => (
-          <tr>
+        {props.props.map((row, i) => (
+          <tr key={i}>
             {row.map(
               (cell, i, rows) =>
                 [
-                  <td className="cell name">
+                  <td className="cell name" key={i}>
                     <code>{cell}</code>
                     {rows[requiredColumnIndex] ? (
                       <Badge
@@ -39,10 +39,16 @@ const Table = props => (
                       ''
                     )}
                   </td>,
-                  <td className="cell type">{cell}</td>,
+                  <td className="cell type" key={i}>
+                    {cell}
+                  </td>,
                   null,
-                  <td className="cell default">{cell}</td>,
-                  <td className="cell description">{cell}</td>
+                  <td className="cell default" key={i}>
+                    {cell}
+                  </td>,
+                  <td className="cell description" key={i}>
+                    {cell}
+                  </td>
                 ][i]
             )}
           </tr>
