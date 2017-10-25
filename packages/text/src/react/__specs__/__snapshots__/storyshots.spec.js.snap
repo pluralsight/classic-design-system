@@ -214,6 +214,49 @@ exports[`Storyshots List type: bulleted 1`] = `
 </div>
 `;
 
+exports[`Storyshots List type: default 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <ul
+    className={
+      Object {
+        "data-css-npip9x": "",
+      }
+    }
+  >
+    <li>
+      one
+    </li>
+    <li>
+      two
+    </li>
+    <li>
+      three
+    </li>
+    <li>
+      four
+    </li>
+    <li>
+      five
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`Storyshots List type: numbered 1`] = `
 <div
   style={
@@ -254,49 +297,6 @@ exports[`Storyshots List type: numbered 1`] = `
       five
     </li>
   </ol>
-</div>
-`;
-
-exports[`Storyshots List vanilla 1`] = `
-<div
-  style={
-    Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 0.25s ease-in-out",
-    }
-  }
->
-  <ul
-    className={
-      Object {
-        "data-css-npip9x": "",
-      }
-    }
-  >
-    <li>
-      one
-    </li>
-    <li>
-      two
-    </li>
-    <li>
-      three
-    </li>
-    <li>
-      four
-    </li>
-    <li>
-      five
-    </li>
-  </ul>
 </div>
 `;
 

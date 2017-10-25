@@ -18,18 +18,24 @@ const className = glamor.css({ color: `${core.colors.orange} !important` })
 const heading = storiesOf('Heading', module).addDecorator(bg)
 
 Object.keys(Text.Heading.sizes).forEach(size =>
-  heading.add(`size: ${size}`, _ =>
-    <Text.Heading size={size}><h1>{size}</h1></Text.Heading>
-  )
+  heading.add(`size: ${size}`, _ => (
+    <Text.Heading size={size}>
+      <h1>{size}</h1>
+    </Text.Heading>
+  ))
 )
 
-heading.add('style override', _ =>
-  <Text.Heading style={style}><h2>pink</h2></Text.Heading>
-)
+heading.add('style override', _ => (
+  <Text.Heading style={style}>
+    <h2>pink</h2>
+  </Text.Heading>
+))
 
-heading.add('className override', _ =>
-  <Text.Heading className={className}><h2>orange</h2></Text.Heading>
-)
+heading.add('className override', _ => (
+  <Text.Heading className={className}>
+    <h2>orange</h2>
+  </Text.Heading>
+))
 
 const p = storiesOf('P', module).addDecorator(bg)
 
@@ -41,18 +47,8 @@ p.add('className override', _ => <Text.P className={className}>orange</Text.P>)
 
 const list = storiesOf('List', module).addDecorator(bg)
 
-list.add('vanilla', _ =>
-  <Text.List>
-    <Text.List.Item>one</Text.List.Item>
-    <Text.List.Item>two</Text.List.Item>
-    <Text.List.Item>three</Text.List.Item>
-    <Text.List.Item>four</Text.List.Item>
-    <Text.List.Item>five</Text.List.Item>
-  </Text.List>
-)
-
 Object.keys(Text.List.types).forEach(typeProp =>
-  list.add(`type: ${typeProp}`, _ =>
+  list.add(`type: ${typeProp}`, _ => (
     <Text.List type={typeProp}>
       <Text.List.Item>one</Text.List.Item>
       <Text.List.Item>two</Text.List.Item>
@@ -60,5 +56,5 @@ Object.keys(Text.List.types).forEach(typeProp =>
       <Text.List.Item>four</Text.List.Item>
       <Text.List.Item>five</Text.List.Item>
     </Text.List>
-  )
+  ))
 )

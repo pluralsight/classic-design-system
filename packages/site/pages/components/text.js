@@ -123,8 +123,10 @@ export default withServerProps(_ => (
             'type',
             PropTypes.union(Text.List.types),
             null,
-            'no bullets',
-            'semantics and bullet styles'
+            <code>default</code>,
+            <span>
+              semantics and bullet styles (from <code>Text.list.types</code>)
+            </span>
           ])
         ]}
       />

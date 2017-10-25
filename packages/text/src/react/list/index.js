@@ -4,7 +4,7 @@ import React from 'react'
 
 import ListItem from './list-item'
 
-const types = { bulleted: 'bulleted', numbered: 'numbered' }
+const types = { default: 'default', bulleted: 'bulleted', numbered: 'numbered' }
 
 const styleType = ({ type }) =>
   ({
@@ -46,6 +46,9 @@ const List = props =>
 import PropTypes from 'prop-types'
 List.propTypes = {
   type: PropTypes.oneOf(Object.keys(types))
+}
+List.defaultProps = {
+  type: types.default
 }
 List.types = types
 
