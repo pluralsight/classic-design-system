@@ -15,7 +15,7 @@ const row = ([name, value, required, defaultValue, description]) => ({
 })
 
 const Table = props => (
-  <div>
+  <div className="proptypes">
     <SectionHeading>{props.title || 'PropTypes'}</SectionHeading>
     <table className="table">
       <thead className="head">
@@ -50,6 +50,10 @@ const Table = props => (
       </tbody>
     </table>
     <style jsx>{`
+      .proptypes {
+        max-width: 100%;
+        overflow-x: auto;
+      }
       .table {
         width: 100%;
         border-spacing: 0;
