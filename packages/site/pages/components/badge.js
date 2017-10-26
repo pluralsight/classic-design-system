@@ -59,10 +59,8 @@ export default withServerProps(_ => (
       <P>In either solid or stroked styles.</P>
       <Example.React
         includes={{ Badge }}
-        codes={[`<Badge>Badge</Badge>`].concat(
-          Object.keys(Badge.appearances).map(
-            a => `<Badge appearance={Badge.appearances.${a}}>Badge</Badge>`
-          )
+        codes={Object.keys(Badge.appearances).map(
+          a => `<Badge appearance={Badge.appearances.${a}}>Badge</Badge>`
         )}
       />
 
