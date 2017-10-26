@@ -112,124 +112,115 @@ export default withServerProps(_ => (
       </Code>
 
       <PropTypes
-        title="Card PropTypes"
-        props={[
-          PropTypes.row([
-            'actionBar',
-            <span>
-              <code>Card.Action[]</code>
-            </span>,
-            null,
-            null,
-            'top-right action buttons'
-          ]),
-          PropTypes.row([
-            'actionBarVisible',
-            'boolean',
-            null,
-            <code>false</code>,
-            'lock action bar on'
-          ]),
-          PropTypes.row([
-            'bonusBar',
-            'React element',
-            null,
-            null,
-            'freeform space in image bottom-left'
-          ]),
-          PropTypes.row([
-            'fullOverlay',
-            <code>Card.FullOverlayLink</code>,
-            null,
-            null,
-            'hover state for image'
-          ]),
-          PropTypes.row([
-            'fullOverlayVisible',
-            'boolean',
-            null,
-            <code>false</code>,
-            'lock full overlay on'
-          ]),
-          PropTypes.row([
-            'image',
-            <span>
-              <code>Card.Image</code> |
-              <code>Card.ImageLink > a > Card.Image</code>
-            </span>,
-            true,
-            null,
-            'main image or linked image'
-          ]),
-          PropTypes.row([
-            'metadata1',
-            'string[] | React element[]',
-            null,
-            null,
-            'first row of metadata'
-          ]),
-          PropTypes.row([
-            'metadata2',
-            'string[] | React element[]',
-            null,
-            null,
-            'second row of metadata'
-          ]),
-          PropTypes.row(['progress', 'number', null, null, 'progress 0-100']),
-          PropTypes.row([
-            'size',
-            PropTypes.union(Card.sizes),
-            null,
-            <code>medium</code>,
-            <span>
-              size of card (from <code>Card.sizes</code>)
-            </span>
-          ]),
-          PropTypes.row([
-            'tag',
-            <code>Card.Tag</code>,
-            null,
-            null,
-            'categorization label in top-left'
-          ]),
-          PropTypes.row([
-            'title',
-            <span>
-              <code>Card.TextLink > a > Card.Title</code> |{' '}
-              <code>Card.Title</code>
-            </span>,
-            true,
-            null,
-            'card title or linked title'
-          ])
-        ]}
-      />
-
-      <PropTypes
-        title="Card.Action PropTypes"
-        props={[
-          PropTypes.row([
-            'icon',
-            <span>
-              <code>Icon</code>
-            </span>,
-            true,
-            null,
-            'icon representing action'
-          ])
-        ]}
-      />
-
-      <PropTypes
-        title="Card.Image PropTypes"
-        props={[PropTypes.row(['src', 'string', true, null, 'image url'])]}
-      />
-
-      <PropTypes
-        title="Card.Tag PropTypes"
-        props={[
-          PropTypes.row(['icon', <code>Icon</code>, null, null, 'tag icon'])
-        ]}
+        props={{
+          Card: [
+            PropTypes.row([
+              'actionBar',
+              <span>
+                <code>Card.Action[]</code>
+              </span>,
+              null,
+              null,
+              'top-right action buttons'
+            ]),
+            PropTypes.row([
+              'actionBarVisible',
+              'boolean',
+              null,
+              <code>false</code>,
+              'lock action bar on'
+            ]),
+            PropTypes.row([
+              'bonusBar',
+              'React element',
+              null,
+              null,
+              'freeform space in image bottom-left'
+            ]),
+            PropTypes.row([
+              'fullOverlay',
+              <code>Card.FullOverlayLink</code>,
+              null,
+              null,
+              'hover state for image'
+            ]),
+            PropTypes.row([
+              'fullOverlayVisible',
+              'boolean',
+              null,
+              <code>false</code>,
+              'lock full overlay on'
+            ]),
+            PropTypes.row([
+              'image',
+              <span>
+                <code>Card.Image</code> |
+                <code>Card.ImageLink > a > Card.Image</code>
+              </span>,
+              true,
+              null,
+              'main image or linked image'
+            ]),
+            PropTypes.row([
+              'metadata1',
+              'string[] | React element[]',
+              null,
+              null,
+              'first row of metadata'
+            ]),
+            PropTypes.row([
+              'metadata2',
+              'string[] | React element[]',
+              null,
+              null,
+              'second row of metadata'
+            ]),
+            PropTypes.row(['progress', 'number', null, null, 'progress 0-100']),
+            PropTypes.row([
+              'size',
+              PropTypes.union(Card.sizes),
+              null,
+              <code>medium</code>,
+              <span>
+                size of card (from <code>Card.sizes</code>)
+              </span>
+            ]),
+            PropTypes.row([
+              'tag',
+              <code>Card.Tag</code>,
+              null,
+              null,
+              'categorization label in top-left'
+            ]),
+            PropTypes.row([
+              'title',
+              <span>
+                <code>Card.TextLink > a > Card.Title</code> |{' '}
+                <code>Card.Title</code>
+              </span>,
+              true,
+              null,
+              'card title or linked title'
+            ])
+          ],
+          'Card.Action': [
+            PropTypes.row([
+              'icon',
+              <span>
+                <code>Icon</code>
+              </span>,
+              true,
+              null,
+              'icon representing action'
+            ])
+          ],
+          'Card.Image': [
+            PropTypes.row(['src', 'string', true, null, 'image url'])
+          ],
+          'Card.Tag': [
+            PropTypes.row(['icon', <code>Icon</code>, null, null, 'tag icon'])
+          ]
+        }}
       />
 
       <SectionHeading>In-app example</SectionHeading>

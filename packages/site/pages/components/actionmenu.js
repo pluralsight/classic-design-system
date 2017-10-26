@@ -35,60 +35,59 @@ export default withServerProps(_ => (
       </Code>
 
       <PropTypes
-        title="ActionMenu PropTypes"
-        props={[
-          PropTypes.row([
-            'onClose',
-            'function',
-            null,
-            null,
-            'triggered when a menu collapses'
-          ]),
-          PropTypes.row([
-            'origin',
-            PropTypes.union(ActionMenu.origins),
-            null,
-            <code>topLeft</code>,
-            <span>
-              orientation (from <code>ActionMenu.origins</code>) of nested menus
-            </span>
-          ]),
-          PropTypes.row([
-            'shouldFocusOnMount',
-            'boolean',
-            null,
-            <code>true</code>,
-            'focus first menu item on render'
-          ])
-        ]}
-      />
-      <PropTypes
-        title="ActionMenu.Item PropTypes"
-        props={[
-          PropTypes.row([
-            'iconId',
-            <span>
-              <code>Icon.ids</code> enum
-            </span>,
-            null,
-            null,
-            'id of icon'
-          ]),
-          PropTypes.row([
-            'isActive',
-            'boolean',
-            null,
-            <code>false</code>,
-            'visually active (set automatically)'
-          ]),
-          PropTypes.row([
-            'nested',
-            <code>ActionMenu</code>,
-            null,
-            null,
-            'nested ActionMenu'
-          ])
-        ]}
+        props={{
+          ActionMenu: [
+            PropTypes.row([
+              'onClose',
+              'function',
+              null,
+              null,
+              'triggered when a menu collapses'
+            ]),
+            PropTypes.row([
+              'origin',
+              PropTypes.union(ActionMenu.origins),
+              null,
+              <code>topLeft</code>,
+              <span>
+                orientation (from <code>ActionMenu.origins</code>) of nested
+                menus
+              </span>
+            ]),
+            PropTypes.row([
+              'shouldFocusOnMount',
+              'boolean',
+              null,
+              <code>true</code>,
+              'focus first menu item on render'
+            ])
+          ],
+          'ActionMenu.Item': [
+            PropTypes.row([
+              'iconId',
+              <span>
+                <code>Icon.ids</code> enum
+              </span>,
+              null,
+              null,
+              'id of icon'
+            ]),
+            PropTypes.row([
+              'isActive',
+              'boolean',
+              null,
+              <code>false</code>,
+              'visually active (set automatically)'
+            ]),
+            PropTypes.row([
+              'nested',
+              <code>ActionMenu</code>,
+              null,
+              null,
+              'nested ActionMenu'
+            ])
+          ]
+        }}
       />
 
       <SectionHeading>Triggers</SectionHeading>

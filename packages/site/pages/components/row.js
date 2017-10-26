@@ -80,102 +80,97 @@ export default withServerProps(_ => (
       </Code>
 
       <PropTypes
-        title="Row PropTypes"
-        props={[
-          PropTypes.row([
-            'actionBar',
-            <span>
-              <code>Row.Action[]</code>
-            </span>,
-            null,
-            null,
-            'far-right action buttons'
-          ]),
-          PropTypes.row([
-            'actionBarVisible',
-            'boolean',
-            null,
-            <code>false</code>,
-            'lock action bar on'
-          ]),
-          PropTypes.row([
-            'fullOverlay',
-            <code>Row.FullOverlayLink</code>,
-            null,
-            null,
-            'hover state for image'
-          ]),
-          PropTypes.row([
-            'fullOverlayVisible',
-            'boolean',
-            null,
-            <code>false</code>,
-            'lock full overlay on'
-          ]),
-          PropTypes.row([
-            'image',
-            <span>
-              <code>Row.Image</code> |
-              <code>Row.ImageLink > a > Row.Image</code>
-            </span>,
-            null,
-            null,
-            'main image or linked image'
-          ]),
-          PropTypes.row([
-            'metadata1',
-            <code>Row.Text, Row.TextLink</code>,
-            null,
-            null,
-            'first row of metadata'
-          ]),
-          PropTypes.row([
-            'metadata2',
-            <code>Row.Text, Row.TextLink</code>,
-            null,
-            null,
-            'second row of metadata'
-          ]),
-          PropTypes.row(['progress', 'number', null, null, 'progress 0-100']),
-          PropTypes.row([
-            'size',
-            PropTypes.union(Row.sizes),
-            null,
-            <code>medium</code>,
-            <span>
-              size of row (from <code>Row.sizes</code>)
-            </span>
-          ]),
-          PropTypes.row([
-            'title',
-            <span>
-              <code>Row.TextLink > a > Row.Text</code> | <code>Row.Text</code>
-            </span>,
-            true,
-            null,
-            'row title or linked title'
-          ])
-        ]}
-      />
-
-      <PropTypes
-        title="Row.Action PropTypes"
-        props={[
-          PropTypes.row([
-            'icon',
-            <span>
-              <code>Icon</code>
-            </span>,
-            true,
-            null,
-            'icon representing action'
-          ])
-        ]}
-      />
-
-      <PropTypes
-        title="Row.Image PropTypes"
-        props={[PropTypes.row(['src', 'string', true, null, 'image url'])]}
+        props={{
+          Row: [
+            PropTypes.row([
+              'actionBar',
+              <span>
+                <code>Row.Action[]</code>
+              </span>,
+              null,
+              null,
+              'far-right action buttons'
+            ]),
+            PropTypes.row([
+              'actionBarVisible',
+              'boolean',
+              null,
+              <code>false</code>,
+              'lock action bar on'
+            ]),
+            PropTypes.row([
+              'fullOverlay',
+              <code>Row.FullOverlayLink</code>,
+              null,
+              null,
+              'hover state for image'
+            ]),
+            PropTypes.row([
+              'fullOverlayVisible',
+              'boolean',
+              null,
+              <code>false</code>,
+              'lock full overlay on'
+            ]),
+            PropTypes.row([
+              'image',
+              <span>
+                <code>Row.Image</code> |
+                <code>Row.ImageLink > a > Row.Image</code>
+              </span>,
+              null,
+              null,
+              'main image or linked image'
+            ]),
+            PropTypes.row([
+              'metadata1',
+              <code>Row.Text, Row.TextLink</code>,
+              null,
+              null,
+              'first row of metadata'
+            ]),
+            PropTypes.row([
+              'metadata2',
+              <code>Row.Text, Row.TextLink</code>,
+              null,
+              null,
+              'second row of metadata'
+            ]),
+            PropTypes.row(['progress', 'number', null, null, 'progress 0-100']),
+            PropTypes.row([
+              'size',
+              PropTypes.union(Row.sizes),
+              null,
+              <code>medium</code>,
+              <span>
+                size of row (from <code>Row.sizes</code>)
+              </span>
+            ]),
+            PropTypes.row([
+              'title',
+              <span>
+                <code>Row.TextLink > a > Row.Text</code> | <code>Row.Text</code>
+              </span>,
+              true,
+              null,
+              'row title or linked title'
+            ])
+          ],
+          'Row.Action': [
+            PropTypes.row([
+              'icon',
+              <span>
+                <code>Icon</code>
+              </span>,
+              true,
+              null,
+              'icon representing action'
+            ])
+          ],
+          'Row.Image': [
+            PropTypes.row(['src', 'string', true, null, 'image url'])
+          ]
+        }}
       />
 
       <SectionHeading>In-app example</SectionHeading>
