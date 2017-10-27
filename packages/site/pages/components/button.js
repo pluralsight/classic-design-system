@@ -106,8 +106,8 @@ export default withServerProps(_ => (
 
       <SectionHeading>Icon</SectionHeading>
       <P>
-        Buttons may include an icon to the left or right of the label. Find out
-        more about icons <Link href="/components/icon">here</Link>.
+        Buttons may include an icon to the left or right of the label. Read more{' '}
+        <Link href="/components/icon">icon docs</Link>.
       </P>
       <Example.React
         includes={{ Button, Icon }}
@@ -120,8 +120,8 @@ export default withServerProps(_ => (
 
       <SectionHeading>Icon only</SectionHeading>
       <P>
-        Buttons may include an icon without a label. Find out more about icons{' '}
-        <Link href="/components/icon">here</Link>.
+        Buttons may include an icon without a label. Read more{' '}
+        <Link href="/components/icon">icon docs</Link>.
       </P>
       <Example.React
         includes={{ Button, Icon }}
