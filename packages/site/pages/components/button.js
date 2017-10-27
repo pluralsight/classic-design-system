@@ -96,10 +96,7 @@ export default withServerProps(_ => (
       />
 
       <SectionHeading>Size</SectionHeading>
-      <P>
-        Buttons come in four standard sizes. The default size is 'medium'.jjk
-        3qjjk
-      </P>
+      <P>Buttons come in four standard sizes. The default size is 'medium'.</P>
       <Example.React
         includes={{ Button, Icon }}
         codes={Object.keys(Button.sizes).map(
