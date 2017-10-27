@@ -3,6 +3,7 @@ import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import Button from '../react'
 
@@ -83,4 +84,18 @@ const refExample = storiesOf('with ref', module)
   .addDecorator(bg)
   .add('ref to handle focus', _ => (
     <Button innerRef={el => el && el.focus()}>Should be focused</Button>
+  ))
+
+const lightThemeExample = storiesOf('light theme', module)
+  .add('flat', _ => (
+    <Theme name={Theme.names.light}>
+      <Button appearance={Button.appearances.flat}>Flat on Light</Button>
+    </Theme>
+  ))
+  .add('flat, disabled', _ => (
+    <Theme name={Theme.names.light}>
+      <Button disabled appearance={Button.appearances.flat}>
+        Flat on Light
+      </Button>
+    </Theme>
   ))

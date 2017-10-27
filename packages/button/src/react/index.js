@@ -4,6 +4,7 @@ import glamorous from 'glamorous'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
 import { transparentize } from 'polished'
 
 export const appearances = {
@@ -49,7 +50,7 @@ const styleSize = ({ size }) =>
     }
   }[size])
 
-const styleAppearance = ({ appearance }) =>
+const styleAppearance = ({ appearance, themeName }) =>
   ({
     [appearances.stroke]: {
       border: `1px solid ${core.colors.orange}`,
@@ -63,12 +64,20 @@ const styleAppearance = ({ appearance }) =>
     },
     [appearances.flat]: {
       border: 'none',
-      color: core.colors.gray02,
+      color:
+        themeName === themeNames.light
+          ? core.colors.gray03
+          : core.colors.gray02,
       background: 'none',
-      ':hover': {
-        color: core.colors.white,
-        background: transparentize(0.85, core.colors.white)
-      }
+      ':hover':
+        themeName === themeNames.light
+          ? {
+              background: transparentize(0.85, core.colors.gray03)
+            }
+          : {
+              color: core.colors.white,
+              background: transparentize(0.85, core.colors.white)
+            }
     }
   }[appearance])
 
@@ -239,8 +248,12 @@ const BtnText = glamorous.span({
   alignItems: 'center'
 })
 
-const Btn = props => (
-  <Button {...props} iconOnly={React.Children.count(props.children) <= 0}>
+const Btn = (props, context) => (
+  <Button
+    {...props}
+    themeName={context.themeName}
+    iconOnly={React.Children.count(props.children) <= 0}
+  >
     {renderIcon(props)}
     <BtnText>{props.children}</BtnText>
   </Button>
@@ -259,6 +272,10 @@ Btn.defaultProps = {
   disabled: false,
   size: sizes.medium
 }
+Btn.contextTypes = {
+  themeName: PropTypes.string
+}
+
 Btn.appearances = appearances
 Btn.iconAligns = iconAligns
 Btn.sizes = sizes
