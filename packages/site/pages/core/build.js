@@ -9,12 +9,10 @@ import {
   withServerProps
 } from '../../src/ui'
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Core Build">
-      <PageHeading>
-        Core CSS Build Config
-      </PageHeading>
+      <PageHeading>Core CSS Build Config</PageHeading>
       <Doc>{`
 ## PostCSS Config
 
@@ -58,7 +56,7 @@ module: {
 
 ## Sass Config
 
-Sass variables are available, generated from the source variables.  To use Sass, installed the required build tools, such as, such as, such as, such as:
+Sass variables are available, generated from the source variables.  To use Sass, installed the required build tools, such as:
 
 \`\`\`bash
 npm install node-sass
@@ -98,4 +96,4 @@ See the [core usage docs](/core/usage) for usage syntax details.
 `}</Doc>
     </Content>
   </Chrome>
-)
+))
