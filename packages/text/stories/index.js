@@ -6,6 +6,7 @@ import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import { linkTo } from '@storybook/addon-links'
 import { storiesOf, addDecorator } from '@storybook/react'
+import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import Text from '../react'
 
@@ -36,6 +37,21 @@ heading.add('className override', _ => (
     <h2>orange</h2>
   </Text.Heading>
 ))
+
+const bgColors = ['black', 'white']
+Object.keys(Theme.names)
+  .map((name, i) => [name, bgColors[i]])
+  .forEach(([name, backgroundColor]) =>
+    heading.add(`theme ${name}`, _ => (
+      <div style={{ height: '100%', width: '100%', backgroundColor }}>
+        <Theme name={name}>
+          <Text.Heading>
+            <h2>wow</h2>
+          </Text.Heading>
+        </Theme>
+      </div>
+    ))
+  )
 
 const p = storiesOf('P', module).addDecorator(bg)
 

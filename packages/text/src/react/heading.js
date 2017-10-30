@@ -1,6 +1,11 @@
 import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
+import PropTypes from 'prop-types'
 import React from 'react'
+import {
+  defaultName as themeDefaultName,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme/react'
 
 export const sizes = {
   smallCaps: 'smallCaps',
@@ -11,12 +16,23 @@ export const sizes = {
 
 const style = props =>
   glamor.css({
-    color: core.colors.white,
     margin: `${core.layout.spacingMedium} 0`,
-    ...(({ size }) =>
+    ...(({ themeName }) =>
+      ({
+        [themeNames.light]: {
+          color: core.colors.gray06
+        },
+        [themeNames.dark]: {
+          color: core.colors.white
+        }
+      }[themeName]))(props),
+    ...(({ size, themeName }) =>
       ({
         [sizes.smallCaps]: {
-          color: core.colors.gray02,
+          color:
+            themeName === themeNames.light
+              ? core.colors.gray03
+              : core.colors.gray02,
           textTransform: 'uppercase',
           fontSize: core.type.fontSizeXSmall,
           letterSpacing: core.type.letterSpacingXSmall,
@@ -46,19 +62,25 @@ const style = props =>
 
 const rmChildren = ({ children, ...rest }) => rest
 
-const Heading = props =>
+const Heading = (props, context) =>
   React.cloneElement(React.Children.only(props.children), {
     ...rmChildren(props),
-    ...style(props),
+    ...style({
+      ...props,
+      themeName: context.themeName || themeDefaultName
+    }),
     className: props.className
   })
 
-import PropTypes from 'prop-types'
 Heading.propTypes = {
   size: PropTypes.oneOf(Object.keys(sizes))
 }
 Heading.defaultProps = {
   size: sizes.large
 }
+Heading.contextTypes = {
+  themeName: PropTypes.string
+}
+
 Heading.sizes = sizes
 export default Heading
