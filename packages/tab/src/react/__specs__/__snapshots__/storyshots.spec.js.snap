@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots theme dark 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "black",
+        "color": "white",
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <div>
+      <div
+        className="css-1vqxkco"
+        role="tablist"
+      >
+        <button
+          aria-selected={false}
+          className="css-rkiiwd"
+          onClick={[Function]}
+          role="tab"
+        >
+          <div
+            className="css-uecruo"
+          >
+            Menu 1
+          </div>
+        </button>
+        <button
+          aria-selected={false}
+          className="css-rkiiwd"
+          onClick={[Function]}
+          role="tab"
+        >
+          <div
+            className="css-uecruo"
+          >
+            Menu 2
+          </div>
+        </button>
+        <button
+          aria-selected={true}
+          className="css-1rgs3k1"
+          onClick={[Function]}
+          role="tab"
+        >
+          <div
+            className="css-uecruo"
+          >
+            Menu 3
+          </div>
+        </button>
+        <button
+          aria-selected={false}
+          className="css-rkiiwd"
+          onClick={[Function]}
+          role="tab"
+        >
+          <div
+            className="css-uecruo"
+          >
+            Menu 4
+          </div>
+        </button>
+        <button
+          aria-selected={false}
+          className="css-rkiiwd"
+          onClick={[Function]}
+          role="tab"
+        >
+          <div
+            className="css-uecruo"
+          >
+            Menu 5
+          </div>
+        </button>
+      </div>
+      <div
+        aria-labelledby="example3"
+        className="css-nil"
+        role="tabpanel"
+      >
+        <div
+          className="content"
+        >
+          Menu stuff 3
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots theme light 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "white",
+        "color": "black",
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <div>
+      <div
+        className="css-1vqxkco"
+        role="tablist"
+      >
+        <button
+          aria-selected={false}
+          className="css-1880fhe"
+          onClick={[Function]}
+          role="tab"
+        >
+          <div
+            className="css-uecruo"
+          >
+            Menu 1
+          </div>
+        </button>
+        <button
+          aria-selected={false}
+          className="css-1880fhe"
+          onClick={[Function]}
+          role="tab"
+        >
+          <div
+            className="css-uecruo"
+          >
+            Menu 2
+          </div>
+        </button>
+        <button
+          aria-selected={true}
+          className="css-ao6ag7"
+          onClick={[Function]}
+          role="tab"
+        >
+          <div
+            className="css-uecruo"
+          >
+            Menu 3
+          </div>
+        </button>
+        <button
+          aria-selected={false}
+          className="css-1880fhe"
+          onClick={[Function]}
+          role="tab"
+        >
+          <div
+            className="css-uecruo"
+          >
+            Menu 4
+          </div>
+        </button>
+        <button
+          aria-selected={false}
+          className="css-1880fhe"
+          onClick={[Function]}
+          role="tab"
+        >
+          <div
+            className="css-uecruo"
+          >
+            Menu 5
+          </div>
+        </button>
+      </div>
+      <div
+        aria-labelledby="example3"
+        className="css-nil"
+        role="tabpanel"
+      >
+        <div
+          className="content"
+        >
+          Menu stuff 3
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
