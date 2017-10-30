@@ -1,20 +1,28 @@
 import core from '@pluralsight/ps-design-system-core'
 import glamorous from 'glamorous'
+import PropTypes from 'prop-types'
 import React from 'react'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
 
-const List = glamorous.div({
-  display: 'flex',
-  width: '100%',
-  height: '64px',
-  borderBottom: `1px solid ${core.colors.gray03}`
-})
+const List = glamorous.div(
+  {
+    display: 'flex',
+    width: '100%',
+    height: '64px'
+  },
+  ({ themeName }) => ({
+    borderBottom: `1px solid ${themeName === themeNames.light
+      ? core.colors.gray02
+      : core.colors.gray03}`
+  })
+)
 
 const findActiveIndex = els => {
   const i = React.Children.toArray(els).findIndex(el => el.props.active)
   return i > -1 ? i : 0
 }
 
-export default class extends React.Component {
+class ListComponent extends React.Component {
   constructor(props) {
     super(props)
     this.state = { activeIndex: findActiveIndex(this.props.children) }
@@ -33,7 +41,7 @@ export default class extends React.Component {
   }
   render() {
     return (
-      <List role="tablist">
+      <List role="tablist" themeName={this.context.themeName}>
         {React.Children.map(this.props.children, (el, i) =>
           React.cloneElement(el, {
             active: this.state.activeIndex === i,
@@ -45,3 +53,8 @@ export default class extends React.Component {
     )
   }
 }
+ListComponent.contextTypes = {
+  themeName: PropTypes.string
+}
+
+export default ListComponent

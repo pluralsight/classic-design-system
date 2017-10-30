@@ -27,7 +27,7 @@ const getBarHoverStyles = ({ themeName }) =>
     },
     [themeNames.light]: {
       color: core.colors.gray06,
-      borderBottom: `4px solid ${core.colors.gray03}`,
+      borderBottom: `4px solid ${core.colors.gray02}`,
       paddingBottom: 0
     }
   }[themeName])
