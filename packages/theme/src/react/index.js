@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 export const names = { dark: 'dark', light: 'light' }
+export const defaultName = names.dark
 
 class Theme extends React.Component {
   getChildContext() {
@@ -18,9 +19,10 @@ Theme.propTypes = {
   name: PropTypes.string.isRequired
 }
 Theme.defaultProps = {
-  name: names.dark
+  name: defaultName
 }
 
 Theme.names = names
+Theme.defaultName = defaultName
 
 export default Theme
