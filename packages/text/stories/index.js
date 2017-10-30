@@ -61,6 +61,18 @@ p.add('style override', _ => <Text.P style={style}>pink</Text.P>)
 
 p.add('className override', _ => <Text.P className={className}>orange</Text.P>)
 
+Object.keys(Theme.names)
+  .map((name, i) => [name, bgColors[i]])
+  .forEach(([name, backgroundColor]) =>
+    p.add(`theme ${name}`, _ => (
+      <div style={{ height: '100%', width: '100%', backgroundColor }}>
+        <Theme name={name}>
+          <Text.P>some text</Text.P>
+        </Theme>
+      </div>
+    ))
+  )
+
 const list = storiesOf('List', module).addDecorator(bg)
 
 Object.keys(Text.List.types).forEach(typeProp =>
@@ -74,3 +86,19 @@ Object.keys(Text.List.types).forEach(typeProp =>
     </Text.List>
   ))
 )
+
+Object.keys(Theme.names)
+  .map((name, i) => [name, bgColors[i]])
+  .forEach(([name, backgroundColor]) =>
+    list.add(`theme ${name}`, _ => (
+      <div style={{ height: '100%', width: '100%', backgroundColor }}>
+        <Theme name={name}>
+          <Text.List>
+            <Text.List.Item>one</Text.List.Item>
+            <Text.List.Item>two</Text.List.Item>
+            <Text.List.Item>three</Text.List.Item>
+          </Text.List>
+        </Theme>
+      </div>
+    ))
+  )

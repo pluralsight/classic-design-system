@@ -23,7 +23,7 @@ exports[`Storyshots Heading className override 1`] = `
         "data-css-3sgfk1": "",
       }
     }
-    data-css-nzo8hv=""
+    data-css-13v0ptp=""
     size="large"
   >
     orange
@@ -50,7 +50,7 @@ exports[`Storyshots Heading size: large 1`] = `
 >
   <h1
     className={undefined}
-    data-css-nzo8hv=""
+    data-css-13v0ptp=""
     size="large"
   >
     large
@@ -77,7 +77,7 @@ exports[`Storyshots Heading size: medium 1`] = `
 >
   <h1
     className={undefined}
-    data-css-1a4fjca=""
+    data-css-1fxxvvr=""
     size="medium"
   >
     medium
@@ -104,7 +104,7 @@ exports[`Storyshots Heading size: smallCaps 1`] = `
 >
   <h1
     className={undefined}
-    data-css-1napy4i=""
+    data-css-1oooiac=""
     size="smallCaps"
   >
     smallCaps
@@ -131,7 +131,7 @@ exports[`Storyshots Heading size: xLarge 1`] = `
 >
   <h1
     className={undefined}
-    data-css-1oiesip=""
+    data-css-qdaun0=""
     size="xLarge"
   >
     xLarge
@@ -158,7 +158,7 @@ exports[`Storyshots Heading style override 1`] = `
 >
   <h2
     className={undefined}
-    data-css-nzo8hv=""
+    data-css-13v0ptp=""
     size="large"
     style={
       Object {
@@ -168,6 +168,174 @@ exports[`Storyshots Heading style override 1`] = `
   >
     pink
   </h2>
+</div>
+`;
+
+exports[`Storyshots Heading theme dark 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "black",
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <h2
+      className={undefined}
+      data-css-13v0ptp=""
+      size="large"
+    >
+      wow
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Heading theme light 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "white",
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <h2
+      className={undefined}
+      data-css-138wye6=""
+      size="large"
+    >
+      wow
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`Storyshots List theme dark 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "black",
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <ul
+      className={
+        Object {
+          "data-css-npip9x": "",
+        }
+      }
+    >
+      <li>
+        one
+      </li>
+      <li>
+        two
+      </li>
+      <li>
+        three
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots List theme light 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "white",
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <ul
+      className={
+        Object {
+          "data-css-1apt1t1": "",
+        }
+      }
+    >
+      <li>
+        one
+      </li>
+      <li>
+        two
+      </li>
+      <li>
+        three
+      </li>
+    </ul>
+  </div>
 </div>
 `;
 
@@ -357,6 +525,76 @@ exports[`Storyshots P style override 1`] = `
   >
     pink
   </p>
+</div>
+`;
+
+exports[`Storyshots P theme dark 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "black",
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <p
+      data-css-150fsm1=""
+    >
+      some text
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots P theme light 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "white",
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <p
+      data-css-j1md1p=""
+    >
+      some text
+    </p>
+  </div>
 </div>
 `;
 
