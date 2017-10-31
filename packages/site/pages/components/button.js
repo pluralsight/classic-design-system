@@ -163,6 +163,27 @@ export default withServerProps(_ => (
           `<Button href="https://duckduckgo.com?q=pluralsight%20icons" target="_blank" icon={<Icon id={Icon.ids.pencil} />}>Link with icon</Button>`
         ]}
       />
+
+      <SectionHeading>Light theme</SectionHeading>
+      <P>
+        To specify the light theme, wrap your components in a <code>Theme</code>{' '}
+        componet.
+      </P>
+      <Example.React
+        orient="vertical"
+        includes={{ Button, Theme }}
+        codes={[
+          `
+<Theme name={Theme.names.light}>
+  <Button
+    icon={<Icon id={Icon.ids.user} />}
+    appearance={Button.appearances.flat}
+  >Light clicks only, please</Button>
+</Theme>
+`
+        ]}
+        themeName={Theme.names.light}
+      />
     </Content>
   </Chrome>
 ))

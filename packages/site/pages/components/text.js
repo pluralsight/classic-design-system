@@ -139,13 +139,21 @@ export default withServerProps(_ => (
       </P>
       <Example.React
         orient="vertical"
-        includes={{ Text, Theme }}
+        includes={{ P, Text, Theme }}
         codes={[
           `
 <Theme name={Theme.names.light}>
-  <Text.Heading size={Text.Heading.sizes.xLarge}>
-    <h2>Heading XL - Light</h2>
-  </Text.Heading>
+  <div>
+    <P>Some text on light background.</P>
+    <Text.Heading size={Text.Heading.sizes.xLarge}>
+      <h2>Heading XL - Light</h2>
+    </Text.Heading>
+    <Text.List type="numbered">
+      <Text.List.Item>apple</Text.List.Item>
+      <Text.List.Item>orange</Text.List.Item>
+      <Text.List.Item>banana</Text.List.Item>
+    </Text.List>
+  </div>
 </Theme>
 `
         ]}

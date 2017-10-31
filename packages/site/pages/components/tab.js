@@ -158,6 +158,31 @@ export default withServerProps(_ => (
 `
         ]}
       />
+
+      <SectionHeading>Light theme</SectionHeading>
+      <P>
+        To specify the light theme, wrap your components in a <code>Theme</code>{' '}
+        componet.
+      </P>
+      <Example.React
+        orient="vertical"
+        includes={{ Tab, Theme }}
+        codes={[
+          `
+<Theme name={Theme.names.light}>
+  <Tab.List>
+    <Tab.ListItem id="menu1">Menu Item</Tab.ListItem>
+    <Tab.ListItem id="menu2">Menu Item</Tab.ListItem>
+    <Tab.ListItem id="menu3">Menu Item</Tab.ListItem>
+    <Tab.ListItem id="menu4">Menu Item</Tab.ListItem>
+    <Tab.ListItem id="menu5">Menu Item</Tab.ListItem>
+  </Tab.List>
+</Theme>
+`
+        ]}
+        themeName={Theme.names.light}
+      />
+
       <InAppExample />
     </Content>
   </Chrome>
