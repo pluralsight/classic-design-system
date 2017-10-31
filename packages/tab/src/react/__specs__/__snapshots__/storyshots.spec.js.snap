@@ -138,12 +138,12 @@ exports[`Storyshots theme light 1`] = `
   >
     <div>
       <div
-        className="css-1vqxkco"
+        className="css-15rgkwr"
         role="tablist"
       >
         <button
           aria-selected={false}
-          className="css-1880fhe"
+          className="css-1yt331w"
           onClick={[Function]}
           role="tab"
         >
@@ -155,7 +155,7 @@ exports[`Storyshots theme light 1`] = `
         </button>
         <button
           aria-selected={false}
-          className="css-1880fhe"
+          className="css-1yt331w"
           onClick={[Function]}
           role="tab"
         >
@@ -179,7 +179,7 @@ exports[`Storyshots theme light 1`] = `
         </button>
         <button
           aria-selected={false}
-          className="css-1880fhe"
+          className="css-1yt331w"
           onClick={[Function]}
           role="tab"
         >
@@ -191,7 +191,7 @@ exports[`Storyshots theme light 1`] = `
         </button>
         <button
           aria-selected={false}
-          className="css-1880fhe"
+          className="css-1yt331w"
           onClick={[Function]}
           role="tab"
         >
