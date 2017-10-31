@@ -225,6 +225,7 @@ const rmNonHtmlProps = props => {
     iconOnly,
     innerRef,
     size,
+    themeName,
     ...rest
   } = props
   return rest
