@@ -16,6 +16,7 @@ module.exports = {
       '/components/row': { page: '/components/row' },
       '/components/tab': { page: '/components/tab' },
       '/components/text': { page: '/components/text' },
+      '/components/theme': { page: '/components/theme' },
       '/core/build': { page: '/core/build' },
       '/core/usage': { page: '/core/usage' },
       '/core/color': { page: '/core/color' },
