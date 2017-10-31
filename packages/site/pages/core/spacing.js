@@ -30,8 +30,7 @@ const Parent = props => (
       .parent {
         display: flex;
         flex-wrap: wrap;
-        margin: calc(-0.5 * ${core.layout.spacingLarge})
-          calc(-0.5 * ${core.layout.spacingLarge});
+        margin: calc(${core.layout.spacingLarge} / -2);
       }
     `}</style>
   </div>
@@ -177,7 +176,7 @@ const SpacingIncrements = props => (
 .mySelector { margin-top: var(--psLayoutSpacingLarge); }`}</Code>
     <style jsx>{`
       .example {
-        margin: ${core.layout.spacingLarge};
+        margin: ${core.layout.spacingLarge} 0;
       }
     `}</style>
   </div>

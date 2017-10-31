@@ -10,7 +10,7 @@ import {
   withServerProps
 } from '../../src/ui'
 
-const Bar = props =>
+const Bar = props => (
   <div className="bar" style={props.style}>
     <style jsx>{`
       .bar {
@@ -20,22 +20,22 @@ const Bar = props =>
       }
     `}</style>
   </div>
+)
 
-const Levels = props =>
+const Levels = props => (
   <div className="levels">
     {props.children}
     <style jsx>{`
       .levels {
         display: flex;
         flex-wrap: wrap;
-        margin: ${core.layout.spacingLarge}
-          calc(-1 * ${core.layout.spacingLarge} / 2)
-          calc(${core.layout.spacingLarge} / 2);
+        margin: calc(${core.layout.spacingLarge} / -2);
       }
     `}</style>
   </div>
+)
 
-const Level = props =>
+const Level = props => (
   <div className="level">
     {props.children}
     <style jsx>{`
@@ -54,8 +54,9 @@ const Level = props =>
       }
     `}</style>
   </div>
+)
 
-Level.Title = props =>
+Level.Title = props => (
   <div>
     <h3 className="title">
       {props.children}
@@ -69,19 +70,18 @@ Level.Title = props =>
       }
   `}</style>
   </div>
+)
 
-Level.Desc = props =>
+Level.Desc = props => (
   <div className="desc">
     {props.children}
     <style jsx>{``}</style>
   </div>
+)
 
-const LevelHeading = props =>
-  <SectionHeading>
-    {props.children}
-  </SectionHeading>
+const LevelHeading = props => <SectionHeading>{props.children}</SectionHeading>
 
-const LevelList = props =>
+const LevelList = props => (
   <div className="list">
     {props.children}
     <style jsx>{`
@@ -92,8 +92,9 @@ const LevelList = props =>
       }
     `}</style>
   </div>
+)
 
-export default withServerProps(_ =>
+export default withServerProps(_ => (
   <Chrome>
     <Content title="Install">
       <PageHeading>Contribute</PageHeading>
@@ -191,4 +192,4 @@ The design group meets together regularly to review the Style Guide and the late
 `}</Doc>
     </Content>
   </Chrome>
-)
+))
