@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.6.0"></a>
+# [9.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.5.0...@pluralsight/ps-design-system-site@9.6.0) (2017-10-31)
+
+
+### Bug Fixes
+
+* **site:** remove duplicate badge appearance example ([e1e38e0](https://github.com/pluralsight/design-system/commit/e1e38e0))
+* **site:** remove typo ([dd9e37e](https://github.com/pluralsight/design-system/commit/dd9e37e))
+* **site:** style inline links ([422d028](https://github.com/pluralsight/design-system/commit/422d028))
+* **site:** typo ([e5a50ed](https://github.com/pluralsight/design-system/commit/e5a50ed))
+
+
+### Features
+
+* **site:** add examples for light theming ([88ea507](https://github.com/pluralsight/design-system/commit/88ea507))
+* **site:** add theme component reference page ([303f412](https://github.com/pluralsight/design-system/commit/303f412))
+* **site:** make proptypes table horz scrollable ([7174754](https://github.com/pluralsight/design-system/commit/7174754))
+* **site:** support light theme in examples ([50eb410](https://github.com/pluralsight/design-system/commit/50eb410))
+
+
+
+
 <a name="9.5.0"></a>
 # [9.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.4.0...@pluralsight/ps-design-system-site@9.5.0) (2017-10-25)
 

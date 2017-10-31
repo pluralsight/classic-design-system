@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.4.0"></a>
+# [9.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@9.3.0...@pluralsight/ps-design-system-button@9.4.0) (2017-10-31)
+
+
+### Bug Fixes
+
+* **button:** remove themeName from markup ([7c786fa](https://github.com/pluralsight/design-system/commit/7c786fa))
+
+
+### Features
+
+* **button:** make theme aware; style light flat appearance ([c8ae736](https://github.com/pluralsight/design-system/commit/c8ae736))
+
+
+
+
 <a name="9.3.0"></a>
 # [9.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@9.2.1...@pluralsight/ps-design-system-button@9.3.0) (2017-10-25)
 

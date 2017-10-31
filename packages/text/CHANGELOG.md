@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.4.0"></a>
+# [10.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.3.0...@pluralsight/ps-design-system-text@10.4.0) (2017-10-31)
+
+
+### Features
+
+* **text:** make heading theme aware ([068f97a](https://github.com/pluralsight/design-system/commit/068f97a))
+* **text:** make p and list theme aware ([d97121a](https://github.com/pluralsight/design-system/commit/d97121a))
+
+
+
+
 <a name="10.3.0"></a>
 # [10.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.2.1...@pluralsight/ps-design-system-text@10.3.0) (2017-10-25)
 
