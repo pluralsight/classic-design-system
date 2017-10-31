@@ -1,5 +1,6 @@
 import Button from '@pluralsight/ps-design-system-button/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
   Chrome,
