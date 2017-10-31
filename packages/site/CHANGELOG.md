@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.6.1"></a>
+## [9.6.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.6.0...@pluralsight/ps-design-system-site@9.6.1) (2017-10-31)
+
+
+### Bug Fixes
+
+* **site:** add Theme imports to button and tab ([3c48686](https://github.com/pluralsight/design-system/commit/3c48686))
+* **site:** add theme to static gen map ([2d2f4b4](https://github.com/pluralsight/design-system/commit/2d2f4b4))
+
+
+
+
 <a name="9.6.0"></a>
 # [9.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.5.0...@pluralsight/ps-design-system-site@9.6.0) (2017-10-31)
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="7.2.1"></a>
+## [7.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.2.0...@pluralsight/ps-design-system-tab@7.2.1) (2017-10-31)
+
+
+### Bug Fixes
+
+* **tab:** keep active state on click without setting on listitem ([2040f0f](https://github.com/pluralsight/design-system/commit/2040f0f))
+* **tab:** update outdated snapshots ([4c6ed0a](https://github.com/pluralsight/design-system/commit/4c6ed0a))
+
+
+
+
 <a name="7.2.0"></a>
 # [7.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.1.0...@pluralsight/ps-design-system-tab@7.2.0) (2017-10-31)
 
