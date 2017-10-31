@@ -1,5 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 import Text from '@pluralsight/ps-design-system-text/react'
+import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
   Chrome,
@@ -129,6 +130,26 @@ export default withServerProps(_ => (
             </span>
           ])
         ]}
+      />
+
+      <SectionHeading>Light theme</SectionHeading>
+      <P>
+        To specify the light theme, wrap your components in a <code>Theme</code>{' '}
+        componet.
+      </P>
+      <Example.React
+        orient="vertical"
+        includes={{ Text, Theme }}
+        codes={[
+          `
+<Theme name={Theme.names.light}>
+  <Text.Heading size={Text.Heading.sizes.xLarge}>
+    <h2>Heading XL - Light</h2>
+  </Text.Heading>
+</Theme>
+`
+        ]}
+        themeName={Theme.names.light}
       />
     </Content>
   </Chrome>

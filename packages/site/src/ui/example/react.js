@@ -1,5 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 import CodeMirror from 'react-codemirror'
+import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import CodeMirrorCss from '../../../vendor/codemirror-css'
 import CodeMirrorTheme from '../../../vendor/codemirror-theme-monokai-sublime-css'
@@ -28,7 +29,7 @@ const compileSrc = src =>
 
 const formatSrc = code => code.trim()
 
-const OutputDecorationGlobalStyles = _ =>
+const OutputDecorationGlobalStyles = _ => (
   <style global jsx>{`
     .output {
       display: flex;
@@ -37,6 +38,9 @@ const OutputDecorationGlobalStyles = _ =>
       padding: ${core.layout.spacingLarge};
       background: ${core.colors.gray06};
       overflow: hidden;
+    }
+    .outputLight {
+      background: ${core.colors.bone};
     }
     .outputChild {
       margin: ${core.layout.spacingLarge} 0 0 0;
@@ -64,6 +68,7 @@ const OutputDecorationGlobalStyles = _ =>
       }
     }
   `}</style>
+)
 
 const decorateSrc = (props, codes) => {
   let decorated = `<div className="${getOutputClassName(
@@ -95,7 +100,9 @@ const renderOutput = (evaled, el) => ReactDOM.render(evaled, el)
 const unmountOutput = el => ReactDOM.unmountComponentAtNode(el)
 
 const getOutputClassName = props =>
-  `output ${props.orient === 'vertical'
+  `output ${props.themeName === Theme.names.light
+    ? 'outputLight'
+    : ''} ${props.orient === 'vertical'
     ? 'outputVertical'
     : 'outputHorizontal'}`
 
@@ -149,14 +156,14 @@ class ReactExample extends React.Component {
 
     return (
       <div className="editor">
-        {this.state.codes.map((code, i) =>
+        {this.state.codes.map((code, i) => (
           <CodeMirror
             key={i}
             value={formatSrc(code)}
             onChange={code => this.handleCodeChange(code, i)}
             options={options}
           />
-        )}
+        ))}
         <style jsx>{`
           .editor :global(.CodeMirror) {
             background: none;
@@ -172,29 +179,27 @@ class ReactExample extends React.Component {
     )
   }
   renderError() {
-    return this.state.error
-      ? <pre className="error">
-          {this.state.error}
-          <style jsx>{`
-            .error {
-              background: ${core.colors.red};
-              color: ${core.colors.white};
-              overflow: hidden;
-              padding: ${core.layout.spacingLarge};
-            }
-          `}</style>
-        </pre>
-      : null
+    return this.state.error ? (
+      <pre className="error">
+        {this.state.error}
+        <style jsx>{`
+          .error {
+            background: ${core.colors.red};
+            color: ${core.colors.white};
+            overflow: hidden;
+            padding: ${core.layout.spacingLarge};
+          }
+        `}</style>
+      </pre>
+    ) : null
   }
   render() {
     return (
       <div>
         {this.renderError()}
         <div ref={el => (this.outputEl = el)} />
-        <div className="src">
-          {this.renderSrc()}
-        </div>
         <OutputDecorationGlobalStyles />
+        <div className="src">{this.renderSrc()}</div>
         <style jsx>{`
           .src {
             padding: ${core.layout.spacingLarge};
@@ -210,10 +215,12 @@ ReactExample.propTypes = {
   codes: PropTypes.arrayOf(PropTypes.string),
   includes: PropTypes.object,
   outputChildStyle: PropTypes.object,
-  outputStyle: PropTypes.object
+  outputStyle: PropTypes.object,
+  themeName: PropTypes.oneOf(Object.keys(Theme.names))
 }
 ReactExample.defaultProps = {
-  orient: 'horizontal'
+  orient: 'horizontal',
+  themeName: Theme.defaultName
 }
 
 export default ReactExample

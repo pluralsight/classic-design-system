@@ -26,6 +26,7 @@
     "@pluralsight/ps-design-system-row": "^2.3.0",
     "@pluralsight/ps-design-system-tab": "^7.1.0",
     "@pluralsight/ps-design-system-text": "^10.3.0",
+    "@pluralsight/ps-design-system-theme": "^1.0.0",
     "babel-core": "^6.24.1",
     "babel-plugin-syntax-export-extensions": "^6.13.0",
     "babel-plugin-transform-export-extensions": "^6.22.0",
