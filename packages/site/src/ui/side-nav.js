@@ -275,6 +275,9 @@ export default withHeadings(props => (
       <NavLink href="/components/text" headings={props.headings}>
         Text
       </NavLink>
+      <NavLink href="/components/theme" headings={props.headings}>
+        Theme
+      </NavLink>
     </Group>
     <style jsx>{`
       .root {
