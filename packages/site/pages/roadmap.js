@@ -47,6 +47,10 @@ const work = {
   ],
   future: [
     {
+      title: 'Drawer',
+      tags: ['Component']
+    },
+    {
       title: 'Tooltip / Popover',
       tags: ['Component']
     },
