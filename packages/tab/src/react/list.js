@@ -17,20 +17,19 @@ const List = glamorous.div(
   })
 )
 
-const findActiveIndex = els => {
-  const i = React.Children.toArray(els).findIndex(el => el.props.active)
-  return i > -1 ? i : 0
-}
+const findActiveIndex = els =>
+  React.Children.toArray(els).findIndex(el => el.props.active)
 
 class ListComponent extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { activeIndex: findActiveIndex(this.props.children) }
+    const activeIndex = findActiveIndex(this.props.children)
+    this.state = { activeIndex: activeIndex > -1 ? activeIndex : 0 }
     this.handleListItemClick = this.handleListItemClick.bind(this)
   }
   componentWillReceiveProps(nextProps) {
     const nextActiveIndex = findActiveIndex(nextProps.children)
-    if (this.state.activeIndex !== nextActiveIndex) {
+    if (this.state.activeIndex !== nextActiveIndex && nextActiveIndex !== -1) {
       this.setState({ activeIndex: nextActiveIndex })
     }
   }

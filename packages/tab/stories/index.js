@@ -33,7 +33,6 @@ class InAppExample extends React.Component {
               id={menu.id}
               key={menu.id}
               onClick={this.handleTabClick}
-              {...(i === this.state.activeIndex ? { active: true } : null)}
             >
               {menu.label}
             </Tab.ListItem>

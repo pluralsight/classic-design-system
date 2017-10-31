@@ -33,8 +33,8 @@ exports[`Storyshots theme dark 1`] = `
         role="tablist"
       >
         <button
-          aria-selected={false}
-          className="css-rkiiwd"
+          aria-selected={true}
+          className="css-1rgs3k1"
           onClick={[Function]}
           role="tab"
         >
@@ -57,8 +57,8 @@ exports[`Storyshots theme dark 1`] = `
           </div>
         </button>
         <button
-          aria-selected={true}
-          className="css-1rgs3k1"
+          aria-selected={false}
+          className="css-rkiiwd"
           onClick={[Function]}
           role="tab"
         >
@@ -142,8 +142,8 @@ exports[`Storyshots theme light 1`] = `
         role="tablist"
       >
         <button
-          aria-selected={false}
-          className="css-1yt331w"
+          aria-selected={true}
+          className="css-ao6ag7"
           onClick={[Function]}
           role="tab"
         >
@@ -166,8 +166,8 @@ exports[`Storyshots theme light 1`] = `
           </div>
         </button>
         <button
-          aria-selected={true}
-          className="css-ao6ag7"
+          aria-selected={false}
+          className="css-1yt331w"
           onClick={[Function]}
           role="tab"
         >
