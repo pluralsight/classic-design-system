@@ -1,6 +1,6 @@
 /// <reference types="react" />
 
-export type Appearance = 'default' | 'subtle'
+type Appearance = 'default' | 'subtle'
 
 export interface LinkProps {
   appearance?: Appearance
