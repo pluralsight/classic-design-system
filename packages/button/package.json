@@ -31,7 +31,6 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@storybook/addon-backgrounds": "^3.0.0",
     "@storybook/addon-storyshots": "^3.2.4",
     "@storybook/react": "^3.2.3",
     "babel-cli": "^6.24.1",
