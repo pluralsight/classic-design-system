@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.5.0"></a>
+# [9.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@9.4.0...@pluralsight/ps-design-system-button@9.5.0) (2017-11-02)
+
+
+### Features
+
+* **storybook-addon-theme:** move button theme decorator to pkg ([d16aa5b](https://github.com/pluralsight/design-system/commit/d16aa5b))
+
+
+
+
 <a name="9.4.0"></a>
 # [9.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@9.3.0...@pluralsight/ps-design-system-button@9.4.0) (2017-10-31)
 

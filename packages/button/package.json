@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-button",
-  "version": "9.4.0",
+  "version": "9.5.0",
   "description": "Design System component for button ui",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.0.0",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.0",
     "@storybook/addons": "^3.2.14",
     "@storybook/react": "^3.2.14",
     "babel-cli": "^6.24.1",

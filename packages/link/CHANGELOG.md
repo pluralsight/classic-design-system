@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.5.0"></a>
+# [5.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@5.4.0...@pluralsight/ps-design-system-link@5.5.0) (2017-11-02)
+
+
+### Features
+
+* **link:** add typescript typings ([#133](https://github.com/pluralsight/design-system/issues/133)) ([b7af2c4](https://github.com/pluralsight/design-system/commit/b7af2c4))
+* **link:** add typings link in packagejson ([6d3e965](https://github.com/pluralsight/design-system/commit/6d3e965))
+
+
+
+
 <a name="5.4.0"></a>
 # [5.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@5.3.0...@pluralsight/ps-design-system-link@5.4.0) (2017-10-25)
 

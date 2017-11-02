@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.6.2"></a>
+## [9.6.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.6.1...@pluralsight/ps-design-system-site@9.6.2) (2017-11-02)
+
+
+### Bug Fixes
+
+* **site:** type and contribute spacing ([89708c1](https://github.com/pluralsight/design-system/commit/89708c1))
+
+
+
+
 <a name="9.6.1"></a>
 ## [9.6.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.6.0...@pluralsight/ps-design-system-site@9.6.1) (2017-10-31)
 
