@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.7.0"></a>
+# [9.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.6.2...@pluralsight/ps-design-system-site@9.7.0) (2017-11-02)
+
+
+### Features
+
+* **site:** link to themeable components ([f5c84ac](https://github.com/pluralsight/design-system/commit/f5c84ac))
+
+
+
+
 <a name="9.6.2"></a>
 ## [9.6.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.6.1...@pluralsight/ps-design-system-site@9.6.2) (2017-11-02)
 

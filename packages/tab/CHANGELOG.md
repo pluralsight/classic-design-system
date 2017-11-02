@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="7.2.2"></a>
+## [7.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.2.1...@pluralsight/ps-design-system-tab@7.2.2) (2017-11-02)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
 <a name="7.2.1"></a>
 ## [7.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.2.0...@pluralsight/ps-design-system-tab@7.2.1) (2017-10-31)
 
