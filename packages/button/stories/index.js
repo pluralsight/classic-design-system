@@ -1,30 +1,26 @@
-// import backgrounds from '@storybook/addon-backgrounds'
+import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
+import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import Button from '../react'
-import themeDecorator from '../src/theme-storybook-addon'
-
-// const themeDecorator = backgrounds([
-//   { name: 'product', value: core.colors.gray06, default: true }
-// ])
 
 const appearanceStory = storiesOf('appearance', module).addDecorator(
-  themeDecorator
+  themeDecorator(addons)
 )
 Object.keys(Button.appearances).forEach(app =>
   appearanceStory.add(app, _ => <Button appearance={app}>Click me</Button>)
 )
 
-const sizeStory = storiesOf('size', module).addDecorator(themeDecorator)
+const sizeStory = storiesOf('size', module).addDecorator(themeDecorator(addons))
 Object.keys(Button.sizes).forEach(size =>
   sizeStory.add(size, _ => <Button size={size}>Click me</Button>)
 )
 
-const iconStory = storiesOf('icon', module).addDecorator(themeDecorator)
+const iconStory = storiesOf('icon', module).addDecorator(themeDecorator(addons))
 Object.keys(Button.appearances).forEach(app =>
   iconStory.add(app, _ => (
     <Button appearance={app} icon={<Icon id={Icon.ids.check} />}>
@@ -58,7 +54,9 @@ Object.keys(Button.appearances).forEach(app =>
   )
 )
 
-const disabledStory = storiesOf('disabled', module).addDecorator(themeDecorator)
+const disabledStory = storiesOf('disabled', module).addDecorator(
+  themeDecorator(addons)
+)
 Object.keys(Button.appearances).forEach(app =>
   disabledStory.add(app, _ => (
     <Button disabled appearance={app}>
@@ -73,7 +71,7 @@ disabledStory.add('with icon', _ => (
 ))
 
 const asLink = storiesOf('as link', module)
-  .addDecorator(themeDecorator)
+  .addDecorator(themeDecorator(addons))
   .add('default', _ => (
     <Button href="https://duckduckgo.com">Click as link</Button>
   ))
@@ -84,7 +82,7 @@ const asLink = storiesOf('as link', module)
   ))
 
 const refExample = storiesOf('with ref', module)
-  .addDecorator(themeDecorator)
+  .addDecorator(themeDecorator(addons))
   .add('ref to handle focus', _ => (
     <Button innerRef={el => el && el.focus()}>Should be focused</Button>
   ))

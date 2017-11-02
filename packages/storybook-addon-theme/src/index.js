@@ -1,4 +1,3 @@
-import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
@@ -23,8 +22,7 @@ export class ThemeDecorator extends React.Component {
   constructor(props) {
     super(props)
     this.state = { themeName: Theme.defaultName }
-    this.channel = addons.getChannel()
-    console.log('this.channel', this.channel)
+    this.channel = this.props.addons.getChannel()
     this.story = this.props.story()
 
     this.setTheme = this.setTheme.bind(this)
@@ -57,4 +55,9 @@ export class ThemeDecorator extends React.Component {
   }
 }
 
-export default story => <ThemeDecorator story={story} />
+// NOTE: unconventional need to pass addons here.  dealt with this for a day
+// https://storybook.js.org/basics/faq/#why-is-there-no-addons-channel
+// this is the way I solved it, finally
+export default addons => story => (
+  <ThemeDecorator addons={addons} story={story} />
+)
