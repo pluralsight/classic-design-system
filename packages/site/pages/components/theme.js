@@ -1,5 +1,6 @@
 import Button from '@pluralsight/ps-design-system-button/react'
 import core from '@pluralsight/ps-design-system-core'
+import Text from '@pluralsight/ps-design-system-text/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
@@ -106,6 +107,20 @@ export default withServerProps(_ => (
         and "dark" themes.
       </P>
       <ContrastingExample />
+
+      <SectionHeading>Themeable Components</SectionHeading>
+      <P>These components will respond to changes in the Theme.</P>
+      <Text.List type={Text.List.types.bulleted}>
+        <Text.List.Item>
+          <Link href="/components/button#light-theme">Button</Link>
+        </Text.List.Item>
+        <Text.List.Item>
+          <Link href="/components/tab#light-theme">Tab</Link>
+        </Text.List.Item>
+        <Text.List.Item>
+          <Link href="/components/text#light-theme">Text</Link>
+        </Text.List.Item>
+      </Text.List>
     </Content>
   </Chrome>
 ))
