@@ -3,6 +3,7 @@
   "version": "5.4.0",
   "description": "Design System component for link/anchor ui",
   "main": "index.js",
+  "typings": "./react.d.ts",
   "scripts": {
     "build": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build -- --watch",
