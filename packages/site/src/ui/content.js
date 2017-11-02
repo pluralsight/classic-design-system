@@ -1,6 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import PropTypes from 'prop-types'
 import React from 'react'
+import Theme from '@pluralsight/ps-design-system-theme/react'
 
 class Headings {
   constructor() {
@@ -62,7 +63,9 @@ export default class extends React.Component {
   render() {
     return (
       <div className="content">
-        {this.props.children}
+        <Theme name={Theme.names.light}>
+          <div>{this.props.children}</div>
+        </Theme>
         <style jsx>{`
           .content {
             margin: 0 auto;
