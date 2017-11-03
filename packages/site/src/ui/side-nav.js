@@ -245,8 +245,9 @@ export default withHeadings(props => (
     <Group>
       <GroupTitle>CORE</GroupTitle>
       <NavLink href="/core/color">Color</NavLink>
-      <NavLink href="/core/typography">Typography</NavLink>
+      <NavLink href="/core/motion">Motion</NavLink>
       <NavLink href="/core/spacing">Spacing</NavLink>
+      <NavLink href="/core/typography">Typography</NavLink>
     </Group>
     <Group>
       <GroupTitle>COMPONENTS</GroupTitle>

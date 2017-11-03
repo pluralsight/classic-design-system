@@ -20,6 +20,7 @@ module.exports = {
       '/core/build': { page: '/core/build' },
       '/core/usage': { page: '/core/usage' },
       '/core/color': { page: '/core/color' },
+      '/core/motion': { page: '/core/motion' },
       '/core/spacing': { page: '/core/spacing' },
       '/core/typography': { page: '/core/typography' }
     }
