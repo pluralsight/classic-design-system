@@ -168,7 +168,11 @@ const ActionBar = glamorous.div(
   ({ actionBarVisible }) => (actionBarVisible ? { opacity: 1 } : {})
 )
 
-const ActionBarAction = props => <ActionButton>{props.icon}</ActionButton>
+const ActionBarAction = props => {
+  const filteredProps = {}
+  if (props.onClick) filteredProps.onClick = props.onClick
+  return <ActionButton {...filteredProps}>{props.icon}</ActionButton>
+}
 
 const ActionButton = glamorous.button(
   {
