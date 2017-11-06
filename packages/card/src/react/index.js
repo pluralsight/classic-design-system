@@ -307,30 +307,13 @@ const renderProgress = props =>
     </Progress>
   ) : null
 
-const TitleDiv = glamorous.div(
-  {
-    display: 'block',
-    paddingTop: core.layout.spacingXSmall,
-    fontWeight: core.type.fontWeightMedium,
-    overflow: 'hidden',
-    color: core.colors.white
-  },
-  ({ size }) =>
-    ({
-      small: {
-        fontSize: core.type.fontSizeXSmall,
-        lineHeight: core.lineHeightTight
-      },
-      medium: {
-        fontSize: core.type.fontSizeSmall,
-        lineHeight: core.lineHeightTight
-      },
-      large: {
-        fontSize: core.type.fontSizeMedium,
-        lineHeight: core.lineHeightStandard
-      }
-    }[size])
-)
+const TitleDiv = glamorous.div({
+  display: 'block',
+  paddingTop: core.layout.spacingXSmall,
+  fontWeight: core.type.fontWeightMedium,
+  overflow: 'hidden',
+  color: core.colors.white
+})
 
 const Title = props => {
   return (
@@ -387,10 +370,27 @@ const renderMetaData = (props, metadata) =>
     </Metadata>
   ) : null
 
-const renderTitle = props =>
-  React.cloneElement(props.title, {
-    size: props.size
-  })
+const TitleContainer = glamorous.div(
+  ({ size }) =>
+    ({
+      small: {
+        fontSize: core.type.fontSizeXSmall,
+        lineHeight: core.lineHeightTight
+      },
+      medium: {
+        fontSize: core.type.fontSizeSmall,
+        lineHeight: core.lineHeightTight
+      },
+      large: {
+        fontSize: core.type.fontSizeMedium,
+        lineHeight: core.lineHeightStandard
+      }
+    }[size])
+)
+
+const renderTitle = props => (
+  <TitleContainer {...props}>{props.title}</TitleContainer>
+)
 
 const CardComponent = props => (
   <Card
