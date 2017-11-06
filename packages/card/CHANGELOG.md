@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="7.4.0"></a>
+# [7.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@7.3.4...@pluralsight/ps-design-system-card@7.4.0) (2017-11-06)
+
+
+### Bug Fixes
+
+* **card:** allow title to respond to size when wrapped in textlink ([ecda203](https://github.com/pluralsight/design-system/commit/ecda203)), closes [#136](https://github.com/pluralsight/design-system/issues/136)
+
+
+### Features
+
+* **card:** add onClick support to Card.Action ([81fa61a](https://github.com/pluralsight/design-system/commit/81fa61a))
+
+
+
+
 <a name="7.3.4"></a>
 ## [7.3.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@7.3.3...@pluralsight/ps-design-system-card@7.3.4) (2017-11-06)
 

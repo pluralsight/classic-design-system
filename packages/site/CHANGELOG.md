@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.8.1"></a>
+## [9.8.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.8.0...@pluralsight/ps-design-system-site@9.8.1) (2017-11-06)
+
+
+### Bug Fixes
+
+* **site:** make motion travel example same in/out duration ([f1b113a](https://github.com/pluralsight/design-system/commit/f1b113a))
+
+
+
+
 <a name="9.8.0"></a>
 # [9.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.7.0...@pluralsight/ps-design-system-site@9.8.0) (2017-11-06)
 
