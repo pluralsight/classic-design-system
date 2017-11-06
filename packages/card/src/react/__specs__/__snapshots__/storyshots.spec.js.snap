@@ -28,10 +28,10 @@ exports[`Storyshots actionBar locked visible 1`] = `
         className="css-1wgk747"
       />
       <div
-        className="css-w0pkp2"
+        className="css-39snau"
       >
         <button
-          className="css-ni66k7"
+          className="css-1rtuca6"
         >
           <div
             className="css-otejxm"
@@ -49,7 +49,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
       </div>
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -169,10 +169,10 @@ exports[`Storyshots actionBar multiple actions 1`] = `
         className="css-1wgk747"
       />
       <div
-        className="css-1b3rnkd"
+        className="css-10jeq4t"
       >
         <button
-          className="css-ni66k7"
+          className="css-1rtuca6"
         >
           <div
             className="css-otejxm"
@@ -188,7 +188,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
           </div>
         </button>
         <button
-          className="css-ni66k7"
+          className="css-1rtuca6"
         >
           <div
             className="css-otejxm"
@@ -206,7 +206,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
       </div>
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -326,10 +326,10 @@ exports[`Storyshots actionBar single action 1`] = `
         className="css-1wgk747"
       />
       <div
-        className="css-1b3rnkd"
+        className="css-10jeq4t"
       >
         <button
-          className="css-ni66k7"
+          className="css-1rtuca6"
         >
           <div
             className="css-otejxm"
@@ -347,7 +347,7 @@ exports[`Storyshots actionBar single action 1`] = `
       </div>
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -473,7 +473,7 @@ exports[`Storyshots bonusBar only text 1`] = `
       </div>
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -596,7 +596,7 @@ exports[`Storyshots bonusBar some element 1`] = `
         className="css-1pi4dj8"
       >
         <div
-          className="css-4acvoh"
+          className="css-7wkwcf"
         >
           <svg
             viewBox="0 0 24 24"
@@ -610,7 +610,7 @@ exports[`Storyshots bonusBar some element 1`] = `
       </div>
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -727,7 +727,7 @@ exports[`Storyshots combo everything 1`] = `
       className="css-iwdsn5"
     >
       <span
-        className="css-1u1rf9d"
+        className="css-15yq56v"
       >
         <a
           href="http://duckduckgo.com?q=image"
@@ -738,7 +738,7 @@ exports[`Storyshots combo everything 1`] = `
         </a>
       </span>
       <div
-        className="css-e9z0nm"
+        className="css-10pysoa"
       >
         <span
           className="css-yvsvuk"
@@ -762,10 +762,10 @@ exports[`Storyshots combo everything 1`] = `
         </span>
       </div>
       <div
-        className="css-w0pkp2"
+        className="css-39snau"
       >
         <button
-          className="css-ni66k7"
+          className="css-1rtuca6"
         >
           <div
             className="css-otejxm"
@@ -781,7 +781,7 @@ exports[`Storyshots combo everything 1`] = `
           </div>
         </button>
         <button
-          className="css-ni66k7"
+          className="css-1rtuca6"
         >
           <div
             className="css-otejxm"
@@ -797,7 +797,7 @@ exports[`Storyshots combo everything 1`] = `
           </div>
         </button>
         <button
-          className="css-ni66k7"
+          className="css-1rtuca6"
         >
           <div
             className="css-otejxm"
@@ -838,7 +838,7 @@ exports[`Storyshots combo everything 1`] = `
       </div>
     </div>
     <span
-      className="css-1q84pdf"
+      className="css-1ublh7e"
     >
       <a
         href="http://duckduckgo.com?q=title"
@@ -941,7 +941,7 @@ exports[`Storyshots combo everything 1`] = `
         className="css-1tz10dh"
       >
         <span
-          className="css-1q84pdf"
+          className="css-1ublh7e"
         >
           <a
             href="http://duckduckgo.com/?q=jaketrent"
@@ -960,7 +960,7 @@ exports[`Storyshots combo everything 1`] = `
         className="css-1tz10dh"
       >
         <span
-          className="css-1q84pdf"
+          className="css-1ublh7e"
         >
           <a
             href="http://duckduckgo.com/?q=jaketrent"
@@ -979,7 +979,7 @@ exports[`Storyshots combo everything 1`] = `
         className="css-1tz10dh"
       >
         <span
-          className="css-1q84pdf"
+          className="css-1ublh7e"
         >
           <a
             href="http://duckduckgo.com/?q=jaketrent"
@@ -1030,7 +1030,7 @@ exports[`Storyshots fullOverlay link 1`] = `
         className="css-1wgk747"
       />
       <div
-        className="css-1opv87a"
+        className="css-4nxbcy"
       >
         <span
           className="css-yvsvuk"
@@ -1044,7 +1044,7 @@ exports[`Storyshots fullOverlay link 1`] = `
       </div>
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -1164,7 +1164,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
         className="css-1wgk747"
       />
       <div
-        className="css-1opv87a"
+        className="css-4nxbcy"
       >
         <span
           className="css-yvsvuk"
@@ -1189,7 +1189,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
       </div>
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -1306,7 +1306,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
       className="css-iwdsn5"
     >
       <span
-        className="css-1u1rf9d"
+        className="css-15yq56v"
       >
         <a
           href="http://duckduckgo.com?q=image"
@@ -1317,7 +1317,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
         </a>
       </span>
       <div
-        className="css-1opv87a"
+        className="css-4nxbcy"
       >
         <span
           className="css-yvsvuk"
@@ -1342,7 +1342,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
       </div>
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -1462,7 +1462,7 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
         className="css-1wgk747"
       />
       <div
-        className="css-e9z0nm"
+        className="css-10pysoa"
       >
         <span
           className="css-yvsvuk"
@@ -1472,7 +1472,7 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
       </div>
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -1592,7 +1592,7 @@ exports[`Storyshots fullOverlay text only 1`] = `
         className="css-1wgk747"
       />
       <div
-        className="css-1opv87a"
+        className="css-4nxbcy"
       >
         <span
           className="css-yvsvuk"
@@ -1602,7 +1602,7 @@ exports[`Storyshots fullOverlay text only 1`] = `
       </div>
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -1719,7 +1719,7 @@ exports[`Storyshots image image link 1`] = `
       className="css-iwdsn5"
     >
       <span
-        className="css-1u1rf9d"
+        className="css-15yq56v"
       >
         <a
           href="http://duckduckgo.com"
@@ -1731,7 +1731,7 @@ exports[`Storyshots image image link 1`] = `
       </span>
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -1852,7 +1852,7 @@ exports[`Storyshots image image only 1`] = `
       />
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -1973,7 +1973,7 @@ exports[`Storyshots metadata multiple text 1`] = `
       />
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -2114,7 +2114,7 @@ exports[`Storyshots metadata single text 1`] = `
       />
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -2244,7 +2244,7 @@ exports[`Storyshots metadata text link 1`] = `
       />
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -2339,7 +2339,7 @@ exports[`Storyshots metadata text link 1`] = `
         className="css-1tz10dh"
       >
         <span
-          className="css-1q84pdf"
+          className="css-1ublh7e"
         >
           <a
             href="http://duckduckgo.com?q=jim%20cooper"
@@ -2382,7 +2382,7 @@ exports[`Storyshots metadata text wrapper 1`] = `
       />
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -2516,7 +2516,7 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
       />
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -2611,7 +2611,7 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         className="css-1tz10dh"
       >
         <span
-          className="css-1q84pdf"
+          className="css-1ublh7e"
         >
           <a
             href="http://duckduckgo.com?q=jim%20cooper"
@@ -2628,7 +2628,7 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         className="css-1tz10dh"
       >
         <span
-          className="css-1q84pdf"
+          className="css-1ublh7e"
         >
           <a
             href="http://duckduckgo.com?q=react"
@@ -2705,7 +2705,7 @@ exports[`Storyshots progress done 1`] = `
       </div>
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -2826,7 +2826,7 @@ exports[`Storyshots progress none 1`] = `
       />
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -2955,7 +2955,7 @@ exports[`Storyshots progress some 1`] = `
       </div>
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -3076,7 +3076,7 @@ exports[`Storyshots size large 1`] = `
       />
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-5ivq8v"
     >
       <div
         className=""
@@ -3197,7 +3197,7 @@ exports[`Storyshots size medium 1`] = `
       />
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -3318,7 +3318,7 @@ exports[`Storyshots size small 1`] = `
       />
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-1xgy4jy"
     >
       <div
         className=""
@@ -3446,7 +3446,7 @@ exports[`Storyshots tag text only 1`] = `
       </div>
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -3590,7 +3590,7 @@ exports[`Storyshots tag with icon 1`] = `
       </div>
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -3711,7 +3711,7 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
       />
     </div>
     <span
-      className="css-1q84pdf"
+      className="css-1ublh7e"
     >
       <a
         href="http://duckduckgo.com?q=text"
@@ -3840,7 +3840,7 @@ exports[`Storyshots title long title, title wrapper 1`] = `
       />
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
@@ -3961,7 +3961,7 @@ exports[`Storyshots title text link with title wrapper 1`] = `
       />
     </div>
     <span
-      className="css-1q84pdf"
+      className="css-1ublh7e"
     >
       <a
         href="http://duckduckgo.com?q=text"
@@ -4090,7 +4090,7 @@ exports[`Storyshots title title wrapper 1`] = `
       />
     </div>
     <div
-      className="css-1tlmf72"
+      className="css-mqmux7"
     >
       <div
         className=""
