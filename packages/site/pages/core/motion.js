@@ -370,49 +370,49 @@ const Travel = _ => (
         border-radius: 22px;
       }
       @keyframes pill1 {
-        0% {
-          transform: translateX(0%);
-        }
-        14.29% {
+        6.67% {
           transform: translateX(100%);
         }
-        28.58% {
+        50% {
+          transform: translateX(100%);
+        }
+        56.67% {
           transform: translateX(0%);
         }
       }
       @keyframes pill2 {
-        0% {
-          transform: translateX(0%);
+        6.67% {
+          transform: translateX(12%);
         }
-        14.29% {
-          transform: translateX(25%);
+        50% {
+          transform: translateX(12%);
         }
-        28.58% {
+        56.67% {
           transform: translateX(0%);
         }
       }
       @keyframes pill3 {
-        0% {
-          transform: translateX(0%);
-        }
-        25% {
+        16.67% {
           transform: translateX(100%);
         }
         50% {
+          transform: translateX(100%);
+        }
+        83.33% {
           transform: translateX(0%);
         }
       }
       .pill1 {
         width: 50%;
-        animation: 1400ms linear 500ms infinite pill1;
+        animation: 3000ms 500ms infinite pill1;
       }
       .pill2Container {
         width: calc(100% - 44px);
-        animation: 1400ms linear 500ms infinite pill2;
+        animation: 3000ms 500ms infinite pill2;
       }
       .pill3Container {
         width: calc(100% - 44px);
-        animation: 2000ms linear 500ms infinite pill3;
+        animation: 3000ms 500ms infinite pill3;
       }
       .pill2,
       .pill3 {
