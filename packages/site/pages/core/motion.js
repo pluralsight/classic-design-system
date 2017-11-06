@@ -755,17 +755,18 @@ const Rotation = _ => (
       .box {
         background: ${core.colors.white};
         margin-right: ${core.layout.spacingXLarge};
-        animation: 5s linear infinite rotateme;
       }
       .boxSmall {
-        border: ${core.layout.spacingXSmall} solid ${core.colors.pink};
+        border: ${core.layout.spacingXXSmall} solid ${core.colors.pink};
         height: 32px;
         width: 32px;
+        animation: 1s linear infinite rotateme;
       }
       .boxLarge {
         border: ${core.layout.spacingSmall} solid ${core.colors.pink};
         height: 128px;
         width: 128px;
+        animation: 3s linear infinite rotateme;
       }
     `}</style>
   </div>
