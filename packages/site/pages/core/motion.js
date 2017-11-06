@@ -11,6 +11,8 @@ import {
   withServerProps
 } from '../../src/ui'
 
+const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
+
 const speeds = Object.keys(core.motion)
   .filter(key => /^speed/.test(key))
   .map(key => ({ varName: key, time: core.motion[key] }))
@@ -25,10 +27,14 @@ const Speeds = _ => (
   <div className="speeds">
     {speeds.map(speed => (
       <div className="speed" key={speed.title}>
-        <div className="icon">{speed.icon}</div>
-        <div className="title">{speed.title}</div>
-        <div className="time">{speed.time}</div>
-        <div className="varName">{speed.varName}</div>
+        <div className="box">
+          <div className="icon">{speed.icon}</div>
+          <div className="title">{speed.title}</div>
+          <div className="time">{speed.time}</div>
+        </div>
+        <div className="varName">
+          <code>psMotion{capitalize(speed.varName)}</code>
+        </div>
       </div>
     ))}
     <style jsx>{`
@@ -39,6 +45,11 @@ const Speeds = _ => (
       }
       .speed {
         flex: 1;
+        margin: calc(${core.layout.spacingLarge} / 2);
+        font-size: ${core.type.fontSizeSmall};
+        text-align: center;
+      }
+      .box {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -46,12 +57,9 @@ const Speeds = _ => (
         overflow: hidden;
         min-width: 150px;
         height: 150px;
-        margin: calc(${core.layout.spacingLarge} / 2);
         background: ${core.colors.bone};
         color: ${core.colors.gray03};
         border-radius: 12px;
-        font-size: ${core.type.fontSizeSmall};
-        text-align: center;
       }
       .icon {
         font-size: ${core.type.fontSizeXLarge};
@@ -66,6 +74,9 @@ const Speeds = _ => (
         line-height: ${core.type.lineHeightStandard};
       }
       .varName {
+        margin-top: ${core.layout.spacingSmall};
+        font-size: ${core.type.fontSizeXSmall};
+        color: ${core.colors.pink};
       }
     `}</style>
   </div>
