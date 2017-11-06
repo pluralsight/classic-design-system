@@ -1,7 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import glamorous from 'glamorous'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Shiitake from 'shiitake'
@@ -249,7 +249,7 @@ const Tag = props => (
   <TagDiv>
     {props.icon && (
       <TagIcon>
-        {React.cloneElement(props.icon, { size: Icon.sizes.small })}
+        {React.cloneElement(props.icon, { size: iconSizes.small })}
       </TagIcon>
     )}
     <span>{props.children}</span>
