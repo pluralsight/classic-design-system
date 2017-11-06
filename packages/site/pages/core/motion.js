@@ -441,7 +441,9 @@ const Easing = _ => (
       <div className="function">
         <div className="label">
           Use <b>ease-in-out</b> for moving point to point.
-          <div className="dot" />
+          <div className="dotContainer dotContainer1">
+            <div className="dot" />
+          </div>
         </div>
         <div className="graphic">
           <svg
@@ -477,7 +479,9 @@ const Easing = _ => (
       <div className="function">
         <div className="label">
           Use <b>ease-out</b> for entering elements.
-          <div className="dot" />
+          <div className="dotContainer dotContainer2">
+            <div className="dot" />
+          </div>
         </div>
         <div className="graphic">
           <svg
@@ -513,7 +517,9 @@ const Easing = _ => (
       <div className="function">
         <div className="label">
           Use <b>ease-in</b> for exiting elements.
-          <div className="dot" />
+          <div className="dotContainer dotContainer3">
+            <div className="dot" />
+          </div>
         </div>
         <div className="graphic">
           <svg
@@ -549,7 +555,9 @@ const Easing = _ => (
       <div className="function">
         <div className="label">
           Use <b>linear</b> for opacity or color changes.
-          <div className="dot" />
+          <div className="dotContainer">
+            <div className="dot dot4" />
+          </div>
         </div>
         <div className="graphic">
           <svg
@@ -607,6 +615,7 @@ const Easing = _ => (
         padding: ${core.layout.spacingLarge};
         background: ${core.colors.bone};
         border-radius: 12px;
+        overflow: hidden;
       }
       .defaultFunction {
         margin-top: ${core.layout.spacingLarge};
@@ -619,14 +628,103 @@ const Easing = _ => (
         font-weight: ${core.type.fontWeightLight};
       }
       .label {
+        width: 215px;
         font-size: ${core.type.fontSizeMedium};
         line-height: ${core.type.lineHeightStandard};
         font-weight: ${core.type.fontWeightLight};
       }
-      .dot {
+      @keyframes animateEaseinout {
+        25% {
+          transform: translateX(100%);
+          animation-timing-function: ease-in-out;
+        }
+        50% {
+          transform: translateX(100%);
+          animation-timing-function: linear;
+        }
+        75% {
+          animation-timing-function: ease-in-out;
+          transform: translateX(0%);
+        }
+      }
+      @keyframes animateEaseout {
+        33.3% {
+          transform: translateX(100%);
+          animation-timing-function: ease-out;
+        }
+        66.6% {
+          transform: translateX(100%);
+          opacity: 1;
+          animation-timing-function: linear;
+        }
+        67% {
+          opacity: 0;
+          animation-timing-function: linear;
+        }
+        100% {
+          opacity: 0;
+          transform: translateX(0);
+          animation-timing-function: linear;
+        }
+      }
+      @keyframes animateEasein {
+        33.3% {
+          transform: translateX(100%);
+          animation-timing-function: linear;
+        }
+        66.6% {
+          transform: translateX(0%);
+          opacity: 1;
+          animation-timing-function: ease-in;
+        }
+        67% {
+          opacity: 0;
+          animation-timing-function: linear;
+        }
+        100% {
+          opacity: 0;
+          transform: translateX(100%);
+          animation-timing-function: linear;
+        }
+      }
+      @keyframes animateLinear {
+        16.6% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        66.6% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .dotContainer {
         position: absolute;
         left: ${core.layout.spacingLarge};
         bottom: ${core.layout.spacingLarge};
+      }
+      .dotContainer1 {
+        animation: 2000ms 500ms infinite animateEaseinout;
+        width: calc(215px - 16px - ${core.layout.spacingSmall});
+      }
+      .dotContainer2 {
+        left: -16px;
+        width: 215px;
+        animation: 1500ms 500ms infinite animateEaseout;
+      }
+      .dotContainer3 {
+        left: -16px;
+        width: calc(215px + 16px);
+        transform: translateX(100%);
+        animation: 1500ms infinite animateEasein;
+      }
+      .dot4 {
+        animation: 3000ms linear infinite animateLinear;
+      }
+      .dot {
         height: 16px;
         width: 16px;
         border-radius: 50%;
