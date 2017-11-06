@@ -689,8 +689,12 @@ export default withServerProps(_ => (
         increments.
       </P>
       <Speeds />
-
-      <SectionHeading>Speed</SectionHeading>
+      <div style={{ margin: `${core.layout.spacingLarge} 0` }}>
+        <Code lang="css">{`@import "@pluralsight/ps-design-system-core";
+.mySelector {
+  animation-duration: var(--psMotionSpeedXFast);
+}`}</Code>
+      </div>
       <P>Some general guidance on selecting a duration.</P>
       <Relative />
 
@@ -699,10 +703,6 @@ export default withServerProps(_ => (
         duration so that the movement isn’t too fast and abrupt.
       </P>
       <Travel />
-      <Code lang="css">{`@import "@pluralsight/ps-design-system-core";
-.mySelector {
-  animation-duration: var(--psMotionSpeedXFast);
-}`}</Code>
 
       <SectionHeading>Easing</SectionHeading>
       <P>Some general guidance on selecting an easing curve.</P>
