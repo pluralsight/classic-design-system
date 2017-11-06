@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.8.0"></a>
+# [9.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.7.0...@pluralsight/ps-design-system-site@9.8.0) (2017-11-06)
+
+
+### Features
+
+* **site:** add motion reference page ([fb6c3e2](https://github.com/pluralsight/design-system/commit/fb6c3e2))
+* **site:** motion reference page ([ef38cea](https://github.com/pluralsight/design-system/commit/ef38cea))
+
+
+
+
 <a name="9.7.0"></a>
 # [9.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.6.2...@pluralsight/ps-design-system-site@9.7.0) (2017-11-02)
 

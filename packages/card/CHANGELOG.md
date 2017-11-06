@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="7.3.4"></a>
+## [7.3.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@7.3.3...@pluralsight/ps-design-system-card@7.3.4) (2017-11-06)
+
+
+### Bug Fixes
+
+* **card:** add missing prod dependency for icon ([21219a4](https://github.com/pluralsight/design-system/commit/21219a4))
+* **card:** update snaphots for style changes ([29bf12a](https://github.com/pluralsight/design-system/commit/29bf12a))
+
+
+
+
 <a name="7.3.3"></a>
 ## [7.3.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@7.3.2...@pluralsight/ps-design-system-card@7.3.3) (2017-11-02)
 
