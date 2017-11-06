@@ -398,7 +398,7 @@ const Travel = _ => (
         50% {
           transform: translateX(100%);
         }
-        83.33% {
+        66.67% {
           transform: translateX(0%);
         }
       }
