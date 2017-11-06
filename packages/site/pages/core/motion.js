@@ -369,39 +369,50 @@ const Travel = _ => (
         margin-top: ${core.layout.spacingLarge};
         border-radius: 22px;
       }
-      @keyframes fullrange {
+      @keyframes pill1 {
         0% {
           transform: translateX(0%);
         }
-        50% {
+        14.29% {
           transform: translateX(100%);
         }
-        100% {
+        28.58% {
           transform: translateX(0%);
         }
       }
-      @keyframes partialrange {
+      @keyframes pill2 {
         0% {
           transform: translateX(0%);
         }
-        50% {
+        14.29% {
           transform: translateX(25%);
         }
-        100% {
+        28.58% {
+          transform: translateX(0%);
+        }
+      }
+      @keyframes pill3 {
+        0% {
+          transform: translateX(0%);
+        }
+        25% {
+          transform: translateX(100%);
+        }
+        50% {
           transform: translateX(0%);
         }
       }
       .pill1 {
         width: 50%;
-        animation: 2s 1s linear infinite fullrange;
+        animation: 1400ms linear 500ms infinite pill1;
       }
       .pill2Container {
         width: calc(100% - 44px);
-        animation: 1600ms 1s linear infinite fullrange;
+        animation: 1400ms linear 500ms infinite pill2;
       }
       .pill3Container {
         width: calc(100% - 44px);
-        animation: 800ms 1s linear infinite partialrange;
+        animation: 2000ms linear 500ms infinite pill3;
       }
       .pill2,
       .pill3 {
