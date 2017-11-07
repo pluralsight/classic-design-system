@@ -524,7 +524,7 @@ const Rotation = _ => (
       .rotation {
         display: flex;
         margin-bottom: ${core.layout.spacingLarge};
-        padding: ${core.layout.spacingLarge};
+        padding: ${core.layout.spacingXLarge};
         background: ${core.colors.bone};
         border-radius: 12px;
         overflow: hidden;
