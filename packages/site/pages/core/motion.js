@@ -90,8 +90,6 @@ const Relative = _ => (
     />
     <style jsx>{`
       .relative {
-        display: flex;
-        justify-content: center;
         padding: ${core.layout.spacingLarge} ${core.layout.spacingXLarge};
         background: ${core.colors.bone};
         border-radius: 12px;
@@ -231,7 +229,7 @@ const Easing = _ => (
             viewBox="0 0 151 103"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g fill="none" fill-rule="evenodd">
+            <g fill="none" fillRule="evenodd">
               <path
                 d="M1 100h149"
                 stroke="#AAA"
@@ -269,7 +267,7 @@ const Easing = _ => (
             viewBox="0 0 151 102"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g fill="none" fill-rule="evenodd">
+            <g fill="none" fillRule="evenodd">
               <path
                 d="M1 100h149"
                 stroke="#AAA"
@@ -307,7 +305,7 @@ const Easing = _ => (
             viewBox="0 0 151 102"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g fill="none" fill-rule="evenodd">
+            <g fill="none" fillRule="evenodd">
               <path
                 d="M1 100h149"
                 stroke="#AAA"
@@ -345,7 +343,7 @@ const Easing = _ => (
             viewBox="0 0 151 103"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g fill="none" fill-rule="evenodd">
+            <g fill="none" fillRule="evenodd">
               <path
                 d="M1 100h149H1z"
                 stroke="#AAA"
