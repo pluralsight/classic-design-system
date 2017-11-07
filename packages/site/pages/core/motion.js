@@ -413,71 +413,74 @@ const Easing = _ => (
         font-weight: ${core.type.fontWeightLight};
       }
       @keyframes animateEaseinout {
-        25% {
-          transform: translateX(100%);
+        0% {
           animation-timing-function: ease-in-out;
         }
-        50% {
+        16.67% {
           transform: translateX(100%);
           animation-timing-function: linear;
         }
-        75% {
+        50% {
+          transform: translateX(100%);
           animation-timing-function: ease-in-out;
+        }
+        66.67% {
+          transform: translateX(0%);
+          animation-timing-function: linear;
+        }
+        100% {
           transform: translateX(0%);
         }
       }
       @keyframes animateEaseout {
-        33.3% {
-          transform: translateX(100%);
+        0% {
           animation-timing-function: ease-out;
         }
-        66.6% {
+        20% {
           transform: translateX(100%);
-          opacity: 1;
           animation-timing-function: linear;
         }
-        67% {
+        60% {
+          transform: translateX(100%);
+          opacity: 1;
+        }
+        60.01% {
           opacity: 0;
-          animation-timing-function: linear;
         }
         100% {
           opacity: 0;
           transform: translateX(0);
-          animation-timing-function: linear;
         }
       }
       @keyframes animateEasein {
-        33.3% {
+        0% {
           transform: translateX(100%);
-          animation-timing-function: linear;
-        }
-        66.6% {
-          transform: translateX(0%);
-          opacity: 1;
           animation-timing-function: ease-in;
         }
-        67% {
-          opacity: 0;
+        20% {
+          transform: translateX(0%);
           animation-timing-function: linear;
         }
         100% {
-          opacity: 0;
-          transform: translateX(100%);
-          animation-timing-function: linear;
+          transform: translateX(0%);
         }
       }
       @keyframes animateLinear {
+        0% {
+          opacity: 0;
+          animation-timing-function: linear;
+        }
         16.6% {
           opacity: 1;
         }
         50% {
-          opacity: 0;
+          opacity: 1;
         }
         66.6% {
           opacity: 0;
         }
         100% {
-          opacity: 1;
+          opacity: 0;
         }
       }
       .dotContainer {
@@ -486,22 +489,22 @@ const Easing = _ => (
         bottom: ${core.layout.spacingLarge};
       }
       .dotContainer1 {
-        animation: 2000ms 500ms infinite animateEaseinout;
+        animation: 3000ms infinite animateEaseinout;
         width: calc(215px - 16px - ${core.layout.spacingSmall});
       }
       .dotContainer2 {
         left: -16px;
         width: 215px;
-        animation: 1500ms 500ms infinite animateEaseout;
+        animation: 2500ms 500ms infinite animateEaseout;
       }
       .dotContainer3 {
         left: -16px;
         width: calc(215px + 16px);
         transform: translateX(100%);
-        animation: 1500ms infinite animateEasein;
+        animation: 2500ms infinite animateEasein;
       }
       .dot4 {
-        animation: 3000ms linear infinite animateLinear;
+        animation: 3000ms infinite animateLinear;
       }
       .dot {
         height: 16px;
