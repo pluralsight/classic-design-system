@@ -1,6 +1,6 @@
 {
-  "name": "test-ds",
-  "version": "0.1.0",
+  "name": "ps-design-system-example-react-install",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@pluralsight/ps-design-system-actionmenu": "^2.3.4",
