@@ -150,6 +150,120 @@ const FontSize = props => (
   </div>
 )
 
+const LineHeight = _ => (
+  <div>
+    <div className="lineHeights">
+      <div className="lineHeight">
+        <div className="text textHuge">
+          <div className="textBg textBgHuge" />
+          <div className="textInner">
+            Lorem ipsum dolor sit amet, consectetur
+          </div>
+        </div>
+        <div className="label">40px - Huge</div>
+      </div>
+      <div className="lineHeight">
+        <div className="text textExtra">
+          <div className="textBg textBgExtra" />
+          <div className="textInner">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          </div>
+        </div>
+        <div className="label">32px - Extra</div>
+      </div>
+      <div className="lineHeight">
+        <div className="text textStandard">
+          <div className="textBg textBgStandard" />
+          <div className="textInner">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore
+          </div>
+        </div>
+        <div className="label">24px - Standard</div>
+      </div>
+      <div className="lineHeight">
+        <div className="text textTight">
+          <div className="textBg textBgTight" />
+          <div className="textInner">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis
+          </div>
+        </div>
+        <div className="label">20px - Tight</div>
+      </div>
+    </div>
+    <style jsx>{`
+      .lineHeights {
+        display: flex;
+        flex-wrap: wrap;
+        margin: calc(${core.layout.spacingLarge} / -2);
+      }
+      .lineHeight {
+        width: calc(50% - ${core.layout.spacingLarge});
+        margin: calc(${core.layout.spacingLarge} / 2);
+        border-radius: 12px;
+        padding: ${core.layout.spacingLarge};
+        background: ${core.colors.bone};
+      }
+      .text {
+        position: relative;
+        overflow: hidden;
+      }
+      .textInner {
+        position: relative;
+      }
+      .textBg {
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        background: linear-gradient(
+          to bottom,
+          #b4d9f2,
+          #b4d9f2 1px,
+          #efefef 1px,
+          #efefef
+        );
+        background-size: 1px 8px;
+      }
+      .textHuge {
+        font-size: ${core.type.fontSizeXLarge};
+        line-height: ${core.type.lineHeightHuge};
+      }
+      .textExtra {
+        font-size: ${core.type.fontSizeLarge};
+        line-height: ${core.type.lineHeightExtra};
+      }
+      .textStandard {
+        font-size: ${core.type.fontSizeMedium};
+        line-height: ${core.type.lineHeightStandard};
+      }
+      .textTight {
+        font-size: ${core.type.fontSizeXSmall};
+        line-height: ${core.type.lineHeightTight};
+      }
+      .textBgHuge {
+        top: 31px;
+      }
+      .textBgExtra {
+        top: 25px;
+      }
+      .textBgStandard {
+        top: 18px;
+      }
+      .textBgTight {
+        top: 14px;
+        background-size: 1px 4px;
+      }
+      .label {
+        margin-top: ${core.layout.spacingSmall};
+        color: ${core.colors.gray03};
+        font-weight: ${core.type.fontWeightMedium};
+      }
+    `}</style>
+  </div>
+)
+
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Typography">
@@ -175,6 +289,17 @@ export default withServerProps(_ => (
       <SectionHeading>Font size</SectionHeading>
       <P>Eight Gotham SSm font sizes are available.</P>
       <FontSize />
+
+      <SectionHeading>Line height</SectionHeading>
+      <P>
+        Four line height increments are available. Each font size also has a
+        default line height.
+      </P>
+      <LineHeight />
+      <div style={{ marginTop: core.layout.spacingLarge }}>
+        <Code language="css">{`@import "@pluralsight/ps-design-system-core";
+.mySelector { line-height: var(--psTypeLineHeightStandard); }`}</Code>
+      </div>
     </Content>
   </Chrome>
 ))
