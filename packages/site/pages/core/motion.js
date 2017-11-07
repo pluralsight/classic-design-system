@@ -161,10 +161,10 @@ const Travel = _ => (
       }
       @keyframes pill2 {
         6.67% {
-          transform: translateX(12%);
+          transform: translateX(calc(25% - 44px));
         }
         50% {
-          transform: translateX(12%);
+          transform: translateX(calc(25% - 44px));
         }
         56.67% {
           transform: translateX(0%);
