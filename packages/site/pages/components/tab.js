@@ -40,28 +40,30 @@ class InAppExample extends React.Component {
           standards for the UI. You control the hiding and showing of content or
           other interaction specific to your application.
         </P>
-        <div className="app">
-          <Tab.List>
-            {this.menus.map((menu, i) => (
-              <Tab.ListItem
-                id={menu.id}
-                key={menu.id}
-                onClick={this.handleTabClick}
-                {...(i === this.state.activeIndex ? { active: true } : null)}
-              >
-                {menu.label}
-              </Tab.ListItem>
-            ))}
-          </Tab.List>
-          {this.menus.map(
-            (menu, i) =>
-              i === this.state.activeIndex ? (
-                <Tab.Panel labelledBy={menu.id} key={menu.id}>
-                  <div className="content">{menu.content}</div>
-                </Tab.Panel>
-              ) : null
-          )}
-        </div>
+        <Theme>
+          <div className="app">
+            <Tab.List>
+              {this.menus.map((menu, i) => (
+                <Tab.ListItem
+                  id={menu.id}
+                  key={menu.id}
+                  onClick={this.handleTabClick}
+                  {...(i === this.state.activeIndex ? { active: true } : null)}
+                >
+                  {menu.label}
+                </Tab.ListItem>
+              ))}
+            </Tab.List>
+            {this.menus.map(
+              (menu, i) =>
+                i === this.state.activeIndex ? (
+                  <Tab.Panel labelledBy={menu.id} key={menu.id}>
+                    <div className="content">{menu.content}</div>
+                  </Tab.Panel>
+                ) : null
+            )}
+          </div>
+        </Theme>
         <style jsx>{`
           .app {
             background: ${core.colors.gray06};
