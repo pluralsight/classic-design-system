@@ -181,15 +181,15 @@ const Travel = _ => (
       }
       .pill1 {
         width: 50%;
-        animation: 3000ms 500ms infinite pill1;
+        animation: 4000ms 500ms infinite pill1;
       }
       .pill2Container {
         width: calc(100% - 44px);
-        animation: 3000ms 500ms infinite pill2;
+        animation: 4000ms 500ms infinite pill2;
       }
       .pill3Container {
         width: calc(100% - 44px);
-        animation: 3000ms 500ms infinite pill3;
+        animation: 4000ms 500ms infinite pill3;
       }
       .pill2,
       .pill3 {
