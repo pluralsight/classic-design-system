@@ -39,10 +39,10 @@ const FontFamily = props => (
 
 const weights = [
   { label: 'BOLD', weight: 700, varName: 'psTypeFontWeightBold' },
-  { label: 'MEDIUM', weight: 500, varName: 'psTypeFontWeightMedium' },
+  { label: 'MEDIUM', weight: 500, varName: '…TypeFontWeightMedium' },
   { label: 'BOOK', weight: 400, varName: 'psTypeFontWeightBook' },
   { label: 'LIGHT', weight: 300, varName: 'psTypeFontWeightLight' },
-  { label: 'EXTRA LIGHT', weight: 200, varName: 'psTypeFontWeightXLight' }
+  { label: 'EXTRA LIGHT', weight: 200, varName: '…TypeFontWeightXLight' }
 ]
 
 const FontWeight = props => (
@@ -50,38 +50,43 @@ const FontWeight = props => (
     <div className="weights">
       {weights.map((w, i) => (
         <div className="weight" key={i}>
-          <div style={{ fontWeight: w.weight }} className="weightLetters">
-            Aa
+          <div className="box">
+            <div style={{ fontWeight: w.weight }} className="weightLetters">
+              Aa
+            </div>
+            <div className="weightLabel">
+              {w.label} ({w.weight})
+            </div>
           </div>
-          <div className="weightLabel">
-            {w.label} ({w.weight})
-          </div>
+          <code className="weightVar">{w.varName}</code>
         </div>
       ))}
     </div>
-    <Code language="css">{`@import "@pluralsight/ps-design-system-core";
+    <div className="codeExample">
+      <Code language="css">{`@import "@pluralsight/ps-design-system-core";
 .mySelector { font-weight: var(--psTypeFontWeightBold); }`}</Code>
+    </div>
     <style jsx>{`
       .weights {
         display: flex;
         flex-wrap: wrap;
-        margin: calc(-1 * ${core.layout.spacingLarge} / 2)
-          calc(-1 * ${core.layout.spacingLarge} / 2)
-          calc(${core.layout.spacingLarge} / 2);
+        margin: calc(${core.layout.spacingLarge} / -2);
       }
       .weight {
         flex: 1;
-        height: 150px;
-        min-width: 150px;
         margin: calc(${core.layout.spacingLarge} / 2);
-        background: ${core.colors.bone};
         color: ${core.colors.gray06};
         text-align: center;
+      }
+      .box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border-radius: 12px;
+        background: ${core.colors.bone};
+        height: 150px;
+        min-width: 150px;
       }
       .weightLetters {
         font-size: ${core.type.fontSizeGigantic};
@@ -90,6 +95,14 @@ const FontWeight = props => (
       .weightLabel {
         color: ${core.colors.gray03};
         font-size: ${core.type.fontSizeXSmall};
+      }
+      .weightVar {
+        margin-top: ${core.layout.spacingSmall};
+        font-size: ${core.type.fontSizeXSmall};
+        color: ${core.colors.pink};
+      }
+      .codeExample {
+        margin-top: ${core.layout.spacingLarge};
       }
     `}</style>
   </div>
@@ -118,6 +131,7 @@ const FontSize = props => (
           <div className="sizeLabel">
             {w.size} - {w.label}
           </div>
+          <code className="sizeVar">{w.varName}</code>
         </div>
       ))}
     </div>
@@ -146,6 +160,11 @@ const FontSize = props => (
         color: ${core.colors.gray03};
         font-size: ${core.type.fontSizeXSmall};
       }
+      .sizeVar {
+        margin-top: ${core.layout.spacingSmall};
+        font-size: ${core.type.fontSizeXSmall};
+        color: ${core.colors.pink};
+      }
     `}</style>
   </div>
 )
@@ -161,6 +180,7 @@ const LineHeight = _ => (
           </div>
         </div>
         <div className="label">40px - Huge</div>
+        <code className="varName">psTypeLineHeightHuge</code>
       </div>
       <div className="lineHeight">
         <div className="text textExtra">
@@ -170,6 +190,7 @@ const LineHeight = _ => (
           </div>
         </div>
         <div className="label">32px - Extra</div>
+        <code className="varName">psTypeLineHeightExtra</code>
       </div>
       <div className="lineHeight">
         <div className="text textStandard">
@@ -180,6 +201,7 @@ const LineHeight = _ => (
           </div>
         </div>
         <div className="label">24px - Standard</div>
+        <code className="varName">psTypeLineHeightStandard</code>
       </div>
       <div className="lineHeight">
         <div className="text textTight">
@@ -191,6 +213,7 @@ const LineHeight = _ => (
           </div>
         </div>
         <div className="label">20px - Tight</div>
+        <code className="varName">psTypeLineHeightTight</code>
       </div>
     </div>
     <style jsx>{`
@@ -259,6 +282,11 @@ const LineHeight = _ => (
         margin-top: ${core.layout.spacingSmall};
         color: ${core.colors.gray03};
         font-weight: ${core.type.fontWeightMedium};
+      }
+      .varName {
+        margin-top: ${core.layout.spacingSmall};
+        font-size: ${core.type.fontSizeXSmall};
+        color: ${core.colors.pink};
       }
     `}</style>
   </div>
