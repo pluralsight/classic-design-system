@@ -41,7 +41,7 @@ const renderOverlays = props =>
   props.image && props.size !== sizes.small ? (
     <Overlays size={props.size}>
       {renderImage(props)}
-      {renderFullOverlay(props)}
+      <FullOverlayFocusManager {...props} />
       {renderProgress(props)}
     </Overlays>
   ) : null
@@ -67,7 +67,13 @@ const renderImage = props => (props.image ? props.image : null)
 const FullOverlayLinkSpan = glamorous.span({
   pointerEvents: 'all'
 })
-const FullOverlayLink = props => <FullOverlayLinkSpan {...props} />
+const FullOverlayLink = props => (
+  <FullOverlayLinkSpan
+    {...props}
+    onFocus={props._onFocus}
+    onBlur={props._onBlur}
+  />
+)
 
 const styleFullOverlayFullOverlayVisible = ({ fullOverlayVisible }) =>
   fullOverlayVisible ? { opacity: 1 } : {}
@@ -84,18 +90,39 @@ const FullOverlay = glamorous.div(
     width: '100%',
     background: transparentize(0.5, core.colors.black),
     transition: `opacity ${core.motion.speedNormal}`,
-    pointerEvents: 'none',
-    opacity: 0
+    pointerEvents: 'none'
   },
+  ({ isFocused }) => (isFocused ? { opacity: 1 } : { opacity: 0 }),
   styleFullOverlayFullOverlayVisible
 )
 
-const renderFullOverlay = props =>
-  props.fullOverlay ? (
-    <FullOverlay fullOverlayVisible={props.fullOverlayVisible}>
-      {props.fullOverlay}
-    </FullOverlay>
-  ) : null
+class FullOverlayFocusManager extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { isFocused: false }
+    this.handleFocus = this.handleFocus.bind(this)
+    this.handleBlur = this.handleBlur.bind(this)
+  }
+  handleFocus() {
+    this.setState({ isFocused: true })
+  }
+  handleBlur() {
+    this.setState({ isFocused: false })
+  }
+  render() {
+    return this.props.fullOverlay ? (
+      <FullOverlay
+        isFocused={this.state.isFocused}
+        fullOverlayVisible={this.props.fullOverlayVisible}
+      >
+        {React.cloneElement(this.props.fullOverlay, {
+          _onFocus: this.handleFocus,
+          _onBlur: this.handleBlur
+        })}
+      </FullOverlay>
+    ) : null
+  }
+}
 
 const styleActionBarFullOverlay = ({ fullOverlay }) =>
   fullOverlay ? { background: 'none' } : {}
