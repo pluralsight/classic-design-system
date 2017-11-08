@@ -39,10 +39,10 @@ const FontFamily = props => (
 
 const weights = [
   { label: 'BOLD', weight: 700, varName: 'psTypeFontWeightBold' },
-  { label: 'MEDIUM', weight: 500, varName: '…TypeFontWeightMedium' },
+  { label: 'MEDIUM', weight: 500, varName: '…ypeFontWeightMedium' },
   { label: 'BOOK', weight: 400, varName: 'psTypeFontWeightBook' },
   { label: 'LIGHT', weight: 300, varName: 'psTypeFontWeightLight' },
-  { label: 'EXTRA LIGHT', weight: 200, varName: '…TypeFontWeightXLight' }
+  { label: 'EXTRA LIGHT', weight: 200, varName: '…ypeFontWeightXLight' }
 ]
 
 const FontWeight = props => (
