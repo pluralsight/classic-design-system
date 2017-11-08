@@ -94,6 +94,7 @@ const Relative = _ => (
         background: ${core.colors.bone};
         border-radius: 12px;
         overflow: hidden;
+        text-align: center;
       }
       .scaleImg {
         max-width: 100%;
