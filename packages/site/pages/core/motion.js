@@ -557,11 +557,6 @@ export default withServerProps(_ => (
     <Content title="Motion">
       <PageHeading>Motion</PageHeading>
 
-      <P>
-        Use standard motion variables by installing the core dependency via npm.
-      </P>
-      <Code lang="bash">npm install @pluralsight/ps-design-system-core</Code>
-
       <SectionHeading>Speed</SectionHeading>
       <P>
         Motion speed should most often occur at the following standard
