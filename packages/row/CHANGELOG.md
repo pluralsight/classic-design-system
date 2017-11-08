@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.3.1"></a>
+## [2.3.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.3.0...@pluralsight/ps-design-system-row@2.3.1) (2017-11-08)
+
+
+### Bug Fixes
+
+* **row:** show full overlay link on focus ([2943b9c](https://github.com/pluralsight/design-system/commit/2943b9c)), closes [#138](https://github.com/pluralsight/design-system/issues/138)
+
+
+
+
 <a name="2.3.0"></a>
 # [2.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.2.0...@pluralsight/ps-design-system-row@2.3.0) (2017-10-24)
 

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.9.0"></a>
+# [9.9.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.8.1...@pluralsight/ps-design-system-site@9.9.0) (2017-11-08)
+
+
+### Bug Fixes
+
+* **site:** motion scale on small screen keeps ratio ([54bf49f](https://github.com/pluralsight/design-system/commit/54bf49f))
+* **site:** show in-app example of tab in dark theme ([f6fbc47](https://github.com/pluralsight/design-system/commit/f6fbc47))
+
+
+### Features
+
+* **site:** add line height reference ([8d87e16](https://github.com/pluralsight/design-system/commit/8d87e16))
+
+
+
+
 <a name="9.8.1"></a>
 ## [9.8.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.8.0...@pluralsight/ps-design-system-site@9.8.1) (2017-11-06)
 
