@@ -261,7 +261,8 @@ const Words = glamorous.div(
     display: 'flex',
     flex: 1,
     flexDirection: 'column',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    minWidth: 0
   },
   props => ({
     maxWidth: `calc(100% - ${formatImageWidth(props)} - ${formatActionBarWidth(
