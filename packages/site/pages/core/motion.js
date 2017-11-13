@@ -589,7 +589,7 @@ export default withServerProps(_ => (
 
       <SectionHeading>Rotation</SectionHeading>
       <P>
-        Generally, larger objects look more natural when rotating quicker than
+        Generally, larger objects look more natural when rotating slower than
         smaller objects. The easing property for rotation should be{' '}
         <b>linear</b>.
       </P>
