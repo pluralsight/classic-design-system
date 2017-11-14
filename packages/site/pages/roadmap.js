@@ -19,25 +19,25 @@ import {
 const work = {
   now: [
     {
-      title: 'Theming',
+      title: 'Tag',
       tags: ['Component']
     }
   ],
   next: [
     {
-      title: 'Icon Packs Discovery',
-      tags: ['Resources']
-    },
-    {
       title: 'Navigation Updates',
       tags: ['Site']
     },
     {
-      title: 'Motion',
-      tags: ['Core']
+      title: 'Drawer',
+      tags: ['Component']
     },
     {
-      title: 'Tag',
+      title: 'Avatar',
+      tags: ['Component']
+    },
+    {
+      title: 'Button - Loading States',
       tags: ['Component']
     },
     {
@@ -46,10 +46,6 @@ const work = {
     }
   ],
   future: [
-    {
-      title: 'Drawer',
-      tags: ['Component']
-    },
     {
       title: 'Tooltip / Popover',
       tags: ['Component']
