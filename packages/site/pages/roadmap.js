@@ -21,6 +21,10 @@ const work = {
     {
       title: 'Tag',
       tags: ['Component']
+    },
+    {
+      title: 'Layout',
+      tags: ['Core']
     }
   ],
   next: [
@@ -57,10 +61,6 @@ const work = {
     {
       title: 'Writing Style',
       tags: ['Guidelines']
-    },
-    {
-      title: 'Layout',
-      tags: ['Core']
     },
     {
       title: 'Text (vNext)',
