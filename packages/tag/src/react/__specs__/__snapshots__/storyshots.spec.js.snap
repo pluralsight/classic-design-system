@@ -1,0 +1,742 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots actions button 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-qmyhtw=""
+    href={undefined}
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      As a button
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots actions button w/ icon button 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-121l7nc=""
+    href={undefined}
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <span
+      data-css-13bnfv4=""
+    >
+      As a button
+    </span>
+    <div
+      className="css-otejxm"
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots actions just icon button 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-re3g12=""
+    href={undefined}
+    onClick={undefined}
+  >
+    <span
+      data-css-13bnfv4=""
+    >
+      As a button
+    </span>
+    <div
+      className="css-otejxm"
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots actions link 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <a
+    data-css-qmyhtw=""
+    href="https://duckduckgo.com/"
+    onClick={undefined}
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      As a link
+    </span>
+  </a>
+</div>
+`;
+
+exports[`Storyshots appearance accent 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-70ra4p=""
+    href={undefined}
+    onClick={undefined}
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      accent
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots appearance basic 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-ap4152=""
+    href={undefined}
+    onClick={undefined}
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      basic
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots appearance bright 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-zhxtze=""
+    href={undefined}
+    onClick={undefined}
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      bright
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots icon accent medium 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-nr1j8f=""
+    href={undefined}
+    onClick={undefined}
+  >
+    <span
+      data-css-13bnfv4=""
+    >
+      With Icon
+    </span>
+    <div
+      className="css-otejxm"
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots icon accent small 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-feo7n2=""
+    href={undefined}
+    onClick={undefined}
+  >
+    <span
+      data-css-13bnfv4=""
+    >
+      With Icon
+    </span>
+    <div
+      className="css-12f5sv2"
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots icon basic medium 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-re3g12=""
+    href={undefined}
+    onClick={undefined}
+  >
+    <span
+      data-css-13bnfv4=""
+    >
+      With Icon
+    </span>
+    <div
+      className="css-otejxm"
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots icon basic small 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-c87n10=""
+    href={undefined}
+    onClick={undefined}
+  >
+    <span
+      data-css-13bnfv4=""
+    >
+      With Icon
+    </span>
+    <div
+      className="css-12f5sv2"
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots icon bright medium 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-fccv3w=""
+    href={undefined}
+    onClick={undefined}
+  >
+    <span
+      data-css-13bnfv4=""
+    >
+      With Icon
+    </span>
+    <div
+      className="css-otejxm"
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots icon bright small 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-u4zr2r=""
+    href={undefined}
+    onClick={undefined}
+  >
+    <span
+      data-css-13bnfv4=""
+    >
+      With Icon
+    </span>
+    <div
+      className="css-12f5sv2"
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots isPressed button 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    aria-pressed={true}
+    data-css-660wrc=""
+    href={undefined}
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      As a button
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots isPressed button w/ icon button 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    aria-pressed={true}
+    data-css-kpu90p=""
+    href={undefined}
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <span
+      data-css-13bnfv4=""
+    >
+      As a button
+    </span>
+    <div
+      className="css-otejxm"
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots isPressed link 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <a
+    aria-pressed={true}
+    data-css-660wrc=""
+    href="https://duckduckgo.com/"
+    onClick={undefined}
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      As a link
+    </span>
+  </a>
+</div>
+`;
+
+exports[`Storyshots long string 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-ap4152=""
+    href={undefined}
+    onClick={undefined}
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      This is the string that goes on forever and always. There really isn't an end. Wow.
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots long with icon 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-re3g12=""
+    href={undefined}
+    onClick={undefined}
+  >
+    <span
+      data-css-13bnfv4=""
+    >
+      This is the string that goes on forever and always. There really isn't an end. Wow.
+    </span>
+    <div
+      className="css-otejxm"
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots size medium 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-ap4152=""
+    href={undefined}
+    onClick={undefined}
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      medium
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots size small 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-eh5s77=""
+    href={undefined}
+    onClick={undefined}
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      small
+    </span>
+  </div>
+</div>
+`;
