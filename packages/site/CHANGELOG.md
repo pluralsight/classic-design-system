@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.10.0"></a>
+# [9.10.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.9.0...@pluralsight/ps-design-system-site@9.10.0) (2017-11-15)
+
+
+### Bug Fixes
+
+* **site:** center relative speed motion example ([2ffe570](https://github.com/pluralsight/design-system/commit/2ffe570))
+* **site:** manual ellipsis shortening on type page ([9efe5d1](https://github.com/pluralsight/design-system/commit/9efe5d1))
+* **site:** typo ([7610f6c](https://github.com/pluralsight/design-system/commit/7610f6c))
+
+
+### Features
+
+* **site:** add var names to typography examples ([1a4f7e0](https://github.com/pluralsight/design-system/commit/1a4f7e0))
+
+
+
+
 <a name="9.9.0"></a>
 # [9.9.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.8.1...@pluralsight/ps-design-system-site@9.9.0) (2017-11-08)
 
