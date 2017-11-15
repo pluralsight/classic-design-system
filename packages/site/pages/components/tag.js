@@ -90,12 +90,16 @@ export default withServerProps(_ => (
       />
 
       <SectionHeading>Icon</SectionHeading>
-      <P>A tag may contain an icon, consistently placed on the right.</P>
+      <P>
+        A tag may contain an icon, consistently placed on the right. An icon may
+        also receive on <code>onClick</code> prop in this position.
+      </P>
       <Example.React
         includes={{ Tag, Icon }}
         codes={[
           `<Tag icon={<Icon id={Icon.ids.close} />}>With Icon</Tag>`,
-          `<Tag icon={<Icon id={Icon.ids.close} />} size={Tag.sizes.small}>With Icon</Tag>`
+          `<Tag icon={<Icon id={Icon.ids.close} />} size={Tag.sizes.small}>With Icon</Tag>`,
+          `<Tag icon={<Icon id={Icon.ids.close} onClick={_ => alert('icon clicked')} />} size={Tag.sizes.small}>With Icon</Tag>`
         ]}
       />
 
