@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.3.2"></a>
+## [2.3.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.3.1...@pluralsight/ps-design-system-row@2.3.2) (2017-11-15)
+
+
+### Bug Fixes
+
+* **row:** prevent row image from shrinking ([#140](https://github.com/pluralsight/design-system/issues/140)) ([506fc61](https://github.com/pluralsight/design-system/commit/506fc61))
+
+
+
+
 <a name="2.3.1"></a>
 ## [2.3.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.3.0...@pluralsight/ps-design-system-row@2.3.1) (2017-11-08)
 
