@@ -15,11 +15,11 @@ export default withServerProps(_ => (
       <PageHeading>Step-by-step Components</PageHeading>
       <Doc>{`
 
-## Before you Start
+## Before you start
 
 Please collaborate with the Design System team in [#design-system-dev](slack://channel?team=pluralsight&id=design-system-dev) on the whats, whys, and hows of your component.  The [Contribute Code](/contribute/code) doc has some relevant insights into how and why we collaborate.
 
-## Create Your Component
+## Create your component
 
 1. Go to [\`packages/\` directory](https://github.com/pluralsight/design-system/tree/master/packages) and copy the directory of a recently-built, pre-existing component.  Many of the setup defaults will simply copy over to your new component.
 1. Edit the \`package.json\` of the new component.  Change the \`name\` to the appropriate one-word suffix (eg, "actionmenu" for "@pluralsight/ps-design-system-actionmenu").  Set the \`version\` to "1.0.0".  Update the \`description\`.  Remove any unused \`dependencies\`.  Do not add \`peerDependencies\`.
@@ -30,7 +30,7 @@ Please collaborate with the Design System team in [#design-system-dev](slack://c
 1. Commit to a feature branch.  (An [example commit](https://github.com/pluralsight/design-system/commit/ec0fc78ecc6ebf9f91056e59c581bfaaee8ee7cd) of a new component)
 1. Send up the [Pull Request](https://github.com/pluralsight/design-system/pulls).  Include relevant details in the PR template on Github.
 
-## Create Your Documentation
+## Create your documentation
 
 1. Once merge is done or imminent, create a site reference page for your component. (An [example commit](https://github.com/pluralsight/design-system/commit/f3dd67ca2dc2e0fc938785cc062ae0b23bee0d62) of a site reference page)
 1. Add your new component package dependency to the site's \`packages/site/package.json\`.
