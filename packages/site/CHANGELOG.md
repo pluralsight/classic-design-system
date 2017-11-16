@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.12.0"></a>
+# [9.12.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.11.0...@pluralsight/ps-design-system-site@9.12.0) (2017-11-16)
+
+
+### Features
+
+* **site:** add component contrib step by step ([2ba4d02](https://github.com/pluralsight/design-system/commit/2ba4d02))
+
+
+
+
 <a name="9.11.0"></a>
 # [9.11.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.10.0...@pluralsight/ps-design-system-site@9.11.0) (2017-11-15)
 
