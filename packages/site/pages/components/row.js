@@ -67,9 +67,7 @@ const Stack = props => (
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Row">
-      <PageHeading beta packageName="row">
-        Row
-      </PageHeading>
+      <PageHeading packageName="row">Row</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">npm install @pluralsight/ps-design-system-row</Code>

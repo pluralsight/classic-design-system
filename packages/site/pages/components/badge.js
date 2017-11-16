@@ -17,9 +17,7 @@ import {
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Badge">
-      <PageHeading beta packageName="badge">
-        Badge
-      </PageHeading>
+      <PageHeading packageName="badge">Badge</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">

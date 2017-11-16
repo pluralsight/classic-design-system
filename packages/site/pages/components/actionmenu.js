@@ -20,9 +20,7 @@ import {
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Action Menu">
-      <PageHeading beta packageName="actionmenu">
-        Action Menu
-      </PageHeading>
+      <PageHeading packageName="actionmenu">Action Menu</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
