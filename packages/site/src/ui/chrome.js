@@ -1,16 +1,14 @@
 import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 
-import Head from './head'
-import GlobalStyles from './global-styles'
-import SideNav from './side-nav'
-import TopBar from './top-bar'
+import { Head, GlobalStyles, MobileMenuBar, SideNav } from './index'
+console.log('mmb', MobileMenuBar)
 
 export default props => (
   <div>
     <Head />
     <GlobalStyles />
-    <TopBar />
+    <MobileMenuBar />
     <div className="page">
       <div className="side">
         <SideNav />
