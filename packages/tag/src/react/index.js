@@ -43,6 +43,8 @@ const TagContainer = props => {
         textDecoration: 'none',
         border: 'none',
         overflow: 'hidden',
+        transition: `background-color ${core.motion
+          .speedXFast} linear, color ${core.motion.speedXFast} linear`,
         ...(({ href, onClick }) =>
           href || onClick
             ? {

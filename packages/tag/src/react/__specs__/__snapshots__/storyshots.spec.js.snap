@@ -17,7 +17,7 @@ exports[`Storyshots actions button 1`] = `
   }
 >
   <div
-    data-css-qmyhtw=""
+    data-css-bhtw5h=""
     href={undefined}
     onClick={[Function]}
     role="button"
@@ -49,7 +49,7 @@ exports[`Storyshots actions button w/ icon button 1`] = `
   }
 >
   <div
-    data-css-121l7nc=""
+    data-css-1nji3st=""
     href={undefined}
     onClick={[Function]}
     role="button"
@@ -94,7 +94,7 @@ exports[`Storyshots actions just icon button 1`] = `
   }
 >
   <div
-    data-css-re3g12=""
+    data-css-kvjzd1=""
     href={undefined}
     onClick={undefined}
   >
@@ -137,7 +137,7 @@ exports[`Storyshots actions link 1`] = `
   }
 >
   <a
-    data-css-qmyhtw=""
+    data-css-bhtw5h=""
     href="https://duckduckgo.com/"
     onClick={undefined}
   >
@@ -167,7 +167,7 @@ exports[`Storyshots appearance accent 1`] = `
   }
 >
   <div
-    data-css-70ra4p=""
+    data-css-xxnx0b=""
     href={undefined}
     onClick={undefined}
   >
@@ -197,7 +197,7 @@ exports[`Storyshots appearance basic 1`] = `
   }
 >
   <div
-    data-css-ap4152=""
+    data-css-j9xuuf=""
     href={undefined}
     onClick={undefined}
   >
@@ -227,7 +227,7 @@ exports[`Storyshots appearance bright 1`] = `
   }
 >
   <div
-    data-css-zhxtze=""
+    data-css-jy3kr4=""
     href={undefined}
     onClick={undefined}
   >
@@ -257,7 +257,7 @@ exports[`Storyshots icon accent medium 1`] = `
   }
 >
   <div
-    data-css-nr1j8f=""
+    data-css-tikqh7=""
     href={undefined}
     onClick={undefined}
   >
@@ -300,7 +300,7 @@ exports[`Storyshots icon accent small 1`] = `
   }
 >
   <div
-    data-css-feo7n2=""
+    data-css-vz08hf=""
     href={undefined}
     onClick={undefined}
   >
@@ -343,7 +343,7 @@ exports[`Storyshots icon basic medium 1`] = `
   }
 >
   <div
-    data-css-re3g12=""
+    data-css-kvjzd1=""
     href={undefined}
     onClick={undefined}
   >
@@ -386,7 +386,7 @@ exports[`Storyshots icon basic small 1`] = `
   }
 >
   <div
-    data-css-c87n10=""
+    data-css-1abtama=""
     href={undefined}
     onClick={undefined}
   >
@@ -429,7 +429,7 @@ exports[`Storyshots icon bright medium 1`] = `
   }
 >
   <div
-    data-css-fccv3w=""
+    data-css-14b2y3q=""
     href={undefined}
     onClick={undefined}
   >
@@ -472,7 +472,7 @@ exports[`Storyshots icon bright small 1`] = `
   }
 >
   <div
-    data-css-u4zr2r=""
+    data-css-pouxw5=""
     href={undefined}
     onClick={undefined}
   >
@@ -516,7 +516,7 @@ exports[`Storyshots isPressed button 1`] = `
 >
   <div
     aria-pressed={true}
-    data-css-660wrc=""
+    data-css-1nwkfv1=""
     href={undefined}
     onClick={[Function]}
     role="button"
@@ -549,7 +549,7 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
 >
   <div
     aria-pressed={true}
-    data-css-kpu90p=""
+    data-css-1a4m5ok=""
     href={undefined}
     onClick={[Function]}
     role="button"
@@ -595,7 +595,7 @@ exports[`Storyshots isPressed link 1`] = `
 >
   <a
     aria-pressed={true}
-    data-css-660wrc=""
+    data-css-1nwkfv1=""
     href="https://duckduckgo.com/"
     onClick={undefined}
   >
@@ -625,7 +625,7 @@ exports[`Storyshots long string 1`] = `
   }
 >
   <div
-    data-css-ap4152=""
+    data-css-j9xuuf=""
     href={undefined}
     onClick={undefined}
   >
@@ -655,7 +655,7 @@ exports[`Storyshots long with icon 1`] = `
   }
 >
   <div
-    data-css-re3g12=""
+    data-css-kvjzd1=""
     href={undefined}
     onClick={undefined}
   >
@@ -698,7 +698,7 @@ exports[`Storyshots size medium 1`] = `
   }
 >
   <div
-    data-css-ap4152=""
+    data-css-j9xuuf=""
     href={undefined}
     onClick={undefined}
   >
@@ -728,7 +728,7 @@ exports[`Storyshots size small 1`] = `
   }
 >
   <div
-    data-css-eh5s77=""
+    data-css-1uowyvg=""
     href={undefined}
     onClick={undefined}
   >
