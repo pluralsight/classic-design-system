@@ -86,6 +86,8 @@ const Relative = _ => (
   <div className="relative">
     <img
       alt="Use slower animations for larger objects or longer distances."
+      srcSet="/static/img/motionSpeedScale.png,
+              /static/img/motionSpeedScale@2x.png 1.5x"
       src="/static/img/motionSpeedScale.png"
     />
     <style jsx>{`
