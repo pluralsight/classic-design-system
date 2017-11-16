@@ -47,6 +47,8 @@ Test your code.  Extract important logic and use unit tests to exercise it.  Use
 
 Use the Design System to build the Design System where possible (ie, especially use Core when building Components).
 
+For some specifics on coding new component, please see the [Step-by-step Components](/contribute/components) doc.
+
 ## Submitting your PR
 [PRs](https://github.com/pluralsight/design-system/compare) are the main mode of adding or changing code in the Design System. Use the [Github pull request template](https://github.com/pluralsight/design-system/blob/master/.github/PULL_REQUEST_TEMPLATE.md) when submitting a pull request.  The template prompts for context and reasoning around the submission.  
 

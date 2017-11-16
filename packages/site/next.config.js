@@ -6,6 +6,7 @@ module.exports = {
       '/install': { page: '/install' },
       '/contribute': { page: '/contribute' },
       '/contribute/code': { page: '/contribute/code' },
+      '/contribute/components': { page: '/contribute/components' },
       '/roadmap': { page: '/roadmap' },
       '/components/actionmenu': { page: '/components/actionmenu' },
       '/components/badge': { page: '/components/badge' },
