@@ -346,7 +346,7 @@ export default withHeadings(props => (
       @media screen and (min-width: 769px) {
         .sidenav {
           transition: none;
-          position: static;
+          position: fixed;
           box-shadow: none;
           transform: translateX(0);
           min-height: 100%;
