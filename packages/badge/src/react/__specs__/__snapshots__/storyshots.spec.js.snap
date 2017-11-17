@@ -18,7 +18,7 @@ exports[`Storyshots appearance default 1`] = `
   }
 >
   <div
-    className="css-1rwlq8b"
+    className="css-vdc22r"
   >
     default Badge
   </div>
@@ -68,7 +68,7 @@ exports[`Storyshots color blue default 1`] = `
   }
 >
   <div
-    className="css-qko9jh"
+    className="css-1d3h730"
   >
     blue default Badge
   </div>
@@ -118,7 +118,7 @@ exports[`Storyshots color gray default 1`] = `
   }
 >
   <div
-    className="css-1rwlq8b"
+    className="css-vdc22r"
   >
     gray default Badge
   </div>
@@ -168,7 +168,7 @@ exports[`Storyshots color green default 1`] = `
   }
 >
   <div
-    className="css-eqw0k5"
+    className="css-jh132n"
   >
     green default Badge
   </div>
@@ -218,7 +218,7 @@ exports[`Storyshots color red default 1`] = `
   }
 >
   <div
-    className="css-6kw6e4"
+    className="css-17te2fi"
   >
     red default Badge
   </div>
@@ -268,7 +268,7 @@ exports[`Storyshots color yellow default 1`] = `
   }
 >
   <div
-    className="css-y1rz6v"
+    className="css-1q8b1lc"
   >
     yellow default Badge
   </div>
