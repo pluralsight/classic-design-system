@@ -206,10 +206,11 @@ class Task extends React.Component {
         onMouseOut={this.handleMouseOut}
       >
         <Task.Title>{item.title}</Task.Title>
-        <Task.Tags
-          tags={item.tags}
-          icon={<GithubCat isVisible={this.state.isOver} />}
-        />
+        <div className="meta">
+          <Task.Tags tags={item.tags} />
+          <Task.Helpers helpers={item.helpers} />
+          <GithubCat isVisible={this.state.isOver} />
+        </div>
         <style jsx>{`
           .task {
             text-decoration: none;
@@ -222,12 +223,16 @@ class Task extends React.Component {
             border-radius: 12px;
             border: 2px solid transparent;
             transition: all ${core.motion.speedNormal};
+            overflow: hidden;
           }
           .task:focus,
           .task:hover {
             border: 2px solid ${core.colors.gray01};
             outline: none;
             background: ${core.colors.white};
+          }
+          .meta {
+            display: flex;
           }
           @media screen and (min-width: 1000px) {
             .task {
@@ -253,10 +258,26 @@ Task.Title = props => (
   </div>
 )
 
+Task.Helpers = props =>
+  props.helpers ? (
+    <div className="helpers">
+      {props.helpers.map(helper => (
+        <Badge color={Badge.colors.green} key={helper}>
+          {helper}
+        </Badge>
+      ))}
+      <style jsx>{`
+        .helpers {
+          display: flex;
+          margin-left: ${core.layout.spacingXSmall};
+        }
+      `}</style>
+    </div>
+  ) : null
+
 Task.Tags = props => (
   <div className="tags">
     {props.tags.map(tag => <Task.Tag key={tag}>{tag}</Task.Tag>)}
-    {props.icon}
     <style jsx>{`
       .tags {
         display: flex;
