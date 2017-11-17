@@ -23,10 +23,6 @@ const work = {
       tags: ['Core']
     },
     {
-      title: 'Navigation Updates',
-      tags: ['Site']
-    },
-    {
       title: 'Drawer',
       tags: ['Component'],
       helpers: ['Devstar']
