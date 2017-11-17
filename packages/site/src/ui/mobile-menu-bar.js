@@ -1,6 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import { TitleLogo, TopBar } from './index'
+import { Link, TitleLogo, TopBar } from './index'
 
 export default props => (
   <div>
@@ -9,7 +9,9 @@ export default props => (
         <Icon id={Icon.ids.menu} />
       </button>
       <div className="title">
-        <TitleLogo />
+        <Link href="/">
+          <TitleLogo />
+        </Link>
       </div>
       <div className="balance" aria-hidden="true" />
     </div>
