@@ -1,8 +1,13 @@
 import core from '@pluralsight/ps-design-system-core'
+import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 
 import Link from './link'
 import { withHeadings } from './content'
+
+const css = {
+  sidenavWidth: '200px'
+}
 
 const Group = props => (
   <div className="group">
@@ -10,7 +15,7 @@ const Group = props => (
     <style jsx>{`
       .group {
         padding: ${core.layout.spacingSmall} ${core.layout.spacingLarge};
-        border-bottom: 1px solid ${core.colors.gray01};
+        border-top: 1px solid ${core.colors.gray01};
       }
     `}</style>
   </div>
@@ -190,41 +195,77 @@ const Logo = _ => (
       </span>
     </Link>
     <style jsx>{`
-      .logo :global(a) {
-        text-decoration: none;
-      }
-      .box {
-        display: flex;
-        justify-content: center;
-
-        align-items: center;
-        border-bottom: 1px solid ${core.colors.gray01};
-        text-decoration: none;
-        padding: ${core.layout.spacingLarge} 0;
-      }
-      .box:hover {
-        text-decoration: none !important;
-      }
-      .text {
-        margin: 0;
-      }
-      .textCompany {
-        display: block;
-        letter-spacing: 0.15em;
-        font-size: ${core.type.fontSizeXSmall};
-        font-weight: ${core.type.fontWeightMedium};
-        color: ${core.colors.black};
-        font-family: ${core.type.fontFamily};
-      }
-      .textTitle {
-        display: block;
-        font-size: 8px;
-        color: ${core.colors.gray03};
-        font-weight: ${core.type.fontWeightMedium};
+      .logo {
+        display: none;
       }
       @media screen and (min-width: 769px) {
+        .logo {
+          display: block;
+        }
+        .logo :global(a) {
+          text-decoration: none;
+        }
         .box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
           padding: 72px 0;
+        }
+        .box:hover {
+          text-decoration: none !important;
+        }
+        .text {
+          margin: 0;
+        }
+        .textCompany {
+          display: block;
+          letter-spacing: 0.15em;
+          font-size: ${core.type.fontSizeXSmall};
+          font-weight: ${core.type.fontWeightMedium};
+          color: ${core.colors.black};
+          font-family: ${core.type.fontFamily};
+        }
+        .textTitle {
+          display: block;
+          font-size: 8px;
+          color: ${core.colors.gray03};
+          font-weight: ${core.type.fontWeightMedium};
+        }
+      }
+    `}</style>
+  </div>
+)
+
+const Close = props => (
+  <div className="close">
+    <button className="button" onClick={props.onCloseClick}>
+      <Icon id={Icon.ids.close} />
+    </button>
+    <style jsx>{`
+      .close {
+      }
+      .button {
+        background: none;
+        border: 0;
+        padding: 0;
+        margin: ${core.layout.spacingLarge};
+        cursor: pointer;
+        color: ${core.colors.gray03};
+        line-height: 0;
+        transition: all ${core.motion.speedXFast} linear;
+      }
+      .button:hover,
+      .button:focus {
+        color: ${core.colors.black};
+      }
+      .button:focus {
+        background: ${core.colors.gray01};
+        border-radius: 2px;
+      }
+      @media screen and (min-width: 769px) {
+        .close {
+          display: none;
         }
       }
     `}</style>
@@ -232,7 +273,8 @@ const Logo = _ => (
 )
 
 export default withHeadings(props => (
-  <div className="sidenav">
+  <div className={`sidenav ${props.isOpen ? 'sidenavOpen' : ''}`}>
+    <Close onCloseClick={props.onCloseClick} />
     <Logo />
     <Group>
       <GroupTitle>INTRODUCTION</GroupTitle>
@@ -284,13 +326,28 @@ export default withHeadings(props => (
       </NavLink>
     </Group>
     <style jsx>{`
-      .root {
-        border-top: 1px solid ${core.colors.gray01};
-        display: flex;
-        flex-direction: column-reverse;
+      .sidenav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(calc(-1 * ${css.sidenavWidth}));
+        height: 100vh;
+        width: ${css.sidenavWidth};
+        background: ${core.colors.bone};
+        overflow: hidden;
+        box-shadow: 0 2px 17px rgba(0, 0, 0, 0.5);
+        transition: all ${core.motion.speedXFast} ease-in-out;
+        z-index: 10; /* TODO: arbitrary; above code mirror; come back when ready to systemize */
+      }
+      .sidenavOpen {
+        transform: translateX(0);
       }
       @media screen and (min-width: 769px) {
-        .root {
+        .sidenav {
+          transition: none;
+          position: static;
+          box-shadow: none;
+          transform: translateX(0);
           min-height: 100%;
           border-top: none;
           flex-direction: column;

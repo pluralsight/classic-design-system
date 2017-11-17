@@ -5,7 +5,7 @@ import { TitleLogo, TopBar } from './index'
 export default props => (
   <div>
     <div className="bar">
-      <button className="burger">
+      <button className="burger" onClick={props.onBurgerClick}>
         <Icon id={Icon.ids.menu} />
       </button>
       <div className="title">
@@ -29,6 +29,7 @@ export default props => (
         background: none;
         cursor: pointer;
         color: ${core.colors.gray03};
+        transition: all ${core.motion.speedXFast} linear;
       }
       .burger:hover,
       .burger:focus {

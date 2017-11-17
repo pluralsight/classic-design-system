@@ -4,7 +4,7 @@ export default _ => (
   <style global jsx>{`
     html,
     body {
-      background: ${core.colors.bone};
+      background: ${core.colors.white};
     }
   `}</style>
 )
