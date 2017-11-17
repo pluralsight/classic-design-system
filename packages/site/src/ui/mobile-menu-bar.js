@@ -21,6 +21,7 @@ export default props => (
         justify-content: center;
         align-items: center;
         height: 69px;
+        background: ${core.colors.bone};
       }
       .burger {
         position: absolute;

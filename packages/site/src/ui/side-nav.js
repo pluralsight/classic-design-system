@@ -336,12 +336,12 @@ export default withHeadings(props => (
         background: ${core.colors.bone};
         overflow-x: hidden;
         overflow-y: auto;
-        box-shadow: 0 2px 17px rgba(0, 0, 0, 0.5);
         transition: transform ${core.motion.speedXFast} ease-in-out;
         z-index: 10; /* TODO: arbitrary; above code mirror; come back when ready to systemize */
       }
       .sidenavOpen {
         transform: translateX(0);
+        box-shadow: 0 2px 17px rgba(0, 0, 0, 0.5);
       }
       @media screen and (min-width: 769px) {
         .sidenav {
