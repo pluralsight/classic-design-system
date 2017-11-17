@@ -220,7 +220,9 @@ const Easing = _ => (
     <div className="functions">
       <div className="function">
         <div className="label">
-          Use <b>ease-in-out</b> for moving point to point.
+          <div>
+            Use <b>ease-in-out</b> for moving point to point.
+          </div>
           <div className="dotContainer dotContainer1">
             <div className="dot" />
           </div>
@@ -258,7 +260,9 @@ const Easing = _ => (
       </div>
       <div className="function">
         <div className="label">
-          Use <b>ease-out</b> for entering elements.
+          <div>
+            Use <b>ease-out</b> for entering elements.
+          </div>
           <div className="dotContainer dotContainer2">
             <div className="dot" />
           </div>
@@ -296,7 +300,9 @@ const Easing = _ => (
       </div>
       <div className="function">
         <div className="label">
-          Use <b>ease-in</b> for exiting elements.
+          <div>
+            Use <b>ease-in</b> for exiting elements.
+          </div>
           <div className="dotContainer dotContainer3">
             <div className="dot" />
           </div>
@@ -334,7 +340,9 @@ const Easing = _ => (
       </div>
       <div className="function">
         <div className="label">
-          Use <b>linear</b> for opacity or color changes.
+          <div>
+            Use <b>linear</b> for opacity or color changes.
+          </div>
           <div className="dotContainer">
             <div className="dot dot4" />
           </div>
@@ -390,6 +398,7 @@ const Easing = _ => (
       .function {
         position: relative;
         display: flex;
+        flex-direction: column;
         width: calc(50% - ${core.layout.spacingLarge});
         margin: calc(${core.layout.spacingLarge} / 2);
         padding: ${core.layout.spacingLarge};
@@ -408,10 +417,16 @@ const Easing = _ => (
         font-weight: ${core.type.fontWeightLight};
       }
       .label {
-        width: 215px;
         font-size: ${core.type.fontSizeMedium};
         line-height: ${core.type.lineHeightStandard};
         font-weight: ${core.type.fontWeightLight};
+        margin-bottom: ${core.layout.spacingLarge};
+      }
+      .graphic {
+        text-align: center;
+      }
+      .graphic svg {
+        max-width: 100%;
       }
       @keyframes animateEaseinout {
         0% {
@@ -485,23 +500,22 @@ const Easing = _ => (
         }
       }
       .dotContainer {
-        position: absolute;
-        left: ${core.layout.spacingLarge};
-        bottom: ${core.layout.spacingLarge};
+        position: relative;
+        margin-top: ${core.layout.spacingMedium};
       }
       .dotContainer1 {
         animation: 3000ms infinite animateEaseinout;
-        width: calc(215px - 16px - ${core.layout.spacingSmall});
+        width: calc(100% - 16px);
       }
       .dotContainer2 {
         left: -16px;
-        width: 215px;
+        width: 100%;
         animation: 2500ms 500ms infinite animateEaseout;
       }
       .dotContainer3 {
-        left: -16px;
-        width: calc(215px + 16px);
-        transform: translateX(100%);
+        left: -48px;
+        width: calc(100% + 32px);
+        transform: translateX(calc(100% - 32px));
         animation: 2500ms infinite animateEasein;
       }
       .dot4 {
@@ -512,6 +526,19 @@ const Easing = _ => (
         width: 16px;
         border-radius: 50%;
         background: ${core.colors.pink};
+      }
+      @media screen and (min-width: 769px) {
+        .function {
+          flex-direction: row;
+        }
+        .label {
+          display: flex;
+          flex-direction: column;
+          margin: 0 ${core.layout.spacingSmall} 0 0;
+        }
+        .dotContainer {
+          margin-top: auto;
+        }
       }
     `}</style>
   </div>
