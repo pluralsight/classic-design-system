@@ -334,9 +334,10 @@ export default withHeadings(props => (
         height: 100vh;
         width: ${css.sidenavWidth};
         background: ${core.colors.bone};
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
         box-shadow: 0 2px 17px rgba(0, 0, 0, 0.5);
-        transition: all ${core.motion.speedXFast} ease-in-out;
+        transition: transform ${core.motion.speedXFast} ease-in-out;
         z-index: 10; /* TODO: arbitrary; above code mirror; come back when ready to systemize */
       }
       .sidenavOpen {
