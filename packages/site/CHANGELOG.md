@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.13.0"></a>
+# [9.13.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.12.0...@pluralsight/ps-design-system-site@9.13.0) (2017-11-17)
+
+
+### Bug Fixes
+
+* **site:** adjust mobile menu bar bg and shadow ([88ebc6d](https://github.com/pluralsight/design-system/commit/88ebc6d))
+* **site:** dont let desktop main content fall behind static sidenav ([d0d92f9](https://github.com/pluralsight/design-system/commit/d0d92f9))
+* **site:** easing examples better on mobile view ([e5fe0ec](https://github.com/pluralsight/design-system/commit/e5fe0ec))
+* **site:** prevent card example from overflowing on mobile ([850d4a6](https://github.com/pluralsight/design-system/commit/850d4a6))
+* **site:** subnav alignment and line height cutoff ([ead07a6](https://github.com/pluralsight/design-system/commit/ead07a6))
+
+
+### Features
+
+* **site:** add contributors to roadmap ([e21c64f](https://github.com/pluralsight/design-system/commit/e21c64f))
+
+
+
+
 <a name="9.12.0"></a>
 # [9.12.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.11.0...@pluralsight/ps-design-system-site@9.12.0) (2017-11-16)
 

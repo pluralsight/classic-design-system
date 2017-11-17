@@ -1,7 +1,7 @@
 {
   "name": "@pluralsight/ps-design-system-site",
   "private": true,
-  "version": "9.12.0",
+  "version": "9.13.0",
   "description": "Reference site",
   "main": "index.js",
   "engines": {
@@ -16,7 +16,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@pluralsight/ps-design-system-actionmenu": "^2.3.4",
-    "@pluralsight/ps-design-system-badge": "^1.4.0",
+    "@pluralsight/ps-design-system-badge": "^1.4.1",
     "@pluralsight/ps-design-system-button": "^9.5.0",
     "@pluralsight/ps-design-system-card": "^7.4.0",
     "@pluralsight/ps-design-system-core": "^4.0.2",
