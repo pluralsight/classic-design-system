@@ -6,6 +6,7 @@ import Link from './link'
 import { withHeadings } from './content'
 
 const css = {
+  linkActiveWidth: '8px',
   sidenavWidth: '200px'
 }
 
@@ -51,13 +52,23 @@ const InternalLinks = props =>
           }
         }
         .links {
-          border-left: 1px solid ${core.colors.gray01};
-          margin: ${core.layout.spacingSmall} 0 ${core.layout.spacingSmall}
-            ${core.layout.spacingXXSmall};
-          padding: 0 0 0 ${core.layout.spacingMedium};
-          overflow: hidden;
+          position: relative;
+          margin-top: ${core.layout.spacingXXSmall};
+          margin-bottom: ${core.layout.spacingXSmall};
+          margin-left: calc(${css.linkActiveWidth} / 2);
+          padding-left: ${core.layout.spacingMedium};
           height: 0;
           animation: grow ${core.motion.speedXSlow} forwards;
+        }
+        .links:after {
+          position: absolute;
+          top: ${core.layout.spacingXSmall};
+          left: -1px;
+          content: '';
+          display: block;
+          height: calc(100% - (2 * ${core.layout.spacingXSmall}));
+          width: 0;
+          border-left: 1px solid ${core.colors.gray01};
         }
         .link {
           display: block;
@@ -67,14 +78,6 @@ const InternalLinks = props =>
           white-space: nowrap;
           cursor: pointer;
           transition: all ${core.motion.speedXFast} ease-in-out;
-        }
-        .link:first-child {
-          line-height: 10px;
-          padding-bottom: ${core.layout.spacingSmall};
-        }
-        .link:last-child {
-          line-height: 10px;
-          padding-top: ${core.layout.spacingSmall};
         }
         .link:hover {
           color: ${core.colors.black};
@@ -134,7 +137,7 @@ class NavLink extends React.Component {
             font-weight: ${core.type.fontWeightBold};
           }
           .linkActive .box {
-            width: 8px;
+            width: ${css.linkActiveWidth};
             padding-left: 8px;
             margin-right: 12px;
           }
