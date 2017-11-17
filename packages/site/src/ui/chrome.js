@@ -26,8 +26,6 @@ export default class extends React.Component {
           <div className="main">{this.props.children}</div>
         </div>
         <style jsx>{`
-          .page {
-          }
           .main {
             background: ${core.colors.white};
           }
@@ -35,13 +33,10 @@ export default class extends React.Component {
             .page {
               display: flex;
               flex-direction: row;
-            }
-            .side {
-              width: 200px;
+              margin-left: 200px;
             }
             .main {
               flex: 1;
-              border-left: 1px solid ${core.colors.gray01};
             }
           }
         `}</style>

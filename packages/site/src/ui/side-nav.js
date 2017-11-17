@@ -333,6 +333,7 @@ export default withHeadings(props => (
         position: fixed;
         top: 0;
         left: 0;
+        border-right: 1px solid ${core.colors.gray01};
         transform: translateX(calc(-1 * ${css.sidenavWidth}));
         height: 100vh;
         width: ${css.sidenavWidth};
