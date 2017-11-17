@@ -83,14 +83,13 @@ const Carousel = props => (
       .carousel {
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         padding: ${core.layout.spacingMedium};
         background: ${core.colors.gray06};
       }
       .cardContainer {
         flex: 1;
-      }
-      .cardContainer + .cardContainer {
-        margin-left: ${core.layout.spacingMedium};
+        margin: calc(${core.layout.spacingMedium} / 2);
       }
     `}</style>
   </div>
