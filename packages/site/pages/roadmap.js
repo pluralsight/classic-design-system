@@ -19,23 +19,20 @@ import {
 const work = {
   now: [
     {
-      title: 'Tag',
-      tags: ['Component']
-    },
-    {
       title: 'Layout',
       tags: ['Core']
-    }
-  ],
-  next: [
+    },
     {
       title: 'Navigation Updates',
       tags: ['Site']
     },
     {
       title: 'Drawer',
-      tags: ['Component']
-    },
+      tags: ['Component'],
+      helpers: ['Devstar']
+    }
+  ],
+  next: [
     {
       title: 'Avatar',
       tags: ['Component']
