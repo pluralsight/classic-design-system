@@ -13,7 +13,6 @@ export default props => (
           <TitleLogo />
         </Link>
       </div>
-      <div className="balance" aria-hidden="true" />
     </div>
     <TopBar />
     <style jsx>{`
@@ -24,7 +23,10 @@ export default props => (
         height: 69px;
       }
       .burger {
-        align-self: stretch;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 69px;
         text-align: center;
         width: calc(${core.layout.spacingLarge} * 3);
         border: 0;
@@ -44,12 +46,6 @@ export default props => (
         text-align: center;
         flex: 1;
         line-height: 0;
-      }
-      .balance {
-        display: block;
-        content: ''
-        height: 0;
-        width: calc(${core.layout.spacingLarge} * 3);
       }
       @media screen and (min-width: 769px) {
         .bar {
