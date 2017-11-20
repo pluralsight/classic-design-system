@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@0.1.0...@pluralsight/ps-design-system-layout@0.2.0) (2017-11-20)
+
+
+### Features
+
+* **layout:** sidebar layout ([0d4390b](https://github.com/pluralsight/design-system/commit/0d4390b))
+
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2017-11-20)
 
