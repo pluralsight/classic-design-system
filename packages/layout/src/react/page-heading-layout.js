@@ -3,9 +3,9 @@ import Text from '@pluralsight/ps-design-system-text/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import css from '../css'
+import { PageHeadingLayout as css } from '../css'
 
-const style = glamor.css(css['.psds-layout'])
+const style = glamor.css(css['.psds-page-heading-layout'])
 
 const PageHeadingLayout = props => (
   <div {...style}>
