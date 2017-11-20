@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots default page header 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yto836=""
+  >
+    <h2
+      className={undefined}
+      data-css-13v0ptp=""
+      size="large"
+    >
+      My Page
+    </h2>
+    My content
+  </div>
+</div>
+`;
