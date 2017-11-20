@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots default page header 1`] = `
+exports[`Storyshots PageHeadingLayout default 1`] = `
 <div
   style={
     Object {
@@ -27,6 +27,88 @@ exports[`Storyshots default page header 1`] = `
       My Page
     </h2>
     My content
+  </div>
+</div>
+`;
+
+exports[`Storyshots SidebarLayout sidebarPosition: first 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-19i7kll=""
+    >
+      <div
+        data-css-dlz4qu=""
+      >
+        This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here.
+      </div>
+      <div
+        data-css-1qeez79=""
+      >
+        This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SidebarLayout sidebarPosition: last 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-t8ydvh=""
+    >
+      <div
+        data-css-t510zc=""
+      >
+        This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here.
+      </div>
+      <div
+        data-css-1qeez79=""
+      >
+        This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+      </div>
+    </div>
   </div>
 </div>
 `;
