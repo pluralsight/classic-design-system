@@ -1,6 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 import glamorous from 'glamorous'
-import { bool, node, string } from 'prop-types'
+import PropTypes from 'prop-types'
 import React from 'react'
 
 const Container = glamorous.div({
@@ -9,11 +9,6 @@ const Container = glamorous.div({
 })
 
 export default class Collapsible extends React.Component {
-  static propTypes = {
-    isOpen: bool.isRequired,
-    children: node
-  }
-
   componentDidMount() {
     this.updateOverflowStyle(this.props.isOpen)
     if (!this.props.isOpen) {
@@ -32,21 +27,22 @@ export default class Collapsible extends React.Component {
     else
       this.close()
   }
-  async open() {
+  open() {
     const element = this.containerElement
     this.setHeightToAuto(element)
     this.updateOverflowStyle(true, true)
-    await this.waitForHeightTransitionToEnd(element)
-
-    if (this.props.isOpen) {
-      this.updateOverflowStyle(true, false)
-      this.setTransitionEnabled(false, element)
-      element.style.height = 'auto'
-      this.forceRepaint(element)
-      this.setTransitionEnabled(true, element)
-    }
+    return this.waitForHeightTransitionToEnd(element)
+      .then(() => {
+        if (this.props.isOpen) {
+          this.updateOverflowStyle(true, false)
+          this.setTransitionEnabled(false, element)
+          element.style.height = 'auto'
+          this.forceRepaint(element)
+          this.setTransitionEnabled(true, element)
+        }
+      })
   }
-  async close() {
+  close() {
     const element = this.containerElement
     this.setTransitionEnabled(false, element)
     element.style.height = window.getComputedStyle(element).height
@@ -54,11 +50,12 @@ export default class Collapsible extends React.Component {
     this.updateOverflowStyle(false, true)
     this.setTransitionEnabled(true, element)
     element.style.height = '0px'
-    await this.waitForHeightTransitionToEnd(element)
-
-    if (!this.props.isOpen) {
-      this.updateOverflowStyle(false, false)
-    }
+    return this.waitForHeightTransitionToEnd(element)
+      .then(() => {
+        if (!this.props.isOpen) {
+          this.updateOverflowStyle(false, false)
+        }
+      })
   }
   updateOverflowStyle(isOpen, isTransitioning = false) {
     this.containerElement.style.overflow = isTransitioning || !isOpen ? 'hidden' : 'visible'
@@ -75,9 +72,9 @@ export default class Collapsible extends React.Component {
     element.style.transition = enabled ? '' : 'none'
   }
   forceRepaint(element) {
-    element.offsetHeight
+    element.offsetHeight // see https://stackoverflow.com/a/3485654
   }
-  async waitForHeightTransitionToEnd(element) {
+  waitForHeightTransitionToEnd(element) {
     return new Promise(resolve => {
       element.addEventListener('transitionend', function transitionEnd(event) {
         if (event.propertyName === 'height') {
@@ -94,4 +91,11 @@ export default class Collapsible extends React.Component {
   render() {
     return <Container innerRef={this.setContainerElement}>{this.props.children}</Container>
   }
+}
+
+Collapsible.displayName = 'Collapsible'
+
+Collapsible.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  children: PropTypes.node
 }
