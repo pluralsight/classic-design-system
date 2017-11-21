@@ -24,17 +24,23 @@ const styleSidebar = props =>
       `.psds-sidebar-layout__sidebar--sidebar-position-${props.sidebarPosition}`
     ],
     {
-      '@media (min-width: 769px)':
-        css['@media (min-width: 769px)'][
+      '@media (min-width: 769px)': {
+        ...css['@media (min-width: 769px)'][`.psds-sidebar-layout__sidebar`],
+        ...css['@media (min-width: 769px)'][
           `.psds-sidebar-layout__sidebar--sidebar-position-${props.sidebarPosition}`
         ]
+      }
     }
   )
 
-const styleMain = props => glamor.css(css['.psds-sidebar-layout__main'])
+const styleMain = props =>
+  glamor.css(css['.psds-sidebar-layout__main'], {
+    '@media (min-width: 769px)':
+      css['@media (min-width: 769px)']['.psds-sidebar-layout__main']
+  })
 
 const SidebarLayout = props => (
-  <div {...styleLayout(props)}>
+  <div {...styleLayout(props)} {...props}>
     {React.cloneElement(props.sidebar, {
       sidebarPosition: props.sidebarPosition
     })}
@@ -42,10 +48,18 @@ const SidebarLayout = props => (
   </div>
 )
 
-const Sidebar = props => <div {...styleSidebar(props)}>{props.children}</div>
+const Sidebar = props => (
+  <div {...styleSidebar(props)} {...props}>
+    {props.children}
+  </div>
+)
 Sidebar.displayName = 'SidebarLayout.Sidebar'
 
-const Main = props => <div {...styleMain(props)}>{props.children}</div>
+const Main = props => (
+  <div {...styleMain(props)} {...props}>
+    {props.children}
+  </div>
+)
 Main.displayName = 'SidebarLayout.Main'
 
 SidebarLayout.displayName = 'SidebarLayout'

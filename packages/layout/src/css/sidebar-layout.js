@@ -12,9 +12,6 @@ export default {
   [`.psds-sidebar-layout--sidebar-position-${vars.sidebarPositions.last}`]: {
     flexDirection: 'column-reverse'
   },
-  ['.psds-sidebar-layout__sidebar']: {
-    flex: 1
-  },
   [`.psds-sidebar-layout__sidebar--sidebar-position-${vars.sidebarPositions
     .first}`]: {
     marginBottom: core.layout.spacingMedium
@@ -23,15 +20,15 @@ export default {
     .last}`]: {
     marginTop: core.layout.spacingMedium
   },
-  ['.psds-sidebar-layout__main']: {
-    flex: 2
-  },
   '@media (min-width: 769px)': {
     [`.psds-sidebar-layout--sidebar-position-${vars.sidebarPositions.first}`]: {
       flexDirection: 'row'
     },
     [`.psds-sidebar-layout--sidebar-position-${vars.sidebarPositions.last}`]: {
       flexDirection: 'row-reverse'
+    },
+    ['.psds-sidebar-layout__sidebar']: {
+      width: 'calc(33.34%)'
     },
     [`.psds-sidebar-layout__sidebar--sidebar-position-${vars.sidebarPositions
       .first}`]: {
@@ -42,6 +39,9 @@ export default {
       .last}`]: {
       marginTop: 0,
       marginLeft: core.layout.spacingMedium
+    },
+    ['.psds-sidebar-layout__main']: {
+      width: 'calc(66.66%)'
     }
   }
 }

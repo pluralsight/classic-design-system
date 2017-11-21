@@ -31,6 +31,196 @@ exports[`Storyshots PageHeadingLayout default 1`] = `
 </div>
 `;
 
+exports[`Storyshots SidebarLayout short main content 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-19i7kll=""
+      main={
+        <SidebarLayout.Main>
+          Very little
+        </SidebarLayout.Main>
+      }
+      sidebar={
+        <SidebarLayout.Sidebar>
+          This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here.
+        </SidebarLayout.Sidebar>
+      }
+      sidebarPosition="first"
+    >
+      <div
+        data-css-1g4lc1q=""
+        sidebarPosition="first"
+      >
+        This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here.
+      </div>
+      <div
+        data-css-f5f1aw=""
+      >
+        Very little
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SidebarLayout short sidebar content 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-19i7kll=""
+      main={
+        <SidebarLayout.Main>
+          This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+        </SidebarLayout.Main>
+      }
+      sidebar={
+        <SidebarLayout.Sidebar>
+          Very short
+        </SidebarLayout.Sidebar>
+      }
+      sidebarPosition="first"
+    >
+      <div
+        data-css-1g4lc1q=""
+        sidebarPosition="first"
+      >
+        Very short
+      </div>
+      <div
+        data-css-f5f1aw=""
+      >
+        This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SidebarLayout sidebar style overrides 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-19i7kll=""
+      main={
+        <SidebarLayout.Main>
+          This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+        </SidebarLayout.Main>
+      }
+      sidebar={
+        <SidebarLayout.Sidebar
+          style={
+            Object {
+              "overflow": "hidden",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "background": "red",
+                "height": "50px",
+                "width": "700px",
+              }
+            }
+          >
+            Fixed width thing
+          </div>
+        </SidebarLayout.Sidebar>
+      }
+      sidebarPosition="first"
+    >
+      <div
+        data-css-1g4lc1q=""
+        sidebarPosition="first"
+        style={
+          Object {
+            "overflow": "hidden",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "background": "red",
+              "height": "50px",
+              "width": "700px",
+            }
+          }
+        >
+          Fixed width thing
+        </div>
+      </div>
+      <div
+        data-css-f5f1aw=""
+      >
+        This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots SidebarLayout sidebarPosition: first 1`] = `
 <div
   style={
@@ -56,14 +246,26 @@ exports[`Storyshots SidebarLayout sidebarPosition: first 1`] = `
   >
     <div
       data-css-19i7kll=""
+      main={
+        <SidebarLayout.Main>
+          This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+        </SidebarLayout.Main>
+      }
+      sidebar={
+        <SidebarLayout.Sidebar>
+          This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here.
+        </SidebarLayout.Sidebar>
+      }
+      sidebarPosition="first"
     >
       <div
-        data-css-dlz4qu=""
+        data-css-1g4lc1q=""
+        sidebarPosition="first"
       >
         This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here.
       </div>
       <div
-        data-css-1qeez79=""
+        data-css-f5f1aw=""
       >
         This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
       </div>
@@ -97,14 +299,99 @@ exports[`Storyshots SidebarLayout sidebarPosition: last 1`] = `
   >
     <div
       data-css-t8ydvh=""
+      main={
+        <SidebarLayout.Main>
+          This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+        </SidebarLayout.Main>
+      }
+      sidebar={
+        <SidebarLayout.Sidebar>
+          This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here.
+        </SidebarLayout.Sidebar>
+      }
+      sidebarPosition="last"
     >
       <div
-        data-css-t510zc=""
+        data-css-1p75kgn=""
+        sidebarPosition="last"
       >
         This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here.
       </div>
       <div
-        data-css-1qeez79=""
+        data-css-f5f1aw=""
+      >
+        This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SidebarLayout wide, fixed sidebar content 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-19i7kll=""
+      main={
+        <SidebarLayout.Main>
+          This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+        </SidebarLayout.Main>
+      }
+      sidebar={
+        <SidebarLayout.Sidebar>
+          <div
+            style={
+              Object {
+                "background": "red",
+                "height": "50px",
+                "width": "700px",
+              }
+            }
+          >
+            Fixed width thing
+          </div>
+        </SidebarLayout.Sidebar>
+      }
+      sidebarPosition="first"
+    >
+      <div
+        data-css-1g4lc1q=""
+        sidebarPosition="first"
+      >
+        <div
+          style={
+            Object {
+              "background": "red",
+              "height": "50px",
+              "width": "700px",
+            }
+          }
+        >
+          Fixed width thing
+        </div>
+      </div>
+      <div
+        data-css-f5f1aw=""
       >
         This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
       </div>

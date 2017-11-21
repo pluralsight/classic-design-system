@@ -39,3 +39,69 @@ Object.keys(SidebarLayout.sidebarPositions).map(pos =>
     </div>
   ))
 )
+sidebarLayoutStory.add('short main content', _ => (
+  <div style={{ color: 'white' }}>
+    <SidebarLayout
+      sidebar={
+        <SidebarLayout.Sidebar>
+          This is sidebar stuff that goes here. This is sidebar stuff that goes
+          here. This is sidebar stuff that goes here. This is sidebar stuff that
+          goes here.
+        </SidebarLayout.Sidebar>
+      }
+      main={<SidebarLayout.Main>Very little</SidebarLayout.Main>}
+    />
+  </div>
+))
+sidebarLayoutStory.add('short sidebar content', _ => (
+  <div style={{ color: 'white' }}>
+    <SidebarLayout
+      sidebar={<SidebarLayout.Sidebar>Very short</SidebarLayout.Sidebar>}
+      main={
+        <SidebarLayout.Main>
+          This is main stuff that goes here. This is main stuff that goes here.
+          This is main stuff that goes here. This is main stuff that goes here.
+        </SidebarLayout.Main>
+      }
+    />
+  </div>
+))
+sidebarLayoutStory.add('wide, fixed sidebar content', _ => (
+  <div style={{ color: 'white' }}>
+    <SidebarLayout
+      sidebar={
+        <SidebarLayout.Sidebar>
+          <div style={{ width: '700px', height: '50px', background: 'red' }}>
+            Fixed width thing
+          </div>
+        </SidebarLayout.Sidebar>
+      }
+      main={
+        <SidebarLayout.Main>
+          This is main stuff that goes here. This is main stuff that goes here.
+          This is main stuff that goes here. This is main stuff that goes here.
+        </SidebarLayout.Main>
+      }
+    />
+  </div>
+))
+
+sidebarLayoutStory.add('sidebar style overrides', _ => (
+  <div style={{ color: 'white' }}>
+    <SidebarLayout
+      sidebar={
+        <SidebarLayout.Sidebar style={{ overflow: 'hidden' }}>
+          <div style={{ width: '700px', height: '50px', background: 'red' }}>
+            Fixed width thing
+          </div>
+        </SidebarLayout.Sidebar>
+      }
+      main={
+        <SidebarLayout.Main>
+          This is main stuff that goes here. This is main stuff that goes here.
+          This is main stuff that goes here. This is main stuff that goes here.
+        </SidebarLayout.Main>
+      }
+    />
+  </div>
+))
