@@ -1,4 +1,3 @@
-import 'element-closest'
 import Collapsible from './collapsible';
 import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
@@ -6,14 +5,19 @@ import glamorous, { Div } from 'glamorous'
 import { transparentize } from 'polished'
 import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
-import { bool, func, node, string } from 'prop-types'
+import PropTypes from 'prop-types'
 import React from 'react'
 
+if (typeof window !== 'undefined')
+  require('element-closest')
+
 const { gray01, gray02, gray03, gray04, gray06, white } = core.colors
+const CARET_AREA_WIDTH = 38
 
 const DrawerBase = glamorous.div(
   {
     position: 'relative',
+    paddingRight: CARET_AREA_WIDTH,
     cursor: 'pointer',
     transition: `background ${core.motion.speedNormal}`,
     ':hover': {
@@ -36,26 +40,27 @@ const DrawerPanel = glamorous.div(
     transition: `box-shadow ${core.motion.speedNormal}`
   },
   ({ isOpen, themeName }) =>(isOpen
-    ? { boxShadow: `inset 0 1px 3px 0 rgba(0,0,0,${themeName === themeNames.dark ? '0.5' : '0.1'})` }
+    ? { boxShadow: `inset 0 1px 3px 0 rgba(0,0,0,${themeName === themeNames.light ? '0.1' : '0.5'})` }
     : {}
   )
 )
 
 const RowContainerWrapper = glamorous.div(
+  {
+    marginRight: -CARET_AREA_WIDTH,
+    paddingRight: CARET_AREA_WIDTH
+  },
   ({ themeName }) => ({
-    borderTop: `1px solid ${themeName === themeNames.dark ? gray04 : gray01 }`
+    borderTop: `1px solid ${themeName === themeNames.light ? gray01 : gray04 }`
   })
 )
 const RowContainer = (props, context) => (
   <RowContainerWrapper themeName={context.themeName}>
-    <Div marginTop={-1} padding={`0 57px 0 ${core.layout.spacingMedium}`}>
+    <Div marginTop={-1} padding={`0 ${core.layout.spacingMedium}`}>
       {props.children}
     </Div>
   </RowContainerWrapper>
 )
-RowContainer.contextTypes = {
-  themeName: string
-}
 
 const ToggleButtonContainer = glamorous.div({
   position: 'absolute',
@@ -77,9 +82,9 @@ const ToggleButton = glamorous.button(
     transition: `all ${core.motion.speedNormal}`
   },
   ({ themeName }) => ({
-    color:  themeName === themeNames.dark ? gray02 : gray03,
+    color:  themeName === themeNames.light ? gray03: gray02,
     ':hover, :active': {
-      color: themeName === themeNames.dark ? white : gray06,
+      color: themeName === themeNames.light ? gray06: white,
     }
   })
 )
@@ -90,17 +95,6 @@ const RotatableIcon = glamorous(Icon)(
 )
 
 class Drawer extends React.Component {
-  static displayName = 'Drawer'
-  static propTypes = {
-    children: node.isRequired,
-    base: node.isRequired,
-    isOpen: bool,
-    onToggle: func
-  }
-  static contextTypes = {
-    themeName: string
-  }
-
   constructor(props) {
     super(props)
     this.state = { isOpen: false }
@@ -148,6 +142,23 @@ class Drawer extends React.Component {
       </div>
     )
   }
+}
+
+RowContainer.contextTypes = {
+  themeName: PropTypes.string
+}
+
+Drawer.displayName = 'Drawer'
+
+Drawer.propTypes = {
+  children: PropTypes.node.isRequired,
+  base: PropTypes.node.isRequired,
+  isOpen: PropTypes.bool,
+  onToggle: PropTypes.func
+}
+
+Drawer.contextTypes = {
+  themeName: PropTypes.string
 }
 
 Drawer.RowContainer = RowContainer
