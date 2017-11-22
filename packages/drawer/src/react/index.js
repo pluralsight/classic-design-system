@@ -1,6 +1,5 @@
 import Collapsible from './collapsible';
 import core from '@pluralsight/ps-design-system-core'
-import * as glamor from 'glamor'
 import glamorous, { Div } from 'glamorous'
 import { transparentize } from 'polished'
 import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
@@ -45,7 +44,7 @@ const DrawerPanel = glamorous.div(
   )
 )
 
-const RowContainerWrapper = glamorous.div(
+const DrawerPanelContent = glamorous.div(
   {
     marginRight: -CARET_AREA_WIDTH,
     paddingRight: CARET_AREA_WIDTH
@@ -53,13 +52,6 @@ const RowContainerWrapper = glamorous.div(
   ({ themeName }) => ({
     borderTop: `1px solid ${themeName === themeNames.light ? gray01 : gray04 }`
   })
-)
-const RowContainer = (props, context) => (
-  <RowContainerWrapper themeName={context.themeName}>
-    <Div marginTop={-1} padding={`0 ${core.layout.spacingMedium}`}>
-      {props.children}
-    </Div>
-  </RowContainerWrapper>
 )
 
 const ToggleButtonContainer = glamorous.div({
@@ -84,13 +76,16 @@ const ToggleButton = glamorous.button(
   ({ themeName }) => ({
     color:  themeName === themeNames.light ? gray03: gray02,
     ':hover, :active': {
-      color: themeName === themeNames.light ? gray06: white,
+      color: themeName === themeNames.light ? gray06: white
     }
   })
 )
 
-const RotatableIcon = glamorous(Icon)(
-  { transition: `transform ${core.motion.speedNormal}` },
+const Rotatable = glamorous.div(
+  {
+    transition: `transform ${core.motion.speedNormal}`,
+    lineHeight: 0
+  },
   ({ isRotated }) => (isRotated ? { transform: 'rotateZ(180deg)' } : {})
 )
 
@@ -129,10 +124,16 @@ class Drawer extends React.Component {
     return (
       <div>
         <DrawerBase isOpen={isOpen} onClick={this.handleClick}>
-          {this.props.base}
+          <DrawerPanelContent themeName={themeName}>
+            <Div marginTop={-1} padding={`0 ${core.layout.spacingMedium}`}>
+              {this.props.base}
+            </Div>
+          </DrawerPanelContent>
           <ToggleButtonContainer>
             <ToggleButton onClick={this.toggle} themeName={themeName}>
-              <RotatableIcon id="caretDown" isRotated={isOpen} />
+              <Rotatable isRotated={isOpen}>
+                <Icon id={Icon.ids.caretDown} />
+              </Rotatable>
             </ToggleButton>
           </ToggleButtonContainer>
         </DrawerBase>
@@ -142,10 +143,6 @@ class Drawer extends React.Component {
       </div>
     )
   }
-}
-
-RowContainer.contextTypes = {
-  themeName: PropTypes.string
 }
 
 Drawer.displayName = 'Drawer'
@@ -160,7 +157,5 @@ Drawer.propTypes = {
 Drawer.contextTypes = {
   themeName: PropTypes.string
 }
-
-Drawer.RowContainer = RowContainer
 
 export default Drawer
