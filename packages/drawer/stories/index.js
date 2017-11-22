@@ -78,7 +78,7 @@ storiesOf('drawer', module)
   .add('controlled', () => <ControlledDrawerStory /> )
   .add('using onToggle prop', () => <OnToggleDrawerStory />)
   .add('with row component', () => (
-    <Drawer base={<Drawer.RowContainer>{renderRow()}</Drawer.RowContainer>}>
+    <Drawer base={renderRow()}>
       Drawer Content Here
     </Drawer>
   ))
