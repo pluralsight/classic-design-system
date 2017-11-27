@@ -92,7 +92,7 @@ const Rotatable = glamorous.div(
 class Drawer extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isOpen: false }
+    this.state = { isOpen: this.props.startOpen }
   }
 
   get isControlledByProps() {
@@ -151,7 +151,12 @@ Drawer.propTypes = {
   children: PropTypes.node.isRequired,
   base: PropTypes.node.isRequired,
   isOpen: PropTypes.bool,
-  onToggle: PropTypes.func
+  onToggle: PropTypes.func,
+  startOpen: PropTypes.bool
+}
+
+Drawer.defaultProps = {
+  startOpen: false
 }
 
 Drawer.contextTypes = {
