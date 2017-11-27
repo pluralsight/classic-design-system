@@ -39,36 +39,48 @@ exports[`Storyshots drawer controlled 1`] = `
       </button>
       <div>
         <div
-          className="css-ann96s"
+          className="css-a8p3d5"
           onClick={[Function]}
         >
-          <div>
-            Drawer Base Here
+          <div
+            className="css-1lzobj4"
+          >
+            <div
+              className="css-1g6ond4"
+            >
+              <div>
+                Drawer Base Here
+              </div>
+            </div>
           </div>
           <div
             className="css-qs2rg7"
           >
             <button
-              className="css-8ba3lx"
+              className="css-wepra9"
               onClick={[Function]}
             >
               <div
-                className="css-wunzjn"
+                className="css-xnveog"
               >
-                <svg
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  className="css-otejxm"
                 >
-                  <path
-                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                  />
-                </svg>
+                  <svg
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                    />
+                  </svg>
+                </div>
               </div>
             </button>
           </div>
         </div>
         <div
-          className="css-kkhalp"
+          className="css-ule0ur"
         >
           <div
             className="css-8nylan"
@@ -109,30 +121,220 @@ exports[`Storyshots drawer default 1`] = `
   >
     <div>
       <div
-        className="css-owp8kf"
+        className="css-58omaf"
         onClick={[Function]}
       >
-        <div>
-          Drawer Base Here
+        <div
+          className="css-1lzobj4"
+        >
+          <div
+            className="css-1g6ond4"
+          >
+            <div>
+              Drawer Base Here
+            </div>
+          </div>
         </div>
         <div
           className="css-qs2rg7"
         >
           <button
-            className="css-8ba3lx"
+            className="css-wepra9"
             onClick={[Function]}
           >
             <div
-              className="css-vdncv8"
+              className="css-1byjzqg"
             >
-              <svg
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                className="css-otejxm"
               >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        className="css-1i2htk9"
+      >
+        <div
+          className="css-8nylan"
+        >
+          Drawer Content Here
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots drawer row component with actions 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+        "fontSize": 24,
+        "padding": 48,
+      }
+    }
+  >
+    <div>
+      <div
+        className="css-58omaf"
+        onClick={[Function]}
+      >
+        <div
+          className="css-1lzobj4"
+        >
+          <div
+            className="css-1g6ond4"
+          >
+            <div
+              className="css-7w4714"
+            >
+              <div
+                className="css-js3ti3"
+              >
+                <span
+                  className="css-15yq56v"
+                >
+                  <a
+                    href="https://duckduckgo.com?q=image"
+                  >
+                    <img
+                      src="https://cataas.com/cat"
+                    />
+                  </a>
+                </span>
+                <div
+                  className="css-4nxbcy"
+                >
+                  <span
+                    className="css-1fxa3fl"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  >
+                    <a
+                      href="https://duckduckgo.com?q=overlay"
+                    >
+                      Overlay
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div
+                className="css-kxulf3"
+              >
+                <div
+                  className="css-1e23mlv"
+                >
+                  <span
+                    className="css-1ublh7e"
+                  >
+                    <a
+                      href="https://duckduckgo.com?q=title"
+                    >
+                      I'm a Row with Actions
+                    </a>
+                  </span>
+                </div>
+                <div
+                  className="css-gmo5z6"
+                >
+                  <span
+                    className="css-1tz10dh"
+                  >
+                    <span
+                      className="css-1ublh7e"
+                    >
+                      <a
+                        href="https://duckduckgo.com?q=cats"
+                      >
+                        Kitten McCatbuns
+                      </a>
+                    </span>
+                  </span>
+                  <span
+                    aria-hidden={true}
+                    className="css-kykfz1"
+                  >
+                    ·
+                  </span>
+                  <span
+                    className="css-1tz10dh"
+                  >
+                    23 hours of cuteness
+                  </span>
+                </div>
+              </div>
+              <div
+                className="css-1keoilf"
+              >
+                <button
+                  className="css-1eg2eyk"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="css-qs2rg7"
+        >
+          <button
+            className="css-wepra9"
+            onClick={[Function]}
+          >
+            <div
+              className="css-1byjzqg"
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
             </div>
           </button>
         </div>
@@ -179,31 +381,43 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
     <div>
       <div>
         <div
-          className="css-owp8kf"
+          className="css-58omaf"
           onClick={[Function]}
         >
-          <div>
-            Drawer is 
-            closed
+          <div
+            className="css-1lzobj4"
+          >
+            <div
+              className="css-1g6ond4"
+            >
+              <div>
+                Drawer is 
+                closed
+              </div>
+            </div>
           </div>
           <div
             className="css-qs2rg7"
           >
             <button
-              className="css-8ba3lx"
+              className="css-wepra9"
               onClick={[Function]}
             >
               <div
-                className="css-vdncv8"
+                className="css-1byjzqg"
               >
-                <svg
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  className="css-otejxm"
                 >
-                  <path
-                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                  />
-                </svg>
+                  <svg
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                    />
+                  </svg>
+                </div>
               </div>
             </button>
           </div>
@@ -250,14 +464,14 @@ exports[`Storyshots drawer with row component 1`] = `
   >
     <div>
       <div
-        className="css-owp8kf"
+        className="css-58omaf"
         onClick={[Function]}
       >
         <div
-          className="css-1fq8nx6"
+          className="css-1lzobj4"
         >
           <div
-            className="css-1vfht4a"
+            className="css-1g6ond4"
           >
             <div
               className="css-7w4714"
@@ -325,20 +539,24 @@ exports[`Storyshots drawer with row component 1`] = `
           className="css-qs2rg7"
         >
           <button
-            className="css-8ba3lx"
+            className="css-wepra9"
             onClick={[Function]}
           >
             <div
-              className="css-vdncv8"
+              className="css-1byjzqg"
             >
-              <svg
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                className="css-otejxm"
               >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
             </div>
           </button>
         </div>
