@@ -119,21 +119,21 @@ export default withServerProps(_ => (
             'boolean',
             null,
             null,
-            `overrides the drawer's internal state to control whether the drawer is open or not`
+            `override for controlling internal drawer state`
           ]),
           PropTypes.row([
             'onToggle',
-            'function',
+            <code>boolean => ()</code>,
             null,
             null,
-            'called when the drawer opens/closes with new isOpen status'
+            'triggered when the drawer opens or closes'
           ]),
           PropTypes.row([
             'startOpen',
             'boolean',
             null,
             <code>false</code>,
-            'if true, the drawer will be open when first mounted'
+            'drawer is open on first render'
           ])
         ]}
       />
