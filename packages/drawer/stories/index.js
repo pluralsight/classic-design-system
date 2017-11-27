@@ -52,17 +52,6 @@ class OnToggleDrawerStory extends React.Component {
   }
 }
 
-function renderRow() {
-  return (
-    <Row image={<Row.Image src="https://cataas.com/cat"/>}
-         title="Look at me! I'm a <Row />!"
-         metadata1={['Kitten McCatbuns', '23 hours of cuteness']}
-         actionBarVisible
-         actionBar={[<Row.Action key="iHeartCats" icon={<Icon id="more"/>}/>]}
-    />
-  )
-}
-
 storiesOf('drawer', module)
   .addDecorator(story => (
     <div style={{ color: 'white', padding: 48, fontSize: 24 }}>
@@ -78,7 +67,33 @@ storiesOf('drawer', module)
   .add('controlled', () => <ControlledDrawerStory /> )
   .add('using onToggle prop', () => <OnToggleDrawerStory />)
   .add('with row component', () => (
-    <Drawer base={renderRow()}>
+    <Drawer base={
+	    <Row image={<Row.Image src="https://cataas.com/cat"/>}
+		 title="Look at me! I'm a <Row />!"
+		 metadata1={['Kitten McCatbuns', '23 hours of cuteness']}
+		 actionBarVisible
+		 actionBar={[<Row.Action key="iHeartCats" icon={<Icon id="more"/>}/>]}
+	    />
+	}>
+      Drawer Content Here
+    </Drawer>
+  ))
+  .add('row component with actions', () => (
+    <Drawer base={
+	    <Row image={<Row.ImageLink><a href="https://duckduckgo.com?q=image"><img src="https://cataas.com/cat"/></a></Row.ImageLink>}
+		 title={<Row.TextLink><a href="https://duckduckgo.com?q=title">I'm a Row with Actions</a></Row.TextLink>}
+		 metadata1={[<Row.TextLink><a href="https://duckduckgo.com?q=cats">Kitten McCatbuns</a></Row.TextLink>, '23 hours of cuteness']}
+		 fullOverlay={
+		  <Row.FullOverlayLink>
+		    <a href="https://duckduckgo.com?q=overlay">
+		      Overlay
+		    </a>
+		  </Row.FullOverlayLink>
+		 }
+		 actionBarVisible
+		 actionBar={[<Row.Action key="iHeartCats" icon={<Icon id="more"/>} onClick={action('action')}/>]}
+	    />
+	}>
       Drawer Content Here
     </Drawer>
   ))
