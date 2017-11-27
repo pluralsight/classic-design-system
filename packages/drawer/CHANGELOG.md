@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@0.1.0...@pluralsight/ps-design-system-drawer@0.2.0) (2017-11-27)
+
+
+### Features
+
+* **drawer:** allow starting open ([4be14b8](https://github.com/pluralsight/design-system/commit/4be14b8))
+
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2017-11-27)
 
