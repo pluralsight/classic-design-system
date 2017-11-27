@@ -102,10 +102,10 @@ const Table = props => (
     <table className="table">
       {Array.isArray(props.props) ? (
         [
-          <thead>
+          <thead key="thead">
             <ColumnLabels />
           </thead>,
-          <tbody>
+          <tbody key="tbody">
             {props.props.map((row, i) => (
               <Row {...props} key={`row${i}`} row={row} />
             ))}
@@ -117,8 +117,8 @@ const Table = props => (
             <ComponentHeading key={`head${i}`}>
               {componentName} PropTypes
             </ComponentHeading>,
-            i > 0 && <Divider />,
-            i === 0 && <ColumnLabels />,
+            i > 0 && <Divider key={`divider${i}`} />,
+            i === 0 && <ColumnLabels key={`labels${i}`} />,
             props.props[componentName].map((row, j) => (
               <Row {...props} key={`row${j}`} row={row} />
             ))
