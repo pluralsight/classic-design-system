@@ -12,6 +12,7 @@ module.exports = {
       '/components/badge': { page: '/components/badge' },
       '/components/button': { page: '/components/button' },
       '/components/card': { page: '/components/card' },
+      '/components/drawer': { page: '/components/drawer' },
       '/components/icon': { page: '/components/icon' },
       '/components/link': { page: '/components/link' },
       '/components/row': { page: '/components/row' },

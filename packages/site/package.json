@@ -20,6 +20,7 @@
     "@pluralsight/ps-design-system-button": "^9.5.0",
     "@pluralsight/ps-design-system-card": "^7.4.0",
     "@pluralsight/ps-design-system-core": "^4.0.2",
+    "@pluralsight/ps-design-system-drawer": "^1.0.1",
     "@pluralsight/ps-design-system-icon": "^8.2.0",
     "@pluralsight/ps-design-system-link": "^5.5.0",
     "@pluralsight/ps-design-system-normalize": "^3.0.33",

@@ -115,6 +115,9 @@ export default withServerProps(_ => (
           <Link href="/components/button#light-theme">Button</Link>
         </Text.List.Item>
         <Text.List.Item>
+          <Link href="/components/drawer#light-theme">Drawer</Link>
+        </Text.List.Item>
+        <Text.List.Item>
           <Link href="/components/tab#light-theme">Tab</Link>
         </Text.List.Item>
         <Text.List.Item>
