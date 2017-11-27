@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-drawer",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Design System component for drawer ui",
   "main": "index.js",
   "scripts": {
