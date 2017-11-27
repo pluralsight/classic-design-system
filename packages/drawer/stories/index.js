@@ -65,6 +65,11 @@ storiesOf('drawer', module)
     </Drawer>
   ))
   .add('controlled', () => <ControlledDrawerStory /> )
+  .add('using startOpen prop', () => (
+    <Drawer startOpen base={<div>Base here</div>}>
+      <div>Panel here</div>
+    </Drawer>
+  ))
   .add('using onToggle prop', () => <OnToggleDrawerStory />)
   .add('with row component', () => (
     <Drawer base={
