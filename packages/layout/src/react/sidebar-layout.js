@@ -39,8 +39,13 @@ const styleMain = props =>
       css['@media (min-width: 769px)']['.psds-sidebar-layout__main']
   })
 
+const rmNonHtmlProps = props => {
+  const { main, sidebar, sidebarPosition, ...rest } = props
+  return rest
+}
+
 const SidebarLayout = props => (
-  <div {...styleLayout(props)} {...props}>
+  <div {...styleLayout(props)} {...rmNonHtmlProps(props)}>
     {React.cloneElement(props.sidebar, {
       sidebarPosition: props.sidebarPosition
     })}
@@ -49,7 +54,7 @@ const SidebarLayout = props => (
 )
 
 const Sidebar = props => (
-  <div {...styleSidebar(props)} {...props}>
+  <div {...styleSidebar(props)} {...rmNonHtmlProps(props)}>
     {props.children}
   </div>
 )
