@@ -1,3 +1,3 @@
-import ASidebarLayout from './sidebar-layout'
+import AAsideLayout from './aside-layout'
 
-export const SidebarLayout = ASidebarLayout
+export const AsideLayout = AAsideLayout

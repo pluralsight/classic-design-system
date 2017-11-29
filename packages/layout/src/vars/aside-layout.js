@@ -1,8 +1,8 @@
-const sidebarPositions = {
+const asidePositions = {
   first: 'first',
   last: 'last'
 }
 
 export default {
-  sidebarPositions
+  asidePositions
 }

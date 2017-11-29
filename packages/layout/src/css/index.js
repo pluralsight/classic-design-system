@@ -1,5 +1,5 @@
 import APageHeadingLayout from './page-heading-layout'
-import ASidebarLayout from './sidebar-layout'
+import AAsideLayout from './aside-layout'
 
 export const PageHeadingLayout = APageHeadingLayout
-export const SidebarLayout = ASidebarLayout
+export const AsideLayout = AAsideLayout

@@ -4,7 +4,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import { PageHeadingLayout, SidebarLayout } from '../react'
+import { PageHeadingLayout, AsideLayout } from '../react'
 
 const pageHeadingLayoutStory = storiesOf('PageHeadingLayout', module)
   .addDecorator(themeDecorator(addons))
@@ -12,95 +12,95 @@ const pageHeadingLayoutStory = storiesOf('PageHeadingLayout', module)
     <PageHeadingLayout heading={<h2>My Page</h2>}>My content</PageHeadingLayout>
   ))
 
-const sidebarLayoutStory = storiesOf('SidebarLayout', module).addDecorator(
+const asideLayoutStory = storiesOf('AsideLayout', module).addDecorator(
   themeDecorator(addons)
 )
 
-Object.keys(SidebarLayout.sidebarPositions).map(pos =>
-  sidebarLayoutStory.add(`sidebarPosition: ${pos}`, _ => (
+Object.keys(AsideLayout.asidePositions).map(pos =>
+  asideLayoutStory.add(`asidePosition: ${pos}`, _ => (
     <div style={{ color: 'white' }}>
-      <SidebarLayout
-        sidebarPosition={pos}
-        sidebar={
-          <SidebarLayout.Sidebar>
-            This is sidebar stuff that goes here. This is sidebar stuff that
-            goes here. This is sidebar stuff that goes here. This is sidebar
+      <AsideLayout
+        asidePosition={pos}
+        aside={
+          <AsideLayout.Aside>
+            This is aside stuff that goes here. This is aside stuff that
+            goes here. This is aside stuff that goes here. This is aside
             stuff that goes here.
-          </SidebarLayout.Sidebar>
+          </AsideLayout.Aside>
         }
         main={
-          <SidebarLayout.Main>
+          <AsideLayout.Main>
             This is main stuff that goes here. This is main stuff that goes
             here. This is main stuff that goes here. This is main stuff that
             goes here.
-          </SidebarLayout.Main>
+          </AsideLayout.Main>
         }
       />
     </div>
   ))
 )
-sidebarLayoutStory.add('short main content', _ => (
+asideLayoutStory.add('short main content', _ => (
   <div style={{ color: 'white' }}>
-    <SidebarLayout
-      sidebar={
-        <SidebarLayout.Sidebar>
-          This is sidebar stuff that goes here. This is sidebar stuff that goes
-          here. This is sidebar stuff that goes here. This is sidebar stuff that
+    <AsideLayout
+      aside={
+        <AsideLayout.Aside>
+          This is aside stuff that goes here. This is aside stuff that goes
+          here. This is aside stuff that goes here. This is aside stuff that
           goes here.
-        </SidebarLayout.Sidebar>
+        </AsideLayout.Aside>
       }
-      main={<SidebarLayout.Main>Very little</SidebarLayout.Main>}
+      main={<AsideLayout.Main>Very little</AsideLayout.Main>}
     />
   </div>
 ))
-sidebarLayoutStory.add('short sidebar content', _ => (
+asideLayoutStory.add('short aside content', _ => (
   <div style={{ color: 'white' }}>
-    <SidebarLayout
-      sidebar={<SidebarLayout.Sidebar>Very short</SidebarLayout.Sidebar>}
+    <AsideLayout
+      aside={<AsideLayout.Aside>Very short</AsideLayout.Aside>}
       main={
-        <SidebarLayout.Main>
+        <AsideLayout.Main>
           This is main stuff that goes here. This is main stuff that goes here.
           This is main stuff that goes here. This is main stuff that goes here.
-        </SidebarLayout.Main>
+        </AsideLayout.Main>
       }
     />
   </div>
 ))
-sidebarLayoutStory.add('wide, fixed sidebar content', _ => (
+asideLayoutStory.add('wide, fixed aside content', _ => (
   <div style={{ color: 'white' }}>
-    <SidebarLayout
-      sidebar={
-        <SidebarLayout.Sidebar>
+    <AsideLayout
+      aside={
+        <AsideLayout.Aside>
           <div style={{ width: '700px', height: '50px', background: 'red' }}>
             Fixed width thing
           </div>
-        </SidebarLayout.Sidebar>
+        </AsideLayout.Aside>
       }
       main={
-        <SidebarLayout.Main>
+        <AsideLayout.Main>
           This is main stuff that goes here. This is main stuff that goes here.
           This is main stuff that goes here. This is main stuff that goes here.
-        </SidebarLayout.Main>
+        </AsideLayout.Main>
       }
     />
   </div>
 ))
 
-sidebarLayoutStory.add('sidebar style overrides', _ => (
+asideLayoutStory.add('aside style overrides', _ => (
   <div style={{ color: 'white' }}>
-    <SidebarLayout
-      sidebar={
-        <SidebarLayout.Sidebar style={{ overflow: 'hidden' }}>
+    <AsideLayout
+      aside={
+        <AsideLayout.Aside style={{ overflow: 'hidden' }}>
           <div style={{ width: '700px', height: '50px', background: 'red' }}>
             Fixed width thing
           </div>
-        </SidebarLayout.Sidebar>
+        </AsideLayout.Aside>
       }
       main={
-        <SidebarLayout.Main>
+        <AsideLayout.Main>
           This is main stuff that goes here. This is main stuff that goes here.
           This is main stuff that goes here. This is main stuff that goes here.
-        </SidebarLayout.Main>
+        </AsideLayout.Main>
       }
     />
   </div>
