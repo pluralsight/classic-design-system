@@ -4,7 +4,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import { PageHeadingLayout, AsideLayout } from '../react'
+import { AsideLayout, EqualColumnLayout, PageHeadingLayout } from '../react'
 
 const pageHeadingLayoutStory = storiesOf('PageHeadingLayout', module)
   .addDecorator(themeDecorator(addons))
@@ -23,9 +23,9 @@ Object.keys(AsideLayout.asidePositions).map(pos =>
         asidePosition={pos}
         aside={
           <AsideLayout.Aside>
-            This is aside stuff that goes here. This is aside stuff that
-            goes here. This is aside stuff that goes here. This is aside
-            stuff that goes here.
+            This is aside stuff that goes here. This is aside stuff that goes
+            here. This is aside stuff that goes here. This is aside stuff that
+            goes here.
           </AsideLayout.Aside>
         }
         main={
@@ -105,3 +105,29 @@ asideLayoutStory.add('aside style overrides', _ => (
     />
   </div>
 ))
+
+const equalColumnLayoutStory = storiesOf(
+  'EqualColumnLayout',
+  module
+).addDecorator(themeDecorator(addons))
+
+const Box = props => (
+  <div style={{ height: '100%', width: '100%', background: core.colors.pink }}>
+    {props.children}
+  </div>
+)
+
+Object.keys(EqualColumnLayout.counts).forEach(key =>
+  equalColumnLayoutStory.add(key, _ => (
+    <div style={{ color: 'white' }}>
+      <EqualColumnLayout count={EqualColumnLayout.counts[key]}>
+        <Box>First child</Box>
+        <Box>Second child</Box>
+        <Box>Third child</Box>
+        <Box>Fourth child</Box>
+        <Box>Fifth child</Box>
+        <Box>Sixth child</Box>
+      </EqualColumnLayout>
+    </div>
+  ))
+)
