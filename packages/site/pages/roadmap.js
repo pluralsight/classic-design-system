@@ -23,16 +23,12 @@ const work = {
       tags: ['Core']
     },
     {
-      title: 'Drawer',
+      title: 'Avatar',
       tags: ['Component'],
-      helpers: ['Devstar']
+      helpers: ['Mentors']
     }
   ],
   next: [
-    {
-      title: 'Avatar',
-      tags: ['Component']
-    },
     {
       title: 'Button - Loading States',
       tags: ['Component']
