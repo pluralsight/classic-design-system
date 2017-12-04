@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.14.0"></a>
+# [9.14.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.13.0...@pluralsight/ps-design-system-site@9.14.0) (2017-12-04)
+
+
+### Bug Fixes
+
+* **site:** proptypes missing key warning ([499d715](https://github.com/pluralsight/design-system/commit/499d715))
+
+
+### Features
+
+* **site:** add drawer page ([606aa33](https://github.com/pluralsight/design-system/commit/606aa33))
+
+
+
+
 <a name="9.13.0"></a>
 # [9.13.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.12.0...@pluralsight/ps-design-system-site@9.13.0) (2017-11-17)
 
