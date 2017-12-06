@@ -1,6 +1,7 @@
 import { action } from '@storybook/addon-actions'
 import backgrounds from '@storybook/addon-backgrounds'
 import core from '@pluralsight/ps-design-system-core'
+import Drawer from '@pluralsight/ps-design-system-drawer/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import { linkTo } from '@storybook/addon-links'
 import React from 'react'
@@ -95,7 +96,9 @@ Object.keys(Row.sizes).forEach(size =>
   titleStory.add(`${size} long title`, _ => (
     <Row
       size={size}
-      title={`${size} With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000`}
+      title={`${
+        size
+      } With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000`}
       metadata1={['Jim Cooper']}
       image={
         <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
@@ -343,3 +346,28 @@ const fullOverlayStory = storiesOf('fullOverlay', module)
       }
     />
   ))
+
+const drawerStory = storiesOf('in drawer', module).addDecorator(bg)
+
+Object.keys(Row.sizes).forEach(size =>
+  drawerStory.add(size, _ => (
+    <Drawer
+      base={
+        <Row
+          title="Course thing you do"
+          metadata1={['1m 46s']}
+          image={
+            <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+          }
+          actionBar={[
+            <Row.Action icon={<Icon id={Icon.ids.more} />} key="more" />
+          ]}
+          actionBarVisible
+          size={size}
+        />
+      }
+    >
+      <div>some goodies in the drawer</div>
+    </Drawer>
+  ))
+)

@@ -18,7 +18,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -28,7 +28,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
       />
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -37,10 +37,10 @@ exports[`Storyshots actionBar locked visible 1`] = `
       </div>
     </div>
     <div
-      className="css-1bg3chk"
+      className="css-2c174p"
     >
       <button
-        className="css-1eg2eyk"
+        className="css-1ekywde"
       >
         <div
           className="css-otejxm"
@@ -78,10 +78,10 @@ exports[`Storyshots actionBar long title 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
-      className="css-15hldqu"
+      className="css-1tiyrld"
     >
       <div
         className="css-1e23mlv"
@@ -90,10 +90,10 @@ exports[`Storyshots actionBar long title 1`] = `
       </div>
     </div>
     <div
-      className="css-h6xi1h"
+      className="css-48z861"
     >
       <button
-        className="css-1eg2eyk"
+        className="css-1ekywde"
       >
         <div
           className="css-otejxm"
@@ -131,7 +131,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -141,7 +141,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
       />
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -150,10 +150,10 @@ exports[`Storyshots actionBar long title with image 1`] = `
       </div>
     </div>
     <div
-      className="css-h6xi1h"
+      className="css-48z861"
     >
       <button
-        className="css-1eg2eyk"
+        className="css-1ekywde"
       >
         <div
           className="css-otejxm"
@@ -191,10 +191,10 @@ exports[`Storyshots actionBar one action 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
-      className="css-15hldqu"
+      className="css-1tiyrld"
     >
       <div
         className="css-1e23mlv"
@@ -203,10 +203,10 @@ exports[`Storyshots actionBar one action 1`] = `
       </div>
     </div>
     <div
-      className="css-h6xi1h"
+      className="css-48z861"
     >
       <button
-        className="css-1eg2eyk"
+        className="css-1ekywde"
       >
         <div
           className="css-otejxm"
@@ -244,7 +244,7 @@ exports[`Storyshots combo everything 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -288,7 +288,7 @@ exports[`Storyshots combo everything 1`] = `
       </div>
     </div>
     <div
-      className="css-1immkg6"
+      className="css-l77jv6"
     >
       <div
         className="css-1e23mlv"
@@ -369,10 +369,10 @@ exports[`Storyshots combo everything 1`] = `
       </div>
     </div>
     <div
-      className="css-1keoilf"
+      className="css-h4r20u"
     >
       <button
-        className="css-1eg2eyk"
+        className="css-1ekywde"
       >
         <div
           className="css-otejxm"
@@ -388,7 +388,7 @@ exports[`Storyshots combo everything 1`] = `
         </div>
       </button>
       <button
-        className="css-1eg2eyk"
+        className="css-1ekywde"
       >
         <div
           className="css-otejxm"
@@ -404,7 +404,7 @@ exports[`Storyshots combo everything 1`] = `
         </div>
       </button>
       <button
-        className="css-1eg2eyk"
+        className="css-1ekywde"
       >
         <div
           className="css-otejxm"
@@ -442,7 +442,7 @@ exports[`Storyshots fullOverlay element 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -463,7 +463,7 @@ exports[`Storyshots fullOverlay element 1`] = `
       </div>
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -493,7 +493,7 @@ exports[`Storyshots fullOverlay link 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -518,7 +518,7 @@ exports[`Storyshots fullOverlay link 1`] = `
       </div>
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -548,7 +548,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -584,7 +584,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
       </div>
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -614,7 +614,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -658,7 +658,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
       </div>
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -688,7 +688,7 @@ exports[`Storyshots image link 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -706,7 +706,7 @@ exports[`Storyshots image link 1`] = `
       </span>
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -745,10 +745,10 @@ exports[`Storyshots image no image 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
-      className="css-15hldqu"
+      className="css-1tiyrld"
     >
       <div
         className="css-1e23mlv"
@@ -787,10 +787,10 @@ exports[`Storyshots image no image with overlay 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
-      className="css-15hldqu"
+      className="css-1tiyrld"
     >
       <div
         className="css-1e23mlv"
@@ -829,7 +829,7 @@ exports[`Storyshots image small image 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -839,7 +839,7 @@ exports[`Storyshots image small image 1`] = `
       />
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -878,7 +878,7 @@ exports[`Storyshots image tall image 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -888,7 +888,7 @@ exports[`Storyshots image tall image 1`] = `
       />
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -927,7 +927,7 @@ exports[`Storyshots image wide image 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -937,7 +937,7 @@ exports[`Storyshots image wide image 1`] = `
       />
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -976,7 +976,7 @@ exports[`Storyshots image with image 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -986,7 +986,7 @@ exports[`Storyshots image with image 1`] = `
       />
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -1025,7 +1025,7 @@ exports[`Storyshots image with image with overlay 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -1046,7 +1046,7 @@ exports[`Storyshots image with image with overlay 1`] = `
       </div>
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -1061,6 +1061,239 @@ exports[`Storyshots image with image with overlay 1`] = `
         >
           Jim Cooper
         </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots in drawer medium 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <div>
+    <div
+      className="css-58omaf"
+      onClick={[Function]}
+    >
+      <div
+        className="css-1lzobj4"
+      >
+        <div
+          className="css-1g6ond4"
+        >
+          <div
+            className="css-17wxsht"
+          >
+            <div
+              className="css-js3ti3"
+            >
+              <div
+                className="css-1wgk747"
+              />
+            </div>
+            <div
+              className="css-kxulf3"
+            >
+              <div
+                className="css-1e23mlv"
+              >
+                Course thing you do
+              </div>
+              <div
+                className="css-gmo5z6"
+              >
+                <span
+                  className="css-1tz10dh"
+                >
+                  1m 46s
+                </span>
+              </div>
+            </div>
+            <div
+              className="css-2c174p"
+            >
+              <button
+                className="css-1ekywde"
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-qs2rg7"
+      >
+        <button
+          className="css-wepra9"
+          onClick={[Function]}
+        >
+          <div
+            className="css-1byjzqg"
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                />
+              </svg>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      className="css-1i2htk9"
+    >
+      <div
+        className="css-8nylan"
+      >
+        <div>
+          some goodies in the drawer
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots in drawer small 1`] = `
+<div
+  style={
+    Object {
+      "background": "transparent",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 0.25s ease-in-out",
+    }
+  }
+>
+  <div>
+    <div
+      className="css-58omaf"
+      onClick={[Function]}
+    >
+      <div
+        className="css-1lzobj4"
+      >
+        <div
+          className="css-1g6ond4"
+        >
+          <div
+            className="css-17wxsht"
+          >
+            <div
+              className="css-1tiyrld"
+            >
+              <div
+                className="css-1umif8x"
+              >
+                Course thing you do
+              </div>
+              <div
+                className="css-pi59ta"
+              >
+                <span
+                  className="css-1tz10dh"
+                >
+                  1m 46s
+                </span>
+              </div>
+            </div>
+            <div
+              className="css-2c174p"
+            >
+              <button
+                className="css-1ekywde"
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-qs2rg7"
+      >
+        <button
+          className="css-wepra9"
+          onClick={[Function]}
+        >
+          <div
+            className="css-1byjzqg"
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                />
+              </svg>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      className="css-1i2htk9"
+    >
+      <div
+        className="css-8nylan"
+      >
+        <div>
+          some goodies in the drawer
+        </div>
       </div>
     </div>
   </div>
@@ -1085,10 +1318,10 @@ exports[`Storyshots metadata link 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
-      className="css-15hldqu"
+      className="css-1tiyrld"
     >
       <div
         className="css-1e23mlv"
@@ -1135,10 +1368,10 @@ exports[`Storyshots metadata long links 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
-      className="css-15hldqu"
+      className="css-1tiyrld"
     >
       <div
         className="css-1e23mlv"
@@ -1223,10 +1456,10 @@ exports[`Storyshots metadata long strings 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
-      className="css-15hldqu"
+      className="css-1tiyrld"
     >
       <div
         className="css-1e23mlv"
@@ -1287,7 +1520,7 @@ exports[`Storyshots metadata long strings with image 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -1297,7 +1530,7 @@ exports[`Storyshots metadata long strings with image 1`] = `
       />
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -1358,10 +1591,10 @@ exports[`Storyshots metadata string 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
-      className="css-15hldqu"
+      className="css-1tiyrld"
     >
       <div
         className="css-1e23mlv"
@@ -1400,10 +1633,10 @@ exports[`Storyshots metadata two lines 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
-      className="css-15hldqu"
+      className="css-1tiyrld"
     >
       <div
         className="css-1e23mlv"
@@ -1473,7 +1706,7 @@ exports[`Storyshots progress 0 progress 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -1483,7 +1716,7 @@ exports[`Storyshots progress 0 progress 1`] = `
       />
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -1513,7 +1746,7 @@ exports[`Storyshots progress 66.6667 progress 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -1531,7 +1764,7 @@ exports[`Storyshots progress 66.6667 progress 1`] = `
       </div>
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -1561,7 +1794,7 @@ exports[`Storyshots progress 100 progress 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -1579,7 +1812,7 @@ exports[`Storyshots progress 100 progress 1`] = `
       </div>
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -1609,10 +1842,10 @@ exports[`Storyshots progress no image 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
-      className="css-15hldqu"
+      className="css-1tiyrld"
     >
       <div
         className="css-1e23mlv"
@@ -1642,7 +1875,7 @@ exports[`Storyshots size medium 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -1652,7 +1885,7 @@ exports[`Storyshots size medium 1`] = `
       />
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -1691,10 +1924,10 @@ exports[`Storyshots size small 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
-      className="css-15hldqu"
+      className="css-1tiyrld"
     >
       <div
         className="css-1umif8x"
@@ -1733,10 +1966,10 @@ exports[`Storyshots title link 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
-      className="css-15hldqu"
+      className="css-1tiyrld"
     >
       <div
         className="css-1e23mlv"
@@ -1774,7 +2007,7 @@ exports[`Storyshots title medium long title 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
       className="css-js3ti3"
@@ -1784,7 +2017,7 @@ exports[`Storyshots title medium long title 1`] = `
       />
     </div>
     <div
-      className="css-1kx0lgw"
+      className="css-kxulf3"
     >
       <div
         className="css-1e23mlv"
@@ -1823,10 +2056,10 @@ exports[`Storyshots title small long title 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
-      className="css-15hldqu"
+      className="css-1tiyrld"
     >
       <div
         className="css-1umif8x"
@@ -1865,10 +2098,10 @@ exports[`Storyshots title string 1`] = `
   }
 >
   <div
-    className="css-7w4714"
+    className="css-17wxsht"
   >
     <div
-      className="css-15hldqu"
+      className="css-1tiyrld"
     >
       <div
         className="css-1e23mlv"

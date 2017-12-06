@@ -17,6 +17,7 @@ const actionBarActionMarginLeft = core.layout.spacingMedium
 
 const Row = glamorous.div({
   display: 'flex',
+  alignItems: 'center',
   width: '100%',
   padding: `${core.layout.spacingSmall} 0`,
   textAlign: 'left',
@@ -134,16 +135,13 @@ const ActionBar = glamorous.div(
   {
     display: 'flex',
     justifyContent: 'flex-end',
+    alignItems: 'center',
+    lineHeight: 0,
     height: '64px',
     transition: `opacity ${core.motion.speedNormal}`,
     pointerEvents: 'none',
     opacity: 0
   },
-  ({ size }) =>
-    ({
-      [sizes.small]: { paddingTop: core.layout.spacingSmall },
-      [sizes.medium]: { paddingTop: core.layout.spacingMedium }
-    }[size]),
   styleActionBarFullOverlay,
   styleActionBarActionBarVisible
 )
@@ -163,6 +161,7 @@ const ActionButton = glamorous.button(
     fontSize: core.type.fontSizeXSmall,
     marginLeft: actionBarActionMarginLeft,
     padding: 0,
+    lineHeight: 0,
     cursor: 'pointer',
     border: 'none',
     color: transparentize(0.2, core.colors.white),
@@ -253,7 +252,9 @@ const formatImageWidth = ({ image, size }) =>
 
 const formatActionBarWidth = ({ actionBar }) =>
   Array.isArray(actionBar) && actionBar.length > 1
-    ? `(${actionBar.length} * ${actionBarActionWidth} + ${actionBar.length} * ${actionBarActionMarginLeft})`
+    ? `(${actionBar.length} * ${actionBarActionWidth} + ${actionBar.length} * ${
+        actionBarActionMarginLeft
+      })`
     : '0px'
 
 const Words = glamorous.div(
