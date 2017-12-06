@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.3.3"></a>
+## [2.3.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.3.2...@pluralsight/ps-design-system-row@2.3.3) (2017-12-06)
+
+
+### Bug Fixes
+
+* **row:** make default action bar color gray02 ([b0dec25](https://github.com/pluralsight/design-system/commit/b0dec25))
+* **row:** vertically center action bar icons ([3618b35](https://github.com/pluralsight/design-system/commit/3618b35)), closes [#148](https://github.com/pluralsight/design-system/issues/148)
+
+
+
+
 <a name="2.3.2"></a>
 ## [2.3.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.3.1...@pluralsight/ps-design-system-row@2.3.2) (2017-11-15)
 
