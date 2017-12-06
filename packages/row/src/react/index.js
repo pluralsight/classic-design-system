@@ -164,7 +164,7 @@ const ActionButton = glamorous.button(
     lineHeight: 0,
     cursor: 'pointer',
     border: 'none',
-    color: transparentize(0.2, core.colors.white),
+    color: core.colors.gray02,
     background: 'none',
     transition: `all ${core.motion.speedNormal}`,
     ':hover, :active': {

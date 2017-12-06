@@ -40,7 +40,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
       className="css-2c174p"
     >
       <button
-        className="css-1ekywde"
+        className="css-10dk2o2"
       >
         <div
           className="css-otejxm"
@@ -93,7 +93,7 @@ exports[`Storyshots actionBar long title 1`] = `
       className="css-48z861"
     >
       <button
-        className="css-1ekywde"
+        className="css-10dk2o2"
       >
         <div
           className="css-otejxm"
@@ -153,7 +153,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
       className="css-48z861"
     >
       <button
-        className="css-1ekywde"
+        className="css-10dk2o2"
       >
         <div
           className="css-otejxm"
@@ -206,7 +206,7 @@ exports[`Storyshots actionBar one action 1`] = `
       className="css-48z861"
     >
       <button
-        className="css-1ekywde"
+        className="css-10dk2o2"
       >
         <div
           className="css-otejxm"
@@ -372,7 +372,7 @@ exports[`Storyshots combo everything 1`] = `
       className="css-h4r20u"
     >
       <button
-        className="css-1ekywde"
+        className="css-10dk2o2"
       >
         <div
           className="css-otejxm"
@@ -388,7 +388,7 @@ exports[`Storyshots combo everything 1`] = `
         </div>
       </button>
       <button
-        className="css-1ekywde"
+        className="css-10dk2o2"
       >
         <div
           className="css-otejxm"
@@ -404,7 +404,7 @@ exports[`Storyshots combo everything 1`] = `
         </div>
       </button>
       <button
-        className="css-1ekywde"
+        className="css-10dk2o2"
       >
         <div
           className="css-otejxm"
@@ -1127,7 +1127,7 @@ exports[`Storyshots in drawer medium 1`] = `
               className="css-2c174p"
             >
               <button
-                className="css-1ekywde"
+                className="css-10dk2o2"
               >
                 <div
                   className="css-otejxm"
@@ -1240,7 +1240,7 @@ exports[`Storyshots in drawer small 1`] = `
               className="css-2c174p"
             >
               <button
-                className="css-1ekywde"
+                className="css-10dk2o2"
               >
                 <div
                   className="css-otejxm"
