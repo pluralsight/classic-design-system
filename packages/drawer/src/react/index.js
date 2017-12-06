@@ -1,14 +1,15 @@
-import Collapsible from './collapsible';
+import Collapsible from './collapsible'
 import core from '@pluralsight/ps-design-system-core'
 import glamorous, { Div } from 'glamorous'
 import { transparentize } from 'polished'
-import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
+import Icon, {
+  sizes as iconSizes
+} from '@pluralsight/ps-design-system-icon/react'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-if (typeof window !== 'undefined')
-  require('element-closest')
+if (typeof window !== 'undefined') require('element-closest')
 
 const { gray01, gray02, gray03, gray04, gray06, white } = core.colors
 const CARET_AREA_WIDTH = 38
@@ -23,14 +24,15 @@ const DrawerBase = glamorous.div(
       background: transparentize(0.9, gray02)
     }
   },
-  ({ isOpen }) => isOpen
-    ? {
-      background: transparentize(0.8, gray02),
-      ':hover': {
-        background: transparentize(0.8, gray02)
-      }
-    }
-    : {}
+  ({ isOpen }) =>
+    isOpen
+      ? {
+          background: transparentize(0.8, gray02),
+          ':hover': {
+            background: transparentize(0.8, gray02)
+          }
+        }
+      : {}
 )
 
 const DrawerPanel = glamorous.div(
@@ -38,10 +40,14 @@ const DrawerPanel = glamorous.div(
     background: transparentize(0.94, gray02),
     transition: `box-shadow ${core.motion.speedNormal}`
   },
-  ({ isOpen, themeName }) =>(isOpen
-    ? { boxShadow: `inset 0 1px 3px 0 rgba(0,0,0,${themeName === themeNames.light ? '0.1' : '0.5'})` }
-    : {}
-  )
+  ({ isOpen, themeName }) =>
+    isOpen
+      ? {
+          boxShadow: `inset 0 1px 3px 0 rgba(0,0,0,${
+            themeName === themeNames.light ? '0.1' : '0.5'
+          })`
+        }
+      : {}
 )
 
 const DrawerPanelContent = glamorous.div(
@@ -50,13 +56,14 @@ const DrawerPanelContent = glamorous.div(
     paddingRight: CARET_AREA_WIDTH
   },
   ({ themeName }) => ({
-    borderTop: `1px solid ${themeName === themeNames.light ? gray01 : gray04 }`
+    borderTop: `1px solid ${themeName === themeNames.light ? gray01 : gray04}`
   })
 )
 
 const ToggleButtonContainer = glamorous.div({
   position: 'absolute',
-  top: 0, right: core.layout.spacingMedium,
+  top: 0,
+  right: core.layout.spacingMedium,
   bottom: 0,
   display: 'flex',
   alignItems: 'center'
@@ -74,9 +81,9 @@ const ToggleButton = glamorous.button(
     transition: `all ${core.motion.speedNormal}`
   },
   ({ themeName }) => ({
-    color:  themeName === themeNames.light ? gray03: gray02,
+    color: themeName === themeNames.light ? gray03 : gray02,
     ':hover, :active': {
-      color: themeName === themeNames.light ? gray06: white
+      color: themeName === themeNames.light ? gray06 : white
     }
   })
 )
@@ -106,17 +113,14 @@ class Drawer extends React.Component {
     return !evt.target.closest('a, button')
   }
   handleClick = evt => {
-    if (this.isClickOnDrawerBase(evt))
-      this.toggle()
+    if (this.isClickOnDrawerBase(evt)) this.toggle()
   }
   toggle = () => {
     const isOpen = !this.isOpen
 
-    if (this.props.onToggle)
-      this.props.onToggle(isOpen)
+    if (this.props.onToggle) this.props.onToggle(isOpen)
 
-    if (!this.isControlledByProps)
-      this.setState({ isOpen })
+    if (!this.isControlledByProps) this.setState({ isOpen })
   }
 
   render() {
