@@ -4,6 +4,7 @@ import {
   AsideLayout,
   EqualColumnLayout
 } from '@pluralsight/ps-design-system-layout/react'
+import Button from '@pluralsight/ps-design-system-button/react'
 import Text from '@pluralsight/ps-design-system-text/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
@@ -18,6 +19,7 @@ import {
   PageHeading,
   PropTypes,
   SectionHeading,
+  TextLink,
   withServerProps
 } from '../../src/ui'
 
@@ -210,6 +212,52 @@ const BreakpointVisual = _ => (
   </div>
 )
 
+const VerticalGridVisual = _ => (
+  <div className="grid">
+    <EqualColumnLayout count={EqualColumnLayout.counts.three}>
+      <div className="column">
+        <Button
+          size={Button.sizes.large}
+          style={{ marginBottom: core.layout.spacingLarge }}
+        >
+          Primary button
+        </Button>
+        <Button size={Button.sizes.medium}>Primary button</Button>
+      </div>
+      <div className="column">
+        <Text.Heading size={Text.Heading.sizes.large}>
+          <h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor
+          </h3>
+        </Text.Heading>
+      </div>
+      <div className="column">
+        <Text.P>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        </Text.P>
+      </div>
+    </EqualColumnLayout>
+    <style jsx>{`
+      .grid {
+        padding: ${core.layout.spacingMedium} ${core.layout.spacingLarge};
+        background: linear-gradient(
+          to bottom,
+          #b4d9f2,
+          #b4d9f2 1px,
+          #fff 1px,
+          #fff
+        );
+        background-size: 1px 8px;
+      }
+      .column {
+        padding-right: ${core.layout.spacingLarge};
+      }
+    `}</style>
+  </div>
+)
+
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Layout">
@@ -331,6 +379,14 @@ export default withServerProps(_ => (
         increases. That standard breakpoint is above 768px.
       </P>
       <BreakpointVisual />
+
+      <SectionHeading>Vertical grid</SectionHeading>
+      <P>
+        Use the standard <TextLink href="/core/spacing">spacing</TextLink>,
+        components and <TextLink href="/core/typography">line height</TextLink>,
+        and everything lays out nicely along a vertical grid.
+      </P>
+      <VerticalGridVisual />
     </Content>
   </Chrome>
 ))
