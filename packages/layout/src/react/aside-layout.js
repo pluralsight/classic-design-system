@@ -20,9 +20,7 @@ const styleLayout = props =>
 const styleAside = props =>
   glamor.css(
     css['.psds-aside-layout__aside'],
-    css[
-      `.psds-aside-layout__aside--aside-position-${props.asidePosition}`
-    ],
+    css[`.psds-aside-layout__aside--aside-position-${props.asidePosition}`],
     {
       '@media (min-width: 769px)': {
         ...css['@media (min-width: 769px)'][`.psds-aside-layout__aside`],
@@ -76,7 +74,7 @@ AsideLayout.Main = Main
 
 AsideLayout.propTypes = {
   main: PropTypes.element.isRequired, // AsideLayout.Main
-  aside: PropTypes.element.isRequired, // AsideLayout.Main
+  aside: PropTypes.element.isRequired, // AsideLayout.Aside
   asidePosition: PropTypes.oneOf(Object.keys(vars.asidePositions))
 }
 AsideLayout.defaultProps = {
