@@ -176,6 +176,40 @@ const EqualColumnLayoutOutput = _ => (
   </div>
 )
 
+const BreakpointVisual = _ => (
+  <div className="breakpoints">
+    <div className="mobile">
+      <div className="label">
+        Breakpoint:
+        <div className="px">768px</div>
+      </div>
+    </div>
+    <style jsx>{`
+      .breakpoints {
+        position: relative;
+        background: #b4d7f0;
+        height: 109px;
+      }
+      .mobile {
+        position: absolute;
+        width: 64%;
+        height: 100%;
+        text-align: right;
+        background: #9eccec;
+        border-right: 1px dashed #137bc2;
+        padding: ${core.layout.spacingSmall};
+      }
+      .label {
+        font-size: ${core.type.fontSizeSmall};
+        line-height: 16px;
+      }
+      .px {
+        font-weight: ${core.type.fontWeightBold};
+      }
+    `}</style>
+  </div>
+)
+
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Layout">
@@ -289,6 +323,14 @@ export default withServerProps(_ => (
           ])
         ]}
       />
+
+      <SectionHeading>Responsive components</SectionHeading>
+      <P>
+        These layout components respond to viewport changes. Basic, sane
+        defaults for content reflow engages once the page width sufficiently
+        increases. That standard breakpoint is above 768px.
+      </P>
+      <BreakpointVisual />
     </Content>
   </Chrome>
 ))
