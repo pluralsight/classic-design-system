@@ -22,6 +22,7 @@
     "@pluralsight/ps-design-system-core": "^4.0.2",
     "@pluralsight/ps-design-system-drawer": "^1.0.3",
     "@pluralsight/ps-design-system-icon": "^8.2.0",
+    "@pluralsight/ps-design-system-layout": "^0.3.1",
     "@pluralsight/ps-design-system-link": "^5.5.0",
     "@pluralsight/ps-design-system-normalize": "^3.0.33",
     "@pluralsight/ps-design-system-row": "^2.3.4",

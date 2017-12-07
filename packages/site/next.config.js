@@ -14,6 +14,7 @@ module.exports = {
       '/components/card': { page: '/components/card' },
       '/components/drawer': { page: '/components/drawer' },
       '/components/icon': { page: '/components/icon' },
+      '/components/layout': { page: '/components/layout' },
       '/components/link': { page: '/components/link' },
       '/components/row': { page: '/components/row' },
       '/components/tab': { page: '/components/tab' },
