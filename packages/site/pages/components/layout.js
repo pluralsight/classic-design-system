@@ -34,6 +34,75 @@ const BlueBox = props => (
   </div>
 )
 
+const PageHeadingLayoutOutput = _ => (
+  <div className="page">
+    <Theme>
+      <PageHeadingLayout heading={<h3>Page title</h3>}>
+        <div className="body" />
+      </PageHeadingLayout>
+    </Theme>
+    <div className="marginBg" />
+    <div className="margin marginHorz marginTop" />
+    <div className="margin marginVert marginRight" />
+    <div className="margin marginHorz marginBottom" />
+    <div className="margin marginVert marginLeft" />
+    <style jsx>{`
+      .page {
+        position: relative;
+        background: ${core.colors.gray06};
+        color: ${core.colors.white};
+      }
+      .body {
+        height: 134px;
+        background: #137bc2;
+        opacity: 0.4;
+      }
+      .marginBg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border: ${core.layout.spacingLarge} solid rgba(232, 10, 137, 0.3);
+      }
+      .margin {
+        position: absolute;
+        border-style: dashed;
+        border-color: #ff00ce;
+        border-width: 0;
+      }
+      .marginHorz {
+        height: ${core.layout.spacingLarge};
+        width: 100%;
+      }
+      .marginVert {
+        height: 100%;
+        width: ${core.layout.spacingLarge};
+      }
+      .marginTop {
+        top: 0;
+        left: 0;
+        border-bottom-width: 1px;
+      }
+      .marginRight {
+        top: 0;
+        right: 0;
+        border-left-width: 1px;
+      }
+      .marginBottom {
+        bottom: 0;
+        left: 0;
+        border-top-width: 1px;
+      }
+      .marginLeft {
+        top: 0;
+        left: 0;
+        border-right-width: 1px;
+      }
+    `}</style>
+  </div>
+)
+
 const AsideLayoutOutput = _ => (
   <div className="examples">
     <div className="example">
@@ -129,17 +198,10 @@ export default withServerProps(_ => (
         Start your layout with this default template to achieve standard outer
         spacing and title style.
       </P>
-      <Example.React
-        orient="vertical"
-        includes={{ PageHeadingLayout }}
-        codes={[
-          `
-<PageHeadingLayout heading={<h1>Page title</h1>}>
-  Page contents
-</PageHeadingLayout>
-`
-        ]}
-      />
+      <PageHeadingLayoutOutput />
+      <Code language="javascript">{`<PageHeadingLayout heading={<h1>Page title</h1>}>
+  Your page contents here
+</PageHeadingLayout> `}</Code>
       <PropTypes
         title="Layout.PageHeadingLayout PropTypes"
         props={[
@@ -154,7 +216,7 @@ export default withServerProps(_ => (
       />
 
       <SectionHeading>Aside Layout</SectionHeading>
-      <P>Use this layout for any 1/3, 2/3 proportioned layouts.</P>
+      <P>Use this layout for any 1/3, 2/3-proportioned layouts.</P>
       <AsideLayoutOutput />
       <Code language="javascript">{`<AsideLayout
   aside={<AsideLayout.Aside></AsideLayout.Aside>}
