@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.0.0"></a>
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@9.5.0...@pluralsight/ps-design-system-button@10.0.0) (2017-12-07)
+
+
+### Bug Fixes
+
+* **button:** remove double onClick ([d59a019](https://github.com/pluralsight/design-system/commit/d59a019))
+* **button:** update storybook snapshot for theme decorator ([99b5d40](https://github.com/pluralsight/design-system/commit/99b5d40))
+
+
+### BREAKING CHANGES
+
+* **button:** Remove carte blanche props passing on Button. Favor whitelist.
+
+
+
+
 <a name="9.5.0"></a>
 # [9.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@9.4.0...@pluralsight/ps-design-system-button@9.5.0) (2017-11-02)
 

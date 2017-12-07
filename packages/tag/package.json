@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-tag",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Design System component for tag ui",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,7 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.0",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.1",
     "@storybook/addon-storyshots": "^3.2.4",
     "@storybook/react": "^3.2.3",
     "babel-cli": "^6.24.1",
