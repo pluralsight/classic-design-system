@@ -182,6 +182,7 @@ exports[`Storyshots disabled flat 1`] = `
   <button
     data-css-1qj35yh=""
     disabled={true}
+    onClick={[Function]}
   >
     <span
       className="css-1en8fmq"
@@ -211,6 +212,7 @@ exports[`Storyshots disabled primary 1`] = `
   <button
     data-css-ja7fpz=""
     disabled={true}
+    onClick={[Function]}
   >
     <span
       className="css-1en8fmq"
@@ -240,6 +242,7 @@ exports[`Storyshots disabled stroke 1`] = `
   <button
     data-css-xmly1y=""
     disabled={true}
+    onClick={[Function]}
   >
     <span
       className="css-1en8fmq"
@@ -1216,6 +1219,225 @@ exports[`Storyshots icon xSmall 1`] = `
 </div>
 `;
 
+exports[`Storyshots override styles with className 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <button
+    className={
+      Object {
+        "data-css-jxpnuu": "",
+      }
+    }
+    data-css-1c0ebuw=""
+    disabled={false}
+  >
+    <div
+      className="css-1mgd019"
+    >
+      <div
+        className="css-otejxm"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      className="css-1en8fmq"
+    >
+      Green Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots override styles with style 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <button
+    data-css-1c0ebuw=""
+    disabled={false}
+    style={
+      Object {
+        "background": "red",
+      }
+    }
+  >
+    <div
+      className="css-1mgd019"
+    >
+      <div
+        className="css-otejxm"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      className="css-1en8fmq"
+    >
+      Red Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots props pass through aria-expanded 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <button
+    aria-expanded={true}
+    data-css-bzft25=""
+    disabled={false}
+  >
+    <span
+      className="css-1en8fmq"
+    >
+      aria-expanded
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots props pass through data-something 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <button
+    data-css-bzft25=""
+    data-something="wow"
+    disabled={false}
+  >
+    <span
+      className="css-1en8fmq"
+    >
+      Custom data attributes
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots props pass through not supported 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <button
+    data-css-bzft25=""
+    disabled={false}
+  >
+    <span
+      className="css-1en8fmq"
+    >
+      Should not mouseover
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots props pass through title 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <button
+    data-css-bzft25=""
+    disabled={false}
+    title="My caption"
+  >
+    <span
+      className="css-1en8fmq"
+    >
+      With title
+    </span>
+  </button>
+</div>
+`;
+
 exports[`Storyshots size large 1`] = `
 <div
   style={
@@ -1355,7 +1577,6 @@ exports[`Storyshots with onClick clicks once 1`] = `
   >
     <div
       className="css-1mgd019"
-      onClick={[Function]}
     >
       <div
         className="css-otejxm"

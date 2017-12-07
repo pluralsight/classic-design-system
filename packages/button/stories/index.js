@@ -1,5 +1,7 @@
+import { action } from '@storybook/addon-actions'
 import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
+import * as glamor from 'glamor'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
@@ -59,7 +61,7 @@ const disabledStory = storiesOf('disabled', module).addDecorator(
 )
 Object.keys(Button.appearances).forEach(app =>
   disabledStory.add(app, _ => (
-    <Button disabled appearance={app}>
+    <Button onClick={action('should never click')} disabled appearance={app}>
       Disabled
     </Button>
   ))
@@ -85,4 +87,41 @@ const refExample = storiesOf('with ref', module)
   .addDecorator(themeDecorator(addons))
   .add('ref to handle focus', _ => (
     <Button innerRef={el => el && el.focus()}>Should be focused</Button>
+  ))
+
+const onClickExample = storiesOf('with onClick', module)
+  .addDecorator(themeDecorator(addons))
+  .add('clicks once', _ => (
+    <Button onClick={action('click count')} icon={<Icon id={Icon.ids.check} />}>
+      Clicks once
+    </Button>
+  ))
+
+const overrideStylesExample = storiesOf('override styles', module)
+  .addDecorator(themeDecorator(addons))
+  .add('with style', _ => (
+    <Button style={{ background: 'red' }} icon={<Icon id={Icon.ids.check} />}>
+      Red Button
+    </Button>
+  ))
+  .add('with className', _ => {
+    const className = glamor.css({ background: 'green !important' })
+    return (
+      <Button className={className} icon={<Icon id={Icon.ids.check} />}>
+        Green Button
+      </Button>
+    )
+  })
+
+const propsExample = storiesOf('props pass through', module)
+  .addDecorator(themeDecorator(addons))
+  .add('aria-expanded', _ => (
+    <Button aria-expanded={true}>aria-expanded</Button>
+  ))
+  .add('data-something', _ => (
+    <Button data-something="wow">Custom data attributes</Button>
+  ))
+  .add('title', _ => <Button title="My caption">With title</Button>)
+  .add('not supported', _ => (
+    <Button onMouseOver={action('mouse over')}>Should not mouseover</Button>
   ))

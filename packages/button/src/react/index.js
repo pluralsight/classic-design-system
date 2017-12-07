@@ -171,16 +171,6 @@ const getButtonStyles = props =>
     props.css
   )
 
-class Button extends React.Component {
-  render() {
-    return React.createElement(this.props.href ? 'a' : 'button', {
-      ...rmNonHtmlProps(this.props),
-      ...(this.props.innerRef ? { ref: this.props.innerRef } : {}),
-      ...getButtonStyles(this.props)
-    })
-  }
-}
-
 const styleIconAlignIconContainer = ({ iconAlign }) =>
   iconAlign === iconAligns.right
     ? {
@@ -234,7 +224,6 @@ const rmNonHtmlProps = props => {
 const renderIcon = props =>
   props.icon ? (
     <IconContainer
-      {...rmNonHtmlProps(props)}
       iconAlign={props.iconAlign}
       iconOnly={React.Children.count(props.children) <= 0}
     >
@@ -248,6 +237,42 @@ const BtnText = glamorous.span({
   display: 'inline-flex',
   alignItems: 'center'
 })
+
+const buttonHtmlPropsWhitelist = [
+  'href',
+  'onClick',
+  'disabled',
+  'className',
+  'style',
+  'title',
+  /^aria-/,
+  /^data-/
+]
+
+const isPropInWhitelist = (whitelist, key) =>
+  whitelist.some(
+    regex =>
+      typeof regex === 'string' ? new RegExp(regex).test(key) : regex.test(key)
+  )
+const whitelistProps = (props, whitelist) =>
+  Object.keys(props).reduce((newProps, key) => {
+    if (isPropInWhitelist(whitelist, key)) newProps[key] = props[key]
+    return newProps
+  }, {})
+
+class Button extends React.Component {
+  render() {
+    return React.createElement(
+      this.props.href ? 'a' : 'button',
+      {
+        ...(this.props.innerRef ? { ref: this.props.innerRef } : {}),
+        ...getButtonStyles(this.props),
+        ...whitelistProps(this.props, buttonHtmlPropsWhitelist)
+      },
+      this.props.children
+    )
+  }
+}
 
 const Btn = (props, context) => (
   <Button
