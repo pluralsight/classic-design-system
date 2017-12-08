@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.16.0"></a>
+# [9.16.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.15.0...@pluralsight/ps-design-system-site@9.16.0) (2017-12-08)
+
+
+### Features
+
+* **layout:** add 2 equal column option ([94fe46a](https://github.com/pluralsight/design-system/commit/94fe46a))
+
+
+
+
 <a name="9.15.0"></a>
 # [9.15.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.14.2...@pluralsight/ps-design-system-site@9.15.0) (2017-12-08)
 
