@@ -29,8 +29,12 @@ const BlueBox = props => (
     <style jsx>{`
       .bluebox {
         display: flex;
+        justify-content: center;
+        align-items: center;
         height: ${core.layout.spacingLarge};
         background: #8fc4e9;
+        color: ${core.colors.white};
+        font-weight: ${core.type.fontWeightBold};
       }
     `}</style>
   </div>
@@ -111,12 +115,12 @@ const AsideLayoutOutput = _ => (
       <AsideLayout
         aside={
           <AsideLayout.Aside>
-            <BlueBox />
+            <BlueBox>A</BlueBox>
           </AsideLayout.Aside>
         }
         main={
           <AsideLayout.Main>
-            <BlueBox />
+            <BlueBox>B</BlueBox>
           </AsideLayout.Main>
         }
       />
@@ -125,13 +129,13 @@ const AsideLayoutOutput = _ => (
       <AsideLayout
         aside={
           <AsideLayout.Aside>
-            <BlueBox />
+            <BlueBox>C</BlueBox>
           </AsideLayout.Aside>
         }
         asidePosition={AsideLayout.asidePositions.last}
         main={
           <AsideLayout.Main>
-            <BlueBox />
+            <BlueBox>D</BlueBox>
           </AsideLayout.Main>
         }
       />
@@ -150,21 +154,17 @@ const AsideLayoutOutput = _ => (
 const EqualColumnLayoutOutput = _ => (
   <div className="examples">
     <div className="example">
-      <EqualColumnLayout count={EqualColumnLayout.counts.six}>
-        <BlueBox />
-        <BlueBox />
-        <BlueBox />
-        <BlueBox />
-        <BlueBox />
-        <BlueBox />
+      <EqualColumnLayout count={EqualColumnLayout.counts.two}>
+        <BlueBox>A</BlueBox>
+        <BlueBox>B</BlueBox>
       </EqualColumnLayout>
     </div>
     <div className="example">
-      <EqualColumnLayout>
-        <BlueBox />
-        <BlueBox />
-        <BlueBox />
-        <BlueBox />
+      <EqualColumnLayout count={EqualColumnLayout.counts.four}>
+        <BlueBox>C</BlueBox>
+        <BlueBox>D</BlueBox>
+        <BlueBox>E</BlueBox>
+        <BlueBox>F</BlueBox>
       </EqualColumnLayout>
     </div>
     <style jsx>{`
@@ -347,20 +347,16 @@ export default withServerProps(_ => (
         rows.
       </P>
       <EqualColumnLayoutOutput />
-      <Code language="javascript">{`<EqualColumnLayout count={EqualColumnLayout.counts.six}>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+      <Code language="javascript">{`<EqualColumnLayout count={EqualColumnLayout.counts.two}>
+  <div>A</div>
+  <div>B</div>
 </EqualColumnLayout>
 
 <EqualColumnLayout count={EqualColumnLayout.counts.four}>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>
 </EqualColumnLayout>`}</Code>
       <PropTypes
         title="Layout.EqualColumnLayout PropTypes"
