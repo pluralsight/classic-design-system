@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.15.0"></a>
+# [9.15.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.14.2...@pluralsight/ps-design-system-site@9.15.0) (2017-12-08)
+
+
+### Bug Fixes
+
+* **site:** layout vertical grid alignment ([e7e833e](https://github.com/pluralsight/design-system/commit/e7e833e))
+
+
+### Features
+
+* **site:** add layout example reference ([4beb783](https://github.com/pluralsight/design-system/commit/4beb783))
+
+
+
+
 <a name="9.14.2"></a>
 ## [9.14.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.14.1...@pluralsight/ps-design-system-site@9.14.2) (2017-12-07)
 

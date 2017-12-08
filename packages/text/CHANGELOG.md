@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.4.1"></a>
+## [10.4.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.4.0...@pluralsight/ps-design-system-text@10.4.1) (2017-12-08)
+
+
+### Bug Fixes
+
+* **text:** increase large heading line height to extra ([09e6edc](https://github.com/pluralsight/design-system/commit/09e6edc))
+
+
+
+
 <a name="10.4.0"></a>
 # [10.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.3.0...@pluralsight/ps-design-system-text@10.4.0) (2017-10-31)
 

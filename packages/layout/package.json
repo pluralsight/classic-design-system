@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-layout",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Design system components for ui layouts",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.1",
-    "@pluralsight/ps-design-system-text": "^10.4.0",
+    "@pluralsight/ps-design-system-text": "^10.4.1",
     "@storybook/addon-storyshots": "3.2.4",
     "@storybook/react": "3.2.3",
     "babel-cli": "^6.24.1",
