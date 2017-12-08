@@ -48,7 +48,7 @@ const style = props =>
         [sizes.large]: {
           fontSize: core.type.fontSizeLarge,
           letterSpacing: core.type.letterSpacingLarge,
-          lineHeight: core.type.lineHeightStandard,
+          lineHeight: core.type.lineHeightExtra,
           fontWeight: core.type.fontWeightBook
         },
         [sizes.xLarge]: {
