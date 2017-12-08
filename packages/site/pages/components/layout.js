@@ -153,26 +153,19 @@ const AsideLayoutOutput = _ => (
 
 const EqualColumnLayoutOutput = _ => (
   <div className="examples">
-    <div className="example">
-      <EqualColumnLayout count={EqualColumnLayout.counts.two}>
-        <BlueBox>A</BlueBox>
-        <BlueBox>B</BlueBox>
-      </EqualColumnLayout>
-    </div>
-    <div className="example">
-      <EqualColumnLayout count={EqualColumnLayout.counts.four}>
-        <BlueBox>C</BlueBox>
-        <BlueBox>D</BlueBox>
-        <BlueBox>E</BlueBox>
-        <BlueBox>F</BlueBox>
-      </EqualColumnLayout>
-    </div>
+    <EqualColumnLayout count={EqualColumnLayout.counts.two}>
+      <BlueBox>A</BlueBox>
+      <BlueBox>B</BlueBox>
+    </EqualColumnLayout>
+    <EqualColumnLayout count={EqualColumnLayout.counts.four}>
+      <BlueBox>C</BlueBox>
+      <BlueBox>D</BlueBox>
+      <BlueBox>E</BlueBox>
+      <BlueBox>F</BlueBox>
+    </EqualColumnLayout>
     <style jsx>{`
       .examples {
-        padding-bottom: ${core.layout.spacingSmall};
-      }
-      .example {
-        margin-bottom: ${core.layout.spacingMedium};
+        margin-bottom: ${core.layout.spacingLarge};
       }
     `}</style>
   </div>
