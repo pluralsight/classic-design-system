@@ -11,6 +11,9 @@ export default {
   ['.psds-equal-column-layout__column']: {
     margin: `calc(${core.layout.spacingMedium} / 2)`
   },
+  [`.psds-equal-column-layout__column--count-${vars.counts.two}`]: {
+    width: '100%'
+  },
   [`.psds-equal-column-layout__column--count-${vars.counts.three}`]: {
     width: '100%'
   },
@@ -21,6 +24,9 @@ export default {
     width: `calc(50% - ${core.layout.spacingMedium})`
   },
   '@media (min-width: 769px)': {
+    [`.psds-equal-column-layout__column--count-${vars.counts.two}`]: {
+      width: `calc(50% - ${core.layout.spacingMedium})`
+    },
     [`.psds-equal-column-layout__column--count-${vars.counts.three}`]: {
       width: `calc(33.33% - ${core.layout.spacingMedium})`
     },

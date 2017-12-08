@@ -1,37 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots PageHeadingLayout default 1`] = `
-<div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
->
-  <div
-    data-css-yto836=""
-  >
-    <h2
-      className={undefined}
-      data-css-13v0ptp=""
-      size="large"
-    >
-      My Page
-    </h2>
-    My content
-  </div>
-</div>
-`;
-
-exports[`Storyshots SidebarLayout short main content 1`] = `
+exports[`Storyshots AsideLayout aside style overrides 1`] = `
 <div
   style={
     Object {
@@ -56,143 +25,9 @@ exports[`Storyshots SidebarLayout short main content 1`] = `
   >
     <div
       data-css-19i7kll=""
-      main={
-        <SidebarLayout.Main>
-          Very little
-        </SidebarLayout.Main>
-      }
-      sidebar={
-        <SidebarLayout.Sidebar>
-          This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here.
-        </SidebarLayout.Sidebar>
-      }
-      sidebarPosition="first"
     >
       <div
-        data-css-1g4lc1q=""
-        sidebarPosition="first"
-      >
-        This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here.
-      </div>
-      <div
-        data-css-f5f1aw=""
-      >
-        Very little
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots SidebarLayout short sidebar content 1`] = `
-<div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "color": "white",
-      }
-    }
-  >
-    <div
-      data-css-19i7kll=""
-      main={
-        <SidebarLayout.Main>
-          This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
-        </SidebarLayout.Main>
-      }
-      sidebar={
-        <SidebarLayout.Sidebar>
-          Very short
-        </SidebarLayout.Sidebar>
-      }
-      sidebarPosition="first"
-    >
-      <div
-        data-css-1g4lc1q=""
-        sidebarPosition="first"
-      >
-        Very short
-      </div>
-      <div
-        data-css-f5f1aw=""
-      >
-        This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots SidebarLayout sidebar style overrides 1`] = `
-<div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "color": "white",
-      }
-    }
-  >
-    <div
-      data-css-19i7kll=""
-      main={
-        <SidebarLayout.Main>
-          This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
-        </SidebarLayout.Main>
-      }
-      sidebar={
-        <SidebarLayout.Sidebar
-          style={
-            Object {
-              "overflow": "hidden",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "background": "red",
-                "height": "50px",
-                "width": "700px",
-              }
-            }
-          >
-            Fixed width thing
-          </div>
-        </SidebarLayout.Sidebar>
-      }
-      sidebarPosition="first"
-    >
-      <div
-        data-css-1g4lc1q=""
-        sidebarPosition="first"
+        data-css-t0vnb9=""
         style={
           Object {
             "overflow": "hidden",
@@ -221,7 +56,7 @@ exports[`Storyshots SidebarLayout sidebar style overrides 1`] = `
 </div>
 `;
 
-exports[`Storyshots SidebarLayout sidebarPosition: first 1`] = `
+exports[`Storyshots AsideLayout asidePosition: first 1`] = `
 <div
   style={
     Object {
@@ -246,23 +81,11 @@ exports[`Storyshots SidebarLayout sidebarPosition: first 1`] = `
   >
     <div
       data-css-19i7kll=""
-      main={
-        <SidebarLayout.Main>
-          This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
-        </SidebarLayout.Main>
-      }
-      sidebar={
-        <SidebarLayout.Sidebar>
-          This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here.
-        </SidebarLayout.Sidebar>
-      }
-      sidebarPosition="first"
     >
       <div
-        data-css-1g4lc1q=""
-        sidebarPosition="first"
+        data-css-t0vnb9=""
       >
-        This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here.
+        This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here.
       </div>
       <div
         data-css-f5f1aw=""
@@ -274,7 +97,7 @@ exports[`Storyshots SidebarLayout sidebarPosition: first 1`] = `
 </div>
 `;
 
-exports[`Storyshots SidebarLayout sidebarPosition: last 1`] = `
+exports[`Storyshots AsideLayout asidePosition: last 1`] = `
 <div
   style={
     Object {
@@ -299,23 +122,11 @@ exports[`Storyshots SidebarLayout sidebarPosition: last 1`] = `
   >
     <div
       data-css-t8ydvh=""
-      main={
-        <SidebarLayout.Main>
-          This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
-        </SidebarLayout.Main>
-      }
-      sidebar={
-        <SidebarLayout.Sidebar>
-          This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here.
-        </SidebarLayout.Sidebar>
-      }
-      sidebarPosition="last"
     >
       <div
-        data-css-1p75kgn=""
-        sidebarPosition="last"
+        data-css-9utsi6=""
       >
-        This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here. This is sidebar stuff that goes here.
+        This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here.
       </div>
       <div
         data-css-f5f1aw=""
@@ -327,7 +138,7 @@ exports[`Storyshots SidebarLayout sidebarPosition: last 1`] = `
 </div>
 `;
 
-exports[`Storyshots SidebarLayout wide, fixed sidebar content 1`] = `
+exports[`Storyshots AsideLayout short aside content 1`] = `
 <div
   style={
     Object {
@@ -352,31 +163,91 @@ exports[`Storyshots SidebarLayout wide, fixed sidebar content 1`] = `
   >
     <div
       data-css-19i7kll=""
-      main={
-        <SidebarLayout.Main>
-          This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
-        </SidebarLayout.Main>
-      }
-      sidebar={
-        <SidebarLayout.Sidebar>
-          <div
-            style={
-              Object {
-                "background": "red",
-                "height": "50px",
-                "width": "700px",
-              }
-            }
-          >
-            Fixed width thing
-          </div>
-        </SidebarLayout.Sidebar>
-      }
-      sidebarPosition="first"
     >
       <div
-        data-css-1g4lc1q=""
-        sidebarPosition="first"
+        data-css-t0vnb9=""
+      >
+        Very short
+      </div>
+      <div
+        data-css-f5f1aw=""
+      >
+        This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AsideLayout short main content 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-19i7kll=""
+    >
+      <div
+        data-css-t0vnb9=""
+      >
+        This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here.
+      </div>
+      <div
+        data-css-f5f1aw=""
+      >
+        Very little
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AsideLayout wide, fixed aside content 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-19i7kll=""
+    >
+      <div
+        data-css-t0vnb9=""
       >
         <div
           style={
@@ -396,6 +267,521 @@ exports[`Storyshots SidebarLayout wide, fixed sidebar content 1`] = `
         This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
       </div>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots EqualColumnLayout four 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-1o7edgt=""
+    >
+      <div
+        data-css-g5zjrh=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          First child
+        </div>
+      </div>
+      <div
+        data-css-g5zjrh=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Second child
+        </div>
+      </div>
+      <div
+        data-css-g5zjrh=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Third child
+        </div>
+      </div>
+      <div
+        data-css-g5zjrh=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Fourth child
+        </div>
+      </div>
+      <div
+        data-css-g5zjrh=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Fifth child
+        </div>
+      </div>
+      <div
+        data-css-g5zjrh=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Sixth child
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots EqualColumnLayout six 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-1o7edgt=""
+    >
+      <div
+        data-css-dyh50p=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          First child
+        </div>
+      </div>
+      <div
+        data-css-dyh50p=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Second child
+        </div>
+      </div>
+      <div
+        data-css-dyh50p=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Third child
+        </div>
+      </div>
+      <div
+        data-css-dyh50p=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Fourth child
+        </div>
+      </div>
+      <div
+        data-css-dyh50p=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Fifth child
+        </div>
+      </div>
+      <div
+        data-css-dyh50p=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Sixth child
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots EqualColumnLayout three 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-1o7edgt=""
+    >
+      <div
+        data-css-gpld4b=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          First child
+        </div>
+      </div>
+      <div
+        data-css-gpld4b=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Second child
+        </div>
+      </div>
+      <div
+        data-css-gpld4b=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Third child
+        </div>
+      </div>
+      <div
+        data-css-gpld4b=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Fourth child
+        </div>
+      </div>
+      <div
+        data-css-gpld4b=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Fifth child
+        </div>
+      </div>
+      <div
+        data-css-gpld4b=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Sixth child
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots EqualColumnLayout two 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-1o7edgt=""
+    >
+      <div
+        data-css-1f2064r=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          First child
+        </div>
+      </div>
+      <div
+        data-css-1f2064r=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Second child
+        </div>
+      </div>
+      <div
+        data-css-1f2064r=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Third child
+        </div>
+      </div>
+      <div
+        data-css-1f2064r=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Fourth child
+        </div>
+      </div>
+      <div
+        data-css-1f2064r=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Fifth child
+        </div>
+      </div>
+      <div
+        data-css-1f2064r=""
+      >
+        <div
+          style={
+            Object {
+              "background": "#e80a89",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          Sixth child
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots PageHeadingLayout default 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yto836=""
+  >
+    <h2
+      className={undefined}
+      data-css-10w3axr=""
+      size="large"
+    >
+      My Page
+    </h2>
+    My content
   </div>
 </div>
 `;

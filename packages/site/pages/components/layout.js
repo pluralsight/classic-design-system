@@ -347,7 +347,7 @@ export default withServerProps(_ => (
         rows.
       </P>
       <EqualColumnLayoutOutput />
-      <Code language="javascript">{`<EqualColumnLayout count={EqualColumnLayout.counts.size}>
+      <Code language="javascript">{`<EqualColumnLayout count={EqualColumnLayout.counts.six}>
   <div></div>
   <div></div>
   <div></div>
@@ -356,7 +356,7 @@ export default withServerProps(_ => (
   <div></div>
 </EqualColumnLayout>
 
-<EqualColumnLayout count={EqualColumnLayout.counts.size}>
+<EqualColumnLayout count={EqualColumnLayout.counts.four}>
   <div></div>
   <div></div>
   <div></div>
