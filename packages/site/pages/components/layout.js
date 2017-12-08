@@ -225,7 +225,10 @@ const VerticalGridVisual = _ => (
         <Button size={Button.sizes.medium}>Primary button</Button>
       </div>
       <div className="column">
-        <Text.Heading size={Text.Heading.sizes.large}>
+        <Text.Heading
+          size={Text.Heading.sizes.large}
+          style={{ lineHeight: core.type.lineHeightExtra, margin: 0 }}
+        >
           <h3>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor
@@ -233,7 +236,7 @@ const VerticalGridVisual = _ => (
         </Text.Heading>
       </div>
       <div className="column">
-        <Text.P>
+        <Text.P style={{ marginTop: 0 }}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         </Text.P>
