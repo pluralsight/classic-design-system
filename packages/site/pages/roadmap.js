@@ -23,6 +23,10 @@ const work = {
       tags: ['Core']
     },
     {
+      title: 'View Toggle',
+      tags: ['Component']
+    },
+    {
       title: 'Avatar',
       tags: ['Component'],
       helpers: ['Mentors']
@@ -31,10 +35,6 @@ const work = {
   next: [
     {
       title: 'Button - Loading States',
-      tags: ['Component']
-    },
-    {
-      title: 'View Toggle',
       tags: ['Component']
     }
   ],
