@@ -18,7 +18,7 @@ import {
 export default withServerProps(_ => (
   <Chrome>
     <Content title="View Toggle">
-      <PageHeading packageName="viewtoggle">View Toggle Menu</PageHeading>
+      <PageHeading packageName="viewtoggle">View Toggle</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
