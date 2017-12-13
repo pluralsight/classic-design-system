@@ -55,7 +55,7 @@ export default withServerProps(_ => (
               'active',
               'boolean',
               null,
-              null,
+              'first option is active',
               'marks as selected'
             ])
           ]
