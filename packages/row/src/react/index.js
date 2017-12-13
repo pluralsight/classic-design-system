@@ -252,9 +252,9 @@ const formatImageWidth = ({ image, size }) =>
 
 const formatActionBarWidth = ({ actionBar }) =>
   Array.isArray(actionBar) && actionBar.length > 1
-    ? `(${actionBar.length} * ${actionBarActionWidth} + ${actionBar.length} * ${
-        actionBarActionMarginLeft
-      })`
+    ? `(${actionBar.length} * ${actionBarActionWidth} + ${
+        actionBar.length
+      } * ${actionBarActionMarginLeft})`
     : '0px'
 
 const Words = glamorous.div(
@@ -363,8 +363,10 @@ const MetadataDatum = glamorous.span({
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   flexShrink: 2,
+  maxWidth: '25%',
   ':nth-of-type(1)': {
-    flexShrink: 1
+    flexShrink: 1,
+    maxWidth: '50%'
   }
 })
 

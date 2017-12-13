@@ -96,9 +96,7 @@ Object.keys(Row.sizes).forEach(size =>
   titleStory.add(`${size} long title`, _ => (
     <Row
       size={size}
-      title={`${
-        size
-      } With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000`}
+      title={`${size} With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000`}
       metadata1={['Jim Cooper']}
       image={
         <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
@@ -226,6 +224,19 @@ const metadataStory = storiesOf('metadata', module)
         <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
       }
       metadata1={longStringsMetaData}
+    />
+  ))
+  .add('super long first string', _ => (
+    <Row
+      title="Long Strings AND Los Imagereo"
+      image={
+        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+      }
+      metadata1={[
+        'This string is so long, it should be illegal.This string is so long, it should be illegal.This string is so long, it should be illegal.   This string is so long, it should be illegal. ',
+        'This is still visible',
+        'And so is this'
+      ]}
     />
   ))
   .add('long links', _ => (
