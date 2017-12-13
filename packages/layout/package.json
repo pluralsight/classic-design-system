@@ -24,11 +24,11 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.0.2",
+    "@pluralsight/ps-design-system-text": "^10.4.1",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.1",
-    "@pluralsight/ps-design-system-text": "^10.4.1",
     "@storybook/addon-storyshots": "3.2.4",
     "@storybook/react": "3.2.3",
     "babel-cli": "^6.24.1",
