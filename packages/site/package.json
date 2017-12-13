@@ -30,6 +30,7 @@
     "@pluralsight/ps-design-system-tag": "^1.1.2",
     "@pluralsight/ps-design-system-text": "^10.4.1",
     "@pluralsight/ps-design-system-theme": "^1.1.0",
+    "@pluralsight/ps-design-system-viewtoggle": "^1.1.0",
     "babel-core": "^6.24.1",
     "babel-plugin-syntax-export-extensions": "^6.13.0",
     "babel-plugin-transform-export-extensions": "^6.22.0",

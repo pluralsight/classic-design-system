@@ -333,6 +333,9 @@ export default withHeadings(props => (
       <NavLink href="/components/theme" headings={props.headings}>
         Theme
       </NavLink>
+      <NavLink href="/components/viewtoggle" headings={props.headings}>
+        View Toggle
+      </NavLink>
     </Group>
     <style jsx>{`
       .sidenav {
