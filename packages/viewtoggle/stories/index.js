@@ -7,11 +7,6 @@ import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import ViewToggle from '../react'
 
-// <Switcher.List onSelect={props.onClick} value={props.value}>
-// <Switcher.Option value="react">REACT</Switcher.Option>
-// <Switcher.Option value="html">HTML</Switcher.Option>
-// </Switcher.List>
-
 storiesOf('options count', module)
   .addDecorator(themeDecorator(addons))
   .add('one', _ => (
