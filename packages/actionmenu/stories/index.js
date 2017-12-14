@@ -1,22 +1,17 @@
-import { action } from '@storybook/addon-actions'
-import backgrounds from '@storybook/addon-backgrounds'
+import addons from '@storybook/addons'
 import Button from '@pluralsight/ps-design-system-button/react'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import { linkTo } from '@storybook/addon-links'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import sizeMe from 'react-sizeme'
 import { storiesOf } from '@storybook/react'
+import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import ActionMenu from '../react'
 
-const bg = backgrounds([
-  { name: 'product', value: core.colors.gray06, default: true }
-])
-
 // TODO: snapshot test generator can't handle.
-// storiesOf('activations', module).addDecorator(bg).add('via button', _ => {
+// storiesOf('activations', module).addDecorator(themeDecorator(addons)).add('via button', _ => {
 //   const Activator = sizeMe({ monitorHeight: true })(
 //     class extends React.Component {
 //       constructor(props) {
@@ -63,41 +58,27 @@ const bg = backgrounds([
 // })
 
 storiesOf('menu items', module)
-  .addDecorator(bg)
-  .add('one', _ =>
+  .addDecorator(themeDecorator(addons))
+  .add('one', _ => (
     <ActionMenu>
-      <ActionMenu.Item>
-        One item
-      </ActionMenu.Item>
+      <ActionMenu.Item>One item</ActionMenu.Item>
     </ActionMenu>
-  )
-  .add('multiple', _ =>
+  ))
+  .add('multiple', _ => (
     <ActionMenu>
-      <ActionMenu.Item>
-        One item
-      </ActionMenu.Item>
-      <ActionMenu.Item>
-        Two item
-      </ActionMenu.Item>
-      <ActionMenu.Item>
-        Three item
-      </ActionMenu.Item>
+      <ActionMenu.Item>One item</ActionMenu.Item>
+      <ActionMenu.Item>Two item</ActionMenu.Item>
+      <ActionMenu.Item>Three item</ActionMenu.Item>
     </ActionMenu>
-  )
-  .add('with icons', _ =>
+  ))
+  .add('with icons', _ => (
     <ActionMenu>
-      <ActionMenu.Item iconId={Icon.ids.channel}>
-        One item
-      </ActionMenu.Item>
-      <ActionMenu.Item iconId={Icon.ids.path}>
-        Two item
-      </ActionMenu.Item>
-      <ActionMenu.Item iconId={Icon.ids.report}>
-        Three item
-      </ActionMenu.Item>
+      <ActionMenu.Item iconId={Icon.ids.channel}>One item</ActionMenu.Item>
+      <ActionMenu.Item iconId={Icon.ids.path}>Two item</ActionMenu.Item>
+      <ActionMenu.Item iconId={Icon.ids.report}>Three item</ActionMenu.Item>
     </ActionMenu>
-  )
-  .add('long text', _ =>
+  ))
+  .add('long text', _ => (
     <ActionMenu>
       <ActionMenu.Item>
         One item that has text that goes on forever and onward into the
@@ -108,42 +89,36 @@ storiesOf('menu items', module)
         everything that is in a line.
       </ActionMenu.Item>
     </ActionMenu>
-  )
-  .add('long text with icon', _ =>
+  ))
+  .add('long text with icon', _ => (
     <ActionMenu>
       <ActionMenu.Item iconId={Icon.ids.channel}>
         One item that has text that goes on forever and onward into the
         universes yet to be
       </ActionMenu.Item>
     </ActionMenu>
-  )
+  ))
 
 storiesOf('dividers', module)
-  .addDecorator(bg)
-  .add('edge', _ =>
+  .addDecorator(themeDecorator(addons))
+  .add('edge', _ => (
     <ActionMenu>
-      <ActionMenu.Item>
-        One item
-      </ActionMenu.Item>
+      <ActionMenu.Item>One item</ActionMenu.Item>
       <ActionMenu.Divider />
     </ActionMenu>
-  )
-  .add('sandwich', _ =>
+  ))
+  .add('sandwich', _ => (
     <ActionMenu>
-      <ActionMenu.Item>
-        One item
-      </ActionMenu.Item>
+      <ActionMenu.Item>One item</ActionMenu.Item>
       <ActionMenu.Divider />
-      <ActionMenu.Item>
-        Two item
-      </ActionMenu.Item>
-      <ActionMenu.Item>
-        Three item
-      </ActionMenu.Item>
+      <ActionMenu.Item>Two item</ActionMenu.Item>
+      <ActionMenu.Item>Three item</ActionMenu.Item>
     </ActionMenu>
-  )
+  ))
 
-const nestedStory = storiesOf('nested', module).addDecorator(bg)
+const nestedStory = storiesOf('nested', module).addDecorator(
+  themeDecorator(addons)
+)
 
 const calcContainerStyle = origin => ({
   position: 'absolute',
@@ -168,45 +143,31 @@ const calcContainerStyle = origin => ({
 })
 
 Object.keys(ActionMenu.origins).forEach(origin =>
-  nestedStory.add(`origin ${origin}`, _ =>
+  nestedStory.add(`origin ${origin}`, _ => (
     <div style={calcContainerStyle(origin)}>
       <ActionMenu origin={origin}>
         <ActionMenu.Item
           nested={
             <ActionMenu origin={origin}>
-              <ActionMenu.Item>
-                Nest 1
-              </ActionMenu.Item>
+              <ActionMenu.Item>Nest 1</ActionMenu.Item>
               <ActionMenu.Item
                 nested={
                   <ActionMenu origin={origin}>
-                    <ActionMenu.Item>
-                      Nest nest 1-1
-                    </ActionMenu.Item>
-                    <ActionMenu.Item>
-                      Nest nest 1-2
-                    </ActionMenu.Item>
-                    <ActionMenu.Item>
-                      Nest nest 1-3
-                    </ActionMenu.Item>
+                    <ActionMenu.Item>Nest nest 1-1</ActionMenu.Item>
+                    <ActionMenu.Item>Nest nest 1-2</ActionMenu.Item>
+                    <ActionMenu.Item>Nest nest 1-3</ActionMenu.Item>
                   </ActionMenu>
                 }
               >
                 Nest 2
               </ActionMenu.Item>
               <ActionMenu.Divider />
-              <ActionMenu.Item>
-                Nest 3
-              </ActionMenu.Item>
+              <ActionMenu.Item>Nest 3</ActionMenu.Item>
               <ActionMenu.Item
                 nested={
                   <ActionMenu origin={origin}>
-                    <ActionMenu.Item>
-                      Nest nest 2-1
-                    </ActionMenu.Item>
-                    <ActionMenu.Item>
-                      Nest nest 2-2
-                    </ActionMenu.Item>
+                    <ActionMenu.Item>Nest nest 2-1</ActionMenu.Item>
+                    <ActionMenu.Item>Nest nest 2-2</ActionMenu.Item>
                   </ActionMenu>
                 }
               >
@@ -217,10 +178,8 @@ Object.keys(ActionMenu.origins).forEach(origin =>
         >
           One
         </ActionMenu.Item>
-        <ActionMenu.Item>
-          Two
-        </ActionMenu.Item>
+        <ActionMenu.Item>Two</ActionMenu.Item>
       </ActionMenu>
     </div>
-  )
+  ))
 )
