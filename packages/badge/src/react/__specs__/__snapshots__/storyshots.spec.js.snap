@@ -4,8 +4,7 @@ exports[`Storyshots appearance default 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -13,7 +12,7 @@ exports[`Storyshots appearance default 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -29,8 +28,7 @@ exports[`Storyshots appearance stroke 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -38,7 +36,7 @@ exports[`Storyshots appearance stroke 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -54,8 +52,7 @@ exports[`Storyshots color blue default 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -63,7 +60,7 @@ exports[`Storyshots color blue default 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -79,8 +76,7 @@ exports[`Storyshots color blue stroke 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -88,7 +84,7 @@ exports[`Storyshots color blue stroke 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -104,8 +100,7 @@ exports[`Storyshots color gray default 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -113,7 +108,7 @@ exports[`Storyshots color gray default 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -129,8 +124,7 @@ exports[`Storyshots color gray stroke 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -138,7 +132,7 @@ exports[`Storyshots color gray stroke 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -154,8 +148,7 @@ exports[`Storyshots color green default 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -163,7 +156,7 @@ exports[`Storyshots color green default 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -179,8 +172,7 @@ exports[`Storyshots color green stroke 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -188,7 +180,7 @@ exports[`Storyshots color green stroke 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -204,8 +196,7 @@ exports[`Storyshots color red default 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -213,7 +204,7 @@ exports[`Storyshots color red default 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -229,8 +220,7 @@ exports[`Storyshots color red stroke 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -238,7 +228,7 @@ exports[`Storyshots color red stroke 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -254,8 +244,7 @@ exports[`Storyshots color yellow default 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -263,7 +252,7 @@ exports[`Storyshots color yellow default 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -279,8 +268,7 @@ exports[`Storyshots color yellow stroke 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -288,7 +276,7 @@ exports[`Storyshots color yellow stroke 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >

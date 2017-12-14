@@ -1,22 +1,23 @@
-import backgrounds from '@storybook/addon-backgrounds'
+import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import Badge from '../react'
 
-const bg = backgrounds([
-  { name: 'product', value: core.colors.gray06, default: true }
-])
-
-const appearanceStory = storiesOf('appearance', module).addDecorator(bg)
+const appearanceStory = storiesOf('appearance', module).addDecorator(
+  themeDecorator(addons)
+)
 Object.keys(Badge.appearances).forEach(app =>
   appearanceStory.add(app, _ => (
     <Badge appearance={app}>{`${app} Badge`}</Badge>
   ))
 )
 
-const colorStory = storiesOf('color', module).addDecorator(bg)
+const colorStory = storiesOf('color', module).addDecorator(
+  themeDecorator(addons)
+)
 Object.keys(Badge.colors).forEach(color => {
   Object.keys(Badge.appearances).forEach(app =>
     colorStory.add(`${color} ${app}`, _ => (
