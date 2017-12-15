@@ -1,12 +1,12 @@
+import addons from '@storybook/addons'
 import Button from '@pluralsight/ps-design-system-button/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
+import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import { storiesOf } from '@storybook/react'
-import backgrounds from '@storybook/addon-backgrounds'
 import { action } from '@storybook/addon-actions'
 import core from '@pluralsight/ps-design-system-core'
-import { linkTo } from '@storybook/addon-links'
 
 import Card from '../react'
 
@@ -17,9 +17,6 @@ const longStringsMetaData = [
 ]
 const longTitle =
   'The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds'
-const bg = backgrounds([
-  { name: 'product', value: core.colors.gray06, default: true }
-])
 
 const CardWithDefaults = props => (
   <Card
@@ -34,7 +31,7 @@ const CardWithDefaults = props => (
 )
 
 const comboStory = storiesOf('combo', module)
-  .addDecorator(bg)
+  .addDecorator(themeDecorator(addons))
   .add('everything', _ => (
     <Card
       title={
@@ -85,7 +82,7 @@ const comboStory = storiesOf('combo', module)
   ))
 
 const titleStory = storiesOf('title', module)
-  .addDecorator(bg)
+  .addDecorator(themeDecorator(addons))
   .add('title wrapper', _ => (
     <CardWithDefaults title={<Card.Title>Text only</Card.Title>} />
   ))
@@ -116,7 +113,7 @@ const titleStory = storiesOf('title', module)
   ))
 
 const imageStory = storiesOf('image', module)
-  .addDecorator(bg)
+  .addDecorator(themeDecorator(addons))
   .add('image only', _ => (
     <CardWithDefaults
       image={<Card.Image src="http://lorempixel.com/400/200/sports/" />}
@@ -135,7 +132,7 @@ const imageStory = storiesOf('image', module)
   ))
 
 const actionBarStory = storiesOf('actionBar', module)
-  .addDecorator(bg)
+  .addDecorator(themeDecorator(addons))
   .add('single action', _ => (
     <CardWithDefaults
       actionBar={[<Card.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
@@ -157,7 +154,7 @@ const actionBarStory = storiesOf('actionBar', module)
   ))
 
 const bonusBarStory = storiesOf('bonusBar', module)
-  .addDecorator(bg)
+  .addDecorator(themeDecorator(addons))
   .add('only text', _ => <CardWithDefaults bonusBar="Wow, I'm bonus." />)
   .add('some element', _ => (
     <CardWithDefaults
@@ -166,7 +163,7 @@ const bonusBarStory = storiesOf('bonusBar', module)
   ))
 
 const fullOverlayStory = storiesOf('fullOverlay', module)
-  .addDecorator(bg)
+  .addDecorator(themeDecorator(addons))
   .add('text only', _ => (
     <CardWithDefaults
       fullOverlay={<Card.FullOverlayLink>Element</Card.FullOverlayLink>}
@@ -225,7 +222,7 @@ const fullOverlayStory = storiesOf('fullOverlay', module)
     />
   ))
 
-const sizeStory = storiesOf('size', module).addDecorator(bg)
+const sizeStory = storiesOf('size', module).addDecorator(themeDecorator(addons))
 Object.keys(Card.sizes).forEach(size =>
   sizeStory.add(size, _ => (
     <CardWithDefaults
@@ -236,7 +233,7 @@ Object.keys(Card.sizes).forEach(size =>
 )
 
 const metaDataStory = storiesOf('metadata', module)
-  .addDecorator(bg)
+  .addDecorator(themeDecorator(addons))
   .add('single text', _ => <CardWithDefaults metadata1={['Jim Cooper']} />)
   .add('multiple text', _ => (
     <CardWithDefaults metadata1={['Jim Cooper', 'Of the Far North']} />
@@ -271,13 +268,13 @@ const metaDataStory = storiesOf('metadata', module)
   ))
 
 const progressStory = storiesOf('progress', module)
-  .addDecorator(bg)
+  .addDecorator(themeDecorator(addons))
   .add('none', _ => <CardWithDefaults progress={0} />)
   .add('some', _ => <CardWithDefaults progress={33.66667} />)
   .add('done', _ => <CardWithDefaults progress={100} />)
 
 const tagStory = storiesOf('tag', module)
-  .addDecorator(bg)
+  .addDecorator(themeDecorator(addons))
   .add('text only', _ => (
     <CardWithDefaults tag={<Card.Tag>Channel</Card.Tag>} />
   ))
