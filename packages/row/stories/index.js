@@ -1,17 +1,13 @@
-import { action } from '@storybook/addon-actions'
-import backgrounds from '@storybook/addon-backgrounds'
+import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
 import Drawer from '@pluralsight/ps-design-system-drawer/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import { linkTo } from '@storybook/addon-links'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import Row from '../react'
 
-const bg = backgrounds([
-  { name: 'product', value: core.colors.gray06, default: true }
-])
 const longStringsMetaData = [
   'It is impossible to count the grand contributions of this great author',
   'Levels heretofore unknown in the battle for truth and knowledge',
@@ -19,7 +15,7 @@ const longStringsMetaData = [
 ]
 
 const comboStory = storiesOf('combo', module)
-  .addDecorator(bg)
+  .addDecorator(themeDecorator(addons))
   .add('everything', _ => (
     <Row
       title={
@@ -66,7 +62,7 @@ const comboStory = storiesOf('combo', module)
     />
   ))
 
-const sizeStory = storiesOf('size', module).addDecorator(bg)
+const sizeStory = storiesOf('size', module).addDecorator(themeDecorator(addons))
 Object.keys(Row.sizes).forEach(size =>
   sizeStory.add(size, _ => (
     <Row
@@ -81,7 +77,7 @@ Object.keys(Row.sizes).forEach(size =>
 )
 
 const titleStory = storiesOf('title', module)
-  .addDecorator(bg)
+  .addDecorator(themeDecorator(addons))
   .add('string', _ => <Row title="A String Title" />)
   .add('link', _ => (
     <Row
@@ -105,7 +101,9 @@ Object.keys(Row.sizes).forEach(size =>
   ))
 )
 
-const progressStory = storiesOf('progress', module).addDecorator(bg)
+const progressStory = storiesOf('progress', module).addDecorator(
+  themeDecorator(addons)
+)
 ;[0, 66.6667, 100].forEach(progress =>
   progressStory.add(`${progress} progress`, _ => (
     <Row
@@ -127,7 +125,7 @@ progressStory.add(`no image`, _ => (
 ))
 
 const imageStory = storiesOf('image', module)
-  .addDecorator(bg)
+  .addDecorator(themeDecorator(addons))
   .add(`with image`, _ => (
     <Row
       title="With Image"
@@ -197,7 +195,7 @@ const imageStory = storiesOf('image', module)
   ))
 
 const metadataStory = storiesOf('metadata', module)
-  .addDecorator(bg)
+  .addDecorator(themeDecorator(addons))
   .add('string', _ => (
     <Row title="Meta with Strings" metadata1={['Jake Trent']} />
   ))
@@ -258,7 +256,7 @@ const metadataStory = storiesOf('metadata', module)
   ))
 
 const actionBarStory = storiesOf('actionBar', module)
-  .addDecorator(bg)
+  .addDecorator(themeDecorator(addons))
   .add('one action', _ => (
     <Row
       title="Ready, Action, Bar!"
@@ -292,7 +290,7 @@ const actionBarStory = storiesOf('actionBar', module)
   ))
 
 const fullOverlayStory = storiesOf('fullOverlay', module)
-  .addDecorator(bg)
+  .addDecorator(themeDecorator(addons))
   .add('element', _ => (
     <Row
       title="Overlay This!"
@@ -358,7 +356,9 @@ const fullOverlayStory = storiesOf('fullOverlay', module)
     />
   ))
 
-const drawerStory = storiesOf('in drawer', module).addDecorator(bg)
+const drawerStory = storiesOf('in drawer', module).addDecorator(
+  themeDecorator(addons)
+)
 
 Object.keys(Row.sizes).forEach(size =>
   drawerStory.add(size, _ => (
