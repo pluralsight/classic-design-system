@@ -1,16 +1,13 @@
-import backgrounds from '@storybook/addon-backgrounds'
-import core from '@pluralsight/ps-design-system-core'
+import addons from '@storybook/addons'
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { storiesOf } from '@storybook/react'
+import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import Link from '../react'
 
-const bg = backgrounds([
-  { name: 'product', value: core.colors.gray06, default: true }
-])
-
-const appearanceStory = storiesOf('appearance', module).addDecorator(bg)
+const appearanceStory = storiesOf('appearance', module).addDecorator(
+  themeDecorator(addons)
+)
 
 Object.keys(Link.appearances).forEach(appearance =>
   appearanceStory.add(appearance, _ => (
