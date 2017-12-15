@@ -1,22 +1,18 @@
-import React from 'react'
-
-import { action } from '@storybook/addon-actions'
-import backgrounds from '@storybook/addon-backgrounds'
+import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
-import { linkTo } from '@storybook/addon-links'
+import React from 'react'
 import { storiesOf, addDecorator } from '@storybook/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import Text from '../react'
 
-const bg = backgrounds([
-  { name: 'product', value: core.colors.gray06, default: true }
-])
 const style = { color: core.colors.pink }
 const className = glamor.css({ color: `${core.colors.orange} !important` })
 
-const heading = storiesOf('Heading', module).addDecorator(bg)
+const heading = storiesOf('Heading', module).addDecorator(
+  themeDecorator(addons)
+)
 
 Object.keys(Text.Heading.sizes).forEach(size =>
   heading.add(`size: ${size}`, _ => (
@@ -38,22 +34,7 @@ heading.add('className override', _ => (
   </Text.Heading>
 ))
 
-const bgColors = ['black', 'white']
-Object.keys(Theme.names)
-  .map((name, i) => [name, bgColors[i]])
-  .forEach(([name, backgroundColor]) =>
-    heading.add(`theme ${name}`, _ => (
-      <div style={{ height: '100%', width: '100%', backgroundColor }}>
-        <Theme name={name}>
-          <Text.Heading>
-            <h2>wow</h2>
-          </Text.Heading>
-        </Theme>
-      </div>
-    ))
-  )
-
-const p = storiesOf('P', module).addDecorator(bg)
+const p = storiesOf('P', module).addDecorator(themeDecorator(addons))
 
 p.add('vanilla', _ => <Text.P>lorem ipsum</Text.P>)
 
@@ -61,19 +42,7 @@ p.add('style override', _ => <Text.P style={style}>pink</Text.P>)
 
 p.add('className override', _ => <Text.P className={className}>orange</Text.P>)
 
-Object.keys(Theme.names)
-  .map((name, i) => [name, bgColors[i]])
-  .forEach(([name, backgroundColor]) =>
-    p.add(`theme ${name}`, _ => (
-      <div style={{ height: '100%', width: '100%', backgroundColor }}>
-        <Theme name={name}>
-          <Text.P>some text</Text.P>
-        </Theme>
-      </div>
-    ))
-  )
-
-const list = storiesOf('List', module).addDecorator(bg)
+const list = storiesOf('List', module).addDecorator(themeDecorator(addons))
 
 Object.keys(Text.List.types).forEach(typeProp =>
   list.add(`type: ${typeProp}`, _ => (
@@ -86,19 +55,3 @@ Object.keys(Text.List.types).forEach(typeProp =>
     </Text.List>
   ))
 )
-
-Object.keys(Theme.names)
-  .map((name, i) => [name, bgColors[i]])
-  .forEach(([name, backgroundColor]) =>
-    list.add(`theme ${name}`, _ => (
-      <div style={{ height: '100%', width: '100%', backgroundColor }}>
-        <Theme name={name}>
-          <Text.List>
-            <Text.List.Item>one</Text.List.Item>
-            <Text.List.Item>two</Text.List.Item>
-            <Text.List.Item>three</Text.List.Item>
-          </Text.List>
-        </Theme>
-      </div>
-    ))
-  )
