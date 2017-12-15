@@ -1,5 +1,117 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots default default 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div>
+    <div
+      className="css-1vqxkco"
+      role="tablist"
+    >
+      <button
+        aria-selected={true}
+        className="css-1pp0sr"
+        onClick={[Function]}
+        role="tab"
+      >
+        <div
+          className="css-1vk06pf"
+        >
+          Menu 1
+          <span
+            className="css-1s34vsj"
+          />
+        </div>
+      </button>
+      <button
+        aria-selected={false}
+        className="css-1bb8k7d"
+        onClick={[Function]}
+        role="tab"
+      >
+        <div
+          className="css-1vk06pf"
+        >
+          Menu 2
+          <span
+            className="css-1s34vsj"
+          />
+        </div>
+      </button>
+      <button
+        aria-selected={false}
+        className="css-1bb8k7d"
+        onClick={[Function]}
+        role="tab"
+      >
+        <div
+          className="css-1vk06pf"
+        >
+          Menu 3
+          <span
+            className="css-1s34vsj"
+          />
+        </div>
+      </button>
+      <button
+        aria-selected={false}
+        className="css-1bb8k7d"
+        onClick={[Function]}
+        role="tab"
+      >
+        <div
+          className="css-1vk06pf"
+        >
+          Menu 4
+          <span
+            className="css-1s34vsj"
+          />
+        </div>
+      </button>
+      <button
+        aria-selected={false}
+        className="css-1bb8k7d"
+        onClick={[Function]}
+        role="tab"
+      >
+        <div
+          className="css-1vk06pf"
+        >
+          Menu 5
+          <span
+            className="css-1s34vsj"
+          />
+        </div>
+      </button>
+    </div>
+    <div
+      aria-labelledby="example3"
+      className="css-nil"
+      role="tabpanel"
+    >
+      <div
+        className="content"
+      >
+        Menu stuff 3
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots theme dark 1`] = `
 <div
   style={

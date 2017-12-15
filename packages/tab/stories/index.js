@@ -1,14 +1,11 @@
-import backgrounds from '@storybook/addon-backgrounds'
+import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
+import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import Tab from '../react'
-
-const bg = backgrounds([
-  { name: 'product', value: core.colors.gray06, default: true }
-])
 
 class InAppExample extends React.Component {
   constructor(props) {
@@ -51,17 +48,6 @@ class InAppExample extends React.Component {
   }
 }
 
-const themeStory = storiesOf('theme', module).addDecorator(bg)
-const fontColors = ['white', 'black']
-const bgColors = ['black', 'white']
-Object.keys(Theme.names)
-  .map((name, i) => [name, fontColors[i], bgColors[i]])
-  .forEach(([name, color, backgroundColor]) =>
-    themeStory.add(name, _ => (
-      <div style={{ height: '100%', width: '100%', color, backgroundColor }}>
-        <Theme name={name}>
-          <InAppExample />
-        </Theme>
-      </div>
-    ))
-  )
+const defaultStory = storiesOf('default', module)
+  .addDecorator(themeDecorator(addons))
+  .add('default', _ => <InAppExample />)
