@@ -29,8 +29,9 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.1",
-    "@storybook/addon-storyshots": "^3.2.4",
-    "@storybook/react": "^3.2.3",
+    "@storybook/addon-actions": "3.2.14",
+    "@storybook/addon-storyshots": "3.2.14",
+    "@storybook/react": "3.2.14",
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
