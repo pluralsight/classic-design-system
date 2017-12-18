@@ -239,9 +239,9 @@ const LoadingIndicator = glamorous.span(
     borderStyle: 'solid',
     borderWidth: '2px',
     borderRadius: '100%',
-    animation: `${spinAnimation} 0.5s linear infinite`
+    animation: `${spinAnimation} 1s linear infinite`
   },
-  ({ appearance }) =>
+  ({ appearance, themeName }) =>
     ({
       [appearances.primary]: {
         borderColor: transparentize(0.8, core.colors.gray04),
@@ -252,8 +252,14 @@ const LoadingIndicator = glamorous.span(
         borderTopColor: core.colors.orange
       },
       [appearances.flat]: {
-        borderColor: transparentize(0.8, core.colors.white),
-        borderTopColor: core.colors.white
+        borderColor:
+          themeName === themeNames.light
+            ? transparentize(0.8, core.colors.gray04)
+            : transparentize(0.8, core.colors.white),
+        borderTopColor:
+          themeName === themeNames.light
+            ? core.colors.gray04
+            : core.colors.white
       }
     }[appearance])
 )
@@ -266,7 +272,10 @@ const renderIcon = props =>
       isLoadingNoText={props.isLoadingNoText}
     >
       <Icon size={mapIconSize(props)}>
-        <LoadingIndicator appearance={props.appearance} />
+        <LoadingIndicator
+          appearance={props.appearance}
+          themeName={props.themeName}
+        />
       </Icon>
     </IconContainer>
   ) : props.icon ? (
@@ -325,12 +334,7 @@ class Button extends React.Component {
 
 class Btn extends React.Component {
   componentWillReceiveProps(nextProps) {
-    if (
-      nextProps.loading &&
-      !this.props.loading &&
-      !this.props.icon &&
-      this.el
-    ) {
+    if (nextProps.loading && !this.props.icon && this.el) {
       this.nonLoadingWidth = this.el.offsetWidth
     } else {
       this.nonLoadingWidth = null
