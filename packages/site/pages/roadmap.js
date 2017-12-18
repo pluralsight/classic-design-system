@@ -19,10 +19,6 @@ import {
 const work = {
   now: [
     {
-      title: 'Button - Loading States',
-      tags: ['Component']
-    },
-    {
       title: 'Avatar',
       tags: ['Component'],
       helpers: ['Mentors']
