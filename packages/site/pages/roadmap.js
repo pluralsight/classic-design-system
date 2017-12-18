@@ -19,11 +19,7 @@ import {
 const work = {
   now: [
     {
-      title: 'Layout',
-      tags: ['Core']
-    },
-    {
-      title: 'View Toggle',
+      title: 'Button - Loading States',
       tags: ['Component']
     },
     {
@@ -32,12 +28,7 @@ const work = {
       helpers: ['Mentors']
     }
   ],
-  next: [
-    {
-      title: 'Button - Loading States',
-      tags: ['Component']
-    }
-  ],
+  next: [],
   future: [
     {
       title: 'Tooltip / Popover',
