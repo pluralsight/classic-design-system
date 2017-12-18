@@ -73,6 +73,13 @@ export default withServerProps(_ => (
             'react ref callback'
           ]),
           PropTypes.row([
+            'loading',
+            'boolean',
+            null,
+            <code>false</code>,
+            'disables button and shows spinner'
+          ]),
+          PropTypes.row([
             'size',
             PropTypes.union(Button.sizes),
             null,
