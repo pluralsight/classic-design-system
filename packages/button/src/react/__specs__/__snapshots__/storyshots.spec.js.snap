@@ -17,7 +17,7 @@ exports[`Storyshots appearance flat 1`] = `
   }
 >
   <button
-    data-css-76xffg=""
+    data-css-1udg5wt=""
     disabled={false}
   >
     <span
@@ -46,7 +46,7 @@ exports[`Storyshots appearance primary 1`] = `
   }
 >
   <button
-    data-css-bzft25=""
+    data-css-14vytoi=""
     disabled={false}
   >
     <span
@@ -75,7 +75,7 @@ exports[`Storyshots appearance stroke 1`] = `
   }
 >
   <button
-    data-css-roqos8=""
+    data-css-14yyo2s=""
     disabled={false}
   >
     <span
@@ -104,7 +104,7 @@ exports[`Storyshots as link default 1`] = `
   }
 >
   <a
-    data-css-bzft25=""
+    data-css-14vytoi=""
     disabled={false}
     href="https://duckduckgo.com"
   >
@@ -134,7 +134,7 @@ exports[`Storyshots as link with icon 1`] = `
   }
 >
   <a
-    data-css-1c0ebuw=""
+    data-css-11ock8c=""
     disabled={false}
     href="https://duckduckgo.com"
   >
@@ -180,7 +180,7 @@ exports[`Storyshots disabled flat 1`] = `
   }
 >
   <button
-    data-css-1qj35yh=""
+    data-css-5kpbtg=""
     disabled={true}
     onClick={[Function]}
   >
@@ -210,7 +210,7 @@ exports[`Storyshots disabled primary 1`] = `
   }
 >
   <button
-    data-css-ja7fpz=""
+    data-css-1fyz7kj=""
     disabled={true}
     onClick={[Function]}
   >
@@ -240,7 +240,7 @@ exports[`Storyshots disabled stroke 1`] = `
   }
 >
   <button
-    data-css-xmly1y=""
+    data-css-1g1r6u2=""
     disabled={true}
     onClick={[Function]}
   >
@@ -270,7 +270,7 @@ exports[`Storyshots disabled with icon 1`] = `
   }
 >
   <button
-    data-css-1b4os0c=""
+    data-css-cpe9oq=""
     disabled={true}
   >
     <div
@@ -315,7 +315,7 @@ exports[`Storyshots icon flat 1`] = `
   }
 >
   <button
-    data-css-16dse4m=""
+    data-css-1a30t1v=""
     disabled={false}
   >
     <div
@@ -360,7 +360,7 @@ exports[`Storyshots icon large 1`] = `
   }
 >
   <button
-    data-css-1e6qgdh=""
+    data-css-1mmgu0r=""
     disabled={false}
   >
     <div
@@ -405,7 +405,7 @@ exports[`Storyshots icon left 1`] = `
   }
 >
   <button
-    data-css-1c0ebuw=""
+    data-css-11ock8c=""
     disabled={false}
   >
     <div
@@ -450,7 +450,7 @@ exports[`Storyshots icon lone flat large 1`] = `
   }
 >
   <button
-    data-css-1j8mmgf=""
+    data-css-oiplsr=""
     disabled={false}
   >
     <div
@@ -493,7 +493,7 @@ exports[`Storyshots icon lone flat medium 1`] = `
   }
 >
   <button
-    data-css-1xgyzyz=""
+    data-css-s1qqea=""
     disabled={false}
   >
     <div
@@ -536,7 +536,7 @@ exports[`Storyshots icon lone flat small 1`] = `
   }
 >
   <button
-    data-css-1fp2zy4=""
+    data-css-12qb0bp=""
     disabled={false}
   >
     <div
@@ -579,7 +579,7 @@ exports[`Storyshots icon lone flat xSmall 1`] = `
   }
 >
   <button
-    data-css-6mkhxq=""
+    data-css-3go9ly=""
     disabled={false}
   >
     <div
@@ -622,7 +622,7 @@ exports[`Storyshots icon lone primary large 1`] = `
   }
 >
   <button
-    data-css-qijcsc=""
+    data-css-10205em=""
     disabled={false}
   >
     <div
@@ -665,7 +665,7 @@ exports[`Storyshots icon lone primary medium 1`] = `
   }
 >
   <button
-    data-css-12ji30o=""
+    data-css-1bwnmw8=""
     disabled={false}
   >
     <div
@@ -708,7 +708,7 @@ exports[`Storyshots icon lone primary small 1`] = `
   }
 >
   <button
-    data-css-qem67e=""
+    data-css-1dlpfnd=""
     disabled={false}
   >
     <div
@@ -751,7 +751,7 @@ exports[`Storyshots icon lone primary xSmall 1`] = `
   }
 >
   <button
-    data-css-1g6m6he=""
+    data-css-1cm7ben=""
     disabled={false}
   >
     <div
@@ -794,7 +794,7 @@ exports[`Storyshots icon lone stroke large 1`] = `
   }
 >
   <button
-    data-css-er35ec=""
+    data-css-3qpk71=""
     disabled={false}
   >
     <div
@@ -837,7 +837,7 @@ exports[`Storyshots icon lone stroke medium 1`] = `
   }
 >
   <button
-    data-css-1t47sdy=""
+    data-css-16iitrq=""
     disabled={false}
   >
     <div
@@ -880,7 +880,7 @@ exports[`Storyshots icon lone stroke small 1`] = `
   }
 >
   <button
-    data-css-80a0py=""
+    data-css-m05t8l=""
     disabled={false}
   >
     <div
@@ -923,7 +923,7 @@ exports[`Storyshots icon lone stroke xSmall 1`] = `
   }
 >
   <button
-    data-css-6s4gce=""
+    data-css-ya76wh=""
     disabled={false}
   >
     <div
@@ -966,7 +966,7 @@ exports[`Storyshots icon medium 1`] = `
   }
 >
   <button
-    data-css-1c0ebuw=""
+    data-css-11ock8c=""
     disabled={false}
   >
     <div
@@ -1011,7 +1011,7 @@ exports[`Storyshots icon primary 1`] = `
   }
 >
   <button
-    data-css-1c0ebuw=""
+    data-css-11ock8c=""
     disabled={false}
   >
     <div
@@ -1056,7 +1056,7 @@ exports[`Storyshots icon right 1`] = `
   }
 >
   <button
-    data-css-1xdedob=""
+    data-css-460ztl=""
     disabled={false}
   >
     <div
@@ -1101,7 +1101,7 @@ exports[`Storyshots icon small 1`] = `
   }
 >
   <button
-    data-css-v3efag=""
+    data-css-199mixf=""
     disabled={false}
   >
     <div
@@ -1146,7 +1146,7 @@ exports[`Storyshots icon stroke 1`] = `
   }
 >
   <button
-    data-css-1jtiqrm=""
+    data-css-1hu4z00=""
     disabled={false}
   >
     <div
@@ -1191,7 +1191,7 @@ exports[`Storyshots icon xSmall 1`] = `
   }
 >
   <button
-    data-css-rd9v03=""
+    data-css-hnuj1j=""
     disabled={false}
   >
     <div
@@ -1219,6 +1219,286 @@ exports[`Storyshots icon xSmall 1`] = `
 </div>
 `;
 
+exports[`Storyshots loading flat 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <button
+    data-css-t59hgl=""
+    disabled={false}
+  >
+    <div
+      className="css-1mgd019"
+    >
+      <div
+        className="css-otejxm"
+      >
+        <span
+          className="css-14yr175"
+        />
+      </div>
+    </div>
+    <span
+      className="css-1en8fmq"
+    >
+      Loading...
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots loading large 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <button
+    data-css-9xwuhy=""
+    disabled={false}
+  >
+    <div
+      className="css-1mgd019"
+    >
+      <div
+        className="css-otejxm"
+      >
+        <span
+          className="css-1s0im73"
+        />
+      </div>
+    </div>
+    <span
+      className="css-1en8fmq"
+    >
+      Loading...
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots loading medium 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <button
+    data-css-14vytoi=""
+    disabled={false}
+  >
+    <div
+      className="css-1mgd019"
+    >
+      <div
+        className="css-otejxm"
+      >
+        <span
+          className="css-1s0im73"
+        />
+      </div>
+    </div>
+    <span
+      className="css-1en8fmq"
+    >
+      Loading...
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots loading primary 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <button
+    data-css-9xwuhy=""
+    disabled={false}
+  >
+    <div
+      className="css-1mgd019"
+    >
+      <div
+        className="css-otejxm"
+      >
+        <span
+          className="css-1s0im73"
+        />
+      </div>
+    </div>
+    <span
+      className="css-1en8fmq"
+    >
+      Loading...
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots loading small 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <button
+    data-css-j9b1qk=""
+    disabled={false}
+  >
+    <div
+      className="css-1mgd019"
+    >
+      <div
+        className="css-otejxm"
+      >
+        <span
+          className="css-1s0im73"
+        />
+      </div>
+    </div>
+    <span
+      className="css-1en8fmq"
+    >
+      Loading...
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots loading stroke 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <button
+    data-css-l0x368=""
+    disabled={false}
+  >
+    <div
+      className="css-1mgd019"
+    >
+      <div
+        className="css-otejxm"
+      >
+        <span
+          className="css-18vo5om"
+        />
+      </div>
+    </div>
+    <span
+      className="css-1en8fmq"
+    >
+      Loading...
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots loading xSmall 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <button
+    data-css-1djqld6=""
+    disabled={false}
+  >
+    <div
+      className="css-1mgd019"
+    >
+      <div
+        className="css-12f5sv2"
+      >
+        <span
+          className="css-1s0im73"
+        />
+      </div>
+    </div>
+    <span
+      className="css-1en8fmq"
+    >
+      Loading...
+    </span>
+  </button>
+</div>
+`;
+
 exports[`Storyshots override styles with className 1`] = `
 <div
   style={
@@ -1241,7 +1521,7 @@ exports[`Storyshots override styles with className 1`] = `
         "data-css-jxpnuu": "",
       }
     }
-    data-css-1c0ebuw=""
+    data-css-11ock8c=""
     disabled={false}
   >
     <div
@@ -1286,7 +1566,7 @@ exports[`Storyshots override styles with style 1`] = `
   }
 >
   <button
-    data-css-1c0ebuw=""
+    data-css-11ock8c=""
     disabled={false}
     style={
       Object {
@@ -1337,7 +1617,7 @@ exports[`Storyshots props pass through aria-expanded 1`] = `
 >
   <button
     aria-expanded={true}
-    data-css-bzft25=""
+    data-css-14vytoi=""
     disabled={false}
   >
     <span
@@ -1366,7 +1646,7 @@ exports[`Storyshots props pass through data-something 1`] = `
   }
 >
   <button
-    data-css-bzft25=""
+    data-css-14vytoi=""
     data-something="wow"
     disabled={false}
   >
@@ -1396,7 +1676,7 @@ exports[`Storyshots props pass through not supported 1`] = `
   }
 >
   <button
-    data-css-bzft25=""
+    data-css-14vytoi=""
     disabled={false}
   >
     <span
@@ -1425,7 +1705,7 @@ exports[`Storyshots props pass through title 1`] = `
   }
 >
   <button
-    data-css-bzft25=""
+    data-css-14vytoi=""
     disabled={false}
     title="My caption"
   >
@@ -1455,7 +1735,7 @@ exports[`Storyshots size large 1`] = `
   }
 >
   <button
-    data-css-1r9v2kd=""
+    data-css-9xwuhy=""
     disabled={false}
   >
     <span
@@ -1484,7 +1764,7 @@ exports[`Storyshots size medium 1`] = `
   }
 >
   <button
-    data-css-bzft25=""
+    data-css-14vytoi=""
     disabled={false}
   >
     <span
@@ -1513,7 +1793,7 @@ exports[`Storyshots size small 1`] = `
   }
 >
   <button
-    data-css-5t7u9e=""
+    data-css-j9b1qk=""
     disabled={false}
   >
     <span
@@ -1542,7 +1822,7 @@ exports[`Storyshots size xSmall 1`] = `
   }
 >
   <button
-    data-css-1l8qhvd=""
+    data-css-1djqld6=""
     disabled={false}
   >
     <span
@@ -1571,7 +1851,7 @@ exports[`Storyshots with onClick clicks once 1`] = `
   }
 >
   <button
-    data-css-1c0ebuw=""
+    data-css-11ock8c=""
     disabled={false}
     onClick={[Function]}
   >
@@ -1617,7 +1897,7 @@ exports[`Storyshots with ref ref to handle focus 1`] = `
   }
 >
   <button
-    data-css-bzft25=""
+    data-css-14vytoi=""
     disabled={false}
   >
     <span

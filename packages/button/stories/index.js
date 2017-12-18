@@ -125,3 +125,23 @@ const propsExample = storiesOf('props pass through', module)
   .add('not supported', _ => (
     <Button onMouseOver={action('mouse over')}>Should not mouseover</Button>
   ))
+
+const loadingExample = storiesOf('loading', module).addDecorator(
+  themeDecorator(addons)
+)
+
+Object.keys(Button.sizes).forEach(size =>
+  loadingExample.add(size, _ => (
+    <Button size={size} loading>
+      Loading...
+    </Button>
+  ))
+)
+
+Object.keys(Button.appearances).forEach(appearance =>
+  loadingExample.add(appearance, _ => (
+    <Button appearance={appearance} size={Button.sizes.large} loading>
+      Loading...
+    </Button>
+  ))
+)

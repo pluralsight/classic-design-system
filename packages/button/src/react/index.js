@@ -1,7 +1,9 @@
 import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import glamorous from 'glamorous'
-import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
+import Icon, {
+  sizes as iconSizes
+} from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
@@ -221,8 +223,50 @@ const rmNonHtmlProps = props => {
   return rest
 }
 
+const spinAnimation = glamor.css.keyframes({
+  '100%': {
+    transform: 'rotate(360deg)'
+  }
+})
+const LoadingIndicator = glamorous.span(
+  {
+    display: 'inline-block',
+    height: 'calc(100% - 4px)',
+    width: 'calc(100% - 4px)',
+    margin: '2px',
+    borderStyle: 'solid',
+    borderWidth: '2px',
+    borderRadius: '100%',
+    animation: `${spinAnimation} 0.5s linear infinite`
+  },
+  ({ appearance }) =>
+    ({
+      [appearances.primary]: {
+        borderColor: transparentize(0.8, core.colors.gray04),
+        borderTopColor: core.colors.white
+      },
+      [appearances.stroke]: {
+        borderColor: transparentize(0.8, core.colors.white),
+        borderTopColor: core.colors.orange
+      },
+      [appearances.flat]: {
+        borderColor: transparentize(0.8, core.colors.white),
+        borderTopColor: core.colors.white
+      }
+    }[appearance])
+)
+
 const renderIcon = props =>
-  props.icon ? (
+  props.loading ? (
+    <IconContainer
+      iconAlign={props.iconAlign}
+      iconOnly={React.Children.count(props.children) <= 0}
+    >
+      <Icon size={mapIconSize(props)}>
+        <LoadingIndicator appearance={props.appearance} />
+      </Icon>
+    </IconContainer>
+  ) : props.icon ? (
     <IconContainer
       iconAlign={props.iconAlign}
       iconOnly={React.Children.count(props.children) <= 0}
@@ -280,7 +324,7 @@ const Btn = (props, context) => (
     themeName={context.themeName}
     iconOnly={React.Children.count(props.children) <= 0}
   >
-    {renderIcon(props)}
+    {renderIcon({ ...props, themeName: context.themeName })}
     <BtnText>{props.children}</BtnText>
   </Button>
 )
@@ -291,11 +335,13 @@ Btn.propTypes = {
   icon: PropTypes.element,
   iconAlign: PropTypes.oneOf(Object.keys(iconAligns)),
   innerRef: PropTypes.func,
+  loading: PropTypes.bool,
   size: PropTypes.oneOf(Object.keys(sizes))
 }
 Btn.defaultProps = {
   appearance: appearances.primary,
   disabled: false,
+  loading: false,
   size: sizes.medium
 }
 Btn.contextTypes = {
