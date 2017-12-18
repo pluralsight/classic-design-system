@@ -302,6 +302,7 @@ const buttonHtmlPropsWhitelist = [
   'className',
   'style',
   'title',
+  'tabIndex',
   /^aria-/,
   /^data-/
 ]
