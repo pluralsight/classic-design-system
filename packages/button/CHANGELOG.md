@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.1.0"></a>
+# [10.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.0.0...@pluralsight/ps-design-system-button@10.1.0) (2017-12-18)
+
+
+### Features
+
+* **button:** add loading indicator replacement for icon ([9217a8f](https://github.com/pluralsight/design-system/commit/9217a8f))
+* **button:** disable button when loading ([1d1584a](https://github.com/pluralsight/design-system/commit/1d1584a))
+* **button:** maintain width when loading without icon ([f4d94d8](https://github.com/pluralsight/design-system/commit/f4d94d8))
+* **button:** make loading state theme aware ([97e77de](https://github.com/pluralsight/design-system/commit/97e77de))
+
+
+
+
 <a name="10.0.0"></a>
 # [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@9.5.0...@pluralsight/ps-design-system-button@10.0.0) (2017-12-07)
 

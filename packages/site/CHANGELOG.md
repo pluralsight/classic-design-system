@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.17.0"></a>
+# [9.17.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.16.3...@pluralsight/ps-design-system-site@9.17.0) (2017-12-18)
+
+
+### Bug Fixes
+
+* **site:** view toggle title ([c5e3b5f](https://github.com/pluralsight/design-system/commit/c5e3b5f))
+
+
+### Features
+
+* **site:** add view toggle ref ([e6d627b](https://github.com/pluralsight/design-system/commit/e6d627b))
+
+
+
+
 <a name="9.16.3"></a>
 ## [9.16.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.16.2...@pluralsight/ps-design-system-site@9.16.3) (2017-12-13)
 
