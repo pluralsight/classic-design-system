@@ -1267,7 +1267,7 @@ exports[`Storyshots loading flat 1`] = `
 >
   <button
     data-css-1iw6w8k=""
-    disabled={false}
+    disabled={true}
     style={Object {}}
   >
     <div
@@ -1308,7 +1308,8 @@ exports[`Storyshots loading large 1`] = `
 >
   <button
     data-css-1r9v2kd=""
-    disabled={false}
+    disabled={true}
+    onClick={[Function]}
     style={Object {}}
   >
     <div
@@ -1349,7 +1350,7 @@ exports[`Storyshots loading lone icon 1`] = `
 >
   <button
     data-css-qijcsc=""
-    disabled={false}
+    disabled={true}
     style={Object {}}
   >
     <div
@@ -1388,7 +1389,8 @@ exports[`Storyshots loading medium 1`] = `
 >
   <button
     data-css-bzft25=""
-    disabled={false}
+    disabled={true}
+    onClick={[Function]}
     style={Object {}}
   >
     <div
@@ -1459,7 +1461,7 @@ exports[`Storyshots loading primary 1`] = `
 >
   <button
     data-css-1r9v2kd=""
-    disabled={false}
+    disabled={true}
     style={Object {}}
   >
     <div
@@ -1500,7 +1502,8 @@ exports[`Storyshots loading small 1`] = `
 >
   <button
     data-css-5t7u9e=""
-    disabled={false}
+    disabled={true}
+    onClick={[Function]}
     style={Object {}}
   >
     <div
@@ -1541,7 +1544,7 @@ exports[`Storyshots loading stroke 1`] = `
 >
   <button
     data-css-1puuk9v=""
-    disabled={false}
+    disabled={true}
     style={Object {}}
   >
     <div
@@ -1582,7 +1585,8 @@ exports[`Storyshots loading xSmall 1`] = `
 >
   <button
     data-css-1l8qhvd=""
-    disabled={false}
+    disabled={true}
+    onClick={[Function]}
     style={Object {}}
   >
     <div

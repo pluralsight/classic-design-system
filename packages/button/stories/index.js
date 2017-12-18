@@ -131,7 +131,7 @@ const loadingExample = storiesOf('loading', module).addDecorator(
 )
 Object.keys(Button.sizes).forEach(size =>
   loadingExample.add(size, _ => (
-    <Button size={size} loading>
+    <Button onClick={action('is disabled')} size={size} loading>
       Loading...
     </Button>
   ))

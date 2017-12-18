@@ -315,7 +315,8 @@ class Button extends React.Component {
       {
         ...(this.props.innerRef ? { ref: this.props.innerRef } : {}),
         ...getButtonStyles(this.props),
-        ...whitelistProps(this.props, buttonHtmlPropsWhitelist)
+        ...whitelistProps(this.props, buttonHtmlPropsWhitelist),
+        disabled: this.props.disabled || this.props.loading
       },
       this.props.children
     )
@@ -356,7 +357,6 @@ class Btn extends React.Component {
     )
   }
 }
-// TODO: disable when loading
 // TODO: theme aware
 
 Btn.propTypes = {
