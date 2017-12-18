@@ -165,10 +165,29 @@ export default withServerProps(_ => (
         ]}
       />
 
+      <SectionHeading>Loading</SectionHeading>
+      <P>
+        To show a spinner, pass a <code>loading</code> flag to your button. By
+        default, it replaces your icon. If no icon is present, it replaces your
+        text.
+      </P>
+      <Example.React
+        orient="vertical"
+        includes={{ Button }}
+        codes={[
+          `
+<Button
+  icon={<Icon id={Icon.ids.user} />}
+  loading
+>Loading...</Button>
+`
+        ]}
+      />
+
       <SectionHeading>Light theme</SectionHeading>
       <P>
         To specify the light theme, wrap your components in a <code>Theme</code>{' '}
-        componet.
+        component.
       </P>
       <Example.React
         orient="vertical"
