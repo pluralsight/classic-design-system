@@ -129,7 +129,6 @@ const propsExample = storiesOf('props pass through', module)
 const loadingExample = storiesOf('loading', module).addDecorator(
   themeDecorator(addons)
 )
-
 Object.keys(Button.sizes).forEach(size =>
   loadingExample.add(size, _ => (
     <Button size={size} loading>
@@ -137,7 +136,6 @@ Object.keys(Button.sizes).forEach(size =>
     </Button>
   ))
 )
-
 Object.keys(Button.appearances).forEach(appearance =>
   loadingExample.add(appearance, _ => (
     <Button appearance={appearance} size={Button.sizes.large} loading>
@@ -145,3 +143,36 @@ Object.keys(Button.appearances).forEach(appearance =>
     </Button>
   ))
 )
+loadingExample.add('lone icon', _ => (
+  <Button
+    icon={<Icon id={Icon.ids.check} />}
+    size={Button.sizes.large}
+    loading
+  />
+))
+class SwitchToLoading extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { loading: false }
+  }
+  componentDidMount() {
+    this.timeout = setTimeout(_ => {
+      this.setState({ loading: !this.state.loading })
+    }, 500)
+  }
+  componentWillUnmount() {
+    clearInterval(this.timeout)
+  }
+  render() {
+    return React.cloneElement(this.props.children, {
+      loading: this.state.loading
+    })
+  }
+}
+loadingExample.add('no icon, hidden text', _ => (
+  <SwitchToLoading>
+    <Button size={Button.sizes.large} loading>
+      Text doesnt show when loading if no icon
+    </Button>
+  </SwitchToLoading>
+))

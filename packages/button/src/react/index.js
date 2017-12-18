@@ -184,8 +184,10 @@ const styleIconAlignIconContainer = ({ iconAlign }) =>
         marginRight: core.layout.spacingXSmall
       }
 
-const styleIconOnlyIconContainer = ({ iconOnly }) =>
-  iconOnly ? { justifyContent: 'center', width: '100%', margin: 0 } : null
+const styleIconOnlyIconContainer = ({ iconOnly, isLoadingWithNoText }) =>
+  iconOnly || isLoadingWithNoText
+    ? { justifyContent: 'center', width: '100%', margin: 0 }
+    : null
 
 const IconContainer = glamorous.div(
   {
@@ -261,6 +263,7 @@ const renderIcon = props =>
     <IconContainer
       iconAlign={props.iconAlign}
       iconOnly={React.Children.count(props.children) <= 0}
+      isLoadingNoText={props.isLoadingNoText}
     >
       <Icon size={mapIconSize(props)}>
         <LoadingIndicator appearance={props.appearance} />
@@ -270,6 +273,7 @@ const renderIcon = props =>
     <IconContainer
       iconAlign={props.iconAlign}
       iconOnly={React.Children.count(props.children) <= 0}
+      isLoadingNoText={props.isLoadingNoText}
     >
       {React.cloneElement(props.icon, {
         size: mapIconSize(props)
@@ -318,16 +322,42 @@ class Button extends React.Component {
   }
 }
 
-const Btn = (props, context) => (
-  <Button
-    {...props}
-    themeName={context.themeName}
-    iconOnly={React.Children.count(props.children) <= 0}
-  >
-    {renderIcon({ ...props, themeName: context.themeName })}
-    <BtnText>{props.children}</BtnText>
-  </Button>
-)
+class Btn extends React.Component {
+  componentWillReceiveProps(nextProps) {
+    if (
+      nextProps.loading &&
+      !this.props.loading &&
+      !this.props.icon &&
+      this.el
+    ) {
+      this.nonLoadingWidth = this.el.offsetWidth
+    } else {
+      this.nonLoadingWidth = null
+    }
+  }
+  render() {
+    const { context, props } = this
+    const isLoadingWithNoText = !!this.nonLoadingWidth
+    return (
+      <Button
+        {...props}
+        iconOnly={React.Children.count(props.children) <= 0}
+        innerRef={el => (this.el = el)}
+        style={isLoadingWithNoText ? { width: this.nonLoadingWidth } : {}}
+        themeName={context.themeName}
+      >
+        {renderIcon({
+          ...props,
+          isLoadingWithNoText,
+          themeName: context.themeName
+        })}
+        {!isLoadingWithNoText && <BtnText>{props.children}</BtnText>}
+      </Button>
+    )
+  }
+}
+// TODO: disable when loading
+// TODO: theme aware
 
 Btn.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(appearances)),
