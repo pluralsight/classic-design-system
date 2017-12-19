@@ -21,7 +21,7 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^8.1.0",
+    "@pluralsight/ps-design-system-button": "^10.2.1",
     "@pluralsight/ps-design-system-core": "^2.4.7",
     "@pluralsight/ps-design-system-icon": "^7.1.0",
     "@pluralsight/ps-design-system-normalize": "^3.0.29",

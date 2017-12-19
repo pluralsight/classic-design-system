@@ -26,7 +26,7 @@ export default _ => (
       }}
     >
       <Button
-        size="large"
+        size={Button.sizes.large}
         onClick={_ => alert("It's working")}
         icon={<Icon id="gear" />}
       >
