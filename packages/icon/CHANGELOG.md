@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.2.3"></a>
+## [8.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.2.2...@pluralsight/ps-design-system-icon@8.2.3) (2017-12-19)
+
+
+### Bug Fixes
+
+* **icon:** npmignore babelrc ([e7166e5](https://github.com/pluralsight/design-system/commit/e7166e5))
+
+
+
+
 <a name="8.2.2"></a>
 ## [8.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.2.1...@pluralsight/ps-design-system-icon@8.2.2) (2017-12-19)
 

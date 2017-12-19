@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-link",
-  "version": "5.5.2",
+  "version": "5.5.3",
   "description": "Design System component for link/anchor ui",
   "main": "index.js",
   "typings": "./react.d.ts",
@@ -28,7 +28,7 @@
     "prop-types": "^15.6.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.3",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.4",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",
     "@storybook/react": "3.2.14",
