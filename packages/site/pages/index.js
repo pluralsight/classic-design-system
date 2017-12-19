@@ -100,7 +100,7 @@ export default withServerProps(_ => (
         <Point title="Purpose">
           The Design System strives toward a cohesive design language for
           Pluralsight’s products, a shared vocabulary for our teams, and basic
-          building blocks to accelarate development.
+          building blocks to accelerate development.
         </Point>
         <Point title="Core">
           The Core consists of predefined variables for basic design elements
