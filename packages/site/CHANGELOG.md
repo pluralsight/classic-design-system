@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.18.0"></a>
+# [9.18.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.17.0...@pluralsight/ps-design-system-site@9.18.0) (2017-12-19)
+
+
+### Features
+
+* **site:** button loading ref ([87e6534](https://github.com/pluralsight/design-system/commit/87e6534))
+
+
+
+
 <a name="9.17.0"></a>
 # [9.17.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.16.3...@pluralsight/ps-design-system-site@9.17.0) (2017-12-18)
 

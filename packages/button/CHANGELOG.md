@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.2.0"></a>
+# [10.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.1.0...@pluralsight/ps-design-system-button@10.2.0) (2017-12-19)
+
+
+### Features
+
+* **button:** Add tabIndex to attr whitelist ([bfb815d](https://github.com/pluralsight/design-system/commit/bfb815d))
+
+
+
+
 <a name="10.1.0"></a>
 # [10.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.0.0...@pluralsight/ps-design-system-button@10.1.0) (2017-12-18)
 
