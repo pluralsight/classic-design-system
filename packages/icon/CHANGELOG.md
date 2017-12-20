@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.3.0"></a>
+# [8.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.2.3...@pluralsight/ps-design-system-icon@8.3.0) (2017-12-20)
+
+
+### Features
+
+* **icon:** add accessibility labels ([e088c82](https://github.com/pluralsight/design-system/commit/e088c82))
+
+
+
+
 <a name="8.2.3"></a>
 ## [8.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.2.2...@pluralsight/ps-design-system-icon@8.2.3) (2017-12-19)
 

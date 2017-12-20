@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.18.2"></a>
+## [9.18.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.18.1...@pluralsight/ps-design-system-site@9.18.2) (2017-12-20)
+
+
+### Bug Fixes
+
+* **site:** typo ([bc2fcda](https://github.com/pluralsight/design-system/commit/bc2fcda))
+
+
+
+
 <a name="9.18.1"></a>
 ## [9.18.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.18.0...@pluralsight/ps-design-system-site@9.18.1) (2017-12-19)
 
