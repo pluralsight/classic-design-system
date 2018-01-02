@@ -24,10 +24,21 @@ const work = {
       helpers: ['Mentors']
     }
   ],
-  next: [],
-  future: [
+  next: [
     {
-      title: 'Tooltip / Popover',
+      title: 'Non-React Discovery',
+      tags: ['Component']
+    },
+    {
+      title: 'Contribution Discovery',
+      tags: ['Component']
+    },
+    {
+      title: 'Angular prototype',
+      tags: ['Component']
+    },
+    {
+      title: 'Tab (vNext)',
       tags: ['Component']
     },
     {
@@ -35,15 +46,33 @@ const work = {
       tags: ['Component']
     },
     {
-      title: 'Writing Style',
-      tags: ['Guidelines']
-    },
-    {
-      title: 'Text (vNext)',
+      title: 'Switch',
       tags: ['Component']
     },
     {
-      title: 'Tab (vNext)',
+      title: 'Tooltip / Popover',
+      tags: ['Component']
+    },
+    {
+      title: 'Voice and Tone',
+      tags: ['Guidelines']
+    },
+    {
+      title: 'Iconography',
+      tags: ['Guidelines']
+    },
+    {
+      title: 'Reporting',
+      tags: ['Guidelines']
+    },
+    {
+      title: 'Usage Dashboard',
+      tags: ['Tool']
+    }
+  ],
+  future: [
+    {
+      title: 'Text (vNext)',
       tags: ['Component']
     },
     {
@@ -56,10 +85,6 @@ const work = {
     },
     {
       title: 'Breadcrumb',
-      tags: ['Component']
-    },
-    {
-      title: 'Switch',
       tags: ['Component']
     },
     {
