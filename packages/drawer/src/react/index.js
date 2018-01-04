@@ -129,7 +129,7 @@ class Drawer extends React.Component {
       <div>
         <DrawerBase isOpen={isOpen} onClick={this.handleClick}>
           <DrawerPanelContent themeName={themeName}>
-            <Div marginTop={-1} padding={`0 ${core.layout.spacingMedium}`}>
+            <Div padding={`0 ${core.layout.spacingMedium}`}>
               {this.props.base}
             </Div>
           </DrawerPanelContent>
