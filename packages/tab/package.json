@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-tab",
-  "version": "7.2.6",
+  "version": "7.2.7",
   "description": "Design system component for tab list ui",
   "main": "index.js",
   "scripts": {

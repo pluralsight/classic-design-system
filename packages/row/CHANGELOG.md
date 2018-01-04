@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.3.9...@pluralsight/ps-design-system-row@2.4.0) (2018-01-04)
+
+
+### Features
+
+* **row:** remove border top for first row ([39ef5a5](https://github.com/pluralsight/design-system/commit/39ef5a5))
+
+
+
+
 <a name="2.3.9"></a>
 ## [2.3.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.3.8...@pluralsight/ps-design-system-row@2.3.9) (2017-12-20)
 
