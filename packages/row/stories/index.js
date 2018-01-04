@@ -382,3 +382,32 @@ Object.keys(Row.sizes).forEach(size =>
     </Drawer>
   ))
 )
+
+const stackStory = storiesOf('in a stack', module)
+  .addDecorator(themeDecorator(addons))
+  .add('no top border on first row', _ => (
+    <div style={{ padding: core.layout.spacingLarge }}>
+      <Row
+        title="Course thing you do"
+        metadata1={['1m 46s']}
+        image={
+          <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+        }
+        actionBar={[
+          <Row.Action icon={<Icon id={Icon.ids.more} />} key="more" />
+        ]}
+        actionBarVisible
+      />
+      <Row
+        title="Course thing you do"
+        metadata1={['1m 46s']}
+        image={
+          <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+        }
+        actionBar={[
+          <Row.Action icon={<Icon id={Icon.ids.more} />} key="more" />
+        ]}
+        actionBarVisible
+      />
+    </div>
+  ))

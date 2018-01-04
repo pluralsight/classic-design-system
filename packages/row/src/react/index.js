@@ -24,6 +24,9 @@ const Row = glamorous.div({
   borderTop: `1px solid ${core.colors.gray04}`,
   ':hover div, :active div': {
     opacity: 1
+  },
+  ':first-of-type': {
+    borderTop: 'none'
   }
 })
 
