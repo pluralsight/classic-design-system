@@ -11,9 +11,9 @@ const List = glamorous.div(
     height: '64px'
   },
   ({ themeName }) => ({
-    borderBottom: `1px solid ${themeName === themeNames.light
-      ? core.colors.gray02
-      : core.colors.gray03}`
+    borderBottom: `1px solid ${
+      themeName === themeNames.light ? core.colors.gray02 : core.colors.gray04
+    }`
   })
 )
 
