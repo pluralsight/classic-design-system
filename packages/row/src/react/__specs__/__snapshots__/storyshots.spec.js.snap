@@ -4,8 +4,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -13,7 +12,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -46,6 +45,8 @@ exports[`Storyshots actionBar locked visible 1`] = `
           className="css-otejxm"
         >
           <svg
+            aria-label="bookmark icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -64,8 +65,7 @@ exports[`Storyshots actionBar long title 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -73,7 +73,7 @@ exports[`Storyshots actionBar long title 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -99,6 +99,8 @@ exports[`Storyshots actionBar long title 1`] = `
           className="css-otejxm"
         >
           <svg
+            aria-label="bookmark icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -117,8 +119,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -126,7 +127,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -159,6 +160,8 @@ exports[`Storyshots actionBar long title with image 1`] = `
           className="css-otejxm"
         >
           <svg
+            aria-label="bookmark icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -177,8 +180,7 @@ exports[`Storyshots actionBar one action 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -186,7 +188,7 @@ exports[`Storyshots actionBar one action 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -212,6 +214,8 @@ exports[`Storyshots actionBar one action 1`] = `
           className="css-otejxm"
         >
           <svg
+            aria-label="bookmark icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -230,8 +234,7 @@ exports[`Storyshots combo everything 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -239,7 +242,7 @@ exports[`Storyshots combo everything 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -275,6 +278,8 @@ exports[`Storyshots combo everything 1`] = `
               className="css-195ztb"
             >
               <svg
+                aria-label="play circle icon"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -378,6 +383,8 @@ exports[`Storyshots combo everything 1`] = `
           className="css-otejxm"
         >
           <svg
+            aria-label="bookmark icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -394,6 +401,8 @@ exports[`Storyshots combo everything 1`] = `
           className="css-otejxm"
         >
           <svg
+            aria-label="gear icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -410,6 +419,8 @@ exports[`Storyshots combo everything 1`] = `
           className="css-otejxm"
         >
           <svg
+            aria-label="more icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -428,8 +439,7 @@ exports[`Storyshots fullOverlay element 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -437,7 +447,7 @@ exports[`Storyshots fullOverlay element 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -479,8 +489,7 @@ exports[`Storyshots fullOverlay link 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -488,7 +497,7 @@ exports[`Storyshots fullOverlay link 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -534,8 +543,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -543,7 +551,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -571,6 +579,8 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
               className="css-195ztb"
             >
               <svg
+                aria-label="play circle icon"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -600,8 +610,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -609,7 +618,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -645,6 +654,8 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
               className="css-195ztb"
             >
               <svg
+                aria-label="play circle icon"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -674,8 +685,7 @@ exports[`Storyshots image link 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -683,7 +693,7 @@ exports[`Storyshots image link 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -731,8 +741,7 @@ exports[`Storyshots image no image 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -740,7 +749,7 @@ exports[`Storyshots image no image 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -773,8 +782,7 @@ exports[`Storyshots image no image with overlay 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -782,7 +790,7 @@ exports[`Storyshots image no image with overlay 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -815,8 +823,7 @@ exports[`Storyshots image small image 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -824,7 +831,7 @@ exports[`Storyshots image small image 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -864,8 +871,7 @@ exports[`Storyshots image tall image 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -873,7 +879,7 @@ exports[`Storyshots image tall image 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -913,8 +919,7 @@ exports[`Storyshots image wide image 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -922,7 +927,7 @@ exports[`Storyshots image wide image 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -962,8 +967,7 @@ exports[`Storyshots image with image 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -971,7 +975,7 @@ exports[`Storyshots image with image 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1011,8 +1015,7 @@ exports[`Storyshots image with image with overlay 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1020,7 +1023,7 @@ exports[`Storyshots image with image with overlay 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1071,8 +1074,7 @@ exports[`Storyshots in drawer medium 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1080,7 +1082,7 @@ exports[`Storyshots in drawer medium 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1133,6 +1135,8 @@ exports[`Storyshots in drawer medium 1`] = `
                   className="css-otejxm"
                 >
                   <svg
+                    aria-label="more icon"
+                    role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -1160,6 +1164,8 @@ exports[`Storyshots in drawer medium 1`] = `
               className="css-otejxm"
             >
               <svg
+                aria-label="caret down icon"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -1191,8 +1197,7 @@ exports[`Storyshots in drawer small 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1200,7 +1205,7 @@ exports[`Storyshots in drawer small 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1246,6 +1251,8 @@ exports[`Storyshots in drawer small 1`] = `
                   className="css-otejxm"
                 >
                   <svg
+                    aria-label="more icon"
+                    role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -1273,6 +1280,8 @@ exports[`Storyshots in drawer small 1`] = `
               className="css-otejxm"
             >
               <svg
+                aria-label="caret down icon"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -1304,8 +1313,7 @@ exports[`Storyshots metadata link 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1313,7 +1321,7 @@ exports[`Storyshots metadata link 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1354,8 +1362,7 @@ exports[`Storyshots metadata long links 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1363,7 +1370,7 @@ exports[`Storyshots metadata long links 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1442,8 +1449,7 @@ exports[`Storyshots metadata long strings 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1451,7 +1457,7 @@ exports[`Storyshots metadata long strings 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1506,8 +1512,7 @@ exports[`Storyshots metadata long strings with image 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1515,7 +1520,7 @@ exports[`Storyshots metadata long strings with image 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1577,8 +1582,7 @@ exports[`Storyshots metadata string 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1586,7 +1590,7 @@ exports[`Storyshots metadata string 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1619,8 +1623,7 @@ exports[`Storyshots metadata super long first string 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1628,7 +1631,7 @@ exports[`Storyshots metadata super long first string 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1690,8 +1693,7 @@ exports[`Storyshots metadata two lines 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1699,7 +1701,7 @@ exports[`Storyshots metadata two lines 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1763,8 +1765,7 @@ exports[`Storyshots progress 0 progress 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1772,7 +1773,7 @@ exports[`Storyshots progress 0 progress 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1803,8 +1804,7 @@ exports[`Storyshots progress 66.6667 progress 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1812,7 +1812,7 @@ exports[`Storyshots progress 66.6667 progress 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1851,8 +1851,7 @@ exports[`Storyshots progress 100 progress 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1860,7 +1859,7 @@ exports[`Storyshots progress 100 progress 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1899,8 +1898,7 @@ exports[`Storyshots progress no image 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1908,7 +1906,7 @@ exports[`Storyshots progress no image 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1932,8 +1930,7 @@ exports[`Storyshots size medium 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1941,7 +1938,7 @@ exports[`Storyshots size medium 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -1981,8 +1978,7 @@ exports[`Storyshots size small 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -1990,7 +1986,7 @@ exports[`Storyshots size small 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -2023,8 +2019,7 @@ exports[`Storyshots title link 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -2032,7 +2027,7 @@ exports[`Storyshots title link 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -2064,8 +2059,7 @@ exports[`Storyshots title medium long title 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -2073,7 +2067,7 @@ exports[`Storyshots title medium long title 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -2113,8 +2107,7 @@ exports[`Storyshots title small long title 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -2122,7 +2115,7 @@ exports[`Storyshots title small long title 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -2155,8 +2148,7 @@ exports[`Storyshots title string 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -2164,7 +2156,7 @@ exports[`Storyshots title string 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
