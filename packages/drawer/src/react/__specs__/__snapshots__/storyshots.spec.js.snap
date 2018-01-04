@@ -30,6 +30,7 @@ exports[`Storyshots drawer controlled 1`] = `
         data-css-bzft25=""
         disabled={false}
         onClick={[Function]}
+        style={Object {}}
       >
         <span
           className="css-1en8fmq"
@@ -46,7 +47,7 @@ exports[`Storyshots drawer controlled 1`] = `
             className="css-1lzobj4"
           >
             <div
-              className="css-1g6ond4"
+              className="css-k4qf09"
             >
               <div>
                 Drawer Base Here
@@ -67,6 +68,8 @@ exports[`Storyshots drawer controlled 1`] = `
                   className="css-otejxm"
                 >
                   <svg
+                    aria-label="caret down icon"
+                    role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -128,7 +131,7 @@ exports[`Storyshots drawer default 1`] = `
           className="css-1lzobj4"
         >
           <div
-            className="css-1g6ond4"
+            className="css-k4qf09"
           >
             <div>
               Drawer Base Here
@@ -149,6 +152,8 @@ exports[`Storyshots drawer default 1`] = `
                 className="css-otejxm"
               >
                 <svg
+                  aria-label="caret down icon"
+                  role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -209,10 +214,10 @@ exports[`Storyshots drawer row component with actions 1`] = `
           className="css-1lzobj4"
         >
           <div
-            className="css-1g6ond4"
+            className="css-k4qf09"
           >
             <div
-              className="css-7w4714"
+              className="css-13y9csq"
             >
               <div
                 className="css-js3ti3"
@@ -264,7 +269,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
                   className="css-gmo5z6"
                 >
                   <span
-                    className="css-1tz10dh"
+                    className="css-1kcrbi9"
                   >
                     <span
                       className="css-1ublh7e"
@@ -283,23 +288,25 @@ exports[`Storyshots drawer row component with actions 1`] = `
                     ·
                   </span>
                   <span
-                    className="css-1tz10dh"
+                    className="css-1kcrbi9"
                   >
                     23 hours of cuteness
                   </span>
                 </div>
               </div>
               <div
-                className="css-1keoilf"
+                className="css-h4r20u"
               >
                 <button
-                  className="css-1eg2eyk"
+                  className="css-10dk2o2"
                   onClick={[Function]}
                 >
                   <div
                     className="css-otejxm"
                   >
                     <svg
+                      aria-label="more icon"
+                      role="img"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -327,6 +334,8 @@ exports[`Storyshots drawer row component with actions 1`] = `
                 className="css-otejxm"
               >
                 <svg
+                  aria-label="caret down icon"
+                  role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -388,7 +397,7 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
             className="css-1lzobj4"
           >
             <div
-              className="css-1g6ond4"
+              className="css-k4qf09"
             >
               <div>
                 Drawer is 
@@ -410,6 +419,8 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
                   className="css-otejxm"
                 >
                   <svg
+                    aria-label="caret down icon"
+                    role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -471,7 +482,7 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
           className="css-1lzobj4"
         >
           <div
-            className="css-1g6ond4"
+            className="css-k4qf09"
           >
             <div>
               Base here
@@ -492,6 +503,8 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
                 className="css-otejxm"
               >
                 <svg
+                  aria-label="caret down icon"
+                  role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -554,10 +567,10 @@ exports[`Storyshots drawer with row component 1`] = `
           className="css-1lzobj4"
         >
           <div
-            className="css-1g6ond4"
+            className="css-k4qf09"
           >
             <div
-              className="css-7w4714"
+              className="css-13y9csq"
             >
               <div
                 className="css-js3ti3"
@@ -578,7 +591,7 @@ exports[`Storyshots drawer with row component 1`] = `
                   className="css-gmo5z6"
                 >
                   <span
-                    className="css-1tz10dh"
+                    className="css-1kcrbi9"
                   >
                     Kitten McCatbuns
                   </span>
@@ -589,22 +602,24 @@ exports[`Storyshots drawer with row component 1`] = `
                     ·
                   </span>
                   <span
-                    className="css-1tz10dh"
+                    className="css-1kcrbi9"
                   >
                     23 hours of cuteness
                   </span>
                 </div>
               </div>
               <div
-                className="css-1bg3chk"
+                className="css-2c174p"
               >
                 <button
-                  className="css-1eg2eyk"
+                  className="css-10dk2o2"
                 >
                   <div
                     className="css-otejxm"
                   >
                     <svg
+                      aria-label="more icon"
+                      role="img"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -632,6 +647,8 @@ exports[`Storyshots drawer with row component 1`] = `
                 className="css-otejxm"
               >
                 <svg
+                  aria-label="caret down icon"
+                  role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
