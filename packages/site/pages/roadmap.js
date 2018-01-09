@@ -19,16 +19,16 @@ import {
 const work = {
   now: [
     {
+      title: 'Non-React Discovery',
+      tags: ['Component']
+    },
+    {
       title: 'Avatar',
       tags: ['Component'],
       helpers: ['Mentors']
     }
   ],
   next: [
-    {
-      title: 'Non-React Discovery',
-      tags: ['Component']
-    },
     {
       title: 'Contribution Discovery',
       tags: ['Component']
