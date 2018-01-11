@@ -313,6 +313,7 @@ const isPropInWhitelist = (whitelist, key) =>
     regex =>
       typeof regex === 'string' ? new RegExp(regex).test(key) : regex.test(key)
   )
+
 const whitelistProps = (props, whitelist) =>
   Object.keys(props).reduce((newProps, key) => {
     if (isPropInWhitelist(whitelist, key)) newProps[key] = props[key]
