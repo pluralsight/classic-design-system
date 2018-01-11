@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-button",
-  "version": "10.3.1",
+  "version": "10.3.2",
   "description": "Design System component for button ui",
   "main": "index.js",
   "scripts": {
@@ -24,14 +24,14 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.0.2",
-    "@pluralsight/ps-design-system-icon": "^8.4.2",
+    "@pluralsight/ps-design-system-icon": "^8.4.3",
     "@pluralsight/ps-design-system-theme": "^1.1.0",
     "glamorous": "^4.1.0",
     "polished": "^1.7.0",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.8",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.9",
     "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",
