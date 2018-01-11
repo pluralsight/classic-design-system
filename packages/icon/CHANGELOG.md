@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.4.0"></a>
+# [8.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.3.0...@pluralsight/ps-design-system-icon@8.4.0) (2018-01-11)
+
+
+### Features
+
+* **icon:** add calendar, ccFill, and envelope icons ([58f59b1](https://github.com/pluralsight/design-system/commit/58f59b1))
+
+
+
+
 <a name="8.3.0"></a>
 # [8.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.2.3...@pluralsight/ps-design-system-icon@8.3.0) (2017-12-20)
 
