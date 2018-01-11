@@ -298,6 +298,7 @@ const BtnText = glamorous.span({
 const buttonHtmlPropsWhitelist = [
   'href',
   'onClick',
+  'onMouseDown',
   'disabled',
   'className',
   'style',
