@@ -3,16 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-<a name="10.3.0"></a>
-# [10.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.2.3...@pluralsight/ps-design-system-button@10.3.0) (2018-01-11)
-
-
-### Features
-
-* **button:** add onMouseDown to props whitelist ([3d9ec00](https://github.com/pluralsight/design-system/commit/3d9ec00))
+<a name="1.0.1"></a>
+## 1.0.1 (2018-01-11)
 
 
 
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-circularprogress
 
 <a name="10.2.3"></a>
 ## [10.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.2.2...@pluralsight/ps-design-system-button@10.2.3) (2018-01-11)
