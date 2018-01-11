@@ -20,6 +20,8 @@ exports[`Storyshots appearance black 1`] = `
     className="css-1tiz5r9"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -51,6 +53,8 @@ exports[`Storyshots appearance blue 1`] = `
     className="css-48v2ba"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -82,6 +86,8 @@ exports[`Storyshots appearance bone 1`] = `
     className="css-1v5r0q7"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -113,6 +119,8 @@ exports[`Storyshots appearance gray01 1`] = `
     className="css-qfdobr"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -144,6 +152,8 @@ exports[`Storyshots appearance gray02 1`] = `
     className="css-1iwwm4u"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -175,6 +185,8 @@ exports[`Storyshots appearance gray03 1`] = `
     className="css-1ct2z2u"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -206,6 +218,8 @@ exports[`Storyshots appearance gray04 1`] = `
     className="css-p9j7jz"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -237,6 +251,8 @@ exports[`Storyshots appearance gray05 1`] = `
     className="css-1q7hgfl"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -268,6 +284,8 @@ exports[`Storyshots appearance gray06 1`] = `
     className="css-4oz4oq"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -299,6 +317,8 @@ exports[`Storyshots appearance green 1`] = `
     className="css-1s05snf"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -330,6 +350,8 @@ exports[`Storyshots appearance greenLight 1`] = `
     className="css-185g5oo"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -361,6 +383,8 @@ exports[`Storyshots appearance orange 1`] = `
     className="css-5z1xiy"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -392,6 +416,8 @@ exports[`Storyshots appearance orangeLight 1`] = `
     className="css-1vnhyc8"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -423,6 +449,8 @@ exports[`Storyshots appearance pink 1`] = `
     className="css-15auvj7"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -454,6 +482,8 @@ exports[`Storyshots appearance red 1`] = `
     className="css-rst0ce"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -485,6 +515,8 @@ exports[`Storyshots appearance white 1`] = `
     className="css-10dvu6c"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -516,6 +548,8 @@ exports[`Storyshots appearance yellow 1`] = `
     className="css-3pplc0"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -547,6 +581,8 @@ exports[`Storyshots id account 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="account icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -578,6 +614,8 @@ exports[`Storyshots id bookmark 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="bookmark icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -609,6 +647,8 @@ exports[`Storyshots id bookmarkFill 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="bookmarked icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -640,6 +680,8 @@ exports[`Storyshots id briefcase 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="briefcase icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -671,11 +713,46 @@ exports[`Storyshots id browse 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="browse icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M4 8h16c1.1046 0 2 .8954 2 2v10c0 1.1046-.8954 2-2 2H4c-1.1046 0-2-.8954-2-2V10c0-1.1046.8954-2 2-2zm0 2v10h16V10H4zm6 2l5 3-5 3v-6zM6 5h12c1.1046 0 2 .8954 2 2H4c0-1.1046.8954-2 2-2zm2-3h8c1.1046 0 2 .8954 2 2H6c0-1.1046.8954-2 2-2z"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots id calendar 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-6f8y6t"
+  >
+    <svg
+      aria-label="calendar icon"
+      role="image"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M8 7H4v3h16V7h-4v1.5c0 .276-.224.5-.5.5h-1c-.276 0-.5-.224-.5-.5V7h-4v1.5c0 .276-.224.5-.5.5h-1c-.276 0-.5-.224-.5-.5V7zm2-2h4V3.5c0-.276.224-.5.5-.5h1c.276 0 .5.224.5.5V5h5c.5523 0 1 .4477 1 1v14c0 .5523-.4477 1-1 1H3c-.5523 0-1-.4477-1-1V6c0-.5523.4477-1 1-1h5V3.5c0-.276.224-.5.5-.5h1c.276 0 .5.224.5.5V5zm10 7H4v7h16v-7z"
       />
     </svg>
   </div>
@@ -702,6 +779,8 @@ exports[`Storyshots id caretDown 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="caret down icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -733,6 +812,8 @@ exports[`Storyshots id caretLeft 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="caret left icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -764,6 +845,8 @@ exports[`Storyshots id caretRight 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="caret right icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -795,11 +878,47 @@ exports[`Storyshots id caretUp 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="caret up icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M12 9l-5 5 1.41 1.41L12 11.83l3.59 3.58L17 14"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots id ccFill 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-6f8y6t"
+  >
+    <svg
+      aria-label="close captioned icon"
+      role="image"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2 3h20c.5523 0 1 .4477 1 1v16c0 .5523-.4477 1-1 1H2c-.5523 0-1-.4477-1-1V4c0-.5523.4477-1 1-1zm6.524 13.132c1.485 0 2.365-.528 3.157-1.375l-1.078-1.089c-.605.55-1.144.902-2.024.902-1.32 0-2.233-1.1-2.233-2.42 0-1.342.935-2.42 2.233-2.42.77 0 1.375.33 1.969.869l1.078-1.243c-.715-.704-1.584-1.188-3.036-1.188-2.365 0-4.015 1.793-4.015 3.982 0 2.233 1.683 3.982 3.949 3.982zm7.898 0c1.485 0 2.365-.528 3.157-1.375l-1.078-1.089c-.605.55-1.144.902-2.024.902-1.32 0-2.233-1.1-2.233-2.42 0-1.342.935-2.42 2.233-2.42.77 0 1.375.33 1.969.869l1.078-1.243c-.715-.704-1.584-1.188-3.036-1.188-2.365 0-4.015 1.793-4.015 3.982 0 2.233 1.683 3.982 3.949 3.982z"
+        id="a"
       />
     </svg>
   </div>
@@ -826,6 +945,8 @@ exports[`Storyshots id channel 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="channel icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -857,6 +978,8 @@ exports[`Storyshots id chat 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="chat icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -888,6 +1011,8 @@ exports[`Storyshots id check 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -919,6 +1044,8 @@ exports[`Storyshots id close 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="close icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -950,6 +1077,8 @@ exports[`Storyshots id code 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="code icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -981,6 +1110,8 @@ exports[`Storyshots id dashboard 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="dashboard icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1012,11 +1143,46 @@ exports[`Storyshots id download 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="download icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M16.707 9.707L12 14.415 7.293 9.707l1.414-1.414L11 10.586V2h2v8.586l2.293-2.293 1.414 1.414zM15.586 14H22v8H2v-8h6.414l2 2h3.172l2-2zM20 20v-4h-3.586l-2 2H9.586l-2-2H4v4h16z"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots id envelope 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-6f8y6t"
+  >
+    <svg
+      aria-label="envelope icon"
+      role="image"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5.41421356,6 L12,12.5857864 L18.5857864,6 L5.41421356,6 Z M20,7.41421356 L12.3535534,15.0606602 C12.1582912,15.2559223 11.8417088,15.2559223 11.6464466,15.0606602 L4,7.41421356 L4,18 L20,18 L20,7.41421356 Z M3,4 L21,4 C21.5522847,4 22,4.44771525 22,5 L22,19 C22,19.5522847 21.5522847,20 21,20 L3,20 C2.44771525,20 2,19.5522847 2,19 L2,5 C2,4.44771525 2.44771525,4 3,4 Z"
       />
     </svg>
   </div>
@@ -1043,6 +1209,8 @@ exports[`Storyshots id gear 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="gear icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1074,6 +1242,8 @@ exports[`Storyshots id hand 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="hand icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1105,6 +1275,8 @@ exports[`Storyshots id home 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="hand icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1136,6 +1308,8 @@ exports[`Storyshots id info 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="info icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1167,6 +1341,8 @@ exports[`Storyshots id link 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="link icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1198,6 +1374,8 @@ exports[`Storyshots id list 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="list icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1229,6 +1407,8 @@ exports[`Storyshots id lock 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="lock icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1260,6 +1440,8 @@ exports[`Storyshots id logout 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="logout icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1291,6 +1473,8 @@ exports[`Storyshots id menu 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="menu icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1322,6 +1506,8 @@ exports[`Storyshots id mic 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="mic icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1353,6 +1539,8 @@ exports[`Storyshots id more 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="more icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1384,6 +1572,8 @@ exports[`Storyshots id note 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="note icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1415,6 +1605,8 @@ exports[`Storyshots id org 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="org icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1446,6 +1638,8 @@ exports[`Storyshots id path 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="path icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1477,6 +1671,8 @@ exports[`Storyshots id pencil 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="pencil icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1508,6 +1704,8 @@ exports[`Storyshots id play 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="play icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1539,6 +1737,8 @@ exports[`Storyshots id playCircle 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="play circle icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1570,6 +1770,8 @@ exports[`Storyshots id plus 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="plus icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1601,6 +1803,8 @@ exports[`Storyshots id question 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="question icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1632,6 +1836,8 @@ exports[`Storyshots id report 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="report icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1663,6 +1869,8 @@ exports[`Storyshots id scope 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="scope icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1694,6 +1902,8 @@ exports[`Storyshots id search 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="search icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1725,6 +1935,8 @@ exports[`Storyshots id share 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="share icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1756,6 +1968,8 @@ exports[`Storyshots id test 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="test icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1787,6 +2001,8 @@ exports[`Storyshots id thumb 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="thumbs up icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1819,6 +2035,8 @@ exports[`Storyshots id trash 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="trash icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1850,6 +2068,8 @@ exports[`Storyshots id upload 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="upload icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1881,6 +2101,8 @@ exports[`Storyshots id user 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="user icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1912,6 +2134,8 @@ exports[`Storyshots id warning 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="warning icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1943,6 +2167,8 @@ exports[`Storyshots id window 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="window icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1974,6 +2200,8 @@ exports[`Storyshots size large 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -2005,6 +2233,8 @@ exports[`Storyshots size medium 1`] = `
     className="css-10dvu6c"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -2036,6 +2266,8 @@ exports[`Storyshots size small 1`] = `
     className="css-4oczle"
   >
     <svg
+      aria-label="check icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
