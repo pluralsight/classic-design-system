@@ -364,7 +364,6 @@ class Btn extends React.Component {
     )
   }
 }
-// TODO: theme aware
 
 Btn.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(appearances)),
