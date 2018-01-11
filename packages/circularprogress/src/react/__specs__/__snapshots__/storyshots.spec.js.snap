@@ -1,0 +1,541 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots animation animates to new values 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div>
+    <div
+      data-css-1ie49mc=""
+    >
+      <svg
+        data-css-iwuqnk=""
+        version="1.1"
+        viewBox="0 0 48 48"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="24"
+          cy="24"
+          data-css-1n6oxz3=""
+          r={22}
+        />
+        <circle
+          cx="24"
+          cy="24"
+          data-css-e1ehue=""
+          r={22}
+          strokeDasharray="138.23007675795088 138.23007675795088"
+          strokeDashoffset={138.23007675795088}
+        />
+      </svg>
+    </div>
+    <div
+      style={
+        Object {
+          "color": "#aaaaaa",
+        }
+      }
+    >
+      Value: 
+      0
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots indeterminate medium 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1ie49mc=""
+  >
+    <svg
+      data-css-1txt1eh=""
+      version="1.1"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="24"
+        cy="24"
+        data-css-1n6oxz3=""
+        r={22}
+      />
+      <circle
+        cx="24"
+        cy="24"
+        data-css-e1ehue=""
+        r={22}
+        strokeDasharray="138.23007675795088 138.23007675795088"
+        strokeDashoffset={103.67255756846316}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots indeterminate small 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1abx40i=""
+  >
+    <svg
+      data-css-1txt1eh=""
+      version="1.1"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="24"
+        cy="24"
+        data-css-1n6oxz3=""
+        r={22}
+      />
+      <circle
+        cx="24"
+        cy="24"
+        data-css-e1ehue=""
+        r={22}
+        strokeDasharray="138.23007675795088 138.23007675795088"
+        strokeDashoffset={103.67255756846316}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots size medium 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1ie49mc=""
+  >
+    <svg
+      data-css-iwuqnk=""
+      version="1.1"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="24"
+        cy="24"
+        data-css-1n6oxz3=""
+        r={22}
+      />
+      <circle
+        cx="24"
+        cy="24"
+        data-css-e1ehue=""
+        r={22}
+        strokeDasharray="138.23007675795088 138.23007675795088"
+        strokeDashoffset={34.55751918948772}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots size small 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1abx40i=""
+  >
+    <svg
+      data-css-iwuqnk=""
+      version="1.1"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="24"
+        cy="24"
+        data-css-1n6oxz3=""
+        r={22}
+      />
+      <circle
+        cx="24"
+        cy="24"
+        data-css-e1ehue=""
+        r={22}
+        strokeDasharray="138.23007675795088 138.23007675795088"
+        strokeDashoffset={34.55751918948772}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots value value 0 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1ie49mc=""
+  >
+    <svg
+      data-css-iwuqnk=""
+      version="1.1"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="24"
+        cy="24"
+        data-css-1n6oxz3=""
+        r={22}
+      />
+      <circle
+        cx="24"
+        cy="24"
+        data-css-e1ehue=""
+        r={22}
+        strokeDasharray="138.23007675795088 138.23007675795088"
+        strokeDashoffset={138.23007675795088}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots value value 25 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1ie49mc=""
+  >
+    <svg
+      data-css-iwuqnk=""
+      version="1.1"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="24"
+        cy="24"
+        data-css-1n6oxz3=""
+        r={22}
+      />
+      <circle
+        cx="24"
+        cy="24"
+        data-css-e1ehue=""
+        r={22}
+        strokeDasharray="138.23007675795088 138.23007675795088"
+        strokeDashoffset={103.67255756846316}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots value value 33 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1ie49mc=""
+  >
+    <svg
+      data-css-iwuqnk=""
+      version="1.1"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="24"
+        cy="24"
+        data-css-1n6oxz3=""
+        r={22}
+      />
+      <circle
+        cx="24"
+        cy="24"
+        data-css-e1ehue=""
+        r={22}
+        strokeDasharray="138.23007675795088 138.23007675795088"
+        strokeDashoffset={92.6141514278271}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots value value 50 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1ie49mc=""
+  >
+    <svg
+      data-css-iwuqnk=""
+      version="1.1"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="24"
+        cy="24"
+        data-css-1n6oxz3=""
+        r={22}
+      />
+      <circle
+        cx="24"
+        cy="24"
+        data-css-e1ehue=""
+        r={22}
+        strokeDasharray="138.23007675795088 138.23007675795088"
+        strokeDashoffset={69.11503837897544}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots value value 66 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1ie49mc=""
+  >
+    <svg
+      data-css-iwuqnk=""
+      version="1.1"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="24"
+        cy="24"
+        data-css-1n6oxz3=""
+        r={22}
+      />
+      <circle
+        cx="24"
+        cy="24"
+        data-css-e1ehue=""
+        r={22}
+        strokeDasharray="138.23007675795088 138.23007675795088"
+        strokeDashoffset={46.9982260977033}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots value value 75 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1ie49mc=""
+  >
+    <svg
+      data-css-iwuqnk=""
+      version="1.1"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="24"
+        cy="24"
+        data-css-1n6oxz3=""
+        r={22}
+      />
+      <circle
+        cx="24"
+        cy="24"
+        data-css-e1ehue=""
+        r={22}
+        strokeDasharray="138.23007675795088 138.23007675795088"
+        strokeDashoffset={34.55751918948772}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots value value 100 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1ie49mc=""
+  >
+    <svg
+      data-css-iwuqnk=""
+      version="1.1"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="24"
+        cy="24"
+        data-css-1n6oxz3=""
+        r={22}
+      />
+      <circle
+        cx="24"
+        cy="24"
+        data-css-e1ehue=""
+        r={22}
+        strokeDasharray="138.23007675795088 138.23007675795088"
+        strokeDashoffset={0}
+      />
+    </svg>
+  </div>
+</div>
+`;
