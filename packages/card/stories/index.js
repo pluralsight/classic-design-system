@@ -30,7 +30,17 @@ const CardWithDefaults = props => (
   />
 )
 
+const sizes = {
+  [Card.sizes.small]: { width: '140px' },
+  [Card.sizes.medium]: { width: '320px' },
+  [Card.sizes.large]: { width: '540px' }
+}
+const ConstrainSizeDecorator = size => storyFn => (
+  <div style={sizes[size]}>{storyFn()}</div>
+)
+
 const comboStory = storiesOf('combo', module)
+  .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('everything', _ => (
     <Card
@@ -82,6 +92,7 @@ const comboStory = storiesOf('combo', module)
   ))
 
 const titleStory = storiesOf('title', module)
+  .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('title wrapper', _ => (
     <CardWithDefaults title={<Card.Title>Text only</Card.Title>} />
@@ -113,6 +124,7 @@ const titleStory = storiesOf('title', module)
   ))
 
 const imageStory = storiesOf('image', module)
+  .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('image only', _ => (
     <CardWithDefaults
@@ -132,6 +144,7 @@ const imageStory = storiesOf('image', module)
   ))
 
 const actionBarStory = storiesOf('actionBar', module)
+  .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('single action', _ => (
     <CardWithDefaults
@@ -154,6 +167,7 @@ const actionBarStory = storiesOf('actionBar', module)
   ))
 
 const bonusBarStory = storiesOf('bonusBar', module)
+  .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('only text', _ => <CardWithDefaults bonusBar="Wow, I'm bonus." />)
   .add('some element', _ => (
@@ -163,6 +177,7 @@ const bonusBarStory = storiesOf('bonusBar', module)
   ))
 
 const fullOverlayStory = storiesOf('fullOverlay', module)
+  .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('text only', _ => (
     <CardWithDefaults
@@ -224,15 +239,18 @@ const fullOverlayStory = storiesOf('fullOverlay', module)
 
 const sizeStory = storiesOf('size', module).addDecorator(themeDecorator(addons))
 Object.keys(Card.sizes).forEach(size =>
-  sizeStory.add(size, _ => (
-    <CardWithDefaults
-      size={size}
-      title={<Card.Title>{`${size} Card`}</Card.Title>}
-    />
-  ))
+  sizeStory.add(size, _ =>
+    ConstrainSizeDecorator(size)(_ => (
+      <CardWithDefaults
+        size={size}
+        title={<Card.Title>{`${size} Card`}</Card.Title>}
+      />
+    ))
+  )
 )
 
 const metaDataStory = storiesOf('metadata', module)
+  .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('single text', _ => <CardWithDefaults metadata1={['Jim Cooper']} />)
   .add('multiple text', _ => (
@@ -268,12 +286,14 @@ const metaDataStory = storiesOf('metadata', module)
   ))
 
 const progressStory = storiesOf('progress', module)
+  .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('none', _ => <CardWithDefaults progress={0} />)
   .add('some', _ => <CardWithDefaults progress={33.66667} />)
   .add('done', _ => <CardWithDefaults progress={100} />)
 
 const tagStory = storiesOf('tag', module)
+  .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('text only', _ => (
     <CardWithDefaults tag={<Card.Tag>Channel</Card.Tag>} />

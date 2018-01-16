@@ -74,27 +74,10 @@ const FullOverlayLink = props => (
 )
 FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
-const Card = glamorous.div(
-  {
-    width: '100%',
-    textAlign: 'left'
-  },
-  ({ size }) =>
-    ({
-      [sizes.small]: {
-        minWidth: 120,
-        maxWidth: 240
-      },
-      [sizes.medium]: {
-        minWidth: 240,
-        maxWidth: 440
-      },
-      [sizes.large]: {
-        minWidth: 440,
-        maxWidth: 680
-      }
-    }[size])
-)
+const Card = glamorous.div({
+  width: '100%',
+  textAlign: 'left'
+})
 
 const Overlays = glamorous.div(
   {
@@ -153,8 +136,9 @@ const ActionBar = glamorous.div(
     top: 0,
     right: 0,
     width: '100%',
-    padding: `${core.layout.spacingSmall} ${core.layout.spacingSmall} 0 ${core
-      .layout.spacingSmall}`,
+    padding: `${core.layout.spacingSmall} ${core.layout.spacingSmall} 0 ${
+      core.layout.spacingSmall
+    }`,
     background: `linear-gradient(to bottom, ${transparentize(
       0.25,
       core.colors.black
@@ -401,7 +385,6 @@ const CardComponent = props => (
     style={props.style}
     css={props.css}
     {...(props.className ? { className: props.className } : null)}
-    size={props.size}
   >
     <Overlays size={props.size}>
       {renderImage(props)}

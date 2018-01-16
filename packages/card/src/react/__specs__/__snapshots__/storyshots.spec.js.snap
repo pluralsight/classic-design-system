@@ -17,90 +17,66 @@ exports[`Storyshots actionBar locked visible 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-39snau"
-      >
-        <button
-          className="css-1rtuca6"
-        >
-          <div
-            className="css-otejxm"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
-              />
-            </svg>
-          </div>
-        </button>
-      </div>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+        <div
+          className="css-39snau"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <button
+            className="css-1rtuca6"
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="bookmark icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
+        >
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -108,40 +84,74 @@ exports[`Storyshots actionBar locked visible 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -166,106 +176,84 @@ exports[`Storyshots actionBar multiple actions 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-10jeq4t"
-      >
-        <button
-          className="css-1rtuca6"
-        >
-          <div
-            className="css-otejxm"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
-              />
-            </svg>
-          </div>
-        </button>
-        <button
-          className="css-1rtuca6"
-        >
-          <div
-            className="css-otejxm"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
-              />
-            </svg>
-          </div>
-        </button>
-      </div>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+        <div
+          className="css-10jeq4t"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <button
+            className="css-1rtuca6"
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="bookmark icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                />
+              </svg>
+            </div>
+          </button>
+          <button
+            className="css-1rtuca6"
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
+        >
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -273,40 +261,74 @@ exports[`Storyshots actionBar multiple actions 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -331,90 +353,66 @@ exports[`Storyshots actionBar single action 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-10jeq4t"
-      >
-        <button
-          className="css-1rtuca6"
-        >
-          <div
-            className="css-otejxm"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
-              />
-            </svg>
-          </div>
-        </button>
-      </div>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+        <div
+          className="css-10jeq4t"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <button
+            className="css-1rtuca6"
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="bookmark icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
+        >
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -422,40 +420,74 @@ exports[`Storyshots actionBar single action 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -480,75 +512,49 @@ exports[`Storyshots bonusBar only text 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-1pi4dj8"
-      >
-        Wow, I'm bonus.
-      </div>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+        <div
+          className="css-1pi4dj8"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          Wow, I'm bonus.
+        </div>
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
+        >
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -556,40 +562,74 @@ exports[`Storyshots bonusBar only text 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -614,86 +654,62 @@ exports[`Storyshots bonusBar some element 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-1pi4dj8"
+        className="css-iwdsn5"
       >
         <div
-          className="css-7wkwcf"
+          className="css-1wgk747"
+        />
+        <div
+          className="css-1pi4dj8"
         >
-          <svg
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            className="css-7wkwcf"
           >
-            <path
-              d="M13 13.855V23h-2v-9.145c-1.4457-.4302-2.5-1.7695-2.5-3.355C8.5 8.567 10.067 7 12 7s3.5 1.567 3.5 3.5c0 1.5855-1.0543 2.9248-2.5 3.355zM5.0412 1.3437L6.2514 2.936C3.9716 4.6715 2.5 7.414 2.5 10.5s1.4716 5.8286 3.7514 7.564l-1.2102 1.5924C2.2814 17.5557.5 14.236.5 10.5c0-3.736 1.7814-7.0557 4.5412-9.1564zm13.9176 0C21.7186 3.4443 23.5 6.764 23.5 10.5c0 3.736-1.7814 7.0557-4.5412 9.1564l-1.2102-1.5925C20.0284 16.3284 21.5 13.586 21.5 10.5s-1.4716-5.8286-3.7514-7.564l1.2102-1.5924zM7.4616 4.5287l1.2104 1.592C7.352 7.1255 6.5 8.7133 6.5 10.5c0 1.7867.852 3.3745 2.172 4.379l-1.2104 1.5925C5.6618 15.1015 4.5 12.9365 4.5 10.5c0-2.4365 1.1618-4.6016 2.9616-5.9715zm9.0768 0C18.3382 5.8982 19.5 8.0634 19.5 10.5s-1.1618 4.6016-2.9616 5.9715L15.328 14.879c1.32-1.0045 2.172-2.5923 2.172-4.379 0-1.7867-.852-3.3745-2.172-4.379l1.2104-1.5925zM12 12c.8284 0 1.5-.6716 1.5-1.5S12.8284 9 12 9s-1.5.6716-1.5 1.5.6716 1.5 1.5 1.5z"
-            />
-          </svg>
+            <svg
+              aria-label="channel icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13 13.855V23h-2v-9.145c-1.4457-.4302-2.5-1.7695-2.5-3.355C8.5 8.567 10.067 7 12 7s3.5 1.567 3.5 3.5c0 1.5855-1.0543 2.9248-2.5 3.355zM5.0412 1.3437L6.2514 2.936C3.9716 4.6715 2.5 7.414 2.5 10.5s1.4716 5.8286 3.7514 7.564l-1.2102 1.5924C2.2814 17.5557.5 14.236.5 10.5c0-3.736 1.7814-7.0557 4.5412-9.1564zm13.9176 0C21.7186 3.4443 23.5 6.764 23.5 10.5c0 3.736-1.7814 7.0557-4.5412 9.1564l-1.2102-1.5925C20.0284 16.3284 21.5 13.586 21.5 10.5s-1.4716-5.8286-3.7514-7.564l1.2102-1.5924zM7.4616 4.5287l1.2104 1.592C7.352 7.1255 6.5 8.7133 6.5 10.5c0 1.7867.852 3.3745 2.172 4.379l-1.2104 1.5925C5.6618 15.1015 4.5 12.9365 4.5 10.5c0-2.4365 1.1618-4.6016 2.9616-5.9715zm9.0768 0C18.3382 5.8982 19.5 8.0634 19.5 10.5s-1.1618 4.6016-2.9616 5.9715L15.328 14.879c1.32-1.0045 2.172-2.5923 2.172-4.379 0-1.7867-.852-3.3745-2.172-4.379l1.2104-1.5925zM12 12c.8284 0 1.5-.6716 1.5-1.5S12.8284 9 12 9s-1.5.6716-1.5 1.5.6716 1.5 1.5 1.5z"
+              />
+            </svg>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
       <div
-        className="css-1tlmf72"
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
       >
         <div
-          className=""
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -701,40 +717,74 @@ exports[`Storyshots bonusBar some element 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -759,189 +809,173 @@ exports[`Storyshots combo everything 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
-      <span
-        className="css-15yq56v"
-      >
-        <a
-          href="http://duckduckgo.com?q=image"
-        >
-          <div
-            className="css-1wgk747"
-          />
-        </a>
-      </span>
       <div
-        className="css-10pysoa"
+        className="css-iwdsn5"
       >
         <span
-          className="css-yvsvuk"
+          className="css-15yq56v"
         >
           <a
-            href="http://duckduckgo.com?q=overlay"
+            href="http://duckduckgo.com?q=image"
           >
             <div
-              className="css-195ztb"
+              className="css-1wgk747"
+            />
+          </a>
+        </span>
+        <div
+          className="css-10pysoa"
+        >
+          <span
+            className="css-yvsvuk"
+          >
+            <a
+              href="http://duckduckgo.com?q=overlay"
+            >
+              <div
+                className="css-195ztb"
+              >
+                <svg
+                  aria-label="play circle icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
+                  />
+                </svg>
+              </div>
+            </a>
+          </span>
+        </div>
+        <div
+          className="css-39snau"
+        >
+          <button
+            className="css-1rtuca6"
+          >
+            <div
+              className="css-otejxm"
             >
               <svg
+                aria-label="bookmark icon"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
+                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
                 />
               </svg>
             </div>
-          </a>
-        </span>
-      </div>
-      <div
-        className="css-39snau"
-      >
-        <button
-          className="css-1rtuca6"
-        >
-          <div
-            className="css-otejxm"
+          </button>
+          <button
+            className="css-1rtuca6"
           >
-            <svg
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              className="css-otejxm"
             >
-              <path
-                d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
-              />
-            </svg>
-          </div>
-        </button>
-        <button
-          className="css-1rtuca6"
-        >
-          <div
-            className="css-otejxm"
+              <svg
+                aria-label="gear icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 6.083V4h-2v2.083c-1.45.2432-2.7237 1.0066-3.6226 2.0917L5.5734 7.133l-1 1.7322 1.8022 1.0405C6.1326 10.5577 6 11.2634 6 12c0 .736.1325 1.441.375 2.0924L4.5722 15.133l1 1.7322 1.8038-1.0414c.899 1.086 2.1733 1.85 3.624 2.0932V20h2v-2.083c1.451-.2434 2.7255-1.0077 3.6246-2.094l1.805 1.0422 1-1.732-1.8042-1.0418C17.8676 13.4402 18 12.7356 18 12c0-.7363-.1326-1.4416-.3753-2.0933l1.804-1.0415-1-1.732-1.8054 1.0423C15.7243 7.09 14.4503 6.3263 13 6.083zm-8.9235 7.028C4.026 12.748 4 12.377 4 12s.026-.748.0765-1.111L1.8407 9.598l3-5.196 2.2368 1.2913c.582-.455 1.2285-.831 1.9235-1.1122V2h6v2.582c.6946.2812 1.3408.6572 1.9224 1.112l2.238-1.292 3 5.196-2.2378 1.292c.0504.3628.0764.7333.0764 1.11 0 .3767-.026.7472-.0764 1.11l2.2377 1.292-3 5.196-2.238-1.292c-.5815.4548-1.2277.8308-1.9223 1.112V22h-6v-2.581c-.695-.2814-1.3416-.6574-1.9235-1.1123L4.8407 19.598l-3-5.196 2.2358-1.291zM12 16c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm0-2c1.1046 0 2-.8954 2-2s-.8954-2-2-2-2 .8954-2 2 .8954 2 2 2z"
+                />
+              </svg>
+            </div>
+          </button>
+          <button
+            className="css-1rtuca6"
           >
-            <svg
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              className="css-otejxm"
             >
-              <path
-                d="M13 6.083V4h-2v2.083c-1.45.2432-2.7237 1.0066-3.6226 2.0917L5.5734 7.133l-1 1.7322 1.8022 1.0405C6.1326 10.5577 6 11.2634 6 12c0 .736.1325 1.441.375 2.0924L4.5722 15.133l1 1.7322 1.8038-1.0414c.899 1.086 2.1733 1.85 3.624 2.0932V20h2v-2.083c1.451-.2434 2.7255-1.0077 3.6246-2.094l1.805 1.0422 1-1.732-1.8042-1.0418C17.8676 13.4402 18 12.7356 18 12c0-.7363-.1326-1.4416-.3753-2.0933l1.804-1.0415-1-1.732-1.8054 1.0423C15.7243 7.09 14.4503 6.3263 13 6.083zm-8.9235 7.028C4.026 12.748 4 12.377 4 12s.026-.748.0765-1.111L1.8407 9.598l3-5.196 2.2368 1.2913c.582-.455 1.2285-.831 1.9235-1.1122V2h6v2.582c.6946.2812 1.3408.6572 1.9224 1.112l2.238-1.292 3 5.196-2.2378 1.292c.0504.3628.0764.7333.0764 1.11 0 .3767-.026.7472-.0764 1.11l2.2377 1.292-3 5.196-2.238-1.292c-.5815.4548-1.2277.8308-1.9223 1.112V22h-6v-2.581c-.695-.2814-1.3416-.6574-1.9235-1.1123L4.8407 19.598l-3-5.196 2.2358-1.291zM12 16c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm0-2c1.1046 0 2-.8954 2-2s-.8954-2-2-2-2 .8954-2 2 .8954 2 2 2z"
-              />
-            </svg>
-          </div>
-        </button>
-        <button
-          className="css-1rtuca6"
-        >
-          <div
-            className="css-otejxm"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
-              />
-            </svg>
-          </div>
-        </button>
-      </div>
-      <div
-        className="css-if1ca6"
-      >
-        <div
-          className="css-1pif58i"
-        >
-          <div
-            className="css-12f5sv2"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.4113 10l3.5858 3.5858V22H6l-.003-7.5858L3 11.4172V14H1V8h6v2H4.4113zM21 11.4142l-3 3V22h-2v-8.4142L19.5858 10H17V8h6v6h-2v-2.5858zm-8-5.5884V22h-2V5.831L9.1742 7.657 7.76 6.2425 12.0026 2l4.2427 4.2426L14.831 7.657 13 5.8257z"
-              />
-            </svg>
-          </div>
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                />
+              </svg>
+            </div>
+          </button>
         </div>
-        <span>
-          Path
-        </span>
+        <div
+          className="css-if1ca6"
+        >
+          <div
+            className="css-1pif58i"
+          >
+            <div
+              className="css-12f5sv2"
+            >
+              <svg
+                aria-label="path icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.4113 10l3.5858 3.5858V22H6l-.003-7.5858L3 11.4172V14H1V8h6v2H4.4113zM21 11.4142l-3 3V22h-2v-8.4142L19.5858 10H17V8h6v6h-2v-2.5858zm-8-5.5884V22h-2V5.831L9.1742 7.657 7.76 6.2425 12.0026 2l4.2427 4.2426L14.831 7.657 13 5.8257z"
+                />
+              </svg>
+            </div>
+          </div>
+          <span>
+            Path
+          </span>
+        </div>
       </div>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <index__TextLink>
+      <div
+        className="css-8j27ca"
+        title={
+          <index__TextLink>
+            <a
+              href="http://duckduckgo.com?q=title"
+            >
+              <Card.Title>
+                Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1, 2, Action Bar, and More Really. Why Not Put More In? Release a New Edition Every Year With All the Excesses of our VC Budget? Boundless Features Will Be Yours 2000
+              </Card.Title>
+            </a>
+          </index__TextLink>
+        }
+      >
+        <span
+          className="css-1ublh7e"
+        >
           <a
             href="http://duckduckgo.com?q=title"
           >
-            <Card.Title>
-              Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1, 2, Action Bar, and More Really. Why Not Put More In? Release a New Edition Every Year With All the Excesses of our VC Budget? Boundless Features Will Be Yours 2000
-            </Card.Title>
-          </a>
-        </index__TextLink>
-      }
-    >
-      <span
-        className="css-1ublh7e"
-      >
-        <a
-          href="http://duckduckgo.com?q=title"
-        >
-          <div
-            className="css-1tlmf72"
-          >
             <div
-              className=""
+              className="css-1tlmf72"
             >
-              <span
-                style={
-                  Object {
-                    "display": "block",
-                    "maxHeight": "0px",
-                    "overflow": "hidden",
-                    "position": "relative",
-                  }
-                }
+              <div
+                className=""
               >
                 <span
                   style={
                     Object {
                       "display": "block",
-                      "width": "100%",
-                    }
-                  }
-                >
-                  
-                  …
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                      "height": "0px",
+                      "maxHeight": "0px",
                       "overflow": "hidden",
-                      "width": "100%",
-                    }
-                  }
-                >
-                  Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1, 2, Action Bar, and More Really. Why Not Put More In? Release a New Edition Every Year With All the Excesses of our VC Budget? Boundless Features Will Be Yours 2000
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                      "left": "-20000px",
-                      "position": "absolute",
-                      "width": "100%",
+                      "position": "relative",
                     }
                   }
                 >
@@ -949,108 +983,142 @@ exports[`Storyshots combo everything 1`] = `
                     style={
                       Object {
                         "display": "block",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                        }
-                      }
-                    >
-                      W
-                    </span>
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                        }
-                      }
-                    >
-                      W
-                    </span>
-                  </span>
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
+                        "width": "100%",
                       }
                     }
                   >
                     
                     …
                   </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "height": "0px",
+                        "overflow": "hidden",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1, 2, Action Bar, and More Really. Why Not Put More In? Release a New Edition Every Year With All the Excesses of our VC Budget? Boundless Features Will Be Yours 2000
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "left": "-20000px",
+                        "position": "absolute",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "display": "block",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "display": "block",
+                          }
+                        }
+                      >
+                        W
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "display": "block",
+                          }
+                        }
+                      >
+                        W
+                      </span>
+                    </span>
+                    <span
+                      style={
+                        Object {
+                          "display": "block",
+                        }
+                      }
+                    >
+                      
+                      …
+                    </span>
+                  </span>
                 </span>
-              </span>
+              </div>
             </div>
-          </div>
-        </a>
-      </span>
-    </div>
-    <div
-      className="css-bcrrqv"
-    >
-      <span
-        className="css-1tz10dh"
-      >
-        <span
-          className="css-1ublh7e"
-        >
-          <a
-            href="http://duckduckgo.com/?q=jaketrent"
-          >
-            It is impossible to count the grand contributions of this great author
           </a>
         </span>
-      </span>
-      <span
-        aria-hidden={true}
-        className="css-kykfz1"
-      >
-        ·
-      </span>
-      <span
-        className="css-1tz10dh"
+      </div>
+      <div
+        className="css-bcrrqv"
       >
         <span
-          className="css-1ublh7e"
+          className="css-1tz10dh"
         >
-          <a
-            href="http://duckduckgo.com/?q=jaketrent"
+          <span
+            className="css-1ublh7e"
           >
-            Levels heretofore unknown in the battle for truth and knowledge
-          </a>
+            <a
+              href="http://duckduckgo.com/?q=jaketrent"
+            >
+              It is impossible to count the grand contributions of this great author
+            </a>
+          </span>
         </span>
-      </span>
-      <span
-        aria-hidden={true}
-        className="css-kykfz1"
-      >
-        ·
-      </span>
-      <span
-        className="css-1tz10dh"
+        <span
+          aria-hidden={true}
+          className="css-kykfz1"
+        >
+          ·
+        </span>
+        <span
+          className="css-1tz10dh"
+        >
+          <span
+            className="css-1ublh7e"
+          >
+            <a
+              href="http://duckduckgo.com/?q=jaketrent"
+            >
+              Levels heretofore unknown in the battle for truth and knowledge
+            </a>
+          </span>
+        </span>
+        <span
+          aria-hidden={true}
+          className="css-kykfz1"
+        >
+          ·
+        </span>
+        <span
+          className="css-1tz10dh"
+        >
+          <span
+            className="css-1ublh7e"
+          >
+            <a
+              href="http://duckduckgo.com/?q=jaketrent"
+            >
+              A length of such amazing lengthitude so-as to blow the mind
+            </a>
+          </span>
+        </span>
+      </div>
+      <div
+        className="css-bcrrqv"
       >
         <span
-          className="css-1ublh7e"
+          className="css-1tz10dh"
         >
-          <a
-            href="http://duckduckgo.com/?q=jaketrent"
-          >
-            A length of such amazing lengthitude so-as to blow the mind
-          </a>
+          Goodness me!
         </span>
-      </span>
-    </div>
-    <div
-      className="css-bcrrqv"
-    >
-      <span
-        className="css-1tz10dh"
-      >
-        Goodness me!
-      </span>
+      </div>
     </div>
   </div>
 </div>
@@ -1073,83 +1141,57 @@ exports[`Storyshots fullOverlay link 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-4nxbcy"
-      >
-        <span
-          className="css-yvsvuk"
-        >
-          <a
-            href="http://duckduckgo.com?q=overlay"
-          >
-            Click me
-          </a>
-        </span>
-      </div>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+        <div
+          className="css-4nxbcy"
         >
           <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+            className="css-yvsvuk"
+          >
+            <a
+              href="http://duckduckgo.com?q=overlay"
+            >
+              Click me
+            </a>
+          </span>
+        </div>
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
+        >
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -1157,40 +1199,74 @@ exports[`Storyshots fullOverlay link 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -1215,94 +1291,70 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-4nxbcy"
-      >
-        <span
-          className="css-yvsvuk"
-        >
-          <a
-            href="http://duckduckgo.com?q=overlay"
-          >
-            <div
-              className="css-195ztb"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
-                />
-              </svg>
-            </div>
-          </a>
-        </span>
-      </div>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+        <div
+          className="css-4nxbcy"
         >
           <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+            className="css-yvsvuk"
+          >
+            <a
+              href="http://duckduckgo.com?q=overlay"
+            >
+              <div
+                className="css-195ztb"
+              >
+                <svg
+                  aria-label="play circle icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
+                  />
+                </svg>
+              </div>
+            </a>
+          </span>
+        </div>
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
+        >
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -1310,40 +1362,74 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -1368,102 +1454,78 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
-      <span
-        className="css-15yq56v"
-      >
-        <a
-          href="http://duckduckgo.com?q=image"
-        >
-          <div
-            className="css-1wgk747"
-          />
-        </a>
-      </span>
       <div
-        className="css-4nxbcy"
+        className="css-iwdsn5"
       >
         <span
-          className="css-yvsvuk"
+          className="css-15yq56v"
         >
           <a
-            href="http://duckduckgo.com?q=overlay"
+            href="http://duckduckgo.com?q=image"
           >
             <div
-              className="css-195ztb"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
-                />
-              </svg>
-            </div>
+              className="css-1wgk747"
+            />
           </a>
         </span>
-      </div>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
-      >
         <div
-          className=""
+          className="css-4nxbcy"
         >
           <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+            className="css-yvsvuk"
+          >
+            <a
+              href="http://duckduckgo.com?q=overlay"
+            >
+              <div
+                className="css-195ztb"
+              >
+                <svg
+                  aria-label="play circle icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
+                  />
+                </svg>
+              </div>
+            </a>
+          </span>
+        </div>
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
+        >
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -1471,40 +1533,74 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -1529,79 +1625,53 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-10pysoa"
-      >
-        <span
-          className="css-yvsvuk"
-        >
-          Element
-        </span>
-      </div>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+        <div
+          className="css-10pysoa"
         >
           <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+            className="css-yvsvuk"
+          >
+            Element
+          </span>
+        </div>
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
+        >
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -1609,40 +1679,74 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -1667,79 +1771,53 @@ exports[`Storyshots fullOverlay text only 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-4nxbcy"
-      >
-        <span
-          className="css-yvsvuk"
-        >
-          Element
-        </span>
-      </div>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+        <div
+          className="css-4nxbcy"
         >
           <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+            className="css-yvsvuk"
+          >
+            Element
+          </span>
+        </div>
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
+        >
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -1747,40 +1825,74 @@ exports[`Storyshots fullOverlay text only 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -1805,78 +1917,52 @@ exports[`Storyshots image image link 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
-    >
-      <span
-        className="css-15yq56v"
-      >
-        <a
-          href="http://duckduckgo.com"
-        >
-          <div
-            className="css-11sk7pq"
-          />
-        </a>
-      </span>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
+      >
+        <span
+          className="css-15yq56v"
+        >
+          <a
+            href="http://duckduckgo.com"
+          >
+            <div
+              className="css-11sk7pq"
+            />
+          </a>
+        </span>
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
       >
         <div
-          className=""
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -1884,40 +1970,74 @@ exports[`Storyshots image image link 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -1942,70 +2062,44 @@ exports[`Storyshots image image only 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-11sk7pq"
-      />
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-11sk7pq"
+        />
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -2013,40 +2107,74 @@ exports[`Storyshots image image only 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -2071,70 +2199,44 @@ exports[`Storyshots metadata multiple text 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -2142,62 +2244,96 @@ exports[`Storyshots metadata multiple text 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      className="css-bcrrqv"
-    >
-      <span
-        className="css-1tz10dh"
+      <div
+        className="css-bcrrqv"
       >
-        Jim Cooper
-      </span>
-      <span
-        aria-hidden={true}
-        className="css-kykfz1"
-      >
-        ·
-      </span>
-      <span
-        className="css-1tz10dh"
-      >
-        Of the Far North
-      </span>
+        <span
+          className="css-1tz10dh"
+        >
+          Jim Cooper
+        </span>
+        <span
+          aria-hidden={true}
+          className="css-kykfz1"
+        >
+          ·
+        </span>
+        <span
+          className="css-1tz10dh"
+        >
+          Of the Far North
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -2220,70 +2356,44 @@ exports[`Storyshots metadata single text 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -2291,51 +2401,85 @@ exports[`Storyshots metadata single text 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      className="css-bcrrqv"
-    >
-      <span
-        className="css-1tz10dh"
+      <div
+        className="css-bcrrqv"
       >
-        Jim Cooper
-      </span>
+        <span
+          className="css-1tz10dh"
+        >
+          Jim Cooper
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -2358,70 +2502,44 @@ exports[`Storyshots metadata text link 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -2429,59 +2547,93 @@ exports[`Storyshots metadata text link 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      className="css-bcrrqv"
-    >
-      <span
-        className="css-1tz10dh"
+      <div
+        className="css-bcrrqv"
       >
         <span
-          className="css-1ublh7e"
+          className="css-1tz10dh"
         >
-          <a
-            href="http://duckduckgo.com?q=jim%20cooper"
+          <span
+            className="css-1ublh7e"
           >
-            Jim Cooper
-          </a>
+            <a
+              href="http://duckduckgo.com?q=jim%20cooper"
+            >
+              Jim Cooper
+            </a>
+          </span>
         </span>
-      </span>
+      </div>
     </div>
   </div>
 </div>
@@ -2504,70 +2656,44 @@ exports[`Storyshots metadata text wrapper 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -2575,55 +2701,89 @@ exports[`Storyshots metadata text wrapper 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      className="css-bcrrqv"
-    >
-      <span
-        className="css-1tz10dh"
+      <div
+        className="css-bcrrqv"
       >
         <span
-          className="css-nil"
+          className="css-1tz10dh"
         >
-          Jim Cooper
+          <span
+            className="css-nil"
+          >
+            Jim Cooper
+          </span>
         </span>
-      </span>
+      </div>
     </div>
   </div>
 </div>
@@ -2646,70 +2806,44 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -2717,102 +2851,136 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      className="css-bcrrqv"
-    >
-      <span
-        className="css-1tz10dh"
+      <div
+        className="css-bcrrqv"
       >
         <span
-          className="css-1ublh7e"
+          className="css-1tz10dh"
         >
-          <a
-            href="http://duckduckgo.com?q=jim%20cooper"
+          <span
+            className="css-1ublh7e"
           >
-            Jim Cooper
-          </a>
+            <a
+              href="http://duckduckgo.com?q=jim%20cooper"
+            >
+              Jim Cooper
+            </a>
+          </span>
         </span>
-      </span>
-    </div>
-    <div
-      className="css-bcrrqv"
-    >
-      <span
-        className="css-1tz10dh"
+      </div>
+      <div
+        className="css-bcrrqv"
       >
         <span
-          className="css-1ublh7e"
+          className="css-1tz10dh"
         >
-          <a
-            href="http://duckduckgo.com?q=react"
+          <span
+            className="css-1ublh7e"
           >
-            React Path
-          </a>
+            <a
+              href="http://duckduckgo.com?q=react"
+            >
+              React Path
+            </a>
+          </span>
         </span>
-      </span>
-      <span
-        aria-hidden={true}
-        className="css-kykfz1"
-      >
-        ·
-      </span>
-      <span
-        className="css-1tz10dh"
-      >
-        Intermediate
-      </span>
-      <span
-        aria-hidden={true}
-        className="css-kykfz1"
-      >
-        ·
-      </span>
-      <span
-        className="css-1tz10dh"
-      >
         <span
-          className="css-nil"
+          aria-hidden={true}
+          className="css-kykfz1"
         >
-          90 mins
+          ·
         </span>
-      </span>
+        <span
+          className="css-1tz10dh"
+        >
+          Intermediate
+        </span>
+        <span
+          aria-hidden={true}
+          className="css-kykfz1"
+        >
+          ·
+        </span>
+        <span
+          className="css-1tz10dh"
+        >
+          <span
+            className="css-nil"
+          >
+            90 mins
+          </span>
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -2835,78 +3003,52 @@ exports[`Storyshots progress done 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-268zju"
+        className="css-iwdsn5"
       >
         <div
-          aria-label="100% complete"
-          className="css-1qb9ko2"
+          className="css-1wgk747"
         />
+        <div
+          className="css-268zju"
+        >
+          <div
+            aria-label="100% complete"
+            className="css-1qb9ko2"
+          />
+        </div>
       </div>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
       <div
-        className="css-1tlmf72"
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
       >
         <div
-          className=""
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -2914,40 +3056,74 @@ exports[`Storyshots progress done 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -2972,70 +3148,44 @@ exports[`Storyshots progress none 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -3043,40 +3193,74 @@ exports[`Storyshots progress none 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -3101,78 +3285,52 @@ exports[`Storyshots progress some 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-268zju"
+        className="css-iwdsn5"
       >
         <div
-          aria-label="34% complete"
-          className="css-59crt4"
+          className="css-1wgk747"
         />
+        <div
+          className="css-268zju"
+        >
+          <div
+            aria-label="34% complete"
+            className="css-59crt4"
+          />
+        </div>
       </div>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
       <div
-        className="css-1tlmf72"
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
       >
         <div
-          className=""
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -3180,40 +3338,74 @@ exports[`Storyshots progress some 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -3238,70 +3430,44 @@ exports[`Storyshots size large 1`] = `
   }
 >
   <div
-    className="css-1d9m8rw"
-    style={undefined}
+    style={
+      Object {
+        "width": "540px",
+      }
+    }
   >
     <div
-      className="css-i9psny"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-31ny7d"
-      title={
-        <Card.Title>
-          large Card
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-i9psny"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+      </div>
+      <div
+        className="css-31ny7d"
+        title={
+          <Card.Title>
+            large Card
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              large Card
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -3309,40 +3475,74 @@ exports[`Storyshots size large 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                large Card
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -3367,70 +3567,44 @@ exports[`Storyshots size medium 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          medium Card
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            medium Card
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              medium Card
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -3438,40 +3612,74 @@ exports[`Storyshots size medium 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                medium Card
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -3496,70 +3704,44 @@ exports[`Storyshots size small 1`] = `
   }
 >
   <div
-    className="css-1hal8pq"
-    style={undefined}
+    style={
+      Object {
+        "width": "140px",
+      }
+    }
   >
     <div
-      className="css-b22ep1"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-do8pgt"
-      title={
-        <Card.Title>
-          small Card
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-b22ep1"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+      </div>
+      <div
+        className="css-do8pgt"
+        title={
+          <Card.Title>
+            small Card
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              small Card
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -3567,40 +3749,74 @@ exports[`Storyshots size small 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                small Card
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -3625,77 +3841,51 @@ exports[`Storyshots tag text only 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-if1ca6"
-      >
-        <span>
-          Channel
-        </span>
-      </div>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+        <div
+          className="css-if1ca6"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <span>
+            Channel
+          </span>
+        </div>
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
+        >
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -3703,40 +3893,74 @@ exports[`Storyshots tag text only 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -3761,93 +3985,69 @@ exports[`Storyshots tag with icon 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-if1ca6"
+        className="css-iwdsn5"
       >
         <div
-          className="css-1pif58i"
+          className="css-1wgk747"
+        />
+        <div
+          className="css-if1ca6"
         >
           <div
-            className="css-12f5sv2"
+            className="css-1pif58i"
           >
-            <svg
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              className="css-12f5sv2"
             >
-              <path
-                d="M13 13.855V23h-2v-9.145c-1.4457-.4302-2.5-1.7695-2.5-3.355C8.5 8.567 10.067 7 12 7s3.5 1.567 3.5 3.5c0 1.5855-1.0543 2.9248-2.5 3.355zM5.0412 1.3437L6.2514 2.936C3.9716 4.6715 2.5 7.414 2.5 10.5s1.4716 5.8286 3.7514 7.564l-1.2102 1.5924C2.2814 17.5557.5 14.236.5 10.5c0-3.736 1.7814-7.0557 4.5412-9.1564zm13.9176 0C21.7186 3.4443 23.5 6.764 23.5 10.5c0 3.736-1.7814 7.0557-4.5412 9.1564l-1.2102-1.5925C20.0284 16.3284 21.5 13.586 21.5 10.5s-1.4716-5.8286-3.7514-7.564l1.2102-1.5924zM7.4616 4.5287l1.2104 1.592C7.352 7.1255 6.5 8.7133 6.5 10.5c0 1.7867.852 3.3745 2.172 4.379l-1.2104 1.5925C5.6618 15.1015 4.5 12.9365 4.5 10.5c0-2.4365 1.1618-4.6016 2.9616-5.9715zm9.0768 0C18.3382 5.8982 19.5 8.0634 19.5 10.5s-1.1618 4.6016-2.9616 5.9715L15.328 14.879c1.32-1.0045 2.172-2.5923 2.172-4.379 0-1.7867-.852-3.3745-2.172-4.379l1.2104-1.5925zM12 12c.8284 0 1.5-.6716 1.5-1.5S12.8284 9 12 9s-1.5.6716-1.5 1.5.6716 1.5 1.5 1.5z"
-              />
-            </svg>
+              <svg
+                aria-label="channel icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 13.855V23h-2v-9.145c-1.4457-.4302-2.5-1.7695-2.5-3.355C8.5 8.567 10.067 7 12 7s3.5 1.567 3.5 3.5c0 1.5855-1.0543 2.9248-2.5 3.355zM5.0412 1.3437L6.2514 2.936C3.9716 4.6715 2.5 7.414 2.5 10.5s1.4716 5.8286 3.7514 7.564l-1.2102 1.5924C2.2814 17.5557.5 14.236.5 10.5c0-3.736 1.7814-7.0557 4.5412-9.1564zm13.9176 0C21.7186 3.4443 23.5 6.764 23.5 10.5c0 3.736-1.7814 7.0557-4.5412 9.1564l-1.2102-1.5925C20.0284 16.3284 21.5 13.586 21.5 10.5s-1.4716-5.8286-3.7514-7.564l1.2102-1.5924zM7.4616 4.5287l1.2104 1.592C7.352 7.1255 6.5 8.7133 6.5 10.5c0 1.7867.852 3.3745 2.172 4.379l-1.2104 1.5925C5.6618 15.1015 4.5 12.9365 4.5 10.5c0-2.4365 1.1618-4.6016 2.9616-5.9715zm9.0768 0C18.3382 5.8982 19.5 8.0634 19.5 10.5s-1.1618 4.6016-2.9616 5.9715L15.328 14.879c1.32-1.0045 2.172-2.5923 2.172-4.379 0-1.7867-.852-3.3745-2.172-4.379l1.2104-1.5925zM12 12c.8284 0 1.5-.6716 1.5-1.5S12.8284 9 12 9s-1.5.6716-1.5 1.5.6716 1.5 1.5 1.5z"
+                />
+              </svg>
+            </div>
           </div>
+          <span>
+            Channel
+          </span>
         </div>
-        <span>
-          Channel
-        </span>
       </div>
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Card Title
-        </Card.Title>
-      }
-    >
       <div
-        className="css-1tlmf72"
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Card Title
+          </Card.Title>
+        }
       >
         <div
-          className=""
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Card Title
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -3855,40 +4055,74 @@ exports[`Storyshots tag with icon 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -3913,82 +4147,56 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <index__TextLink>
+        className="css-iwdsn5"
+      >
+        <div
+          className="css-1wgk747"
+        />
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <index__TextLink>
+            <a
+              href="http://duckduckgo.com?q=text"
+            >
+              <Card.Title>
+                The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
+              </Card.Title>
+            </a>
+          </index__TextLink>
+        }
+      >
+        <span
+          className="css-1ublh7e"
+        >
           <a
             href="http://duckduckgo.com?q=text"
           >
-            <Card.Title>
-              The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
-            </Card.Title>
-          </a>
-        </index__TextLink>
-      }
-    >
-      <span
-        className="css-1ublh7e"
-      >
-        <a
-          href="http://duckduckgo.com?q=text"
-        >
-          <div
-            className="css-1tlmf72"
-          >
             <div
-              className=""
+              className="css-1tlmf72"
             >
-              <span
-                style={
-                  Object {
-                    "display": "block",
-                    "maxHeight": "0px",
-                    "overflow": "hidden",
-                    "position": "relative",
-                  }
-                }
+              <div
+                className=""
               >
                 <span
                   style={
                     Object {
                       "display": "block",
-                      "width": "100%",
-                    }
-                  }
-                >
-                  
-                  …
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                      "height": "0px",
+                      "maxHeight": "0px",
                       "overflow": "hidden",
-                      "width": "100%",
-                    }
-                  }
-                >
-                  The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                      "left": "-20000px",
-                      "position": "absolute",
-                      "width": "100%",
+                      "position": "relative",
                     }
                   }
                 >
@@ -3996,44 +4204,78 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
                     style={
                       Object {
                         "display": "block",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                        }
-                      }
-                    >
-                      W
-                    </span>
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                        }
-                      }
-                    >
-                      W
-                    </span>
-                  </span>
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
+                        "width": "100%",
                       }
                     }
                   >
                     
                     …
                   </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "height": "0px",
+                        "overflow": "hidden",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "left": "-20000px",
+                        "position": "absolute",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "display": "block",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "display": "block",
+                          }
+                        }
+                      >
+                        W
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "display": "block",
+                          }
+                        }
+                      >
+                        W
+                      </span>
+                    </span>
+                    <span
+                      style={
+                        Object {
+                          "display": "block",
+                        }
+                      }
+                    >
+                      
+                      …
+                    </span>
+                  </span>
                 </span>
-              </span>
+              </div>
             </div>
-          </div>
-        </a>
-      </span>
+          </a>
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -4056,70 +4298,44 @@ exports[`Storyshots title long title, title wrapper 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -4127,40 +4343,74 @@ exports[`Storyshots title long title, title wrapper 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -4185,82 +4435,56 @@ exports[`Storyshots title text link with title wrapper 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <index__TextLink>
+        className="css-iwdsn5"
+      >
+        <div
+          className="css-1wgk747"
+        />
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <index__TextLink>
+            <a
+              href="http://duckduckgo.com?q=text"
+            >
+              <Card.Title>
+                Text link
+              </Card.Title>
+            </a>
+          </index__TextLink>
+        }
+      >
+        <span
+          className="css-1ublh7e"
+        >
           <a
             href="http://duckduckgo.com?q=text"
           >
-            <Card.Title>
-              Text link
-            </Card.Title>
-          </a>
-        </index__TextLink>
-      }
-    >
-      <span
-        className="css-1ublh7e"
-      >
-        <a
-          href="http://duckduckgo.com?q=text"
-        >
-          <div
-            className="css-1tlmf72"
-          >
             <div
-              className=""
+              className="css-1tlmf72"
             >
-              <span
-                style={
-                  Object {
-                    "display": "block",
-                    "maxHeight": "0px",
-                    "overflow": "hidden",
-                    "position": "relative",
-                  }
-                }
+              <div
+                className=""
               >
                 <span
                   style={
                     Object {
                       "display": "block",
-                      "width": "100%",
-                    }
-                  }
-                >
-                  
-                  …
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                      "height": "0px",
+                      "maxHeight": "0px",
                       "overflow": "hidden",
-                      "width": "100%",
-                    }
-                  }
-                >
-                  Text link
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                      "left": "-20000px",
-                      "position": "absolute",
-                      "width": "100%",
+                      "position": "relative",
                     }
                   }
                 >
@@ -4268,44 +4492,78 @@ exports[`Storyshots title text link with title wrapper 1`] = `
                     style={
                       Object {
                         "display": "block",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                        }
-                      }
-                    >
-                      W
-                    </span>
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                        }
-                      }
-                    >
-                      W
-                    </span>
-                  </span>
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
+                        "width": "100%",
                       }
                     }
                   >
                     
                     …
                   </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "height": "0px",
+                        "overflow": "hidden",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    Text link
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "left": "-20000px",
+                        "position": "absolute",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "display": "block",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "display": "block",
+                          }
+                        }
+                      >
+                        W
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "display": "block",
+                          }
+                        }
+                      >
+                        W
+                      </span>
+                    </span>
+                    <span
+                      style={
+                        Object {
+                          "display": "block",
+                        }
+                      }
+                    >
+                      
+                      …
+                    </span>
+                  </span>
                 </span>
-              </span>
+              </div>
             </div>
-          </div>
-        </a>
-      </span>
+          </a>
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -4328,70 +4586,44 @@ exports[`Storyshots title title wrapper 1`] = `
   }
 >
   <div
-    className="css-19wk7ys"
-    style={undefined}
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
   >
     <div
-      className="css-iwdsn5"
+      className="css-1ybvkp1"
+      style={undefined}
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-8j27ca"
-      title={
-        <Card.Title>
-          Text only
-        </Card.Title>
-      }
-    >
-      <div
-        className="css-1tlmf72"
+        className="css-iwdsn5"
       >
         <div
-          className=""
+          className="css-1wgk747"
+        />
+      </div>
+      <div
+        className="css-8j27ca"
+        title={
+          <Card.Title>
+            Text only
+          </Card.Title>
+        }
+      >
+        <div
+          className="css-1tlmf72"
         >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "maxHeight": "0px",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+          <div
+            className=""
           >
             <span
               style={
                 Object {
                   "display": "block",
-                  "width": "100%",
-                }
-              }
-            >
-              
-              …
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "height": "0px",
+                  "maxHeight": "0px",
                   "overflow": "hidden",
-                  "width": "100%",
-                }
-              }
-            >
-              Text only
-            </span>
-            <span
-              style={
-                Object {
-                  "display": "block",
-                  "left": "-20000px",
-                  "position": "absolute",
-                  "width": "100%",
+                  "position": "relative",
                 }
               }
             >
@@ -4399,40 +4631,74 @@ exports[`Storyshots title title wrapper 1`] = `
                 style={
                   Object {
                     "display": "block",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-                <span
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  W
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "display": "block",
+                    "width": "100%",
                   }
                 }
               >
                 
                 …
               </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Text only
+              </span>
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
