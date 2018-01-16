@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.0.0"></a>
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@7.4.9...@pluralsight/ps-design-system-card@8.0.0) (2018-01-16)
+
+
+### Features
+
+* **card:** remove min and max widths ([310fd9b](https://github.com/pluralsight/design-system/commit/310fd9b))
+
+
+### BREAKING CHANGES
+
+* **card:** remove min and max widths
+
+
+
+
 <a name="7.4.9"></a>
 ## [7.4.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@7.4.8...@pluralsight/ps-design-system-card@7.4.9) (2018-01-11)
 
