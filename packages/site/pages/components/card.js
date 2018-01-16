@@ -2,6 +2,7 @@ import Button from '@pluralsight/ps-design-system-button/react'
 import Card from '@pluralsight/ps-design-system-card/react'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import * as Layout from '@pluralsight/ps-design-system-layout/react'
 
 import {
   Chrome,
@@ -14,82 +15,68 @@ import {
   PageHeading,
   PropTypes,
   SectionHeading,
+  TextLink,
   withServerProps
 } from '../../src/ui'
 
 const capitalize = str => str.charAt(0).toUpperCase() + str.substring(1)
 
 const Carousel = props => (
-  <div className="root">
-    <div className="carousel">
-      <div className="cardContainer">
-        <Card
-          title={<Card.Title>Advanced TypeScript</Card.Title>}
-          progress={0}
-          image={
-            <Card.Image src="http://lorempixel.com/output/people-q-c-300-200-4.jpg" />
-          }
-          metadata1={['Brice Wilson', 'Advanced']}
-          metadata2={['0m watched']}
-          size={Card.sizes.small}
-        />
-      </div>
-      <div className="cardContainer">
-        <Card
-          title={
-            <Card.Title>
-              Getting Started with Reactive Programming Using RxJS
-            </Card.Title>
-          }
-          progress={20}
-          image={
-            <Card.Image src="http://lorempixel.com/output/people-q-c-300-200-2.jpg" />
-          }
-          metadata1={['Scott Allen', 'Intermediate']}
-          metadata2={['23m watched']}
-          size={Card.sizes.small}
-        />
-      </div>
-      <div className="cardContainer">
-        <Card
-          title={
-            <Card.Title>
-              Building a JavaScript Development Environment"
-            </Card.Title>
-          }
-          progress={67}
-          image={
-            <Card.Image src="http://lorempixel.com/output/people-q-c-300-200-7.jpg" />
-          }
-          metadata1={['Cory House', 'Intermediate']}
-          metadata2={['3 hr 23m watched']}
-          size={Card.sizes.small}
-        />
-      </div>
-      <div className="cardContainer">
-        <Card
-          title={<Card.Title>Webpack Fundamentals"</Card.Title>}
-          progress={100}
-          metadata1={['Joe Eames', 'Intermediate']}
-          metadata2={['90m watched']}
-          image={
-            <Card.Image src="http://lorempixel.com/output/people-q-c-300-200-5.jpg" />
-          }
-          size={Card.sizes.small}
-        />
-      </div>
-    </div>
+  <div className="carousel">
+    <Layout.EqualColumnLayout>
+      <Card
+        title={<Card.Title>Advanced TypeScript</Card.Title>}
+        progress={0}
+        image={
+          <Card.Image src="http://lorempixel.com/output/people-q-c-300-200-4.jpg" />
+        }
+        metadata1={['Brice Wilson', 'Advanced']}
+        metadata2={['0m watched']}
+        size={Card.sizes.small}
+      />
+      <Card
+        title={
+          <Card.Title>
+            Getting Started with Reactive Programming Using RxJS
+          </Card.Title>
+        }
+        progress={20}
+        image={
+          <Card.Image src="http://lorempixel.com/output/people-q-c-300-200-2.jpg" />
+        }
+        metadata1={['Scott Allen', 'Intermediate']}
+        metadata2={['23m watched']}
+        size={Card.sizes.small}
+      />
+      <Card
+        title={
+          <Card.Title>
+            Building a JavaScript Development Environment"
+          </Card.Title>
+        }
+        progress={67}
+        image={
+          <Card.Image src="http://lorempixel.com/output/people-q-c-300-200-7.jpg" />
+        }
+        metadata1={['Cory House', 'Intermediate']}
+        metadata2={['3 hr 23m watched']}
+        size={Card.sizes.small}
+      />
+      <Card
+        title={<Card.Title>Webpack Fundamentals"</Card.Title>}
+        progress={100}
+        metadata1={['Joe Eames', 'Intermediate']}
+        metadata2={['90m watched']}
+        image={
+          <Card.Image src="http://lorempixel.com/output/people-q-c-300-200-5.jpg" />
+        }
+        size={Card.sizes.small}
+      />
+    </Layout.EqualColumnLayout>
     <style jsx>{`
       .carousel {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
         padding: ${core.layout.spacingMedium};
         background: ${core.colors.gray06};
-      }
-      .cardContainer {
-        flex: 1;
-        margin: calc(${core.layout.spacingMedium} / 2);
       }
     `}</style>
   </div>
@@ -224,10 +211,12 @@ export default withServerProps(_ => (
 
       <SectionHeading>In-app example</SectionHeading>
       <P>
-        The card is a flexible component that will fit the container it's given
-        within certain bounds. A carousel is a common container layout that one
-        might encounter in the product. This is an example implementation of how
-        the Card might look in a carousel in your app.
+        The card is a flexible component that will fit the container it's given.
+        A carousel is a common container layout that one might encounter in the
+        product. This is an example implementation of how the Card might look in
+        a carousel in your app, using the{' '}
+        <TextLink href="/components/layout">Layout.EqualColumnLayout</TextLink>{' '}
+        component.
       </P>
       <Carousel />
 
