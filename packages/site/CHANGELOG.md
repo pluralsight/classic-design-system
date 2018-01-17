@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.19.0"></a>
+# [9.19.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.18.8...@pluralsight/ps-design-system-site@9.19.0) (2018-01-17)
+
+
+### Features
+
+* **site:** add circular progress docs ([8462d28](https://github.com/pluralsight/design-system/commit/8462d28))
+
+
+
+
 <a name="9.18.8"></a>
 ## [9.18.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.18.7...@pluralsight/ps-design-system-site@9.18.8) (2018-01-16)
 
