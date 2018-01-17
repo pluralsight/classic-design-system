@@ -58,3 +58,10 @@ class AnimationDemo extends React.Component {
 const animationStory = storiesOf('animation', module)
   .addDecorator(themeDecorator(addons))
   .add('animates to new values', _ => <AnimationDemo />)
+
+const styleStory = storiesOf('style overrides', module)
+  .addDecorator(themeDecorator(addons))
+  .add('style', _ => <CircularProgress style={{ outline: '1px solid red' }} />)
+  .add('className (no viz change)', _ => (
+    <CircularProgress className="someString" />
+  ))

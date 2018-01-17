@@ -232,6 +232,100 @@ exports[`Storyshots size small 1`] = `
 </div>
 `;
 
+exports[`Storyshots style overrides className (no viz change) 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="someString"
+    data-css-1ie49mc=""
+  >
+    <svg
+      data-css-1txt1eh=""
+      version="1.1"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="24"
+        cy="24"
+        data-css-1n6oxz3=""
+        r={22}
+      />
+      <circle
+        cx="24"
+        cy="24"
+        data-css-e1ehue=""
+        r={22}
+        strokeDasharray="138.23007675795088 138.23007675795088"
+        strokeDashoffset={103.67255756846316}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots style overrides style 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1ie49mc=""
+    style={
+      Object {
+        "outline": "1px solid red",
+      }
+    }
+  >
+    <svg
+      data-css-1txt1eh=""
+      version="1.1"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="24"
+        cy="24"
+        data-css-1n6oxz3=""
+        r={22}
+      />
+      <circle
+        cx="24"
+        cy="24"
+        data-css-e1ehue=""
+        r={22}
+        strokeDasharray="138.23007675795088 138.23007675795088"
+        strokeDashoffset={103.67255756846316}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
 exports[`Storyshots value value 0 1`] = `
 <div
   style={

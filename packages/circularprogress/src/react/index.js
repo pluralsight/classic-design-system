@@ -68,25 +68,29 @@ const CircularProgress = (props, context) => {
   const value = typeof allProps.value === 'undefined' ? 25 : allProps.value
   const dashOffset = (100 - value) / 100 * circumference
 
-  return (
-    <div {...css.root(allProps)}>
-      <svg
-        {...css.svg(allProps)}
-        viewBox={`0 0 ${style.width} ${style.width}`}
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle r={radius} cx="24" cy="24" {...css.bg(allProps)} />
-        <circle
-          r={radius}
-          cx="24"
-          cy="24"
-          {...css.fg(allProps)}
-          strokeDasharray={`${circumference} ${circumference}`}
-          strokeDashoffset={dashOffset}
-        />
-      </svg>
-    </div>
+  return React.createElement(
+    'div',
+    {
+      ...css.root(allProps),
+      ...(props.style ? { style: props.style } : null),
+      ...(props.className ? { className: props.className } : null)
+    },
+    <svg
+      {...css.svg(allProps)}
+      viewBox={`0 0 ${style.width} ${style.width}`}
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle r={radius} cx="24" cy="24" {...css.bg(allProps)} />
+      <circle
+        r={radius}
+        cx="24"
+        cy="24"
+        {...css.fg(allProps)}
+        strokeDasharray={`${circumference} ${circumference}`}
+        strokeDashoffset={dashOffset}
+      />
+    </svg>
   )
 }
 
