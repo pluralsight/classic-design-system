@@ -308,6 +308,9 @@ export default withHeadings(props => (
       <NavLink href="/components/card" headings={props.headings}>
         Card
       </NavLink>
+      <NavLink href="/components/circularprogress" headings={props.headings}>
+        Circular Progress
+      </NavLink>
       <NavLink href="/components/drawer" headings={props.headings}>
         Drawer
       </NavLink>
