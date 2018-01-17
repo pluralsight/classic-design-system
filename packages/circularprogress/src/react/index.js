@@ -72,7 +72,7 @@ const CircularProgress = (props, context) => {
     <div {...css.root(allProps)}>
       <svg
         {...css.svg(allProps)}
-        viewBox="0 0 48 48"
+        viewBox={`0 0 ${style.width} ${style.width}`}
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -91,8 +91,8 @@ const CircularProgress = (props, context) => {
 }
 
 CircularProgress.propTypes = {
-  value: PropTypes.number,
-  size: PropTypes.oneOf(Object.keys(sizes))
+  size: PropTypes.oneOf(Object.keys(sizes)),
+  value: PropTypes.number
 }
 CircularProgress.defaultProps = {
   size: sizes.medium
