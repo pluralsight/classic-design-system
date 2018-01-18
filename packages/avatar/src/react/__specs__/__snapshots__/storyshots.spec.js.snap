@@ -1,0 +1,431 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Default large 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-18yikff=""
+  >
+    <img
+      data-css-1ba73bf=""
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Default medium 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1m7zcb4=""
+  >
+    <img
+      data-css-1ba73bf=""
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Default small 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1o5cejo=""
+  >
+    <img
+      data-css-1ba73bf=""
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Default xLarge 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1j3ote4=""
+  >
+    <img
+      data-css-1ba73bf=""
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Default xSmall 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-zl8mno=""
+  >
+    <img
+      data-css-1ba73bf=""
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials % Special Characters 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1m7zcb4=""
+  >
+    <div
+      data-css-2hpudj=""
+    >
+      %C
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials Anakin Skywalker 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1m7zcb4=""
+  >
+    <div
+      data-css-2hpudj=""
+    >
+      AS
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials Budapest Skywalker 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1m7zcb4=""
+  >
+    <div
+      data-css-awbda3=""
+    >
+      BS
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials Carlos Organa 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1m7zcb4=""
+  >
+    <div
+      data-css-o9l3rv=""
+    >
+      CO
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials Dennis Pimenta 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1m7zcb4=""
+  >
+    <div
+      data-css-147nf7d=""
+    >
+      DP
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials Diz Blau 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1m7zcb4=""
+  >
+    <div
+      data-css-147nf7d=""
+    >
+      DB
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials Harry Potter 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1m7zcb4=""
+  >
+    <div
+      data-css-vyiqsv=""
+    >
+      HP
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials Obi-Wan Kenobi 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1m7zcb4=""
+  >
+    <div
+      data-css-1w202mr=""
+    >
+      OK
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials Peia Organa 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1m7zcb4=""
+  >
+    <div
+      data-css-14kwj5a=""
+    >
+      PO
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials Uy Marley 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1m7zcb4=""
+  >
+    <div
+      data-css-o9l3rv=""
+    >
+      UM
+    </div>
+  </div>
+</div>
+`;
