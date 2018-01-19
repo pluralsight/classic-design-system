@@ -150,6 +150,8 @@ exports[`Storyshots as link with icon 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="pencil icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -289,6 +291,8 @@ exports[`Storyshots disabled with icon 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="pencil icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -335,6 +339,8 @@ exports[`Storyshots icon flat 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -381,6 +387,8 @@ exports[`Storyshots icon large 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -427,6 +435,8 @@ exports[`Storyshots icon left 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -473,6 +483,8 @@ exports[`Storyshots icon lone flat large 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -517,6 +529,8 @@ exports[`Storyshots icon lone flat medium 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -561,6 +575,8 @@ exports[`Storyshots icon lone flat small 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -605,6 +621,8 @@ exports[`Storyshots icon lone flat xSmall 1`] = `
         className="css-12f5sv2"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -649,6 +667,8 @@ exports[`Storyshots icon lone primary large 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -693,6 +713,8 @@ exports[`Storyshots icon lone primary medium 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -737,6 +759,8 @@ exports[`Storyshots icon lone primary small 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -781,6 +805,8 @@ exports[`Storyshots icon lone primary xSmall 1`] = `
         className="css-12f5sv2"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -825,6 +851,8 @@ exports[`Storyshots icon lone stroke large 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -869,6 +897,8 @@ exports[`Storyshots icon lone stroke medium 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -913,6 +943,8 @@ exports[`Storyshots icon lone stroke small 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -957,6 +989,8 @@ exports[`Storyshots icon lone stroke xSmall 1`] = `
         className="css-12f5sv2"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1001,6 +1035,8 @@ exports[`Storyshots icon medium 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1047,6 +1083,8 @@ exports[`Storyshots icon primary 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1093,6 +1131,8 @@ exports[`Storyshots icon right 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1139,6 +1179,8 @@ exports[`Storyshots icon small 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1185,6 +1227,8 @@ exports[`Storyshots icon stroke 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1231,6 +1275,8 @@ exports[`Storyshots icon xSmall 1`] = `
         className="css-12f5sv2"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1277,7 +1323,7 @@ exports[`Storyshots loading flat 1`] = `
         className="css-otejxm"
       >
         <span
-          className="css-14yr175"
+          className="css-1ec065u"
         />
       </div>
     </div>
@@ -1319,7 +1365,7 @@ exports[`Storyshots loading large 1`] = `
         className="css-otejxm"
       >
         <span
-          className="css-1s0im73"
+          className="css-10bxom6"
         />
       </div>
     </div>
@@ -1360,7 +1406,7 @@ exports[`Storyshots loading lone icon 1`] = `
         className="css-otejxm"
       >
         <span
-          className="css-1s0im73"
+          className="css-10bxom6"
         />
       </div>
     </div>
@@ -1400,7 +1446,7 @@ exports[`Storyshots loading medium 1`] = `
         className="css-otejxm"
       >
         <span
-          className="css-1s0im73"
+          className="css-10bxom6"
         />
       </div>
     </div>
@@ -1471,7 +1517,7 @@ exports[`Storyshots loading primary 1`] = `
         className="css-otejxm"
       >
         <span
-          className="css-1s0im73"
+          className="css-10bxom6"
         />
       </div>
     </div>
@@ -1513,7 +1559,7 @@ exports[`Storyshots loading small 1`] = `
         className="css-otejxm"
       >
         <span
-          className="css-1s0im73"
+          className="css-10bxom6"
         />
       </div>
     </div>
@@ -1554,7 +1600,7 @@ exports[`Storyshots loading stroke 1`] = `
         className="css-otejxm"
       >
         <span
-          className="css-18vo5om"
+          className="css-1jut5p0"
         />
       </div>
     </div>
@@ -1596,7 +1642,7 @@ exports[`Storyshots loading xSmall 1`] = `
         className="css-12f5sv2"
       >
         <span
-          className="css-1s0im73"
+          className="css-10bxom6"
         />
       </div>
     </div>
@@ -1642,6 +1688,8 @@ exports[`Storyshots override styles with className 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1688,6 +1736,8 @@ exports[`Storyshots override styles with style 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1978,6 +2028,8 @@ exports[`Storyshots with onClick clicks once 1`] = `
         className="css-otejxm"
       >
         <svg
+          aria-label="check icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
