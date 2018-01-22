@@ -1,4 +1,4 @@
-import { shallow } from 'enzyme'
+import { mount, shallow } from 'enzyme'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 
@@ -16,6 +16,10 @@ test('click on button triggered once', () => {
   )
   button.simulate('click')
   expect(callCount).toBe(1)
+})
+
+test('custom innerRef function called', done => {
+  mount(<Button innerRef={done} />)
 })
 
 // TODO: once enzyme supports event propagation, impl test for clicking icon

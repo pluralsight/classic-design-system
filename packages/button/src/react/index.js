@@ -350,7 +350,10 @@ class Btn extends React.Component {
       <Button
         {...props}
         iconOnly={React.Children.count(props.children) <= 0}
-        innerRef={el => (this.el = el)}
+        innerRef={el => {
+          this.el = el
+          if (typeof props.innerRef === 'function') props.innerRef(el)
+        }}
         style={isLoadingWithNoText ? { width: this.nonLoadingWidth } : {}}
         themeName={context.themeName}
       >
