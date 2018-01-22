@@ -5,6 +5,7 @@ import React from 'react'
 
 const Container = glamorous.div({
   overflow: 'hidden',
+  visibility: 'hidden',
   transition: `height ${core.motion.speedNormal}`,
 })
 
@@ -59,6 +60,7 @@ export default class Collapsible extends React.Component {
   }
   updateOverflowStyle(isOpen, isTransitioning = false) {
     this.containerElement.style.overflow = isTransitioning || !isOpen ? 'hidden' : 'visible'
+    this.containerElement.style.visibility = isTransitioning || isOpen ? 'visible' : 'hidden'
   }
   setHeightToAuto(element) {
     const prevHeight = element.style.height
