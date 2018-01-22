@@ -125,6 +125,8 @@ class Drawer extends React.Component {
 
   render() {
     const { isOpen, context: { themeName } } = this
+    const ariaLabel = isOpen ? 'Collapse' : 'Expand'
+
     return (
       <div>
         <DrawerBase isOpen={isOpen} onClick={this.handleClick}>
@@ -135,7 +137,7 @@ class Drawer extends React.Component {
           </DrawerPanelContent>
           <ToggleButtonContainer>
             <ToggleButton onClick={this.toggle} themeName={themeName}>
-              <Rotatable isRotated={isOpen}>
+              <Rotatable isRotated={isOpen} aria-label={ariaLabel}>
                 <Icon id={Icon.ids.caretDown} />
               </Rotatable>
             </ToggleButton>
