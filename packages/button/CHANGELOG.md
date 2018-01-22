@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.3.3"></a>
+## [10.3.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.3.2...@pluralsight/ps-design-system-button@10.3.3) (2018-01-22)
+
+
+### Bug Fixes
+
+* **button:** outdated snapshot spec ([a024014](https://github.com/pluralsight/design-system/commit/a024014))
+* **button:** restore ability to pass custom innerRef function ([e7d9447](https://github.com/pluralsight/design-system/commit/e7d9447))
+
+
+
+
 <a name="10.3.2"></a>
 ## [10.3.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.3.1...@pluralsight/ps-design-system-button@10.3.2) (2018-01-11)
 
