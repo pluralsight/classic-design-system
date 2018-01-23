@@ -1,0 +1,517 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots checked false 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-z41dhf=""
+  >
+    <div
+      data-css-1vmkg8r=""
+    >
+      <div
+        data-css-1nqr5a6=""
+      />
+    </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      type="checkbox"
+    />
+    <label
+      data-css-1iguv1e=""
+    >
+      Click me
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots checked true 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-z41dhf=""
+  >
+    <div
+      data-css-3f08gm=""
+    >
+      <div
+        data-css-4g7l16=""
+      />
+    </div>
+    <input
+      checked={true}
+      data-css-6wu9td=""
+      type="checkbox"
+    />
+    <label
+      data-css-1iguv1e=""
+    >
+      Click me
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots click toggles on click 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-z41dhf=""
+    onClick={[Function]}
+  >
+    <div
+      data-css-1vmkg8r=""
+    >
+      <div
+        data-css-1nqr5a6=""
+      />
+    </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      type="checkbox"
+    />
+    <label
+      data-css-1iguv1e=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots color green 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-z41dhf=""
+  >
+    <div
+      data-css-rson59=""
+    >
+      <div
+        data-css-4g7l16=""
+      />
+    </div>
+    <input
+      checked={true}
+      data-css-6wu9td=""
+      type="checkbox"
+    />
+    <label
+      data-css-1iguv1e=""
+    >
+      Click me
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots color orange 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-z41dhf=""
+  >
+    <div
+      data-css-3f08gm=""
+    >
+      <div
+        data-css-4g7l16=""
+      />
+    </div>
+    <input
+      checked={true}
+      data-css-6wu9td=""
+      type="checkbox"
+    />
+    <label
+      data-css-1iguv1e=""
+    >
+      Click me
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots disabled false 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-z41dhf=""
+    onClick={[Function]}
+  >
+    <div
+      data-css-1vmkg8r=""
+    >
+      <div
+        data-css-1nqr5a6=""
+      />
+    </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      type="checkbox"
+    />
+    <label
+      data-css-1iguv1e=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots disabled true 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-lj8sya=""
+  >
+    <div
+      data-css-1vmkg8r=""
+    >
+      <div
+        data-css-1nqr5a6=""
+      />
+    </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      type="checkbox"
+    />
+    <label
+      data-css-1iguv1e=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots label large left 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-vj1xrd=""
+  >
+    <div
+      data-css-1vmkg8r=""
+    >
+      <div
+        data-css-1nqr5a6=""
+      />
+    </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      type="checkbox"
+    />
+    <label
+      data-css-79kg4q=""
+    >
+      Click me
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots label large right 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-z41dhf=""
+  >
+    <div
+      data-css-1vmkg8r=""
+    >
+      <div
+        data-css-1nqr5a6=""
+      />
+    </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      type="checkbox"
+    />
+    <label
+      data-css-1iguv1e=""
+    >
+      Click me
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots label small left 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-vj1xrd=""
+  >
+    <div
+      data-css-1lprft6=""
+    >
+      <div
+        data-css-1qt5hlf=""
+      />
+    </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      type="checkbox"
+    />
+    <label
+      data-css-vstkg0=""
+    >
+      Click me
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots label small right 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-z41dhf=""
+  >
+    <div
+      data-css-1lprft6=""
+    >
+      <div
+        data-css-1qt5hlf=""
+      />
+    </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      type="checkbox"
+    />
+    <label
+      data-css-39uvbr=""
+    >
+      Click me
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots size large 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-z41dhf=""
+  >
+    <div
+      data-css-1vmkg8r=""
+    >
+      <div
+        data-css-1nqr5a6=""
+      />
+    </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      type="checkbox"
+    />
+    <label
+      data-css-1iguv1e=""
+    >
+      Click me
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots size small 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-z41dhf=""
+  >
+    <div
+      data-css-1lprft6=""
+    >
+      <div
+        data-css-1qt5hlf=""
+      />
+    </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      type="checkbox"
+    />
+    <label
+      data-css-39uvbr=""
+    >
+      Click me
+    </label>
+  </div>
+</div>
+`;

@@ -1,0 +1,48 @@
+{
+  "name": "@pluralsight/ps-design-system-switch",
+  "version": "1.0.0",
+  "description": "Design System component for switch ui",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --ignore spec.js",
+    "build:watch": "npm run build -- --watch",
+    "prepublish": "npm run build",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "test:watch": "npm run test -- --watchAll",
+    "test:updateSnapshot": "npm run test -- --updateSnapshot"
+  },
+  "keywords": [],
+  "author": "jaketrent",
+  "license": "Apache-2.0",
+  "repository": "pluralsight/design-system",
+  "peerDependencies": {
+    "@pluralsight/ps-design-system-normalize": "^3.0.24",
+    "glamor": "^2.20.0",
+    "react": ">=0.15.0 < 17.0.0"
+  },
+  "dependencies": {
+    "@pluralsight/ps-design-system-core": "^4.0.2",
+    "@pluralsight/ps-design-system-theme": "^1.1.0",
+    "polished": "^1.7.0",
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.10",
+    "@storybook/addon-storyshots": "3.2.14",
+    "@storybook/addons": "3.2.14",
+    "@storybook/react": "3.2.14",
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "jest": "^20.0.4",
+    "react": "^16.2.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/test/test-setup.js"
+  }
+}
