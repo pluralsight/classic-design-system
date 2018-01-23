@@ -304,8 +304,10 @@ const TitleDiv = glamorous.div({
 })
 
 const Title = props => {
+  const allProps = props.onClick ? { onClick: props.onClick } : null
+
   return (
-    <TitleDiv size={props.size}>
+    <TitleDiv {...allProps}>
       <Shiitake lines={2}>{props.children}</Shiitake>
     </TitleDiv>
   )
