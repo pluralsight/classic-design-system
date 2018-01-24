@@ -1,7 +1,18 @@
 # Change Log
 
 All notable changes to this project will be documented in this file.
-See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.4.14...@pluralsight/ps-design-system-build@1.5.0) (2018-01-24)
+
+
+### Features
+
+* **build:** css stylesheet build functions ([19b3149](https://github.com/pluralsight/design-system/commit/19b3149))
+
+
+
 
 <a name="1.4.14"></a>
 ## [1.4.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.4.8...@pluralsight/ps-design-system-build@1.4.14) (2017-10-19)
