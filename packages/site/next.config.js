@@ -18,6 +18,7 @@ module.exports = {
       '/components/layout': { page: '/components/layout' },
       '/components/link': { page: '/components/link' },
       '/components/row': { page: '/components/row' },
+      '/components/switch': { page: '/components/switch' },
       '/components/tab': { page: '/components/tab' },
       '/components/tag': { page: '/components/tag' },
       '/components/text': { page: '/components/text' },
