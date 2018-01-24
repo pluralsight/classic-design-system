@@ -56,8 +56,6 @@ class InAppExample extends React.Component {
             .root {
             }
             .example {
-              display: flex;
-              justify-content: center;
               padding: ${core.layout.spacingLarge};
               background: ${core.colors.bone};
               border-radius: 12px;
