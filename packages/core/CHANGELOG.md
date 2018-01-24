@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.0.2...@pluralsight/ps-design-system-core@4.1.0) (2018-01-24)
+
+
+### Features
+
+* **core:** add screenreader-only class ([b70b61d](https://github.com/pluralsight/design-system/commit/b70b61d))
+
+
+
+
 <a name="4.0.3"></a>
 ## [4.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.0.2...@pluralsight/ps-design-system-core@4.0.3) (2018-01-24)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@1.4.11...@pluralsight/ps-design-system-badge@1.6.0) (2018-01-24)
+
+
+### Features
+
+* **badge:** build css stylesheet upon dist ([0604d34](https://github.com/pluralsight/design-system/commit/0604d34))
+
+
+
+
 <a name="1.5.0"></a>
 # [1.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@1.4.11...@pluralsight/ps-design-system-badge@1.5.0) (2018-01-24)
 

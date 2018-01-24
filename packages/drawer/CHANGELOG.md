@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.17"></a>
+## [1.0.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@1.0.14...@pluralsight/ps-design-system-drawer@1.0.17) (2018-01-24)
+
+
+### Bug Fixes
+
+* **drawer:** Add aria-label for expand/collapse ([09e99e9](https://github.com/pluralsight/design-system/commit/09e99e9))
+* **drawer:** prevent tabbing into closed drawers ([5b8b6e9](https://github.com/pluralsight/design-system/commit/5b8b6e9))
+
+
+
+
 <a name="1.0.16"></a>
 ## [1.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@1.0.15...@pluralsight/ps-design-system-drawer@1.0.16) (2018-01-24)
 
