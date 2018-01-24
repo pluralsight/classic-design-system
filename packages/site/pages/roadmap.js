@@ -19,7 +19,7 @@ import {
 const work = {
   now: [
     {
-      title: 'Progress Loader',
+      title: 'Non-React CSS Support',
       tags: ['Component']
     },
     {
@@ -35,10 +35,6 @@ const work = {
     },
     {
       title: 'Tab (vNext)',
-      tags: ['Component']
-    },
-    {
-      title: 'Switch',
       tags: ['Component']
     },
     {
