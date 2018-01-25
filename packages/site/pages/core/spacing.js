@@ -123,13 +123,27 @@ const renderLabel = props =>
       {`${props.width}px - ${props.label}`}
       <style jsx>{`
         .label {
-          margin-top: ${core.layout.spacingXXSmall};
+          margin-top: ${core.layout.spacingXSmall};
           font-size: ${core.type.fontSizeXSmall};
           font-weight: ${core.type.fontWeightBook};
           line-height: ${core.type.lineHeightTight};
         }
       `}</style>
     </div>
+  ) : null
+
+const renderVar = props =>
+  props.varName ? (
+    <code className="varName">
+      {props.varName}
+      <style jsx>{`
+        .varName {
+          margin-top: ${core.layout.spacingSmall};
+          font-size: ${core.type.fontSizeXSmall};
+          color: ${core.colors.pink};
+        }
+      `}</style>
+    </code>
   ) : null
 
 const Example = props => (
@@ -139,6 +153,7 @@ const Example = props => (
       {renderLines(props)}
     </div>
     {renderLabel(props)}
+    {renderVar(props)}
     <style jsx>{`
       .root {
         margin: calc(${core.layout.spacingLarge} / 2);
@@ -167,6 +182,7 @@ const SpacingIncrements = props => (
             key={i}
             width={x.width}
             label={x.label}
+            varName={x.varName}
             sides="all"
           />
         ))}
