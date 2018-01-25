@@ -63,7 +63,7 @@ const initials = ({ name }) =>
     flexDirection: 'column',
     justifyContent: 'center',
     color: core.colors.white,
-    fontWeight: core.type.fontWeightXLight,
+    fontWeight: core.type.fontWeightBook,
     backgroundColor: getColorByName(name) || core.colors.bone
   })
 
