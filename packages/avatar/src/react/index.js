@@ -16,10 +16,10 @@ Avatar.defaultProps = {
 }
 
 Avatar.propTypes = {
+  className: PropTypes.string,
   name: PropTypes.string,
-  src: PropTypes.string,
   size: PropTypes.oneOf(Object.keys(sizes)),
-  className: PropTypes.string
+  src: PropTypes.string
 }
 
 Avatar.sizes = sizes
