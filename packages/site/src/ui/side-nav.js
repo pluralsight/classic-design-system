@@ -299,6 +299,9 @@ export default withHeadings(props => (
       <NavLink href="/components/actionmenu" headings={props.headings}>
         Action Menu
       </NavLink>
+      <NavLink href="/components/avatar" headings={props.headings}>
+        Avatar
+      </NavLink>
       <NavLink href="/components/badge" headings={props.headings}>
         Badge
       </NavLink>

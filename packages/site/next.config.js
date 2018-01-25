@@ -9,6 +9,7 @@ module.exports = {
       '/contribute/components': { page: '/contribute/components' },
       '/roadmap': { page: '/roadmap' },
       '/components/actionmenu': { page: '/components/actionmenu' },
+      '/components/avatar': { page: '/components/avatar' },
       '/components/badge': { page: '/components/badge' },
       '/components/button': { page: '/components/button' },
       '/components/card': { page: '/components/card' },
