@@ -19,6 +19,28 @@ import {
   withServerProps
 } from '../../src/ui'
 
+const decorateCards = (sizes, props, codes) => {
+  const cardMaxWidths = {
+    small: '140px',
+    medium: '320px',
+    large: '540px'
+  }
+  // NOTE: jsx-style classes evaluated in the context of Example.React
+  let decorated = `<div className="output outputVertical">`
+
+  codes.forEach((code, i) => {
+    decorated += `<div className="outputChild" style={{ maxWidth: '${
+      Array.isArray(sizes) ? cardMaxWidths[sizes[i]] : cardMaxWidths.medium
+    }'}}>${code}</div>`
+  })
+
+  decorated += '</div>'
+
+  return decorated
+}
+const decorateCardsSML = decorateCards.bind(null, Object.keys(Card.sizes))
+const decorateCardsM = decorateCards.bind(null, null)
+
 const capitalize = str => str.charAt(0).toUpperCase() + str.substring(1)
 
 const Carousel = props => (
@@ -218,7 +240,7 @@ export default withServerProps(_ => (
         proportions and flexibility min and max bounds.
       </P>
       <Example.React
-        orient="vertical"
+        decorateCodes={decorateCardsSML}
         includes={{ Button, Card, Icon }}
         codes={Object.keys(Card.sizes).map(
           s => `
@@ -238,7 +260,7 @@ export default withServerProps(_ => (
         set height according to the `size` property.
       </P>
       <Example.React
-        orient="vertical"
+        decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
           `
@@ -282,7 +304,7 @@ export default withServerProps(_ => (
         the completion level of the content represented on the card.
       </P>
       <Example.React
-        orient="vertical"
+        decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
           `
@@ -316,7 +338,7 @@ export default withServerProps(_ => (
         with an ellipsis appended.
       </P>
       <Example.React
-        orient="vertical"
+        decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
           `
@@ -350,7 +372,7 @@ export default withServerProps(_ => (
         indicated. The first datum is given display space precendence.
       </P>
       <Example.React
-        orient="vertical"
+        decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
           `
@@ -391,7 +413,7 @@ export default withServerProps(_ => (
         linking straight to the content. These are usually buttons.
       </P>
       <Example.React
-        orient="vertical"
+        decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
           `
@@ -428,7 +450,7 @@ export default withServerProps(_ => (
       <SectionHeading>Tag</SectionHeading>
       <P>The tag provides a label, usually categorizing the card's content.</P>
       <Example.React
-        orient="vertical"
+        decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
           `
@@ -468,6 +490,7 @@ export default withServerProps(_ => (
         be provided here. It will appear overlaid in the center of the image.
       </P>
       <Example.React
+        decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
           `
@@ -503,6 +526,7 @@ export default withServerProps(_ => (
         bottom-left corner of the image area. Use with dignity.
       </P>
       <Example.React
+        decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
           `

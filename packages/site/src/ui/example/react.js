@@ -52,7 +52,6 @@ const OutputDecorationGlobalStyles = _ => (
     @media screen and (min-width: 769px) {
       .outputHorizontal {
         flex-direction: row;
-        align-items: center;
       }
       .outputVertical {
         align-items: flex-start;
@@ -70,7 +69,7 @@ const OutputDecorationGlobalStyles = _ => (
   `}</style>
 )
 
-const decorateSrc = (props, codes) => {
+const defaultDecorateCodes = (props, codes) => {
   let decorated = `<div className="${getOutputClassName(
     props
   )}" style={${JSON.stringify(props.outputStyle)}}>`
@@ -100,11 +99,9 @@ const renderOutput = (evaled, el) => ReactDOM.render(evaled, el)
 const unmountOutput = el => ReactDOM.unmountComponentAtNode(el)
 
 const getOutputClassName = props =>
-  `output ${props.themeName === Theme.names.light
-    ? 'outputLight'
-    : ''} ${props.orient === 'vertical'
-    ? 'outputVertical'
-    : 'outputHorizontal'}`
+  `output ${props.themeName === Theme.names.light ? 'outputLight' : ''} ${
+    props.orient === 'vertical' ? 'outputVertical' : 'outputHorizontal'
+  }`
 
 class ReactExample extends React.Component {
   constructor(props) {
@@ -135,7 +132,10 @@ class ReactExample extends React.Component {
       _ => ({ error: null }),
       _ => {
         try {
-          const src = decorateSrc(this.props, this.state.codes)
+          const src = (this.props.decorateCodes || defaultDecorateCodes)(
+            this.props,
+            this.state.codes
+          )
           const compiled = compileSrc(src)
           makeGlobalsAvailable(this.props.includes)
           const evaled = evalSrc(compiled)
@@ -213,6 +213,7 @@ class ReactExample extends React.Component {
 
 ReactExample.propTypes = {
   codes: PropTypes.arrayOf(PropTypes.string),
+  decorateCodes: PropTypes.func,
   includes: PropTypes.object,
   outputChildStyle: PropTypes.object,
   outputStyle: PropTypes.object,
