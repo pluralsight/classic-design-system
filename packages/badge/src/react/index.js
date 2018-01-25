@@ -7,9 +7,9 @@ import css from '../css'
 import * as vars from '../vars'
 
 const Badge = glamorous.div(
-  css['.badge'],
+  css['.psds-badge'],
   ({ color, appearance }) =>
-    css[`.badge--appearance-${appearance}.badge--color-${color}`]
+    css[`.psds-badge--appearance-${appearance}.psds-badge--color-${color}`]
 )
 
 Badge.appearances = vars.appearances
