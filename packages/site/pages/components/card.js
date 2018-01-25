@@ -27,9 +27,7 @@ const Carousel = props => (
       <Card
         title={<Card.Title>Advanced TypeScript</Card.Title>}
         progress={0}
-        image={
-          <Card.Image src="http://lorempixel.com/output/people-q-c-300-200-4.jpg" />
-        }
+        image={<Card.Image src="/static/img/course1.jpg" />}
         metadata1={['Brice Wilson', 'Advanced']}
         metadata2={['0m watched']}
         size={Card.sizes.small}
@@ -41,9 +39,7 @@ const Carousel = props => (
           </Card.Title>
         }
         progress={20}
-        image={
-          <Card.Image src="http://lorempixel.com/output/people-q-c-300-200-2.jpg" />
-        }
+        image={<Card.Image src="/static/img/course2.jpg" />}
         metadata1={['Scott Allen', 'Intermediate']}
         metadata2={['23m watched']}
         size={Card.sizes.small}
@@ -55,9 +51,7 @@ const Carousel = props => (
           </Card.Title>
         }
         progress={67}
-        image={
-          <Card.Image src="http://lorempixel.com/output/people-q-c-300-200-7.jpg" />
-        }
+        image={<Card.Image src="/static/img/course3.jpg" />}
         metadata1={['Cory House', 'Intermediate']}
         metadata2={['3 hr 23m watched']}
         size={Card.sizes.small}
@@ -67,9 +61,7 @@ const Carousel = props => (
         progress={100}
         metadata1={['Joe Eames', 'Intermediate']}
         metadata2={['90m watched']}
-        image={
-          <Card.Image src="http://lorempixel.com/output/people-q-c-300-200-5.jpg" />
-        }
+        image={<Card.Image src="/static/img/course4.jpg" />}
         size={Card.sizes.small}
       />
     </Layout.EqualColumnLayout>
@@ -234,7 +226,7 @@ export default withServerProps(_ => (
   size={Card.sizes.${s}}
   title={<Card.Title>${capitalize(s)} Card</Card.Title>}
   metadata1={['Jim Cooper']}
-  image={<Card.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />}
+  image={<Card.Image src="/static/img/course1.jpg" />}
 />
 `
         )}
@@ -266,7 +258,7 @@ export default withServerProps(_ => (
   image={
     <Card.ImageLink>
       <a href="https://google.com" target="_blank">
-        <Card.Image src="http://lorempixel.com/output/technics-q-c-680-320-2.jpg" />
+        <Card.Image src="/static/img/course2.jpg" />
       </a>
     </Card.ImageLink>
   }
@@ -297,19 +289,19 @@ export default withServerProps(_ => (
 <Card
   progress={25}
   title={<Card.Title>The Card Title</Card.Title>}
-  image={<Card.Image src="http://lorempixel.com/output/technics-q-c-680-320-1.jpg" />}
+  image={<Card.Image src="/static/img/course3.jpg" />}
 /> `,
           `
 <Card
   progress={66.6666667}
   title={<Card.Title>The Card Title</Card.Title>}
-  image={<Card.Image src="http://lorempixel.com/output/technics-q-c-680-320-1.jpg" />}
+  image={<Card.Image src="/static/img/course3.jpg" />}
 /> `,
           `
 <Card
   progress={100}
   title={<Card.Title>The Card Title</Card.Title>}
-  image={<Card.Image src="http://lorempixel.com/output/technics-q-c-680-320-1.jpg" />}
+  image={<Card.Image src="/static/img/course3.jpg" />}
 /> `
         ]}
       />
@@ -330,19 +322,19 @@ export default withServerProps(_ => (
           `
 <Card
   title={<Card.TextLink><a><Card.Title>Link Title</Card.Title></a></Card.TextLink>}
-  image={<Card.Image src="http://lorempixel.com/output/nature-q-c-680-320-10.jpg" />}
+  image={<Card.Image src="/static/img/course4.jpg" />}
 />
 `,
           `
 <Card
   title={<Card.Title>Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania</Card.Title>}
-  image={<Card.Image src="http://lorempixel.com/output/nature-q-c-680-320-10.jpg" />}
+  image={<Card.Image src="/static/img/course4.jpg" />}
 />
 `,
           `
 <Card
   title={<Card.TextLink><a><Card.Title>Link with Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania</Card.Title></a></Card.TextLink>}
-  image={<Card.Image src="http://lorempixel.com/output/nature-q-c-680-320-10.jpg" />}
+  image={<Card.Image src="/static/img/course4.jpg" />}
 />
 `
         ]}
@@ -365,7 +357,7 @@ export default withServerProps(_ => (
 <Card
   metadata1={['Simon Allardice']}
   title={<Card.Title>Card Title</Card.Title>}
-  image={<Card.Image src="http://lorempixel.com/output/abstract-q-c-680-320-4.jpg" />}
+  image={<Card.Image src="/static/img/course1.jpg" />}
 />
 `,
           `
@@ -373,7 +365,7 @@ export default withServerProps(_ => (
   metadata1={['Simon Allardice']}
   metadata2={['Intermediate', '2hr 20min', 'July 24, 1847']}
   title={<Card.Title>Card with Two Lines of Meta</Card.Title>}
-  image={<Card.Image src="http://lorempixel.com/output/abstract-q-c-680-320-4.jpg" />}
+  image={<Card.Image src="/static/img/course1.jpg" />}
 />
 `,
           `
@@ -387,7 +379,7 @@ export default withServerProps(_ => (
     "July 24, 1847 or year thereabouts, it's unclear"
   ]}
   title={<Card.Title>Super-long Metadata</Card.Title>}
-  image={<Card.Image src="http://lorempixel.com/output/abstract-q-c-680-320-4.jpg" />}
+  image={<Card.Image src="/static/img/course1.jpg" />}
 />
 `
         ]}
@@ -406,7 +398,7 @@ export default withServerProps(_ => (
 <Card
   actionBar={[<Card.Action icon={<Icon id={Icon.ids.bookmark} />} />]}
   title={<Card.Title>Action bar appears on hover</Card.Title>}
-  image={<Card.Image src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />}
+  image={<Card.Image src="/static/img/course2.jpg" />}
 />
 `,
           `
@@ -416,7 +408,7 @@ export default withServerProps(_ => (
     <Card.Action icon={<Icon id={Icon.ids.more} />} />
   ]}
   title={<Card.Title>Multiple actions</Card.Title>}
-  image={<Card.Image src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />}
+  image={<Card.Image src="/static/img/course2.jpg" />}
 />
 `,
           `
@@ -427,7 +419,7 @@ export default withServerProps(_ => (
   ]}
   actionBarVisible
   title={<Card.Title>Action bar locked visible</Card.Title>}
-  image={<Card.Image src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />}
+  image={<Card.Image src="/static/img/course2.jpg" />}
 />
 `
         ]}
@@ -444,7 +436,7 @@ export default withServerProps(_ => (
   tag={<Card.Tag icon={<Icon id={Icon.ids.path} />}>Path</Card.Tag>}
   title={<Card.Title>Icon and text</Card.Title>}
   image={
-    <Card.Image src="http://lorempixel.com/output/technics-q-c-680-320-5.jpg" />
+    <Card.Image src="/static/img/course3.jpg" />
   }
 />
 `,
@@ -453,7 +445,7 @@ export default withServerProps(_ => (
   tag={<Card.Tag>Course</Card.Tag>}
   title={<Card.Title>Text only</Card.Title>}
   image={
-    <Card.Image src="http://lorempixel.com/output/technics-q-c-680-320-5.jpg" />
+    <Card.Image src="/static/img/course3.jpg" />
   }
 />
 `,
@@ -463,7 +455,7 @@ export default withServerProps(_ => (
   tag={<Card.Tag icon={<Icon id={Icon.ids.channel} />}>Channel</Card.Tag>}
   title={<Card.Title>Tag hidden if card small</Card.Title>}
   image={
-    <Card.Image src="http://lorempixel.com/output/technics-q-c-680-320-5.jpg" />
+    <Card.Image src="/static/img/course3.jpg" />
   }
 />
 `
@@ -476,14 +468,13 @@ export default withServerProps(_ => (
         be provided here. It will appear overlaid in the center of the image.
       </P>
       <Example.React
-        orient="vertical"
         includes={{ Button, Card, Icon }}
         codes={[
           `
 <Card
   fullOverlay={<Card.FullOverlayLink>Play</Card.FullOverlayLink>}
   title={<Card.Title>Custom element centered on card image</Card.Title>}
-  image={<Card.Image src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />}
+  image={<Card.Image src="/static/img/course4.jpg" />}
 />
 `,
           `
@@ -491,7 +482,7 @@ export default withServerProps(_ => (
   fullOverlay={<Card.FullOverlayLink>Play</Card.FullOverlayLink>}
   fullOverlayVisible
   title={<Card.Title>Full overlay locked visible</Card.Title>}
-  image={<Card.Image src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />}
+  image={<Card.Image src="/static/img/course4.jpg" />}
 />
 `,
           `
@@ -500,7 +491,7 @@ export default withServerProps(_ => (
   actionBar={[<Card.Action icon={<Icon id={Icon.ids.bookmark} />} />]}
   tag={<Card.Tag icon={<Icon id={Icon.ids.channel} />}>Channel</Card.Tag>}
   title={<Card.Title>Combined with other overlays</Card.Title>}
-  image={<Card.Image src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />}
+  image={<Card.Image src="/static/img/course4.jpg" />}
 />
 `
         ]}
@@ -518,7 +509,7 @@ export default withServerProps(_ => (
 <Card
   bonusBar={<div>Just bonus</div>}
   title={<Card.Title>Custom elements in lower-left</Card.Title>}
-  image={<Card.Image src="http://lorempixel.com/output/animals-q-c-680-320-8.jpg" />}
+  image={<Card.Image src="/static/img/course1.jpg" />}
 />
 `
         ]}

@@ -21,27 +21,21 @@ const Stack = props => (
     <Row
       title="Advanced TypeScript"
       progress={0}
-      image={
-        <Row.Image src="http://lorempixel.com/output/people-q-c-300-200-4.jpg" />
-      }
+      image={<Row.Image src="/static/img/course1.jpg" />}
       metadata1={['Brice Wilson', 'Advanced']}
       metadata2={['0m watched']}
     />
     <Row
       title="Getting Started with Reactive Programming Using RxJS"
       progress={20}
-      image={
-        <Row.Image src="http://lorempixel.com/output/people-q-c-300-200-2.jpg" />
-      }
+      image={<Row.Image src="/static/img/course2.jpg" />}
       metadata1={['Scott Allen', 'Intermediate']}
       metadata2={['23m watched']}
     />
     <Row
       title="Building a JavaScript Development Environment"
       progress={67}
-      image={
-        <Row.Image src="http://lorempixel.com/output/people-q-c-300-200-7.jpg" />
-      }
+      image={<Row.Image src="/static/img/course3.jpg" />}
       metadata1={['Cory House', 'Intermediate']}
       metadata2={['3 hr 23m watched']}
     />
@@ -50,9 +44,7 @@ const Stack = props => (
       progress={100}
       metadata1={['Joe Eames', 'Intermediate']}
       metadata2={['90m watched']}
-      image={
-        <Row.Image src="http://lorempixel.com/output/people-q-c-300-200-5.jpg" />
-      }
+      image={<Row.Image src="/static/img/course4.jpg" />}
     />
     <style jsx>{`
       .stack {
@@ -190,7 +182,7 @@ export default withServerProps(_ => (
   size={Row.sizes.medium}
   title="Medium Row"
   metadata1={['Jim Cooper']}
-  image={<Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />}
+  image={<Row.Image src="/static/img/course1.jpg" />}
 />
 `,
           `
@@ -198,7 +190,7 @@ export default withServerProps(_ => (
   size={Row.sizes.small}
   title="Small Row"
   metadata1={['Joe Eames']}
-  image={<Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />}
+  image={<Row.Image src="/static/img/course1.jpg" />}
 />
 `
         ]}
@@ -230,7 +222,7 @@ export default withServerProps(_ => (
   image={
     <Row.ImageLink>
       <a href="https://google.com" target="_blank">
-        <img src="http://lorempixel.com/output/technics-q-c-680-320-2.jpg" />
+        <img src="/static/img/course2.jpg" />
       </a>
     </Row.ImageLink>
   }
@@ -261,19 +253,19 @@ export default withServerProps(_ => (
 <Row
   progress={25}
   title="The Row Title"
-  image={<Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-1.jpg" />}
+  image={<Row.Image src="/static/img/course3.jpg" />}
 /> `,
           `
 <Row
   progress={66.6666667}
   title="The Row Title"
-  image={<Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-1.jpg" />}
+  image={<Row.Image src="/static/img/course3.jpg" />}
 /> `,
           `
 <Row
   progress={100}
   title="The Row Title"
-  image={<Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-1.jpg" />}
+  image={<Row.Image src="/static/img/course3.jpg" />}
 /> `
         ]}
       />
@@ -290,19 +282,19 @@ export default withServerProps(_ => (
           `
 <Row
   title={<Row.TextLink><a>Link Title</a></Row.TextLink>}
-  image={<Row.Image src="http://lorempixel.com/output/nature-q-c-680-320-10.jpg" />}
+  image={<Row.Image src="/static/img/course4.jpg" />}
 />
 `,
           `
 <Row
   title="Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania"
-  image={<Row.Image src="http://lorempixel.com/output/nature-q-c-680-320-10.jpg" />}
+  image={<Row.Image src="/static/img/course4.jpg" />}
 />
 `,
           `
 <Row
   title={<Row.TextLink><a>Link with Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania</a></Row.TextLink>}
-  image={<Row.Image src="http://lorempixel.com/output/nature-q-c-680-320-10.jpg" />}
+  image={<Row.Image src="/static/img/course4.jpg" />}
 />
 `
         ]}
@@ -329,7 +321,7 @@ export default withServerProps(_ => (
 <Row
   metadata1={['Simon Allardice']}
   title="Row Title"
-  image={<Row.Image src="http://lorempixel.com/output/abstract-q-c-680-320-4.jpg" />}
+  image={<Row.Image src="/static/img/course1.jpg" />}
 />
 `,
           `
@@ -337,7 +329,7 @@ export default withServerProps(_ => (
   metadata1={['Simon Allardice']}
   metadata2={['Intermediate', '2hr 20min', 'July 24, 1847']}
   title="Row with Two Lines of Meta"
-  image={<Row.Image src="http://lorempixel.com/output/abstract-q-c-680-320-4.jpg" />}
+  image={<Row.Image src="/static/img/course1.jpg" />}
 />
 `,
           `
@@ -351,7 +343,7 @@ export default withServerProps(_ => (
     "July 24, 1847 or year thereabouts, it's unclear"
   ]}
   title="Super-long Metadata"
-  image={<Row.Image src="http://lorempixel.com/output/abstract-q-c-680-320-4.jpg" />}
+  image={<Row.Image src="/static/img/course1.jpg" />}
 />
 `
         ]}
@@ -370,7 +362,7 @@ export default withServerProps(_ => (
 <Row
   actionBar={[<Row.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
   title="Action bar appears on hover"
-  image={<Row.Image src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />}
+  image={<Row.Image src="/static/img/course2.jpg" />}
 />
 `,
 
@@ -381,7 +373,7 @@ export default withServerProps(_ => (
     <Row.Action key="more" icon={<Icon id="more" />} />
   ]}
   title="Multiple actions"
-  image={<Row.Image src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />}
+  image={<Row.Image src="/static/img/course2.jpg" />}
 />
 `,
 
@@ -393,7 +385,7 @@ export default withServerProps(_ => (
   ]}
   actionBarVisible
   title="Action bar locked visible"
-  image={<Row.Image src="http://lorempixel.com/output/food-q-c-680-320-8.jpg" />}
+  image={<Row.Image src="/static/img/course2.jpg" />}
 />
 `
         ]}
@@ -416,7 +408,7 @@ export default withServerProps(_ => (
 <Row
   fullOverlay={<div>Play</div>}
   title="Custom element centered on row image"
-  image={<Row.Image src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />}
+  image={<Row.Image src="/static/img/course3.jpg" />}
 />
 `,
           `
@@ -424,7 +416,7 @@ export default withServerProps(_ => (
   fullOverlay={<div>Play</div>}
   fullOverlayVisible
   title="Full overlay locked visible"
-  image={<Row.Image src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />}
+  image={<Row.Image src="/static/img/course3.jpg" />}
 />
 `,
           `
@@ -432,7 +424,7 @@ export default withServerProps(_ => (
   fullOverlay={<Row.FullOverlayLink><a>Custom Thing</a></Row.FullOverlayLink>}
   actionBar={[<Row.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
   title="Combined with other overlays"
-  image={<Row.Image src="http://lorempixel.com/output/nature-q-c-680-320-5.jpg" />}
+  image={<Row.Image src="/static/img/course3.jpg" />}
 />
 `
         ]}
