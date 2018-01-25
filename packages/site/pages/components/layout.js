@@ -268,7 +268,11 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import * as Layout from '@pluralsight/ps-design-system-layout/react'
+        {`import {
+  PageHeadingLayout,
+  AsideLayout,
+  EqualColumnLayout
+} from '@pluralsight/ps-design-system-layout/react'`}
       </Code>
 
       <SectionHeading>Page Heading Layout</SectionHeading>
