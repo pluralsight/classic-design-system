@@ -43,8 +43,8 @@ const decorateCardsM = decorateCards.bind(null, null)
 
 const capitalize = str => str.charAt(0).toUpperCase() + str.substring(1)
 
-const Carousel = props => (
-  <div className="carousel">
+const Gallery = props => (
+  <div className="gallery">
     <Layout.EqualColumnLayout>
       <Card
         title={<Card.Title>Advanced TypeScript</Card.Title>}
@@ -88,7 +88,7 @@ const Carousel = props => (
       />
     </Layout.EqualColumnLayout>
     <style jsx>{`
-      .carousel {
+      .gallery {
         padding: ${core.layout.spacingMedium};
         background: ${core.colors.gray06};
       }
@@ -226,13 +226,13 @@ export default withServerProps(_ => (
       <SectionHeading>In-app example</SectionHeading>
       <P>
         The card is a flexible component that will fit the container it's given.
-        A carousel is a common container layout that one might encounter in the
+        A gallery is a common container layout that one might encounter in the
         product. This is an example implementation of how the Card might look in
-        a carousel in your app, using the{' '}
+        a gallery in your app, using the{' '}
         <TextLink href="/components/layout">Layout.EqualColumnLayout</TextLink>{' '}
         component.
       </P>
-      <Carousel />
+      <Gallery />
 
       <SectionHeading>Size</SectionHeading>
       <P>
