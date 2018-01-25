@@ -2,6 +2,11 @@ import * as utils from '../utils'
 
 describe('avatar/utils', () => {
   describe('#getInitials', () => {
+    test('empty cases', () => {
+      expect(utils.getInitials(null)).toEqual(undefined)
+      expect(utils.getInitials('')).toEqual(undefined)
+    })
+
     test('should return proper initials', () => {
       const cases = {
         AO: ['Alex Silva Orlando', 'Aol', 'Any Other'],

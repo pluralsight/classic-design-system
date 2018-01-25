@@ -401,6 +401,35 @@ exports[`Storyshots Using Initials Peia Organa 1`] = `
 </div>
 `;
 
+exports[`Storyshots Using Initials Single 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1m7zcb4=""
+  >
+    <div
+      data-css-2hpudj=""
+    >
+      SI
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Using Initials Uy Marley 1`] = `
 <div
   style={
@@ -427,5 +456,53 @@ exports[`Storyshots Using Initials Uy Marley 1`] = `
       UM
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials empty 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1m7zcb4=""
+  >
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials null 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1m7zcb4=""
+  />
 </div>
 `;

@@ -29,12 +29,14 @@ const names = [
   'Obi-Wan Kenobi',
   'Uy Marley',
   'Harry Potter',
-  'Diz Blau'
+  'Diz Blau',
+  'Single'
 ]
 
-const storyInitials = storiesOf('Using Initials', module).addDecorator(
-  themeDecorator(addons)
-)
+const storyInitials = storiesOf('Using Initials', module)
+  .addDecorator(themeDecorator(addons))
+  .add('empty', () => <Avatar name={''} />)
+  .add('null', () => <Avatar name={null} />)
 
 names.forEach(name => {
   storyInitials.add(name, () => <Avatar name={name} />)
