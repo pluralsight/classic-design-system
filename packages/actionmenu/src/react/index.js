@@ -4,7 +4,6 @@ import glamorous, { Div } from 'glamorous'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
-import sizeMe from 'react-sizeme'
 
 import Arrow from './arrow'
 
@@ -52,7 +51,7 @@ const Item = glamorous.button(
       : { background: 'none' }
 )
 
-const IconComponent = props =>
+const IconComponent = props => (
   <Div
     display="inline-flex"
     alignItems="center"
@@ -60,11 +59,13 @@ const IconComponent = props =>
   >
     <Icon id={props.iconId} size={Icon.sizes.medium} />
   </Div>
+)
 
-const NestedArrow = _ =>
+const NestedArrow = _ => (
   <Div marginLeft="auto" paddingLeft={core.layout.spacingXSmall}>
     <Arrow />
   </Div>
+)
 
 const calcNestedMenuPosition = (menuWidth, origin) =>
   ({
@@ -127,11 +128,12 @@ class ItemComponent extends React.Component {
   }
   renderNested() {
     return this.state.isNestedRendered &&
-    this.props.nested &&
-    this.props.isActive
+      this.props.nested &&
+      this.props.isActive
       ? React.cloneElement(this.props.nested, {
           css: calcNestedMenuPosition(
-            this.props.size.width,
+            this.item.getBoundingClientRect().width,
+            // this.props.size.width,
             this.props._origin
           ),
           onClose: this.handleNestedClose,
@@ -142,7 +144,7 @@ class ItemComponent extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div style={{ position: 'relative' }}>
         <Item
           aria-haspopup={!!this.props.nested}
           css={this.props.css}
@@ -196,7 +198,7 @@ DividerComponent.propTypes = {
   _onFocus: PropTypes.func
 }
 
-const Overlay = props =>
+const Overlay = props => (
   <Div
     position="fixed"
     height="100vh"
@@ -205,6 +207,7 @@ const Overlay = props =>
     left="0"
     onClick={props.onClick}
   />
+)
 
 const slide = glamor.css.keyframes({
   '100%': {
@@ -348,7 +351,7 @@ class ActionMenuComponent extends React.Component {
 }
 ActionMenuComponent.displayName = 'ActionMenu'
 
-ActionMenuComponent.Item = sizeMe({ monitorWidth: true })(ItemComponent)
+ActionMenuComponent.Item = ItemComponent
 ActionMenuComponent.Divider = DividerComponent
 ActionMenuComponent.Overlay = Overlay
 ActionMenuComponent.origins = origins

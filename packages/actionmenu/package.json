@@ -26,8 +26,7 @@
     "@pluralsight/ps-design-system-core": "^4.1.0",
     "@pluralsight/ps-design-system-icon": "^8.4.6",
     "glamorous": "^4.1.0",
-    "prop-types": "^15.5.10",
-    "react-sizeme": "^2.3.4"
+    "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-button": "^10.3.5",
