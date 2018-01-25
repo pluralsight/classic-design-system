@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@1.6.0...@pluralsight/ps-design-system-badge@2.0.0) (2018-01-25)
+
+
+### Code Refactoring
+
+* **badge:** add psds- prefix to selector names ([28b6ea0](https://github.com/pluralsight/design-system/commit/28b6ea0))
+
+
+### Features
+
+* **badge:** generate scss stylesheet ([3571318](https://github.com/pluralsight/design-system/commit/3571318))
+
+
+### BREAKING CHANGES
+
+* **badge:** add psds- prefix to stylesheet selector names
+
+
+
+
 <a name="1.6.0"></a>
 # [1.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@1.4.11...@pluralsight/ps-design-system-badge@1.6.0) (2018-01-24)
 
