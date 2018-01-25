@@ -62,6 +62,7 @@ exports[`Storyshots drawer controlled 1`] = `
               onClick={[Function]}
             >
               <div
+                aria-label="Collapse"
                 className="css-xnveog"
               >
                 <div
@@ -86,7 +87,7 @@ exports[`Storyshots drawer controlled 1`] = `
           className="css-ule0ur"
         >
           <div
-            className="css-8nylan"
+            className="css-1j3g0qd"
           >
             Drawer Content Here
           </div>
@@ -146,6 +147,7 @@ exports[`Storyshots drawer default 1`] = `
             onClick={[Function]}
           >
             <div
+              aria-label="Expand"
               className="css-1byjzqg"
             >
               <div
@@ -170,7 +172,7 @@ exports[`Storyshots drawer default 1`] = `
         className="css-1i2htk9"
       >
         <div
-          className="css-8nylan"
+          className="css-1j3g0qd"
         >
           Drawer Content Here
         </div>
@@ -328,6 +330,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
             onClick={[Function]}
           >
             <div
+              aria-label="Expand"
               className="css-1byjzqg"
             >
               <div
@@ -352,9 +355,199 @@ exports[`Storyshots drawer row component with actions 1`] = `
         className="css-1i2htk9"
       >
         <div
-          className="css-8nylan"
+          className="css-1j3g0qd"
         >
           Drawer Content Here
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots drawer stack of drawers 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+        "fontSize": 24,
+        "padding": 48,
+      }
+    }
+  >
+    <div>
+      <div>
+        <div
+          className="css-58omaf"
+          onClick={[Function]}
+        >
+          <div
+            className="css-1lzobj4"
+          >
+            <div
+              className="css-k4qf09"
+            >
+              <div>
+                The Drawer #1
+              </div>
+            </div>
+          </div>
+          <div
+            className="css-qs2rg7"
+          >
+            <button
+              className="css-wepra9"
+              onClick={[Function]}
+            >
+              <div
+                aria-label="Expand"
+                className="css-1byjzqg"
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          className="css-1i2htk9"
+        >
+          <div
+            className="css-1j3g0qd"
+          />
+        </div>
+      </div>
+      <div>
+        <div
+          className="css-58omaf"
+          onClick={[Function]}
+        >
+          <div
+            className="css-1lzobj4"
+          >
+            <div
+              className="css-k4qf09"
+            >
+              <div>
+                The Drawer #2
+              </div>
+            </div>
+          </div>
+          <div
+            className="css-qs2rg7"
+          >
+            <button
+              className="css-wepra9"
+              onClick={[Function]}
+            >
+              <div
+                aria-label="Expand"
+                className="css-1byjzqg"
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          className="css-1i2htk9"
+        >
+          <div
+            className="css-1j3g0qd"
+          />
+        </div>
+      </div>
+      <div>
+        <div
+          className="css-58omaf"
+          onClick={[Function]}
+        >
+          <div
+            className="css-1lzobj4"
+          >
+            <div
+              className="css-k4qf09"
+            >
+              <div>
+                The Drawer #2
+              </div>
+            </div>
+          </div>
+          <div
+            className="css-qs2rg7"
+          >
+            <button
+              className="css-wepra9"
+              onClick={[Function]}
+            >
+              <div
+                aria-label="Expand"
+                className="css-1byjzqg"
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          className="css-1i2htk9"
+        >
+          <div
+            className="css-1j3g0qd"
+          />
         </div>
       </div>
     </div>
@@ -413,6 +606,7 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
               onClick={[Function]}
             >
               <div
+                aria-label="Expand"
                 className="css-1byjzqg"
               >
                 <div
@@ -437,7 +631,7 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
           className="css-1i2htk9"
         >
           <div
-            className="css-8nylan"
+            className="css-1j3g0qd"
           >
             Drawer Content Here
           </div>
@@ -497,6 +691,7 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
             onClick={[Function]}
           >
             <div
+              aria-label="Collapse"
               className="css-xnveog"
             >
               <div
@@ -521,7 +716,7 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
         className="css-ule0ur"
       >
         <div
-          className="css-8nylan"
+          className="css-1j3g0qd"
         >
           <div>
             Panel here
@@ -641,6 +836,7 @@ exports[`Storyshots drawer with row component 1`] = `
             onClick={[Function]}
           >
             <div
+              aria-label="Expand"
               className="css-1byjzqg"
             >
               <div
@@ -665,7 +861,7 @@ exports[`Storyshots drawer with row component 1`] = `
         className="css-1i2htk9"
       >
         <div
-          className="css-8nylan"
+          className="css-1j3g0qd"
         >
           Drawer Content Here
         </div>
