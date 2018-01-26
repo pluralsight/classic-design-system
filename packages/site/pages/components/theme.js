@@ -115,7 +115,15 @@ export default withServerProps(_ => (
           <Link href="/components/button#light-theme">Button</Link>
         </Text.List.Item>
         <Text.List.Item>
+          <Link href="/components/circularprogress#light-theme">
+            Circular Progress
+          </Link>
+        </Text.List.Item>
+        <Text.List.Item>
           <Link href="/components/drawer#light-theme">Drawer</Link>
+        </Text.List.Item>
+        <Text.List.Item>
+          <Link href="/components/switch#light-theme">Switch</Link>
         </Text.List.Item>
         <Text.List.Item>
           <Link href="/components/tab#light-theme">Tab</Link>
