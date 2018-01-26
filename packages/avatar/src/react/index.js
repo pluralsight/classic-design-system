@@ -2,11 +2,11 @@ import React from 'react'
 import { sizes } from '../vars'
 import PropTypes from 'prop-types'
 import styles from './styles'
-import { getInitials } from './utils'
+import { getInitials, transformSrc } from './utils'
 
 const Avatar = ({ name, src, size, className }) => (
   <div {...styles.body({ size })} className={className}>
-    {src && <img {...styles.img} src={src} />}
+    {src && <img {...styles.img} src={transformSrc(src)} />}
     {name && <div {...styles.initials({ name })}>{getInitials(name)}</div>}
   </div>
 )

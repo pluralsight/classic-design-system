@@ -1,4 +1,4 @@
-import { colorByLetter, defaultColor } from '../vars'
+import { colorByLetter, defaultColor, defaultGravatarImage } from '../vars'
 
 export const getInitials = fullname => {
   if (!fullname || !fullname.length) return
@@ -14,4 +14,10 @@ export const getInitials = fullname => {
 export const getColorByName = name => {
   const initial = name[0].toUpperCase() || null
   return colorByLetter[initial] || defaultColor
+}
+
+export const transformSrc = src => {
+  if (!src.match(/gravatar/)) return src
+  const sep = src.match(/\?/) ? '&' : '?'
+  return `${src}${sep}d=${defaultGravatarImage}`
 }

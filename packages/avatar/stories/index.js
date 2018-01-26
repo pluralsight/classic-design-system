@@ -37,6 +37,12 @@ const storyInitials = storiesOf('Using Initials', module)
   .addDecorator(themeDecorator(addons))
   .add('empty', () => <Avatar name={''} />)
   .add('null', () => <Avatar name={null} />)
+  .add('with invalid gravatar image', () => (
+    <Avatar
+      name="Alan Turing"
+      src="https://secure.gravatar.com/avatar/invalidhash?d=tmp"
+    />
+  ))
 
 names.forEach(name => {
   storyInitials.add(name, () => <Avatar name={name} />)
