@@ -10,11 +10,3 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Features
 
 * **avatar:** new component ([b35d3b2](https://github.com/pluralsight/design-system/commit/b35d3b2))
-
-
-
-
-# Change Log
-
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
