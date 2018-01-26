@@ -14,6 +14,17 @@ if (typeof window !== 'undefined') require('element-closest')
 const { gray01, gray02, gray03, gray04, gray06, white } = core.colors
 const CARET_AREA_WIDTH = 38
 
+const DrawerRoot = glamorous.div(
+  {
+    ':first-of-type': {
+      borderTop: 'none'
+    }
+  },
+  ({ themeName }) => ({
+    borderTop: `1px solid ${themeName === themeNames.light ? gray01 : gray04}`
+  })
+)
+
 const DrawerBase = glamorous.div(
   {
     position: 'relative',
@@ -50,15 +61,10 @@ const DrawerPanel = glamorous.div(
       : {}
 )
 
-const DrawerPanelContent = glamorous.div(
-  {
-    marginRight: -CARET_AREA_WIDTH,
-    paddingRight: CARET_AREA_WIDTH
-  },
-  ({ themeName }) => ({
-    borderTop: `1px solid ${themeName === themeNames.light ? gray01 : gray04}`
-  })
-)
+const DrawerPanelContent = glamorous.div({
+  marginRight: -CARET_AREA_WIDTH,
+  paddingRight: CARET_AREA_WIDTH
+})
 
 const ToggleButtonContainer = glamorous.div({
   position: 'absolute',
@@ -128,7 +134,7 @@ class Drawer extends React.Component {
     const ariaLabel = isOpen ? 'Collapse' : 'Expand'
 
     return (
-      <div>
+      <DrawerRoot>
         <DrawerBase isOpen={isOpen} onClick={this.handleClick}>
           <DrawerPanelContent themeName={themeName}>
             <Div padding={`0 ${core.layout.spacingMedium}`}>
@@ -146,7 +152,7 @@ class Drawer extends React.Component {
         <DrawerPanel isOpen={isOpen} themeName={themeName}>
           <Collapsible isOpen={isOpen}>{this.props.children}</Collapsible>
         </DrawerPanel>
-      </div>
+      </DrawerRoot>
     )
   }
 }

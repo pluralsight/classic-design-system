@@ -38,13 +38,15 @@ exports[`Storyshots drawer controlled 1`] = `
           Toggle drawer
         </span>
       </button>
-      <div>
+      <div
+        className="css-1hkpb7b"
+      >
         <div
           className="css-a8p3d5"
           onClick={[Function]}
         >
           <div
-            className="css-1lzobj4"
+            className="css-1m37xb3"
           >
             <div
               className="css-k4qf09"
@@ -123,13 +125,15 @@ exports[`Storyshots drawer default 1`] = `
       }
     }
   >
-    <div>
+    <div
+      className="css-1hkpb7b"
+    >
       <div
         className="css-58omaf"
         onClick={[Function]}
       >
         <div
-          className="css-1lzobj4"
+          className="css-1m37xb3"
         >
           <div
             className="css-k4qf09"
@@ -207,13 +211,15 @@ exports[`Storyshots drawer row component with actions 1`] = `
       }
     }
   >
-    <div>
+    <div
+      className="css-1hkpb7b"
+    >
       <div
         className="css-58omaf"
         onClick={[Function]}
       >
         <div
-          className="css-1lzobj4"
+          className="css-1m37xb3"
         >
           <div
             className="css-k4qf09"
@@ -391,13 +397,15 @@ exports[`Storyshots drawer stack of drawers 1`] = `
     }
   >
     <div>
-      <div>
+      <div
+        className="css-1hkpb7b"
+      >
         <div
           className="css-58omaf"
           onClick={[Function]}
         >
           <div
-            className="css-1lzobj4"
+            className="css-1m37xb3"
           >
             <div
               className="css-k4qf09"
@@ -444,13 +452,15 @@ exports[`Storyshots drawer stack of drawers 1`] = `
           />
         </div>
       </div>
-      <div>
+      <div
+        className="css-1hkpb7b"
+      >
         <div
           className="css-58omaf"
           onClick={[Function]}
         >
           <div
-            className="css-1lzobj4"
+            className="css-1m37xb3"
           >
             <div
               className="css-k4qf09"
@@ -497,13 +507,15 @@ exports[`Storyshots drawer stack of drawers 1`] = `
           />
         </div>
       </div>
-      <div>
+      <div
+        className="css-1hkpb7b"
+      >
         <div
           className="css-58omaf"
           onClick={[Function]}
         >
           <div
-            className="css-1lzobj4"
+            className="css-1m37xb3"
           >
             <div
               className="css-k4qf09"
@@ -581,13 +593,15 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
     }
   >
     <div>
-      <div>
+      <div
+        className="css-1hkpb7b"
+      >
         <div
           className="css-58omaf"
           onClick={[Function]}
         >
           <div
-            className="css-1lzobj4"
+            className="css-1m37xb3"
           >
             <div
               className="css-k4qf09"
@@ -667,13 +681,15 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
       }
     }
   >
-    <div>
+    <div
+      className="css-1hkpb7b"
+    >
       <div
         className="css-a8p3d5"
         onClick={[Function]}
       >
         <div
-          className="css-1lzobj4"
+          className="css-1m37xb3"
         >
           <div
             className="css-k4qf09"
@@ -753,13 +769,15 @@ exports[`Storyshots drawer with row component 1`] = `
       }
     }
   >
-    <div>
+    <div
+      className="css-1hkpb7b"
+    >
       <div
         className="css-58omaf"
         onClick={[Function]}
       >
         <div
-          className="css-1lzobj4"
+          className="css-1m37xb3"
         >
           <div
             className="css-k4qf09"
