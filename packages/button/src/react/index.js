@@ -9,42 +9,29 @@ import React from 'react'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
 import { transparentize } from 'polished'
 
-export const appearances = {
-  primary: 'primary',
-  stroke: 'stroke',
-  flat: 'flat'
-}
-
-export const sizes = {
-  xSmall: 'xSmall',
-  small: 'small',
-  medium: 'medium',
-  large: 'large'
-}
-
-export const iconAligns = { left: 'left', right: 'right' }
+import * as vars from '../vars'
 
 const styleSize = ({ size }) =>
   ({
-    [sizes.xSmall]: {
+    [vars.sizes.xSmall]: {
       fontSize: core.type.fontSizeXSmall,
       lineHeight: core.type.lineHeightStandard,
       padding: `0 ${core.layout.spacingXSmall}`,
       height: '24px'
     },
-    [sizes.small]: {
+    [vars.sizes.small]: {
       fontSize: core.type.fontSizeSmall,
       lineHeight: core.type.lineHeightStandard,
       padding: `${core.layout.spacingXXSmall} ${core.layout.spacingXSmall}`,
       height: '32px'
     },
-    [sizes.medium]: {
+    [vars.sizes.medium]: {
       fontSize: core.type.fontSizeSmall,
       lineHeight: core.type.lineHeightStandard,
       padding: `${core.layout.spacingXXSmall} ${core.layout.spacingMedium}`,
       height: '40px'
     },
-    [sizes.large]: {
+    [vars.sizes.large]: {
       fontSize: core.type.fontSizeMedium,
       lineHeight: core.type.lineHeightExtra,
       padding: `${core.layout.spacingXXSmall} ${core.layout.spacingMedium}`,
@@ -54,7 +41,7 @@ const styleSize = ({ size }) =>
 
 const styleAppearance = ({ appearance, themeName }) =>
   ({
-    [appearances.stroke]: {
+    [vars.appearances.stroke]: {
       border: `1px solid ${core.colors.orange}`,
       color: core.colors.orange,
       background: 'none',
@@ -64,7 +51,7 @@ const styleAppearance = ({ appearance, themeName }) =>
         background: 'none'
       }
     },
-    [appearances.flat]: {
+    [vars.appearances.flat]: {
       border: 'none',
       color:
         themeName === themeNames.light
@@ -114,7 +101,7 @@ const styleDisabledFlat = ({ disabled, appearance }) =>
 const styleIcon = ({ icon, iconAlign, iconOnly, size }) =>
   icon && !iconOnly
     ? {
-        [iconAlign === iconAligns.right ? 'paddingRight' : 'paddingLeft']:
+        [iconAlign === vars.iconAligns.right ? 'paddingRight' : 'paddingLeft']:
           size === sizes.large
             ? core.layout.spacingSmall
             : core.layout.spacingXSmall
@@ -122,17 +109,17 @@ const styleIcon = ({ icon, iconAlign, iconOnly, size }) =>
     : null
 
 const styleIconAlign = ({ iconAlign }) =>
-  iconAlign === iconAligns.right ? { flexDirection: 'row-reverse' } : null
+  iconAlign === vars.iconAligns.right ? { flexDirection: 'row-reverse' } : null
 
 const styleIconOnly = ({ iconOnly, size }) =>
   iconOnly
     ? {
         padding: 0,
         width: {
-          [sizes.xSmall]: '24px',
-          [sizes.small]: '32px',
-          [sizes.medium]: '40px',
-          [sizes.large]: '48px'
+          [vars.sizes.xSmall]: '24px',
+          [vars.sizes.small]: '32px',
+          [vars.sizes.medium]: '40px',
+          [vars.sizes.large]: '48px'
         }[size]
       }
     : null
@@ -174,7 +161,7 @@ const getButtonStyles = props =>
   )
 
 const styleIconAlignIconContainer = ({ iconAlign }) =>
-  iconAlign === iconAligns.right
+  iconAlign === vars.iconAligns.right
     ? {
         marginLeft: core.layout.spacingXSmall,
         marginRight: 0
@@ -201,10 +188,10 @@ const IconContainer = glamorous.div(
 
 const mapIconSize = props => {
   const btnToIconSizes = {
-    [sizes.xSmall]: iconSizes.small,
-    [sizes.small]: iconSizes.medium,
-    [sizes.medium]: iconSizes.medium,
-    [sizes.large]: iconSizes.medium
+    [vars.sizes.xSmall]: iconSizes.small,
+    [vars.sizes.small]: iconSizes.medium,
+    [vars.sizes.medium]: iconSizes.medium,
+    [vars.sizes.large]: iconSizes.medium
   }
   return btnToIconSizes[props.size]
     ? btnToIconSizes[props.size]
@@ -243,15 +230,15 @@ const LoadingIndicator = glamorous.span(
   },
   ({ appearance, themeName }) =>
     ({
-      [appearances.primary]: {
+      [vars.appearances.primary]: {
         borderColor: transparentize(0.8, core.colors.gray04),
         borderTopColor: core.colors.white
       },
-      [appearances.stroke]: {
+      [vars.appearances.stroke]: {
         borderColor: transparentize(0.8, core.colors.white),
         borderTopColor: core.colors.orange
       },
-      [appearances.flat]: {
+      [vars.appearances.flat]: {
         borderColor:
           themeName === themeNames.light
             ? transparentize(0.8, core.colors.gray04)
@@ -369,26 +356,30 @@ class Btn extends React.Component {
 }
 
 Btn.propTypes = {
-  appearance: PropTypes.oneOf(Object.keys(appearances)),
+  appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
   disabled: PropTypes.bool,
   icon: PropTypes.element,
-  iconAlign: PropTypes.oneOf(Object.keys(iconAligns)),
+  iconAlign: PropTypes.oneOf(Object.keys(vars.iconAligns)),
   innerRef: PropTypes.func,
   loading: PropTypes.bool,
-  size: PropTypes.oneOf(Object.keys(sizes))
+  size: PropTypes.oneOf(Object.keys(vars.sizes))
 }
 Btn.defaultProps = {
-  appearance: appearances.primary,
+  appearance: vars.appearances.primary,
   disabled: false,
   loading: false,
-  size: sizes.medium
+  size: vars.sizes.medium
 }
 Btn.contextTypes = {
   themeName: PropTypes.string
 }
 
-Btn.appearances = appearances
-Btn.iconAligns = iconAligns
-Btn.sizes = sizes
+Btn.appearances = vars.appearances
+Btn.iconAligns = vars.iconAligns
+Btn.sizes = vars.sizes
+
+export const appearances = vars.appearances
+export const iconAlignss = vars.iconAlignss
+export const sizes = vars.sizes
 
 export default Btn
