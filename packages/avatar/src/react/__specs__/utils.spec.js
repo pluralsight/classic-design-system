@@ -1,4 +1,6 @@
+import { URL } from 'url'
 import * as utils from '../utils'
+import { defaultGravatarImage } from '../../vars'
 
 describe('avatar/utils', () => {
   describe('#getInitials', () => {
@@ -36,6 +38,22 @@ describe('avatar/utils', () => {
           /^#(?:[0-9a-fA-F]{3}){1,2}$/
         )
       })
+    })
+  })
+
+  describe('#transformSrc', () => {
+    test('should add default transparent image when gravatar', () => {
+      const src =
+        'https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7'
+      const url = new URL(utils.transformSrc(src))
+      expect(url.href).not.toBe(src)
+      expect(url.searchParams.get('d')).toEqual(defaultGravatarImage)
+    })
+
+    test('should not add default gravatar image when not gravatar', () => {
+      const src = 'https://test/123'
+      const url = new URL(utils.transformSrc(src))
+      expect(url.href).toBe(src)
     })
   })
 })

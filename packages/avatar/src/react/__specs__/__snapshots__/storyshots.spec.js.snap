@@ -22,7 +22,7 @@ exports[`Storyshots Default large 1`] = `
   >
     <img
       data-css-1ba73bf=""
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https://s2.pluralsight.com/design-system/assets/transparent.gif"
     />
   </div>
 </div>
@@ -50,7 +50,7 @@ exports[`Storyshots Default medium 1`] = `
   >
     <img
       data-css-1ba73bf=""
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https://s2.pluralsight.com/design-system/assets/transparent.gif"
     />
   </div>
 </div>
@@ -78,7 +78,7 @@ exports[`Storyshots Default small 1`] = `
   >
     <img
       data-css-1ba73bf=""
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https://s2.pluralsight.com/design-system/assets/transparent.gif"
     />
   </div>
 </div>
@@ -106,7 +106,7 @@ exports[`Storyshots Default xLarge 1`] = `
   >
     <img
       data-css-1ba73bf=""
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https://s2.pluralsight.com/design-system/assets/transparent.gif"
     />
   </div>
 </div>
@@ -134,7 +134,7 @@ exports[`Storyshots Default xSmall 1`] = `
   >
     <img
       data-css-1ba73bf=""
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https://s2.pluralsight.com/design-system/assets/transparent.gif"
     />
   </div>
 </div>
@@ -161,7 +161,7 @@ exports[`Storyshots Using Initials % Special Characters 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-2hpudj=""
+      data-css-1piqfk0=""
     >
       %C
     </div>
@@ -190,7 +190,7 @@ exports[`Storyshots Using Initials Anakin Skywalker 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-2hpudj=""
+      data-css-1piqfk0=""
     >
       AS
     </div>
@@ -219,7 +219,7 @@ exports[`Storyshots Using Initials Budapest Skywalker 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-awbda3=""
+      data-css-10aefha=""
     >
       BS
     </div>
@@ -248,7 +248,7 @@ exports[`Storyshots Using Initials Carlos Organa 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-o9l3rv=""
+      data-css-96mz0l=""
     >
       CO
     </div>
@@ -277,7 +277,7 @@ exports[`Storyshots Using Initials Dennis Pimenta 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-147nf7d=""
+      data-css-1ewxdui=""
     >
       DP
     </div>
@@ -306,7 +306,7 @@ exports[`Storyshots Using Initials Diz Blau 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-147nf7d=""
+      data-css-1ewxdui=""
     >
       DB
     </div>
@@ -335,7 +335,7 @@ exports[`Storyshots Using Initials Harry Potter 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-vyiqsv=""
+      data-css-e5wbco=""
     >
       HP
     </div>
@@ -364,7 +364,7 @@ exports[`Storyshots Using Initials Obi-Wan Kenobi 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-1w202mr=""
+      data-css-1f0e8wn=""
     >
       OK
     </div>
@@ -393,7 +393,7 @@ exports[`Storyshots Using Initials Peia Organa 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-14kwj5a=""
+      data-css-h0w4r3=""
     >
       PO
     </div>
@@ -422,7 +422,7 @@ exports[`Storyshots Using Initials Single 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-2hpudj=""
+      data-css-1piqfk0=""
     >
       SI
     </div>
@@ -451,7 +451,7 @@ exports[`Storyshots Using Initials Uy Marley 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-o9l3rv=""
+      data-css-96mz0l=""
     >
       UM
     </div>
@@ -504,5 +504,38 @@ exports[`Storyshots Using Initials null 1`] = `
     className={undefined}
     data-css-1m7zcb4=""
   />
+</div>
+`;
+
+exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className={undefined}
+    data-css-1m7zcb4=""
+  >
+    <img
+      data-css-1ba73bf=""
+      src="https://secure.gravatar.com/avatar/invalidhash?d=tmp&d=https://s2.pluralsight.com/design-system/assets/transparent.gif"
+    />
+    <div
+      data-css-1piqfk0=""
+    >
+      AT
+    </div>
+  </div>
 </div>
 `;
