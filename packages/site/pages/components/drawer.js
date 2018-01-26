@@ -20,10 +20,12 @@ import {
 
 const ExampleDrawerBase = () => (
   <div>
-    <Row title="Building a Web App with ASP.NET Core"
-         progress={18}
-         metadata1={['Joe Eames', 'Intermediate', 'Jul 21, 2016']}
-         image={<div className="image-placeholder"/>}/>
+    <Row
+      title="Building a Web App with ASP.NET Core"
+      progress={18}
+      metadata1={['Joe Eames', 'Intermediate', 'Jul 21, 2016']}
+      image={<div className="image-placeholder" />}
+    />
     <style jsx>{`
       .image-placeholder {
         width: 100%;
@@ -36,11 +38,24 @@ const ExampleDrawerBase = () => (
 
 const ExampleDrawerPanel = () => (
   <div className="drawer-panel-example">
-    <Row title="Course Overview" metadata1={['1m 46s']} actionBar={[<Row.Action icon={<Icon id="bookmark" />} key="bookmark" />]} size={Row.sizes.small} actionBarVisible />
-    <Row title="What is ASP.NET Core?" metadata1={['39m 28s']} actionBar={[<Row.Action icon={<Icon id="bookmark" />} key="bookmark" />]} size={Row.sizes.small} actionBarVisible />
+    <Row
+      title="Course Overview"
+      metadata1={['1m 46s']}
+      actionBar={[<Row.Action icon={<Icon id="bookmark" />} key="bookmark" />]}
+      size={Row.sizes.small}
+      actionBarVisible
+    />
+    <Row
+      title="What is ASP.NET Core?"
+      metadata1={['39m 28s']}
+      actionBar={[<Row.Action icon={<Icon id="bookmark" />} key="bookmark" />]}
+      size={Row.sizes.small}
+      actionBarVisible
+    />
     <style jsx>{`
       .drawer-panel-example {
-        padding: ${core.layout.spacingXLarge} ${core.layout.spacingXLarge} ${core.layout.spacingMedium} ${core.layout.spacingXLarge};
+        padding: ${core.layout.spacingXLarge} ${core.layout.spacingXLarge}
+          ${core.layout.spacingMedium} ${core.layout.spacingXLarge};
       }
     `}</style>
   </div>
@@ -69,7 +84,10 @@ const DrawerExamples = () => (
 )
 
 const PinkBox = props => (
-  <div className="pink-box" style={{ height: props.children === 'DrawerBase' ? 100 : 128 }}>
+  <div
+    className="pink-box"
+    style={{ height: props.children === 'DrawerBase' ? 100 : 128 }}
+  >
     <span>{`<${props.children}>`}</span>
     <style jsx>{`
       .pink-box {
@@ -91,11 +109,13 @@ export default withServerProps(_ => (
       <PageHeading packageName="drawer">Drawer</PageHeading>
 
       <P>Install the component dependency:</P>
-      <Code language="bash">npm install @pluralsight/ps-design-system-drawer</Code>
+      <Code language="bash">
+        npm install @pluralsight/ps-design-system-drawer
+      </Code>
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Button from '@pluralsight/ps-design-system-drawer/react'
+        import Drawer from '@pluralsight/ps-design-system-drawer/react'
       </Code>
 
       <PropTypes
@@ -140,19 +160,21 @@ export default withServerProps(_ => (
 
       <SectionHeading>Example</SectionHeading>
       <P>
-        A drawer as well as its expanded region can be wrapped around other components and adapt to their size.
+        A drawer as well as its expanded region can be wrapped around other
+        components and adapt to their size.
       </P>
       <DrawerExamples />
 
       <SectionHeading>Drawer Base</SectionHeading>
       <P>
-        The DrawerBase may expand to fit any elements, and includes the mechanism to expose the DrawerPanel.
+        The DrawerBase may expand to fit any elements, and includes the
+        mechanism to expose the DrawerPanel.
       </P>
       <Example.React
         includes={{ Drawer, PinkBox }}
         orient="vertical"
         codes={[
-`<Drawer startOpen base={<PinkBox>DrawerBase</PinkBox>}>
+          `<Drawer startOpen base={<PinkBox>DrawerBase</PinkBox>}>
   <div style={{ height: 128 }} />
 </Drawer>`
         ]}
@@ -160,13 +182,14 @@ export default withServerProps(_ => (
 
       <SectionHeading>Drawer Panel</SectionHeading>
       <P>
-        The DrawerPanel may expand to fit any elements. No default spacing is built in.
+        The DrawerPanel may expand to fit any elements. No default spacing is
+        built in.
       </P>
       <Example.React
         includes={{ Drawer }}
         orient="vertical"
         codes={[
-`<Drawer startOpen base={<div style={{ height: 100 }} />}>
+          `<Drawer startOpen base={<div style={{ height: 100 }} />}>
   <PinkBox>DrawerPanel</PinkBox>
 </Drawer>`
         ]}
@@ -174,14 +197,15 @@ export default withServerProps(_ => (
 
       <SectionHeading>Light Theme</SectionHeading>
       <P>
-        To specify the light theme, wrap your components in a <code>Theme</code> component.
+        To specify the light theme, wrap your components in a <code>Theme</code>{' '}
+        component.
       </P>
       <Example.React
         includes={{ Drawer, Theme }}
         themeName={Theme.names.light}
         orient="vertical"
         codes={[
-`<Theme name={Theme.names.light}>
+          `<Theme name={Theme.names.light}>
   <Drawer startOpen base={<div style={{ height: 100 }} />}>
     <div style={{ height: 128 }} />
   </Drawer>
