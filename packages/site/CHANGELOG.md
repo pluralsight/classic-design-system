@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.21.0"></a>
+# [9.21.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.20.2...@pluralsight/ps-design-system-site@9.21.0) (2018-01-26)
+
+
+### Bug Fixes
+
+* **site:** inconsistent import on Layout example ([61510e0](https://github.com/pluralsight/design-system/commit/61510e0)), closes [#165](https://github.com/pluralsight/design-system/issues/165)
+* **site:** replace loremipsum with custom course imagery ([b4244ce](https://github.com/pluralsight/design-system/commit/b4244ce)), closes [#176](https://github.com/pluralsight/design-system/issues/176)
+
+
+### Features
+
+* **site:** avatar docs ([8cf1ce1](https://github.com/pluralsight/design-system/commit/8cf1ce1))
+
+
+
+
 <a name="9.20.2"></a>
 ## [9.20.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.20.1...@pluralsight/ps-design-system-site@9.20.2) (2018-01-25)
 
