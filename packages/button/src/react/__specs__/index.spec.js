@@ -39,6 +39,7 @@ test('click on disabled button with href does not trigger onClick', () => {
     </Button>
   )
   button.simulate('click')
+
   expect(callCount).toBe(0)
 })
 
