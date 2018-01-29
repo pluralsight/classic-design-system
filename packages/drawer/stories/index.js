@@ -137,3 +137,16 @@ storiesOf('drawer', module)
       <Drawer base={<div>The Drawer #2</div>} />
     </div>
   ))
+  .add('stack of non-sibling drawers', () => (
+    <div>
+      <div>
+        <Drawer base={<div>The Drawer #1</div>} />
+      </div>
+      <div>
+        <Drawer base={<div>The Drawer #2</div>} />
+      </div>
+      <div>
+        <Drawer base={<div>The Drawer #2</div>} />
+      </div>
+    </div>
+  ))
