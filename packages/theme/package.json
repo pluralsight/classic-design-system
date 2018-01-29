@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-theme",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Design System component for theming",
   "main": "index.js",
   "scripts": {

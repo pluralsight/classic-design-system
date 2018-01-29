@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.20"></a>
+## [1.0.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@1.0.18...@pluralsight/ps-design-system-drawer@1.0.20) (2018-01-29)
+
+
+### Bug Fixes
+
+* **drawer:** revert first drawer has no border top change ([92e8611](https://github.com/pluralsight/design-system/commit/92e8611)), closes [#159](https://github.com/pluralsight/design-system/issues/159)
+
+
+
+
 <a name="1.0.19"></a>
 ## [1.0.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@1.0.18...@pluralsight/ps-design-system-drawer@1.0.19) (2018-01-29)
 

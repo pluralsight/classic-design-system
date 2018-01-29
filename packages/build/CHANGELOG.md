@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.6.0...@pluralsight/ps-design-system-build@1.7.0) (2018-01-29)
+
+
+### Bug Fixes
+
+* **build:** dashify the output css rules ([a203c6a](https://github.com/pluralsight/design-system/commit/a203c6a))
+
+
+### Features
+
+* **build:** css selector can be a function ([1282f83](https://github.com/pluralsight/design-system/commit/1282f83))
+
+
+
+
 <a name="1.6.0"></a>
 # [1.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.4.14...@pluralsight/ps-design-system-build@1.6.0) (2018-01-24)
 
