@@ -1,3 +1,5 @@
+const dashify = require('dashify')
+
 // based on https://raw.githubusercontent.com/tiaanduplessis/obj-to-css/master/index.js
 function toCss(obj = {}) {
   const selectors = Object.keys(obj)
@@ -6,13 +8,13 @@ function toCss(obj = {}) {
       const definition =
         typeof obj[selector] === 'function' ? obj[selector]({}) : obj[selector]
       const rules = Object.keys(definition)
-        .map(rule => `  ${rule}: ${definition[rule]}`)
-        .join(';\n')
+        .map(rule => `  ${dashify(rule)}: ${definition[rule]};`)
+        .join('\n')
       return `${selector} {
 ${rules}
-}\n`
+}`
     })
-    .join('')
+    .join('\n')
 }
 
 module.exports = toCss
