@@ -3,7 +3,8 @@ function toCss(obj = {}) {
   const selectors = Object.keys(obj)
   return selectors
     .map(selector => {
-      const definition = obj[selector]
+      const definition =
+        typeof obj[selector] === 'function' ? obj[selector]({}) : obj[selector]
       const rules = Object.keys(definition)
         .map(rule => `  ${rule}: ${definition[rule]}`)
         .join(';\n')
