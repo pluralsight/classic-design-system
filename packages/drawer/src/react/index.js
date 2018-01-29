@@ -14,16 +14,9 @@ if (typeof window !== 'undefined') require('element-closest')
 const { gray01, gray02, gray03, gray04, gray06, white } = core.colors
 const CARET_AREA_WIDTH = 38
 
-const DrawerRoot = glamorous.div(
-  {
-    ':first-of-type': {
-      borderTop: 'none'
-    }
-  },
-  ({ themeName }) => ({
-    borderTop: `1px solid ${themeName === themeNames.light ? gray01 : gray04}`
-  })
-)
+const DrawerRoot = glamorous.div(({ themeName }) => ({
+  borderTop: `1px solid ${themeName === themeNames.light ? gray01 : gray04}`
+}))
 
 const DrawerBase = glamorous.div(
   {
