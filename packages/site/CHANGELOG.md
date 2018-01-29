@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.21.1"></a>
+## [9.21.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.21.0...@pluralsight/ps-design-system-site@9.21.1) (2018-01-29)
+
+
+### Bug Fixes
+
+* **site:** typo in Drawer install doc ([f14f17c](https://github.com/pluralsight/design-system/commit/f14f17c)), closes [#158](https://github.com/pluralsight/design-system/issues/158)
+
+
+
+
 <a name="9.21.0"></a>
 # [9.21.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.20.2...@pluralsight/ps-design-system-site@9.21.0) (2018-01-26)
 

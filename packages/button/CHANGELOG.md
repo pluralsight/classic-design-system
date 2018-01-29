@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.3.6"></a>
+## [10.3.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.3.5...@pluralsight/ps-design-system-button@10.3.6) (2018-01-29)
+
+
+### Bug Fixes
+
+* **button:** respect disabled when anchor has onClick ([63ef400](https://github.com/pluralsight/design-system/commit/63ef400)), closes [#182](https://github.com/pluralsight/design-system/issues/182)
+
+
+
+
 <a name="10.3.5"></a>
 ## [10.3.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.3.3...@pluralsight/ps-design-system-button@10.3.5) (2018-01-24)
 
