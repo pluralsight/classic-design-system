@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-export const names = { dark: 'dark', light: 'light' }
-export const defaultName = names.dark
+import * as vars from '../vars'
 
 class Theme extends React.Component {
   getChildContext() {
@@ -16,13 +15,16 @@ Theme.childContextTypes = {
   themeName: PropTypes.string.isRequired
 }
 Theme.propTypes = {
-  name: PropTypes.string.isRequired
+  name: PropTypes.oneOf(Object.keys(vars.names)).isRequired
 }
 Theme.defaultProps = {
-  name: defaultName
+  name: vars.defaultName
 }
 
-Theme.names = names
-Theme.defaultName = defaultName
+Theme.names = vars.names
+Theme.defaultName = vars.defaultName
+
+export const defaultName = vars.defaultName
+export const names = vars.names
 
 export default Theme
