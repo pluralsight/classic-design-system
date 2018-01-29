@@ -7,16 +7,12 @@ import { transparentize } from 'polished'
 
 import * as vars from '../vars'
 
-const keyframes = {
-  ['psds-button__keyframes__spin']: {
+export default {
+  ['@keyframes psds-button__keyframes__spin']: {
     '100%': {
       transform: 'rotate(360deg)'
     }
-  }
-}
-
-export default {
-  keyframes,
+  },
   ['.psds-button']: {
     display: 'inline-flex',
     justifyContent: 'center',
@@ -189,7 +185,7 @@ export default {
     margin: 0
   },
   // __loading
-  [`.psds-button__loading`]: ({ spin = 'psds-button__keyframes__spin' }) => ({
+  [`.psds-button__loading`]: ({ spin }) => ({
     display: 'inline-block',
     height: 'calc(100% - 4px)',
     width: 'calc(100% - 4px)',
@@ -197,7 +193,7 @@ export default {
     borderStyle: 'solid',
     borderWidth: '2px',
     borderRadius: '100%',
-    animation: `${spin} 1s linear infinite`
+    animation: `${spin || 'psds-button__keyframes__spin'} 1s linear infinite`
   }),
   [`.psds-button__loading--appearance-${vars.appearances.primary}`]: {
     borderColor: transparentize(0.8, core.colors.gray04),

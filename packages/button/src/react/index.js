@@ -121,7 +121,9 @@ const rmNonHtmlProps = props => {
   return rest
 }
 
-const spin = glamor.css.keyframes(css.keyframes['psds-button__keyframes__spin'])
+const spin = glamor.css.keyframes(
+  css['@keyframes psds-button__keyframes__spin']
+)
 const LoadingIndicator = glamorous.span(
   css[`.psds-button__loading`]({ spin }),
   ({ appearance, themeName }) => ({
