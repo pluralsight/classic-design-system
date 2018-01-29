@@ -6,154 +6,77 @@ import Icon, {
 } from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
+import {
+  defaultName as themeDefaultName,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme/react'
 import { transparentize } from 'polished'
 
+import css from '../css'
 import * as vars from '../vars'
 
-const styleSize = ({ size }) =>
-  ({
-    [vars.sizes.xSmall]: {
-      fontSize: core.type.fontSizeXSmall,
-      lineHeight: core.type.lineHeightStandard,
-      padding: `0 ${core.layout.spacingXSmall}`,
-      height: '24px'
-    },
-    [vars.sizes.small]: {
-      fontSize: core.type.fontSizeSmall,
-      lineHeight: core.type.lineHeightStandard,
-      padding: `${core.layout.spacingXXSmall} ${core.layout.spacingXSmall}`,
-      height: '32px'
-    },
-    [vars.sizes.medium]: {
-      fontSize: core.type.fontSizeSmall,
-      lineHeight: core.type.lineHeightStandard,
-      padding: `${core.layout.spacingXXSmall} ${core.layout.spacingMedium}`,
-      height: '40px'
-    },
-    [vars.sizes.large]: {
-      fontSize: core.type.fontSizeMedium,
-      lineHeight: core.type.lineHeightExtra,
-      padding: `${core.layout.spacingXXSmall} ${core.layout.spacingMedium}`,
-      height: '48px'
-    }
-  }[size])
+const styleSize = ({ size }) => css[`.psds-button--size-${size}`]
 
-const styleAppearance = ({ appearance, themeName }) =>
-  ({
-    [vars.appearances.stroke]: {
-      border: `1px solid ${core.colors.orange}`,
-      color: core.colors.orange,
-      background: 'none',
-      ':hover': {
-        border: `1px solid ${core.colors.orangeLight}`,
-        color: core.colors.orangeLight,
-        background: 'none'
-      }
-    },
-    [vars.appearances.flat]: {
-      border: 'none',
-      color:
-        themeName === themeNames.light
-          ? core.colors.gray03
-          : core.colors.gray02,
-      background: 'none',
-      ':hover':
-        themeName === themeNames.light
-          ? {
-              background: transparentize(0.85, core.colors.gray03)
-            }
-          : {
-              color: core.colors.white,
-              background: transparentize(0.85, core.colors.white)
-            }
-    }
-  }[appearance])
+const styleAppearance = ({ appearance, themeName }) => ({
+  ...css[`.psds-button--appearance-${appearance}`],
+  ...css[`.psds-button--appearance-${appearance}`],
+  ...css[`.psds-button--appearance-${appearance}.psds-theme--${themeName}`],
+  ':hover': {
+    ...css[`.psds-button--appearance-${appearance}:hover`],
+    ...css[
+      `.psds-button--appearance-${appearance}.psds-theme--${themeName}:hover`
+    ]
+  }
+})
 
 const styleDisabled = ({ disabled, appearance }) =>
   disabled
     ? {
-        color: core.colors.gray02,
-        background: core.colors.gray03,
-        ':hover': { color: core.colors.gray02, background: core.colors.gray03 }
-      }
-    : null
-
-const styleDisabledStroke = ({ disabled, appearance }) =>
-  disabled && appearance === 'stroke'
-    ? {
-        border: 'none',
+        ...css[`.psds-button--disabled`],
+        ...css[`.psds-button--disabled.psds-button--appearance-${appearance}`],
         ':hover': {
-          border: 'none'
+          ...css[`.psds-button--disabled:hover`],
+          ...css[
+            `.psds-button--disabled.psds-button--appearance-${appearance}:hover`
+          ]
         }
-      }
-    : null
-
-const styleDisabledFlat = ({ disabled, appearance }) =>
-  disabled && appearance === 'flat'
-    ? {
-        opacity: 0.4,
-        background: 'none',
-        ':hover': { color: core.colors.gray02, background: 'none' }
       }
     : null
 
 const styleIcon = ({ icon, iconAlign, iconOnly, size }) =>
   icon && !iconOnly
     ? {
-        [iconAlign === vars.iconAligns.right ? 'paddingRight' : 'paddingLeft']:
-          size === sizes.large
-            ? core.layout.spacingSmall
-            : core.layout.spacingXSmall
+        ...css[
+          `.psds-button--iconAlign-${iconAlign}.psds-button--not-iconOnly`
+        ],
+        ...css[
+          `.psds-button--iconAlign-${iconAlign}.psds-button--not-iconOnly.psds-button--size-${size}`
+        ]
       }
     : null
 
 const styleIconAlign = ({ iconAlign }) =>
-  iconAlign === vars.iconAligns.right ? { flexDirection: 'row-reverse' } : null
+  iconAlign === vars.iconAligns.right
+    ? css[`.psds-button--iconAlign-${iconAlign}`]
+    : null
 
 const styleIconOnly = ({ iconOnly, size }) =>
   iconOnly
     ? {
-        padding: 0,
-        width: {
-          [vars.sizes.xSmall]: '24px',
-          [vars.sizes.small]: '32px',
-          [vars.sizes.medium]: '40px',
-          [vars.sizes.large]: '48px'
-        }[size]
+        ...css[`.psds-button--iconOnly`],
+        ...css[`.psds-button--iconOnly.psds-button--size-${size}`]
       }
     : null
 
 const getButtonStyles = props =>
   glamor.css(
     {
-      display: 'inline-flex',
-      justifyContent: 'center',
-      alignItems: 'stretch',
-      padding: `${core.layout.spacingSmall} ${core.layout.spacingMedium}`,
-      border: 0,
-      borderRadius: 2,
-      fontSize: core.type.fontSizeSmall,
-      lineHeight: core.type.lineHeightStandard,
-      fontWeight: core.type.fontWeightMedium,
-      textAlign: 'center',
-      color: core.colors.white,
-      background: core.colors.orange,
-      cursor: 'pointer',
-      overflow: 'hidden',
-      whiteSpace: 'nowrap',
-      textOverflow: 'ellipsis',
-      textDecoration: 'none',
-      transition: `all ${core.motion.speedNormal}`,
-      ':hover': {
-        background: core.colors.orangeLight
-      }
+      ...css['.psds-button'],
+      ':hover': css['.psds-button:hover']
     },
     styleSize(props),
     styleAppearance(props),
     styleDisabled(props),
-    styleDisabledStroke(props),
-    styleDisabledFlat(props),
     styleIcon(props),
     styleIconAlign(props),
     styleIconOnly(props),
@@ -161,27 +84,13 @@ const getButtonStyles = props =>
   )
 
 const styleIconAlignIconContainer = ({ iconAlign }) =>
-  iconAlign === vars.iconAligns.right
-    ? {
-        marginLeft: core.layout.spacingXSmall,
-        marginRight: 0
-      }
-    : {
-        marginLeft: 0,
-        marginRight: core.layout.spacingXSmall
-      }
+  css[`.psds-button__icon--iconAlign-${iconAlign}`]
 
 const styleIconOnlyIconContainer = ({ iconOnly, isLoadingWithNoText }) =>
-  iconOnly || isLoadingWithNoText
-    ? { justifyContent: 'center', width: '100%', margin: 0 }
-    : null
+  iconOnly || isLoadingWithNoText ? css['.psds-button__icon--iconOnly'] : null
 
 const IconContainer = glamorous.div(
-  {
-    display: 'flex',
-    alignItems: 'center',
-    minHeight: '100%'
-  },
+  css['.psds-button__icon'],
   styleIconAlignIconContainer,
   styleIconOnlyIconContainer
 )
@@ -212,43 +121,15 @@ const rmNonHtmlProps = props => {
   return rest
 }
 
-const spinAnimation = glamor.css.keyframes({
-  '100%': {
-    transform: 'rotate(360deg)'
-  }
-})
+const spin = glamor.css.keyframes(css.keyframes['psds-button__keyframes__spin'])
 const LoadingIndicator = glamorous.span(
-  {
-    display: 'inline-block',
-    height: 'calc(100% - 4px)',
-    width: 'calc(100% - 4px)',
-    margin: '2px',
-    borderStyle: 'solid',
-    borderWidth: '2px',
-    borderRadius: '100%',
-    animation: `${spinAnimation} 1s linear infinite`
-  },
-  ({ appearance, themeName }) =>
-    ({
-      [vars.appearances.primary]: {
-        borderColor: transparentize(0.8, core.colors.gray04),
-        borderTopColor: core.colors.white
-      },
-      [vars.appearances.stroke]: {
-        borderColor: transparentize(0.8, core.colors.white),
-        borderTopColor: core.colors.orange
-      },
-      [vars.appearances.flat]: {
-        borderColor:
-          themeName === themeNames.light
-            ? transparentize(0.8, core.colors.gray04)
-            : transparentize(0.8, core.colors.white),
-        borderTopColor:
-          themeName === themeNames.light
-            ? core.colors.gray04
-            : core.colors.white
-      }
-    }[appearance])
+  css[`.psds-button__loading`]({ spin }),
+  ({ appearance, themeName }) => ({
+    ...css[`.psds-button__loading--appearance-${appearance}`],
+    ...css[
+      `.psds-button__loading--appearance-${appearance}.psds-button__loading--theme-${themeName}`
+    ]
+  })
 )
 
 const renderIcon = props =>
@@ -277,10 +158,7 @@ const renderIcon = props =>
     </IconContainer>
   ) : null
 
-const BtnText = glamorous.span({
-  display: 'inline-flex',
-  alignItems: 'center'
-})
+const BtnText = glamorous.span(css[`.psds-button__text`])
 
 const buttonHtmlPropsWhitelist = [
   'href',
@@ -342,12 +220,12 @@ class Btn extends React.Component {
           if (typeof props.innerRef === 'function') props.innerRef(el)
         }}
         style={isLoadingWithNoText ? { width: this.nonLoadingWidth } : {}}
-        themeName={context.themeName}
+        themeName={context.themeName || themeDefaultName}
       >
         {renderIcon({
           ...props,
           isLoadingWithNoText,
-          themeName: context.themeName
+          themeName: context.themeName || themeDefaultName
         })}
         {!isLoadingWithNoText && <BtnText>{props.children}</BtnText>}
       </Button>
@@ -367,6 +245,7 @@ Btn.propTypes = {
 Btn.defaultProps = {
   appearance: vars.appearances.primary,
   disabled: false,
+  iconAlign: vars.iconAligns.left,
   loading: false,
   size: vars.sizes.medium
 }
