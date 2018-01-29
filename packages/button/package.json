@@ -4,8 +4,10 @@
   "description": "Design System component for button ui",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist --ignore spec.js",
-    "build:watch": "npm run build -- --watch",
+    "build": "run-s build:js build:css",
+    "build:css": "node build/css",
+    "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
@@ -31,6 +33,7 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
+    "@pluralsight/ps-design-system-build": "^1.6.0",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.12",
     "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-storyshots": "3.2.14",
@@ -46,7 +49,8 @@
     "jest": "^20.0.4",
     "jsdom": "^11.5.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "npm-run-all": "^4.1.2"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/test/test-setup.js"
