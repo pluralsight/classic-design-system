@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.3.18"></a>
+## [2.3.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@2.3.17...@pluralsight/ps-design-system-actionmenu@2.3.18) (2018-01-29)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
 <a name="2.3.17"></a>
 ## [2.3.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@2.3.16...@pluralsight/ps-design-system-actionmenu@2.3.17) (2018-01-25)
 
