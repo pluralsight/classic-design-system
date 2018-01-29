@@ -189,12 +189,17 @@ const whitelistProps = (props, whitelist) =>
 
 class Button extends React.Component {
   render() {
+    const whitelistedProps =
+      this.props.disabled && this.props.href
+        ? buttonHtmlPropsWhitelist.filter(prop => prop !== 'onClick')
+        : buttonHtmlPropsWhitelist
+
     return React.createElement(
       this.props.href ? 'a' : 'button',
       {
         ...(this.props.innerRef ? { ref: this.props.innerRef } : {}),
         ...getButtonStyles(this.props),
-        ...whitelistProps(this.props, buttonHtmlPropsWhitelist),
+        ...whitelistProps(this.props, whitelistedProps),
         disabled: this.props.disabled || this.props.loading
       },
       this.props.children
