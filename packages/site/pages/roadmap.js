@@ -23,9 +23,8 @@ const work = {
       tags: ['Component']
     },
     {
-      title: 'Avatar',
-      tags: ['Component'],
-      helpers: ['Mentors']
+      title: 'Tooltip',
+      tags: ['Component']
     }
   ],
   next: [
@@ -38,7 +37,7 @@ const work = {
       tags: ['Component']
     },
     {
-      title: 'Tooltip / Popover',
+      title: 'Dialog',
       tags: ['Component']
     },
     {
