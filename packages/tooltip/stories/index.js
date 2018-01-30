@@ -41,6 +41,7 @@ Object.keys(Tooltip.appearances).forEach(appearance =>
     </Tooltip>
   ))
 )
+closeStory.add('short text', _ => <Tooltip onClose={_ => {}}>Short</Tooltip>)
 closeStory.add('tailPosition topRight', _ => (
   <Tooltip tailPosition={Tooltip.tailPositions.topRight} onClose={_ => {}}>
     Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut

@@ -70,7 +70,9 @@ export default {
   },
   // --closeable
   [`.psds-tooltip--closeable`]: {
-    padding: `${core.layout.spacingMedium} ${core.layout.spacingLarge}`
+    padding: `${core.layout.spacingMedium} calc(${
+      core.layout.spacingMedium
+    } * 2) ${core.layout.spacingMedium} ${core.layout.spacingLarge}`
   },
   // __close
   [`.psds-tooltip__close`]: {

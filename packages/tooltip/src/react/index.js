@@ -62,6 +62,7 @@ const Tooltip = props => (
 
 Tooltip.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
+  children: PropTypes.string.isRequired,
   tailPosition: PropTypes.oneOf(Object.keys(vars.tailPositions)),
   onClose: PropTypes.func
 }
