@@ -24,7 +24,7 @@ exports[`Storyshots appearance accent 1`] = `
     }
   >
     <div
-      data-css-1fqewk1=""
+      data-css-1h3d2h=""
     >
       Some text
     </div>
@@ -56,7 +56,7 @@ exports[`Storyshots appearance basic 1`] = `
     }
   >
     <div
-      data-css-15xc133=""
+      data-css-1xcmvtm=""
     >
       Some text
     </div>
@@ -88,7 +88,7 @@ exports[`Storyshots onClose accent 1`] = `
     }
   >
     <div
-      data-css-1dvynd5=""
+      data-css-lemt7k=""
     >
       <button
         aria-label="Close tooltip"
@@ -136,7 +136,7 @@ exports[`Storyshots onClose basic 1`] = `
     }
   >
     <div
-      data-css-sbzr3=""
+      data-css-lva7cx=""
     >
       <button
         aria-label="Close tooltip"
@@ -184,7 +184,7 @@ exports[`Storyshots onClose short text 1`] = `
     }
   >
     <div
-      data-css-sbzr3=""
+      data-css-lva7cx=""
     >
       <button
         aria-label="Close tooltip"
@@ -232,7 +232,7 @@ exports[`Storyshots onClose tailPosition topRight 1`] = `
     }
   >
     <div
-      data-css-185olja=""
+      data-css-u623zn=""
     >
       <button
         aria-label="Close tooltip"
@@ -280,7 +280,7 @@ exports[`Storyshots tailPosition accent bottomCenter 1`] = `
     }
   >
     <div
-      data-css-1iuqbsz=""
+      data-css-1vwv1li=""
     >
       Some text
     </div>
@@ -312,7 +312,7 @@ exports[`Storyshots tailPosition accent bottomLeft 1`] = `
     }
   >
     <div
-      data-css-fy15pr=""
+      data-css-1lriutz=""
     >
       Some text
     </div>
@@ -344,7 +344,7 @@ exports[`Storyshots tailPosition accent bottomRight 1`] = `
     }
   >
     <div
-      data-css-1ppihb7=""
+      data-css-1ru56xj=""
     >
       Some text
     </div>
@@ -376,7 +376,7 @@ exports[`Storyshots tailPosition accent topCenter 1`] = `
     }
   >
     <div
-      data-css-16v0uz9=""
+      data-css-1kmvxnm=""
     >
       Some text
     </div>
@@ -408,7 +408,7 @@ exports[`Storyshots tailPosition accent topLeft 1`] = `
     }
   >
     <div
-      data-css-3ejjc1=""
+      data-css-vv4x1f=""
     >
       Some text
     </div>
@@ -440,7 +440,7 @@ exports[`Storyshots tailPosition accent topRight 1`] = `
     }
   >
     <div
-      data-css-ln62b=""
+      data-css-10pz9xb=""
     >
       Some text
     </div>
@@ -472,7 +472,7 @@ exports[`Storyshots tailPosition basic bottomCenter 1`] = `
     }
   >
     <div
-      data-css-1mt6r4w=""
+      data-css-obwrkd=""
     >
       Some text
     </div>
@@ -504,7 +504,7 @@ exports[`Storyshots tailPosition basic bottomLeft 1`] = `
     }
   >
     <div
-      data-css-92r485=""
+      data-css-n4ssed=""
     >
       Some text
     </div>
@@ -536,7 +536,7 @@ exports[`Storyshots tailPosition basic bottomRight 1`] = `
     }
   >
     <div
-      data-css-d9fvoh=""
+      data-css-1jvaq8t=""
     >
       Some text
     </div>
@@ -568,7 +568,7 @@ exports[`Storyshots tailPosition basic topCenter 1`] = `
     }
   >
     <div
-      data-css-18sopuo=""
+      data-css-1u0yixh=""
     >
       Some text
     </div>
@@ -600,7 +600,7 @@ exports[`Storyshots tailPosition basic topLeft 1`] = `
     }
   >
     <div
-      data-css-16zinx=""
+      data-css-dp94ad=""
     >
       Some text
     </div>
@@ -632,7 +632,7 @@ exports[`Storyshots tailPosition basic topRight 1`] = `
     }
   >
     <div
-      data-css-1sk3bps=""
+      data-css-zq89xr=""
     >
       Some text
     </div>

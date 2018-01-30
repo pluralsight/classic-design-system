@@ -6,7 +6,13 @@ import * as vars from '../vars'
 const tailDimension = '14px'
 
 export default {
-  [`.psds-tooltip`]: {
+  [`@keyframes psds-tooltip__keyframes__fade`]: {
+    '100%': {
+      transform: 'translateY(0)',
+      opacity: 1
+    }
+  },
+  [`.psds-tooltip`]: ({ fade }) => ({
     position: 'relative',
     display: 'inline-block',
     maxWidth: '320px',
@@ -15,8 +21,13 @@ export default {
     boxShadow: `0 1px 2px ${transparentize(0.5, core.colors.black)}`,
     fontSize: core.type.fontSizeSmall,
     lineHeight: core.type.lineHeightTight,
-    fontWeight: core.type.fontWeightMedium
-  },
+    fontWeight: core.type.fontWeightMedium,
+    transform: `translateY(${core.layout.spacingXSmall})`,
+    opacity: 0,
+    animation: `${fade || 'psds-tooltip__keyframes__fade'} ${
+      core.motion.speedFast
+    } ease-out forwards`
+  }),
   [`.psds-tooltip--appearance-${vars.appearances.basic}`]: {
     color: core.colors.gray05,
     backgroundColor: core.colors.white

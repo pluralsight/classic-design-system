@@ -7,10 +7,13 @@ import { transparentize } from 'polished'
 import css from '../css'
 import * as vars from '../vars'
 
+const fade = glamor.css.keyframes(
+  css[`@keyframes psds-tooltip__keyframes__fade`]
+)
 const styles = {
   tooltip: ({ appearance, onClose, tailPosition }) =>
     glamor.css({
-      ...css[`.psds-tooltip`],
+      ...css[`.psds-tooltip`]({ fade }),
       ...css[`.psds-tooltip--appearance-${appearance}`],
       ...(typeof onClose === 'function'
         ? css[`.psds-tooltip--closeable`]
