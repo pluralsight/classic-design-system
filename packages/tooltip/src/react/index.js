@@ -51,14 +51,21 @@ const CloseButton = props => (
   </button>
 )
 
-const Tooltip = props => (
-  <div {...styles.tooltip(props)}>
-    {typeof props.onClose === 'function' && (
-      <CloseButton appearance={props.appearance} onClose={props.onClose} />
-    )}
-    {props.children}
-  </div>
-)
+const Tooltip = props => {
+  const tooltipProps = {
+    ...styles.tooltip(props),
+    ...(props.style ? { style: props.style } : null),
+    ...(props.className ? { className: props.className } : null)
+  }
+  return (
+    <div {...tooltipProps}>
+      {typeof props.onClose === 'function' && (
+        <CloseButton appearance={props.appearance} onClose={props.onClose} />
+      )}
+      {props.children}
+    </div>
+  )
+}
 
 Tooltip.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
