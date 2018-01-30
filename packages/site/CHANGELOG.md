@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.22.0"></a>
+# [9.22.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.21.2...@pluralsight/ps-design-system-site@9.22.0) (2018-01-30)
+
+
+### Bug Fixes
+
+* **site:** little jumbo typo in typography ([0c09b35](https://github.com/pluralsight/design-system/commit/0c09b35)), closes [#183](https://github.com/pluralsight/design-system/issues/183)
+
+
+### Features
+
+* **site:** add tooltip doc ([7ebf04f](https://github.com/pluralsight/design-system/commit/7ebf04f))
+
+
+
+
 <a name="9.21.2"></a>
 ## [9.21.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.21.0...@pluralsight/ps-design-system-site@9.21.2) (2018-01-29)
 

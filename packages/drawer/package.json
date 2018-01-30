@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-drawer",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Design System component for drawer ui",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.1.1",
-    "@pluralsight/ps-design-system-icon": "^8.4.8",
+    "@pluralsight/ps-design-system-icon": "^8.4.9",
     "@pluralsight/ps-design-system-theme": "^1.2.0",
     "element-closest": "^2.0.2",
     "glamorous": "^4.1.0",
@@ -32,9 +32,9 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-button": "^10.4.0",
-    "@pluralsight/ps-design-system-row": "^2.4.11",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.14",
+    "@pluralsight/ps-design-system-button": "^10.4.1",
+    "@pluralsight/ps-design-system-row": "^2.4.12",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.15",
     "@storybook/addon-storyshots": "^3.2.4",
     "@storybook/react": "^3.2.3",
     "babel-cli": "^6.25.0",
