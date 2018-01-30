@@ -57,16 +57,19 @@ export default {
   },
   [`.psds-tooltip--tailPosition-${vars.tailPositions.bottomLeft}:after`]: {
     bottom: `calc(${tailDimension} / -2)`,
-    left: tailDimension
+    left: tailDimension,
+    boxShadow: `1px 1px 1px ${transparentize(0.5, core.colors.black)}`
   },
   [`.psds-tooltip--tailPosition-${vars.tailPositions.bottomCenter}:after`]: {
     bottom: `calc(${tailDimension} / -2)`,
     left: '50%',
-    transform: 'translateX(-50%) rotate(45deg)'
+    transform: 'translateX(-50%) rotate(45deg)',
+    boxShadow: `1px 1px 1px ${transparentize(0.5, core.colors.black)}`
   },
   [`.psds-tooltip--tailPosition-${vars.tailPositions.bottomRight}:after`]: {
     bottom: `calc(${tailDimension} / -2)`,
-    right: tailDimension
+    right: tailDimension,
+    boxShadow: `1px 1px 1px ${transparentize(0.5, core.colors.black)}`
   },
   // --closeable
   [`.psds-tooltip--closeable`]: {

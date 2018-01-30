@@ -64,6 +64,198 @@ exports[`Storyshots appearance basic 1`] = `
 </div>
 `;
 
+exports[`Storyshots onClose accent 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-1dvynd5=""
+    >
+      <button
+        aria-label="Close tooltip"
+        data-css-gwpw63=""
+        onClick={[Function]}
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </button>
+      Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots onClose basic 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-sbzr3=""
+    >
+      <button
+        aria-label="Close tooltip"
+        data-css-18edqe6=""
+        onClick={[Function]}
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </button>
+      Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots onClose short text 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-sbzr3=""
+    >
+      <button
+        aria-label="Close tooltip"
+        data-css-18edqe6=""
+        onClick={[Function]}
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </button>
+      Short
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots onClose tailPosition topRight 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-185olja=""
+    >
+      <button
+        aria-label="Close tooltip"
+        data-css-18edqe6=""
+        onClick={[Function]}
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </button>
+      Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots tailPosition accent bottomCenter 1`] = `
 <div
   style={
@@ -88,7 +280,7 @@ exports[`Storyshots tailPosition accent bottomCenter 1`] = `
     }
   >
     <div
-      data-css-16y7p93=""
+      data-css-1iuqbsz=""
     >
       Some text
     </div>
@@ -120,7 +312,7 @@ exports[`Storyshots tailPosition accent bottomLeft 1`] = `
     }
   >
     <div
-      data-css-1p80fkg=""
+      data-css-fy15pr=""
     >
       Some text
     </div>
@@ -152,7 +344,7 @@ exports[`Storyshots tailPosition accent bottomRight 1`] = `
     }
   >
     <div
-      data-css-13iulhi=""
+      data-css-1ppihb7=""
     >
       Some text
     </div>
@@ -280,7 +472,7 @@ exports[`Storyshots tailPosition basic bottomCenter 1`] = `
     }
   >
     <div
-      data-css-xz1jgq=""
+      data-css-1mt6r4w=""
     >
       Some text
     </div>
@@ -312,7 +504,7 @@ exports[`Storyshots tailPosition basic bottomLeft 1`] = `
     }
   >
     <div
-      data-css-l9h3pt=""
+      data-css-92r485=""
     >
       Some text
     </div>
@@ -344,7 +536,7 @@ exports[`Storyshots tailPosition basic bottomRight 1`] = `
     }
   >
     <div
-      data-css-i3ohb4=""
+      data-css-d9fvoh=""
     >
       Some text
     </div>
