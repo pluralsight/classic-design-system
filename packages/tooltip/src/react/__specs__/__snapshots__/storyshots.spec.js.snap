@@ -1,0 +1,449 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots appearance accent 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-1fqewk1=""
+    >
+      Some text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots appearance basic 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-15xc133=""
+    >
+      Some text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition accent bottomCenter 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-16y7p93=""
+    >
+      Some text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition accent bottomLeft 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-1p80fkg=""
+    >
+      Some text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition accent bottomRight 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-13iulhi=""
+    >
+      Some text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition accent topCenter 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-16v0uz9=""
+    >
+      Some text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition accent topLeft 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-3ejjc1=""
+    >
+      Some text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition accent topRight 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-ln62b=""
+    >
+      Some text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition basic bottomCenter 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-xz1jgq=""
+    >
+      Some text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition basic bottomLeft 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-l9h3pt=""
+    >
+      Some text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition basic bottomRight 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-i3ohb4=""
+    >
+      Some text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition basic topCenter 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-18sopuo=""
+    >
+      Some text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition basic topLeft 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-16zinx=""
+    >
+      Some text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition basic topRight 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-1sk3bps=""
+    >
+      Some text
+    </div>
+  </div>
+</div>
+`;
