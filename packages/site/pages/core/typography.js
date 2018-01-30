@@ -111,7 +111,7 @@ const FontWeight = props => (
 // TODO: pull from core js vars
 const sizes = [
   { label: 'Gigantic', size: '60px', varName: 'psTypeFontSizeGigantic' },
-  { label: 'XXX-Large', size: '48px', varName: 'psTypefontSizeJumbo' },
+  { label: 'Jumbo', size: '48px', varName: 'psTypefontSizeJumbo' },
   { label: 'XX-Large', size: '36px', varName: 'psTypeFontSizeXXLarge' },
   { label: 'X-Large', size: '30px', varName: 'psTypeFontSizeXLarge' },
   { label: 'Large', size: '24px', varName: 'psTypeFontSizeLarge' },
