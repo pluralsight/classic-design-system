@@ -265,7 +265,7 @@ Btn.iconAligns = vars.iconAligns
 Btn.sizes = vars.sizes
 
 export const appearances = vars.appearances
-export const iconAlignss = vars.iconAlignss
+export const iconAligns = vars.iconAligns
 export const sizes = vars.sizes
 
 export default Btn
