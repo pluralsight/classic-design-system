@@ -342,6 +342,9 @@ export default withHeadings(props => (
       <NavLink href="/components/theme" headings={props.headings}>
         Theme
       </NavLink>
+      <NavLink href="/components/tooltip" headings={props.headings}>
+        Tooltip
+      </NavLink>
       <NavLink href="/components/viewtoggle" headings={props.headings}>
         View Toggle
       </NavLink>

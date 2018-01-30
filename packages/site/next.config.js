@@ -24,6 +24,7 @@ module.exports = {
       '/components/tag': { page: '/components/tag' },
       '/components/text': { page: '/components/text' },
       '/components/theme': { page: '/components/theme' },
+      '/components/tooltip': { page: '/components/tooltip' },
       '/components/viewtoggle': { page: '/components/viewtoggle' },
       '/core/build': { page: '/core/build' },
       '/core/usage': { page: '/core/usage' },
