@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.4.16"></a>
+## [10.4.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.4.15...@pluralsight/ps-design-system-text@10.4.16) (2018-01-31)
+
+
+### Bug Fixes
+
+* **text:** add npmignore for babelrc ([92efe3f](https://github.com/pluralsight/design-system/commit/92efe3f)), closes [#185](https://github.com/pluralsight/design-system/issues/185)
+
+
+
+
 <a name="10.4.15"></a>
 ## [10.4.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.4.14...@pluralsight/ps-design-system-text@10.4.15) (2018-01-30)
 

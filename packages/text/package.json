@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-text",
-  "version": "10.4.15",
+  "version": "10.4.16",
   "description": "Design system component for text-related ui",
   "main": "index.js",
   "scripts": {
