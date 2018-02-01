@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.2.5"></a>
+## [8.2.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.2.4...@pluralsight/ps-design-system-card@8.2.5) (2018-02-01)
+
+
+### Bug Fixes
+
+* **card:** restore title line height specs ([b6c160a](https://github.com/pluralsight/design-system/commit/b6c160a)), closes [#180](https://github.com/pluralsight/design-system/issues/180)
+
+
+
+
 <a name="8.2.4"></a>
 ## [8.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.2.3...@pluralsight/ps-design-system-card@8.2.4) (2018-02-01)
 
