@@ -58,11 +58,6 @@ exports[`Storyshots actionBar locked visible 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -235,11 +230,6 @@ exports[`Storyshots actionBar multiple actions 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -394,11 +384,6 @@ exports[`Storyshots actionBar single action 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -536,11 +521,6 @@ exports[`Storyshots bonusBar only text 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -691,11 +671,6 @@ exports[`Storyshots bonusBar some element 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -945,17 +920,6 @@ exports[`Storyshots combo everything 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <index__TextLink>
-            <a
-              href="http://duckduckgo.com?q=title"
-            >
-              <Card.Title>
-                Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1, 2, Action Bar, and More Really. Why Not Put More In? Release a New Edition Every Year With All the Excesses of our VC Budget? Boundless Features Will Be Yours 2000
-              </Card.Title>
-            </a>
-          </index__TextLink>
-        }
       >
         <span
           className="css-1ublh7e"
@@ -1173,11 +1137,6 @@ exports[`Storyshots fullOverlay link 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -1336,11 +1295,6 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -1507,11 +1461,6 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -1653,11 +1602,6 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -1799,11 +1743,6 @@ exports[`Storyshots fullOverlay text only 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -1944,11 +1883,6 @@ exports[`Storyshots image image link 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -2081,11 +2015,6 @@ exports[`Storyshots image image only 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -2218,11 +2147,6 @@ exports[`Storyshots metadata multiple text 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -2375,11 +2299,6 @@ exports[`Storyshots metadata single text 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -2521,11 +2440,6 @@ exports[`Storyshots metadata text link 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -2675,11 +2589,6 @@ exports[`Storyshots metadata text wrapper 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -2825,11 +2734,6 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -3030,11 +2934,6 @@ exports[`Storyshots progress done 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -3167,11 +3066,6 @@ exports[`Storyshots progress none 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -3312,11 +3206,6 @@ exports[`Storyshots progress some 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -3449,11 +3338,6 @@ exports[`Storyshots size large 1`] = `
       </div>
       <div
         className="css-31ny7d"
-        title={
-          <Card.Title>
-            large Card
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -3586,11 +3470,6 @@ exports[`Storyshots size medium 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            medium Card
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -3723,11 +3602,6 @@ exports[`Storyshots size small 1`] = `
       </div>
       <div
         className="css-do8pgt"
-        title={
-          <Card.Title>
-            small Card
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -3867,11 +3741,6 @@ exports[`Storyshots tag text only 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -4029,11 +3898,6 @@ exports[`Storyshots tag with icon 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Card Title
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -4166,17 +4030,6 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <index__TextLink>
-            <a
-              href="http://duckduckgo.com?q=text"
-            >
-              <Card.Title>
-                The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
-              </Card.Title>
-            </a>
-          </index__TextLink>
-        }
       >
         <span
           className="css-1ublh7e"
@@ -4317,11 +4170,6 @@ exports[`Storyshots title long title, title wrapper 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"
@@ -4454,17 +4302,6 @@ exports[`Storyshots title text link with title wrapper 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <index__TextLink>
-            <a
-              href="http://duckduckgo.com?q=text"
-            >
-              <Card.Title>
-                Text link
-              </Card.Title>
-            </a>
-          </index__TextLink>
-        }
       >
         <span
           className="css-1ublh7e"
@@ -4605,11 +4442,6 @@ exports[`Storyshots title title wrapper 1`] = `
       </div>
       <div
         className="css-8j27ca"
-        title={
-          <Card.Title>
-            Text only
-          </Card.Title>
-        }
       >
         <div
           className="css-1tlmf72"

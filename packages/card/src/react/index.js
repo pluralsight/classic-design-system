@@ -378,8 +378,13 @@ const TitleContainer = glamorous.div(
     }[size])
 )
 
+const filterOutTitleProp = props => {
+  const { title, ...rest } = props
+  return rest
+}
+
 const renderTitle = props => (
-  <TitleContainer {...props}>{props.title}</TitleContainer>
+  <TitleContainer {...filterOutTitleProp(props)}>{props.title}</TitleContainer>
 )
 
 const CardComponent = props => (
