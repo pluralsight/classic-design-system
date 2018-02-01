@@ -365,15 +365,15 @@ const TitleContainer = glamorous.div(
     ({
       small: {
         fontSize: core.type.fontSizeXSmall,
-        lineHeight: core.lineHeightTight
+        lineHeight: core.type.lineHeightTight
       },
       medium: {
         fontSize: core.type.fontSizeSmall,
-        lineHeight: core.lineHeightTight
+        lineHeight: core.type.lineHeightTight
       },
       large: {
         fontSize: core.type.fontSizeMedium,
-        lineHeight: core.lineHeightStandard
+        lineHeight: core.type.lineHeightStandard
       }
     }[size])
 )
