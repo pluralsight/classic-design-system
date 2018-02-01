@@ -103,6 +103,7 @@ const Switch = (props, context) => {
       </div>
       <input
         type="checkbox"
+        readOnly
         checked={allProps.checked}
         {...css.checkbox(allProps)}
       />

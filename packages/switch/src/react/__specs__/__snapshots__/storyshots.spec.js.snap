@@ -29,6 +29,7 @@ exports[`Storyshots checked false 1`] = `
     <input
       checked={false}
       data-css-6wu9td=""
+      readOnly={true}
       type="checkbox"
     />
     <label
@@ -69,6 +70,7 @@ exports[`Storyshots checked true 1`] = `
     <input
       checked={true}
       data-css-6wu9td=""
+      readOnly={true}
       type="checkbox"
     />
     <label
@@ -110,6 +112,7 @@ exports[`Storyshots click toggles on click 1`] = `
     <input
       checked={false}
       data-css-6wu9td=""
+      readOnly={true}
       type="checkbox"
     />
     <label
@@ -148,6 +151,7 @@ exports[`Storyshots color green 1`] = `
     <input
       checked={true}
       data-css-6wu9td=""
+      readOnly={true}
       type="checkbox"
     />
     <label
@@ -188,6 +192,7 @@ exports[`Storyshots color orange 1`] = `
     <input
       checked={true}
       data-css-6wu9td=""
+      readOnly={true}
       type="checkbox"
     />
     <label
@@ -229,6 +234,7 @@ exports[`Storyshots disabled false 1`] = `
     <input
       checked={false}
       data-css-6wu9td=""
+      readOnly={true}
       type="checkbox"
     />
     <label
@@ -267,6 +273,7 @@ exports[`Storyshots disabled true 1`] = `
     <input
       checked={false}
       data-css-6wu9td=""
+      readOnly={true}
       type="checkbox"
     />
     <label
@@ -305,6 +312,7 @@ exports[`Storyshots label large left 1`] = `
     <input
       checked={false}
       data-css-6wu9td=""
+      readOnly={true}
       type="checkbox"
     />
     <label
@@ -345,6 +353,7 @@ exports[`Storyshots label large right 1`] = `
     <input
       checked={false}
       data-css-6wu9td=""
+      readOnly={true}
       type="checkbox"
     />
     <label
@@ -385,6 +394,7 @@ exports[`Storyshots label small left 1`] = `
     <input
       checked={false}
       data-css-6wu9td=""
+      readOnly={true}
       type="checkbox"
     />
     <label
@@ -425,6 +435,7 @@ exports[`Storyshots label small right 1`] = `
     <input
       checked={false}
       data-css-6wu9td=""
+      readOnly={true}
       type="checkbox"
     />
     <label
@@ -465,6 +476,7 @@ exports[`Storyshots size large 1`] = `
     <input
       checked={false}
       data-css-6wu9td=""
+      readOnly={true}
       type="checkbox"
     />
     <label
@@ -505,6 +517,7 @@ exports[`Storyshots size small 1`] = `
     <input
       checked={false}
       data-css-6wu9td=""
+      readOnly={true}
       type="checkbox"
     />
     <label
