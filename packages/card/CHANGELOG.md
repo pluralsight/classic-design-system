@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.2.4"></a>
+## [8.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.2.3...@pluralsight/ps-design-system-card@8.2.4) (2018-02-01)
+
+
+### Bug Fixes
+
+* **card:** remove title attribute from Card.Title container ([82dcdc4](https://github.com/pluralsight/design-system/commit/82dcdc4)), closes [#186](https://github.com/pluralsight/design-system/issues/186)
+
+
+
+
 <a name="8.2.3"></a>
 ## [8.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.2.2...@pluralsight/ps-design-system-card@8.2.3) (2018-01-30)
 
