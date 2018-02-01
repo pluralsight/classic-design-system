@@ -218,7 +218,7 @@ exports[`Storyshots disabled primary 1`] = `
   }
 >
   <button
-    data-css-ja7fpz=""
+    data-css-13iojz2=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
@@ -249,7 +249,7 @@ exports[`Storyshots disabled stroke 1`] = `
   }
 >
   <button
-    data-css-xmly1y=""
+    data-css-1lwv8ou=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
@@ -280,7 +280,7 @@ exports[`Storyshots disabled with icon 1`] = `
   }
 >
   <button
-    data-css-1b4os0c=""
+    data-css-93rlbf=""
     disabled={true}
     style={Object {}}
   >
