@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-tooltip",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Design System component for tooltip ui",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.7.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.16",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.17",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",
     "@storybook/react": "3.2.14",

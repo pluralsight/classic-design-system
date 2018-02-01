@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.5"></a>
+## [1.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.1.4...@pluralsight/ps-design-system-switch@1.1.5) (2018-02-01)
+
+
+### Bug Fixes
+
+* **switch:** react warning about checked without onChange handler ([55576ad](https://github.com/pluralsight/design-system/commit/55576ad))
+
+
+
+
 <a name="1.1.4"></a>
 ## [1.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.1.3...@pluralsight/ps-design-system-switch@1.1.4) (2018-02-01)
 

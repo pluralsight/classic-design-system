@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.22.4"></a>
+## [9.22.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.22.3...@pluralsight/ps-design-system-site@9.22.4) (2018-02-01)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-site
+
 <a name="9.22.3"></a>
 ## [9.22.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.22.2...@pluralsight/ps-design-system-site@9.22.3) (2018-02-01)
 
