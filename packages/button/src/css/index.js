@@ -107,9 +107,15 @@ export default {
     background: core.colors.gray03
   },
   [`.psds-button--disabled.psds-button--appearance-${
+    vars.appearances.primary
+  }`]: {
+    opacity: 0.5
+  },
+  [`.psds-button--disabled.psds-button--appearance-${
     vars.appearances.stroke
   }`]: {
-    border: 'none'
+    border: 'none',
+    opacity: 0.5
   },
   [`.psds-button--disabled.psds-button--appearance-${vars.appearances.flat}`]: {
     opacity: 0.4,
