@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="264px" height="264px" viewBox="0 0 264 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
+    <title>Example 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="28.35" cy="18.2" r="3.5"></circle>
+        <circle id="path-2" cx="3.5" cy="32.9" r="3.5"></circle>
+        <circle id="path-3" cx="3.5" cy="3.5" r="3.5"></circle>
+        <path d="M190.05,183.75 L190.05,176.75 C186.184007,176.75 183.05,179.884007 183.05,183.75 L190.05,183.75 Z" id="path-4"></path>
+        <path d="M155.05,50.75 L155.05,43.75 C158.915993,43.75 162.05,46.8840068 162.05,50.75 L155.05,50.75 Z" id="path-5"></path>
+        <path d="M169.05,71.75 L169.05,64.75 C172.915993,64.75 176.05,67.8840068 176.05,71.75 L169.05,71.75 Z" id="path-6"></path>
+        <path d="M183.05,92.75 L183.05,85.75 C186.915993,85.75 190.05,88.8840068 190.05,92.75 L183.05,92.75 Z" id="path-7"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Example-5">
+            <g id="Group" transform="translate(12.000000, 18.000000)">
+                <g id="Icon-Grid---Base---Zoomed" transform="translate(36.050000, 29.750000)">
+                    <g id="Grid">
+                        <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="168" height="169.05"></rect>
+                        <g id="pixels" opacity="0.400000006" stroke="#000000" stroke-width="0.5">
+                            <g id="Group" opacity="0.200000003">
+                                <rect id="Rectangle-3" x="161" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="154" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="147" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="140" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="133" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="126" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="119" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="112" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="105" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="98" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="91" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="84" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="77" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="70" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="63" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="56" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="49" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="42" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="35" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="28" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="21" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="14" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="7" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="0" y="0" width="7" height="168"></rect>
+                            </g>
+                            <g id="Group" opacity="0.200000003" transform="translate(84.000000, 84.000000) rotate(90.000000) translate(-84.000000, -84.000000) ">
+                                <rect id="Rectangle-3" x="161" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="154" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="147" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="140" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="133" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="126" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="119" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="112" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="105" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="98" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="91" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="84" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="77" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="70" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="63" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="56" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="49" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="42" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="35" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="28" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="21" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="14" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="7" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="0" y="0" width="7" height="168"></rect>
+                            </g>
+                        </g>
+                        <rect id="bounds" stroke="#AAAAAA" stroke-width="2" x="1" y="1" width="166" height="166"></rect>
+                    </g>
+                </g>
+                <g id="Icon/Browse" opacity="0.400000006" transform="translate(36.050000, 29.750000)">
+                    <rect id="bounds" x="-0.05" y="0.25" width="168" height="168"></rect>
+                    <path d="M21,56 L147,56 C150.865993,56 154,59.1340068 154,63 L154,147 C154,150.865993 150.865993,154 147,154 L21,154 C17.1340068,154 14,150.865993 14,147 L14,63 C14,59.1340068 17.1340068,56 21,56 Z M28,70 L28,140 L140,140 L140,70 L28,70 Z M75.3007351,87.1804411 L99.9979579,101.998775 C101.655489,102.993293 102.192967,105.143204 101.198448,106.800735 C100.902874,107.293359 100.490582,107.705651 99.9979579,108.001225 L75.3007351,122.819559 C73.6432042,123.814077 71.4932933,123.2766 70.4987748,121.619069 C70.1724024,121.075115 70,120.452687 70,119.818334 L70,90.1816663 C70,88.2486697 71.5670034,86.6816663 73.5,86.6816663 C74.1343538,86.6816663 74.7567812,86.8540687 75.3007351,87.1804411 Z M35,35 L133,35 C136.865993,35 140,38.1340068 140,42 L140,49 L28,49 L28,42 C28,38.1340068 31.1340068,35 35,35 Z M49,14 L119,14 C122.865993,14 126,17.1340068 126,21 L126,28 L42,28 L42,21 C42,17.1340068 45.1340068,14 49,14 Z" id="browse" fill="#000000"></path>
+                </g>
+                <g id="Guides" transform="translate(106.050000, 116.550000)">
+                    <g id="guide">
+                        <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <circle stroke="#137BC2" stroke-width="0.7" cx="28.35" cy="18.2" r="3.15"></circle>
+                    </g>
+                    <g id="guide">
+                        <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <circle stroke="#137BC2" stroke-width="0.7" cx="3.5" cy="32.9" r="3.15"></circle>
+                    </g>
+                    <g id="guide">
+                        <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <circle stroke="#137BC2" stroke-width="0.7" cx="3.5" cy="3.5" r="3.15"></circle>
+                    </g>
+                    <rect id="marker" fill="#137BC2" x="28.35" y="14.7" width="86.45" height="1"></rect>
+                    <text id="0.5px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold" fill="#137BC2">
+                        <tspan x="117.6" y="21.3">0.5px</tspan>
+                    </text>
+                    <rect id="marker" fill="#137BC2" x="28.35" y="21" width="86.45" height="1"></rect>
+                </g>
+                <text id="2px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold" fill="#137BC2">
+                    <tspan x="49.35" y="8">2px</tspan>
+                </text>
+                <rect id="marker" fill="#137BC2" x="63.35" y="12.95" width="1" height="121.8"></rect>
+                <rect id="marker" fill="#137BC2" x="50.05" y="12.95" width="1" height="121.8"></rect>
+                <rect id="marker" fill="#137BC2" x="19.25" y="169.75" width="100.8" height="1"></rect>
+                <text id="2px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold" fill="#137BC2">
+                    <tspan x="0" y="178.8">2px</tspan>
+                </text>
+                <rect id="marker" fill="#137BC2" x="19.25" y="183.05" width="100.8" height="1"></rect>
+                <g id="Oval-2" transform="translate(186.550000, 180.250000) scale(-1, -1) translate(-186.550000, -180.250000) ">
+                    <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <path stroke="#137BC2" stroke-width="0.7" d="M189.7,183.4 L189.7,177.109052 C186.305909,177.285047 183.585047,180.005909 183.409052,183.4 L189.7,183.4 Z"></path>
+                </g>
+                <rect id="marker" fill="#137BC2" x="183.05" y="176.75" width="37.8" height="1"></rect>
+                <text id="1px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold" fill="#137BC2">
+                    <tspan x="223.65" y="183.35">1px</tspan>
+                </text>
+                <rect id="marker" fill="#137BC2" x="183.05" y="183.05" width="37.8" height="1"></rect>
+                <g id="Oval-2">
+                    <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <path stroke="#137BC2" stroke-width="0.7" d="M155.4,50.4 L161.690948,50.4 C161.514953,47.0059088 158.794091,44.2850468 155.4,44.1090524 L155.4,50.4 Z"></path>
+                </g>
+                <rect id="marker" fill="#137BC2" x="155.05" y="43.75" width="65.8" height="1"></rect>
+                <text id="1px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold" fill="#137BC2">
+                    <tspan x="223.65" y="50.35">1px</tspan>
+                </text>
+                <rect id="marker" fill="#137BC2" x="155.05" y="50.05" width="65.8" height="1"></rect>
+                <g id="Oval-2">
+                    <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-6"></use>
+                    <path stroke="#137BC2" stroke-width="0.7" d="M169.4,71.4 L175.690948,71.4 C175.514953,68.0059088 172.794091,65.2850468 169.4,65.1090524 L169.4,71.4 Z"></path>
+                </g>
+                <rect id="marker" fill="#137BC2" x="169.05" y="64.75" width="51.8" height="1"></rect>
+                <text id="1px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold" fill="#137BC2">
+                    <tspan x="223.65" y="71.35">1px</tspan>
+                </text>
+                <rect id="marker" fill="#137BC2" x="169.05" y="71.05" width="51.8" height="1"></rect>
+                <g id="Oval-2">
+                    <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    <path stroke="#137BC2" stroke-width="0.7" d="M183.4,92.4 L189.690948,92.4 C189.514953,89.0059088 186.794091,86.2850468 183.4,86.1090524 L183.4,92.4 Z"></path>
+                </g>
+                <rect id="marker" fill="#137BC2" x="183.05" y="85.75" width="37.8" height="1"></rect>
+                <text id="1px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold" fill="#137BC2">
+                    <tspan x="223.65" y="92.35">1px</tspan>
+                </text>
+                <rect id="marker" fill="#137BC2" x="183.05" y="92.05" width="37.8" height="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

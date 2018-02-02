@@ -349,6 +349,12 @@ export default withHeadings(props => (
         View Toggle
       </NavLink>
     </Group>
+    <Group>
+      <GroupTitle>PATTERNS</GroupTitle>
+      <NavLink href="/patterns/iconography" headings={props.headings}>
+        Iconography
+      </NavLink>
+    </Group>
     <style jsx>{`
       .sidenav {
         position: fixed;

@@ -31,7 +31,8 @@ module.exports = {
       '/core/color': { page: '/core/color' },
       '/core/motion': { page: '/core/motion' },
       '/core/spacing': { page: '/core/spacing' },
-      '/core/typography': { page: '/core/typography' }
+      '/core/typography': { page: '/core/typography' },
+      '/patterns/iconography': { page: '/patterns/iconography' }
     }
   }
 }

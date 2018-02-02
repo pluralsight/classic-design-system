@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="264px" height="264px" viewBox="0 0 264 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
+    <title>Avoid 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Avoid-7">
+            <g id="Group" transform="translate(48.000000, 48.000000)">
+                <g id="Icon-Grid---Base---Zoomed" transform="translate(0.100000, 0.700000)">
+                    <g id="Grid">
+                        <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="168" height="169.05"></rect>
+                        <g id="pixels" opacity="0.400000006" stroke="#000000" stroke-width="0.5">
+                            <g id="Group" opacity="0.200000003">
+                                <rect id="Rectangle-3" x="161" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="154" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="147" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="140" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="133" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="126" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="119" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="112" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="105" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="98" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="91" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="84" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="77" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="70" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="63" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="56" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="49" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="42" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="35" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="28" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="21" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="14" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="7" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="0" y="0" width="7" height="168"></rect>
+                            </g>
+                            <g id="Group" opacity="0.200000003" transform="translate(84.000000, 84.000000) rotate(90.000000) translate(-84.000000, -84.000000) ">
+                                <rect id="Rectangle-3" x="161" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="154" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="147" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="140" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="133" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="126" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="119" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="112" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="105" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="98" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="91" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="84" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="77" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="70" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="63" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="56" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="49" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="42" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="35" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="28" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="21" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="14" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="7" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="0" y="0" width="7" height="168"></rect>
+                            </g>
+                        </g>
+                        <rect id="bounds" stroke="#AAAAAA" stroke-width="2" x="1" y="1" width="166" height="166"></rect>
+                    </g>
+                </g>
+                <g id="Icons/plus" opacity="0.400000006" transform="translate(0.100000, 0.700000)">
+                    <rect id="bounds" x="0" y="0" width="168" height="168"></rect>
+                    <path d="M133,94.5 L94.5,94.5 L94.5,133 C94.5,134.932997 92.9329966,136.5 91,136.5 L84,136.5 C82.0670034,136.5 80.5,134.932997 80.5,133 L80.5,94.5 L42,94.5 C40.0670034,94.5 38.5,92.9329966 38.5,91 L38.5,84 C38.5,82.0670034 40.0670034,80.5 42,80.5 L80.5,80.5 L80.5,42 C80.5,40.0670034 82.0670034,38.5 84,38.5 L91,38.5 C92.9329966,38.5 94.5,40.0670034 94.5,42 L94.5,80.5 L133,80.5 C134.932997,80.5 136.5,82.0670034 136.5,84 L136.5,91 C136.5,92.9329966 134.932997,94.5 133,94.5 Z" id="plus" fill="#000000" fill-rule="nonzero"></path>
+                </g>
+                <g id="Guides" transform="translate(0.000000, 14.000000)" fill="#DE3636">
+                    <text id="Half-pixels-/-misali" font-family="GothamSSm-Bold, Gotham SSm" font-size="12" font-weight="bold">
+                        <tspan x="0.491" y="-34">Half pixels / misalignment</tspan>
+                    </text>
+                    <rect id="marker" x="14.1" y="63.7" width="140" height="1"></rect>
+                    <rect id="marker" x="14.1" y="77" width="140" height="1"></rect>
+                    <rect id="marker" x="77.1" y="0.7" width="1" height="140"></rect>
+                    <rect id="marker" x="90.4" y="0.7" width="1" height="140"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
