@@ -23,8 +23,8 @@ const work = {
       tags: ['Component']
     },
     {
-      title: 'Tooltip',
-      tags: ['Component']
+      title: 'Iconography',
+      tags: ['Pattern']
     }
   ],
   next: [
@@ -33,24 +33,16 @@ const work = {
       tags: ['Component']
     },
     {
-      title: 'Tab (vNext)',
-      tags: ['Component']
-    },
-    {
       title: 'Dialog',
       tags: ['Component']
     },
     {
       title: 'Voice and Tone',
-      tags: ['Guidelines']
-    },
-    {
-      title: 'Iconography',
-      tags: ['Guidelines']
+      tags: ['Pattern']
     },
     {
       title: 'Reporting',
-      tags: ['Guidelines']
+      tags: ['Pattern']
     },
     {
       title: 'Usage Dashboard',
