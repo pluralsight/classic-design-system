@@ -40,6 +40,9 @@ const Boxes = props => (
         margin: ${core.layout.spacingLarge} 0;
       }
       .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: ${core.colors.bone};
         border-radius: 12px;
         padding: ${core.layout.spacingMedium};
