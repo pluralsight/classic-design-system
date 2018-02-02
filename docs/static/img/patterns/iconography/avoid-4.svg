@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="264px" height="264px" viewBox="0 0 264 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
+    <title>Avoid 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="55.55" cy="81.9" r="14"></circle>
+        <circle id="path-2" cx="55.55" cy="149.8" r="14"></circle>
+        <circle id="path-3" cx="123.1" cy="81.9" r="14"></circle>
+        <circle id="path-4" cx="123.1" cy="149.8" r="14"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Avoid-4">
+            <g id="Group" transform="translate(42.000000, 16.000000)">
+                <g id="Icon-Grid---Base---Zoomed" transform="translate(5.950000, 32.200000)">
+                    <g id="Grid">
+                        <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="168" height="169.05"></rect>
+                        <g id="pixels" opacity="0.400000006" stroke="#000000" stroke-width="0.5">
+                            <g id="Group" opacity="0.200000003">
+                                <rect id="Rectangle-3" x="161" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="154" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="147" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="140" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="133" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="126" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="119" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="112" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="105" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="98" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="91" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="84" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="77" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="70" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="63" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="56" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="49" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="42" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="35" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="28" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="21" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="14" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="7" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="0" y="0" width="7" height="168"></rect>
+                            </g>
+                            <g id="Group" opacity="0.200000003" transform="translate(84.000000, 84.000000) rotate(90.000000) translate(-84.000000, -84.000000) ">
+                                <rect id="Rectangle-3" x="161" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="154" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="147" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="140" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="133" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="126" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="119" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="112" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="105" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="98" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="91" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="84" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="77" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="70" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="63" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="56" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="49" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="42" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="35" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="28" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="21" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="14" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="7" y="0" width="7" height="168"></rect>
+                                <rect id="Rectangle-3" x="0" y="0" width="7" height="168"></rect>
+                            </g>
+                        </g>
+                        <rect id="bounds" stroke="#AAAAAA" stroke-width="2" x="1" y="1" width="166" height="166"></rect>
+                    </g>
+                </g>
+                <g id="Icons/close" opacity="0.400000006" transform="translate(5.950000, 32.200000)">
+                    <rect id="bounds" x="0" y="0" width="168" height="168"></rect>
+                    <polygon id="close" fill="#000000" fill-rule="nonzero" points="126 51.87 116.13 42 84 74.13 51.87 42 42 51.87 74.13 84 42 116.13 51.87 126 84 93.87 116.13 126 126 116.13 93.87 84"></polygon>
+                </g>
+                <g id="Guides">
+                    <text id="Unrounded-stroke-ter" font-family="GothamSSm-Bold, Gotham SSm" font-size="12" font-weight="bold" fill="#DE3636">
+                        <tspan x="0.983" y="12">Unrounded stroke terminals</tspan>
+                    </text>
+                    <g id="guide">
+                        <use fill-opacity="0.3" fill="#DE3636" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <circle stroke="#DE3636" stroke-width="0.625" cx="55.55" cy="81.9" r="13.6875"></circle>
+                    </g>
+                    <g id="guide">
+                        <use fill-opacity="0.3" fill="#DE3636" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <circle stroke="#DE3636" stroke-width="0.625" cx="55.55" cy="149.8" r="13.6875"></circle>
+                    </g>
+                    <g id="guide">
+                        <use fill-opacity="0.3" fill="#DE3636" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <circle stroke="#DE3636" stroke-width="0.625" cx="123.1" cy="81.9" r="13.6875"></circle>
+                    </g>
+                    <g id="guide">
+                        <use fill-opacity="0.3" fill="#DE3636" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <circle stroke="#DE3636" stroke-width="0.625" cx="123.1" cy="149.8" r="13.6875"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
