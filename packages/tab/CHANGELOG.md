@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="7.3.0"></a>
+# [7.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.2.19...@pluralsight/ps-design-system-tab@7.3.0) (2018-02-02)
+
+
+### Features
+
+* **tab:** adjust keyboard accessibilty to use arrow keys ([7bf635d](https://github.com/pluralsight/design-system/commit/7bf635d)), closes [#154](https://github.com/pluralsight/design-system/issues/154)
+
+
+
+
 <a name="7.2.19"></a>
 ## [7.2.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.2.18...@pluralsight/ps-design-system-tab@7.2.19) (2018-02-01)
 
