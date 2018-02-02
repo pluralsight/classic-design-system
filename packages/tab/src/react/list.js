@@ -13,7 +13,16 @@ const List = glamorous.div(
   ({ themeName }) => ({
     borderBottom: `1px solid ${
       themeName === themeNames.light ? core.colors.gray02 : core.colors.gray04
-    }`
+    }`,
+    ':focus': {
+      outline: 'none',
+      borderBottomWidth: '4px'
+    },
+    // note: coupling to ListItem > TextWidth markup to keep pure css solution
+    ':focus div': {
+      height: 'calc(100% + 4px)',
+      marginBottom: '-4px'
+    }
   })
 )
 
@@ -25,7 +34,9 @@ class ListComponent extends React.Component {
     super(props)
     const activeIndex = findActiveIndex(this.props.children)
     this.state = { activeIndex: activeIndex > -1 ? activeIndex : 0 }
+    this.itemEls = []
     this.handleListItemClick = this.handleListItemClick.bind(this)
+    this.handleKeyDown = this.handleKeyDown.bind(this)
   }
   componentWillReceiveProps(nextProps) {
     const nextActiveIndex = findActiveIndex(nextProps.children)
@@ -38,14 +49,33 @@ class ListComponent extends React.Component {
       if (typeof originalOnClick === 'function') originalOnClick(i, evt)
     })
   }
+  handleKeyDown(evt) {
+    if (evt.key !== 'ArrowRight' && evt.key !== 'ArrowLeft') return
+
+    evt.stopPropagation()
+    evt.preventDefault()
+    const delta = evt.key === 'ArrowRight' ? 1 : -1
+    const nextItem = this.itemEls[this.state.activeIndex + delta]
+
+    if (nextItem) {
+      nextItem.focus()
+      nextItem.click()
+    }
+  }
   render() {
     return (
-      <List role="tablist" themeName={this.context.themeName}>
+      <List
+        role="tablist"
+        onKeyDown={this.handleKeyDown}
+        tabIndex="0"
+        themeName={this.context.themeName}
+      >
         {React.Children.map(this.props.children, (el, i) =>
           React.cloneElement(el, {
             active: this.state.activeIndex === i,
             key: el.id,
-            onClick: evt => this.handleListItemClick(i, el.props.onClick, evt)
+            onClick: evt => this.handleListItemClick(i, el.props.onClick, evt),
+            innerRef: itemEl => (this.itemEls[i] = itemEl)
           })
         )}
       </List>

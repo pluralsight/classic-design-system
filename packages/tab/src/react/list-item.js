@@ -57,8 +57,9 @@ const Bar = glamorous.span({
   display: 'block',
   height: 0,
   opacity: 0,
-  transition: `height ${core.motion.speedNormal} ease-in-out, opacity ${core
-    .motion.speedNormal} ease-in-out`
+  transition: `height ${core.motion.speedNormal} ease-in-out, opacity ${
+    core.motion.speedNormal
+  } ease-in-out`
 })
 
 const ListItem = glamorous.button(
@@ -111,6 +112,8 @@ const ListItemComponent = (props, context) => (
     aria-selected={props.active}
     onClick={props.onClick}
     active={props.active}
+    innerRef={props.innerRef}
+    tabIndex="-1"
     themeName={context.themeName || themeDefaultName}
   >
     <TextWidth>
