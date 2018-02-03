@@ -32,7 +32,11 @@ const Boxes = props => (
   <div className="boxes">
     <EqualColumnLayout count={props.count || EqualColumnLayout.counts.three}>
       {React.Children.map(props.children, child => (
-        <div className="box">{child}</div>
+        <div className="box">
+          <a href={child.props.src} target="_blank">
+            {child}
+          </a>
+        </div>
       ))}
     </EqualColumnLayout>
     <style jsx>{`
