@@ -1,0 +1,873 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots modal no click underlay 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-1v49ac=""
+      id="psds-dialog__underlay"
+      onClick={null}
+    >
+      <div
+        data-css-xf9ugk=""
+        onKeyUp={[Function]}
+        tabIndex={-1}
+      >
+        <div>
+          <button
+            aria-label="Close dialog"
+            data-css-18edqe6=""
+            onClick={[Function]}
+          >
+            <svg
+              aria-label="close icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+              />
+            </svg>
+          </button>
+          <h1
+            className={undefined}
+            data-css-7941k5=""
+            size="large"
+          >
+            Wowzers, a Dialog
+          </h1>
+          <p
+            data-css-j1md1p=""
+          >
+            Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
+          </p>
+          <div
+            style={
+              Object {
+                "textAlign": "right",
+              }
+            }
+          >
+            <button
+              data-css-bzft25=""
+              disabled={false}
+              style={Object {}}
+            >
+              <span
+                className="css-1en8fmq"
+              >
+                Primary CTA
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots modal no close button 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-1v49ac=""
+      id="psds-dialog__underlay"
+      onClick={[Function]}
+    >
+      <div
+        data-css-xf9ugk=""
+        onKeyUp={[Function]}
+        tabIndex={-1}
+      >
+        <div>
+          <h1
+            className={undefined}
+            data-css-7941k5=""
+            size="large"
+          >
+            Wowzers, a Dialog
+          </h1>
+          <p
+            data-css-j1md1p=""
+          >
+            Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
+          </p>
+          <div
+            style={
+              Object {
+                "textAlign": "right",
+              }
+            }
+          >
+            <button
+              data-css-bzft25=""
+              disabled={false}
+              style={Object {}}
+            >
+              <span
+                className="css-1en8fmq"
+              >
+                Primary CTA
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots modal no escape key 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-1v49ac=""
+      id="psds-dialog__underlay"
+      onClick={[Function]}
+    >
+      <div
+        data-css-xf9ugk=""
+        tabIndex={-1}
+      >
+        <div>
+          <button
+            aria-label="Close dialog"
+            data-css-18edqe6=""
+            onClick={[Function]}
+          >
+            <svg
+              aria-label="close icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+              />
+            </svg>
+          </button>
+          <h1
+            className={undefined}
+            data-css-7941k5=""
+            size="large"
+          >
+            Wowzers, a Dialog
+          </h1>
+          <p
+            data-css-j1md1p=""
+          >
+            Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
+          </p>
+          <div
+            style={
+              Object {
+                "textAlign": "right",
+              }
+            }
+          >
+            <button
+              data-css-bzft25=""
+              disabled={false}
+              style={Object {}}
+            >
+              <span
+                className="css-1en8fmq"
+              >
+                Primary CTA
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots modal with close button 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-1v49ac=""
+      id="psds-dialog__underlay"
+      onClick={[Function]}
+    >
+      <div
+        data-css-xf9ugk=""
+        onKeyUp={[Function]}
+        tabIndex={-1}
+      >
+        <div>
+          <button
+            aria-label="Close dialog"
+            data-css-18edqe6=""
+            onClick={[Function]}
+          >
+            <svg
+              aria-label="close icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+              />
+            </svg>
+          </button>
+          <h1
+            className={undefined}
+            data-css-7941k5=""
+            size="large"
+          >
+            Wowzers, a Dialog
+          </h1>
+          <p
+            data-css-j1md1p=""
+          >
+            Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
+          </p>
+          <div
+            style={
+              Object {
+                "textAlign": "right",
+              }
+            }
+          >
+            <button
+              data-css-bzft25=""
+              disabled={false}
+              style={Object {}}
+            >
+              <span
+                className="css-1en8fmq"
+              >
+                Primary CTA
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots onClose with onClose 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-2hqpvr=""
+      onKeyUp={[Function]}
+      tabIndex={-1}
+    >
+      <div>
+        <button
+          aria-label="Close dialog"
+          data-css-18edqe6=""
+          onClick={[Function]}
+        >
+          <svg
+            aria-label="close icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+            />
+          </svg>
+        </button>
+        <h1
+          className={undefined}
+          data-css-7941k5=""
+          size="large"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          data-css-j1md1p=""
+        >
+          Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "textAlign": "right",
+            }
+          }
+        >
+          <button
+            data-css-bzft25=""
+            disabled={false}
+            style={Object {}}
+          >
+            <span
+              className="css-1en8fmq"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition bottomCenter 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-1zn26r=""
+      tabIndex={-1}
+    >
+      <div>
+        <h1
+          className={undefined}
+          data-css-7941k5=""
+          size="large"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          data-css-j1md1p=""
+        >
+          Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "textAlign": "right",
+            }
+          }
+        >
+          <button
+            data-css-bzft25=""
+            disabled={false}
+            style={Object {}}
+          >
+            <span
+              className="css-1en8fmq"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition bottomLeft 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-h7odnv=""
+      tabIndex={-1}
+    >
+      <div>
+        <h1
+          className={undefined}
+          data-css-7941k5=""
+          size="large"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          data-css-j1md1p=""
+        >
+          Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "textAlign": "right",
+            }
+          }
+        >
+          <button
+            data-css-bzft25=""
+            disabled={false}
+            style={Object {}}
+          >
+            <span
+              className="css-1en8fmq"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition bottomRight 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-1g92n04=""
+      tabIndex={-1}
+    >
+      <div>
+        <h1
+          className={undefined}
+          data-css-7941k5=""
+          size="large"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          data-css-j1md1p=""
+        >
+          Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "textAlign": "right",
+            }
+          }
+        >
+          <button
+            data-css-bzft25=""
+            disabled={false}
+            style={Object {}}
+          >
+            <span
+              className="css-1en8fmq"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition none 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-2hqpvr=""
+      tabIndex={-1}
+    >
+      <div>
+        <h1
+          className={undefined}
+          data-css-7941k5=""
+          size="large"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          data-css-j1md1p=""
+        >
+          Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "textAlign": "right",
+            }
+          }
+        >
+          <button
+            data-css-bzft25=""
+            disabled={false}
+            style={Object {}}
+          >
+            <span
+              className="css-1en8fmq"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition topCenter 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-163zepq=""
+      tabIndex={-1}
+    >
+      <div>
+        <h1
+          className={undefined}
+          data-css-7941k5=""
+          size="large"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          data-css-j1md1p=""
+        >
+          Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "textAlign": "right",
+            }
+          }
+        >
+          <button
+            data-css-bzft25=""
+            disabled={false}
+            style={Object {}}
+          >
+            <span
+              className="css-1en8fmq"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition topLeft 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-15k9c3c=""
+      tabIndex={-1}
+    >
+      <div>
+        <h1
+          className={undefined}
+          data-css-7941k5=""
+          size="large"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          data-css-j1md1p=""
+        >
+          Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "textAlign": "right",
+            }
+          }
+        >
+          <button
+            data-css-bzft25=""
+            disabled={false}
+            style={Object {}}
+          >
+            <span
+              className="css-1en8fmq"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tailPosition topRight 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-13zevtd=""
+      tabIndex={-1}
+    >
+      <div>
+        <h1
+          className={undefined}
+          data-css-7941k5=""
+          size="large"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          data-css-j1md1p=""
+        >
+          Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "textAlign": "right",
+            }
+          }
+        >
+          <button
+            data-css-bzft25=""
+            disabled={false}
+            style={Object {}}
+          >
+            <span
+              className="css-1en8fmq"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
