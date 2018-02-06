@@ -84,15 +84,16 @@ export default {
     padding: '0',
     lineHeight: '0',
     border: 'none',
-    background: 'none'
+    background: 'none',
+    cursor: 'pointer'
   },
   [`.psds-dialog__close > svg`]: {
     height: '24px',
     width: '24px',
     fill: core.colors.gray03
   },
-  // __underlay
-  [`.psds-dialog__underlay`]: {
+  // __overlay
+  [`.psds-dialog__overlay`]: ({ fade }) => ({
     position: 'fixed',
     top: 0,
     left: 0,
@@ -101,6 +102,10 @@ export default {
     backgroundColor: transparentize(0.5, core.colors.black),
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
-  }
+    alignItems: 'center',
+    opacity: 0,
+    animation: `${fade || 'psds-dialog__keyframes__fade'} ${
+      core.motion.speedFast
+    } ease-out forwards`
+  })
 }

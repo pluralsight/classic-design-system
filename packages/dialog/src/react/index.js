@@ -9,7 +9,7 @@ import css from '../css'
 import * as vars from '../vars'
 
 const ESCAPE_KEYCODE = 27
-const MODAL_UNDERLAY_ID = 'psds-dialog__underlay'
+const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
 
 const fade = glamor.css.keyframes(
   css[`@keyframes psds-dialog__keyframes__fade`]
@@ -31,7 +31,7 @@ const styles = {
       ...css[`.psds-dialog__close`],
       '> svg': css[`.psds-dialog__close > svg`]
     }),
-  underlay: _ => glamor.css(css[`.psds-dialog__underlay`])
+  overlay: _ => glamor.css(css[`.psds-dialog__overlay`]({ fade }))
 }
 
 const CloseButton = props => (
@@ -55,18 +55,18 @@ function handleKeyUp(props, evt) {
   if (evt.keyCode === ESCAPE_KEYCODE) props.onClose(evt)
 }
 
-function handleUnderlayClick(props, evt) {
-  if (evt.target.id === MODAL_UNDERLAY_ID) props.onClose(evt)
+function handleOverlayClick(props, evt) {
+  if (evt.target.id === MODAL_OVERLAY_ID) props.onClose(evt)
 }
 
-const ModalUnderlay = props => (
+const ModalOverlay = props => (
   <div
-    {...styles.underlay(props)}
-    id={MODAL_UNDERLAY_ID}
+    {...styles.overlay(props)}
+    id={MODAL_OVERLAY_ID}
     onClick={
-      props.disableCloseOnUnderlayClick
+      props.disableCloseOnOverlayClick
         ? null
-        : handleUnderlayClick.bind(this, props)
+        : handleOverlayClick.bind(this, props)
     }
   >
     {props.children}
@@ -75,7 +75,7 @@ const ModalUnderlay = props => (
 
 class Dialog extends React.Component {
   componentDidMount() {
-    if (this.el) this.el.focus()
+    if (this.el && !this.props.disableFocusOnMount) this.el.focus()
   }
   render() {
     const { props } = this
@@ -113,9 +113,9 @@ class DialogWrapper extends React.Component {
   render() {
     const { props } = this
     return props.modal ? (
-      <ModalUnderlay {...props}>
+      <ModalOverlay {...props}>
         <Dialog {...props} />
-      </ModalUnderlay>
+      </ModalOverlay>
     ) : (
       <Dialog {...props} />
     )
@@ -125,15 +125,17 @@ class DialogWrapper extends React.Component {
 DialogWrapper.propTypes = {
   disableCloseButton: PropTypes.bool,
   disableCloseOnEscape: PropTypes.bool,
-  disableCloseOnUnderlayClick: PropTypes.bool,
+  disableCloseOnOverlayClick: PropTypes.bool,
   modal: PropTypes.bool,
+  disableFocusOnMount: PropTypes.bool,
   tailPosition: PropTypes.oneOf(Object.keys(vars.tailPositions)),
   onClose: PropTypes.func
 }
 DialogWrapper.defaultProps = {
   disableCloseButton: false,
   disableCloseOnEscape: false,
-  disableCloseOnUnderlayClick: false,
+  disableCloseOnOverlayClick: false,
+  disableFocusOnMount: false,
   modal: false
 }
 
