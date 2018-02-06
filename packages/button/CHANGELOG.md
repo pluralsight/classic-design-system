@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.5.0"></a>
+# [10.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.4.3...@pluralsight/ps-design-system-button@10.5.0) (2018-02-06)
+
+
+### Features
+
+* **button:** allow all onMouse* props ([8aa6b84](https://github.com/pluralsight/design-system/commit/8aa6b84))
+
+
+
+
 <a name="10.4.3"></a>
 ## [10.4.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.4.2...@pluralsight/ps-design-system-button@10.4.3) (2018-02-01)
 

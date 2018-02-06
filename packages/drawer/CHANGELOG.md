@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.24"></a>
+## [1.0.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@1.0.23...@pluralsight/ps-design-system-drawer@1.0.24) (2018-02-06)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-drawer
+
 <a name="1.0.23"></a>
 ## [1.0.23](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@1.0.22...@pluralsight/ps-design-system-drawer@1.0.23) (2018-02-01)
 

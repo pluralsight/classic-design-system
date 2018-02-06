@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.24.0"></a>
+# [9.24.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.23.0...@pluralsight/ps-design-system-site@9.24.0) (2018-02-06)
+
+
+### Bug Fixes
+
+* **site:** add git forgotten ui/intro.js file ([dae32b1](https://github.com/pluralsight/design-system/commit/dae32b1))
+
+
+### Features
+
+* **dialog:** allow referencing dom element via innerRef prop ([8187455](https://github.com/pluralsight/design-system/commit/8187455))
+* **site:** add in-app example for tooltip ([2bc8e9d](https://github.com/pluralsight/design-system/commit/2bc8e9d))
+
+
+
+
 <a name="9.23.0"></a>
 # [9.23.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.22.5...@pluralsight/ps-design-system-site@9.23.0) (2018-02-06)
 

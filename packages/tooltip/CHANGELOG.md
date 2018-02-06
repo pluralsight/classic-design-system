@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@1.1.3...@pluralsight/ps-design-system-tooltip@1.2.0) (2018-02-06)
+
+
+### Features
+
+* **tooltip:** allow referencing dom element via innerRef prop ([6cc92a5](https://github.com/pluralsight/design-system/commit/6cc92a5))
+
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@1.1.2...@pluralsight/ps-design-system-tooltip@1.1.3) (2018-02-06)
 
