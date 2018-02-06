@@ -24,9 +24,9 @@ exports[`Storyshots modal no click underlay 1`] = `
     }
   >
     <div
-      data-css-1v49ac=""
-      id="psds-dialog__underlay"
-      onClick={null}
+      data-css-17ouz8q=""
+      id="psds-dialog__overlay"
+      onClick={[Function]}
     >
       <div
         data-css-xf9ugk=""
@@ -36,7 +36,7 @@ exports[`Storyshots modal no click underlay 1`] = `
         <div>
           <button
             aria-label="Close dialog"
-            data-css-18edqe6=""
+            data-css-1uhqcv0=""
             onClick={[Function]}
           >
             <svg
@@ -112,8 +112,8 @@ exports[`Storyshots modal no close button 1`] = `
     }
   >
     <div
-      data-css-1v49ac=""
-      id="psds-dialog__underlay"
+      data-css-17ouz8q=""
+      id="psds-dialog__overlay"
       onClick={[Function]}
     >
       <div
@@ -184,8 +184,8 @@ exports[`Storyshots modal no escape key 1`] = `
     }
   >
     <div
-      data-css-1v49ac=""
-      id="psds-dialog__underlay"
+      data-css-17ouz8q=""
+      id="psds-dialog__overlay"
       onClick={[Function]}
     >
       <div
@@ -195,7 +195,7 @@ exports[`Storyshots modal no escape key 1`] = `
         <div>
           <button
             aria-label="Close dialog"
-            data-css-18edqe6=""
+            data-css-1uhqcv0=""
             onClick={[Function]}
           >
             <svg
@@ -271,8 +271,8 @@ exports[`Storyshots modal with close button 1`] = `
     }
   >
     <div
-      data-css-1v49ac=""
-      id="psds-dialog__underlay"
+      data-css-17ouz8q=""
+      id="psds-dialog__overlay"
       onClick={[Function]}
     >
       <div
@@ -283,7 +283,7 @@ exports[`Storyshots modal with close button 1`] = `
         <div>
           <button
             aria-label="Close dialog"
-            data-css-18edqe6=""
+            data-css-1uhqcv0=""
             onClick={[Function]}
           >
             <svg
@@ -366,7 +366,7 @@ exports[`Storyshots onClose with onClose 1`] = `
       <div>
         <button
           aria-label="Close dialog"
-          data-css-18edqe6=""
+          data-css-1uhqcv0=""
           onClick={[Function]}
         >
           <svg
