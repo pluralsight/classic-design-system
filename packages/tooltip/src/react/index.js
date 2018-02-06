@@ -54,25 +54,30 @@ const CloseButton = props => (
   </button>
 )
 
-const Tooltip = props => {
-  const tooltipProps = {
-    ...styles.tooltip(props),
-    ...(props.style ? { style: props.style } : null),
-    ...(props.className ? { className: props.className } : null)
+class Tooltip extends React.Component {
+  render() {
+    const { props } = this
+    const tooltipProps = {
+      ...styles.tooltip(props),
+      ...(props.innerRef ? { ref: props.innerRef } : null),
+      ...(props.style ? { style: props.style } : null),
+      ...(props.className ? { className: props.className } : null)
+    }
+    return (
+      <div {...tooltipProps}>
+        {typeof props.onClose === 'function' && (
+          <CloseButton appearance={props.appearance} onClose={props.onClose} />
+        )}
+        {props.children}
+      </div>
+    )
   }
-  return (
-    <div {...tooltipProps}>
-      {typeof props.onClose === 'function' && (
-        <CloseButton appearance={props.appearance} onClose={props.onClose} />
-      )}
-      {props.children}
-    </div>
-  )
 }
 
 Tooltip.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
   children: PropTypes.string.isRequired,
+  innerRef: PropTypes.func,
   tailPosition: PropTypes.oneOf(Object.keys(vars.tailPositions)),
   onClose: PropTypes.func
 }
