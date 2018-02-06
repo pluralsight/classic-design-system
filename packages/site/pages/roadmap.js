@@ -8,6 +8,7 @@ import {
   Code,
   Content,
   GithubIcon,
+  Intro,
   Link,
   P,
   PageHeading,
@@ -88,19 +89,6 @@ const work = {
     }
   ]
 }
-
-const Purpose = props => (
-  <div className="purpose">
-    {props.children}
-    <style jsx>{`
-      .purpose {
-        font-size: ${core.type.fontSizeMedium};
-        line-height: ${core.type.lineHeightExtra};
-        font-weight: ${core.type.fontWeightXLight};
-      }
-    `}</style>
-  </div>
-)
 
 const Bar = _ => (
   <div aria-hidden="true" className="bar">
@@ -284,12 +272,12 @@ export default withServerProps(_ => (
   <Chrome>
     <Content title="Install">
       <PageHeading>Roadmap</PageHeading>
-      <Purpose>
+      <Intro>
         The Roadmap aims to expose what current is and what future work will be
         tackled in the Design System. Explore the items below and follow them on
         to Github for more details and to join the conversation to promote or
         explore these or other items.
-      </Purpose>
+      </Intro>
       <Bar />
       <SectionHeading>Now</SectionHeading>
       <P>

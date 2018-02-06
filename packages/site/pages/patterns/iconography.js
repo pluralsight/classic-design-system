@@ -7,6 +7,7 @@ import {
   Content,
   Example,
   Heading,
+  Intro,
   Link,
   P,
   PageHeading,
@@ -14,19 +15,6 @@ import {
   SectionHeading,
   withServerProps
 } from '../../src/ui'
-
-const Purpose = props => (
-  <div className="purpose">
-    {props.children}
-    <style jsx>{`
-      .purpose {
-        font-size: ${core.type.fontSizeMedium};
-        line-height: ${core.type.lineHeightExtra};
-        font-weight: ${core.type.fontWeightXLight};
-      }
-    `}</style>
-  </div>
-)
 
 const Boxes = props => (
   <div className="boxes">
@@ -60,7 +48,7 @@ export default withServerProps(_ => (
     <Content title="Iconography">
       <PageHeading>Iconography</PageHeading>
 
-      <Purpose>
+      <Intro>
         Create custom icons based on the following guidelines to yield a
         consistent style. Propose your icons be included in the{' '}
         <Link href="/components/icon/#common-icon-set">common set</Link> by
@@ -69,7 +57,7 @@ export default withServerProps(_ => (
           issue in Github
         </Link>. For implementation instructions, visit the{' '}
         <Link href="/components/icon">Icon component page</Link>.
-      </Purpose>
+      </Intro>
 
       <SectionHeading>Canvas Size, Padding, Live Area</SectionHeading>
       <Boxes>
