@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-dialog",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Design System component for dialog ui",
   "main": "index.js",
   "scripts": {

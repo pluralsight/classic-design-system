@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.23.0"></a>
+# [9.23.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.22.5...@pluralsight/ps-design-system-site@9.23.0) (2018-02-06)
+
+
+### Features
+
+* **site:** add iconography example image link ([8247c43](https://github.com/pluralsight/design-system/commit/8247c43))
+* **site:** dialog docs ([558ec74](https://github.com/pluralsight/design-system/commit/558ec74))
+* **site:** iconography guidelines ([f1a2f3d](https://github.com/pluralsight/design-system/commit/f1a2f3d)), closes [#142](https://github.com/pluralsight/design-system/issues/142)
+
+
+
+
 <a name="9.22.5"></a>
 ## [9.22.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.22.4...@pluralsight/ps-design-system-site@9.22.5) (2018-02-02)
 
