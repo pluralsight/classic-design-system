@@ -87,7 +87,7 @@ class Dialog extends React.Component {
         : null),
       ref: el => {
         this.el = el
-        if (typeof props.ref === 'function') props.ref(el)
+        if (typeof props.innerRef === 'function') props.innerRef(el)
       },
       tabIndex: -1,
       ...(props.style ? { style: props.style } : null),

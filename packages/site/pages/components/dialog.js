@@ -109,6 +109,13 @@ export default withServerProps(_ => (
             'prevents focus the Dialog on render'
           ]),
           PropTypes.row([
+            'innerRef',
+            'DOM element => ()',
+            null,
+            null,
+            'react ref callback'
+          ]),
+          PropTypes.row([
             'modal',
             'boolean',
             null,
