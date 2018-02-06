@@ -22,6 +22,7 @@
     "@pluralsight/ps-design-system-card": "^8.2.6",
     "@pluralsight/ps-design-system-circularprogress": "^1.2.8",
     "@pluralsight/ps-design-system-core": "^4.1.1",
+    "@pluralsight/ps-design-system-dialog": "^1.0.0",
     "@pluralsight/ps-design-system-drawer": "^1.0.23",
     "@pluralsight/ps-design-system-icon": "^8.4.11",
     "@pluralsight/ps-design-system-layout": "^0.4.19",

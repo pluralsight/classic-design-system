@@ -14,6 +14,10 @@ module.exports = {
       '/components/button': { page: '/components/button' },
       '/components/card': { page: '/components/card' },
       '/components/circularprogress': { page: '/components/circularprogress' },
+      '/components/dialog': { page: '/components/dialog' },
+      '/components/dialog-modal-example': {
+        page: '/components/dialog-modal-example'
+      },
       '/components/drawer': { page: '/components/drawer' },
       '/components/icon': { page: '/components/icon' },
       '/components/layout': { page: '/components/layout' },
