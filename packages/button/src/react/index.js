@@ -165,12 +165,12 @@ const BtnText = glamorous.span(css[`.psds-button__text`])
 const buttonHtmlPropsWhitelist = [
   'href',
   'onClick',
-  'onMouseDown',
   'disabled',
   'className',
   'style',
   'title',
   'tabIndex',
+  /onMouse/,
   /^aria-/,
   /^data-/
 ]
