@@ -67,7 +67,7 @@ export default withServerProps(_ => (
           ]),
           PropTypes.row([
             'innerRef',
-            'function',
+            'DOM element => ()',
             null,
             null,
             'react ref callback'
