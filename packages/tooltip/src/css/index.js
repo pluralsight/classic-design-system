@@ -97,7 +97,8 @@ export default {
     padding: '0',
     lineHeight: '0',
     border: 'none',
-    background: 'none'
+    background: 'none',
+    cursor: 'pointer'
   },
   [`.psds-tooltip__close > svg`]: {
     height: '24px',
