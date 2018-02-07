@@ -43,8 +43,9 @@ const TagContainer = props => {
         textDecoration: 'none',
         border: 'none',
         overflow: 'hidden',
-        transition: `background-color ${core.motion
-          .speedXFast} linear, color ${core.motion.speedXFast} linear`,
+        transition: `background-color ${core.motion.speedXFast} linear, color ${
+          core.motion.speedXFast
+        } linear`,
         ...(({ href, onClick }) =>
           href || onClick
             ? {
@@ -134,7 +135,7 @@ Tag.sizes = sizes
 
 Tag.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(appearances)),
-  children: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
   href: PropTypes.string,
   icon: PropTypes.element,
   isPressed: PropTypes.bool,
