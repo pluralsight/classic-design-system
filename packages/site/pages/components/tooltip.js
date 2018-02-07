@@ -1,6 +1,8 @@
 import Button from '@pluralsight/ps-design-system-button/react'
 import core from '@pluralsight/ps-design-system-core'
+import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
+import Theme from '@pluralsight/ps-design-system-theme/react'
 import Tooltip from '@pluralsight/ps-design-system-tooltip/react'
 
 import {
@@ -8,6 +10,7 @@ import {
   Code,
   Content,
   Example,
+  Guideline,
   Heading,
   Intro,
   Link,
@@ -37,6 +40,43 @@ const styleUnder = (target, tooltip) => {
     position: 'absolute',
     top: tooltipTop,
     left: tooltipLeft
+  }
+}
+
+class TooltipGuideline extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { el: null }
+  }
+  componentDidMount() {
+    this.setState({ el: this.el })
+  }
+  render() {
+    return (
+      <Theme name={Theme.names.light}>
+        <Button
+          appearance={Button.appearances.flat}
+          innerRef={el => (this.el = el)}
+          icon={<Icon id={Icon.ids.bookmark} />}
+        />
+        <div className="tooltipWrapper">
+          <Tooltip
+            appearance={this.props.appearance}
+            onClose={this.props.onClose}
+            tailPosition={Tooltip.tailPositions.topLeft}
+          >
+            {this.props.children}
+          </Tooltip>
+        </div>
+        <style jsx>{`
+          .tooltipWrapper {
+            position: relative;
+            top: 12px;
+            left: -2px;
+          }
+        `}</style>
+      </Theme>
+    )
   }
 }
 
@@ -287,6 +327,51 @@ export default withServerProps(_ => (
         codes={[
           `<Tooltip onClose={_ => alert('close clicked')}>With a close button for those cases you want the tooltip to persist until closed.</Tooltip>`
         ]}
+      />
+
+      <SectionHeading>Guidelines</SectionHeading>
+      <P>Tooltips should be written in sentence case.</P>
+      <Guideline
+        do={<TooltipGuideline>Bookmark this course</TooltipGuideline>}
+        dont={<TooltipGuideline>Bookmark This Course</TooltipGuideline>}
+      />
+
+      <P>Write your tooltips to be consice and scannable.</P>
+      <Guideline
+        do={<TooltipGuideline>Bookmark this course</TooltipGuideline>}
+        dont={
+          <TooltipGuideline>
+            Bookmark this course and then you’ll know its safe and sound. This
+            course will enjoy its new company amongst your other bookmarked
+            courses. At first this course might feel shy, but the other
+            bookmarked courses will be friendly and will help this new course
+            get acclimated and comfortable.
+          </TooltipGuideline>
+        }
+      />
+
+      <P>
+        Use <code>accent</code> appearance to gain user attention in cases such
+        onboarding, introducing functionality, asking for input, or prompting
+        action. A good rule of thumb is <code>accent</code> tooltips appear
+        automatically, while basic tooltips appear as a user clicks or hovers to
+        obtain more context.
+      </P>
+      <Guideline
+        do={
+          <TooltipGuideline
+            appearance={Tooltip.appearances.accent}
+            onClose={_ => {}}
+          >
+            We’ve added a new way keep track of your content. Bookmark this
+            course to view it later.
+          </TooltipGuideline>
+        }
+        dont={
+          <TooltipGuideline appearance={Tooltip.appearances.accent}>
+            Bookmark this course
+          </TooltipGuideline>
+        }
       />
     </Content>
   </Chrome>
