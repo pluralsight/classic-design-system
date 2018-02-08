@@ -1,5 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
+import Dialog from '@pluralsight/ps-design-system-dialog/react'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react'
+import React from 'react'
 
 import {
   Chrome,
@@ -16,32 +18,64 @@ import {
   withServerProps
 } from '../../src/ui'
 
-const Boxes = props => (
-  <div className="boxes">
-    <EqualColumnLayout count={props.count || EqualColumnLayout.counts.three}>
-      {React.Children.map(props.children, child => (
-        <div className="box">
-          <a href={child.props.src} target="_blank">
-            {child}
-          </a>
-        </div>
-      ))}
-    </EqualColumnLayout>
-    <style jsx>{`
-      .boxes {
-        margin: ${core.layout.spacingLarge} 0;
-      }
-      .box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: ${core.colors.bone};
-        border-radius: 12px;
-        padding: ${core.layout.spacingMedium};
-      }
-    `}</style>
-  </div>
-)
+class Boxes extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { modalSrc: null }
+    this.handleOpen = this.handleOpen.bind(this)
+    this.handleClose = this.handleClose.bind(this)
+  }
+  handleOpen(modalSrc) {
+    this.setState({ modalSrc })
+  }
+  handleClose() {
+    this.setState({ modalSrc: null })
+  }
+  render() {
+    const { props } = this
+    return (
+      <div className="boxes">
+        <EqualColumnLayout
+          count={props.count || EqualColumnLayout.counts.three}
+        >
+          {React.Children.map(props.children, child => (
+            <div className="box">
+              <button
+                className="button"
+                onClick={_ => this.handleOpen(child.props.src)}
+              >
+                {child}
+              </button>
+            </div>
+          ))}
+        </EqualColumnLayout>
+        {this.state.modalSrc && (
+          <Dialog modal onClose={this.handleClose}>
+            <img src={this.state.modalSrc} />
+          </Dialog>
+        )}
+        <style jsx>{`
+          .boxes {
+            margin: ${core.layout.spacingLarge} 0;
+          }
+          .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: ${core.colors.bone};
+            border-radius: 12px;
+            padding: ${core.layout.spacingMedium};
+          }
+          .button {
+            border: none;
+            background: none;
+            cursor: pointer;
+          }
+        `}</style>
+      </div>
+    )
+  }
+}
 
 export default withServerProps(_ => (
   <Chrome>
