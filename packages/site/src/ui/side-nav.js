@@ -371,7 +371,6 @@ export default withHeadings(props => (
         overflow-x: hidden;
         overflow-y: auto;
         transition: transform ${core.motion.speedXFast} ease-in-out;
-        z-index: 10; /* TODO: arbitrary; above code mirror; come back when ready to systemize */
       }
       .sidenavOpen {
         transform: translateX(0);
