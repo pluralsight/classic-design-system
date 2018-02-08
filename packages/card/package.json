@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-card",
-  "version": "8.2.8",
+  "version": "8.2.9",
   "description": "Design System component for card ui",
   "main": "index.js",
   "scripts": {
@@ -23,16 +23,16 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.1.2",
-    "@pluralsight/ps-design-system-icon": "^8.4.13",
+    "@pluralsight/ps-design-system-core": "^4.1.3",
+    "@pluralsight/ps-design-system-icon": "^8.4.14",
     "glamorous": "^4.1.0",
     "polished": "^1.7.0",
     "prop-types": "^15.5.10",
     "shiitake": "^2.1.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-button": "^10.5.1",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.19",
+    "@pluralsight/ps-design-system-button": "^10.5.2",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.20",
     "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",

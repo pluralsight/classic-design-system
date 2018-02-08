@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.7.2"></a>
+## [1.7.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.7.1...@pluralsight/ps-design-system-build@1.7.2) (2018-02-08)
+
+
+### Bug Fixes
+
+* **build:** fix missed references to local dashify ([bd9e311](https://github.com/pluralsight/design-system/commit/bd9e311))
+
+
+
+
 <a name="1.7.1"></a>
 ## [1.7.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.7.0...@pluralsight/ps-design-system-build@1.7.1) (2018-02-08)
 
