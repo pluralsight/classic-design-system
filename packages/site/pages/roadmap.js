@@ -20,7 +20,7 @@ import {
 const work = {
   now: [
     {
-      title: 'Non-React CSS Support',
+      title: 'CSS Extractions',
       tags: ['Component']
     }
   ],
