@@ -130,69 +130,76 @@ class InAppExample extends React.Component {
   render() {
     return (
       <div className="examples">
-        <div className="example">
-          <Button
-            appearance={Button.appearances.flat}
-            className="text"
-            innerRef={el => (this.examples[0] = el)}
-          >
-            Look at me
-          </Button>
-          <TooltipPositioner styleBy={styleUnder.bind(null, this.examples[0])}>
-            <Tooltip
-              innerRef={el => (this.tips[0] = el)}
-              tailPosition={Tooltip.tailPositions.topCenter}
+        <Theme name={Theme.names.dark}>
+          <div className="example">
+            <Button
+              appearance={Button.appearances.flat}
+              className="text"
+              innerRef={el => (this.examples[0] = el)}
             >
-              Tooltip
-            </Tooltip>
-          </TooltipPositioner>
-        </div>
-
-        <div className="example">
-          <Button
-            appearance={Button.appearances.flat}
-            className="text"
-            innerRef={el => (this.examples[1] = el)}
-            onMouseOver={this.handleMouseOver}
-            onMouseOut={this.handleMouseOut}
-          >
-            Hover me
-          </Button>
-        </div>
-        {this.state.isHovered && (
-          <TooltipPositioner styleBy={styleUnder.bind(null, this.examples[1])}>
-            <Tooltip
-              innerRef={el => (this.tips[1] = el)}
-              style={styleUnder(this.state.examples[1], this.state.tips[1])}
-              tailPosition={Tooltip.tailPositions.topCenter}
+              Look at me
+            </Button>
+            <TooltipPositioner
+              styleBy={styleUnder.bind(null, this.examples[0])}
             >
-              Is hovered
-            </Tooltip>
-          </TooltipPositioner>
-        )}
+              <Tooltip
+                innerRef={el => (this.tips[0] = el)}
+                tailPosition={Tooltip.tailPositions.topCenter}
+              >
+                Tooltip
+              </Tooltip>
+            </TooltipPositioner>
+          </div>
 
-        <div className="example">
-          <Button
-            appearance={Button.appearances.flat}
-            className="text"
-            innerRef={el => (this.examples[2] = el)}
-            onClick={this.handleClick}
-          >
-            Click me
-          </Button>
-        </div>
-        {this.state.isClicked && (
-          <TooltipPositioner styleBy={styleUnder.bind(null, this.examples[2])}>
-            <Tooltip
-              innerRef={el => (this.tips[2] = el)}
-              style={styleUnder(this.state.examples[2], this.state.tips[2])}
-              tailPosition={Tooltip.tailPositions.topCenter}
+          <div className="example">
+            <Button
+              appearance={Button.appearances.flat}
+              className="text"
+              innerRef={el => (this.examples[1] = el)}
+              onMouseOver={this.handleMouseOver}
+              onMouseOut={this.handleMouseOut}
             >
-              Was clicked
-            </Tooltip>
-          </TooltipPositioner>
-        )}
+              Hover me
+            </Button>
+          </div>
+          {this.state.isHovered && (
+            <TooltipPositioner
+              styleBy={styleUnder.bind(null, this.examples[1])}
+            >
+              <Tooltip
+                innerRef={el => (this.tips[1] = el)}
+                style={styleUnder(this.state.examples[1], this.state.tips[1])}
+                tailPosition={Tooltip.tailPositions.topCenter}
+              >
+                Is hovered
+              </Tooltip>
+            </TooltipPositioner>
+          )}
 
+          <div className="example">
+            <Button
+              appearance={Button.appearances.flat}
+              className="text"
+              innerRef={el => (this.examples[2] = el)}
+              onClick={this.handleClick}
+            >
+              Click me
+            </Button>
+          </div>
+          {this.state.isClicked && (
+            <TooltipPositioner
+              styleBy={styleUnder.bind(null, this.examples[2])}
+            >
+              <Tooltip
+                innerRef={el => (this.tips[2] = el)}
+                style={styleUnder(this.state.examples[2], this.state.tips[2])}
+                tailPosition={Tooltip.tailPositions.topCenter}
+              >
+                Was clicked
+              </Tooltip>
+            </TooltipPositioner>
+          )}
+        </Theme>
         <style jsx>{`
           .examples {
             display: flex;
