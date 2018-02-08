@@ -18,7 +18,6 @@
     "babel-preset-stage-2": "^6.24.1",
     "chalk": "^2.0.1",
     "css-loader": "^0.28.4",
-    "dashify": "^0.2.2",
     "idempotent-fs": "^1.2.0",
     "postcss": "^6.0.1",
     "postcss-cssnext": "^3.0.2",
