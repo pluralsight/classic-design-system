@@ -22,19 +22,11 @@ const work = {
     {
       title: 'Non-React CSS Support',
       tags: ['Component']
-    },
-    {
-      title: 'Iconography',
-      tags: ['Pattern']
     }
   ],
   next: [
     {
       title: 'Contribution Discovery',
-      tags: ['Component']
-    },
-    {
-      title: 'Dialog',
       tags: ['Component']
     },
     {
