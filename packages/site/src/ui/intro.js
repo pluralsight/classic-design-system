@@ -8,7 +8,7 @@ const Intro = props => (
         margin-bottom: ${core.layout.spacingLarge};
         font-size: ${core.type.fontSizeMedium};
         line-height: ${core.type.lineHeightExtra};
-        font-weight: ${core.type.fontWeightXLight};
+        font-weight: ${core.type.fontWeightLight};
       }
     `}</style>
   </div>
