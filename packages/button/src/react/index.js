@@ -19,7 +19,6 @@ const styleSize = ({ size }) => css[`.psds-button--size-${size}`]
 
 const styleAppearance = ({ appearance, themeName }) => ({
   ...css[`.psds-button--appearance-${appearance}`],
-  ...css[`.psds-button--appearance-${appearance}`],
   ...css[`.psds-button--appearance-${appearance}.psds-theme--${themeName}`],
   ':hover': {
     ...css[`.psds-button--appearance-${appearance}:hover`],
