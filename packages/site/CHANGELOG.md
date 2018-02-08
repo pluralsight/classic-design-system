@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.26.0"></a>
+# [9.26.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.25.1...@pluralsight/ps-design-system-site@9.26.0) (2018-02-08)
+
+
+### Features
+
+* **site:** add download iconography sketch button ([3f4633d](https://github.com/pluralsight/design-system/commit/3f4633d))
+* **site:** show dialog of icons in iconography ([28c4a06](https://github.com/pluralsight/design-system/commit/28c4a06))
+
+
+
+
 <a name="9.25.1"></a>
 ## [9.25.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.25.0...@pluralsight/ps-design-system-site@9.25.1) (2018-02-08)
 

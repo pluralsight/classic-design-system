@@ -1,7 +1,7 @@
 {
   "name": "@pluralsight/ps-design-system-site",
   "private": true,
-  "version": "9.25.1",
+  "version": "9.26.0",
   "description": "Reference site",
   "main": "index.js",
   "engines": {
@@ -31,7 +31,7 @@
     "@pluralsight/ps-design-system-row": "^2.4.17",
     "@pluralsight/ps-design-system-switch": "^1.1.8",
     "@pluralsight/ps-design-system-tab": "^7.3.3",
-    "@pluralsight/ps-design-system-tag": "^1.1.21",
+    "@pluralsight/ps-design-system-tag": "^1.2.0",
     "@pluralsight/ps-design-system-text": "^10.4.21",
     "@pluralsight/ps-design-system-theme": "^1.2.0",
     "@pluralsight/ps-design-system-tooltip": "^1.2.2",
