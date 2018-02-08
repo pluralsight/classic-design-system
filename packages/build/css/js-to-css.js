@@ -1,6 +1,5 @@
 // based on https://github.com/jonschlinkert/dashify/blob/master/index.js
-// change: ignore non-word characters (eg, %)
-function dashify(str, options) {
+const dashify = (str, options) => {
   if (typeof str !== 'string') {
     throw new TypeError('expected a string')
   }
@@ -13,21 +12,31 @@ function dashify(str, options) {
     .toLowerCase()
 }
 
-// based on https://raw.githubusercontent.com/tiaanduplessis/obj-to-css/master/index.js
-function toCss(obj = {}) {
-  const selectors = Object.keys(obj)
-  return selectors
-    .map(selector => {
-      const definition =
-        typeof obj[selector] === 'function' ? obj[selector]({}) : obj[selector]
-      const rules = Object.keys(definition)
-        .map(rule => `  ${dashify(rule)}: ${definition[rule]};`)
-        .join('\n')
-      return `${selector} {
-${rules}
-}`
-    })
-    .join('\n')
-}
+const selector = (tab, name, obj) => `${tab}${name} {
+${rules(tab + '  ', obj)}
+${tab}}`
 
-module.exports = toCss
+const rules = (tab, obj) =>
+  Object.keys(obj)
+    .map(
+      attr =>
+        typeof obj[attr] === 'object'
+          ? selector(tab, attr, obj[attr])
+          : rule(tab, attr, obj)
+    )
+    .join('\n')
+
+const rule = (tab, attr, obj) => `${tab}${dashify(attr)}: ${obj[attr]};`
+
+const stylesheet = (obj = {}) =>
+  Object.keys(obj)
+    .map(name =>
+      selector(
+        '',
+        name,
+        typeof obj[name] === 'function' ? obj[name]({}) : obj[name]
+      )
+    )
+    .join('\n')
+
+module.exports = stylesheet
