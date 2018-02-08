@@ -1,117 +1,92 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="264px" height="264px" viewBox="0 0 264 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
-    <title>Example 1</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <circle id="path-1" cx="117.5" cy="108.5" r="3.5"></circle>
-        <path d="M55,40 L55,33 C51.1340068,33 48,36.1340068 48,40 L55,40 Z" id="path-2"></path>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Example-1">
-            <g id="Group-2" transform="translate(14.000000, 43.000000)">
-                <g id="Icon-Grid---Base---Zoomed" transform="translate(34.000000, 5.000000)">
-                    <g id="Grid">
-                        <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="168" height="169.05"></rect>
-                        <g id="pixels" opacity="0.400000006" stroke="#000000" stroke-width="0.5">
-                            <g id="Group" opacity="0.200000003">
-                                <rect id="Rectangle-3" x="161" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="154" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="147" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="140" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="133" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="126" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="119" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="112" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="105" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="98" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="91" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="84" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="77" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="70" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="63" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="56" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="49" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="42" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="35" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="28" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="21" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="14" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="7" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="0" y="0" width="7" height="168"></rect>
-                            </g>
-                            <g id="Group" opacity="0.200000003" transform="translate(84.000000, 84.000000) rotate(90.000000) translate(-84.000000, -84.000000) ">
-                                <rect id="Rectangle-3" x="161" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="154" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="147" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="140" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="133" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="126" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="119" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="112" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="105" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="98" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="91" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="84" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="77" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="70" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="63" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="56" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="49" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="42" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="35" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="28" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="21" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="14" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="7" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="0" y="0" width="7" height="168"></rect>
-                            </g>
-                        </g>
-                        <rect id="bounds" stroke="#AAAAAA" stroke-width="2" x="1" y="1" width="166" height="166"></rect>
-                    </g>
-                </g>
-                <g id="Icons/envelope" opacity="0.400000006" transform="translate(34.000000, 5.000000)">
-                    <rect id="bounds" x="0" y="0" width="168" height="168"></rect>
-                    <path d="M37.8898575,42 L84,88.1737137 L130.110143,42 L37.8898575,42 Z M140,51.9227939 L86.476578,105.520008 C85.1106849,106.887784 82.894608,106.88931 81.5268317,105.523417 C81.5256944,105.522282 81.5245578,105.521145 81.523422,105.520008 L28,51.9227939 L28,126 L140,126 L140,51.9227939 Z M21,28 L147,28 C150.865993,28 154,31.1340068 154,35 L154,133 C154,136.865993 150.865993,140 147,140 L21,140 C17.1340068,140 14,136.865993 14,133 L14,35 C14,31.1340068 17.1340068,28 21,28 Z" id="envelope" fill="#000000"></path>
-                </g>
-                <g id="Guides" transform="translate(-0.000000, 0.000000)">
-                    <g id="guide">
-                        <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-1"></use>
-                        <circle stroke="#137BC2" stroke-width="1" cx="117.5" cy="108.5" r="3"></circle>
-                    </g>
-                    <rect id="marker" fill="#137BC2" x="17" y="33" width="38" height="1"></rect>
-                    <text id="1px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold" fill="#137BC2">
-                        <tspan x="0.568" y="39">1px</tspan>
-                    </text>
-                    <g id="Group" transform="translate(59.719300, 44.597980) rotate(-45.000000) translate(-59.719300, -44.597980) translate(52.219300, -4.902020)" fill="#137BC2">
-                        <rect id="marker" x="13.2781746" y="0.278174593" width="1" height="98"></rect>
-                        <rect id="marker" x="0.550252532" y="0.278174593" width="1" height="98"></rect>
-                    </g>
-                    <text id="2px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold" fill="#137BC2">
-                        <tspan x="7.716" y="8">2px</tspan>
-                    </text>
-                    <rect id="marker" fill="#137BC2" x="17" y="39" width="38" height="1"></rect>
-                    <rect id="marker" fill="#137BC2" x="118" y="33" width="100" height="1"></rect>
-                    <text id="2px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold" fill="#137BC2">
-                        <tspan x="220" y="43">2px</tspan>
-                    </text>
-                    <text id="2px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold" fill="#137BC2">
-                        <tspan x="46.716" y="201">2px</tspan>
-                    </text>
-                    <rect id="marker" fill="#137BC2" x="118" y="46" width="100" height="1"></rect>
-                    <rect id="marker" fill="#137BC2" x="61" y="90" width="1" height="100"></rect>
-                    <rect id="marker" fill="#137BC2" x="48" y="90" width="1" height="100"></rect>
-                    <rect id="marker" fill="#137BC2" x="117" y="105" width="101" height="1"></rect>
-                    <text id="0.5px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold" fill="#137BC2">
-                        <tspan x="220" y="111">0.5px</tspan>
-                    </text>
-                    <rect id="marker" fill="#137BC2" x="117" y="111" width="101" height="1"></rect>
-                </g>
-                <g id="Oval-2">
-                    <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-2"></use>
-                    <path stroke="#137BC2" stroke-width="1" d="M54.5,39.5 L54.5,33.5189448 C51.308797,33.7617039 48.7617039,36.308797 48.5189448,39.5 L54.5,39.5 Z"></path>
-                </g>
-            </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="264" height="264" viewBox="0 0 264 264">
+  <defs>
+    <circle id="example-1-a" cx="117.5" cy="108.5" r="3.5"/>
+    <path id="example-1-b" d="M55,40 L55,33 C51.1340068,33 48,36.1340068 48,40 L55,40 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(14 43)">
+    <g transform="translate(34 5)">
+      <rect width="168" height="169.05" fill="#FFF"/>
+      <g stroke="#000" stroke-width=".5" opacity=".4">
+        <g opacity=".2">
+          <rect width="7" height="168" x="161"/>
+          <rect width="7" height="168" x="154"/>
+          <rect width="7" height="168" x="147"/>
+          <rect width="7" height="168" x="140"/>
+          <rect width="7" height="168" x="133"/>
+          <rect width="7" height="168" x="126"/>
+          <rect width="7" height="168" x="119"/>
+          <rect width="7" height="168" x="112"/>
+          <rect width="7" height="168" x="105"/>
+          <rect width="7" height="168" x="98"/>
+          <rect width="7" height="168" x="91"/>
+          <rect width="7" height="168" x="84"/>
+          <rect width="7" height="168" x="77"/>
+          <rect width="7" height="168" x="70"/>
+          <rect width="7" height="168" x="63"/>
+          <rect width="7" height="168" x="56"/>
+          <rect width="7" height="168" x="49"/>
+          <rect width="7" height="168" x="42"/>
+          <rect width="7" height="168" x="35"/>
+          <rect width="7" height="168" x="28"/>
+          <rect width="7" height="168" x="21"/>
+          <rect width="7" height="168" x="14"/>
+          <rect width="7" height="168" x="7"/>
+          <rect width="7" height="168"/>
         </g>
+        <g opacity=".2" transform="rotate(90 84 84)">
+          <rect width="7" height="168" x="161"/>
+          <rect width="7" height="168" x="154"/>
+          <rect width="7" height="168" x="147"/>
+          <rect width="7" height="168" x="140"/>
+          <rect width="7" height="168" x="133"/>
+          <rect width="7" height="168" x="126"/>
+          <rect width="7" height="168" x="119"/>
+          <rect width="7" height="168" x="112"/>
+          <rect width="7" height="168" x="105"/>
+          <rect width="7" height="168" x="98"/>
+          <rect width="7" height="168" x="91"/>
+          <rect width="7" height="168" x="84"/>
+          <rect width="7" height="168" x="77"/>
+          <rect width="7" height="168" x="70"/>
+          <rect width="7" height="168" x="63"/>
+          <rect width="7" height="168" x="56"/>
+          <rect width="7" height="168" x="49"/>
+          <rect width="7" height="168" x="42"/>
+          <rect width="7" height="168" x="35"/>
+          <rect width="7" height="168" x="28"/>
+          <rect width="7" height="168" x="21"/>
+          <rect width="7" height="168" x="14"/>
+          <rect width="7" height="168" x="7"/>
+          <rect width="7" height="168"/>
+        </g>
+      </g>
+      <rect width="166" height="166" x="1" y="1" stroke="#AAA" stroke-width="2"/>
     </g>
+    <g opacity=".4" transform="translate(34 5)">
+      <rect width="168" height="168"/>
+      <path fill="#000" d="M37.8898575,42 L84,88.1737137 L130.110143,42 L37.8898575,42 Z M140,51.9227939 L86.476578,105.520008 C85.1106849,106.887784 82.894608,106.88931 81.5268317,105.523417 C81.5256944,105.522282 81.5245578,105.521145 81.523422,105.520008 L28,51.9227939 L28,126 L140,126 L140,51.9227939 Z M21,28 L147,28 C150.865993,28 154,31.1340068 154,35 L154,133 C154,136.865993 150.865993,140 147,140 L21,140 C17.1340068,140 14,136.865993 14,133 L14,35 C14,31.1340068 17.1340068,28 21,28 Z"/>
+    </g>
+    <g>
+      <use fill="#137BC2" fill-opacity=".3" xlink:href="#example-1-a"/>
+      <circle cx="117.5" cy="108.5" r="3" stroke="#137BC2"/>
+      <rect width="38" height="1" x="17" y="33" fill="#137BC2"/>
+      <path fill="#137BC2" d="M2.08,39 L2.08,34.384 L1.056,34.64 L0.8,33.632 L2.456,33.136 L3.296,33.136 L3.296,39 L2.08,39 Z M7.024,38.048 C7.632,38.048 8.144,37.56 8.144,36.784 L8.144,36.768 C8.144,36.008 7.632,35.504 7.024,35.504 C6.416,35.504 5.904,36.008 5.904,36.768 L5.904,36.784 C5.904,37.544 6.416,38.048 7.024,38.048 Z M4.704,40.328 L4.704,34.552 L5.92,34.552 L5.92,35.216 C6.232,34.792 6.664,34.472 7.328,34.472 C8.368,34.472 9.36,35.288 9.36,36.768 L9.36,36.784 C9.36,38.264 8.384,39.088 7.328,39.088 C6.648,39.088 6.224,38.768 5.92,38.4 L5.92,40.328 L4.704,40.328 Z M11.12,34.552 L11.984,35.888 L12.864,34.552 L14.136,34.552 L12.624,36.72 L14.2,39 L12.896,39 L11.96,37.568 L11.024,39 L9.752,39 L11.328,36.736 L9.816,34.552 L11.12,34.552 Z"/>
+      <g fill="#137BC2" transform="rotate(-45 27.692 -15.985)">
+        <rect width="1" height="98" x="13.278" y=".278"/>
+        <rect width="1" height="98" x=".55" y=".278"/>
+      </g>
+      <path fill="#137BC2" d="M8.156,8 L8.156,7.024 L10.108,5.416 C10.844,4.8 11.132,4.472 11.132,3.984 C11.132,3.472 10.788,3.192 10.316,3.192 C9.852,3.192 9.532,3.456 9.1,3.992 L8.236,3.304 C8.804,2.52 9.356,2.096 10.396,2.096 C11.588,2.096 12.388,2.8 12.388,3.88 L12.388,3.896 C12.388,4.856 11.892,5.344 10.86,6.152 L9.86,6.936 L12.444,6.936 L12.444,8 L8.156,8 Z M15.876,7.048 C16.484,7.048 16.996,6.56 16.996,5.784 L16.996,5.768 C16.996,5.008 16.484,4.504 15.876,4.504 C15.268,4.504 14.756,5.008 14.756,5.768 L14.756,5.784 C14.756,6.544 15.268,7.048 15.876,7.048 Z M13.556,9.328 L13.556,3.552 L14.772,3.552 L14.772,4.216 C15.084,3.792 15.516,3.472 16.18,3.472 C17.22,3.472 18.212,4.288 18.212,5.768 L18.212,5.784 C18.212,7.264 17.236,8.088 16.18,8.088 C15.5,8.088 15.076,7.768 14.772,7.4 L14.772,9.328 L13.556,9.328 Z M19.972,3.552 L20.836,4.888 L21.716,3.552 L22.988,3.552 L21.476,5.72 L23.052,8 L21.748,8 L20.812,6.568 L19.876,8 L18.604,8 L20.18,5.736 L18.668,3.552 L19.972,3.552 Z"/>
+      <rect width="38" height="1" x="17" y="39" fill="#137BC2"/>
+      <rect width="100" height="1" x="118" y="33" fill="#137BC2"/>
+      <path fill="#137BC2" d="M220.44 43L220.44 42.024 222.392 40.416C223.128 39.8 223.416 39.472 223.416 38.984 223.416 38.472 223.072 38.192 222.6 38.192 222.136 38.192 221.816 38.456 221.384 38.992L220.52 38.304C221.088 37.52 221.64 37.096 222.68 37.096 223.872 37.096 224.672 37.8 224.672 38.88L224.672 38.896C224.672 39.856 224.176 40.344 223.144 41.152L222.144 41.936 224.728 41.936 224.728 43 220.44 43zM228.16 42.048C228.768 42.048 229.28 41.56 229.28 40.784L229.28 40.768C229.28 40.008 228.768 39.504 228.16 39.504 227.552 39.504 227.04 40.008 227.04 40.768L227.04 40.784C227.04 41.544 227.552 42.048 228.16 42.048zM225.84 44.328L225.84 38.552 227.056 38.552 227.056 39.216C227.368 38.792 227.8 38.472 228.464 38.472 229.504 38.472 230.496 39.288 230.496 40.768L230.496 40.784C230.496 42.264 229.52 43.088 228.464 43.088 227.784 43.088 227.36 42.768 227.056 42.4L227.056 44.328 225.84 44.328zM232.256 38.552L233.12 39.888 234 38.552 235.272 38.552 233.76 40.72 235.336 43 234.032 43 233.096 41.568 232.16 43 230.888 43 232.464 40.736 230.952 38.552 232.256 38.552zM47.156 201L47.156 200.024 49.108 198.416C49.844 197.8 50.132 197.472 50.132 196.984 50.132 196.472 49.788 196.192 49.316 196.192 48.852 196.192 48.532 196.456 48.1 196.992L47.236 196.304C47.804 195.52 48.356 195.096 49.396 195.096 50.588 195.096 51.388 195.8 51.388 196.88L51.388 196.896C51.388 197.856 50.892 198.344 49.86 199.152L48.86 199.936 51.444 199.936 51.444 201 47.156 201zM54.876 200.048C55.484 200.048 55.996 199.56 55.996 198.784L55.996 198.768C55.996 198.008 55.484 197.504 54.876 197.504 54.268 197.504 53.756 198.008 53.756 198.768L53.756 198.784C53.756 199.544 54.268 200.048 54.876 200.048zM52.556 202.328L52.556 196.552 53.772 196.552 53.772 197.216C54.084 196.792 54.516 196.472 55.18 196.472 56.22 196.472 57.212 197.288 57.212 198.768L57.212 198.784C57.212 200.264 56.236 201.088 55.18 201.088 54.5 201.088 54.076 200.768 53.772 200.4L53.772 202.328 52.556 202.328zM58.972 196.552L59.836 197.888 60.716 196.552 61.988 196.552 60.476 198.72 62.052 201 60.748 201 59.812 199.568 58.876 201 57.604 201 59.18 198.736 57.668 196.552 58.972 196.552z"/>
+      <rect width="100" height="1" x="118" y="46" fill="#137BC2"/>
+      <rect width="1" height="100" x="61" y="90" fill="#137BC2"/>
+      <rect width="1" height="100" x="48" y="90" fill="#137BC2"/>
+      <rect width="101" height="1" x="117" y="105" fill="#137BC2"/>
+      <path fill="#137BC2" d="M223.056,111.096 C221.504,111.096 220.488,109.792 220.488,108.104 L220.488,108.088 C220.488,106.408 221.528,105.08 223.072,105.08 C224.608,105.08 225.64,106.384 225.64,108.072 L225.64,108.088 C225.64,109.768 224.608,111.096 223.056,111.096 Z M223.072,109.992 C223.872,109.992 224.376,109.176 224.376,108.104 L224.376,108.088 C224.376,107.016 223.848,106.184 223.056,106.184 C222.264,106.184 221.752,106.992 221.752,108.072 L221.752,108.088 C221.752,109.168 222.272,109.992 223.072,109.992 Z M226.52,111 L226.52,109.704 L227.816,109.704 L227.816,111 L226.52,111 Z M230.944,111.096 C230.024,111.096 229.336,110.76 228.776,110.224 L229.52,109.336 C229.968,109.744 230.408,109.984 230.928,109.984 C231.544,109.984 231.936,109.672 231.936,109.136 L231.936,109.12 C231.936,108.6 231.504,108.296 230.872,108.296 C230.496,108.296 230.16,108.4 229.88,108.52 L229.16,108.04 L229.328,105.176 L232.888,105.176 L232.888,106.256 L230.384,106.256 L230.312,107.336 C230.552,107.272 230.776,107.224 231.112,107.224 C232.24,107.224 233.144,107.784 233.144,109.08 L233.144,109.096 C233.144,110.32 232.272,111.096 230.944,111.096 Z M236.6,110.048 C237.208,110.048 237.72,109.56 237.72,108.784 L237.72,108.768 C237.72,108.008 237.208,107.504 236.6,107.504 C235.992,107.504 235.48,108.008 235.48,108.768 L235.48,108.784 C235.48,109.544 235.992,110.048 236.6,110.048 Z M234.28,112.328 L234.28,106.552 L235.496,106.552 L235.496,107.216 C235.808,106.792 236.24,106.472 236.904,106.472 C237.944,106.472 238.936,107.288 238.936,108.768 L238.936,108.784 C238.936,110.264 237.96,111.088 236.904,111.088 C236.224,111.088 235.8,110.768 235.496,110.4 L235.496,112.328 L234.28,112.328 Z M240.696,106.552 L241.56,107.888 L242.44,106.552 L243.712,106.552 L242.2,108.72 L243.776,111 L242.472,111 L241.536,109.568 L240.6,111 L239.328,111 L240.904,108.736 L239.392,106.552 L240.696,106.552 Z"/>
+      <rect width="101" height="1" x="117" y="111" fill="#137BC2"/>
+    </g>
+    <use fill="#137BC2" fill-opacity=".3" xlink:href="#example-1-b"/>
+    <path stroke="#137BC2" d="M54.5,39.5 L54.5,33.5189448 C51.308797,33.7617039 48.7617039,36.308797 48.5189448,39.5 L54.5,39.5 Z"/>
+  </g>
 </svg>
