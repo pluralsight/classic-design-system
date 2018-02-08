@@ -303,7 +303,6 @@ export default withServerProps(_ => (
       </P>
       <Example.React
         includes={{ Tooltip }}
-        themeName="light"
         outputStyle={{
           display: 'grid',
           gridTemplateColumns: '1fr 1fr 1fr',
