@@ -2,6 +2,7 @@ import core from '@pluralsight/ps-design-system-core'
 import Dialog from '@pluralsight/ps-design-system-dialog/react'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react'
 import React from 'react'
+import ReactDOM from 'react-dom'
 
 import {
   Chrome,
@@ -51,7 +52,7 @@ class Boxes extends React.Component {
         </EqualColumnLayout>
         {this.state.modalSrc && (
           <Dialog modal onClose={this.handleClose}>
-            <img src={this.state.modalSrc} />
+            <img className="imageLarge" src={this.state.modalSrc} />
           </Dialog>
         )}
         <style jsx>{`
@@ -64,12 +65,15 @@ class Boxes extends React.Component {
             align-items: center;
             background: ${core.colors.bone};
             border-radius: 12px;
-            padding: ${core.layout.spacingMedium};
           }
           .button {
             border: none;
             background: none;
             cursor: pointer;
+          }
+          .imageLarge {
+            height: 55vh;
+            width: 55vw;
           }
         `}</style>
       </div>
