@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-build",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Utilities for building and configuring Design System packages",
   "main": "index.js",
   "scripts": {
@@ -19,8 +19,8 @@
     "babel-preset-stage-2": "^6.24.1",
     "chalk": "^2.0.1",
     "css-loader": "^0.28.4",
-    "jest": "^22.2.1",
     "idempotent-fs": "^1.2.0",
+    "jest": "^22.2.1",
     "postcss": "^6.0.1",
     "postcss-cssnext": "^3.0.2",
     "postcss-discard-comments": "^2.0.4",

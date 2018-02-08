@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.7.1"></a>
+## [1.7.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.7.0...@pluralsight/ps-design-system-build@1.7.1) (2018-02-08)
+
+
+### Bug Fixes
+
+* **build:** dont strip % in keyframe value ([9b935e1](https://github.com/pluralsight/design-system/commit/9b935e1))
+* **build:** support keyframes in css gen ([748065b](https://github.com/pluralsight/design-system/commit/748065b))
+
+
+
+
 <a name="1.7.0"></a>
 # [1.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.6.0...@pluralsight/ps-design-system-build@1.7.0) (2018-01-29)
 
