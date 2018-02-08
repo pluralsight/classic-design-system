@@ -1,149 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="264px" height="264px" viewBox="0 0 264 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
-    <title>Example 7</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <circle id="path-1" cx="79.35" cy="93.8" r="3.5"></circle>
-        <circle id="path-2" cx="84.25" cy="88.9" r="3.5"></circle>
-        <circle id="path-3" cx="3.5" cy="8.4" r="3.5"></circle>
-        <circle id="path-4" cx="8.4" cy="3.5" r="3.5"></circle>
-        <circle id="path-5" cx="3.5" cy="8.4" r="3.5"></circle>
-        <circle id="path-6" cx="8.4" cy="3.5" r="3.5"></circle>
-        <circle id="path-7" cx="3.5" cy="8.4" r="3.5"></circle>
-        <circle id="path-8" cx="8.4" cy="3.5" r="3.5"></circle>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Example-7">
-            <g id="Group-3" transform="translate(28.000000, 18.000000)">
-                <g id="Icon-Grid---Base---Zoomed" transform="translate(20.000000, 30.000000)">
-                    <g id="Grid">
-                        <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="168" height="169.05"></rect>
-                        <g id="pixels" opacity="0.400000006" stroke="#000000" stroke-width="0.5">
-                            <g id="Group" opacity="0.200000003">
-                                <rect id="Rectangle-3" x="161" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="154" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="147" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="140" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="133" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="126" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="119" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="112" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="105" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="98" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="91" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="84" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="77" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="70" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="63" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="56" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="49" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="42" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="35" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="28" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="21" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="14" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="7" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="0" y="0" width="7" height="168"></rect>
-                            </g>
-                            <g id="Group" opacity="0.200000003" transform="translate(84.000000, 84.000000) rotate(90.000000) translate(-84.000000, -84.000000) ">
-                                <rect id="Rectangle-3" x="161" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="154" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="147" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="140" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="133" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="126" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="119" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="112" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="105" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="98" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="91" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="84" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="77" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="70" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="63" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="56" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="49" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="42" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="35" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="28" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="21" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="14" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="7" y="0" width="7" height="168"></rect>
-                                <rect id="Rectangle-3" x="0" y="0" width="7" height="168"></rect>
-                            </g>
-                        </g>
-                        <rect id="bounds" stroke="#AAAAAA" stroke-width="2" x="1" y="1" width="166" height="166"></rect>
-                    </g>
-                </g>
-                <g id="Icons/x-circle" opacity="0.400000006" transform="translate(20.200000, 29.750000)">
-                    <rect id="bounds" x="0" y="0" width="168" height="168"></rect>
-                    <path d="M84,14 C122.64,14 154,45.36 154,84 C154,122.64 122.64,154 84,154 C45.36,154 14,122.64 14,84 C14,45.36 45.36,14 84,14 Z M84,140 C114.87,140 140,114.87 140,84 C140,53.13 114.87,28 84,28 C53.13,28 28,53.13 28,84 C28,114.87 53.13,140 84,140 Z M93.8994949,84 L111.223611,101.324116 C112.590446,102.690951 112.590446,104.907029 111.223611,106.273864 L106.273864,111.223611 C104.907029,112.590446 102.690951,112.590446 101.324116,111.223611 L84,93.8994949 L66.6758839,111.223611 C65.3090488,112.590446 63.0929714,112.590446 61.7261364,111.223611 L56.7763889,106.273864 C55.4095539,104.907029 55.4095539,102.690951 56.7763889,101.324116 L74.1005051,84 L56.7763889,66.6758839 C55.4095539,65.3090488 55.4095539,63.0929714 56.7763889,61.7261364 L61.7261364,56.7763889 C63.0929714,55.4095539 65.3090488,55.4095539 66.6758839,56.7763889 L84,74.1005051 L101.324116,56.7763889 C102.690951,55.4095539 104.907029,55.4095539 106.273864,56.7763889 L111.223611,61.7261364 C112.590446,63.0929714 112.590446,65.3090488 111.223611,66.6758839 L93.8994949,84 Z" id="x-circle" fill="#000000" fill-rule="nonzero"></path>
-                </g>
-                <g id="Guides">
-                    <g id="Group-2" transform="translate(-0.000000, 0.000000)">
-                        <g id="Group" transform="translate(-0.000000, 0.000000)">
-                            <g id="guide" transform="translate(79.350000, 93.800000) scale(-1, -1) translate(-79.350000, -93.800000) ">
-                                <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-1"></use>
-                                <circle stroke="#137BC2" stroke-width="0.7" cx="79.35" cy="93.8" r="3.15"></circle>
-                            </g>
-                            <g id="guide" transform="translate(84.250000, 88.900000) scale(-1, -1) translate(-84.250000, -88.900000) ">
-                                <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-2"></use>
-                                <circle stroke="#137BC2" stroke-width="0.7" cx="84.25" cy="88.9" r="3.15"></circle>
-                            </g>
-                            <g transform="translate(57.424110, 66.974110) rotate(-45.000000) translate(-57.424110, -66.974110) translate(50.424110, 7.649110)" fill="#137BC2" id="marker">
-                                <rect x="13.3" y="0" width="1" height="118.543952"></rect>
-                                <rect x="0" y="0" width="1" height="118.543952"></rect>
-                            </g>
-                            <text id="2px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold" fill="#137BC2">
-                                <tspan x="0.866" y="24.7545202">2px</tspan>
-                            </text>
-                            <text id="2px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold" fill="#137BC2">
-                                <tspan x="159.35" y="8">2px</tspan>
-                            </text>
-                            <rect id="marker" fill="#137BC2" x="127.9" y="130.2" width="75.95" height="1"></rect>
-                            <text id="0.5px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold" fill="#137BC2">
-                                <tspan x="206.65" y="136.45">0.5px</tspan>
-                            </text>
-                            <rect id="marker" fill="#137BC2" x="127.9" y="136.5" width="75.95" height="1"></rect>
-                            <rect id="marker" fill="#137BC2" x="173.35" y="12.95" width="1" height="100.8"></rect>
-                            <rect id="marker" fill="#137BC2" x="160.05" y="12.95" width="1" height="100.8"></rect>
-                        </g>
-                        <g id="Group" transform="translate(126.450000, 91.350000) scale(-1, 1) translate(-126.450000, -91.350000) translate(120.500000, 85.400000)">
-                            <g id="guide" transform="translate(3.500000, 8.400000) scale(-1, -1) translate(-3.500000, -8.400000) ">
-                                <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-3"></use>
-                                <circle stroke="#137BC2" stroke-width="0.7" cx="3.5" cy="8.4" r="3.15"></circle>
-                            </g>
-                            <g id="guide" transform="translate(8.400000, 3.500000) scale(-1, -1) translate(-8.400000, -3.500000) ">
-                                <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-4"></use>
-                                <circle stroke="#137BC2" stroke-width="0.7" cx="8.4" cy="3.5" r="3.15"></circle>
-                            </g>
-                        </g>
-                    </g>
-                    <g id="Group-2" transform="translate(104.050000, 136.150000) scale(1, -1) translate(-104.050000, -136.150000) translate(75.700000, 130.200000)">
-                        <g id="Group">
-                            <g id="guide" transform="translate(3.500000, 8.400000) scale(-1, -1) translate(-3.500000, -8.400000) ">
-                                <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-5"></use>
-                                <circle stroke="#137BC2" stroke-width="0.7" cx="3.5" cy="8.4" r="3.15"></circle>
-                            </g>
-                            <g id="guide" transform="translate(8.400000, 3.500000) scale(-1, -1) translate(-8.400000, -3.500000) ">
-                                <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-6"></use>
-                                <circle stroke="#137BC2" stroke-width="0.7" cx="8.4" cy="3.5" r="3.15"></circle>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(50.750000, 5.950000) scale(-1, 1) translate(-50.750000, -5.950000) translate(44.800000, 0.000000)">
-                            <g id="guide" transform="translate(3.500000, 8.400000) scale(-1, -1) translate(-3.500000, -8.400000) ">
-                                <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-7"></use>
-                                <circle stroke="#137BC2" stroke-width="0.7" cx="3.5" cy="8.4" r="3.15"></circle>
-                            </g>
-                            <g id="guide" transform="translate(8.400000, 3.500000) scale(-1, -1) translate(-8.400000, -3.500000) ">
-                                <use fill-opacity="0.3" fill="#137BC2" fill-rule="evenodd" xlink:href="#path-8"></use>
-                                <circle stroke="#137BC2" stroke-width="0.7" cx="8.4" cy="3.5" r="3.15"></circle>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="264" height="264" viewBox="0 0 264 264">
+  <defs>
+    <circle id="example-7-a" cx="79.35" cy="93.8" r="3.5"/>
+    <circle id="example-7-b" cx="84.25" cy="88.9" r="3.5"/>
+    <circle id="example-7-c" cx="3.5" cy="8.4" r="3.5"/>
+    <circle id="example-7-d" cx="8.4" cy="3.5" r="3.5"/>
+    <circle id="example-7-e" cx="3.5" cy="8.4" r="3.5"/>
+    <circle id="example-7-f" cx="8.4" cy="3.5" r="3.5"/>
+    <circle id="example-7-g" cx="3.5" cy="8.4" r="3.5"/>
+    <circle id="example-7-h" cx="8.4" cy="3.5" r="3.5"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(28 18)">
+    <g transform="translate(20 30)">
+      <rect width="168" height="169.05" fill="#FFF"/>
+      <g stroke="#000" stroke-width=".5" opacity=".4">
+        <g opacity=".2">
+          <rect width="7" height="168" x="161"/>
+          <rect width="7" height="168" x="154"/>
+          <rect width="7" height="168" x="147"/>
+          <rect width="7" height="168" x="140"/>
+          <rect width="7" height="168" x="133"/>
+          <rect width="7" height="168" x="126"/>
+          <rect width="7" height="168" x="119"/>
+          <rect width="7" height="168" x="112"/>
+          <rect width="7" height="168" x="105"/>
+          <rect width="7" height="168" x="98"/>
+          <rect width="7" height="168" x="91"/>
+          <rect width="7" height="168" x="84"/>
+          <rect width="7" height="168" x="77"/>
+          <rect width="7" height="168" x="70"/>
+          <rect width="7" height="168" x="63"/>
+          <rect width="7" height="168" x="56"/>
+          <rect width="7" height="168" x="49"/>
+          <rect width="7" height="168" x="42"/>
+          <rect width="7" height="168" x="35"/>
+          <rect width="7" height="168" x="28"/>
+          <rect width="7" height="168" x="21"/>
+          <rect width="7" height="168" x="14"/>
+          <rect width="7" height="168" x="7"/>
+          <rect width="7" height="168"/>
         </g>
+        <g opacity=".2" transform="rotate(90 84 84)">
+          <rect width="7" height="168" x="161"/>
+          <rect width="7" height="168" x="154"/>
+          <rect width="7" height="168" x="147"/>
+          <rect width="7" height="168" x="140"/>
+          <rect width="7" height="168" x="133"/>
+          <rect width="7" height="168" x="126"/>
+          <rect width="7" height="168" x="119"/>
+          <rect width="7" height="168" x="112"/>
+          <rect width="7" height="168" x="105"/>
+          <rect width="7" height="168" x="98"/>
+          <rect width="7" height="168" x="91"/>
+          <rect width="7" height="168" x="84"/>
+          <rect width="7" height="168" x="77"/>
+          <rect width="7" height="168" x="70"/>
+          <rect width="7" height="168" x="63"/>
+          <rect width="7" height="168" x="56"/>
+          <rect width="7" height="168" x="49"/>
+          <rect width="7" height="168" x="42"/>
+          <rect width="7" height="168" x="35"/>
+          <rect width="7" height="168" x="28"/>
+          <rect width="7" height="168" x="21"/>
+          <rect width="7" height="168" x="14"/>
+          <rect width="7" height="168" x="7"/>
+          <rect width="7" height="168"/>
+        </g>
+      </g>
+      <rect width="166" height="166" x="1" y="1" stroke="#AAA" stroke-width="2"/>
     </g>
+    <g opacity=".4" transform="translate(20.2 29.75)">
+      <rect width="168" height="168"/>
+      <path fill="#000" fill-rule="nonzero" d="M84,14 C122.64,14 154,45.36 154,84 C154,122.64 122.64,154 84,154 C45.36,154 14,122.64 14,84 C14,45.36 45.36,14 84,14 Z M84,140 C114.87,140 140,114.87 140,84 C140,53.13 114.87,28 84,28 C53.13,28 28,53.13 28,84 C28,114.87 53.13,140 84,140 Z M93.8994949,84 L111.223611,101.324116 C112.590446,102.690951 112.590446,104.907029 111.223611,106.273864 L106.273864,111.223611 C104.907029,112.590446 102.690951,112.590446 101.324116,111.223611 L84,93.8994949 L66.6758839,111.223611 C65.3090488,112.590446 63.0929714,112.590446 61.7261364,111.223611 L56.7763889,106.273864 C55.4095539,104.907029 55.4095539,102.690951 56.7763889,101.324116 L74.1005051,84 L56.7763889,66.6758839 C55.4095539,65.3090488 55.4095539,63.0929714 56.7763889,61.7261364 L61.7261364,56.7763889 C63.0929714,55.4095539 65.3090488,55.4095539 66.6758839,56.7763889 L84,74.1005051 L101.324116,56.7763889 C102.690951,55.4095539 104.907029,55.4095539 106.273864,56.7763889 L111.223611,61.7261364 C112.590446,63.0929714 112.590446,65.3090488 111.223611,66.6758839 L93.8994949,84 Z"/>
+    </g>
+    <g>
+      <g>
+        <g transform="rotate(180 79.35 93.8)">
+          <use fill="#137BC2" fill-opacity=".3" xlink:href="#example-7-a"/>
+          <circle cx="79.35" cy="93.8" r="3.15" stroke="#137BC2" stroke-width=".7"/>
+        </g>
+        <g transform="rotate(180 84.25 88.9)">
+          <use fill="#137BC2" fill-opacity=".3" xlink:href="#example-7-b"/>
+          <circle cx="84.25" cy="88.9" r="3.15" stroke="#137BC2" stroke-width=".7"/>
+        </g>
+        <g fill="#137BC2" transform="rotate(-45 41.445 2.282)">
+          <rect width="1" height="118.544" x="13.3"/>
+          <rect width="1" height="118.544"/>
+        </g>
+        <path fill="#137BC2" d="M1.306 24.7545202L1.306 23.7785202 3.258 22.1705202C3.994 21.5545202 4.282 21.2265202 4.282 20.7385202 4.282 20.2265202 3.938 19.9465202 3.466 19.9465202 3.002 19.9465202 2.682 20.2105202 2.25 20.7465202L1.386 20.0585202C1.954 19.2745202 2.506 18.8505202 3.546 18.8505202 4.738 18.8505202 5.538 19.5545202 5.538 20.6345202L5.538 20.6505202C5.538 21.6105202 5.042 22.0985202 4.01 22.9065202L3.01 23.6905202 5.594 23.6905202 5.594 24.7545202 1.306 24.7545202zM9.026 23.8025202C9.634 23.8025202 10.146 23.3145202 10.146 22.5385202L10.146 22.5225202C10.146 21.7625202 9.634 21.2585202 9.026 21.2585202 8.418 21.2585202 7.906 21.7625202 7.906 22.5225202L7.906 22.5385202C7.906 23.2985202 8.418 23.8025202 9.026 23.8025202zM6.706 26.0825202L6.706 20.3065202 7.922 20.3065202 7.922 20.9705202C8.234 20.5465202 8.666 20.2265202 9.33 20.2265202 10.37 20.2265202 11.362 21.0425202 11.362 22.5225202L11.362 22.5385202C11.362 24.0185202 10.386 24.8425202 9.33 24.8425202 8.65 24.8425202 8.226 24.5225202 7.922 24.1545202L7.922 26.0825202 6.706 26.0825202zM13.122 20.3065202L13.986 21.6425202 14.866 20.3065202 16.138 20.3065202 14.626 22.4745202 16.202 24.7545202 14.898 24.7545202 13.962 23.3225202 13.026 24.7545202 11.754 24.7545202 13.33 22.4905202 11.818 20.3065202 13.122 20.3065202zM159.79 8L159.79 7.024 161.742 5.416C162.478 4.8 162.766 4.472 162.766 3.984 162.766 3.472 162.422 3.192 161.95 3.192 161.486 3.192 161.166 3.456 160.734 3.992L159.87 3.304C160.438 2.52 160.99 2.096 162.03 2.096 163.222 2.096 164.022 2.8 164.022 3.88L164.022 3.896C164.022 4.856 163.526 5.344 162.494 6.152L161.494 6.936 164.078 6.936 164.078 8 159.79 8zM167.51 7.048C168.118 7.048 168.63 6.56 168.63 5.784L168.63 5.768C168.63 5.008 168.118 4.504 167.51 4.504 166.902 4.504 166.39 5.008 166.39 5.768L166.39 5.784C166.39 6.544 166.902 7.048 167.51 7.048zM165.19 9.328L165.19 3.552 166.406 3.552 166.406 4.216C166.718 3.792 167.15 3.472 167.814 3.472 168.854 3.472 169.846 4.288 169.846 5.768L169.846 5.784C169.846 7.264 168.87 8.088 167.814 8.088 167.134 8.088 166.71 7.768 166.406 7.4L166.406 9.328 165.19 9.328zM171.606 3.552L172.47 4.888 173.35 3.552 174.622 3.552 173.11 5.72 174.686 8 173.382 8 172.446 6.568 171.51 8 170.238 8 171.814 5.736 170.302 3.552 171.606 3.552z"/>
+        <rect width="75.95" height="1" x="127.9" y="130.2" fill="#137BC2"/>
+        <path fill="#137BC2" d="M209.706,136.546 C208.154,136.546 207.138,135.242 207.138,133.554 L207.138,133.538 C207.138,131.858 208.178,130.53 209.722,130.53 C211.258,130.53 212.29,131.834 212.29,133.522 L212.29,133.538 C212.29,135.218 211.258,136.546 209.706,136.546 Z M209.722,135.442 C210.522,135.442 211.026,134.626 211.026,133.554 L211.026,133.538 C211.026,132.466 210.498,131.634 209.706,131.634 C208.914,131.634 208.402,132.442 208.402,133.522 L208.402,133.538 C208.402,134.618 208.922,135.442 209.722,135.442 Z M213.17,136.45 L213.17,135.154 L214.466,135.154 L214.466,136.45 L213.17,136.45 Z M217.594,136.546 C216.674,136.546 215.986,136.21 215.426,135.674 L216.17,134.786 C216.618,135.194 217.058,135.434 217.578,135.434 C218.194,135.434 218.586,135.122 218.586,134.586 L218.586,134.57 C218.586,134.05 218.154,133.746 217.522,133.746 C217.146,133.746 216.81,133.85 216.53,133.97 L215.81,133.49 L215.978,130.626 L219.538,130.626 L219.538,131.706 L217.034,131.706 L216.962,132.786 C217.202,132.722 217.426,132.674 217.762,132.674 C218.89,132.674 219.794,133.234 219.794,134.53 L219.794,134.546 C219.794,135.77 218.922,136.546 217.594,136.546 Z M223.25,135.498 C223.858,135.498 224.37,135.01 224.37,134.234 L224.37,134.218 C224.37,133.458 223.858,132.954 223.25,132.954 C222.642,132.954 222.13,133.458 222.13,134.218 L222.13,134.234 C222.13,134.994 222.642,135.498 223.25,135.498 Z M220.93,137.778 L220.93,132.002 L222.146,132.002 L222.146,132.666 C222.458,132.242 222.89,131.922 223.554,131.922 C224.594,131.922 225.586,132.738 225.586,134.218 L225.586,134.234 C225.586,135.714 224.61,136.538 223.554,136.538 C222.874,136.538 222.45,136.218 222.146,135.85 L222.146,137.778 L220.93,137.778 Z M227.346,132.002 L228.21,133.338 L229.09,132.002 L230.362,132.002 L228.85,134.17 L230.426,136.45 L229.122,136.45 L228.186,135.018 L227.25,136.45 L225.978,136.45 L227.554,134.186 L226.042,132.002 L227.346,132.002 Z"/>
+        <rect width="75.95" height="1" x="127.9" y="136.5" fill="#137BC2"/>
+        <rect width="1" height="100.8" x="173.35" y="12.95" fill="#137BC2"/>
+        <rect width="1" height="100.8" x="160.05" y="12.95" fill="#137BC2"/>
+      </g>
+      <g transform="matrix(-1 0 0 1 132.4 85.4)">
+        <g transform="rotate(180 3.5 8.4)">
+          <use fill="#137BC2" fill-opacity=".3" xlink:href="#example-7-c"/>
+          <circle cx="3.5" cy="8.4" r="3.15" stroke="#137BC2" stroke-width=".7"/>
+        </g>
+        <g transform="rotate(180 8.4 3.5)">
+          <use fill="#137BC2" fill-opacity=".3" xlink:href="#example-7-d"/>
+          <circle cx="8.4" cy="3.5" r="3.15" stroke="#137BC2" stroke-width=".7"/>
+        </g>
+      </g>
+    </g>
+    <g transform="matrix(1 0 0 -1 75.7 142.1)">
+      <g transform="rotate(180 3.5 8.4)">
+        <use fill="#137BC2" fill-opacity=".3" xlink:href="#example-7-e"/>
+        <circle cx="3.5" cy="8.4" r="3.15" stroke="#137BC2" stroke-width=".7"/>
+      </g>
+      <g transform="rotate(180 8.4 3.5)">
+        <use fill="#137BC2" fill-opacity=".3" xlink:href="#example-7-f"/>
+        <circle cx="8.4" cy="3.5" r="3.15" stroke="#137BC2" stroke-width=".7"/>
+      </g>
+      <g transform="matrix(-1 0 0 1 56.7 0)">
+        <g transform="rotate(180 3.5 8.4)">
+          <use fill="#137BC2" fill-opacity=".3" xlink:href="#example-7-g"/>
+          <circle cx="3.5" cy="8.4" r="3.15" stroke="#137BC2" stroke-width=".7"/>
+        </g>
+        <g transform="rotate(180 8.4 3.5)">
+          <use fill="#137BC2" fill-opacity=".3" xlink:href="#example-7-h"/>
+          <circle cx="8.4" cy="3.5" r="3.15" stroke="#137BC2" stroke-width=".7"/>
+        </g>
+      </g>
+    </g>
+  </g>
 </svg>

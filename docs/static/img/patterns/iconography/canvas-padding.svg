@@ -1,115 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="264px" height="264px" viewBox="0 0 264 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
-    <title>Canvas - Padding</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <rect id="path-1" x="0" y="0" width="168" height="168"></rect>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Canvas---Padding">
-            <g id="Group" transform="translate(48.000000, 48.000000)">
-                <g id="Icon-Grid---Shape-Keylines---Zoomed" transform="translate(0.250370, 0.250370)">
-                    <mask id="mask-2" fill="white">
-                        <use xlink:href="#path-1"></use>
-                    </mask>
-                    <g id="mask"></g>
-                    <g id="Icon-Grid---Base---Zoomed" fill-rule="evenodd" stroke-width="1">
-                        <g id="Grid">
-                            <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="168" height="169.05"></rect>
-                            <g id="pixels" opacity="0.400000006" stroke="#000000" stroke-width="0.5">
-                                <g id="Group" opacity="0.200000003">
-                                    <rect id="Rectangle-3" x="161" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="154" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="147" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="140" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="133" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="126" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="119" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="112" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="105" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="98" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="91" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="84" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="77" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="70" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="63" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="56" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="49" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="42" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="35" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="28" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="21" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="14" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="7" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="0" y="0" width="7" height="168"></rect>
-                                </g>
-                                <g id="Group" opacity="0.200000003" transform="translate(84.000000, 84.000000) rotate(90.000000) translate(-84.000000, -84.000000) ">
-                                    <rect id="Rectangle-3" x="161" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="154" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="147" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="140" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="133" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="126" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="119" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="112" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="105" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="98" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="91" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="84" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="77" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="70" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="63" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="56" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="49" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="42" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="35" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="28" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="21" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="14" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="7" y="0" width="7" height="168"></rect>
-                                    <rect id="Rectangle-3" x="0" y="0" width="7" height="168"></rect>
-                                </g>
-                            </g>
-                            <rect id="bounds" stroke="#AAAAAA" stroke-width="2" x="1" y="1" width="166" height="166"></rect>
-                        </g>
-                    </g>
-                    <g id="Group" stroke-width="1" fill-rule="evenodd" stroke="#000000">
-                        <g id="Grid" opacity="0.300000012" stroke-width="0.5">
-                            <path d="M0,0 L168,168" id="diagonal" transform="translate(84.000000, 84.000000) scale(-1, 1) translate(-84.000000, -84.000000) "></path>
-                            <path d="M0,0 L168,168" id="diagonal"></path>
-                            <circle id="circle" cx="84" cy="84" r="35"></circle>
-                            <path d="M84,0 L84,168.4375" id="vertical"></path>
-                            <path d="M112,0 L112,168.4375" id="vertical"></path>
-                            <path d="M0,84 L168,84" id="horizontal"></path>
-                            <path d="M0,112 L168,112" id="horizontal"></path>
-                            <path d="M0,56 L168,56" id="horizontal"></path>
-                        </g>
-                        <g id="Shapes" opacity="0.699999988" transform="translate(14.000000, 14.000000)" stroke-width="0.5">
-                            <circle id="circle" cx="70" cy="70" r="70"></circle>
-                            <rect id="horizontal-rectangle" x="0" y="14" width="140" height="112" rx="32"></rect>
-                            <rect id="vertical-rectangle" x="14" y="0" width="112" height="140" rx="32"></rect>
-                            <rect id="square" transform="translate(70.000000, 70.000000) rotate(90.000000) translate(-70.000000, -70.000000) " x="7" y="7" width="126" height="126" rx="32"></rect>
-                        </g>
-                    </g>
-                </g>
-            </g>
-            <g id="Guides" transform="translate(48.000000, 48.000000)" fill="#137BC2">
-                <path d="M14,154 L154,154 L154,14 L14,14 L14,154 Z M14,168 L0,168 L0,0 L14,0 L168,0 L168,14 L168,168 L154,168 L14,168 Z" id="Padding" opacity="0.300000012"></path>
-                <rect id="marker" x="154" y="170.8" width="1" height="14"></rect>
-                <text id="2px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold">
-                    <tspan x="153.041" y="195.6">2px</tspan>
-                </text>
-                <rect id="marker" x="167.3" y="170.8" width="1" height="14"></rect>
-                <rect id="marker" x="170.8" y="167.3" width="14" height="1"></rect>
-                <rect id="marker" x="170.8" y="154" width="14" height="1"></rect>
-                <text id="2px" font-family="GothamSSm-Bold, Gotham SSm" font-size="8" font-weight="bold">
-                    <tspan x="187.25" y="163.4">2px</tspan>
-                </text>
-            </g>
-            <text id="Padding" font-family="GothamSSm-Bold, Gotham SSm" font-size="12" font-weight="bold" fill="#137BC2">
-                <tspan x="107.898" y="28">Padding</tspan>
-            </text>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="264" height="264" viewBox="0 0 264 264">
+  <defs>
+    <rect id="canvas-padding-a" width="168" height="168"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(48.25 48.25)">
+      <mask id="canvas-padding-b" fill="#fff">
+        <use xlink:href="#canvas-padding-a"/>
+      </mask>
+      <g mask="url(#canvas-padding-b)">
+        <rect width="168" height="169.05" fill="#FFF"/>
+        <g stroke="#000" stroke-width=".5" opacity=".4">
+          <g opacity=".2">
+            <rect width="7" height="168" x="161"/>
+            <rect width="7" height="168" x="154"/>
+            <rect width="7" height="168" x="147"/>
+            <rect width="7" height="168" x="140"/>
+            <rect width="7" height="168" x="133"/>
+            <rect width="7" height="168" x="126"/>
+            <rect width="7" height="168" x="119"/>
+            <rect width="7" height="168" x="112"/>
+            <rect width="7" height="168" x="105"/>
+            <rect width="7" height="168" x="98"/>
+            <rect width="7" height="168" x="91"/>
+            <rect width="7" height="168" x="84"/>
+            <rect width="7" height="168" x="77"/>
+            <rect width="7" height="168" x="70"/>
+            <rect width="7" height="168" x="63"/>
+            <rect width="7" height="168" x="56"/>
+            <rect width="7" height="168" x="49"/>
+            <rect width="7" height="168" x="42"/>
+            <rect width="7" height="168" x="35"/>
+            <rect width="7" height="168" x="28"/>
+            <rect width="7" height="168" x="21"/>
+            <rect width="7" height="168" x="14"/>
+            <rect width="7" height="168" x="7"/>
+            <rect width="7" height="168"/>
+          </g>
+          <g opacity=".2" transform="rotate(90 84 84)">
+            <rect width="7" height="168" x="161"/>
+            <rect width="7" height="168" x="154"/>
+            <rect width="7" height="168" x="147"/>
+            <rect width="7" height="168" x="140"/>
+            <rect width="7" height="168" x="133"/>
+            <rect width="7" height="168" x="126"/>
+            <rect width="7" height="168" x="119"/>
+            <rect width="7" height="168" x="112"/>
+            <rect width="7" height="168" x="105"/>
+            <rect width="7" height="168" x="98"/>
+            <rect width="7" height="168" x="91"/>
+            <rect width="7" height="168" x="84"/>
+            <rect width="7" height="168" x="77"/>
+            <rect width="7" height="168" x="70"/>
+            <rect width="7" height="168" x="63"/>
+            <rect width="7" height="168" x="56"/>
+            <rect width="7" height="168" x="49"/>
+            <rect width="7" height="168" x="42"/>
+            <rect width="7" height="168" x="35"/>
+            <rect width="7" height="168" x="28"/>
+            <rect width="7" height="168" x="21"/>
+            <rect width="7" height="168" x="14"/>
+            <rect width="7" height="168" x="7"/>
+            <rect width="7" height="168"/>
+          </g>
         </g>
+        <rect width="166" height="166" x="1" y="1" stroke="#AAA" stroke-width="2"/>
+      </g>
+      <g stroke="#000" mask="url(#canvas-padding-b)">
+        <g stroke-width=".5" opacity=".3">
+          <path d="M0,0 L168,168" transform="matrix(-1 0 0 1 168 0)"/>
+          <path d="M0,0 L168,168"/>
+          <circle cx="84" cy="84" r="35"/>
+          <path d="M84 0L84 168.4375M112 0L112 168.4375M0 84L168 84M0 112L168 112M0 56L168 56"/>
+        </g>
+        <g stroke-width=".5" opacity=".7" transform="translate(14 14)">
+          <circle cx="70" cy="70" r="70"/>
+          <rect width="140" height="112" y="14" rx="32"/>
+          <rect width="112" height="140" x="14" rx="32"/>
+          <rect width="126" height="126" x="7" y="7" rx="32" transform="rotate(90 70 70)"/>
+        </g>
+      </g>
     </g>
+    <g fill="#137BC2" transform="translate(48 48)">
+      <path d="M14,154 L154,154 L154,14 L14,14 L14,154 Z M14,168 L0,168 L0,0 L14,0 L168,0 L168,14 L168,168 L154,168 L14,168 Z" opacity=".3"/>
+      <rect width="1" height="14" x="154" y="170.8"/>
+      <path d="M153.481,195.6 L153.481,194.624 L155.433,193.016 C156.169,192.4 156.457,192.072 156.457,191.584 C156.457,191.072 156.113,190.792 155.641,190.792 C155.177,190.792 154.857,191.056 154.425,191.592 L153.561,190.904 C154.129,190.12 154.681,189.696 155.721,189.696 C156.913,189.696 157.713,190.4 157.713,191.48 L157.713,191.496 C157.713,192.456 157.217,192.944 156.185,193.752 L155.185,194.536 L157.769,194.536 L157.769,195.6 L153.481,195.6 Z M161.201,194.648 C161.809,194.648 162.321,194.16 162.321,193.384 L162.321,193.368 C162.321,192.608 161.809,192.104 161.201,192.104 C160.593,192.104 160.081,192.608 160.081,193.368 L160.081,193.384 C160.081,194.144 160.593,194.648 161.201,194.648 Z M158.881,196.928 L158.881,191.152 L160.097,191.152 L160.097,191.816 C160.409,191.392 160.841,191.072 161.505,191.072 C162.545,191.072 163.537,191.888 163.537,193.368 L163.537,193.384 C163.537,194.864 162.561,195.688 161.505,195.688 C160.825,195.688 160.401,195.368 160.097,195 L160.097,196.928 L158.881,196.928 Z M165.297,191.152 L166.161,192.488 L167.041,191.152 L168.313,191.152 L166.801,193.32 L168.377,195.6 L167.073,195.6 L166.137,194.168 L165.201,195.6 L163.929,195.6 L165.505,193.336 L163.993,191.152 L165.297,191.152 Z"/>
+      <rect width="1" height="14" x="167.3" y="170.8"/>
+      <rect width="14" height="1" x="170.8" y="167.3"/>
+      <rect width="14" height="1" x="170.8" y="154"/>
+      <path d="M187.69,163.4 L187.69,162.424 L189.642,160.816 C190.378,160.2 190.666,159.872 190.666,159.384 C190.666,158.872 190.322,158.592 189.85,158.592 C189.386,158.592 189.066,158.856 188.634,159.392 L187.77,158.704 C188.338,157.92 188.89,157.496 189.93,157.496 C191.122,157.496 191.922,158.2 191.922,159.28 L191.922,159.296 C191.922,160.256 191.426,160.744 190.394,161.552 L189.394,162.336 L191.978,162.336 L191.978,163.4 L187.69,163.4 Z M195.41,162.448 C196.018,162.448 196.53,161.96 196.53,161.184 L196.53,161.168 C196.53,160.408 196.018,159.904 195.41,159.904 C194.802,159.904 194.29,160.408 194.29,161.168 L194.29,161.184 C194.29,161.944 194.802,162.448 195.41,162.448 Z M193.09,164.728 L193.09,158.952 L194.306,158.952 L194.306,159.616 C194.618,159.192 195.05,158.872 195.714,158.872 C196.754,158.872 197.746,159.688 197.746,161.168 L197.746,161.184 C197.746,162.664 196.77,163.488 195.714,163.488 C195.034,163.488 194.61,163.168 194.306,162.8 L194.306,164.728 L193.09,164.728 Z M199.506,158.952 L200.37,160.288 L201.25,158.952 L202.522,158.952 L201.01,161.12 L202.586,163.4 L201.282,163.4 L200.346,161.968 L199.41,163.4 L198.138,163.4 L199.714,161.136 L198.202,158.952 L199.506,158.952 Z"/>
+    </g>
+    <path fill="#137BC2" d="M109.014,28 L109.014,19.264 L112.554,19.264 C114.63,19.264 115.89,20.488 115.89,22.264 L115.89,22.288 C115.89,24.304 114.318,25.336 112.374,25.336 L110.85,25.336 L110.85,28 L109.014,28 Z M110.85,23.692 L112.434,23.692 C113.43,23.692 114.03,23.104 114.03,22.324 L114.03,22.3 C114.03,21.412 113.394,20.932 112.398,20.932 L110.85,20.932 L110.85,23.692 Z M119.574,26.86 C120.486,26.86 121.11,26.356 121.11,25.636 L121.11,25.276 C120.774,25.132 120.33,25.024 119.838,25.024 C118.998,25.024 118.482,25.372 118.482,25.984 L118.482,26.008 C118.482,26.548 118.938,26.86 119.574,26.86 Z M119.034,28.132 C117.774,28.132 116.718,27.4 116.718,26.08 L116.718,26.056 C116.718,24.604 117.834,23.932 119.418,23.932 C120.114,23.932 120.606,24.04 121.086,24.196 L121.086,24.076 C121.086,23.26 120.582,22.816 119.61,22.816 C118.89,22.816 118.362,22.96 117.75,23.188 L117.294,21.796 C118.026,21.472 118.758,21.256 119.874,21.256 C120.894,21.256 121.638,21.532 122.118,22 C122.61,22.492 122.838,23.224 122.838,24.112 L122.838,28 L121.074,28 L121.074,27.256 C120.618,27.772 119.97,28.132 119.034,28.132 Z M127.806,26.572 C128.718,26.572 129.486,25.816 129.486,24.676 L129.486,24.652 C129.486,23.512 128.718,22.756 127.806,22.756 C126.894,22.756 126.126,23.488 126.126,24.652 L126.126,24.676 C126.126,25.816 126.894,26.572 127.806,26.572 Z M127.35,28.132 C125.79,28.132 124.302,26.908 124.302,24.676 L124.302,24.652 C124.302,22.432 125.766,21.208 127.35,21.208 C128.37,21.208 129.006,21.676 129.462,22.228 L129.462,18.892 L131.286,18.892 L131.286,28 L129.462,28 L129.462,27.016 C128.994,27.652 128.346,28.132 127.35,28.132 Z M136.314,26.572 C137.226,26.572 137.994,25.816 137.994,24.676 L137.994,24.652 C137.994,23.512 137.226,22.756 136.314,22.756 C135.402,22.756 134.634,23.488 134.634,24.652 L134.634,24.676 C134.634,25.816 135.402,26.572 136.314,26.572 Z M135.858,28.132 C134.298,28.132 132.81,26.908 132.81,24.676 L132.81,24.652 C132.81,22.432 134.274,21.208 135.858,21.208 C136.878,21.208 137.514,21.676 137.97,22.228 L137.97,18.892 L139.794,18.892 L139.794,28 L137.97,28 L137.97,27.016 C137.502,27.652 136.854,28.132 135.858,28.132 Z M141.654,20.536 L141.654,18.904 L143.574,18.904 L143.574,20.536 L141.654,20.536 Z M141.714,28 L141.714,21.328 L143.526,21.328 L143.526,28 L141.714,28 Z M145.446,28 L145.446,21.328 L147.27,21.328 L147.27,22.288 C147.702,21.724 148.278,21.208 149.25,21.208 C150.69,21.208 151.542,22.156 151.542,23.692 L151.542,28 L149.718,28 L149.718,24.268 C149.718,23.344 149.274,22.852 148.518,22.852 C147.762,22.852 147.27,23.344 147.27,24.268 L147.27,28 L145.446,28 Z M156.498,25.948 C157.446,25.948 158.19,25.288 158.19,24.34 L158.19,24.316 C158.19,23.368 157.446,22.72 156.498,22.72 C155.55,22.72 154.83,23.368 154.83,24.316 L154.83,24.34 C154.83,25.3 155.55,25.948 156.498,25.948 Z M156.294,30.016 C155.214,30.016 154.182,29.764 153.342,29.308 L153.966,27.94 C154.662,28.336 155.358,28.564 156.246,28.564 C157.554,28.564 158.19,27.928 158.19,26.704 L158.19,26.344 C157.626,27.028 157.002,27.46 155.982,27.46 C154.422,27.46 153.006,26.32 153.006,24.34 L153.006,24.316 C153.006,22.336 154.446,21.208 155.982,21.208 C157.026,21.208 157.65,21.652 158.166,22.228 L158.166,21.328 L159.99,21.328 L159.99,26.524 C159.99,27.7 159.702,28.564 159.138,29.128 C158.526,29.74 157.566,30.016 156.294,30.016 Z"/>
+  </g>
 </svg>
