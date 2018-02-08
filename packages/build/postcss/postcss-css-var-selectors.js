@@ -1,14 +1,17 @@
-const dashify = require('dashify')
 const postcss = require('postcss')
+
+const dashify = require('../css/dashify')
 
 const defaultOptions = { propNameTests: [] }
 
 const createSelectorsForVar = (decl, options) => {
   const prop = dashify(decl.prop)
   const value = decl.value
-  return (options.propNameTests.find(t => t.match.test(decl.prop)) || {
-    props: []
-  }).props.map((p, i, newProps) =>
+  return (
+    options.propNameTests.find(t => t.match.test(decl.prop)) || {
+      props: []
+    }
+  ).props.map((p, i, newProps) =>
     postcss.parse(`
 .${prop + (newProps.length > 1 ? `--${p}` : '')} { ${p}: ${value}; }
 `)

@@ -1,5 +1,6 @@
-const dashify = require('dashify')
 const postcss = require('postcss')
+
+const dashify = require('../css/dashify')
 
 const createSassVar = (decl, options) => {
   const node = postcss.parse(`
