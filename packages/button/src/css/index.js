@@ -19,7 +19,7 @@ export default {
     alignItems: 'stretch',
     padding: `${core.layout.spacingSmall} ${core.layout.spacingMedium}`,
     border: 0,
-    borderRadius: 2,
+    borderRadius: '2px',
     fontSize: core.type.fontSizeSmall,
     lineHeight: core.type.lineHeightStandard,
     fontWeight: core.type.fontWeightMedium,
