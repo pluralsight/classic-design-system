@@ -130,7 +130,7 @@ exports[`Storyshots Default xSmall 1`] = `
 >
   <div
     className={undefined}
-    data-css-zl8mno=""
+    data-css-r2oqze=""
   >
     <img
       data-css-1ba73bf=""
@@ -161,7 +161,12 @@ exports[`Storyshots Using Initials % Special Characters 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-1piqfk0=""
+      data-css-1t1cogi=""
+      style={
+        Object {
+          "backgroundColor": "#49897C",
+        }
+      }
     >
       %C
     </div>
@@ -190,7 +195,12 @@ exports[`Storyshots Using Initials Anakin Skywalker 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-1piqfk0=""
+      data-css-1t1cogi=""
+      style={
+        Object {
+          "backgroundColor": "#49897C",
+        }
+      }
     >
       AS
     </div>
@@ -219,7 +229,12 @@ exports[`Storyshots Using Initials Budapest Skywalker 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-10aefha=""
+      data-css-1t1cogi=""
+      style={
+        Object {
+          "backgroundColor": "#9A171B",
+        }
+      }
     >
       BS
     </div>
@@ -248,7 +263,12 @@ exports[`Storyshots Using Initials Carlos Organa 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-96mz0l=""
+      data-css-1t1cogi=""
+      style={
+        Object {
+          "backgroundColor": "#1F964E",
+        }
+      }
     >
       CO
     </div>
@@ -277,7 +297,12 @@ exports[`Storyshots Using Initials Dennis Pimenta 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-1ewxdui=""
+      data-css-1t1cogi=""
+      style={
+        Object {
+          "backgroundColor": "#076F84",
+        }
+      }
     >
       DP
     </div>
@@ -306,7 +331,12 @@ exports[`Storyshots Using Initials Diz Blau 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-1ewxdui=""
+      data-css-1t1cogi=""
+      style={
+        Object {
+          "backgroundColor": "#076F84",
+        }
+      }
     >
       DB
     </div>
@@ -335,7 +365,12 @@ exports[`Storyshots Using Initials Harry Potter 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-e5wbco=""
+      data-css-1t1cogi=""
+      style={
+        Object {
+          "backgroundColor": "#AE8018",
+        }
+      }
     >
       HP
     </div>
@@ -364,7 +399,12 @@ exports[`Storyshots Using Initials Obi-Wan Kenobi 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-1f0e8wn=""
+      data-css-1t1cogi=""
+      style={
+        Object {
+          "backgroundColor": "#2D4E82",
+        }
+      }
     >
       OK
     </div>
@@ -393,7 +433,12 @@ exports[`Storyshots Using Initials Peia Organa 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-h0w4r3=""
+      data-css-1t1cogi=""
+      style={
+        Object {
+          "backgroundColor": "#6D8C36",
+        }
+      }
     >
       PO
     </div>
@@ -422,7 +467,12 @@ exports[`Storyshots Using Initials Single 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-1piqfk0=""
+      data-css-1t1cogi=""
+      style={
+        Object {
+          "backgroundColor": "#49897C",
+        }
+      }
     >
       SI
     </div>
@@ -451,7 +501,12 @@ exports[`Storyshots Using Initials Uy Marley 1`] = `
     data-css-1m7zcb4=""
   >
     <div
-      data-css-96mz0l=""
+      data-css-1t1cogi=""
+      style={
+        Object {
+          "backgroundColor": "#1F964E",
+        }
+      }
     >
       UM
     </div>
@@ -532,7 +587,12 @@ exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
       src="https://secure.gravatar.com/avatar/invalidhash?d=tmp&d=https://s2.pluralsight.com/design-system/assets/transparent.gif"
     />
     <div
-      data-css-1piqfk0=""
+      data-css-1t1cogi=""
+      style={
+        Object {
+          "backgroundColor": "#49897C",
+        }
+      }
     >
       AT
     </div>

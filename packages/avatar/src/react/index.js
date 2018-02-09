@@ -1,13 +1,32 @@
-import React from 'react'
-import { sizes } from '../vars'
+import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
-import styles from './styles'
-import { getInitials, transformSrc } from './utils'
+import React from 'react'
+
+import css from '../css'
+import { sizes } from '../vars'
+import { getColorByName, getInitials, transformSrc } from './utils'
+
+const styles = {
+  avatar: ({ size }) =>
+    glamor.css({
+      ...css['.psds-avatar'],
+      ...css[`.psds-avatar--size-${size}`]
+    }),
+  image: _ => glamor.css(css['.psds-avatar__image']),
+  initials: ({ name }) => glamor.css(css['.psds-avatar__initials'])
+}
 
 const Avatar = ({ name, src, size, className }) => (
-  <div {...styles.body({ size })} className={className}>
-    {src && <img {...styles.img} src={transformSrc(src)} />}
-    {name && <div {...styles.initials({ name })}>{getInitials(name)}</div>}
+  <div {...styles.avatar({ size })} className={className}>
+    {src && <img {...styles.image()} src={transformSrc(src)} />}
+    {name && (
+      <div
+        {...styles.initials({ name })}
+        style={{ backgroundColor: getColorByName(name) }}
+      >
+        {getInitials(name)}
+      </div>
+    )}
   </div>
 )
 
