@@ -3,6 +3,9 @@
   "version": "1.7.2",
   "description": "Utilities for building and configuring Design System packages",
   "main": "index.js",
+  "bin": {
+    "build-css": "./bin/build-css.js"
+  },
   "scripts": {
     "test": "jest",
     "test:watch": "npm run test -- --watchAll"
@@ -17,7 +20,8 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "chalk": "^2.0.1",
+    "chalk": "^2.3.0",
+    "commander": "^2.14.1",
     "css-loader": "^0.28.4",
     "idempotent-fs": "^1.2.0",
     "jest": "^22.2.1",
