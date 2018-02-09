@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.2.8...@pluralsight/ps-design-system-avatar@1.3.0) (2018-02-09)
+
+
+### Features
+
+* **avatar:** extract stylesheet ([2734300](https://github.com/pluralsight/design-system/commit/2734300))
+* **avatar:** suppor style prop ([bc676dd](https://github.com/pluralsight/design-system/commit/bc676dd))
+
+
+
+
 <a name="1.2.8"></a>
 ## [1.2.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.2.7...@pluralsight/ps-design-system-avatar@1.2.8) (2018-02-08)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@1.2.11...@pluralsight/ps-design-system-circularprogress@1.3.0) (2018-02-09)
+
+
+### Features
+
+* **circularprogress:** extract stylesheet ([1b48cb5](https://github.com/pluralsight/design-system/commit/1b48cb5))
+
+
+
+
 <a name="1.2.11"></a>
 ## [1.2.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@1.2.10...@pluralsight/ps-design-system-circularprogress@1.2.11) (2018-02-08)
 

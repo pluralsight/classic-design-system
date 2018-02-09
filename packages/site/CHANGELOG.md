@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.26.1"></a>
+## [9.26.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.26.0...@pluralsight/ps-design-system-site@9.26.1) (2018-02-09)
+
+
+### Bug Fixes
+
+* **site:** put tooltip in-app example in dark theme ([8bce2fb](https://github.com/pluralsight/design-system/commit/8bce2fb))
+
+
+
+
 <a name="9.26.0"></a>
 # [9.26.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.25.1...@pluralsight/ps-design-system-site@9.26.0) (2018-02-08)
 
