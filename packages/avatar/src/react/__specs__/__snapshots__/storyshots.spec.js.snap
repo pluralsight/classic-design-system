@@ -17,7 +17,6 @@ exports[`Storyshots Default large 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-18yikff=""
   >
     <img
@@ -45,7 +44,6 @@ exports[`Storyshots Default medium 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1m7zcb4=""
   >
     <img
@@ -73,7 +71,6 @@ exports[`Storyshots Default small 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1o5cejo=""
   >
     <img
@@ -101,7 +98,6 @@ exports[`Storyshots Default xLarge 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1j3ote4=""
   >
     <img
@@ -129,7 +125,6 @@ exports[`Storyshots Default xSmall 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-r2oqze=""
   >
     <img
@@ -157,7 +152,6 @@ exports[`Storyshots Using Initials % Special Characters 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1m7zcb4=""
   >
     <div
@@ -191,7 +185,6 @@ exports[`Storyshots Using Initials Anakin Skywalker 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1m7zcb4=""
   >
     <div
@@ -225,7 +218,6 @@ exports[`Storyshots Using Initials Budapest Skywalker 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1m7zcb4=""
   >
     <div
@@ -259,7 +251,6 @@ exports[`Storyshots Using Initials Carlos Organa 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1m7zcb4=""
   >
     <div
@@ -293,7 +284,6 @@ exports[`Storyshots Using Initials Dennis Pimenta 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1m7zcb4=""
   >
     <div
@@ -327,7 +317,6 @@ exports[`Storyshots Using Initials Diz Blau 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1m7zcb4=""
   >
     <div
@@ -361,7 +350,6 @@ exports[`Storyshots Using Initials Harry Potter 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1m7zcb4=""
   >
     <div
@@ -395,7 +383,6 @@ exports[`Storyshots Using Initials Obi-Wan Kenobi 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1m7zcb4=""
   >
     <div
@@ -429,7 +416,6 @@ exports[`Storyshots Using Initials Peia Organa 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1m7zcb4=""
   >
     <div
@@ -463,7 +449,6 @@ exports[`Storyshots Using Initials Single 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1m7zcb4=""
   >
     <div
@@ -497,7 +482,6 @@ exports[`Storyshots Using Initials Uy Marley 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1m7zcb4=""
   >
     <div
@@ -531,7 +515,6 @@ exports[`Storyshots Using Initials empty 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1m7zcb4=""
   >
     
@@ -556,7 +539,6 @@ exports[`Storyshots Using Initials null 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1m7zcb4=""
   />
 </div>
@@ -579,7 +561,6 @@ exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
   }
 >
   <div
-    className={undefined}
     data-css-1m7zcb4=""
   >
     <img

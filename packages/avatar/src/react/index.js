@@ -16,19 +16,26 @@ const styles = {
   initials: ({ name }) => glamor.css(css['.psds-avatar__initials'])
 }
 
-const Avatar = ({ name, src, size, className }) => (
-  <div {...styles.avatar({ size })} className={className}>
-    {src && <img {...styles.image()} src={transformSrc(src)} />}
-    {name && (
-      <div
-        {...styles.initials({ name })}
-        style={{ backgroundColor: getColorByName(name) }}
-      >
-        {getInitials(name)}
-      </div>
-    )}
-  </div>
-)
+const Avatar = ({ className, name, size, src, style }) => {
+  const avatarProps = {
+    ...styles.avatar({ size }),
+    ...(className ? { className } : null),
+    ...(style ? { style } : null)
+  }
+  return (
+    <div {...avatarProps}>
+      {src && <img {...styles.image()} src={transformSrc(src)} />}
+      {name && (
+        <div
+          {...styles.initials({ name })}
+          style={{ backgroundColor: getColorByName(name) }}
+        >
+          {getInitials(name)}
+        </div>
+      )}
+    </div>
+  )
+}
 
 Avatar.defaultProps = {
   size: sizes.medium
