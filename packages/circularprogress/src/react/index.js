@@ -3,64 +3,38 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
-import { transparentize } from 'polished'
 
-const style = {
-  width: 48,
-  strokeWidth: 4
-}
-const radius = style.width / 2 - style.strokeWidth / 2
+import css from '../css'
+import * as vars from '../vars'
+
+const radius = vars.style.width / 2 - vars.style.strokeWidth / 2
 const circumference = 2 * Math.PI * radius
-const spinAnimation = glamor.css.keyframes({
+const spin = glamor.css.keyframes({
   to: {
     transform: 'rotate(270deg)'
   }
 })
 
-const css = {
+const styles = {
+  circularprogress: ({ size }) =>
+    glamor.css(css[`.psds-circularprogress--size-${size}`]),
+  svg: ({ value }) =>
+    glamor.css({
+      ...css['.psds-circularprogress__svg'],
+      ...(typeof value === 'undefined'
+        ? css['.psds-circularprogress__svg--no-value']({ spin })
+        : null)
+    }),
   bg: ({ themeName }) =>
     glamor.css({
-      fill: 'transparent',
-      strokeWidth: `${style.strokeWidth}px`,
-      stroke:
-        themeName === themeNames.light
-          ? transparentize(0.8, core.colors.gray04)
-          : core.colors.gray04
+      ...css['.psds-circularprogress__bg'],
+      ...css[`.psds-circularprogress__bg.psds-theme--${themeName}`]
     }),
   fg: ({ themeName }) =>
     glamor.css({
-      fill: 'transparent',
-      strokeWidth: `${style.strokeWidth}px`,
-      stroke:
-        themeName === themeNames.light ? core.colors.gray04 : core.colors.white,
-      transition: 'stroke-dashoffset 1s'
-    }),
-  root: ({ size }) =>
-    glamor.css(
-      {
-        [sizes.small]: {
-          height: '24px',
-          width: '24px'
-        },
-        [sizes.medium]: {
-          height: '48px',
-          width: '48px'
-        }
-      }[size]
-    ),
-  svg: ({ value }) =>
-    glamor.css({
-      transform: 'rotate(-90deg)',
-      animation:
-        typeof value === 'undefined'
-          ? `${spinAnimation} 1s linear infinite`
-          : ''
+      ...css[`.psds-circularprogress__fg`],
+      ...css[`.psds-circularprogress__fg.psds-theme--${themeName}`]
     })
-}
-
-export const sizes = {
-  small: 'small',
-  medium: 'medium'
 }
 
 const CircularProgress = (props, context) => {
@@ -71,22 +45,22 @@ const CircularProgress = (props, context) => {
   return React.createElement(
     'div',
     {
-      ...css.root(allProps),
+      ...styles.circularprogress(allProps),
       ...(props.style ? { style: props.style } : null),
       ...(props.className ? { className: props.className } : null)
     },
     <svg
-      {...css.svg(allProps)}
-      viewBox={`0 0 ${style.width} ${style.width}`}
+      {...styles.svg(allProps)}
+      viewBox={`0 0 ${vars.style.width} ${vars.style.width}`}
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle r={radius} cx="24" cy="24" {...css.bg(allProps)} />
+      <circle r={radius} cx="24" cy="24" {...styles.bg(allProps)} />
       <circle
         r={radius}
         cx="24"
         cy="24"
-        {...css.fg(allProps)}
+        {...styles.fg(allProps)}
         strokeDasharray={`${circumference} ${circumference}`}
         strokeDashoffset={dashOffset}
       />
@@ -95,16 +69,17 @@ const CircularProgress = (props, context) => {
 }
 
 CircularProgress.propTypes = {
-  size: PropTypes.oneOf(Object.keys(sizes)),
+  size: PropTypes.oneOf(Object.keys(vars.sizes)),
   value: PropTypes.number
 }
 CircularProgress.defaultProps = {
-  size: sizes.medium
+  size: vars.sizes.medium
 }
 CircularProgress.contextTypes = {
   themeName: PropTypes.string
 }
 
-CircularProgress.sizes = sizes
+CircularProgress.sizes = vars.sizes
+export const sizes = vars.sizes
 
 export default CircularProgress
