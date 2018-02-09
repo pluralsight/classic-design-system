@@ -27,7 +27,7 @@ exports[`Storyshots drawer controlled 1`] = `
   >
     <div>
       <button
-        data-css-bzft25=""
+        data-css-1sql3pc=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
