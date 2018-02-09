@@ -9,90 +9,55 @@ import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import css from '../css'
+
 if (typeof window !== 'undefined') require('element-closest')
 
 const { gray01, gray02, gray03, gray04, gray06, white } = core.colors
-const CARET_AREA_WIDTH = 38
 
-const DrawerRoot = glamorous.div(({ themeName }) => ({
-  borderTop: `1px solid ${themeName === themeNames.light ? gray01 : gray04}`
-}))
+const DrawerRoot = glamorous.div(
+  ({ themeName }) => css[`.psds-drawer.psds-theme--${themeName}`]
+)
 
 const DrawerBase = glamorous.div(
   {
-    position: 'relative',
-    paddingRight: CARET_AREA_WIDTH,
-    cursor: 'pointer',
-    transition: `background ${core.motion.speedNormal}`,
-    ':hover': {
-      background: transparentize(0.9, gray02)
-    }
+    ...css['.psds-drawer__base'],
+    ':hover': css['.psds-drawer__base:hover']
   },
   ({ isOpen }) =>
     isOpen
       ? {
-          background: transparentize(0.8, gray02),
-          ':hover': {
-            background: transparentize(0.8, gray02)
-          }
+          ...css['.psds-drawer__base--isOpen'],
+          ':hover': css['.psds-drawer__base--isOpen:hover']
         }
       : {}
 )
 
 const DrawerPanel = glamorous.div(
-  {
-    background: transparentize(0.94, gray02),
-    transition: `box-shadow ${core.motion.speedNormal}`
-  },
+  css['.psds-drawer__panel'],
   ({ isOpen, themeName }) =>
-    isOpen
-      ? {
-          boxShadow: `inset 0 1px 3px 0 rgba(0,0,0,${
-            themeName === themeNames.light ? '0.1' : '0.5'
-          })`
-        }
-      : {}
+    isOpen ? css[`.psds-drawer__panel.psds-theme--${themeName}`] : {}
 )
 
-const DrawerPanelContent = glamorous.div({
-  marginRight: -CARET_AREA_WIDTH,
-  paddingRight: CARET_AREA_WIDTH
-})
+const DrawerPanelContent = glamorous.div(css['.psds-drawer__panel-content'])
 
-const ToggleButtonContainer = glamorous.div({
-  position: 'absolute',
-  top: 0,
-  right: core.layout.spacingMedium,
-  bottom: 0,
-  display: 'flex',
-  alignItems: 'center'
-})
+const ToggleButtonContainer = glamorous.div(
+  css['.psds-drawer__toggle-button-container']
+)
 
 const ToggleButton = glamorous.button(
-  {
-    height: 24,
-    overflow: 'hidden',
-    fontSize: core.type.fontSizeXSmall,
-    padding: 0,
-    cursor: 'pointer',
-    border: 'none',
-    background: 'none',
-    transition: `all ${core.motion.speedNormal}`
-  },
+  css['.psds-drawer__toggle-button'],
   ({ themeName }) => ({
-    color: themeName === themeNames.light ? gray03 : gray02,
-    ':hover, :active': {
-      color: themeName === themeNames.light ? gray06 : white
-    }
+    ...css[`.psds-drawer__toggle-button.psds-theme--${themeName}`],
+    ':hover': css[`.psds-drawer__toggle-button.psds-theme--${themeName}:hover`],
+    ':active':
+      css[`.psds-drawer__toggle-button.psds-theme--${themeName}:active`]
   })
 )
 
 const Rotatable = glamorous.div(
-  {
-    transition: `transform ${core.motion.speedNormal}`,
-    lineHeight: 0
-  },
-  ({ isRotated }) => (isRotated ? { transform: 'rotateZ(180deg)' } : {})
+  css['.psds-drawer__rotatable'],
+  ({ isRotated }) => (isRotated ? css['.psds-drawer__rotatable--isOpen'] : {})
 )
 
 class Drawer extends React.Component {
@@ -127,7 +92,7 @@ class Drawer extends React.Component {
     const ariaLabel = isOpen ? 'Collapse' : 'Expand'
 
     return (
-      <DrawerRoot>
+      <DrawerRoot themeName={themeName}>
         <DrawerBase isOpen={isOpen} onClick={this.handleClick}>
           <DrawerPanelContent themeName={themeName}>
             <Div padding={`0 ${core.layout.spacingMedium}`}>

@@ -42,11 +42,11 @@ exports[`Storyshots drawer controlled 1`] = `
         className="css-1fq8nx6"
       >
         <div
-          className="css-a8p3d5"
+          className="css-1xh6o2g"
           onClick={[Function]}
         >
           <div
-            className="css-1m37xb3"
+            className="css-v0gxx3"
           >
             <div
               className="css-k4qf09"
@@ -60,7 +60,7 @@ exports[`Storyshots drawer controlled 1`] = `
             className="css-qs2rg7"
           >
             <button
-              className="css-wepra9"
+              className="css-xipskh"
               onClick={[Function]}
             >
               <div
@@ -129,11 +129,11 @@ exports[`Storyshots drawer default 1`] = `
       className="css-1fq8nx6"
     >
       <div
-        className="css-58omaf"
+        className="css-y8t6tw"
         onClick={[Function]}
       >
         <div
-          className="css-1m37xb3"
+          className="css-v0gxx3"
         >
           <div
             className="css-k4qf09"
@@ -147,7 +147,7 @@ exports[`Storyshots drawer default 1`] = `
           className="css-qs2rg7"
         >
           <button
-            className="css-wepra9"
+            className="css-xipskh"
             onClick={[Function]}
           >
             <div
@@ -215,11 +215,11 @@ exports[`Storyshots drawer row component with actions 1`] = `
       className="css-1fq8nx6"
     >
       <div
-        className="css-58omaf"
+        className="css-y8t6tw"
         onClick={[Function]}
       >
         <div
-          className="css-1m37xb3"
+          className="css-v0gxx3"
         >
           <div
             className="css-k4qf09"
@@ -332,7 +332,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
           className="css-qs2rg7"
         >
           <button
-            className="css-wepra9"
+            className="css-xipskh"
             onClick={[Function]}
           >
             <div
@@ -401,11 +401,11 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         className="css-1fq8nx6"
       >
         <div
-          className="css-58omaf"
+          className="css-y8t6tw"
           onClick={[Function]}
         >
           <div
-            className="css-1m37xb3"
+            className="css-v0gxx3"
           >
             <div
               className="css-k4qf09"
@@ -419,7 +419,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
             className="css-qs2rg7"
           >
             <button
-              className="css-wepra9"
+              className="css-xipskh"
               onClick={[Function]}
             >
               <div
@@ -456,11 +456,11 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         className="css-1fq8nx6"
       >
         <div
-          className="css-58omaf"
+          className="css-y8t6tw"
           onClick={[Function]}
         >
           <div
-            className="css-1m37xb3"
+            className="css-v0gxx3"
           >
             <div
               className="css-k4qf09"
@@ -474,7 +474,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
             className="css-qs2rg7"
           >
             <button
-              className="css-wepra9"
+              className="css-xipskh"
               onClick={[Function]}
             >
               <div
@@ -511,11 +511,11 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         className="css-1fq8nx6"
       >
         <div
-          className="css-58omaf"
+          className="css-y8t6tw"
           onClick={[Function]}
         >
           <div
-            className="css-1m37xb3"
+            className="css-v0gxx3"
           >
             <div
               className="css-k4qf09"
@@ -529,7 +529,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
             className="css-qs2rg7"
           >
             <button
-              className="css-wepra9"
+              className="css-xipskh"
               onClick={[Function]}
             >
               <div
@@ -598,11 +598,11 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           className="css-1fq8nx6"
         >
           <div
-            className="css-58omaf"
+            className="css-y8t6tw"
             onClick={[Function]}
           >
             <div
-              className="css-1m37xb3"
+              className="css-v0gxx3"
             >
               <div
                 className="css-k4qf09"
@@ -616,7 +616,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               className="css-qs2rg7"
             >
               <button
-                className="css-wepra9"
+                className="css-xipskh"
                 onClick={[Function]}
               >
                 <div
@@ -655,11 +655,11 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           className="css-1fq8nx6"
         >
           <div
-            className="css-58omaf"
+            className="css-y8t6tw"
             onClick={[Function]}
           >
             <div
-              className="css-1m37xb3"
+              className="css-v0gxx3"
             >
               <div
                 className="css-k4qf09"
@@ -673,7 +673,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               className="css-qs2rg7"
             >
               <button
-                className="css-wepra9"
+                className="css-xipskh"
                 onClick={[Function]}
               >
                 <div
@@ -712,11 +712,11 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           className="css-1fq8nx6"
         >
           <div
-            className="css-58omaf"
+            className="css-y8t6tw"
             onClick={[Function]}
           >
             <div
-              className="css-1m37xb3"
+              className="css-v0gxx3"
             >
               <div
                 className="css-k4qf09"
@@ -730,7 +730,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               className="css-qs2rg7"
             >
               <button
-                className="css-wepra9"
+                className="css-xipskh"
                 onClick={[Function]}
               >
                 <div
@@ -799,11 +799,11 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
         className="css-1fq8nx6"
       >
         <div
-          className="css-58omaf"
+          className="css-y8t6tw"
           onClick={[Function]}
         >
           <div
-            className="css-1m37xb3"
+            className="css-v0gxx3"
           >
             <div
               className="css-k4qf09"
@@ -818,7 +818,7 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
             className="css-qs2rg7"
           >
             <button
-              className="css-wepra9"
+              className="css-xipskh"
               onClick={[Function]}
             >
               <div
@@ -887,11 +887,11 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
       className="css-1fq8nx6"
     >
       <div
-        className="css-a8p3d5"
+        className="css-1xh6o2g"
         onClick={[Function]}
       >
         <div
-          className="css-1m37xb3"
+          className="css-v0gxx3"
         >
           <div
             className="css-k4qf09"
@@ -905,7 +905,7 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
           className="css-qs2rg7"
         >
           <button
-            className="css-wepra9"
+            className="css-xipskh"
             onClick={[Function]}
           >
             <div
@@ -975,11 +975,11 @@ exports[`Storyshots drawer with row component 1`] = `
       className="css-1fq8nx6"
     >
       <div
-        className="css-58omaf"
+        className="css-y8t6tw"
         onClick={[Function]}
       >
         <div
-          className="css-1m37xb3"
+          className="css-v0gxx3"
         >
           <div
             className="css-k4qf09"
@@ -1052,7 +1052,7 @@ exports[`Storyshots drawer with row component 1`] = `
           className="css-qs2rg7"
         >
           <button
-            className="css-wepra9"
+            className="css-xipskh"
             onClick={[Function]}
           >
             <div
