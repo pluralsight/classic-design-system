@@ -5,21 +5,21 @@ import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react'
 export default props => (
   <div className="guideline">
     <EqualColumnLayout count={EqualColumnLayout.counts.two}>
-      <div className="box">
+      <div className="box" style={props.doStyle}>
+        {props.do}
         <div className="badgeWrapper">
           <Badge color={Badge.colors.green} className="badge">
             Do
           </Badge>
         </div>
-        {props.do}
       </div>
-      <div className="box">
+      <div className="box" style={props.dontStyle}>
+        {props.dont}
         <div className="badgeWrapper">
           <Badge color={Badge.colors.red} className="badge">
             Don't
           </Badge>
         </div>
-        {props.dont}
       </div>
     </EqualColumnLayout>
 
