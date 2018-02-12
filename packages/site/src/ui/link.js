@@ -3,7 +3,7 @@ import React from 'react'
 import StyledLink from '@pluralsight/ps-design-system-link/react'
 
 // TODO: make handle activeClassName-type thing
-export default class extends React.Component {
+class LinkComponent extends React.Component {
   constructor(props) {
     super(props)
     this.handleClick = this.handleClick.bind(this)
@@ -15,14 +15,14 @@ export default class extends React.Component {
   }
   render() {
     return /^http/.test(this.props.href) ? (
-      <StyledLink>
+      <StyledLink appearance={this.props.appearance}>
         <a {...this.props} href={this.props.href}>
           {this.props.children}
         </a>
       </StyledLink>
     ) : (
       <Link href={this.props.href}>
-        <StyledLink>
+        <StyledLink appearance={this.props.appearance}>
           <a {...this.props} onClick={this.handleClick}>
             {this.props.children}
           </a>
@@ -31,3 +31,5 @@ export default class extends React.Component {
     )
   }
 }
+LinkComponent.appearances = StyledLink.appearances
+export default LinkComponent
