@@ -1,26 +1,14 @@
-import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-export const appearances = { default: 'default', subtle: 'subtle' }
+import css from '../css'
+import * as vars from '../vars'
 
 const style = props =>
   glamor.css({
-    ':hover': {
-      color: core.colors.orange,
-      textDecoration: 'underline'
-    },
-    ...(({ appearance }) =>
-      appearance === appearances.subtle
-        ? {
-            color: 'currentColor',
-            textDecoration: 'underline'
-          }
-        : {
-            color: core.colors.orange,
-            textDecoration: 'none'
-          })(props)
+    ':hover': css['.psds-link:hover'],
+    ...(({ appearance }) => css[`.psds-link--appearance-${appearance}`])(props)
   })
 
 const rmNonHtmlProps = props => {
@@ -34,13 +22,15 @@ const Link = props =>
     ...rmNonHtmlProps(props)
   })
 
-Link.appearances = appearances
+Link.appearances = vars.appearances
 
 Link.propTypes = {
-  appearances: PropTypes.oneOf(Object.keys(appearances))
+  appearances: PropTypes.oneOf(Object.keys(vars.appearances))
 }
 Link.defaultProps = {
-  appearance: appearances.default
+  appearance: vars.appearances.default
 }
+
+export const appearances = vars.appearances
 
 export default Link
