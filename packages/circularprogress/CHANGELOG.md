@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@1.3.1...@pluralsight/ps-design-system-circularprogress@1.4.0) (2018-02-12)
+
+
+### Features
+
+* **circularprogress:** add paths for tech-specific imports ([81bd32d](https://github.com/pluralsight/design-system/commit/81bd32d))
+
+
+
+
 <a name="1.3.1"></a>
 ## [1.3.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@1.3.0...@pluralsight/ps-design-system-circularprogress@1.3.1) (2018-02-12)
 

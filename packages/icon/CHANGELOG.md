@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.5.0"></a>
+# [8.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.4.16...@pluralsight/ps-design-system-icon@8.5.0) (2018-02-12)
+
+
+### Features
+
+* **icon:** extract stylesheet ([fd2014d](https://github.com/pluralsight/design-system/commit/fd2014d))
+
+
+
+
 <a name="8.4.16"></a>
 ## [8.4.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.4.15...@pluralsight/ps-design-system-icon@8.4.16) (2018-02-12)
 

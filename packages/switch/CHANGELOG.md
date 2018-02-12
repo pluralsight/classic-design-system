@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.1.10...@pluralsight/ps-design-system-switch@1.2.0) (2018-02-12)
+
+
+### Features
+
+* **switch:** extract stylesheet ([c680ec4](https://github.com/pluralsight/design-system/commit/c680ec4))
+
+
+
+
 <a name="1.1.10"></a>
 ## [1.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.1.9...@pluralsight/ps-design-system-switch@1.1.10) (2018-02-12)
 

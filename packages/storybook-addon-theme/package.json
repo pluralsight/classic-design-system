@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-storybook-addon-theme",
-  "version": "1.1.22",
+  "version": "1.1.23",
   "description": "Storybook addon for Theme switching",
   "main": "index.js",
   "keywords": [
@@ -19,7 +19,7 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^10.5.4",
+    "@pluralsight/ps-design-system-button": "^10.5.5",
     "@pluralsight/ps-design-system-core": "^4.1.4",
     "@pluralsight/ps-design-system-theme": "^1.2.0"
   },

@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-badge",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "Design System component for badge ui",
   "main": "index.js",
   "style": "dist/css/index.css",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.22",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.23",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",
     "@storybook/react": "3.2.14",
