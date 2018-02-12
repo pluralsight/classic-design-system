@@ -3,59 +3,19 @@ import glamorous from 'glamorous'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import icons from './icons'
+import icons from '../js/icons'
 
-export const ids = Object.keys(icons).reduce((acc, id) => {
-  acc[id] = `${id}`
-  return acc
-}, {})
-
-export const sizes = {
-  small: 'small',
-  medium: 'medium',
-  large: 'large'
-}
-
-export const colors = Object.keys(core.colors)
-  .filter(c => !/gradient/.test(c))
-  .reduce((acc, c) => {
-    acc[c] = c
-    return acc
-  }, {})
-
-const styleSize = ({ size }) =>
-  ({
-    [sizes.small]: {
-      height: '16px',
-      width: '16px'
-    },
-    [sizes.medium]: {
-      height: '24px',
-      width: '24px'
-    },
-    [sizes.large]: {
-      height: '48px',
-      width: '48px'
-    }
-  }[size])
+import css from '../css'
+import * as vars from '../vars'
 
 const IconContainer = glamorous.div(
-  {
-    display: 'inline-block'
-  },
-  styleSize,
-  ({ color }) =>
-    color
-      ? {
-          '> svg': {
-            fill: core.colors[color]
-          }
-        }
-      : {
-          '> svg': {
-            fill: 'currentColor'
-          }
-        }
+  css['.psds-icon'],
+  ({ size }) => css[`.psds-icon--size-${size}`],
+  ({ color }) => ({
+    '> svg': color
+      ? css[`.psds-icon--color-${color} > svg`]
+      : css['.psds-icon > svg']
+  })
 )
 
 const rmNonHtmlProps = props => {
@@ -72,15 +32,19 @@ const Icon = props => {
 }
 
 Icon.propTypes = {
-  color: PropTypes.oneOf(Object.keys(colors)),
-  id: PropTypes.oneOf(Object.keys(ids)),
-  size: PropTypes.oneOf(Object.keys(sizes))
+  color: PropTypes.oneOf(Object.keys(vars.colors)),
+  id: PropTypes.oneOf(Object.keys(vars.ids)),
+  size: PropTypes.oneOf(Object.keys(vars.sizes))
 }
 Icon.defaultProps = {
-  size: sizes.medium
+  size: vars.sizes.medium
 }
-Icon.colors = colors
-Icon.ids = ids
-Icon.sizes = sizes
+Icon.colors = vars.colors
+Icon.ids = vars.ids
+Icon.sizes = vars.sizes
+
+export const ids = vars.ids
+export const sizes = vars.sizes
+export const colors = vars.colors
 
 export default Icon
