@@ -225,7 +225,11 @@ class Btn extends React.Component {
           this.el = el
           if (typeof props.innerRef === 'function') props.innerRef(el)
         }}
-        style={isLoadingWithNoText ? { width: this.nonLoadingWidth } : {}}
+        style={
+          isLoadingWithNoText
+            ? { ...props.style, width: this.nonLoadingWidth }
+            : props.style || {}
+        }
         themeName={context.themeName || themeDefaultName}
       >
         {renderIcon({

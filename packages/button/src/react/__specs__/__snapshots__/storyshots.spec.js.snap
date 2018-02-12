@@ -1727,7 +1727,11 @@ exports[`Storyshots override styles with style 1`] = `
   <button
     data-css-1k5sgdf=""
     disabled={false}
-    style={Object {}}
+    style={
+      Object {
+        "background": "red",
+      }
+    }
   >
     <div
       className="css-1mgd019"
