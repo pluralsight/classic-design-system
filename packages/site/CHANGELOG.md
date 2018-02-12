@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.27.0"></a>
+# [9.27.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.26.1...@pluralsight/ps-design-system-site@9.27.0) (2018-02-12)
+
+
+### Features
+
+* **site:** add appearance prop to link pass thru ([ae44c06](https://github.com/pluralsight/design-system/commit/ae44c06))
+* **site:** add guidelines to dialog ([2188583](https://github.com/pluralsight/design-system/commit/2188583))
+
+
+
+
 <a name="9.26.1"></a>
 ## [9.26.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.26.0...@pluralsight/ps-design-system-site@9.26.1) (2018-02-09)
 

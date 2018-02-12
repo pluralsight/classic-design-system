@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-actionmenu",
-  "version": "2.3.26",
+  "version": "2.3.27",
   "description": "Design System component for actionmenu ui",
   "main": "index.js",
   "scripts": {
@@ -24,13 +24,13 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.1.4",
-    "@pluralsight/ps-design-system-icon": "^8.4.15",
+    "@pluralsight/ps-design-system-icon": "^8.4.16",
     "glamorous": "^4.1.0",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-button": "^10.5.3",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.21",
+    "@pluralsight/ps-design-system-button": "^10.5.4",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.22",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",
     "@storybook/react": "3.2.14",
