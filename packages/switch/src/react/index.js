@@ -5,90 +5,48 @@ import React from 'react'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
 import { transparentize } from 'polished'
 
-export const sizes = {
-  small: 'small',
-  large: 'large'
-}
+import css from '../css'
+import * as vars from '../vars'
 
-export const labelAligns = {
-  left: 'left',
-  right: 'right'
-}
-
-export const colors = {
-  orange: 'orange',
-  green: 'green'
-}
-
-const css = {
-  switch: ({ disabled, labelAlign, themeName }) =>
+const styles = {
+  switch: ({ disabled, labelAlign }) =>
     glamor.css({
-      display: 'inline-flex',
-      flexDirection: labelAlign === labelAligns.left ? 'row-reverse' : 'row',
-      alignItems: 'center',
-      cursor: 'pointer',
-      opacity: disabled ? '0.4' : '1'
+      ...css['.psds-switch'],
+      ...css[`.psds-switch--labelAlign-${labelAlign}`],
+      ...(disabled ? css['.psds-switch--disabled'] : null)
     }),
   track: ({ checked, color, size }) =>
     glamor.css({
-      backgroundColor: checked
-        ? color === colors.green ? core.colors.green : core.colors.orange
-        : core.colors.gray03,
-      transition: `background-color ${core.motion.speedFast} ease-in-out`,
-      ...{
-        [sizes.small]: {
-          height: '12px',
-          width: '24px',
-          borderRadius: '6px'
-        },
-        [sizes.large]: {
-          height: '24px',
-          width: '48px',
-          borderRadius: '12px',
-          padding: '1px'
-        }
-      }[size]
+      ...css['.psds-switch__track'],
+      ...(checked
+        ? css[`.psds-switch__track--checked.psds-switch__track--color-${color}`]
+        : null),
+      ...css[`.psds-switch__track.psds-switch__track--size-${size}`]
     }),
   thumb: ({ checked, size }) =>
     glamor.css({
-      backgroundColor: core.colors.white,
-      borderRadius: '50%',
-      boxShadow: `0 0 2px ${transparentize(0.5, core.colors.black)}`,
-      transition: `transform ${core.motion.speedFast} ease-in-out`,
-      ...{
-        [sizes.small]: {
-          height: '12px',
-          width: '12px'
-        },
-        [sizes.large]: {
-          height: '22px',
-          width: '22px',
-          transform: checked ? 'translateX(24px)' : null
-        }
-      }[size]
+      ...css[`.psds-switch__thumb`],
+      ...css[`.psds-switch__thumb--size-${size}`],
+      ...(checked
+        ? css[`.psds-switch__thumb--checked.psds-switch__thumb--size-${size}`]
+        : null)
     }),
-  label: ({ labelAlign, size, themeName, value }) =>
+  label: ({ labelAlign, size, themeName }) =>
     glamor.css({
-      fontSize:
-        size === sizes.small
-          ? core.type.fontSizeXSmall
-          : core.type.fontSizeSmall,
-      fontWeight: core.type.fontWeightMedium,
-      color:
-        themeName === themeNames.light ? core.colors.gray05 : core.colors.bone,
-      [labelAlign === labelAligns.left ? 'marginRight' : 'marginLeft']:
-        size === sizes.small
-          ? core.layout.spacingXSmall
-          : core.layout.spacingMedium,
-      lineHeight: '1em'
+      ...css['.psds-switch__label'],
+      ...css[`.psds-switch__label--size-${size}`],
+      ...css[
+        `.psds-switch__label--size-${size}.psds-switch__label--labelAlign-${labelAlign}`
+      ],
+      ...css[`.psds-switch__label.psds-theme--${themeName}`]
     }),
-  checkbox: ({ value }) => glamor.css(core.accessibility.screenReaderOnly)
+  checkbox: _ => glamor.css(css['.psds-switch__checkbox'])
 }
 
 const Switch = (props, context) => {
   const allProps = { ...props, themeName: context.themeName }
   const switchProps = {
-    ...css.switch(allProps),
+    ...styles.switch(allProps),
     ...(props.onClick && !props.disabled
       ? { onClick: _ => props.onClick(!allProps.checked) }
       : null),
@@ -98,41 +56,45 @@ const Switch = (props, context) => {
 
   return (
     <div {...switchProps}>
-      <div {...css.track(allProps)}>
-        <div {...css.thumb(allProps)} />
+      <div {...styles.track(allProps)}>
+        <div {...styles.thumb(allProps)} />
       </div>
       <input
         type="checkbox"
         readOnly
         checked={allProps.checked}
-        {...css.checkbox(allProps)}
+        {...styles.checkbox(allProps)}
       />
-      <label {...css.label(allProps)}>{allProps.children}</label>
+      <label {...styles.label(allProps)}>{allProps.children}</label>
     </div>
   )
 }
 
 Switch.propTypes = {
   checked: PropTypes.bool,
-  color: PropTypes.oneOf(Object.keys(colors)),
+  color: PropTypes.oneOf(Object.keys(vars.colors)),
   disabled: PropTypes.bool,
-  labelAlign: PropTypes.oneOf(Object.keys(labelAligns)),
+  labelAlign: PropTypes.oneOf(Object.keys(vars.labelAligns)),
   onClick: PropTypes.func,
-  size: PropTypes.oneOf(Object.keys(sizes))
+  size: PropTypes.oneOf(Object.keys(vars.sizes))
 }
 Switch.defaultProps = {
   checked: false,
-  color: colors.orange,
+  color: vars.colors.orange,
   disabled: false,
-  labelAlign: labelAligns.right,
-  size: sizes.large
+  labelAlign: vars.labelAligns.right,
+  size: vars.sizes.large
 }
 Switch.contextTypes = {
   themeName: PropTypes.string
 }
 
-Switch.colors = colors
-Switch.sizes = sizes
-Switch.labelAligns = labelAligns
+Switch.colors = vars.colors
+Switch.sizes = vars.sizes
+Switch.labelAligns = vars.labelAligns
+
+export const colors = vars.colors
+export const sizes = vars.sizes
+export const labelAligns = vars.labelAligns
 
 export default Switch

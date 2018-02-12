@@ -48,9 +48,14 @@ Object.keys(Switch.colors).forEach(color =>
 
 const clickStory = storiesOf('click', module)
   .addDecorator(themeDecorator(addons))
-  .add('toggles on click', _ => (
+  .add('large toggles', _ => (
     <ClickDemo>
       <Switch />
+    </ClickDemo>
+  ))
+  .add('small toggles', _ => (
+    <ClickDemo>
+      <Switch size={Switch.sizes.small} />
     </ClickDemo>
   ))
 
