@@ -1,28 +1,10 @@
-import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-export const appearances = {
-  accent: 'accent',
-  basic: 'basic',
-  bright: 'bright'
-}
-export const sizes = {
-  small: 'small',
-  medium: 'medium'
-}
-
-const hoverStyles = {
-  backgroundColor: core.colors.gray02,
-  color: core.colors.black,
-  cursor: 'pointer'
-}
-const accentStyles = {
-  color: core.colors.white,
-  backgroundColor: core.colors.blue
-}
+import css from '../css'
+import * as vars from '../vars'
 
 const TagContainer = props => {
   const tagName = props.href ? 'a' : 'div'
@@ -34,56 +16,18 @@ const TagContainer = props => {
       ...(props.onClick ? { role: 'button', tabIndex: 0 } : null),
       onClick: props.onClick,
       ...glamor.css({
-        display: 'inline-flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        textAlign: 'center',
-        borderRadius: '16px',
-        fontWeight: core.type.fontWeightMedium,
-        textDecoration: 'none',
-        border: 'none',
-        overflow: 'hidden',
-        transition: `background-color ${core.motion.speedXFast} linear, color ${
-          core.motion.speedXFast
-        } linear`,
+        ...css['.psds-tag'],
         ...(({ href, onClick }) =>
           href || onClick
             ? {
-                ':hover': hoverStyles,
-                ':focus': hoverStyles
+                ':hover': css['.psds-tag--clickable:hover'],
+                ':focus': css['.psds-tag--clickable:focus']
               }
             : null)(props),
-        ...(({ appearance }) =>
-          ({
-            [appearances.accent]: accentStyles,
-            [appearances.basic]: {
-              color: core.colors.bone,
-              backgroundColor: core.colors.gray03
-            },
-            [appearances.bright]: {
-              color: core.colors.gray06,
-              backgroundColor: core.colors.white,
-              border: `1px solid ${core.colors.gray02}`
-            }
-          }[appearance]))(props),
-        ...(({ size }) =>
-          ({
-            [sizes.small]: {
-              height: '24px',
-              padding: `0 ${core.layout.spacingSmall}`,
-              fontSize: core.type.fontSizeXSmall,
-              lineHeight: core.type.lineHeightStandard
-            },
-            [sizes.medium]: {
-              height: '32px',
-              padding: `0 ${core.layout.spacingMedium}`,
-              fontSize: core.type.fontSizeSmall,
-              lineHeight: core.type.lineHeightExtra
-            }
-          }[size]))(props),
-        ...(({ icon }) =>
-          icon ? { paddingRight: core.layout.spacingXXSmall } : null)(props),
-        ...(({ isPressed }) => (isPressed ? accentStyles : null))(props)
+        ...css[`.psds-tag--appearance-${props.appearance}`],
+        ...css[`.psds-tag--size-${props.size}`],
+        ...(props.icon ? css['.psds-tag--icon'] : null),
+        ...(props.isPressed ? css['.psds-tag--isPressed'] : null)
       })
     },
     props.children
@@ -91,16 +35,11 @@ const TagContainer = props => {
 }
 
 const Label = props => {
-  const css = glamor.css({
-    display: 'inline-block',
-    maxWidth: '160px',
-    whiteSpace: 'nowrap',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    ...(({ icon }) =>
-      icon ? { marginRight: core.layout.spacingXXSmall } : null)(props)
+  const styles = glamor.css({
+    ...css['.psds-tag__label'],
+    ...(props.icon ? css['.psds-tag__label--icon'] : null)
   })
-  return <span {...css}>{props.children}</span>
+  return <span {...styles}>{props.children}</span>
 }
 
 const renderIcon = props =>
@@ -110,7 +49,8 @@ const renderIcon = props =>
           evt.stopPropagation()
           if (props.icon.props.onClick) props.icon.props.onClick(evt)
         },
-        size: props.size === sizes.small ? iconSizes.small : iconSizes.medium
+        size:
+          props.size === vars.sizes.small ? iconSizes.small : iconSizes.medium
       })
     : null
 
@@ -130,22 +70,25 @@ const Tag = props => (
 
 Tag.displayName = 'Tag'
 
-Tag.appearances = appearances
-Tag.sizes = sizes
+Tag.appearances = vars.appearances
+Tag.sizes = vars.sizes
 
 Tag.propTypes = {
-  appearance: PropTypes.oneOf(Object.keys(appearances)),
+  appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
   children: PropTypes.node.isRequired,
   href: PropTypes.string,
   icon: PropTypes.element,
   isPressed: PropTypes.bool,
   onClick: PropTypes.func,
-  size: PropTypes.oneOf(Object.keys(sizes))
+  size: PropTypes.oneOf(Object.keys(vars.sizes))
 }
 Tag.defaultProps = {
-  appearance: appearances.basic,
+  appearance: vars.appearances.basic,
   isPressed: false,
-  size: sizes.medium
+  size: vars.sizes.medium
 }
+
+export const appearances = vars.appearances
+export const sizes = vars.sizes
 
 export default Tag
