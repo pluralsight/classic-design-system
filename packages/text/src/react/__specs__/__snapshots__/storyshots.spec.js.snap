@@ -4,8 +4,7 @@ exports[`Storyshots Heading className override 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -13,7 +12,7 @@ exports[`Storyshots Heading className override 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -23,7 +22,7 @@ exports[`Storyshots Heading className override 1`] = `
         "data-css-3sgfk1": "",
       }
     }
-    data-css-13v0ptp=""
+    data-css-10w3axr=""
     size="large"
   >
     orange
@@ -35,8 +34,7 @@ exports[`Storyshots Heading size: large 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -44,13 +42,13 @@ exports[`Storyshots Heading size: large 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
   <h1
     className={undefined}
-    data-css-13v0ptp=""
+    data-css-10w3axr=""
     size="large"
   >
     large
@@ -62,8 +60,7 @@ exports[`Storyshots Heading size: medium 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -71,7 +68,7 @@ exports[`Storyshots Heading size: medium 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -89,8 +86,7 @@ exports[`Storyshots Heading size: smallCaps 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -98,7 +94,7 @@ exports[`Storyshots Heading size: smallCaps 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -116,8 +112,7 @@ exports[`Storyshots Heading size: xLarge 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -125,7 +120,7 @@ exports[`Storyshots Heading size: xLarge 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -143,8 +138,7 @@ exports[`Storyshots Heading style override 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -152,13 +146,13 @@ exports[`Storyshots Heading style override 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
   <h2
     className={undefined}
-    data-css-13v0ptp=""
+    data-css-10w3axr=""
     size="large"
     style={
       Object {
@@ -171,180 +165,11 @@ exports[`Storyshots Heading style override 1`] = `
 </div>
 `;
 
-exports[`Storyshots Heading theme dark 1`] = `
-<div
-  style={
-    Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 0.25s ease-in-out",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "black",
-        "height": "100%",
-        "width": "100%",
-      }
-    }
-  >
-    <h2
-      className={undefined}
-      data-css-13v0ptp=""
-      size="large"
-    >
-      wow
-    </h2>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Heading theme light 1`] = `
-<div
-  style={
-    Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 0.25s ease-in-out",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "white",
-        "height": "100%",
-        "width": "100%",
-      }
-    }
-  >
-    <h2
-      className={undefined}
-      data-css-138wye6=""
-      size="large"
-    >
-      wow
-    </h2>
-  </div>
-</div>
-`;
-
-exports[`Storyshots List theme dark 1`] = `
-<div
-  style={
-    Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 0.25s ease-in-out",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "black",
-        "height": "100%",
-        "width": "100%",
-      }
-    }
-  >
-    <ul
-      className={
-        Object {
-          "data-css-npip9x": "",
-        }
-      }
-    >
-      <li>
-        one
-      </li>
-      <li>
-        two
-      </li>
-      <li>
-        three
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Storyshots List theme light 1`] = `
-<div
-  style={
-    Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 0.25s ease-in-out",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "white",
-        "height": "100%",
-        "width": "100%",
-      }
-    }
-  >
-    <ul
-      className={
-        Object {
-          "data-css-1apt1t1": "",
-        }
-      }
-    >
-      <li>
-        one
-      </li>
-      <li>
-        two
-      </li>
-      <li>
-        three
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
 exports[`Storyshots List type: bulleted 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -352,7 +177,7 @@ exports[`Storyshots List type: bulleted 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -386,8 +211,7 @@ exports[`Storyshots List type: default 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -395,7 +219,7 @@ exports[`Storyshots List type: default 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -429,8 +253,7 @@ exports[`Storyshots List type: numbered 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -438,7 +261,7 @@ exports[`Storyshots List type: numbered 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -472,8 +295,7 @@ exports[`Storyshots P className override 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -481,7 +303,7 @@ exports[`Storyshots P className override 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -502,8 +324,7 @@ exports[`Storyshots P style override 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -511,7 +332,7 @@ exports[`Storyshots P style override 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
@@ -528,82 +349,11 @@ exports[`Storyshots P style override 1`] = `
 </div>
 `;
 
-exports[`Storyshots P theme dark 1`] = `
-<div
-  style={
-    Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 0.25s ease-in-out",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "black",
-        "height": "100%",
-        "width": "100%",
-      }
-    }
-  >
-    <p
-      data-css-150fsm1=""
-    >
-      some text
-    </p>
-  </div>
-</div>
-`;
-
-exports[`Storyshots P theme light 1`] = `
-<div
-  style={
-    Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 0.25s ease-in-out",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "white",
-        "height": "100%",
-        "width": "100%",
-      }
-    }
-  >
-    <p
-      data-css-j1md1p=""
-    >
-      some text
-    </p>
-  </div>
-</div>
-`;
-
 exports[`Storyshots P vanilla 1`] = `
 <div
   style={
     Object {
-      "background": "transparent",
-      "backgroundPosition": "center",
+      "background": "#181818",
       "backgroundSize": "cover",
       "bottom": 0,
       "left": 0,
@@ -611,7 +361,7 @@ exports[`Storyshots P vanilla 1`] = `
       "position": "fixed",
       "right": 0,
       "top": 0,
-      "transition": "background 0.25s ease-in-out",
+      "transition": "background 300ms",
     }
   }
 >
