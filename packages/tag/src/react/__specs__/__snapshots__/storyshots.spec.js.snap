@@ -65,6 +65,8 @@ exports[`Storyshots actions button w/ icon button 1`] = `
       onClick={[Function]}
     >
       <svg
+        aria-label="close icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -108,6 +110,8 @@ exports[`Storyshots actions just icon button 1`] = `
       onClick={[Function]}
     >
       <svg
+        aria-label="close icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -271,6 +275,8 @@ exports[`Storyshots icon accent medium 1`] = `
       onClick={[Function]}
     >
       <svg
+        aria-label="close icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -314,6 +320,8 @@ exports[`Storyshots icon accent small 1`] = `
       onClick={[Function]}
     >
       <svg
+        aria-label="close icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -357,6 +365,8 @@ exports[`Storyshots icon basic medium 1`] = `
       onClick={[Function]}
     >
       <svg
+        aria-label="close icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -400,6 +410,8 @@ exports[`Storyshots icon basic small 1`] = `
       onClick={[Function]}
     >
       <svg
+        aria-label="close icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -443,6 +455,8 @@ exports[`Storyshots icon bright medium 1`] = `
       onClick={[Function]}
     >
       <svg
+        aria-label="close icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -486,6 +500,8 @@ exports[`Storyshots icon bright small 1`] = `
       onClick={[Function]}
     >
       <svg
+        aria-label="close icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -565,6 +581,8 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
       onClick={[Function]}
     >
       <svg
+        aria-label="close icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -669,6 +687,8 @@ exports[`Storyshots long with icon 1`] = `
       onClick={[Function]}
     >
       <svg
+        aria-label="check icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
