@@ -6,33 +6,15 @@ import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
 
 import ListItem from './list-item'
 
-const types = { default: 'default', bulleted: 'bulleted', numbered: 'numbered' }
-
-const styleType = ({ type }) =>
-  ({
-    bulleted: {
-      listStyle: 'inherit'
-    },
-    numbered: {
-      listStyle: 'inherit',
-      listStyleType: 'decimal'
-    }
-  }[type])
+import css from '../../css'
+import * as vars from '../../vars'
 
 const formatClassName = props =>
-  glamor.css(
-    {
-      listStyle: 'none',
-      marginLeft: 0,
-      color:
-        props.themeName === themeNames.light
-          ? core.colors.gray03
-          : core.colors.bone,
-      fontSize: core.type.fontSizeSmall,
-      lineHeight: core.type.lineHeightExtra
-    },
-    styleType(props)
-  )
+  glamor.css({
+    ...css[`.psds-text__list.psds-theme--${props.themeName}`],
+    ...css[`.psds-text__list`],
+    ...css[`.psds-text__list--type-${props.type}`]
+  })
 
 const getTagName = props => (props.type === 'numbered' ? 'ol' : 'ul')
 
@@ -52,16 +34,16 @@ const List = (props, context) =>
   )
 
 List.propTypes = {
-  type: PropTypes.oneOf(Object.keys(types))
+  type: PropTypes.oneOf(Object.keys(vars.listTypes))
 }
 List.defaultProps = {
-  type: types.default
+  type: vars.listTypes.default
 }
 List.contextTypes = {
   themeName: PropTypes.string
 }
 
-List.types = types
+List.types = vars.listTypes
 
 // TODO: how to do this with es6 exports?!
 module.exports = List

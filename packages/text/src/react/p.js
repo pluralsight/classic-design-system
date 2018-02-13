@@ -1,16 +1,14 @@
-import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
 
+import css from '../css'
+
 const style = ({ themeName }) =>
   glamor.css({
-    color:
-      themeName === themeNames.light ? core.colors.gray06 : core.colors.bone,
-    fontSize: core.type.fontSizeSmall,
-    margin: `${core.layout.spacingSmall} 0`,
-    lineHeight: core.type.lineHeightStandard
+    ...css[`.psds-text__p.psds-theme--${themeName}`],
+    ...css[`.psds-text__p`]
   })
 
 const P = (props, context) => (

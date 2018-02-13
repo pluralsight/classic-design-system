@@ -16,17 +16,25 @@ exports[`Storyshots Heading className override 1`] = `
     }
   }
 >
-  <h2
-    className={
+  <div
+    style={
       Object {
-        "data-css-3sgfk1": "",
+        "padding": "48px",
       }
     }
-    data-css-10w3axr=""
-    size="large"
   >
-    orange
-  </h2>
+    <h2
+      className={
+        Object {
+          "data-css-3sgfk1": "",
+        }
+      }
+      data-css-10w3axr=""
+      size="large"
+    >
+      orange
+    </h2>
+  </div>
 </div>
 `;
 
@@ -46,13 +54,21 @@ exports[`Storyshots Heading size: large 1`] = `
     }
   }
 >
-  <h1
-    className={undefined}
-    data-css-10w3axr=""
-    size="large"
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
   >
-    large
-  </h1>
+    <h1
+      className={undefined}
+      data-css-10w3axr=""
+      size="large"
+    >
+      large
+    </h1>
+  </div>
 </div>
 `;
 
@@ -72,13 +88,21 @@ exports[`Storyshots Heading size: medium 1`] = `
     }
   }
 >
-  <h1
-    className={undefined}
-    data-css-1fxxvvr=""
-    size="medium"
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
   >
-    medium
-  </h1>
+    <h1
+      className={undefined}
+      data-css-1fxxvvr=""
+      size="medium"
+    >
+      medium
+    </h1>
+  </div>
 </div>
 `;
 
@@ -98,13 +122,21 @@ exports[`Storyshots Heading size: smallCaps 1`] = `
     }
   }
 >
-  <h1
-    className={undefined}
-    data-css-1oooiac=""
-    size="smallCaps"
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
   >
-    smallCaps
-  </h1>
+    <h1
+      className={undefined}
+      data-css-1oooiac=""
+      size="smallCaps"
+    >
+      smallCaps
+    </h1>
+  </div>
 </div>
 `;
 
@@ -124,13 +156,21 @@ exports[`Storyshots Heading size: xLarge 1`] = `
     }
   }
 >
-  <h1
-    className={undefined}
-    data-css-qdaun0=""
-    size="xLarge"
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
   >
-    xLarge
-  </h1>
+    <h1
+      className={undefined}
+      data-css-qdaun0=""
+      size="xLarge"
+    >
+      xLarge
+    </h1>
+  </div>
 </div>
 `;
 
@@ -150,18 +190,26 @@ exports[`Storyshots Heading style override 1`] = `
     }
   }
 >
-  <h2
-    className={undefined}
-    data-css-10w3axr=""
-    size="large"
+  <div
     style={
       Object {
-        "color": "#e80a89",
+        "padding": "48px",
       }
     }
   >
-    pink
-  </h2>
+    <h2
+      className={undefined}
+      data-css-10w3axr=""
+      size="large"
+      style={
+        Object {
+          "color": "#e80a89",
+        }
+      }
+    >
+      pink
+    </h2>
+  </div>
 </div>
 `;
 
@@ -181,29 +229,37 @@ exports[`Storyshots List type: bulleted 1`] = `
     }
   }
 >
-  <ul
-    className={
+  <div
+    style={
       Object {
-        "data-css-15u3tan": "",
+        "padding": "48px",
       }
     }
   >
-    <li>
-      one
-    </li>
-    <li>
-      two
-    </li>
-    <li>
-      three
-    </li>
-    <li>
-      four
-    </li>
-    <li>
-      five
-    </li>
-  </ul>
+    <ul
+      className={
+        Object {
+          "data-css-12zx3gr": "",
+        }
+      }
+    >
+      <li>
+        one
+      </li>
+      <li>
+        two
+      </li>
+      <li>
+        three
+      </li>
+      <li>
+        four
+      </li>
+      <li>
+        five
+      </li>
+    </ul>
+  </div>
 </div>
 `;
 
@@ -223,29 +279,37 @@ exports[`Storyshots List type: default 1`] = `
     }
   }
 >
-  <ul
-    className={
+  <div
+    style={
       Object {
-        "data-css-npip9x": "",
+        "padding": "48px",
       }
     }
   >
-    <li>
-      one
-    </li>
-    <li>
-      two
-    </li>
-    <li>
-      three
-    </li>
-    <li>
-      four
-    </li>
-    <li>
-      five
-    </li>
-  </ul>
+    <ul
+      className={
+        Object {
+          "data-css-1o7kfj5": "",
+        }
+      }
+    >
+      <li>
+        one
+      </li>
+      <li>
+        two
+      </li>
+      <li>
+        three
+      </li>
+      <li>
+        four
+      </li>
+      <li>
+        five
+      </li>
+    </ul>
+  </div>
 </div>
 `;
 
@@ -265,29 +329,37 @@ exports[`Storyshots List type: numbered 1`] = `
     }
   }
 >
-  <ol
-    className={
+  <div
+    style={
       Object {
-        "data-css-1lj4q5g": "",
+        "padding": "48px",
       }
     }
   >
-    <li>
-      one
-    </li>
-    <li>
-      two
-    </li>
-    <li>
-      three
-    </li>
-    <li>
-      four
-    </li>
-    <li>
-      five
-    </li>
-  </ol>
+    <ol
+      className={
+        Object {
+          "data-css-1lkx3qm": "",
+        }
+      }
+    >
+      <li>
+        one
+      </li>
+      <li>
+        two
+      </li>
+      <li>
+        three
+      </li>
+      <li>
+        four
+      </li>
+      <li>
+        five
+      </li>
+    </ol>
+  </div>
 </div>
 `;
 
@@ -307,16 +379,24 @@ exports[`Storyshots P className override 1`] = `
     }
   }
 >
-  <p
-    className={
+  <div
+    style={
       Object {
-        "data-css-3sgfk1": "",
+        "padding": "48px",
       }
     }
-    data-css-150fsm1=""
   >
-    orange
-  </p>
+    <p
+      className={
+        Object {
+          "data-css-3sgfk1": "",
+        }
+      }
+      data-css-150fsm1=""
+    >
+      orange
+    </p>
+  </div>
 </div>
 `;
 
@@ -336,16 +416,24 @@ exports[`Storyshots P style override 1`] = `
     }
   }
 >
-  <p
-    data-css-150fsm1=""
+  <div
     style={
       Object {
-        "color": "#e80a89",
+        "padding": "48px",
       }
     }
   >
-    pink
-  </p>
+    <p
+      data-css-150fsm1=""
+      style={
+        Object {
+          "color": "#e80a89",
+        }
+      }
+    >
+      pink
+    </p>
+  </div>
 </div>
 `;
 
@@ -365,10 +453,18 @@ exports[`Storyshots P vanilla 1`] = `
     }
   }
 >
-  <p
-    data-css-150fsm1=""
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
   >
-    lorem ipsum
-  </p>
+    <p
+      data-css-150fsm1=""
+    >
+      lorem ipsum
+    </p>
+  </div>
 </div>
 `;

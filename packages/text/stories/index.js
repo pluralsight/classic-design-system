@@ -10,9 +10,13 @@ import Text from '../react'
 const style = { color: core.colors.pink }
 const className = glamor.css({ color: `${core.colors.orange} !important` })
 
-const heading = storiesOf('Heading', module).addDecorator(
-  themeDecorator(addons)
+const PaddingDecorator = storyFn => (
+  <div style={{ padding: core.layout.spacingXLarge }}>{storyFn()}</div>
 )
+
+const heading = storiesOf('Heading', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
 
 Object.keys(Text.Heading.sizes).forEach(size =>
   heading.add(`size: ${size}`, _ => (
@@ -34,7 +38,9 @@ heading.add('className override', _ => (
   </Text.Heading>
 ))
 
-const p = storiesOf('P', module).addDecorator(themeDecorator(addons))
+const p = storiesOf('P', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
 
 p.add('vanilla', _ => <Text.P>lorem ipsum</Text.P>)
 
@@ -42,7 +48,9 @@ p.add('style override', _ => <Text.P style={style}>pink</Text.P>)
 
 p.add('className override', _ => <Text.P className={className}>orange</Text.P>)
 
-const list = storiesOf('List', module).addDecorator(themeDecorator(addons))
+const list = storiesOf('List', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
 
 Object.keys(Text.List.types).forEach(typeProp =>
   list.add(`type: ${typeProp}`, _ => (
