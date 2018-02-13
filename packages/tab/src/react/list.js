@@ -4,27 +4,13 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
 
-const List = glamorous.div(
-  {
-    display: 'flex',
-    width: '100%',
-    height: '64px'
-  },
-  ({ themeName }) => ({
-    borderBottom: `1px solid ${
-      themeName === themeNames.light ? core.colors.gray02 : core.colors.gray04
-    }`,
-    ':focus': {
-      outline: 'none',
-      borderBottomWidth: '4px'
-    },
-    // note: coupling to ListItem > TextWidth markup to keep pure css solution
-    ':focus div': {
-      height: 'calc(100% + 4px)',
-      marginBottom: '-4px'
-    }
-  })
-)
+import css from '../css'
+
+const List = glamorous.div(css['.psds-tab__list'], ({ themeName }) => ({
+  ...css[`.psds-tab__list.psds-theme--${themeName}`],
+  ':focus': css['.psds-tab__list:focus'],
+  ':focus div': css['.psds-tab__list:focus .psds-tab__list-item__text']
+}))
 
 const findActiveIndex = els =>
   React.Children.toArray(els).findIndex(el => el.props.active)

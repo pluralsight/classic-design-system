@@ -8,100 +8,83 @@ import {
   names as themeNames
 } from '@pluralsight/ps-design-system-theme/react'
 
-const getTextWidthActiveStyles = ({ themeName }) => ({
-  fontWeight: core.type.fontWeightMedium,
-  color: {
-    [themeNames.dark]: core.colors.white,
-    [themeNames.light]: core.colors.gray06
-  }[themeName]
-})
+import css from '../css'
 
-const getTextWidthHoverStyles = ({ themeName }) =>
-  ({
-    [themeNames.dark]: {
-      color: core.colors.white
-    },
-    [themeNames.light]: {
-      color: core.colors.gray06
-    }
-  }[themeName])
+const TextWidth = glamorous.div(css['.psds-tab__list-item__text'])
 
-const getBarHoverStyles = _ => ({
-  backgroundColor: core.colors.gray02,
-  height: core.layout.spacingXXSmall,
-  opacity: 1
-})
-
-const getBarActiveStyles = ({ active }) => ({
-  backgroundColor: core.colors.orange,
-  ...(active ? { opacity: 1, height: core.layout.spacingXXSmall } : {})
-})
-
-const TextWidth = glamorous.div({
-  position: 'relative',
-  display: 'flex',
-  alignItems: 'center',
-  height: 'calc(100% + 1px)',
-  marginBottom: '-1px',
-  fontWeight: core.type.fontWeightBook,
-  padding: `0 0 ${core.layout.spacingXXSmall} 0`,
-  transition: `color ${core.motion.speedXFast} linear`
-})
-
-const Bar = glamorous.span({
-  position: 'absolute',
-  left: 0,
-  right: 0,
-  bottom: 0,
-  width: '100%',
-  display: 'block',
-  height: 0,
-  opacity: 0,
-  transition: `height ${core.motion.speedNormal} ease-in-out, opacity ${
-    core.motion.speedNormal
-  } ease-in-out`
-})
+const Bar = glamorous.span(css['.psds-tab__list-item__bar'])
 
 const ListItem = glamorous.button(
   {
-    height: '100%',
-    background: 'none',
-    border: 0,
-    cursor: 'pointer',
-    padding: `0 calc(${core.layout.spacingXLarge} / 2)`,
-    ':focus': {
-      outline: 'none'
-    },
-    ':first-child': {
-      paddingLeft: 0
-    }
+    ...css['.psds-tab__list-item'],
+    ':focus': css['.psds-tab__list-item:focus'],
+    ':first-child': css['.psds-tab__list-item:first-child']
   },
   props => ({
     // TextWidth
-    ':hover div': getTextWidthHoverStyles(props),
-    ':focus div': getTextWidthHoverStyles(props),
-    ':active div': getTextWidthActiveStyles(props),
+    ':hover div':
+      css[
+        `.psds-tab__list-item.psds-theme-${
+          props.themeName
+        }:hover .psds-tab__list-item__text`
+      ],
+    ':focus div':
+      css[
+        `.psds-tab__list-item.psds-theme-${
+          props.themeName
+        }:focus .psds-tab__list-item__text`
+      ],
+    ':active div':
+      css[
+        `.psds-tab__list-item.psds-theme-${
+          props.themeName
+        }:active .psds-tab__list-item__text`
+      ],
     // Bar
-    ':hover span': getBarHoverStyles(props),
-    ':focus span': getBarHoverStyles(props),
-    ':active span': getBarActiveStyles(props)
+    ':hover span': css[`.psds-tab__list-item:hover .psds-tab__list-item__bar`],
+    ':focus span': css[`.psds-tab__list-item:focus .psds-tab__list-item__bar`],
+    ':active span': props.active
+      ? css[
+          `.psds-tab__list-item.psds-tab__list-item--active:active .psds-tab__list-item__bar`
+        ]
+      : css[`.psds-tab__list-item:active .psds-tab__list-item__bar`]
   }),
-  ({ themeName }) =>
-    ({
-      [themeNames.dark]: { color: core.colors.gray02 },
-      [themeNames.light]: { color: core.colors.gray03 }
-    }[themeName]),
+  ({ themeName }) => css[`.psds-tab__list-item.psds-theme--${themeName}`],
   props =>
     props.active
       ? {
           // TextWidth
-          ':hover div': getTextWidthActiveStyles(props),
-          ':focus div': getTextWidthActiveStyles(props),
-          '& div': getTextWidthActiveStyles(props),
+          ':hover div':
+            css[
+              `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
+                props.themeName
+              }:hover .psds-tab__list-item__text`
+            ],
+          ':focus div':
+            css[
+              `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
+                props.themeName
+              }:focus .psds-tab__list-item__text`
+            ],
+          '& div':
+            css[
+              `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
+                props.themeName
+              } .psds-tab__list-item__text`
+            ],
           // Bar
-          ':hover span': getBarActiveStyles(props),
-          ':focus span': getBarActiveStyles(props),
-          '& span': getBarActiveStyles(props)
+          ':hover span':
+            css[
+              `.psds-tab__list-item.psds-tab__list-item--active:hover .psds-tab__list-item__bar`
+            ],
+          ':focus span':
+            css[
+              `.psds-tab__list-item.psds-tab__list-item--active:focus .psds-tab__list-item__bar`
+            ],
+          '& span':
+            css[
+              `.psds-tab__list-item.psds-tab__list-item--active .psds-tab__list-item__bar`
+            ]
         }
       : null
 )

@@ -4,8 +4,10 @@
   "description": "Design system component for tab list ui",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist --ignore spec.js --copy-files",
-    "build:watch": "npm run build -- --watch",
+    "build": "run-s build:js build:css",
+    "build:css": "build-css",
+    "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -29,6 +31,7 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
+    "@pluralsight/ps-design-system-build": "^1.8.0",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.23",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",
@@ -38,6 +41,7 @@
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "jest": "^20.0.4"
+    "jest": "^20.0.4",
+    "npm-run-all": "^4.1.2"
   }
 }
