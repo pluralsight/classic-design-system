@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@1.2.3...@pluralsight/ps-design-system-tag@1.3.0) (2018-02-13)
+
+
+### Features
+
+* **tag:** extract stylesheet ([fe127b7](https://github.com/pluralsight/design-system/commit/fe127b7))
+
+
+
+
 <a name="1.2.3"></a>
 ## [1.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@1.2.2...@pluralsight/ps-design-system-tag@1.2.3) (2018-02-12)
 

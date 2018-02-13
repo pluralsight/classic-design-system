@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.5.0"></a>
+# [10.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.4.24...@pluralsight/ps-design-system-text@10.5.0) (2018-02-13)
+
+
+### Features
+
+* **text:** extract stylesheet ([0990427](https://github.com/pluralsight/design-system/commit/0990427))
+
+
+
+
 <a name="10.4.24"></a>
 ## [10.4.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.4.23...@pluralsight/ps-design-system-text@10.4.24) (2018-02-12)
 
