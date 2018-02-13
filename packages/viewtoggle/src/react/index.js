@@ -1,42 +1,15 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as glamor from 'glamor'
 import glamorous from 'glamorous'
 import PropTypes from 'prop-types'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const maxOptionsCount = 3
-
-const css = {
-  outerHeight: '24px',
-  innerHeight: '20px'
-}
-
-const optionStyles = {
-  display: 'inline-block',
-  maxWidth: '160px',
-  height: css.innerHeight,
-  overflow: 'hidden',
-  textOverflow: 'ellipsis',
-  whiteSpace: 'nowrap',
-  lineHeight: `calc(${css.innerHeight} - 1px)`,
-  fontSize: '10px',
-  fontWeight: core.type.fontWeightMedium,
-  padding: `0 ${core.layout.spacingSmall}`,
-  border: 'none',
-  borderRadius: `calc(${css.innerHeight} / 2)`,
-  cursor: 'pointer',
-  transition: `all ${core.motion.speedNormal}`
-}
+import css from '../css'
+import * as vars from '../vars'
 
 const OptionButton = glamorous.button(
-  {
-    ...optionStyles,
-    position: 'relative',
-    background: 'none'
-  },
-  ({ active }) => ({
-    color: active ? core.colors.gray05 : core.colors.bone
-  })
+  css['.psds-viewtoggle__option'],
+  ({ active }) => (active ? css['.psds-viewtoggle__option--active'] : null)
 )
 
 class Option extends React.Component {
@@ -75,24 +48,9 @@ Option.defaultProps = {
   active: false
 }
 
-const List = glamorous.div({
-  position: 'relative',
-  display: 'inline-flex',
-  margin: 0,
-  padding: '2px 3px',
-  height: css.outerHeight,
-  background: core.colors.gray03,
-  borderRadius: `calc(${css.outerHeight} / 2)`,
-  overflow: 'hidden'
-})
+const List = glamorous.div(css['.psds-viewtoggle'])
 
-const ActivePillBg = glamorous.div({
-  ...optionStyles,
-  position: 'absolute',
-  top: '2px',
-  background: core.colors.white,
-  boxShadow: '1px 1px 2px rgba(0, 0, 0, 0.6)'
-})
+const ActivePillBg = glamorous.div(css['.psds-viewtoggle__option-bg'])
 
 const findActiveIndex = els =>
   React.Children.toArray(els).findIndex(el => el.props.active)
@@ -121,7 +79,7 @@ class ViewToggle extends React.Component {
   }
   renderChildren(children, props) {
     return React.Children.map(children, (child, i) => {
-      if (i < maxOptionsCount)
+      if (i < vars.maxOptionsCount)
         return React.cloneElement(child, {
           _i: i,
           _innerRef: el => (this.childrenEls[i] = el),
@@ -140,7 +98,7 @@ class ViewToggle extends React.Component {
       : {}
     return (
       <ActivePillBg style={style}>
-        <span style={{ opacity: 0 }}>
+        <span {...glamor.css(css['.psds-viewtoggle__option-bg__spacer'])}>
           {React.Children.toArray(this.props.children)[i].props.children}
         </span>
       </ActivePillBg>
