@@ -1215,16 +1215,18 @@ exports[`Storyshots in drawer medium 1`] = `
     }
   }
 >
-  <div>
+  <div
+    className="css-1fq8nx6"
+  >
     <div
-      className="css-58omaf"
+      className="css-y8t6tw"
       onClick={[Function]}
     >
       <div
-        className="css-1lzobj4"
+        className="css-v0gxx3"
       >
         <div
-          className="css-1g6ond4"
+          className="css-k4qf09"
         >
           <div
             className="css-13y9csq"
@@ -1283,10 +1285,11 @@ exports[`Storyshots in drawer medium 1`] = `
         className="css-qs2rg7"
       >
         <button
-          className="css-wepra9"
+          className="css-xipskh"
           onClick={[Function]}
         >
           <div
+            aria-label="Expand"
             className="css-1byjzqg"
           >
             <div
@@ -1311,7 +1314,7 @@ exports[`Storyshots in drawer medium 1`] = `
       className="css-1i2htk9"
     >
       <div
-        className="css-8nylan"
+        className="css-1j3g0qd"
       >
         <div>
           some goodies in the drawer
@@ -1338,16 +1341,18 @@ exports[`Storyshots in drawer small 1`] = `
     }
   }
 >
-  <div>
+  <div
+    className="css-1fq8nx6"
+  >
     <div
-      className="css-58omaf"
+      className="css-y8t6tw"
       onClick={[Function]}
     >
       <div
-        className="css-1lzobj4"
+        className="css-v0gxx3"
       >
         <div
-          className="css-1g6ond4"
+          className="css-k4qf09"
         >
           <div
             className="css-13y9csq"
@@ -1399,10 +1404,11 @@ exports[`Storyshots in drawer small 1`] = `
         className="css-qs2rg7"
       >
         <button
-          className="css-wepra9"
+          className="css-xipskh"
           onClick={[Function]}
         >
           <div
+            aria-label="Expand"
             className="css-1byjzqg"
           >
             <div
@@ -1427,7 +1433,7 @@ exports[`Storyshots in drawer small 1`] = `
       className="css-1i2htk9"
     >
       <div
-        className="css-8nylan"
+        className="css-1j3g0qd"
       >
         <div>
           some goodies in the drawer
