@@ -4,45 +4,21 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { transparentize } from 'polished'
 
+import css from '../css'
+import * as vars from '../vars'
 // import validateComponentType from './validate-component-type'
 
-export const sizes = { small: 'small', medium: 'medium' }
-
-const overlaysWidth = '96px'
-const overlaysMarginRight = core.layout.spacingLarge
-
-const xSmallIconWidth = '24px'
-const actionBarActionWidth = xSmallIconWidth
-const actionBarActionMarginLeft = core.layout.spacingMedium
-
 const Row = glamorous.div({
-  display: 'flex',
-  alignItems: 'center',
-  width: '100%',
-  padding: `${core.layout.spacingSmall} 0`,
-  textAlign: 'left',
-  borderTop: `1px solid ${core.colors.gray04}`,
-  ':hover div, :active div': {
-    opacity: 1
-  },
-  ':first-of-type': {
-    borderTop: 'none'
-  }
+  ...css['.psds-row'],
+  ':hover div': css['.psds-row:hover div'],
+  ':active div': css['.psds-row:active div'],
+  ':first-of-type': css['.psds-row:first-of-type']
 })
 
-const Overlays = glamorous.div({
-  position: 'relative',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  marginRight: overlaysMarginRight,
-  height: '72px',
-  width: overlaysWidth,
-  overflow: 'hidden'
-})
+const Overlays = glamorous.div(css['.psds-row__overlays'])
 
 const renderOverlays = props =>
-  props.image && props.size !== sizes.small ? (
+  props.image && props.size !== vars.sizes.small ? (
     <Overlays size={props.size}>
       {renderImage(props)}
       <FullOverlayFocusManager {...props} />
@@ -50,13 +26,7 @@ const renderOverlays = props =>
     </Overlays>
   ) : null
 
-const ImageDiv = glamorous.div({
-  width: '100%',
-  height: '100%',
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat'
-})
+const ImageDiv = glamorous.div(css['.psds-row__image'])
 
 const Image = props => (
   <ImageDiv {...props} css={{ backgroundImage: `url(${props.src})` }} />
@@ -68,9 +38,7 @@ Image.propTypes = {
 
 const renderImage = props => (props.image ? props.image : null)
 
-const FullOverlayLinkSpan = glamorous.span({
-  pointerEvents: 'all'
-})
+const FullOverlayLinkSpan = glamorous.span(css['.psds-row__full-overlay-link'])
 const FullOverlayLink = props => (
   <FullOverlayLinkSpan
     {...props}
@@ -79,25 +47,14 @@ const FullOverlayLink = props => (
   />
 )
 
-const styleFullOverlayFullOverlayVisible = ({ fullOverlayVisible }) =>
-  fullOverlayVisible ? { opacity: 1 } : {}
-
 const FullOverlay = glamorous.div(
-  {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    height: '100%',
-    width: '100%',
-    background: transparentize(0.5, core.colors.black),
-    transition: `opacity ${core.motion.speedNormal}`,
-    pointerEvents: 'none'
-  },
-  ({ isFocused }) => (isFocused ? { opacity: 1 } : { opacity: 0 }),
-  styleFullOverlayFullOverlayVisible
+  css['.psds-row__full-overlay'],
+  ({ isFocused }) =>
+    isFocused ? css['.psds-row__full-overlay--isFocused'] : null,
+  ({ fullOverlayVisible }) =>
+    fullOverlayVisible
+      ? css['.psds-row__full-overlay--fullOverlayVisible']
+      : null
 )
 
 class FullOverlayFocusManager extends React.Component {
@@ -128,25 +85,12 @@ class FullOverlayFocusManager extends React.Component {
   }
 }
 
-const styleActionBarFullOverlay = ({ fullOverlay }) =>
-  fullOverlay ? { background: 'none' } : {}
-
-const styleActionBarActionBarVisible = ({ actionBarVisible }) =>
-  actionBarVisible ? { opacity: 1 } : {}
-
 const ActionBar = glamorous.div(
-  {
-    display: 'flex',
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-    lineHeight: 0,
-    height: '64px',
-    transition: `opacity ${core.motion.speedNormal}`,
-    pointerEvents: 'none',
-    opacity: 0
-  },
-  styleActionBarFullOverlay,
-  styleActionBarActionBarVisible
+  css['.psds-row__action-bar'],
+  ({ fullOverlay }) =>
+    fullOverlay ? css['.psds-row__action-bar--fullOverlay'] : null,
+  ({ actionBarVisible }) =>
+    actionBarVisible ? css['.psds-row__action-bar--actionBarVisible'] : null
 )
 
 const rmIcon = props => {
@@ -160,29 +104,14 @@ const ActionBarAction = props => (
 
 const ActionButton = glamorous.button(
   {
-    pointerEvents: 'all',
-    fontSize: core.type.fontSizeXSmall,
-    marginLeft: actionBarActionMarginLeft,
-    padding: 0,
-    lineHeight: 0,
-    cursor: 'pointer',
-    border: 'none',
-    color: core.colors.gray02,
-    background: 'none',
-    transition: `all ${core.motion.speedNormal}`,
-    ':hover, :active': {
-      color: core.colors.white
-    }
+    ...css['.psds-row__action-bar__button'],
+    ':hover, :active': css['.psds-row__action-bar__button:hover']
   },
   ({ disabled }) =>
     disabled
       ? {
-          color: core.colors.gray02,
-          background: core.colors.gray03,
-          ':hover': {
-            color: core.colors.gray02,
-            background: core.colors.gray03
-          }
+          ...css['.psds-row__action-bar__button--disabled'],
+          ':hover': css['.psds-row__action-bar__button--disabled:hover']
         }
       : null
 )
@@ -202,16 +131,7 @@ const renderActionBar = props =>
     </ActionBar>
   ) : null
 
-const Progress = glamorous.div({
-  position: 'absolute',
-  left: 0,
-  bottom: 0,
-  width: '100%',
-  height: 5,
-  borderTop: `1px solid ${transparentize(0.8, core.colors.black)}`,
-  backgroundColor: transparentize(0.6, core.colors.gray01),
-  overflow: 'hidden'
-})
+const Progress = glamorous.div(css['.psds-row__progress'])
 
 const percent = num => {
   try {
@@ -221,21 +141,14 @@ const percent = num => {
   }
 }
 
-const styleProgressBarProgress = ({ progress }) => ({
-  backgroundColor:
-    percent(progress) == '100%' ? core.colors.green : core.colors.white,
-  width: percent(progress)
-})
-
 const ProgressBar = glamorous.div(
-  {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '0%',
-    height: '5px'
-  },
-  styleProgressBarProgress
+  css['.psds-row__progress__bar'],
+  ({ progress }) => ({
+    ...(percent(progress) == '100%'
+      ? css['.psds-row__progress__bar--complete']
+      : null),
+    width: percent(progress)
+  })
 )
 
 const renderProgress = props =>
@@ -249,136 +162,56 @@ const renderProgress = props =>
   ) : null
 
 const formatImageWidth = ({ image, size }) =>
-  image && size !== sizes.small
-    ? `(${overlaysWidth} + ${overlaysMarginRight})`
+  image && size !== vars.sizes.small
+    ? `(${vars.style.overlaysWidth} + ${vars.style.overlaysMarginRight})`
     : `0px`
 
 const formatActionBarWidth = ({ actionBar }) =>
   Array.isArray(actionBar) && actionBar.length > 1
-    ? `(${actionBar.length} * ${actionBarActionWidth} + ${
+    ? `(${actionBar.length} * ${vars.style.actionBarActionWidth} + ${
         actionBar.length
-      } * ${actionBarActionMarginLeft})`
+      } * ${vars.style.actionBarActionMarginLeft})`
     : '0px'
 
-const Words = glamorous.div(
-  {
-    display: 'flex',
-    flex: 1,
-    flexDirection: 'column',
-    alignSelf: 'center',
-    minWidth: 0
-  },
-  props => ({
-    maxWidth: `calc(100% - ${formatImageWidth(props)} - ${formatActionBarWidth(
-      props
-    )})`
-  })
-)
-
-const styleTitleSize = ({ size }) =>
-  ({
-    [sizes.small]: {
-      // marginTop: core.layout.spacingXXSmall,
-      fontSize: core.type.fontSizeSmall,
-      lineHeight: core.type.lineHeightTight
-    },
-    [sizes.medium]: {
-      // marginTop: core.layout.spacingSmall,
-      fontSize: core.type.fontSizeMedium,
-      lineHeight: core.type.lineHeightStandard
-    }
-  }[size])
+const Words = glamorous.div(css['.psds-row__words'], props => ({
+  maxWidth: `calc(100% - ${formatImageWidth(props)} - ${formatActionBarWidth(
+    props
+  )})`
+}))
 
 const Title = glamorous.div(
-  {
-    display: 'block',
-    fontWeight: core.type.fontWeightMedium,
-    color: core.colors.white,
-    textAlign: 'left'
-  },
-  styleTitleSize
+  css['.psds-row__title'],
+  ({ size }) => css[`.psds-row__title--size-${size}`]
 )
 
 const ImageLink = glamorous.span({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  width: '100%',
-  height: '100%',
-  pointerEvents: 'all',
-  '& a': {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100%',
-    width: '100%',
-    textDecoration: 'none',
-    transition: `all ${core.motion.speedNormal}`
-  }
+  ...css['.psds-row__image-link'],
+  '& a': css['.psds-row__image-link a']
 })
 ImageLink.displayName = 'Row.ImageLink'
 
 const TextLink = glamorous.span({
-  pointerEvents: 'all',
-  '& a': {
-    color: 'inherit',
-    cursor: 'pointer',
-    textDecoration: 'none'
-  },
-  '& a:hover, & a:active': {
-    color: core.colors.white,
-    textDecoration: 'underline',
-    transition: `all ${core.motion.speedNormal}`
-  }
+  ...css['.psds-row__text-link'],
+  '& a': css['.psds-row__text-link a'],
+  '& a:hover': css['.psds-row__text-link a:hover'],
+  '& a:active': css['.psds-row__text-link a:active']
 })
 TextLink.displayName = 'Row.TextLink'
 
 const Text = glamorous.span()
 Text.displayName = 'Row.Text'
 
-const styleMetadataSize = ({ size }) =>
-  ({
-    [sizes.small]: {
-      fontSize: core.type.fontSizeXSmall,
-      paddingTop: 0
-    },
-    [sizes.medium]: {
-      fontSize: core.type.fontSizeXSmall,
-      paddingTop: core.layout.spacingXXSmall
-    }
-  }[size])
-
 const Metadata = glamorous.div(
-  {
-    display: 'flex',
-    alignItems: 'center',
-    fontWeight: core.type.fontWeightBook,
-    lineHeight: core.type.lineHeightTight,
-    color: core.colors.gray02,
-    maxWidth: '100%',
-    paddingTop: core.layout.spacingXXSmall
-  },
-  styleMetadataSize
+  css['.psds-row__metadata'],
+  ({ size }) => css[`.psds-row__metadata--size-${size}`]
 )
 
 const MetadataDatum = glamorous.span({
-  whiteSpace: 'nowrap',
-  overflow: 'hidden',
-  textOverflow: 'ellipsis',
-  flexShrink: 2,
-  maxWidth: '25%',
-  ':nth-of-type(1)': {
-    flexShrink: 1,
-    maxWidth: '50%'
-  }
+  ...css['.psds-row__metadata__datum'],
+  ':nth-of-type(1)': css['.psds-row__metadata__datum:nth-of-type(1)']
 })
 
-// const MetadataLink = glamorous.span({})
-
-const MetadataDot = glamorous.span({
-  display: 'inline-block',
-  margin: `0 ${core.layout.spacingXSmall}`
-})
+const MetadataDot = glamorous.span(css['.psds-row__metadata__dot'])
 
 const renderMetaData = (props, metadata) =>
   metadata ? (
@@ -423,7 +256,7 @@ const RowComponent = props => (
   </Row>
 )
 
-RowComponent.sizes = sizes
+RowComponent.sizes = vars.sizes
 RowComponent.Text = Text
 RowComponent.TextLink = TextLink
 RowComponent.Action = ActionBarAction
@@ -442,7 +275,7 @@ RowComponent.propTypes = {
   // metadata2: PropTypes.arrayOf(validateComponentType([Text, TextLink])),
   // progress: PropTypes.number,
   // title: PropTypes.oneOfType([Text, RowComponent.TextLink]).isRequired,
-  // size: PropTypes.oneOf(Object.keys(sizes))
+  // size: PropTypes.oneOf(Object.keys(vars.sizes))
 
   actionBar: PropTypes.arrayOf(PropTypes.element),
   actionBarVisible: PropTypes.bool,
@@ -456,13 +289,15 @@ RowComponent.propTypes = {
     PropTypes.oneOfType([PropTypes.string, PropTypes.element])
   ),
   progress: PropTypes.number,
-  size: PropTypes.oneOf(Object.keys(sizes)),
+  size: PropTypes.oneOf(Object.keys(vars.sizes)),
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired
 }
 RowComponent.defaultProps = {
   actionBarVisible: false,
   fullOverlayVisible: false,
-  size: sizes.medium
+  size: vars.sizes.medium
 }
+
+export const sizes = vars.sizes
 
 export default RowComponent

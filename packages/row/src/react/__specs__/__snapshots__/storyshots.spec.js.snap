@@ -17,7 +17,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -78,7 +78,7 @@ exports[`Storyshots actionBar long title 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-1tiyrld"
@@ -132,7 +132,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -193,7 +193,7 @@ exports[`Storyshots actionBar one action 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-1tiyrld"
@@ -247,7 +247,7 @@ exports[`Storyshots combo everything 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -299,7 +299,7 @@ exports[`Storyshots combo everything 1`] = `
         className="css-1e23mlv"
       >
         <span
-          className="css-1ublh7e"
+          className="css-1kcq1x5"
         >
           <a
             href="http://google.com?query=title"
@@ -315,7 +315,7 @@ exports[`Storyshots combo everything 1`] = `
           className="css-1kcrbi9"
         >
           <span
-            className="css-1ublh7e"
+            className="css-1kcq1x5"
           >
             <a
               href="http://google.com/?query=jaketrent"
@@ -334,7 +334,7 @@ exports[`Storyshots combo everything 1`] = `
           className="css-1kcrbi9"
         >
           <span
-            className="css-1ublh7e"
+            className="css-1kcq1x5"
           >
             <a
               href="http://google.com/?query=jaketrent"
@@ -353,7 +353,7 @@ exports[`Storyshots combo everything 1`] = `
           className="css-1kcrbi9"
         >
           <span
-            className="css-1ublh7e"
+            className="css-1kcq1x5"
           >
             <a
               href="http://google.com/?query=jaketrent"
@@ -452,7 +452,7 @@ exports[`Storyshots fullOverlay element 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -502,7 +502,7 @@ exports[`Storyshots fullOverlay link 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -556,7 +556,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -623,7 +623,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -698,7 +698,7 @@ exports[`Storyshots image link 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -754,7 +754,7 @@ exports[`Storyshots image no image 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-1tiyrld"
@@ -795,7 +795,7 @@ exports[`Storyshots image no image with overlay 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-1tiyrld"
@@ -836,7 +836,7 @@ exports[`Storyshots image small image 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -884,7 +884,7 @@ exports[`Storyshots image tall image 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -932,7 +932,7 @@ exports[`Storyshots image wide image 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -980,7 +980,7 @@ exports[`Storyshots image with image 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -1028,7 +1028,7 @@ exports[`Storyshots image with image with overlay 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -1094,7 +1094,7 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
     }
   >
     <div
-      className="css-13y9csq"
+      className="css-oowi90"
     >
       <div
         className="css-js3ti3"
@@ -1145,7 +1145,7 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
       </div>
     </div>
     <div
-      className="css-13y9csq"
+      className="css-oowi90"
     >
       <div
         className="css-js3ti3"
@@ -1229,7 +1229,7 @@ exports[`Storyshots in drawer medium 1`] = `
           className="css-k4qf09"
         >
           <div
-            className="css-13y9csq"
+            className="css-oowi90"
           >
             <div
               className="css-js3ti3"
@@ -1355,7 +1355,7 @@ exports[`Storyshots in drawer small 1`] = `
           className="css-k4qf09"
         >
           <div
-            className="css-13y9csq"
+            className="css-oowi90"
           >
             <div
               className="css-1tiyrld"
@@ -1461,7 +1461,7 @@ exports[`Storyshots metadata link 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-1tiyrld"
@@ -1478,7 +1478,7 @@ exports[`Storyshots metadata link 1`] = `
           className="css-1kcrbi9"
         >
           <span
-            className="css-1ublh7e"
+            className="css-1kcq1x5"
           >
             <a
               href="http://google.com/?query=jaketrent"
@@ -1510,7 +1510,7 @@ exports[`Storyshots metadata long links 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-1tiyrld"
@@ -1527,7 +1527,7 @@ exports[`Storyshots metadata long links 1`] = `
           className="css-1kcrbi9"
         >
           <span
-            className="css-1ublh7e"
+            className="css-1kcq1x5"
           >
             <a
               href="http://google.com/?query=jaketrent"
@@ -1546,7 +1546,7 @@ exports[`Storyshots metadata long links 1`] = `
           className="css-1kcrbi9"
         >
           <span
-            className="css-1ublh7e"
+            className="css-1kcq1x5"
           >
             <a
               href="http://google.com/?query=jaketrent"
@@ -1565,7 +1565,7 @@ exports[`Storyshots metadata long links 1`] = `
           className="css-1kcrbi9"
         >
           <span
-            className="css-1ublh7e"
+            className="css-1kcq1x5"
           >
             <a
               href="http://google.com/?query=jaketrent"
@@ -1597,7 +1597,7 @@ exports[`Storyshots metadata long strings 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-1tiyrld"
@@ -1660,7 +1660,7 @@ exports[`Storyshots metadata long strings with image 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -1730,7 +1730,7 @@ exports[`Storyshots metadata string 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-1tiyrld"
@@ -1771,7 +1771,7 @@ exports[`Storyshots metadata super long first string 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -1841,7 +1841,7 @@ exports[`Storyshots metadata two lines 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-1tiyrld"
@@ -1913,7 +1913,7 @@ exports[`Storyshots progress 0 progress 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -1952,7 +1952,7 @@ exports[`Storyshots progress 66.6667 progress 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -1999,7 +1999,7 @@ exports[`Storyshots progress 100 progress 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -2046,7 +2046,7 @@ exports[`Storyshots progress no image 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-1tiyrld"
@@ -2078,7 +2078,7 @@ exports[`Storyshots size medium 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -2126,7 +2126,7 @@ exports[`Storyshots size small 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-1tiyrld"
@@ -2167,7 +2167,7 @@ exports[`Storyshots title link 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-1tiyrld"
@@ -2176,7 +2176,7 @@ exports[`Storyshots title link 1`] = `
         className="css-1e23mlv"
       >
         <span
-          className="css-1ublh7e"
+          className="css-1kcq1x5"
         >
           <a
             href="http://google.com"
@@ -2207,7 +2207,7 @@ exports[`Storyshots title medium long title 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-js3ti3"
@@ -2255,7 +2255,7 @@ exports[`Storyshots title small long title 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-1tiyrld"
@@ -2296,7 +2296,7 @@ exports[`Storyshots title string 1`] = `
   }
 >
   <div
-    className="css-13y9csq"
+    className="css-oowi90"
   >
     <div
       className="css-1tiyrld"
