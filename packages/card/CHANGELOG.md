@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.3.0"></a>
+# [8.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.2.12...@pluralsight/ps-design-system-card@8.3.0) (2018-02-14)
+
+
+### Bug Fixes
+
+* **card:** restore named export sizes ([9db1822](https://github.com/pluralsight/design-system/commit/9db1822))
+
+
+### Features
+
+* **card:** extract stylesheet ([7306d80](https://github.com/pluralsight/design-system/commit/7306d80))
+
+
+
+
 <a name="8.2.12"></a>
 ## [8.2.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.2.11...@pluralsight/ps-design-system-card@8.2.12) (2018-02-12)
 

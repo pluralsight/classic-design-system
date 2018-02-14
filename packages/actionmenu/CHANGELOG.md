@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@2.3.28...@pluralsight/ps-design-system-actionmenu@2.4.0) (2018-02-14)
+
+
+### Features
+
+* **actionmenu:** extract stylesheet ([67e993e](https://github.com/pluralsight/design-system/commit/67e993e))
+
+
+
+
 <a name="2.3.28"></a>
 ## [2.3.28](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@2.3.27...@pluralsight/ps-design-system-actionmenu@2.3.28) (2018-02-12)
 

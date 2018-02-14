@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.5.0"></a>
+# [2.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.4.21...@pluralsight/ps-design-system-row@2.5.0) (2018-02-14)
+
+
+### Features
+
+* **row:** extract stylesheet ([b2b4b6b](https://github.com/pluralsight/design-system/commit/b2b4b6b))
+
+
+
+
 <a name="2.4.21"></a>
 ## [2.4.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.4.20...@pluralsight/ps-design-system-row@2.4.21) (2018-02-14)
 
