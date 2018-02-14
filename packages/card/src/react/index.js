@@ -284,4 +284,6 @@ CardComponent.defaultProps = {
   size: vars.sizes.medium
 }
 
+export const sizes = vars.sizes
+
 export default CardComponent
