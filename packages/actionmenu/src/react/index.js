@@ -1,89 +1,50 @@
 import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
-import glamorous, { Div } from 'glamorous'
+import glamorous from 'glamorous'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
 import Arrow from './arrow'
-
-export const origins = {
-  topLeft: 'topLeft',
-  topRight: 'topRight',
-  bottomRight: 'bottomRight',
-  bottomLeft: 'bottomLeft'
-}
-
-const menuPaddingVert = core.layout.spacingXXSmall
-const nestedMenuHorzOverlap = 0 // 3
+import css from '../css'
+import * as vars from '../vars'
 
 const Item = glamorous.button(
-  {
-    display: 'flex',
-    width: '100%',
-    alignItems: 'center',
-    lineHeight: core.type.lineHeightExtra,
-    fontWeight: core.type.fontWeightMedium,
-    whiteSpace: 'nowrap',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    textAlign: 'left',
-    cursor: 'pointer',
-    border: 'none',
-    paddingTop: '0',
-    paddingBottom: '0',
-    transition: `background ${core.motion.speedXFast}`
-  },
-  ({ iconId }) =>
-    iconId
-      ? { paddingLeft: core.layout.spacingXSmall }
-      : { paddingLeft: core.layout.spacingMedium },
-  ({ nested }) =>
-    nested
-      ? { paddingRight: core.layout.spacingXSmall }
-      : { paddingRight: core.layout.spacingMedium },
-  ({ isActive }) =>
-    isActive
-      ? {
-          background: core.colors.bone,
-          outline: 'none'
-        }
-      : { background: 'none' }
+  css['.psds-actionmenu__item'],
+  ({ iconId }) => (iconId ? css['.psds-actionmenu__item--iconId'] : null),
+  ({ nested }) => (nested ? css['.psds-actionmenu__item--nested'] : null),
+  ({ isActive }) => (isActive ? css['.psds-actionmenu__item--isActive'] : null)
 )
 
 const IconComponent = props => (
-  <Div
-    display="inline-flex"
-    alignItems="center"
-    marginRight={core.layout.spacingXSmall}
-  >
+  <div {...glamor.css(css['.psds-actionmenu__item__icon'])}>
     <Icon id={props.iconId} size={Icon.sizes.medium} />
-  </Div>
+  </div>
 )
 
 const NestedArrow = _ => (
-  <Div marginLeft="auto" paddingLeft={core.layout.spacingXSmall}>
+  <div {...glamor.css(css['.psds-actionmenu__item__arrow'])}>
     <Arrow />
-  </Div>
+  </div>
 )
 
 const calcNestedMenuPosition = (menuWidth, origin) =>
   ({
     topLeft: {
-      left: menuWidth + nestedMenuHorzOverlap,
-      top: `calc(-1 * ${menuPaddingVert})`
+      left: menuWidth + vars.style.nestedMenuHorzOverlap,
+      top: `calc(-1 * ${vars.style.menuPaddingVert})`
     },
     topRight: {
-      right: menuWidth + nestedMenuHorzOverlap,
-      top: `calc(-1 * ${menuPaddingVert})`
+      right: menuWidth + vars.style.nestedMenuHorzOverlap,
+      top: `calc(-1 * ${vars.style.menuPaddingVert})`
     },
     bottomRight: {
-      right: menuWidth + nestedMenuHorzOverlap,
-      bottom: `calc(-1 * ${menuPaddingVert})`
+      right: menuWidth + vars.style.nestedMenuHorzOverlap,
+      bottom: `calc(-1 * ${vars.style.menuPaddingVert})`
     },
     bottomLeft: {
-      left: menuWidth + nestedMenuHorzOverlap,
-      bottom: `calc(-1 * ${menuPaddingVert})`
+      left: menuWidth + vars.style.nestedMenuHorzOverlap,
+      bottom: `calc(-1 * ${vars.style.menuPaddingVert})`
     }
   }[origin])
 
@@ -133,7 +94,6 @@ class ItemComponent extends React.Component {
       ? React.cloneElement(this.props.nested, {
           css: calcNestedMenuPosition(
             this.item.getBoundingClientRect().width,
-            // this.props.size.width,
             this.props._origin
           ),
           onClose: this.handleNestedClose,
@@ -144,7 +104,7 @@ class ItemComponent extends React.Component {
   }
   render() {
     return (
-      <div style={{ position: 'relative' }}>
+      <div {...glamor.css(css['.psds-actionmenu__item-container'])}>
         <Item
           aria-haspopup={!!this.props.nested}
           css={this.props.css}
@@ -173,15 +133,10 @@ ItemComponent.propTypes = {
   isActive: PropTypes.bool,
   nested: PropTypes.element, // ActionMenu
   _onMouseOver: PropTypes.func,
-  _origin: PropTypes.oneOf(Object.keys(origins))
+  _origin: PropTypes.oneOf(Object.keys(vars.origins))
 }
 
-const Divider = glamorous.div({
-  height: '1px',
-  width: '100%',
-  backgroundColor: core.colors.gray01,
-  margin: `${core.layout.spacingXXSmall} 0`
-})
+const Divider = glamorous.div(css['.psds-actionmenu__divider'])
 
 class DividerComponent extends React.Component {
   componentDidMount() {
@@ -199,50 +154,22 @@ DividerComponent.propTypes = {
 }
 
 const Overlay = props => (
-  <Div
-    position="fixed"
-    height="100vh"
-    width="100vw"
-    top="0"
-    left="0"
+  <div
+    {...glamor.css(css['.psds-actionmenu__overlay'])}
     onClick={props.onClick}
   />
 )
 
-const slide = glamor.css.keyframes({
-  '100%': {
-    transform: 'translateX(0)',
-    opacity: 1
-  }
-})
-
-const Menu = glamorous.div(
-  {
-    position: 'absolute',
-    display: 'inline-block',
-    marginLeft: 0,
-    background: core.colors.white,
-    borderRadius: '2px',
-    padding: `${menuPaddingVert} 0`,
-    minWidth: '160px',
-    maxWidth: '320px',
-    // overflow: 'hidden',
-    listStyle: 'none',
-    boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
-    fontSize: core.type.fontSizeSmall,
-    opacity: 0,
-    animation: `${slide} ${core.motion.speedNormal} forwards`
-  },
-  ({ origin }) =>
-    [origins.topRight, origins.bottomRight].includes(origin)
-      ? {
-          transform: `translateX(${core.layout.spacingXSmall})`
-        }
-      : {
-          transform: `translateX(calc(-1 * ${core.layout.spacingXSmall}))`
-        }
+const slide = glamor.css.keyframes(
+  css['@keyframes psds-actionmenu__keyframes__slide']
 )
 
+const Menu = glamorous.div(
+  css['.psds-actionmenu']({ slide }),
+  ({ origin }) => css[`.psds-actionmenu--origin-${origin}`]
+)
+
+// TODO: rm
 const calcMenuStyle = origin =>
   ({
     topLeft: {
@@ -324,10 +251,7 @@ class ActionMenuComponent extends React.Component {
   render() {
     return (
       <Menu
-        css={{
-          ...calcMenuStyle(this.props.origin),
-          ...this.props.css
-        }}
+        css={this.props.css}
         className={this.props.className}
         onKeyDown={this.handleKeyDown}
         onKeyUp={this.handleKeyUp}
@@ -354,15 +278,17 @@ ActionMenuComponent.displayName = 'ActionMenu'
 ActionMenuComponent.Item = ItemComponent
 ActionMenuComponent.Divider = DividerComponent
 ActionMenuComponent.Overlay = Overlay
-ActionMenuComponent.origins = origins
+ActionMenuComponent.origins = vars.origins
 ActionMenuComponent.propTypes = {
   onClose: PropTypes.func,
-  origin: PropTypes.oneOf(Object.keys(origins)),
+  origin: PropTypes.oneOf(Object.keys(vars.origins)),
   shouldFocusOnMount: PropTypes.bool
 }
 ActionMenuComponent.defaultProps = {
-  origin: origins.topLeft,
+  origin: vars.origins.topLeft,
   shouldFocusOnMount: true
 }
+
+export const origins = vars.origins
 
 export default ActionMenuComponent

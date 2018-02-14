@@ -4,7 +4,6 @@ import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import sizeMe from 'react-sizeme'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 

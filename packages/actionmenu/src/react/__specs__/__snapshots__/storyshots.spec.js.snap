@@ -23,15 +23,11 @@ exports[`Storyshots dividers edge 1`] = `
     role="menu"
   >
     <div
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
+      data-css-13azwyo=""
     >
       <button
         aria-haspopup={false}
-        className="css-1h4vcnc"
+        className="css-bvtqlg"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -71,15 +67,11 @@ exports[`Storyshots dividers sandwich 1`] = `
     role="menu"
   >
     <div
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
+      data-css-13azwyo=""
     >
       <button
         aria-haspopup={false}
-        className="css-1h4vcnc"
+        className="css-bvtqlg"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -93,15 +85,11 @@ exports[`Storyshots dividers sandwich 1`] = `
       tabIndex="-1"
     />
     <div
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
+      data-css-13azwyo=""
     >
       <button
         aria-haspopup={false}
-        className="css-204lcv"
+        className="css-1y6ncui"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -111,15 +99,11 @@ exports[`Storyshots dividers sandwich 1`] = `
       </button>
     </div>
     <div
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
+      data-css-13azwyo=""
     >
       <button
         aria-haspopup={false}
-        className="css-204lcv"
+        className="css-1y6ncui"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -155,15 +139,11 @@ exports[`Storyshots menu items long text 1`] = `
     role="menu"
   >
     <div
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
+      data-css-13azwyo=""
     >
       <button
         aria-haspopup={false}
-        className="css-1h4vcnc"
+        className="css-bvtqlg"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -173,15 +153,11 @@ exports[`Storyshots menu items long text 1`] = `
       </button>
     </div>
     <div
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
+      data-css-13azwyo=""
     >
       <button
         aria-haspopup={false}
-        className="css-204lcv"
+        className="css-1y6ncui"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -217,22 +193,18 @@ exports[`Storyshots menu items long text with icon 1`] = `
     role="menu"
   >
     <div
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
+      data-css-13azwyo=""
     >
       <button
         aria-haspopup={false}
-        className="css-1xx511r"
+        className="css-8v4mjn"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
         role="menuitem"
       >
         <div
-          className="css-18rfdc6"
+          data-css-18rfdc6=""
         >
           <div
             className="css-otejxm"
@@ -279,15 +251,11 @@ exports[`Storyshots menu items multiple 1`] = `
     role="menu"
   >
     <div
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
+      data-css-13azwyo=""
     >
       <button
         aria-haspopup={false}
-        className="css-1h4vcnc"
+        className="css-bvtqlg"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -297,15 +265,11 @@ exports[`Storyshots menu items multiple 1`] = `
       </button>
     </div>
     <div
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
+      data-css-13azwyo=""
     >
       <button
         aria-haspopup={false}
-        className="css-204lcv"
+        className="css-1y6ncui"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -315,15 +279,11 @@ exports[`Storyshots menu items multiple 1`] = `
       </button>
     </div>
     <div
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
+      data-css-13azwyo=""
     >
       <button
         aria-haspopup={false}
-        className="css-204lcv"
+        className="css-1y6ncui"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -359,15 +319,11 @@ exports[`Storyshots menu items one 1`] = `
     role="menu"
   >
     <div
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
+      data-css-13azwyo=""
     >
       <button
         aria-haspopup={false}
-        className="css-1h4vcnc"
+        className="css-bvtqlg"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -403,22 +359,18 @@ exports[`Storyshots menu items with icons 1`] = `
     role="menu"
   >
     <div
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
+      data-css-13azwyo=""
     >
       <button
         aria-haspopup={false}
-        className="css-1xx511r"
+        className="css-8v4mjn"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
         role="menuitem"
       >
         <div
-          className="css-18rfdc6"
+          data-css-18rfdc6=""
         >
           <div
             className="css-otejxm"
@@ -439,22 +391,18 @@ exports[`Storyshots menu items with icons 1`] = `
       </button>
     </div>
     <div
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
+      data-css-13azwyo=""
     >
       <button
         aria-haspopup={false}
-        className="css-19fsvnp"
+        className="css-11pcr7a"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
         role="menuitem"
       >
         <div
-          className="css-18rfdc6"
+          data-css-18rfdc6=""
         >
           <div
             className="css-otejxm"
@@ -475,22 +423,18 @@ exports[`Storyshots menu items with icons 1`] = `
       </button>
     </div>
     <div
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
+      data-css-13azwyo=""
     >
       <button
         aria-haspopup={false}
-        className="css-19fsvnp"
+        className="css-11pcr7a"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
         role="menuitem"
       >
         <div
-          className="css-18rfdc6"
+          data-css-18rfdc6=""
         >
           <div
             className="css-otejxm"
@@ -546,15 +490,11 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
       role="menu"
     >
       <div
-        style={
-          Object {
-            "position": "relative",
-          }
-        }
+        data-css-13azwyo=""
       >
         <button
           aria-haspopup={true}
-          className="css-1cig8k2"
+          className="css-1tum3pv"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -562,7 +502,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
         >
           One
           <div
-            className="css-g406da"
+            data-css-g406da=""
           >
             <svg
               height="9"
@@ -579,15 +519,11 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
         </button>
       </div>
       <div
-        style={
-          Object {
-            "position": "relative",
-          }
-        }
+        data-css-13azwyo=""
       >
         <button
           aria-haspopup={false}
-          className="css-204lcv"
+          className="css-1y6ncui"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -633,15 +569,11 @@ exports[`Storyshots nested origin bottomRight 1`] = `
       role="menu"
     >
       <div
-        style={
-          Object {
-            "position": "relative",
-          }
-        }
+        data-css-13azwyo=""
       >
         <button
           aria-haspopup={true}
-          className="css-1cig8k2"
+          className="css-1tum3pv"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -649,7 +581,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
         >
           One
           <div
-            className="css-g406da"
+            data-css-g406da=""
           >
             <svg
               height="9"
@@ -666,15 +598,11 @@ exports[`Storyshots nested origin bottomRight 1`] = `
         </button>
       </div>
       <div
-        style={
-          Object {
-            "position": "relative",
-          }
-        }
+        data-css-13azwyo=""
       >
         <button
           aria-haspopup={false}
-          className="css-204lcv"
+          className="css-1y6ncui"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -720,15 +648,11 @@ exports[`Storyshots nested origin topLeft 1`] = `
       role="menu"
     >
       <div
-        style={
-          Object {
-            "position": "relative",
-          }
-        }
+        data-css-13azwyo=""
       >
         <button
           aria-haspopup={true}
-          className="css-1cig8k2"
+          className="css-1tum3pv"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -736,7 +660,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
         >
           One
           <div
-            className="css-g406da"
+            data-css-g406da=""
           >
             <svg
               height="9"
@@ -753,15 +677,11 @@ exports[`Storyshots nested origin topLeft 1`] = `
         </button>
       </div>
       <div
-        style={
-          Object {
-            "position": "relative",
-          }
-        }
+        data-css-13azwyo=""
       >
         <button
           aria-haspopup={false}
-          className="css-204lcv"
+          className="css-1y6ncui"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -807,15 +727,11 @@ exports[`Storyshots nested origin topRight 1`] = `
       role="menu"
     >
       <div
-        style={
-          Object {
-            "position": "relative",
-          }
-        }
+        data-css-13azwyo=""
       >
         <button
           aria-haspopup={true}
-          className="css-1cig8k2"
+          className="css-1tum3pv"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -823,7 +739,7 @@ exports[`Storyshots nested origin topRight 1`] = `
         >
           One
           <div
-            className="css-g406da"
+            data-css-g406da=""
           >
             <svg
               height="9"
@@ -840,15 +756,11 @@ exports[`Storyshots nested origin topRight 1`] = `
         </button>
       </div>
       <div
-        style={
-          Object {
-            "position": "relative",
-          }
-        }
+        data-css-13azwyo=""
       >
         <button
           aria-haspopup={false}
-          className="css-204lcv"
+          className="css-1y6ncui"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
