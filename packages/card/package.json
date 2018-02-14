@@ -4,8 +4,10 @@
   "description": "Design System component for card ui",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist --ignore spec.js --copy-files",
-    "build:watch": "npm run build -- --watch",
+    "build": "run-s build:js build:css",
+    "build:css": "build-css",
+    "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
@@ -31,6 +33,7 @@
     "shiitake": "^2.1.1"
   },
   "devDependencies": {
+    "@pluralsight/ps-design-system-build": "^1.8.0",
     "@pluralsight/ps-design-system-button": "^10.5.5",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.23",
     "@storybook/addon-actions": "3.2.14",
@@ -45,6 +48,7 @@
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "jest": "^20.0.4",
+    "npm-run-all": "^4.1.2",
     "react": "^16.2.0"
   },
   "jest": {

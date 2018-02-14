@@ -1,26 +1,17 @@
-import core from '@pluralsight/ps-design-system-core'
-import * as glamor from 'glamor'
 import glamorous from 'glamorous'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Shiitake from 'shiitake'
-import { transparentize } from 'polished'
 
-export const sizes = { small: 'small', medium: 'medium', large: 'large' }
+import css from '../css'
+import * as vars from '../vars'
 
 const TextLink = glamorous.span({
-  pointerEvents: 'all',
-  '& a': {
-    color: 'inherit',
-    cursor: 'pointer',
-    textDecoration: 'none'
-  },
-  '& a:hover, & a:active': {
-    color: core.colors.white,
-    textDecoration: 'underline',
-    transition: `all ${core.motion.speedNormal}`
-  }
+  ...css['.psds-card__text-link'],
+  '& a': css['.psds-card__text-link a'],
+  '& a:hover': css['.psds-card__text-link a:hover'],
+  '& a:active': css['.psds-card__text-link a:active']
 })
 TextLink.displayName = 'Card.TextLink'
 
@@ -28,31 +19,12 @@ const Text = glamorous.span()
 Text.displayName = 'Card.Text'
 
 const ImageLink = glamorous.span({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  width: '100%',
-  height: '100%',
-  pointerEvents: 'all',
-  '& a': {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100%',
-    width: '100%',
-    textDecoration: 'none',
-    transition: `all ${core.motion.speedNormal}`
-  }
+  ...css['.psds-card__image-link'],
+  '& a': css['.psds-card__image-link a']
 })
 ImageLink.displayName = 'Row.ImageLink'
 
-const ImageDiv = glamorous.div({
-  width: '100%',
-  height: '100%',
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat'
-})
+const ImageDiv = glamorous.div(css['.psds-actionmenu__image'])
 
 const Image = props => (
   <ImageDiv css={{ backgroundImage: `url(${props.src})` }} />
@@ -63,62 +35,33 @@ Image.propTypes = {
 }
 
 const FullOverlayLinkSpan = glamorous.span({
-  pointerEvents: 'all',
-  color: core.colors.white,
-  '> a': {
-    display: 'flex'
-  }
+  ...css['.psds-card__full-overlay-link'],
+  '> a': css['.psds-card__full-overlay-link > a']
 })
 const FullOverlayLink = props => (
   <FullOverlayLinkSpan>{props.children}</FullOverlayLinkSpan>
 )
 FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
-const Card = glamorous.div({
-  width: '100%',
-  textAlign: 'left'
-})
+const Card = glamorous.div(css['.psds-card'])
 
 const Overlays = glamorous.div(
   {
-    position: 'relative',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    // TODO: is there a more targeted way to do this?
-    ':hover div, :active div': {
-      opacity: 1
-    }
+    ...css['.psds-card__overlays'],
+    ':hover div': css['.psds-card__overlays:hover div'],
+    ':active div': css['.psds-card__overlays:active div']
   },
-  ({ size }) =>
-    ({
-      [sizes.small]: { height: '96px' },
-      [sizes.medium]: { height: '144px' },
-      [sizes.large]: { height: '240px' }
-    }[size])
+  ({ size }) => css[`.psds-card__overlays--size-${size}`]
 )
 
 const renderImage = props => (props.image ? props.image : null)
 
-const styleFullOverlayFullOverlayVisible = ({ fullOverlayVisible }) =>
-  fullOverlayVisible ? { opacity: 1 } : {}
-
 const FullOverlay = glamorous.div(
-  {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    height: '100%',
-    width: '100%',
-    background: transparentize(0.5, core.colors.black),
-    transition: `opacity ${core.motion.speedNormal}`,
-    pointerEvents: 'none',
-    opacity: 0
-  },
-  styleFullOverlayFullOverlayVisible
+  css['.psds-card__full-overlay'],
+  ({ fullOverlayVisible }) =>
+    fullOverlayVisible
+      ? css['.psds-card__full-overlay--fullOverlayVisible']
+      : null
 )
 
 const renderFullOverlay = props =>
@@ -129,27 +72,15 @@ const renderFullOverlay = props =>
   ) : null
 
 const ActionBar = glamorous.div(
-  {
-    display: 'flex',
-    justifyContent: 'flex-end',
-    position: 'absolute',
-    top: 0,
-    right: 0,
-    width: '100%',
-    padding: `${core.layout.spacingSmall} ${core.layout.spacingSmall} 0 ${
-      core.layout.spacingSmall
-    }`,
-    background: `linear-gradient(to bottom, ${transparentize(
-      0.25,
-      core.colors.black
-    )}, transparent)`,
-    transition: `opacity ${core.motion.speedNormal}`,
-    pointerEvents: 'none',
-    opacity: 0
-  },
+  css['.psds-card__action-bar'],
   ({ fullOverlay, actionBarVisible }) =>
-    fullOverlay && !actionBarVisible ? { background: 'none' } : {},
-  ({ actionBarVisible }) => (actionBarVisible ? { opacity: 1 } : {})
+    fullOverlay && !actionBarVisible
+      ? css[
+          '.psds-card__action-bar--fullOverlay.psds-card__action-bar--no-actionBarVisible'
+        ]
+      : null,
+  ({ actionBarVisible }) =>
+    actionBarVisible ? css['.psds-card__action-bar--actionBarVisible'] : null
 )
 
 const ActionBarAction = props => {
@@ -160,30 +91,17 @@ const ActionBarAction = props => {
 
 const ActionButton = glamorous.button(
   {
-    pointerEvents: 'all',
-    fontSize: core.type.fontSizeXSmall,
-    padding: 0,
-    cursor: 'pointer',
-    border: 'none',
-    color: transparentize(0.2, core.colors.white),
-    background: 'none',
-    transition: `all ${core.motion.speedNormal}`,
-    ':hover, :active': {
-      color: core.colors.white
-    },
-    '& + &': {
-      marginLeft: core.layout.spacingSmall
-    }
+    ...css['.psds-card__action-bar__button'],
+    ':hover': css['.psds-card__action-bar__button:hover'],
+    ':active': css['.psds-card__action-bar__button:active'],
+    '& + &':
+      css['.psds-card__action-bar__button .psds-card__action-bar__button']
   },
   ({ disabled }) =>
     disabled
       ? {
-          color: core.colors.gray02,
-          background: core.colors.gray03,
-          ':hover': {
-            color: core.colors.gray02,
-            background: core.colors.gray03
-          }
+          ...css['.psds-card__action-bar__button--disabled'],
+          ':hover': css['.psds-card__action-bar__button--disabled:hover']
         }
       : null
 )
@@ -202,36 +120,14 @@ const renderActionBar = props =>
     </ActionBar>
   ) : null
 
-const BonusBar = glamorous.div({
-  position: 'absolute',
-  bottom: core.layout.spacingSmall,
-  left: core.layout.spacingSmall,
-  color: core.colors.white
-})
+const BonusBar = glamorous.div(css['.psds-card__bonus-bar'])
 
 const renderBonusBar = props =>
   props.bonusBar ? <BonusBar>{props.bonusBar}</BonusBar> : null
 
-const TagDiv = glamorous.div({
-  display: 'flex',
-  alignItems: 'center',
-  position: 'absolute',
-  top: core.layout.spacingSmall,
-  left: 0,
-  padding: `${core.layout.spacingXXSmall} ${core.layout.spacingXSmall}`,
-  background: core.colors.gray04,
-  borderRadius: '0 2px 2px 0',
-  color: core.colors.white,
-  textTransform: 'uppercase',
-  fontSize: '10px',
-  lineHeight: '16px'
-})
+const TagDiv = glamorous.div(css['.psds-card__tag'])
 
-const TagIcon = glamorous.div({
-  display: 'flex',
-  alignItems: 'center',
-  marginRight: core.layout.spacingXSmall
-})
+const TagIcon = glamorous.div(css['.psds-card__tag__icon'])
 
 const Tag = props => (
   <TagDiv>
@@ -251,16 +147,7 @@ Tag.propTypes = {
 const renderTag = props =>
   props.tag && props.size !== 'small' ? props.tag : null
 
-const Progress = glamorous.div({
-  position: 'absolute',
-  left: 0,
-  bottom: 0,
-  width: '100%',
-  height: 5,
-  borderTop: `1px solid ${transparentize(0.8, core.colors.black)}`,
-  backgroundColor: transparentize(0.6, core.colors.gray01),
-  overflow: 'hidden'
-})
+const Progress = glamorous.div(css['.psds-card__progress'])
 
 const percent = num => {
   try {
@@ -271,16 +158,11 @@ const percent = num => {
 }
 
 const ProgressBar = glamorous.div(
-  {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '0%',
-    height: '5px'
-  },
+  css['.psds-card__progress__bar'],
   ({ progress }) => ({
-    backgroundColor:
-      percent(progress) == '100%' ? core.colors.green : core.colors.white,
+    ...(percent(progress) == '100%'
+      ? css['.psds-card__progress__bar--complete']
+      : null),
     width: percent(progress)
   })
 )
@@ -295,13 +177,7 @@ const renderProgress = props =>
     </Progress>
   ) : null
 
-const TitleDiv = glamorous.div({
-  display: 'block',
-  paddingTop: core.layout.spacingXSmall,
-  fontWeight: core.type.fontWeightMedium,
-  overflow: 'hidden',
-  color: core.colors.white
-})
+const TitleDiv = glamorous.div(css['.psds-card__title'])
 
 const Title = props => {
   const allProps = props.onClick ? { onClick: props.onClick } : null
@@ -315,36 +191,16 @@ const Title = props => {
 Title.displayName = 'Card.Title'
 
 const Metadata = glamorous.div(
-  {
-    display: 'flex',
-    alignItems: 'center',
-    fontWeight: core.type.fontWeightBook,
-    lineHeight: core.type.lineHeightTight,
-    color: core.colors.gray02,
-    maxWidth: '100%'
-  },
-  ({ size }) =>
-    ({
-      small: { fontSize: core.type.fontSizeXSmall },
-      medium: { fontSize: core.type.fontSizeXSmall },
-      large: { fontSize: core.type.fontSizeSmall }
-    }[size])
+  css['.psds-card__metadata'],
+  ({ size }) => css[`.psds-card__metadata--size-${size}`]
 )
 
 const MetadataDatum = glamorous.span({
-  whiteSpace: 'nowrap',
-  overflow: 'hidden',
-  textOverflow: 'ellipsis',
-  flexShrink: 2,
-  ':nth-of-type(1)': {
-    flexShrink: 1
-  }
+  ...css['.psds-card__metadata__datum'],
+  ':nth-of-type(1)': css['.psds-card__metadata__datum:nth-of-type(1)']
 })
 
-const MetadataDot = glamorous.span({
-  display: 'inline-block',
-  margin: `0 ${core.layout.spacingXSmall}`
-})
+const MetadataDot = glamorous.span(css['.psds-card__metadata__dot'])
 
 const renderMetaData = (props, metadata) =>
   metadata ? (
@@ -361,21 +217,7 @@ const renderMetaData = (props, metadata) =>
   ) : null
 
 const TitleContainer = glamorous.div(
-  ({ size }) =>
-    ({
-      small: {
-        fontSize: core.type.fontSizeXSmall,
-        lineHeight: core.type.lineHeightTight
-      },
-      medium: {
-        fontSize: core.type.fontSizeSmall,
-        lineHeight: core.type.lineHeightTight
-      },
-      large: {
-        fontSize: core.type.fontSizeMedium,
-        lineHeight: core.type.lineHeightStandard
-      }
-    }[size])
+  ({ size }) => css[`.psds-card__title-container--size-${size}`]
 )
 
 const filterOutTitleProp = props => {
@@ -411,7 +253,7 @@ CardComponent.Action = ActionBarAction
 CardComponent.FullOverlayLink = FullOverlayLink
 CardComponent.Image = Image
 CardComponent.ImageLink = ImageLink
-CardComponent.sizes = sizes
+CardComponent.sizes = vars.sizes
 CardComponent.Tag = Tag
 CardComponent.Text = Text
 CardComponent.TextLink = TextLink
@@ -432,14 +274,14 @@ CardComponent.propTypes = {
     PropTypes.oneOfType([PropTypes.string, PropTypes.element])
   ), // CardComponent.TextLink
   progress: PropTypes.number,
-  size: PropTypes.oneOf(Object.keys(sizes)),
+  size: PropTypes.oneOf(Object.keys(vars.sizes)),
   tag: PropTypes.element, // CardComponent.Tag
   title: PropTypes.element.isRequired // CardComponent.TextLink>Title|Title
 }
 CardComponent.defaultProps = {
   actionBarVisible: false,
   fullOverlayVisible: false,
-  size: sizes.medium
+  size: vars.sizes.medium
 }
 
 export default CardComponent
