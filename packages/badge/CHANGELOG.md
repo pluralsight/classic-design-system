@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.12"></a>
+## [2.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@2.0.11...@pluralsight/ps-design-system-badge@2.0.12) (2018-02-14)
+
+
+### Bug Fixes
+
+* **badge:** ignore babelrc ([4d37f5d](https://github.com/pluralsight/design-system/commit/4d37f5d)), closes [#190](https://github.com/pluralsight/design-system/issues/190)
+
+
+
+
 <a name="2.0.11"></a>
 ## [2.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@2.0.10...@pluralsight/ps-design-system-badge@2.0.11) (2018-02-12)
 

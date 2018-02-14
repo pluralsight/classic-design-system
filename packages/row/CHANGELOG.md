@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.4.21"></a>
+## [2.4.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.4.20...@pluralsight/ps-design-system-row@2.4.21) (2018-02-14)
+
+
+### Bug Fixes
+
+* **row:** ignore babelrc ([7a7b211](https://github.com/pluralsight/design-system/commit/7a7b211)), closes [#190](https://github.com/pluralsight/design-system/issues/190)
+
+
+
+
 <a name="2.4.20"></a>
 ## [2.4.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.4.19...@pluralsight/ps-design-system-row@2.4.20) (2018-02-12)
 

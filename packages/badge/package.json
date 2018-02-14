@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-badge",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "description": "Design System component for badge ui",
   "main": "index.js",
   "style": "dist/css/index.css",
