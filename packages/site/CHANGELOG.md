@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.28.0"></a>
+# [9.28.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.27.4...@pluralsight/ps-design-system-site@9.28.0) (2018-02-21)
+
+
+### Bug Fixes
+
+* **site:** make breadcrumb example hoverable ([b968c58](https://github.com/pluralsight/design-system/commit/b968c58))
+
+
+### Features
+
+* **site:** breadcrumb docs ([d7a481e](https://github.com/pluralsight/design-system/commit/d7a481e))
+
+
+
+
 <a name="9.27.4"></a>
 ## [9.27.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.27.3...@pluralsight/ps-design-system-site@9.27.4) (2018-02-14)
 

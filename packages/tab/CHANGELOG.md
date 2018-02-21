@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="7.4.1"></a>
+## [7.4.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.4.0...@pluralsight/ps-design-system-tab@7.4.1) (2018-02-21)
+
+
+### Bug Fixes
+
+* **tab:** restore list bottom border when default themed ([7d7e8a7](https://github.com/pluralsight/design-system/commit/7d7e8a7))
+
+
+
+
 <a name="7.4.0"></a>
 # [7.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.3.6...@pluralsight/ps-design-system-tab@7.4.0) (2018-02-13)
 
