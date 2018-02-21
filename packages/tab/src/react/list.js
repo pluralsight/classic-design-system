@@ -2,7 +2,10 @@ import core from '@pluralsight/ps-design-system-core'
 import glamorous from 'glamorous'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
+import {
+  defaultName as themeDefaultName,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
 
@@ -54,7 +57,7 @@ class ListComponent extends React.Component {
         role="tablist"
         onKeyDown={this.handleKeyDown}
         tabIndex="0"
-        themeName={this.context.themeName}
+        themeName={this.context.themeName || themeDefaultName}
       >
         {React.Children.map(this.props.children, (el, i) =>
           React.cloneElement(el, {
