@@ -18,6 +18,7 @@
     "@pluralsight/ps-design-system-actionmenu": "^2.4.0",
     "@pluralsight/ps-design-system-avatar": "^1.4.1",
     "@pluralsight/ps-design-system-badge": "^2.0.12",
+    "@pluralsight/ps-design-system-breadcrumb": "^1.1.1",
     "@pluralsight/ps-design-system-button": "^10.5.5",
     "@pluralsight/ps-design-system-card": "^8.3.0",
     "@pluralsight/ps-design-system-circularprogress": "^1.4.0",

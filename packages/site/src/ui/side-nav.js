@@ -305,6 +305,9 @@ export default withHeadings(props => (
       <NavLink href="/components/badge" headings={props.headings}>
         Badge
       </NavLink>
+      <NavLink href="/components/breadcrumb" headings={props.headings}>
+        Breadcrumb
+      </NavLink>
       <NavLink href="/components/button" headings={props.headings}>
         Button
       </NavLink>

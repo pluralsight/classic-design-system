@@ -11,6 +11,7 @@ module.exports = {
       '/components/actionmenu': { page: '/components/actionmenu' },
       '/components/avatar': { page: '/components/avatar' },
       '/components/badge': { page: '/components/badge' },
+      '/components/breadcrumb': { page: '/components/breadcrumb' },
       '/components/button': { page: '/components/button' },
       '/components/card': { page: '/components/card' },
       '/components/circularprogress': { page: '/components/circularprogress' },
