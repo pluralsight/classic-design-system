@@ -52,7 +52,9 @@ const InAppExample = _ => (
         </Tab.List>
         <div className="boxContainer">
           <PinkBox />
-          <Breadcrumb className="breadcrumb">All the things</Breadcrumb>
+          <Breadcrumb style={{ position: 'relative' }}>
+            All the things
+          </Breadcrumb>
         </div>
       </PageHeadingLayout>
       <Code language="javascript">
@@ -66,8 +68,6 @@ const InAppExample = _ => (
       .boxContainer {
         position: relative;
         display: inline-block;
-      }
-      .breadcrumb {
       }
     `}</style>
   </div>
