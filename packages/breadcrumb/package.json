@@ -12,8 +12,7 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test:watch": "npm run test -- --watchAll",
-    "test:updateSnapshot": "npm run test -- --updateSnapshot"
+    "test:watch": "npm run test -- --watchAll"
   },
   "keywords": [],
   "author": "jaketrent",
