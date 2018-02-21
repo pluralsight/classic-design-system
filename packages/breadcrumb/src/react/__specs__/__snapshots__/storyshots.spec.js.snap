@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots as link hrefs 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1n7ahd0=""
+  >
+    <a
+      data-css-1a9ax70=""
+      disabled={false}
+      href="https://duckduckgo.com"
+      style={Object {}}
+    >
+      <div
+        className="css-1mgd019"
+      >
+        <div
+          className="css-otejxm"
+        >
+          <svg
+            aria-label="caret left icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        className="css-1en8fmq"
+      >
+        Click as link
+      </span>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots disabled disabled 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1n7ahd0=""
+  >
+    <button
+      data-css-i6lq5h=""
+      disabled={true}
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <div
+        className="css-1mgd019"
+      >
+        <div
+          className="css-otejxm"
+        >
+          <svg
+            aria-label="caret left icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        className="css-1en8fmq"
+      >
+        Disabled
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots normal looks great 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1n7ahd0=""
+  >
+    <button
+      data-css-1a9ax70=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        className="css-1mgd019"
+      >
+        <div
+          className="css-otejxm"
+        >
+          <svg
+            aria-label="caret left icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        className="css-1en8fmq"
+      >
+        All the things
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots with onClick clicks once 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1n7ahd0=""
+  >
+    <button
+      data-css-1a9ax70=""
+      disabled={false}
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <div
+        className="css-1mgd019"
+      >
+        <div
+          className="css-otejxm"
+        >
+          <svg
+            aria-label="caret left icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        className="css-1en8fmq"
+      >
+        Clicks once
+      </span>
+    </button>
+  </div>
+</div>
+`;
