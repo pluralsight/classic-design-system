@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="7.4.2"></a>
+## [7.4.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.4.1...@pluralsight/ps-design-system-tab@7.4.2) (2018-02-22)
+
+
+### Bug Fixes
+
+* **tab:** make theme modifier proper BEM ([d29a49e](https://github.com/pluralsight/design-system/commit/d29a49e))
+
+
+
+
 <a name="7.4.1"></a>
 ## [7.4.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.4.0...@pluralsight/ps-design-system-tab@7.4.1) (2018-02-21)
 
