@@ -24,19 +24,19 @@ const ListItem = glamorous.button(
     // TextWidth
     ':hover div':
       css[
-        `.psds-tab__list-item.psds-theme-${
+        `.psds-tab__list-item.psds-theme--${
           props.themeName
         }:hover .psds-tab__list-item__text`
       ],
     ':focus div':
       css[
-        `.psds-tab__list-item.psds-theme-${
+        `.psds-tab__list-item.psds-theme--${
           props.themeName
         }:focus .psds-tab__list-item__text`
       ],
     ':active div':
       css[
-        `.psds-tab__list-item.psds-theme-${
+        `.psds-tab__list-item.psds-theme--${
           props.themeName
         }:active .psds-tab__list-item__text`
       ],

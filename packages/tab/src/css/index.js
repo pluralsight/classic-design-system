@@ -82,18 +82,18 @@ export default {
   },
 
   // __list-item:hover/focus/active __list-item__text
-  [`.psds-tab__list-item.psds-theme-${
+  [`.psds-tab__list-item.psds-theme--${
     themeNames.light
   }:hover .psds-tab__list-item__text`]: listItemTextLightHover,
-  [`.psds-tab__list-item.psds-theme-${themeDefaultName}:hover .psds-tab__list-item__text`]: listItemTextDefaultHover,
-  [`.psds-tab__list-item.psds-theme-${
+  [`.psds-tab__list-item.psds-theme--${themeDefaultName}:hover .psds-tab__list-item__text`]: listItemTextDefaultHover,
+  [`.psds-tab__list-item.psds-theme--${
     themeNames.light
   }:focus .psds-tab__list-item__text`]: listItemTextLightHover,
-  [`.psds-tab__list-item.psds-theme-${themeDefaultName}:focus .psds-tab__list-item__text`]: listItemTextDefaultHover,
-  [`.psds-tab__list-item.psds-theme-${
+  [`.psds-tab__list-item.psds-theme--${themeDefaultName}:focus .psds-tab__list-item__text`]: listItemTextDefaultHover,
+  [`.psds-tab__list-item.psds-theme--${
     themeNames.light
   }:active .psds-tab__list-item__text`]: listItemTextLightActive,
-  [`.psds-tab__list-item.psds-theme-${themeDefaultName}:active .psds-tab__list-item__text`]: listItemTextDefaultActive,
+  [`.psds-tab__list-item.psds-theme--${themeDefaultName}:active .psds-tab__list-item__text`]: listItemTextDefaultActive,
   [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
     themeNames.light
   }:hover .psds-tab__list-item__text`]: listItemTextLightActive,
