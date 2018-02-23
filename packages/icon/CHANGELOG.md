@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.6.0"></a>
+# [8.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.5.0...@pluralsight/ps-design-system-icon@8.6.0) (2018-02-23)
+
+
+### Bug Fixes
+
+* **icon:** reimport dashboard icon ([0807090](https://github.com/pluralsight/design-system/commit/0807090))
+
+
+### Features
+
+* **icon:** add tag icon ([5655b81](https://github.com/pluralsight/design-system/commit/5655b81))
+
+
+
+
 <a name="8.5.0"></a>
 # [8.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.4.16...@pluralsight/ps-design-system-icon@8.5.0) (2018-02-12)
 
