@@ -1,0 +1,2166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Table all features 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-14f5d4v=""
+  >
+    <div
+      className={null}
+      data-css-l8tnmb=""
+    >
+      <div
+        data-css-bjog8q=""
+      >
+        <div
+          data-css-18tm26g=""
+          onClick={[Function]}
+        >
+          NAME
+          <div
+            data-css-ux1z0j=""
+          >
+            <span
+              data-css-8jufrg=""
+            >
+              <div
+                className="css-12f5sv2"
+                data-css-16nv9zt=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+              <div
+                className="css-12f5sv2"
+                data-css-fscpdd=""
+              >
+                <svg
+                  aria-label="caret up icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 9l-5 5 1.41 1.41L12 11.83l3.59 3.58L17 14"
+                  />
+                </svg>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div
+          data-css-18tm26g=""
+          onClick={[Function]}
+        >
+          AGE
+          <div
+            data-css-ux1z0j=""
+          >
+            <span
+              data-css-8jufrg=""
+            >
+              <div
+                className="css-12f5sv2"
+                data-css-16nv9zt=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+              <div
+                className="css-12f5sv2"
+                data-css-fscpdd=""
+              >
+                <svg
+                  aria-label="caret up icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 9l-5 5 1.41 1.41L12 11.83l3.59 3.58L17 14"
+                  />
+                </svg>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div
+          data-css-18tm26g=""
+          onClick={[Function]}
+        >
+          AMOUNT
+          <div
+            data-css-ux1z0j=""
+          >
+            <span
+              data-css-8jufrg=""
+            >
+              <div
+                className="css-12f5sv2"
+                data-css-16nv9zt=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+              <div
+                className="css-12f5sv2"
+                data-css-fscpdd=""
+              >
+                <svg
+                  aria-label="caret up icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 9l-5 5 1.41 1.41L12 11.83l3.59 3.58L17 14"
+                  />
+                </svg>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div
+          data-css-18tm26g=""
+          onClick={[Function]}
+        >
+          CITY
+          <div
+            data-css-ux1z0j=""
+          >
+            <span
+              data-css-8jufrg=""
+            >
+              <div
+                className="css-12f5sv2"
+                data-css-16nv9zt=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+              <div
+                className="css-12f5sv2"
+                data-css-fscpdd=""
+              >
+                <svg
+                  aria-label="caret up icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 9l-5 5 1.41 1.41L12 11.83l3.59 3.58L17 14"
+                  />
+                </svg>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          BADGE
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-1ikzs00=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            John
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            19
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            100
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Seoul
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-vdc22r"
+            >
+              Nice
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1ikzs00=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Bob
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            22
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            200
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Los Angeles
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-jh132n"
+            >
+              Cool
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1ikzs00=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Maria
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            26
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            300
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Paris
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-1q8b1lc"
+            >
+              Awesome
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1ikzs00=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Zack
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            22
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            400
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Amsterdam
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-17te2fi"
+            >
+              Good
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1ikzs00=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Anne
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            50
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            700
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Salvador
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-1d3h730"
+            >
+              Okay
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1ikzs00=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Louis
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            32
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            1000
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Auckland
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-vdc22r"
+            >
+              Stunning
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1ikzs00=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Nick
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            40
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            150
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Johannesburg
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-jh132n"
+            >
+              Great
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table custom components 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-14f5d4v=""
+  >
+    <div
+      className={null}
+      data-css-l8tnmb=""
+    >
+      <div
+        data-css-bjog8q=""
+      >
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          BADGE
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          SWITCH
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          BUTTON
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-jh132n"
+            >
+              Badge
+            </div>
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              data-css-56wz5s=""
+            >
+              <div
+                data-css-rson59=""
+              >
+                <div
+                  data-css-4g7l16=""
+                />
+              </div>
+              <input
+                checked={true}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <label
+                data-css-1wrf03j=""
+              />
+            </div>
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <button
+              data-css-19drpq6=""
+              disabled={false}
+              style={Object {}}
+            >
+              <span
+                className="css-1en8fmq"
+              >
+                Button
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-1d3h730"
+            >
+              Badge
+            </div>
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              data-css-56wz5s=""
+            >
+              <div
+                data-css-3f08gm=""
+              >
+                <div
+                  data-css-4g7l16=""
+                />
+              </div>
+              <input
+                checked={true}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <label
+                data-css-1wrf03j=""
+              />
+            </div>
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <button
+              data-css-1sql3pc=""
+              disabled={false}
+              style={Object {}}
+            >
+              <span
+                className="css-1en8fmq"
+              >
+                Click me
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table icons 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-14f5d4v=""
+  >
+    <div
+      className={null}
+      data-css-l8tnmb=""
+    >
+      <div
+        data-css-bjog8q=""
+      >
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          PATHS
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          MENTORING
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          CHANNEL
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          COURSES
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-iph9p7"
+            >
+              <svg
+                aria-label="path icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.4113 10l3.5858 3.5858V22H6l-.003-7.5858L3 11.4172V14H1V8h6v2H4.4113zM21 11.4142l-3 3V22h-2v-8.4142L19.5858 10H17V8h6v6h-2v-2.5858zm-8-5.5884V22h-2V5.831L9.1742 7.657 7.76 6.2425 12.0026 2l4.2427 4.2426L14.831 7.657 13 5.8257z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-1qr9ebn"
+            >
+              <svg
+                aria-label="hand icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.0085 9.4066C10.638 10.457 11 11.6862 11 13c0 1.7768-.662 3.399-1.7528 4.6333l-1.362-1.4858C8.5822 15.288 9 14.1928 9 13c0-1.125-.3715-2.163-.9985-2.9985L7.293 9.293 15.79.79l1.42 1.42-7.2015 7.1966zM21.29 6.29l1.42 1.42-6.503 6.497-1.414-1.414L21.29 6.29zm-1.5-4l1.42 1.42-7.003 6.997-1.414-1.414L19.79 2.29zm1.3026 9.8032l1.4148 1.4136-6.997 7.0036c-3.3194 3.3195-8.7014 3.3195-12.0208 0C.17 17.191.17 11.809 3.4896 8.4896c2.693-2.693 2.951-3.6046 2.0403-7.247l1.94-.485c1.082 4.328.6205 5.9594-2.5663 9.1462-2.5384 2.5384-2.5384 6.654 0 9.1924 2.5384 2.5384 6.654 2.5384 9.192.0003l6.9968-7.0033z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-1qr9ebn"
+            >
+              <svg
+                aria-label="channel icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 13.855V23h-2v-9.145c-1.4457-.4302-2.5-1.7695-2.5-3.355C8.5 8.567 10.067 7 12 7s3.5 1.567 3.5 3.5c0 1.5855-1.0543 2.9248-2.5 3.355zM5.0412 1.3437L6.2514 2.936C3.9716 4.6715 2.5 7.414 2.5 10.5s1.4716 5.8286 3.7514 7.564l-1.2102 1.5924C2.2814 17.5557.5 14.236.5 10.5c0-3.736 1.7814-7.0557 4.5412-9.1564zm13.9176 0C21.7186 3.4443 23.5 6.764 23.5 10.5c0 3.736-1.7814 7.0557-4.5412 9.1564l-1.2102-1.5925C20.0284 16.3284 21.5 13.586 21.5 10.5s-1.4716-5.8286-3.7514-7.564l1.2102-1.5924zM7.4616 4.5287l1.2104 1.592C7.352 7.1255 6.5 8.7133 6.5 10.5c0 1.7867.852 3.3745 2.172 4.379l-1.2104 1.5925C5.6618 15.1015 4.5 12.9365 4.5 10.5c0-2.4365 1.1618-4.6016 2.9616-5.9715zm9.0768 0C18.3382 5.8982 19.5 8.0634 19.5 10.5s-1.1618 4.6016-2.9616 5.9715L15.328 14.879c1.32-1.0045 2.172-2.5923 2.172-4.379 0-1.7867-.852-3.3745-2.172-4.379l1.2104-1.5925zM12 12c.8284 0 1.5-.6716 1.5-1.5S12.8284 9 12 9s-1.5.6716-1.5 1.5.6716 1.5 1.5 1.5z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-1qr9ebn"
+            >
+              <svg
+                aria-label="play circle icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-iph9p7"
+            >
+              <svg
+                aria-label="account icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 2c1.103 0 2 .898 2 2v16c0 1.103-.897 2-2 2H4c-1.103 0-2-.897-2-2V4c0-1.102.897-2 2-2h16zm-4 18h4.001L20 4h-4v3h-2V4h-4v8H8V4H4v16h4v-3h2v3h4v-8h2v8zM6 13h6v3H6v-3zm6-5h6v3h-6V8z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-1qr9ebn"
+            >
+              <svg
+                aria-label="bookmark icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-1qr9ebn"
+            >
+              <svg
+                aria-label="briefcase icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 7h-3V5c0-1.102-.897-2-2-2H9c-1.103 0-2 .898-2 2v2H4c-1.654 0-3 1.346-3 3v4h1v5c0 1.654 1.346 3 3 3h14c1.654 0 3-1.346 3-3v-5h1v-4c0-1.654-1.346-3-3-3zM9 5h6v2H9V5zm11 14c0 .553-.449 1-1 1H5c-.551 0-1-.447-1-1v-5h4c0 1.103.897 2 2 2h4c1.103 0 2-.897 2-2h4v5zm-10-5v-2h4l-.003 2H10zm11-2h-5c0-1.102-.897-2-2-2h-4c-1.103 0-2 .898-2 2H3v-2c0-.552.449-1 1-1h16c.551 0 1 .448 1 1v2z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-1qr9ebn"
+            >
+              <svg
+                aria-label="search icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.707 20.294L16.314 14.9C17.403 13.504 18 11.799 18 10c0-2.137-.833-4.144-2.344-5.656C14.145 2.832 12.137 2 10 2c-2.137 0-4.146.832-5.656 2.344C2.832 5.856 2 7.863 2 10c0 2.137.832 4.146 2.344 5.656C5.854 17.168 7.863 18 10 18c1.799 0 3.504-.596 4.9-1.685l5.393 5.393 1.414-1.414zM10 16c-1.603 0-3.109-.624-4.242-1.757C4.624 13.11 4 11.603 4 10c0-1.602.624-3.109 1.758-4.242C6.891 4.624 8.397 4 10 4c1.602 0 3.109.624 4.242 1.758C15.376 6.891 16 8.398 16 10c0 1.603-.624 3.11-1.758 4.243C13.109 15.376 11.602 16 10 16z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-iph9p7"
+            >
+              <svg
+                aria-label="chat icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 6h12v2H6V6zm0 3h12v2H6V9zm0 3h8v2H6v-2zM4 4.0005v12h4v2l2.667-2H20v-12H4zm2 18v-4H4c-1.103 0-2-.897-2-2v-12c0-1.103.897-2 2-2h16c1.103 0 2 .897 2 2v12c0 1.103-.897 2-2 2h-8.667l-5.333 4z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-1qr9ebn"
+            >
+              <svg
+                aria-label="download icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.707 9.707L12 14.415 7.293 9.707l1.414-1.414L11 10.586V2h2v8.586l2.293-2.293 1.414 1.414zM15.586 14H22v8H2v-8h6.414l2 2h3.172l2-2zM20 20v-4h-3.586l-2 2H9.586l-2-2H4v4h16z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-1qr9ebn"
+            >
+              <svg
+                aria-label="envelope icon"
+                role="image"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.41421356,6 L12,12.5857864 L18.5857864,6 L5.41421356,6 Z M20,7.41421356 L12.3535534,15.0606602 C12.1582912,15.2559223 11.8417088,15.2559223 11.6464466,15.0606602 L4,7.41421356 L4,18 L20,18 L20,7.41421356 Z M3,4 L21,4 C21.5522847,4 22,4.44771525 22,5 L22,19 C22,19.5522847 21.5522847,20 21,20 L3,20 C2.44771525,20 2,19.5522847 2,19 L2,5 C2,4.44771525 2.44771525,4 3,4 Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            <div
+              className="css-1qr9ebn"
+            >
+              <svg
+                aria-label="user icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 12c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .896-2 2 0 1.103.897 2 2 2s2-.897 2-2c0-1.104-.897-2-2-2zm8 14H4v-1c0-3.533 3.29-6 8-6s8 2.467 8 6v1zM6.159 18h11.683c-.598-1.808-2.833-3-5.841-3s-5.244 1.192-5.842 3z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table nested 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-14f5d4v=""
+  >
+    <div
+      className={null}
+      data-css-l8tnmb=""
+    >
+      <div
+        data-css-bjog8q=""
+      >
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          Name
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          Language
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          Level
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-1ikzs00=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            John
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Javascript
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Expert
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1ikzs00=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Mary
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            PHP
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Novice
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1ikzs00=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Julian
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Java
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Proficient
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table regular 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-14f5d4v=""
+  >
+    <div
+      className={null}
+      data-css-l8tnmb=""
+    >
+      <div
+        data-css-bjog8q=""
+      >
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          NAME
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          LANGUAGE
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          LEVEL
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            John
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Javascript
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Expert
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Mary
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            PHP
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Novice
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Julian
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Java
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Proficient
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table sortable with loader 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-14f5d4v=""
+  >
+    <div
+      className={null}
+      data-css-l8tnmb=""
+    >
+      <div
+        data-css-bjog8q=""
+      >
+        <div
+          data-css-18tm26g=""
+          onClick={[Function]}
+        >
+          NAME
+          <div
+            data-css-ux1z0j=""
+          >
+            <span
+              data-css-8jufrg=""
+            >
+              <div
+                className="css-12f5sv2"
+                data-css-16nv9zt=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+              <div
+                className="css-12f5sv2"
+                data-css-fscpdd=""
+              >
+                <svg
+                  aria-label="caret up icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 9l-5 5 1.41 1.41L12 11.83l3.59 3.58L17 14"
+                  />
+                </svg>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div
+          data-css-18tm26g=""
+          onClick={[Function]}
+        >
+          AGE
+          <div
+            data-css-ux1z0j=""
+          >
+            <span
+              data-css-8jufrg=""
+            >
+              <div
+                className="css-12f5sv2"
+                data-css-16nv9zt=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+              <div
+                className="css-12f5sv2"
+                data-css-fscpdd=""
+              >
+                <svg
+                  aria-label="caret up icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 9l-5 5 1.41 1.41L12 11.83l3.59 3.58L17 14"
+                  />
+                </svg>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div
+          data-css-18tm26g=""
+          onClick={[Function]}
+        >
+          AMOUNT
+          <div
+            data-css-ux1z0j=""
+          >
+            <span
+              data-css-8jufrg=""
+            >
+              <div
+                className="css-12f5sv2"
+                data-css-16nv9zt=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+              <div
+                className="css-12f5sv2"
+                data-css-fscpdd=""
+              >
+                <svg
+                  aria-label="caret up icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 9l-5 5 1.41 1.41L12 11.83l3.59 3.58L17 14"
+                  />
+                </svg>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div
+          data-css-18tm26g=""
+          onClick={[Function]}
+        >
+          CITY
+          <div
+            data-css-ux1z0j=""
+          >
+            <span
+              data-css-8jufrg=""
+            >
+              <div
+                className="css-12f5sv2"
+                data-css-16nv9zt=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+              <div
+                className="css-12f5sv2"
+                data-css-fscpdd=""
+              >
+                <svg
+                  aria-label="caret up icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 9l-5 5 1.41 1.41L12 11.83l3.59 3.58L17 14"
+                  />
+                </svg>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            John
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            19
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            100
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Seoul
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Bob
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            15
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            200
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Los Angeles
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Maria
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            26
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            300
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Paris
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Zack
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            22
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            400
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Amsterdam
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Anne
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            50
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            700
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Salvador
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Louis
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            32
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            1000
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Auckland
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+          >
+            Nick
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            40
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            150
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Johannesburg
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table/column preference grow 2 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-14f5d4v=""
+  >
+    <div
+      className={null}
+      data-css-l8tnmb=""
+    >
+      <div
+        data-css-bjog8q=""
+      >
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+          style={
+            Object {
+              "flexGrow": 2,
+            }
+          }
+        >
+          DESCRIPTION
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          NAME
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          CITY
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          LEVEL
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+            style={
+              Object {
+                "flexGrow": 2,
+              }
+            }
+          >
+            lorem ipsum is a placeholder text commonly used to demonstrate the physical source of the lorem ipsum text
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            John Mayer
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            São Paulo
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Expert
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+            style={
+              Object {
+                "flexGrow": 2,
+              }
+            }
+          >
+            the visual form of a document without relying on meaningful the physical source of the lorem ipsum text
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Mary McGayver
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Rio de Janeiro
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Novice
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+            style={
+              Object {
+                "flexGrow": 2,
+              }
+            }
+          >
+            replacing the actual content with placeholder text allows designers the physical source of the lorem ipsum text
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Julian Assange
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Brasília
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Proficient
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table/column preference grow 3 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-14f5d4v=""
+  >
+    <div
+      className={null}
+      data-css-l8tnmb=""
+    >
+      <div
+        data-css-bjog8q=""
+      >
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+          style={
+            Object {
+              "flexGrow": 3,
+            }
+          }
+        >
+          DESCRIPTION
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          NAME
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          CITY
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          LEVEL
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+            style={
+              Object {
+                "flexGrow": 3,
+              }
+            }
+          >
+            lorem ipsum is a placeholder text commonly used to demonstrate the physical source of the lorem ipsum text
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            John Mayer
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            São Paulo
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Expert
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+            style={
+              Object {
+                "flexGrow": 3,
+              }
+            }
+          >
+            the visual form of a document without relying on meaningful the physical source of the lorem ipsum text
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Mary McGayver
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Rio de Janeiro
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Novice
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+            style={
+              Object {
+                "flexGrow": 3,
+              }
+            }
+          >
+            replacing the actual content with placeholder text allows designers the physical source of the lorem ipsum text
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Julian Assange
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Brasília
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Proficient
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table/column preference grow 4 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-14f5d4v=""
+  >
+    <div
+      className={null}
+      data-css-l8tnmb=""
+    >
+      <div
+        data-css-bjog8q=""
+      >
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+          style={
+            Object {
+              "flexGrow": 4,
+            }
+          }
+        >
+          DESCRIPTION
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          NAME
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          CITY
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+        <div
+          data-css-vqjcn0=""
+          onClick={undefined}
+        >
+          LEVEL
+          <div
+            data-css-ux1z0j=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+            style={
+              Object {
+                "flexGrow": 4,
+              }
+            }
+          >
+            lorem ipsum is a placeholder text commonly used to demonstrate the physical source of the lorem ipsum text
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            John Mayer
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            São Paulo
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Expert
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+            style={
+              Object {
+                "flexGrow": 4,
+              }
+            }
+          >
+            the visual form of a document without relying on meaningful the physical source of the lorem ipsum text
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Mary McGayver
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Rio de Janeiro
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Novice
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1y4u7yy=""
+      >
+        <div
+          data-css-x91rjw=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-4r0r99=""
+            style={
+              Object {
+                "flexGrow": 4,
+              }
+            }
+          >
+            replacing the actual content with placeholder text allows designers the physical source of the lorem ipsum text
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Julian Assange
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Brasília
+          </div>
+          <div
+            data-css-4r0r99=""
+          >
+            Proficient
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

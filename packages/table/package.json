@@ -1,0 +1,59 @@
+{
+  "name": "@pluralsight/ps-design-system-table",
+  "version": "0.0.1",
+  "description": "Design System component for table ui",
+  "main": "index.js",
+  "scripts": {
+    "build": "run-s build:js build:css",
+    "build:css": "build-css",
+    "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build:watch": "npm run build:js -- --watch",
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "test": "jest",
+    "test:watch": "npm run test -- --watchAll",
+    "test:updateSnapshot": "npm run test -- --updateSnapshot"
+  },
+  "keywords": [],
+  "author": "rafaelcardoso",
+  "license": "Apache-2.0",
+  "repository": "pluralsight/design-system",
+  "peerDependencies": {
+    "@pluralsight/ps-design-system-normalize": "^3.0.24",
+    "glamor": "^2.20.0",
+    "react": ">=0.15.0 < 17.0.0"
+  },
+  "dependencies": {
+    "@pluralsight/ps-design-system-core": "^4.1.4",
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "@pluralsight/ps-design-system-badge": "^2.0.13",
+    "@pluralsight/ps-design-system-build": "^1.8.0",
+    "@pluralsight/ps-design-system-button": "^10.6.0",
+    "@pluralsight/ps-design-system-icon": "^8.6.1",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.24",
+    "@pluralsight/ps-design-system-switch": "^1.2.2",
+    "@pluralsight/ps-design-system-circularprogress": "^1.4.6",
+    "@pluralsight/ps-design-system-tag": "^1.4.0",
+    "@storybook/addon-actions": "3.2.14",
+    "@storybook/addon-storyshots": "3.3.15",
+    "@storybook/react": "3.3.15",
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "jest": "^22.4.2",
+    "npm-run-all": "^4.1.2",
+    "ramda": "^0.25.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-test-renderer": "^16.2.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/test/test-setup.js"
+  }
+}
