@@ -378,6 +378,7 @@ export default withHeadings(props => (
       .sidenavOpen {
         transform: translateX(0);
         box-shadow: 0 2px 17px rgba(0, 0, 0, 0.5);
+        z-index: 10; /* TODO: arbitrary; above code mirror; come back when ready to systemize */
       }
       @media screen and (min-width: 769px) {
         .sidenav {
