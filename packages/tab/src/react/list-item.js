@@ -95,6 +95,7 @@ const ListItemComponent = (props, context) => {
     'aria-selected': props.active,
     onClick: props.onClick,
     active: props.active,
+    id: props.id,
     innerRef: props.innerRef,
     tabIndex: '-1',
     themeName: context.themeName || themeDefaultName,
