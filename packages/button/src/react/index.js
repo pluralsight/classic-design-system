@@ -166,6 +166,7 @@ const buttonHtmlPropsWhitelist = [
   'onClick',
   'disabled',
   'className',
+  'role',
   'style',
   'title',
   'tabIndex',
