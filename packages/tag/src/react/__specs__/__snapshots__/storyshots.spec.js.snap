@@ -154,6 +154,37 @@ exports[`Storyshots actions link 1`] = `
 </div>
 `;
 
+exports[`Storyshots actions link with target 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <a
+    data-css-bhtw5h=""
+    href="https://duckduckgo.com/"
+    onClick={undefined}
+    target="_blank"
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      Opens in new window
+    </span>
+  </a>
+</div>
+`;
+
 exports[`Storyshots appearance accent 1`] = `
 <div
   style={

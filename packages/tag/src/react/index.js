@@ -12,6 +12,7 @@ const TagContainer = props => {
     tagName,
     {
       href: props.href,
+      ...(props.target ? { target: props.target } : null),
       ...(props.isPressed ? { 'aria-pressed': true } : null),
       ...(props.onClick ? { role: 'button', tabIndex: 0 } : null),
       onClick: props.onClick,
@@ -58,6 +59,7 @@ const Tag = props => (
   <TagContainer
     appearance={props.appearance}
     href={props.href}
+    target={props.target}
     isPressed={props.isPressed}
     onClick={props.onClick}
     icon={props.icon}

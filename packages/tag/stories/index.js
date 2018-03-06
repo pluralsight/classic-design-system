@@ -34,6 +34,11 @@ Object.keys(Tag.appearances).forEach(app =>
 const actionsStory = storiesOf('actions', module)
   .addDecorator(themeDecorator(addons))
   .add('link', _ => <Tag href="https://duckduckgo.com/">As a link</Tag>)
+  .add('link with target', _ => (
+    <Tag target="_blank" href="https://duckduckgo.com/">
+      Opens in new window
+    </Tag>
+  ))
   .add('button', _ => <Tag onClick={action('button clicked')}>As a button</Tag>)
   .add('just icon button', _ => (
     <Tag icon={<Icon id={Icon.ids.close} onClick={action('icon clicked')} />}>
