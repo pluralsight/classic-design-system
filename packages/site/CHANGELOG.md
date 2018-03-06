@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.28.4"></a>
+## [9.28.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.28.3...@pluralsight/ps-design-system-site@9.28.4) (2018-03-06)
+
+
+### Bug Fixes
+
+* **site:** put sidenav back on top of code editor text ([b8129a6](https://github.com/pluralsight/design-system/commit/b8129a6)), closes [#196](https://github.com/pluralsight/design-system/issues/196)
+
+
+
+
 <a name="9.28.3"></a>
 ## [9.28.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.28.2...@pluralsight/ps-design-system-site@9.28.3) (2018-03-06)
 

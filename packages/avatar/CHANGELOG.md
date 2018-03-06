@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.3"></a>
+## [1.4.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.4.2...@pluralsight/ps-design-system-avatar@1.4.3) (2018-03-06)
+
+
+### Bug Fixes
+
+* **avatar:** hide img or initials based on img load state ([45ea8d7](https://github.com/pluralsight/design-system/commit/45ea8d7)), closes [#191](https://github.com/pluralsight/design-system/issues/191)
+
+
+
+
 <a name="1.4.2"></a>
 ## [1.4.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.4.1...@pluralsight/ps-design-system-avatar@1.4.2) (2018-02-23)
 

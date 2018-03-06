@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.28"></a>
+## [0.4.28](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@0.4.27...@pluralsight/ps-design-system-layout@0.4.28) (2018-03-06)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-layout
+
 <a name="0.4.27"></a>
 ## [0.4.27](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@0.4.26...@pluralsight/ps-design-system-layout@0.4.27) (2018-02-23)
 

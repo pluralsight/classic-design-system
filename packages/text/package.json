@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-text",
-  "version": "10.5.1",
+  "version": "10.5.2",
   "description": "Design system component for text-related ui",
   "main": "index.js",
   "scripts": {
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.24",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.25",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",
     "@storybook/react": "3.2.14",
