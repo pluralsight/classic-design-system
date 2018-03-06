@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="7.5.0"></a>
+# [7.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.4.3...@pluralsight/ps-design-system-tab@7.5.0) (2018-03-06)
+
+
+### Bug Fixes
+
+* **tab:** let id pass thru to list item ([57bc98c](https://github.com/pluralsight/design-system/commit/57bc98c))
+
+
+### Features
+
+* **tab:** allow style/className overrides ([7a4c448](https://github.com/pluralsight/design-system/commit/7a4c448))
+
+
+
+
 <a name="7.4.3"></a>
 ## [7.4.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.4.2...@pluralsight/ps-design-system-tab@7.4.3) (2018-02-23)
 
