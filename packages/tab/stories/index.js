@@ -51,3 +51,30 @@ class InAppExample extends React.Component {
 const defaultStory = storiesOf('default', module)
   .addDecorator(themeDecorator(addons))
   .add('default', _ => <InAppExample />)
+
+const overrideStory = storiesOf('style overrides', module)
+  .addDecorator(themeDecorator(addons))
+  .add('list no borderBottom (style)', _ => (
+    <Tab.List style={{ borderBottom: 'none' }}>
+      <Tab.ListItem id="wow">Wow</Tab.ListItem>
+    </Tab.List>
+  ))
+  .add('listItem disabled opacity (style)', _ => (
+    <Tab.List>
+      <Tab.ListItem style={{ opacity: 0.5 }} id="wow">
+        Disabled look
+      </Tab.ListItem>
+    </Tab.List>
+  ))
+  .add('panel disabled opacity (style)', _ => (
+    <div>
+      <Tab.List>
+        <Tab.ListItem style={{ opacity: 0.5 }} id="wow">
+          Disabled look
+        </Tab.ListItem>
+      </Tab.List>
+      <Tab.Panel style={{ border: '1px solid red' }} labelledBy="wow">
+        This is the content
+      </Tab.Panel>
+    </div>
+  ))

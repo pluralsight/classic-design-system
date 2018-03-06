@@ -52,13 +52,16 @@ class ListComponent extends React.Component {
     }
   }
   render() {
+    const listProps = {
+      role: 'tablist',
+      onKeyDown: this.handleKeyDown,
+      tabIndex: '0',
+      themeName: this.context.themeName || themeDefaultName,
+      ...(this.props.style ? { style: this.props.style } : null),
+      ...(this.props.className ? { className: this.props.className } : null)
+    }
     return (
-      <List
-        role="tablist"
-        onKeyDown={this.handleKeyDown}
-        tabIndex="0"
-        themeName={this.context.themeName || themeDefaultName}
-      >
+      <List {...listProps}>
         {React.Children.map(this.props.children, (el, i) =>
           React.cloneElement(el, {
             active: this.state.activeIndex === i,

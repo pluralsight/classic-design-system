@@ -118,3 +118,158 @@ exports[`Storyshots default default 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-zhyi0r"
+    onKeyDown={[Function]}
+    role="tablist"
+    style={
+      Object {
+        "borderBottom": "none",
+      }
+    }
+    tabIndex="0"
+  >
+    <button
+      aria-selected={true}
+      className="css-1pp0sr"
+      onClick={[Function]}
+      role="tab"
+      tabIndex="-1"
+    >
+      <div
+        className="css-1vk06pf"
+      >
+        Wow
+        <span
+          className="css-1s34vsj"
+        />
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-zhyi0r"
+    onKeyDown={[Function]}
+    role="tablist"
+    tabIndex="0"
+  >
+    <button
+      aria-selected={true}
+      className="css-1pp0sr"
+      onClick={[Function]}
+      role="tab"
+      style={
+        Object {
+          "opacity": 0.5,
+        }
+      }
+      tabIndex="-1"
+    >
+      <div
+        className="css-1vk06pf"
+      >
+        Disabled look
+        <span
+          className="css-1s34vsj"
+        />
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div>
+    <div
+      className="css-zhyi0r"
+      onKeyDown={[Function]}
+      role="tablist"
+      tabIndex="0"
+    >
+      <button
+        aria-selected={true}
+        className="css-1pp0sr"
+        onClick={[Function]}
+        role="tab"
+        style={
+          Object {
+            "opacity": 0.5,
+          }
+        }
+        tabIndex="-1"
+      >
+        <div
+          className="css-1vk06pf"
+        >
+          Disabled look
+          <span
+            className="css-1s34vsj"
+          />
+        </div>
+      </button>
+    </div>
+    <div
+      aria-labelledby="wow"
+      className="css-nil"
+      role="tabpanel"
+      style={
+        Object {
+          "border": "1px solid red",
+        }
+      }
+    >
+      This is the content
+    </div>
+  </div>
+</div>
+`;

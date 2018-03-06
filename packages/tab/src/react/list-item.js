@@ -89,22 +89,27 @@ const ListItem = glamorous.button(
       : null
 )
 
-const ListItemComponent = (props, context) => (
-  <ListItem
-    role="tab"
-    aria-selected={props.active}
-    onClick={props.onClick}
-    active={props.active}
-    innerRef={props.innerRef}
-    tabIndex="-1"
-    themeName={context.themeName || themeDefaultName}
-  >
-    <TextWidth>
-      {props.children}
-      <Bar />
-    </TextWidth>
-  </ListItem>
-)
+const ListItemComponent = (props, context) => {
+  const listItemProps = {
+    role: 'tab',
+    'aria-selected': props.active,
+    onClick: props.onClick,
+    active: props.active,
+    innerRef: props.innerRef,
+    tabIndex: '-1',
+    themeName: context.themeName || themeDefaultName,
+    ...(props.style ? { style: props.style } : null),
+    ...(props.className ? { className: props.className } : null)
+  }
+  return (
+    <ListItem {...listItemProps}>
+      <TextWidth>
+        {props.children}
+        <Bar />
+      </TextWidth>
+    </ListItem>
+  )
+}
 
 ListItemComponent.propTypes = {
   active: PropTypes.bool,
