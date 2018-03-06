@@ -118,6 +118,7 @@ const propsExample = storiesOf('props pass through', module)
   .add('aria-expanded', _ => (
     <Button aria-expanded={true}>aria-expanded</Button>
   ))
+  .add('role', _ => <Button role="link">Role Link</Button>)
   .add('data-something', _ => (
     <Button data-something="wow">Custom data attributes</Button>
   ))
