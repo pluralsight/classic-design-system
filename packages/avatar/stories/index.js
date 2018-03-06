@@ -18,6 +18,12 @@ Object.keys(Avatar.sizes).forEach(size =>
     />
   ))
 )
+storySizes.add('light image', () => (
+  <Avatar
+    src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
+    name="Jake Trent"
+  />
+))
 
 const names = [
   '% Special Characters',
@@ -35,13 +41,19 @@ const names = [
 
 const storyInitials = storiesOf('Using Initials', module)
   .addDecorator(themeDecorator(addons))
-  .add('empty', () => <Avatar name={''} />)
-  .add('null', () => <Avatar name={null} />)
+  .add('empty name, no src', () => <Avatar name={''} />)
+  .add('null name, no src', () => <Avatar name={null} />)
+  .add('error-out image src, with name', () => (
+    <Avatar name="Bill Dill" src="https://jaketrent.com/fake.jpg" />
+  ))
   .add('with invalid gravatar image', () => (
     <Avatar
       name="Alan Turing"
       src="https://secure.gravatar.com/avatar/invalidhash?d=tmp"
     />
+  ))
+  .add('with invalid gravatar image, no name', () => (
+    <Avatar src="https://secure.gravatar.com/avatar/invalidhash?d=tmp" />
   ))
 
 names.forEach(name => {

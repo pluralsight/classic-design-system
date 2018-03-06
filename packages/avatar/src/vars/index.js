@@ -27,5 +27,4 @@ export const colorByLetter = letters.reduce((map, letter, i) => {
 
 export const defaultColor = colors[0]
 
-export const defaultGravatarImage =
-  'https://s2.pluralsight.com/design-system/assets/transparent.gif'
+export const defaultGravatarImage = '404'

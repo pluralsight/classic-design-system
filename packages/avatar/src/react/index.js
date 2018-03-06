@@ -16,25 +16,52 @@ const styles = {
   initials: ({ name }) => glamor.css(css['.psds-avatar__initials'])
 }
 
-const Avatar = ({ className, name, size, src, style }) => {
-  const avatarProps = {
-    ...styles.avatar({ size }),
-    ...(className ? { className } : null),
-    ...(style ? { style } : null)
+class Avatar extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { imageState: 'loading' }
+    this.handleImageLoadSuccess = this.handleImageLoadSuccess.bind(this)
+    this.handleImageLoadError = this.handleImageLoadError.bind(this)
   }
-  return (
-    <div {...avatarProps}>
-      {src && <img {...styles.image()} src={transformSrc(src)} />}
-      {name && (
-        <div
-          {...styles.initials({ name })}
-          style={{ backgroundColor: getColorByName(name) }}
-        >
-          {getInitials(name)}
-        </div>
-      )}
-    </div>
-  )
+  handleImageLoadSuccess() {
+    this.setState({ imageState: 'success' })
+  }
+  handleImageLoadError() {
+    this.setState({ imageState: 'error' })
+  }
+  render() {
+    const { className, name, size, src, style } = this.props
+    const { imageState } = this.state
+    const avatarProps = {
+      ...styles.avatar({ size }),
+      ...(className ? { className } : null),
+      ...(style ? { style } : null)
+    }
+    const shouldShowImg = src && imageState !== 'error'
+    const shouldShowInitials =
+      name && (imageState === 'error' || imageState === 'loading')
+
+    return (
+      <div {...avatarProps}>
+        {shouldShowImg && (
+          <img
+            onError={this.handleImageLoadError}
+            onLoad={this.handleImageLoadSuccess}
+            {...styles.image()}
+            src={transformSrc(src)}
+          />
+        )}
+        {shouldShowInitials && (
+          <div
+            {...styles.initials({ name })}
+            style={{ backgroundColor: getColorByName(name) }}
+          >
+            {getInitials(name)}
+          </div>
+        )}
+      </div>
+    )
+  }
 }
 
 Avatar.defaultProps = {
