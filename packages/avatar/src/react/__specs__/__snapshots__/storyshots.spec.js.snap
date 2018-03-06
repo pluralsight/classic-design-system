@@ -21,8 +21,49 @@ exports[`Storyshots Default large 1`] = `
   >
     <img
       data-css-1ba73bf=""
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https://s2.pluralsight.com/design-system/assets/transparent.gif"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=404"
     />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Default light image 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1m7zcb4=""
+  >
+    <img
+      data-css-1ba73bf=""
+      onError={[Function]}
+      onLoad={[Function]}
+      src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=404"
+    />
+    <div
+      data-css-1t1cogi=""
+      style={
+        Object {
+          "backgroundColor": "#49897C",
+        }
+      }
+    >
+      JT
+    </div>
   </div>
 </div>
 `;
@@ -48,7 +89,9 @@ exports[`Storyshots Default medium 1`] = `
   >
     <img
       data-css-1ba73bf=""
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https://s2.pluralsight.com/design-system/assets/transparent.gif"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=404"
     />
   </div>
 </div>
@@ -75,7 +118,9 @@ exports[`Storyshots Default small 1`] = `
   >
     <img
       data-css-1ba73bf=""
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https://s2.pluralsight.com/design-system/assets/transparent.gif"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=404"
     />
   </div>
 </div>
@@ -102,7 +147,9 @@ exports[`Storyshots Default xLarge 1`] = `
   >
     <img
       data-css-1ba73bf=""
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https://s2.pluralsight.com/design-system/assets/transparent.gif"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=404"
     />
   </div>
 </div>
@@ -129,7 +176,9 @@ exports[`Storyshots Default xSmall 1`] = `
   >
     <img
       data-css-1ba73bf=""
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https://s2.pluralsight.com/design-system/assets/transparent.gif"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=404"
     />
   </div>
 </div>
@@ -498,7 +547,7 @@ exports[`Storyshots Using Initials Uy Marley 1`] = `
 </div>
 `;
 
-exports[`Storyshots Using Initials empty 1`] = `
+exports[`Storyshots Using Initials empty name, no src 1`] = `
 <div
   style={
     Object {
@@ -522,7 +571,46 @@ exports[`Storyshots Using Initials empty 1`] = `
 </div>
 `;
 
-exports[`Storyshots Using Initials null 1`] = `
+exports[`Storyshots Using Initials error-out image src, with name 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1m7zcb4=""
+  >
+    <img
+      data-css-1ba73bf=""
+      onError={[Function]}
+      onLoad={[Function]}
+      src="https://jaketrent.com/fake.jpg"
+    />
+    <div
+      data-css-1t1cogi=""
+      style={
+        Object {
+          "backgroundColor": "#9A171B",
+        }
+      }
+    >
+      BD
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials null name, no src 1`] = `
 <div
   style={
     Object {
@@ -565,7 +653,9 @@ exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
   >
     <img
       data-css-1ba73bf=""
-      src="https://secure.gravatar.com/avatar/invalidhash?d=tmp&d=https://s2.pluralsight.com/design-system/assets/transparent.gif"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="https://secure.gravatar.com/avatar/invalidhash?d=tmp&d=404"
     />
     <div
       data-css-1t1cogi=""
@@ -577,6 +667,35 @@ exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
     >
       AT
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials with invalid gravatar image, no name 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-1m7zcb4=""
+  >
+    <img
+      data-css-1ba73bf=""
+      onError={[Function]}
+      onLoad={[Function]}
+      src="https://secure.gravatar.com/avatar/invalidhash?d=tmp&d=404"
+    />
   </div>
 </div>
 `;
