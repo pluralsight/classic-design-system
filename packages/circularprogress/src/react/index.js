@@ -2,7 +2,10 @@ import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
+import {
+  defaultName as themeDefaultName,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
 import * as vars from '../vars'
@@ -38,7 +41,10 @@ const styles = {
 }
 
 const CircularProgress = (props, context) => {
-  const allProps = { ...props, themeName: context.themeName }
+  const allProps = {
+    ...props,
+    themeName: context.themeName || themeDefaultName
+  }
   const value = typeof allProps.value === 'undefined' ? 25 : allProps.value
   const dashOffset = (100 - value) / 100 * circumference
 
