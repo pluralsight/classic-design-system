@@ -25,6 +25,4 @@ export const colorByLetter = letters.reduce((map, letter, i) => {
   return map
 }, {})
 
-export const defaultColor = colors[0]
-
 export const defaultGravatarImage = '404'

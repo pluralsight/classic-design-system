@@ -25,9 +25,17 @@ describe('avatar/utils', () => {
   })
 
   describe('#getColorByName', () => {
-    test('should return same color for same first letter', () => {
-      expect(utils.getColorByName('Name Test')).toEqual(
+    test('should return different color for different name', () => {
+      expect(utils.getColorByName('Name Test')).not.toEqual(
         utils.getColorByName('Name Other')
+      )
+    })
+
+    test('same name returns repeatable color', () => {
+      const input = 'Some Name'
+      const original = utils.getColorByName(input)
+      ;[1, 2, 3, 4, 5].forEach(_ =>
+        expect(utils.getColorByName(input)).toEqual(original)
       )
     })
 

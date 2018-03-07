@@ -59,3 +59,18 @@ const storyInitials = storiesOf('Using Initials', module)
 names.forEach(name => {
   storyInitials.add(name, () => <Avatar name={name} />)
 })
+
+storyInitials.add('alpha-order names w/ varied colors', () => (
+  <div>
+    <Avatar name="Alan Turing" src="https://example.com/image.jpg" />
+    <Avatar name="Alan Sleuse" src="https://example.com/image.jpg" />
+    <Avatar name="Alan Alanosphere" src="https://example.com/image.jpg" />
+    <Avatar name="Allen Alarm" src="https://example.com/image.jpg" />
+    <Avatar name="Allen Allen" src="https://example.com/image.jpg" />
+    <Avatar name="Allen Stewart" src="https://example.com/image.jpg" />
+    <Avatar name="Brian Can Stand Here" src="https://example.com/image.jpg" />
+    <Avatar name="Brian Can't Stand Here" src="https://example.com/image.jpg" />
+    <Avatar name="Brian Life Of" src="https://example.com/image.jpg" />
+    <Avatar name="Brian O'Mally" src="https://example.com/image.jpg" />
+  </div>
+))

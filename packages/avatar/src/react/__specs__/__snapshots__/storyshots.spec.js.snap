@@ -58,7 +58,7 @@ exports[`Storyshots Default light image 1`] = `
       data-css-1t1cogi=""
       style={
         Object {
-          "backgroundColor": "#49897C",
+          "backgroundColor": "#BE344B",
         }
       }
     >
@@ -207,7 +207,7 @@ exports[`Storyshots Using Initials % Special Characters 1`] = `
       data-css-1t1cogi=""
       style={
         Object {
-          "backgroundColor": "#49897C",
+          "backgroundColor": "#1F964E",
         }
       }
     >
@@ -240,7 +240,7 @@ exports[`Storyshots Using Initials Anakin Skywalker 1`] = `
       data-css-1t1cogi=""
       style={
         Object {
-          "backgroundColor": "#49897C",
+          "backgroundColor": "#2D4E82",
         }
       }
     >
@@ -273,7 +273,7 @@ exports[`Storyshots Using Initials Budapest Skywalker 1`] = `
       data-css-1t1cogi=""
       style={
         Object {
-          "backgroundColor": "#9A171B",
+          "backgroundColor": "#49897C",
         }
       }
     >
@@ -339,7 +339,7 @@ exports[`Storyshots Using Initials Dennis Pimenta 1`] = `
       data-css-1t1cogi=""
       style={
         Object {
-          "backgroundColor": "#076F84",
+          "backgroundColor": "#BE344B",
         }
       }
     >
@@ -372,7 +372,7 @@ exports[`Storyshots Using Initials Diz Blau 1`] = `
       data-css-1t1cogi=""
       style={
         Object {
-          "backgroundColor": "#076F84",
+          "backgroundColor": "#2D4E82",
         }
       }
     >
@@ -405,7 +405,7 @@ exports[`Storyshots Using Initials Harry Potter 1`] = `
       data-css-1t1cogi=""
       style={
         Object {
-          "backgroundColor": "#AE8018",
+          "backgroundColor": "#49897C",
         }
       }
     >
@@ -438,7 +438,7 @@ exports[`Storyshots Using Initials Obi-Wan Kenobi 1`] = `
       data-css-1t1cogi=""
       style={
         Object {
-          "backgroundColor": "#2D4E82",
+          "backgroundColor": "#49897C",
         }
       }
     >
@@ -471,7 +471,7 @@ exports[`Storyshots Using Initials Peia Organa 1`] = `
       data-css-1t1cogi=""
       style={
         Object {
-          "backgroundColor": "#6D8C36",
+          "backgroundColor": "#49897C",
         }
       }
     >
@@ -504,7 +504,7 @@ exports[`Storyshots Using Initials Single 1`] = `
       data-css-1t1cogi=""
       style={
         Object {
-          "backgroundColor": "#49897C",
+          "backgroundColor": "#076F84",
         }
       }
     >
@@ -537,11 +537,232 @@ exports[`Storyshots Using Initials Uy Marley 1`] = `
       data-css-1t1cogi=""
       style={
         Object {
-          "backgroundColor": "#1F964E",
+          "backgroundColor": "#49897C",
         }
       }
     >
       UM
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div>
+    <div
+      data-css-1m7zcb4=""
+    >
+      <img
+        data-css-1ba73bf=""
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://example.com/image.jpg"
+      />
+      <div
+        data-css-1t1cogi=""
+        style={
+          Object {
+            "backgroundColor": "#49897C",
+          }
+        }
+      >
+        AT
+      </div>
+    </div>
+    <div
+      data-css-1m7zcb4=""
+    >
+      <img
+        data-css-1ba73bf=""
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://example.com/image.jpg"
+      />
+      <div
+        data-css-1t1cogi=""
+        style={
+          Object {
+            "backgroundColor": "#49897C",
+          }
+        }
+      >
+        AS
+      </div>
+    </div>
+    <div
+      data-css-1m7zcb4=""
+    >
+      <img
+        data-css-1ba73bf=""
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://example.com/image.jpg"
+      />
+      <div
+        data-css-1t1cogi=""
+        style={
+          Object {
+            "backgroundColor": "#2D4E82",
+          }
+        }
+      >
+        AA
+      </div>
+    </div>
+    <div
+      data-css-1m7zcb4=""
+    >
+      <img
+        data-css-1ba73bf=""
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://example.com/image.jpg"
+      />
+      <div
+        data-css-1t1cogi=""
+        style={
+          Object {
+            "backgroundColor": "#076F84",
+          }
+        }
+      >
+        AA
+      </div>
+    </div>
+    <div
+      data-css-1m7zcb4=""
+    >
+      <img
+        data-css-1ba73bf=""
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://example.com/image.jpg"
+      />
+      <div
+        data-css-1t1cogi=""
+        style={
+          Object {
+            "backgroundColor": "#BE344B",
+          }
+        }
+      >
+        AA
+      </div>
+    </div>
+    <div
+      data-css-1m7zcb4=""
+    >
+      <img
+        data-css-1ba73bf=""
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://example.com/image.jpg"
+      />
+      <div
+        data-css-1t1cogi=""
+        style={
+          Object {
+            "backgroundColor": "#49897C",
+          }
+        }
+      >
+        AS
+      </div>
+    </div>
+    <div
+      data-css-1m7zcb4=""
+    >
+      <img
+        data-css-1ba73bf=""
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://example.com/image.jpg"
+      />
+      <div
+        data-css-1t1cogi=""
+        style={
+          Object {
+            "backgroundColor": "#9A171B",
+          }
+        }
+      >
+        BH
+      </div>
+    </div>
+    <div
+      data-css-1m7zcb4=""
+    >
+      <img
+        data-css-1ba73bf=""
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://example.com/image.jpg"
+      />
+      <div
+        data-css-1t1cogi=""
+        style={
+          Object {
+            "backgroundColor": "#49897C",
+          }
+        }
+      >
+        BH
+      </div>
+    </div>
+    <div
+      data-css-1m7zcb4=""
+    >
+      <img
+        data-css-1ba73bf=""
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://example.com/image.jpg"
+      />
+      <div
+        data-css-1t1cogi=""
+        style={
+          Object {
+            "backgroundColor": "#2D4E82",
+          }
+        }
+      >
+        BO
+      </div>
+    </div>
+    <div
+      data-css-1m7zcb4=""
+    >
+      <img
+        data-css-1ba73bf=""
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://example.com/image.jpg"
+      />
+      <div
+        data-css-1t1cogi=""
+        style={
+          Object {
+            "backgroundColor": "#076F84",
+          }
+        }
+      >
+        BO
+      </div>
     </div>
   </div>
 </div>
@@ -600,7 +821,7 @@ exports[`Storyshots Using Initials error-out image src, with name 1`] = `
       data-css-1t1cogi=""
       style={
         Object {
-          "backgroundColor": "#9A171B",
+          "backgroundColor": "#49897C",
         }
       }
     >
