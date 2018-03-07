@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-circularprogress",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Design System component for circular progress ui",
   "main": "index.js",
   "scripts": {
