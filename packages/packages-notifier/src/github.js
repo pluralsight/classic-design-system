@@ -1,7 +1,7 @@
 // @flow
 import type { GHApi } from './types'
 
-import GitHubApi from 'github'
+import GitHubApi from '@octokit/rest'
 
 import config from './config'
 
