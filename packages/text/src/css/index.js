@@ -17,14 +17,15 @@ export default {
     whiteSpace: 'pre-wrap',
     fontFamily: '"Source Code Pro", monospace',
     fontWeight: core.type.fontWeightMedium,
-    fontSize: core.type.fontSizeSmall,
-    color: core.colors.codeTurquoise
+    fontSize: core.type.fontSizeSmall
   },
   [`.psds-text__code.psds-theme--${themeNames.light}`]: {
+    color: '#0072be',
     background: core.colors.bone,
     border: `1px solid ${core.colors.gray01}`
   },
   [`.psds-text__code.psds-theme--${themeDefaultName}`]: {
+    color: core.colors.blue,
     background: transparentize(0.5, core.colors.black),
     border: `1px solid ${core.colors.black}`
   },
