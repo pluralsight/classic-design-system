@@ -7,8 +7,8 @@ import css from '../css'
 
 const style = ({ themeName }) =>
   glamor.css({
-    ...css[`.psds-text__p.psds-theme--${themeName}`],
-    ...css[`.psds-text__p`]
+    ...css[`.psds-text__p`],
+    ...css[`.psds-text__p.psds-theme--${themeName}`]
   })
 
 const P = (props, context) => (
