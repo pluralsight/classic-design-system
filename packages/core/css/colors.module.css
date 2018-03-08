@@ -22,4 +22,13 @@
   /* gradients */
   --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
   --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
+
+  --psColorsCodeRed: #f26d6d;
+  --psColorsCodeOrange: #ff9466;
+  --psColorsCodeYellow: #ffca80;
+  --psColorsCodeGreen: #b8cc7a;
+  --psColorsCodeTurquoise: #abd9c6;
+  --psColorsCodeBlue: #8ac7e6;
+  --psColorsCodePurple: #e695bd;
+  --psColorsCodeSand: #d99077;
 }

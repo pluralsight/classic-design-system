@@ -19,5 +19,14 @@ module.exports = {
   blue: '#137bc2',
 
   gradientHorz: 'linear-gradient(to right, #f05a28, #e80a89)',
-  gradientVert: 'linear-gradient(to bottom, #f05a28, #e80a89)'
+  gradientVert: 'linear-gradient(to bottom, #f05a28, #e80a89)',
+
+  codeRed: '#f26d6d',
+  codeOrange: '#ff9466',
+  codeYellow: '#ffca80',
+  codeGreen: '#b8cc7a',
+  codeTurquoise: '#abd9c6',
+  codeBlue: '#8ac7e6',
+  codePurple: '#e695bd',
+  codeSand: '#d99077'
 }
