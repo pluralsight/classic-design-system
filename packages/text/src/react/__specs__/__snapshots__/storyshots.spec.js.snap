@@ -1,5 +1,252 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Code empty 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <p
+      data-css-150fsm1=""
+    >
+      before|
+      |after
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Code ends single line 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <p
+      data-css-150fsm1=""
+    >
+      This is where we see 
+      <code
+        data-css-siezjy=""
+      >
+        inline code
+      </code>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Code lead single line 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <p
+      data-css-150fsm1=""
+    >
+      <code
+        data-css-siezjy=""
+      >
+        inline code
+      </code>
+       that is here
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Code line wrap 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <p
+      data-css-150fsm1=""
+    >
+      text at the start
+      <code
+        data-css-siezjy=""
+      >
+        buy-in programmatically, or out of the loop. I'll book a meeting so we can solution this before the sprint is over get buy-in, and closing these latest prospects is like putting socks on an octopus. Knowledge is power
+      </code>
+      text on the end
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Code maintains whitespace 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <code
+      data-css-siezjy=""
+    >
+                      in the middle                
+    </code>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Code middle of paragraph 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <p
+      data-css-150fsm1=""
+    >
+      Please advise soonest streamline data-point, and execute , price point. This is not the hill i want to die on going forward. Diversify kpis not the long pole in my tent. Synergize productive mindfulness can you send me an invite? nor high-level so back of the net vertical integration. Deliverables 
+      <code
+        data-css-siezjy=""
+      >
+        inline code
+      </code>
+       granularity minimize backwards overflow. Baseline locked and loaded, and locked and loaded. Get buy-in programmatically, or out of the loop. I'll book a meeting so we can solution this before the sprint is over get buy-in, and closing these latest prospects is like putting socks on an octopus. Knowledge is power bake it in but take five, punch the tree, and come back in here with a clear head.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Code standalone 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <code
+      data-css-siezjy=""
+    >
+      inline code
+    </code>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Heading className override 1`] = `
 <div
   style={

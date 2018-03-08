@@ -28,6 +28,7 @@
     "@pluralsight/ps-design-system-core": "^4.1.4",
     "@pluralsight/ps-design-system-theme": "^1.2.0",
     "glamorous": "^4.1.0",
+    "polished": "^1.9.2",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {

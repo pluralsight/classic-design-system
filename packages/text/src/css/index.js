@@ -3,10 +3,31 @@ import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme/react'
+import { transparentize } from 'polished'
 
 import * as vars from '../vars'
 
 export default {
+  // __code
+  '.psds-text__code': {
+    display: 'inline-block',
+    padding: `0 ${core.layout.spacingXXSmall}`,
+    borderRadius: '2px',
+    lineHeight: core.type.lineHeightStandard,
+    whiteSpace: 'pre-wrap',
+    fontFamily: '"Source Code Pro", monospace',
+    fontWeight: core.type.fontWeightMedium,
+    fontSize: core.type.fontSizeSmall,
+    color: core.colors.codeTurquoise
+  },
+  [`.psds-text__code.psds-theme--${themeNames.light}`]: {
+    background: core.colors.bone,
+    border: `1px solid ${core.colors.gray01}`
+  },
+  [`.psds-text__code.psds-theme--${themeDefaultName}`]: {
+    background: transparentize(0.5, core.colors.black),
+    border: `1px solid ${core.colors.black}`
+  },
   // __heading
   '.psds-text__heading': {
     margin: `${core.layout.spacingMedium} 0`

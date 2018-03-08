@@ -63,3 +63,53 @@ Object.keys(Text.List.types).forEach(typeProp =>
     </Text.List>
   ))
 )
+
+const code = storiesOf('Code', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
+  .add('empty', () => (
+    <Text.P>
+      before|<Text.Code />|after
+    </Text.P>
+  ))
+  .add('standalone', () => <Text.Code>inline code</Text.Code>)
+  .add('lead single line', () => (
+    <Text.P>
+      <Text.Code>inline code</Text.Code> that is here
+    </Text.P>
+  ))
+  .add('ends single line', () => (
+    <Text.P>
+      This is where we see <Text.Code>inline code</Text.Code>
+    </Text.P>
+  ))
+  .add('middle of paragraph', () => (
+    <Text.P>
+      Please advise soonest streamline data-point, and execute , price point.
+      This is not the hill i want to die on going forward. Diversify kpis not
+      the long pole in my tent. Synergize productive mindfulness can you send me
+      an invite? nor high-level so back of the net vertical integration.
+      Deliverables <Text.Code>inline code</Text.Code> granularity minimize
+      backwards overflow. Baseline locked and loaded, and locked and loaded. Get
+      buy-in programmatically, or out of the loop. I'll book a meeting so we can
+      solution this before the sprint is over get buy-in, and closing these
+      latest prospects is like putting socks on an octopus. Knowledge is power
+      bake it in but take five, punch the tree, and come back in here with a
+      clear head.
+    </Text.P>
+  ))
+  .add('maintains whitespace', () => (
+    <Text.Code>{`                in the middle                `}</Text.Code>
+  ))
+  .add('line wrap', () => (
+    <Text.P>
+      text at the start
+      <Text.Code>
+        buy-in programmatically, or out of the loop. I'll book a meeting so we
+        can solution this before the sprint is over get buy-in, and closing
+        these latest prospects is like putting socks on an octopus. Knowledge is
+        power
+      </Text.Code>
+      text on the end
+    </Text.P>
+  ))
