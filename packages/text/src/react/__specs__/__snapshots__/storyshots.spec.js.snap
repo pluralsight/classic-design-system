@@ -61,7 +61,7 @@ exports[`Storyshots Code ends single line 1`] = `
     >
       This is where we see 
       <code
-        data-css-1wimije=""
+        data-css-1pa4ja1=""
       >
         inline code
       </code>
@@ -97,7 +97,7 @@ exports[`Storyshots Code lead single line 1`] = `
       data-css-145tgfu=""
     >
       <code
-        data-css-1wimije=""
+        data-css-1pa4ja1=""
       >
         inline code
       </code>
@@ -135,7 +135,7 @@ exports[`Storyshots Code line wrap 1`] = `
     >
       text at the start
       <code
-        data-css-1wimije=""
+        data-css-1pa4ja1=""
       >
         buy-in programmatically, or out of the loop. I'll book a meeting so we can solution this before the sprint is over get buy-in, and closing these latest prospects is like putting socks on an octopus. Knowledge is power
       </code>
@@ -169,7 +169,7 @@ exports[`Storyshots Code maintains whitespace 1`] = `
     }
   >
     <code
-      data-css-1wimije=""
+      data-css-1pa4ja1=""
     >
                       in the middle                
     </code>
@@ -205,7 +205,7 @@ exports[`Storyshots Code middle of paragraph 1`] = `
     >
       Please advise soonest streamline data-point, and execute , price point. This is not the hill i want to die on going forward. Diversify kpis not the long pole in my tent. Synergize productive mindfulness can you send me an invite? nor high-level so back of the net vertical integration. Deliverables 
       <code
-        data-css-1wimije=""
+        data-css-1pa4ja1=""
       >
         inline code
       </code>
@@ -239,7 +239,7 @@ exports[`Storyshots Code standalone 1`] = `
     }
   >
     <code
-      data-css-1wimije=""
+      data-css-1pa4ja1=""
     >
       inline code
     </code>
