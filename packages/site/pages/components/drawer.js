@@ -97,7 +97,7 @@ const PinkBox = props => (
         border: 2px dashed ${core.colors.pink};
         color: ${core.colors.pink};
         font-size: 16px;
-        font-family: monospace;
+        font-family: ${core.type.fontFamilyCode};
       }
     `}</style>
   </div>

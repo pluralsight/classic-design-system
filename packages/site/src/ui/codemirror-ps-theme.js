@@ -5,7 +5,7 @@ export default _ => (
     .cm-s-ps-codemirror {
       font-size: 1em;
       line-height: 1.5em;
-      font-family: inconsolata, monospace;
+      font-family: ${core.type.fontFamilyCode};
       letter-spacing: 0.3px;
       word-spacing: 1px;
       background: #272822;
