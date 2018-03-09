@@ -1,5 +1,6 @@
 module.exports = {
   fontFamily: '"Gotham SSm A", "Gotham SSm B", sans-serif',
+  fontFamilyCode: '"Source Code Pro", monospace',
 
   /* font size */
   fontSizeGigantic: '60px',
