@@ -2,7 +2,7 @@ import CodeMirror from 'react-codemirror'
 import core from '@pluralsight/ps-design-system-core'
 
 import CodeMirrorCss from '../../vendor/codemirror-css'
-import CodeMirrorTheme from '../../vendor/codemirror-theme-monokai-sublime-css'
+import CodeMirrorPsTheme from './codemirror-ps-theme'
 
 let modeLoaded = false
 if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
@@ -17,14 +17,14 @@ import { string } from 'prop-types'
 const Code = props => {
   const options = {
     readOnly: true,
-    theme: 'monokai-sublime'
+    theme: 'ps-codemirror'
   }
   if (modeLoaded) options.mode = props.lang
 
   return (
     <div className="code">
       <CodeMirrorCss />
-      <CodeMirrorTheme />
+      <CodeMirrorPsTheme />
       <CodeMirror value={props.children} options={options} />
       <style jsx>{`
         .code {

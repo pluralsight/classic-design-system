@@ -3,7 +3,7 @@ import CodeMirror from 'react-codemirror'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import CodeMirrorCss from '../../../vendor/codemirror-css'
-import CodeMirrorTheme from '../../../vendor/codemirror-theme-monokai-sublime-css'
+import CodeMirrorPsTheme from '../codemirror-ps-theme'
 
 let modeLoaded = false
 if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
@@ -150,7 +150,7 @@ class ReactExample extends React.Component {
   }
   renderSrc() {
     const options = {
-      theme: 'monokai-sublime'
+      theme: 'ps-codemirror'
     }
     if (modeLoaded) options.mode = 'javascript'
 
@@ -174,7 +174,7 @@ class ReactExample extends React.Component {
           }
         `}</style>
         <CodeMirrorCss />
-        <CodeMirrorTheme />
+        <CodeMirrorPsTheme />
       </div>
     )
   }

@@ -4,7 +4,7 @@ import React from 'react'
 import Router from 'next/router'
 
 import CodeMirrorCss from '../../vendor/codemirror-css'
-import CodeMirrorTheme from '../../vendor/codemirror-theme-monokai-sublime-css'
+import CodeMirrorPsTheme from './codemirror-ps-theme'
 
 let CodeMirror
 let codemirrorLoaded = false
@@ -53,7 +53,7 @@ export default class Doc extends React.Component {
     return (
       <div className="markdown">
         <CodeMirrorCss />
-        <CodeMirrorTheme />
+        <CodeMirrorPsTheme />
         <Markdown source={this.props.children} />
         <style jsx>{`
           /* NOTE: this is the tradeoff for being able to write markdown docs.
