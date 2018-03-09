@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.6.1"></a>
+## [10.6.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.6.0...@pluralsight/ps-design-system-text@10.6.1) (2018-03-09)
+
+
+### Bug Fixes
+
+* **text:** use correct codeBlue in code component ([db9028a](https://github.com/pluralsight/design-system/commit/db9028a))
+
+
+
+
 <a name="10.6.0"></a>
 # [10.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.5.2...@pluralsight/ps-design-system-text@10.6.0) (2018-03-09)
 

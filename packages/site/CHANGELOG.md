@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.29.1"></a>
+## [9.29.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.29.0...@pluralsight/ps-design-system-site@9.29.1) (2018-03-09)
+
+
+### Bug Fixes
+
+* **site:** bad colors link ([1861601](https://github.com/pluralsight/design-system/commit/1861601))
+* **site:** color the doc code blocks ([21358a9](https://github.com/pluralsight/design-system/commit/21358a9))
+* **site:** missing source code pro usages ([75a45f1](https://github.com/pluralsight/design-system/commit/75a45f1))
+
+
+
+
 <a name="9.29.0"></a>
 # [9.29.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.28.5...@pluralsight/ps-design-system-site@9.29.0) (2018-03-09)
 
