@@ -25,7 +25,7 @@ export default {
     border: `1px solid ${core.colors.gray01}`
   },
   [`.psds-text__code.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.blue,
+    color: core.colors.codeBlue,
     background: transparentize(0.5, core.colors.black),
     border: `1px solid ${core.colors.black}`
   },
