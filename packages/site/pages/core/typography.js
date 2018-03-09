@@ -307,7 +307,7 @@ const MonospaceFont = _ => (
     <P>
       To use the Source Code Pro on your site, you can install it by importing
       it from{' '}
-      <Link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500">
+      <Link href="https://fonts.google.com/specimen/Source+Code+Pro">
         Google fonts
       </Link>.
     </P>
@@ -400,7 +400,7 @@ export default withServerProps(_ => (
       <P>
         Pluralsight’s monospace font family for the web is{' '}
         <Link
-          href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500"
+          href="https://fonts.google.com/specimen/Source+Code+Pro"
           target="_blank"
         >
           Source Code Pro
