@@ -6,5 +6,8 @@ export default _ => (
     body {
       background: ${core.colors.white};
     }
+    code {
+      font-family: ${core.type.fontFamilyCode};
+    }
   `}</style>
 )
