@@ -67,7 +67,7 @@ const CodeColors = _ => (
       keywords, storage, selector, markup italic, diff changed
     </ColorDesc>
     <ColorDesc varName="codeOrange">
-      Integers, Boolean, Constants, XML Attributes, Markup Link Url
+      integers, boolean, constants, XML attributes, markup link url
     </ColorDesc>
     <ColorDesc varName="codeYellow">
       classes, markup bold, search text background
@@ -85,7 +85,7 @@ const CodeColors = _ => (
       variables, XML tags, markup link text, markup lists, diff deleted
     </ColorDesc>
     <ColorDesc varName="codeSand">
-      deprecated, opening/closing embedded language tags e.g.
+      {`deprecated, opening/closing embedded language tags e.g. <?php?>`}
     </ColorDesc>
     <style jsx>{`
       .colors {
