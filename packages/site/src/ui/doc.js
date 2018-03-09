@@ -25,7 +25,7 @@ export default class Doc extends React.Component {
       document.querySelectorAll('.markdown pre code').forEach(node =>
         CodeMirror(el => node.parentNode.replaceChild(el, node), {
           mode: 'javascript',
-          theme: 'monokai-sublime',
+          theme: 'ps-codemirror',
           readOnly: true,
           value: node.innerText.trim()
         })
