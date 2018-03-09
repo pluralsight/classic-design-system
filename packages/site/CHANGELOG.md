@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.29.2"></a>
+## [9.29.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.29.1...@pluralsight/ps-design-system-site@9.29.2) (2018-03-09)
+
+
+### Bug Fixes
+
+* **site:** link to web ui for monospace font ([e42a6c0](https://github.com/pluralsight/design-system/commit/e42a6c0))
+
+
+
+
 <a name="9.29.1"></a>
 ## [9.29.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.29.0...@pluralsight/ps-design-system-site@9.29.1) (2018-03-09)
 
