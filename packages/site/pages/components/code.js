@@ -45,6 +45,7 @@ const ColorDesc = props => (
         margin-right: ${core.layout.spacingMedium};
       }
       .varName {
+        font-family: ${core.type.fontFamilyCode};
       }
       .divider {
         display: inline-block;
