@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.1.4...@pluralsight/ps-design-system-core@4.2.0) (2018-03-09)
+
+
+### Features
+
+* **core:** add code colors ([586b0fd](https://github.com/pluralsight/design-system/commit/586b0fd))
+* **core:** add fontFamilyCode for monospace font ([f545c0b](https://github.com/pluralsight/design-system/commit/f545c0b))
+
+
+
+
 <a name="4.1.4"></a>
 ## [4.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.1.3...@pluralsight/ps-design-system-core@4.1.4) (2018-02-09)
 

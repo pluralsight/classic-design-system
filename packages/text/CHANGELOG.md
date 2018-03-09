@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.6.0"></a>
+# [10.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.5.2...@pluralsight/ps-design-system-text@10.6.0) (2018-03-09)
+
+
+### Bug Fixes
+
+* **text:** color on Code component ([6e07532](https://github.com/pluralsight/design-system/commit/6e07532))
+* **text:** reorder css cascade for P component ([db404a9](https://github.com/pluralsight/design-system/commit/db404a9))
+* **text:** support code without theme ([d3d6b1d](https://github.com/pluralsight/design-system/commit/d3d6b1d))
+
+
+### Features
+
+* **text:** add inline code component ([73bbe8e](https://github.com/pluralsight/design-system/commit/73bbe8e))
+
+
+
+
 <a name="10.5.2"></a>
 ## [10.5.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.5.1...@pluralsight/ps-design-system-text@10.5.2) (2018-03-06)
 

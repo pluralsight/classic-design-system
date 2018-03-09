@@ -1,7 +1,18 @@
 # Change Log
 
 All notable changes to this project will be documented in this file.
-See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/pluralsight/design-system/compare/packages-api@1.1.1...packages-api@1.1.2) (2018-03-09)
+
+
+### Bug Fixes
+
+* **notifier:** sec vuln in package; update all ([bb05ecb](https://github.com/pluralsight/design-system/commit/bb05ecb))
+
+
+
 
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/pluralsight/design-system/compare/packages-api@1.1.0...packages-api@1.1.1) (2017-10-16)
