@@ -317,6 +317,9 @@ export default withHeadings(props => (
       <NavLink href="/components/circularprogress" headings={props.headings}>
         Circular Progress
       </NavLink>
+      <NavLink href="/components/code" headings={props.headings}>
+        Code
+      </NavLink>
       <NavLink href="/components/dialog" headings={props.headings}>
         Dialog
       </NavLink>

@@ -15,6 +15,7 @@ module.exports = {
       '/components/button': { page: '/components/button' },
       '/components/card': { page: '/components/card' },
       '/components/circularprogress': { page: '/components/circularprogress' },
+      '/components/code': { page: '/components/code' },
       '/components/dialog': { page: '/components/dialog' },
       '/components/dialog-modal-example': {
         page: '/components/dialog-modal-example'

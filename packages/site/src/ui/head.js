@@ -15,6 +15,10 @@ export default _ => (
     />
     <link
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500"
+    />
+    <link
+      rel="stylesheet"
       href="https://unpkg.com/@pluralsight/ps-design-system-normalize"
     />
   </Head>

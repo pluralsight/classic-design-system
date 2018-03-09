@@ -1,8 +1,11 @@
 import core from '@pluralsight/ps-design-system-core'
+import { Code as DSCode } from '@pluralsight/ps-design-system-text/react'
+
 import {
   Chrome,
   Code,
   Content,
+  Link,
   P,
   PageHeading,
   SectionHeading,
@@ -292,6 +295,64 @@ const LineHeight = _ => (
   </div>
 )
 
+const MonospaceFont = _ => (
+  <div>
+    <div className="box">
+      <div>{`A B C D E F G H I J K L M N O P Q R S T U V W X Y Z`}</div>
+      <div>{`a b c d e f g h i j k l m n o p q r s t u v w x y z`}</div>
+      <div>{`0 1 2 3 4 5 6 7 8 9`}</div>
+      <div>{`‘ ? ’ “ ! ” ( % ) [ # ] { @ } / & \ < - + ÷ × = >`}</div>
+      <div>{`® © $ € £ ¥ ¢ : ; , . *`}</div>
+    </div>
+    <P>
+      To use the Source Code Pro on your site, you can install it by importing
+      it from{' '}
+      <Link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500">
+        Google fonts
+      </Link>.
+    </P>
+    <P>Only one Source Code Pro font weight is available for use.</P>
+    <div className="box fontWeight">
+      <div className="fontLetter">Aa</div>
+      <div className="fontLabel">MEDIUM (500)</div>
+    </div>
+    <P>
+      Use monspace font when presenting code. Refrain from using for any other
+      purpose. When displaying code, try keeping the font size consistent at{' '}
+      <DSCode>psTypeFontSizeSmall</DSCode> size whenever possible. Add
+      consistent{' '}
+      <Link href="/components/code#syntax-highlighting">
+        syntax highlighting
+      </Link>.
+    </P>
+    <style jsx>{`
+      .box {
+        background: ${core.colors.bone};
+        border-radius: 12px;
+        padding: ${core.layout.spacingLarge};
+        margin: ${core.layout.spacingLarge} 0;
+        font-size: ${core.type.fontSizeLarge};
+        line-height: ${core.type.lineHeightExtra};
+        font-weight: ${core.type.fontWeightBook};
+      }
+      .fontWeight {
+        text-align: center;
+      }
+      .fontLetter {
+        padding: ${core.layout.spacingLarge};
+        font-family: ${core.type.fontFamilyCode};
+        font-weight: ${core.type.fontWeightMedium};
+        font-size: ${core.type.fontSizeGigantic};
+        letter-spacing: ${core.type.letterSpacingGigantic};
+      }
+      .fontLabel {
+        color: ${core.colors.gray03};
+        font-size: ${core.type.fontSizeXSmall};
+      }
+    `}</style>
+  </div>
+)
+
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Typography">
@@ -328,6 +389,18 @@ export default withServerProps(_ => (
         <Code language="css">{`@import "@pluralsight/ps-design-system-core";
 .mySelector { line-height: var(--psTypeLineHeightStandard); }`}</Code>
       </div>
+
+      <SectionHeading>Monospace font</SectionHeading>
+      <P>
+        Pluralsight’s monospace font family for the web is{' '}
+        <Link
+          href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500"
+          target="_blank"
+        >
+          Source Code Pro
+        </Link>.
+      </P>
+      <MonospaceFont />
     </Content>
   </Chrome>
 ))
