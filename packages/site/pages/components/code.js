@@ -160,7 +160,7 @@ export default withServerProps(_ => (
       <P>
         In order to ensure proper color contrast when rendering your code
         blocks, don't use any dark background{' '}
-        <Link href="/core/colors">color</Link> lighter than{' '}
+        <Link href="/core/color">color</Link> lighter than{' '}
         <DSCode>gray06</DSCode>.
       </P>
       <Code language="bash">{`const what = "\'s amazing"
@@ -170,7 +170,7 @@ console.log('Design System' + what)`}</Code>
       <P>
         Code highlighting should be applied consistently throughout the product
         based on the language syntax being highlighted. Install the{' '}
-        <Link href="/core/colors">core palette</Link> to access standard code
+        <Link href="/core/color">core palette</Link> to access standard code
         highlighting colors.
       </P>
       <CodeColors />
