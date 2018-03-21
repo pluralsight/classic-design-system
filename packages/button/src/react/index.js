@@ -170,6 +170,7 @@ const buttonHtmlPropsWhitelist = [
   'style',
   'title',
   'tabIndex',
+  'target',
   /onMouse/,
   /^aria-/,
   /^data-/
