@@ -1,3 +1,6 @@
+const { parsed: localEnv } = require('dotenv').config()
+const webpack = require('webpack')
+
 module.exports = {
   // TODO: read directory to make more dynamic
   exportPathMap: function() {
@@ -40,5 +43,9 @@ module.exports = {
       '/core/typography': { page: '/core/typography' },
       '/patterns/iconography': { page: '/patterns/iconography' }
     }
+  },
+  webpack(config) {
+    config.plugins.push(new webpack.EnvironmentPlugin(localEnv))
+    return config
   }
 }

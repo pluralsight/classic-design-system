@@ -37,6 +37,12 @@ const ChangeLog = props => {
   )
 }
 
+const getPackagesApiHost = _ => {
+  const host = process.env.PACKAGES_API_HOST
+  if (!host) throw new Error('process.env.PACKAGES_API_HOST required')
+  return host
+}
+
 export default class extends React.Component {
   constructor(props) {
     super(props)
@@ -45,7 +51,7 @@ export default class extends React.Component {
   async fetchPackages() {
     try {
       const res = await fetch(
-        'https://ps-design-system-api.herokuapp.com/api/v1/packages'
+        getPackagesApiHost() + '/api/v1/packages'
       )
       const json = await res.json()
       if (res.status === 200) {
