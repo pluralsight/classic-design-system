@@ -363,6 +363,9 @@ export default withHeadings(props => (
       <NavLink href="/patterns/iconography" headings={props.headings}>
         Iconography
       </NavLink>
+      <NavLink href="/patterns/voice-tone" headings={props.headings}>
+        Voice & Tone
+      </NavLink>
     </Group>
     <style jsx>{`
       .sidenav {
