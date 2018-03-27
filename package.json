@@ -12,7 +12,6 @@
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
     "deploy": "cd packages/site && npm run build && git checkout -- ../../docs/CNAME ../../docs/.nojekyll && git add ../../docs && git commit -m \"chore(site): regen\" && git push origin master",
-    "precommit": "lint-staged",
     "commitmsg": "commitlint -e",
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
@@ -23,6 +22,11 @@
     "test": "jest",
     "test:watch": "npm run test -- --watchAll",
     "test:updateSnapshot": "npm run test -- --updateSnapshot"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "keywords": [
     "pluralsight",
@@ -50,7 +54,7 @@
     "camelize": "^1.0.0",
     "gulp": "^3.9.1",
     "gulp-bump": "^3.1.0",
-    "husky": "^0.14.3",
+    "husky": "^0.15.0-rc.13",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^20.0.0",
     "lerna": "^2.0.0-rc.4",
