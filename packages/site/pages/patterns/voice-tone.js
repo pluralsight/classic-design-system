@@ -164,18 +164,30 @@ export default withServerProps(_ => (
 
       <SectionHeading>Point of view</SectionHeading>
       <P>
-        Do write in <u>second person</u>, meaning address the audience as “you,”
-        “your,” etc. We talk to our audience directly, addressing them as “you”
-        not as “one,” “persons,” etc. (We want to avoid phrases like this: “To
-        take a skill assessment, one needs to select…”) This language feels
-        formal and unnatural.
+        Do write in{' '}
+        <Link
+          target="_blank"
+          appearance={Link.appearances.subtle}
+          href="https://en.wikipedia.org/wiki/Narration#Second-person"
+        >
+          second person
+        </Link>, meaning address the audience as “you,” “your,” etc. We talk to
+        our audience directly, addressing them as “you” not as “one,” “persons,”
+        etc. (We want to avoid phrases like this: “To take a skill assessment,
+        one needs to select…”) This language feels formal and unnatural.
       </P>
       <P>
         Exception: When writing copy for interactive challenges, write in the
         first-person-plural point of view instead. We write in this way to be
         more inclusive and encouraging to the learner. To show that we're on
         this learning journey with them. Read more in the{' '}
-        <u>challenge writing styleguide</u>.
+        <Link
+          appearance={Link.appearances.subtle}
+          href="https://github.com/ps-dev/interactive-courses/wiki/Challenge-Writing-Styleguide"
+          target="_blank"
+        >
+          challenge writing styleguide
+        </Link>.
       </P>
 
       <Divider />
