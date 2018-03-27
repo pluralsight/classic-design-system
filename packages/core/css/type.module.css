@@ -1,5 +1,6 @@
 :root {
   --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  --psTypeFontFamilyCode: "Source Code Pro", monospace;
 
   /* font size */
   --psTypeFontSizeGigantic: 60px;
