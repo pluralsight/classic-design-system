@@ -33,10 +33,11 @@ const Divider = _ => (
 )
 
 const ExampleHeader = props => (
-  <header className="header">
-    <h3>{props.children}</h3>
+  <header>
+    <h3 className="header">{props.children}</h3>
     <style jsx>{`
       .header {
+        font-weight: ${core.type.fontWeightMedium};
       }
     `}</style>
   </header>
@@ -84,7 +85,9 @@ const QuoteBox = props => (
         background: ${core.colors.bone};
         padding: ${core.layout.spacingLarge} ${core.layout.spacingXLarge};
         border-radius: 12px;
-        line-height: ${core.layout.lineHeightStandard};
+        line-height: ${core.type.lineHeightStandard};
+        font-weight: ${core.type.fontWeightMedium};
+        color: ${core.colors.black};
       }
       .openquote,
       .closequote {
@@ -224,12 +227,12 @@ export default withServerProps(_ => (
         </P>
         <QuoteBox>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <Text.List>
+            <Text.List style={{ color: core.colors.black }}>
               <Text.List.Item>Learn now</Text.List.Item>
               <Text.List.Item>Get started</Text.List.Item>
               <Text.List.Item>Get your IQ</Text.List.Item>
             </Text.List>
-            <Text.List>
+            <Text.List style={{ color: core.colors.black }}>
               <Text.List.Item>Watch a course</Text.List.Item>
               <Text.List.Item>Start a path</Text.List.Item>
               <Text.List.Item>Tell us more</Text.List.Item>
@@ -249,7 +252,7 @@ export default withServerProps(_ => (
           start at the hour. Use noon or midnight vs. 12 a.m. and 12 p.m.
         </P>
         <QuoteBox>
-          <Text.List>
+          <Text.List style={{ color: core.colors.black }}>
             <Text.List.Item>10:30 a.m.–1 p.m.</Text.List.Item>
             <Text.List.Item>Noon–3 p.m.</Text.List.Item>
             <Text.List.Item>1–5:30 p.m.</Text.List.Item>
@@ -262,7 +265,7 @@ export default withServerProps(_ => (
           four digit year.
         </P>
         <QuoteBox>
-          <Text.List>
+          <Text.List style={{ color: core.colors.black }}>
             <Text.List.Item>On May 15, Microsoft announced…</Text.List.Item>
             <Text.List.Item>Jan 23, 2017</Text.List.Item>
             <Text.List.Item>Jan 2017</Text.List.Item>
@@ -281,7 +284,7 @@ export default withServerProps(_ => (
           standard time format, no leading zeros.
         </P>
         <QuoteBox>
-          <Text.List>
+          <Text.List style={{ color: core.colors.black }}>
             <Text.List.Item>23h 8m</Text.List.Item>
             <Text.List.Item>23h </Text.List.Item>
             <Text.List.Item>About 1 hour</Text.List.Item>
@@ -296,7 +299,7 @@ export default withServerProps(_ => (
           acceptable. Do not use “By” in the beginning of an author(s) string.
         </P>
         <QuoteBox>
-          <Text.List>
+          <Text.List style={{ color: core.colors.black }}>
             <Text.List.Item>Gary Eimerman</Text.List.Item>
             <Text.List.Item>Gary Eimerman, Troy Hunt </Text.List.Item>
             <Text.List.Item>Eimerman, Hunt</Text.List.Item>
