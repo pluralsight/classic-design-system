@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.3.4"></a>
+## [8.3.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.3.3...@pluralsight/ps-design-system-card@8.3.4) (2018-03-27)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-card
+
 <a name="8.3.3"></a>
 ## [8.3.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.3.2...@pluralsight/ps-design-system-card@8.3.3) (2018-03-09)
 

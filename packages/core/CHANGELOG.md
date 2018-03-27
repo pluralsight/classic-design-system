@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.2.1"></a>
+## [4.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.2.0...@pluralsight/ps-design-system-core@4.2.1) (2018-03-27)
+
+
+### Bug Fixes
+
+* **core:** add psTypeFontFamilyCode to type.module.css ([a6f2ab3](https://github.com/pluralsight/design-system/commit/a6f2ab3))
+
+
+
+
 <a name="4.2.0"></a>
 # [4.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.1.4...@pluralsight/ps-design-system-core@4.2.0) (2018-03-09)
 
