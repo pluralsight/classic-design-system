@@ -20,29 +20,21 @@ import {
 const work = {
   now: [
     {
-      title: 'CSS Extractions',
-      tags: ['Component']
+      title: 'Voice and Tone',
+      tags: ['Pattern']
     }
   ],
   next: [
     {
-      title: 'Contribution Discovery',
-      tags: ['Component']
-    },
-    {
-      title: 'Voice and Tone',
-      tags: ['Pattern']
-    },
-    {
       title: 'Reporting',
       tags: ['Pattern']
-    },
-    {
-      title: 'Usage Dashboard',
-      tags: ['Tool']
     }
   ],
   future: [
+    {
+      title: 'Table',
+      tags: ['Component']
+    },
     {
       title: 'Text (vNext)',
       tags: ['Component']
@@ -56,27 +48,11 @@ const work = {
       tags: ['Component']
     },
     {
-      title: 'Breadcrumb',
-      tags: ['Component']
-    },
-    {
-      title: 'Modal',
-      tags: ['Component']
-    },
-    {
-      title: 'Dialog',
-      tags: ['Pattern']
-    },
-    {
       title: 'Blank State',
       tags: ['Pattern']
     },
     {
       title: 'Error Pages',
-      tags: ['Pattern']
-    },
-    {
-      title: 'Data Table',
       tags: ['Pattern']
     }
   ]
