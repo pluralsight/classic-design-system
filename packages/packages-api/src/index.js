@@ -9,7 +9,7 @@ import packages2 from './packages2'
 const app: express$Application = express()
 
 app.use('/api', cors({ origin: '*' }))
-app.use('/health-check', (_, res: express$Response) => {
+app.use('/api/health-check', (_, res: express$Response) => {
   res.sendStatus(200)
 })
 app.use('/api/v1/packages', packages)
