@@ -1,9 +1,8 @@
 // @flow
 import npm from 'npm'
 
-type Package = {
-  name: string,
-  version: number
+type Packages = {
+  [name: string]: string
 }
 type NpmPackage = {
   version: number
@@ -12,7 +11,7 @@ type NpmResult = {
   [packageName: string]: NpmPackage
 }
 
-export const findAll = (): Promise<Package[]> =>
+export const findAll = (): Promise<Packages> =>
   new Promise((resolve, reject) => {
     npm.load({}, _ => {
       npm.commands.search(
@@ -25,10 +24,9 @@ export const findAll = (): Promise<Package[]> =>
           }
 
           const packages = Object.keys(result).reduce((acc, pkgName) => {
-            return acc.concat([
-              { name: pkgName, version: result[pkgName].version }
-            ])
-          }, [])
+            acc[pkgName] = result[pkgName].version
+            return acc
+          }, {})
 
           resolve(packages)
         }
