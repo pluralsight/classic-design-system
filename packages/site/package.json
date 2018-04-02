@@ -9,7 +9,7 @@
     "npm": ">= 4.2"
   },
   "scripts": {
-    "build": "next build && next export -o dist && node build/cp-dist",
+    "build": "next build && next export -o dist",
     "start": "next -p 1337"
   },
   "author": "jaketrent",
@@ -52,9 +52,7 @@
     "react": "^16.2.0",
     "react-codemirror": "^1.0.0",
     "react-dom": "^16.2.0",
-    "react-markdown": "^2.5.0",
-    "recursive-copy": "^2.0.9",
-    "rimraf": "^2.6.2"
+    "react-markdown": "^2.5.0"
   },
   "dependencies": {
     "dotenv": "^5.0.1",
