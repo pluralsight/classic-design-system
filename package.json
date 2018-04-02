@@ -11,7 +11,6 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
-    "deploy": "cd packages/site && npm run build && git checkout -- ../../docs/CNAME ../../docs/.nojekyll && git add ../../docs && git commit -m \"chore(site): regen\" && git push origin master",
     "commitmsg": "commitlint -e",
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
