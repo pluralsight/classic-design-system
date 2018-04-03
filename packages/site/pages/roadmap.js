@@ -18,25 +18,10 @@ import {
 } from '../src/ui'
 
 const work = {
-  now: [
-    {
-      title: 'Voice and Tone',
-      tags: ['Pattern']
-    }
-  ],
+  now: [],
   next: [
     {
-      title: 'Reporting',
-      tags: ['Pattern']
-    }
-  ],
-  future: [
-    {
       title: 'Table',
-      tags: ['Component']
-    },
-    {
-      title: 'Text (vNext)',
       tags: ['Component']
     },
     {
@@ -54,6 +39,16 @@ const work = {
     {
       title: 'Error Pages',
       tags: ['Pattern']
+    }
+  ],
+  future: [
+    {
+      title: 'Reporting',
+      tags: ['Pattern']
+    },
+    {
+      title: 'Text (vNext)',
+      tags: ['Component']
     }
   ]
 }
