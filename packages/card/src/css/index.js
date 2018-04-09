@@ -41,7 +41,8 @@ export default {
     position: 'relative',
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    background: core.colors.gray05
   },
   // __overlays--size
   [`.psds-card__overlays--size-${vars.sizes.small}`]: {
@@ -184,11 +185,12 @@ export default {
     top: core.layout.spacingSmall,
     left: 0,
     padding: `${core.layout.spacingXXSmall} ${core.layout.spacingXSmall}`,
-    background: core.colors.gray04,
+    background: transparentize(0.1, core.colors.white),
     borderRadius: '0 2px 2px 0',
-    color: core.colors.white,
+    color: core.colors.gray06,
     textTransform: 'uppercase',
-    fontSize: '10px',
+    fontSize: core.type.fontSizeXSmall,
+    fontWeight: core.type.fontWeightBold,
     lineHeight: '16px'
   },
 

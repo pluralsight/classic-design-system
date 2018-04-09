@@ -28,7 +28,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -87,6 +87,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -99,6 +100,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -182,7 +184,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -259,6 +261,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -271,6 +274,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -354,7 +358,7 @@ exports[`Storyshots actionBar single action 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -413,6 +417,7 @@ exports[`Storyshots actionBar single action 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -425,6 +430,7 @@ exports[`Storyshots actionBar single action 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -508,7 +514,7 @@ exports[`Storyshots bonusBar only text 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -550,6 +556,7 @@ exports[`Storyshots bonusBar only text 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -562,6 +569,7 @@ exports[`Storyshots bonusBar only text 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -645,7 +653,7 @@ exports[`Storyshots bonusBar some element 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -700,6 +708,7 @@ exports[`Storyshots bonusBar some element 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -712,6 +721,7 @@ exports[`Storyshots bonusBar some element 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -795,7 +805,7 @@ exports[`Storyshots combo everything 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <span
           className="css-15yq56v"
@@ -893,7 +903,7 @@ exports[`Storyshots combo everything 1`] = `
           </button>
         </div>
         <div
-          className="css-if1ca6"
+          className="css-1cmxrdf"
         >
           <div
             className="css-1pif58i"
@@ -955,6 +965,7 @@ exports[`Storyshots combo everything 1`] = `
                     …
                   </span>
                   <span
+                    aria-hidden="true"
                     style={
                       Object {
                         "display": "block",
@@ -967,6 +978,7 @@ exports[`Storyshots combo everything 1`] = `
                     Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1, 2, Action Bar, and More Really. Why Not Put More In? Release a New Edition Every Year With All the Excesses of our VC Budget? Boundless Features Will Be Yours 2000
                   </span>
                   <span
+                    aria-hidden="true"
                     style={
                       Object {
                         "display": "block",
@@ -1116,7 +1128,7 @@ exports[`Storyshots fullOverlay link 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -1166,6 +1178,7 @@ exports[`Storyshots fullOverlay link 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -1178,6 +1191,7 @@ exports[`Storyshots fullOverlay link 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -1261,7 +1275,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -1324,6 +1338,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -1336,6 +1351,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -1419,7 +1435,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <span
           className="css-15yq56v"
@@ -1490,6 +1506,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -1502,6 +1519,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -1585,7 +1603,7 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -1631,6 +1649,7 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -1643,6 +1662,7 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -1726,7 +1746,7 @@ exports[`Storyshots fullOverlay text only 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -1772,6 +1792,7 @@ exports[`Storyshots fullOverlay text only 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -1784,6 +1805,7 @@ exports[`Storyshots fullOverlay text only 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -1867,7 +1889,7 @@ exports[`Storyshots image image link 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <span
           className="css-15yq56v"
@@ -1912,6 +1934,7 @@ exports[`Storyshots image image link 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -1924,6 +1947,7 @@ exports[`Storyshots image image link 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -2007,7 +2031,7 @@ exports[`Storyshots image image only 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-11sk7pq"
@@ -2044,6 +2068,7 @@ exports[`Storyshots image image only 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -2056,6 +2081,7 @@ exports[`Storyshots image image only 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -2139,7 +2165,7 @@ exports[`Storyshots metadata multiple text 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -2176,6 +2202,7 @@ exports[`Storyshots metadata multiple text 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -2188,6 +2215,7 @@ exports[`Storyshots metadata multiple text 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -2291,7 +2319,7 @@ exports[`Storyshots metadata single text 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -2328,6 +2356,7 @@ exports[`Storyshots metadata single text 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -2340,6 +2369,7 @@ exports[`Storyshots metadata single text 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -2432,7 +2462,7 @@ exports[`Storyshots metadata text link 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -2469,6 +2499,7 @@ exports[`Storyshots metadata text link 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -2481,6 +2512,7 @@ exports[`Storyshots metadata text link 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -2581,7 +2613,7 @@ exports[`Storyshots metadata text wrapper 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -2618,6 +2650,7 @@ exports[`Storyshots metadata text wrapper 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -2630,6 +2663,7 @@ exports[`Storyshots metadata text wrapper 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -2726,7 +2760,7 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -2763,6 +2797,7 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -2775,6 +2810,7 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -2918,7 +2954,7 @@ exports[`Storyshots progress done 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -2963,6 +2999,7 @@ exports[`Storyshots progress done 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -2975,6 +3012,7 @@ exports[`Storyshots progress done 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -3058,7 +3096,7 @@ exports[`Storyshots progress none 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -3095,6 +3133,7 @@ exports[`Storyshots progress none 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -3107,6 +3146,7 @@ exports[`Storyshots progress none 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -3190,7 +3230,7 @@ exports[`Storyshots progress some 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -3235,6 +3275,7 @@ exports[`Storyshots progress some 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -3247,6 +3288,7 @@ exports[`Storyshots progress some 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -3330,7 +3372,7 @@ exports[`Storyshots size large 1`] = `
       style={undefined}
     >
       <div
-        className="css-10o8vlb"
+        className="css-14neud7"
       >
         <div
           className="css-1wgk747"
@@ -3367,6 +3409,7 @@ exports[`Storyshots size large 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -3379,6 +3422,7 @@ exports[`Storyshots size large 1`] = `
                 large Card
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -3462,7 +3506,7 @@ exports[`Storyshots size medium 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -3499,6 +3543,7 @@ exports[`Storyshots size medium 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -3511,6 +3556,7 @@ exports[`Storyshots size medium 1`] = `
                 medium Card
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -3594,7 +3640,7 @@ exports[`Storyshots size small 1`] = `
       style={undefined}
     >
       <div
-        className="css-1weulye"
+        className="css-1bnkubs"
       >
         <div
           className="css-1wgk747"
@@ -3631,6 +3677,7 @@ exports[`Storyshots size small 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -3643,6 +3690,7 @@ exports[`Storyshots size small 1`] = `
                 small Card
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -3726,13 +3774,13 @@ exports[`Storyshots tag text only 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
         />
         <div
-          className="css-if1ca6"
+          className="css-1cmxrdf"
         >
           <span>
             Channel
@@ -3770,6 +3818,7 @@ exports[`Storyshots tag text only 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -3782,6 +3831,7 @@ exports[`Storyshots tag text only 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -3865,13 +3915,13 @@ exports[`Storyshots tag with icon 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
         />
         <div
-          className="css-if1ca6"
+          className="css-1cmxrdf"
         >
           <div
             className="css-1pif58i"
@@ -3927,6 +3977,7 @@ exports[`Storyshots tag with icon 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -3939,6 +3990,7 @@ exports[`Storyshots tag with icon 1`] = `
                 Card Title
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -4022,7 +4074,7 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -4065,6 +4117,7 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
                     …
                   </span>
                   <span
+                    aria-hidden="true"
                     style={
                       Object {
                         "display": "block",
@@ -4077,6 +4130,7 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
                     The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
                   </span>
                   <span
+                    aria-hidden="true"
                     style={
                       Object {
                         "display": "block",
@@ -4162,7 +4216,7 @@ exports[`Storyshots title long title, title wrapper 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -4199,6 +4253,7 @@ exports[`Storyshots title long title, title wrapper 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -4211,6 +4266,7 @@ exports[`Storyshots title long title, title wrapper 1`] = `
                 The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -4294,7 +4350,7 @@ exports[`Storyshots title text link with title wrapper 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -4337,6 +4393,7 @@ exports[`Storyshots title text link with title wrapper 1`] = `
                     …
                   </span>
                   <span
+                    aria-hidden="true"
                     style={
                       Object {
                         "display": "block",
@@ -4349,6 +4406,7 @@ exports[`Storyshots title text link with title wrapper 1`] = `
                     Text link
                   </span>
                   <span
+                    aria-hidden="true"
                     style={
                       Object {
                         "display": "block",
@@ -4434,7 +4492,7 @@ exports[`Storyshots title title wrapper 1`] = `
       style={undefined}
     >
       <div
-        className="css-e5mtxt"
+        className="css-1pb0z5d"
       >
         <div
           className="css-1wgk747"
@@ -4471,6 +4529,7 @@ exports[`Storyshots title title wrapper 1`] = `
                 …
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
@@ -4483,6 +4542,7 @@ exports[`Storyshots title title wrapper 1`] = `
                 Text only
               </span>
               <span
+                aria-hidden="true"
                 style={
                   Object {
                     "display": "block",
