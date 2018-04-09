@@ -1,7 +1,7 @@
 {
   "name": "@pluralsight/ps-design-system-site",
   "private": true,
-  "version": "9.31.0",
+  "version": "9.31.1",
   "description": "Reference site",
   "main": "index.js",
   "engines": {
@@ -20,7 +20,7 @@
     "@pluralsight/ps-design-system-badge": "^2.0.17",
     "@pluralsight/ps-design-system-breadcrumb": "^1.1.7",
     "@pluralsight/ps-design-system-button": "^10.7.0",
-    "@pluralsight/ps-design-system-card": "^8.3.6",
+    "@pluralsight/ps-design-system-card": "^8.3.7",
     "@pluralsight/ps-design-system-circularprogress": "^1.4.6",
     "@pluralsight/ps-design-system-core": "^4.2.1",
     "@pluralsight/ps-design-system-dialog": "^2.1.13",
