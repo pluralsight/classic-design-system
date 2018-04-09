@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-switch",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Design System component for switch ui",
   "main": "index.js",
   "scripts": {
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.27",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.28",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",
     "@storybook/react": "3.2.14",

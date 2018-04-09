@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/pluralsight/design-system/compare/packages-api@1.1.3...packages-api@1.3.0) (2018-04-09)
+
+
+### Features
+
+* **api:** add /health-check ([4cce2c8](https://github.com/pluralsight/design-system/commit/4cce2c8))
+
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/pluralsight/design-system/compare/packages-api@1.1.3...packages-api@1.2.0) (2018-04-09)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.7.0"></a>
+# [10.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.6.2...@pluralsight/ps-design-system-button@10.7.0) (2018-04-09)
+
+
+### Features
+
+* **button:** whitelist target prop ([b913401](https://github.com/pluralsight/design-system/commit/b913401))
+
+
+
+
 <a name="10.6.2"></a>
 ## [10.6.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.6.1...@pluralsight/ps-design-system-button@10.6.2) (2018-03-27)
 

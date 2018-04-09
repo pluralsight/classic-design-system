@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-viewtoggle",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Design System component for view toggle ui",
   "main": "index.js",
   "scripts": {
@@ -26,13 +26,13 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.2.1",
-    "@pluralsight/ps-design-system-icon": "^8.6.3",
+    "@pluralsight/ps-design-system-icon": "^8.6.4",
     "glamorous": "^4.1.0",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.27",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.28",
     "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",
