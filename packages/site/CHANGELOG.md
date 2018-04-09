@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.30.0"></a>
+# [9.30.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.29.3...@pluralsight/ps-design-system-site@9.30.0) (2018-04-09)
+
+
+### Features
+
+* **site:** add voice and tone guideline ([d3b3519](https://github.com/pluralsight/design-system/commit/d3b3519))
+
+
+
+
 <a name="9.29.3"></a>
 ## [9.29.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.29.2...@pluralsight/ps-design-system-site@9.29.3) (2018-03-27)
 
