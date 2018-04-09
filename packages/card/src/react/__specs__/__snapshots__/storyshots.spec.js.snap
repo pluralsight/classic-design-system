@@ -903,7 +903,7 @@ exports[`Storyshots combo everything 1`] = `
           </button>
         </div>
         <div
-          className="css-1cmxrdf"
+          className="css-49cvf9"
         >
           <div
             className="css-1pif58i"
@@ -3780,7 +3780,7 @@ exports[`Storyshots tag text only 1`] = `
           className="css-1wgk747"
         />
         <div
-          className="css-1cmxrdf"
+          className="css-49cvf9"
         >
           <span>
             Channel
@@ -3921,7 +3921,7 @@ exports[`Storyshots tag with icon 1`] = `
           className="css-1wgk747"
         />
         <div
-          className="css-1cmxrdf"
+          className="css-49cvf9"
         >
           <div
             className="css-1pif58i"

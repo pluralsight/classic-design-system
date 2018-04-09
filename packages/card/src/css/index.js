@@ -191,7 +191,8 @@ export default {
     textTransform: 'uppercase',
     fontSize: core.type.fontSizeXSmall,
     fontWeight: core.type.fontWeightBold,
-    lineHeight: '16px'
+    lineHeight: '16px',
+    boxShadow: `0 1px 4px 0 ${transparentize(0.5, core.colors.black)}`
   },
 
   // __tag__icon
