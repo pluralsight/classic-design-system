@@ -1,6 +1,10 @@
 {
   "name": "@pluralsight/ps-design-system-layout",
+<<<<<<< HEAD
   "version": "0.4.33",
+=======
+  "version": "1.0.0",
+>>>>>>> chore: publish
   "description": "Design system components for ui layouts",
   "main": "index.js",
   "scripts": {

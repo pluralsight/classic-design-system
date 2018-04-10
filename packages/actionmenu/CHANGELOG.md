@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
 <a name="2.4.5"></a>
-## [2.4.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@2.4.4...@pluralsight/ps-design-system-actionmenu@2.4.5) (2018-04-09)
+## [2.4.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@2.4.4...@pluralsight/ps-design-system-actionmenu@2.4.5) (2018-04-10)
 
 
 

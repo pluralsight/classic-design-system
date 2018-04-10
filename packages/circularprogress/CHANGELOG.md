@@ -8,7 +8,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-
 **Note:** Version bump only for package @pluralsight/ps-design-system-circularprogress
 
 <a name="1.4.5"></a>

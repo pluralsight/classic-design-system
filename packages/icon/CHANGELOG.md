@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
 <a name="8.6.4"></a>
-## [8.6.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.6.3...@pluralsight/ps-design-system-icon@8.6.4) (2018-04-09)
+## [8.6.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.6.3...@pluralsight/ps-design-system-icon@8.6.4) (2018-04-10)
 
 
 
