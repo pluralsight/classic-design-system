@@ -12,13 +12,11 @@ export default {
   [`.psds-aside-layout--aside-position-${vars.asidePositions.last}`]: {
     flexDirection: 'column-reverse'
   },
-  [`.psds-aside-layout__aside--aside-position-${vars.asidePositions
-    .first}`]: {
-    marginBottom: core.layout.spacingMedium
+  [`.psds-aside-layout__aside--aside-position-${vars.asidePositions.first}`]: {
+    marginBottom: core.layout.spacingLarge
   },
-  [`.psds-aside-layout__aside--aside-position-${vars.asidePositions
-    .last}`]: {
-    marginTop: core.layout.spacingMedium
+  [`.psds-aside-layout__aside--aside-position-${vars.asidePositions.last}`]: {
+    marginTop: core.layout.spacingLarge
   },
   '@media (min-width: 769px)': {
     [`.psds-aside-layout--aside-position-${vars.asidePositions.first}`]: {
@@ -28,20 +26,20 @@ export default {
       flexDirection: 'row-reverse'
     },
     ['.psds-aside-layout__aside']: {
-      width: 'calc(33.34%)'
+      width: 'calc(25%)'
     },
-    [`.psds-aside-layout__aside--aside-position-${vars.asidePositions
-      .first}`]: {
+    [`.psds-aside-layout__aside--aside-position-${
+      vars.asidePositions.first
+    }`]: {
       marginBottom: 0,
-      marginRight: core.layout.spacingMedium
+      marginRight: core.layout.spacingLarge
     },
-    [`.psds-aside-layout__aside--aside-position-${vars.asidePositions
-      .last}`]: {
+    [`.psds-aside-layout__aside--aside-position-${vars.asidePositions.last}`]: {
       marginTop: 0,
-      marginLeft: core.layout.spacingMedium
+      marginLeft: core.layout.spacingLarge
     },
     ['.psds-aside-layout__main']: {
-      width: 'calc(66.66%)'
+      width: 'calc(75%)'
     }
   }
 }
