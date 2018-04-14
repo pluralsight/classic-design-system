@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@0.4.33...@pluralsight/ps-design-system-layout@2.0.0) (2018-04-14)
+
+
+### Bug Fixes
+
+* **layout:** fixing unresolved conflicting file ([f8630ef](https://github.com/pluralsight/design-system/commit/f8630ef))
+
+
+### Code Refactoring
+
+* **layout:** shrink aside width; increase gutter ([3152da7](https://github.com/pluralsight/design-system/commit/3152da7))
+
+
+### BREAKING CHANGES
+
+* **layout:** aside width now 25% parent; gutter now large spacing
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@0.4.32...@pluralsight/ps-design-system-layout@1.0.0) (2018-04-10)
 
