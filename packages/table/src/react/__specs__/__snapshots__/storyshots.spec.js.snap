@@ -1,0 +1,1590 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots cell align center 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-1tzaq4z=""
+        style={Object {}}
+      >
+        Cell aligned 
+        center
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell align left 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-1nmirwl=""
+        style={Object {}}
+      >
+        Cell aligned 
+        left
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell align right 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-15h6wor=""
+        style={Object {}}
+      >
+        Cell aligned 
+        right
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell auto style anchor tag 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        <a
+          href="https://duckduckgo.com"
+        >
+          Native anchor tag
+        </a>
+      </div>
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        Cell 2
+      </div>
+    </div>
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        <a
+          data-css-1skajya=""
+          href="https://duckduckgo.com"
+        >
+          Link component with anchor tag
+        </a>
+      </div>
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        Cell 2
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell emphasis text 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-rcvr9z=""
+        style={Object {}}
+      >
+        em-PHA-sis
+      </div>
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        Non emphasized
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell empty 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell flex 1 | 4 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-yu5t6x=""
+        style={
+          Object {
+            "flex": "1",
+          }
+        }
+      >
+        Flex 1 Flex 1 Flex 1 Flex 1 Flex 1 Flex 1 Flex 1 Flex 1
+      </div>
+      <div
+        data-css-yu5t6x=""
+        style={
+          Object {
+            "flex": "4",
+          }
+        }
+      >
+        Flex 4 Flex 4 Flex 4 Flex 4 Flex 4 Flex 4 Flex 4 Flex 4
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell flex 2 | 1 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-yu5t6x=""
+        style={
+          Object {
+            "flex": "2",
+          }
+        }
+      >
+        Flex 2
+      </div>
+      <div
+        data-css-yu5t6x=""
+        style={
+          Object {
+            "flex": "1",
+          }
+        }
+      >
+        Flex 1
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell flex, multiple cell, multiple row 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-yu5t6x=""
+        style={
+          Object {
+            "flex": "2",
+          }
+        }
+      >
+        Flex 2
+      </div>
+      <div
+        data-css-yu5t6x=""
+        style={
+          Object {
+            "flex": "1",
+          }
+        }
+      >
+        Flex 1
+      </div>
+    </div>
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-yu5t6x=""
+        style={
+          Object {
+            "flex": "2",
+          }
+        }
+      >
+        Flex 2
+      </div>
+      <div
+        data-css-yu5t6x=""
+        style={
+          Object {
+            "flex": "1",
+          }
+        }
+      >
+        Flex 1
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell inner padding 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell
+      </div>
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell multiple text 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        Cell 1 text
+      </div>
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        Cell 2 text
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell text 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        Cell text
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader sort asc 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-uo1aru=""
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          data-css-1b1uo0i=""
+        >
+          sorted header
+        </span>
+        <div
+          className="css-otejxm"
+        >
+          <svg
+            aria-label="sort ascending icon"
+            role="image"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11,15.1727857 L8.7635527,12.942568 C8.56821122,12.7477707 8.25200897,12.7479912 8.05693937,12.9430608 L7.35355339,13.6464468 C7.15829124,13.8417089 7.15829124,14.1582914 7.35355339,14.3535535 L11.6464466,18.6464468 C11.8417088,18.8417089 12.1582912,18.8417089 12.3535534,18.6464468 L16.6464466,14.3535535 C16.8417088,14.1582914 16.8417088,13.8417089 16.6464466,13.6464468 L15.9430606,12.9430608 C15.747991,12.7479912 15.4317888,12.7477707 15.2364473,12.942568 L13,15.1727857 L13,6.5 C13,6.22385763 12.7761424,6 12.5,6 L11.5,6 C11.2238576,6 11,6.22385763 11,6.5 L11,15.1727857 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-crlk8f=""
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          data-css-1b1uo0i=""
+        >
+          sorted header
+        </span>
+        <div
+          className="css-otejxm"
+        >
+          <svg
+            aria-label="sort ascending icon"
+            role="image"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11,15.1727857 L8.7635527,12.942568 C8.56821122,12.7477707 8.25200897,12.7479912 8.05693937,12.9430608 L7.35355339,13.6464468 C7.15829124,13.8417089 7.15829124,14.1582914 7.35355339,14.3535535 L11.6464466,18.6464468 C11.8417088,18.8417089 12.1582912,18.8417089 12.3535534,18.6464468 L16.6464466,14.3535535 C16.8417088,14.1582914 16.8417088,13.8417089 16.6464466,13.6464468 L15.9430606,12.9430608 C15.747991,12.7479912 15.4317888,12.7477707 15.2364473,12.942568 L13,15.1727857 L13,6.5 C13,6.22385763 12.7761424,6 12.5,6 L11.5,6 C11.2238576,6 11,6.22385763 11,6.5 L11,15.1727857 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader sort default 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-uo1aru=""
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          data-css-1b1uo0i=""
+        >
+          header text
+        </span>
+        <div
+          className="css-otejxm"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.6464466,5.35355339 C11.8417088,5.15829124 12.1582912,5.15829124 12.3535534,5.35355339 L16.6464466,9.64644661 C16.8417088,9.84170876 16.8417088,10.1582912 16.6464466,10.3535534 L15.9430606,11.0569394 C15.747991,11.252009 15.4317888,11.2522295 15.2364473,11.0574321 L12,7.83 L8.7635527,11.0574321 C8.56821122,11.2522295 8.25200897,11.252009 8.05693937,11.0569394 L7.35355339,10.3535534 C7.15829124,10.1582912 7.15829124,9.84170876 7.35355339,9.64644661 L11.6464466,5.35355339 Z M11.6464466,18.6464468 L7.35355339,14.3535535 C7.15829124,14.1582914 7.15829124,13.8417089 7.35355339,13.6464468 L8.05693937,12.9430608 C8.25200897,12.7479912 8.56821122,12.7477707 8.7635527,12.942568 L12,16.1700002 L15.2364473,12.942568 C15.4317888,12.7477707 15.747991,12.7479912 15.9430606,12.9430608 L16.6464466,13.6464468 C16.8417088,13.8417089 16.8417088,14.1582914 16.6464466,14.3535535 L12.3535534,18.6464468 C12.1582912,18.8417089 11.8417088,18.8417089 11.6464466,18.6464468 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-crlk8f=""
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          data-css-1b1uo0i=""
+        >
+          header text
+        </span>
+        <div
+          className="css-otejxm"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.6464466,5.35355339 C11.8417088,5.15829124 12.1582912,5.15829124 12.3535534,5.35355339 L16.6464466,9.64644661 C16.8417088,9.84170876 16.8417088,10.1582912 16.6464466,10.3535534 L15.9430606,11.0569394 C15.747991,11.252009 15.4317888,11.2522295 15.2364473,11.0574321 L12,7.83 L8.7635527,11.0574321 C8.56821122,11.2522295 8.25200897,11.252009 8.05693937,11.0569394 L7.35355339,10.3535534 C7.15829124,10.1582912 7.15829124,9.84170876 7.35355339,9.64644661 L11.6464466,5.35355339 Z M11.6464466,18.6464468 L7.35355339,14.3535535 C7.15829124,14.1582914 7.15829124,13.8417089 7.35355339,13.6464468 L8.05693937,12.9430608 C8.25200897,12.7479912 8.56821122,12.7477707 8.7635527,12.942568 L12,16.1700002 L15.2364473,12.942568 C15.4317888,12.7477707 15.747991,12.7479912 15.9430606,12.9430608 L16.6464466,13.6464468 C16.8417088,13.8417089 16.8417088,14.1582914 16.6464466,14.3535535 L12.3535534,18.6464468 C12.1582912,18.8417089 11.8417088,18.8417089 11.6464466,18.6464468 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader sort desc 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-uo1aru=""
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          data-css-1b1uo0i=""
+        >
+          sorted header
+        </span>
+        <div
+          className="css-otejxm"
+        >
+          <svg
+            aria-label="sort descending icon"
+            role="image"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13,8.82721448 L15.2364473,11.0574321 C15.4317888,11.2522295 15.747991,11.252009 15.9430606,11.0569394 L16.6464466,10.3535534 C16.8417088,10.1582912 16.8417088,9.84170876 16.6464466,9.64644661 L12.3535534,5.35355339 C12.1582912,5.15829124 11.8417088,5.15829124 11.6464466,5.35355339 L7.35355339,9.64644661 C7.15829124,9.84170876 7.15829124,10.1582912 7.35355339,10.3535534 L8.05693937,11.0569394 C8.25200897,11.252009 8.56821122,11.2522295 8.7635527,11.0574321 L11,8.82721448 L11,17.5 C11,17.7761424 11.2238576,18 11.5,18 L12.5,18 C12.7761424,18 13,17.7761424 13,17.5 L13,8.82721448 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-crlk8f=""
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          data-css-1b1uo0i=""
+        >
+          sorted header
+        </span>
+        <div
+          className="css-otejxm"
+        >
+          <svg
+            aria-label="sort descending icon"
+            role="image"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13,8.82721448 L15.2364473,11.0574321 C15.4317888,11.2522295 15.747991,11.252009 15.9430606,11.0569394 L16.6464466,10.3535534 C16.8417088,10.1582912 16.8417088,9.84170876 16.6464466,9.64644661 L12.3535534,5.35355339 C12.1582912,5.15829124 11.8417088,5.15829124 11.6464466,5.35355339 L7.35355339,9.64644661 C7.15829124,9.84170876 7.15829124,10.1582912 7.35355339,10.3535534 L8.05693937,11.0569394 C8.25200897,11.252009 8.56821122,11.2522295 8.7635527,11.0574321 L11,8.82721448 L11,17.5 C11,17.7761424 11.2238576,18 11.5,18 L12.5,18 C12.7761424,18 13,17.7761424 13,17.5 L13,8.82721448 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader text 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-uo1aru=""
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          data-css-1b1uo0i=""
+        >
+          header text
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader w/ drawers 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-luy9rl=""
+    >
+      <div
+        data-css-uo1aru=""
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          data-css-1b1uo0i=""
+        >
+          header text
+        </span>
+        <div
+          className="css-otejxm"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.6464466,5.35355339 C11.8417088,5.15829124 12.1582912,5.15829124 12.3535534,5.35355339 L16.6464466,9.64644661 C16.8417088,9.84170876 16.8417088,10.1582912 16.6464466,10.3535534 L15.9430606,11.0569394 C15.747991,11.252009 15.4317888,11.2522295 15.2364473,11.0574321 L12,7.83 L8.7635527,11.0574321 C8.56821122,11.2522295 8.25200897,11.252009 8.05693937,11.0569394 L7.35355339,10.3535534 C7.15829124,10.1582912 7.15829124,9.84170876 7.35355339,9.64644661 L11.6464466,5.35355339 Z M11.6464466,18.6464468 L7.35355339,14.3535535 C7.15829124,14.1582914 7.15829124,13.8417089 7.35355339,13.6464468 L8.05693937,12.9430608 C8.25200897,12.7479912 8.56821122,12.7477707 8.7635527,12.942568 L12,16.1700002 L15.2364473,12.942568 C15.4317888,12.7477707 15.747991,12.7479912 15.9430606,12.9430608 L16.6464466,13.6464468 C16.8417088,13.8417089 16.8417088,14.1582914 16.6464466,14.3535535 L12.3535534,18.6464468 C12.1582912,18.8417089 11.8417088,18.8417089 11.6464466,18.6464468 Z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        data-css-uo1aru=""
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          data-css-1b1uo0i=""
+        >
+          header2 text
+        </span>
+        <div
+          className="css-otejxm"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.6464466,5.35355339 C11.8417088,5.15829124 12.1582912,5.15829124 12.3535534,5.35355339 L16.6464466,9.64644661 C16.8417088,9.84170876 16.8417088,10.1582912 16.6464466,10.3535534 L15.9430606,11.0569394 C15.747991,11.252009 15.4317888,11.2522295 15.2364473,11.0574321 L12,7.83 L8.7635527,11.0574321 C8.56821122,11.2522295 8.25200897,11.252009 8.05693937,11.0569394 L7.35355339,10.3535534 C7.15829124,10.1582912 7.15829124,9.84170876 7.35355339,9.64644661 L11.6464466,5.35355339 Z M11.6464466,18.6464468 L7.35355339,14.3535535 C7.15829124,14.1582914 7.15829124,13.8417089 7.35355339,13.6464468 L8.05693937,12.9430608 C8.25200897,12.7479912 8.56821122,12.7477707 8.7635527,12.942568 L12,16.1700002 L15.2364473,12.942568 C15.4317888,12.7477707 15.747991,12.7479912 15.9430606,12.9430608 L16.6464466,13.6464468 C16.8417088,13.8417089 16.8417088,14.1582914 16.6464466,14.3535535 L12.3535534,18.6464468 C12.1582912,18.8417089 11.8417088,18.8417089 11.6464466,18.6464468 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="css-1fq8nx6"
+    >
+      <div
+        className="css-1oot5vc"
+        onClick={[Function]}
+      >
+        <div
+          className="css-euzj8"
+        >
+          <div
+            data-css-vjljp5=""
+          >
+            <div
+              data-css-yu5t6x=""
+              style={Object {}}
+            >
+              cell text
+            </div>
+            <div
+              data-css-yu5t6x=""
+              style={Object {}}
+            >
+              cell2 text
+            </div>
+          </div>
+        </div>
+        <div
+          className="css-qs2rg7"
+        >
+          <button
+            className="css-xipskh"
+            onClick={[Function]}
+          >
+            <div
+              aria-label="Expand"
+              className="css-1byjzqg"
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        className="css-1i2htk9"
+      >
+        <div
+          className="css-1j3g0qd"
+        >
+          Panel contnet
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader w/ rows 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-uo1aru=""
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          data-css-1b1uo0i=""
+        >
+          header text
+        </span>
+        <div
+          className="css-otejxm"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.6464466,5.35355339 C11.8417088,5.15829124 12.1582912,5.15829124 12.3535534,5.35355339 L16.6464466,9.64644661 C16.8417088,9.84170876 16.8417088,10.1582912 16.6464466,10.3535534 L15.9430606,11.0569394 C15.747991,11.252009 15.4317888,11.2522295 15.2364473,11.0574321 L12,7.83 L8.7635527,11.0574321 C8.56821122,11.2522295 8.25200897,11.252009 8.05693937,11.0569394 L7.35355339,10.3535534 C7.15829124,10.1582912 7.15829124,9.84170876 7.35355339,9.64644661 L11.6464466,5.35355339 Z M11.6464466,18.6464468 L7.35355339,14.3535535 C7.15829124,14.1582914 7.15829124,13.8417089 7.35355339,13.6464468 L8.05693937,12.9430608 C8.25200897,12.7479912 8.56821122,12.7477707 8.7635527,12.942568 L12,16.1700002 L15.2364473,12.942568 C15.4317888,12.7477707 15.747991,12.7479912 15.9430606,12.9430608 L16.6464466,13.6464468 C16.8417088,13.8417089 16.8417088,14.1582914 16.6464466,14.3535535 L12.3535534,18.6464468 C12.1582912,18.8417089 11.8417088,18.8417089 11.6464466,18.6464468 Z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        data-css-uo1aru=""
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          data-css-1b1uo0i=""
+        >
+          header2 text
+        </span>
+        <div
+          className="css-otejxm"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.6464466,5.35355339 C11.8417088,5.15829124 12.1582912,5.15829124 12.3535534,5.35355339 L16.6464466,9.64644661 C16.8417088,9.84170876 16.8417088,10.1582912 16.6464466,10.3535534 L15.9430606,11.0569394 C15.747991,11.252009 15.4317888,11.2522295 15.2364473,11.0574321 L12,7.83 L8.7635527,11.0574321 C8.56821122,11.2522295 8.25200897,11.252009 8.05693937,11.0569394 L7.35355339,10.3535534 C7.15829124,10.1582912 7.15829124,9.84170876 7.35355339,9.64644661 L11.6464466,5.35355339 Z M11.6464466,18.6464468 L7.35355339,14.3535535 C7.15829124,14.1582914 7.15829124,13.8417089 7.35355339,13.6464468 L8.05693937,12.9430608 C8.25200897,12.7479912 8.56821122,12.7477707 8.7635527,12.942568 L12,16.1700002 L15.2364473,12.942568 C15.4317888,12.7477707 15.747991,12.7479912 15.9430606,12.9430608 L16.6464466,13.6464468 C16.8417088,13.8417089 16.8417088,14.1582914 16.6464466,14.3535535 L12.3535534,18.6464468 C12.1582912,18.8417089 11.8417088,18.8417089 11.6464466,18.6464468 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        cell text
+      </div>
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        cell2 text
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots drawer mulitple 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      className="css-1fq8nx6"
+    >
+      <div
+        className="css-1oot5vc"
+        onClick={[Function]}
+      >
+        <div
+          className="css-euzj8"
+        >
+          <div
+            data-css-vjljp5=""
+          >
+            <div
+              data-css-yu5t6x=""
+              style={Object {}}
+            >
+              wow
+            </div>
+          </div>
+        </div>
+        <div
+          className="css-qs2rg7"
+        >
+          <button
+            className="css-xipskh"
+            onClick={[Function]}
+          >
+            <div
+              aria-label="Expand"
+              className="css-1byjzqg"
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        className="css-1i2htk9"
+      >
+        <div
+          className="css-1j3g0qd"
+        >
+          This is panel content
+        </div>
+      </div>
+    </div>
+    <div
+      className="css-1fq8nx6"
+    >
+      <div
+        className="css-1oot5vc"
+        onClick={[Function]}
+      >
+        <div
+          className="css-euzj8"
+        >
+          <div
+            data-css-vjljp5=""
+          >
+            <div
+              data-css-yu5t6x=""
+              style={Object {}}
+            >
+              wow
+            </div>
+          </div>
+        </div>
+        <div
+          className="css-qs2rg7"
+        >
+          <button
+            className="css-xipskh"
+            onClick={[Function]}
+          >
+            <div
+              aria-label="Expand"
+              className="css-1byjzqg"
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        className="css-1i2htk9"
+      >
+        <div
+          className="css-1j3g0qd"
+        >
+          This is panel content
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots drawer single 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      className="css-1fq8nx6"
+    >
+      <div
+        className="css-1oot5vc"
+        onClick={[Function]}
+      >
+        <div
+          className="css-euzj8"
+        >
+          <div
+            data-css-vjljp5=""
+          >
+            <div
+              data-css-yu5t6x=""
+              style={Object {}}
+            >
+              wow
+            </div>
+          </div>
+        </div>
+        <div
+          className="css-qs2rg7"
+        >
+          <button
+            className="css-xipskh"
+            onClick={[Function]}
+          >
+            <div
+              aria-label="Expand"
+              className="css-1byjzqg"
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        className="css-1i2htk9"
+      >
+        <div
+          className="css-1j3g0qd"
+        >
+          This is panel content
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      className="css-1fq8nx6"
+    >
+      <div
+        className="css-1oot5vc"
+        onClick={[Function]}
+      >
+        <div
+          className="css-euzj8"
+        >
+          <div
+            data-css-vjljp5=""
+          >
+            <div
+              data-css-yu5t6x=""
+              style={
+                Object {
+                  "flex": "2",
+                }
+              }
+            >
+              flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
+            </div>
+            <div
+              data-css-yu5t6x=""
+              style={
+                Object {
+                  "flex": "1",
+                }
+              }
+            >
+              flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1
+            </div>
+          </div>
+        </div>
+        <div
+          className="css-qs2rg7"
+        >
+          <button
+            className="css-xipskh"
+            onClick={[Function]}
+          >
+            <div
+              aria-label="Expand"
+              className="css-1byjzqg"
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        className="css-1i2htk9"
+      >
+        <div
+          className="css-1j3g0qd"
+        >
+          This is panel content
+        </div>
+      </div>
+    </div>
+    <div
+      className="css-1fq8nx6"
+    >
+      <div
+        className="css-1oot5vc"
+        onClick={[Function]}
+      >
+        <div
+          className="css-euzj8"
+        >
+          <div
+            data-css-vjljp5=""
+          >
+            <div
+              data-css-yu5t6x=""
+              style={
+                Object {
+                  "flex": "2",
+                }
+              }
+            >
+              flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
+            </div>
+            <div
+              data-css-yu5t6x=""
+              style={
+                Object {
+                  "flex": "1",
+                }
+              }
+            >
+              flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1
+            </div>
+          </div>
+        </div>
+        <div
+          className="css-qs2rg7"
+        >
+          <button
+            className="css-xipskh"
+            onClick={[Function]}
+          >
+            <div
+              aria-label="Expand"
+              className="css-1byjzqg"
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        className="css-1i2htk9"
+      >
+        <div
+          className="css-1j3g0qd"
+        >
+          This is panel content
+        </div>
+      </div>
+    </div>
+    <div
+      className="css-1fq8nx6"
+    >
+      <div
+        className="css-1oot5vc"
+        onClick={[Function]}
+      >
+        <div
+          className="css-euzj8"
+        >
+          <div
+            data-css-vjljp5=""
+          >
+            <div
+              data-css-yu5t6x=""
+              style={
+                Object {
+                  "flex": "2",
+                }
+              }
+            >
+              flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
+            </div>
+            <div
+              data-css-yu5t6x=""
+              style={
+                Object {
+                  "flex": "1",
+                }
+              }
+            >
+              flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1
+            </div>
+          </div>
+        </div>
+        <div
+          className="css-qs2rg7"
+        >
+          <button
+            className="css-xipskh"
+            onClick={[Function]}
+          >
+            <div
+              aria-label="Expand"
+              className="css-1byjzqg"
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        className="css-1i2htk9"
+      >
+        <div
+          className="css-1j3g0qd"
+        >
+          This is panel content
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots row one row, empty 1`] = `
+<div
+  data-css-yo440u=""
+>
+  <div
+    data-css-vjljp5=""
+  />
+</div>
+`;
+
+exports[`Storyshots table empty 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  />
+</div>
+`;
