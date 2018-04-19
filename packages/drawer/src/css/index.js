@@ -5,7 +5,8 @@ import {
 } from '@pluralsight/ps-design-system-theme/react'
 import { transparentize } from 'polished'
 
-const caretAreaWidth = '38px'
+import * as vars from '../vars'
+
 const toggleButtonLightHover = {
   color: core.colors.gray06
 }
@@ -23,7 +24,7 @@ export default {
   // __base
   [`.psds-drawer__base`]: {
     position: 'relative',
-    paddingRight: caretAreaWidth,
+    paddingRight: vars.toggleAreaWidth,
     cursor: 'pointer',
     transition: `background ${core.motion.speedNormal}`
   },
@@ -48,8 +49,9 @@ export default {
     boxShadow: 'inset 0 1px 3px 0 rgba(0,0,0,0.5)'
   },
   [`.psds-drawer__panel-content`]: {
-    marginRight: `calc(-1 * ${caretAreaWidth})`,
-    paddingRight: caretAreaWidth
+    marginRight: `calc(-1 * ${vars.toggleAreaWidth})`,
+    paddingLeft: core.layout.spacingMedium,
+    paddingRight: vars.toggleAreaWidth
   },
   // __toggle-button-container / __toggle-button
   [`.psds-drawer__toggle-button-container`]: {

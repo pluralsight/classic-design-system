@@ -95,9 +95,7 @@ class Drawer extends React.Component {
       <DrawerRoot themeName={themeName}>
         <DrawerBase isOpen={isOpen} onClick={this.handleClick}>
           <DrawerPanelContent themeName={themeName}>
-            <Div padding={`0 ${core.layout.spacingMedium}`}>
-              {this.props.base}
-            </Div>
+            {this.props.base}
           </DrawerPanelContent>
           <ToggleButtonContainer>
             <ToggleButton onClick={this.toggle} themeName={themeName}>
