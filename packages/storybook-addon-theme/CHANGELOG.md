@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.30"></a>
+## [1.1.30](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@1.1.29...@pluralsight/ps-design-system-storybook-addon-theme@1.1.30) (2018-04-19)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-theme
+
 <a name="1.1.29"></a>
 ## [1.1.29](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@1.1.27...@pluralsight/ps-design-system-storybook-addon-theme@1.1.29) (2018-04-14)
 

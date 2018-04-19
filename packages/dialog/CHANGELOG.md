@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.15"></a>
+## [2.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@2.1.14...@pluralsight/ps-design-system-dialog@2.1.15) (2018-04-19)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
 <a name="2.1.14"></a>
 ## [2.1.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@2.1.12...@pluralsight/ps-design-system-dialog@2.1.14) (2018-04-14)
 

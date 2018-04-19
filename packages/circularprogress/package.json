@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-circularprogress",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "description": "Design System component for circular progress ui",
   "main": "index.js",
   "scripts": {
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.29",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.30",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",
     "@storybook/react": "3.2.14",
