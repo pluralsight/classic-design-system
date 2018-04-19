@@ -64,7 +64,6 @@ const SortIconAsc = _ => <Icon id={Icon.ids.sortAsc} />
 const SortIconDesc = _ => <Icon id={Icon.ids.sortDesc} />
 const SortIconDefault = _ => <Icon id={Icon.ids.sort} />
 
-// TODO: handle style and className on every component
 const getSortIcon = props =>
   ({
     [vars.columnHeaderSorts.asc]: <SortIconAsc />,
@@ -101,6 +100,7 @@ class ColumnHeader extends React.Component {
       style.flex = allProps.flex
     return (
       <div
+        {...(allProps.className ? { className: allProps.className } : null)}
         {...styles.columnHeader(allProps)}
         onClick={this.handleClick}
         style={style}
@@ -117,7 +117,6 @@ ColumnHeader.propTypes = {
   onClick: PropTypes.func,
   sort: PropTypes.oneOf([true, ...Object.keys(vars.columnHeaderSorts)])
 }
-ColumnHeader.defaultProps = {}
 ColumnHeader.displayName = 'Table.ColumnHeader'
 ColumnHeader.contextTypes = {
   themeName: PropTypes.string
@@ -137,7 +136,11 @@ class Cell extends React.Component {
     )
       style.flex = allProps.flex
     return (
-      <div {...styles.cell(allProps)} style={style}>
+      <div
+        {...styles.cell(allProps)}
+        {...(allProps.className ? { className: allProps.className } : null)}
+        style={style}
+      >
         {allProps.children}
       </div>
     )
@@ -154,11 +157,18 @@ Cell.contextTypes = {
   themeName: PropTypes.string
 }
 Cell.displayName = 'Table.Cell'
-
 class Row extends React.Component {
   render() {
     const { props } = this
-    return <div {...styles.row(props)}>{props.children}</div>
+    return (
+      <div
+        {...styles.row(props)}
+        {...(props.className ? { className: props.className } : null)}
+        {...(props.style ? { style: props.style } : null)}
+      >
+        {props.children}
+      </div>
+    )
   }
 }
 Row.displayName = 'Table.Row'
@@ -184,7 +194,11 @@ class Table extends React.Component {
         child.type.displayName == drawerVars.drawerDisplayName
     ).some(bool => bool)
     return (
-      <div {...styles.table(allProps)}>
+      <div
+        {...styles.table(allProps)}
+        {...(props.className ? { className: props.className } : null)}
+        {...(props.style ? { style: props.style } : null)}
+      >
         {React.Children.map(
           allProps.children || [],
           child =>
@@ -197,8 +211,6 @@ class Table extends React.Component {
   }
 }
 Table.displayName = 'Table'
-Table.propTypes = {}
-Table.defaultProps = {}
 Table.contextTypes = {
   themeName: PropTypes.string
 }

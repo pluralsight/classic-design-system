@@ -12,12 +12,42 @@ import Table from '../react'
 const tableStory = storiesOf('table', module)
   .addDecorator(themeDecorator(addons))
   .add('empty', _ => <Table />)
+  .add('custom className', _ => (
+    <Table className="some-class">
+      <Table.Row>
+        <Table.Cell>innocuous</Table.Cell>
+      </Table.Row>
+    </Table>
+  ))
+  .add('custom style', _ => (
+    <Table style={{ outline: '1px solid red' }}>
+      <Table.Row>
+        <Table.Cell>innocuous</Table.Cell>
+      </Table.Row>
+    </Table>
+  ))
 
-const rowStory = storiesOf('row', module).add('one row, empty', _ => (
-  <Table>
-    <Table.Row />
-  </Table>
-))
+const rowStory = storiesOf('row', module)
+  .addDecorator(themeDecorator(addons))
+  .add('one row, empty', _ => (
+    <Table>
+      <Table.Row />
+    </Table>
+  ))
+  .add('custom className', _ => (
+    <Table>
+      <Table.Row className="some-class">
+        <Table.Cell>innocuous</Table.Cell>
+      </Table.Row>
+    </Table>
+  ))
+  .add('custom style', _ => (
+    <Table>
+      <Table.Row style={{ outline: '1px solid red' }}>
+        <Table.Cell>innocuous</Table.Cell>
+      </Table.Row>
+    </Table>
+  ))
 
 const cellStory = storiesOf('cell', module)
   .addDecorator(themeDecorator(addons))
@@ -124,6 +154,20 @@ Object.keys(Table.cellAligns).forEach(align => {
     </Table>
   ))
 })
+cellStory.add('custom className', _ => (
+  <Table>
+    <Table.Row>
+      <Table.Cell className="some-classname">cell text</Table.Cell>
+    </Table.Row>
+  </Table>
+))
+cellStory.add('custom style', _ => (
+  <Table>
+    <Table.Row>
+      <Table.Cell style={{ outline: '1px solid red' }}>cell text</Table.Cell>
+    </Table.Row>
+  </Table>
+))
 
 const columnHeaderStory = storiesOf('columnHeader', module)
   .addDecorator(themeDecorator(addons))
@@ -200,6 +244,25 @@ Object.keys(Table.columnHeaderSorts).forEach(sort =>
     </Table>
   ))
 )
+columnHeaderStory
+  .add('custom className', _ => (
+    <Table>
+      <Table.Row>
+        <Table.ColumnHeader className="some-classname">
+          header text
+        </Table.ColumnHeader>
+      </Table.Row>
+    </Table>
+  ))
+  .add('custom style', _ => (
+    <Table>
+      <Table.Row>
+        <Table.ColumnHeader style={{ outline: '1px solid red' }}>
+          column header
+        </Table.ColumnHeader>
+      </Table.Row>
+    </Table>
+  ))
 
 const drawerStory = storiesOf('drawer', module)
   .addDecorator(themeDecorator(addons))

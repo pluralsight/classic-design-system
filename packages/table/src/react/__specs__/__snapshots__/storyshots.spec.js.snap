@@ -166,6 +166,77 @@ exports[`Storyshots cell auto style anchor tag 1`] = `
 </div>
 `;
 
+exports[`Storyshots cell custom className 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        className="some-classname"
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        cell text
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell custom style 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-yu5t6x=""
+        style={
+          Object {
+            "outline": "1px solid red",
+          }
+        }
+      >
+        cell text
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots cell emphasis text 1`] = `
 <div
   style={
@@ -506,6 +577,87 @@ exports[`Storyshots cell text 1`] = `
         style={Object {}}
       >
         Cell text
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader custom className 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        className="some-classname"
+        data-css-uo1aru=""
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          data-css-1b1uo0i=""
+        >
+          header text
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader custom style 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-uo1aru=""
+        onClick={[Function]}
+        style={
+          Object {
+            "outline": "1px solid red",
+          }
+        }
+      >
+        <span
+          data-css-1b1uo0i=""
+        >
+          column header
+        </span>
       </div>
     </div>
   </div>
@@ -1557,13 +1709,173 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
 </div>
 `;
 
-exports[`Storyshots row one row, empty 1`] = `
+exports[`Storyshots row custom className 1`] = `
 <div
-  data-css-yo440u=""
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
 >
   <div
-    data-css-vjljp5=""
-  />
+    data-css-yo440u=""
+  >
+    <div
+      className="some-class"
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        innocuous
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots row custom style 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+      style={
+        Object {
+          "outline": "1px solid red",
+        }
+      }
+    >
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        innocuous
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots row one row, empty 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots table custom className 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="some-class"
+    data-css-yo440u=""
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        innocuous
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots table custom style 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+    style={
+      Object {
+        "outline": "1px solid red",
+      }
+    }
+  >
+    <div
+      data-css-vjljp5=""
+    >
+      <div
+        data-css-yu5t6x=""
+        style={Object {}}
+      >
+        innocuous
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
