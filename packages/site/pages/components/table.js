@@ -67,6 +67,31 @@ export default withServerProps(_ => (
               'content of table, per row'
             ])
           ],
+          'Table.Cell': [
+            PropTypes.row([
+              'align',
+              PropTypes.union(Table.aligns),
+              null,
+              <code>left</code>,
+              'text alignment'
+            ]),
+            PropTypes.row([
+              'emphasis',
+              'boolean',
+              null,
+              <code>false</code>,
+              'highlight content priority'
+            ]),
+            PropTypes.row([
+              'flex',
+              'string',
+              null,
+              null,
+              <span>
+                <code>flex</code> css attribute to control column width
+              </span>
+            ])
+          ],
           'Table.ColumnHeader': [
             PropTypes.row([
               'align',
