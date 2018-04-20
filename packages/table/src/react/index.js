@@ -134,7 +134,7 @@ ColumnHeader.propTypes = {
   onClick: PropTypes.func,
   sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)])
 }
-ColumnHeader.propTypes = {
+ColumnHeader.defaultProps = {
   align: vars.aligns.left
 }
 ColumnHeader.displayName = 'Table.ColumnHeader'
