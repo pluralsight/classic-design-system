@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.10"></a>
+## [1.4.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.4.9...@pluralsight/ps-design-system-avatar@1.4.10) (2018-04-20)
+
+
+### Bug Fixes
+
+* **avatar:** ensure all initials get a bg color ([46dd426](https://github.com/pluralsight/design-system/commit/46dd426))
+* **avatar:** update snapshot ([693e045](https://github.com/pluralsight/design-system/commit/693e045))
+
+
+
+
 <a name="1.4.9"></a>
 ## [1.4.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.4.8...@pluralsight/ps-design-system-avatar@1.4.9) (2018-04-19)
 

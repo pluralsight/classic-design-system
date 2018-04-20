@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.32.0"></a>
+# [9.32.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.31.3...@pluralsight/ps-design-system-site@9.32.0) (2018-04-20)
+
+
+### Features
+
+* **site:** in-app example for table ([4a9b69c](https://github.com/pluralsight/design-system/commit/4a9b69c))
+* **site:** initial table docs ([e6392f1](https://github.com/pluralsight/design-system/commit/e6392f1))
+
+
+
+
 <a name="9.31.3"></a>
 ## [9.31.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.31.2...@pluralsight/ps-design-system-site@9.31.3) (2018-04-19)
 
