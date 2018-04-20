@@ -57,6 +57,6 @@ export default {
     justifyContent: 'center',
     color: core.colors.white,
     fontWeight: core.type.fontWeightBook,
-    backgroundColor: core.colors.bone
+    backgroundColor: core.colors.gray02
   }
 }

@@ -16,7 +16,7 @@ export const getColorByName = name => {
   const stableRandLetter =
     sha1(name)
       .toUpperCase()
-      .replace(/[^A-Z]/, '')[0] || defaultColorMapKey
+      .replace(/[^A-Z]/g, '')[0] || defaultColorMapKey
   return colorByLetter[stableRandLetter]
 }
 
