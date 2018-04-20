@@ -342,6 +342,9 @@ export default withHeadings(props => (
       <NavLink href="/components/tab" headings={props.headings}>
         Tab
       </NavLink>
+      <NavLink href="/components/table" headings={props.headings}>
+        Table
+      </NavLink>
       <NavLink href="/components/tag" headings={props.headings}>
         Tag
       </NavLink>

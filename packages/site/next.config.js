@@ -30,6 +30,7 @@ module.exports = {
       '/components/row': { page: '/components/row' },
       '/components/switch': { page: '/components/switch' },
       '/components/tab': { page: '/components/tab' },
+      '/components/table': { page: '/components/table' },
       '/components/tag': { page: '/components/tag' },
       '/components/text': { page: '/components/text' },
       '/components/theme': { page: '/components/theme' },

@@ -32,6 +32,7 @@
     "@pluralsight/ps-design-system-row": "^2.5.7",
     "@pluralsight/ps-design-system-switch": "^1.2.7",
     "@pluralsight/ps-design-system-tab": "^7.5.6",
+    "@pluralsight/ps-design-system-table": "^0.1.0",
     "@pluralsight/ps-design-system-tag": "^1.4.5",
     "@pluralsight/ps-design-system-text": "^10.6.6",
     "@pluralsight/ps-design-system-theme": "^1.2.0",
