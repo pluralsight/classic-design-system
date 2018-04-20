@@ -46,6 +46,8 @@ export default {
   // __cell
   '.psds-table__cell': {
     flex: 1,
+    display: 'flex',
+    alignItems: 'center',
     padding: `${core.layout.spacingSmall} calc(${
       core.layout.spacingMedium
     } / 2)`
