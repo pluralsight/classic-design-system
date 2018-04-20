@@ -1,10 +1,10 @@
-export const cellAligns = {
+export const aligns = {
   left: 'left',
   right: 'right',
   center: 'center'
 }
 
-export const columnHeaderSorts = {
+export const sorts = {
   asc: 'asc',
   desc: 'desc'
 }

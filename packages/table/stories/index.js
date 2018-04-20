@@ -145,7 +145,7 @@ const cellStory = storiesOf('cell', module)
       </Table.Row>
     </Table>
   ))
-Object.keys(Table.cellAligns).forEach(align => {
+Object.keys(Table.aligns).forEach(align => {
   cellStory.add(`align ${align}`, _ => (
     <Table>
       <Table.Row>
@@ -215,7 +215,7 @@ const columnHeaderStory = storiesOf('columnHeader', module)
       </Table.Row>
     </Table>
   ))
-Object.keys(Table.columnHeaderSorts).forEach(sort =>
+Object.keys(Table.sorts).forEach(sort =>
   columnHeaderStory.add(`sort ${sort}`, _ => (
     <Table>
       <Table.Row>
@@ -233,7 +233,7 @@ columnHeaderStory.add('sort default w/ onClick', _ => (
     </Table.Row>
   </Table>
 ))
-Object.keys(Table.columnHeaderSorts).forEach(sort =>
+Object.keys(Table.sorts).forEach(sort =>
   columnHeaderStory.add(`sort ${sort} w/ onClick`, _ => (
     <Table>
       <Table.Row>
@@ -244,6 +244,42 @@ Object.keys(Table.columnHeaderSorts).forEach(sort =>
     </Table>
   ))
 )
+Object.keys(Table.aligns).forEach(align => {
+  columnHeaderStory.add(`align ${align}`, _ => (
+    <Table>
+      <Table.Row>
+        <Table.ColumnHeader align={align}>
+          {`Header aligned ${align}`}
+        </Table.ColumnHeader>
+      </Table.Row>
+    </Table>
+  ))
+})
+Object.keys(Table.aligns).forEach(align => {
+  columnHeaderStory.add(`align ${align} w/ sort`, _ => (
+    <Table>
+      <Table.Row>
+        <Table.ColumnHeader sort align={align}>
+          {`Header sortable, aligned ${align}`}
+        </Table.ColumnHeader>
+      </Table.Row>
+    </Table>
+  ))
+})
+Object.keys(Table.aligns).forEach(align => {
+  columnHeaderStory.add(`long, align ${align} w/ sort`, _ => (
+    <Table>
+      <Table.Row>
+        <Table.ColumnHeader sort align={align}>
+          {` Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned ${align}`}
+        </Table.ColumnHeader>
+        <Table.ColumnHeader sort align={align}>
+          Short header, same align
+        </Table.ColumnHeader>
+      </Table.Row>
+    </Table>
+  ))
+})
 columnHeaderStory
   .add('custom className', _ => (
     <Table>

@@ -63,13 +63,16 @@ export default {
   [`.psds-table__cell--emphasis.psds-theme--${themeNames.light}`]: {
     color: core.colors.black
   },
-  [`.psds-table__cell--align-${vars.cellAligns.left}`]: {
+  [`.psds-table__cell--align-${vars.aligns.left}`]: {
+    justifyContent: 'left',
     textAlign: 'left'
   },
-  [`.psds-table__cell--align-${vars.cellAligns.right}`]: {
+  [`.psds-table__cell--align-${vars.aligns.right}`]: {
+    justifyContent: 'right',
     textAlign: 'right'
   },
-  [`.psds-table__cell--align-${vars.cellAligns.center}`]: {
+  [`.psds-table__cell--align-${vars.aligns.center}`]: {
+    justifyContent: 'center',
     textAlign: 'center'
   },
   '.psds-table__cell a': {
@@ -79,12 +82,16 @@ export default {
   },
   '.psds-table__cell a:hover': cellAHover,
   '.psds-table__cell a:active': cellAHover,
+  '.psds-table__cell a:focus': cellAHover,
   [`.psds-table__cell.psds-theme--${
     themeNames.light
   } a:hover`]: cellAHoverLight,
   [`.psds-table__cell.psds-theme--${
     themeNames.light
   } a:active`]: cellAHoverLight,
+  [`.psds-table__cell.psds-theme--${
+    themeNames.light
+  } a:focus`]: cellAHoverLight,
 
   // __column-header
   '.psds-table__column-header': {
@@ -93,7 +100,7 @@ export default {
     alignItems: 'flex-end',
     padding: `${core.layout.spacingSmall} calc(${
       core.layout.spacingMedium
-    } / 2) ${core.layout.spacingXSmall} calc(${core.layout.spacingMedium} / 2)`,
+    } / 2)`,
     fontSize: core.type.fontSizeXSmall,
     lineHeight: '16px',
     textTransform: 'uppercase'
@@ -103,6 +110,18 @@ export default {
   },
   '.psds-table__column-header:last-of-type': {
     paddingRight: 0
+  },
+  [`.psds-table__column-header--align-${vars.aligns.left}`]: {
+    justifyContent: 'left',
+    textAlign: 'left'
+  },
+  [`.psds-table__column-header--align-${vars.aligns.right}`]: {
+    justifyContent: 'right',
+    textAlign: 'right'
+  },
+  [`.psds-table__column-header--align-${vars.aligns.center}`]: {
+    justifyContent: 'center',
+    textAlign: 'center'
   },
   '.psds-table__column-header--onclick': {
     color: core.colors.white
@@ -120,9 +139,10 @@ export default {
     color: core.colors.black,
     cursor: 'pointer'
   },
-  ['.psds-table__column-header__text']: {
-    paddingBottom: `calc(${core.layout.spacingSmall} - ${
+  '.psds-table__column-header__icon': {
+    position: 'relative',
+    bottom: `calc(-1 * (${core.layout.spacingSmall} - ${
       core.layout.spacingXSmall
-    })`
+    }))`
   }
 }

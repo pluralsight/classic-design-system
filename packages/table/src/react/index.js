@@ -24,15 +24,24 @@ const styles = {
       align && css[`.psds-table__cell--align-${align}`],
       {
         '& a': css['.psds-table__cell a'],
-        '& a:hover': css['.psds-table__cell a:hover'],
-        '& a:active': css['.psds-table__cell a:active'],
-        '& a:hover': css[`.psds-table__cell.psds-theme--${themeName} a:hover`],
-        '& a:active': css[`.psds-table__cell.psds-theme--${themeName} a:active`]
+        '& a:hover': {
+          ...css['.psds-table__cell a:hover'],
+          ...css[`.psds-table__cell.psds-theme--${themeName} a:hover`]
+        },
+        '& a:active': {
+          ...css['.psds-table__cell a:active'],
+          ...css[`.psds-table__cell.psds-theme--${themeName} a:active`]
+        },
+        '& a:focus': {
+          ...css['.psds-table__cell a:focus'],
+          ...css[`.psds-table__cell.psds-theme--${themeName} a:focus`]
+        }
       }
     ),
-  columnHeader: ({ onClick, sort, themeName }) =>
+  columnHeader: ({ align, onClick, sort, themeName }) =>
     glamor.css(
       css['.psds-table__column-header'],
+      css[`.psds-table__column-header--align-${align}`],
       { ':first-of-type': css['.psds-table__column-header:first-of-type'] },
       { ':last-of-type': css['.psds-table__column-header:last-of-type'] },
       onClick && css['.psds-table__column-header--onclick'],
@@ -47,7 +56,7 @@ const styles = {
         }
       }
     ),
-  columnHeaderText: _ => glamor.css(css['.psds-table__column-header__text']),
+  columnHeaderIcon: _ => glamor.css(css['.psds-table__column-header__icon']),
   row: ({ _tableHasDrawers }) =>
     glamor.css(
       css['.psds-table__row'],
@@ -60,21 +69,27 @@ const styles = {
     glamor.css(css['.psds-table'], css[`.psds-table.psds-theme--${themeName}`])
 }
 
-const SortIconAsc = _ => <Icon id={Icon.ids.sortAsc} />
-const SortIconDesc = _ => <Icon id={Icon.ids.sortDesc} />
-const SortIconDefault = _ => <Icon id={Icon.ids.sort} />
+const SortIconAsc = _ => (
+  <Icon id={Icon.ids.sortAsc} {...styles.columnHeaderIcon()} />
+)
+const SortIconDesc = _ => (
+  <Icon id={Icon.ids.sortDesc} {...styles.columnHeaderIcon()} />
+)
+const SortIconDefault = _ => (
+  <Icon id={Icon.ids.sort} {...styles.columnHeaderIcon()} />
+)
 
 const getSortIcon = props =>
   ({
-    [vars.columnHeaderSorts.asc]: <SortIconAsc />,
-    [vars.columnHeaderSorts.desc]: <SortIconDesc />
+    [vars.sorts.asc]: <SortIconAsc />,
+    [vars.sorts.desc]: <SortIconDesc />
   }[props.sort] || <SortIconDefault />)
 
 const getToggledSort = props =>
   ({
-    [vars.columnHeaderSorts.asc]: vars.columnHeaderSorts.desc,
-    [vars.columnHeaderSorts.desc]: vars.columnHeaderSorts.asc
-  }[props.sort] || vars.columnHeaderSorts.asc)
+    [vars.sorts.asc]: vars.sorts.desc,
+    [vars.sorts.desc]: vars.sorts.asc
+  }[props.sort] || vars.sorts.asc)
 
 class ColumnHeader extends React.Component {
   constructor(props) {
@@ -98,6 +113,7 @@ class ColumnHeader extends React.Component {
       allProps.flex
     )
       style.flex = allProps.flex
+    // TODO: convert to button
     return (
       <div
         {...(allProps.className ? { className: allProps.className } : null)}
@@ -105,17 +121,21 @@ class ColumnHeader extends React.Component {
         onClick={this.handleClick}
         style={style}
       >
-        <span {...styles.columnHeaderText(allProps)}>{allProps.children}</span>
+        {allProps.children}
         {allProps.sort && getSortIcon(allProps)}
       </div>
     )
   }
 }
 ColumnHeader.propTypes = {
+  align: PropTypes.oneOf(Object.keys(vars.aligns)),
   children: PropTypes.string.isRequired,
   flex: PropTypes.string,
   onClick: PropTypes.func,
-  sort: PropTypes.oneOf([true, ...Object.keys(vars.columnHeaderSorts)])
+  sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)])
+}
+ColumnHeader.propTypes = {
+  align: vars.aligns.left
 }
 ColumnHeader.displayName = 'Table.ColumnHeader'
 ColumnHeader.contextTypes = {
@@ -147,16 +167,19 @@ class Cell extends React.Component {
   }
 }
 Cell.propTypes = {
+  align: PropTypes.oneOf(Object.keys(vars.aligns)),
   emphasis: PropTypes.bool,
   flex: PropTypes.string
 }
 Cell.defaultProps = {
+  align: vars.aligns.left,
   emphasis: false
 }
 Cell.contextTypes = {
   themeName: PropTypes.string
 }
 Cell.displayName = 'Table.Cell'
+
 class Row extends React.Component {
   render() {
     const { props } = this
@@ -219,10 +242,10 @@ Table.Row = Row
 Table.Cell = Cell
 Table.ColumnHeader = ColumnHeader
 
-Table.cellAligns = vars.cellAligns
-Table.columnHeaderSorts = vars.columnHeaderSorts
+Table.aligns = vars.aligns
+Table.sorts = vars.sorts
 
-export const cellAligns = vars.cellAligns
-export const columnHeaderSorts = vars.columnHeaderSorts
+export const aligns = vars.aligns
+export const sorts = vars.sorts
 
 export default Table

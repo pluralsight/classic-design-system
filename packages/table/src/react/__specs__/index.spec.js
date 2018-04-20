@@ -6,7 +6,7 @@ import Table from '../index'
 describe('columnHeader', () => {
   test('sorted=false onClick called with asc', done => {
     const onClick = sort => {
-      expect(sort).toBe(Table.columnHeaderSorts.asc)
+      expect(sort).toBe(Table.sorts.asc)
       done()
     }
     const { getByText } = render(
@@ -16,7 +16,7 @@ describe('columnHeader', () => {
   })
   test('sorted=true onClick called with asc', done => {
     const onClick = sort => {
-      expect(sort).toBe(Table.columnHeaderSorts.asc)
+      expect(sort).toBe(Table.sorts.asc)
       done()
     }
     const { getByText } = render(
@@ -28,11 +28,11 @@ describe('columnHeader', () => {
   })
   test('sorted=asc onClick called with desc', done => {
     const onClick = sort => {
-      expect(sort).toBe(Table.columnHeaderSorts.desc)
+      expect(sort).toBe(Table.sorts.desc)
       done()
     }
     const { getByText } = render(
-      <Table.ColumnHeader sort={Table.columnHeaderSorts.asc} onClick={onClick}>
+      <Table.ColumnHeader sort={Table.sorts.asc} onClick={onClick}>
         Click me
       </Table.ColumnHeader>
     )
@@ -40,11 +40,11 @@ describe('columnHeader', () => {
   })
   test('sorted=desc onClick called with asc', done => {
     const onClick = sort => {
-      expect(sort).toBe(Table.columnHeaderSorts.asc)
+      expect(sort).toBe(Table.sorts.asc)
       done()
     }
     const { getByText } = render(
-      <Table.ColumnHeader sort={Table.columnHeaderSorts.desc} onClick={onClick}>
+      <Table.ColumnHeader sort={Table.sorts.desc} onClick={onClick}>
         Click me
       </Table.ColumnHeader>
     )
