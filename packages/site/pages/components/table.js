@@ -1,6 +1,8 @@
+import Avatar from '@pluralsight/ps-design-system-avatar/react'
 import core from '@pluralsight/ps-design-system-core'
 import Drawer from '@pluralsight/ps-design-system-drawer/react'
 import Table from '@pluralsight/ps-design-system-table/react'
+import Theme from '@pluralsight/ps-design-system-theme/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
 
 import {
@@ -35,6 +37,103 @@ const PinkBox = props => (
     `}</style>
   </div>
 )
+
+class InAppExample extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      fields: [
+        { key: 'name', name: 'Name', align: Table.aligns.left },
+        { key: 'courses', name: 'Unique Courses', align: Table.aligns.right },
+        { key: 'viewTime', name: 'View Time', align: Table.aligns.right }
+      ],
+      sortKey: 'name',
+      sortDirection: Table.sorts.asc,
+      rows: [
+        {
+          name: 'Tod Gentille',
+          courses: 41,
+          viewTime: 839
+        },
+        {
+          name: 'Dmitry Borodyansky',
+          courses: 2,
+          viewTime: 12
+        },
+        {
+          name: 'Jake Trent',
+          courses: 7,
+          viewTime: 294
+        }
+      ]
+    }
+    this.handleSortClick = this.handleSortClick.bind(this)
+    this.sortRows = this.sortRows.bind(this)
+  }
+  handleSortClick(sortKey, sortDirection) {
+    this.setState({ sortKey, sortDirection })
+  }
+  sortRows(row1, row2) {
+    const { state } = this
+    const [rowA, rowB] =
+      state.sortDirection === Table.sorts.asc ? [row1, row2] : [row2, row1]
+    return typeof rowA[state.sortKey] === 'string'
+      ? rowA[state.sortKey].localeCompare(rowB[state.sortKey])
+      : rowA[state.sortKey] - rowB[state.sortKey]
+  }
+  render() {
+    const { handleSortClick, props, sortRows, state } = this
+    return (
+      <div className="example">
+        <Theme name={props.themeName}>
+          <Table>
+            <Table.Row>
+              {state.fields.map(field => (
+                <Table.ColumnHeader
+                  align={field.align}
+                  key={field.key}
+                  onClick={handleSortClick.bind(this, field.key)}
+                  sort={
+                    state.sortKey === field.key ? state.sortDirection : true
+                  }
+                >
+                  {field.name}
+                </Table.ColumnHeader>
+              ))}
+            </Table.Row>
+            {state.rows.sort(sortRows).map(row => (
+              <Table.Row key={row.name}>
+                <Table.Cell>
+                  <Avatar name={row.name} size={Avatar.sizes.xSmall} />
+                  <div style={{ marginLeft: core.layout.spacingSmall }}>
+                    {row.name}
+                  </div>
+                </Table.Cell>
+                <Table.Cell align={Table.aligns.right}>
+                  {row.courses}
+                </Table.Cell>
+                <Table.Cell align={Table.aligns.right}>
+                  {row.viewTime}m
+                </Table.Cell>
+              </Table.Row>
+            ))}
+          </Table>
+        </Theme>
+        <style jsx>{`
+          .example {
+            padding: ${core.layout.spacingLarge};
+            background: ${props.themeName === Theme.names.light
+              ? core.colors.bone
+              : core.colors.gray06};
+          }
+        `}</style>
+      </div>
+    )
+  }
+}
+InAppExample.defaultProps = {
+  themeName: Theme.names.dark
+}
 
 export default withServerProps(_ => (
   <Chrome>
@@ -129,6 +228,9 @@ export default withServerProps(_ => (
           ]
         }}
       />
+
+      <SectionHeading>In-app example</SectionHeading>
+      <InAppExample />
 
       <SectionHeading>Emphasis</SectionHeading>
       <P>
@@ -305,6 +407,10 @@ export default withServerProps(_ => (
 </Table>`
         ]}
       />
+
+      <SectionHeading>Light theme</SectionHeading>
+      <P>The table is fully supported in the light theme.</P>
+      <InAppExample themeName={Theme.names.light} />
     </Content>
   </Chrome>
 ))
