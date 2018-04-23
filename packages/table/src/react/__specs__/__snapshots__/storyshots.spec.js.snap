@@ -23,7 +23,7 @@ exports[`Storyshots cell align center 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-16k7vya=""
+        data-css-1llq0sl=""
         style={Object {}}
       >
         Cell aligned 
@@ -57,7 +57,7 @@ exports[`Storyshots cell align left 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         Cell aligned 
@@ -91,7 +91,7 @@ exports[`Storyshots cell align right 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-udvm7d=""
+        data-css-kxyzu0=""
         style={Object {}}
       >
         Cell aligned 
@@ -125,7 +125,7 @@ exports[`Storyshots cell auto style anchor tag 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         <a
@@ -135,7 +135,7 @@ exports[`Storyshots cell auto style anchor tag 1`] = `
         </a>
       </div>
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         Cell 2
@@ -145,7 +145,7 @@ exports[`Storyshots cell auto style anchor tag 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         <a
@@ -156,7 +156,7 @@ exports[`Storyshots cell auto style anchor tag 1`] = `
         </a>
       </div>
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         Cell 2
@@ -190,7 +190,7 @@ exports[`Storyshots cell custom className 1`] = `
     >
       <div
         className="some-classname"
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         cell text
@@ -223,7 +223,7 @@ exports[`Storyshots cell custom style 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={
           Object {
             "outline": "1px solid red",
@@ -260,13 +260,13 @@ exports[`Storyshots cell emphasis text 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-6fb05q=""
+        data-css-122kttd=""
         style={Object {}}
       >
         em-PHA-sis
       </div>
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         Non emphasized
@@ -299,7 +299,7 @@ exports[`Storyshots cell empty 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       />
     </div>
@@ -330,7 +330,7 @@ exports[`Storyshots cell flex 1 | 4 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={
           Object {
             "flex": "1",
@@ -340,7 +340,7 @@ exports[`Storyshots cell flex 1 | 4 1`] = `
         Flex 1 Flex 1 Flex 1 Flex 1 Flex 1 Flex 1 Flex 1 Flex 1
       </div>
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={
           Object {
             "flex": "4",
@@ -377,7 +377,7 @@ exports[`Storyshots cell flex 2 | 1 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={
           Object {
             "flex": "2",
@@ -387,7 +387,7 @@ exports[`Storyshots cell flex 2 | 1 1`] = `
         Flex 2
       </div>
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={
           Object {
             "flex": "1",
@@ -424,7 +424,7 @@ exports[`Storyshots cell flex, multiple cell, multiple row 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={
           Object {
             "flex": "2",
@@ -434,7 +434,7 @@ exports[`Storyshots cell flex, multiple cell, multiple row 1`] = `
         Flex 2
       </div>
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={
           Object {
             "flex": "1",
@@ -448,7 +448,7 @@ exports[`Storyshots cell flex, multiple cell, multiple row 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={
           Object {
             "flex": "2",
@@ -458,7 +458,7 @@ exports[`Storyshots cell flex, multiple cell, multiple row 1`] = `
         Flex 2
       </div>
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={
           Object {
             "flex": "1",
@@ -495,13 +495,13 @@ exports[`Storyshots cell inner padding 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell
       </div>
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell
@@ -534,13 +534,13 @@ exports[`Storyshots cell multiple text 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         Cell 1 text
       </div>
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         Cell 2 text
@@ -573,7 +573,7 @@ exports[`Storyshots cell text 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         Cell text
@@ -850,7 +850,7 @@ exports[`Storyshots columnHeader custom className 1`] = `
     >
       <div
         className="some-classname"
-        data-css-1pfvwhp=""
+        data-css-4rxj5e=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -884,7 +884,7 @@ exports[`Storyshots columnHeader custom style 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1pfvwhp=""
+        data-css-4rxj5e=""
         onClick={[Function]}
         style={
           Object {
@@ -1123,7 +1123,7 @@ exports[`Storyshots columnHeader sort asc 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1pfvwhp=""
+        data-css-4rxj5e=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1172,7 +1172,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-4kl5iy=""
+        data-css-11kdrdc=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1221,7 +1221,7 @@ exports[`Storyshots columnHeader sort default 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1pfvwhp=""
+        data-css-4rxj5e=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1268,7 +1268,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-4kl5iy=""
+        data-css-11kdrdc=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1315,7 +1315,7 @@ exports[`Storyshots columnHeader sort desc 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1pfvwhp=""
+        data-css-4rxj5e=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1364,7 +1364,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-4kl5iy=""
+        data-css-11kdrdc=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1413,7 +1413,7 @@ exports[`Storyshots columnHeader text 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1pfvwhp=""
+        data-css-4rxj5e=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1447,7 +1447,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
       data-css-luy9rl=""
     >
       <div
-        data-css-1pfvwhp=""
+        data-css-4rxj5e=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1467,7 +1467,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
         </div>
       </div>
       <div
-        data-css-1pfvwhp=""
+        data-css-4rxj5e=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1501,13 +1501,13 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
             data-css-vjljp5=""
           >
             <div
-              data-css-1c97664=""
+              data-css-11sxvk2=""
               style={Object {}}
             >
               cell text
             </div>
             <div
-              data-css-1c97664=""
+              data-css-11sxvk2=""
               style={Object {}}
             >
               cell2 text
@@ -1580,7 +1580,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1pfvwhp=""
+        data-css-4rxj5e=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1600,7 +1600,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
         </div>
       </div>
       <div
-        data-css-1pfvwhp=""
+        data-css-4rxj5e=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1624,13 +1624,13 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         cell text
       </div>
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         cell2 text
@@ -1673,7 +1673,7 @@ exports[`Storyshots drawer mulitple 1`] = `
             data-css-vjljp5=""
           >
             <div
-              data-css-1c97664=""
+              data-css-11sxvk2=""
               style={Object {}}
             >
               wow
@@ -1733,7 +1733,7 @@ exports[`Storyshots drawer mulitple 1`] = `
             data-css-vjljp5=""
           >
             <div
-              data-css-1c97664=""
+              data-css-11sxvk2=""
               style={Object {}}
             >
               wow
@@ -1816,7 +1816,7 @@ exports[`Storyshots drawer single 1`] = `
             data-css-vjljp5=""
           >
             <div
-              data-css-1c97664=""
+              data-css-11sxvk2=""
               style={Object {}}
             >
               wow
@@ -1899,7 +1899,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
             data-css-vjljp5=""
           >
             <div
-              data-css-1c97664=""
+              data-css-11sxvk2=""
               style={
                 Object {
                   "flex": "2",
@@ -1909,7 +1909,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
               flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
             </div>
             <div
-              data-css-1c97664=""
+              data-css-11sxvk2=""
               style={
                 Object {
                   "flex": "1",
@@ -1973,7 +1973,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
             data-css-vjljp5=""
           >
             <div
-              data-css-1c97664=""
+              data-css-11sxvk2=""
               style={
                 Object {
                   "flex": "2",
@@ -1983,7 +1983,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
               flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
             </div>
             <div
-              data-css-1c97664=""
+              data-css-11sxvk2=""
               style={
                 Object {
                   "flex": "1",
@@ -2047,7 +2047,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
             data-css-vjljp5=""
           >
             <div
-              data-css-1c97664=""
+              data-css-11sxvk2=""
               style={
                 Object {
                   "flex": "2",
@@ -2057,7 +2057,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
               flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
             </div>
             <div
-              data-css-1c97664=""
+              data-css-11sxvk2=""
               style={
                 Object {
                   "flex": "1",
@@ -2135,7 +2135,7 @@ exports[`Storyshots row custom className 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         innocuous
@@ -2173,7 +2173,7 @@ exports[`Storyshots row custom style 1`] = `
       }
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         innocuous
@@ -2233,7 +2233,7 @@ exports[`Storyshots table custom className 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         innocuous
@@ -2271,7 +2271,7 @@ exports[`Storyshots table custom style 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1c97664=""
+        data-css-11sxvk2=""
         style={Object {}}
       >
         innocuous

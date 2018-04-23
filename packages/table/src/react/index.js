@@ -57,12 +57,13 @@ const styles = {
       }
     ),
   columnHeaderIcon: _ => glamor.css(css['.psds-table__column-header__icon']),
-  row: ({ _tableHasDrawers }) =>
+  row: ({ _tableHasDrawers, themeName }) =>
     glamor.css(
       css['.psds-table__row'],
       {
         ':first-of-type': css['.psds-table__row:first-of-type']
       },
+      css[`.psds-table__row--${themeName}`],
       _tableHasDrawers && css['.psds-table__row--drawers']
     ),
   table: ({ themeName }) =>
@@ -182,14 +183,18 @@ Cell.displayName = 'Table.Cell'
 
 class Row extends React.Component {
   render() {
-    const { props } = this
+    const { context, props } = this
+    const allProps = {
+      ...props,
+      themeName: context.themeName || themeDefaultName
+    }
     return (
       <div
-        {...styles.row(props)}
-        {...(props.className ? { className: props.className } : null)}
-        {...(props.style ? { style: props.style } : null)}
+        {...styles.row(allProps)}
+        {...(allProps.className ? { className: allProps.className } : null)}
+        {...(allProps.style ? { style: allProps.style } : null)}
       >
-        {props.children}
+        {allProps.children}
       </div>
     )
   }
@@ -200,6 +205,9 @@ Row.propTypes = {
 }
 Row.defaultProps = {
   _tableHasDrawers: false
+}
+Row.contextTypes = {
+  themeName: PropTypes.string
 }
 
 class Table extends React.Component {
