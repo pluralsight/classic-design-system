@@ -104,7 +104,11 @@ class InAppExample extends React.Component {
             {state.rows.sort(sortRows).map(row => (
               <Table.Row key={row.name}>
                 <Table.Cell>
-                  <Avatar name={row.name} size={Avatar.sizes.xSmall} />
+                  <Avatar
+                    name={row.name}
+                    size={Avatar.sizes.xSmall}
+                    style={{ minWidth: Avatar.widths.xSmall }}
+                  />
                   <div style={{ marginLeft: core.layout.spacingSmall }}>
                     {row.name}
                   </div>
