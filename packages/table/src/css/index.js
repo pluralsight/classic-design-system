@@ -53,7 +53,8 @@ export default {
     alignItems: 'center',
     padding: `${core.layout.spacingSmall} calc(${
       core.layout.spacingMedium
-    } / 2)`
+    } / 2)`,
+    overflow: 'hidden'
   },
   '.psds-table__cell:first-of-type': {
     paddingLeft: 0
