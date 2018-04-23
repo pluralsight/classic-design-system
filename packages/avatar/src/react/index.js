@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import css from '../css'
-import { sizes } from '../vars'
+import { sizes, widths } from '../vars'
 import { getColorByName, getInitials, transformSrc } from './utils'
 
 const styles = {
@@ -76,5 +76,6 @@ Avatar.propTypes = {
 }
 
 Avatar.sizes = sizes
+Avatar.widths = widths
 
 export default Avatar

@@ -7,37 +7,33 @@ export default {
     overflow: 'hidden',
     display: 'inline-block',
     textAlign: 'center',
-    position: 'relative'
+    position: 'relative',
+    borderRadius: '100%'
   },
   // --size
   [`.psds-avatar--size-${vars.sizes.xSmall}`]: {
-    width: '32px',
-    height: '32px',
-    borderRadius: '32px',
+    width: vars.widths.xSmall,
+    height: vars.widths.xSmall,
     fontSize: core.type.fontSizeXSmall
   },
   [`.psds-avatar--size-${vars.sizes.small}`]: {
-    width: '48px',
-    height: '48px',
-    borderRadius: '48px',
+    width: vars.widths.small,
+    height: vars.widths.small,
     fontSize: core.type.fontSizeSmall
   },
   [`.psds-avatar--size-${vars.sizes.medium}`]: {
-    width: '72px',
-    height: '72px',
-    borderRadius: '72px',
+    width: vars.widths.medium,
+    height: vars.widths.medium,
     fontSize: core.type.fontSizeMedium
   },
   [`.psds-avatar--size-${vars.sizes.large}`]: {
-    width: '96px',
-    height: '96px',
-    borderRadius: '96px',
+    width: vars.widths.large,
+    height: vars.widths.large,
     fontSize: core.type.fontSizeLarge
   },
   [`.psds-avatar--size-${vars.sizes.xLarge}`]: {
-    width: '160px',
-    height: '160px',
-    borderRadius: '160px',
+    width: vars.widths.xLarge,
+    height: vars.widths.xLarge,
     fontSize: core.type.fontSizeXLarge
   },
   // __image

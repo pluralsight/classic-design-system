@@ -26,3 +26,11 @@ export const colorByLetter = letters.reduce((map, letter, i) => {
 }, {})
 
 export const defaultGravatarImage = '404'
+
+export const widths = {
+  xSmall: '32px',
+  small: '48px',
+  medium: '72px',
+  large: '96px',
+  xLarge: '160px'
+}
