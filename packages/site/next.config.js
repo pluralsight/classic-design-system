@@ -1,5 +1,6 @@
 const { parsed: localEnv } = require('dotenv').config()
 const webpack = require('webpack')
+const util = require('util')
 
 module.exports = {
   // TODO: read directory to make more dynamic
@@ -47,7 +48,14 @@ module.exports = {
     }
   },
   webpack(config) {
-    config.plugins.push(new webpack.EnvironmentPlugin(localEnv))
+    config.plugins = config.plugins
+      .filter(
+        plugin =>
+          plugin &&
+          plugin.constructor &&
+          plugin.constructor.name !== 'UglifyJsPlugin'
+      )
+      .concat([new webpack.EnvironmentPlugin(localEnv)])
     return config
   }
 }
