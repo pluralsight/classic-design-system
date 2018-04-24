@@ -2233,6 +2233,92 @@ exports[`Storyshots row custom style 1`] = `
 </div>
 `;
 
+exports[`Storyshots row multiple rows 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-1g2a8nj=""
+    >
+      <div
+        data-css-uunkbn=""
+        style={Object {}}
+      >
+        Something on a row
+      </div>
+    </div>
+    <div
+      data-css-1g2a8nj=""
+    >
+      <div
+        data-css-uunkbn=""
+        style={Object {}}
+      >
+        Something on a row
+      </div>
+    </div>
+    <div
+      data-css-1g2a8nj=""
+    >
+      <div
+        data-css-uunkbn=""
+        style={Object {}}
+      >
+        Something on a row
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots row one row, content 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yo440u=""
+  >
+    <div
+      data-css-1g2a8nj=""
+    >
+      <div
+        data-css-uunkbn=""
+        style={Object {}}
+      >
+        Something on a row
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots row one row, empty 1`] = `
 <div
   style={

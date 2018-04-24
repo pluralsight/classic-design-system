@@ -32,6 +32,7 @@ export default {
 
   // __row
   '.psds-table__row': {
+    width: '100%',
     display: 'flex',
     borderTop: `1px solid ${core.colors.gray04}`
   },

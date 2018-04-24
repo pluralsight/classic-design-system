@@ -34,6 +34,26 @@ const rowStory = storiesOf('row', module)
       <Table.Row />
     </Table>
   ))
+  .add('one row, content', _ => (
+    <Table>
+      <Table.Row>
+        <Table.Cell>Something on a row</Table.Cell>
+      </Table.Row>
+    </Table>
+  ))
+  .add('multiple rows', _ => (
+    <Table>
+      <Table.Row>
+        <Table.Cell>Something on a row</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Something on a row</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Something on a row</Table.Cell>
+      </Table.Row>
+    </Table>
+  ))
   .add('custom className', _ => (
     <Table>
       <Table.Row className="some-class">
