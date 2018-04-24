@@ -8,6 +8,7 @@ module.exports = {
     return {
       '/': { page: '/' },
       '/install': { page: '/install' },
+      '/design-assets': { page: '/design-assets' },
       '/contribute': { page: '/contribute' },
       '/contribute/code': { page: '/contribute/code' },
       '/contribute/components': { page: '/contribute/components' },
