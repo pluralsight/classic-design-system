@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.4.10...@pluralsight/ps-design-system-avatar@1.5.0) (2018-04-24)
+
+
+### Features
+
+* **avatar:** expose widths vars ([d20478a](https://github.com/pluralsight/design-system/commit/d20478a))
+
+
+
+
 <a name="1.4.10"></a>
 ## [1.4.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.4.9...@pluralsight/ps-design-system-avatar@1.4.10) (2018-04-20)
 

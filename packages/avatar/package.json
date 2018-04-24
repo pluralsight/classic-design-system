@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-avatar",
-  "version": "1.4.10",
+  "version": "1.5.0",
   "description": "Design System component for avatar ui",
   "main": "index.js",
   "scripts": {
