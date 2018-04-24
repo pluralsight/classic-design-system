@@ -74,7 +74,7 @@ export default {
     textAlign: 'left'
   },
   [`.psds-table__cell--align-${vars.aligns.right}`]: {
-    justifyContent: 'right',
+    justifyContent: 'flex-end',
     textAlign: 'right'
   },
   [`.psds-table__cell--align-${vars.aligns.center}`]: {
@@ -122,7 +122,7 @@ export default {
     textAlign: 'left'
   },
   [`.psds-table__column-header--align-${vars.aligns.right}`]: {
-    justifyContent: 'right',
+    justifyContent: 'flex-end',
     textAlign: 'right'
   },
   [`.psds-table__column-header--align-${vars.aligns.center}`]: {
