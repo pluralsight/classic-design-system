@@ -42,18 +42,14 @@ exports[`Storyshots drawer controlled 1`] = `
         className="css-1fq8nx6"
       >
         <div
-          className="css-1xh6o2g"
+          className="css-i9wfit"
           onClick={[Function]}
         >
           <div
-            className="css-v0gxx3"
+            className="css-euzj8"
           >
-            <div
-              className="css-k4qf09"
-            >
-              <div>
-                Drawer Base Here
-              </div>
+            <div>
+              Drawer Base Here
             </div>
           </div>
           <div
@@ -129,18 +125,14 @@ exports[`Storyshots drawer default 1`] = `
       className="css-1fq8nx6"
     >
       <div
-        className="css-y8t6tw"
+        className="css-1oot5vc"
         onClick={[Function]}
       >
         <div
-          className="css-v0gxx3"
+          className="css-euzj8"
         >
-          <div
-            className="css-k4qf09"
-          >
-            <div>
-              Drawer Base Here
-            </div>
+          <div>
+            Drawer Base Here
           </div>
         </div>
         <div
@@ -215,116 +207,112 @@ exports[`Storyshots drawer row component with actions 1`] = `
       className="css-1fq8nx6"
     >
       <div
-        className="css-y8t6tw"
+        className="css-1oot5vc"
         onClick={[Function]}
       >
         <div
-          className="css-v0gxx3"
+          className="css-euzj8"
         >
           <div
-            className="css-k4qf09"
+            className="css-oowi90"
           >
             <div
-              className="css-13y9csq"
+              className="css-js3ti3"
             >
+              <span
+                className="css-15yq56v"
+              >
+                <a
+                  href="https://duckduckgo.com?q=image"
+                >
+                  <img
+                    src="https://cataas.com/cat"
+                  />
+                </a>
+              </span>
               <div
-                className="css-js3ti3"
+                className="css-4nxbcy"
               >
                 <span
-                  className="css-15yq56v"
+                  className="css-1fxa3fl"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                 >
                   <a
-                    href="https://duckduckgo.com?q=image"
+                    href="https://duckduckgo.com?q=overlay"
                   >
-                    <img
-                      src="https://cataas.com/cat"
-                    />
+                    Overlay
                   </a>
                 </span>
-                <div
-                  className="css-4nxbcy"
+              </div>
+            </div>
+            <div
+              className="css-kxulf3"
+            >
+              <div
+                className="css-1e23mlv"
+              >
+                <span
+                  className="css-1kcq1x5"
                 >
-                  <span
-                    className="css-1fxa3fl"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
+                  <a
+                    href="https://duckduckgo.com?q=title"
                   >
-                    <a
-                      href="https://duckduckgo.com?q=overlay"
-                    >
-                      Overlay
-                    </a>
-                  </span>
-                </div>
+                    I'm a Row with Actions
+                  </a>
+                </span>
               </div>
               <div
-                className="css-kxulf3"
+                className="css-gmo5z6"
               >
-                <div
-                  className="css-1e23mlv"
+                <span
+                  className="css-1kcrbi9"
                 >
                   <span
-                    className="css-1ublh7e"
+                    className="css-1kcq1x5"
                   >
                     <a
-                      href="https://duckduckgo.com?q=title"
+                      href="https://duckduckgo.com?q=cats"
                     >
-                      I'm a Row with Actions
+                      Kitten McCatbuns
                     </a>
                   </span>
-                </div>
-                <div
-                  className="css-gmo5z6"
+                </span>
+                <span
+                  aria-hidden={true}
+                  className="css-kykfz1"
                 >
-                  <span
-                    className="css-1kcrbi9"
-                  >
-                    <span
-                      className="css-1ublh7e"
-                    >
-                      <a
-                        href="https://duckduckgo.com?q=cats"
-                      >
-                        Kitten McCatbuns
-                      </a>
-                    </span>
-                  </span>
-                  <span
-                    aria-hidden={true}
-                    className="css-kykfz1"
-                  >
-                    ·
-                  </span>
-                  <span
-                    className="css-1kcrbi9"
-                  >
-                    23 hours of cuteness
-                  </span>
-                </div>
+                  ·
+                </span>
+                <span
+                  className="css-1kcrbi9"
+                >
+                  23 hours of cuteness
+                </span>
               </div>
-              <div
-                className="css-h4r20u"
+            </div>
+            <div
+              className="css-h4r20u"
+            >
+              <button
+                className="css-10dk2o2"
+                onClick={[Function]}
               >
-                <button
-                  className="css-10dk2o2"
-                  onClick={[Function]}
+                <div
+                  className="css-otejxm"
                 >
-                  <div
-                    className="css-otejxm"
+                  <svg
+                    aria-label="more icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      aria-label="more icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
-                      />
-                    </svg>
-                  </div>
-                </button>
-              </div>
+                    <path
+                      d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                    />
+                  </svg>
+                </div>
+              </button>
             </div>
           </div>
         </div>
@@ -401,18 +389,14 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         className="css-1fq8nx6"
       >
         <div
-          className="css-y8t6tw"
+          className="css-1oot5vc"
           onClick={[Function]}
         >
           <div
-            className="css-v0gxx3"
+            className="css-euzj8"
           >
-            <div
-              className="css-k4qf09"
-            >
-              <div>
-                The Drawer #1
-              </div>
+            <div>
+              The Drawer #1
             </div>
           </div>
           <div
@@ -456,18 +440,14 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         className="css-1fq8nx6"
       >
         <div
-          className="css-y8t6tw"
+          className="css-1oot5vc"
           onClick={[Function]}
         >
           <div
-            className="css-v0gxx3"
+            className="css-euzj8"
           >
-            <div
-              className="css-k4qf09"
-            >
-              <div>
-                The Drawer #2
-              </div>
+            <div>
+              The Drawer #2
             </div>
           </div>
           <div
@@ -511,18 +491,14 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         className="css-1fq8nx6"
       >
         <div
-          className="css-y8t6tw"
+          className="css-1oot5vc"
           onClick={[Function]}
         >
           <div
-            className="css-v0gxx3"
+            className="css-euzj8"
           >
-            <div
-              className="css-k4qf09"
-            >
-              <div>
-                The Drawer #2
-              </div>
+            <div>
+              The Drawer #2
             </div>
           </div>
           <div
@@ -598,18 +574,14 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           className="css-1fq8nx6"
         >
           <div
-            className="css-y8t6tw"
+            className="css-1oot5vc"
             onClick={[Function]}
           >
             <div
-              className="css-v0gxx3"
+              className="css-euzj8"
             >
-              <div
-                className="css-k4qf09"
-              >
-                <div>
-                  The Drawer #1
-                </div>
+              <div>
+                The Drawer #1
               </div>
             </div>
             <div
@@ -655,18 +627,14 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           className="css-1fq8nx6"
         >
           <div
-            className="css-y8t6tw"
+            className="css-1oot5vc"
             onClick={[Function]}
           >
             <div
-              className="css-v0gxx3"
+              className="css-euzj8"
             >
-              <div
-                className="css-k4qf09"
-              >
-                <div>
-                  The Drawer #2
-                </div>
+              <div>
+                The Drawer #2
               </div>
             </div>
             <div
@@ -712,18 +680,14 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           className="css-1fq8nx6"
         >
           <div
-            className="css-y8t6tw"
+            className="css-1oot5vc"
             onClick={[Function]}
           >
             <div
-              className="css-v0gxx3"
+              className="css-euzj8"
             >
-              <div
-                className="css-k4qf09"
-              >
-                <div>
-                  The Drawer #2
-                </div>
+              <div>
+                The Drawer #2
               </div>
             </div>
             <div
@@ -799,19 +763,15 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
         className="css-1fq8nx6"
       >
         <div
-          className="css-y8t6tw"
+          className="css-1oot5vc"
           onClick={[Function]}
         >
           <div
-            className="css-v0gxx3"
+            className="css-euzj8"
           >
-            <div
-              className="css-k4qf09"
-            >
-              <div>
-                Drawer is 
-                closed
-              </div>
+            <div>
+              Drawer is 
+              closed
             </div>
           </div>
           <div
@@ -887,18 +847,14 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
       className="css-1fq8nx6"
     >
       <div
-        className="css-1xh6o2g"
+        className="css-i9wfit"
         onClick={[Function]}
       >
         <div
-          className="css-v0gxx3"
+          className="css-euzj8"
         >
-          <div
-            className="css-k4qf09"
-          >
-            <div>
-              Base here
-            </div>
+          <div>
+            Base here
           </div>
         </div>
         <div
@@ -975,76 +931,72 @@ exports[`Storyshots drawer with row component 1`] = `
       className="css-1fq8nx6"
     >
       <div
-        className="css-y8t6tw"
+        className="css-1oot5vc"
         onClick={[Function]}
       >
         <div
-          className="css-v0gxx3"
+          className="css-euzj8"
         >
           <div
-            className="css-k4qf09"
+            className="css-oowi90"
           >
             <div
-              className="css-13y9csq"
+              className="css-js3ti3"
             >
               <div
-                className="css-js3ti3"
+                className="css-y8jh93"
+              />
+            </div>
+            <div
+              className="css-kxulf3"
+            >
+              <div
+                className="css-1e23mlv"
               >
-                <div
-                  className="css-y8jh93"
-                />
+                Look at me! I'm a &lt;Row /&gt;!
               </div>
               <div
-                className="css-kxulf3"
+                className="css-gmo5z6"
+              >
+                <span
+                  className="css-1kcrbi9"
+                >
+                  Kitten McCatbuns
+                </span>
+                <span
+                  aria-hidden={true}
+                  className="css-kykfz1"
+                >
+                  ·
+                </span>
+                <span
+                  className="css-1kcrbi9"
+                >
+                  23 hours of cuteness
+                </span>
+              </div>
+            </div>
+            <div
+              className="css-2c174p"
+            >
+              <button
+                className="css-10dk2o2"
               >
                 <div
-                  className="css-1e23mlv"
+                  className="css-otejxm"
                 >
-                  Look at me! I'm a &lt;Row /&gt;!
+                  <svg
+                    aria-label="more icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                    />
+                  </svg>
                 </div>
-                <div
-                  className="css-gmo5z6"
-                >
-                  <span
-                    className="css-1kcrbi9"
-                  >
-                    Kitten McCatbuns
-                  </span>
-                  <span
-                    aria-hidden={true}
-                    className="css-kykfz1"
-                  >
-                    ·
-                  </span>
-                  <span
-                    className="css-1kcrbi9"
-                  >
-                    23 hours of cuteness
-                  </span>
-                </div>
-              </div>
-              <div
-                className="css-2c174p"
-              >
-                <button
-                  className="css-10dk2o2"
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="more icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
-                      />
-                    </svg>
-                  </div>
-                </button>
-              </div>
+              </button>
             </div>
           </div>
         </div>

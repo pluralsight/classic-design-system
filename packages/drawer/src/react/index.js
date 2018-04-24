@@ -5,7 +5,10 @@ import { transparentize } from 'polished'
 import Icon, {
   sizes as iconSizes
 } from '@pluralsight/ps-design-system-icon/react'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
+import {
+  defaultName as themeDefaultName,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -88,7 +91,7 @@ class Drawer extends React.Component {
   }
 
   render() {
-    const { isOpen, context: { themeName } } = this
+    const { isOpen, context: { themeName = themeDefaultName } } = this
     const ariaLabel = isOpen ? 'Collapse' : 'Expand'
 
     return (
