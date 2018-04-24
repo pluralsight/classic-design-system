@@ -31,33 +31,31 @@ export default withServerProps(_ => (
       </Code>
 
       <PropTypes
-        props={{
-          ActionMenu: [
-            PropTypes.row([
-              'name',
-              'string',
-              null,
-              null,
-              'used to generate intials as a fallback image'
-            ]),
-            PropTypes.row([
-              'size',
-              PropTypes.union(Avatar.sizes),
-              null,
-              <code>medium</code>,
-              <span>
-                avatar size (from <code>Avatar.sizes</code>)
-              </span>
-            ]),
-            PropTypes.row([
-              'src',
-              'string',
-              null,
-              null,
-              'URI or path to avatar image'
-            ])
-          ]
-        }}
+        props={[
+          PropTypes.row([
+            'name',
+            'string',
+            null,
+            null,
+            'used to generate intials as a fallback image'
+          ]),
+          PropTypes.row([
+            'size',
+            PropTypes.union(Avatar.sizes),
+            null,
+            <code>medium</code>,
+            <span>
+              avatar size (from <code>Avatar.sizes</code>)
+            </span>
+          ]),
+          PropTypes.row([
+            'src',
+            'string',
+            null,
+            null,
+            'URI or path to avatar image'
+          ])
+        ]}
       />
 
       <SectionHeading>Size</SectionHeading>
