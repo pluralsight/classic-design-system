@@ -38,15 +38,15 @@ const styles = {
         }
       }
     ),
-  columnHeader: ({ align, onClick, sort, themeName }) =>
+  columnHeader: ({ active, align, onClick, sort, themeName }) =>
     glamor.css(
       css['.psds-table__column-header'],
       css[`.psds-table__column-header--align-${align}`],
       { ':first-of-type': css['.psds-table__column-header:first-of-type'] },
       { ':last-of-type': css['.psds-table__column-header:last-of-type'] },
-      onClick && css['.psds-table__column-header--onclick'],
-      onClick &&
-        css[`.psds-table__column-header--onclick.psds-theme--${themeName}`],
+      active && css['.psds-table__column-header--active'],
+      active &&
+        css[`.psds-table__column-header--active.psds-theme--${themeName}`],
       onClick && {
         ':hover': {
           ...css['.psds-table__column-header--onclick:hover'],
@@ -106,6 +106,7 @@ class ColumnHeader extends React.Component {
     const { context, props } = this
     const allProps = {
       ...props,
+      active: vars.sorts[props.sort] && typeof props.onClick === 'function',
       themeName: context.themeName || themeDefaultName
     }
     const style = allProps.style || {}

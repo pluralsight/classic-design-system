@@ -227,8 +227,11 @@ Object.keys(Table.sorts).forEach(sort =>
 columnHeaderStory.add('sort default w/ onClick', _ => (
   <Table>
     <Table.Row>
-      <Table.ColumnHeader sort onClick={action('click columnHeader')}>
-        header text
+      <Table.ColumnHeader sort onClick={action('click columnHeader 1')}>
+        active header
+      </Table.ColumnHeader>
+      <Table.ColumnHeader sort onClick={action('click columnHeader 2')}>
+        other sortable
       </Table.ColumnHeader>
     </Table.Row>
   </Table>
@@ -237,8 +240,14 @@ Object.keys(Table.sorts).forEach(sort =>
   columnHeaderStory.add(`sort ${sort} w/ onClick`, _ => (
     <Table>
       <Table.Row>
-        <Table.ColumnHeader sort={sort} onClick={action('click columnHeader')}>
-          sorted header
+        <Table.ColumnHeader
+          sort={sort}
+          onClick={action('click columnHeader 1')}
+        >
+          active header
+        </Table.ColumnHeader>
+        <Table.ColumnHeader sort onClick={action('click columnHeader 2')}>
+          other sortable
         </Table.ColumnHeader>
       </Table.Row>
     </Table>

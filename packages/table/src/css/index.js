@@ -129,10 +129,10 @@ export default {
     justifyContent: 'center',
     textAlign: 'center'
   },
-  '.psds-table__column-header--onclick': {
+  '.psds-table__column-header--active': {
     color: core.colors.white
   },
-  [`.psds-table__column-header--onclick.psds-theme--${themeNames.light}`]: {
+  [`.psds-table__column-header--active.psds-theme--${themeNames.light}`]: {
     color: core.colors.black
   },
   '.psds-table__column-header--onclick:hover': {
@@ -145,6 +145,7 @@ export default {
     color: core.colors.black,
     cursor: 'pointer'
   },
+
   '.psds-table__column-header__icon': {
     position: 'relative',
     bottom: `calc(-1 * (${core.layout.spacingSmall} - ${
