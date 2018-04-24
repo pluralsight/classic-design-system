@@ -21,7 +21,7 @@ export default {
     width: '100%',
     fontWeight: core.type.fontWeightBook,
     fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightStandard
+    lineHeight: core.type.lineHeightTight
   },
   [`.psds-table.psds-theme--${themeDefaultName}`]: {
     color: core.colors.gray02
