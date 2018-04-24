@@ -282,7 +282,7 @@ export default withHeadings(props => (
     <Group>
       <GroupTitle>INTRODUCTION</GroupTitle>
       <NavLink href="/install">Install</NavLink>
-      <NavLink href="/design-assets">Design Assets</NavLink>
+      <NavLink href="/design-assets">Design assets</NavLink>
       <NavLink href="/contribute" headings={props.headings}>
         Contribute
       </NavLink>
