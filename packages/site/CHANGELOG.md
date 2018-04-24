@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.33.0"></a>
+# [9.33.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.32.2...@pluralsight/ps-design-system-site@9.33.0) (2018-04-24)
+
+
+### Bug Fixes
+
+* **site:** sentence case side nav for design assets ([f35616f](https://github.com/pluralsight/design-system/commit/f35616f))
+* **site:** sentence case voice and tone sidenav ([cfef61d](https://github.com/pluralsight/design-system/commit/cfef61d))
+
+
+### Features
+
+* **site:** add design assets page ([16d10f4](https://github.com/pluralsight/design-system/commit/16d10f4))
+
+
+
+
 <a name="9.32.2"></a>
 ## [9.32.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.32.1...@pluralsight/ps-design-system-site@9.32.2) (2018-04-24)
 
