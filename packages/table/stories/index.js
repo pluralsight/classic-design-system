@@ -249,6 +249,7 @@ Object.keys(Table.sorts).forEach(sort =>
         <Table.ColumnHeader sort onClick={action('click columnHeader 2')}>
           other sortable
         </Table.ColumnHeader>
+        <Table.ColumnHeader>no sort</Table.ColumnHeader>
       </Table.Row>
     </Table>
   ))

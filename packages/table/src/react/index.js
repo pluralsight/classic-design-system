@@ -41,6 +41,7 @@ const styles = {
   columnHeader: ({ active, align, onClick, sort, themeName }) =>
     glamor.css(
       css['.psds-table__column-header'],
+      css[`.psds-table__column-header.psds-theme--${themeName}`],
       css[`.psds-table__column-header--align-${align}`],
       { ':first-of-type': css['.psds-table__column-header:first-of-type'] },
       { ':last-of-type': css['.psds-table__column-header:last-of-type'] },
@@ -103,7 +104,7 @@ class ColumnHeader extends React.Component {
       props.onClick(getToggledSort(props))
   }
   render() {
-    const { context, props } = this
+    const { context, handleClick, props } = this
     const allProps = {
       ...props,
       active: vars.sorts[props.sort] && typeof props.onClick === 'function',
@@ -115,17 +116,18 @@ class ColumnHeader extends React.Component {
       allProps.flex
     )
       style.flex = allProps.flex
-    // TODO: convert to button
-    return (
-      <div
-        {...(allProps.className ? { className: allProps.className } : null)}
-        {...styles.columnHeader(allProps)}
-        onClick={this.handleClick}
-        style={style}
-      >
-        {allProps.children}
-        {allProps.sort && getSortIcon(allProps)}
-      </div>
+    return React.createElement(
+      props.onClick ? 'button' : 'div',
+      {
+        ...(allProps.className ? { className: allProps.className } : null),
+        ...styles.columnHeader(allProps),
+        ...(props.onClick
+          ? { onClick: _ => props.onClick(getToggledSort(props)) }
+          : null),
+        style
+      },
+      allProps.children,
+      allProps.sort && getSortIcon(allProps)
     )
   }
 }

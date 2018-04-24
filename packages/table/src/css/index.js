@@ -109,13 +109,19 @@ export default {
     } / 2)`,
     fontSize: core.type.fontSizeXSmall,
     lineHeight: '16px',
-    textTransform: 'uppercase'
+    textTransform: 'uppercase',
+    border: 'none',
+    background: 'none',
+    color: core.colors.gray02
   },
   '.psds-table__column-header:first-of-type': {
     paddingLeft: 0
   },
   '.psds-table__column-header:last-of-type': {
     paddingRight: 0
+  },
+  [`.psds-table__column-header.psds-theme--${themeNames.light}`]: {
+    color: core.colors.gray05
   },
   [`.psds-table__column-header--align-${vars.aligns.left}`]: {
     justifyContent: 'left',

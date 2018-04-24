@@ -606,8 +606,7 @@ exports[`Storyshots columnHeader align center 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1uxtp93=""
-        onClick={[Function]}
+        data-css-vtr8dm=""
         style={Object {}}
       >
         Header aligned center
@@ -640,8 +639,7 @@ exports[`Storyshots columnHeader align center w/ sort 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1uxtp93=""
-        onClick={[Function]}
+        data-css-vtr8dm=""
         style={Object {}}
       >
         Header sortable, aligned center
@@ -687,8 +685,7 @@ exports[`Storyshots columnHeader align left 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-4rxj5e=""
-        onClick={[Function]}
+        data-css-cswsr4=""
         style={Object {}}
       >
         Header aligned left
@@ -721,8 +718,7 @@ exports[`Storyshots columnHeader align left w/ sort 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-4rxj5e=""
-        onClick={[Function]}
+        data-css-cswsr4=""
         style={Object {}}
       >
         Header sortable, aligned left
@@ -768,8 +764,7 @@ exports[`Storyshots columnHeader align right 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-opaswa=""
-        onClick={[Function]}
+        data-css-ixq5rk=""
         style={Object {}}
       >
         Header aligned right
@@ -802,8 +797,7 @@ exports[`Storyshots columnHeader align right w/ sort 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-opaswa=""
-        onClick={[Function]}
+        data-css-ixq5rk=""
         style={Object {}}
       >
         Header sortable, aligned right
@@ -850,8 +844,7 @@ exports[`Storyshots columnHeader custom className 1`] = `
     >
       <div
         className="some-classname"
-        data-css-4rxj5e=""
-        onClick={[Function]}
+        data-css-cswsr4=""
         style={Object {}}
       >
         header text
@@ -884,8 +877,7 @@ exports[`Storyshots columnHeader custom style 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-4rxj5e=""
-        onClick={[Function]}
+        data-css-cswsr4=""
         style={
           Object {
             "outline": "1px solid red",
@@ -922,8 +914,7 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-1uxtp93=""
-        onClick={[Function]}
+        data-css-vtr8dm=""
         style={Object {}}
       >
          Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned center
@@ -942,8 +933,7 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
         </div>
       </div>
       <div
-        data-css-1uxtp93=""
-        onClick={[Function]}
+        data-css-vtr8dm=""
         style={Object {}}
       >
         Short header, same align
@@ -989,8 +979,7 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-4rxj5e=""
-        onClick={[Function]}
+        data-css-cswsr4=""
         style={Object {}}
       >
          Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned left
@@ -1009,8 +998,7 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
         </div>
       </div>
       <div
-        data-css-4rxj5e=""
-        onClick={[Function]}
+        data-css-cswsr4=""
         style={Object {}}
       >
         Short header, same align
@@ -1056,8 +1044,7 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-opaswa=""
-        onClick={[Function]}
+        data-css-ixq5rk=""
         style={Object {}}
       >
          Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned right
@@ -1076,8 +1063,7 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
         </div>
       </div>
       <div
-        data-css-opaswa=""
-        onClick={[Function]}
+        data-css-ixq5rk=""
         style={Object {}}
       >
         Short header, same align
@@ -1123,8 +1109,7 @@ exports[`Storyshots columnHeader sort asc 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-4rxj5e=""
-        onClick={[Function]}
+        data-css-cswsr4=""
         style={Object {}}
       >
         sorted header
@@ -1171,8 +1156,8 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
     <div
       data-css-vjljp5=""
     >
-      <div
-        data-css-11kdrdc=""
+      <button
+        data-css-1yg70cb=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1192,9 +1177,9 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
             />
           </svg>
         </div>
-      </div>
-      <div
-        data-css-wjamfr=""
+      </button>
+      <button
+        data-css-yj40sk=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1212,6 +1197,12 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
             />
           </svg>
         </div>
+      </button>
+      <div
+        data-css-cswsr4=""
+        style={Object {}}
+      >
+        no sort
       </div>
     </div>
   </div>
@@ -1241,8 +1232,7 @@ exports[`Storyshots columnHeader sort default 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-4rxj5e=""
-        onClick={[Function]}
+        data-css-cswsr4=""
         style={Object {}}
       >
         header text
@@ -1287,8 +1277,8 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
     <div
       data-css-vjljp5=""
     >
-      <div
-        data-css-wjamfr=""
+      <button
+        data-css-yj40sk=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1306,9 +1296,9 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
             />
           </svg>
         </div>
-      </div>
-      <div
-        data-css-wjamfr=""
+      </button>
+      <button
+        data-css-yj40sk=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1326,7 +1316,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
             />
           </svg>
         </div>
-      </div>
+      </button>
     </div>
   </div>
 </div>
@@ -1355,8 +1345,7 @@ exports[`Storyshots columnHeader sort desc 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-4rxj5e=""
-        onClick={[Function]}
+        data-css-cswsr4=""
         style={Object {}}
       >
         sorted header
@@ -1403,8 +1392,8 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
     <div
       data-css-vjljp5=""
     >
-      <div
-        data-css-11kdrdc=""
+      <button
+        data-css-1yg70cb=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1424,9 +1413,9 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
             />
           </svg>
         </div>
-      </div>
-      <div
-        data-css-wjamfr=""
+      </button>
+      <button
+        data-css-yj40sk=""
         onClick={[Function]}
         style={Object {}}
       >
@@ -1444,6 +1433,12 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
             />
           </svg>
         </div>
+      </button>
+      <div
+        data-css-cswsr4=""
+        style={Object {}}
+      >
+        no sort
       </div>
     </div>
   </div>
@@ -1473,8 +1468,7 @@ exports[`Storyshots columnHeader text 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-4rxj5e=""
-        onClick={[Function]}
+        data-css-cswsr4=""
         style={Object {}}
       >
         header text
@@ -1507,8 +1501,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
       data-css-luy9rl=""
     >
       <div
-        data-css-4rxj5e=""
-        onClick={[Function]}
+        data-css-cswsr4=""
         style={Object {}}
       >
         header text
@@ -1527,8 +1520,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
         </div>
       </div>
       <div
-        data-css-4rxj5e=""
-        onClick={[Function]}
+        data-css-cswsr4=""
         style={Object {}}
       >
         header2 text
@@ -1640,8 +1632,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
       data-css-vjljp5=""
     >
       <div
-        data-css-4rxj5e=""
-        onClick={[Function]}
+        data-css-cswsr4=""
         style={Object {}}
       >
         header text
@@ -1660,8 +1651,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
         </div>
       </div>
       <div
-        data-css-4rxj5e=""
-        onClick={[Function]}
+        data-css-cswsr4=""
         style={Object {}}
       >
         header2 text
