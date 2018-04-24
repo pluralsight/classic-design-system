@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-table",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Design System component for table ui",
   "main": "index.js",
   "scripts": {
