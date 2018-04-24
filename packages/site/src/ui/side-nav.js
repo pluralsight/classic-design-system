@@ -368,7 +368,7 @@ export default withHeadings(props => (
         Iconography
       </NavLink>
       <NavLink href="/patterns/voice-tone" headings={props.headings}>
-        Voice & Tone
+        Voice & tone
       </NavLink>
     </Group>
     <style jsx>{`
