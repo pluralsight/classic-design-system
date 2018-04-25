@@ -14,7 +14,6 @@ import {
   Content,
   Example,
   Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
@@ -43,7 +42,15 @@ const BlueBox = props => (
 const PageHeadingLayoutOutput = _ => (
   <div className="page">
     <Theme>
-      <PageHeadingLayout heading={<h3>Page title</h3>}>
+      <PageHeadingLayout
+        actions={[
+          <Button key="button1" appearance={Button.appearances.stroke}>
+            Button
+          </Button>,
+          <Button key="button2">Button</Button>
+        ]}
+        heading={<h3>Page title</h3>}
+      >
         <div className="body" />
       </PageHeadingLayout>
     </Theme>
@@ -280,13 +287,32 @@ export default withServerProps(_ => (
         Start your layout with this default template to achieve standard outer
         spacing and title style.
       </P>
+      <P>
+        If you're using <Text.Code>actions</Text.Code>, be sure to stay limited
+        to a small number of items (ie, 2-3).
+      </P>
       <PageHeadingLayoutOutput />
-      <Code language="javascript">{`<PageHeadingLayout heading={<h1>Page title</h1>}>
+      <Code language="javascript">{`<PageHeadingLayout
+  actions={[
+    <Button key="button1" appearance={Button.appearances.stroke}>
+      Button
+    </Button>,
+    <Button key="button2">Button</Button>
+  ]}
+  heading={<h3>Page title</h3>}
+>
   Your page contents here
 </PageHeadingLayout> `}</Code>
       <PropTypes
         title="Layout.PageHeadingLayout PropTypes"
         props={[
+          PropTypes.row([
+            'actions',
+            'React.element[]',
+            null,
+            null,
+            <span>Actionable elements to place in the top-right</span>
+          ]),
           PropTypes.row([
             'heading',
             'React.element',
