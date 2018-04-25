@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.34.0"></a>
+# [9.34.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.33.0...@pluralsight/ps-design-system-site@9.34.0) (2018-04-25)
+
+
+### Features
+
+* **site:** add page heading layout actions docs ([24c5f88](https://github.com/pluralsight/design-system/commit/24c5f88))
+
+
+
+
 <a name="9.33.0"></a>
 # [9.33.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.32.2...@pluralsight/ps-design-system-site@9.33.0) (2018-04-24)
 

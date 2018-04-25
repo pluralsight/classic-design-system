@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@2.0.1...@pluralsight/ps-design-system-layout@2.1.0) (2018-04-25)
+
+
+### Features
+
+* **layout:** add actions to PageHeadingLayout ([0db6d7b](https://github.com/pluralsight/design-system/commit/0db6d7b))
+
+
+
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@2.0.0...@pluralsight/ps-design-system-layout@2.0.1) (2018-04-19)
 
