@@ -61,7 +61,7 @@ export default class extends React.Component {
       console.log('err', err)
     }
   }
-  componentWillMount() {
+  componentDidMount() {
     if (this.props.packageName) this.fetchPackages()
   }
   render() {
@@ -74,6 +74,8 @@ export default class extends React.Component {
         }
         packageName={this.props.packageName}
       />
-    ) : null
+    ) : (
+      <ChangeLog packageName={this.props.packageName} />
+    )
   }
 }
