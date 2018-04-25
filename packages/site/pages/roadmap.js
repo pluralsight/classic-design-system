@@ -18,18 +18,19 @@ import {
 } from '../src/ui'
 
 const work = {
-  now: [],
-  next: [
+  now: [
     {
       title: 'Table',
+      tags: ['Component']
+    }
+  ],
+  next: [
+    {
+      title: 'Text Input',
       tags: ['Component']
     },
     {
       title: 'Banner',
-      tags: ['Component']
-    },
-    {
-      title: 'Text Input',
       tags: ['Component']
     },
     {
