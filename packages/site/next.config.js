@@ -49,6 +49,7 @@ module.exports = {
     }
   },
   webpack(config) {
+    console.log('webpack localEnv', localEnv)
     config.plugins = config.plugins
       .filter(
         plugin =>
