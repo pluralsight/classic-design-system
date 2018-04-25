@@ -52,7 +52,7 @@ class App extends Component {
             size={Card.sizes.small}
             title={
               <Card.TextLink>
-                <a href="https://app.pluralsight.com/library/courses/web-security-owasp-top10-big-picture">
+                <a href="https://duckduckgo.com">
                   <Card.Title>
                     Web Security and the OWASP Top 10: The Big Picture
                   </Card.Title>
@@ -93,7 +93,7 @@ class App extends Component {
             progress={100}
             fullOverlay={
               <Card.FullOverlayLink>
-                <a href="https://app.pluralsight.com/player?course=web-security-owasp-top10-big-picture&author=troy-hunt&name=web-security-owasp-top10-big-picture-m10-unvalidated-redirects&clip=3&mode=live">
+                <a href="https://duckduckgo.com">
                   <Play />
                 </a>
               </Card.FullOverlayLink>
