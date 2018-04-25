@@ -774,13 +774,378 @@ exports[`Storyshots PageHeadingLayout default 1`] = `
   <div
     data-css-yto836=""
   >
-    <h2
-      className={undefined}
-      data-css-10w3axr=""
-      size="large"
+    <div
+      data-css-wlfhsa=""
     >
-      My Page
-    </h2>
+      <h2
+        className={undefined}
+        data-css-10w3axr=""
+        size="large"
+      >
+        My Page
+      </h2>
+    </div>
+    My content
+  </div>
+</div>
+`;
+
+exports[`Storyshots PageHeadingLayout long title 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yto836=""
+  >
+    <div
+      data-css-wlfhsa=""
+    >
+      <h2
+        className={undefined}
+        data-css-10w3axr=""
+        size="large"
+      >
+        My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
+      </h2>
+    </div>
+    My content
+  </div>
+</div>
+`;
+
+exports[`Storyshots PageHeadingLayout long title w/ actions 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yto836=""
+  >
+    <div
+      data-css-wlfhsa=""
+    >
+      <h2
+        className={undefined}
+        data-css-10w3axr=""
+        size="large"
+      >
+        My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
+      </h2>
+      <div
+        data-css-1cnar9w=""
+      >
+        <button
+          data-css-1sql3pc=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            className="css-1en8fmq"
+          >
+            Wow, an action
+          </span>
+        </button>
+        <a
+          data-css-1skajya=""
+          href="https://duckduckgo.com"
+        >
+          A link
+        </a>
+      </div>
+    </div>
+    My content
+  </div>
+</div>
+`;
+
+exports[`Storyshots PageHeadingLayout long titlew/ lots of actions 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yto836=""
+  >
+    <div
+      data-css-wlfhsa=""
+    >
+      <h2
+        className={undefined}
+        data-css-10w3axr=""
+        size="large"
+      >
+        My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
+      </h2>
+      <div
+        data-css-1cnar9w=""
+      >
+        <button
+          data-css-1sql3pc=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            className="css-1en8fmq"
+          >
+            Wow, an action
+          </span>
+        </button>
+        <a
+          data-css-1skajya=""
+          href="https://duckduckgo.com"
+        >
+          A link
+        </a>
+        <button
+          data-css-1sql3pc=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            className="css-1en8fmq"
+          >
+            Wow, an action
+          </span>
+        </button>
+        <a
+          data-css-1skajya=""
+          href="https://duckduckgo.com"
+        >
+          A link
+        </a>
+        <button
+          data-css-1sql3pc=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            className="css-1en8fmq"
+          >
+            Wow, an action
+          </span>
+        </button>
+        <a
+          data-css-1skajya=""
+          href="https://duckduckgo.com"
+        >
+          A link
+        </a>
+        <button
+          data-css-1sql3pc=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            className="css-1en8fmq"
+          >
+            Wow, an action
+          </span>
+        </button>
+        <a
+          data-css-1skajya=""
+          href="https://duckduckgo.com"
+        >
+          A link
+        </a>
+      </div>
+    </div>
+    My content
+  </div>
+</div>
+`;
+
+exports[`Storyshots PageHeadingLayout w/ actions 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yto836=""
+  >
+    <div
+      data-css-wlfhsa=""
+    >
+      <h2
+        className={undefined}
+        data-css-10w3axr=""
+        size="large"
+      >
+        My Page
+      </h2>
+      <div
+        data-css-1cnar9w=""
+      >
+        <button
+          data-css-1sql3pc=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            className="css-1en8fmq"
+          >
+            Wow, an action
+          </span>
+        </button>
+        <a
+          data-css-1skajya=""
+          href="https://duckduckgo.com"
+        >
+          A link
+        </a>
+      </div>
+    </div>
+    My content
+  </div>
+</div>
+`;
+
+exports[`Storyshots PageHeadingLayout w/ lots of actions 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-yto836=""
+  >
+    <div
+      data-css-wlfhsa=""
+    >
+      <h2
+        className={undefined}
+        data-css-10w3axr=""
+        size="large"
+      >
+        My Page
+      </h2>
+      <div
+        data-css-1cnar9w=""
+      >
+        <button
+          data-css-1sql3pc=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            className="css-1en8fmq"
+          >
+            Wow, an action
+          </span>
+        </button>
+        <a
+          data-css-1skajya=""
+          href="https://duckduckgo.com"
+        >
+          A link
+        </a>
+        <button
+          data-css-1sql3pc=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            className="css-1en8fmq"
+          >
+            Wow, an action
+          </span>
+        </button>
+        <a
+          data-css-1skajya=""
+          href="https://duckduckgo.com"
+        >
+          A link
+        </a>
+        <button
+          data-css-1sql3pc=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            className="css-1en8fmq"
+          >
+            Wow, an action
+          </span>
+        </button>
+        <a
+          data-css-1skajya=""
+          href="https://duckduckgo.com"
+        >
+          A link
+        </a>
+        <button
+          data-css-1sql3pc=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            className="css-1en8fmq"
+          >
+            Wow, an action
+          </span>
+        </button>
+        <a
+          data-css-1skajya=""
+          href="https://duckduckgo.com"
+        >
+          A link
+        </a>
+      </div>
+    </div>
     My content
   </div>
 </div>

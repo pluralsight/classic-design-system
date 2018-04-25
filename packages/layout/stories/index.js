@@ -1,5 +1,7 @@
 import addons from '@storybook/addons'
+import Button from '@pluralsight/ps-design-system-button/react'
 import core from '@pluralsight/ps-design-system-core'
+import Link from '@pluralsight/ps-design-system-link/react'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
@@ -10,6 +12,104 @@ const pageHeadingLayoutStory = storiesOf('PageHeadingLayout', module)
   .addDecorator(themeDecorator(addons))
   .add('default', _ => (
     <PageHeadingLayout heading={<h2>My Page</h2>}>My content</PageHeadingLayout>
+  ))
+  .add('long title', _ => (
+    <PageHeadingLayout
+      heading={
+        <h2>
+          My page is here and it's long. My page is here and it's long. My page
+          is here and it's long. My page is here and it's long.
+        </h2>
+      }
+    >
+      My content
+    </PageHeadingLayout>
+  ))
+  .add('w/ actions', _ => (
+    <PageHeadingLayout
+      heading={<h2>My Page</h2>}
+      actions={[
+        <Button>Wow, an action</Button>,
+        <Link>
+          <a href="https://duckduckgo.com">A link</a>
+        </Link>
+      ]}
+    >
+      My content
+    </PageHeadingLayout>
+  ))
+  .add('long title w/ actions', _ => (
+    <PageHeadingLayout
+      actions={[
+        <Button>Wow, an action</Button>,
+        <Link>
+          <a href="https://duckduckgo.com">A link</a>
+        </Link>
+      ]}
+      heading={
+        <h2>
+          My page is here and it's long. My page is here and it's long. My page
+          is here and it's long. My page is here and it's long.
+        </h2>
+      }
+    >
+      My content
+    </PageHeadingLayout>
+  ))
+  .add('long titlew/ lots of actions', _ => (
+    <PageHeadingLayout
+      heading={
+        <h2>
+          My page is here and it's long. My page is here and it's long. My page
+          is here and it's long. My page is here and it's long.
+        </h2>
+      }
+      actions={[
+        <Button>Wow, an action</Button>,
+        <Link>
+          <a href="https://duckduckgo.com">A link</a>
+        </Link>,
+        <Button>Wow, an action</Button>,
+        <Link>
+          <a href="https://duckduckgo.com">A link</a>
+        </Link>,
+        <Button>Wow, an action</Button>,
+        <Link>
+          <a href="https://duckduckgo.com">A link</a>
+        </Link>,
+        <Button>Wow, an action</Button>,
+        <Link>
+          <a href="https://duckduckgo.com">A link</a>
+        </Link>
+      ]}
+    >
+      My content
+    </PageHeadingLayout>
+  ))
+  .add('w/ lots of actions', _ => (
+    <PageHeadingLayout
+      heading={<h2>My Page</h2>}
+      actions={[
+        <Button>Wow, an action</Button>,
+        <Link>
+          <a href="https://duckduckgo.com">A link</a>
+        </Link>,
+        <Button>Wow, an action</Button>,
+        <Link>
+          <a href="https://duckduckgo.com">A link</a>
+        </Link>,
+        <Button>Wow, an action</Button>,
+        <Link>
+          <a href="https://duckduckgo.com">A link</a>
+        </Link>,
+        <Button>Wow, an action</Button>,
+        <Link>
+          <a href="https://duckduckgo.com">A link</a>
+        </Link>
+      ]}
+    >
+      My content
+    </PageHeadingLayout>
   ))
 
 const asideLayoutStory = storiesOf('AsideLayout', module).addDecorator(
