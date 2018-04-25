@@ -51,11 +51,15 @@ export default class extends React.Component {
     this.state = { packages: null }
   }
   async fetchPackages() {
+    console.log('fetching packages...')
     try {
       const res = await fetch(getPackagesApiHost() + '/api/v2/packages')
       const json = await res.json()
       if (res.ok) {
+        console.log('res.ok', res, json)
         this.setState(_ => ({ packages: json.data }))
+      } else {
+        console.log('res.!ok', res)
       }
     } catch (err) {
       console.log('err', err)
