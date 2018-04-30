@@ -61,7 +61,8 @@ export default {
     border: 'none',
     marginLeft: 'auto',
     padding: `0 0 0 ${core.layout.spacingSmall}`,
-    color: core.colors.white
+    color: core.colors.white,
+    cursor: 'pointer'
   },
   '.psds-banner__dismiss:hover': {
     opacity: '0.65'

@@ -137,7 +137,7 @@ exports[`Storyshots onClick displays X 1`] = `
       this is the text
     </div>
     <button
-      data-css-ujcdob=""
+      data-css-1j8ux48=""
       onClick={[Function]}
     >
       <div
@@ -185,7 +185,7 @@ exports[`Storyshots onClick w/ long text 1`] = `
        
     </div>
     <button
-      data-css-ujcdob=""
+      data-css-1j8ux48=""
       onClick={[Function]}
     >
       <div
@@ -337,7 +337,7 @@ exports[`Storyshots styling className prop  1`] = `
       this is the text
     </div>
     <button
-      data-css-ujcdob=""
+      data-css-1j8ux48=""
       onClick={[Function]}
     >
       <div
@@ -389,7 +389,7 @@ exports[`Storyshots styling style prop  1`] = `
       this is the text
     </div>
     <button
-      data-css-ujcdob=""
+      data-css-1j8ux48=""
       onClick={[Function]}
     >
       <div
