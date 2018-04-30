@@ -4,7 +4,6 @@ import * as vars from '../vars'
 
 const anchorHover = {
   color: 'inherit',
-  textDecoration: 'underline',
   transition: `all ${core.motion.speedNormal}`,
   opacity: '0.65'
 }
@@ -47,7 +46,7 @@ export default {
   '.psds-banner__text a': {
     color: 'inherit',
     cursor: 'pointer',
-    textDecoration: 'none'
+    textDecoration: 'underline'
   },
   '.psds-banner__text a:hover': anchorHover,
   '.psds-banner__text a:active': anchorHover,

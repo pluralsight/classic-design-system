@@ -20,7 +20,7 @@ exports[`Storyshots color blue 1`] = `
     data-css-13j4h8v=""
   >
     <div
-      data-css-1c4d10m=""
+      data-css-1mceaus=""
     >
       blue
     </div>
@@ -48,7 +48,7 @@ exports[`Storyshots color green 1`] = `
     data-css-g8uz7t=""
   >
     <div
-      data-css-1c4d10m=""
+      data-css-1mceaus=""
     >
       green
     </div>
@@ -76,7 +76,7 @@ exports[`Storyshots color red 1`] = `
     data-css-1j58ngq=""
   >
     <div
-      data-css-1c4d10m=""
+      data-css-1mceaus=""
     >
       red
     </div>
@@ -104,7 +104,7 @@ exports[`Storyshots color yellow 1`] = `
     data-css-jrrxjl=""
   >
     <div
-      data-css-1c4d10m=""
+      data-css-1mceaus=""
     >
       yellow
     </div>
@@ -132,7 +132,7 @@ exports[`Storyshots onClick displays X 1`] = `
     data-css-13j4h8v=""
   >
     <div
-      data-css-1c4d10m=""
+      data-css-1mceaus=""
     >
       this is the text
     </div>
@@ -179,7 +179,7 @@ exports[`Storyshots onClick w/ long text 1`] = `
     data-css-13j4h8v=""
   >
     <div
-      data-css-1c4d10m=""
+      data-css-1mceaus=""
     >
       this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text.
        
@@ -227,7 +227,7 @@ exports[`Storyshots styling child Link component auto-styled 1`] = `
     data-css-13j4h8v=""
   >
     <div
-      data-css-1c4d10m=""
+      data-css-1mceaus=""
     >
       this is the text with an
        
@@ -263,7 +263,7 @@ exports[`Storyshots styling child anchor tag auto-styled 1`] = `
     data-css-13j4h8v=""
   >
     <div
-      data-css-1c4d10m=""
+      data-css-1mceaus=""
     >
       this is the text with an 
       <a
@@ -297,7 +297,7 @@ exports[`Storyshots styling child anchor tag auto-styled in yellow 1`] = `
     data-css-jrrxjl=""
   >
     <div
-      data-css-1c4d10m=""
+      data-css-1mceaus=""
     >
       this is the text with an 
       <a
@@ -332,7 +332,7 @@ exports[`Storyshots styling className prop  1`] = `
     data-css-13j4h8v=""
   >
     <div
-      data-css-1c4d10m=""
+      data-css-1mceaus=""
     >
       this is the text
     </div>
@@ -384,7 +384,7 @@ exports[`Storyshots styling style prop  1`] = `
     }
   >
     <div
-      data-css-1c4d10m=""
+      data-css-1mceaus=""
     >
       this is the text
     </div>
