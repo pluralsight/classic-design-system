@@ -1,7 +1,7 @@
 {
   "name": "@pluralsight/ps-design-system-site",
   "private": true,
-  "version": "9.34.0",
+  "version": "9.34.1",
   "description": "Reference site",
   "main": "index.js",
   "engines": {
