@@ -28,7 +28,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Button from '@pluralsight/ps-design-system-banner/react'
+        import Banner from '@pluralsight/ps-design-system-banner/react'
       </Code>
 
       <PropTypes
