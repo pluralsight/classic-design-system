@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.35.0"></a>
+# [9.35.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.34.1...@pluralsight/ps-design-system-site@9.35.0) (2018-04-30)
+
+
+### Features
+
+* **site:** add banner doc ([5e7080d](https://github.com/pluralsight/design-system/commit/5e7080d))
+
+
+
+
 <a name="9.34.1"></a>
 ## [9.34.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.34.0...@pluralsight/ps-design-system-site@9.34.1) (2018-04-30)
 

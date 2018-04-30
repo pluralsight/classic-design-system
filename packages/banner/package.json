@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-banner",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Design System component for banner ui",
   "main": "index.js",
   "scripts": {
