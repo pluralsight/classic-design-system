@@ -72,12 +72,7 @@ Level.Title = props => (
   </div>
 )
 
-Level.Desc = props => (
-  <div className="desc">
-    {props.children}
-    <style jsx>{``}</style>
-  </div>
-)
+Level.Desc = props => <div>{props.children}</div>
 
 const LevelHeading = props => <SectionHeading>{props.children}</SectionHeading>
 
