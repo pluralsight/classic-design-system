@@ -150,14 +150,18 @@ class Code extends React.Component {
     if (modeLoaded) options.mode = props.lang
 
     return (
-      <div className={state.isOpen ? 'code' : 'code code--collapsed'}>
+      <div className="code">
         <CodeMirrorCss />
         <CodeMirrorPsTheme />
 
-        <Collapsible isOpen={state.isOpen} height="72px">
+        <Collapsible isOpen={state.isOpen} height="56px">
           <CodeMirror value={props.children} options={options} />
         </Collapsible>
-        {!state.isOpen && <div className="gradient" />}
+        {state.isOpen ? (
+          <div className="bottomBumper" />
+        ) : (
+          <div className="gradient" />
+        )}
         {props.collapsible && (
           <CollapsibleButton
             isOpen={this.state.isOpen}
@@ -167,16 +171,11 @@ class Code extends React.Component {
         <style jsx>{`
           .code {
             position: relative;
-            padding: ${core.layout.spacingMedium} ${core.layout.spacingLarge};
+            padding: ${core.layout.spacingMedium} ${core.layout.spacingLarge} 0
+              ${core.layout.spacingLarge};
             background: ${core.colors.gray04};
-            overflow: hidden;
             transition: height ${core.motion.speedFast};
             height: auto;
-          }
-          .code--collapsed {
-            height: calc(
-              ${core.layout.spacingLarge} * 2 + 24px
-            ); /* xSmall Button height */
           }
           .code :global(.CodeMirror) {
             background: none;
@@ -197,6 +196,9 @@ class Code extends React.Component {
               ${core.colors.gray04}
             );
             z-index: 9;
+          }
+          .bottomBumper {
+            height: ${core.layout.spacingMedium};
           }
         `}</style>
       </div>
