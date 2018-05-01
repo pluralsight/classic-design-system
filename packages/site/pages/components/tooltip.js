@@ -129,77 +129,157 @@ class InAppExample extends React.Component {
   }
   render() {
     return (
-      <div className="examples">
-        <Theme name={Theme.names.dark}>
-          <div className="example">
-            <Button
-              appearance={Button.appearances.flat}
-              className="text"
-              innerRef={el => (this.examples[0] = el)}
-            >
-              Look at me
-            </Button>
-            <TooltipPositioner
-              styleBy={styleUnder.bind(null, this.examples[0])}
-            >
-              <Tooltip
-                innerRef={el => (this.tips[0] = el)}
-                tailPosition={Tooltip.tailPositions.topCenter}
+      <div>
+        <div className="examples">
+          <Theme name={Theme.names.dark}>
+            <div className="example">
+              <Button
+                appearance={Button.appearances.flat}
+                className="text"
+                innerRef={el => (this.examples[0] = el)}
               >
-                Tooltip
-              </Tooltip>
-            </TooltipPositioner>
-          </div>
+                Look at me
+              </Button>
+              <TooltipPositioner
+                styleBy={styleUnder.bind(null, this.examples[0])}
+              >
+                <Tooltip
+                  innerRef={el => (this.tips[0] = el)}
+                  tailPosition={Tooltip.tailPositions.topCenter}
+                >
+                  Tooltip
+                </Tooltip>
+              </TooltipPositioner>
+            </div>
 
-          <div className="example">
-            <Button
-              appearance={Button.appearances.flat}
-              className="text"
-              innerRef={el => (this.examples[1] = el)}
-              onMouseOver={this.handleMouseOver}
-              onMouseOut={this.handleMouseOut}
-            >
-              Hover me
-            </Button>
-          </div>
-          {this.state.isHovered && (
-            <TooltipPositioner
-              styleBy={styleUnder.bind(null, this.examples[1])}
-            >
-              <Tooltip
-                innerRef={el => (this.tips[1] = el)}
-                style={styleUnder(this.state.examples[1], this.state.tips[1])}
-                tailPosition={Tooltip.tailPositions.topCenter}
+            <div className="example">
+              <Button
+                appearance={Button.appearances.flat}
+                className="text"
+                innerRef={el => (this.examples[1] = el)}
+                onMouseOver={this.handleMouseOver}
+                onMouseOut={this.handleMouseOut}
               >
-                Is hovered
-              </Tooltip>
-            </TooltipPositioner>
-          )}
+                Hover me
+              </Button>
+            </div>
+            {this.state.isHovered && (
+              <TooltipPositioner
+                styleBy={styleUnder.bind(null, this.examples[1])}
+              >
+                <Tooltip
+                  innerRef={el => (this.tips[1] = el)}
+                  style={styleUnder(this.state.examples[1], this.state.tips[1])}
+                  tailPosition={Tooltip.tailPositions.topCenter}
+                >
+                  Is hovered
+                </Tooltip>
+              </TooltipPositioner>
+            )}
 
-          <div className="example">
-            <Button
-              appearance={Button.appearances.flat}
-              className="text"
-              innerRef={el => (this.examples[2] = el)}
-              onClick={this.handleClick}
-            >
-              Click me
-            </Button>
-          </div>
-          {this.state.isClicked && (
-            <TooltipPositioner
-              styleBy={styleUnder.bind(null, this.examples[2])}
-            >
-              <Tooltip
-                innerRef={el => (this.tips[2] = el)}
-                style={styleUnder(this.state.examples[2], this.state.tips[2])}
-                tailPosition={Tooltip.tailPositions.topCenter}
+            <div className="example">
+              <Button
+                appearance={Button.appearances.flat}
+                className="text"
+                innerRef={el => (this.examples[2] = el)}
+                onClick={this.handleClick}
               >
-                Was clicked
-              </Tooltip>
-            </TooltipPositioner>
-          )}
-        </Theme>
+                Click me
+              </Button>
+            </div>
+            {this.state.isClicked && (
+              <TooltipPositioner
+                styleBy={styleUnder.bind(null, this.examples[2])}
+              >
+                <Tooltip
+                  innerRef={el => (this.tips[2] = el)}
+                  style={styleUnder(this.state.examples[2], this.state.tips[2])}
+                  tailPosition={Tooltip.tailPositions.topCenter}
+                >
+                  Was clicked
+                </Tooltip>
+              </TooltipPositioner>
+            )}
+          </Theme>
+        </div>
+        <Code
+          collapsible
+          lang="javascript"
+        >{`const styleUnder = (target, tooltip) => {
+  if (!target || !tooltip) return
+
+  const targetRect = target.getBoundingClientRect()
+  const tooltipRect = tooltip.getBoundingClientRect()
+
+  const scrollLeft = window.pageXOffset
+  const scrollTop = window.pageYOffset
+
+  const bufferHeight = 10
+  const targetCenterLeft = targetRect.left + targetRect.width / 2
+  const tooltipLeft = scrollLeft + targetCenterLeft - tooltipRect.width / 2
+  const tooltipTop =
+    scrollTop + targetRect.top + targetRect.height + bufferHeight
+
+  return {
+    position: 'absolute',
+    top: tooltipTop,
+    left: tooltipLeft
+  }
+}
+
+class TooltipPositioner extends React.Component {
+  constructor(props) {
+    super(props)
+    this.el = null
+    this.state = { rect: { top: 0, left: 0 } }
+  }
+  componentDidMount() {
+    this.setState({ rect: this.el.getBoundingClientRect() })
+  }
+  render() {
+    return React.cloneElement(this.props.children, {
+      innerRef: el => (this.el = el),
+      style: this.props.styleBy(this.el)
+    })
+  }
+}
+
+class HoverExampleOnly extends React.Component {
+  constructor(props) {
+    super(props)
+    this.triggerEl = null
+    this.tooltipEl = null
+    this.state = {
+      isHovered: false
+    }
+  }
+  render() {
+    return (
+      <div>
+        <Button
+          appearance={Button.appearances.flat}
+          innerRef={el => (this.triggerEl = el)}
+          onMouseOver={_ => this.setState({ isHovered: true })}
+          onMouseOut={_ => this.setState({ isHovered: false })}
+        >
+          Hover me
+        </Button>
+        {this.state.isHovered && (
+          <TooltipPositioner styleBy={styleUnder.bind(null, this.triggerEl)}>
+            <Tooltip
+              innerRef={el => (this.tooltipEl = el)}
+              style={styleUnder(this.triggerEl, this.tooltipEl)}
+              tailPosition={Tooltip.tailPositions.topCenter}
+            >
+              Is hovered
+            </Tooltip>
+          </TooltipPositioner>
+        )}
+      </div>
+    )
+  }
+}`}</Code>
+
         <style jsx>{`
           .examples {
             display: flex;
