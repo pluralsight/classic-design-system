@@ -16,40 +16,69 @@ import {
   withServerProps
 } from '../../src/ui'
 
-const Stack = props => (
-  <div className="stack">
-    <Row
-      title="Advanced TypeScript"
-      progress={0}
-      image={<Row.Image src="/static/img/course1.jpg" />}
-      metadata1={['Brice Wilson', 'Advanced']}
-      metadata2={['0m watched']}
-    />
-    <Row
-      title="Getting Started with Reactive Programming Using RxJS"
-      progress={20}
-      image={<Row.Image src="/static/img/course2.jpg" />}
-      metadata1={['Scott Allen', 'Intermediate']}
-      metadata2={['23m watched']}
-    />
-    <Row
-      title="Building a JavaScript Development Environment"
-      progress={67}
-      image={<Row.Image src="/static/img/course3.jpg" />}
-      metadata1={['Cory House', 'Intermediate']}
-      metadata2={['3 hr 23m watched']}
-    />
-    <Row
-      title="Webpack Fundamentals"
-      progress={100}
-      metadata1={['Joe Eames', 'Intermediate']}
-      metadata2={['90m watched']}
-      image={<Row.Image src="/static/img/course4.jpg" />}
-    />
+const InAppExample = props => (
+  <div className="example">
+    <div className="stack">
+      <Row
+        title="Advanced TypeScript"
+        progress={0}
+        image={<Row.Image src="/static/img/course1.jpg" />}
+        metadata1={['Brice Wilson', 'Advanced']}
+        metadata2={['0m watched']}
+      />
+      <Row
+        title="Getting Started with Reactive Programming Using RxJS"
+        progress={20}
+        image={<Row.Image src="/static/img/course2.jpg" />}
+        metadata1={['Scott Allen', 'Intermediate']}
+        metadata2={['23m watched']}
+      />
+      <Row
+        title="Building a JavaScript Development Environment"
+        progress={67}
+        image={<Row.Image src="/static/img/course3.jpg" />}
+        metadata1={['Cory House', 'Intermediate']}
+        metadata2={['3 hr 23m watched']}
+      />
+      <Row
+        title="Webpack Fundamentals"
+        progress={100}
+        metadata1={['Joe Eames', 'Intermediate']}
+        metadata2={['90m watched']}
+        image={<Row.Image src="/static/img/course4.jpg" />}
+      />
+    </div>
+    <Code collapsible language="javascript">{`<Row
+  title="Advanced TypeScript"
+  progress={0}
+  image={<Row.Image src="/static/img/course1.jpg" />}
+  metadata1={['Brice Wilson', 'Advanced']}
+  metadata2={['0m watched']}
+/>
+<Row
+  title="Getting Started with Reactive Programming Using RxJS"
+  progress={20}
+  image={<Row.Image src="/static/img/course2.jpg" />}
+  metadata1={['Scott Allen', 'Intermediate']}
+  metadata2={['23m watched']}
+/>
+<Row
+  title="Building a JavaScript Development Environment"
+  progress={67}
+  image={<Row.Image src="/static/img/course3.jpg" />}
+  metadata1={['Cory House', 'Intermediate']}
+  metadata2={['3 hr 23m watched']}
+/>
+<Row
+  title="Webpack Fundamentals"
+  progress={100}
+  metadata1={['Joe Eames', 'Intermediate']}
+  metadata2={['90m watched']}
+  image={<Row.Image src="/static/img/course4.jpg" />}
+/>`}</Code>
     <style jsx>{`
       .stack {
-        width: 75%;
-        padding: ${core.layout.spacingMedium};
+        padding: ${core.layout.spacingLarge};
         background: ${core.colors.gray06};
       }
     `}</style>
@@ -169,7 +198,7 @@ export default withServerProps(_ => (
         it's in. The height and width will grow indefinitely. Define your own
         constrains with parent elements.
       </P>
-      <Stack />
+      <InAppExample />
 
       <SectionHeading>Size</SectionHeading>
       <P>The size will determine certain base measurements.</P>
