@@ -1,5 +1,8 @@
+import Button from '@pluralsight/ps-design-system-button/react'
 import CodeMirror from 'react-codemirror'
 import core from '@pluralsight/ps-design-system-core'
+import Icon from '@pluralsight/ps-design-system-icon/react'
+import PropTypes from 'prop-types'
 
 import CodeMirrorCss from '../../vendor/codemirror-css'
 import CodeMirrorPsTheme from './codemirror-ps-theme'
@@ -11,43 +14,203 @@ if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
   modeLoaded = true
 }
 
-import { string } from 'prop-types'
+const CollapsibleButton = props => (
+  <Button
+    style={{
+      position: 'absolute',
+      top: core.layout.spacingLarge,
+      right: core.layout.spacingLarge,
+      color: core.colors.gray02,
+      zIndex: 10 /* TODO: arbitrary; above code mirror; come back when ready to systemize */
+    }}
+    icon={<Icon id={Icon.ids.code} />}
+    appearance={Button.appearances.flat}
+    onClick={props.onClick}
+    size={Button.sizes.xSmall}
+  >
+    {props.isOpen ? 'Hide' : 'Show'} code
+  </Button>
+)
+
+class Collapsible extends React.Component {
+  componentDidMount() {
+    this.updateOverflowStyle(this.props.isOpen)
+    if (!this.props.isOpen) {
+      this.containerElement.style.height = this.props.height
+    }
+  }
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.isOpen !== this.props.isOpen) {
+      this.toggle(nextProps.isOpen)
+    }
+  }
+  toggle(isOpen) {
+    if (isOpen) setTimeout(() => this.open(), 0)
+    else this.close()
+  }
+  open() {
+    const element = this.containerElement
+    this.setHeightToAuto(element)
+    this.updateOverflowStyle(true, true)
+    return this.waitForHeightTransitionToEnd(element).then(() => {
+      if (this.props.isOpen) {
+        this.updateOverflowStyle(true, false)
+        this.setTransitionEnabled(false, element)
+        element.style.height = 'auto'
+        this.forceRepaint(element)
+        this.setTransitionEnabled(true, element)
+      }
+    })
+  }
+  close() {
+    const element = this.containerElement
+    this.setTransitionEnabled(false, element)
+    element.style.height = window.getComputedStyle(element).height
+    this.forceRepaint(element)
+    this.updateOverflowStyle(false, true)
+    this.setTransitionEnabled(true, element)
+    element.style.height = this.props.height
+    return this.waitForHeightTransitionToEnd(element).then(() => {
+      if (!this.props.isOpen) {
+        this.updateOverflowStyle(false, false)
+      }
+    })
+  }
+  updateOverflowStyle(isOpen, isTransitioning = false) {
+    this.containerElement.style.overflow =
+      isTransitioning || !isOpen ? 'hidden' : 'visible'
+    // this.containerElement.style.visibility =
+    //   isTransitioning || isOpen ? 'visible' : 'hidden'
+  }
+  setHeightToAuto(element) {
+    const prevHeight = element.style.height
+    element.style.height = 'auto'
+    const autoHeight = window.getComputedStyle(element).height
+    element.style.height = prevHeight
+    this.forceRepaint(element)
+    element.style.height = autoHeight
+  }
+  setTransitionEnabled(enabled, element) {
+    element.style.transition = enabled ? '' : 'none'
+  }
+  forceRepaint(element) {
+    element.offsetHeight // see https://stackoverflow.com/a/3485654
+  }
+  waitForHeightTransitionToEnd(element) {
+    return new Promise(resolve => {
+      element.addEventListener(
+        'transitionend',
+        function transitionEnd(event) {
+          if (event.propertyName === 'height') {
+            element.removeEventListener('transitionend', transitionEnd, false)
+            resolve()
+          }
+        },
+        false
+      )
+    })
+  }
+  render() {
+    return (
+      <div ref={e => (this.containerElement = e)}>
+        {this.props.children}
+        <style jsx>{`
+          overflow: hidden;
+          transition: height ${core.motion.speedNormal};
+        `}</style>
+      </div>
+    )
+  }
+}
+Collapsible.displayName = 'Collapsible'
+Collapsible.propTypes = {
+  height: PropTypes.string.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  children: PropTypes.node
+}
 
 /* TODO: rename CodeBlock, do inline as Code*/
-const Code = props => {
-  const options = {
-    readOnly: true,
-    theme: 'ps-codemirror'
+class Code extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { isOpen: !props.collapsible }
+    this.handleCollapsibleButtonClick = this.handleCollapsibleButtonClick.bind(
+      this
+    )
   }
-  if (modeLoaded) options.mode = props.lang
+  handleCollapsibleButtonClick() {
+    this.setState({ isOpen: !this.state.isOpen })
+  }
+  render() {
+    const { state, props } = this
+    const options = {
+      readOnly: true,
+      theme: 'ps-codemirror'
+    }
+    if (modeLoaded) options.mode = props.lang
 
-  return (
-    <div className="code">
-      <CodeMirrorCss />
-      <CodeMirrorPsTheme />
-      <CodeMirror value={props.children} options={options} />
-      <style jsx>{`
-        .code {
-          padding: ${core.layout.spacingLarge};
-          background: ${core.colors.gray04};
-        }
-        .code :global(.CodeMirror) {
-          background: none;
-        }
-        .code :global(.CodeMirror),
-        .code :global(.CodeMirror-scroll) {
-          height: auto;
-        }
-      `}</style>
-    </div>
-  )
+    return (
+      <div className={state.isOpen ? 'code' : 'code code--collapsed'}>
+        <CodeMirrorCss />
+        <CodeMirrorPsTheme />
+
+        <Collapsible isOpen={state.isOpen} height="72px">
+          <CodeMirror value={props.children} options={options} />
+        </Collapsible>
+        {!state.isOpen && <div className="gradient" />}
+        {props.collapsible && (
+          <CollapsibleButton
+            isOpen={this.state.isOpen}
+            onClick={this.handleCollapsibleButtonClick}
+          />
+        )}
+        <style jsx>{`
+          .code {
+            position: relative;
+            padding: ${core.layout.spacingMedium} ${core.layout.spacingLarge};
+            background: ${core.colors.gray04};
+            overflow: hidden;
+            transition: height ${core.motion.speedFast};
+            height: auto;
+          }
+          .code--collapsed {
+            height: calc(
+              ${core.layout.spacingLarge} * 2 + 24px
+            ); /* xSmall Button height */
+          }
+          .code :global(.CodeMirror) {
+            background: none;
+          }
+          .code :global(.CodeMirror),
+          .code :global(.CodeMirror-scroll) {
+            height: auto;
+          }
+          .gradient {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+              to bottom,
+              transparent,
+              ${core.colors.gray04}
+            );
+            z-index: 9;
+          }
+        `}</style>
+      </div>
+    )
+  }
 }
 
 Code.propTypes = {
-  lang: string
+  collapsible: PropTypes.bool,
+  lang: PropTypes.string
 }
 
 Code.defaultProps = {
+  collapsible: false,
   lang: 'javascript'
 }
 
