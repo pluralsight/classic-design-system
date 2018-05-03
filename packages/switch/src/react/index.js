@@ -63,6 +63,7 @@ const Switch = (props, context) => {
         type="checkbox"
         readOnly
         checked={allProps.checked}
+        tabIndex="-1"
         {...styles.checkbox(allProps)}
       />
       <label {...styles.label(allProps)}>{allProps.children}</label>
