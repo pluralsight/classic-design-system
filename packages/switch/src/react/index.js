@@ -55,17 +55,25 @@ const Switch = (props, context) => {
   }
 
   return (
-    <div {...switchProps}>
+    <div
+      {...switchProps}
+      tabIndex={allProps.tabIndex || '0'}
+      role="checkbox"
+      aria-checked={allProps.checked}
+    >
       <div {...styles.track(allProps)}>
         <div {...styles.thumb(allProps)} />
       </div>
       <input
+        tabIndex="-1"
         type="checkbox"
         readOnly
         checked={allProps.checked}
         {...styles.checkbox(allProps)}
       />
-      <label {...styles.label(allProps)}>{allProps.children}</label>
+      {allProps.children && (
+        <label {...styles.label(allProps)}>{allProps.children}</label>
+      )}
     </div>
   )
 }

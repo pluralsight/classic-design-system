@@ -17,7 +17,10 @@ exports[`Storyshots checked false 1`] = `
   }
 >
   <div
+    aria-checked={false}
     data-css-56wz5s=""
+    role="checkbox"
+    tabIndex="0"
   >
     <div
       data-css-1vmkg8r=""
@@ -30,6 +33,7 @@ exports[`Storyshots checked false 1`] = `
       checked={false}
       data-css-6wu9td=""
       readOnly={true}
+      tabIndex="-1"
       type="checkbox"
     />
     <label
@@ -58,7 +62,10 @@ exports[`Storyshots checked true 1`] = `
   }
 >
   <div
+    aria-checked={true}
     data-css-56wz5s=""
+    role="checkbox"
+    tabIndex="0"
   >
     <div
       data-css-3f08gm=""
@@ -71,6 +78,7 @@ exports[`Storyshots checked true 1`] = `
       checked={true}
       data-css-6wu9td=""
       readOnly={true}
+      tabIndex="-1"
       type="checkbox"
     />
     <label
@@ -99,8 +107,11 @@ exports[`Storyshots click large toggles 1`] = `
   }
 >
   <div
+    aria-checked={false}
     data-css-56wz5s=""
     onClick={[Function]}
+    role="checkbox"
+    tabIndex="0"
   >
     <div
       data-css-1vmkg8r=""
@@ -113,10 +124,8 @@ exports[`Storyshots click large toggles 1`] = `
       checked={false}
       data-css-6wu9td=""
       readOnly={true}
+      tabIndex="-1"
       type="checkbox"
-    />
-    <label
-      data-css-1wrf03j=""
     />
   </div>
 </div>
@@ -139,8 +148,11 @@ exports[`Storyshots click small toggles 1`] = `
   }
 >
   <div
+    aria-checked={false}
     data-css-56wz5s=""
     onClick={[Function]}
+    role="checkbox"
+    tabIndex="0"
   >
     <div
       data-css-1lprft6=""
@@ -153,10 +165,8 @@ exports[`Storyshots click small toggles 1`] = `
       checked={false}
       data-css-6wu9td=""
       readOnly={true}
+      tabIndex="-1"
       type="checkbox"
-    />
-    <label
-      data-css-6olsyv=""
     />
   </div>
 </div>
@@ -179,7 +189,10 @@ exports[`Storyshots color green 1`] = `
   }
 >
   <div
+    aria-checked={true}
     data-css-56wz5s=""
+    role="checkbox"
+    tabIndex="0"
   >
     <div
       data-css-rson59=""
@@ -192,6 +205,7 @@ exports[`Storyshots color green 1`] = `
       checked={true}
       data-css-6wu9td=""
       readOnly={true}
+      tabIndex="-1"
       type="checkbox"
     />
     <label
@@ -220,7 +234,10 @@ exports[`Storyshots color orange 1`] = `
   }
 >
   <div
+    aria-checked={true}
     data-css-56wz5s=""
+    role="checkbox"
+    tabIndex="0"
   >
     <div
       data-css-3f08gm=""
@@ -233,6 +250,7 @@ exports[`Storyshots color orange 1`] = `
       checked={true}
       data-css-6wu9td=""
       readOnly={true}
+      tabIndex="-1"
       type="checkbox"
     />
     <label
@@ -261,8 +279,11 @@ exports[`Storyshots disabled false 1`] = `
   }
 >
   <div
+    aria-checked={false}
     data-css-56wz5s=""
     onClick={[Function]}
+    role="checkbox"
+    tabIndex="0"
   >
     <div
       data-css-1vmkg8r=""
@@ -275,10 +296,8 @@ exports[`Storyshots disabled false 1`] = `
       checked={false}
       data-css-6wu9td=""
       readOnly={true}
+      tabIndex="-1"
       type="checkbox"
-    />
-    <label
-      data-css-1wrf03j=""
     />
   </div>
 </div>
@@ -301,7 +320,10 @@ exports[`Storyshots disabled true 1`] = `
   }
 >
   <div
+    aria-checked={false}
     data-css-z9gza4=""
+    role="checkbox"
+    tabIndex="0"
   >
     <div
       data-css-1vmkg8r=""
@@ -314,10 +336,8 @@ exports[`Storyshots disabled true 1`] = `
       checked={false}
       data-css-6wu9td=""
       readOnly={true}
+      tabIndex="-1"
       type="checkbox"
-    />
-    <label
-      data-css-1wrf03j=""
     />
   </div>
 </div>
@@ -340,7 +360,10 @@ exports[`Storyshots label large left 1`] = `
   }
 >
   <div
+    aria-checked={false}
     data-css-20c4s4=""
+    role="checkbox"
+    tabIndex="0"
   >
     <div
       data-css-1vmkg8r=""
@@ -353,6 +376,7 @@ exports[`Storyshots label large left 1`] = `
       checked={false}
       data-css-6wu9td=""
       readOnly={true}
+      tabIndex="-1"
       type="checkbox"
     />
     <label
@@ -381,7 +405,10 @@ exports[`Storyshots label large right 1`] = `
   }
 >
   <div
+    aria-checked={false}
     data-css-56wz5s=""
+    role="checkbox"
+    tabIndex="0"
   >
     <div
       data-css-1vmkg8r=""
@@ -394,6 +421,7 @@ exports[`Storyshots label large right 1`] = `
       checked={false}
       data-css-6wu9td=""
       readOnly={true}
+      tabIndex="-1"
       type="checkbox"
     />
     <label
@@ -422,7 +450,10 @@ exports[`Storyshots label small left 1`] = `
   }
 >
   <div
+    aria-checked={false}
     data-css-20c4s4=""
+    role="checkbox"
+    tabIndex="0"
   >
     <div
       data-css-1lprft6=""
@@ -435,6 +466,7 @@ exports[`Storyshots label small left 1`] = `
       checked={false}
       data-css-6wu9td=""
       readOnly={true}
+      tabIndex="-1"
       type="checkbox"
     />
     <label
@@ -463,7 +495,10 @@ exports[`Storyshots label small right 1`] = `
   }
 >
   <div
+    aria-checked={false}
     data-css-56wz5s=""
+    role="checkbox"
+    tabIndex="0"
   >
     <div
       data-css-1lprft6=""
@@ -476,6 +511,7 @@ exports[`Storyshots label small right 1`] = `
       checked={false}
       data-css-6wu9td=""
       readOnly={true}
+      tabIndex="-1"
       type="checkbox"
     />
     <label
@@ -504,7 +540,10 @@ exports[`Storyshots size large 1`] = `
   }
 >
   <div
+    aria-checked={false}
     data-css-56wz5s=""
+    role="checkbox"
+    tabIndex="0"
   >
     <div
       data-css-1vmkg8r=""
@@ -517,6 +556,7 @@ exports[`Storyshots size large 1`] = `
       checked={false}
       data-css-6wu9td=""
       readOnly={true}
+      tabIndex="-1"
       type="checkbox"
     />
     <label
@@ -545,7 +585,10 @@ exports[`Storyshots size small 1`] = `
   }
 >
   <div
+    aria-checked={false}
     data-css-56wz5s=""
+    role="checkbox"
+    tabIndex="0"
   >
     <div
       data-css-1lprft6=""
@@ -558,6 +601,7 @@ exports[`Storyshots size small 1`] = `
       checked={false}
       data-css-6wu9td=""
       readOnly={true}
+      tabIndex="-1"
       type="checkbox"
     />
     <label
