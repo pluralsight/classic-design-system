@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.36.0"></a>
+# [9.36.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.35.1...@pluralsight/ps-design-system-site@9.36.0) (2018-05-07)
+
+
+### Bug Fixes
+
+* **site:** banner doc typo ([dda99dc](https://github.com/pluralsight/design-system/commit/dda99dc))
+* **site:** make code example collapse animate ([5d91706](https://github.com/pluralsight/design-system/commit/5d91706))
+
+
+### Features
+
+* **site:** add collapsed row example code block ([dbc0d34](https://github.com/pluralsight/design-system/commit/dbc0d34))
+* **site:** add in app example for tooltip ([789ffc7](https://github.com/pluralsight/design-system/commit/789ffc7)), closes [#193](https://github.com/pluralsight/design-system/issues/193)
+* **site:** make code block collapsible ([1fc9879](https://github.com/pluralsight/design-system/commit/1fc9879)), closes [#177](https://github.com/pluralsight/design-system/issues/177)
+
+
+
+
 <a name="9.35.1"></a>
 ## [9.35.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.35.0...@pluralsight/ps-design-system-site@9.35.1) (2018-04-30)
 

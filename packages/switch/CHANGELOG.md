@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.2.7...@pluralsight/ps-design-system-switch@1.3.0) (2018-05-07)
+
+
+### Features
+
+* **switch:** make switch focusable ([8f3deb6](https://github.com/pluralsight/design-system/commit/8f3deb6)), closes [#213](https://github.com/pluralsight/design-system/issues/213) [#212](https://github.com/pluralsight/design-system/issues/212)
+
+
+
+
 <a name="1.2.7"></a>
 ## [1.2.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.2.6...@pluralsight/ps-design-system-switch@1.2.7) (2018-04-19)
 
