@@ -29,6 +29,7 @@
     "@pluralsight/ps-design-system-core": "^4.2.1",
     "@pluralsight/ps-design-system-icon": "^8.7.0",
     "@pluralsight/ps-design-system-text": "^10.6.6",
+    "@pluralsight/ps-design-system-theme": "^1.2.0",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {

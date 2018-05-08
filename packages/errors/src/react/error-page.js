@@ -4,17 +4,26 @@ import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
+import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
 import icons from './icons'
 
 const styles = {
-  page: props =>
-    glamor.css(css['.psds-error-page'], {
-      '@media (min-width: 769px)':
-        css['@media (min-width: 769px)']['.psds-error-page']
-    }),
-  icon: props => glamor.css(css['.psds-error-page__icon']),
+  page: ({ themeName }) =>
+    glamor.css(
+      css['.psds-error-page'],
+      css[`.psds-error-page.psds-theme--${themeName}`],
+      {
+        '@media (min-width: 769px)':
+          css['@media (min-width: 769px)']['.psds-error-page']
+      }
+    ),
+  icon: ({ themeName }) =>
+    glamor.css(
+      css['.psds-error-page__icon'],
+      css[`.psds-error-page__icon.psds-theme--${themeName}`]
+    ),
   text: props =>
     glamor.css({
       '@media (min-width: 769px)': {
@@ -38,32 +47,41 @@ const SearchForm = props => (
   </form>
 )
 
-const ErrorPage = props => (
-  <div {...styles.page(props)}>
-    {props.iconId &&
-      icons[props.iconId] && (
-        <div {...styles.icon(props)}>{icons[props.iconId](React)}</div>
-      )}
-    <div {...styles.text(props)}>
-      <Text.Heading size={Text.Heading.sizes.medium}>
-        <h1>{props.text}</h1>
-      </Text.Heading>
+const ErrorPage = (props, context) => {
+  const allProps = {
+    ...props,
+    themeName: context.themeName || themeDefaultName
+  }
+  return (
+    <div {...styles.page(allProps)}>
+      {allProps.iconId &&
+        icons[allProps.iconId] && (
+          <div {...styles.icon(allProps)}>{icons[allProps.iconId](React)}</div>
+        )}
+      <div {...styles.text(allProps)}>
+        <Text.Heading size={Text.Heading.sizes.medium}>
+          <h1>{allProps.text}</h1>
+        </Text.Heading>
+      </div>
+      <div {...styles.code(allProps)}>
+        <Text.Heading size={Text.Heading.sizes.smallCaps}>
+          <h2>Error code: {allProps.code}</h2>
+        </Text.Heading>
+      </div>
+      {allProps.href && <Button href={allProps.href}>Contact support</Button>}
+      {allProps.action && <SearchForm {...allProps} />}
     </div>
-    <div {...styles.code(props)}>
-      <Text.Heading size={Text.Heading.sizes.smallCaps}>
-        <h2>Error code: {props.code}</h2>
-      </Text.Heading>
-    </div>
-    {props.href && <Button href={props.href}>Contact support</Button>}
-    {props.action && <SearchForm {...props} />}
-  </div>
-)
+  )
+}
 ErrorPage.propTypes = {
   action: PropTypes.string,
   code: PropTypes.string,
   href: PropTypes.string,
   iconId: PropTypes.oneOf(Object.keys(icons)),
   text: PropTypes.string
+}
+ErrorPage.contextTypes = {
+  themeName: PropTypes.string
 }
 
 export default ErrorPage

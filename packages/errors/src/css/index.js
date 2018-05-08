@@ -1,4 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
 
 export default {
   '.psds-error-page': {
@@ -8,6 +9,9 @@ export default {
     textAlign: 'center',
     color: core.colors.white
   },
+  [`.psds-error-page.psds-theme--${themeNames.light}`]: {
+    color: core.colors.gray06
+  },
 
   // __icon
   '.psds-error-page__icon': {
@@ -15,6 +19,9 @@ export default {
     fill: 'currentColor',
     height: '128px',
     width: '128px'
+  },
+  [`.psds-error-page__icon.psds-theme--${themeNames.light}`]: {
+    color: core.colors.gray04
   },
 
   // __code
