@@ -169,7 +169,6 @@ class InAppExample extends React.Component {
               >
                 <Tooltip
                   innerRef={el => (this.tips[1] = el)}
-                  style={styleUnder(this.state.examples[1], this.state.tips[1])}
                   tailPosition={Tooltip.tailPositions.topCenter}
                 >
                   Is hovered
@@ -193,7 +192,6 @@ class InAppExample extends React.Component {
               >
                 <Tooltip
                   innerRef={el => (this.tips[2] = el)}
-                  style={styleUnder(this.state.examples[2], this.state.tips[2])}
                   tailPosition={Tooltip.tailPositions.topCenter}
                 >
                   Was clicked
@@ -268,7 +266,6 @@ class HoverExampleOnly extends React.Component {
           <TooltipPositioner styleBy={styleUnder.bind(null, this.triggerEl)}>
             <Tooltip
               innerRef={el => (this.tooltipEl = el)}
-              style={styleUnder(this.triggerEl, this.tooltipEl)}
               tailPosition={Tooltip.tailPositions.topCenter}
             >
               Is hovered
