@@ -27,6 +27,7 @@ module.exports = {
         page: '/components/dialog-modal-example'
       },
       '/components/drawer': { page: '/components/drawer' },
+      '/components/errors': { page: '/components/errors' },
       '/components/icon': { page: '/components/icon' },
       '/components/layout': { page: '/components/layout' },
       '/components/link': { page: '/components/link' },
