@@ -33,22 +33,20 @@ export default withServerProps(_ => (
       <PropTypes
         props={{
           ViewToggle: [
-            PropTypes.row(
-              [
-                'children',
-                <code>ViewToggle.Option[]</code>,
-                null,
-                null,
-                'options to appear in toggle'
-              ],
-              [
-                'onSelect',
-                'function',
-                null,
-                null,
-                'triggered when an option is clicked'
-              ]
-            )
+            PropTypes.row([
+              'children',
+              <code>ViewToggle.Option[]</code>,
+              null,
+              null,
+              'options to appear in toggle'
+            ]),
+            PropTypes.row([
+              'onSelect',
+              'function',
+              null,
+              null,
+              'triggered when an option is clicked'
+            ])
           ],
           'ViewToggle.Option': [
             PropTypes.row([
