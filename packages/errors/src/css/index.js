@@ -70,7 +70,8 @@ export default {
     // __text > h1
     '.psds-error-page__text > h1': {
       fontSize: core.type.fontSizeLarge,
-      lineHeight: core.type.lineHeightExtra
+      lineHeight: core.type.lineHeightExtra,
+      fontWeight: core.type.fontWeightBook
     }
   }
 }
