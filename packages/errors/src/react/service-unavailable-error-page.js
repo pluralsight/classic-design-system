@@ -10,8 +10,5 @@ const ServiceUnavailableErrorPage = props => (
     code="503"
   />
 )
-ServiceUnavailableErrorPage.propTypes = {
-  href: PropTypes.string
-}
 
 export default ServiceUnavailableErrorPage

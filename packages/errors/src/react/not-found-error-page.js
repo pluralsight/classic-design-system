@@ -12,7 +12,7 @@ const NotFoundErrorPage = props => (
   />
 )
 NotFoundErrorPage.propTypes = {
-  onSubmit: PropTypes.func
+  action: PropTypes.string
 }
 
 export default NotFoundErrorPage
