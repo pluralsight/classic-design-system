@@ -13,6 +13,12 @@ export const sizes = {
   large: 'large'
 }
 
+export const widths = {
+  small: '16px',
+  medium: '24px',
+  large: '48px'
+}
+
 export const colors = Object.keys(core.colors)
   .filter(c => !/gradient/.test(c))
   .reduce((acc, c) => {
