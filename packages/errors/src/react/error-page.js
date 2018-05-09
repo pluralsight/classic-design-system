@@ -31,8 +31,16 @@ const styles = {
       }
     }),
   code: props => glamor.css(css['.psds-error-page__code']),
-  search: props => glamor.css(css['.psds-error-page__search']),
-  searchInput: props => glamor.css(css['.psds-error-page__search__input'])
+  search: ({ themeName }) =>
+    glamor.css(
+      css['.psds-error-page__search'],
+      css[`.psds-error-page__search.psds-theme--${themeName}`]
+    ),
+  searchInput: ({ themeName }) =>
+    glamor.css(
+      css['.psds-error-page__search__input'],
+      css[`.psds-error-page__search__input.psds-theme--${themeName}`]
+    )
 }
 
 const SearchForm = props => (

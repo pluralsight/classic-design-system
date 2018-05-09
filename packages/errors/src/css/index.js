@@ -38,6 +38,10 @@ export default {
     padding: `0 ${core.layout.spacingXSmall}`,
     color: core.colors.gray02
   },
+  [`.psds-error-page__search.psds-theme--${themeNames.light}`]: {
+    background: core.colors.white,
+    color: core.colors.gray03
+  },
   '.psds-error-page__search__input': {
     height: '40px',
     color: core.colors.gray02,
@@ -46,6 +50,9 @@ export default {
     background: 'none',
     border: 'none',
     marginLeft: core.layout.spacingSmall
+  },
+  [`.psds-error-page__search__input.psds-theme--${themeNames.light}`]: {
+    color: core.colors.gray03
   },
 
   '@media (min-width: 769px)': {
