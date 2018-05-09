@@ -94,7 +94,8 @@ const makeGlobalsAvailable = includes => {
 
 const evalSrc = compiled => eval(compiled)
 
-const renderOutput = (evaled, el) => ReactDOM.render(evaled, el)
+const renderOutput = (props, evaled, el) =>
+  ReactDOM.render(<Theme name={props.themeName}>{evaled}</Theme>, el)
 
 const unmountOutput = el => ReactDOM.unmountComponentAtNode(el)
 
@@ -139,7 +140,7 @@ class ReactExample extends React.Component {
           const compiled = compileSrc(src)
           makeGlobalsAvailable(this.props.includes)
           const evaled = evalSrc(compiled)
-          renderOutput(evaled, this.outputEl)
+          renderOutput(this.props, evaled, this.outputEl)
         } catch (err) {
           console.log('err', err)
           unmountOutput(this.outputEl)
@@ -217,11 +218,13 @@ ReactExample.propTypes = {
   includes: PropTypes.object,
   outputChildStyle: PropTypes.object,
   outputStyle: PropTypes.object,
-  themeName: PropTypes.oneOf(Object.keys(Theme.names))
+  themeName: PropTypes.oneOf(Object.keys(Theme.names)),
+  themeToggle: PropTypes.bool
 }
 ReactExample.defaultProps = {
   orient: 'horizontal',
-  themeName: Theme.defaultName
+  themeName: Theme.defaultName,
+  themeToggle: false
 }
 
 export default ReactExample
