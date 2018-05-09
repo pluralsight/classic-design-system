@@ -36,6 +36,7 @@ const styles = {
       css['.psds-error-page__search'],
       css[`.psds-error-page__search.psds-theme--${themeName}`]
     ),
+  searchIcon: _ => glamor.css(css['.psds-error-page__search__icon']),
   searchInput: ({ themeName }) =>
     glamor.css(
       css['.psds-error-page__search__input'],
@@ -45,7 +46,7 @@ const styles = {
 
 const SearchForm = props => (
   <form action={props.action} method="get" {...styles.search(props)}>
-    <Icon id={Icon.ids.search} />
+    <Icon id={Icon.ids.search} {...styles.searchIcon(props)} />
     <input
       {...styles.searchInput(props)}
       type="text"

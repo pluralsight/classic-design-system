@@ -1,5 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
+import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
 
 export default {
   '.psds-error-page': {
@@ -31,25 +32,31 @@ export default {
 
   // __search
   '.psds-error-page__search': {
+    position: 'relative',
     display: 'inline-flex',
     alignItems: 'center',
-    border: `1px solid ${core.colors.gray03}`,
-    borderRadius: '2px',
-    padding: `0 ${core.layout.spacingXSmall}`,
     color: core.colors.gray02
   },
   [`.psds-error-page__search.psds-theme--${themeNames.light}`]: {
     background: core.colors.white,
     color: core.colors.gray03
   },
+  '.psds-error-page__search__icon': {
+    position: 'absolute',
+    left: core.layout.spacingXSmall
+  },
   '.psds-error-page__search__input': {
+    position: 'relative',
     height: '40px',
+    padding: `0 ${core.layout.spacingXSmall} 0 calc(${
+      core.layout.spacingXSmall
+    } + ${iconVars.widths.medium} + ${core.layout.spacingXSmall})`,
     color: core.colors.gray02,
     fontSize: core.type.fontSizeSmall,
     lineHeight: core.type.lineHeightStandard,
     background: 'none',
-    border: 'none',
-    marginLeft: core.layout.spacingSmall
+    border: `1px solid ${core.colors.gray03}`,
+    borderRadius: '2px'
   },
   [`.psds-error-page__search__input.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03
