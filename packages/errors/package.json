@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-errors",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Design system components for errors",
   "main": "index.js",
   "scripts": {
