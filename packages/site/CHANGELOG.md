@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.38.0"></a>
+# [9.38.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.37.1...@pluralsight/ps-design-system-site@9.38.0) (2018-05-09)
+
+
+### Bug Fixes
+
+* **site:** make viewtoggle onSelect proptype show up ([a5a1a93](https://github.com/pluralsight/design-system/commit/a5a1a93))
+
+
+### Features
+
+* **site:** support theme toggling in examples ([191e31c](https://github.com/pluralsight/design-system/commit/191e31c))
+
+
+
+
 <a name="9.37.1"></a>
 ## [9.37.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.37.0...@pluralsight/ps-design-system-site@9.37.1) (2018-05-09)
 

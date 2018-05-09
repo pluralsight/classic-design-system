@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@1.1.2...@pluralsight/ps-design-system-errors@1.1.3) (2018-05-09)
+
+
+### Bug Fixes
+
+* **errors:** cleanup bad svg attrributes ([0c54a30](https://github.com/pluralsight/design-system/commit/0c54a30))
+* **errors:** lighten font weight on error page text ([009b0bf](https://github.com/pluralsight/design-system/commit/009b0bf))
+
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@1.1.1...@pluralsight/ps-design-system-errors@1.1.2) (2018-05-09)
 
