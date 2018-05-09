@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.8.0"></a>
+# [8.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.7.0...@pluralsight/ps-design-system-icon@8.8.0) (2018-05-09)
+
+
+### Features
+
+* **icon:** expose pixel vars.widths ([40ae798](https://github.com/pluralsight/design-system/commit/40ae798))
+
+
+
+
 <a name="8.7.0"></a>
 # [8.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.6.5...@pluralsight/ps-design-system-icon@8.7.0) (2018-04-19)
 

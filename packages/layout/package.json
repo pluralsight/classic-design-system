@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-layout",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Design system components for ui layouts",
   "main": "index.js",
   "scripts": {
@@ -24,13 +24,13 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.2.1",
-    "@pluralsight/ps-design-system-text": "^10.6.6",
+    "@pluralsight/ps-design-system-text": "^10.6.7",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-button": "^10.8.1",
-    "@pluralsight/ps-design-system-link": "^5.6.7",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.30",
+    "@pluralsight/ps-design-system-button": "^10.8.2",
+    "@pluralsight/ps-design-system-link": "^5.6.8",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.31",
     "@storybook/addon-storyshots": "3.2.4",
     "@storybook/react": "3.2.3",
     "babel-cli": "^6.24.1",
