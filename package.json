@@ -36,8 +36,8 @@
   "license": "Apache-2.0",
   "dependencies": {
     "glamor": "^2.20.39",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^4.2.1",
