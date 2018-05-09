@@ -54,6 +54,7 @@ export default withServerProps(_ => (
         not have the necessary permissions for the resource.
       </P>
       <Example.React
+        themeToggle
         orient="vertical"
         includes={{ ForbiddenErrorPage }}
         codes={[`<ForbiddenErrorPage />`]}
@@ -78,6 +79,7 @@ export default withServerProps(_ => (
         future. Subsequent requests by the client are permissible.
       </P>
       <Example.React
+        themeToggle
         orient="vertical"
         includes={{ NotFoundErrorPage }}
         codes={[`<NotFoundErrorPage />`]}
@@ -106,6 +108,7 @@ export default withServerProps(_ => (
         encountered and no more specific message is suitable.
       </P>
       <Example.React
+        themeToggle
         orient="vertical"
         includes={{ InternalServerErrorPage }}
         codes={[`<InternalServerErrorPage />`]}
@@ -132,6 +135,7 @@ export default withServerProps(_ => (
         for maintenance). Generally, this is a temporary state.
       </P>
       <Example.React
+        themeToggle
         orient="vertical"
         includes={{ ServiceUnavailableErrorPage }}
         codes={[`<ServiceUnavailableErrorPage />`]}

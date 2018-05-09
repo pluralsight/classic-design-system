@@ -20,7 +20,7 @@ import {
   withServerProps
 } from '../../src/ui'
 
-const decorateCards = (sizes, props, codes) => {
+const decorateCards = (sizes, props, state) => {
   const cardMaxWidths = {
     small: '140px',
     medium: '320px',
@@ -29,7 +29,7 @@ const decorateCards = (sizes, props, codes) => {
   // NOTE: jsx-style classes evaluated in the context of Example.React
   let decorated = `<div className="output outputVertical">`
 
-  codes.forEach((code, i) => {
+  state.codes.forEach((code, i) => {
     decorated += `<div className="outputChild" style={{ maxWidth: '${
       Array.isArray(sizes) ? cardMaxWidths[sizes[i]] : cardMaxWidths.medium
     }'}}>${code}</div>`

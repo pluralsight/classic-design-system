@@ -1,6 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import CodeMirror from 'react-codemirror'
 import Theme from '@pluralsight/ps-design-system-theme/react'
+import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react'
 
 import CodeMirrorCss from '../../../vendor/codemirror-css'
 import CodeMirrorPsTheme from '../codemirror-ps-theme'
@@ -69,12 +70,13 @@ const OutputDecorationGlobalStyles = _ => (
   `}</style>
 )
 
-const defaultDecorateCodes = (props, codes) => {
+const defaultDecorateCodes = (props, state) => {
   let decorated = `<div className="${getOutputClassName(
-    props
+    props,
+    state
   )}" style={${JSON.stringify(props.outputStyle)}}>`
 
-  codes.forEach(code => {
+  state.codes.forEach(code => {
     decorated += `<div className="outputChild" style={${JSON.stringify(
       props.outputChildStyle
     )}}>${code}</div>`
@@ -94,27 +96,55 @@ const makeGlobalsAvailable = includes => {
 
 const evalSrc = compiled => eval(compiled)
 
-const renderOutput = (props, evaled, el) =>
-  ReactDOM.render(<Theme name={props.themeName}>{evaled}</Theme>, el)
+const renderOutput = (themeName, evaled, el) =>
+  ReactDOM.render(<Theme name={themeName}>{evaled}</Theme>, el)
 
 const unmountOutput = el => ReactDOM.unmountComponentAtNode(el)
 
-const getOutputClassName = props =>
-  `output ${props.themeName === Theme.names.light ? 'outputLight' : ''} ${
+const getOutputClassName = (props, state) =>
+  `output ${state.themeName === Theme.names.light ? 'outputLight' : ''} ${
     props.orient === 'vertical' ? 'outputVertical' : 'outputHorizontal'
   }`
+
+const capitalize = str => str && str[0].toUpperCase() + str.slice(1)
+const ThemeToggle = props => (
+  <div className="toggle">
+    <ViewToggle onSelect={props.onSelect}>
+      {Object.keys(Theme.names).map(themeName => (
+        <ViewToggle.Option
+          key={themeName}
+          active={themeName === props.activeThemeName}
+        >
+          {capitalize(themeName)}
+        </ViewToggle.Option>
+      ))}
+    </ViewToggle>
+    <style jsx>{`
+      .toggle {
+        position: absolute;
+        top: ${core.layout.spacingMedium};
+        right: ${core.layout.spacingMedium};
+      }
+    `}</style>
+  </div>
+)
 
 class ReactExample extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { codes: props.codes, error: null }
+    this.state = { codes: props.codes, error: null, themeName: props.themeName }
     this.handleCodeChange = this.handleCodeChange.bind(this)
+    this.handleThemeSelect = this.handleThemeSelect.bind(this)
   }
   componentDidMount() {
     this.renderOutput()
   }
-  componentDidUpdate(prevProps) {
-    if (this.props.code !== prevProps.code) this.renderOutput()
+  componentDidUpdate(prevProps, prevState) {
+    if (
+      this.props.codes !== prevProps.codes ||
+      this.state.themeName !== prevState.themeName
+    )
+      this.renderOutput()
   }
   componentWillUnmount() {
     unmountOutput(this.outputEl)
@@ -123,6 +153,10 @@ class ReactExample extends React.Component {
     const codes = [...this.state.codes]
     codes[i] = code
     this.setState(_ => ({ codes }), debounce(this.renderOutput, 200))
+  }
+  handleThemeSelect(i) {
+    const themeName = Theme.names[Object.keys(Theme.names)[i]]
+    this.setState({ themeName })
   }
   renderError() {}
   renderOutput() {
@@ -135,12 +169,12 @@ class ReactExample extends React.Component {
         try {
           const src = (this.props.decorateCodes || defaultDecorateCodes)(
             this.props,
-            this.state.codes
+            this.state
           )
           const compiled = compileSrc(src)
           makeGlobalsAvailable(this.props.includes)
           const evaled = evalSrc(compiled)
-          renderOutput(this.props, evaled, this.outputEl)
+          renderOutput(this.state.themeName, evaled, this.outputEl)
         } catch (err) {
           console.log('err', err)
           unmountOutput(this.outputEl)
@@ -196,12 +230,21 @@ class ReactExample extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="example">
         {this.renderError()}
+        {this.props.themeToggle && (
+          <ThemeToggle
+            activeThemeName={this.state.themeName}
+            onSelect={this.handleThemeSelect}
+          />
+        )}
         <div ref={el => (this.outputEl = el)} />
         <OutputDecorationGlobalStyles />
         <div className="src">{this.renderSrc()}</div>
         <style jsx>{`
+          .example {
+            position: relative;
+          }
           .src {
             padding: ${core.layout.spacingLarge};
             background: ${core.colors.gray04};
