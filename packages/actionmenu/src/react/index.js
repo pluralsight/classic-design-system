@@ -11,6 +11,7 @@ import * as vars from '../vars'
 
 const Item = glamorous.button(
   css['.psds-actionmenu__item'],
+  { ':focus': css['.psds-actionmenu__item:focus'] },
   ({ iconId }) => (iconId ? css['.psds-actionmenu__item--iconId'] : null),
   ({ nested }) => (nested ? css['.psds-actionmenu__item--nested'] : null),
   ({ isActive }) => (isActive ? css['.psds-actionmenu__item--isActive'] : null)
@@ -66,12 +67,13 @@ class ItemComponent extends React.Component {
     if (this.props.isActive && !this.state.isNestedRendered) this.item.focus()
   }
   handleKeyDown(evt) {
-    if (evt.key === 'ArrowRight' || evt.key === ' ' || evt.key === 'Enter') {
+    if (
+      (evt.key === 'ArrowRight' || evt.key === ' ' || evt.key === 'Enter') &&
+      this.props.nested
+    ) {
       evt.stopPropagation()
       evt.preventDefault()
-      if (this.props.nested) {
-        this.setState({ isNestedRendered: true })
-      }
+      this.setState({ isNestedRendered: true })
     }
   }
   handleNestedClose() {

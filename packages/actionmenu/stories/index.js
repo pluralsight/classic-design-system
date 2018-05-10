@@ -1,3 +1,4 @@
+import { action } from '@storybook/addon-actions'
 import addons from '@storybook/addons'
 import Button from '@pluralsight/ps-design-system-button/react'
 import core from '@pluralsight/ps-design-system-core'
@@ -182,3 +183,74 @@ Object.keys(ActionMenu.origins).forEach(origin =>
     </div>
   ))
 )
+
+const onClickStory = storiesOf('onClick', module)
+  .addDecorator(themeDecorator(addons))
+  .add('flat', _ => (
+    <ActionMenu>
+      <ActionMenu.Item onClick={action('one')}>One item</ActionMenu.Item>
+      <ActionMenu.Item onClick={action('two')}>Two item</ActionMenu.Item>
+      <ActionMenu.Item onClick={action('three')}>Three item</ActionMenu.Item>
+    </ActionMenu>
+  ))
+  .add('nested', _ => (
+    <ActionMenu>
+      <ActionMenu.Item onClick={action('-0')}>0</ActionMenu.Item>
+      <ActionMenu.Item
+        onClick={action('-1')}
+        nested={
+          <ActionMenu>
+            <ActionMenu.Item onClick={action('-1-1')}>1-1</ActionMenu.Item>
+            <ActionMenu.Item
+              onClick={action('-1-2')}
+              nested={
+                <ActionMenu>
+                  <ActionMenu.Item onClick={action('-1-2-1')}>
+                    1-2-1
+                  </ActionMenu.Item>
+                  <ActionMenu.Item onClick={action('-1-2-2')}>
+                    1-2-2
+                  </ActionMenu.Item>
+                  <ActionMenu.Item onClick={action('-1-2-3')}>
+                    1-2-3
+                  </ActionMenu.Item>
+                </ActionMenu>
+              }
+            >
+              1-2
+            </ActionMenu.Item>
+            <ActionMenu.Divider />
+            <ActionMenu.Item onClick={action('-1-3')}>1-3</ActionMenu.Item>
+            <ActionMenu.Item
+              onClick={action('-1-4')}
+              nested={
+                <ActionMenu>
+                  <ActionMenu.Item onClick={action('-1-4-1')}>
+                    1-4-1
+                  </ActionMenu.Item>
+                  <ActionMenu.Item onClick={action('-1-4-2')}>
+                    1-4-2
+                  </ActionMenu.Item>
+                </ActionMenu>
+              }
+            >
+              1-4
+            </ActionMenu.Item>
+          </ActionMenu>
+        }
+      >
+        1
+      </ActionMenu.Item>
+      <ActionMenu.Item onClick={action('-2')}>2</ActionMenu.Item>
+      <ActionMenu.Item onClick={action('-3')}>3</ActionMenu.Item>
+      <ActionMenu.Item onClick={action('-4')}>4</ActionMenu.Item>
+      <ActionMenu.Item onClick={action('-5')}>5</ActionMenu.Item>
+      <ActionMenu.Item onClick={action('-6')}>6</ActionMenu.Item>
+      <ActionMenu.Item onClick={action('-7')}>7</ActionMenu.Item>
+      <ActionMenu.Item onClick={action('-8')}>8</ActionMenu.Item>
+      <ActionMenu.Item onClick={action('-9')}>9</ActionMenu.Item>
+      <ActionMenu.Item onClick={action('-10')}>10</ActionMenu.Item>
+      <ActionMenu.Item onClick={action('-11')}>11</ActionMenu.Item>
+      <ActionMenu.Item onClick={action('-12')}>12</ActionMenu.Item>
+    </ActionMenu>
+  ))

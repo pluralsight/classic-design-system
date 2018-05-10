@@ -34,6 +34,7 @@
     "@pluralsight/ps-design-system-build": "^1.8.0",
     "@pluralsight/ps-design-system-button": "^10.8.2",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.31",
+    "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",
     "@storybook/react": "3.2.14",

@@ -27,7 +27,7 @@ exports[`Storyshots dividers edge 1`] = `
     >
       <button
         aria-haspopup={false}
-        className="css-bvtqlg"
+        className="css-to3wnt"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -71,7 +71,7 @@ exports[`Storyshots dividers sandwich 1`] = `
     >
       <button
         aria-haspopup={false}
-        className="css-bvtqlg"
+        className="css-to3wnt"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -89,7 +89,7 @@ exports[`Storyshots dividers sandwich 1`] = `
     >
       <button
         aria-haspopup={false}
-        className="css-1y6ncui"
+        className="css-1jy3vzg"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -103,7 +103,7 @@ exports[`Storyshots dividers sandwich 1`] = `
     >
       <button
         aria-haspopup={false}
-        className="css-1y6ncui"
+        className="css-1jy3vzg"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -143,7 +143,7 @@ exports[`Storyshots menu items long text 1`] = `
     >
       <button
         aria-haspopup={false}
-        className="css-bvtqlg"
+        className="css-to3wnt"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -157,7 +157,7 @@ exports[`Storyshots menu items long text 1`] = `
     >
       <button
         aria-haspopup={false}
-        className="css-1y6ncui"
+        className="css-1jy3vzg"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -197,7 +197,7 @@ exports[`Storyshots menu items long text with icon 1`] = `
     >
       <button
         aria-haspopup={false}
-        className="css-8v4mjn"
+        className="css-43jc8k"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -255,7 +255,7 @@ exports[`Storyshots menu items multiple 1`] = `
     >
       <button
         aria-haspopup={false}
-        className="css-bvtqlg"
+        className="css-to3wnt"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -269,7 +269,7 @@ exports[`Storyshots menu items multiple 1`] = `
     >
       <button
         aria-haspopup={false}
-        className="css-1y6ncui"
+        className="css-1jy3vzg"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -283,7 +283,7 @@ exports[`Storyshots menu items multiple 1`] = `
     >
       <button
         aria-haspopup={false}
-        className="css-1y6ncui"
+        className="css-1jy3vzg"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -323,7 +323,7 @@ exports[`Storyshots menu items one 1`] = `
     >
       <button
         aria-haspopup={false}
-        className="css-bvtqlg"
+        className="css-to3wnt"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -363,7 +363,7 @@ exports[`Storyshots menu items with icons 1`] = `
     >
       <button
         aria-haspopup={false}
-        className="css-8v4mjn"
+        className="css-43jc8k"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -395,7 +395,7 @@ exports[`Storyshots menu items with icons 1`] = `
     >
       <button
         aria-haspopup={false}
-        className="css-11pcr7a"
+        className="css-13aet7c"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -427,7 +427,7 @@ exports[`Storyshots menu items with icons 1`] = `
     >
       <button
         aria-haspopup={false}
-        className="css-11pcr7a"
+        className="css-13aet7c"
         onClick={undefined}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -494,7 +494,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
       >
         <button
           aria-haspopup={true}
-          className="css-1tum3pv"
+          className="css-1x9m4rc"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -523,7 +523,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
       >
         <button
           aria-haspopup={false}
-          className="css-1y6ncui"
+          className="css-1jy3vzg"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -573,7 +573,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
       >
         <button
           aria-haspopup={true}
-          className="css-1tum3pv"
+          className="css-1x9m4rc"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -602,7 +602,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
       >
         <button
           aria-haspopup={false}
-          className="css-1y6ncui"
+          className="css-1jy3vzg"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -652,7 +652,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
       >
         <button
           aria-haspopup={true}
-          className="css-1tum3pv"
+          className="css-1x9m4rc"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -681,7 +681,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
       >
         <button
           aria-haspopup={false}
-          className="css-1y6ncui"
+          className="css-1jy3vzg"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -731,7 +731,7 @@ exports[`Storyshots nested origin topRight 1`] = `
       >
         <button
           aria-haspopup={true}
-          className="css-1tum3pv"
+          className="css-1x9m4rc"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -760,7 +760,7 @@ exports[`Storyshots nested origin topRight 1`] = `
       >
         <button
           aria-haspopup={false}
-          className="css-1y6ncui"
+          className="css-1jy3vzg"
           onClick={undefined}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -769,6 +769,297 @@ exports[`Storyshots nested origin topRight 1`] = `
           Two
         </button>
       </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots onClick flat 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-1pg0ko5"
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    role="menu"
+  >
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        className="css-to3wnt"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        One item
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        className="css-1jy3vzg"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        Two item
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        className="css-1jy3vzg"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        Three item
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots onClick nested 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-1pg0ko5"
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    role="menu"
+  >
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        className="css-to3wnt"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        0
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={true}
+        className="css-1nwpt8f"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        1
+        <div
+          data-css-g406da=""
+        >
+          <svg
+            height="9"
+            viewBox="0 0 4 9"
+            width="4"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 .33l3.657 4.15L0 8.634V.33"
+              fill="#888"
+            />
+          </svg>
+        </div>
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        className="css-1jy3vzg"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        2
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        className="css-1jy3vzg"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        3
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        className="css-1jy3vzg"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        4
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        className="css-1jy3vzg"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        5
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        className="css-1jy3vzg"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        6
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        className="css-1jy3vzg"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        7
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        className="css-1jy3vzg"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        8
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        className="css-1jy3vzg"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        9
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        className="css-1jy3vzg"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        10
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        className="css-1jy3vzg"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        11
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        className="css-1jy3vzg"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+      >
+        12
+      </button>
     </div>
   </div>
 </div>

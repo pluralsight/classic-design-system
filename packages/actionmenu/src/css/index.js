@@ -84,6 +84,11 @@ export default {
     transition: `background ${core.motion.speedXFast}`
   },
 
+  '.psds-actionmenu__item:focus': {
+    background: core.colors.bone,
+    outline: 'none'
+  },
+
   // __item--iconId
   '.psds-actionmenu__item--iconId': {
     paddingLeft: core.layout.spacingXSmall
