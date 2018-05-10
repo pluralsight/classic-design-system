@@ -63,9 +63,7 @@ class ItemComponent extends React.Component {
     if (this.props.isActive && this.props.shouldFocusOnMount) this.item.focus()
   }
   componentDidUpdate() {
-    if (this.props.isActive) {
-      this.item.focus()
-    }
+    if (this.props.isActive && !this.state.isNestedRendered) this.item.focus()
   }
   handleKeyDown(evt) {
     if (evt.key === 'ArrowRight' || evt.key === ' ' || evt.key === 'Enter') {
