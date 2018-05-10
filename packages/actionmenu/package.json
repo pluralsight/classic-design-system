@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-actionmenu",
-  "version": "2.4.8",
+  "version": "2.4.9",
   "description": "Design System component for actionmenu ui",
   "main": "index.js",
   "scripts": {

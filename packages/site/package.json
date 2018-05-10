@@ -1,7 +1,7 @@
 {
   "name": "@pluralsight/ps-design-system-site",
   "private": true,
-  "version": "9.38.0",
+  "version": "9.38.1",
   "description": "Reference site",
   "main": "index.js",
   "engines": {
@@ -15,7 +15,7 @@
   "author": "jaketrent",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^2.4.8",
+    "@pluralsight/ps-design-system-actionmenu": "^2.4.9",
     "@pluralsight/ps-design-system-avatar": "^1.5.1",
     "@pluralsight/ps-design-system-badge": "^2.0.20",
     "@pluralsight/ps-design-system-banner": "^1.1.2",

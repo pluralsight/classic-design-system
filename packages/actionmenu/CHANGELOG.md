@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.4.9"></a>
+## [2.4.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@2.4.8...@pluralsight/ps-design-system-actionmenu@2.4.9) (2018-05-10)
+
+
+### Bug Fixes
+
+* **actionmenu:** allow keyboard enter to activate menu items ([eda6a94](https://github.com/pluralsight/design-system/commit/eda6a94))
+* **actionmenu:** allow keyboard nav to nested menus ([a511dc6](https://github.com/pluralsight/design-system/commit/a511dc6))
+
+
+
+
 <a name="2.4.8"></a>
 ## [2.4.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@2.4.7...@pluralsight/ps-design-system-actionmenu@2.4.8) (2018-05-09)
 
