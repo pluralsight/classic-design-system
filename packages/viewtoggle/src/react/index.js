@@ -28,6 +28,7 @@ class Option extends React.Component {
       <OptionButton
         active={this.props.active}
         onClick={this.handleClick}
+        role="radio"
         aria-selected={this.props.active}
         innerRef={this.props._innerRef}
       >
@@ -97,7 +98,7 @@ class ViewToggle extends React.Component {
         }
       : {}
     return (
-      <ActivePillBg style={style}>
+      <ActivePillBg style={style} aria-hidden={true}>
         <span {...glamor.css(css['.psds-viewtoggle__option-bg__spacer'])}>
           {React.Children.toArray(this.props.children)[i].props.children}
         </span>
@@ -106,7 +107,7 @@ class ViewToggle extends React.Component {
   }
   render() {
     return (
-      <List>
+      <List role="radiogroup">
         {this.renderActivePill()}
         {this.renderChildren(this.props.children, this.props)}
       </List>
