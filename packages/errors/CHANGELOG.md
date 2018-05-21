@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@1.1.3...@pluralsight/ps-design-system-errors@1.2.0) (2018-05-21)
+
+
+### Features
+
+* add module entry for each component ([f3110da](https://github.com/pluralsight/design-system/commit/f3110da))
+
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@1.1.2...@pluralsight/ps-design-system-errors@1.1.3) (2018-05-09)
 

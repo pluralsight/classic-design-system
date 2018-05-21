@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.7.0"></a>
+# [5.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@5.6.8...@pluralsight/ps-design-system-link@5.7.0) (2018-05-21)
+
+
+### Features
+
+* add module entry for each component ([f3110da](https://github.com/pluralsight/design-system/commit/f3110da))
+
+
+
+
 <a name="5.6.8"></a>
 ## [5.6.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@5.6.7...@pluralsight/ps-design-system-link@5.6.8) (2018-05-09)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.5.1...@pluralsight/ps-design-system-avatar@1.6.0) (2018-05-21)
+
+
+### Features
+
+* add module entry for each component ([f3110da](https://github.com/pluralsight/design-system/commit/f3110da))
+
+
+
+
 <a name="1.5.1"></a>
 ## [1.5.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.5.0...@pluralsight/ps-design-system-avatar@1.5.1) (2018-05-09)
 

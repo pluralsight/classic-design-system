@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@2.0.20...@pluralsight/ps-design-system-badge@2.1.0) (2018-05-21)
+
+
+### Features
+
+* add module entry for each component ([f3110da](https://github.com/pluralsight/design-system/commit/f3110da))
+
+
+
+
 <a name="2.0.20"></a>
 ## [2.0.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@2.0.19...@pluralsight/ps-design-system-badge@2.0.20) (2018-05-09)
 
