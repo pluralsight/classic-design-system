@@ -3,6 +3,7 @@
   "version": "1.2.0",
   "description": "Design System component for theming",
   "main": "index.js",
+  "module": "index.js",
   "scripts": {
     "build": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build -- --watch",

@@ -3,6 +3,7 @@
   "version": "5.6.8",
   "description": "Design System component for link/anchor ui",
   "main": "index.js",
+  "module": "index.js",
   "typings": "./react.d.ts",
   "scripts": {
     "build": "run-s build:js build:css",

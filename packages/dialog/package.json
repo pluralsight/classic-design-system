@@ -3,6 +3,7 @@
   "version": "2.1.16",
   "description": "Design System component for dialog ui",
   "main": "index.js",
+  "module": "index.js",
   "scripts": {
     "build": "run-s build:js build:css",
     "build:css": "node build/css",

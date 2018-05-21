@@ -3,6 +3,7 @@
   "version": "10.6.7",
   "description": "Design system component for text-related ui",
   "main": "index.js",
+  "module": "index.js",
   "scripts": {
     "build": "run-s build:js build:css",
     "build:css": "build-css",

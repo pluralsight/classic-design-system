@@ -3,6 +3,7 @@
   "version": "2.0.20",
   "description": "Design System component for badge ui",
   "main": "index.js",
+  "module": "index.js",
   "style": "dist/css/index.css",
   "scripts": {
     "build": "run-s build:js build:css",
