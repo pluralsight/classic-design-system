@@ -132,6 +132,7 @@ ItemComponent.propTypes = {
   iconId: PropTypes.oneOf(Object.keys(Icon.ids)),
   isActive: PropTypes.bool,
   nested: PropTypes.element, // ActionMenu
+  onClick: PropTypes.func,
   _onMouseOver: PropTypes.func,
   _origin: PropTypes.oneOf(Object.keys(vars.origins))
 }
