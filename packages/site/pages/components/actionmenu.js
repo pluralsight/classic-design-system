@@ -61,6 +61,7 @@ export default withServerProps(_ => (
             ])
           ],
           'ActionMenu.Item': [
+            PropTypes.row(['href', 'string', null, null, 'anchor tag uri']),
             PropTypes.row([
               'iconId',
               <span>
