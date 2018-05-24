@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.6.0"></a>
+# [2.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@2.5.0...@pluralsight/ps-design-system-actionmenu@2.6.0) (2018-05-24)
+
+
+### Features
+
+* **actionmenu:** make the item a link with href ([1ceded3](https://github.com/pluralsight/design-system/commit/1ceded3))
+
+
+
+
 <a name="2.5.0"></a>
 # [2.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@2.4.9...@pluralsight/ps-design-system-actionmenu@2.5.0) (2018-05-21)
 

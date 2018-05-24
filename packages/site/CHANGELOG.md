@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.39.0"></a>
+# [9.39.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.38.2...@pluralsight/ps-design-system-site@9.39.0) (2018-05-24)
+
+
+### Features
+
+* **site:** add href for the actionmenu.item proptypes ([b9221fa](https://github.com/pluralsight/design-system/commit/b9221fa))
+
+
+
+
 <a name="9.38.2"></a>
 ## [9.38.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.38.1...@pluralsight/ps-design-system-site@9.38.2) (2018-05-21)
 
