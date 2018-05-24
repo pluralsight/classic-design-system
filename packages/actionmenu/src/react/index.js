@@ -9,13 +9,16 @@ import Arrow from './arrow'
 import css from '../css'
 import * as vars from '../vars'
 
-const Item = glamorous.button(
-  css['.psds-actionmenu__item'],
-  { ':focus': css['.psds-actionmenu__item:focus'] },
-  ({ iconId }) => (iconId ? css['.psds-actionmenu__item--iconId'] : null),
-  ({ nested }) => (nested ? css['.psds-actionmenu__item--nested'] : null),
-  ({ isActive }) => (isActive ? css['.psds-actionmenu__item--isActive'] : null)
-)
+const styles = {
+  item: ({ iconId, isActive, nested }) =>
+    glamor.css(
+      css['.psds-actionmenu__item'],
+      { ':focus': css['.psds-actionmenu__item:focus'] },
+      iconId ? css['.psds-actionmenu__item--iconId'] : null,
+      nested ? css['.psds-actionmenu__item--nested'] : null,
+      isActive ? css['.psds-actionmenu__item--isActive'] : null
+    )
+}
 
 const IconComponent = props => (
   <div {...glamor.css(css['.psds-actionmenu__item__icon'])}>
@@ -105,23 +108,26 @@ class ItemComponent extends React.Component {
   render() {
     return (
       <div {...glamor.css(css['.psds-actionmenu__item-container'])}>
-        <Item
-          aria-haspopup={!!this.props.nested}
-          css={this.props.css}
-          className={this.props.className}
-          iconId={this.props.iconId}
-          isActive={this.props.isActive}
-          innerRef={el => (this.item = el)}
-          nested={this.props.nested}
-          onClick={this.props.onClick}
-          onKeyDown={this.handleKeyDown}
-          onMouseOver={this.handleMouseOver}
-          role="menuitem"
-        >
-          {this.props.iconId && <IconComponent iconId={this.props.iconId} />}
-          {this.props.children}
-          {this.props.nested && <NestedArrow />}
-        </Item>
+        {React.createElement(
+          'button',
+          {
+            'aria-haspopup': !!this.props.nested,
+            ...(this.props.css ? { css: this.props.css } : null),
+            ...(this.props.className
+              ? { className: this.props.className }
+              : null),
+            ...(this.props.style ? { style: this.props.style } : null),
+            ref: el => (this.item = el),
+            onClick: this.props.onClick,
+            onKeyDown: this.handleKeyDown,
+            onMouseOver: this.handleMouseOver,
+            role: 'menuitem',
+            ...styles.item(this.props)
+          },
+          this.props.iconId && <IconComponent iconId={this.props.iconId} />,
+          this.props.children,
+          this.props.nested && <NestedArrow />
+        )}
         {this.renderNested()}
       </div>
     )

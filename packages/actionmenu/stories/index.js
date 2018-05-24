@@ -254,3 +254,19 @@ const onClickStory = storiesOf('onClick', module)
       <ActionMenu.Item onClick={action('-12')}>12</ActionMenu.Item>
     </ActionMenu>
   ))
+
+const styleStory = storiesOf('customized styles', module)
+  .addDecorator(themeDecorator(addons))
+  .add('item style', _ => (
+    <ActionMenu>
+      <ActionMenu.Item style={{ outline: '1px solid red' }}>
+        One item
+      </ActionMenu.Item>
+      <ActionMenu.Item style={{ outline: '1px solid blue' }}>
+        Two item
+      </ActionMenu.Item>
+      <ActionMenu.Item style={{ outline: '1px solid green' }}>
+        Three item
+      </ActionMenu.Item>
+    </ActionMenu>
+  ))
