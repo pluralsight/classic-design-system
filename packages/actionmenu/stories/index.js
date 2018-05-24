@@ -270,3 +270,13 @@ const styleStory = storiesOf('customized styles', module)
       </ActionMenu.Item>
     </ActionMenu>
   ))
+
+const linkStory = storiesOf('link', module)
+  .addDecorator(themeDecorator(addons))
+  .add('a w/ href', _ => (
+    <ActionMenu>
+      <ActionMenu.Item href="https://duckduckgo.com">
+        Links to web
+      </ActionMenu.Item>
+    </ActionMenu>
+  ))

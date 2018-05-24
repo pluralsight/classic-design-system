@@ -109,7 +109,7 @@ class ItemComponent extends React.Component {
     return (
       <div {...glamor.css(css['.psds-actionmenu__item-container'])}>
         {React.createElement(
-          'button',
+          this.props.href ? 'a' : 'button',
           {
             'aria-haspopup': !!this.props.nested,
             ...(this.props.css ? { css: this.props.css } : null),
@@ -117,6 +117,7 @@ class ItemComponent extends React.Component {
               ? { className: this.props.className }
               : null),
             ...(this.props.style ? { style: this.props.style } : null),
+            ...(this.props.href ? { href: this.props.href } : null),
             ref: el => (this.item = el),
             onClick: this.props.onClick,
             onKeyDown: this.handleKeyDown,
@@ -135,6 +136,7 @@ class ItemComponent extends React.Component {
 }
 ItemComponent.displayName = 'ActionMenu.Item'
 ItemComponent.propTypes = {
+  href: PropTypes.string,
   iconId: PropTypes.oneOf(Object.keys(Icon.ids)),
   isActive: PropTypes.bool,
   nested: PropTypes.element, // ActionMenu

@@ -80,7 +80,9 @@ export default {
     paddingBottom: '0',
     paddingLeft: core.layout.spacingMedium,
     paddingRight: core.layout.spacingMedium,
+    color: core.colors.gray05,
     background: 'none',
+    textDecoration: 'none',
     transition: `background ${core.motion.speedXFast}`
   },
 
