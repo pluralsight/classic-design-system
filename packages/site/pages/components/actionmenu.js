@@ -83,6 +83,13 @@ export default withServerProps(_ => (
               null,
               null,
               'nested ActionMenu'
+            ]),
+            PropTypes.row([
+              'onClick',
+              'Event => ()',
+              null,
+              null,
+              'triggered on item click'
             ])
           ]
         }}
