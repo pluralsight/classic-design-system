@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Input appearance - default 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div>
+      <div
+        data-css-n53zhn=""
+      />
+      <input
+        data-css-16xhzg2=""
+        placeholder="The placeholder "
+      />
+      <div
+        data-css-1de0a6a=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input appearance - subtle 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div>
+      <div
+        data-css-n53zhn=""
+      />
+      <input
+        data-css-4qmbx8=""
+        placeholder="The placeholder "
+      />
+      <div
+        data-css-1de0a6a=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input default 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div>
+      <div
+        data-css-n53zhn=""
+      />
+      <input
+        data-css-16xhzg2=""
+        placeholder={undefined}
+      />
+      <div
+        data-css-1de0a6a=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input label 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div>
+      <div
+        data-css-n53zhn=""
+      >
+        Some label
+      </div>
+      <input
+        data-css-16xhzg2=""
+        placeholder={undefined}
+      />
+      <div
+        data-css-1de0a6a=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input label and subLabel 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div>
+      <div
+        data-css-n53zhn=""
+      >
+        Some label
+      </div>
+      <input
+        data-css-16xhzg2=""
+        placeholder={undefined}
+      />
+      <div
+        data-css-1de0a6a=""
+      >
+        Some sublabel
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input placeholder 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div>
+      <div
+        data-css-n53zhn=""
+      />
+      <input
+        data-css-16xhzg2=""
+        placeholder="some placeholder"
+      />
+      <div
+        data-css-1de0a6a=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input subLabel 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div>
+      <div
+        data-css-n53zhn=""
+      />
+      <input
+        data-css-16xhzg2=""
+        placeholder={undefined}
+      />
+      <div
+        data-css-1de0a6a=""
+      >
+        Some sublabel
+      </div>
+    </div>
+  </div>
+</div>
+`;
