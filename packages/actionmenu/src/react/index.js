@@ -62,12 +62,13 @@ class ItemComponent extends React.Component {
     this.handleNestedClose = this.handleNestedClose.bind(this)
     this.handleMouseOver = this.handleMouseOver.bind(this)
     this.handleMouseOut = this.handleMouseOut.bind(this)
+    this.handleFocus = this.handleFocus.bind(this)
   }
   componentDidMount() {
     if (this.props.isActive && this.props.shouldFocusOnMount) this.item.focus()
   }
-  componentDidUpdate() {
-    if (this.props.isActive && !this.state.isNestedRendered) this.item.focus()
+  componentDidUpdate(prevProps) {
+    if (!prevProps.isActive && this.props.isActive && !this.state.isNestedRendered) this.item.focus()
   }
   handleKeyDown(evt) {
     if (
@@ -84,11 +85,15 @@ class ItemComponent extends React.Component {
     this.item.focus()
   }
   handleMouseOver() {
-    this.setState({ isNestedRendered: true })
+    if (this.props.nested)
+      this.setState({ isNestedRendered: true })
     this.props._onMouseOver(this.props._i)
   }
   handleMouseOut() {
-    this.setState({ isNestedRendered: false })
+    if (this.props.nested) this.setState({ isNestedRendered: false })
+  }
+  handleFocus() {
+    this.props._onItemFocus(this.props._i)
   }
   renderNested() {
     return this.state.isNestedRendered &&
@@ -122,6 +127,7 @@ class ItemComponent extends React.Component {
             onClick: this.props.onClick,
             onKeyDown: this.handleKeyDown,
             onMouseOver: this.handleMouseOver,
+            onFocus: this.handleFocus,
             role: 'menuitem',
             ...styles.item(this.props)
           },
@@ -142,6 +148,7 @@ ItemComponent.propTypes = {
   nested: PropTypes.element, // ActionMenu
   onClick: PropTypes.func,
   _onMouseOver: PropTypes.func,
+  _onItemFocus: PropTypes.func,
   _origin: PropTypes.oneOf(Object.keys(vars.origins))
 }
 
@@ -149,17 +156,17 @@ const Divider = glamorous.div(css['.psds-actionmenu__divider'])
 
 class DividerComponent extends React.Component {
   componentDidMount() {
-    if (this.props.isActive) this.props._onFocus()
+    if (this.props.isActive) this.props._onDividerFocus()
   }
   componentDidUpdate() {
-    if (this.props.isActive) this.props._onFocus()
+    if (this.props.isActive) this.props._onDividerFocus()
   }
   render() {
     return <Divider tabIndex="-1" />
   }
 }
 DividerComponent.propTypes = {
-  _onFocus: PropTypes.func
+  _onDividerFocus: PropTypes.func
 }
 
 const Overlay = props => (
@@ -203,43 +210,23 @@ class ActionMenuComponent extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      activeIndex: 0,
+      activeIndex: props.shouldFocusOnMount ? 0 : -1,
       activeDirection: 'down'
     }
     this.handleKeyDown = this.handleKeyDown.bind(this)
-    this.handleKeyUp = this.handleKeyUp.bind(this)
     this.handleDividerFocus = this.handleDividerFocus.bind(this)
-    this.handleItemMouseOver = this.handleItemMouseOver.bind(this)
+    this.focusItemAtIndex = this.focusItemAtIndex.bind(this)
   }
   handleKeyDown(evt) {
     if (evt.key === 'ArrowLeft' || evt.key === 'Escape') {
-      evt.stopPropagation()
-      evt.preventDefault()
-      if (typeof this.props.onClose === 'function') this.props.onClose()
-    } else if (
-      evt.key === 'ArrowDown' ||
-      (evt.key === 'Tab' && !this.isShifting)
-    ) {
-      evt.stopPropagation()
-      evt.preventDefault()
-      const newIndex = this.state.activeIndex + 1
-      const itemsCount = React.Children.count(this.props.children)
-      const activeIndex = newIndex > itemsCount - 1 ? itemsCount - 1 : newIndex
-      this.setState({ activeIndex, activeDirection: 'down' })
-    } else if (
-      evt.key === 'ArrowUp' ||
-      (evt.key === 'Tab' && this.isShifting)
-    ) {
-      evt.stopPropagation()
-      evt.preventDefault()
-      const newIndex = this.state.activeIndex - 1
-      const activeIndex = newIndex <= 0 ? 0 : newIndex
-      this.setState({ activeIndex, activeDirection: 'up' })
+      this.navigateOut(evt)
+    } else if (evt.key === 'ArrowDown') {
+      this.navigate('down', evt)
+    } else if (evt.key === 'ArrowUp') {
+      this.navigate('up', evt)
+    } else if (evt.key === 'Tab') {
+      this.navigateTab(evt)
     }
-    if (this.isShifting || evt.key === 'Shift') this.isShifting = true
-  }
-  handleKeyUp(evt) {
-    if (evt.key === 'Shift') this.isShifting = false
   }
   // TODO: figure out a better way to do this -- count children, determine placement of divider,
   handleDividerFocus() {
@@ -254,8 +241,33 @@ class ActionMenuComponent extends React.Component {
       this.setState({ activeIndex, activeDirection: 'up' })
     }
   }
-  handleItemMouseOver(i) {
+  focusItemAtIndex(i) {
     this.setState({ activeIndex: i })
+  }
+  navigateOut(evt) {
+    evt.stopPropagation()
+    evt.preventDefault()
+    if (typeof this.props.onClose === 'function') this.props.onClose()
+  }
+  navigate(direction, evt) {
+    evt.stopPropagation()
+    evt.preventDefault()
+    const newIndex = this.state.activeIndex + (direction === 'up' ? -1 : 1)
+    const lastIndex = React.Children.count(this.props.children) - 1
+    const activeIndex = newIndex > lastIndex ? lastIndex : newIndex
+    this.setState({ activeIndex, activeDirection: direction })
+  }
+  navigateTab(evt) {
+    const direction = evt.shiftKey ? 'up' : 'down'
+    const { activeIndex } = this.state
+    const lastIndex = React.Children.count(this.props.children) - 1
+    const atEdge = (direction === 'up' && activeIndex === 0) || (direction === 'down' && activeIndex === lastIndex)
+
+    if (atEdge) {
+      this.navigateOut(evt)
+    } else {
+      this.navigate(direction, evt)
+    }
   }
   render() {
     return (
@@ -263,7 +275,6 @@ class ActionMenuComponent extends React.Component {
         css={this.props.css}
         className={this.props.className}
         onKeyDown={this.handleKeyDown}
-        onKeyUp={this.handleKeyUp}
         origin={this.props.origin}
         innerRef={this.props.ref}
         role="menu"
@@ -273,8 +284,9 @@ class ActionMenuComponent extends React.Component {
             isActive: i === this.state.activeIndex,
             shouldFocusOnMount: this.props.shouldFocusOnMount,
             _i: i,
-            _onFocus: this.handleDividerFocus,
-            _onMouseOver: this.handleItemMouseOver,
+            _onItemFocus: this.focusItemAtIndex,
+            _onDividerFocus: this.handleDividerFocus,
+            _onMouseOver: this.focusItemAtIndex,
             _origin: this.props.origin
           })
         )}

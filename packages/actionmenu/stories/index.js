@@ -120,6 +120,16 @@ const nestedStory = storiesOf('nested', module).addDecorator(
   themeDecorator(addons)
 )
 
+storiesOf('shouldFocusOnMount', module)
+.addDecorator(themeDecorator(addons))
+.add('false', _ => (
+  <ActionMenu shouldFocusOnMount={false}>
+    <ActionMenu.Item>One item</ActionMenu.Item>
+    <ActionMenu.Item>Two item</ActionMenu.Item>
+    <ActionMenu.Item>Three item</ActionMenu.Item>
+  </ActionMenu>
+))
+
 const calcContainerStyle = origin => ({
   position: 'absolute',
   ...{
