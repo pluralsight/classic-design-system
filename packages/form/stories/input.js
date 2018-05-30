@@ -1,5 +1,6 @@
 import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
+import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
@@ -21,7 +22,39 @@ const inputStory = storiesOf('Input', module)
     <Input label="Some label" subLabel="Some sublabel" />
   ))
 Object.keys(Input.appearances).forEach(appearance =>
-  inputStory.add(`appearance - ${appearance}`, _ => (
-    <Input appearance={appearance} placeholder="The placeholder " />
+  Object.keys(Input.iconAligns).forEach(iconAlign =>
+    inputStory.add(
+      `appearance - ${appearance}; iconAlign - ${iconAlign}`,
+      _ => (
+        <Input
+          appearance={appearance}
+          iconAlign={iconAlign}
+          icon={<Icon id={Icon.ids.info} />}
+          placeholder="The placeholder "
+        />
+      )
+    )
+  )
+)
+Object.keys(Input.appearances).forEach(appearance =>
+  inputStory.add(`error - appearance - ${appearance}`, _ => (
+    <Input appearance={appearance} error label="Problem field" />
   ))
 )
+inputStory.add('full width', _ => (
+  <div style={{ outline: '1px solid blue', width: '500px' }}>
+    <Input label="First" style={{ display: 'block', width: '100%' }} />
+    <Input error label="Second" style={{ display: 'block', width: '100%' }} />
+    <Input
+      appearance={Input.appearances.subtle}
+      label="Third"
+      style={{ display: 'block', width: '100%' }}
+    />
+    <Input
+      appearance={Input.appearances.subtle}
+      error
+      label="Fourth"
+      style={{ display: 'block', width: '100%' }}
+    />
+  </div>
+))

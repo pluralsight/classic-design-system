@@ -29,6 +29,7 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
+    "@pluralsight/ps-design-system-icon": "^8.9.0",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.32",
     "@storybook/addon-storyshots": "3.2.4",
     "@storybook/react": "3.2.3",
