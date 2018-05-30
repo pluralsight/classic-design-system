@@ -58,3 +58,11 @@ inputStory.add('full width', _ => (
     />
   </div>
 ))
+inputStory.add('disabled', _ => (
+  <Input
+    label="I'm not usable"
+    subLabel="Neither am I"
+    disabled
+    placeholder="I'm untouchable"
+  />
+))

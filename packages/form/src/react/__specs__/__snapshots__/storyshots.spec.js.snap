@@ -37,6 +37,7 @@ exports[`Storyshots Input appearance - default; iconAlign - left 1`] = `
         >
           <input
             data-css-1bkxplq=""
+            disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
             placeholder="The placeholder "
@@ -106,6 +107,7 @@ exports[`Storyshots Input appearance - default; iconAlign - right 1`] = `
         >
           <input
             data-css-i8twf8=""
+            disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
             placeholder="The placeholder "
@@ -175,6 +177,7 @@ exports[`Storyshots Input appearance - subtle; iconAlign - left 1`] = `
         >
           <input
             data-css-1u1pc12=""
+            disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
             placeholder="The placeholder "
@@ -244,6 +247,7 @@ exports[`Storyshots Input appearance - subtle; iconAlign - right 1`] = `
         >
           <input
             data-css-11d30wl=""
+            disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
             placeholder="The placeholder "
@@ -313,6 +317,7 @@ exports[`Storyshots Input default 1`] = `
         >
           <input
             data-css-ly16us=""
+            disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
             placeholder={undefined}
@@ -322,6 +327,65 @@ exports[`Storyshots Input default 1`] = `
       <div
         data-css-1de0a6a=""
       />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input disabled 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+    >
+      <div
+        data-css-n53zhn=""
+      >
+        I'm not usable
+      </div>
+      <div
+        data-css-1cqgl9p=""
+      >
+        <div
+          data-css-xagpbq=""
+        >
+          <input
+            data-css-ly16us=""
+            disabled={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="I'm untouchable"
+          />
+          <div
+            data-css-edijrd=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-1de0a6a=""
+      >
+        Neither am I
+      </div>
     </div>
   </div>
 </div>
@@ -366,6 +430,7 @@ exports[`Storyshots Input error - appearance - default 1`] = `
         >
           <input
             data-css-ly16us=""
+            disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
             placeholder={undefined}
@@ -437,6 +502,7 @@ exports[`Storyshots Input error - appearance - subtle 1`] = `
         >
           <input
             data-css-1fhke6k=""
+            disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
             placeholder={undefined}
@@ -522,6 +588,7 @@ exports[`Storyshots Input full width 1`] = `
           >
             <input
               data-css-ly16us=""
+              disabled={false}
               onBlur={[Function]}
               onFocus={[Function]}
               placeholder={undefined}
@@ -554,6 +621,7 @@ exports[`Storyshots Input full width 1`] = `
           >
             <input
               data-css-ly16us=""
+              disabled={false}
               onBlur={[Function]}
               onFocus={[Function]}
               placeholder={undefined}
@@ -604,6 +672,7 @@ exports[`Storyshots Input full width 1`] = `
           >
             <input
               data-css-1fhke6k=""
+              disabled={false}
               onBlur={[Function]}
               onFocus={[Function]}
               placeholder={undefined}
@@ -636,6 +705,7 @@ exports[`Storyshots Input full width 1`] = `
           >
             <input
               data-css-1fhke6k=""
+              disabled={false}
               onBlur={[Function]}
               onFocus={[Function]}
               placeholder={undefined}
@@ -708,6 +778,7 @@ exports[`Storyshots Input label 1`] = `
         >
           <input
             data-css-ly16us=""
+            disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
             placeholder={undefined}
@@ -761,6 +832,7 @@ exports[`Storyshots Input label and subLabel 1`] = `
         >
           <input
             data-css-ly16us=""
+            disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
             placeholder={undefined}
@@ -814,6 +886,7 @@ exports[`Storyshots Input placeholder 1`] = `
         >
           <input
             data-css-ly16us=""
+            disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
             placeholder="some placeholder"
@@ -865,6 +938,7 @@ exports[`Storyshots Input subLabel 1`] = `
         >
           <input
             data-css-ly16us=""
+            disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
             placeholder={undefined}

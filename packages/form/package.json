@@ -26,6 +26,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.3.0",
     "@pluralsight/ps-design-system-text": "^10.7.0",
+    "polished": "^1.9.2",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {

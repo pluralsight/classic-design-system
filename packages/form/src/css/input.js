@@ -1,5 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
+import { transparentize } from 'polished'
 
 import { Input as vars } from '../vars'
 
@@ -97,6 +98,16 @@ export default {
     background: core.colors.red,
     zIndex: '-2',
     borderRadius: '2px'
+  },
+
+  // __disabled-overlay
+  '.psds-form-input__disabled-overlay': {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    background: transparentize(0.5, core.colors.black)
   },
 
   // __icon

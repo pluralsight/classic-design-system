@@ -7,6 +7,7 @@ import { Input as css } from '../css'
 import { Input as vars } from '../vars'
 
 const styles = {
+  disabledOverlay: _ => glamor.css(css['.psds-form-input__disabled-overlay']),
   error: _ => glamor.css(css['.psds-form-input__error']),
   errorContainer: _ => glamor.css(css['.psds-form-input__error-container']),
   field: ({ appearance, iconAlign }) =>
@@ -67,12 +68,14 @@ class Input extends React.Component {
         <div {...styles.errorContainer(props)}>
           <div {...styles.fieldContainer(props, state)}>
             <input
+              disabled={props.disabled}
               placeholder={props.placeholder}
               {...styles.field(props)}
               onFocus={this.handleFocus}
               onBlur={this.handleBlur}
             />
             {props.icon && <div {...styles.icon(props)}>{props.icon}</div>}
+            {props.disabled && <div {...styles.disabledOverlay(props)} />}
           </div>
           {props.error && (
             <div {...styles.error(props)}>
@@ -88,6 +91,7 @@ class Input extends React.Component {
 
 Input.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
+  disabled: PropTypes.bool,
   error: PropTypes.bool,
   icon: PropTypes.element,
   iconAlign: PropTypes.oneOf(Object.keys(vars.iconAligns)),
@@ -96,6 +100,7 @@ Input.propTypes = {
   subLabel: PropTypes.node
 }
 Input.defaultProps = {
+  disabled: false,
   error: false
 }
 
