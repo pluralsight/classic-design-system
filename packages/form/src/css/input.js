@@ -1,5 +1,9 @@
 import core from '@pluralsight/ps-design-system-core'
 import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
+import {
+  defaultName as themeDefaultName,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme/vars'
 import { transparentize } from 'polished'
 
 import { Input as vars } from '../vars'
@@ -26,6 +30,10 @@ export default {
   },
   '.psds-form-input__field:focus': {
     outline: 'none'
+  },
+  [`.psds-form-input__field.psds-theme--${themeNames.light}`]: {
+    background: core.colors.white,
+    border: `1px solid ${core.colors.gray02}`
   },
   [`.psds-form-input__field--appearance-${vars.appearances.subtle}`]: {
     color: core.colors.gray01,
@@ -66,6 +74,11 @@ export default {
     zIndex: '-1',
     borderRadius: '2px'
   },
+  [`.psds-form-input__field-container.psds-theme--${
+    themeNames.light
+  }:focus:before`]: {
+    background: core.colors.bone
+  },
   '.psds-form-input__field-container:focus:after': {
     content: ' ',
     position: 'absolute',
@@ -88,6 +101,11 @@ export default {
     zIndex: '-1',
     borderRadius: '2px'
   },
+  [`.psds-form-input__field-container--error.psds-theme--${
+    themeNames.light
+  }:before`]: {
+    background: core.colors.bone
+  },
   '.psds-form-input__field-container--error:after': {
     content: ' ',
     position: 'absolute',
@@ -97,7 +115,7 @@ export default {
     bottom: '-4px',
     background: core.colors.red,
     zIndex: '-2',
-    borderRadius: '2px'
+    borderRadius: '4px'
   },
 
   // __disabled-overlay
@@ -109,6 +127,9 @@ export default {
     height: '100%',
     background: transparentize(0.5, core.colors.black)
   },
+  [`.psds-form-input__disabled-overlay.psds-theme--${themeNames.light}`]: {
+    background: transparentize(0.5, core.colors.bone)
+  },
 
   // __icon
   '.psds-form-input__icon': {
@@ -117,6 +138,9 @@ export default {
     display: 'flex',
     alignItems: 'center',
     color: core.colors.gray03
+  },
+  [`.psds-form-input__icon.psds-theme--${themeNames.light}`]: {
+    color: core.colors.gray02
   },
   [`.psds-form-input__icon--icon-align-${vars.iconAligns.right}`]: {
     left: 'auto',
@@ -134,6 +158,9 @@ export default {
     fontWeight: core.type.fontWeightMedium,
     paddingBottom: core.layout.spacingXSmall
   },
+  [`.psds-form-input__label.psds-theme--${themeNames.light}`]: {
+    color: core.colors.gray05
+  },
 
   // __sub-label
   '.psds-form-input__sub-label': {
@@ -142,6 +169,9 @@ export default {
     lineHeight: '16px',
     fontWeight: core.type.fontWeightMedium,
     paddingTop: core.layout.spacingXSmall
+  },
+  [`.psds-form-input__sub-label.psds-theme--${themeNames.light}`]: {
+    color: core.colors.gray03
   },
 
   // __error

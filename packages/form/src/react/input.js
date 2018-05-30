@@ -2,46 +2,71 @@ import * as glamor from 'glamor'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
 import { Input as css } from '../css'
 import { Input as vars } from '../vars'
 
 const styles = {
-  disabledOverlay: _ => glamor.css(css['.psds-form-input__disabled-overlay']),
+  disabledOverlay: ({ themeName }) =>
+    glamor.css(
+      css['.psds-form-input__disabled-overlay'],
+      css[`.psds-form-input__disabled-overlay.psds-theme--${themeName}`]
+    ),
   error: _ => glamor.css(css['.psds-form-input__error']),
   errorContainer: _ => glamor.css(css['.psds-form-input__error-container']),
-  field: ({ appearance, iconAlign }) =>
+  field: ({ appearance, iconAlign, themeName }) =>
     glamor.css(
       css['.psds-form-input__field'],
       css[`.psds-form-input__field--appearance-${appearance}`],
       css[`.psds-form-input__field--icon-align-${iconAlign}`],
+      css[`.psds-form-input__field.psds-theme--${themeName}`],
       { ':focus': css['.psds-form-input__field:focus'] }
     ),
-  fieldContainer: ({ error }, { isFocused }) =>
+  fieldContainer: ({ error, themeName }, { isFocused }) =>
     glamor.css(
       css['.psds-form-input__field-container'],
       error
         ? {
-            ':before': css['.psds-form-input__field-container--error:before'],
+            ':before': {
+              ...css['.psds-form-input__field-container--error:before'],
+              ...css[
+                `.psds-form-input__field-container--error.psds-theme--${themeName}:before`
+              ]
+            },
             ':after': css['.psds-form-input__field-container--error:after']
           }
         : null,
       isFocused
         ? {
-            ':before': css['.psds-form-input__field-container:focus:before'],
+            ':before': {
+              ...css['.psds-form-input__field-container:focus:before'],
+              ...css[
+                `.psds-form-input__field-container.psds-theme--${themeName}:focus:before`
+              ]
+            },
             ':after': css['.psds-form-input__field-container:focus:after']
           }
         : null
     ),
-  icon: ({ appearance, iconAlign }) =>
+  icon: ({ appearance, iconAlign, themeName }) =>
     glamor.css(
       css['.psds-form-input__icon'],
       css[`.psds-form-input__icon--icon-align-${iconAlign}`],
-      css[`.psds-form-input__icon--appearance-${appearance}`]
+      css[`.psds-form-input__icon--appearance-${appearance}`],
+      css[`.psds-form-input__icon.psds-theme--${themeName}`]
     ),
   input: _ => glamor.css(css['.psds-form-input']),
-  label: _ => glamor.css(css['.psds-form-input__label']),
-  subLabel: _ => glamor.css(css['.psds-form-input__sub-label'])
+  label: ({ themeName }) =>
+    glamor.css(
+      css['.psds-form-input__label'],
+      css[`.psds-form-input__label.psds-theme--${themeName}`]
+    ),
+  subLabel: ({ themeName }) =>
+    glamor.css(
+      css['.psds-form-input__sub-label'],
+      css[`.psds-form-input__sub-label.psds-theme--${themeName}`]
+    )
 }
 
 class Input extends React.Component {
@@ -58,32 +83,38 @@ class Input extends React.Component {
     this.setState(_ => ({ isFocused: false }))
   }
   render() {
-    const { props, state } = this
+    const { context, props, state } = this
+    const allProps = {
+      ...props,
+      themeName: context.themeName || themeDefaultName
+    }
     return (
       <div
-        {...styles.input(props)}
-        {...(props.style ? { style: props.style } : null)}
+        {...styles.input(allProps)}
+        {...(allProps.style ? { style: allProps.style } : null)}
       >
-        <div {...styles.label(props)}>{props.label}</div>
-        <div {...styles.errorContainer(props)}>
-          <div {...styles.fieldContainer(props, state)}>
+        <div {...styles.label(allProps)}>{allProps.label}</div>
+        <div {...styles.errorContainer(allProps)}>
+          <div {...styles.fieldContainer(allProps, state)}>
             <input
-              disabled={props.disabled}
-              placeholder={props.placeholder}
-              {...styles.field(props)}
+              disabled={allProps.disabled}
+              placeholder={allProps.placeholder}
+              {...styles.field(allProps)}
               onFocus={this.handleFocus}
               onBlur={this.handleBlur}
             />
-            {props.icon && <div {...styles.icon(props)}>{props.icon}</div>}
-            {props.disabled && <div {...styles.disabledOverlay(props)} />}
+            {allProps.icon && (
+              <div {...styles.icon(allProps)}>{allProps.icon}</div>
+            )}
+            {allProps.disabled && <div {...styles.disabledOverlay(allProps)} />}
           </div>
-          {props.error && (
-            <div {...styles.error(props)}>
+          {allProps.error && (
+            <div {...styles.error(allProps)}>
               <Icon id={Icon.ids.warning} />
             </div>
           )}
         </div>
-        <div {...styles.subLabel(props)}>{props.subLabel}</div>
+        <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
       </div>
     )
   }
@@ -102,6 +133,9 @@ Input.propTypes = {
 Input.defaultProps = {
   disabled: false,
   error: false
+}
+Input.contextTypes = {
+  themeName: PropTypes.string
 }
 
 Input.appearances = vars.appearances
