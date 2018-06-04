@@ -58,9 +58,6 @@ export default {
     alignItems: 'center',
     minWidth: `calc(192px + ${iconVars.widths.medium} + ${
       core.layout.spacingXSmall
-    })`,
-    width: `calc(100% - ${iconVars.widths.medium} - ${
-      core.layout.spacingXSmall
     })`
   },
   '.psds-form-input__field-container:focus:before': {
@@ -176,12 +173,13 @@ export default {
 
   // __error
   '.psds-form-input__error': {
+    position: 'absolute',
+    right: `calc(-1 * (${iconVars.widths.medium} + ${
+      core.layout.spacingXSmall
+    }))`,
     display: 'flex',
     alignItems: 'center',
     color: core.colors.red,
     marginLeft: core.layout.spacingXSmall
-  },
-  '.psds-form-input__error-container': {
-    display: 'flex'
   }
 }

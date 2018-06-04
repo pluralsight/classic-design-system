@@ -14,12 +14,11 @@ const styles = {
       css[`.psds-form-input__disabled-overlay.psds-theme--${themeName}`]
     ),
   error: _ => glamor.css(css['.psds-form-input__error']),
-  errorContainer: _ => glamor.css(css['.psds-form-input__error-container']),
-  field: ({ appearance, iconAlign, themeName }) =>
+  field: ({ appearance, icon, iconAlign, themeName }) =>
     glamor.css(
       css['.psds-form-input__field'],
       css[`.psds-form-input__field--appearance-${appearance}`],
-      css[`.psds-form-input__field--icon-align-${iconAlign}`],
+      icon && css[`.psds-form-input__field--icon-align-${iconAlign}`],
       css[`.psds-form-input__field.psds-theme--${themeName}`],
       { ':focus': css['.psds-form-input__field:focus'] }
     ),
@@ -49,10 +48,10 @@ const styles = {
           }
         : null
     ),
-  icon: ({ appearance, iconAlign, themeName }) =>
+  icon: ({ appearance, icon, iconAlign, themeName }) =>
     glamor.css(
       css['.psds-form-input__icon'],
-      css[`.psds-form-input__icon--icon-align-${iconAlign}`],
+      icon && css[`.psds-form-input__icon--icon-align-${iconAlign}`],
       css[`.psds-form-input__icon--appearance-${appearance}`],
       css[`.psds-form-input__icon.psds-theme--${themeName}`]
     ),
@@ -94,20 +93,18 @@ class Input extends React.Component {
         {...(allProps.style ? { style: allProps.style } : null)}
       >
         <div {...styles.label(allProps)}>{allProps.label}</div>
-        <div {...styles.errorContainer(allProps)}>
-          <div {...styles.fieldContainer(allProps, state)}>
-            <input
-              disabled={allProps.disabled}
-              placeholder={allProps.placeholder}
-              {...styles.field(allProps)}
-              onFocus={this.handleFocus}
-              onBlur={this.handleBlur}
-            />
-            {allProps.icon && (
-              <div {...styles.icon(allProps)}>{allProps.icon}</div>
-            )}
-            {allProps.disabled && <div {...styles.disabledOverlay(allProps)} />}
-          </div>
+        <div {...styles.fieldContainer(allProps, state)}>
+          <input
+            disabled={allProps.disabled}
+            placeholder={allProps.placeholder}
+            {...styles.field(allProps)}
+            onFocus={this.handleFocus}
+            onBlur={this.handleBlur}
+          />
+          {allProps.icon && (
+            <div {...styles.icon(allProps)}>{allProps.icon}</div>
+          )}
+          {allProps.disabled && <div {...styles.disabledOverlay(allProps)} />}
           {allProps.error && (
             <div {...styles.error(allProps)}>
               <Icon id={Icon.ids.warning} />
@@ -132,7 +129,8 @@ Input.propTypes = {
 }
 Input.defaultProps = {
   disabled: false,
-  error: false
+  error: false,
+  iconAlign: vars.iconAligns.left
 }
 Input.contextTypes = {
   themeName: PropTypes.string

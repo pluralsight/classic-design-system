@@ -58,11 +58,24 @@ inputStory.add('full width', _ => (
     />
   </div>
 ))
-inputStory.add('disabled', _ => (
-  <Input
-    label="I'm not usable"
-    subLabel="Neither am I"
-    disabled
-    placeholder="I'm untouchable"
-  />
-))
+inputStory
+  .add('disabled', _ => (
+    <Input
+      label="I'm not usable"
+      subLabel="Neither am I"
+      disabled
+      placeholder="I'm untouchable"
+    />
+  ))
+  .add('right-aligned', _ => (
+    <div style={{ outline: '1px solid blue' }}>
+      <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+        <Input
+          placeholder="Search"
+          icon={<Icon id={Icon.ids.search} />}
+          appearance={Input.appearances.subtle}
+        />
+      </div>
+      <div style={{ border: '3px solid green', height: '50px' }} />
+    </div>
+  ))
