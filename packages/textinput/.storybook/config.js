@@ -3,8 +3,7 @@
 import { configure } from '@storybook/react'
 
 function loadStories() {
-  // TODO: make this dynamic; readdir
-  require('../stories/input')
+  require('../stories')
 }
 
 configure(loadStories, module)

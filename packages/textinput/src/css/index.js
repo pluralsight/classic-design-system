@@ -6,7 +6,7 @@ import {
 } from '@pluralsight/ps-design-system-theme/vars'
 import { transparentize } from 'polished'
 
-import { Input as vars } from '../vars'
+import * as vars from '../vars'
 
 export default {
   '.psds-form-input': {

@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
-import { Input as css } from '../css'
-import { Input as vars } from '../vars'
+import css from '../css'
+import * as vars from '../vars'
 
 const styles = {
   disabledOverlay: ({ themeName }) =>

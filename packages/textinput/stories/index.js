@@ -5,7 +5,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import { Input } from '../react'
+import Input from '../react'
 
 const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
