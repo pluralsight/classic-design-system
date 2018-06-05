@@ -24,66 +24,66 @@ const textInputHtmlPropsWhitelist = [
 ]
 
 const styles = {
-  error: _ => glamor.css(css['.psds-form-input__error']),
+  error: _ => glamor.css(css['.psds-text-input__error']),
   field: ({ appearance, icon, iconAlign, themeName }) =>
     glamor.css(
-      css['.psds-form-input__field'],
-      css[`.psds-form-input__field--appearance-${appearance}`],
-      icon && css[`.psds-form-input__field--icon-align-${iconAlign}`],
-      css[`.psds-form-input__field.psds-theme--${themeName}`],
-      { ':focus': css['.psds-form-input__field:focus'] }
+      css['.psds-text-input__field'],
+      css[`.psds-text-input__field--appearance-${appearance}`],
+      icon && css[`.psds-text-input__field--icon-align-${iconAlign}`],
+      css[`.psds-text-input__field.psds-theme--${themeName}`],
+      { ':focus': css['.psds-text-input__field:focus'] }
     ),
   fieldContainer: ({ error, themeName }, { isFocused }) =>
     glamor.css(
-      css['.psds-form-input__field-container'],
+      css['.psds-text-input__field-container'],
       error
         ? {
             ':before': {
-              ...css['.psds-form-input__field-container--error:before'],
+              ...css['.psds-text-input__field-container--error:before'],
               ...css[
-                `.psds-form-input__field-container--error.psds-theme--${themeName}:before`
+                `.psds-text-input__field-container--error.psds-theme--${themeName}:before`
               ]
             },
-            ':after': css['.psds-form-input__field-container--error:after']
+            ':after': css['.psds-text-input__field-container--error:after']
           }
         : null,
       isFocused
         ? {
             ':before': {
-              ...css['.psds-form-input__field-container:focus:before'],
+              ...css['.psds-text-input__field-container:focus:before'],
               ...css[
-                `.psds-form-input__field-container.psds-theme--${themeName}:focus:before`
+                `.psds-text-input__field-container.psds-theme--${themeName}:focus:before`
               ]
             },
-            ':after': css['.psds-form-input__field-container:focus:after']
+            ':after': css['.psds-text-input__field-container:focus:after']
           }
         : null
     ),
   icon: ({ appearance, icon, iconAlign, themeName }) =>
     glamor.css(
-      css['.psds-form-input__icon'],
-      icon && css[`.psds-form-input__icon--icon-align-${iconAlign}`],
-      css[`.psds-form-input__icon--appearance-${appearance}`],
-      css[`.psds-form-input__icon.psds-theme--${themeName}`]
+      css['.psds-text-input__icon'],
+      icon && css[`.psds-text-input__icon--icon-align-${iconAlign}`],
+      css[`.psds-text-input__icon--appearance-${appearance}`],
+      css[`.psds-text-input__icon.psds-theme--${themeName}`]
     ),
   input: ({ disabled }) =>
     glamor.css(
-      css['.psds-form-input'],
-      disabled && css['.psds-form-input--disabled']
+      css['.psds-text-input'],
+      disabled && css['.psds-text-input--disabled']
     ),
   label: ({ themeName }) =>
     glamor.css(
-      css['.psds-form-input__label'],
-      css[`.psds-form-input__label.psds-theme--${themeName}`]
+      css['.psds-text-input__label'],
+      css[`.psds-text-input__label.psds-theme--${themeName}`]
     ),
   subLabel: ({ themeName }) =>
     glamor.css(
-      css['.psds-form-input__sub-label'],
-      css[`.psds-form-input__sub-label.psds-theme--${themeName}`]
+      css['.psds-text-input__sub-label'],
+      css[`.psds-text-input__sub-label.psds-theme--${themeName}`]
     )
 }
 
-class Input extends React.Component {
+class TextInput extends React.Component {
   constructor(props) {
     super(props)
     this.state = { isFocused: false }
@@ -138,7 +138,7 @@ class Input extends React.Component {
   }
 }
 
-Input.propTypes = {
+TextInput.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
   disabled: PropTypes.bool,
   error: PropTypes.bool,
@@ -148,19 +148,19 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   subLabel: PropTypes.node
 }
-Input.defaultProps = {
+TextInput.defaultProps = {
   appearance: vars.appearances.default,
   disabled: false,
   error: false,
   iconAlign: vars.iconAligns.left
 }
-Input.contextTypes = {
+TextInput.contextTypes = {
   themeName: PropTypes.string
 }
 
-Input.appearances = vars.appearances
-Input.iconAligns = vars.iconAligns
+TextInput.appearances = vars.appearances
+TextInput.iconAligns = vars.iconAligns
 
 export const appearances = vars.appearances
 export const iconAligns = vars.iconAligns
-export default Input
+export default TextInput

@@ -9,15 +9,15 @@ import { transparentize } from 'polished'
 import * as vars from '../vars'
 
 export default {
-  '.psds-form-input': {
+  '.psds-text-input': {
     display: 'inline-block'
   },
-  '.psds-form-input--disabled': {
+  '.psds-text-input--disabled': {
     opacity: 0.5
   },
 
   // __field
-  '.psds-form-input__field': {
+  '.psds-text-input__field': {
     position: 'relative',
     height: '40px',
     minWidth: '192px',
@@ -31,31 +31,31 @@ export default {
     padding: `${core.layout.spacingXSmall} ${core.layout.spacingMedium}`,
     border: 'none'
   },
-  '.psds-form-input__field:focus': {
+  '.psds-text-input__field:focus': {
     outline: 'none'
   },
-  [`.psds-form-input__field.psds-theme--${themeNames.light}`]: {
+  [`.psds-text-input__field.psds-theme--${themeNames.light}`]: {
     background: core.colors.white,
     border: `1px solid ${core.colors.gray02}`
   },
-  [`.psds-form-input__field--appearance-${vars.appearances.subtle}`]: {
+  [`.psds-text-input__field--appearance-${vars.appearances.subtle}`]: {
     color: core.colors.gray01,
     background: core.colors.gray06,
     border: `1px solid ${core.colors.gray03}`
   },
-  [`.psds-form-input__field--icon-align-${vars.iconAligns.left}`]: {
+  [`.psds-text-input__field--icon-align-${vars.iconAligns.left}`]: {
     padding: `0 ${core.layout.spacingMedium} 0 calc(${
       core.layout.spacingXSmall
     } + ${iconVars.widths.medium} + ${core.layout.spacingXSmall})`
   },
-  [`.psds-form-input__field--icon-align-${vars.iconAligns.right}`]: {
+  [`.psds-text-input__field--icon-align-${vars.iconAligns.right}`]: {
     padding: `0 calc(${core.layout.spacingXSmall} + ${
       iconVars.widths.medium
     } + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`
   },
 
   // __field-container
-  '.psds-form-input__field-container': {
+  '.psds-text-input__field-container': {
     position: 'relative',
     display: 'flex',
     alignItems: 'center',
@@ -63,7 +63,7 @@ export default {
       core.layout.spacingXSmall
     })`
   },
-  '.psds-form-input__field-container:focus:before': {
+  '.psds-text-input__field-container:focus:before': {
     content: ' ',
     position: 'absolute',
     top: '-1px',
@@ -74,12 +74,12 @@ export default {
     zIndex: '-1',
     borderRadius: '2px'
   },
-  [`.psds-form-input__field-container.psds-theme--${
+  [`.psds-text-input__field-container.psds-theme--${
     themeNames.light
   }:focus:before`]: {
     background: core.colors.bone
   },
-  '.psds-form-input__field-container:focus:after': {
+  '.psds-text-input__field-container:focus:after': {
     content: ' ',
     position: 'absolute',
     top: '-4px',
@@ -90,7 +90,7 @@ export default {
     zIndex: '-2',
     borderRadius: '4px'
   },
-  '.psds-form-input__field-container--error:before': {
+  '.psds-text-input__field-container--error:before': {
     content: ' ',
     position: 'absolute',
     top: '-1px',
@@ -101,12 +101,12 @@ export default {
     zIndex: '-1',
     borderRadius: '2px'
   },
-  [`.psds-form-input__field-container--error.psds-theme--${
+  [`.psds-text-input__field-container--error.psds-theme--${
     themeNames.light
   }:before`]: {
     background: core.colors.bone
   },
-  '.psds-form-input__field-container--error:after': {
+  '.psds-text-input__field-container--error:after': {
     content: ' ',
     position: 'absolute',
     top: '-4px',
@@ -119,50 +119,50 @@ export default {
   },
 
   // __icon
-  '.psds-form-input__icon': {
+  '.psds-text-input__icon': {
     position: 'absolute',
     left: core.layout.spacingXSmall,
     display: 'flex',
     alignItems: 'center',
     color: core.colors.gray03
   },
-  [`.psds-form-input__icon.psds-theme--${themeNames.light}`]: {
+  [`.psds-text-input__icon.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray02
   },
-  [`.psds-form-input__icon--icon-align-${vars.iconAligns.right}`]: {
+  [`.psds-text-input__icon--icon-align-${vars.iconAligns.right}`]: {
     left: 'auto',
     right: core.layout.spacingXSmall
   },
-  [`.psds-form-input__icon--appearance-${vars.appearances.subtle}`]: {
+  [`.psds-text-input__icon--appearance-${vars.appearances.subtle}`]: {
     color: core.colors.gray02
   },
 
   // __label
-  '.psds-form-input__label': {
+  '.psds-text-input__label': {
     color: core.colors.bone,
     fontSize: core.type.fontSizeSmall,
     lineHeight: '16px',
     fontWeight: core.type.fontWeightMedium,
     paddingBottom: core.layout.spacingXSmall
   },
-  [`.psds-form-input__label.psds-theme--${themeNames.light}`]: {
+  [`.psds-text-input__label.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray05
   },
 
   // __sub-label
-  '.psds-form-input__sub-label': {
+  '.psds-text-input__sub-label': {
     color: core.colors.gray02,
     fontSize: core.type.fontSizeXSmall,
     lineHeight: '16px',
     fontWeight: core.type.fontWeightMedium,
     paddingTop: core.layout.spacingXSmall
   },
-  [`.psds-form-input__sub-label.psds-theme--${themeNames.light}`]: {
+  [`.psds-text-input__sub-label.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03
   },
 
   // __error
-  '.psds-form-input__error': {
+  '.psds-text-input__error': {
     position: 'absolute',
     right: `calc(-1 * (${iconVars.widths.medium} + ${
       core.layout.spacingXSmall
