@@ -305,32 +305,56 @@ exports[`Storyshots Input disabled 1`] = `
       }
     }
   >
-    <div
-      data-css-w0yocm=""
-    >
+    <div>
       <div
-        data-css-n53zhn=""
+        data-css-w0yocm=""
       >
-        I'm not usable
-      </div>
-      <div
-        data-css-1ghdxx6=""
-      >
-        <input
-          data-css-ly16us=""
-          disabled={true}
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="I'm untouchable"
-        />
         <div
-          data-css-edijrd=""
-        />
+          data-css-n53zhn=""
+        >
+          Normal
+        </div>
+        <div
+          data-css-1ghdxx6=""
+        >
+          <input
+            data-css-ly16us=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="I'm normal, see"
+          />
+        </div>
+        <div
+          data-css-1de0a6a=""
+        >
+          Still normal
+        </div>
       </div>
       <div
-        data-css-1de0a6a=""
+        data-css-1y0hkm3=""
       >
-        Neither am I
+        <div
+          data-css-n53zhn=""
+        >
+          I'm not usable
+        </div>
+        <div
+          data-css-1ghdxx6=""
+        >
+          <input
+            data-css-ly16us=""
+            disabled={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="I'm untouchable"
+          />
+        </div>
+        <div
+          data-css-1de0a6a=""
+        >
+          Neither am I
+        </div>
       </div>
     </div>
   </div>

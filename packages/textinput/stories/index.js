@@ -60,12 +60,19 @@ inputStory.add('full width', _ => (
 ))
 inputStory
   .add('disabled', _ => (
-    <Input
-      label="I'm not usable"
-      subLabel="Neither am I"
-      disabled
-      placeholder="I'm untouchable"
-    />
+    <div>
+      <Input
+        label="Normal"
+        subLabel="Still normal"
+        placeholder="I'm normal, see"
+      />
+      <Input
+        label="I'm not usable"
+        subLabel="Neither am I"
+        disabled
+        placeholder="I'm untouchable"
+      />
+    </div>
   ))
   .add('right-aligned', _ => (
     <div style={{ border: '1px solid blue' }}>

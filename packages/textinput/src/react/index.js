@@ -8,11 +8,6 @@ import css from '../css'
 import * as vars from '../vars'
 
 const styles = {
-  disabledOverlay: ({ themeName }) =>
-    glamor.css(
-      css['.psds-form-input__disabled-overlay'],
-      css[`.psds-form-input__disabled-overlay.psds-theme--${themeName}`]
-    ),
   error: _ => glamor.css(css['.psds-form-input__error']),
   field: ({ appearance, icon, iconAlign, themeName }) =>
     glamor.css(
@@ -55,7 +50,11 @@ const styles = {
       css[`.psds-form-input__icon--appearance-${appearance}`],
       css[`.psds-form-input__icon.psds-theme--${themeName}`]
     ),
-  input: _ => glamor.css(css['.psds-form-input']),
+  input: ({ disabled }) =>
+    glamor.css(
+      css['.psds-form-input'],
+      disabled && css['.psds-form-input--disabled']
+    ),
   label: ({ themeName }) =>
     glamor.css(
       css['.psds-form-input__label'],
@@ -106,7 +105,6 @@ class Input extends React.Component {
           {allProps.icon && (
             <div {...styles.icon(allProps)}>{allProps.icon}</div>
           )}
-          {allProps.disabled && <div {...styles.disabledOverlay(allProps)} />}
           {allProps.error && (
             <div {...styles.error(allProps)}>
               <Icon id={Icon.ids.warning} />

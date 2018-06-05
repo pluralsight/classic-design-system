@@ -12,6 +12,9 @@ export default {
   '.psds-form-input': {
     display: 'inline-block'
   },
+  '.psds-form-input--disabled': {
+    opacity: 0.5
+  },
 
   // __field
   '.psds-form-input__field': {
@@ -113,19 +116,6 @@ export default {
     background: core.colors.red,
     zIndex: '-2',
     borderRadius: '4px'
-  },
-
-  // __disabled-overlay
-  '.psds-form-input__disabled-overlay': {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    background: transparentize(0.5, core.colors.black)
-  },
-  [`.psds-form-input__disabled-overlay.psds-theme--${themeNames.light}`]: {
-    background: transparentize(0.5, core.colors.bone)
   },
 
   // __icon
