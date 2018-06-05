@@ -33,6 +33,8 @@ const formatSrc = code => code.trim()
 const OutputDecorationGlobalStyles = _ => (
   <style global jsx>{`
     .output {
+      position: relative;
+      z-index: 0;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
