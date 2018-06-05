@@ -119,6 +119,7 @@ class Input extends React.Component {
             placeholder={allProps.placeholder}
             onBlur={this.handleBlur}
             onFocus={this.handleFocus}
+            ref={allProps.innerRef}
           />
           {allProps.icon && (
             <div {...styles.icon(allProps)}>{allProps.icon}</div>
@@ -148,6 +149,7 @@ Input.propTypes = {
   subLabel: PropTypes.node
 }
 Input.defaultProps = {
+  appearance: vars.appearances.default,
   disabled: false,
   error: false,
   iconAlign: vars.iconAligns.left
