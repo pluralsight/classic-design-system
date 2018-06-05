@@ -1,3 +1,4 @@
+import { action } from '@storybook/addon-actions'
 import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
@@ -85,4 +86,14 @@ inputStory
       </div>
       <div style={{ border: '3px solid green', height: '50px' }} />
     </div>
+  ))
+  .add('whitelist - type password', _ => (
+    <Input placeholder="Password" type="password" />
+  ))
+  .add('whitelist - type date', _ => <Input placeholder="Date" type="date" />)
+  .add('whitelist - name', _ => (
+    <Input placeholder="I have a form name" name="myFieldNameOfPower" />
+  ))
+  .add('onChange', _ => (
+    <Input placeholder="Change me" onChange={action('I changed')} />
   ))

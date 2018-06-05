@@ -766,6 +766,49 @@ exports[`Storyshots Input label and subLabel 1`] = `
 </div>
 `;
 
+exports[`Storyshots Input onChange 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+    >
+      <div
+        data-css-1ghdxx6=""
+      >
+        <input
+          data-css-ly16us=""
+          disabled={false}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Change me"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Input placeholder 1`] = `
 <div
   style={
@@ -934,6 +977,135 @@ exports[`Storyshots Input subLabel 1`] = `
         data-css-1de0a6a=""
       >
         Some sublabel
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input whitelist - name 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+    >
+      <div
+        data-css-1ghdxx6=""
+      >
+        <input
+          data-css-ly16us=""
+          disabled={false}
+          name="myFieldNameOfPower"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="I have a form name"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input whitelist - type date 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+    >
+      <div
+        data-css-1ghdxx6=""
+      >
+        <input
+          data-css-ly16us=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Date"
+          type="date"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input whitelist - type password 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+    >
+      <div
+        data-css-1ghdxx6=""
+      >
+        <input
+          data-css-ly16us=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Password"
+          type="password"
+        />
       </div>
     </div>
   </div>

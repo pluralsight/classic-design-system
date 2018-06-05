@@ -3,9 +3,25 @@ import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
 import css from '../css'
 import * as vars from '../vars'
+
+const textInputHtmlPropsWhitelist = [
+  'type',
+  'name',
+  'autocomplete',
+  'autofocus',
+  'role',
+  'tabIndex',
+  'value',
+  'defaultValue',
+  /^on/,
+  /^aria-/,
+  /^data-/,
+  /^form/
+]
 
 const styles = {
   error: _ => glamor.css(css['.psds-form-input__error']),
@@ -90,17 +106,19 @@ class Input extends React.Component {
       <div
         {...styles.input(allProps)}
         {...(allProps.style ? { style: allProps.style } : null)}
+        {...(allProps.className ? { className: allProps.className } : null)}
       >
         {allProps.label && (
           <div {...styles.label(allProps)}>{allProps.label}</div>
         )}
         <div {...styles.fieldContainer(allProps, state)}>
           <input
+            {...propsUtil.whitelistProps(allProps, textInputHtmlPropsWhitelist)}
+            {...styles.field(allProps)}
             disabled={allProps.disabled}
             placeholder={allProps.placeholder}
-            {...styles.field(allProps)}
-            onFocus={this.handleFocus}
             onBlur={this.handleBlur}
+            onFocus={this.handleFocus}
           />
           {allProps.icon && (
             <div {...styles.icon(allProps)}>{allProps.icon}</div>
