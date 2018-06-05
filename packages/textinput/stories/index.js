@@ -42,7 +42,7 @@ Object.keys(Input.appearances).forEach(appearance =>
   ))
 )
 inputStory.add('full width', _ => (
-  <div style={{ outline: '1px solid blue', width: '500px' }}>
+  <div style={{ border: '1px solid blue', width: '500px' }}>
     <Input label="First" style={{ display: 'block', width: '100%' }} />
     <Input error label="Second" style={{ display: 'block', width: '100%' }} />
     <Input
@@ -68,7 +68,7 @@ inputStory
     />
   ))
   .add('right-aligned', _ => (
-    <div style={{ outline: '1px solid blue' }}>
+    <div style={{ border: '1px solid blue' }}>
       <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <Input
           placeholder="Search"

@@ -27,9 +27,6 @@ exports[`Storyshots Input appearance - default; iconAlign - left 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-n53zhn=""
-      />
-      <div
         data-css-1ghdxx6=""
       >
         <input
@@ -58,9 +55,6 @@ exports[`Storyshots Input appearance - default; iconAlign - left 1`] = `
           </div>
         </div>
       </div>
-      <div
-        data-css-1de0a6a=""
-      />
     </div>
   </div>
 </div>
@@ -93,9 +87,6 @@ exports[`Storyshots Input appearance - default; iconAlign - right 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-n53zhn=""
-      />
-      <div
         data-css-1ghdxx6=""
       >
         <input
@@ -124,9 +115,6 @@ exports[`Storyshots Input appearance - default; iconAlign - right 1`] = `
           </div>
         </div>
       </div>
-      <div
-        data-css-1de0a6a=""
-      />
     </div>
   </div>
 </div>
@@ -159,9 +147,6 @@ exports[`Storyshots Input appearance - subtle; iconAlign - left 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-n53zhn=""
-      />
-      <div
         data-css-1ghdxx6=""
       >
         <input
@@ -190,9 +175,6 @@ exports[`Storyshots Input appearance - subtle; iconAlign - left 1`] = `
           </div>
         </div>
       </div>
-      <div
-        data-css-1de0a6a=""
-      />
     </div>
   </div>
 </div>
@@ -225,9 +207,6 @@ exports[`Storyshots Input appearance - subtle; iconAlign - right 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-n53zhn=""
-      />
-      <div
         data-css-1ghdxx6=""
       >
         <input
@@ -256,9 +235,6 @@ exports[`Storyshots Input appearance - subtle; iconAlign - right 1`] = `
           </div>
         </div>
       </div>
-      <div
-        data-css-1de0a6a=""
-      />
     </div>
   </div>
 </div>
@@ -291,9 +267,6 @@ exports[`Storyshots Input default 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-n53zhn=""
-      />
-      <div
         data-css-1ghdxx6=""
       >
         <input
@@ -304,9 +277,6 @@ exports[`Storyshots Input default 1`] = `
           placeholder={undefined}
         />
       </div>
-      <div
-        data-css-1de0a6a=""
-      />
     </div>
   </div>
 </div>
@@ -427,9 +397,6 @@ exports[`Storyshots Input error - appearance - default 1`] = `
           </div>
         </div>
       </div>
-      <div
-        data-css-1de0a6a=""
-      />
     </div>
   </div>
 </div>
@@ -495,9 +462,6 @@ exports[`Storyshots Input error - appearance - subtle 1`] = `
           </div>
         </div>
       </div>
-      <div
-        data-css-1de0a6a=""
-      />
     </div>
   </div>
 </div>
@@ -529,7 +493,7 @@ exports[`Storyshots Input full width 1`] = `
     <div
       style={
         Object {
-          "outline": "1px solid blue",
+          "border": "1px solid blue",
           "width": "500px",
         }
       }
@@ -559,9 +523,6 @@ exports[`Storyshots Input full width 1`] = `
             placeholder={undefined}
           />
         </div>
-        <div
-          data-css-1de0a6a=""
-        />
       </div>
       <div
         data-css-w0yocm=""
@@ -606,9 +567,6 @@ exports[`Storyshots Input full width 1`] = `
             </div>
           </div>
         </div>
-        <div
-          data-css-1de0a6a=""
-        />
       </div>
       <div
         data-css-w0yocm=""
@@ -635,9 +593,6 @@ exports[`Storyshots Input full width 1`] = `
             placeholder={undefined}
           />
         </div>
-        <div
-          data-css-1de0a6a=""
-        />
       </div>
       <div
         data-css-w0yocm=""
@@ -682,9 +637,6 @@ exports[`Storyshots Input full width 1`] = `
             </div>
           </div>
         </div>
-        <div
-          data-css-1de0a6a=""
-        />
       </div>
     </div>
   </div>
@@ -733,9 +685,6 @@ exports[`Storyshots Input label 1`] = `
           placeholder={undefined}
         />
       </div>
-      <div
-        data-css-1de0a6a=""
-      />
     </div>
   </div>
 </div>
@@ -820,9 +769,6 @@ exports[`Storyshots Input placeholder 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-n53zhn=""
-      />
-      <div
         data-css-1ghdxx6=""
       >
         <input
@@ -833,9 +779,6 @@ exports[`Storyshots Input placeholder 1`] = `
           placeholder="some placeholder"
         />
       </div>
-      <div
-        data-css-1de0a6a=""
-      />
     </div>
   </div>
 </div>
@@ -867,7 +810,7 @@ exports[`Storyshots Input right-aligned 1`] = `
     <div
       style={
         Object {
-          "outline": "1px solid blue",
+          "border": "1px solid blue",
         }
       }
     >
@@ -882,9 +825,6 @@ exports[`Storyshots Input right-aligned 1`] = `
         <div
           data-css-w0yocm=""
         >
-          <div
-            data-css-n53zhn=""
-          />
           <div
             data-css-1ghdxx6=""
           >
@@ -914,9 +854,6 @@ exports[`Storyshots Input right-aligned 1`] = `
               </div>
             </div>
           </div>
-          <div
-            data-css-1de0a6a=""
-          />
         </div>
       </div>
       <div
@@ -958,9 +895,6 @@ exports[`Storyshots Input subLabel 1`] = `
     <div
       data-css-w0yocm=""
     >
-      <div
-        data-css-n53zhn=""
-      />
       <div
         data-css-1ghdxx6=""
       >
