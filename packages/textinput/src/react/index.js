@@ -103,7 +103,7 @@ class TextInput extends React.Component {
       themeName: context.themeName || themeDefaultName
     }
     return (
-      <div
+      <label
         {...styles.input(allProps)}
         {...(allProps.style ? { style: allProps.style } : null)}
         {...(allProps.className ? { className: allProps.className } : null)}
@@ -133,7 +133,7 @@ class TextInput extends React.Component {
         {allProps.subLabel && (
           <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
         )}
-      </div>
+      </label>
     )
   }
 }
