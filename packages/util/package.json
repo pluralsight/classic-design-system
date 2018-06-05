@@ -4,10 +4,25 @@
   "description": "Runtime dependencies for utilitarian tasks.  Analogous to a lodash.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: tests run in as a single design system suite\" && exit 1"
+    "build": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build:watch": "npm run build -- --watch",
+    "test": "jest",
+    "test:watch": "npm run test -- --watch"
   },
   "keywords": [],
   "author": "jaketrent",
   "license": "Apache-2.0",
-  "repository": "pluralsight/design-system"
+  "repository": "pluralsight/design-system",
+  "peerDependencies": {
+    "react": ">=0.15.0 < 17.0.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "jest": "^20.0.4"
+  }
 }

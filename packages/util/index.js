@@ -1,7 +1,5 @@
-import * as string from './string'
-import * as propDefs from './prop-defs'
+const propDefs = require('./prop-defs')
+const props = require('./props')
+const string = require('./string')
 
-export default {
-  string,
-  propDefs
-}
+module.exports = { propDefs, props, string }
