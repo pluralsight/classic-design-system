@@ -2,6 +2,7 @@ import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
 import TextInput from '@pluralsight/ps-design-system-textinput/react'
+import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
   Chrome,
@@ -131,20 +132,6 @@ export default withServerProps(_ => (
         ]}
       />
 
-      <SectionHeading>Appearance</SectionHeading>
-      <P>
-        When using the <Text.Code>dark</Text.Code> theme, a{' '}
-        <Text.Code>subtle</Text.Code> appearance is available.{' '}
-      </P>
-      <Example.React
-        orient="vertical"
-        themeToggle
-        includes={{ TextInput }}
-        codes={[
-          `<TextInput appearance={TextInput.appearances.subtle} placeholder="Search" />`
-        ]}
-      />
-
       <SectionHeading>Icon</SectionHeading>
       <P>
         Text Inputs may include an icon to the left or right of the field. Read
@@ -164,6 +151,25 @@ export default withServerProps(_ => (
   iconAlign={TextInput.iconAligns.right}
   placeholder="Search"
 />`
+        ]}
+      />
+
+      <SectionHeading>Appearance</SectionHeading>
+      <P>
+        When using the <Text.Code>dark</Text.Code> theme, a{' '}
+        <Text.Code>subtle</Text.Code> appearance is available.{' '}
+      </P>
+      <Example.React
+        orient="vertical"
+        themeToggle
+        includes={{ TextInput, Theme }}
+        codes={[
+          `<Theme name={Theme.names.dark}>
+  <TextInput
+    appearance={TextInput.appearances.subtle}
+    icon={<Icon id={Icon.ids.search} />}
+    placeholder="Search" />
+</Theme>`
         ]}
       />
 
