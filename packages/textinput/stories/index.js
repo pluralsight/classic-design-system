@@ -6,68 +6,62 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Input from '../react'
+import TextInput from '../react'
 
 const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
 )
 
-const inputStory = storiesOf('Input', module)
+const labelStory = storiesOf('labels', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
-  .add('default', _ => <Input />)
-  .add('placeholder', _ => <Input placeholder="some placeholder" />)
-  .add('label', _ => <Input label="Some label" />)
-  .add('subLabel', _ => <Input subLabel="Some sublabel" />)
+  .add('none', _ => <TextInput />)
+  .add('placeholder', _ => <TextInput placeholder="some placeholder" />)
+  .add('label', _ => <TextInput label="Some label" />)
+  .add('subLabel', _ => <TextInput subLabel="Some sublabel" />)
   .add('label and subLabel', _ => (
-    <Input label="Some label" subLabel="Some sublabel" />
+    <TextInput label="Some label" subLabel="Some sublabel" />
   ))
-Object.keys(Input.appearances).forEach(appearance =>
-  Object.keys(Input.iconAligns).forEach(iconAlign =>
-    inputStory.add(
-      `appearance - ${appearance}; iconAlign - ${iconAlign}`,
-      _ => (
-        <Input
-          appearance={appearance}
-          iconAlign={iconAlign}
-          icon={<Icon id={Icon.ids.info} />}
-          placeholder="The placeholder "
-        />
-      )
-    )
+  .add('all', _ => (
+    <TextInput
+      label="Some label"
+      subLabel="Some sublabel"
+      placeholder="Some placeholder"
+    />
+  ))
+
+const appearanceStory = storiesOf('appearance', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
+Object.keys(TextInput.appearances).forEach(appearance =>
+  Object.keys(TextInput.iconAligns).forEach(iconAlign =>
+    appearanceStory.add(`${appearance} w/ iconAlign ${iconAlign}`, _ => (
+      <TextInput
+        appearance={appearance}
+        iconAlign={iconAlign}
+        icon={<Icon id={Icon.ids.info} />}
+        placeholder="The placeholder "
+      />
+    ))
   )
 )
-Object.keys(Input.appearances).forEach(appearance =>
-  inputStory.add(`error - appearance - ${appearance}`, _ => (
-    <Input appearance={appearance} error label="Problem field" />
+Object.keys(TextInput.appearances).forEach(appearance =>
+  appearanceStory.add(`${appearance} w/ error`, _ => (
+    <TextInput appearance={appearance} error label="Problem field" />
   ))
 )
-inputStory.add('full width', _ => (
-  <div style={{ border: '1px solid blue', width: '500px' }}>
-    <Input label="First" style={{ display: 'block', width: '100%' }} />
-    <Input error label="Second" style={{ display: 'block', width: '100%' }} />
-    <Input
-      appearance={Input.appearances.subtle}
-      label="Third"
-      style={{ display: 'block', width: '100%' }}
-    />
-    <Input
-      appearance={Input.appearances.subtle}
-      error
-      label="Fourth"
-      style={{ display: 'block', width: '100%' }}
-    />
-  </div>
-))
-inputStory
-  .add('disabled', _ => (
+
+const disabledStory = storiesOf('disabled', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
+  .add('compare', _ => (
     <div>
-      <Input
+      <TextInput
         label="Normal"
         subLabel="Still normal"
         placeholder="I'm normal, see"
       />
-      <Input
+      <TextInput
         label="I'm not usable"
         subLabel="Neither am I"
         disabled
@@ -75,25 +69,54 @@ inputStory
       />
     </div>
   ))
+
+const whitelistStory = storiesOf('whitelist', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
+  .add('type=password', _ => (
+    <TextInput placeholder="Password" type="password" />
+  ))
+  .add('type=date', _ => <TextInput placeholder="Date" type="date" />)
+  .add('name', _ => (
+    <TextInput placeholder="I have a form name" name="myFieldNameOfPower" />
+  ))
+  .add('onChange', _ => (
+    <TextInput placeholder="Change me" onChange={action('I changed')} />
+  ))
+
+const layoutsStory = storiesOf('layouts', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
+  .add('full width', _ => (
+    <div style={{ border: '1px solid blue', width: '500px' }}>
+      <TextInput label="First" style={{ display: 'block', width: '100%' }} />
+      <TextInput
+        error
+        label="Second"
+        style={{ display: 'block', width: '100%' }}
+      />
+      <TextInput
+        appearance={TextInput.appearances.subtle}
+        label="Third"
+        style={{ display: 'block', width: '100%' }}
+      />
+      <TextInput
+        appearance={TextInput.appearances.subtle}
+        error
+        label="Fourth"
+        style={{ display: 'block', width: '100%' }}
+      />
+    </div>
+  ))
   .add('right-aligned', _ => (
     <div style={{ border: '1px solid blue' }}>
       <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-        <Input
+        <TextInput
           placeholder="Search"
           icon={<Icon id={Icon.ids.search} />}
-          appearance={Input.appearances.subtle}
+          appearance={TextInput.appearances.subtle}
         />
       </div>
       <div style={{ border: '3px solid green', height: '50px' }} />
     </div>
-  ))
-  .add('whitelist - type password', _ => (
-    <Input placeholder="Password" type="password" />
-  ))
-  .add('whitelist - type date', _ => <Input placeholder="Date" type="date" />)
-  .add('whitelist - name', _ => (
-    <Input placeholder="I have a form name" name="myFieldNameOfPower" />
-  ))
-  .add('onChange', _ => (
-    <Input placeholder="Change me" onChange={action('I changed')} />
   ))
