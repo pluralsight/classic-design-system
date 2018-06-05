@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@1.1.0...@pluralsight/ps-design-system-table@1.1.1) (2018-06-05)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@1.0.4...@pluralsight/ps-design-system-table@1.1.0) (2018-05-21)
 

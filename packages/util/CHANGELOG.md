@@ -1,7 +1,18 @@
 # Change Log
 
 All notable changes to this project will be documented in this file.
-See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@1.1.40...@pluralsight/ps-design-system-util@1.2.0) (2018-06-05)
+
+
+### Features
+
+* **util:** add props whitelisting util ([2a52d81](https://github.com/pluralsight/design-system/commit/2a52d81))
+
+
+
 
 <a name="1.1.40"></a>
 ## [1.1.40](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@1.1.9...@pluralsight/ps-design-system-util@1.1.40) (2017-08-08)

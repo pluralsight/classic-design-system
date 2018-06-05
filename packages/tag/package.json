@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-tag",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Design System component for tag ui",
   "main": "index.js",
   "module": "index.js",
@@ -27,12 +27,12 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.3.0",
-    "@pluralsight/ps-design-system-icon": "^8.9.0",
+    "@pluralsight/ps-design-system-icon": "^8.9.1",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.32",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.33",
     "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/react": "3.2.14",

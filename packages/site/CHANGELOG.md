@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.40.0"></a>
+# [9.40.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.39.0...@pluralsight/ps-design-system-site@9.40.0) (2018-06-05)
+
+
+### Bug Fixes
+
+* **site:** create new stacking context for text input example ([f37ea01](https://github.com/pluralsight/design-system/commit/f37ea01))
+
+
+### Features
+
+* **site:** add textinput initial doc ([e960d98](https://github.com/pluralsight/design-system/commit/e960d98))
+
+
+
+
 <a name="9.39.0"></a>
 # [9.39.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.38.2...@pluralsight/ps-design-system-site@9.39.0) (2018-05-24)
 
