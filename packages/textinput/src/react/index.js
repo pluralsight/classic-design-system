@@ -92,7 +92,9 @@ class Input extends React.Component {
         {...styles.input(allProps)}
         {...(allProps.style ? { style: allProps.style } : null)}
       >
-        <div {...styles.label(allProps)}>{allProps.label}</div>
+        {allProps.label && (
+          <div {...styles.label(allProps)}>{allProps.label}</div>
+        )}
         <div {...styles.fieldContainer(allProps, state)}>
           <input
             disabled={allProps.disabled}
@@ -111,7 +113,9 @@ class Input extends React.Component {
             </div>
           )}
         </div>
-        <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
+        {allProps.subLabel && (
+          <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
+        )}
       </div>
     )
   }
