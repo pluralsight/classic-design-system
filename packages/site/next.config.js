@@ -37,6 +37,7 @@ module.exports = {
       '/components/table': { page: '/components/table' },
       '/components/tag': { page: '/components/tag' },
       '/components/text': { page: '/components/text' },
+      '/components/textinput': { page: '/components/textinput' },
       '/components/theme': { page: '/components/theme' },
       '/components/tooltip': { page: '/components/tooltip' },
       '/components/viewtoggle': { page: '/components/viewtoggle' },
