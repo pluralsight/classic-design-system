@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.7.2"></a>
+## [10.7.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.7.1...@pluralsight/ps-design-system-text@10.7.2) (2018-06-06)
+
+
+### Bug Fixes
+
+* **text:** inline code blocks wrap for contiguous words ([e0c3975](https://github.com/pluralsight/design-system/commit/e0c3975))
+
+
+
+
 <a name="10.7.1"></a>
 ## [10.7.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.7.0...@pluralsight/ps-design-system-text@10.7.1) (2018-06-05)
 
