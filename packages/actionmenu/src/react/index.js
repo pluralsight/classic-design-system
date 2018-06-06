@@ -13,7 +13,12 @@ const styles = {
   item: ({ iconId, isActive, nested }) =>
     glamor.css(
       css['.psds-actionmenu__item'],
-      { ':focus': css['.psds-actionmenu__item:focus'] },
+      {
+        ':focus': css['.psds-actionmenu__item:focus'],
+        ':hover': css['.psds-actionmenu__item--link'],
+        ':active': css['.psds-actionmenu__item--link'],
+        ':visited': css['.psds-actionmenu__item--link']
+      },
       iconId ? css['.psds-actionmenu__item--iconId'] : null,
       nested ? css['.psds-actionmenu__item--nested'] : null,
       isActive ? css['.psds-actionmenu__item--isActive'] : null
