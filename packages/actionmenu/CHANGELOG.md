@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.6.2"></a>
+## [2.6.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@2.6.1...@pluralsight/ps-design-system-actionmenu@2.6.2) (2018-06-06)
+
+
+### Bug Fixes
+
+* **actionmenu:** focus and link color fixes ([#219](https://github.com/pluralsight/design-system/issues/219)) ([a399c44](https://github.com/pluralsight/design-system/commit/a399c44))
+* **actionmenu:** restore snapshot ([06bb002](https://github.com/pluralsight/design-system/commit/06bb002))
+
+
+
+
 <a name="2.6.1"></a>
 ## [2.6.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@2.6.0...@pluralsight/ps-design-system-actionmenu@2.6.1) (2018-06-05)
 
