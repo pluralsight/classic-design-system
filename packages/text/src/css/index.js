@@ -10,14 +10,14 @@ import * as vars from '../vars'
 export default {
   // __code
   '.psds-text__code': {
-    display: 'inline-block',
     padding: `0 ${core.layout.spacingXXSmall}`,
     borderRadius: '2px',
     lineHeight: core.type.lineHeightStandard,
     whiteSpace: 'pre-wrap',
     fontFamily: '"Source Code Pro", monospace',
     fontWeight: core.type.fontWeightMedium,
-    fontSize: core.type.fontSizeSmall
+    fontSize: core.type.fontSizeSmall,
+    wordBreak: 'break-word'
   },
   [`.psds-text__code.psds-theme--${themeNames.light}`]: {
     color: '#0072be',
