@@ -88,7 +88,13 @@ export default {
 
   '.psds-actionmenu__item:focus': {
     background: core.colors.bone,
-    outline: 'none'
+    outline: 'none',
+    color: core.colors.gray05
+  },
+
+  // __item--link
+  '.psds-actionmenu__item--link': {
+    color: core.colors.gray05
   },
 
   // __item--iconId

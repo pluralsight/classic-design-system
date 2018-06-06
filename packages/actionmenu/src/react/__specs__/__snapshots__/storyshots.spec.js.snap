@@ -898,7 +898,11 @@ exports[`Storyshots nested origin topRight 1`] = `
 </div>
 `;
 
+<<<<<<< Updated upstream
 exports[`Storyshots onClick flat 1`] = `
+=======
+exports[`Storyshots non-focused edge 1`] = `
+>>>>>>> Stashed changes
 <div
   style={
     Object {
@@ -925,8 +929,13 @@ exports[`Storyshots onClick flat 1`] = `
     >
       <button
         aria-haspopup={false}
+<<<<<<< Updated upstream
         data-css-x863tr=""
         onClick={[Function]}
+=======
+        className="css-bvtqlg"
+        onClick={undefined}
+>>>>>>> Stashed changes
         onKeyDown={[Function]}
         onMouseOver={[Function]}
         role="menuitem"
@@ -935,6 +944,7 @@ exports[`Storyshots onClick flat 1`] = `
       </button>
     </div>
     <div
+<<<<<<< Updated upstream
       data-css-13azwyo=""
     >
       <button
@@ -962,11 +972,20 @@ exports[`Storyshots onClick flat 1`] = `
         Three item
       </button>
     </div>
+=======
+      className="css-rficis"
+      tabIndex="-1"
+    />
+>>>>>>> Stashed changes
   </div>
 </div>
 `;
 
+<<<<<<< Updated upstream
 exports[`Storyshots onClick nested 1`] = `
+=======
+exports[`Storyshots shouldFocusOnMount false 1`] = `
+>>>>>>> Stashed changes
 <div
   style={
     Object {
@@ -993,6 +1012,7 @@ exports[`Storyshots onClick nested 1`] = `
     >
       <button
         aria-haspopup={false}
+<<<<<<< Updated upstream
         data-css-x863tr=""
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -1164,10 +1184,15 @@ exports[`Storyshots onClick nested 1`] = `
         aria-haspopup={false}
         data-css-js69pj=""
         onClick={[Function]}
+=======
+        className="css-bvtqlg"
+        onClick={undefined}
+>>>>>>> Stashed changes
         onKeyDown={[Function]}
         onMouseOver={[Function]}
         role="menuitem"
       >
+<<<<<<< Updated upstream
         11
       </button>
     </div>
@@ -1185,6 +1210,15 @@ exports[`Storyshots onClick nested 1`] = `
         12
       </button>
     </div>
+=======
+        One item
+      </button>
+    </div>
+    <div
+      className="css-rficis"
+      tabIndex="-1"
+    />
+>>>>>>> Stashed changes
   </div>
 </div>
 `;
