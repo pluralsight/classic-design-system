@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.41.0"></a>
+# [9.41.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.40.2...@pluralsight/ps-design-system-site@9.41.0) (2018-06-11)
+
+
+### Features
+
+* **site:** add radio docs ([3f09d46](https://github.com/pluralsight/design-system/commit/3f09d46))
+
+
+
+
 <a name="9.40.2"></a>
 ## [9.40.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.40.1...@pluralsight/ps-design-system-site@9.40.2) (2018-06-06)
 
