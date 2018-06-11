@@ -340,6 +340,9 @@ export default withHeadings(props => (
         Layout
       </NavLink>
       <NavLink href="/components/link">Link</NavLink>
+      <NavLink href="/components/radio" headings={props.headings}>
+        Radio
+      </NavLink>
       <NavLink href="/components/row" headings={props.headings}>
         Row
       </NavLink>

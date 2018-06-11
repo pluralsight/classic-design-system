@@ -31,6 +31,7 @@ module.exports = {
       '/components/icon': { page: '/components/icon' },
       '/components/layout': { page: '/components/layout' },
       '/components/link': { page: '/components/link' },
+      '/components/radio': { page: '/components/radio' },
       '/components/row': { page: '/components/row' },
       '/components/switch': { page: '/components/switch' },
       '/components/tab': { page: '/components/tab' },
