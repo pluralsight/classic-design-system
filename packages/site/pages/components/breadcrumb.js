@@ -130,7 +130,7 @@ export default withServerProps(_ => (
       />
 
       <P>
-        Breadcrumbs should be written in sentece case, except for proper nouns
+        Breadcrumbs should be written in sentence case, except for proper nouns
         or product titles.
       </P>
       <Guideline
