@@ -10,7 +10,7 @@ import css from '../css'
 import * as vars from '../vars'
 
 const styles = {
-  item: ({ icon, iconId, isActive, nested }) =>
+  item: ({ icon, isActive, nested }) =>
     glamor.css(
       css['.psds-actionmenu__item'],
       {
@@ -19,7 +19,7 @@ const styles = {
         ':active': css['.psds-actionmenu__item--link'],
         ':visited': css['.psds-actionmenu__item--link']
       },
-      icon || iconId ? css['.psds-actionmenu__item--icon'] : null,
+      icon ? css['.psds-actionmenu__item--icon'] : null,
       nested ? css['.psds-actionmenu__item--nested'] : null,
       isActive ? css['.psds-actionmenu__item--isActive'] : null
     )
@@ -28,11 +28,7 @@ const styles = {
 const IconComponent = props => {
   return (
     <div {...glamor.css(css['.psds-actionmenu__item__icon'])}>
-      {props.iconId ? (
-        <Icon id={props.iconId} size={Icon.sizes.medium} />
-      ) : (
-        React.cloneElement(props.children, { size: Icon.sizes.medium })
-      )}
+      {React.cloneElement(props.children, { size: Icon.sizes.medium })}
     </div>
   )
 }
@@ -146,11 +142,7 @@ class ItemComponent extends React.Component {
             role: 'menuitem',
             ...styles.item(this.props)
           },
-          (this.props.iconId || this.props.icon) && (
-            <IconComponent iconId={this.props.iconId}>
-              {this.props.icon}
-            </IconComponent>
-          ),
+          this.props.icon && <IconComponent>{this.props.icon}</IconComponent>,
           this.props.children,
           this.props.nested && <NestedArrow />
         )}
@@ -162,7 +154,6 @@ class ItemComponent extends React.Component {
 ItemComponent.displayName = 'ActionMenu.Item'
 ItemComponent.propTypes = {
   href: PropTypes.string,
-  iconId: PropTypes.oneOf(Object.keys(Icon.ids)),
   icon: PropTypes.node,
   isActive: PropTypes.bool,
   nested: PropTypes.element, // ActionMenu
