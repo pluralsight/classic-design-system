@@ -63,13 +63,11 @@ export default withServerProps(_ => (
           'ActionMenu.Item': [
             PropTypes.row(['href', 'string', null, null, 'anchor tag uri']),
             PropTypes.row([
-              'iconId',
-              <span>
-                <code>Icon.ids</code> enum
-              </span>,
+              'icon',
+              <code>Icon</code>,
               null,
               null,
-              'id of icon'
+              'Icon component'
             ]),
             PropTypes.row([
               'isActive',
@@ -137,13 +135,13 @@ export default withServerProps(_ => (
         codes={[
           `
 <ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
-  <ActionMenu.Item iconId={Icon.ids.channel}>
+  <ActionMenu.Item icon={<Icon id={Icon.ids.channel} />}>
     Channels
   </ActionMenu.Item>
-  <ActionMenu.Item iconId={Icon.ids.path}>
+  <ActionMenu.Item icon={<Icon id={Icon.ids.path} />}>
     Paths
   </ActionMenu.Item>
-  <ActionMenu.Item iconId={Icon.ids.report}>
+  <ActionMenu.Item icon={<Icon id={Icon.ids.report} />}>
     Reports
   </ActionMenu.Item>
 </ActionMenu>
