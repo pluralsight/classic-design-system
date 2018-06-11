@@ -5,8 +5,6 @@ import {
 } from '@pluralsight/ps-design-system-theme/vars'
 import { transparentize } from 'polished'
 
-import * as vars from '../vars'
-
 export default {
   // group
 

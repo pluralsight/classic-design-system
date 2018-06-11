@@ -121,7 +121,6 @@ Button.propTypes = {
   checked: PropTypes.bool,
   innerRef: PropTypes.func,
   label: PropTypes.node.isRequired,
-  onChange: PropTypes.func,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   _disabled: PropTypes.bool,
   _error: PropTypes.bool,
