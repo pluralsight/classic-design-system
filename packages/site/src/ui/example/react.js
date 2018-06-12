@@ -126,6 +126,7 @@ const ThemeToggle = props => (
         position: absolute;
         top: ${core.layout.spacingMedium};
         right: ${core.layout.spacingMedium};
+        z-index: 1;
       }
     `}</style>
   </div>
