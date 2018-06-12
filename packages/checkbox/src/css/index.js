@@ -18,7 +18,8 @@ export default {
   // __square
   '.psds-checkbox__square': {
     position: 'relative',
-    display: 'inline-block',
+    display: 'inline-flex',
+    alignItems: 'center',
     height: '16px',
     width: '16px',
     borderRadius: '2px',
@@ -86,6 +87,13 @@ export default {
     left: '-5px',
     right: '-5px',
     bottom: '-5px'
+  },
+
+  // __checkmark
+  '.psds-checkbox__checkmark': {
+    height: '100%',
+    width: '100%',
+    fill: core.colors.white
   },
 
   // __input

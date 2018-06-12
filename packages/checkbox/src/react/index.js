@@ -1,6 +1,4 @@
-// TODO: fix: click label, should focus ring the square
 import * as glamor from 'glamor'
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
@@ -91,6 +89,7 @@ const styles = {
           }
         : null
     ),
+  checkmark: _ => glamor.css(css['.psds-checkbox__checkmark']),
   input: () => glamor.css(css['.psds-checkbox__input']),
   label: ({ themeName }) =>
     glamor.css(
@@ -98,6 +97,19 @@ const styles = {
       css[`.psds-checkbox__label.psds-theme--${themeName}`]
     )
 }
+
+const Checkmark = _ => (
+  <svg
+    role="img"
+    aria-label="Checkmark"
+    {...styles.checkmark()}
+    viewBox="0 0 16 16"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <polygon points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473" />
+  </svg>
+)
 
 class Checkbox extends React.Component {
   constructor(props) {
@@ -140,9 +152,7 @@ class Checkbox extends React.Component {
           ref={el => (this.square = el)}
           {...styles.square(allProps)}
         >
-          {allProps.checked && (
-            <Icon id={Icon.ids.check} size={Icon.sizes.small} />
-          )}
+          {allProps.checked && <Checkmark />}
         </div>
         <input
           {...propsUtil.whitelistProps(allProps, checkboxHtmlPropsWhitelist)}
