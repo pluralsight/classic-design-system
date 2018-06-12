@@ -1,3 +1,4 @@
+// TODO: fix: click label, should focus ring the square
 import * as glamor from 'glamor'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
