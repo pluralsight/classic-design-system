@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.0.0"></a>
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.41.0...@pluralsight/ps-design-system-site@10.0.0) (2018-06-12)
+
+
+### Code Refactoring
+
+* **actionmenu:** remove iconId prop ([7a591cd](https://github.com/pluralsight/design-system/commit/7a591cd))
+
+
+### BREAKING CHANGES
+
+* **actionmenu:** Removing iconId prop in favor of using icon prop instead.
+
+
+
+
 <a name="9.41.0"></a>
 # [9.41.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.40.2...@pluralsight/ps-design-system-site@9.41.0) (2018-06-11)
 

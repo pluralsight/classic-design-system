@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@2.6.2...@pluralsight/ps-design-system-actionmenu@3.0.0) (2018-06-12)
+
+
+### Code Refactoring
+
+* **actionmenu:** remove iconId prop ([7a591cd](https://github.com/pluralsight/design-system/commit/7a591cd))
+
+
+### Features
+
+* **actionmenu:** allow custom icons ([a509a0e](https://github.com/pluralsight/design-system/commit/a509a0e))
+
+
+### BREAKING CHANGES
+
+* **actionmenu:** Removing iconId prop in favor of using icon prop instead.
+
+
+
+
 <a name="2.6.2"></a>
 ## [2.6.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@2.6.1...@pluralsight/ps-design-system-actionmenu@2.6.2) (2018-06-06)
 
