@@ -2,7 +2,6 @@ import Checkbox from '@pluralsight/ps-design-system-checkbox/react'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
-import Radio from '@pluralsight/ps-design-system-radio/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
@@ -213,7 +212,7 @@ export default withServerProps(_ => (
             'string | number',
             null,
             null,
-            'currently selected radio value'
+            'form value when checked'
           ])
         ]}
       />
@@ -258,7 +257,7 @@ export default withServerProps(_ => (
       <Example.React
         themeToggle
         orient="vertical"
-        includes={{ Radio }}
+        includes={{ Checkbox }}
         codes={[
           `<Checkbox error label="I've got problems" />`,
           `<Checkbox error checked label="Checked and still not good enough" />`
