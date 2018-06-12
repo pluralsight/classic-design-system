@@ -119,6 +119,7 @@ class Checkbox extends React.Component {
       this.props.value,
       this.props.name
     )
+    this.square.focus()
   }
   render() {
     const { context, props } = this
@@ -136,6 +137,7 @@ class Checkbox extends React.Component {
           role="checkbox"
           aria-checked={allProps.checked}
           tabIndex={allProps.disabled ? '-1' : '0'}
+          ref={el => (this.square = el)}
           {...styles.square(allProps)}
         >
           {allProps.checked && (
