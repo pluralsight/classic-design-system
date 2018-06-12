@@ -22,12 +22,13 @@ export default {
     height: '16px',
     width: '16px',
     borderRadius: '2px',
-    border: `2px solid ${core.colors.gray04}`,
-    background: core.colors.gray04,
+    border: `2px solid ${core.colors.gray02}`,
+    background: core.colors.gray05,
     color: core.colors.white
   },
   [`.psds-checkbox__square.psds-theme--${themeNames.light}`]: {
-    background: core.colors.white
+    background: core.colors.white,
+    borderColor: core.colors.gray04
   },
   '.psds-checkbox__square:focus': {
     outline: 'none'
