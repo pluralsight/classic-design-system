@@ -10,7 +10,7 @@ import css from '../css'
 import * as vars from '../vars'
 
 const styles = {
-  item: ({ iconId, isActive, nested }) =>
+  item: ({ icon, isActive, nested }) =>
     glamor.css(
       css['.psds-actionmenu__item'],
       {
@@ -19,17 +19,19 @@ const styles = {
         ':active': css['.psds-actionmenu__item--link'],
         ':visited': css['.psds-actionmenu__item--link']
       },
-      iconId ? css['.psds-actionmenu__item--iconId'] : null,
+      icon ? css['.psds-actionmenu__item--icon'] : null,
       nested ? css['.psds-actionmenu__item--nested'] : null,
       isActive ? css['.psds-actionmenu__item--isActive'] : null
     )
 }
 
-const IconComponent = props => (
-  <div {...glamor.css(css['.psds-actionmenu__item__icon'])}>
-    <Icon id={props.iconId} size={Icon.sizes.medium} />
-  </div>
-)
+const IconComponent = props => {
+  return (
+    <div {...glamor.css(css['.psds-actionmenu__item__icon'])}>
+      {React.cloneElement(props.children, { size: Icon.sizes.medium })}
+    </div>
+  )
+}
 
 const NestedArrow = _ => (
   <div {...glamor.css(css['.psds-actionmenu__item__arrow'])}>
@@ -73,7 +75,12 @@ class ItemComponent extends React.Component {
     if (this.props.isActive && this.props.shouldFocusOnMount) this.item.focus()
   }
   componentDidUpdate(prevProps) {
-    if (!prevProps.isActive && this.props.isActive && !this.state.isNestedRendered) this.item.focus()
+    if (
+      !prevProps.isActive &&
+      this.props.isActive &&
+      !this.state.isNestedRendered
+    )
+      this.item.focus()
   }
   handleKeyDown(evt) {
     if (
@@ -90,8 +97,7 @@ class ItemComponent extends React.Component {
     this.item.focus()
   }
   handleMouseOver() {
-    if (this.props.nested)
-      this.setState({ isNestedRendered: true })
+    if (this.props.nested) this.setState({ isNestedRendered: true })
     this.props._onMouseOver(this.props._i)
   }
   handleMouseOut() {
@@ -136,7 +142,7 @@ class ItemComponent extends React.Component {
             role: 'menuitem',
             ...styles.item(this.props)
           },
-          this.props.iconId && <IconComponent iconId={this.props.iconId} />,
+          this.props.icon && <IconComponent>{this.props.icon}</IconComponent>,
           this.props.children,
           this.props.nested && <NestedArrow />
         )}
@@ -148,7 +154,7 @@ class ItemComponent extends React.Component {
 ItemComponent.displayName = 'ActionMenu.Item'
 ItemComponent.propTypes = {
   href: PropTypes.string,
-  iconId: PropTypes.oneOf(Object.keys(Icon.ids)),
+  icon: PropTypes.node,
   isActive: PropTypes.bool,
   nested: PropTypes.element, // ActionMenu
   onClick: PropTypes.func,
@@ -266,7 +272,9 @@ class ActionMenuComponent extends React.Component {
     const direction = evt.shiftKey ? 'up' : 'down'
     const { activeIndex } = this.state
     const lastIndex = React.Children.count(this.props.children) - 1
-    const atEdge = (direction === 'up' && activeIndex === 0) || (direction === 'down' && activeIndex === lastIndex)
+    const atEdge =
+      (direction === 'up' && activeIndex === 0) ||
+      (direction === 'down' && activeIndex === lastIndex)
 
     if (atEdge) {
       this.navigateOut(evt)

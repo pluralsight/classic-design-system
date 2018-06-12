@@ -97,8 +97,8 @@ export default {
     color: core.colors.gray05
   },
 
-  // __item--iconId
-  '.psds-actionmenu__item--iconId': {
+  // __item--icon
+  '.psds-actionmenu__item--icon': {
     paddingLeft: core.layout.spacingXSmall
   },
 

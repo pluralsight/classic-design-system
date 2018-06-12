@@ -38,14 +38,14 @@ import ActionMenu from '../react'
 //                   top: this.props.size.height
 //                 }}
 //               >
-//                 <ActionMenu.Item iconId={Icon.ids.account}>
+//                 <ActionMenu.Item icon={<Icon id={Icon.ids.account} />}>
 //                   qwer
 //                 </ActionMenu.Item>
-//                 <ActionMenu.Item iconId={Icon.ids.channel}>
+//                 <ActionMenu.Item icon={<Icon id={Icon.ids.channel} />}>
 //                   asdasd
 //                 </ActionMenu.Item>
 //                 <ActionMenu.Divider />
-//                 <ActionMenu.Item iconId={Icon.ids.channel}>
+//                 <ActionMenu.Item icon={<Icon id={Icon.ids.channel} />}>
 //                   asdasd
 //                 </ActionMenu.Item>
 //               </ActionMenu>}
@@ -73,9 +73,15 @@ storiesOf('menu items', module)
   ))
   .add('with icons', _ => (
     <ActionMenu>
-      <ActionMenu.Item iconId={Icon.ids.channel}>One item</ActionMenu.Item>
-      <ActionMenu.Item iconId={Icon.ids.path}>Two item</ActionMenu.Item>
-      <ActionMenu.Item iconId={Icon.ids.report}>Three item</ActionMenu.Item>
+      <ActionMenu.Item icon={<Icon id={Icon.ids.channel} />}>
+        One item
+      </ActionMenu.Item>
+      <ActionMenu.Item icon={<Icon id={Icon.ids.path} />}>
+        Two item
+      </ActionMenu.Item>
+      <ActionMenu.Item icon={<Icon id={Icon.ids.report} />}>
+        Three item
+      </ActionMenu.Item>
     </ActionMenu>
   ))
   .add('long text', _ => (
@@ -92,7 +98,7 @@ storiesOf('menu items', module)
   ))
   .add('long text with icon', _ => (
     <ActionMenu>
-      <ActionMenu.Item iconId={Icon.ids.channel}>
+      <ActionMenu.Item icon={<Icon id={Icon.ids.channel} />}>
         One item that has text that goes on forever and onward into the
         universes yet to be
       </ActionMenu.Item>
@@ -121,14 +127,14 @@ const nestedStory = storiesOf('nested', module).addDecorator(
 )
 
 storiesOf('shouldFocusOnMount', module)
-.addDecorator(themeDecorator(addons))
-.add('false', _ => (
-  <ActionMenu shouldFocusOnMount={false}>
-    <ActionMenu.Item>One item</ActionMenu.Item>
-    <ActionMenu.Item>Two item</ActionMenu.Item>
-    <ActionMenu.Item>Three item</ActionMenu.Item>
-  </ActionMenu>
-))
+  .addDecorator(themeDecorator(addons))
+  .add('false', _ => (
+    <ActionMenu shouldFocusOnMount={false}>
+      <ActionMenu.Item>One item</ActionMenu.Item>
+      <ActionMenu.Item>Two item</ActionMenu.Item>
+      <ActionMenu.Item>Three item</ActionMenu.Item>
+    </ActionMenu>
+  ))
 
 const calcContainerStyle = origin => ({
   position: 'absolute',
