@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.1.2"></a>
+## [10.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@10.1.1...@pluralsight/ps-design-system-site@10.1.2) (2018-06-12)
+
+
+### Bug Fixes
+
+* **site:** checkbox docs typos ([007ca07](https://github.com/pluralsight/design-system/commit/007ca07))
+
+
+
+
 <a name="10.1.1"></a>
 ## [10.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@10.1.0...@pluralsight/ps-design-system-site@10.1.1) (2018-06-12)
 
