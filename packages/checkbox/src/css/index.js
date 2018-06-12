@@ -32,55 +32,43 @@ export default {
   '.psds-checkbox__square:focus': {
     outline: 'none'
   },
-  '.psds-checkbox__square:focus:before': {
+  '.psds-checkbox__square:focus:before .psds-checkbox__square--error:before': {
     content: ' ',
     position: 'absolute',
     top: '-4px',
     left: '-4px',
     right: '-4px',
     bottom: '-4px',
-    background: core.colors.gray05,
     zIndex: '-1',
     borderRadius: '2px'
   },
-  '.psds-checkbox__square:focus:after': {
+  '.psds-checkbox__square:focus:after .psds-checkbox__square--error:after': {
     content: ' ',
     position: 'absolute',
     top: '-7px',
     left: '-7px',
     right: '-7px',
     bottom: '-7px',
-    background: core.colors.blue,
     zIndex: '-2',
     borderRadius: '4px'
+  },
+  '.psds-checkbox__square:focus:before': {
+    background: core.colors.gray05
+  },
+  '.psds-checkbox__square:focus:after': {
+    background: core.colors.blue
   },
   [`.psds-checkbox__square.psds-theme--${themeNames.light}:focus:before`]: {
     background: core.colors.bone
   },
   '.psds-checkbox__square--error:before': {
-    content: ' ',
-    position: 'absolute',
-    top: '-4px',
-    left: '-4px',
-    right: '-4px',
-    bottom: '-4px',
-    background: core.colors.gray05,
-    zIndex: '-1',
-    borderRadius: '2px'
+    background: core.colors.gray05
   },
   [`.psds-checkbox__square--error.psds-theme--${themeNames.light}:before`]: {
     background: core.colors.bone
   },
   '.psds-checkbox__square--error:after': {
-    content: ' ',
-    position: 'absolute',
-    top: '-7px',
-    left: '-7px',
-    right: '-7px',
-    bottom: '-7px',
-    background: core.colors.red,
-    zIndex: '-2',
-    borderRadius: '4px'
+    background: core.colors.red
   },
   '.psds-checkbox__square--checked': {
     background: core.colors.blue,
@@ -97,15 +85,6 @@ export default {
     left: '-5px',
     right: '-5px',
     bottom: '-5px'
-  },
-
-  // __checkmark
-  '.psds-checkbox__checkmark': {
-    display: 'block',
-    height: '100%',
-    width: '100%',
-    background: core.colors.blue,
-    color: core.colors.white
   },
 
   // __input
