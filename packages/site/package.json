@@ -1,7 +1,7 @@
 {
   "name": "@pluralsight/ps-design-system-site",
   "private": true,
-  "version": "10.0.0",
+  "version": "10.1.0",
   "description": "Reference site",
   "main": "index.js",
   "engines": {
@@ -22,7 +22,7 @@
     "@pluralsight/ps-design-system-breadcrumb": "^1.2.1",
     "@pluralsight/ps-design-system-button": "^10.8.4",
     "@pluralsight/ps-design-system-card": "^8.4.1",
-    "@pluralsight/ps-design-system-checkbox": "^0.1.0",
+    "@pluralsight/ps-design-system-checkbox": "^0.2.0",
     "@pluralsight/ps-design-system-circularprogress": "^1.5.1",
     "@pluralsight/ps-design-system-core": "^4.3.0",
     "@pluralsight/ps-design-system-dialog": "^2.2.2",
@@ -32,7 +32,7 @@
     "@pluralsight/ps-design-system-layout": "^2.2.2",
     "@pluralsight/ps-design-system-link": "^5.7.1",
     "@pluralsight/ps-design-system-normalize": "^3.0.42",
-    "@pluralsight/ps-design-system-radio": "^0.2.0",
+    "@pluralsight/ps-design-system-radio": "^0.2.1",
     "@pluralsight/ps-design-system-row": "^2.6.1",
     "@pluralsight/ps-design-system-switch": "^1.4.1",
     "@pluralsight/ps-design-system-tab": "^7.6.1",

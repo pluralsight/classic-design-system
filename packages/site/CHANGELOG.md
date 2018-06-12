@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.1.0"></a>
+# [10.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@10.0.0...@pluralsight/ps-design-system-site@10.1.0) (2018-06-12)
+
+
+### Bug Fixes
+
+* **site:** show theme toggle on react example blocks ([b3ec7c9](https://github.com/pluralsight/design-system/commit/b3ec7c9))
+
+
+### Features
+
+* **site:** add checkbox docs ([394534e](https://github.com/pluralsight/design-system/commit/394534e))
+
+
+
+
 <a name="10.0.0"></a>
 # [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@9.41.0...@pluralsight/ps-design-system-site@10.0.0) (2018-06-12)
 
