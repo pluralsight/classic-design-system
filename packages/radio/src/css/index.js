@@ -36,7 +36,7 @@ export default {
     height: '16px',
     width: '16px',
     borderRadius: '50%',
-    border: `2px solid ${core.colors.gray02}`,
+    border: `2px solid ${core.colors.gray04}`,
     background: core.colors.gray05
   },
   [`.psds-radio-button__circle.psds-theme--${themeNames.light}`]: {
