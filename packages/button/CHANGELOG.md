@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.8.5"></a>
+## [10.8.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.8.4...@pluralsight/ps-design-system-button@10.8.5) (2018-06-14)
+
+
+### Bug Fixes
+
+* root index.js to not require compilation ([2316b0d](https://github.com/pluralsight/design-system/commit/2316b0d))
+
+
+
+
 <a name="10.8.4"></a>
 ## [10.8.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.8.3...@pluralsight/ps-design-system-button@10.8.4) (2018-06-05)
 

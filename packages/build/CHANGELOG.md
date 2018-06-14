@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.8.1"></a>
+## [1.8.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.8.0...@pluralsight/ps-design-system-build@1.8.1) (2018-06-14)
+
+
+### Bug Fixes
+
+* root index.js to not require compilation ([2316b0d](https://github.com/pluralsight/design-system/commit/2316b0d))
+
+
+
+
 <a name="1.8.0"></a>
 # [1.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.7.2...@pluralsight/ps-design-system-build@1.8.0) (2018-02-09)
 

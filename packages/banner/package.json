@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-banner",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Design System component for banner ui",
   "main": "index.js",
   "module": "index.js",
@@ -26,14 +26,14 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.3.0",
-    "@pluralsight/ps-design-system-icon": "^8.9.1",
-    "@pluralsight/ps-design-system-link": "^5.7.1",
+    "@pluralsight/ps-design-system-core": "^4.3.1",
+    "@pluralsight/ps-design-system-icon": "^8.9.2",
+    "@pluralsight/ps-design-system-link": "^5.7.2",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.8.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.33",
+    "@pluralsight/ps-design-system-build": "^1.8.1",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.34",
     "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/react": "3.2.14",
