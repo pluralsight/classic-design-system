@@ -1,0 +1,826 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots disabled compare 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div>
+      <label
+        data-css-1p1sjwu=""
+      >
+        <div
+          data-css-1j9p7fe=""
+        >
+          Normal
+        </div>
+        <div
+          data-css-1ghdxx6=""
+        >
+          <textarea
+            data-css-1vpjki6=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="I'm normal, see"
+            style={
+              Object {
+                "height": 112,
+              }
+            }
+          />
+        </div>
+        <div
+          data-css-1de0a6a=""
+        >
+          Still normal
+        </div>
+      </label>
+      <label
+        data-css-b2u8ok=""
+      >
+        <div
+          data-css-1j9p7fe=""
+        >
+          I'm not usable
+        </div>
+        <div
+          data-css-1ghdxx6=""
+        >
+          <textarea
+            data-css-1vpjki6=""
+            disabled={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="I'm untouchable"
+            style={
+              Object {
+                "height": 112,
+              }
+            }
+          />
+        </div>
+        <div
+          data-css-1de0a6a=""
+        >
+          Neither am I
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots error compare 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div>
+      <label
+        data-css-1p1sjwu=""
+      >
+        <div
+          data-css-1j9p7fe=""
+        >
+          Normal
+        </div>
+        <div
+          data-css-1ghdxx6=""
+        >
+          <textarea
+            data-css-1vpjki6=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="I'm normal, see"
+            style={
+              Object {
+                "height": 112,
+              }
+            }
+          />
+        </div>
+        <div
+          data-css-1de0a6a=""
+        >
+          Still normal
+        </div>
+      </label>
+      <label
+        data-css-1p1sjwu=""
+      >
+        <div
+          data-css-1j9p7fe=""
+        >
+          I'm in an error state
+        </div>
+        <div
+          data-css-mdufbt=""
+        >
+          <textarea
+            data-css-1vpjki6=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder={undefined}
+            style={
+              Object {
+                "height": 112,
+              }
+            }
+            value="Wow, here is all the content wrapped up inside.Wow, here is all the content wrapped up inside.Wow, here is all the content wrapped up inside.   "
+          />
+          <div
+            data-css-1ss30jn=""
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="warning icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          data-css-1de0a6a=""
+        >
+          Here
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots labels all 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-1p1sjwu=""
+    >
+      <div
+        data-css-1j9p7fe=""
+      >
+        Some label
+      </div>
+      <div
+        data-css-1ghdxx6=""
+      >
+        <textarea
+          data-css-1vpjki6=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+      <div
+        data-css-1de0a6a=""
+      >
+        Some sublabel
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots labels label 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-1p1sjwu=""
+    >
+      <div
+        data-css-1j9p7fe=""
+      >
+        Some label
+      </div>
+      <div
+        data-css-1ghdxx6=""
+      >
+        <textarea
+          data-css-1vpjki6=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder={undefined}
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots labels label and subLabel 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-1p1sjwu=""
+    >
+      <div
+        data-css-1j9p7fe=""
+      >
+        Some label
+      </div>
+      <div
+        data-css-1ghdxx6=""
+      >
+        <textarea
+          data-css-1vpjki6=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder={undefined}
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+      <div
+        data-css-1de0a6a=""
+      >
+        Some sublabel
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots labels none 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-1p1sjwu=""
+    >
+      <div
+        data-css-1ghdxx6=""
+      >
+        <textarea
+          data-css-1vpjki6=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder={undefined}
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots labels placeholder 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-1p1sjwu=""
+    >
+      <div
+        data-css-1ghdxx6=""
+      >
+        <textarea
+          data-css-1vpjki6=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="some placeholder"
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots labels subLabel 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-1p1sjwu=""
+    >
+      <div
+        data-css-1ghdxx6=""
+      >
+        <textarea
+          data-css-1vpjki6=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder={undefined}
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+      <div
+        data-css-1de0a6a=""
+      >
+        Some sublabel
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots layouts full width 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid blue",
+          "width": "500px",
+        }
+      }
+    >
+      <label
+        data-css-1p1sjwu=""
+        style={
+          Object {
+            "display": "block",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          data-css-1j9p7fe=""
+        >
+          First
+        </div>
+        <div
+          data-css-1ghdxx6=""
+        >
+          <textarea
+            data-css-1vpjki6=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder={undefined}
+            style={
+              Object {
+                "height": 112,
+              }
+            }
+          />
+        </div>
+      </label>
+      <label
+        data-css-1p1sjwu=""
+        style={
+          Object {
+            "display": "block",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          data-css-1j9p7fe=""
+        >
+          Second
+        </div>
+        <div
+          data-css-mdufbt=""
+        >
+          <textarea
+            data-css-1vpjki6=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder={undefined}
+            style={
+              Object {
+                "height": 112,
+              }
+            }
+          />
+          <div
+            data-css-1ss30jn=""
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="warning icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots rows less than 4 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-1p1sjwu=""
+    >
+      <div
+        data-css-1j9p7fe=""
+      >
+        Min Height Engages
+      </div>
+      <div
+        data-css-1ghdxx6=""
+      >
+        <textarea
+          data-css-1vpjki6=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder={undefined}
+          style={
+            Object {
+              "height": 40,
+            }
+          }
+        />
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots rows more than 4 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-1p1sjwu=""
+    >
+      <div
+        data-css-1j9p7fe=""
+      >
+        6 Rows of Text
+      </div>
+      <div
+        data-css-1ghdxx6=""
+      >
+        <textarea
+          data-css-1vpjki6=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder={undefined}
+          style={
+            Object {
+              "height": 160,
+            }
+          }
+        />
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots whitelist name 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-1p1sjwu=""
+    >
+      <div
+        data-css-1ghdxx6=""
+      >
+        <textarea
+          data-css-1vpjki6=""
+          disabled={false}
+          name="myFieldNameOfPower"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="I have a form name"
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots whitelist onChange 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-1p1sjwu=""
+    >
+      <div
+        data-css-1ghdxx6=""
+      >
+        <textarea
+          data-css-1vpjki6=""
+          disabled={false}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Change me"
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+    </label>
+  </div>
+</div>
+`;
