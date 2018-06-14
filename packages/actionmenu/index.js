@@ -1,3 +1,3 @@
 const React = require('./dist/react')
 
-module.exports = { React }
+module.exports = { react: React }

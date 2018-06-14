@@ -3,7 +3,7 @@ const fs = require('./fs')
 const postcss = require('./postcss')
 
 module.exports = {
-  css,
-  fs,
-  postcss
+  css: css,
+  fs: fs,
+  postcss: postcss
 }
