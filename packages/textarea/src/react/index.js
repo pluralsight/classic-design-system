@@ -146,6 +146,7 @@ class TextArea extends React.Component {
 TextArea.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.bool,
+  innerRef: PropTypes.func,
   label: PropTypes.node,
   placeholder: PropTypes.string,
   rows: PropTypes.number,
