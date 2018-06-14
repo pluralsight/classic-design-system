@@ -364,6 +364,9 @@ export default withHeadings(props => (
       <NavLink href="/components/text" headings={props.headings}>
         Text
       </NavLink>
+      <NavLink href="/components/textarea" headings={props.headings}>
+        Text Area
+      </NavLink>
       <NavLink href="/components/textinput" headings={props.headings}>
         Text Input
       </NavLink>
