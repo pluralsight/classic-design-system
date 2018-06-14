@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.1.2...@pluralsight/ps-design-system-textinput@0.2.0) (2018-06-14)
+
+
+### Features
+
+* **textinput:** export missing vars ([4bdfa1e](https://github.com/pluralsight/design-system/commit/4bdfa1e))
+
+
+
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.1.1...@pluralsight/ps-design-system-textinput@0.1.2) (2018-06-14)
 

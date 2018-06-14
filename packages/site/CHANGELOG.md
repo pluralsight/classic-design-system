@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.2.0"></a>
+# [10.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@10.1.3...@pluralsight/ps-design-system-site@10.2.0) (2018-06-14)
+
+
+### Features
+
+* **site:** add textarea to docs ([aff0ed6](https://github.com/pluralsight/design-system/commit/aff0ed6))
+
+
+
+
 <a name="10.1.3"></a>
 ## [10.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@10.1.2...@pluralsight/ps-design-system-site@10.1.3) (2018-06-14)
 
