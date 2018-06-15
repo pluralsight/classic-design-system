@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-textinput",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Design system components for text input",
   "main": "index.js",
   "module": "index.js",

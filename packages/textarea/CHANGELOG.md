@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@0.2.0...@pluralsight/ps-design-system-textarea@0.3.0) (2018-06-15)
+
+
+### Features
+
+* **textarea:** support custom onBlur/Focus events ([aa0ea02](https://github.com/pluralsight/design-system/commit/aa0ea02))
+
+
+
+
 <a name="0.2.0"></a>
 # 0.2.0 (2018-06-14)
 

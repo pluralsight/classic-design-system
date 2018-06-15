@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.2.0...@pluralsight/ps-design-system-textinput@0.3.0) (2018-06-15)
+
+
+### Features
+
+* **textinput:** support custom onBlur/Focus events ([0339ae7](https://github.com/pluralsight/design-system/commit/0339ae7))
+
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.1.2...@pluralsight/ps-design-system-textinput@0.2.0) (2018-06-14)
 
