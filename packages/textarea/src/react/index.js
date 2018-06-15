@@ -97,11 +97,13 @@ class TextArea extends React.Component {
     this.handleFocus = this.handleFocus.bind(this)
     this.handleBlur = this.handleBlur.bind(this)
   }
-  handleFocus() {
+  handleFocus(evt) {
     this.setState(_ => ({ isFocused: true }))
+    if (typeof this.props.onFocus === 'function') this.props.onFocus(evt)
   }
-  handleBlur() {
+  handleBlur(evt) {
     this.setState(_ => ({ isFocused: false }))
+    if (typeof this.props.onBlur === 'function') this.props.onBlur(evt)
   }
   render() {
     const { context, props, state } = this
