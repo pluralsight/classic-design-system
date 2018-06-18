@@ -1,3 +1,4 @@
+// TODO: fix focus ring gap
 import core from '@pluralsight/ps-design-system-core'
 import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
 import {
@@ -40,12 +41,13 @@ export default {
   },
   [`.psds-dropdown__field.psds-theme--${themeNames.light}`]: {
     background: core.colors.white,
+    color: core.colors.gray05,
     border: `1px solid ${core.colors.gray02}`
   },
   [`.psds-dropdown__field--appearance-${vars.appearances.subtle}`]: {
     color: core.colors.gray01,
-    background: core.colors.gray06,
-    border: `1px solid ${core.colors.gray03}`
+    background: core.colors.gray04,
+    border: `none`
   },
 
   // __field-container
@@ -120,10 +122,10 @@ export default {
     color: core.colors.gray03
   },
   [`.psds-dropdown__icon.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray02
+    color: core.colors.gray03
   },
   [`.psds-dropdown__icon--appearance-${vars.appearances.subtle}`]: {
-    color: core.colors.gray02
+    color: core.colors.gray01
   },
 
   // __label

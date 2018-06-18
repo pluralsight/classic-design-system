@@ -196,7 +196,7 @@ exports[`Storyshots appearance subtle 1`] = `
         data-css-1ojgx83=""
       >
         <button
-          data-css-14y32uc=""
+          data-css-1e7y5c2=""
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -215,7 +215,7 @@ exports[`Storyshots appearance subtle 1`] = `
           </span>
         </button>
         <div
-          data-css-2i7x9k=""
+          data-css-r2fq9u=""
         >
           <div
             className="css-otejxm"
@@ -274,7 +274,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         data-css-18cl03z=""
       >
         <button
-          data-css-14y32uc=""
+          data-css-1e7y5c2=""
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -289,7 +289,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           />
         </button>
         <div
-          data-css-2i7x9k=""
+          data-css-r2fq9u=""
         >
           <div
             className="css-otejxm"
@@ -1097,7 +1097,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-1ojgx83=""
         >
           <button
-            data-css-14y32uc=""
+            data-css-1e7y5c2=""
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -1112,7 +1112,7 @@ exports[`Storyshots layouts full width 1`] = `
             />
           </button>
           <div
-            data-css-2i7x9k=""
+            data-css-r2fq9u=""
           >
             <div
               className="css-otejxm"
@@ -1150,7 +1150,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-18cl03z=""
         >
           <button
-            data-css-14y32uc=""
+            data-css-1e7y5c2=""
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -1165,7 +1165,7 @@ exports[`Storyshots layouts full width 1`] = `
             />
           </button>
           <div
-            data-css-2i7x9k=""
+            data-css-r2fq9u=""
           >
             <div
               className="css-otejxm"
@@ -1253,7 +1253,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
             data-css-1ojgx83=""
           >
             <button
-              data-css-14y32uc=""
+              data-css-1e7y5c2=""
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -1272,7 +1272,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
               </span>
             </button>
             <div
-              data-css-2i7x9k=""
+              data-css-r2fq9u=""
             >
               <div
                 className="css-otejxm"
@@ -1630,7 +1630,7 @@ exports[`Storyshots menu onClicks 1`] = `
         data-css-18cl03z=""
       >
         <button
-          data-css-14y32uc=""
+          data-css-1e7y5c2=""
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -1649,7 +1649,7 @@ exports[`Storyshots menu onClicks 1`] = `
           </span>
         </button>
         <div
-          data-css-2i7x9k=""
+          data-css-r2fq9u=""
         >
           <div
             className="css-otejxm"
