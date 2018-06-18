@@ -229,6 +229,7 @@ class ActionMenuComponent extends React.Component {
     this.focusItemAtIndex = this.focusItemAtIndex.bind(this)
   }
   handleKeyDown(evt) {
+    console.log('actionmenu key', evt.key)
     if (evt.key === 'ArrowLeft' || evt.key === 'Escape') {
       this.navigateOut(evt)
     } else if (evt.key === 'ArrowDown') {
