@@ -96,17 +96,12 @@ const CaretDown = _ => (
   </svg>
 )
 
-const preventMenuClosure = evt => {
-  evt.preventDefault()
-  evt.stopPropagation()
-}
-
 class Dropdown extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       isFocused: false,
-      isOpen: this.props.open,
+      isOpen: false,
       selectedLabel: null
     }
     this.handleFocus = this.handleFocus.bind(this)
@@ -116,14 +111,17 @@ class Dropdown extends React.Component {
     this.handleMenuClick = this.handleMenuClick.bind(this)
   }
   handleToggleOpen(evt) {
-    this.setState(_ => ({ isOpen: !this.state.isOpen }))
-    if (typeof this.props.onClick === 'function') this.props.onClick(evt)
+    console.log('onClicked')
+    this.setState({ isOpen: !this.state.isOpen })
+    // if (typeof this.props.onClick === 'function') this.props.onClick(evt)
   }
   handleFocus() {
     this.setState(_ => ({ isFocused: true }))
+    if (typeof this.props.onFocus === 'function') this.props.onFocus(evt)
   }
   handleBlur() {
     this.setState(_ => ({ isFocused: false }))
+    if (typeof this.props.onBlur === 'function') this.props.onBlur(evt)
   }
   handleKeyDown(evt) {
     if (evt.key === 'ArrowDown') {
@@ -131,12 +129,13 @@ class Dropdown extends React.Component {
     }
   }
   handleMenuClick(evt) {
+    evt.preventDefault()
+    evt.stopPropagation()
+
     const target = evt.target
     const isItem = target.getAttribute('role') === 'menuitem'
     if (isItem) {
       this.setState({ selectedLabel: target.innerText, isOpen: false })
-    } else {
-      preventMenuClosure(evt)
     }
   }
   getLongestMenuLabelState() {
@@ -220,6 +219,7 @@ class Dropdown extends React.Component {
                 },
                 style: {
                   ...props.menu.props.style,
+                  minWidth: '0',
                   maxWidth: 'none',
                   width: this.field
                     ? this.field.getBoundingClientRect().width
@@ -237,19 +237,16 @@ Dropdown.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
   disabled: PropTypes.bool,
   error: PropTypes.bool,
-  icon: PropTypes.element,
+  innerRef: PropTypes.func,
   label: PropTypes.node,
   menu: PropTypes.element.isRequired,
-  open: PropTypes.bool,
   placeholder: PropTypes.string,
-  subLabel: PropTypes.node,
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  subLabel: PropTypes.node
 }
 Dropdown.defaultProps = {
   appearance: vars.appearances.default,
   disabled: false,
-  error: false,
-  open: false
+  error: false
 }
 Dropdown.contextTypes = {
   themeName: PropTypes.string

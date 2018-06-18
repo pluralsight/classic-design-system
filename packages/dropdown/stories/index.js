@@ -110,6 +110,22 @@ const layoutsStory = storiesOf('layouts', module)
     </div>
   ))
 
+const selectedLabelStory = storiesOf('placeholder', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
+  .add('as pre-selected item', _ => (
+    <Dropdown
+      placeholder="Two item"
+      menu={
+        <ActionMenu>
+          <ActionMenu.Item>One item</ActionMenu.Item>
+          <ActionMenu.Item>Two item</ActionMenu.Item>
+          <ActionMenu.Item>Three item</ActionMenu.Item>
+        </ActionMenu>
+      }
+    />
+  ))
+
 const menuStory = storiesOf('menu', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))

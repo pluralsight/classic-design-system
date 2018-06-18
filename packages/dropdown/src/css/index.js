@@ -10,7 +10,8 @@ import * as vars from '../vars'
 
 export default {
   '.psds-dropdown': {
-    display: 'inline-block'
+    display: 'inline-block',
+    position: 'relative'
   },
   '.psds-dropdown--disabled': {
     opacity: 0.5
@@ -178,7 +179,7 @@ export default {
 
   // __menu
   '.psds-dropdown__menu': {
-    position: 'fixed',
+    position: 'absolute',
     zIndex: '1',
     marginTop: core.layout.spacingXXSmall
   }
