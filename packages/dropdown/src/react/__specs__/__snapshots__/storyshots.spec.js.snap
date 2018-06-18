@@ -24,7 +24,7 @@ exports[`Storyshots appearance default 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -97,7 +97,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -189,7 +189,7 @@ exports[`Storyshots appearance subtle 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -262,7 +262,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -355,7 +355,7 @@ exports[`Storyshots disabled compare 1`] = `
   >
     <div>
       <label
-        data-css-w0yocm=""
+        data-css-1hniuff=""
         onKeyDown={[Function]}
       >
         <div
@@ -411,7 +411,7 @@ exports[`Storyshots disabled compare 1`] = `
         </div>
       </label>
       <label
-        data-css-1y0hkm3=""
+        data-css-1h53i33=""
         onKeyDown={[Function]}
       >
         <div
@@ -495,7 +495,7 @@ exports[`Storyshots labels all 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -578,7 +578,7 @@ exports[`Storyshots labels label 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -652,7 +652,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -731,7 +731,7 @@ exports[`Storyshots labels none 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -800,7 +800,7 @@ exports[`Storyshots labels placeholder 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -873,7 +873,7 @@ exports[`Storyshots labels subLabel 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -955,7 +955,7 @@ exports[`Storyshots layouts full width 1`] = `
       }
     >
       <label
-        data-css-w0yocm=""
+        data-css-1hniuff=""
         onKeyDown={[Function]}
         style={
           Object {
@@ -1008,7 +1008,7 @@ exports[`Storyshots layouts full width 1`] = `
         </div>
       </label>
       <label
-        data-css-w0yocm=""
+        data-css-1hniuff=""
         onKeyDown={[Function]}
         style={
           Object {
@@ -1079,7 +1079,7 @@ exports[`Storyshots layouts full width 1`] = `
         </div>
       </label>
       <label
-        data-css-w0yocm=""
+        data-css-1hniuff=""
         onKeyDown={[Function]}
         style={
           Object {
@@ -1132,7 +1132,7 @@ exports[`Storyshots layouts full width 1`] = `
         </div>
       </label>
       <label
-        data-css-w0yocm=""
+        data-css-1hniuff=""
         onKeyDown={[Function]}
         style={
           Object {
@@ -1246,7 +1246,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
         }
       >
         <label
-          data-css-w0yocm=""
+          data-css-1hniuff=""
           onKeyDown={[Function]}
         >
           <div
@@ -1329,7 +1329,7 @@ exports[`Storyshots menu divider 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -1407,7 +1407,7 @@ exports[`Storyshots menu in stack 1`] = `
     <div>
       <div>
         <label
-          data-css-w0yocm=""
+          data-css-1hniuff=""
           onKeyDown={[Function]}
         >
           <div
@@ -1460,7 +1460,7 @@ exports[`Storyshots menu in stack 1`] = `
       </div>
       <div>
         <label
-          data-css-w0yocm=""
+          data-css-1hniuff=""
           onKeyDown={[Function]}
         >
           <div
@@ -1540,7 +1540,7 @@ exports[`Storyshots menu nested 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -1618,7 +1618,7 @@ exports[`Storyshots menu onClicks 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -1714,7 +1714,7 @@ exports[`Storyshots menu single list 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -1790,7 +1790,7 @@ exports[`Storyshots menu single list w/ icon 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -1868,7 +1868,7 @@ exports[`Storyshots menu super long 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -1920,6 +1920,87 @@ exports[`Storyshots menu super long 1`] = `
 </div>
 `;
 
+exports[`Storyshots menu w/ subLabel 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-1hniuff=""
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-n53zhn=""
+      >
+        Level
+      </div>
+      <div
+        data-css-1870s0u=""
+      >
+        <button
+          data-css-8bndf1=""
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+        >
+          <span
+            aria-hidden={true}
+            data-css-e6fvyw=""
+          >
+            Three and the amazing item
+          </span>
+          <span
+            data-css-5m5yd6=""
+          />
+        </button>
+        <div
+          data-css-1uv5m12=""
+        >
+          <div
+            className="css-otejxm"
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 14L8 10h9z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1de0a6a=""
+      >
+        The course level
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
 exports[`Storyshots placeholder as pre-selected item 1`] = `
 <div
   style={
@@ -1944,7 +2025,7 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -1967,79 +2048,6 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
             data-css-5m5yd6=""
           >
             Two item
-          </span>
-        </button>
-        <div
-          data-css-1uv5m12=""
-        >
-          <div
-            className="css-otejxm"
-          >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.5 14L8 10h9z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots selectedLabel pre-selected 1`] = `
-<div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <label
-      data-css-w0yocm=""
-      onKeyDown={[Function]}
-    >
-      <div
-        data-css-1870s0u=""
-      >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            Three item
-          </span>
-          <span
-            data-css-5m5yd6=""
-          >
-            One of these
           </span>
         </button>
         <div
@@ -2090,7 +2098,7 @@ exports[`Storyshots whitelist name 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
@@ -2164,7 +2172,7 @@ exports[`Storyshots whitelist onChange 1`] = `
     }
   >
     <label
-      data-css-w0yocm=""
+      data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div

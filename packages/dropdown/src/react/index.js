@@ -204,9 +204,6 @@ class Dropdown extends React.Component {
             </div>
           )}
         </div>
-        {allProps.subLabel && (
-          <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
-        )}
         {props.menu &&
           state.isOpen && (
             <div {...styles.menu(allProps)}>
@@ -228,6 +225,9 @@ class Dropdown extends React.Component {
               })}
             </div>
           )}
+        {allProps.subLabel && (
+          <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
+        )}
       </label>
     )
   }

@@ -142,6 +142,20 @@ const menuStory = storiesOf('menu', module)
       }
     />
   ))
+  .add('w/ subLabel', _ => (
+    <Dropdown
+      label="Level"
+      subLabel="The course level"
+      menu={
+        <ActionMenu>
+          <ActionMenu.Item>One item</ActionMenu.Item>
+          <ActionMenu.Item>Two item</ActionMenu.Item>
+          <ActionMenu.Item>Three item</ActionMenu.Item>
+          <ActionMenu.Item>Three and the amazing item</ActionMenu.Item>
+        </ActionMenu>
+      }
+    />
+  ))
   .add('single list w/ icon', _ => (
     <Dropdown
       label="Level"
