@@ -28,7 +28,7 @@ exports[`Storyshots appearance default 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""
@@ -106,7 +106,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
         Problem field
       </div>
       <div
-        data-css-kvepjs=""
+        data-css-18cl03z=""
       >
         <button
           data-css-8bndf1=""
@@ -193,7 +193,7 @@ exports[`Storyshots appearance subtle 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-14y32uc=""
@@ -271,7 +271,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         Problem field
       </div>
       <div
-        data-css-kvepjs=""
+        data-css-18cl03z=""
       >
         <button
           data-css-14y32uc=""
@@ -364,7 +364,7 @@ exports[`Storyshots disabled compare 1`] = `
           Normal
         </div>
         <div
-          data-css-1870s0u=""
+          data-css-1ojgx83=""
         >
           <button
             data-css-8bndf1=""
@@ -420,7 +420,7 @@ exports[`Storyshots disabled compare 1`] = `
           I'm not usable
         </div>
         <div
-          data-css-1870s0u=""
+          data-css-1ojgx83=""
         >
           <button
             data-css-8bndf1=""
@@ -504,7 +504,7 @@ exports[`Storyshots labels all 1`] = `
         Some label
       </div>
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""
@@ -587,7 +587,7 @@ exports[`Storyshots labels label 1`] = `
         Some label
       </div>
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""
@@ -661,7 +661,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
         Some label
       </div>
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""
@@ -735,7 +735,7 @@ exports[`Storyshots labels none 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""
@@ -804,7 +804,7 @@ exports[`Storyshots labels placeholder 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""
@@ -877,7 +877,7 @@ exports[`Storyshots labels subLabel 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""
@@ -970,7 +970,7 @@ exports[`Storyshots layouts full width 1`] = `
           First
         </div>
         <div
-          data-css-1870s0u=""
+          data-css-1ojgx83=""
         >
           <button
             data-css-8bndf1=""
@@ -1023,7 +1023,7 @@ exports[`Storyshots layouts full width 1`] = `
           Second
         </div>
         <div
-          data-css-kvepjs=""
+          data-css-18cl03z=""
         >
           <button
             data-css-8bndf1=""
@@ -1094,7 +1094,7 @@ exports[`Storyshots layouts full width 1`] = `
           Third
         </div>
         <div
-          data-css-1870s0u=""
+          data-css-1ojgx83=""
         >
           <button
             data-css-14y32uc=""
@@ -1147,7 +1147,7 @@ exports[`Storyshots layouts full width 1`] = `
           Fourth
         </div>
         <div
-          data-css-kvepjs=""
+          data-css-18cl03z=""
         >
           <button
             data-css-14y32uc=""
@@ -1250,7 +1250,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
           onKeyDown={[Function]}
         >
           <div
-            data-css-1870s0u=""
+            data-css-1ojgx83=""
           >
             <button
               data-css-14y32uc=""
@@ -1338,7 +1338,7 @@ exports[`Storyshots menu divider 1`] = `
         Level
       </div>
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""
@@ -1416,7 +1416,7 @@ exports[`Storyshots menu in stack 1`] = `
             Level
           </div>
           <div
-            data-css-1870s0u=""
+            data-css-1ojgx83=""
           >
             <button
               data-css-8bndf1=""
@@ -1469,7 +1469,7 @@ exports[`Storyshots menu in stack 1`] = `
             Level
           </div>
           <div
-            data-css-1870s0u=""
+            data-css-1ojgx83=""
           >
             <button
               data-css-8bndf1=""
@@ -1549,7 +1549,7 @@ exports[`Storyshots menu nested 1`] = `
         Level
       </div>
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""
@@ -1627,7 +1627,7 @@ exports[`Storyshots menu onClicks 1`] = `
         Level
       </div>
       <div
-        data-css-kvepjs=""
+        data-css-18cl03z=""
       >
         <button
           data-css-14y32uc=""
@@ -1723,7 +1723,7 @@ exports[`Storyshots menu single list 1`] = `
         Level
       </div>
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""
@@ -1799,7 +1799,7 @@ exports[`Storyshots menu single list w/ icon 1`] = `
         Level
       </div>
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""
@@ -1877,7 +1877,7 @@ exports[`Storyshots menu super long 1`] = `
         Level
       </div>
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""
@@ -1953,7 +1953,7 @@ exports[`Storyshots menu w/ subLabel 1`] = `
         Level
       </div>
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""
@@ -2029,7 +2029,7 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""
@@ -2102,7 +2102,7 @@ exports[`Storyshots whitelist name 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""
@@ -2176,7 +2176,7 @@ exports[`Storyshots whitelist onChange 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-1870s0u=""
+        data-css-1ojgx83=""
       >
         <button
           data-css-8bndf1=""

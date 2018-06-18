@@ -51,7 +51,7 @@ export default {
   // __field-container
   '.psds-dropdown__field-container': {
     position: 'relative',
-    display: 'flex',
+    display: 'inline-flex',
     alignItems: 'center',
     minWidth: `calc(${iconVars.widths.medium} + ${core.layout.spacingXSmall})`
   },
