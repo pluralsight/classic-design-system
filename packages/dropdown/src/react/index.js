@@ -27,12 +27,18 @@ const dropdownHtmlPropsWhitelist = [
 const styles = {
   buttonSizer: _ => glamor.css(css['.psds-dropdown__button-sizer']),
   error: _ => glamor.css(css['.psds-dropdown__error']),
-  field: ({ appearance, icon, themeName }) =>
+  field: ({ appearance, error, icon, themeName }) =>
     glamor.css(
       css['.psds-dropdown__field'],
       css[`.psds-dropdown__field--appearance-${appearance}`],
       css[`.psds-dropdown__field.psds-theme--${themeName}`],
-      { ':focus': css['.psds-dropdown__field:focus'] }
+      error && css[`.psds-dropdown__field--error.psds-theme--${themeName}`],
+      {
+        ':focus': {
+          ...css['.psds-dropdown__field:focus'],
+          ...css[`.psds-dropdown__field.psds-theme--${themeName}:focus`]
+        }
+      }
     ),
   fieldContainer: ({ error, themeName }, { isFocused }) =>
     glamor.css(
@@ -45,7 +51,12 @@ const styles = {
                 `.psds-dropdown__field-container--error.psds-theme--${themeName}:before`
               ]
             },
-            ':after': css['.psds-dropdown__field-container--error:after']
+            ':after': {
+              ...css['.psds-dropdown__field-container--error:after'],
+              ...css[
+                `.psds-dropdown__field-container--error.psds-theme--${themeName}:after`
+              ]
+            }
           }
         : null,
       isFocused
@@ -56,7 +67,12 @@ const styles = {
                 `.psds-dropdown__field-container.psds-theme--${themeName}:focus:before`
               ]
             },
-            ':after': css['.psds-dropdown__field-container:focus:after']
+            ':after': {
+              ...css['.psds-dropdown__field-container:focus:after'],
+              ...css[
+                `.psds-dropdown__field-container.psds-theme--${themeName}:focus:after`
+              ]
+            }
           }
         : null
     ),

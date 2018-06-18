@@ -44,6 +44,18 @@ Object.keys(Dropdown.appearances).forEach(appearance =>
     <Dropdown appearance={appearance} error label="Problem field" />
   ))
 )
+appearanceStory.add('gaps', _ => (
+  <div>
+    <Dropdown label="Problem field" />
+    <Dropdown error label="Problem field" />
+    <Dropdown appearance={Dropdown.appearances.subtle} label="Problem field" />
+    <Dropdown
+      appearance={Dropdown.appearances.subtle}
+      error
+      label="Problem field"
+    />
+  </div>
+))
 
 const disabledStory = storiesOf('disabled', module)
   .addDecorator(PaddingDecorator)

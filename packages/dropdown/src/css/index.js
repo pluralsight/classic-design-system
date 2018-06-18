@@ -39,10 +39,16 @@ export default {
   '.psds-dropdown__field:focus': {
     outline: 'none'
   },
+  [`.psds-dropdown__field.psds-theme--${themeNames.light}:focus`]: {
+    border: '1px solid transparent'
+  },
   [`.psds-dropdown__field.psds-theme--${themeNames.light}`]: {
     background: core.colors.white,
     color: core.colors.gray05,
     border: `1px solid ${core.colors.gray02}`
+  },
+  [`.psds-dropdown__field--error.psds-theme--${themeNames.light}`]: {
+    border: '1px solid transparent'
   },
   [`.psds-dropdown__field--appearance-${vars.appearances.subtle}`]: {
     color: core.colors.gray01,
@@ -71,7 +77,11 @@ export default {
   [`.psds-dropdown__field-container.psds-theme--${
     themeNames.light
   }:focus:before`]: {
-    background: core.colors.bone
+    background: core.colors.bone,
+    top: '0',
+    left: '0',
+    right: '0',
+    bottom: '0'
   },
   '.psds-dropdown__field-container:focus:after': {
     content: ' ',
@@ -83,6 +93,14 @@ export default {
     background: core.colors.blue,
     zIndex: '-2',
     borderRadius: '4px'
+  },
+  [`.psds-dropdown__field-container.psds-theme--${
+    themeNames.light
+  }:focus:after`]: {
+    top: '-3px',
+    left: '-3px',
+    right: '-3px',
+    bottom: '-3px'
   },
   '.psds-dropdown__field-container--error:before': {
     content: ' ',
@@ -98,7 +116,11 @@ export default {
   [`.psds-dropdown__field-container--error.psds-theme--${
     themeNames.light
   }:before`]: {
-    background: core.colors.bone
+    background: core.colors.bone,
+    top: '0',
+    left: '0',
+    right: '0',
+    bottom: '0'
   },
   '.psds-dropdown__field-container--error:after': {
     content: ' ',
@@ -110,6 +132,14 @@ export default {
     background: core.colors.red,
     zIndex: '-2',
     borderRadius: '4px'
+  },
+  [`.psds-dropdown__field-container--error.psds-theme--${
+    themeNames.light
+  }:after`]: {
+    top: '-3px',
+    left: '-3px',
+    right: '-3px',
+    bottom: '-3px'
   },
 
   // __icon
