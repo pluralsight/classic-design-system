@@ -291,6 +291,8 @@ class ActionMenuComponent extends React.Component {
         origin={this.props.origin}
         innerRef={this.props.ref}
         role="menu"
+        onClick={this.props.onClick}
+        style={this.props.style}
       >
         {React.Children.map(this.props.children, (child, i) =>
           React.cloneElement(child, {
