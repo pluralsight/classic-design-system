@@ -28,6 +28,7 @@ module.exports = {
         page: '/components/dialog-modal-example'
       },
       '/components/drawer': { page: '/components/drawer' },
+      '/components/dropdown': { page: '/components/dropdown' },
       '/components/errors': { page: '/components/errors' },
       '/components/icon': { page: '/components/icon' },
       '/components/layout': { page: '/components/layout' },

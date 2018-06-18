@@ -40,8 +40,10 @@ class InAppExample extends React.Component {
           </div>
           <div className="selection">Selected: {this.state.value}</div>
         </div>
-        <Code lang="javascript" collapsible>{`
-class InAppExample extends React.Component {
+        <Code
+          lang="javascript"
+          collapsible
+        >{`class InAppExample extends React.Component {
   constructor() {
     super()
     this.state = { value: 'beginner' }
