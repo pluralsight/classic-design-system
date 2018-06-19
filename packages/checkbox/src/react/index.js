@@ -125,12 +125,13 @@ class Checkbox extends React.Component {
   handleClick(evt) {
     evt.preventDefault()
     evt.stopPropagation()
-    this.props.onCheck(
-      evt,
-      !this.props.checked,
-      this.props.value,
-      this.props.name
-    )
+    if (typeof this.props.onCheck === 'function')
+      this.props.onCheck(
+        evt,
+        !this.props.checked,
+        this.props.value,
+        this.props.name
+      )
     this.square.focus()
   }
   render() {
@@ -159,7 +160,7 @@ class Checkbox extends React.Component {
           tabIndex="-1"
           type="checkbox"
           readOnly
-          name={props.name}
+          name={allProps.name}
           checked={allProps.checked}
           value={allProps.value}
           ref={allProps.innerRef}
