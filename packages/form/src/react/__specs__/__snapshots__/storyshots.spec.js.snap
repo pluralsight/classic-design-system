@@ -1,0 +1,436 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Sample Form sample 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+        "width": "50%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid blue",
+        }
+      }
+    >
+      <div
+        data-css-15rjys7=""
+      >
+        <div
+          data-css-4l6uky=""
+        >
+          <h2
+            className={undefined}
+            data-css-10w3axr=""
+            size="large"
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            Sample form
+          </h2>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <label
+            data-css-w0yocm=""
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              data-css-n53zhn=""
+            >
+              Name
+            </div>
+            <div
+              data-css-1ghdxx6=""
+            >
+              <input
+                data-css-ly16us=""
+                disabled={false}
+                onBlur={[Function]}
+                onFocus={[Function]}
+                placeholder="What's your name?"
+              />
+            </div>
+          </label>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <label
+            data-css-w0yocm=""
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              data-css-n53zhn=""
+            >
+              Alias
+            </div>
+            <div
+              data-css-1ghdxx6=""
+            >
+              <input
+                data-css-ly16us=""
+                disabled={false}
+                onBlur={[Function]}
+                onFocus={[Function]}
+                placeholder="Do you have a nick name?"
+              />
+            </div>
+            <div
+              data-css-1de0a6a=""
+            >
+              *Optional
+            </div>
+          </label>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <label
+            data-css-w0yocm=""
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              data-css-n53zhn=""
+            >
+              Email address
+            </div>
+            <div
+              data-css-mdufbt=""
+            >
+              <input
+                data-css-ly16us=""
+                disabled={false}
+                onBlur={[Function]}
+                onFocus={[Function]}
+                placeholder={undefined}
+                value="steve@example.com"
+              />
+              <div
+                data-css-loo18p=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="warning icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-1de0a6a=""
+            >
+              Not a valid email address
+            </div>
+          </label>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <label
+            data-css-1hniuff=""
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              data-css-n53zhn=""
+            >
+              Occupation
+            </div>
+            <div
+              data-css-1812rv9=""
+            >
+              <button
+                data-css-8bndf1=""
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-e6fvyw=""
+                >
+                  Craftsperson
+                </span>
+                <span
+                  data-css-5m5yd6=""
+                >
+                  Select your occupation...
+                </span>
+              </button>
+              <div
+                data-css-1uv5m12=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 14L8 10h9z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              aria-checked={true}
+              data-css-1thcgnx=""
+              role="checkbox"
+              tabIndex="0"
+            >
+              <svg
+                aria-label="Checkmark"
+                data-css-a3uikz=""
+                role="img"
+                version="1.1"
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon
+                  points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
+                />
+              </svg>
+            </div>
+            <input
+              checked={true}
+              data-css-gyrv08=""
+              name={undefined}
+              readOnly={true}
+              tabIndex="-1"
+              type="checkbox"
+              value="someVal"
+            />
+            <div
+              data-css-pgc406=""
+            >
+              Checkbox selected
+            </div>
+          </label>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            data-css-gdknmt=""
+          />
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            data-css-1a26704=""
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            role="radiogroup"
+            tabIndex="0"
+          >
+            <div
+              data-css-xp79s5=""
+            >
+              <label
+                data-css-kn3wr0=""
+                onClick={[Function]}
+              >
+                <div
+                  aria-checked={false}
+                  data-css-dbvyuf=""
+                  onFocus={[Function]}
+                  role="radio"
+                  tabIndex="-1"
+                />
+                <input
+                  _name={undefined}
+                  checked={false}
+                  data-css-gyrv08=""
+                  name={undefined}
+                  readOnly={true}
+                  tabIndex="-1"
+                  type="radio"
+                  value="full"
+                />
+                <div
+                  data-css-pgc406=""
+                >
+                  Full-time employement
+                </div>
+              </label>
+            </div>
+            <div
+              data-css-xp79s5=""
+            >
+              <label
+                data-css-kn3wr0=""
+                onClick={[Function]}
+              >
+                <div
+                  aria-checked={false}
+                  data-css-dbvyuf=""
+                  onFocus={[Function]}
+                  role="radio"
+                  tabIndex="-1"
+                />
+                <input
+                  _name={undefined}
+                  checked={false}
+                  data-css-gyrv08=""
+                  name={undefined}
+                  readOnly={true}
+                  tabIndex="-1"
+                  type="radio"
+                  value="part"
+                />
+                <div
+                  data-css-pgc406=""
+                >
+                  Part-time employement
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            data-css-gdknmt=""
+          />
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <label
+            data-css-1p1sjwu=""
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              data-css-1j9p7fe=""
+            >
+              Comment
+            </div>
+            <div
+              data-css-1ghdxx6=""
+            >
+              <textarea
+                data-css-1vpjki6=""
+                disabled={false}
+                onBlur={[Function]}
+                onFocus={[Function]}
+                placeholder="Anything else to report?"
+                style={
+                  Object {
+                    "height": 112,
+                  }
+                }
+              />
+            </div>
+          </label>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            data-css-1cqgl9p=""
+          >
+            <div
+              data-css-7d5932=""
+            >
+              <button
+                data-css-1sql3pc=""
+                disabled={false}
+                style={Object {}}
+              >
+                <span
+                  className="css-1en8fmq"
+                >
+                  Save
+                </span>
+              </button>
+            </div>
+            <div
+              data-css-7d5932=""
+            >
+              <button
+                data-css-15alvov=""
+                disabled={false}
+                style={Object {}}
+              >
+                <span
+                  className="css-1en8fmq"
+                >
+                  Cancel
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
