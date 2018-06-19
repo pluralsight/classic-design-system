@@ -46,14 +46,25 @@ Object.keys(Dropdown.appearances).forEach(appearance =>
 )
 appearanceStory.add('gaps', _ => (
   <div>
-    <Dropdown label="Problem field" />
-    <Dropdown error label="Problem field" />
-    <Dropdown appearance={Dropdown.appearances.subtle} label="Problem field" />
-    <Dropdown
-      appearance={Dropdown.appearances.subtle}
-      error
-      label="Problem field"
-    />
+    <div>
+      <Dropdown label="Problem field" />
+    </div>
+    <div>
+      <Dropdown error label="Problem field" />
+    </div>
+    <div>
+      <Dropdown
+        appearance={Dropdown.appearances.subtle}
+        label="Problem field"
+      />
+    </div>
+    <div>
+      <Dropdown
+        appearance={Dropdown.appearances.subtle}
+        error
+        label="Problem field"
+      />
+    </div>
   </div>
 ))
 

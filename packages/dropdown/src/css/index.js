@@ -61,6 +61,7 @@ export default {
     position: 'relative',
     display: 'inline-flex',
     alignItems: 'center',
+    width: '100%',
     minWidth: `calc(${iconVars.widths.medium} + ${core.layout.spacingXSmall})`
   },
   '.psds-dropdown__field-container:focus:before': {
