@@ -168,7 +168,6 @@ class InAppExample extends React.Component {
   }
   handleChange(evt) {
     const { name, value } = evt.target
-    console.log('target', evt.target, 'name', name, 'value', value)
     this.setState({
       [name]: value
     })
@@ -200,109 +199,222 @@ class InAppExample extends React.Component {
     const isError = name => !!errorMsg(name)
     const hasErrors = Object.keys(state.errors).length > 0
     return (
-      <div className="example">
-        {state.isSubmitted && (
-          <Banner
-            color={Banner.colors.green}
-            style={{ position: 'absolute', top: '0', left: '0' }}
-          >
-            Course created!
-          </Banner>
-        )}
-        {hasErrors && (
-          <Banner
-            color={Banner.colors.red}
-            style={{ position: 'absolute', top: '0', left: '0' }}
-          >
-            Failed: Sample course form has errors
-          </Banner>
-        )}
-        <Theme>
-          <form onSubmit={this.handleSubmit}>
-            <Form.VerticalLayout>
-              <Text.Heading>
-                <h2>Course sample form</h2>
-              </Text.Heading>
-              <TextInput
-                error={isError('name')}
-                onChange={this.handleChange}
-                name="name"
-                label="Course name"
-                placeholder="Title"
-                subLabel={errorMsg('name') || 'Use Title Case'}
-                value={state.name}
-              />
-              <Dropdown
-                error={isError('level')}
-                label="Course difficulty level"
-                placeholder="Choose one"
-                subLabel={errorMsg('level')}
-                menu={
-                  <ActionMenu>
-                    {['beginner', 'intermediate', 'advanced'].map(level => (
-                      <ActionMenu.Item
-                        name="level"
-                        onClick={_ => this.setState({ level })}
-                      >
-                        {stringUtil.capitalize(level)}
-                      </ActionMenu.Item>
-                    ))}
-                  </ActionMenu>
-                }
-              />
-              <Checkbox
-                error={isError('slides')}
-                checked={state.slides}
-                name="slides"
-                label="Has slides?"
-                onCheck={(_, checked, __, name) =>
-                  this.setState({ [name]: checked })
-                }
-              />
-              <Form.Divider />
-              <Radio.Group
-                error={isError('slidestech')}
-                disabled={!state.slides}
-                name="slidestech"
-                onSelect={(_, slidestech) => this.setState({ slidestech })}
-                value={state.slidestech}
-              >
-                <Radio.Button value="key" label="Keynote" />
-                <Radio.Button value="pptx" label="Powerpoint" />
-              </Radio.Group>
-              <Form.Divider />
-              <TextArea
-                error={isError('desc')}
-                label="Description"
-                subLabel={errorMsg('desc')}
-                placeholder="What is your course about?"
-                onChange={this.handleChange}
-                name="desc"
-                value={state.desc}
-              />
-              <Form.ButtonRow>
-                <Button
-                  loading={state.isSubmitting}
-                  onClick={this.handleSubmit}
+      <div>
+        <div className="example">
+          {state.isSubmitted && (
+            <Banner
+              color={Banner.colors.green}
+              style={{ position: 'absolute', top: '0', left: '0' }}
+            >
+              Course created!
+            </Banner>
+          )}
+          {hasErrors && (
+            <Banner
+              color={Banner.colors.red}
+              style={{ position: 'absolute', top: '0', left: '0' }}
+            >
+              Failed: Sample course form has errors
+            </Banner>
+          )}
+          <Theme>
+            <form onSubmit={this.handleSubmit}>
+              <Form.VerticalLayout>
+                <Text.Heading>
+                  <h2>Course sample form</h2>
+                </Text.Heading>
+                <TextInput
+                  error={isError('name')}
+                  onChange={this.handleChange}
+                  name="name"
+                  label="Course name"
+                  placeholder="Title"
+                  subLabel={errorMsg('name') || 'Use Title Case'}
+                  value={state.name}
+                />
+                <Dropdown
+                  error={isError('level')}
+                  label="Course difficulty level"
+                  placeholder="Choose one"
+                  subLabel={errorMsg('level')}
+                  menu={
+                    <ActionMenu>
+                      {['beginner', 'intermediate', 'advanced'].map(level => (
+                        <ActionMenu.Item
+                          name="level"
+                          onClick={_ => this.setState({ level })}
+                        >
+                          {stringUtil.capitalize(level)}
+                        </ActionMenu.Item>
+                      ))}
+                    </ActionMenu>
+                  }
+                />
+                <Checkbox
+                  error={isError('slides')}
+                  checked={state.slides}
+                  name="slides"
+                  label="Has slides?"
+                  onCheck={(_, checked, __, name) =>
+                    this.setState({ [name]: checked })
+                  }
+                />
+                <Form.Divider />
+                <Radio.Group
+                  error={isError('slidestech')}
+                  disabled={!state.slides}
+                  name="slidestech"
+                  onSelect={(_, slidestech) => this.setState({ slidestech })}
+                  value={state.slidestech}
                 >
-                  Save
-                </Button>
-                <Button
-                  onClick={_ => {
-                    if (confirm('Confirm reset?')) this.reset()
-                  }}
-                  appearance={Button.appearances.flat}
-                >
-                  Cancel
-                </Button>
-              </Form.ButtonRow>
-            </Form.VerticalLayout>
-          </form>
-        </Theme>
+                  <Radio.Button value="key" label="Keynote" />
+                  <Radio.Button value="pptx" label="Powerpoint" />
+                </Radio.Group>
+                <Form.Divider />
+                <TextArea
+                  error={isError('desc')}
+                  label="Description"
+                  subLabel={errorMsg('desc')}
+                  placeholder="What is your course about?"
+                  onChange={this.handleChange}
+                  name="desc"
+                  value={state.desc}
+                />
+                <Form.ButtonRow>
+                  <Button
+                    loading={state.isSubmitting}
+                    onClick={this.handleSubmit}
+                  >
+                    Save
+                  </Button>
+                  <Button
+                    appearance={Button.appearances.flat}
+                    onClick={evt => evt.preventDefault()}
+                  >
+                    Cancel
+                  </Button>
+                </Form.ButtonRow>
+              </Form.VerticalLayout>
+            </form>
+          </Theme>
+        </div>
+
+        <Code
+          lang="javascript"
+          collapsible
+        >{`class InAppExample extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      errors: {},
+      isSubmitting: false,
+      name: '',
+      level: null,
+      slides: false,
+      slidestech: null,
+      desc: ''
+    }
+    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleChange = this.handleChange.bind(this)
+    this.reset = this.reset.bind(this)
+  }
+  handleChange(evt) {
+    const { name, value } = evt.target
+    this.setState({
+      [name]: value
+    })
+  }
+  handleSubmit(evt) {
+    evt.preventDefault()
+    // ...
+  }
+  render() {
+    const { props, state } = this
+    const errorMsg = name => state.errors[name]
+    const isError = name => !!errorMsg(name)
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <Form.VerticalLayout>
+          <Text.Heading>
+            <h2>Course sample form</h2>
+          </Text.Heading>
+          <TextInput
+            error={isError('name')}
+            onChange={this.handleChange}
+            name="name"
+            label="Course name"
+            placeholder="Title"
+            subLabel={errorMsg('name') || 'Use Title Case'}
+            value={state.name}
+          />
+          <Dropdown
+            error={isError('level')}
+            label="Course difficulty level"
+            placeholder="Choose one"
+            subLabel={errorMsg('level')}
+            menu={
+              <ActionMenu>
+                {['beginner', 'intermediate', 'advanced'].map(level => (
+                  <ActionMenu.Item
+                    name="level"
+                    onClick={_ => this.setState({ level })}
+                  >
+                    {stringUtil.capitalize(level)}
+                  </ActionMenu.Item>
+                ))}
+              </ActionMenu>
+            }
+          />
+          <Checkbox
+            error={isError('slides')}
+            checked={state.slides}
+            name="slides"
+            label="Has slides?"
+            onCheck={(_, checked, __, name) =>
+              this.setState({ [name]: checked })
+            }
+          />
+          <Form.Divider />
+          <Radio.Group
+            error={isError('slidestech')}
+            disabled={!state.slides}
+            name="slidestech"
+            onSelect={(_, slidestech) => this.setState({ slidestech })}
+            value={state.slidestech}
+          >
+            <Radio.Button value="key" label="Keynote" />
+            <Radio.Button value="pptx" label="Powerpoint" />
+          </Radio.Group>
+          <Form.Divider />
+          <TextArea
+            error={isError('desc')}
+            label="Description"
+            subLabel={errorMsg('desc')}
+            placeholder="What is your course about?"
+            onChange={this.handleChange}
+            name="desc"
+            value={state.desc}
+          />
+          <Form.ButtonRow>
+            <Button
+              loading={state.isSubmitting}
+              onClick={this.handleSubmit}
+            >
+              Save
+            </Button>
+            <Button appearance={Button.appearances.flat} onClick={_ => {}}>
+              Cancel
+            </Button>
+          </Form.ButtonRow>
+        </Form.VerticalLayout>
+      </form>
+    )
+  }
+}`}</Code>
         <style jsx>{`
           .example {
             position: relative;
-            background: ${core.colors.gray04};
+            background: ${core.colors.gray05};
             padding: ${core.layout.spacingLarge} ${core.layout.spacingXLarge};
           }
         `}</style>
