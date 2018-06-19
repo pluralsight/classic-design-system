@@ -127,9 +127,10 @@ class Dropdown extends React.Component {
     this.handleMenuClick = this.handleMenuClick.bind(this)
   }
   handleToggleOpen(evt) {
-    console.log('onClicked')
+    evt.preventDefault()
+    evt.stopPropagation()
     this.setState({ isOpen: !this.state.isOpen })
-    // if (typeof this.props.onClick === 'function') this.props.onClick(evt)
+    if (typeof this.props.onClick === 'function') this.props.onClick(evt)
   }
   handleFocus() {
     this.setState(_ => ({ isFocused: true }))
@@ -153,6 +154,8 @@ class Dropdown extends React.Component {
     if (isItem) {
       this.setState({ selectedLabel: target.innerText, isOpen: false })
     }
+    if (this.props.menu && typeof this.props.menu.props.onClick === 'function')
+      this.props.menu.props.onClick(evt)
   }
   getLongestMenuLabelState() {
     const actionMenu = React.Children.toArray(this.props.menu)[0]
