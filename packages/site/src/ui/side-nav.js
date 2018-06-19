@@ -339,6 +339,9 @@ export default withHeadings(props => (
       <NavLink href="/components/errors" headings={props.headings}>
         Errors
       </NavLink>
+      <NavLink href="/components/form" headings={props.headings}>
+        Form
+      </NavLink>
       <NavLink href="/components/icon" headings={props.headings}>
         Icon
       </NavLink>

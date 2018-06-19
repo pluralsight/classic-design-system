@@ -23,7 +23,7 @@ import {
 
 export default withServerProps(_ => (
   <Chrome>
-    <Content title="Layout">
+    <Content title="Errors">
       <PageHeading packageName="errors">Errors</PageHeading>
 
       <Intro>

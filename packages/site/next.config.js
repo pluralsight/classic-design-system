@@ -30,6 +30,7 @@ module.exports = {
       '/components/drawer': { page: '/components/drawer' },
       '/components/dropdown': { page: '/components/dropdown' },
       '/components/errors': { page: '/components/errors' },
+      '/components/form': { page: '/components/form' },
       '/components/icon': { page: '/components/icon' },
       '/components/layout': { page: '/components/layout' },
       '/components/link': { page: '/components/link' },
