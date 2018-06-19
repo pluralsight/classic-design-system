@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.8.6"></a>
+## [10.8.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.8.5...@pluralsight/ps-design-system-button@10.8.6) (2018-06-19)
+
+
+### Bug Fixes
+
+* **button:** text then loading, truly centers loading spinner ([0879aad](https://github.com/pluralsight/design-system/commit/0879aad))
+
+
+
+
 <a name="10.8.5"></a>
 ## [10.8.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.8.4...@pluralsight/ps-design-system-button@10.8.5) (2018-06-14)
 
