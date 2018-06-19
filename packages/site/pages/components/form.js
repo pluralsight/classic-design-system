@@ -450,6 +450,97 @@ export default withServerProps(_ => (
       </P>
       <InAppExample />
 
+      <SectionHeading>Form.VerticalLayout</SectionHeading>
+      <P>
+        Forms should be horizontally left-aligned, with one input control per
+        line, and inputs are stretch to the full container width. Bring your own
+        container. <Text.Code>Form.VerticalLayout</Text.Code> takes care of the
+        vertical spacing between controls.
+      </P>
+      <Example.React
+        themeToggle
+        orient="vertical"
+        includes={{
+          ActionMenu,
+          Button,
+          Checkbox,
+          Dropdown,
+          Form,
+          Radio,
+          TextArea,
+          TextInput
+        }}
+        codes={[
+          `<div style={{ width: '80%' }}>
+  <Form.VerticalLayout>
+    <TextInput placeholder="Stacked" />
+    <TextInput placeholder="In a form" />
+  </Form.VerticalLayout>
+</div>`
+        ]}
+      />
+
+      <SectionHeading>Form.Divider</SectionHeading>
+      <P>
+        Dividers are simple visual indicators that break form flow and content
+        into logical pieces.
+      </P>
+      <Example.React
+        themeToggle
+        orient="vertical"
+        includes={{
+          ActionMenu,
+          Button,
+          Checkbox,
+          Dropdown,
+          Form,
+          Radio,
+          TextArea,
+          TextInput
+        }}
+        codes={[
+          `<div style={{ width: '80%' }}>
+  <Form.VerticalLayout>
+    <TextInput placeholder="Related stuff" />
+    <Form.Divider />
+    <TextInput placeholder="Other related stuff" />
+  </Form.VerticalLayout>
+</div>`
+        ]}
+      />
+
+      <SectionHeading>Form.ButtonRow</SectionHeading>
+      <P>
+        Forms commonly have multiple buttons that a user can interact with.
+        Those buttons should be on a single row and left-aligned.{' '}
+        <Text.Code>Form.ButtonRow</Text.Code> will help.
+      </P>
+      <Example.React
+        themeToggle
+        orient="vertical"
+        includes={{
+          ActionMenu,
+          Button,
+          Checkbox,
+          Dropdown,
+          Form,
+          Radio,
+          TextArea,
+          TextInput
+        }}
+        codes={[
+          `<div style={{ width: '80%' }}>
+  <Form.VerticalLayout>
+    <TextInput placeholder="Related stuff" />
+    <TextInput placeholder="Other related stuff" />
+    <Form.ButtonRow>
+      <Button>Primary</Button>
+      <Button appearance={Button.appearances.flat}>Secondary</Button>
+    </Form.ButtonRow>
+  </Form.VerticalLayout>
+</div>`
+        ]}
+      />
       <SectionHeading>Form controls</SectionHeading>
       <P>
         Each one of these controls is a separate package. They are mean to be
