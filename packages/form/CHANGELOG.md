@@ -1,0 +1,16 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="0.2.0"></a>
+# 0.2.0 (2018-06-19)
+
+
+### Features
+
+* **form:** add input icon, error, and focus support ([3b7e356](https://github.com/pluralsight/design-system/commit/3b7e356))
+* **form:** input default look, appearance, and labels ([7a62ec1](https://github.com/pluralsight/design-system/commit/7a62ec1))
+* **form:** new component ([aa2175a](https://github.com/pluralsight/design-system/commit/aa2175a))
+* **form:** support disabled input ([bdece52](https://github.com/pluralsight/design-system/commit/bdece52))
+* **form:** support light theme input ([04a5f51](https://github.com/pluralsight/design-system/commit/04a5f51))
