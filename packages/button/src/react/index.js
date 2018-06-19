@@ -82,7 +82,7 @@ const getButtonStyles = props =>
     props.css
   )
 
-const styleIconAlignIconContainer = ({ iconAlign }) =>
+const styleIconAlignIconContainer = ({ icon, iconAlign }) =>
   css[`.psds-button__icon--iconAlign-${iconAlign}`]
 
 const styleIconOnlyIconContainer = ({ iconOnly, isLoadingWithNoText }) =>
@@ -138,7 +138,7 @@ const renderIcon = props =>
     <IconContainer
       iconAlign={props.iconAlign}
       iconOnly={React.Children.count(props.children) <= 0}
-      isLoadingNoText={props.isLoadingNoText}
+      isLoadingWithNoText={props.isLoadingWithNoText}
     >
       <Icon size={mapIconSize(props)}>
         <LoadingIndicator
