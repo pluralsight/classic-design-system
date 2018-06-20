@@ -170,7 +170,7 @@ class Dropdown extends React.Component {
               return longestState
             }
           },
-          { hasIcon: false, label: '' }
+          { hasIcon: false, label: this.props.placeholder || '' }
         )
       : 0
     return longestState

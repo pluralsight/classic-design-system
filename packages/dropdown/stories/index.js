@@ -318,3 +318,15 @@ const menuStory = storiesOf('menu', module)
       }
     />
   ))
+  .add('w/ longer placeholder', _ => (
+    <Dropdown
+      label="Level"
+      placeholder="This one is longer than any menu item"
+      menu={
+        <ActionMenu>
+          <ActionMenu.Item>One item</ActionMenu.Item>
+          <ActionMenu.Item>Two item</ActionMenu.Item>
+        </ActionMenu>
+      }
+    />
+  ))
