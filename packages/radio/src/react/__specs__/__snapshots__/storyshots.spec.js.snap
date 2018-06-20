@@ -299,7 +299,7 @@ exports[`Storyshots Radio error 1`] = `
         >
           <div
             aria-checked={false}
-            data-css-1fx3zxj=""
+            data-css-169qicc=""
             onFocus={[Function]}
             role="radio"
             tabIndex="-1"
@@ -330,7 +330,7 @@ exports[`Storyshots Radio error 1`] = `
         >
           <div
             aria-checked={true}
-            data-css-13m5fgh=""
+            data-css-3szuid=""
             onFocus={[Function]}
             role="radio"
             tabIndex="-1"
@@ -365,7 +365,7 @@ exports[`Storyshots Radio error 1`] = `
         >
           <div
             aria-checked={false}
-            data-css-1fx3zxj=""
+            data-css-169qicc=""
             onFocus={[Function]}
             role="radio"
             tabIndex="-1"

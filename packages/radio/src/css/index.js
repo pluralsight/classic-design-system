@@ -49,10 +49,10 @@ export default {
   '.psds-radio-button__circle:focus:before': {
     content: ' ',
     position: 'absolute',
-    top: '-4px',
-    left: '-4px',
-    right: '-4px',
-    bottom: '-4px',
+    top: '-3px',
+    left: '-3px',
+    right: '-3px',
+    bottom: '-3px',
     background: core.colors.gray05,
     zIndex: '-1',
     borderRadius: '50%'
@@ -60,10 +60,10 @@ export default {
   '.psds-radio-button__circle:focus:after': {
     content: ' ',
     position: 'absolute',
-    top: '-7px',
-    left: '-7px',
-    right: '-7px',
-    bottom: '-7px',
+    top: '-6px',
+    left: '-6px',
+    right: '-6px',
+    bottom: '-6px',
     background: core.colors.blue,
     zIndex: '-2',
     borderRadius: '50%'
@@ -74,10 +74,10 @@ export default {
   '.psds-radio-button__circle--error:before': {
     content: ' ',
     position: 'absolute',
-    top: '-4px',
-    left: '-4px',
-    right: '-4px',
-    bottom: '-4px',
+    top: '-3px',
+    left: '-3px',
+    right: '-3px',
+    bottom: '-3px',
     background: core.colors.gray05,
     zIndex: '-1',
     borderRadius: '50%'
@@ -90,10 +90,10 @@ export default {
   '.psds-radio-button__circle--error:after': {
     content: ' ',
     position: 'absolute',
-    top: '-7px',
-    left: '-7px',
-    right: '-7px',
-    bottom: '-7px',
+    top: '-6px',
+    left: '-6px',
+    right: '-6px',
+    bottom: '-6px',
     background: core.colors.red,
     zIndex: '-2',
     borderRadius: '50%'
