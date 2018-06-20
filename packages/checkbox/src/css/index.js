@@ -37,20 +37,20 @@ export default {
   '.psds-checkbox__square:focus:before .psds-checkbox__square--error:before': {
     content: ' ',
     position: 'absolute',
-    top: '-4px',
-    left: '-4px',
-    right: '-4px',
-    bottom: '-4px',
+    top: '-3px',
+    left: '-3px',
+    right: '-3px',
+    bottom: '-3px',
     zIndex: '-1',
     borderRadius: '2px'
   },
   '.psds-checkbox__square:focus:after .psds-checkbox__square--error:after': {
     content: ' ',
     position: 'absolute',
-    top: '-7px',
-    left: '-7px',
-    right: '-7px',
-    bottom: '-7px',
+    top: '-6px',
+    left: '-6px',
+    right: '-6px',
+    bottom: '-6px',
     zIndex: '-2',
     borderRadius: '4px'
   },
@@ -77,16 +77,16 @@ export default {
     border: 'none'
   },
   '.psds-checkbox__square--checked:focus:before, .psds-checkbox__square--checked--error:before': {
-    top: '-2px',
-    left: '-2px',
-    right: '-2px',
-    bottom: '-2px'
+    top: '-1px',
+    left: '-1px',
+    right: '-1px',
+    bottom: '-1px'
   },
   '.psds-checkbox__square--checked:focus:after, .psds-checkbox__square--checked--error:after': {
-    top: '-5px',
-    left: '-5px',
-    right: '-5px',
-    bottom: '-5px'
+    top: '-4px',
+    left: '-4px',
+    right: '-4px',
+    bottom: '-4px'
   },
 
   // __checkmark

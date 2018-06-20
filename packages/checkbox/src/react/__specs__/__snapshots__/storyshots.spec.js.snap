@@ -30,24 +30,22 @@ exports[`Storyshots Checkbox checked 1`] = `
     >
       <div
         aria-checked={true}
-        data-css-18kl1pt=""
+        data-css-1vvay1p=""
         role="checkbox"
         tabIndex="0"
       >
-        <div
-          className="css-12f5sv2"
+        <svg
+          aria-label="Checkmark"
+          data-css-a3uikz=""
+          role="img"
+          version="1.1"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-label="check icon"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
-            />
-          </svg>
-        </div>
+          <polygon
+            points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
+          />
+        </svg>
       </div>
       <input
         checked={true}
@@ -98,7 +96,7 @@ exports[`Storyshots Checkbox default 1`] = `
     >
       <div
         aria-checked={false}
-        data-css-yu3qnt=""
+        data-css-14w6mk2=""
         role="checkbox"
         tabIndex="0"
       />
@@ -151,7 +149,7 @@ exports[`Storyshots Checkbox disabled 1`] = `
     >
       <div
         aria-checked={false}
-        data-css-1372o4l=""
+        data-css-4f5v7u=""
         role="checkbox"
         tabIndex="-1"
       />
@@ -205,24 +203,22 @@ exports[`Storyshots Checkbox error 1`] = `
       >
         <div
           aria-checked={true}
-          data-css-dtfr83=""
+          data-css-16dprvt=""
           role="checkbox"
           tabIndex="0"
         >
-          <div
-            className="css-12f5sv2"
+          <svg
+            aria-label="Checkmark"
+            data-css-a3uikz=""
+            role="img"
+            version="1.1"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              aria-label="check icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
-              />
-            </svg>
-          </div>
+            <polygon
+              points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
+            />
+          </svg>
         </div>
         <input
           checked={true}
@@ -246,7 +242,7 @@ exports[`Storyshots Checkbox error 1`] = `
       >
         <div
           aria-checked={false}
-          data-css-yobc34=""
+          data-css-1h6c3kx=""
           role="checkbox"
           tabIndex="0"
         />
@@ -312,7 +308,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
       >
         <div
           aria-checked={false}
-          data-css-yu3qnt=""
+          data-css-14w6mk2=""
           role="checkbox"
           tabIndex="0"
         />
@@ -339,7 +335,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
       >
         <div
           aria-checked={false}
-          data-css-yu3qnt=""
+          data-css-14w6mk2=""
           role="checkbox"
           tabIndex="0"
         />
@@ -366,7 +362,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
       >
         <div
           aria-checked={false}
-          data-css-yu3qnt=""
+          data-css-14w6mk2=""
           role="checkbox"
           tabIndex="0"
         />
