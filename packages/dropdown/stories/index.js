@@ -330,3 +330,34 @@ const menuStory = storiesOf('menu', module)
       }
     />
   ))
+  .add('w/ longer nested menu item label', _ => (
+    <Dropdown
+      label="Level"
+      menu={
+        <ActionMenu>
+          <ActionMenu.Item>Short</ActionMenu.Item>
+          <ActionMenu.Item
+            nested={
+              <ActionMenu>
+                <ActionMenu.Item
+                  nested={
+                    <ActionMenu>
+                      <ActionMenu.Item>This is pretty longest</ActionMenu.Item>
+                      <ActionMenu.Item>
+                        The longest in el mundo. Find me!
+                      </ActionMenu.Item>
+                    </ActionMenu>
+                  }
+                >
+                  Longer and longer
+                </ActionMenu.Item>
+                <ActionMenu.Item>This one is longer</ActionMenu.Item>
+              </ActionMenu>
+            }
+          >
+            Short enough
+          </ActionMenu.Item>
+        </ActionMenu>
+      }
+    />
+  ))

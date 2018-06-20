@@ -158,22 +158,45 @@ class Dropdown extends React.Component {
       this.props.menu.props.onClick(evt)
   }
   getLongestMenuLabelState() {
-    const actionMenu = React.Children.toArray(this.props.menu)[0]
-    const longestState = actionMenu
-      ? React.Children.toArray(actionMenu.props.children).reduce(
-          (longestState, item) => {
-            // NOTE: only works if it's a string -- are there valid cases where actionMenuItem child is not a string
-            const label = React.Children.toArray(item.props.children)[0]
-            if (label && label.length > longestState.label.length) {
-              return { hasIcon: !!item.props.icon, label }
-            } else {
-              return longestState
-            }
-          },
-          { hasIcon: false, label: this.props.placeholder || '' }
-        )
-      : 0
-    return longestState
+    const getMenuItems = menu =>
+      menu ? React.Children.toArray(menu.props.children) : []
+    const getNestedMenu = item => item && item.props.nested
+    const hasIcon = item => item && !!item.props.icon
+    const getLabel = item =>
+      // NOTE: only works if it's a string -- are there valid cases where actionMenuItem child is not a string
+      React.Children.toArray(item.props.children)[0] || ''
+    const getState = item => ({
+      hasIcon: hasIcon(item),
+      label: getLabel(item)
+    })
+    const itemIsLonger = (state, item) =>
+      getLabel(item).length > state.label.length
+    const newStateIsLonger = (oldState, newState) =>
+      newState.label.length > oldState.label.length
+
+    const getLongestState = (startLongest, menu) => {
+      return getMenuItems(menu).reduce((currentLongest, item) => {
+        const nested = getNestedMenu(item)
+        if (nested) {
+          const nestedLongest = getLongestState(currentLongest, nested)
+          const newLongest = itemIsLonger(nestedLongest, item)
+            ? getState(item)
+            : nestedLongest
+          return newStateIsLonger(currentLongest, newLongest)
+            ? newLongest
+            : currentLongest
+        } else {
+          return itemIsLonger(currentLongest, item)
+            ? getState(item)
+            : currentLongest
+        }
+      }, startLongest)
+    }
+
+    return getLongestState(
+      { hasIcon: false, label: this.props.placeholder || '' },
+      this.props.menu
+    )
   }
   render() {
     const { context, props, state } = this
