@@ -40,11 +40,18 @@ const styles = {
             ...css[
               '.psds-checkbox__square:focus:before .psds-checkbox__square--error:before'
             ],
+            ...css[
+              `.psds-checkbox__square.psds-theme--${themeName}:focus:before .psds-checkbox__square--error.psds-theme--${themeName}:before`
+            ],
             ...css['.psds-checkbox__square:focus:before'],
-            ...(checked &&
-              css[
+            ...(checked && {
+              ...css[
                 '.psds-checkbox__square--checked:focus:before, .psds-checkbox__square--checked--error:before'
-              ]),
+              ],
+              ...css[
+                `.psds-checkbox__square--checked.psds-theme--${themeName}:focus:before, .psds-checkbox__square--checked--error.psds-theme--${themeName}:before`
+              ]
+            }),
             ...css[
               `.psds-checkbox__square.psds-theme--${themeName}:focus:before`
             ]
@@ -53,11 +60,18 @@ const styles = {
             ...css[
               '.psds-checkbox__square:focus:after .psds-checkbox__square--error:after'
             ],
+            ...css[
+              `.psds-checkbox__square.psds-theme--${themeName}:focus:after .psds-checkbox__square--error.psds-theme--${themeName}:after`
+            ],
             ...css['.psds-checkbox__square:focus:after'],
-            ...(checked &&
-              css[
+            ...(checked && {
+              ...css[
                 '.psds-checkbox__square--checked:focus:after, .psds-checkbox__square--checked--error:after'
-              ])
+              ],
+              ...css[
+                `.psds-checkbox__square--checked.psds-theme--${themeName}:focus:after, .psds-checkbox__square--checked--error.psds-theme--${themeName}:after`
+              ]
+            })
           }
         })
       },
@@ -67,24 +81,38 @@ const styles = {
               ...css[
                 '.psds-checkbox__square:focus:before .psds-checkbox__square--error:before'
               ],
+              ...css[
+                `.psds-checkbox__square.psds-theme--${themeName}:focus:before .psds-checkbox__square--error.psds-theme--${themeName}:before`
+              ],
               ...css['.psds-checkbox__square--error:before'],
               ...css[
                 `.psds-checkbox__square--error.psds-theme--${themeName}:before`
               ],
-              ...(checked &&
-                css[
+              ...(checked && {
+                ...css[
                   '.psds-checkbox__square--checked:focus:before, .psds-checkbox__square--checked--error:before'
-                ])
+                ],
+                ...css[
+                  `.psds-checkbox__square--checked.psds-theme--${themeName}:focus:before, .psds-checkbox__square--checked--error.psds-theme--${themeName}:before`
+                ]
+              })
             },
             ':after': {
               ...css[
                 '.psds-checkbox__square:focus:after .psds-checkbox__square--error:after'
               ],
+              ...css[
+                `.psds-checkbox__square.psds-theme--${themeName}:focus:after .psds-checkbox__square--error.psds-theme--${themeName}:after`
+              ],
               ...css['.psds-checkbox__square--error:after'],
-              ...(checked &&
-                css[
+              ...(checked && {
+                ...css[
                   '.psds-checkbox__square--checked:focus:after, .psds-checkbox__square--checked--error:after'
-                ])
+                ],
+                ...css[
+                  `.psds-checkbox__square--checked.psds-theme--${themeName}:focus:after, .psds-checkbox__square--checked--error.psds-theme--${themeName}:after`
+                ]
+              })
             }
           }
         : null
