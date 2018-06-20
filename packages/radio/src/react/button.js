@@ -38,7 +38,12 @@ const styles = {
                 `.psds-radio-button__circle--error.psds-theme--${themeName}:before`
               ]
             },
-            ':after': css['.psds-radio-button__circle--error:after']
+            ':after': {
+              ...css['.psds-radio-button__circle--error:after'],
+              ...css[
+                `.psds-radio-button__circle--error.psds-theme--${themeName}:after`
+              ]
+            }
           }
         : null,
       _isFocused
@@ -49,7 +54,12 @@ const styles = {
                 `.psds-radio-button__circle.psds-theme--${themeName}:focus:before`
               ]
             },
-            ':after': css['.psds-radio-button__circle:focus:after']
+            ':after': {
+              ...css['.psds-radio-button__circle:focus:after'],
+              ...css[
+                `.psds-radio-button__circle.psds-theme--${themeName}:focus:after`
+              ]
+            }
           }
         : null
     ),

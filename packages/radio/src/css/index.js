@@ -57,6 +57,13 @@ export default {
     zIndex: '-1',
     borderRadius: '50%'
   },
+  [`.psds-radio-button__circle.psds-theme--${themeNames.light}:focus:before`]: {
+    top: '-4px',
+    left: '-4px',
+    right: '-4px',
+    bottom: '-4px',
+    background: core.colors.bone
+  },
   '.psds-radio-button__circle:focus:after': {
     content: ' ',
     position: 'absolute',
@@ -68,8 +75,11 @@ export default {
     zIndex: '-2',
     borderRadius: '50%'
   },
-  [`.psds-radio-button__circle.psds-theme--${themeNames.light}:focus:before`]: {
-    background: core.colors.bone
+  [`.psds-radio-button__circle.psds-theme--${themeNames.light}:focus:after`]: {
+    top: '-7px',
+    left: '-7px',
+    right: '-7px',
+    bottom: '-7px'
   },
   '.psds-radio-button__circle--error:before': {
     content: ' ',
@@ -85,6 +95,10 @@ export default {
   [`.psds-radio-button__circle--error.psds-theme--${
     themeNames.light
   }:before`]: {
+    top: '-4px',
+    left: '-4px',
+    right: '-4px',
+    bottom: '-4px',
     background: core.colors.bone
   },
   '.psds-radio-button__circle--error:after': {
@@ -97,6 +111,12 @@ export default {
     background: core.colors.red,
     zIndex: '-2',
     borderRadius: '50%'
+  },
+  [`.psds-radio-button__circle--error.psds-theme--${themeNames.light}:after`]: {
+    top: '-7px',
+    left: '-7px',
+    right: '-7px',
+    bottom: '-7px'
   },
   '.psds-radio-button__circle--checked': {
     borderColor: core.colors.blue
