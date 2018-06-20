@@ -25,13 +25,19 @@ const textInputHtmlPropsWhitelist = [
 
 const styles = {
   error: _ => glamor.css(css['.psds-text-input__error']),
-  field: ({ appearance, icon, iconAlign, themeName }) =>
+  field: ({ appearance, error, icon, iconAlign, themeName }) =>
     glamor.css(
       css['.psds-text-input__field'],
       css[`.psds-text-input__field--appearance-${appearance}`],
       icon && css[`.psds-text-input__field--icon-align-${iconAlign}`],
       css[`.psds-text-input__field.psds-theme--${themeName}`],
-      { ':focus': css['.psds-text-input__field:focus'] }
+      error && css[`.psds-text-input__field--error.psds-theme--${themeName}`],
+      {
+        ':focus': {
+          ...css['.psds-text-input__field:focus'],
+          ...css[`.psds-text-input__field.psds-theme--${themeName}:focus`]
+        }
+      }
     ),
   fieldContainer: ({ error, themeName }, { isFocused }) =>
     glamor.css(
@@ -44,7 +50,12 @@ const styles = {
                 `.psds-text-input__field-container--error.psds-theme--${themeName}:before`
               ]
             },
-            ':after': css['.psds-text-input__field-container--error:after']
+            ':after': {
+              ...css['.psds-text-input__field-container--error:after'],
+              ...css[
+                `.psds-text-input__field-container--error.psds-theme--${themeName}:after`
+              ]
+            }
           }
         : null,
       isFocused
@@ -55,7 +66,12 @@ const styles = {
                 `.psds-text-input__field-container.psds-theme--${themeName}:focus:before`
               ]
             },
-            ':after': css['.psds-text-input__field-container:focus:after']
+            ':after': {
+              ...css['.psds-text-input__field-container:focus:after'],
+              ...css[
+                `.psds-text-input__field-container.psds-theme--${themeName}:focus:after`
+              ]
+            }
           }
         : null
     ),
