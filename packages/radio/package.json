@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-radio",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Design system components for radio buttons",
   "main": "index.js",
   "module": "index.js",
