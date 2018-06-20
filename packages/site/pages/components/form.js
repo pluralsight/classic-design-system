@@ -25,6 +25,7 @@ import {
   PropTypes,
   SectionHeading,
   TextLink,
+  ThemeToggle,
   withServerProps
 } from '../../src/ui'
 
@@ -200,24 +201,24 @@ class InAppExample extends React.Component {
     const hasErrors = Object.keys(state.errors).length > 0
     return (
       <div>
-        <div className="example">
-          {state.isSubmitted && (
-            <Banner
-              color={Banner.colors.green}
-              style={{ position: 'absolute', top: '0', left: '0' }}
-            >
-              Course created!
-            </Banner>
-          )}
-          {hasErrors && (
-            <Banner
-              color={Banner.colors.red}
-              style={{ position: 'absolute', top: '0', left: '0' }}
-            >
-              Failed: Sample course form has errors
-            </Banner>
-          )}
-          <Theme>
+        <ThemeToggle.Container>
+          <div className="example">
+            {state.isSubmitted && (
+              <Banner
+                color={Banner.colors.green}
+                style={{ position: 'absolute', top: '0', left: '0' }}
+              >
+                Course created!
+              </Banner>
+            )}
+            {hasErrors && (
+              <Banner
+                color={Banner.colors.red}
+                style={{ position: 'absolute', top: '0', left: '0' }}
+              >
+                Failed: Sample course form has errors
+              </Banner>
+            )}
             <form onSubmit={this.handleSubmit}>
               <Form.VerticalLayout>
                 <Text.Heading>
@@ -296,8 +297,8 @@ class InAppExample extends React.Component {
                 </Form.ButtonRow>
               </Form.VerticalLayout>
             </form>
-          </Theme>
-        </div>
+          </div>
+        </ThemeToggle.Container>
 
         <Code
           lang="javascript"
@@ -413,8 +414,6 @@ class InAppExample extends React.Component {
 }`}</Code>
         <style jsx>{`
           .example {
-            position: relative;
-            background: ${core.colors.gray05};
             padding: ${core.layout.spacingLarge} ${core.layout.spacingXLarge};
           }
         `}</style>
@@ -453,9 +452,9 @@ export default withServerProps(_ => (
       <SectionHeading>Form.VerticalLayout</SectionHeading>
       <P>
         Forms should be horizontally left-aligned, with one input control per
-        line, and inputs are stretch to the full container width. Bring your own
-        container. <Text.Code>Form.VerticalLayout</Text.Code> takes care of the
-        vertical spacing between controls.
+        line, and inputs are stretched to the full container width. Bring your
+        own container. <Text.Code>Form.VerticalLayout</Text.Code> takes care of
+        the vertical spacing between controls.
       </P>
       <Example.React
         themeToggle

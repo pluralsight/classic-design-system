@@ -5,6 +5,7 @@ import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react'
 
 import CodeMirrorCss from '../../../vendor/codemirror-css'
 import CodeMirrorPsTheme from '../codemirror-ps-theme'
+import ThemeToggle from '../theme-toggle'
 
 let modeLoaded = false
 if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
@@ -107,30 +108,6 @@ const getOutputClassName = (props, state) =>
   `output ${state.themeName === Theme.names.light ? 'outputLight' : ''} ${
     props.orient === 'vertical' ? 'outputVertical' : 'outputHorizontal'
   }`
-
-const capitalize = str => str && str[0].toUpperCase() + str.slice(1)
-const ThemeToggle = props => (
-  <div className="toggle">
-    <ViewToggle onSelect={props.onSelect}>
-      {Object.keys(Theme.names).map(themeName => (
-        <ViewToggle.Option
-          key={themeName}
-          active={themeName === props.activeThemeName}
-        >
-          {capitalize(themeName)}
-        </ViewToggle.Option>
-      ))}
-    </ViewToggle>
-    <style jsx>{`
-      .toggle {
-        position: absolute;
-        top: ${core.layout.spacingMedium};
-        right: ${core.layout.spacingMedium};
-        z-index: 1;
-      }
-    `}</style>
-  </div>
-)
 
 class ReactExample extends React.Component {
   constructor(props) {
