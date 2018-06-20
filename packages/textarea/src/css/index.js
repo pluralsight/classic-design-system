@@ -32,6 +32,12 @@ export default {
   '.psds-text-area__field:focus': {
     outline: 'none'
   },
+  [`.psds-text-area__field.psds-theme--${themeNames.light}:focus`]: {
+    border: '1px solid transparent'
+  },
+  [`.psds-text-area__field--error.psds-theme--${themeNames.light}`]: {
+    border: '1px solid transparent'
+  },
   [`.psds-text-area__field.psds-theme--${themeNames.light}`]: {
     background: core.colors.white,
     border: `1px solid ${core.colors.gray02}`
@@ -60,6 +66,10 @@ export default {
   [`.psds-text-area__field-container.psds-theme--${
     themeNames.light
   }:focus:before`]: {
+    top: '0',
+    left: '0',
+    right: '0',
+    bottom: '0',
     background: core.colors.bone
   },
   '.psds-text-area__field-container:focus:after': {
@@ -72,6 +82,14 @@ export default {
     background: core.colors.blue,
     zIndex: '-2',
     borderRadius: '4px'
+  },
+  [`.psds-text-area__field-container.psds-theme--${
+    themeNames.light
+  }:focus:after`]: {
+    top: '-3px',
+    left: '-3px',
+    right: '-3px',
+    bottom: '-3px'
   },
   '.psds-text-area__field-container--error:before': {
     content: ' ',
@@ -87,6 +105,10 @@ export default {
   [`.psds-text-area__field-container--error.psds-theme--${
     themeNames.light
   }:before`]: {
+    top: '0',
+    left: '0',
+    right: '0',
+    bottom: '0',
     background: core.colors.bone
   },
   '.psds-text-area__field-container--error:after': {
@@ -99,6 +121,14 @@ export default {
     background: core.colors.red,
     zIndex: '-2',
     borderRadius: '4px'
+  },
+  [`.psds-text-area__field-container--error.psds-theme--${
+    themeNames.light
+  }:after`]: {
+    top: '-3px',
+    left: '-3px',
+    right: '-3px',
+    bottom: '-3px'
   },
 
   // __label

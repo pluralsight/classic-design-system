@@ -33,11 +33,17 @@ const calcRowsPxHeight = rows => {
 
 const styles = {
   error: _ => glamor.css(css['.psds-text-area__error']),
-  field: ({ themeName }) =>
+  field: ({ error, themeName }) =>
     glamor.css(
       css['.psds-text-area__field'],
       css[`.psds-text-area__field.psds-theme--${themeName}`],
-      { ':focus': css['.psds-text-area__field:focus'] },
+      error && css[`.psds-text-area__field--error.psds-theme--${themeName}`],
+      {
+        ':focus': {
+          ...css['.psds-text-area__field:focus'],
+          ...css[`.psds-text-area__field.psds-theme--${themeName}:focus`]
+        }
+      },
       {
         '@media (min-width: 433px)':
           css['@media (min-width: 433px)']['.psds-text-area__field']
@@ -54,7 +60,12 @@ const styles = {
                 `.psds-text-area__field-container--error.psds-theme--${themeName}:before`
               ]
             },
-            ':after': css['.psds-text-area__field-container--error:after']
+            ':after': {
+              ...css['.psds-text-area__field-container--error:after'],
+              ...css[
+                `.psds-text-area__field-container--error.psds-theme--${themeName}:after`
+              ]
+            }
           }
         : null,
       isFocused
@@ -65,7 +76,12 @@ const styles = {
                 `.psds-text-area__field-container.psds-theme--${themeName}:focus:before`
               ]
             },
-            ':after': css['.psds-text-area__field-container:focus:after']
+            ':after': {
+              ...css['.psds-text-area__field-container:focus:after'],
+              ...css[
+                `.psds-text-area__field-container.psds-theme--${themeName}:focus:after`
+              ]
+            }
           }
         : null
     ),
