@@ -324,7 +324,7 @@ export default withServerProps(_ => (
       />
 
       <SectionHeading>Aside Layout</SectionHeading>
-      <P>Use this layout for any 1/3, 2/3-proportioned layouts.</P>
+      <P>Use this layout for any 1/4, 3/4-proportioned layouts.</P>
       <AsideLayoutOutput />
       <Code language="javascript">{`<AsideLayout
   aside={<AsideLayout.Aside></AsideLayout.Aside>}
