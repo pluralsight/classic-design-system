@@ -28,7 +28,6 @@
     "@pluralsight/ps-design-system-core": "^4.3.1",
     "@pluralsight/ps-design-system-icon": "^8.9.3",
     "@pluralsight/ps-design-system-theme": "^1.3.1",
-    "glamorous": "^4.1.0",
     "polished": "^1.7.0",
     "prop-types": "^15.5.10"
   },
@@ -40,7 +39,6 @@
     "@storybook/addons": "3.2.14",
     "@storybook/react": "3.2.14",
     "babel-cli": "^6.24.1",
-    "babel-plugin-glamorous-displayname": "^1.1.3",
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",

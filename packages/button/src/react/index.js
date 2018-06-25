@@ -1,6 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
-import glamorous from 'glamorous'
 import Icon, {
   sizes as iconSizes
 } from '@pluralsight/ps-design-system-icon/react'
@@ -15,9 +14,26 @@ import { transparentize } from 'polished'
 import css from '../css'
 import * as vars from '../vars'
 
+const spin = glamor.css.keyframes(
+  css['@keyframes psds-button__keyframes__spin']
+)
 const styles = {
   button: ({}) => glamor.css(),
-  icon: ({}) => glamor.css()
+  loading: ({ appearance, themeName }) =>
+    glamor.css(
+      css[`.psds-button__loading`]({ spin }),
+      css[`.psds-button__loading--appearance-${appearance}`],
+      css[
+        `.psds-button__loading--appearance-${appearance}.psds-button__loading--theme-${themeName}`
+      ]
+    ),
+  icon: ({ iconAlign, iconOnly, isLoadingWithNoText }) =>
+    glamor.css(
+      css['.psds-button__icon'],
+      css[`.psds-button__icon--iconAlign-${iconAlign}`],
+      (iconOnly || isLoadingWithNoText) && css['.psds-button__icon--iconOnly']
+    ),
+  text: _ => glamor.css(css[`.psds-button__text`])
 }
 
 const styleSize = ({ size }) => css[`.psds-button--size-${size}`]
@@ -87,18 +103,6 @@ const getButtonStyles = props =>
     props.css
   )
 
-const styleIconAlignIconContainer = ({ icon, iconAlign }) =>
-  css[`.psds-button__icon--iconAlign-${iconAlign}`]
-
-const styleIconOnlyIconContainer = ({ iconOnly, isLoadingWithNoText }) =>
-  iconOnly || isLoadingWithNoText ? css['.psds-button__icon--iconOnly'] : null
-
-const IconContainer = glamorous.div(
-  css['.psds-button__icon'],
-  styleIconAlignIconContainer,
-  styleIconOnlyIconContainer
-)
-
 const mapIconSize = props => {
   const btnToIconSizes = {
     [vars.sizes.xSmall]: iconSizes.small,
@@ -125,46 +129,20 @@ const rmNonHtmlProps = props => {
   return rest
 }
 
-const spin = glamor.css.keyframes(
-  css['@keyframes psds-button__keyframes__spin']
-)
-const LoadingIndicator = glamorous.span(
-  css[`.psds-button__loading`]({ spin }),
-  ({ appearance, themeName }) => ({
-    ...css[`.psds-button__loading--appearance-${appearance}`],
-    ...css[
-      `.psds-button__loading--appearance-${appearance}.psds-button__loading--theme-${themeName}`
-    ]
-  })
-)
-
 const renderIcon = props =>
   props.loading ? (
-    <IconContainer
-      iconAlign={props.iconAlign}
-      iconOnly={React.Children.count(props.children) <= 0}
-      isLoadingWithNoText={props.isLoadingWithNoText}
-    >
+    <div {...styles.icon(props)}>
       <Icon size={mapIconSize(props)}>
-        <LoadingIndicator
-          appearance={props.appearance}
-          themeName={props.themeName}
-        />
+        <span {...styles.loading(props)} />
       </Icon>
-    </IconContainer>
+    </div>
   ) : props.icon ? (
-    <IconContainer
-      iconAlign={props.iconAlign}
-      iconOnly={React.Children.count(props.children) <= 0}
-      isLoadingNoText={props.isLoadingNoText}
-    >
+    <div {...styles.icon(props)}>
       {React.cloneElement(props.icon, {
         size: mapIconSize(props)
       })}
-    </IconContainer>
+    </div>
   ) : null
-
-const BtnText = glamorous.span(css[`.psds-button__text`])
 
 const buttonHtmlPropsWhitelist = [
   'href',
@@ -192,26 +170,6 @@ const whitelistProps = (props, whitelist) =>
     if (isPropInWhitelist(whitelist, key)) newProps[key] = props[key]
     return newProps
   }, {})
-
-class Button extends React.Component {
-  render() {
-    const whitelistedProps =
-      this.props.disabled && this.props.href
-        ? buttonHtmlPropsWhitelist.filter(prop => prop !== 'onClick')
-        : buttonHtmlPropsWhitelist
-
-    return React.createElement(
-      this.props.href ? 'a' : 'button',
-      {
-        ...(this.props.innerRef ? { ref: this.props.innerRef } : {}),
-        ...getButtonStyles(this.props),
-        ...whitelistProps(this.props, whitelistedProps),
-        disabled: this.props.disabled || this.props.loading
-      },
-      this.props.children
-    )
-  }
-}
 
 class Btn extends React.Component {
   componentWillReceiveProps(nextProps) {
@@ -252,7 +210,9 @@ class Btn extends React.Component {
           : props.style || {}
       },
       renderIcon(allProps),
-      !isLoadingWithNoText && <BtnText>{props.children}</BtnText>
+      !isLoadingWithNoText && (
+        <span {...styles.text(allProps)}>{allProps.children}</span>
+      )
     )
   }
 }
