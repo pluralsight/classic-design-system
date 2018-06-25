@@ -16,8 +16,8 @@ const spin = glamor.css.keyframes(
 const styles = {
   button: ({
     appearance,
-    disabled,
     css: cssProp,
+    disabled,
     icon,
     iconAlign,
     iconOnly,
@@ -27,7 +27,18 @@ const styles = {
     glamor.css(
       {
         ...css['.psds-button'],
-        ':hover': css['.psds-button:hover']
+        ':hover': css['.psds-button:hover'],
+        ':focus': {
+          ...css['.psds-button:focus'],
+          ':before': {
+            ...css['.psds-button:focus:before'],
+            ...css[`.psds-button.psds-theme--${themeName}:focus:before`]
+          },
+          ':after': {
+            ...css['.psds-button:focus:after'],
+            ...css[`.psds-button.psds-theme--${themeName}:focus:after`]
+          }
+        }
       },
       css[`.psds-button--size-${size}`],
       css[`.psds-button--appearance-${appearance}`],
