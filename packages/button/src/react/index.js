@@ -3,6 +3,7 @@ import Icon, {
   sizes as iconSizes
 } from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
+import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
@@ -83,6 +84,21 @@ const styles = {
   text: _ => glamor.css(css[`.psds-button__text`])
 }
 
+const buttonHtmlPropsWhitelist = [
+  'href',
+  'onClick',
+  'disabled',
+  'className',
+  'role',
+  'style',
+  'title',
+  'tabIndex',
+  'target',
+  /onMouse/,
+  /^aria-/,
+  /^data-/
+]
+
 const mapIconSize = props => {
   const btnToIconSizes = {
     [vars.sizes.xSmall]: iconSizes.small,
@@ -93,20 +109,6 @@ const mapIconSize = props => {
   return btnToIconSizes[props.size]
     ? btnToIconSizes[props.size]
     : iconSizes.medium
-}
-
-const rmNonHtmlProps = props => {
-  const {
-    appearance,
-    icon,
-    iconAlign,
-    iconOnly,
-    innerRef,
-    size,
-    themeName,
-    ...rest
-  } = props
-  return rest
 }
 
 const renderIcon = props =>
@@ -123,33 +125,6 @@ const renderIcon = props =>
       })}
     </div>
   ) : null
-
-const buttonHtmlPropsWhitelist = [
-  'href',
-  'onClick',
-  'disabled',
-  'className',
-  'role',
-  'style',
-  'title',
-  'tabIndex',
-  'target',
-  /onMouse/,
-  /^aria-/,
-  /^data-/
-]
-
-const isPropInWhitelist = (whitelist, key) =>
-  whitelist.some(
-    regex =>
-      typeof regex === 'string' ? new RegExp(regex).test(key) : regex.test(key)
-  )
-
-const whitelistProps = (props, whitelist) =>
-  Object.keys(props).reduce((newProps, key) => {
-    if (isPropInWhitelist(whitelist, key)) newProps[key] = props[key]
-    return newProps
-  }, {})
 
 class Button extends React.Component {
   componentWillReceiveProps(nextProps) {
@@ -168,17 +143,16 @@ class Button extends React.Component {
       iconOnly: React.Children.count(props.children) <= 0,
       themeName: context.themeName || themeDefaultName
     }
-    const whitelistedProps =
-      allProps.disabled && allProps.href
-        ? buttonHtmlPropsWhitelist.filter(prop => prop !== 'onClick')
-        : buttonHtmlPropsWhitelist
-
     return React.createElement(
       this.props.href ? 'a' : 'button',
       {
         ...styles.button(allProps),
-        // TODO: replace with util call
-        ...whitelistProps(this.props, whitelistedProps),
+        ...propsUtil.whitelistProps(
+          allProps,
+          allProps.disabled && allProps.href
+            ? buttonHtmlPropsWhitelist.filter(prop => prop !== 'onClick')
+            : buttonHtmlPropsWhitelist
+        ),
         disabled: this.props.disabled || this.props.loading,
         ref: el => {
           this.el = el
