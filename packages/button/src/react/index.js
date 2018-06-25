@@ -1,15 +1,10 @@
-import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import Icon, {
   sizes as iconSizes
 } from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/react'
-import { transparentize } from 'polished'
+import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
 import * as vars from '../vars'
@@ -18,7 +13,59 @@ const spin = glamor.css.keyframes(
   css['@keyframes psds-button__keyframes__spin']
 )
 const styles = {
-  button: ({}) => glamor.css(),
+  button: ({
+    appearance,
+    disabled,
+    css: cssProp,
+    icon,
+    iconAlign,
+    iconOnly,
+    size,
+    themeName
+  }) =>
+    glamor.css(
+      {
+        ...css['.psds-button'],
+        ':hover': css['.psds-button:hover']
+      },
+      css[`.psds-button--size-${size}`],
+      css[`.psds-button--appearance-${appearance}`],
+      css[`.psds-button--appearance-${appearance}.psds-theme--${themeName}`],
+      {
+        ':hover': {
+          ...css[`.psds-button--appearance-${appearance}:hover`],
+          ...css[
+            `.psds-button--appearance-${appearance}.psds-theme--${themeName}:hover`
+          ]
+        }
+      },
+      disabled && {
+        ...css[`.psds-button--disabled`],
+        ...css[`.psds-button--disabled.psds-button--appearance-${appearance}`],
+        ':hover': {
+          ...css[`.psds-button--disabled:hover`],
+          ...css[
+            `.psds-button--disabled.psds-button--appearance-${appearance}:hover`
+          ]
+        }
+      },
+      icon &&
+        !iconOnly && {
+          ...css[
+            `.psds-button--iconAlign-${iconAlign}.psds-button--not-iconOnly`
+          ],
+          ...css[
+            `.psds-button--iconAlign-${iconAlign}.psds-button--not-iconOnly.psds-button--size-${size}`
+          ]
+        },
+      iconAlign === vars.iconAligns.right &&
+        css[`.psds-button--iconAlign-${iconAlign}`],
+      iconOnly && {
+        ...css[`.psds-button--iconOnly`],
+        ...css[`.psds-button--iconOnly.psds-button--size-${size}`]
+      },
+      cssProp
+    ),
   loading: ({ appearance, themeName }) =>
     glamor.css(
       css[`.psds-button__loading`]({ spin }),
@@ -35,73 +82,6 @@ const styles = {
     ),
   text: _ => glamor.css(css[`.psds-button__text`])
 }
-
-const styleSize = ({ size }) => css[`.psds-button--size-${size}`]
-
-const styleAppearance = ({ appearance, themeName }) => ({
-  ...css[`.psds-button--appearance-${appearance}`],
-  ...css[`.psds-button--appearance-${appearance}.psds-theme--${themeName}`],
-  ':hover': {
-    ...css[`.psds-button--appearance-${appearance}:hover`],
-    ...css[
-      `.psds-button--appearance-${appearance}.psds-theme--${themeName}:hover`
-    ]
-  }
-})
-
-const styleDisabled = ({ disabled, appearance }) =>
-  disabled
-    ? {
-        ...css[`.psds-button--disabled`],
-        ...css[`.psds-button--disabled.psds-button--appearance-${appearance}`],
-        ':hover': {
-          ...css[`.psds-button--disabled:hover`],
-          ...css[
-            `.psds-button--disabled.psds-button--appearance-${appearance}:hover`
-          ]
-        }
-      }
-    : null
-
-const styleIcon = ({ icon, iconAlign, iconOnly, size }) =>
-  icon && !iconOnly
-    ? {
-        ...css[
-          `.psds-button--iconAlign-${iconAlign}.psds-button--not-iconOnly`
-        ],
-        ...css[
-          `.psds-button--iconAlign-${iconAlign}.psds-button--not-iconOnly.psds-button--size-${size}`
-        ]
-      }
-    : null
-
-const styleIconAlign = ({ iconAlign }) =>
-  iconAlign === vars.iconAligns.right
-    ? css[`.psds-button--iconAlign-${iconAlign}`]
-    : null
-
-const styleIconOnly = ({ iconOnly, size }) =>
-  iconOnly
-    ? {
-        ...css[`.psds-button--iconOnly`],
-        ...css[`.psds-button--iconOnly.psds-button--size-${size}`]
-      }
-    : null
-
-const getButtonStyles = props =>
-  glamor.css(
-    {
-      ...css['.psds-button'],
-      ':hover': css['.psds-button:hover']
-    },
-    styleSize(props),
-    styleAppearance(props),
-    styleDisabled(props),
-    styleIcon(props),
-    styleIconAlign(props),
-    styleIconOnly(props),
-    props.css
-  )
 
 const mapIconSize = props => {
   const btnToIconSizes = {
@@ -196,8 +176,7 @@ class Btn extends React.Component {
     return React.createElement(
       this.props.href ? 'a' : 'button',
       {
-        // TODO: replace with glamor.css in styles functions
-        ...getButtonStyles(allProps),
+        ...styles.button(allProps),
         // TODO: replace with util call
         ...whitelistProps(this.props, whitelistedProps),
         disabled: this.props.disabled || this.props.loading,
