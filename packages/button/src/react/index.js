@@ -15,6 +15,11 @@ import { transparentize } from 'polished'
 import css from '../css'
 import * as vars from '../vars'
 
+const styles = {
+  button: ({}) => glamor.css(),
+  icon: ({}) => glamor.css()
+}
+
 const styleSize = ({ size }) => css[`.psds-button--size-${size}`]
 
 const styleAppearance = ({ appearance, themeName }) => ({
@@ -219,28 +224,35 @@ class Btn extends React.Component {
   render() {
     const { context, props } = this
     const isLoadingWithNoText = !!this.nonLoadingWidth
-    return (
-      <Button
-        {...props}
-        iconOnly={React.Children.count(props.children) <= 0}
-        innerRef={el => {
+    const allProps = {
+      ...props,
+      isLoadingWithNoText,
+      iconOnly: React.Children.count(props.children) <= 0,
+      themeName: context.themeName || themeDefaultName
+    }
+    const whitelistedProps =
+      allProps.disabled && allProps.href
+        ? buttonHtmlPropsWhitelist.filter(prop => prop !== 'onClick')
+        : buttonHtmlPropsWhitelist
+
+    return React.createElement(
+      this.props.href ? 'a' : 'button',
+      {
+        // TODO: replace with glamor.css in styles functions
+        ...getButtonStyles(allProps),
+        // TODO: replace with util call
+        ...whitelistProps(this.props, whitelistedProps),
+        disabled: this.props.disabled || this.props.loading,
+        ref: el => {
           this.el = el
           if (typeof props.innerRef === 'function') props.innerRef(el)
-        }}
-        style={
-          isLoadingWithNoText
-            ? { ...props.style, width: this.nonLoadingWidth }
-            : props.style || {}
-        }
-        themeName={context.themeName || themeDefaultName}
-      >
-        {renderIcon({
-          ...props,
-          isLoadingWithNoText,
-          themeName: context.themeName || themeDefaultName
-        })}
-        {!isLoadingWithNoText && <BtnText>{props.children}</BtnText>}
-      </Button>
+        },
+        style: isLoadingWithNoText
+          ? { ...props.style, width: this.nonLoadingWidth }
+          : props.style || {}
+      },
+      renderIcon(allProps),
+      !isLoadingWithNoText && <BtnText>{props.children}</BtnText>
     )
   }
 }
