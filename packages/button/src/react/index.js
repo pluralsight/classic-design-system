@@ -151,7 +151,7 @@ const whitelistProps = (props, whitelist) =>
     return newProps
   }, {})
 
-class Btn extends React.Component {
+class Button extends React.Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.loading && !this.props.icon && this.el) {
       this.nonLoadingWidth = this.el.offsetWidth
@@ -196,7 +196,7 @@ class Btn extends React.Component {
   }
 }
 
-Btn.propTypes = {
+Button.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
   disabled: PropTypes.bool,
   icon: PropTypes.element,
@@ -205,23 +205,23 @@ Btn.propTypes = {
   loading: PropTypes.bool,
   size: PropTypes.oneOf(Object.keys(vars.sizes))
 }
-Btn.defaultProps = {
+Button.defaultProps = {
   appearance: vars.appearances.primary,
   disabled: false,
   iconAlign: vars.iconAligns.left,
   loading: false,
   size: vars.sizes.medium
 }
-Btn.contextTypes = {
+Button.contextTypes = {
   themeName: PropTypes.string
 }
 
-Btn.appearances = vars.appearances
-Btn.iconAligns = vars.iconAligns
-Btn.sizes = vars.sizes
+Button.appearances = vars.appearances
+Button.iconAligns = vars.iconAligns
+Button.sizes = vars.sizes
 
 export const appearances = vars.appearances
 export const iconAligns = vars.iconAligns
 export const sizes = vars.sizes
 
-export default Btn
+export default Button
