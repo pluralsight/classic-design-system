@@ -13,6 +13,7 @@ import * as vars from '../vars'
 const spin = glamor.css.keyframes(
   css['@keyframes psds-button__keyframes__spin']
 )
+
 const styles = {
   button: ({
     appearance,
