@@ -6,6 +6,23 @@ import React from 'react'
 import css from '../css'
 import * as vars from '../vars'
 
+const styles = {
+  tag: ({ appearance, href, icon, isPressed, onClick, size }) =>
+    glamor.css(
+      css['.psds-tag'],
+      (href || onClick) && {
+        ':hover': css['.psds-tag--clickable:hover'],
+        ':focus': css['.psds-tag--clickable:focus']
+      },
+      css[`.psds-tag--appearance-${appearance}`],
+      css[`.psds-tag--size-${size}`],
+      icon && css['.psds-tag--icon'],
+      isPressed && css['.psds-tag--isPressed']
+    ),
+  label: ({ icon }) =>
+    glamor.css(css['.psds-tag__label'], icon && css['.psds-tag__label--icon'])
+}
+
 const TagContainer = props => {
   const tagName = props.href ? 'a' : 'div'
   return React.createElement(
@@ -16,31 +33,14 @@ const TagContainer = props => {
       ...(props.isPressed ? { 'aria-pressed': true } : null),
       ...(props.onClick ? { role: 'button', tabIndex: 0 } : null),
       onClick: props.onClick,
-      ...glamor.css({
-        ...css['.psds-tag'],
-        ...(({ href, onClick }) =>
-          href || onClick
-            ? {
-                ':hover': css['.psds-tag--clickable:hover'],
-                ':focus': css['.psds-tag--clickable:focus']
-              }
-            : null)(props),
-        ...css[`.psds-tag--appearance-${props.appearance}`],
-        ...css[`.psds-tag--size-${props.size}`],
-        ...(props.icon ? css['.psds-tag--icon'] : null),
-        ...(props.isPressed ? css['.psds-tag--isPressed'] : null)
-      })
+      ...styles.tag(props)
     },
     props.children
   )
 }
 
 const Label = props => {
-  const styles = glamor.css({
-    ...css['.psds-tag__label'],
-    ...(props.icon ? css['.psds-tag__label--icon'] : null)
-  })
-  return <span {...styles}>{props.children}</span>
+  return <span {...styles.label(props)}>{props.children}</span>
 }
 
 const renderIcon = props =>
