@@ -1,6 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import Switch from '@pluralsight/ps-design-system-switch/react'
+import * as Text from '@pluralsight/ps-design-system-text/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
@@ -205,6 +206,16 @@ export default withServerProps(_ => (
 `
         ]}
         themeName={Theme.names.light}
+      />
+
+      <SectionHeading>Error</SectionHeading>
+      <P>
+        Error states are engaged with the <Text.Code>error</Text.Code> flag.
+        This is useful when tags are used from within a form
+      </P>
+      <Example.React
+        includes={{ Switch }}
+        codes={[`<Switch error>Problem tag</Switch>`]}
       />
     </Content>
   </Chrome>

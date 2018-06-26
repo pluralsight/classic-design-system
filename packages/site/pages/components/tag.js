@@ -1,5 +1,6 @@
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import Tag from '@pluralsight/ps-design-system-tag/react'
+import * as Text from '@pluralsight/ps-design-system-text/react'
 
 import {
   Chrome,
@@ -38,6 +39,13 @@ export default withServerProps(_ => (
             <span>
               visual style (from <code>Tag.appearances</code>)
             </span>
+          ]),
+          PropTypes.row([
+            'error',
+            'boolean',
+            null,
+            <code>false</code>,
+            'error state flag'
           ]),
           PropTypes.row([
             'icon',
@@ -127,6 +135,16 @@ export default withServerProps(_ => (
       <Example.React
         includes={{ Tag, Icon }}
         codes={[`<Tag isPressed>Toggled on</Tag>`, `<Tag>Toggled off</Tag>`]}
+      />
+
+      <SectionHeading>Error</SectionHeading>
+      <P>
+        Error states are engaged with the <Text.Code>error</Text.Code> flag.
+        This is useful when tags are used from within a form
+      </P>
+      <Example.React
+        includes={{ Tag }}
+        codes={[`<Tag error>Problem tag</Tag>`]}
       />
     </Content>
   </Chrome>
