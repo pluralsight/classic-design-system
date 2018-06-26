@@ -98,7 +98,7 @@ class Switch extends React.Component {
     const allProps = {
       ...props,
       isFocused: state.isFocused,
-      themeName: context.themeName
+      themeName: context.themeName || themeDefaultName
     }
     const switchProps = {
       ...styles.switch(allProps),
