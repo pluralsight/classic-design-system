@@ -109,6 +109,13 @@ export default withServerProps(_ => (
             'standard input disable flag'
           ]),
           PropTypes.row([
+            'error',
+            'boolean',
+            null,
+            <code>false</code>,
+            'error state flag'
+          ]),
+          PropTypes.row([
             'labelAlign',
             PropTypes.union(Switch.labelAligns),
             null,
