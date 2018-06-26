@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import css from '../css'
-import * as vars from '../vars'
 
 const styles = {
   buttonContainer: _ => glamor.css(css['.psds-radio-group__button-container']),
