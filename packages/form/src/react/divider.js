@@ -4,7 +4,6 @@ import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
-import * as vars from '../vars'
 
 const styles = {
   divider: ({ themeName }) =>

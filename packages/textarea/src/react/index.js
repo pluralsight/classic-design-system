@@ -7,7 +7,6 @@ import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-t
 import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
 import css from '../css'
-import * as vars from '../vars'
 
 const textAreaHtmlPropsWhitelist = [
   'name',
