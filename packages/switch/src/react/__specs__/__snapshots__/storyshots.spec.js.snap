@@ -343,6 +343,134 @@ exports[`Storyshots disabled true 1`] = `
 </div>
 `;
 
+exports[`Storyshots error false 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    aria-checked={false}
+    data-css-17kl0mj=""
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    role="checkbox"
+    tabIndex="0"
+  >
+    <div
+      data-css-1rncajx=""
+    >
+      <div
+        data-css-1nqr5a6=""
+      />
+    </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots error true 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    aria-checked={false}
+    data-css-17kl0mj=""
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    role="checkbox"
+    tabIndex="0"
+  >
+    <div
+      data-css-1rncajx=""
+    >
+      <div
+        data-css-1nqr5a6=""
+      />
+    </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots error true w/ disabled 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    aria-checked={false}
+    data-css-177u0c3=""
+    onBlur={[Function]}
+    onFocus={[Function]}
+    role="checkbox"
+    tabIndex="0"
+  >
+    <div
+      data-css-1jrt3jk=""
+    >
+      <div
+        data-css-1nqr5a6=""
+      />
+    </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots label large left 1`] = `
 <div
   style={

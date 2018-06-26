@@ -8,21 +8,58 @@ import { transparentize } from 'polished'
 import css from '../css'
 import * as vars from '../vars'
 
+const styleFocusRingGap = ({ size, themeName }) => ({
+  ...css['.psds-switch__track:focus:before, .psds-switch__track--error:before'],
+  ...css[
+    `.psds-switch__track--size-${size}:focus:before, .psds-switch__track--error.psds-switch__track--size-${size}:before`
+  ],
+  ...css[
+    `.psds-switch__track.psds-theme--${themeName}:focus:before, .psds-switch__track--error.psds-theme--${themeName}:before`
+  ]
+})
+
+const styleFocusRingBorder = ({ size, themeName }) => ({
+  ...css['.psds-switch__track:focus:after, .psds-switch__track--error:after'],
+  ...css[
+    `.psds-switch__track--size-${size}:focus:after, .psds-switch__track--error.psds-switch__track--size-${size}:after`
+  ],
+  ...css[
+    `.psds-switch__track.psds-theme--${themeName}:focus:after, .psds-switch__track--error.psds-theme--${themeName}:after`
+  ]
+})
+
 const styles = {
   switch: ({ disabled, labelAlign }) =>
-    glamor.css({
-      ...css['.psds-switch'],
-      ...css[`.psds-switch--labelAlign-${labelAlign}`],
-      ...(disabled ? css['.psds-switch--disabled'] : null)
-    }),
-  track: ({ checked, color, size }) =>
-    glamor.css({
-      ...css['.psds-switch__track'],
-      ...(checked
-        ? css[`.psds-switch__track--checked.psds-switch__track--color-${color}`]
-        : null),
-      ...css[`.psds-switch__track.psds-switch__track--size-${size}`]
-    }),
+    glamor.css(
+      css['.psds-switch'],
+      css[`.psds-switch--labelAlign-${labelAlign}`],
+      disabled && css['.psds-switch--disabled'],
+      {
+        ':focus': css['.psds-switch:focus']
+      }
+    ),
+  track: ({ checked, color, disabled, error, isFocused, size, themeName }) =>
+    glamor.css(
+      css['.psds-switch__track'],
+      checked &&
+        css[`.psds-switch__track--checked.psds-switch__track--color-${color}`],
+      css[`.psds-switch__track.psds-switch__track--size-${size}`],
+      error && {
+        ':before': styleFocusRingGap({ size, themeName }),
+        ':after': {
+          ...styleFocusRingBorder({ size, themeName }),
+          ...css['.psds-switch__track--error:after']
+        }
+      },
+      isFocused &&
+        !disabled && {
+          ':before': styleFocusRingGap({ size, themeName }),
+          ':after': {
+            ...styleFocusRingBorder({ size, themeName }),
+            ...css['.psds-switch__track:focus:after']
+          }
+        }
+    ),
   thumb: ({ checked, size }) =>
     glamor.css({
       ...css[`.psds-switch__thumb`],
@@ -43,45 +80,67 @@ const styles = {
   checkbox: _ => glamor.css(css['.psds-switch__checkbox'])
 }
 
-const Switch = (props, context) => {
-  const allProps = { ...props, themeName: context.themeName }
-  const switchProps = {
-    ...styles.switch(allProps),
-    ...(props.onClick && !props.disabled
-      ? { onClick: _ => props.onClick(!allProps.checked) }
-      : null),
-    ...(props.style ? { style: props.style } : null),
-    ...(props.className ? { className: props.className } : null)
+class Switch extends React.Component {
+  constructor() {
+    super()
+    this.state = { isFocused: false }
+    this.handleFocus = this.handleFocus.bind(this)
+    this.handleBlur = this.handleBlur.bind(this)
   }
+  handleFocus() {
+    this.setState({ isFocused: true })
+  }
+  handleBlur() {
+    this.setState({ isFocused: false })
+  }
+  render() {
+    const { context, props, state } = this
+    const allProps = {
+      ...props,
+      isFocused: state.isFocused,
+      themeName: context.themeName
+    }
+    const switchProps = {
+      ...styles.switch(allProps),
+      ...(props.onClick && !props.disabled
+        ? { onClick: _ => props.onClick(!allProps.checked) }
+        : null),
+      ...(props.style ? { style: props.style } : null),
+      ...(props.className ? { className: props.className } : null)
+    }
 
-  return (
-    <div
-      {...switchProps}
-      tabIndex={allProps.tabIndex || '0'}
-      role="checkbox"
-      aria-checked={allProps.checked}
-    >
-      <div {...styles.track(allProps)}>
-        <div {...styles.thumb(allProps)} />
+    return (
+      <div
+        {...switchProps}
+        tabIndex={allProps.tabIndex || '0'}
+        role="checkbox"
+        aria-checked={allProps.checked}
+        onFocus={this.handleFocus}
+        onBlur={this.handleBlur}
+      >
+        <div {...styles.track(allProps)}>
+          <div {...styles.thumb(allProps)} />
+        </div>
+        <input
+          tabIndex="-1"
+          type="checkbox"
+          readOnly
+          checked={allProps.checked}
+          {...styles.checkbox(allProps)}
+        />
+        {allProps.children && (
+          <label {...styles.label(allProps)}>{allProps.children}</label>
+        )}
       </div>
-      <input
-        tabIndex="-1"
-        type="checkbox"
-        readOnly
-        checked={allProps.checked}
-        {...styles.checkbox(allProps)}
-      />
-      {allProps.children && (
-        <label {...styles.label(allProps)}>{allProps.children}</label>
-      )}
-    </div>
-  )
+    )
+  }
 }
 
 Switch.propTypes = {
   checked: PropTypes.bool,
   color: PropTypes.oneOf(Object.keys(vars.colors)),
   disabled: PropTypes.bool,
+  error: PropTypes.bool,
   labelAlign: PropTypes.oneOf(Object.keys(vars.labelAligns)),
   onClick: PropTypes.func,
   size: PropTypes.oneOf(Object.keys(vars.sizes))
@@ -90,6 +149,7 @@ Switch.defaultProps = {
   checked: false,
   color: vars.colors.orange,
   disabled: false,
+  error: false,
   labelAlign: vars.labelAligns.right,
   size: vars.sizes.large
 }

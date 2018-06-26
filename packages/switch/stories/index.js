@@ -84,3 +84,23 @@ const disabledStory = storiesOf('disabled', module)
       <Switch disabled />
     </ClickDemo>
   ))
+
+const errorStory = storiesOf('error', module)
+  .addDecorator(themeDecorator(addons))
+  .add('false', _ => (
+    <ClickDemo>
+      <Switch />
+    </ClickDemo>
+  ))
+  .add('true', _ => (
+    <ClickDemo>
+      <Switch error>Clickable in error state</Switch>
+    </ClickDemo>
+  ))
+  .add('true w/ disabled', _ => (
+    <ClickDemo>
+      <Switch error disabled>
+        Such errors
+      </Switch>
+    </ClickDemo>
+  ))
