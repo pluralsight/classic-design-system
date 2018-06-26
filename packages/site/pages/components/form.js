@@ -10,6 +10,7 @@ import Text from '@pluralsight/ps-design-system-text/react'
 import TextInput from '@pluralsight/ps-design-system-textinput/react'
 import TextArea from '@pluralsight/ps-design-system-textarea/react'
 import Radio from '@pluralsight/ps-design-system-radio/react'
+import Switch from '@pluralsight/ps-design-system-switch/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 import { string as stringUtil } from '@pluralsight/ps-design-system-util'
 
@@ -74,6 +75,25 @@ class CheckboxExample extends React.Component {
   }
 }
 
+class SwitchExample extends React.Component {
+  constructor() {
+    super()
+    this.state = { checked: false }
+    this.handleClick = this.handleClick.bind(this)
+  }
+  handleClick(checked) {
+    this.setState({ checked })
+  }
+  render() {
+    const { state } = this
+    return (
+      <Switch checked={state.checked} onClick={this.handleClick}>
+        Profile is {state.checked ? 'public' : 'private'}
+      </Switch>
+    )
+  }
+}
+
 const Comp = props => (
   <div className="comp">
     <div className="label">
@@ -133,6 +153,14 @@ const validate = state => {
       rule: /false|true/,
       message: 'Turn on or off'
     },
+    demo: {
+      rule: /false|true/,
+      message: 'Select a demo option'
+    },
+    assessment: {
+      rule: /false|true/,
+      message: 'Select an assessment option'
+    },
     desc: { rule: /.+/, message: 'Required' }
   }
   return Object.keys(rules).reduce(
@@ -156,6 +184,8 @@ const initialState = {
   level: null,
   slides: false,
   slidestech: null,
+  demo: false,
+  assessment: false,
   desc: ''
 }
 
@@ -251,15 +281,14 @@ class InAppExample extends React.Component {
                     </ActionMenu>
                   }
                 />
-                <Checkbox
+                <Switch
                   error={isError('slides')}
                   checked={state.slides}
                   name="slides"
-                  label="Has slides?"
-                  onCheck={(_, checked, __, name) =>
-                    this.setState({ [name]: checked })
-                  }
-                />
+                  onClick={checked => this.setState({ slides: checked })}
+                >
+                  Has slides?
+                </Switch>
                 <Form.Divider />
                 <Radio.Group
                   error={isError('slidestech')}
@@ -272,6 +301,24 @@ class InAppExample extends React.Component {
                   <Radio.Button value="pptx" label="Powerpoint" />
                 </Radio.Group>
                 <Form.Divider />
+                <Checkbox
+                  error={isError('demo')}
+                  checked={state.demo}
+                  name="demo"
+                  label="Demo included"
+                  onCheck={(_, checked, __, name) =>
+                    this.setState({ [name]: checked })
+                  }
+                />
+                <Checkbox
+                  error={isError('assessment')}
+                  checked={state.assessment}
+                  name="assessment"
+                  label="Assessment included"
+                  onCheck={(_, checked, __, name) =>
+                    this.setState({ [name]: checked })
+                  }
+                />
                 <TextArea
                   error={isError('desc')}
                   label="Description"
@@ -627,6 +674,14 @@ export default withServerProps(_ => (
         desc="For multiple selection."
       >
         <CheckboxExample />
+      </Comp>
+
+      <Comp
+        title="Switch"
+        href="/components/switch"
+        desc="For on/off selections."
+      >
+        <SwitchExample />
       </Comp>
     </Content>
   </Chrome>
