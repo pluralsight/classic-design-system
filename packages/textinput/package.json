@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-textinput",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Design system components for text input",
   "main": "index.js",
   "module": "index.js",
@@ -31,8 +31,8 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-icon": "^8.9.4",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.36",
+    "@pluralsight/ps-design-system-icon": "^8.9.5",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.37",
     "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-storyshots": "3.2.4",
     "@storybook/react": "3.2.3",
