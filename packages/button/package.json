@@ -30,7 +30,8 @@
     "@pluralsight/ps-design-system-theme": "^1.3.1",
     "@pluralsight/ps-design-system-util": "^1.2.1",
     "polished": "^1.7.0",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "web-react-components": "lizardruss/web-react-components#master"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.1",
