@@ -6,6 +6,7 @@ import core from '@pluralsight/ps-design-system-core'
 import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
 import Form from '@pluralsight/ps-design-system-form/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import Tag from '@pluralsight/ps-design-system-tag/react'
 import Text from '@pluralsight/ps-design-system-text/react'
 import TextInput from '@pluralsight/ps-design-system-textinput/react'
 import TextArea from '@pluralsight/ps-design-system-textarea/react'
@@ -29,6 +30,47 @@ import {
   ThemeToggle,
   withServerProps
 } from '../../src/ui'
+
+class TagExample extends React.Component {
+  constructor() {
+    super()
+    this.state = { tags: ['javascript', 'flowtype', 'static-types'] }
+    this.handleClick = this.handleClick.bind(this)
+  }
+  handleClick(tag) {
+    this.setState({ tags: this.state.tags.filter(t => t !== tag) })
+  }
+  render() {
+    return (
+      <div>
+        {this.state.tags.map(tag => (
+          <div
+            key={tag}
+            style={{
+              display: 'inline-block',
+              margin: `0 ${core.layout.spacingXSmall} ${
+                core.layout.spacingXSmall
+              } 0`
+            }}
+          >
+            <Tag
+              icon={
+                <Icon
+                  id={Icon.ids.close}
+                  why
+                  he
+                  onClick={this.handleClick.bind(this, tag)}
+                />
+              }
+            >
+              {tag}
+            </Tag>
+          </div>
+        ))}
+      </div>
+    )
+  }
+}
 
 class CheckboxExample extends React.Component {
   constructor() {
@@ -682,6 +724,10 @@ export default withServerProps(_ => (
         desc="For on/off selections."
       >
         <SwitchExample />
+      </Comp>
+
+      <Comp title="Tag" href="/components/tag" desc="For dynamic lists.">
+        <TagExample />
       </Comp>
     </Content>
   </Chrome>
