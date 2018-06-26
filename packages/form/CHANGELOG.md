@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.4"></a>
+## [0.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@0.2.3...@pluralsight/ps-design-system-form@0.2.4) (2018-06-26)
+
+
+### Bug Fixes
+
+* **form:** fix build error ([c9fb944](https://github.com/pluralsight/design-system/commit/c9fb944))
+
+
+
+
 <a name="0.2.3"></a>
 ## [0.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@0.2.2...@pluralsight/ps-design-system-form@0.2.3) (2018-06-20)
 

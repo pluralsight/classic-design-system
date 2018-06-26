@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-dialog",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "description": "Design System component for dialog ui",
   "main": "index.js",
   "module": "index.js",
@@ -33,9 +33,9 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.1",
-    "@pluralsight/ps-design-system-button": "^10.8.6",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.35",
-    "@pluralsight/ps-design-system-text": "^10.7.4",
+    "@pluralsight/ps-design-system-button": "^10.8.7",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.36",
+    "@pluralsight/ps-design-system-text": "^10.7.5",
     "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",

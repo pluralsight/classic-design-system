@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.6"></a>
+## [0.2.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@0.2.5...@pluralsight/ps-design-system-radio@0.2.6) (2018-06-26)
+
+
+### Bug Fixes
+
+* **radio:** fix build error ([b2087d1](https://github.com/pluralsight/design-system/commit/b2087d1))
+
+
+
+
 <a name="0.2.5"></a>
 ## [0.2.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@0.2.4...@pluralsight/ps-design-system-radio@0.2.5) (2018-06-20)
 

@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.5.0"></a>
+# [10.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@10.4.2...@pluralsight/ps-design-system-site@10.5.0) (2018-06-26)
+
+
+### Features
+
+* **site:** add error bool to switch proptypes ([60f32aa](https://github.com/pluralsight/design-system/commit/60f32aa))
+* **site:** add error specs for tag and switch ([345c7f3](https://github.com/pluralsight/design-system/commit/345c7f3))
+* **site:** add switch to form examples ([62b7898](https://github.com/pluralsight/design-system/commit/62b7898))
+* **site:** add tag to form docs ([688e416](https://github.com/pluralsight/design-system/commit/688e416))
+
+
+
+
 <a name="10.4.2"></a>
 ## [10.4.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@10.4.1...@pluralsight/ps-design-system-site@10.4.2) (2018-06-20)
 

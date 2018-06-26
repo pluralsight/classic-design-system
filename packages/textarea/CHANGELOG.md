@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.3"></a>
+## [0.3.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@0.3.2...@pluralsight/ps-design-system-textarea@0.3.3) (2018-06-26)
+
+
+### Bug Fixes
+
+* **textarea:** fix build error ([da41c98](https://github.com/pluralsight/design-system/commit/da41c98))
+
+
+
+
 <a name="0.3.2"></a>
 ## [0.3.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@0.3.1...@pluralsight/ps-design-system-textarea@0.3.2) (2018-06-20)
 

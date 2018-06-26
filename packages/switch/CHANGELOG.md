@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.4.3...@pluralsight/ps-design-system-switch@1.5.0) (2018-06-26)
+
+
+### Bug Fixes
+
+* **switch:** fix recently-broken snapshot ([f82e909](https://github.com/pluralsight/design-system/commit/f82e909))
+
+
+### Features
+
+* **switch:** add error boolean; form focus style ([20d8855](https://github.com/pluralsight/design-system/commit/20d8855))
+
+
+
+
 <a name="1.4.3"></a>
 ## [1.4.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.4.2...@pluralsight/ps-design-system-switch@1.4.3) (2018-06-19)
 
