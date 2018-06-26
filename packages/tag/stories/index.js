@@ -90,3 +90,12 @@ const longStory = storiesOf('long', module)
       end. Wow.
     </Tag>
   ))
+
+const errorStory = storiesOf('error', module)
+  .addDecorator(themeDecorator(addons))
+  .add('default', _ => <Tag error>I have a problem</Tag>)
+  .add('focusable', _ => (
+    <Tag onClick={action('button click')} error>
+      I have a problem
+    </Tag>
+  ))
