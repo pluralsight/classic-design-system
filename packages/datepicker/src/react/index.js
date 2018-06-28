@@ -6,6 +6,7 @@ import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-t
 import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
 import css from '../css'
+import { forceValidDay, forceValidMonth, forceValidYear } from '../js'
 import * as vars from '../vars'
 
 const datePickerHtmlPropsWhitelist = [
@@ -160,17 +161,39 @@ class DatePicker extends React.Component {
       dd: /^\d{0,2}$/,
       yyyy: /^\d{0,4}$/
     }
-    // TODO: update rule checking to only allow real dates
     if (updateRules[name] && updateRules[name].test(value)) {
-      this.setState({ [name]: value })
+      const { mm, dd, yyyy } = this.state
+      this.setState({
+        [name]: value
+      })
     }
   }
-  handleSubFieldBlur() {
-    if (isValidDate(this.state)) {
-      const { mm, dd, yyyy } = this.state
-      if (typeof this.props.onSelect === 'function')
-        this.props.onSelect(formatDate({ mm, dd, yyyy }), { mm, dd, yyyy })
+  handleSubFieldBlur(evt) {
+    const { name, value } = evt.target
+    const { mm, dd, yyyy } = this.state
+    const forceValidValueFor = {
+      mm: forceValidMonth,
+      dd: forceValidDay,
+      yyyy: forceValidYear
     }
+    const currentDateOverwrittenByEventValue = {
+      mm,
+      dd,
+      yyyy,
+      [name]: value
+    }
+    this.setState(
+      {
+        [name]: forceValidValueFor[name](currentDateOverwrittenByEventValue)
+      },
+      _ => {
+        if (isValidDate(this.state)) {
+          const { mm, dd, yyyy } = this.state
+          if (typeof this.props.onSelect === 'function')
+            this.props.onSelect(formatDate({ mm, dd, yyyy }), { mm, dd, yyyy })
+        }
+      }
+    )
   }
   render() {
     const { context, props, state } = this
