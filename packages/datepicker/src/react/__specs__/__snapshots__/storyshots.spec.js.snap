@@ -23,15 +23,72 @@ exports[`Storyshots appearance default 1`] = `
       }
     }
   >
-    <label>
-      <div>
+    <label
+      data-css-w0yocm=""
+    >
+      <div
+        data-css-wdchpy=""
+      >
         <input
-          disabled={false}
+          data-css-mokb53=""
+          name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
-          placeholder="The placeholder"
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
         />
-        <div>
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          aria-hidden={true}
+          data-css-gyrv08=""
+          disabled={false}
+          onBlur={undefined}
+          onFocus={undefined}
+          placeholder="The placeholder"
+          readOnly={true}
+        />
+        <div
+          data-css-1uv5m12=""
+        >
           <div
             className="css-otejxm"
           >
@@ -85,15 +142,83 @@ exports[`Storyshots appearance default w/ error 1`] = `
         Problem field
       </div>
       <div
-        data-css-mdufbt=""
+        data-css-1qv42s0=""
       >
         <input
-          data-css-ly16us=""
-          disabled={false}
+          data-css-mokb53=""
+          name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
         />
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          aria-hidden={true}
+          data-css-gyrv08=""
+          disabled={false}
+          onBlur={undefined}
+          onFocus={undefined}
+          placeholder={undefined}
+          readOnly={true}
+        />
+        <div
+          data-css-1uv5m12=""
+        >
+          <div
+            className="css-otejxm"
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+              />
+            </svg>
+          </div>
+        </div>
         <div
           data-css-loo18p=""
         >
@@ -108,126 +233,6 @@ exports[`Storyshots appearance default w/ error 1`] = `
             >
               <path
                 d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance default w/ iconAlign left 1`] = `
-<div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <label
-      data-css-w0yocm=""
-    >
-      <div
-        data-css-1ghdxx6=""
-      >
-        <input
-          data-css-1bkxplq=""
-          disabled={false}
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="The placeholder "
-        />
-        <div
-          data-css-yntvgr=""
-        >
-          <div
-            className="css-otejxm"
-          >
-            <svg
-              aria-label="info icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance default w/ iconAlign right 1`] = `
-<div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <label
-      data-css-w0yocm=""
-    >
-      <div
-        data-css-1ghdxx6=""
-      >
-        <input
-          data-css-i8twf8=""
-          disabled={false}
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="The placeholder "
-        />
-        <div
-          data-css-3rd0lv=""
-        >
-          <div
-            className="css-otejxm"
-          >
-            <svg
-              aria-label="info icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"
               />
             </svg>
           </div>
@@ -261,15 +266,72 @@ exports[`Storyshots appearance subtle 1`] = `
       }
     }
   >
-    <label>
-      <div>
+    <label
+      data-css-w0yocm=""
+    >
+      <div
+        data-css-14tpygf=""
+      >
         <input
-          disabled={false}
+          data-css-22h9p1=""
+          name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
-          placeholder="The placeholder"
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
         />
-        <div>
+        <span>
+          /
+        </span>
+        <input
+          data-css-22h9p1=""
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span>
+          /
+        </span>
+        <input
+          data-css-22h9p1=""
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          aria-hidden={true}
+          data-css-gyrv08=""
+          disabled={false}
+          onBlur={undefined}
+          onFocus={undefined}
+          placeholder="The placeholder"
+          readOnly={true}
+        />
+        <div
+          data-css-2i7x9k=""
+        >
           <div
             className="css-otejxm"
           >
@@ -323,15 +385,83 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         Problem field
       </div>
       <div
-        data-css-mdufbt=""
+        data-css-1doclyw=""
       >
         <input
-          data-css-1fhke6k=""
-          disabled={false}
+          data-css-22h9p1=""
+          name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
         />
+        <span>
+          /
+        </span>
+        <input
+          data-css-22h9p1=""
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span>
+          /
+        </span>
+        <input
+          data-css-22h9p1=""
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          aria-hidden={true}
+          data-css-gyrv08=""
+          disabled={false}
+          onBlur={undefined}
+          onFocus={undefined}
+          placeholder={undefined}
+          readOnly={true}
+        />
+        <div
+          data-css-2i7x9k=""
+        >
+          <div
+            className="css-otejxm"
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+              />
+            </svg>
+          </div>
+        </div>
         <div
           data-css-loo18p=""
         >
@@ -346,126 +476,6 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
             >
               <path
                 d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance subtle w/ iconAlign left 1`] = `
-<div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <label
-      data-css-w0yocm=""
-    >
-      <div
-        data-css-1ghdxx6=""
-      >
-        <input
-          data-css-1u1pc12=""
-          disabled={false}
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="The placeholder "
-        />
-        <div
-          data-css-hgugth=""
-        >
-          <div
-            className="css-otejxm"
-          >
-            <svg
-              aria-label="info icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance subtle w/ iconAlign right 1`] = `
-<div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <label
-      data-css-w0yocm=""
-    >
-      <div
-        data-css-1ghdxx6=""
-      >
-        <input
-          data-css-11d30wl=""
-          disabled={false}
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="The placeholder "
-        />
-        <div
-          data-css-y2nw0k=""
-        >
-          <div
-            className="css-otejxm"
-          >
-            <svg
-              aria-label="info icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"
               />
             </svg>
           </div>
@@ -509,15 +519,83 @@ exports[`Storyshots disabled compare 1`] = `
           Normal
         </div>
         <div
-          data-css-1ghdxx6=""
+          data-css-wdchpy=""
         >
           <input
-            data-css-ly16us=""
-            disabled={false}
+            data-css-mokb53=""
+            name="mm"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
-            placeholder="I'm normal, see"
+            placeholder="mm"
+            style={
+              Object {
+                "width": "32px",
+              }
+            }
+            value=""
           />
+          <span>
+            /
+          </span>
+          <input
+            data-css-mokb53=""
+            name="dd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="dd"
+            style={
+              Object {
+                "width": "28px",
+              }
+            }
+            value=""
+          />
+          <span>
+            /
+          </span>
+          <input
+            data-css-mokb53=""
+            name="yyyy"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="yyyy"
+            style={
+              Object {
+                "width": "50px",
+              }
+            }
+            value=""
+          />
+          <input
+            aria-hidden={true}
+            data-css-gyrv08=""
+            disabled={false}
+            onBlur={undefined}
+            onFocus={undefined}
+            placeholder="I'm normal, see"
+            readOnly={true}
+          />
+          <div
+            data-css-1uv5m12=""
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
         <div
           data-css-1de0a6a=""
@@ -534,15 +612,83 @@ exports[`Storyshots disabled compare 1`] = `
           I'm not usable
         </div>
         <div
-          data-css-1ghdxx6=""
+          data-css-wdchpy=""
         >
           <input
-            data-css-ly16us=""
-            disabled={true}
+            data-css-mokb53=""
+            name="mm"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
-            placeholder="I'm untouchable"
+            placeholder="mm"
+            style={
+              Object {
+                "width": "32px",
+              }
+            }
+            value=""
           />
+          <span>
+            /
+          </span>
+          <input
+            data-css-mokb53=""
+            name="dd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="dd"
+            style={
+              Object {
+                "width": "28px",
+              }
+            }
+            value=""
+          />
+          <span>
+            /
+          </span>
+          <input
+            data-css-mokb53=""
+            name="yyyy"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="yyyy"
+            style={
+              Object {
+                "width": "50px",
+              }
+            }
+            value=""
+          />
+          <input
+            aria-hidden={true}
+            data-css-gyrv08=""
+            disabled={true}
+            onBlur={undefined}
+            onFocus={undefined}
+            placeholder="I'm untouchable"
+            readOnly={true}
+          />
+          <div
+            data-css-1uv5m12=""
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
         <div
           data-css-1de0a6a=""
@@ -555,7 +701,7 @@ exports[`Storyshots disabled compare 1`] = `
 </div>
 `;
 
-exports[`Storyshots labels all 1`] = `
+exports[`Storyshots labels compare w/ textinput 1`] = `
 <div
   style={
     Object {
@@ -578,31 +724,117 @@ exports[`Storyshots labels all 1`] = `
       }
     }
   >
-    <label
-      data-css-w0yocm=""
-    >
+    <div>
       <div
-        data-css-n53zhn=""
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       >
-        Some label
+        <label
+          data-css-w0yocm=""
+        >
+          <div
+            data-css-wdchpy=""
+          >
+            <input
+              data-css-mokb53=""
+              name="mm"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="mm"
+              style={
+                Object {
+                  "width": "32px",
+                }
+              }
+              value=""
+            />
+            <span>
+              /
+            </span>
+            <input
+              data-css-mokb53=""
+              name="dd"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="dd"
+              style={
+                Object {
+                  "width": "28px",
+                }
+              }
+              value=""
+            />
+            <span>
+              /
+            </span>
+            <input
+              data-css-mokb53=""
+              name="yyyy"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="yyyy"
+              style={
+                Object {
+                  "width": "50px",
+                }
+              }
+              value=""
+            />
+            <input
+              aria-hidden={true}
+              data-css-gyrv08=""
+              disabled={false}
+              onBlur={undefined}
+              onFocus={undefined}
+              placeholder={undefined}
+              readOnly={true}
+            />
+            <div
+              data-css-1uv5m12=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="calendar icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </label>
       </div>
-      <div
-        data-css-1ghdxx6=""
-      >
-        <input
-          data-css-ly16us=""
-          disabled={false}
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="Some placeholder"
-        />
+      <div>
+        <label
+          data-css-w0yocm=""
+        >
+          <div
+            data-css-1ghdxx6=""
+          >
+            <input
+              data-css-ly16us=""
+              disabled={false}
+              onBlur={[Function]}
+              onFocus={[Function]}
+              placeholder={undefined}
+              type="date"
+            />
+          </div>
+        </label>
       </div>
-      <div
-        data-css-1de0a6a=""
-      >
-        Some sublabel
-      </div>
-    </label>
+    </div>
   </div>
 </div>
 `;
@@ -639,15 +871,83 @@ exports[`Storyshots labels label 1`] = `
         Some label
       </div>
       <div
-        data-css-1ghdxx6=""
+        data-css-wdchpy=""
       >
         <input
-          data-css-ly16us=""
-          disabled={false}
+          data-css-mokb53=""
+          name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
         />
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          aria-hidden={true}
+          data-css-gyrv08=""
+          disabled={false}
+          onBlur={undefined}
+          onFocus={undefined}
+          placeholder={undefined}
+          readOnly={true}
+        />
+        <div
+          data-css-1uv5m12=""
+        >
+          <div
+            className="css-otejxm"
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
     </label>
   </div>
@@ -686,15 +986,83 @@ exports[`Storyshots labels label and subLabel 1`] = `
         Some label
       </div>
       <div
-        data-css-1ghdxx6=""
+        data-css-wdchpy=""
       >
         <input
-          data-css-ly16us=""
-          disabled={false}
+          data-css-mokb53=""
+          name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
         />
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          aria-hidden={true}
+          data-css-gyrv08=""
+          disabled={false}
+          onBlur={undefined}
+          onFocus={undefined}
+          placeholder={undefined}
+          readOnly={true}
+        />
+        <div
+          data-css-1uv5m12=""
+        >
+          <div
+            className="css-otejxm"
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
       <div
         data-css-1de0a6a=""
@@ -733,57 +1101,83 @@ exports[`Storyshots labels none 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-1ghdxx6=""
+        data-css-wdchpy=""
       >
         <input
-          data-css-ly16us=""
-          disabled={false}
+          data-css-mokb53=""
+          name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
+        />
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          aria-hidden={true}
+          data-css-gyrv08=""
+          disabled={false}
+          onBlur={undefined}
+          onFocus={undefined}
           placeholder={undefined}
+          readOnly={true}
         />
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots labels placeholder 1`] = `
-<div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <label
-      data-css-w0yocm=""
-    >
-      <div
-        data-css-1ghdxx6=""
-      >
-        <input
-          data-css-ly16us=""
-          disabled={false}
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="some placeholder"
-        />
+        <div
+          data-css-1uv5m12=""
+        >
+          <div
+            className="css-otejxm"
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
     </label>
   </div>
@@ -817,15 +1211,83 @@ exports[`Storyshots labels subLabel 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-1ghdxx6=""
+        data-css-wdchpy=""
       >
         <input
-          data-css-ly16us=""
-          disabled={false}
+          data-css-mokb53=""
+          name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
         />
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          aria-hidden={true}
+          data-css-gyrv08=""
+          disabled={false}
+          onBlur={undefined}
+          onFocus={undefined}
+          placeholder={undefined}
+          readOnly={true}
+        />
+        <div
+          data-css-1uv5m12=""
+        >
+          <div
+            className="css-otejxm"
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
       <div
         data-css-1de0a6a=""
@@ -883,15 +1345,83 @@ exports[`Storyshots layouts full width 1`] = `
           First
         </div>
         <div
-          data-css-1ghdxx6=""
+          data-css-wdchpy=""
         >
           <input
-            data-css-ly16us=""
-            disabled={false}
+            data-css-mokb53=""
+            name="mm"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
+            placeholder="mm"
+            style={
+              Object {
+                "width": "32px",
+              }
+            }
+            value=""
           />
+          <span>
+            /
+          </span>
+          <input
+            data-css-mokb53=""
+            name="dd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="dd"
+            style={
+              Object {
+                "width": "28px",
+              }
+            }
+            value=""
+          />
+          <span>
+            /
+          </span>
+          <input
+            data-css-mokb53=""
+            name="yyyy"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="yyyy"
+            style={
+              Object {
+                "width": "50px",
+              }
+            }
+            value=""
+          />
+          <input
+            aria-hidden={true}
+            data-css-gyrv08=""
+            disabled={false}
+            onBlur={undefined}
+            onFocus={undefined}
+            placeholder={undefined}
+            readOnly={true}
+          />
+          <div
+            data-css-1uv5m12=""
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </label>
       <label
@@ -909,15 +1439,83 @@ exports[`Storyshots layouts full width 1`] = `
           Second
         </div>
         <div
-          data-css-mdufbt=""
+          data-css-1qv42s0=""
         >
           <input
-            data-css-ly16us=""
-            disabled={false}
+            data-css-mokb53=""
+            name="mm"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
+            placeholder="mm"
+            style={
+              Object {
+                "width": "32px",
+              }
+            }
+            value=""
           />
+          <span>
+            /
+          </span>
+          <input
+            data-css-mokb53=""
+            name="dd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="dd"
+            style={
+              Object {
+                "width": "28px",
+              }
+            }
+            value=""
+          />
+          <span>
+            /
+          </span>
+          <input
+            data-css-mokb53=""
+            name="yyyy"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="yyyy"
+            style={
+              Object {
+                "width": "50px",
+              }
+            }
+            value=""
+          />
+          <input
+            aria-hidden={true}
+            data-css-gyrv08=""
+            disabled={false}
+            onBlur={undefined}
+            onFocus={undefined}
+            placeholder={undefined}
+            readOnly={true}
+          />
+          <div
+            data-css-1uv5m12=""
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+                />
+              </svg>
+            </div>
+          </div>
           <div
             data-css-loo18p=""
           >
@@ -953,15 +1551,83 @@ exports[`Storyshots layouts full width 1`] = `
           Third
         </div>
         <div
-          data-css-1ghdxx6=""
+          data-css-14tpygf=""
         >
           <input
-            data-css-1fhke6k=""
-            disabled={false}
+            data-css-22h9p1=""
+            name="mm"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
+            placeholder="mm"
+            style={
+              Object {
+                "width": "32px",
+              }
+            }
+            value=""
           />
+          <span>
+            /
+          </span>
+          <input
+            data-css-22h9p1=""
+            name="dd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="dd"
+            style={
+              Object {
+                "width": "28px",
+              }
+            }
+            value=""
+          />
+          <span>
+            /
+          </span>
+          <input
+            data-css-22h9p1=""
+            name="yyyy"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="yyyy"
+            style={
+              Object {
+                "width": "50px",
+              }
+            }
+            value=""
+          />
+          <input
+            aria-hidden={true}
+            data-css-gyrv08=""
+            disabled={false}
+            onBlur={undefined}
+            onFocus={undefined}
+            placeholder={undefined}
+            readOnly={true}
+          />
+          <div
+            data-css-2i7x9k=""
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </label>
       <label
@@ -979,15 +1645,83 @@ exports[`Storyshots layouts full width 1`] = `
           Fourth
         </div>
         <div
-          data-css-mdufbt=""
+          data-css-1doclyw=""
         >
           <input
-            data-css-1fhke6k=""
-            disabled={false}
+            data-css-22h9p1=""
+            name="mm"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
+            placeholder="mm"
+            style={
+              Object {
+                "width": "32px",
+              }
+            }
+            value=""
           />
+          <span>
+            /
+          </span>
+          <input
+            data-css-22h9p1=""
+            name="dd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="dd"
+            style={
+              Object {
+                "width": "28px",
+              }
+            }
+            value=""
+          />
+          <span>
+            /
+          </span>
+          <input
+            data-css-22h9p1=""
+            name="yyyy"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="yyyy"
+            style={
+              Object {
+                "width": "50px",
+              }
+            }
+            value=""
+          />
+          <input
+            aria-hidden={true}
+            data-css-gyrv08=""
+            disabled={false}
+            onBlur={undefined}
+            onFocus={undefined}
+            placeholder={undefined}
+            readOnly={true}
+          />
+          <div
+            data-css-2i7x9k=""
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+                />
+              </svg>
+            </div>
+          </div>
           <div
             data-css-loo18p=""
           >
@@ -1055,29 +1789,79 @@ exports[`Storyshots layouts right-aligned 1`] = `
           data-css-w0yocm=""
         >
           <div
-            data-css-1ghdxx6=""
+            data-css-14tpygf=""
           >
             <input
-              data-css-1u1pc12=""
-              disabled={false}
+              data-css-22h9p1=""
+              name="mm"
               onBlur={[Function]}
+              onChange={[Function]}
               onFocus={[Function]}
+              placeholder="mm"
+              style={
+                Object {
+                  "width": "32px",
+                }
+              }
+              value=""
+            />
+            <span>
+              /
+            </span>
+            <input
+              data-css-22h9p1=""
+              name="dd"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="dd"
+              style={
+                Object {
+                  "width": "28px",
+                }
+              }
+              value=""
+            />
+            <span>
+              /
+            </span>
+            <input
+              data-css-22h9p1=""
+              name="yyyy"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="yyyy"
+              style={
+                Object {
+                  "width": "50px",
+                }
+              }
+              value=""
+            />
+            <input
+              aria-hidden={true}
+              data-css-gyrv08=""
+              disabled={false}
+              onBlur={undefined}
+              onFocus={undefined}
               placeholder="Search"
+              readOnly={true}
             />
             <div
-              data-css-hgugth=""
+              data-css-2i7x9k=""
             >
               <div
                 className="css-otejxm"
               >
                 <svg
-                  aria-label="search icon"
+                  aria-label="calendar icon"
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M21.707 20.294L16.314 14.9C17.403 13.504 18 11.799 18 10c0-2.137-.833-4.144-2.344-5.656C14.145 2.832 12.137 2 10 2c-2.137 0-4.146.832-5.656 2.344C2.832 5.856 2 7.863 2 10c0 2.137.832 4.146 2.344 5.656C5.854 17.168 7.863 18 10 18c1.799 0 3.504-.596 4.9-1.685l5.393 5.393 1.414-1.414zM10 16c-1.603 0-3.109-.624-4.242-1.757C4.624 13.11 4 11.603 4 10c0-1.602.624-3.109 1.758-4.242C6.891 4.624 8.397 4 10 4c1.602 0 3.109.624 4.242 1.758C15.376 6.891 16 8.398 16 10c0 1.603-.624 3.11-1.758 4.243C13.109 15.376 11.602 16 10 16z"
+                    d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
                   />
                 </svg>
               </div>
@@ -1125,16 +1909,84 @@ exports[`Storyshots whitelist name 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-1ghdxx6=""
+        data-css-wdchpy=""
       >
         <input
-          data-css-ly16us=""
+          data-css-mokb53=""
+          name="mm"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
+        />
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          aria-hidden={true}
+          data-css-gyrv08=""
           disabled={false}
           name="myFieldNameOfPower"
-          onBlur={[Function]}
-          onFocus={[Function]}
+          onBlur={undefined}
+          onFocus={undefined}
           placeholder="I have a form name"
+          readOnly={true}
         />
+        <div
+          data-css-1uv5m12=""
+        >
+          <div
+            className="css-otejxm"
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
     </label>
   </div>
@@ -1168,102 +2020,84 @@ exports[`Storyshots whitelist onChange 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-1ghdxx6=""
+        data-css-wdchpy=""
       >
         <input
-          data-css-ly16us=""
-          disabled={false}
+          data-css-mokb53=""
+          name="mm"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
+        />
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span>
+          /
+        </span>
+        <input
+          data-css-mokb53=""
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          aria-hidden={true}
+          data-css-gyrv08=""
+          disabled={false}
+          onBlur={undefined}
+          onChange={[Function]}
+          onFocus={undefined}
           placeholder="Change me"
+          readOnly={true}
         />
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots whitelist type=date 1`] = `
-<div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <label
-      data-css-w0yocm=""
-    >
-      <div
-        data-css-1ghdxx6=""
-      >
-        <input
-          data-css-ly16us=""
-          disabled={false}
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="Date"
-          type="date"
-        />
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots whitelist type=password 1`] = `
-<div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <label
-      data-css-w0yocm=""
-    >
-      <div
-        data-css-1ghdxx6=""
-      >
-        <input
-          data-css-ly16us=""
-          disabled={false}
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="Password"
-          type="password"
-        />
+        <div
+          data-css-1uv5m12=""
+        >
+          <div
+            className="css-otejxm"
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
     </label>
   </div>

@@ -16,22 +16,18 @@ export default {
     opacity: 0.5
   },
 
+  // TODO: rm/refactor in favor for subField
   // __field
   '.psds-date-picker__field': {
-    position: 'relative',
-    height: '40px',
-    minWidth: '192px',
-    width: '100%',
-    borderRadius: '2px',
-    background: core.colors.bone,
-    fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightStandard,
-    fontWeight: core.type.fontWeightBook,
-    color: core.colors.gray03,
-    padding: `0 calc(${core.layout.spacingXSmall} + ${
-      iconVars.widths.medium
-    } + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`,
-    border: 'none'
+    display: 'none'
+
+    // TODO: mv any to field-container?
+    // position: 'relative',
+    // fontSize: core.type.fontSizeSmall,
+    // lineHeight: core.type.lineHeightStandard,
+    // fontWeight: core.type.fontWeightBook,
+    // color: core.colors.gray03,
+    // border: 'none'
   },
   '.psds-date-picker__field:focus': {
     outline: 'none'
@@ -42,24 +38,48 @@ export default {
   [`.psds-date-picker__field--error.psds-theme--${themeNames.light}`]: {
     border: '1px solid transparent'
   },
-  [`.psds-date-picker__field.psds-theme--${themeNames.light}`]: {
-    background: core.colors.white,
-    border: `1px solid ${core.colors.gray02}`
+
+  // __sub-field
+  '.psds-date-picker__sub-field': {
+    border: 'none',
+    display: 'inline-block',
+    // width: '50px', // TODO: mk less arbitrary
+    background: 'none'
   },
-  [`.psds-date-picker__field--appearance-${vars.appearances.subtle}`]: {
-    color: core.colors.gray01,
-    background: core.colors.gray06,
-    border: `1px solid ${core.colors.gray03}`
+  [`.psds-date-picker__sub-field--appearance-${vars.appearances.subtle}`]: {
+    color: core.colors.gray01
   },
+
+  // __sub-field-divider
+  '.psds-date-picker__sub-field-divider': {},
 
   // __field-container
   '.psds-date-picker__field-container': {
     position: 'relative',
     display: 'flex',
+    borderRadius: '2px',
     alignItems: 'center',
+    minWidth: '192px',
+    width: '100%',
+    height: '40px',
     minWidth: `calc(192px + ${iconVars.widths.medium} + ${
       core.layout.spacingXSmall
-    })`
+    })`,
+    padding: `0 calc(${core.layout.spacingXSmall} + ${
+      iconVars.widths.medium
+    } + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`,
+    background: core.colors.bone
+  },
+  [`.psds-date-picker__field-container.psds-theme--${themeNames.light}`]: {
+    background: core.colors.white,
+    border: `1px solid ${core.colors.gray02}`
+  },
+  [`.psds-date-picker__field-container--appearance-${
+    vars.appearances.subtle
+  }`]: {
+    color: core.colors.gray01,
+    background: core.colors.gray06,
+    border: `1px solid ${core.colors.gray03}`
   },
   '.psds-date-picker__field-container:focus:before': {
     content: ' ',

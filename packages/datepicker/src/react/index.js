@@ -26,20 +26,24 @@ const styles = {
   error: _ => glamor.css(css['.psds-date-picker__error']),
   field: ({ appearance, error, themeName }) =>
     glamor.css(
-      css['.psds-date-picker__field'],
-      css[`.psds-date-picker__field--appearance-${appearance}`],
-      css[`.psds-date-picker__field.psds-theme--${themeName}`],
-      error && css[`.psds-date-picker__field--error.psds-theme--${themeName}`],
-      {
-        ':focus': {
-          ...css['.psds-date-picker__field:focus'],
-          ...css[`.psds-date-picker__field.psds-theme--${themeName}:focus`]
-        }
-      }
+      css['.psds-date-picker__field']
+      // css[`.psds-date-picker__field--appearance-${appearance}`],
+      // css[`.psds-date-picker__field.psds-theme--${themeName}`],
+
+      // TODO: move to field-container?
+      // error && css[`.psds-date-picker__field--error.psds-theme--${themeName}`],
+      // {
+      //   ':focus': {
+      //     ...css['.psds-date-picker__field:focus'],
+      //     ...css[`.psds-date-picker__field.psds-theme--${themeName}:focus`]
+      //   }
+      // }
     ),
-  fieldContainer: ({ error, themeName }, { isFocused }) =>
+  fieldContainer: ({ appearance, error, themeName }, { isFocused }) =>
     glamor.css(
       css['.psds-date-picker__field-container'],
+      css[`.psds-date-picker__field-container--appearance-${appearance}`],
+      css[`.psds-date-picker__field-container.psds-theme--${themeName}`],
       error
         ? {
             ':before': {
@@ -93,23 +97,80 @@ const styles = {
     glamor.css(
       css['.psds-date-picker__sub-label'],
       css[`.psds-date-picker__sub-label.psds-theme--${themeName}`]
-    )
+    ),
+  subField: ({ appearance }) =>
+    glamor.css(
+      css['.psds-date-picker__sub-field'],
+      css[`.psds-date-picker__sub-field--appearance-${appearance}`]
+    ),
+  subFieldDivider: _ => glamor.css(css['.psds-date-picker__sub-field-divider'])
 }
+
+class SubField extends React.Component {
+  constructor(props) {
+    super(props)
+    this.handleFocus = this.handleFocus.bind(this)
+  }
+  handleFocus(evt) {
+    // TODO: test x-browser compat
+    this.el.select()
+  }
+  render() {
+    const { props } = this
+    return (
+      <input
+        {...styles.subField(props)}
+        onFocus={this.handleFocus}
+        onBlur={props.onBlur}
+        ref={el => (this.el = el)}
+        onChange={props.onChange}
+        name={props.name}
+        value={props.value}
+        placeholder={props.value || props.name}
+        style={props.style}
+      />
+    )
+  }
+}
+
+const SubFieldDivider = _ => <span {...styles.subFieldDivider()}>/</span>
+
+const isValidDate = ({ mm, dd, yyyy }) => {
+  const date = new Date(yyyy, mm - 1, dd)
+  return mm && dd && yyyy && date && date.getMonth() + 1 == mm
+}
+
+const formatDate = ({ mm, dd, yyyy }) => mm + '/' + dd + '/' + yyyy
 
 class DatePicker extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isFocused: false }
-    this.handleFocus = this.handleFocus.bind(this)
-    this.handleBlur = this.handleBlur.bind(this)
+    this.state = {
+      mm: '',
+      dd: '',
+      yyyy: '' // TODO: parse props.value and assign parts
+    }
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubFieldBlur = this.handleSubFieldBlur.bind(this)
   }
-  handleFocus(evt) {
-    this.setState(_ => ({ isFocused: true }))
-    if (typeof this.props.onFocus === 'function') this.props.onFocus(evt)
+  handleChange(evt) {
+    const { name, value } = evt.target
+    const updateRules = {
+      mm: /^\d{0,2}$/,
+      dd: /^\d{0,2}$/,
+      yyyy: /^\d{0,4}$/
+    }
+    // TODO: update rule checking to only allow real dates
+    if (updateRules[name] && updateRules[name].test(value)) {
+      this.setState({ [name]: value })
+    }
   }
-  handleBlur(evt) {
-    this.setState(_ => ({ isFocused: false }))
-    if (typeof this.props.onBlur === 'function') this.props.onBlur(evt)
+  handleSubFieldBlur() {
+    if (isValidDate(this.state)) {
+      const { mm, dd, yyyy } = this.state
+      if (typeof this.props.onSelect === 'function')
+        this.props.onSelect(formatDate({ mm, dd, yyyy }), { mm, dd, yyyy })
+    }
   }
   render() {
     const { context, props, state } = this
@@ -127,12 +188,40 @@ class DatePicker extends React.Component {
           <div {...styles.label(allProps)}>{allProps.label}</div>
         )}
         <div {...styles.fieldContainer(allProps, state)}>
+          <SubField
+            appearance={allProps.appearance}
+            onChange={this.handleChange}
+            onBlur={this.handleSubFieldBlur}
+            value={state.mm}
+            name="mm"
+            style={{ width: '32px' }}
+          />
+          <SubFieldDivider />
+          <SubField
+            appearance={allProps.appearance}
+            onChange={this.handleChange}
+            onBlur={this.handleSubFieldBlur}
+            value={state.dd}
+            name="dd"
+            style={{ width: '28px' }}
+          />
+          <SubFieldDivider />
+          <SubField
+            appearance={allProps.appearance}
+            onChange={this.handleChange}
+            onBlur={this.handleSubFieldBlur}
+            value={state.yyyy}
+            name="yyyy"
+            style={{ width: '50px' }}
+          />
           <input
+            aria-hidden={true || 'TODO: figure out what Switch does here'}
+            readOnly
+            {...styles.field(allProps)}
             {...propsUtil.whitelistProps(
               allProps,
               datePickerHtmlPropsWhitelist
             )}
-            {...styles.field(allProps)}
             disabled={allProps.disabled}
             placeholder={allProps.placeholder}
             onBlur={this.handleBlur}
@@ -161,6 +250,7 @@ DatePicker.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   label: PropTypes.node,
+  onSelect: PropTypes.func,
   placeholder: PropTypes.string,
   subLabel: PropTypes.node
 }

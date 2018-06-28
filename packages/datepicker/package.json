@@ -33,6 +33,7 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-icon": "^8.9.5",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.37",
+    "@pluralsight/ps-design-system-textinput": "^0.3.4",
     "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-storyshots": "3.2.4",
     "@storybook/react": "3.2.3",

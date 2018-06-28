@@ -4,9 +4,10 @@ import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import TextInput from '@pluralsight/ps-design-system-textinput/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import TextInput from '../react'
+import DatePicker from '../react'
 
 const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
@@ -15,32 +16,34 @@ const PaddingDecorator = storyFn => (
 const labelStory = storiesOf('labels', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
-  .add('none', _ => <TextInput />)
-  .add('placeholder', _ => <TextInput placeholder="some placeholder" />)
-  .add('label', _ => <TextInput label="Some label" />)
-  .add('subLabel', _ => <TextInput subLabel="Some sublabel" />)
-  .add('label and subLabel', _ => (
-    <TextInput label="Some label" subLabel="Some sublabel" />
+  .add('none', _ => <DatePicker />)
+  .add('compare w/ textinput', _ => (
+    <div>
+      <div style={{ marginBottom: core.layout.spacingSmall }}>
+        <DatePicker />
+      </div>
+      <div>
+        <TextInput type="date" />
+      </div>
+    </div>
   ))
-  .add('all', _ => (
-    <TextInput
-      label="Some label"
-      subLabel="Some sublabel"
-      placeholder="Some placeholder"
-    />
+  .add('label', _ => <DatePicker label="Some label" />)
+  .add('subLabel', _ => <DatePicker subLabel="Some sublabel" />)
+  .add('label and subLabel', _ => (
+    <DatePicker label="Some label" subLabel="Some sublabel" />
   ))
 
 const appearanceStory = storiesOf('appearance', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
-Object.keys(TextInput.appearances).forEach(appearance =>
+Object.keys(DatePicker.appearances).forEach(appearance =>
   appearanceStory.add(appearance, _ => (
-    <TextInput appearance={appearance} placeholder="The placeholder" />
+    <DatePicker appearance={appearance} placeholder="The placeholder" />
   ))
 )
-Object.keys(TextInput.appearances).forEach(appearance =>
+Object.keys(DatePicker.appearances).forEach(appearance =>
   appearanceStory.add(`${appearance} w/ error`, _ => (
-    <TextInput appearance={appearance} error label="Problem field" />
+    <DatePicker appearance={appearance} error label="Problem field" />
   ))
 )
 
@@ -49,12 +52,12 @@ const disabledStory = storiesOf('disabled', module)
   .addDecorator(themeDecorator(addons))
   .add('compare', _ => (
     <div>
-      <TextInput
+      <DatePicker
         label="Normal"
         subLabel="Still normal"
         placeholder="I'm normal, see"
       />
-      <TextInput
+      <DatePicker
         label="I'm not usable"
         subLabel="Neither am I"
         disabled
@@ -67,10 +70,10 @@ const whitelistStory = storiesOf('whitelist', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('name', _ => (
-    <TextInput placeholder="I have a form name" name="myFieldNameOfPower" />
+    <DatePicker placeholder="I have a form name" name="myFieldNameOfPower" />
   ))
   .add('onChange', _ => (
-    <TextInput placeholder="Change me" onChange={action('I changed')} />
+    <DatePicker placeholder="Change me" onChange={action('I changed')} />
   ))
 
 const layoutsStory = storiesOf('layouts', module)
@@ -78,19 +81,19 @@ const layoutsStory = storiesOf('layouts', module)
   .addDecorator(themeDecorator(addons))
   .add('full width', _ => (
     <div style={{ border: '1px solid blue', width: '500px' }}>
-      <TextInput label="First" style={{ display: 'block', width: '100%' }} />
-      <TextInput
+      <DatePicker label="First" style={{ display: 'block', width: '100%' }} />
+      <DatePicker
         error
         label="Second"
         style={{ display: 'block', width: '100%' }}
       />
-      <TextInput
-        appearance={TextInput.appearances.subtle}
+      <DatePicker
+        appearance={DatePicker.appearances.subtle}
         label="Third"
         style={{ display: 'block', width: '100%' }}
       />
-      <TextInput
-        appearance={TextInput.appearances.subtle}
+      <DatePicker
+        appearance={DatePicker.appearances.subtle}
         error
         label="Fourth"
         style={{ display: 'block', width: '100%' }}
@@ -100,10 +103,10 @@ const layoutsStory = storiesOf('layouts', module)
   .add('right-aligned', _ => (
     <div style={{ border: '1px solid blue' }}>
       <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-        <TextInput
+        <DatePicker
           placeholder="Search"
           icon={<Icon id={Icon.ids.search} />}
-          appearance={TextInput.appearances.subtle}
+          appearance={DatePicker.appearances.subtle}
         />
       </div>
       <div style={{ border: '3px solid green', height: '50px' }} />
