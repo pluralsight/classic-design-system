@@ -210,5 +210,86 @@ export default {
     alignItems: 'center',
     color: core.colors.red,
     marginLeft: core.layout.spacingXSmall
+  },
+
+  // __calendar-container
+  '.psds-date-picker__calendar-container': {
+    position: 'absolute',
+    zIndex: '1',
+    marginTop: core.layout.spacingXXSmall
+  },
+
+  // __calendar
+  '.psds-date-picker__calendar': {
+    width: '286px',
+    height: '301px',
+    background: core.colors.white,
+    color: core.colors.gray03,
+    borderRadius: '2px',
+    padding: `${core.layout.spacingMedium} ${core.layout.spacingLarge}`,
+    fontSize: core.type.fontSizeXSmall,
+    fontWeight: core.type.fontWeightMedium
+  },
+
+  // __calendar__week-heading
+  '.psds-date-picker__calendar__week-heading': {
+    display: 'flex',
+    justifyContent: 'flex-start',
+    color: core.colors.gray02,
+    textTransform: 'uppercase'
+  },
+  // __calendar__week-heading
+  '.psds-date-picker__calendar__week-heading__day': {
+    width: '32px',
+    textAlign: 'center',
+    marginRight: '2px'
+  },
+
+  // __calendar__days
+  '.psds-date-picker__calendar__days': {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'flex-start',
+    color: core.colors.gray02,
+    textTransform: 'uppercase'
+  },
+
+  // __calendar__day
+  '.psds-date-picker__calendar__day': {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '32px',
+    width: '32px',
+    margin: `0 2px ${core.layout.spacingXSmall} 0`,
+    border: '3px solid transparent',
+    borderRadius: '50%',
+    lineHeight: '1em',
+    fontWeight: core.type.fontWeightMedium,
+    background: 'none',
+    cursor: 'pointer'
+  },
+  '.psds-date-picker__calendar__day:hover': {
+    border: `3px solid ${core.colors.blue}`
+  },
+  '.psds-date-picker__calendar__day--active': {
+    background: core.colors.blue,
+    color: core.colors.white
+  },
+  '.psds-date-picker__calendar__day--active:hover': {
+    border: '3px solid transparent'
+  },
+
+  // __calendar__switcher
+  '.psds-date-picker__calendar__switcher': {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: core.layout.spacingMedium
+  },
+
+  // __calendar__switcher__month
+  '.psds-date-picker__calendar__switcher__month': {
+    fontSize: core.type.fontSizeSmall
   }
 }

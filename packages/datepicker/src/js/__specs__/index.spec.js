@@ -63,3 +63,13 @@ describe('#forceValidYear', () => {
     expect(subject.forceValidYear({ yyyy: '111' })).toBe(111)
   })
 })
+
+describe('#firstDayOfWeekForMonth', () => {
+  test('0-based Tuesday returned', () => {
+    expect(subject.firstDayOfWeekForMonth({ mm: '4', yyyy: '2008' })).toBe(2)
+  })
+
+  test('0-based Sunday returned', () => {
+    expect(subject.firstDayOfWeekForMonth({ mm: '2', yyyy: '2009' })).toBe(0)
+  })
+})

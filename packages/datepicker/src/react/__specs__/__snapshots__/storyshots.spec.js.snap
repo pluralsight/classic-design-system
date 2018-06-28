@@ -105,6 +105,40 @@ exports[`Storyshots appearance default 1`] = `
           </div>
         </div>
       </div>
+      <div
+        data-css-1hl92v3=""
+      >
+        <div
+          data-css-10s4qk7=""
+        >
+          <div
+            data-css-1x3x6zb=""
+          >
+            <div>
+              Sun
+            </div>
+            <div>
+              Mon
+            </div>
+            <div>
+              Tue
+            </div>
+            <div>
+              Wed
+            </div>
+            <div>
+              Thu
+            </div>
+            <div>
+              Fri
+            </div>
+            <div>
+              Sat
+            </div>
+          </div>
+          calend 222ar
+        </div>
+      </div>
     </label>
   </div>
 </div>
@@ -238,6 +272,40 @@ exports[`Storyshots appearance default w/ error 1`] = `
           </div>
         </div>
       </div>
+      <div
+        data-css-1hl92v3=""
+      >
+        <div
+          data-css-10s4qk7=""
+        >
+          <div
+            data-css-1x3x6zb=""
+          >
+            <div>
+              Sun
+            </div>
+            <div>
+              Mon
+            </div>
+            <div>
+              Tue
+            </div>
+            <div>
+              Wed
+            </div>
+            <div>
+              Thu
+            </div>
+            <div>
+              Fri
+            </div>
+            <div>
+              Sat
+            </div>
+          </div>
+          calend 222ar
+        </div>
+      </div>
     </label>
   </div>
 </div>
@@ -346,6 +414,40 @@ exports[`Storyshots appearance subtle 1`] = `
               />
             </svg>
           </div>
+        </div>
+      </div>
+      <div
+        data-css-1hl92v3=""
+      >
+        <div
+          data-css-10s4qk7=""
+        >
+          <div
+            data-css-1x3x6zb=""
+          >
+            <div>
+              Sun
+            </div>
+            <div>
+              Mon
+            </div>
+            <div>
+              Tue
+            </div>
+            <div>
+              Wed
+            </div>
+            <div>
+              Thu
+            </div>
+            <div>
+              Fri
+            </div>
+            <div>
+              Sat
+            </div>
+          </div>
+          calend 222ar
         </div>
       </div>
     </label>
@@ -481,6 +583,40 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           </div>
         </div>
       </div>
+      <div
+        data-css-1hl92v3=""
+      >
+        <div
+          data-css-10s4qk7=""
+        >
+          <div
+            data-css-1x3x6zb=""
+          >
+            <div>
+              Sun
+            </div>
+            <div>
+              Mon
+            </div>
+            <div>
+              Tue
+            </div>
+            <div>
+              Wed
+            </div>
+            <div>
+              Thu
+            </div>
+            <div>
+              Fri
+            </div>
+            <div>
+              Sat
+            </div>
+          </div>
+          calend 222ar
+        </div>
+      </div>
     </label>
   </div>
 </div>
@@ -598,6 +734,40 @@ exports[`Storyshots disabled compare 1`] = `
           </div>
         </div>
         <div
+          data-css-1hl92v3=""
+        >
+          <div
+            data-css-10s4qk7=""
+          >
+            <div
+              data-css-1x3x6zb=""
+            >
+              <div>
+                Sun
+              </div>
+              <div>
+                Mon
+              </div>
+              <div>
+                Tue
+              </div>
+              <div>
+                Wed
+              </div>
+              <div>
+                Thu
+              </div>
+              <div>
+                Fri
+              </div>
+              <div>
+                Sat
+              </div>
+            </div>
+            calend 222ar
+          </div>
+        </div>
+        <div
           data-css-1de0a6a=""
         >
           Still normal
@@ -688,6 +858,40 @@ exports[`Storyshots disabled compare 1`] = `
                 />
               </svg>
             </div>
+          </div>
+        </div>
+        <div
+          data-css-1hl92v3=""
+        >
+          <div
+            data-css-10s4qk7=""
+          >
+            <div
+              data-css-1x3x6zb=""
+            >
+              <div>
+                Sun
+              </div>
+              <div>
+                Mon
+              </div>
+              <div>
+                Tue
+              </div>
+              <div>
+                Wed
+              </div>
+              <div>
+                Thu
+              </div>
+              <div>
+                Fri
+              </div>
+              <div>
+                Sat
+              </div>
+            </div>
+            calend 222ar
           </div>
         </div>
         <div
@@ -812,6 +1016,40 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
                   />
                 </svg>
               </div>
+            </div>
+          </div>
+          <div
+            data-css-1hl92v3=""
+          >
+            <div
+              data-css-10s4qk7=""
+            >
+              <div
+                data-css-1x3x6zb=""
+              >
+                <div>
+                  Sun
+                </div>
+                <div>
+                  Mon
+                </div>
+                <div>
+                  Tue
+                </div>
+                <div>
+                  Wed
+                </div>
+                <div>
+                  Thu
+                </div>
+                <div>
+                  Fri
+                </div>
+                <div>
+                  Sat
+                </div>
+              </div>
+              calend 222ar
             </div>
           </div>
         </label>
@@ -949,6 +1187,40 @@ exports[`Storyshots labels label 1`] = `
           </div>
         </div>
       </div>
+      <div
+        data-css-1hl92v3=""
+      >
+        <div
+          data-css-10s4qk7=""
+        >
+          <div
+            data-css-1x3x6zb=""
+          >
+            <div>
+              Sun
+            </div>
+            <div>
+              Mon
+            </div>
+            <div>
+              Tue
+            </div>
+            <div>
+              Wed
+            </div>
+            <div>
+              Thu
+            </div>
+            <div>
+              Fri
+            </div>
+            <div>
+              Sat
+            </div>
+          </div>
+          calend 222ar
+        </div>
+      </div>
     </label>
   </div>
 </div>
@@ -1062,6 +1334,40 @@ exports[`Storyshots labels label and subLabel 1`] = `
               />
             </svg>
           </div>
+        </div>
+      </div>
+      <div
+        data-css-1hl92v3=""
+      >
+        <div
+          data-css-10s4qk7=""
+        >
+          <div
+            data-css-1x3x6zb=""
+          >
+            <div>
+              Sun
+            </div>
+            <div>
+              Mon
+            </div>
+            <div>
+              Tue
+            </div>
+            <div>
+              Wed
+            </div>
+            <div>
+              Thu
+            </div>
+            <div>
+              Fri
+            </div>
+            <div>
+              Sat
+            </div>
+          </div>
+          calend 222ar
         </div>
       </div>
       <div
@@ -1179,6 +1485,40 @@ exports[`Storyshots labels none 1`] = `
           </div>
         </div>
       </div>
+      <div
+        data-css-1hl92v3=""
+      >
+        <div
+          data-css-10s4qk7=""
+        >
+          <div
+            data-css-1x3x6zb=""
+          >
+            <div>
+              Sun
+            </div>
+            <div>
+              Mon
+            </div>
+            <div>
+              Tue
+            </div>
+            <div>
+              Wed
+            </div>
+            <div>
+              Thu
+            </div>
+            <div>
+              Fri
+            </div>
+            <div>
+              Sat
+            </div>
+          </div>
+          calend 222ar
+        </div>
+      </div>
     </label>
   </div>
 </div>
@@ -1287,6 +1627,40 @@ exports[`Storyshots labels subLabel 1`] = `
               />
             </svg>
           </div>
+        </div>
+      </div>
+      <div
+        data-css-1hl92v3=""
+      >
+        <div
+          data-css-10s4qk7=""
+        >
+          <div
+            data-css-1x3x6zb=""
+          >
+            <div>
+              Sun
+            </div>
+            <div>
+              Mon
+            </div>
+            <div>
+              Tue
+            </div>
+            <div>
+              Wed
+            </div>
+            <div>
+              Thu
+            </div>
+            <div>
+              Fri
+            </div>
+            <div>
+              Sat
+            </div>
+          </div>
+          calend 222ar
         </div>
       </div>
       <div
@@ -1423,6 +1797,40 @@ exports[`Storyshots layouts full width 1`] = `
             </div>
           </div>
         </div>
+        <div
+          data-css-1hl92v3=""
+        >
+          <div
+            data-css-10s4qk7=""
+          >
+            <div
+              data-css-1x3x6zb=""
+            >
+              <div>
+                Sun
+              </div>
+              <div>
+                Mon
+              </div>
+              <div>
+                Tue
+              </div>
+              <div>
+                Wed
+              </div>
+              <div>
+                Thu
+              </div>
+              <div>
+                Fri
+              </div>
+              <div>
+                Sat
+              </div>
+            </div>
+            calend 222ar
+          </div>
+        </div>
       </label>
       <label
         data-css-w0yocm=""
@@ -1535,6 +1943,40 @@ exports[`Storyshots layouts full width 1`] = `
             </div>
           </div>
         </div>
+        <div
+          data-css-1hl92v3=""
+        >
+          <div
+            data-css-10s4qk7=""
+          >
+            <div
+              data-css-1x3x6zb=""
+            >
+              <div>
+                Sun
+              </div>
+              <div>
+                Mon
+              </div>
+              <div>
+                Tue
+              </div>
+              <div>
+                Wed
+              </div>
+              <div>
+                Thu
+              </div>
+              <div>
+                Fri
+              </div>
+              <div>
+                Sat
+              </div>
+            </div>
+            calend 222ar
+          </div>
+        </div>
       </label>
       <label
         data-css-w0yocm=""
@@ -1627,6 +2069,40 @@ exports[`Storyshots layouts full width 1`] = `
                 />
               </svg>
             </div>
+          </div>
+        </div>
+        <div
+          data-css-1hl92v3=""
+        >
+          <div
+            data-css-10s4qk7=""
+          >
+            <div
+              data-css-1x3x6zb=""
+            >
+              <div>
+                Sun
+              </div>
+              <div>
+                Mon
+              </div>
+              <div>
+                Tue
+              </div>
+              <div>
+                Wed
+              </div>
+              <div>
+                Thu
+              </div>
+              <div>
+                Fri
+              </div>
+              <div>
+                Sat
+              </div>
+            </div>
+            calend 222ar
           </div>
         </div>
       </label>
@@ -1739,6 +2215,40 @@ exports[`Storyshots layouts full width 1`] = `
                 />
               </svg>
             </div>
+          </div>
+        </div>
+        <div
+          data-css-1hl92v3=""
+        >
+          <div
+            data-css-10s4qk7=""
+          >
+            <div
+              data-css-1x3x6zb=""
+            >
+              <div>
+                Sun
+              </div>
+              <div>
+                Mon
+              </div>
+              <div>
+                Tue
+              </div>
+              <div>
+                Wed
+              </div>
+              <div>
+                Thu
+              </div>
+              <div>
+                Fri
+              </div>
+              <div>
+                Sat
+              </div>
+            </div>
+            calend 222ar
           </div>
         </div>
       </label>
@@ -1867,6 +2377,40 @@ exports[`Storyshots layouts right-aligned 1`] = `
               </div>
             </div>
           </div>
+          <div
+            data-css-1hl92v3=""
+          >
+            <div
+              data-css-10s4qk7=""
+            >
+              <div
+                data-css-1x3x6zb=""
+              >
+                <div>
+                  Sun
+                </div>
+                <div>
+                  Mon
+                </div>
+                <div>
+                  Tue
+                </div>
+                <div>
+                  Wed
+                </div>
+                <div>
+                  Thu
+                </div>
+                <div>
+                  Fri
+                </div>
+                <div>
+                  Sat
+                </div>
+              </div>
+              calend 222ar
+            </div>
+          </div>
         </label>
       </div>
       <div
@@ -1988,6 +2532,40 @@ exports[`Storyshots whitelist name 1`] = `
           </div>
         </div>
       </div>
+      <div
+        data-css-1hl92v3=""
+      >
+        <div
+          data-css-10s4qk7=""
+        >
+          <div
+            data-css-1x3x6zb=""
+          >
+            <div>
+              Sun
+            </div>
+            <div>
+              Mon
+            </div>
+            <div>
+              Tue
+            </div>
+            <div>
+              Wed
+            </div>
+            <div>
+              Thu
+            </div>
+            <div>
+              Fri
+            </div>
+            <div>
+              Sat
+            </div>
+          </div>
+          calend 222ar
+        </div>
+      </div>
     </label>
   </div>
 </div>
@@ -2097,6 +2675,40 @@ exports[`Storyshots whitelist onChange 1`] = `
               />
             </svg>
           </div>
+        </div>
+      </div>
+      <div
+        data-css-1hl92v3=""
+      >
+        <div
+          data-css-10s4qk7=""
+        >
+          <div
+            data-css-1x3x6zb=""
+          >
+            <div>
+              Sun
+            </div>
+            <div>
+              Mon
+            </div>
+            <div>
+              Tue
+            </div>
+            <div>
+              Wed
+            </div>
+            <div>
+              Thu
+            </div>
+            <div>
+              Fri
+            </div>
+            <div>
+              Sat
+            </div>
+          </div>
+          calend 222ar
         </div>
       </div>
     </label>

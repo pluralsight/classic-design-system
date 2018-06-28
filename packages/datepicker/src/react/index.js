@@ -5,6 +5,7 @@ import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
+import Calendar from './calendar'
 import css from '../css'
 import { forceValidDay, forceValidMonth, forceValidYear } from '../js'
 import * as vars from '../vars'
@@ -104,7 +105,9 @@ const styles = {
       css['.psds-date-picker__sub-field'],
       css[`.psds-date-picker__sub-field--appearance-${appearance}`]
     ),
-  subFieldDivider: _ => glamor.css(css['.psds-date-picker__sub-field-divider'])
+  subFieldDivider: _ => glamor.css(css['.psds-date-picker__sub-field-divider']),
+  calendarContainer: _ =>
+    glamor.css(css['.psds-date-picker__calendar-container'])
 }
 
 class SubField extends React.Component {
@@ -259,6 +262,9 @@ class DatePicker extends React.Component {
               <Icon id={Icon.ids.warning} />
             </div>
           )}
+        </div>
+        <div {...styles.calendarContainer(allProps)}>
+          <Calendar />
         </div>
         {allProps.subLabel && (
           <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
