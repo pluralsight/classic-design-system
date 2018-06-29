@@ -25,12 +25,14 @@ exports[`Storyshots appearance default 1`] = `
   >
     <label
       data-css-w0yocm=""
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
       <div
         data-css-wdchpy=""
       >
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -47,7 +49,7 @@ exports[`Storyshots appearance default 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -64,7 +66,7 @@ exports[`Storyshots appearance default 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -81,13 +83,14 @@ exports[`Storyshots appearance default 1`] = `
           aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
-          onBlur={undefined}
-          onFocus={undefined}
-          placeholder="The placeholder"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder={undefined}
           readOnly={true}
         />
-        <div
-          data-css-1uv5m12=""
+        <button
+          data-css-ay0j88=""
+          onClick={[Function]}
         >
           <div
             className="css-otejxm"
@@ -103,288 +106,7 @@ exports[`Storyshots appearance default 1`] = `
               />
             </svg>
           </div>
-        </div>
-      </div>
-      <div
-        data-css-1hl92v3=""
-      >
-        <div
-          data-css-1s45f9z=""
-        >
-          <div
-            data-css-83bdtg=""
-          >
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret left icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-            <div
-              data-css-8j27ca=""
-            >
-              June
-            </div>
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret right icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-          </div>
-          <div
-            data-css-14w5oc2=""
-          >
-            <div
-              data-css-t2oi0x=""
-            >
-              Sun
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Mon
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Tue
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Wed
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Thu
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Fri
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Sat
-            </div>
-          </div>
-          <div
-            data-css-1unqxss=""
-          >
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <button
-              data-css-1coitqn=""
-            >
-              1
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              2
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              3
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              4
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              5
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              6
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              7
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              8
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              9
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              10
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              11
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              12
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              13
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              14
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              15
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              16
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              17
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              18
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              19
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              20
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              21
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              22
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              23
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              24
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              25
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              26
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              27
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              28
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              29
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              30
-            </button>
-          </div>
-        </div>
+        </button>
       </div>
     </label>
   </div>
@@ -416,6 +138,8 @@ exports[`Storyshots appearance default w/ error 1`] = `
   >
     <label
       data-css-w0yocm=""
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
       <div
         data-css-n53zhn=""
@@ -426,7 +150,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
         data-css-1qv42s0=""
       >
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -443,7 +167,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -460,7 +184,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -477,13 +201,14 @@ exports[`Storyshots appearance default w/ error 1`] = `
           aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
-          onBlur={undefined}
-          onFocus={undefined}
+          onBlur={[Function]}
+          onFocus={[Function]}
           placeholder={undefined}
           readOnly={true}
         />
-        <div
-          data-css-1uv5m12=""
+        <button
+          data-css-ay0j88=""
+          onClick={[Function]}
         >
           <div
             className="css-otejxm"
@@ -499,7 +224,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
               />
             </svg>
           </div>
-        </div>
+        </button>
         <div
           data-css-loo18p=""
         >
@@ -516,287 +241,6 @@ exports[`Storyshots appearance default w/ error 1`] = `
                 d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
               />
             </svg>
-          </div>
-        </div>
-      </div>
-      <div
-        data-css-1hl92v3=""
-      >
-        <div
-          data-css-1s45f9z=""
-        >
-          <div
-            data-css-83bdtg=""
-          >
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret left icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-            <div
-              data-css-8j27ca=""
-            >
-              June
-            </div>
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret right icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-          </div>
-          <div
-            data-css-14w5oc2=""
-          >
-            <div
-              data-css-t2oi0x=""
-            >
-              Sun
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Mon
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Tue
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Wed
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Thu
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Fri
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Sat
-            </div>
-          </div>
-          <div
-            data-css-1unqxss=""
-          >
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <button
-              data-css-1coitqn=""
-            >
-              1
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              2
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              3
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              4
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              5
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              6
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              7
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              8
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              9
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              10
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              11
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              12
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              13
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              14
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              15
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              16
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              17
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              18
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              19
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              20
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              21
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              22
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              23
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              24
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              25
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              26
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              27
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              28
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              29
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              30
-            </button>
           </div>
         </div>
       </div>
@@ -830,12 +274,14 @@ exports[`Storyshots appearance subtle 1`] = `
   >
     <label
       data-css-w0yocm=""
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
       <div
         data-css-14tpygf=""
       >
         <input
-          data-css-22h9p1=""
+          data-css-12zovqy=""
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -852,7 +298,7 @@ exports[`Storyshots appearance subtle 1`] = `
           /
         </span>
         <input
-          data-css-22h9p1=""
+          data-css-12zovqy=""
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -869,7 +315,7 @@ exports[`Storyshots appearance subtle 1`] = `
           /
         </span>
         <input
-          data-css-22h9p1=""
+          data-css-12zovqy=""
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -886,13 +332,14 @@ exports[`Storyshots appearance subtle 1`] = `
           aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
-          onBlur={undefined}
-          onFocus={undefined}
-          placeholder="The placeholder"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder={undefined}
           readOnly={true}
         />
-        <div
-          data-css-2i7x9k=""
+        <button
+          data-css-ywynjv=""
+          onClick={[Function]}
         >
           <div
             className="css-otejxm"
@@ -908,288 +355,7 @@ exports[`Storyshots appearance subtle 1`] = `
               />
             </svg>
           </div>
-        </div>
-      </div>
-      <div
-        data-css-1hl92v3=""
-      >
-        <div
-          data-css-1s45f9z=""
-        >
-          <div
-            data-css-83bdtg=""
-          >
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret left icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-            <div
-              data-css-8j27ca=""
-            >
-              June
-            </div>
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret right icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-          </div>
-          <div
-            data-css-14w5oc2=""
-          >
-            <div
-              data-css-t2oi0x=""
-            >
-              Sun
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Mon
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Tue
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Wed
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Thu
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Fri
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Sat
-            </div>
-          </div>
-          <div
-            data-css-1unqxss=""
-          >
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <button
-              data-css-1coitqn=""
-            >
-              1
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              2
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              3
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              4
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              5
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              6
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              7
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              8
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              9
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              10
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              11
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              12
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              13
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              14
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              15
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              16
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              17
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              18
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              19
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              20
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              21
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              22
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              23
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              24
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              25
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              26
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              27
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              28
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              29
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              30
-            </button>
-          </div>
-        </div>
+        </button>
       </div>
     </label>
   </div>
@@ -1221,6 +387,8 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
   >
     <label
       data-css-w0yocm=""
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
       <div
         data-css-n53zhn=""
@@ -1231,7 +399,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         data-css-1doclyw=""
       >
         <input
-          data-css-22h9p1=""
+          data-css-12zovqy=""
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1248,7 +416,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           /
         </span>
         <input
-          data-css-22h9p1=""
+          data-css-12zovqy=""
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1265,7 +433,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           /
         </span>
         <input
-          data-css-22h9p1=""
+          data-css-12zovqy=""
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1282,13 +450,14 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
-          onBlur={undefined}
-          onFocus={undefined}
+          onBlur={[Function]}
+          onFocus={[Function]}
           placeholder={undefined}
           readOnly={true}
         />
-        <div
-          data-css-2i7x9k=""
+        <button
+          data-css-ywynjv=""
+          onClick={[Function]}
         >
           <div
             className="css-otejxm"
@@ -1304,7 +473,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
               />
             </svg>
           </div>
-        </div>
+        </button>
         <div
           data-css-loo18p=""
         >
@@ -1321,287 +490,6 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
                 d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
               />
             </svg>
-          </div>
-        </div>
-      </div>
-      <div
-        data-css-1hl92v3=""
-      >
-        <div
-          data-css-1s45f9z=""
-        >
-          <div
-            data-css-83bdtg=""
-          >
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret left icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-            <div
-              data-css-8j27ca=""
-            >
-              June
-            </div>
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret right icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-          </div>
-          <div
-            data-css-14w5oc2=""
-          >
-            <div
-              data-css-t2oi0x=""
-            >
-              Sun
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Mon
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Tue
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Wed
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Thu
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Fri
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Sat
-            </div>
-          </div>
-          <div
-            data-css-1unqxss=""
-          >
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <button
-              data-css-1coitqn=""
-            >
-              1
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              2
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              3
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              4
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              5
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              6
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              7
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              8
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              9
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              10
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              11
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              12
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              13
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              14
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              15
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              16
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              17
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              18
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              19
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              20
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              21
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              22
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              23
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              24
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              25
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              26
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              27
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              28
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              29
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              30
-            </button>
           </div>
         </div>
       </div>
@@ -1636,6 +524,8 @@ exports[`Storyshots disabled compare 1`] = `
     <div>
       <label
         data-css-w0yocm=""
+        onBlur={[Function]}
+        onFocus={[Function]}
       >
         <div
           data-css-n53zhn=""
@@ -1646,7 +536,7 @@ exports[`Storyshots disabled compare 1`] = `
           data-css-wdchpy=""
         >
           <input
-            data-css-mokb53=""
+            data-css-1e2two6=""
             name="mm"
             onBlur={[Function]}
             onChange={[Function]}
@@ -1663,7 +553,7 @@ exports[`Storyshots disabled compare 1`] = `
             /
           </span>
           <input
-            data-css-mokb53=""
+            data-css-1e2two6=""
             name="dd"
             onBlur={[Function]}
             onChange={[Function]}
@@ -1680,7 +570,7 @@ exports[`Storyshots disabled compare 1`] = `
             /
           </span>
           <input
-            data-css-mokb53=""
+            data-css-1e2two6=""
             name="yyyy"
             onBlur={[Function]}
             onChange={[Function]}
@@ -1697,13 +587,14 @@ exports[`Storyshots disabled compare 1`] = `
             aria-hidden={true}
             data-css-gyrv08=""
             disabled={false}
-            onBlur={undefined}
-            onFocus={undefined}
-            placeholder="I'm normal, see"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder={undefined}
             readOnly={true}
           />
-          <div
-            data-css-1uv5m12=""
+          <button
+            data-css-ay0j88=""
+            onClick={[Function]}
           >
             <div
               className="css-otejxm"
@@ -1719,288 +610,7 @@ exports[`Storyshots disabled compare 1`] = `
                 />
               </svg>
             </div>
-          </div>
-        </div>
-        <div
-          data-css-1hl92v3=""
-        >
-          <div
-            data-css-1s45f9z=""
-          >
-            <div
-              data-css-83bdtg=""
-            >
-              <button
-                data-css-1gjb0xd=""
-                disabled={false}
-                onClick={[Function]}
-                style={Object {}}
-              >
-                <div
-                  data-css-y80vay=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret left icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <span
-                  data-css-1en8fmq=""
-                />
-              </button>
-              <div
-                data-css-8j27ca=""
-              >
-                June
-              </div>
-              <button
-                data-css-1gjb0xd=""
-                disabled={false}
-                onClick={[Function]}
-                style={Object {}}
-              >
-                <div
-                  data-css-y80vay=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret right icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <span
-                  data-css-1en8fmq=""
-                />
-              </button>
-            </div>
-            <div
-              data-css-14w5oc2=""
-            >
-              <div
-                data-css-t2oi0x=""
-              >
-                Sun
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Mon
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Tue
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Wed
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Thu
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Fri
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Sat
-              </div>
-            </div>
-            <div
-              data-css-1unqxss=""
-            >
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <button
-                data-css-1coitqn=""
-              >
-                1
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                2
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                3
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                4
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                5
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                6
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                7
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                8
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                9
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                10
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                11
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                12
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                13
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                14
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                15
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                16
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                17
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                18
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                19
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                20
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                21
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                22
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                23
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                24
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                25
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                26
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                27
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                28
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                29
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                30
-              </button>
-            </div>
-          </div>
+          </button>
         </div>
         <div
           data-css-1de0a6a=""
@@ -2010,6 +620,8 @@ exports[`Storyshots disabled compare 1`] = `
       </label>
       <label
         data-css-1y0hkm3=""
+        onBlur={[Function]}
+        onFocus={[Function]}
       >
         <div
           data-css-n53zhn=""
@@ -2020,7 +632,7 @@ exports[`Storyshots disabled compare 1`] = `
           data-css-wdchpy=""
         >
           <input
-            data-css-mokb53=""
+            data-css-1e2two6=""
             name="mm"
             onBlur={[Function]}
             onChange={[Function]}
@@ -2037,7 +649,7 @@ exports[`Storyshots disabled compare 1`] = `
             /
           </span>
           <input
-            data-css-mokb53=""
+            data-css-1e2two6=""
             name="dd"
             onBlur={[Function]}
             onChange={[Function]}
@@ -2054,7 +666,7 @@ exports[`Storyshots disabled compare 1`] = `
             /
           </span>
           <input
-            data-css-mokb53=""
+            data-css-1e2two6=""
             name="yyyy"
             onBlur={[Function]}
             onChange={[Function]}
@@ -2071,13 +683,14 @@ exports[`Storyshots disabled compare 1`] = `
             aria-hidden={true}
             data-css-gyrv08=""
             disabled={true}
-            onBlur={undefined}
-            onFocus={undefined}
-            placeholder="I'm untouchable"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder={undefined}
             readOnly={true}
           />
-          <div
-            data-css-1uv5m12=""
+          <button
+            data-css-ay0j88=""
+            onClick={[Function]}
           >
             <div
               className="css-otejxm"
@@ -2093,288 +706,7 @@ exports[`Storyshots disabled compare 1`] = `
                 />
               </svg>
             </div>
-          </div>
-        </div>
-        <div
-          data-css-1hl92v3=""
-        >
-          <div
-            data-css-1s45f9z=""
-          >
-            <div
-              data-css-83bdtg=""
-            >
-              <button
-                data-css-1gjb0xd=""
-                disabled={false}
-                onClick={[Function]}
-                style={Object {}}
-              >
-                <div
-                  data-css-y80vay=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret left icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <span
-                  data-css-1en8fmq=""
-                />
-              </button>
-              <div
-                data-css-8j27ca=""
-              >
-                June
-              </div>
-              <button
-                data-css-1gjb0xd=""
-                disabled={false}
-                onClick={[Function]}
-                style={Object {}}
-              >
-                <div
-                  data-css-y80vay=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret right icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <span
-                  data-css-1en8fmq=""
-                />
-              </button>
-            </div>
-            <div
-              data-css-14w5oc2=""
-            >
-              <div
-                data-css-t2oi0x=""
-              >
-                Sun
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Mon
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Tue
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Wed
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Thu
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Fri
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Sat
-              </div>
-            </div>
-            <div
-              data-css-1unqxss=""
-            >
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <button
-                data-css-1coitqn=""
-              >
-                1
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                2
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                3
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                4
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                5
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                6
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                7
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                8
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                9
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                10
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                11
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                12
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                13
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                14
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                15
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                16
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                17
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                18
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                19
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                20
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                21
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                22
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                23
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                24
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                25
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                26
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                27
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                28
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                29
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                30
-              </button>
-            </div>
-          </div>
+          </button>
         </div>
         <div
           data-css-1de0a6a=""
@@ -2420,12 +752,14 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
       >
         <label
           data-css-w0yocm=""
+          onBlur={[Function]}
+          onFocus={[Function]}
         >
           <div
             data-css-wdchpy=""
           >
             <input
-              data-css-mokb53=""
+              data-css-1e2two6=""
               name="mm"
               onBlur={[Function]}
               onChange={[Function]}
@@ -2442,7 +776,7 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
               /
             </span>
             <input
-              data-css-mokb53=""
+              data-css-1e2two6=""
               name="dd"
               onBlur={[Function]}
               onChange={[Function]}
@@ -2459,7 +793,7 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
               /
             </span>
             <input
-              data-css-mokb53=""
+              data-css-1e2two6=""
               name="yyyy"
               onBlur={[Function]}
               onChange={[Function]}
@@ -2476,13 +810,14 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
               aria-hidden={true}
               data-css-gyrv08=""
               disabled={false}
-              onBlur={undefined}
-              onFocus={undefined}
+              onBlur={[Function]}
+              onFocus={[Function]}
               placeholder={undefined}
               readOnly={true}
             />
-            <div
-              data-css-1uv5m12=""
+            <button
+              data-css-ay0j88=""
+              onClick={[Function]}
             >
               <div
                 className="css-otejxm"
@@ -2498,288 +833,7 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
                   />
                 </svg>
               </div>
-            </div>
-          </div>
-          <div
-            data-css-1hl92v3=""
-          >
-            <div
-              data-css-1s45f9z=""
-            >
-              <div
-                data-css-83bdtg=""
-              >
-                <button
-                  data-css-1gjb0xd=""
-                  disabled={false}
-                  onClick={[Function]}
-                  style={Object {}}
-                >
-                  <div
-                    data-css-y80vay=""
-                  >
-                    <div
-                      className="css-otejxm"
-                    >
-                      <svg
-                        aria-label="caret left icon"
-                        role="img"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <span
-                    data-css-1en8fmq=""
-                  />
-                </button>
-                <div
-                  data-css-8j27ca=""
-                >
-                  June
-                </div>
-                <button
-                  data-css-1gjb0xd=""
-                  disabled={false}
-                  onClick={[Function]}
-                  style={Object {}}
-                >
-                  <div
-                    data-css-y80vay=""
-                  >
-                    <div
-                      className="css-otejxm"
-                    >
-                      <svg
-                        aria-label="caret right icon"
-                        role="img"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <span
-                    data-css-1en8fmq=""
-                  />
-                </button>
-              </div>
-              <div
-                data-css-14w5oc2=""
-              >
-                <div
-                  data-css-t2oi0x=""
-                >
-                  Sun
-                </div>
-                <div
-                  data-css-t2oi0x=""
-                >
-                  Mon
-                </div>
-                <div
-                  data-css-t2oi0x=""
-                >
-                  Tue
-                </div>
-                <div
-                  data-css-t2oi0x=""
-                >
-                  Wed
-                </div>
-                <div
-                  data-css-t2oi0x=""
-                >
-                  Thu
-                </div>
-                <div
-                  data-css-t2oi0x=""
-                >
-                  Fri
-                </div>
-                <div
-                  data-css-t2oi0x=""
-                >
-                  Sat
-                </div>
-              </div>
-              <div
-                data-css-1unqxss=""
-              >
-                <div
-                  data-css-61sif2=""
-                />
-                <div
-                  data-css-61sif2=""
-                />
-                <div
-                  data-css-61sif2=""
-                />
-                <div
-                  data-css-61sif2=""
-                />
-                <div
-                  data-css-61sif2=""
-                />
-                <button
-                  data-css-1coitqn=""
-                >
-                  1
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  2
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  3
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  4
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  5
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  6
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  7
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  8
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  9
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  10
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  11
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  12
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  13
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  14
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  15
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  16
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  17
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  18
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  19
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  20
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  21
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  22
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  23
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  24
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  25
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  26
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  27
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  28
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  29
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  30
-                </button>
-              </div>
-            </div>
+            </button>
           </div>
         </label>
       </div>
@@ -2831,6 +885,8 @@ exports[`Storyshots labels label 1`] = `
   >
     <label
       data-css-w0yocm=""
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
       <div
         data-css-n53zhn=""
@@ -2841,7 +897,7 @@ exports[`Storyshots labels label 1`] = `
         data-css-wdchpy=""
       >
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -2858,7 +914,7 @@ exports[`Storyshots labels label 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -2875,7 +931,7 @@ exports[`Storyshots labels label 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -2892,13 +948,14 @@ exports[`Storyshots labels label 1`] = `
           aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
-          onBlur={undefined}
-          onFocus={undefined}
+          onBlur={[Function]}
+          onFocus={[Function]}
           placeholder={undefined}
           readOnly={true}
         />
-        <div
-          data-css-1uv5m12=""
+        <button
+          data-css-ay0j88=""
+          onClick={[Function]}
         >
           <div
             className="css-otejxm"
@@ -2914,288 +971,7 @@ exports[`Storyshots labels label 1`] = `
               />
             </svg>
           </div>
-        </div>
-      </div>
-      <div
-        data-css-1hl92v3=""
-      >
-        <div
-          data-css-1s45f9z=""
-        >
-          <div
-            data-css-83bdtg=""
-          >
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret left icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-            <div
-              data-css-8j27ca=""
-            >
-              June
-            </div>
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret right icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-          </div>
-          <div
-            data-css-14w5oc2=""
-          >
-            <div
-              data-css-t2oi0x=""
-            >
-              Sun
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Mon
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Tue
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Wed
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Thu
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Fri
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Sat
-            </div>
-          </div>
-          <div
-            data-css-1unqxss=""
-          >
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <button
-              data-css-1coitqn=""
-            >
-              1
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              2
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              3
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              4
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              5
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              6
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              7
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              8
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              9
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              10
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              11
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              12
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              13
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              14
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              15
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              16
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              17
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              18
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              19
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              20
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              21
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              22
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              23
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              24
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              25
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              26
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              27
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              28
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              29
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              30
-            </button>
-          </div>
-        </div>
+        </button>
       </div>
     </label>
   </div>
@@ -3227,6 +1003,8 @@ exports[`Storyshots labels label and subLabel 1`] = `
   >
     <label
       data-css-w0yocm=""
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
       <div
         data-css-n53zhn=""
@@ -3237,7 +1015,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
         data-css-wdchpy=""
       >
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -3254,7 +1032,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -3271,7 +1049,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -3288,13 +1066,14 @@ exports[`Storyshots labels label and subLabel 1`] = `
           aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
-          onBlur={undefined}
-          onFocus={undefined}
+          onBlur={[Function]}
+          onFocus={[Function]}
           placeholder={undefined}
           readOnly={true}
         />
-        <div
-          data-css-1uv5m12=""
+        <button
+          data-css-ay0j88=""
+          onClick={[Function]}
         >
           <div
             className="css-otejxm"
@@ -3310,288 +1089,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
               />
             </svg>
           </div>
-        </div>
-      </div>
-      <div
-        data-css-1hl92v3=""
-      >
-        <div
-          data-css-1s45f9z=""
-        >
-          <div
-            data-css-83bdtg=""
-          >
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret left icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-            <div
-              data-css-8j27ca=""
-            >
-              June
-            </div>
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret right icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-          </div>
-          <div
-            data-css-14w5oc2=""
-          >
-            <div
-              data-css-t2oi0x=""
-            >
-              Sun
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Mon
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Tue
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Wed
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Thu
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Fri
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Sat
-            </div>
-          </div>
-          <div
-            data-css-1unqxss=""
-          >
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <button
-              data-css-1coitqn=""
-            >
-              1
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              2
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              3
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              4
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              5
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              6
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              7
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              8
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              9
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              10
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              11
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              12
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              13
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              14
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              15
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              16
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              17
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              18
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              19
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              20
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              21
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              22
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              23
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              24
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              25
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              26
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              27
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              28
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              29
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              30
-            </button>
-          </div>
-        </div>
+        </button>
       </div>
       <div
         data-css-1de0a6a=""
@@ -3628,12 +1126,14 @@ exports[`Storyshots labels none 1`] = `
   >
     <label
       data-css-w0yocm=""
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
       <div
         data-css-wdchpy=""
       >
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -3650,7 +1150,7 @@ exports[`Storyshots labels none 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -3667,7 +1167,7 @@ exports[`Storyshots labels none 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -3684,13 +1184,14 @@ exports[`Storyshots labels none 1`] = `
           aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
-          onBlur={undefined}
-          onFocus={undefined}
+          onBlur={[Function]}
+          onFocus={[Function]}
           placeholder={undefined}
           readOnly={true}
         />
-        <div
-          data-css-1uv5m12=""
+        <button
+          data-css-ay0j88=""
+          onClick={[Function]}
         >
           <div
             className="css-otejxm"
@@ -3706,288 +1207,7 @@ exports[`Storyshots labels none 1`] = `
               />
             </svg>
           </div>
-        </div>
-      </div>
-      <div
-        data-css-1hl92v3=""
-      >
-        <div
-          data-css-1s45f9z=""
-        >
-          <div
-            data-css-83bdtg=""
-          >
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret left icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-            <div
-              data-css-8j27ca=""
-            >
-              June
-            </div>
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret right icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-          </div>
-          <div
-            data-css-14w5oc2=""
-          >
-            <div
-              data-css-t2oi0x=""
-            >
-              Sun
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Mon
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Tue
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Wed
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Thu
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Fri
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Sat
-            </div>
-          </div>
-          <div
-            data-css-1unqxss=""
-          >
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <button
-              data-css-1coitqn=""
-            >
-              1
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              2
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              3
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              4
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              5
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              6
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              7
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              8
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              9
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              10
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              11
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              12
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              13
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              14
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              15
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              16
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              17
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              18
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              19
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              20
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              21
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              22
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              23
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              24
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              25
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              26
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              27
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              28
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              29
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              30
-            </button>
-          </div>
-        </div>
+        </button>
       </div>
     </label>
   </div>
@@ -4019,12 +1239,14 @@ exports[`Storyshots labels subLabel 1`] = `
   >
     <label
       data-css-w0yocm=""
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
       <div
         data-css-wdchpy=""
       >
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -4041,7 +1263,7 @@ exports[`Storyshots labels subLabel 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -4058,7 +1280,7 @@ exports[`Storyshots labels subLabel 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -4075,13 +1297,14 @@ exports[`Storyshots labels subLabel 1`] = `
           aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
-          onBlur={undefined}
-          onFocus={undefined}
+          onBlur={[Function]}
+          onFocus={[Function]}
           placeholder={undefined}
           readOnly={true}
         />
-        <div
-          data-css-1uv5m12=""
+        <button
+          data-css-ay0j88=""
+          onClick={[Function]}
         >
           <div
             className="css-otejxm"
@@ -4097,288 +1320,7 @@ exports[`Storyshots labels subLabel 1`] = `
               />
             </svg>
           </div>
-        </div>
-      </div>
-      <div
-        data-css-1hl92v3=""
-      >
-        <div
-          data-css-1s45f9z=""
-        >
-          <div
-            data-css-83bdtg=""
-          >
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret left icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-            <div
-              data-css-8j27ca=""
-            >
-              June
-            </div>
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret right icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-          </div>
-          <div
-            data-css-14w5oc2=""
-          >
-            <div
-              data-css-t2oi0x=""
-            >
-              Sun
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Mon
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Tue
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Wed
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Thu
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Fri
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Sat
-            </div>
-          </div>
-          <div
-            data-css-1unqxss=""
-          >
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <button
-              data-css-1coitqn=""
-            >
-              1
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              2
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              3
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              4
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              5
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              6
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              7
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              8
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              9
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              10
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              11
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              12
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              13
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              14
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              15
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              16
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              17
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              18
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              19
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              20
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              21
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              22
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              23
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              24
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              25
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              26
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              27
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              28
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              29
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              30
-            </button>
-          </div>
-        </div>
+        </button>
       </div>
       <div
         data-css-1de0a6a=""
@@ -4423,6 +1365,8 @@ exports[`Storyshots layouts full width 1`] = `
     >
       <label
         data-css-w0yocm=""
+        onBlur={[Function]}
+        onFocus={[Function]}
         style={
           Object {
             "display": "block",
@@ -4439,7 +1383,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-wdchpy=""
         >
           <input
-            data-css-mokb53=""
+            data-css-1e2two6=""
             name="mm"
             onBlur={[Function]}
             onChange={[Function]}
@@ -4456,7 +1400,7 @@ exports[`Storyshots layouts full width 1`] = `
             /
           </span>
           <input
-            data-css-mokb53=""
+            data-css-1e2two6=""
             name="dd"
             onBlur={[Function]}
             onChange={[Function]}
@@ -4473,7 +1417,7 @@ exports[`Storyshots layouts full width 1`] = `
             /
           </span>
           <input
-            data-css-mokb53=""
+            data-css-1e2two6=""
             name="yyyy"
             onBlur={[Function]}
             onChange={[Function]}
@@ -4490,13 +1434,14 @@ exports[`Storyshots layouts full width 1`] = `
             aria-hidden={true}
             data-css-gyrv08=""
             disabled={false}
-            onBlur={undefined}
-            onFocus={undefined}
+            onBlur={[Function]}
+            onFocus={[Function]}
             placeholder={undefined}
             readOnly={true}
           />
-          <div
-            data-css-1uv5m12=""
+          <button
+            data-css-ay0j88=""
+            onClick={[Function]}
           >
             <div
               className="css-otejxm"
@@ -4512,292 +1457,13 @@ exports[`Storyshots layouts full width 1`] = `
                 />
               </svg>
             </div>
-          </div>
-        </div>
-        <div
-          data-css-1hl92v3=""
-        >
-          <div
-            data-css-1s45f9z=""
-          >
-            <div
-              data-css-83bdtg=""
-            >
-              <button
-                data-css-1gjb0xd=""
-                disabled={false}
-                onClick={[Function]}
-                style={Object {}}
-              >
-                <div
-                  data-css-y80vay=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret left icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <span
-                  data-css-1en8fmq=""
-                />
-              </button>
-              <div
-                data-css-8j27ca=""
-              >
-                June
-              </div>
-              <button
-                data-css-1gjb0xd=""
-                disabled={false}
-                onClick={[Function]}
-                style={Object {}}
-              >
-                <div
-                  data-css-y80vay=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret right icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <span
-                  data-css-1en8fmq=""
-                />
-              </button>
-            </div>
-            <div
-              data-css-14w5oc2=""
-            >
-              <div
-                data-css-t2oi0x=""
-              >
-                Sun
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Mon
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Tue
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Wed
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Thu
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Fri
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Sat
-              </div>
-            </div>
-            <div
-              data-css-1unqxss=""
-            >
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <button
-                data-css-1coitqn=""
-              >
-                1
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                2
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                3
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                4
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                5
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                6
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                7
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                8
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                9
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                10
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                11
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                12
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                13
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                14
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                15
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                16
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                17
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                18
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                19
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                20
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                21
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                22
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                23
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                24
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                25
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                26
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                27
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                28
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                29
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                30
-              </button>
-            </div>
-          </div>
+          </button>
         </div>
       </label>
       <label
         data-css-w0yocm=""
+        onBlur={[Function]}
+        onFocus={[Function]}
         style={
           Object {
             "display": "block",
@@ -4814,7 +1480,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-1qv42s0=""
         >
           <input
-            data-css-mokb53=""
+            data-css-1e2two6=""
             name="mm"
             onBlur={[Function]}
             onChange={[Function]}
@@ -4831,7 +1497,7 @@ exports[`Storyshots layouts full width 1`] = `
             /
           </span>
           <input
-            data-css-mokb53=""
+            data-css-1e2two6=""
             name="dd"
             onBlur={[Function]}
             onChange={[Function]}
@@ -4848,7 +1514,7 @@ exports[`Storyshots layouts full width 1`] = `
             /
           </span>
           <input
-            data-css-mokb53=""
+            data-css-1e2two6=""
             name="yyyy"
             onBlur={[Function]}
             onChange={[Function]}
@@ -4865,13 +1531,14 @@ exports[`Storyshots layouts full width 1`] = `
             aria-hidden={true}
             data-css-gyrv08=""
             disabled={false}
-            onBlur={undefined}
-            onFocus={undefined}
+            onBlur={[Function]}
+            onFocus={[Function]}
             placeholder={undefined}
             readOnly={true}
           />
-          <div
-            data-css-1uv5m12=""
+          <button
+            data-css-ay0j88=""
+            onClick={[Function]}
           >
             <div
               className="css-otejxm"
@@ -4887,7 +1554,7 @@ exports[`Storyshots layouts full width 1`] = `
                 />
               </svg>
             </div>
-          </div>
+          </button>
           <div
             data-css-loo18p=""
           >
@@ -4907,290 +1574,11 @@ exports[`Storyshots layouts full width 1`] = `
             </div>
           </div>
         </div>
-        <div
-          data-css-1hl92v3=""
-        >
-          <div
-            data-css-1s45f9z=""
-          >
-            <div
-              data-css-83bdtg=""
-            >
-              <button
-                data-css-1gjb0xd=""
-                disabled={false}
-                onClick={[Function]}
-                style={Object {}}
-              >
-                <div
-                  data-css-y80vay=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret left icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <span
-                  data-css-1en8fmq=""
-                />
-              </button>
-              <div
-                data-css-8j27ca=""
-              >
-                June
-              </div>
-              <button
-                data-css-1gjb0xd=""
-                disabled={false}
-                onClick={[Function]}
-                style={Object {}}
-              >
-                <div
-                  data-css-y80vay=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret right icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <span
-                  data-css-1en8fmq=""
-                />
-              </button>
-            </div>
-            <div
-              data-css-14w5oc2=""
-            >
-              <div
-                data-css-t2oi0x=""
-              >
-                Sun
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Mon
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Tue
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Wed
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Thu
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Fri
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Sat
-              </div>
-            </div>
-            <div
-              data-css-1unqxss=""
-            >
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <button
-                data-css-1coitqn=""
-              >
-                1
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                2
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                3
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                4
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                5
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                6
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                7
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                8
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                9
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                10
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                11
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                12
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                13
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                14
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                15
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                16
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                17
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                18
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                19
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                20
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                21
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                22
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                23
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                24
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                25
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                26
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                27
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                28
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                29
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                30
-              </button>
-            </div>
-          </div>
-        </div>
       </label>
       <label
         data-css-w0yocm=""
+        onBlur={[Function]}
+        onFocus={[Function]}
         style={
           Object {
             "display": "block",
@@ -5207,7 +1595,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-14tpygf=""
         >
           <input
-            data-css-22h9p1=""
+            data-css-12zovqy=""
             name="mm"
             onBlur={[Function]}
             onChange={[Function]}
@@ -5224,7 +1612,7 @@ exports[`Storyshots layouts full width 1`] = `
             /
           </span>
           <input
-            data-css-22h9p1=""
+            data-css-12zovqy=""
             name="dd"
             onBlur={[Function]}
             onChange={[Function]}
@@ -5241,7 +1629,7 @@ exports[`Storyshots layouts full width 1`] = `
             /
           </span>
           <input
-            data-css-22h9p1=""
+            data-css-12zovqy=""
             name="yyyy"
             onBlur={[Function]}
             onChange={[Function]}
@@ -5258,13 +1646,14 @@ exports[`Storyshots layouts full width 1`] = `
             aria-hidden={true}
             data-css-gyrv08=""
             disabled={false}
-            onBlur={undefined}
-            onFocus={undefined}
+            onBlur={[Function]}
+            onFocus={[Function]}
             placeholder={undefined}
             readOnly={true}
           />
-          <div
-            data-css-2i7x9k=""
+          <button
+            data-css-ywynjv=""
+            onClick={[Function]}
           >
             <div
               className="css-otejxm"
@@ -5280,292 +1669,13 @@ exports[`Storyshots layouts full width 1`] = `
                 />
               </svg>
             </div>
-          </div>
-        </div>
-        <div
-          data-css-1hl92v3=""
-        >
-          <div
-            data-css-1s45f9z=""
-          >
-            <div
-              data-css-83bdtg=""
-            >
-              <button
-                data-css-1gjb0xd=""
-                disabled={false}
-                onClick={[Function]}
-                style={Object {}}
-              >
-                <div
-                  data-css-y80vay=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret left icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <span
-                  data-css-1en8fmq=""
-                />
-              </button>
-              <div
-                data-css-8j27ca=""
-              >
-                June
-              </div>
-              <button
-                data-css-1gjb0xd=""
-                disabled={false}
-                onClick={[Function]}
-                style={Object {}}
-              >
-                <div
-                  data-css-y80vay=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret right icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <span
-                  data-css-1en8fmq=""
-                />
-              </button>
-            </div>
-            <div
-              data-css-14w5oc2=""
-            >
-              <div
-                data-css-t2oi0x=""
-              >
-                Sun
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Mon
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Tue
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Wed
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Thu
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Fri
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Sat
-              </div>
-            </div>
-            <div
-              data-css-1unqxss=""
-            >
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <button
-                data-css-1coitqn=""
-              >
-                1
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                2
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                3
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                4
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                5
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                6
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                7
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                8
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                9
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                10
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                11
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                12
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                13
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                14
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                15
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                16
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                17
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                18
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                19
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                20
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                21
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                22
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                23
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                24
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                25
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                26
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                27
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                28
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                29
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                30
-              </button>
-            </div>
-          </div>
+          </button>
         </div>
       </label>
       <label
         data-css-w0yocm=""
+        onBlur={[Function]}
+        onFocus={[Function]}
         style={
           Object {
             "display": "block",
@@ -5582,7 +1692,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-1doclyw=""
         >
           <input
-            data-css-22h9p1=""
+            data-css-12zovqy=""
             name="mm"
             onBlur={[Function]}
             onChange={[Function]}
@@ -5599,7 +1709,7 @@ exports[`Storyshots layouts full width 1`] = `
             /
           </span>
           <input
-            data-css-22h9p1=""
+            data-css-12zovqy=""
             name="dd"
             onBlur={[Function]}
             onChange={[Function]}
@@ -5616,7 +1726,7 @@ exports[`Storyshots layouts full width 1`] = `
             /
           </span>
           <input
-            data-css-22h9p1=""
+            data-css-12zovqy=""
             name="yyyy"
             onBlur={[Function]}
             onChange={[Function]}
@@ -5633,13 +1743,14 @@ exports[`Storyshots layouts full width 1`] = `
             aria-hidden={true}
             data-css-gyrv08=""
             disabled={false}
-            onBlur={undefined}
-            onFocus={undefined}
+            onBlur={[Function]}
+            onFocus={[Function]}
             placeholder={undefined}
             readOnly={true}
           />
-          <div
-            data-css-2i7x9k=""
+          <button
+            data-css-ywynjv=""
+            onClick={[Function]}
           >
             <div
               className="css-otejxm"
@@ -5655,7 +1766,7 @@ exports[`Storyshots layouts full width 1`] = `
                 />
               </svg>
             </div>
-          </div>
+          </button>
           <div
             data-css-loo18p=""
           >
@@ -5672,287 +1783,6 @@ exports[`Storyshots layouts full width 1`] = `
                   d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
                 />
               </svg>
-            </div>
-          </div>
-        </div>
-        <div
-          data-css-1hl92v3=""
-        >
-          <div
-            data-css-1s45f9z=""
-          >
-            <div
-              data-css-83bdtg=""
-            >
-              <button
-                data-css-1gjb0xd=""
-                disabled={false}
-                onClick={[Function]}
-                style={Object {}}
-              >
-                <div
-                  data-css-y80vay=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret left icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <span
-                  data-css-1en8fmq=""
-                />
-              </button>
-              <div
-                data-css-8j27ca=""
-              >
-                June
-              </div>
-              <button
-                data-css-1gjb0xd=""
-                disabled={false}
-                onClick={[Function]}
-                style={Object {}}
-              >
-                <div
-                  data-css-y80vay=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret right icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <span
-                  data-css-1en8fmq=""
-                />
-              </button>
-            </div>
-            <div
-              data-css-14w5oc2=""
-            >
-              <div
-                data-css-t2oi0x=""
-              >
-                Sun
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Mon
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Tue
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Wed
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Thu
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Fri
-              </div>
-              <div
-                data-css-t2oi0x=""
-              >
-                Sat
-              </div>
-            </div>
-            <div
-              data-css-1unqxss=""
-            >
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <div
-                data-css-61sif2=""
-              />
-              <button
-                data-css-1coitqn=""
-              >
-                1
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                2
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                3
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                4
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                5
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                6
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                7
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                8
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                9
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                10
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                11
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                12
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                13
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                14
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                15
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                16
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                17
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                18
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                19
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                20
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                21
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                22
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                23
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                24
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                25
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                26
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                27
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                28
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                29
-              </button>
-              <button
-                data-css-1coitqn=""
-              >
-                30
-              </button>
             </div>
           </div>
         </div>
@@ -6002,12 +1832,14 @@ exports[`Storyshots layouts right-aligned 1`] = `
       >
         <label
           data-css-w0yocm=""
+          onBlur={[Function]}
+          onFocus={[Function]}
         >
           <div
             data-css-14tpygf=""
           >
             <input
-              data-css-22h9p1=""
+              data-css-12zovqy=""
               name="mm"
               onBlur={[Function]}
               onChange={[Function]}
@@ -6024,7 +1856,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
               /
             </span>
             <input
-              data-css-22h9p1=""
+              data-css-12zovqy=""
               name="dd"
               onBlur={[Function]}
               onChange={[Function]}
@@ -6041,7 +1873,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
               /
             </span>
             <input
-              data-css-22h9p1=""
+              data-css-12zovqy=""
               name="yyyy"
               onBlur={[Function]}
               onChange={[Function]}
@@ -6058,13 +1890,14 @@ exports[`Storyshots layouts right-aligned 1`] = `
               aria-hidden={true}
               data-css-gyrv08=""
               disabled={false}
-              onBlur={undefined}
-              onFocus={undefined}
-              placeholder="Search"
+              onBlur={[Function]}
+              onFocus={[Function]}
+              placeholder={undefined}
               readOnly={true}
             />
-            <div
-              data-css-2i7x9k=""
+            <button
+              data-css-ywynjv=""
+              onClick={[Function]}
             >
               <div
                 className="css-otejxm"
@@ -6080,288 +1913,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
                   />
                 </svg>
               </div>
-            </div>
-          </div>
-          <div
-            data-css-1hl92v3=""
-          >
-            <div
-              data-css-1s45f9z=""
-            >
-              <div
-                data-css-83bdtg=""
-              >
-                <button
-                  data-css-1gjb0xd=""
-                  disabled={false}
-                  onClick={[Function]}
-                  style={Object {}}
-                >
-                  <div
-                    data-css-y80vay=""
-                  >
-                    <div
-                      className="css-otejxm"
-                    >
-                      <svg
-                        aria-label="caret left icon"
-                        role="img"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <span
-                    data-css-1en8fmq=""
-                  />
-                </button>
-                <div
-                  data-css-8j27ca=""
-                >
-                  June
-                </div>
-                <button
-                  data-css-1gjb0xd=""
-                  disabled={false}
-                  onClick={[Function]}
-                  style={Object {}}
-                >
-                  <div
-                    data-css-y80vay=""
-                  >
-                    <div
-                      className="css-otejxm"
-                    >
-                      <svg
-                        aria-label="caret right icon"
-                        role="img"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <span
-                    data-css-1en8fmq=""
-                  />
-                </button>
-              </div>
-              <div
-                data-css-14w5oc2=""
-              >
-                <div
-                  data-css-t2oi0x=""
-                >
-                  Sun
-                </div>
-                <div
-                  data-css-t2oi0x=""
-                >
-                  Mon
-                </div>
-                <div
-                  data-css-t2oi0x=""
-                >
-                  Tue
-                </div>
-                <div
-                  data-css-t2oi0x=""
-                >
-                  Wed
-                </div>
-                <div
-                  data-css-t2oi0x=""
-                >
-                  Thu
-                </div>
-                <div
-                  data-css-t2oi0x=""
-                >
-                  Fri
-                </div>
-                <div
-                  data-css-t2oi0x=""
-                >
-                  Sat
-                </div>
-              </div>
-              <div
-                data-css-1unqxss=""
-              >
-                <div
-                  data-css-61sif2=""
-                />
-                <div
-                  data-css-61sif2=""
-                />
-                <div
-                  data-css-61sif2=""
-                />
-                <div
-                  data-css-61sif2=""
-                />
-                <div
-                  data-css-61sif2=""
-                />
-                <button
-                  data-css-1coitqn=""
-                >
-                  1
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  2
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  3
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  4
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  5
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  6
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  7
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  8
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  9
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  10
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  11
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  12
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  13
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  14
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  15
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  16
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  17
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  18
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  19
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  20
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  21
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  22
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  23
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  24
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  25
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  26
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  27
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  28
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  29
-                </button>
-                <button
-                  data-css-1coitqn=""
-                >
-                  30
-                </button>
-              </div>
-            </div>
+            </button>
           </div>
         </label>
       </div>
@@ -6403,70 +1955,73 @@ exports[`Storyshots value single slash-separated value 1`] = `
   >
     <label
       data-css-w0yocm=""
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
       <div
         data-css-wdchpy=""
       >
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          placeholder="mm"
+          placeholder={12}
           style={
             Object {
               "width": "32px",
             }
           }
-          value=""
+          value={12}
         />
         <span>
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          placeholder="dd"
+          placeholder={7}
           style={
             Object {
               "width": "28px",
             }
           }
-          value=""
+          value={7}
         />
         <span>
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          placeholder="yyyy"
+          placeholder={1941}
           style={
             Object {
               "width": "50px",
             }
           }
-          value=""
+          value={1941}
         />
         <input
           aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
-          onBlur={undefined}
-          onFocus={undefined}
+          onBlur={[Function]}
+          onFocus={[Function]}
           placeholder={undefined}
           readOnly={true}
           value="12/07/1941"
         />
-        <div
-          data-css-1uv5m12=""
+        <button
+          data-css-ay0j88=""
+          onClick={[Function]}
         >
           <div
             className="css-otejxm"
@@ -6482,290 +2037,263 @@ exports[`Storyshots value single slash-separated value 1`] = `
               />
             </svg>
           </div>
-        </div>
-      </div>
-      <div
-        data-css-1hl92v3=""
-      >
-        <div
-          data-css-1s45f9z=""
-        >
-          <div
-            data-css-83bdtg=""
-          >
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret left icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-            <div
-              data-css-8j27ca=""
-            >
-              June
-            </div>
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret right icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-          </div>
-          <div
-            data-css-14w5oc2=""
-          >
-            <div
-              data-css-t2oi0x=""
-            >
-              Sun
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Mon
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Tue
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Wed
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Thu
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Fri
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Sat
-            </div>
-          </div>
-          <div
-            data-css-1unqxss=""
-          >
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <button
-              data-css-1coitqn=""
-            >
-              1
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              2
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              3
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              4
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              5
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              6
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              7
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              8
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              9
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              10
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              11
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              12
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              13
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              14
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              15
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              16
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              17
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              18
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              19
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              20
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              21
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              22
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              23
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              24
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              25
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              26
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              27
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              28
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              29
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              30
-            </button>
-          </div>
-        </div>
+        </button>
       </div>
     </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots value updated value, no initial 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div>
+      <div
+        style={
+          Object {
+            "color": "#555555",
+          }
+        }
+      >
+        Selected: 
+        
+      </div>
+      <label
+        data-css-w0yocm=""
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          data-css-wdchpy=""
+        >
+          <input
+            data-css-1e2two6=""
+            name="mm"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="mm"
+            style={
+              Object {
+                "width": "32px",
+              }
+            }
+            value=""
+          />
+          <span>
+            /
+          </span>
+          <input
+            data-css-1e2two6=""
+            name="dd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="dd"
+            style={
+              Object {
+                "width": "28px",
+              }
+            }
+            value=""
+          />
+          <span>
+            /
+          </span>
+          <input
+            data-css-1e2two6=""
+            name="yyyy"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="yyyy"
+            style={
+              Object {
+                "width": "50px",
+              }
+            }
+            value=""
+          />
+          <input
+            aria-hidden={true}
+            data-css-gyrv08=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onSelect={[Function]}
+            placeholder={undefined}
+            readOnly={true}
+            value=""
+          />
+          <button
+            data-css-ay0j88=""
+            onClick={[Function]}
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots value updated value, w/ initial 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div>
+      <div
+        style={
+          Object {
+            "color": "#555555",
+          }
+        }
+      >
+        Selected: 
+        3/15/1995
+      </div>
+      <label
+        data-css-w0yocm=""
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          data-css-wdchpy=""
+        >
+          <input
+            data-css-1e2two6=""
+            name="mm"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder={3}
+            style={
+              Object {
+                "width": "32px",
+              }
+            }
+            value={3}
+          />
+          <span>
+            /
+          </span>
+          <input
+            data-css-1e2two6=""
+            name="dd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder={15}
+            style={
+              Object {
+                "width": "28px",
+              }
+            }
+            value={15}
+          />
+          <span>
+            /
+          </span>
+          <input
+            data-css-1e2two6=""
+            name="yyyy"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder={1995}
+            style={
+              Object {
+                "width": "50px",
+              }
+            }
+            value={1995}
+          />
+          <input
+            aria-hidden={true}
+            data-css-gyrv08=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onSelect={[Function]}
+            placeholder={undefined}
+            readOnly={true}
+            value="3/15/1995"
+          />
+          <button
+            data-css-ay0j88=""
+            onClick={[Function]}
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </label>
+    </div>
   </div>
 </div>
 `;
@@ -6795,12 +2323,14 @@ exports[`Storyshots whitelist name 1`] = `
   >
     <label
       data-css-w0yocm=""
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
       <div
         data-css-wdchpy=""
       >
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -6817,7 +2347,7 @@ exports[`Storyshots whitelist name 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -6834,7 +2364,7 @@ exports[`Storyshots whitelist name 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -6852,13 +2382,14 @@ exports[`Storyshots whitelist name 1`] = `
           data-css-gyrv08=""
           disabled={false}
           name="myFieldNameOfPower"
-          onBlur={undefined}
-          onFocus={undefined}
-          placeholder="I have a form name"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder={undefined}
           readOnly={true}
         />
-        <div
-          data-css-1uv5m12=""
+        <button
+          data-css-ay0j88=""
+          onClick={[Function]}
         >
           <div
             className="css-otejxm"
@@ -6874,288 +2405,7 @@ exports[`Storyshots whitelist name 1`] = `
               />
             </svg>
           </div>
-        </div>
-      </div>
-      <div
-        data-css-1hl92v3=""
-      >
-        <div
-          data-css-1s45f9z=""
-        >
-          <div
-            data-css-83bdtg=""
-          >
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret left icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-            <div
-              data-css-8j27ca=""
-            >
-              June
-            </div>
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret right icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-          </div>
-          <div
-            data-css-14w5oc2=""
-          >
-            <div
-              data-css-t2oi0x=""
-            >
-              Sun
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Mon
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Tue
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Wed
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Thu
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Fri
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Sat
-            </div>
-          </div>
-          <div
-            data-css-1unqxss=""
-          >
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <button
-              data-css-1coitqn=""
-            >
-              1
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              2
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              3
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              4
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              5
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              6
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              7
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              8
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              9
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              10
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              11
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              12
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              13
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              14
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              15
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              16
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              17
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              18
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              19
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              20
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              21
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              22
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              23
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              24
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              25
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              26
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              27
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              28
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              29
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              30
-            </button>
-          </div>
-        </div>
+        </button>
       </div>
     </label>
   </div>
@@ -7187,12 +2437,14 @@ exports[`Storyshots whitelist onChange 1`] = `
   >
     <label
       data-css-w0yocm=""
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
       <div
         data-css-wdchpy=""
       >
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -7209,7 +2461,7 @@ exports[`Storyshots whitelist onChange 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -7226,7 +2478,7 @@ exports[`Storyshots whitelist onChange 1`] = `
           /
         </span>
         <input
-          data-css-mokb53=""
+          data-css-1e2two6=""
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -7243,14 +2495,15 @@ exports[`Storyshots whitelist onChange 1`] = `
           aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
-          onBlur={undefined}
+          onBlur={[Function]}
           onChange={[Function]}
-          onFocus={undefined}
-          placeholder="Change me"
+          onFocus={[Function]}
+          placeholder={undefined}
           readOnly={true}
         />
-        <div
-          data-css-1uv5m12=""
+        <button
+          data-css-ay0j88=""
+          onClick={[Function]}
         >
           <div
             className="css-otejxm"
@@ -7266,288 +2519,7 @@ exports[`Storyshots whitelist onChange 1`] = `
               />
             </svg>
           </div>
-        </div>
-      </div>
-      <div
-        data-css-1hl92v3=""
-      >
-        <div
-          data-css-1s45f9z=""
-        >
-          <div
-            data-css-83bdtg=""
-          >
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret left icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-            <div
-              data-css-8j27ca=""
-            >
-              June
-            </div>
-            <button
-              data-css-1gjb0xd=""
-              disabled={false}
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <div
-                data-css-y80vay=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret right icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <span
-                data-css-1en8fmq=""
-              />
-            </button>
-          </div>
-          <div
-            data-css-14w5oc2=""
-          >
-            <div
-              data-css-t2oi0x=""
-            >
-              Sun
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Mon
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Tue
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Wed
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Thu
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Fri
-            </div>
-            <div
-              data-css-t2oi0x=""
-            >
-              Sat
-            </div>
-          </div>
-          <div
-            data-css-1unqxss=""
-          >
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <div
-              data-css-61sif2=""
-            />
-            <button
-              data-css-1coitqn=""
-            >
-              1
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              2
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              3
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              4
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              5
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              6
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              7
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              8
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              9
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              10
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              11
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              12
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              13
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              14
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              15
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              16
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              17
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              18
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              19
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              20
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              21
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              22
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              23
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              24
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              25
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              26
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              27
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              28
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              29
-            </button>
-            <button
-              data-css-1coitqn=""
-            >
-              30
-            </button>
-          </div>
-        </div>
+        </button>
       </div>
     </label>
   </div>
