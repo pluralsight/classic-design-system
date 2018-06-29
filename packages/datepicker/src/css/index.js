@@ -8,7 +8,6 @@ import { transparentize } from 'polished'
 
 import * as vars from '../vars'
 
-// TODO: add box shadow like actionmenu to calendar
 const dayDimensions = {
   height: '32px',
   width: '32px',
@@ -252,6 +251,7 @@ export default {
     padding: `${core.layout.spacingMedium} ${core.layout.spacingLarge}`,
     fontSize: core.type.fontSizeXSmall,
     fontWeight: core.type.fontWeightMedium,
+    boxShadow: `0 2px 4px ${transparentize(0.5, core.colors.black)}`,
     opacity: 0,
     transform: `translateY(calc(-1 * ${core.layout.spacingXSmall}))`,
     animation: `${slide || 'psds-date-picker__calendar__keyframes__slide'} ${
