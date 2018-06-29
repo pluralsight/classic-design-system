@@ -23,19 +23,9 @@ export default {
     opacity: 0.5
   },
 
-  // TODO: add form focus to outer field
   // __field
   '.psds-date-picker__field': {
     display: 'none'
-  },
-  '.psds-date-picker__field:focus': {
-    outline: 'none'
-  },
-  [`.psds-date-picker__field.psds-theme--${themeNames.light}:focus`]: {
-    border: '1px solid transparent'
-  },
-  [`.psds-date-picker__field--error.psds-theme--${themeNames.light}`]: {
-    border: '1px solid transparent'
   },
 
   // __sub-field
@@ -223,7 +213,6 @@ export default {
   // __calendar
   '.psds-date-picker__calendar': {
     position: 'relative',
-    // TODO: needed? rm?
     zIndex: '0',
     width: '286px',
     maxHeight: '352px',

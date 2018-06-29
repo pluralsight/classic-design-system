@@ -270,7 +270,7 @@ class DatePicker extends React.Component {
             style={{ width: '50px' }}
           />
           <input
-            aria-hidden={true || 'TODO: figure out what Switch does here'}
+            tabIndex="-1"
             readOnly
             {...styles.field(allProps)}
             {...propsUtil.whitelistProps(
@@ -278,10 +278,10 @@ class DatePicker extends React.Component {
               datePickerHtmlPropsWhitelist
             )}
             disabled={allProps.disabled}
-            placeholder={allProps.placeholder}
             onBlur={this.handleBlur}
             onFocus={this.handleFocus}
             ref={allProps.innerRef}
+            value={allProps.value}
           />
           <button {...styles.icon(allProps)} onClick={this.handleIconClick}>
             <Icon id={Icon.ids.calendar} />
