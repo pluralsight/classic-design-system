@@ -33,20 +33,7 @@ const datePickerHtmlPropsWhitelist = [
 const styles = {
   error: _ => glamor.css(css['.psds-date-picker__error']),
   field: ({ appearance, error, themeName }) =>
-    glamor.css(
-      css['.psds-date-picker__field']
-      // css[`.psds-date-picker__field--appearance-${appearance}`],
-      // css[`.psds-date-picker__field.psds-theme--${themeName}`],
-
-      // TODO: move to field-container?
-      // error && css[`.psds-date-picker__field--error.psds-theme--${themeName}`],
-      // {
-      //   ':focus': {
-      //     ...css['.psds-date-picker__field:focus'],
-      //     ...css[`.psds-date-picker__field.psds-theme--${themeName}:focus`]
-      //   }
-      // }
-    ),
+    glamor.css(css['.psds-date-picker__field']),
   fieldContainer: ({ appearance, error, themeName }, { isFocused }) =>
     glamor.css(
       css['.psds-date-picker__field-container'],
@@ -157,7 +144,6 @@ class DatePicker extends React.Component {
   constructor(props) {
     super(props)
     const { mm, dd, yyyy } = parseDate(props.value)
-    console.log('datepickker', mm, dd, yyyy)
     this.state = {
       isOpen: false,
       mm,
@@ -200,7 +186,6 @@ class DatePicker extends React.Component {
   }
   handleSubFieldBlur(evt) {
     const { name, value } = evt.target
-
     const { mm, dd, yyyy } = this.state
     const forceValidValueFor = {
       mm: forceValidMonth,
@@ -232,7 +217,6 @@ class DatePicker extends React.Component {
   }
   render() {
     const { context, props, state } = this
-    console.log('datepicker render', state.mm, state.dd, state.yyyy)
     const allProps = {
       ...props,
       themeName: context.themeName || themeDefaultName

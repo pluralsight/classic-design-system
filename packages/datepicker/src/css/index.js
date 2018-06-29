@@ -237,7 +237,7 @@ export default {
     position: 'relative',
     zIndex: '0',
     width: '286px',
-    height: '301px',
+    maxHeight: '352px',
     background: core.colors.white,
     color: core.colors.gray03,
     borderRadius: '2px',

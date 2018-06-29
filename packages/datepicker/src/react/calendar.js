@@ -72,6 +72,7 @@ class Calendar extends React.Component {
     this.handleDayClick = this.handleDayClick.bind(this)
   }
   componentDidMount() {
+    // TODO: if selected, focus on THAT day
     this.el.focus()
   }
   handlePrevClick() {
