@@ -23,18 +23,10 @@ export default {
     opacity: 0.5
   },
 
-  // TODO: rm/refactor in favor for subField
+  // TODO: add form focus to outer field
   // __field
   '.psds-date-picker__field': {
     display: 'none'
-
-    // TODO: mv any to field-container?
-    // position: 'relative',
-    // fontSize: core.type.fontSizeSmall,
-    // lineHeight: core.type.lineHeightStandard,
-    // fontWeight: core.type.fontWeightBook,
-    // color: core.colors.gray03,
-    // border: 'none'
   },
   '.psds-date-picker__field:focus': {
     outline: 'none'
@@ -50,7 +42,6 @@ export default {
   '.psds-date-picker__sub-field': {
     border: 'none',
     display: 'inline-block',
-    // width: '50px', // TODO: mk less arbitrary
     background: 'none'
   },
   '.psds-date-picker__sub-field:focus': {
@@ -59,9 +50,6 @@ export default {
   [`.psds-date-picker__sub-field--appearance-${vars.appearances.subtle}`]: {
     color: core.colors.gray01
   },
-
-  // __sub-field-divider
-  '.psds-date-picker__sub-field-divider': {},
 
   // __field-container
   '.psds-date-picker__field-container': {

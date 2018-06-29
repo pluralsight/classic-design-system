@@ -101,7 +101,6 @@ const styles = {
       },
       css[`.psds-date-picker__sub-field--appearance-${appearance}`]
     ),
-  subFieldDivider: _ => glamor.css(css['.psds-date-picker__sub-field-divider']),
   calendarContainer: _ =>
     glamor.css(css['.psds-date-picker__calendar-container'])
 }
@@ -114,6 +113,7 @@ class SubField extends React.Component {
   handleFocus(evt) {
     // TODO: test x-browser compat
     this.el.select()
+    this.props.onFocus(evt)
   }
   render() {
     const { props } = this
@@ -133,8 +133,6 @@ class SubField extends React.Component {
   }
 }
 
-const SubFieldDivider = _ => <span {...styles.subFieldDivider()}>/</span>
-
 const isValidDate = ({ mm, dd, yyyy }) => {
   const date = new Date(yyyy, mm - 1, dd)
   return mm && dd && yyyy && date && date.getMonth() + 1 == mm
@@ -151,14 +149,14 @@ class DatePicker extends React.Component {
       yyyy
     }
     this.handleChange = this.handleChange.bind(this)
-    this.handleSubFieldFocus = this.handleSubFieldBlur.bind(this)
+    this.handleSubFieldFocus = this.handleSubFieldFocus.bind(this)
     this.handleSubFieldBlur = this.handleSubFieldBlur.bind(this)
     this.handleCalendarSelect = this.handleCalendarSelect.bind(this)
     this.handleIconClick = this.handleIconClick.bind(this)
   }
   handleIconClick() {
     // TODO: handle transition in animation
-    this.setState({ isOpen: true })
+    this.setState({ isOpen: !this.state.isOpen })
   }
   handleCalendarSelect(value) {
     const { mm, dd, yyyy } = parseDate(value)
@@ -240,7 +238,7 @@ class DatePicker extends React.Component {
             name="mm"
             style={{ width: '32px' }}
           />
-          <SubFieldDivider />
+          <span>/</span>
           <SubField
             appearance={allProps.appearance}
             onChange={this.handleChange}
@@ -250,7 +248,7 @@ class DatePicker extends React.Component {
             name="dd"
             style={{ width: '28px' }}
           />
-          <SubFieldDivider />
+          <span>/</span>
           <SubField
             appearance={allProps.appearance}
             onChange={this.handleChange}
