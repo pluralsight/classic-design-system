@@ -223,6 +223,7 @@ export default {
   // __calendar
   '.psds-date-picker__calendar': {
     position: 'relative',
+    // TODO: needed? rm?
     zIndex: '0',
     width: '286px',
     maxHeight: '352px',

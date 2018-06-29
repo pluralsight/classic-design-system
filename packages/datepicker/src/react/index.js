@@ -143,16 +143,25 @@ class DatePicker extends React.Component {
     super(props)
     const { mm, dd, yyyy } = parseDate(props.value)
     this.state = {
+      isFocused: false,
       isOpen: false,
       mm,
       dd,
       yyyy
     }
     this.handleChange = this.handleChange.bind(this)
+    this.handleFocus = this.handleFocus.bind(this)
+    this.handleBlur = this.handleBlur.bind(this)
     this.handleSubFieldFocus = this.handleSubFieldFocus.bind(this)
     this.handleSubFieldBlur = this.handleSubFieldBlur.bind(this)
     this.handleCalendarSelect = this.handleCalendarSelect.bind(this)
     this.handleIconClick = this.handleIconClick.bind(this)
+  }
+  handleFocus() {
+    this.setState({ isFocused: true })
+  }
+  handleBlur() {
+    this.setState({ isFocused: false })
   }
   handleIconClick() {
     // TODO: handle transition in animation
@@ -222,6 +231,8 @@ class DatePicker extends React.Component {
     return (
       <label
         {...styles.input(allProps)}
+        onFocus={this.handleFocus}
+        onBlur={this.handleBlur}
         {...(allProps.style ? { style: allProps.style } : null)}
         {...(allProps.className ? { className: allProps.className } : null)}
       >
