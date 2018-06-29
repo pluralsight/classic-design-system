@@ -80,13 +80,13 @@ exports[`Storyshots appearance default 1`] = `
           value=""
         />
         <input
-          aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           readOnly={true}
+          tabIndex="-1"
+          value={undefined}
         />
         <button
           data-css-ay0j88=""
@@ -198,13 +198,13 @@ exports[`Storyshots appearance default w/ error 1`] = `
           value=""
         />
         <input
-          aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           readOnly={true}
+          tabIndex="-1"
+          value={undefined}
         />
         <button
           data-css-ay0j88=""
@@ -329,13 +329,13 @@ exports[`Storyshots appearance subtle 1`] = `
           value=""
         />
         <input
-          aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           readOnly={true}
+          tabIndex="-1"
+          value={undefined}
         />
         <button
           data-css-ywynjv=""
@@ -447,13 +447,13 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           value=""
         />
         <input
-          aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           readOnly={true}
+          tabIndex="-1"
+          value={undefined}
         />
         <button
           data-css-ywynjv=""
@@ -584,13 +584,13 @@ exports[`Storyshots disabled compare 1`] = `
             value=""
           />
           <input
-            aria-hidden={true}
             data-css-gyrv08=""
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
             readOnly={true}
+            tabIndex="-1"
+            value={undefined}
           />
           <button
             data-css-ay0j88=""
@@ -680,13 +680,13 @@ exports[`Storyshots disabled compare 1`] = `
             value=""
           />
           <input
-            aria-hidden={true}
             data-css-gyrv08=""
             disabled={true}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
             readOnly={true}
+            tabIndex="-1"
+            value={undefined}
           />
           <button
             data-css-ay0j88=""
@@ -807,13 +807,13 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
               value=""
             />
             <input
-              aria-hidden={true}
               data-css-gyrv08=""
               disabled={false}
               onBlur={[Function]}
               onFocus={[Function]}
-              placeholder={undefined}
               readOnly={true}
+              tabIndex="-1"
+              value={undefined}
             />
             <button
               data-css-ay0j88=""
@@ -945,13 +945,13 @@ exports[`Storyshots labels label 1`] = `
           value=""
         />
         <input
-          aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           readOnly={true}
+          tabIndex="-1"
+          value={undefined}
         />
         <button
           data-css-ay0j88=""
@@ -1063,13 +1063,13 @@ exports[`Storyshots labels label and subLabel 1`] = `
           value=""
         />
         <input
-          aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           readOnly={true}
+          tabIndex="-1"
+          value={undefined}
         />
         <button
           data-css-ay0j88=""
@@ -1181,13 +1181,13 @@ exports[`Storyshots labels none 1`] = `
           value=""
         />
         <input
-          aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           readOnly={true}
+          tabIndex="-1"
+          value={undefined}
         />
         <button
           data-css-ay0j88=""
@@ -1294,13 +1294,13 @@ exports[`Storyshots labels subLabel 1`] = `
           value=""
         />
         <input
-          aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           readOnly={true}
+          tabIndex="-1"
+          value={undefined}
         />
         <button
           data-css-ay0j88=""
@@ -1431,13 +1431,13 @@ exports[`Storyshots layouts full width 1`] = `
             value=""
           />
           <input
-            aria-hidden={true}
             data-css-gyrv08=""
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
             readOnly={true}
+            tabIndex="-1"
+            value={undefined}
           />
           <button
             data-css-ay0j88=""
@@ -1528,13 +1528,13 @@ exports[`Storyshots layouts full width 1`] = `
             value=""
           />
           <input
-            aria-hidden={true}
             data-css-gyrv08=""
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
             readOnly={true}
+            tabIndex="-1"
+            value={undefined}
           />
           <button
             data-css-ay0j88=""
@@ -1643,13 +1643,13 @@ exports[`Storyshots layouts full width 1`] = `
             value=""
           />
           <input
-            aria-hidden={true}
             data-css-gyrv08=""
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
             readOnly={true}
+            tabIndex="-1"
+            value={undefined}
           />
           <button
             data-css-ywynjv=""
@@ -1740,13 +1740,13 @@ exports[`Storyshots layouts full width 1`] = `
             value=""
           />
           <input
-            aria-hidden={true}
             data-css-gyrv08=""
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
             readOnly={true}
+            tabIndex="-1"
+            value={undefined}
           />
           <button
             data-css-ywynjv=""
@@ -1887,13 +1887,13 @@ exports[`Storyshots layouts right-aligned 1`] = `
               value=""
             />
             <input
-              aria-hidden={true}
               data-css-gyrv08=""
               disabled={false}
               onBlur={[Function]}
               onFocus={[Function]}
-              placeholder={undefined}
               readOnly={true}
+              tabIndex="-1"
+              value={undefined}
             />
             <button
               data-css-ywynjv=""
@@ -2010,13 +2010,12 @@ exports[`Storyshots value single slash-separated value 1`] = `
           value={1941}
         />
         <input
-          aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           readOnly={true}
+          tabIndex="-1"
           value="12/07/1941"
         />
         <button
@@ -2135,14 +2134,13 @@ exports[`Storyshots value updated value, no initial 1`] = `
             value=""
           />
           <input
-            aria-hidden={true}
             data-css-gyrv08=""
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
             onSelect={[Function]}
-            placeholder={undefined}
             readOnly={true}
+            tabIndex="-1"
             value=""
           />
           <button
@@ -2262,14 +2260,13 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
             value={1995}
           />
           <input
-            aria-hidden={true}
             data-css-gyrv08=""
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
             onSelect={[Function]}
-            placeholder={undefined}
             readOnly={true}
+            tabIndex="-1"
             value="3/15/1995"
           />
           <button
@@ -2378,14 +2375,14 @@ exports[`Storyshots whitelist name 1`] = `
           value=""
         />
         <input
-          aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
           name="myFieldNameOfPower"
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           readOnly={true}
+          tabIndex="-1"
+          value={undefined}
         />
         <button
           data-css-ay0j88=""
@@ -2492,14 +2489,14 @@ exports[`Storyshots whitelist onChange 1`] = `
           value=""
         />
         <input
-          aria-hidden={true}
           data-css-gyrv08=""
           disabled={false}
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           readOnly={true}
+          tabIndex="-1"
+          value={undefined}
         />
         <button
           data-css-ay0j88=""
