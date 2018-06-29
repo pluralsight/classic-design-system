@@ -23,6 +23,7 @@ module.exports = {
       '/components/checkbox': { page: '/components/checkbox' },
       '/components/circularprogress': { page: '/components/circularprogress' },
       '/components/code': { page: '/components/code' },
+      '/components/datepicker': { page: '/components/datepicker' },
       '/components/dialog': { page: '/components/dialog' },
       '/components/dialog-modal-example': {
         page: '/components/dialog-modal-example'

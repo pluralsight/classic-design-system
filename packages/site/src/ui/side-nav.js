@@ -327,6 +327,9 @@ export default withHeadings(props => (
       <NavLink href="/components/code" headings={props.headings}>
         Code
       </NavLink>
+      <NavLink href="/components/datepicker" headings={props.headings}>
+        Date Picker
+      </NavLink>
       <NavLink href="/components/dialog" headings={props.headings}>
         Dialog
       </NavLink>

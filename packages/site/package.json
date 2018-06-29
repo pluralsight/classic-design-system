@@ -25,6 +25,7 @@
     "@pluralsight/ps-design-system-checkbox": "^0.2.7",
     "@pluralsight/ps-design-system-circularprogress": "^1.5.5",
     "@pluralsight/ps-design-system-core": "^4.3.1",
+    "@pluralsight/ps-design-system-datepicker": "^0.2.0",
     "@pluralsight/ps-design-system-dialog": "^2.2.6",
     "@pluralsight/ps-design-system-drawer": "^1.4.5",
     "@pluralsight/ps-design-system-dropdown": "^0.3.4",
