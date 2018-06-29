@@ -8,6 +8,8 @@ import { transparentize } from 'polished'
 
 import * as vars from '../vars'
 
+// TODO: fix divider styles -- apparently overridable
+// TODO: add box shadow like actionmenu to calendar
 const dayDimensions = {
   height: '32px',
   width: '32px',
@@ -68,6 +70,16 @@ export default {
     color: core.colors.gray01,
     background: core.colors.gray06,
     border: `1px solid ${core.colors.gray03}`
+  },
+  [`.psds-date-picker__field-container.psds-theme--${
+    themeNames.light
+  }:focus`]: {
+    border: '1px solid transparent'
+  },
+  [`.psds-date-picker__field-container--error.psds-theme--${
+    themeNames.light
+  }`]: {
+    border: '1px solid transparent'
   },
   '.psds-date-picker__field-container:focus:before': {
     content: ' ',
@@ -142,10 +154,10 @@ export default {
   [`.psds-date-picker__field-container--error.psds-theme--${
     themeNames.light
   }:after`]: {
-    top: '-3px',
-    left: '-3px',
-    right: '-3px',
-    bottom: '-3px'
+    top: '-4px',
+    left: '-4px',
+    right: '-4px',
+    bottom: '-4px'
   },
 
   // __icon

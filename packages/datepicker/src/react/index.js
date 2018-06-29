@@ -41,6 +41,9 @@ const styles = {
       css[`.psds-date-picker__field-container.psds-theme--${themeName}`],
       error
         ? {
+            ...css[
+              `.psds-date-picker__field-container--error.psds-theme--${themeName}`
+            ],
             ':before': {
               ...css['.psds-date-picker__field-container--error:before'],
               ...css[
@@ -57,6 +60,9 @@ const styles = {
         : null,
       isFocused
         ? {
+            ...css[
+              `.psds-date-picker__field-container.psds-theme--${themeName}:focus`
+            ],
             ':before': {
               ...css['.psds-date-picker__field-container:focus:before'],
               ...css[
