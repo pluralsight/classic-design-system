@@ -64,12 +64,44 @@ describe('#forceValidYear', () => {
   })
 })
 
-describe('#firstDayOfWeekForMonth', () => {
+describe('#getFirstDayOfWeekForMonth', () => {
   test('0-based Tuesday returned', () => {
-    expect(subject.firstDayOfWeekForMonth({ mm: '4', yyyy: '2008' })).toBe(2)
+    expect(subject.getFirstDayOfWeekForMonth({ mm: '4', yyyy: '2008' })).toBe(2)
   })
 
   test('0-based Sunday returned', () => {
-    expect(subject.firstDayOfWeekForMonth({ mm: '2', yyyy: '2009' })).toBe(0)
+    expect(subject.getFirstDayOfWeekForMonth({ mm: '2', yyyy: '2009' })).toBe(0)
+  })
+})
+
+describe('#getPrevMonthYear', () => {
+  test('prev month', () => {
+    expect(subject.getPrevMonthYear({ mm: '2', yyyy: '2008' })).toEqual({
+      mm: 1,
+      yyyy: 2008
+    })
+  })
+
+  test('rollback year to last month', () => {
+    expect(subject.getPrevMonthYear({ mm: '1', yyyy: '2008' })).toEqual({
+      mm: 12,
+      yyyy: 2007
+    })
+  })
+})
+
+describe('#getNextMonthYear', () => {
+  test('next month', () => {
+    expect(subject.getNextMonthYear({ mm: '1', yyyy: '2008' })).toEqual({
+      mm: 2,
+      yyyy: 2008
+    })
+  })
+
+  test('rollover year to first month', () => {
+    expect(subject.getNextMonthYear({ mm: '12', yyyy: '2008' })).toEqual({
+      mm: 1,
+      yyyy: 2009
+    })
   })
 })

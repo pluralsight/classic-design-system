@@ -109,34 +109,266 @@ exports[`Storyshots appearance default 1`] = `
         data-css-1hl92v3=""
       >
         <div
-          data-css-10s4qk7=""
+          data-css-1s45f9z=""
         >
           <div
-            data-css-1x3x6zb=""
+            data-css-83bdtg=""
           >
-            <div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret left icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+            <div
+              data-css-8j27ca=""
+            >
+              January
+            </div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret right icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+          </div>
+          <div
+            data-css-14w5oc2=""
+          >
+            <div
+              data-css-t2oi0x=""
+            >
               Sun
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Mon
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Tue
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Wed
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Thu
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Fri
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Sat
             </div>
           </div>
-          calend 222ar
+          <div
+            data-css-1unqxss=""
+          >
+            <button
+              data-css-1coitqn=""
+            >
+              1
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              2
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              3
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              4
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              5
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              6
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              7
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              8
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              9
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              10
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              11
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              12
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              13
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              14
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              15
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              16
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              17
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              18
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              19
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              20
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              21
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              22
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              23
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              24
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              25
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              26
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              27
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              28
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              29
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              30
+            </button>
+          </div>
         </div>
       </div>
     </label>
@@ -276,34 +508,266 @@ exports[`Storyshots appearance default w/ error 1`] = `
         data-css-1hl92v3=""
       >
         <div
-          data-css-10s4qk7=""
+          data-css-1s45f9z=""
         >
           <div
-            data-css-1x3x6zb=""
+            data-css-83bdtg=""
           >
-            <div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret left icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+            <div
+              data-css-8j27ca=""
+            >
+              January
+            </div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret right icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+          </div>
+          <div
+            data-css-14w5oc2=""
+          >
+            <div
+              data-css-t2oi0x=""
+            >
               Sun
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Mon
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Tue
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Wed
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Thu
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Fri
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Sat
             </div>
           </div>
-          calend 222ar
+          <div
+            data-css-1unqxss=""
+          >
+            <button
+              data-css-1coitqn=""
+            >
+              1
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              2
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              3
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              4
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              5
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              6
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              7
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              8
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              9
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              10
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              11
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              12
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              13
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              14
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              15
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              16
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              17
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              18
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              19
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              20
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              21
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              22
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              23
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              24
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              25
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              26
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              27
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              28
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              29
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              30
+            </button>
+          </div>
         </div>
       </div>
     </label>
@@ -420,34 +884,266 @@ exports[`Storyshots appearance subtle 1`] = `
         data-css-1hl92v3=""
       >
         <div
-          data-css-10s4qk7=""
+          data-css-1s45f9z=""
         >
           <div
-            data-css-1x3x6zb=""
+            data-css-83bdtg=""
           >
-            <div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret left icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+            <div
+              data-css-8j27ca=""
+            >
+              January
+            </div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret right icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+          </div>
+          <div
+            data-css-14w5oc2=""
+          >
+            <div
+              data-css-t2oi0x=""
+            >
               Sun
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Mon
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Tue
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Wed
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Thu
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Fri
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Sat
             </div>
           </div>
-          calend 222ar
+          <div
+            data-css-1unqxss=""
+          >
+            <button
+              data-css-1coitqn=""
+            >
+              1
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              2
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              3
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              4
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              5
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              6
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              7
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              8
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              9
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              10
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              11
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              12
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              13
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              14
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              15
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              16
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              17
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              18
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              19
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              20
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              21
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              22
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              23
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              24
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              25
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              26
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              27
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              28
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              29
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              30
+            </button>
+          </div>
         </div>
       </div>
     </label>
@@ -587,34 +1283,266 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         data-css-1hl92v3=""
       >
         <div
-          data-css-10s4qk7=""
+          data-css-1s45f9z=""
         >
           <div
-            data-css-1x3x6zb=""
+            data-css-83bdtg=""
           >
-            <div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret left icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+            <div
+              data-css-8j27ca=""
+            >
+              January
+            </div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret right icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+          </div>
+          <div
+            data-css-14w5oc2=""
+          >
+            <div
+              data-css-t2oi0x=""
+            >
               Sun
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Mon
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Tue
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Wed
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Thu
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Fri
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Sat
             </div>
           </div>
-          calend 222ar
+          <div
+            data-css-1unqxss=""
+          >
+            <button
+              data-css-1coitqn=""
+            >
+              1
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              2
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              3
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              4
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              5
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              6
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              7
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              8
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              9
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              10
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              11
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              12
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              13
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              14
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              15
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              16
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              17
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              18
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              19
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              20
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              21
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              22
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              23
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              24
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              25
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              26
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              27
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              28
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              29
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              30
+            </button>
+          </div>
         </div>
       </div>
     </label>
@@ -737,34 +1665,266 @@ exports[`Storyshots disabled compare 1`] = `
           data-css-1hl92v3=""
         >
           <div
-            data-css-10s4qk7=""
+            data-css-1s45f9z=""
           >
             <div
-              data-css-1x3x6zb=""
+              data-css-83bdtg=""
             >
-              <div>
+              <button
+                data-css-1gjb0xd=""
+                disabled={false}
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <div
+                  data-css-y80vay=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret left icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <span
+                  data-css-1en8fmq=""
+                />
+              </button>
+              <div
+                data-css-8j27ca=""
+              >
+                January
+              </div>
+              <button
+                data-css-1gjb0xd=""
+                disabled={false}
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <div
+                  data-css-y80vay=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret right icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <span
+                  data-css-1en8fmq=""
+                />
+              </button>
+            </div>
+            <div
+              data-css-14w5oc2=""
+            >
+              <div
+                data-css-t2oi0x=""
+              >
                 Sun
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Mon
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Tue
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Wed
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Thu
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Fri
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Sat
               </div>
             </div>
-            calend 222ar
+            <div
+              data-css-1unqxss=""
+            >
+              <button
+                data-css-1coitqn=""
+              >
+                1
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                2
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                3
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                4
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                5
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                6
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                7
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                8
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                9
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                10
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                11
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                12
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                13
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                14
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                15
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                16
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                17
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                18
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                19
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                20
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                21
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                22
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                23
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                24
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                25
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                26
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                27
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                28
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                29
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                30
+              </button>
+            </div>
           </div>
         </div>
         <div
@@ -864,34 +2024,266 @@ exports[`Storyshots disabled compare 1`] = `
           data-css-1hl92v3=""
         >
           <div
-            data-css-10s4qk7=""
+            data-css-1s45f9z=""
           >
             <div
-              data-css-1x3x6zb=""
+              data-css-83bdtg=""
             >
-              <div>
+              <button
+                data-css-1gjb0xd=""
+                disabled={false}
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <div
+                  data-css-y80vay=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret left icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <span
+                  data-css-1en8fmq=""
+                />
+              </button>
+              <div
+                data-css-8j27ca=""
+              >
+                January
+              </div>
+              <button
+                data-css-1gjb0xd=""
+                disabled={false}
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <div
+                  data-css-y80vay=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret right icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <span
+                  data-css-1en8fmq=""
+                />
+              </button>
+            </div>
+            <div
+              data-css-14w5oc2=""
+            >
+              <div
+                data-css-t2oi0x=""
+              >
                 Sun
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Mon
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Tue
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Wed
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Thu
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Fri
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Sat
               </div>
             </div>
-            calend 222ar
+            <div
+              data-css-1unqxss=""
+            >
+              <button
+                data-css-1coitqn=""
+              >
+                1
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                2
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                3
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                4
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                5
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                6
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                7
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                8
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                9
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                10
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                11
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                12
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                13
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                14
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                15
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                16
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                17
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                18
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                19
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                20
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                21
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                22
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                23
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                24
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                25
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                26
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                27
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                28
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                29
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                30
+              </button>
+            </div>
           </div>
         </div>
         <div
@@ -1022,34 +2414,266 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
             data-css-1hl92v3=""
           >
             <div
-              data-css-10s4qk7=""
+              data-css-1s45f9z=""
             >
               <div
-                data-css-1x3x6zb=""
+                data-css-83bdtg=""
               >
-                <div>
+                <button
+                  data-css-1gjb0xd=""
+                  disabled={false}
+                  onClick={[Function]}
+                  style={Object {}}
+                >
+                  <div
+                    data-css-y80vay=""
+                  >
+                    <div
+                      className="css-otejxm"
+                    >
+                      <svg
+                        aria-label="caret left icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <span
+                    data-css-1en8fmq=""
+                  />
+                </button>
+                <div
+                  data-css-8j27ca=""
+                >
+                  January
+                </div>
+                <button
+                  data-css-1gjb0xd=""
+                  disabled={false}
+                  onClick={[Function]}
+                  style={Object {}}
+                >
+                  <div
+                    data-css-y80vay=""
+                  >
+                    <div
+                      className="css-otejxm"
+                    >
+                      <svg
+                        aria-label="caret right icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <span
+                    data-css-1en8fmq=""
+                  />
+                </button>
+              </div>
+              <div
+                data-css-14w5oc2=""
+              >
+                <div
+                  data-css-t2oi0x=""
+                >
                   Sun
                 </div>
-                <div>
+                <div
+                  data-css-t2oi0x=""
+                >
                   Mon
                 </div>
-                <div>
+                <div
+                  data-css-t2oi0x=""
+                >
                   Tue
                 </div>
-                <div>
+                <div
+                  data-css-t2oi0x=""
+                >
                   Wed
                 </div>
-                <div>
+                <div
+                  data-css-t2oi0x=""
+                >
                   Thu
                 </div>
-                <div>
+                <div
+                  data-css-t2oi0x=""
+                >
                   Fri
                 </div>
-                <div>
+                <div
+                  data-css-t2oi0x=""
+                >
                   Sat
                 </div>
               </div>
-              calend 222ar
+              <div
+                data-css-1unqxss=""
+              >
+                <button
+                  data-css-1coitqn=""
+                >
+                  1
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  2
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  3
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  4
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  5
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  6
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  7
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  8
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  9
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  10
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  11
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  12
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  13
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  14
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  15
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  16
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  17
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  18
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  19
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  20
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  21
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  22
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  23
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  24
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  25
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  26
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  27
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  28
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  29
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  30
+                </button>
+              </div>
             </div>
           </div>
         </label>
@@ -1191,34 +2815,266 @@ exports[`Storyshots labels label 1`] = `
         data-css-1hl92v3=""
       >
         <div
-          data-css-10s4qk7=""
+          data-css-1s45f9z=""
         >
           <div
-            data-css-1x3x6zb=""
+            data-css-83bdtg=""
           >
-            <div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret left icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+            <div
+              data-css-8j27ca=""
+            >
+              January
+            </div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret right icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+          </div>
+          <div
+            data-css-14w5oc2=""
+          >
+            <div
+              data-css-t2oi0x=""
+            >
               Sun
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Mon
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Tue
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Wed
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Thu
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Fri
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Sat
             </div>
           </div>
-          calend 222ar
+          <div
+            data-css-1unqxss=""
+          >
+            <button
+              data-css-1coitqn=""
+            >
+              1
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              2
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              3
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              4
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              5
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              6
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              7
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              8
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              9
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              10
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              11
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              12
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              13
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              14
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              15
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              16
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              17
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              18
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              19
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              20
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              21
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              22
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              23
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              24
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              25
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              26
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              27
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              28
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              29
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              30
+            </button>
+          </div>
         </div>
       </div>
     </label>
@@ -1340,34 +3196,266 @@ exports[`Storyshots labels label and subLabel 1`] = `
         data-css-1hl92v3=""
       >
         <div
-          data-css-10s4qk7=""
+          data-css-1s45f9z=""
         >
           <div
-            data-css-1x3x6zb=""
+            data-css-83bdtg=""
           >
-            <div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret left icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+            <div
+              data-css-8j27ca=""
+            >
+              January
+            </div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret right icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+          </div>
+          <div
+            data-css-14w5oc2=""
+          >
+            <div
+              data-css-t2oi0x=""
+            >
               Sun
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Mon
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Tue
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Wed
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Thu
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Fri
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Sat
             </div>
           </div>
-          calend 222ar
+          <div
+            data-css-1unqxss=""
+          >
+            <button
+              data-css-1coitqn=""
+            >
+              1
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              2
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              3
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              4
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              5
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              6
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              7
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              8
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              9
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              10
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              11
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              12
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              13
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              14
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              15
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              16
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              17
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              18
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              19
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              20
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              21
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              22
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              23
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              24
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              25
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              26
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              27
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              28
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              29
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              30
+            </button>
+          </div>
         </div>
       </div>
       <div
@@ -1489,34 +3577,266 @@ exports[`Storyshots labels none 1`] = `
         data-css-1hl92v3=""
       >
         <div
-          data-css-10s4qk7=""
+          data-css-1s45f9z=""
         >
           <div
-            data-css-1x3x6zb=""
+            data-css-83bdtg=""
           >
-            <div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret left icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+            <div
+              data-css-8j27ca=""
+            >
+              January
+            </div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret right icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+          </div>
+          <div
+            data-css-14w5oc2=""
+          >
+            <div
+              data-css-t2oi0x=""
+            >
               Sun
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Mon
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Tue
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Wed
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Thu
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Fri
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Sat
             </div>
           </div>
-          calend 222ar
+          <div
+            data-css-1unqxss=""
+          >
+            <button
+              data-css-1coitqn=""
+            >
+              1
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              2
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              3
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              4
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              5
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              6
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              7
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              8
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              9
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              10
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              11
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              12
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              13
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              14
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              15
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              16
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              17
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              18
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              19
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              20
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              21
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              22
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              23
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              24
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              25
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              26
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              27
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              28
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              29
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              30
+            </button>
+          </div>
         </div>
       </div>
     </label>
@@ -1633,34 +3953,266 @@ exports[`Storyshots labels subLabel 1`] = `
         data-css-1hl92v3=""
       >
         <div
-          data-css-10s4qk7=""
+          data-css-1s45f9z=""
         >
           <div
-            data-css-1x3x6zb=""
+            data-css-83bdtg=""
           >
-            <div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret left icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+            <div
+              data-css-8j27ca=""
+            >
+              January
+            </div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret right icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+          </div>
+          <div
+            data-css-14w5oc2=""
+          >
+            <div
+              data-css-t2oi0x=""
+            >
               Sun
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Mon
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Tue
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Wed
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Thu
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Fri
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Sat
             </div>
           </div>
-          calend 222ar
+          <div
+            data-css-1unqxss=""
+          >
+            <button
+              data-css-1coitqn=""
+            >
+              1
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              2
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              3
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              4
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              5
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              6
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              7
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              8
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              9
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              10
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              11
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              12
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              13
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              14
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              15
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              16
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              17
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              18
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              19
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              20
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              21
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              22
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              23
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              24
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              25
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              26
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              27
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              28
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              29
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              30
+            </button>
+          </div>
         </div>
       </div>
       <div
@@ -1801,34 +4353,266 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-1hl92v3=""
         >
           <div
-            data-css-10s4qk7=""
+            data-css-1s45f9z=""
           >
             <div
-              data-css-1x3x6zb=""
+              data-css-83bdtg=""
             >
-              <div>
+              <button
+                data-css-1gjb0xd=""
+                disabled={false}
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <div
+                  data-css-y80vay=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret left icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <span
+                  data-css-1en8fmq=""
+                />
+              </button>
+              <div
+                data-css-8j27ca=""
+              >
+                January
+              </div>
+              <button
+                data-css-1gjb0xd=""
+                disabled={false}
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <div
+                  data-css-y80vay=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret right icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <span
+                  data-css-1en8fmq=""
+                />
+              </button>
+            </div>
+            <div
+              data-css-14w5oc2=""
+            >
+              <div
+                data-css-t2oi0x=""
+              >
                 Sun
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Mon
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Tue
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Wed
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Thu
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Fri
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Sat
               </div>
             </div>
-            calend 222ar
+            <div
+              data-css-1unqxss=""
+            >
+              <button
+                data-css-1coitqn=""
+              >
+                1
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                2
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                3
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                4
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                5
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                6
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                7
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                8
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                9
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                10
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                11
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                12
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                13
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                14
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                15
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                16
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                17
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                18
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                19
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                20
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                21
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                22
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                23
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                24
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                25
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                26
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                27
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                28
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                29
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                30
+              </button>
+            </div>
           </div>
         </div>
       </label>
@@ -1947,34 +4731,266 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-1hl92v3=""
         >
           <div
-            data-css-10s4qk7=""
+            data-css-1s45f9z=""
           >
             <div
-              data-css-1x3x6zb=""
+              data-css-83bdtg=""
             >
-              <div>
+              <button
+                data-css-1gjb0xd=""
+                disabled={false}
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <div
+                  data-css-y80vay=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret left icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <span
+                  data-css-1en8fmq=""
+                />
+              </button>
+              <div
+                data-css-8j27ca=""
+              >
+                January
+              </div>
+              <button
+                data-css-1gjb0xd=""
+                disabled={false}
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <div
+                  data-css-y80vay=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret right icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <span
+                  data-css-1en8fmq=""
+                />
+              </button>
+            </div>
+            <div
+              data-css-14w5oc2=""
+            >
+              <div
+                data-css-t2oi0x=""
+              >
                 Sun
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Mon
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Tue
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Wed
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Thu
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Fri
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Sat
               </div>
             </div>
-            calend 222ar
+            <div
+              data-css-1unqxss=""
+            >
+              <button
+                data-css-1coitqn=""
+              >
+                1
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                2
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                3
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                4
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                5
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                6
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                7
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                8
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                9
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                10
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                11
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                12
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                13
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                14
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                15
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                16
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                17
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                18
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                19
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                20
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                21
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                22
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                23
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                24
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                25
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                26
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                27
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                28
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                29
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                30
+              </button>
+            </div>
           </div>
         </div>
       </label>
@@ -2075,34 +5091,266 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-1hl92v3=""
         >
           <div
-            data-css-10s4qk7=""
+            data-css-1s45f9z=""
           >
             <div
-              data-css-1x3x6zb=""
+              data-css-83bdtg=""
             >
-              <div>
+              <button
+                data-css-1gjb0xd=""
+                disabled={false}
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <div
+                  data-css-y80vay=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret left icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <span
+                  data-css-1en8fmq=""
+                />
+              </button>
+              <div
+                data-css-8j27ca=""
+              >
+                January
+              </div>
+              <button
+                data-css-1gjb0xd=""
+                disabled={false}
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <div
+                  data-css-y80vay=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret right icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <span
+                  data-css-1en8fmq=""
+                />
+              </button>
+            </div>
+            <div
+              data-css-14w5oc2=""
+            >
+              <div
+                data-css-t2oi0x=""
+              >
                 Sun
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Mon
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Tue
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Wed
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Thu
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Fri
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Sat
               </div>
             </div>
-            calend 222ar
+            <div
+              data-css-1unqxss=""
+            >
+              <button
+                data-css-1coitqn=""
+              >
+                1
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                2
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                3
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                4
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                5
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                6
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                7
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                8
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                9
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                10
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                11
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                12
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                13
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                14
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                15
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                16
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                17
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                18
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                19
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                20
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                21
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                22
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                23
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                24
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                25
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                26
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                27
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                28
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                29
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                30
+              </button>
+            </div>
           </div>
         </div>
       </label>
@@ -2221,34 +5469,266 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-1hl92v3=""
         >
           <div
-            data-css-10s4qk7=""
+            data-css-1s45f9z=""
           >
             <div
-              data-css-1x3x6zb=""
+              data-css-83bdtg=""
             >
-              <div>
+              <button
+                data-css-1gjb0xd=""
+                disabled={false}
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <div
+                  data-css-y80vay=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret left icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <span
+                  data-css-1en8fmq=""
+                />
+              </button>
+              <div
+                data-css-8j27ca=""
+              >
+                January
+              </div>
+              <button
+                data-css-1gjb0xd=""
+                disabled={false}
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <div
+                  data-css-y80vay=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret right icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <span
+                  data-css-1en8fmq=""
+                />
+              </button>
+            </div>
+            <div
+              data-css-14w5oc2=""
+            >
+              <div
+                data-css-t2oi0x=""
+              >
                 Sun
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Mon
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Tue
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Wed
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Thu
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Fri
               </div>
-              <div>
+              <div
+                data-css-t2oi0x=""
+              >
                 Sat
               </div>
             </div>
-            calend 222ar
+            <div
+              data-css-1unqxss=""
+            >
+              <button
+                data-css-1coitqn=""
+              >
+                1
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                2
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                3
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                4
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                5
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                6
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                7
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                8
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                9
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                10
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                11
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                12
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                13
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                14
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                15
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                16
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                17
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                18
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                19
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                20
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                21
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                22
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                23
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                24
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                25
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                26
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                27
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                28
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                29
+              </button>
+              <button
+                data-css-1coitqn=""
+              >
+                30
+              </button>
+            </div>
           </div>
         </div>
       </label>
@@ -2381,34 +5861,266 @@ exports[`Storyshots layouts right-aligned 1`] = `
             data-css-1hl92v3=""
           >
             <div
-              data-css-10s4qk7=""
+              data-css-1s45f9z=""
             >
               <div
-                data-css-1x3x6zb=""
+                data-css-83bdtg=""
               >
-                <div>
+                <button
+                  data-css-1gjb0xd=""
+                  disabled={false}
+                  onClick={[Function]}
+                  style={Object {}}
+                >
+                  <div
+                    data-css-y80vay=""
+                  >
+                    <div
+                      className="css-otejxm"
+                    >
+                      <svg
+                        aria-label="caret left icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <span
+                    data-css-1en8fmq=""
+                  />
+                </button>
+                <div
+                  data-css-8j27ca=""
+                >
+                  January
+                </div>
+                <button
+                  data-css-1gjb0xd=""
+                  disabled={false}
+                  onClick={[Function]}
+                  style={Object {}}
+                >
+                  <div
+                    data-css-y80vay=""
+                  >
+                    <div
+                      className="css-otejxm"
+                    >
+                      <svg
+                        aria-label="caret right icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <span
+                    data-css-1en8fmq=""
+                  />
+                </button>
+              </div>
+              <div
+                data-css-14w5oc2=""
+              >
+                <div
+                  data-css-t2oi0x=""
+                >
                   Sun
                 </div>
-                <div>
+                <div
+                  data-css-t2oi0x=""
+                >
                   Mon
                 </div>
-                <div>
+                <div
+                  data-css-t2oi0x=""
+                >
                   Tue
                 </div>
-                <div>
+                <div
+                  data-css-t2oi0x=""
+                >
                   Wed
                 </div>
-                <div>
+                <div
+                  data-css-t2oi0x=""
+                >
                   Thu
                 </div>
-                <div>
+                <div
+                  data-css-t2oi0x=""
+                >
                   Fri
                 </div>
-                <div>
+                <div
+                  data-css-t2oi0x=""
+                >
                   Sat
                 </div>
               </div>
-              calend 222ar
+              <div
+                data-css-1unqxss=""
+              >
+                <button
+                  data-css-1coitqn=""
+                >
+                  1
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  2
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  3
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  4
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  5
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  6
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  7
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  8
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  9
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  10
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  11
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  12
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  13
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  14
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  15
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  16
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  17
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  18
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  19
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  20
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  21
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  22
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  23
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  24
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  25
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  26
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  27
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  28
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  29
+                </button>
+                <button
+                  data-css-1coitqn=""
+                >
+                  30
+                </button>
+              </div>
             </div>
           </div>
         </label>
@@ -2536,34 +6248,266 @@ exports[`Storyshots whitelist name 1`] = `
         data-css-1hl92v3=""
       >
         <div
-          data-css-10s4qk7=""
+          data-css-1s45f9z=""
         >
           <div
-            data-css-1x3x6zb=""
+            data-css-83bdtg=""
           >
-            <div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret left icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+            <div
+              data-css-8j27ca=""
+            >
+              January
+            </div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret right icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+          </div>
+          <div
+            data-css-14w5oc2=""
+          >
+            <div
+              data-css-t2oi0x=""
+            >
               Sun
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Mon
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Tue
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Wed
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Thu
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Fri
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Sat
             </div>
           </div>
-          calend 222ar
+          <div
+            data-css-1unqxss=""
+          >
+            <button
+              data-css-1coitqn=""
+            >
+              1
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              2
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              3
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              4
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              5
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              6
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              7
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              8
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              9
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              10
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              11
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              12
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              13
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              14
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              15
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              16
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              17
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              18
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              19
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              20
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              21
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              22
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              23
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              24
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              25
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              26
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              27
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              28
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              29
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              30
+            </button>
+          </div>
         </div>
       </div>
     </label>
@@ -2681,34 +6625,266 @@ exports[`Storyshots whitelist onChange 1`] = `
         data-css-1hl92v3=""
       >
         <div
-          data-css-10s4qk7=""
+          data-css-1s45f9z=""
         >
           <div
-            data-css-1x3x6zb=""
+            data-css-83bdtg=""
           >
-            <div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret left icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+            <div
+              data-css-8j27ca=""
+            >
+              January
+            </div>
+            <button
+              data-css-1gjb0xd=""
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-y80vay=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret right icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                data-css-1en8fmq=""
+              />
+            </button>
+          </div>
+          <div
+            data-css-14w5oc2=""
+          >
+            <div
+              data-css-t2oi0x=""
+            >
               Sun
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Mon
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Tue
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Wed
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Thu
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Fri
             </div>
-            <div>
+            <div
+              data-css-t2oi0x=""
+            >
               Sat
             </div>
           </div>
-          calend 222ar
+          <div
+            data-css-1unqxss=""
+          >
+            <button
+              data-css-1coitqn=""
+            >
+              1
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              2
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              3
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              4
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              5
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              6
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              7
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              8
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              9
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              10
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              11
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              12
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              13
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              14
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              15
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              16
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              17
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              18
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              19
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              20
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              21
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              22
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              23
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              24
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              25
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              26
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              27
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              28
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              29
+            </button>
+            <button
+              data-css-1coitqn=""
+            >
+              30
+            </button>
+          </div>
         </div>
       </div>
     </label>

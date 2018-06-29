@@ -8,6 +8,13 @@ import { transparentize } from 'polished'
 
 import * as vars from '../vars'
 
+const dayDimensions = {
+  height: '32px',
+  width: '32px',
+  margin: `0 2px ${core.layout.spacingXSmall} 0`,
+  border: '3px solid transparent'
+}
+
 export default {
   '.psds-date-picker': {
     display: 'inline-block'
@@ -236,9 +243,11 @@ export default {
     display: 'flex',
     justifyContent: 'flex-start',
     color: core.colors.gray02,
-    textTransform: 'uppercase'
+    textTransform: 'uppercase',
+    marginBottom: core.layout.spacingSmall
   },
-  // __calendar__week-heading
+
+  // __calendar__week-heading__day
   '.psds-date-picker__calendar__week-heading__day': {
     width: '32px',
     textAlign: 'center',
@@ -259,10 +268,7 @@ export default {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '32px',
-    width: '32px',
-    margin: `0 2px ${core.layout.spacingXSmall} 0`,
-    border: '3px solid transparent',
+    ...dayDimensions,
     borderRadius: '50%',
     lineHeight: '1em',
     fontWeight: core.type.fontWeightMedium,
@@ -279,6 +285,9 @@ export default {
   '.psds-date-picker__calendar__day--active:hover': {
     border: '3px solid transparent'
   },
+
+  // __calendar__skipped-day
+  '.psds-date-picker__calendar__skipped-day': dayDimensions,
 
   // __calendar__switcher
   '.psds-date-picker__calendar__switcher': {

@@ -18,5 +18,40 @@ export const forceValidMonth = ({ mm }) => {
 
 export const forceValidYear = ({ yyyy }) => new Date(yyyy, 1, 1).getFullYear()
 
-export const firstDayOfWeekForMonth = ({ mm, yyyy }) =>
+export const getFirstDayOfWeekForMonth = ({ mm, yyyy }) =>
   new Date(yyyy, num(mm) - 1, 1).getDay()
+
+export const getPrevMonthYear = ({ mm, yyyy }) => {
+  const month = num(mm)
+  const year = num(yyyy)
+  return {
+    mm: month - 1 < 1 ? 12 : month - 1,
+    yyyy: month - 1 < 1 ? year - 1 : year
+  }
+}
+
+export const getNextMonthYear = ({ mm, yyyy }) => {
+  const month = num(mm)
+  const year = num(yyyy)
+  return {
+    mm: month + 1 > 12 ? 1 : month + 1,
+    yyyy: month + 1 > 12 ? year + 1 : year
+  }
+}
+
+export const getMonthName = mm =>
+  [
+    null,
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ][num(mm)]

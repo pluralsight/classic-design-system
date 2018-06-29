@@ -8,7 +8,10 @@ import Theme from '@pluralsight/ps-design-system-theme/react'
 import css from '../css'
 import {
   getDaysInMonth,
-  firstDayOfWeekForMonth,
+  getNextMonthYear,
+  getPrevMonthYear,
+  getMonthName,
+  getFirstDayOfWeekForMonth,
   forceValidDay,
   forceValidMonth,
   forceValidYear
@@ -22,6 +25,7 @@ const styles = {
     glamor.css(css['.psds-date-picker__calendar__day'], {
       ':hover': css['.psds-date-picker__calendar__day:hover']
     }),
+  skippedDay: _ => glamor.css(css['.psds-date-picker__calendar__skipped-day']),
   weekHeading: ({}) =>
     glamor.css(css['.psds-date-picker__calendar__week-heading']),
   weekHeadingDay: ({}) =>
@@ -31,27 +35,47 @@ const styles = {
     glamor.css(css['.psds-date-picker__calendar__switcher__month'])
 }
 
+const arrayOf = num => Array.apply(null, Array(num || 0))
+
 class Calendar extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      mm: props.mm,
-      dd: props.dd,
-      yyyy: props.yyyy
-    }
-    this.handlePrevClick = this.handlePrevClick.bind(this)
-    this.handleNextClick = this.handleNextClick.bind(this)
-  }
-  handlePrevClick() {}
-  handleNextClick() {}
-  render() {
-    const { props, state } = this
     const defaultDate = new Date()
     const {
       mm = defaultDate.getMonth() + 1,
       dd = defaultDate.getDate(),
       yyyy = defaultDate.getFullYear()
     } = props
+    console.log('const mm/dd/yyyy', mm, dd, yyyy)
+    this.state = {
+      displayed: {
+        mm,
+        yyyy
+      },
+      selected: {
+        mm,
+        dd,
+        yyyy
+      }
+    }
+    this.handlePrevClick = this.handlePrevClick.bind(this)
+    this.handleNextClick = this.handleNextClick.bind(this)
+  }
+  handlePrevClick() {
+    const { mm, yyyy } = this.state.displayed
+    this.setState({
+      displayed: getPrevMonthYear({ mm, yyyy })
+    })
+  }
+  handleNextClick() {
+    const { mm, yyyy } = this.state.displayed
+    this.setState({
+      displayed: getNextMonthYear({ mm, yyyy })
+    })
+  }
+  render() {
+    const { props, state } = this
+    const { mm, dd, yyyy } = state.displayed
     return (
       <Theme name={Theme.names.light}>
         <div {...styles.calendar(props)}>
@@ -62,7 +86,7 @@ class Calendar extends React.Component {
               size={Button.sizes.small}
               appearance={Button.appearances.flat}
             />
-            <div {...styles.switcherMonth(props)}>January</div>
+            <div {...styles.switcherMonth(props)}>{getMonthName(mm)}</div>
             <Button
               onClick={this.handleNextClick}
               icon={<Icon id={Icon.ids.caretRight} />}
@@ -78,13 +102,14 @@ class Calendar extends React.Component {
             ))}
           </div>
           <div {...styles.days(props)}>
-            {Array.apply(null, Array(getDaysInMonth({ mm, dd, yyyy }))).map(
-              (_, i) => (
-                <button key={i} {...styles.day(props)}>
-                  {i + 1}
-                </button>
-              )
-            )}
+            {arrayOf(getFirstDayOfWeekForMonth({ mm, yyyy })).map((_, i) => (
+              <div key={i} {...styles.skippedDay(props)} />
+            ))}
+            {arrayOf(getDaysInMonth({ mm, yyyy })).map((_, i) => (
+              <button key={i} {...styles.day(props)}>
+                {i + 1}
+              </button>
+            ))}
           </div>
         </div>
       </Theme>
