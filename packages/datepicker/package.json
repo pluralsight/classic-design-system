@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-datepicker",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Design system components for date picker",
   "main": "index.js",
   "module": "index.js",
