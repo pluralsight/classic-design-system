@@ -136,6 +136,7 @@ class SubField extends React.Component {
         name={props.name}
         value={props.value}
         placeholder={props.value || props.name}
+        disabled={props.disabled}
         style={props.style}
       />
     )
@@ -237,7 +238,6 @@ class DatePicker extends React.Component {
     )
   }
   render() {
-    // TODO: disable for realz
     const { context, props, state } = this
     const allProps = {
       ...props,
@@ -262,6 +262,7 @@ class DatePicker extends React.Component {
             onBlur={this.handleSubFieldBlur}
             value={state.mm}
             name="mm"
+            disabled={props.disabled}
             style={{ width: '32px' }}
           />
           <SubFieldDivider appearance={props.appearance} />
@@ -272,6 +273,7 @@ class DatePicker extends React.Component {
             onBlur={this.handleSubFieldBlur}
             value={state.dd}
             name="dd"
+            disabled={props.disabled}
             style={{ width: '28px' }}
           />
           <SubFieldDivider appearance={props.appearance} />
@@ -282,6 +284,7 @@ class DatePicker extends React.Component {
             onBlur={this.handleSubFieldBlur}
             value={state.yyyy}
             name="yyyy"
+            disabled={props.disabled}
             style={{ width: '50px' }}
           />
           <input
@@ -298,7 +301,11 @@ class DatePicker extends React.Component {
             ref={allProps.innerRef}
             value={allProps.value}
           />
-          <button {...styles.icon(allProps)} onClick={this.handleIconClick}>
+          <button
+            disabled={props.disabled}
+            {...styles.icon(allProps)}
+            onClick={this.handleIconClick}
+          >
             <Icon id={Icon.ids.calendar} />
           </button>
           {allProps.error && (

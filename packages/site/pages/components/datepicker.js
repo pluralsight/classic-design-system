@@ -144,7 +144,6 @@ export default withServerProps(_ => (
       <P>Disabled date pickers are unmodifiable and diminished visually.</P>
       <Example.React
         themeToggle
-        outputStyle={{ paddingBottom: '336px' }}
         includes={{ DatePicker }}
         codes={[`<DatePicker disabled label="Can't touch this" />`]}
       />
