@@ -55,3 +55,15 @@ export const getMonthName = mm =>
     'November',
     'December'
   ][num(mm)]
+
+export const parseDate = value => {
+  const [mm, dd, yyyy] = (value || '').split('/')
+  console.log('parseDate', mm, dd, yyyy)
+  return mm && dd && yyyy
+    ? {
+        dd: forceValidDay({ dd, mm, yyyy }),
+        mm: forceValidMonth({ mm }),
+        yyyy: forceValidYear({ yyyy })
+      }
+    : { dd: '', mm: '', yyyy: '' }
+}

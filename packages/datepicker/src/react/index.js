@@ -7,7 +7,12 @@ import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
 import Calendar from './calendar'
 import css from '../css'
-import { forceValidDay, forceValidMonth, forceValidYear } from '../js'
+import {
+  parseDate,
+  forceValidDay,
+  forceValidMonth,
+  forceValidYear
+} from '../js'
 import * as vars from '../vars'
 
 const datePickerHtmlPropsWhitelist = [
@@ -149,10 +154,12 @@ const formatDate = ({ mm, dd, yyyy }) => mm + '/' + dd + '/' + yyyy
 class DatePicker extends React.Component {
   constructor(props) {
     super(props)
+    const { mm, dd, yyyy } = parseDate(props.value)
+    console.log('datepickker', mm, dd, yyyy)
     this.state = {
-      mm: '',
-      dd: '',
-      yyyy: '' // TODO: parse props.value and assign parts
+      mm,
+      dd,
+      yyyy
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubFieldBlur = this.handleSubFieldBlur.bind(this)
@@ -200,6 +207,7 @@ class DatePicker extends React.Component {
   }
   render() {
     const { context, props, state } = this
+    console.log('datepicker render', state.mm, state.dd, state.yyyy)
     const allProps = {
       ...props,
       themeName: context.themeName || themeDefaultName
@@ -264,7 +272,7 @@ class DatePicker extends React.Component {
           )}
         </div>
         <div {...styles.calendarContainer(allProps)}>
-          <Calendar />
+          <Calendar mm={state.mm} dd={state.dd} yyyy={state.yyyy} />
         </div>
         {allProps.subLabel && (
           <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
@@ -281,7 +289,8 @@ DatePicker.propTypes = {
   label: PropTypes.node,
   onSelect: PropTypes.func,
   placeholder: PropTypes.string,
-  subLabel: PropTypes.node
+  subLabel: PropTypes.node,
+  value: PropTypes.string
 }
 DatePicker.defaultProps = {
   appearance: vars.appearances.default,

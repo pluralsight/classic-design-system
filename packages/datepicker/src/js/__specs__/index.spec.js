@@ -105,3 +105,25 @@ describe('#getNextMonthYear', () => {
     })
   })
 })
+
+describe('#parseDate', () => {
+  test('no value', () => {
+    expect(subject.parseDate()).toEqual({ dd: '', mm: '', yyyy: '' })
+  })
+
+  test('valid date', () => {
+    expect(subject.parseDate('12/07/1941')).toEqual({
+      dd: 7,
+      mm: 12,
+      yyyy: 1941
+    })
+  })
+
+  test('invalid date, forces valid date', () => {
+    expect(subject.parseDate('22/0/11')).toEqual({
+      dd: 1,
+      mm: 12,
+      yyyy: 1911
+    })
+  })
+})

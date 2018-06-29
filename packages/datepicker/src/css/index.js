@@ -278,11 +278,11 @@ export default {
   '.psds-date-picker__calendar__day:hover': {
     border: `3px solid ${core.colors.blue}`
   },
-  '.psds-date-picker__calendar__day--active': {
+  '.psds-date-picker__calendar__day--selected': {
     background: core.colors.blue,
     color: core.colors.white
   },
-  '.psds-date-picker__calendar__day--active:hover': {
+  '.psds-date-picker__calendar__day--selected:hover': {
     border: '3px solid transparent'
   },
 
