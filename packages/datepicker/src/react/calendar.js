@@ -157,9 +157,9 @@ class Calendar extends React.Component {
 }
 
 Calendar.propTypes = {
-  dd: PropTypes.number,
-  mm: PropTypes.number,
-  yyyy: PropTypes.number,
+  dd: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  mm: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  yyyy: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   onSelect: PropTypes.func
 }
 Calendar.defaultProps = {}
