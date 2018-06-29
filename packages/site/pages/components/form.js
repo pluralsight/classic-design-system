@@ -3,6 +3,7 @@ import Banner from '@pluralsight/ps-design-system-banner/react'
 import Button from '@pluralsight/ps-design-system-button/react'
 import Checkbox from '@pluralsight/ps-design-system-checkbox/react'
 import core from '@pluralsight/ps-design-system-core'
+import DatePicker from '@pluralsight/ps-design-system-datepicker/react'
 import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
 import Form from '@pluralsight/ps-design-system-form/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
@@ -150,7 +151,7 @@ const Comp = props => (
         </span>
       </div>
     </div>
-    <div className="control">{props.children}</div>
+    <div>{props.children}</div>
     <style jsx>{`
       .comp {
         padding-bottom: ${core.layout.spacingLarge};
@@ -159,10 +160,6 @@ const Comp = props => (
       }
       .label {
         margin-bottom: ${core.layout.spacingLarge};
-      }
-      .control {
-        position: relative;
-        z-index: 0;
       }
       .desc {
         display: inline-block;
@@ -203,7 +200,8 @@ const validate = state => {
       rule: /false|true/,
       message: 'Select an assessment option'
     },
-    desc: { rule: /.+/, message: 'Required' }
+    desc: { rule: /.+/, message: 'Required' },
+    publish: { rule: /^\d{2}\/\d{2}\/\d{4}$/, message: 'Required' }
   }
   return Object.keys(rules).reduce(
     (errors, ruleName) => {
@@ -228,7 +226,8 @@ const initialState = {
   slidestech: null,
   demo: false,
   assessment: false,
-  desc: ''
+  desc: '',
+  publish: ''
 }
 
 class InAppExample extends React.Component {
@@ -322,6 +321,14 @@ class InAppExample extends React.Component {
                       ))}
                     </ActionMenu>
                   }
+                />
+                <DatePicker
+                  error={isError('publish')}
+                  name="publish"
+                  value={state.publish}
+                  label="Publish date"
+                  subLabel="When your course will go live"
+                  onSelect={publish => this.setState({ publish })}
                 />
                 <Switch
                   error={isError('slides')}
@@ -511,6 +518,18 @@ class InAppExample extends React.Component {
   }
 }
 
+const FormFocusable = props => (
+  <div className="focusable">
+    {props.children}
+    <style jsx>{`
+      .focusable {
+        position: relative;
+        z-index: 0;
+      }
+    `}</style>
+  </div>
+)
+
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Form">
@@ -635,100 +654,109 @@ export default withServerProps(_ => (
         used inside the <Text.Code>Form</Text.Code> layout component. Find links
         to the docs below
       </P>
+      <FormFocusable>
+        <Comp
+          title="Text Input"
+          href="/components/textinput"
+          desc="For short textual input."
+        >
+          <TextInput label="First name" placeholder="What's your name?" />
+        </Comp>
 
-      <Comp
-        title="Text Input"
-        href="/components/textinput"
-        desc="For short textual input."
-      >
-        <TextInput label="First name" placeholder="What's your name?" />
-      </Comp>
+        <Comp
+          title="Text Area"
+          href="/components/textarea"
+          desc="For longer textual input."
+        >
+          <TextArea label="Bio" placeholder="Tell me about yourself." />
+        </Comp>
 
-      <Comp
-        title="Text Area"
-        href="/components/textarea"
-        desc="For longer textual input."
-      >
-        <TextArea label="Bio" placeholder="Tell me about yourself." />
-      </Comp>
+        <Comp
+          title="Radio"
+          href="/components/radio"
+          desc="For single selection amongst few choices."
+        >
+          <Radio.Group>
+            <Radio.Button value="beginner" label="Beginner" />
+            <Radio.Button value="intermediate" label="Intermediate" />
+            <Radio.Button value="advanced" label="Advanced" />
+          </Radio.Group>
+        </Comp>
 
-      <Comp
-        title="Radio"
-        href="/components/radio"
-        desc="For single selection amongst few choices."
-      >
-        <Radio.Group>
-          <Radio.Button value="beginner" label="Beginner" />
-          <Radio.Button value="intermediate" label="Intermediate" />
-          <Radio.Button value="advanced" label="Advanced" />
-        </Radio.Group>
-      </Comp>
+        <Comp
+          title="Dropdown"
+          href="/components/dropdown"
+          desc="For single selection amongst few to many choices."
+        >
+          <Dropdown
+            label="Level"
+            subLabel="Be as specific as possible"
+            menu={
+              <ActionMenu>
+                <ActionMenu.Item
+                  nested={
+                    <ActionMenu>
+                      <ActionMenu.Item>What's nylon</ActionMenu.Item>
+                      <ActionMenu.Item>Dream of nylon</ActionMenu.Item>
+                      <ActionMenu.Item>Dangerous</ActionMenu.Item>
+                    </ActionMenu>
+                  }
+                >
+                  Beginner
+                </ActionMenu.Item>
+                <ActionMenu.Item
+                  nested={
+                    <ActionMenu>
+                      <ActionMenu.Item>Nylon adept</ActionMenu.Item>
+                      <ActionMenu.Item>Epic nylon user</ActionMenu.Item>
+                    </ActionMenu>
+                  }
+                >
+                  Intermediate
+                </ActionMenu.Item>
+                <ActionMenu.Item
+                  nested={
+                    <ActionMenu>
+                      <ActionMenu.Item>Invented nylon</ActionMenu.Item>
+                      <ActionMenu.Item>Now it's kevlar</ActionMenu.Item>
+                    </ActionMenu>
+                  }
+                >
+                  Advanced
+                </ActionMenu.Item>
+              </ActionMenu>
+            }
+          />
+        </Comp>
 
-      <Comp
-        title="Dropdown"
-        href="/components/dropdown"
-        desc="For single selection amongst few to many choices."
-      >
-        <Dropdown
-          label="Level"
-          subLabel="Be as specific as possible"
-          menu={
-            <ActionMenu>
-              <ActionMenu.Item
-                nested={
-                  <ActionMenu>
-                    <ActionMenu.Item>What's nylon</ActionMenu.Item>
-                    <ActionMenu.Item>Dream of nylon</ActionMenu.Item>
-                    <ActionMenu.Item>Dangerous</ActionMenu.Item>
-                  </ActionMenu>
-                }
-              >
-                Beginner
-              </ActionMenu.Item>
-              <ActionMenu.Item
-                nested={
-                  <ActionMenu>
-                    <ActionMenu.Item>Nylon adept</ActionMenu.Item>
-                    <ActionMenu.Item>Epic nylon user</ActionMenu.Item>
-                  </ActionMenu>
-                }
-              >
-                Intermediate
-              </ActionMenu.Item>
-              <ActionMenu.Item
-                nested={
-                  <ActionMenu>
-                    <ActionMenu.Item>Invented nylon</ActionMenu.Item>
-                    <ActionMenu.Item>Now it's kevlar</ActionMenu.Item>
-                  </ActionMenu>
-                }
-              >
-                Advanced
-              </ActionMenu.Item>
-            </ActionMenu>
-          }
-        />
-      </Comp>
+        <Comp
+          title="Checkbox"
+          href="/components/checkbox"
+          desc="For multiple selection."
+        >
+          <CheckboxExample />
+        </Comp>
 
-      <Comp
-        title="Checkbox"
-        href="/components/checkbox"
-        desc="For multiple selection."
-      >
-        <CheckboxExample />
-      </Comp>
+        <Comp
+          title="Switch"
+          href="/components/switch"
+          desc="For on/off selections."
+        >
+          <SwitchExample />
+        </Comp>
 
-      <Comp
-        title="Switch"
-        href="/components/switch"
-        desc="For on/off selections."
-      >
-        <SwitchExample />
-      </Comp>
+        <Comp
+          title="DatePicker"
+          href="/components/datepicker"
+          desc="For dates."
+        >
+          <DatePicker label="Birthday" />
+        </Comp>
 
-      <Comp title="Tag" href="/components/tag" desc="For dynamic lists.">
-        <TagExample />
-      </Comp>
+        <Comp title="Tag" href="/components/tag" desc="For dynamic lists.">
+          <TagExample />
+        </Comp>
+      </FormFocusable>
     </Content>
   </Chrome>
 ))
