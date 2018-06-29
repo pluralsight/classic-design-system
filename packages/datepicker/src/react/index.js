@@ -149,7 +149,9 @@ const SubFieldDivider = props => (
 
 const isValidDate = ({ mm, dd, yyyy }) => {
   const date = new Date(yyyy, mm - 1, dd)
-  return mm && dd && yyyy && date && date.getMonth() + 1 == mm
+  const someFields = mm || dd || yyyy
+  const jsDateWorks = date && date.getMonth() + 1 == mm
+  return !someFields || (someFields && jsDateWorks)
 }
 
 class DatePicker extends React.Component {
@@ -206,7 +208,6 @@ class DatePicker extends React.Component {
     this.setState({ isOpen: false })
   }
   handleSubFieldBlur(evt) {
-    // TODO: trigger onSelect when all fields are emptied
     const { name, value } = evt.target
     const { mm, dd, yyyy } = this.state
     const forceValidValueFor = {
