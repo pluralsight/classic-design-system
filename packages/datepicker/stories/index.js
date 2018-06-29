@@ -13,107 +13,115 @@ const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
 )
 
+class StateDemo extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { value: props.value || '' }
+    this.handleDatePickerSelect = this.handleDatePickerSelect.bind(this)
+  }
+  handleDatePickerSelect(value) {
+    console.log('called select w/ value', value)
+    this.setState({ value })
+  }
+  render() {
+    return (
+      <div>
+        <div style={{ color: core.colors.gray03 }}>
+          Selected: {this.state.value}
+        </div>
+        <DatePicker
+          value={this.state.value}
+          onSelect={this.handleDatePickerSelect}
+        />
+      </div>
+    )
+  }
+}
+
 const labelStory = storiesOf('labels', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('none', _ => <DatePicker />)
-//   .add('compare w/ textinput', _ => (
-//     <div>
-//       <div style={{ marginBottom: core.layout.spacingSmall }}>
-//         <DatePicker />
-//       </div>
-//       <div>
-//         <TextInput type="date" />
-//       </div>
-//     </div>
-//   ))
-//   .add('label', _ => <DatePicker label="Some label" />)
-//   .add('subLabel', _ => <DatePicker subLabel="Some sublabel" />)
-//   .add('label and subLabel', _ => (
-//     <DatePicker label="Some label" subLabel="Some sublabel" />
-//   ))
+  .add('compare w/ textinput', _ => (
+    <div>
+      <div style={{ marginBottom: core.layout.spacingSmall }}>
+        <DatePicker />
+      </div>
+      <div>
+        <TextInput type="date" />
+      </div>
+    </div>
+  ))
+  .add('label', _ => <DatePicker label="Some label" />)
+  .add('subLabel', _ => <DatePicker subLabel="Some sublabel" />)
+  .add('label and subLabel', _ => (
+    <DatePicker label="Some label" subLabel="Some sublabel" />
+  ))
 
 const valueStory = storiesOf('value', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('single slash-separated value', _ => <DatePicker value="12/07/1941" />)
+  .add('updated value, no initial', _ => <StateDemo />)
+  .add('updated value, w/ initial', _ => <StateDemo value="3/15/1995" />)
 
-// const appearanceStory = storiesOf('appearance', module)
-//   .addDecorator(PaddingDecorator)
-//   .addDecorator(themeDecorator(addons))
-// Object.keys(DatePicker.appearances).forEach(appearance =>
-//   appearanceStory.add(appearance, _ => (
-//     <DatePicker appearance={appearance} placeholder="The placeholder" />
-//   ))
-// )
-// Object.keys(DatePicker.appearances).forEach(appearance =>
-//   appearanceStory.add(`${appearance} w/ error`, _ => (
-//     <DatePicker appearance={appearance} error label="Problem field" />
-//   ))
-// )
+const appearanceStory = storiesOf('appearance', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
+Object.keys(DatePicker.appearances).forEach(appearance =>
+  appearanceStory.add(appearance, _ => <DatePicker appearance={appearance} />)
+)
+Object.keys(DatePicker.appearances).forEach(appearance =>
+  appearanceStory.add(`${appearance} w/ error`, _ => (
+    <DatePicker appearance={appearance} error label="Problem field" />
+  ))
+)
 
-// const disabledStory = storiesOf('disabled', module)
-//   .addDecorator(PaddingDecorator)
-//   .addDecorator(themeDecorator(addons))
-//   .add('compare', _ => (
-//     <div>
-//       <DatePicker
-//         label="Normal"
-//         subLabel="Still normal"
-//         placeholder="I'm normal, see"
-//       />
-//       <DatePicker
-//         label="I'm not usable"
-//         subLabel="Neither am I"
-//         disabled
-//         placeholder="I'm untouchable"
-//       />
-//     </div>
-//   ))
+const disabledStory = storiesOf('disabled', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
+  .add('compare', _ => (
+    <div>
+      <DatePicker label="Normal" subLabel="Still normal" />
+      <DatePicker label="I'm not usable" subLabel="Neither am I" disabled />
+    </div>
+  ))
 
-// const whitelistStory = storiesOf('whitelist', module)
-//   .addDecorator(PaddingDecorator)
-//   .addDecorator(themeDecorator(addons))
-//   .add('name', _ => (
-//     <DatePicker placeholder="I have a form name" name="myFieldNameOfPower" />
-//   ))
-//   .add('onChange', _ => (
-//     <DatePicker placeholder="Change me" onChange={action('I changed')} />
-//   ))
+const whitelistStory = storiesOf('whitelist', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
+  .add('name', _ => <DatePicker name="myFieldNameOfPower" />)
+  .add('onChange', _ => <DatePicker onChange={action('I changed')} />)
 
-// const layoutsStory = storiesOf('layouts', module)
-//   .addDecorator(PaddingDecorator)
-//   .addDecorator(themeDecorator(addons))
-//   .add('full width', _ => (
-//     <div style={{ border: '1px solid blue', width: '500px' }}>
-//       <DatePicker label="First" style={{ display: 'block', width: '100%' }} />
-//       <DatePicker
-//         error
-//         label="Second"
-//         style={{ display: 'block', width: '100%' }}
-//       />
-//       <DatePicker
-//         appearance={DatePicker.appearances.subtle}
-//         label="Third"
-//         style={{ display: 'block', width: '100%' }}
-//       />
-//       <DatePicker
-//         appearance={DatePicker.appearances.subtle}
-//         error
-//         label="Fourth"
-//         style={{ display: 'block', width: '100%' }}
-//       />
-//     </div>
-//   ))
-//   .add('right-aligned', _ => (
-//     <div style={{ border: '1px solid blue' }}>
-//       <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-//         <DatePicker
-//           placeholder="Search"
-//           icon={<Icon id={Icon.ids.search} />}
-//           appearance={DatePicker.appearances.subtle}
-//         />
-//       </div>
-//       <div style={{ border: '3px solid green', height: '50px' }} />
-//     </div>
-//   ))
+const layoutsStory = storiesOf('layouts', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
+  .add('full width', _ => (
+    <div style={{ border: '1px solid blue', width: '500px' }}>
+      <DatePicker label="First" style={{ display: 'block', width: '100%' }} />
+      <DatePicker
+        error
+        label="Second"
+        style={{ display: 'block', width: '100%' }}
+      />
+      <DatePicker
+        appearance={DatePicker.appearances.subtle}
+        label="Third"
+        style={{ display: 'block', width: '100%' }}
+      />
+      <DatePicker
+        appearance={DatePicker.appearances.subtle}
+        error
+        label="Fourth"
+        style={{ display: 'block', width: '100%' }}
+      />
+    </div>
+  ))
+  .add('right-aligned', _ => (
+    <div style={{ border: '1px solid blue' }}>
+      <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+        <DatePicker appearance={DatePicker.appearances.subtle} />
+      </div>
+      <div style={{ border: '3px solid green', height: '50px' }} />
+    </div>
+  ))

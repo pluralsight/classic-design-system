@@ -127,3 +127,19 @@ describe('#parseDate', () => {
     })
   })
 })
+
+describe('#formatDate', () => {
+  test('no value', () => {
+    expect(subject.formatDate()).toEqual(null)
+  })
+
+  test('valid date', () => {
+    expect(
+      subject.formatDate({
+        dd: 7,
+        mm: 12,
+        yyyy: 1941
+      })
+    ).toEqual('12/7/1941')
+  })
+})

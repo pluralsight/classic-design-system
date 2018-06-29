@@ -9,6 +9,7 @@ import Calendar from './calendar'
 import css from '../css'
 import {
   parseDate,
+  formatDate,
   forceValidDay,
   forceValidMonth,
   forceValidYear
@@ -149,20 +150,27 @@ const isValidDate = ({ mm, dd, yyyy }) => {
   return mm && dd && yyyy && date && date.getMonth() + 1 == mm
 }
 
-const formatDate = ({ mm, dd, yyyy }) => mm + '/' + dd + '/' + yyyy
-
 class DatePicker extends React.Component {
   constructor(props) {
     super(props)
     const { mm, dd, yyyy } = parseDate(props.value)
     console.log('datepickker', mm, dd, yyyy)
     this.state = {
+      isOpen: false,
       mm,
       dd,
       yyyy
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubFieldBlur = this.handleSubFieldBlur.bind(this)
+    this.handleCalendarSelect = this.handleCalendarSelect.bind(this)
+  }
+  handleCalendarSelect(value) {
+    const { mm, dd, yyyy } = parseDate(value)
+    this.setState({ mm, dd, yyyy }, _ => {
+      if (typeof this.props.onSelect === 'function')
+        this.props.onSelect(formatDate({ mm, dd, yyyy }), { mm, dd, yyyy })
+    })
   }
   handleChange(evt) {
     const { name, value } = evt.target
@@ -272,7 +280,12 @@ class DatePicker extends React.Component {
           )}
         </div>
         <div {...styles.calendarContainer(allProps)}>
-          <Calendar mm={state.mm} dd={state.dd} yyyy={state.yyyy} />
+          <Calendar
+            mm={state.mm}
+            dd={state.dd}
+            yyyy={state.yyyy}
+            onSelect={this.handleCalendarSelect}
+          />
         </div>
         {allProps.subLabel && (
           <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>

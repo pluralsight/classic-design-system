@@ -67,3 +67,6 @@ export const parseDate = value => {
       }
     : { dd: '', mm: '', yyyy: '' }
 }
+
+export const formatDate = ({ mm, dd, yyyy } = {}) =>
+  mm && dd && yyyy ? mm + '/' + dd + '/' + yyyy : null

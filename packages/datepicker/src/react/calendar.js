@@ -7,6 +7,7 @@ import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
 import {
+  formatDate,
   getDaysInMonth,
   getNextMonthYear,
   getPrevMonthYear,
@@ -68,6 +69,7 @@ class Calendar extends React.Component {
     }
     this.handlePrevClick = this.handlePrevClick.bind(this)
     this.handleNextClick = this.handleNextClick.bind(this)
+    this.handleDayClick = this.handleDayClick.bind(this)
   }
   handlePrevClick() {
     const { mm, yyyy } = this.state.displayed
@@ -80,6 +82,18 @@ class Calendar extends React.Component {
     this.setState({
       displayed: getNextMonthYear({ mm, yyyy })
     })
+  }
+  handleDayClick(dd) {
+    const { mm, yyyy } = this.state.displayed
+    this.setState(
+      {
+        selected: { mm, dd, yyyy }
+      },
+      _ => {
+        if (typeof this.props.onSelect === 'function')
+          this.props.onSelect(formatDate({ mm, dd, yyyy }))
+      }
+    )
   }
   render() {
     const { props, state } = this
@@ -119,6 +133,7 @@ class Calendar extends React.Component {
             {arrayOf(getDaysInMonth({ mm, yyyy })).map((_, i) => (
               <button
                 key={i}
+                onClick={this.handleDayClick.bind(this, i + 1)}
                 {...styles.day({
                   isSelected:
                     yyyy === state.selected.yyyy &&
@@ -139,7 +154,8 @@ class Calendar extends React.Component {
 Calendar.propTypes = {
   dd: PropTypes.number,
   mm: PropTypes.number,
-  yyyy: PropTypes.number
+  yyyy: PropTypes.number,
+  onSelect: PropTypes.func
 }
 Calendar.defaultProps = {}
 
