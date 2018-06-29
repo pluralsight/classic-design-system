@@ -162,7 +162,8 @@ class DatePicker extends React.Component {
   handleBlur() {
     this.setState({ isFocused: false })
   }
-  handleIconClick() {
+  handleIconClick(evt) {
+    evt.preventDefault()
     this.setState({ isOpen: !this.state.isOpen })
   }
   handleCalendarSelect(value) {
@@ -190,6 +191,7 @@ class DatePicker extends React.Component {
     this.setState({ isOpen: false })
   }
   handleSubFieldBlur(evt) {
+    // TODO: trigger onSelect when all fields are emptied
     const { name, value } = evt.target
     const { mm, dd, yyyy } = this.state
     const forceValidValueFor = {
@@ -221,6 +223,7 @@ class DatePicker extends React.Component {
     )
   }
   render() {
+    // TODO: disable for realz
     const { context, props, state } = this
     const allProps = {
       ...props,
@@ -314,7 +317,6 @@ DatePicker.propTypes = {
   error: PropTypes.bool,
   label: PropTypes.node,
   onSelect: PropTypes.func,
-  placeholder: PropTypes.string,
   subLabel: PropTypes.node,
   value: PropTypes.string
 }
