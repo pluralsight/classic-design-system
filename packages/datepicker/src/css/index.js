@@ -53,6 +53,9 @@ export default {
     // width: '50px', // TODO: mk less arbitrary
     background: 'none'
   },
+  '.psds-date-picker__sub-field:focus': {
+    outline: 'none'
+  },
   [`.psds-date-picker__sub-field--appearance-${vars.appearances.subtle}`]: {
     color: core.colors.gray01
   },
@@ -173,8 +176,11 @@ export default {
     left: 'auto',
     right: core.layout.spacingXSmall,
     display: 'flex',
-    alignItems: 'center',
-    color: core.colors.gray03
+    height: '100%',
+    color: core.colors.gray03,
+    cursor: 'pointer',
+    background: 'none',
+    border: 'none'
   },
   [`.psds-date-picker__icon.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray02
@@ -228,6 +234,8 @@ export default {
 
   // __calendar
   '.psds-date-picker__calendar': {
+    position: 'relative',
+    zIndex: '0',
     width: '286px',
     height: '301px',
     background: core.colors.white,

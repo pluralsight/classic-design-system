@@ -109,6 +109,9 @@ const styles = {
   subField: ({ appearance }) =>
     glamor.css(
       css['.psds-date-picker__sub-field'],
+      {
+        ':focus': css['.psds-date-picker__sub-field:focus']
+      },
       css[`.psds-date-picker__sub-field--appearance-${appearance}`]
     ),
   subFieldDivider: _ => glamor.css(css['.psds-date-picker__sub-field-divider']),
@@ -162,12 +165,18 @@ class DatePicker extends React.Component {
       yyyy
     }
     this.handleChange = this.handleChange.bind(this)
+    this.handleSubFieldFocus = this.handleSubFieldBlur.bind(this)
     this.handleSubFieldBlur = this.handleSubFieldBlur.bind(this)
     this.handleCalendarSelect = this.handleCalendarSelect.bind(this)
+    this.handleIconClick = this.handleIconClick.bind(this)
+  }
+  handleIconClick() {
+    // TODO: handle transition in animation
+    this.setState({ isOpen: true })
   }
   handleCalendarSelect(value) {
     const { mm, dd, yyyy } = parseDate(value)
-    this.setState({ mm, dd, yyyy }, _ => {
+    this.setState({ mm, dd, yyyy, isOpen: false }, _ => {
       if (typeof this.props.onSelect === 'function')
         this.props.onSelect(formatDate({ mm, dd, yyyy }), { mm, dd, yyyy })
     })
@@ -186,6 +195,9 @@ class DatePicker extends React.Component {
       })
     }
   }
+  handleSubFieldFocus() {
+    this.setState({ isOpen: false })
+  }
   handleSubFieldBlur(evt) {
     const { name, value } = evt.target
     const { mm, dd, yyyy } = this.state
@@ -200,6 +212,7 @@ class DatePicker extends React.Component {
       yyyy,
       [name]: value
     }
+    // TODO: handle empty not showing NaN on blur
     this.setState(
       {
         [name]: forceValidValueFor[name](currentDateOverwrittenByEventValue)
@@ -233,6 +246,7 @@ class DatePicker extends React.Component {
           <SubField
             appearance={allProps.appearance}
             onChange={this.handleChange}
+            onFocus={this.handleSubFieldFocus}
             onBlur={this.handleSubFieldBlur}
             value={state.mm}
             name="mm"
@@ -242,6 +256,7 @@ class DatePicker extends React.Component {
           <SubField
             appearance={allProps.appearance}
             onChange={this.handleChange}
+            onFocus={this.handleSubFieldFocus}
             onBlur={this.handleSubFieldBlur}
             value={state.dd}
             name="dd"
@@ -251,6 +266,7 @@ class DatePicker extends React.Component {
           <SubField
             appearance={allProps.appearance}
             onChange={this.handleChange}
+            onFocus={this.handleSubFieldFocus}
             onBlur={this.handleSubFieldBlur}
             value={state.yyyy}
             name="yyyy"
@@ -270,23 +286,25 @@ class DatePicker extends React.Component {
             onFocus={this.handleFocus}
             ref={allProps.innerRef}
           />
-          <div {...styles.icon(allProps)}>
+          <button {...styles.icon(allProps)} onClick={this.handleIconClick}>
             <Icon id={Icon.ids.calendar} />
-          </div>
+          </button>
           {allProps.error && (
             <div {...styles.error(allProps)}>
               <Icon id={Icon.ids.warning} />
             </div>
           )}
         </div>
-        <div {...styles.calendarContainer(allProps)}>
-          <Calendar
-            mm={state.mm}
-            dd={state.dd}
-            yyyy={state.yyyy}
-            onSelect={this.handleCalendarSelect}
-          />
-        </div>
+        {state.isOpen && (
+          <div {...styles.calendarContainer(allProps)}>
+            <Calendar
+              mm={state.mm}
+              dd={state.dd}
+              yyyy={state.yyyy}
+              onSelect={this.handleCalendarSelect}
+            />
+          </div>
+        )}
         {allProps.subLabel && (
           <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
         )}

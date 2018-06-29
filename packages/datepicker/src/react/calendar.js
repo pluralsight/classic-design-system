@@ -71,6 +71,9 @@ class Calendar extends React.Component {
     this.handleNextClick = this.handleNextClick.bind(this)
     this.handleDayClick = this.handleDayClick.bind(this)
   }
+  componentDidMount() {
+    this.el.focus()
+  }
   handlePrevClick() {
     const { mm, yyyy } = this.state.displayed
     this.setState({
@@ -101,7 +104,11 @@ class Calendar extends React.Component {
     console.log('selected', this.state.selected)
     return (
       <Theme name={Theme.names.light}>
-        <div {...styles.calendar(props)}>
+        <div
+          {...styles.calendar(props)}
+          tabIndex="-1"
+          ref={el => (this.el = el)}
+        >
           <div {...styles.switcher(props)}>
             <Button
               onClick={this.handlePrevClick}
