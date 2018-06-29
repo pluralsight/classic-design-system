@@ -19,8 +19,11 @@ import {
 } from '../js'
 import * as vars from '../vars'
 
+const slide = glamor.css.keyframes(
+  css['@keyframes psds-date-picker__calendar__keyframes__slide']
+)
 const styles = {
-  calendar: ({}) => glamor.css(css['.psds-date-picker__calendar']),
+  calendar: _ => glamor.css(css['.psds-date-picker__calendar']({ slide })),
   days: ({}) => glamor.css(css['.psds-date-picker__calendar__days']),
   day: ({ isSelected }) =>
     glamor.css(

@@ -111,7 +111,6 @@ class SubField extends React.Component {
     this.handleFocus = this.handleFocus.bind(this)
   }
   handleFocus(evt) {
-    // TODO: test x-browser compat
     this.el.select()
     this.props.onFocus(evt)
   }
@@ -164,7 +163,6 @@ class DatePicker extends React.Component {
     this.setState({ isFocused: false })
   }
   handleIconClick() {
-    // TODO: handle transition in animation
     this.setState({ isOpen: !this.state.isOpen })
   }
   handleCalendarSelect(value) {

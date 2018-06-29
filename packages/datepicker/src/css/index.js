@@ -210,8 +210,15 @@ export default {
     marginTop: core.layout.spacingXXSmall
   },
 
+  ['@keyframes psds-date-picker__calendar__keyframes__slide']: {
+    '100%': {
+      transform: 'translateY(0)',
+      opacity: 1
+    }
+  },
+
   // __calendar
-  '.psds-date-picker__calendar': {
+  '.psds-date-picker__calendar': ({ slide }) => ({
     position: 'relative',
     zIndex: '0',
     width: '286px',
@@ -221,8 +228,13 @@ export default {
     borderRadius: '2px',
     padding: `${core.layout.spacingMedium} ${core.layout.spacingLarge}`,
     fontSize: core.type.fontSizeXSmall,
-    fontWeight: core.type.fontWeightMedium
-  },
+    fontWeight: core.type.fontWeightMedium,
+    opacity: 0,
+    transform: `translateY(calc(-1 * ${core.layout.spacingXSmall}))`,
+    animation: `${slide || 'psds-date-picker__calendar__keyframes__slide'} ${
+      core.motion.speedNormal
+    } forwards`
+  }),
 
   // __calendar__week-heading
   '.psds-date-picker__calendar__week-heading': {
