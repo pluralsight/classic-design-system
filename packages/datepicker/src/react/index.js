@@ -107,6 +107,10 @@ const styles = {
       },
       css[`.psds-date-picker__sub-field--appearance-${appearance}`]
     ),
+  subFieldDivider: ({ appearance }) =>
+    glamor.css(css['.psds-date-picker__sub-field-divider'], [
+      `.psds-date-picker__sub-field-divider--appearance-${appearance}`
+    ]),
   calendarContainer: _ =>
     glamor.css(css['.psds-date-picker__calendar-container'])
 }
@@ -137,6 +141,10 @@ class SubField extends React.Component {
     )
   }
 }
+
+const SubFieldDivider = props => (
+  <span {...styles.subFieldDivider(props)}>/</span>
+)
 
 const isValidDate = ({ mm, dd, yyyy }) => {
   const date = new Date(yyyy, mm - 1, dd)
@@ -256,7 +264,7 @@ class DatePicker extends React.Component {
             name="mm"
             style={{ width: '32px' }}
           />
-          <span>/</span>
+          <SubFieldDivider appearance={props.appearance} />
           <SubField
             appearance={allProps.appearance}
             onChange={this.handleChange}
@@ -266,7 +274,7 @@ class DatePicker extends React.Component {
             name="dd"
             style={{ width: '28px' }}
           />
-          <span>/</span>
+          <SubFieldDivider appearance={props.appearance} />
           <SubField
             appearance={allProps.appearance}
             onChange={this.handleChange}
