@@ -200,6 +200,7 @@ class DatePicker extends React.Component {
   }
   handleSubFieldBlur(evt) {
     const { name, value } = evt.target
+
     const { mm, dd, yyyy } = this.state
     const forceValidValueFor = {
       mm: forceValidMonth,
@@ -212,9 +213,12 @@ class DatePicker extends React.Component {
       yyyy,
       [name]: value
     }
-    // TODO: handle empty not showing NaN on blur
+    const alwaysReValidateDay = forceValidValueFor['dd'](
+      currentDateOverwrittenByEventValue
+    )
     this.setState(
       {
+        dd: alwaysReValidateDay,
         [name]: forceValidValueFor[name](currentDateOverwrittenByEventValue)
       },
       _ => {

@@ -15,6 +15,10 @@ describe('#getDaysInMonth', () => {
 })
 
 describe('#forceValidDay', () => {
+  test('blank', () => {
+    expect(subject.forceValidDay()).toBe('')
+  })
+
   test('below = 00 july 1964', () => {
     expect(subject.forceValidDay({ mm: '07', dd: '00', yyyy: '1964' })).toBe(1)
   })
@@ -29,6 +33,10 @@ describe('#forceValidDay', () => {
 })
 
 describe('#forceValidMonth', () => {
+  test('blank', () => {
+    expect(subject.forceValidMonth()).toBe('')
+  })
+
   test('below = 00', () => {
     expect(subject.forceValidMonth({ mm: '00' })).toBe(1)
   })
@@ -47,6 +55,10 @@ describe('#forceValidMonth', () => {
 })
 
 describe('#forceValidYear', () => {
+  test('blank', () => {
+    expect(subject.forceValidYear()).toBe('')
+  })
+
   test('incomplete = 0', () => {
     expect(subject.forceValidYear({ yyyy: '0' })).toBe(1900)
   })
