@@ -49,13 +49,7 @@ class Calendar extends React.Component {
   constructor(props) {
     super(props)
     const defaultDate = new Date()
-    // const {
-    //   mm = defaultDate.getMonth() + 1,
-    //   dd = defaultDate.getDate(),
-    //   yyyy = defaultDate.getFullYear()
-    // } = props
     const { mm, dd, yyyy } = props
-    console.log('cal constructor mm/dd/yyyy', mm, dd, yyyy)
     this.state = {
       displayed: {
         mm: mm || defaultDate.getMonth() + 1,
@@ -72,8 +66,8 @@ class Calendar extends React.Component {
     this.handleDayClick = this.handleDayClick.bind(this)
   }
   componentDidMount() {
-    // TODO: if selected, focus on THAT day
-    this.el.focus()
+    if (this.selectedDayEl) this.selectedDayEl.focus()
+    else this.calendarEl.focus()
   }
   handlePrevClick() {
     const { mm, yyyy } = this.state.displayed
@@ -102,13 +96,12 @@ class Calendar extends React.Component {
   render() {
     const { props, state } = this
     const { mm, yyyy } = state.displayed
-    console.log('selected', this.state.selected)
     return (
       <Theme name={Theme.names.light}>
         <div
           {...styles.calendar(props)}
           tabIndex="-1"
-          ref={el => (this.el = el)}
+          ref={el => (this.calendarEl = el)}
         >
           <div {...styles.switcher(props)}>
             <Button
@@ -138,20 +131,24 @@ class Calendar extends React.Component {
             {arrayOf(getFirstDayOfWeekForMonth({ mm, yyyy })).map((_, i) => (
               <div key={i} {...styles.skippedDay(props)} />
             ))}
-            {arrayOf(getDaysInMonth({ mm, yyyy })).map((_, i) => (
-              <button
-                key={i}
-                onClick={this.handleDayClick.bind(this, i + 1)}
-                {...styles.day({
-                  isSelected:
-                    yyyy === state.selected.yyyy &&
-                    mm === state.selected.mm &&
-                    i + 1 === state.selected.dd
-                })}
-              >
-                {i + 1}
-              </button>
-            ))}
+            {arrayOf(getDaysInMonth({ mm, yyyy })).map((_, i) => {
+              const isSelected =
+                yyyy === state.selected.yyyy &&
+                mm === state.selected.mm &&
+                i + 1 === state.selected.dd
+              return (
+                <button
+                  key={i}
+                  onClick={this.handleDayClick.bind(this, i + 1)}
+                  ref={isSelected ? el => (this.selectedDayEl = el) : null}
+                  {...styles.day({
+                    isSelected
+                  })}
+                >
+                  {i + 1}
+                </button>
+              )
+            })}
           </div>
         </div>
       </Theme>
