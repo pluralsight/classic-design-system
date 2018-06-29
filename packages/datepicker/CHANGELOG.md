@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@0.2.0...@pluralsight/ps-design-system-datepicker@0.3.0) (2018-06-29)
+
+
+### Bug Fixes
+
+* **datepicker:** disable stops input ([b4155a1](https://github.com/pluralsight/design-system/commit/b4155a1))
+* **datepicker:** ensure sub field dividers are dark in light theme ([c879327](https://github.com/pluralsight/design-system/commit/c879327))
+* **datepicker:** focus and error ring measurements ([f8dfa7b](https://github.com/pluralsight/design-system/commit/f8dfa7b))
+* **datepicker:** prevent icon click from submitting the form ([f2b6e8b](https://github.com/pluralsight/design-system/commit/f2b6e8b))
+* **datepicker:** update broken snapshot ([67f245b](https://github.com/pluralsight/design-system/commit/67f245b))
+
+
+### Features
+
+* **datepicker:** clearing subfields triggers onselect with empty value ([fae8541](https://github.com/pluralsight/design-system/commit/fae8541))
+
+
+
+
 <a name="0.2.0"></a>
 # 0.2.0 (2018-06-29)
 

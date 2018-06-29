@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.6.0"></a>
+# [10.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@10.5.1...@pluralsight/ps-design-system-site@10.6.0) (2018-06-29)
+
+
+### Bug Fixes
+
+* **datepicker:** disable stops input ([b4155a1](https://github.com/pluralsight/design-system/commit/b4155a1))
+
+
+### Features
+
+* **site:** add datepicker component page ([f1bb361](https://github.com/pluralsight/design-system/commit/f1bb361))
+* **site:** add datepicker to example form ([6362089](https://github.com/pluralsight/design-system/commit/6362089))
+
+
+
+
 <a name="10.5.1"></a>
 ## [10.5.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@10.5.0...@pluralsight/ps-design-system-site@10.5.1) (2018-06-26)
 
