@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.6.1"></a>
+## [10.6.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@10.6.0...@pluralsight/ps-design-system-site@10.6.1) (2018-07-02)
+
+
+### Bug Fixes
+
+* **site:** make form in-app example code match src ([d249c72](https://github.com/pluralsight/design-system/commit/d249c72))
+
+
+
+
 <a name="10.6.0"></a>
 # [10.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@10.5.1...@pluralsight/ps-design-system-site@10.6.0) (2018-06-29)
 
