@@ -409,7 +409,10 @@ class InAppExample extends React.Component {
       level: null,
       slides: false,
       slidestech: null,
-      desc: ''
+      demo: false,
+      assessment: false
+      desc: '',
+      publish: ''
     }
     this.handleSubmit = this.handleSubmit.bind(this)
     this.handleChange = this.handleChange.bind(this)
@@ -462,15 +465,23 @@ class InAppExample extends React.Component {
               </ActionMenu>
             }
           />
-          <Checkbox
+
+          <DatePicker
+            error={isError('publish')}
+            name="publish"
+            value={state.publish}
+            label="Publish date"
+            subLabel="When your course will go live"
+            onSelect={publish => this.setState({ publish })}
+          />
+          <Switch
             error={isError('slides')}
             checked={state.slides}
             name="slides"
-            label="Has slides?"
-            onCheck={(_, checked, __, name) =>
-              this.setState({ [name]: checked })
-            }
-          />
+            onClick={checked => this.setState({ slides: checked })}
+          >
+            Has slides?
+          </Switch>
           <Form.Divider />
           <Radio.Group
             error={isError('slidestech')}
@@ -483,6 +494,24 @@ class InAppExample extends React.Component {
             <Radio.Button value="pptx" label="Powerpoint" />
           </Radio.Group>
           <Form.Divider />
+          <Checkbox
+            error={isError('demo')}
+            checked={state.demo}
+            name="demo"
+            label="Demo included"
+            onCheck={(_, checked, __, name) =>
+              this.setState({ [name]: checked })
+            }
+          />
+          <Checkbox
+            error={isError('assessment')}
+            checked={state.assessment}
+            name="assessment"
+            label="Assessment included"
+            onCheck={(_, checked, __, name) =>
+              this.setState({ [name]: checked })
+            }
+          />
           <TextArea
             error={isError('desc')}
             label="Description"
