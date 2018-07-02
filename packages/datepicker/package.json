@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-datepicker",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Design system components for date picker",
   "main": "index.js",
   "module": "index.js",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.37",
-    "@pluralsight/ps-design-system-textinput": "^0.3.5",
+    "@pluralsight/ps-design-system-textinput": "^0.3.6",
     "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-storyshots": "3.2.4",
     "@storybook/react": "3.2.3",

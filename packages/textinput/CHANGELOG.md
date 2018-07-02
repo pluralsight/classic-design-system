@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.6"></a>
+## [0.3.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.3.5...@pluralsight/ps-design-system-textinput@0.3.6) (2018-07-02)
+
+
+### Bug Fixes
+
+* **textinput:** add missing icon dependency ([e535d87](https://github.com/pluralsight/design-system/commit/e535d87))
+
+
+
+
 <a name="0.3.5"></a>
 ## [0.3.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.3.4...@pluralsight/ps-design-system-textinput@0.3.5) (2018-07-02)
 

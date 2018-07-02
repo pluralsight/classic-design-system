@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.5"></a>
+## [0.3.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@0.3.4...@pluralsight/ps-design-system-textarea@0.3.5) (2018-07-02)
+
+
+### Bug Fixes
+
+* **textarea:** add missing icon dependency ([8f5dc78](https://github.com/pluralsight/design-system/commit/8f5dc78))
+
+
+
+
 <a name="0.3.4"></a>
 ## [0.3.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@0.3.3...@pluralsight/ps-design-system-textarea@0.3.4) (2018-06-26)
 

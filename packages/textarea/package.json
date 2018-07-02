@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-textarea",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Design system components for text area",
   "main": "index.js",
   "module": "index.js",
