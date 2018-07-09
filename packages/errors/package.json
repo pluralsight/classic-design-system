@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-errors",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Design system components for errors",
   "main": "index.js",
   "module": "index.js",
@@ -26,16 +26,16 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^10.8.8",
-    "@pluralsight/ps-design-system-core": "^4.3.1",
-    "@pluralsight/ps-design-system-icon": "^8.9.5",
-    "@pluralsight/ps-design-system-text": "^10.7.6",
+    "@pluralsight/ps-design-system-button": "^10.8.9",
+    "@pluralsight/ps-design-system-core": "^4.3.2",
+    "@pluralsight/ps-design-system-icon": "^8.9.6",
+    "@pluralsight/ps-design-system-text": "^10.7.7",
     "@pluralsight/ps-design-system-theme": "^1.3.1",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.8.1",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.37",
+    "@pluralsight/ps-design-system-build": "^1.8.2",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.38",
     "@storybook/addon-storyshots": "3.2.4",
     "@storybook/react": "3.2.3",
     "babel-cli": "^6.24.1",

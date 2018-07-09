@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.8.2"></a>
+## [1.8.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.8.1...@pluralsight/ps-design-system-build@1.8.2) (2018-07-09)
+
+
+### Bug Fixes
+
+* **build:** support empty strings in generated css ([627fa01](https://github.com/pluralsight/design-system/commit/627fa01))
+
+
+
+
 <a name="1.8.1"></a>
 ## [1.8.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.8.0...@pluralsight/ps-design-system-build@1.8.1) (2018-06-14)
 
