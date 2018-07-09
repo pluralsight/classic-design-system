@@ -18,31 +18,46 @@ import {
 } from '../src/ui'
 
 const work = {
-  now: [
+  now: [],
+  next: [
     {
-      title: 'Table',
+      title: 'Card (light theme)',
+      tags: ['Component']
+    },
+    {
+      title: 'Row (light theme)',
+      tags: ['Component']
+    },
+    {
+      title: 'Button (light theme)',
+      tags: ['Component']
+    },
+    {
+      title: 'Switch (form work)',
+      tags: ['Component']
+    },
+    {
+      title: 'Stats Table',
+      tags: ['Component']
+    },
+    {
+      title: 'Progress Bar',
+      tags: ['Component']
+    },
+    {
+      title: 'Star Rating',
+      tags: ['Component']
+    },
+    {
+      title: 'Paginator',
       tags: ['Component']
     }
   ],
-  next: [
-    {
-      title: 'Text Input',
-      tags: ['Component']
-    },
-    {
-      title: 'Banner',
-      tags: ['Component']
-    },
+  future: [
     {
       title: 'Blank State',
       tags: ['Pattern']
     },
-    {
-      title: 'Error Pages',
-      tags: ['Pattern']
-    }
-  ],
-  future: [
     {
       title: 'Reporting',
       tags: ['Pattern']
