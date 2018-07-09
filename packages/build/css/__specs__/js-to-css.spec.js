@@ -26,6 +26,12 @@ test('dashify', () => {
 }`)
 })
 
+test('empty string', () => {
+  expect(jsToCss({ '.wow:after': { content: ' ' } })).toEqual(`.wow:after {
+  content: ' ';
+}`)
+})
+
 test('single selector, multiple attribute', () => {
   expect(jsToCss({ '.wow': { camelCase: 'hump', donkey: 'kong' } }))
     .toEqual(`.wow {

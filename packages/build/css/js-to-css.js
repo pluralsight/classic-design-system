@@ -14,7 +14,9 @@ const rules = (tab, obj) =>
     )
     .join('\n')
 
-const rule = (tab, attr, obj) => `${tab}${dashify(attr)}: ${obj[attr]};`
+const val = x => (x === ' ' ? "' '" : x)
+
+const rule = (tab, attr, obj) => `${tab}${dashify(attr)}: ${val(obj[attr])};`
 
 const stylesheet = (obj = {}) =>
   Object.keys(obj)
