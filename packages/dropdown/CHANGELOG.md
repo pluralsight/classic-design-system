@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@0.3.6...@pluralsight/ps-design-system-dropdown@0.4.0) (2018-07-10)
+
+
+### Features
+
+* **dropdown:** generate stylesheet in build ([da2f8a7](https://github.com/pluralsight/design-system/commit/da2f8a7))
+
+
+
+
 <a name="0.3.6"></a>
 ## [0.3.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@0.3.5...@pluralsight/ps-design-system-dropdown@0.3.6) (2018-07-09)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.3.7...@pluralsight/ps-design-system-textinput@0.4.0) (2018-07-10)
+
+
+### Features
+
+* **textinput:** generate stylesheet in build ([cd0dd34](https://github.com/pluralsight/design-system/commit/cd0dd34))
+
+
+
+
 <a name="0.3.7"></a>
 ## [0.3.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.3.6...@pluralsight/ps-design-system-textinput@0.3.7) (2018-07-09)
 
