@@ -16,7 +16,7 @@
     "test:watch": "npm run test -- --watchAll",
     "test:updateSnapshot": "npm run test -- --updateSnapshot"
   },
-  "keywords": [],
+  "keywords": ["pluralsight", "design system"],
   "author": "jaketrent",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
