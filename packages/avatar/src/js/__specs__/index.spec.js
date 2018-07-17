@@ -1,5 +1,5 @@
 import { URL } from 'url'
-import * as utils from '../utils'
+import * as utils from '../index'
 import { defaultGravatarImage } from '../../vars'
 
 describe('avatar/utils', () => {

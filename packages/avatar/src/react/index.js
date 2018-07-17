@@ -4,7 +4,7 @@ import React from 'react'
 
 import css from '../css'
 import { sizes, widths } from '../vars'
-import { getColorByName, getInitials, transformSrc } from './utils'
+import { getColorByName, getInitials, transformSrc } from '../js'
 
 const styles = {
   avatar: ({ size }) =>
