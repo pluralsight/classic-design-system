@@ -66,6 +66,7 @@
     "react-markdown": "^2.5.0"
   },
   "dependencies": {
+    "core-js": "^2.5.7",
     "dotenv": "^5.0.1",
     "http-server": "^0.11.1",
     "isomorphic-fetch": "^2.2.1",

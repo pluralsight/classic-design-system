@@ -58,7 +58,14 @@ module.exports = {
     }
   },
   webpack(config) {
-    console.log('webpack localEnv', localEnv)
+    const originalEntry = config.entry
+    config.entry = async () => {
+      const entries = await originalEntry()
+      if (entries['main.js']) {
+        entries['main.js'].unshift('./src/polyfills.js')
+      }
+      return entries
+    }
     config.plugins = config.plugins
       .filter(
         plugin =>
