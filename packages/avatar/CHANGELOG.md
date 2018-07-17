@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.6.6...@pluralsight/ps-design-system-avatar@1.7.0) (2018-07-17)
+
+
+### Features
+
+* **avatar:** expose utils in js module ([b93911e](https://github.com/pluralsight/design-system/commit/b93911e))
+
+
+
+
 <a name="1.6.6"></a>
 ## [1.6.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.6.5...@pluralsight/ps-design-system-avatar@1.6.6) (2018-07-09)
 

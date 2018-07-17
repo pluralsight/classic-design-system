@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.6.8"></a>
+## [10.6.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@10.6.7...@pluralsight/ps-design-system-site@10.6.8) (2018-07-17)
+
+
+### Bug Fixes
+
+* **site:** polyfill object.assign for ie11 ([5cb6c1d](https://github.com/pluralsight/design-system/commit/5cb6c1d))
+
+
+
+
 <a name="10.6.7"></a>
 ## [10.6.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@10.6.6...@pluralsight/ps-design-system-site@10.6.7) (2018-07-17)
 
