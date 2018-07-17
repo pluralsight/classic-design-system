@@ -1,7 +1,7 @@
 {
   "name": "@pluralsight/ps-design-system-site",
   "private": true,
-  "version": "10.6.4",
+  "version": "10.6.5",
   "description": "Reference site",
   "main": "index.js",
   "engines": {
@@ -30,7 +30,7 @@
     "@pluralsight/ps-design-system-drawer": "^1.4.6",
     "@pluralsight/ps-design-system-dropdown": "^0.4.0",
     "@pluralsight/ps-design-system-errors": "^1.2.7",
-    "@pluralsight/ps-design-system-form": "^0.2.9",
+    "@pluralsight/ps-design-system-form": "^0.3.0",
     "@pluralsight/ps-design-system-icon": "^8.9.6",
     "@pluralsight/ps-design-system-layout": "^2.2.7",
     "@pluralsight/ps-design-system-link": "^5.7.6",

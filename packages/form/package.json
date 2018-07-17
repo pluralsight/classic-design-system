@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-form",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "description": "Design system components for form layout",
   "main": "index.js",
   "module": "index.js",
