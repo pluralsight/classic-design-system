@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.7.1"></a>
+## [1.7.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.7.0...@pluralsight/ps-design-system-avatar@1.7.1) (2018-07-17)
+
+
+### Bug Fixes
+
+* **avatar:** make js module individually importable ([df9702b](https://github.com/pluralsight/design-system/commit/df9702b))
+
+
+
+
 <a name="1.7.0"></a>
 # [1.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.6.6...@pluralsight/ps-design-system-avatar@1.7.0) (2018-07-17)
 
