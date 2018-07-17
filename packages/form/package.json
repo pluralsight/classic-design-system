@@ -5,8 +5,10 @@
   "main": "index.js",
   "module": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist --ignore spec.js --copy-files",
-    "build:watch": "npm run build -- --watch",
+    "build": "run-s build:js build:css",
+    "build:css": "build-css",
+    "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -32,6 +34,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-actionmenu": "^3.1.4",
+    "@pluralsight/ps-design-system-build": "^1.8.2",
     "@pluralsight/ps-design-system-button": "^10.8.9",
     "@pluralsight/ps-design-system-checkbox": "^0.3.0",
     "@pluralsight/ps-design-system-dropdown": "^0.4.0",
@@ -47,6 +50,7 @@
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "jest": "^20.0.4"
+    "jest": "^20.0.4",
+    "npm-run-all": "^4.1.2"
   }
 }
