@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-form",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Design system components for form layout",
   "main": "index.js",
   "module": "index.js",
@@ -16,7 +16,10 @@
     "test:watch": "npm run test -- --watchAll",
     "test:updateSnapshot": "npm run test -- --updateSnapshot"
   },
-  "keywords": ["pluralsight", "design system"],
+  "keywords": [
+    "pluralsight",
+    "design system"
+  ],
   "author": "jaketrent",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
