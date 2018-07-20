@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-tag",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "Design System component for tag ui",
   "main": "index.js",
   "module": "index.js",

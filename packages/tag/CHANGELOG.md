@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.6.3"></a>
+## [1.6.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@1.6.2...@pluralsight/ps-design-system-tag@1.6.3) (2018-07-20)
+
+
+### Bug Fixes
+
+* **tag:** use correct proptype function for error prop ([5b16aec](https://github.com/pluralsight/design-system/commit/5b16aec))
+
+
+
+
 <a name="1.6.2"></a>
 ## [1.6.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@1.6.1...@pluralsight/ps-design-system-tag@1.6.2) (2018-07-09)
 
