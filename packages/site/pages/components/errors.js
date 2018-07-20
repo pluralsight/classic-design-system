@@ -27,8 +27,8 @@ export default withServerProps(_ => (
       <PageHeading packageName="errors">Errors</PageHeading>
 
       <Intro>
-        Error page components are mean to be full-page, layout components. These
-        pages are standardized throughout the product experience.
+        Error page components are meant to be full-page, layout components.
+        These pages are standardized throughout the product experience.
       </Intro>
 
       <P>Install the component dependency:</P>
