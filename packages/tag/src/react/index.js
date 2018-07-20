@@ -109,7 +109,7 @@ Tag.sizes = vars.sizes
 Tag.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
   children: PropTypes.node.isRequired,
-  error: PropTypes.boolean,
+  error: PropTypes.bool,
   href: PropTypes.string,
   icon: PropTypes.element,
   isPressed: PropTypes.bool,
