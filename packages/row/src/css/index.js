@@ -91,7 +91,6 @@ export default {
     lineHeight: 0,
     height: '64px',
     transition: `opacity ${core.motion.speedNormal}`,
-    pointerEvents: 'none',
     opacity: 0
   },
   '.psds-row__action-bar--fullOverlay': {
@@ -103,7 +102,6 @@ export default {
 
   // __action-bar__button
   '.psds-row__action-bar__button': {
-    pointerEvents: 'all',
     fontSize: core.type.fontSizeXSmall,
     marginLeft: vars.style.actionBarActionMarginLeft,
     padding: 0,

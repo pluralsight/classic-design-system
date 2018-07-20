@@ -1,3 +1,4 @@
+import { action } from '@storybook/addon-actions'
 import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
 import Drawer from '@pluralsight/ps-design-system-drawer/react'
@@ -371,7 +372,11 @@ Object.keys(Row.sizes).forEach(size =>
             <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
           }
           actionBar={[
-            <Row.Action icon={<Icon id={Icon.ids.more} />} key="more" />
+            <Row.Action
+              icon={<Icon id={Icon.ids.more} />}
+              key="more"
+              onClick={action('clicked action')}
+            />
           ]}
           actionBarVisible
           size={size}
