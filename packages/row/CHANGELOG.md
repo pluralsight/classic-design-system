@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.6.8"></a>
+## [2.6.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.6.7...@pluralsight/ps-design-system-row@2.6.8) (2018-07-26)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-row
+
 <a name="2.6.7"></a>
 ## [2.6.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.6.6...@pluralsight/ps-design-system-row@2.6.7) (2018-07-20)
 
