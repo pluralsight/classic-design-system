@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.4"></a>
+## [1.5.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.5.3...@pluralsight/ps-design-system-switch@1.5.4) (2018-07-27)
+
+
+### Bug Fixes
+
+* **switch:** reference missing themeDefaultName ([0acc2b0](https://github.com/pluralsight/design-system/commit/0acc2b0))
+
+
+
+
 <a name="1.5.3"></a>
 ## [1.5.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.5.2...@pluralsight/ps-design-system-switch@1.5.3) (2018-07-26)
 

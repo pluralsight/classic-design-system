@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-switch",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "Design System component for switch ui",
   "main": "index.js",
   "module": "index.js",
