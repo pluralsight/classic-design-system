@@ -2,7 +2,10 @@ import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
+import {
+  names as themeNames,
+  defaultName as themeDefaultName
+} from '@pluralsight/ps-design-system-theme/react'
 import { transparentize } from 'polished'
 
 import css from '../css'
