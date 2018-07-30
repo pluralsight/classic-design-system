@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-avatar",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "Design System component for avatar ui",
   "main": "index.js",
   "module": "index.js",
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.2",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.39",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.40",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",
     "@storybook/react": "3.2.14",

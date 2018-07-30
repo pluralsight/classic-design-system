@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="10.8.11"></a>
+## [10.8.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.8.10...@pluralsight/ps-design-system-button@10.8.11) (2018-07-30)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-button
+
 <a name="10.8.10"></a>
 ## [10.8.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.8.9...@pluralsight/ps-design-system-button@10.8.10) (2018-07-26)
 

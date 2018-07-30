@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.11.0"></a>
+# [8.11.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.10.0...@pluralsight/ps-design-system-icon@8.11.0) (2018-07-30)
+
+
+### Features
+
+* **icon:** add copy icon ([6422127](https://github.com/pluralsight/design-system/commit/6422127))
+
+
+
+
 <a name="8.10.0"></a>
 # [8.10.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.9.6...@pluralsight/ps-design-system-icon@8.10.0) (2018-07-26)
 

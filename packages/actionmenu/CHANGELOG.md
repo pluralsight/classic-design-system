@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.6"></a>
+## [3.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@3.1.5...@pluralsight/ps-design-system-actionmenu@3.1.6) (2018-07-30)
+
+
+### Bug Fixes
+
+* **actionmenu:** remove errant console.log ([9206fd6](https://github.com/pluralsight/design-system/commit/9206fd6))
+
+
+
+
 <a name="3.1.5"></a>
 ## [3.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@3.1.4...@pluralsight/ps-design-system-actionmenu@3.1.5) (2018-07-26)
 
