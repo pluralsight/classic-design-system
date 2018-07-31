@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.10"></a>
+## [1.2.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@1.2.9...@pluralsight/ps-design-system-errors@1.2.10) (2018-07-31)
+
+
+### Bug Fixes
+
+* **errors:** update to aria role=img ([6241447](https://github.com/pluralsight/design-system/commit/6241447))
+
+
+
+
 <a name="1.2.9"></a>
 ## [1.2.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@1.2.8...@pluralsight/ps-design-system-errors@1.2.9) (2018-07-30)
 

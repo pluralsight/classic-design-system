@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-breadcrumb",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "Design System component for breadcrumb ui",
   "main": "index.js",
   "module": "index.js",
@@ -25,14 +25,14 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^10.8.11",
+    "@pluralsight/ps-design-system-button": "^10.8.12",
     "@pluralsight/ps-design-system-core": "^4.3.2",
-    "@pluralsight/ps-design-system-icon": "^8.11.0",
+    "@pluralsight/ps-design-system-icon": "^8.11.1",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.2",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.40",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.41",
     "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",

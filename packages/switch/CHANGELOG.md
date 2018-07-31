@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.6"></a>
+## [1.5.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.5.5...@pluralsight/ps-design-system-switch@1.5.6) (2018-07-31)
+
+
+### Bug Fixes
+
+* **switch:** make keyboard activatable ([8d9739f](https://github.com/pluralsight/design-system/commit/8d9739f)), closes [#232](https://github.com/pluralsight/design-system/issues/232)
+
+
+
+
 <a name="1.5.5"></a>
 ## [1.5.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.5.4...@pluralsight/ps-design-system-switch@1.5.5) (2018-07-30)
 

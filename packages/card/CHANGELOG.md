@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.4.9"></a>
+## [8.4.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.4.8...@pluralsight/ps-design-system-card@8.4.9) (2018-07-31)
+
+
+### Bug Fixes
+
+* **card:** constrain tag to single line, full width, ellipsised ([10aebf4](https://github.com/pluralsight/design-system/commit/10aebf4)), closes [#236](https://github.com/pluralsight/design-system/issues/236)
+
+
+
+
 <a name="8.4.8"></a>
 ## [8.4.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.4.7...@pluralsight/ps-design-system-card@8.4.8) (2018-07-30)
 

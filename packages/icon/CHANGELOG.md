@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.11.1"></a>
+## [8.11.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.11.0...@pluralsight/ps-design-system-icon@8.11.1) (2018-07-31)
+
+
+### Bug Fixes
+
+* **icon:** adjust role=image to its proper role=img ([6a35f4e](https://github.com/pluralsight/design-system/commit/6a35f4e))
+
+
+
+
 <a name="8.11.0"></a>
 # [8.11.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.10.0...@pluralsight/ps-design-system-icon@8.11.0) (2018-07-30)
 

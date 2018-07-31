@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@1.6.5...@pluralsight/ps-design-system-tag@1.7.0) (2018-07-31)
+
+
+### Features
+
+* **tag:** support onKeyPress and other "on*" events ([fc77aa1](https://github.com/pluralsight/design-system/commit/fc77aa1))
+
+
+
+
 <a name="1.6.5"></a>
 ## [1.6.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@1.6.4...@pluralsight/ps-design-system-tag@1.6.5) (2018-07-30)
 

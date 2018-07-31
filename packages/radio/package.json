@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-radio",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Design system components for radio buttons",
   "main": "index.js",
   "module": "index.js",
@@ -34,8 +34,8 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.2",
-    "@pluralsight/ps-design-system-icon": "^8.11.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.40",
+    "@pluralsight/ps-design-system-icon": "^8.11.1",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.41",
     "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-storyshots": "3.2.4",
     "@storybook/react": "3.2.3",

@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-icon",
-  "version": "8.11.0",
+  "version": "8.11.1",
   "description": "Design System component for icon ui",
   "main": "index.js",
   "module": "index.js",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.2",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.40",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.41",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",
     "@storybook/react": "3.2.14",
