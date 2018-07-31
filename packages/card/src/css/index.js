@@ -193,7 +193,7 @@ export default {
     fontWeight: core.type.fontWeightBold,
     lineHeight: '16px',
     boxShadow: `0 1px 4px 0 ${transparentize(0.5, core.colors.black)}`,
-    maxWidth: '100%'
+    maxWidth: '75%'
   },
 
   // __tag__icon
