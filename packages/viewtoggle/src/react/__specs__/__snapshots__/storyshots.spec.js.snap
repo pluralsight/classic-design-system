@@ -18,8 +18,10 @@ exports[`Storyshots active default first 1`] = `
 >
   <div
     className="css-1ifazk6"
+    role="radiogroup"
   >
     <div
+      aria-hidden={true}
       className="css-ztmayk"
       style={Object {}}
     >
@@ -33,6 +35,7 @@ exports[`Storyshots active default first 1`] = `
       aria-selected={true}
       className="css-1p9dg7s"
       onClick={[Function]}
+      role="radio"
     >
       I'm active
     </button>
@@ -40,6 +43,7 @@ exports[`Storyshots active default first 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Option 2
     </button>
@@ -47,6 +51,7 @@ exports[`Storyshots active default first 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Option 3
     </button>
@@ -72,8 +77,10 @@ exports[`Storyshots active explicit first 1`] = `
 >
   <div
     className="css-1ifazk6"
+    role="radiogroup"
   >
     <div
+      aria-hidden={true}
       className="css-ztmayk"
       style={Object {}}
     >
@@ -87,6 +94,7 @@ exports[`Storyshots active explicit first 1`] = `
       aria-selected={true}
       className="css-1p9dg7s"
       onClick={[Function]}
+      role="radio"
     >
       I'm active
     </button>
@@ -94,6 +102,7 @@ exports[`Storyshots active explicit first 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Option 2
     </button>
@@ -101,6 +110,7 @@ exports[`Storyshots active explicit first 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Option 3
     </button>
@@ -126,8 +136,10 @@ exports[`Storyshots active explicit second 1`] = `
 >
   <div
     className="css-1ifazk6"
+    role="radiogroup"
   >
     <div
+      aria-hidden={true}
       className="css-ztmayk"
       style={Object {}}
     >
@@ -141,6 +153,7 @@ exports[`Storyshots active explicit second 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Option 1
     </button>
@@ -148,6 +161,7 @@ exports[`Storyshots active explicit second 1`] = `
       aria-selected={true}
       className="css-1p9dg7s"
       onClick={[Function]}
+      role="radio"
     >
       I'm active
     </button>
@@ -155,6 +169,7 @@ exports[`Storyshots active explicit second 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Option 3
     </button>
@@ -180,8 +195,10 @@ exports[`Storyshots active explicit third 1`] = `
 >
   <div
     className="css-1ifazk6"
+    role="radiogroup"
   >
     <div
+      aria-hidden={true}
       className="css-ztmayk"
       style={Object {}}
     >
@@ -195,6 +212,7 @@ exports[`Storyshots active explicit third 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Option 1
     </button>
@@ -202,6 +220,7 @@ exports[`Storyshots active explicit third 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Option 2
     </button>
@@ -209,8 +228,68 @@ exports[`Storyshots active explicit third 1`] = `
       aria-selected={true}
       className="css-1p9dg7s"
       onClick={[Function]}
+      role="radio"
     >
       I'm active
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots dynamic options sizes correctly 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-1ifazk6"
+    role="radiogroup"
+  >
+    <div
+      aria-hidden={true}
+      className="css-ztmayk"
+      style={Object {}}
+    >
+      <span
+        data-css-1jyyyen=""
+      >
+        Orange
+      </span>
+    </div>
+    <button
+      aria-selected={false}
+      className="css-1eee2k7"
+      onClick={[Function]}
+      role="radio"
+    >
+      Apple
+    </button>
+    <button
+      aria-selected={false}
+      className="css-1eee2k7"
+      onClick={[Function]}
+      role="radio"
+    >
+      Banana
+    </button>
+    <button
+      aria-selected={true}
+      className="css-1p9dg7s"
+      onClick={[Function]}
+      role="radio"
+    >
+      Orange
     </button>
   </div>
 </div>
@@ -234,8 +313,10 @@ exports[`Storyshots onSelect handles click 1`] = `
 >
   <div
     className="css-1ifazk6"
+    role="radiogroup"
   >
     <div
+      aria-hidden={true}
       className="css-ztmayk"
       style={Object {}}
     >
@@ -249,6 +330,7 @@ exports[`Storyshots onSelect handles click 1`] = `
       aria-selected={true}
       className="css-1p9dg7s"
       onClick={[Function]}
+      role="radio"
     >
       Option 1
     </button>
@@ -256,6 +338,7 @@ exports[`Storyshots onSelect handles click 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Option 2
     </button>
@@ -263,6 +346,7 @@ exports[`Storyshots onSelect handles click 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Option 3
     </button>
@@ -288,8 +372,10 @@ exports[`Storyshots options count more than max 1`] = `
 >
   <div
     className="css-1ifazk6"
+    role="radiogroup"
   >
     <div
+      aria-hidden={true}
       className="css-ztmayk"
       style={Object {}}
     >
@@ -303,6 +389,7 @@ exports[`Storyshots options count more than max 1`] = `
       aria-selected={true}
       className="css-1p9dg7s"
       onClick={[Function]}
+      role="radio"
     >
       Option 1
     </button>
@@ -310,6 +397,7 @@ exports[`Storyshots options count more than max 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Option 2
     </button>
@@ -317,6 +405,7 @@ exports[`Storyshots options count more than max 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Option 3
     </button>
@@ -342,8 +431,10 @@ exports[`Storyshots options count one 1`] = `
 >
   <div
     className="css-1ifazk6"
+    role="radiogroup"
   >
     <div
+      aria-hidden={true}
       className="css-ztmayk"
       style={Object {}}
     >
@@ -357,6 +448,7 @@ exports[`Storyshots options count one 1`] = `
       aria-selected={true}
       className="css-1p9dg7s"
       onClick={[Function]}
+      role="radio"
     >
       The Only Option
     </button>
@@ -382,8 +474,10 @@ exports[`Storyshots options count three 1`] = `
 >
   <div
     className="css-1ifazk6"
+    role="radiogroup"
   >
     <div
+      aria-hidden={true}
       className="css-ztmayk"
       style={Object {}}
     >
@@ -397,6 +491,7 @@ exports[`Storyshots options count three 1`] = `
       aria-selected={true}
       className="css-1p9dg7s"
       onClick={[Function]}
+      role="radio"
     >
       Option 1
     </button>
@@ -404,6 +499,7 @@ exports[`Storyshots options count three 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Option 2
     </button>
@@ -411,6 +507,7 @@ exports[`Storyshots options count three 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Option 3
     </button>
@@ -436,8 +533,10 @@ exports[`Storyshots options count two 1`] = `
 >
   <div
     className="css-1ifazk6"
+    role="radiogroup"
   >
     <div
+      aria-hidden={true}
       className="css-ztmayk"
       style={Object {}}
     >
@@ -451,6 +550,7 @@ exports[`Storyshots options count two 1`] = `
       aria-selected={true}
       className="css-1p9dg7s"
       onClick={[Function]}
+      role="radio"
     >
       Option 1
     </button>
@@ -458,6 +558,7 @@ exports[`Storyshots options count two 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Option 2
     </button>
@@ -483,8 +584,10 @@ exports[`Storyshots text length all long 1`] = `
 >
   <div
     className="css-1ifazk6"
+    role="radiogroup"
   >
     <div
+      aria-hidden={true}
       className="css-ztmayk"
       style={Object {}}
     >
@@ -498,6 +601,7 @@ exports[`Storyshots text length all long 1`] = `
       aria-selected={true}
       className="css-1p9dg7s"
       onClick={[Function]}
+      role="radio"
     >
       This one is really long because everyone likes those
     </button>
@@ -505,6 +609,7 @@ exports[`Storyshots text length all long 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       This one is really long because everyone likes those
     </button>
@@ -512,6 +617,7 @@ exports[`Storyshots text length all long 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       This one is really long because everyone likes those
     </button>
@@ -537,8 +643,10 @@ exports[`Storyshots text length differing lengths 1`] = `
 >
   <div
     className="css-1ifazk6"
+    role="radiogroup"
   >
     <div
+      aria-hidden={true}
       className="css-ztmayk"
       style={Object {}}
     >
@@ -552,6 +660,7 @@ exports[`Storyshots text length differing lengths 1`] = `
       aria-selected={true}
       className="css-1p9dg7s"
       onClick={[Function]}
+      role="radio"
     >
       This one is really long because everyone likes those
     </button>
@@ -559,6 +668,7 @@ exports[`Storyshots text length differing lengths 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       This is medium
     </button>
@@ -566,6 +676,7 @@ exports[`Storyshots text length differing lengths 1`] = `
       aria-selected={false}
       className="css-1eee2k7"
       onClick={[Function]}
+      role="radio"
     >
       Short
     </button>

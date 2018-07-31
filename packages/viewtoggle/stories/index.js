@@ -103,3 +103,21 @@ storiesOf('text length', module)
       </ViewToggle.Option>
     </ViewToggle>
   ))
+
+storiesOf('dynamic options', module)
+  .addDecorator(themeDecorator(addons))
+  .add('sizes correctly', _ => {
+    const options = ['Apple', 'Banana', 'Orange']
+    return (
+      <ViewToggle>
+        {options.map(option => {
+          const active = option === 'Orange'
+          return (
+            <ViewToggle.Option key={option} active={active}>
+              {option}
+            </ViewToggle.Option>
+          )
+        })}
+      </ViewToggle>
+    )
+  })
