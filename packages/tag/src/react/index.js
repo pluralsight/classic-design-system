@@ -1,5 +1,6 @@
 import * as glamor from 'glamor'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
+import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 import PropTypes from 'prop-types'
 import React from 'react'
 import {
@@ -9,6 +10,18 @@ import {
 
 import css from '../css'
 import * as vars from '../vars'
+
+const tagHtmlPropsWhitelist = [
+  'href',
+  'className',
+  'style',
+  'title',
+  'tabIndex',
+  'target',
+  /^on/,
+  /^aria-/,
+  /^data-/
+]
 
 const styleFocusRingGap = ({ themeName }) => ({
   ...css[
@@ -90,12 +103,11 @@ const Tag = (props, context) => {
   return React.createElement(
     tagName,
     {
-      href: allProps.href,
+      ...styles.tag(allProps),
+      ...propsUtil.whitelistProps(allProps, tagHtmlPropsWhitelist),
       ...(allProps.target ? { target: allProps.target } : null),
       ...(allProps.isPressed ? { 'aria-pressed': true } : null),
-      ...(allProps.onClick ? { role: 'button', tabIndex: 0 } : null),
-      onClick: allProps.onClick,
-      ...styles.tag(allProps)
+      ...(allProps.onClick ? { role: 'button', tabIndex: 0 } : null)
     },
     <span {...styles.label(allProps)}>{props.children}</span>,
     renderIcon(props)

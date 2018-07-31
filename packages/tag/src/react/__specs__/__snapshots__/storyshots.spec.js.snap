@@ -18,7 +18,6 @@ exports[`Storyshots actions button 1`] = `
 >
   <div
     data-css-1x8hi92=""
-    href={undefined}
     onClick={[Function]}
     role="button"
     tabIndex={0}
@@ -50,7 +49,6 @@ exports[`Storyshots actions button w/ icon button 1`] = `
 >
   <div
     data-css-64l86f=""
-    href={undefined}
     onClick={[Function]}
     role="button"
     tabIndex={0}
@@ -97,8 +95,6 @@ exports[`Storyshots actions just icon button 1`] = `
 >
   <div
     data-css-1fxgkih=""
-    href={undefined}
-    onClick={undefined}
   >
     <span
       data-css-13bnfv4=""
@@ -143,7 +139,6 @@ exports[`Storyshots actions link 1`] = `
   <a
     data-css-1x8hi92=""
     href="https://duckduckgo.com/"
-    onClick={undefined}
   >
     <span
       data-css-1997kh1=""
@@ -173,7 +168,6 @@ exports[`Storyshots actions link with target 1`] = `
   <a
     data-css-1x8hi92=""
     href="https://duckduckgo.com/"
-    onClick={undefined}
     target="_blank"
   >
     <span
@@ -203,8 +197,6 @@ exports[`Storyshots appearance accent 1`] = `
 >
   <div
     data-css-47hvh8=""
-    href={undefined}
-    onClick={undefined}
   >
     <span
       data-css-1997kh1=""
@@ -233,8 +225,6 @@ exports[`Storyshots appearance basic 1`] = `
 >
   <div
     data-css-1n5vxb9=""
-    href={undefined}
-    onClick={undefined}
   >
     <span
       data-css-1997kh1=""
@@ -263,8 +253,6 @@ exports[`Storyshots appearance bright 1`] = `
 >
   <div
     data-css-itkkn2=""
-    href={undefined}
-    onClick={undefined}
   >
     <span
       data-css-1997kh1=""
@@ -293,8 +281,6 @@ exports[`Storyshots error default 1`] = `
 >
   <div
     data-css-gs5gu0=""
-    href={undefined}
-    onClick={undefined}
   >
     <span
       data-css-1997kh1=""
@@ -323,7 +309,6 @@ exports[`Storyshots error focusable 1`] = `
 >
   <div
     data-css-1j6s7i0=""
-    href={undefined}
     onClick={[Function]}
     role="button"
     tabIndex={0}
@@ -355,8 +340,6 @@ exports[`Storyshots icon accent medium 1`] = `
 >
   <div
     data-css-cakr6m=""
-    href={undefined}
-    onClick={undefined}
   >
     <span
       data-css-13bnfv4=""
@@ -400,8 +383,6 @@ exports[`Storyshots icon accent small 1`] = `
 >
   <div
     data-css-1swczt7=""
-    href={undefined}
-    onClick={undefined}
   >
     <span
       data-css-13bnfv4=""
@@ -445,8 +426,6 @@ exports[`Storyshots icon basic medium 1`] = `
 >
   <div
     data-css-1fxgkih=""
-    href={undefined}
-    onClick={undefined}
   >
     <span
       data-css-13bnfv4=""
@@ -490,8 +469,6 @@ exports[`Storyshots icon basic small 1`] = `
 >
   <div
     data-css-1g26r3r=""
-    href={undefined}
-    onClick={undefined}
   >
     <span
       data-css-13bnfv4=""
@@ -535,8 +512,6 @@ exports[`Storyshots icon bright medium 1`] = `
 >
   <div
     data-css-1uxvgmp=""
-    href={undefined}
-    onClick={undefined}
   >
     <span
       data-css-13bnfv4=""
@@ -580,8 +555,6 @@ exports[`Storyshots icon bright small 1`] = `
 >
   <div
     data-css-psmlat=""
-    href={undefined}
-    onClick={undefined}
   >
     <span
       data-css-13bnfv4=""
@@ -626,7 +599,6 @@ exports[`Storyshots isPressed button 1`] = `
   <div
     aria-pressed={true}
     data-css-1idd5sa=""
-    href={undefined}
     onClick={[Function]}
     role="button"
     tabIndex={0}
@@ -659,7 +631,6 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
   <div
     aria-pressed={true}
     data-css-33sfcu=""
-    href={undefined}
     onClick={[Function]}
     role="button"
     tabIndex={0}
@@ -708,7 +679,6 @@ exports[`Storyshots isPressed link 1`] = `
     aria-pressed={true}
     data-css-1idd5sa=""
     href="https://duckduckgo.com/"
-    onClick={undefined}
   >
     <span
       data-css-1997kh1=""
@@ -737,8 +707,6 @@ exports[`Storyshots long string 1`] = `
 >
   <div
     data-css-1n5vxb9=""
-    href={undefined}
-    onClick={undefined}
   >
     <span
       data-css-1997kh1=""
@@ -767,8 +735,6 @@ exports[`Storyshots long with icon 1`] = `
 >
   <div
     data-css-1fxgkih=""
-    href={undefined}
-    onClick={undefined}
   >
     <span
       data-css-13bnfv4=""
@@ -812,8 +778,6 @@ exports[`Storyshots size medium 1`] = `
 >
   <div
     data-css-1n5vxb9=""
-    href={undefined}
-    onClick={undefined}
   >
     <span
       data-css-1997kh1=""
@@ -842,8 +806,6 @@ exports[`Storyshots size small 1`] = `
 >
   <div
     data-css-uqnvqs=""
-    href={undefined}
-    onClick={undefined}
   >
     <span
       data-css-1997kh1=""
