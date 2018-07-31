@@ -129,6 +129,8 @@ const TagDiv = glamorous.div(css['.psds-card__tag'])
 
 const TagIcon = glamorous.div(css['.psds-card__tag__icon'])
 
+const TagText = glamorous.span(css['.psds-card__tag__text'])
+
 const Tag = props => (
   <TagDiv>
     {props.icon && (
@@ -136,7 +138,7 @@ const Tag = props => (
         {React.cloneElement(props.icon, { size: iconSizes.small })}
       </TagIcon>
     )}
-    <span>{props.children}</span>
+    <TagText>{props.children}</TagText>
   </TagDiv>
 )
 Tag.displayName = 'Card.Tag'

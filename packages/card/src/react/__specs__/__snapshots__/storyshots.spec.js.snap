@@ -903,7 +903,7 @@ exports[`Storyshots combo everything 1`] = `
           </button>
         </div>
         <div
-          className="css-49cvf9"
+          className="css-l6z19x"
         >
           <div
             className="css-1pif58i"
@@ -923,7 +923,9 @@ exports[`Storyshots combo everything 1`] = `
               </svg>
             </div>
           </div>
-          <span>
+          <span
+            className="css-tz46pd"
+          >
             Path
           </span>
         </div>
@@ -3746,6 +3748,328 @@ exports[`Storyshots size small 1`] = `
 </div>
 `;
 
+exports[`Storyshots tag long multi-word 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
+  >
+    <div
+      className="css-1ybvkp1"
+      style={undefined}
+    >
+      <div
+        className="css-1pb0z5d"
+      >
+        <div
+          className="css-1wgk747"
+        />
+        <div
+          className="css-l6z19x"
+        >
+          <div
+            className="css-1pif58i"
+          >
+            <div
+              className="css-12f5sv2"
+            >
+              <svg
+                aria-label="channel icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 13.855V23h-2v-9.145c-1.4457-.4302-2.5-1.7695-2.5-3.355C8.5 8.567 10.067 7 12 7s3.5 1.567 3.5 3.5c0 1.5855-1.0543 2.9248-2.5 3.355zM5.0412 1.3437L6.2514 2.936C3.9716 4.6715 2.5 7.414 2.5 10.5s1.4716 5.8286 3.7514 7.564l-1.2102 1.5924C2.2814 17.5557.5 14.236.5 10.5c0-3.736 1.7814-7.0557 4.5412-9.1564zm13.9176 0C21.7186 3.4443 23.5 6.764 23.5 10.5c0 3.736-1.7814 7.0557-4.5412 9.1564l-1.2102-1.5925C20.0284 16.3284 21.5 13.586 21.5 10.5s-1.4716-5.8286-3.7514-7.564l1.2102-1.5924zM7.4616 4.5287l1.2104 1.592C7.352 7.1255 6.5 8.7133 6.5 10.5c0 1.7867.852 3.3745 2.172 4.379l-1.2104 1.5925C5.6618 15.1015 4.5 12.9365 4.5 10.5c0-2.4365 1.1618-4.6016 2.9616-5.9715zm9.0768 0C18.3382 5.8982 19.5 8.0634 19.5 10.5s-1.1618 4.6016-2.9616 5.9715L15.328 14.879c1.32-1.0045 2.172-2.5923 2.172-4.379 0-1.7867-.852-3.3745-2.172-4.379l1.2104-1.5925zM12 12c.8284 0 1.5-.6716 1.5-1.5S12.8284 9 12 9s-1.5.6716-1.5 1.5.6716 1.5 1.5 1.5z"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            className="css-tz46pd"
+          >
+            Channel Channel Channel Channel Channel Channel Channel Channel Channel
+          </span>
+        </div>
+      </div>
+      <div
+        className="css-piydn8"
+      >
+        <div
+          className="css-1tlmf72"
+        >
+          <div
+            className=""
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "maxHeight": "0px",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "width": "100%",
+                  }
+                }
+              >
+                
+                …
+              </span>
+              <span
+                aria-hidden="true"
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                aria-hidden="true"
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots tag long single word 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
+  >
+    <div
+      className="css-1ybvkp1"
+      style={undefined}
+    >
+      <div
+        className="css-1pb0z5d"
+      >
+        <div
+          className="css-1wgk747"
+        />
+        <div
+          className="css-l6z19x"
+        >
+          <div
+            className="css-1pif58i"
+          >
+            <div
+              className="css-12f5sv2"
+            >
+              <svg
+                aria-label="channel icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 13.855V23h-2v-9.145c-1.4457-.4302-2.5-1.7695-2.5-3.355C8.5 8.567 10.067 7 12 7s3.5 1.567 3.5 3.5c0 1.5855-1.0543 2.9248-2.5 3.355zM5.0412 1.3437L6.2514 2.936C3.9716 4.6715 2.5 7.414 2.5 10.5s1.4716 5.8286 3.7514 7.564l-1.2102 1.5924C2.2814 17.5557.5 14.236.5 10.5c0-3.736 1.7814-7.0557 4.5412-9.1564zm13.9176 0C21.7186 3.4443 23.5 6.764 23.5 10.5c0 3.736-1.7814 7.0557-4.5412 9.1564l-1.2102-1.5925C20.0284 16.3284 21.5 13.586 21.5 10.5s-1.4716-5.8286-3.7514-7.564l1.2102-1.5924zM7.4616 4.5287l1.2104 1.592C7.352 7.1255 6.5 8.7133 6.5 10.5c0 1.7867.852 3.3745 2.172 4.379l-1.2104 1.5925C5.6618 15.1015 4.5 12.9365 4.5 10.5c0-2.4365 1.1618-4.6016 2.9616-5.9715zm9.0768 0C18.3382 5.8982 19.5 8.0634 19.5 10.5s-1.1618 4.6016-2.9616 5.9715L15.328 14.879c1.32-1.0045 2.172-2.5923 2.172-4.379 0-1.7867-.852-3.3745-2.172-4.379l1.2104-1.5925zM12 12c.8284 0 1.5-.6716 1.5-1.5S12.8284 9 12 9s-1.5.6716-1.5 1.5.6716 1.5 1.5 1.5z"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            className="css-tz46pd"
+          >
+            ChannelChannelChannelChannelChannelChannelChannelChannelChannelChannelChannel
+          </span>
+        </div>
+      </div>
+      <div
+        className="css-piydn8"
+      >
+        <div
+          className="css-1tlmf72"
+        >
+          <div
+            className=""
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "maxHeight": "0px",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "width": "100%",
+                  }
+                }
+              >
+                
+                …
+              </span>
+              <span
+                aria-hidden="true"
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                Card Title
+              </span>
+              <span
+                aria-hidden="true"
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  
+                  …
+                </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots tag text only 1`] = `
 <div
   style={
@@ -3780,9 +4104,11 @@ exports[`Storyshots tag text only 1`] = `
           className="css-1wgk747"
         />
         <div
-          className="css-49cvf9"
+          className="css-l6z19x"
         >
-          <span>
+          <span
+            className="css-tz46pd"
+          >
             Channel
           </span>
         </div>
@@ -3921,7 +4247,7 @@ exports[`Storyshots tag with icon 1`] = `
           className="css-1wgk747"
         />
         <div
-          className="css-49cvf9"
+          className="css-l6z19x"
         >
           <div
             className="css-1pif58i"
@@ -3941,7 +4267,9 @@ exports[`Storyshots tag with icon 1`] = `
               </svg>
             </div>
           </div>
-          <span>
+          <span
+            className="css-tz46pd"
+          >
             Channel
           </span>
         </div>

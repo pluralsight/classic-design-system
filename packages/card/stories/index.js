@@ -303,3 +303,22 @@ const tagStory = storiesOf('tag', module)
       tag={<Card.Tag icon={<Icon id={Icon.ids.channel} />}>Channel</Card.Tag>}
     />
   ))
+  .add('long single word', _ => (
+    <CardWithDefaults
+      tag={
+        <Card.Tag icon={<Icon id={Icon.ids.channel} />}>
+          ChannelChannelChannelChannelChannelChannelChannelChannelChannelChannelChannel
+        </Card.Tag>
+      }
+    />
+  ))
+  .add('long multi-word', _ => (
+    <CardWithDefaults
+      tag={
+        <Card.Tag icon={<Icon id={Icon.ids.channel} />}>
+          Channel Channel Channel Channel Channel Channel Channel Channel
+          Channel
+        </Card.Tag>
+      }
+    />
+  ))

@@ -192,7 +192,8 @@ export default {
     fontSize: core.type.fontSizeXSmall,
     fontWeight: core.type.fontWeightBold,
     lineHeight: '16px',
-    boxShadow: `0 1px 4px 0 ${transparentize(0.5, core.colors.black)}`
+    boxShadow: `0 1px 4px 0 ${transparentize(0.5, core.colors.black)}`,
+    maxWidth: '100%'
   },
 
   // __tag__icon
@@ -200,6 +201,12 @@ export default {
     display: 'flex',
     alignItems: 'center',
     marginRight: core.layout.spacingXSmall
+  },
+  // __tag__text
+  '.psds-card__tag__text': {
+    textOverflow: 'ellipsis',
+    overflow: 'hidden',
+    whiteSpace: 'nowrap'
   },
 
   // __progress
