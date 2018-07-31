@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-card",
-  "version": "8.4.9",
+  "version": "8.4.10",
   "description": "Design System component for card ui",
   "main": "index.js",
   "module": "index.js",
