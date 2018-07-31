@@ -12,13 +12,16 @@ export default {
     display: 'inline-flex',
     alignItems: 'center',
     cursor: 'pointer',
-    opacity: '1'
+    opacity: '1',
+    background: 'none',
+    border: 'none'
   },
   '.psds-switch:focus': {
     outline: 'none'
   },
   '.psds-switch--disabled': {
-    opacity: '0.4'
+    opacity: '0.4',
+    cursor: 'default'
   },
   [`.psds-switch--labelAlign-${vars.labelAligns.right}`]: {
     flexDirection: 'row'

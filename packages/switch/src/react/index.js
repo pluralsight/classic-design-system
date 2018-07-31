@@ -113,7 +113,7 @@ class Switch extends React.Component {
     }
 
     return (
-      <div
+      <button
         {...switchProps}
         tabIndex={allProps.tabIndex || '0'}
         role="checkbox"
@@ -134,7 +134,7 @@ class Switch extends React.Component {
         {allProps.children && (
           <label {...styles.label(allProps)}>{allProps.children}</label>
         )}
-      </div>
+      </button>
     )
   }
 }

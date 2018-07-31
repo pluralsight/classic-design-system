@@ -16,9 +16,9 @@ exports[`Storyshots checked false 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={false}
-    data-css-17kl0mj=""
+    data-css-1taroi5=""
     onBlur={[Function]}
     onFocus={[Function]}
     role="checkbox"
@@ -43,7 +43,7 @@ exports[`Storyshots checked false 1`] = `
     >
       Click me
     </label>
-  </div>
+  </button>
 </div>
 `;
 
@@ -63,9 +63,9 @@ exports[`Storyshots checked true 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={true}
-    data-css-17kl0mj=""
+    data-css-1taroi5=""
     onBlur={[Function]}
     onFocus={[Function]}
     role="checkbox"
@@ -90,7 +90,7 @@ exports[`Storyshots checked true 1`] = `
     >
       Click me
     </label>
-  </div>
+  </button>
 </div>
 `;
 
@@ -110,9 +110,9 @@ exports[`Storyshots click large toggles 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={false}
-    data-css-17kl0mj=""
+    data-css-1taroi5=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -133,7 +133,7 @@ exports[`Storyshots click large toggles 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-  </div>
+  </button>
 </div>
 `;
 
@@ -153,9 +153,9 @@ exports[`Storyshots click small toggles 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={false}
-    data-css-17kl0mj=""
+    data-css-1taroi5=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -176,7 +176,7 @@ exports[`Storyshots click small toggles 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-  </div>
+  </button>
 </div>
 `;
 
@@ -196,9 +196,9 @@ exports[`Storyshots color green 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={true}
-    data-css-17kl0mj=""
+    data-css-1taroi5=""
     onBlur={[Function]}
     onFocus={[Function]}
     role="checkbox"
@@ -223,7 +223,7 @@ exports[`Storyshots color green 1`] = `
     >
       Click me
     </label>
-  </div>
+  </button>
 </div>
 `;
 
@@ -243,9 +243,9 @@ exports[`Storyshots color orange 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={true}
-    data-css-17kl0mj=""
+    data-css-1taroi5=""
     onBlur={[Function]}
     onFocus={[Function]}
     role="checkbox"
@@ -270,7 +270,7 @@ exports[`Storyshots color orange 1`] = `
     >
       Click me
     </label>
-  </div>
+  </button>
 </div>
 `;
 
@@ -290,9 +290,9 @@ exports[`Storyshots disabled false 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={false}
-    data-css-17kl0mj=""
+    data-css-1taroi5=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -313,7 +313,7 @@ exports[`Storyshots disabled false 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-  </div>
+  </button>
 </div>
 `;
 
@@ -333,9 +333,9 @@ exports[`Storyshots disabled true 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={false}
-    data-css-177u0c3=""
+    data-css-1y4htxv=""
     onBlur={[Function]}
     onFocus={[Function]}
     role="checkbox"
@@ -355,7 +355,7 @@ exports[`Storyshots disabled true 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-  </div>
+  </button>
 </div>
 `;
 
@@ -375,9 +375,9 @@ exports[`Storyshots error false 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={false}
-    data-css-17kl0mj=""
+    data-css-1taroi5=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -398,7 +398,7 @@ exports[`Storyshots error false 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-  </div>
+  </button>
 </div>
 `;
 
@@ -418,9 +418,9 @@ exports[`Storyshots error true 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={false}
-    data-css-17kl0mj=""
+    data-css-1taroi5=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -446,7 +446,7 @@ exports[`Storyshots error true 1`] = `
     >
       Clickable in error state
     </label>
-  </div>
+  </button>
 </div>
 `;
 
@@ -466,9 +466,9 @@ exports[`Storyshots error true w/ disabled 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={false}
-    data-css-177u0c3=""
+    data-css-1y4htxv=""
     onBlur={[Function]}
     onFocus={[Function]}
     role="checkbox"
@@ -493,7 +493,7 @@ exports[`Storyshots error true w/ disabled 1`] = `
     >
       Such errors
     </label>
-  </div>
+  </button>
 </div>
 `;
 
@@ -513,9 +513,9 @@ exports[`Storyshots label large left 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={false}
-    data-css-b49avy=""
+    data-css-fw5b5c=""
     onBlur={[Function]}
     onFocus={[Function]}
     role="checkbox"
@@ -540,7 +540,7 @@ exports[`Storyshots label large left 1`] = `
     >
       Click me
     </label>
-  </div>
+  </button>
 </div>
 `;
 
@@ -560,9 +560,9 @@ exports[`Storyshots label large right 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={false}
-    data-css-17kl0mj=""
+    data-css-1taroi5=""
     onBlur={[Function]}
     onFocus={[Function]}
     role="checkbox"
@@ -587,7 +587,7 @@ exports[`Storyshots label large right 1`] = `
     >
       Click me
     </label>
-  </div>
+  </button>
 </div>
 `;
 
@@ -607,9 +607,9 @@ exports[`Storyshots label small left 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={false}
-    data-css-b49avy=""
+    data-css-fw5b5c=""
     onBlur={[Function]}
     onFocus={[Function]}
     role="checkbox"
@@ -634,7 +634,7 @@ exports[`Storyshots label small left 1`] = `
     >
       Click me
     </label>
-  </div>
+  </button>
 </div>
 `;
 
@@ -654,9 +654,9 @@ exports[`Storyshots label small right 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={false}
-    data-css-17kl0mj=""
+    data-css-1taroi5=""
     onBlur={[Function]}
     onFocus={[Function]}
     role="checkbox"
@@ -681,7 +681,7 @@ exports[`Storyshots label small right 1`] = `
     >
       Click me
     </label>
-  </div>
+  </button>
 </div>
 `;
 
@@ -701,9 +701,9 @@ exports[`Storyshots size large 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={false}
-    data-css-17kl0mj=""
+    data-css-1taroi5=""
     onBlur={[Function]}
     onFocus={[Function]}
     role="checkbox"
@@ -728,7 +728,7 @@ exports[`Storyshots size large 1`] = `
     >
       Click me
     </label>
-  </div>
+  </button>
 </div>
 `;
 
@@ -748,9 +748,9 @@ exports[`Storyshots size small 1`] = `
     }
   }
 >
-  <div
+  <button
     aria-checked={false}
-    data-css-17kl0mj=""
+    data-css-1taroi5=""
     onBlur={[Function]}
     onFocus={[Function]}
     role="checkbox"
@@ -775,6 +775,6 @@ exports[`Storyshots size small 1`] = `
     >
       Click me
     </label>
-  </div>
+  </button>
 </div>
 `;
