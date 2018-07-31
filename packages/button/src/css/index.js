@@ -143,7 +143,8 @@ export default {
   // --disabled
   [`.psds-button--disabled`]: {
     color: core.colors.gray02,
-    background: core.colors.gray03
+    background: core.colors.gray03,
+    cursor: 'default'
   },
   [`.psds-button--disabled:hover`]: {
     color: core.colors.gray02,
