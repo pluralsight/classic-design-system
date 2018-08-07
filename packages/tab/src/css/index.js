@@ -2,7 +2,7 @@ import core from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
-} from '@pluralsight/ps-design-system-theme/react'
+} from '@pluralsight/ps-design-system-theme/vars'
 
 const listItemTextLightHover = {
   color: core.colors.gray06
