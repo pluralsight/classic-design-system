@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="7.6.11"></a>
+## [7.6.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.6.10...@pluralsight/ps-design-system-tab@7.6.11) (2018-08-07)
+
+
+### Bug Fixes
+
+* **tab:** reference vars from vars instead of react module ([a709434](https://github.com/pluralsight/design-system/commit/a709434))
+
+
+
+
 <a name="7.6.10"></a>
 ## [7.6.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.6.9...@pluralsight/ps-design-system-tab@7.6.10) (2018-08-07)
 
