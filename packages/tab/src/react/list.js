@@ -16,7 +16,7 @@ const List = glamorous.div(css['.psds-tab__list'], ({ themeName }) => ({
 }))
 
 const findActiveIndex = els =>
-  React.Children.toArray(els).findIndex(el => el.props.active)
+  React.Children.toArray(els).findIndex(el => el && el.props.active)
 
 class ListComponent extends React.Component {
   constructor(props) {
@@ -62,13 +62,17 @@ class ListComponent extends React.Component {
     }
     return (
       <List {...listProps}>
-        {React.Children.map(this.props.children, (el, i) =>
-          React.cloneElement(el, {
-            active: this.state.activeIndex === i,
-            key: el.id,
-            onClick: evt => this.handleListItemClick(i, el.props.onClick, evt),
-            innerRef: itemEl => (this.itemEls[i] = itemEl)
-          })
+        {React.Children.map(
+          this.props.children,
+          (el, i) =>
+            el &&
+            React.cloneElement(el, {
+              active: this.state.activeIndex === i,
+              key: el.id,
+              onClick: evt =>
+                this.handleListItemClick(i, el.props.onClick, evt),
+              innerRef: itemEl => (this.itemEls[i] = itemEl)
+            })
         )}
       </List>
     )

@@ -124,6 +124,31 @@ exports[`Storyshots default default 1`] = `
 </div>
 `;
 
+exports[`Storyshots default no items 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-zhyi0r"
+    onKeyDown={[Function]}
+    role="tablist"
+    tabIndex="0"
+  />
+</div>
+`;
+
 exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
 <div
   style={

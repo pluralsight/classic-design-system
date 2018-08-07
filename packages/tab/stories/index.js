@@ -51,6 +51,15 @@ class InAppExample extends React.Component {
 const defaultStory = storiesOf('default', module)
   .addDecorator(themeDecorator(addons))
   .add('default', _ => <InAppExample />)
+  .add('no items', _ => (
+    <Tab.List>
+      {false && (
+        <Tab.ListItem id={1} key={1}>
+          Foo
+        </Tab.ListItem>
+      )}
+    </Tab.List>
+  ))
 
 const overrideStory = storiesOf('style overrides', module)
   .addDecorator(themeDecorator(addons))
