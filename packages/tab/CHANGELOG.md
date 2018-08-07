@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="7.6.10"></a>
+## [7.6.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.6.9...@pluralsight/ps-design-system-tab@7.6.10) (2018-08-07)
+
+
+### Bug Fixes
+
+* **tab:** support conditionally-rendered or no-list item tabs ([8d51a10](https://github.com/pluralsight/design-system/commit/8d51a10))
+
+
+
+
 <a name="7.6.9"></a>
 ## [7.6.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.6.8...@pluralsight/ps-design-system-tab@7.6.9) (2018-07-31)
 
