@@ -11,7 +11,7 @@ function getPackageAbbreviations() {
     .map(pkg => pkg.name)
     .map(name => (name.charAt(0) === '@' ? name.split('/')[1] : name))
     .map(name => (/-/.test(name) ? name.split('-').pop() : name))
-    .concat(['examples', 'storybook-addon-theme'])
+    .concat(['storybook-addon-theme'])
 }
 
 module.exports = {
