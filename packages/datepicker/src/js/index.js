@@ -59,7 +59,6 @@ export const getMonthName = mm =>
 
 export const parseDate = value => {
   const [mm, dd, yyyy] = (value || '').split('/')
-  console.log('parseDate', mm, dd, yyyy)
   return mm && dd && yyyy
     ? {
         dd: forceValidDay({ dd, mm, yyyy }),
