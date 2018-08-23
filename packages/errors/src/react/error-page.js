@@ -1,4 +1,3 @@
-import Button from '@pluralsight/ps-design-system-button/react'
 import * as glamor from 'glamor'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
@@ -6,6 +5,7 @@ import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
+import Button from './button'
 import css from '../css'
 import icons from './icons'
 
@@ -56,6 +56,7 @@ const SearchForm = props => (
   </form>
 )
 
+// TODO: pickup: import styles only, get glamor/server to pick everything up
 const ErrorPage = (props, context) => {
   const allProps = {
     ...props,

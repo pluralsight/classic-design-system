@@ -62,18 +62,12 @@ exports[`Storyshots pages 403 1`] = `
         403
       </h2>
     </div>
-    <a
-      data-css-gl46pt=""
-      disabled={false}
+    <button
+      data-css-2e0xf4=""
       href="https://help.pluralsight.com/help/contact-us"
-      style={Object {}}
     >
-      <span
-        data-css-1en8fmq=""
-      >
-        Contact support
-      </span>
-    </a>
+      Contact support
+    </button>
   </div>
 </div>
 `;
@@ -233,18 +227,12 @@ exports[`Storyshots pages 500 1`] = `
         500
       </h2>
     </div>
-    <a
-      data-css-gl46pt=""
-      disabled={false}
+    <button
+      data-css-2e0xf4=""
       href="https://help.pluralsight.com/help/contact-us"
-      style={Object {}}
     >
-      <span
-        data-css-1en8fmq=""
-      >
-        Contact support
-      </span>
-    </a>
+      Contact support
+    </button>
   </div>
 </div>
 `;
