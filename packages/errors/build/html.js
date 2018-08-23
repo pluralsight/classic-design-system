@@ -1,17 +1,15 @@
 const core = require('@pluralsight/ps-design-system-core')
 const { fs } = require('@pluralsight/ps-design-system-build')
 const path = require('path')
-const { renderStaticOptimized } = require('glamor/server')
+const { renderStatic } = require('glamor/server')
 const { renderToStaticMarkup } = require('react-dom/server')
 const React = require('react')
 
 const pages = require('../dist/react')
-const Verboten = require('../dist/react/forbidden-error-page')
 
 const renderHtml = async page => {
-  // TODO: PICKUP: problem is that css doesn't include sub components (deps) like Button and Text
-  const { html, css, ids } = renderStaticOptimized(_ =>
-    renderToStaticMarkup(React.createElement(Verboten))
+  const { html, css, ids } = renderStatic(_ =>
+    renderToStaticMarkup(React.createElement(page))
   )
 
   const normalize = await fs.readFile(
