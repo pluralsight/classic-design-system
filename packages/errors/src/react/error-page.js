@@ -56,7 +56,6 @@ const SearchForm = props => (
   </form>
 )
 
-// TODO: pickup: import styles only, get glamor/server to pick everything up
 const ErrorPage = (props, context) => {
   const allProps = {
     ...props,
