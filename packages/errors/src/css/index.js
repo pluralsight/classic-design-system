@@ -43,7 +43,10 @@ export default {
   },
   '.psds-error-page__search__icon': {
     position: 'absolute',
-    left: core.layout.spacingXSmall
+    left: core.layout.spacingXSmall,
+    width: iconVars.widths.medium,
+    height: iconVars.widths.medium,
+    fill: core.colors.gray02
   },
   '.psds-error-page__search__input': {
     position: 'relative',

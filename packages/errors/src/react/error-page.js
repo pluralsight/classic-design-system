@@ -1,5 +1,4 @@
 import * as glamor from 'glamor'
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 import * as textVars from '@pluralsight/ps-design-system-text/vars'
@@ -47,7 +46,7 @@ const styles = {
 
 const SearchForm = props => (
   <form action={props.action} method="get" {...styles.search(props)}>
-    <Icon id={Icon.ids.search} {...styles.searchIcon(props)} />
+    <div {...styles.searchIcon(props)}>{icons.search(React)}</div>
     <input
       {...styles.searchInput(props)}
       type="text"
