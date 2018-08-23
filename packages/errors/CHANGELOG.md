@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@1.2.10...@pluralsight/ps-design-system-errors@1.3.0) (2018-08-23)
+
+
+### Features
+
+* **errors:** WIP html gen ([87e0e15](https://github.com/pluralsight/design-system/commit/87e0e15))
+
+
+
+
 <a name="1.2.10"></a>
 ## [1.2.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@1.2.9...@pluralsight/ps-design-system-errors@1.2.10) (2018-07-31)
 

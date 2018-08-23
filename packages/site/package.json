@@ -1,7 +1,7 @@
 {
   "name": "@pluralsight/ps-design-system-site",
   "private": true,
-  "version": "10.6.18",
+  "version": "10.6.19",
   "description": "Reference site",
   "main": "index.js",
   "engines": {
@@ -25,11 +25,11 @@
     "@pluralsight/ps-design-system-checkbox": "^0.3.3",
     "@pluralsight/ps-design-system-circularprogress": "^1.5.9",
     "@pluralsight/ps-design-system-core": "^4.3.2",
-    "@pluralsight/ps-design-system-datepicker": "^0.4.3",
+    "@pluralsight/ps-design-system-datepicker": "^0.4.4",
     "@pluralsight/ps-design-system-dialog": "^2.2.10",
     "@pluralsight/ps-design-system-drawer": "^1.4.10",
     "@pluralsight/ps-design-system-dropdown": "^0.4.3",
-    "@pluralsight/ps-design-system-errors": "^1.2.10",
+    "@pluralsight/ps-design-system-errors": "^1.3.0",
     "@pluralsight/ps-design-system-form": "^0.3.5",
     "@pluralsight/ps-design-system-icon": "^8.11.1",
     "@pluralsight/ps-design-system-layout": "^2.2.10",
