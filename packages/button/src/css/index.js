@@ -267,7 +267,8 @@ export default {
   },
   // __text
   [`.psds-button__text`]: {
+    alignItems: 'center',
     display: 'inline-flex',
-    alignItems: 'center'
+    pointerEvents: 'none'
   }
 }
