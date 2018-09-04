@@ -82,10 +82,11 @@ const styles = {
       css[`.psds-text-input__icon--appearance-${appearance}`],
       css[`.psds-text-input__icon.psds-theme--${themeName}`]
     ),
-  input: ({ disabled }) =>
+  input: ({ disabled, css: propsCss }) =>
     glamor.css(
       css['.psds-text-input'],
-      disabled && css['.psds-text-input--disabled']
+      disabled && css['.psds-text-input--disabled'],
+      propsCss
     ),
   label: ({ themeName }) =>
     glamor.css(

@@ -120,3 +120,17 @@ const layoutsStory = storiesOf('layouts', module)
       <div style={{ border: '3px solid green', height: '50px' }} />
     </div>
   ))
+
+const styleStory = storiesOf('style override', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
+  .add('css', _ => (
+    <div>
+      <div>
+        <TextInput css={{ '& input': { minWidth: 0, width: '51px' } }} />
+      </div>
+      <div>
+        <TextInput error css={{ '& input': { minWidth: 0, width: '51px' } }} />
+      </div>
+    </div>
+  ))
