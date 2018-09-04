@@ -21,6 +21,7 @@ import {
   Code,
   Content,
   Example,
+  Guideline,
   Heading,
   Intro,
   P,
@@ -786,6 +787,176 @@ export default withServerProps(_ => (
           <TagExample />
         </Comp>
       </FormFocusable>
+
+      <SectionHeading>Guidelines</SectionHeading>
+      <P>
+        Write labels in sentence case. Capital case is not optimal for
+        scanability..
+      </P>
+      <Guideline
+        do={
+          <Form.VerticalLayout>
+            <TextInput label="Course title" value="Flowtype Fundamentals" />
+          </Form.VerticalLayout>
+        }
+        dont={
+          <Form.VerticalLayout>
+            <TextInput label="COURSE TITLE" value="Flowtype Fundamentals" />
+          </Form.VerticalLayout>
+        }
+      />
+
+      <P>
+        Don't rely on the placeholder. Use the label to specify the purpose of
+        each field to avoid usability issues.
+      </P>
+      <Guideline
+        do={
+          <Form.VerticalLayout>
+            <TextInput
+              label="Course title"
+              placeholder="What is the name of the course?"
+            />
+          </Form.VerticalLayout>
+        }
+        dont={
+          <Form.VerticalLayout>
+            <TextInput placeholder="Course title" />
+          </Form.VerticalLayout>
+        }
+      />
+
+      <P>
+        Use field length as affordance. If a field has a defined character
+        count, use it to determine the field length.
+      </P>
+      <Guideline
+        do={
+          <TextInput
+            label="Zip"
+            value="92101"
+            css={{ '& input': { minWidth: 0, width: '81px' } }}
+          />
+        }
+        dont={<TextInput label="Zip" value="92101" />}
+      />
+
+      <P>
+        Specify errors inline. Show where the error occurs and a clear reason
+        for the error so users can find it in context.
+      </P>
+      <Guideline
+        do={
+          <Form.VerticalLayout>
+            <TextInput
+              label="Email"
+              error
+              value="jake@example.com"
+              subLabel="Not a valid email address"
+            />
+            <TextInput label="Password" type="Password" />
+          </Form.VerticalLayout>
+        }
+        dont={
+          <Form.VerticalLayout>
+            <Banner color={Banner.colors.red}>
+              Email address is not valid
+            </Banner>
+            <TextInput label="Email" value="jake@example.com" />
+            <TextInput label="Password" type="Password" />
+          </Form.VerticalLayout>
+        }
+      />
+
+      <P>
+        Rather than implying a required field with a marker (*), consider noting
+        optional fields instead.
+      </P>
+      <Guideline
+        do={
+          <Form.VerticalLayout>
+            <TextInput label="Course title" value="My course" />
+            <TextInput
+              label="Author"
+              placeholder="What is the author's name?"
+            />
+            <TextInput
+              label="Tags"
+              placeholder="Add tags"
+              subLabel="(Optional)"
+            />
+          </Form.VerticalLayout>
+        }
+        dont={
+          <Form.VerticalLayout>
+            <TextInput label="Course title *" value="My course" />
+            <TextInput
+              label="Author *"
+              placeholder="What is the author's name?"
+            />
+            <TextInput label="Tags" placeholder="Add tags" />
+          </Form.VerticalLayout>
+        }
+      />
+
+      <P>
+        Use <Text.Code>Form.Divider</Text.Code> to group similar fields together
+        into logical groups for users to parse the form more effectively.
+      </P>
+      <Guideline
+        do={
+          <Form.VerticalLayout>
+            <TextInput label="Name" value="Jake Trent" />
+            <TextInput label="Role" placeholder="What do you do?" />
+            <Form.Divider />
+            <TextInput label="Address" />
+            <TextInput label="City" />
+            <Dropdown
+              label="State"
+              value="AL"
+              menu={
+                <ActionMenu>
+                  <ActionMenu.Item>AL</ActionMenu.Item>
+                </ActionMenu>
+              }
+            />
+            <Form.Divider />
+            <Dropdown
+              label="Contact preference"
+              menu={
+                <ActionMenu>
+                  <ActionMenu.Item isActive>Email</ActionMenu.Item>
+                </ActionMenu>
+              }
+            />
+          </Form.VerticalLayout>
+        }
+        dont={
+          <Form.VerticalLayout>
+            <TextInput label="Name" value="Jake Trent" />
+            <TextInput label="Role" placeholder="What do you do?" />
+            <TextInput label="Address" />
+            <TextInput label="City" />
+            <Dropdown
+              label="State"
+              value="AL"
+              menu={
+                <ActionMenu>
+                  <ActionMenu.Item>AL</ActionMenu.Item>
+                </ActionMenu>
+              }
+            />
+            <Dropdown
+              label="Contact preference"
+              menu={
+                <ActionMenu>
+                  <ActionMenu.Item isActive>Email</ActionMenu.Item>
+                </ActionMenu>
+              }
+            />
+          </Form.VerticalLayout>
+        }
+      />
     </Content>
   </Chrome>
 ))
