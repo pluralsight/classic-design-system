@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-util",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Runtime dependencies for utilitarian tasks.  Analogous to a lodash.",
   "main": "index.js",
   "scripts": {
