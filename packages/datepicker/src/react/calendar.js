@@ -72,19 +72,22 @@ class Calendar extends React.Component {
     if (this.selectedDayEl) this.selectedDayEl.focus()
     else this.calendarEl.focus()
   }
-  handlePrevClick() {
+  handlePrevClick(evt) {
+    evt.preventDefault()
     const { mm, yyyy } = this.state.displayed
     this.setState({
       displayed: getPrevMonthYear({ mm, yyyy })
     })
   }
-  handleNextClick() {
+  handleNextClick(evt) {
+    evt.preventDefault()
     const { mm, yyyy } = this.state.displayed
     this.setState({
       displayed: getNextMonthYear({ mm, yyyy })
     })
   }
-  handleDayClick(dd) {
+  handleDayClick(dd, evt) {
+    evt.preventDefault()
     const { mm, yyyy } = this.state.displayed
     this.setState(
       {
