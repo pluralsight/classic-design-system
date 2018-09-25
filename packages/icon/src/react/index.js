@@ -15,7 +15,8 @@ const IconContainer = glamorous.div(
     '> svg': color
       ? css[`.psds-icon--color-${color} > svg`]
       : css['.psds-icon > svg']
-  })
+  }),
+  ({ css: propsCss }) => propsCss
 )
 
 const rmNonHtmlProps = props => {

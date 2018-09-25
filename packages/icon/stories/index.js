@@ -26,3 +26,13 @@ Object.keys(Icon.ids).forEach(id =>
     <Icon color={Icon.colors.white} size={Icon.sizes.large} id={id} />
   ))
 )
+
+const styleStory = storiesOf('style', module)
+  .addDecorator(themeDecorator(addons))
+  .add('css prop', _ => (
+    <Icon
+      css={{ '> svg': { fill: 'yellow' } }}
+      id={Icon.ids.check}
+      size={Icon.sizes.large}
+    />
+  ))
