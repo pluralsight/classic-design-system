@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.5"></a>
+## [0.3.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@0.3.4...@pluralsight/ps-design-system-checkbox@0.3.5) (2018-09-25)
+
+
+### Bug Fixes
+
+* **checkbox:** don't pass onCheck to input html ([811775a](https://github.com/pluralsight/design-system/commit/811775a)), closes [#264](https://github.com/pluralsight/design-system/issues/264)
+
+
+
+
 <a name="0.3.3"></a>
 ## [0.3.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@0.3.2...@pluralsight/ps-design-system-checkbox@0.3.3) (2018-07-31)
 
