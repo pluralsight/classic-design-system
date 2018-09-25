@@ -1176,7 +1176,7 @@ exports[`Storyshots id ccFill 1`] = `
   >
     <svg
       aria-label="close captioned icon"
-      role="image"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1308,6 +1308,8 @@ exports[`Storyshots id checkCircleFill 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="Checkmark icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1379,6 +1381,39 @@ exports[`Storyshots id code 1`] = `
     >
       <path
         d="M12 22.0003c-5.514 0-10-4.486-10-10s4.486-10 10-10 10 4.486 10 10-4.486 10-10 10zm0-18c-4.4114 0-8 3.5893-8 8 0 4.4105 3.5886 7.999 8 7.999 4.4107 0 8-3.5885 8-7.999 0-4.4107-3.5893-8-8-8zm.83 5.2068l1.4142-1.414L18.4512 12l-4.207 4.207-1.4142-1.414L15.623 12 12.83 9.207zm-1.6587 0L8.3783 12l2.793 2.793-1.4142 1.414L5.55 12l4.207-4.207 1.4143 1.414z"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots id copy 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-6f8y6t"
+  >
+    <svg
+      aria-label="Copy icon"
+      role="img"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M18 17V5H8V3.933C8 3.418 8.316 3 8.706 3h10.588c.39 0 .706.418.706.933v12.134c0 .515-.316.933-.706.933H18zM4.75 7h10.5c.414 0 .75.482.75 1.077v11.846c0 .595-.336 1.077-.75 1.077H4.75c-.414 0-.75-.482-.75-1.077V8.077C4 7.482 4.336 7 4.75 7zM6 9v10h8V9H6z"
       />
     </svg>
   </div>
@@ -1472,7 +1507,7 @@ exports[`Storyshots id envelope 1`] = `
   >
     <svg
       aria-label="envelope icon"
-      role="image"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1504,6 +1539,8 @@ exports[`Storyshots id file 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="File icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -1668,7 +1705,7 @@ exports[`Storyshots id interactive 1`] = `
   >
     <svg
       aria-label="interactive icon"
-      role="image"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -2162,6 +2199,8 @@ exports[`Storyshots id plusCircle 1`] = `
     className="css-6f8y6t"
   >
     <svg
+      aria-label="Plus icon"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -2194,7 +2233,7 @@ exports[`Storyshots id project 1`] = `
   >
     <svg
       aria-label="project icon"
-      role="image"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -2423,7 +2462,7 @@ exports[`Storyshots id sortAsc 1`] = `
   >
     <svg
       aria-label="sort ascending icon"
-      role="image"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -2456,7 +2495,7 @@ exports[`Storyshots id sortDesc 1`] = `
   >
     <svg
       aria-label="sort descending icon"
-      role="image"
+      role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
