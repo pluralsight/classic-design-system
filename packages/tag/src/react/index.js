@@ -1,12 +1,9 @@
 import * as glamor from 'glamor'
-import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
+import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/vars'
 import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 import PropTypes from 'prop-types'
 import React from 'react'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/react'
+import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
 import * as vars from '../vars'
@@ -85,6 +82,9 @@ const styles = {
 const renderIcon = props =>
   props.icon
     ? React.cloneElement(props.icon, {
+        css: {
+          cursor: props.icon.props.onClick ? 'pointer' : 'default'
+        },
         onClick: evt => {
           evt.stopPropagation()
           if (props.icon.props.onClick) props.icon.props.onClick(evt)
