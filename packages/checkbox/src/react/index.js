@@ -15,7 +15,7 @@ const checkboxHtmlPropsWhitelist = [
   'tabIndex',
   'value',
   'defaultValue',
-  /^on/,
+  /^on((?!Check).)*$/,
   /^aria-/,
   /^data-/,
   /^form/
