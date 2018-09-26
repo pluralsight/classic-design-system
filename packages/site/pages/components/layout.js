@@ -23,7 +23,7 @@ import {
 } from '../../src/ui'
 
 const BlueBox = props => (
-  <div className="bluebox">
+  <div className="bluebox" {...props}>
     {props.children}
     <style jsx>{`
       .bluebox {

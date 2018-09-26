@@ -24,13 +24,22 @@ const rmNonHtmlProps = props => {
   return rest
 }
 
-const EqualColumnLayout = props => (
-  <div {...styleLayout(props)} {...rmNonHtmlProps(props)}>
-    {React.Children.map(props.children, child => (
-      <div {...styleColumn(props)}>{child}</div>
-    ))}
-  </div>
-)
+const EqualColumnLayout = props => {
+  const useCustomMarkup = React.Children.count(props.children) === 1
+  const parentProps = {
+    ...styleLayout(props),
+    ...rmNonHtmlProps(props)
+  }
+  const children = React.Children.map(
+    useCustomMarkup ? props.children.props.children : props.children,
+    child => React.cloneElement(child, styleColumn(props))
+  )
+  return useCustomMarkup ? (
+    React.cloneElement(props.children, parentProps, children)
+  ) : (
+    <div {...parentProps}>{children}</div>
+  )
+}
 
 EqualColumnLayout.displayName = 'EqualColumnLayout'
 

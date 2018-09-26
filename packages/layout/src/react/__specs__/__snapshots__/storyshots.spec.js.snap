@@ -271,6 +271,72 @@ exports[`Storyshots AsideLayout wide, fixed aside content 1`] = `
 </div>
 `;
 
+exports[`Storyshots EqualColumnLayout custom markup 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <ul
+      data-css-oo8nrq=""
+      style={
+        Object {
+          "listStyle": "none",
+        }
+      }
+    >
+      <li
+        data-css-18p75qs=""
+      >
+        First child
+      </li>
+      <li
+        data-css-18p75qs=""
+      >
+        Second child
+      </li>
+      <li
+        data-css-18p75qs=""
+      >
+        Third child
+      </li>
+      <li
+        data-css-18p75qs=""
+      >
+        Fourth child
+      </li>
+      <li
+        data-css-18p75qs=""
+      >
+        Fifth child
+      </li>
+      <li
+        data-css-18p75qs=""
+      >
+        Sixth child
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
 exports[`Storyshots EqualColumnLayout four 1`] = `
 <div
   style={
@@ -299,93 +365,63 @@ exports[`Storyshots EqualColumnLayout four 1`] = `
     >
       <div
         data-css-18p75qs=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          First child
-        </div>
+        }
+      >
+        First child
       </div>
       <div
         data-css-18p75qs=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Second child
-        </div>
+        }
+      >
+        Second child
       </div>
       <div
         data-css-18p75qs=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Third child
-        </div>
+        }
+      >
+        Third child
       </div>
       <div
         data-css-18p75qs=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Fourth child
-        </div>
+        }
+      >
+        Fourth child
       </div>
       <div
         data-css-18p75qs=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Fifth child
-        </div>
+        }
+      >
+        Fifth child
       </div>
       <div
         data-css-18p75qs=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Sixth child
-        </div>
+        }
+      >
+        Sixth child
       </div>
     </div>
   </div>
@@ -420,93 +456,63 @@ exports[`Storyshots EqualColumnLayout six 1`] = `
     >
       <div
         data-css-nvudq=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          First child
-        </div>
+        }
+      >
+        First child
       </div>
       <div
         data-css-nvudq=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Second child
-        </div>
+        }
+      >
+        Second child
       </div>
       <div
         data-css-nvudq=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Third child
-        </div>
+        }
+      >
+        Third child
       </div>
       <div
         data-css-nvudq=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Fourth child
-        </div>
+        }
+      >
+        Fourth child
       </div>
       <div
         data-css-nvudq=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Fifth child
-        </div>
+        }
+      >
+        Fifth child
       </div>
       <div
         data-css-nvudq=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Sixth child
-        </div>
+        }
+      >
+        Sixth child
       </div>
     </div>
   </div>
@@ -541,93 +547,63 @@ exports[`Storyshots EqualColumnLayout three 1`] = `
     >
       <div
         data-css-ke1y92=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          First child
-        </div>
+        }
+      >
+        First child
       </div>
       <div
         data-css-ke1y92=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Second child
-        </div>
+        }
+      >
+        Second child
       </div>
       <div
         data-css-ke1y92=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Third child
-        </div>
+        }
+      >
+        Third child
       </div>
       <div
         data-css-ke1y92=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Fourth child
-        </div>
+        }
+      >
+        Fourth child
       </div>
       <div
         data-css-ke1y92=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Fifth child
-        </div>
+        }
+      >
+        Fifth child
       </div>
       <div
         data-css-ke1y92=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Sixth child
-        </div>
+        }
+      >
+        Sixth child
       </div>
     </div>
   </div>
@@ -662,93 +638,63 @@ exports[`Storyshots EqualColumnLayout two 1`] = `
     >
       <div
         data-css-evbaaa=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          First child
-        </div>
+        }
+      >
+        First child
       </div>
       <div
         data-css-evbaaa=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Second child
-        </div>
+        }
+      >
+        Second child
       </div>
       <div
         data-css-evbaaa=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Third child
-        </div>
+        }
+      >
+        Third child
       </div>
       <div
         data-css-evbaaa=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Fourth child
-        </div>
+        }
+      >
+        Fourth child
       </div>
       <div
         data-css-evbaaa=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Fifth child
-        </div>
+        }
+      >
+        Fifth child
       </div>
       <div
         data-css-evbaaa=""
-      >
-        <div
-          style={
-            Object {
-              "background": "#e80a89",
-              "height": "100%",
-              "width": "100%",
-            }
+        style={
+          Object {
+            "background": "#e80a89",
           }
-        >
-          Sixth child
-        </div>
+        }
+      >
+        Sixth child
       </div>
     </div>
   </div>
@@ -858,12 +804,12 @@ exports[`Storyshots PageHeadingLayout long title w/ actions 1`] = `
         data-css-1cnar9w=""
       >
         <button
-          data-css-1sql3pc=""
+          data-css-gl46pt=""
           disabled={false}
           style={Object {}}
         >
           <span
-            className="css-1en8fmq"
+            data-css-15b13by=""
           >
             Wow, an action
           </span>
@@ -914,12 +860,12 @@ exports[`Storyshots PageHeadingLayout long titlew/ lots of actions 1`] = `
         data-css-1cnar9w=""
       >
         <button
-          data-css-1sql3pc=""
+          data-css-gl46pt=""
           disabled={false}
           style={Object {}}
         >
           <span
-            className="css-1en8fmq"
+            data-css-15b13by=""
           >
             Wow, an action
           </span>
@@ -931,12 +877,12 @@ exports[`Storyshots PageHeadingLayout long titlew/ lots of actions 1`] = `
           A link
         </a>
         <button
-          data-css-1sql3pc=""
+          data-css-gl46pt=""
           disabled={false}
           style={Object {}}
         >
           <span
-            className="css-1en8fmq"
+            data-css-15b13by=""
           >
             Wow, an action
           </span>
@@ -948,12 +894,12 @@ exports[`Storyshots PageHeadingLayout long titlew/ lots of actions 1`] = `
           A link
         </a>
         <button
-          data-css-1sql3pc=""
+          data-css-gl46pt=""
           disabled={false}
           style={Object {}}
         >
           <span
-            className="css-1en8fmq"
+            data-css-15b13by=""
           >
             Wow, an action
           </span>
@@ -965,12 +911,12 @@ exports[`Storyshots PageHeadingLayout long titlew/ lots of actions 1`] = `
           A link
         </a>
         <button
-          data-css-1sql3pc=""
+          data-css-gl46pt=""
           disabled={false}
           style={Object {}}
         >
           <span
-            className="css-1en8fmq"
+            data-css-15b13by=""
           >
             Wow, an action
           </span>
@@ -1021,12 +967,12 @@ exports[`Storyshots PageHeadingLayout w/ actions 1`] = `
         data-css-1cnar9w=""
       >
         <button
-          data-css-1sql3pc=""
+          data-css-gl46pt=""
           disabled={false}
           style={Object {}}
         >
           <span
-            className="css-1en8fmq"
+            data-css-15b13by=""
           >
             Wow, an action
           </span>
@@ -1077,12 +1023,12 @@ exports[`Storyshots PageHeadingLayout w/ lots of actions 1`] = `
         data-css-1cnar9w=""
       >
         <button
-          data-css-1sql3pc=""
+          data-css-gl46pt=""
           disabled={false}
           style={Object {}}
         >
           <span
-            className="css-1en8fmq"
+            data-css-15b13by=""
           >
             Wow, an action
           </span>
@@ -1094,12 +1040,12 @@ exports[`Storyshots PageHeadingLayout w/ lots of actions 1`] = `
           A link
         </a>
         <button
-          data-css-1sql3pc=""
+          data-css-gl46pt=""
           disabled={false}
           style={Object {}}
         >
           <span
-            className="css-1en8fmq"
+            data-css-15b13by=""
           >
             Wow, an action
           </span>
@@ -1111,12 +1057,12 @@ exports[`Storyshots PageHeadingLayout w/ lots of actions 1`] = `
           A link
         </a>
         <button
-          data-css-1sql3pc=""
+          data-css-gl46pt=""
           disabled={false}
           style={Object {}}
         >
           <span
-            className="css-1en8fmq"
+            data-css-15b13by=""
           >
             Wow, an action
           </span>
@@ -1128,12 +1074,12 @@ exports[`Storyshots PageHeadingLayout w/ lots of actions 1`] = `
           A link
         </a>
         <button
-          data-css-1sql3pc=""
+          data-css-gl46pt=""
           disabled={false}
           style={Object {}}
         >
           <span
-            className="css-1en8fmq"
+            data-css-15b13by=""
           >
             Wow, an action
           </span>

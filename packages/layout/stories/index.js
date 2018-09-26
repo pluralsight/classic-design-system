@@ -212,7 +212,7 @@ const equalColumnLayoutStory = storiesOf(
 ).addDecorator(themeDecorator(addons))
 
 const Box = props => (
-  <div style={{ height: '100%', width: '100%', background: core.colors.pink }}>
+  <div style={{ background: core.colors.pink }} {...props}>
     {props.children}
   </div>
 )
@@ -231,3 +231,17 @@ Object.keys(EqualColumnLayout.counts).forEach(key =>
     </div>
   ))
 )
+equalColumnLayoutStory.add('custom markup', _ => (
+  <div style={{ color: 'white' }}>
+    <EqualColumnLayout count={EqualColumnLayout.counts.four}>
+      <ul style={{ listStyle: 'none' }}>
+        <li>First child</li>
+        <li>Second child</li>
+        <li>Third child</li>
+        <li>Fourth child</li>
+        <li>Fifth child</li>
+        <li>Sixth child</li>
+      </ul>
+    </EqualColumnLayout>
+  </div>
+))
