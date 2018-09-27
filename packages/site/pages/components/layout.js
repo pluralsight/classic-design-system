@@ -4,6 +4,7 @@ import {
   AsideLayout,
   EqualColumnLayout
 } from '@pluralsight/ps-design-system-layout/react'
+import Badge from '@pluralsight/ps-design-system-badge/react'
 import Button from '@pluralsight/ps-design-system-button/react'
 import Text from '@pluralsight/ps-design-system-text/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
@@ -169,6 +170,19 @@ const EqualColumnLayoutOutput = _ => (
       <BlueBox>D</BlueBox>
       <BlueBox>E</BlueBox>
       <BlueBox>F</BlueBox>
+    </EqualColumnLayout>
+    <EqualColumnLayout count={EqualColumnLayout.counts.three}>
+      <ul style={{ listStyle: 'none' }}>
+        <li>
+          <BlueBox>G</BlueBox>
+        </li>
+        <li>
+          <BlueBox>H</BlueBox>
+        </li>
+        <li>
+          <BlueBox>I</BlueBox>
+        </li>
+      </ul>
     </EqualColumnLayout>
     <style jsx>{`
       .examples {
@@ -369,6 +383,13 @@ export default withServerProps(_ => (
         of items. If more items than columns are provided, they will flow into
         rows.
       </P>
+      <P>
+        <Badge color={Badge.colors.yellow}>Usage note</Badge> The children
+        elements that are supplied to the{' '}
+        <Text.Code>EqualColumnLayout</Text.Code> must be able to accept
+        `data-css-*` props. Optionally, you may provide your own semantics for
+        the parent container by passing that as the first child.
+      </P>
       <EqualColumnLayoutOutput />
       <Code language="javascript">{`<EqualColumnLayout count={EqualColumnLayout.counts.two}>
   <div>A</div>
@@ -380,6 +401,14 @@ export default withServerProps(_ => (
   <div>D</div>
   <div>E</div>
   <div>F</div>
+</EqualColumnLayout>
+
+<EqualColumnLayout count={EqualColumnLayout.counts.three}>
+  <ul style={{ listStyle: 'none' }}>
+    <li>G</li>
+    <li>H</li>
+    <li>I</li>
+  </ul>
 </EqualColumnLayout>`}</Code>
       <PropTypes
         title="Layout.EqualColumnLayout PropTypes"
@@ -390,6 +419,15 @@ export default withServerProps(_ => (
             false,
             <code>four</code>,
             <span>Number of columns in a row at full width</span>
+          ]),
+          PropTypes.row([
+            'children',
+            'single parent element | children array',
+            false,
+            <code>div</code>,
+            <span>
+              Where children must accept <code>data-css-*</code> props
+            </span>
           ])
         ]}
       />
