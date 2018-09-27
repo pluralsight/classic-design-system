@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@2.2.12...@pluralsight/ps-design-system-layout@3.0.0) (2018-09-27)
+
+
+### Features
+
+* **layout:** allow custom semantics for EqualColumnLayout ([acdbbb0](https://github.com/pluralsight/design-system/commit/acdbbb0))
+
+
+### BREAKING CHANGES
+
+* **layout:** EqualColumnLayout children not wrapped, must allow data-css-* props to pass in
+
+
+
+
 <a name="2.2.12"></a>
 ## [2.2.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@2.2.11...@pluralsight/ps-design-system-layout@2.2.12) (2018-09-25)
 

@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-layout",
-  "version": "2.2.12",
+  "version": "3.0.0",
   "description": "Design system components for ui layouts",
   "main": "index.js",
   "module": "index.js",
