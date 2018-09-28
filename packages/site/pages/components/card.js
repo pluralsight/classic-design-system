@@ -48,125 +48,145 @@ const InAppExample = props => (
   <div>
     <div className="gallery">
       <Layout.EqualColumnLayout>
-        <Card
-          tag={<Card.Tag icon={<Icon id={Icon.ids.path} />}>Path</Card.Tag>}
-          title={<Card.Title>Advanced TypeScript</Card.Title>}
-          progress={0}
-          image={<Card.Image src="/static/img/course1.jpg" />}
-          metadata1={['Brice Wilson', 'Advanced']}
-          metadata2={['0m watched']}
-          size={Card.sizes.small}
-        />
-        <Card
-          bonusBar={<Avatar size={Avatar.sizes.xSmall} name="Jake Trent" />}
-          title={
-            <Card.Title>
-              Getting Started with Reactive Programming Using RxJS
-            </Card.Title>
-          }
-          progress={20}
-          image={<Card.Image src="/static/img/course2.jpg" />}
-          metadata1={['Scott Allen', 'Intermediate']}
-          metadata2={['23m watched']}
-          size={Card.sizes.small}
-        />
-        <Card
-          actionBar={[
-            <Card.Action icon={<Icon id={Icon.ids.bookmark} />} />,
-            <Card.Action icon={<Icon id={Icon.ids.more} />} />
-          ]}
-          title={
-            <Card.Title>
-              Building a JavaScript Development Environment"
-            </Card.Title>
-          }
-          fullOverlay={
-            <Card.FullOverlayLink>
-              <a>
-                <Icon id={Icon.ids.playCircle} size={Icon.sizes.large} />
-              </a>
-            </Card.FullOverlayLink>
-          }
-          progress={67}
-          image={<Card.Image src="/static/img/course3.jpg" />}
-          metadata1={['Cory House', 'Intermediate']}
-          metadata2={['3 hr 23m watched']}
-          size={Card.sizes.small}
-        />
-        <Card
-          actionBar={[
-            <Card.Action icon={<Icon id={Icon.ids.bookmark} />} />,
-            <Card.Action icon={<Icon id={Icon.ids.more} />} />
-          ]}
-          actionBarVisible
-          title={<Card.Title>Webpack Fundamentals"</Card.Title>}
-          progress={100}
-          metadata1={['Joe Eames', 'Intermediate']}
-          metadata2={['90m watched']}
-          image={<Card.Image src="/static/img/course4.jpg" />}
-          size={Card.sizes.small}
-        />
+        <ul>
+          <li>
+            <Card
+              tag={<Card.Tag icon={<Icon id={Icon.ids.path} />}>Path</Card.Tag>}
+              title={<Card.Title>Advanced TypeScript</Card.Title>}
+              progress={0}
+              image={<Card.Image src="/static/img/course1.jpg" />}
+              metadata1={['Brice Wilson', 'Advanced']}
+              metadata2={['0m watched']}
+              size={Card.sizes.small}
+            />
+          </li>
+          <li>
+            <Card
+              bonusBar={<Avatar size={Avatar.sizes.xSmall} name="Jake Trent" />}
+              title={
+                <Card.Title>
+                  Getting Started with Reactive Programming Using RxJS
+                </Card.Title>
+              }
+              progress={20}
+              image={<Card.Image src="/static/img/course2.jpg" />}
+              metadata1={['Scott Allen', 'Intermediate']}
+              metadata2={['23m watched']}
+              size={Card.sizes.small}
+            />
+          </li>
+          <li>
+            <Card
+              actionBar={[
+                <Card.Action icon={<Icon id={Icon.ids.bookmark} />} />,
+                <Card.Action icon={<Icon id={Icon.ids.more} />} />
+              ]}
+              title={
+                <Card.Title>
+                  Building a JavaScript Development Environment"
+                </Card.Title>
+              }
+              fullOverlay={
+                <Card.FullOverlayLink>
+                  <a>
+                    <Icon id={Icon.ids.playCircle} size={Icon.sizes.large} />
+                  </a>
+                </Card.FullOverlayLink>
+              }
+              progress={67}
+              image={<Card.Image src="/static/img/course3.jpg" />}
+              metadata1={['Cory House', 'Intermediate']}
+              metadata2={['3 hr 23m watched']}
+              size={Card.sizes.small}
+            />
+          </li>
+          <li>
+            <Card
+              actionBar={[
+                <Card.Action icon={<Icon id={Icon.ids.bookmark} />} />,
+                <Card.Action icon={<Icon id={Icon.ids.more} />} />
+              ]}
+              actionBarVisible
+              title={<Card.Title>Webpack Fundamentals"</Card.Title>}
+              progress={100}
+              metadata1={['Joe Eames', 'Intermediate']}
+              metadata2={['90m watched']}
+              image={<Card.Image src="/static/img/course4.jpg" />}
+              size={Card.sizes.small}
+            />
+          </li>
+        </ul>
       </Layout.EqualColumnLayout>
     </div>
     <Code lang="javascript" collapsible>{`<Layout.EqualColumnLayout>
-  <Card
-    tag={<Card.Tag icon={<Icon id={Icon.ids.path} />}>Path</Card.Tag>}
-    title={<Card.Title>Advanced TypeScript</Card.Title>}
-    progress={0}
-    image={<Card.Image src="/static/img/course1.jpg" />}
-    metadata1={['Brice Wilson', 'Advanced']}
-    metadata2={['0m watched']}
-    size={Card.sizes.small}
-  />
-  <Card
-    bonusBar={<Avatar size={Avatar.sizes.xSmall} name="Jake Trent" />}
-    title={
-      <Card.Title>
-        Getting Started with Reactive Programming Using RxJS
-      </Card.Title>
-    }
-    progress={20}
-    image={<Card.Image src="/static/img/course2.jpg" />}
-    metadata1={['Scott Allen', 'Intermediate']}
-    metadata2={['23m watched']}
-    size={Card.sizes.small}
-  />
-  <Card
-    actionBar={[
-      <Card.Action icon={<Icon id={Icon.ids.bookmark} />} />,
-      <Card.Action icon={<Icon id={Icon.ids.more} />} />
-    ]}
-    title={
-      <Card.Title>
-        Building a JavaScript Development Environment"
-      </Card.Title>
-    }
-    fullOverlay={
-      <Card.FullOverlayLink>
-        <a>
-          <Icon id={Icon.ids.playCircle} size={Icon.sizes.large} />
-        </a>
-      </Card.FullOverlayLink>
-    }
-    progress={67}
-    image={<Card.Image src="/static/img/course3.jpg" />}
-    metadata1={['Cory House', 'Intermediate']}
-    metadata2={['3 hr 23m watched']}
-    size={Card.sizes.small}
-  />
-  <Card
-    actionBar={[
-      <Card.Action icon={<Icon id={Icon.ids.bookmark} />} />,
-      <Card.Action icon={<Icon id={Icon.ids.more} />} />
-    ]}
-    actionBarVisible
-    title={<Card.Title>Webpack Fundamentals"</Card.Title>}
-    progress={100}
-    metadata1={['Joe Eames', 'Intermediate']}
-    metadata2={['90m watched']}
-    image={<Card.Image src="/static/img/course4.jpg" />}
-    size={Card.sizes.small}
-  />
+  <ul>
+    <li>
+      <Card
+        tag={<Card.Tag icon={<Icon id={Icon.ids.path} />}>Path</Card.Tag>}
+        title={<Card.Title>Advanced TypeScript</Card.Title>}
+        progress={0}
+        image={<Card.Image src="/static/img/course1.jpg" />}
+        metadata1={['Brice Wilson', 'Advanced']}
+        metadata2={['0m watched']}
+        size={Card.sizes.small}
+      />
+    </li>
+    <li>
+      <Card
+        bonusBar={<Avatar size={Avatar.sizes.xSmall} name="Jake Trent" />}
+        title={
+          <Card.Title>
+            Getting Started with Reactive Programming Using RxJS
+          </Card.Title>
+        }
+        progress={20}
+        image={<Card.Image src="/static/img/course2.jpg" />}
+        metadata1={['Scott Allen', 'Intermediate']}
+        metadata2={['23m watched']}
+        size={Card.sizes.small}
+      />
+    </li>
+    <li>
+      <Card
+        actionBar={[
+          <Card.Action icon={<Icon id={Icon.ids.bookmark} />} />,
+          <Card.Action icon={<Icon id={Icon.ids.more} />} />
+        ]}
+        title={
+          <Card.Title>
+            Building a JavaScript Development Environment"
+          </Card.Title>
+        }
+        fullOverlay={
+          <Card.FullOverlayLink>
+            <a>
+              <Icon id={Icon.ids.playCircle} size={Icon.sizes.large} />
+            </a>
+          </Card.FullOverlayLink>
+        }
+        progress={67}
+        image={<Card.Image src="/static/img/course3.jpg" />}
+        metadata1={['Cory House', 'Intermediate']}
+        metadata2={['3 hr 23m watched']}
+        size={Card.sizes.small}
+      />
+    </li>
+    <li>
+      <Card
+        actionBar={[
+          <Card.Action icon={<Icon id={Icon.ids.bookmark} />} />,
+          <Card.Action icon={<Icon id={Icon.ids.more} />} />
+        ]}
+        actionBarVisible
+        title={<Card.Title>Webpack Fundamentals"</Card.Title>}
+        progress={100}
+        metadata1={['Joe Eames', 'Intermediate']}
+        metadata2={['90m watched']}
+        image={<Card.Image src="/static/img/course4.jpg" />}
+        size={Card.sizes.small}
+      />
+    </li>
+  </ul>
 </Layout.EqualColumnLayout>
 `}</Code>
     <style jsx>{`

@@ -75,6 +75,7 @@ const QuoteBox = props => (
         ? { fontSize: core.type.fontSizeSmall }
         : { fontSize: core.type.fontSizeMedium }
     }
+    {...props}
   >
     <div className="openquote">“</div>
     <div className="closequote">”</div>
