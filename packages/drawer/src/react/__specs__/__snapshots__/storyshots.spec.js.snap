@@ -27,13 +27,13 @@ exports[`Storyshots drawer controlled 1`] = `
   >
     <div>
       <button
-        data-css-1sql3pc=""
+        data-css-gl46pt=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
       >
         <span
-          className="css-1en8fmq"
+          data-css-15b13by=""
         >
           Toggle drawer
         </span>
@@ -56,11 +56,11 @@ exports[`Storyshots drawer controlled 1`] = `
             className="css-qs2rg7"
           >
             <button
+              aria-label="Collapse"
               className="css-xipskh"
               onClick={[Function]}
             >
               <div
-                aria-label="Collapse"
                 className="css-xnveog"
               >
                 <div
@@ -139,11 +139,11 @@ exports[`Storyshots drawer default 1`] = `
           className="css-qs2rg7"
         >
           <button
+            aria-label="Expand"
             className="css-xipskh"
             onClick={[Function]}
           >
             <div
-              aria-label="Expand"
               className="css-1byjzqg"
             >
               <div
@@ -292,10 +292,10 @@ exports[`Storyshots drawer row component with actions 1`] = `
               </div>
             </div>
             <div
-              className="css-h4r20u"
+              className="css-1akhza9"
             >
               <button
-                className="css-10dk2o2"
+                className="css-178rs47"
                 onClick={[Function]}
               >
                 <div
@@ -320,11 +320,11 @@ exports[`Storyshots drawer row component with actions 1`] = `
           className="css-qs2rg7"
         >
           <button
+            aria-label="Expand"
             className="css-xipskh"
             onClick={[Function]}
           >
             <div
-              aria-label="Expand"
               className="css-1byjzqg"
             >
               <div
@@ -403,11 +403,11 @@ exports[`Storyshots drawer stack of drawers 1`] = `
             className="css-qs2rg7"
           >
             <button
+              aria-label="Expand"
               className="css-xipskh"
               onClick={[Function]}
             >
               <div
-                aria-label="Expand"
                 className="css-1byjzqg"
               >
                 <div
@@ -454,11 +454,11 @@ exports[`Storyshots drawer stack of drawers 1`] = `
             className="css-qs2rg7"
           >
             <button
+              aria-label="Expand"
               className="css-xipskh"
               onClick={[Function]}
             >
               <div
-                aria-label="Expand"
                 className="css-1byjzqg"
               >
                 <div
@@ -505,11 +505,11 @@ exports[`Storyshots drawer stack of drawers 1`] = `
             className="css-qs2rg7"
           >
             <button
+              aria-label="Expand"
               className="css-xipskh"
               onClick={[Function]}
             >
               <div
-                aria-label="Expand"
                 className="css-1byjzqg"
               >
                 <div
@@ -588,11 +588,11 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               className="css-qs2rg7"
             >
               <button
+                aria-label="Expand"
                 className="css-xipskh"
                 onClick={[Function]}
               >
                 <div
-                  aria-label="Expand"
                   className="css-1byjzqg"
                 >
                   <div
@@ -641,11 +641,11 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               className="css-qs2rg7"
             >
               <button
+                aria-label="Expand"
                 className="css-xipskh"
                 onClick={[Function]}
               >
                 <div
-                  aria-label="Expand"
                   className="css-1byjzqg"
                 >
                   <div
@@ -694,11 +694,11 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               className="css-qs2rg7"
             >
               <button
+                aria-label="Expand"
                 className="css-xipskh"
                 onClick={[Function]}
               >
                 <div
-                  aria-label="Expand"
                   className="css-1byjzqg"
                 >
                   <div
@@ -726,6 +726,88 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               className="css-1j3g0qd"
             />
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots drawer using custom aria label 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+        "fontSize": 24,
+        "padding": 48,
+      }
+    }
+  >
+    <div
+      className="css-1fq8nx6"
+    >
+      <div
+        className="css-1oot5vc"
+        onClick={[Function]}
+      >
+        <div
+          className="css-euzj8"
+        >
+          <div>
+            Drawer Base Here
+          </div>
+        </div>
+        <div
+          className="css-qs2rg7"
+        >
+          <button
+            aria-label="Expand custom drawer"
+            className="css-xipskh"
+            onClick={[Function]}
+          >
+            <div
+              className="css-1byjzqg"
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        className="css-1i2htk9"
+      >
+        <div
+          className="css-1j3g0qd"
+        >
+          Drawer Content Here
         </div>
       </div>
     </div>
@@ -778,11 +860,11 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
             className="css-qs2rg7"
           >
             <button
+              aria-label="Expand"
               className="css-xipskh"
               onClick={[Function]}
             >
               <div
-                aria-label="Expand"
                 className="css-1byjzqg"
               >
                 <div
@@ -861,11 +943,11 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
           className="css-qs2rg7"
         >
           <button
+            aria-label="Collapse"
             className="css-xipskh"
             onClick={[Function]}
           >
             <div
-              aria-label="Collapse"
               className="css-xnveog"
             >
               <div
@@ -977,10 +1059,10 @@ exports[`Storyshots drawer with row component 1`] = `
               </div>
             </div>
             <div
-              className="css-2c174p"
+              className="css-okadky"
             >
               <button
-                className="css-10dk2o2"
+                className="css-178rs47"
               >
                 <div
                   className="css-otejxm"
@@ -1004,11 +1086,11 @@ exports[`Storyshots drawer with row component 1`] = `
           className="css-qs2rg7"
         >
           <button
+            aria-label="Expand"
             className="css-xipskh"
             onClick={[Function]}
           >
             <div
-              aria-label="Expand"
               className="css-1byjzqg"
             >
               <div

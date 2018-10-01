@@ -75,6 +75,11 @@ class Drawer extends React.Component {
   get isOpen() {
     return this.isControlledByProps ? this.props.isOpen : this.state.isOpen
   }
+  getButtonAriaLabel() {
+    const { drawerLabel } = this.props
+    const prefix = this.isOpen ? 'Collapse' : 'Expand'
+    return drawerLabel ? `${prefix} ${drawerLabel}` : prefix
+  }
 
   isClickOnDrawerBase(evt) {
     return !evt.target.closest('a, button')
@@ -91,8 +96,11 @@ class Drawer extends React.Component {
   }
 
   render() {
-    const { isOpen, context: { themeName = themeDefaultName } } = this
-    const ariaLabel = isOpen ? 'Collapse' : 'Expand'
+    const {
+      isOpen,
+      context: { themeName = themeDefaultName }
+    } = this
+    const ariaLabel = this.getButtonAriaLabel()
 
     return (
       <DrawerRoot themeName={themeName}>
@@ -101,8 +109,12 @@ class Drawer extends React.Component {
             {this.props.base}
           </DrawerPanelContent>
           <ToggleButtonContainer>
-            <ToggleButton onClick={this.toggle} themeName={themeName}>
-              <Rotatable isRotated={isOpen} aria-label={ariaLabel}>
+            <ToggleButton
+              onClick={this.toggle}
+              themeName={themeName}
+              aria-label={ariaLabel}
+            >
+              <Rotatable isRotated={isOpen}>
                 <Icon id={Icon.ids.caretDown} />
               </Rotatable>
             </ToggleButton>
@@ -121,6 +133,7 @@ Drawer.displayName = 'Drawer'
 Drawer.propTypes = {
   children: PropTypes.node.isRequired,
   base: PropTypes.node.isRequired,
+  drawerLabel: PropTypes.string,
   isOpen: PropTypes.bool,
   onToggle: PropTypes.func,
   startOpen: PropTypes.bool
