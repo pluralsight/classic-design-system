@@ -208,7 +208,8 @@ export default withServerProps(_ => (
       <SectionHeading>Tail</SectionHeading>
       <P>
         Dialogs can be shown with or without a tail (a directional indicator).
-        To make the tail appear, use a <code>Dialog.tailPositions</code> option.
+        To make the tail appear, use a{' '}
+        <Text.Code>Dialog.tailPositions</Text.Code> option.tion.
       </P>
       <Example.React
         includes={{ Dialog, ExampleContent }}
@@ -227,9 +228,10 @@ export default withServerProps(_ => (
       <SectionHeading>Closing</SectionHeading>
       <P>
         Dialogs may be closed using one of a number of methods: clicking the
-        close button, clicking the overlay (in the case of a <code>modal</code>{' '}
-        Dialog), and pressing the escape key. One or all of these methods, if
-        available, will call the <code>onClose</code> function when triggered.
+        close button, clicking the overlay (in the case of a{' '}
+        <Text.Code>modal</Text.Code> Dialog), and pressing the escape key. One
+        or all of these methods, if available, will call the{' '}
+        <Text.Code>onClose</Text.Code> function when triggered.ered.
       </P>
       <Example.React
         includes={{ Dialog, ExampleContent }}
@@ -254,10 +256,11 @@ export default withServerProps(_ => (
         When a modal Dialog (or non-modal Dialog) are shown on the screen, it
         will take browser focus. In the case of a modal Dialog, the rest of the
         body of the application will continue to be visible through the
-        translucent overlay. But it should be hidden from screenreaders. To do
-        this, add an <code>aria-hidden=true</code> attribute to your
-        application's containing node, and make sure Dialog is mounted outside
-        of that node.
+        translucent overlay. But it should be hidden. To hide it from
+        screenreaders, add an <Text.Code>aria-hidden=true</Text.Code> attribute
+        to your application's containing node, and make sure Dialog is mounted
+        outside of that node. To hide it from keyboard users, add a{' '}
+        <Text.Code>tabindex="-1"</Text.Code> to that same application node.
       </P>
       <ModalIframe />
 
