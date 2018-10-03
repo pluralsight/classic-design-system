@@ -199,7 +199,10 @@ class Dropdown extends React.Component {
     }
 
     return getLongestState(
-      { hasIcon: false, label: this.props.placeholder || '' },
+      {
+        hasIcon: false,
+        label: this.props.selectedLabel || this.props.placeholder || ''
+      },
       this.props.menu
     )
   }
@@ -248,7 +251,9 @@ class Dropdown extends React.Component {
                 {longestMenuItemState.label || allProps.placeholder}
               </span>
               <span {...styles.placeholder(allProps)}>
-                {state.selectedLabel || allProps.placeholder}
+                {props.selectedLabel ||
+                state.selectedLabel ||
+                allProps.placeholder}
               </span>
             </button>
             <div {...styles.icon(allProps)}>
@@ -300,6 +305,7 @@ Dropdown.propTypes = {
   label: PropTypes.node,
   menu: PropTypes.element.isRequired,
   placeholder: PropTypes.string,
+  selectedLabel: PropTypes.string,
   subLabel: PropTypes.node
 }
 Dropdown.defaultProps = {

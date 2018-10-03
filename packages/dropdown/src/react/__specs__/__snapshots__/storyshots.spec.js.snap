@@ -860,7 +860,9 @@ exports[`Storyshots labels label 1`] = `
           <span
             aria-hidden={true}
             data-css-e6fvyw=""
-          />
+          >
+            Three item
+          </span>
           <span
             data-css-5m5yd6=""
           />
@@ -934,7 +936,9 @@ exports[`Storyshots labels label and subLabel 1`] = `
           <span
             aria-hidden={true}
             data-css-e6fvyw=""
-          />
+          >
+            Three item
+          </span>
           <span
             data-css-5m5yd6=""
           />
@@ -1008,7 +1012,9 @@ exports[`Storyshots labels none 1`] = `
           <span
             aria-hidden={true}
             data-css-e6fvyw=""
-          />
+          >
+            Three item
+          </span>
           <span
             data-css-5m5yd6=""
           />
@@ -1110,6 +1116,79 @@ exports[`Storyshots labels placeholder 1`] = `
 </div>
 `;
 
+exports[`Storyshots labels selectedLabel 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-1hniuff=""
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-1812rv9=""
+      >
+        <button
+          data-css-8bndf1=""
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+        >
+          <span
+            aria-hidden={true}
+            data-css-e6fvyw=""
+          >
+            Some selectedLabel
+          </span>
+          <span
+            data-css-5m5yd6=""
+          >
+            Some selectedLabel
+          </span>
+        </button>
+        <div
+          data-css-1uv5m12=""
+        >
+          <div
+            className="css-otejxm"
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 14L8 10h9z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
 exports[`Storyshots labels subLabel 1`] = `
 <div
   style={
@@ -1150,7 +1229,9 @@ exports[`Storyshots labels subLabel 1`] = `
           <span
             aria-hidden={true}
             data-css-e6fvyw=""
-          />
+          >
+            Three item
+          </span>
           <span
             data-css-5m5yd6=""
           />
