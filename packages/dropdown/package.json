@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-dropdown",
-  "version": "0.4.5",
+  "version": "0.5.0",
   "description": "Design system components for dropdown",
   "main": "index.js",
   "module": "index.js",
