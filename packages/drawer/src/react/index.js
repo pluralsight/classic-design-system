@@ -76,9 +76,9 @@ class Drawer extends React.Component {
     return this.isControlledByProps ? this.props.isOpen : this.state.isOpen
   }
   getButtonAriaLabel() {
-    const { drawerLabel } = this.props
+    const { toggleButtonAriaLabel } = this.props
     const prefix = this.isOpen ? 'Collapse' : 'Expand'
-    return drawerLabel ? `${prefix} ${drawerLabel}` : prefix
+    return toggleButtonAriaLabel ? `${prefix} ${toggleButtonAriaLabel}` : prefix
   }
 
   isClickOnDrawerBase(evt) {
@@ -133,7 +133,7 @@ Drawer.displayName = 'Drawer'
 Drawer.propTypes = {
   children: PropTypes.node.isRequired,
   base: PropTypes.node.isRequired,
-  drawerLabel: PropTypes.string,
+  toggleButtonAriaLabel: PropTypes.string,
   isOpen: PropTypes.bool,
   onToggle: PropTypes.func,
   startOpen: PropTypes.bool
