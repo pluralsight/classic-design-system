@@ -154,6 +154,13 @@ export default withServerProps(_ => (
             null,
             <code>false</code>,
             'drawer is open on first render'
+          ]),
+          PropTypes.row([
+            'toggleButtonAriaLabel',
+            'string',
+            null,
+            null,
+            <span>custom label for drawer toggle for screenreaders</span>
           ])
         ]}
       />
