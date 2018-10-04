@@ -150,3 +150,8 @@ storiesOf('drawer', module)
       </div>
     </div>
   ))
+  .add('using custom aria label', () => (
+    <Drawer base={<div>Drawer Base Here</div>} drawerLabel="custom drawer">
+      Drawer Content Here
+    </Drawer>
+  ))
