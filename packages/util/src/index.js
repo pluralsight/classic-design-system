@@ -1,9 +1,11 @@
-import * as string from './string'
+import * as func from './func'
 import * as propDefs from './prop-defs'
 import * as props from './props'
+import * as string from './string'
 
 export default {
-  string,
+  func,
   propDefs,
-  props
+  props,
+  string
 }

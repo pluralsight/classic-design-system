@@ -4,6 +4,7 @@ import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 import Tooltip from '@pluralsight/ps-design-system-tooltip/react'
+import * as funcUtil from '@pluralsight/ps-design-system-util/func'
 
 import {
   Chrome,
@@ -108,8 +109,11 @@ class InAppExample extends React.Component {
       isHovered: false,
       isClicked: false
     }
-    this.handleMouseOver = this.handleMouseOver.bind(this)
-    this.handleMouseOut = this.handleMouseOut.bind(this)
+    this.handleMouseOver = funcUtil.debounce(
+      this.handleMouseOver.bind(this),
+      100
+    )
+    this.handleMouseOut = funcUtil.debounce(this.handleMouseOut.bind(this), 100)
     this.handleClick = this.handleClick.bind(this)
   }
   componentDidMount() {
