@@ -98,7 +98,8 @@ const styles = {
     glamor.css(
       css['.psds-dropdown__sub-label'],
       css[`.psds-dropdown__sub-label.psds-theme--${themeName}`]
-    )
+    ),
+  pageOverlay: _ => glamor.css(css['.psds-dropdown__page-overlay'])
 }
 
 const CaretDown = _ => (
@@ -125,6 +126,7 @@ class Dropdown extends React.Component {
     this.handleBlur = this.handleBlur.bind(this)
     this.handleKeyDown = this.handleKeyDown.bind(this)
     this.handleMenuClick = this.handleMenuClick.bind(this)
+    this.handleOverlayClick = this.handleOverlayClick.bind(this)
   }
   handleToggleOpen(evt) {
     evt.preventDefault()
@@ -156,6 +158,9 @@ class Dropdown extends React.Component {
     }
     if (this.props.menu && typeof this.props.menu.props.onClick === 'function')
       this.props.menu.props.onClick(evt)
+  }
+  handleOverlayClick() {
+    this.setState({ isOpen: false })
   }
   getLongestMenuLabelState() {
     const getMenuItems = menu =>
@@ -206,71 +211,83 @@ class Dropdown extends React.Component {
     }
     const longestMenuItemState = this.getLongestMenuLabelState()
     return (
-      <label
-        {...styles.dropdown(allProps)}
-        {...(allProps.style ? { style: allProps.style } : null)}
-        {...(allProps.className ? { className: allProps.className } : null)}
-        onKeyDown={this.handleKeyDown}
-      >
-        {allProps.label && (
-          <div {...styles.label(allProps)}>{allProps.label}</div>
+      <React.Fragment>
+        {state.isOpen && (
+          <div
+            {...styles.pageOverlay(allProps)}
+            onClick={this.handleOverlayClick}
+          />
         )}
-        <div {...styles.fieldContainer(allProps, state)}>
-          <button
-            {...propsUtil.whitelistProps(allProps, dropdownHtmlPropsWhitelist)}
-            {...styles.field(allProps)}
-            disabled={allProps.disabled}
-            onClick={allProps.disabled ? null : this.handleToggleOpen}
-            onBlur={allProps.disabled ? null : this.handleBlur}
-            onFocus={allProps.disabled ? null : this.handleFocus}
-            ref={el => {
-              this.field = el
-              if (typeof allProps.innerRef === 'function') allProps.innerRef(el)
-            }}
-          >
-            <span aria-hidden={true} {...styles.buttonSizer(allProps)}>
-              {longestMenuItemState.label || allProps.placeholder}
-            </span>
-            <span {...styles.placeholder(allProps)}>
-              {state.selectedLabel || allProps.placeholder}
-            </span>
-          </button>
-          <div {...styles.icon(allProps)}>
-            <Icon>
-              <CaretDown />
-            </Icon>
+        <label
+          {...styles.dropdown(allProps)}
+          {...(allProps.style ? { style: allProps.style } : null)}
+          {...(allProps.className ? { className: allProps.className } : null)}
+          onKeyDown={this.handleKeyDown}
+        >
+          {allProps.label && (
+            <div {...styles.label(allProps)}>{allProps.label}</div>
+          )}
+          <div {...styles.fieldContainer(allProps, state)}>
+            <button
+              {...propsUtil.whitelistProps(
+                allProps,
+                dropdownHtmlPropsWhitelist
+              )}
+              {...styles.field(allProps)}
+              disabled={allProps.disabled}
+              onClick={allProps.disabled ? null : this.handleToggleOpen}
+              onBlur={allProps.disabled ? null : this.handleBlur}
+              onFocus={allProps.disabled ? null : this.handleFocus}
+              ref={el => {
+                this.field = el
+                if (typeof allProps.innerRef === 'function')
+                  allProps.innerRef(el)
+              }}
+            >
+              <span aria-hidden={true} {...styles.buttonSizer(allProps)}>
+                {longestMenuItemState.label || allProps.placeholder}
+              </span>
+              <span {...styles.placeholder(allProps)}>
+                {state.selectedLabel || allProps.placeholder}
+              </span>
+            </button>
+            <div {...styles.icon(allProps)}>
+              <Icon>
+                <CaretDown />
+              </Icon>
+            </div>
+            {allProps.error && (
+              <div {...styles.error(allProps)}>
+                <Icon id={Icon.ids.warning} />
+              </div>
+            )}
           </div>
-          {allProps.error && (
-            <div {...styles.error(allProps)}>
-              <Icon id={Icon.ids.warning} />
-            </div>
+          {props.menu &&
+            state.isOpen && (
+              <div {...styles.menu(allProps)}>
+                {React.cloneElement(props.menu, {
+                  onClick: allProps.disabled ? null : this.handleMenuClick,
+                  onClose: _ => {
+                    this.setState(_ => ({ isOpen: false }))
+                    if (typeof props.menu.props.onClose === 'function')
+                      props.menu.props.onClose()
+                  },
+                  style: {
+                    ...props.menu.props.style,
+                    minWidth: '0',
+                    maxWidth: 'none',
+                    width: this.field
+                      ? this.field.getBoundingClientRect().width
+                      : 'auto'
+                  }
+                })}
+              </div>
+            )}
+          {allProps.subLabel && (
+            <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
           )}
-        </div>
-        {props.menu &&
-          state.isOpen && (
-            <div {...styles.menu(allProps)}>
-              {React.cloneElement(props.menu, {
-                onClick: allProps.disabled ? null : this.handleMenuClick,
-                onClose: _ => {
-                  this.setState(_ => ({ isOpen: false }))
-                  if (typeof props.menu.props.onClose === 'function')
-                    props.menu.props.onClose()
-                },
-                style: {
-                  ...props.menu.props.style,
-                  minWidth: '0',
-                  maxWidth: 'none',
-                  width: this.field
-                    ? this.field.getBoundingClientRect().width
-                    : 'auto'
-                }
-              })}
-            </div>
-          )}
-        {allProps.subLabel && (
-          <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
-        )}
-      </label>
+        </label>
+      </React.Fragment>
     )
   }
 }
