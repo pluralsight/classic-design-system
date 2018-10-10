@@ -13,21 +13,46 @@ const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
 )
 
+const actionMenuWithThreeItems = (
+  <ActionMenu>
+    <ActionMenu.Item onClick={action('one')}>One item</ActionMenu.Item>
+    <ActionMenu.Item onClick={action('two')}>Two item</ActionMenu.Item>
+    <ActionMenu.Item onClick={action('three')}>Three item</ActionMenu.Item>
+  </ActionMenu>
+)
+
 const labelStory = storiesOf('labels', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
-  .add('none', _ => <Dropdown />)
-  .add('placeholder', _ => <Dropdown placeholder="some placeholder" />)
-  .add('label', _ => <Dropdown label="Some label" />)
-  .add('subLabel', _ => <Dropdown subLabel="Some sublabel" />)
+  .add('none', _ => <Dropdown menu={actionMenuWithThreeItems} />)
+  .add('placeholder', _ => (
+    <Dropdown placeholder="some placeholder" menu={actionMenuWithThreeItems} />
+  ))
+  .add('label', _ => (
+    <Dropdown label="Some label" menu={actionMenuWithThreeItems} />
+  ))
+  .add('subLabel', _ => (
+    <Dropdown subLabel="Some sublabel" menu={actionMenuWithThreeItems} />
+  ))
+  .add('selectedLabel', _ => (
+    <Dropdown
+      selectedLabel="Some selectedLabel"
+      menu={actionMenuWithThreeItems}
+    />
+  ))
   .add('label and subLabel', _ => (
-    <Dropdown label="Some label" subLabel="Some sublabel" />
+    <Dropdown
+      label="Some label"
+      subLabel="Some sublabel"
+      menu={actionMenuWithThreeItems}
+    />
   ))
   .add('all', _ => (
     <Dropdown
       label="Some label"
       subLabel="Some sublabel"
       placeholder="Some placeholder"
+      menu={actionMenuWithThreeItems}
     />
   ))
 
