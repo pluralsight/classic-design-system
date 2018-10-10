@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-row",
-  "version": "2.6.14",
+  "version": "2.6.15",
   "description": "Design System component for row ui",
   "main": "index.js",
   "module": "index.js",
@@ -34,9 +34,9 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.3",
-    "@pluralsight/ps-design-system-drawer": "^1.5.1",
-    "@pluralsight/ps-design-system-icon": "^8.12.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.43",
+    "@pluralsight/ps-design-system-drawer": "^1.5.2",
+    "@pluralsight/ps-design-system-icon": "^8.13.0",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.44",
     "@storybook/addon-actions": "^3.2.14",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",

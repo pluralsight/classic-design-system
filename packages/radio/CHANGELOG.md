@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.6"></a>
+## [0.3.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@0.3.5...@pluralsight/ps-design-system-radio@0.3.6) (2018-10-10)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-radio
+
 <a name="0.3.5"></a>
 ## [0.3.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@0.3.4...@pluralsight/ps-design-system-radio@0.3.5) (2018-09-25)
 

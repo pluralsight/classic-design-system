@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="11.1.0"></a>
+# [11.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.0.3...@pluralsight/ps-design-system-site@11.1.0) (2018-10-10)
+
+
+### Features
+
+* **site:** new prop for drawer aria doc ([61029e5](https://github.com/pluralsight/design-system/commit/61029e5))
+
+
+
+
 <a name="11.0.3"></a>
 ## [11.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.0.2...@pluralsight/ps-design-system-site@11.0.3) (2018-10-04)
 

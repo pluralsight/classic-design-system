@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.12"></a>
+## [1.5.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@1.5.11...@pluralsight/ps-design-system-circularprogress@1.5.12) (2018-10-10)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-circularprogress
+
 <a name="1.5.11"></a>
 ## [1.5.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@1.5.10...@pluralsight/ps-design-system-circularprogress@1.5.11) (2018-09-25)
 

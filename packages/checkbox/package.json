@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-checkbox",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Design system components for checkbox",
   "main": "index.js",
   "module": "index.js",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.3",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.43",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.44",
     "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-storyshots": "3.2.4",
     "@storybook/react": "3.2.3",
