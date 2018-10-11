@@ -7,7 +7,9 @@ import {
   names as themeNames
 } from '@pluralsight/ps-design-system-theme/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import Button from '@pluralsight/ps-design-system-button/react'
+import DarkHalfStar from './half-star-dark'
+
+const HalfStar = () => <DarkHalfStar />
 
 import css from '../css'
 import * as vars from '../vars'
@@ -16,20 +18,29 @@ const TOTAL_STARS = 5
 
 const ICONS = {
   full: {
-    fill: '#AE8017',
+    fill: core.colors.yellow,
     id: Icon.ids.starFill
   },
   empty: {
-    fill: '#666666',
+    fill: core.colors.gray03,
     id: Icon.ids.starFill
   },
-  half: {
-    fill: '##427fbb', // TODO Change this.
-    id: Icon.ids.starFill
-  },
+  // half: {
+  //   fill: '#427fbb', // TODO Change this.
+  //   id: Icon.ids.starFill
+  // },
   hover: {
-    fill: '#AE8017',
+    fill: core.colors.gray04,
     id: Icon.ids.star
+  }
+}
+
+const styles = {
+  button: {
+    border: 0,
+    backgroundColor: 'rgba(0,0,0,0)',
+    padding: 0,
+    margin: 0
   }
 }
 
@@ -63,14 +74,15 @@ class StarRating extends React.Component {
         if (index < fullStars) {
           ;({ fill, id } = ICONS.full)
         } else if (index === fullStars && halfStars) {
-          ;({ fill, id } = ICONS.half)
+          // ;({ fill, id } = ICONS.half)
+          return <HalfStar />
         } else {
           ;({ fill, id } = ICONS.empty)
         }
       }
 
       return (
-        <Icon css={{ '> svg': { fill } }} id={id} size={Icon.sizes.large} />
+        <Icon css={{ '> svg': { fill } }} id={id} size={Icon.sizes.xsmall} />
       )
     })
   }
@@ -81,14 +93,15 @@ class StarRating extends React.Component {
     return icons.map((icon, index) => {
       const ratingValue = index + 1
       return (
-        <Button
+        <button
+          style={styles.button}
           onClick={() => onClick(ratingValue)}
           onMouseOver={() => this.setState({ hoverIndex: index })}
           onMouseLeave={() => this.setState({ hoverIndex: null })}
-          icon={icon}
-          appearance={Button.appearances.flat}
-          size={Button.sizes.large}
-        />
+          aria-label={`Rate ${ratingValue} star${ratingValue > 1 ? 's' : ''}`}
+        >
+          {icon}
+        </button>
       )
     })
   }
