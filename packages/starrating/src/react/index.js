@@ -14,32 +14,58 @@ import * as vars from '../vars'
 
 const TOTAL_STARS = 5
 
-const FullStarIcon = <Icon id={Icon.ids.caretUp} size={Icon.sizes.large} />
-const EmptyStarIcon = <Icon id={Icon.ids.caretDown} size={Icon.sizes.large} />
-const HalfStarIcon = <Icon id={Icon.ids.caretRight} size={Icon.sizes.large} />
+const FullStarIcon = (
+  <Icon
+    css={{ '> svg': { fill: '#AE8017' } }}
+    id={Icon.ids.starFill}
+    size={Icon.sizes.large}
+  />
+)
+const EmptyStarIcon = (
+  <Icon
+    css={{ '> svg': { fill: '#666666' } }}
+    id={Icon.ids.starFill}
+    size={Icon.sizes.large}
+  />
+)
+const HalfStarIcon = (
+  <Icon
+    css={{ '> svg': { fill: '#AE8017' } }}
+    id={Icon.ids.caretRight}
+    size={Icon.sizes.large}
+  />
+)
 
-const StarRating = props => {
-  const { value, onClick } = props
+class StarRating extends React.Component {
+  constructor(props) {
+    super(props)
 
-  const halfIntRoundedValue = Math.floor(value * 2) / 2
+    this.state = {}
+  }
 
-  let fullStars = Math.floor(halfIntRoundedValue)
-  let halfStars = Math.floor(halfIntRoundedValue) !== halfIntRoundedValue
+  generateIcons() {
+    const { value } = this.props
 
-  const StarIcons = new Array(TOTAL_STARS).fill(undefined).map((_, index) => {
-    if (index < fullStars) {
-      return FullStarIcon
-    } else if (index === fullStars && halfStars) {
-      return HalfStarIcon
-    } else {
-      return EmptyStarIcon
-    }
-  })
+    const halfIntRoundedValue = Math.floor(value * 2) / 2
 
-  let Stars
+    let fullStars = Math.floor(halfIntRoundedValue)
+    let halfStars = Math.floor(halfIntRoundedValue) !== halfIntRoundedValue
 
-  if (onClick) {
-    Stars = StarIcons.map((icon, index) => {
+    return new Array(TOTAL_STARS).fill(undefined).map((_, index) => {
+      if (index < fullStars) {
+        return FullStarIcon
+      } else if (index === fullStars && halfStars) {
+        return HalfStarIcon
+      } else {
+        return EmptyStarIcon
+      }
+    })
+  }
+
+  wrapWithButtons(icons) {
+    const { onClick } = this.props
+
+    return icons.map((icon, index) => {
       const ratingValue = index + 1
       return (
         <Button
@@ -50,11 +76,16 @@ const StarRating = props => {
         />
       )
     })
-  } else {
-    Stars = StarIcons
   }
 
-  return React.createElement('div', {}, Stars)
+  render() {
+    const { onClick } = this.props
+
+    let StarIcons = this.generateIcons()
+    StarIcons = onClick ? this.wrapWithButtons(StarIcons) : StarIcons
+
+    return StarIcons
+  }
 }
 
 StarRating.propTypes = {
