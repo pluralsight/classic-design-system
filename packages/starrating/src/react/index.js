@@ -14,34 +14,24 @@ import * as vars from '../vars'
 
 const TOTAL_STARS = 5
 
-const FullStarIcon = (
-  <Icon
-    css={{ '> svg': { fill: '#AE8017' } }}
-    id={Icon.ids.starFill}
-    size={Icon.sizes.large}
-  />
-)
-const EmptyStarIcon = (
-  <Icon
-    css={{ '> svg': { fill: '#666666' } }}
-    id={Icon.ids.starFill}
-    size={Icon.sizes.large}
-  />
-)
-const HalfStarIcon = (
-  <Icon
-    css={{ '> svg': { fill: '#AE8017' } }}
-    id={Icon.ids.caretRight}
-    size={Icon.sizes.large}
-  />
-)
-const InteractiveStarIcon = (
-  <Icon
-    css={{ '> svg': { fill: '#AE8017' } }}
-    id={Icon.ids.star}
-    size={Icon.sizes.large}
-  />
-)
+const ICONS = {
+  full: {
+    fill: '#AE8017',
+    id: Icon.ids.starFill
+  },
+  empty: {
+    fill: '#666666',
+    id: Icon.ids.starFill
+  },
+  half: {
+    fill: '##427fbb', // TODO Change this.
+    id: Icon.ids.starFill
+  },
+  hover: {
+    fill: '#AE8017',
+    id: Icon.ids.star
+  }
+}
 
 class StarRating extends React.Component {
   constructor(props) {
@@ -61,28 +51,28 @@ class StarRating extends React.Component {
     let fullStars = Math.floor(halfIntRoundedValue)
     let halfStars = Math.floor(halfIntRoundedValue) !== halfIntRoundedValue
 
-    const readOnlyStars = new Array(TOTAL_STARS)
-      .fill(undefined)
-      .map((_, index) => {
-        if (index < fullStars) {
-          return FullStarIcon
-        } else if (index === fullStars && halfStars) {
-          return HalfStarIcon
-        } else {
-          return EmptyStarIcon
-        }
-      })
-
-    const interactiveStars =
-      hoverIndex &&
-      new Array(TOTAL_STARS).fill(undefined).map((_, index) => {
+    return new Array(TOTAL_STARS).fill(undefined).map((_, index) => {
+      let fill, id
+      if (hoverIndex) {
         if (index <= hoverIndex) {
-          return InteractiveStarIcon
+          ;({ fill, id } = ICONS.hover)
         } else {
-          return EmptyStarIcon
+          ;({ fill, id } = ICONS.empty)
         }
-      })
-    return hoverIndex ? interactiveStars : readOnlyStars
+      } else {
+        if (index < fullStars) {
+          ;({ fill, id } = ICONS.full)
+        } else if (index === fullStars && halfStars) {
+          ;({ fill, id } = ICONS.half)
+        } else {
+          ;({ fill, id } = ICONS.empty)
+        }
+      }
+
+      return (
+        <Icon css={{ '> svg': { fill } }} id={id} size={Icon.sizes.large} />
+      )
+    })
   }
 
   wrapWithButtons(icons) {
@@ -104,7 +94,6 @@ class StarRating extends React.Component {
   }
 
   render() {
-    console.log(this.state)
     const { onClick } = this.props
 
     let StarIcons = this.generateIcons()
