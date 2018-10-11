@@ -35,15 +35,25 @@ const HalfStarIcon = (
     size={Icon.sizes.large}
   />
 )
+const InteractiveStarIcon = (
+  <Icon
+    css={{ '> svg': { fill: '#AE8017' } }}
+    id={Icon.ids.star}
+    size={Icon.sizes.large}
+  />
+)
 
 class StarRating extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {}
+    this.state = {
+      hoverIndex: null
+    }
   }
 
   generateIcons() {
+    const { hoverIndex } = this.state
     const { value } = this.props
 
     const halfIntRoundedValue = Math.floor(value * 2) / 2
@@ -51,15 +61,28 @@ class StarRating extends React.Component {
     let fullStars = Math.floor(halfIntRoundedValue)
     let halfStars = Math.floor(halfIntRoundedValue) !== halfIntRoundedValue
 
-    return new Array(TOTAL_STARS).fill(undefined).map((_, index) => {
-      if (index < fullStars) {
-        return FullStarIcon
-      } else if (index === fullStars && halfStars) {
-        return HalfStarIcon
-      } else {
-        return EmptyStarIcon
-      }
-    })
+    const readOnlyStars = new Array(TOTAL_STARS)
+      .fill(undefined)
+      .map((_, index) => {
+        if (index < fullStars) {
+          return FullStarIcon
+        } else if (index === fullStars && halfStars) {
+          return HalfStarIcon
+        } else {
+          return EmptyStarIcon
+        }
+      })
+
+    const interactiveStars =
+      hoverIndex &&
+      new Array(TOTAL_STARS).fill(undefined).map((_, index) => {
+        if (index <= hoverIndex) {
+          return InteractiveStarIcon
+        } else {
+          return EmptyStarIcon
+        }
+      })
+    return hoverIndex ? interactiveStars : readOnlyStars
   }
 
   wrapWithButtons(icons) {
@@ -69,7 +92,9 @@ class StarRating extends React.Component {
       const ratingValue = index + 1
       return (
         <Button
-          onClick={() => onClick(ratingValue) || null}
+          onClick={() => onClick(ratingValue)}
+          onMouseOver={() => this.setState({ hoverIndex: index })}
+          onMouseLeave={() => this.setState({ hoverIndex: null })}
           icon={icon}
           appearance={Button.appearances.flat}
           size={Button.sizes.large}
@@ -79,6 +104,7 @@ class StarRating extends React.Component {
   }
 
   render() {
+    console.log(this.state)
     const { onClick } = this.props
 
     let StarIcons = this.generateIcons()
