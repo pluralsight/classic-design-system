@@ -25,15 +25,19 @@ const rmNonHtmlProps = props => {
 }
 
 const Icon = props => {
+  const children =
+    props.children && props.children.type !== 'slot' ? props.children : null
+  const svgFactory = icons[props.id] || icons[props.icon]
   return (
     <IconContainer {...rmNonHtmlProps(props)}>
-      {props.children || icons[props.id](React)}
+      {children || (svgFactory && svgFactory(React))}
     </IconContainer>
   )
 }
 
 Icon.propTypes = {
   color: PropTypes.oneOf(Object.keys(vars.colors)),
+  icon: PropTypes.oneOf(Object.keys(vars.ids)),
   id: PropTypes.oneOf(Object.keys(vars.ids)),
   size: PropTypes.oneOf(Object.keys(vars.sizes))
 }

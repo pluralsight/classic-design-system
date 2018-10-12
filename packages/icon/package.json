@@ -29,7 +29,8 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.3.3",
     "glamorous": "^4.1.0",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "web-react-components": "lizardruss/web-react-components#master"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.3",
