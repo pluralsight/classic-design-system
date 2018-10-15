@@ -136,7 +136,7 @@ export default withServerProps(_ => (
         <LevelHeading>Guide</LevelHeading>
         <Doc>{`
 ### Participate in user interviews
-As we create the Design System, we're always looking for people to take part in our user interviews.  We're usually testing a new feature and always looking to gather ideas you have.  Let us know in [#platform-ui](slack://channel?team=pluralsight&id=platform-ui) that you're available.
+As we create the Design System, we're always looking for people to take part in our user interviews.  We're usually testing a new feature and always looking to gather ideas you have.  Let us know in [#design-system-help](slack://channel?team=pluralsight&id=design-system-help) that you're available.
 
 ### Ask for a feature
 Jump on the [Github project](https://github.com/pluralsight/design-system), and let us know what you need from the Design System.  Once we know what you need, we can work with you to make it more helpful to you.
@@ -145,7 +145,7 @@ Jump on the [Github project](https://github.com/pluralsight/design-system), and 
 The Design System is used in many places.  We have a hard time keeping our eyes on all of them to keep up with the issues you’re having.  If you see something amiss, please report it via a [Github issue](https://github.com/pluralsight/design-system/issues/new) so we have insight in order to resolve it.
 
 ### Offer design direction
-Maybe you have a visual, interactive, or code design insight.  We’d love to chat about your ideas and see how they might fit and be used to improve the Design System.   Join [#platform-ui](slack://channel?team=pluralsight&id=platform-ui) and share.
+Maybe you have a visual, interactive, or code design insight.  We’d love to chat about your ideas and see how they might fit and be used to improve the Design System.   Join [#design-system-help](slack://channel?team=pluralsight&id=design-system-help) and share.
 `}</Doc>
       </LevelList>
 

@@ -17,7 +17,7 @@ export default withServerProps(_ => (
 
 ## Before you start
 
-Please collaborate with the Design System team in [#platform-ui](slack://channel?team=pluralsight&id=platform-ui) on the whats, whys, and hows of your component.  The [Contribute Code](/contribute/code) doc has some relevant insights into how and why we collaborate.
+Please collaborate with the Design System team in [#design-system-help](slack://channel?team=pluralsight&id=design-system-help) on the whats, whys, and hows of your component.  The [Contribute Code](/contribute/code) doc has some relevant insights into how and why we collaborate.
 
 ## Create your component
 
