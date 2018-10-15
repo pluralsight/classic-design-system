@@ -9,8 +9,6 @@ import {
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import DarkHalfStar from './half-star-dark'
 
-const HalfStar = () => <DarkHalfStar />
-
 import css from '../css'
 import * as vars from '../vars'
 
@@ -25,10 +23,6 @@ const ICONS = {
     fill: core.colors.gray03,
     id: Icon.ids.starFill
   },
-  // half: {
-  //   fill: '#427fbb', // TODO Change this.
-  //   id: Icon.ids.starFill
-  // },
   hover: {
     fill: core.colors.gray04,
     id: Icon.ids.star
@@ -41,6 +35,15 @@ const styles = {
     backgroundColor: 'rgba(0,0,0,0)',
     padding: 0,
     margin: 0
+  },
+  screenReaderContent: {
+    clip: 'rect(1px, 1px, 1px, 1px)',
+    position: 'absolute',
+    clipPath: 'polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px)',
+    whiteSpace: 'nowrap',
+    height: '1px',
+    width: '1px',
+    overflow: 'hidden'
   }
 }
 
@@ -52,7 +55,6 @@ class StarRating extends React.Component {
       hoverIndex: null
     }
   }
-
   generateIcons() {
     const { hoverIndex } = this.state
     const { value } = this.props
@@ -64,7 +66,7 @@ class StarRating extends React.Component {
 
     return new Array(TOTAL_STARS).fill(undefined).map((_, index) => {
       let fill, id
-      if (hoverIndex) {
+      if (hoverIndex !== null) {
         if (index <= hoverIndex) {
           ;({ fill, id } = ICONS.hover)
         } else {
@@ -74,15 +76,20 @@ class StarRating extends React.Component {
         if (index < fullStars) {
           ;({ fill, id } = ICONS.full)
         } else if (index === fullStars && halfStars) {
-          // ;({ fill, id } = ICONS.half)
-          return <HalfStar />
+          return <DarkHalfStar />
         } else {
           ;({ fill, id } = ICONS.empty)
         }
       }
 
       return (
-        <Icon css={{ '> svg': { fill } }} id={id} size={Icon.sizes.xsmall} />
+        <Icon
+          key={index}
+          css={{ '> svg': { fill } }}
+          id={id}
+          size={Icon.sizes.xsmall}
+          role="presentation"
+        />
       )
     })
   }
@@ -92,13 +99,18 @@ class StarRating extends React.Component {
 
     return icons.map((icon, index) => {
       const ratingValue = index + 1
+      const ratingString = `Rate ${ratingValue} star${
+        ratingValue > 1 ? 's' : ''
+      }`
       return (
         <button
+          key={index}
+          tabIndex={-1}
           style={styles.button}
           onClick={() => onClick(ratingValue)}
           onMouseOver={() => this.setState({ hoverIndex: index })}
           onMouseLeave={() => this.setState({ hoverIndex: null })}
-          aria-label={`Rate ${ratingValue} star${ratingValue > 1 ? 's' : ''}`}
+          aria-label={ratingString}
         >
           {icon}
         </button>
@@ -107,12 +119,31 @@ class StarRating extends React.Component {
   }
 
   render() {
-    const { onClick } = this.props
+    const { onClick, value } = this.props
 
     let StarIcons = this.generateIcons()
     StarIcons = onClick ? this.wrapWithButtons(StarIcons) : StarIcons
-
-    return StarIcons
+    return (
+      <div>
+        {onClick && (
+          <label>
+            <span style={styles.screenReaderContent}>Rate</span>
+            <input
+              style={styles.screenReaderContent}
+              type="range"
+              onChange={event => onClick(event.target.value)}
+              min={1}
+              max={5}
+              step={1}
+            />
+          </label>
+        )}
+        <span
+          style={styles.screenReaderContent}
+        >{`This is rated ${value}`}</span>
+        {StarIcons}
+      </div>
+    )
   }
 }
 
