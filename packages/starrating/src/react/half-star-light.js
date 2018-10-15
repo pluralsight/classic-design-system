@@ -18,8 +18,8 @@ const DarkStar = () => (
       height="24"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M12 0H24V24H12V0Z"
         fill="white"
       />
@@ -42,8 +42,8 @@ const DarkStar = () => (
       height="24"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M0 0H12V24H0V0Z"
         fill="white"
       />
