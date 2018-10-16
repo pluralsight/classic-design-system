@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DarkStar = () => (
+const DarkHalfStar = () => (
   <svg
     width="24"
     height="24"
@@ -55,4 +55,4 @@ const DarkStar = () => (
   </svg>
 )
 
-export default DarkStar
+export default DarkHalfStar

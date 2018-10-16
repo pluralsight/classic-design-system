@@ -8,6 +8,7 @@ import {
 } from '@pluralsight/ps-design-system-theme/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import DarkHalfStar from './half-star-dark'
+import LightHalfStar from './half-star-light'
 
 import css from '../css'
 import * as vars from '../vars'
@@ -15,17 +16,19 @@ import * as vars from '../vars'
 const TOTAL_STARS = 5
 
 const ICONS = {
-  full: {
-    fill: core.colors.yellow,
-    id: Icon.ids.starFill
-  },
-  empty: {
-    fill: core.colors.gray03,
-    id: Icon.ids.starFill
-  },
-  hover: {
-    fill: core.colors.gray04,
-    id: Icon.ids.star
+  dark: {
+    full: {
+      fill: core.colors.yellow,
+      id: Icon.ids.starFill
+    },
+    empty: {
+      fill: core.colors.gray03,
+      id: Icon.ids.starFill
+    },
+    hover: {
+      fill: core.colors.gray04,
+      id: Icon.ids.star
+    }
   }
 }
 
@@ -55,7 +58,7 @@ class StarRating extends React.Component {
       hoverIndex: null
     }
   }
-  generateIcons() {
+  generateIcons(themeName) {
     const { hoverIndex } = this.state
     const { value } = this.props
 
@@ -66,19 +69,24 @@ class StarRating extends React.Component {
 
     return new Array(TOTAL_STARS).fill(undefined).map((_, index) => {
       let fill, id
+      console.log(themeName)
       if (hoverIndex !== null) {
         if (index <= hoverIndex) {
-          ;({ fill, id } = ICONS.hover)
+          ;({ fill, id } = ICONS[themeName].hover)
         } else {
-          ;({ fill, id } = ICONS.empty)
+          ;({ fill, id } = ICONS[themeName].empty)
         }
       } else {
         if (index < fullStars) {
-          ;({ fill, id } = ICONS.full)
+          ;({ fill, id } = ICONS[themeName].full)
         } else if (index === fullStars && halfStars) {
-          return <DarkHalfStar />
+          return themeName === themeDefaultName ? (
+            <DarkHalfStar key={index} />
+          ) : (
+            <LightHalfStar key={index} />
+          )
         } else {
-          ;({ fill, id } = ICONS.empty)
+          ;({ fill, id } = ICONS[themeName].empty)
         }
       }
 
@@ -120,8 +128,9 @@ class StarRating extends React.Component {
 
   render() {
     const { onClick, value } = this.props
+    const themeName = this.context.themeName || themeDefaultName
 
-    let StarIcons = this.generateIcons()
+    let StarIcons = this.generateIcons(themeName)
     StarIcons = onClick ? this.wrapWithButtons(StarIcons) : StarIcons
     return (
       <div>
