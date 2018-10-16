@@ -67,7 +67,8 @@ export default {
     alignItems: 'center',
     minWidth: `calc(192px + ${iconVars.widths.medium} + ${
       core.layout.spacingXSmall
-    })`
+    })`,
+    zIndex: 0
   },
   '.psds-text-input__field-container:focus:before': {
     content: ' ',
