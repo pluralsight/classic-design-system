@@ -43,7 +43,6 @@ exports[`Storyshots pages 403 1`] = `
       data-css-ahs133=""
     >
       <h1
-        className={undefined}
         data-css-1fxxvvr=""
         size="medium"
       >
@@ -54,7 +53,6 @@ exports[`Storyshots pages 403 1`] = `
       data-css-vf7nz1=""
     >
       <h2
-        className={undefined}
         data-css-1oooiac=""
         size="smallCaps"
       >
@@ -115,7 +113,6 @@ exports[`Storyshots pages 404 1`] = `
       data-css-ahs133=""
     >
       <h1
-        className={undefined}
         data-css-1fxxvvr=""
         size="medium"
       >
@@ -126,7 +123,6 @@ exports[`Storyshots pages 404 1`] = `
       data-css-vf7nz1=""
     >
       <h2
-        className={undefined}
         data-css-1oooiac=""
         size="smallCaps"
       >
@@ -140,8 +136,7 @@ exports[`Storyshots pages 404 1`] = `
       method="get"
     >
       <div
-        className="css-otejxm"
-        data-css-1u0hpp6=""
+        data-css-1iawi3a=""
       >
         <svg
           aria-label="search icon"
@@ -208,7 +203,6 @@ exports[`Storyshots pages 500 1`] = `
       data-css-ahs133=""
     >
       <h1
-        className={undefined}
         data-css-1fxxvvr=""
         size="medium"
       >
@@ -219,7 +213,6 @@ exports[`Storyshots pages 500 1`] = `
       data-css-vf7nz1=""
     >
       <h2
-        className={undefined}
         data-css-1oooiac=""
         size="smallCaps"
       >
@@ -280,7 +273,6 @@ exports[`Storyshots pages 503 1`] = `
       data-css-ahs133=""
     >
       <h1
-        className={undefined}
         data-css-1fxxvvr=""
         size="medium"
       >
@@ -291,7 +283,6 @@ exports[`Storyshots pages 503 1`] = `
       data-css-vf7nz1=""
     >
       <h2
-        className={undefined}
         data-css-1oooiac=""
         size="smallCaps"
       >
