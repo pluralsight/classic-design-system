@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.2"></a>
+## [0.5.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@0.5.1...@pluralsight/ps-design-system-dropdown@0.5.2) (2018-10-17)
+
+
+### Bug Fixes
+
+* **dropdown:** increase dropdown overlay z-index ([c088666](https://github.com/pluralsight/design-system/commit/c088666))
+
+
+
+
 <a name="0.5.1"></a>
 ## [0.5.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@0.5.0...@pluralsight/ps-design-system-dropdown@0.5.1) (2018-10-10)
 

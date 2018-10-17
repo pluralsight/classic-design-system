@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.4"></a>
+## [0.5.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.3...@pluralsight/ps-design-system-textinput@0.5.4) (2018-10-17)
+
+
+### Bug Fixes
+
+* **textinput:** fix focus ring not showing ([#284](https://github.com/pluralsight/design-system/issues/284)) ([ec73ec6](https://github.com/pluralsight/design-system/commit/ec73ec6))
+
+
+
+
 <a name="0.5.3"></a>
 ## [0.5.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.2...@pluralsight/ps-design-system-textinput@0.5.3) (2018-10-10)
 
