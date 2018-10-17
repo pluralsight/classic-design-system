@@ -213,13 +213,14 @@ export default {
   // __menu
   '.psds-dropdown__menu': {
     position: 'absolute',
-    zIndex: '1',
+    zIndex: 980,
     marginTop: core.layout.spacingXXSmall
   },
 
   // __page-overlay
   '.psds-dropdown__page-overlay': {
     position: 'fixed',
+    zIndex: 970,
     top: 0,
     right: 0,
     bottom: 0,
