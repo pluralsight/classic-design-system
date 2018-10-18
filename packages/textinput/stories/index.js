@@ -73,6 +73,7 @@ const disabledStory = storiesOf('disabled', module)
 const whitelistStory = storiesOf('whitelist', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
+  .add('title', _ => <TextInput title="some title" />)
   .add('type=password', _ => (
     <TextInput placeholder="Password" type="password" />
   ))

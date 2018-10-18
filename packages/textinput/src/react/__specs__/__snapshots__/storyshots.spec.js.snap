@@ -45,7 +45,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
           data-css-loo18p=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="warning icon"
@@ -105,7 +105,7 @@ exports[`Storyshots appearance default w/ iconAlign left 1`] = `
           data-css-yntvgr=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="info icon"
@@ -165,7 +165,7 @@ exports[`Storyshots appearance default w/ iconAlign right 1`] = `
           data-css-3rd0lv=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="info icon"
@@ -230,7 +230,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           data-css-loo18p=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="warning icon"
@@ -290,7 +290,7 @@ exports[`Storyshots appearance subtle w/ iconAlign left 1`] = `
           data-css-hgugth=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="info icon"
@@ -350,7 +350,7 @@ exports[`Storyshots appearance subtle w/ iconAlign right 1`] = `
           data-css-y2nw0k=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="info icon"
@@ -816,7 +816,7 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-loo18p=""
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="warning icon"
@@ -886,7 +886,7 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-loo18p=""
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="warning icon"
@@ -962,7 +962,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
               data-css-hgugth=""
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="search icon"
@@ -1051,7 +1051,7 @@ exports[`Storyshots style override css 1`] = `
               data-css-loo18p=""
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="warning icon"
@@ -1152,6 +1152,49 @@ exports[`Storyshots whitelist onChange 1`] = `
           onChange={[Function]}
           onFocus={[Function]}
           placeholder="Change me"
+        />
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots whitelist title 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-w0yocm=""
+    >
+      <div
+        data-css-17d9xcr=""
+      >
+        <input
+          data-css-ly16us=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder={undefined}
+          title="some title"
         />
       </div>
     </label>

@@ -9,14 +9,15 @@ import css from '../css'
 import * as vars from '../vars'
 
 const textInputHtmlPropsWhitelist = [
-  'type',
-  'name',
   'autocomplete',
   'autofocus',
+  'defaultValue',
+  'name',
   'role',
   'tabIndex',
+  'title',
+  'type',
   'value',
-  'defaultValue',
   /^on/,
   /^aria-/,
   /^data-/,
