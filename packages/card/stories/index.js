@@ -82,9 +82,21 @@ const comboStory = storiesOf('combo', module)
       ))}
       metadata2={['Goodness me!']}
       actionBar={[
-        <Card.Action key="bookmark" icon={<Icon id={Icon.ids.bookmark} />} />,
-        <Card.Action key="gear" icon={<Icon id={Icon.ids.gear} />} />,
-        <Card.Action key="more" icon={<Icon id={Icon.ids.more} />} />
+        <Card.Action
+          key="bookmark"
+          icon={<Icon id={Icon.ids.bookmark} />}
+          title="Bookmark"
+        />,
+        <Card.Action
+          key="gear"
+          icon={<Icon id={Icon.ids.gear} />}
+          title="Settings"
+        />,
+        <Card.Action
+          key="more"
+          icon={<Icon id={Icon.ids.more} />}
+          title="More"
+        />
       ]}
       actionBarVisible
       tag={<Card.Tag icon={<Icon id={Icon.ids.path} />}>Path</Card.Tag>}
@@ -148,20 +160,40 @@ const actionBarStory = storiesOf('actionBar', module)
   .addDecorator(themeDecorator(addons))
   .add('single action', _ => (
     <CardWithDefaults
-      actionBar={[<Card.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
+      actionBar={[
+        <Card.Action
+          key="bookmark"
+          icon={<Icon id="bookmark" />}
+          title="Bookmark"
+        />
+      ]}
     />
   ))
   .add('multiple actions', _ => (
     <CardWithDefaults
       actionBar={[
-        <Card.Action key="bookmark" icon={<Icon id={Icon.ids.bookmark} />} />,
-        <Card.Action key="paths" icon={<Icon id={Icon.ids.more} />} />
+        <Card.Action
+          key="bookmark"
+          icon={<Icon id={Icon.ids.bookmark} />}
+          title="Bookmark"
+        />,
+        <Card.Action
+          key="paths"
+          icon={<Icon id={Icon.ids.more} />}
+          title="More"
+        />
       ]}
     />
   ))
   .add('locked visible', _ => (
     <CardWithDefaults
-      actionBar={[<Card.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
+      actionBar={[
+        <Card.Action
+          key="bookmark"
+          icon={<Icon id="bookmark" />}
+          title="Bookmark"
+        />
+      ]}
       actionBarVisible
     />
   ))

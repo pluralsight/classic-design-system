@@ -83,12 +83,6 @@ const ActionBar = glamorous.div(
     actionBarVisible ? css['.psds-card__action-bar--actionBarVisible'] : null
 )
 
-const ActionBarAction = props => {
-  const filteredProps = {}
-  if (props.onClick) filteredProps.onClick = props.onClick
-  return <ActionButton {...filteredProps}>{props.icon}</ActionButton>
-}
-
 const ActionButton = glamorous.button(
   {
     ...css['.psds-card__action-bar__button'],
@@ -105,8 +99,16 @@ const ActionButton = glamorous.button(
         }
       : null
 )
+
+const ActionBarAction = props => {
+  const filteredProps = { title: props.title }
+  if (props.onClick) filteredProps.onClick = props.onClick
+  return <ActionButton {...filteredProps}>{props.icon}</ActionButton>
+}
+
 ActionBarAction.propTypes = {
-  icon: PropTypes.element.isRequired
+  icon: PropTypes.element.isRequired,
+  title: PropTypes.string.isRequired
 }
 
 const renderActionBar = props =>

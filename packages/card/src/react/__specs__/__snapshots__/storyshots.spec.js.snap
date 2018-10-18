@@ -24,23 +24,24 @@ exports[`Storyshots actionBar locked visible 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
         <div
-          className="css-39snau"
+          className="css-index--actionbar-hhfz5"
         >
           <button
-            className="css-168lizi"
+            className="css-index--actionbutton-1ov20xo"
+            title="Bookmark"
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="bookmark icon"
@@ -57,10 +58,10 @@ exports[`Storyshots actionBar locked visible 1`] = `
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -180,23 +181,24 @@ exports[`Storyshots actionBar multiple actions 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
         <div
-          className="css-10jeq4t"
+          className="css-index--actionbar-17irhp0"
         >
           <button
-            className="css-168lizi"
+            className="css-index--actionbutton-1ov20xo"
+            title="Bookmark"
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="bookmark icon"
@@ -211,10 +213,11 @@ exports[`Storyshots actionBar multiple actions 1`] = `
             </div>
           </button>
           <button
-            className="css-168lizi"
+            className="css-index--actionbutton-1ov20xo"
+            title="More"
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="more icon"
@@ -231,10 +234,10 @@ exports[`Storyshots actionBar multiple actions 1`] = `
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -354,23 +357,24 @@ exports[`Storyshots actionBar single action 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
         <div
-          className="css-10jeq4t"
+          className="css-index--actionbar-17irhp0"
         >
           <button
-            className="css-168lizi"
+            className="css-index--actionbutton-1ov20xo"
+            title="Bookmark"
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="bookmark icon"
@@ -387,10 +391,10 @@ exports[`Storyshots actionBar single action 1`] = `
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -510,26 +514,26 @@ exports[`Storyshots bonusBar only text 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
         <div
-          className="css-1pi4dj8"
+          className="css-index--bonusbar-mku8da"
         >
           Wow, I'm bonus.
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -649,20 +653,20 @@ exports[`Storyshots bonusBar some element 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
         <div
-          className="css-1pi4dj8"
+          className="css-index--bonusbar-mku8da"
         >
           <div
-            className="css-7wkwcf"
+            className="css-index--iconcontainer-19o9peb"
           >
             <svg
               aria-label="channel icon"
@@ -678,10 +682,10 @@ exports[`Storyshots bonusBar some element 1`] = `
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -801,34 +805,34 @@ exports[`Storyshots combo everything 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <span
-          className="css-15yq56v"
+          className="css-index--imagelink-fw1euf"
         >
           <a
             href="http://duckduckgo.com?q=image"
           >
             <div
-              className="css-1wgk747"
+              className="css-index--imagediv-qz0gm6"
             />
           </a>
         </span>
         <div
-          className="css-10pysoa"
+          className="css-index--fulloverlay-r1aat9"
         >
           <span
-            className="css-yvsvuk"
+            className="css-index--fulloverlaylinkspan-4hb71a"
           >
             <a
               href="http://duckduckgo.com?q=overlay"
             >
               <div
-                className="css-195ztb"
+                className="css-index--iconcontainer-ijusmq"
               >
                 <svg
                   aria-label="play circle icon"
@@ -845,13 +849,14 @@ exports[`Storyshots combo everything 1`] = `
           </span>
         </div>
         <div
-          className="css-39snau"
+          className="css-index--actionbar-hhfz5"
         >
           <button
-            className="css-168lizi"
+            className="css-index--actionbutton-1ov20xo"
+            title="Bookmark"
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="bookmark icon"
@@ -866,10 +871,11 @@ exports[`Storyshots combo everything 1`] = `
             </div>
           </button>
           <button
-            className="css-168lizi"
+            className="css-index--actionbutton-1ov20xo"
+            title="Settings"
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="gear icon"
@@ -884,10 +890,11 @@ exports[`Storyshots combo everything 1`] = `
             </div>
           </button>
           <button
-            className="css-168lizi"
+            className="css-index--actionbutton-1ov20xo"
+            title="More"
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="more icon"
@@ -903,13 +910,13 @@ exports[`Storyshots combo everything 1`] = `
           </button>
         </div>
         <div
-          className="css-l6z19x"
+          className="css-index--tagdiv-11ejcp6"
         >
           <div
-            className="css-1pif58i"
+            className="css-index--tagicon-s5wtm5"
           >
             <div
-              className="css-12f5sv2"
+              className="css-index--iconcontainer-1faf6pt"
             >
               <svg
                 aria-label="path icon"
@@ -924,23 +931,23 @@ exports[`Storyshots combo everything 1`] = `
             </div>
           </div>
           <span
-            className="css-tz46pd"
+            className="css-index--tagtext-1df45ox"
           >
             Path
           </span>
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <span
-          className="css-1kcq1x5"
+          className="css-index--textlink-s873co"
         >
           <a
             href="http://duckduckgo.com?q=title"
           >
             <div
-              className="css-1tlmf72"
+              className="css-index--titlediv-a59z9v"
             >
               <div
                 className=""
@@ -1034,13 +1041,13 @@ exports[`Storyshots combo everything 1`] = `
         </span>
       </div>
       <div
-        className="css-bcrrqv"
+        className="css-index--metadata-132t99m"
       >
         <span
-          className="css-1tz10dh"
+          className="css-index--metadatadatum-1s0mbn"
         >
           <span
-            className="css-1kcq1x5"
+            className="css-index--textlink-s873co"
           >
             <a
               href="http://duckduckgo.com/?q=jaketrent"
@@ -1051,15 +1058,15 @@ exports[`Storyshots combo everything 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="css-kykfz1"
+          className="css-index--metadatadot-jgxppi"
         >
           ·
         </span>
         <span
-          className="css-1tz10dh"
+          className="css-index--metadatadatum-1s0mbn"
         >
           <span
-            className="css-1kcq1x5"
+            className="css-index--textlink-s873co"
           >
             <a
               href="http://duckduckgo.com/?q=jaketrent"
@@ -1070,15 +1077,15 @@ exports[`Storyshots combo everything 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="css-kykfz1"
+          className="css-index--metadatadot-jgxppi"
         >
           ·
         </span>
         <span
-          className="css-1tz10dh"
+          className="css-index--metadatadatum-1s0mbn"
         >
           <span
-            className="css-1kcq1x5"
+            className="css-index--textlink-s873co"
           >
             <a
               href="http://duckduckgo.com/?q=jaketrent"
@@ -1089,10 +1096,10 @@ exports[`Storyshots combo everything 1`] = `
         </span>
       </div>
       <div
-        className="css-bcrrqv"
+        className="css-index--metadata-132t99m"
       >
         <span
-          className="css-1tz10dh"
+          className="css-index--metadatadatum-1s0mbn"
         >
           Goodness me!
         </span>
@@ -1126,20 +1133,20 @@ exports[`Storyshots fullOverlay link 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
         <div
-          className="css-4nxbcy"
+          className="css-index--fulloverlay-1grv38i"
         >
           <span
-            className="css-yvsvuk"
+            className="css-index--fulloverlaylinkspan-4hb71a"
           >
             <a
               href="http://duckduckgo.com?q=overlay"
@@ -1150,10 +1157,10 @@ exports[`Storyshots fullOverlay link 1`] = `
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -1273,26 +1280,26 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
         <div
-          className="css-4nxbcy"
+          className="css-index--fulloverlay-1grv38i"
         >
           <span
-            className="css-yvsvuk"
+            className="css-index--fulloverlaylinkspan-4hb71a"
           >
             <a
               href="http://duckduckgo.com?q=overlay"
             >
               <div
-                className="css-195ztb"
+                className="css-index--iconcontainer-ijusmq"
               >
                 <svg
                   aria-label="play circle icon"
@@ -1310,10 +1317,10 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -1433,34 +1440,34 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <span
-          className="css-15yq56v"
+          className="css-index--imagelink-fw1euf"
         >
           <a
             href="http://duckduckgo.com?q=image"
           >
             <div
-              className="css-1wgk747"
+              className="css-index--imagediv-qz0gm6"
             />
           </a>
         </span>
         <div
-          className="css-4nxbcy"
+          className="css-index--fulloverlay-1grv38i"
         >
           <span
-            className="css-yvsvuk"
+            className="css-index--fulloverlaylinkspan-4hb71a"
           >
             <a
               href="http://duckduckgo.com?q=overlay"
             >
               <div
-                className="css-195ztb"
+                className="css-index--iconcontainer-ijusmq"
               >
                 <svg
                   aria-label="play circle icon"
@@ -1478,10 +1485,10 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -1601,30 +1608,30 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
         <div
-          className="css-10pysoa"
+          className="css-index--fulloverlay-r1aat9"
         >
           <span
-            className="css-yvsvuk"
+            className="css-index--fulloverlaylinkspan-4hb71a"
           >
             Element
           </span>
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -1744,30 +1751,30 @@ exports[`Storyshots fullOverlay text only 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
         <div
-          className="css-4nxbcy"
+          className="css-index--fulloverlay-1grv38i"
         >
           <span
-            className="css-yvsvuk"
+            className="css-index--fulloverlaylinkspan-4hb71a"
           >
             Element
           </span>
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -1887,29 +1894,29 @@ exports[`Storyshots image image link 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <span
-          className="css-15yq56v"
+          className="css-index--imagelink-fw1euf"
         >
           <a
             href="http://duckduckgo.com"
           >
             <div
-              className="css-11sk7pq"
+              className="css-index--imagediv-1f9q8ur"
             />
           </a>
         </span>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -2029,21 +2036,21 @@ exports[`Storyshots image image only 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-11sk7pq"
+          className="css-index--imagediv-1f9q8ur"
         />
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -2163,21 +2170,21 @@ exports[`Storyshots metadata multiple text 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -2269,21 +2276,21 @@ exports[`Storyshots metadata multiple text 1`] = `
         </div>
       </div>
       <div
-        className="css-bcrrqv"
+        className="css-index--metadata-132t99m"
       >
         <span
-          className="css-1tz10dh"
+          className="css-index--metadatadatum-1s0mbn"
         >
           Jim Cooper
         </span>
         <span
           aria-hidden={true}
-          className="css-kykfz1"
+          className="css-index--metadatadot-jgxppi"
         >
           ·
         </span>
         <span
-          className="css-1tz10dh"
+          className="css-index--metadatadatum-1s0mbn"
         >
           Of the Far North
         </span>
@@ -2317,21 +2324,21 @@ exports[`Storyshots metadata single text 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -2423,10 +2430,10 @@ exports[`Storyshots metadata single text 1`] = `
         </div>
       </div>
       <div
-        className="css-bcrrqv"
+        className="css-index--metadata-132t99m"
       >
         <span
-          className="css-1tz10dh"
+          className="css-index--metadatadatum-1s0mbn"
         >
           Jim Cooper
         </span>
@@ -2460,21 +2467,21 @@ exports[`Storyshots metadata text link 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -2566,13 +2573,13 @@ exports[`Storyshots metadata text link 1`] = `
         </div>
       </div>
       <div
-        className="css-bcrrqv"
+        className="css-index--metadata-132t99m"
       >
         <span
-          className="css-1tz10dh"
+          className="css-index--metadatadatum-1s0mbn"
         >
           <span
-            className="css-1kcq1x5"
+            className="css-index--textlink-s873co"
           >
             <a
               href="http://duckduckgo.com?q=jim%20cooper"
@@ -2611,21 +2618,21 @@ exports[`Storyshots metadata text wrapper 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -2717,13 +2724,13 @@ exports[`Storyshots metadata text wrapper 1`] = `
         </div>
       </div>
       <div
-        className="css-bcrrqv"
+        className="css-index--metadata-132t99m"
       >
         <span
-          className="css-1tz10dh"
+          className="css-index--metadatadatum-1s0mbn"
         >
           <span
-            className="css-nil"
+            className="css-index--text-ve4ny8"
           >
             Jim Cooper
           </span>
@@ -2758,21 +2765,21 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -2864,13 +2871,13 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         </div>
       </div>
       <div
-        className="css-bcrrqv"
+        className="css-index--metadata-132t99m"
       >
         <span
-          className="css-1tz10dh"
+          className="css-index--metadatadatum-1s0mbn"
         >
           <span
-            className="css-1kcq1x5"
+            className="css-index--textlink-s873co"
           >
             <a
               href="http://duckduckgo.com?q=jim%20cooper"
@@ -2881,13 +2888,13 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         </span>
       </div>
       <div
-        className="css-bcrrqv"
+        className="css-index--metadata-132t99m"
       >
         <span
-          className="css-1tz10dh"
+          className="css-index--metadatadatum-1s0mbn"
         >
           <span
-            className="css-1kcq1x5"
+            className="css-index--textlink-s873co"
           >
             <a
               href="http://duckduckgo.com?q=react"
@@ -2898,26 +2905,26 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="css-kykfz1"
+          className="css-index--metadatadot-jgxppi"
         >
           ·
         </span>
         <span
-          className="css-1tz10dh"
+          className="css-index--metadatadatum-1s0mbn"
         >
           Intermediate
         </span>
         <span
           aria-hidden={true}
-          className="css-kykfz1"
+          className="css-index--metadatadot-jgxppi"
         >
           ·
         </span>
         <span
-          className="css-1tz10dh"
+          className="css-index--metadatadatum-1s0mbn"
         >
           <span
-            className="css-nil"
+            className="css-index--text-ve4ny8"
           >
             90 mins
           </span>
@@ -2952,29 +2959,29 @@ exports[`Storyshots progress done 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
         <div
-          className="css-268zju"
+          className="css-index--progress-d58tbk"
         >
           <div
             aria-label="100% complete"
-            className="css-1qb9ko2"
+            className="css-index--progressbar-1wv9odo"
           />
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -3094,21 +3101,21 @@ exports[`Storyshots progress none 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -3228,29 +3235,29 @@ exports[`Storyshots progress some 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
         <div
-          className="css-268zju"
+          className="css-index--progress-d58tbk"
         >
           <div
             aria-label="34% complete"
-            className="css-59crt4"
+            className="css-index--progressbar-ht86ya"
           />
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -3370,21 +3377,21 @@ exports[`Storyshots size large 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-14neud7"
+        className="css-index--overlays-ekxcbk"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
       </div>
       <div
-        className="css-fvo1sh"
+        className="css-index--titlecontainer-jrw3iw"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -3504,21 +3511,21 @@ exports[`Storyshots size medium 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -3638,21 +3645,21 @@ exports[`Storyshots size small 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1bnkubs"
+        className="css-index--overlays-1llr2oo"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
       </div>
       <div
-        className="css-pzomq8"
+        className="css-index--titlecontainer-lli1eg"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -3772,23 +3779,23 @@ exports[`Storyshots tag long multi-word 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
         <div
-          className="css-l6z19x"
+          className="css-index--tagdiv-11ejcp6"
         >
           <div
-            className="css-1pif58i"
+            className="css-index--tagicon-s5wtm5"
           >
             <div
-              className="css-12f5sv2"
+              className="css-index--iconcontainer-1faf6pt"
             >
               <svg
                 aria-label="channel icon"
@@ -3803,17 +3810,17 @@ exports[`Storyshots tag long multi-word 1`] = `
             </div>
           </div>
           <span
-            className="css-tz46pd"
+            className="css-index--tagtext-1df45ox"
           >
             Channel Channel Channel Channel Channel Channel Channel Channel Channel
           </span>
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -3933,23 +3940,23 @@ exports[`Storyshots tag long single word 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
         <div
-          className="css-l6z19x"
+          className="css-index--tagdiv-11ejcp6"
         >
           <div
-            className="css-1pif58i"
+            className="css-index--tagicon-s5wtm5"
           >
             <div
-              className="css-12f5sv2"
+              className="css-index--iconcontainer-1faf6pt"
             >
               <svg
                 aria-label="channel icon"
@@ -3964,17 +3971,17 @@ exports[`Storyshots tag long single word 1`] = `
             </div>
           </div>
           <span
-            className="css-tz46pd"
+            className="css-index--tagtext-1df45ox"
           >
             ChannelChannelChannelChannelChannelChannelChannelChannelChannelChannelChannel
           </span>
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -4094,30 +4101,30 @@ exports[`Storyshots tag text only 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
         <div
-          className="css-l6z19x"
+          className="css-index--tagdiv-11ejcp6"
         >
           <span
-            className="css-tz46pd"
+            className="css-index--tagtext-1df45ox"
           >
             Channel
           </span>
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -4237,23 +4244,23 @@ exports[`Storyshots tag with icon 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
         <div
-          className="css-l6z19x"
+          className="css-index--tagdiv-11ejcp6"
         >
           <div
-            className="css-1pif58i"
+            className="css-index--tagicon-s5wtm5"
           >
             <div
-              className="css-12f5sv2"
+              className="css-index--iconcontainer-1faf6pt"
             >
               <svg
                 aria-label="channel icon"
@@ -4268,17 +4275,17 @@ exports[`Storyshots tag with icon 1`] = `
             </div>
           </div>
           <span
-            className="css-tz46pd"
+            className="css-index--tagtext-1df45ox"
           >
             Channel
           </span>
         </div>
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -4398,27 +4405,27 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <span
-          className="css-1kcq1x5"
+          className="css-index--textlink-s873co"
         >
           <a
             href="http://duckduckgo.com?q=text"
           >
             <div
-              className="css-1tlmf72"
+              className="css-index--titlediv-a59z9v"
             >
               <div
                 className=""
@@ -4540,21 +4547,21 @@ exports[`Storyshots title long title, title wrapper 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
@@ -4674,27 +4681,27 @@ exports[`Storyshots title text link with title wrapper 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <span
-          className="css-1kcq1x5"
+          className="css-index--textlink-s873co"
         >
           <a
             href="http://duckduckgo.com?q=text"
           >
             <div
-              className="css-1tlmf72"
+              className="css-index--titlediv-a59z9v"
             >
               <div
                 className=""
@@ -4816,21 +4823,21 @@ exports[`Storyshots title title wrapper 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      className="css-index--card-n00bb0"
       style={undefined}
     >
       <div
-        className="css-1pb0z5d"
+        className="css-index--overlays-itz0ny"
       >
         <div
-          className="css-1wgk747"
+          className="css-index--imagediv-qz0gm6"
         />
       </div>
       <div
-        className="css-piydn8"
+        className="css-index--titlecontainer-1dx9yk1"
       >
         <div
-          className="css-1tlmf72"
+          className="css-index--titlediv-a59z9v"
         >
           <div
             className=""
