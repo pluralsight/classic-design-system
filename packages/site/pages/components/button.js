@@ -1,5 +1,6 @@
 import Button from '@pluralsight/ps-design-system-button/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import Text from '@pluralsight/ps-design-system-text/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
@@ -128,17 +129,24 @@ export default withServerProps(_ => (
 
       <SectionHeading>Icon only</SectionHeading>
       <P>
-        Buttons may include an icon without a label. Read more{' '}
-        <Link href="/components/icon">icon docs</Link>.
+        Buttons may include an icon without a label. Please provide a{' '}
+        <Text.Code>title</Text.Code> prop to display the native tooltip as well
+        as to support assitive technology(i.e. screen readers).
       </P>
+
+      <P>
+        Read more <Link href="/components/icon">icon docs</Link>.
+      </P>
+
       <Example.React
         includes={{ Button, Icon }}
         codes={[
-          `<Button icon={<Icon id={Icon.ids.user} />} />`,
+          `<Button icon={<Icon id={Icon.ids.user} />} title="Profile" />`,
           `
 <Button
   icon={<Icon id={Icon.ids.user} />}
   appearance={Button.appearances.flat}
+  title="Profile"
 />`
         ]}
       />
