@@ -38,6 +38,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
         >
           <button
             className="css-index--actionbutton-1ov20xo"
+            title="Bookmark"
           >
             <div
               className="css-index--iconcontainer-1o7wiin"
@@ -194,6 +195,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
         >
           <button
             className="css-index--actionbutton-1ov20xo"
+            title="Bookmark"
           >
             <div
               className="css-index--iconcontainer-1o7wiin"
@@ -212,6 +214,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
           </button>
           <button
             className="css-index--actionbutton-1ov20xo"
+            title="More"
           >
             <div
               className="css-index--iconcontainer-1o7wiin"
@@ -368,6 +371,7 @@ exports[`Storyshots actionBar single action 1`] = `
         >
           <button
             className="css-index--actionbutton-1ov20xo"
+            title="Bookmark"
           >
             <div
               className="css-index--iconcontainer-1o7wiin"
@@ -849,6 +853,7 @@ exports[`Storyshots combo everything 1`] = `
         >
           <button
             className="css-index--actionbutton-1ov20xo"
+            title="Bookmark"
           >
             <div
               className="css-index--iconcontainer-1o7wiin"
@@ -867,6 +872,7 @@ exports[`Storyshots combo everything 1`] = `
           </button>
           <button
             className="css-index--actionbutton-1ov20xo"
+            title="Settings"
           >
             <div
               className="css-index--iconcontainer-1o7wiin"
@@ -885,6 +891,7 @@ exports[`Storyshots combo everything 1`] = `
           </button>
           <button
             className="css-index--actionbutton-1ov20xo"
+            title="More"
           >
             <div
               className="css-index--iconcontainer-1o7wiin"
