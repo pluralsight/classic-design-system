@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.4"></a>
+## [1.3.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@1.3.3...@pluralsight/ps-design-system-errors@1.3.4) (2018-10-18)
+
+
+### Bug Fixes
+
+* **errors:** update errors Heading component to use theme context ([7f1a89d](https://github.com/pluralsight/design-system/commit/7f1a89d))
+* **errors:** update snapshots ([59aac0a](https://github.com/pluralsight/design-system/commit/59aac0a))
+
+
+
+
 <a name="1.3.3"></a>
 ## [1.3.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@1.3.2...@pluralsight/ps-design-system-errors@1.3.3) (2018-10-10)
 

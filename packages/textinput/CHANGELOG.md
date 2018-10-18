@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.6"></a>
+## [0.5.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.5...@pluralsight/ps-design-system-textinput@0.5.6) (2018-10-18)
+
+
+### Bug Fixes
+
+* **textinput:** whilelist title prop ([a72ebd3](https://github.com/pluralsight/design-system/commit/a72ebd3)), closes [#276](https://github.com/pluralsight/design-system/issues/276)
+
+
+
+
 <a name="0.5.4"></a>
 ## [0.5.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.3...@pluralsight/ps-design-system-textinput@0.5.4) (2018-10-17)
 
