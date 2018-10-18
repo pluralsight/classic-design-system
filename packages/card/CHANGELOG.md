@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.5.0"></a>
+# [8.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.4.13...@pluralsight/ps-design-system-card@8.5.0) (2018-10-18)
+
+
+### Features
+
+* **card:** require title prop on Card.Action ([122c324](https://github.com/pluralsight/design-system/commit/122c324)), closes [#162](https://github.com/pluralsight/design-system/issues/162)
+
+
+
+
 <a name="8.4.13"></a>
 ## [8.4.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.4.12...@pluralsight/ps-design-system-card@8.4.13) (2018-10-10)
 

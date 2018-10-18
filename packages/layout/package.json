@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-layout",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Design system components for ui layouts",
   "main": "index.js",
   "module": "index.js",
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.3.3",
-    "@pluralsight/ps-design-system-text": "^10.7.13",
+    "@pluralsight/ps-design-system-text": "^10.7.14",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
