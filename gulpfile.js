@@ -4,11 +4,12 @@ const gulp = require('gulp')
 const octo = require('@octopusdeploy/gulp-octo')
 const path = require('path')
 
-function verifyApp() {
-  if (!argv.app || !argv.pkgVersion)
+function verifyApp () {
+  if (!argv.app || !argv.pkgVersion) {
     throw new Error(
       'So which app and version did you want to publish then? Set with --app {name} --pkgVersion {semVer}'
     )
+  }
 }
 
 gulp.task('bump', () => {
@@ -22,8 +23,9 @@ gulp.task('bump', () => {
 
 gulp.task('octopus-publish', ['bump'], () => {
   verifyApp()
-  if (!argv.host || !argv.apiKey)
+  if (!argv.host || !argv.apiKey) {
     throw new Error('Forgot to include --host or --apiKey')
+  }
 
   const pkg = [
     `packages/${argv.app}/dist/**/*`,

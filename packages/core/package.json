@@ -2,18 +2,18 @@
   "name": "@pluralsight/ps-design-system-core",
   "version": "4.3.3",
   "description": "Collection of Core design elements for the Design System",
+  "license": "Apache-2.0",
+  "repository": "pluralsight/design-system",
+  "author": "jaketrent",
   "main": "js/index.js",
   "module": "js/index.js",
-  "style": "css/index.css",
   "scripts": {
     "build": "node ./build",
     "prepublish": "npm run build",
     "test": "echo \"Error: tests are run as a single design system suite\" && exit 1"
   },
   "keywords": [],
-  "author": "jaketrent",
-  "license": "Apache-2.0",
-  "repository": "pluralsight/design-system",
+  "style": "css/index.css",
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.3",
     "autoprefixer": "^7.1.1",
