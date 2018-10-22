@@ -2,6 +2,7 @@ import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { transparentize } from 'polished'
 import {
   defaultName as themeDefaultName,
   names as themeNames
@@ -23,6 +24,20 @@ const ICONS = {
     },
     empty: {
       fill: core.colors.gray03,
+      id: Icon.ids.starFill
+    },
+    hover: {
+      fill: core.colors.gray04,
+      id: Icon.ids.star
+    }
+  },
+  light: {
+    full: {
+      fill: core.colors.yellow,
+      id: Icon.ids.starFill
+    },
+    empty: {
+      fill: transparentize(0.25, core.colors.gray01),
       id: Icon.ids.starFill
     },
     hover: {
@@ -60,7 +75,7 @@ class StarRating extends React.Component {
   }
   generateIcons(themeName) {
     const { hoverIndex } = this.state
-    const { value } = this.props
+    const { value, theme } = this.props
 
     const halfIntRoundedValue = Math.floor(value * 2) / 2
 
@@ -164,6 +179,10 @@ StarRating.propTypes = {
 StarRating.defaultProps = {
   value: null,
   onClick: null
+}
+
+StarRating.contextTypes = {
+  themeName: PropTypes.string
 }
 
 export default StarRating

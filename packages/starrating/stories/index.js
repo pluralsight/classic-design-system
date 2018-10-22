@@ -16,3 +16,11 @@ const valueStory = storiesOf('value', module)
 const onClickStory = storiesOf('onClick', module)
 onClickStory.add('onClick', _ => <StarRating value={4.5} onClick={alert} />)
 onClickStory.add('!onClick', _ => <StarRating value={4.5} />)
+
+const themeStory = storiesOf('theme', module)
+themeStory.add('dark', _ => <StarRating value={2.5} />)
+themeStory.add('light', _ => (
+  <Theme name={Theme.names.light}>
+    <StarRating value={2.5} />
+  </Theme>
+))
