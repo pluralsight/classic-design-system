@@ -1,17 +1,20 @@
 {
   "name": "design-system",
   "version": "1.0.0",
-  "private": true,
   "description": "Pluralsight design system",
-  "main": "packages/site/index.js",
+  "license": "Apache-2.0",
+  "private": true,
   "engines": {
     "node": ">= 7.9",
     "npm": ">= 4.2"
   },
+  "author": "jaketrent",
+  "main": "packages/site/index.js",
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
     "commitmsg": "commitlint -e",
+    "lint": "eslint --ignore-path .gitignore .",
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
     "publish": "lerna publish --conventional-commits --message \"chore: publish\"",
@@ -19,21 +22,44 @@
     "site": "cd packages/site && npm start",
     "start": "npm run site",
     "test": "jest",
-    "test:watch": "npm run test -- --watchAll",
-    "test:updateSnapshot": "npm run test -- --updateSnapshot"
+    "test:updateSnapshot": "npm run test -- --updateSnapshot",
+    "test:watch": "npm run test -- --watchAll"
   },
+  "lint-staged": {
+    "**/*.js": [
+      "prettier-eslint --write",
+      "git add"
+    ],
+    "package.json": [
+      "format-package -w",
+      "git add"
+    ],
+    "packages/**/*.css": [
+      "node_modules/.bin/prettier --single-quote --no-semi --write",
+      "git add"
+    ]
+  },
+  "browserslist": "last 4 versions",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.css$": "identity-obj-proxy",
+      "\\.svg$": "<rootDir>/test/__mocks__/svg-mock.js"
+    },
+    "testRegex": "packages/.*(/__tests__/.*|(\\.|/)(test|spec))\\.jsx?$",
+    "transformIgnorePatterns": [
+      "<rootDir>.*(node_modules)(?!.*@pluralsight.*).*$"
+    ]
   },
   "keywords": [
     "pluralsight",
     "design system",
     "pattern library"
   ],
-  "author": "jaketrent",
-  "license": "Apache-2.0",
   "dependencies": {
     "glamor": "^2.20.39",
     "react": "^16.2.0",
@@ -51,6 +77,16 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "camelize": "^1.0.0",
+    "eslint": "^5.7.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-react": "^7.0.2",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.25.1",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "format-package": "^4.5.0",
     "gulp": "^3.9.1",
     "gulp-bump": "^3.1.0",
     "husky": "^0.15.0-rc.13",
@@ -60,28 +96,8 @@
     "lint-staged": "^4.0.2",
     "octopus-deploy": "^4.0.0",
     "prettier": "^1.7.4",
+    "prettier-eslint-cli": "^4.7.1",
     "react-test-renderer": "^16.3.2",
     "yargs": "^11.0.0"
-  },
-  "lint-staged": {
-    "packages/**/*.js": [
-      "node_modules/.bin/prettier --single-quote --no-semi --write",
-      "git add"
-    ],
-    "packages/**/*.css": [
-      "node_modules/.bin/prettier --single-quote --no-semi --write",
-      "git add"
-    ]
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.css$": "identity-obj-proxy",
-      "\\.svg$": "<rootDir>/test/__mocks__/svg-mock.js"
-    },
-    "testRegex": "packages/.*(/__tests__/.*|(\\.|/)(test|spec))\\.jsx?$",
-    "transformIgnorePatterns": [
-      "<rootDir>.*(node_modules)(?!.*@pluralsight.*).*$"
-    ]
-  },
-  "browserslist": "last 4 versions"
+  }
 }

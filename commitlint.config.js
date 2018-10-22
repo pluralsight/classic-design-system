@@ -3,7 +3,6 @@ const PackageUtilities = require('lerna/lib/PackageUtilities')
 
 function getPackageAbbreviations() {
   const prefix = `ps-design-system-`
-
   const cwd = process.cwd()
   const repo = new Repository(cwd)
 
