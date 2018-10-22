@@ -12,6 +12,7 @@
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
     "commitmsg": "commitlint -e",
+    "lint": "eslint --ignore-path .gitignore .",
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
     "publish": "lerna publish --conventional-commits --message \"chore: publish\"",
@@ -51,6 +52,15 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "camelize": "^1.0.0",
+    "eslint": "^5.7.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-react": "^7.0.2",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.25.1",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
     "gulp": "^3.9.1",
     "gulp-bump": "^3.1.0",
     "husky": "^0.15.0-rc.13",
@@ -60,12 +70,13 @@
     "lint-staged": "^4.0.2",
     "octopus-deploy": "^4.0.0",
     "prettier": "^1.7.4",
+    "prettier-eslint": "^8.8.2",
     "react-test-renderer": "^16.3.2",
     "yargs": "^11.0.0"
   },
   "lint-staged": {
-    "packages/**/*.js": [
-      "node_modules/.bin/prettier --single-quote --no-semi --write",
+    "**/*.js": [
+      "eslint --fix",
       "git add"
     ],
     "packages/**/*.css": [
