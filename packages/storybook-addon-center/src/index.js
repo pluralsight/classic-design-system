@@ -1,5 +1,3 @@
-// TODO: move to separate package
-
 import React from 'react'
 import { css } from 'glamor'
 
