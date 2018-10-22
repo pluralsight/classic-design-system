@@ -50,7 +50,6 @@ export default {
     left: '-4px',
     right: '-4px',
     bottom: '-4px',
-    zIndex: '-1',
     border: `3px solid ${core.colors.blue}`,
     borderRadius: '4px'
   },
