@@ -2,31 +2,31 @@
   "name": "@pluralsight/ps-design-system-layout",
   "version": "3.0.2",
   "description": "Design system components for ui layouts",
+  "license": "Apache-2.0",
+  "repository": "pluralsight/design-system",
+  "author": "jaketrent",
   "main": "index.js",
   "module": "index.js",
   "scripts": {
     "build": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build-storybook": "build-storybook",
     "build:watch": "npm run build -- --watch",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
     "test": "jest",
-    "test:watch": "npm run test -- --watchAll",
-    "test:updateSnapshot": "npm run test -- --updateSnapshot"
+    "test:updateSnapshot": "npm run test -- --updateSnapshot",
+    "test:watch": "npm run test -- --watchAll"
   },
   "keywords": [],
-  "author": "jaketrent",
-  "license": "Apache-2.0",
-  "repository": "pluralsight/design-system",
-  "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^3.0.24",
-    "glamor": "^2.20.0",
-    "react": ">=0.15.0 < 17.0.0"
-  },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.3.3",
     "@pluralsight/ps-design-system-text": "^10.7.14",
     "prop-types": "^15.5.10"
+  },
+  "peerDependencies": {
+    "@pluralsight/ps-design-system-normalize": "^3.0.24",
+    "glamor": "^2.20.0",
+    "react": ">=0.15.0 < 17.0.0"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-button": "^10.8.15",

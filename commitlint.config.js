@@ -1,7 +1,7 @@
 const Repository = require('lerna/lib/Repository')
 const PackageUtilities = require('lerna/lib/PackageUtilities')
 
-function getPackageAbbreviations() {
+function getPackageAbbreviations () {
   const cwd = process.cwd()
   const repo = new Repository(cwd)
   return PackageUtilities.getPackages({
