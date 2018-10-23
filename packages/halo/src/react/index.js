@@ -2,19 +2,19 @@ import * as glamor from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
-
 import css, { BASE_CLASS_NAME } from '../css'
 import * as vars from '../vars'
+
+import withDefaultTheme from './with-default-theme'
 
 const styles = {
   halo: () => glamor.css({ ...css[BASE_CLASS_NAME] })
 }
 
 const Halo = props => {
-  const { appearance, ...rest } = props
+  const { appearance, themeName, ...filteredProps } = props
 
-  return <div {...styles.halo(props)} {...rest} />
+  return <div {...styles.halo(props)} {...filteredProps} />
 }
 
 Halo.appearances = vars.appearances
@@ -25,7 +25,7 @@ Halo.defaultProps = {
 
 Halo.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
-  themeName: PropTypes.oneOf(Object.values(themeNames))
+  themeName: PropTypes.string
 }
 
-export default Halo
+export default withDefaultTheme(Halo)
