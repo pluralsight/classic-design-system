@@ -17,8 +17,20 @@ exports[`Storyshots appearance flat 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1w956hh=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Click me
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -39,8 +51,20 @@ exports[`Storyshots appearance primary 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-gukh6t=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Click me
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -61,8 +85,20 @@ exports[`Storyshots appearance stroke 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1jggn18=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Click me
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -83,8 +119,21 @@ exports[`Storyshots as link default 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <a
+      data-css-gukh6t=""
+      disabled={false}
+      href="https://duckduckgo.com"
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Click as link
+      </span>
+    </a>
+  </div>
 </div>
 `;
 
@@ -105,8 +154,39 @@ exports[`Storyshots as link with icon 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <a
+      data-css-1ak4m0j=""
+      disabled={false}
+      href="https://duckduckgo.com"
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="pencil icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.2762 15.862L5 19l3.1392-.275 8.0858-8.0858-2.863-2.863-8.0858 8.0858zm12.363-6.637l.7668-.7667c.384-.3842.5922-.887.5922-1.4318 0-.5455-.208-1.048-.5932-1.4328-.3838-.3838-.885-.5912-1.4308-.5912-.5446 0-1.047.208-1.4318.5932l-.7662.7663 2.863 2.863zm-.665-6.2225c1.076 0 2.086.418 2.845 1.177.761.76 1.179 1.772 1.179 2.847 0 1.074-.418 2.086-1.178 2.846l-10.409 10.409c-.128.128-.289.22-.464.263l-4.705.427c-.34.085-.702-.015-.949-.264-.248-.247-.348-.608-.264-.949l.427-4.704c.044-.176.135-.336.263-.464l10.409-10.409c.76-.761 1.772-1.179 2.846-1.179z"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        Click as link
+      </span>
+    </a>
+  </div>
 </div>
 `;
 
@@ -127,8 +207,21 @@ exports[`Storyshots disabled flat 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-89vhb7=""
+      disabled={true}
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Disabled
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -149,8 +242,21 @@ exports[`Storyshots disabled primary 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-15c311w=""
+      disabled={true}
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Disabled
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -171,8 +277,21 @@ exports[`Storyshots disabled stroke 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-bgorl0=""
+      disabled={true}
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Disabled
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -193,8 +312,38 @@ exports[`Storyshots disabled with icon 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-iavvef=""
+      disabled={true}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="pencil icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.2762 15.862L5 19l3.1392-.275 8.0858-8.0858-2.863-2.863-8.0858 8.0858zm12.363-6.637l.7668-.7667c.384-.3842.5922-.887.5922-1.4318 0-.5455-.208-1.048-.5932-1.4328-.3838-.3838-.885-.5912-1.4308-.5912-.5446 0-1.047.208-1.4318.5932l-.7662.7663 2.863 2.863zm-.665-6.2225c1.076 0 2.086.418 2.845 1.177.761.76 1.179 1.772 1.179 2.847 0 1.074-.418 2.086-1.178 2.846l-10.409 10.409c-.128.128-.289.22-.464.263l-4.705.427c-.34.085-.702-.015-.949-.264-.248-.247-.348-.608-.264-.949l.427-4.704c.044-.176.135-.336.263-.464l10.409-10.409c.76-.761 1.772-1.179 2.846-1.179z"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        Disabled
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -215,8 +364,38 @@ exports[`Storyshots icon flat 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1ph61im=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        With Icon
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -237,8 +416,38 @@ exports[`Storyshots icon large 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-355vri=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        With Icon
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -259,8 +468,38 @@ exports[`Storyshots icon left 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1ak4m0j=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        With Icon
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -281,8 +520,36 @@ exports[`Storyshots icon lone flat large 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-zgn0vq=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-y80vay=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
+  </div>
 </div>
 `;
 
@@ -303,8 +570,36 @@ exports[`Storyshots icon lone flat medium 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-icli51=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-y80vay=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
+  </div>
 </div>
 `;
 
@@ -325,8 +620,36 @@ exports[`Storyshots icon lone flat small 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-nml72w=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-y80vay=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
+  </div>
 </div>
 `;
 
@@ -347,8 +670,36 @@ exports[`Storyshots icon lone flat xSmall 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1i8p08p=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-y80vay=""
+      >
+        <div
+          className="css-index--iconcontainer-1faf6pt"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
+  </div>
 </div>
 `;
 
@@ -369,8 +720,36 @@ exports[`Storyshots icon lone primary large 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-pjxwt9=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-y80vay=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
+  </div>
 </div>
 `;
 
@@ -391,8 +770,36 @@ exports[`Storyshots icon lone primary medium 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1qepb4e=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-y80vay=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
+  </div>
 </div>
 `;
 
@@ -413,8 +820,36 @@ exports[`Storyshots icon lone primary small 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-4uig72=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-y80vay=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
+  </div>
 </div>
 `;
 
@@ -435,8 +870,36 @@ exports[`Storyshots icon lone primary xSmall 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-exn4cd=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-y80vay=""
+      >
+        <div
+          className="css-index--iconcontainer-1faf6pt"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
+  </div>
 </div>
 `;
 
@@ -457,8 +920,36 @@ exports[`Storyshots icon lone stroke large 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1y6ncdd=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-y80vay=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
+  </div>
 </div>
 `;
 
@@ -479,8 +970,36 @@ exports[`Storyshots icon lone stroke medium 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-s2knv0=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-y80vay=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
+  </div>
 </div>
 `;
 
@@ -501,8 +1020,36 @@ exports[`Storyshots icon lone stroke small 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1bh79r6=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-y80vay=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
+  </div>
 </div>
 `;
 
@@ -523,8 +1070,36 @@ exports[`Storyshots icon lone stroke xSmall 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-18ibw8n=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-y80vay=""
+      >
+        <div
+          className="css-index--iconcontainer-1faf6pt"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
+  </div>
 </div>
 `;
 
@@ -545,8 +1120,38 @@ exports[`Storyshots icon medium 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1ak4m0j=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        With Icon
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -567,8 +1172,38 @@ exports[`Storyshots icon primary 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1ak4m0j=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        With Icon
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -589,8 +1224,38 @@ exports[`Storyshots icon right 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-dj1kqf=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-8b1vtw=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        With Icon
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -611,8 +1276,38 @@ exports[`Storyshots icon small 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-tz6omh=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        With Icon
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -633,8 +1328,38 @@ exports[`Storyshots icon stroke 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-pimj8i=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        With Icon
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -655,8 +1380,38 @@ exports[`Storyshots icon xSmall 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1t91op8=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1faf6pt"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        With Icon
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -677,8 +1432,31 @@ exports[`Storyshots loading flat 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-10it3c9=""
+      disabled={true}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <span
+            data-css-1ec065u=""
+          />
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        Loading...
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -699,8 +1477,32 @@ exports[`Storyshots loading large 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1pn6jll=""
+      disabled={true}
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <span
+            data-css-10bxom6=""
+          />
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        Loading...
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -721,8 +1523,29 @@ exports[`Storyshots loading lone icon 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-pjxwt9=""
+      disabled={true}
+      style={Object {}}
+    >
+      <div
+        data-css-y80vay=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <span
+            data-css-10bxom6=""
+          />
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
+  </div>
 </div>
 `;
 
@@ -743,8 +1566,32 @@ exports[`Storyshots loading medium 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-gukh6t=""
+      disabled={true}
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <span
+            data-css-10bxom6=""
+          />
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        Loading...
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -765,8 +1612,20 @@ exports[`Storyshots loading no icon, hidden text 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1pn6jll=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Text doesnt show when loading if no icon
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -787,8 +1646,31 @@ exports[`Storyshots loading primary 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1pn6jll=""
+      disabled={true}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <span
+            data-css-10bxom6=""
+          />
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        Loading...
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -809,8 +1691,32 @@ exports[`Storyshots loading small 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1phrwsv=""
+      disabled={true}
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <span
+            data-css-10bxom6=""
+          />
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        Loading...
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -831,8 +1737,31 @@ exports[`Storyshots loading stroke 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-iy49zs=""
+      disabled={true}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <span
+            data-css-1jut5p0=""
+          />
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        Loading...
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -853,8 +1782,32 @@ exports[`Storyshots loading xSmall 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-12rwiei=""
+      disabled={true}
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1faf6pt"
+        >
+          <span
+            data-css-10bxom6=""
+          />
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        Loading...
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -875,8 +1828,43 @@ exports[`Storyshots override styles with className 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      className={
+        Object {
+          "data-css-jxpnuu": "",
+        }
+      }
+      data-css-1ak4m0j=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        Green Button
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -897,8 +1885,42 @@ exports[`Storyshots override styles with style 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1ak4m0j=""
+      disabled={false}
+      style={
+        Object {
+          "background": "red",
+        }
+      }
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        Red Button
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -919,8 +1941,21 @@ exports[`Storyshots props pass through aria-expanded 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      aria-expanded={true}
+      data-css-gukh6t=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        aria-expanded
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -941,8 +1976,21 @@ exports[`Storyshots props pass through data-something 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-gukh6t=""
+      data-something="wow"
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Custom data attributes
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -963,8 +2011,21 @@ exports[`Storyshots props pass through not supported 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-gukh6t=""
+      disabled={false}
+      onMouseOver={[Function]}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Should not mouseover
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -985,8 +2046,21 @@ exports[`Storyshots props pass through role 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-gukh6t=""
+      disabled={false}
+      role="link"
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Role Link
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -1007,8 +2081,21 @@ exports[`Storyshots props pass through title 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-gukh6t=""
+      disabled={false}
+      style={Object {}}
+      title="My caption"
+    >
+      <span
+        data-css-15b13by=""
+      >
+        With title
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -1029,8 +2116,20 @@ exports[`Storyshots size large 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1pn6jll=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Click me
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -1051,8 +2150,20 @@ exports[`Storyshots size medium 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-gukh6t=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Click me
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -1073,8 +2184,20 @@ exports[`Storyshots size small 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1phrwsv=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Click me
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -1095,8 +2218,20 @@ exports[`Storyshots size xSmall 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-12rwiei=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Click me
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -1117,8 +2252,39 @@ exports[`Storyshots with onClick clicks once 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-1ak4m0j=""
+      disabled={false}
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <div
+        data-css-1mgd019=""
+      >
+        <div
+          className="css-index--iconcontainer-1o7wiin"
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      >
+        Clicks once
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -1139,7 +2305,19 @@ exports[`Storyshots with ref ref to handle focus 1`] = `
   }
 >
   <div
-    data-storybook-center-decorator={true}
-  />
+    test-decorator-center={true}
+  >
+    <button
+      data-css-gukh6t=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Should be focused
+      </span>
+    </button>
+  </div>
 </div>
 `;

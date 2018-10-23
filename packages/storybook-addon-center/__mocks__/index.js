@@ -1,10 +1,10 @@
 var React = require('react')
 
-var CenterDecorator = props => {
+const Center = props => {
   return React.createElement('div', {
     ...props,
-    'data-storybook-center-decorator': true
+    'test-decorator-center': true
   })
 }
 
-module.exports = CenterDecorator
+module.exports = storyFn => React.createElement(Center, null, storyFn())
