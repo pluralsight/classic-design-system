@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots appearance primary 1`] = `
+<div
+  test-decorator-center={true}
+>
+  <div>
+    something in here
+  </div>
+</div>
+`;
