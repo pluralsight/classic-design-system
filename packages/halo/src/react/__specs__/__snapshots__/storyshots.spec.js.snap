@@ -17,13 +17,9 @@ exports[`Storyshots Halo/appearances default 1`] = `
   }
 >
   <div
-    test-decorator-center={true}
+    className="css-1uk2vau"
   >
-    <div
-      className="css-1uk2vau"
-    >
-      default
-    </div>
+    default
   </div>
 </div>
 `;
@@ -45,14 +41,10 @@ exports[`Storyshots Halo/appearances-w-error default 1`] = `
   }
 >
   <div
-    test-decorator-center={true}
+    className="css-ml8dwq"
   >
-    <div
-      className="css-ml8dwq"
-    >
-      default
-       error
-    </div>
+    default
+     error
   </div>
 </div>
 `;
