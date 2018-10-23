@@ -1,11 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots appearance primary 1`] = `
+exports[`Storyshots Halo/appearances default 1`] = `
 <div
-  test-decorator-center={true}
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
 >
-  <div>
-    something in here
+  <div
+    test-decorator-center={true}
+  >
+    <div
+      className="css-1uk2vau"
+    >
+      default
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/appearances-w-error default 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    test-decorator-center={true}
+  >
+    <div
+      className="css-ml8dwq"
+    >
+      default
+       error
+    </div>
   </div>
 </div>
 `;

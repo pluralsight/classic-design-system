@@ -1,3 +1,3 @@
 export const appearances = {
-  primary: 'primary'
+  default: 'default'
 }
