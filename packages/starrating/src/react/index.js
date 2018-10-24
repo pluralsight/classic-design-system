@@ -16,28 +16,17 @@ import * as vars from '../vars'
 
 const TOTAL_STARS = 5
 
-const ICONS = {
-  dark: {
+const themeToIcons = themeName => {
+  return {
     full: {
       fill: core.colors.yellow,
       id: Icon.ids.starFill
     },
     empty: {
-      fill: core.colors.gray03,
-      id: Icon.ids.starFill
-    },
-    hover: {
-      fill: core.colors.gray04,
-      id: Icon.ids.star
-    }
-  },
-  light: {
-    full: {
-      fill: core.colors.yellow,
-      id: Icon.ids.starFill
-    },
-    empty: {
-      fill: transparentize(0.25, core.colors.gray01),
+      fill:
+        themeName === themeDefaultName
+          ? core.colors.gray03
+          : transparentize(0.25, core.colors.gray01),
       id: Icon.ids.starFill
     },
     hover: {
@@ -73,7 +62,9 @@ class StarRating extends React.Component {
       hoverIndex: null
     }
   }
-  generateIcons(themeName) {
+
+  generateIcons() {
+    const themeName = this.context.themeName || themeDefaultName
     const { hoverIndex } = this.state
     const { value, theme } = this.props
 
@@ -82,18 +73,44 @@ class StarRating extends React.Component {
     let fullStars = Math.floor(halfIntRoundedValue)
     let halfStars = Math.floor(halfIntRoundedValue) !== halfIntRoundedValue
 
+    const themedIcons = themeToIcons(themeName)
     return new Array(TOTAL_STARS).fill(undefined).map((_, index) => {
+      // Determine if isHovering
+      // if hovering is happening,
+      //    Determine the fill based on the current theme, and then get id
+      // if hovering is not happening,
+      //    if the star we're on should be filled, fill it
+      //    else if we have a half star, return the half star component
+      //        for that theme
+      //    else return a empty star
+
+      ////////////////////////////
+      // if(hovering){
+      //   if(shouldStarBeFilled){
+      //     fill = getFillForHoveredStar('theme')
+      //     id = getIdForHoveredStar()
+      //   } else {
+      //     fill = getFillForEmptyStar('theme')
+      //     id = getIdForEmptyStar('theme')
+      //   }
+      // }
+
+      /////////////////////////////
+
       let fill, id
-      console.log(themeName)
+
+      // replace logic in 77 with `const isHovered = hoverIndex !== null
       if (hoverIndex !== null) {
+        // TODO: Replace lines 78-82 with a method
         if (index <= hoverIndex) {
-          ;({ fill, id } = ICONS[themeName].hover)
+          ;({ fill, id } = themedIcons.hover)
         } else {
-          ;({ fill, id } = ICONS[themeName].empty)
+          ;({ fill, id } = themedIcons.empty)
         }
       } else {
+        // TODO: Replace lines 84-95 with a method
         if (index < fullStars) {
-          ;({ fill, id } = ICONS[themeName].full)
+          ;({ fill, id } = themedIcons.full)
         } else if (index === fullStars && halfStars) {
           return themeName === themeDefaultName ? (
             <DarkHalfStar key={index} />
@@ -101,10 +118,10 @@ class StarRating extends React.Component {
             <LightHalfStar key={index} />
           )
         } else {
-          ;({ fill, id } = ICONS[themeName].empty)
+          ;({ fill, id } = themedIcons.empty)
         }
       }
-
+      // someFunc = ({fill, id}) =  <Icon fill={fill}/>
       return (
         <Icon
           key={index}
@@ -117,7 +134,7 @@ class StarRating extends React.Component {
     })
   }
 
-  wrapWithButtons(icons) {
+  makeClickable(icons) {
     const { onClick } = this.props
 
     return icons.map((icon, index) => {
@@ -143,10 +160,9 @@ class StarRating extends React.Component {
 
   render() {
     const { onClick, value } = this.props
-    const themeName = this.context.themeName || themeDefaultName
 
-    let StarIcons = this.generateIcons(themeName)
-    StarIcons = onClick ? this.wrapWithButtons(StarIcons) : StarIcons
+    let StarIcons = this.generateIcons()
+    StarIcons = onClick ? this.makeClickable(StarIcons) : StarIcons
     return (
       <div>
         {onClick && (
