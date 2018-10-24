@@ -67,53 +67,46 @@ const styles = {
     )
 }
 
-class TextInput extends React.Component {
-  render() {
-    const { error, label, icon, subLabel } = this.props
-    const themeName = this.context.themeName || themeDefaultName
-    const allProps = { ...this.props, themeName }
+const TextInput = (props, context) => {
+  const { error, label, icon, subLabel } = props
+  const themeName = context.themeName || themeDefaultName
+  const allProps = { ...props, themeName }
 
-    return (
-      <label
-        {...styles.input(allProps)}
-        {...(allProps.style ? { style: allProps.style } : null)}
-        {...(allProps.className ? { className: allProps.className } : null)}
-      >
-        {label && <div {...styles.label(allProps)}>{label}</div>}
+  return (
+    <label
+      {...styles.input(allProps)}
+      {...(allProps.style ? { style: allProps.style } : null)}
+      {...(allProps.className ? { className: allProps.className } : null)}
+    >
+      {label && <div {...styles.label(allProps)}>{label}</div>}
 
-        <div {...styles.fieldContainer(allProps)}>
-          <Halo
-            appearance={
-              error ? Halo.appearances.error : Halo.appearances.default
-            }
-            visible={error}
-            visibleOnFocus
-          >
-            <input
-              {...propsUtil.whitelistProps(
-                allProps,
-                textInputHtmlPropsWhitelist
-              )}
-              {...styles.field(allProps)}
-              disabled={allProps.disabled}
-              placeholder={allProps.placeholder}
-              ref={allProps.innerRef}
-            />
-          </Halo>
+      <div {...styles.fieldContainer(allProps)}>
+        <Halo
+          appearance={error ? Halo.appearances.error : Halo.appearances.default}
+          visible={error}
+          visibleOnFocus
+        >
+          <input
+            {...propsUtil.whitelistProps(allProps, textInputHtmlPropsWhitelist)}
+            {...styles.field(allProps)}
+            disabled={allProps.disabled}
+            placeholder={allProps.placeholder}
+            ref={allProps.innerRef}
+          />
+        </Halo>
 
-          {icon && <div {...styles.icon(allProps)}>{icon}</div>}
+        {icon && <div {...styles.icon(allProps)}>{icon}</div>}
 
-          {error && (
-            <div {...styles.error(allProps)}>
-              <Icon id={Icon.ids.warning} />
-            </div>
-          )}
-        </div>
+        {error && (
+          <div {...styles.error(allProps)}>
+            <Icon id={Icon.ids.warning} />
+          </div>
+        )}
+      </div>
 
-        {subLabel && <div {...styles.subLabel(allProps)}>{subLabel}</div>}
-      </label>
-    )
-  }
+      {subLabel && <div {...styles.subLabel(allProps)}>{subLabel}</div>}
+    </label>
+  )
 }
 
 TextInput.propTypes = {
