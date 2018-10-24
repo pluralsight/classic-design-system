@@ -17,7 +17,7 @@ exports[`Storyshots Halo/appearances default 1`] = `
   }
 >
   <div
-    className="css-1cadd9h"
+    className="css-1fgbhbg"
   >
     default
   </div>
@@ -41,7 +41,7 @@ exports[`Storyshots Halo/appearances error 1`] = `
   }
 >
   <div
-    className="css-fzb6nn"
+    className="css-ocpl2n"
   >
     error
   </div>
@@ -65,7 +65,7 @@ exports[`Storyshots Halo/visible false 1`] = `
   }
 >
   <div
-    className="css-1a7r7tv"
+    className="css-n5lvyf"
   >
     not visible
   </div>
@@ -89,7 +89,7 @@ exports[`Storyshots Halo/visible true 1`] = `
   }
 >
   <div
-    className="css-1cadd9h"
+    className="css-1fgbhbg"
   >
     visible
   </div>
@@ -113,7 +113,7 @@ exports[`Storyshots Halo/visibleOnFocus enabled 1`] = `
   }
 >
   <div
-    className="css-1avl48i"
+    className="css-142hlxb"
   >
     visible when focused
   </div>
