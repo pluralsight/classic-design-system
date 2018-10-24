@@ -29,8 +29,10 @@ export default {
     }
   },
   [`${BASE_CLASSNAME}--visible-on-focus`]: {
-    // TODO: fix/polyfill in ie/edge
     '&:focus-within:after': {
+      visibility: 'visible'
+    },
+    '&[focus-within]:after': {
       visibility: 'visible'
     }
   },

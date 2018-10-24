@@ -1,4 +1,5 @@
 import * as glamor from 'glamor'
+import polyfillFocusWithin from 'focus-within'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -6,6 +7,8 @@ import css, { BASE_CLASSNAME } from '../css'
 import * as vars from '../vars'
 
 import withDefaultTheme from './with-default-theme'
+
+polyfillFocusWithin(document)
 
 const styles = {
   halo: ({ themeName, appearance, visible, visibleOnFocus }) =>

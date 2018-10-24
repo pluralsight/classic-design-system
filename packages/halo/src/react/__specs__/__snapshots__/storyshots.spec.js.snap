@@ -113,7 +113,7 @@ exports[`Storyshots Halo/visibleOnFocus enabled 1`] = `
   }
 >
   <div
-    className="css-142hlxb"
+    className="css-12k9fo4"
   >
     visible when focused
   </div>
