@@ -5,7 +5,6 @@ import Halo from '../react'
 import Focused from './focused'
 
 const appearanceStories = storiesOf('Halo/appearances', module)
-const errorStories = storiesOf('Halo/appearances-w-error', module)
 
 for (const appearance in Halo.appearances) {
   appearanceStories.add(appearance, _ => (
@@ -13,10 +12,22 @@ for (const appearance in Halo.appearances) {
       <Focused>{appearance}</Focused>
     </Halo>
   ))
+}
 
-  errorStories.add(appearance, _ => (
-    <Halo appearance={appearance} error>
-      <Focused>{appearance} error</Focused>
+storiesOf('Halo/visible', module)
+  .add('true', _ => (
+    <Halo visible>
+      <Focused>visible</Focused>
     </Halo>
   ))
-}
+  .add('false', _ => (
+    <Halo visible={false}>
+      <Focused>not visible</Focused>
+    </Halo>
+  ))
+
+storiesOf('Halo/visibleOnFocus', module).add('enabled', _ => (
+  <Halo visible={false} visibleOnFocus>
+    <Focused>visible when focused</Focused>
+  </Halo>
+))

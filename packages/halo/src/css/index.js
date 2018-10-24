@@ -1,10 +1,10 @@
 import core from '@pluralsight/ps-design-system-core'
 
-export const BASE_CLASS_NAME = '.psds-halo'
+export const BASE_CLASSNAME = '.psds-halo'
 
 // TODO: make sure this is building/exported correctly
 export default {
-  [BASE_CLASS_NAME]: {
+  [BASE_CLASSNAME]: {
     position: 'relative',
 
     '&:after': {
@@ -18,20 +18,23 @@ export default {
       borderWidth: 3,
       borderStyle: 'solid',
       borderColor: 'transparent',
-      pointerEvents: 'none'
-    },
-
-    '& > :focus': {
-      outline: 'none'
-    },
-
-    // TODO: this doesn't work in ie/edge - polyfill?
-    '&:focus-within:after': {
-      borderColor: core.colors.blue
+      pointerEvents: 'none',
+      visibility: 'hidden'
     }
   },
-  [`${BASE_CLASS_NAME}--dark`]: {},
-  [`${BASE_CLASS_NAME}--light`]: {
+  [`${BASE_CLASSNAME}--visible`]: {
+    '&:after': {
+      visibility: 'visible'
+    }
+  },
+  [`${BASE_CLASSNAME}--visible-on-focus`]: {
+    // TODO: fix/polyfill in ie/edge
+    '&:focus-within:after': {
+      visibility: 'visible'
+    }
+  },
+  [`${BASE_CLASSNAME}--theme-dark`]: {},
+  [`${BASE_CLASSNAME}--theme-light`]: {
     '&:after': {
       top: -2,
       bottom: -2,
@@ -39,8 +42,13 @@ export default {
       right: -2
     }
   },
-  [`${BASE_CLASS_NAME}--error`]: {
-    '&:focus-within:after': {
+  [`${BASE_CLASSNAME}--appearance-default`]: {
+    '&:after': {
+      borderColor: core.colors.blue
+    }
+  },
+  [`${BASE_CLASSNAME}--appearance-error`]: {
+    '&:after': {
       borderColor: core.colors.red
     }
   }

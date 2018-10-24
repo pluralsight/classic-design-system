@@ -1,3 +1,4 @@
 export const appearances = {
-  default: 'default'
+  default: 'default',
+  error: 'error'
 }

@@ -18,7 +18,8 @@ const styles = {
     minWidth: '192px',
     padding: `${core.layout.spacingXSmall} ${core.layout.spacingMedium}`,
     position: 'relative',
-    width: '100%'
+    width: '100%',
+    outline: 'none'
   }),
   dark: glamor.css({}),
   light: glamor.css({

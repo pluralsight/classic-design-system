@@ -17,14 +17,14 @@ exports[`Storyshots Halo/appearances default 1`] = `
   }
 >
   <div
-    className="css-1uk2vau"
+    className="css-1cadd9h"
   >
     default
   </div>
 </div>
 `;
 
-exports[`Storyshots Halo/appearances-w-error default 1`] = `
+exports[`Storyshots Halo/appearances error 1`] = `
 <div
   style={
     Object {
@@ -41,10 +41,81 @@ exports[`Storyshots Halo/appearances-w-error default 1`] = `
   }
 >
   <div
-    className="css-ml8dwq"
+    className="css-fzb6nn"
   >
-    default
-     error
+    error
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/visible false 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-1a7r7tv"
+  >
+    not visible
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/visible true 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-1cadd9h"
+  >
+    visible
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/visibleOnFocus enabled 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-1avl48i"
+  >
+    visible when focused
   </div>
 </div>
 `;
