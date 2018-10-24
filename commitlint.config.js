@@ -1,7 +1,7 @@
 const Repository = require('lerna/lib/Repository')
 const PackageUtilities = require('lerna/lib/PackageUtilities')
 
-function getPackageAbbreviations() {
+function getPackageAbbreviations () {
   const prefix = `ps-design-system-`
   const cwd = process.cwd()
   const repo = new Repository(cwd)
@@ -13,6 +13,7 @@ function getPackageAbbreviations() {
     .map(pkg => pkg.name)
     .map(name => (name.charAt(0) === '@' ? name.split('/')[1] : name))
     .map(name => (name.includes(prefix) ? name.replace(prefix, '') : name))
+    .concat(['project'])
 }
 
 module.exports = {

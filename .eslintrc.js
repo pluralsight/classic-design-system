@@ -8,7 +8,7 @@ module.exports = {
     {
       files: ['*.spec.js', '*.story.js'],
       rules: {
-        'no-unused-vars': 'warning'
+        'no-unused-vars': [1]
       }
     }
   ]
