@@ -11,34 +11,50 @@ import withDefaultTheme from './with-default-theme'
 polyfillFocusWithin(document)
 
 const styles = {
-  halo: ({ themeName, appearance, visible, visibleOnFocus }) =>
-    glamor.css(
+  halo: props => {
+    const theme = `${BASE_CLASSNAME}--theme-${props.themeName}`
+    const appearance = `${BASE_CLASSNAME}--appearance-${props.appearance}`
+    const gapSize = `${BASE_CLASSNAME}--gap-size-${props.gapSize}`
+    const shape = `${BASE_CLASSNAME}--shape-${props.shape}`
+
+    return glamor.css(
       css[BASE_CLASSNAME],
-      css[`${BASE_CLASSNAME}--theme-${themeName}`],
-      css[`${BASE_CLASSNAME}--appearance-${appearance}`],
-      visible && css[`${BASE_CLASSNAME}--visible`],
-      visibleOnFocus && css[`${BASE_CLASSNAME}--visible-on-focus`]
+      css[theme],
+      css[appearance],
+      css[gapSize],
+      css[shape],
+
+      css[gapSize + theme],
+
+      props.visible && css[`${BASE_CLASSNAME}--visible`],
+      props.visibleOnFocus && css[`${BASE_CLASSNAME}--visible-on-focus`]
     )
+  }
 }
 
 const Halo = props => {
   const {
     appearance,
+    gapSize,
     themeName,
+    shape,
     visible,
     visibleOnFocus,
     ...filteredProps
   } = props
 
   const classes = [String(styles.halo(props)), props.className].join(' ').trim()
-
   return <div {...filteredProps} className={classes} />
 }
 
 Halo.appearances = vars.appearances
+Halo.gapSizes = vars.gapSizes
+Halo.shapes = vars.shapes
 
 Halo.defaultProps = {
   appearance: vars.appearances.default,
+  gapSize: vars.gapSizes.default,
+  shape: vars.shapes.default,
   className: '',
   visible: true,
   visibleOnFocus: false
@@ -46,6 +62,8 @@ Halo.defaultProps = {
 
 Halo.propTypes = {
   appearance: PropTypes.oneOf(Object.values(vars.appearances)),
+  gapSize: PropTypes.oneOf(Object.values(vars.gapSizes)),
+  shape: PropTypes.oneOf(Object.values(vars.shapes)),
   className: PropTypes.string,
   themeName: PropTypes.string,
   visible: PropTypes.bool,

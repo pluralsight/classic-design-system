@@ -8,23 +8,25 @@ import withDefaultTheme from '../src/react/with-default-theme'
 const styles = {
   base: glamor.css({
     background: core.colors.bone,
-    border: `1px solid transparent`,
     borderRadius: 2,
-    color: core.colors.gray03,
+    cursor: 'pointer',
     fontSize: core.type.fontSizeSmall,
     fontWeight: core.type.fontWeightBook,
-    height: '40px',
     lineHeight: core.type.lineHeightStandard,
-    minWidth: '192px',
+    outline: 'none',
     padding: `${core.layout.spacingXSmall} ${core.layout.spacingMedium}`,
     position: 'relative',
-    width: '100%',
-    outline: 'none'
+    textAlign: 'center',
+    width: '100%'
   }),
   dark: glamor.css({}),
   light: glamor.css({
-    background: core.colors.white,
-    borderColor: core.colors.gray02
+    background: core.colors.gray02,
+    borderColor: core.colors.gray02,
+    color: core.colors.white
+  }),
+  pill: glamor.css({
+    borderRadius: 1000
   })
 }
 
@@ -34,13 +36,14 @@ class Focused extends React.Component {
   }
 
   render () {
-    const { className, themeName, ...filteredProps } = this.props
+    const { className, shape, themeName, ...filteredProps } = this.props
 
     const classes = [
       className,
       styles.base,
       ...(themeName === 'dark' && [styles.dark]),
-      ...(themeName === 'light' && [styles.light])
+      ...(themeName === 'light' && [styles.light]),
+      ...(shape === 'pill' && [styles.pill])
     ]
       .join(' ')
       .trim()

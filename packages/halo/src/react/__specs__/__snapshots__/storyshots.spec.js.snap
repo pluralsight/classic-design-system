@@ -17,9 +17,11 @@ exports[`Storyshots Halo/appearances default 1`] = `
   }
 >
   <div
-    className="css-1fgbhbg"
+    className="css-1q1x064"
   >
-    default
+    <div>
+      default
+    </div>
   </div>
 </div>
 `;
@@ -41,9 +43,119 @@ exports[`Storyshots Halo/appearances error 1`] = `
   }
 >
   <div
-    className="css-ocpl2n"
+    className="css-19962s1"
   >
-    error
+    <div>
+      error
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/gapSizes default 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-1q1x064"
+  >
+    <div>
+      default
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/gapSizes small 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-1q1x064"
+  >
+    <div>
+      small
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/shapes default 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-1q1x064"
+  >
+    <div
+      shape="default"
+    >
+      default
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/shapes pill 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    className="css-1epz566"
+  >
+    <div
+      shape="pill"
+    >
+      pill
+    </div>
   </div>
 </div>
 `;
@@ -65,9 +177,11 @@ exports[`Storyshots Halo/visible false 1`] = `
   }
 >
   <div
-    className="css-n5lvyf"
+    className="css-haw2j1"
   >
-    not visible
+    <div>
+      not visible
+    </div>
   </div>
 </div>
 `;
@@ -89,9 +203,11 @@ exports[`Storyshots Halo/visible true 1`] = `
   }
 >
   <div
-    className="css-1fgbhbg"
+    className="css-1q1x064"
   >
-    visible
+    <div>
+      visible
+    </div>
   </div>
 </div>
 `;
@@ -113,9 +229,11 @@ exports[`Storyshots Halo/visibleOnFocus enabled 1`] = `
   }
 >
   <div
-    className="css-12k9fo4"
+    className="css-zdxuo6"
   >
-    visible when focused
+    <div>
+      visible when focused
+    </div>
   </div>
 </div>
 `;

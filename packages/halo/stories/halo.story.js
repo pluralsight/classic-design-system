@@ -14,6 +14,26 @@ for (const appearance in Halo.appearances) {
   ))
 }
 
+const gapSizeStories = storiesOf('Halo/gapSizes', module)
+
+for (const size in Halo.gapSizes) {
+  gapSizeStories.add(size, _ => (
+    <Halo gapSize={size}>
+      <Focused>{size}</Focused>
+    </Halo>
+  ))
+}
+
+const shapeStories = storiesOf('Halo/shapes', module)
+
+for (const shape in Halo.shapes) {
+  shapeStories.add(shape, _ => (
+    <Halo shape={shape}>
+      <Focused shape={shape}>{shape}</Focused>
+    </Halo>
+  ))
+}
+
 storiesOf('Halo/visible', module)
   .add('true', _ => (
     <Halo visible>

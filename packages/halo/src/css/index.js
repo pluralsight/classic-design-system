@@ -6,16 +6,10 @@ export const BASE_CLASSNAME = '.psds-halo'
 export default {
   [BASE_CLASSNAME]: {
     position: 'relative',
-    width: '100%',
 
     '&:after': {
       content: ' ',
       position: 'absolute',
-      top: -4,
-      bottom: -4,
-      left: -4,
-      right: -4,
-      borderRadius: 4,
       borderWidth: 3,
       borderStyle: 'solid',
       borderColor: 'transparent',
@@ -36,15 +30,7 @@ export default {
       visibility: 'visible'
     }
   },
-  [`${BASE_CLASSNAME}--theme-dark`]: {},
-  [`${BASE_CLASSNAME}--theme-light`]: {
-    '&:after': {
-      top: -2,
-      bottom: -2,
-      left: -2,
-      right: -2
-    }
-  },
+
   [`${BASE_CLASSNAME}--appearance-default`]: {
     '&:after': {
       borderColor: core.colors.blue
@@ -53,6 +39,51 @@ export default {
   [`${BASE_CLASSNAME}--appearance-error`]: {
     '&:after': {
       borderColor: core.colors.red
+    }
+  },
+
+  [`${BASE_CLASSNAME}--gap-size-default${BASE_CLASSNAME}--theme-dark`]: {
+    '&:after': {
+      top: -4,
+      bottom: -4,
+      left: -4,
+      right: -4
+    }
+  },
+  [`${BASE_CLASSNAME}--gap-size-default${BASE_CLASSNAME}--theme-light`]: {
+    '&:after': {
+      top: -5,
+      bottom: -5,
+      left: -5,
+      right: -5
+    }
+  },
+
+  [`${BASE_CLASSNAME}--gap-size-small${BASE_CLASSNAME}--theme-dark`]: {
+    '&:after': {
+      top: -4,
+      bottom: -4,
+      left: -4,
+      right: -4
+    }
+  },
+  [`${BASE_CLASSNAME}--gap-size-small${BASE_CLASSNAME}--theme-light`]: {
+    '&:after': {
+      top: -2,
+      bottom: -2,
+      left: -2,
+      right: -2
+    }
+  },
+
+  [`${BASE_CLASSNAME}--shape-default`]: {
+    '&:after': {
+      borderRadius: 4
+    }
+  },
+  [`${BASE_CLASSNAME}--shape-pill`]: {
+    '&:after': {
+      borderRadius: 1000 // use a big number to make a pill shape
     }
   }
 }
