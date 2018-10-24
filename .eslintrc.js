@@ -3,5 +3,13 @@ module.exports = {
   plugins: ['jest'],
   env: {
     'jest/globals': true
-  }
+  },
+  overrides: [
+    {
+      files: ['*.spec.js', '*.story.js'],
+      rules: {
+        'no-unused-vars': 'warning'
+      }
+    }
+  ]
 }
