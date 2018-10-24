@@ -1,43 +1,37 @@
-import addons from '@storybook/addons'
-import core from '@pluralsight/ps-design-system-core'
-import * as glamor from 'glamor'
+import PropType from 'prop-types'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import Switch from '../react'
 
-const sizeStory = storiesOf('size', module).addDecorator(themeDecorator(addons))
+const sizeStory = storiesOf('size', module)
 Object.keys(Switch.sizes).forEach(size =>
   sizeStory.add(size, _ => <Switch size={size}>Click me</Switch>)
 )
 
 const checkedStory = storiesOf('checked', module)
-  .addDecorator(themeDecorator(addons))
   .add('false', _ => <Switch>Click me</Switch>)
   .add('true', _ => <Switch checked>Click me</Switch>)
 
 class ClickDemo extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = { checked: false }
     this.handleClick = this.handleClick.bind(this)
   }
-  handleClick(checked) {
+  handleClick (checked) {
     this.setState({ checked })
   }
-  render() {
+  render () {
     return React.cloneElement(this.props.children, {
       onClick: this.handleClick,
       checked: this.state.checked
     })
   }
 }
+ClickDemo.propTypes = { children: PropType.node }
 
-const colorStory = storiesOf('color', module).addDecorator(
-  themeDecorator(addons)
-)
+const colorStory = storiesOf('color', module)
 Object.keys(Switch.colors).forEach(color =>
   colorStory.add(color, _ => (
     <Switch color={color} checked>
@@ -47,7 +41,6 @@ Object.keys(Switch.colors).forEach(color =>
 )
 
 const clickStory = storiesOf('click', module)
-  .addDecorator(themeDecorator(addons))
   .add('large toggles', _ => (
     <ClickDemo>
       <Switch />
@@ -59,9 +52,7 @@ const clickStory = storiesOf('click', module)
     </ClickDemo>
   ))
 
-const labelStory = storiesOf('label', module).addDecorator(
-  themeDecorator(addons)
-)
+const labelStory = storiesOf('label', module)
 Object.keys(Switch.sizes).forEach(size =>
   Object.keys(Switch.labelAligns).forEach(labelAlign =>
     labelStory.add(`${size} ${labelAlign}`, _ => (
@@ -73,7 +64,6 @@ Object.keys(Switch.sizes).forEach(size =>
 )
 
 const disabledStory = storiesOf('disabled', module)
-  .addDecorator(themeDecorator(addons))
   .add('false', _ => (
     <ClickDemo>
       <Switch />
@@ -86,7 +76,6 @@ const disabledStory = storiesOf('disabled', module)
   ))
 
 const errorStory = storiesOf('error', module)
-  .addDecorator(themeDecorator(addons))
   .add('false', _ => (
     <ClickDemo>
       <Switch />
