@@ -25,6 +25,7 @@
   "keywords": [],
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.3.3",
+    "@pluralsight/ps-design-system-halo": "^1.0.0",
     "@pluralsight/ps-design-system-theme": "^1.3.2",
     "polished": "^1.7.0",
     "prop-types": "^15.5.10"
