@@ -83,6 +83,7 @@ const TextInput = (props, context) => {
       <div {...styles.fieldContainer(allProps)}>
         <Halo
           appearance={error ? Halo.appearances.error : Halo.appearances.default}
+          gapSize={Halo.gapSizes.small}
           visible={error}
           visibleOnFocus
         >
