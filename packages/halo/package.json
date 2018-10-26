@@ -10,7 +10,7 @@
   "scripts": {
     "build": "run-s build:js build:css",
     "build-storybook": "build-storybook",
-    "build:css": "node build/css",
+    "build:css": "build-css",
     "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
