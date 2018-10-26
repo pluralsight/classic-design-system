@@ -14,6 +14,7 @@
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
     "commitmsg": "commitlint -e",
+    "component:create": "./scripts/create-component/index.js",
     "lint": "eslint --ignore-path .gitignore .",
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
@@ -26,18 +27,23 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "lint-staged": {
-    "**/*.js": [
-      "prettier-eslint --write",
-      "git add"
+    "ignore": [
+      "scripts"
     ],
-    "package.json": [
-      "format-package -w",
-      "git add"
-    ],
-    "packages/**/*.css": [
-      "node_modules/.bin/prettier --single-quote --no-semi --write",
-      "git add"
-    ]
+    "linters": {
+      "**/*.js": [
+        "prettier-eslint --write",
+        "git add"
+      ],
+      "package.json": [
+        "format-package -w",
+        "git add"
+      ],
+      "packages/**/*.css": [
+        "node_modules/.bin/prettier --single-quote --no-semi --write",
+        "git add"
+      ]
+    }
   },
   "browserslist": "last 4 versions",
   "husky": {
@@ -77,6 +83,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "camelize": "^1.0.0",
+    "copy-template-dir": "^1.4.0",
     "eslint": "^5.7.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-config-standard-react": "^7.0.2",
@@ -91,9 +98,10 @@
     "gulp-bump": "^3.1.0",
     "husky": "^0.15.0-rc.13",
     "identity-obj-proxy": "^3.0.0",
+    "inquirer": "^6.2.0",
     "jest": "^20.0.0",
     "lerna": "^2.0.0-rc.4",
-    "lint-staged": "^4.0.2",
+    "lint-staged": "^7.3.0",
     "octopus-deploy": "^4.0.0",
     "prettier": "^1.7.4",
     "prettier-eslint-cli": "^4.7.1",
