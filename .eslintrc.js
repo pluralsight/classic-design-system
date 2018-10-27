@@ -1,3 +1,7 @@
+const IGNORE = 0
+const WARNING = 1
+const ERROR = 2
+
 module.exports = {
   extends: ['standard', 'standard-react', 'plugin:jest/recommended'],
   plugins: ['jest'],
@@ -6,9 +10,9 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.spec.js', '*.story.js'],
+      files: ['*.story.js'],
       rules: {
-        'no-unused-vars': [1]
+        'no-unused-vars': [WARNING]
       }
     }
   ]
