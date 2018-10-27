@@ -6,28 +6,26 @@ import React from 'react'
 import css, { BASE_CLASSNAME } from '../css'
 import * as vars from '../vars'
 
+import makeGroupStyle from './make-style-group'
 import withDefaultTheme from './with-default-theme'
 
 polyfillFocusWithin(document)
 
 const styles = {
   halo: props => {
+    const groupStyle = makeGroupStyle(css)
     const theme = `${BASE_CLASSNAME}--theme-${props.themeName}`
-    const appearance = `${BASE_CLASSNAME}--appearance-${props.appearance}`
     const gapSize = `${BASE_CLASSNAME}--gap-size-${props.gapSize}`
-    const shape = `${BASE_CLASSNAME}--shape-${props.shape}`
 
-    return glamor.css(
-      css[BASE_CLASSNAME],
-      css[theme],
-      css[appearance],
-      css[gapSize],
-      css[shape],
-
-      css[gapSize + theme],
-
-      props.visible && css[`${BASE_CLASSNAME}--visible`],
-      props.visibleOnFocus && css[`${BASE_CLASSNAME}--visible-on-focus`]
+    return glamor.compose(
+      groupStyle(BASE_CLASSNAME),
+      groupStyle(theme),
+      groupStyle(`${BASE_CLASSNAME}--appearance-${props.appearance}`),
+      groupStyle(`${BASE_CLASSNAME}--shape-${props.shape}`),
+      groupStyle(`${BASE_CLASSNAME}--gap-size-${props.gapSize}`),
+      groupStyle(gapSize + theme),
+      props.visible && groupStyle(`${BASE_CLASSNAME}--visible`),
+      props.visibleOnFocus && groupStyle(`${BASE_CLASSNAME}--visible-on-focus`)
     )
   }
 }
@@ -43,8 +41,7 @@ const Halo = props => {
     ...filteredProps
   } = props
 
-  const classes = [String(styles.halo(props)), props.className].join(' ').trim()
-  return <div {...filteredProps} className={classes} />
+  return <div {...styles.halo(props)} {...filteredProps} />
 }
 
 Halo.appearances = vars.appearances
