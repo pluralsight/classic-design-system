@@ -4,35 +4,10 @@ import PropTypes from 'prop-types'
 
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
-const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
+import Swatch from './swatch'
 
 const styles = {
-  panel: props => glamor.css({ padding: 15 }),
-  button: props => glamor.css({ marginRight: 10 })
-}
-
-class ThemeButton extends React.Component {
-  constructor (props) {
-    super(props)
-    this.handleClick = this.handleClick.bind(this)
-  }
-
-  handleClick (event) {
-    this.props.onSelect(event, this.props.name)
-  }
-
-  render () {
-    return (
-      <button {...styles.button(this.props)} onClick={this.handleClick}>
-        {capitalize(this.props.name)}
-      </button>
-    )
-  }
-}
-
-ThemeButton.propTypes = {
-  name: PropTypes.oneOf(Object.values(Theme.names)).isRequired,
-  onSelect: PropTypes.func.isRequired
+  panel: props => glamor.css({ padding: '10px 15px' })
 }
 
 class ThemePanel extends React.Component {
@@ -50,11 +25,7 @@ class ThemePanel extends React.Component {
     return (
       <div {...styles.panel(this.props)} {...this.props}>
         {Object.values(Theme.names).map(name => (
-          <ThemeButton
-            key={name}
-            name={name}
-            onSelect={this.handleThemeSelect}
-          />
+          <Swatch key={name} name={name} onSelect={this.handleThemeSelect} />
         ))}
       </div>
     )
