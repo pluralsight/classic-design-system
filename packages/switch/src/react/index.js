@@ -100,15 +100,15 @@ class Switch extends React.Component {
           <div {...styles.track(allProps)}>
             <div {...styles.thumb(allProps)} />
           </div>
-
-          <input
-            tabIndex='-1'
-            type='checkbox'
-            readOnly
-            checked={allProps.checked}
-            {...styles.checkbox(allProps)}
-          />
         </Halo>
+
+        <input
+          tabIndex='-1'
+          type='checkbox'
+          readOnly
+          checked={allProps.checked}
+          {...styles.checkbox(allProps)}
+        />
 
         {children && <label {...styles.label(allProps)}>{children}</label>}
       </button>

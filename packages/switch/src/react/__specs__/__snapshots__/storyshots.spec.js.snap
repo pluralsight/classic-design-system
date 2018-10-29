@@ -25,7 +25,8 @@ exports[`Storyshots checked false 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-1bhbegx"
+      className=""
+      data-css-qiyc6u=""
     >
       <div
         data-css-1rncajx=""
@@ -34,14 +35,14 @@ exports[`Storyshots checked false 1`] = `
           data-css-1nqr5a6=""
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
     <label
       data-css-1wrf03j=""
     >
@@ -76,7 +77,8 @@ exports[`Storyshots checked true 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-1bhbegx"
+      className=""
+      data-css-qiyc6u=""
     >
       <div
         data-css-1t8mno4=""
@@ -85,14 +87,14 @@ exports[`Storyshots checked true 1`] = `
           data-css-4g7l16=""
         />
       </div>
-      <input
-        checked={true}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={true}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
     <label
       data-css-1wrf03j=""
     >
@@ -128,7 +130,8 @@ exports[`Storyshots click large toggles 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-1bhbegx"
+      className=""
+      data-css-qiyc6u=""
     >
       <div
         data-css-1rncajx=""
@@ -137,14 +140,14 @@ exports[`Storyshots click large toggles 1`] = `
           data-css-1nqr5a6=""
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
   </button>
 </div>
 `;
@@ -175,7 +178,8 @@ exports[`Storyshots click small toggles 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-1bhbegx"
+      className=""
+      data-css-qiyc6u=""
     >
       <div
         data-css-1m9fpc5=""
@@ -184,14 +188,14 @@ exports[`Storyshots click small toggles 1`] = `
           data-css-1qt5hlf=""
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
   </button>
 </div>
 `;
@@ -221,7 +225,8 @@ exports[`Storyshots color green 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-1bhbegx"
+      className=""
+      data-css-qiyc6u=""
     >
       <div
         data-css-1ecl5dy=""
@@ -230,14 +235,14 @@ exports[`Storyshots color green 1`] = `
           data-css-4g7l16=""
         />
       </div>
-      <input
-        checked={true}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={true}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
     <label
       data-css-1wrf03j=""
     >
@@ -272,7 +277,8 @@ exports[`Storyshots color orange 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-1bhbegx"
+      className=""
+      data-css-qiyc6u=""
     >
       <div
         data-css-1t8mno4=""
@@ -281,14 +287,14 @@ exports[`Storyshots color orange 1`] = `
           data-css-4g7l16=""
         />
       </div>
-      <input
-        checked={true}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={true}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
     <label
       data-css-1wrf03j=""
     >
@@ -324,7 +330,8 @@ exports[`Storyshots disabled false 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-1bhbegx"
+      className=""
+      data-css-qiyc6u=""
     >
       <div
         data-css-1rncajx=""
@@ -333,14 +340,14 @@ exports[`Storyshots disabled false 1`] = `
           data-css-1nqr5a6=""
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
   </button>
 </div>
 `;
@@ -370,7 +377,8 @@ exports[`Storyshots disabled true 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-1bhbegx"
+      className=""
+      data-css-qiyc6u=""
     >
       <div
         data-css-1rncajx=""
@@ -379,14 +387,14 @@ exports[`Storyshots disabled true 1`] = `
           data-css-1nqr5a6=""
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
   </button>
 </div>
 `;
@@ -417,7 +425,8 @@ exports[`Storyshots error false 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-1bhbegx"
+      className=""
+      data-css-qiyc6u=""
     >
       <div
         data-css-1rncajx=""
@@ -426,14 +435,14 @@ exports[`Storyshots error false 1`] = `
           data-css-1nqr5a6=""
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
   </button>
 </div>
 `;
@@ -464,7 +473,8 @@ exports[`Storyshots error true 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-zu845a"
+      className=""
+      data-css-82mhn6=""
     >
       <div
         data-css-1rncajx=""
@@ -473,14 +483,14 @@ exports[`Storyshots error true 1`] = `
           data-css-1nqr5a6=""
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
     <label
       data-css-1wrf03j=""
     >
@@ -515,7 +525,8 @@ exports[`Storyshots error true w/ disabled 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-zu845a"
+      className=""
+      data-css-82mhn6=""
     >
       <div
         data-css-1rncajx=""
@@ -524,14 +535,14 @@ exports[`Storyshots error true w/ disabled 1`] = `
           data-css-1nqr5a6=""
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
     <label
       data-css-1wrf03j=""
     >
@@ -566,7 +577,8 @@ exports[`Storyshots label large left 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-1bhbegx"
+      className=""
+      data-css-qiyc6u=""
     >
       <div
         data-css-1rncajx=""
@@ -575,14 +587,14 @@ exports[`Storyshots label large left 1`] = `
           data-css-1nqr5a6=""
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
     <label
       data-css-aau49w=""
     >
@@ -617,7 +629,8 @@ exports[`Storyshots label large right 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-1bhbegx"
+      className=""
+      data-css-qiyc6u=""
     >
       <div
         data-css-1rncajx=""
@@ -626,14 +639,14 @@ exports[`Storyshots label large right 1`] = `
           data-css-1nqr5a6=""
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
     <label
       data-css-1wrf03j=""
     >
@@ -668,7 +681,8 @@ exports[`Storyshots label small left 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-1bhbegx"
+      className=""
+      data-css-qiyc6u=""
     >
       <div
         data-css-1m9fpc5=""
@@ -677,14 +691,14 @@ exports[`Storyshots label small left 1`] = `
           data-css-1qt5hlf=""
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
     <label
       data-css-1waj6du=""
     >
@@ -719,7 +733,8 @@ exports[`Storyshots label small right 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-1bhbegx"
+      className=""
+      data-css-qiyc6u=""
     >
       <div
         data-css-1m9fpc5=""
@@ -728,14 +743,14 @@ exports[`Storyshots label small right 1`] = `
           data-css-1qt5hlf=""
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
     <label
       data-css-6olsyv=""
     >
@@ -770,7 +785,8 @@ exports[`Storyshots size large 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-1bhbegx"
+      className=""
+      data-css-qiyc6u=""
     >
       <div
         data-css-1rncajx=""
@@ -779,14 +795,14 @@ exports[`Storyshots size large 1`] = `
           data-css-1nqr5a6=""
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
     <label
       data-css-1wrf03j=""
     >
@@ -821,7 +837,8 @@ exports[`Storyshots size small 1`] = `
     tabIndex="0"
   >
     <div
-      className="css-1bhbegx"
+      className=""
+      data-css-qiyc6u=""
     >
       <div
         data-css-1m9fpc5=""
@@ -830,14 +847,14 @@ exports[`Storyshots size small 1`] = `
           data-css-1qt5hlf=""
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-      />
     </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
     <label
       data-css-6olsyv=""
     >
