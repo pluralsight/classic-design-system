@@ -17,7 +17,8 @@ exports[`Storyshots Halo/appearances default 1`] = `
   }
 >
   <div
-    className="css-jrkavy"
+    className=""
+    data-css-11pbqae=""
   >
     <div>
       default
@@ -43,7 +44,8 @@ exports[`Storyshots Halo/appearances error 1`] = `
   }
 >
   <div
-    className="css-1sfg6y1"
+    className=""
+    data-css-1vyecfy=""
   >
     <div>
       error
@@ -69,7 +71,8 @@ exports[`Storyshots Halo/gapSizes default 1`] = `
   }
 >
   <div
-    className="css-jrkavy"
+    className=""
+    data-css-11pbqae=""
   >
     <div>
       default
@@ -95,7 +98,8 @@ exports[`Storyshots Halo/gapSizes small 1`] = `
   }
 >
   <div
-    className="css-jrkavy"
+    className=""
+    data-css-11pbqae=""
   >
     <div>
       small
@@ -121,7 +125,8 @@ exports[`Storyshots Halo/shapes default 1`] = `
   }
 >
   <div
-    className="css-jrkavy"
+    className=""
+    data-css-11pbqae=""
   >
     <div
       shape="default"
@@ -149,7 +154,8 @@ exports[`Storyshots Halo/shapes pill 1`] = `
   }
 >
   <div
-    className="css-1yw1js0"
+    className=""
+    data-css-ls8pec=""
   >
     <div
       shape="pill"
@@ -177,7 +183,8 @@ exports[`Storyshots Halo/visible false 1`] = `
   }
 >
   <div
-    className="css-1wgktjr"
+    className=""
+    data-css-y7s1d0=""
   >
     <div>
       not visible
@@ -203,7 +210,8 @@ exports[`Storyshots Halo/visible true 1`] = `
   }
 >
   <div
-    className="css-jrkavy"
+    className=""
+    data-css-11pbqae=""
   >
     <div>
       visible
@@ -229,7 +237,8 @@ exports[`Storyshots Halo/visibleOnFocus enabled 1`] = `
   }
 >
   <div
-    className="css-xmarnt"
+    className=""
+    data-css-1ih0kih=""
   >
     <div>
       visible when focused

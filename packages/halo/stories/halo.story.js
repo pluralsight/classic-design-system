@@ -2,14 +2,14 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import Halo from '../react'
-import Focused from './focused'
+import Focusable from './focusable'
 
 const appearanceStories = storiesOf('Halo/appearances', module)
 
 for (const appearance in Halo.appearances) {
   appearanceStories.add(appearance, _ => (
     <Halo appearance={appearance}>
-      <Focused>{appearance}</Focused>
+      <Focusable>{appearance}</Focusable>
     </Halo>
   ))
 }
@@ -19,7 +19,7 @@ const gapSizeStories = storiesOf('Halo/gapSizes', module)
 for (const size in Halo.gapSizes) {
   gapSizeStories.add(size, _ => (
     <Halo gapSize={size}>
-      <Focused>{size}</Focused>
+      <Focusable>{size}</Focusable>
     </Halo>
   ))
 }
@@ -29,7 +29,7 @@ const shapeStories = storiesOf('Halo/shapes', module)
 for (const shape in Halo.shapes) {
   shapeStories.add(shape, _ => (
     <Halo shape={shape}>
-      <Focused shape={shape}>{shape}</Focused>
+      <Focusable shape={shape}>{shape}</Focusable>
     </Halo>
   ))
 }
@@ -37,17 +37,17 @@ for (const shape in Halo.shapes) {
 storiesOf('Halo/visible', module)
   .add('true', _ => (
     <Halo visible>
-      <Focused>visible</Focused>
+      <Focusable>visible</Focusable>
     </Halo>
   ))
   .add('false', _ => (
     <Halo visible={false}>
-      <Focused>not visible</Focused>
+      <Focusable>not visible</Focusable>
     </Halo>
   ))
 
 storiesOf('Halo/visibleOnFocus', module).add('enabled', _ => (
   <Halo visible={false} visibleOnFocus>
-    <Focused>visible when focused</Focused>
+    <Focusable>visible when focused</Focusable>
   </Halo>
 ))
