@@ -56,17 +56,7 @@ describe('withDefaultTheme', () => {
   })
 
   describe('when wrapped in a ThemeProvider', () => {
-    it('injects the given themeName prop', () => {
-      const themeName = 'test-theme-name'
-      const wrapper = mountWithThemeProvider(
-        <EnhancedComponent themeName={themeName} />
-      )
-
-      const comp = wrapper.find(MockComponent)
-      expect(comp.prop('themeName')).toEqual(themeName)
-    })
-
-    it('injects the context themeName if NO prop given', () => {
+    it('injects the themeName from context', () => {
       const wrapper = mountWithThemeProvider(<EnhancedComponent />)
       const comp = wrapper.find(MockComponent)
 
@@ -75,14 +65,6 @@ describe('withDefaultTheme', () => {
   })
 
   describe('when NOT wrapped in a ThemeProvider', () => {
-    it('injects the given themeName prop', () => {
-      const themeName = 'test-theme-name'
-      const wrapper = mount(<EnhancedComponent themeName={themeName} />)
-
-      const comp = wrapper.find(MockComponent)
-      expect(comp.prop('themeName')).toEqual(themeName)
-    })
-
     it('falls back to the default theme name', () => {
       const wrapper = mount(<EnhancedComponent />)
       const comp = wrapper.find(MockComponent)

@@ -16,7 +16,7 @@ export default function withDefaultTheme (BaseComponent) {
   const name = getDisplayName(BaseComponent)
 
   const EnhancedComponent = (props, context = {}) => {
-    const themeName = props.themeName || context.themeName || themeDefaultName
+    const themeName = context.themeName || themeDefaultName
     return <BaseComponent {...props} themeName={themeName} />
   }
 
