@@ -6,26 +6,37 @@ import React from 'react'
 import css, { BASE_CLASSNAME } from '../css'
 import * as vars from '../vars'
 
-import makeGroupStyle from './make-style-group'
 import withDefaultTheme from './with-default-theme'
 
 polyfillFocusWithin(document)
 
 const styles = {
   halo: props => {
-    const groupStyle = makeGroupStyle(css)
+    const base = BASE_CLASSNAME
     const theme = `${BASE_CLASSNAME}--theme-${props.themeName}`
+    const appearance = `${BASE_CLASSNAME}--appearance-${props.appearance}`
+    const shape = `${BASE_CLASSNAME}--shape-${props.shape}`
     const gapSize = `${BASE_CLASSNAME}--gap-size-${props.gapSize}`
 
-    return glamor.compose(
-      groupStyle(BASE_CLASSNAME),
-      groupStyle(theme),
-      groupStyle(`${BASE_CLASSNAME}--appearance-${props.appearance}`),
-      groupStyle(`${BASE_CLASSNAME}--shape-${props.shape}`),
-      groupStyle(`${BASE_CLASSNAME}--gap-size-${props.gapSize}`),
-      groupStyle(gapSize + theme),
-      props.visible && groupStyle(`${BASE_CLASSNAME}--visible`),
-      props.visibleOnFocus && groupStyle(`${BASE_CLASSNAME}--visible-on-focus`)
+    const gapTheme = gapSize + theme
+
+    const visible = `${BASE_CLASSNAME}--visible`
+    const visibleOnFocus = `${BASE_CLASSNAME}--visible-on-focus`
+
+    return glamor.css(
+      css[base],
+      { ':after': css[`${base}:after`] },
+      { ':after': css[`${theme}:after`] },
+      { ':after': css[`${appearance}:after`] },
+      { ':after': css[`${shape}:after`] },
+      { ':after': css[`${gapSize}:after`] },
+      { ':after': css[`${gapTheme}:after`] },
+
+      props.visible && { ':after': css[`${visible}:after`] },
+      props.visibleOnFocus && {
+        ':focus-within:after': css[`${visibleOnFocus}:focus-within:after`],
+        '[focus-within]:after': css[`${visibleOnFocus}[focus-within]:after`]
+      }
     )
   }
 }
