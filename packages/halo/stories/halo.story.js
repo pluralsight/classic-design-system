@@ -6,33 +6,33 @@ import Focusable from './focusable'
 
 const appearanceStories = storiesOf('Halo/appearances', module)
 
-for (const appearance in Halo.appearances) {
+Object.keys(Halo.appearances).forEach(appearance => {
   appearanceStories.add(appearance, _ => (
     <Halo appearance={appearance}>
       <Focusable>{appearance}</Focusable>
     </Halo>
   ))
-}
+})
 
 const gapSizeStories = storiesOf('Halo/gapSizes', module)
 
-for (const size in Halo.gapSizes) {
+Object.keys(Halo.gapSizes).forEach(size => {
   gapSizeStories.add(size, _ => (
     <Halo gapSize={size}>
       <Focusable>{size}</Focusable>
     </Halo>
   ))
-}
+})
 
 const shapeStories = storiesOf('Halo/shapes', module)
 
-for (const shape in Halo.shapes) {
+Object.keys(Halo.shapes).forEach(shape => {
   shapeStories.add(shape, _ => (
     <Halo shape={shape}>
       <Focusable shape={shape}>{shape}</Focusable>
     </Halo>
   ))
-}
+})
 
 storiesOf('Halo/visible', module)
   .add('true', _ => (
