@@ -2,22 +2,10 @@
 
 exports[`Storyshots customized styles item style 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    className="css-index--menu-65y210"
     onClick={undefined}
     onKeyDown={[Function]}
     role="menu"
@@ -89,22 +77,10 @@ exports[`Storyshots customized styles item style 1`] = `
 
 exports[`Storyshots dividers edge 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    className="css-index--menu-65y210"
     onClick={undefined}
     onKeyDown={[Function]}
     role="menu"
@@ -126,7 +102,7 @@ exports[`Storyshots dividers edge 1`] = `
       </button>
     </div>
     <div
-      className="css-rficis"
+      className="css-index--divider-1nzml98"
       tabIndex="-1"
     />
   </div>
@@ -135,22 +111,10 @@ exports[`Storyshots dividers edge 1`] = `
 
 exports[`Storyshots dividers sandwich 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    className="css-index--menu-65y210"
     onClick={undefined}
     onKeyDown={[Function]}
     role="menu"
@@ -172,7 +136,7 @@ exports[`Storyshots dividers sandwich 1`] = `
       </button>
     </div>
     <div
-      className="css-rficis"
+      className="css-index--divider-1nzml98"
       tabIndex="-1"
     />
     <div
@@ -211,22 +175,10 @@ exports[`Storyshots dividers sandwich 1`] = `
 
 exports[`Storyshots link a w/ href 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    className="css-index--menu-65y210"
     onClick={undefined}
     onKeyDown={[Function]}
     role="menu"
@@ -254,22 +206,10 @@ exports[`Storyshots link a w/ href 1`] = `
 
 exports[`Storyshots menu items long text 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    className="css-index--menu-65y210"
     onClick={undefined}
     onKeyDown={[Function]}
     role="menu"
@@ -311,22 +251,10 @@ exports[`Storyshots menu items long text 1`] = `
 
 exports[`Storyshots menu items long text with icon 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    className="css-index--menu-65y210"
     onClick={undefined}
     onKeyDown={[Function]}
     role="menu"
@@ -348,7 +276,7 @@ exports[`Storyshots menu items long text with icon 1`] = `
           data-css-18rfdc6=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="channel icon"
@@ -371,22 +299,10 @@ exports[`Storyshots menu items long text with icon 1`] = `
 
 exports[`Storyshots menu items multiple 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    className="css-index--menu-65y210"
     onClick={undefined}
     onKeyDown={[Function]}
     role="menu"
@@ -443,22 +359,10 @@ exports[`Storyshots menu items multiple 1`] = `
 
 exports[`Storyshots menu items one 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    className="css-index--menu-65y210"
     onClick={undefined}
     onKeyDown={[Function]}
     role="menu"
@@ -485,22 +389,10 @@ exports[`Storyshots menu items one 1`] = `
 
 exports[`Storyshots menu items with icons 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    className="css-index--menu-65y210"
     onClick={undefined}
     onKeyDown={[Function]}
     role="menu"
@@ -522,7 +414,7 @@ exports[`Storyshots menu items with icons 1`] = `
           data-css-18rfdc6=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="channel icon"
@@ -555,7 +447,7 @@ exports[`Storyshots menu items with icons 1`] = `
           data-css-18rfdc6=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="path icon"
@@ -588,7 +480,7 @@ exports[`Storyshots menu items with icons 1`] = `
           data-css-18rfdc6=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="report icon"
@@ -611,19 +503,7 @@ exports[`Storyshots menu items with icons 1`] = `
 
 exports[`Storyshots nested origin bottomLeft 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -635,7 +515,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
     }
   >
     <div
-      className="css-1992o3v"
+      className="css-index--menu-12c3na7"
       onClick={undefined}
       onKeyDown={[Function]}
       role="menu"
@@ -693,19 +573,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
 
 exports[`Storyshots nested origin bottomRight 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -717,7 +585,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
     }
   >
     <div
-      className="css-e49ryl"
+      className="css-index--menu-274hrs"
       onClick={undefined}
       onKeyDown={[Function]}
       role="menu"
@@ -775,19 +643,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
 
 exports[`Storyshots nested origin topLeft 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -799,7 +655,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
     }
   >
     <div
-      className="css-1pg0ko5"
+      className="css-index--menu-65y210"
       onClick={undefined}
       onKeyDown={[Function]}
       role="menu"
@@ -857,19 +713,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
 
 exports[`Storyshots nested origin topRight 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -881,7 +725,7 @@ exports[`Storyshots nested origin topRight 1`] = `
     }
   >
     <div
-      className="css-kv78c9"
+      className="css-index--menu-whjyap"
       onClick={undefined}
       onKeyDown={[Function]}
       role="menu"
@@ -939,22 +783,10 @@ exports[`Storyshots nested origin topRight 1`] = `
 
 exports[`Storyshots onClick flat 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    className="css-index--menu-65y210"
     onClick={undefined}
     onKeyDown={[Function]}
     role="menu"
@@ -1011,22 +843,10 @@ exports[`Storyshots onClick flat 1`] = `
 
 exports[`Storyshots onClick nested 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    className="css-index--menu-65y210"
     onClick={undefined}
     onKeyDown={[Function]}
     role="menu"
@@ -1248,22 +1068,10 @@ exports[`Storyshots onClick nested 1`] = `
 
 exports[`Storyshots shouldFocusOnMount false 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    className="css-index--menu-65y210"
     onClick={undefined}
     onKeyDown={[Function]}
     role="menu"
