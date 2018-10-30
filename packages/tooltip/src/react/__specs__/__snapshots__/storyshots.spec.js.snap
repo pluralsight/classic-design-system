@@ -92,7 +92,7 @@ exports[`Storyshots onClose accent 1`] = `
     >
       <button
         aria-label="Close tooltip"
-        data-css-gwpw63=""
+        data-css-4up60p=""
         onClick={[Function]}
       >
         <svg
@@ -140,7 +140,7 @@ exports[`Storyshots onClose basic 1`] = `
     >
       <button
         aria-label="Close tooltip"
-        data-css-18edqe6=""
+        data-css-1uhqcv0=""
         onClick={[Function]}
       >
         <svg
@@ -188,7 +188,7 @@ exports[`Storyshots onClose short text 1`] = `
     >
       <button
         aria-label="Close tooltip"
-        data-css-18edqe6=""
+        data-css-1uhqcv0=""
         onClick={[Function]}
       >
         <svg
@@ -236,7 +236,7 @@ exports[`Storyshots onClose tailPosition topRight 1`] = `
     >
       <button
         aria-label="Close tooltip"
-        data-css-18edqe6=""
+        data-css-1uhqcv0=""
         onClick={[Function]}
       >
         <svg
