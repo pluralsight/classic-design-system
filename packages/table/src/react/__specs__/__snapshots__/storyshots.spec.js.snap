@@ -17,7 +17,7 @@ exports[`Storyshots cell align center 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -51,7 +51,7 @@ exports[`Storyshots cell align left 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -85,7 +85,7 @@ exports[`Storyshots cell align right 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -119,7 +119,7 @@ exports[`Storyshots cell auto style anchor tag 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -183,7 +183,7 @@ exports[`Storyshots cell custom className 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -217,7 +217,7 @@ exports[`Storyshots cell custom style 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -254,7 +254,7 @@ exports[`Storyshots cell emphasis text 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -293,7 +293,7 @@ exports[`Storyshots cell empty 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -324,7 +324,7 @@ exports[`Storyshots cell flex 1 | 4 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -371,7 +371,7 @@ exports[`Storyshots cell flex 2 | 1 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -418,7 +418,7 @@ exports[`Storyshots cell flex, multiple cell, multiple row 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -489,7 +489,7 @@ exports[`Storyshots cell inner padding 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -528,7 +528,7 @@ exports[`Storyshots cell multiple text 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -567,7 +567,7 @@ exports[`Storyshots cell text 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -600,7 +600,7 @@ exports[`Storyshots columnHeader align center 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -633,7 +633,7 @@ exports[`Storyshots columnHeader align center w/ sort 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -644,7 +644,7 @@ exports[`Storyshots columnHeader align center w/ sort 1`] = `
       >
         Header sortable, aligned center
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -679,7 +679,7 @@ exports[`Storyshots columnHeader align left 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -712,7 +712,7 @@ exports[`Storyshots columnHeader align left w/ sort 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -723,7 +723,7 @@ exports[`Storyshots columnHeader align left w/ sort 1`] = `
       >
         Header sortable, aligned left
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -758,7 +758,7 @@ exports[`Storyshots columnHeader align right 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -791,7 +791,7 @@ exports[`Storyshots columnHeader align right w/ sort 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -802,7 +802,7 @@ exports[`Storyshots columnHeader align right w/ sort 1`] = `
       >
         Header sortable, aligned right
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -837,7 +837,7 @@ exports[`Storyshots columnHeader custom className 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -871,7 +871,7 @@ exports[`Storyshots columnHeader custom style 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -908,7 +908,7 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -919,7 +919,7 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
       >
          Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned center
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -938,7 +938,7 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
       >
         Short header, same align
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -973,7 +973,7 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -984,7 +984,7 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
       >
          Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned left
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -1003,7 +1003,7 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
       >
         Short header, same align
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -1038,7 +1038,7 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -1049,7 +1049,7 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
       >
          Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned right
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -1068,7 +1068,7 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
       >
         Short header, same align
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -1103,7 +1103,7 @@ exports[`Storyshots columnHeader sort asc 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -1114,12 +1114,12 @@ exports[`Storyshots columnHeader sort asc 1`] = `
       >
         sorted header
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
             aria-label="sort ascending icon"
-            role="image"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -1151,7 +1151,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -1163,12 +1163,12 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
       >
         active header
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
             aria-label="sort ascending icon"
-            role="image"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -1185,7 +1185,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
       >
         other sortable
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -1226,7 +1226,7 @@ exports[`Storyshots columnHeader sort default 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -1237,7 +1237,7 @@ exports[`Storyshots columnHeader sort default 1`] = `
       >
         header text
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -1272,7 +1272,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -1284,7 +1284,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
       >
         active header
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -1304,7 +1304,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
       >
         other sortable
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -1339,7 +1339,7 @@ exports[`Storyshots columnHeader sort desc 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -1350,12 +1350,12 @@ exports[`Storyshots columnHeader sort desc 1`] = `
       >
         sorted header
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
             aria-label="sort descending icon"
-            role="image"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -1387,7 +1387,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -1399,12 +1399,12 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
       >
         active header
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
             aria-label="sort descending icon"
-            role="image"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -1421,7 +1421,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
       >
         other sortable
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -1462,7 +1462,7 @@ exports[`Storyshots columnHeader text 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -1495,7 +1495,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-1gk8y86=""
@@ -1506,7 +1506,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
       >
         header text
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -1525,7 +1525,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
       >
         header2 text
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -1540,14 +1540,14 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
       </div>
     </div>
     <div
-      className="css-1fq8nx6"
+      className="css-index--drawerroot-iqj7ys"
     >
       <div
-        className="css-1oot5vc"
+        className="css-index--drawerbase-1eeyo50"
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          className="css-index--drawerpanelcontent-1suarfy"
         >
           <div
             data-css-prsp0g=""
@@ -1567,18 +1567,18 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          className="css-index--togglebuttoncontainer-1ai77lf"
         >
           <button
-            className="css-xipskh"
+            aria-label="Expand"
+            className="css-index--togglebutton-fe7rcw"
             onClick={[Function]}
           >
             <div
-              aria-label="Expand"
-              className="css-1byjzqg"
+              className="css-index--rotatable-1564716"
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="caret down icon"
@@ -1596,10 +1596,10 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        className="css-index--drawerpanel-1f648v3"
       >
         <div
-          className="css-1j3g0qd"
+          className="css-collapsible--container-fn9lpf"
         >
           Panel contnet
         </div>
@@ -1626,7 +1626,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -1637,7 +1637,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
       >
         header text
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -1656,7 +1656,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
       >
         header2 text
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
           data-css-7lxb9e=""
         >
           <svg
@@ -1707,17 +1707,17 @@ exports[`Storyshots drawer mulitple 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
-      className="css-1fq8nx6"
+      className="css-index--drawerroot-iqj7ys"
     >
       <div
-        className="css-1oot5vc"
+        className="css-index--drawerbase-1eeyo50"
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          className="css-index--drawerpanelcontent-1suarfy"
         >
           <div
             data-css-prsp0g=""
@@ -1731,18 +1731,18 @@ exports[`Storyshots drawer mulitple 1`] = `
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          className="css-index--togglebuttoncontainer-1ai77lf"
         >
           <button
-            className="css-xipskh"
+            aria-label="Expand"
+            className="css-index--togglebutton-fe7rcw"
             onClick={[Function]}
           >
             <div
-              aria-label="Expand"
-              className="css-1byjzqg"
+              className="css-index--rotatable-1564716"
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="caret down icon"
@@ -1760,24 +1760,24 @@ exports[`Storyshots drawer mulitple 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        className="css-index--drawerpanel-1f648v3"
       >
         <div
-          className="css-1j3g0qd"
+          className="css-collapsible--container-fn9lpf"
         >
           This is panel content
         </div>
       </div>
     </div>
     <div
-      className="css-1fq8nx6"
+      className="css-index--drawerroot-iqj7ys"
     >
       <div
-        className="css-1oot5vc"
+        className="css-index--drawerbase-1eeyo50"
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          className="css-index--drawerpanelcontent-1suarfy"
         >
           <div
             data-css-prsp0g=""
@@ -1791,18 +1791,18 @@ exports[`Storyshots drawer mulitple 1`] = `
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          className="css-index--togglebuttoncontainer-1ai77lf"
         >
           <button
-            className="css-xipskh"
+            aria-label="Expand"
+            className="css-index--togglebutton-fe7rcw"
             onClick={[Function]}
           >
             <div
-              aria-label="Expand"
-              className="css-1byjzqg"
+              className="css-index--rotatable-1564716"
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="caret down icon"
@@ -1820,10 +1820,10 @@ exports[`Storyshots drawer mulitple 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        className="css-index--drawerpanel-1f648v3"
       >
         <div
-          className="css-1j3g0qd"
+          className="css-collapsible--container-fn9lpf"
         >
           This is panel content
         </div>
@@ -1850,17 +1850,17 @@ exports[`Storyshots drawer single 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
-      className="css-1fq8nx6"
+      className="css-index--drawerroot-iqj7ys"
     >
       <div
-        className="css-1oot5vc"
+        className="css-index--drawerbase-1eeyo50"
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          className="css-index--drawerpanelcontent-1suarfy"
         >
           <div
             data-css-prsp0g=""
@@ -1874,18 +1874,18 @@ exports[`Storyshots drawer single 1`] = `
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          className="css-index--togglebuttoncontainer-1ai77lf"
         >
           <button
-            className="css-xipskh"
+            aria-label="Expand"
+            className="css-index--togglebutton-fe7rcw"
             onClick={[Function]}
           >
             <div
-              aria-label="Expand"
-              className="css-1byjzqg"
+              className="css-index--rotatable-1564716"
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="caret down icon"
@@ -1903,10 +1903,10 @@ exports[`Storyshots drawer single 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        className="css-index--drawerpanel-1f648v3"
       >
         <div
-          className="css-1j3g0qd"
+          className="css-collapsible--container-fn9lpf"
         >
           This is panel content
         </div>
@@ -1933,17 +1933,17 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
-      className="css-1fq8nx6"
+      className="css-index--drawerroot-iqj7ys"
     >
       <div
-        className="css-1oot5vc"
+        className="css-index--drawerbase-1eeyo50"
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          className="css-index--drawerpanelcontent-1suarfy"
         >
           <div
             data-css-prsp0g=""
@@ -1971,18 +1971,18 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          className="css-index--togglebuttoncontainer-1ai77lf"
         >
           <button
-            className="css-xipskh"
+            aria-label="Expand"
+            className="css-index--togglebutton-fe7rcw"
             onClick={[Function]}
           >
             <div
-              aria-label="Expand"
-              className="css-1byjzqg"
+              className="css-index--rotatable-1564716"
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="caret down icon"
@@ -2000,24 +2000,24 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        className="css-index--drawerpanel-1f648v3"
       >
         <div
-          className="css-1j3g0qd"
+          className="css-collapsible--container-fn9lpf"
         >
           This is panel content
         </div>
       </div>
     </div>
     <div
-      className="css-1fq8nx6"
+      className="css-index--drawerroot-iqj7ys"
     >
       <div
-        className="css-1oot5vc"
+        className="css-index--drawerbase-1eeyo50"
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          className="css-index--drawerpanelcontent-1suarfy"
         >
           <div
             data-css-prsp0g=""
@@ -2045,18 +2045,18 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          className="css-index--togglebuttoncontainer-1ai77lf"
         >
           <button
-            className="css-xipskh"
+            aria-label="Expand"
+            className="css-index--togglebutton-fe7rcw"
             onClick={[Function]}
           >
             <div
-              aria-label="Expand"
-              className="css-1byjzqg"
+              className="css-index--rotatable-1564716"
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="caret down icon"
@@ -2074,24 +2074,24 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        className="css-index--drawerpanel-1f648v3"
       >
         <div
-          className="css-1j3g0qd"
+          className="css-collapsible--container-fn9lpf"
         >
           This is panel content
         </div>
       </div>
     </div>
     <div
-      className="css-1fq8nx6"
+      className="css-index--drawerroot-iqj7ys"
     >
       <div
-        className="css-1oot5vc"
+        className="css-index--drawerbase-1eeyo50"
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          className="css-index--drawerpanelcontent-1suarfy"
         >
           <div
             data-css-prsp0g=""
@@ -2119,18 +2119,18 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          className="css-index--togglebuttoncontainer-1ai77lf"
         >
           <button
-            className="css-xipskh"
+            aria-label="Expand"
+            className="css-index--togglebutton-fe7rcw"
             onClick={[Function]}
           >
             <div
-              aria-label="Expand"
-              className="css-1byjzqg"
+              className="css-index--rotatable-1564716"
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="caret down icon"
@@ -2148,10 +2148,10 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        className="css-index--drawerpanel-1f648v3"
       >
         <div
-          className="css-1j3g0qd"
+          className="css-collapsible--container-fn9lpf"
         >
           This is panel content
         </div>
@@ -2178,7 +2178,7 @@ exports[`Storyshots row custom className 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       className="some-class"
@@ -2212,7 +2212,7 @@ exports[`Storyshots row custom style 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -2250,7 +2250,7 @@ exports[`Storyshots row multiple rows 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -2303,7 +2303,7 @@ exports[`Storyshots row one row, content 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -2336,7 +2336,7 @@ exports[`Storyshots row one row, empty 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -2363,7 +2363,7 @@ exports[`Storyshots table custom className 1`] = `
 >
   <div
     className="some-class"
-    data-css-yo440u=""
+    data-css-d303pi=""
   >
     <div
       data-css-prsp0g=""
@@ -2396,7 +2396,7 @@ exports[`Storyshots table custom style 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
     style={
       Object {
         "outline": "1px solid red",
@@ -2434,7 +2434,7 @@ exports[`Storyshots table empty 1`] = `
   }
 >
   <div
-    data-css-yo440u=""
+    data-css-d303pi=""
   />
 </div>
 `;
