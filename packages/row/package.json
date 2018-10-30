@@ -19,6 +19,11 @@
     "test:updateSnapshot": "npm run test -- --updateSnapshot",
     "test:watch": "npm run test -- --watchAll"
   },
+  "jest": {
+    "setupFiles": [
+      "raf/polyfill"
+    ]
+  },
   "keywords": [],
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.3.3",
@@ -37,16 +42,17 @@
     "@pluralsight/ps-design-system-drawer": "^1.5.2",
     "@pluralsight/ps-design-system-icon": "^8.13.0",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.44",
-    "@storybook/addon-actions": "^3.2.14",
-    "@storybook/addon-storyshots": "3.2.14",
-    "@storybook/addons": "3.2.14",
-    "@storybook/react": "3.2.14",
+    "@storybook/addon-actions": "^3.4.0",
+    "@storybook/addon-storyshots": "^3.4.0",
+    "@storybook/addons": "^3.4.0",
+    "@storybook/react": "^3.4.0",
     "babel-cli": "^6.24.1",
     "babel-plugin-glamorous-displayname": "^1.1.3",
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "jest": "^20.0.4",
-    "npm-run-all": "^4.1.2"
+    "jest": "^23.6.0",
+    "npm-run-all": "^4.1.2",
+    "raf": "^3.4.0"
   }
 }
