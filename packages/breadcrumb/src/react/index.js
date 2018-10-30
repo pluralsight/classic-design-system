@@ -16,6 +16,7 @@ const Breadcrumb = props => {
     ...(props.style ? { style: props.style } : null),
     ...(props.className ? { className: props.className } : null)
   }
+
   return (
     <div {...breadcrumbProps}>
       <Button

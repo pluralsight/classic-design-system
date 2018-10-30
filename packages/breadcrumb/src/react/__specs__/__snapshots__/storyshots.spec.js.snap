@@ -17,19 +17,19 @@ exports[`Storyshots as link hrefs 1`] = `
   }
 >
   <div
-    data-css-1n7ahd0=""
+    data-css-nipl9k=""
   >
     <a
-      data-css-1a9ax70=""
+      data-css-w1mtet=""
       disabled={false}
       href="https://duckduckgo.com"
       style={Object {}}
     >
       <div
-        className="css-1mgd019"
+        data-css-1mgd019=""
       >
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
         >
           <svg
             aria-label="caret left icon"
@@ -44,7 +44,7 @@ exports[`Storyshots as link hrefs 1`] = `
         </div>
       </div>
       <span
-        className="css-1en8fmq"
+        data-css-15b13by=""
       >
         Click as link
       </span>
@@ -70,19 +70,19 @@ exports[`Storyshots disabled disabled 1`] = `
   }
 >
   <div
-    data-css-1n7ahd0=""
+    data-css-nipl9k=""
   >
     <button
-      data-css-i6lq5h=""
+      data-css-16yze2u=""
       disabled={true}
       onClick={[Function]}
       style={Object {}}
     >
       <div
-        className="css-1mgd019"
+        data-css-1mgd019=""
       >
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
         >
           <svg
             aria-label="caret left icon"
@@ -97,7 +97,7 @@ exports[`Storyshots disabled disabled 1`] = `
         </div>
       </div>
       <span
-        className="css-1en8fmq"
+        data-css-15b13by=""
       >
         Disabled
       </span>
@@ -123,18 +123,18 @@ exports[`Storyshots normal looks great 1`] = `
   }
 >
   <div
-    data-css-1n7ahd0=""
+    data-css-nipl9k=""
   >
     <button
-      data-css-1a9ax70=""
+      data-css-w1mtet=""
       disabled={false}
       style={Object {}}
     >
       <div
-        className="css-1mgd019"
+        data-css-1mgd019=""
       >
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
         >
           <svg
             aria-label="caret left icon"
@@ -149,7 +149,7 @@ exports[`Storyshots normal looks great 1`] = `
         </div>
       </div>
       <span
-        className="css-1en8fmq"
+        data-css-15b13by=""
       >
         All the things
       </span>
@@ -175,19 +175,19 @@ exports[`Storyshots with onClick clicks once 1`] = `
   }
 >
   <div
-    data-css-1n7ahd0=""
+    data-css-nipl9k=""
   >
     <button
-      data-css-1a9ax70=""
+      data-css-w1mtet=""
       disabled={false}
       onClick={[Function]}
       style={Object {}}
     >
       <div
-        className="css-1mgd019"
+        data-css-1mgd019=""
       >
         <div
-          className="css-otejxm"
+          className="css-index--iconcontainer-1o7wiin"
         >
           <svg
             aria-label="caret left icon"
@@ -202,7 +202,7 @@ exports[`Storyshots with onClick clicks once 1`] = `
         </div>
       </div>
       <span
-        className="css-1en8fmq"
+        data-css-15b13by=""
       >
         Clicks once
       </span>
