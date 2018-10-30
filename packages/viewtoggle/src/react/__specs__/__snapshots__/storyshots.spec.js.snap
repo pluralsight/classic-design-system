@@ -17,12 +17,12 @@ exports[`Storyshots active default first 1`] = `
   }
 >
   <div
-    className="css-1ifazk6"
+    className="css-index--list-1l4ca7i"
     role="radiogroup"
   >
     <div
       aria-hidden={true}
-      className="css-ztmayk"
+      className="css-index--activepillbg-rgvq1q"
       style={Object {}}
     >
       <span
@@ -33,7 +33,7 @@ exports[`Storyshots active default first 1`] = `
     </div>
     <button
       aria-selected={true}
-      className="css-1p9dg7s"
+      className="css-index--optionbutton-1vgo4rg"
       onClick={[Function]}
       role="radio"
     >
@@ -41,7 +41,7 @@ exports[`Storyshots active default first 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -49,7 +49,7 @@ exports[`Storyshots active default first 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -76,12 +76,12 @@ exports[`Storyshots active explicit first 1`] = `
   }
 >
   <div
-    className="css-1ifazk6"
+    className="css-index--list-1l4ca7i"
     role="radiogroup"
   >
     <div
       aria-hidden={true}
-      className="css-ztmayk"
+      className="css-index--activepillbg-rgvq1q"
       style={Object {}}
     >
       <span
@@ -92,7 +92,7 @@ exports[`Storyshots active explicit first 1`] = `
     </div>
     <button
       aria-selected={true}
-      className="css-1p9dg7s"
+      className="css-index--optionbutton-1vgo4rg"
       onClick={[Function]}
       role="radio"
     >
@@ -100,7 +100,7 @@ exports[`Storyshots active explicit first 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -108,7 +108,7 @@ exports[`Storyshots active explicit first 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -135,12 +135,12 @@ exports[`Storyshots active explicit second 1`] = `
   }
 >
   <div
-    className="css-1ifazk6"
+    className="css-index--list-1l4ca7i"
     role="radiogroup"
   >
     <div
       aria-hidden={true}
-      className="css-ztmayk"
+      className="css-index--activepillbg-rgvq1q"
       style={Object {}}
     >
       <span
@@ -151,7 +151,7 @@ exports[`Storyshots active explicit second 1`] = `
     </div>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -159,7 +159,7 @@ exports[`Storyshots active explicit second 1`] = `
     </button>
     <button
       aria-selected={true}
-      className="css-1p9dg7s"
+      className="css-index--optionbutton-1vgo4rg"
       onClick={[Function]}
       role="radio"
     >
@@ -167,7 +167,7 @@ exports[`Storyshots active explicit second 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -194,12 +194,12 @@ exports[`Storyshots active explicit third 1`] = `
   }
 >
   <div
-    className="css-1ifazk6"
+    className="css-index--list-1l4ca7i"
     role="radiogroup"
   >
     <div
       aria-hidden={true}
-      className="css-ztmayk"
+      className="css-index--activepillbg-rgvq1q"
       style={Object {}}
     >
       <span
@@ -210,7 +210,7 @@ exports[`Storyshots active explicit third 1`] = `
     </div>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -218,7 +218,7 @@ exports[`Storyshots active explicit third 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -226,7 +226,7 @@ exports[`Storyshots active explicit third 1`] = `
     </button>
     <button
       aria-selected={true}
-      className="css-1p9dg7s"
+      className="css-index--optionbutton-1vgo4rg"
       onClick={[Function]}
       role="radio"
     >
@@ -253,12 +253,12 @@ exports[`Storyshots dynamic options sizes correctly 1`] = `
   }
 >
   <div
-    className="css-1ifazk6"
+    className="css-index--list-1l4ca7i"
     role="radiogroup"
   >
     <div
       aria-hidden={true}
-      className="css-ztmayk"
+      className="css-index--activepillbg-rgvq1q"
       style={Object {}}
     >
       <span
@@ -269,7 +269,7 @@ exports[`Storyshots dynamic options sizes correctly 1`] = `
     </div>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -277,7 +277,7 @@ exports[`Storyshots dynamic options sizes correctly 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -285,7 +285,7 @@ exports[`Storyshots dynamic options sizes correctly 1`] = `
     </button>
     <button
       aria-selected={true}
-      className="css-1p9dg7s"
+      className="css-index--optionbutton-1vgo4rg"
       onClick={[Function]}
       role="radio"
     >
@@ -312,12 +312,12 @@ exports[`Storyshots onSelect handles click 1`] = `
   }
 >
   <div
-    className="css-1ifazk6"
+    className="css-index--list-1l4ca7i"
     role="radiogroup"
   >
     <div
       aria-hidden={true}
-      className="css-ztmayk"
+      className="css-index--activepillbg-rgvq1q"
       style={Object {}}
     >
       <span
@@ -328,7 +328,7 @@ exports[`Storyshots onSelect handles click 1`] = `
     </div>
     <button
       aria-selected={true}
-      className="css-1p9dg7s"
+      className="css-index--optionbutton-1vgo4rg"
       onClick={[Function]}
       role="radio"
     >
@@ -336,7 +336,7 @@ exports[`Storyshots onSelect handles click 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -344,7 +344,7 @@ exports[`Storyshots onSelect handles click 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -371,12 +371,12 @@ exports[`Storyshots options count more than max 1`] = `
   }
 >
   <div
-    className="css-1ifazk6"
+    className="css-index--list-1l4ca7i"
     role="radiogroup"
   >
     <div
       aria-hidden={true}
-      className="css-ztmayk"
+      className="css-index--activepillbg-rgvq1q"
       style={Object {}}
     >
       <span
@@ -387,7 +387,7 @@ exports[`Storyshots options count more than max 1`] = `
     </div>
     <button
       aria-selected={true}
-      className="css-1p9dg7s"
+      className="css-index--optionbutton-1vgo4rg"
       onClick={[Function]}
       role="radio"
     >
@@ -395,7 +395,7 @@ exports[`Storyshots options count more than max 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -403,7 +403,7 @@ exports[`Storyshots options count more than max 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -430,12 +430,12 @@ exports[`Storyshots options count one 1`] = `
   }
 >
   <div
-    className="css-1ifazk6"
+    className="css-index--list-1l4ca7i"
     role="radiogroup"
   >
     <div
       aria-hidden={true}
-      className="css-ztmayk"
+      className="css-index--activepillbg-rgvq1q"
       style={Object {}}
     >
       <span
@@ -446,7 +446,7 @@ exports[`Storyshots options count one 1`] = `
     </div>
     <button
       aria-selected={true}
-      className="css-1p9dg7s"
+      className="css-index--optionbutton-1vgo4rg"
       onClick={[Function]}
       role="radio"
     >
@@ -473,12 +473,12 @@ exports[`Storyshots options count three 1`] = `
   }
 >
   <div
-    className="css-1ifazk6"
+    className="css-index--list-1l4ca7i"
     role="radiogroup"
   >
     <div
       aria-hidden={true}
-      className="css-ztmayk"
+      className="css-index--activepillbg-rgvq1q"
       style={Object {}}
     >
       <span
@@ -489,7 +489,7 @@ exports[`Storyshots options count three 1`] = `
     </div>
     <button
       aria-selected={true}
-      className="css-1p9dg7s"
+      className="css-index--optionbutton-1vgo4rg"
       onClick={[Function]}
       role="radio"
     >
@@ -497,7 +497,7 @@ exports[`Storyshots options count three 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -505,7 +505,7 @@ exports[`Storyshots options count three 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -532,12 +532,12 @@ exports[`Storyshots options count two 1`] = `
   }
 >
   <div
-    className="css-1ifazk6"
+    className="css-index--list-1l4ca7i"
     role="radiogroup"
   >
     <div
       aria-hidden={true}
-      className="css-ztmayk"
+      className="css-index--activepillbg-rgvq1q"
       style={Object {}}
     >
       <span
@@ -548,7 +548,7 @@ exports[`Storyshots options count two 1`] = `
     </div>
     <button
       aria-selected={true}
-      className="css-1p9dg7s"
+      className="css-index--optionbutton-1vgo4rg"
       onClick={[Function]}
       role="radio"
     >
@@ -556,7 +556,7 @@ exports[`Storyshots options count two 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -583,12 +583,12 @@ exports[`Storyshots text length all long 1`] = `
   }
 >
   <div
-    className="css-1ifazk6"
+    className="css-index--list-1l4ca7i"
     role="radiogroup"
   >
     <div
       aria-hidden={true}
-      className="css-ztmayk"
+      className="css-index--activepillbg-rgvq1q"
       style={Object {}}
     >
       <span
@@ -599,7 +599,7 @@ exports[`Storyshots text length all long 1`] = `
     </div>
     <button
       aria-selected={true}
-      className="css-1p9dg7s"
+      className="css-index--optionbutton-1vgo4rg"
       onClick={[Function]}
       role="radio"
     >
@@ -607,7 +607,7 @@ exports[`Storyshots text length all long 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -615,7 +615,7 @@ exports[`Storyshots text length all long 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -642,12 +642,12 @@ exports[`Storyshots text length differing lengths 1`] = `
   }
 >
   <div
-    className="css-1ifazk6"
+    className="css-index--list-1l4ca7i"
     role="radiogroup"
   >
     <div
       aria-hidden={true}
-      className="css-ztmayk"
+      className="css-index--activepillbg-rgvq1q"
       style={Object {}}
     >
       <span
@@ -658,7 +658,7 @@ exports[`Storyshots text length differing lengths 1`] = `
     </div>
     <button
       aria-selected={true}
-      className="css-1p9dg7s"
+      className="css-index--optionbutton-1vgo4rg"
       onClick={[Function]}
       role="radio"
     >
@@ -666,7 +666,7 @@ exports[`Storyshots text length differing lengths 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
@@ -674,7 +674,7 @@ exports[`Storyshots text length differing lengths 1`] = `
     </button>
     <button
       aria-selected={false}
-      className="css-1eee2k7"
+      className="css-index--optionbutton-1xbzx3p"
       onClick={[Function]}
       role="radio"
     >
