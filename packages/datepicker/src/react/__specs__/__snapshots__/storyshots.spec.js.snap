@@ -93,7 +93,6 @@ exports[`Storyshots appearance default 1`] = `
           onFocus={[Function]}
           readOnly={true}
           tabIndex="-1"
-          value={undefined}
         />
         <button
           data-css-ay0j88=""
@@ -101,7 +100,7 @@ exports[`Storyshots appearance default 1`] = `
           onClick={[Function]}
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="calendar icon"
@@ -219,7 +218,6 @@ exports[`Storyshots appearance default w/ error 1`] = `
           onFocus={[Function]}
           readOnly={true}
           tabIndex="-1"
-          value={undefined}
         />
         <button
           data-css-ay0j88=""
@@ -227,7 +225,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
           onClick={[Function]}
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="calendar icon"
@@ -245,7 +243,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
           data-css-loo18p=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="warning icon"
@@ -358,7 +356,6 @@ exports[`Storyshots appearance subtle 1`] = `
           onFocus={[Function]}
           readOnly={true}
           tabIndex="-1"
-          value={undefined}
         />
         <button
           data-css-ywynjv=""
@@ -366,7 +363,7 @@ exports[`Storyshots appearance subtle 1`] = `
           onClick={[Function]}
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="calendar icon"
@@ -484,7 +481,6 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           onFocus={[Function]}
           readOnly={true}
           tabIndex="-1"
-          value={undefined}
         />
         <button
           data-css-ywynjv=""
@@ -492,7 +488,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           onClick={[Function]}
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="calendar icon"
@@ -510,7 +506,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           data-css-loo18p=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="warning icon"
@@ -629,7 +625,6 @@ exports[`Storyshots disabled compare 1`] = `
             onFocus={[Function]}
             readOnly={true}
             tabIndex="-1"
-            value={undefined}
           />
           <button
             data-css-ay0j88=""
@@ -637,7 +632,7 @@ exports[`Storyshots disabled compare 1`] = `
             onClick={[Function]}
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="calendar icon"
@@ -733,7 +728,6 @@ exports[`Storyshots disabled compare 1`] = `
             onFocus={[Function]}
             readOnly={true}
             tabIndex="-1"
-            value={undefined}
           />
           <button
             data-css-ay0j88=""
@@ -741,7 +735,7 @@ exports[`Storyshots disabled compare 1`] = `
             onClick={[Function]}
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="calendar icon"
@@ -868,7 +862,6 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
               onFocus={[Function]}
               readOnly={true}
               tabIndex="-1"
-              value={undefined}
             />
             <button
               data-css-ay0j88=""
@@ -876,7 +869,7 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
               onClick={[Function]}
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="calendar icon"
@@ -898,14 +891,13 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
           data-css-w0yocm=""
         >
           <div
-            data-css-1ghdxx6=""
+            data-css-17d9xcr=""
           >
             <input
               data-css-ly16us=""
               disabled={false}
               onBlur={[Function]}
               onFocus={[Function]}
-              placeholder={undefined}
               type="date"
             />
           </div>
@@ -1014,7 +1006,6 @@ exports[`Storyshots labels label 1`] = `
           onFocus={[Function]}
           readOnly={true}
           tabIndex="-1"
-          value={undefined}
         />
         <button
           data-css-ay0j88=""
@@ -1022,7 +1013,7 @@ exports[`Storyshots labels label 1`] = `
           onClick={[Function]}
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="calendar icon"
@@ -1140,7 +1131,6 @@ exports[`Storyshots labels label and subLabel 1`] = `
           onFocus={[Function]}
           readOnly={true}
           tabIndex="-1"
-          value={undefined}
         />
         <button
           data-css-ay0j88=""
@@ -1148,7 +1138,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
           onClick={[Function]}
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="calendar icon"
@@ -1266,7 +1256,6 @@ exports[`Storyshots labels none 1`] = `
           onFocus={[Function]}
           readOnly={true}
           tabIndex="-1"
-          value={undefined}
         />
         <button
           data-css-ay0j88=""
@@ -1274,7 +1263,7 @@ exports[`Storyshots labels none 1`] = `
           onClick={[Function]}
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="calendar icon"
@@ -1387,7 +1376,6 @@ exports[`Storyshots labels subLabel 1`] = `
           onFocus={[Function]}
           readOnly={true}
           tabIndex="-1"
-          value={undefined}
         />
         <button
           data-css-ay0j88=""
@@ -1395,7 +1383,7 @@ exports[`Storyshots labels subLabel 1`] = `
           onClick={[Function]}
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="calendar icon"
@@ -1532,7 +1520,6 @@ exports[`Storyshots layouts full width 1`] = `
             onFocus={[Function]}
             readOnly={true}
             tabIndex="-1"
-            value={undefined}
           />
           <button
             data-css-ay0j88=""
@@ -1540,7 +1527,7 @@ exports[`Storyshots layouts full width 1`] = `
             onClick={[Function]}
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="calendar icon"
@@ -1637,7 +1624,6 @@ exports[`Storyshots layouts full width 1`] = `
             onFocus={[Function]}
             readOnly={true}
             tabIndex="-1"
-            value={undefined}
           />
           <button
             data-css-ay0j88=""
@@ -1645,7 +1631,7 @@ exports[`Storyshots layouts full width 1`] = `
             onClick={[Function]}
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="calendar icon"
@@ -1663,7 +1649,7 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-loo18p=""
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="warning icon"
@@ -1760,7 +1746,6 @@ exports[`Storyshots layouts full width 1`] = `
             onFocus={[Function]}
             readOnly={true}
             tabIndex="-1"
-            value={undefined}
           />
           <button
             data-css-ywynjv=""
@@ -1768,7 +1753,7 @@ exports[`Storyshots layouts full width 1`] = `
             onClick={[Function]}
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="calendar icon"
@@ -1865,7 +1850,6 @@ exports[`Storyshots layouts full width 1`] = `
             onFocus={[Function]}
             readOnly={true}
             tabIndex="-1"
-            value={undefined}
           />
           <button
             data-css-ywynjv=""
@@ -1873,7 +1857,7 @@ exports[`Storyshots layouts full width 1`] = `
             onClick={[Function]}
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="calendar icon"
@@ -1891,7 +1875,7 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-loo18p=""
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="warning icon"
@@ -2020,7 +2004,6 @@ exports[`Storyshots layouts right-aligned 1`] = `
               onFocus={[Function]}
               readOnly={true}
               tabIndex="-1"
-              value={undefined}
             />
             <button
               data-css-ywynjv=""
@@ -2028,7 +2011,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
               onClick={[Function]}
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="calendar icon"
@@ -2159,7 +2142,7 @@ exports[`Storyshots value single slash-separated value 1`] = `
           onClick={[Function]}
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="calendar icon"
@@ -2292,7 +2275,7 @@ exports[`Storyshots value updated value, no initial 1`] = `
             onClick={[Function]}
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="calendar icon"
@@ -2426,7 +2409,7 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
             onClick={[Function]}
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="calendar icon"
@@ -2541,7 +2524,6 @@ exports[`Storyshots whitelist name 1`] = `
           onFocus={[Function]}
           readOnly={true}
           tabIndex="-1"
-          value={undefined}
         />
         <button
           data-css-ay0j88=""
@@ -2549,7 +2531,7 @@ exports[`Storyshots whitelist name 1`] = `
           onClick={[Function]}
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="calendar icon"
@@ -2663,7 +2645,6 @@ exports[`Storyshots whitelist onChange 1`] = `
           onFocus={[Function]}
           readOnly={true}
           tabIndex="-1"
-          value={undefined}
         />
         <button
           data-css-ay0j88=""
@@ -2671,7 +2652,7 @@ exports[`Storyshots whitelist onChange 1`] = `
           onClick={[Function]}
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="calendar icon"
