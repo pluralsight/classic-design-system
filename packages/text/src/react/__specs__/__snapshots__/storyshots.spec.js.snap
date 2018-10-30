@@ -309,7 +309,6 @@ exports[`Storyshots Heading size: large 1`] = `
     }
   >
     <h1
-      className={undefined}
       data-css-10w3axr=""
       size="large"
     >
@@ -343,7 +342,6 @@ exports[`Storyshots Heading size: medium 1`] = `
     }
   >
     <h1
-      className={undefined}
       data-css-1fxxvvr=""
       size="medium"
     >
@@ -377,7 +375,6 @@ exports[`Storyshots Heading size: smallCaps 1`] = `
     }
   >
     <h1
-      className={undefined}
       data-css-1oooiac=""
       size="smallCaps"
     >
@@ -411,7 +408,6 @@ exports[`Storyshots Heading size: xLarge 1`] = `
     }
   >
     <h1
-      className={undefined}
       data-css-qdaun0=""
       size="xLarge"
     >
@@ -445,7 +441,6 @@ exports[`Storyshots Heading style override 1`] = `
     }
   >
     <h2
-      className={undefined}
       data-css-10w3axr=""
       size="large"
       style={
