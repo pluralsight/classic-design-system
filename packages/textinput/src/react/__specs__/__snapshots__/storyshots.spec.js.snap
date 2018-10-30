@@ -39,7 +39,6 @@ exports[`Storyshots appearance default w/ error 1`] = `
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
         />
         <div
           data-css-loo18p=""
@@ -224,7 +223,6 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
         />
         <div
           data-css-loo18p=""
@@ -540,7 +538,6 @@ exports[`Storyshots labels label 1`] = `
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
         />
       </div>
     </label>
@@ -587,7 +584,6 @@ exports[`Storyshots labels label and subLabel 1`] = `
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
         />
       </div>
       <div
@@ -634,7 +630,6 @@ exports[`Storyshots labels none 1`] = `
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
         />
       </div>
     </label>
@@ -718,7 +713,6 @@ exports[`Storyshots labels subLabel 1`] = `
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
         />
       </div>
       <div
@@ -784,7 +778,6 @@ exports[`Storyshots layouts full width 1`] = `
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
           />
         </div>
       </label>
@@ -810,7 +803,6 @@ exports[`Storyshots layouts full width 1`] = `
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
           />
           <div
             data-css-loo18p=""
@@ -854,7 +846,6 @@ exports[`Storyshots layouts full width 1`] = `
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
           />
         </div>
       </label>
@@ -880,7 +871,6 @@ exports[`Storyshots layouts full width 1`] = `
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
           />
           <div
             data-css-loo18p=""
@@ -1028,7 +1018,6 @@ exports[`Storyshots style override css 1`] = `
               disabled={false}
               onBlur={[Function]}
               onFocus={[Function]}
-              placeholder={undefined}
             />
           </div>
         </label>
@@ -1045,7 +1034,6 @@ exports[`Storyshots style override css 1`] = `
               disabled={false}
               onBlur={[Function]}
               onFocus={[Function]}
-              placeholder={undefined}
             />
             <div
               data-css-loo18p=""
@@ -1193,7 +1181,6 @@ exports[`Storyshots whitelist title 1`] = `
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           title="some title"
         />
       </div>
