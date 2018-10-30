@@ -45,10 +45,8 @@ exports[`Storyshots Radio default 1`] = `
             tabIndex="-1"
           />
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -76,10 +74,8 @@ exports[`Storyshots Radio default 1`] = `
             tabIndex="-1"
           />
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -107,10 +103,8 @@ exports[`Storyshots Radio default 1`] = `
             tabIndex="-1"
           />
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -173,10 +167,8 @@ exports[`Storyshots Radio disabled 1`] = `
             tabIndex="-1"
           />
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -208,10 +200,8 @@ exports[`Storyshots Radio disabled 1`] = `
             />
           </div>
           <input
-            _name={undefined}
             checked={true}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -239,10 +229,8 @@ exports[`Storyshots Radio disabled 1`] = `
             tabIndex="-1"
           />
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -305,10 +293,8 @@ exports[`Storyshots Radio error 1`] = `
             tabIndex="-1"
           />
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -340,10 +326,8 @@ exports[`Storyshots Radio error 1`] = `
             />
           </div>
           <input
-            _name={undefined}
             checked={true}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -371,10 +355,8 @@ exports[`Storyshots Radio error 1`] = `
             tabIndex="-1"
           />
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -437,10 +419,8 @@ exports[`Storyshots Radio one selected 1`] = `
             tabIndex="-1"
           />
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -472,10 +452,8 @@ exports[`Storyshots Radio one selected 1`] = `
             />
           </div>
           <input
-            _name={undefined}
             checked={true}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -503,10 +481,8 @@ exports[`Storyshots Radio one selected 1`] = `
             tabIndex="-1"
           />
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -584,10 +560,8 @@ exports[`Storyshots Radio state demo 1`] = `
               />
             </div>
             <input
-              _name={undefined}
               checked={true}
               data-css-gyrv08=""
-              name={undefined}
               readOnly={true}
               tabIndex="-1"
               type="radio"
@@ -615,10 +589,8 @@ exports[`Storyshots Radio state demo 1`] = `
               tabIndex="-1"
             />
             <input
-              _name={undefined}
               checked={false}
               data-css-gyrv08=""
-              name={undefined}
               readOnly={true}
               tabIndex="-1"
               type="radio"
@@ -646,10 +618,8 @@ exports[`Storyshots Radio state demo 1`] = `
               tabIndex="-1"
             />
             <input
-              _name={undefined}
               checked={false}
               data-css-gyrv08=""
-              name={undefined}
               readOnly={true}
               tabIndex="-1"
               type="radio"
