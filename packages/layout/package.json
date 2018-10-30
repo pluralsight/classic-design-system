@@ -17,6 +17,11 @@
     "test:updateSnapshot": "npm run test -- --updateSnapshot",
     "test:watch": "npm run test -- --watchAll"
   },
+  "jest": {
+    "setupFiles": [
+      "raf/polyfill"
+    ]
+  },
   "keywords": [],
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.3.3",
@@ -32,12 +37,13 @@
     "@pluralsight/ps-design-system-button": "^10.8.15",
     "@pluralsight/ps-design-system-link": "^5.7.12",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.44",
-    "@storybook/addon-storyshots": "3.2.4",
-    "@storybook/react": "3.2.3",
+    "@storybook/addon-storyshots": "^3.4.0",
+    "@storybook/react": "^3.4.0",
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "jest": "^20.0.4"
+    "jest": "^23.6.0",
+    "raf": "^3.4.0"
   }
 }
