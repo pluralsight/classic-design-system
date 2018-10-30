@@ -141,7 +141,7 @@ exports[`Storyshots onClick displays X 1`] = `
       onClick={[Function]}
     >
       <div
-        className="css-otejxm"
+        className="css-index--iconcontainer-1o7wiin"
       >
         <svg
           aria-label="close icon"
@@ -189,7 +189,7 @@ exports[`Storyshots onClick w/ long text 1`] = `
       onClick={[Function]}
     >
       <div
-        className="css-otejxm"
+        className="css-index--iconcontainer-1o7wiin"
       >
         <svg
           aria-label="close icon"
@@ -341,7 +341,7 @@ exports[`Storyshots styling className prop  1`] = `
       onClick={[Function]}
     >
       <div
-        className="css-otejxm"
+        className="css-index--iconcontainer-1o7wiin"
       >
         <svg
           aria-label="close icon"
@@ -393,7 +393,7 @@ exports[`Storyshots styling style prop  1`] = `
       onClick={[Function]}
     >
       <div
-        className="css-otejxm"
+        className="css-index--iconcontainer-1o7wiin"
       >
         <svg
           aria-label="close icon"
