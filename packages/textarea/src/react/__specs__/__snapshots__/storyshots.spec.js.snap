@@ -159,7 +159,6 @@ exports[`Storyshots error compare 1`] = `
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
             style={
               Object {
                 "height": 112,
@@ -171,7 +170,7 @@ exports[`Storyshots error compare 1`] = `
             data-css-1ss30jn=""
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="warning icon"
@@ -293,7 +292,6 @@ exports[`Storyshots labels label 1`] = `
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           style={
             Object {
               "height": 112,
@@ -345,7 +343,6 @@ exports[`Storyshots labels label and subLabel 1`] = `
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           style={
             Object {
               "height": 112,
@@ -397,7 +394,6 @@ exports[`Storyshots labels none 1`] = `
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           style={
             Object {
               "height": 112,
@@ -491,7 +487,6 @@ exports[`Storyshots labels subLabel 1`] = `
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           style={
             Object {
               "height": 112,
@@ -562,7 +557,6 @@ exports[`Storyshots layouts full width 1`] = `
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
             style={
               Object {
                 "height": 112,
@@ -593,7 +587,6 @@ exports[`Storyshots layouts full width 1`] = `
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder={undefined}
             style={
               Object {
                 "height": 112,
@@ -604,7 +597,7 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-1ss30jn=""
           >
             <div
-              className="css-otejxm"
+              className="css-index--iconcontainer-1o7wiin"
             >
               <svg
                 aria-label="warning icon"
@@ -664,7 +657,6 @@ exports[`Storyshots rows less than 4 1`] = `
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           style={
             Object {
               "height": 40,
@@ -716,7 +708,6 @@ exports[`Storyshots rows more than 4 1`] = `
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
-          placeholder={undefined}
           style={
             Object {
               "height": 160,
