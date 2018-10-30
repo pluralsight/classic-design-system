@@ -38,7 +38,6 @@ exports[`Storyshots Sample Form sample 1`] = `
           data-css-4l6uky=""
         >
           <h2
-            className={undefined}
             data-css-10w3axr=""
             size="large"
             style={
@@ -67,7 +66,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               Name
             </div>
             <div
-              data-css-1ghdxx6=""
+              data-css-17d9xcr=""
             >
               <input
                 data-css-ly16us=""
@@ -96,7 +95,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               Alias
             </div>
             <div
-              data-css-1ghdxx6=""
+              data-css-17d9xcr=""
             >
               <input
                 data-css-ly16us=""
@@ -130,21 +129,20 @@ exports[`Storyshots Sample Form sample 1`] = `
               Email address
             </div>
             <div
-              data-css-mdufbt=""
+              data-css-o8fadz=""
             >
               <input
                 data-css-ly16us=""
                 disabled={false}
                 onBlur={[Function]}
                 onFocus={[Function]}
-                placeholder={undefined}
                 value="steve@example.com"
               />
               <div
                 data-css-loo18p=""
               >
                 <div
-                  className="css-otejxm"
+                  className="css-index--iconcontainer-1o7wiin"
                 >
                   <svg
                     aria-label="warning icon"
@@ -197,7 +195,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   aria-hidden={true}
                   data-css-e6fvyw=""
                 >
-                  Craftsperson
+                  Select your occupation...
                 </span>
                 <span
                   data-css-5m5yd6=""
@@ -206,10 +204,10 @@ exports[`Storyshots Sample Form sample 1`] = `
                 </span>
               </button>
               <div
-                data-css-1uv5m12=""
+                data-css-cstzed=""
               >
                 <div
-                  className="css-otejxm"
+                  className="css-index--iconcontainer-1o7wiin"
                 >
                   <svg
                     aria-label="caret down icon"
@@ -236,7 +234,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-1thcgnx=""
+              data-css-1vvay1p=""
               role="checkbox"
               tabIndex="0"
             >
@@ -256,7 +254,6 @@ exports[`Storyshots Sample Form sample 1`] = `
             <input
               checked={true}
               data-css-gyrv08=""
-              name={undefined}
               readOnly={true}
               tabIndex="-1"
               type="checkbox"
@@ -301,10 +298,8 @@ exports[`Storyshots Sample Form sample 1`] = `
                   tabIndex="-1"
                 />
                 <input
-                  _name={undefined}
                   checked={false}
                   data-css-gyrv08=""
-                  name={undefined}
                   readOnly={true}
                   tabIndex="-1"
                   type="radio"
@@ -332,10 +327,8 @@ exports[`Storyshots Sample Form sample 1`] = `
                   tabIndex="-1"
                 />
                 <input
-                  _name={undefined}
                   checked={false}
                   data-css-gyrv08=""
-                  name={undefined}
                   readOnly={true}
                   tabIndex="-1"
                   type="radio"
@@ -401,12 +394,12 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-1sql3pc=""
+                data-css-gukh6t=""
                 disabled={false}
                 style={Object {}}
               >
                 <span
-                  className="css-1en8fmq"
+                  data-css-15b13by=""
                 >
                   Save
                 </span>
@@ -416,12 +409,12 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-15alvov=""
+                data-css-1w956hh=""
                 disabled={false}
                 style={Object {}}
               >
                 <span
-                  className="css-1en8fmq"
+                  data-css-15b13by=""
                 >
                   Cancel
                 </span>
