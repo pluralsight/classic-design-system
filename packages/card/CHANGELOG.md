@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.5.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.5.2...@pluralsight/ps-design-system-card@8.5.3) (2018-10-31)
+
+
+### Bug Fixes
+
+* **card:** don't polyfill document on server ([14f58f7](https://github.com/pluralsight/design-system/commit/14f58f7))
+
+
+
+
+
 ## [8.5.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.5.1...@pluralsight/ps-design-system-card@8.5.2) (2018-10-31)
 
 
