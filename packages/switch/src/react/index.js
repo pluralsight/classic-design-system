@@ -47,7 +47,7 @@ const styles = {
 }
 
 class Switch extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
 
     this.handleFocus = this.handleFocus.bind(this)
@@ -56,15 +56,15 @@ class Switch extends React.Component {
     this.state = { isFocused: false }
   }
 
-  handleFocus () {
+  handleFocus() {
     this.setState(_ => ({ isFocused: true }))
   }
 
-  handleBlur () {
+  handleBlur() {
     this.setState(_ => ({ isFocused: false }))
   }
 
-  render () {
+  render() {
     const { isFocused } = this.state
     const { children, error } = this.props
     const themeName = this.context.themeName || themeDefaultName
@@ -85,7 +85,7 @@ class Switch extends React.Component {
         aria-checked={allProps.checked}
         onBlur={this.handleBlur}
         onFocus={this.handleFocus}
-        role='checkbox'
+        role="checkbox"
         tabIndex={allProps.tabIndex || '0'}
       >
         <Halo
@@ -103,8 +103,8 @@ class Switch extends React.Component {
         </Halo>
 
         <input
-          tabIndex='-1'
-          type='checkbox'
+          tabIndex="-1"
+          type="checkbox"
           readOnly
           checked={allProps.checked}
           {...styles.checkbox(allProps)}

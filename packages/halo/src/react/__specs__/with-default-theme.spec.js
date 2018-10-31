@@ -9,11 +9,11 @@ describe('withDefaultTheme', () => {
   const providerThemeName = 'provider-theme-name'
 
   class ThemeProvider extends React.Component {
-    getChildContext () {
+    getChildContext() {
       return { themeName: providerThemeName }
     }
 
-    render () {
+    render() {
       return <React.Fragment {...this.props} />
     }
   }
@@ -26,7 +26,7 @@ describe('withDefaultTheme', () => {
     children: PropTypes.node.isRequired
   }
 
-  function mountWithThemeProvider (child) {
+  function mountWithThemeProvider(child) {
     return mount(<ThemeProvider>{child}</ThemeProvider>)
   }
 

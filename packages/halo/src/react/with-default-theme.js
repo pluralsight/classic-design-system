@@ -12,7 +12,7 @@ const getDisplayName = Component => {
   return Component.displayName || Component.name || 'Component'
 }
 
-export default function withDefaultTheme (BaseComponent) {
+export default function withDefaultTheme(BaseComponent) {
   const name = getDisplayName(BaseComponent)
 
   const EnhancedComponent = (props, context = {}) => {
