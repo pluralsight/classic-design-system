@@ -18,6 +18,7 @@ const dropdownHtmlPropsWhitelist = [
   'tabIndex',
   'value',
   'defaultValue',
+  'title',
   /^on/,
   /^aria-/,
   /^data-/,
