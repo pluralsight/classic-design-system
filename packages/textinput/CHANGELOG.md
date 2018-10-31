@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.7"></a>
+## [0.5.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.6...@pluralsight/ps-design-system-textinput@0.5.7) (2018-10-31)
+
+
+### Bug Fixes
+
+* **halo:** flexible width ([4ae1968](https://github.com/pluralsight/design-system/commit/4ae1968))
+* **halo:** polyfill :focus-within ([afac84f](https://github.com/pluralsight/design-system/commit/afac84f))
+
+
+
+
 <a name="0.5.6"></a>
 ## [0.5.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.5...@pluralsight/ps-design-system-textinput@0.5.6) (2018-10-18)
 

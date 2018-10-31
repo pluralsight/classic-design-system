@@ -2189,6 +2189,71 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
 </div>
 `;
 
+exports[`Storyshots props whitelist title 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-1hniuff=""
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-n53zhn=""
+      >
+        Level
+      </div>
+      <div
+        data-css-1812rv9=""
+      >
+        <button
+          data-css-8bndf1=""
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          title="This title should be present"
+        >
+          <span
+            aria-hidden={true}
+            data-css-e6fvyw=""
+          >
+            One item
+          </span>
+          <span
+            data-css-5m5yd6=""
+          />
+        </button>
+        <div
+          data-css-cstzed=""
+        >
+          <div
+            className="css-index--iconcontainer-1o7wiin"
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 14L8 10h9z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
 exports[`Storyshots whitelist name 1`] = `
 <div
   data-css-claeju=""
