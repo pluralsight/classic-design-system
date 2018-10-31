@@ -8,7 +8,7 @@ import Shiitake from 'shiitake'
 import css from '../css'
 import * as vars from '../vars'
 
-polyfillFocusWithin(document)
+if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
 const TextLink = glamorous.span({
   ...css['.psds-card__text-link'],
@@ -223,7 +223,7 @@ const renderMetaData = (props, metadata) =>
       {metadata.map((m, i) => [
         <MetadataDatum key={`datum${i}`}>{m}</MetadataDatum>,
         i < metadata.length - 1 && (
-          <MetadataDot aria-hidden={true} key={`dot${i}`}>
+          <MetadataDot aria-hidden key={`dot${i}`}>
             ·
           </MetadataDot>
         )
