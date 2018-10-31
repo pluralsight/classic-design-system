@@ -2,19 +2,7 @@
 
 exports[`Storyshots appearance default w/ error 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -41,7 +29,6 @@ exports[`Storyshots appearance default w/ error 1`] = `
           <input
             data-css-ly16us=""
             disabled={false}
-            placeholder={undefined}
           />
         </div>
         <div
@@ -70,19 +57,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
 
 exports[`Storyshots appearance default w/ iconAlign left 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -133,19 +108,7 @@ exports[`Storyshots appearance default w/ iconAlign left 1`] = `
 
 exports[`Storyshots appearance default w/ iconAlign right 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -196,19 +159,7 @@ exports[`Storyshots appearance default w/ iconAlign right 1`] = `
 
 exports[`Storyshots appearance subtle w/ error 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -235,7 +186,6 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           <input
             data-css-1fhke6k=""
             disabled={false}
-            placeholder={undefined}
           />
         </div>
         <div
@@ -264,19 +214,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
 
 exports[`Storyshots appearance subtle w/ iconAlign left 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -327,19 +265,7 @@ exports[`Storyshots appearance subtle w/ iconAlign left 1`] = `
 
 exports[`Storyshots appearance subtle w/ iconAlign right 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -390,19 +316,7 @@ exports[`Storyshots appearance subtle w/ iconAlign right 1`] = `
 
 exports[`Storyshots disabled compare 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -475,19 +389,7 @@ exports[`Storyshots disabled compare 1`] = `
 
 exports[`Storyshots labels all 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -530,19 +432,7 @@ exports[`Storyshots labels all 1`] = `
 
 exports[`Storyshots labels all w/error 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -603,19 +493,7 @@ exports[`Storyshots labels all w/error 1`] = `
 
 exports[`Storyshots labels label 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -642,7 +520,6 @@ exports[`Storyshots labels label 1`] = `
           <input
             data-css-ly16us=""
             disabled={false}
-            placeholder={undefined}
           />
         </div>
       </div>
@@ -653,19 +530,7 @@ exports[`Storyshots labels label 1`] = `
 
 exports[`Storyshots labels label and subLabel 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -692,7 +557,6 @@ exports[`Storyshots labels label and subLabel 1`] = `
           <input
             data-css-ly16us=""
             disabled={false}
-            placeholder={undefined}
           />
         </div>
       </div>
@@ -708,19 +572,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
 
 exports[`Storyshots labels none 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -742,7 +594,6 @@ exports[`Storyshots labels none 1`] = `
           <input
             data-css-ly16us=""
             disabled={false}
-            placeholder={undefined}
           />
         </div>
       </div>
@@ -753,19 +604,7 @@ exports[`Storyshots labels none 1`] = `
 
 exports[`Storyshots labels placeholder 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -798,19 +637,7 @@ exports[`Storyshots labels placeholder 1`] = `
 
 exports[`Storyshots labels subLabel 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -832,7 +659,6 @@ exports[`Storyshots labels subLabel 1`] = `
           <input
             data-css-ly16us=""
             disabled={false}
-            placeholder={undefined}
           />
         </div>
       </div>
@@ -848,19 +674,7 @@ exports[`Storyshots labels subLabel 1`] = `
 
 exports[`Storyshots layouts full width 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -901,7 +715,6 @@ exports[`Storyshots layouts full width 1`] = `
             <input
               data-css-ly16us=""
               disabled={false}
-              placeholder={undefined}
             />
           </div>
         </div>
@@ -930,7 +743,6 @@ exports[`Storyshots layouts full width 1`] = `
             <input
               data-css-ly16us=""
               disabled={false}
-              placeholder={undefined}
             />
           </div>
           <div
@@ -977,7 +789,6 @@ exports[`Storyshots layouts full width 1`] = `
             <input
               data-css-1fhke6k=""
               disabled={false}
-              placeholder={undefined}
             />
           </div>
         </div>
@@ -1006,7 +817,6 @@ exports[`Storyshots layouts full width 1`] = `
             <input
               data-css-1fhke6k=""
               disabled={false}
-              placeholder={undefined}
             />
           </div>
           <div
@@ -1036,19 +846,7 @@ exports[`Storyshots layouts full width 1`] = `
 
 exports[`Storyshots layouts right-aligned 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -1124,19 +922,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
 
 exports[`Storyshots style override css 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -1160,7 +946,6 @@ exports[`Storyshots style override css 1`] = `
               <input
                 data-css-ly16us=""
                 disabled={false}
-                placeholder={undefined}
               />
             </div>
           </div>
@@ -1180,7 +965,6 @@ exports[`Storyshots style override css 1`] = `
               <input
                 data-css-ly16us=""
                 disabled={false}
-                placeholder={undefined}
               />
             </div>
             <div
@@ -1211,19 +995,7 @@ exports[`Storyshots style override css 1`] = `
 
 exports[`Storyshots whitelist name 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -1257,19 +1029,7 @@ exports[`Storyshots whitelist name 1`] = `
 
 exports[`Storyshots whitelist onChange 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -1303,19 +1063,7 @@ exports[`Storyshots whitelist onChange 1`] = `
 
 exports[`Storyshots whitelist title 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -1337,7 +1085,6 @@ exports[`Storyshots whitelist title 1`] = `
           <input
             data-css-ly16us=""
             disabled={false}
-            placeholder={undefined}
             title="some title"
           />
         </div>
@@ -1349,19 +1096,7 @@ exports[`Storyshots whitelist title 1`] = `
 
 exports[`Storyshots whitelist type=date 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -1395,19 +1130,7 @@ exports[`Storyshots whitelist type=date 1`] = `
 
 exports[`Storyshots whitelist type=password 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={

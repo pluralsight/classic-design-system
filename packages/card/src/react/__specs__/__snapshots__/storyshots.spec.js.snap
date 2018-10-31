@@ -13,7 +13,6 @@ exports[`Storyshots actionBar locked visible 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -158,7 +157,6 @@ exports[`Storyshots actionBar multiple actions 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -322,7 +320,6 @@ exports[`Storyshots actionBar single action 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -467,7 +464,6 @@ exports[`Storyshots bonusBar only text 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -594,7 +590,6 @@ exports[`Storyshots bonusBar some element 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -734,7 +729,6 @@ exports[`Storyshots combo everything focusable 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -1003,7 +997,6 @@ exports[`Storyshots combo everything locked 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -1319,7 +1312,6 @@ exports[`Storyshots fullOverlay link 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -1454,7 +1446,6 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -1602,7 +1593,6 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -1758,7 +1748,6 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -1889,7 +1878,6 @@ exports[`Storyshots fullOverlay text only 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -2020,7 +2008,6 @@ exports[`Storyshots image image link 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -2150,7 +2137,6 @@ exports[`Storyshots image image only 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -2272,7 +2258,6 @@ exports[`Storyshots metadata multiple text 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -2414,7 +2399,6 @@ exports[`Storyshots metadata single text 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -2545,7 +2529,6 @@ exports[`Storyshots metadata text link 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -2684,7 +2667,6 @@ exports[`Storyshots metadata text wrapper 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -2819,7 +2801,6 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -3001,7 +2982,6 @@ exports[`Storyshots progress done 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -3131,7 +3111,6 @@ exports[`Storyshots progress none 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -3253,7 +3232,6 @@ exports[`Storyshots progress some 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -3383,7 +3361,6 @@ exports[`Storyshots size large 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-14neud7"
@@ -3505,7 +3482,6 @@ exports[`Storyshots size medium 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -3627,7 +3603,6 @@ exports[`Storyshots size small 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1bnkubs"
@@ -3749,7 +3724,6 @@ exports[`Storyshots tag long multi-word 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -3898,7 +3872,6 @@ exports[`Storyshots tag long single word 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -4047,7 +4020,6 @@ exports[`Storyshots tag text only 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -4178,7 +4150,6 @@ exports[`Storyshots tag with icon 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -4327,7 +4298,6 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -4457,7 +4427,6 @@ exports[`Storyshots title long title, title wrapper 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -4579,7 +4548,6 @@ exports[`Storyshots title text link with title wrapper 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"
@@ -4709,7 +4677,6 @@ exports[`Storyshots title title wrapper 1`] = `
   >
     <div
       className="css-1ybvkp1"
-      style={undefined}
     >
       <div
         className="css-1pb0z5d"

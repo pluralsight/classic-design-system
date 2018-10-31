@@ -14,15 +14,15 @@ const checkedStory = storiesOf('checked', module)
   .add('true', _ => <Switch checked>Click me</Switch>)
 
 class ClickDemo extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = { checked: false }
     this.handleClick = this.handleClick.bind(this)
   }
-  handleClick (checked) {
+  handleClick(checked) {
     this.setState({ checked })
   }
-  render () {
+  render() {
     return React.cloneElement(this.props.children, {
       onClick: this.handleClick,
       checked: this.state.checked

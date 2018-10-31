@@ -2,22 +2,10 @@
 
 exports[`Storyshots appearance black 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1tiz5r9"
+    className="css-index--iconcontainer-lvlpxd"
   >
     <svg
       aria-label="check icon"
@@ -35,22 +23,10 @@ exports[`Storyshots appearance black 1`] = `
 
 exports[`Storyshots appearance blue 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-48v2ba"
+    className="css-index--iconcontainer-1ceww5t"
   >
     <svg
       aria-label="check icon"
@@ -68,22 +44,10 @@ exports[`Storyshots appearance blue 1`] = `
 
 exports[`Storyshots appearance bone 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1v5r0q7"
+    className="css-index--iconcontainer-1m4r9ru"
   >
     <svg
       aria-label="check icon"
@@ -101,22 +65,10 @@ exports[`Storyshots appearance bone 1`] = `
 
 exports[`Storyshots appearance codeBlue 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1nvlpe4"
+    className="css-index--iconcontainer-17ksu6v"
   >
     <svg
       aria-label="check icon"
@@ -134,22 +86,10 @@ exports[`Storyshots appearance codeBlue 1`] = `
 
 exports[`Storyshots appearance codeGreen 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-13hzk1y"
+    className="css-index--iconcontainer-1vm6ccu"
   >
     <svg
       aria-label="check icon"
@@ -167,22 +107,10 @@ exports[`Storyshots appearance codeGreen 1`] = `
 
 exports[`Storyshots appearance codeOrange 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1ptri0m"
+    className="css-index--iconcontainer-u6b49l"
   >
     <svg
       aria-label="check icon"
@@ -200,22 +128,10 @@ exports[`Storyshots appearance codeOrange 1`] = `
 
 exports[`Storyshots appearance codePurple 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1n6ftrg"
+    className="css-index--iconcontainer-wpjv8m"
   >
     <svg
       aria-label="check icon"
@@ -233,22 +149,10 @@ exports[`Storyshots appearance codePurple 1`] = `
 
 exports[`Storyshots appearance codeRed 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6x200g"
+    className="css-index--iconcontainer-1bt3cou"
   >
     <svg
       aria-label="check icon"
@@ -266,22 +170,10 @@ exports[`Storyshots appearance codeRed 1`] = `
 
 exports[`Storyshots appearance codeSand 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-bwh6gu"
+    className="css-index--iconcontainer-1af726t"
   >
     <svg
       aria-label="check icon"
@@ -299,22 +191,10 @@ exports[`Storyshots appearance codeSand 1`] = `
 
 exports[`Storyshots appearance codeTurquoise 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1bfgu4v"
+    className="css-index--iconcontainer-1dnrla7"
   >
     <svg
       aria-label="check icon"
@@ -332,22 +212,10 @@ exports[`Storyshots appearance codeTurquoise 1`] = `
 
 exports[`Storyshots appearance codeYellow 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-ewrbgk"
+    className="css-index--iconcontainer-kvaanw"
   >
     <svg
       aria-label="check icon"
@@ -365,22 +233,10 @@ exports[`Storyshots appearance codeYellow 1`] = `
 
 exports[`Storyshots appearance gray01 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-qfdobr"
+    className="css-index--iconcontainer-u0s3qs"
   >
     <svg
       aria-label="check icon"
@@ -398,22 +254,10 @@ exports[`Storyshots appearance gray01 1`] = `
 
 exports[`Storyshots appearance gray02 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1iwwm4u"
+    className="css-index--iconcontainer-faebx0"
   >
     <svg
       aria-label="check icon"
@@ -431,22 +275,10 @@ exports[`Storyshots appearance gray02 1`] = `
 
 exports[`Storyshots appearance gray03 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1ct2z2u"
+    className="css-index--iconcontainer-rqcxi2"
   >
     <svg
       aria-label="check icon"
@@ -464,22 +296,10 @@ exports[`Storyshots appearance gray03 1`] = `
 
 exports[`Storyshots appearance gray04 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-p9j7jz"
+    className="css-index--iconcontainer-zizeaf"
   >
     <svg
       aria-label="check icon"
@@ -497,22 +317,10 @@ exports[`Storyshots appearance gray04 1`] = `
 
 exports[`Storyshots appearance gray05 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1q7hgfl"
+    className="css-index--iconcontainer-mpwnvo"
   >
     <svg
       aria-label="check icon"
@@ -530,22 +338,10 @@ exports[`Storyshots appearance gray05 1`] = `
 
 exports[`Storyshots appearance gray06 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-4oz4oq"
+    className="css-index--iconcontainer-10pl3rl"
   >
     <svg
       aria-label="check icon"
@@ -563,22 +359,10 @@ exports[`Storyshots appearance gray06 1`] = `
 
 exports[`Storyshots appearance green 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1s05snf"
+    className="css-index--iconcontainer-28o8d5"
   >
     <svg
       aria-label="check icon"
@@ -596,22 +380,10 @@ exports[`Storyshots appearance green 1`] = `
 
 exports[`Storyshots appearance greenLight 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-185g5oo"
+    className="css-index--iconcontainer-1b9phi0"
   >
     <svg
       aria-label="check icon"
@@ -629,22 +401,10 @@ exports[`Storyshots appearance greenLight 1`] = `
 
 exports[`Storyshots appearance orange 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-5z1xiy"
+    className="css-index--iconcontainer-shz02b"
   >
     <svg
       aria-label="check icon"
@@ -662,22 +422,10 @@ exports[`Storyshots appearance orange 1`] = `
 
 exports[`Storyshots appearance orangeLight 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1vnhyc8"
+    className="css-index--iconcontainer-53um0v"
   >
     <svg
       aria-label="check icon"
@@ -695,22 +443,10 @@ exports[`Storyshots appearance orangeLight 1`] = `
 
 exports[`Storyshots appearance pink 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-15auvj7"
+    className="css-index--iconcontainer-2lsz6i"
   >
     <svg
       aria-label="check icon"
@@ -728,22 +464,10 @@ exports[`Storyshots appearance pink 1`] = `
 
 exports[`Storyshots appearance red 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-rst0ce"
+    className="css-index--iconcontainer-1cpyn7i"
   >
     <svg
       aria-label="check icon"
@@ -761,22 +485,10 @@ exports[`Storyshots appearance red 1`] = `
 
 exports[`Storyshots appearance white 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-10dvu6c"
+    className="css-index--iconcontainer-l9utlg"
   >
     <svg
       aria-label="check icon"
@@ -794,22 +506,10 @@ exports[`Storyshots appearance white 1`] = `
 
 exports[`Storyshots appearance yellow 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-3pplc0"
+    className="css-index--iconcontainer-llggbu"
   >
     <svg
       aria-label="check icon"
@@ -827,22 +527,10 @@ exports[`Storyshots appearance yellow 1`] = `
 
 exports[`Storyshots id account 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="account icon"
@@ -860,22 +548,10 @@ exports[`Storyshots id account 1`] = `
 
 exports[`Storyshots id bookmark 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="bookmark icon"
@@ -893,22 +569,10 @@ exports[`Storyshots id bookmark 1`] = `
 
 exports[`Storyshots id bookmarkFill 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="bookmarked icon"
@@ -926,22 +590,10 @@ exports[`Storyshots id bookmarkFill 1`] = `
 
 exports[`Storyshots id briefcase 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="briefcase icon"
@@ -959,22 +611,10 @@ exports[`Storyshots id briefcase 1`] = `
 
 exports[`Storyshots id browse 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="browse icon"
@@ -992,22 +632,10 @@ exports[`Storyshots id browse 1`] = `
 
 exports[`Storyshots id calendar 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="calendar icon"
@@ -1025,22 +653,10 @@ exports[`Storyshots id calendar 1`] = `
 
 exports[`Storyshots id caretDown 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="caret down icon"
@@ -1058,22 +674,10 @@ exports[`Storyshots id caretDown 1`] = `
 
 exports[`Storyshots id caretLeft 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="caret left icon"
@@ -1091,22 +695,10 @@ exports[`Storyshots id caretLeft 1`] = `
 
 exports[`Storyshots id caretRight 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="caret right icon"
@@ -1124,22 +716,10 @@ exports[`Storyshots id caretRight 1`] = `
 
 exports[`Storyshots id caretUp 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="caret up icon"
@@ -1157,22 +737,10 @@ exports[`Storyshots id caretUp 1`] = `
 
 exports[`Storyshots id ccFill 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="close captioned icon"
@@ -1191,22 +759,10 @@ exports[`Storyshots id ccFill 1`] = `
 
 exports[`Storyshots id channel 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="channel icon"
@@ -1224,22 +780,10 @@ exports[`Storyshots id channel 1`] = `
 
 exports[`Storyshots id chat 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="chat icon"
@@ -1257,22 +801,10 @@ exports[`Storyshots id chat 1`] = `
 
 exports[`Storyshots id check 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="check icon"
@@ -1290,22 +822,10 @@ exports[`Storyshots id check 1`] = `
 
 exports[`Storyshots id checkCircleFill 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="Checkmark icon"
@@ -1323,22 +843,10 @@ exports[`Storyshots id checkCircleFill 1`] = `
 
 exports[`Storyshots id close 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="close icon"
@@ -1356,22 +864,10 @@ exports[`Storyshots id close 1`] = `
 
 exports[`Storyshots id code 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="code icon"
@@ -1389,22 +885,10 @@ exports[`Storyshots id code 1`] = `
 
 exports[`Storyshots id copy 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="Copy icon"
@@ -1422,22 +906,10 @@ exports[`Storyshots id copy 1`] = `
 
 exports[`Storyshots id dashboard 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="dashboard icon"
@@ -1455,22 +927,10 @@ exports[`Storyshots id dashboard 1`] = `
 
 exports[`Storyshots id download 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="download icon"
@@ -1488,22 +948,10 @@ exports[`Storyshots id download 1`] = `
 
 exports[`Storyshots id envelope 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="envelope icon"
@@ -1521,22 +969,10 @@ exports[`Storyshots id envelope 1`] = `
 
 exports[`Storyshots id file 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="File icon"
@@ -1554,22 +990,10 @@ exports[`Storyshots id file 1`] = `
 
 exports[`Storyshots id gear 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="gear icon"
@@ -1587,22 +1011,10 @@ exports[`Storyshots id gear 1`] = `
 
 exports[`Storyshots id hand 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="hand icon"
@@ -1620,22 +1032,10 @@ exports[`Storyshots id hand 1`] = `
 
 exports[`Storyshots id home 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="hand icon"
@@ -1653,22 +1053,10 @@ exports[`Storyshots id home 1`] = `
 
 exports[`Storyshots id info 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="info icon"
@@ -1686,22 +1074,10 @@ exports[`Storyshots id info 1`] = `
 
 exports[`Storyshots id interactive 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="interactive icon"
@@ -1719,22 +1095,10 @@ exports[`Storyshots id interactive 1`] = `
 
 exports[`Storyshots id link 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="link icon"
@@ -1752,22 +1116,10 @@ exports[`Storyshots id link 1`] = `
 
 exports[`Storyshots id list 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="list icon"
@@ -1785,22 +1137,10 @@ exports[`Storyshots id list 1`] = `
 
 exports[`Storyshots id lock 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="lock icon"
@@ -1818,22 +1158,10 @@ exports[`Storyshots id lock 1`] = `
 
 exports[`Storyshots id logout 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="logout icon"
@@ -1851,22 +1179,10 @@ exports[`Storyshots id logout 1`] = `
 
 exports[`Storyshots id menu 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="menu icon"
@@ -1884,22 +1200,10 @@ exports[`Storyshots id menu 1`] = `
 
 exports[`Storyshots id mic 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="mic icon"
@@ -1917,22 +1221,10 @@ exports[`Storyshots id mic 1`] = `
 
 exports[`Storyshots id more 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="more icon"
@@ -1950,22 +1242,10 @@ exports[`Storyshots id more 1`] = `
 
 exports[`Storyshots id note 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="note icon"
@@ -1983,22 +1263,10 @@ exports[`Storyshots id note 1`] = `
 
 exports[`Storyshots id org 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="org icon"
@@ -2016,22 +1284,10 @@ exports[`Storyshots id org 1`] = `
 
 exports[`Storyshots id path 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="path icon"
@@ -2049,22 +1305,10 @@ exports[`Storyshots id path 1`] = `
 
 exports[`Storyshots id pencil 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="pencil icon"
@@ -2082,22 +1326,10 @@ exports[`Storyshots id pencil 1`] = `
 
 exports[`Storyshots id play 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="play icon"
@@ -2115,22 +1347,10 @@ exports[`Storyshots id play 1`] = `
 
 exports[`Storyshots id playCircle 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="play circle icon"
@@ -2148,22 +1368,10 @@ exports[`Storyshots id playCircle 1`] = `
 
 exports[`Storyshots id plus 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="plus icon"
@@ -2181,22 +1389,10 @@ exports[`Storyshots id plus 1`] = `
 
 exports[`Storyshots id plusCircle 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="Plus icon"
@@ -2214,22 +1410,10 @@ exports[`Storyshots id plusCircle 1`] = `
 
 exports[`Storyshots id project 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="project icon"
@@ -2247,22 +1431,10 @@ exports[`Storyshots id project 1`] = `
 
 exports[`Storyshots id question 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="question icon"
@@ -2280,22 +1452,10 @@ exports[`Storyshots id question 1`] = `
 
 exports[`Storyshots id report 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="report icon"
@@ -2313,22 +1473,10 @@ exports[`Storyshots id report 1`] = `
 
 exports[`Storyshots id scope 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="scope icon"
@@ -2346,22 +1494,10 @@ exports[`Storyshots id scope 1`] = `
 
 exports[`Storyshots id search 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="search icon"
@@ -2379,22 +1515,10 @@ exports[`Storyshots id search 1`] = `
 
 exports[`Storyshots id share 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="share icon"
@@ -2412,22 +1536,10 @@ exports[`Storyshots id share 1`] = `
 
 exports[`Storyshots id sort 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       viewBox="0 0 24 24"
@@ -2443,22 +1555,10 @@ exports[`Storyshots id sort 1`] = `
 
 exports[`Storyshots id sortAsc 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="sort ascending icon"
@@ -2476,22 +1576,10 @@ exports[`Storyshots id sortAsc 1`] = `
 
 exports[`Storyshots id sortDesc 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="sort descending icon"
@@ -2509,22 +1597,10 @@ exports[`Storyshots id sortDesc 1`] = `
 
 exports[`Storyshots id star 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="star empty icon"
@@ -2542,22 +1618,10 @@ exports[`Storyshots id star 1`] = `
 
 exports[`Storyshots id starFill 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="star fill icon"
@@ -2575,22 +1639,10 @@ exports[`Storyshots id starFill 1`] = `
 
 exports[`Storyshots id tag 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="tag icon"
@@ -2609,22 +1661,10 @@ exports[`Storyshots id tag 1`] = `
 
 exports[`Storyshots id test 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="test icon"
@@ -2642,22 +1682,10 @@ exports[`Storyshots id test 1`] = `
 
 exports[`Storyshots id thumb 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="thumbs up icon"
@@ -2676,22 +1704,10 @@ exports[`Storyshots id thumb 1`] = `
 
 exports[`Storyshots id trash 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="trash icon"
@@ -2709,22 +1725,10 @@ exports[`Storyshots id trash 1`] = `
 
 exports[`Storyshots id upload 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="upload icon"
@@ -2742,22 +1746,10 @@ exports[`Storyshots id upload 1`] = `
 
 exports[`Storyshots id user 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="user icon"
@@ -2775,22 +1767,10 @@ exports[`Storyshots id user 1`] = `
 
 exports[`Storyshots id warning 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="warning icon"
@@ -2808,22 +1788,10 @@ exports[`Storyshots id warning 1`] = `
 
 exports[`Storyshots id window 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="window icon"
@@ -2841,22 +1809,10 @@ exports[`Storyshots id window 1`] = `
 
 exports[`Storyshots size large 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-6f8y6t"
+    className="css-index--iconcontainer-1okjw18"
   >
     <svg
       aria-label="check icon"
@@ -2874,22 +1830,10 @@ exports[`Storyshots size large 1`] = `
 
 exports[`Storyshots size medium 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-10dvu6c"
+    className="css-index--iconcontainer-l9utlg"
   >
     <svg
       aria-label="check icon"
@@ -2907,22 +1851,10 @@ exports[`Storyshots size medium 1`] = `
 
 exports[`Storyshots size small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-4oczle"
+    className="css-index--iconcontainer-1gvaal1"
   >
     <svg
       aria-label="check icon"
@@ -2940,22 +1872,10 @@ exports[`Storyshots size small 1`] = `
 
 exports[`Storyshots style css prop 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1yb0ydn"
+    className="css-index--iconcontainer-6zqmye"
   >
     <svg
       aria-label="check icon"

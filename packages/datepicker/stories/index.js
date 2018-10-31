@@ -1,7 +1,7 @@
 import { action } from '@storybook/addon-actions'
 import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import PropTypes from 'prop-types'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import TextInput from '@pluralsight/ps-design-system-textinput/react'
@@ -19,10 +19,12 @@ class StateDemo extends React.Component {
     this.state = { value: props.value || '' }
     this.handleDatePickerSelect = this.handleDatePickerSelect.bind(this)
   }
+
   handleDatePickerSelect(value) {
     console.log('called select w/ value', value)
     this.setState({ value })
   }
+
   render() {
     return (
       <div>
@@ -38,7 +40,11 @@ class StateDemo extends React.Component {
   }
 }
 
-const labelStory = storiesOf('labels', module)
+StateDemo.propTypes = {
+  value: PropTypes.string
+}
+
+storiesOf('labels', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('none', _ => <DatePicker />)
@@ -58,7 +64,7 @@ const labelStory = storiesOf('labels', module)
     <DatePicker label="Some label" subLabel="Some sublabel" />
   ))
 
-const valueStory = storiesOf('value', module)
+storiesOf('value', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('single slash-separated value', _ => <DatePicker value="12/07/1941" />)
@@ -77,7 +83,7 @@ Object.keys(DatePicker.appearances).forEach(appearance =>
   ))
 )
 
-const disabledStory = storiesOf('disabled', module)
+storiesOf('disabled', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('compare', _ => (
@@ -87,13 +93,13 @@ const disabledStory = storiesOf('disabled', module)
     </div>
   ))
 
-const whitelistStory = storiesOf('whitelist', module)
+storiesOf('whitelist', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('name', _ => <DatePicker name="myFieldNameOfPower" />)
   .add('onChange', _ => <DatePicker onChange={action('I changed')} />)
 
-const layoutsStory = storiesOf('layouts', module)
+storiesOf('layouts', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('full width', _ => (
