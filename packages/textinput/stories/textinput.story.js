@@ -29,6 +29,14 @@ const labelStory = storiesOf('labels', module)
       placeholder="Some placeholder"
     />
   ))
+  .add('all w/error', _ => (
+    <TextInput
+      error
+      label="Some label"
+      subLabel="Some sublabel"
+      placeholder="Some placeholder"
+    />
+  ))
 
 const appearanceStory = storiesOf('appearance', module)
   .addDecorator(PaddingDecorator)
