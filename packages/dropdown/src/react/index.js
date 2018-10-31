@@ -18,6 +18,7 @@ const dropdownHtmlPropsWhitelist = [
   'tabIndex',
   'value',
   'defaultValue',
+  'title',
   /^on/,
   /^aria-/,
   /^data-/,
@@ -244,7 +245,7 @@ class Dropdown extends React.Component {
                   allProps.innerRef(el)
               }}
             >
-              <span aria-hidden={true} {...styles.buttonSizer(allProps)}>
+              <span aria-hidden {...styles.buttonSizer(allProps)}>
                 {longestMenuItemState.label || allProps.placeholder}
               </span>
               <span {...styles.placeholder(allProps)}>

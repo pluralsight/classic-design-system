@@ -361,3 +361,18 @@ const menuStory = storiesOf('menu', module)
       }
     />
   ))
+
+storiesOf('props whitelist', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
+  .add('title', _ => (
+    <Dropdown
+      title="This title should be present"
+      label="Level"
+      menu={
+        <ActionMenu>
+          <ActionMenu.Item>One item</ActionMenu.Item>
+        </ActionMenu>
+      }
+    />
+  ))

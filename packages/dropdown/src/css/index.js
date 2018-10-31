@@ -150,7 +150,8 @@ export default {
     right: core.layout.spacingXSmall,
     display: 'flex',
     alignItems: 'center',
-    color: core.colors.gray03
+    color: core.colors.gray03,
+    cursor: 'pointer'
   },
   [`.psds-dropdown__icon.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03

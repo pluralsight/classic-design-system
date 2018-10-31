@@ -1,7 +1,7 @@
 import { action } from '@storybook/addon-actions'
 import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import PropTypes from 'prop-types'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import TextInput from '@pluralsight/ps-design-system-textinput/react'
@@ -14,16 +14,18 @@ const PaddingDecorator = storyFn => (
 )
 
 class StateDemo extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = { value: props.value || '' }
     this.handleDatePickerSelect = this.handleDatePickerSelect.bind(this)
   }
-  handleDatePickerSelect(value) {
+
+  handleDatePickerSelect (value) {
     console.log('called select w/ value', value)
     this.setState({ value })
   }
-  render() {
+
+  render () {
     return (
       <div>
         <div style={{ color: core.colors.gray03 }}>
@@ -38,7 +40,11 @@ class StateDemo extends React.Component {
   }
 }
 
-const labelStory = storiesOf('labels', module)
+StateDemo.propTypes = {
+  value: PropTypes.string
+}
+
+storiesOf('labels', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('none', _ => <DatePicker />)
@@ -48,22 +54,22 @@ const labelStory = storiesOf('labels', module)
         <DatePicker />
       </div>
       <div>
-        <TextInput type="date" />
+        <TextInput type='date' />
       </div>
     </div>
   ))
-  .add('label', _ => <DatePicker label="Some label" />)
-  .add('subLabel', _ => <DatePicker subLabel="Some sublabel" />)
+  .add('label', _ => <DatePicker label='Some label' />)
+  .add('subLabel', _ => <DatePicker subLabel='Some sublabel' />)
   .add('label and subLabel', _ => (
-    <DatePicker label="Some label" subLabel="Some sublabel" />
+    <DatePicker label='Some label' subLabel='Some sublabel' />
   ))
 
-const valueStory = storiesOf('value', module)
+storiesOf('value', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
-  .add('single slash-separated value', _ => <DatePicker value="12/07/1941" />)
+  .add('single slash-separated value', _ => <DatePicker value='12/07/1941' />)
   .add('updated value, no initial', _ => <StateDemo />)
-  .add('updated value, w/ initial', _ => <StateDemo value="3/15/1995" />)
+  .add('updated value, w/ initial', _ => <StateDemo value='3/15/1995' />)
 
 const appearanceStory = storiesOf('appearance', module)
   .addDecorator(PaddingDecorator)
@@ -73,46 +79,46 @@ Object.keys(DatePicker.appearances).forEach(appearance =>
 )
 Object.keys(DatePicker.appearances).forEach(appearance =>
   appearanceStory.add(`${appearance} w/ error`, _ => (
-    <DatePicker appearance={appearance} error label="Problem field" />
+    <DatePicker appearance={appearance} error label='Problem field' />
   ))
 )
 
-const disabledStory = storiesOf('disabled', module)
+storiesOf('disabled', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('compare', _ => (
     <div>
-      <DatePicker label="Normal" subLabel="Still normal" />
-      <DatePicker label="I'm not usable" subLabel="Neither am I" disabled />
+      <DatePicker label='Normal' subLabel='Still normal' />
+      <DatePicker label="I'm not usable" subLabel='Neither am I' disabled />
     </div>
   ))
 
-const whitelistStory = storiesOf('whitelist', module)
+storiesOf('whitelist', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
-  .add('name', _ => <DatePicker name="myFieldNameOfPower" />)
+  .add('name', _ => <DatePicker name='myFieldNameOfPower' />)
   .add('onChange', _ => <DatePicker onChange={action('I changed')} />)
 
-const layoutsStory = storiesOf('layouts', module)
+storiesOf('layouts', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('full width', _ => (
     <div style={{ border: '1px solid blue', width: '500px' }}>
-      <DatePicker label="First" style={{ display: 'block', width: '100%' }} />
+      <DatePicker label='First' style={{ display: 'block', width: '100%' }} />
       <DatePicker
         error
-        label="Second"
+        label='Second'
         style={{ display: 'block', width: '100%' }}
       />
       <DatePicker
         appearance={DatePicker.appearances.subtle}
-        label="Third"
+        label='Third'
         style={{ display: 'block', width: '100%' }}
       />
       <DatePicker
         appearance={DatePicker.appearances.subtle}
         error
-        label="Fourth"
+        label='Fourth'
         style={{ display: 'block', width: '100%' }}
       />
     </div>

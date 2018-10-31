@@ -21,7 +21,7 @@ test('click on disabled button with href does not trigger onClick', () => {
     callCount += 1
   }
   const breadcrumb = mount(
-    <Breadcrumb disabled onClick={onClick} href="https://foo.com">
+    <Breadcrumb disabled onClick={onClick} href='https://foo.com'>
       Can't Be Clicked
     </Breadcrumb>
   )
@@ -30,6 +30,10 @@ test('click on disabled button with href does not trigger onClick', () => {
   expect(callCount).toBe(0)
 })
 
-test('custom innerRef function called', done => {
-  mount(<Breadcrumb innerRef={done} />)
+test('custom innerRef function called', () => {
+  const innerRef = jest.fn()
+
+  mount(<Breadcrumb innerRef={innerRef} />)
+
+  expect(innerRef).toHaveBeenCalled()
 })

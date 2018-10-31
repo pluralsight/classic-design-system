@@ -14,7 +14,8 @@ export default {
     cursor: 'pointer',
     opacity: '1',
     background: 'none',
-    border: 'none'
+    border: 'none',
+    padding: 0
   },
   '.psds-switch:focus': {
     outline: 'none'
@@ -56,81 +57,6 @@ export default {
     vars.colors.orange
   }`]: {
     backgroundColor: core.colors.orange
-  },
-
-  '.psds-switch__track:focus:before, .psds-switch__track--error:before': {
-    content: ' ',
-    position: 'absolute',
-    top: '-1px',
-    left: '-1px',
-    right: '-1px',
-    bottom: '-1px',
-    background: core.colors.black,
-    zIndex: '-1'
-  },
-  [`.psds-switch__track--size-${
-    vars.sizes.small
-  }:focus:before, .psds-switch__track--error.psds-switch__track--size-${
-    vars.sizes.small
-  }:before`]: {
-    borderRadius: '6px'
-  },
-  [`.psds-switch__track--size-${
-    vars.sizes.large
-  }:focus:before, .psds-switch__track--error.psds-switch__track--size-${
-    vars.sizes.large
-  }:before`]: {
-    borderRadius: '12px'
-  },
-  [`.psds-switch__track.psds-theme--${
-    themeNames.light
-  }:focus:before, .psds-switch__track--error.psds-theme--${
-    themeNames.light
-  }:before`]: {
-    top: '-2px',
-    left: '-2px',
-    right: '-2px',
-    bottom: '-2px',
-    background: core.colors.bone
-  },
-  '.psds-switch__track:focus:after, .psds-switch__track--error:after': {
-    content: ' ',
-    position: 'absolute',
-    top: '-4px',
-    left: '-4px',
-    right: '-4px',
-    bottom: '-4px',
-    zIndex: '-2'
-  },
-  [`.psds-switch__track--size-${
-    vars.sizes.small
-  }:focus:after, .psds-switch__track--error.psds-switch__track--size-${
-    vars.sizes.small
-  }:after`]: {
-    borderRadius: '8px'
-  },
-  [`.psds-switch__track--size-${
-    vars.sizes.large
-  }:focus:after, .psds-switch__track--error.psds-switch__track--size-${
-    vars.sizes.large
-  }:after`]: {
-    borderRadius: '16px'
-  },
-  [`.psds-switch__track.psds-theme--${
-    themeNames.light
-  }:focus:after, .psds-switch__track--error.psds-theme--${
-    themeNames.light
-  }:after`]: {
-    top: '-5px',
-    left: '-5px',
-    right: '-5px',
-    bottom: '-5px'
-  },
-  '.psds-switch__track:focus:after': {
-    background: core.colors.blue
-  },
-  '.psds-switch__track--error:after': {
-    background: core.colors.red
   },
 
   // __thumb
@@ -196,5 +122,5 @@ export default {
     color: core.colors.bone
   },
   // __checkbox
-  ['.psds-switch__checkbox']: core.accessibility.screenReaderOnly
+  '.psds-switch__checkbox': core.accessibility.screenReaderOnly
 }

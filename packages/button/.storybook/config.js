@@ -1,5 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
-
 import addons from '@storybook/addons'
 import { addDecorator, configure } from '@storybook/react'
 

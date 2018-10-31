@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.13"></a>
+## [1.3.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@1.3.12...@pluralsight/ps-design-system-tooltip@1.3.13) (2018-10-31)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
 <a name="1.3.12"></a>
 ## [1.3.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@1.3.11...@pluralsight/ps-design-system-tooltip@1.3.12) (2018-10-10)
 

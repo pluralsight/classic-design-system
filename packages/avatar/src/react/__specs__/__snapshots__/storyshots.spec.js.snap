@@ -2,19 +2,7 @@
 
 exports[`Storyshots Default large 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-12kblpa=""
@@ -31,19 +19,7 @@ exports[`Storyshots Default large 1`] = `
 
 exports[`Storyshots Default light image 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -70,19 +46,7 @@ exports[`Storyshots Default light image 1`] = `
 
 exports[`Storyshots Default medium 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -99,19 +63,7 @@ exports[`Storyshots Default medium 1`] = `
 
 exports[`Storyshots Default small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-6fiexv=""
@@ -128,19 +80,7 @@ exports[`Storyshots Default small 1`] = `
 
 exports[`Storyshots Default xLarge 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-inys4v=""
@@ -157,19 +97,7 @@ exports[`Storyshots Default xLarge 1`] = `
 
 exports[`Storyshots Default xSmall 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-1pii7we=""
@@ -186,19 +114,7 @@ exports[`Storyshots Default xSmall 1`] = `
 
 exports[`Storyshots Using Initials % Special Characters 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -219,19 +135,7 @@ exports[`Storyshots Using Initials % Special Characters 1`] = `
 
 exports[`Storyshots Using Initials Anakin Skywalker 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -252,19 +156,7 @@ exports[`Storyshots Using Initials Anakin Skywalker 1`] = `
 
 exports[`Storyshots Using Initials Budapest Skywalker 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -285,19 +177,7 @@ exports[`Storyshots Using Initials Budapest Skywalker 1`] = `
 
 exports[`Storyshots Using Initials Carlos Organa 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -318,19 +198,7 @@ exports[`Storyshots Using Initials Carlos Organa 1`] = `
 
 exports[`Storyshots Using Initials Dennis Pimenta 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -351,19 +219,7 @@ exports[`Storyshots Using Initials Dennis Pimenta 1`] = `
 
 exports[`Storyshots Using Initials Diz Blau 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -384,19 +240,7 @@ exports[`Storyshots Using Initials Diz Blau 1`] = `
 
 exports[`Storyshots Using Initials Harry Potter 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -417,19 +261,7 @@ exports[`Storyshots Using Initials Harry Potter 1`] = `
 
 exports[`Storyshots Using Initials Obi-Wan Kenobi 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -450,19 +282,7 @@ exports[`Storyshots Using Initials Obi-Wan Kenobi 1`] = `
 
 exports[`Storyshots Using Initials Peia Organa 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -483,19 +303,7 @@ exports[`Storyshots Using Initials Peia Organa 1`] = `
 
 exports[`Storyshots Using Initials Single 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -516,19 +324,7 @@ exports[`Storyshots Using Initials Single 1`] = `
 
 exports[`Storyshots Using Initials Uy Marley 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -549,19 +345,7 @@ exports[`Storyshots Using Initials Uy Marley 1`] = `
 
 exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div>
     <div
@@ -770,19 +554,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
 
 exports[`Storyshots Using Initials empty name, no src 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -794,19 +566,7 @@ exports[`Storyshots Using Initials empty name, no src 1`] = `
 
 exports[`Storyshots Using Initials error-out image src, with name 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -833,19 +593,7 @@ exports[`Storyshots Using Initials error-out image src, with name 1`] = `
 
 exports[`Storyshots Using Initials null name, no src 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -855,19 +603,7 @@ exports[`Storyshots Using Initials null name, no src 1`] = `
 
 exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
@@ -894,19 +630,7 @@ exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
 
 exports[`Storyshots Using Initials with invalid gravatar image, no name 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-7fe6v0=""
