@@ -1,7 +1,6 @@
 const path = require('path')
 
-const Repository = require('lerna/lib/Repository')
-const PackageUtilities = require('lerna/lib/PackageUtilities')
+const Project = require('@lerna/project')
 
 const { smush, validateIsString } = require('./string')
 
@@ -15,13 +14,9 @@ const toPackageName = str => {
   return `${npmScope}/${packagePrefix}${smush(str)}`
 }
 
-const getPackages = () => {
-  const repo = new Repository(rootPath)
-
-  return PackageUtilities.getPackages({
-    packageConfigs: repo.packageConfigs,
-    rootPath
-  }).reduce((acc, pkg) => ({ ...acc, [pkg.name]: pkg.version }), {})
+const getPackages = async () => {
+  const project = new Project(rootPath)
+  return project.getPackages()
 }
 
 module.exports = {

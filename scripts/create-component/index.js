@@ -23,41 +23,44 @@ const copyPackageFromTemplateDir = (source, dest, vars) => {
   })
 }
 
-const allPackages = getPackages()
+async function main() {
+  const packages = await getPackages()
+  const packagesMap = packages.reduce((acc, pkg) => ({
+    ...acc,
+    [pkg.name]: pkg.version
+  }))
 
-const suggestedDependencies = [
-  'button',
-  'core',
-  'icon',
-  'normalize',
-  'theme',
-  'util'
-].map(toPackageName)
+  const suggestedDependencies = [
+    'button',
+    'core',
+    'icon',
+    'normalize',
+    'theme',
+    'util'
+  ].map(toPackageName)
 
-const questions = [
-  {
-    type: 'input',
-    name: 'name',
-    message: 'Component Name',
-    validate: name => (name.length > 0 ? true : 'invalid name')
-  },
-  {
-    type: 'checkbox',
-    name: 'dependencies',
-    message: 'Dependencies',
-    choices: suggestedDependencies.map(name => ({ name })),
-    filter: keys => {
-      const depMap = keys.reduce((acc, key) => {
-        const version = `^${allPackages[key]}`
-        return { ...acc, [key]: version }
-      }, {})
-
-      return JSON.stringify(depMap)
+  const questions = [
+    {
+      type: 'input',
+      name: 'name',
+      message: 'Component Name',
+      validate: name => (name.length > 0 ? true : 'invalid name')
+    },
+    {
+      type: 'checkbox',
+      name: 'dependencies',
+      message: 'Dependencies',
+      choices: suggestedDependencies.map(name => ({ name })),
+      filter: keys => {
+        const depMap = keys.reduce(
+          (acc, name) => ({ ...acc, [name]: packagesMap[name] }),
+          {}
+        )
+        return JSON.stringify(depMap)
+      }
     }
-  }
-]
+  ]
 
-async function main () {
   const answers = await inquirer.prompt(questions)
 
   const componentName = pascalize(answers.name)
