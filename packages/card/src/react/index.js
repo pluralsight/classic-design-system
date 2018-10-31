@@ -61,7 +61,10 @@ const renderImage = props => (props.image ? props.image : null)
 
 const FullOverlay = glamorous.div(
   css['.psds-card__full-overlay'],
-  { ':focus-within': css['.psds-card__full-overlay:focus-within'] },
+  {
+    ':focus-within': css['.psds-card__full-overlay:focus-within'],
+    '[focus-within]': css['.psds-card__full-overlay:focus-within']
+  },
   ({ fullOverlayVisible }) =>
     fullOverlayVisible
       ? css['.psds-card__full-overlay--fullOverlayVisible']
@@ -77,7 +80,10 @@ const renderFullOverlay = props =>
 
 const ActionBar = glamorous.div(
   css['.psds-card__action-bar'],
-  { ':focus-within': css['.psds-card__action-bar:focus-within'] },
+  {
+    ':focus-within': css['.psds-card__action-bar:focus-within'],
+    '[focus-within]': css['.psds-card__action-bar:focus-within']
+  },
   ({ fullOverlay, actionBarVisible }) =>
     fullOverlay && !actionBarVisible
       ? css[
