@@ -12,7 +12,16 @@
     "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006",
+    "test": "jest",
+    "test:updateSnapshot": "npm run test -- --updateSnapshot",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "jest": {
+    "setupFiles": [
+      "raf/polyfill",
+      "<rootDir>/test/setup.js"
+    ]
   },
   "dependencies": {{dependencies}},
   "peerDependencies": {
@@ -32,8 +41,10 @@
     "babel-preset-env": "^1.x.x",
     "babel-preset-react": "^6.x.x",
     "babel-preset-stage-2": "^6.x.x",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "jest": "^23.6.0",
     "npm-run-all": "^4.x.x",
-    "react-dom": "{{reactVersion}}",
-    "react": "{{reactVersion}}"
+    "raf": "^3.4.0"
   }
 }
