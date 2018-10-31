@@ -1,10 +1,5 @@
 var React = require('react')
 
-var CenterDecorator = props => {
-  return React.createElement('div', {
-    ...props,
-    'data-storybook-center-decorator': true
-  })
-}
+const MockCenter = props => React.createElement(React.Fragment, props)
 
-module.exports = CenterDecorator
+module.exports = storyFn => React.createElement(MockCenter, null, storyFn())
