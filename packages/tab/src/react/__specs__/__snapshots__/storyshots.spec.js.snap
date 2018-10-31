@@ -2,19 +2,7 @@
 
 exports[`Storyshots default default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div>
     <div
@@ -126,19 +114,7 @@ exports[`Storyshots default default 1`] = `
 
 exports[`Storyshots default no items 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-list--list-we2016"
@@ -151,19 +127,7 @@ exports[`Storyshots default no items 1`] = `
 
 exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-list--list-we2016"
@@ -199,19 +163,7 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
 
 exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-list--list-we2016"
@@ -247,19 +199,7 @@ exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
 
 exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div>
     <div

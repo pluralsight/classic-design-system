@@ -2,19 +2,7 @@
 
 exports[`Storyshots appearance black 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-lvlpxd"
@@ -35,19 +23,7 @@ exports[`Storyshots appearance black 1`] = `
 
 exports[`Storyshots appearance blue 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1ceww5t"
@@ -68,19 +44,7 @@ exports[`Storyshots appearance blue 1`] = `
 
 exports[`Storyshots appearance bone 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1m4r9ru"
@@ -101,19 +65,7 @@ exports[`Storyshots appearance bone 1`] = `
 
 exports[`Storyshots appearance codeBlue 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-17ksu6v"
@@ -134,19 +86,7 @@ exports[`Storyshots appearance codeBlue 1`] = `
 
 exports[`Storyshots appearance codeGreen 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1vm6ccu"
@@ -167,19 +107,7 @@ exports[`Storyshots appearance codeGreen 1`] = `
 
 exports[`Storyshots appearance codeOrange 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-u6b49l"
@@ -200,19 +128,7 @@ exports[`Storyshots appearance codeOrange 1`] = `
 
 exports[`Storyshots appearance codePurple 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-wpjv8m"
@@ -233,19 +149,7 @@ exports[`Storyshots appearance codePurple 1`] = `
 
 exports[`Storyshots appearance codeRed 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1bt3cou"
@@ -266,19 +170,7 @@ exports[`Storyshots appearance codeRed 1`] = `
 
 exports[`Storyshots appearance codeSand 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1af726t"
@@ -299,19 +191,7 @@ exports[`Storyshots appearance codeSand 1`] = `
 
 exports[`Storyshots appearance codeTurquoise 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1dnrla7"
@@ -332,19 +212,7 @@ exports[`Storyshots appearance codeTurquoise 1`] = `
 
 exports[`Storyshots appearance codeYellow 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-kvaanw"
@@ -365,19 +233,7 @@ exports[`Storyshots appearance codeYellow 1`] = `
 
 exports[`Storyshots appearance gray01 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-u0s3qs"
@@ -398,19 +254,7 @@ exports[`Storyshots appearance gray01 1`] = `
 
 exports[`Storyshots appearance gray02 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-faebx0"
@@ -431,19 +275,7 @@ exports[`Storyshots appearance gray02 1`] = `
 
 exports[`Storyshots appearance gray03 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-rqcxi2"
@@ -464,19 +296,7 @@ exports[`Storyshots appearance gray03 1`] = `
 
 exports[`Storyshots appearance gray04 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-zizeaf"
@@ -497,19 +317,7 @@ exports[`Storyshots appearance gray04 1`] = `
 
 exports[`Storyshots appearance gray05 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-mpwnvo"
@@ -530,19 +338,7 @@ exports[`Storyshots appearance gray05 1`] = `
 
 exports[`Storyshots appearance gray06 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-10pl3rl"
@@ -563,19 +359,7 @@ exports[`Storyshots appearance gray06 1`] = `
 
 exports[`Storyshots appearance green 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-28o8d5"
@@ -596,19 +380,7 @@ exports[`Storyshots appearance green 1`] = `
 
 exports[`Storyshots appearance greenLight 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1b9phi0"
@@ -629,19 +401,7 @@ exports[`Storyshots appearance greenLight 1`] = `
 
 exports[`Storyshots appearance orange 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-shz02b"
@@ -662,19 +422,7 @@ exports[`Storyshots appearance orange 1`] = `
 
 exports[`Storyshots appearance orangeLight 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-53um0v"
@@ -695,19 +443,7 @@ exports[`Storyshots appearance orangeLight 1`] = `
 
 exports[`Storyshots appearance pink 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-2lsz6i"
@@ -728,19 +464,7 @@ exports[`Storyshots appearance pink 1`] = `
 
 exports[`Storyshots appearance red 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1cpyn7i"
@@ -761,19 +485,7 @@ exports[`Storyshots appearance red 1`] = `
 
 exports[`Storyshots appearance white 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-l9utlg"
@@ -794,19 +506,7 @@ exports[`Storyshots appearance white 1`] = `
 
 exports[`Storyshots appearance yellow 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-llggbu"
@@ -827,19 +527,7 @@ exports[`Storyshots appearance yellow 1`] = `
 
 exports[`Storyshots id account 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -860,19 +548,7 @@ exports[`Storyshots id account 1`] = `
 
 exports[`Storyshots id bookmark 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -893,19 +569,7 @@ exports[`Storyshots id bookmark 1`] = `
 
 exports[`Storyshots id bookmarkFill 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -926,19 +590,7 @@ exports[`Storyshots id bookmarkFill 1`] = `
 
 exports[`Storyshots id briefcase 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -959,19 +611,7 @@ exports[`Storyshots id briefcase 1`] = `
 
 exports[`Storyshots id browse 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -992,19 +632,7 @@ exports[`Storyshots id browse 1`] = `
 
 exports[`Storyshots id calendar 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1025,19 +653,7 @@ exports[`Storyshots id calendar 1`] = `
 
 exports[`Storyshots id caretDown 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1058,19 +674,7 @@ exports[`Storyshots id caretDown 1`] = `
 
 exports[`Storyshots id caretLeft 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1091,19 +695,7 @@ exports[`Storyshots id caretLeft 1`] = `
 
 exports[`Storyshots id caretRight 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1124,19 +716,7 @@ exports[`Storyshots id caretRight 1`] = `
 
 exports[`Storyshots id caretUp 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1157,19 +737,7 @@ exports[`Storyshots id caretUp 1`] = `
 
 exports[`Storyshots id ccFill 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1191,19 +759,7 @@ exports[`Storyshots id ccFill 1`] = `
 
 exports[`Storyshots id channel 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1224,19 +780,7 @@ exports[`Storyshots id channel 1`] = `
 
 exports[`Storyshots id chat 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1257,19 +801,7 @@ exports[`Storyshots id chat 1`] = `
 
 exports[`Storyshots id check 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1290,19 +822,7 @@ exports[`Storyshots id check 1`] = `
 
 exports[`Storyshots id checkCircleFill 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1323,19 +843,7 @@ exports[`Storyshots id checkCircleFill 1`] = `
 
 exports[`Storyshots id close 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1356,19 +864,7 @@ exports[`Storyshots id close 1`] = `
 
 exports[`Storyshots id code 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1389,19 +885,7 @@ exports[`Storyshots id code 1`] = `
 
 exports[`Storyshots id copy 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1422,19 +906,7 @@ exports[`Storyshots id copy 1`] = `
 
 exports[`Storyshots id dashboard 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1455,19 +927,7 @@ exports[`Storyshots id dashboard 1`] = `
 
 exports[`Storyshots id download 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1488,19 +948,7 @@ exports[`Storyshots id download 1`] = `
 
 exports[`Storyshots id envelope 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1521,19 +969,7 @@ exports[`Storyshots id envelope 1`] = `
 
 exports[`Storyshots id file 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1554,19 +990,7 @@ exports[`Storyshots id file 1`] = `
 
 exports[`Storyshots id gear 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1587,19 +1011,7 @@ exports[`Storyshots id gear 1`] = `
 
 exports[`Storyshots id hand 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1620,19 +1032,7 @@ exports[`Storyshots id hand 1`] = `
 
 exports[`Storyshots id home 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1653,19 +1053,7 @@ exports[`Storyshots id home 1`] = `
 
 exports[`Storyshots id info 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1686,19 +1074,7 @@ exports[`Storyshots id info 1`] = `
 
 exports[`Storyshots id interactive 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1719,19 +1095,7 @@ exports[`Storyshots id interactive 1`] = `
 
 exports[`Storyshots id link 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1752,19 +1116,7 @@ exports[`Storyshots id link 1`] = `
 
 exports[`Storyshots id list 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1785,19 +1137,7 @@ exports[`Storyshots id list 1`] = `
 
 exports[`Storyshots id lock 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1818,19 +1158,7 @@ exports[`Storyshots id lock 1`] = `
 
 exports[`Storyshots id logout 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1851,19 +1179,7 @@ exports[`Storyshots id logout 1`] = `
 
 exports[`Storyshots id menu 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1884,19 +1200,7 @@ exports[`Storyshots id menu 1`] = `
 
 exports[`Storyshots id mic 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1917,19 +1221,7 @@ exports[`Storyshots id mic 1`] = `
 
 exports[`Storyshots id more 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1950,19 +1242,7 @@ exports[`Storyshots id more 1`] = `
 
 exports[`Storyshots id note 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -1983,19 +1263,7 @@ exports[`Storyshots id note 1`] = `
 
 exports[`Storyshots id org 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2016,19 +1284,7 @@ exports[`Storyshots id org 1`] = `
 
 exports[`Storyshots id path 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2049,19 +1305,7 @@ exports[`Storyshots id path 1`] = `
 
 exports[`Storyshots id pencil 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2082,19 +1326,7 @@ exports[`Storyshots id pencil 1`] = `
 
 exports[`Storyshots id play 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2115,19 +1347,7 @@ exports[`Storyshots id play 1`] = `
 
 exports[`Storyshots id playCircle 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2148,19 +1368,7 @@ exports[`Storyshots id playCircle 1`] = `
 
 exports[`Storyshots id plus 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2181,19 +1389,7 @@ exports[`Storyshots id plus 1`] = `
 
 exports[`Storyshots id plusCircle 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2214,19 +1410,7 @@ exports[`Storyshots id plusCircle 1`] = `
 
 exports[`Storyshots id project 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2247,19 +1431,7 @@ exports[`Storyshots id project 1`] = `
 
 exports[`Storyshots id question 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2280,19 +1452,7 @@ exports[`Storyshots id question 1`] = `
 
 exports[`Storyshots id report 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2313,19 +1473,7 @@ exports[`Storyshots id report 1`] = `
 
 exports[`Storyshots id scope 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2346,19 +1494,7 @@ exports[`Storyshots id scope 1`] = `
 
 exports[`Storyshots id search 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2379,19 +1515,7 @@ exports[`Storyshots id search 1`] = `
 
 exports[`Storyshots id share 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2412,19 +1536,7 @@ exports[`Storyshots id share 1`] = `
 
 exports[`Storyshots id sort 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2443,19 +1555,7 @@ exports[`Storyshots id sort 1`] = `
 
 exports[`Storyshots id sortAsc 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2476,19 +1576,7 @@ exports[`Storyshots id sortAsc 1`] = `
 
 exports[`Storyshots id sortDesc 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2509,19 +1597,7 @@ exports[`Storyshots id sortDesc 1`] = `
 
 exports[`Storyshots id star 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2542,19 +1618,7 @@ exports[`Storyshots id star 1`] = `
 
 exports[`Storyshots id starFill 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2575,19 +1639,7 @@ exports[`Storyshots id starFill 1`] = `
 
 exports[`Storyshots id tag 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2609,19 +1661,7 @@ exports[`Storyshots id tag 1`] = `
 
 exports[`Storyshots id test 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2642,19 +1682,7 @@ exports[`Storyshots id test 1`] = `
 
 exports[`Storyshots id thumb 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2676,19 +1704,7 @@ exports[`Storyshots id thumb 1`] = `
 
 exports[`Storyshots id trash 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2709,19 +1725,7 @@ exports[`Storyshots id trash 1`] = `
 
 exports[`Storyshots id upload 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2742,19 +1746,7 @@ exports[`Storyshots id upload 1`] = `
 
 exports[`Storyshots id user 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2775,19 +1767,7 @@ exports[`Storyshots id user 1`] = `
 
 exports[`Storyshots id warning 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2808,19 +1788,7 @@ exports[`Storyshots id warning 1`] = `
 
 exports[`Storyshots id window 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2841,19 +1809,7 @@ exports[`Storyshots id window 1`] = `
 
 exports[`Storyshots size large 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1okjw18"
@@ -2874,19 +1830,7 @@ exports[`Storyshots size large 1`] = `
 
 exports[`Storyshots size medium 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-l9utlg"
@@ -2907,19 +1851,7 @@ exports[`Storyshots size medium 1`] = `
 
 exports[`Storyshots size small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-1gvaal1"
@@ -2940,19 +1872,7 @@ exports[`Storyshots size small 1`] = `
 
 exports[`Storyshots style css prop 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--iconcontainer-6zqmye"

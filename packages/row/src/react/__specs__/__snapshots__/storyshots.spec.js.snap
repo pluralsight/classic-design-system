@@ -2,19 +2,7 @@
 
 exports[`Storyshots actionBar locked visible 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -63,19 +51,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
 
 exports[`Storyshots actionBar long title 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -117,19 +93,7 @@ exports[`Storyshots actionBar long title 1`] = `
 
 exports[`Storyshots actionBar long title with image 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -178,19 +142,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
 
 exports[`Storyshots actionBar one action 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -232,19 +184,7 @@ exports[`Storyshots actionBar one action 1`] = `
 
 exports[`Storyshots combo everything 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -437,19 +377,7 @@ exports[`Storyshots combo everything 1`] = `
 
 exports[`Storyshots fullOverlay element 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -487,19 +415,7 @@ exports[`Storyshots fullOverlay element 1`] = `
 
 exports[`Storyshots fullOverlay link 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -541,19 +457,7 @@ exports[`Storyshots fullOverlay link 1`] = `
 
 exports[`Storyshots fullOverlay linked icon 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -608,19 +512,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
 
 exports[`Storyshots fullOverlay linked icon with image link 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -683,19 +575,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
 
 exports[`Storyshots image link 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -739,19 +619,7 @@ exports[`Storyshots image link 1`] = `
 
 exports[`Storyshots image no image 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -780,19 +648,7 @@ exports[`Storyshots image no image 1`] = `
 
 exports[`Storyshots image no image with overlay 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -821,19 +677,7 @@ exports[`Storyshots image no image with overlay 1`] = `
 
 exports[`Storyshots image small image 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -869,19 +713,7 @@ exports[`Storyshots image small image 1`] = `
 
 exports[`Storyshots image tall image 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -917,19 +749,7 @@ exports[`Storyshots image tall image 1`] = `
 
 exports[`Storyshots image wide image 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -965,19 +785,7 @@ exports[`Storyshots image wide image 1`] = `
 
 exports[`Storyshots image with image 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -1013,19 +821,7 @@ exports[`Storyshots image with image 1`] = `
 
 exports[`Storyshots image with image with overlay 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -1072,19 +868,7 @@ exports[`Storyshots image with image with overlay 1`] = `
 
 exports[`Storyshots in a stack no top border on first row 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -1201,19 +985,7 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
 
 exports[`Storyshots in drawer medium 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--drawerroot-iqj7ys"
@@ -1324,19 +1096,7 @@ exports[`Storyshots in drawer medium 1`] = `
 
 exports[`Storyshots in drawer small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--drawerroot-iqj7ys"
@@ -1440,19 +1200,7 @@ exports[`Storyshots in drawer small 1`] = `
 
 exports[`Storyshots metadata link 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -1489,19 +1237,7 @@ exports[`Storyshots metadata link 1`] = `
 
 exports[`Storyshots metadata long links 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -1576,19 +1312,7 @@ exports[`Storyshots metadata long links 1`] = `
 
 exports[`Storyshots metadata long strings 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -1639,19 +1363,7 @@ exports[`Storyshots metadata long strings 1`] = `
 
 exports[`Storyshots metadata long strings with image 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -1709,19 +1421,7 @@ exports[`Storyshots metadata long strings with image 1`] = `
 
 exports[`Storyshots metadata string 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -1750,19 +1450,7 @@ exports[`Storyshots metadata string 1`] = `
 
 exports[`Storyshots metadata super long first string 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -1820,19 +1508,7 @@ exports[`Storyshots metadata super long first string 1`] = `
 
 exports[`Storyshots metadata two lines 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -1892,19 +1568,7 @@ exports[`Storyshots metadata two lines 1`] = `
 
 exports[`Storyshots progress 0 progress 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -1931,19 +1595,7 @@ exports[`Storyshots progress 0 progress 1`] = `
 
 exports[`Storyshots progress 66.6667 progress 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -1978,19 +1630,7 @@ exports[`Storyshots progress 66.6667 progress 1`] = `
 
 exports[`Storyshots progress 100 progress 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -2025,19 +1665,7 @@ exports[`Storyshots progress 100 progress 1`] = `
 
 exports[`Storyshots progress no image 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -2057,19 +1685,7 @@ exports[`Storyshots progress no image 1`] = `
 
 exports[`Storyshots size medium 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -2105,19 +1721,7 @@ exports[`Storyshots size medium 1`] = `
 
 exports[`Storyshots size small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -2146,19 +1750,7 @@ exports[`Storyshots size small 1`] = `
 
 exports[`Storyshots title link 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -2186,19 +1778,7 @@ exports[`Storyshots title link 1`] = `
 
 exports[`Storyshots title medium long title 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -2234,19 +1814,7 @@ exports[`Storyshots title medium long title 1`] = `
 
 exports[`Storyshots title small long title 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"
@@ -2275,19 +1843,7 @@ exports[`Storyshots title small long title 1`] = `
 
 exports[`Storyshots title string 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--row-1i6pawm"

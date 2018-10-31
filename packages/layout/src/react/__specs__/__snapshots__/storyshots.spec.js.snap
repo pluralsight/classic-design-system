@@ -2,19 +2,7 @@
 
 exports[`Storyshots AsideLayout aside style overrides 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -58,19 +46,7 @@ exports[`Storyshots AsideLayout aside style overrides 1`] = `
 
 exports[`Storyshots AsideLayout asidePosition: first 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -99,19 +75,7 @@ exports[`Storyshots AsideLayout asidePosition: first 1`] = `
 
 exports[`Storyshots AsideLayout asidePosition: last 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -140,19 +104,7 @@ exports[`Storyshots AsideLayout asidePosition: last 1`] = `
 
 exports[`Storyshots AsideLayout short aside content 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -181,19 +133,7 @@ exports[`Storyshots AsideLayout short aside content 1`] = `
 
 exports[`Storyshots AsideLayout short main content 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -222,19 +162,7 @@ exports[`Storyshots AsideLayout short main content 1`] = `
 
 exports[`Storyshots AsideLayout wide, fixed aside content 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -273,19 +201,7 @@ exports[`Storyshots AsideLayout wide, fixed aside content 1`] = `
 
 exports[`Storyshots EqualColumnLayout custom markup 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -339,19 +255,7 @@ exports[`Storyshots EqualColumnLayout custom markup 1`] = `
 
 exports[`Storyshots EqualColumnLayout four 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -430,19 +334,7 @@ exports[`Storyshots EqualColumnLayout four 1`] = `
 
 exports[`Storyshots EqualColumnLayout six 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -521,19 +413,7 @@ exports[`Storyshots EqualColumnLayout six 1`] = `
 
 exports[`Storyshots EqualColumnLayout three 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -612,19 +492,7 @@ exports[`Storyshots EqualColumnLayout three 1`] = `
 
 exports[`Storyshots EqualColumnLayout two 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -703,19 +571,7 @@ exports[`Storyshots EqualColumnLayout two 1`] = `
 
 exports[`Storyshots PageHeadingLayout default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-yto836=""
@@ -737,19 +593,7 @@ exports[`Storyshots PageHeadingLayout default 1`] = `
 
 exports[`Storyshots PageHeadingLayout long title 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-yto836=""
@@ -771,19 +615,7 @@ exports[`Storyshots PageHeadingLayout long title 1`] = `
 
 exports[`Storyshots PageHeadingLayout long title w/ actions 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-yto836=""
@@ -826,19 +658,7 @@ exports[`Storyshots PageHeadingLayout long title w/ actions 1`] = `
 
 exports[`Storyshots PageHeadingLayout long titlew/ lots of actions 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-yto836=""
@@ -932,19 +752,7 @@ exports[`Storyshots PageHeadingLayout long titlew/ lots of actions 1`] = `
 
 exports[`Storyshots PageHeadingLayout w/ actions 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-yto836=""
@@ -987,19 +795,7 @@ exports[`Storyshots PageHeadingLayout w/ actions 1`] = `
 
 exports[`Storyshots PageHeadingLayout w/ lots of actions 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-yto836=""

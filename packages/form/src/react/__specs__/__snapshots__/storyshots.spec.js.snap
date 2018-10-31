@@ -2,19 +2,7 @@
 
 exports[`Storyshots Sample Form sample 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -66,15 +54,18 @@ exports[`Storyshots Sample Form sample 1`] = `
               Name
             </div>
             <div
-              data-css-17d9xcr=""
+              data-css-1r967oi=""
             >
-              <input
-                data-css-ly16us=""
-                disabled={false}
-                onBlur={[Function]}
-                onFocus={[Function]}
-                placeholder="What's your name?"
-              />
+              <div
+                className=""
+                data-css-f0o9km=""
+              >
+                <input
+                  data-css-ly16us=""
+                  disabled={false}
+                  placeholder="What's your name?"
+                />
+              </div>
             </div>
           </label>
         </div>
@@ -95,15 +86,18 @@ exports[`Storyshots Sample Form sample 1`] = `
               Alias
             </div>
             <div
-              data-css-17d9xcr=""
+              data-css-1r967oi=""
             >
-              <input
-                data-css-ly16us=""
-                disabled={false}
-                onBlur={[Function]}
-                onFocus={[Function]}
-                placeholder="Do you have a nick name?"
-              />
+              <div
+                className=""
+                data-css-f0o9km=""
+              >
+                <input
+                  data-css-ly16us=""
+                  disabled={false}
+                  placeholder="Do you have a nick name?"
+                />
+              </div>
             </div>
             <div
               data-css-1de0a6a=""
@@ -129,15 +123,18 @@ exports[`Storyshots Sample Form sample 1`] = `
               Email address
             </div>
             <div
-              data-css-o8fadz=""
+              data-css-1r967oi=""
             >
-              <input
-                data-css-ly16us=""
-                disabled={false}
-                onBlur={[Function]}
-                onFocus={[Function]}
-                value="steve@example.com"
-              />
+              <div
+                className=""
+                data-css-w2l3iv=""
+              >
+                <input
+                  data-css-ly16us=""
+                  disabled={false}
+                  value="steve@example.com"
+                />
+              </div>
               <div
                 data-css-loo18p=""
               >

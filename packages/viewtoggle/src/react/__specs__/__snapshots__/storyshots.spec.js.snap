@@ -2,19 +2,7 @@
 
 exports[`Storyshots active default first 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--list-1l4ca7i"
@@ -61,19 +49,7 @@ exports[`Storyshots active default first 1`] = `
 
 exports[`Storyshots active explicit first 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--list-1l4ca7i"
@@ -120,19 +96,7 @@ exports[`Storyshots active explicit first 1`] = `
 
 exports[`Storyshots active explicit second 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--list-1l4ca7i"
@@ -179,19 +143,7 @@ exports[`Storyshots active explicit second 1`] = `
 
 exports[`Storyshots active explicit third 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--list-1l4ca7i"
@@ -238,19 +190,7 @@ exports[`Storyshots active explicit third 1`] = `
 
 exports[`Storyshots dynamic options sizes correctly 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--list-1l4ca7i"
@@ -297,19 +237,7 @@ exports[`Storyshots dynamic options sizes correctly 1`] = `
 
 exports[`Storyshots onSelect handles click 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--list-1l4ca7i"
@@ -356,19 +284,7 @@ exports[`Storyshots onSelect handles click 1`] = `
 
 exports[`Storyshots options count more than max 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--list-1l4ca7i"
@@ -415,19 +331,7 @@ exports[`Storyshots options count more than max 1`] = `
 
 exports[`Storyshots options count one 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--list-1l4ca7i"
@@ -458,19 +362,7 @@ exports[`Storyshots options count one 1`] = `
 
 exports[`Storyshots options count three 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--list-1l4ca7i"
@@ -517,19 +409,7 @@ exports[`Storyshots options count three 1`] = `
 
 exports[`Storyshots options count two 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--list-1l4ca7i"
@@ -568,19 +448,7 @@ exports[`Storyshots options count two 1`] = `
 
 exports[`Storyshots text length all long 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--list-1l4ca7i"
@@ -627,19 +495,7 @@ exports[`Storyshots text length all long 1`] = `
 
 exports[`Storyshots text length differing lengths 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className="css-index--list-1l4ca7i"
