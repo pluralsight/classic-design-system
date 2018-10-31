@@ -2,19 +2,7 @@
 
 exports[`Storyshots checked false 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={false}
@@ -54,19 +42,7 @@ exports[`Storyshots checked false 1`] = `
 
 exports[`Storyshots checked true 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={true}
@@ -106,19 +82,7 @@ exports[`Storyshots checked true 1`] = `
 
 exports[`Storyshots click large toggles 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={false}
@@ -154,19 +118,7 @@ exports[`Storyshots click large toggles 1`] = `
 
 exports[`Storyshots click small toggles 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={false}
@@ -202,19 +154,7 @@ exports[`Storyshots click small toggles 1`] = `
 
 exports[`Storyshots color green 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={true}
@@ -254,19 +194,7 @@ exports[`Storyshots color green 1`] = `
 
 exports[`Storyshots color orange 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={true}
@@ -306,19 +234,7 @@ exports[`Storyshots color orange 1`] = `
 
 exports[`Storyshots disabled false 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={false}
@@ -354,19 +270,7 @@ exports[`Storyshots disabled false 1`] = `
 
 exports[`Storyshots disabled true 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={false}
@@ -401,19 +305,7 @@ exports[`Storyshots disabled true 1`] = `
 
 exports[`Storyshots error false 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={false}
@@ -449,19 +341,7 @@ exports[`Storyshots error false 1`] = `
 
 exports[`Storyshots error true 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={false}
@@ -502,19 +382,7 @@ exports[`Storyshots error true 1`] = `
 
 exports[`Storyshots error true w/ disabled 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={false}
@@ -554,19 +422,7 @@ exports[`Storyshots error true w/ disabled 1`] = `
 
 exports[`Storyshots label large left 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={false}
@@ -606,19 +462,7 @@ exports[`Storyshots label large left 1`] = `
 
 exports[`Storyshots label large right 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={false}
@@ -658,19 +502,7 @@ exports[`Storyshots label large right 1`] = `
 
 exports[`Storyshots label small left 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={false}
@@ -710,19 +542,7 @@ exports[`Storyshots label small left 1`] = `
 
 exports[`Storyshots label small right 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={false}
@@ -762,19 +582,7 @@ exports[`Storyshots label small right 1`] = `
 
 exports[`Storyshots size large 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={false}
@@ -814,19 +622,7 @@ exports[`Storyshots size large 1`] = `
 
 exports[`Storyshots size small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-checked={false}

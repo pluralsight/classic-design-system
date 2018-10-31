@@ -2,19 +2,7 @@
 
 exports[`Storyshots drawer controlled 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -27,7 +15,7 @@ exports[`Storyshots drawer controlled 1`] = `
   >
     <div>
       <button
-        data-css-gl46pt=""
+        data-css-gukh6t=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
@@ -39,32 +27,32 @@ exports[`Storyshots drawer controlled 1`] = `
         </span>
       </button>
       <div
-        className="css-1fq8nx6"
+        className="css-index--drawerroot-iqj7ys"
       >
         <div
-          className="css-i9wfit"
+          className="css-index--drawerbase-1g5sei2"
           onClick={[Function]}
         >
           <div
-            className="css-euzj8"
+            className="css-index--drawerpanelcontent-1suarfy"
           >
             <div>
               Drawer Base Here
             </div>
           </div>
           <div
-            className="css-qs2rg7"
+            className="css-index--togglebuttoncontainer-1ai77lf"
           >
             <button
               aria-label="Collapse"
-              className="css-xipskh"
+              className="css-index--togglebutton-fe7rcw"
               onClick={[Function]}
             >
               <div
-                className="css-xnveog"
+                className="css-index--rotatable-1n7fyx2"
               >
                 <div
-                  className="css-otejxm"
+                  className="css-index--iconcontainer-1o7wiin"
                 >
                   <svg
                     aria-label="caret down icon"
@@ -82,10 +70,10 @@ exports[`Storyshots drawer controlled 1`] = `
           </div>
         </div>
         <div
-          className="css-ule0ur"
+          className="css-index--drawerpanel-ja520o"
         >
           <div
-            className="css-1j3g0qd"
+            className="css-collapsible--container-fn9lpf"
           >
             Drawer Content Here
           </div>
@@ -98,19 +86,7 @@ exports[`Storyshots drawer controlled 1`] = `
 
 exports[`Storyshots drawer default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -122,32 +98,32 @@ exports[`Storyshots drawer default 1`] = `
     }
   >
     <div
-      className="css-1fq8nx6"
+      className="css-index--drawerroot-iqj7ys"
     >
       <div
-        className="css-1oot5vc"
+        className="css-index--drawerbase-1eeyo50"
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          className="css-index--drawerpanelcontent-1suarfy"
         >
           <div>
             Drawer Base Here
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          className="css-index--togglebuttoncontainer-1ai77lf"
         >
           <button
             aria-label="Expand"
-            className="css-xipskh"
+            className="css-index--togglebutton-fe7rcw"
             onClick={[Function]}
           >
             <div
-              className="css-1byjzqg"
+              className="css-index--rotatable-1564716"
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="caret down icon"
@@ -165,10 +141,10 @@ exports[`Storyshots drawer default 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        className="css-index--drawerpanel-1f648v3"
       >
         <div
-          className="css-1j3g0qd"
+          className="css-collapsible--container-fn9lpf"
         >
           Drawer Content Here
         </div>
@@ -180,19 +156,7 @@ exports[`Storyshots drawer default 1`] = `
 
 exports[`Storyshots drawer row component with actions 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -204,23 +168,23 @@ exports[`Storyshots drawer row component with actions 1`] = `
     }
   >
     <div
-      className="css-1fq8nx6"
+      className="css-index--drawerroot-iqj7ys"
     >
       <div
-        className="css-1oot5vc"
+        className="css-index--drawerbase-1eeyo50"
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          className="css-index--drawerpanelcontent-1suarfy"
         >
           <div
-            className="css-oowi90"
+            className="css-index--row-1i6pawm"
           >
             <div
-              className="css-js3ti3"
+              className="css-index--overlays-s3vwp9"
             >
               <span
-                className="css-15yq56v"
+                className="css-index--imagelink-fw1euf"
               >
                 <a
                   href="https://duckduckgo.com?q=image"
@@ -231,10 +195,10 @@ exports[`Storyshots drawer row component with actions 1`] = `
                 </a>
               </span>
               <div
-                className="css-4nxbcy"
+                className="css-index--fulloverlay-1grv38i"
               >
                 <span
-                  className="css-1fxa3fl"
+                  className="css-index--fulloverlaylinkspan-169kk5"
                   onBlur={[Function]}
                   onFocus={[Function]}
                 >
@@ -247,13 +211,13 @@ exports[`Storyshots drawer row component with actions 1`] = `
               </div>
             </div>
             <div
-              className="css-kxulf3"
+              className="css-index--words-1o82hkz"
             >
               <div
-                className="css-1e23mlv"
+                className="css-index--title-oqyh1m"
               >
                 <span
-                  className="css-1kcq1x5"
+                  className="css-index--textlink-s873co"
                 >
                   <a
                     href="https://duckduckgo.com?q=title"
@@ -263,13 +227,13 @@ exports[`Storyshots drawer row component with actions 1`] = `
                 </span>
               </div>
               <div
-                className="css-gmo5z6"
+                className="css-index--metadata-t5ipjx"
               >
                 <span
-                  className="css-1kcrbi9"
+                  className="css-index--metadatadatum-1fj7jah"
                 >
                   <span
-                    className="css-1kcq1x5"
+                    className="css-index--textlink-s873co"
                   >
                     <a
                       href="https://duckduckgo.com?q=cats"
@@ -280,26 +244,26 @@ exports[`Storyshots drawer row component with actions 1`] = `
                 </span>
                 <span
                   aria-hidden={true}
-                  className="css-kykfz1"
+                  className="css-index--metadatadot-jgxppi"
                 >
                   ·
                 </span>
                 <span
-                  className="css-1kcrbi9"
+                  className="css-index--metadatadatum-1fj7jah"
                 >
                   23 hours of cuteness
                 </span>
               </div>
             </div>
             <div
-              className="css-1akhza9"
+              className="css-index--actionbar-yo5e5p"
             >
               <button
-                className="css-178rs47"
+                className="css-index--actionbutton-6ov4bp"
                 onClick={[Function]}
               >
                 <div
-                  className="css-otejxm"
+                  className="css-index--iconcontainer-1o7wiin"
                 >
                   <svg
                     aria-label="more icon"
@@ -317,18 +281,18 @@ exports[`Storyshots drawer row component with actions 1`] = `
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          className="css-index--togglebuttoncontainer-1ai77lf"
         >
           <button
             aria-label="Expand"
-            className="css-xipskh"
+            className="css-index--togglebutton-fe7rcw"
             onClick={[Function]}
           >
             <div
-              className="css-1byjzqg"
+              className="css-index--rotatable-1564716"
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="caret down icon"
@@ -346,10 +310,10 @@ exports[`Storyshots drawer row component with actions 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        className="css-index--drawerpanel-1f648v3"
       >
         <div
-          className="css-1j3g0qd"
+          className="css-collapsible--container-fn9lpf"
         >
           Drawer Content Here
         </div>
@@ -361,19 +325,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
 
 exports[`Storyshots drawer stack of drawers 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -386,32 +338,32 @@ exports[`Storyshots drawer stack of drawers 1`] = `
   >
     <div>
       <div
-        className="css-1fq8nx6"
+        className="css-index--drawerroot-iqj7ys"
       >
         <div
-          className="css-1oot5vc"
+          className="css-index--drawerbase-1eeyo50"
           onClick={[Function]}
         >
           <div
-            className="css-euzj8"
+            className="css-index--drawerpanelcontent-1suarfy"
           >
             <div>
               The Drawer #1
             </div>
           </div>
           <div
-            className="css-qs2rg7"
+            className="css-index--togglebuttoncontainer-1ai77lf"
           >
             <button
               aria-label="Expand"
-              className="css-xipskh"
+              className="css-index--togglebutton-fe7rcw"
               onClick={[Function]}
             >
               <div
-                className="css-1byjzqg"
+                className="css-index--rotatable-1564716"
               >
                 <div
-                  className="css-otejxm"
+                  className="css-index--iconcontainer-1o7wiin"
                 >
                   <svg
                     aria-label="caret down icon"
@@ -429,40 +381,40 @@ exports[`Storyshots drawer stack of drawers 1`] = `
           </div>
         </div>
         <div
-          className="css-1i2htk9"
+          className="css-index--drawerpanel-1f648v3"
         >
           <div
-            className="css-1j3g0qd"
+            className="css-collapsible--container-fn9lpf"
           />
         </div>
       </div>
       <div
-        className="css-1fq8nx6"
+        className="css-index--drawerroot-iqj7ys"
       >
         <div
-          className="css-1oot5vc"
+          className="css-index--drawerbase-1eeyo50"
           onClick={[Function]}
         >
           <div
-            className="css-euzj8"
+            className="css-index--drawerpanelcontent-1suarfy"
           >
             <div>
               The Drawer #2
             </div>
           </div>
           <div
-            className="css-qs2rg7"
+            className="css-index--togglebuttoncontainer-1ai77lf"
           >
             <button
               aria-label="Expand"
-              className="css-xipskh"
+              className="css-index--togglebutton-fe7rcw"
               onClick={[Function]}
             >
               <div
-                className="css-1byjzqg"
+                className="css-index--rotatable-1564716"
               >
                 <div
-                  className="css-otejxm"
+                  className="css-index--iconcontainer-1o7wiin"
                 >
                   <svg
                     aria-label="caret down icon"
@@ -480,40 +432,40 @@ exports[`Storyshots drawer stack of drawers 1`] = `
           </div>
         </div>
         <div
-          className="css-1i2htk9"
+          className="css-index--drawerpanel-1f648v3"
         >
           <div
-            className="css-1j3g0qd"
+            className="css-collapsible--container-fn9lpf"
           />
         </div>
       </div>
       <div
-        className="css-1fq8nx6"
+        className="css-index--drawerroot-iqj7ys"
       >
         <div
-          className="css-1oot5vc"
+          className="css-index--drawerbase-1eeyo50"
           onClick={[Function]}
         >
           <div
-            className="css-euzj8"
+            className="css-index--drawerpanelcontent-1suarfy"
           >
             <div>
               The Drawer #2
             </div>
           </div>
           <div
-            className="css-qs2rg7"
+            className="css-index--togglebuttoncontainer-1ai77lf"
           >
             <button
               aria-label="Expand"
-              className="css-xipskh"
+              className="css-index--togglebutton-fe7rcw"
               onClick={[Function]}
             >
               <div
-                className="css-1byjzqg"
+                className="css-index--rotatable-1564716"
               >
                 <div
-                  className="css-otejxm"
+                  className="css-index--iconcontainer-1o7wiin"
                 >
                   <svg
                     aria-label="caret down icon"
@@ -531,10 +483,10 @@ exports[`Storyshots drawer stack of drawers 1`] = `
           </div>
         </div>
         <div
-          className="css-1i2htk9"
+          className="css-index--drawerpanel-1f648v3"
         >
           <div
-            className="css-1j3g0qd"
+            className="css-collapsible--container-fn9lpf"
           />
         </div>
       </div>
@@ -545,19 +497,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
 
 exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -571,32 +511,32 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
     <div>
       <div>
         <div
-          className="css-1fq8nx6"
+          className="css-index--drawerroot-iqj7ys"
         >
           <div
-            className="css-1oot5vc"
+            className="css-index--drawerbase-1eeyo50"
             onClick={[Function]}
           >
             <div
-              className="css-euzj8"
+              className="css-index--drawerpanelcontent-1suarfy"
             >
               <div>
                 The Drawer #1
               </div>
             </div>
             <div
-              className="css-qs2rg7"
+              className="css-index--togglebuttoncontainer-1ai77lf"
             >
               <button
                 aria-label="Expand"
-                className="css-xipskh"
+                className="css-index--togglebutton-fe7rcw"
                 onClick={[Function]}
               >
                 <div
-                  className="css-1byjzqg"
+                  className="css-index--rotatable-1564716"
                 >
                   <div
-                    className="css-otejxm"
+                    className="css-index--iconcontainer-1o7wiin"
                   >
                     <svg
                       aria-label="caret down icon"
@@ -614,42 +554,42 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
             </div>
           </div>
           <div
-            className="css-1i2htk9"
+            className="css-index--drawerpanel-1f648v3"
           >
             <div
-              className="css-1j3g0qd"
+              className="css-collapsible--container-fn9lpf"
             />
           </div>
         </div>
       </div>
       <div>
         <div
-          className="css-1fq8nx6"
+          className="css-index--drawerroot-iqj7ys"
         >
           <div
-            className="css-1oot5vc"
+            className="css-index--drawerbase-1eeyo50"
             onClick={[Function]}
           >
             <div
-              className="css-euzj8"
+              className="css-index--drawerpanelcontent-1suarfy"
             >
               <div>
                 The Drawer #2
               </div>
             </div>
             <div
-              className="css-qs2rg7"
+              className="css-index--togglebuttoncontainer-1ai77lf"
             >
               <button
                 aria-label="Expand"
-                className="css-xipskh"
+                className="css-index--togglebutton-fe7rcw"
                 onClick={[Function]}
               >
                 <div
-                  className="css-1byjzqg"
+                  className="css-index--rotatable-1564716"
                 >
                   <div
-                    className="css-otejxm"
+                    className="css-index--iconcontainer-1o7wiin"
                   >
                     <svg
                       aria-label="caret down icon"
@@ -667,42 +607,42 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
             </div>
           </div>
           <div
-            className="css-1i2htk9"
+            className="css-index--drawerpanel-1f648v3"
           >
             <div
-              className="css-1j3g0qd"
+              className="css-collapsible--container-fn9lpf"
             />
           </div>
         </div>
       </div>
       <div>
         <div
-          className="css-1fq8nx6"
+          className="css-index--drawerroot-iqj7ys"
         >
           <div
-            className="css-1oot5vc"
+            className="css-index--drawerbase-1eeyo50"
             onClick={[Function]}
           >
             <div
-              className="css-euzj8"
+              className="css-index--drawerpanelcontent-1suarfy"
             >
               <div>
                 The Drawer #2
               </div>
             </div>
             <div
-              className="css-qs2rg7"
+              className="css-index--togglebuttoncontainer-1ai77lf"
             >
               <button
                 aria-label="Expand"
-                className="css-xipskh"
+                className="css-index--togglebutton-fe7rcw"
                 onClick={[Function]}
               >
                 <div
-                  className="css-1byjzqg"
+                  className="css-index--rotatable-1564716"
                 >
                   <div
-                    className="css-otejxm"
+                    className="css-index--iconcontainer-1o7wiin"
                   >
                     <svg
                       aria-label="caret down icon"
@@ -720,10 +660,10 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
             </div>
           </div>
           <div
-            className="css-1i2htk9"
+            className="css-index--drawerpanel-1f648v3"
           >
             <div
-              className="css-1j3g0qd"
+              className="css-collapsible--container-fn9lpf"
             />
           </div>
         </div>
@@ -735,19 +675,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
 
 exports[`Storyshots drawer using custom aria label 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -759,32 +687,32 @@ exports[`Storyshots drawer using custom aria label 1`] = `
     }
   >
     <div
-      className="css-1fq8nx6"
+      className="css-index--drawerroot-iqj7ys"
     >
       <div
-        className="css-1oot5vc"
+        className="css-index--drawerbase-1eeyo50"
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          className="css-index--drawerpanelcontent-1suarfy"
         >
           <div>
             Drawer Base Here
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          className="css-index--togglebuttoncontainer-1ai77lf"
         >
           <button
             aria-label="Expand custom drawer"
-            className="css-xipskh"
+            className="css-index--togglebutton-fe7rcw"
             onClick={[Function]}
           >
             <div
-              className="css-1byjzqg"
+              className="css-index--rotatable-1564716"
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="caret down icon"
@@ -802,10 +730,10 @@ exports[`Storyshots drawer using custom aria label 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        className="css-index--drawerpanel-1f648v3"
       >
         <div
-          className="css-1j3g0qd"
+          className="css-collapsible--container-fn9lpf"
         >
           Drawer Content Here
         </div>
@@ -817,19 +745,7 @@ exports[`Storyshots drawer using custom aria label 1`] = `
 
 exports[`Storyshots drawer using onToggle prop 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -842,14 +758,14 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
   >
     <div>
       <div
-        className="css-1fq8nx6"
+        className="css-index--drawerroot-iqj7ys"
       >
         <div
-          className="css-1oot5vc"
+          className="css-index--drawerbase-1eeyo50"
           onClick={[Function]}
         >
           <div
-            className="css-euzj8"
+            className="css-index--drawerpanelcontent-1suarfy"
           >
             <div>
               Drawer is 
@@ -857,18 +773,18 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
             </div>
           </div>
           <div
-            className="css-qs2rg7"
+            className="css-index--togglebuttoncontainer-1ai77lf"
           >
             <button
               aria-label="Expand"
-              className="css-xipskh"
+              className="css-index--togglebutton-fe7rcw"
               onClick={[Function]}
             >
               <div
-                className="css-1byjzqg"
+                className="css-index--rotatable-1564716"
               >
                 <div
-                  className="css-otejxm"
+                  className="css-index--iconcontainer-1o7wiin"
                 >
                   <svg
                     aria-label="caret down icon"
@@ -886,10 +802,10 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
           </div>
         </div>
         <div
-          className="css-1i2htk9"
+          className="css-index--drawerpanel-1f648v3"
         >
           <div
-            className="css-1j3g0qd"
+            className="css-collapsible--container-fn9lpf"
           >
             Drawer Content Here
           </div>
@@ -902,19 +818,7 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
 
 exports[`Storyshots drawer using startOpen prop 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -926,32 +830,32 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
     }
   >
     <div
-      className="css-1fq8nx6"
+      className="css-index--drawerroot-iqj7ys"
     >
       <div
-        className="css-i9wfit"
+        className="css-index--drawerbase-1g5sei2"
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          className="css-index--drawerpanelcontent-1suarfy"
         >
           <div>
             Base here
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          className="css-index--togglebuttoncontainer-1ai77lf"
         >
           <button
             aria-label="Collapse"
-            className="css-xipskh"
+            className="css-index--togglebutton-fe7rcw"
             onClick={[Function]}
           >
             <div
-              className="css-xnveog"
+              className="css-index--rotatable-1n7fyx2"
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="caret down icon"
@@ -969,10 +873,10 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
         </div>
       </div>
       <div
-        className="css-ule0ur"
+        className="css-index--drawerpanel-ja520o"
       >
         <div
-          className="css-1j3g0qd"
+          className="css-collapsible--container-fn9lpf"
         >
           <div>
             Panel here
@@ -986,19 +890,7 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
 
 exports[`Storyshots drawer with row component 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -1010,62 +902,62 @@ exports[`Storyshots drawer with row component 1`] = `
     }
   >
     <div
-      className="css-1fq8nx6"
+      className="css-index--drawerroot-iqj7ys"
     >
       <div
-        className="css-1oot5vc"
+        className="css-index--drawerbase-1eeyo50"
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          className="css-index--drawerpanelcontent-1suarfy"
         >
           <div
-            className="css-oowi90"
+            className="css-index--row-1i6pawm"
           >
             <div
-              className="css-js3ti3"
+              className="css-index--overlays-s3vwp9"
             >
               <div
-                className="css-y8jh93"
+                className="css-index--imagediv-1f7mipn"
               />
             </div>
             <div
-              className="css-kxulf3"
+              className="css-index--words-1o82hkz"
             >
               <div
-                className="css-1e23mlv"
+                className="css-index--title-oqyh1m"
               >
                 Look at me! I'm a &lt;Row /&gt;!
               </div>
               <div
-                className="css-gmo5z6"
+                className="css-index--metadata-t5ipjx"
               >
                 <span
-                  className="css-1kcrbi9"
+                  className="css-index--metadatadatum-1fj7jah"
                 >
                   Kitten McCatbuns
                 </span>
                 <span
                   aria-hidden={true}
-                  className="css-kykfz1"
+                  className="css-index--metadatadot-jgxppi"
                 >
                   ·
                 </span>
                 <span
-                  className="css-1kcrbi9"
+                  className="css-index--metadatadatum-1fj7jah"
                 >
                   23 hours of cuteness
                 </span>
               </div>
             </div>
             <div
-              className="css-okadky"
+              className="css-index--actionbar-1lxbv5h"
             >
               <button
-                className="css-178rs47"
+                className="css-index--actionbutton-6ov4bp"
               >
                 <div
-                  className="css-otejxm"
+                  className="css-index--iconcontainer-1o7wiin"
                 >
                   <svg
                     aria-label="more icon"
@@ -1083,18 +975,18 @@ exports[`Storyshots drawer with row component 1`] = `
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          className="css-index--togglebuttoncontainer-1ai77lf"
         >
           <button
             aria-label="Expand"
-            className="css-xipskh"
+            className="css-index--togglebutton-fe7rcw"
             onClick={[Function]}
           >
             <div
-              className="css-1byjzqg"
+              className="css-index--rotatable-1564716"
             >
               <div
-                className="css-otejxm"
+                className="css-index--iconcontainer-1o7wiin"
               >
                 <svg
                   aria-label="caret down icon"
@@ -1112,10 +1004,10 @@ exports[`Storyshots drawer with row component 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        className="css-index--drawerpanel-1f648v3"
       >
         <div
-          className="css-1j3g0qd"
+          className="css-collapsible--container-fn9lpf"
         >
           Drawer Content Here
         </div>

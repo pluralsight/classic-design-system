@@ -2,19 +2,7 @@
 
 exports[`Storyshots Halo/appearances default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className=""
@@ -29,19 +17,7 @@ exports[`Storyshots Halo/appearances default 1`] = `
 
 exports[`Storyshots Halo/appearances error 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className=""
@@ -56,19 +32,7 @@ exports[`Storyshots Halo/appearances error 1`] = `
 
 exports[`Storyshots Halo/gapSizes default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className=""
@@ -83,19 +47,7 @@ exports[`Storyshots Halo/gapSizes default 1`] = `
 
 exports[`Storyshots Halo/gapSizes small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className=""
@@ -110,19 +62,7 @@ exports[`Storyshots Halo/gapSizes small 1`] = `
 
 exports[`Storyshots Halo/shapes default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className=""
@@ -139,19 +79,7 @@ exports[`Storyshots Halo/shapes default 1`] = `
 
 exports[`Storyshots Halo/shapes pill 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className=""
@@ -168,19 +96,7 @@ exports[`Storyshots Halo/shapes pill 1`] = `
 
 exports[`Storyshots Halo/visible false 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className=""
@@ -195,19 +111,7 @@ exports[`Storyshots Halo/visible false 1`] = `
 
 exports[`Storyshots Halo/visible true 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className=""
@@ -222,19 +126,7 @@ exports[`Storyshots Halo/visible true 1`] = `
 
 exports[`Storyshots Halo/visibleOnFocus enabled 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     className=""

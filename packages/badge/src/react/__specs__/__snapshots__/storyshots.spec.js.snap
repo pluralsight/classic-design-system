@@ -2,22 +2,10 @@
 
 exports[`Storyshots appearance default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-vdc22r"
+    className="css-index--badge-ydzcd8"
   >
     default Badge
   </div>
@@ -26,22 +14,10 @@ exports[`Storyshots appearance default 1`] = `
 
 exports[`Storyshots appearance stroke 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-18uz01l"
+    className="css-index--badge-121kjrq"
   >
     stroke Badge
   </div>
@@ -50,22 +26,10 @@ exports[`Storyshots appearance stroke 1`] = `
 
 exports[`Storyshots color blue default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1d3h730"
+    className="css-index--badge-1syrv3o"
   >
     blue default Badge
   </div>
@@ -74,22 +38,10 @@ exports[`Storyshots color blue default 1`] = `
 
 exports[`Storyshots color blue stroke 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1nf2brk"
+    className="css-index--badge-664o4k"
   >
     blue stroke Badge
   </div>
@@ -98,22 +50,10 @@ exports[`Storyshots color blue stroke 1`] = `
 
 exports[`Storyshots color gray default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-vdc22r"
+    className="css-index--badge-ydzcd8"
   >
     gray default Badge
   </div>
@@ -122,22 +62,10 @@ exports[`Storyshots color gray default 1`] = `
 
 exports[`Storyshots color gray stroke 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-18uz01l"
+    className="css-index--badge-121kjrq"
   >
     gray stroke Badge
   </div>
@@ -146,22 +74,10 @@ exports[`Storyshots color gray stroke 1`] = `
 
 exports[`Storyshots color green default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-jh132n"
+    className="css-index--badge-1hdzczx"
   >
     green default Badge
   </div>
@@ -170,22 +86,10 @@ exports[`Storyshots color green default 1`] = `
 
 exports[`Storyshots color green stroke 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1ijjyd4"
+    className="css-index--badge-1284cpa"
   >
     green stroke Badge
   </div>
@@ -194,22 +98,10 @@ exports[`Storyshots color green stroke 1`] = `
 
 exports[`Storyshots color red default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-17te2fi"
+    className="css-index--badge-ef980q"
   >
     red default Badge
   </div>
@@ -218,22 +110,10 @@ exports[`Storyshots color red default 1`] = `
 
 exports[`Storyshots color red stroke 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1en6ax5"
+    className="css-index--badge-4hfe7d"
   >
     red stroke Badge
   </div>
@@ -242,22 +122,10 @@ exports[`Storyshots color red stroke 1`] = `
 
 exports[`Storyshots color yellow default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1q8b1lc"
+    className="css-index--badge-1mliwxu"
   >
     yellow default Badge
   </div>
@@ -266,22 +134,10 @@ exports[`Storyshots color yellow default 1`] = `
 
 exports[`Storyshots color yellow stroke 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-10iae72"
+    className="css-index--badge-10dxf71"
   >
     yellow stroke Badge
   </div>

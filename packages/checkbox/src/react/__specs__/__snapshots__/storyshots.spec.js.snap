@@ -2,19 +2,7 @@
 
 exports[`Storyshots Checkbox checked 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -68,19 +56,7 @@ exports[`Storyshots Checkbox checked 1`] = `
 
 exports[`Storyshots Checkbox default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -121,19 +97,7 @@ exports[`Storyshots Checkbox default 1`] = `
 
 exports[`Storyshots Checkbox disabled 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -174,19 +138,7 @@ exports[`Storyshots Checkbox disabled 1`] = `
 
 exports[`Storyshots Checkbox error 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -268,19 +220,7 @@ exports[`Storyshots Checkbox error 1`] = `
 
 exports[`Storyshots Checkbox state demo 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={

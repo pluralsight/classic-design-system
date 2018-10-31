@@ -21,7 +21,7 @@
     "prop-types": "^15.5.10"
   },
   "peerDependencies": {
-    "@storybook/addons": "v3.2.14",
+    "@storybook/addons": "^3.4.0",
     "react": ">=0.15.0 < 17.0.0"
   },
   "devDependencies": {

@@ -2,19 +2,7 @@
 
 exports[`Storyshots actions button 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-1x8hi92=""
@@ -33,19 +21,7 @@ exports[`Storyshots actions button 1`] = `
 
 exports[`Storyshots actions button w/ icon button 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-64l86f=""
@@ -59,7 +35,7 @@ exports[`Storyshots actions button w/ icon button 1`] = `
       As a button
     </span>
     <div
-      className="css-1c7pw2e"
+      className="css-index--iconcontainer-18578c2"
       onClick={[Function]}
     >
       <svg
@@ -79,19 +55,7 @@ exports[`Storyshots actions button w/ icon button 1`] = `
 
 exports[`Storyshots actions just icon button 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-1fxgkih=""
@@ -102,7 +66,7 @@ exports[`Storyshots actions just icon button 1`] = `
       As a button
     </span>
     <div
-      className="css-1c7pw2e"
+      className="css-index--iconcontainer-18578c2"
       onClick={[Function]}
     >
       <svg
@@ -122,19 +86,7 @@ exports[`Storyshots actions just icon button 1`] = `
 
 exports[`Storyshots actions link 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <a
     data-css-1x8hi92=""
@@ -151,19 +103,7 @@ exports[`Storyshots actions link 1`] = `
 
 exports[`Storyshots actions link with target 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <a
     data-css-1x8hi92=""
@@ -181,19 +121,7 @@ exports[`Storyshots actions link with target 1`] = `
 
 exports[`Storyshots appearance accent 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-47hvh8=""
@@ -209,19 +137,7 @@ exports[`Storyshots appearance accent 1`] = `
 
 exports[`Storyshots appearance basic 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-1n5vxb9=""
@@ -237,19 +153,7 @@ exports[`Storyshots appearance basic 1`] = `
 
 exports[`Storyshots appearance bright 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-itkkn2=""
@@ -265,19 +169,7 @@ exports[`Storyshots appearance bright 1`] = `
 
 exports[`Storyshots error default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-gs5gu0=""
@@ -293,19 +185,7 @@ exports[`Storyshots error default 1`] = `
 
 exports[`Storyshots error focusable 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-1j6s7i0=""
@@ -324,19 +204,7 @@ exports[`Storyshots error focusable 1`] = `
 
 exports[`Storyshots icon accent medium 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-cakr6m=""
@@ -347,7 +215,7 @@ exports[`Storyshots icon accent medium 1`] = `
       With Icon
     </span>
     <div
-      className="css-1vg8sjr"
+      className="css-index--iconcontainer-sbo4va"
       onClick={[Function]}
     >
       <svg
@@ -367,19 +235,7 @@ exports[`Storyshots icon accent medium 1`] = `
 
 exports[`Storyshots icon accent small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-1swczt7=""
@@ -390,7 +246,7 @@ exports[`Storyshots icon accent small 1`] = `
       With Icon
     </span>
     <div
-      className="css-crsxhn"
+      className="css-index--iconcontainer-skvh8n"
       onClick={[Function]}
     >
       <svg
@@ -410,19 +266,7 @@ exports[`Storyshots icon accent small 1`] = `
 
 exports[`Storyshots icon basic medium 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-1fxgkih=""
@@ -433,7 +277,7 @@ exports[`Storyshots icon basic medium 1`] = `
       With Icon
     </span>
     <div
-      className="css-1vg8sjr"
+      className="css-index--iconcontainer-sbo4va"
       onClick={[Function]}
     >
       <svg
@@ -453,19 +297,7 @@ exports[`Storyshots icon basic medium 1`] = `
 
 exports[`Storyshots icon basic small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-1g26r3r=""
@@ -476,7 +308,7 @@ exports[`Storyshots icon basic small 1`] = `
       With Icon
     </span>
     <div
-      className="css-crsxhn"
+      className="css-index--iconcontainer-skvh8n"
       onClick={[Function]}
     >
       <svg
@@ -496,19 +328,7 @@ exports[`Storyshots icon basic small 1`] = `
 
 exports[`Storyshots icon bright medium 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-1uxvgmp=""
@@ -519,7 +339,7 @@ exports[`Storyshots icon bright medium 1`] = `
       With Icon
     </span>
     <div
-      className="css-1vg8sjr"
+      className="css-index--iconcontainer-sbo4va"
       onClick={[Function]}
     >
       <svg
@@ -539,19 +359,7 @@ exports[`Storyshots icon bright medium 1`] = `
 
 exports[`Storyshots icon bright small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-psmlat=""
@@ -562,7 +370,7 @@ exports[`Storyshots icon bright small 1`] = `
       With Icon
     </span>
     <div
-      className="css-crsxhn"
+      className="css-index--iconcontainer-skvh8n"
       onClick={[Function]}
     >
       <svg
@@ -582,19 +390,7 @@ exports[`Storyshots icon bright small 1`] = `
 
 exports[`Storyshots isPressed button 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     aria-pressed={true}
@@ -614,19 +410,7 @@ exports[`Storyshots isPressed button 1`] = `
 
 exports[`Storyshots isPressed button w/ icon button 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     aria-pressed={true}
@@ -641,7 +425,7 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
       As a button
     </span>
     <div
-      className="css-1c7pw2e"
+      className="css-index--iconcontainer-18578c2"
       onClick={[Function]}
     >
       <svg
@@ -661,19 +445,7 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
 
 exports[`Storyshots isPressed link 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <a
     aria-pressed={true}
@@ -691,19 +463,7 @@ exports[`Storyshots isPressed link 1`] = `
 
 exports[`Storyshots long string 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-1n5vxb9=""
@@ -719,19 +479,7 @@ exports[`Storyshots long string 1`] = `
 
 exports[`Storyshots long with icon 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-1fxgkih=""
@@ -742,7 +490,7 @@ exports[`Storyshots long with icon 1`] = `
       This is the string that goes on forever and always. There really isn't an end. Wow.
     </span>
     <div
-      className="css-1vg8sjr"
+      className="css-index--iconcontainer-sbo4va"
       onClick={[Function]}
     >
       <svg
@@ -762,19 +510,7 @@ exports[`Storyshots long with icon 1`] = `
 
 exports[`Storyshots size medium 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-1n5vxb9=""
@@ -790,19 +526,7 @@ exports[`Storyshots size medium 1`] = `
 
 exports[`Storyshots size small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     data-css-uqnvqs=""

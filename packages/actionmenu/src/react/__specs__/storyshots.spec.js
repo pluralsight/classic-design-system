@@ -1,14 +1,9 @@
 import initStoryshots, {
   snapshotWithOptions
 } from '@storybook/addon-storyshots'
-import React from 'react'
 
-function createNodeMock(element) {
-  return { focus() {} }
-}
+const createNodeMock = el => document.createElement('div')
 
 initStoryshots({
-  test: snapshotWithOptions({
-    createNodeMock
-  })
+  test: snapshotWithOptions({ createNodeMock })
 })

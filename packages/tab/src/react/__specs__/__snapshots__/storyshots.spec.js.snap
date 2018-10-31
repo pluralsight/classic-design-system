@@ -2,116 +2,104 @@
 
 exports[`Storyshots default default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div>
     <div
-      className="css-zhyi0r"
+      className="css-list--list-we2016"
       onKeyDown={[Function]}
       role="tablist"
       tabIndex="0"
     >
       <button
         aria-selected={true}
-        className="css-1pp0sr"
+        className="css-list-item--listitem-1ntycy4"
         id="example1"
         onClick={[Function]}
         role="tab"
         tabIndex="-1"
       >
         <div
-          className="css-1vk06pf"
+          className="css-list-item--textwidth-t99l5y"
         >
           Menu 1
           <span
-            className="css-1s34vsj"
+            className="css-list-item--bar-19nw636"
           />
         </div>
       </button>
       <button
         aria-selected={false}
-        className="css-1bb8k7d"
+        className="css-list-item--listitem-3qhjek"
         id="example2"
         onClick={[Function]}
         role="tab"
         tabIndex="-1"
       >
         <div
-          className="css-1vk06pf"
+          className="css-list-item--textwidth-t99l5y"
         >
           Menu 2
           <span
-            className="css-1s34vsj"
+            className="css-list-item--bar-19nw636"
           />
         </div>
       </button>
       <button
         aria-selected={false}
-        className="css-1bb8k7d"
+        className="css-list-item--listitem-3qhjek"
         id="example3"
         onClick={[Function]}
         role="tab"
         tabIndex="-1"
       >
         <div
-          className="css-1vk06pf"
+          className="css-list-item--textwidth-t99l5y"
         >
           Menu 3
           <span
-            className="css-1s34vsj"
+            className="css-list-item--bar-19nw636"
           />
         </div>
       </button>
       <button
         aria-selected={false}
-        className="css-1bb8k7d"
+        className="css-list-item--listitem-3qhjek"
         id="example4"
         onClick={[Function]}
         role="tab"
         tabIndex="-1"
       >
         <div
-          className="css-1vk06pf"
+          className="css-list-item--textwidth-t99l5y"
         >
           Menu 4
           <span
-            className="css-1s34vsj"
+            className="css-list-item--bar-19nw636"
           />
         </div>
       </button>
       <button
         aria-selected={false}
-        className="css-1bb8k7d"
+        className="css-list-item--listitem-3qhjek"
         id="example5"
         onClick={[Function]}
         role="tab"
         tabIndex="-1"
       >
         <div
-          className="css-1vk06pf"
+          className="css-list-item--textwidth-t99l5y"
         >
           Menu 5
           <span
-            className="css-1s34vsj"
+            className="css-list-item--bar-19nw636"
           />
         </div>
       </button>
     </div>
     <div
       aria-labelledby="example3"
-      className="css-nil"
+      className="css-panel--panel-14a04t2"
       role="tabpanel"
     >
       <div
@@ -126,22 +114,10 @@ exports[`Storyshots default default 1`] = `
 
 exports[`Storyshots default no items 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-zhyi0r"
+    className="css-list--list-we2016"
     onKeyDown={[Function]}
     role="tablist"
     tabIndex="0"
@@ -151,22 +127,10 @@ exports[`Storyshots default no items 1`] = `
 
 exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-zhyi0r"
+    className="css-list--list-we2016"
     onKeyDown={[Function]}
     role="tablist"
     style={
@@ -178,18 +142,18 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
   >
     <button
       aria-selected={true}
-      className="css-1pp0sr"
+      className="css-list-item--listitem-1ntycy4"
       id="wow"
       onClick={[Function]}
       role="tab"
       tabIndex="-1"
     >
       <div
-        className="css-1vk06pf"
+        className="css-list-item--textwidth-t99l5y"
       >
         Wow
         <span
-          className="css-1s34vsj"
+          className="css-list-item--bar-19nw636"
         />
       </div>
     </button>
@@ -199,29 +163,17 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
 
 exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-zhyi0r"
+    className="css-list--list-we2016"
     onKeyDown={[Function]}
     role="tablist"
     tabIndex="0"
   >
     <button
       aria-selected={true}
-      className="css-1pp0sr"
+      className="css-list-item--listitem-1ntycy4"
       id="wow"
       onClick={[Function]}
       role="tab"
@@ -233,11 +185,11 @@ exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
       tabIndex="-1"
     >
       <div
-        className="css-1vk06pf"
+        className="css-list-item--textwidth-t99l5y"
       >
         Disabled look
         <span
-          className="css-1s34vsj"
+          className="css-list-item--bar-19nw636"
         />
       </div>
     </button>
@@ -247,30 +199,18 @@ exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
 
 exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div>
     <div
-      className="css-zhyi0r"
+      className="css-list--list-we2016"
       onKeyDown={[Function]}
       role="tablist"
       tabIndex="0"
     >
       <button
         aria-selected={true}
-        className="css-1pp0sr"
+        className="css-list-item--listitem-1ntycy4"
         id="wow"
         onClick={[Function]}
         role="tab"
@@ -282,18 +222,18 @@ exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
         tabIndex="-1"
       >
         <div
-          className="css-1vk06pf"
+          className="css-list-item--textwidth-t99l5y"
         >
           Disabled look
           <span
-            className="css-1s34vsj"
+            className="css-list-item--bar-19nw636"
           />
         </div>
       </button>
     </div>
     <div
       aria-labelledby="wow"
-      className="css-nil"
+      className="css-panel--panel-14a04t2"
       role="tabpanel"
       style={
         Object {

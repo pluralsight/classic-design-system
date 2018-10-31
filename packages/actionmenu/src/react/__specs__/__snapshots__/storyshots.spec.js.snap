@@ -2,26 +2,12 @@
 
 exports[`Storyshots customized styles item style 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
-    onClick={undefined}
+    className="css-index--menu-65y210"
     onKeyDown={[Function]}
     role="menu"
-    style={undefined}
   >
     <div
       data-css-13azwyo=""
@@ -29,7 +15,6 @@ exports[`Storyshots customized styles item style 1`] = `
       <button
         aria-haspopup={false}
         data-css-1qr74j9=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -49,7 +34,6 @@ exports[`Storyshots customized styles item style 1`] = `
       <button
         aria-haspopup={false}
         data-css-1stw8mg=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -69,7 +53,6 @@ exports[`Storyshots customized styles item style 1`] = `
       <button
         aria-haspopup={false}
         data-css-1stw8mg=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -89,26 +72,12 @@ exports[`Storyshots customized styles item style 1`] = `
 
 exports[`Storyshots dividers edge 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
-    onClick={undefined}
+    className="css-index--menu-65y210"
     onKeyDown={[Function]}
     role="menu"
-    style={undefined}
   >
     <div
       data-css-13azwyo=""
@@ -116,7 +85,6 @@ exports[`Storyshots dividers edge 1`] = `
       <button
         aria-haspopup={false}
         data-css-1qr74j9=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -126,7 +94,7 @@ exports[`Storyshots dividers edge 1`] = `
       </button>
     </div>
     <div
-      className="css-rficis"
+      className="css-index--divider-1nzml98"
       tabIndex="-1"
     />
   </div>
@@ -135,26 +103,12 @@ exports[`Storyshots dividers edge 1`] = `
 
 exports[`Storyshots dividers sandwich 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
-    onClick={undefined}
+    className="css-index--menu-65y210"
     onKeyDown={[Function]}
     role="menu"
-    style={undefined}
   >
     <div
       data-css-13azwyo=""
@@ -162,7 +116,6 @@ exports[`Storyshots dividers sandwich 1`] = `
       <button
         aria-haspopup={false}
         data-css-1qr74j9=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -172,7 +125,7 @@ exports[`Storyshots dividers sandwich 1`] = `
       </button>
     </div>
     <div
-      className="css-rficis"
+      className="css-index--divider-1nzml98"
       tabIndex="-1"
     />
     <div
@@ -181,7 +134,6 @@ exports[`Storyshots dividers sandwich 1`] = `
       <button
         aria-haspopup={false}
         data-css-1stw8mg=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -196,7 +148,6 @@ exports[`Storyshots dividers sandwich 1`] = `
       <button
         aria-haspopup={false}
         data-css-1stw8mg=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -211,26 +162,12 @@ exports[`Storyshots dividers sandwich 1`] = `
 
 exports[`Storyshots link a w/ href 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
-    onClick={undefined}
+    className="css-index--menu-65y210"
     onKeyDown={[Function]}
     role="menu"
-    style={undefined}
   >
     <div
       data-css-13azwyo=""
@@ -239,7 +176,6 @@ exports[`Storyshots link a w/ href 1`] = `
         aria-haspopup={false}
         data-css-1qr74j9=""
         href="https://duckduckgo.com"
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -254,26 +190,12 @@ exports[`Storyshots link a w/ href 1`] = `
 
 exports[`Storyshots menu items long text 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
-    onClick={undefined}
+    className="css-index--menu-65y210"
     onKeyDown={[Function]}
     role="menu"
-    style={undefined}
   >
     <div
       data-css-13azwyo=""
@@ -281,7 +203,6 @@ exports[`Storyshots menu items long text 1`] = `
       <button
         aria-haspopup={false}
         data-css-1qr74j9=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -296,7 +217,6 @@ exports[`Storyshots menu items long text 1`] = `
       <button
         aria-haspopup={false}
         data-css-1stw8mg=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -311,26 +231,12 @@ exports[`Storyshots menu items long text 1`] = `
 
 exports[`Storyshots menu items long text with icon 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
-    onClick={undefined}
+    className="css-index--menu-65y210"
     onKeyDown={[Function]}
     role="menu"
-    style={undefined}
   >
     <div
       data-css-13azwyo=""
@@ -338,7 +244,6 @@ exports[`Storyshots menu items long text with icon 1`] = `
       <button
         aria-haspopup={false}
         data-css-cskk43=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -348,7 +253,7 @@ exports[`Storyshots menu items long text with icon 1`] = `
           data-css-18rfdc6=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="channel icon"
@@ -371,26 +276,12 @@ exports[`Storyshots menu items long text with icon 1`] = `
 
 exports[`Storyshots menu items multiple 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
-    onClick={undefined}
+    className="css-index--menu-65y210"
     onKeyDown={[Function]}
     role="menu"
-    style={undefined}
   >
     <div
       data-css-13azwyo=""
@@ -398,7 +289,6 @@ exports[`Storyshots menu items multiple 1`] = `
       <button
         aria-haspopup={false}
         data-css-1qr74j9=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -413,7 +303,6 @@ exports[`Storyshots menu items multiple 1`] = `
       <button
         aria-haspopup={false}
         data-css-1stw8mg=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -428,7 +317,6 @@ exports[`Storyshots menu items multiple 1`] = `
       <button
         aria-haspopup={false}
         data-css-1stw8mg=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -443,26 +331,12 @@ exports[`Storyshots menu items multiple 1`] = `
 
 exports[`Storyshots menu items one 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
-    onClick={undefined}
+    className="css-index--menu-65y210"
     onKeyDown={[Function]}
     role="menu"
-    style={undefined}
   >
     <div
       data-css-13azwyo=""
@@ -470,7 +344,6 @@ exports[`Storyshots menu items one 1`] = `
       <button
         aria-haspopup={false}
         data-css-1qr74j9=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -485,26 +358,12 @@ exports[`Storyshots menu items one 1`] = `
 
 exports[`Storyshots menu items with icons 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
-    onClick={undefined}
+    className="css-index--menu-65y210"
     onKeyDown={[Function]}
     role="menu"
-    style={undefined}
   >
     <div
       data-css-13azwyo=""
@@ -512,7 +371,6 @@ exports[`Storyshots menu items with icons 1`] = `
       <button
         aria-haspopup={false}
         data-css-cskk43=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -522,7 +380,7 @@ exports[`Storyshots menu items with icons 1`] = `
           data-css-18rfdc6=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="channel icon"
@@ -545,7 +403,6 @@ exports[`Storyshots menu items with icons 1`] = `
       <button
         aria-haspopup={false}
         data-css-1i348gf=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -555,7 +412,7 @@ exports[`Storyshots menu items with icons 1`] = `
           data-css-18rfdc6=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="path icon"
@@ -578,7 +435,6 @@ exports[`Storyshots menu items with icons 1`] = `
       <button
         aria-haspopup={false}
         data-css-1i348gf=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -588,7 +444,7 @@ exports[`Storyshots menu items with icons 1`] = `
           data-css-18rfdc6=""
         >
           <div
-            className="css-otejxm"
+            className="css-index--iconcontainer-1o7wiin"
           >
             <svg
               aria-label="report icon"
@@ -611,19 +467,7 @@ exports[`Storyshots menu items with icons 1`] = `
 
 exports[`Storyshots nested origin bottomLeft 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -635,11 +479,9 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
     }
   >
     <div
-      className="css-1992o3v"
-      onClick={undefined}
+      className="css-index--menu-12c3na7"
       onKeyDown={[Function]}
       role="menu"
-      style={undefined}
     >
       <div
         data-css-13azwyo=""
@@ -647,7 +489,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
         <button
           aria-haspopup={true}
           data-css-gp2zet=""
-          onClick={undefined}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -677,7 +518,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
         <button
           aria-haspopup={false}
           data-css-1stw8mg=""
-          onClick={undefined}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -693,19 +533,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
 
 exports[`Storyshots nested origin bottomRight 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -717,11 +545,9 @@ exports[`Storyshots nested origin bottomRight 1`] = `
     }
   >
     <div
-      className="css-e49ryl"
-      onClick={undefined}
+      className="css-index--menu-274hrs"
       onKeyDown={[Function]}
       role="menu"
-      style={undefined}
     >
       <div
         data-css-13azwyo=""
@@ -729,7 +555,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
         <button
           aria-haspopup={true}
           data-css-gp2zet=""
-          onClick={undefined}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -759,7 +584,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
         <button
           aria-haspopup={false}
           data-css-1stw8mg=""
-          onClick={undefined}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -775,19 +599,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
 
 exports[`Storyshots nested origin topLeft 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -799,11 +611,9 @@ exports[`Storyshots nested origin topLeft 1`] = `
     }
   >
     <div
-      className="css-1pg0ko5"
-      onClick={undefined}
+      className="css-index--menu-65y210"
       onKeyDown={[Function]}
       role="menu"
-      style={undefined}
     >
       <div
         data-css-13azwyo=""
@@ -811,7 +621,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
         <button
           aria-haspopup={true}
           data-css-gp2zet=""
-          onClick={undefined}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -841,7 +650,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
         <button
           aria-haspopup={false}
           data-css-1stw8mg=""
-          onClick={undefined}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -857,19 +665,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
 
 exports[`Storyshots nested origin topRight 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -881,11 +677,9 @@ exports[`Storyshots nested origin topRight 1`] = `
     }
   >
     <div
-      className="css-kv78c9"
-      onClick={undefined}
+      className="css-index--menu-whjyap"
       onKeyDown={[Function]}
       role="menu"
-      style={undefined}
     >
       <div
         data-css-13azwyo=""
@@ -893,7 +687,6 @@ exports[`Storyshots nested origin topRight 1`] = `
         <button
           aria-haspopup={true}
           data-css-gp2zet=""
-          onClick={undefined}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -923,7 +716,6 @@ exports[`Storyshots nested origin topRight 1`] = `
         <button
           aria-haspopup={false}
           data-css-1stw8mg=""
-          onClick={undefined}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onMouseOver={[Function]}
@@ -939,26 +731,12 @@ exports[`Storyshots nested origin topRight 1`] = `
 
 exports[`Storyshots onClick flat 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
-    onClick={undefined}
+    className="css-index--menu-65y210"
     onKeyDown={[Function]}
     role="menu"
-    style={undefined}
   >
     <div
       data-css-13azwyo=""
@@ -1011,26 +789,12 @@ exports[`Storyshots onClick flat 1`] = `
 
 exports[`Storyshots onClick nested 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
-    onClick={undefined}
+    className="css-index--menu-65y210"
     onKeyDown={[Function]}
     role="menu"
-    style={undefined}
   >
     <div
       data-css-13azwyo=""
@@ -1248,26 +1012,12 @@ exports[`Storyshots onClick nested 1`] = `
 
 exports[`Storyshots shouldFocusOnMount false 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
-    onClick={undefined}
+    className="css-index--menu-65y210"
     onKeyDown={[Function]}
     role="menu"
-    style={undefined}
   >
     <div
       data-css-13azwyo=""
@@ -1275,7 +1025,6 @@ exports[`Storyshots shouldFocusOnMount false 1`] = `
       <button
         aria-haspopup={false}
         data-css-1stw8mg=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -1290,7 +1039,6 @@ exports[`Storyshots shouldFocusOnMount false 1`] = `
       <button
         aria-haspopup={false}
         data-css-1stw8mg=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -1305,7 +1053,6 @@ exports[`Storyshots shouldFocusOnMount false 1`] = `
       <button
         aria-haspopup={false}
         data-css-1stw8mg=""
-        onClick={undefined}
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
