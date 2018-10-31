@@ -1,11 +1,14 @@
 import glamorous from 'glamorous'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
+import polyfillFocusWithin from 'focus-within'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Shiitake from 'shiitake'
 
 import css from '../css'
 import * as vars from '../vars'
+
+polyfillFocusWithin(document)
 
 const TextLink = glamorous.span({
   ...css['.psds-card__text-link'],
@@ -58,6 +61,7 @@ const renderImage = props => (props.image ? props.image : null)
 
 const FullOverlay = glamorous.div(
   css['.psds-card__full-overlay'],
+  { ':focus-within': css['.psds-card__full-overlay:focus-within'] },
   ({ fullOverlayVisible }) =>
     fullOverlayVisible
       ? css['.psds-card__full-overlay--fullOverlayVisible']
@@ -73,6 +77,7 @@ const renderFullOverlay = props =>
 
 const ActionBar = glamorous.div(
   css['.psds-card__action-bar'],
+  { ':focus-within': css['.psds-card__action-bar:focus-within'] },
   ({ fullOverlay, actionBarVisible }) =>
     fullOverlay && !actionBarVisible
       ? css[

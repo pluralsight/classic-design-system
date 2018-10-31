@@ -1037,6 +1037,638 @@ exports[`Storyshots combo everything 1`] = `
 </div>
 `;
 
+exports[`Storyshots combo everything focusable 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
+  >
+    <div
+      className="css-1ybvkp1"
+      style={undefined}
+    >
+      <div
+        className="css-1pb0z5d"
+      >
+        <span
+          className="css-15yq56v"
+        >
+          <a
+            href="http://duckduckgo.com?q=image"
+          >
+            <div
+              className="css-1wgk747"
+            />
+          </a>
+        </span>
+        <div
+          className="css-10pysoa"
+        >
+          <span
+            className="css-yvsvuk"
+          >
+            <a
+              href="http://duckduckgo.com?q=overlay"
+            >
+              <div
+                className="css-195ztb"
+              >
+                <svg
+                  aria-label="play circle icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
+                  />
+                </svg>
+              </div>
+            </a>
+          </span>
+        </div>
+        <div
+          className="css-39snau"
+        >
+          <button
+            className="css-168lizi"
+            title="Bookmark"
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="bookmark icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                />
+              </svg>
+            </div>
+          </button>
+          <button
+            className="css-168lizi"
+            title="Settings"
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="gear icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 6.083V4h-2v2.083c-1.45.2432-2.7237 1.0066-3.6226 2.0917L5.5734 7.133l-1 1.7322 1.8022 1.0405C6.1326 10.5577 6 11.2634 6 12c0 .736.1325 1.441.375 2.0924L4.5722 15.133l1 1.7322 1.8038-1.0414c.899 1.086 2.1733 1.85 3.624 2.0932V20h2v-2.083c1.451-.2434 2.7255-1.0077 3.6246-2.094l1.805 1.0422 1-1.732-1.8042-1.0418C17.8676 13.4402 18 12.7356 18 12c0-.7363-.1326-1.4416-.3753-2.0933l1.804-1.0415-1-1.732-1.8054 1.0423C15.7243 7.09 14.4503 6.3263 13 6.083zm-8.9235 7.028C4.026 12.748 4 12.377 4 12s.026-.748.0765-1.111L1.8407 9.598l3-5.196 2.2368 1.2913c.582-.455 1.2285-.831 1.9235-1.1122V2h6v2.582c.6946.2812 1.3408.6572 1.9224 1.112l2.238-1.292 3 5.196-2.2378 1.292c.0504.3628.0764.7333.0764 1.11 0 .3767-.026.7472-.0764 1.11l2.2377 1.292-3 5.196-2.238-1.292c-.5815.4548-1.2277.8308-1.9223 1.112V22h-6v-2.581c-.695-.2814-1.3416-.6574-1.9235-1.1123L4.8407 19.598l-3-5.196 2.2358-1.291zM12 16c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm0-2c1.1046 0 2-.8954 2-2s-.8954-2-2-2-2 .8954-2 2 .8954 2 2 2z"
+                />
+              </svg>
+            </div>
+          </button>
+          <button
+            className="css-168lizi"
+            title="More"
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div
+          className="css-1ld8yc7"
+        >
+          <div
+            className="css-1pif58i"
+          >
+            <div
+              className="css-12f5sv2"
+            >
+              <svg
+                aria-label="path icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.4113 10l3.5858 3.5858V22H6l-.003-7.5858L3 11.4172V14H1V8h6v2H4.4113zM21 11.4142l-3 3V22h-2v-8.4142L19.5858 10H17V8h6v6h-2v-2.5858zm-8-5.5884V22h-2V5.831L9.1742 7.657 7.76 6.2425 12.0026 2l4.2427 4.2426L14.831 7.657 13 5.8257z"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            className="css-tz46pd"
+          >
+            Path
+          </span>
+        </div>
+      </div>
+      <div
+        className="css-piydn8"
+      >
+        <span
+          className="css-1kcq1x5"
+        >
+          <a
+            href="http://duckduckgo.com?q=title"
+          >
+            <div
+              className="css-1tlmf72"
+            >
+              <div
+                className=""
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                      "maxHeight": "0px",
+                      "overflow": "hidden",
+                      "position": "relative",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    
+                    …
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    style={
+                      Object {
+                        "display": "block",
+                        "height": "0px",
+                        "overflow": "hidden",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    Should focus
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    style={
+                      Object {
+                        "display": "block",
+                        "left": "-20000px",
+                        "position": "absolute",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "display": "block",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "display": "block",
+                          }
+                        }
+                      >
+                        W
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "display": "block",
+                          }
+                        }
+                      >
+                        W
+                      </span>
+                    </span>
+                    <span
+                      style={
+                        Object {
+                          "display": "block",
+                        }
+                      }
+                    >
+                      
+                      …
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </span>
+      </div>
+      <div
+        className="css-bcrrqv"
+      >
+        <span
+          className="css-1tz10dh"
+        >
+          <span
+            className="css-1kcq1x5"
+          >
+            <a
+              href="http://duckduckgo.com/?q=jaketrent"
+            >
+              It is impossible to count the grand contributions of this great author
+            </a>
+          </span>
+        </span>
+        <span
+          aria-hidden={true}
+          className="css-kykfz1"
+        >
+          ·
+        </span>
+        <span
+          className="css-1tz10dh"
+        >
+          <span
+            className="css-1kcq1x5"
+          >
+            <a
+              href="http://duckduckgo.com/?q=jaketrent"
+            >
+              Levels heretofore unknown in the battle for truth and knowledge
+            </a>
+          </span>
+        </span>
+        <span
+          aria-hidden={true}
+          className="css-kykfz1"
+        >
+          ·
+        </span>
+        <span
+          className="css-1tz10dh"
+        >
+          <span
+            className="css-1kcq1x5"
+          >
+            <a
+              href="http://duckduckgo.com/?q=jaketrent"
+            >
+              A length of such amazing lengthitude so-as to blow the mind
+            </a>
+          </span>
+        </span>
+      </div>
+      <div
+        className="css-bcrrqv"
+      >
+        <span
+          className="css-1tz10dh"
+        >
+          Goodness me!
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots combo everything locked 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
+  >
+    <div
+      className="css-1ybvkp1"
+      style={undefined}
+    >
+      <div
+        className="css-1pb0z5d"
+      >
+        <span
+          className="css-15yq56v"
+        >
+          <a
+            href="http://duckduckgo.com?q=image"
+          >
+            <div
+              className="css-1wgk747"
+            />
+          </a>
+        </span>
+        <div
+          className="css-10pysoa"
+        >
+          <span
+            className="css-yvsvuk"
+          >
+            <a
+              href="http://duckduckgo.com?q=overlay"
+            >
+              <div
+                className="css-195ztb"
+              >
+                <svg
+                  aria-label="play circle icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
+                  />
+                </svg>
+              </div>
+            </a>
+          </span>
+        </div>
+        <div
+          className="css-39snau"
+        >
+          <button
+            className="css-168lizi"
+            title="Bookmark"
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="bookmark icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                />
+              </svg>
+            </div>
+          </button>
+          <button
+            className="css-168lizi"
+            title="Settings"
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="gear icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 6.083V4h-2v2.083c-1.45.2432-2.7237 1.0066-3.6226 2.0917L5.5734 7.133l-1 1.7322 1.8022 1.0405C6.1326 10.5577 6 11.2634 6 12c0 .736.1325 1.441.375 2.0924L4.5722 15.133l1 1.7322 1.8038-1.0414c.899 1.086 2.1733 1.85 3.624 2.0932V20h2v-2.083c1.451-.2434 2.7255-1.0077 3.6246-2.094l1.805 1.0422 1-1.732-1.8042-1.0418C17.8676 13.4402 18 12.7356 18 12c0-.7363-.1326-1.4416-.3753-2.0933l1.804-1.0415-1-1.732-1.8054 1.0423C15.7243 7.09 14.4503 6.3263 13 6.083zm-8.9235 7.028C4.026 12.748 4 12.377 4 12s.026-.748.0765-1.111L1.8407 9.598l3-5.196 2.2368 1.2913c.582-.455 1.2285-.831 1.9235-1.1122V2h6v2.582c.6946.2812 1.3408.6572 1.9224 1.112l2.238-1.292 3 5.196-2.2378 1.292c.0504.3628.0764.7333.0764 1.11 0 .3767-.026.7472-.0764 1.11l2.2377 1.292-3 5.196-2.238-1.292c-.5815.4548-1.2277.8308-1.9223 1.112V22h-6v-2.581c-.695-.2814-1.3416-.6574-1.9235-1.1123L4.8407 19.598l-3-5.196 2.2358-1.291zM12 16c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm0-2c1.1046 0 2-.8954 2-2s-.8954-2-2-2-2 .8954-2 2 .8954 2 2 2z"
+                />
+              </svg>
+            </div>
+          </button>
+          <button
+            className="css-168lizi"
+            title="More"
+          >
+            <div
+              className="css-otejxm"
+            >
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div
+          className="css-1ld8yc7"
+        >
+          <div
+            className="css-1pif58i"
+          >
+            <div
+              className="css-12f5sv2"
+            >
+              <svg
+                aria-label="path icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.4113 10l3.5858 3.5858V22H6l-.003-7.5858L3 11.4172V14H1V8h6v2H4.4113zM21 11.4142l-3 3V22h-2v-8.4142L19.5858 10H17V8h6v6h-2v-2.5858zm-8-5.5884V22h-2V5.831L9.1742 7.657 7.76 6.2425 12.0026 2l4.2427 4.2426L14.831 7.657 13 5.8257z"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            className="css-tz46pd"
+          >
+            Path
+          </span>
+        </div>
+      </div>
+      <div
+        className="css-piydn8"
+      >
+        <span
+          className="css-1kcq1x5"
+        >
+          <a
+            href="http://duckduckgo.com?q=title"
+          >
+            <div
+              className="css-1tlmf72"
+            >
+              <div
+                className=""
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                      "maxHeight": "0px",
+                      "overflow": "hidden",
+                      "position": "relative",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    
+                    …
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    style={
+                      Object {
+                        "display": "block",
+                        "height": "0px",
+                        "overflow": "hidden",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1, 2, Action Bar, and More Really. Why Not Put More In? Release a New Edition Every Year With All the Excesses of our VC Budget? Boundless Features Will Be Yours 2000
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    style={
+                      Object {
+                        "display": "block",
+                        "left": "-20000px",
+                        "position": "absolute",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "display": "block",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "display": "block",
+                          }
+                        }
+                      >
+                        W
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "display": "block",
+                          }
+                        }
+                      >
+                        W
+                      </span>
+                    </span>
+                    <span
+                      style={
+                        Object {
+                          "display": "block",
+                        }
+                      }
+                    >
+                      
+                      …
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </span>
+      </div>
+      <div
+        className="css-bcrrqv"
+      >
+        <span
+          className="css-1tz10dh"
+        >
+          <span
+            className="css-1kcq1x5"
+          >
+            <a
+              href="http://duckduckgo.com/?q=jaketrent"
+            >
+              It is impossible to count the grand contributions of this great author
+            </a>
+          </span>
+        </span>
+        <span
+          aria-hidden={true}
+          className="css-kykfz1"
+        >
+          ·
+        </span>
+        <span
+          className="css-1tz10dh"
+        >
+          <span
+            className="css-1kcq1x5"
+          >
+            <a
+              href="http://duckduckgo.com/?q=jaketrent"
+            >
+              Levels heretofore unknown in the battle for truth and knowledge
+            </a>
+          </span>
+        </span>
+        <span
+          aria-hidden={true}
+          className="css-kykfz1"
+        >
+          ·
+        </span>
+        <span
+          className="css-1tz10dh"
+        >
+          <span
+            className="css-1kcq1x5"
+          >
+            <a
+              href="http://duckduckgo.com/?q=jaketrent"
+            >
+              A length of such amazing lengthitude so-as to blow the mind
+            </a>
+          </span>
+        </span>
+      </div>
+      <div
+        className="css-bcrrqv"
+      >
+        <span
+          className="css-1tz10dh"
+        >
+          Goodness me!
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots fullOverlay link 1`] = `
 <div
   data-css-claeju=""
