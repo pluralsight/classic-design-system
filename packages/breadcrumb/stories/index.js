@@ -22,7 +22,7 @@ storiesOf('disabled', module)
 storiesOf('as link', module)
   .addDecorator(themeDecorator(addons))
   .add('hrefs', _ => (
-    <Breadcrumb href='https://duckduckgo.com'>Click as link</Breadcrumb>
+    <Breadcrumb href="https://duckduckgo.com">Click as link</Breadcrumb>
   ))
 
 storiesOf('with onClick', module)

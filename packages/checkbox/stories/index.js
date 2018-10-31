@@ -11,13 +11,13 @@ const PaddingDecorator = storyFn => (
 )
 
 class StateDemo extends React.Component {
-  constructor () {
+  constructor() {
     super()
     this.state = { values: {} }
     this.handleCheck = this.handleCheck.bind(this)
   }
 
-  handleCheck (evt, checked, value, name) {
+  handleCheck(evt, checked, value, name) {
     if (checked) {
       this.setState({ values: { ...this.state.values, [name]: value } })
     } else {
@@ -26,7 +26,7 @@ class StateDemo extends React.Component {
     }
   }
 
-  render () {
+  render() {
     const colorNames = Object.keys(this.state.values)
     const checked = name => colorNames.indexOf(name) > -1
     return (
@@ -39,23 +39,23 @@ class StateDemo extends React.Component {
         </div>
         <Checkbox
           onCheck={this.handleCheck}
-          name='colorRed'
-          value='red'
-          label='Red'
+          name="colorRed"
+          value="red"
+          label="Red"
           checked={checked('colorRed')}
         />
         <Checkbox
           onCheck={this.handleCheck}
-          name='colorGreen'
-          value='green'
-          label='Green'
+          name="colorGreen"
+          value="green"
+          label="Green"
           checked={checked('colorGreen')}
         />
         <Checkbox
           onCheck={this.handleCheck}
-          name='colorBlue'
-          value='blue'
-          label='Blue'
+          name="colorBlue"
+          value="blue"
+          label="Blue"
           checked={checked('colorBlue')}
         />
       </div>
@@ -66,17 +66,17 @@ class StateDemo extends React.Component {
 storiesOf('Checkbox', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
-  .add('default', _ => <Checkbox name='colorRed' value='red' label='Red' />)
+  .add('default', _ => <Checkbox name="colorRed" value="red" label="Red" />)
   .add('checked', _ => (
-    <Checkbox checked name='colorRed' value='red' label='Red' />
+    <Checkbox checked name="colorRed" value="red" label="Red" />
   ))
   .add('error', _ => (
     <div>
-      <Checkbox checked error name='colorRed' value='red' label='Red' />
-      <Checkbox error name='colorRed' value='red' label='Red' />
+      <Checkbox checked error name="colorRed" value="red" label="Red" />
+      <Checkbox error name="colorRed" value="red" label="Red" />
     </div>
   ))
   .add('disabled', _ => (
-    <Checkbox disabled name='colorRed' value='red' label='Red' />
+    <Checkbox disabled name="colorRed" value="red" label="Red" />
   ))
   .add('state demo', _ => <StateDemo />)

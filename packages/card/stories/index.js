@@ -39,10 +39,10 @@ const ConstrainSizeDecorator = size => storyFn => (
   <div style={sizes[size]}>{storyFn()}</div>
 )
 
-const comboStory = storiesOf('combo', module)
+storiesOf('combo', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
-  .add('everything', _ => (
+  .add('everything locked', _ => (
     <Card
       title={
         <Card.TextLink>
@@ -102,8 +102,60 @@ const comboStory = storiesOf('combo', module)
       tag={<Card.Tag icon={<Icon id={Icon.ids.path} />}>Path</Card.Tag>}
     />
   ))
+  .add('everything focusable', _ => (
+    <Card
+      title={
+        <Card.TextLink>
+          <a href="http://duckduckgo.com?q=title">
+            <Card.Title>Should focus</Card.Title>
+          </a>
+        </Card.TextLink>
+      }
+      fullOverlay={
+        <Card.FullOverlayLink>
+          <a href="http://duckduckgo.com?q=overlay">
+            <Icon
+              size={Icon.sizes.large}
+              css={{ '& svg': { fill: core.colors.white } }}
+              id={Icon.ids.playCircle}
+            />
+          </a>
+        </Card.FullOverlayLink>
+      }
+      image={
+        <Card.ImageLink>
+          <a href="http://duckduckgo.com?q=image">
+            <Card.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+          </a>
+        </Card.ImageLink>
+      }
+      metadata1={[
+        <Card.TextLink>
+          <a href="http://duckduckgo.com/?q=jaketrent">focusable</a>
+        </Card.TextLink>
+      ]}
+      actionBar={[
+        <Card.Action
+          key="bookmark"
+          icon={<Icon id={Icon.ids.bookmark} />}
+          title="Bookmark"
+        />,
+        <Card.Action
+          key="gear"
+          icon={<Icon id={Icon.ids.gear} />}
+          title="Settings"
+        />,
+        <Card.Action
+          key="more"
+          icon={<Icon id={Icon.ids.more} />}
+          title="More"
+        />
+      ]}
+      tag={<Card.Tag icon={<Icon id={Icon.ids.path} />}>Path</Card.Tag>}
+    />
+  ))
 
-const titleStory = storiesOf('title', module)
+storiesOf('title', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('title wrapper', _ => (
@@ -135,7 +187,7 @@ const titleStory = storiesOf('title', module)
     />
   ))
 
-const imageStory = storiesOf('image', module)
+storiesOf('image', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('image only', _ => (
@@ -155,7 +207,7 @@ const imageStory = storiesOf('image', module)
     />
   ))
 
-const actionBarStory = storiesOf('actionBar', module)
+storiesOf('actionBar', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('single action', _ => (
@@ -198,7 +250,7 @@ const actionBarStory = storiesOf('actionBar', module)
     />
   ))
 
-const bonusBarStory = storiesOf('bonusBar', module)
+storiesOf('bonusBar', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('only text', _ => <CardWithDefaults bonusBar="Wow, I'm bonus." />)
@@ -208,7 +260,7 @@ const bonusBarStory = storiesOf('bonusBar', module)
     />
   ))
 
-const fullOverlayStory = storiesOf('fullOverlay', module)
+storiesOf('fullOverlay', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('text only', _ => (
@@ -281,7 +333,7 @@ Object.keys(Card.sizes).forEach(size =>
   )
 )
 
-const metaDataStory = storiesOf('metadata', module)
+storiesOf('metadata', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('single text', _ => <CardWithDefaults metadata1={['Jim Cooper']} />)
@@ -317,14 +369,14 @@ const metaDataStory = storiesOf('metadata', module)
     />
   ))
 
-const progressStory = storiesOf('progress', module)
+storiesOf('progress', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('none', _ => <CardWithDefaults progress={0} />)
   .add('some', _ => <CardWithDefaults progress={33.66667} />)
   .add('done', _ => <CardWithDefaults progress={100} />)
 
-const tagStory = storiesOf('tag', module)
+storiesOf('tag', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .addDecorator(themeDecorator(addons))
   .add('text only', _ => (

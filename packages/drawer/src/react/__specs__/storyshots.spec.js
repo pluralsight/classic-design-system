@@ -2,7 +2,7 @@ import initStoryshots, {
   snapshotWithOptions
 } from '@storybook/addon-storyshots'
 
-function createNodeMock (element) {
+function createNodeMock(element) {
   if (element.type === 'div') {
     return { style: {} }
   }
