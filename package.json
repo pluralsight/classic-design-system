@@ -68,6 +68,7 @@
   "devDependencies": {
     "@commitlint/cli": "^4.2.1",
     "@commitlint/config-angular": "^3.1.1",
+    "@commitlint/config-lerna-scopes": "^7.2.1",
     "@octopusdeploy/gulp-octo": "0.0.10",
     "babel-jest": "^20.0.1",
     "babel-plugin-glamorous-displayname": "^1.1.3",
