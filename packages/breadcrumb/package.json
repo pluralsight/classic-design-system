@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-breadcrumb",
-  "version": "1.2.12",
+  "version": "1.2.13",
   "description": "Design System component for breadcrumb ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -23,9 +23,9 @@
   },
   "keywords": [],
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^10.8.15",
-    "@pluralsight/ps-design-system-core": "^4.3.3",
-    "@pluralsight/ps-design-system-icon": "^8.13.0",
+    "@pluralsight/ps-design-system-button": "^10.8.16",
+    "@pluralsight/ps-design-system-core": "^4.3.4",
+    "@pluralsight/ps-design-system-icon": "^8.13.1",
     "prop-types": "^15.5.10"
   },
   "peerDependencies": {
@@ -34,8 +34,8 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.8.3",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.44",
+    "@pluralsight/ps-design-system-build": "^1.8.4",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.2.0",
     "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",

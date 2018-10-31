@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-switch",
-  "version": "1.5.9",
+  "version": "1.5.10",
   "description": "Design System component for switch ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -24,9 +24,9 @@
   },
   "keywords": [],
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.3.3",
-    "@pluralsight/ps-design-system-halo": "^1.0.0",
-    "@pluralsight/ps-design-system-theme": "^1.3.2",
+    "@pluralsight/ps-design-system-core": "^4.3.4",
+    "@pluralsight/ps-design-system-halo": "^1.1.0",
+    "@pluralsight/ps-design-system-theme": "^1.3.3",
     "polished": "^1.7.0",
     "prop-types": "^15.5.10"
   },
@@ -36,9 +36,9 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.8.3",
-    "@pluralsight/ps-design-system-storybook-addon-center": "^1.0.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.1.44",
+    "@pluralsight/ps-design-system-build": "^1.8.4",
+    "@pluralsight/ps-design-system-storybook-addon-center": "^1.0.1",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.2.0",
     "@storybook/addon-storyshots": "3.2.14",
     "@storybook/addons": "3.2.14",
     "@storybook/react": "3.2.14",

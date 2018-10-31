@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-storybook-addon-center",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Storybook addon for Centering",
   "main": "index.js",
   "keywords": [
