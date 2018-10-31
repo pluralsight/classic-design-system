@@ -27,7 +27,7 @@ test('click on disabled button with href does not trigger onClick', () => {
     <Button
       disabled
       onClick={onClick}
-      href='https://foo.com'
+      href="https://foo.com"
       icon={<Icon id={Icon.ids.check} />}
     >
       Can't Be Clicked
