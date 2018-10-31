@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.5.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.5.1...@pluralsight/ps-design-system-card@8.5.2) (2018-10-31)
+
+
+### Bug Fixes
+
+* **card:** add [focus-within] style for the polyfill-enacted styles ([d370ad3](https://github.com/pluralsight/design-system/commit/d370ad3))
+* **card:** fix broken snapshot ([57d28a1](https://github.com/pluralsight/design-system/commit/57d28a1))
+* **card:** make overlay items visible on focus ([d0fa4f3](https://github.com/pluralsight/design-system/commit/d0fa4f3)), closes [#259](https://github.com/pluralsight/design-system/issues/259)
+
+
+
+
+
 <a name="8.5.1"></a>
 ## [8.5.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@8.5.0...@pluralsight/ps-design-system-card@8.5.1) (2018-10-31)
 
