@@ -33,16 +33,15 @@ const styles = {
         ? css[`.psds-switch__thumb--checked.psds-switch__thumb--size-${size}`]
         : null)
     }),
-  label: ({ labelAlign, size, themeName }) => {
-    return glamor.css({
+  label: ({ labelAlign, size, themeName }) =>
+    glamor.css({
       ...css['.psds-switch__label'],
       ...css[`.psds-switch__label--size-${size}`],
       ...css[
         `.psds-switch__label--size-${size}.psds-switch__label--labelAlign-${labelAlign}`
       ],
       ...css[`.psds-switch__label.psds-theme--${themeName}`]
-    })
-  },
+    }),
   checkbox: _ => glamor.css(css['.psds-switch__checkbox'])
 }
 
@@ -50,10 +49,15 @@ class Switch extends React.Component {
   constructor(props) {
     super(props)
 
-    this.handleFocus = this.handleFocus.bind(this)
+    this.handleClick = this.handleClick.bind(this)
     this.handleBlur = this.handleBlur.bind(this)
+    this.handleFocus = this.handleFocus.bind(this)
 
     this.state = { isFocused: false }
+  }
+
+  handleClick() {
+    this.props.onClick(!this.props.checked)
   }
 
   handleFocus() {
@@ -65,29 +69,26 @@ class Switch extends React.Component {
   }
 
   render() {
-    const { isFocused } = this.state
-    const { children, error } = this.props
     const themeName = this.context.themeName || themeDefaultName
+    const { isFocused } = this.state
+
+    const { children, disabled, error } = this.props
     const allProps = { ...this.props, themeName }
 
     const switchProps = {
       ...styles.switch(allProps),
-      ...(allProps.onClick && !allProps.disabled
-        ? { onClick: _ => allProps.onClick(!allProps.checked) }
-        : null),
       ...(allProps.style ? { style: allProps.style } : null),
-      ...(allProps.className ? { className: allProps.className } : null)
+      ...(allProps.className ? { className: allProps.className } : null),
+      ...(!disabled && {
+        onBlur: this.handleBlur,
+        onClick: this.handleClick,
+        onFocus: this.handleFocus
+      }),
+      tabIndex: disabled ? '-1' : allProps.tabIndex || '0'
     }
 
     return (
-      <button
-        {...switchProps}
-        aria-checked={allProps.checked}
-        onBlur={this.handleBlur}
-        onFocus={this.handleFocus}
-        role="checkbox"
-        tabIndex={allProps.tabIndex || '0'}
-      >
+      <button {...switchProps} aria-checked={allProps.checked} role="checkbox">
         <Halo
           appearance={
             !isFocused && error
@@ -116,6 +117,15 @@ class Switch extends React.Component {
   }
 }
 
+Switch.defaultProps = {
+  checked: false,
+  color: vars.colors.orange,
+  disabled: false,
+  error: false,
+  labelAlign: vars.labelAligns.right,
+  size: vars.sizes.large
+}
+
 Switch.propTypes = {
   checked: PropTypes.bool,
   color: PropTypes.oneOf(Object.keys(vars.colors)),
@@ -125,14 +135,7 @@ Switch.propTypes = {
   onClick: PropTypes.func,
   size: PropTypes.oneOf(Object.keys(vars.sizes))
 }
-Switch.defaultProps = {
-  checked: false,
-  color: vars.colors.orange,
-  disabled: false,
-  error: false,
-  labelAlign: vars.labelAligns.right,
-  size: vars.sizes.large
-}
+
 Switch.contextTypes = {
   themeName: PropTypes.string
 }
