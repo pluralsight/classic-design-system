@@ -34,9 +34,9 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.8.5",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.2.1",
-    "@storybook/addon-storyshots": "^3.4.0",
-    "@storybook/addons": "^3.4.0",
-    "@storybook/react": "^3.4.0",
+    "@storybook/addon-storyshots": "^4.0.0",
+    "@storybook/addons": "^4.0.0",
+    "@storybook/react": "^4.0.0",
     "@tsuyoshiwada/htmltojsx": "0.0.4",
     "babel-cli": "^6.24.1",
     "babel-plugin-glamorous-displayname": "^1.1.3",

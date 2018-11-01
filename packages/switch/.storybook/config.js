@@ -7,10 +7,8 @@ import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 addDecorator(centerDecorator)
 addDecorator(themeDecorator(addons))
 
-const req = require.context('../stories', true, /\.story\.js$/)
-
 function loadStories() {
-  req.keys().forEach(filename => req(filename))
+  require('../stories')
 }
 
 configure(loadStories, module)
