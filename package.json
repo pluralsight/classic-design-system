@@ -28,7 +28,7 @@
   },
   "lint-staged": {
     "ignore": [
-      "scripts/create-component/package-template/*"
+      "scripts/create-component/package-template/**/*"
     ],
     "linters": {
       "**/*.js": [
