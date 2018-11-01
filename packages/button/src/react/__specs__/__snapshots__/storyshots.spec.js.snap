@@ -87,7 +87,7 @@ exports[`Storyshots as link with icon 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="pencil icon"
@@ -180,7 +180,7 @@ exports[`Storyshots disabled with icon 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="pencil icon"
@@ -216,7 +216,7 @@ exports[`Storyshots icon flat 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -252,7 +252,7 @@ exports[`Storyshots icon large 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -288,7 +288,7 @@ exports[`Storyshots icon left 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -324,7 +324,7 @@ exports[`Storyshots icon lone flat large 1`] = `
       data-css-y80vay=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -358,7 +358,7 @@ exports[`Storyshots icon lone flat medium 1`] = `
       data-css-y80vay=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -392,7 +392,7 @@ exports[`Storyshots icon lone flat small 1`] = `
       data-css-y80vay=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -426,7 +426,7 @@ exports[`Storyshots icon lone flat xSmall 1`] = `
       data-css-y80vay=""
     >
       <div
-        className="css-index--iconcontainer-1faf6pt"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="check icon"
@@ -460,7 +460,7 @@ exports[`Storyshots icon lone primary large 1`] = `
       data-css-y80vay=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -494,7 +494,7 @@ exports[`Storyshots icon lone primary medium 1`] = `
       data-css-y80vay=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -528,7 +528,7 @@ exports[`Storyshots icon lone primary small 1`] = `
       data-css-y80vay=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -562,7 +562,7 @@ exports[`Storyshots icon lone primary xSmall 1`] = `
       data-css-y80vay=""
     >
       <div
-        className="css-index--iconcontainer-1faf6pt"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="check icon"
@@ -596,7 +596,7 @@ exports[`Storyshots icon lone stroke large 1`] = `
       data-css-y80vay=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -630,7 +630,7 @@ exports[`Storyshots icon lone stroke medium 1`] = `
       data-css-y80vay=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -664,7 +664,7 @@ exports[`Storyshots icon lone stroke small 1`] = `
       data-css-y80vay=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -698,7 +698,7 @@ exports[`Storyshots icon lone stroke xSmall 1`] = `
       data-css-y80vay=""
     >
       <div
-        className="css-index--iconcontainer-1faf6pt"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="check icon"
@@ -732,7 +732,7 @@ exports[`Storyshots icon medium 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -768,7 +768,7 @@ exports[`Storyshots icon primary 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -804,7 +804,7 @@ exports[`Storyshots icon right 1`] = `
       data-css-8b1vtw=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -840,7 +840,7 @@ exports[`Storyshots icon small 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -876,7 +876,7 @@ exports[`Storyshots icon stroke 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -912,7 +912,7 @@ exports[`Storyshots icon xSmall 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1faf6pt"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="check icon"
@@ -948,7 +948,7 @@ exports[`Storyshots loading flat 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <span
           data-css-1ec065u=""
@@ -978,7 +978,7 @@ exports[`Storyshots loading large 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <span
           data-css-10bxom6=""
@@ -1007,7 +1007,7 @@ exports[`Storyshots loading lone icon 1`] = `
       data-css-y80vay=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <span
           data-css-10bxom6=""
@@ -1035,7 +1035,7 @@ exports[`Storyshots loading medium 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <span
           data-css-10bxom6=""
@@ -1082,7 +1082,7 @@ exports[`Storyshots loading primary 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <span
           data-css-10bxom6=""
@@ -1112,7 +1112,7 @@ exports[`Storyshots loading small 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <span
           data-css-10bxom6=""
@@ -1141,7 +1141,7 @@ exports[`Storyshots loading stroke 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <span
           data-css-1jut5p0=""
@@ -1171,7 +1171,7 @@ exports[`Storyshots loading xSmall 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1faf6pt"
+        className="css-12f5sv2"
       >
         <span
           data-css-10bxom6=""
@@ -1205,7 +1205,7 @@ exports[`Storyshots override styles with className 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -1245,7 +1245,7 @@ exports[`Storyshots override styles with style 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
@@ -1449,7 +1449,7 @@ exports[`Storyshots with onClick clicks once 1`] = `
       data-css-1mgd019=""
     >
       <div
-        className="css-index--iconcontainer-1o7wiin"
+        className="css-otejxm"
       >
         <svg
           aria-label="check icon"
