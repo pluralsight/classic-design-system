@@ -117,15 +117,6 @@ class Switch extends React.Component {
   }
 }
 
-Switch.defaultProps = {
-  checked: false,
-  color: vars.colors.orange,
-  disabled: false,
-  error: false,
-  labelAlign: vars.labelAligns.right,
-  size: vars.sizes.large
-}
-
 Switch.propTypes = {
   checked: PropTypes.bool,
   color: PropTypes.oneOf(Object.keys(vars.colors)),
@@ -134,6 +125,15 @@ Switch.propTypes = {
   labelAlign: PropTypes.oneOf(Object.keys(vars.labelAligns)),
   onClick: PropTypes.func,
   size: PropTypes.oneOf(Object.keys(vars.sizes))
+}
+
+Switch.defaultProps = {
+  checked: false,
+  color: vars.colors.orange,
+  disabled: false,
+  error: false,
+  labelAlign: vars.labelAligns.right,
+  size: vars.sizes.large
 }
 
 Switch.contextTypes = {
