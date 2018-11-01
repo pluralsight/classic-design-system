@@ -31,7 +31,7 @@ storiesOf('PageHeadingLayout', module)
       actions={[
         <Button>Wow, an action</Button>,
         <Link>
-          <a href='https://duckduckgo.com'>A link</a>
+          <a href="https://duckduckgo.com">A link</a>
         </Link>
       ]}
     >
@@ -43,7 +43,7 @@ storiesOf('PageHeadingLayout', module)
       actions={[
         <Button>Wow, an action</Button>,
         <Link>
-          <a href='https://duckduckgo.com'>A link</a>
+          <a href="https://duckduckgo.com">A link</a>
         </Link>
       ]}
       heading={
@@ -67,19 +67,19 @@ storiesOf('PageHeadingLayout', module)
       actions={[
         <Button>Wow, an action</Button>,
         <Link>
-          <a href='https://duckduckgo.com'>A link</a>
+          <a href="https://duckduckgo.com">A link</a>
         </Link>,
         <Button>Wow, an action</Button>,
         <Link>
-          <a href='https://duckduckgo.com'>A link</a>
+          <a href="https://duckduckgo.com">A link</a>
         </Link>,
         <Button>Wow, an action</Button>,
         <Link>
-          <a href='https://duckduckgo.com'>A link</a>
+          <a href="https://duckduckgo.com">A link</a>
         </Link>,
         <Button>Wow, an action</Button>,
         <Link>
-          <a href='https://duckduckgo.com'>A link</a>
+          <a href="https://duckduckgo.com">A link</a>
         </Link>
       ]}
     >
@@ -92,19 +92,19 @@ storiesOf('PageHeadingLayout', module)
       actions={[
         <Button>Wow, an action</Button>,
         <Link>
-          <a href='https://duckduckgo.com'>A link</a>
+          <a href="https://duckduckgo.com">A link</a>
         </Link>,
         <Button>Wow, an action</Button>,
         <Link>
-          <a href='https://duckduckgo.com'>A link</a>
+          <a href="https://duckduckgo.com">A link</a>
         </Link>,
         <Button>Wow, an action</Button>,
         <Link>
-          <a href='https://duckduckgo.com'>A link</a>
+          <a href="https://duckduckgo.com">A link</a>
         </Link>,
         <Button>Wow, an action</Button>,
         <Link>
-          <a href='https://duckduckgo.com'>A link</a>
+          <a href="https://duckduckgo.com">A link</a>
         </Link>
       ]}
     >

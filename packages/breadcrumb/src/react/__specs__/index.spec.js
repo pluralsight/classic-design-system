@@ -21,7 +21,7 @@ test('click on disabled button with href does not trigger onClick', () => {
     callCount += 1
   }
   const breadcrumb = mount(
-    <Breadcrumb disabled onClick={onClick} href='https://foo.com'>
+    <Breadcrumb disabled onClick={onClick} href="https://foo.com">
       Can't Be Clicked
     </Breadcrumb>
   )

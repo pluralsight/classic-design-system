@@ -67,10 +67,10 @@ disabledStory.add('with icon', _ => (
 
 storiesOf('as link', module)
   .add('default', _ => (
-    <Button href='https://duckduckgo.com'>Click as link</Button>
+    <Button href="https://duckduckgo.com">Click as link</Button>
   ))
   .add('with icon', _ => (
-    <Button href='https://duckduckgo.com' icon={<Icon id={Icon.ids.pencil} />}>
+    <Button href="https://duckduckgo.com" icon={<Icon id={Icon.ids.pencil} />}>
       Click as link
     </Button>
   ))
@@ -102,11 +102,11 @@ storiesOf('override styles', module)
 
 storiesOf('props pass through', module)
   .add('aria-expanded', _ => <Button aria-expanded>aria-expanded</Button>)
-  .add('role', _ => <Button role='link'>Role Link</Button>)
+  .add('role', _ => <Button role="link">Role Link</Button>)
   .add('data-something', _ => (
-    <Button data-something='wow'>Custom data attributes</Button>
+    <Button data-something="wow">Custom data attributes</Button>
   ))
-  .add('title', _ => <Button title='My caption'>With title</Button>)
+  .add('title', _ => <Button title="My caption">With title</Button>)
   .add('not supported', _ => (
     <Button onMouseOver={action('mouse over')}>Should not mouseover</Button>
   ))
@@ -135,22 +135,22 @@ loadingExample.add('lone icon', _ => (
 ))
 
 class SwitchToLoading extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = { loading: false }
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.timeout = setTimeout(_ => {
       this.setState({ loading: !this.state.loading })
     }, 500)
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     clearInterval(this.timeout)
   }
 
-  render () {
+  render() {
     return React.cloneElement(this.props.children, {
       loading: this.state.loading
     })

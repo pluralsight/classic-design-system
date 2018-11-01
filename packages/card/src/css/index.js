@@ -60,7 +60,7 @@ export default {
   '.psds-card__overlays:hover div': overlaysDivHover,
   '.psds-card__overlays:active div': overlaysDivHover,
 
-  //__image
+  // __image
   '.psds-actionmenu__image': {
     width: '100%',
     height: '100%',
@@ -104,6 +104,9 @@ export default {
     pointerEvents: 'none',
     opacity: 0
   },
+  '.psds-card__full-overlay:focus-within': {
+    opacity: 1
+  },
   '.psds-card__full-overlay--fullOverlayVisible': {
     opacity: 1
   },
@@ -138,6 +141,9 @@ export default {
   },
   '.psds-card__action-bar--fullOverlay.psds-card__action-bar--no-actionBarVisible': {
     background: 'none'
+  },
+  '.psds-card__action-bar:focus-within': {
+    opacity: 1
   },
   '.psds-card__action-bar--actionBarVisible': {
     opacity: 1

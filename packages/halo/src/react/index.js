@@ -8,7 +8,7 @@ import * as vars from '../vars'
 
 import withDefaultTheme from './with-default-theme'
 
-polyfillFocusWithin(document)
+if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
 const styles = {
   halo: props => {

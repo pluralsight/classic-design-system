@@ -1,11 +1,14 @@
 import glamorous from 'glamorous'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
+import polyfillFocusWithin from 'focus-within'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Shiitake from 'shiitake'
 
 import css from '../css'
 import * as vars from '../vars'
+
+if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
 const TextLink = glamorous.span({
   ...css['.psds-card__text-link'],
@@ -58,6 +61,10 @@ const renderImage = props => (props.image ? props.image : null)
 
 const FullOverlay = glamorous.div(
   css['.psds-card__full-overlay'],
+  {
+    ':focus-within': css['.psds-card__full-overlay:focus-within'],
+    '[focus-within]': css['.psds-card__full-overlay:focus-within']
+  },
   ({ fullOverlayVisible }) =>
     fullOverlayVisible
       ? css['.psds-card__full-overlay--fullOverlayVisible']
@@ -73,6 +80,10 @@ const renderFullOverlay = props =>
 
 const ActionBar = glamorous.div(
   css['.psds-card__action-bar'],
+  {
+    ':focus-within': css['.psds-card__action-bar:focus-within'],
+    '[focus-within]': css['.psds-card__action-bar:focus-within']
+  },
   ({ fullOverlay, actionBarVisible }) =>
     fullOverlay && !actionBarVisible
       ? css[
@@ -212,7 +223,7 @@ const renderMetaData = (props, metadata) =>
       {metadata.map((m, i) => [
         <MetadataDatum key={`datum${i}`}>{m}</MetadataDatum>,
         i < metadata.length - 1 && (
-          <MetadataDot aria-hidden={true} key={`dot${i}`}>
+          <MetadataDot aria-hidden key={`dot${i}`}>
             ·
           </MetadataDot>
         )
