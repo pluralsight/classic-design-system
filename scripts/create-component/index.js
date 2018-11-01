@@ -9,8 +9,6 @@ const copyTemplateDir = require('copy-template-dir')
 const { getPackages, toPackageName } = require('../utils/packages')
 const { smush, pascalize } = require('../utils/string')
 
-const MINIMUM_REACT_VERSION = '^16.2.0'
-
 const packagesDir = path.resolve(__dirname, '..', '..', 'packages')
 const templateDir = path.resolve(__dirname, 'package-template')
 
@@ -30,14 +28,9 @@ async function main() {
     [pkg.name]: pkg.version
   }))
 
-  const suggestedDependencies = [
-    'button',
-    'core',
-    'icon',
-    'normalize',
-    'theme',
-    'util'
-  ].map(toPackageName)
+  const suggestedDependencies = ['button', 'core', 'icon', 'theme'].map(
+    toPackageName
+  )
 
   const questions = [
     {
@@ -74,8 +67,7 @@ async function main() {
     componentName,
     folderName,
     folderPath,
-    packageName,
-    reactVersion: MINIMUM_REACT_VERSION
+    packageName
   }
 
   if (fs.existsSync(folderPath)) {
