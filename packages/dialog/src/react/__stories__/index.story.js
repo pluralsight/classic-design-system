@@ -1,18 +1,13 @@
-import addons from '@storybook/addons'
-import { action } from '@storybook/addon-actions'
-import Button from '@pluralsight/ps-design-system-button/react'
-import core from '@pluralsight/ps-design-system-core'
-import * as glamor from 'glamor'
 import React from 'react'
+
+import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
+
+import Button from '@pluralsight/ps-design-system-button/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Dialog from '../react'
+import Dialog from '..'
 
-const PaddingDecorator = storyFn => (
-  <div style={{ padding: core.layout.spacingXLarge }}>{storyFn()}</div>
-)
 const close = action('close')
 
 const Content = props => (
@@ -36,23 +31,19 @@ const Content = props => (
 )
 
 const tailPositionStory = storiesOf('tailPosition', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
-  .add('none', _ => <Content />)
+tailPositionStory.add('none', _ => <Content />)
+
 Object.keys(Dialog.tailPositions).forEach(tailPosition =>
   tailPositionStory.add(tailPosition, _ => (
     <Content tailPosition={tailPosition} />
   ))
 )
 
-const closeStory = storiesOf('onClose', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
-  .add('with onClose', _ => <Content onClose={close} />)
+storiesOf('onClose', module).add('with onClose', _ => (
+  <Content onClose={close} />
+))
 
-const modalStory = storiesOf('modal', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
+storiesOf('modal', module)
   .add('with close button', _ => <Content onClose={close} modal />)
   .add('no close button', _ => (
     <Content disableCloseButton onClose={close} modal />

@@ -1,9 +1,7 @@
-import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
-import { transparentize } from 'polished'
 
 import css from '../css'
 import * as vars from '../vars'
@@ -51,39 +49,59 @@ const CloseButton = props => (
   </button>
 )
 
-function handleKeyUp(props, evt) {
-  if (evt.keyCode === ESCAPE_KEYCODE) props.onClose(evt)
+class ModalOverlay extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.handleOverlayClick = this.handleOverlayClick.bind(this)
+  }
+
+  handleOverlayClick(evt) {
+    if (evt.target.id === MODAL_OVERLAY_ID) this.props.onClose(evt)
+  }
+
+  render() {
+    const { disableCloseOnOverlayClick } = this.props
+
+    return (
+      <div
+        {...styles.overlay(this.props)}
+        id={MODAL_OVERLAY_ID}
+        onClick={!disableCloseOnOverlayClick && this.handleOverlayClick}
+      >
+        {this.props.children}
+      </div>
+    )
+  }
 }
 
-function handleOverlayClick(props, evt) {
-  if (evt.target.id === MODAL_OVERLAY_ID) props.onClose(evt)
+ModalOverlay.propTypes = {
+  children: PropTypes.node,
+  onClose: PropTypes.func.isRequired
 }
-
-const ModalOverlay = props => (
-  <div
-    {...styles.overlay(props)}
-    id={MODAL_OVERLAY_ID}
-    onClick={
-      props.disableCloseOnOverlayClick
-        ? null
-        : handleOverlayClick.bind(this, props)
-    }
-  >
-    {props.children}
-  </div>
-)
 
 class Dialog extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.handleKeyUp = this.handleKeyUp.bind(this)
+  }
+
   componentDidMount() {
     if (this.el && !this.props.disableFocusOnMount) this.el.focus()
   }
+
+  handleKeyUp(evt) {
+    if (evt.keyCode === ESCAPE_KEYCODE) this.props.onClose(evt)
+  }
+
   render() {
     const { props } = this
     const dialogProps = {
       ...styles.dialog(props),
       ...(!this.props.disableCloseOnEscape &&
       typeof this.props.onClose === 'function'
-        ? { onKeyUp: handleKeyUp.bind(this, this.props) }
+        ? { onKeyUp: this.handleKeyUp }
         : null),
       ref: el => {
         this.el = el
