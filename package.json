@@ -14,7 +14,7 @@
     "bootstrap": "lerna bootstrap --hoist",
     "clean": "lerna clean",
     "commitmsg": "commitlint -e",
-    "component:create": "./scripts/create-component/index.js",
+    "component:create": "node ./scripts/create-component/index.js",
     "lint": "eslint --ignore-path .gitignore .",
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
