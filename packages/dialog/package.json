@@ -10,7 +10,7 @@
   "scripts": {
     "build": "run-s build:js build:css",
     "build-storybook": "build-storybook",
-    "build:css": "node build/css",
+    "build:css": "build-css",
     "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
@@ -37,10 +37,10 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.8.5",
-    "@pluralsight/ps-design-system-button": "^10.8.17",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.2.1",
-    "@pluralsight/ps-design-system-text": "^10.7.16",
+    "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-button": "*",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "*",
+    "@pluralsight/ps-design-system-text": "*",
     "@storybook/addon-actions": "^4.0.0",
     "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/addons": "^4.0.0",
