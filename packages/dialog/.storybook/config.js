@@ -12,7 +12,7 @@ const paddingDecorator = storyFn => (
 )
 
 addDecorator(paddingDecorator)
-// addDecorator(centerDecorator)
+addDecorator(centerDecorator)
 addDecorator(themeDecorator(addons))
 
 function loadStory() {
