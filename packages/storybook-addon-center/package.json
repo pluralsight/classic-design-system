@@ -14,7 +14,7 @@
     "react-storybook"
   ],
   "peerDependencies": {
-    "@storybook/addons": "^3.4.0",
+    "@storybook/addons": "^4.0.0",
     "react": ">=0.15.0 < 17.0.0"
   },
   "devDependencies": {

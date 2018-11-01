@@ -139,7 +139,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-loo18p=""
               >
                 <div
-                  className="css-index--iconcontainer-1o7wiin"
+                  className="css-otejxm"
                 >
                   <svg
                     aria-label="warning icon"
@@ -204,7 +204,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-cstzed=""
               >
                 <div
-                  className="css-index--iconcontainer-1o7wiin"
+                  className="css-otejxm"
                 >
                   <svg
                     aria-label="caret down icon"

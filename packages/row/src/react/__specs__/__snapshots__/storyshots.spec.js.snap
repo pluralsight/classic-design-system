@@ -5,32 +5,32 @@ exports[`Storyshots actionBar locked visible 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-qz0gm6"
+        className="css-1wgk747"
       />
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
       </div>
     </div>
     <div
-      className="css-index--actionbar-1lxbv5h"
+      className="css-okadky"
     >
       <button
-        className="css-index--actionbutton-6ov4bp"
+        className="css-178rs47"
       >
         <div
-          className="css-index--iconcontainer-1o7wiin"
+          className="css-otejxm"
         >
           <svg
             aria-label="bookmark icon"
@@ -54,25 +54,25 @@ exports[`Storyshots actionBar long title 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--words-1an9oxi"
+      className="css-1tiyrld"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
       </div>
     </div>
     <div
-      className="css-index--actionbar-lg6bgj"
+      className="css-elqoo0"
     >
       <button
-        className="css-index--actionbutton-6ov4bp"
+        className="css-178rs47"
       >
         <div
-          className="css-index--iconcontainer-1o7wiin"
+          className="css-otejxm"
         >
           <svg
             aria-label="bookmark icon"
@@ -96,32 +96,32 @@ exports[`Storyshots actionBar long title with image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-qz0gm6"
+        className="css-1wgk747"
       />
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
       </div>
     </div>
     <div
-      className="css-index--actionbar-lg6bgj"
+      className="css-elqoo0"
     >
       <button
-        className="css-index--actionbutton-6ov4bp"
+        className="css-178rs47"
       >
         <div
-          className="css-index--iconcontainer-1o7wiin"
+          className="css-otejxm"
         >
           <svg
             aria-label="bookmark icon"
@@ -145,25 +145,25 @@ exports[`Storyshots actionBar one action 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--words-1an9oxi"
+      className="css-1tiyrld"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Ready, Action, Bar!
       </div>
     </div>
     <div
-      className="css-index--actionbar-lg6bgj"
+      className="css-elqoo0"
     >
       <button
-        className="css-index--actionbutton-6ov4bp"
+        className="css-178rs47"
       >
         <div
-          className="css-index--iconcontainer-1o7wiin"
+          className="css-otejxm"
         >
           <svg
             aria-label="bookmark icon"
@@ -187,27 +187,27 @@ exports[`Storyshots combo everything 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <span
-        className="css-index--imagelink-fw1euf"
+        className="css-15yq56v"
       >
         <a
           href="http://google.com?query=image"
         >
           <div
-            className="css-index--imagediv-qz0gm6"
+            className="css-1wgk747"
           />
         </a>
       </span>
       <div
-        className="css-index--fulloverlay-r1aat9"
+        className="css-10pysoa"
       >
         <span
-          className="css-index--fulloverlaylinkspan-169kk5"
+          className="css-1fxa3fl"
           onBlur={[Function]}
           onFocus={[Function]}
         >
@@ -215,7 +215,7 @@ exports[`Storyshots combo everything 1`] = `
             href="http://google.com?query=overlay"
           >
             <div
-              className="css-index--iconcontainer-ijusmq"
+              className="css-195ztb"
             >
               <svg
                 aria-label="play circle icon"
@@ -233,13 +233,13 @@ exports[`Storyshots combo everything 1`] = `
       </div>
     </div>
     <div
-      className="css-index--words-qc8fen"
+      className="css-l77jv6"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         <span
-          className="css-index--textlink-s873co"
+          className="css-1kcq1x5"
         >
           <a
             href="http://google.com?query=title"
@@ -249,13 +249,13 @@ exports[`Storyshots combo everything 1`] = `
         </span>
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           <span
-            className="css-index--textlink-s873co"
+            className="css-1kcq1x5"
           >
             <a
               href="http://google.com/?query=jaketrent"
@@ -266,15 +266,15 @@ exports[`Storyshots combo everything 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="css-index--metadatadot-jgxppi"
+          className="css-kykfz1"
         >
           ·
         </span>
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           <span
-            className="css-index--textlink-s873co"
+            className="css-1kcq1x5"
           >
             <a
               href="http://google.com/?query=jaketrent"
@@ -285,15 +285,15 @@ exports[`Storyshots combo everything 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="css-index--metadatadot-jgxppi"
+          className="css-kykfz1"
         >
           ·
         </span>
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           <span
-            className="css-index--textlink-s873co"
+            className="css-1kcq1x5"
           >
             <a
               href="http://google.com/?query=jaketrent"
@@ -304,23 +304,23 @@ exports[`Storyshots combo everything 1`] = `
         </span>
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Goodness me!
         </span>
       </div>
     </div>
     <div
-      className="css-index--actionbar-yo5e5p"
+      className="css-1akhza9"
     >
       <button
-        className="css-index--actionbutton-6ov4bp"
+        className="css-178rs47"
       >
         <div
-          className="css-index--iconcontainer-1o7wiin"
+          className="css-otejxm"
         >
           <svg
             aria-label="bookmark icon"
@@ -335,10 +335,10 @@ exports[`Storyshots combo everything 1`] = `
         </div>
       </button>
       <button
-        className="css-index--actionbutton-6ov4bp"
+        className="css-178rs47"
       >
         <div
-          className="css-index--iconcontainer-1o7wiin"
+          className="css-otejxm"
         >
           <svg
             aria-label="gear icon"
@@ -353,10 +353,10 @@ exports[`Storyshots combo everything 1`] = `
         </div>
       </button>
       <button
-        className="css-index--actionbutton-6ov4bp"
+        className="css-178rs47"
       >
         <div
-          className="css-index--iconcontainer-1o7wiin"
+          className="css-otejxm"
         >
           <svg
             aria-label="more icon"
@@ -380,19 +380,19 @@ exports[`Storyshots fullOverlay element 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-qz0gm6"
+        className="css-1wgk747"
       />
       <div
-        className="css-index--fulloverlay-1grv38i"
+        className="css-4nxbcy"
       >
         <span
-          className="css-index--fulloverlaylinkspan-169kk5"
+          className="css-1fxa3fl"
           onBlur={[Function]}
           onFocus={[Function]}
         >
@@ -401,10 +401,10 @@ exports[`Storyshots fullOverlay element 1`] = `
       </div>
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Overlay This!
       </div>
@@ -418,19 +418,19 @@ exports[`Storyshots fullOverlay link 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-qz0gm6"
+        className="css-1wgk747"
       />
       <div
-        className="css-index--fulloverlay-1grv38i"
+        className="css-4nxbcy"
       >
         <span
-          className="css-index--fulloverlaylinkspan-169kk5"
+          className="css-1fxa3fl"
           onBlur={[Function]}
           onFocus={[Function]}
         >
@@ -443,10 +443,10 @@ exports[`Storyshots fullOverlay link 1`] = `
       </div>
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Overlay This!
       </div>
@@ -460,19 +460,19 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-qz0gm6"
+        className="css-1wgk747"
       />
       <div
-        className="css-index--fulloverlay-1grv38i"
+        className="css-4nxbcy"
       >
         <span
-          className="css-index--fulloverlaylinkspan-169kk5"
+          className="css-1fxa3fl"
           onBlur={[Function]}
           onFocus={[Function]}
         >
@@ -480,7 +480,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
             href="http://google.com?query=overlay"
           >
             <div
-              className="css-index--iconcontainer-ijusmq"
+              className="css-195ztb"
             >
               <svg
                 aria-label="play circle icon"
@@ -498,10 +498,10 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
       </div>
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Overlay This!
       </div>
@@ -515,27 +515,27 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <span
-        className="css-index--imagelink-fw1euf"
+        className="css-15yq56v"
       >
         <a
           href="http://google.com?query=image"
         >
           <div
-            className="css-index--imagediv-qz0gm6"
+            className="css-1wgk747"
           />
         </a>
       </span>
       <div
-        className="css-index--fulloverlay-1grv38i"
+        className="css-4nxbcy"
       >
         <span
-          className="css-index--fulloverlaylinkspan-169kk5"
+          className="css-1fxa3fl"
           onBlur={[Function]}
           onFocus={[Function]}
         >
@@ -543,7 +543,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
             href="http://google.com?query=overlay"
           >
             <div
-              className="css-index--iconcontainer-ijusmq"
+              className="css-195ztb"
             >
               <svg
                 aria-label="play circle icon"
@@ -561,10 +561,10 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
       </div>
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Both Icon and Image Have Separate Click Targets
       </div>
@@ -578,36 +578,36 @@ exports[`Storyshots image link 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <span
-        className="css-index--imagelink-fw1euf"
+        className="css-15yq56v"
       >
         <a
           href="http://google.com?query=image"
         >
           <div
-            className="css-index--imagediv-qz0gm6"
+            className="css-1wgk747"
           />
         </a>
       </span>
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Linked Image
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Jim Cooper
         </span>
@@ -622,21 +622,21 @@ exports[`Storyshots image no image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--words-1an9oxi"
+      className="css-1tiyrld"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         No Image
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Jim Cooper
         </span>
@@ -651,21 +651,21 @@ exports[`Storyshots image no image with overlay 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--words-1an9oxi"
+      className="css-1tiyrld"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         No Image, With Overlay (Not Shown)
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Jim Cooper
         </span>
@@ -680,28 +680,28 @@ exports[`Storyshots image small image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-aujp8i"
+        className="css-1p9odnb"
       />
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Small Image
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Jim Cooper
         </span>
@@ -716,28 +716,28 @@ exports[`Storyshots image tall image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-s8u1ib"
+        className="css-ykssfz"
       />
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Tall Image
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Jim Cooper
         </span>
@@ -752,28 +752,28 @@ exports[`Storyshots image wide image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-1meuky6"
+        className="css-40lz6d"
       />
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Wide Image
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Jim Cooper
         </span>
@@ -788,28 +788,28 @@ exports[`Storyshots image with image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-qz0gm6"
+        className="css-1wgk747"
       />
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         With Image
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Jim Cooper
         </span>
@@ -824,19 +824,19 @@ exports[`Storyshots image with image with overlay 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-qz0gm6"
+        className="css-1wgk747"
       />
       <div
-        className="css-index--fulloverlay-1grv38i"
+        className="css-4nxbcy"
       >
         <span
-          className="css-index--fulloverlaylinkspan-169kk5"
+          className="css-1fxa3fl"
           onBlur={[Function]}
           onFocus={[Function]}
         >
@@ -845,18 +845,18 @@ exports[`Storyshots image with image with overlay 1`] = `
       </div>
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         With Image
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Jim Cooper
         </span>
@@ -878,41 +878,41 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
     }
   >
     <div
-      className="css-index--row-1i6pawm"
+      className="css-oowi90"
     >
       <div
-        className="css-index--overlays-s3vwp9"
+        className="css-js3ti3"
       >
         <div
-          className="css-index--imagediv-qz0gm6"
+          className="css-1wgk747"
         />
       </div>
       <div
-        className="css-index--words-1o82hkz"
+        className="css-kxulf3"
       >
         <div
-          className="css-index--title-oqyh1m"
+          className="css-1e23mlv"
         >
           Course thing you do
         </div>
         <div
-          className="css-index--metadata-t5ipjx"
+          className="css-gmo5z6"
         >
           <span
-            className="css-index--metadatadatum-1fj7jah"
+            className="css-1kcrbi9"
           >
             1m 46s
           </span>
         </div>
       </div>
       <div
-        className="css-index--actionbar-1lxbv5h"
+        className="css-okadky"
       >
         <button
-          className="css-index--actionbutton-6ov4bp"
+          className="css-178rs47"
         >
           <div
-            className="css-index--iconcontainer-1o7wiin"
+            className="css-otejxm"
           >
             <svg
               aria-label="more icon"
@@ -929,41 +929,41 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
       </div>
     </div>
     <div
-      className="css-index--row-1i6pawm"
+      className="css-oowi90"
     >
       <div
-        className="css-index--overlays-s3vwp9"
+        className="css-js3ti3"
       >
         <div
-          className="css-index--imagediv-qz0gm6"
+          className="css-1wgk747"
         />
       </div>
       <div
-        className="css-index--words-1o82hkz"
+        className="css-kxulf3"
       >
         <div
-          className="css-index--title-oqyh1m"
+          className="css-1e23mlv"
         >
           Course thing you do
         </div>
         <div
-          className="css-index--metadata-t5ipjx"
+          className="css-gmo5z6"
         >
           <span
-            className="css-index--metadatadatum-1fj7jah"
+            className="css-1kcrbi9"
           >
             1m 46s
           </span>
         </div>
       </div>
       <div
-        className="css-index--actionbar-1lxbv5h"
+        className="css-okadky"
       >
         <button
-          className="css-index--actionbutton-6ov4bp"
+          className="css-178rs47"
         >
           <div
-            className="css-index--iconcontainer-1o7wiin"
+            className="css-otejxm"
           >
             <svg
               aria-label="more icon"
@@ -988,52 +988,52 @@ exports[`Storyshots in drawer medium 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--drawerroot-iqj7ys"
+    className="css-1fq8nx6"
   >
     <div
-      className="css-index--drawerbase-1eeyo50"
+      className="css-1oot5vc"
       onClick={[Function]}
     >
       <div
-        className="css-index--drawerpanelcontent-1suarfy"
+        className="css-euzj8"
       >
         <div
-          className="css-index--row-1i6pawm"
+          className="css-oowi90"
         >
           <div
-            className="css-index--overlays-s3vwp9"
+            className="css-js3ti3"
           >
             <div
-              className="css-index--imagediv-qz0gm6"
+              className="css-1wgk747"
             />
           </div>
           <div
-            className="css-index--words-1o82hkz"
+            className="css-kxulf3"
           >
             <div
-              className="css-index--title-oqyh1m"
+              className="css-1e23mlv"
             >
               Course thing you do
             </div>
             <div
-              className="css-index--metadata-t5ipjx"
+              className="css-gmo5z6"
             >
               <span
-                className="css-index--metadatadatum-1fj7jah"
+                className="css-1kcrbi9"
               >
                 1m 46s
               </span>
             </div>
           </div>
           <div
-            className="css-index--actionbar-1lxbv5h"
+            className="css-okadky"
           >
             <button
-              className="css-index--actionbutton-6ov4bp"
+              className="css-178rs47"
               onClick={[Function]}
             >
               <div
-                className="css-index--iconcontainer-1o7wiin"
+                className="css-otejxm"
               >
                 <svg
                   aria-label="more icon"
@@ -1051,18 +1051,18 @@ exports[`Storyshots in drawer medium 1`] = `
         </div>
       </div>
       <div
-        className="css-index--togglebuttoncontainer-1ai77lf"
+        className="css-qs2rg7"
       >
         <button
           aria-label="Expand"
-          className="css-index--togglebutton-fe7rcw"
+          className="css-xipskh"
           onClick={[Function]}
         >
           <div
-            className="css-index--rotatable-1564716"
+            className="css-1byjzqg"
           >
             <div
-              className="css-index--iconcontainer-1o7wiin"
+              className="css-otejxm"
             >
               <svg
                 aria-label="caret down icon"
@@ -1080,10 +1080,10 @@ exports[`Storyshots in drawer medium 1`] = `
       </div>
     </div>
     <div
-      className="css-index--drawerpanel-1f648v3"
+      className="css-1i2htk9"
     >
       <div
-        className="css-collapsible--container-fn9lpf"
+        className="css-1j3g0qd"
       >
         <div>
           some goodies in the drawer
@@ -1099,45 +1099,45 @@ exports[`Storyshots in drawer small 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--drawerroot-iqj7ys"
+    className="css-1fq8nx6"
   >
     <div
-      className="css-index--drawerbase-1eeyo50"
+      className="css-1oot5vc"
       onClick={[Function]}
     >
       <div
-        className="css-index--drawerpanelcontent-1suarfy"
+        className="css-euzj8"
       >
         <div
-          className="css-index--row-1i6pawm"
+          className="css-oowi90"
         >
           <div
-            className="css-index--words-1an9oxi"
+            className="css-1tiyrld"
           >
             <div
-              className="css-index--title-40hpo2"
+              className="css-1umif8x"
             >
               Course thing you do
             </div>
             <div
-              className="css-index--metadata-ztvbq4"
+              className="css-pi59ta"
             >
               <span
-                className="css-index--metadatadatum-1fj7jah"
+                className="css-1kcrbi9"
               >
                 1m 46s
               </span>
             </div>
           </div>
           <div
-            className="css-index--actionbar-1lxbv5h"
+            className="css-okadky"
           >
             <button
-              className="css-index--actionbutton-6ov4bp"
+              className="css-178rs47"
               onClick={[Function]}
             >
               <div
-                className="css-index--iconcontainer-1o7wiin"
+                className="css-otejxm"
               >
                 <svg
                   aria-label="more icon"
@@ -1155,18 +1155,18 @@ exports[`Storyshots in drawer small 1`] = `
         </div>
       </div>
       <div
-        className="css-index--togglebuttoncontainer-1ai77lf"
+        className="css-qs2rg7"
       >
         <button
           aria-label="Expand"
-          className="css-index--togglebutton-fe7rcw"
+          className="css-xipskh"
           onClick={[Function]}
         >
           <div
-            className="css-index--rotatable-1564716"
+            className="css-1byjzqg"
           >
             <div
-              className="css-index--iconcontainer-1o7wiin"
+              className="css-otejxm"
             >
               <svg
                 aria-label="caret down icon"
@@ -1184,10 +1184,10 @@ exports[`Storyshots in drawer small 1`] = `
       </div>
     </div>
     <div
-      className="css-index--drawerpanel-1f648v3"
+      className="css-1i2htk9"
     >
       <div
-        className="css-collapsible--container-fn9lpf"
+        className="css-1j3g0qd"
       >
         <div>
           some goodies in the drawer
@@ -1203,24 +1203,24 @@ exports[`Storyshots metadata link 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--words-1an9oxi"
+      className="css-1tiyrld"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Meta With Links
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           <span
-            className="css-index--textlink-s873co"
+            className="css-1kcq1x5"
           >
             <a
               href="http://google.com/?query=jaketrent"
@@ -1240,24 +1240,24 @@ exports[`Storyshots metadata long links 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--words-1an9oxi"
+      className="css-1tiyrld"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Meta With Links
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           <span
-            className="css-index--textlink-s873co"
+            className="css-1kcq1x5"
           >
             <a
               href="http://google.com/?query=jaketrent"
@@ -1268,15 +1268,15 @@ exports[`Storyshots metadata long links 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="css-index--metadatadot-jgxppi"
+          className="css-kykfz1"
         >
           ·
         </span>
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           <span
-            className="css-index--textlink-s873co"
+            className="css-1kcq1x5"
           >
             <a
               href="http://google.com/?query=jaketrent"
@@ -1287,15 +1287,15 @@ exports[`Storyshots metadata long links 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="css-index--metadatadot-jgxppi"
+          className="css-kykfz1"
         >
           ·
         </span>
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           <span
-            className="css-index--textlink-s873co"
+            className="css-1kcq1x5"
           >
             <a
               href="http://google.com/?query=jaketrent"
@@ -1315,43 +1315,43 @@ exports[`Storyshots metadata long strings 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--words-1an9oxi"
+      className="css-1tiyrld"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         The Longest Strings in El Mundo
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           It is impossible to count the grand contributions of this great author
         </span>
         <span
           aria-hidden={true}
-          className="css-index--metadatadot-jgxppi"
+          className="css-kykfz1"
         >
           ·
         </span>
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Levels heretofore unknown in the battle for truth and knowledge
         </span>
         <span
           aria-hidden={true}
-          className="css-index--metadatadot-jgxppi"
+          className="css-kykfz1"
         >
           ·
         </span>
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           A length of such amazing lengthitude so-as to blow the mind
         </span>
@@ -1366,50 +1366,50 @@ exports[`Storyshots metadata long strings with image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-qz0gm6"
+        className="css-1wgk747"
       />
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Long Strings AND Los Imagereo
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           It is impossible to count the grand contributions of this great author
         </span>
         <span
           aria-hidden={true}
-          className="css-index--metadatadot-jgxppi"
+          className="css-kykfz1"
         >
           ·
         </span>
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Levels heretofore unknown in the battle for truth and knowledge
         </span>
         <span
           aria-hidden={true}
-          className="css-index--metadatadot-jgxppi"
+          className="css-kykfz1"
         >
           ·
         </span>
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           A length of such amazing lengthitude so-as to blow the mind
         </span>
@@ -1424,21 +1424,21 @@ exports[`Storyshots metadata string 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--words-1an9oxi"
+      className="css-1tiyrld"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Meta with Strings
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Jake Trent
         </span>
@@ -1453,50 +1453,50 @@ exports[`Storyshots metadata super long first string 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-qz0gm6"
+        className="css-1wgk747"
       />
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Long Strings AND Los Imagereo
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           This string is so long, it should be illegal.This string is so long, it should be illegal.This string is so long, it should be illegal.   This string is so long, it should be illegal. 
         </span>
         <span
           aria-hidden={true}
-          className="css-index--metadatadot-jgxppi"
+          className="css-kykfz1"
         >
           ·
         </span>
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           This is still visible
         </span>
         <span
           aria-hidden={true}
-          className="css-index--metadatadot-jgxppi"
+          className="css-kykfz1"
         >
           ·
         </span>
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           And so is this
         </span>
@@ -1511,52 +1511,52 @@ exports[`Storyshots metadata two lines 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--words-1an9oxi"
+      className="css-1tiyrld"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         Meta With Links
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Jake Trent
         </span>
         <span
           aria-hidden={true}
-          className="css-index--metadatadot-jgxppi"
+          className="css-kykfz1"
         >
           ·
         </span>
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           School of the Internet
         </span>
         <span
           aria-hidden={true}
-          className="css-index--metadatadot-jgxppi"
+          className="css-kykfz1"
         >
           ·
         </span>
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Blasted Good
         </span>
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Certified GMO-free
         </span>
@@ -1571,20 +1571,20 @@ exports[`Storyshots progress 0 progress 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-qz0gm6"
+        className="css-1wgk747"
       />
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         0 progress
       </div>
@@ -1598,28 +1598,28 @@ exports[`Storyshots progress 66.6667 progress 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-qz0gm6"
+        className="css-1wgk747"
       />
       <div
-        className="css-index--progress-d58tbk"
+        className="css-268zju"
       >
         <div
           aria-label="67% complete"
-          className="css-index--progressbar-sn51g7"
+          className="css-h2kagm"
         />
       </div>
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         66.6667 progress
       </div>
@@ -1633,28 +1633,28 @@ exports[`Storyshots progress 100 progress 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-qz0gm6"
+        className="css-1wgk747"
       />
       <div
-        className="css-index--progress-d58tbk"
+        className="css-268zju"
       >
         <div
           aria-label="100% complete"
-          className="css-index--progressbar-1wv9odo"
+          className="css-1qb9ko2"
         />
       </div>
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         100 progress
       </div>
@@ -1668,13 +1668,13 @@ exports[`Storyshots progress no image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--words-1an9oxi"
+      className="css-1tiyrld"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         No image, with progress (not shown)
       </div>
@@ -1688,28 +1688,28 @@ exports[`Storyshots size medium 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-qz0gm6"
+        className="css-1wgk747"
       />
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         medium Row
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Jim Cooper
         </span>
@@ -1724,21 +1724,21 @@ exports[`Storyshots size small 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--words-1an9oxi"
+      className="css-1tiyrld"
     >
       <div
-        className="css-index--title-40hpo2"
+        className="css-1umif8x"
       >
         small Row
       </div>
       <div
-        className="css-index--metadata-ztvbq4"
+        className="css-pi59ta"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Jim Cooper
         </span>
@@ -1753,16 +1753,16 @@ exports[`Storyshots title link 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--words-1an9oxi"
+      className="css-1tiyrld"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         <span
-          className="css-index--textlink-s873co"
+          className="css-1kcq1x5"
         >
           <a
             href="http://google.com"
@@ -1781,28 +1781,28 @@ exports[`Storyshots title medium long title 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--overlays-s3vwp9"
+      className="css-js3ti3"
     >
       <div
-        className="css-index--imagediv-qz0gm6"
+        className="css-1wgk747"
       />
     </div>
     <div
-      className="css-index--words-1o82hkz"
+      className="css-kxulf3"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         medium With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
       </div>
       <div
-        className="css-index--metadata-t5ipjx"
+        className="css-gmo5z6"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Jim Cooper
         </span>
@@ -1817,21 +1817,21 @@ exports[`Storyshots title small long title 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--words-1an9oxi"
+      className="css-1tiyrld"
     >
       <div
-        className="css-index--title-40hpo2"
+        className="css-1umif8x"
       >
         small With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
       </div>
       <div
-        className="css-index--metadata-ztvbq4"
+        className="css-pi59ta"
       >
         <span
-          className="css-index--metadatadatum-1fj7jah"
+          className="css-1kcrbi9"
         >
           Jim Cooper
         </span>
@@ -1846,13 +1846,13 @@ exports[`Storyshots title string 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-index--row-1i6pawm"
+    className="css-oowi90"
   >
     <div
-      className="css-index--words-1an9oxi"
+      className="css-1tiyrld"
     >
       <div
-        className="css-index--title-oqyh1m"
+        className="css-1e23mlv"
       >
         A String Title
       </div>
