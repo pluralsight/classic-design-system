@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots FocusLock default 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+        "textAlign": "center",
+      }
+    }
+  >
+    <div
+      onKeyDown={[Function]}
+    >
+      <p>
+        <a
+          href="#"
+        >
+          a link
+        </a>
+        <a
+          href="#"
+        >
+          a link
+        </a>
+        <a
+          href="#"
+        >
+          a link
+        </a>
+        <a
+          href="#"
+        >
+          a link
+        </a>
+        <a
+          href="#"
+        >
+          a link
+        </a>
+        <a
+          href="#"
+        >
+          a link
+        </a>
+        <a
+          href="#"
+        >
+          a link
+        </a>
+        <a
+          href="#"
+        >
+          a link
+        </a>
+        <a
+          href="#"
+        >
+          a link
+        </a>
+        <a
+          href="#"
+        >
+          a link
+        </a>
+        <a
+          href="#"
+        >
+          a link
+        </a>
+        <a
+          href="#"
+        >
+          a link
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+`;
