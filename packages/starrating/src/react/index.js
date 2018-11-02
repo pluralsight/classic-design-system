@@ -1,3 +1,6 @@
+// TODO Add function to generate ICons
+// // someFunc = ({fill, id}) =  <Icon fill={fill}/>
+
 import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
@@ -66,62 +69,43 @@ class StarRating extends React.Component {
   generateIcons() {
     const themeName = this.context.themeName || themeDefaultName
     const { hoverIndex } = this.state
-    const { value, theme } = this.props
+    const { value } = this.props
 
     const halfIntRoundedValue = Math.floor(value * 2) / 2
 
     let fullStars = Math.floor(halfIntRoundedValue)
     let halfStars = Math.floor(halfIntRoundedValue) !== halfIntRoundedValue
 
+    const isHovering = hoverIndex !== null
+
     const themedIcons = themeToIcons(themeName)
+
     return new Array(TOTAL_STARS).fill(undefined).map((_, index) => {
-      // Determine if isHovering
-      // if hovering is happening,
-      //    Determine the fill based on the current theme, and then get id
-      // if hovering is not happening,
-      //    if the star we're on should be filled, fill it
-      //    else if we have a half star, return the half star component
-      //        for that theme
-      //    else return a empty star
-
-      ////////////////////////////
-      // if(hovering){
-      //   if(shouldStarBeFilled){
-      //     fill = getFillForHoveredStar('theme')
-      //     id = getIdForHoveredStar()
-      //   } else {
-      //     fill = getFillForEmptyStar('theme')
-      //     id = getIdForEmptyStar('theme')
-      //   }
-      // }
-
-      /////////////////////////////
-
-      let fill, id
-
-      // replace logic in 77 with `const isHovered = hoverIndex !== null
-      if (hoverIndex !== null) {
-        // TODO: Replace lines 78-82 with a method
-        if (index <= hoverIndex) {
-          ;({ fill, id } = themedIcons.hover)
-        } else {
-          ;({ fill, id } = themedIcons.empty)
-        }
+      let fill
+      let id
+      if (isHovering) {
+        const shouldFillStar = index <= hoverIndex
+        fill = shouldFillStar ? themedIcons.hover.fill : themedIcons.empty.fill
+        id = shouldFillStar ? themedIcons.hover.id : themedIcons.empty.id
       } else {
-        // TODO: Replace lines 84-95 with a method
-        if (index < fullStars) {
-          ;({ fill, id } = themedIcons.full)
-        } else if (index === fullStars && halfStars) {
+        const shouldFillFullStar = index < fullStars
+        const shouldFillHalfStar = index === fullStars && halfStars
+
+        if (shouldFillFullStar) {
+          fill = themedIcons.full.fill
+          id = themedIcons.full.id
+        } else if (shouldFillHalfStar) {
           return themeName === themeDefaultName ? (
             <DarkHalfStar key={index} />
           ) : (
             <LightHalfStar key={index} />
           )
         } else {
-          ;({ fill, id } = themedIcons.empty)
+          fill = themedIcons.empty.fill
+          id = themedIcons.empty.id
         }
       }
-      // someFunc = ({fill, id}) =  <Icon fill={fill}/>
+
       return (
         <Icon
           key={index}
