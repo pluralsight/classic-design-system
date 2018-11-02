@@ -6,6 +6,9 @@
   "repository": "pluralsight/design-system",
   "main": "index.js",
   "module": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "run-s build:js build:css",
     "build:css": "build-css",

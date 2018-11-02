@@ -63,7 +63,6 @@ Halo.defaultProps = {
   appearance: vars.appearances.default,
   gapSize: vars.gapSizes.default,
   shape: vars.shapes.default,
-  className: '',
   visible: true,
   visibleOnFocus: false
 }

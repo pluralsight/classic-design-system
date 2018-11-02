@@ -5,8 +5,7 @@ exports[`Storyshots Halo/appearances default 1`] = `
   data-css-claeju=""
 >
   <div
-    className=""
-    data-css-11pbqae=""
+    data-css-f0dui=""
   >
     <div>
       default
@@ -20,8 +19,7 @@ exports[`Storyshots Halo/appearances error 1`] = `
   data-css-claeju=""
 >
   <div
-    className=""
-    data-css-1vyecfy=""
+    data-css-dahlzh=""
   >
     <div>
       error
@@ -35,8 +33,7 @@ exports[`Storyshots Halo/gapSizes default 1`] = `
   data-css-claeju=""
 >
   <div
-    className=""
-    data-css-11pbqae=""
+    data-css-f0dui=""
   >
     <div>
       default
@@ -50,8 +47,7 @@ exports[`Storyshots Halo/gapSizes small 1`] = `
   data-css-claeju=""
 >
   <div
-    className=""
-    data-css-11pbqae=""
+    data-css-f0dui=""
   >
     <div>
       small
@@ -65,8 +61,7 @@ exports[`Storyshots Halo/shapes default 1`] = `
   data-css-claeju=""
 >
   <div
-    className=""
-    data-css-11pbqae=""
+    data-css-f0dui=""
   >
     <div
       shape="default"
@@ -82,8 +77,7 @@ exports[`Storyshots Halo/shapes pill 1`] = `
   data-css-claeju=""
 >
   <div
-    className=""
-    data-css-ls8pec=""
+    data-css-3xkq2r=""
   >
     <div
       shape="pill"
@@ -99,8 +93,7 @@ exports[`Storyshots Halo/visible false 1`] = `
   data-css-claeju=""
 >
   <div
-    className=""
-    data-css-y7s1d0=""
+    data-css-cxffx0=""
   >
     <div>
       not visible
@@ -114,8 +107,7 @@ exports[`Storyshots Halo/visible true 1`] = `
   data-css-claeju=""
 >
   <div
-    className=""
-    data-css-11pbqae=""
+    data-css-f0dui=""
   >
     <div>
       visible
@@ -129,8 +121,7 @@ exports[`Storyshots Halo/visibleOnFocus enabled 1`] = `
   data-css-claeju=""
 >
   <div
-    className=""
-    data-css-f0o9km=""
+    data-css-qkinv7=""
   >
     <div>
       visible when focused
