@@ -5,7 +5,8 @@ export const BASE_CLASSNAME = '.psds-halo'
 export default {
   [BASE_CLASSNAME]: {
     position: 'relative',
-    flex: 1
+    flex: 1,
+    lineHeight: 0
   },
   [`${BASE_CLASSNAME}:after`]: {
     content: ' ',
