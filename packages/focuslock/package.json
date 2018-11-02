@@ -17,6 +17,9 @@
     "test:updateSnapshot": "npm run test -- --updateSnapshot",
     "test:watch": "npm run test -- --watchAll"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "jest": {
     "setupFiles": [
       "raf/polyfill",
