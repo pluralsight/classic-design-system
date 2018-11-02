@@ -1,21 +1,13 @@
-// TODO Add function to generate ICons
-// // someFunc = ({fill, id}) =  <Icon fill={fill}/>
-
 import core from '@pluralsight/ps-design-system-core'
-import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { transparentize } from 'polished'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/react'
+import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import DarkHalfStar from './half-star-dark'
 import LightHalfStar from './half-star-light'
 
 import css from '../css'
-import * as vars from '../vars'
 
 const TOTAL_STARS = 5
 
@@ -39,35 +31,57 @@ const themeToIcons = themeName => {
   }
 }
 
-const styles = {
-  button: {
-    border: 0,
-    backgroundColor: 'rgba(0,0,0,0)',
-    padding: 0,
-    margin: 0
-  },
-  screenReaderContent: {
-    clip: 'rect(1px, 1px, 1px, 1px)',
-    position: 'absolute',
-    clipPath: 'polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px)',
-    whiteSpace: 'nowrap',
-    height: '1px',
-    width: '1px',
-    overflow: 'hidden'
-  }
-}
-
 class StarRating extends React.Component {
-  constructor(props) {
+  constructor(props, context) {
     super(props)
-
+    const themeName = context.themeName || themeDefaultName
     this.state = {
-      hoverIndex: null
+      hoverIndex: null,
+      themedIcons: themeToIcons(themeName),
+      themeName
     }
   }
 
+  makeIcon({ id, fill, index }) {
+    return (
+      <Icon
+        key={index}
+        css={{ '> svg': { fill } }}
+        id={id}
+        size={Icon.sizes.xsmall}
+        role="presentation"
+      />
+    )
+  }
+
+  getNonHoverStateIcon(index, shouldFillFullStar, shouldFillHalfStar) {
+    const {
+      themedIcons: { full, empty },
+      themeName
+    } = this.state
+    if (shouldFillFullStar) {
+      return this.makeIcon({ ...full, index })
+    } else if (shouldFillHalfStar) {
+      return themeName === themeDefaultName ? (
+        <DarkHalfStar key={index} />
+      ) : (
+        <LightHalfStar key={index} />
+      )
+    } else {
+      return this.makeIcon({ ...empty, index })
+    }
+  }
+
+  getHoverStateIcon(index, shouldFillFullStar) {
+    const {
+      themedIcons: { hover, empty }
+    } = this.state
+    const fill = shouldFillFullStar ? hover.fill : empty.fill
+    const id = shouldFillFullStar ? hover.id : empty.id
+    return this.makeIcon({ id, fill, index })
+  }
+
   generateIcons() {
-    const themeName = this.context.themeName || themeDefaultName
     const { hoverIndex } = this.state
     const { value } = this.props
 
@@ -78,43 +92,22 @@ class StarRating extends React.Component {
 
     const isHovering = hoverIndex !== null
 
-    const themedIcons = themeToIcons(themeName)
-
     return new Array(TOTAL_STARS).fill(undefined).map((_, index) => {
-      let fill
-      let id
+      let icon
+
       if (isHovering) {
-        const shouldFillStar = index <= hoverIndex
-        fill = shouldFillStar ? themedIcons.hover.fill : themedIcons.empty.fill
-        id = shouldFillStar ? themedIcons.hover.id : themedIcons.empty.id
+        const shouldFillFullStar = index <= hoverIndex
+        icon = this.getHoverStateIcon(index, shouldFillFullStar)
       } else {
         const shouldFillFullStar = index < fullStars
         const shouldFillHalfStar = index === fullStars && halfStars
-
-        if (shouldFillFullStar) {
-          fill = themedIcons.full.fill
-          id = themedIcons.full.id
-        } else if (shouldFillHalfStar) {
-          return themeName === themeDefaultName ? (
-            <DarkHalfStar key={index} />
-          ) : (
-            <LightHalfStar key={index} />
-          )
-        } else {
-          fill = themedIcons.empty.fill
-          id = themedIcons.empty.id
-        }
+        icon = this.getNonHoverStateIcon(
+          index,
+          shouldFillFullStar,
+          shouldFillHalfStar
+        )
       }
-
-      return (
-        <Icon
-          key={index}
-          css={{ '> svg': { fill } }}
-          id={id}
-          size={Icon.sizes.xsmall}
-          role="presentation"
-        />
-      )
+      return icon
     })
   }
 
@@ -130,7 +123,7 @@ class StarRating extends React.Component {
         <button
           key={index}
           tabIndex={-1}
-          style={styles.button}
+          style={css.button}
           onClick={() => onClick(ratingValue)}
           onMouseOver={() => this.setState({ hoverIndex: index })}
           onMouseLeave={() => this.setState({ hoverIndex: null })}
@@ -151,9 +144,9 @@ class StarRating extends React.Component {
       <div>
         {onClick && (
           <label>
-            <span style={styles.screenReaderContent}>Rate</span>
+            <span style={css.screenReaderContent}>Rate</span>
             <input
-              style={styles.screenReaderContent}
+              style={css.screenReaderContent}
               type="range"
               onChange={event => onClick(event.target.value)}
               min={1}
@@ -162,9 +155,7 @@ class StarRating extends React.Component {
             />
           </label>
         )}
-        <span
-          style={styles.screenReaderContent}
-        >{`This is rated ${value}`}</span>
+        <span style={css.screenReaderContent}>{`This is rated ${value}`}</span>
         {StarIcons}
       </div>
     )
