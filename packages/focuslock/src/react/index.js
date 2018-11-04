@@ -65,22 +65,24 @@ class FocusLock extends React.Component {
     const firstNode = this.focusableNodes[0]
     const lastNode = this.focusableNodes[this.focusableNodes.length - 1]
 
-    if (activeElement === lastNode) {
-      firstNode.focus()
-      event.preventDefault()
-    } else if (withShiftKey && activeElement === firstNode) {
+    if (activeElement === firstNode && withShiftKey) {
       lastNode.focus()
+      event.preventDefault()
+    } else if (activeElement === lastNode && !withShiftKey) {
+      firstNode.focus()
       event.preventDefault()
     }
   }
 
   render() {
-    const { as: Tag, children } = this.props
+    const { as: Tag, autofocus, returnFocus, ...filteredProps } = this.props
 
     return (
-      <Tag ref={this.bindElement} onKeyDown={this.handleKeyDown}>
-        {children}
-      </Tag>
+      <Tag
+        ref={this.bindElement}
+        onKeyDown={this.handleKeyDown}
+        {...filteredProps}
+      />
     )
   }
 }
