@@ -1,6 +1,8 @@
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
+
+import FocusLock from '@pluralsight/ps-design-system-focuslock/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
@@ -12,6 +14,7 @@ const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
 const fade = glamor.css.keyframes(
   css[`@keyframes psds-dialog__keyframes__fade`]
 )
+
 const styles = {
   dialog: ({ modal, onClose, tailPosition }) =>
     glamor.css({
@@ -87,32 +90,29 @@ class Dialog extends React.Component {
     this.handleKeyUp = this.handleKeyUp.bind(this)
   }
 
-  componentDidMount() {
-    if (this.el && !this.props.disableFocusOnMount) this.el.focus()
-  }
-
   handleKeyUp(evt) {
     if (evt.keyCode === ESCAPE_KEYCODE) this.props.onClose(evt)
   }
 
   render() {
     const { props } = this
+
+    const hasFocusLock = !!props.onClose
+
     const dialogProps = {
       ...styles.dialog(props),
-      ...(!this.props.disableCloseOnEscape &&
-      typeof this.props.onClose === 'function'
+      ...(!props.disableCloseOnEscape && typeof props.onClose === 'function'
         ? { onKeyUp: this.handleKeyUp }
         : null),
-      ref: el => {
-        this.el = el
-        if (typeof props.innerRef === 'function') props.innerRef(el)
-      },
-      tabIndex: -1,
       ...(props.style ? { style: props.style } : null),
-      ...(props.className ? { className: props.className } : null)
+      ...(props.className ? { className: props.className } : null),
+      ...(hasFocusLock && { autofocus: !props.disableFocusOnMount })
     }
+
+    const Container = hasFocusLock ? FocusLock : 'div'
+
     return (
-      <div {...dialogProps}>
+      <Container {...dialogProps}>
         <Theme name={Theme.names.light}>
           <div>
             {!props.disableCloseButton &&
@@ -122,23 +122,19 @@ class Dialog extends React.Component {
             {props.children}
           </div>
         </Theme>
-      </div>
+      </Container>
     )
   }
 }
 
-class DialogWrapper extends React.Component {
-  render() {
-    const { props } = this
-    return props.modal ? (
-      <ModalOverlay {...props}>
-        <Dialog {...props} />
-      </ModalOverlay>
-    ) : (
+const DialogWrapper = props =>
+  props.modal ? (
+    <ModalOverlay {...props}>
       <Dialog {...props} />
-    )
-  }
-}
+    </ModalOverlay>
+  ) : (
+    <Dialog {...props} />
+  )
 
 DialogWrapper.propTypes = {
   disableCloseButton: PropTypes.bool,
@@ -149,6 +145,7 @@ DialogWrapper.propTypes = {
   tailPosition: PropTypes.oneOf(Object.keys(vars.tailPositions)),
   onClose: PropTypes.func
 }
+
 DialogWrapper.defaultProps = {
   disableCloseButton: false,
   disableCloseOnEscape: false,

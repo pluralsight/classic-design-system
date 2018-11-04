@@ -1,3 +1,11 @@
-import initStoryshots from '@storybook/addon-storyshots'
+import initStoryshots, {
+  snapshotWithOptions
+} from '@storybook/addon-storyshots'
 
-initStoryshots()
+jest.mock('@pluralsight/ps-design-system-storybook-addon-center')
+
+const createNodeMock = el => document.createElement('div')
+
+initStoryshots({
+  test: snapshotWithOptions({ createNodeMock })
+})
