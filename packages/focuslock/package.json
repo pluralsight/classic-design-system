@@ -36,6 +36,7 @@
     "@pluralsight/ps-design-system-build": "*",
     "@pluralsight/ps-design-system-storybook-addon-center": "*",
     "@pluralsight/ps-design-system-storybook-addon-theme": "*",
+    "@pluralsight/ps-design-system-text": "*",
     "@storybook/addon-actions": "^3.4.0",
     "@storybook/addon-storyshots": "^3.4.0",
     "@storybook/addons": "^3.4.0",

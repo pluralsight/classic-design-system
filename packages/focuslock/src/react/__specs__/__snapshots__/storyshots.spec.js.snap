@@ -5,79 +5,37 @@ exports[`Storyshots FocusLock default 1`] = `
   data-css-claeju=""
 >
   <div
+    onKeyDown={[Function]}
     style={
       Object {
         "color": "white",
+        "margin": 100,
         "textAlign": "center",
       }
     }
   >
-    <div
-      onKeyDown={[Function]}
+    <p
+      data-css-145tgfu=""
     >
-      <p>
-        <a
-          href="#"
-        >
-          a link
-        </a>
-        <a
-          href="#"
-        >
-          a link
-        </a>
-        <a
-          href="#"
-        >
-          a link
-        </a>
-        <a
-          href="#"
-        >
-          a link
-        </a>
-        <a
-          href="#"
-        >
-          a link
-        </a>
-        <a
-          href="#"
-        >
-          a link
-        </a>
-        <a
-          href="#"
-        >
-          a link
-        </a>
-        <a
-          href="#"
-        >
-          a link
-        </a>
-        <a
-          href="#"
-        >
-          a link
-        </a>
-        <a
-          href="#"
-        >
-          a link
-        </a>
-        <a
-          href="#"
-        >
-          a link
-        </a>
-        <a
-          href="#"
-        >
-          a link
-        </a>
-      </p>
-    </div>
+      <a
+        href="#"
+      >
+        Tri-tip pork chop jowl
+      </a>
+      , spare ribs shankle sirloin kevin. Ham hock tri-tip jowl, 
+      <a
+        href="#"
+      >
+        shank venison ham
+      </a>
+       andouille rump salami swine sausage turducken beef ribs cupim jerky. Chuck swine shankle short loin tri-tip beef ribs leberkas andouille spare ribs shoulder buffalo ground round tongue 
+      <a
+        href="#"
+      >
+        sirloin bresaola
+      </a>
+      . Kielbasa rump buffalo shoulder chicken beef brisket. Spare ribs drumstick tail cupim bacon filet mignon.
+    </p>
   </div>
 </div>
 `;
