@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots modal no click underlay 1`] = `
+exports[`Storyshots modal no click overlay 1`] = `
 <div
   data-css-claeju=""
 >

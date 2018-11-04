@@ -60,17 +60,16 @@ class ModalOverlay extends React.Component {
   }
 
   handleOverlayClick(evt) {
+    if (this.props.disableCloseOnOverlayClick) return
     if (evt.target.id === MODAL_OVERLAY_ID) this.props.onClose(evt)
   }
 
   render() {
-    const { disableCloseOnOverlayClick } = this.props
-
     return (
       <div
         {...styles.overlay(this.props)}
         id={MODAL_OVERLAY_ID}
-        onClick={!disableCloseOnOverlayClick && this.handleOverlayClick}
+        onClick={this.handleOverlayClick}
       >
         {this.props.children}
       </div>

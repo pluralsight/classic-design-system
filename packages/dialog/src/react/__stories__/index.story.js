@@ -125,10 +125,10 @@ storiesOf('modal', module)
       {({ close }) => <Content disableCloseButton onClose={close} modal />}
     </ModalStory>
   ))
-  .add('no click underlay', _ => (
+  .add('no click overlay', _ => (
     <ModalStory>
       {({ close }) => (
-        <Content disableCloseOnUnderlayClick onClose={close} modal />
+        <Content disableCloseOnOverlayClick onClose={close} modal />
       )}
     </ModalStory>
   ))
