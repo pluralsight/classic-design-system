@@ -104,9 +104,12 @@ class Dialog extends React.Component {
       ...(props.style ? { style: props.style } : null),
       ...(props.className ? { className: props.className } : null)
     }
-
     return (
-      <FocusManager autofocus={!props.disableFocusOnMount} {...dialogProps}>
+      <FocusManager
+        autofocus={!props.disableFocusOnMount}
+        trapped={!!props.model || !!props.onClose}
+        {...dialogProps}
+      >
         <Theme name={Theme.names.light}>
           <div>
             {!props.disableCloseButton &&
