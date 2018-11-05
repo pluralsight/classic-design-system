@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FocusManager default 1`] = `
+exports[`Storyshots FocusManager not trapped 1`] = `
 <div
   data-css-claeju=""
 >
@@ -28,7 +28,51 @@ exports[`Storyshots FocusManager default 1`] = `
       >
         shank venison ham
       </a>
-       andouille rump salami swine sausage turducken beef ribs cupim jerky. Chuck swine shankle short loin tri-tip beef ribs leberkas andouille spare ribs shoulder buffalo ground round tongue 
+       
+      andouille rump salami swine sausage turducken beef ribs cupim jerky. Chuck swine shankle short loin tri-tip beef ribs leberkas andouille spare ribs shoulder buffalo ground round tongue
+       
+      <a
+        href="#"
+      >
+        sirloin bresaola
+      </a>
+      . Kielbasa rump buffalo shoulder chicken beef brisket. Spare ribs drumstick tail cupim bacon filet mignon.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots FocusManager trapped 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    onKeyDown={[Function]}
+    style={
+      Object {
+        "color": "white",
+        "margin": 100,
+        "textAlign": "center",
+      }
+    }
+  >
+    <p
+      data-css-145tgfu=""
+    >
+      <a
+        href="#"
+      >
+        Tri-tip pork chop jowl
+      </a>
+      , spare ribs shankle sirloin kevin. Ham hock tri-tip jowl, 
+      <a
+        href="#"
+      >
+        shank venison ham
+      </a>
+       
+      andouille rump salami swine sausage turducken beef ribs cupim jerky. Chuck swine shankle short loin tri-tip beef ribs leberkas andouille spare ribs shoulder buffalo ground round tongue
+       
       <a
         href="#"
       >

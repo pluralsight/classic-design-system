@@ -28,9 +28,9 @@ describe('FocusManager', () => {
   it('has defaultProps', () => {
     expect(FocusManager.defaultProps).toMatchInlineSnapshot(`
 Object {
-  "as": "div",
   "autofocus": true,
   "returnFocus": true,
+  "trapped": true,
 }
 `)
   })
@@ -56,7 +56,7 @@ Object {
 
         const el = wrapper.find('a[href]').first()
 
-        expect(el.getDOMNode()).toEqual(document.activeElement)
+        expect(document.activeElement).toEqual(el.getDOMNode())
       })
     })
 
@@ -80,7 +80,7 @@ Object {
         firstEl.getDOMNode().focus()
         firstEl.simulate('keydown', { key: 'Tab', shiftKey: true })
 
-        expect(lastEl.getDOMNode()).toEqual(document.activeElement)
+        expect(document.activeElement).toEqual(lastEl.getDOMNode())
       })
     })
 
@@ -94,7 +94,7 @@ Object {
         lastEl.getDOMNode().focus()
         lastEl.simulate('keydown', { key: 'Tab' })
 
-        expect(firstEl.getDOMNode()).toEqual(document.activeElement)
+        expect(document.activeElement).toEqual(firstEl.getDOMNode())
       })
     })
   })

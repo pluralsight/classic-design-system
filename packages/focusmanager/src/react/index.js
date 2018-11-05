@@ -58,7 +58,7 @@ class FocusManager extends React.Component {
     const isTab = event.key === 'Tab'
     const withShiftKey = event.shiftKey
 
-    if (!isTab) return
+    if (!isTab || !this.props.trapped) return
 
     const { activeElement } = document
 
@@ -75,10 +75,10 @@ class FocusManager extends React.Component {
   }
 
   render() {
-    const { as: Tag, autofocus, returnFocus, ...filteredProps } = this.props
+    const { autofocus, returnFocus, trapped, ...filteredProps } = this.props
 
     return (
-      <Tag
+      <div
         ref={this.bindElement}
         onKeyDown={this.handleKeyDown}
         {...filteredProps}
@@ -88,16 +88,16 @@ class FocusManager extends React.Component {
 }
 
 FocusManager.propTypes = {
-  as: PropTypes.oneOf(['div']).isRequired,
-  autofocus: PropTypes.bool.isRequired,
+  autofocus: PropTypes.bool,
   children: PropTypes.node.isRequired,
-  returnFocus: PropTypes.bool.isRequired
+  returnFocus: PropTypes.bool,
+  trapped: PropTypes.bool
 }
 
 FocusManager.defaultProps = {
-  as: 'div',
   autofocus: true,
-  returnFocus: true
+  returnFocus: true,
+  trapped: true
 }
 
 export default FocusManager
