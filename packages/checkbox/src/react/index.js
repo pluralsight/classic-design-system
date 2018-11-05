@@ -95,11 +95,8 @@ class Checkbox extends React.Component {
         {...styles.checkbox(allProps)}
       >
         <Halo
-          appearance={
-            allProps.error ? Halo.appearances.error : Halo.appearances.default
-          }
+          error={allProps.error}
           gapSize={Halo.gapSizes.small}
-          visible={allProps.error}
           visibleOnFocus={!allProps.disabled}
         >
           <div

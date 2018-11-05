@@ -17,7 +17,7 @@ exports[`Storyshots Checkbox checked 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-xxzqzs=""
+        data-css-1dfl16l=""
       >
         <div
           aria-checked={true}
@@ -75,7 +75,7 @@ exports[`Storyshots Checkbox default 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-xxzqzs=""
+        data-css-1dfl16l=""
       >
         <div
           aria-checked={false}
@@ -211,7 +211,7 @@ exports[`Storyshots Checkbox error 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          data-css-1fmlnky=""
+          data-css-mlz2qu=""
         >
           <div
             aria-checked={true}
@@ -254,7 +254,7 @@ exports[`Storyshots Checkbox error 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          data-css-1fmlnky=""
+          data-css-mlz2qu=""
         >
           <div
             aria-checked={false}
@@ -312,7 +312,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          data-css-xxzqzs=""
+          data-css-1dfl16l=""
         >
           <div
             aria-checked={false}
@@ -342,7 +342,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          data-css-xxzqzs=""
+          data-css-1dfl16l=""
         >
           <div
             aria-checked={false}
@@ -372,7 +372,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          data-css-xxzqzs=""
+          data-css-1dfl16l=""
         >
           <div
             aria-checked={false}
