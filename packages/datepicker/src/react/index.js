@@ -173,6 +173,12 @@ class DatePicker extends React.Component {
     this.handleCalendarSelect = this.handleCalendarSelect.bind(this)
     this.handleIconClick = this.handleIconClick.bind(this)
   }
+  componentWillReceiveProps(nextProps) {
+    if (this.props.value === nextProps.value) return
+
+    const { mm, dd, yyyy } = parseDate(nextProps.value)
+    this.setState({ mm, dd, yyyy })
+  }
   handleFocus() {
     this.setState({ isFocused: true })
   }
@@ -198,10 +204,7 @@ class DatePicker extends React.Component {
       yyyy: /^\d{0,4}$/
     }
     if (updateRules[name] && updateRules[name].test(value)) {
-      const { mm, dd, yyyy } = this.state
-      this.setState({
-        [name]: value
-      })
+      this.setState({ [name]: value })
     }
   }
   handleSubFieldFocus() {
@@ -334,7 +337,7 @@ class DatePicker extends React.Component {
 }
 
 DatePicker.propTypes = {
-  appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
+  appearance: PropTypes.oneOf(Object.values(vars.appearances)),
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   label: PropTypes.node,
