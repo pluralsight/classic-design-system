@@ -17,11 +17,11 @@ export default {
     pointerEvents: 'none',
     visibility: 'hidden'
   },
-  [`${BASE_CLASSNAME}--error:after`]: {
-    borderColor: core.colors.red
-  },
   [`${BASE_CLASSNAME}--visible:after`]: {
     visibility: 'visible'
+  },
+  [`${BASE_CLASSNAME}--error:after`]: {
+    borderColor: core.colors.red
   },
   [`${BASE_CLASSNAME}--visible-on-focus:focus-within:after`]: {
     visibility: 'visible',
