@@ -63,10 +63,10 @@ storiesOf('value', module)
   .add('updated value, w/ initial', _ => <StateDemo value="3/15/1995" />)
 
 const appearanceStory = storiesOf('appearance', module)
-Object.keys(DatePicker.appearances).forEach(appearance =>
+Object.values(DatePicker.appearances).forEach(appearance =>
   appearanceStory.add(appearance, _ => <DatePicker appearance={appearance} />)
 )
-Object.keys(DatePicker.appearances).forEach(appearance =>
+Object.values(DatePicker.appearances).forEach(appearance =>
   appearanceStory.add(`${appearance} w/ error`, _ => (
     <DatePicker appearance={appearance} error label="Problem field" />
   ))
