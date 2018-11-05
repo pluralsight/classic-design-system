@@ -14,8 +14,7 @@ exports[`Storyshots checked false 1`] = `
     tabIndex="0"
   >
     <div
-      className=""
-      data-css-qiyc6u=""
+      data-css-e234i4=""
     >
       <div
         data-css-1rncajx=""
@@ -55,8 +54,7 @@ exports[`Storyshots checked true 1`] = `
     tabIndex="0"
   >
     <div
-      className=""
-      data-css-qiyc6u=""
+      data-css-e234i4=""
     >
       <div
         data-css-1t8mno4=""
@@ -96,8 +94,7 @@ exports[`Storyshots click large toggles 1`] = `
     tabIndex="0"
   >
     <div
-      className=""
-      data-css-qiyc6u=""
+      data-css-e234i4=""
     >
       <div
         data-css-1rncajx=""
@@ -132,8 +129,7 @@ exports[`Storyshots click small toggles 1`] = `
     tabIndex="0"
   >
     <div
-      className=""
-      data-css-qiyc6u=""
+      data-css-e234i4=""
     >
       <div
         data-css-1m9fpc5=""
@@ -168,8 +164,7 @@ exports[`Storyshots color green 1`] = `
     tabIndex="0"
   >
     <div
-      className=""
-      data-css-qiyc6u=""
+      data-css-e234i4=""
     >
       <div
         data-css-1ecl5dy=""
@@ -209,8 +204,7 @@ exports[`Storyshots color orange 1`] = `
     tabIndex="0"
   >
     <div
-      className=""
-      data-css-qiyc6u=""
+      data-css-e234i4=""
     >
       <div
         data-css-1t8mno4=""
@@ -250,8 +244,7 @@ exports[`Storyshots disabled false 1`] = `
     tabIndex="0"
   >
     <div
-      className=""
-      data-css-qiyc6u=""
+      data-css-e234i4=""
     >
       <div
         data-css-1rncajx=""
@@ -283,8 +276,7 @@ exports[`Storyshots disabled true 1`] = `
     tabIndex="-1"
   >
     <div
-      className=""
-      data-css-qiyc6u=""
+      data-css-e234i4=""
     >
       <div
         data-css-1rncajx=""
@@ -319,8 +311,7 @@ exports[`Storyshots error false 1`] = `
     tabIndex="0"
   >
     <div
-      className=""
-      data-css-qiyc6u=""
+      data-css-e234i4=""
     >
       <div
         data-css-1rncajx=""
@@ -355,8 +346,7 @@ exports[`Storyshots error true 1`] = `
     tabIndex="0"
   >
     <div
-      className=""
-      data-css-82mhn6=""
+      data-css-joe2xj=""
     >
       <div
         data-css-1rncajx=""
@@ -393,8 +383,7 @@ exports[`Storyshots error true w/ disabled 1`] = `
     tabIndex="-1"
   >
     <div
-      className=""
-      data-css-82mhn6=""
+      data-css-joe2xj=""
     >
       <div
         data-css-1rncajx=""
@@ -434,8 +423,7 @@ exports[`Storyshots label large left 1`] = `
     tabIndex="0"
   >
     <div
-      className=""
-      data-css-qiyc6u=""
+      data-css-e234i4=""
     >
       <div
         data-css-1rncajx=""
@@ -475,8 +463,7 @@ exports[`Storyshots label large right 1`] = `
     tabIndex="0"
   >
     <div
-      className=""
-      data-css-qiyc6u=""
+      data-css-e234i4=""
     >
       <div
         data-css-1rncajx=""
@@ -516,8 +503,7 @@ exports[`Storyshots label small left 1`] = `
     tabIndex="0"
   >
     <div
-      className=""
-      data-css-qiyc6u=""
+      data-css-e234i4=""
     >
       <div
         data-css-1m9fpc5=""
@@ -557,8 +543,7 @@ exports[`Storyshots label small right 1`] = `
     tabIndex="0"
   >
     <div
-      className=""
-      data-css-qiyc6u=""
+      data-css-e234i4=""
     >
       <div
         data-css-1m9fpc5=""
@@ -598,8 +583,7 @@ exports[`Storyshots size large 1`] = `
     tabIndex="0"
   >
     <div
-      className=""
-      data-css-qiyc6u=""
+      data-css-e234i4=""
     >
       <div
         data-css-1rncajx=""
@@ -639,8 +623,7 @@ exports[`Storyshots size small 1`] = `
     tabIndex="0"
   >
     <div
-      className=""
-      data-css-qiyc6u=""
+      data-css-e234i4=""
     >
       <div
         data-css-1m9fpc5=""
