@@ -12,19 +12,15 @@ import {
   getNextMonthYear,
   getPrevMonthYear,
   getMonthName,
-  getFirstDayOfWeekForMonth,
-  forceValidDay,
-  forceValidMonth,
-  forceValidYear
+  getFirstDayOfWeekForMonth
 } from '../js'
-import * as vars from '../vars'
 
 const slide = glamor.css.keyframes(
   css['@keyframes psds-date-picker__calendar__keyframes__slide']
 )
 const styles = {
   calendar: _ => glamor.css(css['.psds-date-picker__calendar']({ slide })),
-  days: ({}) => glamor.css(css['.psds-date-picker__calendar__days']),
+  days: _ => glamor.css(css['.psds-date-picker__calendar__days']),
   day: ({ isSelected }) =>
     glamor.css(
       css['.psds-date-picker__calendar__day'],
@@ -37,12 +33,12 @@ const styles = {
       }
     ),
   skippedDay: _ => glamor.css(css['.psds-date-picker__calendar__skipped-day']),
-  weekHeading: ({}) =>
+  weekHeading: _ =>
     glamor.css(css['.psds-date-picker__calendar__week-heading']),
-  weekHeadingDay: ({}) =>
+  weekHeadingDay: _ =>
     glamor.css(css['.psds-date-picker__calendar__week-heading__day']),
-  switcher: ({}) => glamor.css(css['.psds-date-picker__calendar__switcher']),
-  switcherMonth: ({}) =>
+  switcher: _ => glamor.css(css['.psds-date-picker__calendar__switcher']),
+  switcherMonth: _ =>
     glamor.css(css['.psds-date-picker__calendar__switcher__month'])
 }
 

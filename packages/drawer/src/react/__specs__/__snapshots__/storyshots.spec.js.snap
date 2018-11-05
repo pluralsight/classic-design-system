@@ -2,19 +2,7 @@
 
 exports[`Storyshots drawer controlled 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -27,7 +15,7 @@ exports[`Storyshots drawer controlled 1`] = `
   >
     <div>
       <button
-        data-css-gl46pt=""
+        data-css-gukh6t=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
@@ -98,19 +86,7 @@ exports[`Storyshots drawer controlled 1`] = `
 
 exports[`Storyshots drawer default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -180,19 +156,7 @@ exports[`Storyshots drawer default 1`] = `
 
 exports[`Storyshots drawer row component with actions 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -361,19 +325,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
 
 exports[`Storyshots drawer stack of drawers 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -545,19 +497,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
 
 exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -735,19 +675,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
 
 exports[`Storyshots drawer using custom aria label 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -817,19 +745,7 @@ exports[`Storyshots drawer using custom aria label 1`] = `
 
 exports[`Storyshots drawer using onToggle prop 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -902,19 +818,7 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
 
 exports[`Storyshots drawer using startOpen prop 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -986,19 +890,7 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
 
 exports[`Storyshots drawer with row component 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={

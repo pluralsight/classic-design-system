@@ -2,7 +2,7 @@ import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import React from 'react'
-import { storiesOf, addDecorator } from '@storybook/react'
+import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import Text from '../react'
@@ -150,7 +150,9 @@ const code = storiesOf('Code', module)
   .addDecorator(themeDecorator(addons))
   .add('empty', () => (
     <Text.P>
-      before|<Text.Code />|after
+      before|
+      <Text.Code />
+      |after
     </Text.P>
   ))
   .add('standalone', () => <Text.Code>inline code</Text.Code>)

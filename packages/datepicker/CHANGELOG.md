@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@0.4.14...@pluralsight/ps-design-system-datepicker@0.4.15) (2018-10-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
+## [0.4.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@0.4.13...@pluralsight/ps-design-system-datepicker@0.4.14) (2018-10-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
+<a name="0.4.13"></a>
+## [0.4.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@0.4.12...@pluralsight/ps-design-system-datepicker@0.4.13) (2018-10-31)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+<a name="0.4.12"></a>
+## [0.4.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@0.4.11...@pluralsight/ps-design-system-datepicker@0.4.12) (2018-10-18)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+<a name="0.4.10"></a>
+## [0.4.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@0.4.9...@pluralsight/ps-design-system-datepicker@0.4.10) (2018-10-17)
+
+
+### Bug Fixes
+
+* **datepicker:** add missing button dep ([4ee0b17](https://github.com/pluralsight/design-system/commit/4ee0b17))
+
+
+
+
 <a name="0.4.9"></a>
 ## [0.4.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@0.4.8...@pluralsight/ps-design-system-datepicker@0.4.9) (2018-10-10)
 

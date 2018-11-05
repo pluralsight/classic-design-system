@@ -1,7 +1,5 @@
-import { action } from '@storybook/addon-actions'
 import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
@@ -18,6 +16,7 @@ class StateDemo extends React.Component {
     this.state = { values: {} }
     this.handleCheck = this.handleCheck.bind(this)
   }
+
   handleCheck(evt, checked, value, name) {
     if (checked) {
       this.setState({ values: { ...this.state.values, [name]: value } })
@@ -26,6 +25,7 @@ class StateDemo extends React.Component {
       this.setState({ values })
     }
   }
+
   render() {
     const colorNames = Object.keys(this.state.values)
     const checked = name => colorNames.indexOf(name) > -1
@@ -63,7 +63,7 @@ class StateDemo extends React.Component {
   }
 }
 
-const someStory = storiesOf('Checkbox', module)
+storiesOf('Checkbox', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('default', _ => <Checkbox name="colorRed" value="red" label="Red" />)

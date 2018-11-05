@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Halo/appearances default 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-f0dui=""
+  >
+    <div>
+      default
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/appearances error 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-dahlzh=""
+  >
+    <div>
+      error
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/gapSizes default 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-f0dui=""
+  >
+    <div>
+      default
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/gapSizes small 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-f0dui=""
+  >
+    <div>
+      small
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/shapes default 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-f0dui=""
+  >
+    <div
+      shape="default"
+    >
+      default
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/shapes pill 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-3xkq2r=""
+  >
+    <div
+      shape="pill"
+    >
+      pill
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/visible false 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-cxffx0=""
+  >
+    <div>
+      not visible
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/visible true 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-f0dui=""
+  >
+    <div>
+      visible
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/visibleOnFocus enabled 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-qkinv7=""
+  >
+    <div>
+      visible when focused
+    </div>
+  </div>
+</div>
+`;

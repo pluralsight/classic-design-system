@@ -2,19 +2,7 @@
 
 exports[`Storyshots modal no click underlay 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -51,14 +39,13 @@ exports[`Storyshots modal no click underlay 1`] = `
             </svg>
           </button>
           <h1
-            className={undefined}
             data-css-7941k5=""
             size="large"
           >
             Wowzers, a Dialog
           </h1>
           <p
-            data-css-j1md1p=""
+            data-css-15w0yq1=""
           >
             Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
           </p>
@@ -70,12 +57,12 @@ exports[`Storyshots modal no click underlay 1`] = `
             }
           >
             <button
-              data-css-bzft25=""
+              data-css-gukh6t=""
               disabled={false}
               style={Object {}}
             >
               <span
-                className="css-1en8fmq"
+                data-css-15b13by=""
               >
                 Primary CTA
               </span>
@@ -90,19 +77,7 @@ exports[`Storyshots modal no click underlay 1`] = `
 
 exports[`Storyshots modal no close button 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -123,14 +98,13 @@ exports[`Storyshots modal no close button 1`] = `
       >
         <div>
           <h1
-            className={undefined}
             data-css-7941k5=""
             size="large"
           >
             Wowzers, a Dialog
           </h1>
           <p
-            data-css-j1md1p=""
+            data-css-15w0yq1=""
           >
             Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
           </p>
@@ -142,12 +116,12 @@ exports[`Storyshots modal no close button 1`] = `
             }
           >
             <button
-              data-css-bzft25=""
+              data-css-gukh6t=""
               disabled={false}
               style={Object {}}
             >
               <span
-                className="css-1en8fmq"
+                data-css-15b13by=""
               >
                 Primary CTA
               </span>
@@ -162,19 +136,7 @@ exports[`Storyshots modal no close button 1`] = `
 
 exports[`Storyshots modal no escape key 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -210,14 +172,13 @@ exports[`Storyshots modal no escape key 1`] = `
             </svg>
           </button>
           <h1
-            className={undefined}
             data-css-7941k5=""
             size="large"
           >
             Wowzers, a Dialog
           </h1>
           <p
-            data-css-j1md1p=""
+            data-css-15w0yq1=""
           >
             Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
           </p>
@@ -229,12 +190,12 @@ exports[`Storyshots modal no escape key 1`] = `
             }
           >
             <button
-              data-css-bzft25=""
+              data-css-gukh6t=""
               disabled={false}
               style={Object {}}
             >
               <span
-                className="css-1en8fmq"
+                data-css-15b13by=""
               >
                 Primary CTA
               </span>
@@ -249,19 +210,7 @@ exports[`Storyshots modal no escape key 1`] = `
 
 exports[`Storyshots modal with close button 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -298,14 +247,13 @@ exports[`Storyshots modal with close button 1`] = `
             </svg>
           </button>
           <h1
-            className={undefined}
             data-css-7941k5=""
             size="large"
           >
             Wowzers, a Dialog
           </h1>
           <p
-            data-css-j1md1p=""
+            data-css-15w0yq1=""
           >
             Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
           </p>
@@ -317,12 +265,12 @@ exports[`Storyshots modal with close button 1`] = `
             }
           >
             <button
-              data-css-bzft25=""
+              data-css-gukh6t=""
               disabled={false}
               style={Object {}}
             >
               <span
-                className="css-1en8fmq"
+                data-css-15b13by=""
               >
                 Primary CTA
               </span>
@@ -337,19 +285,7 @@ exports[`Storyshots modal with close button 1`] = `
 
 exports[`Storyshots onClose with onClose 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -381,14 +317,13 @@ exports[`Storyshots onClose with onClose 1`] = `
           </svg>
         </button>
         <h1
-          className={undefined}
           data-css-7941k5=""
           size="large"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-j1md1p=""
+          data-css-15w0yq1=""
         >
           Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
         </p>
@@ -400,12 +335,12 @@ exports[`Storyshots onClose with onClose 1`] = `
           }
         >
           <button
-            data-css-bzft25=""
+            data-css-gukh6t=""
             disabled={false}
             style={Object {}}
           >
             <span
-              className="css-1en8fmq"
+              data-css-15b13by=""
             >
               Primary CTA
             </span>
@@ -419,19 +354,7 @@ exports[`Storyshots onClose with onClose 1`] = `
 
 exports[`Storyshots tailPosition bottomCenter 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -446,14 +369,13 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
     >
       <div>
         <h1
-          className={undefined}
           data-css-7941k5=""
           size="large"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-j1md1p=""
+          data-css-15w0yq1=""
         >
           Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
         </p>
@@ -465,12 +387,12 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
           }
         >
           <button
-            data-css-bzft25=""
+            data-css-gukh6t=""
             disabled={false}
             style={Object {}}
           >
             <span
-              className="css-1en8fmq"
+              data-css-15b13by=""
             >
               Primary CTA
             </span>
@@ -484,19 +406,7 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
 
 exports[`Storyshots tailPosition bottomLeft 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -511,14 +421,13 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
     >
       <div>
         <h1
-          className={undefined}
           data-css-7941k5=""
           size="large"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-j1md1p=""
+          data-css-15w0yq1=""
         >
           Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
         </p>
@@ -530,12 +439,12 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
           }
         >
           <button
-            data-css-bzft25=""
+            data-css-gukh6t=""
             disabled={false}
             style={Object {}}
           >
             <span
-              className="css-1en8fmq"
+              data-css-15b13by=""
             >
               Primary CTA
             </span>
@@ -549,19 +458,7 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
 
 exports[`Storyshots tailPosition bottomRight 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -576,14 +473,13 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
     >
       <div>
         <h1
-          className={undefined}
           data-css-7941k5=""
           size="large"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-j1md1p=""
+          data-css-15w0yq1=""
         >
           Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
         </p>
@@ -595,12 +491,12 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
           }
         >
           <button
-            data-css-bzft25=""
+            data-css-gukh6t=""
             disabled={false}
             style={Object {}}
           >
             <span
-              className="css-1en8fmq"
+              data-css-15b13by=""
             >
               Primary CTA
             </span>
@@ -614,19 +510,7 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
 
 exports[`Storyshots tailPosition none 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -641,14 +525,13 @@ exports[`Storyshots tailPosition none 1`] = `
     >
       <div>
         <h1
-          className={undefined}
           data-css-7941k5=""
           size="large"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-j1md1p=""
+          data-css-15w0yq1=""
         >
           Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
         </p>
@@ -660,12 +543,12 @@ exports[`Storyshots tailPosition none 1`] = `
           }
         >
           <button
-            data-css-bzft25=""
+            data-css-gukh6t=""
             disabled={false}
             style={Object {}}
           >
             <span
-              className="css-1en8fmq"
+              data-css-15b13by=""
             >
               Primary CTA
             </span>
@@ -679,19 +562,7 @@ exports[`Storyshots tailPosition none 1`] = `
 
 exports[`Storyshots tailPosition topCenter 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -706,14 +577,13 @@ exports[`Storyshots tailPosition topCenter 1`] = `
     >
       <div>
         <h1
-          className={undefined}
           data-css-7941k5=""
           size="large"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-j1md1p=""
+          data-css-15w0yq1=""
         >
           Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
         </p>
@@ -725,12 +595,12 @@ exports[`Storyshots tailPosition topCenter 1`] = `
           }
         >
           <button
-            data-css-bzft25=""
+            data-css-gukh6t=""
             disabled={false}
             style={Object {}}
           >
             <span
-              className="css-1en8fmq"
+              data-css-15b13by=""
             >
               Primary CTA
             </span>
@@ -744,19 +614,7 @@ exports[`Storyshots tailPosition topCenter 1`] = `
 
 exports[`Storyshots tailPosition topLeft 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -771,14 +629,13 @@ exports[`Storyshots tailPosition topLeft 1`] = `
     >
       <div>
         <h1
-          className={undefined}
           data-css-7941k5=""
           size="large"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-j1md1p=""
+          data-css-15w0yq1=""
         >
           Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
         </p>
@@ -790,12 +647,12 @@ exports[`Storyshots tailPosition topLeft 1`] = `
           }
         >
           <button
-            data-css-bzft25=""
+            data-css-gukh6t=""
             disabled={false}
             style={Object {}}
           >
             <span
-              className="css-1en8fmq"
+              data-css-15b13by=""
             >
               Primary CTA
             </span>
@@ -809,19 +666,7 @@ exports[`Storyshots tailPosition topLeft 1`] = `
 
 exports[`Storyshots tailPosition topRight 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -836,14 +681,13 @@ exports[`Storyshots tailPosition topRight 1`] = `
     >
       <div>
         <h1
-          className={undefined}
           data-css-7941k5=""
           size="large"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-j1md1p=""
+          data-css-15w0yq1=""
         >
           Brownie bear claw liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. Tart donut lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar. Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee cotton candy muffin soufflé marshmallow biscuit.
         </p>
@@ -855,12 +699,12 @@ exports[`Storyshots tailPosition topRight 1`] = `
           }
         >
           <button
-            data-css-bzft25=""
+            data-css-gukh6t=""
             disabled={false}
             style={Object {}}
           >
             <span
-              className="css-1en8fmq"
+              data-css-15b13by=""
             >
               Primary CTA
             </span>

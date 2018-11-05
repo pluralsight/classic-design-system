@@ -17,15 +17,11 @@ export default withServerProps(_ => (
 
 ## Before you start
 
-Please collaborate with the Design System team in [#design-system-dev](slack://channel?team=pluralsight&id=design-system-dev) on the whats, whys, and hows of your component.  The [Contribute Code](/contribute/code) doc has some relevant insights into how and why we collaborate.
+Please collaborate with the Design System team in [#design-system-help](slack://channel?team=pluralsight&id=design-system-help) on the whats, whys, and hows of your component.  The [Contribute Code](/contribute/code) doc has some relevant insights into how and why we collaborate.
 
 ## Create your component
 
-1. Go to [\`packages/\` directory](https://github.com/pluralsight/design-system/tree/master/packages) and copy the directory of a recently-built, pre-existing component.  Many of the setup defaults will simply copy over to your new component.
-1. Edit the \`package.json\` of the new component.  Change the \`name\` to the appropriate one-word suffix (eg, "actionmenu" for "@pluralsight/ps-design-system-actionmenu").  Set the \`version\` to "1.0.0".  Update the \`description\`.  Remove any unused \`dependencies\`.  Do not add \`peerDependencies\`.
-1. Setup Babel dependencies.  Setup \`.babelrc\` Most components are the same in this regard, but there are slight differences.  \`babel-preset-env\`, \`babel-preset-react\`, and \`babel-preset-stage-2\` are standard.  Don't change the stage.
-1. Setup storybook dependencies.  Use storybook for component visual and interactive development.
-1. Setup test dependencies.  Use [jest](https://facebook.github.io/jest/).  Use snapshot testing for component ui tests.  Use the [StoryShots](https://github.com/storybooks/storybook/tree/master/addons/storyshots) addon that generates snapshots from Storybook stories.  Create other unit tests for major logic.
+1. From the project root run \`npm run component:create\`
 1. Write your component.  Copy conventions you see in other components.  TODO: list some of these conventions somewhere. :)
 1. Commit to a feature branch.  (An [example commit](https://github.com/pluralsight/design-system/commit/ec0fc78ecc6ebf9f91056e59c581bfaaee8ee7cd) of a new component)
 1. Send up the [Pull Request](https://github.com/pluralsight/design-system/pulls).  Include relevant details in the PR template on Github.

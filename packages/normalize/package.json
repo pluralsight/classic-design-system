@@ -1,24 +1,24 @@
 {
   "name": "@pluralsight/ps-design-system-normalize",
-  "version": "3.0.45",
+  "version": "3.0.47",
   "description": "Normalize stylesheet.  Should be present on-page to help guarantee ps-* design system components appear properly.",
+  "license": "Apache-2.0",
+  "repository": "pluralsight/design-system",
+  "author": "jaketrent",
   "main": "dist/index.css",
-  "style": "dist/index.css",
   "scripts": {
     "build": "node ./build",
     "prepublish": "npm run build",
     "test": "echo \"Error: tests run in as a single design system suite\" && exit 1"
   },
   "keywords": [],
-  "author": "jaketrent",
-  "license": "Apache-2.0",
-  "repository": "pluralsight/design-system",
+  "style": "dist/index.css",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.3.3",
+    "@pluralsight/ps-design-system-core": "^4.3.5",
     "normalize.css": "^7.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.8.3",
+    "@pluralsight/ps-design-system-build": "^1.8.5",
     "autoprefixer": "^7.1.1",
     "cssnano": "^3.10.0",
     "postcss-cssnext": "^3.0.2",

@@ -2,27 +2,15 @@
 
 exports[`Storyshots appearance flat 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1t7k1em=""
+    data-css-1w956hh=""
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Click me
     </span>
@@ -32,27 +20,15 @@ exports[`Storyshots appearance flat 1`] = `
 
 exports[`Storyshots appearance primary 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-gl46pt=""
+    data-css-gukh6t=""
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Click me
     </span>
@@ -62,27 +38,15 @@ exports[`Storyshots appearance primary 1`] = `
 
 exports[`Storyshots appearance stroke 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-kbg59g=""
+    data-css-1jggn18=""
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Click me
     </span>
@@ -92,28 +56,16 @@ exports[`Storyshots appearance stroke 1`] = `
 
 exports[`Storyshots as link default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <a
-    data-css-gl46pt=""
+    data-css-gukh6t=""
     disabled={false}
     href="https://duckduckgo.com"
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Click as link
     </span>
@@ -123,22 +75,10 @@ exports[`Storyshots as link default 1`] = `
 
 exports[`Storyshots as link with icon 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <a
-    data-css-6fhnty=""
+    data-css-1ak4m0j=""
     disabled={false}
     href="https://duckduckgo.com"
     style={Object {}}
@@ -162,7 +102,7 @@ exports[`Storyshots as link with icon 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Click as link
     </span>
@@ -172,28 +112,16 @@ exports[`Storyshots as link with icon 1`] = `
 
 exports[`Storyshots disabled flat 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1epxvd5=""
+    data-css-89vhb7=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Disabled
     </span>
@@ -203,28 +131,16 @@ exports[`Storyshots disabled flat 1`] = `
 
 exports[`Storyshots disabled primary 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-16m6vo5=""
+    data-css-15c311w=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Disabled
     </span>
@@ -234,28 +150,16 @@ exports[`Storyshots disabled primary 1`] = `
 
 exports[`Storyshots disabled stroke 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1pow6ex=""
+    data-css-bgorl0=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Disabled
     </span>
@@ -265,22 +169,10 @@ exports[`Storyshots disabled stroke 1`] = `
 
 exports[`Storyshots disabled with icon 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1k3kc48=""
+    data-css-iavvef=""
     disabled={true}
     style={Object {}}
   >
@@ -303,7 +195,7 @@ exports[`Storyshots disabled with icon 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Disabled
     </span>
@@ -313,22 +205,10 @@ exports[`Storyshots disabled with icon 1`] = `
 
 exports[`Storyshots icon flat 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-ygj22v=""
+    data-css-1ph61im=""
     disabled={false}
     style={Object {}}
   >
@@ -351,7 +231,7 @@ exports[`Storyshots icon flat 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       With Icon
     </span>
@@ -361,22 +241,10 @@ exports[`Storyshots icon flat 1`] = `
 
 exports[`Storyshots icon large 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-16uzyo3=""
+    data-css-355vri=""
     disabled={false}
     style={Object {}}
   >
@@ -399,7 +267,7 @@ exports[`Storyshots icon large 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       With Icon
     </span>
@@ -409,22 +277,10 @@ exports[`Storyshots icon large 1`] = `
 
 exports[`Storyshots icon left 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-6fhnty=""
+    data-css-1ak4m0j=""
     disabled={false}
     style={Object {}}
   >
@@ -447,7 +303,7 @@ exports[`Storyshots icon left 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       With Icon
     </span>
@@ -457,22 +313,10 @@ exports[`Storyshots icon left 1`] = `
 
 exports[`Storyshots icon lone flat large 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-186z8r0=""
+    data-css-zgn0vq=""
     disabled={false}
     style={Object {}}
   >
@@ -495,7 +339,7 @@ exports[`Storyshots icon lone flat large 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     />
   </button>
 </div>
@@ -503,22 +347,10 @@ exports[`Storyshots icon lone flat large 1`] = `
 
 exports[`Storyshots icon lone flat medium 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1kvw38x=""
+    data-css-icli51=""
     disabled={false}
     style={Object {}}
   >
@@ -541,7 +373,7 @@ exports[`Storyshots icon lone flat medium 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     />
   </button>
 </div>
@@ -549,22 +381,10 @@ exports[`Storyshots icon lone flat medium 1`] = `
 
 exports[`Storyshots icon lone flat small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1od30u4=""
+    data-css-nml72w=""
     disabled={false}
     style={Object {}}
   >
@@ -587,7 +407,7 @@ exports[`Storyshots icon lone flat small 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     />
   </button>
 </div>
@@ -595,22 +415,10 @@ exports[`Storyshots icon lone flat small 1`] = `
 
 exports[`Storyshots icon lone flat xSmall 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-eyr4pd=""
+    data-css-1i8p08p=""
     disabled={false}
     style={Object {}}
   >
@@ -633,7 +441,7 @@ exports[`Storyshots icon lone flat xSmall 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     />
   </button>
 </div>
@@ -641,22 +449,10 @@ exports[`Storyshots icon lone flat xSmall 1`] = `
 
 exports[`Storyshots icon lone primary large 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1dyka97=""
+    data-css-pjxwt9=""
     disabled={false}
     style={Object {}}
   >
@@ -679,7 +475,7 @@ exports[`Storyshots icon lone primary large 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     />
   </button>
 </div>
@@ -687,22 +483,10 @@ exports[`Storyshots icon lone primary large 1`] = `
 
 exports[`Storyshots icon lone primary medium 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-fxvrr1=""
+    data-css-1qepb4e=""
     disabled={false}
     style={Object {}}
   >
@@ -725,7 +509,7 @@ exports[`Storyshots icon lone primary medium 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     />
   </button>
 </div>
@@ -733,22 +517,10 @@ exports[`Storyshots icon lone primary medium 1`] = `
 
 exports[`Storyshots icon lone primary small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-120vbg3=""
+    data-css-4uig72=""
     disabled={false}
     style={Object {}}
   >
@@ -771,7 +543,7 @@ exports[`Storyshots icon lone primary small 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     />
   </button>
 </div>
@@ -779,22 +551,10 @@ exports[`Storyshots icon lone primary small 1`] = `
 
 exports[`Storyshots icon lone primary xSmall 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1jkhhbz=""
+    data-css-exn4cd=""
     disabled={false}
     style={Object {}}
   >
@@ -817,7 +577,7 @@ exports[`Storyshots icon lone primary xSmall 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     />
   </button>
 </div>
@@ -825,22 +585,10 @@ exports[`Storyshots icon lone primary xSmall 1`] = `
 
 exports[`Storyshots icon lone stroke large 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-176djec=""
+    data-css-1y6ncdd=""
     disabled={false}
     style={Object {}}
   >
@@ -863,7 +611,7 @@ exports[`Storyshots icon lone stroke large 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     />
   </button>
 </div>
@@ -871,22 +619,10 @@ exports[`Storyshots icon lone stroke large 1`] = `
 
 exports[`Storyshots icon lone stroke medium 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-endbx2=""
+    data-css-s2knv0=""
     disabled={false}
     style={Object {}}
   >
@@ -909,7 +645,7 @@ exports[`Storyshots icon lone stroke medium 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     />
   </button>
 </div>
@@ -917,22 +653,10 @@ exports[`Storyshots icon lone stroke medium 1`] = `
 
 exports[`Storyshots icon lone stroke small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-zu526a=""
+    data-css-1bh79r6=""
     disabled={false}
     style={Object {}}
   >
@@ -955,7 +679,7 @@ exports[`Storyshots icon lone stroke small 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     />
   </button>
 </div>
@@ -963,22 +687,10 @@ exports[`Storyshots icon lone stroke small 1`] = `
 
 exports[`Storyshots icon lone stroke xSmall 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-q765s9=""
+    data-css-18ibw8n=""
     disabled={false}
     style={Object {}}
   >
@@ -1001,7 +713,7 @@ exports[`Storyshots icon lone stroke xSmall 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     />
   </button>
 </div>
@@ -1009,22 +721,10 @@ exports[`Storyshots icon lone stroke xSmall 1`] = `
 
 exports[`Storyshots icon medium 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-6fhnty=""
+    data-css-1ak4m0j=""
     disabled={false}
     style={Object {}}
   >
@@ -1047,7 +747,7 @@ exports[`Storyshots icon medium 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       With Icon
     </span>
@@ -1057,22 +757,10 @@ exports[`Storyshots icon medium 1`] = `
 
 exports[`Storyshots icon primary 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-6fhnty=""
+    data-css-1ak4m0j=""
     disabled={false}
     style={Object {}}
   >
@@ -1095,7 +783,7 @@ exports[`Storyshots icon primary 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       With Icon
     </span>
@@ -1105,22 +793,10 @@ exports[`Storyshots icon primary 1`] = `
 
 exports[`Storyshots icon right 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1z05niy=""
+    data-css-dj1kqf=""
     disabled={false}
     style={Object {}}
   >
@@ -1143,7 +819,7 @@ exports[`Storyshots icon right 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       With Icon
     </span>
@@ -1153,22 +829,10 @@ exports[`Storyshots icon right 1`] = `
 
 exports[`Storyshots icon small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-j6xdwj=""
+    data-css-tz6omh=""
     disabled={false}
     style={Object {}}
   >
@@ -1191,7 +855,7 @@ exports[`Storyshots icon small 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       With Icon
     </span>
@@ -1201,22 +865,10 @@ exports[`Storyshots icon small 1`] = `
 
 exports[`Storyshots icon stroke 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-c2qwlq=""
+    data-css-pimj8i=""
     disabled={false}
     style={Object {}}
   >
@@ -1239,7 +891,7 @@ exports[`Storyshots icon stroke 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       With Icon
     </span>
@@ -1249,22 +901,10 @@ exports[`Storyshots icon stroke 1`] = `
 
 exports[`Storyshots icon xSmall 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-aa0j3a=""
+    data-css-1t91op8=""
     disabled={false}
     style={Object {}}
   >
@@ -1287,7 +927,7 @@ exports[`Storyshots icon xSmall 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       With Icon
     </span>
@@ -1297,22 +937,10 @@ exports[`Storyshots icon xSmall 1`] = `
 
 exports[`Storyshots loading flat 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-eslwan=""
+    data-css-10it3c9=""
     disabled={true}
     style={Object {}}
   >
@@ -1328,7 +956,7 @@ exports[`Storyshots loading flat 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Loading...
     </span>
@@ -1338,22 +966,10 @@ exports[`Storyshots loading flat 1`] = `
 
 exports[`Storyshots loading large 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1uaejkq=""
+    data-css-1pn6jll=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
@@ -1370,7 +986,7 @@ exports[`Storyshots loading large 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Loading...
     </span>
@@ -1380,22 +996,10 @@ exports[`Storyshots loading large 1`] = `
 
 exports[`Storyshots loading lone icon 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1dyka97=""
+    data-css-pjxwt9=""
     disabled={true}
     style={Object {}}
   >
@@ -1411,7 +1015,7 @@ exports[`Storyshots loading lone icon 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     />
   </button>
 </div>
@@ -1419,22 +1023,10 @@ exports[`Storyshots loading lone icon 1`] = `
 
 exports[`Storyshots loading medium 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-gl46pt=""
+    data-css-gukh6t=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
@@ -1451,7 +1043,7 @@ exports[`Storyshots loading medium 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Loading...
     </span>
@@ -1461,27 +1053,15 @@ exports[`Storyshots loading medium 1`] = `
 
 exports[`Storyshots loading no icon, hidden text 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1uaejkq=""
+    data-css-1pn6jll=""
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Text doesnt show when loading if no icon
     </span>
@@ -1491,22 +1071,10 @@ exports[`Storyshots loading no icon, hidden text 1`] = `
 
 exports[`Storyshots loading primary 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1uaejkq=""
+    data-css-1pn6jll=""
     disabled={true}
     style={Object {}}
   >
@@ -1522,7 +1090,7 @@ exports[`Storyshots loading primary 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Loading...
     </span>
@@ -1532,22 +1100,10 @@ exports[`Storyshots loading primary 1`] = `
 
 exports[`Storyshots loading small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1v0x9ld=""
+    data-css-1phrwsv=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
@@ -1564,7 +1120,7 @@ exports[`Storyshots loading small 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Loading...
     </span>
@@ -1574,22 +1130,10 @@ exports[`Storyshots loading small 1`] = `
 
 exports[`Storyshots loading stroke 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1sth75=""
+    data-css-iy49zs=""
     disabled={true}
     style={Object {}}
   >
@@ -1605,7 +1149,7 @@ exports[`Storyshots loading stroke 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Loading...
     </span>
@@ -1615,22 +1159,10 @@ exports[`Storyshots loading stroke 1`] = `
 
 exports[`Storyshots loading xSmall 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-jyv8uk=""
+    data-css-12rwiei=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
@@ -1647,7 +1179,7 @@ exports[`Storyshots loading xSmall 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Loading...
     </span>
@@ -1657,19 +1189,7 @@ exports[`Storyshots loading xSmall 1`] = `
 
 exports[`Storyshots override styles with className 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     className={
@@ -1677,7 +1197,7 @@ exports[`Storyshots override styles with className 1`] = `
         "data-css-jxpnuu": "",
       }
     }
-    data-css-6fhnty=""
+    data-css-1ak4m0j=""
     disabled={false}
     style={Object {}}
   >
@@ -1700,7 +1220,7 @@ exports[`Storyshots override styles with className 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Green Button
     </span>
@@ -1710,22 +1230,10 @@ exports[`Storyshots override styles with className 1`] = `
 
 exports[`Storyshots override styles with style 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-6fhnty=""
+    data-css-1ak4m0j=""
     disabled={false}
     style={
       Object {
@@ -1752,7 +1260,7 @@ exports[`Storyshots override styles with style 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Red Button
     </span>
@@ -1762,28 +1270,16 @@ exports[`Storyshots override styles with style 1`] = `
 
 exports[`Storyshots props pass through aria-expanded 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
     aria-expanded={true}
-    data-css-gl46pt=""
+    data-css-gukh6t=""
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       aria-expanded
     </span>
@@ -1793,28 +1289,16 @@ exports[`Storyshots props pass through aria-expanded 1`] = `
 
 exports[`Storyshots props pass through data-something 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-gl46pt=""
+    data-css-gukh6t=""
     data-something="wow"
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Custom data attributes
     </span>
@@ -1824,28 +1308,16 @@ exports[`Storyshots props pass through data-something 1`] = `
 
 exports[`Storyshots props pass through not supported 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-gl46pt=""
+    data-css-gukh6t=""
     disabled={false}
     onMouseOver={[Function]}
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Should not mouseover
     </span>
@@ -1855,28 +1327,16 @@ exports[`Storyshots props pass through not supported 1`] = `
 
 exports[`Storyshots props pass through role 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-gl46pt=""
+    data-css-gukh6t=""
     disabled={false}
     role="link"
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Role Link
     </span>
@@ -1886,28 +1346,16 @@ exports[`Storyshots props pass through role 1`] = `
 
 exports[`Storyshots props pass through title 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-gl46pt=""
+    data-css-gukh6t=""
     disabled={false}
     style={Object {}}
     title="My caption"
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       With title
     </span>
@@ -1917,27 +1365,15 @@ exports[`Storyshots props pass through title 1`] = `
 
 exports[`Storyshots size large 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1uaejkq=""
+    data-css-1pn6jll=""
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Click me
     </span>
@@ -1947,27 +1383,15 @@ exports[`Storyshots size large 1`] = `
 
 exports[`Storyshots size medium 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-gl46pt=""
+    data-css-gukh6t=""
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Click me
     </span>
@@ -1977,27 +1401,15 @@ exports[`Storyshots size medium 1`] = `
 
 exports[`Storyshots size small 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-1v0x9ld=""
+    data-css-1phrwsv=""
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Click me
     </span>
@@ -2007,27 +1419,15 @@ exports[`Storyshots size small 1`] = `
 
 exports[`Storyshots size xSmall 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-jyv8uk=""
+    data-css-12rwiei=""
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Click me
     </span>
@@ -2037,22 +1437,10 @@ exports[`Storyshots size xSmall 1`] = `
 
 exports[`Storyshots with onClick clicks once 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-6fhnty=""
+    data-css-1ak4m0j=""
     disabled={false}
     onClick={[Function]}
     style={Object {}}
@@ -2076,7 +1464,7 @@ exports[`Storyshots with onClick clicks once 1`] = `
       </div>
     </div>
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Clicks once
     </span>
@@ -2086,27 +1474,15 @@ exports[`Storyshots with onClick clicks once 1`] = `
 
 exports[`Storyshots with ref ref to handle focus 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <button
-    data-css-gl46pt=""
+    data-css-gukh6t=""
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-1en8fmq=""
+      data-css-15b13by=""
     >
       Should be focused
     </span>

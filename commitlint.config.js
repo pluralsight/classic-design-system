@@ -1,23 +1,18 @@
-const Repository = require('lerna/lib/Repository')
-const PackageUtilities = require('lerna/lib/PackageUtilities')
+const scopes = require('@commitlint/config-lerna-scopes')
 
-function getPackageAbbreviations() {
-  const cwd = process.cwd()
-  const repo = new Repository(cwd)
-  return PackageUtilities.getPackages({
-    packageConfigs: repo.packageConfigs,
-    rootPath: cwd
-  })
-    .map(pkg => pkg.name)
-    .map(name => (name.charAt(0) === '@' ? name.split('/')[1] : name))
-    .map(name => (/-/.test(name) ? name.split('-').pop() : name))
-    .concat(['storybook-addon-theme'])
-}
+const prefix = 'ps-design-system-'
 
 module.exports = {
   extends: ['@commitlint/config-angular'],
   rules: {
     lang: [0],
-    'scope-enum': _ => [2, 'always', getPackageAbbreviations()]
+    'scope-enum': ctx =>
+      scopes.rules['scope-enum'](ctx).then(([level, applicable, packages]) => [
+        level,
+        applicable,
+        packages.map(
+          pkg => (pkg.includes(prefix) ? pkg.replace(prefix, '') : pkg)
+        )
+      ])
   }
 }

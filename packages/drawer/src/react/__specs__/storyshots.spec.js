@@ -1,4 +1,6 @@
-import initStoryshots, { snapshotWithOptions } from '@storybook/addon-storyshots'
+import initStoryshots, {
+  snapshotWithOptions
+} from '@storybook/addon-storyshots'
 
 function createNodeMock(element) {
   if (element.type === 'div') {

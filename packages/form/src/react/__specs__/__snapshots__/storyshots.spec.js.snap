@@ -2,19 +2,7 @@
 
 exports[`Storyshots Sample Form sample 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -38,7 +26,6 @@ exports[`Storyshots Sample Form sample 1`] = `
           data-css-4l6uky=""
         >
           <h2
-            className={undefined}
             data-css-10w3axr=""
             size="large"
             style={
@@ -67,15 +54,18 @@ exports[`Storyshots Sample Form sample 1`] = `
               Name
             </div>
             <div
-              data-css-1ghdxx6=""
+              data-css-1r967oi=""
             >
-              <input
-                data-css-ly16us=""
-                disabled={false}
-                onBlur={[Function]}
-                onFocus={[Function]}
-                placeholder="What's your name?"
-              />
+              <div
+                className=""
+                data-css-f0o9km=""
+              >
+                <input
+                  data-css-ly16us=""
+                  disabled={false}
+                  placeholder="What's your name?"
+                />
+              </div>
             </div>
           </label>
         </div>
@@ -96,15 +86,18 @@ exports[`Storyshots Sample Form sample 1`] = `
               Alias
             </div>
             <div
-              data-css-1ghdxx6=""
+              data-css-1r967oi=""
             >
-              <input
-                data-css-ly16us=""
-                disabled={false}
-                onBlur={[Function]}
-                onFocus={[Function]}
-                placeholder="Do you have a nick name?"
-              />
+              <div
+                className=""
+                data-css-f0o9km=""
+              >
+                <input
+                  data-css-ly16us=""
+                  disabled={false}
+                  placeholder="Do you have a nick name?"
+                />
+              </div>
             </div>
             <div
               data-css-1de0a6a=""
@@ -130,16 +123,18 @@ exports[`Storyshots Sample Form sample 1`] = `
               Email address
             </div>
             <div
-              data-css-mdufbt=""
+              data-css-1r967oi=""
             >
-              <input
-                data-css-ly16us=""
-                disabled={false}
-                onBlur={[Function]}
-                onFocus={[Function]}
-                placeholder={undefined}
-                value="steve@example.com"
-              />
+              <div
+                className=""
+                data-css-w2l3iv=""
+              >
+                <input
+                  data-css-ly16us=""
+                  disabled={false}
+                  value="steve@example.com"
+                />
+              </div>
               <div
                 data-css-loo18p=""
               >
@@ -197,7 +192,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   aria-hidden={true}
                   data-css-e6fvyw=""
                 >
-                  Craftsperson
+                  Select your occupation...
                 </span>
                 <span
                   data-css-5m5yd6=""
@@ -206,7 +201,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 </span>
               </button>
               <div
-                data-css-1uv5m12=""
+                data-css-cstzed=""
               >
                 <div
                   className="css-otejxm"
@@ -236,7 +231,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-1thcgnx=""
+              data-css-1vvay1p=""
               role="checkbox"
               tabIndex="0"
             >
@@ -256,7 +251,6 @@ exports[`Storyshots Sample Form sample 1`] = `
             <input
               checked={true}
               data-css-gyrv08=""
-              name={undefined}
               readOnly={true}
               tabIndex="-1"
               type="checkbox"
@@ -301,10 +295,8 @@ exports[`Storyshots Sample Form sample 1`] = `
                   tabIndex="-1"
                 />
                 <input
-                  _name={undefined}
                   checked={false}
                   data-css-gyrv08=""
-                  name={undefined}
                   readOnly={true}
                   tabIndex="-1"
                   type="radio"
@@ -332,10 +324,8 @@ exports[`Storyshots Sample Form sample 1`] = `
                   tabIndex="-1"
                 />
                 <input
-                  _name={undefined}
                   checked={false}
                   data-css-gyrv08=""
-                  name={undefined}
                   readOnly={true}
                   tabIndex="-1"
                   type="radio"
@@ -401,12 +391,12 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-1sql3pc=""
+                data-css-gukh6t=""
                 disabled={false}
                 style={Object {}}
               >
                 <span
-                  className="css-1en8fmq"
+                  data-css-15b13by=""
                 >
                   Save
                 </span>
@@ -416,12 +406,12 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-15alvov=""
+                data-css-1w956hh=""
                 disabled={false}
                 style={Object {}}
               >
                 <span
-                  className="css-1en8fmq"
+                  data-css-15b13by=""
                 >
                   Cancel
                 </span>

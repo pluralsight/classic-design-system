@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.7.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.7.15...@pluralsight/ps-design-system-text@10.7.16) (2018-10-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+<a name="10.7.15"></a>
+## [10.7.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.7.14...@pluralsight/ps-design-system-text@10.7.15) (2018-10-31)
+
+
+
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+<a name="10.7.14"></a>
+## [10.7.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.7.13...@pluralsight/ps-design-system-text@10.7.14) (2018-10-18)
+
+
+### Bug Fixes
+
+* **text:** Text.P should have a default theme ([0e49dd6](https://github.com/pluralsight/design-system/commit/0e49dd6))
+
+
+
+
 <a name="10.7.13"></a>
 ## [10.7.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.7.12...@pluralsight/ps-design-system-text@10.7.13) (2018-10-10)
 

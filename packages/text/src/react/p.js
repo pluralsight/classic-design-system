@@ -1,7 +1,7 @@
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
+import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
 
@@ -11,11 +11,15 @@ const style = ({ themeName }) =>
     ...css[`.psds-text__p.psds-theme--${themeName}`]
   })
 
-const P = (props, context) => (
-  <p {...props} {...style({ ...props, themeName: context.themeName })}>
-    {props.children}
-  </p>
-)
+const P = (props, context) => {
+  const themeName = context.themeName || themeDefaultName
+
+  return (
+    <p {...props} {...style({ ...props, themeName })}>
+      {props.children}
+    </p>
+  )
+}
 
 P.contextTypes = {
   themeName: PropTypes.string

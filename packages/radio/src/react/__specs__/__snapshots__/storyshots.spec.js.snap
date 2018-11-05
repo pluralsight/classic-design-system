@@ -2,19 +2,7 @@
 
 exports[`Storyshots Radio default 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -38,17 +26,19 @@ exports[`Storyshots Radio default 1`] = `
           onClick={[Function]}
         >
           <div
-            aria-checked={false}
-            data-css-dbvyuf=""
-            onFocus={[Function]}
-            role="radio"
-            tabIndex="-1"
-          />
+            data-css-e234i4=""
+          >
+            <div
+              aria-checked={false}
+              data-css-dbvyuf=""
+              onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            />
+          </div>
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -69,17 +59,19 @@ exports[`Storyshots Radio default 1`] = `
           onClick={[Function]}
         >
           <div
-            aria-checked={false}
-            data-css-dbvyuf=""
-            onFocus={[Function]}
-            role="radio"
-            tabIndex="-1"
-          />
+            data-css-e234i4=""
+          >
+            <div
+              aria-checked={false}
+              data-css-dbvyuf=""
+              onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            />
+          </div>
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -100,17 +92,19 @@ exports[`Storyshots Radio default 1`] = `
           onClick={[Function]}
         >
           <div
-            aria-checked={false}
-            data-css-dbvyuf=""
-            onFocus={[Function]}
-            role="radio"
-            tabIndex="-1"
-          />
+            data-css-e234i4=""
+          >
+            <div
+              aria-checked={false}
+              data-css-dbvyuf=""
+              onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            />
+          </div>
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -130,19 +124,7 @@ exports[`Storyshots Radio default 1`] = `
 
 exports[`Storyshots Radio disabled 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -166,17 +148,19 @@ exports[`Storyshots Radio disabled 1`] = `
           onClick={null}
         >
           <div
-            aria-checked={false}
-            data-css-dbvyuf=""
-            onFocus={null}
-            role="radio"
-            tabIndex="-1"
-          />
+            data-css-e234i4=""
+          >
+            <div
+              aria-checked={false}
+              data-css-dbvyuf=""
+              onFocus={null}
+              role="radio"
+              tabIndex="-1"
+            />
+          </div>
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -197,21 +181,23 @@ exports[`Storyshots Radio disabled 1`] = `
           onClick={null}
         >
           <div
-            aria-checked={true}
-            data-css-4a14oy=""
-            onFocus={null}
-            role="radio"
-            tabIndex="-1"
+            data-css-e234i4=""
           >
             <div
-              data-css-16yi4o9=""
-            />
+              aria-checked={true}
+              data-css-4a14oy=""
+              onFocus={null}
+              role="radio"
+              tabIndex="-1"
+            >
+              <div
+                data-css-16yi4o9=""
+              />
+            </div>
           </div>
           <input
-            _name={undefined}
             checked={true}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -232,17 +218,19 @@ exports[`Storyshots Radio disabled 1`] = `
           onClick={null}
         >
           <div
-            aria-checked={false}
-            data-css-dbvyuf=""
-            onFocus={null}
-            role="radio"
-            tabIndex="-1"
-          />
+            data-css-e234i4=""
+          >
+            <div
+              aria-checked={false}
+              data-css-dbvyuf=""
+              onFocus={null}
+              role="radio"
+              tabIndex="-1"
+            />
+          </div>
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -262,19 +250,7 @@ exports[`Storyshots Radio disabled 1`] = `
 
 exports[`Storyshots Radio error 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -298,17 +274,19 @@ exports[`Storyshots Radio error 1`] = `
           onClick={[Function]}
         >
           <div
-            aria-checked={false}
-            data-css-169qicc=""
-            onFocus={[Function]}
-            role="radio"
-            tabIndex="-1"
-          />
+            data-css-joe2xj=""
+          >
+            <div
+              aria-checked={false}
+              data-css-dbvyuf=""
+              onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            />
+          </div>
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -329,21 +307,23 @@ exports[`Storyshots Radio error 1`] = `
           onClick={[Function]}
         >
           <div
-            aria-checked={true}
-            data-css-3szuid=""
-            onFocus={[Function]}
-            role="radio"
-            tabIndex="-1"
+            data-css-joe2xj=""
           >
             <div
-              data-css-16yi4o9=""
-            />
+              aria-checked={true}
+              data-css-4a14oy=""
+              onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            >
+              <div
+                data-css-16yi4o9=""
+              />
+            </div>
           </div>
           <input
-            _name={undefined}
             checked={true}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -364,17 +344,19 @@ exports[`Storyshots Radio error 1`] = `
           onClick={[Function]}
         >
           <div
-            aria-checked={false}
-            data-css-169qicc=""
-            onFocus={[Function]}
-            role="radio"
-            tabIndex="-1"
-          />
+            data-css-joe2xj=""
+          >
+            <div
+              aria-checked={false}
+              data-css-dbvyuf=""
+              onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            />
+          </div>
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -394,19 +376,7 @@ exports[`Storyshots Radio error 1`] = `
 
 exports[`Storyshots Radio one selected 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -430,17 +400,19 @@ exports[`Storyshots Radio one selected 1`] = `
           onClick={[Function]}
         >
           <div
-            aria-checked={false}
-            data-css-dbvyuf=""
-            onFocus={[Function]}
-            role="radio"
-            tabIndex="-1"
-          />
+            data-css-e234i4=""
+          >
+            <div
+              aria-checked={false}
+              data-css-dbvyuf=""
+              onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            />
+          </div>
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -461,21 +433,23 @@ exports[`Storyshots Radio one selected 1`] = `
           onClick={[Function]}
         >
           <div
-            aria-checked={true}
-            data-css-4a14oy=""
-            onFocus={[Function]}
-            role="radio"
-            tabIndex="-1"
+            data-css-e234i4=""
           >
             <div
-              data-css-16yi4o9=""
-            />
+              aria-checked={true}
+              data-css-4a14oy=""
+              onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            >
+              <div
+                data-css-16yi4o9=""
+              />
+            </div>
           </div>
           <input
-            _name={undefined}
             checked={true}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -496,17 +470,19 @@ exports[`Storyshots Radio one selected 1`] = `
           onClick={[Function]}
         >
           <div
-            aria-checked={false}
-            data-css-dbvyuf=""
-            onFocus={[Function]}
-            role="radio"
-            tabIndex="-1"
-          />
+            data-css-e234i4=""
+          >
+            <div
+              aria-checked={false}
+              data-css-dbvyuf=""
+              onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            />
+          </div>
           <input
-            _name={undefined}
             checked={false}
             data-css-gyrv08=""
-            name={undefined}
             readOnly={true}
             tabIndex="-1"
             type="radio"
@@ -526,19 +502,7 @@ exports[`Storyshots Radio one selected 1`] = `
 
 exports[`Storyshots Radio state demo 1`] = `
 <div
-  style={
-    Object {
-      "background": "#181818",
-      "backgroundSize": "cover",
-      "bottom": 0,
-      "left": 0,
-      "overflow": "scroll",
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-      "transition": "background 300ms",
-    }
-  }
+  data-css-claeju=""
 >
   <div
     style={
@@ -573,21 +537,23 @@ exports[`Storyshots Radio state demo 1`] = `
             onClick={[Function]}
           >
             <div
-              aria-checked={true}
-              data-css-4a14oy=""
-              onFocus={[Function]}
-              role="radio"
-              tabIndex="-1"
+              data-css-e234i4=""
             >
               <div
-                data-css-16yi4o9=""
-              />
+                aria-checked={true}
+                data-css-4a14oy=""
+                onFocus={[Function]}
+                role="radio"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-16yi4o9=""
+                />
+              </div>
             </div>
             <input
-              _name={undefined}
               checked={true}
               data-css-gyrv08=""
-              name={undefined}
               readOnly={true}
               tabIndex="-1"
               type="radio"
@@ -608,17 +574,19 @@ exports[`Storyshots Radio state demo 1`] = `
             onClick={[Function]}
           >
             <div
-              aria-checked={false}
-              data-css-dbvyuf=""
-              onFocus={[Function]}
-              role="radio"
-              tabIndex="-1"
-            />
+              data-css-e234i4=""
+            >
+              <div
+                aria-checked={false}
+                data-css-dbvyuf=""
+                onFocus={[Function]}
+                role="radio"
+                tabIndex="-1"
+              />
+            </div>
             <input
-              _name={undefined}
               checked={false}
               data-css-gyrv08=""
-              name={undefined}
               readOnly={true}
               tabIndex="-1"
               type="radio"
@@ -639,17 +607,19 @@ exports[`Storyshots Radio state demo 1`] = `
             onClick={[Function]}
           >
             <div
-              aria-checked={false}
-              data-css-dbvyuf=""
-              onFocus={[Function]}
-              role="radio"
-              tabIndex="-1"
-            />
+              data-css-e234i4=""
+            >
+              <div
+                aria-checked={false}
+                data-css-dbvyuf=""
+                onFocus={[Function]}
+                role="radio"
+                tabIndex="-1"
+              />
+            </div>
             <input
-              _name={undefined}
               checked={false}
               data-css-gyrv08=""
-              name={undefined}
               readOnly={true}
               tabIndex="-1"
               type="radio"

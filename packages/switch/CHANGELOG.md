@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.5.11...@pluralsight/ps-design-system-switch@1.5.12) (2018-10-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [1.5.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.5.10...@pluralsight/ps-design-system-switch@1.5.11) (2018-10-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+<a name="1.5.10"></a>
+## [1.5.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.5.9...@pluralsight/ps-design-system-switch@1.5.10) (2018-10-31)
+
+
+### Bug Fixes
+
+* **switch:** halo should not wrap hidden input ([c048c23](https://github.com/pluralsight/design-system/commit/c048c23))
+
+
+
+
 <a name="1.5.9"></a>
 ## [1.5.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.5.8...@pluralsight/ps-design-system-switch@1.5.9) (2018-10-10)
 

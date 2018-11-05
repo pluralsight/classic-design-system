@@ -1,5 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
+import Halo from '@pluralsight/ps-design-system-halo/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -48,42 +49,8 @@ const styles = {
           css['@media (min-width: 433px)']['.psds-text-area__field']
       }
     ),
-  fieldContainer: ({ error, themeName }, { isFocused }) =>
-    glamor.css(
-      css['.psds-text-area__field-container'],
-      error
-        ? {
-            ':before': {
-              ...css['.psds-text-area__field-container--error:before'],
-              ...css[
-                `.psds-text-area__field-container--error.psds-theme--${themeName}:before`
-              ]
-            },
-            ':after': {
-              ...css['.psds-text-area__field-container--error:after'],
-              ...css[
-                `.psds-text-area__field-container--error.psds-theme--${themeName}:after`
-              ]
-            }
-          }
-        : null,
-      isFocused
-        ? {
-            ':before': {
-              ...css['.psds-text-area__field-container:focus:before'],
-              ...css[
-                `.psds-text-area__field-container.psds-theme--${themeName}:focus:before`
-              ]
-            },
-            ':after': {
-              ...css['.psds-text-area__field-container:focus:after'],
-              ...css[
-                `.psds-text-area__field-container.psds-theme--${themeName}:focus:after`
-              ]
-            }
-          }
-        : null
-    ),
+  fieldContainer: ({ themeName }) =>
+    glamor.css(css['.psds-text-area__field-container']),
   textarea: ({ disabled }) =>
     glamor.css(
       css['.psds-text-area'],
@@ -105,59 +72,51 @@ const styles = {
     )
 }
 
-class TextArea extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { isFocused: false }
-    this.handleFocus = this.handleFocus.bind(this)
-    this.handleBlur = this.handleBlur.bind(this)
+const TextArea = (props, context) => {
+  const allProps = {
+    ...props,
+    themeName: context.themeName || themeDefaultName
   }
-  handleFocus(evt) {
-    this.setState(_ => ({ isFocused: true }))
-    if (typeof this.props.onFocus === 'function') this.props.onFocus(evt)
-  }
-  handleBlur(evt) {
-    this.setState(_ => ({ isFocused: false }))
-    if (typeof this.props.onBlur === 'function') this.props.onBlur(evt)
-  }
-  render() {
-    const { context, props, state } = this
-    const allProps = {
-      ...props,
-      themeName: context.themeName || themeDefaultName
-    }
-    return (
-      <label
-        {...styles.textarea(allProps)}
-        {...(allProps.style ? { style: allProps.style } : null)}
-        {...(allProps.className ? { className: allProps.className } : null)}
-      >
-        {allProps.label && (
-          <div {...styles.label(allProps)}>{allProps.label}</div>
-        )}
-        <div {...styles.fieldContainer(allProps, state)}>
+  return (
+    <label
+      {...styles.textarea(allProps)}
+      {...(allProps.style ? { style: allProps.style } : null)}
+      {...(allProps.className ? { className: allProps.className } : null)}
+    >
+      {allProps.label && (
+        <div {...styles.label(allProps)}>{allProps.label}</div>
+      )}
+      <div {...styles.fieldContainer(allProps)}>
+        <Halo
+          appearance={
+            props.error ? Halo.appearances.error : Halo.appearances.default
+          }
+          gapSize={Halo.gapSizes.small}
+          visible={!!props.error}
+          visibleOnFocus
+        >
           <textarea
             {...propsUtil.whitelistProps(allProps, textAreaHtmlPropsWhitelist)}
             {...styles.field(allProps)}
             disabled={allProps.disabled}
             placeholder={allProps.placeholder}
-            onBlur={this.handleBlur}
-            onFocus={this.handleFocus}
+            onBlur={props.onBlur}
+            onFocus={props.onFocus}
             ref={allProps.innerRef}
             style={{ height: calcRowsPxHeight(allProps.rows) }}
           />
-          {allProps.error && (
-            <div {...styles.error(allProps)}>
-              <Icon id={Icon.ids.warning} />
-            </div>
-          )}
-        </div>
-        {allProps.subLabel && (
-          <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
+        </Halo>
+        {allProps.error && (
+          <div {...styles.error(allProps)}>
+            <Icon id={Icon.ids.warning} />
+          </div>
         )}
-      </label>
-    )
-  }
+      </div>
+      {allProps.subLabel && (
+        <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
+      )}
+    </label>
+  )
 }
 
 TextArea.propTypes = {

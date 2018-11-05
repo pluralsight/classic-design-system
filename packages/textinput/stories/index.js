@@ -29,6 +29,14 @@ const labelStory = storiesOf('labels', module)
       placeholder="Some placeholder"
     />
   ))
+  .add('all w/error', _ => (
+    <TextInput
+      error
+      label="Some label"
+      subLabel="Some sublabel"
+      placeholder="Some placeholder"
+    />
+  ))
 
 const appearanceStory = storiesOf('appearance', module)
   .addDecorator(PaddingDecorator)
@@ -73,6 +81,7 @@ const disabledStory = storiesOf('disabled', module)
 const whitelistStory = storiesOf('whitelist', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
+  .add('title', _ => <TextInput title="some title" />)
   .add('type=password', _ => (
     <TextInput placeholder="Password" type="password" />
   ))

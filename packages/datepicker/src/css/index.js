@@ -1,9 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/vars'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 import { transparentize } from 'polished'
 
 import * as vars from '../vars'
@@ -59,7 +56,6 @@ export default {
     display: 'flex',
     borderRadius: '2px',
     alignItems: 'center',
-    minWidth: '192px',
     width: '100%',
     height: '40px',
     minWidth: `calc(192px + ${iconVars.widths.medium} + ${
@@ -232,7 +228,7 @@ export default {
     marginTop: core.layout.spacingXXSmall
   },
 
-  ['@keyframes psds-date-picker__calendar__keyframes__slide']: {
+  '@keyframes psds-date-picker__calendar__keyframes__slide': {
     '100%': {
       transform: 'translateY(0)',
       opacity: 1

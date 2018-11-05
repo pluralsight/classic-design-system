@@ -25,7 +25,7 @@ test('click on disabled button with href does not trigger onClick', () => {
   }
   const button = mount(
     <Button
-      disabled={true}
+      disabled
       onClick={onClick}
       href="https://foo.com"
       icon={<Icon id={Icon.ids.check} />}
@@ -38,8 +38,10 @@ test('click on disabled button with href does not trigger onClick', () => {
   expect(callCount).toBe(0)
 })
 
-test('custom innerRef function called', done => {
-  mount(<Button innerRef={done} />)
+test('custom innerRef function called', () => {
+  const innerRef = jest.fn()
+  mount(<Button innerRef={innerRef} />)
+  expect(innerRef).toHaveBeenCalled()
 })
 
 // TODO: once enzyme supports event propagation, impl test for clicking icon

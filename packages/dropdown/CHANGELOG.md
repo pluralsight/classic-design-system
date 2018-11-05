@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@0.6.0...@pluralsight/ps-design-system-dropdown@0.6.1) (2018-10-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@0.5.3...@pluralsight/ps-design-system-dropdown@0.6.0) (2018-10-31)
+
+
+### Bug Fixes
+
+* **dropdown:** update broken snapshot ([0be6ab0](https://github.com/pluralsight/design-system/commit/0be6ab0))
+
+
+### Features
+
+* **dropdown:** add whitelist prop support ([4cdae41](https://github.com/pluralsight/design-system/commit/4cdae41)), closes [#277](https://github.com/pluralsight/design-system/issues/277)
+
+
+
+
+<a name="0.5.2"></a>
+## [0.5.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@0.5.1...@pluralsight/ps-design-system-dropdown@0.5.2) (2018-10-17)
+
+
+### Bug Fixes
+
+* **dropdown:** increase dropdown overlay z-index ([c088666](https://github.com/pluralsight/design-system/commit/c088666))
+
+
+
+
 <a name="0.5.1"></a>
 ## [0.5.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@0.5.0...@pluralsight/ps-design-system-dropdown@0.5.1) (2018-10-10)
 

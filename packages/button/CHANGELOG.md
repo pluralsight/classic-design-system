@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.8.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.8.16...@pluralsight/ps-design-system-button@10.8.17) (2018-10-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-button
+
+
+
+
+
+<a name="10.8.16"></a>
+## [10.8.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.8.15...@pluralsight/ps-design-system-button@10.8.16) (2018-10-31)
+
+
+### Bug Fixes
+
+* **button:** update css to allow transparent backgrounds when focused ([e89c6c7](https://github.com/pluralsight/design-system/commit/e89c6c7)), closes [#290](https://github.com/pluralsight/design-system/issues/290)
+* fix eslint config ([29f4881](https://github.com/pluralsight/design-system/commit/29f4881))
+
+
+
+
 <a name="10.8.15"></a>
 ## [10.8.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.8.14...@pluralsight/ps-design-system-button@10.8.15) (2018-10-10)
 

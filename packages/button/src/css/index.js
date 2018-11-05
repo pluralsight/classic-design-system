@@ -46,37 +46,12 @@ export default {
   '.psds-button:focus:before': {
     content: ' ',
     position: 'absolute',
-    top: '-1px',
-    left: '-1px',
-    right: '-1px',
-    bottom: '-1px',
-    background: core.colors.black,
-    zIndex: '-1',
-    borderRadius: '2px'
-  },
-  [`.psds-button.psds-theme--${themeNames.light}:focus:before`]: {
-    top: '-2px',
-    left: '-2px',
-    right: '-2px',
-    bottom: '-2px',
-    background: core.colors.bone
-  },
-  '.psds-button:focus:after': {
-    content: ' ',
-    position: 'absolute',
     top: '-4px',
     left: '-4px',
     right: '-4px',
     bottom: '-4px',
-    zIndex: '-2',
-    borderRadius: '4px',
-    background: core.colors.blue
-  },
-  [`.psds-button.psds-theme--${themeNames.light}:focus:after`]: {
-    top: '-5px',
-    left: '-5px',
-    right: '-5px',
-    bottom: '-5px'
+    border: `3px solid ${core.colors.blue}`,
+    borderRadius: '4px'
   },
 
   // --size

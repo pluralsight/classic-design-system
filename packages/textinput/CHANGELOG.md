@@ -3,6 +3,56 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.8...@pluralsight/ps-design-system-textinput@0.5.9) (2018-10-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textinput
+
+
+
+
+
+## [0.5.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.7...@pluralsight/ps-design-system-textinput@0.5.8) (2018-10-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textinput
+
+
+
+
+
+<a name="0.5.7"></a>
+## [0.5.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.6...@pluralsight/ps-design-system-textinput@0.5.7) (2018-10-31)
+
+
+### Bug Fixes
+
+* **halo:** flexible width ([4ae1968](https://github.com/pluralsight/design-system/commit/4ae1968))
+* **halo:** polyfill :focus-within ([afac84f](https://github.com/pluralsight/design-system/commit/afac84f))
+
+
+
+
+<a name="0.5.6"></a>
+## [0.5.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.5...@pluralsight/ps-design-system-textinput@0.5.6) (2018-10-18)
+
+
+### Bug Fixes
+
+* **textinput:** whilelist title prop ([a72ebd3](https://github.com/pluralsight/design-system/commit/a72ebd3)), closes [#276](https://github.com/pluralsight/design-system/issues/276)
+
+
+
+
+<a name="0.5.4"></a>
+## [0.5.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.3...@pluralsight/ps-design-system-textinput@0.5.4) (2018-10-17)
+
+
+### Bug Fixes
+
+* **textinput:** fix focus ring not showing ([#284](https://github.com/pluralsight/design-system/issues/284)) ([ec73ec6](https://github.com/pluralsight/design-system/commit/ec73ec6))
+
+
+
+
 <a name="0.5.3"></a>
 ## [0.5.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.2...@pluralsight/ps-design-system-textinput@0.5.3) (2018-10-10)
 

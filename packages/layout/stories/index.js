@@ -8,7 +8,7 @@ import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import { AsideLayout, EqualColumnLayout, PageHeadingLayout } from '../react'
 
-const pageHeadingLayoutStory = storiesOf('PageHeadingLayout', module)
+storiesOf('PageHeadingLayout', module)
   .addDecorator(themeDecorator(addons))
   .add('default', _ => (
     <PageHeadingLayout heading={<h2>My Page</h2>}>My content</PageHeadingLayout>

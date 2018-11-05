@@ -150,7 +150,8 @@ export default {
     right: core.layout.spacingXSmall,
     display: 'flex',
     alignItems: 'center',
-    color: core.colors.gray03
+    color: core.colors.gray03,
+    cursor: 'pointer'
   },
   [`.psds-dropdown__icon.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03
@@ -213,13 +214,14 @@ export default {
   // __menu
   '.psds-dropdown__menu': {
     position: 'absolute',
-    zIndex: '1',
+    zIndex: 980,
     marginTop: core.layout.spacingXXSmall
   },
 
   // __page-overlay
   '.psds-dropdown__page-overlay': {
     position: 'fixed',
+    zIndex: 970,
     top: 0,
     right: 0,
     bottom: 0,

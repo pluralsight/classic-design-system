@@ -1,28 +1,23 @@
 import { action } from '@storybook/addon-actions'
-import addons from '@storybook/addons'
-import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import PropTypes from 'prop-types'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import Button from '../react'
 
-const appearanceStory = storiesOf('appearance', module).addDecorator(
-  themeDecorator(addons)
-)
+const appearanceStory = storiesOf('appearance', module)
 Object.keys(Button.appearances).forEach(app =>
   appearanceStory.add(app, _ => <Button appearance={app}>Click me</Button>)
 )
 
-const sizeStory = storiesOf('size', module).addDecorator(themeDecorator(addons))
+const sizeStory = storiesOf('size', module)
 Object.keys(Button.sizes).forEach(size =>
   sizeStory.add(size, _ => <Button size={size}>Click me</Button>)
 )
 
-const iconStory = storiesOf('icon', module).addDecorator(themeDecorator(addons))
+const iconStory = storiesOf('icon', module)
 Object.keys(Button.appearances).forEach(app =>
   iconStory.add(app, _ => (
     <Button appearance={app} icon={<Icon id={Icon.ids.check} />}>
@@ -56,9 +51,7 @@ Object.keys(Button.appearances).forEach(app =>
   )
 )
 
-const disabledStory = storiesOf('disabled', module).addDecorator(
-  themeDecorator(addons)
-)
+const disabledStory = storiesOf('disabled', module)
 Object.keys(Button.appearances).forEach(app =>
   disabledStory.add(app, _ => (
     <Button onClick={action('should never click')} disabled appearance={app}>
@@ -72,8 +65,7 @@ disabledStory.add('with icon', _ => (
   </Button>
 ))
 
-const asLink = storiesOf('as link', module)
-  .addDecorator(themeDecorator(addons))
+storiesOf('as link', module)
   .add('default', _ => (
     <Button href="https://duckduckgo.com">Click as link</Button>
   ))
@@ -83,22 +75,17 @@ const asLink = storiesOf('as link', module)
     </Button>
   ))
 
-const refExample = storiesOf('with ref', module)
-  .addDecorator(themeDecorator(addons))
-  .add('ref to handle focus', _ => (
-    <Button innerRef={el => el && el.focus()}>Should be focused</Button>
-  ))
+storiesOf('with ref', module).add('ref to handle focus', _ => (
+  <Button innerRef={el => el && el.focus()}>Should be focused</Button>
+))
 
-const onClickExample = storiesOf('with onClick', module)
-  .addDecorator(themeDecorator(addons))
-  .add('clicks once', _ => (
-    <Button onClick={action('click count')} icon={<Icon id={Icon.ids.check} />}>
-      Clicks once
-    </Button>
-  ))
+storiesOf('with onClick', module).add('clicks once', _ => (
+  <Button onClick={action('click count')} icon={<Icon id={Icon.ids.check} />}>
+    Clicks once
+  </Button>
+))
 
-const overrideStylesExample = storiesOf('override styles', module)
-  .addDecorator(themeDecorator(addons))
+storiesOf('override styles', module)
   .add('with style', _ => (
     <Button style={{ background: 'red' }} icon={<Icon id={Icon.ids.check} />}>
       Red Button
@@ -113,11 +100,8 @@ const overrideStylesExample = storiesOf('override styles', module)
     )
   })
 
-const propsExample = storiesOf('props pass through', module)
-  .addDecorator(themeDecorator(addons))
-  .add('aria-expanded', _ => (
-    <Button aria-expanded={true}>aria-expanded</Button>
-  ))
+storiesOf('props pass through', module)
+  .add('aria-expanded', _ => <Button aria-expanded>aria-expanded</Button>)
   .add('role', _ => <Button role="link">Role Link</Button>)
   .add('data-something', _ => (
     <Button data-something="wow">Custom data attributes</Button>
@@ -127,9 +111,7 @@ const propsExample = storiesOf('props pass through', module)
     <Button onMouseOver={action('mouse over')}>Should not mouseover</Button>
   ))
 
-const loadingExample = storiesOf('loading', module).addDecorator(
-  themeDecorator(addons)
-)
+const loadingExample = storiesOf('loading', module)
 Object.keys(Button.sizes).forEach(size =>
   loadingExample.add(size, _ => (
     <Button onClick={action('is disabled')} size={size} loading>
@@ -151,25 +133,34 @@ loadingExample.add('lone icon', _ => (
     loading
   />
 ))
+
 class SwitchToLoading extends React.Component {
   constructor(props) {
     super(props)
     this.state = { loading: false }
   }
+
   componentDidMount() {
     this.timeout = setTimeout(_ => {
       this.setState({ loading: !this.state.loading })
     }, 500)
   }
+
   componentWillUnmount() {
     clearInterval(this.timeout)
   }
+
   render() {
     return React.cloneElement(this.props.children, {
       loading: this.state.loading
     })
   }
 }
+
+SwitchToLoading.propTypes = {
+  children: PropTypes.node.isRequired
+}
+
 loadingExample.add('no icon, hidden text', _ => (
   <SwitchToLoading>
     <Button size={Button.sizes.large} loading>
