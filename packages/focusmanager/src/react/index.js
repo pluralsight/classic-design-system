@@ -39,19 +39,29 @@ class FocusManager extends React.Component {
   }
 
   componentDidMount() {
-    this.focusableNodes = getFocusableChildNodes(this.el)
-
+    this.handleComponentUpdate()
     const firstNode = this.focusableNodes[0]
-    if (this.props.autofocus && firstNode) firstNode.focus()
+
+    if (this.props.autofocus) {
+      const toFocus = firstNode || this.el
+      toFocus.focus()
+    }
   }
 
   componentDidUpdate() {
-    this.focusableNodes = getFocusableChildNodes(this.el)
+    this.handleComponentUpdate()
   }
 
   componentWillUnmount() {
     const { prevFocusedElement: prev } = this
     if (this.props.returnFocus && prev && prev.focus) prev.focus()
+  }
+
+  handleComponentUpdate() {
+    this.focusableNodes = getFocusableChildNodes(this.el)
+
+    if (this.focusableNodes.length === 0) this.el.setAttribute('tabindex', 0)
+    else this.el.removeAttribute('tabindex')
   }
 
   handleKeyDown(event) {
