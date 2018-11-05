@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import FocusLock from '../index'
+import FocusManager from '../index'
 
 const children = (
   <ul>
@@ -20,13 +20,13 @@ const children = (
   </ul>
 )
 
-describe('FocusLock', () => {
+describe('FocusManager', () => {
   beforeEach(() => {
     document.activeElement.blur()
   })
 
   it('has defaultProps', () => {
-    expect(FocusLock.defaultProps).toMatchInlineSnapshot(`
+    expect(FocusManager.defaultProps).toMatchInlineSnapshot(`
 Object {
   "as": "div",
   "autofocus": true,
@@ -37,20 +37,22 @@ Object {
 
   describe('WITH focusable children', () => {
     it('renders successfully', () => {
-      expect(() => mount(<FocusLock>{children}</FocusLock>)).not.toThrow()
+      expect(() => mount(<FocusManager>{children}</FocusManager>)).not.toThrow()
     })
   })
 
   describe('WITHOUT focusable children', () => {
     it('renders successfully', () => {
-      expect(() => mount(<FocusLock>unfocusable</FocusLock>)).not.toThrow()
+      expect(() =>
+        mount(<FocusManager>unfocusable</FocusManager>)
+      ).not.toThrow()
     })
   })
 
   describe('autofocus', () => {
     describe('when enabled', () => {
       it('focuses the first focusable child', () => {
-        const wrapper = mount(<FocusLock autofocus>{children}</FocusLock>)
+        const wrapper = mount(<FocusManager autofocus>{children}</FocusManager>)
 
         const el = wrapper.find('a[href]').first()
 
@@ -60,7 +62,7 @@ Object {
 
     describe('when disabled', () => {
       it('does NOT focus any children', () => {
-        mount(<FocusLock autofocus={false}>{children}</FocusLock>)
+        mount(<FocusManager autofocus={false}>{children}</FocusManager>)
 
         expect(document.activeElement).toEqual(document.body)
       })
@@ -70,7 +72,7 @@ Object {
   describe('on keydown', () => {
     describe('when first child tabs backward', () => {
       it('focuses the last child', () => {
-        const wrapper = mount(<FocusLock>{children}</FocusLock>)
+        const wrapper = mount(<FocusManager>{children}</FocusManager>)
 
         const firstEl = wrapper.find('a[href]').first()
         const lastEl = wrapper.find('a[href]').last()
@@ -84,7 +86,7 @@ Object {
 
     describe('when last child tabs forward', () => {
       it('focuses the first child', () => {
-        const wrapper = mount(<FocusLock>{children}</FocusLock>)
+        const wrapper = mount(<FocusManager>{children}</FocusManager>)
 
         const firstEl = wrapper.find('a[href]').first()
         const lastEl = wrapper.find('a[href]').last()
@@ -103,7 +105,7 @@ Object {
       document.body.appendChild(button)
       button.focus()
 
-      const wrapper = mount(<FocusLock>{children}</FocusLock>)
+      const wrapper = mount(<FocusManager>{children}</FocusManager>)
       const lastEl = wrapper.find('a[href]').last()
 
       lastEl.getDOMNode().focus()

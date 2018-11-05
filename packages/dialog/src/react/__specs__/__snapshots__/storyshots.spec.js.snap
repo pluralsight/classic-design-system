@@ -897,6 +897,7 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
   >
     <div
       data-css-1zn26r=""
+      onKeyDown={[Function]}
     >
       <div>
         <h1
@@ -990,6 +991,7 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
   >
     <div
       data-css-h7odnv=""
+      onKeyDown={[Function]}
     >
       <div>
         <h1
@@ -1083,6 +1085,7 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
   >
     <div
       data-css-1g92n04=""
+      onKeyDown={[Function]}
     >
       <div>
         <h1
@@ -1176,6 +1179,7 @@ exports[`Storyshots tailPosition none 1`] = `
   >
     <div
       data-css-2hqpvr=""
+      onKeyDown={[Function]}
     >
       <div>
         <h1
@@ -1269,6 +1273,7 @@ exports[`Storyshots tailPosition topCenter 1`] = `
   >
     <div
       data-css-163zepq=""
+      onKeyDown={[Function]}
     >
       <div>
         <h1
@@ -1362,6 +1367,7 @@ exports[`Storyshots tailPosition topLeft 1`] = `
   >
     <div
       data-css-15k9c3c=""
+      onKeyDown={[Function]}
     >
       <div>
         <h1
@@ -1455,6 +1461,7 @@ exports[`Storyshots tailPosition topRight 1`] = `
   >
     <div
       data-css-13zevtd=""
+      onKeyDown={[Function]}
     >
       <div>
         <h1

@@ -24,7 +24,7 @@ const getFocusableChildNodes = el => {
   return Array.from(nodelist || []).filter(node => !hasNegativeTabIndex(node))
 }
 
-class FocusLock extends React.Component {
+class FocusManager extends React.Component {
   constructor(props) {
     super(props)
 
@@ -87,17 +87,17 @@ class FocusLock extends React.Component {
   }
 }
 
-FocusLock.propTypes = {
+FocusManager.propTypes = {
   as: PropTypes.oneOf(['div']).isRequired,
   autofocus: PropTypes.bool.isRequired,
   children: PropTypes.node.isRequired,
   returnFocus: PropTypes.bool.isRequired
 }
 
-FocusLock.defaultProps = {
+FocusManager.defaultProps = {
   as: 'div',
   autofocus: true,
   returnFocus: true
 }
 
-export default FocusLock
+export default FocusManager

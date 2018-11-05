@@ -1,7 +1,7 @@
 {
-  "name": "@pluralsight/ps-design-system-focuslock",
+  "name": "@pluralsight/ps-design-system-focusmanager",
   "version": "1.0.0",
-  "description": "FocusLock UI Component for the Pluralsight Design System",
+  "description": "FocusManager UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "main": "index.js",

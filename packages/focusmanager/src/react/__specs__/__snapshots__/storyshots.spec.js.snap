@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FocusLock default 1`] = `
+exports[`Storyshots FocusManager default 1`] = `
 <div
   data-css-claeju=""
 >

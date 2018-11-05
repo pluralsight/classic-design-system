@@ -2,7 +2,7 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import FocusLock from '@pluralsight/ps-design-system-focuslock/react'
+import FocusManager from '@pluralsight/ps-design-system-focusmanager/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
@@ -96,22 +96,17 @@ class Dialog extends React.Component {
   render() {
     const { props } = this
 
-    const hasFocusLock = !!props.onClose
-
     const dialogProps = {
       ...styles.dialog(props),
       ...(!props.disableCloseOnEscape && typeof props.onClose === 'function'
         ? { onKeyUp: this.handleKeyUp }
         : null),
       ...(props.style ? { style: props.style } : null),
-      ...(props.className ? { className: props.className } : null),
-      ...(hasFocusLock && { autofocus: !props.disableFocusOnMount })
+      ...(props.className ? { className: props.className } : null)
     }
 
-    const Container = hasFocusLock ? FocusLock : 'div'
-
     return (
-      <Container {...dialogProps}>
+      <FocusManager autofocus={!props.disableFocusOnMount} {...dialogProps}>
         <Theme name={Theme.names.light}>
           <div>
             {!props.disableCloseButton &&
@@ -121,7 +116,7 @@ class Dialog extends React.Component {
             {props.children}
           </div>
         </Theme>
-      </Container>
+      </FocusManager>
     )
   }
 }
