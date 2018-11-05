@@ -1,17 +1,12 @@
 import { action } from '@storybook/addon-actions'
-import addons from '@storybook/addons'
-import core from '@pluralsight/ps-design-system-core'
+import { storiesOf } from '@storybook/react'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { storiesOf } from '@storybook/react'
+
+import core from '@pluralsight/ps-design-system-core'
 import TextInput from '@pluralsight/ps-design-system-textinput/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import DatePicker from '../react'
-
-const PaddingDecorator = storyFn => (
-  <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
-)
+import DatePicker from '..'
 
 class StateDemo extends React.Component {
   constructor(props) {
@@ -45,8 +40,6 @@ StateDemo.propTypes = {
 }
 
 storiesOf('labels', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
   .add('none', _ => <DatePicker />)
   .add('compare w/ textinput', _ => (
     <div>
@@ -65,15 +58,11 @@ storiesOf('labels', module)
   ))
 
 storiesOf('value', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
   .add('single slash-separated value', _ => <DatePicker value="12/07/1941" />)
   .add('updated value, no initial', _ => <StateDemo />)
   .add('updated value, w/ initial', _ => <StateDemo value="3/15/1995" />)
 
 const appearanceStory = storiesOf('appearance', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
 Object.keys(DatePicker.appearances).forEach(appearance =>
   appearanceStory.add(appearance, _ => <DatePicker appearance={appearance} />)
 )
@@ -83,25 +72,18 @@ Object.keys(DatePicker.appearances).forEach(appearance =>
   ))
 )
 
-storiesOf('disabled', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
-  .add('compare', _ => (
-    <div>
-      <DatePicker label="Normal" subLabel="Still normal" />
-      <DatePicker label="I'm not usable" subLabel="Neither am I" disabled />
-    </div>
-  ))
+storiesOf('disabled', module).add('compare', _ => (
+  <div>
+    <DatePicker label="Normal" subLabel="Still normal" />
+    <DatePicker label="I'm not usable" subLabel="Neither am I" disabled />
+  </div>
+))
 
 storiesOf('whitelist', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
   .add('name', _ => <DatePicker name="myFieldNameOfPower" />)
   .add('onChange', _ => <DatePicker onChange={action('I changed')} />)
 
 storiesOf('layouts', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
   .add('full width', _ => (
     <div style={{ border: '1px solid blue', width: '500px' }}>
       <DatePicker label="First" style={{ display: 'block', width: '100%' }} />

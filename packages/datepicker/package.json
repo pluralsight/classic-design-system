@@ -40,9 +40,10 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.8.5",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.2.1",
-    "@pluralsight/ps-design-system-textinput": "^0.5.9",
+    "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-storybook-addon-center": "*",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "*",
+    "@pluralsight/ps-design-system-textinput": "*",
     "@storybook/addon-actions": "^4.0.0",
     "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/react": "^4.0.0",
