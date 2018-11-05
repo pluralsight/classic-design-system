@@ -1,4 +1,5 @@
 import * as glamor from 'glamor'
+import Halo from '@pluralsight/ps-design-system-halo/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
@@ -33,88 +34,8 @@ const styles = {
       css[`.psds-checkbox__square.psds-theme--${themeName}`],
       checked && css['.psds-checkbox__square--checked'],
       {
-        ':focus': css['.psds-checkbox__square:focus'],
-        ...(!disabled && {
-          ':focus:before': {
-            ...css[
-              '.psds-checkbox__square:focus:before .psds-checkbox__square--error:before'
-            ],
-            ...css[
-              `.psds-checkbox__square.psds-theme--${themeName}:focus:before .psds-checkbox__square--error.psds-theme--${themeName}:before`
-            ],
-            ...css['.psds-checkbox__square:focus:before'],
-            ...(checked && {
-              ...css[
-                '.psds-checkbox__square--checked:focus:before, .psds-checkbox__square--checked--error:before'
-              ],
-              ...css[
-                `.psds-checkbox__square--checked.psds-theme--${themeName}:focus:before, .psds-checkbox__square--checked--error.psds-theme--${themeName}:before`
-              ]
-            }),
-            ...css[
-              `.psds-checkbox__square.psds-theme--${themeName}:focus:before`
-            ]
-          },
-          ':focus:after': {
-            ...css[
-              '.psds-checkbox__square:focus:after .psds-checkbox__square--error:after'
-            ],
-            ...css[
-              `.psds-checkbox__square.psds-theme--${themeName}:focus:after .psds-checkbox__square--error.psds-theme--${themeName}:after`
-            ],
-            ...css['.psds-checkbox__square:focus:after'],
-            ...(checked && {
-              ...css[
-                '.psds-checkbox__square--checked:focus:after, .psds-checkbox__square--checked--error:after'
-              ],
-              ...css[
-                `.psds-checkbox__square--checked.psds-theme--${themeName}:focus:after, .psds-checkbox__square--checked--error.psds-theme--${themeName}:after`
-              ]
-            })
-          }
-        })
-      },
-      error
-        ? {
-            ':before': {
-              ...css[
-                '.psds-checkbox__square:focus:before .psds-checkbox__square--error:before'
-              ],
-              ...css[
-                `.psds-checkbox__square.psds-theme--${themeName}:focus:before .psds-checkbox__square--error.psds-theme--${themeName}:before`
-              ],
-              ...css['.psds-checkbox__square--error:before'],
-              ...css[
-                `.psds-checkbox__square--error.psds-theme--${themeName}:before`
-              ],
-              ...(checked && {
-                ...css[
-                  '.psds-checkbox__square--checked:focus:before, .psds-checkbox__square--checked--error:before'
-                ],
-                ...css[
-                  `.psds-checkbox__square--checked.psds-theme--${themeName}:focus:before, .psds-checkbox__square--checked--error.psds-theme--${themeName}:before`
-                ]
-              })
-            },
-            ':after': {
-              ...css[
-                '.psds-checkbox__square:focus:after .psds-checkbox__square--error:after'
-              ],
-              ...css[
-                `.psds-checkbox__square.psds-theme--${themeName}:focus:after .psds-checkbox__square--error.psds-theme--${themeName}:after`
-              ],
-              ...css['.psds-checkbox__square--error:after'],
-              ...(checked && {
-                ...css[
-                  '.psds-checkbox__square--checked:focus:after, .psds-checkbox__square--checked--error:after'
-                ],
-                ...css[
-                  `.psds-checkbox__square--checked.psds-theme--${themeName}:focus:after, .psds-checkbox__square--checked--error.psds-theme--${themeName}:after`
-                ]
-              })
-            }
-          }
-        : null
+        ':focus': css['.psds-checkbox__square:focus']
+      }
     ),
   checkmark: _ => glamor.css(css['.psds-checkbox__checkmark']),
   input: () => glamor.css(css['.psds-checkbox__input']),
@@ -173,15 +94,24 @@ class Checkbox extends React.Component {
         onKeyDown={allProps.disabled ? null : this.handleKeyDown}
         {...styles.checkbox(allProps)}
       >
-        <div
-          role="checkbox"
-          aria-checked={allProps.checked}
-          tabIndex={allProps.disabled ? '-1' : '0'}
-          ref={el => (this.square = el)}
-          {...styles.square(allProps)}
+        <Halo
+          appearance={
+            allProps.error ? Halo.appearances.error : Halo.appearances.default
+          }
+          gapSize={Halo.gapSizes.small}
+          visible={allProps.error}
+          visibleOnFocus={!allProps.disabled}
         >
-          {allProps.checked && <Checkmark />}
-        </div>
+          <div
+            role="checkbox"
+            aria-checked={allProps.checked}
+            tabIndex={allProps.disabled ? '-1' : '0'}
+            ref={el => (this.square = el)}
+            {...styles.square(allProps)}
+          >
+            {allProps.checked && <Checkmark />}
+          </div>
+        </Halo>
         <input
           {...propsUtil.whitelistProps(allProps, checkboxHtmlPropsWhitelist)}
           tabIndex="-1"

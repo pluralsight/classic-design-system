@@ -17,23 +17,27 @@ exports[`Storyshots Checkbox checked 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        aria-checked={true}
-        data-css-1vvay1p=""
-        role="checkbox"
-        tabIndex="0"
+        data-css-xxzqzs=""
       >
-        <svg
-          aria-label="Checkmark"
-          data-css-a3uikz=""
-          role="img"
-          version="1.1"
-          viewBox="0 0 16 16"
-          xmlns="http://www.w3.org/2000/svg"
+        <div
+          aria-checked={true}
+          data-css-1erplld=""
+          role="checkbox"
+          tabIndex="0"
         >
-          <polygon
-            points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
-          />
-        </svg>
+          <svg
+            aria-label="Checkmark"
+            data-css-a3uikz=""
+            role="img"
+            version="1.1"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polygon
+              points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
+            />
+          </svg>
+        </div>
       </div>
       <input
         checked={true}
@@ -71,11 +75,60 @@ exports[`Storyshots Checkbox default 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        aria-checked={false}
-        data-css-14w6mk2=""
-        role="checkbox"
-        tabIndex="0"
+        data-css-xxzqzs=""
+      >
+        <div
+          aria-checked={false}
+          data-css-4f5v7u=""
+          role="checkbox"
+          tabIndex="0"
+        />
+      </div>
+      <input
+        checked={false}
+        data-css-gyrv08=""
+        name="colorRed"
+        readOnly={true}
+        tabIndex="-1"
+        type="checkbox"
+        value="red"
       />
+      <div
+        data-css-pgc406=""
+      >
+        Red
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Checkbox disabled & errored 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-1gz58lp=""
+      onClick={null}
+      onKeyDown={null}
+    >
+      <div
+        data-css-8r33xr=""
+      >
+        <div
+          aria-checked={false}
+          data-css-4f5v7u=""
+          role="checkbox"
+          tabIndex="-1"
+        />
+      </div>
       <input
         checked={false}
         data-css-gyrv08=""
@@ -112,11 +165,15 @@ exports[`Storyshots Checkbox disabled 1`] = `
       onKeyDown={null}
     >
       <div
-        aria-checked={false}
-        data-css-4f5v7u=""
-        role="checkbox"
-        tabIndex="-1"
-      />
+        data-css-ueukq1=""
+      >
+        <div
+          aria-checked={false}
+          data-css-4f5v7u=""
+          role="checkbox"
+          tabIndex="-1"
+        />
+      </div>
       <input
         checked={false}
         data-css-gyrv08=""
@@ -154,23 +211,27 @@ exports[`Storyshots Checkbox error 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          aria-checked={true}
-          data-css-16dprvt=""
-          role="checkbox"
-          tabIndex="0"
+          data-css-1fmlnky=""
         >
-          <svg
-            aria-label="Checkmark"
-            data-css-a3uikz=""
-            role="img"
-            version="1.1"
-            viewBox="0 0 16 16"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            aria-checked={true}
+            data-css-1erplld=""
+            role="checkbox"
+            tabIndex="0"
           >
-            <polygon
-              points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
-            />
-          </svg>
+            <svg
+              aria-label="Checkmark"
+              data-css-a3uikz=""
+              role="img"
+              version="1.1"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polygon
+                points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
+              />
+            </svg>
+          </div>
         </div>
         <input
           checked={true}
@@ -193,11 +254,15 @@ exports[`Storyshots Checkbox error 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          aria-checked={false}
-          data-css-1h6c3kx=""
-          role="checkbox"
-          tabIndex="0"
-        />
+          data-css-1fmlnky=""
+        >
+          <div
+            aria-checked={false}
+            data-css-4f5v7u=""
+            role="checkbox"
+            tabIndex="0"
+          />
+        </div>
         <input
           checked={false}
           data-css-gyrv08=""
@@ -247,11 +312,15 @@ exports[`Storyshots Checkbox state demo 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          aria-checked={false}
-          data-css-14w6mk2=""
-          role="checkbox"
-          tabIndex="0"
-        />
+          data-css-xxzqzs=""
+        >
+          <div
+            aria-checked={false}
+            data-css-4f5v7u=""
+            role="checkbox"
+            tabIndex="0"
+          />
+        </div>
         <input
           checked={false}
           data-css-gyrv08=""
@@ -273,11 +342,15 @@ exports[`Storyshots Checkbox state demo 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          aria-checked={false}
-          data-css-14w6mk2=""
-          role="checkbox"
-          tabIndex="0"
-        />
+          data-css-xxzqzs=""
+        >
+          <div
+            aria-checked={false}
+            data-css-4f5v7u=""
+            role="checkbox"
+            tabIndex="0"
+          />
+        </div>
         <input
           checked={false}
           data-css-gyrv08=""
@@ -299,11 +372,15 @@ exports[`Storyshots Checkbox state demo 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          aria-checked={false}
-          data-css-14w6mk2=""
-          role="checkbox"
-          tabIndex="0"
-        />
+          data-css-xxzqzs=""
+        >
+          <div
+            aria-checked={false}
+            data-css-4f5v7u=""
+            role="checkbox"
+            tabIndex="0"
+          />
+        </div>
         <input
           checked={false}
           data-css-gyrv08=""
