@@ -1,14 +1,11 @@
 ## Instructions
 
 - fill in title: format of "<package name>: short description"
-- choose text format: "bug" or "enhancement request" below, fill in, delete other section
-- label: attach bug or enhancement request label
+- choose: "bug" or "enhancement request" below, fill it in, and delete other section
 
 ## Bug
 
 ### Expected behavior
-
-
 
 ### Actual behavior
 
@@ -17,7 +14,7 @@ Link to your source code in your application repo
 
 ### Steps to repro
 
-1. 
+1.
 
 ### Related packages
 
@@ -28,7 +25,6 @@ Link to your source code in your application repo
 
 - OS - MacOS 10.12
 - Browser version - Chrome v60
-
 
 ## Enhancement Request
 
@@ -42,11 +38,8 @@ Problems/friction you encounter.
 
 ### The Value Add
 
-Why this should be added/changed in the Design System.  Where we could use it.
+Why this should be added/changed in the Design System. Where we could use it.
 
 ### The Tradeoffs
 
-What we give up or deoptimize to get it.  The costs.
-
-
-
+What we give up or deoptimize to get it. The costs.
