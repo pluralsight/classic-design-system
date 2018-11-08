@@ -69,13 +69,9 @@ class Button extends React.Component {
         {...styles.button(allProps)}
       >
         <Halo
-          appearance={
-            !allProps._isFocused && allProps._error
-              ? Halo.appearances.error
-              : Halo.appearances.default
-          }
+          error={allProps._error}
           shape={Halo.shapes.pill}
-          visible={props._error || props._isFocused}
+          visibleOnFocus={!allProps._disabled}
         >
           <div
             role="radio"
