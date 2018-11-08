@@ -194,16 +194,7 @@ class Dropdown extends React.Component {
             <div {...styles.label(allProps)}>{allProps.label}</div>
           )}
           <div {...styles.fieldContainer(allProps)}>
-            <Halo
-              appearance={
-                allProps.error
-                  ? Halo.appearances.error
-                  : Halo.appearances.default
-              }
-              gapSize={Halo.gapSizes.small}
-              visible={allProps.error}
-              visibleOnFocus
-            >
+            <Halo error={allProps.error} gapSize={Halo.gapSizes.small}>
               <div {...styles.fieldAligner(allProps)}>
                 <button
                   {...propsUtil.whitelistProps(
