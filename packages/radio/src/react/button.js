@@ -72,6 +72,7 @@ class Button extends React.Component {
           error={allProps._error}
           shape={Halo.shapes.pill}
           visibleOnFocus={!allProps._disabled}
+          visible={allProps._isFocused}
         >
           <div
             role="radio"
