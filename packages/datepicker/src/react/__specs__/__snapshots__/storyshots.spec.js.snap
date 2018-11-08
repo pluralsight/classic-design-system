@@ -17,7 +17,7 @@ exports[`Storyshots appearance default 1`] = `
       onFocus={[Function]}
     >
       <div
-        data-css-1dfl16l=""
+        data-css-19jityq=""
       >
         <div
           data-css-17azrqv=""
@@ -134,7 +134,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
         Problem field
       </div>
       <div
-        data-css-mlz2qu=""
+        data-css-149rkdx=""
       >
         <div
           data-css-17azrqv=""
@@ -264,7 +264,7 @@ exports[`Storyshots appearance subtle 1`] = `
       onFocus={[Function]}
     >
       <div
-        data-css-1dfl16l=""
+        data-css-19jityq=""
       >
         <div
           data-css-1g7d28l=""
@@ -381,7 +381,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         Problem field
       </div>
       <div
-        data-css-mlz2qu=""
+        data-css-149rkdx=""
       >
         <div
           data-css-1g7d28l=""
@@ -517,7 +517,7 @@ exports[`Storyshots disabled compare 1`] = `
           Normal
         </div>
         <div
-          data-css-1dfl16l=""
+          data-css-19jityq=""
         >
           <div
             data-css-17azrqv=""
@@ -624,7 +624,7 @@ exports[`Storyshots disabled compare 1`] = `
           I'm not usable
         </div>
         <div
-          data-css-1dfl16l=""
+          data-css-19jityq=""
         >
           <div
             data-css-17azrqv=""
@@ -750,7 +750,7 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
           onFocus={[Function]}
         >
           <div
-            data-css-1dfl16l=""
+            data-css-19jityq=""
           >
             <div
               data-css-17azrqv=""
@@ -850,7 +850,7 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
             data-css-1r967oi=""
           >
             <div
-              data-css-1dfl16l=""
+              data-css-19jityq=""
             >
               <input
                 data-css-ly16us=""
@@ -888,7 +888,7 @@ exports[`Storyshots labels label 1`] = `
         Some label
       </div>
       <div
-        data-css-1dfl16l=""
+        data-css-19jityq=""
       >
         <div
           data-css-17azrqv=""
@@ -1005,7 +1005,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
         Some label
       </div>
       <div
-        data-css-1dfl16l=""
+        data-css-19jityq=""
       >
         <div
           data-css-17azrqv=""
@@ -1122,7 +1122,7 @@ exports[`Storyshots labels none 1`] = `
       onFocus={[Function]}
     >
       <div
-        data-css-1dfl16l=""
+        data-css-19jityq=""
       >
         <div
           data-css-17azrqv=""
@@ -1234,7 +1234,7 @@ exports[`Storyshots labels subLabel 1`] = `
       onFocus={[Function]}
     >
       <div
-        data-css-1dfl16l=""
+        data-css-19jityq=""
       >
         <div
           data-css-17azrqv=""
@@ -1370,7 +1370,7 @@ exports[`Storyshots layouts full width 1`] = `
           First
         </div>
         <div
-          data-css-1dfl16l=""
+          data-css-19jityq=""
         >
           <div
             data-css-17azrqv=""
@@ -1478,7 +1478,7 @@ exports[`Storyshots layouts full width 1`] = `
           Second
         </div>
         <div
-          data-css-mlz2qu=""
+          data-css-149rkdx=""
         >
           <div
             data-css-17azrqv=""
@@ -1604,7 +1604,7 @@ exports[`Storyshots layouts full width 1`] = `
           Third
         </div>
         <div
-          data-css-1dfl16l=""
+          data-css-19jityq=""
         >
           <div
             data-css-1g7d28l=""
@@ -1712,7 +1712,7 @@ exports[`Storyshots layouts full width 1`] = `
           Fourth
         </div>
         <div
-          data-css-mlz2qu=""
+          data-css-149rkdx=""
         >
           <div
             data-css-1g7d28l=""
@@ -1858,7 +1858,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
           onFocus={[Function]}
         >
           <div
-            data-css-1dfl16l=""
+            data-css-19jityq=""
           >
             <div
               data-css-1g7d28l=""
@@ -1980,7 +1980,7 @@ exports[`Storyshots value single slash-separated value 1`] = `
       onFocus={[Function]}
     >
       <div
-        data-css-1dfl16l=""
+        data-css-19jityq=""
       >
         <div
           data-css-17azrqv=""
@@ -2104,7 +2104,7 @@ exports[`Storyshots value updated value, no initial 1`] = `
         onFocus={[Function]}
       >
         <div
-          data-css-1dfl16l=""
+          data-css-19jityq=""
         >
           <div
             data-css-17azrqv=""
@@ -2230,7 +2230,7 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
         onFocus={[Function]}
       >
         <div
-          data-css-1dfl16l=""
+          data-css-19jityq=""
         >
           <div
             data-css-17azrqv=""
@@ -2345,7 +2345,7 @@ exports[`Storyshots whitelist name 1`] = `
       onFocus={[Function]}
     >
       <div
-        data-css-1dfl16l=""
+        data-css-19jityq=""
       >
         <div
           data-css-17azrqv=""
@@ -2458,7 +2458,7 @@ exports[`Storyshots whitelist onChange 1`] = `
       onFocus={[Function]}
     >
       <div
-        data-css-1dfl16l=""
+        data-css-19jityq=""
       >
         <div
           data-css-17azrqv=""
