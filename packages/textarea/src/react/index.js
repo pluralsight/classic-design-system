@@ -87,14 +87,7 @@ const TextArea = (props, context) => {
         <div {...styles.label(allProps)}>{allProps.label}</div>
       )}
       <div {...styles.fieldContainer(allProps)}>
-        <Halo
-          appearance={
-            props.error ? Halo.appearances.error : Halo.appearances.default
-          }
-          gapSize={Halo.gapSizes.small}
-          visible={!!props.error}
-          visibleOnFocus
-        >
+        <Halo error={allProps.error} gapSize={Halo.gapSizes.small}>
           <textarea
             {...propsUtil.whitelistProps(allProps, textAreaHtmlPropsWhitelist)}
             {...styles.field(allProps)}
