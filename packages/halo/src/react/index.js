@@ -30,10 +30,9 @@ const styles = {
       { ':after': css[`${shape}:after`] },
       { ':after': css[`${gapSize}:after`] },
       { ':after': css[`${gapTheme}:after`] },
-      { ':focus:after': css[`${base}:focus:after`] },
 
-      (props.visible || props.error) && { ':after': css[`${visible}:after`] },
       props.error && { ':after': css[`${error}:after`] },
+      props.visible && { ':after': css[`${visible}:after`] },
       props.visibleOnFocus && {
         ':focus-within:after': css[`${visibleOnFocus}:focus-within:after`],
         '[focus-within]:after': css[`${visibleOnFocus}[focus-within]:after`]
