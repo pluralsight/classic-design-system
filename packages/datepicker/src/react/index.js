@@ -1,4 +1,5 @@
 import * as glamor from 'glamor'
+import Halo from '@pluralsight/ps-design-system-halo/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -38,45 +39,7 @@ const styles = {
     glamor.css(
       css['.psds-date-picker__field-container'],
       css[`.psds-date-picker__field-container--appearance-${appearance}`],
-      css[`.psds-date-picker__field-container.psds-theme--${themeName}`],
-      error
-        ? {
-            ...css[
-              `.psds-date-picker__field-container--error.psds-theme--${themeName}`
-            ],
-            ':before': {
-              ...css['.psds-date-picker__field-container--error:before'],
-              ...css[
-                `.psds-date-picker__field-container--error.psds-theme--${themeName}:before`
-              ]
-            },
-            ':after': {
-              ...css['.psds-date-picker__field-container--error:after'],
-              ...css[
-                `.psds-date-picker__field-container--error.psds-theme--${themeName}:after`
-              ]
-            }
-          }
-        : null,
-      isFocused
-        ? {
-            ...css[
-              `.psds-date-picker__field-container.psds-theme--${themeName}:focus`
-            ],
-            ':before': {
-              ...css['.psds-date-picker__field-container:focus:before'],
-              ...css[
-                `.psds-date-picker__field-container.psds-theme--${themeName}:focus:before`
-              ]
-            },
-            ':after': {
-              ...css['.psds-date-picker__field-container:focus:after'],
-              ...css[
-                `.psds-date-picker__field-container.psds-theme--${themeName}:focus:after`
-              ]
-            }
-          }
-        : null
+      css[`.psds-date-picker__field-container.psds-theme--${themeName}`]
     ),
   icon: ({ appearance, themeName }) =>
     glamor.css(
@@ -255,66 +218,68 @@ class DatePicker extends React.Component {
         {allProps.label && (
           <div {...styles.label(allProps)}>{allProps.label}</div>
         )}
-        <div {...styles.fieldContainer(allProps, state)}>
-          <SubField
-            appearance={allProps.appearance}
-            onChange={this.handleChange}
-            onFocus={this.handleSubFieldFocus}
-            onBlur={this.handleSubFieldBlur}
-            value={state.mm}
-            name="mm"
-            disabled={props.disabled}
-            style={{ width: '32px' }}
-          />
-          <SubFieldDivider appearance={props.appearance} />
-          <SubField
-            appearance={allProps.appearance}
-            onChange={this.handleChange}
-            onFocus={this.handleSubFieldFocus}
-            onBlur={this.handleSubFieldBlur}
-            value={state.dd}
-            name="dd"
-            disabled={props.disabled}
-            style={{ width: '28px' }}
-          />
-          <SubFieldDivider appearance={props.appearance} />
-          <SubField
-            appearance={allProps.appearance}
-            onChange={this.handleChange}
-            onFocus={this.handleSubFieldFocus}
-            onBlur={this.handleSubFieldBlur}
-            value={state.yyyy}
-            name="yyyy"
-            disabled={props.disabled}
-            style={{ width: '50px' }}
-          />
-          <input
-            tabIndex="-1"
-            readOnly
-            {...styles.field(allProps)}
-            {...propsUtil.whitelistProps(
-              allProps,
-              datePickerHtmlPropsWhitelist
+        <Halo error={allProps.error} gapSize={Halo.gapSizes.small}>
+          <div {...styles.fieldContainer(allProps, state)}>
+            <SubField
+              appearance={allProps.appearance}
+              onChange={this.handleChange}
+              onFocus={this.handleSubFieldFocus}
+              onBlur={this.handleSubFieldBlur}
+              value={state.mm}
+              name="mm"
+              disabled={props.disabled}
+              style={{ width: '32px' }}
+            />
+            <SubFieldDivider appearance={props.appearance} />
+            <SubField
+              appearance={allProps.appearance}
+              onChange={this.handleChange}
+              onFocus={this.handleSubFieldFocus}
+              onBlur={this.handleSubFieldBlur}
+              value={state.dd}
+              name="dd"
+              disabled={props.disabled}
+              style={{ width: '28px' }}
+            />
+            <SubFieldDivider appearance={props.appearance} />
+            <SubField
+              appearance={allProps.appearance}
+              onChange={this.handleChange}
+              onFocus={this.handleSubFieldFocus}
+              onBlur={this.handleSubFieldBlur}
+              value={state.yyyy}
+              name="yyyy"
+              disabled={props.disabled}
+              style={{ width: '50px' }}
+            />
+            <input
+              tabIndex="-1"
+              readOnly
+              {...styles.field(allProps)}
+              {...propsUtil.whitelistProps(
+                allProps,
+                datePickerHtmlPropsWhitelist
+              )}
+              disabled={allProps.disabled}
+              onBlur={this.handleBlur}
+              onFocus={this.handleFocus}
+              ref={allProps.innerRef}
+              value={allProps.value}
+            />
+            <button
+              disabled={props.disabled}
+              {...styles.icon(allProps)}
+              onClick={this.handleIconClick}
+            >
+              <Icon id={Icon.ids.calendar} />
+            </button>
+            {allProps.error && (
+              <div {...styles.error(allProps)}>
+                <Icon id={Icon.ids.warning} />
+              </div>
             )}
-            disabled={allProps.disabled}
-            onBlur={this.handleBlur}
-            onFocus={this.handleFocus}
-            ref={allProps.innerRef}
-            value={allProps.value}
-          />
-          <button
-            disabled={props.disabled}
-            {...styles.icon(allProps)}
-            onClick={this.handleIconClick}
-          >
-            <Icon id={Icon.ids.calendar} />
-          </button>
-          {allProps.error && (
-            <div {...styles.error(allProps)}>
-              <Icon id={Icon.ids.warning} />
-            </div>
-          )}
-        </div>
+          </div>
+        </Halo>
         {state.isOpen && (
           <div {...styles.calendarContainer(allProps)}>
             <Calendar
