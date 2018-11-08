@@ -1,11 +1,6 @@
-// TODO: fix focus ring gap
 import core from '@pluralsight/ps-design-system-core'
 import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/vars'
-import { transparentize } from 'polished'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
 import * as vars from '../vars'
 
@@ -64,83 +59,9 @@ export default {
     width: '100%',
     minWidth: `calc(${iconVars.widths.medium} + ${core.layout.spacingXSmall})`
   },
-  '.psds-dropdown__field-container:focus:before': {
-    content: ' ',
-    position: 'absolute',
-    top: '-1px',
-    left: '-1px',
-    right: '-1px',
-    bottom: '-1px',
-    background: core.colors.black,
-    zIndex: '-1',
-    borderRadius: '2px'
-  },
-  [`.psds-dropdown__field-container.psds-theme--${
-    themeNames.light
-  }:focus:before`]: {
-    background: core.colors.bone,
-    top: '0',
-    left: '0',
-    right: '0',
-    bottom: '0'
-  },
-  '.psds-dropdown__field-container:focus:after': {
-    content: ' ',
-    position: 'absolute',
-    top: '-4px',
-    left: '-4px',
-    right: '-4px',
-    bottom: '-4px',
-    background: core.colors.blue,
-    zIndex: '-2',
-    borderRadius: '4px'
-  },
-  [`.psds-dropdown__field-container.psds-theme--${
-    themeNames.light
-  }:focus:after`]: {
-    top: '-3px',
-    left: '-3px',
-    right: '-3px',
-    bottom: '-3px'
-  },
-  '.psds-dropdown__field-container--error:before': {
-    content: ' ',
-    position: 'absolute',
-    top: '-1px',
-    left: '-1px',
-    right: '-1px',
-    bottom: '-1px',
-    background: core.colors.black,
-    zIndex: '-1',
-    borderRadius: '2px'
-  },
-  [`.psds-dropdown__field-container--error.psds-theme--${
-    themeNames.light
-  }:before`]: {
-    background: core.colors.bone,
-    top: '0',
-    left: '0',
-    right: '0',
-    bottom: '0'
-  },
-  '.psds-dropdown__field-container--error:after': {
-    content: ' ',
-    position: 'absolute',
-    top: '-4px',
-    left: '-4px',
-    right: '-4px',
-    bottom: '-4px',
-    background: core.colors.red,
-    zIndex: '-2',
-    borderRadius: '4px'
-  },
-  [`.psds-dropdown__field-container--error.psds-theme--${
-    themeNames.light
-  }:after`]: {
-    top: '-3px',
-    left: '-3px',
-    right: '-3px',
-    bottom: '-3px'
+  '.psds-dropdown__field-aligner': {
+    display: 'inline-flex',
+    alignItems: 'center'
   },
 
   // __icon
