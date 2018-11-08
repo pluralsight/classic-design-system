@@ -1,4 +1,5 @@
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import React from 'react'
 import Tag from '@pluralsight/ps-design-system-tag/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
 
@@ -7,8 +8,6 @@ import {
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
@@ -26,7 +25,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Button from '@pluralsight/ps-design-system-tag/react'
+        import Tag from '@pluralsight/ps-design-system-tag/react'
       </Code>
 
       <PropTypes
@@ -87,8 +86,8 @@ export default withServerProps(_ => (
 
       <SectionHeading>Size</SectionHeading>
       <P>
-        Tags come in two sizes. Try to use the default size, <code>medium</code>,
-        whenever possible.
+        Tags come in two sizes. Try to use the default size, <code>medium</code>
+        , whenever possible.
       </P>
       <Example.React
         includes={{ Tag }}

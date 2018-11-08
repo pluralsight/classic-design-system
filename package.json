@@ -31,16 +31,17 @@
       "scripts/create-component/package-template/**/*"
     ],
     "linters": {
+      "**/*.css": [
+        "prettier-eslint --write",
+        "git add"
+      ],
       "**/*.js": [
         "prettier-eslint --write",
+        "eslint",
         "git add"
       ],
       "package.json": [
         "format-package -w",
-        "git add"
-      ],
-      "packages/**/*.css": [
-        "node_modules/.bin/prettier --single-quote --no-semi --write",
         "git add"
       ]
     }
