@@ -5,7 +5,7 @@ export const BASE_CLASSNAME = '.psds-halo'
 export default {
   [BASE_CLASSNAME]: {
     position: 'relative',
-    flex: '0 0 auto',
+    display: 'inline-block',
     lineHeight: 0
   },
   [`${BASE_CLASSNAME}:after`]: {
@@ -13,24 +13,25 @@ export default {
     position: 'absolute',
     borderWidth: '3px',
     borderStyle: 'solid',
-    borderColor: 'transparent',
+    borderColor: core.colors.blue,
     pointerEvents: 'none',
     visibility: 'hidden'
   },
+  [`${BASE_CLASSNAME}--error:after`]: {
+    visibility: 'visible',
+    borderColor: core.colors.red
+  },
   [`${BASE_CLASSNAME}--visible:after`]: {
-    visibility: 'visible'
-  },
-  [`${BASE_CLASSNAME}--visible-on-focus:focus-within:after`]: {
-    visibility: 'visible'
-  },
-  [`${BASE_CLASSNAME}--visible-on-focus[focus-within]:after`]: {
-    visibility: 'visible'
-  },
-  [`${BASE_CLASSNAME}--appearance-default:after`]: {
+    visibility: 'visible',
     borderColor: core.colors.blue
   },
-  [`${BASE_CLASSNAME}--appearance-error:after`]: {
-    borderColor: core.colors.red
+  [`${BASE_CLASSNAME}--visible-on-focus:focus-within:after`]: {
+    visibility: 'visible',
+    borderColor: core.colors.blue
+  },
+  [`${BASE_CLASSNAME}--visible-on-focus[focus-within]:after`]: {
+    visibility: 'visible',
+    borderColor: core.colors.blue
   },
   [`${BASE_CLASSNAME}--gap-size-default${BASE_CLASSNAME}--theme-dark:after`]: {
     top: '-4px',

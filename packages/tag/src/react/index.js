@@ -1,4 +1,5 @@
 import * as glamor from 'glamor'
+import Halo from '@pluralsight/ps-design-system-halo/react'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/vars'
 import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 import PropTypes from 'prop-types'
@@ -20,24 +21,6 @@ const tagHtmlPropsWhitelist = [
   /^data-/
 ]
 
-const styleFocusRingGap = ({ themeName }) => ({
-  ...css[
-    '.psds-tag--clickable:focus:before, .psds-tag--clickable.psds-tag--error:before'
-  ],
-  ...css[
-    `.psds-tag--clickable.psds-theme--${themeName}:focus:before, .psds-tag--clickable.psds-tag--error.psds-theme--${themeName}:before`
-  ]
-})
-
-const styleFocusRingBorder = ({ themeName }) => ({
-  ...css[
-    '.psds-tag--clickable:focus:after, .psds-tag--clickable.psds-tag--error:after'
-  ],
-  ...css[
-    `.psds-tag--clickable.psds-theme--${themeName}:focus:after, .psds-tag--clickable.psds-tag--error.psds-theme--${themeName}:after`
-  ]
-})
-
 const styles = {
   tag: ({
     appearance,
@@ -54,20 +37,7 @@ const styles = {
       (href || onClick) && {
         ':hover': css['.psds-tag--clickable:hover'],
         ':focus': {
-          ...css['.psds-tag--clickable:focus'],
-          // TODO: pickup: add focus styles; then do error styles
-          ':before': styleFocusRingGap({ themeName }),
-          ':after': {
-            ...styleFocusRingBorder({ themeName }),
-            ...css['.psds-tag--clickable:focus:after']
-          }
-        }
-      },
-      error && {
-        ':before': styleFocusRingGap({ themeName }),
-        ':after': {
-          ...styleFocusRingBorder({ themeName }),
-          ...css['.psds-tag--clickable.psds-tag--error:after']
+          ...css['.psds-tag--clickable:focus']
         }
       },
       css[`.psds-tag--appearance-${appearance}`],
@@ -100,17 +70,21 @@ const Tag = (props, context) => {
     themeName: context.themeName || themeDefaultName
   }
   const tagName = allProps.href ? 'a' : 'div'
-  return React.createElement(
-    tagName,
-    {
-      ...styles.tag(allProps),
-      ...propsUtil.whitelistProps(allProps, tagHtmlPropsWhitelist),
-      ...(allProps.target ? { target: allProps.target } : null),
-      ...(allProps.isPressed ? { 'aria-pressed': true } : null),
-      ...(allProps.onClick ? { role: 'button', tabIndex: 0 } : null)
-    },
-    <span {...styles.label(allProps)}>{props.children}</span>,
-    renderIcon(props)
+  return (
+    <Halo error={allProps.error} shape={Halo.shapes.pill}>
+      {React.createElement(
+        tagName,
+        {
+          ...styles.tag(allProps),
+          ...propsUtil.whitelistProps(allProps, tagHtmlPropsWhitelist),
+          ...(allProps.target ? { target: allProps.target } : null),
+          ...(allProps.isPressed ? { 'aria-pressed': true } : null),
+          ...(allProps.onClick ? { role: 'button', tabIndex: 0 } : null)
+        },
+        <span {...styles.label(allProps)}>{props.children}</span>,
+        renderIcon(props)
+      )}
+    </Halo>
   )
 }
 

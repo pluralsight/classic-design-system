@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Halo/appearances default 1`] = `
+exports[`Storyshots Halo/error false 1`] = `
 <div
   data-css-claeju=""
 >
   <div
-    data-css-f0dui=""
+    data-css-19jityq=""
   >
     <div>
-      default
+      not error
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Halo/appearances error 1`] = `
+exports[`Storyshots Halo/error true 1`] = `
 <div
   data-css-claeju=""
 >
   <div
-    data-css-dahlzh=""
+    data-css-149rkdx=""
   >
     <div>
       error
@@ -33,7 +33,7 @@ exports[`Storyshots Halo/gapSizes default 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-f0dui=""
+    data-css-1v2gy6f=""
   >
     <div>
       default
@@ -47,7 +47,7 @@ exports[`Storyshots Halo/gapSizes small 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-f0dui=""
+    data-css-1v2gy6f=""
   >
     <div>
       small
@@ -61,7 +61,7 @@ exports[`Storyshots Halo/shapes default 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-f0dui=""
+    data-css-1v2gy6f=""
   >
     <div
       shape="default"
@@ -77,7 +77,7 @@ exports[`Storyshots Halo/shapes pill 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-3xkq2r=""
+    data-css-xjpqlg=""
   >
     <div
       shape="pill"
@@ -88,15 +88,57 @@ exports[`Storyshots Halo/shapes pill 1`] = `
 </div>
 `;
 
+exports[`Storyshots Halo/visible false & error 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-149rkdx=""
+  >
+    <div>
+      not visible (always visible if error) & error
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/visible false & not visibleOnFocus 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-2koqcv=""
+  >
+    <div>
+      really not visible (even on focus)
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Halo/visible false 1`] = `
 <div
   data-css-claeju=""
 >
   <div
-    data-css-cxffx0=""
+    data-css-19jityq=""
   >
     <div>
-      not visible
+      not visible (until focused)
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/visible true & error 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-1v2gy6f=""
+  >
+    <div>
+      visible & error
     </div>
   </div>
 </div>
@@ -107,10 +149,24 @@ exports[`Storyshots Halo/visible true 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-f0dui=""
+    data-css-1v2gy6f=""
   >
     <div>
       visible
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Halo/visibleOnFocus enabled & error 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-149rkdx=""
+  >
+    <div>
+      visible when focused with error
     </div>
   </div>
 </div>
@@ -121,7 +177,7 @@ exports[`Storyshots Halo/visibleOnFocus enabled 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-qkinv7=""
+    data-css-19jityq=""
   >
     <div>
       visible when focused
