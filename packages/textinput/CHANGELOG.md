@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.9...@pluralsight/ps-design-system-textinput@0.5.10) (2018-11-09)
+
+
+### Bug Fixes
+
+* upgrade storybook and fix issues with require.context ([ba6a6e8](https://github.com/pluralsight/design-system/commit/ba6a6e8))
+
+
+
+
+
 ## [0.5.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.8...@pluralsight/ps-design-system-textinput@0.5.9) (2018-10-31)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textinput
