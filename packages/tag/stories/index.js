@@ -1,6 +1,5 @@
 import { action } from '@storybook/addon-actions'
 import addons from '@storybook/addons'
-import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
@@ -31,7 +30,7 @@ Object.keys(Tag.appearances).forEach(app =>
   )
 )
 
-const actionsStory = storiesOf('actions', module)
+storiesOf('actions', module)
   .addDecorator(themeDecorator(addons))
   .add('link', _ => <Tag href="https://duckduckgo.com/">As a link</Tag>)
   .add('link with target', _ => (
@@ -40,6 +39,11 @@ const actionsStory = storiesOf('actions', module)
     </Tag>
   ))
   .add('button', _ => <Tag onClick={action('button clicked')}>As a button</Tag>)
+  .add('small button', _ => (
+    <Tag size={Tag.sizes.small} onClick={action('button clicked')}>
+      As a button
+    </Tag>
+  ))
   .add('just icon button', _ => (
     <Tag icon={<Icon id={Icon.ids.close} onClick={action('icon clicked')} />}>
       As a button
@@ -54,7 +58,7 @@ const actionsStory = storiesOf('actions', module)
     </Tag>
   ))
 
-const pressedStory = storiesOf('isPressed', module)
+storiesOf('isPressed', module)
   .addDecorator(themeDecorator(addons))
   .add('link', _ => (
     <Tag isPressed href="https://duckduckgo.com/">
@@ -76,7 +80,7 @@ const pressedStory = storiesOf('isPressed', module)
     </Tag>
   ))
 
-const longStory = storiesOf('long', module)
+storiesOf('long', module)
   .addDecorator(themeDecorator(addons))
   .add('string', _ => (
     <Tag>
@@ -91,7 +95,7 @@ const longStory = storiesOf('long', module)
     </Tag>
   ))
 
-const errorStory = storiesOf('error', module)
+storiesOf('error', module)
   .addDecorator(themeDecorator(addons))
   .add('default', _ => <Tag error>I have a problem</Tag>)
   .add('focusable', _ => (

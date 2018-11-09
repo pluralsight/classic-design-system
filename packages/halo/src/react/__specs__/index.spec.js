@@ -6,10 +6,6 @@ import * as vars from '../../vars'
 import Halo from '../index'
 
 describe('Halo', () => {
-  describe('.appearances', () => {
-    it('exists', () => expect(Halo.appearances).toEqual(vars.appearances))
-  })
-
   describe('.gapSizes', () => {
     it('exists', () => {
       expect(Halo.gapSizes).toEqual(vars.gapSizes)

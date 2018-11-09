@@ -81,12 +81,7 @@ const TextInput = (props, context) => {
       {label && <div {...styles.label(allProps)}>{label}</div>}
 
       <div {...styles.fieldContainer(allProps)}>
-        <Halo
-          appearance={error ? Halo.appearances.error : Halo.appearances.default}
-          gapSize={Halo.gapSizes.small}
-          visible={error}
-          visibleOnFocus
-        >
+        <Halo error={error} gapSize={Halo.gapSizes.small}>
           <input
             {...propsUtil.whitelistProps(allProps, textInputHtmlPropsWhitelist)}
             {...styles.field(allProps)}

@@ -141,7 +141,7 @@ class Calendar extends React.Component {
               return (
                 <button
                   key={i}
-                  onClick={this.handleDayClick.bind(this, i + 1)}
+                  onClick={evt => this.handleDayClick(i + 1, evt)}
                   ref={isSelected ? el => (this.selectedDayEl = el) : null}
                   {...styles.day({
                     isSelected
