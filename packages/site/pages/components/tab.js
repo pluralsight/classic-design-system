@@ -1,3 +1,5 @@
+import React from 'react'
+
 import core from '@pluralsight/ps-design-system-core'
 import Tab from '@pluralsight/ps-design-system-tab/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
@@ -7,8 +9,6 @@ import {
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
@@ -28,9 +28,11 @@ class InAppExample extends React.Component {
     }))
     this.handleTabClick = this.handleTabClick.bind(this)
   }
+
   handleTabClick(i) {
     this.setState({ activeIndex: i })
   }
+
   render() {
     return (
       <div>
@@ -54,13 +56,12 @@ class InAppExample extends React.Component {
                 </Tab.ListItem>
               ))}
             </Tab.List>
-            {this.menus.map(
-              (menu, i) =>
-                i === this.state.activeIndex ? (
-                  <Tab.Panel labelledBy={menu.id} key={menu.id}>
-                    <div className="content">{menu.content}</div>
-                  </Tab.Panel>
-                ) : null
+            {this.menus.map((menu, i) =>
+              i === this.state.activeIndex ? (
+                <Tab.Panel labelledBy={menu.id} key={menu.id}>
+                  <div className="content">{menu.content}</div>
+                </Tab.Panel>
+              ) : null
             )}
           </div>
         </Theme>
