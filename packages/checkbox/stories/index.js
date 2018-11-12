@@ -79,4 +79,7 @@ storiesOf('Checkbox', module)
   .add('disabled', _ => (
     <Checkbox disabled name="colorRed" value="red" label="Red" />
   ))
+  .add('disabled & errored', _ => (
+    <Checkbox disabled error name="colorRed" value="red" label="Red" />
+  ))
   .add('state demo', _ => <StateDemo />)

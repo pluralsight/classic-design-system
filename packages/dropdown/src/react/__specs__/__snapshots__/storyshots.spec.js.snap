@@ -18,41 +18,49 @@ exports[`Storyshots appearance default 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            The placeholder 
-          </span>
-          <span
-            data-css-5m5yd6=""
-          >
-            The placeholder 
-          </span>
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
-              />
-            </svg>
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                The placeholder 
+              </span>
+              <span
+                data-css-5m5yd6=""
+              >
+                The placeholder 
+              </span>
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -82,39 +90,47 @@ exports[`Storyshots appearance default w/ error 1`] = `
         Problem field
       </div>
       <div
-        data-css-3w9864=""
+        data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          />
-          <span
-            data-css-5m5yd6=""
-          />
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-149rkdx=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
               />
-            </svg>
+              <span
+                data-css-5m5yd6=""
+              />
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
         <div
@@ -166,37 +182,45 @@ exports[`Storyshots appearance gaps 1`] = `
           <div
             data-css-1812rv9=""
           >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-            >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              />
-              <span
-                data-css-5m5yd6=""
-              />
-            </button>
             <div
-              data-css-cstzed=""
+              data-css-19jityq=""
             >
               <div
-                className="css-otejxm"
+                data-css-1en8fmq=""
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <button
+                  data-css-8bndf1=""
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
                 >
-                  <path
-                    d="M12.5 14L8 10h9z"
+                  <span
+                    aria-hidden={true}
+                    data-css-e6fvyw=""
                   />
-                </svg>
+                  <span
+                    data-css-5m5yd6=""
+                  />
+                </button>
+                <div
+                  data-css-cstzed=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret down icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5 14L8 10h9z"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -213,39 +237,47 @@ exports[`Storyshots appearance gaps 1`] = `
             Problem field
           </div>
           <div
-            data-css-3w9864=""
+            data-css-1812rv9=""
           >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-            >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              />
-              <span
-                data-css-5m5yd6=""
-              />
-            </button>
             <div
-              data-css-cstzed=""
+              data-css-149rkdx=""
             >
               <div
-                className="css-otejxm"
+                data-css-1en8fmq=""
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <button
+                  data-css-8bndf1=""
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
                 >
-                  <path
-                    d="M12.5 14L8 10h9z"
+                  <span
+                    aria-hidden={true}
+                    data-css-e6fvyw=""
                   />
-                </svg>
+                  <span
+                    data-css-5m5yd6=""
+                  />
+                </button>
+                <div
+                  data-css-cstzed=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret down icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5 14L8 10h9z"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
             <div
@@ -282,37 +314,45 @@ exports[`Storyshots appearance gaps 1`] = `
           <div
             data-css-1812rv9=""
           >
-            <button
-              data-css-1e7y5c2=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-            >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              />
-              <span
-                data-css-5m5yd6=""
-              />
-            </button>
             <div
-              data-css-145erv=""
+              data-css-19jityq=""
             >
               <div
-                className="css-otejxm"
+                data-css-1en8fmq=""
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <button
+                  data-css-1e7y5c2=""
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
                 >
-                  <path
-                    d="M12.5 14L8 10h9z"
+                  <span
+                    aria-hidden={true}
+                    data-css-e6fvyw=""
                   />
-                </svg>
+                  <span
+                    data-css-5m5yd6=""
+                  />
+                </button>
+                <div
+                  data-css-145erv=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret down icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5 14L8 10h9z"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -329,39 +369,47 @@ exports[`Storyshots appearance gaps 1`] = `
             Problem field
           </div>
           <div
-            data-css-3w9864=""
+            data-css-1812rv9=""
           >
-            <button
-              data-css-1e7y5c2=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-            >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              />
-              <span
-                data-css-5m5yd6=""
-              />
-            </button>
             <div
-              data-css-145erv=""
+              data-css-149rkdx=""
             >
               <div
-                className="css-otejxm"
+                data-css-1en8fmq=""
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <button
+                  data-css-1e7y5c2=""
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
                 >
-                  <path
-                    d="M12.5 14L8 10h9z"
+                  <span
+                    aria-hidden={true}
+                    data-css-e6fvyw=""
                   />
-                </svg>
+                  <span
+                    data-css-5m5yd6=""
+                  />
+                </button>
+                <div
+                  data-css-145erv=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret down icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5 14L8 10h9z"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
             <div
@@ -408,41 +456,49 @@ exports[`Storyshots appearance subtle 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-1e7y5c2=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            The placeholder 
-          </span>
-          <span
-            data-css-5m5yd6=""
-          >
-            The placeholder 
-          </span>
-        </button>
         <div
-          data-css-145erv=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-1e7y5c2=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
-              />
-            </svg>
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                The placeholder 
+              </span>
+              <span
+                data-css-5m5yd6=""
+              >
+                The placeholder 
+              </span>
+            </button>
+            <div
+              data-css-145erv=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -472,39 +528,47 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         Problem field
       </div>
       <div
-        data-css-3w9864=""
+        data-css-1812rv9=""
       >
-        <button
-          data-css-1e7y5c2=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          />
-          <span
-            data-css-5m5yd6=""
-          />
-        </button>
         <div
-          data-css-145erv=""
+          data-css-149rkdx=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-1e7y5c2=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
               />
-            </svg>
+              <span
+                data-css-5m5yd6=""
+              />
+            </button>
+            <div
+              data-css-145erv=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
         <div
@@ -555,41 +619,49 @@ exports[`Storyshots disabled compare 1`] = `
         <div
           data-css-1812rv9=""
         >
-          <button
-            data-css-8bndf1=""
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-          >
-            <span
-              aria-hidden={true}
-              data-css-e6fvyw=""
-            >
-              I'm normal, see
-            </span>
-            <span
-              data-css-5m5yd6=""
-            >
-              I'm normal, see
-            </span>
-          </button>
           <div
-            data-css-cstzed=""
+            data-css-19jityq=""
           >
             <div
-              className="css-otejxm"
+              data-css-1en8fmq=""
             >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <button
+                data-css-8bndf1=""
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
               >
-                <path
-                  d="M12.5 14L8 10h9z"
-                />
-              </svg>
+                <span
+                  aria-hidden={true}
+                  data-css-e6fvyw=""
+                >
+                  I'm normal, see
+                </span>
+                <span
+                  data-css-5m5yd6=""
+                >
+                  I'm normal, see
+                </span>
+              </button>
+              <div
+                data-css-cstzed=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 14L8 10h9z"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -611,41 +683,49 @@ exports[`Storyshots disabled compare 1`] = `
         <div
           data-css-1812rv9=""
         >
-          <button
-            data-css-8bndf1=""
-            disabled={true}
-            onBlur={null}
-            onClick={null}
-            onFocus={null}
-          >
-            <span
-              aria-hidden={true}
-              data-css-e6fvyw=""
-            >
-              I'm untouchable
-            </span>
-            <span
-              data-css-5m5yd6=""
-            >
-              I'm untouchable
-            </span>
-          </button>
           <div
-            data-css-cstzed=""
+            data-css-19jityq=""
           >
             <div
-              className="css-otejxm"
+              data-css-1en8fmq=""
             >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <button
+                data-css-8bndf1=""
+                disabled={true}
+                onBlur={null}
+                onClick={null}
+                onFocus={null}
               >
-                <path
-                  d="M12.5 14L8 10h9z"
-                />
-              </svg>
+                <span
+                  aria-hidden={true}
+                  data-css-e6fvyw=""
+                >
+                  I'm untouchable
+                </span>
+                <span
+                  data-css-5m5yd6=""
+                >
+                  I'm untouchable
+                </span>
+              </button>
+              <div
+                data-css-cstzed=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 14L8 10h9z"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -683,41 +763,49 @@ exports[`Storyshots labels all 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            Some placeholder
-          </span>
-          <span
-            data-css-5m5yd6=""
-          >
-            Some placeholder
-          </span>
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
-              />
-            </svg>
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                Some placeholder
+              </span>
+              <span
+                data-css-5m5yd6=""
+              >
+                Some placeholder
+              </span>
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -754,37 +842,45 @@ exports[`Storyshots labels label 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          />
-          <span
-            data-css-5m5yd6=""
-          />
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
               />
-            </svg>
+              <span
+                data-css-5m5yd6=""
+              />
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -816,37 +912,45 @@ exports[`Storyshots labels label and subLabel 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          />
-          <span
-            data-css-5m5yd6=""
-          />
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
               />
-            </svg>
+              <span
+                data-css-5m5yd6=""
+              />
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -878,37 +982,45 @@ exports[`Storyshots labels none 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          />
-          <span
-            data-css-5m5yd6=""
-          />
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
               />
-            </svg>
+              <span
+                data-css-5m5yd6=""
+              />
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -935,41 +1047,49 @@ exports[`Storyshots labels placeholder 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            some placeholder
-          </span>
-          <span
-            data-css-5m5yd6=""
-          >
-            some placeholder
-          </span>
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
-              />
-            </svg>
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                some placeholder
+              </span>
+              <span
+                data-css-5m5yd6=""
+              >
+                some placeholder
+              </span>
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -996,37 +1116,45 @@ exports[`Storyshots labels subLabel 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          />
-          <span
-            data-css-5m5yd6=""
-          />
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
               />
-            </svg>
+              <span
+                data-css-5m5yd6=""
+              />
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1077,37 +1205,45 @@ exports[`Storyshots layouts full width 1`] = `
         <div
           data-css-1812rv9=""
         >
-          <button
-            data-css-8bndf1=""
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-          >
-            <span
-              aria-hidden={true}
-              data-css-e6fvyw=""
-            />
-            <span
-              data-css-5m5yd6=""
-            />
-          </button>
           <div
-            data-css-cstzed=""
+            data-css-19jityq=""
           >
             <div
-              className="css-otejxm"
+              data-css-1en8fmq=""
             >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <button
+                data-css-8bndf1=""
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
               >
-                <path
-                  d="M12.5 14L8 10h9z"
+                <span
+                  aria-hidden={true}
+                  data-css-e6fvyw=""
                 />
-              </svg>
+                <span
+                  data-css-5m5yd6=""
+                />
+              </button>
+              <div
+                data-css-cstzed=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 14L8 10h9z"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1128,39 +1264,47 @@ exports[`Storyshots layouts full width 1`] = `
           Second
         </div>
         <div
-          data-css-3w9864=""
+          data-css-1812rv9=""
         >
-          <button
-            data-css-8bndf1=""
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-          >
-            <span
-              aria-hidden={true}
-              data-css-e6fvyw=""
-            />
-            <span
-              data-css-5m5yd6=""
-            />
-          </button>
           <div
-            data-css-cstzed=""
+            data-css-149rkdx=""
           >
             <div
-              className="css-otejxm"
+              data-css-1en8fmq=""
             >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <button
+                data-css-8bndf1=""
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
               >
-                <path
-                  d="M12.5 14L8 10h9z"
+                <span
+                  aria-hidden={true}
+                  data-css-e6fvyw=""
                 />
-              </svg>
+                <span
+                  data-css-5m5yd6=""
+                />
+              </button>
+              <div
+                data-css-cstzed=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 14L8 10h9z"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
           <div
@@ -1201,37 +1345,45 @@ exports[`Storyshots layouts full width 1`] = `
         <div
           data-css-1812rv9=""
         >
-          <button
-            data-css-1e7y5c2=""
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-          >
-            <span
-              aria-hidden={true}
-              data-css-e6fvyw=""
-            />
-            <span
-              data-css-5m5yd6=""
-            />
-          </button>
           <div
-            data-css-145erv=""
+            data-css-19jityq=""
           >
             <div
-              className="css-otejxm"
+              data-css-1en8fmq=""
             >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <button
+                data-css-1e7y5c2=""
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
               >
-                <path
-                  d="M12.5 14L8 10h9z"
+                <span
+                  aria-hidden={true}
+                  data-css-e6fvyw=""
                 />
-              </svg>
+                <span
+                  data-css-5m5yd6=""
+                />
+              </button>
+              <div
+                data-css-145erv=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 14L8 10h9z"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1252,39 +1404,47 @@ exports[`Storyshots layouts full width 1`] = `
           Fourth
         </div>
         <div
-          data-css-3w9864=""
+          data-css-1812rv9=""
         >
-          <button
-            data-css-1e7y5c2=""
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-          >
-            <span
-              aria-hidden={true}
-              data-css-e6fvyw=""
-            />
-            <span
-              data-css-5m5yd6=""
-            />
-          </button>
           <div
-            data-css-145erv=""
+            data-css-149rkdx=""
           >
             <div
-              className="css-otejxm"
+              data-css-1en8fmq=""
             >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <button
+                data-css-1e7y5c2=""
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
               >
-                <path
-                  d="M12.5 14L8 10h9z"
+                <span
+                  aria-hidden={true}
+                  data-css-e6fvyw=""
                 />
-              </svg>
+                <span
+                  data-css-5m5yd6=""
+                />
+              </button>
+              <div
+                data-css-145erv=""
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 14L8 10h9z"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
           <div
@@ -1345,41 +1505,49 @@ exports[`Storyshots layouts right-aligned 1`] = `
           <div
             data-css-1812rv9=""
           >
-            <button
-              data-css-1e7y5c2=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-            >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              >
-                Filter
-              </span>
-              <span
-                data-css-5m5yd6=""
-              >
-                Filter
-              </span>
-            </button>
             <div
-              data-css-145erv=""
+              data-css-19jityq=""
             >
               <div
-                className="css-otejxm"
+                data-css-1en8fmq=""
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <button
+                  data-css-1e7y5c2=""
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
                 >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
+                  <span
+                    aria-hidden={true}
+                    data-css-e6fvyw=""
+                  >
+                    Filter
+                  </span>
+                  <span
+                    data-css-5m5yd6=""
+                  >
+                    Filter
+                  </span>
+                </button>
+                <div
+                  data-css-145erv=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret down icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5 14L8 10h9z"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1421,39 +1589,47 @@ exports[`Storyshots menu divider 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            Three and the amazing item
-          </span>
-          <span
-            data-css-5m5yd6=""
-          />
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                Three and the amazing item
+              </span>
+              <span
+                data-css-5m5yd6=""
               />
-            </svg>
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1487,41 +1663,49 @@ exports[`Storyshots menu in stack 1`] = `
           <div
             data-css-1812rv9=""
           >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-            >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              >
-                Three and the amazing item
-              </span>
-              <span
-                data-css-5m5yd6=""
-              >
-                Select one
-              </span>
-            </button>
             <div
-              data-css-cstzed=""
+              data-css-19jityq=""
             >
               <div
-                className="css-otejxm"
+                data-css-1en8fmq=""
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <button
+                  data-css-8bndf1=""
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
                 >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
+                  <span
+                    aria-hidden={true}
+                    data-css-e6fvyw=""
+                  >
+                    Three and the amazing item
+                  </span>
+                  <span
+                    data-css-5m5yd6=""
+                  >
+                    Select one
+                  </span>
+                </button>
+                <div
+                  data-css-cstzed=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret down icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5 14L8 10h9z"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1539,6 +1723,88 @@ exports[`Storyshots menu in stack 1`] = `
           </div>
           <div
             data-css-1812rv9=""
+          >
+            <div
+              data-css-19jityq=""
+            >
+              <div
+                data-css-1en8fmq=""
+              >
+                <button
+                  data-css-8bndf1=""
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                >
+                  <span
+                    aria-hidden={true}
+                    data-css-e6fvyw=""
+                  >
+                    Three and the amazing item
+                  </span>
+                  <span
+                    data-css-5m5yd6=""
+                  >
+                    Select another one
+                  </span>
+                </button>
+                <div
+                  data-css-cstzed=""
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="caret down icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5 14L8 10h9z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots menu nested 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-1hniuff=""
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-n53zhn=""
+      >
+        Level
+      </div>
+      <div
+        data-css-1812rv9=""
+      >
+        <div
+          data-css-19jityq=""
+        >
+          <div
+            data-css-1en8fmq=""
           >
             <button
               data-css-8bndf1=""
@@ -1578,72 +1844,6 @@ exports[`Storyshots menu in stack 1`] = `
               </div>
             </div>
           </div>
-        </label>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots menu nested 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
-    >
-      <div
-        data-css-n53zhn=""
-      >
-        Level
-      </div>
-      <div
-        data-css-1812rv9=""
-      >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            Three and the amazing item
-          </span>
-          <span
-            data-css-5m5yd6=""
-          >
-            Select another one
-          </span>
-        </button>
-        <div
-          data-css-cstzed=""
-        >
-          <div
-            className="css-otejxm"
-          >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.5 14L8 10h9z"
-              />
-            </svg>
-          </div>
         </div>
       </div>
     </label>
@@ -1672,43 +1872,51 @@ exports[`Storyshots menu onClicks 1`] = `
         Level
       </div>
       <div
-        data-css-3w9864=""
+        data-css-1812rv9=""
       >
-        <button
-          data-css-1e7y5c2=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            Three and the amazing item
-          </span>
-          <span
-            data-css-5m5yd6=""
-          >
-            Select another one
-          </span>
-        </button>
         <div
-          data-css-145erv=""
+          data-css-149rkdx=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-1e7y5c2=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
-              />
-            </svg>
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                Three and the amazing item
+              </span>
+              <span
+                data-css-5m5yd6=""
+              >
+                Select another one
+              </span>
+            </button>
+            <div
+              data-css-145erv=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
         <div
@@ -1758,39 +1966,47 @@ exports[`Storyshots menu single list 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            Three and the amazing item
-          </span>
-          <span
-            data-css-5m5yd6=""
-          />
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                Three and the amazing item
+              </span>
+              <span
+                data-css-5m5yd6=""
               />
-            </svg>
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1822,41 +2038,49 @@ exports[`Storyshots menu single list w/ icon 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            Three and the amazing item
-          </span>
-          <span
-            data-css-5m5yd6=""
-          >
-            Select one
-          </span>
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
-              />
-            </svg>
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                Three and the amazing item
+              </span>
+              <span
+                data-css-5m5yd6=""
+              >
+                Select one
+              </span>
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1888,39 +2112,47 @@ exports[`Storyshots menu super long 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            This level really is the longest level that anyone has ever seen. There is none longer
-          </span>
-          <span
-            data-css-5m5yd6=""
-          />
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                This level really is the longest level that anyone has ever seen. There is none longer
+              </span>
+              <span
+                data-css-5m5yd6=""
               />
-            </svg>
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1952,39 +2184,47 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            The longest in el mundo. Find me!
-          </span>
-          <span
-            data-css-5m5yd6=""
-          />
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                The longest in el mundo. Find me!
+              </span>
+              <span
+                data-css-5m5yd6=""
               />
-            </svg>
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -2016,41 +2256,49 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            This one is longer than any menu item
-          </span>
-          <span
-            data-css-5m5yd6=""
-          >
-            This one is longer than any menu item
-          </span>
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
-              />
-            </svg>
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                This one is longer than any menu item
+              </span>
+              <span
+                data-css-5m5yd6=""
+              >
+                This one is longer than any menu item
+              </span>
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -2082,39 +2330,47 @@ exports[`Storyshots menu w/ subLabel 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            Three and the amazing item
-          </span>
-          <span
-            data-css-5m5yd6=""
-          />
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                Three and the amazing item
+              </span>
+              <span
+                data-css-5m5yd6=""
               />
-            </svg>
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -2146,41 +2402,49 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            Three item
-          </span>
-          <span
-            data-css-5m5yd6=""
-          >
-            Two item
-          </span>
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
-              />
-            </svg>
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                Three item
+              </span>
+              <span
+                data-css-5m5yd6=""
+              >
+                Two item
+              </span>
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -2212,40 +2476,48 @@ exports[`Storyshots props whitelist title 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          title="This title should be present"
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            One item
-          </span>
-          <span
-            data-css-5m5yd6=""
-          />
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              title="This title should be present"
             >
-              <path
-                d="M12.5 14L8 10h9z"
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                One item
+              </span>
+              <span
+                data-css-5m5yd6=""
               />
-            </svg>
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -2272,42 +2544,50 @@ exports[`Storyshots whitelist name 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          name="myFieldNameOfPower"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            I have a form name
-          </span>
-          <span
-            data-css-5m5yd6=""
-          >
-            I have a form name
-          </span>
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              name="myFieldNameOfPower"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
-              />
-            </svg>
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                I have a form name
+              </span>
+              <span
+                data-css-5m5yd6=""
+              >
+                I have a form name
+              </span>
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -2334,42 +2614,50 @@ exports[`Storyshots whitelist onChange 1`] = `
       <div
         data-css-1812rv9=""
       >
-        <button
-          data-css-8bndf1=""
-          disabled={false}
-          onBlur={[Function]}
-          onChange={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-        >
-          <span
-            aria-hidden={true}
-            data-css-e6fvyw=""
-          >
-            Change me
-          </span>
-          <span
-            data-css-5m5yd6=""
-          >
-            Change me
-          </span>
-        </button>
         <div
-          data-css-cstzed=""
+          data-css-19jityq=""
         >
           <div
-            className="css-otejxm"
+            data-css-1en8fmq=""
           >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
             >
-              <path
-                d="M12.5 14L8 10h9z"
-              />
-            </svg>
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
+              >
+                Change me
+              </span>
+              <span
+                data-css-5m5yd6=""
+              >
+                Change me
+              </span>
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                className="css-otejxm"
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>

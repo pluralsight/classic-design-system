@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@0.3.8...@pluralsight/ps-design-system-radio@0.3.9) (2018-11-09)
+
+
+### Bug Fixes
+
+* upgrade storybook and fix issues with require.context ([ba6a6e8](https://github.com/pluralsight/design-system/commit/ba6a6e8))
+* **radio:** support keyboard nav focus in group ([9258a04](https://github.com/pluralsight/design-system/commit/9258a04))
+
+
+
+
+
 ## [0.3.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@0.3.7...@pluralsight/ps-design-system-radio@0.3.8) (2018-10-31)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-radio

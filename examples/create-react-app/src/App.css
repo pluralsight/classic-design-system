@@ -1,0 +1,33 @@
+/* DS: import (better if postcss-import is configured) core css vars (can also use in css-in-js) */
+@import "../node_modules/@pluralsight/ps-design-system-core/css/index.css";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+}
+
+.App-header {
+  background-color: var(--psColorsGray06);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--psColorsWhite);
+}
+
+.App-link {
+  color: var(--psColorsOrange);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

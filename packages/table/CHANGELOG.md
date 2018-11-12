@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@1.1.17...@pluralsight/ps-design-system-table@1.1.18) (2018-11-09)
+
+
+### Bug Fixes
+
+* upgrade storybook and fix issues with require.context ([ba6a6e8](https://github.com/pluralsight/design-system/commit/ba6a6e8))
+
+
+
+
+
 ## [1.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@1.1.16...@pluralsight/ps-design-system-table@1.1.17) (2018-10-31)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table

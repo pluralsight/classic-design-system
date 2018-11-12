@@ -28,19 +28,21 @@
   },
   "lint-staged": {
     "ignore": [
-      "scripts/create-component/package-template/**/*"
+      "scripts/create-component/package-template/**/*",
+      "examples/**/*"
     ],
     "linters": {
+      "**/*.css": [
+        "prettier-eslint --write",
+        "git add"
+      ],
       "**/*.js": [
         "prettier-eslint --write",
+        "eslint",
         "git add"
       ],
       "package.json": [
         "format-package -w",
-        "git add"
-      ],
-      "packages/**/*.css": [
-        "node_modules/.bin/prettier --single-quote --no-semi --write",
         "git add"
       ]
     }
@@ -108,6 +110,7 @@
     "prettier": "^1.7.4",
     "prettier-eslint-cli": "^4.7.1",
     "react-test-renderer": "^16.3.2",
+    "webpack": "^4.0.0",
     "yargs": "^11.0.0"
   }
 }

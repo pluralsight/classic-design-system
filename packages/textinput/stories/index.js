@@ -12,7 +12,7 @@ const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
 )
 
-const labelStory = storiesOf('labels', module)
+storiesOf('labels', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('none', _ => <TextInput />)
@@ -59,7 +59,7 @@ Object.keys(TextInput.appearances).forEach(appearance =>
   ))
 )
 
-const disabledStory = storiesOf('disabled', module)
+storiesOf('disabled', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('compare', _ => (
@@ -75,10 +75,17 @@ const disabledStory = storiesOf('disabled', module)
         disabled
         placeholder="I'm untouchable"
       />
+      <TextInput
+        label="Disbled and errored"
+        subLabel="Neither am I"
+        disabled
+        error
+        placeholder="I'm untouchable"
+      />
     </div>
   ))
 
-const whitelistStory = storiesOf('whitelist', module)
+storiesOf('whitelist', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('title', _ => <TextInput title="some title" />)
@@ -93,7 +100,7 @@ const whitelistStory = storiesOf('whitelist', module)
     <TextInput placeholder="Change me" onChange={action('I changed')} />
   ))
 
-const layoutsStory = storiesOf('layouts', module)
+storiesOf('layouts', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('full width', _ => (
@@ -130,7 +137,7 @@ const layoutsStory = storiesOf('layouts', module)
     </div>
   ))
 
-const styleStory = storiesOf('style override', module)
+storiesOf('style override', module)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
   .add('css', _ => (

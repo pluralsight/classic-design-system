@@ -1,4 +1,5 @@
 import * as glamor from 'glamor'
+import Halo from '@pluralsight/ps-design-system-halo/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
@@ -23,44 +24,12 @@ const radioButtonHtmlPropsWhitelist = [
 
 const styles = {
   button: () => glamor.css(css['.psds-radio-button']),
-  circle: ({ checked, themeName, _error, _isFocused }) =>
+  circle: ({ checked, themeName }) =>
     glamor.css(
       css['.psds-radio-button__circle'],
       css[`.psds-radio-button__circle.psds-theme--${themeName}`],
       checked && css['.psds-radio-button__circle--checked'],
-      { ':focus': css['.psds-radio-button__circle:focus'] },
-      _error
-        ? {
-            ':before': {
-              ...css['.psds-radio-button__circle--error:before'],
-              ...css[
-                `.psds-radio-button__circle--error.psds-theme--${themeName}:before`
-              ]
-            },
-            ':after': {
-              ...css['.psds-radio-button__circle--error:after'],
-              ...css[
-                `.psds-radio-button__circle--error.psds-theme--${themeName}:after`
-              ]
-            }
-          }
-        : null,
-      _isFocused
-        ? {
-            ':before': {
-              ...css['.psds-radio-button__circle:focus:before'],
-              ...css[
-                `.psds-radio-button__circle.psds-theme--${themeName}:focus:before`
-              ]
-            },
-            ':after': {
-              ...css['.psds-radio-button__circle:focus:after'],
-              ...css[
-                `.psds-radio-button__circle.psds-theme--${themeName}:focus:after`
-              ]
-            }
-          }
-        : null
+      { ':focus': css['.psds-radio-button__circle:focus'] }
     ),
   circleInner: ({ checked }) =>
     glamor.css(css['.psds-radio-button__circle-inner']),
@@ -99,16 +68,23 @@ class Button extends React.Component {
         onClick={props._disabled ? null : this.handleClick}
         {...styles.button(allProps)}
       >
-        <div
-          role="radio"
-          aria-checked={allProps.checked}
-          tabIndex="-1"
-          onFocus={props._disabled ? null : _ => props._onFocus(props.value)}
-          ref={el => (this.circle = el)}
-          {...styles.circle(allProps)}
+        <Halo
+          error={allProps._error}
+          shape={Halo.shapes.pill}
+          visibleOnFocus={!allProps._disabled}
+          visible={allProps._isFocused}
         >
-          {allProps.checked && <div {...styles.circleInner(allProps)} />}
-        </div>
+          <div
+            role="radio"
+            aria-checked={allProps.checked}
+            tabIndex="-1"
+            onFocus={props._disabled ? null : _ => props._onFocus(props.value)}
+            ref={el => (this.circle = el)}
+            {...styles.circle(allProps)}
+          >
+            {allProps.checked && <div {...styles.circleInner(allProps)} />}
+          </div>
+        </Halo>
         <input
           {...propsUtil.whitelistProps(allProps, radioButtonHtmlPropsWhitelist)}
           tabIndex="-1"

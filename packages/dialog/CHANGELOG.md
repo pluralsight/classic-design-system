@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@2.3.0...@pluralsight/ps-design-system-dialog@2.3.1) (2018-11-12)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
+# [2.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@2.2.17...@pluralsight/ps-design-system-dialog@2.3.0) (2018-11-12)
+
+
+### Bug Fixes
+
+* **dialog:** fix warnings and stories related to overlay click disabling ([de4783d](https://github.com/pluralsight/design-system/commit/de4783d))
+
+
+### Features
+
+* **dialog:** trap focus if model or has onClose prop ([44abea5](https://github.com/pluralsight/design-system/commit/44abea5))
+* **dialog:** use focuslock to aid in accessibility ([8feb500](https://github.com/pluralsight/design-system/commit/8feb500)), closes [#260](https://github.com/pluralsight/design-system/issues/260)
+
+
+
+
+
+## [2.2.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@2.2.16...@pluralsight/ps-design-system-dialog@2.2.17) (2018-11-09)
+
+
+### Bug Fixes
+
+* upgrade storybook and fix issues with require.context ([ba6a6e8](https://github.com/pluralsight/design-system/commit/ba6a6e8))
+
+
+
+
+
 ## [2.2.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@2.2.15...@pluralsight/ps-design-system-dialog@2.2.16) (2018-10-31)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog

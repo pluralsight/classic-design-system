@@ -1,9 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/vars'
-import { transparentize } from 'polished'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
 export default {
   // group
@@ -21,7 +17,6 @@ export default {
   },
 
   // button
-
   '.psds-radio-button': {
     display: 'flex',
     alignItems: 'center',
@@ -45,78 +40,6 @@ export default {
   },
   '.psds-radio-button__circle:focus': {
     outline: 'none'
-  },
-  '.psds-radio-button__circle:focus:before': {
-    content: ' ',
-    position: 'absolute',
-    top: '-3px',
-    left: '-3px',
-    right: '-3px',
-    bottom: '-3px',
-    background: core.colors.gray05,
-    zIndex: '-1',
-    borderRadius: '50%'
-  },
-  [`.psds-radio-button__circle.psds-theme--${themeNames.light}:focus:before`]: {
-    top: '-4px',
-    left: '-4px',
-    right: '-4px',
-    bottom: '-4px',
-    background: core.colors.bone
-  },
-  '.psds-radio-button__circle:focus:after': {
-    content: ' ',
-    position: 'absolute',
-    top: '-6px',
-    left: '-6px',
-    right: '-6px',
-    bottom: '-6px',
-    background: core.colors.blue,
-    zIndex: '-2',
-    borderRadius: '50%'
-  },
-  [`.psds-radio-button__circle.psds-theme--${themeNames.light}:focus:after`]: {
-    top: '-7px',
-    left: '-7px',
-    right: '-7px',
-    bottom: '-7px'
-  },
-  '.psds-radio-button__circle--error:before': {
-    content: ' ',
-    position: 'absolute',
-    top: '-3px',
-    left: '-3px',
-    right: '-3px',
-    bottom: '-3px',
-    background: core.colors.gray05,
-    zIndex: '-1',
-    borderRadius: '50%'
-  },
-  [`.psds-radio-button__circle--error.psds-theme--${
-    themeNames.light
-  }:before`]: {
-    top: '-4px',
-    left: '-4px',
-    right: '-4px',
-    bottom: '-4px',
-    background: core.colors.bone
-  },
-  '.psds-radio-button__circle--error:after': {
-    content: ' ',
-    position: 'absolute',
-    top: '-6px',
-    left: '-6px',
-    right: '-6px',
-    bottom: '-6px',
-    background: core.colors.red,
-    zIndex: '-2',
-    borderRadius: '50%'
-  },
-  [`.psds-radio-button__circle--error.psds-theme--${themeNames.light}:after`]: {
-    top: '-7px',
-    left: '-7px',
-    right: '-7px',
-    bottom: '-7px'
   },
   '.psds-radio-button__circle--checked': {
     borderColor: core.colors.blue

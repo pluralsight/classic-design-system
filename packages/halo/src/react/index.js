@@ -14,7 +14,7 @@ const styles = {
   halo: props => {
     const base = BASE_CLASSNAME
     const theme = `${BASE_CLASSNAME}--theme-${props.themeName}`
-    const appearance = `${BASE_CLASSNAME}--appearance-${props.appearance}`
+    const error = `${BASE_CLASSNAME}--error`
     const shape = `${BASE_CLASSNAME}--shape-${props.shape}`
     const gapSize = `${BASE_CLASSNAME}--gap-size-${props.gapSize}`
 
@@ -27,11 +27,11 @@ const styles = {
       css[base],
       { ':after': css[`${base}:after`] },
       { ':after': css[`${theme}:after`] },
-      { ':after': css[`${appearance}:after`] },
       { ':after': css[`${shape}:after`] },
       { ':after': css[`${gapSize}:after`] },
       { ':after': css[`${gapTheme}:after`] },
 
+      props.error && { ':after': css[`${error}:after`] },
       props.visible && { ':after': css[`${visible}:after`] },
       props.visibleOnFocus && {
         ':focus-within:after': css[`${visibleOnFocus}:focus-within:after`],
@@ -43,7 +43,7 @@ const styles = {
 
 const Halo = props => {
   const {
-    appearance,
+    error,
     gapSize,
     themeName,
     shape,
@@ -55,21 +55,19 @@ const Halo = props => {
   return <div {...styles.halo(props)} {...filteredProps} />
 }
 
-Halo.appearances = vars.appearances
 Halo.gapSizes = vars.gapSizes
 Halo.shapes = vars.shapes
 
 Halo.defaultProps = {
-  appearance: vars.appearances.default,
+  error: false,
   gapSize: vars.gapSizes.default,
   shape: vars.shapes.default,
-  className: '',
-  visible: true,
-  visibleOnFocus: false
+  visible: false,
+  visibleOnFocus: true
 }
 
 Halo.propTypes = {
-  appearance: PropTypes.oneOf(Object.values(vars.appearances)),
+  error: PropTypes.bool,
   gapSize: PropTypes.oneOf(Object.values(vars.gapSizes)),
   shape: PropTypes.oneOf(Object.values(vars.shapes)),
   className: PropTypes.string,

@@ -1,6 +1,5 @@
-// TODO: maybe? back the visible ui with a native select that an be submitted with <form target=?? /> browser submission
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
 import * as glamor from 'glamor'
+import Halo from '@pluralsight/ps-design-system-halo/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -41,42 +40,8 @@ const styles = {
         }
       }
     ),
-  fieldContainer: ({ error, themeName }, { isFocused }) =>
-    glamor.css(
-      css['.psds-dropdown__field-container'],
-      error
-        ? {
-            ':before': {
-              ...css['.psds-dropdown__field-container--error:before'],
-              ...css[
-                `.psds-dropdown__field-container--error.psds-theme--${themeName}:before`
-              ]
-            },
-            ':after': {
-              ...css['.psds-dropdown__field-container--error:after'],
-              ...css[
-                `.psds-dropdown__field-container--error.psds-theme--${themeName}:after`
-              ]
-            }
-          }
-        : null,
-      isFocused
-        ? {
-            ':before': {
-              ...css['.psds-dropdown__field-container:focus:before'],
-              ...css[
-                `.psds-dropdown__field-container.psds-theme--${themeName}:focus:before`
-              ]
-            },
-            ':after': {
-              ...css['.psds-dropdown__field-container:focus:after'],
-              ...css[
-                `.psds-dropdown__field-container.psds-theme--${themeName}:focus:after`
-              ]
-            }
-          }
-        : null
-    ),
+  fieldAligner: _ => glamor.css(css['.psds-dropdown__field-aligner']),
+  fieldContainer: _ => glamor.css(css['.psds-dropdown__field-container']),
   icon: ({ appearance, icon, themeName }) =>
     glamor.css(
       css['.psds-dropdown__icon'],
@@ -135,11 +100,11 @@ class Dropdown extends React.Component {
     this.setState({ isOpen: !this.state.isOpen })
     if (typeof this.props.onClick === 'function') this.props.onClick(evt)
   }
-  handleFocus() {
+  handleFocus(evt) {
     this.setState(_ => ({ isFocused: true }))
     if (typeof this.props.onFocus === 'function') this.props.onFocus(evt)
   }
-  handleBlur() {
+  handleBlur(evt) {
     this.setState(_ => ({ isFocused: false }))
     if (typeof this.props.onBlur === 'function') this.props.onBlur(evt)
   }
@@ -228,35 +193,39 @@ class Dropdown extends React.Component {
           {allProps.label && (
             <div {...styles.label(allProps)}>{allProps.label}</div>
           )}
-          <div {...styles.fieldContainer(allProps, state)}>
-            <button
-              {...propsUtil.whitelistProps(
-                allProps,
-                dropdownHtmlPropsWhitelist
-              )}
-              {...styles.field(allProps)}
-              disabled={allProps.disabled}
-              onClick={allProps.disabled ? null : this.handleToggleOpen}
-              onBlur={allProps.disabled ? null : this.handleBlur}
-              onFocus={allProps.disabled ? null : this.handleFocus}
-              ref={el => {
-                this.field = el
-                if (typeof allProps.innerRef === 'function')
-                  allProps.innerRef(el)
-              }}
-            >
-              <span aria-hidden {...styles.buttonSizer(allProps)}>
-                {longestMenuItemState.label || allProps.placeholder}
-              </span>
-              <span {...styles.placeholder(allProps)}>
-                {state.selectedLabel || allProps.placeholder}
-              </span>
-            </button>
-            <div {...styles.icon(allProps)}>
-              <Icon>
-                <CaretDown />
-              </Icon>
-            </div>
+          <div {...styles.fieldContainer(allProps)}>
+            <Halo error={allProps.error} gapSize={Halo.gapSizes.small}>
+              <div {...styles.fieldAligner(allProps)}>
+                <button
+                  {...propsUtil.whitelistProps(
+                    allProps,
+                    dropdownHtmlPropsWhitelist
+                  )}
+                  {...styles.field(allProps)}
+                  disabled={allProps.disabled}
+                  onClick={allProps.disabled ? null : this.handleToggleOpen}
+                  onBlur={allProps.disabled ? null : this.handleBlur}
+                  onFocus={allProps.disabled ? null : this.handleFocus}
+                  ref={el => {
+                    this.field = el
+                    if (typeof allProps.innerRef === 'function')
+                      allProps.innerRef(el)
+                  }}
+                >
+                  <span aria-hidden {...styles.buttonSizer(allProps)}>
+                    {longestMenuItemState.label || allProps.placeholder}
+                  </span>
+                  <span {...styles.placeholder(allProps)}>
+                    {state.selectedLabel || allProps.placeholder}
+                  </span>
+                </button>
+                <div {...styles.icon(allProps)}>
+                  <Icon>
+                    <CaretDown />
+                  </Icon>
+                </div>
+              </div>
+            </Halo>
             {allProps.error && (
               <div {...styles.error(allProps)}>
                 <Icon id={Icon.ids.warning} />

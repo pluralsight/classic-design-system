@@ -5,16 +5,20 @@ exports[`Storyshots actions button 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-1x8hi92=""
-    onClick={[Function]}
-    role="button"
-    tabIndex={0}
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-1997kh1=""
+    <div
+      data-css-qgf2xw=""
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
     >
-      As a button
-    </span>
+      <span
+        data-css-1997kh1=""
+      >
+        As a button
+      </span>
+    </div>
   </div>
 </div>
 `;
@@ -24,30 +28,34 @@ exports[`Storyshots actions button w/ icon button 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-64l86f=""
-    onClick={[Function]}
-    role="button"
-    tabIndex={0}
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-13bnfv4=""
-    >
-      As a button
-    </span>
     <div
-      className="css-1c7pw2e"
+      data-css-1b60kkx=""
       onClick={[Function]}
+      role="button"
+      tabIndex={0}
     >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        data-css-13bnfv4=""
       >
-        <path
-          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-        />
-      </svg>
+        As a button
+      </span>
+      <div
+        className="css-1c7pw2e"
+        onClick={[Function]}
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </div>
@@ -58,27 +66,31 @@ exports[`Storyshots actions just icon button 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-1fxgkih=""
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-13bnfv4=""
-    >
-      As a button
-    </span>
     <div
-      className="css-1c7pw2e"
-      onClick={[Function]}
+      data-css-1fxgkih=""
     >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        data-css-13bnfv4=""
       >
-        <path
-          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-        />
-      </svg>
+        As a button
+      </span>
+      <div
+        className="css-1c7pw2e"
+        onClick={[Function]}
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </div>
@@ -88,16 +100,20 @@ exports[`Storyshots actions link 1`] = `
 <div
   data-css-claeju=""
 >
-  <a
-    data-css-1x8hi92=""
-    href="https://duckduckgo.com/"
+  <div
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-1997kh1=""
+    <a
+      data-css-qgf2xw=""
+      href="https://duckduckgo.com/"
     >
-      As a link
-    </span>
-  </a>
+      <span
+        data-css-1997kh1=""
+      >
+        As a link
+      </span>
+    </a>
+  </div>
 </div>
 `;
 
@@ -105,17 +121,44 @@ exports[`Storyshots actions link with target 1`] = `
 <div
   data-css-claeju=""
 >
-  <a
-    data-css-1x8hi92=""
-    href="https://duckduckgo.com/"
-    target="_blank"
+  <div
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-1997kh1=""
+    <a
+      data-css-qgf2xw=""
+      href="https://duckduckgo.com/"
+      target="_blank"
     >
-      Opens in new window
-    </span>
-  </a>
+      <span
+        data-css-1997kh1=""
+      >
+        Opens in new window
+      </span>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots actions small button 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-17i4ejz=""
+  >
+    <div
+      data-css-upxcka=""
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        data-css-1997kh1=""
+      >
+        As a button
+      </span>
+    </div>
+  </div>
 </div>
 `;
 
@@ -124,13 +167,17 @@ exports[`Storyshots appearance accent 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-47hvh8=""
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-1997kh1=""
+    <div
+      data-css-47hvh8=""
     >
-      accent
-    </span>
+      <span
+        data-css-1997kh1=""
+      >
+        accent
+      </span>
+    </div>
   </div>
 </div>
 `;
@@ -140,13 +187,17 @@ exports[`Storyshots appearance basic 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-1n5vxb9=""
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-1997kh1=""
+    <div
+      data-css-1n5vxb9=""
     >
-      basic
-    </span>
+      <span
+        data-css-1997kh1=""
+      >
+        basic
+      </span>
+    </div>
   </div>
 </div>
 `;
@@ -156,13 +207,17 @@ exports[`Storyshots appearance bright 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-itkkn2=""
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-1997kh1=""
+    <div
+      data-css-itkkn2=""
     >
-      bright
-    </span>
+      <span
+        data-css-1997kh1=""
+      >
+        bright
+      </span>
+    </div>
   </div>
 </div>
 `;
@@ -172,13 +227,17 @@ exports[`Storyshots error default 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-gs5gu0=""
+    data-css-1506jix=""
   >
-    <span
-      data-css-1997kh1=""
+    <div
+      data-css-1n5vxb9=""
     >
-      I have a problem
-    </span>
+      <span
+        data-css-1997kh1=""
+      >
+        I have a problem
+      </span>
+    </div>
   </div>
 </div>
 `;
@@ -188,16 +247,20 @@ exports[`Storyshots error focusable 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-1j6s7i0=""
-    onClick={[Function]}
-    role="button"
-    tabIndex={0}
+    data-css-1506jix=""
   >
-    <span
-      data-css-1997kh1=""
+    <div
+      data-css-qgf2xw=""
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
     >
-      I have a problem
-    </span>
+      <span
+        data-css-1997kh1=""
+      >
+        I have a problem
+      </span>
+    </div>
   </div>
 </div>
 `;
@@ -207,27 +270,31 @@ exports[`Storyshots icon accent medium 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-cakr6m=""
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-13bnfv4=""
-    >
-      With Icon
-    </span>
     <div
-      className="css-1vg8sjr"
-      onClick={[Function]}
+      data-css-cakr6m=""
     >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        data-css-13bnfv4=""
       >
-        <path
-          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-        />
-      </svg>
+        With Icon
+      </span>
+      <div
+        className="css-1vg8sjr"
+        onClick={[Function]}
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </div>
@@ -238,27 +305,31 @@ exports[`Storyshots icon accent small 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-1swczt7=""
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-13bnfv4=""
-    >
-      With Icon
-    </span>
     <div
-      className="css-crsxhn"
-      onClick={[Function]}
+      data-css-1swczt7=""
     >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        data-css-13bnfv4=""
       >
-        <path
-          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-        />
-      </svg>
+        With Icon
+      </span>
+      <div
+        className="css-crsxhn"
+        onClick={[Function]}
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </div>
@@ -269,27 +340,31 @@ exports[`Storyshots icon basic medium 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-1fxgkih=""
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-13bnfv4=""
-    >
-      With Icon
-    </span>
     <div
-      className="css-1vg8sjr"
-      onClick={[Function]}
+      data-css-1fxgkih=""
     >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        data-css-13bnfv4=""
       >
-        <path
-          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-        />
-      </svg>
+        With Icon
+      </span>
+      <div
+        className="css-1vg8sjr"
+        onClick={[Function]}
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </div>
@@ -300,27 +375,31 @@ exports[`Storyshots icon basic small 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-1g26r3r=""
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-13bnfv4=""
-    >
-      With Icon
-    </span>
     <div
-      className="css-crsxhn"
-      onClick={[Function]}
+      data-css-1g26r3r=""
     >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        data-css-13bnfv4=""
       >
-        <path
-          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-        />
-      </svg>
+        With Icon
+      </span>
+      <div
+        className="css-crsxhn"
+        onClick={[Function]}
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </div>
@@ -331,27 +410,31 @@ exports[`Storyshots icon bright medium 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-1uxvgmp=""
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-13bnfv4=""
-    >
-      With Icon
-    </span>
     <div
-      className="css-1vg8sjr"
-      onClick={[Function]}
+      data-css-1uxvgmp=""
     >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        data-css-13bnfv4=""
       >
-        <path
-          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-        />
-      </svg>
+        With Icon
+      </span>
+      <div
+        className="css-1vg8sjr"
+        onClick={[Function]}
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </div>
@@ -362,27 +445,31 @@ exports[`Storyshots icon bright small 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-psmlat=""
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-13bnfv4=""
-    >
-      With Icon
-    </span>
     <div
-      className="css-crsxhn"
-      onClick={[Function]}
+      data-css-psmlat=""
     >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        data-css-13bnfv4=""
       >
-        <path
-          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-        />
-      </svg>
+        With Icon
+      </span>
+      <div
+        className="css-crsxhn"
+        onClick={[Function]}
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </div>
@@ -393,17 +480,21 @@ exports[`Storyshots isPressed button 1`] = `
   data-css-claeju=""
 >
   <div
-    aria-pressed={true}
-    data-css-1idd5sa=""
-    onClick={[Function]}
-    role="button"
-    tabIndex={0}
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-1997kh1=""
+    <div
+      aria-pressed={true}
+      data-css-7esa94=""
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
     >
-      As a button
-    </span>
+      <span
+        data-css-1997kh1=""
+      >
+        As a button
+      </span>
+    </div>
   </div>
 </div>
 `;
@@ -413,31 +504,35 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
   data-css-claeju=""
 >
   <div
-    aria-pressed={true}
-    data-css-33sfcu=""
-    onClick={[Function]}
-    role="button"
-    tabIndex={0}
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-13bnfv4=""
-    >
-      As a button
-    </span>
     <div
-      className="css-1c7pw2e"
+      aria-pressed={true}
+      data-css-1g24xph=""
       onClick={[Function]}
+      role="button"
+      tabIndex={0}
     >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        data-css-13bnfv4=""
       >
-        <path
-          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-        />
-      </svg>
+        As a button
+      </span>
+      <div
+        className="css-1c7pw2e"
+        onClick={[Function]}
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </div>
@@ -447,17 +542,21 @@ exports[`Storyshots isPressed link 1`] = `
 <div
   data-css-claeju=""
 >
-  <a
-    aria-pressed={true}
-    data-css-1idd5sa=""
-    href="https://duckduckgo.com/"
+  <div
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-1997kh1=""
+    <a
+      aria-pressed={true}
+      data-css-7esa94=""
+      href="https://duckduckgo.com/"
     >
-      As a link
-    </span>
-  </a>
+      <span
+        data-css-1997kh1=""
+      >
+        As a link
+      </span>
+    </a>
+  </div>
 </div>
 `;
 
@@ -466,13 +565,17 @@ exports[`Storyshots long string 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-1n5vxb9=""
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-1997kh1=""
+    <div
+      data-css-1n5vxb9=""
     >
-      This is the string that goes on forever and always. There really isn't an end. Wow.
-    </span>
+      <span
+        data-css-1997kh1=""
+      >
+        This is the string that goes on forever and always. There really isn't an end. Wow.
+      </span>
+    </div>
   </div>
 </div>
 `;
@@ -482,27 +585,31 @@ exports[`Storyshots long with icon 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-1fxgkih=""
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-13bnfv4=""
-    >
-      This is the string that goes on forever and always. There really isn't an end. Wow.
-    </span>
     <div
-      className="css-1vg8sjr"
-      onClick={[Function]}
+      data-css-1fxgkih=""
     >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        data-css-13bnfv4=""
       >
-        <path
-          d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
-        />
-      </svg>
+        This is the string that goes on forever and always. There really isn't an end. Wow.
+      </span>
+      <div
+        className="css-1vg8sjr"
+        onClick={[Function]}
+      >
+        <svg
+          aria-label="check icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </div>
@@ -513,13 +620,17 @@ exports[`Storyshots size medium 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-1n5vxb9=""
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-1997kh1=""
+    <div
+      data-css-1n5vxb9=""
     >
-      medium
-    </span>
+      <span
+        data-css-1997kh1=""
+      >
+        medium
+      </span>
+    </div>
   </div>
 </div>
 `;
@@ -529,13 +640,17 @@ exports[`Storyshots size small 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-uqnvqs=""
+    data-css-17i4ejz=""
   >
-    <span
-      data-css-1997kh1=""
+    <div
+      data-css-uqnvqs=""
     >
-      small
-    </span>
+      <span
+        data-css-1997kh1=""
+      >
+        small
+      </span>
+    </div>
   </div>
 </div>
 `;

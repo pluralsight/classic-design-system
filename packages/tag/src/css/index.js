@@ -6,7 +6,8 @@ import * as vars from '../vars'
 const hover = {
   backgroundColor: core.colors.gray02,
   color: core.colors.black,
-  cursor: 'pointer'
+  cursor: 'pointer',
+  outline: 'none'
 }
 const accent = {
   color: core.colors.white,
