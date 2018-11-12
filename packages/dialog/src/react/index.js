@@ -1,9 +1,9 @@
-import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
+
+import FocusManager from '@pluralsight/ps-design-system-focusmanager/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
-import { transparentize } from 'polished'
 
 import css from '../css'
 import * as vars from '../vars'
@@ -14,6 +14,7 @@ const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
 const fade = glamor.css.keyframes(
   css[`@keyframes psds-dialog__keyframes__fade`]
 )
+
 const styles = {
   dialog: ({ modal, onClose, tailPosition }) =>
     glamor.css({
@@ -51,50 +52,64 @@ const CloseButton = props => (
   </button>
 )
 
-function handleKeyUp(props, evt) {
-  if (evt.keyCode === ESCAPE_KEYCODE) props.onClose(evt)
+class ModalOverlay extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.handleOverlayClick = this.handleOverlayClick.bind(this)
+  }
+
+  handleOverlayClick(evt) {
+    if (this.props.disableCloseOnOverlayClick) return
+    if (evt.target.id === MODAL_OVERLAY_ID) this.props.onClose(evt)
+  }
+
+  render() {
+    return (
+      <div
+        {...styles.overlay(this.props)}
+        id={MODAL_OVERLAY_ID}
+        onClick={this.handleOverlayClick}
+      >
+        {this.props.children}
+      </div>
+    )
+  }
 }
 
-function handleOverlayClick(props, evt) {
-  if (evt.target.id === MODAL_OVERLAY_ID) props.onClose(evt)
+ModalOverlay.propTypes = {
+  children: PropTypes.node,
+  onClose: PropTypes.func.isRequired
 }
-
-const ModalOverlay = props => (
-  <div
-    {...styles.overlay(props)}
-    id={MODAL_OVERLAY_ID}
-    onClick={
-      props.disableCloseOnOverlayClick
-        ? null
-        : handleOverlayClick.bind(this, props)
-    }
-  >
-    {props.children}
-  </div>
-)
 
 class Dialog extends React.Component {
-  componentDidMount() {
-    if (this.el && !this.props.disableFocusOnMount) this.el.focus()
+  constructor(props) {
+    super(props)
+
+    this.handleKeyUp = this.handleKeyUp.bind(this)
   }
+
+  handleKeyUp(evt) {
+    if (evt.keyCode === ESCAPE_KEYCODE) this.props.onClose(evt)
+  }
+
   render() {
     const { props } = this
+
     const dialogProps = {
       ...styles.dialog(props),
-      ...(!this.props.disableCloseOnEscape &&
-      typeof this.props.onClose === 'function'
-        ? { onKeyUp: handleKeyUp.bind(this, this.props) }
+      ...(!props.disableCloseOnEscape && typeof props.onClose === 'function'
+        ? { onKeyUp: this.handleKeyUp }
         : null),
-      ref: el => {
-        this.el = el
-        if (typeof props.innerRef === 'function') props.innerRef(el)
-      },
-      tabIndex: -1,
       ...(props.style ? { style: props.style } : null),
       ...(props.className ? { className: props.className } : null)
     }
     return (
-      <div {...dialogProps}>
+      <FocusManager
+        autofocus={!props.disableFocusOnMount}
+        trapped={!!props.model || !!props.onClose}
+        {...dialogProps}
+      >
         <Theme name={Theme.names.light}>
           <div>
             {!props.disableCloseButton &&
@@ -104,23 +119,19 @@ class Dialog extends React.Component {
             {props.children}
           </div>
         </Theme>
-      </div>
+      </FocusManager>
     )
   }
 }
 
-class DialogWrapper extends React.Component {
-  render() {
-    const { props } = this
-    return props.modal ? (
-      <ModalOverlay {...props}>
-        <Dialog {...props} />
-      </ModalOverlay>
-    ) : (
+const DialogWrapper = props =>
+  props.modal ? (
+    <ModalOverlay {...props}>
       <Dialog {...props} />
-    )
-  }
-}
+    </ModalOverlay>
+  ) : (
+    <Dialog {...props} />
+  )
 
 DialogWrapper.propTypes = {
   disableCloseButton: PropTypes.bool,
@@ -131,6 +142,7 @@ DialogWrapper.propTypes = {
   tailPosition: PropTypes.oneOf(Object.keys(vars.tailPositions)),
   onClose: PropTypes.func
 }
+
 DialogWrapper.defaultProps = {
   disableCloseButton: false,
   disableCloseOnEscape: false,
