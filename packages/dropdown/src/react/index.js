@@ -232,26 +232,27 @@ class Dropdown extends React.Component {
               </div>
             )}
           </div>
-          {props.menu && state.isOpen && (
-            <div {...styles.menu(allProps)}>
-              {React.cloneElement(props.menu, {
-                onClick: allProps.disabled ? null : this.handleMenuClick,
-                onClose: _ => {
-                  this.setState(_ => ({ isOpen: false }))
-                  if (typeof props.menu.props.onClose === 'function')
-                    props.menu.props.onClose()
-                },
-                style: {
-                  ...props.menu.props.style,
-                  minWidth: '0',
-                  maxWidth: 'none',
-                  width: this.field
-                    ? this.field.getBoundingClientRect().width
-                    : 'auto'
-                }
-              })}
-            </div>
-          )}
+          {props.menu &&
+            state.isOpen && (
+              <div {...styles.menu(allProps)}>
+                {React.cloneElement(props.menu, {
+                  onClick: allProps.disabled ? null : this.handleMenuClick,
+                  onClose: _ => {
+                    this.setState(_ => ({ isOpen: false }))
+                    if (typeof props.menu.props.onClose === 'function')
+                      props.menu.props.onClose()
+                  },
+                  style: {
+                    ...props.menu.props.style,
+                    minWidth: '0',
+                    maxWidth: 'none',
+                    width: this.field
+                      ? this.field.getBoundingClientRect().width
+                      : 'auto'
+                  }
+                })}
+              </div>
+            )}
           {allProps.subLabel && (
             <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
           )}
