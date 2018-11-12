@@ -85,6 +85,16 @@ export default withServerProps(_ => (
     <Content title="Tab">
       <PageHeading packageName="tab">Tab</PageHeading>
 
+      <P>Install the component dependency:</P>
+      <Code language="bash">
+        npm install @pluralsight/ps-design-system-dialog
+      </Code>
+
+      <P>Include a React component in your project:</P>
+      <Code language="javascript">
+        import Dialog from '@pluralsight/ps-design-system-dialog/react'
+      </Code>
+
       <PropTypes
         props={{
           'Tab.ListItem': [
