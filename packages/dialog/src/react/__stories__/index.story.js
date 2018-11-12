@@ -43,7 +43,7 @@ const Content = props => (
 class ModalStory extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { modalIsOpen: true }
+    this.state = { modalIsOpen: props.modalDefaultsOpen }
 
     this.open = this.open.bind(this)
     this.close = this.close.bind(this)
@@ -95,7 +95,11 @@ class ModalStory extends React.Component {
 }
 
 ModalStory.propTypes = {
-  children: PropTypes.func.isRequired
+  children: PropTypes.func.isRequired,
+  modalDefaultsOpen: PropTypes.bool
+}
+ModalStory.defaultProps = {
+  modalDefaultsOpen: true
 }
 
 const tailPositionStory = storiesOf('tailPosition', module)
@@ -135,5 +139,16 @@ storiesOf('modal', module)
   .add('no escape key', _ => (
     <ModalStory>
       {({ close }) => <Content disableCloseOnEscape onClose={close} modal />}
+    </ModalStory>
+  ))
+  .add('no focusable child element, no lock', _ => (
+    <ModalStory modalDefaultsOpen={false}>
+      {_ => (
+        <Dialog>
+          <Text.Heading>
+            <h1>Wowzers, a Dialog</h1>
+          </Text.Heading>
+        </Dialog>
+      )}
     </ModalStory>
   ))

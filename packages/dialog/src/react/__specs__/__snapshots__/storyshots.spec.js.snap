@@ -615,6 +615,131 @@ exports[`Storyshots modal no focus on mount 1`] = `
 </div>
 `;
 
+exports[`Storyshots modal no focusable child element 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div>
+      <p
+        data-css-145tgfu=""
+      >
+        Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake 
+        <a
+          href="#"
+        >
+          I love chocolate cake
+        </a>
+         wafer chupa chups.
+      </p>
+      <p
+        data-css-145tgfu=""
+      >
+        Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
+      </p>
+      <button
+        data-css-gukh6t=""
+        disabled={false}
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          data-css-15b13by=""
+        >
+          close modal
+        </span>
+      </button>
+      <p
+        data-css-145tgfu=""
+      >
+        Sweet soufflé 
+        <a
+          href="#"
+        >
+          apple pie
+        </a>
+        . Halvah icing pudding pastry ice cream gingerbread tart candy canes dragée. Pie gingerbread icing.
+      </p>
+      <div
+        data-css-2hqpvr=""
+        onKeyDown={[Function]}
+      >
+        <div>
+          <h1
+            data-css-7941k5=""
+            size="large"
+          >
+            Wowzers, a Dialog
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots modal no focusable child element, no lock 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div>
+      <p
+        data-css-145tgfu=""
+      >
+        Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake 
+        <a
+          href="#"
+        >
+          I love chocolate cake
+        </a>
+         wafer chupa chups.
+      </p>
+      <p
+        data-css-145tgfu=""
+      >
+        Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
+      </p>
+      <button
+        data-css-gukh6t=""
+        disabled={false}
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          data-css-15b13by=""
+        >
+          open modal
+        </span>
+      </button>
+      <p
+        data-css-145tgfu=""
+      >
+        Sweet soufflé 
+        <a
+          href="#"
+        >
+          apple pie
+        </a>
+        . Halvah icing pudding pastry ice cream gingerbread tart candy canes dragée. Pie gingerbread icing.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots modal with close button 1`] = `
 <div
   data-css-claeju=""
