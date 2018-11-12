@@ -14,7 +14,6 @@ const styles = {
   halo: props => {
     const base = BASE_CLASSNAME
     const theme = `${BASE_CLASSNAME}--theme-${props.themeName}`
-    const error = `${BASE_CLASSNAME}--error`
     const shape = `${BASE_CLASSNAME}--shape-${props.shape}`
     const gapSize = `${BASE_CLASSNAME}--gap-size-${props.gapSize}`
 
@@ -25,18 +24,14 @@ const styles = {
 
     return glamor.css(
       css[base],
-      { ':after': css[`${base}:after`] },
-      { ':after': css[`${theme}:after`] },
-      { ':after': css[`${shape}:after`] },
-      { ':after': css[`${gapSize}:after`] },
-      { ':after': css[`${gapTheme}:after`] },
+      css[theme],
+      css[shape],
+      css[gapSize],
+      css[gapTheme],
 
-      props.error && { ':after': css[`${error}:after`] },
-      props.visible && { ':after': css[`${visible}:after`] },
-      props.visibleOnFocus && {
-        ':focus-within:after': css[`${visibleOnFocus}:focus-within:after`],
-        '[focus-within]:after': css[`${visibleOnFocus}[focus-within]:after`]
-      }
+      props.error && css[`${BASE_CLASSNAME}--error`],
+      props.visible && css[visible],
+      props.visibleOnFocus && css[visibleOnFocus]
     )
   }
 }
