@@ -28,8 +28,6 @@ class FocusManager extends React.Component {
   constructor(props) {
     super(props)
 
-    this.prevFocusedElement = document.activeElement
-
     this.bindElement = this.bindElement.bind(this)
     this.handleKeyDown = this.handleKeyDown.bind(this)
   }
@@ -39,6 +37,8 @@ class FocusManager extends React.Component {
   }
 
   componentDidMount() {
+    this.prevFocusedElement = document.activeElement
+
     this.handleComponentUpdate()
     const firstNode = this.focusableNodes[0]
 
