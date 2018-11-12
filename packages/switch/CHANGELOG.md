@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.5.12...@pluralsight/ps-design-system-switch@1.5.13) (2018-11-09)
+
+
+### Bug Fixes
+
+* upgrade storybook and fix issues with require.context ([ba6a6e8](https://github.com/pluralsight/design-system/commit/ba6a6e8))
+* **switch:** disable focus and toggle when disabled ([de6dcc7](https://github.com/pluralsight/design-system/commit/de6dcc7)), closes [#307](https://github.com/pluralsight/design-system/issues/307)
+
+
+
+
+
 ## [1.5.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.5.11...@pluralsight/ps-design-system-switch@1.5.12) (2018-10-31)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-switch

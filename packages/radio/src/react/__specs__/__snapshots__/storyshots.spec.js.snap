@@ -26,7 +26,7 @@ exports[`Storyshots Radio default 1`] = `
           onClick={[Function]}
         >
           <div
-            data-css-e234i4=""
+            data-css-17i4ejz=""
           >
             <div
               aria-checked={false}
@@ -59,7 +59,7 @@ exports[`Storyshots Radio default 1`] = `
           onClick={[Function]}
         >
           <div
-            data-css-e234i4=""
+            data-css-17i4ejz=""
           >
             <div
               aria-checked={false}
@@ -92,12 +92,138 @@ exports[`Storyshots Radio default 1`] = `
           onClick={[Function]}
         >
           <div
-            data-css-e234i4=""
+            data-css-17i4ejz=""
           >
             <div
               aria-checked={false}
               data-css-dbvyuf=""
               onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            />
+          </div>
+          <input
+            checked={false}
+            data-css-gyrv08=""
+            readOnly={true}
+            tabIndex="-1"
+            type="radio"
+            value="blue"
+          />
+          <div
+            data-css-pgc406=""
+          >
+            Blue
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Radio disabled & error 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div
+      data-css-d41p20=""
+      onFocus={null}
+      onKeyDown={null}
+      role="radiogroup"
+      tabIndex="0"
+    >
+      <div
+        data-css-xp79s5=""
+      >
+        <label
+          data-css-kn3wr0=""
+          onClick={null}
+        >
+          <div
+            data-css-1i7625l=""
+          >
+            <div
+              aria-checked={false}
+              data-css-dbvyuf=""
+              onFocus={null}
+              role="radio"
+              tabIndex="-1"
+            />
+          </div>
+          <input
+            checked={false}
+            data-css-gyrv08=""
+            readOnly={true}
+            tabIndex="-1"
+            type="radio"
+            value="red"
+          />
+          <div
+            data-css-pgc406=""
+          >
+            Red
+          </div>
+        </label>
+      </div>
+      <div
+        data-css-xp79s5=""
+      >
+        <label
+          data-css-kn3wr0=""
+          onClick={null}
+        >
+          <div
+            data-css-1i7625l=""
+          >
+            <div
+              aria-checked={true}
+              data-css-4a14oy=""
+              onFocus={null}
+              role="radio"
+              tabIndex="-1"
+            >
+              <div
+                data-css-16yi4o9=""
+              />
+            </div>
+          </div>
+          <input
+            checked={true}
+            data-css-gyrv08=""
+            readOnly={true}
+            tabIndex="-1"
+            type="radio"
+            value="green"
+          />
+          <div
+            data-css-pgc406=""
+          >
+            Green
+          </div>
+        </label>
+      </div>
+      <div
+        data-css-xp79s5=""
+      >
+        <label
+          data-css-kn3wr0=""
+          onClick={null}
+        >
+          <div
+            data-css-1i7625l=""
+          >
+            <div
+              aria-checked={false}
+              data-css-dbvyuf=""
+              onFocus={null}
               role="radio"
               tabIndex="-1"
             />
@@ -148,7 +274,7 @@ exports[`Storyshots Radio disabled 1`] = `
           onClick={null}
         >
           <div
-            data-css-e234i4=""
+            data-css-13vdocb=""
           >
             <div
               aria-checked={false}
@@ -181,7 +307,7 @@ exports[`Storyshots Radio disabled 1`] = `
           onClick={null}
         >
           <div
-            data-css-e234i4=""
+            data-css-13vdocb=""
           >
             <div
               aria-checked={true}
@@ -218,7 +344,7 @@ exports[`Storyshots Radio disabled 1`] = `
           onClick={null}
         >
           <div
-            data-css-e234i4=""
+            data-css-13vdocb=""
           >
             <div
               aria-checked={false}
@@ -274,7 +400,7 @@ exports[`Storyshots Radio error 1`] = `
           onClick={[Function]}
         >
           <div
-            data-css-joe2xj=""
+            data-css-1506jix=""
           >
             <div
               aria-checked={false}
@@ -307,7 +433,7 @@ exports[`Storyshots Radio error 1`] = `
           onClick={[Function]}
         >
           <div
-            data-css-joe2xj=""
+            data-css-1506jix=""
           >
             <div
               aria-checked={true}
@@ -344,7 +470,7 @@ exports[`Storyshots Radio error 1`] = `
           onClick={[Function]}
         >
           <div
-            data-css-joe2xj=""
+            data-css-1506jix=""
           >
             <div
               aria-checked={false}
@@ -400,7 +526,7 @@ exports[`Storyshots Radio one selected 1`] = `
           onClick={[Function]}
         >
           <div
-            data-css-e234i4=""
+            data-css-17i4ejz=""
           >
             <div
               aria-checked={false}
@@ -433,7 +559,7 @@ exports[`Storyshots Radio one selected 1`] = `
           onClick={[Function]}
         >
           <div
-            data-css-e234i4=""
+            data-css-17i4ejz=""
           >
             <div
               aria-checked={true}
@@ -470,7 +596,7 @@ exports[`Storyshots Radio one selected 1`] = `
           onClick={[Function]}
         >
           <div
-            data-css-e234i4=""
+            data-css-17i4ejz=""
           >
             <div
               aria-checked={false}
@@ -537,7 +663,7 @@ exports[`Storyshots Radio state demo 1`] = `
             onClick={[Function]}
           >
             <div
-              data-css-e234i4=""
+              data-css-17i4ejz=""
             >
               <div
                 aria-checked={true}
@@ -574,7 +700,7 @@ exports[`Storyshots Radio state demo 1`] = `
             onClick={[Function]}
           >
             <div
-              data-css-e234i4=""
+              data-css-17i4ejz=""
             >
               <div
                 aria-checked={false}
@@ -607,7 +733,7 @@ exports[`Storyshots Radio state demo 1`] = `
             onClick={[Function]}
           >
             <div
-              data-css-e234i4=""
+              data-css-17i4ejz=""
             >
               <div
                 aria-checked={false}

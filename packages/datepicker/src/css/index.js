@@ -1,9 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/vars'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 import { transparentize } from 'polished'
 
 import * as vars from '../vars'
@@ -59,7 +56,6 @@ export default {
     display: 'flex',
     borderRadius: '2px',
     alignItems: 'center',
-    minWidth: '192px',
     width: '100%',
     height: '40px',
     minWidth: `calc(192px + ${iconVars.widths.medium} + ${
@@ -80,94 +76,6 @@ export default {
     color: core.colors.gray01,
     background: core.colors.gray06,
     border: `1px solid ${core.colors.gray03}`
-  },
-  [`.psds-date-picker__field-container.psds-theme--${
-    themeNames.light
-  }:focus`]: {
-    border: '1px solid transparent'
-  },
-  [`.psds-date-picker__field-container--error.psds-theme--${
-    themeNames.light
-  }`]: {
-    border: '1px solid transparent'
-  },
-  '.psds-date-picker__field-container:focus:before': {
-    content: ' ',
-    position: 'absolute',
-    top: '-1px',
-    left: '-1px',
-    right: '-1px',
-    bottom: '-1px',
-    background: core.colors.black,
-    zIndex: '-1',
-    borderRadius: '2px'
-  },
-  [`.psds-date-picker__field-container.psds-theme--${
-    themeNames.light
-  }:focus:before`]: {
-    top: '0',
-    left: '0',
-    right: '0',
-    bottom: '0',
-    background: core.colors.bone
-  },
-  '.psds-date-picker__field-container:focus:after': {
-    content: ' ',
-    position: 'absolute',
-    top: '-4px',
-    left: '-4px',
-    right: '-4px',
-    bottom: '-4px',
-    background: core.colors.blue,
-    zIndex: '-2',
-    borderRadius: '4px'
-  },
-  [`.psds-date-picker__field-container.psds-theme--${
-    themeNames.light
-  }:focus:after`]: {
-    top: '-3px',
-    left: '-3px',
-    right: '-3px',
-    bottom: '-3px'
-  },
-  '.psds-date-picker__field-container--error:before': {
-    content: ' ',
-    position: 'absolute',
-    top: '-1px',
-    left: '-1px',
-    right: '-1px',
-    bottom: '-1px',
-    background: core.colors.black,
-    zIndex: '-1',
-    borderRadius: '2px'
-  },
-  [`.psds-date-picker__field-container--error.psds-theme--${
-    themeNames.light
-  }:before`]: {
-    top: '0',
-    left: '0',
-    right: '0',
-    bottom: '0',
-    background: core.colors.bone
-  },
-  '.psds-date-picker__field-container--error:after': {
-    content: ' ',
-    position: 'absolute',
-    top: '-4px',
-    left: '-4px',
-    right: '-4px',
-    bottom: '-4px',
-    background: core.colors.red,
-    zIndex: '-2',
-    borderRadius: '4px'
-  },
-  [`.psds-date-picker__field-container--error.psds-theme--${
-    themeNames.light
-  }:after`]: {
-    top: '-4px',
-    left: '-4px',
-    right: '-4px',
-    bottom: '-4px'
   },
 
   // __icon
@@ -232,7 +140,7 @@ export default {
     marginTop: core.layout.spacingXXSmall
   },
 
-  ['@keyframes psds-date-picker__calendar__keyframes__slide']: {
+  '@keyframes psds-date-picker__calendar__keyframes__slide': {
     '100%': {
       transform: 'translateY(0)',
       opacity: 1

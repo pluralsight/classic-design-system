@@ -1,9 +1,8 @@
+import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 import * as glamor from 'glamor'
+import Halo from '@pluralsight/ps-design-system-halo/react'
 import PropTypes from 'prop-types'
 import React from 'react'
-
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
-import Halo from '@pluralsight/ps-design-system-halo/react'
 
 import css from '../css'
 import * as vars from '../vars'
@@ -89,15 +88,7 @@ class Switch extends React.Component {
 
     return (
       <button {...switchProps} aria-checked={allProps.checked} role="checkbox">
-        <Halo
-          appearance={
-            !isFocused && error
-              ? Halo.appearances.error
-              : Halo.appearances.default
-          }
-          shape={Halo.shapes.pill}
-          visible={error || isFocused}
-        >
+        <Halo error={error} shape={Halo.shapes.pill} visible={isFocused}>
           <div {...styles.track(allProps)}>
             <div {...styles.thumb(allProps)} />
           </div>

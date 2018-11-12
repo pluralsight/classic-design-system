@@ -1,9 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/vars'
-import { transparentize } from 'polished'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
 export default {
   // group
@@ -21,7 +17,6 @@ export default {
   },
 
   // button
-
   '.psds-radio-button': {
     display: 'flex',
     alignItems: 'center',

@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@1.1.2...@pluralsight/ps-design-system-halo@2.0.0) (2018-11-09)
+
+
+### Bug Fixes
+
+* upgrade storybook and fix issues with require.context ([ba6a6e8](https://github.com/pluralsight/design-system/commit/ba6a6e8))
+
+
+### Code Refactoring
+
+* **halo:** remove appearance; add error; change visibility defaults ([567a1d7](https://github.com/pluralsight/design-system/commit/567a1d7))
+
+
+### BREAKING CHANGES
+
+* **halo:** remove appearance; add error prop; visible defaults to false; visibleOnFocus defaults to true
+
+
+
+
+
 ## [1.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@1.1.1...@pluralsight/ps-design-system-halo@1.1.2) (2018-10-31)
 
 

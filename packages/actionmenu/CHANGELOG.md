@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@3.1.12...@pluralsight/ps-design-system-actionmenu@3.1.13) (2018-11-09)
+
+
+### Bug Fixes
+
+* upgrade storybook and fix issues with require.context ([ba6a6e8](https://github.com/pluralsight/design-system/commit/ba6a6e8))
+
+
+
+
+
 ## [3.1.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@3.1.11...@pluralsight/ps-design-system-actionmenu@3.1.12) (2018-10-31)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
