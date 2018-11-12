@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.1.9...@pluralsight/ps-design-system-site@11.1.10) (2018-11-12)
+
+
+### Bug Fixes
+
+* **site:** fix webpack versions ([b2aceac](https://github.com/pluralsight/design-system/commit/b2aceac))
+* **site:** lock in webpack version ([b76e66b](https://github.com/pluralsight/design-system/commit/b76e66b))
+
+
+
+
+
 ## [11.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.1.8...@pluralsight/ps-design-system-site@11.1.9) (2018-11-12)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site
