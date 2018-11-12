@@ -15,12 +15,21 @@ const logSuccess = str => console.log(chalk.green(prefix + str))
 
 program
   .version(require('../package.json').version)
-  .option('-i, --input [filePath]', 'Provide an input file')
-  .option('-o, --output [directoryPath]', 'Provide an output directory')
+  .option(
+    '-i, --input [filePath]',
+    'Provide an input file',
+    defaultInputFilePath
+  )
+  .option(
+    '-o, --output [directoryPath]',
+    'Provide an output directory',
+    defaultOutputDirectoryPath
+  )
+  .option('-g, --useGlamor', 'Compile css using glamor', false)
   .parse(process.argv)
 
-const inputFilePath = program.input || defaultInputFilePath
-const outputDirectoryPath = program.output || defaultOutputDirectoryPath
+const inputFilePath = program.input
+const outputDirectoryPath = program.output
 
 log('Building css...')
 log(`Using input:  "${inputFilePath}"`)
@@ -32,15 +41,18 @@ try {
 } catch (e) {
   logError('Input error')
   logError(e)
-  return process.exit(1)
+  process.exit(1)
 }
 
 try {
-  css.buildComponentStylesheet(js, { outputDir: outputDirectoryPath })
+  css.buildComponentStylesheet(js, {
+    outputDir: outputDirectoryPath,
+    useGlamor: program.useGlamor
+  })
 } catch (e) {
   logError('Output error')
   logError(e)
-  return process.exit(1)
+  process.exit(1)
 }
 
 logSuccess('Success.')

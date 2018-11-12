@@ -1,11 +1,12 @@
+const fs = require('../fs')
 const path = require('path')
 
+const glamorToCss = require('./glamor-to-css')
 const jsToCss = require('./js-to-css')
-const fs = require('../fs')
 
-module.exports = (js, { outputDir }) => {
+module.exports = (js, { outputDir, useGlamor = false }) => {
   try {
-    const outputCss = jsToCss(js)
+    const outputCss = useGlamor ? glamorToCss(js) : jsToCss(js)
 
     const cssOutputPath = path.join(outputDir, 'index.css')
     const scssOutputPath = path.join(outputDir, 'index.scss')
