@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@pluralsight/ps-design-system-button": "^10.8.17",
+    "@pluralsight/ps-design-system-core": "^4.3.5",
+    "@pluralsight/ps-design-system-icon": "^8.13.3",
+    "@pluralsight/ps-design-system-normalize": "^3.0.47",
+    "@pluralsight/ps-design-system-text": "^10.7.16",
+    "glamor": "^2.20.40",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-scripts": "2.1.1"
