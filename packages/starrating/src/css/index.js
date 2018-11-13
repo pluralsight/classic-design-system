@@ -1,17 +1,72 @@
-export default {
-  button: {
+import { transparentize } from 'polished'
+import core from '@pluralsight/ps-design-system-core'
+
+export const BASE_CLASSNAME = '.psds-starrating'
+
+const hideVisually = {
+  border: 0,
+  clip: 'rect(1px, 1px, 1px, 1px)',
+  clipPath: 'polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px)',
+  height: 1,
+  overflow: 'hidden',
+  padding: 0,
+  position: 'absolute',
+  whiteSpace: 'nowrap',
+  width: 1,
+
+  '&:active, &:focus': {
+    clip: 'auto',
+    clipPath: 'none',
+    height: 'auto',
+    overflow: 'visible',
+    position: 'static',
+    width: 'auto'
+  }
+}
+
+const resetButton = {
+  background: 'transparent',
+  border: 'none',
+  color: 'inherit',
+  font: 'inherit',
+  lineHeight: 'normal',
+  margin: 0,
+  overflow: 'visible',
+  padding: 0,
+  width: 'auto',
+  WebkitAppearance: 'none',
+
+  '&::-moz-focus-inner': {
     border: 0,
-    backgroundColor: 'rgba(0,0,0,0)',
-    padding: 0,
-    margin: 0
+    padding: 0
+  }
+}
+
+export default {
+  [BASE_CLASSNAME]: {},
+
+  [`${BASE_CLASSNAME}__star`]: {
+    ...resetButton,
+    lineHeight: 0
   },
-  screenReaderContent: {
-    clip: 'rect(1px, 1px, 1px, 1px)',
-    position: 'absolute',
-    clipPath: 'polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px)',
-    whiteSpace: 'nowrap',
-    height: '1px',
-    width: '1px',
-    overflow: 'hidden'
+  [`${BASE_CLASSNAME}__star--active`]: {
+    color: core.colors.yellow
+  },
+  [`${BASE_CLASSNAME}__star--interactive`]: {
+    cursor: 'pointer'
+  },
+  [`${BASE_CLASSNAME}__star--theme-dark`]: {
+    color: core.colors.gray03
+  },
+  [`${BASE_CLASSNAME}__star--theme-light`]: {
+    color: transparentize(0.25, core.colors.gray01)
+  },
+
+  [`${BASE_CLASSNAME}__screen-reader-input`]: {
+    ...hideVisually
+  },
+
+  [`${BASE_CLASSNAME}__screen-reader-text`]: {
+    ...hideVisually
   }
 }

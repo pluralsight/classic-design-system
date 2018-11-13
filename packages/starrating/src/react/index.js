@@ -1,179 +1,152 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { transparentize } from 'polished'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import DarkHalfStar from './half-star-dark'
-import LightHalfStar from './half-star-light'
 
-import css from '../css'
+import Star from './star'
 
-const TOTAL_STARS = 5
+import withDefaultTheme from './with-default-theme'
 
-const themeToIcons = themeName => {
-  return {
-    full: {
-      fill: core.colors.yellow,
-      id: Icon.ids.starFill
-    },
-    empty: {
-      fill:
-        themeName === themeDefaultName
-          ? core.colors.gray03
-          : transparentize(0.25, core.colors.gray01),
-      id: Icon.ids.starFill
-    },
-    hover: {
-      fill: core.colors.gray04,
-      id: Icon.ids.star
-    }
-  }
+import css, { BASE_CLASSNAME } from '../css'
+
+const styles = {
+  starRating: () => glamor.css(css[BASE_CLASSNAME]),
+  screenReaderInput: () =>
+    glamor.css(css[`${BASE_CLASSNAME}__screen-reader-input`]),
+  screenReaderText: () =>
+    glamor.css(css[`${BASE_CLASSNAME}__screen-reader-text`])
 }
 
-class StarRating extends React.Component {
-  constructor(props, context) {
+const ScreenReaderInput = props => (
+  <input {...styles.screenReaderInput(props)} tabIndex={-1} {...props} />
+)
+
+const ScreenReaderText = props => (
+  <span {...styles.screenReaderText(props)} {...props} />
+)
+
+class StarRating extends React.PureComponent {
+  constructor(props) {
     super(props)
-    const themeName = context.themeName || themeDefaultName
-    this.state = {
-      hoverIndex: null,
-      themedIcons: themeToIcons(themeName),
-      themeName
-    }
+
+    this.handleStarClicked = this.handleStarClicked.bind(this)
+    this.handleStarMouseEnter = this.handleStarMouseEnter.bind(this)
+    this.handleStarMouseLeave = this.handleStarMouseLeave.bind(this)
+
+    this.state = { hoverIndex: null, interactive: !!this.props.onChange }
   }
 
-  makeIcon({ id, fill, index }) {
-    return (
-      <Icon
-        key={index}
-        css={{ '> svg': { fill } }}
-        id={id}
-        size={Icon.sizes.xsmall}
-        role="presentation"
-      />
-    )
+  componentWillReceiveProps(nextProps) {
+    const interactive = !!nextProps.onChange
+    if (interactive === this.props.interactive) return
+
+    this.setState({ interactive })
   }
 
-  getNonHoverStateIcon(index, shouldFillFullStar, shouldFillHalfStar) {
-    const {
-      themedIcons: { full, empty },
-      themeName
-    } = this.state
-    if (shouldFillFullStar) {
-      return this.makeIcon({ ...full, index })
-    } else if (shouldFillHalfStar) {
-      return themeName === themeDefaultName ? (
-        <DarkHalfStar key={index} />
-      ) : (
-        <LightHalfStar key={index} />
-      )
-    } else {
-      return this.makeIcon({ ...empty, index })
-    }
+  handleInputChanged(event) {
+    if (!this.state.interactive) return
+    this.props.onChange(event.target.value, event)
   }
 
-  getHoverStateIcon(index, shouldFillFullStar) {
-    const {
-      themedIcons: { hover, empty }
-    } = this.state
-    const fill = shouldFillFullStar ? hover.fill : empty.fill
-    const id = shouldFillFullStar ? hover.id : empty.id
-    return this.makeIcon({ id, fill, index })
+  handleStarClicked(index, event) {
+    if (!this.state.interactive) return
+    this.props.onChange(index + 1, event)
   }
 
-  generateIcons() {
-    const { hoverIndex } = this.state
-    const { value } = this.props
+  handleStarMouseEnter(index, event) {
+    if (!this.state.interactive) return
+    this.setState(() => ({ hoverIndex: index }))
+  }
 
-    const halfIntRoundedValue = Math.floor(value * 2) / 2
+  handleStarMouseLeave(index, event) {
+    if (!this.state.interactive) return
+    this.setState(() => ({ hoverIndex: null }))
+  }
 
-    let fullStars = Math.floor(halfIntRoundedValue)
-    let halfStars = Math.floor(halfIntRoundedValue) !== halfIntRoundedValue
+  get stars() {
+    const { hoverIndex, interactive } = this.state
+    const { starCount, value } = this.props
 
     const isHovering = hoverIndex !== null
+    const valueRounded = Math.floor(value * 2) / 2
 
-    return new Array(TOTAL_STARS).fill(undefined).map((_, index) => {
-      let icon
+    const fullStars = Math.floor(valueRounded)
+    const halfStars = Math.floor(valueRounded) !== valueRounded
+
+    return [...Array(starCount)].map((_, index) => {
+      let active = false
+      let appearance
 
       if (isHovering) {
-        const shouldFillFullStar = index <= hoverIndex
-        icon = this.getHoverStateIcon(index, shouldFillFullStar)
+        if (index <= hoverIndex) {
+          active = true
+          appearance = Star.appearances.full
+        } else {
+          appearance = Star.appearances.empty
+        }
       } else {
-        const shouldFillFullStar = index < fullStars
-        const shouldFillHalfStar = index === fullStars && halfStars
-        icon = this.getNonHoverStateIcon(
-          index,
-          shouldFillFullStar,
-          shouldFillHalfStar
-        )
+        if (index < fullStars) {
+          active = true
+          appearance = Star.appearances.full
+        } else if (index === fullStars && halfStars) {
+          active = true
+          appearance = Star.appearances.half
+        } else {
+          appearance = Star.appearances.full
+        }
       }
-      return icon
-    })
-  }
 
-  makeClickable(icons) {
-    const { onClick } = this.props
-
-    return icons.map((icon, index) => {
-      const ratingValue = index + 1
-      const ratingString = `Rate ${ratingValue} star${
-        ratingValue > 1 ? 's' : ''
-      }`
       return (
-        <button
+        <Star
+          active={active}
+          appearance={appearance}
+          index={index}
+          interactive={interactive}
           key={index}
-          tabIndex={-1}
-          style={css.button}
-          onClick={() => onClick(ratingValue)}
-          onMouseOver={() => this.setState({ hoverIndex: index })}
-          onMouseLeave={() => this.setState({ hoverIndex: null })}
-          aria-label={ratingString}
-        >
-          {icon}
-        </button>
+          onClick={this.handleStarClicked}
+          onMouseEnter={this.handleStarMouseEnter}
+          onMouseLeave={this.handleStarMouseLeave}
+        />
       )
     })
   }
 
   render() {
-    const { onClick, value } = this.props
+    const { interactive } = this.state
+    const { starCount, value } = this.props
 
-    let StarIcons = this.generateIcons()
-    StarIcons = onClick ? this.makeClickable(StarIcons) : StarIcons
     return (
-      <div>
-        {onClick && (
+      <div {...styles.starRating(this.props)}>
+        {interactive && (
           <label>
-            <span style={css.screenReaderContent}>Rate</span>
-            <input
-              style={css.screenReaderContent}
+            <ScreenReaderText>Rate</ScreenReaderText>
+            <ScreenReaderInput
               type="range"
-              onChange={event => onClick(event.target.value)}
+              onChange={this.handleInputChanged}
               min={1}
-              max={5}
+              max={starCount}
               step={1}
+              value={value || 0}
             />
           </label>
         )}
-        <span style={css.screenReaderContent}>{`This is rated ${value}`}</span>
-        {StarIcons}
+
+        {this.stars}
+
+        <ScreenReaderText>This is rated {value}</ScreenReaderText>
       </div>
     )
   }
 }
 
 StarRating.propTypes = {
-  value: PropTypes.number,
-  onClick: PropTypes.func
+  onChange: PropTypes.func,
+  starCount: PropTypes.number,
+  themeName: PropTypes.string.isRequired,
+  value: PropTypes.number
 }
 
 StarRating.defaultProps = {
-  value: null,
-  onClick: null
+  starCount: 5
 }
 
-StarRating.contextTypes = {
-  themeName: PropTypes.string
-}
-
-export default StarRating
+export default withDefaultTheme(StarRating)

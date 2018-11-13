@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "run-s build:js build:css",
-    "build:css": "build-css",
+    "build:css": "build-css --useGlamor",
     "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
