@@ -2,7 +2,7 @@ import hoistNonReactStatics from 'hoist-non-react-statics'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { defaultName as themeDefaultName } from '.'
 
 const getDisplayName = Component => {
   if (typeof Component === 'string') return Component
@@ -12,7 +12,7 @@ const getDisplayName = Component => {
   return Component.displayName || Component.name || 'Component'
 }
 
-export default function withDefaultTheme(BaseComponent) {
+export default function withTheme(BaseComponent) {
   const name = getDisplayName(BaseComponent)
 
   const EnhancedComponent = (props, context = {}) => {
@@ -22,7 +22,7 @@ export default function withDefaultTheme(BaseComponent) {
 
   EnhancedComponent.BaseComponent = BaseComponent
   EnhancedComponent.contextTypes = { themeName: PropTypes.string }
-  EnhancedComponent.displayName = `withDefaultTheme(${name})`
+  EnhancedComponent.displayName = `withTheme(${name})`
 
   return hoistNonReactStatics(EnhancedComponent, BaseComponent)
 }

@@ -1,4 +1,4 @@
-const React = require('./dist/react')
+const react = require('./dist/react')
 const vars = require('./dist/vars')
 
-module.exports = { react: React, vars: vars }
+module.exports = { react: react, vars: vars }

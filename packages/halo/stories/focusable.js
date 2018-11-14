@@ -2,8 +2,7 @@ import * as glamor from 'glamor'
 import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
-
-import withDefaultTheme from '../src/react/with-default-theme'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
 const css = {
   '.focusable': {
@@ -49,4 +48,4 @@ Focusable.defaultProps = {
   tabIndex: 0
 }
 
-export default withDefaultTheme(Focusable)
+export default withTheme(Focusable)
