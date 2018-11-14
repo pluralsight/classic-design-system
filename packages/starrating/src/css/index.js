@@ -62,6 +62,16 @@ export default {
     color: transparentize(0.25, core.colors.gray01)
   },
 
+  [`${BASE_CLASSNAME}__star__half__secondary`]: {
+    opacity: 0.5
+  },
+  [`${BASE_CLASSNAME}__star__half__secondary--theme-dark`]: {
+    color: core.colors.gray03
+  },
+  [`${BASE_CLASSNAME}__star__half__secondary--theme-light`]: {
+    color: transparentize(0.25, core.colors.gray01)
+  },
+
   [`${BASE_CLASSNAME}__screen-reader-input`]: {
     ...hideVisually
   },
