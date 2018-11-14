@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+
 import { colorByLetter, defaultGravatarImage } from '../vars'
 
 export const getInitials = fullname => {
@@ -6,7 +8,7 @@ export const getInitials = fullname => {
   const names = fullname.trim().split(' ')
 
   const first = names[0][0]
-  const second = names.length == 1 ? names[0][1] : names[names.length - 1][0]
+  const second = names.length === 1 ? names[0][1] : names[names.length - 1][0]
 
   return `${first}${second}`.toUpperCase()
 }
@@ -46,7 +48,7 @@ const sha1 = function(str1) {
     i <= str_len;
 
   ) {
-    word_array[i >> 2] |= (s.charCodeAt(i) || 128) << (8 * (3 - i++ % 4))
+    word_array[i >> 2] |= (s.charCodeAt(i) || 128) << (8 * (3 - (i++ % 4)))
   }
   word_array[(temp2 = ((str_len + 8) >> 2) | 15)] = str_len << 3
 
@@ -83,6 +85,6 @@ const sha1 = function(str1) {
   }
 
   for (str1 = ''; i < 40; )
-    str1 += ((H[i >> 3] >> ((7 - i++ % 8) * 4)) & 15).toString(16)
+    str1 += ((H[i >> 3] >> ((7 - (i++ % 8)) * 4)) & 15).toString(16)
   return str1
 }
