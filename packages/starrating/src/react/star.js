@@ -122,9 +122,15 @@ class Star extends React.PureComponent {
         onMouseEnter={this.handleEnter}
         onMouseLeave={this.handleLeave}
       >
-        {appearance === 'full' && <Icon id={Icon.ids.starFill} size={size} />}
-        {appearance === 'empty' && <Icon id={Icon.ids.star} size={size} />}
-        {appearance === 'half' && (
+        {appearance === APPEARANCES.full && (
+          <Icon id={Icon.ids.starFill} size={size} />
+        )}
+
+        {appearance === APPEARANCES.empty && (
+          <Icon id={Icon.ids.star} size={size} />
+        )}
+
+        {appearance === APPEARANCES.half && (
           <HalfStarIcon size={size} themeName={themeName} />
         )}
       </Tag>
