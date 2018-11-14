@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import { withDefaultTheme } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css, { BASE_CLASSNAME } from '../css'
 
@@ -143,4 +143,4 @@ Star.defaultProps = {
 
 Star.appearances = APPEARANCES
 
-export default withDefaultTheme(Star)
+export default withTheme(Star)

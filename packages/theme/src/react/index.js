@@ -3,7 +3,7 @@ import React from 'react'
 
 import * as vars from '../vars'
 
-export { default as withDefaultTheme } from './with-default-theme'
+export { default as withTheme } from './with-theme'
 
 class Theme extends React.Component {
   getChildContext() {

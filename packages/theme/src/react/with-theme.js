@@ -12,7 +12,7 @@ const getDisplayName = Component => {
   return Component.displayName || Component.name || 'Component'
 }
 
-export default function withDefaultTheme(BaseComponent) {
+export default function withTheme(BaseComponent) {
   const name = getDisplayName(BaseComponent)
 
   const EnhancedComponent = (props, context = {}) => {
@@ -22,7 +22,7 @@ export default function withDefaultTheme(BaseComponent) {
 
   EnhancedComponent.BaseComponent = BaseComponent
   EnhancedComponent.contextTypes = { themeName: PropTypes.string }
-  EnhancedComponent.displayName = `withDefaultTheme(${name})`
+  EnhancedComponent.displayName = `withTheme(${name})`
 
   return hoistNonReactStatics(EnhancedComponent, BaseComponent)
 }

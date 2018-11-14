@@ -2,7 +2,7 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { withDefaultTheme } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import Star from './star'
 
@@ -149,4 +149,4 @@ StarRating.defaultProps = {
   starCount: 5
 }
 
-export default withDefaultTheme(StarRating)
+export default withTheme(StarRating)

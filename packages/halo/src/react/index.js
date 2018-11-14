@@ -3,7 +3,7 @@ import polyfillFocusWithin from 'focus-within'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { withDefaultTheme } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css, { BASE_CLASSNAME } from '../css'
 import * as vars from '../vars'
@@ -71,4 +71,4 @@ Halo.propTypes = {
   visibleOnFocus: PropTypes.bool
 }
 
-export default withDefaultTheme(Halo)
+export default withTheme(Halo)
