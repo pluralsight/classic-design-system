@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@1.3.4...@pluralsight/ps-design-system-theme@1.4.0) (2018-11-14)
+
+
+### Features
+
+* **theme:** expose withDefaultTheme HOC ([e675244](https://github.com/pluralsight/design-system/commit/e675244))
+
+
+
+
+
 ## [1.3.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@1.3.3...@pluralsight/ps-design-system-theme@1.3.4) (2018-10-31)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-theme
