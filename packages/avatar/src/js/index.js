@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 
-import { colorByLetter, defaultGravatarImage } from '../vars'
+import { colorByLetter, fallbackPixel } from '../vars'
 
 export const getInitials = fullname => {
   if (!fullname || !fullname.length) return
@@ -24,8 +24,11 @@ export const getColorByName = name => {
 
 export const transformSrc = src => {
   if (!src.match(/gravatar/)) return src
+
   const sep = src.match(/\?/) ? '&' : '?'
-  return `${src}${sep}d=${defaultGravatarImage}`
+  const fallback = encodeURIComponent(fallbackPixel)
+
+  return `${src}${sep}d=${fallback}`
 }
 
 // from https://raw.githubusercontent.com/jbt/js-crypto/master/sha1.js

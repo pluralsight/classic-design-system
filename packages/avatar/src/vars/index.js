@@ -25,7 +25,8 @@ export const colorByLetter = letters.reduce((map, letter, i) => {
   return map
 }, {})
 
-export const defaultGravatarImage = '404'
+export const fallbackPixel =
+  '//s3-us-west-2.amazonaws.com/ps-cdn/design-system/assets/transparent.gif'
 
 export const widths = {
   xSmall: '32px',

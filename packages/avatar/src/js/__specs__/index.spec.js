@@ -1,6 +1,6 @@
 import { URL } from 'url'
 import * as utils from '../index'
-import { defaultGravatarImage } from '../../vars'
+import { fallbackPixel } from '../../vars'
 
 describe('avatar/utils', () => {
   describe('#getInitials', () => {
@@ -50,12 +50,13 @@ describe('avatar/utils', () => {
   })
 
   describe('#transformSrc', () => {
-    test('should add default transparent image when gravatar', () => {
+    test('should add the fallback tracking pixel when gravatar', () => {
       const src =
         'https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7'
       const url = new URL(utils.transformSrc(src))
+
       expect(url.href).not.toBe(src)
-      expect(url.searchParams.get('d')).toEqual(defaultGravatarImage)
+      expect(url.searchParams.get('d')).toEqual(fallbackPixel)
     })
 
     test('should not add default gravatar image when not gravatar', () => {
