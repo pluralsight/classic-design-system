@@ -1,11 +1,11 @@
 import { mount } from 'enzyme'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
-import withDefaultTheme from '../with-default-theme'
+import { defaultName as themeDefaultName } from '..'
+import withTheme from '../with-theme'
 
-describe('withDefaultTheme', () => {
+describe('withTheme', () => {
   const providerThemeName = 'provider-theme-name'
 
   class ThemeProvider extends React.Component {
@@ -39,7 +39,7 @@ describe('withDefaultTheme', () => {
   let EnhancedComponent
 
   beforeAll(() => {
-    EnhancedComponent = withDefaultTheme(MockComponent)
+    EnhancedComponent = withTheme(MockComponent)
   })
 
   it('enhances the Component', () => {
@@ -51,7 +51,7 @@ describe('withDefaultTheme', () => {
   })
 
   it('adds a new displayName', () => {
-    const expected = `withDefaultTheme(${MockComponent.displayName})`
+    const expected = `withTheme(${MockComponent.displayName})`
     expect(EnhancedComponent.displayName).toEqual(expected)
   })
 

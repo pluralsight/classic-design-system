@@ -9,6 +9,7 @@ export const labelAligns = {
 }
 
 export const colors = {
-  orange: 'orange',
-  green: 'green'
+  blue: 'blue',
+  green: 'green',
+  orange: 'orange'
 }

@@ -150,6 +150,46 @@ exports[`Storyshots click small toggles 1`] = `
 </div>
 `;
 
+exports[`Storyshots color blue 1`] = `
+<div
+  data-css-claeju=""
+>
+  <button
+    aria-checked={true}
+    data-css-1fg1tn7=""
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    role="checkbox"
+    tabIndex="0"
+  >
+    <div
+      data-css-fgf3i2=""
+    >
+      <div
+        data-css-1yognj7=""
+      >
+        <div
+          data-css-4g7l16=""
+        />
+      </div>
+    </div>
+    <input
+      checked={true}
+      data-css-6wu9td=""
+      readOnly={true}
+      tabIndex="-1"
+      type="checkbox"
+    />
+    <label
+      data-css-1wrf03j=""
+    >
+      Click me
+    </label>
+  </button>
+</div>
+`;
+
 exports[`Storyshots color green 1`] = `
 <div
   data-css-claeju=""

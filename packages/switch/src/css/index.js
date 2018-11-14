@@ -49,6 +49,11 @@ export default {
     padding: '1px'
   },
   [`.psds-switch__track--checked.psds-switch__track--color-${
+    vars.colors.blue
+  }`]: {
+    backgroundColor: core.colors.blue
+  },
+  [`.psds-switch__track--checked.psds-switch__track--color-${
     vars.colors.green
   }`]: {
     backgroundColor: core.colors.green
