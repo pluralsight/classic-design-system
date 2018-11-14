@@ -111,6 +111,22 @@ const buttonHtmlPropsWhitelist = [
   /^data-/
 ]
 
+const anchorHtmlPropsWhitelist = [
+  'href',
+  'onClick',
+  'disabled',
+  'download',
+  'className',
+  'role',
+  'style',
+  'title',
+  'tabIndex',
+  'target',
+  /onMouse/,
+  /^aria-/,
+  /^data-/
+]
+
 const mapIconSize = props => {
   const btnToIconSizes = {
     [vars.sizes.xSmall]: iconSizes.small,
@@ -155,15 +171,17 @@ class Button extends React.Component {
       iconOnly: React.Children.count(props.children) <= 0,
       themeName: context.themeName || themeDefaultName
     }
+    const isAnchor = !!this.props.href
+    const propsWhitelist = isAnchor ? anchorHtmlPropsWhitelist : buttonHtmlPropsWhitelist
     return React.createElement(
-      this.props.href ? 'a' : 'button',
+      isAnchor ? 'a' : 'button',
       {
         ...styles.button(allProps),
         ...propsUtil.whitelistProps(
           allProps,
           allProps.disabled && allProps.href
-            ? buttonHtmlPropsWhitelist.filter(prop => prop !== 'onClick')
-            : buttonHtmlPropsWhitelist
+            ? propsWhitelist.filter(prop => prop !== 'onClick')
+            : propsWhitelist
         ),
         disabled: this.props.disabled || this.props.loading,
         ref: el => {
