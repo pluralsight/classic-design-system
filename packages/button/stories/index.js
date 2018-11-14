@@ -50,6 +50,12 @@ Object.keys(Button.appearances).forEach(app =>
     ))
   )
 )
+iconStory.add('vertically aligned rows', _ => (
+  <div>
+    <Button icon={<Icon id={Icon.ids.check} />}>With icon</Button>
+    <Button>Without icon</Button>
+  </div>
+))
 
 const disabledStory = storiesOf('disabled', module)
 Object.keys(Button.appearances).forEach(app =>

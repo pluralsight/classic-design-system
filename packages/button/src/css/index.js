@@ -8,12 +8,12 @@ import { transparentize } from 'polished'
 import * as vars from '../vars'
 
 export default {
-  ['@keyframes psds-button__keyframes__spin']: {
+  '@keyframes psds-button__keyframes__spin': {
     '100%': {
       transform: 'rotate(360deg)'
     }
   },
-  ['.psds-button']: {
+  '.psds-button': {
     position: 'relative',
     display: 'inline-flex',
     justifyContent: 'center',
@@ -30,12 +30,13 @@ export default {
     cursor: 'pointer',
     whiteSpace: 'nowrap',
     textDecoration: 'none',
-    transition: `all ${core.motion.speedNormal}`
+    transition: `all ${core.motion.speedNormal}`,
+    verticalAlign: 'middle'
   },
-  ['.psds-button:hover']: {
+  '.psds-button:hover': {
     background: core.colors.orangeLight
   },
-  ['.psds-button:focus']: {
+  '.psds-button:focus': {
     outline: 'none'
   },
 
