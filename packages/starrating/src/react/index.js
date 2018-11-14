@@ -2,9 +2,9 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import Star from './star'
+import { withDefaultTheme } from '@pluralsight/ps-design-system-theme/react'
 
-import withDefaultTheme from './with-default-theme'
+import Star from './star'
 
 import css, { BASE_CLASSNAME } from '../css'
 

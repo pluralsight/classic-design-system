@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import Icon from '@pluralsight/ps-design-system-icon/react'
-
-import withDefaultTheme from './with-default-theme'
+import { withDefaultTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css, { BASE_CLASSNAME } from '../css'
 
