@@ -29,8 +29,8 @@ class StarRating extends React.PureComponent {
     super(props)
 
     this.handleStarClicked = this.handleStarClicked.bind(this)
-    this.handleStarMouseEnter = this.handleStarMouseEnter.bind(this)
-    this.handleStarMouseLeave = this.handleStarMouseLeave.bind(this)
+    this.handleStarEnter = this.handleStarEnter.bind(this)
+    this.handleStarLeave = this.handleStarLeave.bind(this)
 
     this.state = { hoverIndex: null, interactive: !!this.props.onChange }
   }
@@ -52,12 +52,12 @@ class StarRating extends React.PureComponent {
     this.props.onChange(index + 1, event)
   }
 
-  handleStarMouseEnter(index, event) {
+  handleStarEnter(index, event) {
     if (!this.state.interactive) return
     this.setState(() => ({ hoverIndex: index }))
   }
 
-  handleStarMouseLeave(index, event) {
+  handleStarLeave(index, event) {
     if (!this.state.interactive) return
     this.setState(() => ({ hoverIndex: null }))
   }
@@ -103,8 +103,8 @@ class StarRating extends React.PureComponent {
           interactive={interactive}
           key={index}
           onClick={this.handleStarClicked}
-          onMouseEnter={this.handleStarMouseEnter}
-          onMouseLeave={this.handleStarMouseLeave}
+          onEnter={this.handleStarEnter}
+          onLeave={this.handleStarLeave}
         />
       )
     })

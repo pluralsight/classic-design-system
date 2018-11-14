@@ -65,8 +65,8 @@ class Star extends React.PureComponent {
     super(props)
 
     this.handleClicked = this.handleClicked.bind(this)
-    this.handleMouseEnter = this.handleMouseEnter.bind(this)
-    this.handleMouseLeave = this.handleMouseLeave.bind(this)
+    this.handleEnter = this.handleEnter.bind(this)
+    this.handleLeave = this.handleLeave.bind(this)
   }
 
   handleClicked(event) {
@@ -74,14 +74,14 @@ class Star extends React.PureComponent {
     if (onClick) onClick(index, event)
   }
 
-  handleMouseEnter(event) {
-    const { onMouseEnter, index } = this.props
-    if (onMouseEnter) onMouseEnter(index, event)
+  handleEnter(event) {
+    const { onEnter, index } = this.props
+    if (onEnter) onEnter(index, event)
   }
 
-  handleMouseLeave(event) {
-    const { onMouseLeave, index } = this.props
-    if (onMouseLeave) onMouseLeave(index, event)
+  handleLeave(event) {
+    const { onLeave, index } = this.props
+    if (onLeave) onLeave(index, event)
   }
 
   get label() {
@@ -95,23 +95,26 @@ class Star extends React.PureComponent {
       appearance,
       index,
       interactive,
+      onEnter,
+      onLeave,
       size,
       themeName,
       ...filteredProps
     } = this.props
 
-    const { label } = this
     const Tag = interactive ? 'button' : 'span'
 
     return (
       <Tag
         {...styles.star(this.props)}
         {...filteredProps}
-        aria-label={label}
-        title={label}
+        aria-label={this.label}
+        title={this.label}
+        onBlur={this.handleLeave}
         onClick={this.handleClicked}
-        onMouseEnter={this.handleMouseEnter}
-        onMouseLeave={this.handleMouseLeave}
+        onFocus={this.handleEnter}
+        onMouseEnter={this.handleEnter}
+        onMouseLeave={this.handleLeave}
       >
         {appearance === 'full' && <Icon id={Icon.ids.starFill} size={size} />}
         {appearance === 'empty' && <Icon id={Icon.ids.star} size={size} />}
@@ -128,8 +131,8 @@ Star.propTypes = {
   index: PropTypes.number.isRequired,
   interactive: PropTypes.bool,
   onClick: PropTypes.func,
-  onMouseEnter: PropTypes.func,
-  onMouseLeave: PropTypes.func,
+  onEnter: PropTypes.func,
+  onLeave: PropTypes.func,
   themeName: PropTypes.string
 }
 

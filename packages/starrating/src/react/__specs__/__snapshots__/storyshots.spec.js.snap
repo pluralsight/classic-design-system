@@ -31,7 +31,9 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
         <button
           aria-label="Rate 1 Star"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -54,7 +56,9 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
         <button
           aria-label="Rate 2 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -77,7 +81,9 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
         <button
           aria-label="Rate 3 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -100,7 +106,9 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
         <button
           aria-label="Rate 4 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -123,7 +131,9 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
         <button
           aria-label="Rate 5 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -186,7 +196,9 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
         <button
           aria-label="Rate 1 Star"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -232,7 +244,9 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
         <button
           aria-label="Rate 2 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -255,7 +269,9 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
         <button
           aria-label="Rate 3 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -278,7 +294,9 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
         <button
           aria-label="Rate 4 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -301,7 +319,9 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
         <button
           aria-label="Rate 5 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -364,7 +384,9 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
         <button
           aria-label="Rate 1 Star"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -387,7 +409,9 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
         <button
           aria-label="Rate 2 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -410,7 +434,9 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
         <button
           aria-label="Rate 3 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -433,7 +459,9 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
         <button
           aria-label="Rate 4 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -456,7 +484,9 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
         <button
           aria-label="Rate 5 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -519,7 +549,9 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
         <button
           aria-label="Rate 1 Star"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -542,7 +574,9 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
         <button
           aria-label="Rate 2 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -588,7 +622,9 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
         <button
           aria-label="Rate 3 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -611,7 +647,9 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
         <button
           aria-label="Rate 4 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -634,7 +672,9 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
         <button
           aria-label="Rate 5 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -697,7 +737,9 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
         <button
           aria-label="Rate 1 Star"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -720,7 +762,9 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
         <button
           aria-label="Rate 2 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -743,7 +787,9 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
         <button
           aria-label="Rate 3 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -766,7 +812,9 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
         <button
           aria-label="Rate 4 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -789,7 +837,9 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
         <button
           aria-label="Rate 5 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -852,7 +902,9 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
         <button
           aria-label="Rate 1 Star"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -875,7 +927,9 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
         <button
           aria-label="Rate 2 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -898,7 +952,9 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
         <button
           aria-label="Rate 3 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -944,7 +1000,9 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
         <button
           aria-label="Rate 4 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -967,7 +1025,9 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
         <button
           aria-label="Rate 5 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -1030,7 +1090,9 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
         <button
           aria-label="Rate 1 Star"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -1053,7 +1115,9 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
         <button
           aria-label="Rate 2 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -1076,7 +1140,9 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
         <button
           aria-label="Rate 3 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -1099,7 +1165,9 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
         <button
           aria-label="Rate 4 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -1122,7 +1190,9 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
         <button
           aria-label="Rate 5 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -1185,7 +1255,9 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
         <button
           aria-label="Rate 1 Star"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -1208,7 +1280,9 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
         <button
           aria-label="Rate 2 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -1231,7 +1305,9 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
         <button
           aria-label="Rate 3 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -1254,7 +1330,9 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
         <button
           aria-label="Rate 4 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -1300,7 +1378,9 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
         <button
           aria-label="Rate 5 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -1363,7 +1443,9 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
         <button
           aria-label="Rate 1 Star"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -1386,7 +1468,9 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
         <button
           aria-label="Rate 2 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -1409,7 +1493,9 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
         <button
           aria-label="Rate 3 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -1432,7 +1518,9 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
         <button
           aria-label="Rate 4 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -1455,7 +1543,9 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
         <button
           aria-label="Rate 5 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -1518,7 +1608,9 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
         <button
           aria-label="Rate 1 Star"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -1541,7 +1633,9 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
         <button
           aria-label="Rate 2 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -1564,7 +1658,9 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
         <button
           aria-label="Rate 3 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -1587,7 +1683,9 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
         <button
           aria-label="Rate 4 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -1610,7 +1708,9 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
         <button
           aria-label="Rate 5 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -1696,7 +1796,9 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
         <button
           aria-label="Rate 1 Star"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -1719,7 +1821,9 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
         <button
           aria-label="Rate 2 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -1742,7 +1846,9 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
         <button
           aria-label="Rate 3 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -1765,7 +1871,9 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
         <button
           aria-label="Rate 4 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -1788,7 +1896,9 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
         <button
           aria-label="Rate 5 Stars"
           data-css-1v4k0bb=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -1851,7 +1961,9 @@ exports[`Storyshots StarRating / interactive null 1`] = `
         <button
           aria-label="Rate 1 Star"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -1874,7 +1986,9 @@ exports[`Storyshots StarRating / interactive null 1`] = `
         <button
           aria-label="Rate 2 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -1897,7 +2011,9 @@ exports[`Storyshots StarRating / interactive null 1`] = `
         <button
           aria-label="Rate 3 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -1920,7 +2036,9 @@ exports[`Storyshots StarRating / interactive null 1`] = `
         <button
           aria-label="Rate 4 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -1943,7 +2061,9 @@ exports[`Storyshots StarRating / interactive null 1`] = `
         <button
           aria-label="Rate 5 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -2005,7 +2125,9 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
         <button
           aria-label="Rate 1 Star"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -2028,7 +2150,9 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
         <button
           aria-label="Rate 2 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -2051,7 +2175,9 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
         <button
           aria-label="Rate 3 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -2074,7 +2200,9 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
         <button
           aria-label="Rate 4 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -2097,7 +2225,9 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
         <button
           aria-label="Rate 5 Stars"
           data-css-t5fouv=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -2142,7 +2272,9 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
         <span
           aria-label="Rate 1 Star"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -2165,7 +2297,9 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
         <span
           aria-label="Rate 2 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -2188,7 +2322,9 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
         <span
           aria-label="Rate 3 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -2211,7 +2347,9 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
         <span
           aria-label="Rate 4 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -2234,7 +2372,9 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
         <span
           aria-label="Rate 5 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -2280,7 +2420,9 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
         <span
           aria-label="Rate 1 Star"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -2326,7 +2468,9 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
         <span
           aria-label="Rate 2 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -2349,7 +2493,9 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
         <span
           aria-label="Rate 3 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -2372,7 +2518,9 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
         <span
           aria-label="Rate 4 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -2395,7 +2543,9 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
         <span
           aria-label="Rate 5 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -2441,7 +2591,9 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
         <span
           aria-label="Rate 1 Star"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -2464,7 +2616,9 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
         <span
           aria-label="Rate 2 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -2487,7 +2641,9 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
         <span
           aria-label="Rate 3 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -2510,7 +2666,9 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
         <span
           aria-label="Rate 4 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -2533,7 +2691,9 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
         <span
           aria-label="Rate 5 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -2579,7 +2739,9 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
         <span
           aria-label="Rate 1 Star"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -2602,7 +2764,9 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
         <span
           aria-label="Rate 2 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -2648,7 +2812,9 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
         <span
           aria-label="Rate 3 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -2671,7 +2837,9 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
         <span
           aria-label="Rate 4 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -2694,7 +2862,9 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
         <span
           aria-label="Rate 5 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -2740,7 +2910,9 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
         <span
           aria-label="Rate 1 Star"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -2763,7 +2935,9 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
         <span
           aria-label="Rate 2 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -2786,7 +2960,9 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
         <span
           aria-label="Rate 3 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -2809,7 +2985,9 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
         <span
           aria-label="Rate 4 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -2832,7 +3010,9 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
         <span
           aria-label="Rate 5 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -2878,7 +3058,9 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
         <span
           aria-label="Rate 1 Star"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -2901,7 +3083,9 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
         <span
           aria-label="Rate 2 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -2924,7 +3108,9 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
         <span
           aria-label="Rate 3 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -2970,7 +3156,9 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
         <span
           aria-label="Rate 4 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -2993,7 +3181,9 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
         <span
           aria-label="Rate 5 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -3039,7 +3229,9 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
         <span
           aria-label="Rate 1 Star"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -3062,7 +3254,9 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
         <span
           aria-label="Rate 2 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -3085,7 +3279,9 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
         <span
           aria-label="Rate 3 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -3108,7 +3304,9 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
         <span
           aria-label="Rate 4 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -3131,7 +3329,9 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
         <span
           aria-label="Rate 5 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -3177,7 +3377,9 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
         <span
           aria-label="Rate 1 Star"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -3200,7 +3402,9 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
         <span
           aria-label="Rate 2 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -3223,7 +3427,9 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
         <span
           aria-label="Rate 3 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -3246,7 +3452,9 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
         <span
           aria-label="Rate 4 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -3292,7 +3500,9 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
         <span
           aria-label="Rate 5 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -3338,7 +3548,9 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
         <span
           aria-label="Rate 1 Star"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -3361,7 +3573,9 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
         <span
           aria-label="Rate 2 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -3384,7 +3598,9 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
         <span
           aria-label="Rate 3 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -3407,7 +3623,9 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
         <span
           aria-label="Rate 4 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -3430,7 +3648,9 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
         <span
           aria-label="Rate 5 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -3476,7 +3696,9 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
         <span
           aria-label="Rate 1 Star"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -3499,7 +3721,9 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
         <span
           aria-label="Rate 2 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -3522,7 +3746,9 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
         <span
           aria-label="Rate 3 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -3545,7 +3771,9 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
         <span
           aria-label="Rate 4 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -3568,7 +3796,9 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
         <span
           aria-label="Rate 5 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -3637,7 +3867,9 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
         <span
           aria-label="Rate 1 Star"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -3660,7 +3892,9 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
         <span
           aria-label="Rate 2 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -3683,7 +3917,9 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
         <span
           aria-label="Rate 3 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -3706,7 +3942,9 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
         <span
           aria-label="Rate 4 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -3729,7 +3967,9 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
         <span
           aria-label="Rate 5 Stars"
           data-css-1n9a6tt=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -3775,7 +4015,9 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
         <span
           aria-label="Rate 1 Star"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -3798,7 +4040,9 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
         <span
           aria-label="Rate 2 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -3821,7 +4065,9 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
         <span
           aria-label="Rate 3 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -3844,7 +4090,9 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
         <span
           aria-label="Rate 4 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -3867,7 +4115,9 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
         <span
           aria-label="Rate 5 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
@@ -3912,7 +4162,9 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
         <span
           aria-label="Rate 1 Star"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 1 Star"
@@ -3935,7 +4187,9 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
         <span
           aria-label="Rate 2 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 2 Stars"
@@ -3958,7 +4212,9 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
         <span
           aria-label="Rate 3 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 3 Stars"
@@ -3981,7 +4237,9 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
         <span
           aria-label="Rate 4 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 4 Stars"
@@ -4004,7 +4262,9 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
         <span
           aria-label="Rate 5 Stars"
           data-css-1p3qpin=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           title="Rate 5 Stars"
