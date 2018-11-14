@@ -113,6 +113,12 @@ storiesOf('props pass through', module)
     <Button data-something="wow">Custom data attributes</Button>
   ))
   .add('title', _ => <Button title="My caption">With title</Button>)
+  .add('anchor download', _ => (
+    <Button href="/somewhere" download>
+      Link with download
+    </Button>
+  ))
+  .add('button download', _ => <Button download>Button with download</Button>)
   .add('not supported', _ => (
     <Button onMouseOver={action('mouse over')}>Should not mouseover</Button>
   ))

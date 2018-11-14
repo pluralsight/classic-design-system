@@ -1317,6 +1317,26 @@ exports[`Storyshots override styles with style 1`] = `
 </div>
 `;
 
+exports[`Storyshots props pass through anchor download 1`] = `
+<div
+  data-css-claeju=""
+>
+  <a
+    data-css-1ij2lam=""
+    disabled={false}
+    download={true}
+    href="/somewhere"
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      Link with download
+    </span>
+  </a>
+</div>
+`;
+
 exports[`Storyshots props pass through aria-expanded 1`] = `
 <div
   data-css-claeju=""
@@ -1331,6 +1351,25 @@ exports[`Storyshots props pass through aria-expanded 1`] = `
       data-css-15b13by=""
     >
       aria-expanded
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots props pass through button download 1`] = `
+<div
+  data-css-claeju=""
+>
+  <button
+    data-css-1ij2lam=""
+    disabled={false}
+    download={true}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      Button with download
     </span>
   </button>
 </div>
