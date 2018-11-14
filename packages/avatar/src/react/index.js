@@ -23,12 +23,16 @@ class Avatar extends React.Component {
     this.handleImageLoadSuccess = this.handleImageLoadSuccess.bind(this)
     this.handleImageLoadError = this.handleImageLoadError.bind(this)
   }
-  handleImageLoadSuccess() {
-    this.setState({ imageState: 'success' })
+
+  handleImageLoadSuccess(event) {
+    const isFallbackPixel = event.target.naturalWidth === 1
+    this.setState({ imageState: isFallbackPixel ? 'error' : 'success' })
   }
+
   handleImageLoadError() {
     this.setState({ imageState: 'error' })
   }
+
   render() {
     const { className, name, size, src, style } = this.props
     const { imageState } = this.state

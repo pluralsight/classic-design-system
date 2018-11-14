@@ -1,16 +1,11 @@
-import addons from '@storybook/addons'
-import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Avatar from '../src/react'
+import Avatar from '..'
 
-const storySizes = storiesOf('Default', module).addDecorator(
-  themeDecorator(addons)
-)
+const storySizes = storiesOf('Default', module)
 
-Object.keys(Avatar.sizes).forEach(size =>
+Object.values(Avatar.sizes).forEach(size =>
   storySizes.add(size, () => (
     <Avatar
       size={size}
@@ -40,7 +35,6 @@ const names = [
 ]
 
 const storyInitials = storiesOf('Using Initials', module)
-  .addDecorator(themeDecorator(addons))
   .add('empty name, no src', () => <Avatar name={''} />)
   .add('null name, no src', () => <Avatar name={null} />)
   .add('error-out image src, with name', () => (
