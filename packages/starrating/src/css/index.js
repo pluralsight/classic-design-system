@@ -1,4 +1,3 @@
-import { transparentize } from 'polished'
 import core from '@pluralsight/ps-design-system-core'
 
 export const BASE_CLASSNAME = '.psds-starrating'
@@ -59,17 +58,15 @@ export default {
     color: core.colors.gray03
   },
   [`${BASE_CLASSNAME}__star--theme-light`]: {
-    color: transparentize(0.25, core.colors.gray01)
+    color: core.colors.gray01
   },
 
-  [`${BASE_CLASSNAME}__star__half__secondary`]: {
-    opacity: 0.5
-  },
+  [`${BASE_CLASSNAME}__star__half__secondary`]: {},
   [`${BASE_CLASSNAME}__star__half__secondary--theme-dark`]: {
     color: core.colors.gray03
   },
   [`${BASE_CLASSNAME}__star__half__secondary--theme-light`]: {
-    color: transparentize(0.25, core.colors.gray01)
+    color: core.colors.gray01
   },
 
   [`${BASE_CLASSNAME}__screen-reader-input`]: {
