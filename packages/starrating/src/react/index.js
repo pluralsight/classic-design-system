@@ -33,38 +33,35 @@ class StarRating extends React.PureComponent {
     this.handleStarEnter = this.handleStarEnter.bind(this)
     this.handleStarLeave = this.handleStarLeave.bind(this)
 
-    this.state = { hoverIndex: null, interactive: !!this.props.onChange }
-  }
-
-  componentWillReceiveProps(nextProps) {
-    const interactive = !!nextProps.onChange
-    if (interactive === this.props.interactive) return
-
-    this.setState({ interactive })
+    this.state = { hoverIndex: null }
   }
 
   handleInputChanged(event) {
-    if (!this.state.interactive) return
+    if (!this.isInteractive) return
     this.props.onChange(event.target.value, event)
   }
 
   handleStarClicked(index, event) {
-    if (!this.state.interactive) return
+    if (!this.isInteractive) return
     this.props.onChange(index + 1, event)
   }
 
   handleStarEnter(index, event) {
-    if (!this.state.interactive) return
+    if (!this.isInteractive) return
     this.setState(() => ({ hoverIndex: index }))
   }
 
   handleStarLeave(index, event) {
-    if (!this.state.interactive) return
+    if (!this.isInteractive) return
     this.setState(() => ({ hoverIndex: null }))
   }
 
+  get isInteractive() {
+    return !!this.props.onChange
+  }
+
   get stars() {
-    const { hoverIndex, interactive } = this.state
+    const { hoverIndex } = this.state
     const { starCount, value } = this.props
 
     const hasValidRating = !Number.isNaN(parseFloat(value))
@@ -86,7 +83,7 @@ class StarRating extends React.PureComponent {
           appearance = Star.appearances.empty
         }
       } else {
-        if (interactive && !hasValidRating) {
+        if (this.isInteractive && !hasValidRating) {
           appearance = Star.appearances.empty
         } else if (index < fullStars) {
           active = true
@@ -104,7 +101,7 @@ class StarRating extends React.PureComponent {
           active={active}
           appearance={appearance}
           index={index}
-          interactive={interactive}
+          interactive={this.isInteractive}
           key={index}
           onClick={this.handleStarClicked}
           onEnter={this.handleStarEnter}
@@ -115,12 +112,11 @@ class StarRating extends React.PureComponent {
   }
 
   render() {
-    const { interactive } = this.state
     const { starCount, value } = this.props
 
     return (
       <div {...styles.starRating(this.props)}>
-        {interactive && (
+        {this.isInteractive && (
           <label>
             <ScreenReaderText>Rate</ScreenReaderText>
             <ScreenReaderInput
