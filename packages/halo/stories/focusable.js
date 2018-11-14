@@ -2,8 +2,7 @@ import * as glamor from 'glamor'
 import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
-
-import withTheme from '../src/react/with-default-theme'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
 const css = {
   '.focusable': {
