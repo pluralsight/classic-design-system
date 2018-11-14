@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-starrating",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Design System component for star rating ui",
   "main": "index.js",
   "module": "index.js",
@@ -29,8 +29,8 @@
   "repository": "pluralsight/design-system",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.3.3",
-    "@pluralsight/ps-design-system-icon": "^8.13.5",
-    "@pluralsight/ps-design-system-theme": "^1.4.0",
+    "@pluralsight/ps-design-system-icon": "^8.13.6",
+    "@pluralsight/ps-design-system-theme": "^1.4.1",
     "prop-types": "^15.5.10"
   },
   "peerDependencies": {
@@ -40,7 +40,7 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "*",
     "@pluralsight/ps-design-system-storybook-addon-center": "*",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.2.4",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.2.5",
     "@storybook/addon-actions": "^4.0.0",
     "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/addons": "^4.0.0",
