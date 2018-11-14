@@ -1,4 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
 export const BASE_CLASSNAME = '.psds-starrating'
 
@@ -54,18 +55,18 @@ export default {
   [`${BASE_CLASSNAME}__star--interactive`]: {
     cursor: 'pointer'
   },
-  [`${BASE_CLASSNAME}__star--theme-dark`]: {
+  [`${BASE_CLASSNAME}__star--theme-${themeNames.dark}`]: {
     color: core.colors.gray03
   },
-  [`${BASE_CLASSNAME}__star--theme-light`]: {
+  [`${BASE_CLASSNAME}__star--theme-${themeNames.light}`]: {
     color: core.colors.gray01
   },
 
   [`${BASE_CLASSNAME}__star__half__secondary`]: {},
-  [`${BASE_CLASSNAME}__star__half__secondary--theme-dark`]: {
+  [`${BASE_CLASSNAME}__star__half__secondary--theme-${themeNames.dark}`]: {
     color: core.colors.gray03
   },
-  [`${BASE_CLASSNAME}__star__half__secondary--theme-light`]: {
+  [`${BASE_CLASSNAME}__star__half__secondary--theme-${themeNames.light}`]: {
     color: core.colors.gray01
   },
 

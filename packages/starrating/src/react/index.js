@@ -2,6 +2,7 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import Star from './star'
@@ -144,7 +145,7 @@ class StarRating extends React.PureComponent {
 StarRating.propTypes = {
   onChange: PropTypes.func,
   starCount: PropTypes.number,
-  themeName: PropTypes.string.isRequired,
+  themeName: PropTypes.oneOf(Object.keys(themeNames)).isRequired,
   value: PropTypes.number
 }
 
