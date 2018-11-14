@@ -66,9 +66,10 @@ class StarRating extends React.PureComponent {
     const { hoverIndex, interactive } = this.state
     const { starCount, value } = this.props
 
+    const hasValidRating = !Number.isNaN(parseFloat(value, 10))
     const isHovering = hoverIndex !== null
-    const valueRounded = Math.floor(value * 2) / 2
 
+    const valueRounded = Math.floor(value * 2) / 2
     const fullStars = Math.floor(valueRounded)
     const halfStars = Math.floor(valueRounded) !== valueRounded
 
@@ -84,7 +85,9 @@ class StarRating extends React.PureComponent {
           appearance = Star.appearances.empty
         }
       } else {
-        if (index < fullStars) {
+        if (interactive && !hasValidRating) {
+          appearance = Star.appearances.empty
+        } else if (index < fullStars) {
           active = true
           appearance = Star.appearances.full
         } else if (index === fullStars && halfStars) {
