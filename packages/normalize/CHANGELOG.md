@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.48](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@3.0.47...@pluralsight/ps-design-system-normalize@3.0.48) (2018-11-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-normalize
+
+
+
+
+
 ## [3.0.47](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@3.0.46...@pluralsight/ps-design-system-normalize@3.0.47) (2018-10-31)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-normalize

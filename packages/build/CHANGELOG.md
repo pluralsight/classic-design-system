@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.8.5...@pluralsight/ps-design-system-build@1.9.0) (2018-11-14)
+
+
+### Features
+
+* **build:** glamor to css conversion ([a019d20](https://github.com/pluralsight/design-system/commit/a019d20))
+* **build:** new css build that uses glamor to transpile css ([96abeb0](https://github.com/pluralsight/design-system/commit/96abeb0))
+
+
+
+
+
 ## [1.8.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.8.4...@pluralsight/ps-design-system-build@1.8.5) (2018-10-31)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-build
