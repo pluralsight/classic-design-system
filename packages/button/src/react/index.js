@@ -100,6 +100,7 @@ const buttonHtmlPropsWhitelist = [
   'href',
   'onClick',
   'disabled',
+  'download',
   'className',
   'role',
   'style',
