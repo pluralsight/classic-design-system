@@ -137,6 +137,7 @@ class Star extends React.PureComponent {
     )
   }
 }
+
 Star.propTypes = {
   active: PropTypes.bool.isRequired,
   appearance: PropTypes.oneOf(Object.values(APPEARANCES)).isRequired,
@@ -145,12 +146,13 @@ Star.propTypes = {
   onClick: PropTypes.func,
   onEnter: PropTypes.func,
   onLeave: PropTypes.func,
+  size: PropTypes.oneOf(Object.values(Icon.sizes)).isRequired,
   themeName: PropTypes.string
 }
 
 Star.defaultProps = {
   interactive: false,
-  size: Icon.sizes.xsmall
+  size: Icon.sizes.small
 }
 
 Star.appearances = APPEARANCES

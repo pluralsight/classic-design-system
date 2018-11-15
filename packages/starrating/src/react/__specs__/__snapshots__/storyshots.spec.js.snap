@@ -33,7 +33,7 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -58,7 +58,7 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -83,7 +83,7 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -108,7 +108,7 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -133,7 +133,7 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -190,7 +190,7 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -238,7 +238,7 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -263,7 +263,7 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -288,7 +288,7 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -313,7 +313,7 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -370,7 +370,7 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -395,7 +395,7 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -420,7 +420,7 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -445,7 +445,7 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -470,7 +470,7 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -527,7 +527,7 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -552,7 +552,7 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -600,7 +600,7 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -625,7 +625,7 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -650,7 +650,7 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -707,7 +707,7 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -732,7 +732,7 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -757,7 +757,7 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -782,7 +782,7 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -807,7 +807,7 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -864,7 +864,7 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -889,7 +889,7 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -914,7 +914,7 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -962,7 +962,7 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -987,7 +987,7 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1044,7 +1044,7 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1069,7 +1069,7 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1094,7 +1094,7 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1119,7 +1119,7 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1144,7 +1144,7 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1201,7 +1201,7 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1226,7 +1226,7 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1251,7 +1251,7 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1276,7 +1276,7 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -1324,7 +1324,7 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1381,7 +1381,7 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1406,7 +1406,7 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1431,7 +1431,7 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1456,7 +1456,7 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1481,7 +1481,7 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1538,7 +1538,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1563,7 +1563,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1588,7 +1588,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1613,7 +1613,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1638,7 +1638,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -1718,7 +1718,7 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1743,7 +1743,7 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1768,7 +1768,7 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1793,7 +1793,7 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1818,7 +1818,7 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1875,7 +1875,7 @@ exports[`Storyshots StarRating / interactive null 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -1900,7 +1900,7 @@ exports[`Storyshots StarRating / interactive null 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -1925,7 +1925,7 @@ exports[`Storyshots StarRating / interactive null 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -1950,7 +1950,7 @@ exports[`Storyshots StarRating / interactive null 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -1975,7 +1975,7 @@ exports[`Storyshots StarRating / interactive null 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -2031,7 +2031,7 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -2056,7 +2056,7 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -2081,7 +2081,7 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -2106,7 +2106,7 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -2131,7 +2131,7 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -2170,7 +2170,7 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2195,7 +2195,7 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2220,7 +2220,7 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2245,7 +2245,7 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2270,7 +2270,7 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2310,7 +2310,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -2358,7 +2358,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2383,7 +2383,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2408,7 +2408,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2433,7 +2433,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2473,7 +2473,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2498,7 +2498,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2523,7 +2523,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2548,7 +2548,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2573,7 +2573,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2613,7 +2613,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2638,7 +2638,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -2686,7 +2686,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2711,7 +2711,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2736,7 +2736,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2776,7 +2776,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2801,7 +2801,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2826,7 +2826,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2851,7 +2851,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2876,7 +2876,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2916,7 +2916,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2941,7 +2941,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2966,7 +2966,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -3014,7 +3014,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3039,7 +3039,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3079,7 +3079,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3104,7 +3104,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3129,7 +3129,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3154,7 +3154,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3179,7 +3179,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3219,7 +3219,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3244,7 +3244,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3269,7 +3269,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3294,7 +3294,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -3342,7 +3342,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3382,7 +3382,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3407,7 +3407,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3432,7 +3432,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3457,7 +3457,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3482,7 +3482,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3522,7 +3522,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3547,7 +3547,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3572,7 +3572,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3597,7 +3597,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3622,7 +3622,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -3685,7 +3685,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3710,7 +3710,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3735,7 +3735,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3760,7 +3760,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3785,7 +3785,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3825,7 +3825,7 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3850,7 +3850,7 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3875,7 +3875,7 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3900,7 +3900,7 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3925,7 +3925,7 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3964,7 +3964,7 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3989,7 +3989,7 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -4014,7 +4014,7 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -4039,7 +4039,7 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -4064,7 +4064,7 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
