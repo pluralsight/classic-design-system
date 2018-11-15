@@ -123,6 +123,9 @@ export default withServerProps(_ => (
           <Link href="/components/drawer#light-theme">Drawer</Link>
         </Text.List.Item>
         <Text.List.Item>
+          <Link href="/components/starrating">StarRating</Link>
+        </Text.List.Item>
+        <Text.List.Item>
           <Link href="/components/switch#light-theme">Switch</Link>
         </Text.List.Item>
         <Text.List.Item>

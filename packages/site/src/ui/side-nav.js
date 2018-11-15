@@ -90,7 +90,7 @@ const InternalLinks = props =>
 class NavLink extends React.Component {
   render() {
     const isActive =
-      (typeof window != 'undefined' &&
+      (typeof window !== 'undefined' &&
         window.location.pathname === this.props.href) ||
       this.context.pathname === this.props.href
     return (
@@ -357,6 +357,9 @@ export default withHeadings(props => (
       </NavLink>
       <NavLink href="/components/row" headings={props.headings}>
         Row
+      </NavLink>
+      <NavLink href="/components/starrating" headings={props.headings}>
+        Star Rating
       </NavLink>
       <NavLink href="/components/switch" headings={props.headings}>
         Switch

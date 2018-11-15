@@ -23,7 +23,8 @@ const CommonSet = props => (
       Current icon set.{' '}
       <Link href="https://github.com/pluralsight/design-system/issues">
         Submit new icons through Github
-      </Link>.
+      </Link>
+      .
     </P>
     <div className="icons">
       {Object.keys(Icon.ids).map((id, i) => (
@@ -39,7 +40,7 @@ const CommonSet = props => (
         flex-wrap: wrap;
         border-radius: 12px;
         background-color: ${core.colors.bone};
-        margin: - ${core.layout.spacingLarge};
+        margin: -${core.layout.spacingLarge};
       }
       .icon {
         display: flex;
@@ -119,6 +120,9 @@ export default withServerProps(_ => (
 <div style={{ color: '#ffffff' }}>
   <Icon id={Icon.ids.path} size={Icon.sizes.large} />
 </div>
+`,
+          `
+<Icon style={{ color: 'red' }} id={Icon.ids.path} size={Icon.sizes.large} />
 `,
           `
 <Icon id={Icon.ids.path} color={Icon.colors.orange} size={Icon.sizes.large} />

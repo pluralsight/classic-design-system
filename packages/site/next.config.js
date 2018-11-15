@@ -1,6 +1,5 @@
 const { parsed: localEnv } = require('dotenv').config()
 const webpack = require('webpack')
-const util = require('util')
 
 module.exports = {
   // TODO: read directory to make more dynamic
@@ -37,6 +36,7 @@ module.exports = {
       '/components/link': { page: '/components/link' },
       '/components/radio': { page: '/components/radio' },
       '/components/row': { page: '/components/row' },
+      '/components/starrating': { page: '/components/starrating' },
       '/components/switch': { page: '/components/switch' },
       '/components/tab': { page: '/components/tab' },
       '/components/table': { page: '/components/table' },
