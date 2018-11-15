@@ -34,7 +34,7 @@ export default withServerProps(_ => (
         props={[
           PropTypes.row([
             'onChange',
-            'function',
+            '(number, Event) => ()',
             null,
             null,
             'triggered when the value changes'
