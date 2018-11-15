@@ -73,6 +73,7 @@ class StarRating extends React.PureComponent {
 
     return [...Array(starCount)].map((_, index) => {
       let active = false
+      let bright = false
       let appearance
 
       if (isHovering) {
@@ -85,6 +86,7 @@ class StarRating extends React.PureComponent {
       } else {
         if (this.isInteractive && !hasValidRating) {
           appearance = Star.appearances.empty
+          bright = true
         } else if (index < fullStars) {
           active = true
           appearance = Star.appearances.full
@@ -100,6 +102,7 @@ class StarRating extends React.PureComponent {
         <Star
           active={active}
           appearance={appearance}
+          bright={bright}
           index={index}
           interactive={this.isInteractive}
           key={index}

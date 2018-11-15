@@ -7,7 +7,7 @@ import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css, { BASE_CLASSNAME } from '../css'
 
-const APPEARANCES = {
+export const APPEARANCES = {
   empty: 'empty',
   half: 'half',
   full: 'full'
@@ -18,6 +18,7 @@ const styles = {
     glamor.css(
       css[`${BASE_CLASSNAME}__star`],
       css[`${BASE_CLASSNAME}__star--theme-${props.themeName}`],
+      props.bright && css[`${BASE_CLASSNAME}__star--bright`],
       props.active && css[`${BASE_CLASSNAME}__star--active`],
       props.interactive && css[`${BASE_CLASSNAME}__star--interactive`]
     ),
@@ -139,8 +140,9 @@ class Star extends React.PureComponent {
 }
 
 Star.propTypes = {
-  active: PropTypes.bool.isRequired,
+  active: PropTypes.bool,
   appearance: PropTypes.oneOf(Object.values(APPEARANCES)).isRequired,
+  bright: PropTypes.bool,
   index: PropTypes.number.isRequired,
   interactive: PropTypes.bool,
   onClick: PropTypes.func,
@@ -151,6 +153,8 @@ Star.propTypes = {
 }
 
 Star.defaultProps = {
+  active: false,
+  bright: false,
   interactive: false,
   size: Icon.sizes.small
 }
