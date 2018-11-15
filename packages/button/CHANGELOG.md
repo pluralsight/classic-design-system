@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.9.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.8.21...@pluralsight/ps-design-system-button@10.9.0) (2018-11-15)
+
+
+### Bug Fixes
+
+* **button:** outdated snapshots ([49f6bed](https://github.com/pluralsight/design-system/commit/49f6bed))
+
+
+### Features
+
+* **button:** add download prop to whitelist ([6fcf2ab](https://github.com/pluralsight/design-system/commit/6fcf2ab)), closes [#341](https://github.com/pluralsight/design-system/issues/341)
+
+
+
+
+
 ## [10.8.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.8.20...@pluralsight/ps-design-system-button@10.8.21) (2018-11-14)
 
 
