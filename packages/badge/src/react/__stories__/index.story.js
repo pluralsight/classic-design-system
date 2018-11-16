@@ -1,20 +1,26 @@
-import React from 'react'
 import { storiesOf } from '@storybook/react'
+
+import PropTypes from 'prop-types'
+import React from 'react'
 
 import Badge from '..'
 
-const appearanceStory = storiesOf('appearance', module)
-Object.values(Badge.appearances).forEach(app =>
-  appearanceStory.add(app, _ => (
-    <Badge appearance={app}>{`${app} Badge`}</Badge>
-  ))
+const BadgeStory = ({ appearance }) => (
+  <div style={{ display: 'grid', gridGap: 10 }}>
+    {Object.values(Badge.colors).map((color, i) => (
+      <div key={i}>
+        <Badge appearance={appearance} color={color}>
+          {appearance} {color}
+        </Badge>
+      </div>
+    ))}
+  </div>
 )
 
-const colorStory = storiesOf('color', module)
-Object.values(Badge.colors).forEach(color => {
-  Object.values(Badge.appearances).forEach(app =>
-    colorStory.add(`${color} ${app}`, _ => (
-      <Badge appearance={app} color={color}>{`${color} ${app} Badge`}</Badge>
-    ))
-  )
-})
+BadgeStory.propTypes = {
+  appearance: PropTypes.string.isRequired
+}
+
+storiesOf('Badge / appearance', module)
+  .add('default', () => <BadgeStory appearance={Badge.appearances.default} />)
+  .add('stroke', () => <BadgeStory appearance={Badge.appearances.stroke} />)
