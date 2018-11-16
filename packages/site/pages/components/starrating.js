@@ -17,8 +17,8 @@ import {
 
 export default withServerProps(_ => (
   <Chrome>
-    <Content title="StarRating">
-      <PageHeading packageName="starrating">StarRating</PageHeading>
+    <Content title="Star Rating">
+      <PageHeading packageName="starrating">Star Rating</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -78,6 +78,20 @@ export default withServerProps(_ => (
         includes={{ StarRating }}
         codes={[
           `<StarRating value={2.5} onChange={val => alert("The new value is: " + val)} />`
+        ]}
+      />
+
+      <P>
+        A special empty state will be display if the{' '}
+        <Text.Code>onChange</Text.Code> prop is defined but your value is empty.
+      </P>
+      <Example.React
+        themeToggle
+        includes={{ StarRating }}
+        orient="vertical"
+        codes={[
+          `<StarRating value={undefined} onChange={() => null} />`,
+          `<StarRating value={null} onChange={() => null} />`
         ]}
       />
     </Content>
