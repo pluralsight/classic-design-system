@@ -77,21 +77,18 @@ export default withServerProps(_ => (
         themeToggle
         includes={{ StarRating }}
         codes={[
-          `<StarRating value={2.5} onChange={val => alert("The new value is: " + val)} />`
+          `<StarRating value={null} onChange={val => alert("The new value is: " + val)} />`
         ]}
       />
 
       <P>
-        A special empty state will be display if the{' '}
-        <Text.Code>onChange</Text.Code> prop is defined but your value is empty.
+        If a value exists, the component may still be interactive on mouse hover
       </P>
       <Example.React
         themeToggle
         includes={{ StarRating }}
-        orient="vertical"
         codes={[
-          `<StarRating value={undefined} onChange={() => null} />`,
-          `<StarRating value={null} onChange={() => null} />`
+          `<StarRating value={2.5} onChange={val => alert("The new value is: " + val)} />`
         ]}
       />
     </Content>
