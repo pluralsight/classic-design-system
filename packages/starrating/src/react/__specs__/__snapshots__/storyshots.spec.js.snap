@@ -24,7 +24,8 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
     </label>
     <button
       aria-label="Rate 1 Star"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -33,7 +34,7 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -49,7 +50,8 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
     </button>
     <button
       aria-label="Rate 2 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -58,7 +60,7 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -74,7 +76,8 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
     </button>
     <button
       aria-label="Rate 3 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -83,7 +86,7 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -99,7 +102,8 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
     </button>
     <button
       aria-label="Rate 4 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -108,7 +112,7 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -124,7 +128,8 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
     </button>
     <button
       aria-label="Rate 5 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -133,7 +138,7 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -181,6 +186,7 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
     </label>
     <button
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -190,7 +196,7 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -217,7 +223,7 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-w3xq5w=""
+            data-css-1h6ussv=""
             href="#psds-starrating__half-star__star"
           />
           <use
@@ -229,7 +235,8 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
     </button>
     <button
       aria-label="Rate 2 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -238,7 +245,7 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -254,7 +261,8 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
     </button>
     <button
       aria-label="Rate 3 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -263,7 +271,7 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -279,7 +287,8 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
     </button>
     <button
       aria-label="Rate 4 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -288,7 +297,7 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -304,7 +313,8 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
     </button>
     <button
       aria-label="Rate 5 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -313,7 +323,7 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -361,6 +371,7 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
     </label>
     <button
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -370,7 +381,7 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -386,7 +397,8 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
     </button>
     <button
       aria-label="Rate 2 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -395,7 +407,7 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -411,7 +423,8 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
     </button>
     <button
       aria-label="Rate 3 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -420,7 +433,7 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -436,7 +449,8 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
     </button>
     <button
       aria-label="Rate 4 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -445,7 +459,7 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -461,7 +475,8 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
     </button>
     <button
       aria-label="Rate 5 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -470,7 +485,7 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -518,6 +533,7 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
     </label>
     <button
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -527,7 +543,7 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -543,6 +559,7 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
     </button>
     <button
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -552,7 +569,7 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -579,7 +596,7 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-w3xq5w=""
+            data-css-1h6ussv=""
             href="#psds-starrating__half-star__star"
           />
           <use
@@ -591,7 +608,8 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
     </button>
     <button
       aria-label="Rate 3 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -600,7 +618,7 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -616,7 +634,8 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
     </button>
     <button
       aria-label="Rate 4 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -625,7 +644,7 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -641,7 +660,8 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
     </button>
     <button
       aria-label="Rate 5 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -650,7 +670,7 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -698,6 +718,7 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
     </label>
     <button
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -707,7 +728,7 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -723,6 +744,7 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
     </button>
     <button
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -732,7 +754,7 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -748,7 +770,8 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
     </button>
     <button
       aria-label="Rate 3 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -757,7 +780,7 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -773,7 +796,8 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
     </button>
     <button
       aria-label="Rate 4 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -782,7 +806,7 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -798,7 +822,8 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
     </button>
     <button
       aria-label="Rate 5 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -807,7 +832,7 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -855,6 +880,7 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
     </label>
     <button
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -864,7 +890,7 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -880,6 +906,7 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
     </button>
     <button
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -889,7 +916,7 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -905,6 +932,7 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
     </button>
     <button
       aria-label="Rate 3 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -914,7 +942,7 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -941,7 +969,7 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-w3xq5w=""
+            data-css-1h6ussv=""
             href="#psds-starrating__half-star__star"
           />
           <use
@@ -953,7 +981,8 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
     </button>
     <button
       aria-label="Rate 4 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -962,7 +991,7 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -978,7 +1007,8 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
     </button>
     <button
       aria-label="Rate 5 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -987,7 +1017,7 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1035,6 +1065,7 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
     </label>
     <button
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1044,7 +1075,7 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1060,6 +1091,7 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
     </button>
     <button
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1069,7 +1101,7 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1085,6 +1117,7 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
     </button>
     <button
       aria-label="Rate 3 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1094,7 +1127,7 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1110,7 +1143,8 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
     </button>
     <button
       aria-label="Rate 4 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -1119,7 +1153,7 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1135,7 +1169,8 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
     </button>
     <button
       aria-label="Rate 5 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -1144,7 +1179,7 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1192,6 +1227,7 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
     </label>
     <button
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1201,7 +1237,7 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1217,6 +1253,7 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
     </button>
     <button
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1226,7 +1263,7 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1242,6 +1279,7 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
     </button>
     <button
       aria-label="Rate 3 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1251,7 +1289,7 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1267,6 +1305,7 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
     </button>
     <button
       aria-label="Rate 4 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1276,7 +1315,7 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -1303,7 +1342,7 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-w3xq5w=""
+            data-css-1h6ussv=""
             href="#psds-starrating__half-star__star"
           />
           <use
@@ -1315,7 +1354,8 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
     </button>
     <button
       aria-label="Rate 5 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -1324,7 +1364,7 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1372,6 +1412,7 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
     </label>
     <button
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1381,7 +1422,7 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1397,6 +1438,7 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
     </button>
     <button
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1406,7 +1448,7 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1422,6 +1464,7 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
     </button>
     <button
       aria-label="Rate 3 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1431,7 +1474,7 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1447,6 +1490,7 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
     </button>
     <button
       aria-label="Rate 4 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1456,7 +1500,7 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1472,7 +1516,8 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
     </button>
     <button
       aria-label="Rate 5 Stars"
-      data-css-t5fouv=""
+      bright={false}
+      data-css-v6qu80=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -1481,7 +1526,7 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1529,6 +1574,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
     </label>
     <button
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1538,7 +1584,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1554,6 +1600,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
     </button>
     <button
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1563,7 +1610,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1579,6 +1626,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
     </button>
     <button
       aria-label="Rate 3 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1588,7 +1636,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1604,6 +1652,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
     </button>
     <button
       aria-label="Rate 4 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1613,7 +1662,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1629,6 +1678,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
     </button>
     <button
       aria-label="Rate 5 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1638,7 +1688,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -1665,7 +1715,7 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-w3xq5w=""
+            data-css-1h6ussv=""
             href="#psds-starrating__half-star__star"
           />
           <use
@@ -1709,6 +1759,7 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
     </label>
     <button
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1718,7 +1769,7 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1734,6 +1785,7 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
     </button>
     <button
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1743,7 +1795,7 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1759,6 +1811,7 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
     </button>
     <button
       aria-label="Rate 3 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1768,7 +1821,7 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1784,6 +1837,7 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
     </button>
     <button
       aria-label="Rate 4 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1793,7 +1847,7 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1809,6 +1863,7 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
     </button>
     <button
       aria-label="Rate 5 Stars"
+      bright={false}
       data-css-1v4k0bb=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -1818,7 +1873,7 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -1866,7 +1921,8 @@ exports[`Storyshots StarRating / interactive null 1`] = `
     </label>
     <button
       aria-label="Rate 1 Star"
-      data-css-t5fouv=""
+      bright={true}
+      data-css-1uvjn2=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -1875,7 +1931,7 @@ exports[`Storyshots StarRating / interactive null 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -1891,7 +1947,8 @@ exports[`Storyshots StarRating / interactive null 1`] = `
     </button>
     <button
       aria-label="Rate 2 Stars"
-      data-css-t5fouv=""
+      bright={true}
+      data-css-1uvjn2=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -1900,7 +1957,7 @@ exports[`Storyshots StarRating / interactive null 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -1916,7 +1973,8 @@ exports[`Storyshots StarRating / interactive null 1`] = `
     </button>
     <button
       aria-label="Rate 3 Stars"
-      data-css-t5fouv=""
+      bright={true}
+      data-css-1uvjn2=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -1925,7 +1983,7 @@ exports[`Storyshots StarRating / interactive null 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -1941,7 +1999,8 @@ exports[`Storyshots StarRating / interactive null 1`] = `
     </button>
     <button
       aria-label="Rate 4 Stars"
-      data-css-t5fouv=""
+      bright={true}
+      data-css-1uvjn2=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -1950,7 +2009,7 @@ exports[`Storyshots StarRating / interactive null 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -1966,7 +2025,8 @@ exports[`Storyshots StarRating / interactive null 1`] = `
     </button>
     <button
       aria-label="Rate 5 Stars"
-      data-css-t5fouv=""
+      bright={true}
+      data-css-1uvjn2=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -1975,7 +2035,7 @@ exports[`Storyshots StarRating / interactive null 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -2022,7 +2082,8 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
     </label>
     <button
       aria-label="Rate 1 Star"
-      data-css-t5fouv=""
+      bright={true}
+      data-css-1uvjn2=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2031,7 +2092,7 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -2047,7 +2108,8 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
     </button>
     <button
       aria-label="Rate 2 Stars"
-      data-css-t5fouv=""
+      bright={true}
+      data-css-1uvjn2=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2056,7 +2118,7 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -2072,7 +2134,8 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
     </button>
     <button
       aria-label="Rate 3 Stars"
-      data-css-t5fouv=""
+      bright={true}
+      data-css-1uvjn2=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2081,7 +2144,7 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -2097,7 +2160,8 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
     </button>
     <button
       aria-label="Rate 4 Stars"
-      data-css-t5fouv=""
+      bright={true}
+      data-css-1uvjn2=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2106,7 +2170,7 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -2122,7 +2186,8 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
     </button>
     <button
       aria-label="Rate 5 Stars"
-      data-css-t5fouv=""
+      bright={true}
+      data-css-1uvjn2=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2131,7 +2196,7 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star empty icon"
@@ -2161,7 +2226,8 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
   <div>
     <span
       aria-label="Rate 1 Star"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2170,7 +2236,7 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2186,7 +2252,8 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
     </span>
     <span
       aria-label="Rate 2 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2195,7 +2262,7 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2211,7 +2278,8 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
     </span>
     <span
       aria-label="Rate 3 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2220,7 +2288,7 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2236,7 +2304,8 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
     </span>
     <span
       aria-label="Rate 4 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2245,7 +2314,7 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2261,7 +2330,8 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
     </span>
     <span
       aria-label="Rate 5 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2270,7 +2340,7 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2301,6 +2371,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
   <div>
     <span
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2310,7 +2381,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -2337,7 +2408,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-w3xq5w=""
+            data-css-1h6ussv=""
             href="#psds-starrating__half-star__star"
           />
           <use
@@ -2349,7 +2420,8 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
     </span>
     <span
       aria-label="Rate 2 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2358,7 +2430,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2374,7 +2446,8 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
     </span>
     <span
       aria-label="Rate 3 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2383,7 +2456,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2399,7 +2472,8 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
     </span>
     <span
       aria-label="Rate 4 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2408,7 +2482,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2424,7 +2498,8 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
     </span>
     <span
       aria-label="Rate 5 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2433,7 +2508,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2464,6 +2539,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
   <div>
     <span
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2473,7 +2549,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2489,7 +2565,8 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
     </span>
     <span
       aria-label="Rate 2 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2498,7 +2575,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2514,7 +2591,8 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
     </span>
     <span
       aria-label="Rate 3 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2523,7 +2601,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2539,7 +2617,8 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
     </span>
     <span
       aria-label="Rate 4 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2548,7 +2627,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2564,7 +2643,8 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
     </span>
     <span
       aria-label="Rate 5 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2573,7 +2653,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2604,6 +2684,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
   <div>
     <span
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2613,7 +2694,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2629,6 +2710,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
     </span>
     <span
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2638,7 +2720,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -2665,7 +2747,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-w3xq5w=""
+            data-css-1h6ussv=""
             href="#psds-starrating__half-star__star"
           />
           <use
@@ -2677,7 +2759,8 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
     </span>
     <span
       aria-label="Rate 3 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2686,7 +2769,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2702,7 +2785,8 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
     </span>
     <span
       aria-label="Rate 4 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2711,7 +2795,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2727,7 +2811,8 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
     </span>
     <span
       aria-label="Rate 5 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2736,7 +2821,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2767,6 +2852,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
   <div>
     <span
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2776,7 +2862,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2792,6 +2878,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
     </span>
     <span
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2801,7 +2888,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2817,7 +2904,8 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
     </span>
     <span
       aria-label="Rate 3 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2826,7 +2914,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2842,7 +2930,8 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
     </span>
     <span
       aria-label="Rate 4 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2851,7 +2940,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2867,7 +2956,8 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
     </span>
     <span
       aria-label="Rate 5 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -2876,7 +2966,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2907,6 +2997,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
   <div>
     <span
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2916,7 +3007,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2932,6 +3023,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
     </span>
     <span
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2941,7 +3033,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -2957,6 +3049,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
     </span>
     <span
       aria-label="Rate 3 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2966,7 +3059,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -2993,7 +3086,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-w3xq5w=""
+            data-css-1h6ussv=""
             href="#psds-starrating__half-star__star"
           />
           <use
@@ -3005,7 +3098,8 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
     </span>
     <span
       aria-label="Rate 4 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -3014,7 +3108,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3030,7 +3124,8 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
     </span>
     <span
       aria-label="Rate 5 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -3039,7 +3134,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3070,6 +3165,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
   <div>
     <span
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3079,7 +3175,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3095,6 +3191,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
     </span>
     <span
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3104,7 +3201,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3120,6 +3217,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
     </span>
     <span
       aria-label="Rate 3 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3129,7 +3227,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3145,7 +3243,8 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
     </span>
     <span
       aria-label="Rate 4 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -3154,7 +3253,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3170,7 +3269,8 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
     </span>
     <span
       aria-label="Rate 5 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -3179,7 +3279,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3210,6 +3310,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
   <div>
     <span
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3219,7 +3320,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3235,6 +3336,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
     </span>
     <span
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3244,7 +3346,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3260,6 +3362,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
     </span>
     <span
       aria-label="Rate 3 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3269,7 +3372,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3285,6 +3388,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
     </span>
     <span
       aria-label="Rate 4 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3294,7 +3398,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -3321,7 +3425,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-w3xq5w=""
+            data-css-1h6ussv=""
             href="#psds-starrating__half-star__star"
           />
           <use
@@ -3333,7 +3437,8 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
     </span>
     <span
       aria-label="Rate 5 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -3342,7 +3447,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3373,6 +3478,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
   <div>
     <span
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3382,7 +3488,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3398,6 +3504,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
     </span>
     <span
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3407,7 +3514,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3423,6 +3530,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
     </span>
     <span
       aria-label="Rate 3 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3432,7 +3540,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3448,6 +3556,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
     </span>
     <span
       aria-label="Rate 4 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3457,7 +3566,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3473,7 +3582,8 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
     </span>
     <span
       aria-label="Rate 5 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -3482,7 +3592,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3513,6 +3623,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
   <div>
     <span
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3522,7 +3633,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3538,6 +3649,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
     </span>
     <span
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3547,7 +3659,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3563,6 +3675,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
     </span>
     <span
       aria-label="Rate 3 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3572,7 +3685,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3588,6 +3701,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
     </span>
     <span
       aria-label="Rate 4 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3597,7 +3711,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3613,6 +3727,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
     </span>
     <span
       aria-label="Rate 5 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3622,7 +3737,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star half icon"
@@ -3649,7 +3764,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-w3xq5w=""
+            data-css-1h6ussv=""
             href="#psds-starrating__half-star__star"
           />
           <use
@@ -3676,6 +3791,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
   <div>
     <span
       aria-label="Rate 1 Star"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3685,7 +3801,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3701,6 +3817,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
     </span>
     <span
       aria-label="Rate 2 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3710,7 +3827,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3726,6 +3843,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
     </span>
     <span
       aria-label="Rate 3 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3735,7 +3853,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3751,6 +3869,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
     </span>
     <span
       aria-label="Rate 4 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3760,7 +3879,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3776,6 +3895,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
     </span>
     <span
       aria-label="Rate 5 Stars"
+      bright={false}
       data-css-1n9a6tt=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3785,7 +3905,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3816,7 +3936,8 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
   <div>
     <span
       aria-label="Rate 1 Star"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -3825,7 +3946,7 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3841,7 +3962,8 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
     </span>
     <span
       aria-label="Rate 2 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -3850,7 +3972,7 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3866,7 +3988,8 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
     </span>
     <span
       aria-label="Rate 3 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -3875,7 +3998,7 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3891,7 +4014,8 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
     </span>
     <span
       aria-label="Rate 4 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -3900,7 +4024,7 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3916,7 +4040,8 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
     </span>
     <span
       aria-label="Rate 5 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -3925,7 +4050,7 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3955,7 +4080,8 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
   <div>
     <span
       aria-label="Rate 1 Star"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -3964,7 +4090,7 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
       title="Rate 1 Star"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -3980,7 +4106,8 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
     </span>
     <span
       aria-label="Rate 2 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -3989,7 +4116,7 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
       title="Rate 2 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -4005,7 +4132,8 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
     </span>
     <span
       aria-label="Rate 3 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -4014,7 +4142,7 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
       title="Rate 3 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -4030,7 +4158,8 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
     </span>
     <span
       aria-label="Rate 4 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -4039,7 +4168,7 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
       title="Rate 4 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
@@ -4055,7 +4184,8 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
     </span>
     <span
       aria-label="Rate 5 Stars"
-      data-css-1p3qpin=""
+      bright={false}
+      data-css-92tmk3=""
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -4064,7 +4194,7 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
       title="Rate 5 Stars"
     >
       <div
-        className="css-otejxm"
+        className="css-12f5sv2"
       >
         <svg
           aria-label="star fill icon"
