@@ -1,7 +1,5 @@
-import core from '@pluralsight/ps-design-system-core'
 import glamorous from 'glamorous'
 import PropTypes from 'prop-types'
-import React from 'react'
 
 import css from '../css'
 import * as vars from '../vars'
@@ -19,6 +17,7 @@ Badge.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
   color: PropTypes.oneOf(Object.keys(vars.colors))
 }
+
 Badge.defaultProps = {
   appearance: vars.appearances.default,
   color: vars.colors.gray
@@ -26,4 +25,5 @@ Badge.defaultProps = {
 
 export const appearances = vars.appearances
 export const colors = vars.colors
+
 export default Badge
