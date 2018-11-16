@@ -7,7 +7,7 @@ import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css, { BASE_CLASSNAME } from '../css'
 
-export const APPEARANCES = {
+const APPEARANCES = {
   empty: 'empty',
   half: 'half',
   full: 'full'
@@ -104,12 +104,12 @@ class Star extends React.PureComponent {
       interactive,
       onEnter,
       onLeave,
-      size,
       themeName,
       ...filteredProps
     } = this.props
 
     const Tag = interactive ? 'button' : 'span'
+    const iconSize = Icon.sizes.small
 
     return (
       <Tag
@@ -124,15 +124,15 @@ class Star extends React.PureComponent {
         onMouseLeave={this.handleLeave}
       >
         {appearance === APPEARANCES.full && (
-          <Icon id={Icon.ids.starFill} size={size} />
+          <Icon id={Icon.ids.starFill} size={iconSize} />
         )}
 
         {appearance === APPEARANCES.empty && (
-          <Icon id={Icon.ids.star} size={size} />
+          <Icon id={Icon.ids.star} size={iconSize} />
         )}
 
         {appearance === APPEARANCES.half && (
-          <HalfStarIcon size={size} themeName={themeName} />
+          <HalfStarIcon size={iconSize} themeName={themeName} />
         )}
       </Tag>
     )
@@ -148,15 +148,13 @@ Star.propTypes = {
   onClick: PropTypes.func,
   onEnter: PropTypes.func,
   onLeave: PropTypes.func,
-  size: PropTypes.oneOf(Object.values(Icon.sizes)).isRequired,
   themeName: PropTypes.string
 }
 
 Star.defaultProps = {
   active: false,
   bright: false,
-  interactive: false,
-  size: Icon.sizes.small
+  interactive: false
 }
 
 Star.appearances = APPEARANCES
