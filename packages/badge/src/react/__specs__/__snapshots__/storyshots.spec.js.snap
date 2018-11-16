@@ -5,7 +5,7 @@ exports[`Storyshots appearance default 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-vdc22r"
+    data-css-vdc22r=""
   >
     default Badge
   </div>
@@ -17,7 +17,7 @@ exports[`Storyshots appearance stroke 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-18uz01l"
+    data-css-18uz01l=""
   >
     stroke Badge
   </div>
@@ -29,7 +29,7 @@ exports[`Storyshots color blue default 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1d3h730"
+    data-css-1d3h730=""
   >
     blue default Badge
   </div>
@@ -41,7 +41,7 @@ exports[`Storyshots color blue stroke 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1nf2brk"
+    data-css-1nf2brk=""
   >
     blue stroke Badge
   </div>
@@ -53,7 +53,7 @@ exports[`Storyshots color gray default 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-vdc22r"
+    data-css-vdc22r=""
   >
     gray default Badge
   </div>
@@ -65,7 +65,7 @@ exports[`Storyshots color gray stroke 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-18uz01l"
+    data-css-18uz01l=""
   >
     gray stroke Badge
   </div>
@@ -77,7 +77,7 @@ exports[`Storyshots color green default 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-jh132n"
+    data-css-jh132n=""
   >
     green default Badge
   </div>
@@ -89,7 +89,7 @@ exports[`Storyshots color green stroke 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1ijjyd4"
+    data-css-1ijjyd4=""
   >
     green stroke Badge
   </div>
@@ -101,7 +101,7 @@ exports[`Storyshots color red default 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-17te2fi"
+    data-css-17te2fi=""
   >
     red default Badge
   </div>
@@ -113,7 +113,7 @@ exports[`Storyshots color red stroke 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1en6ax5"
+    data-css-1en6ax5=""
   >
     red stroke Badge
   </div>
@@ -125,7 +125,7 @@ exports[`Storyshots color yellow default 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1q8b1lc"
+    data-css-1q8b1lc=""
   >
     yellow default Badge
   </div>
@@ -137,7 +137,7 @@ exports[`Storyshots color yellow stroke 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-10iae72"
+    data-css-10iae72=""
   >
     yellow stroke Badge
   </div>

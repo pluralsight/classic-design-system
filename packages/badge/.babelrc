@@ -1,5 +1,4 @@
 {
-  "plugins": ["glamorous-displayname"],
   "presets": [
     "react",
     "stage-2",
