@@ -2,7 +2,13 @@ import core from '@pluralsight/ps-design-system-core'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { Head, GlobalStyles, MobileMenuBar, SideNav } from './index'
+import {
+  Head,
+  GlobalStyles,
+  MobileMenuBar,
+  OpenIssuePrompt,
+  SideNav
+} from './index'
 
 class Chrome extends React.Component {
   constructor(props) {
@@ -38,6 +44,8 @@ class Chrome extends React.Component {
           </div>
           <div className="main">{this.props.children}</div>
         </div>
+
+        <OpenIssuePrompt />
 
         <style jsx>{`
           .main {
