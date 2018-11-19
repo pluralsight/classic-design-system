@@ -1,3 +1,6 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+
 import core from '@pluralsight/ps-design-system-core'
 
 import {
@@ -11,7 +14,7 @@ import {
 } from '../../src/ui'
 
 const Bar = props => (
-  <div className="bar" style={props.style}>
+  <div className="bar">
     <style jsx>{`
       .bar {
         margin: ${core.layout.spacingXSmall} 0;
@@ -35,6 +38,10 @@ const Levels = props => (
   </div>
 )
 
+Levels.propTypes = {
+  children: PropTypes.node
+}
+
 const Level = props => (
   <div className="level">
     {props.children}
@@ -56,6 +63,10 @@ const Level = props => (
   </div>
 )
 
+Level.propTypes = {
+  children: PropTypes.node
+}
+
 Level.Title = props => (
   <div>
     <h3 className="title">
@@ -72,9 +83,21 @@ Level.Title = props => (
   </div>
 )
 
+Level.Title.propTypes = {
+  children: PropTypes.node
+}
+
 Level.Desc = props => <div>{props.children}</div>
 
+Level.Desc.propTypes = {
+  children: PropTypes.node
+}
+
 const LevelHeading = props => <SectionHeading>{props.children}</SectionHeading>
+
+LevelHeading.propTypes = {
+  children: PropTypes.node
+}
 
 const LevelList = props => (
   <div className="list">
@@ -88,6 +111,10 @@ const LevelList = props => (
     `}</style>
   </div>
 )
+
+LevelList.propTypes = {
+  children: PropTypes.node
+}
 
 export default withServerProps(_ => (
   <Chrome>
@@ -146,6 +173,12 @@ The Design System is used in many places.  We have a hard time keeping our eyes 
 
 ### Offer design direction
 Maybe you have a visual, interactive, or code design insight.  We’d love to chat about your ideas and see how they might fit and be used to improve the Design System.   Join [#design-system-help](slack://channel?team=pluralsight&id=design-system-help) and share.
+
+### Propose an enhancement or new pattern
+Does it belong in the Design System? Check out the new [new pattern journey](/static/img/diagrams/new-pattern-journey.png) workflow to scope whether a new pattern should be added to the Design System.
+
+![new pattern journey](/static/img/diagrams/new-pattern-journey.png)
+
 `}</Doc>
       </LevelList>
 
@@ -180,10 +213,10 @@ We’ve made special effort to make the Design System easy to get started with, 
       <LevelHeading>Create</LevelHeading>
       <Doc>{`
 ### Make a Pull Request
-There’s a lot of code that has been written, and there’s even more left to write.  It’ll be satisfying to take a look at the final product and know that you made your mark on it.  Help as big as new components or as small as a typo fix in the docs is helpful and wanted.  Become familiar with our [Contribute Code](/contribute/code) guide, and push some bits.  
+There’s a lot of code that has been written, and there’s even more left to write.  It’ll be satisfying to take a look at the final product and know that you made your mark on it.  Help as big as new components or as small as a typo fix in the docs is helpful and wanted.  Become familiar with our [Contribute Code](/contribute/code) guide, and push some bits.
 
 ### Contribute to the design group
-The design group meets together regularly to review the Style Guide and the latest designs.  The Design System is impacted by all these discussions and decisions.  Bring your best ideas and share them.  
+The design group meets together regularly to review the Style Guide and the latest designs.  The Design System is impacted by all these discussions and decisions.  Bring your best ideas and share them.
 `}</Doc>
     </Content>
   </Chrome>
