@@ -18,7 +18,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-s2h43n"
@@ -162,7 +162,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-flf7cm"
@@ -325,7 +325,7 @@ exports[`Storyshots actionBar single action 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-flf7cm"
@@ -469,7 +469,7 @@ exports[`Storyshots bonusBar only text 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-1pi4dj8"
@@ -595,7 +595,7 @@ exports[`Storyshots bonusBar some element 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-1pi4dj8"
@@ -740,7 +740,7 @@ exports[`Storyshots combo everything focusable 1`] = `
             href="http://duckduckgo.com?q=image"
           >
             <div
-              className="css-1wgk747"
+              className="css-6x74ml"
             />
           </a>
         </span>
@@ -1008,7 +1008,7 @@ exports[`Storyshots combo everything locked 1`] = `
             href="http://duckduckgo.com?q=image"
           >
             <div
-              className="css-1wgk747"
+              className="css-6x74ml"
             />
           </a>
         </span>
@@ -1317,7 +1317,7 @@ exports[`Storyshots fullOverlay link 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-kwxv2f"
@@ -1451,7 +1451,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-kwxv2f"
@@ -1604,7 +1604,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
             href="http://duckduckgo.com?q=image"
           >
             <div
-              className="css-1wgk747"
+              className="css-6x74ml"
             />
           </a>
         </span>
@@ -1753,7 +1753,7 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-9b0h8j"
@@ -1883,7 +1883,7 @@ exports[`Storyshots fullOverlay text only 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-kwxv2f"
@@ -2019,7 +2019,7 @@ exports[`Storyshots image image link 1`] = `
             href="http://duckduckgo.com"
           >
             <div
-              className="css-11sk7pq"
+              className="css-mvvhw9"
             />
           </a>
         </span>
@@ -2142,7 +2142,7 @@ exports[`Storyshots image image only 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-11sk7pq"
+          className="css-mvvhw9"
         />
       </div>
       <div
@@ -2263,7 +2263,7 @@ exports[`Storyshots metadata multiple text 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -2404,7 +2404,7 @@ exports[`Storyshots metadata single text 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -2534,7 +2534,7 @@ exports[`Storyshots metadata text link 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -2672,7 +2672,7 @@ exports[`Storyshots metadata text wrapper 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -2806,7 +2806,7 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -2987,7 +2987,7 @@ exports[`Storyshots progress done 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-268zju"
@@ -3116,7 +3116,7 @@ exports[`Storyshots progress none 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -3237,7 +3237,7 @@ exports[`Storyshots progress some 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-268zju"
@@ -3366,7 +3366,7 @@ exports[`Storyshots size large 1`] = `
         className="css-14neud7"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -3487,7 +3487,7 @@ exports[`Storyshots size medium 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -3608,7 +3608,7 @@ exports[`Storyshots size small 1`] = `
         className="css-1bnkubs"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -3729,7 +3729,7 @@ exports[`Storyshots tag long multi-word 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-1ld8yc7"
@@ -3877,7 +3877,7 @@ exports[`Storyshots tag long single word 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-1ld8yc7"
@@ -4025,7 +4025,7 @@ exports[`Storyshots tag text only 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-1ld8yc7"
@@ -4155,7 +4155,7 @@ exports[`Storyshots tag with icon 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-1ld8yc7"
@@ -4303,7 +4303,7 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -4432,7 +4432,7 @@ exports[`Storyshots title long title, title wrapper 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -4553,7 +4553,7 @@ exports[`Storyshots title text link with title wrapper 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -4682,7 +4682,7 @@ exports[`Storyshots title title wrapper 1`] = `
         className="css-1pb0z5d"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div

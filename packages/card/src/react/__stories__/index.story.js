@@ -1,34 +1,29 @@
-import addons from '@storybook/addons'
-import Button from '@pluralsight/ps-design-system-button/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
-
 import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
-import core from '@pluralsight/ps-design-system-core'
 
-import Card from '../react'
+import core from '@pluralsight/ps-design-system-core'
+import Icon from '@pluralsight/ps-design-system-icon/react'
+
+import Card from '..'
+
+const getImgSrc = ({ w = 680, h = 320, id = 42 } = {}) =>
+  `//picsum.photos/${w}/${h}?image=${id}&gravity=north`
 
 const longStringsMetaData = [
   'It is impossible to count the grand contributions of this great author',
   'Levels heretofore unknown in the battle for truth and knowledge',
   'A length of such amazing lengthitude so-as to blow the mind'
 ]
+
 const longTitle =
   'The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds'
 
-const CardWithDefaults = props => (
-  <Card
-    {...{
-      title: <Card.Title>Card Title</Card.Title>,
-      image: (
-        <Card.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      )
-    }}
-    {...props}
-  />
-)
+const CardWithDefaults = props => <Card {...props} />
+
+CardWithDefaults.defaultProps = {
+  title: <Card.Title>Card Title</Card.Title>,
+  image: <Card.Image src={getImgSrc()} />
+}
 
 const sizes = {
   [Card.sizes.small]: { width: '140px' },
@@ -41,7 +36,6 @@ const ConstrainSizeDecorator = size => storyFn => (
 
 storiesOf('combo', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .addDecorator(themeDecorator(addons))
   .add('everything locked', _ => (
     <Card
       title={
@@ -71,7 +65,7 @@ storiesOf('combo', module)
       image={
         <Card.ImageLink>
           <a href="http://duckduckgo.com?q=image">
-            <Card.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+            <Card.Image src={getImgSrc()} />
           </a>
         </Card.ImageLink>
       }
@@ -125,7 +119,7 @@ storiesOf('combo', module)
       image={
         <Card.ImageLink>
           <a href="http://duckduckgo.com?q=image">
-            <Card.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+            <Card.Image src={getImgSrc()} />
           </a>
         </Card.ImageLink>
       }
@@ -157,7 +151,6 @@ storiesOf('combo', module)
 
 storiesOf('title', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .addDecorator(themeDecorator(addons))
   .add('title wrapper', _ => (
     <CardWithDefaults title={<Card.Title>Text only</Card.Title>} />
   ))
@@ -189,10 +182,9 @@ storiesOf('title', module)
 
 storiesOf('image', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .addDecorator(themeDecorator(addons))
   .add('image only', _ => (
     <CardWithDefaults
-      image={<Card.Image src="http://lorempixel.com/400/200/sports/" />}
+      image={<Card.Image src={getImgSrc({ w: 400, h: 200 })} />}
     />
   ))
   .add('image link', _ => (
@@ -200,7 +192,7 @@ storiesOf('image', module)
       image={
         <Card.ImageLink>
           <a href="http://duckduckgo.com">
-            <Card.Image src="http://lorempixel.com/400/200/sports/" />
+            <Card.Image src={getImgSrc({ w: 400, h: 200 })} />
           </a>
         </Card.ImageLink>
       }
@@ -209,7 +201,6 @@ storiesOf('image', module)
 
 storiesOf('actionBar', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .addDecorator(themeDecorator(addons))
   .add('single action', _ => (
     <CardWithDefaults
       actionBar={[
@@ -252,7 +243,6 @@ storiesOf('actionBar', module)
 
 storiesOf('bonusBar', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .addDecorator(themeDecorator(addons))
   .add('only text', _ => <CardWithDefaults bonusBar="Wow, I'm bonus." />)
   .add('some element', _ => (
     <CardWithDefaults
@@ -262,7 +252,6 @@ storiesOf('bonusBar', module)
 
 storiesOf('fullOverlay', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .addDecorator(themeDecorator(addons))
   .add('text only', _ => (
     <CardWithDefaults
       fullOverlay={<Card.FullOverlayLink>Element</Card.FullOverlayLink>}
@@ -308,7 +297,7 @@ storiesOf('fullOverlay', module)
       image={
         <Card.ImageLink>
           <a href="http://duckduckgo.com?q=image">
-            <Card.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+            <Card.Image src={getImgSrc()} />
           </a>
         </Card.ImageLink>
       }
@@ -321,8 +310,8 @@ storiesOf('fullOverlay', module)
     />
   ))
 
-const sizeStory = storiesOf('size', module).addDecorator(themeDecorator(addons))
-Object.keys(Card.sizes).forEach(size =>
+const sizeStory = storiesOf('size', module)
+Object.values(Card.sizes).forEach(size =>
   sizeStory.add(size, _ =>
     ConstrainSizeDecorator(size)(_ => (
       <CardWithDefaults
@@ -335,7 +324,6 @@ Object.keys(Card.sizes).forEach(size =>
 
 storiesOf('metadata', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .addDecorator(themeDecorator(addons))
   .add('single text', _ => <CardWithDefaults metadata1={['Jim Cooper']} />)
   .add('multiple text', _ => (
     <CardWithDefaults metadata1={['Jim Cooper', 'Of the Far North']} />
@@ -371,14 +359,12 @@ storiesOf('metadata', module)
 
 storiesOf('progress', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .addDecorator(themeDecorator(addons))
   .add('none', _ => <CardWithDefaults progress={0} />)
   .add('some', _ => <CardWithDefaults progress={33.66667} />)
   .add('done', _ => <CardWithDefaults progress={100} />)
 
 storiesOf('tag', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .addDecorator(themeDecorator(addons))
   .add('text only', _ => (
     <CardWithDefaults tag={<Card.Tag>Channel</Card.Tag>} />
   ))
