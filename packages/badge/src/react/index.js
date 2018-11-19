@@ -2,23 +2,31 @@ import * as glamor from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+
 import css from '../css'
+import { buildCompoundClass } from '../js'
 import * as vars from '../vars'
 
 const styles = {
   badge: props => {
-    const base = '.psds-badge'
+    const { appearance, color, themeName } = props
 
-    const appearance = `.psds-badge--appearance-${props.appearance}`
-    const color = `.psds-badge--color-${props.color}`
-    const combined = appearance + color
+    // NOTE: light theme doesn't support the stroke appearance
+    //       so fallback to the dark theme
+    const isStroke = appearance === vars.appearances.stroke
+    const theme = isStroke ? themeNames.dark : themeName
 
-    return glamor.css(css[base], css[combined])
+    const baseClass = '.psds-badge'
+    const compoundClass = buildCompoundClass({ appearance, color, theme })
+
+    return glamor.css(css[baseClass], css[compoundClass])
   }
 }
 
 const Badge = props => {
-  const { appearance, color, ...filteredProps } = props
+  const { appearance, color, themeName, ...filteredProps } = props
   return <div {...styles.badge(props)} {...filteredProps} />
 }
 
@@ -38,4 +46,4 @@ Badge.defaultProps = {
 export const appearances = vars.appearances
 export const colors = vars.colors
 
-export default Badge
+export default withTheme(Badge)
