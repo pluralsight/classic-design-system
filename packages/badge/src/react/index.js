@@ -9,6 +9,8 @@ import css from '../css'
 import { buildCompoundClass } from '../js'
 import * as vars from '../vars'
 
+import { appearancePropChecker } from './prop-types'
+
 const styles = {
   badge: props => {
     const { appearance, color, themeName } = props
@@ -34,7 +36,7 @@ Badge.appearances = vars.appearances
 Badge.colors = vars.colors
 
 Badge.propTypes = {
-  appearance: PropTypes.oneOf(Object.values(vars.appearances)),
+  appearance: appearancePropChecker,
   color: PropTypes.oneOf(Object.values(vars.colors))
 }
 
