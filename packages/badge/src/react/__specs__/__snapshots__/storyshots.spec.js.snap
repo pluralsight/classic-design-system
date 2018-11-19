@@ -1,145 +1,123 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots appearance default 1`] = `
+exports[`Storyshots Badge / appearance default 1`] = `
 <div
   data-css-claeju=""
 >
   <div
-    className="css-vdc22r"
+    style={
+      Object {
+        "display": "grid",
+        "gridGap": 10,
+      }
+    }
   >
-    default Badge
+    <div>
+      <div
+        data-css-1u5tlcq=""
+      >
+        default
+         
+        gray
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-1yciybc=""
+      >
+        default
+         
+        green
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-1f89r4e=""
+      >
+        default
+         
+        yellow
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-7kwx8e=""
+      >
+        default
+         
+        red
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-mteuqv=""
+      >
+        default
+         
+        blue
+      </div>
+    </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots appearance stroke 1`] = `
+exports[`Storyshots Badge / appearance stroke 1`] = `
 <div
   data-css-claeju=""
 >
   <div
-    className="css-18uz01l"
+    style={
+      Object {
+        "display": "grid",
+        "gridGap": 10,
+      }
+    }
   >
-    stroke Badge
-  </div>
-</div>
-`;
-
-exports[`Storyshots color blue default 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    className="css-1d3h730"
-  >
-    blue default Badge
-  </div>
-</div>
-`;
-
-exports[`Storyshots color blue stroke 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    className="css-1nf2brk"
-  >
-    blue stroke Badge
-  </div>
-</div>
-`;
-
-exports[`Storyshots color gray default 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    className="css-vdc22r"
-  >
-    gray default Badge
-  </div>
-</div>
-`;
-
-exports[`Storyshots color gray stroke 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    className="css-18uz01l"
-  >
-    gray stroke Badge
-  </div>
-</div>
-`;
-
-exports[`Storyshots color green default 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    className="css-jh132n"
-  >
-    green default Badge
-  </div>
-</div>
-`;
-
-exports[`Storyshots color green stroke 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    className="css-1ijjyd4"
-  >
-    green stroke Badge
-  </div>
-</div>
-`;
-
-exports[`Storyshots color red default 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    className="css-17te2fi"
-  >
-    red default Badge
-  </div>
-</div>
-`;
-
-exports[`Storyshots color red stroke 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    className="css-1en6ax5"
-  >
-    red stroke Badge
-  </div>
-</div>
-`;
-
-exports[`Storyshots color yellow default 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    className="css-1q8b1lc"
-  >
-    yellow default Badge
-  </div>
-</div>
-`;
-
-exports[`Storyshots color yellow stroke 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    className="css-10iae72"
-  >
-    yellow stroke Badge
+    <div>
+      <div
+        data-css-dkqbo5=""
+      >
+        stroke
+         
+        gray
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-1grr7kt=""
+      >
+        stroke
+         
+        green
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-1v1fufr=""
+      >
+        stroke
+         
+        yellow
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-waxjmf=""
+      >
+        stroke
+         
+        red
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-1knqer3=""
+      >
+        stroke
+         
+        blue
+      </div>
+    </div>
   </div>
 </div>
 `;

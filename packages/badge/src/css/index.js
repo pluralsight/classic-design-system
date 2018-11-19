@@ -1,62 +1,115 @@
-import core from '@pluralsight/ps-design-system-core'
+import { transparentize } from 'polished'
 
-import * as vars from '../vars'
+import core from '@pluralsight/ps-design-system-core'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+
+import { buildCompoundClass } from '../js'
+import { appearances, colors } from '../vars'
 
 export default {
-  ['.psds-badge']: {
-    display: 'inline-block',
-    padding: `0 ${core.layout.spacingXSmall}`,
-    fontWeight: core.type.fontWeightMedium,
-    fontSize: core.type.fontSizeXSmall,
-    lineHeight: core.type.lineHeightStandard,
+  '.psds-badge': {
+    border: `1px solid transparent`,
     borderRadius: '2px',
+    display: 'inline-block',
+    fontSize: core.type.fontSizeXSmall,
+    fontWeight: core.type.fontWeightMedium,
+    lineHeight: core.type.lineHeightStandard,
+    padding: `0 ${core.layout.spacingXSmall}`,
     textTransform: 'uppercase'
   },
-  // --appearance-stroke
-  ['.psds-badge--appearance-stroke.psds-badge--color-gray']: {
-    color: core.colors.gray02,
-    border: `1px solid ${core.colors.gray02}`
-  },
-  ['.psds-badge--appearance-stroke.psds-badge--color-green']: {
-    color: core.colors.green,
-    border: `1px solid ${core.colors.green}`
-  },
-  ['.psds-badge--appearance-stroke.psds-badge--color-yellow']: {
-    color: core.colors.yellow,
-    border: `1px solid ${core.colors.yellow}`
-  },
-  ['.psds-badge--appearance-stroke.psds-badge--color-red']: {
-    color: core.colors.red,
-    border: `1px solid ${core.colors.red}`
-  },
-  ['.psds-badge--appearance-stroke.psds-badge--color-blue']: {
-    color: core.colors.blue,
-    border: `1px solid ${core.colors.blue}`
-  },
-  // --appearance-default
-  ['.psds-badge--appearance-default.psds-badge--color-gray']: {
+
+  // Default Appearance / Dark Theme
+  [buildCompoundClass({ color: colors.gray })]: {
     color: core.colors.white,
     backgroundColor: core.colors.gray03,
-    border: `1px solid ${core.colors.gray03}`
+    borderColor: core.colors.gray03
   },
-  ['.psds-badge--appearance-default.psds-badge--color-green']: {
+
+  [buildCompoundClass({ color: colors.green })]: {
     color: core.colors.white,
     backgroundColor: core.colors.green,
-    border: `1px solid ${core.colors.green}`
+    borderColor: core.colors.green
   },
-  ['.psds-badge--appearance-default.psds-badge--color-yellow']: {
+
+  [buildCompoundClass({ color: colors.yellow })]: {
     color: core.colors.black,
     backgroundColor: core.colors.yellow,
-    border: `1px solid ${core.colors.yellow}`
+    borderColor: core.colors.yellow
   },
-  ['.psds-badge--appearance-default.psds-badge--color-red']: {
+
+  [buildCompoundClass({ color: colors.red })]: {
     color: core.colors.white,
     backgroundColor: core.colors.red,
-    border: `1px solid ${core.colors.red}`
+    borderColor: core.colors.red
   },
-  ['.psds-badge--appearance-default.psds-badge--color-blue']: {
+
+  [buildCompoundClass({ color: colors.blue })]: {
     color: core.colors.white,
     backgroundColor: core.colors.blue,
-    border: `1px solid ${core.colors.blue}`
+    borderColor: core.colors.blue
+  },
+
+  // Default Appearance / Light Theme
+  [buildCompoundClass({ color: colors.gray, theme: themeNames.light })]: {
+    color: core.colors.gray04,
+    backgroundColor: transparentize(0.85, core.colors.gray03)
+  },
+
+  [buildCompoundClass({ color: colors.green, theme: themeNames.light })]: {
+    color: core.colors.gray04,
+    backgroundColor: transparentize(0.85, core.colors.green)
+  },
+
+  [buildCompoundClass({ color: colors.yellow, theme: themeNames.light })]: {
+    color: core.colors.gray04,
+    backgroundColor: transparentize(0.85, core.colors.yellow)
+  },
+
+  [buildCompoundClass({ color: colors.red, theme: themeNames.light })]: {
+    color: core.colors.gray04,
+    backgroundColor: transparentize(0.85, core.colors.red)
+  },
+
+  [buildCompoundClass({ color: colors.blue, theme: themeNames.light })]: {
+    color: core.colors.gray04,
+    backgroundColor: transparentize(0.85, core.colors.blue)
+  },
+
+  // Stroke Appearance / Dark Theme
+  [buildCompoundClass({
+    appearance: appearances.stroke,
+    color: colors.gray
+  })]: {
+    color: core.colors.gray02,
+    borderColor: core.colors.gray02
+  },
+
+  [buildCompoundClass({
+    appearance: appearances.stroke,
+    color: colors.green
+  })]: {
+    color: core.colors.green,
+    borderColor: core.colors.green
+  },
+
+  [buildCompoundClass({
+    appearance: appearances.stroke,
+    color: colors.yellow
+  })]: {
+    color: core.colors.yellow,
+    borderColor: core.colors.yellow
+  },
+
+  [buildCompoundClass({ appearance: appearances.stroke, color: colors.red })]: {
+    color: core.colors.red,
+    borderColor: core.colors.red
+  },
+
+  [buildCompoundClass({
+    appearance: appearances.stroke,
+    color: colors.blue
+  })]: {
+    color: core.colors.blue,
+    borderColor: core.colors.blue
   }
 }
