@@ -1,3 +1,4 @@
+import React from 'react'
 import Badge from '@pluralsight/ps-design-system-badge/react'
 
 import {
@@ -5,8 +6,6 @@ import {
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
@@ -54,10 +53,13 @@ export default withServerProps(_ => (
       />
 
       <SectionHeading>Appearance</SectionHeading>
-      <P>In either solid or stroked styles.</P>
+      <P>
+        In either solid or stroked styles. The stroke appearance should not be
+        used with the light theme
+      </P>
       <Example.React
         includes={{ Badge }}
-        codes={Object.keys(Badge.appearances).map(
+        codes={Object.values(Badge.appearances).map(
           a => `<Badge appearance={Badge.appearances.${a}}>Badge</Badge>`
         )}
       />
@@ -66,7 +68,9 @@ export default withServerProps(_ => (
       <P>Colors come from the Design System. Semantics come from your heart.</P>
       <Example.React
         includes={{ Badge }}
-        codes={Object.keys(Badge.colors).map(
+        themeToggle
+        orient="vertical"
+        codes={Object.values(Badge.colors).map(
           color => `<Badge color={Badge.colors.${color}}>Badge</Badge>`
         )}
       />
