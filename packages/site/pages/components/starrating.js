@@ -17,8 +17,8 @@ import {
 
 export default withServerProps(_ => (
   <Chrome>
-    <Content title="StarRating">
-      <PageHeading packageName="starrating">StarRating</PageHeading>
+    <Content title="Star Rating">
+      <PageHeading packageName="starrating">Star Rating</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -72,6 +72,17 @@ export default withServerProps(_ => (
         Mode is determined by the presence of the{' '}
         <Text.Code>onChange</Text.Code> prop. When a function is provided the
         component will become interactive.
+      </P>
+      <Example.React
+        themeToggle
+        includes={{ StarRating }}
+        codes={[
+          `<StarRating value={null} onChange={val => alert("The new value is: " + val)} />`
+        ]}
+      />
+
+      <P>
+        If a value exists, the component may still be interactive on mouse hover
       </P>
       <Example.React
         themeToggle

@@ -49,14 +49,9 @@ export default {
     ...resetButton,
     lineHeight: 0
   },
-  [`${BASE_CLASSNAME}__star--active`]: {
-    color: core.colors.yellow
-  },
-  [`${BASE_CLASSNAME}__star--interactive`]: {
-    cursor: 'pointer'
-  },
+
   [`${BASE_CLASSNAME}__star--theme-${themeNames.dark}`]: {
-    color: core.colors.gray03
+    color: core.colors.gray04
   },
   [`${BASE_CLASSNAME}__star--theme-${themeNames.light}`]: {
     color: core.colors.gray01
@@ -64,10 +59,20 @@ export default {
 
   [`${BASE_CLASSNAME}__star__half__secondary`]: {},
   [`${BASE_CLASSNAME}__star__half__secondary--theme-${themeNames.dark}`]: {
-    color: core.colors.gray03
+    color: core.colors.gray04
   },
   [`${BASE_CLASSNAME}__star__half__secondary--theme-${themeNames.light}`]: {
     color: core.colors.gray01
+  },
+
+  [`${BASE_CLASSNAME}__star--active`]: {
+    color: core.colors.yellow
+  },
+  [`${BASE_CLASSNAME}__star--bright`]: {
+    color: core.colors.gray02
+  },
+  [`${BASE_CLASSNAME}__star--interactive`]: {
+    cursor: 'pointer'
   },
 
   [`${BASE_CLASSNAME}__screen-reader-input`]: {

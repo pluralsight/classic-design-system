@@ -18,6 +18,7 @@ const styles = {
     glamor.css(
       css[`${BASE_CLASSNAME}__star`],
       css[`${BASE_CLASSNAME}__star--theme-${props.themeName}`],
+      props.bright && css[`${BASE_CLASSNAME}__star--bright`],
       props.active && css[`${BASE_CLASSNAME}__star--active`],
       props.interactive && css[`${BASE_CLASSNAME}__star--interactive`]
     ),
@@ -103,12 +104,12 @@ class Star extends React.PureComponent {
       interactive,
       onEnter,
       onLeave,
-      size,
       themeName,
       ...filteredProps
     } = this.props
 
     const Tag = interactive ? 'button' : 'span'
+    const iconSize = Icon.sizes.small
 
     return (
       <Tag
@@ -123,23 +124,25 @@ class Star extends React.PureComponent {
         onMouseLeave={this.handleLeave}
       >
         {appearance === APPEARANCES.full && (
-          <Icon id={Icon.ids.starFill} size={size} />
+          <Icon id={Icon.ids.starFill} size={iconSize} />
         )}
 
         {appearance === APPEARANCES.empty && (
-          <Icon id={Icon.ids.star} size={size} />
+          <Icon id={Icon.ids.star} size={iconSize} />
         )}
 
         {appearance === APPEARANCES.half && (
-          <HalfStarIcon size={size} themeName={themeName} />
+          <HalfStarIcon size={iconSize} themeName={themeName} />
         )}
       </Tag>
     )
   }
 }
+
 Star.propTypes = {
-  active: PropTypes.bool.isRequired,
+  active: PropTypes.bool,
   appearance: PropTypes.oneOf(Object.values(APPEARANCES)).isRequired,
+  bright: PropTypes.bool,
   index: PropTypes.number.isRequired,
   interactive: PropTypes.bool,
   onClick: PropTypes.func,
@@ -149,8 +152,9 @@ Star.propTypes = {
 }
 
 Star.defaultProps = {
-  interactive: false,
-  size: Icon.sizes.xsmall
+  active: false,
+  bright: false,
+  interactive: false
 }
 
 Star.appearances = APPEARANCES

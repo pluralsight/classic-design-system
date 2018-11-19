@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.1.15...@pluralsight/ps-design-system-site@11.2.0) (2018-11-16)
+
+
+### Features
+
+* **site:** add open issue button ([d6cf281](https://github.com/pluralsight/design-system/commit/d6cf281))
+
+
+
+
+
 ## [11.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.1.14...@pluralsight/ps-design-system-site@11.1.15) (2018-11-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site
