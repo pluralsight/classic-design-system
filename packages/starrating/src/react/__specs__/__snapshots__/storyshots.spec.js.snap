@@ -223,12 +223,12 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1h6ussv=""
-            href="#psds-starrating__half-star__star"
+            data-css-1jdz598=""
+            xlinkHref="#psds-starrating__half-star__star"
           />
           <use
-            href="#psds-starrating__half-star__star"
             mask="url(#psds-starrating__half-star__maskHalf)"
+            xlinkHref="#psds-starrating__half-star__star"
           />
         </svg>
       </div>
@@ -596,12 +596,12 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1h6ussv=""
-            href="#psds-starrating__half-star__star"
+            data-css-1jdz598=""
+            xlinkHref="#psds-starrating__half-star__star"
           />
           <use
-            href="#psds-starrating__half-star__star"
             mask="url(#psds-starrating__half-star__maskHalf)"
+            xlinkHref="#psds-starrating__half-star__star"
           />
         </svg>
       </div>
@@ -969,12 +969,12 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1h6ussv=""
-            href="#psds-starrating__half-star__star"
+            data-css-1jdz598=""
+            xlinkHref="#psds-starrating__half-star__star"
           />
           <use
-            href="#psds-starrating__half-star__star"
             mask="url(#psds-starrating__half-star__maskHalf)"
+            xlinkHref="#psds-starrating__half-star__star"
           />
         </svg>
       </div>
@@ -1342,12 +1342,12 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1h6ussv=""
-            href="#psds-starrating__half-star__star"
+            data-css-1jdz598=""
+            xlinkHref="#psds-starrating__half-star__star"
           />
           <use
-            href="#psds-starrating__half-star__star"
             mask="url(#psds-starrating__half-star__maskHalf)"
+            xlinkHref="#psds-starrating__half-star__star"
           />
         </svg>
       </div>
@@ -1715,12 +1715,12 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1h6ussv=""
-            href="#psds-starrating__half-star__star"
+            data-css-1jdz598=""
+            xlinkHref="#psds-starrating__half-star__star"
           />
           <use
-            href="#psds-starrating__half-star__star"
             mask="url(#psds-starrating__half-star__maskHalf)"
+            xlinkHref="#psds-starrating__half-star__star"
           />
         </svg>
       </div>
@@ -2408,12 +2408,12 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1h6ussv=""
-            href="#psds-starrating__half-star__star"
+            data-css-1jdz598=""
+            xlinkHref="#psds-starrating__half-star__star"
           />
           <use
-            href="#psds-starrating__half-star__star"
             mask="url(#psds-starrating__half-star__maskHalf)"
+            xlinkHref="#psds-starrating__half-star__star"
           />
         </svg>
       </div>
@@ -2747,12 +2747,12 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1h6ussv=""
-            href="#psds-starrating__half-star__star"
+            data-css-1jdz598=""
+            xlinkHref="#psds-starrating__half-star__star"
           />
           <use
-            href="#psds-starrating__half-star__star"
             mask="url(#psds-starrating__half-star__maskHalf)"
+            xlinkHref="#psds-starrating__half-star__star"
           />
         </svg>
       </div>
@@ -3086,12 +3086,12 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1h6ussv=""
-            href="#psds-starrating__half-star__star"
+            data-css-1jdz598=""
+            xlinkHref="#psds-starrating__half-star__star"
           />
           <use
-            href="#psds-starrating__half-star__star"
             mask="url(#psds-starrating__half-star__maskHalf)"
+            xlinkHref="#psds-starrating__half-star__star"
           />
         </svg>
       </div>
@@ -3425,12 +3425,12 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1h6ussv=""
-            href="#psds-starrating__half-star__star"
+            data-css-1jdz598=""
+            xlinkHref="#psds-starrating__half-star__star"
           />
           <use
-            href="#psds-starrating__half-star__star"
             mask="url(#psds-starrating__half-star__maskHalf)"
+            xlinkHref="#psds-starrating__half-star__star"
           />
         </svg>
       </div>
@@ -3764,12 +3764,12 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1h6ussv=""
-            href="#psds-starrating__half-star__star"
+            data-css-1jdz598=""
+            xlinkHref="#psds-starrating__half-star__star"
           />
           <use
-            href="#psds-starrating__half-star__star"
             mask="url(#psds-starrating__half-star__maskHalf)"
+            xlinkHref="#psds-starrating__half-star__star"
           />
         </svg>
       </div>
@@ -4304,12 +4304,12 @@ exports[`Storyshots StarRating / rounding to half integer values 1.7 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1h6ussv=""
-            href="#psds-starrating__half-star__star"
+            data-css-1jdz598=""
+            xlinkHref="#psds-starrating__half-star__star"
           />
           <use
-            href="#psds-starrating__half-star__star"
             mask="url(#psds-starrating__half-star__maskHalf)"
+            xlinkHref="#psds-starrating__half-star__star"
           />
         </svg>
       </div>
@@ -4839,12 +4839,12 @@ exports[`Storyshots StarRating / rounding to half integer values 2.4 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1h6ussv=""
-            href="#psds-starrating__half-star__star"
+            data-css-1jdz598=""
+            xlinkHref="#psds-starrating__half-star__star"
           />
           <use
-            href="#psds-starrating__half-star__star"
             mask="url(#psds-starrating__half-star__maskHalf)"
+            xlinkHref="#psds-starrating__half-star__star"
           />
         </svg>
       </div>
@@ -5024,12 +5024,12 @@ exports[`Storyshots StarRating / rounding to half integer values 2.6 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1h6ussv=""
-            href="#psds-starrating__half-star__star"
+            data-css-1jdz598=""
+            xlinkHref="#psds-starrating__half-star__star"
           />
           <use
-            href="#psds-starrating__half-star__star"
             mask="url(#psds-starrating__half-star__maskHalf)"
+            xlinkHref="#psds-starrating__half-star__star"
           />
         </svg>
       </div>

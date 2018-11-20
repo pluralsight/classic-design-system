@@ -59,10 +59,12 @@ export default {
 
   [`${BASE_CLASSNAME}__star__half__secondary`]: {},
   [`${BASE_CLASSNAME}__star__half__secondary--theme-${themeNames.dark}`]: {
-    color: core.colors.gray04
+    color: core.colors.gray04,
+    fill: core.colors.gray04 // safari needs this
   },
   [`${BASE_CLASSNAME}__star__half__secondary--theme-${themeNames.light}`]: {
-    color: core.colors.gray01
+    color: core.colors.gray01,
+    fill: core.colors.gray01 // safari needs this
   },
 
   [`${BASE_CLASSNAME}__star--active`]: {
