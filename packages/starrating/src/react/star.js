@@ -51,11 +51,12 @@ const HalfStarIcon = props => {
         </defs>
 
         <use
-          href="#psds-starrating__half-star__star"
+          xlinkHref="#psds-starrating__half-star__star"
           {...styles.halfStarSecondary(props)}
         />
+
         <use
-          href="#psds-starrating__half-star__star"
+          xlinkHref="#psds-starrating__half-star__star"
           mask="url(#psds-starrating__half-star__maskHalf)"
         />
       </svg>
