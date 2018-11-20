@@ -12,19 +12,24 @@ exports[`Storyshots actionBar locked visible 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
         <div
-          className="css-s2h43n"
+          data-css-1di4zm0=""
         >
           <button
-            className="css-168lizi"
+            data-css-z6g59z=""
             title="Bookmark"
           >
             <div
@@ -45,10 +50,10 @@ exports[`Storyshots actionBar locked visible 1`] = `
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -156,19 +161,24 @@ exports[`Storyshots actionBar multiple actions 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
         <div
-          className="css-flf7cm"
+          data-css-1ifisgx=""
         >
           <button
-            className="css-168lizi"
+            data-css-z6g59z=""
             title="Bookmark"
           >
             <div
@@ -187,7 +197,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
             </div>
           </button>
           <button
-            className="css-168lizi"
+            data-css-z6g59z=""
             title="More"
           >
             <div
@@ -208,10 +218,10 @@ exports[`Storyshots actionBar multiple actions 1`] = `
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -319,19 +329,24 @@ exports[`Storyshots actionBar single action 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
         <div
-          className="css-flf7cm"
+          data-css-1ifisgx=""
         >
           <button
-            className="css-168lizi"
+            data-css-z6g59z=""
             title="Bookmark"
           >
             <div
@@ -352,10 +367,10 @@ exports[`Storyshots actionBar single action 1`] = `
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -463,25 +478,30 @@ exports[`Storyshots bonusBar only text 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
         <div
-          className="css-1pi4dj8"
+          data-css-1pi4dj8=""
         >
           Wow, I'm bonus.
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -589,16 +609,21 @@ exports[`Storyshots bonusBar some element 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
         <div
-          className="css-1pi4dj8"
+          data-css-1pi4dj8=""
         >
           <div
             className="css-7wkwcf"
@@ -617,10 +642,10 @@ exports[`Storyshots bonusBar some element 1`] = `
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -728,27 +753,32 @@ exports[`Storyshots combo everything focusable 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <span
-          className="css-15yq56v"
+          data-css-15yq56v=""
         >
           <a
             href="http://duckduckgo.com?q=image"
           >
             <div
-              className="css-6x74ml"
+              data-css-i7gti2=""
+              style={
+                Object {
+                  "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+                }
+              }
             />
           </a>
         </span>
         <div
-          className="css-kwxv2f"
+          data-css-senzm1=""
         >
           <span
-            className="css-yvsvuk"
+            data-css-10wozz3=""
           >
             <a
               href="http://duckduckgo.com?q=overlay"
@@ -771,10 +801,10 @@ exports[`Storyshots combo everything focusable 1`] = `
           </span>
         </div>
         <div
-          className="css-1827316"
+          data-css-acm057=""
         >
           <button
-            className="css-168lizi"
+            data-css-z6g59z=""
             title="Bookmark"
           >
             <div
@@ -793,7 +823,7 @@ exports[`Storyshots combo everything focusable 1`] = `
             </div>
           </button>
           <button
-            className="css-168lizi"
+            data-css-z6g59z=""
             title="Settings"
           >
             <div
@@ -812,7 +842,7 @@ exports[`Storyshots combo everything focusable 1`] = `
             </div>
           </button>
           <button
-            className="css-168lizi"
+            data-css-z6g59z=""
             title="More"
           >
             <div
@@ -832,10 +862,10 @@ exports[`Storyshots combo everything focusable 1`] = `
           </button>
         </div>
         <div
-          className="css-1ld8yc7"
+          data-css-1ld8yc7=""
         >
           <div
-            className="css-1pif58i"
+            data-css-1pif58i=""
           >
             <div
               className="css-12f5sv2"
@@ -853,23 +883,23 @@ exports[`Storyshots combo everything focusable 1`] = `
             </div>
           </div>
           <span
-            className="css-tz46pd"
+            data-css-tz46pd=""
           >
             Path
           </span>
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <span
-          className="css-1kcq1x5"
+          data-css-1ublh7e=""
         >
           <a
             href="http://duckduckgo.com?q=title"
           >
             <div
-              className="css-1tlmf72"
+              data-css-1tlmf72=""
             >
               <div
                 className=""
@@ -963,13 +993,13 @@ exports[`Storyshots combo everything focusable 1`] = `
         </span>
       </div>
       <div
-        className="css-bcrrqv"
+        data-css-bcrrqv=""
       >
         <span
-          className="css-1tz10dh"
+          data-css-1tz10dh=""
         >
           <span
-            className="css-1kcq1x5"
+            data-css-1ublh7e=""
           >
             <a
               href="http://duckduckgo.com/?q=jaketrent"
@@ -996,27 +1026,32 @@ exports[`Storyshots combo everything locked 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <span
-          className="css-15yq56v"
+          data-css-15yq56v=""
         >
           <a
             href="http://duckduckgo.com?q=image"
           >
             <div
-              className="css-6x74ml"
+              data-css-i7gti2=""
+              style={
+                Object {
+                  "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+                }
+              }
             />
           </a>
         </span>
         <div
-          className="css-9b0h8j"
+          data-css-116u4ke=""
         >
           <span
-            className="css-yvsvuk"
+            data-css-10wozz3=""
           >
             <a
               href="http://duckduckgo.com?q=overlay"
@@ -1039,10 +1074,10 @@ exports[`Storyshots combo everything locked 1`] = `
           </span>
         </div>
         <div
-          className="css-s2h43n"
+          data-css-1di4zm0=""
         >
           <button
-            className="css-168lizi"
+            data-css-z6g59z=""
             title="Bookmark"
           >
             <div
@@ -1061,7 +1096,7 @@ exports[`Storyshots combo everything locked 1`] = `
             </div>
           </button>
           <button
-            className="css-168lizi"
+            data-css-z6g59z=""
             title="Settings"
           >
             <div
@@ -1080,7 +1115,7 @@ exports[`Storyshots combo everything locked 1`] = `
             </div>
           </button>
           <button
-            className="css-168lizi"
+            data-css-z6g59z=""
             title="More"
           >
             <div
@@ -1100,10 +1135,10 @@ exports[`Storyshots combo everything locked 1`] = `
           </button>
         </div>
         <div
-          className="css-1ld8yc7"
+          data-css-1ld8yc7=""
         >
           <div
-            className="css-1pif58i"
+            data-css-1pif58i=""
           >
             <div
               className="css-12f5sv2"
@@ -1121,23 +1156,23 @@ exports[`Storyshots combo everything locked 1`] = `
             </div>
           </div>
           <span
-            className="css-tz46pd"
+            data-css-tz46pd=""
           >
             Path
           </span>
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <span
-          className="css-1kcq1x5"
+          data-css-1ublh7e=""
         >
           <a
             href="http://duckduckgo.com?q=title"
           >
             <div
-              className="css-1tlmf72"
+              data-css-1tlmf72=""
             >
               <div
                 className=""
@@ -1231,13 +1266,13 @@ exports[`Storyshots combo everything locked 1`] = `
         </span>
       </div>
       <div
-        className="css-bcrrqv"
+        data-css-bcrrqv=""
       >
         <span
-          className="css-1tz10dh"
+          data-css-1tz10dh=""
         >
           <span
-            className="css-1kcq1x5"
+            data-css-1ublh7e=""
           >
             <a
               href="http://duckduckgo.com/?q=jaketrent"
@@ -1248,15 +1283,15 @@ exports[`Storyshots combo everything locked 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="css-kykfz1"
+          data-css-kykfz1=""
         >
           ·
         </span>
         <span
-          className="css-1tz10dh"
+          data-css-1tz10dh=""
         >
           <span
-            className="css-1kcq1x5"
+            data-css-1ublh7e=""
           >
             <a
               href="http://duckduckgo.com/?q=jaketrent"
@@ -1267,15 +1302,15 @@ exports[`Storyshots combo everything locked 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="css-kykfz1"
+          data-css-kykfz1=""
         >
           ·
         </span>
         <span
-          className="css-1tz10dh"
+          data-css-1tz10dh=""
         >
           <span
-            className="css-1kcq1x5"
+            data-css-1ublh7e=""
           >
             <a
               href="http://duckduckgo.com/?q=jaketrent"
@@ -1286,10 +1321,10 @@ exports[`Storyshots combo everything locked 1`] = `
         </span>
       </div>
       <div
-        className="css-bcrrqv"
+        data-css-bcrrqv=""
       >
         <span
-          className="css-1tz10dh"
+          data-css-1tz10dh=""
         >
           Goodness me!
         </span>
@@ -1311,19 +1346,24 @@ exports[`Storyshots fullOverlay link 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
         <div
-          className="css-kwxv2f"
+          data-css-senzm1=""
         >
           <span
-            className="css-yvsvuk"
+            data-css-10wozz3=""
           >
             <a
               href="http://duckduckgo.com?q=overlay"
@@ -1334,10 +1374,10 @@ exports[`Storyshots fullOverlay link 1`] = `
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -1445,19 +1485,24 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
         <div
-          className="css-kwxv2f"
+          data-css-senzm1=""
         >
           <span
-            className="css-yvsvuk"
+            data-css-10wozz3=""
           >
             <a
               href="http://duckduckgo.com?q=overlay"
@@ -1481,10 +1526,10 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -1592,27 +1637,32 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <span
-          className="css-15yq56v"
+          data-css-15yq56v=""
         >
           <a
             href="http://duckduckgo.com?q=image"
           >
             <div
-              className="css-6x74ml"
+              data-css-i7gti2=""
+              style={
+                Object {
+                  "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+                }
+              }
             />
           </a>
         </span>
         <div
-          className="css-kwxv2f"
+          data-css-senzm1=""
         >
           <span
-            className="css-yvsvuk"
+            data-css-10wozz3=""
           >
             <a
               href="http://duckduckgo.com?q=overlay"
@@ -1636,10 +1686,10 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -1747,29 +1797,34 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
         <div
-          className="css-9b0h8j"
+          data-css-116u4ke=""
         >
           <span
-            className="css-yvsvuk"
+            data-css-10wozz3=""
           >
             Element
           </span>
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -1877,29 +1932,34 @@ exports[`Storyshots fullOverlay text only 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
         <div
-          className="css-kwxv2f"
+          data-css-senzm1=""
         >
           <span
-            className="css-yvsvuk"
+            data-css-10wozz3=""
           >
             Element
           </span>
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -2007,28 +2067,33 @@ exports[`Storyshots image image link 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <span
-          className="css-15yq56v"
+          data-css-15yq56v=""
         >
           <a
             href="http://duckduckgo.com"
           >
             <div
-              className="css-mvvhw9"
+              data-css-i7gti2=""
+              style={
+                Object {
+                  "backgroundImage": "url(//picsum.photos/400/200?image=42&gravity=north)",
+                }
+              }
             />
           </a>
         </span>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -2136,20 +2201,25 @@ exports[`Storyshots image image only 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-mvvhw9"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/400/200?image=42&gravity=north)",
+            }
+          }
         />
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -2257,20 +2327,25 @@ exports[`Storyshots metadata multiple text 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -2362,21 +2437,21 @@ exports[`Storyshots metadata multiple text 1`] = `
         </div>
       </div>
       <div
-        className="css-bcrrqv"
+        data-css-bcrrqv=""
       >
         <span
-          className="css-1tz10dh"
+          data-css-1tz10dh=""
         >
           Jim Cooper
         </span>
         <span
           aria-hidden={true}
-          className="css-kykfz1"
+          data-css-kykfz1=""
         >
           ·
         </span>
         <span
-          className="css-1tz10dh"
+          data-css-1tz10dh=""
         >
           Of the Far North
         </span>
@@ -2398,20 +2473,25 @@ exports[`Storyshots metadata single text 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -2503,10 +2583,10 @@ exports[`Storyshots metadata single text 1`] = `
         </div>
       </div>
       <div
-        className="css-bcrrqv"
+        data-css-bcrrqv=""
       >
         <span
-          className="css-1tz10dh"
+          data-css-1tz10dh=""
         >
           Jim Cooper
         </span>
@@ -2528,20 +2608,25 @@ exports[`Storyshots metadata text link 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -2633,13 +2718,13 @@ exports[`Storyshots metadata text link 1`] = `
         </div>
       </div>
       <div
-        className="css-bcrrqv"
+        data-css-bcrrqv=""
       >
         <span
-          className="css-1tz10dh"
+          data-css-1tz10dh=""
         >
           <span
-            className="css-1kcq1x5"
+            data-css-1ublh7e=""
           >
             <a
               href="http://duckduckgo.com?q=jim%20cooper"
@@ -2666,20 +2751,25 @@ exports[`Storyshots metadata text wrapper 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -2771,14 +2861,12 @@ exports[`Storyshots metadata text wrapper 1`] = `
         </div>
       </div>
       <div
-        className="css-bcrrqv"
+        data-css-bcrrqv=""
       >
         <span
-          className="css-1tz10dh"
+          data-css-1tz10dh=""
         >
-          <span
-            className="css-nil"
-          >
+          <span>
             Jim Cooper
           </span>
         </span>
@@ -2800,20 +2888,25 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -2905,13 +2998,13 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         </div>
       </div>
       <div
-        className="css-bcrrqv"
+        data-css-bcrrqv=""
       >
         <span
-          className="css-1tz10dh"
+          data-css-1tz10dh=""
         >
           <span
-            className="css-1kcq1x5"
+            data-css-1ublh7e=""
           >
             <a
               href="http://duckduckgo.com?q=jim%20cooper"
@@ -2922,13 +3015,13 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         </span>
       </div>
       <div
-        className="css-bcrrqv"
+        data-css-bcrrqv=""
       >
         <span
-          className="css-1tz10dh"
+          data-css-1tz10dh=""
         >
           <span
-            className="css-1kcq1x5"
+            data-css-1ublh7e=""
           >
             <a
               href="http://duckduckgo.com?q=react"
@@ -2939,27 +3032,25 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="css-kykfz1"
+          data-css-kykfz1=""
         >
           ·
         </span>
         <span
-          className="css-1tz10dh"
+          data-css-1tz10dh=""
         >
           Intermediate
         </span>
         <span
           aria-hidden={true}
-          className="css-kykfz1"
+          data-css-kykfz1=""
         >
           ·
         </span>
         <span
-          className="css-1tz10dh"
+          data-css-1tz10dh=""
         >
-          <span
-            className="css-nil"
-          >
+          <span>
             90 mins
           </span>
         </span>
@@ -2981,28 +3072,33 @@ exports[`Storyshots progress done 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
         <div
-          className="css-268zju"
+          data-css-268zju=""
         >
           <div
             aria-label="100% complete"
-            className="css-1qb9ko2"
+            data-css-1qb9ko2=""
           />
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -3110,20 +3206,25 @@ exports[`Storyshots progress none 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -3231,28 +3332,33 @@ exports[`Storyshots progress some 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
         <div
-          className="css-268zju"
+          data-css-268zju=""
         >
           <div
             aria-label="34% complete"
-            className="css-59crt4"
+            data-css-59crt4=""
           />
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -3360,20 +3466,25 @@ exports[`Storyshots size large 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-14neud7"
+        data-css-1f6j1kc=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
       </div>
       <div
-        className="css-fvo1sh"
+        data-css-fvo1sh=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -3481,20 +3592,25 @@ exports[`Storyshots size medium 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -3602,20 +3718,25 @@ exports[`Storyshots size small 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1bnkubs"
+        data-css-1tphk30=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
       </div>
       <div
-        className="css-pzomq8"
+        data-css-pzomq8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -3723,19 +3844,24 @@ exports[`Storyshots tag long multi-word 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
         <div
-          className="css-1ld8yc7"
+          data-css-1ld8yc7=""
         >
           <div
-            className="css-1pif58i"
+            data-css-1pif58i=""
           >
             <div
               className="css-12f5sv2"
@@ -3753,17 +3879,17 @@ exports[`Storyshots tag long multi-word 1`] = `
             </div>
           </div>
           <span
-            className="css-tz46pd"
+            data-css-tz46pd=""
           >
             Channel Channel Channel Channel Channel Channel Channel Channel Channel
           </span>
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -3871,19 +3997,24 @@ exports[`Storyshots tag long single word 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
         <div
-          className="css-1ld8yc7"
+          data-css-1ld8yc7=""
         >
           <div
-            className="css-1pif58i"
+            data-css-1pif58i=""
           >
             <div
               className="css-12f5sv2"
@@ -3901,17 +4032,17 @@ exports[`Storyshots tag long single word 1`] = `
             </div>
           </div>
           <span
-            className="css-tz46pd"
+            data-css-tz46pd=""
           >
             ChannelChannelChannelChannelChannelChannelChannelChannelChannelChannelChannel
           </span>
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -4019,29 +4150,34 @@ exports[`Storyshots tag text only 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
         <div
-          className="css-1ld8yc7"
+          data-css-1ld8yc7=""
         >
           <span
-            className="css-tz46pd"
+            data-css-tz46pd=""
           >
             Channel
           </span>
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -4149,19 +4285,24 @@ exports[`Storyshots tag with icon 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
         <div
-          className="css-1ld8yc7"
+          data-css-1ld8yc7=""
         >
           <div
-            className="css-1pif58i"
+            data-css-1pif58i=""
           >
             <div
               className="css-12f5sv2"
@@ -4179,17 +4320,17 @@ exports[`Storyshots tag with icon 1`] = `
             </div>
           </div>
           <span
-            className="css-tz46pd"
+            data-css-tz46pd=""
           >
             Channel
           </span>
         </div>
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -4297,26 +4438,31 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <span
-          className="css-1kcq1x5"
+          data-css-1ublh7e=""
         >
           <a
             href="http://duckduckgo.com?q=text"
           >
             <div
-              className="css-1tlmf72"
+              data-css-1tlmf72=""
             >
               <div
                 className=""
@@ -4426,20 +4572,25 @@ exports[`Storyshots title long title, title wrapper 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""
@@ -4547,26 +4698,31 @@ exports[`Storyshots title text link with title wrapper 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <span
-          className="css-1kcq1x5"
+          data-css-1ublh7e=""
         >
           <a
             href="http://duckduckgo.com?q=text"
           >
             <div
-              className="css-1tlmf72"
+              data-css-1tlmf72=""
             >
               <div
                 className=""
@@ -4676,20 +4832,25 @@ exports[`Storyshots title title wrapper 1`] = `
     }
   >
     <div
-      className="css-1ybvkp1"
+      data-css-1ybvkp1=""
     >
       <div
-        className="css-1pb0z5d"
+        data-css-x1twjb=""
       >
         <div
-          className="css-6x74ml"
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
         />
       </div>
       <div
-        className="css-piydn8"
+        data-css-piydn8=""
       >
         <div
-          className="css-1tlmf72"
+          data-css-1tlmf72=""
         >
           <div
             className=""

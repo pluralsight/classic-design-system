@@ -1,122 +1,98 @@
-import glamorous from 'glamorous'
-import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
 import polyfillFocusWithin from 'focus-within'
+import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Shiitake from 'shiitake'
 
+import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
+
 import css from '../css'
+import { toPercentageString } from '../js'
 import * as vars from '../vars'
+
+import withPropFilter from './with-prop-filter'
 
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
-const TextLink = glamorous.span({
-  ...css['.psds-card__text-link'],
-  '& a': css['.psds-card__text-link a'],
-  '& a:hover': css['.psds-card__text-link a:hover'],
-  '& a:active': css['.psds-card__text-link a:active']
-})
-TextLink.displayName = 'Card.TextLink'
+const styles = {
+  actionBar: ({ actionBarVisible: visible, fullOverlay }) =>
+    glamor.css({
+      ...css['.psds-card__action-bar'],
+      ...(fullOverlay &&
+        !visible &&
+        css[
+          '.psds-card__action-bar--fullOverlay.psds-card__action-bar--no-actionBarVisible'
+        ]),
+      ...(visible && css['.psds-card__action-bar--actionBarVisible'])
+    }),
+  actionButton: ({ disabled }) =>
+    glamor.css({
+      ...css['.psds-card__action-bar__button'],
+      ...(disabled && css['.psds-card__action-bar__button--disabled'])
+    }),
+  bonusBar: () => glamor.css(css['.psds-card__bonus-bar']),
+  card: () => glamor.css(css['.psds-card']),
+  fullOverlay: ({ fullOverlayVisible: visible }) =>
+    glamor.css({
+      ...css['.psds-card__full-overlay'],
+      ...(visible && css['.psds-card__full-overlay--fullOverlayVisible'])
+    }),
+  fullOverlayLink: () => glamor.css(css['.psds-card__full-overlay-link']),
+  image: () => glamor.css(css['.psds-card__image']),
+  imageLink: () => glamor.css(css['.psds-card__image-link']),
+  metadata: ({ size }) =>
+    glamor.css({
+      ...css['.psds-card__metadata'],
+      ...css[`.psds-card__metadata--size-${size}`]
+    }),
+  metadataDatum: ({ size }) => glamor.css(css['.psds-card__metadata__datum']),
+  metadataDot: ({ size }) => glamor.css(css['.psds-card__metadata__dot']),
+  overlays: ({ size }) =>
+    glamor.css({
+      ...css['.psds-card__overlays'],
+      ...css[`.psds-card__overlays--size-${size}`]
+    }),
+  progress: () => glamor.css(css['.psds-card__progress']),
+  progressBar: ({ progress }) => {
+    const percent = toPercentageString(progress)
+    const isCompleted = percent === '100%'
 
-const Text = glamorous.span()
-Text.displayName = 'Card.Text'
-
-const ImageLink = glamorous.span({
-  ...css['.psds-card__image-link'],
-  '& a': css['.psds-card__image-link a']
-})
-ImageLink.displayName = 'Row.ImageLink'
-
-const ImageDiv = glamorous.div(css['.psds-actionmenu__image'])
-
-const Image = props => (
-  <ImageDiv css={{ backgroundImage: `url(${props.src})` }} />
-)
-Image.displayName = 'Row.Image'
-Image.propTypes = {
-  src: PropTypes.string.isRequired
+    return glamor.css({
+      ...css['.psds-card__progress__bar'],
+      ...(isCompleted && css['.psds-card__progress__bar--complete']),
+      width: percent
+    })
+  },
+  tag: () => glamor.css(css['.psds-card__tag']),
+  tagIcon: () => glamor.css(css['.psds-card__tag__icon']),
+  tagText: () => glamor.css(css['.psds-card__tag__text']),
+  textLink: () => glamor.css(css['.psds-card__text-link']),
+  title: () => glamor.css(css['.psds-card__title']),
+  titleContainer: ({ size }) =>
+    glamor.css(css[`.psds-card__title-container--size-${size}`])
 }
 
-const FullOverlayLinkSpan = glamorous.span({
-  ...css['.psds-card__full-overlay-link'],
-  '> a': css['.psds-card__full-overlay-link > a']
+const ActionBar = withPropFilter({
+  whitelist: ['actionBarVisible', 'fullOverlay', 'fullOverlayVisible']
+})(props => {
+  const { actionBarVisible, fullOverlay, fullOverlayVisible, ...rest } = props
+  return <div {...styles.actionBar(props)} {...rest} />
 })
-const FullOverlayLink = props => (
-  <FullOverlayLinkSpan>{props.children}</FullOverlayLinkSpan>
-)
-FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
-const Card = glamorous.div(css['.psds-card'])
-
-const Overlays = glamorous.div(
-  {
-    ...css['.psds-card__overlays'],
-    ':hover div': css['.psds-card__overlays:hover div'],
-    ':active div': css['.psds-card__overlays:active div']
-  },
-  ({ size }) => css[`.psds-card__overlays--size-${size}`]
-)
-
-const renderImage = props => (props.image ? props.image : null)
-
-const FullOverlay = glamorous.div(
-  css['.psds-card__full-overlay'],
-  {
-    ':focus-within': css['.psds-card__full-overlay:focus-within'],
-    '[focus-within]': css['.psds-card__full-overlay:focus-within']
-  },
-  ({ fullOverlayVisible }) =>
-    fullOverlayVisible
-      ? css['.psds-card__full-overlay--fullOverlayVisible']
-      : null
-)
-
-const renderFullOverlay = props =>
-  props.fullOverlay ? (
-    <FullOverlay fullOverlayVisible={props.fullOverlayVisible}>
-      {props.fullOverlay}
-    </FullOverlay>
-  ) : null
-
-const ActionBar = glamorous.div(
-  css['.psds-card__action-bar'],
-  {
-    ':focus-within': css['.psds-card__action-bar:focus-within'],
-    '[focus-within]': css['.psds-card__action-bar:focus-within']
-  },
-  ({ fullOverlay, actionBarVisible }) =>
-    fullOverlay && !actionBarVisible
-      ? css[
-          '.psds-card__action-bar--fullOverlay.psds-card__action-bar--no-actionBarVisible'
-        ]
-      : null,
-  ({ actionBarVisible }) =>
-    actionBarVisible ? css['.psds-card__action-bar--actionBarVisible'] : null
-)
-
-const ActionButton = glamorous.button(
-  {
-    ...css['.psds-card__action-bar__button'],
-    ':hover': css['.psds-card__action-bar__button:hover'],
-    ':active': css['.psds-card__action-bar__button:active'],
-    '& + &':
-      css['.psds-card__action-bar__button .psds-card__action-bar__button']
-  },
-  ({ disabled }) =>
-    disabled
-      ? {
-          ...css['.psds-card__action-bar__button--disabled'],
-          ':hover': css['.psds-card__action-bar__button--disabled:hover']
-        }
-      : null
-)
+const ActionButton = withPropFilter({
+  tagName: 'button',
+  whitelist: ['disabled']
+})(({ disabled, ...rest }) => (
+  <button {...styles.actionButton({ disabled })} {...rest} />
+))
 
 const ActionBarAction = props => {
   const filteredProps = { title: props.title }
   if (props.onClick) filteredProps.onClick = props.onClick
+
   return <ActionButton {...filteredProps}>{props.icon}</ActionButton>
 }
-
+ActionBarAction.displayName = 'Card.Action'
 ActionBarAction.propTypes = {
   icon: PropTypes.element.isRequired,
   title: PropTypes.string.isRequired
@@ -133,53 +109,82 @@ const renderActionBar = props =>
     </ActionBar>
   ) : null
 
-const BonusBar = glamorous.div(css['.psds-card__bonus-bar'])
+renderActionBar.propTypes = {
+  actionBar: PropTypes.arrayOf(PropTypes.element),
+  actionBarVisible: PropTypes.bool,
+  fullOverlay: PropTypes.element, // CardComponent.FullOverlayLink
+  fullOverlayVisible: PropTypes.bool
+}
+
+const BonusBar = withPropFilter()(props => (
+  <div {...styles.bonusBar(props)} {...props} />
+))
 
 const renderBonusBar = props =>
   props.bonusBar ? <BonusBar>{props.bonusBar}</BonusBar> : null
 
-const TagDiv = glamorous.div(css['.psds-card__tag'])
+renderBonusBar.propTypes = {
+  bonusBar: PropTypes.node
+}
 
-const TagIcon = glamorous.div(css['.psds-card__tag__icon'])
+const Card = withPropFilter()(props => (
+  <div {...styles.card(props)} {...props} />
+))
 
-const TagText = glamorous.span(css['.psds-card__tag__text'])
-
-const Tag = props => (
-  <TagDiv>
-    {props.icon && (
-      <TagIcon>
-        {React.cloneElement(props.icon, { size: iconSizes.small })}
-      </TagIcon>
-    )}
-    <TagText>{props.children}</TagText>
-  </TagDiv>
+const FullOverlay = withPropFilter({ whitelist: ['fullOverlayVisible'] })(
+  ({ fullOverlayVisible, ...rest }) => (
+    <div {...styles.fullOverlay({ fullOverlayVisible })} {...rest} />
+  )
 )
-Tag.displayName = 'Card.Tag'
-Tag.propTypes = {
-  icon: PropTypes.element
+
+const FullOverlayLink = withPropFilter({ tagName: 'span' })(props => (
+  <span {...styles.fullOverlayLink(props)} {...props} />
+))
+FullOverlayLink.displayName = 'Card.FullOverlayLink'
+
+const renderFullOverlay = props =>
+  props.fullOverlay ? (
+    <FullOverlay fullOverlayVisible={props.fullOverlayVisible}>
+      {props.fullOverlay}
+    </FullOverlay>
+  ) : null
+
+renderFullOverlay.propTypes = {
+  fullOverlay: PropTypes.element,
+  fullOverlayVisible: PropTypes.bool
 }
 
-const renderTag = props =>
-  props.tag && props.size !== 'small' ? props.tag : null
-
-const Progress = glamorous.div(css['.psds-card__progress'])
-
-const percent = num => {
-  try {
-    return Math.min(parseFloat(num).toFixed(), 100) + '%'
-  } catch (_) {
-    return '0%'
-  }
+const Image = withPropFilter({ whitelist: ['src'] })(({ src, ...rest }) => (
+  <div
+    {...styles.image()}
+    {...rest}
+    style={{ backgroundImage: `url(${src})` }}
+  />
+))
+Image.displayName = 'Card.Image'
+Image.propTypes = {
+  src: PropTypes.string.isRequired
 }
 
-const ProgressBar = glamorous.div(
-  css['.psds-card__progress__bar'],
-  ({ progress }) => ({
-    ...(percent(progress) == '100%'
-      ? css['.psds-card__progress__bar--complete']
-      : null),
-    width: percent(progress)
-  })
+const ImageLink = withPropFilter({ tagName: 'span' })(props => (
+  <span {...styles.imageLink(props)} {...props} />
+))
+ImageLink.displayName = 'Card.ImageLink'
+
+const renderImage = props => (props.image ? props.image : null)
+
+const Overlays = withPropFilter({ whitelist: ['size'] })(
+  ({ size, ...rest }) => <div {...styles.overlays({ size })} {...rest} />
+)
+
+const Progress = withPropFilter()(props => (
+  <div {...styles.progress(props)} {...props} />
+))
+
+const ProgressBar = withPropFilter({ whitelist: ['progress'] })(
+  ({ progress, ...rest }) => (
+    <div {...styles.progressBar({ progress })} {...rest} />
+  )
 )
 
 const renderProgress = props =>
@@ -187,38 +192,85 @@ const renderProgress = props =>
     <Progress>
       <ProgressBar
         progress={props.progress}
-        aria-label={`${percent(props.progress)} complete`}
+        aria-label={`${toPercentageString(props.progress)} complete`}
       />
     </Progress>
   ) : null
 
-const TitleDiv = glamorous.div(css['.psds-card__title'])
-
-const Title = props => {
-  const allProps = props.onClick ? { onClick: props.onClick } : null
-
-  return (
-    <TitleDiv {...allProps}>
-      <Shiitake lines={2}>{props.children}</Shiitake>
-    </TitleDiv>
-  )
+renderProgress.propTypes = {
+  progress: PropTypes.number
 }
-Title.displayName = 'Card.Title'
 
-const Metadata = glamorous.div(
-  css['.psds-card__metadata'],
-  ({ size }) => css[`.psds-card__metadata--size-${size}`]
+const TagIcon = withPropFilter()(props => (
+  <div {...styles.tagIcon(props)} {...props} />
+))
+
+const TagText = withPropFilter({ tagName: 'span' })(props => (
+  <span {...styles.tagText(props)} {...props} />
+))
+
+const Tag = withPropFilter({ whitelist: ['icon'] })(
+  ({ children, icon, ...rest }) => (
+    <div {...styles.tag({ icon })} {...rest}>
+      {icon && (
+        <TagIcon>{React.cloneElement(icon, { size: iconSizes.small })}</TagIcon>
+      )}
+      <TagText>{children}</TagText>
+    </div>
+  )
+)
+Tag.displayName = 'Card.Tag'
+Tag.propTypes = {
+  children: PropTypes.node,
+  icon: PropTypes.element
+}
+
+const renderTag = props =>
+  props.tag && props.size !== 'small' ? props.tag : null
+
+const Text = props => <span {...props} />
+Text.displayName = 'Card.Text'
+
+const TextLink = withPropFilter({ tagName: 'span' })(props => (
+  <span {...styles.textLink(props)} {...props} />
+))
+TextLink.displayName = 'Card.TextLink'
+
+const TitleContainer = withPropFilter({ whitelist: ['size'] })(
+  ({ size, ...rest }) => <div {...styles.titleContainer({ size })} {...rest} />
 )
 
-const MetadataDatum = glamorous.span({
-  ...css['.psds-card__metadata__datum'],
-  ':nth-of-type(1)': css['.psds-card__metadata__datum:nth-of-type(1)']
-})
+const Title = withPropFilter({ whitelist: ['size'] })(
+  ({ children, size, ...rest }) => {
+    return (
+      <div {...styles.title({ size })} {...rest}>
+        <Shiitake lines={2}>{children}</Shiitake>
+      </div>
+    )
+  }
+)
+Title.displayName = 'Card.Title'
 
-const MetadataDot = glamorous.span(css['.psds-card__metadata__dot'])
+const renderTitle = ({ title, ...rest }) => {
+  return <TitleContainer {...rest}>{title}</TitleContainer>
+}
 
-const renderMetaData = (props, metadata) =>
-  metadata ? (
+const Metadata = withPropFilter({ whitelist: ['size'] })(
+  ({ size, ...rest }) => <div {...styles.metadata({ size })} {...rest} />
+)
+
+const MetadataDatum = withPropFilter({ tagName: 'span', whitelist: ['size'] })(
+  ({ size, ...rest }) => <span {...styles.metadataDatum({ size })} {...rest} />
+)
+
+const MetadataDot = withPropFilter({ tagName: 'span', whitelist: ['size'] })(
+  ({ size, ...rest }) => <span {...styles.metadataDot({ size })} {...rest} />
+)
+
+const renderMetaData = (props, metadata) => {
+  if (!metadata) return null
+
+  return (
     <Metadata size={props.size}>
       {metadata.map((m, i) => [
         <MetadataDatum key={`datum${i}`}>{m}</MetadataDatum>,
@@ -229,50 +281,44 @@ const renderMetaData = (props, metadata) =>
         )
       ])}
     </Metadata>
-  ) : null
-
-const TitleContainer = glamorous.div(
-  ({ size }) => css[`.psds-card__title-container--size-${size}`]
-)
-
-const filterOutTitleProp = props => {
-  const { title, ...rest } = props
-  return rest
+  )
+}
+renderMetaData.propTypes = {
+  size: PropTypes.oneOf(Object.keys(vars.sizes))
 }
 
-const renderTitle = props => (
-  <TitleContainer {...filterOutTitleProp(props)}>{props.title}</TitleContainer>
-)
-
-const CardComponent = props => (
-  <Card
-    style={props.style}
-    css={props.css}
-    {...(props.className ? { className: props.className } : null)}
-  >
-    <Overlays size={props.size}>
-      {renderImage(props)}
-      {renderFullOverlay(props)}
-      {renderActionBar(props)}
-      {renderBonusBar(props)}
-      {renderTag(props)}
-      {renderProgress(props)}
-    </Overlays>
-    {renderTitle(props)}
-    {renderMetaData(props, props.metadata1)}
-    {renderMetaData(props, props.metadata2)}
-  </Card>
-)
+const CardComponent = props => {
+  return (
+    <Card
+      style={props.style}
+      css={props.css}
+      {...(props.className ? { className: props.className } : null)}
+    >
+      <Overlays size={props.size}>
+        {renderImage(props)}
+        {renderFullOverlay(props)}
+        {renderActionBar(props)}
+        {renderBonusBar(props)}
+        {renderTag(props)}
+        {renderProgress(props)}
+      </Overlays>
+      {renderTitle(props)}
+      {renderMetaData(props, props.metadata1)}
+      {renderMetaData(props, props.metadata2)}
+    </Card>
+  )
+}
 
 CardComponent.Action = ActionBarAction
 CardComponent.FullOverlayLink = FullOverlayLink
 CardComponent.Image = Image
 CardComponent.ImageLink = ImageLink
-CardComponent.sizes = vars.sizes
 CardComponent.Tag = Tag
 CardComponent.Text = Text
 CardComponent.TextLink = TextLink
 CardComponent.Title = Title
+
+CardComponent.sizes = vars.sizes
 
 // TODO: offer more specific guides where real constraints exist (component types)
 CardComponent.propTypes = {
@@ -293,6 +339,7 @@ CardComponent.propTypes = {
   tag: PropTypes.element, // CardComponent.Tag
   title: PropTypes.element.isRequired // CardComponent.TextLink>Title|Title
 }
+
 CardComponent.defaultProps = {
   actionBarVisible: false,
   fullOverlayVisible: false,
