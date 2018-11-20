@@ -30,10 +30,13 @@
     "@pluralsight/ps-design-system-core": "^4.3.6",
     "@pluralsight/ps-design-system-icon": "^8.13.6",
     "@pluralsight/ps-design-system-theme": "^1.4.1",
+    "fast-memoize": "^2.5.1",
     "focus-within": "^2.0.0",
     "glamorous": "^4.1.0",
+    "hoist-non-react-statics": "^3.1.0",
     "polished": "^1.9.2",
     "prop-types": "^15.5.10",
+    "react-html-attributes": "^1.4.3",
     "shiitake": "^2.1.1"
   },
   "peerDependencies": {
