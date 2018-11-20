@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@1.1.2...@pluralsight/ps-design-system-starrating@1.2.0) (2018-11-20)
+
+
+### Bug Fixes
+
+* **starrating:** half star was invisible in safari ([4d9d56f](https://github.com/pluralsight/design-system/commit/4d9d56f))
+
+
+### Features
+
+* **starrating:** Changed to rounding to nearest half int ([51a46d1](https://github.com/pluralsight/design-system/commit/51a46d1))
+
+
+
+
+
 ## [1.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@1.1.1...@pluralsight/ps-design-system-starrating@1.1.2) (2018-11-16)
 
 

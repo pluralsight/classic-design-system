@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-starrating",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Design System component for star rating ui",
   "main": "index.js",
   "module": "index.js",

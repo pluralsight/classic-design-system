@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@2.1.18...@pluralsight/ps-design-system-badge@2.2.0) (2018-11-20)
+
+
+### Features
+
+* **badge:** light theme support ([15f4f1a](https://github.com/pluralsight/design-system/commit/15f4f1a))
+* **badge:** warn on theme+appearance misuse ([8f5227f](https://github.com/pluralsight/design-system/commit/8f5227f))
+
+
+
+
+
 ## [2.1.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@2.1.17...@pluralsight/ps-design-system-badge@2.1.18) (2018-11-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-badge

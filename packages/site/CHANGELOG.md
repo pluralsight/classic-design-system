@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.2.0...@pluralsight/ps-design-system-site@11.2.1) (2018-11-20)
+
+
+### Performance Improvements
+
+* **site:** image optimization ([cc1eab1](https://github.com/pluralsight/design-system/commit/cc1eab1))
+
+
+
+
+
 # [11.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.1.15...@pluralsight/ps-design-system-site@11.2.0) (2018-11-16)
 
 
