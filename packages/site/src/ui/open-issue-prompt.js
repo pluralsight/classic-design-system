@@ -21,6 +21,7 @@ class OpenIssuePrompt extends React.PureComponent {
             position: fixed;
             bottom: 20px;
             right: 20px;
+            z-index: 100;
           }
           .open-issue-prompt > :global(a) {
             border-radius: 20px;
