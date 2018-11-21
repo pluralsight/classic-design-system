@@ -161,7 +161,6 @@ export default withServerProps(_ => (
       </P>
       <Example.React
         orient="vertical"
-        themeToggle
         includes={{ TextInput, Theme }}
         codes={[
           `<Theme name={Theme.names.dark}>
