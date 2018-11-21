@@ -1,5 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
-import Markdown from 'react-markdown'
+import Markdown from 'react-markdown/with-html'
+import PropTypes from 'prop-types'
 import React from 'react'
 import Router from 'next/router'
 
@@ -19,6 +20,7 @@ export default class Doc extends React.Component {
     super(props)
     this.handleLinkClick = this.handleLinkClick.bind(this)
   }
+
   componentDidMount() {
     if (codemirrorLoaded) {
       // TODO: keep to context of component
@@ -31,14 +33,16 @@ export default class Doc extends React.Component {
         })
       )
     }
-    this.links = document.querySelectorAll('.markdown a')
+    this.links = document.querySelectorAll('.markdown a:not([target="_blank"])')
     this.links.forEach(a => a.addEventListener('click', this.handleLinkClick))
   }
+
   componentWillUnmount() {
     this.links.forEach(a =>
       a.removeEventListener('click', this.handleLinkClick)
     )
   }
+
   handleLinkClick(evt) {
     const href = evt.target.getAttribute('href')
     if (/\w+:\/\//.test(href)) return
@@ -49,12 +53,15 @@ export default class Doc extends React.Component {
     if (document)
       document.body.scrollTop = document.documentElement.scrollTop = 0
   }
+
   render() {
     return (
       <div className="markdown">
         <CodeMirrorCss />
         <CodeMirrorPsTheme />
-        <Markdown source={this.props.children} />
+
+        <Markdown escapeHtml={false} source={this.props.children} />
+
         <style jsx>{`
           /* NOTE: this is the tradeoff for being able to write markdown docs.
   We get the nice flow of prose in markdown, but we have to deal with
@@ -110,4 +117,8 @@ export default class Doc extends React.Component {
       </div>
     )
   }
+}
+
+Doc.propTypes = {
+  children: PropTypes.string
 }

@@ -161,7 +161,8 @@ export default withServerProps(_ => (
 
       <LevelList>
         <LevelHeading>Guide</LevelHeading>
-        <Doc>{`
+        <Doc>
+          {`
 ### Participate in user interviews
 As we create the Design System, we're always looking for people to take part in our user interviews.  We're usually testing a new feature and always looking to gather ideas you have.  Let us know in [#design-system-help](slack://channel?team=pluralsight&id=design-system-help) that you're available.
 
@@ -175,11 +176,13 @@ The Design System is used in many places.  We have a hard time keeping our eyes 
 Maybe you have a visual, interactive, or code design insight.  We’d love to chat about your ideas and see how they might fit and be used to improve the Design System.   Join [#design-system-help](slack://channel?team=pluralsight&id=design-system-help) and share.
 
 ### Propose an enhancement or new pattern
-Does it belong in the Design System? Check out the new [new pattern journey](/static/img/diagrams/new-pattern-journey.png) workflow to scope whether a new pattern should be added to the Design System.
+Does it belong in the Design System? Check out the new <a href="/static/img/diagrams/new-pattern-journey.png" target="_blank">new pattern journey</a> workflow to scope whether a new pattern should be added to the Design System.
 
-![new pattern journey](/static/img/diagrams/new-pattern-journey.png)
-
-`}</Doc>
+<a href="/static/img/diagrams/new-pattern-journey.png" target="_blank">
+  <img src="/static/img/diagrams/new-pattern-journey.png" />
+</a>
+`}
+        </Doc>
       </LevelList>
 
       <LevelList>
