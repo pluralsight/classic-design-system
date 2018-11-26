@@ -1,11 +1,4 @@
-/**
- * NOTE: largely inspired from glamourous
- *       https://github.com/paypal/glamorous/blob/75495fd4bd1083d8fc0d12fa805188da759ac03b/src/should-forward-property.js
- */
-
-import hoistNonReactStatics from 'hoist-non-react-statics'
 import memoize from 'fast-memoize'
-import React from 'react'
 import reactHTMLAttributes from 'react-html-attributes'
 
 import REACT_PROPS from './react-props'
@@ -15,14 +8,6 @@ const SUPPORTED_CSS_PROPS = ['color', 'height', 'width']
 
 const VALID_HTML_TAG_NAMES = reactHTMLAttributes.elements.html
 const VALID_SVG_TAG_NAMES = reactHTMLAttributes.elements.svg
-
-const getDisplayName = Component => {
-  if (typeof Component === 'string') return Component
-
-  if (!Component) return undefined
-
-  return Component.displayName || Component.name || 'Component'
-}
 
 const getAttrListForTag = tagName =>
   isSVGTag(tagName)
@@ -58,30 +43,10 @@ const shouldForwardProperty = memoize((tagName, propName) => {
   )
 })
 
-export default function withPropFilterFactory(_config) {
-  const config = { blacklist: [], tagName: 'div', whitelist: [], ..._config }
+export default function filterReactProps(props, config = {}) {
+  const { tagName = 'div' } = config
 
-  const isAllowedProp = propName =>
-    config.blacklist.indexOf(propName) === -1 &&
-    (config.whitelist.indexOf(propName) !== -1 ||
-      shouldForwardProperty(config.tagName, propName))
-
-  return function withPropFilter(BaseComponent) {
-    const name = getDisplayName(BaseComponent)
-
-    const EnhancedComponent = (props, context = {}) => {
-      const filteredProps = Object.keys(props).reduce((acc, propName) => {
-        return isAllowedProp(propName)
-          ? { ...acc, [propName]: props[propName] }
-          : acc
-      }, {})
-
-      return <BaseComponent {...filteredProps} />
-    }
-
-    EnhancedComponent.BaseComponent = BaseComponent
-    EnhancedComponent.displayName = `withPropFilter(${name})`
-
-    return hoistNonReactStatics(EnhancedComponent, BaseComponent)
-  }
+  return Object.keys(props)
+    .filter(propName => shouldForwardProperty(tagName, propName))
+    .reduce((acc, propName) => ({ ...acc, [propName]: props[propName] }), {})
 }
