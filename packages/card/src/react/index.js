@@ -5,12 +5,11 @@ import React from 'react'
 import Shiitake from 'shiitake'
 
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import css from '../css'
 import { toPercentageString } from '../js'
 import * as vars from '../vars'
-
-import withPropFilter from './with-prop-filter'
 
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
@@ -72,26 +71,21 @@ const styles = {
     glamor.css(css[`.psds-card__title-container--size-${size}`])
 }
 
-const ActionBar = withPropFilter({
-  whitelist: ['actionBarVisible', 'fullOverlay', 'fullOverlayVisible']
-})(props => {
-  const { actionBarVisible, fullOverlay, fullOverlayVisible, ...rest } = props
-  return <div {...styles.actionBar(props)} {...rest} />
-})
+const ActionBar = props => (
+  <div {...styles.actionBar(props)} {...filterReactProps(props)} />
+)
 
-const ActionButton = withPropFilter({
-  tagName: 'button',
-  whitelist: ['disabled']
-})(({ disabled, ...rest }) => (
-  <button {...styles.actionButton({ disabled })} {...rest} />
-))
+const ActionButton = props => (
+  <button
+    {...styles.actionButton(props)}
+    {...filterReactProps(props, { tagName: 'button' })}
+  />
+)
 
-const ActionBarAction = props => {
-  const filteredProps = { title: props.title }
-  if (props.onClick) filteredProps.onClick = props.onClick
+const ActionBarAction = ({ icon, ...props }) => (
+  <ActionButton {...filterReactProps(props)}>{icon}</ActionButton>
+)
 
-  return <ActionButton {...filteredProps}>{props.icon}</ActionButton>
-}
 ActionBarAction.displayName = 'Card.Action'
 ActionBarAction.propTypes = {
   icon: PropTypes.element.isRequired,
@@ -116,9 +110,9 @@ renderActionBar.propTypes = {
   fullOverlayVisible: PropTypes.bool
 }
 
-const BonusBar = withPropFilter()(props => (
-  <div {...styles.bonusBar(props)} {...props} />
-))
+const BonusBar = props => (
+  <div {...styles.bonusBar(props)} {...filterReactProps(props)} />
+)
 
 const renderBonusBar = props =>
   props.bonusBar ? <BonusBar>{props.bonusBar}</BonusBar> : null
@@ -127,19 +121,20 @@ renderBonusBar.propTypes = {
   bonusBar: PropTypes.node
 }
 
-const Card = withPropFilter()(props => (
-  <div {...styles.card(props)} {...props} />
-))
-
-const FullOverlay = withPropFilter({ whitelist: ['fullOverlayVisible'] })(
-  ({ fullOverlayVisible, ...rest }) => (
-    <div {...styles.fullOverlay({ fullOverlayVisible })} {...rest} />
-  )
+const Card = props => (
+  <div {...styles.card(props)} {...filterReactProps(props)} />
 )
 
-const FullOverlayLink = withPropFilter({ tagName: 'span' })(props => (
-  <span {...styles.fullOverlayLink(props)} {...props} />
-))
+const FullOverlay = props => (
+  <div {...styles.fullOverlay(props)} {...filterReactProps(props)} />
+)
+
+const FullOverlayLink = props => (
+  <span
+    {...styles.fullOverlayLink(props)}
+    {...filterReactProps(props, { tagName: 'span' })}
+  />
+)
 FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
 const renderFullOverlay = props =>
@@ -154,37 +149,39 @@ renderFullOverlay.propTypes = {
   fullOverlayVisible: PropTypes.bool
 }
 
-const Image = withPropFilter({ whitelist: ['src'] })(({ src, ...rest }) => (
+const Image = props => (
   <div
-    {...styles.image()}
-    {...rest}
-    style={{ backgroundImage: `url(${src})` }}
+    {...styles.image(props)}
+    {...filterReactProps(props)}
+    style={{ backgroundImage: `url(${props.src})` }}
   />
-))
+)
 Image.displayName = 'Card.Image'
 Image.propTypes = {
   src: PropTypes.string.isRequired
 }
 
-const ImageLink = withPropFilter({ tagName: 'span' })(props => (
-  <span {...styles.imageLink(props)} {...props} />
-))
+const ImageLink = props => (
+  <span
+    {...styles.imageLink(props)}
+    {...filterReactProps(props, { tagName: 'span' })}
+  />
+)
+
 ImageLink.displayName = 'Card.ImageLink'
 
 const renderImage = props => (props.image ? props.image : null)
 
-const Overlays = withPropFilter({ whitelist: ['size'] })(
-  ({ size, ...rest }) => <div {...styles.overlays({ size })} {...rest} />
+const Overlays = props => (
+  <div {...styles.overlays(props)} {...filterReactProps(props)} />
 )
 
-const Progress = withPropFilter()(props => (
-  <div {...styles.progress(props)} {...props} />
-))
+const Progress = props => (
+  <div {...styles.progress(props)} {...filterReactProps(props)} />
+)
 
-const ProgressBar = withPropFilter({ whitelist: ['progress'] })(
-  ({ progress, ...rest }) => (
-    <div {...styles.progressBar({ progress })} {...rest} />
-  )
+const ProgressBar = props => (
+  <div {...styles.progressBar(props)} {...filterReactProps(props)} />
 )
 
 const renderProgress = props =>
@@ -201,23 +198,25 @@ renderProgress.propTypes = {
   progress: PropTypes.number
 }
 
-const TagIcon = withPropFilter()(props => (
-  <div {...styles.tagIcon(props)} {...props} />
-))
+const TagIcon = props => (
+  <div {...styles.tagIcon(props)} {...filterReactProps(props)} />
+)
 
-const TagText = withPropFilter({ tagName: 'span' })(props => (
-  <span {...styles.tagText(props)} {...props} />
-))
+const TagText = props => (
+  <span
+    {...styles.tagText(props)}
+    {...filterReactProps(props, { tagName: 'span' })}
+  />
+)
 
-const Tag = withPropFilter({ whitelist: ['icon'] })(
-  ({ children, icon, ...rest }) => (
-    <div {...styles.tag({ icon })} {...rest}>
-      {icon && (
-        <TagIcon>{React.cloneElement(icon, { size: iconSizes.small })}</TagIcon>
-      )}
-      <TagText>{children}</TagText>
-    </div>
-  )
+const Tag = ({ children, icon, ...props }) => (
+  <div {...styles.tag(props)} {...filterReactProps(props)}>
+    {icon && (
+      <TagIcon>{React.cloneElement(icon, { size: iconSizes.small })}</TagIcon>
+    )}
+
+    <TagText>{children}</TagText>
+  </div>
 )
 Tag.displayName = 'Card.Tag'
 Tag.propTypes = {
@@ -228,26 +227,25 @@ Tag.propTypes = {
 const renderTag = props =>
   props.tag && props.size !== 'small' ? props.tag : null
 
-const Text = props => <span {...props} />
+const Text = props => <span {...filterReactProps(props, { tagName: 'span' })} />
 Text.displayName = 'Card.Text'
 
-const TextLink = withPropFilter({ tagName: 'span' })(props => (
-  <span {...styles.textLink(props)} {...props} />
-))
+const TextLink = props => (
+  <span
+    {...styles.textLink(props)}
+    {...filterReactProps(props, { tagName: 'span' })}
+  />
+)
 TextLink.displayName = 'Card.TextLink'
 
-const TitleContainer = withPropFilter({ whitelist: ['size'] })(
-  ({ size, ...rest }) => <div {...styles.titleContainer({ size })} {...rest} />
+const TitleContainer = props => (
+  <div {...styles.titleContainer(props)} {...filterReactProps(props)} />
 )
 
-const Title = withPropFilter({ whitelist: ['size'] })(
-  ({ children, size, ...rest }) => {
-    return (
-      <div {...styles.title({ size })} {...rest}>
-        <Shiitake lines={2}>{children}</Shiitake>
-      </div>
-    )
-  }
+const Title = props => (
+  <div {...styles.title(props)} {...filterReactProps(props)}>
+    <Shiitake lines={2}>{props.children}</Shiitake>
+  </div>
 )
 Title.displayName = 'Card.Title'
 
@@ -255,16 +253,22 @@ const renderTitle = ({ title, ...rest }) => {
   return <TitleContainer {...rest}>{title}</TitleContainer>
 }
 
-const Metadata = withPropFilter({ whitelist: ['size'] })(
-  ({ size, ...rest }) => <div {...styles.metadata({ size })} {...rest} />
+const Metadata = props => (
+  <div {...styles.metadata(props)} {...filterReactProps(props)} />
 )
 
-const MetadataDatum = withPropFilter({ tagName: 'span', whitelist: ['size'] })(
-  ({ size, ...rest }) => <span {...styles.metadataDatum({ size })} {...rest} />
+const MetadataDatum = props => (
+  <span
+    {...styles.metadataDatum(props)}
+    {...filterReactProps(props, { tagName: 'span' })}
+  />
 )
 
-const MetadataDot = withPropFilter({ tagName: 'span', whitelist: ['size'] })(
-  ({ size, ...rest }) => <span {...styles.metadataDot({ size })} {...rest} />
+const MetadataDot = props => (
+  <span
+    {...styles.metadataDot(props)}
+    {...filterReactProps(props, { tagName: 'span' })}
+  />
 )
 
 const renderMetaData = (props, metadata) => {

@@ -29,6 +29,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.3.6",
     "@pluralsight/ps-design-system-icon": "^8.13.6",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.0.0",
     "@pluralsight/ps-design-system-theme": "^1.4.1",
     "fast-memoize": "^2.5.1",
     "focus-within": "^2.0.0",
