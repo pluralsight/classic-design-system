@@ -893,7 +893,7 @@ exports[`Storyshots combo everything focusable 1`] = `
         data-css-piydn8=""
       >
         <span
-          data-css-1ublh7e=""
+          data-css-1202ll4=""
         >
           <a
             href="http://duckduckgo.com?q=title"
@@ -993,13 +993,13 @@ exports[`Storyshots combo everything focusable 1`] = `
         </span>
       </div>
       <div
-        data-css-bcrrqv=""
+        data-css-sb1dn8=""
       >
         <span
           data-css-1tz10dh=""
         >
           <span
-            data-css-1ublh7e=""
+            data-css-1202ll4=""
           >
             <a
               href="http://duckduckgo.com/?q=jaketrent"
@@ -1166,7 +1166,7 @@ exports[`Storyshots combo everything locked 1`] = `
         data-css-piydn8=""
       >
         <span
-          data-css-1ublh7e=""
+          data-css-1202ll4=""
         >
           <a
             href="http://duckduckgo.com?q=title"
@@ -1266,13 +1266,13 @@ exports[`Storyshots combo everything locked 1`] = `
         </span>
       </div>
       <div
-        data-css-bcrrqv=""
+        data-css-sb1dn8=""
       >
         <span
           data-css-1tz10dh=""
         >
           <span
-            data-css-1ublh7e=""
+            data-css-1202ll4=""
           >
             <a
               href="http://duckduckgo.com/?q=jaketrent"
@@ -1291,7 +1291,7 @@ exports[`Storyshots combo everything locked 1`] = `
           data-css-1tz10dh=""
         >
           <span
-            data-css-1ublh7e=""
+            data-css-1202ll4=""
           >
             <a
               href="http://duckduckgo.com/?q=jaketrent"
@@ -1310,7 +1310,7 @@ exports[`Storyshots combo everything locked 1`] = `
           data-css-1tz10dh=""
         >
           <span
-            data-css-1ublh7e=""
+            data-css-1202ll4=""
           >
             <a
               href="http://duckduckgo.com/?q=jaketrent"
@@ -1321,7 +1321,7 @@ exports[`Storyshots combo everything locked 1`] = `
         </span>
       </div>
       <div
-        data-css-bcrrqv=""
+        data-css-sb1dn8=""
       >
         <span
           data-css-1tz10dh=""
@@ -2437,7 +2437,7 @@ exports[`Storyshots metadata multiple text 1`] = `
         </div>
       </div>
       <div
-        data-css-bcrrqv=""
+        data-css-sb1dn8=""
       >
         <span
           data-css-1tz10dh=""
@@ -2583,7 +2583,7 @@ exports[`Storyshots metadata single text 1`] = `
         </div>
       </div>
       <div
-        data-css-bcrrqv=""
+        data-css-sb1dn8=""
       >
         <span
           data-css-1tz10dh=""
@@ -2718,13 +2718,13 @@ exports[`Storyshots metadata text link 1`] = `
         </div>
       </div>
       <div
-        data-css-bcrrqv=""
+        data-css-sb1dn8=""
       >
         <span
           data-css-1tz10dh=""
         >
           <span
-            data-css-1ublh7e=""
+            data-css-1202ll4=""
           >
             <a
               href="http://duckduckgo.com?q=jim%20cooper"
@@ -2861,7 +2861,7 @@ exports[`Storyshots metadata text wrapper 1`] = `
         </div>
       </div>
       <div
-        data-css-bcrrqv=""
+        data-css-sb1dn8=""
       >
         <span
           data-css-1tz10dh=""
@@ -2998,13 +2998,13 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         </div>
       </div>
       <div
-        data-css-bcrrqv=""
+        data-css-sb1dn8=""
       >
         <span
           data-css-1tz10dh=""
         >
           <span
-            data-css-1ublh7e=""
+            data-css-1202ll4=""
           >
             <a
               href="http://duckduckgo.com?q=jim%20cooper"
@@ -3015,13 +3015,13 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         </span>
       </div>
       <div
-        data-css-bcrrqv=""
+        data-css-sb1dn8=""
       >
         <span
           data-css-1tz10dh=""
         >
           <span
-            data-css-1ublh7e=""
+            data-css-1202ll4=""
           >
             <a
               href="http://duckduckgo.com?q=react"
@@ -4456,7 +4456,7 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
         data-css-piydn8=""
       >
         <span
-          data-css-1ublh7e=""
+          data-css-1202ll4=""
         >
           <a
             href="http://duckduckgo.com?q=text"
@@ -4716,7 +4716,7 @@ exports[`Storyshots title text link with title wrapper 1`] = `
         data-css-piydn8=""
       >
         <span
-          data-css-1ublh7e=""
+          data-css-1202ll4=""
         >
           <a
             href="http://duckduckgo.com?q=text"

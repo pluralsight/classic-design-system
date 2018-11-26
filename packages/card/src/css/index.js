@@ -1,5 +1,7 @@
-import core from '@pluralsight/ps-design-system-core'
 import { transparentize } from 'polished'
+
+import core from '@pluralsight/ps-design-system-core'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
 import * as vars from '../vars'
 
@@ -19,10 +21,19 @@ export default {
       textDecoration: 'none',
 
       '&:hover, &:active': {
-        color: core.colors.white,
         textDecoration: 'underline',
         transition: `all ${core.motion.speedNormal}`
       }
+    }
+  },
+  [`.psds-card__text-link--theme-${themeNames.dark}`]: {
+    '&:hover, &:active': {
+      color: core.colors.white
+    }
+  },
+  [`.psds-card__text-link--theme-${themeNames.light}`]: {
+    '&:hover, &:active': {
+      color: core.colors.gray03
     }
   },
 
@@ -254,8 +265,13 @@ export default {
     display: 'block',
     paddingTop: core.layout.spacingXSmall,
     fontWeight: core.type.fontWeightMedium,
-    overflow: 'hidden',
+    overflow: 'hidden'
+  },
+  [`.psds-card__title--theme-${themeNames.dark}`]: {
     color: core.colors.white
+  },
+  [`.psds-card__title--theme-${themeNames.light}`]: {
+    color: core.colors.gray06
   },
 
   // __metadata
@@ -264,8 +280,13 @@ export default {
     alignItems: 'center',
     fontWeight: core.type.fontWeightBook,
     lineHeight: core.type.lineHeightTight,
-    color: core.colors.gray02,
     maxWidth: '100%'
+  },
+  [`.psds-card__metadata--theme-${themeNames.dark}`]: {
+    color: core.colors.gray02
+  },
+  [`.psds-card__metadata--theme-${themeNames.light}`]: {
+    color: core.colors.gray03
   },
   // __metadata--size
   [`.psds-card__metadata--size-${vars.sizes.small}`]: {

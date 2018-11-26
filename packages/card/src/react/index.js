@@ -1,4 +1,5 @@
 import polyfillFocusWithin from 'focus-within'
+
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -6,6 +7,8 @@ import Shiitake from 'shiitake'
 
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
 import css from '../css'
 import { toPercentageString } from '../js'
@@ -39,10 +42,11 @@ const styles = {
   fullOverlayLink: () => glamor.css(css['.psds-card__full-overlay-link']),
   image: () => glamor.css(css['.psds-card__image']),
   imageLink: () => glamor.css(css['.psds-card__image-link']),
-  metadata: ({ size }) =>
+  metadata: ({ size, themeName }) =>
     glamor.css({
       ...css['.psds-card__metadata'],
-      ...css[`.psds-card__metadata--size-${size}`]
+      ...css[`.psds-card__metadata--size-${size}`],
+      ...css[`.psds-card__metadata--theme-${themeName}`]
     }),
   metadataDatum: ({ size }) => glamor.css(css['.psds-card__metadata__datum']),
   metadataDot: ({ size }) => glamor.css(css['.psds-card__metadata__dot']),
@@ -65,8 +69,16 @@ const styles = {
   tag: () => glamor.css(css['.psds-card__tag']),
   tagIcon: () => glamor.css(css['.psds-card__tag__icon']),
   tagText: () => glamor.css(css['.psds-card__tag__text']),
-  textLink: () => glamor.css(css['.psds-card__text-link']),
-  title: () => glamor.css(css['.psds-card__title']),
+  textLink: ({ themeName }) =>
+    glamor.css({
+      ...css['.psds-card__text-link'],
+      ...css[`.psds-card__text-link--theme-${themeName}`]
+    }),
+  title: ({ themeName }) =>
+    glamor.css({
+      ...css['.psds-card__title'],
+      ...css[`.psds-card__title--theme-${themeName}`]
+    }),
   titleContainer: ({ size }) =>
     glamor.css(css[`.psds-card__title-container--size-${size}`])
 }
@@ -230,32 +242,32 @@ const renderTag = props =>
 const Text = props => <span {...filterReactProps(props, { tagName: 'span' })} />
 Text.displayName = 'Card.Text'
 
-const TextLink = props => (
+const TextLink = withTheme(props => (
   <span
     {...styles.textLink(props)}
     {...filterReactProps(props, { tagName: 'span' })}
   />
-)
+))
 TextLink.displayName = 'Card.TextLink'
 
 const TitleContainer = props => (
   <div {...styles.titleContainer(props)} {...filterReactProps(props)} />
 )
 
-const Title = props => (
+const Title = withTheme(props => (
   <div {...styles.title(props)} {...filterReactProps(props)}>
     <Shiitake lines={2}>{props.children}</Shiitake>
   </div>
-)
+))
 Title.displayName = 'Card.Title'
 
-const renderTitle = ({ title, ...rest }) => {
-  return <TitleContainer {...rest}>{title}</TitleContainer>
+const renderTitle = (props, title) => {
+  return <TitleContainer {...props}>{title}</TitleContainer>
 }
 
-const Metadata = props => (
+const Metadata = withTheme(props => (
   <div {...styles.metadata(props)} {...filterReactProps(props)} />
-)
+))
 
 const MetadataDatum = props => (
   <span
@@ -275,7 +287,7 @@ const renderMetaData = (props, metadata) => {
   if (!metadata) return null
 
   return (
-    <Metadata size={props.size}>
+    <Metadata {...props}>
       {metadata.map((m, i) => [
         <MetadataDatum key={`datum${i}`}>{m}</MetadataDatum>,
         i < metadata.length - 1 && (
@@ -291,27 +303,22 @@ renderMetaData.propTypes = {
   size: PropTypes.oneOf(Object.keys(vars.sizes))
 }
 
-const CardComponent = props => {
-  return (
-    <Card
-      style={props.style}
-      css={props.css}
-      {...(props.className ? { className: props.className } : null)}
-    >
-      <Overlays size={props.size}>
-        {renderImage(props)}
-        {renderFullOverlay(props)}
-        {renderActionBar(props)}
-        {renderBonusBar(props)}
-        {renderTag(props)}
-        {renderProgress(props)}
-      </Overlays>
-      {renderTitle(props)}
-      {renderMetaData(props, props.metadata1)}
-      {renderMetaData(props, props.metadata2)}
-    </Card>
-  )
-}
+const CardComponent = ({ title, metadata1, metadata2, ...props }) => (
+  <Card {...props}>
+    <Overlays size={props.size}>
+      {renderImage(props)}
+      {renderFullOverlay(props)}
+      {renderActionBar(props)}
+      {renderBonusBar(props)}
+      {renderTag(props)}
+      {renderProgress(props)}
+    </Overlays>
+
+    {renderTitle(props, title)}
+    {renderMetaData(props, metadata1)}
+    {renderMetaData(props, metadata2)}
+  </Card>
+)
 
 CardComponent.Action = ActionBarAction
 CardComponent.FullOverlayLink = FullOverlayLink
@@ -347,7 +354,8 @@ CardComponent.propTypes = {
 CardComponent.defaultProps = {
   actionBarVisible: false,
   fullOverlayVisible: false,
-  size: vars.sizes.medium
+  size: vars.sizes.medium,
+  themeName: PropTypes.oneOf(Object.values(themeNames)).isRequired
 }
 
 export const sizes = vars.sizes
