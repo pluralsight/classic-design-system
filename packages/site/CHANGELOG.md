@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.2.1...@pluralsight/ps-design-system-site@11.3.0) (2018-11-27)
+
+
+### Bug Fixes
+
+* **site:** github issue button z-index was below the theme toggle ([691bee8](https://github.com/pluralsight/design-system/commit/691bee8)), closes [#346](https://github.com/pluralsight/design-system/issues/346)
+* **site:** new pattern journey opens in new tab ([ada3f20](https://github.com/pluralsight/design-system/commit/ada3f20))
+
+
+### Features
+
+* **site:** markdown supports html; links can open in new tabs ([012dac9](https://github.com/pluralsight/design-system/commit/012dac9))
+
+
+
+
+
 ## [11.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.2.0...@pluralsight/ps-design-system-site@11.2.1) (2018-11-20)
 
 
