@@ -126,6 +126,14 @@ export default {
     color: core.colors.gray02,
     background: core.colors.gray03
   },
+  [`.psds-button--disabled.psds-theme--${themeNames.light}`]: {
+    color: core.colors.gray03,
+    background: core.colors.gray01
+  },
+  [`.psds-button--disabled.psds-theme--${themeNames.light}:hover`]: {
+    color: core.colors.gray03,
+    background: core.colors.gray01
+  },
   [`.psds-button--disabled.psds-button--appearance-${
     vars.appearances.primary
   }`]: {

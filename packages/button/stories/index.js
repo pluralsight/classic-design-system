@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Button from '../react'
+import Button from '../src/react'
 
 const appearanceStory = storiesOf('appearance', module)
 Object.keys(Button.appearances).forEach(app =>

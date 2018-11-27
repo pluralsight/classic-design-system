@@ -54,9 +54,12 @@ const styles = {
       },
       disabled && {
         ...css[`.psds-button--disabled`],
+        ...css[`.psds-button--disabled.psds-theme--${themeName}`],
         ...css[`.psds-button--disabled.psds-button--appearance-${appearance}`],
+
         ':hover': {
           ...css[`.psds-button--disabled:hover`],
+          ...css[`.psds-button--disabled.psds-theme--${themeName}:hover`],
           ...css[
             `.psds-button--disabled.psds-button--appearance-${appearance}:hover`
           ]
