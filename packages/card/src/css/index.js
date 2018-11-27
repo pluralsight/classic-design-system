@@ -1,21 +1,9 @@
-import core from '@pluralsight/ps-design-system-core'
 import { transparentize } from 'polished'
 
+import core from '@pluralsight/ps-design-system-core'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+
 import * as vars from '../vars'
-
-const textLinkAHover = {
-  color: core.colors.white,
-  textDecoration: 'underline',
-  transition: `all ${core.motion.speedNormal}`
-}
-
-const overlaysDivHover = {
-  opacity: 1
-}
-
-const actionBarButtonHover = {
-  color: core.colors.white
-}
 
 export default {
   '.psds-card': {
@@ -25,16 +13,29 @@ export default {
 
   // __text-link
   '.psds-card__text-link': {
-    pointerEvents: 'all'
+    pointerEvents: 'all',
+
+    '& a': {
+      color: 'inherit',
+      cursor: 'pointer',
+      textDecoration: 'none',
+
+      '&:hover, &:active': {
+        textDecoration: 'underline',
+        transition: `all ${core.motion.speedNormal}`
+      }
+    }
   },
-  // __text-link a
-  '.psds-card__text-link a': {
-    color: 'inherit',
-    cursor: 'pointer',
-    textDecoration: 'none'
+  [`.psds-card__text-link--theme-${themeNames.dark}`]: {
+    '&:hover, &:active': {
+      color: core.colors.white
+    }
   },
-  '.psds-card__text-link a:hover': textLinkAHover,
-  '.psds-card__text-link a:active': textLinkAHover,
+  [`.psds-card__text-link--theme-${themeNames.light}`]: {
+    '&:hover, &:active': {
+      color: core.colors.gray03
+    }
+  },
 
   // __overlays
   '.psds-card__overlays': {
@@ -42,7 +43,12 @@ export default {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    background: core.colors.gray05
+    background: core.colors.gray05,
+
+    // TODO: target child
+    '&:hover div, &:active div': {
+      opacity: 1
+    }
   },
   // __overlays--size
   [`.psds-card__overlays--size-${vars.sizes.small}`]: {
@@ -55,13 +61,8 @@ export default {
     height: '240px'
   },
 
-  // __overlays:hover/active div
-  // TODO: target child
-  '.psds-card__overlays:hover div': overlaysDivHover,
-  '.psds-card__overlays:active div': overlaysDivHover,
-
   // __image
-  '.psds-actionmenu__image': {
+  '.psds-card__image': {
     width: '100%',
     height: '100%',
     backgroundSize: 'cover',
@@ -76,17 +77,17 @@ export default {
     alignItems: 'center',
     width: '100%',
     height: '100%',
-    pointerEvents: 'all'
-  },
-  // __image-link a
-  '.psds-card__image-link a': {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100%',
-    width: '100%',
-    textDecoration: 'none',
-    transition: `all ${core.motion.speedNormal}`
+    pointerEvents: 'all',
+
+    '& a': {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100%',
+      width: '100%',
+      textDecoration: 'none',
+      transition: `all ${core.motion.speedNormal}`
+    }
   },
 
   // __full-overlay
@@ -102,10 +103,11 @@ export default {
     background: transparentize(0.5, core.colors.black),
     transition: `opacity ${core.motion.speedNormal}`,
     pointerEvents: 'none',
-    opacity: 0
-  },
-  '.psds-card__full-overlay:focus-within': {
-    opacity: 1
+    opacity: 0,
+
+    '&:focus-within, &[focus-within]': {
+      opacity: 1
+    }
   },
   '.psds-card__full-overlay--fullOverlayVisible': {
     opacity: 1
@@ -114,10 +116,11 @@ export default {
   // __full-overlay-link
   '.psds-card__full-overlay-link': {
     pointerEvents: 'all',
-    color: core.colors.white
-  },
-  '.psds-card__full-overlay-link > a': {
-    display: 'flex'
+    color: core.colors.white,
+
+    '& > a': {
+      display: 'flex'
+    }
   },
 
   // __action-bar
@@ -137,13 +140,14 @@ export default {
     )}, transparent)`,
     transition: `opacity ${core.motion.speedNormal}`,
     pointerEvents: 'none',
-    opacity: 0
+    opacity: 0,
+
+    '&:focus-within, &[focus-within]': {
+      opacity: 1
+    }
   },
   '.psds-card__action-bar--fullOverlay.psds-card__action-bar--no-actionBarVisible': {
     background: 'none'
-  },
-  '.psds-card__action-bar:focus-within': {
-    opacity: 1
   },
   '.psds-card__action-bar--actionBarVisible': {
     opacity: 1
@@ -158,21 +162,24 @@ export default {
     border: 'none',
     color: transparentize(0.2, core.colors.white),
     background: 'none',
-    transition: `all ${core.motion.speedNormal}`
-  },
-  '.psds-card__action-bar__button:hover': actionBarButtonHover,
-  '.psds-card__action-bar__button:active': actionBarButtonHover,
-  '.psds-card__action-bar__button .psds-card__action-bar__button': {
-    marginLeft: core.layout.spacingSmall
+    transition: `all ${core.motion.speedNormal}`,
+
+    '&:hover, &:active': {
+      color: core.colors.white
+    },
+    '& + &': {
+      marginLeft: core.layout.spacingSmall
+    }
   },
   // __action-bar__button--disabled
   '.psds-card__action-bar__button--disabled': {
     color: core.colors.gray02,
-    background: core.colors.gray03
-  },
-  '.psds-card__action-bar__button--disabled:hover': {
-    color: core.colors.gray02,
-    background: core.colors.gray03
+    background: core.colors.gray03,
+
+    '&:hover': {
+      color: core.colors.gray02,
+      background: core.colors.gray03
+    }
   },
 
   // __bonus-bar
@@ -258,8 +265,13 @@ export default {
     display: 'block',
     paddingTop: core.layout.spacingXSmall,
     fontWeight: core.type.fontWeightMedium,
-    overflow: 'hidden',
+    overflow: 'hidden'
+  },
+  [`.psds-card__title--theme-${themeNames.dark}`]: {
     color: core.colors.white
+  },
+  [`.psds-card__title--theme-${themeNames.light}`]: {
+    color: core.colors.gray06
   },
 
   // __metadata
@@ -268,8 +280,13 @@ export default {
     alignItems: 'center',
     fontWeight: core.type.fontWeightBook,
     lineHeight: core.type.lineHeightTight,
-    color: core.colors.gray02,
     maxWidth: '100%'
+  },
+  [`.psds-card__metadata--theme-${themeNames.dark}`]: {
+    color: core.colors.gray02
+  },
+  [`.psds-card__metadata--theme-${themeNames.light}`]: {
+    color: core.colors.gray03
   },
   // __metadata--size
   [`.psds-card__metadata--size-${vars.sizes.small}`]: {
@@ -287,10 +304,11 @@ export default {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    flexShrink: 2
-  },
-  '.psds-card__metadata__datum:nth-of-type(1)': {
-    flexShrink: 1
+    flexShrink: 2,
+
+    '&:nth-of-type(1)': {
+      flexShrink: 1
+    }
   },
 
   // __metadata__dot
