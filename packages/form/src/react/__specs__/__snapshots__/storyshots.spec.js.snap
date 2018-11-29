@@ -57,8 +57,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1r967oi=""
             >
               <div
-                className=""
-                data-css-f0o9km=""
+                data-css-gyxcic=""
               >
                 <input
                   data-css-ly16us=""
@@ -89,8 +88,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1r967oi=""
             >
               <div
-                className=""
-                data-css-f0o9km=""
+                data-css-gyxcic=""
               >
                 <input
                   data-css-ly16us=""
@@ -126,8 +124,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1r967oi=""
             >
               <div
-                className=""
-                data-css-w2l3iv=""
+                data-css-1h2uygg=""
               >
                 <input
                   data-css-ly16us=""
@@ -181,41 +178,49 @@ exports[`Storyshots Sample Form sample 1`] = `
             <div
               data-css-1812rv9=""
             >
-              <button
-                data-css-8bndf1=""
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-              >
-                <span
-                  aria-hidden={true}
-                  data-css-e6fvyw=""
-                >
-                  Select your occupation...
-                </span>
-                <span
-                  data-css-5m5yd6=""
-                >
-                  Select your occupation...
-                </span>
-              </button>
               <div
-                data-css-cstzed=""
+                data-css-gyxcic=""
               >
                 <div
-                  className="css-otejxm"
+                  data-css-1en8fmq=""
                 >
-                  <svg
-                    aria-label="caret down icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <button
+                    data-css-8bndf1=""
+                    disabled={false}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
                   >
-                    <path
-                      d="M12.5 14L8 10h9z"
-                    />
-                  </svg>
+                    <span
+                      aria-hidden={true}
+                      data-css-e6fvyw=""
+                    >
+                      Select your occupation...
+                    </span>
+                    <span
+                      data-css-5m5yd6=""
+                    >
+                      Select your occupation...
+                    </span>
+                  </button>
+                  <div
+                    data-css-cstzed=""
+                  >
+                    <div
+                      className="css-otejxm"
+                    >
+                      <svg
+                        aria-label="caret down icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.5 14L8 10h9z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -230,23 +235,27 @@ exports[`Storyshots Sample Form sample 1`] = `
             onKeyDown={[Function]}
           >
             <div
-              aria-checked={true}
-              data-css-1vvay1p=""
-              role="checkbox"
-              tabIndex="0"
+              data-css-gyxcic=""
             >
-              <svg
-                aria-label="Checkmark"
-                data-css-a3uikz=""
-                role="img"
-                version="1.1"
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                aria-checked={true}
+                data-css-1erplld=""
+                role="checkbox"
+                tabIndex="0"
               >
-                <polygon
-                  points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
-                />
-              </svg>
+                <svg
+                  aria-label="Checkmark"
+                  data-css-a3uikz=""
+                  role="img"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
+                  />
+                </svg>
+              </div>
             </div>
             <input
               checked={true}
@@ -288,12 +297,16 @@ exports[`Storyshots Sample Form sample 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  aria-checked={false}
-                  data-css-dbvyuf=""
-                  onFocus={[Function]}
-                  role="radio"
-                  tabIndex="-1"
-                />
+                  data-css-fgf3i2=""
+                >
+                  <div
+                    aria-checked={false}
+                    data-css-dbvyuf=""
+                    onFocus={[Function]}
+                    role="radio"
+                    tabIndex="-1"
+                  />
+                </div>
                 <input
                   checked={false}
                   data-css-gyrv08=""
@@ -317,12 +330,16 @@ exports[`Storyshots Sample Form sample 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  aria-checked={false}
-                  data-css-dbvyuf=""
-                  onFocus={[Function]}
-                  role="radio"
-                  tabIndex="-1"
-                />
+                  data-css-fgf3i2=""
+                >
+                  <div
+                    aria-checked={false}
+                    data-css-dbvyuf=""
+                    onFocus={[Function]}
+                    role="radio"
+                    tabIndex="-1"
+                  />
+                </div>
                 <input
                   checked={false}
                   data-css-gyrv08=""
@@ -366,18 +383,20 @@ exports[`Storyshots Sample Form sample 1`] = `
             <div
               data-css-1ghdxx6=""
             >
-              <textarea
-                data-css-1vpjki6=""
-                disabled={false}
-                onBlur={[Function]}
-                onFocus={[Function]}
-                placeholder="Anything else to report?"
-                style={
-                  Object {
-                    "height": 112,
+              <div
+                data-css-gyxcic=""
+              >
+                <textarea
+                  data-css-1vpjki6=""
+                  disabled={false}
+                  placeholder="Anything else to report?"
+                  style={
+                    Object {
+                      "height": 112,
+                    }
                   }
-                }
-              />
+                />
+              </div>
             </div>
           </label>
         </div>
@@ -391,7 +410,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-gukh6t=""
+                data-css-1ij2lam=""
                 disabled={false}
                 style={Object {}}
               >
@@ -406,7 +425,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-1w956hh=""
+                data-css-3rnlur=""
                 disabled={false}
                 style={Object {}}
               >
