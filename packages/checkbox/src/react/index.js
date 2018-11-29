@@ -96,6 +96,7 @@ class Checkbox extends React.Component {
       >
         <Halo
           error={allProps.error}
+          inline
           gapSize={Halo.gapSizes.small}
           visibleOnFocus={!allProps.disabled}
         >
