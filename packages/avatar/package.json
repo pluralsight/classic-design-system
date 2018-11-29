@@ -21,7 +21,8 @@
   },
   "jest": {
     "setupFiles": [
-      "raf/polyfill"
+      "raf/polyfill",
+      "<rootDir>/test/setup.js"
     ]
   },
   "keywords": [],
@@ -41,6 +42,8 @@
     "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/addons": "^4.0.0",
     "@storybook/react": "^4.0.0",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
