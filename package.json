@@ -22,9 +22,7 @@
     "publish:beta": "npm run publish -- --npm-tag=beta",
     "site": "cd packages/site && npm start",
     "start": "npm run site",
-    "test": "jest",
-    "test:updateSnapshot": "npm run test -- --updateSnapshot",
-    "test:watch": "npm run test -- --watchAll"
+    "test": "lerna run test --stream"
   },
   "lint-staged": {
     "ignore": [
