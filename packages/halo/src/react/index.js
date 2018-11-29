@@ -29,6 +29,7 @@ const styles = {
       css[gapSize],
       css[gapTheme],
 
+      props.inline && css[`${BASE_CLASSNAME}--inline`],
       props.error && css[`${BASE_CLASSNAME}--error`],
       props.visible && css[visible],
       props.visibleOnFocus && css[visibleOnFocus]
@@ -39,6 +40,7 @@ const styles = {
 const Halo = props => {
   const {
     error,
+    inline,
     gapSize,
     themeName,
     shape,
@@ -56,16 +58,18 @@ Halo.shapes = vars.shapes
 Halo.defaultProps = {
   error: false,
   gapSize: vars.gapSizes.default,
+  inline: false,
   shape: vars.shapes.default,
   visible: false,
   visibleOnFocus: true
 }
 
 Halo.propTypes = {
+  className: PropTypes.string,
   error: PropTypes.bool,
   gapSize: PropTypes.oneOf(Object.values(vars.gapSizes)),
+  inline: PropTypes.bool,
   shape: PropTypes.oneOf(Object.values(vars.shapes)),
-  className: PropTypes.string,
   themeName: PropTypes.string,
   visible: PropTypes.bool,
   visibleOnFocus: PropTypes.bool

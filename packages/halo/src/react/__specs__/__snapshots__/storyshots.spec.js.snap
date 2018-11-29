@@ -5,7 +5,7 @@ exports[`Storyshots Halo/error false 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-gyxcic=""
+    data-css-1xm24a9=""
   >
     <div>
       not error
@@ -19,7 +19,7 @@ exports[`Storyshots Halo/error true 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-1h2uygg=""
+    data-css-utxo7p=""
   >
     <div>
       error
@@ -33,7 +33,7 @@ exports[`Storyshots Halo/gapSizes default 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-myk20q=""
+    data-css-nbiptv=""
   >
     <div>
       default
@@ -47,7 +47,7 @@ exports[`Storyshots Halo/gapSizes small 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-myk20q=""
+    data-css-nbiptv=""
   >
     <div>
       small
@@ -61,7 +61,7 @@ exports[`Storyshots Halo/shapes default 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-myk20q=""
+    data-css-nbiptv=""
   >
     <div
       shape="default"
@@ -77,7 +77,7 @@ exports[`Storyshots Halo/shapes pill 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-uok4g6=""
+    data-css-34tmci=""
   >
     <div
       shape="pill"
@@ -93,7 +93,7 @@ exports[`Storyshots Halo/visible false & error 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-1h2uygg=""
+    data-css-utxo7p=""
   >
     <div>
       not visible (always visible if error) & error
@@ -107,7 +107,7 @@ exports[`Storyshots Halo/visible false & not visibleOnFocus 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-2koqcv=""
+    data-css-14u1z9b=""
   >
     <div>
       really not visible (even on focus)
@@ -121,7 +121,7 @@ exports[`Storyshots Halo/visible false 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-gyxcic=""
+    data-css-1xm24a9=""
   >
     <div>
       not visible (until focused)
@@ -135,7 +135,7 @@ exports[`Storyshots Halo/visible true & error 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-myk20q=""
+    data-css-nbiptv=""
   >
     <div>
       visible & error
@@ -149,7 +149,7 @@ exports[`Storyshots Halo/visible true 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-myk20q=""
+    data-css-nbiptv=""
   >
     <div>
       visible
@@ -163,7 +163,7 @@ exports[`Storyshots Halo/visibleOnFocus enabled & error 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-1h2uygg=""
+    data-css-utxo7p=""
   >
     <div>
       visible when focused with error
@@ -177,7 +177,7 @@ exports[`Storyshots Halo/visibleOnFocus enabled 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-gyxcic=""
+    data-css-1xm24a9=""
   >
     <div>
       visible when focused

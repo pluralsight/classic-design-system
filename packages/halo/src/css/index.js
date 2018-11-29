@@ -7,6 +7,7 @@ export default {
     position: 'relative',
     display: 'inline-block',
     lineHeight: 0,
+    flex: '1 1 100%',
 
     '&:after': {
       content: ' ',
@@ -17,6 +18,11 @@ export default {
       pointerEvents: 'none',
       visibility: 'hidden'
     }
+  },
+
+  [`${BASE_CLASSNAME}--inline`]: {
+    flexBasis: 0,
+    flexGrow: 0
   },
 
   [`${BASE_CLASSNAME}--error`]: {
