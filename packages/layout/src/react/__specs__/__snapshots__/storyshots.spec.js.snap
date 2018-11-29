@@ -633,7 +633,7 @@ exports[`Storyshots PageHeadingLayout long title w/ actions 1`] = `
         data-css-1cnar9w=""
       >
         <button
-          data-css-gukh6t=""
+          data-css-1ij2lam=""
           disabled={false}
           style={Object {}}
         >
@@ -676,7 +676,7 @@ exports[`Storyshots PageHeadingLayout long titlew/ lots of actions 1`] = `
         data-css-1cnar9w=""
       >
         <button
-          data-css-gukh6t=""
+          data-css-1ij2lam=""
           disabled={false}
           style={Object {}}
         >
@@ -693,7 +693,7 @@ exports[`Storyshots PageHeadingLayout long titlew/ lots of actions 1`] = `
           A link
         </a>
         <button
-          data-css-gukh6t=""
+          data-css-1ij2lam=""
           disabled={false}
           style={Object {}}
         >
@@ -710,7 +710,7 @@ exports[`Storyshots PageHeadingLayout long titlew/ lots of actions 1`] = `
           A link
         </a>
         <button
-          data-css-gukh6t=""
+          data-css-1ij2lam=""
           disabled={false}
           style={Object {}}
         >
@@ -727,7 +727,7 @@ exports[`Storyshots PageHeadingLayout long titlew/ lots of actions 1`] = `
           A link
         </a>
         <button
-          data-css-gukh6t=""
+          data-css-1ij2lam=""
           disabled={false}
           style={Object {}}
         >
@@ -770,7 +770,7 @@ exports[`Storyshots PageHeadingLayout w/ actions 1`] = `
         data-css-1cnar9w=""
       >
         <button
-          data-css-gukh6t=""
+          data-css-1ij2lam=""
           disabled={false}
           style={Object {}}
         >
@@ -813,7 +813,7 @@ exports[`Storyshots PageHeadingLayout w/ lots of actions 1`] = `
         data-css-1cnar9w=""
       >
         <button
-          data-css-gukh6t=""
+          data-css-1ij2lam=""
           disabled={false}
           style={Object {}}
         >
@@ -830,7 +830,7 @@ exports[`Storyshots PageHeadingLayout w/ lots of actions 1`] = `
           A link
         </a>
         <button
-          data-css-gukh6t=""
+          data-css-1ij2lam=""
           disabled={false}
           style={Object {}}
         >
@@ -847,7 +847,7 @@ exports[`Storyshots PageHeadingLayout w/ lots of actions 1`] = `
           A link
         </a>
         <button
-          data-css-gukh6t=""
+          data-css-1ij2lam=""
           disabled={false}
           style={Object {}}
         >
@@ -864,7 +864,7 @@ exports[`Storyshots PageHeadingLayout w/ lots of actions 1`] = `
           A link
         </a>
         <button
-          data-css-gukh6t=""
+          data-css-1ij2lam=""
           disabled={false}
           style={Object {}}
         >
