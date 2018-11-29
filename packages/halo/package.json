@@ -28,6 +28,7 @@
   "keywords": [],
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.3.6",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.1.0",
     "@pluralsight/ps-design-system-theme": "^1.4.1",
     "focus-within": "^2.0.0",
     "hoist-non-react-statics": "^3.0.1",

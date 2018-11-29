@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import css, { BASE_CLASSNAME } from '../css'
 import * as vars from '../vars'
@@ -37,20 +38,9 @@ const styles = {
   }
 }
 
-const Halo = props => {
-  const {
-    error,
-    inline,
-    gapSize,
-    themeName,
-    shape,
-    visible,
-    visibleOnFocus,
-    ...filteredProps
-  } = props
-
-  return <div {...styles.halo(props)} {...filteredProps} />
-}
+const Halo = props => (
+  <div {...styles.halo(props)} {...filterReactProps(props)} />
+)
 
 Halo.gapSizes = vars.gapSizes
 Halo.shapes = vars.shapes
