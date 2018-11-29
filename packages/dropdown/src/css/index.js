@@ -61,7 +61,8 @@ export default {
   },
   '.psds-dropdown__field-aligner': {
     display: 'inline-flex',
-    alignItems: 'center'
+    alignItems: 'center',
+    width: '100%'
   },
 
   // __icon
