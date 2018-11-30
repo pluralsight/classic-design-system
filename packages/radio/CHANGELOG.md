@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@0.3.12...@pluralsight/ps-design-system-radio@0.3.13) (2018-11-30)
+
+
+### Bug Fixes
+
+* **radio:** mark halo as inline; update snapshot ([7008430](https://github.com/pluralsight/design-system/commit/7008430))
+
+
+
+
+
 ## [0.3.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@0.3.11...@pluralsight/ps-design-system-radio@0.3.12) (2018-11-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-radio

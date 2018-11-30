@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-badge",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Design System component for badge ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -27,8 +27,8 @@
   "keywords": [],
   "style": "dist/css/index.css",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.3.6",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.0",
+    "@pluralsight/ps-design-system-core": "^4.4.0",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.1.1",
     "@pluralsight/ps-design-system-theme": "^1.4.1",
     "prop-types": "^15.5.10"
   },
@@ -40,7 +40,7 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "*",
     "@pluralsight/ps-design-system-storybook-addon-center": "*",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "*",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.2.6",
     "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/addons": "^4.0.0",
     "@storybook/react": "^4.0.0",

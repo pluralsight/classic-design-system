@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.13.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.13.6...@pluralsight/ps-design-system-icon@8.13.7) (2018-11-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
 ## [8.13.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.13.5...@pluralsight/ps-design-system-icon@8.13.6) (2018-11-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon

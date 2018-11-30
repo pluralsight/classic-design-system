@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.6.2...@pluralsight/ps-design-system-switch@1.6.3) (2018-11-30)
+
+
+### Bug Fixes
+
+* **switch:** mark halo as inline; update snapshot ([b1d2da0](https://github.com/pluralsight/design-system/commit/b1d2da0))
+
+
+
+
+
 ## [1.6.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.6.1...@pluralsight/ps-design-system-switch@1.6.2) (2018-11-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-switch

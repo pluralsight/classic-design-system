@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@1.3.18...@pluralsight/ps-design-system-viewtoggle@1.3.19) (2018-11-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
 ## [1.3.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@1.3.17...@pluralsight/ps-design-system-viewtoggle@1.3.18) (2018-11-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle

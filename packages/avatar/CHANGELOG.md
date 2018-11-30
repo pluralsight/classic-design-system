@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.8.0...@pluralsight/ps-design-system-avatar@2.0.0) (2018-11-30)
+
+
+### Features
+
+* **avatar:** allow alt prop. better screen reader support ([fb68de0](https://github.com/pluralsight/design-system/commit/fb68de0)), closes [#365](https://github.com/pluralsight/design-system/issues/365)
+
+
+### BREAKING CHANGES
+
+* **avatar:** if no alt attr is provided the image will be marked as aria-hidden
+
+
+
+
+
 # [1.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@1.7.13...@pluralsight/ps-design-system-avatar@1.8.0) (2018-11-14)
 
 

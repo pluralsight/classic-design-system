@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.3.6...@pluralsight/ps-design-system-core@4.4.0) (2018-11-30)
+
+
+### Features
+
+* run all tests from root ([539a773](https://github.com/pluralsight/design-system/commit/539a773)), closes [#366](https://github.com/pluralsight/design-system/issues/366)
+
+
+
+
+
 ## [4.3.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.3.5...@pluralsight/ps-design-system-core@4.3.6) (2018-11-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-core

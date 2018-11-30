@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@2.0.3...@pluralsight/ps-design-system-halo@2.1.0) (2018-11-30)
+
+
+### Features
+
+* **halo:** add inline support ([46a847b](https://github.com/pluralsight/design-system/commit/46a847b))
+* **halo:** forward react props ([2059f38](https://github.com/pluralsight/design-system/commit/2059f38))
+
+
+
+
+
 ## [2.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@2.0.2...@pluralsight/ps-design-system-halo@2.0.3) (2018-11-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-halo

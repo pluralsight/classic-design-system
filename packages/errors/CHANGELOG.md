@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@1.3.12...@pluralsight/ps-design-system-errors@2.0.0) (2018-11-30)
+
+
+### Bug Fixes
+
+* **errors:** use common <Button /> ([800b7ae](https://github.com/pluralsight/design-system/commit/800b7ae)), closes [#361](https://github.com/pluralsight/design-system/issues/361)
+
+
+### BREAKING CHANGES
+
+* **errors:** removed the generated html output that is used for generic errors pages(haproxy)
+
+
+
+
+
 ## [1.3.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@1.3.11...@pluralsight/ps-design-system-errors@1.3.12) (2018-11-27)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-errors

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@1.2.0...@pluralsight/ps-design-system-starrating@1.2.1) (2018-11-30)
+
+
+### Bug Fixes
+
+* **starrating:** forward allowed props ([13944b2](https://github.com/pluralsight/design-system/commit/13944b2))
+
+
+
+
+
 # [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@1.1.2...@pluralsight/ps-design-system-starrating@1.2.0) (2018-11-20)
 
 
