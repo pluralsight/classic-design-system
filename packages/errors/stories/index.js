@@ -8,9 +8,9 @@ import {
   NotFoundErrorPage,
   InternalServerErrorPage,
   ServiceUnavailableErrorPage
-} from '../react'
+} from '../src/react'
 
-const pagesStory = storiesOf('pages', module)
+storiesOf('pages', module)
   .addDecorator(themeDecorator(addons))
   .add(`403`, _ => <ForbiddenErrorPage />)
   .add(`404`, _ => <NotFoundErrorPage />)
