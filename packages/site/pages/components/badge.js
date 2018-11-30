@@ -1,5 +1,6 @@
 import React from 'react'
 import Badge from '@pluralsight/ps-design-system-badge/react'
+import Text from '@pluralsight/ps-design-system-text/react'
 
 import {
   Chrome,
@@ -59,6 +60,7 @@ export default withServerProps(_ => (
       </P>
       <Example.React
         includes={{ Badge }}
+        themeToggle
         codes={Object.values(Badge.appearances).map(
           a => `<Badge appearance={Badge.appearances.${a}}>Badge</Badge>`
         )}
@@ -66,6 +68,10 @@ export default withServerProps(_ => (
 
       <SectionHeading>Colors</SectionHeading>
       <P>Colors come from the Design System. Semantics come from your heart.</P>
+      <P>
+        To get the light colors, <Text.Code>Badge.appearances.subtle</Text.Code>{' '}
+        must be used.
+      </P>
       <Example.React
         includes={{ Badge }}
         themeToggle
