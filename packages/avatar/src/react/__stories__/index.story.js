@@ -8,6 +8,7 @@ const storySizes = storiesOf('Default', module)
 Object.values(Avatar.sizes).forEach(size =>
   storySizes.add(size, () => (
     <Avatar
+      alt={`${size} avatar`}
       size={size}
       src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
     />
@@ -15,6 +16,7 @@ Object.values(Avatar.sizes).forEach(size =>
 )
 storySizes.add('light image', () => (
   <Avatar
+    alt="light image avatar"
     src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
     name="Jake Trent"
   />
