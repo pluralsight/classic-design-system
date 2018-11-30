@@ -4,28 +4,19 @@ import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
 import css from '../css'
-import { buildCompoundClass } from '../js'
+import { defaultWithColor, subtleThemeWithColor } from '../js'
 import * as vars from '../vars'
 
-import { appearancePropChecker } from './prop-types'
-
 const styles = {
-  badge: props => {
-    const { appearance, color, themeName } = props
-
-    // NOTE: light theme doesn't support the stroke appearance
-    //       so fallback to the dark theme
-    const isStroke = appearance === vars.appearances.stroke
-    const theme = isStroke ? themeNames.dark : themeName
-
-    const baseClass = '.psds-badge'
-    const compoundClass = buildCompoundClass({ appearance, color, theme })
-
-    return glamor.css(css[baseClass], css[compoundClass])
-  }
+  badge: props =>
+    glamor.css(
+      css['.psds-badge'],
+      props.appearance === appearances.default
+        ? css[defaultWithColor(props.color)]
+        : css[subtleThemeWithColor(props.themeName, props.color)]
+    )
 }
 
 const Badge = props => (
@@ -36,7 +27,7 @@ Badge.appearances = vars.appearances
 Badge.colors = vars.colors
 
 Badge.propTypes = {
-  appearance: appearancePropChecker,
+  appearance: PropTypes.oneOf(Object.values(vars.appearances)),
   color: PropTypes.oneOf(Object.values(vars.colors))
 }
 

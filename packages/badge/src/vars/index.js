@@ -1,4 +1,4 @@
-export const appearances = { default: 'default', stroke: 'stroke' }
+export const appearances = { default: 'default', subtle: 'subtle' }
 
 export const colors = {
   gray: 'gray',
