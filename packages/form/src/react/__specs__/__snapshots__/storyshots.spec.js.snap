@@ -57,7 +57,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1r967oi=""
             >
               <div
-                data-css-gyxcic=""
+                data-css-1xm24a9=""
               >
                 <input
                   data-css-ly16us=""
@@ -88,7 +88,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1r967oi=""
             >
               <div
-                data-css-gyxcic=""
+                data-css-1xm24a9=""
               >
                 <input
                   data-css-ly16us=""
@@ -124,7 +124,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1r967oi=""
             >
               <div
-                data-css-1h2uygg=""
+                data-css-utxo7p=""
               >
                 <input
                   data-css-ly16us=""
@@ -179,10 +179,10 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1812rv9=""
             >
               <div
-                data-css-gyxcic=""
+                data-css-1xm24a9=""
               >
                 <div
-                  data-css-1en8fmq=""
+                  data-css-1r44zeb=""
                 >
                   <button
                     data-css-8bndf1=""
@@ -229,13 +229,193 @@ exports[`Storyshots Sample Form sample 1`] = `
         <div
           data-css-4l6uky=""
         >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              data-css-480533=""
+            >
+              <a
+                data-css-qgf2xw=""
+                href="http://google.com"
+              >
+                <span
+                  data-css-1997kh1=""
+                >
+                  Foo
+                </span>
+              </a>
+            </div>
+            <span
+              style={
+                Object {
+                  "marginRight": "8px",
+                }
+              }
+            />
+            <div
+              data-css-480533=""
+            >
+              <a
+                data-css-qgf2xw=""
+                href="http://google.com"
+              >
+                <span
+                  data-css-1997kh1=""
+                >
+                  Bar
+                </span>
+              </a>
+            </div>
+            <span
+              style={
+                Object {
+                  "marginRight": "8px",
+                }
+              }
+            />
+            <div
+              data-css-480533=""
+            >
+              <a
+                data-css-qgf2xw=""
+                href="http://google.com"
+              >
+                <span
+                  data-css-1997kh1=""
+                >
+                  Baz
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <label
+            data-css-w0yocm=""
+            onBlur={[Function]}
+            onFocus={[Function]}
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              data-css-n53zhn=""
+            >
+              Choose a Date
+            </div>
+            <div
+              data-css-1xm24a9=""
+            >
+              <div
+                data-css-17azrqv=""
+              >
+                <input
+                  data-css-baao50=""
+                  disabled={false}
+                  name="mm"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  placeholder="mm"
+                  style={
+                    Object {
+                      "width": "32px",
+                    }
+                  }
+                  value=""
+                />
+                <span
+                  data-css-vk5b0l=""
+                >
+                  /
+                </span>
+                <input
+                  data-css-baao50=""
+                  disabled={false}
+                  name="dd"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  placeholder="dd"
+                  style={
+                    Object {
+                      "width": "28px",
+                    }
+                  }
+                  value=""
+                />
+                <span
+                  data-css-vk5b0l=""
+                >
+                  /
+                </span>
+                <input
+                  data-css-baao50=""
+                  disabled={false}
+                  name="yyyy"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  placeholder="yyyy"
+                  style={
+                    Object {
+                      "width": "50px",
+                    }
+                  }
+                  value=""
+                />
+                <input
+                  data-css-gyrv08=""
+                  disabled={false}
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  readOnly={true}
+                  tabIndex="-1"
+                />
+                <button
+                  data-css-ay0j88=""
+                  disabled={false}
+                  onClick={[Function]}
+                >
+                  <div
+                    className="css-otejxm"
+                  >
+                    <svg
+                      aria-label="calendar icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
           <label
             data-css-kn3wr0=""
             onClick={[Function]}
             onKeyDown={[Function]}
           >
             <div
-              data-css-gyxcic=""
+              data-css-vzrwad=""
             >
               <div
                 aria-checked={true}
@@ -297,7 +477,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  data-css-fgf3i2=""
+                  data-css-480533=""
                 >
                   <div
                     aria-checked={false}
@@ -330,7 +510,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  data-css-fgf3i2=""
+                  data-css-480533=""
                 >
                   <div
                     aria-checked={false}
@@ -367,6 +547,55 @@ exports[`Storyshots Sample Form sample 1`] = `
         <div
           data-css-4l6uky=""
         >
+          <button
+            aria-checked={false}
+            data-css-1fg1tn7=""
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            role="checkbox"
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              data-css-480533=""
+            >
+              <div
+                data-css-1rncajx=""
+              >
+                <div
+                  data-css-1nqr5a6=""
+                />
+              </div>
+            </div>
+            <input
+              checked={false}
+              data-css-6wu9td=""
+              readOnly={true}
+              tabIndex="-1"
+              type="checkbox"
+            />
+            <label
+              data-css-1wrf03j=""
+            >
+              toggle
+            </label>
+          </button>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            data-css-gdknmt=""
+          />
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
           <label
             data-css-1p1sjwu=""
             style={
@@ -384,7 +613,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1ghdxx6=""
             >
               <div
-                data-css-gyxcic=""
+                data-css-1xm24a9=""
               >
                 <textarea
                   data-css-1vpjki6=""

@@ -1,10 +1,11 @@
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
+
+import Button from '@pluralsight/ps-design-system-button/react'
 import * as textVars from '@pluralsight/ps-design-system-text/vars'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
-import Button from './button'
 import css from '../css'
 import Heading from './heading'
 import icons from './icons'
@@ -63,10 +64,9 @@ const ErrorPage = (props, context) => {
   }
   return (
     <div {...styles.page(allProps)}>
-      {allProps.iconId &&
-        icons[allProps.iconId] && (
-          <div {...styles.icon(allProps)}>{icons[allProps.iconId](React)}</div>
-        )}
+      {allProps.iconId && icons[allProps.iconId] && (
+        <div {...styles.icon(allProps)}>{icons[allProps.iconId](React)}</div>
+      )}
       <div {...styles.text(allProps)}>
         <Heading size={textVars.headingSizes.medium}>
           <h1>{allProps.text}</h1>

@@ -1,3 +1,5 @@
+import React from 'react'
+
 import Avatar from '@pluralsight/ps-design-system-avatar/react'
 import Button from '@pluralsight/ps-design-system-button/react'
 import Card from '@pluralsight/ps-design-system-card/react'
@@ -10,8 +12,6 @@ import {
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
@@ -256,7 +256,8 @@ export default withServerProps(_ => (
             PropTypes.row([
               'image',
               <span>
-                <code>Card.Image</code> |
+                <code>Card.Image</code>
+                <span> | </span>
                 <code>Card.ImageLink > a > Card.Image</code>
               </span>,
               true,

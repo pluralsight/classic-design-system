@@ -37,12 +37,15 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "devDependencies": {
+    "@pluralsight/ps-design-system-tag": "^1.7.9",
     "@pluralsight/ps-design-system-actionmenu": "^3.1.18",
     "@pluralsight/ps-design-system-build": "^1.9.0",
     "@pluralsight/ps-design-system-button": "^10.10.0",
+    "@pluralsight/ps-design-system-datepicker": "^0.4.21",
     "@pluralsight/ps-design-system-checkbox": "^0.3.13",
     "@pluralsight/ps-design-system-dropdown": "^0.6.9",
     "@pluralsight/ps-design-system-radio": "^0.3.12",
+    "@pluralsight/ps-design-system-switch": "^1.6.2",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.2.5",
     "@pluralsight/ps-design-system-text": "^10.7.20",
     "@pluralsight/ps-design-system-textarea": "^0.4.12",
