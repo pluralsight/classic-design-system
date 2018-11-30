@@ -28,6 +28,7 @@
   "style": "dist/css/index.css",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.3.6",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.1.0",
     "@pluralsight/ps-design-system-theme": "^1.4.1",
     "prop-types": "^15.5.10"
   },

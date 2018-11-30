@@ -2,6 +2,7 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
@@ -117,8 +118,11 @@ class StarRating extends React.PureComponent {
   render() {
     const { starCount, value } = this.props
 
+    const filteredProps = filterReactProps(this.props)
+    delete filteredProps.onChange
+
     return (
-      <div {...styles.starRating(this.props)}>
+      <div {...styles.starRating(this.props)} {...filteredProps}>
         {this.isInteractive && (
           <label>
             <ScreenReaderText>Rate</ScreenReaderText>

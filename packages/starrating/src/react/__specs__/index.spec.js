@@ -16,6 +16,15 @@ jest.mock('../star', () => {
 })
 
 describe('StarRating', () => {
+  describe('prop forwarding', () => {
+    const propsToCheck = ['className', 'style']
+
+    it.each(propsToCheck)(`should forward "%s"`, propName => {
+      const wrapper = mount(<StarRating {...{ [propName]: null }} />)
+      expect(wrapper.prop(propName)).toBeDefined()
+    })
+  })
+
   describe('with default props', () => {
     let stars, wrapper
 

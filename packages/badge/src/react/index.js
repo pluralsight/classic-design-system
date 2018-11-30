@@ -2,6 +2,7 @@ import * as glamor from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
@@ -27,10 +28,9 @@ const styles = {
   }
 }
 
-const Badge = props => {
-  const { appearance, color, themeName, ...filteredProps } = props
-  return <div {...styles.badge(props)} {...filteredProps} />
-}
+const Badge = props => (
+  <div {...styles.badge(props)} {...filterReactProps(props)} />
+)
 
 Badge.appearances = vars.appearances
 Badge.colors = vars.colors
