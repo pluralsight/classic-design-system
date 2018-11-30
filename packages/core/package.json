@@ -9,8 +9,7 @@
   "module": "js/index.js",
   "scripts": {
     "build": "node ./build",
-    "prepublish": "npm run build",
-    "test": "echo \"Error: tests are run as a single design system suite\" && exit 1"
+    "prepublish": "npm run build"
   },
   "keywords": [],
   "style": "css/index.css",

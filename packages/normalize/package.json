@@ -8,8 +8,7 @@
   "main": "dist/index.css",
   "scripts": {
     "build": "node ./build",
-    "prepublish": "npm run build",
-    "test": "echo \"Error: tests run in as a single design system suite\" && exit 1"
+    "prepublish": "npm run build"
   },
   "keywords": [],
   "style": "dist/index.css",

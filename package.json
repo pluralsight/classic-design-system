@@ -22,9 +22,7 @@
     "publish:beta": "npm run publish -- --npm-tag=beta",
     "site": "cd packages/site && npm start",
     "start": "npm run site",
-    "test": "jest",
-    "test:updateSnapshot": "npm run test -- --updateSnapshot",
-    "test:watch": "npm run test -- --watchAll"
+    "test": "lerna run test --stream"
   },
   "lint-staged": {
     "ignore": [
@@ -52,16 +50,6 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.css$": "identity-obj-proxy",
-      "\\.svg$": "<rootDir>/test/__mocks__/svg-mock.js"
-    },
-    "testRegex": "packages/.*(/__tests__/.*|(\\.|/)(test|spec))\\.jsx?$",
-    "transformIgnorePatterns": [
-      "<rootDir>.*(node_modules)(?!.*@pluralsight.*).*$"
-    ]
   },
   "keywords": [
     "pluralsight",
@@ -101,15 +89,12 @@
     "gulp": "^3.9.1",
     "gulp-bump": "^3.1.0",
     "husky": "^0.15.0-rc.13",
-    "identity-obj-proxy": "^3.0.0",
     "inquirer": "^6.2.0",
-    "jest": "^23.6.0",
     "lerna": "^3.4.3",
     "lint-staged": "^7.3.0",
     "octopus-deploy": "^4.0.0",
     "prettier": "^1.7.4",
     "prettier-eslint-cli": "^4.7.1",
-    "react-test-renderer": "^16.3.2",
     "webpack": "^4.0.0",
     "yargs": "^11.0.0"
   }
