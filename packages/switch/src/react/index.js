@@ -88,7 +88,7 @@ class Switch extends React.Component {
 
     return (
       <button {...switchProps} aria-checked={allProps.checked} role="checkbox">
-        <Halo error={error} shape={Halo.shapes.pill} visible={isFocused}>
+        <Halo error={error} shape={Halo.shapes.pill} inline visible={isFocused}>
           <div {...styles.track(allProps)}>
             <div {...styles.thumb(allProps)} />
           </div>

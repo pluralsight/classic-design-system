@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import css, { BASE_CLASSNAME } from '../css'
 import * as vars from '../vars'
@@ -29,6 +30,7 @@ const styles = {
       css[gapSize],
       css[gapTheme],
 
+      props.inline && css[`${BASE_CLASSNAME}--inline`],
       props.error && css[`${BASE_CLASSNAME}--error`],
       props.visible && css[visible],
       props.visibleOnFocus && css[visibleOnFocus]
@@ -36,19 +38,9 @@ const styles = {
   }
 }
 
-const Halo = props => {
-  const {
-    error,
-    gapSize,
-    themeName,
-    shape,
-    visible,
-    visibleOnFocus,
-    ...filteredProps
-  } = props
-
-  return <div {...styles.halo(props)} {...filteredProps} />
-}
+const Halo = props => (
+  <div {...styles.halo(props)} {...filterReactProps(props)} />
+)
 
 Halo.gapSizes = vars.gapSizes
 Halo.shapes = vars.shapes
@@ -56,16 +48,18 @@ Halo.shapes = vars.shapes
 Halo.defaultProps = {
   error: false,
   gapSize: vars.gapSizes.default,
+  inline: false,
   shape: vars.shapes.default,
   visible: false,
   visibleOnFocus: true
 }
 
 Halo.propTypes = {
+  className: PropTypes.string,
   error: PropTypes.bool,
   gapSize: PropTypes.oneOf(Object.values(vars.gapSizes)),
+  inline: PropTypes.bool,
   shape: PropTypes.oneOf(Object.values(vars.shapes)),
-  className: PropTypes.string,
   themeName: PropTypes.string,
   visible: PropTypes.bool,
   visibleOnFocus: PropTypes.bool

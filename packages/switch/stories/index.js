@@ -2,14 +2,14 @@ import PropType from 'prop-types'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Switch from '../react'
+import Switch from '../src/react'
 
 const sizeStory = storiesOf('size', module)
 Object.keys(Switch.sizes).forEach(size =>
   sizeStory.add(size, _ => <Switch size={size}>Click me</Switch>)
 )
 
-const checkedStory = storiesOf('checked', module)
+storiesOf('checked', module)
   .add('false', _ => <Switch>Click me</Switch>)
   .add('true', _ => <Switch checked>Click me</Switch>)
 
@@ -40,7 +40,7 @@ Object.keys(Switch.colors).forEach(color =>
   ))
 )
 
-const clickStory = storiesOf('click', module)
+storiesOf('click', module)
   .add('large toggles', _ => (
     <ClickDemo>
       <Switch />
@@ -63,7 +63,7 @@ Object.keys(Switch.sizes).forEach(size =>
   )
 )
 
-const disabledStory = storiesOf('disabled', module)
+storiesOf('disabled', module)
   .add('false', _ => (
     <ClickDemo>
       <Switch />
@@ -75,7 +75,7 @@ const disabledStory = storiesOf('disabled', module)
     </ClickDemo>
   ))
 
-const errorStory = storiesOf('error', module)
+storiesOf('error', module)
   .add('false', _ => (
     <ClickDemo>
       <Switch />
