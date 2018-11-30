@@ -21,6 +21,7 @@ BadgeStory.propTypes = {
   appearance: PropTypes.string.isRequired
 }
 
-storiesOf('Badge / appearance', module)
-  .add('default', () => <BadgeStory appearance={Badge.appearances.default} />)
-  .add('stroke', () => <BadgeStory appearance={Badge.appearances.stroke} />)
+const appearanceStory = storiesOf('appearance', module)
+Object.values(Badge.appearances).forEach(appearance =>
+  appearanceStory.add(appearance, () => <BadgeStory appearance={appearance} />)
+)

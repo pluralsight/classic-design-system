@@ -1,23 +1,21 @@
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 import { appearances } from '../vars'
 
-export const buildAppearanceClass = appearance =>
-  `.psds-badge--appearance-${appearance}`
+export function defaultWithColor(c) {
+  return appearance(appearances.default) + color(c)
+}
 
-export const buildColorClass = color => `.psds-badge--color-${color}`
+export function subtleThemeWithColor(themeName, c) {
+  return appearance(appearances.subtle) + theme(themeName) + color(c)
+}
 
-export const buildThemeClass = theme => `.psds-badge--theme-${theme}`
+function appearance(a) {
+  return `.psds-badge--appearance-${a}`
+}
 
-export const buildCompoundClass = obj => {
-  const {
-    appearance = appearances.default,
-    theme = themeNames.dark,
-    color
-  } = obj
+function color(c) {
+  return `.psds-badge--color-${c}`
+}
 
-  return (
-    buildAppearanceClass(appearance) +
-    buildThemeClass(theme) +
-    buildColorClass(color)
-  )
+function theme(t) {
+  return `.psds-theme--${t}`
 }

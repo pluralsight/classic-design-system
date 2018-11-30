@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Badge / appearance default 1`] = `
+exports[`Storyshots appearance default 1`] = `
 <div
   data-css-claeju=""
 >
@@ -61,7 +61,7 @@ exports[`Storyshots Badge / appearance default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Badge / appearance stroke 1`] = `
+exports[`Storyshots appearance subtle 1`] = `
 <div
   data-css-claeju=""
 >
@@ -77,7 +77,7 @@ exports[`Storyshots Badge / appearance stroke 1`] = `
       <div
         data-css-dkqbo5=""
       >
-        stroke
+        subtle
          
         gray
       </div>
@@ -86,7 +86,7 @@ exports[`Storyshots Badge / appearance stroke 1`] = `
       <div
         data-css-1grr7kt=""
       >
-        stroke
+        subtle
          
         green
       </div>
@@ -95,7 +95,7 @@ exports[`Storyshots Badge / appearance stroke 1`] = `
       <div
         data-css-1v1fufr=""
       >
-        stroke
+        subtle
          
         yellow
       </div>
@@ -104,7 +104,7 @@ exports[`Storyshots Badge / appearance stroke 1`] = `
       <div
         data-css-waxjmf=""
       >
-        stroke
+        subtle
          
         red
       </div>
@@ -113,7 +113,7 @@ exports[`Storyshots Badge / appearance stroke 1`] = `
       <div
         data-css-1knqer3=""
       >
-        stroke
+        subtle
          
         blue
       </div>
