@@ -1,19 +1,23 @@
-import { action } from '@storybook/addon-actions'
-import addons from '@storybook/addons'
-import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
+
+import addons from '@storybook/addons'
 import { storiesOf } from '@storybook/react'
+
+import core from '@pluralsight/ps-design-system-core'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 // Form controls:
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
 import Button from '@pluralsight/ps-design-system-button/react'
-import Text from '@pluralsight/ps-design-system-text/react'
-import TextInput from '@pluralsight/ps-design-system-textinput/react'
-import TextArea from '@pluralsight/ps-design-system-textarea/react'
-import Radio from '@pluralsight/ps-design-system-radio/react'
 import Checkbox from '@pluralsight/ps-design-system-checkbox/react'
+import DatePicker from '@pluralsight/ps-design-system-datepicker/react'
 import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
+import Radio from '@pluralsight/ps-design-system-radio/react'
+import Switch from '@pluralsight/ps-design-system-switch/react'
+import Tag from '@pluralsight/ps-design-system-tag/react'
+import Text from '@pluralsight/ps-design-system-text/react'
+import TextArea from '@pluralsight/ps-design-system-textarea/react'
+import TextInput from '@pluralsight/ps-design-system-textinput/react'
 
 import Form from '../react'
 
@@ -26,7 +30,7 @@ const FormContainer = storyFn => (
   <div style={{ border: '1px solid blue' }}>{storyFn()}</div>
 )
 
-const sampleFormStory = storiesOf('Sample Form', module)
+storiesOf('Sample Form', module)
   .addDecorator(FormContainer)
   .addDecorator(PaddingDecorator)
   .addDecorator(themeDecorator(addons))
@@ -35,18 +39,22 @@ const sampleFormStory = storiesOf('Sample Form', module)
       <Text.Heading>
         <h2>Sample form</h2>
       </Text.Heading>
+
       <TextInput label="Name" placeholder="What's your name?" />
+
       <TextInput
         label="Alias"
         placeholder="Do you have a nick name?"
         subLabel="*Optional"
       />
+
       <TextInput
         error
         label="Email address"
         value="steve@example.com"
         subLabel="Not a valid email address"
       />
+
       <Dropdown
         label="Occupation"
         placeholder="Select your occupation..."
@@ -59,14 +67,34 @@ const sampleFormStory = storiesOf('Sample Form', module)
           </ActionMenu>
         }
       />
+
+      <div style={{ display: 'flex' }}>
+        <Tag href="http://google.com">Foo</Tag>
+        <span style={{ marginRight: core.layout.spacingXSmall }} />
+        <Tag href="http://google.com">Bar</Tag>
+        <span style={{ marginRight: core.layout.spacingXSmall }} />
+        <Tag href="http://google.com">Baz</Tag>
+      </div>
+
+      <DatePicker label="Choose a Date" />
+
       <Checkbox checked label="Checkbox selected" value="someVal" />
+
       <Form.Divider />
+
       <Radio.Group>
         <Radio.Button value="full" label="Full-time employement" />
         <Radio.Button value="part" label="Part-time employement" />
       </Radio.Group>
+
       <Form.Divider />
+
+      <Switch>toggle</Switch>
+
+      <Form.Divider />
+
       <TextArea label="Comment" placeholder="Anything else to report?" />
+
       <Form.ButtonRow>
         <Button>Save</Button>
         <Button appearance={Button.appearances.flat}>Cancel</Button>
