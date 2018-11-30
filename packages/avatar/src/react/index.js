@@ -34,21 +34,27 @@ class Avatar extends React.Component {
   }
 
   render() {
-    const { className, name, size, src, style } = this.props
+    const { alt, className, name, size, src, style } = this.props
     const { imageState } = this.state
-    const avatarProps = {
-      ...styles.avatar({ size }),
-      ...(className ? { className } : null),
-      ...(style ? { style } : null)
-    }
+
     const shouldShowImg = src && imageState !== 'error'
     const shouldShowInitials =
       name && (imageState === 'error' || imageState === 'loading')
+
+    const hideFromScreenReaders = shouldShowImg && !alt
+
+    const avatarProps = {
+      ...styles.avatar({ size }),
+      ...(className ? { className } : null),
+      ...(style ? { style } : null),
+      ...(hideFromScreenReaders ? { 'aria-hidden': true } : null)
+    }
 
     return (
       <div {...avatarProps}>
         {shouldShowImg && (
           <img
+            alt={alt}
             onError={this.handleImageLoadError}
             onLoad={this.handleImageLoadSuccess}
             {...styles.image()}
@@ -58,6 +64,7 @@ class Avatar extends React.Component {
         {shouldShowInitials && (
           <div
             {...styles.initials({ name })}
+            aria-label={name}
             style={{ backgroundColor: getColorByName(name) }}
           >
             {getInitials(name)}
@@ -73,6 +80,7 @@ Avatar.defaultProps = {
 }
 
 Avatar.propTypes = {
+  alt: PropTypes.string,
   className: PropTypes.string,
   name: PropTypes.string,
   size: PropTypes.oneOf(Object.keys(sizes)),

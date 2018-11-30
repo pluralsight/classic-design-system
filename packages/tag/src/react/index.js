@@ -71,7 +71,7 @@ const Tag = (props, context) => {
   }
   const tagName = allProps.href ? 'a' : 'div'
   return (
-    <Halo error={allProps.error} shape={Halo.shapes.pill}>
+    <Halo error={allProps.error} shape={Halo.shapes.pill} inline>
       {React.createElement(
         tagName,
         {

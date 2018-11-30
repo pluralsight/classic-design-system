@@ -70,6 +70,7 @@ class Button extends React.Component {
       >
         <Halo
           error={allProps._error}
+          inline
           shape={Halo.shapes.pill}
           visibleOnFocus={!allProps._disabled}
           visible={allProps._isFocused}

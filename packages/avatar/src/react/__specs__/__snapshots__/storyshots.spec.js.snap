@@ -8,6 +8,7 @@ exports[`Storyshots Default large 1`] = `
     data-css-12kblpa=""
   >
     <img
+      alt="large avatar"
       data-css-1ba73bf=""
       onError={[Function]}
       onLoad={[Function]}
@@ -25,12 +26,14 @@ exports[`Storyshots Default light image 1`] = `
     data-css-7fe6v0=""
   >
     <img
+      alt="light image avatar"
       data-css-1ba73bf=""
       onError={[Function]}
       onLoad={[Function]}
       src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
     <div
+      aria-label="Jake Trent"
       data-css-x99j9q=""
       style={
         Object {
@@ -52,6 +55,7 @@ exports[`Storyshots Default medium 1`] = `
     data-css-7fe6v0=""
   >
     <img
+      alt="medium avatar"
       data-css-1ba73bf=""
       onError={[Function]}
       onLoad={[Function]}
@@ -69,6 +73,7 @@ exports[`Storyshots Default small 1`] = `
     data-css-6fiexv=""
   >
     <img
+      alt="small avatar"
       data-css-1ba73bf=""
       onError={[Function]}
       onLoad={[Function]}
@@ -86,6 +91,7 @@ exports[`Storyshots Default xLarge 1`] = `
     data-css-inys4v=""
   >
     <img
+      alt="xLarge avatar"
       data-css-1ba73bf=""
       onError={[Function]}
       onLoad={[Function]}
@@ -103,6 +109,7 @@ exports[`Storyshots Default xSmall 1`] = `
     data-css-1pii7we=""
   >
     <img
+      alt="xSmall avatar"
       data-css-1ba73bf=""
       onError={[Function]}
       onLoad={[Function]}
@@ -120,6 +127,7 @@ exports[`Storyshots Using Initials % Special Characters 1`] = `
     data-css-7fe6v0=""
   >
     <div
+      aria-label="% Special Characters"
       data-css-x99j9q=""
       style={
         Object {
@@ -141,6 +149,7 @@ exports[`Storyshots Using Initials Anakin Skywalker 1`] = `
     data-css-7fe6v0=""
   >
     <div
+      aria-label="Anakin Skywalker"
       data-css-x99j9q=""
       style={
         Object {
@@ -162,6 +171,7 @@ exports[`Storyshots Using Initials Budapest Skywalker 1`] = `
     data-css-7fe6v0=""
   >
     <div
+      aria-label="Budapest Skywalker"
       data-css-x99j9q=""
       style={
         Object {
@@ -183,6 +193,7 @@ exports[`Storyshots Using Initials Carlos Organa 1`] = `
     data-css-7fe6v0=""
   >
     <div
+      aria-label="Carlos Organa"
       data-css-x99j9q=""
       style={
         Object {
@@ -204,6 +215,7 @@ exports[`Storyshots Using Initials Dennis Pimenta 1`] = `
     data-css-7fe6v0=""
   >
     <div
+      aria-label="Dennis Pimenta"
       data-css-x99j9q=""
       style={
         Object {
@@ -225,6 +237,7 @@ exports[`Storyshots Using Initials Diz Blau 1`] = `
     data-css-7fe6v0=""
   >
     <div
+      aria-label="Diz Blau"
       data-css-x99j9q=""
       style={
         Object {
@@ -246,6 +259,7 @@ exports[`Storyshots Using Initials Harry Potter 1`] = `
     data-css-7fe6v0=""
   >
     <div
+      aria-label="Harry Potter"
       data-css-x99j9q=""
       style={
         Object {
@@ -267,6 +281,7 @@ exports[`Storyshots Using Initials Obi-Wan Kenobi 1`] = `
     data-css-7fe6v0=""
   >
     <div
+      aria-label="Obi-Wan Kenobi"
       data-css-x99j9q=""
       style={
         Object {
@@ -288,6 +303,7 @@ exports[`Storyshots Using Initials Peia Organa 1`] = `
     data-css-7fe6v0=""
   >
     <div
+      aria-label="Peia Organa"
       data-css-x99j9q=""
       style={
         Object {
@@ -309,6 +325,7 @@ exports[`Storyshots Using Initials Single 1`] = `
     data-css-7fe6v0=""
   >
     <div
+      aria-label="Single"
       data-css-x99j9q=""
       style={
         Object {
@@ -330,6 +347,7 @@ exports[`Storyshots Using Initials Uy Marley 1`] = `
     data-css-7fe6v0=""
   >
     <div
+      aria-label="Uy Marley"
       data-css-x99j9q=""
       style={
         Object {
@@ -349,6 +367,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
 >
   <div>
     <div
+      aria-hidden={true}
       data-css-7fe6v0=""
     >
       <img
@@ -358,6 +377,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
         src="https://example.com/image.jpg"
       />
       <div
+        aria-label="Alan Turing"
         data-css-x99j9q=""
         style={
           Object {
@@ -369,6 +389,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       </div>
     </div>
     <div
+      aria-hidden={true}
       data-css-7fe6v0=""
     >
       <img
@@ -378,6 +399,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
         src="https://example.com/image.jpg"
       />
       <div
+        aria-label="Alan Sleuse"
         data-css-x99j9q=""
         style={
           Object {
@@ -389,6 +411,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       </div>
     </div>
     <div
+      aria-hidden={true}
       data-css-7fe6v0=""
     >
       <img
@@ -398,6 +421,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
         src="https://example.com/image.jpg"
       />
       <div
+        aria-label="Alan Alanosphere"
         data-css-x99j9q=""
         style={
           Object {
@@ -409,6 +433,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       </div>
     </div>
     <div
+      aria-hidden={true}
       data-css-7fe6v0=""
     >
       <img
@@ -418,6 +443,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
         src="https://example.com/image.jpg"
       />
       <div
+        aria-label="Allen Alarm"
         data-css-x99j9q=""
         style={
           Object {
@@ -429,6 +455,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       </div>
     </div>
     <div
+      aria-hidden={true}
       data-css-7fe6v0=""
     >
       <img
@@ -438,6 +465,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
         src="https://example.com/image.jpg"
       />
       <div
+        aria-label="Allen Allen"
         data-css-x99j9q=""
         style={
           Object {
@@ -449,6 +477,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       </div>
     </div>
     <div
+      aria-hidden={true}
       data-css-7fe6v0=""
     >
       <img
@@ -458,6 +487,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
         src="https://example.com/image.jpg"
       />
       <div
+        aria-label="Allen Stewart"
         data-css-x99j9q=""
         style={
           Object {
@@ -469,6 +499,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       </div>
     </div>
     <div
+      aria-hidden={true}
       data-css-7fe6v0=""
     >
       <img
@@ -478,6 +509,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
         src="https://example.com/image.jpg"
       />
       <div
+        aria-label="Brian Can Stand Here"
         data-css-x99j9q=""
         style={
           Object {
@@ -489,6 +521,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       </div>
     </div>
     <div
+      aria-hidden={true}
       data-css-7fe6v0=""
     >
       <img
@@ -498,6 +531,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
         src="https://example.com/image.jpg"
       />
       <div
+        aria-label="Brian Can't Stand Here"
         data-css-x99j9q=""
         style={
           Object {
@@ -509,6 +543,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       </div>
     </div>
     <div
+      aria-hidden={true}
       data-css-7fe6v0=""
     >
       <img
@@ -518,6 +553,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
         src="https://example.com/image.jpg"
       />
       <div
+        aria-label="Brian Life Of"
         data-css-x99j9q=""
         style={
           Object {
@@ -529,6 +565,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       </div>
     </div>
     <div
+      aria-hidden={true}
       data-css-7fe6v0=""
     >
       <img
@@ -538,6 +575,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
         src="https://example.com/image.jpg"
       />
       <div
+        aria-label="Brian O'Mally"
         data-css-x99j9q=""
         style={
           Object {
@@ -569,6 +607,7 @@ exports[`Storyshots Using Initials error-out image src, with name 1`] = `
   data-css-claeju=""
 >
   <div
+    aria-hidden={true}
     data-css-7fe6v0=""
   >
     <img
@@ -578,6 +617,7 @@ exports[`Storyshots Using Initials error-out image src, with name 1`] = `
       src="https://jaketrent.com/fake.jpg"
     />
     <div
+      aria-label="Bill Dill"
       data-css-x99j9q=""
       style={
         Object {
@@ -606,6 +646,7 @@ exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
   data-css-claeju=""
 >
   <div
+    aria-hidden={true}
     data-css-7fe6v0=""
   >
     <img
@@ -615,6 +656,7 @@ exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
       src="https://secure.gravatar.com/avatar/invalidhash?d=tmp&d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
     <div
+      aria-label="Alan Turing"
       data-css-x99j9q=""
       style={
         Object {
@@ -633,6 +675,7 @@ exports[`Storyshots Using Initials with invalid gravatar image, no name 1`] = `
   data-css-claeju=""
 >
   <div
+    aria-hidden={true}
     data-css-7fe6v0=""
   >
     <img
