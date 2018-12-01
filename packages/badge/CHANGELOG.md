@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@2.2.1...@pluralsight/ps-design-system-badge@3.0.0) (2018-12-01)
+
+
+### Code Refactoring
+
+* **badge:** create two subtle appearances for each theme ([5142942](https://github.com/pluralsight/design-system/commit/5142942))
+
+
+### BREAKING CHANGES
+
+* **badge:** appearances.stroke renamed to appearances.subtle; to get
+what was the light theme previously must now use appearance.subtle
+
+
+
+
+
 ## [2.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@2.2.0...@pluralsight/ps-design-system-badge@2.2.1) (2018-11-30)
 
 
