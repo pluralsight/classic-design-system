@@ -11,7 +11,6 @@
     "build": "run-s build:js build:css build:html",
     "build-storybook": "build-storybook",
     "build:css": "build-css",
-    "build:html": "node build/html",
     "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
