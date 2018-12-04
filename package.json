@@ -15,7 +15,7 @@
     "clean": "lerna clean",
     "commitmsg": "commitlint -e",
     "component:create": "node ./scripts/create-component/index.js",
-    "lint": "eslint --ignore-path .gitignore .",
+    "lint": "eslint .; exit 0",
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
     "publish": "lerna publish --conventional-commits --message \"chore: publish\"",

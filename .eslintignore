@@ -1,0 +1,7 @@
+node_modules/*
+**/node_modules/*
+dist/*
+.cache
+.github
+examples
+scripts/create-component
