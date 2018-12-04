@@ -10,7 +10,8 @@
     "build": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build -- --watch",
     "test": "jest",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "prepublish": "npm run build"
   },
   "keywords": [],
   "dependencies": {
