@@ -6,6 +6,7 @@ import Card from '@pluralsight/ps-design-system-card/react'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import * as Layout from '@pluralsight/ps-design-system-layout/react'
+import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
   Chrome,
@@ -27,7 +28,9 @@ const decorateCards = (sizes, props, state) => {
     large: '540px'
   }
   // NOTE: jsx-style classes evaluated in the context of Example.React
-  let decorated = `<div className="output outputVertical">`
+  let decorated = `<div className="output outputVertical ${
+    state.themeName === Theme.names.light ? 'outputLight' : ''
+  }">`
 
   state.codes.forEach((code, i) => {
     decorated += `<div className="outputChild" style={{ maxWidth: '${
@@ -343,6 +346,7 @@ export default withServerProps(_ => (
         proportions and flexibility min and max bounds.
       </P>
       <Example.React
+        themeToggle
         decorateCodes={decorateCardsSML}
         includes={{ Button, Card, Icon }}
         codes={Object.keys(Card.sizes).map(
@@ -363,6 +367,7 @@ export default withServerProps(_ => (
         set height according to the `size` property.
       </P>
       <Example.React
+        themeToggle
         decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
@@ -407,6 +412,7 @@ export default withServerProps(_ => (
         the completion level of the content represented on the card.
       </P>
       <Example.React
+        themeToggle
         decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
@@ -441,6 +447,7 @@ export default withServerProps(_ => (
         with an ellipsis appended.
       </P>
       <Example.React
+        themeToggle
         decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
@@ -475,6 +482,7 @@ export default withServerProps(_ => (
         indicated. The first datum is given display space precendence.
       </P>
       <Example.React
+        themeToggle
         decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
@@ -516,6 +524,7 @@ export default withServerProps(_ => (
         linking straight to the content. These are usually buttons.
       </P>
       <Example.React
+        themeToggle
         decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
@@ -553,6 +562,7 @@ export default withServerProps(_ => (
       <SectionHeading>Tag</SectionHeading>
       <P>The tag provides a label, usually categorizing the card's content.</P>
       <Example.React
+        themeToggle
         decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
@@ -593,6 +603,7 @@ export default withServerProps(_ => (
         be provided here. It will appear overlaid in the center of the image.
       </P>
       <Example.React
+        themeToggle
         decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
@@ -629,6 +640,7 @@ export default withServerProps(_ => (
         bottom-left corner of the image area. Use with dignity.
       </P>
       <Example.React
+        themeToggle
         decorateCodes={decorateCardsM}
         includes={{ Button, Card, Icon }}
         codes={[
