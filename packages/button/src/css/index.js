@@ -81,6 +81,24 @@ export default {
     height: '48px'
   },
   // --appearance
+  [`.psds-button--appearance-${vars.appearances.secondary}`]: {
+    color: core.colors.gray01,
+    background: transparentize(0.85, core.colors.gray02)
+  },
+  [`.psds-button--appearance-${vars.appearances.secondary}:hover`]: {
+    background: transparentize(0.85, core.colors.bone)
+  },
+  [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${
+    themeNames.light
+  }`]: {
+    color: core.colors.gray03,
+    background: transparentize(0.65, core.colors.gray01)
+  },
+  [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${
+    themeNames.light
+  }:hover`]: {
+    background: transparentize(0.65, core.colors.bone)
+  },
   [`.psds-button--appearance-${vars.appearances.stroke}`]: {
     border: `1px solid ${core.colors.orange}`,
     color: core.colors.orange,
@@ -136,6 +154,11 @@ export default {
   },
   [`.psds-button--disabled.psds-button--appearance-${
     vars.appearances.primary
+  }`]: {
+    opacity: 0.5
+  },
+  [`.psds-button--disabled.psds-button--appearance-${
+    vars.appearances.secondary
   }`]: {
     opacity: 0.5
   },
@@ -232,6 +255,10 @@ export default {
   [`.psds-button__loading--appearance-${vars.appearances.primary}`]: {
     borderColor: transparentize(0.8, core.colors.gray04),
     borderTopColor: core.colors.white
+  },
+  [`.psds-button__loading--appearance-${vars.appearances.secondary}`]: {
+    borderColor: transparentize(0.8, core.colors.gray01),
+    borderTopColor: core.colors.gray01
   },
   [`.psds-button__loading--appearance-${vars.appearances.stroke}`]: {
     borderColor: transparentize(0.8, core.colors.white),

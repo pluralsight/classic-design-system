@@ -1,5 +1,6 @@
 import Button from '@pluralsight/ps-design-system-button/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import React from 'react'
 import Text from '@pluralsight/ps-design-system-text/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
@@ -8,7 +9,6 @@ import {
   Code,
   Content,
   Example,
-  Heading,
   Link,
   P,
   PageHeading,
@@ -96,11 +96,8 @@ export default withServerProps(_ => (
       <P>Buttons come in three standard visual styles.</P>
       <Example.React
         includes={{ Button, Icon }}
-        codes={[`<Button>Click me</Button>`].concat(
-          Object.keys(Button.appearances).map(
-            a =>
-              `<Button appearance={Button.appearances.${a}}>Click me</Button>`
-          )
+        codes={Object.keys(Button.appearances).map(
+          a => `<Button appearance={Button.appearances.${a}}>Click me</Button>`
         )}
       />
 
