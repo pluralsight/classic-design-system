@@ -78,8 +78,16 @@ const InAppExample = props => (
           <li>
             <Card
               actionBar={[
-                <Card.Action icon={<Icon id={Icon.ids.bookmark} />} />,
-                <Card.Action icon={<Icon id={Icon.ids.more} />} />
+                <Card.Action
+                  key="1"
+                  title="Book action"
+                  icon={<Icon id={Icon.ids.bookmark} />}
+                />,
+                <Card.Action
+                  key="2"
+                  title="More action"
+                  icon={<Icon id={Icon.ids.more} />}
+                />
               ]}
               title={
                 <Card.Title>
@@ -103,8 +111,16 @@ const InAppExample = props => (
           <li>
             <Card
               actionBar={[
-                <Card.Action icon={<Icon id={Icon.ids.bookmark} />} />,
-                <Card.Action icon={<Icon id={Icon.ids.more} />} />
+                <Card.Action
+                  key="1"
+                  title="Bookmark action"
+                  icon={<Icon id={Icon.ids.bookmark} />}
+                />,
+                <Card.Action
+                  key="2"
+                  title="More action"
+                  icon={<Icon id={Icon.ids.more} />}
+                />
               ]}
               actionBarVisible
               title={<Card.Title>Webpack Fundamentals"</Card.Title>}
@@ -149,8 +165,8 @@ const InAppExample = props => (
     <li>
       <Card
         actionBar={[
-          <Card.Action icon={<Icon id={Icon.ids.bookmark} />} />,
-          <Card.Action icon={<Icon id={Icon.ids.more} />} />
+          <Card.Action key="1" title="Bookmark action" icon={<Icon id={Icon.ids.bookmark} />} />,
+          <Card.Action key="2" title="More action" icon={<Icon id={Icon.ids.more} />} />
         ]}
         title={
           <Card.Title>
@@ -174,8 +190,8 @@ const InAppExample = props => (
     <li>
       <Card
         actionBar={[
-          <Card.Action icon={<Icon id={Icon.ids.bookmark} />} />,
-          <Card.Action icon={<Icon id={Icon.ids.more} />} />
+          <Card.Action key="1" title="Bookmark action" icon={<Icon id={Icon.ids.bookmark} />} />,
+          <Card.Action key="2" title="More action" icon={<Icon id={Icon.ids.more} />} />
         ]}
         actionBarVisible
         title={<Card.Title>Webpack Fundamentals"</Card.Title>}
@@ -388,7 +404,7 @@ export default withServerProps(_ => (
     </Card.ImageLink>
   }
   title={<Card.Title>Linked image with other overlays</Card.Title>}
-  actionBar={[<Card.Action icon={<Icon id="bookmark" />} />]}
+  actionBar={[<Card.Action key="1" title="Bookmark action" icon={<Icon id="bookmark" />} />]}
   fullOverlay={
     <Card.FullOverlayLink>
       <a href="https://google.com?q=full%20overlay" target="_blank">
@@ -521,7 +537,7 @@ export default withServerProps(_ => (
         codes={[
           `
 <Card
-  actionBar={[<Card.Action icon={<Icon id={Icon.ids.bookmark} />} />]}
+  actionBar={[<Card.Action key="1" title="Bookmark action" icon={<Icon id={Icon.ids.bookmark} />} />]}
   title={<Card.Title>Action bar appears on hover</Card.Title>}
   image={<Card.Image src="/static/img/course2.jpg" />}
 />
@@ -529,8 +545,8 @@ export default withServerProps(_ => (
           `
 <Card
   actionBar={[
-    <Card.Action icon={<Icon id={Icon.ids.bookmark} />} />,
-    <Card.Action icon={<Icon id={Icon.ids.more} />} />
+    <Card.Action key="1" title="Bookmark action" icon={<Icon id={Icon.ids.bookmark} />} />,
+    <Card.Action key="2" title="More action" icon={<Icon id={Icon.ids.more} />} />
   ]}
   title={<Card.Title>Multiple actions</Card.Title>}
   image={<Card.Image src="/static/img/course2.jpg" />}
@@ -539,8 +555,8 @@ export default withServerProps(_ => (
           `
 <Card
   actionBar={[
-    <Card.Action icon={<Icon id={Icon.ids.bookmark} />} />,
-    <Card.Action icon={<Icon id={Icon.ids.more} />} />
+    <Card.Action title="Bookmark action" icon={<Icon id={Icon.ids.bookmark} />} />,
+    <Card.Action title="More action" icon={<Icon id={Icon.ids.more} />} />
   ]}
   actionBarVisible
   title={<Card.Title>Action bar locked visible</Card.Title>}
@@ -614,7 +630,7 @@ export default withServerProps(_ => (
           `
 <Card
   fullOverlay={<Card.FullOverlayLink><a>Custom Thing</a></Card.FullOverlayLink>}
-  actionBar={[<Card.Action icon={<Icon id={Icon.ids.bookmark} />} />]}
+  actionBar={[<Card.Action title="Bookmark action" icon={<Icon id={Icon.ids.bookmark} />} />]}
   tag={<Card.Tag icon={<Icon id={Icon.ids.channel} />}>Channel</Card.Tag>}
   title={<Card.Title>Combined with other overlays</Card.Title>}
   image={<Card.Image src="/static/img/course4.jpg" />}
