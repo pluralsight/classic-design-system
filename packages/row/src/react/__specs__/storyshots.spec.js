@@ -2,15 +2,10 @@ import initStoryshots, {
   snapshotWithOptions
 } from '@storybook/addon-storyshots'
 
-function createNodeMock(element) {
-  if (element.type === 'div') {
-    return { style: {} }
-  }
-  return null
-}
+jest.mock('@pluralsight/ps-design-system-storybook-addon-center')
+
+const createNodeMock = el => document.createElement('div')
 
 initStoryshots({
-  test: snapshotWithOptions({
-    createNodeMock
-  })
+  test: snapshotWithOptions({ createNodeMock })
 })

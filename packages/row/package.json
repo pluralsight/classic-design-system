@@ -38,10 +38,11 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.9.0",
+    "@pluralsight/ps-design-system-build": "*",
     "@pluralsight/ps-design-system-drawer": "^1.5.11",
     "@pluralsight/ps-design-system-icon": "^8.13.7",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.2.6",
+    "@pluralsight/ps-design-system-storybook-addon-center": "*",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "*",
     "@storybook/addon-actions": "^4.0.0",
     "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/addons": "^4.0.0",
