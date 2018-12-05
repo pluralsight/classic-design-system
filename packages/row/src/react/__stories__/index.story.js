@@ -8,11 +8,22 @@ import Icon from '@pluralsight/ps-design-system-icon/react'
 
 import Row from '..'
 
+const getImgSrc = ({ w = 680, h = 320, id = 42 } = {}) =>
+  `//picsum.photos/${w}/${h}?image=${id}&gravity=north`
+
 const longStringsMetaData = [
   'It is impossible to count the grand contributions of this great author',
   'Levels heretofore unknown in the battle for truth and knowledge',
   'A length of such amazing lengthitude so-as to blow the mind'
 ]
+
+const PlayIcon = () => (
+  <Icon
+    size={Icon.sizes.large}
+    css={{ '& svg': { fill: core.colors.white } }}
+    id={Icon.ids.playCircle}
+  />
+)
 
 storiesOf('combo', module).add('everything', _ => (
   <Row
@@ -29,11 +40,7 @@ storiesOf('combo', module).add('everything', _ => (
     fullOverlay={
       <Row.FullOverlayLink>
         <a href="http://google.com?query=overlay">
-          <Icon
-            size={Icon.sizes.large}
-            css={{ '& svg': { fill: core.colors.white } }}
-            id={Icon.ids.playCircle}
-          />
+          <PlayIcon />
         </a>
       </Row.FullOverlayLink>
     }
@@ -41,7 +48,7 @@ storiesOf('combo', module).add('everything', _ => (
     image={
       <Row.ImageLink>
         <a href="http://google.com?query=image">
-          <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+          <Row.Image src={getImgSrc()} />
         </a>
       </Row.ImageLink>
     }
@@ -67,9 +74,7 @@ Object.keys(Row.sizes).forEach(size =>
       size={size}
       title={`${size} Row`}
       metadata1={['Jim Cooper']}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
 )
@@ -91,23 +96,19 @@ Object.keys(Row.sizes).forEach(size =>
       size={size}
       title={`${size} With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000`}
       metadata1={['Jim Cooper']}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
 )
 
 const progressStory = storiesOf('progress', module)
-;[0, 66.6667, 100].forEach(progress =>
+Array.from([0, 66.6667, 100]).forEach(progress =>
   progressStory.add(`${progress} progress`, _ => (
     <Row
       size="medium"
       progress={progress}
       title={`${progress} progress`}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
 )
@@ -124,18 +125,14 @@ storiesOf('image', module)
     <Row
       title="With Image"
       metadata1={['Jim Cooper']}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
   .add(`with image with overlay`, _ => (
     <Row
       title="With Image"
       metadata1={['Jim Cooper']}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
       fullOverlay={<Row.FullOverlayLink>Element</Row.FullOverlayLink>}
     />
   ))
@@ -145,7 +142,7 @@ storiesOf('image', module)
       image={
         <Row.ImageLink>
           <a href="http://google.com?query=image">
-            <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+            <Row.Image src={getImgSrc()} />
           </a>
         </Row.ImageLink>
       }
@@ -211,18 +208,14 @@ storiesOf('metadata', module)
   .add('long strings with image', _ => (
     <Row
       title="Long Strings AND Los Imagereo"
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
       metadata1={longStringsMetaData}
     />
   ))
   .add('super long first string', _ => (
     <Row
       title="Long Strings AND Los Imagereo"
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
       metadata1={[
         'This string is so long, it should be illegal.This string is so long, it should be illegal.This string is so long, it should be illegal.   This string is so long, it should be illegal. ',
         'This is still visible',
@@ -265,9 +258,7 @@ storiesOf('actionBar', module)
     <Row
       title="Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000"
       actionBar={[<Row.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
   .add('locked visible', _ => (
@@ -275,9 +266,7 @@ storiesOf('actionBar', module)
       actionBarVisible
       title="Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000"
       actionBar={[<Row.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
 
@@ -286,9 +275,7 @@ storiesOf('fullOverlay', module)
     <Row
       title="Overlay This!"
       fullOverlay={<Row.FullOverlayLink>Element</Row.FullOverlayLink>}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
   .add('link', _ => (
@@ -299,9 +286,7 @@ storiesOf('fullOverlay', module)
           <a href="http://google.com?query=overlay">Click me</a>
         </Row.FullOverlayLink>
       }
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
   .add('linked icon', _ => (
@@ -310,17 +295,11 @@ storiesOf('fullOverlay', module)
       fullOverlay={
         <Row.FullOverlayLink>
           <a href="http://google.com?query=overlay">
-            <Icon
-              size={Icon.sizes.large}
-              css={{ '& svg': { fill: core.colors.white } }}
-              id={Icon.ids.playCircle}
-            />
+            <PlayIcon />
           </a>
         </Row.FullOverlayLink>
       }
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
   .add('linked icon with image link', _ => (
@@ -329,18 +308,14 @@ storiesOf('fullOverlay', module)
       fullOverlay={
         <Row.FullOverlayLink>
           <a href="http://google.com?query=overlay">
-            <Icon
-              size={Icon.sizes.large}
-              css={{ '& svg': { fill: core.colors.white } }}
-              id={Icon.ids.playCircle}
-            />
+            <PlayIcon />
           </a>
         </Row.FullOverlayLink>
       }
       image={
         <Row.ImageLink>
           <a href="http://google.com?query=image">
-            <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+            <Row.Image src={getImgSrc()} />
           </a>
         </Row.ImageLink>
       }
@@ -355,9 +330,7 @@ Object.keys(Row.sizes).forEach(size =>
         <Row
           title="Course thing you do"
           metadata1={['1m 46s']}
-          image={
-            <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-          }
+          image={<Row.Image src={getImgSrc()} />}
           actionBar={[
             <Row.Action
               icon={<Icon id={Icon.ids.more} />}
@@ -380,18 +353,14 @@ storiesOf('in a stack', module).add('no top border on first row', _ => (
     <Row
       title="Course thing you do"
       metadata1={['1m 46s']}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
       actionBar={[<Row.Action icon={<Icon id={Icon.ids.more} />} key="more" />]}
       actionBarVisible
     />
     <Row
       title="Course thing you do"
       metadata1={['1m 46s']}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
       actionBar={[<Row.Action icon={<Icon id={Icon.ids.more} />} key="more" />]}
       actionBarVisible
     />

@@ -18,7 +18,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
         className="css-js3ti3"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -125,7 +125,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
         className="css-js3ti3"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -238,7 +238,7 @@ exports[`Storyshots combo everything 1`] = `
             href="http://google.com?query=image"
           >
             <div
-              className="css-1wgk747"
+              className="css-6x74ml"
             />
           </a>
         </span>
@@ -433,7 +433,7 @@ exports[`Storyshots fullOverlay element 1`] = `
         className="css-js3ti3"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-4nxbcy"
@@ -479,7 +479,7 @@ exports[`Storyshots fullOverlay link 1`] = `
         className="css-js3ti3"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-4nxbcy"
@@ -529,7 +529,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
         className="css-js3ti3"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-4nxbcy"
@@ -598,7 +598,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
             href="http://google.com?query=image"
           >
             <div
-              className="css-1wgk747"
+              className="css-6x74ml"
             />
           </a>
         </span>
@@ -669,7 +669,7 @@ exports[`Storyshots image link 1`] = `
             href="http://google.com?query=image"
           >
             <div
-              className="css-1wgk747"
+              className="css-6x74ml"
             />
           </a>
         </span>
@@ -921,7 +921,7 @@ exports[`Storyshots image with image 1`] = `
         className="css-js3ti3"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -965,7 +965,7 @@ exports[`Storyshots image with image with overlay 1`] = `
         className="css-js3ti3"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-4nxbcy"
@@ -1027,7 +1027,7 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
           className="css-js3ti3"
         >
           <div
-            className="css-1wgk747"
+            className="css-6x74ml"
           />
         </div>
         <div
@@ -1078,7 +1078,7 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
           className="css-js3ti3"
         >
           <div
-            className="css-1wgk747"
+            className="css-6x74ml"
           />
         </div>
         <div
@@ -1155,7 +1155,7 @@ exports[`Storyshots in drawer medium 1`] = `
               className="css-js3ti3"
             >
               <div
-                className="css-1wgk747"
+                className="css-6x74ml"
               />
             </div>
             <div
@@ -1563,7 +1563,7 @@ exports[`Storyshots metadata long strings with image 1`] = `
         className="css-js3ti3"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -1666,7 +1666,7 @@ exports[`Storyshots metadata super long first string 1`] = `
         className="css-js3ti3"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -1800,7 +1800,7 @@ exports[`Storyshots progress 0 progress 1`] = `
         className="css-js3ti3"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -1835,7 +1835,7 @@ exports[`Storyshots progress 66.6667 progress 1`] = `
         className="css-js3ti3"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-268zju"
@@ -1878,7 +1878,7 @@ exports[`Storyshots progress 100 progress 1`] = `
         className="css-js3ti3"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
         <div
           className="css-268zju"
@@ -1949,7 +1949,7 @@ exports[`Storyshots size medium 1`] = `
         className="css-js3ti3"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
@@ -2066,7 +2066,7 @@ exports[`Storyshots title medium long title 1`] = `
         className="css-js3ti3"
       >
         <div
-          className="css-1wgk747"
+          className="css-6x74ml"
         />
       </div>
       <div
