@@ -1,18 +1,9 @@
-import Badge from '@pluralsight/ps-design-system-badge/react'
 import core from '@pluralsight/ps-design-system-core'
+import React from 'react'
 import Table from '@pluralsight/ps-design-system-table/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
 
-import {
-  Chrome,
-  Code,
-  Content,
-  Doc,
-  P,
-  PageHeading,
-  TextLink,
-  withServerProps
-} from '../src/ui'
+import { Chrome, Content, Doc, PageHeading, withServerProps } from '../src/ui'
 
 export default withServerProps(_ => (
   <Chrome>

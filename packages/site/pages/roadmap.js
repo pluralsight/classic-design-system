@@ -1,15 +1,14 @@
 import Badge from '@pluralsight/ps-design-system-badge/react'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import Text from '@pluralsight/ps-design-system-text/react'
+import PropTypes from 'prop-types'
+import React from 'react'
 
 import {
   Chrome,
-  Code,
   Content,
   GithubIcon,
   Intro,
-  Link,
   P,
   PageHeading,
   SectionHeading,
@@ -85,7 +84,9 @@ const Bar = _ => (
 
 const Tasks = props => (
   <div className="tasks" style={{ borderLeftColor: props.color }}>
-    {props.tasks.map(item => <Task key={item.title} item={item} />)}
+    {props.tasks.map(item => (
+      <Task key={item.title} item={item} />
+    ))}
     <style jsx>{`
       .tasks {
         display: flex;
@@ -98,12 +99,20 @@ const Tasks = props => (
     `}</style>
   </div>
 )
+Tasks.propTypes = {
+  color: PropTypes.string,
+  tasks: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string
+    })
+  )
+}
 
 const GithubCat = props => {
   return (
     <div
       className={`cat ${props.isVisible ? 'cat--is-visible' : ''}`}
-      aria-hidden={true}
+      aria-hidden
     >
       <GithubIcon color={Icon.colors.gray01} />
       <style jsx>{`
@@ -120,6 +129,9 @@ const GithubCat = props => {
       `}</style>
     </div>
   )
+}
+GithubCat.propTypes = {
+  isVisible: PropTypes.bool
 }
 
 class Task extends React.Component {
@@ -143,7 +155,7 @@ class Task extends React.Component {
         : item.title
             .toLowerCase()
             .replace(/ /g, '-')
-            .replace(/[\(\)]/g, '') + ': Roadmap Discussion'
+            .replace(/[()]/g, '') + ': Roadmap Discussion'
     const href = item.href
       ? item.href
       : `https://github.com/pluralsight/design-system/issues/new?title=${title}`
@@ -194,6 +206,13 @@ class Task extends React.Component {
     )
   }
 }
+Task.propTypes = {
+  item: PropTypes.shape({
+    href: PropTypes.string,
+    tags: PropTypes.arrayOf(PropTypes.string),
+    title: PropTypes.string
+  })
+}
 
 Task.Title = props => (
   <div className="title">
@@ -207,12 +226,19 @@ Task.Title = props => (
     `}</style>
   </div>
 )
+Task.Title.propTypes = {
+  children: PropTypes.node
+}
 
 Task.Helpers = props =>
   props.helpers ? (
     <div className="helpers">
       {props.helpers.map(helper => (
-        <Badge color={Badge.colors.green} key={helper}>
+        <Badge
+          appearance={Badge.appearances.subtle}
+          color={Badge.colors.green}
+          key={helper}
+        >
           {helper}
         </Badge>
       ))}
@@ -224,10 +250,15 @@ Task.Helpers = props =>
       `}</style>
     </div>
   ) : null
+Task.Helpers.propTypes = {
+  helpers: PropTypes.arrayOf(PropTypes.string)
+}
 
 Task.Tags = props => (
   <div className="tags">
-    {props.tags.map(tag => <Task.Tag key={tag}>{tag}</Task.Tag>)}
+    {props.tags.map(tag => (
+      <Task.Tag key={tag}>{tag}</Task.Tag>
+    ))}
     <style jsx>{`
       .tags {
         display: flex;
@@ -235,10 +266,13 @@ Task.Tags = props => (
     `}</style>
   </div>
 )
+Task.Tags.propTypes = {
+  tags: PropTypes.arrayOf(PropTypes.string)
+}
 
 Task.Tag = props => (
   <div className="tag">
-    <Badge appearance={Badge.appearances.stroke}>{props.children}</Badge>
+    <Badge appearance={Badge.appearances.subtle}>{props.children}</Badge>
     <style jsx>{`
       .tag {
         overflow: hidden;
@@ -246,6 +280,9 @@ Task.Tag = props => (
     `}</style>
   </div>
 )
+Task.Tag.propTypes = {
+  children: PropTypes.node
+}
 
 export default withServerProps(_ => (
   <Chrome>
@@ -273,7 +310,8 @@ export default withServerProps(_ => (
         including priority, on{' '}
         <TextLink href="https://github.com/pluralsight/design-system/issues">
           Github
-        </TextLink>, or take a look at how you can{' '}
+        </TextLink>
+        , or take a look at how you can{' '}
         <TextLink href="/contribute">contribute</TextLink>.
       </P>
       <Tasks color={core.colors.yellow} tasks={work.next} />
