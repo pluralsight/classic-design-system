@@ -27,14 +27,14 @@ export default {
     textAlign: 'center',
     color: core.colors.white,
     background: core.colors.orange,
-    cursor: 'pointer',
     whiteSpace: 'nowrap',
     textDecoration: 'none',
     transition: `all ${core.motion.speedNormal}`,
     verticalAlign: 'middle'
   },
   '.psds-button:hover': {
-    background: core.colors.orangeLight
+    background: core.colors.orangeLight,
+    cursor: 'pointer'
   },
   '.psds-button:focus': {
     outline: 'none'
@@ -142,15 +142,7 @@ export default {
     background: core.colors.gray03,
     cursor: 'default'
   },
-  [`.psds-button--disabled:hover`]: {
-    color: core.colors.gray02,
-    background: core.colors.gray03
-  },
   [`.psds-button--disabled.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03,
-    background: core.colors.gray01
-  },
-  [`.psds-button--disabled.psds-theme--${themeNames.light}:hover`]: {
     color: core.colors.gray03,
     background: core.colors.gray01
   },
@@ -172,17 +164,6 @@ export default {
   },
   [`.psds-button--disabled.psds-button--appearance-${vars.appearances.flat}`]: {
     opacity: 0.4,
-    background: 'none'
-  },
-  [`.psds-button--disabled.psds-button--appearance-${
-    vars.appearances.stroke
-  }:hover`]: {
-    border: 'none'
-  },
-  [`.psds-button--disabled.psds-button--appearance-${
-    vars.appearances.flat
-  }:hover`]: {
-    color: core.colors.gray02,
     background: 'none'
   },
   // --iconAlign / iconOnly
