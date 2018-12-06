@@ -157,9 +157,9 @@ class SwitchToLoading extends React.Component {
   }
 
   componentDidMount() {
-    this.timeout = setTimeout(_ => {
+    this.timeout = setInterval(_ => {
       this.setState({ loading: !this.state.loading })
-    }, 500)
+    }, 1500)
   }
 
   componentWillUnmount() {

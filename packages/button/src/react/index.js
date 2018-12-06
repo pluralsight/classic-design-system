@@ -138,7 +138,9 @@ const renderIcon = props =>
 
 class Button extends React.Component {
   componentWillReceiveProps(nextProps) {
-    if (nextProps.loading && !this.props.icon && this.el) {
+    const isSwitchFromNonLoadingToLoading =
+      !this.props.loading && nextProps.loading
+    if (isSwitchFromNonLoadingToLoading && !this.props.icon && this.el) {
       this.nonLoadingWidth = this.el.offsetWidth
     } else {
       this.nonLoadingWidth = null
