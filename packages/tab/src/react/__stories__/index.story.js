@@ -57,6 +57,13 @@ storiesOf('default', module)
       )}
     </Tab.List>
   ))
+  .add('as links', _ => (
+    <Tab.List>
+      <Tab.ListItem href="https://duckduckgo.com" id={1} key={1}>
+        External link
+      </Tab.ListItem>
+    </Tab.List>
+  ))
 
 storiesOf('style overrides', module)
   .addDecorator(themeDecorator(addons))

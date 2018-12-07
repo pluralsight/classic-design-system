@@ -1,5 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots default as links 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-wx7ofq=""
+  >
+    <div
+      data-css-1nnsngu=""
+    >
+      <div
+        data-css-claeju=""
+      >
+        <div
+          data-css-zhyi0r=""
+          onKeyDown={[Function]}
+          role="tablist"
+          tabIndex="0"
+        >
+          <a
+            aria-selected={true}
+            data-css-1yv0lo1=""
+            href="https://duckduckgo.com"
+            id={1}
+            onClick={[Function]}
+            role="tab"
+            tabIndex="-1"
+          >
+            <div
+              data-css-1vk06pf=""
+            >
+              External link
+              <span
+                data-css-1s34vsj=""
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots default default 1`] = `
 <div
   data-css-claeju=""
@@ -22,7 +66,7 @@ exports[`Storyshots default default 1`] = `
           >
             <button
               aria-selected={true}
-              data-css-1pp0sr=""
+              data-css-1yv0lo1=""
               id="example1"
               onClick={[Function]}
               role="tab"
@@ -39,7 +83,7 @@ exports[`Storyshots default default 1`] = `
             </button>
             <button
               aria-selected={false}
-              data-css-1bb8k7d=""
+              data-css-12g3ebl=""
               id="example2"
               onClick={[Function]}
               role="tab"
@@ -56,7 +100,7 @@ exports[`Storyshots default default 1`] = `
             </button>
             <button
               aria-selected={false}
-              data-css-1bb8k7d=""
+              data-css-12g3ebl=""
               id="example3"
               onClick={[Function]}
               role="tab"
@@ -73,7 +117,7 @@ exports[`Storyshots default default 1`] = `
             </button>
             <button
               aria-selected={false}
-              data-css-1bb8k7d=""
+              data-css-12g3ebl=""
               id="example4"
               onClick={[Function]}
               role="tab"
@@ -90,7 +134,7 @@ exports[`Storyshots default default 1`] = `
             </button>
             <button
               aria-selected={false}
-              data-css-1bb8k7d=""
+              data-css-12g3ebl=""
               id="example5"
               onClick={[Function]}
               role="tab"
@@ -174,7 +218,7 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
         >
           <button
             aria-selected={true}
-            data-css-1pp0sr=""
+            data-css-1yv0lo1=""
             id="wow"
             onClick={[Function]}
             role="tab"
@@ -217,7 +261,7 @@ exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
         >
           <button
             aria-selected={true}
-            data-css-1pp0sr=""
+            data-css-1yv0lo1=""
             id="wow"
             onClick={[Function]}
             role="tab"
@@ -266,7 +310,7 @@ exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
           >
             <button
               aria-selected={true}
-              data-css-1pp0sr=""
+              data-css-1yv0lo1=""
               id="wow"
               onClick={[Function]}
               role="tab"

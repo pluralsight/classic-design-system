@@ -84,43 +84,47 @@ const styles = {
   textWidth: _ => glamor.css(css['.psds-tab__list-item__text'])
 }
 
-const ListItem = props => {
-  return <button {...filterReactProps(props)} {...styles.listItem(props)} />
-}
-
-const ListItemComponent = (props, context) => {
+const ListItem = (props, context) => {
+  // TODO: remove double filter
   const listItemProps = {
     role: 'tab',
     'aria-selected': props.active,
     onClick: props.onClick,
     active: props.active,
+    href: props.href,
     id: props.id,
+    // TODO: fix to react ref
     innerRef: props.innerRef,
     tabIndex: '-1',
     themeName: context.themeName || themeDefaultName,
     ...(props.style ? { style: props.style } : null),
     ...(props.className ? { className: props.className } : null)
   }
-  return (
-    <ListItem {...listItemProps}>
-      <div {...styles.textWidth(props)}>
-        {props.children}
-        <span {...styles.bar(props)} />
-      </div>
-    </ListItem>
+  const tagName = props.href ? 'a' : 'button'
+  return React.createElement(
+    tagName,
+    {
+      ...filterReactProps(listItemProps, { tagName }),
+      ...styles.listItem(listItemProps)
+    },
+
+    <div {...styles.textWidth(props)}>
+      {props.children}
+      <span {...styles.bar(props)} />
+    </div>
   )
 }
-
-ListItemComponent.propTypes = {
+ListItem.propTypes = {
   active: PropTypes.bool,
+  href: PropTypes.string,
   id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   onClick: PropTypes.func
 }
-ListItemComponent.defaultProps = {
+ListItem.defaultProps = {
   active: false
 }
-ListItemComponent.contextTypes = {
+ListItem.contextTypes = {
   themeName: PropTypes.string
 }
 
-export default ListItemComponent
+export default ListItem
