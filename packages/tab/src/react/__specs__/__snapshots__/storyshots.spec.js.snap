@@ -4,108 +4,120 @@ exports[`Storyshots default default 1`] = `
 <div
   data-css-claeju=""
 >
-  <div>
+  <div
+    data-css-wx7ofq=""
+  >
     <div
-      className="css-zhyi0r"
-      onKeyDown={[Function]}
-      role="tablist"
-      tabIndex="0"
-    >
-      <button
-        aria-selected={true}
-        className="css-1pp0sr"
-        id="example1"
-        onClick={[Function]}
-        role="tab"
-        tabIndex="-1"
-      >
-        <div
-          className="css-1vk06pf"
-        >
-          Menu 1
-          <span
-            className="css-1s34vsj"
-          />
-        </div>
-      </button>
-      <button
-        aria-selected={false}
-        className="css-1bb8k7d"
-        id="example2"
-        onClick={[Function]}
-        role="tab"
-        tabIndex="-1"
-      >
-        <div
-          className="css-1vk06pf"
-        >
-          Menu 2
-          <span
-            className="css-1s34vsj"
-          />
-        </div>
-      </button>
-      <button
-        aria-selected={false}
-        className="css-1bb8k7d"
-        id="example3"
-        onClick={[Function]}
-        role="tab"
-        tabIndex="-1"
-      >
-        <div
-          className="css-1vk06pf"
-        >
-          Menu 3
-          <span
-            className="css-1s34vsj"
-          />
-        </div>
-      </button>
-      <button
-        aria-selected={false}
-        className="css-1bb8k7d"
-        id="example4"
-        onClick={[Function]}
-        role="tab"
-        tabIndex="-1"
-      >
-        <div
-          className="css-1vk06pf"
-        >
-          Menu 4
-          <span
-            className="css-1s34vsj"
-          />
-        </div>
-      </button>
-      <button
-        aria-selected={false}
-        className="css-1bb8k7d"
-        id="example5"
-        onClick={[Function]}
-        role="tab"
-        tabIndex="-1"
-      >
-        <div
-          className="css-1vk06pf"
-        >
-          Menu 5
-          <span
-            className="css-1s34vsj"
-          />
-        </div>
-      </button>
-    </div>
-    <div
-      aria-labelledby="example3"
-      className="css-nil"
-      role="tabpanel"
+      data-css-1nnsngu=""
     >
       <div
-        className="content"
+        data-css-claeju=""
       >
-        Menu stuff 3
+        <div>
+          <div
+            className="css-zhyi0r"
+            onKeyDown={[Function]}
+            role="tablist"
+            tabIndex="0"
+          >
+            <button
+              aria-selected={true}
+              className="css-1pp0sr"
+              id="example1"
+              onClick={[Function]}
+              role="tab"
+              tabIndex="-1"
+            >
+              <div
+                className="css-1vk06pf"
+              >
+                Menu 1
+                <span
+                  className="css-1s34vsj"
+                />
+              </div>
+            </button>
+            <button
+              aria-selected={false}
+              className="css-1bb8k7d"
+              id="example2"
+              onClick={[Function]}
+              role="tab"
+              tabIndex="-1"
+            >
+              <div
+                className="css-1vk06pf"
+              >
+                Menu 2
+                <span
+                  className="css-1s34vsj"
+                />
+              </div>
+            </button>
+            <button
+              aria-selected={false}
+              className="css-1bb8k7d"
+              id="example3"
+              onClick={[Function]}
+              role="tab"
+              tabIndex="-1"
+            >
+              <div
+                className="css-1vk06pf"
+              >
+                Menu 3
+                <span
+                  className="css-1s34vsj"
+                />
+              </div>
+            </button>
+            <button
+              aria-selected={false}
+              className="css-1bb8k7d"
+              id="example4"
+              onClick={[Function]}
+              role="tab"
+              tabIndex="-1"
+            >
+              <div
+                className="css-1vk06pf"
+              >
+                Menu 4
+                <span
+                  className="css-1s34vsj"
+                />
+              </div>
+            </button>
+            <button
+              aria-selected={false}
+              className="css-1bb8k7d"
+              id="example5"
+              onClick={[Function]}
+              role="tab"
+              tabIndex="-1"
+            >
+              <div
+                className="css-1vk06pf"
+              >
+                Menu 5
+                <span
+                  className="css-1s34vsj"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            aria-labelledby="example3"
+            className="css-nil"
+            role="tabpanel"
+          >
+            <div
+              className="content"
+            >
+              Menu stuff 3
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -117,11 +129,23 @@ exports[`Storyshots default no items 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-zhyi0r"
-    onKeyDown={[Function]}
-    role="tablist"
-    tabIndex="0"
-  />
+    data-css-wx7ofq=""
+  >
+    <div
+      data-css-1nnsngu=""
+    >
+      <div
+        data-css-claeju=""
+      >
+        <div
+          className="css-zhyi0r"
+          onKeyDown={[Function]}
+          role="tablist"
+          tabIndex="0"
+        />
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -130,33 +154,45 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-zhyi0r"
-    onKeyDown={[Function]}
-    role="tablist"
-    style={
-      Object {
-        "borderBottom": "none",
-      }
-    }
-    tabIndex="0"
+    data-css-wx7ofq=""
   >
-    <button
-      aria-selected={true}
-      className="css-1pp0sr"
-      id="wow"
-      onClick={[Function]}
-      role="tab"
-      tabIndex="-1"
+    <div
+      data-css-1nnsngu=""
     >
       <div
-        className="css-1vk06pf"
+        data-css-claeju=""
       >
-        Wow
-        <span
-          className="css-1s34vsj"
-        />
+        <div
+          className="css-zhyi0r"
+          onKeyDown={[Function]}
+          role="tablist"
+          style={
+            Object {
+              "borderBottom": "none",
+            }
+          }
+          tabIndex="0"
+        >
+          <button
+            aria-selected={true}
+            className="css-1pp0sr"
+            id="wow"
+            onClick={[Function]}
+            role="tab"
+            tabIndex="-1"
+          >
+            <div
+              className="css-1vk06pf"
+            >
+              Wow
+              <span
+                className="css-1s34vsj"
+              />
+            </div>
+          </button>
+        </div>
       </div>
-    </button>
+    </div>
   </div>
 </div>
 `;
@@ -166,33 +202,45 @@ exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-zhyi0r"
-    onKeyDown={[Function]}
-    role="tablist"
-    tabIndex="0"
+    data-css-wx7ofq=""
   >
-    <button
-      aria-selected={true}
-      className="css-1pp0sr"
-      id="wow"
-      onClick={[Function]}
-      role="tab"
-      style={
-        Object {
-          "opacity": 0.5,
-        }
-      }
-      tabIndex="-1"
+    <div
+      data-css-1nnsngu=""
     >
       <div
-        className="css-1vk06pf"
+        data-css-claeju=""
       >
-        Disabled look
-        <span
-          className="css-1s34vsj"
-        />
+        <div
+          className="css-zhyi0r"
+          onKeyDown={[Function]}
+          role="tablist"
+          tabIndex="0"
+        >
+          <button
+            aria-selected={true}
+            className="css-1pp0sr"
+            id="wow"
+            onClick={[Function]}
+            role="tab"
+            style={
+              Object {
+                "opacity": 0.5,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div
+              className="css-1vk06pf"
+            >
+              Disabled look
+              <span
+                className="css-1s34vsj"
+              />
+            </div>
+          </button>
+        </div>
       </div>
-    </button>
+    </div>
   </div>
 </div>
 `;
@@ -201,47 +249,59 @@ exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
 <div
   data-css-claeju=""
 >
-  <div>
+  <div
+    data-css-wx7ofq=""
+  >
     <div
-      className="css-zhyi0r"
-      onKeyDown={[Function]}
-      role="tablist"
-      tabIndex="0"
+      data-css-1nnsngu=""
     >
-      <button
-        aria-selected={true}
-        className="css-1pp0sr"
-        id="wow"
-        onClick={[Function]}
-        role="tab"
-        style={
-          Object {
-            "opacity": 0.5,
-          }
-        }
-        tabIndex="-1"
+      <div
+        data-css-claeju=""
       >
-        <div
-          className="css-1vk06pf"
-        >
-          Disabled look
-          <span
-            className="css-1s34vsj"
-          />
+        <div>
+          <div
+            className="css-zhyi0r"
+            onKeyDown={[Function]}
+            role="tablist"
+            tabIndex="0"
+          >
+            <button
+              aria-selected={true}
+              className="css-1pp0sr"
+              id="wow"
+              onClick={[Function]}
+              role="tab"
+              style={
+                Object {
+                  "opacity": 0.5,
+                }
+              }
+              tabIndex="-1"
+            >
+              <div
+                className="css-1vk06pf"
+              >
+                Disabled look
+                <span
+                  className="css-1s34vsj"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            aria-labelledby="wow"
+            className="css-nil"
+            role="tabpanel"
+            style={
+              Object {
+                "border": "1px solid red",
+              }
+            }
+          >
+            This is the content
+          </div>
         </div>
-      </button>
-    </div>
-    <div
-      aria-labelledby="wow"
-      className="css-nil"
-      role="tabpanel"
-      style={
-        Object {
-          "border": "1px solid red",
-        }
-      }
-    >
-      This is the content
+      </div>
     </div>
   </div>
 </div>
