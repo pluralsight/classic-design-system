@@ -92,19 +92,16 @@ const ListItem = (props, context) => {
       {
         ...props,
         role: 'tab',
-
         'aria-selected': props.active,
-        innerRef: props.innerRef,
+        ref: props.innerRef,
         tabIndex: '-1',
         ...styles.listItem({
           ...props,
-
           themeName: context.themeName || themeDefaultName
         })
       },
       { tagName }
     ),
-
     <div {...styles.textWidth(props)}>
       {props.children}
       <span {...styles.bar(props)} />
