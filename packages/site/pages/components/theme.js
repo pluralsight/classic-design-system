@@ -1,5 +1,6 @@
 import Button from '@pluralsight/ps-design-system-button/react'
 import core from '@pluralsight/ps-design-system-core'
+import React from 'react'
 import Text from '@pluralsight/ps-design-system-text/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
@@ -7,9 +8,7 @@ import {
   Chrome,
   Code,
   Content,
-  Example,
-  Heading,
-  Link,
+  Intro,
   P,
   PageHeading,
   PropTypes,
@@ -60,6 +59,11 @@ export default withServerProps(_ => (
     <Content title="Button">
       <PageHeading packageName="theme">Theme</PageHeading>
 
+      <Intro>
+        The Theme component helps adjust all other components visually to a
+        "dark" or a "light" page design.
+      </Intro>
+
       <P>Install the component dependency:</P>
       <Code language="bash">
         npm install @pluralsight/ps-design-system-theme
@@ -85,8 +89,9 @@ export default withServerProps(_ => (
       <SectionHeading>Usage pattern</SectionHeading>
       <P>
         To theme a component or part of the page, surround it in the{' '}
-        <code>Theme</code> component. If you're on React &lt; 16, you'll need to
-        wrap a single child, so a child <code>div</code> may be required.
+        <Text.Code>Theme</Text.Code> component. If you're on React &lt; 16,
+        you'll need to wrap a single child, so a child{' '}
+        <Text.Code>div</Text.Code> may be required.
       </P>
       <Code language="html">
         {`<Theme name={Theme.names.light}>
@@ -99,42 +104,14 @@ export default withServerProps(_ => (
 
       <P>
         The product is mostly presented within a "dark" interface theme. This is
-        the default, but the <code>Theme</code> component can change that for a
-        page or subset of themable components.
+        the default, but the <Text.Code>Theme</Text.Code> component can change
+        that for a page or subset of themable components.
       </P>
       <P>
-        Here's an example of the <code>Button</code> component in both "light"
-        and "dark" themes.
+        Here's an example of the <Text.Code>Button</Text.Code> component in both
+        "light" and "dark" themes.
       </P>
       <ContrastingExample />
-
-      <SectionHeading>Themeable Components</SectionHeading>
-      <P>These components will respond to changes in the Theme.</P>
-      <Text.List type={Text.List.types.bulleted}>
-        <Text.List.Item>
-          <Link href="/components/button#light-theme">Button</Link>
-        </Text.List.Item>
-        <Text.List.Item>
-          <Link href="/components/circularprogress#light-theme">
-            Circular Progress
-          </Link>
-        </Text.List.Item>
-        <Text.List.Item>
-          <Link href="/components/drawer#light-theme">Drawer</Link>
-        </Text.List.Item>
-        <Text.List.Item>
-          <Link href="/components/starrating">StarRating</Link>
-        </Text.List.Item>
-        <Text.List.Item>
-          <Link href="/components/switch#light-theme">Switch</Link>
-        </Text.List.Item>
-        <Text.List.Item>
-          <Link href="/components/tab#light-theme">Tab</Link>
-        </Text.List.Item>
-        <Text.List.Item>
-          <Link href="/components/text#light-theme">Text</Link>
-        </Text.List.Item>
-      </Text.List>
     </Content>
   </Chrome>
 ))

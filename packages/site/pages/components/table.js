@@ -1,6 +1,8 @@
 import Avatar from '@pluralsight/ps-design-system-avatar/react'
 import core from '@pluralsight/ps-design-system-core'
 import Drawer from '@pluralsight/ps-design-system-drawer/react'
+import PT from 'prop-types'
+import React from 'react'
 import Table from '@pluralsight/ps-design-system-table/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
@@ -10,7 +12,6 @@ import {
   Code,
   Content,
   Example,
-  Heading,
   Intro,
   Link,
   P,
@@ -37,6 +38,9 @@ const PinkBox = props => (
     `}</style>
   </div>
 )
+PinkBox.propTypes = {
+  children: PT.node
+}
 
 class InAppExample extends React.Component {
   constructor(props) {
@@ -92,7 +96,7 @@ class InAppExample extends React.Component {
                 <Table.ColumnHeader
                   align={field.align}
                   key={field.key}
-                  onClick={handleSortClick.bind(this, field.key)}
+                  onClick={evt => handleSortClick(field.key, evt)}
                   sort={
                     state.sortKey === field.key ? state.sortDirection : true
                   }
@@ -242,6 +246,7 @@ export default withServerProps(_ => (
         table. Add emphasis to visually anchor the primary column.
       </P>
       <Example.React
+        themeToggle
         includes={{ Table }}
         orient="vertical"
         codes={[
@@ -278,6 +283,7 @@ export default withServerProps(_ => (
         a column identifier, it is up to you to prebind it.
       </P>
       <Example.React
+        themeToggle
         includes={{ Table }}
         orient="vertical"
         codes={[
@@ -308,6 +314,7 @@ export default withServerProps(_ => (
         columns.
       </P>
       <Example.React
+        themeToggle
         includes={{ Table }}
         orient="vertical"
         codes={[
@@ -346,9 +353,11 @@ export default withServerProps(_ => (
           target="_blank"
         >
           flex CSS attribute
-        </Link>.
+        </Link>
+        .
       </P>
       <Example.React
+        themeToggle
         includes={{ Table }}
         orient="vertical"
         codes={[
@@ -381,6 +390,7 @@ export default withServerProps(_ => (
         <Text.Code>Drawer base</Text.Code> prop.
       </P>
       <Example.React
+        themeToggle
         includes={{ Drawer, PinkBox, Table }}
         orient="vertical"
         codes={[
@@ -411,10 +421,6 @@ export default withServerProps(_ => (
 </Table>`
         ]}
       />
-
-      <SectionHeading>Light theme</SectionHeading>
-      <P>The table is fully supported in the light theme.</P>
-      <InAppExample themeName={Theme.names.light} />
     </Content>
   </Chrome>
 ))
