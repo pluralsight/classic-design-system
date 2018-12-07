@@ -138,6 +138,7 @@ export default withServerProps(_ => (
         subsections of an interface.
       </P>
       <Example.React
+        themeToggle
         orient="vertical"
         includes={{ Tab }}
         codes={[
@@ -159,6 +160,7 @@ export default withServerProps(_ => (
         Tab.ListItem and your content. Ensure your ids match to make the link.
       </P>
       <Example.React
+        themeToggle
         orient="vertical"
         includes={{ Tab }}
         codes={[
@@ -171,30 +173,6 @@ export default withServerProps(_ => (
 </Tab.Panel>
 `
         ]}
-      />
-
-      <SectionHeading>Light theme</SectionHeading>
-      <P>
-        To specify the light theme, wrap your components in a <code>Theme</code>{' '}
-        componet.
-      </P>
-      <Example.React
-        orient="vertical"
-        includes={{ Tab, Theme }}
-        codes={[
-          `
-<Theme name={Theme.names.light}>
-  <Tab.List>
-    <Tab.ListItem id="menu1">Menu Item</Tab.ListItem>
-    <Tab.ListItem id="menu2">Menu Item</Tab.ListItem>
-    <Tab.ListItem id="menu3">Menu Item</Tab.ListItem>
-    <Tab.ListItem id="menu4">Menu Item</Tab.ListItem>
-    <Tab.ListItem id="menu5">Menu Item</Tab.ListItem>
-  </Tab.List>
-</Theme>
-`
-        ]}
-        themeName={Theme.names.light}
       />
 
       <InAppExample />

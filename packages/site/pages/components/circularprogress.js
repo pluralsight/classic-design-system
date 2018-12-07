@@ -8,8 +8,6 @@ import {
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
@@ -102,7 +100,8 @@ export default withServerProps(_ => (
             null,
             <code>medium</code>,
             <span>
-              standard size for widget (from <code>CircularProgress.sizes</code>)
+              standard size for widget (from <code>CircularProgress.sizes</code>
+              )
             </span>
           ]),
           PropTypes.row([
@@ -118,6 +117,7 @@ export default withServerProps(_ => (
       <SectionHeading>Size</SectionHeading>
       <P>Circular progress comes in two standard sizes.</P>
       <Example.React
+        themeToggle
         includes={{ CircularProgress }}
         codes={Object.keys(CircularProgress.sizes).map(
           s =>
@@ -133,6 +133,7 @@ export default withServerProps(_ => (
         and becomes an infinite spinner.
       </P>
       <Example.React
+        themeToggle
         includes={{ CircularProgress }}
         codes={[`<CircularProgress value={66} />`, `<CircularProgress />`]}
       />
@@ -143,24 +144,6 @@ export default withServerProps(_ => (
         will tween as new <code>value</code> props are updated.
       </P>
       <AnimationDemo />
-
-      <SectionHeading>Light theme</SectionHeading>
-      <P>
-        To specify the light theme, wrap your components in a <code>Theme</code>{' '}
-        component.
-      </P>
-      <Example.React
-        orient="vertical"
-        includes={{ CircularProgress, Theme }}
-        codes={[
-          `
-<Theme name={Theme.names.light}>
-  <CircularProgress value={33} />
-</Theme>
-`
-        ]}
-        themeName={Theme.names.light}
-      />
     </Content>
   </Chrome>
 ))

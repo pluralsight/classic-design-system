@@ -1,22 +1,19 @@
-import CircularProgress from '@pluralsight/ps-design-system-circularprogress/react'
 import core from '@pluralsight/ps-design-system-core'
 import {
   Code as DSCode,
   P as DSP
 } from '@pluralsight/ps-design-system-text/react'
+import PropTypes from 'prop-types'
 import React from 'react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
   Link,
   P,
   PageHeading,
-  PropTypes,
   SectionHeading,
   withServerProps
 } from '../../src/ui'
@@ -56,6 +53,10 @@ const ColorDesc = props => (
     `}</style>
   </div>
 )
+ColorDesc.propTypes = {
+  children: PropTypes.node,
+  varName: PropTypes.string
+}
 
 const CodeColors = _ => (
   <div className="colors">
@@ -125,25 +126,9 @@ export default withServerProps(_ => (
       <SectionHeading>Inline code</SectionHeading>
       <P>Use when presenting code strings inline with body text.</P>
       <Example.React
+        themeToggle
         includes={{ P: DSP, Code: DSCode }}
         codes={[`<P>The text has <Code>inline-code</Code> in the middle.</P>`]}
-      />
-
-      <SectionHeading>Light theme</SectionHeading>
-      <P>
-        To specify the light theme, wrap your components in a <code>Theme</code>{' '}
-        component.
-      </P>
-      <Example.React
-        includes={{ P: DSP, Code: DSCode, Theme }}
-        codes={[
-          `
-<Theme name={Theme.names.light}>
-  <P>The text has <Code>inline-code</Code> in the middle.</P>
-</Theme>
-`
-        ]}
-        themeName={Theme.names.light}
       />
 
       <SectionHeading>Code block</SectionHeading>
@@ -163,7 +148,7 @@ export default withServerProps(_ => (
         <Link href="/core/color">color</Link> lighter than{' '}
         <DSCode>gray06</DSCode>.
       </P>
-      <Code language="bash">{`const what = "\'s amazing"
+      <Code language="bash">{`const what = "'s amazing"
 console.log('Design System' + what)`}</Code>
 
       <SectionHeading>Syntax highlighting</SectionHeading>
