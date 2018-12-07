@@ -85,28 +85,25 @@ const styles = {
 }
 
 const ListItem = (props, context) => {
-  // TODO: remove double filter
-  const listItemProps = {
-    role: 'tab',
-    'aria-selected': props.active,
-    onClick: props.onClick,
-    active: props.active,
-    href: props.href,
-    id: props.id,
-    // TODO: fix to react ref
-    innerRef: props.innerRef,
-    tabIndex: '-1',
-    themeName: context.themeName || themeDefaultName,
-    ...(props.style ? { style: props.style } : null),
-    ...(props.className ? { className: props.className } : null)
-  }
   const tagName = props.href ? 'a' : 'button'
   return React.createElement(
     tagName,
-    {
-      ...filterReactProps(listItemProps, { tagName }),
-      ...styles.listItem(listItemProps)
-    },
+    filterReactProps(
+      {
+        ...props,
+        role: 'tab',
+
+        'aria-selected': props.active,
+        innerRef: props.innerRef,
+        tabIndex: '-1',
+        ...styles.listItem({
+          ...props,
+
+          themeName: context.themeName || themeDefaultName
+        })
+      },
+      { tagName }
+    ),
 
     <div {...styles.textWidth(props)}>
       {props.children}
