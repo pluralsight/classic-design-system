@@ -1,11 +1,9 @@
 import addons from '@storybook/addons'
-import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Tab from '../react'
+import Tab from '../index.js'
 
 class InAppExample extends React.Component {
   constructor(props) {
@@ -35,20 +33,19 @@ class InAppExample extends React.Component {
             </Tab.ListItem>
           ))}
         </Tab.List>
-        {this.menus.map(
-          (menu, i) =>
-            i === this.state.activeIndex ? (
-              <Tab.Panel labelledBy={menu.id} key={menu.id}>
-                <div className="content">{menu.content}</div>
-              </Tab.Panel>
-            ) : null
+        {this.menus.map((menu, i) =>
+          i === this.state.activeIndex ? (
+            <Tab.Panel labelledBy={menu.id} key={menu.id}>
+              <div className="content">{menu.content}</div>
+            </Tab.Panel>
+          ) : null
         )}
       </div>
     )
   }
 }
 
-const defaultStory = storiesOf('default', module)
+storiesOf('default', module)
   .addDecorator(themeDecorator(addons))
   .add('default', _ => <InAppExample />)
   .add('no items', _ => (
@@ -61,7 +58,7 @@ const defaultStory = storiesOf('default', module)
     </Tab.List>
   ))
 
-const overrideStory = storiesOf('style overrides', module)
+storiesOf('style overrides', module)
   .addDecorator(themeDecorator(addons))
   .add('list no borderBottom (style)', _ => (
     <Tab.List style={{ borderBottom: 'none' }}>
