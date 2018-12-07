@@ -2,7 +2,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
 
@@ -95,10 +95,7 @@ const ListItem = (props, context) => {
         'aria-selected': props.active,
         ref: props.innerRef,
         tabIndex: '-1',
-        ...styles.listItem({
-          ...props,
-          themeName: context.themeName || themeDefaultName
-        })
+        ...styles.listItem(props)
       },
       { tagName }
     ),
@@ -117,8 +114,5 @@ ListItem.propTypes = {
 ListItem.defaultProps = {
   active: false
 }
-ListItem.contextTypes = {
-  themeName: PropTypes.string
-}
 
-export default ListItem
+export default withTheme(ListItem)
