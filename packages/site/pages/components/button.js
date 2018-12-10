@@ -50,6 +50,13 @@ export default withServerProps(_ => (
             'standard input disable flag'
           ]),
           PropTypes.row([
+            'href',
+            'string',
+            null,
+            null,
+            'url of resource (renders as anchor)'
+          ]),
+          PropTypes.row([
             'icon',
             <code>Icon</code>,
             null,

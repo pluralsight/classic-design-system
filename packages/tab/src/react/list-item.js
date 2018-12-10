@@ -1,127 +1,118 @@
-import core from '@pluralsight/ps-design-system-core'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
-import glamorous from 'glamorous'
 import PropTypes from 'prop-types'
 import React from 'react'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
 
-const TextWidth = glamorous.div(css['.psds-tab__list-item__text'])
+const styles = {
+  bar: _ => glamor.css(css['.psds-tab__list-item__bar']),
+  listItem: props =>
+    glamor.css(
+      css['.psds-tab__list-item'],
+      {
+        ':focus': css['.psds-tab__list-item:focus'],
+        ':first-child': css['.psds-tab__list-item:first-child'],
 
-const Bar = glamorous.span(css['.psds-tab__list-item__bar'])
-
-const ListItem = glamorous.button(
-  {
-    ...css['.psds-tab__list-item'],
-    ':focus': css['.psds-tab__list-item:focus'],
-    ':first-child': css['.psds-tab__list-item:first-child']
-  },
-  props => ({
-    // TextWidth
-    ':hover div':
-      css[
-        `.psds-tab__list-item.psds-theme--${
-          props.themeName
-        }:hover .psds-tab__list-item__text`
-      ],
-    ':focus div':
-      css[
-        `.psds-tab__list-item.psds-theme--${
-          props.themeName
-        }:focus .psds-tab__list-item__text`
-      ],
-    ':active div':
-      css[
-        `.psds-tab__list-item.psds-theme--${
-          props.themeName
-        }:active .psds-tab__list-item__text`
-      ],
-    // Bar
-    ':hover span': css[`.psds-tab__list-item:hover .psds-tab__list-item__bar`],
-    ':focus span': css[`.psds-tab__list-item:focus .psds-tab__list-item__bar`],
-    ':active span': props.active
-      ? css[
-          `.psds-tab__list-item.psds-tab__list-item--active:active .psds-tab__list-item__bar`
-        ]
-      : css[`.psds-tab__list-item:active .psds-tab__list-item__bar`]
-  }),
-  ({ themeName }) => css[`.psds-tab__list-item.psds-theme--${themeName}`],
-  props =>
-    props.active
-      ? {
-          // TextWidth
-          ':hover div':
-            css[
-              `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
-                props.themeName
-              }:hover .psds-tab__list-item__text`
-            ],
-          ':focus div':
-            css[
-              `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
-                props.themeName
-              }:focus .psds-tab__list-item__text`
-            ],
-          '& div':
-            css[
-              `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
-                props.themeName
-              } .psds-tab__list-item__text`
-            ],
-          // Bar
-          ':hover span':
-            css[
-              `.psds-tab__list-item.psds-tab__list-item--active:hover .psds-tab__list-item__bar`
-            ],
-          ':focus span':
-            css[
-              `.psds-tab__list-item.psds-tab__list-item--active:focus .psds-tab__list-item__bar`
-            ],
-          '& span':
-            css[
-              `.psds-tab__list-item.psds-tab__list-item--active .psds-tab__list-item__bar`
+        // TextWidth
+        ':hover div':
+          css[
+            `.psds-tab__list-item.psds-theme--${
+              props.themeName
+            }:hover .psds-tab__list-item__text`
+          ],
+        ':focus div':
+          css[
+            `.psds-tab__list-item.psds-theme--${
+              props.themeName
+            }:focus .psds-tab__list-item__text`
+          ],
+        ':active div':
+          css[
+            `.psds-tab__list-item.psds-theme--${
+              props.themeName
+            }:active .psds-tab__list-item__text`
+          ],
+        // Bar
+        ':hover span':
+          css[`.psds-tab__list-item:hover .psds-tab__list-item__bar`],
+        ':focus span':
+          css[`.psds-tab__list-item:focus .psds-tab__list-item__bar`],
+        ':active span': props.active
+          ? css[
+              `.psds-tab__list-item.psds-tab__list-item--active:active .psds-tab__list-item__bar`
             ]
-        }
-      : null
-)
-
-const ListItemComponent = (props, context) => {
-  const listItemProps = {
-    role: 'tab',
-    'aria-selected': props.active,
-    onClick: props.onClick,
-    active: props.active,
-    id: props.id,
-    innerRef: props.innerRef,
-    tabIndex: '-1',
-    themeName: context.themeName || themeDefaultName,
-    ...(props.style ? { style: props.style } : null),
-    ...(props.className ? { className: props.className } : null)
-  }
-  return (
-    <ListItem {...listItemProps}>
-      <TextWidth>
-        {props.children}
-        <Bar />
-      </TextWidth>
-    </ListItem>
-  )
+          : css[`.psds-tab__list-item:active .psds-tab__list-item__bar`]
+      },
+      css[`.psds-tab__list-item.psds-theme--${props.themeName}`],
+      props.active && {
+        // TextWidth
+        ':hover div':
+          css[
+            `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
+              props.themeName
+            }:hover .psds-tab__list-item__text`
+          ],
+        ':focus div':
+          css[
+            `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
+              props.themeName
+            }:focus .psds-tab__list-item__text`
+          ],
+        '& div':
+          css[
+            `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
+              props.themeName
+            } .psds-tab__list-item__text`
+          ],
+        // Bar
+        ':hover span':
+          css[
+            `.psds-tab__list-item.psds-tab__list-item--active:hover .psds-tab__list-item__bar`
+          ],
+        ':focus span':
+          css[
+            `.psds-tab__list-item.psds-tab__list-item--active:focus .psds-tab__list-item__bar`
+          ],
+        '& span':
+          css[
+            `.psds-tab__list-item.psds-tab__list-item--active .psds-tab__list-item__bar`
+          ]
+      }
+    ),
+  textWidth: _ => glamor.css(css['.psds-tab__list-item__text'])
 }
 
-ListItemComponent.propTypes = {
+const ListItem = (props, context) => {
+  const tagName = props.href ? 'a' : 'button'
+  return React.createElement(
+    tagName,
+    filterReactProps(
+      {
+        ...props,
+        role: 'tab',
+        'aria-selected': props.active,
+        ref: props.innerRef,
+        tabIndex: '-1',
+        ...styles.listItem(props)
+      },
+      { tagName }
+    ),
+    <div {...styles.textWidth(props)}>
+      {props.children}
+      <span {...styles.bar(props)} />
+    </div>
+  )
+}
+ListItem.propTypes = {
   active: PropTypes.bool,
+  href: PropTypes.string,
   id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   onClick: PropTypes.func
 }
-ListItemComponent.defaultProps = {
+ListItem.defaultProps = {
   active: false
 }
-ListItemComponent.contextTypes = {
-  themeName: PropTypes.string
-}
 
-export default ListItemComponent
+export default withTheme(ListItem)

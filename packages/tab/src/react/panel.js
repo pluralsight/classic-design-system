@@ -1,8 +1,7 @@
-import glamorous from 'glamorous'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const Panel = glamorous.div({})
+const Panel = props => <div {...props} />
 
 const PanelComponent = props => {
   const panelProps = {

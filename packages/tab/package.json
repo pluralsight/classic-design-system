@@ -27,8 +27,8 @@
   "keywords": [],
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.4.0",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.1.1",
     "@pluralsight/ps-design-system-theme": "^1.4.1",
-    "glamorous": "^4.1.0",
     "prop-types": "^15.5.10"
   },
   "peerDependencies": {
@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.9.0",
+    "@pluralsight/ps-design-system-storybook-addon-center": "*",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.2.6",
     "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/addons": "^4.0.0",

@@ -1,24 +1,27 @@
-import core from '@pluralsight/ps-design-system-core'
-import glamorous from 'glamorous'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/react'
+import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
 
-const List = glamorous.div(css['.psds-tab__list'], ({ themeName }) => ({
-  ...css[`.psds-tab__list.psds-theme--${themeName}`],
-  ':focus': css['.psds-tab__list:focus'],
-  ':focus div': css['.psds-tab__list:focus .psds-tab__list-item__text']
-}))
+const styles = {
+  list: ({ themeName }) =>
+    glamor.css(
+      css['.psds-tab__list'],
+      css[`.psds-tab__list.psds-theme--${themeName}`],
+      {
+        ':focus': css['.psds-tab__list:focus'],
+        ':focus div': css['.psds-tab__list:focus .psds-tab__list-item__text']
+      }
+    )
+}
 
 const findActiveIndex = els =>
   React.Children.toArray(els).findIndex(el => el && el.props.active)
 
-class ListComponent extends React.Component {
+class List extends React.Component {
   constructor(props) {
     super(props)
     const activeIndex = findActiveIndex(this.props.children)
@@ -56,12 +59,13 @@ class ListComponent extends React.Component {
       role: 'tablist',
       onKeyDown: this.handleKeyDown,
       tabIndex: '0',
+      // TODO: use withTheme instead
       themeName: this.context.themeName || themeDefaultName,
       ...(this.props.style ? { style: this.props.style } : null),
       ...(this.props.className ? { className: this.props.className } : null)
     }
     return (
-      <List {...listProps}>
+      <div {...filterReactProps(listProps)} {...styles.list(listProps)}>
         {React.Children.map(
           this.props.children,
           (el, i) =>
@@ -74,12 +78,12 @@ class ListComponent extends React.Component {
               innerRef: itemEl => (this.itemEls[i] = itemEl)
             })
         )}
-      </List>
+      </div>
     )
   }
 }
-ListComponent.contextTypes = {
+List.contextTypes = {
   themeName: PropTypes.string
 }
 
-export default ListComponent
+export default List
