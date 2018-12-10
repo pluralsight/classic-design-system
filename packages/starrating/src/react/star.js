@@ -101,8 +101,10 @@ class Star extends React.PureComponent {
     const {
       active,
       appearance,
+      bright,
       index,
       interactive,
+      onClick,
       onEnter,
       onLeave,
       themeName,

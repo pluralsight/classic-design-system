@@ -58,13 +58,17 @@ iconStory.add('vertically aligned rows', _ => (
 ))
 
 const disabledStory = storiesOf('disabled', module)
-Object.keys(Button.appearances).forEach(app =>
-  disabledStory.add(app, _ => (
-    <Button onClick={action('should never click')} disabled appearance={app}>
-      Disabled
-    </Button>
-  ))
-)
+disabledStory.add('all', _ => (
+  <div style={{ display: 'grid', gap: '20px', gridTemplateColumns: '1fr 1fr' }}>
+    {Object.keys(Button.appearances).map(app => [
+      <Button appearance={app}>{app}</Button>,
+      <Button onClick={action('should never click')} disabled appearance={app}>
+        {app + ' disabled'}
+      </Button>
+    ])}
+  </div>
+))
+
 disabledStory.add('with icon', _ => (
   <Button disabled icon={<Icon id={Icon.ids.pencil} />}>
     Disabled
@@ -153,9 +157,9 @@ class SwitchToLoading extends React.Component {
   }
 
   componentDidMount() {
-    this.timeout = setTimeout(_ => {
+    this.timeout = setInterval(_ => {
       this.setState({ loading: !this.state.loading })
-    }, 500)
+    }, 1500)
   }
 
   componentWillUnmount() {

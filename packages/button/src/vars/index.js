@@ -1,5 +1,6 @@
 export const appearances = {
   primary: 'primary',
+  secondary: 'secondary',
   stroke: 'stroke',
   flat: 'flat'
 }

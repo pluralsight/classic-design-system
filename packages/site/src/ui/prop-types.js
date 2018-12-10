@@ -26,7 +26,7 @@ const PropTypesRow = props => (
       {props.row.required ? (
         <React.Fragment>
           <BadgeSpacer />
-          <Badge appearance={Badge.appearances.stroke}>Required</Badge>
+          <Badge appearance={Badge.appearances.subtle}>Required</Badge>
         </React.Fragment>
       ) : (
         ''
@@ -52,6 +52,15 @@ const PropTypesRow = props => (
     `}</style>
   </Table.Row>
 )
+PropTypesRow.propTypes = {
+  row: PropTypes.shape({
+    description: PropTypes.node,
+    defaultValue: PropTypes.node,
+    name: PropTypes.node,
+    required: PropTypes.bool,
+    value: PropTypes.node
+  })
+}
 
 const ColumnLabels = _ => (
   <Table.Row>
@@ -74,6 +83,9 @@ const ComponentHeading = props => (
     `}</style>
   </div>
 )
+ComponentHeading.propTypes = {
+  children: PropTypes.node
+}
 
 const PropTypesTable = props => (
   <div className="proptypes">
@@ -117,7 +129,8 @@ PropTypesTable.propTypes = {
   props: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.object),
     PropTypes.object
-  ])
+  ]),
+  title: PropTypes.string
 }
 
 PropTypesTable.row = row

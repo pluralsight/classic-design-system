@@ -66,7 +66,8 @@ export default {
     background: 'none',
     border: 0,
     cursor: 'pointer',
-    padding: `0 calc(${core.layout.spacingXLarge} / 2)`
+    padding: `0 calc(${core.layout.spacingXLarge} / 2)`,
+    textDecoration: 'none'
   },
   '.psds-tab__list-item:focus': {
     outline: 'none'

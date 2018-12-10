@@ -2,15 +2,12 @@ import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import Switch from '@pluralsight/ps-design-system-switch/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
@@ -148,6 +145,7 @@ export default withServerProps(_ => (
       <SectionHeading>Size</SectionHeading>
       <P>Switches come in two sizes.</P>
       <Example.React
+        themeToggle
         includes={{ Switch }}
         codes={Object.keys(Switch.sizes).map(
           s => `<Switch size={Switch.sizes.${s}} />`
@@ -157,6 +155,7 @@ export default withServerProps(_ => (
       <SectionHeading>Color</SectionHeading>
       <P>Switches come in two colors. Orange is default.</P>
       <Example.React
+        themeToggle
         includes={{ Switch }}
         codes={Object.keys(Switch.colors).map(
           c => `<Switch checked color={Switch.colors.${c}} />`
@@ -168,6 +167,7 @@ export default withServerProps(_ => (
         Labels will provide additional context around the usage of the switch.
       </P>
       <Example.React
+        themeToggle
         includes={{ Switch }}
         codes={[
           `<Switch>Label right</Switch>`,
@@ -183,29 +183,12 @@ export default withServerProps(_ => (
         for non-disabled switches.
       </P>
       <Example.React
+        themeToggle
         includes={{ Switch }}
         codes={[
           `<Switch disabled>Unavailable</Switch>`,
           `<Switch disabled checked size={Switch.sizes.small}>Unavailable</Switch>`
         ]}
-      />
-
-      <SectionHeading>Light theme</SectionHeading>
-      <P>
-        To specify the light theme, wrap your components in a <code>Theme</code>{' '}
-        component.
-      </P>
-      <Example.React
-        orient="vertical"
-        includes={{ Switch, Theme }}
-        codes={[
-          `
-<Theme name={Theme.names.light}>
-  <Switch>Such light</Switch>
-</Theme>
-`
-        ]}
-        themeName={Theme.names.light}
       />
 
       <SectionHeading>Error</SectionHeading>
@@ -214,8 +197,9 @@ export default withServerProps(_ => (
         This is useful when tags are used from within a form
       </P>
       <Example.React
+        themeToggle
         includes={{ Switch }}
-        codes={[`<Switch error>Problem tag</Switch>`]}
+        codes={[`<Switch error>Problem with this one</Switch>`]}
       />
     </Content>
   </Chrome>

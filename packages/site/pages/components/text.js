@@ -1,14 +1,11 @@
-import core from '@pluralsight/ps-design-system-core'
+import React from 'react'
 import Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
@@ -38,6 +35,7 @@ export default withServerProps(_ => (
         possible.
       </P>
       <Example.React
+        themeToggle
         orient="vertical"
         includes={{ Text }}
         codes={Object.keys(Text.Heading.sizes).map(
@@ -67,6 +65,7 @@ export default withServerProps(_ => (
       <SectionHeading>Body text</SectionHeading>
       <P>Try to use common paragraph style when possible.</P>
       <Example.React
+        themeToggle
         includes={{ Text }}
         codes={[
           `
@@ -85,6 +84,7 @@ export default withServerProps(_ => (
       <SectionHeading>List</SectionHeading>
       <P>Nothing fancy, just simple lists. You’ll know when you need them.</P>
       <Example.React
+        themeToggle
         includes={{ Text }}
         codes={[
           `
@@ -130,34 +130,6 @@ export default withServerProps(_ => (
             </span>
           ])
         ]}
-      />
-
-      <SectionHeading>Light theme</SectionHeading>
-      <P>
-        To specify the light theme, wrap your components in a <code>Theme</code>{' '}
-        componet.
-      </P>
-      <Example.React
-        orient="vertical"
-        includes={{ P, Text, Theme }}
-        codes={[
-          `
-<Theme name={Theme.names.light}>
-  <div>
-    <P>Some text on light background.</P>
-    <Text.Heading size={Text.Heading.sizes.xLarge}>
-      <h2>Heading XL - Light</h2>
-    </Text.Heading>
-    <Text.List type="numbered">
-      <Text.List.Item>apple</Text.List.Item>
-      <Text.List.Item>orange</Text.List.Item>
-      <Text.List.Item>banana</Text.List.Item>
-    </Text.List>
-  </div>
-</Theme>
-`
-        ]}
-        themeName={Theme.names.light}
       />
     </Content>
   </Chrome>

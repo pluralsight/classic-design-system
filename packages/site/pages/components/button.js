@@ -1,14 +1,13 @@
 import Button from '@pluralsight/ps-design-system-button/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import React from 'react'
 import Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
   Link,
   P,
   PageHeading,
@@ -49,6 +48,13 @@ export default withServerProps(_ => (
             null,
             <code>false</code>,
             'standard input disable flag'
+          ]),
+          PropTypes.row([
+            'href',
+            'string',
+            null,
+            null,
+            'url of resource (renders as anchor)'
           ]),
           PropTypes.row([
             'icon',
@@ -95,18 +101,17 @@ export default withServerProps(_ => (
       <SectionHeading>Appearance</SectionHeading>
       <P>Buttons come in three standard visual styles.</P>
       <Example.React
+        themeToggle
         includes={{ Button, Icon }}
-        codes={[`<Button>Click me</Button>`].concat(
-          Object.keys(Button.appearances).map(
-            a =>
-              `<Button appearance={Button.appearances.${a}}>Click me</Button>`
-          )
+        codes={Object.keys(Button.appearances).map(
+          a => `<Button appearance={Button.appearances.${a}}>Click me</Button>`
         )}
       />
 
       <SectionHeading>Size</SectionHeading>
       <P>Buttons come in four standard sizes. The default size is 'medium'.</P>
       <Example.React
+        themeToggle
         includes={{ Button, Icon }}
         codes={Object.keys(Button.sizes).map(
           s => `<Button size={Button.sizes.${s}}>Click me</Button>`
@@ -119,6 +124,7 @@ export default withServerProps(_ => (
         <Link href="/components/icon">icon docs</Link>.
       </P>
       <Example.React
+        themeToggle
         includes={{ Button, Icon }}
         codes={[
           `<Button icon={<Icon id={Icon.ids.check} />}>With Icon</Button>`,
@@ -139,6 +145,7 @@ export default withServerProps(_ => (
       </P>
 
       <Example.React
+        themeToggle
         includes={{ Button, Icon }}
         codes={[
           `<Button icon={<Icon id={Icon.ids.user} />} title="Profile" />`,
@@ -157,6 +164,7 @@ export default withServerProps(_ => (
         for non-disabled buttons.
       </P>
       <Example.React
+        themeToggle
         includes={{ Button, Icon }}
         codes={[
           `<Button disabled>Disabled</Button>`,
@@ -173,6 +181,7 @@ export default withServerProps(_ => (
         an <code>href</code> prop, and the button will render as an anchor tag.
       </P>
       <Example.React
+        themeToggle
         includes={{ Button, Icon }}
         codes={[
           `<Button href="https://duckduckgo.com?q=pluralsight" target="_blank">Link</Button>`,
@@ -187,6 +196,7 @@ export default withServerProps(_ => (
         text.
       </P>
       <Example.React
+        themeToggle
         orient="vertical"
         includes={{ Button }}
         codes={[
@@ -197,27 +207,6 @@ export default withServerProps(_ => (
 >Loading...</Button>
 `
         ]}
-      />
-
-      <SectionHeading>Light theme</SectionHeading>
-      <P>
-        To specify the light theme, wrap your components in a <code>Theme</code>{' '}
-        component.
-      </P>
-      <Example.React
-        orient="vertical"
-        includes={{ Button, Theme }}
-        codes={[
-          `
-<Theme name={Theme.names.light}>
-  <Button
-    icon={<Icon id={Icon.ids.user} />}
-    appearance={Button.appearances.flat}
-  >Light clicks only, please</Button>
-</Theme>
-`
-        ]}
-        themeName={Theme.names.light}
       />
     </Content>
   </Chrome>
