@@ -25,7 +25,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
         </div>
@@ -34,7 +34,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
         data-css-okadky=""
       >
         <button
-          data-css-phhqq4=""
+          data-css-2qvjr2=""
         >
           <div
             className="css-otejxm"
@@ -75,7 +75,7 @@ exports[`Storyshots actionBar long title 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
         </div>
@@ -84,7 +84,7 @@ exports[`Storyshots actionBar long title 1`] = `
         data-css-elqoo0=""
       >
         <button
-          data-css-phhqq4=""
+          data-css-2qvjr2=""
         >
           <div
             className="css-otejxm"
@@ -132,7 +132,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
         </div>
@@ -141,7 +141,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
         data-css-elqoo0=""
       >
         <button
-          data-css-phhqq4=""
+          data-css-2qvjr2=""
         >
           <div
             className="css-otejxm"
@@ -182,7 +182,7 @@ exports[`Storyshots actionBar one action 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Ready, Action, Bar!
         </div>
@@ -191,7 +191,7 @@ exports[`Storyshots actionBar one action 1`] = `
         data-css-elqoo0=""
       >
         <button
-          data-css-phhqq4=""
+          data-css-2qvjr2=""
         >
           <div
             className="css-otejxm"
@@ -275,10 +275,10 @@ exports[`Storyshots combo everything 1`] = `
         data-css-l77jv6=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           <span
-            data-css-bmcwue=""
+            data-css-1le2bq0=""
           >
             <a
               href="http://google.com?query=title"
@@ -288,13 +288,13 @@ exports[`Storyshots combo everything 1`] = `
           </span>
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
           >
             <span
-              data-css-bmcwue=""
+              data-css-1le2bq0=""
             >
               <a
                 href="http://google.com/?query=jaketrent"
@@ -313,7 +313,7 @@ exports[`Storyshots combo everything 1`] = `
             data-css-1kcrbi9=""
           >
             <span
-              data-css-bmcwue=""
+              data-css-1le2bq0=""
             >
               <a
                 href="http://google.com/?query=jaketrent"
@@ -332,7 +332,7 @@ exports[`Storyshots combo everything 1`] = `
             data-css-1kcrbi9=""
           >
             <span
-              data-css-bmcwue=""
+              data-css-1le2bq0=""
             >
               <a
                 href="http://google.com/?query=jaketrent"
@@ -343,7 +343,7 @@ exports[`Storyshots combo everything 1`] = `
           </span>
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -356,7 +356,7 @@ exports[`Storyshots combo everything 1`] = `
         data-css-1akhza9=""
       >
         <button
-          data-css-phhqq4=""
+          data-css-2qvjr2=""
         >
           <div
             className="css-otejxm"
@@ -374,7 +374,7 @@ exports[`Storyshots combo everything 1`] = `
           </div>
         </button>
         <button
-          data-css-phhqq4=""
+          data-css-2qvjr2=""
         >
           <div
             className="css-otejxm"
@@ -392,7 +392,7 @@ exports[`Storyshots combo everything 1`] = `
           </div>
         </button>
         <button
-          data-css-phhqq4=""
+          data-css-2qvjr2=""
         >
           <div
             className="css-otejxm"
@@ -451,7 +451,7 @@ exports[`Storyshots fullOverlay element 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Overlay This!
         </div>
@@ -501,7 +501,7 @@ exports[`Storyshots fullOverlay link 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Overlay This!
         </div>
@@ -564,7 +564,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Overlay This!
         </div>
@@ -635,7 +635,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Both Icon and Image Have Separate Click Targets
         </div>
@@ -678,12 +678,12 @@ exports[`Storyshots image link 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Linked Image
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -715,12 +715,12 @@ exports[`Storyshots image no image 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           No Image
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -752,12 +752,12 @@ exports[`Storyshots image no image with overlay 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           No Image, With Overlay (Not Shown)
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -796,12 +796,12 @@ exports[`Storyshots image small image 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Small Image
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -840,12 +840,12 @@ exports[`Storyshots image tall image 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Tall Image
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -884,12 +884,12 @@ exports[`Storyshots image wide image 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Wide Image
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -928,12 +928,12 @@ exports[`Storyshots image with image 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           With Image
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -983,12 +983,12 @@ exports[`Storyshots image with image with overlay 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           With Image
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1034,12 +1034,12 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
           data-css-kxulf3=""
         >
           <div
-            data-css-1e23mlv=""
+            data-css-1jlgfae=""
           >
             Course thing you do
           </div>
           <div
-            data-css-gmo5z6=""
+            data-css-cnfu1f=""
           >
             <span
               data-css-1kcrbi9=""
@@ -1052,7 +1052,7 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
           data-css-okadky=""
         >
           <button
-            data-css-phhqq4=""
+            data-css-2qvjr2=""
           >
             <div
               className="css-otejxm"
@@ -1085,12 +1085,12 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
           data-css-kxulf3=""
         >
           <div
-            data-css-1e23mlv=""
+            data-css-1jlgfae=""
           >
             Course thing you do
           </div>
           <div
-            data-css-gmo5z6=""
+            data-css-cnfu1f=""
           >
             <span
               data-css-1kcrbi9=""
@@ -1103,7 +1103,7 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
           data-css-okadky=""
         >
           <button
-            data-css-phhqq4=""
+            data-css-2qvjr2=""
           >
             <div
               className="css-otejxm"
@@ -1162,12 +1162,12 @@ exports[`Storyshots in drawer medium 1`] = `
               data-css-kxulf3=""
             >
               <div
-                data-css-1e23mlv=""
+                data-css-1jlgfae=""
               >
                 Course thing you do
               </div>
               <div
-                data-css-gmo5z6=""
+                data-css-cnfu1f=""
               >
                 <span
                   data-css-1kcrbi9=""
@@ -1180,7 +1180,7 @@ exports[`Storyshots in drawer medium 1`] = `
               data-css-okadky=""
             >
               <button
-                data-css-phhqq4=""
+                data-css-2qvjr2=""
                 onClick={[Function]}
               >
                 <div
@@ -1274,12 +1274,12 @@ exports[`Storyshots in drawer small 1`] = `
               data-css-1tiyrld=""
             >
               <div
-                data-css-1umif8x=""
+                data-css-1vvatyd=""
               >
                 Course thing you do
               </div>
               <div
-                data-css-pi59ta=""
+                data-css-5jxdga=""
               >
                 <span
                   data-css-1kcrbi9=""
@@ -1292,7 +1292,7 @@ exports[`Storyshots in drawer small 1`] = `
               data-css-okadky=""
             >
               <button
-                data-css-phhqq4=""
+                data-css-2qvjr2=""
                 onClick={[Function]}
               >
                 <div
@@ -1376,18 +1376,18 @@ exports[`Storyshots metadata link 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Meta With Links
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
           >
             <span
-              data-css-bmcwue=""
+              data-css-1le2bq0=""
             >
               <a
                 href="http://google.com/?query=jaketrent"
@@ -1421,18 +1421,18 @@ exports[`Storyshots metadata long links 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Meta With Links
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
           >
             <span
-              data-css-bmcwue=""
+              data-css-1le2bq0=""
             >
               <a
                 href="http://google.com/?query=jaketrent"
@@ -1451,7 +1451,7 @@ exports[`Storyshots metadata long links 1`] = `
             data-css-1kcrbi9=""
           >
             <span
-              data-css-bmcwue=""
+              data-css-1le2bq0=""
             >
               <a
                 href="http://google.com/?query=jaketrent"
@@ -1470,7 +1470,7 @@ exports[`Storyshots metadata long links 1`] = `
             data-css-1kcrbi9=""
           >
             <span
-              data-css-bmcwue=""
+              data-css-1le2bq0=""
             >
               <a
                 href="http://google.com/?query=jaketrent"
@@ -1504,12 +1504,12 @@ exports[`Storyshots metadata long strings 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           The Longest Strings in El Mundo
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1570,12 +1570,12 @@ exports[`Storyshots metadata long strings with image 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Long Strings AND Los Imagereo
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1629,12 +1629,12 @@ exports[`Storyshots metadata string 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Meta with Strings
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1673,12 +1673,12 @@ exports[`Storyshots metadata super long first string 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Long Strings AND Los Imagereo
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1732,12 +1732,12 @@ exports[`Storyshots metadata two lines 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           Meta With Links
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1768,7 +1768,7 @@ exports[`Storyshots metadata two lines 1`] = `
           </span>
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1807,7 +1807,7 @@ exports[`Storyshots progress 0 progress 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           0 progress
         </div>
@@ -1850,7 +1850,7 @@ exports[`Storyshots progress 66.6667 progress 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           66.6667 progress
         </div>
@@ -1893,7 +1893,7 @@ exports[`Storyshots progress 100 progress 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           100 progress
         </div>
@@ -1921,7 +1921,7 @@ exports[`Storyshots progress no image 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           No image, with progress (not shown)
         </div>
@@ -1956,12 +1956,12 @@ exports[`Storyshots size medium 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           medium Row
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1993,12 +1993,12 @@ exports[`Storyshots size small 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1umif8x=""
+          data-css-1vvatyd=""
         >
           small Row
         </div>
         <div
-          data-css-pi59ta=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -2030,10 +2030,10 @@ exports[`Storyshots title link 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           <span
-            data-css-bmcwue=""
+            data-css-1le2bq0=""
           >
             <a
               href="http://google.com"
@@ -2073,12 +2073,12 @@ exports[`Storyshots title medium long title 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           medium With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
         </div>
         <div
-          data-css-gmo5z6=""
+          data-css-cnfu1f=""
         >
           <span
             data-css-1kcrbi9=""
@@ -2110,12 +2110,12 @@ exports[`Storyshots title small long title 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1umif8x=""
+          data-css-1vvatyd=""
         >
           small With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
         </div>
         <div
-          data-css-pi59ta=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -2147,7 +2147,7 @@ exports[`Storyshots title string 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1e23mlv=""
+          data-css-1jlgfae=""
         >
           A String Title
         </div>

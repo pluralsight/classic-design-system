@@ -31,28 +31,29 @@ const styles = {
       ...(fullOverlay && css['.psds-row__action-bar--fullOverlay']),
       ...(visible && css['.psds-row__action-bar--actionBarVisible'])
     }),
-  actionBarAction: ({ disabled }) =>
+  actionBarAction: ({ disabled, themeName }) =>
     glamor.css({
       ...css['.psds-row__action-bar__button'],
+      ...css[`.psds-row__action-bar__button--theme-${themeName}`],
       ...(disabled && css['.psds-row__action-bar__button--disabled'])
     }),
-  fullOverlay: ({ fullOverlayVisible: visible, isFocused }) =>
+  fullOverlay: ({ fullOverlayVisible: visible, isFocused, themeName }) =>
     glamor.css({
       ...css['.psds-row__full-overlay'],
       ...(isFocused && css['.psds-row__full-overlay--isFocused']),
       ...(visible && css['.psds-row__full-overlay--fullOverlayVisible'])
     }),
-  fullOverlayLink: () => glamor.css(css['.psds-row__full-overlay-link']),
-  image: props => {
-    return glamor.css({
+  fullOverlayLink: props => glamor.css(css['.psds-row__full-overlay-link']),
+  image: props =>
+    glamor.css({
       ...css['.psds-row__image'],
       backgroundImage: `url(${props.src})`
-    })
-  },
+    }),
   imageLink: () => glamor.css(css['.psds-row__image-link']),
   metadata: props =>
     glamor.css({
       ...css['.psds-row__metadata'],
+      ...css[`.psds-row__metadata--theme-${props.themeName}`],
       ...css[`.psds-row__metadata--size-${props.size}`]
     }),
   metadataDatum: () => glamor.css(css['.psds-row__metadata__datum']),
@@ -70,11 +71,16 @@ const styles = {
   },
   row: () => glamor.css(css['.psds-row']),
   text: () => glamor.css(css['.psds-row__text']),
-  textLink: () => glamor.css(css['.psds-row__text-link']),
+  textLink: props =>
+    glamor.css({
+      ...css['.psds-row__text-link'],
+      ...css[`.psds-row__text-link--theme-${props.themeName}`]
+    }),
   title: props =>
     glamor.css({
       ...css['.psds-row__title'],
-      ...css[`.psds-row__title--size-${props.size}`]
+      ...css[`.psds-row__title--size-${props.size}`],
+      ...css[`.psds-row__title--theme-${props.themeName}`]
     }),
   words: props => {
     const imgWidth = formatImageWidth(props)
@@ -91,16 +97,15 @@ const ActionBar = props => (
   <div {...styles.actionBar(props)} {...filterReactProps(props)} />
 )
 
-const ActionBarAction = props => {
+const ActionBarAction = withTheme(({ icon, ...props }) => {
   const filteredProps = filterReactProps(props, { tagName: 'button' })
-  delete filteredProps.icon
 
   return (
     <button {...styles.actionBarAction(props)} {...filteredProps}>
-      {props.icon}
+      {icon}
     </button>
   )
-}
+})
 ActionBarAction.displayName = 'Row.Action'
 ActionBarAction.propTypes = { icon: PropTypes.element.isRequired }
 
@@ -165,9 +170,9 @@ const ImageLink = props => (
 )
 ImageLink.displayName = 'Row.ImageLink'
 
-const Metadata = props => (
+const Metadata = withTheme(props => (
   <div {...styles.metadata(props)} {...filterReactProps(props)} />
-)
+))
 Metadata.propTypes = {
   size: PropTypes.any
 }
@@ -216,17 +221,17 @@ const Text = props => (
 )
 Text.displayName = 'Row.Text'
 
-const TextLink = props => (
+const TextLink = withTheme(props => (
   <span
     {...styles.textLink(props)}
     {...filterReactProps(props, { tagName: 'span' })}
   />
-)
+))
 TextLink.displayName = 'Row.TextLink'
 
-const Title = props => (
+const Title = withTheme(props => (
   <div {...styles.title(props)} {...filterReactProps(props)} />
-)
+))
 
 const Words = props => (
   <div {...styles.words(props)} {...filterReactProps(props)} />
@@ -378,4 +383,4 @@ Row.ImageLink = ImageLink
 Row.Text = Text
 Row.TextLink = TextLink
 
-export default withTheme(Row)
+export default Row
