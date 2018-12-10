@@ -96,11 +96,8 @@ export default withServerProps(_ => (
       <Example.React
         themeToggle
         includes={{ Button, Icon }}
-        codes={[`<Button>Click me</Button>`].concat(
-          Object.keys(Button.appearances).map(
-            a =>
-              `<Button appearance={Button.appearances.${a}}>Click me</Button>`
-          )
+        codes={Object.keys(Button.appearances).map(
+          a => `<Button appearance={Button.appearances.${a}}>Click me</Button>`
         )}
       />
 
