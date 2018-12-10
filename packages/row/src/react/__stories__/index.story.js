@@ -17,13 +17,7 @@ const longStringsMetaData = [
   'A length of such amazing lengthitude so-as to blow the mind'
 ]
 
-const PlayIcon = () => (
-  <Icon
-    size={Icon.sizes.large}
-    css={{ '& svg': { fill: core.colors.white } }}
-    id={Icon.ids.playCircle}
-  />
-)
+const PlayIcon = () => <Icon size={Icon.sizes.large} id={Icon.ids.playCircle} />
 
 storiesOf('combo', module).add('everything', _ => (
   <Row
@@ -152,21 +146,21 @@ storiesOf('image', module)
   .add(`wide image`, _ => (
     <Row
       title="Wide Image"
-      image={<Row.Image src="http://via.placeholder.com/350x150" />}
+      image={<Row.Image src={getImgSrc({ w: 350, h: 150 })} />}
       metadata1={['Jim Cooper']}
     />
   ))
   .add(`tall image`, _ => (
     <Row
       title="Tall Image"
-      image={<Row.Image src="http://via.placeholder.com/200x400h" />}
+      image={<Row.Image src={getImgSrc({ w: 200, h: 400 })} />}
       metadata1={['Jim Cooper']}
     />
   ))
   .add(`small image`, _ => (
     <Row
       title="Small Image"
-      image={<Row.Image src="http://via.placeholder.com/30x30h" />}
+      image={<Row.Image src={getImgSrc({ w: 30, h: 30 })} />}
       metadata1={['Jim Cooper']}
     />
   ))

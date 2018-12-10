@@ -3,20 +3,6 @@ import { transparentize } from 'polished'
 
 import * as vars from '../vars'
 
-const rowHover = {
-  opacity: 1
-}
-
-const actionBarButtonHover = {
-  color: core.colors.white
-}
-
-const textLinkAHover = {
-  color: core.colors.white,
-  textDecoration: 'underline',
-  transition: `all ${core.motion.speedNormal}`
-}
-
 export default {
   '.psds-row': {
     display: 'flex',
@@ -24,14 +10,16 @@ export default {
     width: '100%',
     padding: `${core.layout.spacingSmall} 0`,
     textAlign: 'left',
-    borderTop: `1px solid ${core.colors.gray04}`
+    borderTop: `1px solid ${core.colors.gray04}`,
+
+    '&:hover, &:hover': {
+      '& div': { opacity: 1 }
+    },
+
+    '&:first-of-type': {
+      borderTop: 'none'
+    }
   },
-  '.psds-row:first-of-type': {
-    borderTop: 'none'
-  },
-  // TODO: target child more precisely; which child is this?
-  '.psds-row:hover div': rowHover,
-  '.psds-row:active div': rowHover,
 
   // __overlays
   '.psds-row__overlays': {
@@ -67,7 +55,12 @@ export default {
     background: transparentize(0.5, core.colors.black),
     transition: `opacity ${core.motion.speedNormal}`,
     pointerEvents: 'none',
-    opacity: 0
+    opacity: 0,
+    color: core.colors.white,
+
+    '& a': {
+      color: 'inherit'
+    }
   },
   // __full-overlay--isFocused
   '.psds-row__full-overlay--isFocused': {
@@ -110,18 +103,21 @@ export default {
     border: 'none',
     color: core.colors.gray02,
     background: 'none',
-    transition: `all ${core.motion.speedNormal}`
+    transition: `all ${core.motion.speedNormal}`,
+
+    '&:active,&:hover': {
+      color: core.colors.white
+    }
   },
-  '.psds-row__action-bar__button:hover': actionBarButtonHover,
-  '.psds-row__action-bar__button:active': actionBarButtonHover,
 
   '.psds-row__action-bar__button--disabled': {
     color: core.colors.gray02,
-    background: core.colors.gray03
-  },
-  '.psds-row__action-bar__button--disabled:hover': {
-    color: core.colors.gray02,
-    background: core.colors.gray03
+    background: core.colors.gray03,
+
+    '&:hover': {
+      color: core.colors.gray02,
+      background: core.colors.gray03
+    }
   },
 
   // __progress
@@ -180,29 +176,36 @@ export default {
     alignItems: 'center',
     width: '100%',
     height: '100%',
-    pointerEvents: 'all'
-  },
-  '.psds-row__image-link a': {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100%',
-    width: '100%',
-    textDecoration: 'none',
-    transition: `all ${core.motion.speedNormal}`
+    pointerEvents: 'all',
+
+    '& a': {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100%',
+      width: '100%',
+      textDecoration: 'none',
+      transition: `all ${core.motion.speedNormal}`,
+      outline: '1px solid red'
+    }
   },
 
   // __text-link
   '.psds-row__text-link': {
-    pointerEvents: 'all'
+    pointerEvents: 'all',
+
+    '& a': {
+      color: 'inherit',
+      cursor: 'pointer',
+      textDecoration: 'none',
+
+      '&:active, &:hover': {
+        color: core.colors.white,
+        textDecoration: 'underline',
+        transition: `all ${core.motion.speedNormal}`
+      }
+    }
   },
-  '.psds-row__text-link a': {
-    color: 'inherit',
-    cursor: 'pointer',
-    textDecoration: 'none'
-  },
-  '.psds-row__text-link a:hover': textLinkAHover,
-  '.psds-row__text-link a:active': textLinkAHover,
 
   // __metadata
   '.psds-row__metadata': {
@@ -229,11 +232,12 @@ export default {
     overflow: 'hidden',
     textOverflow: 'ellipsis',
     flexShrink: 2,
-    maxWidth: '25%'
-  },
-  '.psds-row__metadata__datum:nth-of-type(1)': {
-    flexShrink: 1,
-    maxWidth: '50%'
+    maxWidth: '25%',
+
+    '&:nth-of-type(1)': {
+      flexShrink: 1,
+      maxWidth: '50%'
+    }
   },
 
   // __metadata__dot
