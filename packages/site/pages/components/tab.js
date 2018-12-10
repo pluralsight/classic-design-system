@@ -106,6 +106,13 @@ export default withServerProps(_ => (
               'styled active (automatically set)'
             ]),
             PropTypes.row([
+              'href',
+              'string',
+              null,
+              null,
+              'url of resource (renders as anchor)'
+            ]),
+            PropTypes.row([
               'id',
               <code>string|number</code>,
               true,

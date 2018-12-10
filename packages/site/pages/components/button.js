@@ -1,5 +1,6 @@
 import Button from '@pluralsight/ps-design-system-button/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import React from 'react'
 import Text from '@pluralsight/ps-design-system-text/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
@@ -8,7 +9,6 @@ import {
   Code,
   Content,
   Example,
-  Heading,
   Link,
   P,
   PageHeading,
@@ -49,6 +49,13 @@ export default withServerProps(_ => (
             null,
             <code>false</code>,
             'standard input disable flag'
+          ]),
+          PropTypes.row([
+            'href',
+            'string',
+            null,
+            null,
+            'url of resource (renders as anchor)'
           ]),
           PropTypes.row([
             'icon',
