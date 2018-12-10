@@ -185,8 +185,7 @@ export default {
       height: '100%',
       width: '100%',
       textDecoration: 'none',
-      transition: `all ${core.motion.speedNormal}`,
-      outline: '1px solid red'
+      transition: `all ${core.motion.speedNormal}`
     }
   },
 
