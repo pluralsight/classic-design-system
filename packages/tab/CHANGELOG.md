@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.6.21...@pluralsight/ps-design-system-tab@7.7.0) (2018-12-10)
+
+
+### Features
+
+* **tab:** allow href on ListItems ([4301eb8](https://github.com/pluralsight/design-system/commit/4301eb8))
+
+
+
+
+
 ## [7.6.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.6.20...@pluralsight/ps-design-system-tab@7.6.21) (2018-11-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tab

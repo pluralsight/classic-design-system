@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.11.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.10.1...@pluralsight/ps-design-system-button@10.11.0) (2018-12-10)
+
+
+### Bug Fixes
+
+* **button:** dont hide text when loading props change ([b43203a](https://github.com/pluralsight/design-system/commit/b43203a))
+
+
+### Features
+
+* **button:** add secondary appearance ([e8c3503](https://github.com/pluralsight/design-system/commit/e8c3503))
+
+
+
+
+
 ## [10.10.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.10.0...@pluralsight/ps-design-system-button@10.10.1) (2018-11-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-button

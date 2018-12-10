@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.3.2...@pluralsight/ps-design-system-site@11.4.0) (2018-12-10)
+
+
+### Bug Fixes
+
+* **site:** add missing key and title prop to card.action ([7a109d8](https://github.com/pluralsight/design-system/commit/7a109d8))
+* **site:** replace stroke badge with subtle ([24680dd](https://github.com/pluralsight/design-system/commit/24680dd))
+
+
+### Features
+
+* **button:** add secondary appearance ([e8c3503](https://github.com/pluralsight/design-system/commit/e8c3503))
+* **site:** add theme toggle to card docs ([dcb4c5d](https://github.com/pluralsight/design-system/commit/dcb4c5d))
+
+
+
+
+
 ## [11.3.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.3.1...@pluralsight/ps-design-system-site@11.3.2) (2018-12-01)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site

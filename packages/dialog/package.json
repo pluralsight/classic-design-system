@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-dialog",
-  "version": "2.3.8",
+  "version": "2.3.9",
   "description": "Design System component for dialog ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.9.0",
-    "@pluralsight/ps-design-system-button": "^10.10.1",
+    "@pluralsight/ps-design-system-button": "^10.11.0",
     "@pluralsight/ps-design-system-storybook-addon-center": "*",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^1.2.6",
     "@pluralsight/ps-design-system-text": "^10.7.21",

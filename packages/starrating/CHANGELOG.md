@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@1.2.1...@pluralsight/ps-design-system-starrating@1.2.2) (2018-12-10)
+
+
+### Bug Fixes
+
+* **starrating:** dont pass bright prop to dom button ([cade25d](https://github.com/pluralsight/design-system/commit/cade25d)), closes [#382](https://github.com/pluralsight/design-system/issues/382)
+
+
+
+
+
 ## [1.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@1.2.0...@pluralsight/ps-design-system-starrating@1.2.1) (2018-11-30)
 
 
