@@ -48,7 +48,7 @@ const decorateCardsM = decorateCards.bind(null, null)
 const capitalize = str => str.charAt(0).toUpperCase() + str.substring(1)
 
 const InAppExample = props => (
-  <div>
+  <Theme>
     <div className="gallery">
       <Layout.EqualColumnLayout>
         <ul>
@@ -121,7 +121,9 @@ const InAppExample = props => (
         </ul>
       </Layout.EqualColumnLayout>
     </div>
-    <Code lang="javascript" collapsible>{`<Layout.EqualColumnLayout>
+
+    <Code lang="javascript" collapsible>
+      {`<Layout.EqualColumnLayout>
   <ul>
     <li>
       <Card
@@ -191,14 +193,16 @@ const InAppExample = props => (
     </li>
   </ul>
 </Layout.EqualColumnLayout>
-`}</Code>
+`}
+    </Code>
+
     <style jsx>{`
       .gallery {
         padding: ${core.layout.spacingMedium};
         background: ${core.colors.gray06};
       }
     `}</style>
-  </div>
+  </Theme>
 )
 
 export default withServerProps(_ => (
