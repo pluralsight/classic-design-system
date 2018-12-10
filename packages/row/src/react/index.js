@@ -10,6 +10,8 @@ import css from '../css'
 import { toPercentageString } from '../js'
 import * as vars from '../vars'
 
+import elementOfType from './element-of-type'
+
 const formatImageWidth = ({ image, size }) =>
   image && size !== vars.sizes.small
     ? `(${vars.style.overlaysWidth} + ${vars.style.overlaysMarginRight})`
@@ -331,33 +333,33 @@ const Row = ({ title, ...props }) => (
 )
 
 Row.propTypes = {
-  // TODO: come back to this with a fresh brain to do some custom child component validation
-  // actionBar: PropTypes.arrayOf(validateComponentType([RowComponent.Action])),
-  // actionBarVisible: PropTypes.bool,
-  // fullOverlay: validateComponentType([RowComponent.FullOverlayLink]),
-  // fullOverlayVisible: PropTypes.bool,
-  // image: validateComponentType([Image, ImageLink]),
-  // metadata1: PropTypes.arrayOf(validateComponentType([Text, TextLink])),
-  // metadata2: PropTypes.arrayOf(validateComponentType([Text, TextLink])),
-  // progress: PropTypes.number,
-  // title: PropTypes.oneOfType([Text, RowComponent.TextLink]).isRequired,
-  // size: PropTypes.oneOf(Object.keys(vars.sizes))
-
-  actionBar: PropTypes.arrayOf(PropTypes.element),
+  actionBar: PropTypes.arrayOf(elementOfType(ActionBarAction)),
   actionBarVisible: PropTypes.bool,
-  fullOverlay: PropTypes.element,
+  fullOverlay: elementOfType(FullOverlayLink),
   fullOverlayVisible: PropTypes.bool,
-  image: PropTypes.element,
+  image: PropTypes.oneOfType([elementOfType(Image), elementOfType(ImageLink)]),
   metadata1: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.string, PropTypes.element])
+    PropTypes.oneOfType([
+      PropTypes.string,
+      elementOfType(Text),
+      elementOfType(TextLink)
+    ])
   ),
   metadata2: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.string, PropTypes.element])
+    PropTypes.oneOfType([
+      PropTypes.string,
+      elementOfType(Text),
+      elementOfType(TextLink)
+    ])
   ),
   progress: PropTypes.number,
-  size: PropTypes.oneOf(Object.keys(vars.sizes)),
+  size: PropTypes.oneOf(Object.values(vars.sizes)),
   themeName: PropTypes.oneOf(Object.values(themeNames)),
-  title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired
+  title: PropTypes.oneOfType([
+    PropTypes.string,
+    elementOfType(Text),
+    elementOfType(TextLink)
+  ])
 }
 
 Row.defaultProps = {
