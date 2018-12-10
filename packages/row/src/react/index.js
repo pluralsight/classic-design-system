@@ -340,7 +340,10 @@ const Row = ({ title, ...props }) => (
 Row.propTypes = {
   actionBar: PropTypes.arrayOf(elementOfType(ActionBarAction)),
   actionBarVisible: PropTypes.bool,
-  fullOverlay: elementOfType(FullOverlayLink),
+  fullOverlay: PropTypes.oneOfType([
+    PropTypes.element,
+    elementOfType(FullOverlayLink)
+  ]),
   fullOverlayVisible: PropTypes.bool,
   image: PropTypes.oneOfType([elementOfType(Image), elementOfType(ImageLink)]),
   metadata1: PropTypes.arrayOf(
