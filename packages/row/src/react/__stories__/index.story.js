@@ -2,7 +2,6 @@ import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
 import Drawer from '@pluralsight/ps-design-system-drawer/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 
@@ -349,7 +348,7 @@ Object.keys(Row.sizes).forEach(size =>
 )
 
 storiesOf('in a stack', module).add('no top border on first row', _ => (
-  <div style={{ padding: core.layout.spacingLarge }}>
+  <React.Fragment>
     <Row
       title="Course thing you do"
       metadata1={['1m 46s']}
@@ -364,5 +363,5 @@ storiesOf('in a stack', module).add('no top border on first row', _ => (
       actionBar={[<Row.Action icon={<Icon id={Icon.ids.more} />} key="more" />]}
       actionBarVisible
     />
-  </div>
+  </React.Fragment>
 ))

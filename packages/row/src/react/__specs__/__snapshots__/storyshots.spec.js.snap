@@ -7,7 +7,8 @@ exports[`Storyshots actionBar locked visible 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -64,7 +65,8 @@ exports[`Storyshots actionBar long title 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -114,7 +116,8 @@ exports[`Storyshots actionBar long title with image 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -171,7 +174,8 @@ exports[`Storyshots actionBar one action 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -221,7 +225,8 @@ exports[`Storyshots combo everything 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -422,7 +427,8 @@ exports[`Storyshots fullOverlay element 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -468,7 +474,8 @@ exports[`Storyshots fullOverlay link 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -518,7 +525,8 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -581,7 +589,8 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -652,7 +661,8 @@ exports[`Storyshots image link 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -704,7 +714,8 @@ exports[`Storyshots image no image 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -741,7 +752,8 @@ exports[`Storyshots image no image with overlay 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -778,7 +790,8 @@ exports[`Storyshots image small image 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -822,7 +835,8 @@ exports[`Storyshots image tall image 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -866,7 +880,8 @@ exports[`Storyshots image wide image 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -910,7 +925,8 @@ exports[`Storyshots image with image 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -954,7 +970,8 @@ exports[`Storyshots image with image with overlay 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -1009,118 +1026,111 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
     <div
-      style={
-        Object {
-          "padding": "24px",
-        }
-      }
+      data-css-vl7fes=""
     >
       <div
-        data-css-vl7fes=""
+        data-css-js3ti3=""
       >
         <div
-          data-css-js3ti3=""
+          data-css-6x74ml=""
+        />
+      </div>
+      <div
+        data-css-kxulf3=""
+      >
+        <div
+          data-css-1jlgfae=""
         >
-          <div
-            data-css-6x74ml=""
-          />
+          Course thing you do
         </div>
         <div
-          data-css-kxulf3=""
+          data-css-cnfu1f=""
         >
-          <div
-            data-css-1jlgfae=""
+          <span
+            data-css-1kcrbi9=""
           >
-            Course thing you do
-          </div>
-          <div
-            data-css-cnfu1f=""
-          >
-            <span
-              data-css-1kcrbi9=""
-            >
-              1m 46s
-            </span>
-          </div>
-        </div>
-        <div
-          data-css-okadky=""
-        >
-          <button
-            data-css-2qvjr2=""
-          >
-            <div
-              className="css-otejxm"
-            >
-              <svg
-                aria-label="more icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
-                />
-              </svg>
-            </div>
-          </button>
+            1m 46s
+          </span>
         </div>
       </div>
       <div
-        data-css-vl7fes=""
+        data-css-okadky=""
+      >
+        <button
+          data-css-2qvjr2=""
+        >
+          <div
+            className="css-otejxm"
+          >
+            <svg
+              aria-label="more icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      data-css-vl7fes=""
+    >
+      <div
+        data-css-js3ti3=""
       >
         <div
-          data-css-js3ti3=""
+          data-css-6x74ml=""
+        />
+      </div>
+      <div
+        data-css-kxulf3=""
+      >
+        <div
+          data-css-1jlgfae=""
         >
-          <div
-            data-css-6x74ml=""
-          />
+          Course thing you do
         </div>
         <div
-          data-css-kxulf3=""
+          data-css-cnfu1f=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            1m 46s
+          </span>
+        </div>
+      </div>
+      <div
+        data-css-okadky=""
+      >
+        <button
+          data-css-2qvjr2=""
         >
           <div
-            data-css-1jlgfae=""
+            className="css-otejxm"
           >
-            Course thing you do
-          </div>
-          <div
-            data-css-cnfu1f=""
-          >
-            <span
-              data-css-1kcrbi9=""
+            <svg
+              aria-label="more icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              1m 46s
-            </span>
+              <path
+                d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+              />
+            </svg>
           </div>
-        </div>
-        <div
-          data-css-okadky=""
-        >
-          <button
-            data-css-2qvjr2=""
-          >
-            <div
-              className="css-otejxm"
-            >
-              <svg
-                aria-label="more icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
+        </button>
       </div>
     </div>
   </div>
@@ -1134,7 +1144,8 @@ exports[`Storyshots in drawer medium 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -1253,7 +1264,8 @@ exports[`Storyshots in drawer small 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -1365,7 +1377,8 @@ exports[`Storyshots metadata link 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -1410,7 +1423,8 @@ exports[`Storyshots metadata long links 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -1493,7 +1507,8 @@ exports[`Storyshots metadata long strings 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -1552,7 +1567,8 @@ exports[`Storyshots metadata long strings with image 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -1618,7 +1634,8 @@ exports[`Storyshots metadata string 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -1655,7 +1672,8 @@ exports[`Storyshots metadata super long first string 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -1721,7 +1739,8 @@ exports[`Storyshots metadata two lines 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -1789,7 +1808,8 @@ exports[`Storyshots progress 0 progress 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -1824,7 +1844,8 @@ exports[`Storyshots progress 66.6667 progress 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -1867,7 +1888,8 @@ exports[`Storyshots progress 100 progress 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -1910,7 +1932,8 @@ exports[`Storyshots progress no image 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -1938,7 +1961,8 @@ exports[`Storyshots size medium 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -1982,7 +2006,8 @@ exports[`Storyshots size small 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -2019,7 +2044,8 @@ exports[`Storyshots title link 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -2055,7 +2081,8 @@ exports[`Storyshots title medium long title 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -2099,7 +2126,8 @@ exports[`Storyshots title small long title 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
@@ -2136,7 +2164,8 @@ exports[`Storyshots title string 1`] = `
   <div
     style={
       Object {
-        "maxWidth": "calc(100vw - 40px)",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >

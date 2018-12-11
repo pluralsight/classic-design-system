@@ -41,7 +41,6 @@
     "@pluralsight/ps-design-system-build": "*",
     "@pluralsight/ps-design-system-drawer": "*",
     "@pluralsight/ps-design-system-icon": "^8.13.7",
-    "@pluralsight/ps-design-system-storybook-addon-center": "*",
     "@pluralsight/ps-design-system-storybook-addon-theme": "*",
     "@storybook/addon-actions": "^4.0.0",
     "@storybook/addon-storyshots": "^4.0.0",
