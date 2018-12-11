@@ -243,7 +243,7 @@ exports[`Storyshots combo everything 1`] = `
           </a>
         </span>
         <div
-          data-css-xzp4rh=""
+          data-css-i223qf=""
         >
           <span
             data-css-1fxa3fl=""
@@ -254,7 +254,7 @@ exports[`Storyshots combo everything 1`] = `
               href="http://google.com?query=overlay"
             >
               <div
-                className="css-7wkwcf"
+                className="css-6f8y6t"
               >
                 <svg
                   aria-label="play circle icon"
@@ -436,7 +436,7 @@ exports[`Storyshots fullOverlay element 1`] = `
           data-css-6x74ml=""
         />
         <div
-          data-css-1lwv6lr=""
+          data-css-t9uarq=""
         >
           <span
             data-css-1fxa3fl=""
@@ -482,7 +482,7 @@ exports[`Storyshots fullOverlay link 1`] = `
           data-css-6x74ml=""
         />
         <div
-          data-css-1lwv6lr=""
+          data-css-t9uarq=""
         >
           <span
             data-css-1fxa3fl=""
@@ -532,7 +532,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
           data-css-6x74ml=""
         />
         <div
-          data-css-1lwv6lr=""
+          data-css-t9uarq=""
         >
           <span
             data-css-1fxa3fl=""
@@ -543,7 +543,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
               href="http://google.com?query=overlay"
             >
               <div
-                className="css-7wkwcf"
+                className="css-6f8y6t"
               >
                 <svg
                   aria-label="play circle icon"
@@ -603,7 +603,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
           </a>
         </span>
         <div
-          data-css-1lwv6lr=""
+          data-css-t9uarq=""
         >
           <span
             data-css-1fxa3fl=""
@@ -614,7 +614,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
               href="http://google.com?query=overlay"
             >
               <div
-                className="css-7wkwcf"
+                className="css-6f8y6t"
               >
                 <svg
                   aria-label="play circle icon"
@@ -968,7 +968,7 @@ exports[`Storyshots image with image with overlay 1`] = `
           data-css-6x74ml=""
         />
         <div
-          data-css-1lwv6lr=""
+          data-css-t9uarq=""
         >
           <span
             data-css-1fxa3fl=""

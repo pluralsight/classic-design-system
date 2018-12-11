@@ -17,7 +17,13 @@ const longStringsMetaData = [
   'A length of such amazing lengthitude so-as to blow the mind'
 ]
 
-const PlayIcon = () => <Icon size={Icon.sizes.large} id={Icon.ids.playCircle} />
+const PlayIcon = () => (
+  <Icon
+    color={Icon.colors.white}
+    size={Icon.sizes.large}
+    id={Icon.ids.playCircle}
+  />
+)
 
 storiesOf('combo', module).add('everything', _ => (
   <Row

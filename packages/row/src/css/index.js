@@ -58,7 +58,6 @@ export default {
     transition: `opacity ${core.motion.speedNormal}`,
     pointerEvents: 'none',
     opacity: 0,
-    color: core.colors.white,
 
     '& a': {
       color: 'inherit'
