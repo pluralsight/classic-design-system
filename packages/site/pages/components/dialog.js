@@ -3,6 +3,7 @@ import Button from '@pluralsight/ps-design-system-button/react'
 import Dialog from '@pluralsight/ps-design-system-dialog/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
 import { transparentize } from 'polished'
+import React from 'react'
 
 import {
   Chrome,
@@ -10,7 +11,6 @@ import {
   Content,
   Example,
   Guideline,
-  Heading,
   Intro,
   Link,
   P,
@@ -34,6 +34,7 @@ const ContentGridVisual = _ => (
         grid-template-rows: [row1] 1fr [row2] 2fr [row3] 5fr [end];
         height: 100%;
         width: 100%;
+        min-height: 400px;
       }
       .box {
         border-radius: 2px;
@@ -390,12 +391,14 @@ export default withServerProps(_ => (
 
       <P>
         Be explicit as possible when writing dialog buttons. Use affirimitive
-        action text to clearly indicate the outcome of the decision. [<Link
+        action text to clearly indicate the outcome of the decision. [
+        <Link
           appearance={Link.appearances.subtle}
           href="https://material.io/guidelines/components/dialogs.html#dialogs-alerts"
         >
           Material Design
-        </Link>]
+        </Link>
+        ]
       </P>
       <Guideline
         do={
