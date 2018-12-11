@@ -1,4 +1,3 @@
-import core from '@pluralsight/ps-design-system-core'
 import glamorous from 'glamorous'
 import PropTypes from 'prop-types'
 import React from 'react'
