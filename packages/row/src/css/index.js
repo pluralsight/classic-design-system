@@ -1,7 +1,10 @@
 import core from '@pluralsight/ps-design-system-core'
 import { transparentize } from 'polished'
 
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+import {
+  defaultName as themeDefaultName,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme/vars'
 
 import * as vars from '../vars'
 
@@ -106,12 +109,12 @@ export default {
     background: 'none',
     transition: `all ${core.motion.speedNormal}`
   },
-  [`.psds-row__action-bar__button--theme-${themeNames.dark}`]: {
+  [`.psds-row__action-bar__button.psds-theme--${themeDefaultName}`]: {
     color: core.colors.gray02,
 
     '&:active, &:hover': { color: core.colors.white }
   },
-  [`.psds-row__action-bar__button--theme-${themeNames.light}`]: {
+  [`.psds-row__action-bar__button.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03,
 
     '&:active, &:hover': { color: core.colors.black }
@@ -166,10 +169,10 @@ export default {
     fontWeight: core.type.fontWeightMedium,
     textAlign: 'left'
   },
-  [`.psds-row__title--theme-${themeNames.dark}`]: {
+  [`.psds-row__title.psds-theme--${themeDefaultName}`]: {
     color: core.colors.white
   },
-  [`.psds-row__title--theme-${themeNames.light}`]: {
+  [`.psds-row__title.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray06
   },
   [`.psds-row__title--size-${vars.sizes.small}`]: {
@@ -219,12 +222,12 @@ export default {
       }
     }
   },
-  [`.psds-row__text-link--theme-${themeNames.dark}`]: {
+  [`.psds-row__text-link.psds-theme--${themeDefaultName}`]: {
     '&:active, &:hover': {
       color: core.colors.white
     }
   },
-  [`.psds-row__text-link--theme-${themeNames.light}`]: {
+  [`.psds-row__text-link.psds-theme--${themeNames.light}`]: {
     '&:active, &:hover': {
       color: core.colors.black
     }
@@ -239,10 +242,10 @@ export default {
     maxWidth: '100%',
     paddingTop: core.layout.spacingXXSmall
   },
-  [`.psds-row__metadata--theme-${themeNames.dark}`]: {
+  [`.psds-row__metadata.psds-theme--${themeDefaultName}`]: {
     color: core.colors.gray02
   },
-  [`.psds-row__metadata--theme-${themeNames.light}`]: {
+  [`.psds-row__metadata.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03
   },
   [`.psds-row__metadata--size-${vars.sizes.small}`]: {

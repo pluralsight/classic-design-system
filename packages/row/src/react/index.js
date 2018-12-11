@@ -34,10 +34,10 @@ const styles = {
   actionBarAction: ({ disabled, themeName }) =>
     glamor.css({
       ...css['.psds-row__action-bar__button'],
-      ...css[`.psds-row__action-bar__button--theme-${themeName}`],
+      ...css[`.psds-row__action-bar__button.psds-theme--${themeName}`],
       ...(disabled && css['.psds-row__action-bar__button--disabled'])
     }),
-  fullOverlay: ({ fullOverlayVisible: visible, isFocused, themeName }) =>
+  fullOverlay: ({ fullOverlayVisible: visible, isFocused }) =>
     glamor.css({
       ...css['.psds-row__full-overlay'],
       ...(isFocused && css['.psds-row__full-overlay--isFocused']),
@@ -53,7 +53,7 @@ const styles = {
   metadata: props =>
     glamor.css({
       ...css['.psds-row__metadata'],
-      ...css[`.psds-row__metadata--theme-${props.themeName}`],
+      ...css[`.psds-row__metadata.psds-theme--${props.themeName}`],
       ...css[`.psds-row__metadata--size-${props.size}`]
     }),
   metadataDatum: () => glamor.css(css['.psds-row__metadata__datum']),
@@ -74,13 +74,13 @@ const styles = {
   textLink: props =>
     glamor.css({
       ...css['.psds-row__text-link'],
-      ...css[`.psds-row__text-link--theme-${props.themeName}`]
+      ...css[`.psds-row__text-link.psds-theme--${props.themeName}`]
     }),
   title: props =>
     glamor.css({
       ...css['.psds-row__title'],
       ...css[`.psds-row__title--size-${props.size}`],
-      ...css[`.psds-row__title--theme-${props.themeName}`]
+      ...css[`.psds-row__title.psds-theme--${props.themeName}`]
     }),
   words: props => {
     const imgWidth = formatImageWidth(props)
