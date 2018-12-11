@@ -102,7 +102,7 @@ Object.keys(Row.sizes).forEach(size =>
 )
 
 const progressStory = storiesOf('progress', module)
-Array.from([0, 66.6667, 100]).forEach(progress =>
+;[0, 66.6667, 100].forEach(progress =>
   progressStory.add(`${progress} progress`, _ => (
     <Row
       size="medium"
