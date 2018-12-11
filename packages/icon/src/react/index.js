@@ -4,10 +4,18 @@ import React from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
-import icons from '../js/icons'
-
 import css from '../css'
 import * as vars from '../vars'
+
+import fileNames from './file-names'
+
+export const loadIconByID = id => {
+  try {
+    return require('./icons/' + fileNames[id]).default
+  } catch (err) {
+    return null
+  }
+}
 
 const style = {
   icon: ({ css: propCSS = {}, color, size }) =>
@@ -17,18 +25,19 @@ const style = {
 
       '> svg': color
         ? css[`.psds-icon--color-${color} > svg`]
-        : css['.psds-icon > svg'],
-
-      // NOTE: this is a holdover from the old glamorous api,
-      ...propCSS
+        : css['.psds-icon > svg']
     })
 }
 
-const Icon = ({ id, ...props }) => (
-  <div {...style.icon(props)} {...filterReactProps(props)}>
-    {props.children || icons[id](React)}
-  </div>
-)
+const Icon = ({ id, ...props }) => {
+  const Comp = props.children || loadIconByID(id)
+
+  return (
+    <div {...style.icon(props)} {...filterReactProps(props)}>
+      <Comp />
+    </div>
+  )
+}
 
 Icon.propTypes = {
   children: PropTypes.node,

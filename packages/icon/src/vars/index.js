@@ -1,8 +1,8 @@
 import core from '@pluralsight/ps-design-system-core'
 
-import icons from '../js/icons'
+import fileNames from '../react/file-names'
 
-export const ids = Object.keys(icons).reduce((acc, id) => {
+export const ids = Object.keys(fileNames).reduce((acc, id) => {
   acc[id] = `${id}`
   return acc
 }, {})
