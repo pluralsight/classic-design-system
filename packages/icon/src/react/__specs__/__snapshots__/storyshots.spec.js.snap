@@ -2,7 +2,7 @@
 
 exports[`Storyshots appearance black 1`] = `
 <div
-  className="css-1tiz5r9"
+  data-css-1tiz5r9=""
 >
   <svg
     aria-label="check icon"
@@ -19,7 +19,7 @@ exports[`Storyshots appearance black 1`] = `
 
 exports[`Storyshots appearance blue 1`] = `
 <div
-  className="css-48v2ba"
+  data-css-48v2ba=""
 >
   <svg
     aria-label="check icon"
@@ -36,7 +36,7 @@ exports[`Storyshots appearance blue 1`] = `
 
 exports[`Storyshots appearance bone 1`] = `
 <div
-  className="css-1v5r0q7"
+  data-css-1v5r0q7=""
 >
   <svg
     aria-label="check icon"
@@ -53,7 +53,7 @@ exports[`Storyshots appearance bone 1`] = `
 
 exports[`Storyshots appearance codeBlue 1`] = `
 <div
-  className="css-1nvlpe4"
+  data-css-1nvlpe4=""
 >
   <svg
     aria-label="check icon"
@@ -70,7 +70,7 @@ exports[`Storyshots appearance codeBlue 1`] = `
 
 exports[`Storyshots appearance codeGreen 1`] = `
 <div
-  className="css-13hzk1y"
+  data-css-13hzk1y=""
 >
   <svg
     aria-label="check icon"
@@ -87,7 +87,7 @@ exports[`Storyshots appearance codeGreen 1`] = `
 
 exports[`Storyshots appearance codeOrange 1`] = `
 <div
-  className="css-1ptri0m"
+  data-css-1ptri0m=""
 >
   <svg
     aria-label="check icon"
@@ -104,7 +104,7 @@ exports[`Storyshots appearance codeOrange 1`] = `
 
 exports[`Storyshots appearance codePurple 1`] = `
 <div
-  className="css-1n6ftrg"
+  data-css-1n6ftrg=""
 >
   <svg
     aria-label="check icon"
@@ -121,7 +121,7 @@ exports[`Storyshots appearance codePurple 1`] = `
 
 exports[`Storyshots appearance codeRed 1`] = `
 <div
-  className="css-6x200g"
+  data-css-6x200g=""
 >
   <svg
     aria-label="check icon"
@@ -138,7 +138,7 @@ exports[`Storyshots appearance codeRed 1`] = `
 
 exports[`Storyshots appearance codeSand 1`] = `
 <div
-  className="css-bwh6gu"
+  data-css-bwh6gu=""
 >
   <svg
     aria-label="check icon"
@@ -155,7 +155,7 @@ exports[`Storyshots appearance codeSand 1`] = `
 
 exports[`Storyshots appearance codeTurquoise 1`] = `
 <div
-  className="css-1bfgu4v"
+  data-css-1bfgu4v=""
 >
   <svg
     aria-label="check icon"
@@ -172,7 +172,7 @@ exports[`Storyshots appearance codeTurquoise 1`] = `
 
 exports[`Storyshots appearance codeYellow 1`] = `
 <div
-  className="css-ewrbgk"
+  data-css-ewrbgk=""
 >
   <svg
     aria-label="check icon"
@@ -189,7 +189,7 @@ exports[`Storyshots appearance codeYellow 1`] = `
 
 exports[`Storyshots appearance gray01 1`] = `
 <div
-  className="css-qfdobr"
+  data-css-qfdobr=""
 >
   <svg
     aria-label="check icon"
@@ -206,7 +206,7 @@ exports[`Storyshots appearance gray01 1`] = `
 
 exports[`Storyshots appearance gray02 1`] = `
 <div
-  className="css-1iwwm4u"
+  data-css-1iwwm4u=""
 >
   <svg
     aria-label="check icon"
@@ -223,7 +223,7 @@ exports[`Storyshots appearance gray02 1`] = `
 
 exports[`Storyshots appearance gray03 1`] = `
 <div
-  className="css-1ct2z2u"
+  data-css-1ct2z2u=""
 >
   <svg
     aria-label="check icon"
@@ -240,7 +240,7 @@ exports[`Storyshots appearance gray03 1`] = `
 
 exports[`Storyshots appearance gray04 1`] = `
 <div
-  className="css-p9j7jz"
+  data-css-p9j7jz=""
 >
   <svg
     aria-label="check icon"
@@ -257,7 +257,7 @@ exports[`Storyshots appearance gray04 1`] = `
 
 exports[`Storyshots appearance gray05 1`] = `
 <div
-  className="css-1q7hgfl"
+  data-css-1q7hgfl=""
 >
   <svg
     aria-label="check icon"
@@ -274,7 +274,7 @@ exports[`Storyshots appearance gray05 1`] = `
 
 exports[`Storyshots appearance gray06 1`] = `
 <div
-  className="css-4oz4oq"
+  data-css-4oz4oq=""
 >
   <svg
     aria-label="check icon"
@@ -291,7 +291,7 @@ exports[`Storyshots appearance gray06 1`] = `
 
 exports[`Storyshots appearance green 1`] = `
 <div
-  className="css-1s05snf"
+  data-css-1s05snf=""
 >
   <svg
     aria-label="check icon"
@@ -308,7 +308,7 @@ exports[`Storyshots appearance green 1`] = `
 
 exports[`Storyshots appearance greenLight 1`] = `
 <div
-  className="css-185g5oo"
+  data-css-185g5oo=""
 >
   <svg
     aria-label="check icon"
@@ -325,7 +325,7 @@ exports[`Storyshots appearance greenLight 1`] = `
 
 exports[`Storyshots appearance orange 1`] = `
 <div
-  className="css-5z1xiy"
+  data-css-5z1xiy=""
 >
   <svg
     aria-label="check icon"
@@ -342,7 +342,7 @@ exports[`Storyshots appearance orange 1`] = `
 
 exports[`Storyshots appearance orangeLight 1`] = `
 <div
-  className="css-1vnhyc8"
+  data-css-1vnhyc8=""
 >
   <svg
     aria-label="check icon"
@@ -359,7 +359,7 @@ exports[`Storyshots appearance orangeLight 1`] = `
 
 exports[`Storyshots appearance pink 1`] = `
 <div
-  className="css-15auvj7"
+  data-css-15auvj7=""
 >
   <svg
     aria-label="check icon"
@@ -376,7 +376,7 @@ exports[`Storyshots appearance pink 1`] = `
 
 exports[`Storyshots appearance red 1`] = `
 <div
-  className="css-rst0ce"
+  data-css-rst0ce=""
 >
   <svg
     aria-label="check icon"
@@ -393,7 +393,7 @@ exports[`Storyshots appearance red 1`] = `
 
 exports[`Storyshots appearance white 1`] = `
 <div
-  className="css-10dvu6c"
+  data-css-10dvu6c=""
 >
   <svg
     aria-label="check icon"
@@ -410,7 +410,7 @@ exports[`Storyshots appearance white 1`] = `
 
 exports[`Storyshots appearance yellow 1`] = `
 <div
-  className="css-3pplc0"
+  data-css-3pplc0=""
 >
   <svg
     aria-label="check icon"
@@ -427,7 +427,7 @@ exports[`Storyshots appearance yellow 1`] = `
 
 exports[`Storyshots id account 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="account icon"
@@ -444,7 +444,7 @@ exports[`Storyshots id account 1`] = `
 
 exports[`Storyshots id bookmark 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="bookmark icon"
@@ -461,7 +461,7 @@ exports[`Storyshots id bookmark 1`] = `
 
 exports[`Storyshots id bookmarkFill 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="bookmarked icon"
@@ -478,7 +478,7 @@ exports[`Storyshots id bookmarkFill 1`] = `
 
 exports[`Storyshots id briefcase 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="briefcase icon"
@@ -495,7 +495,7 @@ exports[`Storyshots id briefcase 1`] = `
 
 exports[`Storyshots id browse 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="browse icon"
@@ -512,7 +512,7 @@ exports[`Storyshots id browse 1`] = `
 
 exports[`Storyshots id calendar 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="calendar icon"
@@ -529,7 +529,7 @@ exports[`Storyshots id calendar 1`] = `
 
 exports[`Storyshots id caretDown 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="caret down icon"
@@ -546,7 +546,7 @@ exports[`Storyshots id caretDown 1`] = `
 
 exports[`Storyshots id caretLeft 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="caret left icon"
@@ -563,7 +563,7 @@ exports[`Storyshots id caretLeft 1`] = `
 
 exports[`Storyshots id caretRight 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="caret right icon"
@@ -580,7 +580,7 @@ exports[`Storyshots id caretRight 1`] = `
 
 exports[`Storyshots id caretUp 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="caret up icon"
@@ -597,7 +597,7 @@ exports[`Storyshots id caretUp 1`] = `
 
 exports[`Storyshots id ccFill 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="close captioned icon"
@@ -615,7 +615,7 @@ exports[`Storyshots id ccFill 1`] = `
 
 exports[`Storyshots id channel 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="channel icon"
@@ -632,7 +632,7 @@ exports[`Storyshots id channel 1`] = `
 
 exports[`Storyshots id chat 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="chat icon"
@@ -649,7 +649,7 @@ exports[`Storyshots id chat 1`] = `
 
 exports[`Storyshots id check 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="check icon"
@@ -666,7 +666,7 @@ exports[`Storyshots id check 1`] = `
 
 exports[`Storyshots id checkCircleFill 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="Checkmark icon"
@@ -683,7 +683,7 @@ exports[`Storyshots id checkCircleFill 1`] = `
 
 exports[`Storyshots id close 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="close icon"
@@ -700,7 +700,7 @@ exports[`Storyshots id close 1`] = `
 
 exports[`Storyshots id code 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="code icon"
@@ -717,7 +717,7 @@ exports[`Storyshots id code 1`] = `
 
 exports[`Storyshots id copy 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="Copy icon"
@@ -734,7 +734,7 @@ exports[`Storyshots id copy 1`] = `
 
 exports[`Storyshots id dashboard 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="dashboard icon"
@@ -751,7 +751,7 @@ exports[`Storyshots id dashboard 1`] = `
 
 exports[`Storyshots id download 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="download icon"
@@ -768,7 +768,7 @@ exports[`Storyshots id download 1`] = `
 
 exports[`Storyshots id envelope 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="envelope icon"
@@ -785,7 +785,7 @@ exports[`Storyshots id envelope 1`] = `
 
 exports[`Storyshots id file 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="File icon"
@@ -802,7 +802,7 @@ exports[`Storyshots id file 1`] = `
 
 exports[`Storyshots id gear 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="gear icon"
@@ -819,7 +819,7 @@ exports[`Storyshots id gear 1`] = `
 
 exports[`Storyshots id hand 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="hand icon"
@@ -836,7 +836,7 @@ exports[`Storyshots id hand 1`] = `
 
 exports[`Storyshots id home 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="hand icon"
@@ -853,7 +853,7 @@ exports[`Storyshots id home 1`] = `
 
 exports[`Storyshots id info 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="info icon"
@@ -870,7 +870,7 @@ exports[`Storyshots id info 1`] = `
 
 exports[`Storyshots id interactive 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="interactive icon"
@@ -887,7 +887,7 @@ exports[`Storyshots id interactive 1`] = `
 
 exports[`Storyshots id link 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="link icon"
@@ -904,7 +904,7 @@ exports[`Storyshots id link 1`] = `
 
 exports[`Storyshots id list 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="list icon"
@@ -921,7 +921,7 @@ exports[`Storyshots id list 1`] = `
 
 exports[`Storyshots id lock 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="lock icon"
@@ -938,7 +938,7 @@ exports[`Storyshots id lock 1`] = `
 
 exports[`Storyshots id logout 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="logout icon"
@@ -955,7 +955,7 @@ exports[`Storyshots id logout 1`] = `
 
 exports[`Storyshots id menu 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="menu icon"
@@ -972,7 +972,7 @@ exports[`Storyshots id menu 1`] = `
 
 exports[`Storyshots id mic 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="mic icon"
@@ -989,7 +989,7 @@ exports[`Storyshots id mic 1`] = `
 
 exports[`Storyshots id more 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="more icon"
@@ -1006,7 +1006,7 @@ exports[`Storyshots id more 1`] = `
 
 exports[`Storyshots id note 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="note icon"
@@ -1023,7 +1023,7 @@ exports[`Storyshots id note 1`] = `
 
 exports[`Storyshots id org 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="org icon"
@@ -1040,7 +1040,7 @@ exports[`Storyshots id org 1`] = `
 
 exports[`Storyshots id path 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="path icon"
@@ -1057,7 +1057,7 @@ exports[`Storyshots id path 1`] = `
 
 exports[`Storyshots id pencil 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="pencil icon"
@@ -1074,7 +1074,7 @@ exports[`Storyshots id pencil 1`] = `
 
 exports[`Storyshots id play 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="play icon"
@@ -1091,7 +1091,7 @@ exports[`Storyshots id play 1`] = `
 
 exports[`Storyshots id playCircle 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="play circle icon"
@@ -1108,7 +1108,7 @@ exports[`Storyshots id playCircle 1`] = `
 
 exports[`Storyshots id plus 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="plus icon"
@@ -1125,7 +1125,7 @@ exports[`Storyshots id plus 1`] = `
 
 exports[`Storyshots id plusCircle 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="Plus icon"
@@ -1142,7 +1142,7 @@ exports[`Storyshots id plusCircle 1`] = `
 
 exports[`Storyshots id project 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="project icon"
@@ -1159,7 +1159,7 @@ exports[`Storyshots id project 1`] = `
 
 exports[`Storyshots id question 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="question icon"
@@ -1176,7 +1176,7 @@ exports[`Storyshots id question 1`] = `
 
 exports[`Storyshots id report 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="report icon"
@@ -1193,7 +1193,7 @@ exports[`Storyshots id report 1`] = `
 
 exports[`Storyshots id scope 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="scope icon"
@@ -1210,7 +1210,7 @@ exports[`Storyshots id scope 1`] = `
 
 exports[`Storyshots id search 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="search icon"
@@ -1227,7 +1227,7 @@ exports[`Storyshots id search 1`] = `
 
 exports[`Storyshots id share 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="share icon"
@@ -1244,7 +1244,7 @@ exports[`Storyshots id share 1`] = `
 
 exports[`Storyshots id sort 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     viewBox="0 0 24 24"
@@ -1259,7 +1259,7 @@ exports[`Storyshots id sort 1`] = `
 
 exports[`Storyshots id sortAsc 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="sort ascending icon"
@@ -1276,7 +1276,7 @@ exports[`Storyshots id sortAsc 1`] = `
 
 exports[`Storyshots id sortDesc 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="sort descending icon"
@@ -1293,7 +1293,7 @@ exports[`Storyshots id sortDesc 1`] = `
 
 exports[`Storyshots id star 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="star empty icon"
@@ -1310,7 +1310,7 @@ exports[`Storyshots id star 1`] = `
 
 exports[`Storyshots id starFill 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="star fill icon"
@@ -1327,7 +1327,7 @@ exports[`Storyshots id starFill 1`] = `
 
 exports[`Storyshots id tag 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="tag icon"
@@ -1345,7 +1345,7 @@ exports[`Storyshots id tag 1`] = `
 
 exports[`Storyshots id test 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="test icon"
@@ -1362,7 +1362,7 @@ exports[`Storyshots id test 1`] = `
 
 exports[`Storyshots id thumb 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="thumbs up icon"
@@ -1380,7 +1380,7 @@ exports[`Storyshots id thumb 1`] = `
 
 exports[`Storyshots id trash 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="trash icon"
@@ -1397,7 +1397,7 @@ exports[`Storyshots id trash 1`] = `
 
 exports[`Storyshots id upload 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="upload icon"
@@ -1414,7 +1414,7 @@ exports[`Storyshots id upload 1`] = `
 
 exports[`Storyshots id user 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="user icon"
@@ -1431,7 +1431,7 @@ exports[`Storyshots id user 1`] = `
 
 exports[`Storyshots id warning 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="warning icon"
@@ -1448,7 +1448,7 @@ exports[`Storyshots id warning 1`] = `
 
 exports[`Storyshots id window 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="window icon"
@@ -1465,7 +1465,7 @@ exports[`Storyshots id window 1`] = `
 
 exports[`Storyshots size large 1`] = `
 <div
-  className="css-6f8y6t"
+  data-css-6f8y6t=""
 >
   <svg
     aria-label="check icon"
@@ -1482,7 +1482,7 @@ exports[`Storyshots size large 1`] = `
 
 exports[`Storyshots size medium 1`] = `
 <div
-  className="css-10dvu6c"
+  data-css-10dvu6c=""
 >
   <svg
     aria-label="check icon"
@@ -1499,7 +1499,7 @@ exports[`Storyshots size medium 1`] = `
 
 exports[`Storyshots size small 1`] = `
 <div
-  className="css-4oczle"
+  data-css-4oczle=""
 >
   <svg
     aria-label="check icon"
