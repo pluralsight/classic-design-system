@@ -41,7 +41,7 @@ const CommonSet = props => (
         flex-wrap: wrap;
         border-radius: 12px;
         background-color: ${core.colors.bone};
-        margin: -${core.layout.spacingLarge};
+        margin: 0 -${core.layout.spacingLarge};
       }
       .icon {
         display: flex;
@@ -80,7 +80,7 @@ export default withServerProps(_ => (
             <span>
               <code>Icon.ids</code> enum
             </span>,
-            true,
+            null,
             null,
             'id for svg to render'
           ]),
