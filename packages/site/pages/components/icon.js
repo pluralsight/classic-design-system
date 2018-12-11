@@ -1,3 +1,5 @@
+import React from 'react'
+
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 
@@ -6,7 +8,6 @@ import {
   Code,
   Content,
   Example,
-  Heading,
   Link,
   P,
   PageHeading,
@@ -91,6 +92,15 @@ export default withServerProps(_ => (
             null,
             null,
             'all flat Core colors'
+          ]),
+          PropTypes.row([
+            'size',
+            PropTypes.union(Icon.sizes),
+            null,
+            null,
+            <span>
+              icon size (from <code>Icon.sizes</code>)
+            </span>
           ])
         ]}
       />
@@ -126,14 +136,7 @@ export default withServerProps(_ => (
 `,
           `
 <Icon id={Icon.ids.path} color={Icon.colors.orange} size={Icon.sizes.large} />
- `,
-          `
-<Icon
-  css={{ '> svg': { fill: '${core.colors.pink}' } }}
-  id={Icon.ids.path}
-  size={Icon.sizes.large}
-/>
-`
+ `
         ]}
       />
 
