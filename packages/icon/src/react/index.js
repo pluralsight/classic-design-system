@@ -9,11 +9,13 @@ import * as vars from '../vars'
 
 import fileNames from './file-names'
 
+const IconNotFound = () => null
+
 export const loadIconByID = id => {
   try {
-    return require('./icons/' + fileNames[id]).default
+    return require(`./icons/${fileNames[id]}`).default
   } catch (err) {
-    return null
+    return IconNotFound
   }
 }
 
@@ -30,11 +32,11 @@ const style = {
 }
 
 const Icon = ({ id, ...props }) => {
-  const Comp = props.children || loadIconByID(id)
+  const Comp = loadIconByID(id)
 
   return (
     <div {...style.icon(props)} {...filterReactProps(props)}>
-      <Comp />
+      {props.children || <Comp />}
     </div>
   )
 }
