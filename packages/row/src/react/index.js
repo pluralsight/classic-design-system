@@ -70,7 +70,6 @@ const styles = {
     })
   },
   row: () => glamor.css(css['.psds-row']),
-  text: () => glamor.css(css['.psds-row__text']),
   textLink: props =>
     glamor.css({
       ...css['.psds-row__text-link'],
@@ -213,12 +212,7 @@ const ProgressBar = props => {
   )
 }
 
-const Text = props => (
-  <span
-    {...styles.text(props)}
-    {...filterReactProps(props, { tagName: 'span' })}
-  />
-)
+const Text = props => <span {...filterReactProps(props, { tagName: 'span' })} />
 Text.displayName = 'Row.Text'
 
 const TextLink = withTheme(props => (

@@ -204,9 +204,6 @@ export default {
     }
   },
 
-  // __text
-  '.psds-row__text': {},
-
   // __text-link
   '.psds-row__text-link': {
     pointerEvents: 'all',
