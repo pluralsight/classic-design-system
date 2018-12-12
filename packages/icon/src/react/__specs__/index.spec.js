@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 
 import * as vars from '../../vars'
 
-import Icon from '../index'
+import Icon from '..'
 
 describe('Icon', () => {
   describe('.colors', () => {
@@ -22,5 +22,10 @@ describe('Icon', () => {
     it('should render', () => {
       expect(() => shallow(<Icon id={id} />)).not.toThrow()
     })
+  })
+
+  it('should allow overriding the aria-label', () => {
+    const wrapper = shallow(<Icon aria-label="test label" />)
+    expect(wrapper.prop('aria-label')).toEqual('test label')
   })
 })

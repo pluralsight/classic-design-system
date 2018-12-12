@@ -7,17 +7,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import css from '../css'
 import * as vars from '../vars'
 
-import fileNames from './file-names'
-
-const IconNotFound = () => null
-
-export const loadIconByID = id => {
-  try {
-    return require(`./icons/${fileNames[id]}`).default
-  } catch (err) {
-    return IconNotFound
-  }
-}
+import icons from './icon-transformer'
 
 const style = {
   icon: ({ css: propCSS = {}, color, size }) =>
@@ -31,8 +21,9 @@ const style = {
     })
 }
 
+const IconNotFound = () => null
 const Icon = ({ id, ...props }) => {
-  const Comp = loadIconByID(id)
+  const Comp = icons[id] ? icons[id](React, filterReactProps) : IconNotFound
 
   return (
     <div {...style.icon(props)} {...filterReactProps(props)}>

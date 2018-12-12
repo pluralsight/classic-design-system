@@ -1,5 +1,6 @@
 // @preval
 
+const babel = require('babel-core')
 const camelize = require('camelize')
 const fs = require('fs')
 const path = require('path')
@@ -12,6 +13,15 @@ const pascalize = str => {
   return trimmed.substr(0, 1).toUpperCase() + camelize(trimmed.substr(1))
 }
 
+const insertAfterChar = (str, char, content) => {
+  const charIndex = str.indexOf(char)
+
+  if (charIndex === -1) return str
+
+  const offset = charIndex + 1
+  return [str.slice(0, offset), content, str.slice(offset)].join('')
+}
+
 const insertBeforeChar = (str, char, content) => {
   const charIndex = str.indexOf(char)
 
@@ -20,21 +30,28 @@ const insertBeforeChar = (str, char, content) => {
   return [str.slice(0, charIndex), content, str.slice(charIndex)].join('')
 }
 
-const buildComponentFile = (filePath, { componentName }) => {
-  const svg = fs.readFileSync(filePath)
-  const content = insertBeforeChar(svg, '>', '{...filterReactProps(props)}')
+const transformFile = filePath => {
+  let content = babel.transformFileSync(filePath, {
+    presets: ['react', 'stage-2']
+  }).code
 
-  return `
-import React from 'react'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+  content = content.replace('"use strict";', '')
+  content = content.replace(';', '')
+  content = insertBeforeChar(content, '{', 'Object.assign(')
+  content = insertAfterChar(content, '}', ', filterReactProps(props))')
 
-const ${componentName} = (props) => ${content}
-
-export default ${componentName}
-  `
+  return content
 }
 
-module.exports = fileNames
+const buildComponentFile = (filePath, { componentName }) => `
+module.exports = function(React, filterReactProps) {
+  return function ${componentName}(props) {
+    return (${transformFile(filePath)})
+  }
+}
+`
+
+const temp = fileNames
   .filter(fileName => path.extname(fileName) === '.svg')
   .reduce((acc, fileName) => {
     const name = fileName.split('.')[0]
@@ -50,6 +67,9 @@ module.exports = fileNames
       buildComponentFile(filePath, { componentName })
     )
 
-    acc[id] = outputFileName
+    acc[id] = require(`./icons/${outputFileName}`)
+
     return acc
   }, {})
+
+module.exports = { ...temp }
