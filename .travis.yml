@@ -10,9 +10,8 @@ install:
 
 jobs:
   include:
-    - stage: validate
+    - stage: test
       name: Lint
       script: npm run lint:no-fail
-    - stage: test
-      name: Unit Test
+    - name: Unit Test
       script: npm test
