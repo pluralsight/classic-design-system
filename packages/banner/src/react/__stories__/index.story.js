@@ -1,13 +1,11 @@
 import { action } from '@storybook/addon-actions'
 import addons from '@storybook/addons'
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import Link from '@pluralsight/ps-design-system-link/react'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Banner from '../react'
+import Banner from '..'
 
 const colorStory = storiesOf('color', module).addDecorator(
   themeDecorator(addons)
@@ -16,7 +14,7 @@ Object.keys(Banner.colors).forEach(color =>
   colorStory.add(color, _ => <Banner color={color}>{color}</Banner>)
 )
 
-const onClickStory = storiesOf('onClick', module)
+storiesOf('onClick', module)
   .addDecorator(themeDecorator(addons))
   .add('displays X', () => (
     <Banner onClick={action('click X')}>this is the text</Banner>
@@ -30,7 +28,7 @@ const onClickStory = storiesOf('onClick', module)
     </Banner>
   ))
 
-const styleStory = storiesOf('styling', module)
+storiesOf('styling', module)
   .addDecorator(themeDecorator(addons))
   .add('style prop ', () => (
     <Banner style={{ outline: '3px solid red' }} onClick={action('click X')}>
@@ -57,6 +55,7 @@ const styleStory = storiesOf('styling', module)
       this is the text with an{' '}
       <Link>
         <a href="https://duckduckgo.com">Link component</a>
-      </Link>.
+      </Link>
+      .
     </Banner>
   ))
