@@ -2,12 +2,17 @@ sudo: false
 
 language: node_js
 
+cache: npm
+
 install:
   - npm install
   - npm run bootstrap
 
 jobs:
   include:
+    - stage: validate
+      name: Lint
+      script: npm run lint:no-fail
     - stage: test
       name: Unit Test
       script: npm test
