@@ -38,7 +38,7 @@ const InAppExample = props => (
         progress={67}
         image={<Row.Image src="/static/img/course3.jpg" />}
         metadata1={['Cory House', 'Intermediate']}
-        metadata2={['3 hr 23m watched']}
+        metadata2={['3h 23m watched']}
       />
       <Row
         title="Webpack Fundamentals"
@@ -356,7 +356,7 @@ export default withServerProps(_ => (
           `
 <Row
   metadata1={['Simon Allardice']}
-  metadata2={['Intermediate', '2hr 20min', 'July 24, 1847']}
+  metadata2={['Intermediate', '2h 20m', 'July 24, 1847']}
   title="Row with Two Lines of Meta"
   image={<Row.Image src="/static/img/course1.jpg" />}
 />
@@ -368,7 +368,7 @@ export default withServerProps(_ => (
   ]}
   metadata2={[
     'Only about the Best Level in the World for Learning',
-    '2hr 20min or longer depending',
+    '2h 20m or longer depending',
     "July 24, 1847 or year thereabouts, it's unclear"
   ]}
   title="Super-long Metadata"

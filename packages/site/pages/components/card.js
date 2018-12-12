@@ -107,7 +107,7 @@ const InAppExample = props => (
               progress={67}
               image={<Card.Image src="/static/img/course3.jpg" />}
               metadata1={['Cory House', 'Intermediate']}
-              metadata2={['3 hr 23m watched']}
+              metadata2={['3h 23m watched']}
               size={Card.sizes.small}
             />
           </li>
@@ -512,7 +512,7 @@ export default withServerProps(_ => (
           `
 <Card
   metadata1={['Simon Allardice']}
-  metadata2={['Intermediate', '2hr 20min', 'July 24, 1847']}
+  metadata2={['Intermediate', '2h 20m', 'July 24, 1847']}
   title={<Card.Title>Card with Two Lines of Meta</Card.Title>}
   image={<Card.Image src="/static/img/course1.jpg" />}
 />
@@ -524,7 +524,7 @@ export default withServerProps(_ => (
   ]}
   metadata2={[
     'Only about the Best Level in the World for Learning',
-    '2hr 20min or longer depending',
+    '2h 20m or longer depending',
     "July 24, 1847 or year thereabouts, it's unclear"
   ]}
   title={<Card.Title>Super-long Metadata</Card.Title>}
