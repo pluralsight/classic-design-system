@@ -178,13 +178,13 @@ exports[`Storyshots drawer row component with actions 1`] = `
           className="css-euzj8"
         >
           <div
-            className="css-oowi90"
+            data-css-vl7fes=""
           >
             <div
-              className="css-js3ti3"
+              data-css-js3ti3=""
             >
               <span
-                className="css-15yq56v"
+                data-css-15yq56v=""
               >
                 <a
                   href="https://duckduckgo.com?q=image"
@@ -195,10 +195,10 @@ exports[`Storyshots drawer row component with actions 1`] = `
                 </a>
               </span>
               <div
-                className="css-4nxbcy"
+                data-css-t9uarq=""
               >
                 <span
-                  className="css-1fxa3fl"
+                  data-css-1fxa3fl=""
                   onBlur={[Function]}
                   onFocus={[Function]}
                 >
@@ -211,13 +211,13 @@ exports[`Storyshots drawer row component with actions 1`] = `
               </div>
             </div>
             <div
-              className="css-kxulf3"
+              data-css-kxulf3=""
             >
               <div
-                className="css-1e23mlv"
+                data-css-1jlgfae=""
               >
                 <span
-                  className="css-1kcq1x5"
+                  data-css-1le2bq0=""
                 >
                   <a
                     href="https://duckduckgo.com?q=title"
@@ -227,13 +227,13 @@ exports[`Storyshots drawer row component with actions 1`] = `
                 </span>
               </div>
               <div
-                className="css-gmo5z6"
+                data-css-cnfu1f=""
               >
                 <span
-                  className="css-1kcrbi9"
+                  data-css-1kcrbi9=""
                 >
                   <span
-                    className="css-1kcq1x5"
+                    data-css-1le2bq0=""
                   >
                     <a
                       href="https://duckduckgo.com?q=cats"
@@ -244,22 +244,22 @@ exports[`Storyshots drawer row component with actions 1`] = `
                 </span>
                 <span
                   aria-hidden={true}
-                  className="css-kykfz1"
+                  data-css-kykfz1=""
                 >
                   ·
                 </span>
                 <span
-                  className="css-1kcrbi9"
+                  data-css-1kcrbi9=""
                 >
                   23 hours of cuteness
                 </span>
               </div>
             </div>
             <div
-              className="css-1akhza9"
+              data-css-1akhza9=""
             >
               <button
-                className="css-178rs47"
+                data-css-2qvjr2=""
                 onClick={[Function]}
               >
                 <div
@@ -912,49 +912,49 @@ exports[`Storyshots drawer with row component 1`] = `
           className="css-euzj8"
         >
           <div
-            className="css-oowi90"
+            data-css-vl7fes=""
           >
             <div
-              className="css-js3ti3"
+              data-css-js3ti3=""
             >
               <div
-                className="css-y8jh93"
+                data-css-y8jh93=""
               />
             </div>
             <div
-              className="css-kxulf3"
+              data-css-kxulf3=""
             >
               <div
-                className="css-1e23mlv"
+                data-css-1jlgfae=""
               >
                 Look at me! I'm a &lt;Row /&gt;!
               </div>
               <div
-                className="css-gmo5z6"
+                data-css-cnfu1f=""
               >
                 <span
-                  className="css-1kcrbi9"
+                  data-css-1kcrbi9=""
                 >
                   Kitten McCatbuns
                 </span>
                 <span
                   aria-hidden={true}
-                  className="css-kykfz1"
+                  data-css-kykfz1=""
                 >
                   ·
                 </span>
                 <span
-                  className="css-1kcrbi9"
+                  data-css-1kcrbi9=""
                 >
                   23 hours of cuteness
                 </span>
               </div>
             </div>
             <div
-              className="css-okadky"
+              data-css-okadky=""
             >
               <button
-                className="css-178rs47"
+                data-css-2qvjr2=""
               >
                 <div
                   className="css-otejxm"
