@@ -1,4 +1,4 @@
-import { danger, warn } from 'danger'
+const { danger, warn } = require('danger')
 
 const hasValidDescription = github =>
   github.pr.body && github.pr.body.length > 10
