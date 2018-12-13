@@ -22,14 +22,21 @@ const style = {
 
 const IconNotFound = () => null
 
-const Icon = ({ id, ...props }) => {
-  const Comp = icons[id] ? icons[id](React, filterReactProps) : IconNotFound
+class Icon extends React.PureComponent {
+  getIconById(id) {
+    const Comp = icons[id] ? icons[id](React, filterReactProps) : IconNotFound
+    return <Comp />
+  }
 
-  return (
-    <div {...style.icon(props)} {...filterReactProps(props)}>
-      {props.children || <Comp />}
-    </div>
-  )
+  render() {
+    const { id, ...props } = this.props
+
+    return (
+      <div {...style.icon(props)} {...filterReactProps(props)}>
+        {this.props.children || this.getIconById(id)}
+      </div>
+    )
+  }
 }
 
 Icon.propTypes = {
