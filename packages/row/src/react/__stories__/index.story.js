@@ -1,13 +1,14 @@
 import { action } from '@storybook/addon-actions'
-import addons from '@storybook/addons'
-import core from '@pluralsight/ps-design-system-core'
+import { storiesOf } from '@storybook/react'
+import React from 'react'
+
 import Drawer from '@pluralsight/ps-design-system-drawer/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Row from '../react'
+import Row from '..'
+
+const getImgSrc = ({ w = 680, h = 320, id = 42 } = {}) =>
+  `//picsum.photos/${w}/${h}?image=${id}&gravity=north`
 
 const longStringsMetaData = [
   'It is impossible to count the grand contributions of this great author',
@@ -15,70 +16,69 @@ const longStringsMetaData = [
   'A length of such amazing lengthitude so-as to blow the mind'
 ]
 
-const comboStory = storiesOf('combo', module)
-  .addDecorator(themeDecorator(addons))
-  .add('everything', _ => (
-    <Row
-      title={
-        <Row.TextLink>
-          <a href="http://google.com?query=title">
-            Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1, 2,
-            Action Bar, and More Really. Why Not Put More In? Release a New
-            Edition Every Year With All the Excesses of our VC Budget? Boundless
-            Features Will Be Yours 2000
-          </a>
-        </Row.TextLink>
-      }
-      fullOverlay={
-        <Row.FullOverlayLink>
-          <a href="http://google.com?query=overlay">
-            <Icon
-              size={Icon.sizes.large}
-              css={{ '& svg': { fill: core.colors.white } }}
-              id={Icon.ids.playCircle}
-            />
-          </a>
-        </Row.FullOverlayLink>
-      }
-      fullOverlayVisible
-      image={
-        <Row.ImageLink>
-          <a href="http://google.com?query=image">
-            <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-          </a>
-        </Row.ImageLink>
-      }
-      metadata1={longStringsMetaData.map(str => (
-        <Row.TextLink>
-          <a href="http://google.com/?query=jaketrent">{str}</a>
-        </Row.TextLink>
-      ))}
-      metadata2={['Goodness me!']}
-      actionBar={[
-        <Row.Action key="bookmark" icon={<Icon id={Icon.ids.bookmark} />} />,
-        <Row.Action key="gear" icon={<Icon id={Icon.ids.gear} />} />,
-        <Row.Action key="more" icon={<Icon id={Icon.ids.more} />} />
-      ]}
-      actionBarVisible
-    />
-  ))
+const PlayIcon = () => (
+  <Icon
+    color={Icon.colors.white}
+    size={Icon.sizes.large}
+    id={Icon.ids.playCircle}
+  />
+)
 
-const sizeStory = storiesOf('size', module).addDecorator(themeDecorator(addons))
+storiesOf('combo', module).add('everything', _ => (
+  <Row
+    title={
+      <Row.TextLink>
+        <a href="http://google.com?query=title">
+          Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1, 2,
+          Action Bar, and More Really. Why Not Put More In? Release a New
+          Edition Every Year With All the Excesses of our VC Budget? Boundless
+          Features Will Be Yours 2000
+        </a>
+      </Row.TextLink>
+    }
+    fullOverlay={
+      <Row.FullOverlayLink>
+        <a href="http://google.com?query=overlay">
+          <PlayIcon />
+        </a>
+      </Row.FullOverlayLink>
+    }
+    fullOverlayVisible
+    image={
+      <Row.ImageLink>
+        <a href="http://google.com?query=image">
+          <Row.Image src={getImgSrc()} />
+        </a>
+      </Row.ImageLink>
+    }
+    metadata1={longStringsMetaData.map(str => (
+      <Row.TextLink>
+        <a href="http://google.com/?query=jaketrent">{str}</a>
+      </Row.TextLink>
+    ))}
+    metadata2={['Goodness me!']}
+    actionBar={[
+      <Row.Action key="bookmark" icon={<Icon id={Icon.ids.bookmark} />} />,
+      <Row.Action key="gear" icon={<Icon id={Icon.ids.gear} />} />,
+      <Row.Action key="more" icon={<Icon id={Icon.ids.more} />} />
+    ]}
+    actionBarVisible
+  />
+))
+
+const sizeStory = storiesOf('size', module)
 Object.keys(Row.sizes).forEach(size =>
   sizeStory.add(size, _ => (
     <Row
       size={size}
       title={`${size} Row`}
       metadata1={['Jim Cooper']}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
 )
 
 const titleStory = storiesOf('title', module)
-  .addDecorator(themeDecorator(addons))
   .add('string', _ => <Row title="A String Title" />)
   .add('link', _ => (
     <Row
@@ -95,25 +95,19 @@ Object.keys(Row.sizes).forEach(size =>
       size={size}
       title={`${size} With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000`}
       metadata1={['Jim Cooper']}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
 )
 
-const progressStory = storiesOf('progress', module).addDecorator(
-  themeDecorator(addons)
-)
+const progressStory = storiesOf('progress', module)
 ;[0, 66.6667, 100].forEach(progress =>
   progressStory.add(`${progress} progress`, _ => (
     <Row
       size="medium"
       progress={progress}
       title={`${progress} progress`}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
 )
@@ -125,24 +119,19 @@ progressStory.add(`no image`, _ => (
   />
 ))
 
-const imageStory = storiesOf('image', module)
-  .addDecorator(themeDecorator(addons))
+storiesOf('image', module)
   .add(`with image`, _ => (
     <Row
       title="With Image"
       metadata1={['Jim Cooper']}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
   .add(`with image with overlay`, _ => (
     <Row
       title="With Image"
       metadata1={['Jim Cooper']}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
       fullOverlay={<Row.FullOverlayLink>Element</Row.FullOverlayLink>}
     />
   ))
@@ -152,7 +141,7 @@ const imageStory = storiesOf('image', module)
       image={
         <Row.ImageLink>
           <a href="http://google.com?query=image">
-            <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+            <Row.Image src={getImgSrc()} />
           </a>
         </Row.ImageLink>
       }
@@ -162,21 +151,21 @@ const imageStory = storiesOf('image', module)
   .add(`wide image`, _ => (
     <Row
       title="Wide Image"
-      image={<Row.Image src="http://via.placeholder.com/350x150" />}
+      image={<Row.Image src={getImgSrc({ w: 350, h: 150 })} />}
       metadata1={['Jim Cooper']}
     />
   ))
   .add(`tall image`, _ => (
     <Row
       title="Tall Image"
-      image={<Row.Image src="http://via.placeholder.com/200x400h" />}
+      image={<Row.Image src={getImgSrc({ w: 200, h: 400 })} />}
       metadata1={['Jim Cooper']}
     />
   ))
   .add(`small image`, _ => (
     <Row
       title="Small Image"
-      image={<Row.Image src="http://via.placeholder.com/30x30h" />}
+      image={<Row.Image src={getImgSrc({ w: 30, h: 30 })} />}
       metadata1={['Jim Cooper']}
     />
   ))
@@ -195,8 +184,7 @@ const imageStory = storiesOf('image', module)
     />
   ))
 
-const metadataStory = storiesOf('metadata', module)
-  .addDecorator(themeDecorator(addons))
+storiesOf('metadata', module)
   .add('string', _ => (
     <Row title="Meta with Strings" metadata1={['Jake Trent']} />
   ))
@@ -219,18 +207,14 @@ const metadataStory = storiesOf('metadata', module)
   .add('long strings with image', _ => (
     <Row
       title="Long Strings AND Los Imagereo"
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
       metadata1={longStringsMetaData}
     />
   ))
   .add('super long first string', _ => (
     <Row
       title="Long Strings AND Los Imagereo"
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
       metadata1={[
         'This string is so long, it should be illegal.This string is so long, it should be illegal.This string is so long, it should be illegal.   This string is so long, it should be illegal. ',
         'This is still visible',
@@ -256,8 +240,7 @@ const metadataStory = storiesOf('metadata', module)
     />
   ))
 
-const actionBarStory = storiesOf('actionBar', module)
-  .addDecorator(themeDecorator(addons))
+storiesOf('actionBar', module)
   .add('one action', _ => (
     <Row
       title="Ready, Action, Bar!"
@@ -274,9 +257,7 @@ const actionBarStory = storiesOf('actionBar', module)
     <Row
       title="Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000"
       actionBar={[<Row.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
   .add('locked visible', _ => (
@@ -284,21 +265,16 @@ const actionBarStory = storiesOf('actionBar', module)
       actionBarVisible
       title="Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000"
       actionBar={[<Row.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
 
-const fullOverlayStory = storiesOf('fullOverlay', module)
-  .addDecorator(themeDecorator(addons))
+storiesOf('fullOverlay', module)
   .add('element', _ => (
     <Row
       title="Overlay This!"
       fullOverlay={<Row.FullOverlayLink>Element</Row.FullOverlayLink>}
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
   .add('link', _ => (
@@ -309,9 +285,7 @@ const fullOverlayStory = storiesOf('fullOverlay', module)
           <a href="http://google.com?query=overlay">Click me</a>
         </Row.FullOverlayLink>
       }
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
   .add('linked icon', _ => (
@@ -320,17 +294,11 @@ const fullOverlayStory = storiesOf('fullOverlay', module)
       fullOverlay={
         <Row.FullOverlayLink>
           <a href="http://google.com?query=overlay">
-            <Icon
-              size={Icon.sizes.large}
-              css={{ '& svg': { fill: core.colors.white } }}
-              id={Icon.ids.playCircle}
-            />
+            <PlayIcon />
           </a>
         </Row.FullOverlayLink>
       }
-      image={
-        <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-      }
+      image={<Row.Image src={getImgSrc()} />}
     />
   ))
   .add('linked icon with image link', _ => (
@@ -339,28 +307,21 @@ const fullOverlayStory = storiesOf('fullOverlay', module)
       fullOverlay={
         <Row.FullOverlayLink>
           <a href="http://google.com?query=overlay">
-            <Icon
-              size={Icon.sizes.large}
-              css={{ '& svg': { fill: core.colors.white } }}
-              id={Icon.ids.playCircle}
-            />
+            <PlayIcon />
           </a>
         </Row.FullOverlayLink>
       }
       image={
         <Row.ImageLink>
           <a href="http://google.com?query=image">
-            <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
+            <Row.Image src={getImgSrc()} />
           </a>
         </Row.ImageLink>
       }
     />
   ))
 
-const drawerStory = storiesOf('in drawer', module).addDecorator(
-  themeDecorator(addons)
-)
-
+const drawerStory = storiesOf('in drawer', module)
 Object.keys(Row.sizes).forEach(size =>
   drawerStory.add(size, _ => (
     <Drawer
@@ -368,9 +329,7 @@ Object.keys(Row.sizes).forEach(size =>
         <Row
           title="Course thing you do"
           metadata1={['1m 46s']}
-          image={
-            <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-          }
+          image={<Row.Image src={getImgSrc()} />}
           actionBar={[
             <Row.Action
               icon={<Icon id={Icon.ids.more} />}
@@ -388,31 +347,21 @@ Object.keys(Row.sizes).forEach(size =>
   ))
 )
 
-const stackStory = storiesOf('in a stack', module)
-  .addDecorator(themeDecorator(addons))
-  .add('no top border on first row', _ => (
-    <div style={{ padding: core.layout.spacingLarge }}>
-      <Row
-        title="Course thing you do"
-        metadata1={['1m 46s']}
-        image={
-          <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-        }
-        actionBar={[
-          <Row.Action icon={<Icon id={Icon.ids.more} />} key="more" />
-        ]}
-        actionBarVisible
-      />
-      <Row
-        title="Course thing you do"
-        metadata1={['1m 46s']}
-        image={
-          <Row.Image src="http://lorempixel.com/output/technics-q-c-680-320-6.jpg" />
-        }
-        actionBar={[
-          <Row.Action icon={<Icon id={Icon.ids.more} />} key="more" />
-        ]}
-        actionBarVisible
-      />
-    </div>
-  ))
+storiesOf('in a stack', module).add('no top border on first row', _ => (
+  <React.Fragment>
+    <Row
+      title="Course thing you do"
+      metadata1={['1m 46s']}
+      image={<Row.Image src={getImgSrc()} />}
+      actionBar={[<Row.Action icon={<Icon id={Icon.ids.more} />} key="more" />]}
+      actionBarVisible
+    />
+    <Row
+      title="Course thing you do"
+      metadata1={['1m 46s']}
+      image={<Row.Image src={getImgSrc()} />}
+      actionBar={[<Row.Action icon={<Icon id={Icon.ids.more} />} key="more" />]}
+      actionBarVisible
+    />
+  </React.Fragment>
+))
