@@ -153,7 +153,7 @@ exports[`Storyshots error compare 1`] = `
               data-css-1ss30jn=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="warning icon"
@@ -551,7 +551,7 @@ exports[`Storyshots layouts full width 1`] = `
               data-css-1ss30jn=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="warning icon"
