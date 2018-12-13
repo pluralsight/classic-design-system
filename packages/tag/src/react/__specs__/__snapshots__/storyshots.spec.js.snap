@@ -42,7 +42,7 @@ exports[`Storyshots actions button w/ icon button 1`] = `
         As a button
       </span>
       <div
-        className="css-1c7pw2e"
+        data-css-otejxm=""
         onClick={[Function]}
       >
         <svg
@@ -77,7 +77,7 @@ exports[`Storyshots actions just icon button 1`] = `
         As a button
       </span>
       <div
-        className="css-1c7pw2e"
+        data-css-otejxm=""
         onClick={[Function]}
       >
         <svg
@@ -281,7 +281,7 @@ exports[`Storyshots icon accent medium 1`] = `
         With Icon
       </span>
       <div
-        className="css-1vg8sjr"
+        data-css-otejxm=""
         onClick={[Function]}
       >
         <svg
@@ -316,7 +316,7 @@ exports[`Storyshots icon accent small 1`] = `
         With Icon
       </span>
       <div
-        className="css-crsxhn"
+        data-css-12f5sv2=""
         onClick={[Function]}
       >
         <svg
@@ -351,7 +351,7 @@ exports[`Storyshots icon basic medium 1`] = `
         With Icon
       </span>
       <div
-        className="css-1vg8sjr"
+        data-css-otejxm=""
         onClick={[Function]}
       >
         <svg
@@ -386,7 +386,7 @@ exports[`Storyshots icon basic small 1`] = `
         With Icon
       </span>
       <div
-        className="css-crsxhn"
+        data-css-12f5sv2=""
         onClick={[Function]}
       >
         <svg
@@ -421,7 +421,7 @@ exports[`Storyshots icon bright medium 1`] = `
         With Icon
       </span>
       <div
-        className="css-1vg8sjr"
+        data-css-otejxm=""
         onClick={[Function]}
       >
         <svg
@@ -456,7 +456,7 @@ exports[`Storyshots icon bright small 1`] = `
         With Icon
       </span>
       <div
-        className="css-crsxhn"
+        data-css-12f5sv2=""
         onClick={[Function]}
       >
         <svg
@@ -519,7 +519,7 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
         As a button
       </span>
       <div
-        className="css-1c7pw2e"
+        data-css-otejxm=""
         onClick={[Function]}
       >
         <svg
@@ -596,7 +596,7 @@ exports[`Storyshots long with icon 1`] = `
         This is the string that goes on forever and always. There really isn't an end. Wow.
       </span>
       <div
-        className="css-1vg8sjr"
+        data-css-otejxm=""
         onClick={[Function]}
       >
         <svg
