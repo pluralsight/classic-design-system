@@ -6,11 +6,6 @@ const hasValidDescription = github =>
 if (!hasValidDescription(danger.github))
   warn(':grey_question: This PR does not include a description.')
 
-const hasAssignee = github => github.pr.assignees.length > 0
-
-if (!hasAssignee(danger.github))
-  warn(':exclamation: No Assignee: Please assign this PR.')
-
 const hasReviewers = github => github.pr.requested_reviewers.length > 0
 
 if (!hasReviewers(danger.github))
