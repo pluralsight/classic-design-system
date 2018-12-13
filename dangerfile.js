@@ -25,5 +25,5 @@ const isLargePR = github => {
 
 if (isLargePR(danger.github))
   warn(
-    ':exclamation: Big PR: <i>Please split it into server smaller PRs to facilitate a better code review.</i>'
+    ':exclamation: Big PR: <i>Please split this into serveral smaller PRs to facilitate a better code review.</i>'
   )
