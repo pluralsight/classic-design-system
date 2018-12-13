@@ -33,7 +33,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
             title="Bookmark"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="bookmark icon"
@@ -182,7 +182,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
             title="Bookmark"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="bookmark icon"
@@ -201,7 +201,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
             title="More"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="more icon"
@@ -350,7 +350,7 @@ exports[`Storyshots actionBar single action 1`] = `
             title="Bookmark"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="bookmark icon"
@@ -626,7 +626,7 @@ exports[`Storyshots bonusBar some element 1`] = `
           data-css-1pi4dj8=""
         >
           <div
-            className="css-7wkwcf"
+            data-css-7wkwcf=""
           >
             <svg
               aria-label="channel icon"
@@ -784,7 +784,7 @@ exports[`Storyshots combo everything focusable 1`] = `
               href="http://duckduckgo.com?q=overlay"
             >
               <div
-                className="css-195ztb"
+                data-css-7wkwcf=""
               >
                 <svg
                   aria-label="play circle icon"
@@ -808,7 +808,7 @@ exports[`Storyshots combo everything focusable 1`] = `
             title="Bookmark"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="bookmark icon"
@@ -827,7 +827,7 @@ exports[`Storyshots combo everything focusable 1`] = `
             title="Settings"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="gear icon"
@@ -846,7 +846,7 @@ exports[`Storyshots combo everything focusable 1`] = `
             title="More"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="more icon"
@@ -868,7 +868,7 @@ exports[`Storyshots combo everything focusable 1`] = `
             data-css-1pif58i=""
           >
             <div
-              className="css-12f5sv2"
+              data-css-12f5sv2=""
             >
               <svg
                 aria-label="path icon"
@@ -1057,7 +1057,7 @@ exports[`Storyshots combo everything locked 1`] = `
               href="http://duckduckgo.com?q=overlay"
             >
               <div
-                className="css-195ztb"
+                data-css-7wkwcf=""
               >
                 <svg
                   aria-label="play circle icon"
@@ -1081,7 +1081,7 @@ exports[`Storyshots combo everything locked 1`] = `
             title="Bookmark"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="bookmark icon"
@@ -1100,7 +1100,7 @@ exports[`Storyshots combo everything locked 1`] = `
             title="Settings"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="gear icon"
@@ -1119,7 +1119,7 @@ exports[`Storyshots combo everything locked 1`] = `
             title="More"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="more icon"
@@ -1141,7 +1141,7 @@ exports[`Storyshots combo everything locked 1`] = `
             data-css-1pif58i=""
           >
             <div
-              className="css-12f5sv2"
+              data-css-12f5sv2=""
             >
               <svg
                 aria-label="path icon"
@@ -1508,7 +1508,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
               href="http://duckduckgo.com?q=overlay"
             >
               <div
-                className="css-195ztb"
+                data-css-7wkwcf=""
               >
                 <svg
                   aria-label="play circle icon"
@@ -1668,7 +1668,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
               href="http://duckduckgo.com?q=overlay"
             >
               <div
-                className="css-195ztb"
+                data-css-7wkwcf=""
               >
                 <svg
                   aria-label="play circle icon"
@@ -3864,7 +3864,7 @@ exports[`Storyshots tag long multi-word 1`] = `
             data-css-1pif58i=""
           >
             <div
-              className="css-12f5sv2"
+              data-css-12f5sv2=""
             >
               <svg
                 aria-label="channel icon"
@@ -4017,7 +4017,7 @@ exports[`Storyshots tag long single word 1`] = `
             data-css-1pif58i=""
           >
             <div
-              className="css-12f5sv2"
+              data-css-12f5sv2=""
             >
               <svg
                 aria-label="channel icon"
@@ -4305,7 +4305,7 @@ exports[`Storyshots tag with icon 1`] = `
             data-css-1pif58i=""
           >
             <div
-              className="css-12f5sv2"
+              data-css-12f5sv2=""
             >
               <svg
                 aria-label="channel icon"
