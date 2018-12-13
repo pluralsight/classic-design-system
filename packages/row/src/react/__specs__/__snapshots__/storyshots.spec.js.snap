@@ -5,45 +5,54 @@ exports[`Storyshots actionBar locked visible 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-kxulf3"
-    >
-      <div
-        className="css-1e23mlv"
-      >
-        Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
-      </div>
-    </div>
-    <div
-      className="css-okadky"
-    >
-      <button
-        className="css-178rs47"
+        data-css-js3ti3=""
       >
         <div
-          className="css-otejxm"
+          data-css-6x74ml=""
+        />
+      </div>
+      <div
+        data-css-kxulf3=""
+      >
+        <div
+          data-css-1jlgfae=""
         >
-          <svg
-            aria-label="bookmark icon"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
-            />
-          </svg>
+          Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
         </div>
-      </button>
+      </div>
+      <div
+        data-css-okadky=""
+      >
+        <button
+          data-css-2qvjr2=""
+        >
+          <div
+            className="css-otejxm"
+          >
+            <svg
+              aria-label="bookmark icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -54,38 +63,47 @@ exports[`Storyshots actionBar long title 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1tiyrld"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1e23mlv"
-      >
-        Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
-      </div>
-    </div>
-    <div
-      className="css-elqoo0"
-    >
-      <button
-        className="css-178rs47"
+        data-css-1tiyrld=""
       >
         <div
-          className="css-otejxm"
+          data-css-1jlgfae=""
         >
-          <svg
-            aria-label="bookmark icon"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
-            />
-          </svg>
+          Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
         </div>
-      </button>
+      </div>
+      <div
+        data-css-elqoo0=""
+      >
+        <button
+          data-css-2qvjr2=""
+        >
+          <div
+            className="css-otejxm"
+          >
+            <svg
+              aria-label="bookmark icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -96,45 +114,54 @@ exports[`Storyshots actionBar long title with image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-kxulf3"
-    >
-      <div
-        className="css-1e23mlv"
-      >
-        Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
-      </div>
-    </div>
-    <div
-      className="css-elqoo0"
-    >
-      <button
-        className="css-178rs47"
+        data-css-js3ti3=""
       >
         <div
-          className="css-otejxm"
+          data-css-6x74ml=""
+        />
+      </div>
+      <div
+        data-css-kxulf3=""
+      >
+        <div
+          data-css-1jlgfae=""
         >
-          <svg
-            aria-label="bookmark icon"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
-            />
-          </svg>
+          Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
         </div>
-      </button>
+      </div>
+      <div
+        data-css-elqoo0=""
+      >
+        <button
+          data-css-2qvjr2=""
+        >
+          <div
+            className="css-otejxm"
+          >
+            <svg
+              aria-label="bookmark icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -145,38 +172,47 @@ exports[`Storyshots actionBar one action 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1tiyrld"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1e23mlv"
-      >
-        Ready, Action, Bar!
-      </div>
-    </div>
-    <div
-      className="css-elqoo0"
-    >
-      <button
-        className="css-178rs47"
+        data-css-1tiyrld=""
       >
         <div
-          className="css-otejxm"
+          data-css-1jlgfae=""
         >
-          <svg
-            aria-label="bookmark icon"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
-            />
-          </svg>
+          Ready, Action, Bar!
         </div>
-      </button>
+      </div>
+      <div
+        data-css-elqoo0=""
+      >
+        <button
+          data-css-2qvjr2=""
+        >
+          <div
+            className="css-otejxm"
+          >
+            <svg
+              aria-label="bookmark icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -187,189 +223,198 @@ exports[`Storyshots combo everything 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
-      <span
-        className="css-15yq56v"
-      >
-        <a
-          href="http://google.com?query=image"
-        >
-          <div
-            className="css-1wgk747"
-          />
-        </a>
-      </span>
       <div
-        className="css-10pysoa"
+        data-css-js3ti3=""
       >
         <span
-          className="css-1fxa3fl"
-          onBlur={[Function]}
-          onFocus={[Function]}
+          data-css-15yq56v=""
         >
           <a
-            href="http://google.com?query=overlay"
+            href="http://google.com?query=image"
           >
             <div
-              className="css-195ztb"
+              data-css-6x74ml=""
+            />
+          </a>
+        </span>
+        <div
+          data-css-i223qf=""
+        >
+          <span
+            data-css-1fxa3fl=""
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            <a
+              href="http://google.com?query=overlay"
             >
-              <svg
-                aria-label="play circle icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                className="css-6f8y6t"
               >
-                <path
-                  d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
-                />
-              </svg>
-            </div>
-          </a>
-        </span>
-      </div>
-    </div>
-    <div
-      className="css-l77jv6"
-    >
-      <div
-        className="css-1e23mlv"
-      >
-        <span
-          className="css-1kcq1x5"
-        >
-          <a
-            href="http://google.com?query=title"
-          >
-            Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1, 2, Action Bar, and More Really. Why Not Put More In? Release a New Edition Every Year With All the Excesses of our VC Budget? Boundless Features Will Be Yours 2000
-          </a>
-        </span>
-      </div>
-      <div
-        className="css-gmo5z6"
-      >
-        <span
-          className="css-1kcrbi9"
-        >
-          <span
-            className="css-1kcq1x5"
-          >
-            <a
-              href="http://google.com/?query=jaketrent"
-            >
-              It is impossible to count the grand contributions of this great author
+                <svg
+                  aria-label="play circle icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
+                  />
+                </svg>
+              </div>
             </a>
           </span>
-        </span>
-        <span
-          aria-hidden={true}
-          className="css-kykfz1"
-        >
-          ·
-        </span>
-        <span
-          className="css-1kcrbi9"
-        >
-          <span
-            className="css-1kcq1x5"
-          >
-            <a
-              href="http://google.com/?query=jaketrent"
-            >
-              Levels heretofore unknown in the battle for truth and knowledge
-            </a>
-          </span>
-        </span>
-        <span
-          aria-hidden={true}
-          className="css-kykfz1"
-        >
-          ·
-        </span>
-        <span
-          className="css-1kcrbi9"
-        >
-          <span
-            className="css-1kcq1x5"
-          >
-            <a
-              href="http://google.com/?query=jaketrent"
-            >
-              A length of such amazing lengthitude so-as to blow the mind
-            </a>
-          </span>
-        </span>
+        </div>
       </div>
       <div
-        className="css-gmo5z6"
+        data-css-l77jv6=""
       >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
         >
-          Goodness me!
-        </span>
+          <span
+            data-css-1le2bq0=""
+          >
+            <a
+              href="http://google.com?query=title"
+            >
+              Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1, 2, Action Bar, and More Really. Why Not Put More In? Release a New Edition Every Year With All the Excesses of our VC Budget? Boundless Features Will Be Yours 2000
+            </a>
+          </span>
+        </div>
+        <div
+          data-css-cnfu1f=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            <span
+              data-css-1le2bq0=""
+            >
+              <a
+                href="http://google.com/?query=jaketrent"
+              >
+                It is impossible to count the grand contributions of this great author
+              </a>
+            </span>
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-1kcrbi9=""
+          >
+            <span
+              data-css-1le2bq0=""
+            >
+              <a
+                href="http://google.com/?query=jaketrent"
+              >
+                Levels heretofore unknown in the battle for truth and knowledge
+              </a>
+            </span>
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-1kcrbi9=""
+          >
+            <span
+              data-css-1le2bq0=""
+            >
+              <a
+                href="http://google.com/?query=jaketrent"
+              >
+                A length of such amazing lengthitude so-as to blow the mind
+              </a>
+            </span>
+          </span>
+        </div>
+        <div
+          data-css-cnfu1f=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            Goodness me!
+          </span>
+        </div>
       </div>
-    </div>
-    <div
-      className="css-1akhza9"
-    >
-      <button
-        className="css-178rs47"
+      <div
+        data-css-1akhza9=""
       >
-        <div
-          className="css-otejxm"
+        <button
+          data-css-2qvjr2=""
         >
-          <svg
-            aria-label="bookmark icon"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            className="css-otejxm"
           >
-            <path
-              d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
-            />
-          </svg>
-        </div>
-      </button>
-      <button
-        className="css-178rs47"
-      >
-        <div
-          className="css-otejxm"
+            <svg
+              aria-label="bookmark icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+              />
+            </svg>
+          </div>
+        </button>
+        <button
+          data-css-2qvjr2=""
         >
-          <svg
-            aria-label="gear icon"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            className="css-otejxm"
           >
-            <path
-              d="M13 6.083V4h-2v2.083c-1.45.2432-2.7237 1.0066-3.6226 2.0917L5.5734 7.133l-1 1.7322 1.8022 1.0405C6.1326 10.5577 6 11.2634 6 12c0 .736.1325 1.441.375 2.0924L4.5722 15.133l1 1.7322 1.8038-1.0414c.899 1.086 2.1733 1.85 3.624 2.0932V20h2v-2.083c1.451-.2434 2.7255-1.0077 3.6246-2.094l1.805 1.0422 1-1.732-1.8042-1.0418C17.8676 13.4402 18 12.7356 18 12c0-.7363-.1326-1.4416-.3753-2.0933l1.804-1.0415-1-1.732-1.8054 1.0423C15.7243 7.09 14.4503 6.3263 13 6.083zm-8.9235 7.028C4.026 12.748 4 12.377 4 12s.026-.748.0765-1.111L1.8407 9.598l3-5.196 2.2368 1.2913c.582-.455 1.2285-.831 1.9235-1.1122V2h6v2.582c.6946.2812 1.3408.6572 1.9224 1.112l2.238-1.292 3 5.196-2.2378 1.292c.0504.3628.0764.7333.0764 1.11 0 .3767-.026.7472-.0764 1.11l2.2377 1.292-3 5.196-2.238-1.292c-.5815.4548-1.2277.8308-1.9223 1.112V22h-6v-2.581c-.695-.2814-1.3416-.6574-1.9235-1.1123L4.8407 19.598l-3-5.196 2.2358-1.291zM12 16c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm0-2c1.1046 0 2-.8954 2-2s-.8954-2-2-2-2 .8954-2 2 .8954 2 2 2z"
-            />
-          </svg>
-        </div>
-      </button>
-      <button
-        className="css-178rs47"
-      >
-        <div
-          className="css-otejxm"
+            <svg
+              aria-label="gear icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13 6.083V4h-2v2.083c-1.45.2432-2.7237 1.0066-3.6226 2.0917L5.5734 7.133l-1 1.7322 1.8022 1.0405C6.1326 10.5577 6 11.2634 6 12c0 .736.1325 1.441.375 2.0924L4.5722 15.133l1 1.7322 1.8038-1.0414c.899 1.086 2.1733 1.85 3.624 2.0932V20h2v-2.083c1.451-.2434 2.7255-1.0077 3.6246-2.094l1.805 1.0422 1-1.732-1.8042-1.0418C17.8676 13.4402 18 12.7356 18 12c0-.7363-.1326-1.4416-.3753-2.0933l1.804-1.0415-1-1.732-1.8054 1.0423C15.7243 7.09 14.4503 6.3263 13 6.083zm-8.9235 7.028C4.026 12.748 4 12.377 4 12s.026-.748.0765-1.111L1.8407 9.598l3-5.196 2.2368 1.2913c.582-.455 1.2285-.831 1.9235-1.1122V2h6v2.582c.6946.2812 1.3408.6572 1.9224 1.112l2.238-1.292 3 5.196-2.2378 1.292c.0504.3628.0764.7333.0764 1.11 0 .3767-.026.7472-.0764 1.11l2.2377 1.292-3 5.196-2.238-1.292c-.5815.4548-1.2277.8308-1.9223 1.112V22h-6v-2.581c-.695-.2814-1.3416-.6574-1.9235-1.1123L4.8407 19.598l-3-5.196 2.2358-1.291zM12 16c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm0-2c1.1046 0 2-.8954 2-2s-.8954-2-2-2-2 .8954-2 2 .8954 2 2 2z"
+              />
+            </svg>
+          </div>
+        </button>
+        <button
+          data-css-2qvjr2=""
         >
-          <svg
-            aria-label="more icon"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            className="css-otejxm"
           >
-            <path
-              d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
-            />
-          </svg>
-        </div>
-      </button>
+            <svg
+              aria-label="more icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -380,33 +425,42 @@ exports[`Storyshots fullOverlay element 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-4nxbcy"
+        data-css-js3ti3=""
       >
-        <span
-          className="css-1fxa3fl"
-          onBlur={[Function]}
-          onFocus={[Function]}
+        <div
+          data-css-6x74ml=""
+        />
+        <div
+          data-css-t9uarq=""
         >
-          Element
-        </span>
+          <span
+            data-css-1fxa3fl=""
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Element
+          </span>
+        </div>
       </div>
-    </div>
-    <div
-      className="css-kxulf3"
-    >
       <div
-        className="css-1e23mlv"
+        data-css-kxulf3=""
       >
-        Overlay This!
+        <div
+          data-css-1jlgfae=""
+        >
+          Overlay This!
+        </div>
       </div>
     </div>
   </div>
@@ -418,37 +472,46 @@ exports[`Storyshots fullOverlay link 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-4nxbcy"
+        data-css-js3ti3=""
       >
-        <span
-          className="css-1fxa3fl"
-          onBlur={[Function]}
-          onFocus={[Function]}
+        <div
+          data-css-6x74ml=""
+        />
+        <div
+          data-css-t9uarq=""
         >
-          <a
-            href="http://google.com?query=overlay"
+          <span
+            data-css-1fxa3fl=""
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            Click me
-          </a>
-        </span>
+            <a
+              href="http://google.com?query=overlay"
+            >
+              Click me
+            </a>
+          </span>
+        </div>
       </div>
-    </div>
-    <div
-      className="css-kxulf3"
-    >
       <div
-        className="css-1e23mlv"
+        data-css-kxulf3=""
       >
-        Overlay This!
+        <div
+          data-css-1jlgfae=""
+        >
+          Overlay This!
+        </div>
       </div>
     </div>
   </div>
@@ -460,50 +523,59 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-4nxbcy"
+        data-css-js3ti3=""
       >
-        <span
-          className="css-1fxa3fl"
-          onBlur={[Function]}
-          onFocus={[Function]}
+        <div
+          data-css-6x74ml=""
+        />
+        <div
+          data-css-t9uarq=""
         >
-          <a
-            href="http://google.com?query=overlay"
+          <span
+            data-css-1fxa3fl=""
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <div
-              className="css-195ztb"
+            <a
+              href="http://google.com?query=overlay"
             >
-              <svg
-                aria-label="play circle icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                className="css-6f8y6t"
               >
-                <path
-                  d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
-                />
-              </svg>
-            </div>
-          </a>
-        </span>
+                <svg
+                  aria-label="play circle icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
+                  />
+                </svg>
+              </div>
+            </a>
+          </span>
+        </div>
       </div>
-    </div>
-    <div
-      className="css-kxulf3"
-    >
       <div
-        className="css-1e23mlv"
+        data-css-kxulf3=""
       >
-        Overlay This!
+        <div
+          data-css-1jlgfae=""
+        >
+          Overlay This!
+        </div>
       </div>
     </div>
   </div>
@@ -515,58 +587,67 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
-      <span
-        className="css-15yq56v"
-      >
-        <a
-          href="http://google.com?query=image"
-        >
-          <div
-            className="css-1wgk747"
-          />
-        </a>
-      </span>
       <div
-        className="css-4nxbcy"
+        data-css-js3ti3=""
       >
         <span
-          className="css-1fxa3fl"
-          onBlur={[Function]}
-          onFocus={[Function]}
+          data-css-15yq56v=""
         >
           <a
-            href="http://google.com?query=overlay"
+            href="http://google.com?query=image"
           >
             <div
-              className="css-195ztb"
-            >
-              <svg
-                aria-label="play circle icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
-                />
-              </svg>
-            </div>
+              data-css-6x74ml=""
+            />
           </a>
         </span>
+        <div
+          data-css-t9uarq=""
+        >
+          <span
+            data-css-1fxa3fl=""
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            <a
+              href="http://google.com?query=overlay"
+            >
+              <div
+                className="css-6f8y6t"
+              >
+                <svg
+                  aria-label="play circle icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
+                  />
+                </svg>
+              </div>
+            </a>
+          </span>
+        </div>
       </div>
-    </div>
-    <div
-      className="css-kxulf3"
-    >
       <div
-        className="css-1e23mlv"
+        data-css-kxulf3=""
       >
-        Both Icon and Image Have Separate Click Targets
+        <div
+          data-css-1jlgfae=""
+        >
+          Both Icon and Image Have Separate Click Targets
+        </div>
       </div>
     </div>
   </div>
@@ -578,39 +659,48 @@ exports[`Storyshots image link 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
-    >
-      <span
-        className="css-15yq56v"
-      >
-        <a
-          href="http://google.com?query=image"
-        >
-          <div
-            className="css-1wgk747"
-          />
-        </a>
-      </span>
-    </div>
-    <div
-      className="css-kxulf3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1e23mlv"
-      >
-        Linked Image
-      </div>
-      <div
-        className="css-gmo5z6"
+        data-css-js3ti3=""
       >
         <span
-          className="css-1kcrbi9"
+          data-css-15yq56v=""
         >
-          Jim Cooper
+          <a
+            href="http://google.com?query=image"
+          >
+            <div
+              data-css-6x74ml=""
+            />
+          </a>
         </span>
+      </div>
+      <div
+        data-css-kxulf3=""
+      >
+        <div
+          data-css-1jlgfae=""
+        >
+          Linked Image
+        </div>
+        <div
+          data-css-cnfu1f=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            Jim Cooper
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -622,24 +712,33 @@ exports[`Storyshots image no image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1tiyrld"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1e23mlv"
+        data-css-1tiyrld=""
       >
-        No Image
-      </div>
-      <div
-        className="css-gmo5z6"
-      >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
         >
-          Jim Cooper
-        </span>
+          No Image
+        </div>
+        <div
+          data-css-cnfu1f=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            Jim Cooper
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -651,24 +750,33 @@ exports[`Storyshots image no image with overlay 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1tiyrld"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1e23mlv"
+        data-css-1tiyrld=""
       >
-        No Image, With Overlay (Not Shown)
-      </div>
-      <div
-        className="css-gmo5z6"
-      >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
         >
-          Jim Cooper
-        </span>
+          No Image, With Overlay (Not Shown)
+        </div>
+        <div
+          data-css-cnfu1f=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            Jim Cooper
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -680,31 +788,40 @@ exports[`Storyshots image small image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1p9odnb"
-      />
-    </div>
-    <div
-      className="css-kxulf3"
-    >
-      <div
-        className="css-1e23mlv"
+        data-css-js3ti3=""
       >
-        Small Image
+        <div
+          data-css-1i8n1ua=""
+        />
       </div>
       <div
-        className="css-gmo5z6"
+        data-css-kxulf3=""
       >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
         >
-          Jim Cooper
-        </span>
+          Small Image
+        </div>
+        <div
+          data-css-cnfu1f=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            Jim Cooper
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -716,31 +833,40 @@ exports[`Storyshots image tall image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-ykssfz"
-      />
-    </div>
-    <div
-      className="css-kxulf3"
-    >
-      <div
-        className="css-1e23mlv"
+        data-css-js3ti3=""
       >
-        Tall Image
+        <div
+          data-css-7revsj=""
+        />
       </div>
       <div
-        className="css-gmo5z6"
+        data-css-kxulf3=""
       >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
         >
-          Jim Cooper
-        </span>
+          Tall Image
+        </div>
+        <div
+          data-css-cnfu1f=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            Jim Cooper
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -752,31 +878,40 @@ exports[`Storyshots image wide image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-40lz6d"
-      />
-    </div>
-    <div
-      className="css-kxulf3"
-    >
-      <div
-        className="css-1e23mlv"
+        data-css-js3ti3=""
       >
-        Wide Image
+        <div
+          data-css-6pi6a=""
+        />
       </div>
       <div
-        className="css-gmo5z6"
+        data-css-kxulf3=""
       >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
         >
-          Jim Cooper
-        </span>
+          Wide Image
+        </div>
+        <div
+          data-css-cnfu1f=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            Jim Cooper
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -788,31 +923,40 @@ exports[`Storyshots image with image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-kxulf3"
-    >
-      <div
-        className="css-1e23mlv"
+        data-css-js3ti3=""
       >
-        With Image
+        <div
+          data-css-6x74ml=""
+        />
       </div>
       <div
-        className="css-gmo5z6"
+        data-css-kxulf3=""
       >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
         >
-          Jim Cooper
-        </span>
+          With Image
+        </div>
+        <div
+          data-css-cnfu1f=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            Jim Cooper
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -824,42 +968,51 @@ exports[`Storyshots image with image with overlay 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-4nxbcy"
+        data-css-js3ti3=""
       >
-        <span
-          className="css-1fxa3fl"
-          onBlur={[Function]}
-          onFocus={[Function]}
+        <div
+          data-css-6x74ml=""
+        />
+        <div
+          data-css-t9uarq=""
         >
-          Element
-        </span>
-      </div>
-    </div>
-    <div
-      className="css-kxulf3"
-    >
-      <div
-        className="css-1e23mlv"
-      >
-        With Image
+          <span
+            data-css-1fxa3fl=""
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Element
+          </span>
+        </div>
       </div>
       <div
-        className="css-gmo5z6"
+        data-css-kxulf3=""
       >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
         >
-          Jim Cooper
-        </span>
+          With Image
+        </div>
+        <div
+          data-css-cnfu1f=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            Jim Cooper
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -873,43 +1026,44 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
   <div
     style={
       Object {
-        "padding": "24px",
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
       }
     }
   >
     <div
-      className="css-oowi90"
+      data-css-vl7fes=""
     >
       <div
-        className="css-js3ti3"
+        data-css-js3ti3=""
       >
         <div
-          className="css-1wgk747"
+          data-css-6x74ml=""
         />
       </div>
       <div
-        className="css-kxulf3"
+        data-css-kxulf3=""
       >
         <div
-          className="css-1e23mlv"
+          data-css-1jlgfae=""
         >
           Course thing you do
         </div>
         <div
-          className="css-gmo5z6"
+          data-css-cnfu1f=""
         >
           <span
-            className="css-1kcrbi9"
+            data-css-1kcrbi9=""
           >
             1m 46s
           </span>
         </div>
       </div>
       <div
-        className="css-okadky"
+        data-css-okadky=""
       >
         <button
-          className="css-178rs47"
+          data-css-2qvjr2=""
         >
           <div
             className="css-otejxm"
@@ -929,38 +1083,38 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
       </div>
     </div>
     <div
-      className="css-oowi90"
+      data-css-vl7fes=""
     >
       <div
-        className="css-js3ti3"
+        data-css-js3ti3=""
       >
         <div
-          className="css-1wgk747"
+          data-css-6x74ml=""
         />
       </div>
       <div
-        className="css-kxulf3"
+        data-css-kxulf3=""
       >
         <div
-          className="css-1e23mlv"
+          data-css-1jlgfae=""
         >
           Course thing you do
         </div>
         <div
-          className="css-gmo5z6"
+          data-css-cnfu1f=""
         >
           <span
-            className="css-1kcrbi9"
+            data-css-1kcrbi9=""
           >
             1m 46s
           </span>
         </div>
       </div>
       <div
-        className="css-okadky"
+        data-css-okadky=""
       >
         <button
-          className="css-178rs47"
+          data-css-2qvjr2=""
         >
           <div
             className="css-otejxm"
@@ -988,105 +1142,114 @@ exports[`Storyshots in drawer medium 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1fq8nx6"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1oot5vc"
-      onClick={[Function]}
+      className="css-1fq8nx6"
     >
       <div
-        className="css-euzj8"
+        className="css-1oot5vc"
+        onClick={[Function]}
       >
         <div
-          className="css-oowi90"
+          className="css-euzj8"
         >
           <div
-            className="css-js3ti3"
+            data-css-vl7fes=""
           >
             <div
-              className="css-1wgk747"
-            />
-          </div>
-          <div
-            className="css-kxulf3"
-          >
-            <div
-              className="css-1e23mlv"
+              data-css-js3ti3=""
             >
-              Course thing you do
+              <div
+                data-css-6x74ml=""
+              />
             </div>
             <div
-              className="css-gmo5z6"
+              data-css-kxulf3=""
             >
-              <span
-                className="css-1kcrbi9"
+              <div
+                data-css-1jlgfae=""
               >
-                1m 46s
-              </span>
+                Course thing you do
+              </div>
+              <div
+                data-css-cnfu1f=""
+              >
+                <span
+                  data-css-1kcrbi9=""
+                >
+                  1m 46s
+                </span>
+              </div>
+            </div>
+            <div
+              data-css-okadky=""
+            >
+              <button
+                data-css-2qvjr2=""
+                onClick={[Function]}
+              >
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="more icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                    />
+                  </svg>
+                </div>
+              </button>
             </div>
           </div>
-          <div
-            className="css-okadky"
+        </div>
+        <div
+          className="css-qs2rg7"
+        >
+          <button
+            aria-label="Expand"
+            className="css-xipskh"
+            onClick={[Function]}
           >
-            <button
-              className="css-178rs47"
-              onClick={[Function]}
+            <div
+              className="css-1byjzqg"
             >
               <div
                 className="css-otejxm"
               >
                 <svg
-                  aria-label="more icon"
+                  aria-label="caret down icon"
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
                   />
                 </svg>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
       <div
-        className="css-qs2rg7"
+        className="css-1i2htk9"
       >
-        <button
-          aria-label="Expand"
-          className="css-xipskh"
-          onClick={[Function]}
+        <div
+          className="css-1j3g0qd"
         >
-          <div
-            className="css-1byjzqg"
-          >
-            <div
-              className="css-otejxm"
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
-            </div>
+          <div>
+            some goodies in the drawer
           </div>
-        </button>
-      </div>
-    </div>
-    <div
-      className="css-1i2htk9"
-    >
-      <div
-        className="css-1j3g0qd"
-      >
-        <div>
-          some goodies in the drawer
         </div>
       </div>
     </div>
@@ -1099,98 +1262,107 @@ exports[`Storyshots in drawer small 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1fq8nx6"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1oot5vc"
-      onClick={[Function]}
+      className="css-1fq8nx6"
     >
       <div
-        className="css-euzj8"
+        className="css-1oot5vc"
+        onClick={[Function]}
       >
         <div
-          className="css-oowi90"
+          className="css-euzj8"
         >
           <div
-            className="css-1tiyrld"
+            data-css-vl7fes=""
           >
             <div
-              className="css-1umif8x"
+              data-css-1tiyrld=""
             >
-              Course thing you do
+              <div
+                data-css-1vvatyd=""
+              >
+                Course thing you do
+              </div>
+              <div
+                data-css-5jxdga=""
+              >
+                <span
+                  data-css-1kcrbi9=""
+                >
+                  1m 46s
+                </span>
+              </div>
             </div>
             <div
-              className="css-pi59ta"
+              data-css-okadky=""
             >
-              <span
-                className="css-1kcrbi9"
+              <button
+                data-css-2qvjr2=""
+                onClick={[Function]}
               >
-                1m 46s
-              </span>
+                <div
+                  className="css-otejxm"
+                >
+                  <svg
+                    aria-label="more icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                    />
+                  </svg>
+                </div>
+              </button>
             </div>
           </div>
-          <div
-            className="css-okadky"
+        </div>
+        <div
+          className="css-qs2rg7"
+        >
+          <button
+            aria-label="Expand"
+            className="css-xipskh"
+            onClick={[Function]}
           >
-            <button
-              className="css-178rs47"
-              onClick={[Function]}
+            <div
+              className="css-1byjzqg"
             >
               <div
                 className="css-otejxm"
               >
                 <svg
-                  aria-label="more icon"
+                  aria-label="caret down icon"
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
                   />
                 </svg>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
       <div
-        className="css-qs2rg7"
+        className="css-1i2htk9"
       >
-        <button
-          aria-label="Expand"
-          className="css-xipskh"
-          onClick={[Function]}
+        <div
+          className="css-1j3g0qd"
         >
-          <div
-            className="css-1byjzqg"
-          >
-            <div
-              className="css-otejxm"
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
-            </div>
+          <div>
+            some goodies in the drawer
           </div>
-        </button>
-      </div>
-    </div>
-    <div
-      className="css-1i2htk9"
-    >
-      <div
-        className="css-1j3g0qd"
-      >
-        <div>
-          some goodies in the drawer
         </div>
       </div>
     </div>
@@ -1203,32 +1375,41 @@ exports[`Storyshots metadata link 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1tiyrld"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1e23mlv"
+        data-css-1tiyrld=""
       >
-        Meta With Links
-      </div>
-      <div
-        className="css-gmo5z6"
-      >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
+        >
+          Meta With Links
+        </div>
+        <div
+          data-css-cnfu1f=""
         >
           <span
-            className="css-1kcq1x5"
+            data-css-1kcrbi9=""
           >
-            <a
-              href="http://google.com/?query=jaketrent"
+            <span
+              data-css-1le2bq0=""
             >
-              Jake Trent
-            </a>
+              <a
+                href="http://google.com/?query=jaketrent"
+              >
+                Jake Trent
+              </a>
+            </span>
           </span>
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1240,70 +1421,79 @@ exports[`Storyshots metadata long links 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1tiyrld"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1e23mlv"
+        data-css-1tiyrld=""
       >
-        Meta With Links
-      </div>
-      <div
-        className="css-gmo5z6"
-      >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
+        >
+          Meta With Links
+        </div>
+        <div
+          data-css-cnfu1f=""
         >
           <span
-            className="css-1kcq1x5"
+            data-css-1kcrbi9=""
           >
-            <a
-              href="http://google.com/?query=jaketrent"
+            <span
+              data-css-1le2bq0=""
             >
-              It is impossible to count the grand contributions of this great author
-            </a>
+              <a
+                href="http://google.com/?query=jaketrent"
+              >
+                It is impossible to count the grand contributions of this great author
+              </a>
+            </span>
           </span>
-        </span>
-        <span
-          aria-hidden={true}
-          className="css-kykfz1"
-        >
-          ·
-        </span>
-        <span
-          className="css-1kcrbi9"
-        >
           <span
-            className="css-1kcq1x5"
+            aria-hidden={true}
+            data-css-kykfz1=""
           >
-            <a
-              href="http://google.com/?query=jaketrent"
-            >
-              Levels heretofore unknown in the battle for truth and knowledge
-            </a>
+            ·
           </span>
-        </span>
-        <span
-          aria-hidden={true}
-          className="css-kykfz1"
-        >
-          ·
-        </span>
-        <span
-          className="css-1kcrbi9"
-        >
           <span
-            className="css-1kcq1x5"
+            data-css-1kcrbi9=""
           >
-            <a
-              href="http://google.com/?query=jaketrent"
+            <span
+              data-css-1le2bq0=""
             >
-              A length of such amazing lengthitude so-as to blow the mind
-            </a>
+              <a
+                href="http://google.com/?query=jaketrent"
+              >
+                Levels heretofore unknown in the battle for truth and knowledge
+              </a>
+            </span>
           </span>
-        </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-1kcrbi9=""
+          >
+            <span
+              data-css-1le2bq0=""
+            >
+              <a
+                href="http://google.com/?query=jaketrent"
+              >
+                A length of such amazing lengthitude so-as to blow the mind
+              </a>
+            </span>
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1315,46 +1505,55 @@ exports[`Storyshots metadata long strings 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1tiyrld"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1e23mlv"
+        data-css-1tiyrld=""
       >
-        The Longest Strings in El Mundo
-      </div>
-      <div
-        className="css-gmo5z6"
-      >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
         >
-          It is impossible to count the grand contributions of this great author
-        </span>
-        <span
-          aria-hidden={true}
-          className="css-kykfz1"
+          The Longest Strings in El Mundo
+        </div>
+        <div
+          data-css-cnfu1f=""
         >
-          ·
-        </span>
-        <span
-          className="css-1kcrbi9"
-        >
-          Levels heretofore unknown in the battle for truth and knowledge
-        </span>
-        <span
-          aria-hidden={true}
-          className="css-kykfz1"
-        >
-          ·
-        </span>
-        <span
-          className="css-1kcrbi9"
-        >
-          A length of such amazing lengthitude so-as to blow the mind
-        </span>
+          <span
+            data-css-1kcrbi9=""
+          >
+            It is impossible to count the grand contributions of this great author
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-1kcrbi9=""
+          >
+            Levels heretofore unknown in the battle for truth and knowledge
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-1kcrbi9=""
+          >
+            A length of such amazing lengthitude so-as to blow the mind
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1366,53 +1565,62 @@ exports[`Storyshots metadata long strings with image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-kxulf3"
-    >
-      <div
-        className="css-1e23mlv"
+        data-css-js3ti3=""
       >
-        Long Strings AND Los Imagereo
+        <div
+          data-css-6x74ml=""
+        />
       </div>
       <div
-        className="css-gmo5z6"
+        data-css-kxulf3=""
       >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
         >
-          It is impossible to count the grand contributions of this great author
-        </span>
-        <span
-          aria-hidden={true}
-          className="css-kykfz1"
+          Long Strings AND Los Imagereo
+        </div>
+        <div
+          data-css-cnfu1f=""
         >
-          ·
-        </span>
-        <span
-          className="css-1kcrbi9"
-        >
-          Levels heretofore unknown in the battle for truth and knowledge
-        </span>
-        <span
-          aria-hidden={true}
-          className="css-kykfz1"
-        >
-          ·
-        </span>
-        <span
-          className="css-1kcrbi9"
-        >
-          A length of such amazing lengthitude so-as to blow the mind
-        </span>
+          <span
+            data-css-1kcrbi9=""
+          >
+            It is impossible to count the grand contributions of this great author
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-1kcrbi9=""
+          >
+            Levels heretofore unknown in the battle for truth and knowledge
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-1kcrbi9=""
+          >
+            A length of such amazing lengthitude so-as to blow the mind
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1424,24 +1632,33 @@ exports[`Storyshots metadata string 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1tiyrld"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1e23mlv"
+        data-css-1tiyrld=""
       >
-        Meta with Strings
-      </div>
-      <div
-        className="css-gmo5z6"
-      >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
         >
-          Jake Trent
-        </span>
+          Meta with Strings
+        </div>
+        <div
+          data-css-cnfu1f=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            Jake Trent
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1453,53 +1670,62 @@ exports[`Storyshots metadata super long first string 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-kxulf3"
-    >
-      <div
-        className="css-1e23mlv"
+        data-css-js3ti3=""
       >
-        Long Strings AND Los Imagereo
+        <div
+          data-css-6x74ml=""
+        />
       </div>
       <div
-        className="css-gmo5z6"
+        data-css-kxulf3=""
       >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
         >
-          This string is so long, it should be illegal.This string is so long, it should be illegal.This string is so long, it should be illegal.   This string is so long, it should be illegal. 
-        </span>
-        <span
-          aria-hidden={true}
-          className="css-kykfz1"
+          Long Strings AND Los Imagereo
+        </div>
+        <div
+          data-css-cnfu1f=""
         >
-          ·
-        </span>
-        <span
-          className="css-1kcrbi9"
-        >
-          This is still visible
-        </span>
-        <span
-          aria-hidden={true}
-          className="css-kykfz1"
-        >
-          ·
-        </span>
-        <span
-          className="css-1kcrbi9"
-        >
-          And so is this
-        </span>
+          <span
+            data-css-1kcrbi9=""
+          >
+            This string is so long, it should be illegal.This string is so long, it should be illegal.This string is so long, it should be illegal.   This string is so long, it should be illegal. 
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-1kcrbi9=""
+          >
+            This is still visible
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-1kcrbi9=""
+          >
+            And so is this
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1511,55 +1737,64 @@ exports[`Storyshots metadata two lines 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1tiyrld"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1e23mlv"
+        data-css-1tiyrld=""
       >
-        Meta With Links
-      </div>
-      <div
-        className="css-gmo5z6"
-      >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
         >
-          Jake Trent
-        </span>
-        <span
-          aria-hidden={true}
-          className="css-kykfz1"
+          Meta With Links
+        </div>
+        <div
+          data-css-cnfu1f=""
         >
-          ·
-        </span>
-        <span
-          className="css-1kcrbi9"
+          <span
+            data-css-1kcrbi9=""
+          >
+            Jake Trent
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-1kcrbi9=""
+          >
+            School of the Internet
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-1kcrbi9=""
+          >
+            Blasted Good
+          </span>
+        </div>
+        <div
+          data-css-cnfu1f=""
         >
-          School of the Internet
-        </span>
-        <span
-          aria-hidden={true}
-          className="css-kykfz1"
-        >
-          ·
-        </span>
-        <span
-          className="css-1kcrbi9"
-        >
-          Blasted Good
-        </span>
-      </div>
-      <div
-        className="css-gmo5z6"
-      >
-        <span
-          className="css-1kcrbi9"
-        >
-          Certified GMO-free
-        </span>
+          <span
+            data-css-1kcrbi9=""
+          >
+            Certified GMO-free
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1571,22 +1806,31 @@ exports[`Storyshots progress 0 progress 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-kxulf3"
-    >
-      <div
-        className="css-1e23mlv"
+        data-css-js3ti3=""
       >
-        0 progress
+        <div
+          data-css-6x74ml=""
+        />
+      </div>
+      <div
+        data-css-kxulf3=""
+      >
+        <div
+          data-css-1jlgfae=""
+        >
+          0 progress
+        </div>
       </div>
     </div>
   </div>
@@ -1598,30 +1842,39 @@ exports[`Storyshots progress 66.6667 progress 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-268zju"
+        data-css-js3ti3=""
       >
         <div
-          aria-label="67% complete"
-          className="css-h2kagm"
+          data-css-6x74ml=""
         />
+        <div
+          data-css-268zju=""
+        >
+          <div
+            aria-label="67% complete"
+            data-css-h2kagm=""
+          />
+        </div>
       </div>
-    </div>
-    <div
-      className="css-kxulf3"
-    >
       <div
-        className="css-1e23mlv"
+        data-css-kxulf3=""
       >
-        66.6667 progress
+        <div
+          data-css-1jlgfae=""
+        >
+          66.6667 progress
+        </div>
       </div>
     </div>
   </div>
@@ -1633,30 +1886,39 @@ exports[`Storyshots progress 100 progress 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1wgk747"
-      />
-      <div
-        className="css-268zju"
+        data-css-js3ti3=""
       >
         <div
-          aria-label="100% complete"
-          className="css-1qb9ko2"
+          data-css-6x74ml=""
         />
+        <div
+          data-css-268zju=""
+        >
+          <div
+            aria-label="100% complete"
+            data-css-1qb9ko2=""
+          />
+        </div>
       </div>
-    </div>
-    <div
-      className="css-kxulf3"
-    >
       <div
-        className="css-1e23mlv"
+        data-css-kxulf3=""
       >
-        100 progress
+        <div
+          data-css-1jlgfae=""
+        >
+          100 progress
+        </div>
       </div>
     </div>
   </div>
@@ -1668,15 +1930,24 @@ exports[`Storyshots progress no image 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1tiyrld"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1e23mlv"
+        data-css-1tiyrld=""
       >
-        No image, with progress (not shown)
+        <div
+          data-css-1jlgfae=""
+        >
+          No image, with progress (not shown)
+        </div>
       </div>
     </div>
   </div>
@@ -1688,31 +1959,40 @@ exports[`Storyshots size medium 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-kxulf3"
-    >
-      <div
-        className="css-1e23mlv"
+        data-css-js3ti3=""
       >
-        medium Row
+        <div
+          data-css-6x74ml=""
+        />
       </div>
       <div
-        className="css-gmo5z6"
+        data-css-kxulf3=""
       >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
         >
-          Jim Cooper
-        </span>
+          medium Row
+        </div>
+        <div
+          data-css-cnfu1f=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            Jim Cooper
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1724,24 +2004,33 @@ exports[`Storyshots size small 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1tiyrld"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1umif8x"
+        data-css-1tiyrld=""
       >
-        small Row
-      </div>
-      <div
-        className="css-pi59ta"
-      >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1vvatyd=""
         >
-          Jim Cooper
-        </span>
+          small Row
+        </div>
+        <div
+          data-css-5jxdga=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            Jim Cooper
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1753,23 +2042,32 @@ exports[`Storyshots title link 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1tiyrld"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1e23mlv"
+        data-css-1tiyrld=""
       >
-        <span
-          className="css-1kcq1x5"
+        <div
+          data-css-1jlgfae=""
         >
-          <a
-            href="http://google.com"
+          <span
+            data-css-1le2bq0=""
           >
-            A Link Title
-          </a>
-        </span>
+            <a
+              href="http://google.com"
+            >
+              A Link Title
+            </a>
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1781,31 +2079,40 @@ exports[`Storyshots title medium long title 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-js3ti3"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1wgk747"
-      />
-    </div>
-    <div
-      className="css-kxulf3"
-    >
-      <div
-        className="css-1e23mlv"
+        data-css-js3ti3=""
       >
-        medium With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
+        <div
+          data-css-6x74ml=""
+        />
       </div>
       <div
-        className="css-gmo5z6"
+        data-css-kxulf3=""
       >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1jlgfae=""
         >
-          Jim Cooper
-        </span>
+          medium With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
+        </div>
+        <div
+          data-css-cnfu1f=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            Jim Cooper
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1817,24 +2124,33 @@ exports[`Storyshots title small long title 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1tiyrld"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1umif8x"
+        data-css-1tiyrld=""
       >
-        small With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
-      </div>
-      <div
-        className="css-pi59ta"
-      >
-        <span
-          className="css-1kcrbi9"
+        <div
+          data-css-1vvatyd=""
         >
-          Jim Cooper
-        </span>
+          small With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
+        </div>
+        <div
+          data-css-5jxdga=""
+        >
+          <span
+            data-css-1kcrbi9=""
+          >
+            Jim Cooper
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1846,15 +2162,24 @@ exports[`Storyshots title string 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-oowi90"
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
   >
     <div
-      className="css-1tiyrld"
+      data-css-vl7fes=""
     >
       <div
-        className="css-1e23mlv"
+        data-css-1tiyrld=""
       >
-        A String Title
+        <div
+          data-css-1jlgfae=""
+        >
+          A String Title
+        </div>
       </div>
     </div>
   </div>

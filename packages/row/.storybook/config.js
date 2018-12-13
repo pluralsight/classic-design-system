@@ -1,9 +1,25 @@
-/* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
+import React from 'react'
+import addons from '@storybook/addons'
+import { addDecorator, configure } from '@storybook/react'
 
-import { configure } from '@storybook/react';
+import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-function loadStories() {
-  require('../stories');
+import core from '@pluralsight/ps-design-system-core'
+
+addDecorator(fn => (
+  <div
+    style={{
+      maxWidth: `calc(100vw - ${core.layout.spacingXXLarge})`,
+      margin: `${core.layout.spacingLarge} auto`
+    }}
+  >
+    {fn()}
+  </div>
+))
+addDecorator(themeDecorator(addons))
+
+function loadStory() {
+  require('../src/react/__stories__/index.story.js')
 }
 
-configure(loadStories, module);
+configure(loadStory, module)

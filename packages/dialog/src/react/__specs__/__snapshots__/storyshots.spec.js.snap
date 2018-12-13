@@ -29,7 +29,7 @@ exports[`Storyshots modal no click overlay 1`] = `
         Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
       </p>
       <button
-        data-css-1ij2lam=""
+        data-css-k922kt=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
@@ -121,7 +121,7 @@ exports[`Storyshots modal no click overlay 1`] = `
               }
             >
               <button
-                data-css-1sfkr01=""
+                data-css-r0o8hq=""
                 disabled={false}
                 style={Object {}}
               >
@@ -139,7 +139,7 @@ exports[`Storyshots modal no click overlay 1`] = `
                 }
               />
               <button
-                data-css-1ij2lam=""
+                data-css-k922kt=""
                 disabled={false}
                 style={Object {}}
               >
@@ -187,7 +187,7 @@ exports[`Storyshots modal no close button 1`] = `
         Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
       </p>
       <button
-        data-css-1ij2lam=""
+        data-css-k922kt=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
@@ -263,7 +263,7 @@ exports[`Storyshots modal no close button 1`] = `
               }
             >
               <button
-                data-css-1sfkr01=""
+                data-css-r0o8hq=""
                 disabled={false}
                 style={Object {}}
               >
@@ -281,7 +281,7 @@ exports[`Storyshots modal no close button 1`] = `
                 }
               />
               <button
-                data-css-1ij2lam=""
+                data-css-k922kt=""
                 disabled={false}
                 style={Object {}}
               >
@@ -329,7 +329,7 @@ exports[`Storyshots modal no escape key 1`] = `
         Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
       </p>
       <button
-        data-css-1ij2lam=""
+        data-css-k922kt=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
@@ -420,7 +420,7 @@ exports[`Storyshots modal no escape key 1`] = `
               }
             >
               <button
-                data-css-1sfkr01=""
+                data-css-r0o8hq=""
                 disabled={false}
                 style={Object {}}
               >
@@ -438,7 +438,7 @@ exports[`Storyshots modal no escape key 1`] = `
                 }
               />
               <button
-                data-css-1ij2lam=""
+                data-css-k922kt=""
                 disabled={false}
                 style={Object {}}
               >
@@ -486,7 +486,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
         Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
       </p>
       <button
-        data-css-1ij2lam=""
+        data-css-k922kt=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
@@ -578,7 +578,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
               }
             >
               <button
-                data-css-1sfkr01=""
+                data-css-r0o8hq=""
                 disabled={false}
                 style={Object {}}
               >
@@ -596,7 +596,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
                 }
               />
               <button
-                data-css-1ij2lam=""
+                data-css-k922kt=""
                 disabled={false}
                 style={Object {}}
               >
@@ -644,7 +644,7 @@ exports[`Storyshots modal no focusable child element, no lock 1`] = `
         Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
       </p>
       <button
-        data-css-1ij2lam=""
+        data-css-k922kt=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
@@ -700,7 +700,7 @@ exports[`Storyshots modal with close button 1`] = `
         Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
       </p>
       <button
-        data-css-1ij2lam=""
+        data-css-k922kt=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
@@ -792,7 +792,7 @@ exports[`Storyshots modal with close button 1`] = `
               }
             >
               <button
-                data-css-1sfkr01=""
+                data-css-r0o8hq=""
                 disabled={false}
                 style={Object {}}
               >
@@ -810,7 +810,7 @@ exports[`Storyshots modal with close button 1`] = `
                 }
               />
               <button
-                data-css-1ij2lam=""
+                data-css-k922kt=""
                 disabled={false}
                 style={Object {}}
               >
@@ -905,7 +905,7 @@ exports[`Storyshots onClose with onClose 1`] = `
           }
         >
           <button
-            data-css-1sfkr01=""
+            data-css-r0o8hq=""
             disabled={false}
             style={Object {}}
           >
@@ -923,7 +923,7 @@ exports[`Storyshots onClose with onClose 1`] = `
             }
           />
           <button
-            data-css-1ij2lam=""
+            data-css-k922kt=""
             disabled={false}
             style={Object {}}
           >
@@ -999,7 +999,7 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
           }
         >
           <button
-            data-css-1sfkr01=""
+            data-css-r0o8hq=""
             disabled={false}
             style={Object {}}
           >
@@ -1017,7 +1017,7 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
             }
           />
           <button
-            data-css-1ij2lam=""
+            data-css-k922kt=""
             disabled={false}
             style={Object {}}
           >
@@ -1093,7 +1093,7 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
           }
         >
           <button
-            data-css-1sfkr01=""
+            data-css-r0o8hq=""
             disabled={false}
             style={Object {}}
           >
@@ -1111,7 +1111,7 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
             }
           />
           <button
-            data-css-1ij2lam=""
+            data-css-k922kt=""
             disabled={false}
             style={Object {}}
           >
@@ -1187,7 +1187,7 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
           }
         >
           <button
-            data-css-1sfkr01=""
+            data-css-r0o8hq=""
             disabled={false}
             style={Object {}}
           >
@@ -1205,7 +1205,7 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
             }
           />
           <button
-            data-css-1ij2lam=""
+            data-css-k922kt=""
             disabled={false}
             style={Object {}}
           >
@@ -1281,7 +1281,7 @@ exports[`Storyshots tailPosition none 1`] = `
           }
         >
           <button
-            data-css-1sfkr01=""
+            data-css-r0o8hq=""
             disabled={false}
             style={Object {}}
           >
@@ -1299,7 +1299,7 @@ exports[`Storyshots tailPosition none 1`] = `
             }
           />
           <button
-            data-css-1ij2lam=""
+            data-css-k922kt=""
             disabled={false}
             style={Object {}}
           >
@@ -1375,7 +1375,7 @@ exports[`Storyshots tailPosition topCenter 1`] = `
           }
         >
           <button
-            data-css-1sfkr01=""
+            data-css-r0o8hq=""
             disabled={false}
             style={Object {}}
           >
@@ -1393,7 +1393,7 @@ exports[`Storyshots tailPosition topCenter 1`] = `
             }
           />
           <button
-            data-css-1ij2lam=""
+            data-css-k922kt=""
             disabled={false}
             style={Object {}}
           >
@@ -1469,7 +1469,7 @@ exports[`Storyshots tailPosition topLeft 1`] = `
           }
         >
           <button
-            data-css-1sfkr01=""
+            data-css-r0o8hq=""
             disabled={false}
             style={Object {}}
           >
@@ -1487,7 +1487,7 @@ exports[`Storyshots tailPosition topLeft 1`] = `
             }
           />
           <button
-            data-css-1ij2lam=""
+            data-css-k922kt=""
             disabled={false}
             style={Object {}}
           >
@@ -1563,7 +1563,7 @@ exports[`Storyshots tailPosition topRight 1`] = `
           }
         >
           <button
-            data-css-1sfkr01=""
+            data-css-r0o8hq=""
             disabled={false}
             style={Object {}}
           >
@@ -1581,7 +1581,7 @@ exports[`Storyshots tailPosition topRight 1`] = `
             }
           />
           <button
-            data-css-1ij2lam=""
+            data-css-k922kt=""
             disabled={false}
             style={Object {}}
           >

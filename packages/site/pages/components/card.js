@@ -48,7 +48,7 @@ const decorateCardsM = decorateCards.bind(null, null)
 const capitalize = str => str.charAt(0).toUpperCase() + str.substring(1)
 
 const InAppExample = props => (
-  <div>
+  <Theme>
     <div className="gallery">
       <Layout.EqualColumnLayout>
         <ul>
@@ -107,7 +107,7 @@ const InAppExample = props => (
               progress={67}
               image={<Card.Image src="/static/img/course3.jpg" />}
               metadata1={['Cory House', 'Intermediate']}
-              metadata2={['3 hr 23m watched']}
+              metadata2={['3h 23m watched']}
               size={Card.sizes.small}
             />
           </li>
@@ -137,7 +137,9 @@ const InAppExample = props => (
         </ul>
       </Layout.EqualColumnLayout>
     </div>
-    <Code lang="javascript" collapsible>{`<Layout.EqualColumnLayout>
+
+    <Code lang="javascript" collapsible>
+      {`<Layout.EqualColumnLayout>
   <ul>
     <li>
       <Card
@@ -207,14 +209,16 @@ const InAppExample = props => (
     </li>
   </ul>
 </Layout.EqualColumnLayout>
-`}</Code>
+`}
+    </Code>
+
     <style jsx>{`
       .gallery {
         padding: ${core.layout.spacingMedium};
         background: ${core.colors.gray06};
       }
     `}</style>
-  </div>
+  </Theme>
 )
 
 export default withServerProps(_ => (
@@ -512,7 +516,7 @@ export default withServerProps(_ => (
           `
 <Card
   metadata1={['Simon Allardice']}
-  metadata2={['Intermediate', '2hr 20min', 'July 24, 1847']}
+  metadata2={['Intermediate', '2h 20m', 'July 24, 1847']}
   title={<Card.Title>Card with Two Lines of Meta</Card.Title>}
   image={<Card.Image src="/static/img/course1.jpg" />}
 />
@@ -524,7 +528,7 @@ export default withServerProps(_ => (
   ]}
   metadata2={[
     'Only about the Best Level in the World for Learning',
-    '2hr 20min or longer depending',
+    '2h 20m or longer depending',
     "July 24, 1847 or year thereabouts, it's unclear"
   ]}
   title={<Card.Title>Super-long Metadata</Card.Title>}
