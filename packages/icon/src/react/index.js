@@ -5,9 +5,8 @@ import React from 'react'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import css from '../css'
+import icons from '../js/icon-transformer'
 import * as vars from '../vars'
-
-import icons from './icon-transformer'
 
 const style = {
   icon: ({ css: propCSS = {}, color, size }) =>
@@ -22,6 +21,7 @@ const style = {
 }
 
 const IconNotFound = () => null
+
 const Icon = ({ id, ...props }) => {
   const Comp = icons[id] ? icons[id](React, filterReactProps) : IconNotFound
 
@@ -38,9 +38,11 @@ Icon.propTypes = {
   id: PropTypes.oneOf(Object.values(vars.ids)),
   size: PropTypes.oneOf(Object.values(vars.sizes))
 }
+
 Icon.defaultProps = {
   size: vars.sizes.medium
 }
+
 Icon.colors = vars.colors
 Icon.ids = vars.ids
 Icon.sizes = vars.sizes

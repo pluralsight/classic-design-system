@@ -19,7 +19,7 @@ const insertAfterChar = (str, char, content) => {
   if (charIndex === -1) return str
 
   const offset = charIndex + 1
-  return [str.slice(0, offset), content, str.slice(offset)].join('')
+  return str.slice(0, offset) + content + str.slice(offset)
 }
 
 const insertBeforeChar = (str, char, content) => {
@@ -27,7 +27,7 @@ const insertBeforeChar = (str, char, content) => {
 
   if (charIndex === -1) return str
 
-  return [str.slice(0, charIndex), content, str.slice(charIndex)].join('')
+  return str.slice(0, charIndex) + content + str.slice(charIndex)
 }
 
 const transformFile = filePath => {
@@ -51,7 +51,7 @@ module.exports = function(React, filterReactProps) {
 }
 `
 
-const temp = fileNames
+module.exports = fileNames
   .filter(fileName => path.extname(fileName) === '.svg')
   .reduce((acc, fileName) => {
     const name = fileName.split('.')[0]
@@ -59,7 +59,7 @@ const temp = fileNames
     const id = camelize(name)
 
     const filePath = path.join(dirPath, fileName)
-    const outputFileName = fileName + '.js'
+    const outputFileName = fileName + '.dist.js'
     const outputFilePath = path.join(__dirname, 'icons', outputFileName)
 
     fs.writeFileSync(
@@ -71,5 +71,3 @@ const temp = fileNames
 
     return acc
   }, {})
-
-module.exports = { ...temp }

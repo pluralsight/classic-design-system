@@ -1,6 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 
-import icons from '../react/icon-transformer'
+import icons from '../js/icon-transformer'
 
 export const ids = Object.keys(icons).reduce((acc, id) => {
   acc[id] = `${id}`
