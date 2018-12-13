@@ -6,12 +6,15 @@ cache: npm
 
 install:
   - npm install
+  - npm install @commitlint/travis-cli
   - npm run bootstrap
 
 jobs:
   include:
-    - stage: test
-      name: Lint
+    - stage: test and validate
+      name: Commit Conventions
+      script: commitlint-travis
+    - name: Lint
       script: npm run lint:no-fail
     - name: Unit Test
       script: npm test
