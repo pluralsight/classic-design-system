@@ -2,21 +2,24 @@ sudo: false
 
 language: node_js
 
-cache: npm
-
 install:
   - npm install
-  - npm install @commitlint/travis-cli
-  - npm run bootstrap
 
 jobs:
   include:
-    - stage: test and validate
-      name: Commit Conventions
-      script: commitlint-travis
-    - name: Lint
+    - stage: validate
+      name: Lint Commits
+      script:
+        - npm install @commitlint/travis-cli
+        - commitlint-travis
+    - name: Lint Files
       script: npm run lint:no-fail
-    - name: Unit Test
-      script: npm test
     - name: Danger
-      script: npm run danger -- ci
+      script:
+        - npm install danger
+        - ./node_modules/.bin/danger ci
+    - stage: test
+      name: Unit Test
+      script:
+        - npm run bootstrap
+        - npm test
