@@ -1,7 +1,6 @@
 const path = require('path')
 
 module.exports = {
-  collectCoverage: true,
   coverageDirectory: '<rootDir>/coverage',
   coverageReporters: ['lcov'],
   modulePathIgnorePatterns: ['<rootDir>/scripts/'],
