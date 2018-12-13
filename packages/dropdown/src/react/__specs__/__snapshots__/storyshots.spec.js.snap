@@ -47,7 +47,7 @@ exports[`Storyshots appearance default 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -117,7 +117,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -137,7 +137,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
           data-css-loo18p=""
         >
           <div
-            className="css-otejxm"
+            data-css-otejxm=""
           >
             <svg
               aria-label="warning icon"
@@ -207,7 +207,7 @@ exports[`Storyshots appearance gaps 1`] = `
                   data-css-cstzed=""
                 >
                   <div
-                    className="css-otejxm"
+                    data-css-otejxm=""
                   >
                     <svg
                       aria-label="caret down icon"
@@ -264,7 +264,7 @@ exports[`Storyshots appearance gaps 1`] = `
                   data-css-cstzed=""
                 >
                   <div
-                    className="css-otejxm"
+                    data-css-otejxm=""
                   >
                     <svg
                       aria-label="caret down icon"
@@ -284,7 +284,7 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-loo18p=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="warning icon"
@@ -339,7 +339,7 @@ exports[`Storyshots appearance gaps 1`] = `
                   data-css-145erv=""
                 >
                   <div
-                    className="css-otejxm"
+                    data-css-otejxm=""
                   >
                     <svg
                       aria-label="caret down icon"
@@ -396,7 +396,7 @@ exports[`Storyshots appearance gaps 1`] = `
                   data-css-145erv=""
                 >
                   <div
-                    className="css-otejxm"
+                    data-css-otejxm=""
                   >
                     <svg
                       aria-label="caret down icon"
@@ -416,7 +416,7 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-loo18p=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="warning icon"
@@ -485,7 +485,7 @@ exports[`Storyshots appearance subtle 1`] = `
               data-css-145erv=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -555,7 +555,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
               data-css-145erv=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -575,7 +575,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           data-css-loo18p=""
         >
           <div
-            className="css-otejxm"
+            data-css-otejxm=""
           >
             <svg
               aria-label="warning icon"
@@ -648,7 +648,7 @@ exports[`Storyshots disabled compare 1`] = `
                 data-css-cstzed=""
               >
                 <div
-                  className="css-otejxm"
+                  data-css-otejxm=""
                 >
                   <svg
                     aria-label="caret down icon"
@@ -712,7 +712,7 @@ exports[`Storyshots disabled compare 1`] = `
                 data-css-cstzed=""
               >
                 <div
-                  className="css-otejxm"
+                  data-css-otejxm=""
                 >
                   <svg
                     aria-label="caret down icon"
@@ -792,7 +792,7 @@ exports[`Storyshots labels all 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -867,7 +867,7 @@ exports[`Storyshots labels label 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -937,7 +937,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1007,7 +1007,7 @@ exports[`Storyshots labels none 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1076,7 +1076,7 @@ exports[`Storyshots labels placeholder 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1141,7 +1141,7 @@ exports[`Storyshots labels subLabel 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1230,7 +1230,7 @@ exports[`Storyshots layouts full width 1`] = `
                 data-css-cstzed=""
               >
                 <div
-                  className="css-otejxm"
+                  data-css-otejxm=""
                 >
                   <svg
                     aria-label="caret down icon"
@@ -1291,7 +1291,7 @@ exports[`Storyshots layouts full width 1`] = `
                 data-css-cstzed=""
               >
                 <div
-                  className="css-otejxm"
+                  data-css-otejxm=""
                 >
                   <svg
                     aria-label="caret down icon"
@@ -1311,7 +1311,7 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-loo18p=""
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="warning icon"
@@ -1370,7 +1370,7 @@ exports[`Storyshots layouts full width 1`] = `
                 data-css-145erv=""
               >
                 <div
-                  className="css-otejxm"
+                  data-css-otejxm=""
                 >
                   <svg
                     aria-label="caret down icon"
@@ -1431,7 +1431,7 @@ exports[`Storyshots layouts full width 1`] = `
                 data-css-145erv=""
               >
                 <div
-                  className="css-otejxm"
+                  data-css-otejxm=""
                 >
                   <svg
                     aria-label="caret down icon"
@@ -1451,7 +1451,7 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-loo18p=""
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="warning icon"
@@ -1534,7 +1534,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
                   data-css-145erv=""
                 >
                   <div
-                    className="css-otejxm"
+                    data-css-otejxm=""
                   >
                     <svg
                       aria-label="caret down icon"
@@ -1616,7 +1616,7 @@ exports[`Storyshots menu divider 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1692,7 +1692,7 @@ exports[`Storyshots menu in stack 1`] = `
                   data-css-cstzed=""
                 >
                   <div
-                    className="css-otejxm"
+                    data-css-otejxm=""
                   >
                     <svg
                       aria-label="caret down icon"
@@ -1753,7 +1753,7 @@ exports[`Storyshots menu in stack 1`] = `
                   data-css-cstzed=""
                 >
                   <div
-                    className="css-otejxm"
+                    data-css-otejxm=""
                   >
                     <svg
                       aria-label="caret down icon"
@@ -1829,7 +1829,7 @@ exports[`Storyshots menu nested 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1903,7 +1903,7 @@ exports[`Storyshots menu onClicks 1`] = `
               data-css-145erv=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1923,7 +1923,7 @@ exports[`Storyshots menu onClicks 1`] = `
           data-css-loo18p=""
         >
           <div
-            className="css-otejxm"
+            data-css-otejxm=""
           >
             <svg
               aria-label="warning icon"
@@ -1993,7 +1993,7 @@ exports[`Storyshots menu single list 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -2067,7 +2067,7 @@ exports[`Storyshots menu single list w/ icon 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -2139,7 +2139,7 @@ exports[`Storyshots menu super long 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -2211,7 +2211,7 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -2285,7 +2285,7 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -2357,7 +2357,7 @@ exports[`Storyshots menu w/ subLabel 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -2431,7 +2431,7 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -2504,7 +2504,7 @@ exports[`Storyshots props whitelist title 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -2574,7 +2574,7 @@ exports[`Storyshots whitelist name 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -2644,7 +2644,7 @@ exports[`Storyshots whitelist onChange 1`] = `
               data-css-cstzed=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
