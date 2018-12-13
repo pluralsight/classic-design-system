@@ -1,24 +1,47 @@
 const { danger, warn } = require('danger')
+const toolbox = require('danger-plugin-toolbox')
 
-const hasValidDescription = github =>
-  github.pr.body && github.pr.body.length > 10
+const checkDescription = ({ minLength = 10 } = {}) => {
+  const { github } = danger
 
-if (!hasValidDescription(danger.github))
-  warn(':grey_question: This PR does not include a description.')
+  if (github.pr.body && github.pr.body.length > minLength) return
 
-const hasReviewers = github => github.pr.requested_reviewers.length > 0
-
-if (!hasReviewers(danger.github))
-  warn(
-    ':exclamation: No Reviewer: Please add some teammates to review your PR.'
-  )
-
-const isLargePR = github => {
-  const threshold = 1000
-  return github.pr.additions + github.pr.deletions > threshold
+  warn(':pencil2: Please add a description.')
 }
 
-if (isLargePR(danger.github))
-  warn(
-    ':exclamation: Big PR: <i>Please split this into serveral smaller PRs to facilitate a better code review.</i>'
-  )
+// NOTE: jest snapshots make this useless because of the high amount of changes
+// TODO: find a way to filter out snapshot changes
+const checkFileChangeLimit = ({ threshold = 1000 } = {}) => {
+  const { github: { pr } } = danger // prettier-ignore
+
+  if (pr.additions + pr.deletions <= threshold) return
+
+  warn(':exclamation: This is a big PR. Can you break this into smaller PRs?')
+}
+
+const checkForReviewer = () => {
+  const { github } = danger
+  if (github.pr && github.pr.requested_reviewers.length > 0) return
+
+  warn(':exclamation: Please assign a teammate to review your PR.')
+}
+
+void (async function main() {
+  // thank new contributors
+  toolbox.commonContribution({ msg: 'Thanks for contributing :tada:' })
+
+  // are there any leftover console commands
+  toolbox.jsConsoleCommands({ logType: 'fail' })
+
+  // are new images minified
+  toolbox.imageMinified({ logType: 'fail' })
+
+  // are there skipped or focused tests
+  toolbox.jsTestShortcuts({ logTypeSkipped: 'message', logTypeFocused: 'fail' })
+
+  checkDescription()
+
+  checkFileChangeLimit()
+
+  checkForReviewer()
+})()
