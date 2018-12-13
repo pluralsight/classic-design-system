@@ -15,3 +15,5 @@ jobs:
       script: npm run lint:no-fail
     - name: Unit Test
       script: npm test
+    - name: Danger
+      script: npm run danger -- ci
