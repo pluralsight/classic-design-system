@@ -5,5 +5,9 @@ module.exports = {
   coverageReporters: ['lcov'],
   modulePathIgnorePatterns: ['<rootDir>/scripts/', '<rootDir>/.*/__mocks__'],
   rootDir: path.resolve(__dirname, '..'),
-  setupTestFrameworkScriptFile: '<rootDir>/jest/setup/index.js'
+  setupTestFrameworkScriptFile: '<rootDir>/jest/setup/index.js',
+  watchPlugins: [
+    'jest-watch-typeahead/filename',
+    'jest-watch-typeahead/testname'
+  ]
 }

@@ -98,6 +98,7 @@
     "inquirer": "^6.2.0",
     "jest": "^23.6.0",
     "jest-dom": "^3.0.0",
+    "jest-watch-typeahead": "^0.2.0",
     "lerna": "^3.4.3",
     "lint-staged": "^7.3.0",
     "octopus-deploy": "^4.0.0",
