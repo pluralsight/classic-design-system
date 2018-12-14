@@ -452,8 +452,8 @@ exports[`Storyshots columnHeader align center w/ sort 1`] = `
       >
         Header sortable, aligned center
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -507,8 +507,8 @@ exports[`Storyshots columnHeader align left w/ sort 1`] = `
       >
         Header sortable, aligned left
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -562,8 +562,8 @@ exports[`Storyshots columnHeader align right w/ sort 1`] = `
       >
         Header sortable, aligned right
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -643,8 +643,8 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
       >
          Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned center
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -662,8 +662,8 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
       >
         Short header, same align
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -696,8 +696,8 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
       >
          Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned left
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -715,8 +715,8 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
       >
         Short header, same align
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -749,8 +749,8 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
       >
          Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned right
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -768,8 +768,8 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
       >
         Short header, same align
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -802,8 +802,8 @@ exports[`Storyshots columnHeader sort asc 1`] = `
       >
         sorted header
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             aria-label="sort ascending icon"
@@ -839,8 +839,8 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
       >
         active header
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             aria-label="sort ascending icon"
@@ -861,8 +861,8 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
       >
         other sortable
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -901,8 +901,8 @@ exports[`Storyshots columnHeader sort default 1`] = `
       >
         header text
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -936,8 +936,8 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
       >
         active header
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -956,8 +956,8 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
       >
         other sortable
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -990,8 +990,8 @@ exports[`Storyshots columnHeader sort desc 1`] = `
       >
         sorted header
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             aria-label="sort descending icon"
@@ -1027,8 +1027,8 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
       >
         active header
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             aria-label="sort descending icon"
@@ -1049,8 +1049,8 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
       >
         other sortable
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -1110,8 +1110,8 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
       >
         header text
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -1129,8 +1129,8 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
       >
         header2 text
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -1182,7 +1182,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
               className="css-1byjzqg"
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1229,8 +1229,8 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
       >
         header text
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -1248,8 +1248,8 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
       >
         header2 text
         <div
-          className="css-otejxm"
           data-css-7lxb9e=""
+          data-css-otejxm=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -1322,7 +1322,7 @@ exports[`Storyshots drawer mulitple 1`] = `
               className="css-1byjzqg"
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1382,7 +1382,7 @@ exports[`Storyshots drawer mulitple 1`] = `
               className="css-1byjzqg"
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1453,7 +1453,7 @@ exports[`Storyshots drawer single 1`] = `
               className="css-1byjzqg"
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1538,7 +1538,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
               className="css-1byjzqg"
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1612,7 +1612,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
               className="css-1byjzqg"
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1686,7 +1686,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
               className="css-1byjzqg"
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"

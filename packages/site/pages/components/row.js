@@ -1,14 +1,15 @@
 import core from '@pluralsight/ps-design-system-core'
+import React from 'react'
+
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import Row from '@pluralsight/ps-design-system-row/react'
+import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
@@ -17,8 +18,8 @@ import {
 } from '../../src/ui'
 
 const InAppExample = props => (
-  <div className="example">
-    <div className="stack">
+  <Theme>
+    <div className="example">
       <Row
         title="Advanced TypeScript"
         progress={0}
@@ -48,6 +49,7 @@ const InAppExample = props => (
         image={<Row.Image src="/static/img/course4.jpg" />}
       />
     </div>
+
     <Code collapsible language="javascript">{`<Row
   title="Advanced TypeScript"
   progress={0}
@@ -76,13 +78,14 @@ const InAppExample = props => (
   metadata2={['90m watched']}
   image={<Row.Image src="/static/img/course4.jpg" />}
 />`}</Code>
+
     <style jsx>{`
-      .stack {
+      .example {
         padding: ${core.layout.spacingLarge};
         background: ${core.colors.gray06};
       }
     `}</style>
-  </div>
+  </Theme>
 )
 
 export default withServerProps(_ => (
@@ -205,6 +208,7 @@ export default withServerProps(_ => (
       <Example.React
         orient="vertical"
         includes={{ Row, Icon }}
+        themeToggle
         codes={[
           `
 <Row
@@ -233,6 +237,7 @@ export default withServerProps(_ => (
       <Example.React
         orient="vertical"
         includes={{ Row, Icon }}
+        themeToggle
         codes={[
           `
 <Row
@@ -277,6 +282,7 @@ export default withServerProps(_ => (
       <Example.React
         orient="vertical"
         includes={{ Row, Icon }}
+        themeToggle
         codes={[
           `
 <Row
@@ -307,6 +313,7 @@ export default withServerProps(_ => (
       <Example.React
         orient="vertical"
         includes={{ Row, Icon }}
+        themeToggle
         codes={[
           `
 <Row
@@ -345,6 +352,7 @@ export default withServerProps(_ => (
       <Example.React
         orient="vertical"
         includes={{ Row, Icon }}
+        themeToggle
         codes={[
           `
 <Row
@@ -386,6 +394,7 @@ export default withServerProps(_ => (
       <Example.React
         orient="vertical"
         includes={{ Row, Icon }}
+        themeToggle
         codes={[
           `
 <Row
@@ -432,6 +441,7 @@ export default withServerProps(_ => (
       <Example.React
         orient="vertical"
         includes={{ Row, Icon }}
+        themeToggle
         codes={[
           `
 <Row
@@ -450,7 +460,11 @@ export default withServerProps(_ => (
 `,
           `
 <Row
-  fullOverlay={<Row.FullOverlayLink><a>Custom Thing</a></Row.FullOverlayLink>}
+  fullOverlay={
+    <Row.FullOverlayLink>
+      <a href="https://pluralsight.com" target="_blank">Custom Link</a>
+    </Row.FullOverlayLink>
+  }
   actionBar={[<Row.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
   title="Combined with other overlays"
   image={<Row.Image src="/static/img/course3.jpg" />}

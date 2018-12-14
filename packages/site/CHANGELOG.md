@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.4.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.4.0...@pluralsight/ps-design-system-site@11.4.1) (2018-12-14)
+
+
+### Bug Fixes
+
+* **site:** fix Card example theme ([d1ad01d](https://github.com/pluralsight/design-system/commit/d1ad01d))
+* **site:** fix dialog grid example ([fec1282](https://github.com/pluralsight/design-system/commit/fec1282))
+* **site:** spacing issue in Icon docs ([95b1e1b](https://github.com/pluralsight/design-system/commit/95b1e1b))
+* **site:** update row and card durations to match voice guidelines ([2b0305c](https://github.com/pluralsight/design-system/commit/2b0305c))
+
+
+
+
+
 # [11.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.3.2...@pluralsight/ps-design-system-site@11.4.0) (2018-12-10)
 
 

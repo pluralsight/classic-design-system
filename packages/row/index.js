@@ -1,3 +1,5 @@
-const React = require('./dist/react')
+const css = require('./css')
+const react = require('./react')
+const vars = require('./vars')
 
-module.exports = { react: React }
+module.exports = { css: css, react: react, vars: vars }

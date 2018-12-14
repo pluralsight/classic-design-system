@@ -1,21 +1,12 @@
 import core from '@pluralsight/ps-design-system-core'
 import { transparentize } from 'polished'
 
+import {
+  defaultName as themeDefaultName,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme/vars'
+
 import * as vars from '../vars'
-
-const rowHover = {
-  opacity: 1
-}
-
-const actionBarButtonHover = {
-  color: core.colors.white
-}
-
-const textLinkAHover = {
-  color: core.colors.white,
-  textDecoration: 'underline',
-  transition: `all ${core.motion.speedNormal}`
-}
 
 export default {
   '.psds-row': {
@@ -24,14 +15,16 @@ export default {
     width: '100%',
     padding: `${core.layout.spacingSmall} 0`,
     textAlign: 'left',
-    borderTop: `1px solid ${core.colors.gray04}`
+    borderTop: `1px solid ${core.colors.gray04}`,
+
+    '&:hover, &:hover': {
+      '& div': { opacity: 1 }
+    },
+
+    '&:first-of-type': {
+      borderTop: 'none'
+    }
   },
-  '.psds-row:first-of-type': {
-    borderTop: 'none'
-  },
-  // TODO: target child more precisely; which child is this?
-  '.psds-row:hover div': rowHover,
-  '.psds-row:active div': rowHover,
 
   // __overlays
   '.psds-row__overlays': {
@@ -67,8 +60,13 @@ export default {
     background: transparentize(0.5, core.colors.black),
     transition: `opacity ${core.motion.speedNormal}`,
     pointerEvents: 'none',
-    opacity: 0
+    opacity: 0,
+
+    '& a': {
+      color: 'inherit'
+    }
   },
+
   // __full-overlay--isFocused
   '.psds-row__full-overlay--isFocused': {
     opacity: 1
@@ -108,20 +106,28 @@ export default {
     lineHeight: 0,
     cursor: 'pointer',
     border: 'none',
-    color: core.colors.gray02,
     background: 'none',
     transition: `all ${core.motion.speedNormal}`
   },
-  '.psds-row__action-bar__button:hover': actionBarButtonHover,
-  '.psds-row__action-bar__button:active': actionBarButtonHover,
+  [`.psds-row__action-bar__button.psds-theme--${themeDefaultName}`]: {
+    color: core.colors.gray02,
+
+    '&:active, &:hover': { color: core.colors.white }
+  },
+  [`.psds-row__action-bar__button.psds-theme--${themeNames.light}`]: {
+    color: core.colors.gray03,
+
+    '&:active, &:hover': { color: core.colors.black }
+  },
 
   '.psds-row__action-bar__button--disabled': {
     color: core.colors.gray02,
-    background: core.colors.gray03
-  },
-  '.psds-row__action-bar__button--disabled:hover': {
-    color: core.colors.gray02,
-    background: core.colors.gray03
+    background: core.colors.gray03,
+
+    '&:hover': {
+      color: core.colors.gray02,
+      background: core.colors.gray03
+    }
   },
 
   // __progress
@@ -161,8 +167,13 @@ export default {
   '.psds-row__title': {
     display: 'block',
     fontWeight: core.type.fontWeightMedium,
-    color: core.colors.white,
     textAlign: 'left'
+  },
+  [`.psds-row__title.psds-theme--${themeDefaultName}`]: {
+    color: core.colors.white
+  },
+  [`.psds-row__title.psds-theme--${themeNames.light}`]: {
+    color: core.colors.gray06
   },
   [`.psds-row__title--size-${vars.sizes.small}`]: {
     fontSize: core.type.fontSizeSmall,
@@ -180,29 +191,44 @@ export default {
     alignItems: 'center',
     width: '100%',
     height: '100%',
-    pointerEvents: 'all'
-  },
-  '.psds-row__image-link a': {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100%',
-    width: '100%',
-    textDecoration: 'none',
-    transition: `all ${core.motion.speedNormal}`
+    pointerEvents: 'all',
+
+    '& a': {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100%',
+      width: '100%',
+      textDecoration: 'none',
+      transition: `all ${core.motion.speedNormal}`
+    }
   },
 
   // __text-link
   '.psds-row__text-link': {
-    pointerEvents: 'all'
+    pointerEvents: 'all',
+
+    '& a': {
+      color: 'inherit',
+      cursor: 'pointer',
+      textDecoration: 'none',
+
+      '&:active, &:hover': {
+        textDecoration: 'underline',
+        transition: `all ${core.motion.speedNormal}`
+      }
+    }
   },
-  '.psds-row__text-link a': {
-    color: 'inherit',
-    cursor: 'pointer',
-    textDecoration: 'none'
+  [`.psds-row__text-link.psds-theme--${themeDefaultName}`]: {
+    '&:active, &:hover': {
+      color: core.colors.white
+    }
   },
-  '.psds-row__text-link a:hover': textLinkAHover,
-  '.psds-row__text-link a:active': textLinkAHover,
+  [`.psds-row__text-link.psds-theme--${themeNames.light}`]: {
+    '&:active, &:hover': {
+      color: core.colors.black
+    }
+  },
 
   // __metadata
   '.psds-row__metadata': {
@@ -210,9 +236,14 @@ export default {
     alignItems: 'center',
     fontWeight: core.type.fontWeightBook,
     lineHeight: core.type.lineHeightTight,
-    color: core.colors.gray02,
     maxWidth: '100%',
     paddingTop: core.layout.spacingXXSmall
+  },
+  [`.psds-row__metadata.psds-theme--${themeDefaultName}`]: {
+    color: core.colors.gray02
+  },
+  [`.psds-row__metadata.psds-theme--${themeNames.light}`]: {
+    color: core.colors.gray03
   },
   [`.psds-row__metadata--size-${vars.sizes.small}`]: {
     fontSize: core.type.fontSizeXSmall,
@@ -229,11 +260,12 @@ export default {
     overflow: 'hidden',
     textOverflow: 'ellipsis',
     flexShrink: 2,
-    maxWidth: '25%'
-  },
-  '.psds-row__metadata__datum:nth-of-type(1)': {
-    flexShrink: 1,
-    maxWidth: '50%'
+    maxWidth: '25%',
+
+    '&:nth-of-type(1)': {
+      flexShrink: 1,
+      maxWidth: '50%'
+    }
   },
 
   // __metadata__dot
