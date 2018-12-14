@@ -2,27 +2,29 @@ sudo: false
 
 language: node_js
 
+cache: yarn
+
 # always test things that aren't pushes (like PRs)
 # never test tags or pushes to non-master branches (wait for PR)
 if: type != push OR (tag IS blank AND branch = master)
 
 install:
-  - npm install
+  - yarn --ignore-engines
 
 jobs:
   include:
     - stage: validate
       name: Lint Commits
       script:
-        - npm install @commitlint/travis-cli
+        - yarn add @commitlint/travis-cli --ignore-engines --ignore-workspace-root-check
         - commitlint-travis
     - name: Lint Files
-      script: npm run lint:no-fail
-    - name: Danger
-      script:
-        - npm run danger -- ci
+      script: yarn lint:no-fail
+    # - name: Danger
+    #   script:
+    #     - yarn danger ci
     - stage: test
       name: Unit Test
       script:
-        - npm run bootstrap
-        - npm test
+        - yarn run lerna run prepublish
+        - yarn test
