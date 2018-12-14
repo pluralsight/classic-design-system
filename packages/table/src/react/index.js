@@ -1,10 +1,7 @@
 import { vars as drawerVars } from '@pluralsight/ps-design-system-drawer'
 import * as glamor from 'glamor'
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/react'
+import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -233,12 +230,10 @@ class Table extends React.Component {
         {...(props.className ? { className: props.className } : null)}
         {...(props.style ? { style: props.style } : null)}
       >
-        {React.Children.map(
-          allProps.children || [],
-          child =>
-            child && child.type && child.type.displayName === Row.displayName
-              ? React.cloneElement(child, { _tableHasDrawers })
-              : child
+        {React.Children.map(allProps.children || [], child =>
+          child && child.type && child.type.displayName === Row.displayName
+            ? React.cloneElement(child, { _tableHasDrawers })
+            : child
         )}
       </div>
     )
