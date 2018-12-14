@@ -9,7 +9,7 @@
   "scripts": {
     "build": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build -- --watch",
-    "test": "jest",
+    "test": "../../node_modules/.bin/jest",
     "test:watch": "npm run test -- --watch",
     "prepublish": "npm run build"
   },
@@ -23,7 +23,6 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-2": "^6.24.1",
-    "jest": "^23.6.0"
+    "babel-preset-stage-2": "^6.24.1"
   }
 }
