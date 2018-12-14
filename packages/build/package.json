@@ -10,7 +10,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "../../node_modules/.bin/jest",
     "test:watch": "npm run test -- --watchAll"
   },
   "keywords": [],
@@ -24,7 +24,6 @@
     "commander": "^2.14.1",
     "css-loader": "^0.28.4",
     "idempotent-fs": "^1.2.0",
-    "jest": "^23.6.0",
     "postcss": "^6.0.1",
     "postcss-cssnext": "^3.0.2",
     "postcss-discard-comments": "^2.0.4",
