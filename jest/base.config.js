@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   coverageDirectory: '<rootDir>/coverage',
   coverageReporters: ['lcov'],
-  modulePathIgnorePatterns: ['<rootDir>/scripts/'],
+  modulePathIgnorePatterns: ['<rootDir>/scripts/', '<rootDir>/.*/__mocks__'],
   rootDir: path.resolve(__dirname, '..'),
-  setupFiles: ['raf/polyfill', '<rootDir>/jest/setup.js']
+  setupTestFrameworkScriptFile: '<rootDir>/jest/setup/index.js'
 }
