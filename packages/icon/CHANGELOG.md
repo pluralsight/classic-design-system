@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.13.7...@pluralsight/ps-design-system-icon@9.0.0) (2018-12-14)
+
+
+### Bug Fixes
+
+* **icon:** bundle icon component with source ([25872df](https://github.com/pluralsight/design-system/commit/25872df))
+* **icon:** convert to pure component ([6f83141](https://github.com/pluralsight/design-system/commit/6f83141))
+* **icon:** props.children wasn't handled correctly ([51a3939](https://github.com/pluralsight/design-system/commit/51a3939))
+
+
+### Code Refactoring
+
+* **icon:** remove glamorous; add additional prop support ([4ec5d1e](https://github.com/pluralsight/design-system/commit/4ec5d1e))
+
+
+### BREAKING CHANGES
+
+* **icon:** the css prop is no longer supported on Icon; react componts for each icon are no
+longer available at <root>/js
+
+
+
+
+
 ## [8.13.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.13.6...@pluralsight/ps-design-system-icon@8.13.7) (2018-11-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon

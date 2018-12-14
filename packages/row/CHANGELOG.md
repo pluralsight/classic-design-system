@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.6.25...@pluralsight/ps-design-system-row@3.0.0) (2018-12-14)
+
+
+### Bug Fixes
+
+* **row:** fullOverlay can be any react element ([2b39556](https://github.com/pluralsight/design-system/commit/2b39556))
+* **row:** remove debug style ([1b05440](https://github.com/pluralsight/design-system/commit/1b05440))
+* **row:** remove overlay/icon color override ([05f5ce2](https://github.com/pluralsight/design-system/commit/05f5ce2))
+* **row:** use the correct classes for theming ([52b10d9](https://github.com/pluralsight/design-system/commit/52b10d9))
+
+
+### Code Refactoring
+
+* **row:** remove glamorous ([5ed2416](https://github.com/pluralsight/design-system/commit/5ed2416))
+
+
+### Features
+
+* **row:** light theme support ([4c80747](https://github.com/pluralsight/design-system/commit/4c80747))
+
+
+### BREAKING CHANGES
+
+* **row:** the `css` prop that is provided by glamorous is no longer supported
+
+
+
+
+
 ## [2.6.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@2.6.24...@pluralsight/ps-design-system-row@2.6.25) (2018-12-10)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-row
