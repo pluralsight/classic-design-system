@@ -1,15 +1,15 @@
 {
-  "plugins": [
-    "glamorous-displayname",
-    "preval"
-  ],
+  "plugins": ["preval"],
   "presets": [
     "react",
     "stage-2",
-    ["env", {
-      "targets": {
-        "browsers": ["last 2 versions", "ie >= 10"]
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "ie >= 10"]
+        }
       }
-    }]
+    ]
   ]
 }

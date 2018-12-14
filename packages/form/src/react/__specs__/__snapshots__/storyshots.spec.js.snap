@@ -136,7 +136,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-loo18p=""
               >
                 <div
-                  className="css-otejxm"
+                  data-css-otejxm=""
                 >
                   <svg
                     aria-label="warning icon"
@@ -207,7 +207,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     data-css-cstzed=""
                   >
                     <div
-                      className="css-otejxm"
+                      data-css-otejxm=""
                     >
                       <svg
                         aria-label="caret down icon"
@@ -388,7 +388,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   onClick={[Function]}
                 >
                   <div
-                    className="css-otejxm"
+                    data-css-otejxm=""
                   >
                     <svg
                       aria-label="calendar icon"

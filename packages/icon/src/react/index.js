@@ -1,45 +1,55 @@
-import core from '@pluralsight/ps-design-system-core'
-import glamorous from 'glamorous'
+import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import icons from '../js/icons'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import css from '../css'
+import icons from '../js/icon-transformer'
 import * as vars from '../vars'
 
-const IconContainer = glamorous.div(
-  css['.psds-icon'],
-  ({ size }) => css[`.psds-icon--size-${size}`],
-  ({ color }) => ({
-    '> svg': color
-      ? css[`.psds-icon--color-${color} > svg`]
-      : css['.psds-icon > svg']
-  }),
-  ({ css: propsCss }) => propsCss
-)
+const style = {
+  icon: ({ css: propCSS = {}, color, size }) =>
+    glamor.css({
+      ...css['.psds-icon'],
+      ...css[`.psds-icon--size-${size}`],
 
-const rmNonHtmlProps = props => {
-  const { id, ...rest } = props
-  return rest
+      '> svg': color
+        ? css[`.psds-icon--color-${color} > svg`]
+        : css['.psds-icon > svg']
+    })
 }
 
-const Icon = props => {
-  return (
-    <IconContainer {...rmNonHtmlProps(props)}>
-      {props.children || icons[props.id](React)}
-    </IconContainer>
-  )
+const IconNotFound = () => null
+
+class Icon extends React.PureComponent {
+  getIconById(id) {
+    const Comp = icons[id] ? icons[id](React, filterReactProps) : IconNotFound
+    return <Comp />
+  }
+
+  render() {
+    const { id, ...props } = this.props
+
+    return (
+      <div {...style.icon(props)} {...filterReactProps(props)}>
+        {this.props.children || this.getIconById(id)}
+      </div>
+    )
+  }
 }
 
 Icon.propTypes = {
-  color: PropTypes.oneOf(Object.keys(vars.colors)),
-  id: PropTypes.oneOf(Object.keys(vars.ids)),
-  size: PropTypes.oneOf(Object.keys(vars.sizes))
+  children: PropTypes.node,
+  color: PropTypes.oneOf(Object.values(vars.colors)),
+  id: PropTypes.oneOf(Object.values(vars.ids)),
+  size: PropTypes.oneOf(Object.values(vars.sizes))
 }
+
 Icon.defaultProps = {
   size: vars.sizes.medium
 }
+
 Icon.colors = vars.colors
 Icon.ids = vars.ids
 Icon.sizes = vars.sizes

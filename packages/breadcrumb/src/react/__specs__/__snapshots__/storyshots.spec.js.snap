@@ -17,7 +17,7 @@ exports[`Storyshots as link hrefs 1`] = `
         data-css-1mgd019=""
       >
         <div
-          className="css-otejxm"
+          data-css-otejxm=""
         >
           <svg
             aria-label="caret left icon"
@@ -58,7 +58,7 @@ exports[`Storyshots disabled disabled 1`] = `
         data-css-1mgd019=""
       >
         <div
-          className="css-otejxm"
+          data-css-otejxm=""
         >
           <svg
             aria-label="caret left icon"
@@ -98,7 +98,7 @@ exports[`Storyshots normal looks great 1`] = `
         data-css-1mgd019=""
       >
         <div
-          className="css-otejxm"
+          data-css-otejxm=""
         >
           <svg
             aria-label="caret left icon"
@@ -139,7 +139,7 @@ exports[`Storyshots with onClick clicks once 1`] = `
         data-css-1mgd019=""
       >
         <div
-          className="css-otejxm"
+          data-css-otejxm=""
         >
           <svg
             aria-label="caret left icon"

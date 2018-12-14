@@ -38,7 +38,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
           data-css-2qvjr2=""
         >
           <div
-            className="css-otejxm"
+            data-css-otejxm=""
           >
             <svg
               aria-label="bookmark icon"
@@ -89,7 +89,7 @@ exports[`Storyshots actionBar long title 1`] = `
           data-css-2qvjr2=""
         >
           <div
-            className="css-otejxm"
+            data-css-otejxm=""
           >
             <svg
               aria-label="bookmark icon"
@@ -147,7 +147,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
           data-css-2qvjr2=""
         >
           <div
-            className="css-otejxm"
+            data-css-otejxm=""
           >
             <svg
               aria-label="bookmark icon"
@@ -198,7 +198,7 @@ exports[`Storyshots actionBar one action 1`] = `
           data-css-2qvjr2=""
         >
           <div
-            className="css-otejxm"
+            data-css-otejxm=""
           >
             <svg
               aria-label="bookmark icon"
@@ -259,7 +259,7 @@ exports[`Storyshots combo everything 1`] = `
               href="http://google.com?query=overlay"
             >
               <div
-                className="css-6f8y6t"
+                data-css-6f8y6t=""
               >
                 <svg
                   aria-label="play circle icon"
@@ -364,7 +364,7 @@ exports[`Storyshots combo everything 1`] = `
           data-css-2qvjr2=""
         >
           <div
-            className="css-otejxm"
+            data-css-otejxm=""
           >
             <svg
               aria-label="bookmark icon"
@@ -382,7 +382,7 @@ exports[`Storyshots combo everything 1`] = `
           data-css-2qvjr2=""
         >
           <div
-            className="css-otejxm"
+            data-css-otejxm=""
           >
             <svg
               aria-label="gear icon"
@@ -400,7 +400,7 @@ exports[`Storyshots combo everything 1`] = `
           data-css-2qvjr2=""
         >
           <div
-            className="css-otejxm"
+            data-css-otejxm=""
           >
             <svg
               aria-label="more icon"
@@ -551,7 +551,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
               href="http://google.com?query=overlay"
             >
               <div
-                className="css-6f8y6t"
+                data-css-6f8y6t=""
               >
                 <svg
                   aria-label="play circle icon"
@@ -623,7 +623,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
               href="http://google.com?query=overlay"
             >
               <div
-                className="css-6f8y6t"
+                data-css-6f8y6t=""
               >
                 <svg
                   aria-label="play circle icon"
@@ -1066,7 +1066,7 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
           data-css-2qvjr2=""
         >
           <div
-            className="css-otejxm"
+            data-css-otejxm=""
           >
             <svg
               aria-label="more icon"
@@ -1117,7 +1117,7 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
           data-css-2qvjr2=""
         >
           <div
-            className="css-otejxm"
+            data-css-otejxm=""
           >
             <svg
               aria-label="more icon"
@@ -1195,7 +1195,7 @@ exports[`Storyshots in drawer medium 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  className="css-otejxm"
+                  data-css-otejxm=""
                 >
                   <svg
                     aria-label="more icon"
@@ -1224,7 +1224,7 @@ exports[`Storyshots in drawer medium 1`] = `
               className="css-1byjzqg"
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1308,7 +1308,7 @@ exports[`Storyshots in drawer small 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  className="css-otejxm"
+                  data-css-otejxm=""
                 >
                   <svg
                     aria-label="more icon"
@@ -1337,7 +1337,7 @@ exports[`Storyshots in drawer small 1`] = `
               className="css-1byjzqg"
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
