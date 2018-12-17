@@ -1,7 +1,7 @@
-import { Simulate, render } from 'react-testing-library'
 import React from 'react'
+import { fireEvent, render } from 'react-testing-library'
 
-import Table from '../index'
+import Table from '..'
 
 describe('columnHeader', () => {
   test('sorted=false onClick called with asc', done => {
@@ -12,8 +12,9 @@ describe('columnHeader', () => {
     const { getByText } = render(
       <Table.ColumnHeader onClick={onClick}>Click me</Table.ColumnHeader>
     )
-    Simulate.click(getByText('Click me'))
+    fireEvent.click(getByText('Click me'))
   })
+
   test('sorted=true onClick called with asc', done => {
     const onClick = sort => {
       expect(sort).toBe(Table.sorts.asc)
@@ -24,8 +25,9 @@ describe('columnHeader', () => {
         Click me
       </Table.ColumnHeader>
     )
-    Simulate.click(getByText('Click me'))
+    fireEvent.click(getByText('Click me'))
   })
+
   test('sorted=asc onClick called with desc', done => {
     const onClick = sort => {
       expect(sort).toBe(Table.sorts.desc)
@@ -36,8 +38,9 @@ describe('columnHeader', () => {
         Click me
       </Table.ColumnHeader>
     )
-    Simulate.click(getByText('Click me'))
+    fireEvent.click(getByText('Click me'))
   })
+
   test('sorted=desc onClick called with asc', done => {
     const onClick = sort => {
       expect(sort).toBe(Table.sorts.asc)
@@ -48,6 +51,6 @@ describe('columnHeader', () => {
         Click me
       </Table.ColumnHeader>
     )
-    Simulate.click(getByText('Click me'))
+    fireEvent.click(getByText('Click me'))
   })
 })

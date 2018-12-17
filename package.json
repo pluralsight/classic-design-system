@@ -24,7 +24,7 @@
     "publish:beta": "npm run publish -- --npm-tag=beta",
     "site": "cd packages/site && npm start",
     "start": "npm run site",
-    "test": "lerna run test --stream"
+    "test": "jest"
   },
   "lint-staged": {
     "ignore": [
@@ -79,6 +79,8 @@
     "copy-template-dir": "^1.4.0",
     "danger": "^6.1.12",
     "danger-plugin-toolbox": "^1.4.0",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
     "eslint": "^5.7.0",
     "eslint-config-prettier": "^3.1.0",
     "eslint-config-standard": "^12.0.0",
@@ -94,11 +96,16 @@
     "gulp-bump": "^3.1.0",
     "husky": "^0.15.0-rc.13",
     "inquirer": "^6.2.0",
+    "jest": "^23.6.0",
+    "jest-dom": "^3.0.0",
+    "jest-watch-typeahead": "^0.2.0",
     "lerna": "^3.4.3",
     "lint-staged": "^7.3.0",
     "octopus-deploy": "^4.0.0",
     "prettier": "^1.7.4",
     "prettier-eslint-cli": "^4.7.1",
+    "raf": "^3.4.0",
+    "react-testing-library": "^5.3.2",
     "webpack": "^4.0.0",
     "yargs": "^11.0.0"
   }

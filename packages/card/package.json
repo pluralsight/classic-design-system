@@ -15,15 +15,9 @@
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
-    "test": "jest",
+    "test": "../../node_modules/.bin/jest",
     "test:updateSnapshot": "npm run test -- --updateSnapshot",
     "test:watch": "npm run test -- --watchAll"
-  },
-  "jest": {
-    "setupFiles": [
-      "raf/polyfill",
-      "<rootDir>/test/setup.js"
-    ]
   },
   "keywords": [],
   "dependencies": {
@@ -52,11 +46,6 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "enzyme": "^3.2.0",
-    "enzyme-adapter-react-16": "^1.1.0",
-    "jest": "^23.6.0",
-    "npm-run-all": "^4.1.2",
-    "raf": "^3.4.0",
-    "react": "^16.2.0"
+    "npm-run-all": "^4.1.2"
   }
 }
