@@ -28,9 +28,13 @@ async function main() {
     [pkg.name]: pkg.version
   }))
 
-  const suggestedDependencies = ['button', 'core', 'icon', 'theme'].map(
-    toPackageName
-  )
+  const suggestedDependencies = [
+    'button',
+    'core',
+    'filter-react-props',
+    'icon',
+    'theme'
+  ].map(toPackageName)
 
   const questions = [
     {
