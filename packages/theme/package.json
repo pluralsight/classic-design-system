@@ -17,6 +17,7 @@
   },
   "keywords": [],
   "dependencies": {
+    "hoist-non-react-statics": "^3.2.1",
     "prop-types": "^15.5.10"
   },
   "peerDependencies": {
