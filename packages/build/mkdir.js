@@ -1,6 +1,5 @@
 // TODO: consolidate into ./fs.js
-// TODO: upgrade node 8, rm this for util.promisify
-const promisify = require('promisify-node')
+const { promisify } = require('util')
 
 const fs = require('idempotent-fs')
 
