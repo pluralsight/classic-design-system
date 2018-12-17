@@ -1,7 +1,9 @@
 {
   "packages": ["packages/*"],
   "version": "independent",
-  "bootstrap": {
-    "ci": false
+  "command": {
+    "bootstrap": {
+      "ci": false
+    }
   }
 }
