@@ -1,0 +1,32 @@
+{
+  "name": "@pluralsight/ps-design-system-prop-types",
+  "version": "1.0.0",
+  "description": "Custom Prop Types for the Pluralsight Design System",
+  "license": "Apache-2.0",
+  "repository": "pluralsight/design-system",
+  "main": "index.js",
+  "module": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "run-s build:js",
+    "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build:watch": "npm run build:js -- --watch",
+    "prepublish": "npm run build",
+    "test": "../../node_modules/.bin/jest",
+    "test:updateSnapshot": "npm run test -- --updateSnapshot",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "keywords": [],
+  "peerDependencies": {
+    "react": ">=0.15.0 < 17.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "npm-run-all": "^4.1.2"
+  }
+}
