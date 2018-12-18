@@ -18,9 +18,10 @@ jobs:
         - commitlint-travis
     - name: Lint Files
       script: npm run lint:no-fail
-    - name: Danger
-      script:
-        - npm run danger -- ci
+    # NOTE: disabled until babel is upgrade
+    # - name: Danger
+    #   script:
+    #     - npm run danger -- ci
     - stage: test
       name: Unit Test
       script:
