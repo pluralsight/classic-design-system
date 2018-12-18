@@ -3,11 +3,11 @@ import React from 'react'
 
 import InfoState from '..'
 
-storiesOf('InfoState', module).add('example', _ => (
-  <InfoState
-    actions={<InfoState.Actions>[ Actions ]</InfoState.Actions>}
-    caption={<InfoState.Caption>Caption</InfoState.Caption>}
-    heading={<InfoState.Heading>Heading</InfoState.Heading>}
-    illustration={<InfoState.Illustration />}
-  />
-))
+Object.values(InfoState.Illustration.names).forEach(name => {
+  storiesOf('InfoState/illustrations', module).add(name, _ => (
+    <InfoState
+      heading={<InfoState.Heading>{name}</InfoState.Heading>}
+      illustration={<InfoState.Illustration name={name} />}
+    />
+  ))
+})

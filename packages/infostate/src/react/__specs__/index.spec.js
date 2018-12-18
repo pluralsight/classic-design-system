@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-testing-library'
 import { axe, toHaveNoViolations } from 'jest-axe'
 
-import InfoState from '../index'
+import InfoState from '..'
 
 expect.extend(toHaveNoViolations)
 
@@ -27,7 +27,9 @@ describe('InfoState', () => {
         actions={<InfoState.Actions>[ Actions ]</InfoState.Actions>}
         caption={<InfoState.Caption>Caption</InfoState.Caption>}
         heading={<InfoState.Heading>Heading</InfoState.Heading>}
-        illustration={<InfoState.Illustration />}
+        illustration={
+          <InfoState.Illustration name={InfoState.Illustration.names.search} />
+        }
       />
     )
 

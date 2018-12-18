@@ -17,13 +17,20 @@ export default {
   },
   [`.psds-infostate.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03
-  }
+  },
 
   // __actions
+  '.psds-infostate__actions': {},
 
   // __caption
+  '.psds-infostate__caption': {},
 
-  // __heading
+  // __heading,
+  '.psds-infostate__heading': {},
 
   // __illustration
+  '.psds-infostate__illustration': {
+    width: 128,
+    height: 128
+  }
 }

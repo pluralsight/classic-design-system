@@ -10,7 +10,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "run-s build:js build:css",
+    "build": "run-s build:svg build:js build:css",
+    "build:svg": "svgr --filename-case kebab --ext \"dist.js\" -d src/react/illustrations src/svg",
     "build:css": "build-css",
     "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build:js -- --watch",
@@ -31,6 +32,7 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "devDependencies": {
+    "@svgr/cli": "^4.0.0",
     "@pluralsight/ps-design-system-build": "*",
     "@pluralsight/ps-design-system-storybook-addon-center": "*",
     "@pluralsight/ps-design-system-storybook-addon-theme": "*",
