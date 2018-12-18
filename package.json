@@ -13,7 +13,6 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
     "clean": "lerna clean",
-    "commitmsg": "commitlint -e",
     "component:create": "node ./scripts/create-component/index.js",
     "danger": "danger",
     "lint": "eslint .",
@@ -50,6 +49,7 @@
   "browserslist": "last 4 versions",
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -e",
       "pre-commit": "lint-staged"
     }
   },
@@ -94,7 +94,7 @@
     "format-package": "^4.5.0",
     "gulp": "^3.9.1",
     "gulp-bump": "^3.1.0",
-    "husky": "^0.15.0-rc.13",
+    "husky": "^1.2.1",
     "inquirer": "^6.2.0",
     "jest": "^23.6.0",
     "jest-axe": "^3.1.0",
