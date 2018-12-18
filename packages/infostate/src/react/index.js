@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
@@ -10,9 +11,6 @@ import css from '../css'
 import * as vars from '../vars'
 
 import * as illustrations from './illustrations'
-
-// TODO: move to custom prop-types package and import
-import elementOfType from './element-of-type'
 
 const styles = {
   infoState: ({ themeName }) =>
