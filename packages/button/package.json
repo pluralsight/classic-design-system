@@ -14,16 +14,16 @@
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
-    "test": "../../node_modules/.bin/jest",
+    "test": "jest",
     "test:updateSnapshot": "npm run test -- --updateSnapshot",
     "test:watch": "npm run test -- --watchAll"
   },
   "keywords": [],
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.4.0",
-    "@pluralsight/ps-design-system-icon": "^9.0.0",
-    "@pluralsight/ps-design-system-theme": "^1.4.1",
-    "@pluralsight/ps-design-system-util": "^1.2.5",
+    "@pluralsight/ps-design-system-core": "file:../core",
+    "@pluralsight/ps-design-system-icon": "file:../icon",
+    "@pluralsight/ps-design-system-theme": "file:../theme",
+    "@pluralsight/ps-design-system-util": "file:../util",
     "polished": "^1.9.2",
     "prop-types": "^15.5.10"
   },
@@ -33,17 +33,7 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.9.0",
-    "@pluralsight/ps-design-system-storybook-addon-center": "^1.0.3",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.3.0",
-    "@storybook/addon-actions": "^4.0.0",
-    "@storybook/addon-storyshots": "^4.0.0",
-    "@storybook/addons": "^4.0.0",
-    "@storybook/react": "^4.0.0",
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "npm-run-all": "^4.1.2"
+    "@pluralsight/ps-design-system-storybook-addon-center": "file:../storybook-addon-center",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "file:../storybook-addon-theme"
   }
 }

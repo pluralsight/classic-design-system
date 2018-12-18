@@ -9,7 +9,7 @@
   "scripts": {
     "build": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build -- --watch",
-    "test": "../../node_modules/.bin/jest",
+    "test": "jest",
     "test:watch": "npm run test -- --watch",
     "prepublish": "npm run build"
   },
@@ -19,10 +19,5 @@
   },
   "peerDependencies": {
     "react": ">=0.15.0 < 17.0.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-2": "^6.24.1"
   }
 }

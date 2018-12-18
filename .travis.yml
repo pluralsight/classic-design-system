@@ -24,5 +24,4 @@ jobs:
     - stage: test
       name: Unit Test
       script:
-        - npm run bootstrap
         - npm test

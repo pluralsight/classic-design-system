@@ -15,19 +15,13 @@
     "react-storybook"
   ],
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.4.0",
-    "@pluralsight/ps-design-system-theme": "^1.4.1",
+    "@pluralsight/ps-design-system-core": "file:../core",
+    "@pluralsight/ps-design-system-theme": "file:../theme",
     "glamor": "^2.20.0",
     "prop-types": "^15.5.10"
   },
   "peerDependencies": {
     "@storybook/addons": "^4.0.0",
     "react": ">=0.15.0 < 17.0.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1"
   }
 }

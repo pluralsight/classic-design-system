@@ -10,7 +10,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "../../node_modules/.bin/jest",
+    "test": "jest",
     "test:watch": "npm run test -- --watchAll"
   },
   "keywords": [],

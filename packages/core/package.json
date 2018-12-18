@@ -13,9 +13,7 @@
   },
   "keywords": [],
   "style": "css/index.css",
-  "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.9.0",
-    "autoprefixer": "^7.1.1",
-    "postcss-import": "^10.0.0"
+  "dependencies": {
+    "@pluralsight/ps-design-system-build": "file:../build"
   }
 }

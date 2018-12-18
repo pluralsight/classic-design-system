@@ -11,7 +11,7 @@
     "build": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build -- --watch",
     "prepublish": "npm run build",
-    "test": "../../node_modules/.bin/jest",
+    "test": "jest",
     "test:updateSnapshot": "npm run test -- --updateSnapshot",
     "test:watch": "npm run test -- --watchAll"
   },
@@ -24,11 +24,5 @@
     "@pluralsight/ps-design-system-normalize": "^3.0.24",
     "glamor": "^2.20.0",
     "react": ">=0.15.0 < 17.0.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1"
   }
 }
