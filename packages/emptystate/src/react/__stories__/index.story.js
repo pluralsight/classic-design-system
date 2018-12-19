@@ -6,30 +6,30 @@ import Icon from '@pluralsight/ps-design-system-icon/react'
 import Tag from '@pluralsight/ps-design-system-tag/react'
 import TextInput from '@pluralsight/ps-design-system-textinput/react'
 
-import InfoState from '..'
+import EmptyState from '..'
 
-const InfoStateWithDefaults = props => <InfoState {...props} />
+const EmptyStateWithDefaults = props => <EmptyState {...props} />
 
-InfoStateWithDefaults.defaultProps = {
+EmptyStateWithDefaults.defaultProps = {
   actions: (
-    <InfoState.Actions>
+    <EmptyState.Actions>
       <Button>Do a Thing</Button>
-    </InfoState.Actions>
+    </EmptyState.Actions>
   ),
   caption: (
-    <InfoState.Caption>
+    <EmptyState.Caption>
       Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket.
       Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder
       strip steak filet mignon pork, pork loin shankle spare ribs.
-    </InfoState.Caption>
+    </EmptyState.Caption>
   ),
   heading: (
-    <InfoState.Heading>
+    <EmptyState.Heading>
       Filet mignon pork chop salami shank tail.
-    </InfoState.Heading>
+    </EmptyState.Heading>
   ),
   illustration: (
-    <InfoState.Illustration name={InfoState.Illustration.names.search} />
+    <EmptyState.Illustration name={EmptyState.Illustration.names.search} />
   )
 }
 
@@ -57,37 +57,37 @@ const InlineList = ({ children, ...props }) => {
   )
 }
 
-storiesOf('InfoState', module).add('combo', _ => <InfoStateWithDefaults />)
+storiesOf('EmptyState', module).add('combo', _ => <EmptyStateWithDefaults />)
 
-Object.values(InfoState.sizes).forEach(size => {
-  storiesOf('InfoState/sizes', module).add(size, _ => (
-    <InfoStateWithDefaults size={size} />
+Object.values(EmptyState.sizes).forEach(size => {
+  storiesOf('EmptyState/sizes', module).add(size, _ => (
+    <EmptyStateWithDefaults size={size} />
   ))
 })
 
-Object.values(InfoState.Illustration.names).forEach(name => {
-  storiesOf('InfoState/illustrations', module).add(name, _ => (
-    <InfoState
-      heading={<InfoState.Heading>{name}</InfoState.Heading>}
-      illustration={<InfoState.Illustration name={name} />}
+Object.values(EmptyState.Illustration.names).forEach(name => {
+  storiesOf('EmptyState/illustrations', module).add(name, _ => (
+    <EmptyState
+      heading={<EmptyState.Heading>{name}</EmptyState.Heading>}
+      illustration={<EmptyState.Illustration name={name} />}
     />
   ))
 })
 
-storiesOf('InfoState/actions', module).add('with an input', _ => (
-  <InfoStateWithDefaults
+storiesOf('EmptyState/actions', module).add('with an input', _ => (
+  <EmptyStateWithDefaults
     actions={
-      <InfoState.Actions>
+      <EmptyState.Actions>
         <SearchInput />
-      </InfoState.Actions>
+      </EmptyState.Actions>
     }
   />
 ))
 
-storiesOf('InfoState/actions', module).add('with buttons', _ => (
-  <InfoStateWithDefaults
+storiesOf('EmptyState/actions', module).add('with buttons', _ => (
+  <EmptyStateWithDefaults
     actions={
-      <InfoState.Actions>
+      <EmptyState.Actions>
         <InlineList>
           <Button appearance={Button.appearances.stroke}>Asssessments</Button>
           <Button appearance={Button.appearances.stroke}>Guides</Button>
@@ -98,15 +98,15 @@ storiesOf('InfoState/actions', module).add('with buttons', _ => (
           <Button appearance={Button.appearances.stroke}>Projects</Button>
           <Button appearance={Button.appearances.stroke}>Video Courses</Button>
         </InlineList>
-      </InfoState.Actions>
+      </EmptyState.Actions>
     }
   />
 ))
 
-storiesOf('InfoState/actions', module).add('with tags', _ => (
-  <InfoStateWithDefaults
+storiesOf('EmptyState/actions', module).add('with tags', _ => (
+  <EmptyStateWithDefaults
     actions={
-      <InfoState.Actions>
+      <EmptyState.Actions>
         <InlineList>
           <Tag>Asssessments</Tag>
           <Tag>Guides</Tag>
@@ -115,7 +115,7 @@ storiesOf('InfoState/actions', module).add('with tags', _ => (
           <Tag>Projects</Tag>
           <Tag>Video Courses</Tag>
         </InlineList>
-      </InfoState.Actions>
+      </EmptyState.Actions>
     }
   />
 ))

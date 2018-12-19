@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots InfoState combo 1`] = `
+exports[`Storyshots EmptyState combo 1`] = `
 <div
   data-css-1c5xqrv=""
 >
@@ -81,7 +81,7 @@ exports[`Storyshots InfoState combo 1`] = `
 </div>
 `;
 
-exports[`Storyshots InfoState/actions with an input 1`] = `
+exports[`Storyshots EmptyState/actions with an input 1`] = `
 <div
   data-css-1c5xqrv=""
 >
@@ -186,7 +186,7 @@ exports[`Storyshots InfoState/actions with an input 1`] = `
 </div>
 `;
 
-exports[`Storyshots InfoState/actions with buttons 1`] = `
+exports[`Storyshots EmptyState/actions with buttons 1`] = `
 <div
   data-css-1c5xqrv=""
 >
@@ -386,7 +386,7 @@ exports[`Storyshots InfoState/actions with buttons 1`] = `
 </div>
 `;
 
-exports[`Storyshots InfoState/actions with tags 1`] = `
+exports[`Storyshots EmptyState/actions with tags 1`] = `
 <div
   data-css-1c5xqrv=""
 >
@@ -598,7 +598,7 @@ exports[`Storyshots InfoState/actions with tags 1`] = `
 </div>
 `;
 
-exports[`Storyshots InfoState/illustrations channel 1`] = `
+exports[`Storyshots EmptyState/illustrations channel 1`] = `
 <div
   data-css-1c5xqrv=""
 >
@@ -637,7 +637,7 @@ exports[`Storyshots InfoState/illustrations channel 1`] = `
 </div>
 `;
 
-exports[`Storyshots InfoState/illustrations search 1`] = `
+exports[`Storyshots EmptyState/illustrations search 1`] = `
 <div
   data-css-1c5xqrv=""
 >
@@ -700,7 +700,7 @@ exports[`Storyshots InfoState/illustrations search 1`] = `
 </div>
 `;
 
-exports[`Storyshots InfoState/sizes large 1`] = `
+exports[`Storyshots EmptyState/sizes large 1`] = `
 <div
   data-css-6j3oy=""
 >
@@ -781,7 +781,7 @@ exports[`Storyshots InfoState/sizes large 1`] = `
 </div>
 `;
 
-exports[`Storyshots InfoState/sizes small 1`] = `
+exports[`Storyshots EmptyState/sizes small 1`] = `
 <div
   data-css-1ax7v4c=""
 >

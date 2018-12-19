@@ -1,7 +1,7 @@
 {
-  "name": "@pluralsight/ps-design-system-infostate",
+  "name": "@pluralsight/ps-design-system-emptystate",
   "version": "1.0.0",
-  "description": "InfoState UI Component for the Pluralsight Design System",
+  "description": "EmptyState UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "main": "index.js",

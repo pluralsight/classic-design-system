@@ -43,11 +43,12 @@ const combineClasses = (className, { size, themeName }) => {
 }
 
 const styles = {
-  infoState: (_, ctx) => combineClasses('.psds-infostate', ctx),
-  actions: (props, ctx) => combineClasses('.psds-infostate__actions', ctx),
-  caption: (props, ctx) => combineClasses('.psds-infostate__caption', ctx),
-  heading: (props, ctx) => combineClasses('.psds-infostate__heading', ctx),
-  illustration: (_, ctx) => combineClasses('.psds-infostate__illustration', ctx)
+  emptyState: (_, ctx) => combineClasses('.psds-emptystate', ctx),
+  actions: (props, ctx) => combineClasses('.psds-emptystate__actions', ctx),
+  caption: (props, ctx) => combineClasses('.psds-emptystate__caption', ctx),
+  heading: (props, ctx) => combineClasses('.psds-emptystate__heading', ctx),
+  illustration: (_, ctx) =>
+    combineClasses('.psds-emptystate__illustration', ctx)
 }
 
 const Actions = props => (
@@ -110,12 +111,12 @@ Illustration.propTypes = {
   name: PropTypes.oneOf(Object.values(Illustration.names))
 }
 
-const InfoState = withTheme(({ size, themeName, ...props }) => {
+const EmptyState = withTheme(({ size, themeName, ...props }) => {
   const ctx = { size, themeName }
 
   return (
     <Context.Provider value={ctx}>
-      <div {...styles.infoState(props, ctx)} {...filterReactProps(props)}>
+      <div {...styles.emptyState(props, ctx)} {...filterReactProps(props)}>
         {props.illustration}
         {props.heading}
         {props.caption}
@@ -125,27 +126,27 @@ const InfoState = withTheme(({ size, themeName, ...props }) => {
   )
 })
 
-InfoState.sizes = vars.sizes
+EmptyState.sizes = vars.sizes
 
-InfoState.propTypes = {
+EmptyState.propTypes = {
   actions: elementOfType(Actions),
   caption: elementOfType(Caption),
   heading: elementOfType(Heading).isRequired,
   illustration: elementOfType(Illustration),
-  size: PropTypes.oneOf(Object.values(InfoState.sizes)),
+  size: PropTypes.oneOf(Object.values(EmptyState.sizes)),
   themeName: PropTypes.oneOf(Object.values(themeNames))
 }
 
-InfoState.Actions = Actions
-InfoState.Actions.displayName = 'InfoState.Actions'
+EmptyState.Actions = Actions
+EmptyState.Actions.displayName = 'EmptyState.Actions'
 
-InfoState.Caption = Caption
-InfoState.Caption.displayName = 'InfoState.Caption'
+EmptyState.Caption = Caption
+EmptyState.Caption.displayName = 'EmptyState.Caption'
 
-InfoState.Heading = Heading
-InfoState.Heading.displayName = 'InfoState.Heading'
+EmptyState.Heading = Heading
+EmptyState.Heading.displayName = 'EmptyState.Heading'
 
-InfoState.Illustration = Illustration
-InfoState.Illustration.displayName = 'InfoState.Illustration'
+EmptyState.Illustration = Illustration
+EmptyState.Illustration.displayName = 'EmptyState.Illustration'
 
-export default InfoState
+export default EmptyState
