@@ -3,14 +3,13 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
 import css from '../css'
 import { toPercentageString } from '../js'
 import * as vars from '../vars'
-
-import elementOfType from './element-of-type'
 
 const formatImageWidth = ({ image, size }) =>
   image && size !== vars.sizes.small
