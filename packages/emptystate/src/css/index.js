@@ -20,13 +20,8 @@ export default {
   '.psds-emptystate': {
     margin: '0 auto',
     padding: `${core.layout.spacingXLarge} ${core.layout.spacingLarge}`,
-    textAlign: 'center'
-  },
-  ['.psds-emptystate' + sizeClasses.small]: {
-    maxWidth: 640
-  },
-  ['.psds-emptystate' + sizeClasses.large]: {
-    maxWidth: 1000
+    textAlign: 'center',
+    maxWidth: 500
   },
   ['.psds-emptystate' + themeClasses[themeDefaultName]]: {
     color: core.colors.white
