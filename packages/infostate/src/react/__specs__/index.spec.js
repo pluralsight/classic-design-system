@@ -3,6 +3,7 @@ import { render } from 'react-testing-library'
 import { axe, toHaveNoViolations } from 'jest-axe'
 
 import InfoState from '..'
+import * as vars from '../../vars'
 
 expect.extend(toHaveNoViolations)
 
@@ -14,6 +15,10 @@ async function renderWithAxeResults(...args) {
 }
 
 describe('InfoState', () => {
+  it('exports sizes', () => {
+    expect(InfoState.sizes).toEqual(vars.sizes)
+  })
+
   it('exports compound components', () => {
     expect(InfoState.Actions).toExist()
     expect(InfoState.Caption).toExist()

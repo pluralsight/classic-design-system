@@ -25,7 +25,8 @@
     "@pluralsight/ps-design-system-core": "4.4.0",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.1",
     "@pluralsight/ps-design-system-prop-types": "^1.0.0",
-    "@pluralsight/ps-design-system-theme": "1.4.1"
+    "@pluralsight/ps-design-system-theme": "1.4.1",
+    "create-react-context": "^0.2.3"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "*",
@@ -35,6 +36,10 @@
   "devDependencies": {
     "@svgr/cli": "^4.0.0",
     "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-button": "*",
+    "@pluralsight/ps-design-system-icon": "*",
+    "@pluralsight/ps-design-system-tag": "*",
+    "@pluralsight/ps-design-system-textinput": "*",
     "@pluralsight/ps-design-system-storybook-addon-center": "*",
     "@pluralsight/ps-design-system-storybook-addon-theme": "*",
     "@storybook/addon-actions": "^4.0.0",

@@ -1,12 +1,610 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots InfoState/illustrations channel 1`] = `
+exports[`Storyshots InfoState combo 1`] = `
 <div
-  data-css-penpgk=""
+  data-css-1c5xqrv=""
 >
   <svg
     aria-hidden={true}
-    data-css-1h9utrb=""
+    data-css-t2ob0k=""
+    role="img"
+    viewBox="0 0 128 128"
+  >
+    <title>
+      Search
+    </title>
+    <g
+      fill="currentColor"
+      opacity={0.2}
+    >
+      <path
+        d="M73.185 48.618c2.772-2.773 1.664-8.376-2.475-12.516-4.14-4.14-9.743-5.247-12.516-2.474-2.773 2.772-1.664 8.376 2.475 12.515 4.14 4.14 9.743 5.248 12.516 2.475zM123.5 84.2H99.6l-9.8-9.8-2.8 2.8-7.9-7.9.3-.3c2.2-2.8 3.8-6 4.8-9.4l.1-.4h39.2c2.5 0 4.5 2 4.5 4.5v16c0 2.5-2 4.5-4.5 4.5zm-23.5-1h23.5c1.9 0 3.5-1.6 3.5-3.5v-16c0-1.9-1.6-3.5-3.5-3.5H84.9c-1 3.2-2.6 6.2-4.6 9l6.6 6.6 2.8-2.8L100 83.2zm-18-1.1l-7.9-7.9-.3.3c-2 1.5-4.2 2.8-6.5 3.8l-.4.1c-9.2 3.7-19.4 2.6-27.6-3l-.2-.1c-1.5-1-2.9-2.2-4.1-3.4-7.3-7.3-10.3-18-7.7-28.1l.2-.6h-23c-2.5 0-4.5 2-4.5 4.5v32c0 2.5 2 4.5 4.5 4.5H19v11.5c0 2.5 2 4.5 4.5 4.5h40c2.5 0 4.5-2 4.5-4.5V84.2h11.9l2.1-2.1zM4.5 83.2c-1.9 0-3.5-1.6-3.5-3.5v-32c0-1.9 1.6-3.5 3.5-3.5h21.6c-2.3 10.2.8 21 8.2 28.4.9.9 1.9 1.8 3 2.6H23.5c-2.5 0-4.5 2-4.5 4.5v3.5H4.5zM67 95.7c0 1.9-1.6 3.5-3.5 3.5h-40c-1.9 0-3.5-1.6-3.5-3.5v-16c0-1.9 1.6-3.5 3.5-3.5h15.1c8.4 5.7 18.9 6.9 28.4 3.2v16.3zm1-12.5v-3.5c0-.2 0-.4-.1-.6V79c2.1-.9 4.2-2.1 6-3.5l6.6 6.6-1.1 1.1H68z"
+      />
+      <path
+        d="M60 62.4c0-3.482 2.83-6.2 6.2-6.2h13.53l-.143.614c-2.145 9.191-9.598 16.439-18.991 18.277l-.596.116V62.4zm6.2-5.2c-2.83 0-5.2 2.282-5.2 5.2v11.584c8.517-1.9 15.274-8.46 17.46-16.784H66.2zM44.84 42.699c-.92-.638-2.044-.776-2.79-.701l-.025.002H34.5v-1h7.476c.92-.087 2.282.08 3.434.876 1.192.825 2.09 2.28 2.09 4.624v26h-1v-26c0-2.056-.768-3.184-1.66-3.801zM85.737 55H108a4 4 0 0 0 4-4V31a4 4 0 0 0-4-4H84a4 4 0 0 0-4 4v1.997c.347.461.68.933 1 1.414V31a3 3 0 0 1 3-3h24a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H85.852c-.033.335-.072.668-.116 1z"
+      />
+    </g>
+    <g
+      fill="none"
+    >
+      <path
+        d="M55.8 81c16.569 0 30-13.431 30-30 0-16.569-13.431-30-30-30-16.569 0-30 13.431-30 30 0 16.569 13.431 30 30 30z"
+        stroke="currentColor"
+      />
+      <path
+        d="M55.8 75c13.255 0 24-10.745 24-24s-10.745-24-24-24-24 10.745-24 24 10.745 24 24 24z"
+        stroke="currentColor"
+      />
+      <path
+        d="M89.722 73.65L78.409 84.964l4.242 4.242 11.314-11.313z"
+        fill="currentColor"
+        opacity={0.25}
+      />
+      <path
+        d="M77 72.2c-1 1-2 1.8-3 2.6l7.3 7.3 5.7-5.7-7.3-7.3c-.8 1.2-1.7 2.2-2.7 3.1z"
+        stroke="currentColor"
+      />
+      <path
+        d="M88.3 83.5l5.7-5.7L115.2 99c1.6 1.6 1.6 4.1 0 5.7l-2.8 2.8-24.1-24z"
+        fill="currentColor"
+        opacity={0.25}
+      />
+      <path
+        d="M89.722 73.65L78.409 84.964l4.242 4.242 11.314-11.313zM115.2 104.8l-5.7 5.7c-1.6 1.6-4.1 1.6-5.7 0L82.6 89.3 93.9 78l21.2 21.2c1.7 1.5 1.7 4 .1 5.6z"
+        stroke="currentColor"
+      />
+    </g>
+  </svg>
+  <h1
+    data-css-1txg7r9=""
+  >
+    Filet mignon pork chop salami shank tail.
+  </h1>
+  <div
+    data-css-pftuhz=""
+  >
+    Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork, pork loin shankle spare ribs.
+  </div>
+  <div>
+    <button
+      data-css-k922kt=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Do a Thing
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots InfoState/actions with an input 1`] = `
+<div
+  data-css-1c5xqrv=""
+>
+  <svg
+    aria-hidden={true}
+    data-css-t2ob0k=""
+    role="img"
+    viewBox="0 0 128 128"
+  >
+    <title>
+      Search
+    </title>
+    <g
+      fill="currentColor"
+      opacity={0.2}
+    >
+      <path
+        d="M73.185 48.618c2.772-2.773 1.664-8.376-2.475-12.516-4.14-4.14-9.743-5.247-12.516-2.474-2.773 2.772-1.664 8.376 2.475 12.515 4.14 4.14 9.743 5.248 12.516 2.475zM123.5 84.2H99.6l-9.8-9.8-2.8 2.8-7.9-7.9.3-.3c2.2-2.8 3.8-6 4.8-9.4l.1-.4h39.2c2.5 0 4.5 2 4.5 4.5v16c0 2.5-2 4.5-4.5 4.5zm-23.5-1h23.5c1.9 0 3.5-1.6 3.5-3.5v-16c0-1.9-1.6-3.5-3.5-3.5H84.9c-1 3.2-2.6 6.2-4.6 9l6.6 6.6 2.8-2.8L100 83.2zm-18-1.1l-7.9-7.9-.3.3c-2 1.5-4.2 2.8-6.5 3.8l-.4.1c-9.2 3.7-19.4 2.6-27.6-3l-.2-.1c-1.5-1-2.9-2.2-4.1-3.4-7.3-7.3-10.3-18-7.7-28.1l.2-.6h-23c-2.5 0-4.5 2-4.5 4.5v32c0 2.5 2 4.5 4.5 4.5H19v11.5c0 2.5 2 4.5 4.5 4.5h40c2.5 0 4.5-2 4.5-4.5V84.2h11.9l2.1-2.1zM4.5 83.2c-1.9 0-3.5-1.6-3.5-3.5v-32c0-1.9 1.6-3.5 3.5-3.5h21.6c-2.3 10.2.8 21 8.2 28.4.9.9 1.9 1.8 3 2.6H23.5c-2.5 0-4.5 2-4.5 4.5v3.5H4.5zM67 95.7c0 1.9-1.6 3.5-3.5 3.5h-40c-1.9 0-3.5-1.6-3.5-3.5v-16c0-1.9 1.6-3.5 3.5-3.5h15.1c8.4 5.7 18.9 6.9 28.4 3.2v16.3zm1-12.5v-3.5c0-.2 0-.4-.1-.6V79c2.1-.9 4.2-2.1 6-3.5l6.6 6.6-1.1 1.1H68z"
+      />
+      <path
+        d="M60 62.4c0-3.482 2.83-6.2 6.2-6.2h13.53l-.143.614c-2.145 9.191-9.598 16.439-18.991 18.277l-.596.116V62.4zm6.2-5.2c-2.83 0-5.2 2.282-5.2 5.2v11.584c8.517-1.9 15.274-8.46 17.46-16.784H66.2zM44.84 42.699c-.92-.638-2.044-.776-2.79-.701l-.025.002H34.5v-1h7.476c.92-.087 2.282.08 3.434.876 1.192.825 2.09 2.28 2.09 4.624v26h-1v-26c0-2.056-.768-3.184-1.66-3.801zM85.737 55H108a4 4 0 0 0 4-4V31a4 4 0 0 0-4-4H84a4 4 0 0 0-4 4v1.997c.347.461.68.933 1 1.414V31a3 3 0 0 1 3-3h24a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H85.852c-.033.335-.072.668-.116 1z"
+      />
+    </g>
+    <g
+      fill="none"
+    >
+      <path
+        d="M55.8 81c16.569 0 30-13.431 30-30 0-16.569-13.431-30-30-30-16.569 0-30 13.431-30 30 0 16.569 13.431 30 30 30z"
+        stroke="currentColor"
+      />
+      <path
+        d="M55.8 75c13.255 0 24-10.745 24-24s-10.745-24-24-24-24 10.745-24 24 10.745 24 24 24z"
+        stroke="currentColor"
+      />
+      <path
+        d="M89.722 73.65L78.409 84.964l4.242 4.242 11.314-11.313z"
+        fill="currentColor"
+        opacity={0.25}
+      />
+      <path
+        d="M77 72.2c-1 1-2 1.8-3 2.6l7.3 7.3 5.7-5.7-7.3-7.3c-.8 1.2-1.7 2.2-2.7 3.1z"
+        stroke="currentColor"
+      />
+      <path
+        d="M88.3 83.5l5.7-5.7L115.2 99c1.6 1.6 1.6 4.1 0 5.7l-2.8 2.8-24.1-24z"
+        fill="currentColor"
+        opacity={0.25}
+      />
+      <path
+        d="M89.722 73.65L78.409 84.964l4.242 4.242 11.314-11.313zM115.2 104.8l-5.7 5.7c-1.6 1.6-4.1 1.6-5.7 0L82.6 89.3 93.9 78l21.2 21.2c1.7 1.5 1.7 4 .1 5.6z"
+        stroke="currentColor"
+      />
+    </g>
+  </svg>
+  <h1
+    data-css-1txg7r9=""
+  >
+    Filet mignon pork chop salami shank tail.
+  </h1>
+  <div
+    data-css-pftuhz=""
+  >
+    Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork, pork loin shankle spare ribs.
+  </div>
+  <div>
+    <label
+      data-css-w0yocm=""
+    >
+      <div
+        data-css-1r967oi=""
+      >
+        <div
+          data-css-1xm24a9=""
+        >
+          <input
+            data-css-1u1pc12=""
+            disabled={false}
+            placeholder="Find Something"
+          />
+        </div>
+        <div
+          data-css-hgugth=""
+        >
+          <div
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="search icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.707 20.294L16.314 14.9C17.403 13.504 18 11.799 18 10c0-2.137-.833-4.144-2.344-5.656C14.145 2.832 12.137 2 10 2c-2.137 0-4.146.832-5.656 2.344C2.832 5.856 2 7.863 2 10c0 2.137.832 4.146 2.344 5.656C5.854 17.168 7.863 18 10 18c1.799 0 3.504-.596 4.9-1.685l5.393 5.393 1.414-1.414zM10 16c-1.603 0-3.109-.624-4.242-1.757C4.624 13.11 4 11.603 4 10c0-1.602.624-3.109 1.758-4.242C6.891 4.624 8.397 4 10 4c1.602 0 3.109.624 4.242 1.758C15.376 6.891 16 8.398 16 10c0 1.603-.624 3.11-1.758 4.243C13.109 15.376 11.602 16 10 16z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots InfoState/actions with buttons 1`] = `
+<div
+  data-css-1c5xqrv=""
+>
+  <svg
+    aria-hidden={true}
+    data-css-t2ob0k=""
+    role="img"
+    viewBox="0 0 128 128"
+  >
+    <title>
+      Search
+    </title>
+    <g
+      fill="currentColor"
+      opacity={0.2}
+    >
+      <path
+        d="M73.185 48.618c2.772-2.773 1.664-8.376-2.475-12.516-4.14-4.14-9.743-5.247-12.516-2.474-2.773 2.772-1.664 8.376 2.475 12.515 4.14 4.14 9.743 5.248 12.516 2.475zM123.5 84.2H99.6l-9.8-9.8-2.8 2.8-7.9-7.9.3-.3c2.2-2.8 3.8-6 4.8-9.4l.1-.4h39.2c2.5 0 4.5 2 4.5 4.5v16c0 2.5-2 4.5-4.5 4.5zm-23.5-1h23.5c1.9 0 3.5-1.6 3.5-3.5v-16c0-1.9-1.6-3.5-3.5-3.5H84.9c-1 3.2-2.6 6.2-4.6 9l6.6 6.6 2.8-2.8L100 83.2zm-18-1.1l-7.9-7.9-.3.3c-2 1.5-4.2 2.8-6.5 3.8l-.4.1c-9.2 3.7-19.4 2.6-27.6-3l-.2-.1c-1.5-1-2.9-2.2-4.1-3.4-7.3-7.3-10.3-18-7.7-28.1l.2-.6h-23c-2.5 0-4.5 2-4.5 4.5v32c0 2.5 2 4.5 4.5 4.5H19v11.5c0 2.5 2 4.5 4.5 4.5h40c2.5 0 4.5-2 4.5-4.5V84.2h11.9l2.1-2.1zM4.5 83.2c-1.9 0-3.5-1.6-3.5-3.5v-32c0-1.9 1.6-3.5 3.5-3.5h21.6c-2.3 10.2.8 21 8.2 28.4.9.9 1.9 1.8 3 2.6H23.5c-2.5 0-4.5 2-4.5 4.5v3.5H4.5zM67 95.7c0 1.9-1.6 3.5-3.5 3.5h-40c-1.9 0-3.5-1.6-3.5-3.5v-16c0-1.9 1.6-3.5 3.5-3.5h15.1c8.4 5.7 18.9 6.9 28.4 3.2v16.3zm1-12.5v-3.5c0-.2 0-.4-.1-.6V79c2.1-.9 4.2-2.1 6-3.5l6.6 6.6-1.1 1.1H68z"
+      />
+      <path
+        d="M60 62.4c0-3.482 2.83-6.2 6.2-6.2h13.53l-.143.614c-2.145 9.191-9.598 16.439-18.991 18.277l-.596.116V62.4zm6.2-5.2c-2.83 0-5.2 2.282-5.2 5.2v11.584c8.517-1.9 15.274-8.46 17.46-16.784H66.2zM44.84 42.699c-.92-.638-2.044-.776-2.79-.701l-.025.002H34.5v-1h7.476c.92-.087 2.282.08 3.434.876 1.192.825 2.09 2.28 2.09 4.624v26h-1v-26c0-2.056-.768-3.184-1.66-3.801zM85.737 55H108a4 4 0 0 0 4-4V31a4 4 0 0 0-4-4H84a4 4 0 0 0-4 4v1.997c.347.461.68.933 1 1.414V31a3 3 0 0 1 3-3h24a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H85.852c-.033.335-.072.668-.116 1z"
+      />
+    </g>
+    <g
+      fill="none"
+    >
+      <path
+        d="M55.8 81c16.569 0 30-13.431 30-30 0-16.569-13.431-30-30-30-16.569 0-30 13.431-30 30 0 16.569 13.431 30 30 30z"
+        stroke="currentColor"
+      />
+      <path
+        d="M55.8 75c13.255 0 24-10.745 24-24s-10.745-24-24-24-24 10.745-24 24 10.745 24 24 24z"
+        stroke="currentColor"
+      />
+      <path
+        d="M89.722 73.65L78.409 84.964l4.242 4.242 11.314-11.313z"
+        fill="currentColor"
+        opacity={0.25}
+      />
+      <path
+        d="M77 72.2c-1 1-2 1.8-3 2.6l7.3 7.3 5.7-5.7-7.3-7.3c-.8 1.2-1.7 2.2-2.7 3.1z"
+        stroke="currentColor"
+      />
+      <path
+        d="M88.3 83.5l5.7-5.7L115.2 99c1.6 1.6 1.6 4.1 0 5.7l-2.8 2.8-24.1-24z"
+        fill="currentColor"
+        opacity={0.25}
+      />
+      <path
+        d="M89.722 73.65L78.409 84.964l4.242 4.242 11.314-11.313zM115.2 104.8l-5.7 5.7c-1.6 1.6-4.1 1.6-5.7 0L82.6 89.3 93.9 78l21.2 21.2c1.7 1.5 1.7 4 .1 5.6z"
+        stroke="currentColor"
+      />
+    </g>
+  </svg>
+  <h1
+    data-css-1txg7r9=""
+  >
+    Filet mignon pork chop salami shank tail.
+  </h1>
+  <div
+    data-css-pftuhz=""
+  >
+    Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork, pork loin shankle spare ribs.
+  </div>
+  <div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "margin": "0 5px 12px",
+          }
+        }
+      >
+        <button
+          data-css-r0o8hq=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            data-css-15b13by=""
+          >
+            Asssessments
+          </span>
+        </button>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "margin": "0 5px 12px",
+          }
+        }
+      >
+        <button
+          data-css-r0o8hq=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            data-css-15b13by=""
+          >
+            Guides
+          </span>
+        </button>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "margin": "0 5px 12px",
+          }
+        }
+      >
+        <button
+          data-css-r0o8hq=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            data-css-15b13by=""
+          >
+            Interactive Courses
+          </span>
+        </button>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "margin": "0 5px 12px",
+          }
+        }
+      >
+        <button
+          data-css-r0o8hq=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            data-css-15b13by=""
+          >
+            Paths
+          </span>
+        </button>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "margin": "0 5px 12px",
+          }
+        }
+      >
+        <button
+          data-css-r0o8hq=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            data-css-15b13by=""
+          >
+            Projects
+          </span>
+        </button>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "margin": "0 5px 12px",
+          }
+        }
+      >
+        <button
+          data-css-r0o8hq=""
+          disabled={false}
+          style={Object {}}
+        >
+          <span
+            data-css-15b13by=""
+          >
+            Video Courses
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots InfoState/actions with tags 1`] = `
+<div
+  data-css-1c5xqrv=""
+>
+  <svg
+    aria-hidden={true}
+    data-css-t2ob0k=""
+    role="img"
+    viewBox="0 0 128 128"
+  >
+    <title>
+      Search
+    </title>
+    <g
+      fill="currentColor"
+      opacity={0.2}
+    >
+      <path
+        d="M73.185 48.618c2.772-2.773 1.664-8.376-2.475-12.516-4.14-4.14-9.743-5.247-12.516-2.474-2.773 2.772-1.664 8.376 2.475 12.515 4.14 4.14 9.743 5.248 12.516 2.475zM123.5 84.2H99.6l-9.8-9.8-2.8 2.8-7.9-7.9.3-.3c2.2-2.8 3.8-6 4.8-9.4l.1-.4h39.2c2.5 0 4.5 2 4.5 4.5v16c0 2.5-2 4.5-4.5 4.5zm-23.5-1h23.5c1.9 0 3.5-1.6 3.5-3.5v-16c0-1.9-1.6-3.5-3.5-3.5H84.9c-1 3.2-2.6 6.2-4.6 9l6.6 6.6 2.8-2.8L100 83.2zm-18-1.1l-7.9-7.9-.3.3c-2 1.5-4.2 2.8-6.5 3.8l-.4.1c-9.2 3.7-19.4 2.6-27.6-3l-.2-.1c-1.5-1-2.9-2.2-4.1-3.4-7.3-7.3-10.3-18-7.7-28.1l.2-.6h-23c-2.5 0-4.5 2-4.5 4.5v32c0 2.5 2 4.5 4.5 4.5H19v11.5c0 2.5 2 4.5 4.5 4.5h40c2.5 0 4.5-2 4.5-4.5V84.2h11.9l2.1-2.1zM4.5 83.2c-1.9 0-3.5-1.6-3.5-3.5v-32c0-1.9 1.6-3.5 3.5-3.5h21.6c-2.3 10.2.8 21 8.2 28.4.9.9 1.9 1.8 3 2.6H23.5c-2.5 0-4.5 2-4.5 4.5v3.5H4.5zM67 95.7c0 1.9-1.6 3.5-3.5 3.5h-40c-1.9 0-3.5-1.6-3.5-3.5v-16c0-1.9 1.6-3.5 3.5-3.5h15.1c8.4 5.7 18.9 6.9 28.4 3.2v16.3zm1-12.5v-3.5c0-.2 0-.4-.1-.6V79c2.1-.9 4.2-2.1 6-3.5l6.6 6.6-1.1 1.1H68z"
+      />
+      <path
+        d="M60 62.4c0-3.482 2.83-6.2 6.2-6.2h13.53l-.143.614c-2.145 9.191-9.598 16.439-18.991 18.277l-.596.116V62.4zm6.2-5.2c-2.83 0-5.2 2.282-5.2 5.2v11.584c8.517-1.9 15.274-8.46 17.46-16.784H66.2zM44.84 42.699c-.92-.638-2.044-.776-2.79-.701l-.025.002H34.5v-1h7.476c.92-.087 2.282.08 3.434.876 1.192.825 2.09 2.28 2.09 4.624v26h-1v-26c0-2.056-.768-3.184-1.66-3.801zM85.737 55H108a4 4 0 0 0 4-4V31a4 4 0 0 0-4-4H84a4 4 0 0 0-4 4v1.997c.347.461.68.933 1 1.414V31a3 3 0 0 1 3-3h24a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H85.852c-.033.335-.072.668-.116 1z"
+      />
+    </g>
+    <g
+      fill="none"
+    >
+      <path
+        d="M55.8 81c16.569 0 30-13.431 30-30 0-16.569-13.431-30-30-30-16.569 0-30 13.431-30 30 0 16.569 13.431 30 30 30z"
+        stroke="currentColor"
+      />
+      <path
+        d="M55.8 75c13.255 0 24-10.745 24-24s-10.745-24-24-24-24 10.745-24 24 10.745 24 24 24z"
+        stroke="currentColor"
+      />
+      <path
+        d="M89.722 73.65L78.409 84.964l4.242 4.242 11.314-11.313z"
+        fill="currentColor"
+        opacity={0.25}
+      />
+      <path
+        d="M77 72.2c-1 1-2 1.8-3 2.6l7.3 7.3 5.7-5.7-7.3-7.3c-.8 1.2-1.7 2.2-2.7 3.1z"
+        stroke="currentColor"
+      />
+      <path
+        d="M88.3 83.5l5.7-5.7L115.2 99c1.6 1.6 1.6 4.1 0 5.7l-2.8 2.8-24.1-24z"
+        fill="currentColor"
+        opacity={0.25}
+      />
+      <path
+        d="M89.722 73.65L78.409 84.964l4.242 4.242 11.314-11.313zM115.2 104.8l-5.7 5.7c-1.6 1.6-4.1 1.6-5.7 0L82.6 89.3 93.9 78l21.2 21.2c1.7 1.5 1.7 4 .1 5.6z"
+        stroke="currentColor"
+      />
+    </g>
+  </svg>
+  <h1
+    data-css-1txg7r9=""
+  >
+    Filet mignon pork chop salami shank tail.
+  </h1>
+  <div
+    data-css-pftuhz=""
+  >
+    Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork, pork loin shankle spare ribs.
+  </div>
+  <div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "margin": "0 5px 12px",
+          }
+        }
+      >
+        <div
+          data-css-480533=""
+        >
+          <div
+            data-css-1n5vxb9=""
+          >
+            <span
+              data-css-1997kh1=""
+            >
+              Asssessments
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "margin": "0 5px 12px",
+          }
+        }
+      >
+        <div
+          data-css-480533=""
+        >
+          <div
+            data-css-1n5vxb9=""
+          >
+            <span
+              data-css-1997kh1=""
+            >
+              Guides
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "margin": "0 5px 12px",
+          }
+        }
+      >
+        <div
+          data-css-480533=""
+        >
+          <div
+            data-css-1n5vxb9=""
+          >
+            <span
+              data-css-1997kh1=""
+            >
+              Interactive Courses
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "margin": "0 5px 12px",
+          }
+        }
+      >
+        <div
+          data-css-480533=""
+        >
+          <div
+            data-css-1n5vxb9=""
+          >
+            <span
+              data-css-1997kh1=""
+            >
+              Paths
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "margin": "0 5px 12px",
+          }
+        }
+      >
+        <div
+          data-css-480533=""
+        >
+          <div
+            data-css-1n5vxb9=""
+          >
+            <span
+              data-css-1997kh1=""
+            >
+              Projects
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "inline-flex",
+            "margin": "0 5px 12px",
+          }
+        }
+      >
+        <div
+          data-css-480533=""
+        >
+          <div
+            data-css-1n5vxb9=""
+          >
+            <span
+              data-css-1997kh1=""
+            >
+              Video Courses
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots InfoState/illustrations channel 1`] = `
+<div
+  data-css-1c5xqrv=""
+>
+  <svg
+    aria-hidden={true}
+    data-css-t2ob0k=""
     role="img"
     viewBox="0 0 128 128"
   >
@@ -31,7 +629,9 @@ exports[`Storyshots InfoState/illustrations channel 1`] = `
       />
     </g>
   </svg>
-  <h1>
+  <h1
+    data-css-1txg7r9=""
+  >
     channel
   </h1>
 </div>
@@ -39,7 +639,70 @@ exports[`Storyshots InfoState/illustrations channel 1`] = `
 
 exports[`Storyshots InfoState/illustrations search 1`] = `
 <div
-  data-css-penpgk=""
+  data-css-1c5xqrv=""
+>
+  <svg
+    aria-hidden={true}
+    data-css-t2ob0k=""
+    role="img"
+    viewBox="0 0 128 128"
+  >
+    <title>
+      Search
+    </title>
+    <g
+      fill="currentColor"
+      opacity={0.2}
+    >
+      <path
+        d="M73.185 48.618c2.772-2.773 1.664-8.376-2.475-12.516-4.14-4.14-9.743-5.247-12.516-2.474-2.773 2.772-1.664 8.376 2.475 12.515 4.14 4.14 9.743 5.248 12.516 2.475zM123.5 84.2H99.6l-9.8-9.8-2.8 2.8-7.9-7.9.3-.3c2.2-2.8 3.8-6 4.8-9.4l.1-.4h39.2c2.5 0 4.5 2 4.5 4.5v16c0 2.5-2 4.5-4.5 4.5zm-23.5-1h23.5c1.9 0 3.5-1.6 3.5-3.5v-16c0-1.9-1.6-3.5-3.5-3.5H84.9c-1 3.2-2.6 6.2-4.6 9l6.6 6.6 2.8-2.8L100 83.2zm-18-1.1l-7.9-7.9-.3.3c-2 1.5-4.2 2.8-6.5 3.8l-.4.1c-9.2 3.7-19.4 2.6-27.6-3l-.2-.1c-1.5-1-2.9-2.2-4.1-3.4-7.3-7.3-10.3-18-7.7-28.1l.2-.6h-23c-2.5 0-4.5 2-4.5 4.5v32c0 2.5 2 4.5 4.5 4.5H19v11.5c0 2.5 2 4.5 4.5 4.5h40c2.5 0 4.5-2 4.5-4.5V84.2h11.9l2.1-2.1zM4.5 83.2c-1.9 0-3.5-1.6-3.5-3.5v-32c0-1.9 1.6-3.5 3.5-3.5h21.6c-2.3 10.2.8 21 8.2 28.4.9.9 1.9 1.8 3 2.6H23.5c-2.5 0-4.5 2-4.5 4.5v3.5H4.5zM67 95.7c0 1.9-1.6 3.5-3.5 3.5h-40c-1.9 0-3.5-1.6-3.5-3.5v-16c0-1.9 1.6-3.5 3.5-3.5h15.1c8.4 5.7 18.9 6.9 28.4 3.2v16.3zm1-12.5v-3.5c0-.2 0-.4-.1-.6V79c2.1-.9 4.2-2.1 6-3.5l6.6 6.6-1.1 1.1H68z"
+      />
+      <path
+        d="M60 62.4c0-3.482 2.83-6.2 6.2-6.2h13.53l-.143.614c-2.145 9.191-9.598 16.439-18.991 18.277l-.596.116V62.4zm6.2-5.2c-2.83 0-5.2 2.282-5.2 5.2v11.584c8.517-1.9 15.274-8.46 17.46-16.784H66.2zM44.84 42.699c-.92-.638-2.044-.776-2.79-.701l-.025.002H34.5v-1h7.476c.92-.087 2.282.08 3.434.876 1.192.825 2.09 2.28 2.09 4.624v26h-1v-26c0-2.056-.768-3.184-1.66-3.801zM85.737 55H108a4 4 0 0 0 4-4V31a4 4 0 0 0-4-4H84a4 4 0 0 0-4 4v1.997c.347.461.68.933 1 1.414V31a3 3 0 0 1 3-3h24a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H85.852c-.033.335-.072.668-.116 1z"
+      />
+    </g>
+    <g
+      fill="none"
+    >
+      <path
+        d="M55.8 81c16.569 0 30-13.431 30-30 0-16.569-13.431-30-30-30-16.569 0-30 13.431-30 30 0 16.569 13.431 30 30 30z"
+        stroke="currentColor"
+      />
+      <path
+        d="M55.8 75c13.255 0 24-10.745 24-24s-10.745-24-24-24-24 10.745-24 24 10.745 24 24 24z"
+        stroke="currentColor"
+      />
+      <path
+        d="M89.722 73.65L78.409 84.964l4.242 4.242 11.314-11.313z"
+        fill="currentColor"
+        opacity={0.25}
+      />
+      <path
+        d="M77 72.2c-1 1-2 1.8-3 2.6l7.3 7.3 5.7-5.7-7.3-7.3c-.8 1.2-1.7 2.2-2.7 3.1z"
+        stroke="currentColor"
+      />
+      <path
+        d="M88.3 83.5l5.7-5.7L115.2 99c1.6 1.6 1.6 4.1 0 5.7l-2.8 2.8-24.1-24z"
+        fill="currentColor"
+        opacity={0.25}
+      />
+      <path
+        d="M89.722 73.65L78.409 84.964l4.242 4.242 11.314-11.313zM115.2 104.8l-5.7 5.7c-1.6 1.6-4.1 1.6-5.7 0L82.6 89.3 93.9 78l21.2 21.2c1.7 1.5 1.7 4 .1 5.6z"
+        stroke="currentColor"
+      />
+    </g>
+  </svg>
+  <h1
+    data-css-1txg7r9=""
+  >
+    search
+  </h1>
+</div>
+`;
+
+exports[`Storyshots InfoState/sizes large 1`] = `
+<div
+  data-css-6j3oy=""
 >
   <svg
     aria-hidden={true}
@@ -92,8 +755,109 @@ exports[`Storyshots InfoState/illustrations search 1`] = `
       />
     </g>
   </svg>
-  <h1>
-    search
+  <h1
+    data-css-1fgasuu=""
+  >
+    Filet mignon pork chop salami shank tail.
   </h1>
+  <div
+    data-css-pftuhz=""
+  >
+    Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork, pork loin shankle spare ribs.
+  </div>
+  <div>
+    <button
+      data-css-k922kt=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Do a Thing
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots InfoState/sizes small 1`] = `
+<div
+  data-css-1ax7v4c=""
+>
+  <svg
+    aria-hidden={true}
+    data-css-m38e7a=""
+    role="img"
+    viewBox="0 0 128 128"
+  >
+    <title>
+      Search
+    </title>
+    <g
+      fill="currentColor"
+      opacity={0.2}
+    >
+      <path
+        d="M73.185 48.618c2.772-2.773 1.664-8.376-2.475-12.516-4.14-4.14-9.743-5.247-12.516-2.474-2.773 2.772-1.664 8.376 2.475 12.515 4.14 4.14 9.743 5.248 12.516 2.475zM123.5 84.2H99.6l-9.8-9.8-2.8 2.8-7.9-7.9.3-.3c2.2-2.8 3.8-6 4.8-9.4l.1-.4h39.2c2.5 0 4.5 2 4.5 4.5v16c0 2.5-2 4.5-4.5 4.5zm-23.5-1h23.5c1.9 0 3.5-1.6 3.5-3.5v-16c0-1.9-1.6-3.5-3.5-3.5H84.9c-1 3.2-2.6 6.2-4.6 9l6.6 6.6 2.8-2.8L100 83.2zm-18-1.1l-7.9-7.9-.3.3c-2 1.5-4.2 2.8-6.5 3.8l-.4.1c-9.2 3.7-19.4 2.6-27.6-3l-.2-.1c-1.5-1-2.9-2.2-4.1-3.4-7.3-7.3-10.3-18-7.7-28.1l.2-.6h-23c-2.5 0-4.5 2-4.5 4.5v32c0 2.5 2 4.5 4.5 4.5H19v11.5c0 2.5 2 4.5 4.5 4.5h40c2.5 0 4.5-2 4.5-4.5V84.2h11.9l2.1-2.1zM4.5 83.2c-1.9 0-3.5-1.6-3.5-3.5v-32c0-1.9 1.6-3.5 3.5-3.5h21.6c-2.3 10.2.8 21 8.2 28.4.9.9 1.9 1.8 3 2.6H23.5c-2.5 0-4.5 2-4.5 4.5v3.5H4.5zM67 95.7c0 1.9-1.6 3.5-3.5 3.5h-40c-1.9 0-3.5-1.6-3.5-3.5v-16c0-1.9 1.6-3.5 3.5-3.5h15.1c8.4 5.7 18.9 6.9 28.4 3.2v16.3zm1-12.5v-3.5c0-.2 0-.4-.1-.6V79c2.1-.9 4.2-2.1 6-3.5l6.6 6.6-1.1 1.1H68z"
+      />
+      <path
+        d="M60 62.4c0-3.482 2.83-6.2 6.2-6.2h13.53l-.143.614c-2.145 9.191-9.598 16.439-18.991 18.277l-.596.116V62.4zm6.2-5.2c-2.83 0-5.2 2.282-5.2 5.2v11.584c8.517-1.9 15.274-8.46 17.46-16.784H66.2zM44.84 42.699c-.92-.638-2.044-.776-2.79-.701l-.025.002H34.5v-1h7.476c.92-.087 2.282.08 3.434.876 1.192.825 2.09 2.28 2.09 4.624v26h-1v-26c0-2.056-.768-3.184-1.66-3.801zM85.737 55H108a4 4 0 0 0 4-4V31a4 4 0 0 0-4-4H84a4 4 0 0 0-4 4v1.997c.347.461.68.933 1 1.414V31a3 3 0 0 1 3-3h24a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H85.852c-.033.335-.072.668-.116 1z"
+      />
+    </g>
+    <g
+      fill="none"
+    >
+      <path
+        d="M55.8 81c16.569 0 30-13.431 30-30 0-16.569-13.431-30-30-30-16.569 0-30 13.431-30 30 0 16.569 13.431 30 30 30z"
+        stroke="currentColor"
+      />
+      <path
+        d="M55.8 75c13.255 0 24-10.745 24-24s-10.745-24-24-24-24 10.745-24 24 10.745 24 24 24z"
+        stroke="currentColor"
+      />
+      <path
+        d="M89.722 73.65L78.409 84.964l4.242 4.242 11.314-11.313z"
+        fill="currentColor"
+        opacity={0.25}
+      />
+      <path
+        d="M77 72.2c-1 1-2 1.8-3 2.6l7.3 7.3 5.7-5.7-7.3-7.3c-.8 1.2-1.7 2.2-2.7 3.1z"
+        stroke="currentColor"
+      />
+      <path
+        d="M88.3 83.5l5.7-5.7L115.2 99c1.6 1.6 1.6 4.1 0 5.7l-2.8 2.8-24.1-24z"
+        fill="currentColor"
+        opacity={0.25}
+      />
+      <path
+        d="M89.722 73.65L78.409 84.964l4.242 4.242 11.314-11.313zM115.2 104.8l-5.7 5.7c-1.6 1.6-4.1 1.6-5.7 0L82.6 89.3 93.9 78l21.2 21.2c1.7 1.5 1.7 4 .1 5.6z"
+        stroke="currentColor"
+      />
+    </g>
+  </svg>
+  <h1
+    data-css-6xmt0a=""
+  >
+    Filet mignon pork chop salami shank tail.
+  </h1>
+  <div
+    data-css-pftuhz=""
+  >
+    Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork, pork loin shankle spare ribs.
+  </div>
+  <div>
+    <button
+      data-css-k922kt=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Do a Thing
+      </span>
+    </button>
+  </div>
 </div>
 `;

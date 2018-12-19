@@ -8,3 +8,8 @@ export const illustrationNames = Object.keys(illustrations).reduce(
   },
   {}
 )
+
+export const sizes = {
+  small: 'small',
+  large: 'large'
+}
