@@ -67,7 +67,9 @@ export default {
   },
 
   // __illustration
-  '.psds-emptystate__illustration': {},
+  '.psds-emptystate__illustration': {
+    display: 'inline-block'
+  },
   ['.psds-emptystate__illustration' + sizeClasses.small]: {
     width: 64,
     height: 64

@@ -93,15 +93,24 @@ Heading.propTypes = {
 
 const IllustrationNotFound = () => null
 const Illustration = props => {
-  const Comp = illustrations[props.name] || IllustrationNotFound
+  const isCustom = !!props.children
+
   return (
     <Context.Consumer>
-      {ctx => (
-        <Comp
-          {...styles.illustration(props, ctx)}
-          {...filterReactProps(props, { tagName: 'svg' })}
-        />
-      )}
+      {ctx => {
+        const styleAttrs = styles.illustration(props, ctx)
+
+        if (isCustom)
+          return <div {...styleAttrs} {...filterReactProps(props)} />
+
+        const Comp = illustrations[props.name] || IllustrationNotFound
+        return (
+          <Comp
+            {...styleAttrs}
+            {...filterReactProps(props, { tagName: 'svg' })}
+          />
+        )
+      }}
     </Context.Consumer>
   )
 }

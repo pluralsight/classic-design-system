@@ -6,7 +6,7 @@ exports[`Storyshots EmptyState combo 1`] = `
 >
   <svg
     aria-hidden={true}
-    data-css-t2ob0k=""
+    data-css-181v3nd=""
     role="img"
     viewBox="0 0 128 128"
   >
@@ -87,7 +87,7 @@ exports[`Storyshots EmptyState/actions with an input 1`] = `
 >
   <svg
     aria-hidden={true}
-    data-css-t2ob0k=""
+    data-css-181v3nd=""
     role="img"
     viewBox="0 0 128 128"
   >
@@ -192,7 +192,7 @@ exports[`Storyshots EmptyState/actions with buttons 1`] = `
 >
   <svg
     aria-hidden={true}
-    data-css-t2ob0k=""
+    data-css-181v3nd=""
     role="img"
     viewBox="0 0 128 128"
   >
@@ -392,7 +392,7 @@ exports[`Storyshots EmptyState/actions with tags 1`] = `
 >
   <svg
     aria-hidden={true}
-    data-css-t2ob0k=""
+    data-css-181v3nd=""
     role="img"
     viewBox="0 0 128 128"
   >
@@ -604,7 +604,7 @@ exports[`Storyshots EmptyState/illustrations channel 1`] = `
 >
   <svg
     aria-hidden={true}
-    data-css-t2ob0k=""
+    data-css-181v3nd=""
     role="img"
     viewBox="0 0 128 128"
   >
@@ -637,13 +637,39 @@ exports[`Storyshots EmptyState/illustrations channel 1`] = `
 </div>
 `;
 
+exports[`Storyshots EmptyState/illustrations custom 1`] = `
+<div
+  data-css-1c5xqrv=""
+>
+  <div
+    data-css-181v3nd=""
+  >
+    <svg
+      aria-hidden={true}
+      role="img"
+      viewBox="0 0 128 128"
+    >
+      <path
+        d="M44.99 43.356v-16.77L109.792 64 44.99 101.414v-16.77l-14.897 8.601v-58.49l14.897 8.601zm0 7.162l-8.695-5.02v37.003l8.695-5.02V50.518zm6.202 30.544v9.609L97.387 64 51.192 37.329v9.608l29.552 17.062-29.552 17.063zm0-7.162l17.147-9.901-17.147-9.9v19.8z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+  <h1
+    data-css-1txg7r9=""
+  >
+    Custom Illustration
+  </h1>
+</div>
+`;
+
 exports[`Storyshots EmptyState/illustrations search 1`] = `
 <div
   data-css-1c5xqrv=""
 >
   <svg
     aria-hidden={true}
-    data-css-t2ob0k=""
+    data-css-181v3nd=""
     role="img"
     viewBox="0 0 128 128"
   >
@@ -706,7 +732,7 @@ exports[`Storyshots EmptyState/sizes large 1`] = `
 >
   <svg
     aria-hidden={true}
-    data-css-1h9utrb=""
+    data-css-kloaw6=""
     role="img"
     viewBox="0 0 128 128"
   >
@@ -787,7 +813,7 @@ exports[`Storyshots EmptyState/sizes small 1`] = `
 >
   <svg
     aria-hidden={true}
-    data-css-m38e7a=""
+    data-css-g4jj3s=""
     role="img"
     viewBox="0 0 128 128"
   >
