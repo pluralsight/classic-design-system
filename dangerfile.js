@@ -34,7 +34,8 @@ void (async function main() {
   toolbox.jsConsoleCommands({ logType: 'fail' })
 
   // are new images minified
-  toolbox.imageMinified({ logType: 'fail' })
+  toolbox.imageMinifiedJpg()
+  toolbox.imageMinifiedPng()
 
   // are there skipped or focused tests
   toolbox.jsTestShortcuts({ logTypeSkipped: 'message', logTypeFocused: 'fail' })
