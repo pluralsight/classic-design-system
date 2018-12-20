@@ -9,7 +9,6 @@ import { toPercentageString } from '../js'
 
 const styles = {
   bg: ({ themeName }) =>
-    console.log('thn', themeName) ||
     glamor.css({
       ...css['.psds-linearprogress__bg'],
       ...css[`.psds-linearprogress__bg.psds-theme--${themeName}`]
