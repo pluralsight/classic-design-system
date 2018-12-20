@@ -8,6 +8,7 @@ import {
   Code,
   Chrome,
   Content,
+  Doc,
   Example,
   Link,
   P,
@@ -20,7 +21,7 @@ import {
 const EmptyStateDocumentation = withServerProps(props => (
   <Chrome>
     <Content title="Empty state">
-      <PageHeading packageName="emptystate">Empty state</PageHeading>
+      <PageHeading packageName="emptystate">Empty State</PageHeading>
       <P>
         Present an empty state when there is an opportunity to provide
         explanation of an interface in absence of data. Empty states should
@@ -30,19 +31,15 @@ const EmptyStateDocumentation = withServerProps(props => (
         situations where data is not available. For general error messages, use
         the <Link href="/components/errors">error component</Link> instead.
       </P>
-
       <br />
-
       <P>Install the component dependency:</P>
       <Code language="bash">
         npm install @pluralsight/ps-design-system-emptystate
       </Code>
-
       <P>Include a React component in your project:</P>
       <Code language="javascript">
         import EmptyState from '@pluralsight/ps-design-system-emptystate/react'
       </Code>
-
       <PropTypes
         props={{
           EmptyState: [
@@ -86,10 +83,8 @@ const EmptyStateDocumentation = withServerProps(props => (
           ]
         }}
       />
-
       <SectionHeading>In-app example</SectionHeading>
       <P>Default full page empty state</P>
-
       <Example.React
         includes={{ Button, EmptyState }}
         orient="vertical"
@@ -98,11 +93,11 @@ const EmptyStateDocumentation = withServerProps(props => (
           `
 <EmptyState
   heading={
-    <EmptyState.Heading>Red hair crookshanks bludger Marauder’s Map Prongs</EmptyState.Heading>
+    <EmptyState.Heading>Alohamora wand elf parchment</EmptyState.Heading>
   }
   caption={
     <EmptyState.Caption>
-      Honeydukes inferi Wormtail. Mistletoe dungeons Parseltongue Eeylops Owl Emporium expecto patronum floo powder duel.
+      Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed. Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.
     </EmptyState.Caption>
   }
   illustration={<EmptyState.Illustration name={EmptyState.Illustration.names.search} />}
@@ -115,13 +110,11 @@ const EmptyStateDocumentation = withServerProps(props => (
         `
         ]}
       />
-
       <br />
       <P>
         Layout scales from ‘large’ to ‘small’ based on reponsive viewport width.
         OR may be set as <Text.Code>small</Text.Code>
       </P>
-
       <Example.React
         includes={{ Button, EmptyState }}
         orient="vertical"
@@ -130,11 +123,11 @@ const EmptyStateDocumentation = withServerProps(props => (
           `
 <EmptyState
   heading={
-    <EmptyState.Heading>Red hair crookshanks bludger Marauder’s Map Prongs</EmptyState.Heading>
+    <EmptyState.Heading>Alohamora wand elf parchment</EmptyState.Heading>
   }
   caption={
     <EmptyState.Caption>
-      Honeydukes inferi Wormtail. Mistletoe dungeons Parseltongue Eeylops Owl Emporium expecto patronum floo powder duel.
+      Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed. Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.
     </EmptyState.Caption>
   }
   illustration={<EmptyState.Illustration name={EmptyState.Illustration.names.search} />}
@@ -157,7 +150,16 @@ const EmptyStateDocumentation = withServerProps(props => (
         away?
       </P>
 
-      {/* TODO */}
+      <Doc>{`
+### 👉 Sample content
+If the screen is intended to be populated with content by a user, consider suggesting samples or recommendations to ease the effort of getting started.
+
+### 👉 Educational content
+A single graphic and message may not be enough to convey the purpose of a feature. Consider animated or video walkthroughs, but keep them brief and dismissable.
+
+### 👉 Best match suggestion
+If the absence of data occurs due to a user query such as a search, consider displaying a best match instead of nothing at all.
+`}</Doc>
 
       <SectionHeading>Copy</SectionHeading>
       <P>
@@ -171,8 +173,42 @@ const EmptyStateDocumentation = withServerProps(props => (
       </P>
 
       <SectionHeading>Illustration set</SectionHeading>
-      {/* TODO */}
+      <br />
+      <Example.React
+        orient="vertical"
+        includes={{
+          IllustrationExample: () => {
+            const names = Object.values(EmptyState.Illustration.names)
 
+            return (
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: '1fr 1fr 1fr 1fr',
+                  gridGap: `1em`,
+                  paddingTop: 40
+                }}
+              >
+                {names.map(name => (
+                  <EmptyState
+                    key={name}
+                    style={{ alignSelf: 'center', margin: 0, padding: 0 }}
+                    heading={
+                      <EmptyState.Heading style={{ fontSize: 14 }}>
+                        {name}
+                      </EmptyState.Heading>
+                    }
+                    illustration={<EmptyState.Illustration name={name} />}
+                  />
+                ))}
+              </div>
+            )
+          }
+        }}
+        themeToggle
+        showCodes={false}
+        codes={[`<IllustrationExample />`]}
+      />
       <SectionHeading>Custom illustration</SectionHeading>
       <P>
         If no illustration in the standard set is found to be suitable, you may
@@ -184,32 +220,23 @@ const EmptyStateDocumentation = withServerProps(props => (
           aire your grievance
         </Link>
         , or... consider creating a custom illustration within the guidelines of
-        the predefined style. Refer to the design assets below and use
-        consistent themes and art direction which fit within the context and
-        Pluralsight brand.
+        the predefined style.
       </P>
-
-      {/* TODO */}
-      <P>
-        <Button appearance={Button.appearances.stroke}>Get Design Kit</Button>
-      </P>
-
+      {/* TODO: link to a design kit */}
       <br />
-
       <Example.React
         includes={{ EmptyState }}
         orient="vertical"
         themeToggle
         codes={[
           `
-
 <EmptyState
   heading={
-    <EmptyState.Heading>Red hair crookshanks bludger Marauder’s Map Prongs</EmptyState.Heading>
+    <EmptyState.Heading>Alohamora wand elf parchment</EmptyState.Heading>
   }
   caption={
     <EmptyState.Caption>
-      Honeydukes inferi Wormtail. Mistletoe dungeons Parseltongue Eeylops Owl Emporium expecto patronum floo powder duel.
+      Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed. Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.
     </EmptyState.Caption>
   }
   illustration={
