@@ -19,7 +19,7 @@ export default _ => (
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/@pluralsight/ps-design-system-normalize"
+      href="https://unpkg.com/@pluralsight/ps-design-system-normalize@latest/dist/index.css"
     />
   </Head>
 )

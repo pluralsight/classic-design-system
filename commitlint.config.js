@@ -12,7 +12,7 @@ module.exports = {
         applicable,
         packages
           .map(pkg => (pkg.includes(prefix) ? pkg.replace(prefix, '') : pkg))
-          .concat(['examples'])
+          .concat(['examples', 'scripts'])
       ])
   }
 }

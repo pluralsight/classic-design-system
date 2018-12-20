@@ -163,6 +163,11 @@ class NavLink extends React.Component {
     )
   }
 }
+NavLink.propTypes = {
+  children: PropTypes.node,
+  headings: PropTypes.arrayOf(PropTypes.object),
+  href: PropTypes.string
+}
 NavLink.contextTypes = {
   pathname: PropTypes.string
 }
@@ -172,7 +177,7 @@ NavLink.propTypes = {
   href: PropTypes.string
 }
 
-const LogoSvg = props => (
+const LogoSvg = _ => (
   <svg
     className="logoSvg"
     viewBox="0 0 32 32"
@@ -386,6 +391,7 @@ const SideNav = withHeadings(props => (
       <NavLink href="/components/layout" headings={props.headings}>
         Layout
       </NavLink>
+      <NavLink href="/components/linearprogress">Linear Progress</NavLink>
       <NavLink href="/components/link">Link</NavLink>
       <NavLink href="/components/radio" headings={props.headings}>
         Radio
