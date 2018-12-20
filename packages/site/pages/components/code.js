@@ -1,8 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import {
-  Code as DSCode,
-  P as DSP
-} from '@pluralsight/ps-design-system-text/react'
+import * as Text from '@pluralsight/ps-design-system-text/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -127,8 +124,10 @@ export default withServerProps(_ => (
       <P>Use when presenting code strings inline with body text.</P>
       <Example.React
         themeToggle
-        includes={{ P: DSP, Code: DSCode }}
-        codes={[`<P>The text has <Code>inline-code</Code> in the middle.</P>`]}
+        includes={{ Text: Text }}
+        codes={[
+          `<Text.P>The text has <Text.Code>inline-code</Text.Code> in the middle.</Text.P>`
+        ]}
       />
 
       <SectionHeading>Code block</SectionHeading>
@@ -146,7 +145,7 @@ export default withServerProps(_ => (
         In order to ensure proper color contrast when rendering your code
         blocks, don't use any dark background{' '}
         <Link href="/core/color">color</Link> lighter than{' '}
-        <DSCode>gray06</DSCode>.
+        <Text.Code>gray06</Text.Code>.
       </P>
       <Code language="bash">{`const what = "'s amazing"
 console.log('Design System' + what)`}</Code>
