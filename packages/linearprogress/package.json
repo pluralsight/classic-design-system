@@ -1,0 +1,50 @@
+{
+  "name": "@pluralsight/ps-design-system-linearprogress",
+  "version": "1.0.0",
+  "description": "Linear Progress UI Component for the Pluralsight Design System",
+  "license": "Apache-2.0",
+  "repository": "pluralsight/design-system",
+  "main": "index.js",
+  "module": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "run-s build:js build:css",
+    "build:css": "build-css",
+    "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build:watch": "npm run build:js -- --watch",
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "test": "../../node_modules/.bin/jest",
+    "test:updateSnapshot": "npm run test -- --updateSnapshot",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "dependencies": {
+    "@pluralsight/ps-design-system-core": "4.4.0",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.1.1",
+    "@pluralsight/ps-design-system-icon": "9.0.0",
+    "@pluralsight/ps-design-system-theme": "^1.4.1",
+    "polished": "^2.3.1",
+    "prop-types": "^15.6.2"
+  },
+  "peerDependencies": {
+    "@pluralsight/ps-design-system-normalize": "*",
+    "glamor": "^2.x.x",
+    "react": ">=0.15.0 < 17.0.0"
+  },
+  "devDependencies": {
+    "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-storybook-addon-center": "*",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "*",
+    "@storybook/addon-actions": "^4.0.0",
+    "@storybook/addon-storyshots": "^4.0.0",
+    "@storybook/addons": "^4.0.0",
+    "@storybook/react": "^4.0.0",
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "npm-run-all": "^4.1.2"
+  }
+}

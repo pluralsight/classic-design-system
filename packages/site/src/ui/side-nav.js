@@ -1,6 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
+import React from 'react'
 
 import Link from './link'
 import { withHeadings } from './content'
@@ -21,6 +22,9 @@ const Group = props => (
     `}</style>
   </div>
 )
+Group.propTypes = {
+  children: PropTypes.node
+}
 
 const GroupTitle = props => (
   <div className="groupTitle">
@@ -36,6 +40,9 @@ const GroupTitle = props => (
     `}</style>
   </div>
 )
+GroupTitle.propTypes = {
+  children: PropTypes.node
+}
 
 const InternalLinks = props =>
   Array.isArray(props.headings) && props.headings.length > 0 ? (
@@ -86,6 +93,14 @@ const InternalLinks = props =>
       `}</style>
     </div>
   ) : null
+InternalLinks.propTypes = {
+  headings: PropTypes.arrayOf(
+    PropTypes.shape({
+      href: PropTypes.string,
+      label: PropTypes.string
+    })
+  )
+}
 
 class NavLink extends React.Component {
   render() {
@@ -146,11 +161,16 @@ class NavLink extends React.Component {
     )
   }
 }
+NavLink.propTypes = {
+  children: PropTypes.node,
+  headings: PropTypes.arrayOf(PropTypes.object),
+  href: PropTypes.string
+}
 NavLink.contextTypes = {
   pathname: PropTypes.string
 }
 
-const LogoSvg = props => (
+const LogoSvg = _ => (
   <svg
     className="logoSvg"
     viewBox="0 0 32 32"
@@ -274,8 +294,11 @@ const Close = props => (
     `}</style>
   </div>
 )
+Close.propTypes = {
+  onCloseClick: PropTypes.func
+}
 
-export default withHeadings(props => (
+const SideNav = withHeadings(props => (
   <div className={`sidenav ${props.isOpen ? 'sidenavOpen' : ''}`}>
     <Close onCloseClick={props.onCloseClick} />
     <Logo />
@@ -351,6 +374,7 @@ export default withHeadings(props => (
       <NavLink href="/components/layout" headings={props.headings}>
         Layout
       </NavLink>
+      <NavLink href="/components/linearprogress">Linear Progress</NavLink>
       <NavLink href="/components/link">Link</NavLink>
       <NavLink href="/components/radio" headings={props.headings}>
         Radio
@@ -434,3 +458,9 @@ export default withHeadings(props => (
     `}</style>
   </div>
 ))
+SideNav.propTypes = {
+  headings: PropTypes.arrayOf(PropTypes.object),
+  isOpen: PropTypes.bool,
+  onCloseClick: PropTypes.func
+}
+export default SideNav
