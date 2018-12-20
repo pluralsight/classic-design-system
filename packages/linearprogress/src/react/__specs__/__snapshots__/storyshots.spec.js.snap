@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots LinearProgress animates to new values 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "minWidth": "300px",
+    }
+  }
+>
+  <div
+    data-css-3rzk8v=""
+  >
+    <div
+      data-css-inydxc=""
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "color": "#aaaaaa",
+      }
+    }
+  >
+    Value: 
+    0
+  </div>
+</div>
+`;
+
+exports[`Storyshots LinearProgress fills container 1`] = `
+<div
+  style={
+    Object {
+      "background": "rgba(0, 100, 255, 0.5)",
+      "padding": "8px",
+      "width": "200px",
+    }
+  }
+>
+  <div
+    data-css-3rzk8v=""
+  >
+    <div
+      data-css-o5chp9=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots LinearProgress min width, no val 1`] = `
+<div
+  data-css-3rzk8v=""
+>
+  <div
+    data-css-inydxc=""
+  />
+</div>
+`;
+
+exports[`Storyshots LinearProgress value, 0% 1`] = `
+<div
+  data-css-3rzk8v=""
+>
+  <div
+    data-css-inydxc=""
+  />
+</div>
+`;
+
+exports[`Storyshots LinearProgress value, 33% 1`] = `
+<div
+  data-css-3rzk8v=""
+>
+  <div
+    data-css-1bc6cih=""
+  />
+</div>
+`;
+
+exports[`Storyshots LinearProgress value, 50% 1`] = `
+<div
+  data-css-3rzk8v=""
+>
+  <div
+    data-css-1rczh6u=""
+  />
+</div>
+`;
+
+exports[`Storyshots LinearProgress value, 100% 1`] = `
+<div
+  data-css-3rzk8v=""
+>
+  <div
+    data-css-1hjlj9w=""
+  />
+</div>
+`;
+
+exports[`Storyshots LinearProgress value, 999% 1`] = `
+<div
+  data-css-3rzk8v=""
+>
+  <div
+    data-css-1hjlj9w=""
+  />
+</div>
+`;
