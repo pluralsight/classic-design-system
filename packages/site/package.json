@@ -36,6 +36,7 @@
     "@pluralsight/ps-design-system-dialog": "^2.3.12",
     "@pluralsight/ps-design-system-drawer": "^1.5.15",
     "@pluralsight/ps-design-system-dropdown": "^0.6.14",
+    "@pluralsight/ps-design-system-emptystate": "^1.0.0",
     "@pluralsight/ps-design-system-errors": "^2.0.4",
     "@pluralsight/ps-design-system-form": "^0.3.30",
     "@pluralsight/ps-design-system-icon": "^9.0.2",
