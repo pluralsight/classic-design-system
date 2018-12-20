@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.4.1...@pluralsight/ps-design-system-site@11.5.0) (2018-12-20)
+
+
+### Bug Fixes
+
+* **site:** bypass unpkg redir on normalize ([b0c232e](https://github.com/pluralsight/design-system/commit/b0c232e))
+
+
+### Features
+
+* **site:** linear progress docs ([964c05a](https://github.com/pluralsight/design-system/commit/964c05a))
+
+
+
+
+
 ## [11.4.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.4.0...@pluralsight/ps-design-system-site@11.4.1) (2018-12-14)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.4](https://github.com/pluralsight/design-system/compare/packages-api@1.3.3...packages-api@1.3.4) (2018-12-20)
+
+**Note:** Version bump only for package packages-api
+
+
+
+
+
 <a name="1.3.3"></a>
 ## [1.3.3](https://github.com/pluralsight/design-system/compare/packages-api@1.3.2...packages-api@1.3.3) (2018-10-31)
 
