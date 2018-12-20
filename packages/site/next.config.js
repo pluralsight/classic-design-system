@@ -33,6 +33,7 @@ module.exports = {
       '/components/form': { page: '/components/form' },
       '/components/icon': { page: '/components/icon' },
       '/components/layout': { page: '/components/layout' },
+      '/components/linearprogress': { page: '/components/linearprogress' },
       '/components/link': { page: '/components/link' },
       '/components/radio': { page: '/components/radio' },
       '/components/row': { page: '/components/row' },
