@@ -21,7 +21,10 @@ export default {
     margin: '0 auto',
     padding: `${core.layout.spacingXLarge} ${core.layout.spacingLarge}`,
     textAlign: 'center',
-    maxWidth: 500
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   ['.psds-emptystate' + themeClasses[themeDefaultName]]: {
     color: core.colors.white
@@ -31,14 +34,17 @@ export default {
   },
 
   // __actions
-  '.psds-emptystate__actions': {},
+  '.psds-emptystate__actions': {
+    maxWidth: 500
+  },
 
   // __caption
   '.psds-emptystate__caption': {
     margin: `${core.layout.spacingLarge} 0`,
     fontSize: core.type.psTypeFontSizeSmall,
     letterSpacing: core.type.psTypeLetterSpacingSmall,
-    lineHeight: core.type.psTypeLineHeightStandard
+    lineHeight: core.type.psTypeLineHeightStandard,
+    maxWidth: 500
   },
   ['.psds-emptystate__caption' + themeClasses[themeDefaultName]]: {
     color: core.colors.gray01
@@ -51,7 +57,8 @@ export default {
   '.psds-emptystate__heading': {
     margin: `${core.layout.spacingLarge} 0`,
     letterSpacing: core.type.letterSpacingLarge,
-    fontWeight: core.type.fontWeightBook
+    fontWeight: core.type.fontWeightBook,
+    maxWidth: 500
   },
   ['.psds-emptystate__heading' + sizeClasses.small]: {
     fontSize: core.type.fontSizeMedium

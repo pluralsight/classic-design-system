@@ -2,7 +2,7 @@
 
 exports[`Storyshots EmptyState combo 1`] = `
 <div
-  data-css-uttq2k=""
+  data-css-4nskpd=""
 >
   <svg
     aria-hidden={true}
@@ -56,16 +56,18 @@ exports[`Storyshots EmptyState combo 1`] = `
     </g>
   </svg>
   <h1
-    data-css-1txg7r9=""
+    data-css-e95k90=""
   >
     Filet mignon pork chop salami shank tail.
   </h1>
   <div
-    data-css-pftuhz=""
+    data-css-1xs1hqr=""
   >
     Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork, pork loin shankle spare ribs.
   </div>
-  <div>
+  <div
+    data-css-aelvpu=""
+  >
     <button
       data-css-k922kt=""
       disabled={false}
@@ -83,7 +85,7 @@ exports[`Storyshots EmptyState combo 1`] = `
 
 exports[`Storyshots EmptyState/actions with an input 1`] = `
 <div
-  data-css-uttq2k=""
+  data-css-4nskpd=""
 >
   <svg
     aria-hidden={true}
@@ -137,16 +139,18 @@ exports[`Storyshots EmptyState/actions with an input 1`] = `
     </g>
   </svg>
   <h1
-    data-css-1txg7r9=""
+    data-css-e95k90=""
   >
     Filet mignon pork chop salami shank tail.
   </h1>
   <div
-    data-css-pftuhz=""
+    data-css-1xs1hqr=""
   >
     Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork, pork loin shankle spare ribs.
   </div>
-  <div>
+  <div
+    data-css-aelvpu=""
+  >
     <label
       data-css-w0yocm=""
     >
@@ -188,7 +192,7 @@ exports[`Storyshots EmptyState/actions with an input 1`] = `
 
 exports[`Storyshots EmptyState/actions with buttons 1`] = `
 <div
-  data-css-uttq2k=""
+  data-css-4nskpd=""
 >
   <svg
     aria-hidden={true}
@@ -242,16 +246,18 @@ exports[`Storyshots EmptyState/actions with buttons 1`] = `
     </g>
   </svg>
   <h1
-    data-css-1txg7r9=""
+    data-css-e95k90=""
   >
     Filet mignon pork chop salami shank tail.
   </h1>
   <div
-    data-css-pftuhz=""
+    data-css-1xs1hqr=""
   >
     Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork, pork loin shankle spare ribs.
   </div>
-  <div>
+  <div
+    data-css-aelvpu=""
+  >
     <div
       style={
         Object {
@@ -388,7 +394,7 @@ exports[`Storyshots EmptyState/actions with buttons 1`] = `
 
 exports[`Storyshots EmptyState/actions with tags 1`] = `
 <div
-  data-css-uttq2k=""
+  data-css-4nskpd=""
 >
   <svg
     aria-hidden={true}
@@ -442,16 +448,18 @@ exports[`Storyshots EmptyState/actions with tags 1`] = `
     </g>
   </svg>
   <h1
-    data-css-1txg7r9=""
+    data-css-e95k90=""
   >
     Filet mignon pork chop salami shank tail.
   </h1>
   <div
-    data-css-pftuhz=""
+    data-css-1xs1hqr=""
   >
     Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork, pork loin shankle spare ribs.
   </div>
-  <div>
+  <div
+    data-css-aelvpu=""
+  >
     <div
       style={
         Object {
@@ -600,7 +608,7 @@ exports[`Storyshots EmptyState/actions with tags 1`] = `
 
 exports[`Storyshots EmptyState/illustrations channel 1`] = `
 <div
-  data-css-uttq2k=""
+  data-css-4nskpd=""
 >
   <svg
     aria-hidden={true}
@@ -630,7 +638,7 @@ exports[`Storyshots EmptyState/illustrations channel 1`] = `
     </g>
   </svg>
   <h1
-    data-css-1txg7r9=""
+    data-css-e95k90=""
   >
     channel
   </h1>
@@ -639,7 +647,7 @@ exports[`Storyshots EmptyState/illustrations channel 1`] = `
 
 exports[`Storyshots EmptyState/illustrations custom 1`] = `
 <div
-  data-css-uttq2k=""
+  data-css-4nskpd=""
 >
   <div
     data-css-181v3nd=""
@@ -656,7 +664,7 @@ exports[`Storyshots EmptyState/illustrations custom 1`] = `
     </svg>
   </div>
   <h1
-    data-css-1txg7r9=""
+    data-css-e95k90=""
   >
     Custom Illustration
   </h1>
@@ -665,7 +673,7 @@ exports[`Storyshots EmptyState/illustrations custom 1`] = `
 
 exports[`Storyshots EmptyState/illustrations disconnected 1`] = `
 <div
-  data-css-uttq2k=""
+  data-css-4nskpd=""
 >
   <svg
     aria-hidden={true}
@@ -709,7 +717,7 @@ exports[`Storyshots EmptyState/illustrations disconnected 1`] = `
     </g>
   </svg>
   <h1
-    data-css-1txg7r9=""
+    data-css-e95k90=""
   >
     disconnected
   </h1>
@@ -718,7 +726,7 @@ exports[`Storyshots EmptyState/illustrations disconnected 1`] = `
 
 exports[`Storyshots EmptyState/illustrations interactive 1`] = `
 <div
-  data-css-uttq2k=""
+  data-css-4nskpd=""
 >
   <svg
     aria-hidden={true}
@@ -799,7 +807,7 @@ exports[`Storyshots EmptyState/illustrations interactive 1`] = `
     </g>
   </svg>
   <h1
-    data-css-1txg7r9=""
+    data-css-e95k90=""
   >
     interactive
   </h1>
@@ -808,7 +816,7 @@ exports[`Storyshots EmptyState/illustrations interactive 1`] = `
 
 exports[`Storyshots EmptyState/illustrations search 1`] = `
 <div
-  data-css-uttq2k=""
+  data-css-4nskpd=""
 >
   <svg
     aria-hidden={true}
@@ -862,7 +870,7 @@ exports[`Storyshots EmptyState/illustrations search 1`] = `
     </g>
   </svg>
   <h1
-    data-css-1txg7r9=""
+    data-css-e95k90=""
   >
     search
   </h1>
@@ -871,7 +879,7 @@ exports[`Storyshots EmptyState/illustrations search 1`] = `
 
 exports[`Storyshots EmptyState/illustrations video 1`] = `
 <div
-  data-css-uttq2k=""
+  data-css-4nskpd=""
 >
   <svg
     aria-hidden={true}
@@ -927,7 +935,7 @@ exports[`Storyshots EmptyState/illustrations video 1`] = `
     </g>
   </svg>
   <h1
-    data-css-1txg7r9=""
+    data-css-e95k90=""
   >
     video
   </h1>
@@ -936,7 +944,7 @@ exports[`Storyshots EmptyState/illustrations video 1`] = `
 
 exports[`Storyshots EmptyState/sizes large 1`] = `
 <div
-  data-css-uttq2k=""
+  data-css-4nskpd=""
 >
   <svg
     aria-hidden={true}
@@ -990,16 +998,18 @@ exports[`Storyshots EmptyState/sizes large 1`] = `
     </g>
   </svg>
   <h1
-    data-css-1fgasuu=""
+    data-css-26qzgo=""
   >
     Filet mignon pork chop salami shank tail.
   </h1>
   <div
-    data-css-pftuhz=""
+    data-css-1xs1hqr=""
   >
     Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork, pork loin shankle spare ribs.
   </div>
-  <div>
+  <div
+    data-css-aelvpu=""
+  >
     <button
       data-css-k922kt=""
       disabled={false}
@@ -1017,7 +1027,7 @@ exports[`Storyshots EmptyState/sizes large 1`] = `
 
 exports[`Storyshots EmptyState/sizes small 1`] = `
 <div
-  data-css-uttq2k=""
+  data-css-4nskpd=""
 >
   <svg
     aria-hidden={true}
@@ -1071,16 +1081,18 @@ exports[`Storyshots EmptyState/sizes small 1`] = `
     </g>
   </svg>
   <h1
-    data-css-6xmt0a=""
+    data-css-1qv89vg=""
   >
     Filet mignon pork chop salami shank tail.
   </h1>
   <div
-    data-css-pftuhz=""
+    data-css-1xs1hqr=""
   >
     Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork, pork loin shankle spare ribs.
   </div>
-  <div>
+  <div
+    data-css-aelvpu=""
+  >
     <button
       data-css-k922kt=""
       disabled={false}
