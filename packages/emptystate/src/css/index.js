@@ -40,7 +40,7 @@ export default {
 
   // __caption
   '.psds-emptystate__caption': {
-    margin: `${core.layout.spacingLarge} 0`,
+    marginBottom: core.layout.spacingLarge,
     fontSize: core.type.psTypeFontSizeSmall,
     letterSpacing: core.type.psTypeLetterSpacingSmall,
     lineHeight: core.type.psTypeLineHeightStandard,
@@ -55,7 +55,7 @@ export default {
 
   // __heading,
   '.psds-emptystate__heading': {
-    margin: `${core.layout.spacingLarge} 0`,
+    marginBottom: core.layout.spacingLarge,
     letterSpacing: core.type.letterSpacingLarge,
     fontWeight: core.type.fontWeightBook,
     maxWidth: 500
@@ -70,7 +70,8 @@ export default {
 
   // __illustration
   '.psds-emptystate__illustration': {
-    display: 'inline-block'
+    display: 'inline-block',
+    marginBottom: core.layout.spacingLarge
   },
   ['.psds-emptystate__illustration' + sizeClasses.small]: {
     width: 64,

@@ -65,7 +65,10 @@ Actions.propTypes = {
 const Caption = props => (
   <Context.Consumer>
     {ctx => (
-      <div {...styles.caption(props, ctx)} {...filterReactProps(props)} />
+      <p
+        {...styles.caption(props, ctx)}
+        {...filterReactProps(props, { tagName: 'p' })}
+      />
     )}
   </Context.Consumer>
 )
