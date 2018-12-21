@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@9.0.2...@pluralsight/ps-design-system-icon@9.0.3) (2018-12-21)
+
+
+### Bug Fixes
+
+* **icon:** prevent lingering svgs from being published ([52028b4](https://github.com/pluralsight/design-system/commit/52028b4))
+
+
+
+
+
 ## [9.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@9.0.0...@pluralsight/ps-design-system-icon@9.0.2) (2018-12-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon
