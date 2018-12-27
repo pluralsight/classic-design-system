@@ -10,7 +10,7 @@ const menuOriginLeft = {
 }
 
 export default {
-  ['@keyframes psds-actionmenu__keyframes__slide']: {
+  '@keyframes psds-actionmenu__keyframes__slide': {
     '100%': {
       transform: 'translateX(0)',
       opacity: 1
