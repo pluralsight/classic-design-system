@@ -5,7 +5,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Breadcrumb from '../react'
+import Breadcrumb from '..'
 
 storiesOf('normal', module)
   .addDecorator(themeDecorator(addons))
