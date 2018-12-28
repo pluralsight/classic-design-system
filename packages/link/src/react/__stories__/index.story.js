@@ -3,7 +3,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Link from '../react'
+import Link from '..'
 
 const appearanceStory = storiesOf('appearance', module).addDecorator(
   themeDecorator(addons)
