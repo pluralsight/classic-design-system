@@ -3,16 +3,9 @@ import initStoryshots, {
   snapshotWithOptions
 } from '@storybook/addon-storyshots'
 
-function createNodeMock(element) {
-  if (element.type === 'div') {
-    return { style: {} }
-  }
-  return null
-}
+const createNodeMock = el => document.createElement('div')
 
 initStoryshots({
   configPath: path.resolve(__dirname, '..', '..', '..', '.storybook'),
-  test: snapshotWithOptions({
-    createNodeMock
-  })
+  test: snapshotWithOptions({ createNodeMock })
 })

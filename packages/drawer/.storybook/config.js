@@ -1,8 +1,8 @@
-/* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
-import { configure } from '@storybook/react';
+import addons from '@storybook/addons'
+import { configure } from '@storybook/react'
 
-function loadStories() {
-  require('../stories');
+function loadStory() {
+  require('../src/react/__stories__/index.story.js')
 }
 
-configure(loadStories, module);
+configure(loadStory, module)

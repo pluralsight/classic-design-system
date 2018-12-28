@@ -27,29 +27,29 @@ exports[`Storyshots drawer controlled 1`] = `
         </span>
       </button>
       <div
-        className="css-1fq8nx6"
+        data-css-1fq8nx6=""
       >
         <div
-          className="css-i9wfit"
+          data-css-i9wfit=""
           onClick={[Function]}
         >
           <div
-            className="css-euzj8"
+            data-css-euzj8=""
           >
             <div>
               Drawer Base Here
             </div>
           </div>
           <div
-            className="css-qs2rg7"
+            data-css-qs2rg7=""
           >
             <button
               aria-label="Collapse"
-              className="css-xipskh"
+              data-css-7jbmom=""
               onClick={[Function]}
             >
               <div
-                className="css-xnveog"
+                data-css-xnveog=""
               >
                 <div
                   data-css-otejxm=""
@@ -70,10 +70,10 @@ exports[`Storyshots drawer controlled 1`] = `
           </div>
         </div>
         <div
-          className="css-ule0ur"
+          data-css-ule0ur=""
         >
           <div
-            className="css-1j3g0qd"
+            data-css-1j3g0qd=""
           >
             Drawer Content Here
           </div>
@@ -98,29 +98,29 @@ exports[`Storyshots drawer default 1`] = `
     }
   >
     <div
-      className="css-1fq8nx6"
+      data-css-1fq8nx6=""
     >
       <div
-        className="css-1oot5vc"
+        data-css-1oot5vc=""
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          data-css-euzj8=""
         >
           <div>
             Drawer Base Here
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          data-css-qs2rg7=""
         >
           <button
             aria-label="Expand"
-            className="css-xipskh"
+            data-css-7jbmom=""
             onClick={[Function]}
           >
             <div
-              className="css-1byjzqg"
+              data-css-1byjzqg=""
             >
               <div
                 data-css-otejxm=""
@@ -141,10 +141,10 @@ exports[`Storyshots drawer default 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        data-css-1i2htk9=""
       >
         <div
-          className="css-1j3g0qd"
+          data-css-1j3g0qd=""
         >
           Drawer Content Here
         </div>
@@ -168,14 +168,14 @@ exports[`Storyshots drawer row component with actions 1`] = `
     }
   >
     <div
-      className="css-1fq8nx6"
+      data-css-1fq8nx6=""
     >
       <div
-        className="css-1oot5vc"
+        data-css-1oot5vc=""
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          data-css-euzj8=""
         >
           <div
             data-css-vl7fes=""
@@ -281,15 +281,15 @@ exports[`Storyshots drawer row component with actions 1`] = `
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          data-css-qs2rg7=""
         >
           <button
             aria-label="Expand"
-            className="css-xipskh"
+            data-css-7jbmom=""
             onClick={[Function]}
           >
             <div
-              className="css-1byjzqg"
+              data-css-1byjzqg=""
             >
               <div
                 data-css-otejxm=""
@@ -310,10 +310,10 @@ exports[`Storyshots drawer row component with actions 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        data-css-1i2htk9=""
       >
         <div
-          className="css-1j3g0qd"
+          data-css-1j3g0qd=""
         >
           Drawer Content Here
         </div>
@@ -338,29 +338,29 @@ exports[`Storyshots drawer stack of drawers 1`] = `
   >
     <div>
       <div
-        className="css-1fq8nx6"
+        data-css-1fq8nx6=""
       >
         <div
-          className="css-1oot5vc"
+          data-css-1oot5vc=""
           onClick={[Function]}
         >
           <div
-            className="css-euzj8"
+            data-css-euzj8=""
           >
             <div>
               The Drawer #1
             </div>
           </div>
           <div
-            className="css-qs2rg7"
+            data-css-qs2rg7=""
           >
             <button
               aria-label="Expand"
-              className="css-xipskh"
+              data-css-7jbmom=""
               onClick={[Function]}
             >
               <div
-                className="css-1byjzqg"
+                data-css-1byjzqg=""
               >
                 <div
                   data-css-otejxm=""
@@ -381,37 +381,37 @@ exports[`Storyshots drawer stack of drawers 1`] = `
           </div>
         </div>
         <div
-          className="css-1i2htk9"
+          data-css-1i2htk9=""
         >
           <div
-            className="css-1j3g0qd"
+            data-css-1j3g0qd=""
           />
         </div>
       </div>
       <div
-        className="css-1fq8nx6"
+        data-css-1fq8nx6=""
       >
         <div
-          className="css-1oot5vc"
+          data-css-1oot5vc=""
           onClick={[Function]}
         >
           <div
-            className="css-euzj8"
+            data-css-euzj8=""
           >
             <div>
               The Drawer #2
             </div>
           </div>
           <div
-            className="css-qs2rg7"
+            data-css-qs2rg7=""
           >
             <button
               aria-label="Expand"
-              className="css-xipskh"
+              data-css-7jbmom=""
               onClick={[Function]}
             >
               <div
-                className="css-1byjzqg"
+                data-css-1byjzqg=""
               >
                 <div
                   data-css-otejxm=""
@@ -432,37 +432,37 @@ exports[`Storyshots drawer stack of drawers 1`] = `
           </div>
         </div>
         <div
-          className="css-1i2htk9"
+          data-css-1i2htk9=""
         >
           <div
-            className="css-1j3g0qd"
+            data-css-1j3g0qd=""
           />
         </div>
       </div>
       <div
-        className="css-1fq8nx6"
+        data-css-1fq8nx6=""
       >
         <div
-          className="css-1oot5vc"
+          data-css-1oot5vc=""
           onClick={[Function]}
         >
           <div
-            className="css-euzj8"
+            data-css-euzj8=""
           >
             <div>
               The Drawer #2
             </div>
           </div>
           <div
-            className="css-qs2rg7"
+            data-css-qs2rg7=""
           >
             <button
               aria-label="Expand"
-              className="css-xipskh"
+              data-css-7jbmom=""
               onClick={[Function]}
             >
               <div
-                className="css-1byjzqg"
+                data-css-1byjzqg=""
               >
                 <div
                   data-css-otejxm=""
@@ -483,10 +483,10 @@ exports[`Storyshots drawer stack of drawers 1`] = `
           </div>
         </div>
         <div
-          className="css-1i2htk9"
+          data-css-1i2htk9=""
         >
           <div
-            className="css-1j3g0qd"
+            data-css-1j3g0qd=""
           />
         </div>
       </div>
@@ -511,29 +511,29 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
     <div>
       <div>
         <div
-          className="css-1fq8nx6"
+          data-css-1fq8nx6=""
         >
           <div
-            className="css-1oot5vc"
+            data-css-1oot5vc=""
             onClick={[Function]}
           >
             <div
-              className="css-euzj8"
+              data-css-euzj8=""
             >
               <div>
                 The Drawer #1
               </div>
             </div>
             <div
-              className="css-qs2rg7"
+              data-css-qs2rg7=""
             >
               <button
                 aria-label="Expand"
-                className="css-xipskh"
+                data-css-7jbmom=""
                 onClick={[Function]}
               >
                 <div
-                  className="css-1byjzqg"
+                  data-css-1byjzqg=""
                 >
                   <div
                     data-css-otejxm=""
@@ -554,39 +554,39 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
             </div>
           </div>
           <div
-            className="css-1i2htk9"
+            data-css-1i2htk9=""
           >
             <div
-              className="css-1j3g0qd"
+              data-css-1j3g0qd=""
             />
           </div>
         </div>
       </div>
       <div>
         <div
-          className="css-1fq8nx6"
+          data-css-1fq8nx6=""
         >
           <div
-            className="css-1oot5vc"
+            data-css-1oot5vc=""
             onClick={[Function]}
           >
             <div
-              className="css-euzj8"
+              data-css-euzj8=""
             >
               <div>
                 The Drawer #2
               </div>
             </div>
             <div
-              className="css-qs2rg7"
+              data-css-qs2rg7=""
             >
               <button
                 aria-label="Expand"
-                className="css-xipskh"
+                data-css-7jbmom=""
                 onClick={[Function]}
               >
                 <div
-                  className="css-1byjzqg"
+                  data-css-1byjzqg=""
                 >
                   <div
                     data-css-otejxm=""
@@ -607,39 +607,39 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
             </div>
           </div>
           <div
-            className="css-1i2htk9"
+            data-css-1i2htk9=""
           >
             <div
-              className="css-1j3g0qd"
+              data-css-1j3g0qd=""
             />
           </div>
         </div>
       </div>
       <div>
         <div
-          className="css-1fq8nx6"
+          data-css-1fq8nx6=""
         >
           <div
-            className="css-1oot5vc"
+            data-css-1oot5vc=""
             onClick={[Function]}
           >
             <div
-              className="css-euzj8"
+              data-css-euzj8=""
             >
               <div>
                 The Drawer #2
               </div>
             </div>
             <div
-              className="css-qs2rg7"
+              data-css-qs2rg7=""
             >
               <button
                 aria-label="Expand"
-                className="css-xipskh"
+                data-css-7jbmom=""
                 onClick={[Function]}
               >
                 <div
-                  className="css-1byjzqg"
+                  data-css-1byjzqg=""
                 >
                   <div
                     data-css-otejxm=""
@@ -660,10 +660,10 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
             </div>
           </div>
           <div
-            className="css-1i2htk9"
+            data-css-1i2htk9=""
           >
             <div
-              className="css-1j3g0qd"
+              data-css-1j3g0qd=""
             />
           </div>
         </div>
@@ -687,29 +687,29 @@ exports[`Storyshots drawer using custom aria label 1`] = `
     }
   >
     <div
-      className="css-1fq8nx6"
+      data-css-1fq8nx6=""
     >
       <div
-        className="css-1oot5vc"
+        data-css-1oot5vc=""
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          data-css-euzj8=""
         >
           <div>
             Drawer Base Here
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          data-css-qs2rg7=""
         >
           <button
             aria-label="Expand custom drawer"
-            className="css-xipskh"
+            data-css-7jbmom=""
             onClick={[Function]}
           >
             <div
-              className="css-1byjzqg"
+              data-css-1byjzqg=""
             >
               <div
                 data-css-otejxm=""
@@ -730,10 +730,10 @@ exports[`Storyshots drawer using custom aria label 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        data-css-1i2htk9=""
       >
         <div
-          className="css-1j3g0qd"
+          data-css-1j3g0qd=""
         >
           Drawer Content Here
         </div>
@@ -758,14 +758,14 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
   >
     <div>
       <div
-        className="css-1fq8nx6"
+        data-css-1fq8nx6=""
       >
         <div
-          className="css-1oot5vc"
+          data-css-1oot5vc=""
           onClick={[Function]}
         >
           <div
-            className="css-euzj8"
+            data-css-euzj8=""
           >
             <div>
               Drawer is 
@@ -773,15 +773,15 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
             </div>
           </div>
           <div
-            className="css-qs2rg7"
+            data-css-qs2rg7=""
           >
             <button
               aria-label="Expand"
-              className="css-xipskh"
+              data-css-7jbmom=""
               onClick={[Function]}
             >
               <div
-                className="css-1byjzqg"
+                data-css-1byjzqg=""
               >
                 <div
                   data-css-otejxm=""
@@ -802,10 +802,10 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
           </div>
         </div>
         <div
-          className="css-1i2htk9"
+          data-css-1i2htk9=""
         >
           <div
-            className="css-1j3g0qd"
+            data-css-1j3g0qd=""
           >
             Drawer Content Here
           </div>
@@ -830,29 +830,29 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
     }
   >
     <div
-      className="css-1fq8nx6"
+      data-css-1fq8nx6=""
     >
       <div
-        className="css-i9wfit"
+        data-css-i9wfit=""
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          data-css-euzj8=""
         >
           <div>
             Base here
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          data-css-qs2rg7=""
         >
           <button
             aria-label="Collapse"
-            className="css-xipskh"
+            data-css-7jbmom=""
             onClick={[Function]}
           >
             <div
-              className="css-xnveog"
+              data-css-xnveog=""
             >
               <div
                 data-css-otejxm=""
@@ -873,10 +873,10 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
         </div>
       </div>
       <div
-        className="css-ule0ur"
+        data-css-ule0ur=""
       >
         <div
-          className="css-1j3g0qd"
+          data-css-1j3g0qd=""
         >
           <div>
             Panel here
@@ -902,14 +902,14 @@ exports[`Storyshots drawer with row component 1`] = `
     }
   >
     <div
-      className="css-1fq8nx6"
+      data-css-1fq8nx6=""
     >
       <div
-        className="css-1oot5vc"
+        data-css-1oot5vc=""
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          data-css-euzj8=""
         >
           <div
             data-css-vl7fes=""
@@ -975,15 +975,15 @@ exports[`Storyshots drawer with row component 1`] = `
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          data-css-qs2rg7=""
         >
           <button
             aria-label="Expand"
-            className="css-xipskh"
+            data-css-7jbmom=""
             onClick={[Function]}
           >
             <div
-              className="css-1byjzqg"
+              data-css-1byjzqg=""
             >
               <div
                 data-css-otejxm=""
@@ -1004,10 +1004,10 @@ exports[`Storyshots drawer with row component 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        data-css-1i2htk9=""
       >
         <div
-          className="css-1j3g0qd"
+          data-css-1j3g0qd=""
         >
           Drawer Content Here
         </div>

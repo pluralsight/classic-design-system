@@ -1,21 +1,26 @@
+import React from 'react'
+
+import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import addons from '@storybook/addons'
-import Button from '@pluralsight/ps-design-system-button/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import React from 'react'
-import Row from '@pluralsight/ps-design-system-row/react'
-import { storiesOf } from '@storybook/react'
+
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Drawer from '../react'
+import Button from '@pluralsight/ps-design-system-button/react'
+import Icon from '@pluralsight/ps-design-system-icon/react'
+import Row from '@pluralsight/ps-design-system-row/react'
+
+import Drawer from '..'
 
 class ControlledDrawerStory extends React.Component {
   constructor(props) {
     super(props)
+
+    this.toggle = this.toggle.bind(this)
     this.state = { isOpen: true }
   }
 
-  toggle = () => {
+  toggle() {
     this.setState({ isOpen: !this.state.isOpen })
   }
 
@@ -34,10 +39,12 @@ class ControlledDrawerStory extends React.Component {
 class OnToggleDrawerStory extends React.Component {
   constructor(props) {
     super(props)
+
+    this.handleToggle = this.handleToggle.bind(this)
     this.state = { isOpen: false }
   }
 
-  handleToggle = isOpen => {
+  handleToggle(isOpen) {
     this.setState({ isOpen })
   }
 

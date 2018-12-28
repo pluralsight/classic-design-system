@@ -1,18 +1,12 @@
+import { transparentize } from 'polished'
+
 import core from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme/react'
-import { transparentize } from 'polished'
 
 import * as vars from '../vars'
-
-const toggleButtonLightHover = {
-  color: core.colors.gray06
-}
-const toggleButtonDefaultThemeHover = {
-  color: core.colors.white
-}
 
 export default {
   [`.psds-drawer.psds-theme--${themeNames.light}`]: {
@@ -21,22 +15,26 @@ export default {
   [`.psds-drawer.psds-theme--${themeDefaultName}`]: {
     borderTop: `1px solid ${core.colors.gray04}`
   },
+
   // __base
   [`.psds-drawer__base`]: {
     position: 'relative',
     paddingRight: vars.toggleAreaWidth,
     cursor: 'pointer',
-    transition: `background ${core.motion.speedNormal}`
-  },
-  [`.psds-drawer__base:hover`]: {
-    background: transparentize(0.9, core.colors.gray02)
+    transition: `background ${core.motion.speedNormal}`,
+
+    [`&:hover`]: {
+      background: transparentize(0.9, core.colors.gray02)
+    }
   },
   [`.psds-drawer__base--isOpen`]: {
-    background: transparentize(0.8, core.colors.gray02)
+    background: transparentize(0.8, core.colors.gray02),
+
+    [`&:hover`]: {
+      background: transparentize(0.8, core.colors.gray02)
+    }
   },
-  [`.psds-drawer__base--isOpen:hover`]: {
-    background: transparentize(0.8, core.colors.gray02)
-  },
+
   // __panel / __panel-content
   [`.psds-drawer__panel`]: {
     background: transparentize(0.94, core.colors.gray02),
@@ -53,6 +51,7 @@ export default {
     paddingLeft: core.layout.spacingMedium,
     paddingRight: vars.toggleAreaWidth
   },
+
   // __toggle-button-container / __toggle-button
   [`.psds-drawer__toggle-button-container`]: {
     position: 'absolute',
@@ -73,19 +72,20 @@ export default {
     transition: `all ${core.motion.speedNormal}`
   },
   [`.psds-drawer__toggle-button.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03
+    color: core.colors.gray03,
+
+    [`&:hover, &:active`]: {
+      color: core.colors.gray06
+    }
   },
   [`.psds-drawer__toggle-button.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.gray02
+    color: core.colors.gray02,
+
+    [`&:hover, &:active`]: {
+      color: core.colors.white
+    }
   },
-  [`.psds-drawer__toggle-button.psds-theme--${
-    themeNames.light
-  }:hover`]: toggleButtonLightHover,
-  [`.psds-drawer__toggle-button.psds-theme--${
-    themeNames.light
-  }:active`]: toggleButtonLightHover,
-  [`.psds-drawer__toggle-button.psds-theme--${themeDefaultName}:hover`]: toggleButtonDefaultThemeHover,
-  [`.psds-drawer__toggle-button.psds-theme--${themeDefaultName}:active`]: toggleButtonDefaultThemeHover,
+
   // __rotatable
   [`.psds-drawer__rotatable`]: {
     transition: `transform ${core.motion.speedNormal}`,
@@ -94,6 +94,7 @@ export default {
   [`.psds-drawer__rotatable--isOpen`]: {
     transform: 'rotateZ(180deg)'
   },
+
   // __collapsible
   [`.psds-drawer__collapsible`]: {
     overflow: 'hidden',
