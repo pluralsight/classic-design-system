@@ -1,15 +1,16 @@
+import React from 'react'
+
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
 import Button from '@pluralsight/ps-design-system-button/react'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import * as Text from '@pluralsight/ps-design-system-text/react'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
@@ -129,7 +130,7 @@ export default withServerProps(_ => (
       />
 
       <SectionHeading>Icons</SectionHeading>
-      <P>Use icons to add conext and recognition to action menu items.</P>
+      <P>Use icons to add context and recognition to action menu items.</P>
       <Example.React
         includes={{ ActionMenu, Icon }}
         codes={[
@@ -152,7 +153,7 @@ export default withServerProps(_ => (
       <SectionHeading>Dividers</SectionHeading>
       <P>
         Dividers can be useful to separate similar actions. Dividers are applied
-        at the li level, below the assigned list item.
+        at the list level, below the assigned list item.
       </P>
       <Example.React
         includes={{ ActionMenu }}
@@ -292,12 +293,13 @@ export default withServerProps(_ => (
       />
 
       <P>
-        <i>
-          Note: Examples on this page use <code>shouldFocusOnMount=false</code>
-          only in order to display the examples without interrupting your
-          browsing experience. In most real-world scenarios, you will want to
-          leave the default focus behavior in tact.
-        </i>
+        <em>
+          Note: Examples on this page use{' '}
+          <Text.Code>shouldFocusOnMount=false</Text.Code> only in order to
+          display the examples without interrupting your browsing experience. In
+          most real-world scenarios, you will want to leave the default focus
+          behavior in tact.
+        </em>
       </P>
     </Content>
   </Chrome>
