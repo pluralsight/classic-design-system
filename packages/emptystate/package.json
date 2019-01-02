@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-emptystate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "EmptyState UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -24,7 +24,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "4.4.0",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.1",
-    "@pluralsight/ps-design-system-prop-types": "^1.0.0",
+    "@pluralsight/ps-design-system-prop-types": "^1.1.0",
     "@pluralsight/ps-design-system-theme": "1.4.1",
     "create-react-context": "^0.2.3"
   },
@@ -34,18 +34,18 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "devDependencies": {
-    "@svgr/cli": "^4.0.0",
     "@pluralsight/ps-design-system-build": "*",
-    "@pluralsight/ps-design-system-button": "*",
-    "@pluralsight/ps-design-system-icon": "*",
-    "@pluralsight/ps-design-system-tag": "*",
-    "@pluralsight/ps-design-system-textinput": "*",
+    "@pluralsight/ps-design-system-button": "^10.11.5",
+    "@pluralsight/ps-design-system-icon": "^10.0.0",
     "@pluralsight/ps-design-system-storybook-addon-center": "*",
     "@pluralsight/ps-design-system-storybook-addon-theme": "*",
+    "@pluralsight/ps-design-system-tag": "^1.7.16",
+    "@pluralsight/ps-design-system-textinput": "^0.5.20",
     "@storybook/addon-actions": "^4.0.0",
     "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/addons": "^4.0.0",
     "@storybook/react": "^4.0.0",
+    "@svgr/cli": "^4.0.0",
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",

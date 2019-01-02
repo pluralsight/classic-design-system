@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.6.1...@pluralsight/ps-design-system-site@11.7.0) (2019-01-02)
+
+
+### Bug Fixes
+
+* **site:** add emptystate as a dependency ([df5ac16](https://github.com/pluralsight/design-system/commit/df5ac16))
+* **site:** typo ([d501818](https://github.com/pluralsight/design-system/commit/d501818))
+
+
+### Features
+
+* **site:** start of EmptyState docs ([1a572b5](https://github.com/pluralsight/design-system/commit/1a572b5))
+
+
+
+
+
 ## [11.6.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.6.0...@pluralsight/ps-design-system-site@11.6.1) (2018-12-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site

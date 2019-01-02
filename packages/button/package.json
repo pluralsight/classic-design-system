@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-button",
-  "version": "10.11.4",
+  "version": "10.11.5",
   "description": "Design System component for button ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,7 +21,7 @@
   "keywords": [],
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.4.2",
-    "@pluralsight/ps-design-system-icon": "^9.0.3",
+    "@pluralsight/ps-design-system-icon": "^10.0.0",
     "@pluralsight/ps-design-system-theme": "^1.4.3",
     "@pluralsight/ps-design-system-util": "^1.2.7",
     "polished": "^1.9.2",

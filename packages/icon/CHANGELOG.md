@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@9.0.3...@pluralsight/ps-design-system-icon@10.0.0) (2019-01-02)
+
+
+### Features
+
+* **icon:** add new thumb icons; removed old one; test based on dist ([5e3e504](https://github.com/pluralsight/design-system/commit/5e3e504))
+
+
+### BREAKING CHANGES
+
+* **icon:** remove thumb icon; replaced with thumbUp thumbUpFill
+thumbDown and thumbDownFill
+
+
+
+
+
 ## [9.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@9.0.2...@pluralsight/ps-design-system-icon@9.0.3) (2018-12-21)
 
 

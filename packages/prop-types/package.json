@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-prop-types",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Custom Prop Types for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",

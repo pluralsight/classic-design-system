@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.11.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.11.4...@pluralsight/ps-design-system-button@10.11.5) (2019-01-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-button
+
+
+
+
+
 ## [10.11.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.11.3...@pluralsight/ps-design-system-button@10.11.4) (2018-12-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-button

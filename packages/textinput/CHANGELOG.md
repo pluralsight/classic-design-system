@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.19...@pluralsight/ps-design-system-textinput@0.5.20) (2019-01-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textinput
+
+
+
+
+
 ## [0.5.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@0.5.18...@pluralsight/ps-design-system-textinput@0.5.19) (2018-12-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textinput
