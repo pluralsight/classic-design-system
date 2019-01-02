@@ -2,833 +2,25 @@
 
 exports[`Storyshots drawer controlled 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 24,
-        "padding": 48,
-      }
+  style={
+    Object {
+      "padding": 48,
     }
-  >
-    <div>
-      <button
-        data-css-k922kt=""
-        disabled={false}
-        onClick={[Function]}
-        style={Object {}}
-      >
-        <span
-          data-css-15b13by=""
-        >
-          Toggle drawer
-        </span>
-      </button>
-      <div
-        data-css-1fq8nx6=""
-      >
-        <div
-          data-css-i9wfit=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-euzj8=""
-          >
-            <div>
-              Drawer Base Here
-            </div>
-          </div>
-          <div
-            data-css-qs2rg7=""
-          >
-            <button
-              aria-label="Collapse"
-              data-css-7jbmom=""
-              onClick={[Function]}
-            >
-              <div
-                data-css-xnveog=""
-              >
-                <div
-                  data-css-otejxm=""
-                >
-                  <svg
-                    aria-label="caret down icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </button>
-          </div>
-        </div>
-        <div
-          data-css-ule0ur=""
-        >
-          <div
-            data-css-1j3g0qd=""
-          >
-            Drawer Content Here
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots drawer default 1`] = `
-<div
-  data-css-claeju=""
+  }
 >
-  <div
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 24,
-        "padding": 48,
-      }
-    }
-  >
-    <div
-      data-css-1fq8nx6=""
+  <div>
+    <button
+      data-css-k922kt=""
+      disabled={false}
+      onClick={[Function]}
+      style={Object {}}
     >
-      <div
-        data-css-1oot5vc=""
-        onClick={[Function]}
+      <span
+        data-css-15b13by=""
       >
-        <div
-          data-css-euzj8=""
-        >
-          <div>
-            Drawer Base Here
-          </div>
-        </div>
-        <div
-          data-css-qs2rg7=""
-        >
-          <button
-            aria-label="Expand"
-            data-css-7jbmom=""
-            onClick={[Function]}
-          >
-            <div
-              data-css-1byjzqg=""
-            >
-              <div
-                data-css-otejxm=""
-              >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
-        </div>
-      </div>
-      <div
-        data-css-1i2htk9=""
-      >
-        <div
-          data-css-1j3g0qd=""
-        >
-          Drawer Content Here
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots drawer row component with actions 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 24,
-        "padding": 48,
-      }
-    }
-  >
-    <div
-      data-css-1fq8nx6=""
-    >
-      <div
-        data-css-1oot5vc=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-euzj8=""
-        >
-          <div
-            data-css-vl7fes=""
-          >
-            <div
-              data-css-js3ti3=""
-            >
-              <span
-                data-css-15yq56v=""
-              >
-                <a
-                  href="https://duckduckgo.com?q=image"
-                >
-                  <img
-                    src="https://cataas.com/cat"
-                  />
-                </a>
-              </span>
-              <div
-                data-css-t9uarq=""
-              >
-                <span
-                  data-css-1fxa3fl=""
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                >
-                  <a
-                    href="https://duckduckgo.com?q=overlay"
-                  >
-                    Overlay
-                  </a>
-                </span>
-              </div>
-            </div>
-            <div
-              data-css-kxulf3=""
-            >
-              <div
-                data-css-1jlgfae=""
-              >
-                <span
-                  data-css-1le2bq0=""
-                >
-                  <a
-                    href="https://duckduckgo.com?q=title"
-                  >
-                    I'm a Row with Actions
-                  </a>
-                </span>
-              </div>
-              <div
-                data-css-cnfu1f=""
-              >
-                <span
-                  data-css-1kcrbi9=""
-                >
-                  <span
-                    data-css-1le2bq0=""
-                  >
-                    <a
-                      href="https://duckduckgo.com?q=cats"
-                    >
-                      Kitten McCatbuns
-                    </a>
-                  </span>
-                </span>
-                <span
-                  aria-hidden={true}
-                  data-css-kykfz1=""
-                >
-                  ·
-                </span>
-                <span
-                  data-css-1kcrbi9=""
-                >
-                  23 hours of cuteness
-                </span>
-              </div>
-            </div>
-            <div
-              data-css-1akhza9=""
-            >
-              <button
-                data-css-2qvjr2=""
-                onClick={[Function]}
-              >
-                <div
-                  data-css-otejxm=""
-                >
-                  <svg
-                    aria-label="more icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
-                    />
-                  </svg>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          data-css-qs2rg7=""
-        >
-          <button
-            aria-label="Expand"
-            data-css-7jbmom=""
-            onClick={[Function]}
-          >
-            <div
-              data-css-1byjzqg=""
-            >
-              <div
-                data-css-otejxm=""
-              >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
-        </div>
-      </div>
-      <div
-        data-css-1i2htk9=""
-      >
-        <div
-          data-css-1j3g0qd=""
-        >
-          Drawer Content Here
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots drawer stack of drawers 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 24,
-        "padding": 48,
-      }
-    }
-  >
-    <div>
-      <div
-        data-css-1fq8nx6=""
-      >
-        <div
-          data-css-1oot5vc=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-euzj8=""
-          >
-            <div>
-              The Drawer #1
-            </div>
-          </div>
-          <div
-            data-css-qs2rg7=""
-          >
-            <button
-              aria-label="Expand"
-              data-css-7jbmom=""
-              onClick={[Function]}
-            >
-              <div
-                data-css-1byjzqg=""
-              >
-                <div
-                  data-css-otejxm=""
-                >
-                  <svg
-                    aria-label="caret down icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </button>
-          </div>
-        </div>
-        <div
-          data-css-1i2htk9=""
-        >
-          <div
-            data-css-1j3g0qd=""
-          />
-        </div>
-      </div>
-      <div
-        data-css-1fq8nx6=""
-      >
-        <div
-          data-css-1oot5vc=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-euzj8=""
-          >
-            <div>
-              The Drawer #2
-            </div>
-          </div>
-          <div
-            data-css-qs2rg7=""
-          >
-            <button
-              aria-label="Expand"
-              data-css-7jbmom=""
-              onClick={[Function]}
-            >
-              <div
-                data-css-1byjzqg=""
-              >
-                <div
-                  data-css-otejxm=""
-                >
-                  <svg
-                    aria-label="caret down icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </button>
-          </div>
-        </div>
-        <div
-          data-css-1i2htk9=""
-        >
-          <div
-            data-css-1j3g0qd=""
-          />
-        </div>
-      </div>
-      <div
-        data-css-1fq8nx6=""
-      >
-        <div
-          data-css-1oot5vc=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-euzj8=""
-          >
-            <div>
-              The Drawer #2
-            </div>
-          </div>
-          <div
-            data-css-qs2rg7=""
-          >
-            <button
-              aria-label="Expand"
-              data-css-7jbmom=""
-              onClick={[Function]}
-            >
-              <div
-                data-css-1byjzqg=""
-              >
-                <div
-                  data-css-otejxm=""
-                >
-                  <svg
-                    aria-label="caret down icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </button>
-          </div>
-        </div>
-        <div
-          data-css-1i2htk9=""
-        >
-          <div
-            data-css-1j3g0qd=""
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 24,
-        "padding": 48,
-      }
-    }
-  >
-    <div>
-      <div>
-        <div
-          data-css-1fq8nx6=""
-        >
-          <div
-            data-css-1oot5vc=""
-            onClick={[Function]}
-          >
-            <div
-              data-css-euzj8=""
-            >
-              <div>
-                The Drawer #1
-              </div>
-            </div>
-            <div
-              data-css-qs2rg7=""
-            >
-              <button
-                aria-label="Expand"
-                data-css-7jbmom=""
-                onClick={[Function]}
-              >
-                <div
-                  data-css-1byjzqg=""
-                >
-                  <div
-                    data-css-otejxm=""
-                  >
-                    <svg
-                      aria-label="caret down icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </button>
-            </div>
-          </div>
-          <div
-            data-css-1i2htk9=""
-          >
-            <div
-              data-css-1j3g0qd=""
-            />
-          </div>
-        </div>
-      </div>
-      <div>
-        <div
-          data-css-1fq8nx6=""
-        >
-          <div
-            data-css-1oot5vc=""
-            onClick={[Function]}
-          >
-            <div
-              data-css-euzj8=""
-            >
-              <div>
-                The Drawer #2
-              </div>
-            </div>
-            <div
-              data-css-qs2rg7=""
-            >
-              <button
-                aria-label="Expand"
-                data-css-7jbmom=""
-                onClick={[Function]}
-              >
-                <div
-                  data-css-1byjzqg=""
-                >
-                  <div
-                    data-css-otejxm=""
-                  >
-                    <svg
-                      aria-label="caret down icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </button>
-            </div>
-          </div>
-          <div
-            data-css-1i2htk9=""
-          >
-            <div
-              data-css-1j3g0qd=""
-            />
-          </div>
-        </div>
-      </div>
-      <div>
-        <div
-          data-css-1fq8nx6=""
-        >
-          <div
-            data-css-1oot5vc=""
-            onClick={[Function]}
-          >
-            <div
-              data-css-euzj8=""
-            >
-              <div>
-                The Drawer #2
-              </div>
-            </div>
-            <div
-              data-css-qs2rg7=""
-            >
-              <button
-                aria-label="Expand"
-                data-css-7jbmom=""
-                onClick={[Function]}
-              >
-                <div
-                  data-css-1byjzqg=""
-                >
-                  <div
-                    data-css-otejxm=""
-                  >
-                    <svg
-                      aria-label="caret down icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </button>
-            </div>
-          </div>
-          <div
-            data-css-1i2htk9=""
-          >
-            <div
-              data-css-1j3g0qd=""
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots drawer using custom aria label 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 24,
-        "padding": 48,
-      }
-    }
-  >
-    <div
-      data-css-1fq8nx6=""
-    >
-      <div
-        data-css-1oot5vc=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-euzj8=""
-        >
-          <div>
-            Drawer Base Here
-          </div>
-        </div>
-        <div
-          data-css-qs2rg7=""
-        >
-          <button
-            aria-label="Expand custom drawer"
-            data-css-7jbmom=""
-            onClick={[Function]}
-          >
-            <div
-              data-css-1byjzqg=""
-            >
-              <div
-                data-css-otejxm=""
-              >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
-        </div>
-      </div>
-      <div
-        data-css-1i2htk9=""
-      >
-        <div
-          data-css-1j3g0qd=""
-        >
-          Drawer Content Here
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots drawer using onToggle prop 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 24,
-        "padding": 48,
-      }
-    }
-  >
-    <div>
-      <div
-        data-css-1fq8nx6=""
-      >
-        <div
-          data-css-1oot5vc=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-euzj8=""
-          >
-            <div>
-              Drawer is 
-              closed
-            </div>
-          </div>
-          <div
-            data-css-qs2rg7=""
-          >
-            <button
-              aria-label="Expand"
-              data-css-7jbmom=""
-              onClick={[Function]}
-            >
-              <div
-                data-css-1byjzqg=""
-              >
-                <div
-                  data-css-otejxm=""
-                >
-                  <svg
-                    aria-label="caret down icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </button>
-          </div>
-        </div>
-        <div
-          data-css-1i2htk9=""
-        >
-          <div
-            data-css-1j3g0qd=""
-          >
-            Drawer Content Here
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots drawer using startOpen prop 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 24,
-        "padding": 48,
-      }
-    }
-  >
+        Toggle drawer
+      </span>
+    </button>
     <div
       data-css-1fq8nx6=""
     >
@@ -839,8 +31,18 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
         <div
           data-css-euzj8=""
         >
-          <div>
-            Base here
+          <div
+            style={
+              Object {
+                "padding": "10px 0",
+              }
+            }
+          >
+            <p
+              data-css-145tgfu=""
+            >
+              Drawer Base Here
+            </p>
           </div>
         </div>
         <div
@@ -878,8 +80,18 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
         <div
           data-css-1j3g0qd=""
         >
-          <div>
-            Panel here
+          <div
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <p
+              data-css-145tgfu=""
+            >
+              Drawer Base Here
+            </p>
           </div>
         </div>
       </div>
@@ -888,19 +100,276 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer with row component 1`] = `
+exports[`Storyshots drawer default 1`] = `
 <div
-  data-css-claeju=""
+  style={
+    Object {
+      "padding": 48,
+    }
+  }
 >
   <div
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 24,
-        "padding": 48,
-      }
-    }
+    data-css-1fq8nx6=""
   >
+    <div
+      data-css-1oot5vc=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-euzj8=""
+      >
+        <div
+          style={
+            Object {
+              "padding": "10px 0",
+            }
+          }
+        >
+          <p
+            data-css-145tgfu=""
+          >
+            Drawer Base Here
+          </p>
+        </div>
+      </div>
+      <div
+        data-css-qs2rg7=""
+      >
+        <button
+          aria-label="Expand"
+          data-css-7jbmom=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-1byjzqg=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                />
+              </svg>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      data-css-1i2htk9=""
+    >
+      <div
+        data-css-1j3g0qd=""
+      >
+        <div
+          style={
+            Object {
+              "padding": 20,
+            }
+          }
+        >
+          <p
+            data-css-145tgfu=""
+          >
+            Drawer Base Here
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots drawer row component with actions 1`] = `
+<div
+  style={
+    Object {
+      "padding": 48,
+    }
+  }
+>
+  <div
+    data-css-1fq8nx6=""
+  >
+    <div
+      data-css-1oot5vc=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-euzj8=""
+      >
+        <div
+          data-css-vl7fes=""
+        >
+          <div
+            data-css-js3ti3=""
+          >
+            <span
+              data-css-15yq56v=""
+            >
+              <a
+                href="https://duckduckgo.com?q=image"
+              >
+                <img
+                  src="https://cataas.com/cat"
+                />
+              </a>
+            </span>
+            <div
+              data-css-t9uarq=""
+            >
+              <span
+                data-css-1fxa3fl=""
+                onBlur={[Function]}
+                onFocus={[Function]}
+              >
+                <a
+                  href="https://duckduckgo.com?q=overlay"
+                >
+                  Overlay
+                </a>
+              </span>
+            </div>
+          </div>
+          <div
+            data-css-kxulf3=""
+          >
+            <div
+              data-css-1jlgfae=""
+            >
+              <span
+                data-css-1le2bq0=""
+              >
+                <a
+                  href="https://duckduckgo.com?q=title"
+                >
+                  I'm a Row with Actions
+                </a>
+              </span>
+            </div>
+            <div
+              data-css-cnfu1f=""
+            >
+              <span
+                data-css-1kcrbi9=""
+              >
+                <span
+                  data-css-1le2bq0=""
+                >
+                  <a
+                    href="https://duckduckgo.com?q=cats"
+                  >
+                    Kitten McCatbuns
+                  </a>
+                </span>
+              </span>
+              <span
+                aria-hidden={true}
+                data-css-kykfz1=""
+              >
+                ·
+              </span>
+              <span
+                data-css-1kcrbi9=""
+              >
+                23 hours of cuteness
+              </span>
+            </div>
+          </div>
+          <div
+            data-css-1akhza9=""
+          >
+            <button
+              data-css-2qvjr2=""
+              onClick={[Function]}
+            >
+              <div
+                data-css-otejxm=""
+              >
+                <svg
+                  aria-label="more icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-qs2rg7=""
+      >
+        <button
+          aria-label="Expand"
+          data-css-7jbmom=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-1byjzqg=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                />
+              </svg>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      data-css-1i2htk9=""
+    >
+      <div
+        data-css-1j3g0qd=""
+      >
+        <div
+          style={
+            Object {
+              "padding": 20,
+            }
+          }
+        >
+          <p
+            data-css-145tgfu=""
+          >
+            Drawer Base Here
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots drawer stack of drawers 1`] = `
+<div
+  style={
+    Object {
+      "padding": 48,
+    }
+  }
+>
+  <div>
     <div
       data-css-1fq8nx6=""
     >
@@ -912,66 +381,17 @@ exports[`Storyshots drawer with row component 1`] = `
           data-css-euzj8=""
         >
           <div
-            data-css-vl7fes=""
+            style={
+              Object {
+                "padding": "10px 0",
+              }
+            }
           >
-            <div
-              data-css-js3ti3=""
+            <p
+              data-css-145tgfu=""
             >
-              <div
-                data-css-y8jh93=""
-              />
-            </div>
-            <div
-              data-css-kxulf3=""
-            >
-              <div
-                data-css-1jlgfae=""
-              >
-                Look at me! I'm a &lt;Row /&gt;!
-              </div>
-              <div
-                data-css-cnfu1f=""
-              >
-                <span
-                  data-css-1kcrbi9=""
-                >
-                  Kitten McCatbuns
-                </span>
-                <span
-                  aria-hidden={true}
-                  data-css-kykfz1=""
-                >
-                  ·
-                </span>
-                <span
-                  data-css-1kcrbi9=""
-                >
-                  23 hours of cuteness
-                </span>
-              </div>
-            </div>
-            <div
-              data-css-okadky=""
-            >
-              <button
-                data-css-2qvjr2=""
-              >
-                <div
-                  data-css-otejxm=""
-                >
-                  <svg
-                    aria-label="more icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
-                    />
-                  </svg>
-                </div>
-              </button>
-            </div>
+              The Drawer #1
+            </p>
           </div>
         </div>
         <div
@@ -1009,7 +429,809 @@ exports[`Storyshots drawer with row component 1`] = `
         <div
           data-css-1j3g0qd=""
         >
-          Drawer Content Here
+          <div
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <p
+              data-css-145tgfu=""
+            >
+              Drawer Base Here
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1fq8nx6=""
+    >
+      <div
+        data-css-1oot5vc=""
+        onClick={[Function]}
+      >
+        <div
+          data-css-euzj8=""
+        >
+          <div
+            style={
+              Object {
+                "padding": "10px 0",
+              }
+            }
+          >
+            <p
+              data-css-145tgfu=""
+            >
+              The Drawer #2
+            </p>
+          </div>
+        </div>
+        <div
+          data-css-qs2rg7=""
+        >
+          <button
+            aria-label="Expand"
+            data-css-7jbmom=""
+            onClick={[Function]}
+          >
+            <div
+              data-css-1byjzqg=""
+            >
+              <div
+                data-css-otejxm=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        data-css-1i2htk9=""
+      >
+        <div
+          data-css-1j3g0qd=""
+        >
+          <div
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <p
+              data-css-145tgfu=""
+            >
+              Drawer Base Here
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1fq8nx6=""
+    >
+      <div
+        data-css-1oot5vc=""
+        onClick={[Function]}
+      >
+        <div
+          data-css-euzj8=""
+        >
+          <div
+            style={
+              Object {
+                "padding": "10px 0",
+              }
+            }
+          >
+            <p
+              data-css-145tgfu=""
+            >
+              The Drawer #2
+            </p>
+          </div>
+        </div>
+        <div
+          data-css-qs2rg7=""
+        >
+          <button
+            aria-label="Expand"
+            data-css-7jbmom=""
+            onClick={[Function]}
+          >
+            <div
+              data-css-1byjzqg=""
+            >
+              <div
+                data-css-otejxm=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        data-css-1i2htk9=""
+      >
+        <div
+          data-css-1j3g0qd=""
+        >
+          <div
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <p
+              data-css-145tgfu=""
+            >
+              Drawer Base Here
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
+<div
+  style={
+    Object {
+      "padding": 48,
+    }
+  }
+>
+  <div>
+    <div>
+      <div
+        data-css-1fq8nx6=""
+      >
+        <div
+          data-css-1oot5vc=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-euzj8=""
+          >
+            <div
+              style={
+                Object {
+                  "padding": "10px 0",
+                }
+              }
+            >
+              <p
+                data-css-145tgfu=""
+              >
+                The Drawer #1
+              </p>
+            </div>
+          </div>
+          <div
+            data-css-qs2rg7=""
+          >
+            <button
+              aria-label="Expand"
+              data-css-7jbmom=""
+              onClick={[Function]}
+            >
+              <div
+                data-css-1byjzqg=""
+              >
+                <div
+                  data-css-otejxm=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          data-css-1i2htk9=""
+        >
+          <div
+            data-css-1j3g0qd=""
+          >
+            <div
+              style={
+                Object {
+                  "padding": 20,
+                }
+              }
+            >
+              <p
+                data-css-145tgfu=""
+              >
+                Drawer Base Here
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-1fq8nx6=""
+      >
+        <div
+          data-css-1oot5vc=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-euzj8=""
+          >
+            <div
+              style={
+                Object {
+                  "padding": "10px 0",
+                }
+              }
+            >
+              <p
+                data-css-145tgfu=""
+              >
+                The Drawer #2
+              </p>
+            </div>
+          </div>
+          <div
+            data-css-qs2rg7=""
+          >
+            <button
+              aria-label="Expand"
+              data-css-7jbmom=""
+              onClick={[Function]}
+            >
+              <div
+                data-css-1byjzqg=""
+              >
+                <div
+                  data-css-otejxm=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          data-css-1i2htk9=""
+        >
+          <div
+            data-css-1j3g0qd=""
+          >
+            <div
+              style={
+                Object {
+                  "padding": 20,
+                }
+              }
+            >
+              <p
+                data-css-145tgfu=""
+              >
+                Drawer Base Here
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-1fq8nx6=""
+      >
+        <div
+          data-css-1oot5vc=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-euzj8=""
+          >
+            <div
+              style={
+                Object {
+                  "padding": "10px 0",
+                }
+              }
+            >
+              <p
+                data-css-145tgfu=""
+              >
+                The Drawer #2
+              </p>
+            </div>
+          </div>
+          <div
+            data-css-qs2rg7=""
+          >
+            <button
+              aria-label="Expand"
+              data-css-7jbmom=""
+              onClick={[Function]}
+            >
+              <div
+                data-css-1byjzqg=""
+              >
+                <div
+                  data-css-otejxm=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          data-css-1i2htk9=""
+        >
+          <div
+            data-css-1j3g0qd=""
+          >
+            <div
+              style={
+                Object {
+                  "padding": 20,
+                }
+              }
+            >
+              <p
+                data-css-145tgfu=""
+              >
+                Drawer Base Here
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots drawer using custom aria label 1`] = `
+<div
+  style={
+    Object {
+      "padding": 48,
+    }
+  }
+>
+  <div
+    data-css-1fq8nx6=""
+  >
+    <div
+      data-css-1oot5vc=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-euzj8=""
+      >
+        <div
+          style={
+            Object {
+              "padding": "10px 0",
+            }
+          }
+        >
+          <p
+            data-css-145tgfu=""
+          >
+            Drawer Base Here
+          </p>
+        </div>
+      </div>
+      <div
+        data-css-qs2rg7=""
+      >
+        <button
+          aria-label="Expand custom drawer"
+          data-css-7jbmom=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-1byjzqg=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                />
+              </svg>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      data-css-1i2htk9=""
+    >
+      <div
+        data-css-1j3g0qd=""
+      >
+        <div
+          style={
+            Object {
+              "padding": 20,
+            }
+          }
+        >
+          <p
+            data-css-145tgfu=""
+          >
+            Drawer Base Here
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots drawer using onToggle prop 1`] = `
+<div
+  style={
+    Object {
+      "padding": 48,
+    }
+  }
+>
+  <div>
+    <div
+      data-css-1fq8nx6=""
+    >
+      <div
+        data-css-1oot5vc=""
+        onClick={[Function]}
+      >
+        <div
+          data-css-euzj8=""
+        >
+          <div
+            style={
+              Object {
+                "padding": "10px 0",
+              }
+            }
+          >
+            <p
+              data-css-145tgfu=""
+            >
+              Drawer is 
+              closed
+            </p>
+          </div>
+        </div>
+        <div
+          data-css-qs2rg7=""
+        >
+          <button
+            aria-label="Expand"
+            data-css-7jbmom=""
+            onClick={[Function]}
+          >
+            <div
+              data-css-1byjzqg=""
+            >
+              <div
+                data-css-otejxm=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        data-css-1i2htk9=""
+      >
+        <div
+          data-css-1j3g0qd=""
+        >
+          <div
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <p
+              data-css-145tgfu=""
+            >
+              Drawer Base Here
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots drawer using startOpen prop 1`] = `
+<div
+  style={
+    Object {
+      "padding": 48,
+    }
+  }
+>
+  <div
+    data-css-1fq8nx6=""
+  >
+    <div
+      data-css-i9wfit=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-euzj8=""
+      >
+        <div
+          style={
+            Object {
+              "padding": "10px 0",
+            }
+          }
+        >
+          <p
+            data-css-145tgfu=""
+          >
+            Drawer Base Here
+          </p>
+        </div>
+      </div>
+      <div
+        data-css-qs2rg7=""
+      >
+        <button
+          aria-label="Collapse"
+          data-css-7jbmom=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-xnveog=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                />
+              </svg>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      data-css-ule0ur=""
+    >
+      <div
+        data-css-1j3g0qd=""
+      >
+        <div
+          style={
+            Object {
+              "padding": 20,
+            }
+          }
+        >
+          <p
+            data-css-145tgfu=""
+          >
+            Drawer Base Here
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots drawer with row component 1`] = `
+<div
+  style={
+    Object {
+      "padding": 48,
+    }
+  }
+>
+  <div
+    data-css-1fq8nx6=""
+  >
+    <div
+      data-css-1oot5vc=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-euzj8=""
+      >
+        <div
+          data-css-vl7fes=""
+        >
+          <div
+            data-css-js3ti3=""
+          >
+            <div
+              data-css-y8jh93=""
+            />
+          </div>
+          <div
+            data-css-kxulf3=""
+          >
+            <div
+              data-css-1jlgfae=""
+            >
+              Look at me! I'm a &lt;Row /&gt;!
+            </div>
+            <div
+              data-css-cnfu1f=""
+            >
+              <span
+                data-css-1kcrbi9=""
+              >
+                Kitten McCatbuns
+              </span>
+              <span
+                aria-hidden={true}
+                data-css-kykfz1=""
+              >
+                ·
+              </span>
+              <span
+                data-css-1kcrbi9=""
+              >
+                23 hours of cuteness
+              </span>
+            </div>
+          </div>
+          <div
+            data-css-okadky=""
+          >
+            <button
+              data-css-2qvjr2=""
+            >
+              <div
+                data-css-otejxm=""
+              >
+                <svg
+                  aria-label="more icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-qs2rg7=""
+      >
+        <button
+          aria-label="Expand"
+          data-css-7jbmom=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-1byjzqg=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                />
+              </svg>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      data-css-1i2htk9=""
+    >
+      <div
+        data-css-1j3g0qd=""
+      >
+        <div
+          style={
+            Object {
+              "padding": 20,
+            }
+          }
+        >
+          <p
+            data-css-145tgfu=""
+          >
+            Drawer Base Here
+          </p>
         </div>
       </div>
     </div>

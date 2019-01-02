@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 
 import { storiesOf } from '@storybook/react'
@@ -9,8 +10,33 @@ import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 import Button from '@pluralsight/ps-design-system-button/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import Row from '@pluralsight/ps-design-system-row/react'
+import Text from '@pluralsight/ps-design-system-text/react'
 
 import Drawer from '..'
+
+const DrawerBase = props => (
+  <div style={{ padding: '10px 0' }}>
+    <Text.P {...props} />
+  </div>
+)
+DrawerBase.propTypes = {
+  children: PropTypes.node
+}
+DrawerBase.defaultProps = {
+  children: 'Drawer Base Here'
+}
+
+const DrawerContent = props => (
+  <div style={{ padding: 20 }}>
+    <Text.P {...props} />
+  </div>
+)
+DrawerContent.propTypes = {
+  children: PropTypes.node
+}
+DrawerContent.defaultProps = {
+  children: 'Drawer Base Here'
+}
 
 class ControlledDrawerStory extends React.Component {
   constructor(props) {
@@ -28,8 +54,9 @@ class ControlledDrawerStory extends React.Component {
     return (
       <div>
         <Button onClick={this.toggle}>Toggle drawer</Button>
-        <Drawer base={<div>Drawer Base Here</div>} isOpen={this.state.isOpen}>
-          Drawer Content Here
+
+        <Drawer base={<DrawerBase />} isOpen={this.state.isOpen}>
+          <DrawerContent />
         </Drawer>
       </div>
     )
@@ -52,10 +79,14 @@ class OnToggleDrawerStory extends React.Component {
     return (
       <div>
         <Drawer
-          base={<div>Drawer is {this.state.isOpen ? 'open' : 'closed'}</div>}
+          base={
+            <DrawerBase>
+              Drawer is {this.state.isOpen ? 'open' : 'closed'}
+            </DrawerBase>
+          }
           onToggle={this.handleToggle}
         >
-          Drawer Content Here
+          <DrawerContent />
         </Drawer>
       </div>
     )
@@ -63,17 +94,17 @@ class OnToggleDrawerStory extends React.Component {
 }
 
 storiesOf('drawer', module)
-  .addDecorator(story => (
-    <div style={{ color: 'white', padding: 48, fontSize: 24 }}>{story()}</div>
-  ))
+  .addDecorator(story => <div style={{ padding: 48 }}>{story()}</div>)
   .addDecorator(themeDecorator(addons))
   .add('default', () => (
-    <Drawer base={<div>Drawer Base Here</div>}>Drawer Content Here</Drawer>
+    <Drawer base={<DrawerBase />}>
+      <DrawerContent />
+    </Drawer>
   ))
   .add('controlled', () => <ControlledDrawerStory />)
   .add('using startOpen prop', () => (
-    <Drawer startOpen base={<div>Base here</div>}>
-      <div>Panel here</div>
+    <Drawer startOpen base={<DrawerBase />}>
+      <DrawerContent />
     </Drawer>
   ))
   .add('using onToggle prop', () => <OnToggleDrawerStory />)
@@ -91,7 +122,7 @@ storiesOf('drawer', module)
         />
       }
     >
-      Drawer Content Here
+      <DrawerContent />
     </Drawer>
   ))
   .add('row component with actions', () => (
@@ -134,34 +165,47 @@ storiesOf('drawer', module)
         />
       }
     >
-      Drawer Content Here
+      <DrawerContent />
     </Drawer>
   ))
   .add('stack of drawers', () => (
     <div>
-      <Drawer base={<div>The Drawer #1</div>} />
-      <Drawer base={<div>The Drawer #2</div>} />
-      <Drawer base={<div>The Drawer #2</div>} />
+      <Drawer base={<DrawerBase>The Drawer #1</DrawerBase>}>
+        <DrawerContent />
+      </Drawer>
+
+      <Drawer base={<DrawerBase>The Drawer #2</DrawerBase>}>
+        <DrawerContent />
+      </Drawer>
+
+      <Drawer base={<DrawerBase>The Drawer #2</DrawerBase>}>
+        <DrawerContent />
+      </Drawer>
     </div>
   ))
   .add('stack of non-sibling drawers', () => (
     <div>
       <div>
-        <Drawer base={<div>The Drawer #1</div>} />
+        <Drawer base={<DrawerBase>The Drawer #1</DrawerBase>}>
+          <DrawerContent />
+        </Drawer>
       </div>
+
       <div>
-        <Drawer base={<div>The Drawer #2</div>} />
+        <Drawer base={<DrawerBase>The Drawer #2</DrawerBase>}>
+          <DrawerContent />
+        </Drawer>
       </div>
+
       <div>
-        <Drawer base={<div>The Drawer #2</div>} />
+        <Drawer base={<DrawerBase>The Drawer #2</DrawerBase>}>
+          <DrawerContent />
+        </Drawer>
       </div>
     </div>
   ))
   .add('using custom aria label', () => (
-    <Drawer
-      base={<div>Drawer Base Here</div>}
-      toggleButtonAriaLabel="custom drawer"
-    >
-      Drawer Content Here
+    <Drawer base={<DrawerBase />} toggleButtonAriaLabel="custom drawer">
+      <DrawerContent />
     </Drawer>
   ))

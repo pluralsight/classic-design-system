@@ -35,10 +35,11 @@
     "react": ">=0.15.0 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.9.2",
-    "@pluralsight/ps-design-system-button": "^10.11.4",
-    "@pluralsight/ps-design-system-row": "^3.0.3",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.3.2",
+    "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-button": "*",
+    "@pluralsight/ps-design-system-row": "*",
+    "@pluralsight/ps-design-system-text": "*",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "*",
     "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/react": "^4.0.0",
     "babel-cli": "^6.25.0",
