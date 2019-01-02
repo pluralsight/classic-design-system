@@ -32,7 +32,8 @@ const combineClasses = (className, { size, themeName }) => {
   )
 
   // NOTE: a `size` prop disables responsive media queries
-  const media = size
+  const removeResponsiveMediaQueries = !!size
+  const media = removeResponsiveMediaQueries
     ? glamor.css(css[className + sizeClasses[size]])
     : buildMediaClasses(className)
 
