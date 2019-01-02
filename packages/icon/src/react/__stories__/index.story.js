@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Icon from '..'
+import Icon from '../../../dist/react'
 
 const colorStory = storiesOf('appearance', module)
 Object.values(Icon.colors).forEach(color =>

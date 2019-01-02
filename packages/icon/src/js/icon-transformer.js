@@ -38,7 +38,13 @@ const transformFile = filePath => {
   content = content.replace('"use strict";', '')
   content = content.replace(';', '')
   content = insertBeforeChar(content, '{', 'Object.assign(')
-  content = insertAfterChar(content, '}', ', filterReactProps(props))')
+  content = insertAfterChar(
+    content,
+    '}',
+    ", filterReactProps(props, { tagName: 'svg' }))"
+  )
+
+  content = content.replace('fill-rule', 'fillRule')
 
   return content
 }

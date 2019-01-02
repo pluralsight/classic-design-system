@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-icon",
-  "version": "9.0.2",
+  "version": "9.0.3",
   "description": "Design System component for icon ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -13,7 +13,10 @@
     "build:css": "build-css",
     "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build:js -- --watch",
-    "prepublish": "npm run build",
+    "clean": "run-s clean:dist clean:svg",
+    "clean:dist": "rimraf dist",
+    "clean:svg": "rimraf src/js/icons/*.dist.js",
+    "prepublish": "run-s clean build",
     "storybook": "start-storybook -p 6006",
     "svg:clean": "node build/svg-clean",
     "test": "../../node_modules/.bin/jest",
@@ -45,6 +48,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "npm-run-all": "^4.1.2",
+    "rimraf": "^2.6.2",
     "svgo": "0.5.6"
   }
 }
