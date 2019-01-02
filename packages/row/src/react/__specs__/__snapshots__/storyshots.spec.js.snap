@@ -1150,14 +1150,14 @@ exports[`Storyshots in drawer medium 1`] = `
     }
   >
     <div
-      className="css-1fq8nx6"
+      data-css-1fq8nx6=""
     >
       <div
-        className="css-1oot5vc"
+        data-css-1oot5vc=""
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          data-css-euzj8=""
         >
           <div
             data-css-vl7fes=""
@@ -1213,15 +1213,15 @@ exports[`Storyshots in drawer medium 1`] = `
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          data-css-qs2rg7=""
         >
           <button
             aria-label="Expand"
-            className="css-xipskh"
+            data-css-7jbmom=""
             onClick={[Function]}
           >
             <div
-              className="css-1byjzqg"
+              data-css-1byjzqg=""
             >
               <div
                 data-css-otejxm=""
@@ -1242,10 +1242,10 @@ exports[`Storyshots in drawer medium 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        data-css-1i2htk9=""
       >
         <div
-          className="css-1j3g0qd"
+          data-css-1j3g0qd=""
         >
           <div>
             some goodies in the drawer
@@ -1270,14 +1270,14 @@ exports[`Storyshots in drawer small 1`] = `
     }
   >
     <div
-      className="css-1fq8nx6"
+      data-css-1fq8nx6=""
     >
       <div
-        className="css-1oot5vc"
+        data-css-1oot5vc=""
         onClick={[Function]}
       >
         <div
-          className="css-euzj8"
+          data-css-euzj8=""
         >
           <div
             data-css-vl7fes=""
@@ -1326,15 +1326,15 @@ exports[`Storyshots in drawer small 1`] = `
           </div>
         </div>
         <div
-          className="css-qs2rg7"
+          data-css-qs2rg7=""
         >
           <button
             aria-label="Expand"
-            className="css-xipskh"
+            data-css-7jbmom=""
             onClick={[Function]}
           >
             <div
-              className="css-1byjzqg"
+              data-css-1byjzqg=""
             >
               <div
                 data-css-otejxm=""
@@ -1355,10 +1355,10 @@ exports[`Storyshots in drawer small 1`] = `
         </div>
       </div>
       <div
-        className="css-1i2htk9"
+        data-css-1i2htk9=""
       >
         <div
-          className="css-1j3g0qd"
+          data-css-1j3g0qd=""
         >
           <div>
             some goodies in the drawer
