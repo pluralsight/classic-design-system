@@ -2,53 +2,8 @@
 //       https://github.com/facebook/prop-types/blob/master/factoryWithTypeCheckers.js
 //       https://github.com/wzrdzl/react-element-proptypes
 
-const ANONYMOUS = 'ANONYMOUS'
-
-const getDisplayName = Component => {
-  if (typeof Component === 'string') return Component
-
-  if (!Component) return undefined
-
-  return Component.displayName || Component.name || 'Component'
-}
-
-const isNil = value => value == null
-
-function PropTypeError(message) {
-  this.message = message
-  this.stack = ''
-}
-PropTypeError.prototype = Error.prototype
-
-function createChainableTypeChecker(validate) {
-  function checkType(
-    isRequired,
-    props,
-    propName,
-    componentName = ANONYMOUS,
-    location,
-    propFullName
-  ) {
-    propFullName = propFullName || propName
-
-    const propValue = props[propName]
-
-    if (!isNil(propValue))
-      return validate(props, propName, componentName, location, propFullName)
-
-    if (!isRequired) return null
-
-    const nilType = propValue === null ? 'null' : 'undefined'
-    const msg = `The ${location} \`${propFullName}\` is marked as required in ${componentName}, but it's value is \`${nilType}\``
-
-    return new PropTypeError(msg)
-  }
-
-  const chainedCheckType = checkType.bind(null, false)
-  chainedCheckType.isRequired = checkType.bind(null, true)
-
-  return chainedCheckType
-}
+import PropTypeError from './prop-type-error'
+import { createChainableTypeChecker, getDisplayName } from './utils'
 
 export default function elementOfType(ExpectedElementType) {
   function validate(props, propName, componentName, location, propFullName) {

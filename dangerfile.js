@@ -9,16 +9,6 @@ const checkDescription = ({ minLength = 10 } = {}) => {
   warn(':pencil2: Please add a description.')
 }
 
-// NOTE: jest snapshots make this useless because of the high amount of changes
-// TODO: find a way to filter out snapshot changes
-const checkFileChangeLimit = ({ threshold = 1000 } = {}) => {
-  const { github: { pr } } = danger // prettier-ignore
-
-  if (pr.additions + pr.deletions <= threshold) return
-
-  warn(':exclamation: This is a big PR. Can you break this into smaller PRs?')
-}
-
 const checkForReviewer = () => {
   const { github } = danger
   if (github.pr && github.pr.requested_reviewers.length > 0) return
@@ -34,14 +24,13 @@ void (async function main() {
   toolbox.jsConsoleCommands({ logType: 'fail' })
 
   // are new images minified
-  toolbox.imageMinified({ logType: 'fail' })
+  toolbox.imageMinifiedJpg()
+  toolbox.imageMinifiedPng()
 
   // are there skipped or focused tests
   toolbox.jsTestShortcuts({ logTypeSkipped: 'message', logTypeFocused: 'fail' })
 
   checkDescription()
-
-  checkFileChangeLimit()
 
   checkForReviewer()
 })()

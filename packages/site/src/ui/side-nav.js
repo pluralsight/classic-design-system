@@ -1,10 +1,11 @@
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import Link from './link'
+import core from '@pluralsight/ps-design-system-core'
+import Icon from '@pluralsight/ps-design-system-icon/react'
+
 import { withHeadings } from './content'
+import Link from './link'
 
 const css = {
   linkActiveWidth: '8px',
@@ -29,6 +30,7 @@ Group.propTypes = {
 const GroupTitle = props => (
   <div className="groupTitle">
     {props.children}
+
     <style jsx>{`
       .groupTitle {
         margin: 0;
@@ -36,6 +38,7 @@ const GroupTitle = props => (
         font-size: ${core.type.fontSizeXSmall};
         line-height: ${core.type.lineHeightExtra};
         font-weight: ${core.type.fontWeightMedium};
+        text-transform: uppercase;
       }
     `}</style>
   </div>
@@ -44,14 +47,17 @@ GroupTitle.propTypes = {
   children: PropTypes.node
 }
 
-const InternalLinks = props =>
-  Array.isArray(props.headings) && props.headings.length > 0 ? (
+const InternalLinks = ({ headings = [] }) => {
+  if (headings.length <= 0) return null
+
+  return (
     <div className="links">
-      {props.headings.map(h => (
+      {headings.map(h => (
         <a className="link" href={h.href} key={h.href}>
           {h.label}
         </a>
       ))}
+
       <style jsx>{`
         @keyframes grow {
           100% {
@@ -92,14 +98,10 @@ const InternalLinks = props =>
         }
       `}</style>
     </div>
-  ) : null
-InternalLinks.propTypes = {
-  headings: PropTypes.arrayOf(
-    PropTypes.shape({
-      href: PropTypes.string,
-      label: PropTypes.string
-    })
   )
+}
+InternalLinks.propTypes = {
+  headings: PropTypes.array
 }
 
 class NavLink extends React.Component {
@@ -169,6 +171,11 @@ NavLink.propTypes = {
 NavLink.contextTypes = {
   pathname: PropTypes.string
 }
+NavLink.propTypes = {
+  children: PropTypes.node,
+  headings: PropTypes.arrayOf(PropTypes.any),
+  href: PropTypes.string
+}
 
 const LogoSvg = _ => (
   <svg
@@ -212,8 +219,8 @@ const Logo = _ => (
       <span className="box">
         <LogoSvg />
         <h2 className="text">
-          <span className="textCompany">PLURALSIGHT</span>
-          <span className="textTitle">DESIGN SYSTEM</span>
+          <span className="textCompany">Pluralsight</span>
+          <span className="textTitle">Design System</span>
         </h2>
       </span>
     </Link>
@@ -248,12 +255,14 @@ const Logo = _ => (
           font-weight: ${core.type.fontWeightMedium};
           color: ${core.colors.black};
           font-family: ${core.type.fontFamily};
+          text-transform: uppercase;
         }
         .textTitle {
           display: block;
           font-size: 8px;
           color: ${core.colors.gray03};
           font-weight: ${core.type.fontWeightMedium};
+          text-transform: uppercase;
         }
       }
     `}</style>
@@ -265,6 +274,7 @@ const Close = props => (
     <button className="button" onClick={props.onCloseClick}>
       <Icon id={Icon.ids.close} />
     </button>
+
     <style jsx>{`
       .close {
       }
@@ -295,15 +305,17 @@ const Close = props => (
   </div>
 )
 Close.propTypes = {
-  onCloseClick: PropTypes.func
+  onCloseClick: PropTypes.func.isRequired
 }
 
 const SideNav = withHeadings(props => (
-  <div className={`sidenav ${props.isOpen ? 'sidenavOpen' : ''}`}>
+  <nav className={`sidenav ${props.isOpen ? 'sidenavOpen' : ''}`}>
     <Close onCloseClick={props.onCloseClick} />
+
     <Logo />
+
     <Group>
-      <GroupTitle>INTRODUCTION</GroupTitle>
+      <GroupTitle>Introduction</GroupTitle>
       <NavLink href="/install">Install</NavLink>
       <NavLink href="/design-assets">Design assets</NavLink>
       <NavLink href="/contribute" headings={props.headings}>
@@ -311,15 +323,17 @@ const SideNav = withHeadings(props => (
       </NavLink>
       <NavLink href="/roadmap">Roadmap</NavLink>
     </Group>
+
     <Group>
-      <GroupTitle>CORE</GroupTitle>
+      <GroupTitle>Core</GroupTitle>
       <NavLink href="/core/color">Color</NavLink>
       <NavLink href="/core/motion">Motion</NavLink>
       <NavLink href="/core/spacing">Spacing</NavLink>
       <NavLink href="/core/typography">Typography</NavLink>
     </Group>
+
     <Group>
-      <GroupTitle>COMPONENTS</GroupTitle>
+      <GroupTitle>Components</GroupTitle>
       <NavLink href="/components/actionmenu" headings={props.headings}>
         Action Menu
       </NavLink>
@@ -361,6 +375,9 @@ const SideNav = withHeadings(props => (
       </NavLink>
       <NavLink href="/components/dropdown" headings={props.headings}>
         Dropdown
+      </NavLink>
+      <NavLink href="/components/emptystate" headings={props.headings}>
+        Empty State
       </NavLink>
       <NavLink href="/components/errors" headings={props.headings}>
         Errors
@@ -416,8 +433,9 @@ const SideNav = withHeadings(props => (
         View Toggle
       </NavLink>
     </Group>
+
     <Group>
-      <GroupTitle>PATTERNS</GroupTitle>
+      <GroupTitle>Patterns</GroupTitle>
       <NavLink href="/patterns/iconography" headings={props.headings}>
         Iconography
       </NavLink>
@@ -425,6 +443,7 @@ const SideNav = withHeadings(props => (
         Voice & tone
       </NavLink>
     </Group>
+
     <style jsx>{`
       .sidenav {
         position: fixed;
@@ -456,11 +475,11 @@ const SideNav = withHeadings(props => (
         }
       }
     `}</style>
-  </div>
+  </nav>
 ))
+
 SideNav.propTypes = {
-  headings: PropTypes.arrayOf(PropTypes.object),
-  isOpen: PropTypes.bool,
-  onCloseClick: PropTypes.func
+  isOpen: PropTypes.bool
 }
+
 export default SideNav
