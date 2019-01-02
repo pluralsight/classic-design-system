@@ -180,6 +180,7 @@ exports[`Storyshots onClose tailPosition topRight 1`] = `
       </button>
       Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut
       <div
+        aria-hidden={true}
         data-css-5wh3fj=""
       />
     </div>
@@ -203,6 +204,7 @@ exports[`Storyshots tailPosition accent bottomCenter 1`] = `
     >
       Some text
       <div
+        aria-hidden={true}
         data-css-1pbctcp=""
       />
     </div>
@@ -226,6 +228,7 @@ exports[`Storyshots tailPosition accent bottomLeft 1`] = `
     >
       Some text
       <div
+        aria-hidden={true}
         data-css-1k62s61=""
       />
     </div>
@@ -249,6 +252,7 @@ exports[`Storyshots tailPosition accent bottomRight 1`] = `
     >
       Some text
       <div
+        aria-hidden={true}
         data-css-1de95l2=""
       />
     </div>
@@ -272,6 +276,7 @@ exports[`Storyshots tailPosition accent topCenter 1`] = `
     >
       Some text
       <div
+        aria-hidden={true}
         data-css-1ifp0wm=""
       />
     </div>
@@ -295,6 +300,7 @@ exports[`Storyshots tailPosition accent topLeft 1`] = `
     >
       Some text
       <div
+        aria-hidden={true}
         data-css-1wbzblg=""
       />
     </div>
@@ -318,6 +324,7 @@ exports[`Storyshots tailPosition accent topRight 1`] = `
     >
       Some text
       <div
+        aria-hidden={true}
         data-css-7ye6f=""
       />
     </div>
@@ -341,6 +348,7 @@ exports[`Storyshots tailPosition basic bottomCenter 1`] = `
     >
       Some text
       <div
+        aria-hidden={true}
         data-css-cy4rwj=""
       />
     </div>
@@ -364,6 +372,7 @@ exports[`Storyshots tailPosition basic bottomLeft 1`] = `
     >
       Some text
       <div
+        aria-hidden={true}
         data-css-8tr9sl=""
       />
     </div>
@@ -387,6 +396,7 @@ exports[`Storyshots tailPosition basic bottomRight 1`] = `
     >
       Some text
       <div
+        aria-hidden={true}
         data-css-hs048c=""
       />
     </div>
@@ -410,6 +420,7 @@ exports[`Storyshots tailPosition basic topCenter 1`] = `
     >
       Some text
       <div
+        aria-hidden={true}
         data-css-15eem71=""
       />
     </div>
@@ -433,6 +444,7 @@ exports[`Storyshots tailPosition basic topLeft 1`] = `
     >
       Some text
       <div
+        aria-hidden={true}
         data-css-1vlp377=""
       />
     </div>
@@ -456,6 +468,7 @@ exports[`Storyshots tailPosition basic topRight 1`] = `
     >
       Some text
       <div
+        aria-hidden={true}
         data-css-5wh3fj=""
       />
     </div>
