@@ -1,11 +1,10 @@
-import addons from '@storybook/addons'
-import core from '@pluralsight/ps-design-system-core'
+import { storiesOf } from '@storybook/react'
 import * as glamor from 'glamor'
 import React from 'react'
-import { storiesOf } from '@storybook/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Text from '../react'
+import core from '@pluralsight/ps-design-system-core'
+
+import Text from '..'
 
 const style = { color: core.colors.pink }
 const className = glamor.css({ color: `${core.colors.orange} !important` })
@@ -14,9 +13,7 @@ const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingXLarge }}>{storyFn()}</div>
 )
 
-const heading = storiesOf('Heading', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
+const heading = storiesOf('Heading', module).addDecorator(PaddingDecorator)
 
 Object.keys(Text.Heading.sizes).forEach(size =>
   heading.add(`size: ${size}`, _ => (
@@ -38,9 +35,7 @@ heading.add('className override', _ => (
   </Text.Heading>
 ))
 
-const p = storiesOf('P', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
+const p = storiesOf('P', module).addDecorator(PaddingDecorator)
 
 p.add('vanilla', _ => <Text.P>lorem ipsum</Text.P>)
 p.add('stacked', _ => (
@@ -129,9 +124,7 @@ p.add('style override', _ => <Text.P style={style}>pink</Text.P>)
 
 p.add('className override', _ => <Text.P className={className}>orange</Text.P>)
 
-const list = storiesOf('List', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
+const list = storiesOf('List', module).addDecorator(PaddingDecorator)
 
 Object.keys(Text.List.types).forEach(typeProp =>
   list.add(`type: ${typeProp}`, _ => (
@@ -145,9 +138,8 @@ Object.keys(Text.List.types).forEach(typeProp =>
   ))
 )
 
-const code = storiesOf('Code', module)
+storiesOf('Code', module)
   .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
   .add('empty', () => (
     <Text.P>
       before|
