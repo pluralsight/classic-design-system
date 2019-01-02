@@ -4,7 +4,10 @@ import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
 
-import Text from '..'
+import List from '../list'
+import Code from '../code'
+import Heading from '../heading'
+import P from '../p'
 
 const style = { color: core.colors.pink }
 const className = glamor.css({ color: `${core.colors.orange} !important` })
@@ -15,32 +18,32 @@ const PaddingDecorator = storyFn => (
 
 const heading = storiesOf('Heading', module).addDecorator(PaddingDecorator)
 
-Object.keys(Text.Heading.sizes).forEach(size =>
+Object.keys(Heading.sizes).forEach(size =>
   heading.add(`size: ${size}`, _ => (
-    <Text.Heading size={size}>
+    <Heading size={size}>
       <h1>{size}</h1>
-    </Text.Heading>
+    </Heading>
   ))
 )
 
 heading.add('style override', _ => (
-  <Text.Heading style={style}>
+  <Heading style={style}>
     <h2>pink</h2>
-  </Text.Heading>
+  </Heading>
 ))
 
 heading.add('className override', _ => (
-  <Text.Heading className={className}>
+  <Heading className={className}>
     <h2>orange</h2>
-  </Text.Heading>
+  </Heading>
 ))
 
 const p = storiesOf('P', module).addDecorator(PaddingDecorator)
 
-p.add('vanilla', _ => <Text.P>lorem ipsum</Text.P>)
+p.add('vanilla', _ => <P>lorem ipsum</P>)
 p.add('stacked', _ => (
   <div>
-    <Text.P>
+    <P>
       We need a paradigm shift quick win. Not the long pole in my tent red flag
       value prop yet accountable talk move the needle into the weeds loop back.
       Due diligence after I ran into Helen at a restaurant, I realized she was
@@ -62,9 +65,9 @@ p.add('stacked', _ => (
       future-proof this, yet rock Star/Ninja get buy-in. Blue sky. Staff
       engagement. Sacred cow translating our vision of having a market leading
       platfrom good optics yet curate this is meaningless.
-    </Text.P>
+    </P>
 
-    <Text.P>
+    <P>
       To be inspired is to become creative, innovative and energized we want
       this philosophy to trickle down to all our stakeholders horsehead offer,
       and are we in agreeance, so in this space. Lean into that problem even
@@ -98,8 +101,8 @@ p.add('stacked', _ => (
       the wheel we need a paradigm shift. Commitment to the cause run it up the
       flagpole, proceduralize, but can you send me an invite? yet please advise
       soonest. Time to open the kimono red flag drink the Kool-aid.
-    </Text.P>
-    <Text.P>
+    </P>
+    <P>
       UX. Pixel pushing value-added, nor draw a line in the sand pig in a
       python, but this vendor is incompetent . Vertical integration those
       options are already baked in with this model. Proceduralize design
@@ -116,75 +119,75 @@ p.add('stacked', _ => (
       money come up with something buzzworthy open door policy. We need to
       socialize the comms with the wider stakeholder community driving the
       initiative forward yet time to open the kimono.
-    </Text.P>
+    </P>
   </div>
 ))
 
-p.add('style override', _ => <Text.P style={style}>pink</Text.P>)
+p.add('style override', _ => <P style={style}>pink</P>)
 
-p.add('className override', _ => <Text.P className={className}>orange</Text.P>)
+p.add('className override', _ => <P className={className}>orange</P>)
 
 const list = storiesOf('List', module).addDecorator(PaddingDecorator)
 
-Object.keys(Text.List.types).forEach(typeProp =>
+Object.keys(List.types).forEach(typeProp =>
   list.add(`type: ${typeProp}`, _ => (
-    <Text.List type={typeProp}>
-      <Text.List.Item>one</Text.List.Item>
-      <Text.List.Item>two</Text.List.Item>
-      <Text.List.Item>three</Text.List.Item>
-      <Text.List.Item>four</Text.List.Item>
-      <Text.List.Item>five</Text.List.Item>
-    </Text.List>
+    <List type={typeProp}>
+      <List.Item>one</List.Item>
+      <List.Item>two</List.Item>
+      <List.Item>three</List.Item>
+      <List.Item>four</List.Item>
+      <List.Item>five</List.Item>
+    </List>
   ))
 )
 
 storiesOf('Code', module)
   .addDecorator(PaddingDecorator)
   .add('empty', () => (
-    <Text.P>
+    <P>
       before|
-      <Text.Code />
+      <Code />
       |after
-    </Text.P>
+    </P>
   ))
-  .add('standalone', () => <Text.Code>inline code</Text.Code>)
+  .add('standalone', () => <Code>inline code</Code>)
   .add('lead single line', () => (
-    <Text.P>
-      <Text.Code>inline code</Text.Code> that is here
-    </Text.P>
+    <P>
+      <Code>inline code</Code> that is here
+    </P>
   ))
   .add('ends single line', () => (
-    <Text.P>
-      This is where we see <Text.Code>inline code</Text.Code>
-    </Text.P>
+    <P>
+      This is where we see <Code>inline code</Code>
+    </P>
   ))
   .add('middle of paragraph', () => (
-    <Text.P>
+    <P>
       Please advise soonest streamline data-point, and execute , price point.
       This is not the hill i want to die on going forward. Diversify kpis not
       the long pole in my tent. Synergize productive mindfulness can you send me
       an invite? nor high-level so back of the net vertical integration.
-      Deliverables <Text.Code>inline code</Text.Code> granularity minimize
-      backwards overflow. Baseline locked and loaded, and locked and loaded. Get
-      buy-in programmatically, or out of the loop. I'll book a meeting so we can
+      Deliverables <Code>inline code</Code> granularity minimize backwards
+      overflow. Baseline locked and loaded, and locked and loaded. Get buy-in
+      programmatically, or out of the loop. I'll book a meeting so we can
       solution this before the sprint is over get buy-in, and closing these
       latest prospects is like putting socks on an octopus. Knowledge is power
       bake it in but take five, punch the tree, and come back in here with a
       clear head.
-    </Text.P>
+    </P>
   ))
   .add('maintains whitespace', () => (
-    <Text.Code>{`                in the middle                `}</Text.Code>
+    <Code>{`                in the middle                `}</Code>
   ))
   .add('line wrap', () => (
-    <Text.P>
+    <P>
       text at the start
-      <Text.Code>
+      <Code>
         buy-in programmatically, or out of the loop. I'll book a meeting so we
         can solution this before the sprint is over get buy-in, and closing
         these latest prospects is like putting socks on an octopus. Knowledge is
         power
-      </Text.Code>
+      </Code>
       text on the end
-    </Text.P>
+    </P>
   ))
