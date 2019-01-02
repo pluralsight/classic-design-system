@@ -20,10 +20,10 @@ describe('EmptyState', () => {
   })
 
   it('exports compound components', () => {
-    expect(EmptyState.Actions).toExist()
-    expect(EmptyState.Caption).toExist()
-    expect(EmptyState.Heading).toExist()
-    expect(EmptyState.Illustration).toExist()
+    expect(EmptyState).toHaveProperty('Actions')
+    expect(EmptyState).toHaveProperty('Caption')
+    expect(EmptyState).toHaveProperty('Heading')
+    expect(EmptyState).toHaveProperty('Illustration')
   })
 
   describe('when rendered with compound components', () => {

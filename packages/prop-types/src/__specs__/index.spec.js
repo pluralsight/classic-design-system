@@ -10,5 +10,5 @@ Object {
 })
 
 test.each(Object.keys(checkers))(`"%s" should have a production stub`, name => {
-  expect(stubs[name]).toExist()
+  expect(stubs).toHaveProperty(name)
 })
