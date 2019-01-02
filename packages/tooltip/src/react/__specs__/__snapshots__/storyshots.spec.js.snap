@@ -12,7 +12,7 @@ exports[`Storyshots appearance accent 1`] = `
     }
   >
     <div
-      data-css-1h3d2h=""
+      data-css-18j5alm=""
     >
       Some text
     </div>
@@ -32,7 +32,7 @@ exports[`Storyshots appearance basic 1`] = `
     }
   >
     <div
-      data-css-1xcmvtm=""
+      data-css-1luw3o6=""
     >
       Some text
     </div>
@@ -52,7 +52,7 @@ exports[`Storyshots onClose accent 1`] = `
     }
   >
     <div
-      data-css-lemt7k=""
+      data-css-j8au9m=""
     >
       <button
         aria-label="Close tooltip"
@@ -88,7 +88,7 @@ exports[`Storyshots onClose basic 1`] = `
     }
   >
     <div
-      data-css-lva7cx=""
+      data-css-3ikfuq=""
     >
       <button
         aria-label="Close tooltip"
@@ -124,7 +124,7 @@ exports[`Storyshots onClose short text 1`] = `
     }
   >
     <div
-      data-css-lva7cx=""
+      data-css-3ikfuq=""
     >
       <button
         aria-label="Close tooltip"
@@ -160,7 +160,7 @@ exports[`Storyshots onClose tailPosition topRight 1`] = `
     }
   >
     <div
-      data-css-u623zn=""
+      data-css-3ikfuq=""
     >
       <button
         aria-label="Close tooltip"
@@ -179,6 +179,9 @@ exports[`Storyshots onClose tailPosition topRight 1`] = `
         </svg>
       </button>
       Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut
+      <div
+        data-css-5wh3fj=""
+      />
     </div>
   </div>
 </div>
@@ -196,9 +199,12 @@ exports[`Storyshots tailPosition accent bottomCenter 1`] = `
     }
   >
     <div
-      data-css-1vwv1li=""
+      data-css-18j5alm=""
     >
       Some text
+      <div
+        data-css-1pbctcp=""
+      />
     </div>
   </div>
 </div>
@@ -216,9 +222,12 @@ exports[`Storyshots tailPosition accent bottomLeft 1`] = `
     }
   >
     <div
-      data-css-1lriutz=""
+      data-css-18j5alm=""
     >
       Some text
+      <div
+        data-css-1k62s61=""
+      />
     </div>
   </div>
 </div>
@@ -236,9 +245,12 @@ exports[`Storyshots tailPosition accent bottomRight 1`] = `
     }
   >
     <div
-      data-css-1ru56xj=""
+      data-css-18j5alm=""
     >
       Some text
+      <div
+        data-css-1de95l2=""
+      />
     </div>
   </div>
 </div>
@@ -256,9 +268,12 @@ exports[`Storyshots tailPosition accent topCenter 1`] = `
     }
   >
     <div
-      data-css-1kmvxnm=""
+      data-css-18j5alm=""
     >
       Some text
+      <div
+        data-css-1ifp0wm=""
+      />
     </div>
   </div>
 </div>
@@ -276,9 +291,12 @@ exports[`Storyshots tailPosition accent topLeft 1`] = `
     }
   >
     <div
-      data-css-vv4x1f=""
+      data-css-18j5alm=""
     >
       Some text
+      <div
+        data-css-1wbzblg=""
+      />
     </div>
   </div>
 </div>
@@ -296,9 +314,12 @@ exports[`Storyshots tailPosition accent topRight 1`] = `
     }
   >
     <div
-      data-css-10pz9xb=""
+      data-css-18j5alm=""
     >
       Some text
+      <div
+        data-css-7ye6f=""
+      />
     </div>
   </div>
 </div>
@@ -316,9 +337,12 @@ exports[`Storyshots tailPosition basic bottomCenter 1`] = `
     }
   >
     <div
-      data-css-obwrkd=""
+      data-css-1luw3o6=""
     >
       Some text
+      <div
+        data-css-cy4rwj=""
+      />
     </div>
   </div>
 </div>
@@ -336,9 +360,12 @@ exports[`Storyshots tailPosition basic bottomLeft 1`] = `
     }
   >
     <div
-      data-css-n4ssed=""
+      data-css-1luw3o6=""
     >
       Some text
+      <div
+        data-css-8tr9sl=""
+      />
     </div>
   </div>
 </div>
@@ -356,9 +383,12 @@ exports[`Storyshots tailPosition basic bottomRight 1`] = `
     }
   >
     <div
-      data-css-1jvaq8t=""
+      data-css-1luw3o6=""
     >
       Some text
+      <div
+        data-css-hs048c=""
+      />
     </div>
   </div>
 </div>
@@ -376,9 +406,12 @@ exports[`Storyshots tailPosition basic topCenter 1`] = `
     }
   >
     <div
-      data-css-1u0yixh=""
+      data-css-1luw3o6=""
     >
       Some text
+      <div
+        data-css-15eem71=""
+      />
     </div>
   </div>
 </div>
@@ -396,9 +429,12 @@ exports[`Storyshots tailPosition basic topLeft 1`] = `
     }
   >
     <div
-      data-css-dp94ad=""
+      data-css-1luw3o6=""
     >
       Some text
+      <div
+        data-css-1vlp377=""
+      />
     </div>
   </div>
 </div>
@@ -416,9 +452,12 @@ exports[`Storyshots tailPosition basic topRight 1`] = `
     }
   >
     <div
-      data-css-zq89xr=""
+      data-css-1luw3o6=""
     >
       Some text
+      <div
+        data-css-5wh3fj=""
+      />
     </div>
   </div>
 </div>
