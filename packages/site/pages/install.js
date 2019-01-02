@@ -1,9 +1,9 @@
+import React from 'react'
+
 import Badge from '@pluralsight/ps-design-system-badge/react'
-import core from '@pluralsight/ps-design-system-core'
 
 import {
   Chrome,
-  Code,
   Content,
   Doc,
   P,
@@ -72,7 +72,7 @@ For usage details, see the [Core Usage docs](/core/usage).
 
 ## Use Components
 
-Most components use [glamorous](https://github.com/paypal/glamorous), which has a peerDependency on [glamor](https://github.com/threepointone/glamor).  It needs to be installed exactly once per application that uses these components:
+[glamor](https://github.com/threepointone/glamor) needs to be installed exactly once per application that uses these components:
 
 \`\`\`bash
 npm install glamor
