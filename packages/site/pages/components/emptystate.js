@@ -1,5 +1,6 @@
 import React from 'react'
 
+import core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button/react'
 import EmptyState from '@pluralsight/ps-design-system-emptystate/react'
 import Text from '@pluralsight/ps-design-system-text/react'
@@ -15,8 +16,44 @@ import {
   PageHeading,
   PropTypes,
   SectionHeading,
+  ThemeToggle,
   withServerProps
 } from '../../src/ui'
+
+class IllustrationPreviewGrid extends React.Component {
+  get names() {
+    return Object.values(EmptyState.Illustration.names)
+  }
+
+  render() {
+    return (
+      <ThemeToggle.Container>
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr 1fr 1fr',
+            gridGap: '1em',
+            paddingTop: core.layout.spacingXXLarge,
+            paddingBottom: core.layout.spacingMedium
+          }}
+        >
+          {this.names.map(name => (
+            <EmptyState
+              key={name}
+              style={{ alignSelf: 'center', margin: '0', padding: '0' }}
+              heading={
+                <EmptyState.Heading style={{ fontSize: 14 }}>
+                  {name}
+                </EmptyState.Heading>
+              }
+              illustration={<EmptyState.Illustration name={name} />}
+            />
+          ))}
+        </div>
+      </ThemeToggle.Container>
+    )
+  }
+}
 
 const EmptyStateDocumentation = withServerProps(props => (
   <Chrome>
@@ -174,41 +211,8 @@ If the absence of data occurs due to a user query such as a search, consider dis
 
       <SectionHeading>Illustration set</SectionHeading>
       <br />
-      <Example.React
-        orient="vertical"
-        includes={{
-          IllustrationExample: () => {
-            const names = Object.values(EmptyState.Illustration.names)
+      <IllustrationPreviewGrid />
 
-            return (
-              <div
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: '1fr 1fr 1fr 1fr',
-                  gridGap: `1em`,
-                  paddingTop: 40
-                }}
-              >
-                {names.map(name => (
-                  <EmptyState
-                    key={name}
-                    style={{ alignSelf: 'center', margin: 0, padding: 0 }}
-                    heading={
-                      <EmptyState.Heading style={{ fontSize: 14 }}>
-                        {name}
-                      </EmptyState.Heading>
-                    }
-                    illustration={<EmptyState.Illustration name={name} />}
-                  />
-                ))}
-              </div>
-            )
-          }
-        }}
-        themeToggle
-        showCodes={false}
-        codes={[`<IllustrationExample />`]}
-      />
       <SectionHeading>Custom illustration</SectionHeading>
       <P>
         If no illustration in the standard set is found to be suitable, you may

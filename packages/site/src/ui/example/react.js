@@ -229,7 +229,7 @@ class ReactExample extends React.Component {
 
         <OutputDecorationGlobalStyles />
 
-        {this.props.showCodes && <div className="src">{this.renderSrc()}</div>}
+        <div className="src">{this.renderSrc()}</div>
 
         <style jsx>{`
           .example {
@@ -253,14 +253,12 @@ ReactExample.propTypes = {
   outputChildStyle: PropTypes.object,
   outputStyle: PropTypes.object,
   /* eslint-enable react/no-unused-prop-types */
-  showCodes: PropTypes.bool,
   themeName: PropTypes.oneOf(Object.keys(Theme.names)),
   themeToggle: PropTypes.bool
 }
 
 ReactExample.defaultProps = {
   orient: 'horizontal',
-  showCodes: true,
   themeName: Theme.defaultName,
   themeToggle: false
 }
