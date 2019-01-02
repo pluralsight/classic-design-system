@@ -1,13 +1,11 @@
 import PropTypeError from '../prop-type-error'
 
-const ANONYMOUS = 'ANONYMOUS'
-
 export function createChainableTypeChecker(validate) {
   function checkType(
     isRequired,
     props,
     propName,
-    componentName = ANONYMOUS,
+    componentName = 'ANONYMOUS',
     location,
     propFullName
   ) {
