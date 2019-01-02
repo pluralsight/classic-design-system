@@ -6,7 +6,6 @@ import React from 'react'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
 import css, { sizeClasses, themeClasses } from '../css'
 import * as vars from '../vars'
@@ -145,8 +144,7 @@ EmptyState.propTypes = {
   caption: elementOfType(Caption),
   heading: elementOfType(Heading).isRequired,
   illustration: elementOfType(Illustration),
-  size: PropTypes.oneOf(Object.values(EmptyState.sizes)),
-  themeName: PropTypes.oneOf(Object.values(themeNames))
+  size: PropTypes.oneOf(Object.values(EmptyState.sizes))
 }
 
 EmptyState.Actions = Actions
