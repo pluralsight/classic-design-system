@@ -1,80 +1,92 @@
-import Collapsible from './collapsible'
-import core from '@pluralsight/ps-design-system-core'
-import glamorous, { Div } from 'glamorous'
-import { transparentize } from 'polished'
-import Icon, {
-  sizes as iconSizes
-} from '@pluralsight/ps-design-system-icon/react'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/react'
+import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import Icon from '@pluralsight/ps-design-system-icon/react'
+import {
+  names as themeNames,
+  withTheme
+} from '@pluralsight/ps-design-system-theme/react'
+
 import css from '../css'
+import Collapsible from './collapsible'
 
 if (typeof window !== 'undefined') require('element-closest')
 
-const { gray01, gray02, gray03, gray04, gray06, white } = core.colors
+const styles = {
+  drawer: ({ themeName }) =>
+    glamor.css(css[`.psds-drawer.psds-theme--${themeName}`]),
+  base: ({ isOpen }) =>
+    glamor.css(
+      css['.psds-drawer__base'],
+      isOpen && css['.psds-drawer__base--isOpen']
+    ),
+  panel: ({ isOpen, themeName }) =>
+    glamor.css(
+      css['.psds-drawer__panel'],
+      isOpen && css[`.psds-drawer__panel.psds-theme--${themeName}`]
+    ),
+  panelContent: () => glamor.css(css[`.psds-drawer__panel-content`]),
+  rotatable: ({ isRotated }) =>
+    glamor.css(
+      css['.psds-drawer__rotatable'],
+      isRotated && css['.psds-drawer__rotatable--isOpen']
+    ),
+  toggleButtonContainer: () =>
+    glamor.css(css[`.psds-drawer__toggle-button-container`]),
+  toggleButton: ({ themeName }) =>
+    glamor.css(
+      css[`.psds-drawer__toggle-button`],
+      css[`.psds-drawer__toggle-button.psds-theme--${themeName}`]
+    )
+}
 
-const DrawerRoot = glamorous.div(
-  ({ themeName }) => css[`.psds-drawer.psds-theme--${themeName}`]
+const DrawerBase = props => (
+  <div {...styles.base(props)} {...filterReactProps(props)} />
 )
 
-const DrawerBase = glamorous.div(
-  {
-    ...css['.psds-drawer__base'],
-    ':hover': css['.psds-drawer__base:hover']
-  },
-  ({ isOpen }) =>
-    isOpen
-      ? {
-          ...css['.psds-drawer__base--isOpen'],
-          ':hover': css['.psds-drawer__base--isOpen:hover']
-        }
-      : {}
+const DrawerPanel = props => (
+  <div {...styles.panel(props)} {...filterReactProps(props)} />
 )
 
-const DrawerPanel = glamorous.div(
-  css['.psds-drawer__panel'],
-  ({ isOpen, themeName }) =>
-    isOpen ? css[`.psds-drawer__panel.psds-theme--${themeName}`] : {}
+const DrawerPanelContent = props => (
+  <div {...styles.panelContent(props)} {...filterReactProps(props)} />
 )
 
-const DrawerPanelContent = glamorous.div(css['.psds-drawer__panel-content'])
-
-const ToggleButtonContainer = glamorous.div(
-  css['.psds-drawer__toggle-button-container']
+const ToggleButtonContainer = props => (
+  <div {...styles.toggleButtonContainer(props)} {...filterReactProps(props)} />
 )
 
-const ToggleButton = glamorous.button(
-  css['.psds-drawer__toggle-button'],
-  ({ themeName }) => ({
-    ...css[`.psds-drawer__toggle-button.psds-theme--${themeName}`],
-    ':hover': css[`.psds-drawer__toggle-button.psds-theme--${themeName}:hover`],
-    ':active':
-      css[`.psds-drawer__toggle-button.psds-theme--${themeName}:active`]
-  })
+const ToggleButton = props => (
+  <button
+    {...styles.toggleButton(props)}
+    {...filterReactProps(props, { tagName: 'button' })}
+  />
 )
 
-const Rotatable = glamorous.div(
-  css['.psds-drawer__rotatable'],
-  ({ isRotated }) => (isRotated ? css['.psds-drawer__rotatable--isOpen'] : {})
+const Rotatable = props => (
+  <div {...styles.rotatable(props)} {...filterReactProps(props)} />
 )
 
 class Drawer extends React.Component {
   constructor(props) {
     super(props)
+
+    this.handleClick = this.handleClick.bind(this)
+    this.toggle = this.toggle.bind(this)
+
     this.state = { isOpen: this.props.startOpen }
   }
 
   get isControlledByProps() {
     return this.props.isOpen !== undefined && this.props.isOpen !== null
   }
+
   get isOpen() {
     return this.isControlledByProps ? this.props.isOpen : this.state.isOpen
   }
+
   getButtonAriaLabel() {
     const { toggleButtonAriaLabel } = this.props
     const prefix = this.isOpen ? 'Collapse' : 'Expand'
@@ -84,10 +96,12 @@ class Drawer extends React.Component {
   isClickOnDrawerBase(evt) {
     return !evt.target.closest('a, button')
   }
-  handleClick = evt => {
+
+  handleClick(evt) {
     if (this.isClickOnDrawerBase(evt)) this.toggle()
   }
-  toggle = () => {
+
+  toggle() {
     const isOpen = !this.isOpen
 
     if (this.props.onToggle) this.props.onToggle(isOpen)
@@ -96,18 +110,18 @@ class Drawer extends React.Component {
   }
 
   render() {
-    const {
-      isOpen,
-      context: { themeName = themeDefaultName }
-    } = this
+    const { themeName } = this.props
+    const { handleClick, isOpen } = this
+
     const ariaLabel = this.getButtonAriaLabel()
 
     return (
-      <DrawerRoot themeName={themeName}>
-        <DrawerBase isOpen={isOpen} onClick={this.handleClick}>
+      <div {...styles.drawer(this.props)} {...filterReactProps(this.props)}>
+        <DrawerBase isOpen={isOpen} onClick={handleClick}>
           <DrawerPanelContent themeName={themeName}>
             {this.props.base}
           </DrawerPanelContent>
+
           <ToggleButtonContainer>
             <ToggleButton
               onClick={this.toggle}
@@ -120,10 +134,11 @@ class Drawer extends React.Component {
             </ToggleButton>
           </ToggleButtonContainer>
         </DrawerBase>
+
         <DrawerPanel isOpen={isOpen} themeName={themeName}>
           <Collapsible isOpen={isOpen}>{this.props.children}</Collapsible>
         </DrawerPanel>
-      </DrawerRoot>
+      </div>
     )
   }
 }
@@ -131,20 +146,17 @@ class Drawer extends React.Component {
 Drawer.displayName = 'Drawer'
 
 Drawer.propTypes = {
-  children: PropTypes.node.isRequired,
   base: PropTypes.node.isRequired,
-  toggleButtonAriaLabel: PropTypes.string,
+  children: PropTypes.node.isRequired,
   isOpen: PropTypes.bool,
   onToggle: PropTypes.func,
-  startOpen: PropTypes.bool
+  startOpen: PropTypes.bool,
+  themeName: PropTypes.oneOf(Object.values(themeNames)),
+  toggleButtonAriaLabel: PropTypes.string
 }
 
 Drawer.defaultProps = {
   startOpen: false
 }
 
-Drawer.contextTypes = {
-  themeName: PropTypes.string
-}
-
-export default Drawer
+export default withTheme(Drawer)

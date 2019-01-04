@@ -1,15 +1,27 @@
-import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
-import glamorous from 'glamorous'
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import Arrow from './arrow'
+import Icon from '@pluralsight/ps-design-system-icon/react'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+
 import css from '../css'
 import * as vars from '../vars'
 
+import Arrow from './arrow'
+
+const slide = glamor.css.keyframes(
+  css['@keyframes psds-actionmenu__keyframes__slide']
+)
+
 const styles = {
+  divider: () => glamor.css(css['.psds-actionmenu__divider']),
+  menu: props =>
+    glamor.css(
+      css['.psds-actionmenu']({ slide }),
+      css[`.psds-actionmenu--origin-${props.origin}`],
+      props.css
+    ),
   item: ({ icon, isActive, nested }) =>
     glamor.css(
       css['.psds-actionmenu__item'],
@@ -163,7 +175,9 @@ ItemComponent.propTypes = {
   _origin: PropTypes.oneOf(Object.keys(vars.origins))
 }
 
-const Divider = glamorous.div(css['.psds-actionmenu__divider'])
+const Divider = props => (
+  <div {...styles.divider(props)} {...filterReactProps(props)} />
+)
 
 class DividerComponent extends React.Component {
   componentDidMount() {
@@ -177,7 +191,8 @@ class DividerComponent extends React.Component {
   }
 }
 DividerComponent.propTypes = {
-  _onDividerFocus: PropTypes.func
+  _onDividerFocus: PropTypes.func,
+  isActive: PropTypes.bool
 }
 
 const Overlay = props => (
@@ -187,35 +202,9 @@ const Overlay = props => (
   />
 )
 
-const slide = glamor.css.keyframes(
-  css['@keyframes psds-actionmenu__keyframes__slide']
+const Menu = props => (
+  <div {...styles.menu(props)} {...filterReactProps(props)} />
 )
-
-const Menu = glamorous.div(
-  css['.psds-actionmenu']({ slide }),
-  ({ origin }) => css[`.psds-actionmenu--origin-${origin}`]
-)
-
-// TODO: rm
-const calcMenuStyle = origin =>
-  ({
-    topLeft: {
-      left: 0,
-      top: 0
-    },
-    topRight: {
-      right: 0,
-      top: 0
-    },
-    bottomRight: {
-      bottom: 0,
-      right: 0
-    },
-    bottomLeft: {
-      left: 0,
-      bottom: 0
-    }
-  }[origin])
 
 class ActionMenuComponent extends React.Component {
   constructor(props) {
@@ -283,16 +272,14 @@ class ActionMenuComponent extends React.Component {
     }
   }
   render() {
+    const { ref: innerRef, ...rest } = this.props
+
     return (
       <Menu
-        css={this.props.css}
-        className={this.props.className}
+        {...rest}
+        innerRef={innerRef}
         onKeyDown={this.handleKeyDown}
-        origin={this.props.origin}
-        innerRef={this.props.ref}
         role="menu"
-        onClick={this.props.onClick}
-        style={this.props.style}
       >
         {React.Children.map(this.props.children, (child, i) =>
           React.cloneElement(child, {

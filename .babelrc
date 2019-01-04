@@ -1,9 +1,5 @@
 {
-  "plugins": [
-    "syntax-export-extensions",
-    "transform-export-extensions",
-    "glamorous-displayname"
-  ],
+  "plugins": ["syntax-export-extensions", "transform-export-extensions"],
   "presets": [
     "react",
     "stage-2",

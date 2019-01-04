@@ -1,14 +1,10 @@
 import { action } from '@storybook/addon-actions'
-import addons from '@storybook/addons'
-import React from 'react'
-import ReactDOM from 'react-dom'
 import { storiesOf } from '@storybook/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
+import React from 'react'
 
-import ViewToggle from '../react'
+import ViewToggle from '..'
 
 storiesOf('options count', module)
-  .addDecorator(themeDecorator(addons))
   .add('one', _ => (
     <ViewToggle>
       <ViewToggle.Option>The Only Option</ViewToggle.Option>
@@ -39,7 +35,6 @@ storiesOf('options count', module)
   ))
 
 storiesOf('active', module)
-  .addDecorator(themeDecorator(addons))
   .add('default first', _ => (
     <ViewToggle>
       <ViewToggle.Option>I'm active</ViewToggle.Option>
@@ -69,18 +64,15 @@ storiesOf('active', module)
     </ViewToggle>
   ))
 
-storiesOf('onSelect', module)
-  .addDecorator(themeDecorator(addons))
-  .add('handles click', _ => (
-    <ViewToggle onSelect={action('selected')}>
-      <ViewToggle.Option>Option 1</ViewToggle.Option>
-      <ViewToggle.Option>Option 2</ViewToggle.Option>
-      <ViewToggle.Option>Option 3</ViewToggle.Option>
-    </ViewToggle>
-  ))
+storiesOf('onSelect', module).add('handles click', _ => (
+  <ViewToggle onSelect={action('selected')}>
+    <ViewToggle.Option>Option 1</ViewToggle.Option>
+    <ViewToggle.Option>Option 2</ViewToggle.Option>
+    <ViewToggle.Option>Option 3</ViewToggle.Option>
+  </ViewToggle>
+))
 
 storiesOf('text length', module)
-  .addDecorator(themeDecorator(addons))
   .add('differing lengths', _ => (
     <ViewToggle>
       <ViewToggle.Option>
@@ -104,20 +96,18 @@ storiesOf('text length', module)
     </ViewToggle>
   ))
 
-storiesOf('dynamic options', module)
-  .addDecorator(themeDecorator(addons))
-  .add('sizes correctly', _ => {
-    const options = ['Apple', 'Banana', 'Orange']
-    return (
-      <ViewToggle>
-        {options.map(option => {
-          const active = option === 'Orange'
-          return (
-            <ViewToggle.Option key={option} active={active}>
-              {option}
-            </ViewToggle.Option>
-          )
-        })}
-      </ViewToggle>
-    )
-  })
+storiesOf('dynamic options', module).add('sizes correctly', _ => {
+  const options = ['Apple', 'Banana', 'Orange']
+  return (
+    <ViewToggle>
+      {options.map(option => {
+        const active = option === 'Orange'
+        return (
+          <ViewToggle.Option key={option} active={active}>
+            {option}
+          </ViewToggle.Option>
+        )
+      })}
+    </ViewToggle>
+  )
+})

@@ -1,19 +1,24 @@
-import core from '@pluralsight/ps-design-system-core'
-import glamorous from 'glamorous'
+import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+
 import css from '../css'
 
-const Container = glamorous.div(css['.psds-drawer__collapsible'])
-
 export default class Collapsible extends React.Component {
+  constructor() {
+    super(...arguments)
+    this.setContainerElement = this.setContainerElement.bind(this)
+  }
+
   componentDidMount() {
     this.updateOverflowStyle(this.props.isOpen)
     if (!this.props.isOpen) {
       this.containerElement.style.height = 0
     }
   }
+
   componentWillReceiveProps(nextProps) {
     if (nextProps.isOpen !== this.props.isOpen) {
       this.toggle(nextProps.isOpen)
@@ -24,6 +29,7 @@ export default class Collapsible extends React.Component {
     if (isOpen) setTimeout(() => this.open(), 0)
     else this.close()
   }
+
   open() {
     const element = this.containerElement
     this.setHeightToAuto(element)
@@ -38,6 +44,7 @@ export default class Collapsible extends React.Component {
       }
     })
   }
+
   close() {
     const element = this.containerElement
     this.setTransitionEnabled(false, element)
@@ -46,18 +53,21 @@ export default class Collapsible extends React.Component {
     this.updateOverflowStyle(false, true)
     this.setTransitionEnabled(true, element)
     element.style.height = '0px'
+
     return this.waitForHeightTransitionToEnd(element).then(() => {
       if (!this.props.isOpen) {
         this.updateOverflowStyle(false, false)
       }
     })
   }
+
   updateOverflowStyle(isOpen, isTransitioning = false) {
     this.containerElement.style.overflow =
       isTransitioning || !isOpen ? 'hidden' : 'visible'
     this.containerElement.style.visibility =
       isTransitioning || isOpen ? 'visible' : 'hidden'
   }
+
   setHeightToAuto(element) {
     const prevHeight = element.style.height
     element.style.height = 'auto'
@@ -66,12 +76,17 @@ export default class Collapsible extends React.Component {
     this.forceRepaint(element)
     element.style.height = autoHeight
   }
+
   setTransitionEnabled(enabled, element) {
     element.style.transition = enabled ? '' : 'none'
   }
+
+  // NOTE: see https://stackoverflow.com/a/3485654
   forceRepaint(element) {
-    element.offsetHeight // see https://stackoverflow.com/a/3485654
+    // eslint-disable-next-line no-unused-expressions
+    element.offsetHeight
   }
+
   waitForHeightTransitionToEnd(element) {
     return new Promise(resolve => {
       element.addEventListener(
@@ -86,15 +101,18 @@ export default class Collapsible extends React.Component {
       )
     })
   }
-  setContainerElement = e => {
-    this.containerElement = e
+
+  setContainerElement(el) {
+    this.containerElement = el
   }
 
   render() {
     return (
-      <Container innerRef={this.setContainerElement}>
-        {this.props.children}
-      </Container>
+      <div
+        {...glamor.css(css['.psds-drawer__collapsible'])}
+        {...filterReactProps(this.props)}
+        ref={this.setContainerElement}
+      />
     )
   }
 }

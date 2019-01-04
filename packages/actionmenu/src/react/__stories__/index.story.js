@@ -1,14 +1,12 @@
-import { action } from '@storybook/addon-actions'
 import addons from '@storybook/addons'
-import Button from '@pluralsight/ps-design-system-button/react'
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import React from 'react'
-import ReactDOM from 'react-dom'
 import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
+import React from 'react'
+
+import Icon from '@pluralsight/ps-design-system-icon/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import ActionMenu from '../react'
+import ActionMenu from '..'
 
 // TODO: snapshot test generator can't handle.
 // storiesOf('activations', module).addDecorator(themeDecorator(addons)).add('via button', _ => {
@@ -200,7 +198,7 @@ Object.keys(ActionMenu.origins).forEach(origin =>
   ))
 )
 
-const onClickStory = storiesOf('onClick', module)
+storiesOf('onClick', module)
   .addDecorator(themeDecorator(addons))
   .add('flat', _ => (
     <ActionMenu>
@@ -271,7 +269,7 @@ const onClickStory = storiesOf('onClick', module)
     </ActionMenu>
   ))
 
-const styleStory = storiesOf('customized styles', module)
+storiesOf('customized styles', module)
   .addDecorator(themeDecorator(addons))
   .add('item style', _ => (
     <ActionMenu>
@@ -287,7 +285,7 @@ const styleStory = storiesOf('customized styles', module)
     </ActionMenu>
   ))
 
-const linkStory = storiesOf('link', module)
+storiesOf('link', module)
   .addDecorator(themeDecorator(addons))
   .add('a w/ href', _ => (
     <ActionMenu>

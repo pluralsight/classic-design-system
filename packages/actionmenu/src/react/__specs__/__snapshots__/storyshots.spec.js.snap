@@ -5,7 +5,7 @@ exports[`Storyshots customized styles item style 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    data-css-1pg0ko5=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -75,7 +75,7 @@ exports[`Storyshots dividers edge 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    data-css-1pg0ko5=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -94,7 +94,7 @@ exports[`Storyshots dividers edge 1`] = `
       </button>
     </div>
     <div
-      className="css-rficis"
+      data-css-rficis=""
       tabIndex="-1"
     />
   </div>
@@ -106,7 +106,7 @@ exports[`Storyshots dividers sandwich 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    data-css-1pg0ko5=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -125,7 +125,7 @@ exports[`Storyshots dividers sandwich 1`] = `
       </button>
     </div>
     <div
-      className="css-rficis"
+      data-css-rficis=""
       tabIndex="-1"
     />
     <div
@@ -165,7 +165,7 @@ exports[`Storyshots link a w/ href 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    data-css-1pg0ko5=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -193,7 +193,7 @@ exports[`Storyshots menu items long text 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    data-css-1pg0ko5=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -234,7 +234,7 @@ exports[`Storyshots menu items long text with icon 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    data-css-1pg0ko5=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -279,7 +279,7 @@ exports[`Storyshots menu items multiple 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    data-css-1pg0ko5=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -334,7 +334,7 @@ exports[`Storyshots menu items one 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    data-css-1pg0ko5=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -361,7 +361,7 @@ exports[`Storyshots menu items with icons 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    data-css-1pg0ko5=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -479,7 +479,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
     }
   >
     <div
-      className="css-1992o3v"
+      data-css-1992o3v=""
       onKeyDown={[Function]}
       role="menu"
     >
@@ -545,7 +545,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
     }
   >
     <div
-      className="css-e49ryl"
+      data-css-e49ryl=""
       onKeyDown={[Function]}
       role="menu"
     >
@@ -611,7 +611,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
     }
   >
     <div
-      className="css-1pg0ko5"
+      data-css-1pg0ko5=""
       onKeyDown={[Function]}
       role="menu"
     >
@@ -677,7 +677,7 @@ exports[`Storyshots nested origin topRight 1`] = `
     }
   >
     <div
-      className="css-kv78c9"
+      data-css-kv78c9=""
       onKeyDown={[Function]}
       role="menu"
     >
@@ -734,7 +734,7 @@ exports[`Storyshots onClick flat 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    data-css-1pg0ko5=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -792,7 +792,7 @@ exports[`Storyshots onClick nested 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    data-css-1pg0ko5=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -1015,7 +1015,7 @@ exports[`Storyshots shouldFocusOnMount false 1`] = `
   data-css-claeju=""
 >
   <div
-    className="css-1pg0ko5"
+    data-css-1pg0ko5=""
     onKeyDown={[Function]}
     role="menu"
   >
