@@ -70,7 +70,7 @@ const List = props => (
 )
 
 const ActivePillBg = props => {
-  return <div {...styles.activePillBg(props)} {...filterReactProps(props)} />
+  return <div {...styles.activePillBg(props)} {...props} />
 }
 
 const PillBgSpacer = props => (
