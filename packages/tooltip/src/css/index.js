@@ -3,12 +3,16 @@ import { transparentize } from 'polished'
 
 import * as vars from '../vars'
 
+const shadowBlurWidth = '4px'
 const tailDimension = '14px'
 const diamondHeight = getDiamondHeight(tailDimension, tailDimension) + 'px'
 const tailTransformTop = `translate(calc(((${diamondHeight} - ${tailDimension})) / 2), calc(50% + (${diamondHeight} - ${tailDimension}))) rotate(45deg)`
 const tailTransformBottom = `translate(calc(((${diamondHeight} - ${tailDimension})) / 2), -50%) rotate(45deg)`
 
-const boxShadow = `0px 1px 4px ${transparentize(0.5, core.colors.black)}`
+const boxShadow = `0px 1px ${shadowBlurWidth} ${transparentize(
+  0.5,
+  core.colors.black
+)}`
 
 export default {
   [`@keyframes psds-tooltip__keyframes__fade`]: {
@@ -45,13 +49,13 @@ export default {
   [`.psds-tooltip__tail`]: {
     position: 'absolute',
     height: diamondHeight,
-    width: diamondHeight,
+    width: `calc(${diamondHeight} + 2 * ${shadowBlurWidth})`,
     overflow: 'hidden'
   },
   [`.psds-tooltip__tail:after`]: {
     position: 'absolute',
     top: 0,
-    left: 0,
+    left: shadowBlurWidth,
     display: 'block',
     content: ' ',
     whiteSpace: 'pre',
@@ -69,7 +73,7 @@ export default {
   },
   [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.topLeft}`]: {
     top: `calc(${diamondHeight} * -1)`,
-    left: tailDimension
+    left: `calc(${tailDimension} - ${shadowBlurWidth})`
   },
   [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.topLeft}:after`]: {
     transform: tailTransformTop,
@@ -86,7 +90,7 @@ export default {
   },
   [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.topRight}`]: {
     top: `calc(${diamondHeight} * -1)`,
-    right: tailDimension
+    right: `calc(${tailDimension} - ${shadowBlurWidth})`
   },
   [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.topRight}:after`]: {
     transform: tailTransformTop,
@@ -94,7 +98,7 @@ export default {
   },
   [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.bottomLeft}`]: {
     bottom: `calc(${diamondHeight} * -1)`,
-    left: tailDimension
+    left: `calc(${tailDimension} - ${shadowBlurWidth})`
   },
   [`.psds-tooltip__tail--tailPosition-${
     vars.tailPositions.bottomLeft
@@ -115,7 +119,7 @@ export default {
   },
   [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.bottomRight}`]: {
     bottom: `calc(${diamondHeight} * -1)`,
-    right: tailDimension
+    right: `calc(${tailDimension} - ${shadowBlurWidth})`
   },
   [`.psds-tooltip__tail--tailPosition-${
     vars.tailPositions.bottomRight
