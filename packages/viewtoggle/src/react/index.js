@@ -69,15 +69,10 @@ const List = props => (
   <div {...styles.list(props)} {...filterReactProps(props)} />
 )
 
-const ActivePillBg = props => {
-  return <div {...styles.activePillBg(props)} {...props} />
-}
+const ActivePillBg = props => <div {...styles.activePillBg(props)} {...props} />
 
 const PillBgSpacer = props => (
-  <span
-    {...styles.pillBgSpacer(props)}
-    {...filterReactProps(props, { tagName: 'span' })}
-  />
+  <span {...styles.pillBgSpacer(props)} {...props} />
 )
 
 const findActiveIndex = els =>
