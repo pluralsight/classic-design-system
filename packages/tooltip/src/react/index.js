@@ -1,8 +1,6 @@
-import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { transparentize } from 'polished'
 
 import css from '../css'
 import * as vars from '../vars'
@@ -11,20 +9,26 @@ const fade = glamor.css.keyframes(
   css[`@keyframes psds-tooltip__keyframes__fade`]
 )
 const styles = {
+  tail: ({ appearance, onClose, tailPosition }) =>
+    glamor.css(
+      css[`.psds-tooltip__tail`],
+      css[`.psds-tooltip__tail--appearance-${appearance}`],
+      css[`.psds-tooltip__tail--tailPosition-${tailPosition}`],
+      {
+        ':after': {
+          ...css['.psds-tooltip__tail:after'],
+          ...css[`.psds-tooltip__tail--appearance-${appearance}:after`],
+          ...css[`.psds-tooltip__tail--tailPosition-${tailPosition}:after`]
+        }
+      }
+    ),
   tooltip: ({ appearance, onClose, tailPosition }) =>
     glamor.css({
       ...css[`.psds-tooltip`]({ fade }),
       ...css[`.psds-tooltip--appearance-${appearance}`],
       ...(typeof onClose === 'function'
         ? css[`.psds-tooltip--closeable`]
-        : null),
-      ':after': tailPosition
-        ? {
-            ...css[`.psds-tooltip:after`],
-            ...css[`.psds-tooltip--appearance-${appearance}:after`],
-            ...css[`.psds-tooltip--tailPosition-${tailPosition}:after`]
-          }
-        : null
+        : null)
     }),
   close: ({ appearance }) =>
     glamor.css({
@@ -69,6 +73,9 @@ class Tooltip extends React.Component {
           <CloseButton appearance={props.appearance} onClose={props.onClose} />
         )}
         {props.children}
+        {props.tailPosition && (
+          <div {...styles.tail(props)} aria-hidden />
+        )}
       </div>
     )
   }
