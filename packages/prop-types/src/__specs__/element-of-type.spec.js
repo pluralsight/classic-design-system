@@ -5,7 +5,7 @@ import elementOfType from '../element-of-type'
 const Uno = () => null
 const Dos = () => null
 
-describe('elementOfType propType', () => {
+describe('elementOfType', () => {
   var COMPONENT_NAME = 'MockComponent'
   var PROP_LOCATION = 'prop'
   var PROP_NAME = 'testProp'
@@ -54,8 +54,4 @@ describe('elementOfType propType', () => {
       `"The prop \`testProp\` is marked as required in MockComponent, but it's value is \`null\`"`
     )
   })
-
-  it.skip('should work with PropTypes.arrayOf', () => {})
-
-  it.skip('should work with PropTypes.oneOfType', () => {})
 })

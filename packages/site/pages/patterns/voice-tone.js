@@ -1,21 +1,16 @@
 import core from '@pluralsight/ps-design-system-core'
-import Button from '@pluralsight/ps-design-system-button/react'
-import Dialog from '@pluralsight/ps-design-system-dialog/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react'
+import PropTypes from 'prop-types'
 import React from 'react'
-import ReactDOM from 'react-dom'
 import * as Text from '@pluralsight/ps-design-system-text/react'
 
 import {
   Chrome,
   Content,
-  Heading,
   Intro,
   Link,
   P,
   PageHeading,
-  PropTypes,
   SectionHeading,
   withServerProps
 } from '../../src/ui'
@@ -42,6 +37,9 @@ const ExampleHeader = props => (
     `}</style>
   </header>
 )
+ExampleHeader.propTypes = {
+  children: PropTypes.node
+}
 
 const PrincipleHeader = props => (
   <header className="header">
@@ -66,6 +64,9 @@ const PrincipleHeader = props => (
     `}</style>
   </header>
 )
+PrincipleHeader.propTypes = {
+  children: PropTypes.node
+}
 
 const QuoteBox = props => (
   <div
@@ -109,6 +110,9 @@ const QuoteBox = props => (
     `}</style>
   </div>
 )
+QuoteBox.propTypes = {
+  children: PropTypes.node
+}
 
 export default withServerProps(_ => (
   <Chrome>
@@ -172,8 +176,9 @@ export default withServerProps(_ => (
           href="https://en.wikipedia.org/wiki/Narration#Second-person"
         >
           second person
-        </Link>, meaning address the audience as “you,” “your,” etc. We talk to
-        our audience directly, addressing them as “you” not as “one,” “persons,”
+        </Link>
+        , meaning address the audience as “you,” “your,” etc. We talk to our
+        audience directly, addressing them as “you” not as “one,” “persons,”
         etc. (We want to avoid phrases like this: “To take a skill assessment,
         one needs to select…”) This language feels formal and unnatural.
       </P>
@@ -188,7 +193,8 @@ export default withServerProps(_ => (
           target="_blank"
         >
           challenge writing styleguide
-        </Link>.
+        </Link>
+        .
       </P>
 
       <Divider />
@@ -223,7 +229,7 @@ export default withServerProps(_ => (
       </EqualColumnLayout>
       <P>
         <ExampleHeader>Exclamation points</ExampleHeader>
-        Avoid over-using excalmation points, unless offering congratulations on
+        Avoid over-using exclamation points, unless offering congratulations on
         having completed a complex flow. Exclamation points aren’t a substitute
         for creating excitement.
       </P>

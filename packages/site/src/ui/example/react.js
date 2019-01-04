@@ -1,7 +1,14 @@
-import core from '@pluralsight/ps-design-system-core'
+/* eslint-disable no-eval */
+
+import { transform } from 'babel-standalone'
+import debounce from 'debounce'
+import PropTypes from 'prop-types'
+import React from 'react'
 import CodeMirror from 'react-codemirror'
+import ReactDOM from 'react-dom'
+
+import core from '@pluralsight/ps-design-system-core'
 import Theme from '@pluralsight/ps-design-system-theme/react'
-import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react'
 
 import CodeMirrorCss from '../../../vendor/codemirror-css'
 import CodeMirrorPsTheme from '../codemirror-ps-theme'
@@ -13,21 +20,15 @@ if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
   modeLoaded = true
 }
 
-import debounce from 'debounce'
-import PropTypes from 'prop-types'
-import React from 'react'
-import ReactDOM from 'react-dom'
-import SrcSwitcher from './src-switcher'
-import { transform } from 'babel-standalone'
+const compileSrc = src => {
+  const presets = [
+    'es2015', // TODO: replace with preset-env when supported
+    'react',
+    'stage-2'
+  ]
 
-const compileSrc = src =>
-  transform(src, {
-    presets: [
-      'es2015', // TODO: replace with preset-env when supported
-      'react',
-      'stage-2'
-    ]
-  }).code
+  return transform(src, { presets }).code
+}
 
 const formatSrc = code => code.trim()
 
@@ -114,9 +115,11 @@ class ReactExample extends React.Component {
     this.handleCodeChange = this.handleCodeChange.bind(this)
     this.handleThemeSelect = this.handleThemeSelect.bind(this)
   }
+
   componentDidMount() {
     this.renderOutput()
   }
+
   componentDidUpdate(prevProps, prevState) {
     if (
       this.props.codes !== prevProps.codes ||
@@ -124,19 +127,22 @@ class ReactExample extends React.Component {
     )
       this.renderOutput()
   }
+
   componentWillUnmount() {
     unmountOutput(this.outputEl)
   }
+
   handleCodeChange(code, i) {
     const codes = [...this.state.codes]
     codes[i] = code
     this.setState(_ => ({ codes }), debounce(this.renderOutput, 200))
   }
+
   handleThemeSelect(i) {
     const themeName = Theme.names[Object.keys(Theme.names)[i]]
     this.setState({ themeName })
   }
-  renderError() {}
+
   renderOutput() {
     if (typeof window === 'undefined') return
 
@@ -161,10 +167,9 @@ class ReactExample extends React.Component {
       }
     )
   }
+
   renderSrc() {
-    const options = {
-      theme: 'ps-codemirror'
-    }
+    const options = { theme: 'ps-codemirror' }
     if (modeLoaded) options.mode = 'javascript'
 
     return (
@@ -191,6 +196,7 @@ class ReactExample extends React.Component {
       </div>
     )
   }
+
   renderError() {
     return this.state.error ? (
       <pre className="error">
@@ -206,19 +212,25 @@ class ReactExample extends React.Component {
       </pre>
     ) : null
   }
+
   render() {
     return (
       <div className="example">
         {this.renderError()}
+
         {this.props.themeToggle && (
           <ThemeToggle
             activeThemeName={this.state.themeName}
             onSelect={this.handleThemeSelect}
           />
         )}
+
         <div ref={el => (this.outputEl = el)} />
+
         <OutputDecorationGlobalStyles />
+
         <div className="src">{this.renderSrc()}</div>
+
         <style jsx>{`
           .example {
             position: relative;
@@ -237,11 +249,14 @@ ReactExample.propTypes = {
   codes: PropTypes.arrayOf(PropTypes.string),
   decorateCodes: PropTypes.func,
   includes: PropTypes.object,
+  /* eslint-disable react/no-unused-prop-types */
   outputChildStyle: PropTypes.object,
   outputStyle: PropTypes.object,
+  /* eslint-enable react/no-unused-prop-types */
   themeName: PropTypes.oneOf(Object.keys(Theme.names)),
   themeToggle: PropTypes.bool
 }
+
 ReactExample.defaultProps = {
   orient: 'horizontal',
   themeName: Theme.defaultName,
