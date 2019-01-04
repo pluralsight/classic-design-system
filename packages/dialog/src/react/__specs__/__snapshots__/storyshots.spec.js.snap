@@ -52,9 +52,11 @@ exports[`Storyshots modal no click overlay 1`] = `
         . Halvah icing pudding pastry ice cream gingerbread tart candy canes dragée. Pie gingerbread icing.
       </p>
       <div
+        aria-label="Storybook Modal"
         data-css-17ouz8q=""
         id="psds-dialog__overlay"
         onClick={[Function]}
+        role="region"
       >
         <div
           data-css-xf9ugk=""
@@ -210,9 +212,11 @@ exports[`Storyshots modal no close button 1`] = `
         . Halvah icing pudding pastry ice cream gingerbread tart candy canes dragée. Pie gingerbread icing.
       </p>
       <div
+        aria-label="Storybook Modal"
         data-css-17ouz8q=""
         id="psds-dialog__overlay"
         onClick={[Function]}
+        role="region"
       >
         <div
           data-css-xf9ugk=""
@@ -352,9 +356,11 @@ exports[`Storyshots modal no escape key 1`] = `
         . Halvah icing pudding pastry ice cream gingerbread tart candy canes dragée. Pie gingerbread icing.
       </p>
       <div
+        aria-label="Storybook Modal"
         data-css-17ouz8q=""
         id="psds-dialog__overlay"
         onClick={[Function]}
+        role="region"
       >
         <div
           data-css-xf9ugk=""
@@ -509,9 +515,11 @@ exports[`Storyshots modal no focus on mount 1`] = `
         . Halvah icing pudding pastry ice cream gingerbread tart candy canes dragée. Pie gingerbread icing.
       </p>
       <div
+        aria-label="Storybook Modal"
         data-css-17ouz8q=""
         id="psds-dialog__overlay"
         onClick={[Function]}
+        role="region"
       >
         <div
           data-css-xf9ugk=""
@@ -723,9 +731,11 @@ exports[`Storyshots modal with close button 1`] = `
         . Halvah icing pudding pastry ice cream gingerbread tart candy canes dragée. Pie gingerbread icing.
       </p>
       <div
+        aria-label="Storybook Modal"
         data-css-17ouz8q=""
         id="psds-dialog__overlay"
         onClick={[Function]}
+        role="region"
       >
         <div
           data-css-xf9ugk=""
