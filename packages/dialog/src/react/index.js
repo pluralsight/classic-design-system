@@ -68,8 +68,10 @@ class ModalOverlay extends React.Component {
     return (
       <div
         {...styles.overlay(this.props)}
+        aria-label={this.props['aria-label']}
         id={MODAL_OVERLAY_ID}
         onClick={this.handleOverlayClick}
+        role="region"
       >
         {this.props.children}
       </div>
@@ -78,6 +80,7 @@ class ModalOverlay extends React.Component {
 }
 
 ModalOverlay.propTypes = {
+  'aria-label': PropTypes.string.isRequired,
   children: PropTypes.node,
   onClose: PropTypes.func.isRequired
 }

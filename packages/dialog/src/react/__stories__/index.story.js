@@ -117,28 +117,58 @@ storiesOf('onClose', module).add('with onClose', _ => (
 
 storiesOf('modal', module)
   .add('with close button', _ => (
-    <ModalStory>{({ close }) => <Content onClose={close} modal />}</ModalStory>
+    <ModalStory>
+      {({ close }) => (
+        <Content onClose={close} aria-label="Storybook Modal" modal />
+      )}
+    </ModalStory>
   ))
   .add('no focus on mount', _ => (
     <ModalStory>
-      {({ close }) => <Content disableFocusOnMount onClose={close} modal />}
+      {({ close }) => (
+        <Content
+          disableFocusOnMount
+          onClose={close}
+          aria-label="Storybook Modal"
+          modal
+        />
+      )}
     </ModalStory>
   ))
   .add('no close button', _ => (
     <ModalStory>
-      {({ close }) => <Content disableCloseButton onClose={close} modal />}
+      {({ close }) => (
+        <Content
+          disableCloseButton
+          onClose={close}
+          aria-label="Storybook Modal"
+          modal
+        />
+      )}
     </ModalStory>
   ))
   .add('no click overlay', _ => (
     <ModalStory>
       {({ close }) => (
-        <Content disableCloseOnOverlayClick onClose={close} modal />
+        <Content
+          disableCloseOnOverlayClick
+          onClose={close}
+          aria-label="Storybook Modal"
+          modal
+        />
       )}
     </ModalStory>
   ))
   .add('no escape key', _ => (
     <ModalStory>
-      {({ close }) => <Content disableCloseOnEscape onClose={close} modal />}
+      {({ close }) => (
+        <Content
+          disableCloseOnEscape
+          onClose={close}
+          aria-label="Storybook Modal"
+          modal
+        />
+      )}
     </ModalStory>
   ))
   .add('no focusable child element, no lock', _ => (
