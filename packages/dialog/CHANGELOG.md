@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@2.3.14...@pluralsight/ps-design-system-dialog@3.0.0) (2019-01-08)
+
+
+### Features
+
+* **dialog:** require a11y label if modal ([24b9f50](https://github.com/pluralsight/design-system/commit/24b9f50)), closes [#239](https://github.com/pluralsight/design-system/issues/239)
+
+
+### BREAKING CHANGES
+
+* **dialog:** aria-label is required if model prop is true
+
+
+
+
+
 ## [2.3.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@2.3.13...@pluralsight/ps-design-system-dialog@2.3.14) (2019-01-02)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog

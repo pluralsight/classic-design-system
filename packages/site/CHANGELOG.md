@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.7.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.7.0...@pluralsight/ps-design-system-site@11.7.1) (2019-01-08)
+
+
+### Bug Fixes
+
+* **site:** typo ([e2937e7](https://github.com/pluralsight/design-system/commit/e2937e7))
+
+
+
+
+
 # [11.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.6.1...@pluralsight/ps-design-system-site@11.7.0) (2019-01-02)
 
 

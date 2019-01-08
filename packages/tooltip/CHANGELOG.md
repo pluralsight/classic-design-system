@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@1.3.22...@pluralsight/ps-design-system-tooltip@2.0.0) (2019-01-08)
+
+
+### Bug Fixes
+
+* **tooltip:** snapshot update ([c8812ed](https://github.com/pluralsight/design-system/commit/c8812ed))
+
+
+### Code Refactoring
+
+* **tooltip:** support light theme and fix tail shadow bleed ([8b4991f](https://github.com/pluralsight/design-system/commit/8b4991f)), closes [#396](https://github.com/pluralsight/design-system/issues/396) [#397](https://github.com/pluralsight/design-system/issues/397)
+
+
+### BREAKING CHANGES
+
+* **tooltip:** put tail styles in __tail css element selector
+
+
+
+
+
 ## [1.3.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@1.3.20...@pluralsight/ps-design-system-tooltip@1.3.22) (2018-12-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
