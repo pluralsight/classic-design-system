@@ -26,7 +26,7 @@ export const colorByLetter = letters.reduce((map, letter, i) => {
 }, {})
 
 export const fallbackPixel =
-  '//s3-us-west-2.amazonaws.com/ps-cdn/design-system/assets/transparent.gif'
+  'https://s3-us-west-2.amazonaws.com/ps-cdn/design-system/assets/transparent.gif'
 
 export const widths = {
   xSmall: '32px',
