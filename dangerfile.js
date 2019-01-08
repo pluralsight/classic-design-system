@@ -9,13 +9,6 @@ const checkDescription = ({ minLength = 10 } = {}) => {
   warn(':pencil2: Please add a description.')
 }
 
-const checkForReviewer = () => {
-  const { github } = danger
-  if (github.pr && github.pr.requested_reviewers.length > 0) return
-
-  warn(':exclamation: Please assign a teammate to review your PR.')
-}
-
 void (async function main() {
   // thank new contributors
   toolbox.commonContribution({ msg: 'Thanks for contributing :tada:' })
@@ -31,6 +24,4 @@ void (async function main() {
   toolbox.jsTestShortcuts({ logTypeSkipped: 'message', logTypeFocused: 'fail' })
 
   checkDescription()
-
-  checkForReviewer()
 })()
