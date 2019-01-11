@@ -1,6 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 const menuOriginRight = {
   transform: `translateX(${core.layout.spacingXSmall})`
@@ -91,6 +91,11 @@ export default {
     outline: 'none',
     color: core.colors.gray05
   },
+  '.psds-actionmenu__item--focus-keyboard': {
+    background: core.colors.blue,
+    outline: 'none',
+    color: core.colors.white
+  },
 
   // __item--link
   '.psds-actionmenu__item--link': {
@@ -130,8 +135,15 @@ export default {
 
   // __item__arrow
   '.psds-actionmenu__item__arrow': {
+    color: '#888',
     marginLeft: 'auto',
     paddingLeft: core.layout.spacingXSmall
+  },
+  '.psds-actionmenu__item__arrow--focus-keyboard': {
+    color: core.colors.white
+  },
+  '.psds-actionmenu__item__arrow__svg': {
+    fill: 'currentColor'
   },
 
   // __overlay
