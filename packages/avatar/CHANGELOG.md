@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@2.0.3...@pluralsight/ps-design-system-avatar@2.0.4) (2019-01-11)
+
+
+### Bug Fixes
+
+* **avatar:** ensure https for fallback pixel ([7462c42](https://github.com/pluralsight/design-system/commit/7462c42)), closes [#417](https://github.com/pluralsight/design-system/issues/417)
+
+
+
+
+
 ## [2.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@2.0.1...@pluralsight/ps-design-system-avatar@2.0.3) (2018-12-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-avatar
