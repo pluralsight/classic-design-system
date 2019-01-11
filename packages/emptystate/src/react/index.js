@@ -11,44 +11,38 @@ import css, { sizeClasses, themeClasses } from '../css'
 import * as vars from '../vars'
 
 import * as illustrations from './illustrations'
+import ResizeObserver from './resize-observer'
 
-const Context = createReactContext({ size: null, themeName: null })
+const Context = createReactContext({
+  size: null,
+  themeName: null,
+  hasRenderedOnce: false
+})
 
-const buildMediaClasses = className => {
-  const all = '(min-width: 0)'
-  const desktop = '(min-width: 769px)'
-
-  return glamor.compose(
-    glamor.media(all, css[className + sizeClasses.small]),
-    glamor.media(desktop, css[className + sizeClasses.large])
-  )
-}
-
-const combineClasses = (className, { size, themeName }) => {
-  const base = glamor.css(
+const combineClasses = (className, { size, themeName }) =>
+  glamor.css(
     css[className],
-    css[className + themeClasses[themeName]]
+    css[className + themeClasses[themeName]],
+    css[className + sizeClasses[size]]
   )
-
-  // NOTE: a `size` prop disables responsive media queries
-  const removeResponsiveMediaQueries = !!size
-  const media = removeResponsiveMediaQueries
-    ? glamor.css(css[className + sizeClasses[size]])
-    : buildMediaClasses(className)
-
-  return glamor.compose(
-    base,
-    media
-  )
-}
 
 const styles = {
-  emptyState: (_, ctx) => combineClasses('.psds-emptystate', ctx),
-  actions: (props, ctx) => combineClasses('.psds-emptystate__actions', ctx),
-  caption: (props, ctx) => combineClasses('.psds-emptystate__caption', ctx),
-  heading: (props, ctx) => combineClasses('.psds-emptystate__heading', ctx),
-  illustration: (_, ctx) =>
-    combineClasses('.psds-emptystate__illustration', ctx)
+  emptyState: (_, ctx) => {
+    return glamor.compose(
+      combineClasses('.psds-emptystate', ctx),
+      !ctx.hasRenderedOnce && css['.psds-emptystate--hidden']
+    )
+  },
+  actions: (_, ctx) => combineClasses('.psds-emptystate__actions', ctx),
+  caption: (_, ctx) => combineClasses('.psds-emptystate__caption', ctx),
+  heading: (_, ctx) => combineClasses('.psds-emptystate__heading', ctx),
+  illustration: (props, ctx) => {
+    // NOTE: custom illustrations are full size
+    const isCustom = !!props.children
+    if (isCustom) ctx.size = vars.sizes.large
+
+    return combineClasses('.psds-emptystate__illustration', ctx)
+  }
 }
 
 const Actions = props => (
@@ -106,7 +100,9 @@ const Illustration = props => {
         if (isCustom)
           return <div {...styleAttrs} {...filterReactProps(props)} />
 
-        const Comp = illustrations[props.name] || IllustrationNotFound
+        let Comp = illustrations[props.name] || IllustrationNotFound
+        Comp = ctx.size === vars.sizes.small && Comp.small ? Comp.small : Comp
+
         return (
           <Comp
             {...styleAttrs}
@@ -123,20 +119,57 @@ Illustration.propTypes = {
   name: PropTypes.oneOf(Object.values(Illustration.names))
 }
 
-const EmptyState = withTheme(({ size, themeName, ...props }) => {
-  const ctx = { size, themeName }
+class EmptyState extends React.PureComponent {
+  constructor(props) {
+    super(props)
 
-  return (
-    <Context.Provider value={ctx}>
-      <div {...styles.emptyState(props, ctx)} {...filterReactProps(props)}>
-        {props.illustration}
-        {props.heading}
-        {props.caption}
-        {props.actions}
-      </div>
-    </Context.Provider>
-  )
-})
+    this.breakpoint = 450
+  }
+
+  get hasSizeOverride() {
+    return !!this.props.size
+  }
+
+  renderContent(ctx) {
+    return (
+      <Context.Provider value={ctx}>
+        <div
+          {...styles.emptyState(this.props, ctx)}
+          {...filterReactProps(this.props)}
+        >
+          {this.props.illustration}
+          {this.props.heading}
+          {this.props.caption}
+          {this.props.actions}
+        </div>
+      </Context.Provider>
+    )
+  }
+
+  render() {
+    const { themeName } = this.props
+
+    if (this.hasSizeOverride) {
+      const ctx = { hasRenderedOnce: true, size: this.props.size, themeName }
+      return this.renderContent(ctx)
+    }
+
+    return (
+      <ResizeObserver>
+        {({ width }) => {
+          const hasRenderedOnce = !!width
+          const size =
+            hasRenderedOnce && width <= this.breakpoint
+              ? vars.sizes.small
+              : vars.sizes.large
+
+          const ctx = { hasRenderedOnce, size, themeName }
+          return this.renderContent(ctx)
+        }}
+      </ResizeObserver>
+    )
+  }
+}
 
 EmptyState.sizes = vars.sizes
 
@@ -145,7 +178,8 @@ EmptyState.propTypes = {
   caption: elementOfType(Caption),
   heading: elementOfType(Heading).isRequired,
   illustration: elementOfType(Illustration),
-  size: PropTypes.oneOf(Object.values(EmptyState.sizes))
+  size: PropTypes.oneOf(Object.values(EmptyState.sizes)),
+  themeName: PropTypes.string
 }
 
 EmptyState.Actions = Actions
@@ -160,4 +194,4 @@ EmptyState.Heading.displayName = 'EmptyState.Heading'
 EmptyState.Illustration = Illustration
 EmptyState.Illustration.displayName = 'EmptyState.Illustration'
 
-export default EmptyState
+export default withTheme(EmptyState)
