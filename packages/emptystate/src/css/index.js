@@ -75,7 +75,8 @@ export default {
   // __illustration
   '.psds-emptystate__illustration': {
     display: 'inline-block',
-    marginBottom: core.layout.spacingLarge
+    marginBottom: core.layout.spacingLarge,
+    transition: `all ${core.motion.speedNormal}`
   },
   ['.psds-emptystate__illustration' + sizeClasses.small]: {
     width: 64,

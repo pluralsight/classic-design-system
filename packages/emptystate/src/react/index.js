@@ -36,13 +36,8 @@ const styles = {
   actions: (_, ctx) => combineClasses('.psds-emptystate__actions', ctx),
   caption: (_, ctx) => combineClasses('.psds-emptystate__caption', ctx),
   heading: (_, ctx) => combineClasses('.psds-emptystate__heading', ctx),
-  illustration: (props, ctx) => {
-    // NOTE: custom illustrations are full size
-    const isCustom = !!props.children
-    if (isCustom) ctx.size = vars.sizes.large
-
-    return combineClasses('.psds-emptystate__illustration', ctx)
-  }
+  illustration: (props, ctx) =>
+    combineClasses('.psds-emptystate__illustration', ctx)
 }
 
 const Actions = props => (
@@ -95,19 +90,15 @@ const Illustration = props => {
   return (
     <Context.Consumer>
       {ctx => {
-        const styleAttrs = styles.illustration(props, ctx)
-
-        if (isCustom)
-          return <div {...styleAttrs} {...filterReactProps(props)} />
-
         let Comp = illustrations[props.name] || IllustrationNotFound
         Comp = ctx.size === vars.sizes.small && Comp.small ? Comp.small : Comp
 
+        if (isCustom) Comp = () => props.children
+
         return (
-          <Comp
-            {...styleAttrs}
-            {...filterReactProps(props, { tagName: 'svg' })}
-          />
+          <div {...styles.illustration(props, ctx)}>
+            <Comp {...filterReactProps(props, { tagName: 'svg' })} />
+          </div>
         )
       }}
     </Context.Consumer>

@@ -39,7 +39,6 @@ const EmptyStateWithDefaults = props => {
   const illustration = (
     <EmptyState.Illustration name={EmptyState.Illustration.names.search} />
   )
-
   return (
     <EmptyState
       actions={actions}
@@ -110,7 +109,7 @@ Object.values(EmptyState.Illustration.names).forEach(name => {
   ))
 })
 
-storiesOf('EmptyState/illustrations', module).add('custom', _ => (
+storiesOf('EmptyState/illustrations/small', module).add('custom', _ => (
   <EmptyState
     heading={<EmptyState.Heading>Custom Illustration</EmptyState.Heading>}
     illustration={
@@ -118,6 +117,19 @@ storiesOf('EmptyState/illustrations', module).add('custom', _ => (
         <CustomIllustration />
       </EmptyState.Illustration>
     }
+    size={EmptyState.sizes.small}
+  />
+))
+
+storiesOf('EmptyState/illustrations/large', module).add('custom', _ => (
+  <EmptyState
+    heading={<EmptyState.Heading>Custom Illustration</EmptyState.Heading>}
+    illustration={
+      <EmptyState.Illustration>
+        <CustomIllustration />
+      </EmptyState.Illustration>
+    }
+    size={EmptyState.sizes.large}
   />
 ))
 
