@@ -57,6 +57,7 @@ const styles = {
       css['.psds-date-picker__label'],
       css[`.psds-date-picker__label.psds-theme--${themeName}`]
     ),
+  overlay: _ => glamor.css(css['.psds-date-picker__overlay']),
   subLabel: ({ themeName }) =>
     glamor.css(
       css['.psds-date-picker__sub-label'],
@@ -77,6 +78,10 @@ const styles = {
   calendarContainer: _ =>
     glamor.css(css['.psds-date-picker__calendar-container'])
 }
+
+const Overlay = props => (
+  <div {...styles.overlay(props)} onClick={props.onClick} />
+)
 
 class SubField extends React.Component {
   constructor(props) {
@@ -135,12 +140,21 @@ class DatePicker extends React.Component {
     this.handleSubFieldBlur = this.handleSubFieldBlur.bind(this)
     this.handleCalendarSelect = this.handleCalendarSelect.bind(this)
     this.handleIconClick = this.handleIconClick.bind(this)
+    this.handleOverlayClick = this.handleOverlayClick.bind(this)
+    this.handleKeyDown = this.handleKeyDown.bind(this)
   }
   componentWillReceiveProps(nextProps) {
     if (this.props.value === nextProps.value) return
 
     const { mm, dd, yyyy } = parseDate(nextProps.value)
     this.setState({ mm, dd, yyyy })
+  }
+  handleKeyDown(evt) {
+    if (evt.key === 'Escape') {
+      evt.stopPropagation()
+      evt.preventDefault()
+      this.setState({ isOpen: false })
+    }
   }
   handleFocus() {
     this.setState({ isFocused: true })
@@ -151,6 +165,10 @@ class DatePicker extends React.Component {
   handleIconClick(evt) {
     evt.preventDefault()
     this.setState({ isOpen: !this.state.isOpen })
+  }
+  handleOverlayClick(evt) {
+    evt.preventDefault()
+    this.setState({ isOpen: false })
   }
   handleCalendarSelect(value) {
     const { mm, dd, yyyy } = parseDate(value)
@@ -215,6 +233,7 @@ class DatePicker extends React.Component {
         {...styles.input(allProps)}
         onFocus={this.handleFocus}
         onBlur={this.handleBlur}
+        onKeyDown={this.handleKeyDown}
         {...(allProps.style ? { style: allProps.style } : null)}
         {...(allProps.className ? { className: allProps.className } : null)}
       >
@@ -283,7 +302,8 @@ class DatePicker extends React.Component {
             )}
           </div>
         </Halo>
-        {state.isOpen && (
+        {state.isOpen && [
+          <Overlay onClick={this.handleOverlayClick} />,
           <div {...styles.calendarContainer(allProps)}>
             <Calendar
               mm={state.mm}
@@ -292,7 +312,7 @@ class DatePicker extends React.Component {
               onSelect={this.handleCalendarSelect}
             />
           </div>
-        )}
+        ]}
         {allProps.subLabel && (
           <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
         )}
