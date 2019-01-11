@@ -17,53 +17,58 @@ import {
 } from '../src/ui'
 
 const work = {
-  now: [],
-  next: [
+  short: [
     {
-      title: 'Card (light theme)',
+      title: 'Data Well',
       tags: ['Component']
     },
     {
-      title: 'Row (light theme)',
+      title: 'Table sticky header',
       tags: ['Component']
     },
     {
-      title: 'Button (light theme)',
+      title: 'ActionMenu flexibility',
       tags: ['Component']
     },
     {
-      title: 'Switch (form work)',
+      title: 'Autocomplete',
       tags: ['Component']
     },
     {
-      title: 'Stats Table',
+      title: 'Positioning util',
+      tags: ['Util']
+    },
+    {
+      title: 'Tab responsiveness',
       tags: ['Component']
     },
     {
-      title: 'Progress Bar',
+      title: 'Icon bundle perf',
       tags: ['Component']
     },
     {
-      title: 'Star Rating',
+      title: 'ES module build',
       tags: ['Component']
     },
     {
-      title: 'Paginator',
-      tags: ['Component']
-    }
-  ],
-  future: [
-    {
-      title: 'Blank State',
-      tags: ['Pattern']
+      title: 'Site upgrades',
+      tags: ['Docs']
     },
     {
-      title: 'Reporting',
-      tags: ['Pattern']
+      title: 'CI for publishing',
+      tags: ['Infra']
     },
     {
-      title: 'Text (vNext)',
+      title: 'Replace polished',
       tags: ['Component']
+    },
+    {
+      title: 'Consolidate code patterns',
+      tags: ['Component']
+    },
+    {
+      title: 'Clear Work backlog',
+      tags: []
     }
   ]
 }
@@ -295,17 +300,20 @@ export default withServerProps(_ => (
         explore these or other items.
       </Intro>
       <Bar />
-      <SectionHeading>Now</SectionHeading>
+      <SectionHeading>Today</SectionHeading>
       <P>
-        What the team is working on currently. These issues are started and we
-        anticipate completing them.
+        To see what we are are doing on a daily basis, please refer to our
+        ongoing{' '}
+        <TextLink href="https://github.com/pluralsight/design-system/projects/3">
+          Work board
+        </TextLink>
+        .
       </P>
-      <Tasks color={core.colors.green} tasks={work.now} />
 
       <Bar />
-      <SectionHeading>Next</SectionHeading>
+      <SectionHeading>Short-term focus</SectionHeading>
       <P>
-        Here is what we think is coming up quickly (roughly this quarter).
+        Here is what we have planned to work on shortly (roughly this quarter).
         Priorities often change. Voice your thoughts on any of these issues,
         including priority, on{' '}
         <TextLink href="https://github.com/pluralsight/design-system/issues">
@@ -314,15 +322,7 @@ export default withServerProps(_ => (
         , or take a look at how you can{' '}
         <TextLink href="/contribute">contribute</TextLink>.
       </P>
-      <Tasks color={core.colors.yellow} tasks={work.next} />
-
-      <Bar />
-      <SectionHeading>Future</SectionHeading>
-      <P>
-        Longer-term ideas. These are deemed to add value but are in need of more
-        concrete discovery and prioritization.
-      </P>
-      <Tasks color={core.colors.pink} tasks={work.future} />
+      <Tasks color={core.colors.yellow} tasks={work.short} />
     </Content>
   </Chrome>
 ))
