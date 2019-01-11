@@ -44,7 +44,7 @@ const styles = {
     )
 }
 
-const IconComponent = props => {
+const ItemIcon = props => {
   return (
     <div {...glamor.css(css['.psds-actionmenu__item__icon'])}>
       {React.cloneElement(props.children, { size: Icon.sizes.medium })}
@@ -78,7 +78,7 @@ const calcNestedMenuPosition = (menuWidth, origin) =>
     }
   }[origin])
 
-class ItemComponent extends React.Component {
+class Item extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -163,7 +163,7 @@ class ItemComponent extends React.Component {
             role: 'menuitem',
             ...styles.item(this.props)
           },
-          this.props.icon && <IconComponent>{this.props.icon}</IconComponent>,
+          this.props.icon && <ItemIcon>{this.props.icon}</ItemIcon>,
           this.props.children,
           this.props.nested && (
             <NestedArrow _isKeyboarding={this.props._isKeyboarding} />
@@ -174,8 +174,8 @@ class ItemComponent extends React.Component {
     )
   }
 }
-ItemComponent.displayName = 'ActionMenu.Item'
-ItemComponent.propTypes = {
+Item.displayName = 'ActionMenu.Item'
+Item.propTypes = {
   href: PropTypes.string,
   icon: PropTypes.node,
   isActive: PropTypes.bool,
@@ -188,11 +188,7 @@ ItemComponent.propTypes = {
   _origin: PropTypes.oneOf(Object.keys(vars.origins))
 }
 
-const Divider = props => (
-  <div {...styles.divider(props)} {...filterReactProps(props)} />
-)
-
-class DividerComponent extends React.Component {
+class Divider extends React.Component {
   componentDidMount() {
     if (this.props.isActive) this.props._onDividerFocus()
   }
@@ -200,10 +196,16 @@ class DividerComponent extends React.Component {
     if (this.props.isActive) this.props._onDividerFocus()
   }
   render() {
-    return <Divider tabIndex="-1" />
+    return (
+      <div
+        {...styles.divider(this.props)}
+        tabIndex="-1"
+        {...filterReactProps(this.props)}
+      />
+    )
   }
 }
-DividerComponent.propTypes = {
+Divider.propTypes = {
   _onDividerFocus: PropTypes.func,
   isActive: PropTypes.bool
 }
@@ -219,7 +221,7 @@ const Menu = props => (
   <div {...styles.menu(props)} {...filterReactProps(props)} />
 )
 
-class ActionMenuComponent extends React.Component {
+class ActionMenu extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -319,19 +321,19 @@ class ActionMenuComponent extends React.Component {
     )
   }
 }
-ActionMenuComponent.displayName = 'ActionMenu'
+ActionMenu.displayName = 'ActionMenu'
 
-ActionMenuComponent.Item = ItemComponent
-ActionMenuComponent.Divider = DividerComponent
-ActionMenuComponent.Overlay = Overlay
-ActionMenuComponent.origins = vars.origins
-ActionMenuComponent.propTypes = {
+ActionMenu.Item = Item
+ActionMenu.Divider = Divider
+ActionMenu.Overlay = Overlay
+ActionMenu.origins = vars.origins
+ActionMenu.propTypes = {
   isKeyboarding: PropTypes.bool,
   onClose: PropTypes.func,
   origin: PropTypes.oneOf(Object.keys(vars.origins)),
   shouldFocusOnMount: PropTypes.bool
 }
-ActionMenuComponent.defaultProps = {
+ActionMenu.defaultProps = {
   isKeyboarding: false,
   origin: vars.origins.topLeft,
   shouldFocusOnMount: true
@@ -339,4 +341,4 @@ ActionMenuComponent.defaultProps = {
 
 export const origins = vars.origins
 
-export default ActionMenuComponent
+export default ActionMenu
