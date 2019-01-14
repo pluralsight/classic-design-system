@@ -496,7 +496,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
         >
           One
           <div
-            data-css-g406da=""
+            data-css-14lvci6=""
           >
             <svg
               height="9"
@@ -506,7 +506,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
             >
               <path
                 d="M0 .33l3.657 4.15L0 8.634V.33"
-                fill="#888"
+                data-css-c4d79v=""
               />
             </svg>
           </div>
@@ -562,7 +562,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
         >
           One
           <div
-            data-css-g406da=""
+            data-css-14lvci6=""
           >
             <svg
               height="9"
@@ -572,7 +572,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
             >
               <path
                 d="M0 .33l3.657 4.15L0 8.634V.33"
-                fill="#888"
+                data-css-c4d79v=""
               />
             </svg>
           </div>
@@ -628,7 +628,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
         >
           One
           <div
-            data-css-g406da=""
+            data-css-14lvci6=""
           >
             <svg
               height="9"
@@ -638,7 +638,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
             >
               <path
                 d="M0 .33l3.657 4.15L0 8.634V.33"
-                fill="#888"
+                data-css-c4d79v=""
               />
             </svg>
           </div>
@@ -694,7 +694,7 @@ exports[`Storyshots nested origin topRight 1`] = `
         >
           One
           <div
-            data-css-g406da=""
+            data-css-14lvci6=""
           >
             <svg
               height="9"
@@ -704,7 +704,7 @@ exports[`Storyshots nested origin topRight 1`] = `
             >
               <path
                 d="M0 .33l3.657 4.15L0 8.634V.33"
-                fill="#888"
+                data-css-c4d79v=""
               />
             </svg>
           </div>
@@ -825,7 +825,7 @@ exports[`Storyshots onClick nested 1`] = `
       >
         1
         <div
-          data-css-g406da=""
+          data-css-14lvci6=""
         >
           <svg
             height="9"
@@ -835,7 +835,7 @@ exports[`Storyshots onClick nested 1`] = `
           >
             <path
               d="M0 .33l3.657 4.15L0 8.634V.33"
-              fill="#888"
+              data-css-c4d79v=""
             />
           </svg>
         </div>

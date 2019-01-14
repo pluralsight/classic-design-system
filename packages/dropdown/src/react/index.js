@@ -6,8 +6,8 @@ import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
-import css from '../css'
-import * as vars from '../vars'
+import css from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const dropdownHtmlPropsWhitelist = [
   'name',
@@ -84,6 +84,7 @@ class Dropdown extends React.Component {
     super(props)
     this.state = {
       isFocused: false,
+      isKeyboarding: false,
       isOpen: false,
       selectedLabel: null
     }
@@ -109,6 +110,9 @@ class Dropdown extends React.Component {
     if (typeof this.props.onBlur === 'function') this.props.onBlur(evt)
   }
   handleKeyDown(evt) {
+    if (evt.key === 'ArrowDown' || evt.key === ' ' || evt.key === 'Enter') {
+      this.setState({ isKeyboarding: true })
+    }
     if (evt.key === 'ArrowDown') {
       this.setState(_ => ({ isOpen: true }))
     }
@@ -126,7 +130,7 @@ class Dropdown extends React.Component {
       this.props.menu.props.onClick(evt)
   }
   handleOverlayClick() {
-    this.setState({ isOpen: false })
+    this.setState({ isOpen: false, isKeyboarding: false })
   }
   getLongestMenuLabelState() {
     const getMenuItems = menu =>
@@ -232,27 +236,27 @@ class Dropdown extends React.Component {
               </div>
             )}
           </div>
-          {props.menu &&
-            state.isOpen && (
-              <div {...styles.menu(allProps)}>
-                {React.cloneElement(props.menu, {
-                  onClick: allProps.disabled ? null : this.handleMenuClick,
-                  onClose: _ => {
-                    this.setState(_ => ({ isOpen: false }))
-                    if (typeof props.menu.props.onClose === 'function')
-                      props.menu.props.onClose()
-                  },
-                  style: {
-                    ...props.menu.props.style,
-                    minWidth: '0',
-                    maxWidth: 'none',
-                    width: this.field
-                      ? this.field.getBoundingClientRect().width
-                      : 'auto'
-                  }
-                })}
-              </div>
-            )}
+          {props.menu && state.isOpen && (
+            <div {...styles.menu(allProps)}>
+              {React.cloneElement(props.menu, {
+                isKeyboarding: state.isKeyboarding,
+                onClick: allProps.disabled ? null : this.handleMenuClick,
+                onClose: _ => {
+                  this.setState(_ => ({ isOpen: false }))
+                  if (typeof props.menu.props.onClose === 'function')
+                    props.menu.props.onClose()
+                },
+                style: {
+                  ...props.menu.props.style,
+                  minWidth: '0',
+                  maxWidth: 'none',
+                  width: this.field
+                    ? this.field.getBoundingClientRect().width
+                    : 'auto'
+                }
+              })}
+            </div>
+          )}
           {allProps.subLabel && (
             <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
           )}

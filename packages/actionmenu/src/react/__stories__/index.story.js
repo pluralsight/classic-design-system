@@ -6,54 +6,7 @@ import React from 'react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import ActionMenu from '..'
-
-// TODO: snapshot test generator can't handle.
-// storiesOf('activations', module).addDecorator(themeDecorator(addons)).add('via button', _ => {
-//   const Activator = sizeMe({ monitorHeight: true })(
-//     class extends React.Component {
-//       constructor(props) {
-//         super(props)
-//         this.state = { isOpen: true }
-//         this.handleClick = this.handleClick.bind(this)
-//       }
-//       handleClick(evt) {
-//         evt.preventDefault()
-//         this.setState({ isOpen: !this.state.isOpen })
-//       }
-//       render() {
-//         return (
-//           <div style={{ display: 'inline-block', position: 'relative' }}>
-//             <Button
-//               appearance={this.state.isOpen ? null : Button.appearances.flat}
-//               icon={<Icon id={Icon.ids.more} />}
-//               onClick={this.handleClick}
-//             />
-//             {this.state.isOpen &&
-//               <ActionMenu
-//                 css={{
-//                   left: 0, // TODO: make dynamic
-//                   top: this.props.size.height
-//                 }}
-//               >
-//                 <ActionMenu.Item icon={<Icon id={Icon.ids.account} />}>
-//                   qwer
-//                 </ActionMenu.Item>
-//                 <ActionMenu.Item icon={<Icon id={Icon.ids.channel} />}>
-//                   asdasd
-//                 </ActionMenu.Item>
-//                 <ActionMenu.Divider />
-//                 <ActionMenu.Item icon={<Icon id={Icon.ids.channel} />}>
-//                   asdasd
-//                 </ActionMenu.Item>
-//               </ActionMenu>}
-//           </div>
-//         )
-//       }
-//     }
-//   )
-//   return <Activator />
-// })
+import ActionMenu from '../index.js'
 
 storiesOf('menu items', module)
   .addDecorator(themeDecorator(addons))
