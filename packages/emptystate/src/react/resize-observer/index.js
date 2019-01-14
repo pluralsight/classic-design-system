@@ -35,8 +35,7 @@ class ResizeObserver extends React.PureComponent {
   }
 
   get node() {
-    const { current: node } = this.container
-    return node
+    return this.container.current
   }
 
   componentDidMount() {
