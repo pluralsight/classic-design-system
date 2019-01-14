@@ -146,7 +146,7 @@ class EmptyState extends React.PureComponent {
     }
 
     return (
-      <ResizeObserver>
+      <ResizeObserver observeHeight={false}>
         {({ width }) => {
           const hasRenderedOnce = !!width
           const size =

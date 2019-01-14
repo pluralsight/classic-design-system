@@ -27,10 +27,10 @@ class ResizeObserver extends React.PureComponent {
       this.handleResizedObserved.bind(this)
     )
 
+    this.animationId = null
     this.container = React.createRef()
     this.observer = new ResizeObserverAPI(this.handleResizedObserved)
 
-    this.animationId = null
     this.state = { width: undefined, height: undefined }
   }
 
@@ -48,9 +48,13 @@ class ResizeObserver extends React.PureComponent {
     if (this.animationId) window.cancelAnimationFrame(this.animationId)
   }
 
-  handleResize(contentRect) {
-    const { width, height } = contentRect
-    this.setState({ width, height })
+  handleResize({ width, height }) {
+    const { observeHeight, observeWidth } = this.props
+
+    this.setState(prevState => ({
+      width: observeWidth ? width : prevState.width,
+      height: observeHeight ? height : prevState.height
+    }))
   }
 
   handleResizedObserved(entries) {
@@ -69,12 +73,16 @@ class ResizeObserver extends React.PureComponent {
 }
 
 ResizeObserver.defaultProps = {
-  debounceDelay: 100
+  debounceDelay: 200,
+  observeHeight: true,
+  observeWidth: true
 }
 
 ResizeObserver.propTypes = {
   children: PropTypes.func.isRequired,
-  debounceDelay: PropTypes.number
+  debounceDelay: PropTypes.number,
+  observeHeight: PropTypes.bool,
+  observeWidth: PropTypes.bool
 }
 
 export default ResizeObserver
