@@ -14,8 +14,7 @@ module.exports = {
     'prettier/flowtype',
     'prettier/react',
     'prettier/standard',
-    'plugin:jest/recommended',
-    'plugin:react/recommended'
+    'plugin:jest/recommended'
   ],
   parser: 'babel-eslint',
   plugins: ['jest', 'react']
