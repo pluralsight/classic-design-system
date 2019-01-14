@@ -37,7 +37,7 @@ const EmptyStateWithDefaults = props => {
     </EmptyState.Heading>
   )
   const illustration = (
-    <EmptyState.Illustration name={EmptyState.Illustration.names.search} />
+    <EmptyState.Illustration name={EmptyState.Illustration.names.magnify} />
   )
   return (
     <EmptyState
