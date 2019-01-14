@@ -4,6 +4,7 @@ import core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button/react'
 import EmptyState from '@pluralsight/ps-design-system-emptystate/react'
 import Text from '@pluralsight/ps-design-system-text/react'
+import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react'
 
 import {
   Code,
@@ -20,37 +21,80 @@ import {
   withServerProps
 } from '../../src/ui'
 
+const titleize = str =>
+  str.toLowerCase().replace(/(?:^|\s|-)\S/g, x => x.toUpperCase())
+
 class IllustrationPreviewGrid extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.sizes = Object.values(EmptyState.sizes)
+    this.handleSizeChange = this.handleSizeChange.bind(this)
+    this.state = { activeSize: this.sizes[this.sizes.length - 1] }
+  }
+
   get names() {
     return Object.values(EmptyState.Illustration.names)
   }
 
+  handleSizeChange(index, event) {
+    this.setState({ activeSize: this.sizes[index] })
+  }
+
   render() {
+    const { activeSize } = this.state
+
     return (
-      <ThemeToggle.Container>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr 1fr 1fr',
-            gridGap: '1em',
-            paddingTop: core.layout.spacingXXLarge,
-            paddingBottom: core.layout.spacingMedium
-          }}
-        >
-          {this.names.map(name => (
-            <EmptyState
-              key={name}
-              style={{ alignSelf: 'center', margin: '0', padding: '0' }}
-              heading={
-                <EmptyState.Heading style={{ fontSize: 14 }}>
-                  {name}
-                </EmptyState.Heading>
-              }
-              illustration={<EmptyState.Illustration name={name} />}
-            />
-          ))}
+      <div>
+        <style jsx>{`
+          .container {
+            position: relative;
+          }
+          .toggle {
+            position: absolute;
+            top: ${core.layout.spacingMedium};
+            left: ${core.layout.spacingMedium};
+            z-index: 1;
+          }
+          .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1em;
+            padding-top: ${core.layout.spacingXXLarge};
+            padding-bottom: ${core.layout.spacingMedium};
+          }
+        `}</style>
+
+        <div className="container">
+          <div className="toggle">
+            <ViewToggle onSelect={this.handleSizeChange}>
+              {this.sizes.map((id, index) => (
+                <ViewToggle.Option active={id === activeSize} key={id}>
+                  {titleize(id)}
+                </ViewToggle.Option>
+              ))}
+            </ViewToggle>
+          </div>
+
+          <ThemeToggle.Container>
+            <div className="grid">
+              {this.names.map(name => (
+                <EmptyState
+                  key={name}
+                  style={{ alignSelf: 'center', margin: '0', padding: '0' }}
+                  heading={
+                    <EmptyState.Heading style={{ fontSize: 14 }}>
+                      {name}
+                    </EmptyState.Heading>
+                  }
+                  illustration={<EmptyState.Illustration name={name} />}
+                  size={activeSize}
+                />
+              ))}
+            </div>
+          </ThemeToggle.Container>
         </div>
-      </ThemeToggle.Container>
+      </div>
     )
   }
 }
@@ -93,7 +137,7 @@ const EmptyStateDocumentation = withServerProps(props => (
               false,
               null,
               <span>
-                disable responsive layout and set explicit size (from{' '}
+                disable resizing layout and set explicit size (from{' '}
                 <code>EmptyState.sizes</code>)
               </span>
             ])
@@ -137,7 +181,7 @@ const EmptyStateDocumentation = withServerProps(props => (
       Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed. Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.
     </EmptyState.Caption>
   }
-  illustration={<EmptyState.Illustration name={EmptyState.Illustration.names.search} />}
+  illustration={<EmptyState.Illustration name={EmptyState.Illustration.names.magnify} />}
   actions={
     <EmptyState.Actions>
       <Button appearance={Button.appearances.stroke}>Do a Thing</Button>
@@ -149,8 +193,8 @@ const EmptyStateDocumentation = withServerProps(props => (
       />
       <br />
       <P>
-        Layout scales from ‘large’ to ‘small’ based on reponsive viewport width.
-        OR may be set as <Text.Code>small</Text.Code>
+        Layout scales from ‘large’ to ‘small’ based on container width. OR may
+        be set as <Text.Code>small</Text.Code>
       </P>
       <Example.React
         includes={{ Button, EmptyState }}
@@ -167,7 +211,7 @@ const EmptyStateDocumentation = withServerProps(props => (
       Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed. Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.
     </EmptyState.Caption>
   }
-  illustration={<EmptyState.Illustration name={EmptyState.Illustration.names.search} />}
+  illustration={<EmptyState.Illustration name={EmptyState.Illustration.names.magnify} />}
   actions={
     <EmptyState.Actions>
       <Button appearance={Button.appearances.stroke}>Do a Thing</Button>
