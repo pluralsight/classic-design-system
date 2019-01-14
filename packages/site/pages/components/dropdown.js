@@ -1,7 +1,7 @@
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
 import core from '@pluralsight/ps-design-system-core'
 import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
@@ -10,19 +10,19 @@ import {
   Code,
   Content,
   Example,
-  Heading,
   Link,
   P,
   PageHeading,
   PropTypes,
   SectionHeading,
+  TextLink,
   withServerProps
 } from '../../src/ui'
 
 class InAppExample extends React.Component {
   constructor() {
     super()
-    this.state = { value: null }
+    this.state = { value: 'int' }
   }
   render() {
     const options = [
@@ -36,7 +36,10 @@ class InAppExample extends React.Component {
           <div className="dropdown">
             <Dropdown
               label="Level"
-              placeholder="Select"
+              placeholder={
+                options.find(opt => opt.value === this.state.value).label ||
+                'Select'
+              }
               menu={
                 <ActionMenu>
                   {options.map(opt => (
@@ -245,6 +248,35 @@ export default withServerProps(_ => (
           `<Dropdown
   label="Level"
   placeholder="Select level"
+  subLabel="Which audience is this course aimed at?"
+  menu={
+    <ActionMenu>
+      <ActionMenu.Item>Beginner</ActionMenu.Item>
+      <ActionMenu.Item>Intermediate</ActionMenu.Item>
+      <ActionMenu.Item>Advanced</ActionMenu.Item>
+    </ActionMenu>
+  }
+/>`
+        ]}
+      />
+
+      <SectionHeading>Pre-selected Label</SectionHeading>
+      <P>
+        To pre-select a label, use the <Text.Code>placeholder</Text.Code> prop.
+        Note that this is a visual preselection only, which will work for most
+        React apps where your data model with the initial *value* is held in
+        memory somewhere already. To see this in action, refer to the{' '}
+        <TextLink href="#in-app-example">In-app example</TextLink> above.
+      </P>
+      <Example.React
+        orient="vertical"
+        outputStyle={{ paddingBottom: '96px' }}
+        themeToggle
+        includes={{ ActionMenu, Dropdown }}
+        codes={[
+          `<Dropdown
+  label="Level"
+  placeholder="Intermediate"
   subLabel="Which audience is this course aimed at?"
   menu={
     <ActionMenu>

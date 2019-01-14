@@ -12,7 +12,7 @@ exports[`Storyshots Default large 1`] = `
       data-css-1ba73bf=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
   </div>
 </div>
@@ -30,7 +30,7 @@ exports[`Storyshots Default light image 1`] = `
       data-css-1ba73bf=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
     <div
       aria-label="Jake Trent"
@@ -59,7 +59,7 @@ exports[`Storyshots Default medium 1`] = `
       data-css-1ba73bf=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
   </div>
 </div>
@@ -77,7 +77,7 @@ exports[`Storyshots Default small 1`] = `
       data-css-1ba73bf=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
   </div>
 </div>
@@ -95,7 +95,7 @@ exports[`Storyshots Default xLarge 1`] = `
       data-css-1ba73bf=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
   </div>
 </div>
@@ -113,7 +113,7 @@ exports[`Storyshots Default xSmall 1`] = `
       data-css-1ba73bf=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
   </div>
 </div>
@@ -653,7 +653,7 @@ exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
       data-css-1ba73bf=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://secure.gravatar.com/avatar/invalidhash?d=tmp&d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://secure.gravatar.com/avatar/invalidhash?d=tmp&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
     <div
       aria-label="Alan Turing"
@@ -682,7 +682,7 @@ exports[`Storyshots Using Initials with invalid gravatar image, no name 1`] = `
       data-css-1ba73bf=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://secure.gravatar.com/avatar/invalidhash?d=tmp&d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://secure.gravatar.com/avatar/invalidhash?d=tmp&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
   </div>
 </div>
