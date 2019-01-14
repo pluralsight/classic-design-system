@@ -1,16 +1,13 @@
 import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
 import Radio from '@pluralsight/ps-design-system-radio/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import React from 'react'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
@@ -96,9 +93,7 @@ class InAppExample extends React.Component {
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Radio">
-      <PageHeading beta packageName="radio">
-        Radio
-      </PageHeading>
+      <PageHeading packageName="radio">Radio</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">

@@ -1,5 +1,5 @@
-import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
 import TextInput from '@pluralsight/ps-design-system-textinput/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
@@ -9,7 +9,6 @@ import {
   Code,
   Content,
   Example,
-  Heading,
   Link,
   P,
   PageHeading,
@@ -21,9 +20,7 @@ import {
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Text Input">
-      <PageHeading beta packageName="textinput">
-        Text Input
-      </PageHeading>
+      <PageHeading packageName="textinput">Text Input</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">

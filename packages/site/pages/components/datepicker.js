@@ -1,7 +1,6 @@
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
 import DatePicker from '@pluralsight/ps-design-system-datepicker/react'
+import React from 'react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
@@ -9,8 +8,6 @@ import {
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
@@ -21,9 +18,7 @@ import {
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Date Picker">
-      <PageHeading beta packageName="datepicker">
-        Date Picker
-      </PageHeading>
+      <PageHeading packageName="datepicker">Date Picker</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
