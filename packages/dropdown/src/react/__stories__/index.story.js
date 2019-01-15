@@ -1,30 +1,31 @@
 import { action } from '@storybook/addon-actions'
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
-import addons from '@storybook/addons'
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import React from 'react'
 import { storiesOf } from '@storybook/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
+import React from 'react'
 
-import Dropdown from '../react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
+import Icon from '@pluralsight/ps-design-system-icon/react'
 
-const PaddingDecorator = storyFn => (
-  <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
-)
+import Dropdown from '..'
 
-const labelStory = storiesOf('labels', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
-  .add('none', _ => <Dropdown />)
-  .add('placeholder', _ => <Dropdown placeholder="some placeholder" />)
-  .add('label', _ => <Dropdown label="Some label" />)
-  .add('subLabel', _ => <Dropdown subLabel="Some sublabel" />)
+const Empty = () => null
+
+const DropdownWithDefaults = props => <Dropdown {...props} />
+DropdownWithDefaults.defaultProps = {
+  menu: <Empty />
+}
+
+storiesOf('labels', module)
+  .add('none', _ => <DropdownWithDefaults />)
+  .add('placeholder', _ => (
+    <DropdownWithDefaults placeholder="some placeholder" />
+  ))
+  .add('label', _ => <DropdownWithDefaults label="Some label" />)
+  .add('subLabel', _ => <DropdownWithDefaults subLabel="Some sublabel" />)
   .add('label and subLabel', _ => (
-    <Dropdown label="Some label" subLabel="Some sublabel" />
+    <DropdownWithDefaults label="Some label" subLabel="Some sublabel" />
   ))
   .add('all', _ => (
-    <Dropdown
+    <DropdownWithDefaults
       label="Some label"
       subLabel="Some sublabel"
       placeholder="Some placeholder"
@@ -32,34 +33,36 @@ const labelStory = storiesOf('labels', module)
   ))
 
 const appearanceStory = storiesOf('appearance', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
+
 Object.keys(Dropdown.appearances).forEach(appearance =>
   appearanceStory.add(appearance, _ => (
-    <Dropdown appearance={appearance} placeholder="The placeholder " />
+    <DropdownWithDefaults
+      appearance={appearance}
+      placeholder="The placeholder "
+    />
   ))
 )
 Object.keys(Dropdown.appearances).forEach(appearance =>
   appearanceStory.add(`${appearance} w/ error`, _ => (
-    <Dropdown appearance={appearance} error label="Problem field" />
+    <DropdownWithDefaults appearance={appearance} error label="Problem field" />
   ))
 )
 appearanceStory.add('gaps', _ => (
   <div>
     <div>
-      <Dropdown label="Problem field" />
+      <DropdownWithDefaults label="Problem field" />
     </div>
     <div>
-      <Dropdown error label="Problem field" />
+      <DropdownWithDefaults error label="Problem field" />
     </div>
     <div>
-      <Dropdown
+      <DropdownWithDefaults
         appearance={Dropdown.appearances.subtle}
         label="Problem field"
       />
     </div>
     <div>
-      <Dropdown
+      <DropdownWithDefaults
         appearance={Dropdown.appearances.subtle}
         error
         label="Problem field"
@@ -68,52 +71,54 @@ appearanceStory.add('gaps', _ => (
   </div>
 ))
 
-const disabledStory = storiesOf('disabled', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
-  .add('compare', _ => (
-    <div>
-      <Dropdown
-        label="Normal"
-        subLabel="Still normal"
-        placeholder="I'm normal, see"
-      />
-      <Dropdown
-        label="I'm not usable"
-        subLabel="Neither am I"
-        disabled
-        placeholder="I'm untouchable"
-      />
-    </div>
-  ))
+storiesOf('disabled', module).add('compare', _ => (
+  <div>
+    <DropdownWithDefaults
+      label="Normal"
+      subLabel="Still normal"
+      placeholder="I'm normal, see"
+    />
+    <DropdownWithDefaults
+      label="I'm not usable"
+      subLabel="Neither am I"
+      disabled
+      placeholder="I'm untouchable"
+    />
+  </div>
+))
 
-const whitelistStory = storiesOf('whitelist', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
+storiesOf('whitelist', module)
   .add('name', _ => (
-    <Dropdown placeholder="I have a form name" name="myFieldNameOfPower" />
+    <DropdownWithDefaults
+      placeholder="I have a form name"
+      name="myFieldNameOfPower"
+    />
   ))
   .add('onChange', _ => (
-    <Dropdown placeholder="Change me" onChange={action('I changed')} />
+    <DropdownWithDefaults
+      placeholder="Change me"
+      onChange={action('I changed')}
+    />
   ))
 
-const layoutsStory = storiesOf('layouts', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
+storiesOf('layouts', module)
   .add('full width', _ => (
     <div style={{ border: '1px solid blue', width: '500px' }}>
-      <Dropdown label="First" style={{ display: 'block', width: '100%' }} />
-      <Dropdown
+      <DropdownWithDefaults
+        label="First"
+        style={{ display: 'block', width: '100%' }}
+      />
+      <DropdownWithDefaults
         error
         label="Second"
         style={{ display: 'block', width: '100%' }}
       />
-      <Dropdown
+      <DropdownWithDefaults
         appearance={Dropdown.appearances.subtle}
         label="Third"
         style={{ display: 'block', width: '100%' }}
       />
-      <Dropdown
+      <DropdownWithDefaults
         appearance={Dropdown.appearances.subtle}
         error
         label="Fourth"
@@ -124,7 +129,7 @@ const layoutsStory = storiesOf('layouts', module)
   .add('right-aligned', _ => (
     <div style={{ border: '1px solid blue' }}>
       <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-        <Dropdown
+        <DropdownWithDefaults
           placeholder="Filter"
           appearance={Dropdown.appearances.subtle}
         />
@@ -133,27 +138,22 @@ const layoutsStory = storiesOf('layouts', module)
     </div>
   ))
 
-const selectedLabelStory = storiesOf('placeholder', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
-  .add('as pre-selected item', _ => (
-    <Dropdown
-      placeholder="Two item"
-      menu={
-        <ActionMenu>
-          <ActionMenu.Item>One item</ActionMenu.Item>
-          <ActionMenu.Item>Two item</ActionMenu.Item>
-          <ActionMenu.Item>Three item</ActionMenu.Item>
-        </ActionMenu>
-      }
-    />
-  ))
+storiesOf('placeholder', module).add('as pre-selected item', _ => (
+  <DropdownWithDefaults
+    placeholder="Two item"
+    menu={
+      <ActionMenu>
+        <ActionMenu.Item>One item</ActionMenu.Item>
+        <ActionMenu.Item>Two item</ActionMenu.Item>
+        <ActionMenu.Item>Three item</ActionMenu.Item>
+      </ActionMenu>
+    }
+  />
+))
 
-const menuStory = storiesOf('menu', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
+storiesOf('menu', module)
   .add('single list', _ => (
-    <Dropdown
+    <DropdownWithDefaults
       label="Level"
       menu={
         <ActionMenu>
@@ -166,7 +166,7 @@ const menuStory = storiesOf('menu', module)
     />
   ))
   .add('w/ subLabel', _ => (
-    <Dropdown
+    <DropdownWithDefaults
       label="Level"
       subLabel="The course level"
       menu={
@@ -180,7 +180,7 @@ const menuStory = storiesOf('menu', module)
     />
   ))
   .add('single list w/ icon', _ => (
-    <Dropdown
+    <DropdownWithDefaults
       label="Level"
       placeholder="Select one"
       menu={
@@ -196,7 +196,7 @@ const menuStory = storiesOf('menu', module)
     />
   ))
   .add('divider', _ => (
-    <Dropdown
+    <DropdownWithDefaults
       label="Level"
       menu={
         <ActionMenu>
@@ -212,7 +212,7 @@ const menuStory = storiesOf('menu', module)
   .add('in stack', _ => (
     <div>
       <div>
-        <Dropdown
+        <DropdownWithDefaults
           label="Level"
           placeholder="Select one"
           menu={
@@ -228,7 +228,7 @@ const menuStory = storiesOf('menu', module)
         />
       </div>
       <div>
-        <Dropdown
+        <DropdownWithDefaults
           label="Level"
           placeholder="Select another one"
           menu={
@@ -246,7 +246,7 @@ const menuStory = storiesOf('menu', module)
     </div>
   ))
   .add('super long', _ => (
-    <Dropdown
+    <DropdownWithDefaults
       label="Level"
       menu={
         <ActionMenu>
@@ -259,7 +259,7 @@ const menuStory = storiesOf('menu', module)
     />
   ))
   .add('nested', _ => (
-    <Dropdown
+    <DropdownWithDefaults
       label="Level"
       placeholder="Select another one"
       menu={
@@ -284,7 +284,7 @@ const menuStory = storiesOf('menu', module)
     />
   ))
   .add('onClicks', _ => (
-    <Dropdown
+    <DropdownWithDefaults
       label="Level"
       appearance={Dropdown.appearances.subtle}
       placeholder="Select another one"
@@ -319,7 +319,7 @@ const menuStory = storiesOf('menu', module)
     />
   ))
   .add('w/ longer placeholder', _ => (
-    <Dropdown
+    <DropdownWithDefaults
       label="Level"
       placeholder="This one is longer than any menu item"
       menu={
@@ -331,7 +331,7 @@ const menuStory = storiesOf('menu', module)
     />
   ))
   .add('w/ longer nested menu item label', _ => (
-    <Dropdown
+    <DropdownWithDefaults
       label="Level"
       menu={
         <ActionMenu>
@@ -362,17 +362,14 @@ const menuStory = storiesOf('menu', module)
     />
   ))
 
-storiesOf('props whitelist', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
-  .add('title', _ => (
-    <Dropdown
-      title="This title should be present"
-      label="Level"
-      menu={
-        <ActionMenu>
-          <ActionMenu.Item>One item</ActionMenu.Item>
-        </ActionMenu>
-      }
-    />
-  ))
+storiesOf('props whitelist', module).add('title', _ => (
+  <DropdownWithDefaults
+    title="This title should be present"
+    label="Level"
+    menu={
+      <ActionMenu>
+        <ActionMenu.Item>One item</ActionMenu.Item>
+      </ActionMenu>
+    }
+  />
+))

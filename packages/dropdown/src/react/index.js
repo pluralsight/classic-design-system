@@ -273,6 +273,9 @@ Dropdown.propTypes = {
   innerRef: PropTypes.func,
   label: PropTypes.node,
   menu: PropTypes.element.isRequired,
+  onBlur: PropTypes.func,
+  onFocus: PropTypes.func,
+  onClick: PropTypes.func,
   placeholder: PropTypes.string,
   subLabel: PropTypes.node
 }
