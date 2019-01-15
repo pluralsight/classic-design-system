@@ -1,23 +1,25 @@
 import { action } from '@storybook/addon-actions'
-import * as glamor from 'glamor'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import PropTypes from 'prop-types'
-import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Button from '../src/react'
+import * as glamor from 'glamor'
+import PropTypes from 'prop-types'
+import React from 'react'
 
-const appearanceStory = storiesOf('appearance', module)
+import Icon from '@pluralsight/ps-design-system-icon/react'
+
+import Button from '..'
+
+const appearanceStory = storiesOf('Button / appearance', module)
 Object.keys(Button.appearances).forEach(app =>
   appearanceStory.add(app, _ => <Button appearance={app}>Click me</Button>)
 )
 
-const sizeStory = storiesOf('size', module)
+const sizeStory = storiesOf('Button / size', module)
 Object.keys(Button.sizes).forEach(size =>
   sizeStory.add(size, _ => <Button size={size}>Click me</Button>)
 )
 
-const iconStory = storiesOf('icon', module)
+const iconStory = storiesOf('Button / icon', module)
 Object.keys(Button.appearances).forEach(app =>
   iconStory.add(app, _ => (
     <Button appearance={app} icon={<Icon id={Icon.ids.check} />}>
@@ -57,14 +59,20 @@ iconStory.add('vertically aligned rows', _ => (
   </div>
 ))
 
-const disabledStory = storiesOf('disabled', module)
+const disabledStory = storiesOf('Button / disabled', module)
 disabledStory.add('all', _ => (
   <div style={{ display: 'grid', gap: '20px', gridTemplateColumns: '1fr 1fr' }}>
-    {Object.keys(Button.appearances).map(app => [
-      <Button appearance={app}>{app}</Button>,
-      <Button onClick={action('should never click')} disabled appearance={app}>
-        {app + ' disabled'}
-      </Button>
+    {Object.keys(Button.appearances).map((app, index) => [
+      <React.Fragment key={index}>
+        <Button appearance={app}>{app}</Button>
+        <Button
+          onClick={action('should never click')}
+          disabled
+          appearance={app}
+        >
+          {app + ' disabled'}
+        </Button>
+      </React.Fragment>
     ])}
   </div>
 ))
@@ -75,7 +83,7 @@ disabledStory.add('with icon', _ => (
   </Button>
 ))
 
-storiesOf('as link', module)
+storiesOf('Button / as link', module)
   .add('default', _ => (
     <Button href="https://duckduckgo.com">Click as link</Button>
   ))
@@ -85,17 +93,17 @@ storiesOf('as link', module)
     </Button>
   ))
 
-storiesOf('with ref', module).add('ref to handle focus', _ => (
+storiesOf('Button / with ref', module).add('ref to handle focus', _ => (
   <Button innerRef={el => el && el.focus()}>Should be focused</Button>
 ))
 
-storiesOf('with onClick', module).add('clicks once', _ => (
+storiesOf('Button / with onClick', module).add('clicks once', _ => (
   <Button onClick={action('click count')} icon={<Icon id={Icon.ids.check} />}>
     Clicks once
   </Button>
 ))
 
-storiesOf('override styles', module)
+storiesOf('Button / override styles', module)
   .add('with style', _ => (
     <Button style={{ background: 'red' }} icon={<Icon id={Icon.ids.check} />}>
       Red Button
@@ -110,7 +118,7 @@ storiesOf('override styles', module)
     )
   })
 
-storiesOf('props pass through', module)
+storiesOf('Button / props pass through', module)
   .add('aria-expanded', _ => <Button aria-expanded>aria-expanded</Button>)
   .add('role', _ => <Button role="link">Role Link</Button>)
   .add('data-something', _ => (
@@ -127,7 +135,7 @@ storiesOf('props pass through', module)
     <Button onMouseOver={action('mouse over')}>Should not mouseover</Button>
   ))
 
-const loadingExample = storiesOf('loading', module)
+const loadingExample = storiesOf('Button / loading', module)
 Object.keys(Button.sizes).forEach(size =>
   loadingExample.add(size, _ => (
     <Button onClick={action('is disabled')} size={size} loading>
