@@ -6,8 +6,8 @@ import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
-import Calendar from './calendar'
-import css from '../css'
+import Calendar from './calendar.js'
+import css from '../css/index.js'
 import {
   parseDate,
   formatDate,
@@ -15,7 +15,7 @@ import {
   forceValidMonth,
   forceValidYear
 } from '../js'
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 const datePickerHtmlPropsWhitelist = [
   'name',
@@ -82,6 +82,9 @@ const styles = {
 const Overlay = props => (
   <div {...styles.overlay(props)} onClick={props.onClick} />
 )
+Overlay.propTypes = {
+  onClick: PropTypes.func.isRequired
+}
 
 class SubField extends React.Component {
   constructor(props) {
@@ -109,6 +112,14 @@ class SubField extends React.Component {
       />
     )
   }
+}
+SubField.propTypes = {
+  disabled: PropTypes.bool,
+  name: PropTypes.string.isRequired,
+  onBlur: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
+  onFocus: PropTypes.func.isRequired,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 const SubFieldDivider = props => (
