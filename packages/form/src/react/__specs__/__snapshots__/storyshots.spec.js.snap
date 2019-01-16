@@ -302,6 +302,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-w0yocm=""
             onBlur={[Function]}
             onFocus={[Function]}
+            onKeyDown={[Function]}
             style={
               Object {
                 "width": "100%",
