@@ -72,7 +72,7 @@ class ResizeObserver extends React.PureComponent {
 }
 
 ResizeObserver.defaultProps = {
-  debounceDelay: 200,
+  debounceDelay: 240,
   observeHeight: true,
   observeWidth: true
 }

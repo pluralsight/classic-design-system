@@ -114,11 +114,7 @@ class EmptyState extends React.PureComponent {
   constructor(props) {
     super(props)
 
-    this.breakpoint = 450
-  }
-
-  get hasSizeOverride() {
-    return !!this.props.size
+    this.renderSmallIfElementLessThan = 450
   }
 
   renderContent(ctx) {
@@ -138,10 +134,12 @@ class EmptyState extends React.PureComponent {
   }
 
   render() {
-    const { themeName } = this.props
+    const { size, themeName } = this.props
 
-    if (this.hasSizeOverride) {
-      const ctx = { hasRenderedOnce: true, size: this.props.size, themeName }
+    const hasSizeOverride = !!size
+
+    if (hasSizeOverride) {
+      const ctx = { hasRenderedOnce: true, size, themeName }
       return this.renderContent(ctx)
     }
 
@@ -150,7 +148,7 @@ class EmptyState extends React.PureComponent {
         {({ width }) => {
           const hasRenderedOnce = !!width
           const size =
-            hasRenderedOnce && width <= this.breakpoint
+            hasRenderedOnce && width <= this.renderSmallIfElementLessThan
               ? vars.sizes.small
               : vars.sizes.large
 
