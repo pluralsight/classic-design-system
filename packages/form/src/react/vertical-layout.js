@@ -1,9 +1,8 @@
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
-import css from '../css'
+import css from '../css/index.js'
 
 const styles = {
   layout: _ => glamor.css(css['.psds-form-vertical-layout']),
@@ -25,5 +24,8 @@ const VerticalLayout = (props, context) => (
   </div>
 )
 VerticalLayout.displayName = 'VerticalLayout'
+VerticalLayout.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.element)
+}
 
 export default VerticalLayout

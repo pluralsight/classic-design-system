@@ -1,6 +1,6 @@
-import ButtonRow from './button-row'
-import Divider from './divider'
-import VerticalLayout from './vertical-layout'
+import ButtonRow from './button-row.js'
+import Divider from './divider.js'
+import VerticalLayout from './vertical-layout.js'
 
 export default {
   ButtonRow,

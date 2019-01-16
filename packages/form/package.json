@@ -28,7 +28,6 @@
     "@pluralsight/ps-design-system-core": "^4.4.2",
     "@pluralsight/ps-design-system-theme": "^1.4.3",
     "@pluralsight/ps-design-system-util": "^1.2.7",
-    "polished": "^1.9.2",
     "prop-types": "^15.5.10"
   },
   "peerDependencies": {
