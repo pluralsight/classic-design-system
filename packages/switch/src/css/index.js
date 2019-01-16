@@ -3,9 +3,9 @@ import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme/react'
-import { transparentize } from 'polished'
+import { transparentize } from '@pluralsight/ps-design-system-util/color'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 export default {
   '.psds-switch': {
@@ -31,7 +31,6 @@ export default {
     flexDirection: 'row-reverse'
   },
 
-  // __track
   [`.psds-switch__track`]: {
     position: 'relative',
     backgroundColor: core.colors.gray03,
@@ -64,7 +63,6 @@ export default {
     backgroundColor: core.colors.orange
   },
 
-  // __thumb
   [`.psds-switch__thumb`]: {
     backgroundColor: core.colors.white,
     borderRadius: '50%',
@@ -89,7 +87,7 @@ export default {
   }`]: {
     transform: 'translateX(24px)'
   },
-  // __label
+
   [`.psds-switch__label`]: {
     fontWeight: core.type.fontWeightMedium,
     lineHeight: '1em'
@@ -126,6 +124,6 @@ export default {
   [`.psds-switch__label.psds-theme--${themeDefaultName}`]: {
     color: core.colors.bone
   },
-  // __checkbox
+
   '.psds-switch__checkbox': core.accessibility.screenReaderOnly
 }
