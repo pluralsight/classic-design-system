@@ -2,9 +2,9 @@ import * as glamor from 'glamor'
 import Halo from '@pluralsight/ps-design-system-halo/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
+import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
-import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
 import css from '../css/index.js'
 import * as vars from '../vars/index.js'
@@ -273,6 +273,9 @@ Dropdown.propTypes = {
   innerRef: PropTypes.func,
   label: PropTypes.node,
   menu: PropTypes.element.isRequired,
+  onBlur: PropTypes.func,
+  onClick: PropTypes.func,
+  onFocus: PropTypes.func,
   placeholder: PropTypes.string,
   subLabel: PropTypes.node
 }
