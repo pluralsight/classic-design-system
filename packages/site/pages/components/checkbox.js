@@ -1,16 +1,13 @@
 import Checkbox from '@pluralsight/ps-design-system-checkbox/react'
 import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
@@ -116,7 +113,7 @@ class InAppExample extends React.Component {
         <div>
           Checked:{' '}
           {features
-            .map(name => \`\$\{name\}: \$\{this.state.values[name]\}\`)
+            .map(name => name + ': ' + this.state.values[name]
             .join(', ')}
         </div>
       </div>
@@ -154,9 +151,7 @@ class InAppExample extends React.Component {
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Checkbox">
-      <PageHeading beta packageName="checkbox">
-        Checkbox
-      </PageHeading>
+      <PageHeading packageName="checkbox">Checkbox</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">

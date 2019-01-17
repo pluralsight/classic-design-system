@@ -3,12 +3,12 @@ import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme/react'
-import { transparentize } from 'polished'
+import { transparentize } from '@pluralsight/ps-design-system-util/color'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 export default {
-  ['@keyframes psds-circularprogress__keyframes__spin']: {
+  '@keyframes psds-circularprogress__keyframes__spin': {
     to: {
       transform: 'rotate(270deg)'
     }

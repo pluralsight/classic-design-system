@@ -1,5 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import { transparentize } from 'polished'
+import React from 'react'
 
 import {
   Chrome,
@@ -9,7 +9,7 @@ import {
   PageHeading,
   SectionHeading,
   withServerProps
-} from '../../src/ui'
+} from '../../src/ui/index.js'
 
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
 

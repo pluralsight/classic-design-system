@@ -5,8 +5,8 @@ import React from 'react'
 import FocusManager from '@pluralsight/ps-design-system-focusmanager/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
-import css from '../css'
-import * as vars from '../vars'
+import css from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const ESCAPE_KEYCODE = 27
 const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
@@ -51,6 +51,9 @@ const CloseButton = props => (
     </svg>
   </button>
 )
+CloseButton.propTypes = {
+  onClose: PropTypes.func.isRequired
+}
 
 class ModalOverlay extends React.Component {
   constructor(props) {
@@ -78,10 +81,10 @@ class ModalOverlay extends React.Component {
     )
   }
 }
-
 ModalOverlay.propTypes = {
   'aria-label': PropTypes.string.isRequired,
   children: PropTypes.node,
+  disableCloseOnOverlayClick: PropTypes.func,
   onClose: PropTypes.func.isRequired
 }
 
@@ -110,7 +113,7 @@ class Dialog extends React.Component {
     return (
       <FocusManager
         autofocus={!props.disableFocusOnMount}
-        trapped={!!props.model || !!props.onClose}
+        trapped={!!props.modal || !!props.onClose}
         {...dialogProps}
       >
         <Theme name={Theme.names.light}>
@@ -125,6 +128,16 @@ class Dialog extends React.Component {
       </FocusManager>
     )
   }
+}
+Dialog.propTypes = {
+  className: PropTypes.string,
+  disableCloseButton: PropTypes.bool,
+  disableCloseOnEscape: PropTypes.bool,
+  disableFocusOnMount: PropTypes.bool,
+  modal: PropTypes.bool,
+  onClose: PropTypes.func,
+  style: PropTypes.object,
+  tailPosition: PropTypes.oneOf(Object.keys(vars.tailPositions))
 }
 
 const DialogWrapper = props =>

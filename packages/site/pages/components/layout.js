@@ -6,6 +6,7 @@ import {
 } from '@pluralsight/ps-design-system-layout/react'
 import Badge from '@pluralsight/ps-design-system-badge/react'
 import Button from '@pluralsight/ps-design-system-button/react'
+import React from 'react'
 import Text from '@pluralsight/ps-design-system-text/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
@@ -13,8 +14,6 @@ import {
   Chrome,
   Code,
   Content,
-  Example,
-  Heading,
   P,
   PageHeading,
   PropTypes,
@@ -278,9 +277,7 @@ const VerticalGridVisual = _ => (
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Layout">
-      <PageHeading packageName="layout" beta>
-        Layout
-      </PageHeading>
+      <PageHeading packageName="layout">Layout</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">

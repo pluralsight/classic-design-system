@@ -16,6 +16,11 @@ module.exports = {
     'prettier/standard',
     'plugin:jest/recommended'
   ],
-  parser: 'babel-eslint',
-  plugins: ['jest', 'react']
+  plugins: ['jest', 'react'],
+  env: {
+    'jest/globals': true
+  },
+  rules: {
+    'react/jsx-no-bind': [IGNORE]
+  }
 }

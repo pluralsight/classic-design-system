@@ -1,27 +1,13 @@
 import core from '@pluralsight/ps-design-system-core'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
 import Halo from '@pluralsight/ps-design-system-halo/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
-import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
-import css from '../css'
-
-const textAreaHtmlPropsWhitelist = [
-  'name',
-  'autocomplete',
-  'autofocus',
-  'role',
-  'tabIndex',
-  'value',
-  'defaultValue',
-  /^on/,
-  /^aria-/,
-  /^data-/,
-  /^form/
-]
+import css from '../css/index.js'
 
 const calcRowsPxHeight = rows => {
   const int = varVal => parseInt(varVal.replace('px', ''), 10)
@@ -89,12 +75,10 @@ const TextArea = (props, context) => {
       <div {...styles.fieldContainer(allProps)}>
         <Halo error={allProps.error} gapSize={Halo.gapSizes.small}>
           <textarea
-            {...propsUtil.whitelistProps(allProps, textAreaHtmlPropsWhitelist)}
+            {...filterReactProps(allProps, { tagName: 'textarea' })}
             {...styles.field(allProps)}
             disabled={allProps.disabled}
             placeholder={allProps.placeholder}
-            onBlur={props.onBlur}
-            onFocus={props.onFocus}
             ref={allProps.innerRef}
             style={{ height: calcRowsPxHeight(allProps.rows) }}
           />

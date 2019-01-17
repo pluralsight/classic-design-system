@@ -1,9 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/vars'
-import { transparentize } from 'polished'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
 const newStackingContextForFocusRingVisibility = {
   position: 'relative',
@@ -11,8 +7,6 @@ const newStackingContextForFocusRingVisibility = {
 }
 
 export default {
-  // button-row
-
   '.psds-form-button-row': {
     display: 'flex'
   },
@@ -23,19 +17,14 @@ export default {
     marginRight: 0
   },
 
-  // divider
-
   '.psds-form-divider': {
     height: '1px',
     width: '100%',
     backgroundColor: core.colors.gray04
-    // margin: `${core.layout.spacingXXSmall} 0`
   },
   [`.psds-form-divider.psds-theme--${themeNames.light}`]: {
     backgroundColor: core.colors.gray01
   },
-
-  // vertical-layout
 
   '.psds-form-vertical-layout': {
     ...newStackingContextForFocusRingVisibility,
