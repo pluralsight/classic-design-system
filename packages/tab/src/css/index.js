@@ -115,7 +115,10 @@ export default {
     marginBottom: '-1px',
     fontWeight: core.type.fontWeightBook,
     padding: `0 0 ${core.layout.spacingXXSmall} 0`,
-    transition: `color ${core.motion.speedXFast} linear`
+    transition: `color ${core.motion.speedXFast} linear`,
+    '&:focus': {
+      outline: 'none'
+    }
   },
 
   // __list-item__bar

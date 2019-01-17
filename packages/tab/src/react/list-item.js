@@ -38,7 +38,7 @@ const ListItem = (props, context) => {
       },
       { tagName }
     ),
-    <div {...styles.textWidth(props)}>
+    <div {...styles.textWidth(props)} tabIndex="-1">
       {props.children}
       <span {...styles.bar(props)} />
     </div>
