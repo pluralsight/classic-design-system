@@ -29,6 +29,7 @@ module.exports = {
       },
       '/components/drawer': { page: '/components/drawer' },
       '/components/dropdown': { page: '/components/dropdown' },
+      '/components/emptystate': { page: '/components/emptystate' },
       '/components/errors': { page: '/components/errors' },
       '/components/form': { page: '/components/form' },
       '/components/icon': { page: '/components/icon' },
