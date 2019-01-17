@@ -1,14 +1,10 @@
-import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/react'
+import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
-import css from '../css'
-import * as vars from '../vars'
+import css from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const radius = vars.style.width / 2 - vars.style.strokeWidth / 2
 const circumference = 2 * Math.PI * radius
@@ -46,7 +42,7 @@ const CircularProgress = (props, context) => {
     themeName: context.themeName || themeDefaultName
   }
   const value = typeof allProps.value === 'undefined' ? 25 : allProps.value
-  const dashOffset = (100 - value) / 100 * circumference
+  const dashOffset = ((100 - value) / 100) * circumference
 
   return React.createElement(
     'div',
@@ -75,7 +71,9 @@ const CircularProgress = (props, context) => {
 }
 
 CircularProgress.propTypes = {
+  className: PropTypes.string,
   size: PropTypes.oneOf(Object.keys(vars.sizes)),
+  style: PropTypes.object,
   value: PropTypes.number
 }
 CircularProgress.defaultProps = {

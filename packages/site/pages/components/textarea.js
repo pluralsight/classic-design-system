@@ -1,16 +1,12 @@
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
 import TextArea from '@pluralsight/ps-design-system-textarea/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
@@ -21,9 +17,7 @@ import {
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Text Area">
-      <PageHeading beta packageName="textarea">
-        Text Area
-      </PageHeading>
+      <PageHeading packageName="textarea">Text Area</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">

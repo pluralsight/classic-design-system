@@ -4,8 +4,8 @@ import Halo from '@pluralsight/ps-design-system-halo/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import css from '../css'
-import * as vars from '../vars'
+import css from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const styles = {
   switch: ({ disabled, labelAlign }) =>
@@ -110,6 +110,7 @@ class Switch extends React.Component {
 
 Switch.propTypes = {
   checked: PropTypes.bool,
+  children: PropTypes.node,
   color: PropTypes.oneOf(Object.keys(vars.colors)),
   disabled: PropTypes.bool,
   error: PropTypes.bool,

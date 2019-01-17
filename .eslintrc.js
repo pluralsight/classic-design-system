@@ -3,6 +3,10 @@ const WARNING = 1
 const ERROR = 2
 
 module.exports = {
+  env: {
+    es6: true,
+    'jest/globals': true
+  },
   extends: [
     'standard',
     'standard-react',
@@ -12,8 +16,11 @@ module.exports = {
     'prettier/standard',
     'plugin:jest/recommended'
   ],
-  plugins: ['jest'],
+  plugins: ['jest', 'react'],
   env: {
     'jest/globals': true
+  },
+  rules: {
+    'react/jsx-no-bind': [IGNORE]
   }
 }

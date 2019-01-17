@@ -1,10 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/vars'
-import { transparentize } from 'polished'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
 export default {
   '.psds-text-area': {
@@ -15,7 +11,6 @@ export default {
     opacity: 0.5
   },
 
-  // __field
   '.psds-text-area__field': {
     position: 'relative',
     minHeight: '104px',
@@ -43,7 +38,6 @@ export default {
     border: `1px solid ${core.colors.gray02}`
   },
 
-  // __field-container
   '.psds-text-area__field-container': {
     position: 'relative',
     display: 'flex',
@@ -53,7 +47,6 @@ export default {
     })`
   },
 
-  // __label
   '.psds-text-area__label': {
     width: '100%',
     color: core.colors.bone,
@@ -66,7 +59,6 @@ export default {
     color: core.colors.gray05
   },
 
-  // __sub-label
   '.psds-text-area__sub-label': {
     color: core.colors.gray02,
     fontSize: core.type.fontSizeXSmall,
@@ -78,7 +70,6 @@ export default {
     color: core.colors.gray03
   },
 
-  // __error
   '.psds-text-area__error': {
     position: 'absolute',
     right: `calc(-1 * (${iconVars.widths.medium} + ${

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
-import css from '../css'
+import css from '../css/index.js'
 
 const style = ({ themeName }) =>
   glamor.css({
@@ -20,7 +20,9 @@ const P = (props, context) => {
     </p>
   )
 }
-
+P.propTypes = {
+  children: PropTypes.node
+}
 P.contextTypes = {
   themeName: PropTypes.string
 }

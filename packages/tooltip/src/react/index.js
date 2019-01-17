@@ -2,8 +2,8 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import css from '../css'
-import * as vars from '../vars'
+import css from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const fade = glamor.css.keyframes(
   css[`@keyframes psds-tooltip__keyframes__fade`]
@@ -57,6 +57,9 @@ const CloseButton = props => (
     </svg>
   </button>
 )
+CloseButton.propTypes = {
+  onClose: PropTypes.func.isRequired
+}
 
 class Tooltip extends React.Component {
   render() {
@@ -73,9 +76,7 @@ class Tooltip extends React.Component {
           <CloseButton appearance={props.appearance} onClose={props.onClose} />
         )}
         {props.children}
-        {props.tailPosition && (
-          <div {...styles.tail(props)} aria-hidden />
-        )}
+        {props.tailPosition && <div {...styles.tail(props)} aria-hidden />}
       </div>
     )
   }

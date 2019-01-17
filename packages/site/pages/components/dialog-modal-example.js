@@ -3,7 +3,7 @@ import Button from '@pluralsight/ps-design-system-button/react'
 import Dialog from '@pluralsight/ps-design-system-dialog/react'
 import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
-import { transparentize } from 'polished'
+import { transparentize } from '@pluralsight/ps-design-system-util/color'
 
 import { Head, withServerProps } from '../../src/ui'
 

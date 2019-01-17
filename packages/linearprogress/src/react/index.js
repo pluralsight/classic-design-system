@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
-import css from '../css'
-import { toPercentageString } from '../js'
+import css from '../css/index.js'
+import { toPercentageString } from '../js/index.js'
 
 const styles = {
   bg: ({ themeName }) =>

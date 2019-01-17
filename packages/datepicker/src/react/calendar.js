@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
-import css from '../css'
+import css from '../css/index.js'
 import {
   formatDate,
   getDaysInMonth,
@@ -13,7 +13,7 @@ import {
   getPrevMonthYear,
   getMonthName,
   getFirstDayOfWeekForMonth
-} from '../js'
+} from '../js/index.js'
 
 const slide = glamor.css.keyframes(
   css['@keyframes psds-date-picker__calendar__keyframes__slide']

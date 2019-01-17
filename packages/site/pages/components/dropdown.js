@@ -1,7 +1,8 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
-import core from '@pluralsight/ps-design-system-core'
-import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
 import React from 'react'
+
+import core from '@pluralsight/ps-design-system-core'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
+import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
@@ -125,9 +126,7 @@ class InAppExample extends React.Component {
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Dropdown">
-      <PageHeading beta packageName="dropdown">
-        Dropdown
-      </PageHeading>
+      <PageHeading packageName="dropdown">Dropdown</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">

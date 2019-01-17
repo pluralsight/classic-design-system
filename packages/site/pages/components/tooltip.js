@@ -1,6 +1,7 @@
 import Button from '@pluralsight/ps-design-system-button/react'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import ReactPropTypes from 'prop-types'
 import React from 'react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 import Tooltip from '@pluralsight/ps-design-system-tooltip/react'
@@ -11,7 +12,6 @@ import {
   Content,
   Example,
   Guideline,
-  Heading,
   Intro,
   Link,
   P,
@@ -79,6 +79,13 @@ class TooltipGuideline extends React.Component {
     )
   }
 }
+TooltipGuideline.propTypes = {
+  appearance: ReactPropTypes.oneOf(
+    Object.keys(Tooltip.appearances).map(a => Tooltip.appearances[a])
+  ),
+  children: ReactPropTypes.string,
+  onClose: ReactPropTypes.func
+}
 
 class TooltipPositioner extends React.Component {
   constructor(props) {
@@ -95,6 +102,10 @@ class TooltipPositioner extends React.Component {
       style: this.props.styleBy(this.el)
     })
   }
+}
+TooltipPositioner.propTypes = {
+  children: PropTypes.element.isRequired,
+  styleBy: PropTypes.func.isRequired
 }
 
 class InAppExample extends React.Component {
@@ -157,7 +168,7 @@ class InAppExample extends React.Component {
                 appearance={Button.appearances.flat}
                 className="text"
                 innerRef={el => (this.examples[1] = el)}
-                onMouseOver={this.handleMouseOver}
+                onMouseEnter={this.handleMouseOver}
                 onMouseOut={this.handleMouseOut}
               >
                 Hover me
@@ -257,7 +268,7 @@ class HoverExampleOnly extends React.Component {
         <Button
           appearance={Button.appearances.flat}
           innerRef={el => (this.triggerEl = el)}
-          onMouseOver={_ => this.setState({ isHovered: true })}
+          onMouseEnter={_ => this.setState({ isHovered: true })}
           onMouseOut={_ => this.setState({ isHovered: false })}
         >
           Hover me

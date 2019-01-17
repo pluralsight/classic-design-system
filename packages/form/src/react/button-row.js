@@ -1,9 +1,8 @@
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
-import css from '../css'
+import css from '../css/index.js'
 
 const styles = {
   buttonRow: _ => glamor.css(css['.psds-form-button-row']),
@@ -21,5 +20,8 @@ const ButtonRow = (props, context) => (
   </div>
 )
 ButtonRow.displayName = 'ButtonRow'
+ButtonRow.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.element)
+}
 
 export default ButtonRow

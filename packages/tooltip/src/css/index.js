@@ -1,7 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
-import { transparentize } from 'polished'
+import { transparentize } from '@pluralsight/ps-design-system-util/color'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 const shadowBlurWidth = '4px'
 const tailDimension = '14px'

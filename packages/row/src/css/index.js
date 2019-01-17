@@ -1,12 +1,12 @@
 import core from '@pluralsight/ps-design-system-core'
-import { transparentize } from 'polished'
+import { transparentize } from '@pluralsight/ps-design-system-util/color'
 
 import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme/vars'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 export default {
   '.psds-row': {

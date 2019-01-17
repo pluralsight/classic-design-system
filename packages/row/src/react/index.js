@@ -7,9 +7,9 @@ import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
-import css from '../css'
-import { toPercentageString } from '../js'
-import * as vars from '../vars'
+import css from '../css/index.js'
+import { toPercentageString } from '../js/index.js'
+import * as vars from '../vars/index.js'
 
 const formatImageWidth = ({ image, size }) =>
   image && size !== vars.sizes.small
@@ -209,6 +209,9 @@ const ProgressBar = props => {
       aria-label={`${percent} complete`}
     />
   )
+}
+ProgressBar.propTypes = {
+  progress: PropTypes.number
 }
 
 const Text = props => <span {...filterReactProps(props, { tagName: 'span' })} />

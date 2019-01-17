@@ -29,6 +29,7 @@ exports[`Storyshots disabled compare 1`] = `
                 data-css-1vpjki6=""
                 disabled={false}
                 placeholder="I'm normal, see"
+                rows={4}
                 style={
                   Object {
                     "height": 112,
@@ -61,6 +62,7 @@ exports[`Storyshots disabled compare 1`] = `
                 data-css-1vpjki6=""
                 disabled={true}
                 placeholder="I'm untouchable"
+                rows={4}
                 style={
                   Object {
                     "height": 112,
@@ -110,6 +112,7 @@ exports[`Storyshots error compare 1`] = `
                 data-css-1vpjki6=""
                 disabled={false}
                 placeholder="I'm normal, see"
+                rows={4}
                 style={
                   Object {
                     "height": 112,
@@ -141,6 +144,7 @@ exports[`Storyshots error compare 1`] = `
               <textarea
                 data-css-1vpjki6=""
                 disabled={false}
+                rows={4}
                 style={
                   Object {
                     "height": 112,
@@ -205,6 +209,7 @@ exports[`Storyshots focus onFocus/onBlur 1`] = `
               onBlur={[Function]}
               onFocus={[Function]}
               placeholder="Focus on me!"
+              rows={4}
               style={
                 Object {
                   "height": 112,
@@ -247,6 +252,7 @@ exports[`Storyshots labels all 1`] = `
               data-css-1vpjki6=""
               disabled={false}
               placeholder="Some placeholder"
+              rows={4}
               style={
                 Object {
                   "height": 112,
@@ -293,6 +299,7 @@ exports[`Storyshots labels label 1`] = `
             <textarea
               data-css-1vpjki6=""
               disabled={false}
+              rows={4}
               style={
                 Object {
                   "height": 112,
@@ -334,6 +341,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
             <textarea
               data-css-1vpjki6=""
               disabled={false}
+              rows={4}
               style={
                 Object {
                   "height": 112,
@@ -375,6 +383,7 @@ exports[`Storyshots labels none 1`] = `
             <textarea
               data-css-1vpjki6=""
               disabled={false}
+              rows={4}
               style={
                 Object {
                   "height": 112,
@@ -412,6 +421,7 @@ exports[`Storyshots labels placeholder 1`] = `
               data-css-1vpjki6=""
               disabled={false}
               placeholder="some placeholder"
+              rows={4}
               style={
                 Object {
                   "height": 112,
@@ -448,6 +458,7 @@ exports[`Storyshots labels subLabel 1`] = `
             <textarea
               data-css-1vpjki6=""
               disabled={false}
+              rows={4}
               style={
                 Object {
                   "height": 112,
@@ -508,6 +519,7 @@ exports[`Storyshots layouts full width 1`] = `
               <textarea
                 data-css-1vpjki6=""
                 disabled={false}
+                rows={4}
                 style={
                   Object {
                     "height": 112,
@@ -540,6 +552,7 @@ exports[`Storyshots layouts full width 1`] = `
               <textarea
                 data-css-1vpjki6=""
                 disabled={false}
+                rows={4}
                 style={
                   Object {
                     "height": 112,
@@ -600,6 +613,7 @@ exports[`Storyshots rows less than 4 1`] = `
             <textarea
               data-css-1vpjki6=""
               disabled={false}
+              rows={1}
               style={
                 Object {
                   "height": 40,
@@ -641,6 +655,7 @@ exports[`Storyshots rows more than 4 1`] = `
             <textarea
               data-css-1vpjki6=""
               disabled={false}
+              rows={6}
               style={
                 Object {
                   "height": 160,
@@ -679,6 +694,7 @@ exports[`Storyshots whitelist name 1`] = `
               disabled={false}
               name="myFieldNameOfPower"
               placeholder="I have a form name"
+              rows={4}
               style={
                 Object {
                   "height": 112,
@@ -717,6 +733,7 @@ exports[`Storyshots whitelist onChange 1`] = `
               disabled={false}
               onChange={[Function]}
               placeholder="Change me"
+              rows={4}
               style={
                 Object {
                   "height": 112,

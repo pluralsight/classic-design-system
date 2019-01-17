@@ -1,4 +1,5 @@
 import { storiesOf } from '@storybook/react'
+import PropTypes from 'prop-types'
 import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button/react'
@@ -27,7 +28,7 @@ const EmptyStateWithDefaults = props => {
     <EmptyState.Caption>
       Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket.
       Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder
-      strip steak filet mignon pork, pork loin shankle spare ribs.
+      strip steak filet mignon pork.
     </EmptyState.Caption>
   )
   const heading = (
@@ -36,9 +37,8 @@ const EmptyStateWithDefaults = props => {
     </EmptyState.Heading>
   )
   const illustration = (
-    <EmptyState.Illustration name={EmptyState.Illustration.names.search} />
+    <EmptyState.Illustration name={EmptyState.Illustration.names.magnify} />
   )
-
   return (
     <EmptyState
       actions={actions}
@@ -73,8 +73,17 @@ const InlineList = ({ children, ...props }) => {
     </div>
   )
 }
+InlineList.propTypes = {
+  children: PropTypes.node
+}
 
-storiesOf('EmptyState', module).add('combo', _ => <EmptyStateWithDefaults />)
+storiesOf('EmptyState', module)
+  .add('combo', _ => <EmptyStateWithDefaults />)
+  .add('in a small fixed size container', _ => (
+    <div style={{ width: 400 }}>
+      <EmptyStateWithDefaults />
+    </div>
+  ))
 
 Object.values(EmptyState.sizes).forEach(size => {
   storiesOf('EmptyState/sizes', module).add(size, _ => (
@@ -83,15 +92,24 @@ Object.values(EmptyState.sizes).forEach(size => {
 })
 
 Object.values(EmptyState.Illustration.names).forEach(name => {
-  storiesOf('EmptyState/illustrations', module).add(name, _ => (
+  storiesOf('EmptyState/illustrations/large', module).add(name, _ => (
     <EmptyState
       heading={<EmptyState.Heading>{name}</EmptyState.Heading>}
       illustration={<EmptyState.Illustration name={name} />}
+      size={EmptyState.sizes.large}
+    />
+  ))
+
+  storiesOf('EmptyState/illustrations/small', module).add(name, _ => (
+    <EmptyState
+      heading={<EmptyState.Heading>{name}</EmptyState.Heading>}
+      illustration={<EmptyState.Illustration name={name} />}
+      size={EmptyState.sizes.small}
     />
   ))
 })
 
-storiesOf('EmptyState/illustrations', module).add('custom', _ => (
+storiesOf('EmptyState/illustrations/small', module).add('custom', _ => (
   <EmptyState
     heading={<EmptyState.Heading>Custom Illustration</EmptyState.Heading>}
     illustration={
@@ -99,6 +117,19 @@ storiesOf('EmptyState/illustrations', module).add('custom', _ => (
         <CustomIllustration />
       </EmptyState.Illustration>
     }
+    size={EmptyState.sizes.small}
+  />
+))
+
+storiesOf('EmptyState/illustrations/large', module).add('custom', _ => (
+  <EmptyState
+    heading={<EmptyState.Heading>Custom Illustration</EmptyState.Heading>}
+    illustration={
+      <EmptyState.Illustration>
+        <CustomIllustration />
+      </EmptyState.Illustration>
+    }
+    size={EmptyState.sizes.large}
   />
 ))
 
