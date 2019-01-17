@@ -1,12 +1,11 @@
-import { transparentize } from 'polished'
-
 import core from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme/react'
+import { transparentize } from '@pluralsight/ps-design-system-util/color'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 export default {
   [`.psds-drawer.psds-theme--${themeNames.light}`]: {

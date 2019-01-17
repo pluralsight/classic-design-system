@@ -1,16 +1,15 @@
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
+import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
-
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import {
   names as themeNames,
   withTheme
 } from '@pluralsight/ps-design-system-theme/react'
 
-import css from '../css'
-import Collapsible from './collapsible'
+import css from '../css/index.js'
+import Collapsible from './collapsible.js'
 
 if (typeof window !== 'undefined') require('element-closest')
 

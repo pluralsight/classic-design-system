@@ -2,7 +2,7 @@ import core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button/react'
 import Dialog from '@pluralsight/ps-design-system-dialog/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
-import { transparentize } from 'polished'
+import { transparentize } from '@pluralsight/ps-design-system-util/color'
 import React from 'react'
 
 import {
@@ -18,7 +18,7 @@ import {
   PropTypes,
   SectionHeading,
   withServerProps
-} from '../../src/ui'
+} from '../../src/ui/index.js'
 
 const ContentGridVisual = _ => (
   <div className="grid">
@@ -73,6 +73,10 @@ const ModalGuidelineExample = props => (
     `}</style>
   </div>
 )
+ModalGuidelineExample.propTypes = {
+  children: PropTypes.node,
+  style: PropTypes.object
+}
 
 const ExampleContent = _ => (
   <div style={{ maxWidth: '300px' }}>

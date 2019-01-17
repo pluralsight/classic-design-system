@@ -2,7 +2,7 @@ import core from '@pluralsight/ps-design-system-core'
 import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 export default {
   '.psds-text-input': {

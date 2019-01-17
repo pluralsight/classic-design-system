@@ -4,23 +4,20 @@ import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb/react'
 import { PageHeadingLayout } from '@pluralsight/ps-design-system-layout/react'
 import Tab from '@pluralsight/ps-design-system-tab/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
-import { transparentize } from 'polished'
+import { transparentize } from '@pluralsight/ps-design-system-util/color'
 
 import {
   Chrome,
   Code,
   Content,
-  Example,
   Guideline,
-  Heading,
   Intro,
-  Link,
   P,
   PageHeading,
   PropTypes,
   SectionHeading,
   withServerProps
-} from '../../src/ui'
+} from '../../src/ui/index.js'
 
 const PinkBox = props => (
   <div className="pink-box">

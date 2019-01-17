@@ -10,9 +10,9 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
-import css from '../css'
-import { toPercentageString } from '../js'
-import * as vars from '../vars'
+import css from '../css/index.js'
+import { toPercentageString } from '../js/index.js'
+import * as vars from '../vars/index.js'
 
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
