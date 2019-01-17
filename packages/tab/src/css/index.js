@@ -68,55 +68,43 @@ export default {
     border: 0,
     cursor: 'pointer',
     padding: `0 calc(${core.layout.spacingXLarge} / 2)`,
-    textDecoration: 'none'
-  },
-  '.psds-tab__list-item:focus': {
-    outline: 'none'
-  },
-  '.psds-tab__list-item:first-child': {
-    paddingLeft: 0
+    textDecoration: 'none',
+    '&:focus': {
+      outline: 'none'
+    },
+    '&:first-child': {
+      paddingLeft: 0
+    },
+    // __bar
+    '&:hover span, &:focus span': listItemBarHover,
+    '&:active span': listItemBarActive
   },
   [`.psds-tab__list-item.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03
+    color: core.colors.gray03,
+    // __text
+    '&:hover div, &:focus div': listItemTextLightHover,
+    '&:active': listItemTextLightActive
   },
   [`.psds-tab__list-item.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.gray02
+    color: core.colors.gray02,
+    // __text
+    '&:hover div, &:focus div': listItemTextDefaultHover,
+    '&:active': listItemTextDefaultActive
   },
-
-  // __list-item:hover/focus/active __list-item__text
-  [`.psds-tab__list-item.psds-theme--${
-    themeNames.light
-  }:hover .psds-tab__list-item__text`]: listItemTextLightHover,
-  [`.psds-tab__list-item.psds-theme--${themeDefaultName}:hover .psds-tab__list-item__text`]: listItemTextDefaultHover,
-  [`.psds-tab__list-item.psds-theme--${
-    themeNames.light
-  }:focus .psds-tab__list-item__text`]: listItemTextLightHover,
-  [`.psds-tab__list-item.psds-theme--${themeDefaultName}:focus .psds-tab__list-item__text`]: listItemTextDefaultHover,
-  [`.psds-tab__list-item.psds-theme--${
-    themeNames.light
-  }:active .psds-tab__list-item__text`]: listItemTextLightActive,
-  [`.psds-tab__list-item.psds-theme--${themeDefaultName}:active .psds-tab__list-item__text`]: listItemTextDefaultActive,
+  [`.psds-tab__list-item.psds-tab__list-item--active`]: {
+    // __span
+    '&:active span, &:hover span, &:focus span, & span': listItemBarActiveActive
+  },
   [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
     themeNames.light
-  }:hover .psds-tab__list-item__text`]: listItemTextLightActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeDefaultName}:hover .psds-tab__list-item__text`]: listItemTextDefaultActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
-    themeNames.light
-  }:focus .psds-tab__list-item__text`]: listItemTextLightActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeDefaultName}:focus .psds-tab__list-item__text`]: listItemTextDefaultActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
-    themeNames.light
-  } .psds-tab__list-item__text`]: listItemTextLightActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeDefaultName} .psds-tab__list-item__text`]: listItemTextDefaultActive,
-
-  // __list-item:hover/focus/active __list-item__bar
-  [`.psds-tab__list-item:hover .psds-tab__list-item__bar`]: listItemBarHover,
-  [`.psds-tab__list-item:focus .psds-tab__list-item__bar`]: listItemBarHover,
-  [`.psds-tab__list-item:active .psds-tab__list-item__bar`]: listItemBarActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active:active .psds-tab__list-item__bar`]: listItemBarActiveActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active:hover .psds-tab__list-item__bar`]: listItemBarActiveActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active:focus .psds-tab__list-item__bar`]: listItemBarActiveActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active .psds-tab__list-item__bar`]: listItemBarActiveActive,
+  }`]: {
+    // __text
+    '&:hover div, &:focus div, & div': listItemTextLightActive
+  },
+  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeDefaultName}`]: {
+    // __text
+    '&:hover div, &:focus div, & div': listItemTextDefaultActive
+  },
 
   // __list-item__text
   '.psds-tab__list-item__text': {

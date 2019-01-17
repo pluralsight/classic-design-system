@@ -21,7 +21,7 @@ exports[`Storyshots default as links 1`] = `
         >
           <a
             aria-selected={true}
-            data-css-1yv0lo1=""
+            data-css-bn3734=""
             href="https://duckduckgo.com"
             id={1}
             onClick={[Function]}
@@ -66,7 +66,7 @@ exports[`Storyshots default default 1`] = `
           >
             <button
               aria-selected={true}
-              data-css-1yv0lo1=""
+              data-css-bn3734=""
               id="example1"
               onClick={[Function]}
               role="tab"
@@ -83,7 +83,7 @@ exports[`Storyshots default default 1`] = `
             </button>
             <button
               aria-selected={false}
-              data-css-12g3ebl=""
+              data-css-dp4ver=""
               id="example2"
               onClick={[Function]}
               role="tab"
@@ -100,7 +100,7 @@ exports[`Storyshots default default 1`] = `
             </button>
             <button
               aria-selected={false}
-              data-css-12g3ebl=""
+              data-css-dp4ver=""
               id="example3"
               onClick={[Function]}
               role="tab"
@@ -117,7 +117,7 @@ exports[`Storyshots default default 1`] = `
             </button>
             <button
               aria-selected={false}
-              data-css-12g3ebl=""
+              data-css-dp4ver=""
               id="example4"
               onClick={[Function]}
               role="tab"
@@ -134,7 +134,7 @@ exports[`Storyshots default default 1`] = `
             </button>
             <button
               aria-selected={false}
-              data-css-12g3ebl=""
+              data-css-dp4ver=""
               id="example5"
               onClick={[Function]}
               role="tab"
@@ -218,7 +218,7 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
         >
           <button
             aria-selected={true}
-            data-css-1yv0lo1=""
+            data-css-bn3734=""
             id="wow"
             onClick={[Function]}
             role="tab"
@@ -261,7 +261,7 @@ exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
         >
           <button
             aria-selected={true}
-            data-css-1yv0lo1=""
+            data-css-bn3734=""
             id="wow"
             onClick={[Function]}
             role="tab"
@@ -310,7 +310,7 @@ exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
           >
             <button
               aria-selected={true}
-              data-css-1yv0lo1=""
+              data-css-bn3734=""
               id="wow"
               onClick={[Function]}
               role="tab"
