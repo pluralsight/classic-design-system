@@ -1,9 +1,9 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
+import React from 'react'
+
 import core from '@pluralsight/ps-design-system-core'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
 import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
-import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
-import React from 'react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {

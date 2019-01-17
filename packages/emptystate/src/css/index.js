@@ -24,7 +24,11 @@ export default {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    transition: `opacity ${core.motion.speedFast}`
+  },
+  '.psds-emptystate--hidden': {
+    opacity: 0
   },
   ['.psds-emptystate' + themeClasses[themeDefaultName]]: {
     color: core.colors.white

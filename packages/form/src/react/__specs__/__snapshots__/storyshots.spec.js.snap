@@ -620,6 +620,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   data-css-1vpjki6=""
                   disabled={false}
                   placeholder="Anything else to report?"
+                  rows={4}
                   style={
                     Object {
                       "height": 112,
