@@ -14,7 +14,7 @@ exports[`Storyshots default as links 1`] = `
         data-css-claeju=""
       >
         <div
-          data-css-zhyi0r=""
+          data-css-1vci3cx=""
           onKeyDown={[Function]}
           role="tablist"
           tabIndex="0"
@@ -59,7 +59,7 @@ exports[`Storyshots default default 1`] = `
       >
         <div>
           <div
-            data-css-zhyi0r=""
+            data-css-1vci3cx=""
             onKeyDown={[Function]}
             role="tablist"
             tabIndex="0"
@@ -181,7 +181,7 @@ exports[`Storyshots default no items 1`] = `
         data-css-claeju=""
       >
         <div
-          data-css-zhyi0r=""
+          data-css-1vci3cx=""
           onKeyDown={[Function]}
           role="tablist"
           tabIndex="0"
@@ -206,7 +206,7 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
         data-css-claeju=""
       >
         <div
-          data-css-zhyi0r=""
+          data-css-1vci3cx=""
           onKeyDown={[Function]}
           role="tablist"
           style={
@@ -254,7 +254,7 @@ exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
         data-css-claeju=""
       >
         <div
-          data-css-zhyi0r=""
+          data-css-1vci3cx=""
           onKeyDown={[Function]}
           role="tablist"
           tabIndex="0"
@@ -303,7 +303,7 @@ exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
       >
         <div>
           <div
-            data-css-zhyi0r=""
+            data-css-1vci3cx=""
             onKeyDown={[Function]}
             role="tablist"
             tabIndex="0"

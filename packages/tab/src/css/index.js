@@ -43,15 +43,16 @@ export default {
   '.psds-tab__list': {
     display: 'flex',
     width: '100%',
-    height: '64px'
-  },
-  '.psds-tab__list:focus': {
-    outline: 'none',
-    borderBottomWidth: '4px'
-  },
-  '.psds-tab__list:focus .psds-tab__list-item__text': {
-    height: 'calc(100% + 4px)',
-    marginBottom: '-4px'
+    height: '64px',
+    '&:focus': {
+      outline: 'none',
+      borderBottomWidth: '4px',
+      // __text
+      '& div': {
+        height: 'calc(100% + 4px)',
+        marginBottom: '-4px'
+      }
+    }
   },
   [`.psds-tab__list.psds-theme--${themeNames.light}`]: {
     borderBottom: `1px solid ${core.colors.gray02}`
