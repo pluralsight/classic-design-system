@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <g fill="none" fill-rule="evenodd">
     <polyline stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="25.595 33 18 37.17 25.595 41.861"/>
     <polyline stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="39.405 33 47 37.17 39.405 41.861"/>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <g fill="none" fill-rule="evenodd" transform="translate(8 8)">
     <path stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M15.8765,31.753 C24.6449,31.753 31.753,24.6449 31.753,15.8765 C31.753,7.1082 24.6449,0 15.8765,0 C7.1082,0 0,7.1082 0,15.8765 C0,24.6449 7.1082,31.753 15.8765,31.753 Z"/>
     <polygon fill="#FFF" points="33.829 27.863 27.841 33.851 30.087 36.096 36.074 30.109" opacity=".25"/>
