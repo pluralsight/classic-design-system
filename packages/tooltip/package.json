@@ -22,7 +22,7 @@
   "keywords": [],
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.4.2",
-    "polished": "^1.9.2",
+    "@pluralsight/ps-design-system-util": "^1.2.7",
     "prop-types": "^15.5.10"
   },
   "peerDependencies": {
