@@ -6,8 +6,8 @@ import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
-import css from '../css'
-import * as vars from '../vars'
+import css from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const textInputHtmlPropsWhitelist = [
   'autocomplete',
