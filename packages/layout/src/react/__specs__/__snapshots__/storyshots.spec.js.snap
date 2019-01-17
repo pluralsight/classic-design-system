@@ -1,888 +1,820 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots AsideLayout aside style overrides 1`] = `
+exports[`Storyshots Layout / AsideLayout aside style overrides 1`] = `
 <div
-  data-css-claeju=""
+  style={
+    Object {
+      "color": "white",
+    }
+  }
 >
   <div
-    style={
-      Object {
-        "color": "white",
-      }
-    }
+    data-css-19i7kll=""
   >
     <div
-      data-css-19i7kll=""
-    >
-      <div
-        data-css-34rq4a=""
-        style={
-          Object {
-            "overflow": "hidden",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "background": "red",
-              "height": "50px",
-              "width": "700px",
-            }
-          }
-        >
-          Fixed width thing
-        </div>
-      </div>
-      <div
-        data-css-63wt92=""
-      >
-        This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots AsideLayout asidePosition: first 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "color": "white",
-      }
-    }
-  >
-    <div
-      data-css-19i7kll=""
-    >
-      <div
-        data-css-34rq4a=""
-      >
-        This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here.
-      </div>
-      <div
-        data-css-63wt92=""
-      >
-        This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots AsideLayout asidePosition: last 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "color": "white",
-      }
-    }
-  >
-    <div
-      data-css-t8ydvh=""
-    >
-      <div
-        data-css-qxcmpd=""
-      >
-        This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here.
-      </div>
-      <div
-        data-css-63wt92=""
-      >
-        This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots AsideLayout short aside content 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "color": "white",
-      }
-    }
-  >
-    <div
-      data-css-19i7kll=""
-    >
-      <div
-        data-css-34rq4a=""
-      >
-        Very short
-      </div>
-      <div
-        data-css-63wt92=""
-      >
-        This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots AsideLayout short main content 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "color": "white",
-      }
-    }
-  >
-    <div
-      data-css-19i7kll=""
-    >
-      <div
-        data-css-34rq4a=""
-      >
-        This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here.
-      </div>
-      <div
-        data-css-63wt92=""
-      >
-        Very little
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots AsideLayout wide, fixed aside content 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "color": "white",
-      }
-    }
-  >
-    <div
-      data-css-19i7kll=""
-    >
-      <div
-        data-css-34rq4a=""
-      >
-        <div
-          style={
-            Object {
-              "background": "red",
-              "height": "50px",
-              "width": "700px",
-            }
-          }
-        >
-          Fixed width thing
-        </div>
-      </div>
-      <div
-        data-css-63wt92=""
-      >
-        This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EqualColumnLayout custom markup 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "color": "white",
-      }
-    }
-  >
-    <ul
-      data-css-oo8nrq=""
+      data-css-34rq4a=""
       style={
         Object {
-          "listStyle": "none",
+          "overflow": "hidden",
         }
       }
     >
-      <li
-        data-css-18p75qs=""
+      <div
+        style={
+          Object {
+            "background": "red",
+            "height": "50px",
+            "width": "700px",
+          }
+        }
       >
-        First child
-      </li>
-      <li
-        data-css-18p75qs=""
-      >
-        Second child
-      </li>
-      <li
-        data-css-18p75qs=""
-      >
-        Third child
-      </li>
-      <li
-        data-css-18p75qs=""
-      >
-        Fourth child
-      </li>
-      <li
-        data-css-18p75qs=""
-      >
-        Fifth child
-      </li>
-      <li
-        data-css-18p75qs=""
-      >
-        Sixth child
-      </li>
-    </ul>
+        Fixed width thing
+      </div>
+    </div>
+    <div
+      data-css-63wt92=""
+    >
+      This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+    </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots EqualColumnLayout four 1`] = `
+exports[`Storyshots Layout / AsideLayout asidePosition: first 1`] = `
 <div
-  data-css-claeju=""
+  style={
+    Object {
+      "color": "white",
+    }
+  }
 >
   <div
+    data-css-19i7kll=""
+  >
+    <div
+      data-css-34rq4a=""
+    >
+      This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here.
+    </div>
+    <div
+      data-css-63wt92=""
+    >
+      This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout / AsideLayout asidePosition: last 1`] = `
+<div
+  style={
+    Object {
+      "color": "white",
+    }
+  }
+>
+  <div
+    data-css-t8ydvh=""
+  >
+    <div
+      data-css-qxcmpd=""
+    >
+      This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here.
+    </div>
+    <div
+      data-css-63wt92=""
+    >
+      This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout / AsideLayout short aside content 1`] = `
+<div
+  style={
+    Object {
+      "color": "white",
+    }
+  }
+>
+  <div
+    data-css-19i7kll=""
+  >
+    <div
+      data-css-34rq4a=""
+    >
+      Very short
+    </div>
+    <div
+      data-css-63wt92=""
+    >
+      This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout / AsideLayout short main content 1`] = `
+<div
+  style={
+    Object {
+      "color": "white",
+    }
+  }
+>
+  <div
+    data-css-19i7kll=""
+  >
+    <div
+      data-css-34rq4a=""
+    >
+      This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here.
+    </div>
+    <div
+      data-css-63wt92=""
+    >
+      Very little
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout / AsideLayout wide, fixed aside content 1`] = `
+<div
+  style={
+    Object {
+      "color": "white",
+    }
+  }
+>
+  <div
+    data-css-19i7kll=""
+  >
+    <div
+      data-css-34rq4a=""
+    >
+      <div
+        style={
+          Object {
+            "background": "red",
+            "height": "50px",
+            "width": "700px",
+          }
+        }
+      >
+        Fixed width thing
+      </div>
+    </div>
+    <div
+      data-css-63wt92=""
+    >
+      This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout / EqualColumnLayout custom markup 1`] = `
+<div
+  style={
+    Object {
+      "color": "white",
+    }
+  }
+>
+  <ul
+    data-css-oo8nrq=""
     style={
       Object {
-        "color": "white",
+        "listStyle": "none",
       }
     }
   >
-    <div
-      data-css-oo8nrq=""
+    <li
+      data-css-18p75qs=""
     >
-      <div
-        data-css-18p75qs=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        First child
-      </div>
-      <div
-        data-css-18p75qs=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Second child
-      </div>
-      <div
-        data-css-18p75qs=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Third child
-      </div>
-      <div
-        data-css-18p75qs=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Fourth child
-      </div>
-      <div
-        data-css-18p75qs=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Fifth child
-      </div>
-      <div
-        data-css-18p75qs=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Sixth child
-      </div>
-    </div>
-  </div>
+      First child
+    </li>
+    <li
+      data-css-18p75qs=""
+    >
+      Second child
+    </li>
+    <li
+      data-css-18p75qs=""
+    >
+      Third child
+    </li>
+    <li
+      data-css-18p75qs=""
+    >
+      Fourth child
+    </li>
+    <li
+      data-css-18p75qs=""
+    >
+      Fifth child
+    </li>
+    <li
+      data-css-18p75qs=""
+    >
+      Sixth child
+    </li>
+  </ul>
 </div>
 `;
 
-exports[`Storyshots EqualColumnLayout six 1`] = `
+exports[`Storyshots Layout / EqualColumnLayout four 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "color": "white",
-      }
+  style={
+    Object {
+      "color": "white",
     }
-  >
-    <div
-      data-css-oo8nrq=""
-    >
-      <div
-        data-css-nvudq=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        First child
-      </div>
-      <div
-        data-css-nvudq=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Second child
-      </div>
-      <div
-        data-css-nvudq=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Third child
-      </div>
-      <div
-        data-css-nvudq=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Fourth child
-      </div>
-      <div
-        data-css-nvudq=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Fifth child
-      </div>
-      <div
-        data-css-nvudq=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Sixth child
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EqualColumnLayout three 1`] = `
-<div
-  data-css-claeju=""
+  }
 >
   <div
-    style={
-      Object {
-        "color": "white",
+    data-css-oo8nrq=""
+  >
+    <div
+      data-css-18p75qs=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
       }
-    }
-  >
-    <div
-      data-css-oo8nrq=""
     >
-      <div
-        data-css-ke1y92=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        First child
-      </div>
-      <div
-        data-css-ke1y92=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Second child
-      </div>
-      <div
-        data-css-ke1y92=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Third child
-      </div>
-      <div
-        data-css-ke1y92=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Fourth child
-      </div>
-      <div
-        data-css-ke1y92=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Fifth child
-      </div>
-      <div
-        data-css-ke1y92=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Sixth child
-      </div>
+      First child
     </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EqualColumnLayout two 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "color": "white",
+    <div
+      data-css-18p75qs=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
       }
+    >
+      Second child
+    </div>
+    <div
+      data-css-18p75qs=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
+    >
+      Third child
+    </div>
+    <div
+      data-css-18p75qs=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
+    >
+      Fourth child
+    </div>
+    <div
+      data-css-18p75qs=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
+    >
+      Fifth child
+    </div>
+    <div
+      data-css-18p75qs=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
+    >
+      Sixth child
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout / EqualColumnLayout six 1`] = `
+<div
+  style={
+    Object {
+      "color": "white",
     }
+  }
+>
+  <div
+    data-css-oo8nrq=""
   >
     <div
-      data-css-oo8nrq=""
+      data-css-nvudq=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
     >
-      <div
-        data-css-evbaaa=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
+      First child
+    </div>
+    <div
+      data-css-nvudq=""
+      style={
+        Object {
+          "background": "#e80a89",
         }
-      >
-        First child
-      </div>
-      <div
-        data-css-evbaaa=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
+      }
+    >
+      Second child
+    </div>
+    <div
+      data-css-nvudq=""
+      style={
+        Object {
+          "background": "#e80a89",
         }
-      >
-        Second child
-      </div>
-      <div
-        data-css-evbaaa=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
+      }
+    >
+      Third child
+    </div>
+    <div
+      data-css-nvudq=""
+      style={
+        Object {
+          "background": "#e80a89",
         }
-      >
-        Third child
-      </div>
-      <div
-        data-css-evbaaa=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
+      }
+    >
+      Fourth child
+    </div>
+    <div
+      data-css-nvudq=""
+      style={
+        Object {
+          "background": "#e80a89",
         }
-      >
-        Fourth child
-      </div>
-      <div
-        data-css-evbaaa=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
+      }
+    >
+      Fifth child
+    </div>
+    <div
+      data-css-nvudq=""
+      style={
+        Object {
+          "background": "#e80a89",
         }
-      >
-        Fifth child
-      </div>
-      <div
-        data-css-evbaaa=""
-        style={
-          Object {
-            "background": "#e80a89",
-          }
-        }
-      >
-        Sixth child
-      </div>
+      }
+    >
+      Sixth child
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots PageHeadingLayout default 1`] = `
+exports[`Storyshots Layout / EqualColumnLayout three 1`] = `
 <div
-  data-css-claeju=""
+  style={
+    Object {
+      "color": "white",
+    }
+  }
 >
   <div
-    data-css-yto836=""
+    data-css-oo8nrq=""
   >
     <div
-      data-css-wlfhsa=""
+      data-css-ke1y92=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
     >
-      <h2
-        data-css-10w3axr=""
-        size="large"
-      >
-        My Page
-      </h2>
+      First child
     </div>
-    My content
+    <div
+      data-css-ke1y92=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
+    >
+      Second child
+    </div>
+    <div
+      data-css-ke1y92=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
+    >
+      Third child
+    </div>
+    <div
+      data-css-ke1y92=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
+    >
+      Fourth child
+    </div>
+    <div
+      data-css-ke1y92=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
+    >
+      Fifth child
+    </div>
+    <div
+      data-css-ke1y92=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
+    >
+      Sixth child
+    </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots PageHeadingLayout long title 1`] = `
+exports[`Storyshots Layout / EqualColumnLayout two 1`] = `
 <div
-  data-css-claeju=""
+  style={
+    Object {
+      "color": "white",
+    }
+  }
 >
   <div
-    data-css-yto836=""
+    data-css-oo8nrq=""
   >
     <div
-      data-css-wlfhsa=""
+      data-css-evbaaa=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
     >
-      <h2
-        data-css-10w3axr=""
-        size="large"
-      >
-        My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
-      </h2>
+      First child
     </div>
-    My content
+    <div
+      data-css-evbaaa=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
+    >
+      Second child
+    </div>
+    <div
+      data-css-evbaaa=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
+    >
+      Third child
+    </div>
+    <div
+      data-css-evbaaa=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
+    >
+      Fourth child
+    </div>
+    <div
+      data-css-evbaaa=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
+    >
+      Fifth child
+    </div>
+    <div
+      data-css-evbaaa=""
+      style={
+        Object {
+          "background": "#e80a89",
+        }
+      }
+    >
+      Sixth child
+    </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots PageHeadingLayout long title w/ actions 1`] = `
+exports[`Storyshots Layout / PageHeadingLayout default 1`] = `
 <div
-  data-css-claeju=""
+  data-css-yto836=""
 >
   <div
-    data-css-yto836=""
+    data-css-wlfhsa=""
   >
-    <div
-      data-css-wlfhsa=""
+    <h2
+      data-css-10w3axr=""
+      size="large"
     >
-      <h2
-        data-css-10w3axr=""
-        size="large"
-      >
-        My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
-      </h2>
-      <div
-        data-css-1cnar9w=""
-      >
-        <button
-          data-css-k922kt=""
-          disabled={false}
-          style={Object {}}
-        >
-          <span
-            data-css-15b13by=""
-          >
-            Wow, an action
-          </span>
-        </button>
-        <a
-          data-css-1skajya=""
-          href="https://duckduckgo.com"
-        >
-          A link
-        </a>
-      </div>
-    </div>
-    My content
+      My Page
+    </h2>
   </div>
+  My content
 </div>
 `;
 
-exports[`Storyshots PageHeadingLayout long titlew/ lots of actions 1`] = `
+exports[`Storyshots Layout / PageHeadingLayout long title 1`] = `
 <div
-  data-css-claeju=""
+  data-css-yto836=""
 >
   <div
-    data-css-yto836=""
+    data-css-wlfhsa=""
   >
-    <div
-      data-css-wlfhsa=""
+    <h2
+      data-css-10w3axr=""
+      size="large"
     >
-      <h2
-        data-css-10w3axr=""
-        size="large"
-      >
-        My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
-      </h2>
-      <div
-        data-css-1cnar9w=""
-      >
-        <button
-          data-css-k922kt=""
-          disabled={false}
-          style={Object {}}
-        >
-          <span
-            data-css-15b13by=""
-          >
-            Wow, an action
-          </span>
-        </button>
-        <a
-          data-css-1skajya=""
-          href="https://duckduckgo.com"
-        >
-          A link
-        </a>
-        <button
-          data-css-k922kt=""
-          disabled={false}
-          style={Object {}}
-        >
-          <span
-            data-css-15b13by=""
-          >
-            Wow, an action
-          </span>
-        </button>
-        <a
-          data-css-1skajya=""
-          href="https://duckduckgo.com"
-        >
-          A link
-        </a>
-        <button
-          data-css-k922kt=""
-          disabled={false}
-          style={Object {}}
-        >
-          <span
-            data-css-15b13by=""
-          >
-            Wow, an action
-          </span>
-        </button>
-        <a
-          data-css-1skajya=""
-          href="https://duckduckgo.com"
-        >
-          A link
-        </a>
-        <button
-          data-css-k922kt=""
-          disabled={false}
-          style={Object {}}
-        >
-          <span
-            data-css-15b13by=""
-          >
-            Wow, an action
-          </span>
-        </button>
-        <a
-          data-css-1skajya=""
-          href="https://duckduckgo.com"
-        >
-          A link
-        </a>
-      </div>
-    </div>
-    My content
+      My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
+    </h2>
   </div>
+  My content
 </div>
 `;
 
-exports[`Storyshots PageHeadingLayout w/ actions 1`] = `
+exports[`Storyshots Layout / PageHeadingLayout long title w/ actions 1`] = `
 <div
-  data-css-claeju=""
+  data-css-yto836=""
 >
   <div
-    data-css-yto836=""
+    data-css-wlfhsa=""
   >
-    <div
-      data-css-wlfhsa=""
+    <h2
+      data-css-10w3axr=""
+      size="large"
     >
-      <h2
-        data-css-10w3axr=""
-        size="large"
+      My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
+    </h2>
+    <div
+      data-css-1cnar9w=""
+    >
+      <button
+        data-css-k922kt=""
+        disabled={false}
+        style={Object {}}
       >
-        My Page
-      </h2>
-      <div
-        data-css-1cnar9w=""
+        <span
+          data-css-15b13by=""
+        >
+          Wow, an action
+        </span>
+      </button>
+      <a
+        data-css-1skajya=""
+        href="https://duckduckgo.com"
       >
-        <button
-          data-css-k922kt=""
-          disabled={false}
-          style={Object {}}
-        >
-          <span
-            data-css-15b13by=""
-          >
-            Wow, an action
-          </span>
-        </button>
-        <a
-          data-css-1skajya=""
-          href="https://duckduckgo.com"
-        >
-          A link
-        </a>
-      </div>
+        A link
+      </a>
     </div>
-    My content
   </div>
+  My content
 </div>
 `;
 
-exports[`Storyshots PageHeadingLayout w/ lots of actions 1`] = `
+exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] = `
 <div
-  data-css-claeju=""
+  data-css-yto836=""
 >
   <div
-    data-css-yto836=""
+    data-css-wlfhsa=""
   >
-    <div
-      data-css-wlfhsa=""
+    <h2
+      data-css-10w3axr=""
+      size="large"
     >
-      <h2
-        data-css-10w3axr=""
-        size="large"
+      My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
+    </h2>
+    <div
+      data-css-1cnar9w=""
+    >
+      <button
+        data-css-k922kt=""
+        disabled={false}
+        style={Object {}}
       >
-        My Page
-      </h2>
-      <div
-        data-css-1cnar9w=""
+        <span
+          data-css-15b13by=""
+        >
+          Wow, an action
+        </span>
+      </button>
+      <a
+        data-css-1skajya=""
+        href="https://duckduckgo.com"
       >
-        <button
-          data-css-k922kt=""
-          disabled={false}
-          style={Object {}}
+        A link
+      </a>
+      <button
+        data-css-k922kt=""
+        disabled={false}
+        style={Object {}}
+      >
+        <span
+          data-css-15b13by=""
         >
-          <span
-            data-css-15b13by=""
-          >
-            Wow, an action
-          </span>
-        </button>
-        <a
-          data-css-1skajya=""
-          href="https://duckduckgo.com"
+          Wow, an action
+        </span>
+      </button>
+      <a
+        data-css-1skajya=""
+        href="https://duckduckgo.com"
+      >
+        A link
+      </a>
+      <button
+        data-css-k922kt=""
+        disabled={false}
+        style={Object {}}
+      >
+        <span
+          data-css-15b13by=""
         >
-          A link
-        </a>
-        <button
-          data-css-k922kt=""
-          disabled={false}
-          style={Object {}}
+          Wow, an action
+        </span>
+      </button>
+      <a
+        data-css-1skajya=""
+        href="https://duckduckgo.com"
+      >
+        A link
+      </a>
+      <button
+        data-css-k922kt=""
+        disabled={false}
+        style={Object {}}
+      >
+        <span
+          data-css-15b13by=""
         >
-          <span
-            data-css-15b13by=""
-          >
-            Wow, an action
-          </span>
-        </button>
-        <a
-          data-css-1skajya=""
-          href="https://duckduckgo.com"
-        >
-          A link
-        </a>
-        <button
-          data-css-k922kt=""
-          disabled={false}
-          style={Object {}}
-        >
-          <span
-            data-css-15b13by=""
-          >
-            Wow, an action
-          </span>
-        </button>
-        <a
-          data-css-1skajya=""
-          href="https://duckduckgo.com"
-        >
-          A link
-        </a>
-        <button
-          data-css-k922kt=""
-          disabled={false}
-          style={Object {}}
-        >
-          <span
-            data-css-15b13by=""
-          >
-            Wow, an action
-          </span>
-        </button>
-        <a
-          data-css-1skajya=""
-          href="https://duckduckgo.com"
-        >
-          A link
-        </a>
-      </div>
+          Wow, an action
+        </span>
+      </button>
+      <a
+        data-css-1skajya=""
+        href="https://duckduckgo.com"
+      >
+        A link
+      </a>
     </div>
-    My content
   </div>
+  My content
+</div>
+`;
+
+exports[`Storyshots Layout / PageHeadingLayout w/ actions 1`] = `
+<div
+  data-css-yto836=""
+>
+  <div
+    data-css-wlfhsa=""
+  >
+    <h2
+      data-css-10w3axr=""
+      size="large"
+    >
+      My Page
+    </h2>
+    <div
+      data-css-1cnar9w=""
+    >
+      <button
+        data-css-k922kt=""
+        disabled={false}
+        style={Object {}}
+      >
+        <span
+          data-css-15b13by=""
+        >
+          Wow, an action
+        </span>
+      </button>
+      <a
+        data-css-1skajya=""
+        href="https://duckduckgo.com"
+      >
+        A link
+      </a>
+    </div>
+  </div>
+  My content
+</div>
+`;
+
+exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
+<div
+  data-css-yto836=""
+>
+  <div
+    data-css-wlfhsa=""
+  >
+    <h2
+      data-css-10w3axr=""
+      size="large"
+    >
+      My Page
+    </h2>
+    <div
+      data-css-1cnar9w=""
+    >
+      <button
+        data-css-k922kt=""
+        disabled={false}
+        style={Object {}}
+      >
+        <span
+          data-css-15b13by=""
+        >
+          Wow, an action
+        </span>
+      </button>
+      <a
+        data-css-1skajya=""
+        href="https://duckduckgo.com"
+      >
+        A link
+      </a>
+      <button
+        data-css-k922kt=""
+        disabled={false}
+        style={Object {}}
+      >
+        <span
+          data-css-15b13by=""
+        >
+          Wow, an action
+        </span>
+      </button>
+      <a
+        data-css-1skajya=""
+        href="https://duckduckgo.com"
+      >
+        A link
+      </a>
+      <button
+        data-css-k922kt=""
+        disabled={false}
+        style={Object {}}
+      >
+        <span
+          data-css-15b13by=""
+        >
+          Wow, an action
+        </span>
+      </button>
+      <a
+        data-css-1skajya=""
+        href="https://duckduckgo.com"
+      >
+        A link
+      </a>
+      <button
+        data-css-k922kt=""
+        disabled={false}
+        style={Object {}}
+      >
+        <span
+          data-css-15b13by=""
+        >
+          Wow, an action
+        </span>
+      </button>
+      <a
+        data-css-1skajya=""
+        href="https://duckduckgo.com"
+      >
+        A link
+      </a>
+    </div>
+  </div>
+  My content
 </div>
 `;

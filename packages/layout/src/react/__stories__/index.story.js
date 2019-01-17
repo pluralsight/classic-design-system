@@ -1,15 +1,41 @@
-import addons from '@storybook/addons'
+import { storiesOf } from '@storybook/react'
+
+import PropTypes from 'prop-types'
+import React from 'react'
+
 import Button from '@pluralsight/ps-design-system-button/react'
 import core from '@pluralsight/ps-design-system-core'
 import Link from '@pluralsight/ps-design-system-link/react'
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import { AsideLayout, EqualColumnLayout, PageHeadingLayout } from '../react'
+import { AsideLayout, EqualColumnLayout, PageHeadingLayout } from '..'
 
-storiesOf('PageHeadingLayout', module)
-  .addDecorator(themeDecorator(addons))
+const mockActions = [
+  <Button key="action-1">Wow, an action</Button>,
+  <Link key="action-2">
+    <a href="https://duckduckgo.com">A link</a>
+  </Link>
+]
+
+const mockManyActions = [
+  <Button key="action-1">Wow, an action</Button>,
+  <Link key="action-2">
+    <a href="https://duckduckgo.com">A link</a>
+  </Link>,
+  <Button key="action-3">Wow, an action</Button>,
+  <Link key="action-4">
+    <a href="https://duckduckgo.com">A link</a>
+  </Link>,
+  <Button key="action-5">Wow, an action</Button>,
+  <Link key="action-6">
+    <a href="https://duckduckgo.com">A link</a>
+  </Link>,
+  <Button key="action-7">Wow, an action</Button>,
+  <Link key="action-8">
+    <a href="https://duckduckgo.com">A link</a>
+  </Link>
+]
+
+storiesOf('Layout / PageHeadingLayout', module)
   .add('default', _ => (
     <PageHeadingLayout heading={<h2>My Page</h2>}>My content</PageHeadingLayout>
   ))
@@ -26,26 +52,13 @@ storiesOf('PageHeadingLayout', module)
     </PageHeadingLayout>
   ))
   .add('w/ actions', _ => (
-    <PageHeadingLayout
-      heading={<h2>My Page</h2>}
-      actions={[
-        <Button>Wow, an action</Button>,
-        <Link>
-          <a href="https://duckduckgo.com">A link</a>
-        </Link>
-      ]}
-    >
+    <PageHeadingLayout heading={<h2>My Page</h2>} actions={mockActions}>
       My content
     </PageHeadingLayout>
   ))
   .add('long title w/ actions', _ => (
     <PageHeadingLayout
-      actions={[
-        <Button>Wow, an action</Button>,
-        <Link>
-          <a href="https://duckduckgo.com">A link</a>
-        </Link>
-      ]}
+      actions={mockActions}
       heading={
         <h2>
           My page is here and it's long. My page is here and it's long. My page
@@ -64,58 +77,18 @@ storiesOf('PageHeadingLayout', module)
           is here and it's long. My page is here and it's long.
         </h2>
       }
-      actions={[
-        <Button>Wow, an action</Button>,
-        <Link>
-          <a href="https://duckduckgo.com">A link</a>
-        </Link>,
-        <Button>Wow, an action</Button>,
-        <Link>
-          <a href="https://duckduckgo.com">A link</a>
-        </Link>,
-        <Button>Wow, an action</Button>,
-        <Link>
-          <a href="https://duckduckgo.com">A link</a>
-        </Link>,
-        <Button>Wow, an action</Button>,
-        <Link>
-          <a href="https://duckduckgo.com">A link</a>
-        </Link>
-      ]}
+      actions={mockManyActions}
     >
       My content
     </PageHeadingLayout>
   ))
   .add('w/ lots of actions', _ => (
-    <PageHeadingLayout
-      heading={<h2>My Page</h2>}
-      actions={[
-        <Button>Wow, an action</Button>,
-        <Link>
-          <a href="https://duckduckgo.com">A link</a>
-        </Link>,
-        <Button>Wow, an action</Button>,
-        <Link>
-          <a href="https://duckduckgo.com">A link</a>
-        </Link>,
-        <Button>Wow, an action</Button>,
-        <Link>
-          <a href="https://duckduckgo.com">A link</a>
-        </Link>,
-        <Button>Wow, an action</Button>,
-        <Link>
-          <a href="https://duckduckgo.com">A link</a>
-        </Link>
-      ]}
-    >
+    <PageHeadingLayout heading={<h2>My Page</h2>} actions={mockManyActions}>
       My content
     </PageHeadingLayout>
   ))
 
-const asideLayoutStory = storiesOf('AsideLayout', module).addDecorator(
-  themeDecorator(addons)
-)
-
+const asideLayoutStory = storiesOf('Layout / AsideLayout', module)
 Object.keys(AsideLayout.asidePositions).map(pos =>
   asideLayoutStory.add(`asidePosition: ${pos}`, _ => (
     <div style={{ color: 'white' }}>
@@ -206,16 +179,16 @@ asideLayoutStory.add('aside style overrides', _ => (
   </div>
 ))
 
-const equalColumnLayoutStory = storiesOf(
-  'EqualColumnLayout',
-  module
-).addDecorator(themeDecorator(addons))
+const equalColumnLayoutStory = storiesOf('Layout / EqualColumnLayout', module)
 
 const Box = props => (
   <div style={{ background: core.colors.pink }} {...props}>
     {props.children}
   </div>
 )
+Box.propTypes = {
+  children: PropTypes.node
+}
 
 Object.keys(EqualColumnLayout.counts).forEach(key =>
   equalColumnLayoutStory.add(key, _ => (

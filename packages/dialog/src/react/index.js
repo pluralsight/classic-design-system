@@ -84,7 +84,7 @@ class ModalOverlay extends React.Component {
 ModalOverlay.propTypes = {
   'aria-label': PropTypes.string.isRequired,
   children: PropTypes.node,
-  disableCloseOnOverlayClick: PropTypes.func,
+  disableCloseOnOverlayClick: PropTypes.bool,
   onClose: PropTypes.func.isRequired
 }
 

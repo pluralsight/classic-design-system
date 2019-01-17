@@ -7,8 +7,8 @@ import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 addDecorator(centerDecorator)
 addDecorator(themeDecorator(addons))
 
-function loadStories() {
-  require('../stories')
+function loadStory() {
+  require('../src/react/__stories__/index.story.js')
 }
 
-configure(loadStories, module)
+configure(loadStory, module)
