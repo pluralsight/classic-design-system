@@ -1,29 +1,13 @@
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
 import Halo from '@pluralsight/ps-design-system-halo/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
-import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
 import css from '../css/index.js'
 import * as vars from '../vars/index.js'
-
-const textInputHtmlPropsWhitelist = [
-  'autocomplete',
-  'autofocus',
-  'defaultValue',
-  'name',
-  'role',
-  'tabIndex',
-  'title',
-  'type',
-  'value',
-  /^on/,
-  /^aria-/,
-  /^data-/,
-  /^form/
-]
 
 const styles = {
   error: _ => glamor.css(css['.psds-text-input__error']),
@@ -68,9 +52,9 @@ const styles = {
 }
 
 const TextInput = (props, context) => {
-  const { error, label, icon, subLabel } = props
   const themeName = context.themeName || themeDefaultName
   const allProps = { ...props, themeName }
+  const { error, label, icon, style, subLabel, ...inputProps } = allProps
 
   return (
     <label
@@ -83,7 +67,7 @@ const TextInput = (props, context) => {
       <div {...styles.fieldContainer(allProps)}>
         <Halo error={error} gapSize={Halo.gapSizes.small}>
           <input
-            {...propsUtil.whitelistProps(allProps, textInputHtmlPropsWhitelist)}
+            {...filterReactProps(inputProps, { tagName: 'input' })}
             {...styles.field(allProps)}
             disabled={allProps.disabled}
             placeholder={allProps.placeholder}
