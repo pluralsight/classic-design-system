@@ -27,23 +27,22 @@ class ResizeObserver extends React.PureComponent {
       this.handleResizedObserved.bind(this)
     )
 
+    this.bindContainerRef = el => {
+      this.container = el
+    }
+
     this.animationId = null
-    this.container = React.createRef()
     this.observer = new ResizeObserverAPI(this.handleResizedObserved)
 
     this.state = { width: undefined, height: undefined }
   }
 
-  get node() {
-    return this.container.current
-  }
-
   componentDidMount() {
-    if (this.node) this.observer.observe(this.node)
+    if (this.container) this.observer.observe(this.container)
   }
 
   componentWillUnmount() {
-    if (this.node) this.observer.unobserve(this.node)
+    if (this.container) this.observer.unobserve(this.container)
     if (this.animationId) window.cancelAnimationFrame(this.animationId)
   }
 
@@ -67,7 +66,9 @@ class ResizeObserver extends React.PureComponent {
   }
 
   render() {
-    return <div ref={this.container}>{this.props.children(this.state)}</div>
+    return (
+      <div ref={this.bindContainerRef}>{this.props.children(this.state)}</div>
+    )
   }
 }
 
