@@ -15,5 +15,8 @@ module.exports = {
   plugins: ['jest'],
   env: {
     'jest/globals': true
+  },
+  rules: {
+    'react/jsx-no-bind': [IGNORE]
   }
 }
