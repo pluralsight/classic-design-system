@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@0.4.28...@pluralsight/ps-design-system-datepicker@0.5.0) (2019-01-17)
+
+
+### Features
+
+* **datepicker:** close on escape or click out ([e696627](https://github.com/pluralsight/design-system/commit/e696627))
+
+
+
+
+
 ## [0.4.28](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@0.4.27...@pluralsight/ps-design-system-datepicker@0.4.28) (2019-01-02)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker

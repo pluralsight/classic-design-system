@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@1.1.0...@pluralsight/ps-design-system-emptystate@2.0.0) (2019-01-17)
+
+
+### Bug Fixes
+
+* **emptystate:** use react 15 compatible ref syntax ([8a0236c](https://github.com/pluralsight/design-system/commit/8a0236c))
+
+
+### Features
+
+* **emptystate:** add new illustrations and update existing ([e3d22f2](https://github.com/pluralsight/design-system/commit/e3d22f2))
+
+
+### Performance Improvements
+
+* **emptystate:** only listen to width changes; extend debounce delay ([4603165](https://github.com/pluralsight/design-system/commit/4603165))
+* **emptystate:** throttle resizes; animate illustration container ([d0dad20](https://github.com/pluralsight/design-system/commit/d0dad20))
+
+
+### BREAKING CHANGES
+
+* **emptystate:** some illustration names have been changed
+
+
+
+
+
 # 1.1.0 (2019-01-02)
 
 

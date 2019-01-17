@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.7.2...@pluralsight/ps-design-system-site@11.8.0) (2019-01-17)
+
+
+### Bug Fixes
+
+* **site:** use onMouseEnter in tooltip example ([06be49b](https://github.com/pluralsight/design-system/commit/06be49b))
+
+
+### Features
+
+* **site:** react-router with button doc ([f425323](https://github.com/pluralsight/design-system/commit/f425323))
+
+
+
+
+
 ## [11.7.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.7.1...@pluralsight/ps-design-system-site@11.7.2) (2019-01-11)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site

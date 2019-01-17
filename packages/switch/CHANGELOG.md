@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.6.6...@pluralsight/ps-design-system-switch@1.6.7) (2019-01-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
 ## [1.6.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.6.4...@pluralsight/ps-design-system-switch@1.6.6) (2018-12-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-switch

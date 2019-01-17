@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-breadcrumb",
-  "version": "1.2.28",
+  "version": "1.2.29",
   "description": "Design System component for breadcrumb ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -20,7 +20,7 @@
   },
   "keywords": [],
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^10.11.5",
+    "@pluralsight/ps-design-system-button": "^10.11.6",
     "@pluralsight/ps-design-system-core": "^4.4.2",
     "@pluralsight/ps-design-system-icon": "^10.0.0",
     "prop-types": "^15.5.10"
