@@ -10,11 +10,7 @@ const styles = {
   list: ({ themeName }) =>
     glamor.css(
       css['.psds-tab__list'],
-      css[`.psds-tab__list.psds-theme--${themeName}`],
-      {
-        ':focus': css['.psds-tab__list:focus'],
-        ':focus div': css['.psds-tab__list:focus .psds-tab__list-item__text']
-      }
+      css[`.psds-tab__list.psds-theme--${themeName}`]
     )
 }
 
@@ -55,14 +51,14 @@ class List extends React.Component {
     }
   }
   render() {
+    const { children, ...rest } = this.props
     const listProps = {
+      ...rest,
       role: 'tablist',
       onKeyDown: this.handleKeyDown,
       tabIndex: '0',
       // TODO: use withTheme instead
-      themeName: this.context.themeName || themeDefaultName,
-      ...(this.props.style ? { style: this.props.style } : null),
-      ...(this.props.className ? { className: this.props.className } : null)
+      themeName: this.context.themeName || themeDefaultName
     }
     return (
       <div {...filterReactProps(listProps)} {...styles.list(listProps)}>
@@ -81,6 +77,12 @@ class List extends React.Component {
       </div>
     )
   }
+}
+List.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
+  ])
 }
 List.contextTypes = {
   themeName: PropTypes.string

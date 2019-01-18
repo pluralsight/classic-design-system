@@ -43,15 +43,16 @@ export default {
   '.psds-tab__list': {
     display: 'flex',
     width: '100%',
-    height: '64px'
-  },
-  '.psds-tab__list:focus': {
-    outline: 'none',
-    borderBottomWidth: '4px'
-  },
-  '.psds-tab__list:focus .psds-tab__list-item__text': {
-    height: 'calc(100% + 4px)',
-    marginBottom: '-4px'
+    height: '64px',
+    '&:focus': {
+      outline: 'none',
+      borderBottomWidth: '4px',
+      // __text
+      '& div': {
+        height: 'calc(100% + 4px)',
+        marginBottom: '-4px'
+      }
+    }
   },
   [`.psds-tab__list.psds-theme--${themeNames.light}`]: {
     borderBottom: `1px solid ${core.colors.gray02}`
@@ -67,55 +68,43 @@ export default {
     border: 0,
     cursor: 'pointer',
     padding: `0 calc(${core.layout.spacingXLarge} / 2)`,
-    textDecoration: 'none'
-  },
-  '.psds-tab__list-item:focus': {
-    outline: 'none'
-  },
-  '.psds-tab__list-item:first-child': {
-    paddingLeft: 0
+    textDecoration: 'none',
+    '&:focus': {
+      outline: 'none'
+    },
+    '&:first-child': {
+      paddingLeft: 0
+    },
+    // __bar
+    '&:hover span, &:focus span': listItemBarHover,
+    '&:active span': listItemBarActive
   },
   [`.psds-tab__list-item.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03
+    color: core.colors.gray03,
+    // __text
+    '&:hover div, &:focus div': listItemTextLightHover,
+    '&:active': listItemTextLightActive
   },
   [`.psds-tab__list-item.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.gray02
+    color: core.colors.gray02,
+    // __text
+    '&:hover div, &:focus div': listItemTextDefaultHover,
+    '&:active': listItemTextDefaultActive
   },
-
-  // __list-item:hover/focus/active __list-item__text
-  [`.psds-tab__list-item.psds-theme--${
-    themeNames.light
-  }:hover .psds-tab__list-item__text`]: listItemTextLightHover,
-  [`.psds-tab__list-item.psds-theme--${themeDefaultName}:hover .psds-tab__list-item__text`]: listItemTextDefaultHover,
-  [`.psds-tab__list-item.psds-theme--${
-    themeNames.light
-  }:focus .psds-tab__list-item__text`]: listItemTextLightHover,
-  [`.psds-tab__list-item.psds-theme--${themeDefaultName}:focus .psds-tab__list-item__text`]: listItemTextDefaultHover,
-  [`.psds-tab__list-item.psds-theme--${
-    themeNames.light
-  }:active .psds-tab__list-item__text`]: listItemTextLightActive,
-  [`.psds-tab__list-item.psds-theme--${themeDefaultName}:active .psds-tab__list-item__text`]: listItemTextDefaultActive,
+  [`.psds-tab__list-item.psds-tab__list-item--active`]: {
+    // __span
+    '&:active span, &:hover span, &:focus span, & span': listItemBarActiveActive
+  },
   [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
     themeNames.light
-  }:hover .psds-tab__list-item__text`]: listItemTextLightActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeDefaultName}:hover .psds-tab__list-item__text`]: listItemTextDefaultActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
-    themeNames.light
-  }:focus .psds-tab__list-item__text`]: listItemTextLightActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeDefaultName}:focus .psds-tab__list-item__text`]: listItemTextDefaultActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
-    themeNames.light
-  } .psds-tab__list-item__text`]: listItemTextLightActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeDefaultName} .psds-tab__list-item__text`]: listItemTextDefaultActive,
-
-  // __list-item:hover/focus/active __list-item__bar
-  [`.psds-tab__list-item:hover .psds-tab__list-item__bar`]: listItemBarHover,
-  [`.psds-tab__list-item:focus .psds-tab__list-item__bar`]: listItemBarHover,
-  [`.psds-tab__list-item:active .psds-tab__list-item__bar`]: listItemBarActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active:active .psds-tab__list-item__bar`]: listItemBarActiveActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active:hover .psds-tab__list-item__bar`]: listItemBarActiveActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active:focus .psds-tab__list-item__bar`]: listItemBarActiveActive,
-  [`.psds-tab__list-item.psds-tab__list-item--active .psds-tab__list-item__bar`]: listItemBarActiveActive,
+  }`]: {
+    // __text
+    '&:hover div, &:focus div, & div': listItemTextLightActive
+  },
+  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeDefaultName}`]: {
+    // __text
+    '&:hover div, &:focus div, & div': listItemTextDefaultActive
+  },
 
   // __list-item__text
   '.psds-tab__list-item__text': {
@@ -126,7 +115,10 @@ export default {
     marginBottom: '-1px',
     fontWeight: core.type.fontWeightBook,
     padding: `0 0 ${core.layout.spacingXXSmall} 0`,
-    transition: `color ${core.motion.speedXFast} linear`
+    transition: `color ${core.motion.speedXFast} linear`,
+    '&:focus': {
+      outline: 'none'
+    }
   },
 
   // __list-item__bar

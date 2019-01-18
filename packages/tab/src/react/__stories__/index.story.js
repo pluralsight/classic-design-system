@@ -48,15 +48,7 @@ class InAppExample extends React.Component {
 storiesOf('default', module)
   .addDecorator(themeDecorator(addons))
   .add('default', _ => <InAppExample />)
-  .add('no items', _ => (
-    <Tab.List>
-      {false && (
-        <Tab.ListItem id={1} key={1}>
-          Foo
-        </Tab.ListItem>
-      )}
-    </Tab.List>
-  ))
+  .add('no items', _ => <Tab.List />)
   .add('as links', _ => (
     <Tab.List>
       <Tab.ListItem href="https://duckduckgo.com" id={1} key={1}>
