@@ -314,8 +314,8 @@ class DatePicker extends React.Component {
           </div>
         </Halo>
         {state.isOpen && [
-          <Overlay onClick={this.handleOverlayClick} />,
-          <div {...styles.calendarContainer(allProps)}>
+          <Overlay onClick={this.handleOverlayClick} key="dialog-overlay" />,
+          <div {...styles.calendarContainer(allProps)} key="dialog-calender">
             <Calendar
               mm={state.mm}
               dd={state.dd}
