@@ -218,57 +218,6 @@ exports[`Storyshots actionBar one action 1`] = `
 </div>
 `;
 
-exports[`Storyshots actionBar with a ref 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
-  >
-    <div
-      data-css-vl7fes=""
-    >
-      <div
-        data-css-1tiyrld=""
-      >
-        <div
-          data-css-1jlgfae=""
-        >
-          I support refs
-        </div>
-      </div>
-      <div
-        data-css-okadky=""
-      >
-        <button
-          data-css-2qvjr2=""
-        >
-          <div
-            data-css-otejxm=""
-          >
-            <svg
-              aria-label="bookmark icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
-              />
-            </svg>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots combo everything 1`] = `
 <div
   data-css-claeju=""
