@@ -95,15 +95,23 @@ const ActionBar = props => (
   <div {...styles.actionBar(props)} {...filterReactProps(props)} />
 )
 
-const ActionBarAction = withTheme(({ icon, ...props }) => {
-  const filteredProps = filterReactProps(props, { tagName: 'button' })
+const ActionBarAction = withTheme(
+  class extends React.PureComponent {
+    render() {
+      // eslint-disable-next-line react/prop-types
+      const { icon, ...props } = this.props
+      const filteredProps = filterReactProps(props, {
+        tagName: 'button'
+      })
 
-  return (
-    <button {...styles.actionBarAction(props)} {...filteredProps}>
-      {icon}
-    </button>
-  )
-})
+      return (
+        <button {...styles.actionBarAction(props)} {...filteredProps}>
+          {icon}
+        </button>
+      )
+    }
+  }
+)
 ActionBarAction.displayName = 'Row.Action'
 ActionBarAction.propTypes = { icon: PropTypes.element.isRequired }
 
