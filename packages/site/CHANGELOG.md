@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.8.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.8.0...@pluralsight/ps-design-system-site@11.8.1) (2019-01-29)
+
+
+### Bug Fixes
+
+* **site:** add route to emptystate page ([5b593bc](https://github.com/pluralsight/design-system/commit/5b593bc))
+* **site:** polyfill es6 and es7 eatures ([d963e21](https://github.com/pluralsight/design-system/commit/d963e21))
+
+
+
+
+
 # [11.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.7.2...@pluralsight/ps-design-system-site@11.8.0) (2019-01-17)
 
 

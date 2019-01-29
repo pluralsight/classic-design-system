@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@0.5.0...@pluralsight/ps-design-system-datepicker@0.5.1) (2019-01-29)
+
+
+### Bug Fixes
+
+* **datepicker:** add keys to avoid errors ([8fbfbc6](https://github.com/pluralsight/design-system/commit/8fbfbc6))
+
+
+
+
+
 # [0.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@0.4.28...@pluralsight/ps-design-system-datepicker@0.5.0) (2019-01-17)
 
 

@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.7.4...@pluralsight/ps-design-system-tab@8.0.0) (2019-01-29)
+
+
+### Bug Fixes
+
+* **tab:** keep focus on list-item for safari style ([8385588](https://github.com/pluralsight/design-system/commit/8385588)), closes [#431](https://github.com/pluralsight/design-system/issues/431)
+
+
+### Code Refactoring
+
+* **tab:** simplify css selectors for list-item ([2f4524b](https://github.com/pluralsight/design-system/commit/2f4524b))
+* **tab:** simplify tab list css ([21f46b3](https://github.com/pluralsight/design-system/commit/21f46b3))
+
+
+### BREAKING CHANGES
+
+* **tab:** list-item css selectors changed
+* **tab:** changed list css selectors
+
+
+
+
+
 ## [7.7.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.7.3...@pluralsight/ps-design-system-tab@7.7.4) (2019-01-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tab
