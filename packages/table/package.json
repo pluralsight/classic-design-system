@@ -10,7 +10,7 @@
   "scripts": {
     "build": "run-s build:js build:css",
     "build-storybook": "build-storybook",
-    "build:css": "build-css",
+    "build:css": "build-css --useGlamor",
     "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
@@ -21,6 +21,7 @@
   },
   "keywords": [],
   "dependencies": {
+    "@pluralsight/ps-design-system-filter-react-props": "^1.1.3",
     "@pluralsight/ps-design-system-core": "^4.4.2",
     "@pluralsight/ps-design-system-drawer": "^1.5.19",
     "@pluralsight/ps-design-system-icon": "^10.0.0",
