@@ -14,6 +14,10 @@ export default {
     fontSize: core.type.fontSizeSmall,
     lineHeight: core.type.lineHeightTight
   },
+  '.psds-table--in-drawer': {
+    paddingLeft: core.layout.spacingMedium,
+    paddingRight: drawerVars.toggleAreaWidth
+  },
   [`.psds-table.psds-theme--${themeDefaultName}`]: {
     color: core.colors.gray02
   },

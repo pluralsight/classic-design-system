@@ -1273,6 +1273,154 @@ exports[`Storyshots drawer mulitple 1`] = `
 </div>
 `;
 
+exports[`Storyshots drawer nested table 1`] = `
+<div
+  data-css-d303pi=""
+>
+  <div
+    data-css-1fq8nx6=""
+  >
+    <div
+      data-css-i9wfit=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-euzj8=""
+      >
+        <div
+          data-css-prsp0g=""
+        >
+          <div
+            data-css-1cc2f5z=""
+            style={Object {}}
+          >
+            Parent Cell
+          </div>
+          <div
+            data-css-1cc2f5z=""
+            style={Object {}}
+          >
+            Parent Cell
+          </div>
+          <div
+            data-css-1cc2f5z=""
+            style={Object {}}
+          >
+            Parent Cell
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-qs2rg7=""
+      >
+        <button
+          aria-label="Collapse"
+          data-css-7jbmom=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-xnveog=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                />
+              </svg>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      data-css-ule0ur=""
+    >
+      <div
+        data-css-1j3g0qd=""
+      >
+        <div
+          data-css-1tpis1h=""
+        >
+          <div
+            data-css-prsp0g=""
+          >
+            <div
+              data-css-1cc2f5z=""
+              style={Object {}}
+            >
+              Child Cell
+            </div>
+            <div
+              data-css-1cc2f5z=""
+              style={Object {}}
+            >
+              Child Cell
+            </div>
+            <div
+              data-css-1cc2f5z=""
+              style={Object {}}
+            >
+              Child Cell
+            </div>
+          </div>
+          <div
+            data-css-prsp0g=""
+          >
+            <div
+              data-css-1cc2f5z=""
+              style={Object {}}
+            >
+              Child Cell
+            </div>
+            <div
+              data-css-1cc2f5z=""
+              style={Object {}}
+            >
+              Child Cell
+            </div>
+            <div
+              data-css-1cc2f5z=""
+              style={Object {}}
+            >
+              Child Cell
+            </div>
+          </div>
+          <div
+            data-css-prsp0g=""
+          >
+            <div
+              data-css-1cc2f5z=""
+              style={Object {}}
+            >
+              Child Cell
+            </div>
+            <div
+              data-css-1cc2f5z=""
+              style={Object {}}
+            >
+              Child Cell
+            </div>
+            <div
+              data-css-1cc2f5z=""
+              style={Object {}}
+            >
+              Child Cell
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots drawer single 1`] = `
 <div
   data-css-d303pi=""

@@ -414,3 +414,36 @@ storiesOf('drawer', module)
       </Drawer>
     </Table>
   ))
+  .add('nested table', _ => {
+    const baseRow = (
+      <Table.Row>
+        <Table.Cell>Parent Cell</Table.Cell>
+        <Table.Cell>Parent Cell</Table.Cell>
+        <Table.Cell>Parent Cell</Table.Cell>
+      </Table.Row>
+    )
+
+    return (
+      <Table>
+        <Drawer base={baseRow} startOpen>
+          <Table inDrawer>
+            <Table.Row>
+              <Table.Cell>Child Cell</Table.Cell>
+              <Table.Cell>Child Cell</Table.Cell>
+              <Table.Cell>Child Cell</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>Child Cell</Table.Cell>
+              <Table.Cell>Child Cell</Table.Cell>
+              <Table.Cell>Child Cell</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>Child Cell</Table.Cell>
+              <Table.Cell>Child Cell</Table.Cell>
+              <Table.Cell>Child Cell</Table.Cell>
+            </Table.Row>
+          </Table>
+        </Drawer>
+      </Table>
+    )
+  })

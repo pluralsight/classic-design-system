@@ -34,8 +34,12 @@ const styles = {
       css[`.psds-table__row--${themeName}`],
       _tableHasDrawers && css['.psds-table__row--drawers']
     ),
-  table: ({ themeName }) =>
-    glamor.css(css['.psds-table'], css[`.psds-table.psds-theme--${themeName}`])
+  table: ({ inDrawer, themeName }) =>
+    glamor.css(
+      css['.psds-table'],
+      inDrawer && css['.psds-table--in-drawer'],
+      css[`.psds-table.psds-theme--${themeName}`]
+    )
 }
 
 const SortIconAsc = _ => (
@@ -194,6 +198,7 @@ class Table extends React.Component {
       ...props,
       themeName: context.themeName || themeDefaultName
     }
+
     const _tableHasDrawers = React.Children.map(
       allProps.children || [],
       child =>
@@ -201,6 +206,7 @@ class Table extends React.Component {
         child.type &&
         child.type.displayName === drawerVars.drawerDisplayName
     ).some(bool => bool)
+
     return (
       <div
         {...styles.table(allProps)}
@@ -217,6 +223,12 @@ class Table extends React.Component {
   }
 }
 Table.displayName = 'Table'
+Table.propTypes = {
+  inDrawer: PropTypes.bool
+}
+Table.defaultProps = {
+  inDrawer: false
+}
 Table.contextTypes = {
   themeName: PropTypes.string
 }
