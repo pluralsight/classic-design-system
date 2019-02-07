@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { mount, shallow } from 'enzyme'
 
 import * as vars from '../../vars'
 
@@ -24,8 +24,8 @@ describe('Icon', () => {
     })
   })
 
-  it('should allow overriding the aria-label', () => {
-    const wrapper = shallow(<Icon aria-label="test label" />)
-    expect(wrapper.prop('aria-label')).toEqual('test label')
+  it('should allow overriding the aria-label of the svg', () => {
+    const wrapper = mount(<Icon aria-label="test label" id={Icon.ids.check} />)
+    expect(wrapper.find('svg').prop('aria-label')).toEqual('test label')
   })
 })
