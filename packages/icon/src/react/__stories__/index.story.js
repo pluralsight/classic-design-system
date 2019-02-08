@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Icon from '../../../dist/react'
+import Icon from '..'
 
 const colorStory = storiesOf('appearance', module)
 Object.values(Icon.colors).forEach(color =>
@@ -21,3 +21,7 @@ Object.values(Icon.ids).forEach(id =>
     <Icon color={Icon.colors.white} size={Icon.sizes.large} id={id} />
   ))
 )
+
+storiesOf('custom props', module).add('aria-label', () => (
+  <Icon color={Icon.colors.white} id={Icon.ids.check} aria-label="completed" />
+))
