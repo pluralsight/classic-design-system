@@ -1,9 +1,10 @@
-import { vars as drawerVars } from '@pluralsight/ps-design-system-drawer'
 import * as glamor from 'glamor'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 import PropTypes from 'prop-types'
 import React from 'react'
+
+import * as drawerVars from '@pluralsight/ps-design-system-drawer/vars'
+import Icon from '@pluralsight/ps-design-system-icon/react'
+import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
 import * as vars from '../vars'
@@ -12,60 +13,33 @@ const styles = {
   cell: ({ align, emphasis, themeName }) =>
     glamor.css(
       css['.psds-table__cell'],
-      {
-        ':first-of-type': css['.psds-table__cell:first-of-type'],
-        ':last-of-type': css['.psds-table__cell:last-of-type']
-      },
       emphasis && css['.psds-table__cell--emphasis'],
       emphasis && css[`.psds-table__cell--emphasis.psds-theme--${themeName}`],
-      align && css[`.psds-table__cell--align-${align}`],
-      {
-        '& a': css['.psds-table__cell a'],
-        '& a:hover': {
-          ...css['.psds-table__cell a:hover'],
-          ...css[`.psds-table__cell.psds-theme--${themeName} a:hover`]
-        },
-        '& a:active': {
-          ...css['.psds-table__cell a:active'],
-          ...css[`.psds-table__cell.psds-theme--${themeName} a:active`]
-        },
-        '& a:focus': {
-          ...css['.psds-table__cell a:focus'],
-          ...css[`.psds-table__cell.psds-theme--${themeName} a:focus`]
-        }
-      }
+      align && css[`.psds-table__cell--align-${align}`]
     ),
   columnHeader: ({ active, align, onClick, sort, themeName }) =>
     glamor.css(
       css['.psds-table__column-header'],
       css[`.psds-table__column-header.psds-theme--${themeName}`],
       css[`.psds-table__column-header--align-${align}`],
-      { ':first-of-type': css['.psds-table__column-header:first-of-type'] },
-      { ':last-of-type': css['.psds-table__column-header:last-of-type'] },
       active && css['.psds-table__column-header--active'],
       active &&
         css[`.psds-table__column-header--active.psds-theme--${themeName}`],
-      onClick && {
-        ':hover': {
-          ...css['.psds-table__column-header--onclick:hover'],
-          ...css[
-            `.psds-table__column-header--onclick.psds-theme--${themeName}:hover`
-          ]
-        }
-      }
+      onClick && css['.psds-table__column-header--onclick']
     ),
   columnHeaderIcon: _ => glamor.css(css['.psds-table__column-header__icon']),
   row: ({ _tableHasDrawers, themeName }) =>
     glamor.css(
       css['.psds-table__row'],
-      {
-        ':first-of-type': css['.psds-table__row:first-of-type']
-      },
       css[`.psds-table__row--${themeName}`],
       _tableHasDrawers && css['.psds-table__row--drawers']
     ),
-  table: ({ themeName }) =>
-    glamor.css(css['.psds-table'], css[`.psds-table.psds-theme--${themeName}`])
+  table: ({ inDrawer, themeName }) =>
+    glamor.css(
+      css['.psds-table'],
+      inDrawer && css['.psds-table--in-drawer'],
+      css[`.psds-table.psds-theme--${themeName}`]
+    )
 }
 
 const SortIconAsc = _ => (
@@ -95,13 +69,15 @@ class ColumnHeader extends React.Component {
     super(props)
     this.handleClick = this.handleClick.bind(this)
   }
+
   handleClick() {
-    const { props } = this
-    if (typeof props.onClick === 'function')
-      props.onClick(getToggledSort(props))
+    const { onClick } = this.props
+    if (typeof onClick === 'function') onClick(getToggledSort(this.props))
   }
+
   render() {
-    const { context, handleClick, props } = this
+    const { context, props } = this
+
     const allProps = {
       ...props,
       active: vars.sorts[props.sort] && typeof props.onClick === 'function',
@@ -128,6 +104,10 @@ class ColumnHeader extends React.Component {
     )
   }
 }
+
+ColumnHeader.displayName = 'Table.ColumnHeader'
+
+/* eslint-disable react/no-unused-prop-types */
 ColumnHeader.propTypes = {
   align: PropTypes.oneOf(Object.keys(vars.aligns)),
   children: PropTypes.string.isRequired,
@@ -135,10 +115,11 @@ ColumnHeader.propTypes = {
   onClick: PropTypes.func,
   sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)])
 }
+/* eslint-enable react/no-unused-prop-types */
+
 ColumnHeader.defaultProps = {
   align: vars.aligns.left
 }
-ColumnHeader.displayName = 'Table.ColumnHeader'
 ColumnHeader.contextTypes = {
   themeName: PropTypes.string
 }
@@ -217,13 +198,15 @@ class Table extends React.Component {
       ...props,
       themeName: context.themeName || themeDefaultName
     }
+
     const _tableHasDrawers = React.Children.map(
       allProps.children || [],
       child =>
         child &&
         child.type &&
-        child.type.displayName == drawerVars.drawerDisplayName
+        child.type.displayName === drawerVars.drawerDisplayName
     ).some(bool => bool)
+
     return (
       <div
         {...styles.table(allProps)}
@@ -240,6 +223,12 @@ class Table extends React.Component {
   }
 }
 Table.displayName = 'Table'
+Table.propTypes = {
+  inDrawer: PropTypes.bool
+}
+Table.defaultProps = {
+  inDrawer: false
+}
 Table.contextTypes = {
   themeName: PropTypes.string
 }

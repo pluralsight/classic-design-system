@@ -1,16 +1,14 @@
+import React from 'react'
+
 import { action } from '@storybook/addon-actions'
-import addons from '@storybook/addons'
-import core from '@pluralsight/ps-design-system-core'
+import { storiesOf } from '@storybook/react'
+
 import Drawer from '@pluralsight/ps-design-system-drawer/react'
 import Link from '@pluralsight/ps-design-system-link/react'
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Table from '../react'
+import Table from '..'
 
-const tableStory = storiesOf('table', module)
-  .addDecorator(themeDecorator(addons))
+storiesOf('table', module)
   .add('empty', _ => <Table />)
   .add('custom className', _ => (
     <Table className="some-class">
@@ -27,8 +25,7 @@ const tableStory = storiesOf('table', module)
     </Table>
   ))
 
-const rowStory = storiesOf('row', module)
-  .addDecorator(themeDecorator(addons))
+storiesOf('row', module)
   .add('one row, empty', _ => (
     <Table>
       <Table.Row />
@@ -70,7 +67,6 @@ const rowStory = storiesOf('row', module)
   ))
 
 const cellStory = storiesOf('cell', module)
-  .addDecorator(themeDecorator(addons))
   .add('empty', _ => (
     <Table>
       <Table.Row>
@@ -190,7 +186,6 @@ cellStory.add('custom style', _ => (
 ))
 
 const columnHeaderStory = storiesOf('columnHeader', module)
-  .addDecorator(themeDecorator(addons))
   .add('text', _ => (
     <Table>
       <Table.Row>
@@ -330,8 +325,7 @@ columnHeaderStory
     </Table>
   ))
 
-const drawerStory = storiesOf('drawer', module)
-  .addDecorator(themeDecorator(addons))
+storiesOf('drawer', module)
   .add('single', _ => (
     <Table>
       <Drawer
@@ -420,3 +414,36 @@ const drawerStory = storiesOf('drawer', module)
       </Drawer>
     </Table>
   ))
+  .add('nested table', _ => {
+    const baseRow = (
+      <Table.Row>
+        <Table.Cell>Parent Cell</Table.Cell>
+        <Table.Cell>Parent Cell</Table.Cell>
+        <Table.Cell>Parent Cell</Table.Cell>
+      </Table.Row>
+    )
+
+    return (
+      <Table>
+        <Drawer base={baseRow} startOpen>
+          <Table inDrawer>
+            <Table.Row>
+              <Table.Cell>Child Cell</Table.Cell>
+              <Table.Cell>Child Cell</Table.Cell>
+              <Table.Cell>Child Cell</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>Child Cell</Table.Cell>
+              <Table.Cell>Child Cell</Table.Cell>
+              <Table.Cell>Child Cell</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>Child Cell</Table.Cell>
+              <Table.Cell>Child Cell</Table.Cell>
+              <Table.Cell>Child Cell</Table.Cell>
+            </Table.Row>
+          </Table>
+        </Drawer>
+      </Table>
+    )
+  })

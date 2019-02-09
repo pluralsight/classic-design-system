@@ -172,6 +172,13 @@ export default withServerProps(_ => (
               null,
               null,
               'content of table, per row'
+            ]),
+            PropTypes.row([
+              'inDrawer',
+              'boolean',
+              null,
+              <code>false</code>,
+              'used to add additional styles when table is nested in a Drawer'
             ])
           ],
           'Table.Cell': [
@@ -417,6 +424,56 @@ export default withServerProps(_ => (
     </Table.Row>
   }>
     <PinkBox>DrawerPanel</PinkBox>
+  </Drawer>
+</Table>`
+        ]}
+      />
+
+      <P>
+        You can also nest an entire <Text.Code>Table</Text.Code> inside a{' '}
+        <Link href="/components/drawer">
+          <Text.Code>Drawer</Text.Code>
+        </Link>
+        . Mark the nested <Text.Code>Table</Text.Code> with the{' '}
+        <Text.Code>isDrawer</Text.Code> prop to get the correct styling.
+      </P>
+
+      <Example.React
+        themeToggle
+        includes={{ Drawer, Table }}
+        orient="vertical"
+        codes={[
+          `<Table>
+  <Table.Row>
+    <Table.ColumnHeader>Column</Table.ColumnHeader>
+    <Table.ColumnHeader>Column</Table.ColumnHeader>
+    <Table.ColumnHeader>Column</Table.ColumnHeader>
+  </Table.Row>
+
+  <Drawer startOpen base={
+    <Table.Row>
+      <Table.Cell>Cell</Table.Cell>
+      <Table.Cell>Cell</Table.Cell>
+      <Table.Cell>Cell</Table.Cell>
+    </Table.Row>
+  }>
+    <Table inDrawer>
+      <Table.Row>
+        <Table.Cell>Nested Cell</Table.Cell>
+        <Table.Cell>Nested Cell</Table.Cell>
+        <Table.Cell>Nested Cell</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Nested Cell</Table.Cell>
+        <Table.Cell>Nested Cell</Table.Cell>
+        <Table.Cell>Nested Cell</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Nested Cell</Table.Cell>
+        <Table.Cell>Nested Cell</Table.Cell>
+        <Table.Cell>Nested Cell</Table.Cell>
+      </Table.Row>
+    </Table>
   </Drawer>
 </Table>`
         ]}
