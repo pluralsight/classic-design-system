@@ -2,7 +2,7 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { vars as drawerVars } from '@pluralsight/ps-design-system-drawer'
+import * as drawerVars from '@pluralsight/ps-design-system-drawer/vars'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
