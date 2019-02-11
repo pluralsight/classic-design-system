@@ -84,14 +84,18 @@ class ColumnHeader extends React.Component {
       themeName: context.themeName || themeDefaultName
     }
     const style = allProps.style || {}
+
     if (
       (!allProps.styles || (allProps.styles && !allProps.styles.flex)) &&
       allProps.flex
-    )
+    ) {
       style.flex = allProps.flex
+    }
+
     return React.createElement(
       props.onClick ? 'button' : 'div',
       {
+        role: 'columnheader',
         ...(allProps.className ? { className: allProps.className } : null),
         ...styles.columnHeader(allProps),
         ...(props.onClick
@@ -139,6 +143,7 @@ class Cell extends React.Component {
       style.flex = allProps.flex
     return (
       <div
+        role="cell"
         {...styles.cell(allProps)}
         {...(allProps.className ? { className: allProps.className } : null)}
         style={style}
@@ -171,6 +176,7 @@ class Row extends React.Component {
     }
     return (
       <div
+        role="row"
         {...styles.row(allProps)}
         {...(allProps.className ? { className: allProps.className } : null)}
         {...(allProps.style ? { style: allProps.style } : null)}
@@ -209,6 +215,7 @@ class Table extends React.Component {
 
     return (
       <div
+        role="table"
         {...styles.table(allProps)}
         {...(props.className ? { className: props.className } : null)}
         {...(props.style ? { style: props.style } : null)}
