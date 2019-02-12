@@ -90,7 +90,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Dialog from '@pluralsight/ps-design-system-tab/react'
+        import Tab from '@pluralsight/ps-design-system-tab/react'
       </Code>
 
       <PropTypes
