@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@10.0.0...@pluralsight/ps-design-system-icon@10.0.1) (2019-02-12)
+
+
+### Bug Fixes
+
+* **icon:** aria-label should update svg attr ([25126af](https://github.com/pluralsight/design-system/commit/25126af)), closes [#462](https://github.com/pluralsight/design-system/issues/462)
+
+
+
+
+
 # [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@9.0.3...@pluralsight/ps-design-system-icon@10.0.0) (2019-01-02)
 
 

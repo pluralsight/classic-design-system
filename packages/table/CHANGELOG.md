@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@1.1.32...@pluralsight/ps-design-system-table@2.0.0) (2019-02-12)
+
+
+### Features
+
+* **table:** add aria-roles to table markup ([906d446](https://github.com/pluralsight/design-system/commit/906d446))
+* **table:** style tables nested in drawer ([73b2d92](https://github.com/pluralsight/design-system/commit/73b2d92))
+
+
+### Styles
+
+* **table:** simplify css ([a8f0975](https://github.com/pluralsight/design-system/commit/a8f0975))
+
+
+### BREAKING CHANGES
+
+* **table:** css classnames have been flattened
+
+
+
+
+
 ## [1.1.32](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@1.1.31...@pluralsight/ps-design-system-table@1.1.32) (2019-01-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table
