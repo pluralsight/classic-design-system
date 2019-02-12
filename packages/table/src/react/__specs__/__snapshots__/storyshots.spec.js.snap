@@ -3,12 +3,15 @@
 exports[`Storyshots cell align center 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-187b6yg=""
+      role="cell"
       style={Object {}}
     >
       Cell aligned 
@@ -21,12 +24,15 @@ exports[`Storyshots cell align center 1`] = `
 exports[`Storyshots cell align left 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       Cell aligned 
@@ -39,12 +45,15 @@ exports[`Storyshots cell align left 1`] = `
 exports[`Storyshots cell align right 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-lbxvqf=""
+      role="cell"
       style={Object {}}
     >
       Cell aligned 
@@ -57,12 +66,15 @@ exports[`Storyshots cell align right 1`] = `
 exports[`Storyshots cell auto style anchor tag 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       <a
@@ -73,6 +85,7 @@ exports[`Storyshots cell auto style anchor tag 1`] = `
     </div>
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       Cell 2
@@ -80,9 +93,11 @@ exports[`Storyshots cell auto style anchor tag 1`] = `
   </div>
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       <a
@@ -94,6 +109,7 @@ exports[`Storyshots cell auto style anchor tag 1`] = `
     </div>
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       Cell 2
@@ -105,13 +121,16 @@ exports[`Storyshots cell auto style anchor tag 1`] = `
 exports[`Storyshots cell custom className 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       className="some-classname"
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       cell text
@@ -123,12 +142,15 @@ exports[`Storyshots cell custom className 1`] = `
 exports[`Storyshots cell custom style 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={
         Object {
           "outline": "1px solid red",
@@ -144,18 +166,22 @@ exports[`Storyshots cell custom style 1`] = `
 exports[`Storyshots cell emphasis text 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1uhs7p8=""
+      role="cell"
       style={Object {}}
     >
       em-PHA-sis
     </div>
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       Non emphasized
@@ -167,12 +193,15 @@ exports[`Storyshots cell emphasis text 1`] = `
 exports[`Storyshots cell empty 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     />
   </div>
@@ -182,12 +211,15 @@ exports[`Storyshots cell empty 1`] = `
 exports[`Storyshots cell flex 1 | 4 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={
         Object {
           "flex": "1",
@@ -198,6 +230,7 @@ exports[`Storyshots cell flex 1 | 4 1`] = `
     </div>
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={
         Object {
           "flex": "4",
@@ -213,12 +246,15 @@ exports[`Storyshots cell flex 1 | 4 1`] = `
 exports[`Storyshots cell flex 2 | 1 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={
         Object {
           "flex": "2",
@@ -229,6 +265,7 @@ exports[`Storyshots cell flex 2 | 1 1`] = `
     </div>
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={
         Object {
           "flex": "1",
@@ -244,12 +281,15 @@ exports[`Storyshots cell flex 2 | 1 1`] = `
 exports[`Storyshots cell flex, multiple cell, multiple row 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={
         Object {
           "flex": "2",
@@ -260,6 +300,7 @@ exports[`Storyshots cell flex, multiple cell, multiple row 1`] = `
     </div>
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={
         Object {
           "flex": "1",
@@ -271,9 +312,11 @@ exports[`Storyshots cell flex, multiple cell, multiple row 1`] = `
   </div>
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={
         Object {
           "flex": "2",
@@ -284,6 +327,7 @@ exports[`Storyshots cell flex, multiple cell, multiple row 1`] = `
     </div>
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={
         Object {
           "flex": "1",
@@ -299,18 +343,22 @@ exports[`Storyshots cell flex, multiple cell, multiple row 1`] = `
 exports[`Storyshots cell inner padding 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell
     </div>
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell 2 text Cell
@@ -322,18 +370,22 @@ exports[`Storyshots cell inner padding 1`] = `
 exports[`Storyshots cell multiple text 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       Cell 1 text
     </div>
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       Cell 2 text
@@ -345,12 +397,15 @@ exports[`Storyshots cell multiple text 1`] = `
 exports[`Storyshots cell text 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       Cell text
@@ -362,12 +417,15 @@ exports[`Storyshots cell text 1`] = `
 exports[`Storyshots columnHeader align center 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1ojv4g6=""
+      role="columnheader"
       style={Object {}}
     >
       Header aligned center
@@ -379,12 +437,15 @@ exports[`Storyshots columnHeader align center 1`] = `
 exports[`Storyshots columnHeader align center w/ sort 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1ojv4g6=""
+      role="columnheader"
       style={Object {}}
     >
       Header sortable, aligned center
@@ -409,12 +470,15 @@ exports[`Storyshots columnHeader align center w/ sort 1`] = `
 exports[`Storyshots columnHeader align left 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1ky1czx=""
+      role="columnheader"
       style={Object {}}
     >
       Header aligned left
@@ -426,12 +490,15 @@ exports[`Storyshots columnHeader align left 1`] = `
 exports[`Storyshots columnHeader align left w/ sort 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1ky1czx=""
+      role="columnheader"
       style={Object {}}
     >
       Header sortable, aligned left
@@ -456,12 +523,15 @@ exports[`Storyshots columnHeader align left w/ sort 1`] = `
 exports[`Storyshots columnHeader align right 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-168e5py=""
+      role="columnheader"
       style={Object {}}
     >
       Header aligned right
@@ -473,12 +543,15 @@ exports[`Storyshots columnHeader align right 1`] = `
 exports[`Storyshots columnHeader align right w/ sort 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-168e5py=""
+      role="columnheader"
       style={Object {}}
     >
       Header sortable, aligned right
@@ -503,13 +576,16 @@ exports[`Storyshots columnHeader align right w/ sort 1`] = `
 exports[`Storyshots columnHeader custom className 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       className="some-classname"
       data-css-1ky1czx=""
+      role="columnheader"
       style={Object {}}
     >
       header text
@@ -521,12 +597,15 @@ exports[`Storyshots columnHeader custom className 1`] = `
 exports[`Storyshots columnHeader custom style 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1ky1czx=""
+      role="columnheader"
       style={
         Object {
           "outline": "1px solid red",
@@ -542,12 +621,15 @@ exports[`Storyshots columnHeader custom style 1`] = `
 exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1ojv4g6=""
+      role="columnheader"
       style={Object {}}
     >
        Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned center
@@ -567,6 +649,7 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
     </div>
     <div
       data-css-1ojv4g6=""
+      role="columnheader"
       style={Object {}}
     >
       Short header, same align
@@ -591,12 +674,15 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
 exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1ky1czx=""
+      role="columnheader"
       style={Object {}}
     >
        Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned left
@@ -616,6 +702,7 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
     </div>
     <div
       data-css-1ky1czx=""
+      role="columnheader"
       style={Object {}}
     >
       Short header, same align
@@ -640,12 +727,15 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
 exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-168e5py=""
+      role="columnheader"
       style={Object {}}
     >
        Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned right
@@ -665,6 +755,7 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
     </div>
     <div
       data-css-168e5py=""
+      role="columnheader"
       style={Object {}}
     >
       Short header, same align
@@ -689,12 +780,15 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
 exports[`Storyshots columnHeader sort asc 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1ky1czx=""
+      role="columnheader"
       style={Object {}}
     >
       sorted header
@@ -721,13 +815,16 @@ exports[`Storyshots columnHeader sort asc 1`] = `
 exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <button
       data-css-17bxdv1=""
       onClick={[Function]}
+      role="columnheader"
       style={Object {}}
     >
       active header
@@ -750,6 +847,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
     <button
       data-css-1monnrb=""
       onClick={[Function]}
+      role="columnheader"
       style={Object {}}
     >
       other sortable
@@ -769,6 +867,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
     </button>
     <div
       data-css-1ky1czx=""
+      role="columnheader"
       style={Object {}}
     >
       no sort
@@ -780,12 +879,15 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
 exports[`Storyshots columnHeader sort default 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1ky1czx=""
+      role="columnheader"
       style={Object {}}
     >
       header text
@@ -810,13 +912,16 @@ exports[`Storyshots columnHeader sort default 1`] = `
 exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <button
       data-css-1monnrb=""
       onClick={[Function]}
+      role="columnheader"
       style={Object {}}
     >
       active header
@@ -837,6 +942,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
     <button
       data-css-1monnrb=""
       onClick={[Function]}
+      role="columnheader"
       style={Object {}}
     >
       other sortable
@@ -861,12 +967,15 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
 exports[`Storyshots columnHeader sort desc 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1ky1czx=""
+      role="columnheader"
       style={Object {}}
     >
       sorted header
@@ -893,13 +1002,16 @@ exports[`Storyshots columnHeader sort desc 1`] = `
 exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <button
       data-css-17bxdv1=""
       onClick={[Function]}
+      role="columnheader"
       style={Object {}}
     >
       active header
@@ -922,6 +1034,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
     <button
       data-css-1monnrb=""
       onClick={[Function]}
+      role="columnheader"
       style={Object {}}
     >
       other sortable
@@ -941,6 +1054,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
     </button>
     <div
       data-css-1ky1czx=""
+      role="columnheader"
       style={Object {}}
     >
       no sort
@@ -952,12 +1066,15 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
 exports[`Storyshots columnHeader text 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1ky1czx=""
+      role="columnheader"
       style={Object {}}
     >
       header text
@@ -969,12 +1086,15 @@ exports[`Storyshots columnHeader text 1`] = `
 exports[`Storyshots columnHeader w/ drawers 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1ky1czx=""
+      role="columnheader"
       style={Object {}}
     >
       header text
@@ -994,6 +1114,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
     </div>
     <div
       data-css-1ky1czx=""
+      role="columnheader"
       style={Object {}}
     >
       header2 text
@@ -1024,15 +1145,18 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
       >
         <div
           data-css-prsp0g=""
+          role="row"
         >
           <div
             data-css-1cc2f5z=""
+            role="cell"
             style={Object {}}
           >
             cell text
           </div>
           <div
             data-css-1cc2f5z=""
+            role="cell"
             style={Object {}}
           >
             cell2 text
@@ -1084,12 +1208,15 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
 exports[`Storyshots columnHeader w/ rows 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1ky1czx=""
+      role="columnheader"
       style={Object {}}
     >
       header text
@@ -1109,6 +1236,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
     </div>
     <div
       data-css-1ky1czx=""
+      role="columnheader"
       style={Object {}}
     >
       header2 text
@@ -1129,15 +1257,18 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
   </div>
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       cell text
     </div>
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       cell2 text
@@ -1149,6 +1280,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
 exports[`Storyshots drawer mulitple 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-1fq8nx6=""
@@ -1162,9 +1294,11 @@ exports[`Storyshots drawer mulitple 1`] = `
       >
         <div
           data-css-prsp0g=""
+          role="row"
         >
           <div
             data-css-1cc2f5z=""
+            role="cell"
             style={Object {}}
           >
             wow
@@ -1222,9 +1356,11 @@ exports[`Storyshots drawer mulitple 1`] = `
       >
         <div
           data-css-prsp0g=""
+          role="row"
         >
           <div
             data-css-1cc2f5z=""
+            role="cell"
             style={Object {}}
           >
             wow
@@ -1276,6 +1412,7 @@ exports[`Storyshots drawer mulitple 1`] = `
 exports[`Storyshots drawer nested table 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-1fq8nx6=""
@@ -1289,21 +1426,25 @@ exports[`Storyshots drawer nested table 1`] = `
       >
         <div
           data-css-prsp0g=""
+          role="row"
         >
           <div
             data-css-1cc2f5z=""
+            role="cell"
             style={Object {}}
           >
             Parent Cell
           </div>
           <div
             data-css-1cc2f5z=""
+            role="cell"
             style={Object {}}
           >
             Parent Cell
           </div>
           <div
             data-css-1cc2f5z=""
+            role="cell"
             style={Object {}}
           >
             Parent Cell
@@ -1347,24 +1488,29 @@ exports[`Storyshots drawer nested table 1`] = `
       >
         <div
           data-css-1tpis1h=""
+          role="table"
         >
           <div
             data-css-prsp0g=""
+            role="row"
           >
             <div
               data-css-1cc2f5z=""
+              role="cell"
               style={Object {}}
             >
               Child Cell
             </div>
             <div
               data-css-1cc2f5z=""
+              role="cell"
               style={Object {}}
             >
               Child Cell
             </div>
             <div
               data-css-1cc2f5z=""
+              role="cell"
               style={Object {}}
             >
               Child Cell
@@ -1372,21 +1518,25 @@ exports[`Storyshots drawer nested table 1`] = `
           </div>
           <div
             data-css-prsp0g=""
+            role="row"
           >
             <div
               data-css-1cc2f5z=""
+              role="cell"
               style={Object {}}
             >
               Child Cell
             </div>
             <div
               data-css-1cc2f5z=""
+              role="cell"
               style={Object {}}
             >
               Child Cell
             </div>
             <div
               data-css-1cc2f5z=""
+              role="cell"
               style={Object {}}
             >
               Child Cell
@@ -1394,21 +1544,25 @@ exports[`Storyshots drawer nested table 1`] = `
           </div>
           <div
             data-css-prsp0g=""
+            role="row"
           >
             <div
               data-css-1cc2f5z=""
+              role="cell"
               style={Object {}}
             >
               Child Cell
             </div>
             <div
               data-css-1cc2f5z=""
+              role="cell"
               style={Object {}}
             >
               Child Cell
             </div>
             <div
               data-css-1cc2f5z=""
+              role="cell"
               style={Object {}}
             >
               Child Cell
@@ -1424,6 +1578,7 @@ exports[`Storyshots drawer nested table 1`] = `
 exports[`Storyshots drawer single 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-1fq8nx6=""
@@ -1437,9 +1592,11 @@ exports[`Storyshots drawer single 1`] = `
       >
         <div
           data-css-prsp0g=""
+          role="row"
         >
           <div
             data-css-1cc2f5z=""
+            role="cell"
             style={Object {}}
           >
             wow
@@ -1491,6 +1648,7 @@ exports[`Storyshots drawer single 1`] = `
 exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-1fq8nx6=""
@@ -1504,9 +1662,11 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
       >
         <div
           data-css-prsp0g=""
+          role="row"
         >
           <div
             data-css-1cc2f5z=""
+            role="cell"
             style={
               Object {
                 "flex": "2",
@@ -1517,6 +1677,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
           </div>
           <div
             data-css-1cc2f5z=""
+            role="cell"
             style={
               Object {
                 "flex": "1",
@@ -1578,9 +1739,11 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
       >
         <div
           data-css-prsp0g=""
+          role="row"
         >
           <div
             data-css-1cc2f5z=""
+            role="cell"
             style={
               Object {
                 "flex": "2",
@@ -1591,6 +1754,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
           </div>
           <div
             data-css-1cc2f5z=""
+            role="cell"
             style={
               Object {
                 "flex": "1",
@@ -1652,9 +1816,11 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
       >
         <div
           data-css-prsp0g=""
+          role="row"
         >
           <div
             data-css-1cc2f5z=""
+            role="cell"
             style={
               Object {
                 "flex": "2",
@@ -1665,6 +1831,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
           </div>
           <div
             data-css-1cc2f5z=""
+            role="cell"
             style={
               Object {
                 "flex": "1",
@@ -1720,13 +1887,16 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
 exports[`Storyshots row custom className 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     className="some-class"
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       innocuous
@@ -1738,9 +1908,11 @@ exports[`Storyshots row custom className 1`] = `
 exports[`Storyshots row custom style 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
     style={
       Object {
         "outline": "1px solid red",
@@ -1749,6 +1921,7 @@ exports[`Storyshots row custom style 1`] = `
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       innocuous
@@ -1760,12 +1933,15 @@ exports[`Storyshots row custom style 1`] = `
 exports[`Storyshots row multiple rows 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       Something on a row
@@ -1773,9 +1949,11 @@ exports[`Storyshots row multiple rows 1`] = `
   </div>
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       Something on a row
@@ -1783,9 +1961,11 @@ exports[`Storyshots row multiple rows 1`] = `
   </div>
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       Something on a row
@@ -1797,12 +1977,15 @@ exports[`Storyshots row multiple rows 1`] = `
 exports[`Storyshots row one row, content 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       Something on a row
@@ -1814,9 +1997,11 @@ exports[`Storyshots row one row, content 1`] = `
 exports[`Storyshots row one row, empty 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   />
 </div>
 `;
@@ -1825,12 +2010,15 @@ exports[`Storyshots table custom className 1`] = `
 <div
   className="some-class"
   data-css-d303pi=""
+  role="table"
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       innocuous
@@ -1842,6 +2030,7 @@ exports[`Storyshots table custom className 1`] = `
 exports[`Storyshots table custom style 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
   style={
     Object {
       "outline": "1px solid red",
@@ -1850,9 +2039,11 @@ exports[`Storyshots table custom style 1`] = `
 >
   <div
     data-css-prsp0g=""
+    role="row"
   >
     <div
       data-css-1cc2f5z=""
+      role="cell"
       style={Object {}}
     >
       innocuous
@@ -1864,5 +2055,6 @@ exports[`Storyshots table custom style 1`] = `
 exports[`Storyshots table empty 1`] = `
 <div
   data-css-d303pi=""
+  role="table"
 />
 `;
