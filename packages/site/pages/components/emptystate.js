@@ -248,7 +248,7 @@ If the absence of data occurs due to a user query such as a search, consider dis
         <Link href="/patterns/voice-tone">voice and tone guidelines</Link> when
         writing copy for empty states. Apppropriate empty statement consist of a
         short declarative statement of what occurred, followed by a brief
-        sentance giving more context if necessary. Provide a clear CTA button
+        sentence giving more context if necessary. Provide a clear CTA button
         that’s no more than 2-3 words. Write clearly and conversationally like
         you would if you were talking to someone. Try to use an active voice
       </P>
