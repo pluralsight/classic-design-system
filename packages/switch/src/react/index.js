@@ -56,7 +56,8 @@ class Switch extends React.Component {
   }
 
   handleClick() {
-    this.props.onClick(!this.props.checked)
+    if (typeof this.props.onClick === 'function')
+      this.props.onClick(!this.props.checked)
   }
 
   handleFocus() {
