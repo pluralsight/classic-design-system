@@ -61,8 +61,8 @@
   "dependencies": {
     "babel-eslint": "^10.0.1",
     "glamor": "^2.20.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",
