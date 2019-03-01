@@ -93,7 +93,7 @@ export default {
     fill: core.colors.gray03
   },
   // __overlay
-  [`.psds-dialog__overlay`]: ({ fade }) => ({
+  [`.psds-dialog__overlay`]: {
     position: 'fixed',
     top: 0,
     left: 0,
@@ -102,10 +102,6 @@ export default {
     backgroundColor: transparentize(0.5, core.colors.black),
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
-    opacity: 0,
-    animation: `${fade || 'psds-dialog__keyframes__fade'} ${
-      core.motion.speedFast
-    } ease-out forwards`
-  })
+    alignItems: 'center'
+  }
 }
