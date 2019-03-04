@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.8.2...@pluralsight/ps-design-system-site@12.0.0) (2019-03-04)
+
+
+### Bug Fixes
+
+* **site:** add missing aria-label prop for dialog ([5c04f4b](https://github.com/pluralsight/design-system/commit/5c04f4b))
+* **site:** correct spelling error ([3d811ef](https://github.com/pluralsight/design-system/commit/3d811ef))
+
+
+### Features
+
+* **site:** show code for tab in-app example ([f27b503](https://github.com/pluralsight/design-system/commit/f27b503))
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
 ## [11.8.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@11.8.1...@pluralsight/ps-design-system-site@11.8.2) (2019-02-12)
 
 

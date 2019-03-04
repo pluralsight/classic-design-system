@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@1.7.18...@pluralsight/ps-design-system-tag@2.0.0) (2019-03-04)
+
+
+### Features
+
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
 ## [1.7.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@1.7.17...@pluralsight/ps-design-system-tag@1.7.18) (2019-02-12)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tag

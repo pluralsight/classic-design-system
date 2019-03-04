@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.11.7...@pluralsight/ps-design-system-button@11.0.0) (2019-03-04)
+
+
+### Features
+
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
 ## [10.11.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@10.11.6...@pluralsight/ps-design-system-button@10.11.7) (2019-02-12)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-button

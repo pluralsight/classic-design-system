@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@3.0.2...@pluralsight/ps-design-system-dialog@4.0.0) (2019-03-04)
+
+
+### Bug Fixes
+
+* **dialog:** remove underlay animation to remove blink ([6c78109](https://github.com/pluralsight/design-system/commit/6c78109)), closes [#473](https://github.com/pluralsight/design-system/issues/473)
+
+
+### Features
+
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
 ## [3.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@3.0.1...@pluralsight/ps-design-system-dialog@3.0.2) (2019-02-12)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog

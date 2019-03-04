@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.6.7...@pluralsight/ps-design-system-switch@2.0.0) (2019-03-04)
+
+
+### Bug Fixes
+
+* **switch:** don't call onClick function unless exists ([44b1b44](https://github.com/pluralsight/design-system/commit/44b1b44))
+
+
+### Features
+
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
 ## [1.6.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.6.6...@pluralsight/ps-design-system-switch@1.6.7) (2019-01-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-switch

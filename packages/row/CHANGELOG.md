@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@3.1.1...@pluralsight/ps-design-system-row@4.0.0) (2019-03-04)
+
+
+### Code Refactoring
+
+* **row:** convert action to functional component ([dbd3861](https://github.com/pluralsight/design-system/commit/dbd3861))
+
+
+### Features
+
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **row:** update to use forwardRef
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
 ## [3.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@3.1.0...@pluralsight/ps-design-system-row@3.1.1) (2019-02-12)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-row

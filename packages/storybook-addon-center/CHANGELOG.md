@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-center@1.0.5...@pluralsight/ps-design-system-storybook-addon-center@2.0.0) (2019-03-04)
+
+
+### Features
+
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
 ## [1.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-center@1.0.3...@pluralsight/ps-design-system-storybook-addon-center@1.0.5) (2018-12-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-center
