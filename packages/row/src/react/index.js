@@ -96,22 +96,19 @@ const ActionBar = props => (
 )
 
 const ActionBarAction = withTheme(
-  class extends React.PureComponent {
-    render() {
-      // eslint-disable-next-line react/prop-types
-      const { icon, ...props } = this.props
-      const filteredProps = filterReactProps(props, {
-        tagName: 'button'
-      })
+  React.forwardRef((props, ref) => {
+    // eslint-disable-next-line react/prop-types
+    const { icon, ...rest } = props
+    const filteredProps = filterReactProps(rest, { tagName: 'button' })
 
-      return (
-        <button {...styles.actionBarAction(props)} {...filteredProps}>
-          {icon}
-        </button>
-      )
-    }
-  }
+    return (
+      <button {...styles.actionBarAction(props)} ref={ref} {...filteredProps}>
+        {icon}
+      </button>
+    )
+  })
 )
+
 ActionBarAction.displayName = 'Row.Action'
 ActionBarAction.propTypes = { icon: PropTypes.element.isRequired }
 

@@ -15,14 +15,19 @@ const getDisplayName = Component => {
 export default function withTheme(BaseComponent) {
   const name = getDisplayName(BaseComponent)
 
-  const EnhancedComponent = (props, context = {}) => {
+  const EnhancedComponent = ({ forwardedRef, ...props }, context) => {
     const themeName = context.themeName || themeDefaultName
-    return <BaseComponent {...props} themeName={themeName} />
+    return <BaseComponent {...props} ref={forwardedRef} themeName={themeName} />
   }
 
-  EnhancedComponent.BaseComponent = BaseComponent
   EnhancedComponent.contextTypes = { themeName: PropTypes.string }
-  EnhancedComponent.displayName = `withTheme(${name})`
+  EnhancedComponent.propTypes = { forwardedRef: PropTypes.any }
 
-  return hoistNonReactStatics(EnhancedComponent, BaseComponent)
+  const Forwarded = React.forwardRef(function forwardThemeRef(props, ref) {
+    return <EnhancedComponent {...props} forwardedRef={ref} />
+  })
+  Forwarded.BaseComponent = BaseComponent
+  Forwarded.displayName = `withTheme(${name})`
+
+  return hoistNonReactStatics(Forwarded, BaseComponent)
 }
