@@ -32,7 +32,7 @@ const styles = {
       ...css[`.psds-dialog__close`],
       '> svg': css[`.psds-dialog__close > svg`]
     }),
-  overlay: _ => glamor.css(css[`.psds-dialog__overlay`]({ fade }))
+  overlay: _ => glamor.css(css[`.psds-dialog__overlay`])
 }
 
 const CloseButton = props => (

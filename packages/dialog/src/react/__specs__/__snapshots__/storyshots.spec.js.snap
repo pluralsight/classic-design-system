@@ -53,7 +53,7 @@ exports[`Storyshots modal no click overlay 1`] = `
       </p>
       <div
         aria-label="Storybook Modal"
-        data-css-17ouz8q=""
+        data-css-1v49ac=""
         id="psds-dialog__overlay"
         onClick={[Function]}
         role="region"
@@ -213,7 +213,7 @@ exports[`Storyshots modal no close button 1`] = `
       </p>
       <div
         aria-label="Storybook Modal"
-        data-css-17ouz8q=""
+        data-css-1v49ac=""
         id="psds-dialog__overlay"
         onClick={[Function]}
         role="region"
@@ -357,7 +357,7 @@ exports[`Storyshots modal no escape key 1`] = `
       </p>
       <div
         aria-label="Storybook Modal"
-        data-css-17ouz8q=""
+        data-css-1v49ac=""
         id="psds-dialog__overlay"
         onClick={[Function]}
         role="region"
@@ -516,7 +516,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
       </p>
       <div
         aria-label="Storybook Modal"
-        data-css-17ouz8q=""
+        data-css-1v49ac=""
         id="psds-dialog__overlay"
         onClick={[Function]}
         role="region"
@@ -732,7 +732,7 @@ exports[`Storyshots modal with close button 1`] = `
       </p>
       <div
         aria-label="Storybook Modal"
-        data-css-17ouz8q=""
+        data-css-1v49ac=""
         id="psds-dialog__overlay"
         onClick={[Function]}
         role="region"
