@@ -150,6 +150,13 @@ export default withServerProps(_ => (
       <PropTypes
         props={[
           PropTypes.row([
+            'aria-label',
+            'string',
+            true,
+            null,
+            <span>description of dialog purpose</span>
+          ]),
+          PropTypes.row([
             'disableCloseButton',
             'boolean',
             null,
