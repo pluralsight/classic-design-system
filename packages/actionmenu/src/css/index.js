@@ -118,6 +118,11 @@ export default {
     outline: 'none'
   },
 
+  '.psds-actionmenu__item--disabled': {
+    color: core.colors.gray02,
+    cursor: 'auto'
+  },
+
   // __divider
   '.psds-actionmenu__divider': {
     height: '1px',

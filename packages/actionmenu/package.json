@@ -35,6 +35,7 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.9.2",
     "@pluralsight/ps-design-system-button": "^11.0.0",
+    "@pluralsight/ps-design-system-prop-types": "^2.0.0",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^2.0.0",
     "@storybook/addon-actions": "^4.0.0",
     "@storybook/addon-storyshots": "^4.0.0",

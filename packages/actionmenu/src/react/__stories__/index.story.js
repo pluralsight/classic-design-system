@@ -73,10 +73,6 @@ storiesOf('dividers', module)
     </ActionMenu>
   ))
 
-const nestedStory = storiesOf('nested', module).addDecorator(
-  themeDecorator(addons)
-)
-
 storiesOf('shouldFocusOnMount', module)
   .addDecorator(themeDecorator(addons))
   .add('false', _ => (
@@ -109,6 +105,9 @@ const calcContainerStyle = origin => ({
   }[origin]
 })
 
+const nestedStory = storiesOf('nested', module).addDecorator(
+  themeDecorator(addons)
+)
 Object.keys(ActionMenu.origins).forEach(origin =>
   nestedStory.add(`origin ${origin}`, _ => (
     <div style={calcContainerStyle(origin)}>
@@ -245,5 +244,16 @@ storiesOf('link', module)
       <ActionMenu.Item href="https://duckduckgo.com">
         Links to web
       </ActionMenu.Item>
+    </ActionMenu>
+  ))
+
+storiesOf('disabled', module)
+  .addDecorator(themeDecorator(addons))
+  .add('item', _ => (
+    <ActionMenu>
+      <ActionMenu.Item>Enabled</ActionMenu.Item>
+      <ActionMenu.Item disabled>Disabled</ActionMenu.Item>
+      <ActionMenu.Item>Enabled</ActionMenu.Item>
+      <ActionMenu.Item disabled>Disabled</ActionMenu.Item>
     </ActionMenu>
   ))
