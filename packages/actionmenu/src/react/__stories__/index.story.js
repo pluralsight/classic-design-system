@@ -257,3 +257,15 @@ storiesOf('disabled', module)
       <ActionMenu.Item disabled>Disabled</ActionMenu.Item>
     </ActionMenu>
   ))
+  .add('links', _ => (
+    <ActionMenu>
+      <ActionMenu.Item href="https://duck.com">Enabled</ActionMenu.Item>
+      <ActionMenu.Item disabled href="https://duck.com">
+        Disabled
+      </ActionMenu.Item>
+      <ActionMenu.Item href="https://duck.com">Enabled</ActionMenu.Item>
+      <ActionMenu.Item disabled href="https://duck.com">
+        Disabled
+      </ActionMenu.Item>
+    </ActionMenu>
+  ))

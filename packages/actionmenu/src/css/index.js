@@ -120,7 +120,8 @@ export default {
 
   '.psds-actionmenu__item--disabled': {
     color: core.colors.gray02,
-    cursor: 'auto'
+    cursor: 'auto',
+    outline: 'none'
   },
 
   // __divider

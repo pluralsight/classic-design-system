@@ -146,6 +146,81 @@ exports[`Storyshots disabled item 1`] = `
 </div>
 `;
 
+exports[`Storyshots disabled links 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-1pg0ko5=""
+    onKeyDown={[Function]}
+    role="menu"
+  >
+    <div
+      data-css-13azwyo=""
+    >
+      <a
+        aria-haspopup={false}
+        data-css-1qr74j9=""
+        href="https://duck.com"
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        Enabled
+      </a>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <a
+        aria-haspopup={false}
+        data-css-a43kvs=""
+        href="https://duck.com"
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="-1"
+      >
+        Disabled
+      </a>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <a
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        href="https://duck.com"
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        Enabled
+      </a>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <a
+        aria-haspopup={false}
+        data-css-a43kvs=""
+        href="https://duck.com"
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="-1"
+      >
+        Disabled
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots dividers edge 1`] = `
 <div
   data-css-claeju=""

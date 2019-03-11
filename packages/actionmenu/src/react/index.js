@@ -257,7 +257,7 @@ class Item extends React.Component {
   }
   render() {
     const tagName = this.props.href ? 'a' : 'button'
-    const { icon, ...potentialValidHtmlProps } = this.props
+    const { href, icon, ...potentialValidHtmlProps } = this.props
     return (
       <div {...glamor.css(css['.psds-actionmenu__item-container'])}>
         {React.createElement(
@@ -265,6 +265,7 @@ class Item extends React.Component {
           {
             ...filterReactProps(potentialValidHtmlProps, { tagName }),
             'aria-haspopup': !!this.props.nested,
+            ...(!this.props.disabled ? { href: this.props.href } : null),
             ref: el => (this.item = el),
             onClick: this.props.onClick,
             onKeyDown: this.handleKeyDown,
