@@ -249,6 +249,17 @@ storiesOf('link', module)
 
 storiesOf('disabled', module)
   .addDecorator(themeDecorator(addons))
+  .add('single, disabled', _ => (
+    <ActionMenu>
+      <ActionMenu.Item disabled>Single, disabled</ActionMenu.Item>
+    </ActionMenu>
+  ))
+  .add('multiple, all disabled', _ => (
+    <ActionMenu>
+      <ActionMenu.Item disabled>Mult 1, disabled</ActionMenu.Item>
+      <ActionMenu.Item disabled>Mult 2, disabled</ActionMenu.Item>
+    </ActionMenu>
+  ))
   .add('item', _ => (
     <ActionMenu>
       <ActionMenu.Item>Enabled</ActionMenu.Item>
@@ -266,6 +277,32 @@ storiesOf('disabled', module)
       <ActionMenu.Item href="https://duck.com">Enabled</ActionMenu.Item>
       <ActionMenu.Item disabled href="https://duck.com">
         Disabled
+      </ActionMenu.Item>
+    </ActionMenu>
+  ))
+  .add('nested', _ => (
+    <ActionMenu>
+      <ActionMenu.Item>Enabled</ActionMenu.Item>
+      <ActionMenu.Item
+        disabled
+        nested={
+          <ActionMenu>
+            <ActionMenu.Item>Nest 1</ActionMenu.Item>
+            <ActionMenu.Item
+              nested={
+                <ActionMenu>
+                  <ActionMenu.Item>Nest nest 1-1</ActionMenu.Item>
+                  <ActionMenu.Item>Nest nest 1-2</ActionMenu.Item>
+                  <ActionMenu.Item>Nest nest 1-3</ActionMenu.Item>
+                </ActionMenu>
+              }
+            >
+              Nest 2
+            </ActionMenu.Item>
+          </ActionMenu>
+        }
+      >
+        Nested but disabled
       </ActionMenu.Item>
     </ActionMenu>
   ))

@@ -63,4 +63,14 @@ describe('#calcNextIndex', () => {
     const currentIndex = 2
     expect(calcNextIndex(children, direction, currentIndex)).toEqual(0)
   })
+  it('finds none enabled', () => {
+    const children = [
+      { disabled: true },
+      { disabled: true },
+      { disabled: true }
+    ]
+    const direction = 1
+    const currentIndex = -1
+    expect(calcNextIndex(children, direction, currentIndex)).toEqual(-1)
+  })
 })

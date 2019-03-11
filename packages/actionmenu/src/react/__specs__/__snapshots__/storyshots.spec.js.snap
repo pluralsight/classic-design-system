@@ -102,7 +102,7 @@ exports[`Storyshots disabled item 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-a43kvs=""
+        data-css-te33w8=""
         disabled={true}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -132,7 +132,7 @@ exports[`Storyshots disabled item 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-a43kvs=""
+        data-css-te33w8=""
         disabled={true}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -176,8 +176,7 @@ exports[`Storyshots disabled links 1`] = `
     >
       <a
         aria-haspopup={false}
-        data-css-a43kvs=""
-        href="https://duck.com"
+        data-css-te33w8=""
         onKeyDown={[Function]}
         onMouseOver={[Function]}
         role="menuitem"
@@ -207,8 +206,7 @@ exports[`Storyshots disabled links 1`] = `
     >
       <a
         aria-haspopup={false}
-        data-css-a43kvs=""
-        href="https://duck.com"
+        data-css-te33w8=""
         onKeyDown={[Function]}
         onMouseOver={[Function]}
         role="menuitem"
@@ -216,6 +214,135 @@ exports[`Storyshots disabled links 1`] = `
       >
         Disabled
       </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots disabled multiple, all disabled 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-1pg0ko5=""
+    onKeyDown={[Function]}
+    role="menu"
+  >
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-te33w8=""
+        disabled={true}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="-1"
+      >
+        Mult 1, disabled
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-te33w8=""
+        disabled={true}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="-1"
+      >
+        Mult 2, disabled
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots disabled nested 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-1pg0ko5=""
+    onKeyDown={[Function]}
+    role="menu"
+  >
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1qr74j9=""
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        Enabled
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={true}
+        data-css-1cqpicl=""
+        disabled={true}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="-1"
+      >
+        Nested but disabled
+        <div
+          data-css-14lvci6=""
+        >
+          <svg
+            height="9"
+            viewBox="0 0 4 9"
+            width="4"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 .33l3.657 4.15L0 8.634V.33"
+              data-css-c4d79v=""
+            />
+          </svg>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots disabled single, disabled 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-1pg0ko5=""
+    onKeyDown={[Function]}
+    role="menu"
+  >
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-te33w8=""
+        disabled={true}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="-1"
+      >
+        Single, disabled
+      </button>
     </div>
   </div>
 </div>

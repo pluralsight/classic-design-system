@@ -49,7 +49,13 @@ class ActionMenu extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      activeIndex: props.shouldFocusOnMount ? 0 : -1,
+      activeIndex: props.shouldFocusOnMount
+        ? calcNextIndex(
+            React.Children.map(this.props.children, c => c.props),
+            1,
+            -1
+          )
+        : -1,
       activeDirection: 'down',
       isKeyboarding: props.isKeyboarding
     }
