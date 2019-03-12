@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@4.0.0...@pluralsight/ps-design-system-actionmenu@4.1.0) (2019-03-12)
+
+
+### Features
+
+* **actionmenu:** disable link hrefs ([a4562e5](https://github.com/pluralsight/design-system/commit/a4562e5))
+* **actionmenu:** disabled item style and focus mgmt ([4b70c98](https://github.com/pluralsight/design-system/commit/4b70c98))
+* **actionmenu:** support case of all disabled items ([c7ff776](https://github.com/pluralsight/design-system/commit/c7ff776))
+
+
+
+
+
 # [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@3.2.2...@pluralsight/ps-design-system-actionmenu@4.0.0) (2019-03-04)
 
 
