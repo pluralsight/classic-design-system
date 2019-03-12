@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@11.0.0...@pluralsight/ps-design-system-icon@11.1.0) (2019-03-12)
+
+
+### Features
+
+* **icon:** add channel-add icon ([96f532b](https://github.com/pluralsight/design-system/commit/96f532b))
+
+
+
+
+
 # [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@10.0.1...@pluralsight/ps-design-system-icon@11.0.0) (2019-03-04)
 
 

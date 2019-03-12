@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-dropdown",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Design system components for dropdown",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,10 +21,10 @@
   },
   "keywords": [],
   "dependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^4.1.0",
+    "@pluralsight/ps-design-system-actionmenu": "^4.1.1",
     "@pluralsight/ps-design-system-core": "^4.4.2",
     "@pluralsight/ps-design-system-halo": "^3.0.0",
-    "@pluralsight/ps-design-system-icon": "^11.0.0",
+    "@pluralsight/ps-design-system-icon": "^11.1.0",
     "@pluralsight/ps-design-system-theme": "^2.0.0",
     "@pluralsight/ps-design-system-util": "^2.0.0",
     "prop-types": "^15.5.10"
