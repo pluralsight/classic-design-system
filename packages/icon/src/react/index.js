@@ -1,12 +1,11 @@
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-
-import css from '../css'
-import icons from '../js/icon-transformer'
-import * as vars from '../vars'
+import css from '../css/index.js'
+import icons from '../js/icon-transformer.js'
+import * as vars from '../vars/index.js'
 
 const style = {
   icon: ({ css: propCSS = {}, color, size }) =>
