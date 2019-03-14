@@ -62,6 +62,13 @@ export default withServerProps(_ => (
             ])
           ],
           'ActionMenu.Item': [
+            PropTypes.row([
+              'disabled',
+              'boolean',
+              null,
+              <code>false</code>,
+              'visually disabled, non-interactive'
+            ]),
             PropTypes.row(['href', 'string', null, null, 'anchor tag uri']),
             PropTypes.row([
               'icon',
@@ -301,6 +308,40 @@ export default withServerProps(_ => (
           behavior in tact.
         </em>
       </P>
+
+      <SectionHeading>Disabled Items</SectionHeading>
+      <P>
+        To keep items in the menu but make them disabled, mark with a{' '}
+        <Text.Code>disabled</Text.Code> prop.
+      </P>
+      <Example.React
+        includes={{ ActionMenu }}
+        outputStyle={{
+          height: `calc(200px + (2 * ${core.layout.spacingLarge}))`,
+          position: 'relative'
+        }}
+        outputChildStyle={{
+          position: 'relative',
+          height: '200px',
+          width: '100%',
+          padding: core.layout.spacingLarge
+        }}
+        codes={[
+          `
+<ActionMenu shouldFocusOnMount={false}>
+  <ActionMenu.Item>
+    Normal, enabled
+  </ActionMenu.Item>
+  <ActionMenu.Item disabled>
+    Present, but disabled
+  </ActionMenu.Item>
+  <ActionMenu.Item>
+    Normal, enabled
+  </ActionMenu.Item>
+</ActionMenu>
+`
+        ]}
+      />
     </Content>
   </Chrome>
 ))
