@@ -309,7 +309,8 @@ const MonospaceFont = _ => (
       it from{' '}
       <Link href="https://fonts.google.com/specimen/Source+Code+Pro">
         Google fonts
-      </Link>.
+      </Link>
+      .
     </P>
     <Code language="css">
       {`@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500’);`}
@@ -326,7 +327,8 @@ const MonospaceFont = _ => (
       consistent{' '}
       <Link href="/components/code#syntax-highlighting">
         syntax highlighting
-      </Link>.
+      </Link>
+      .
     </P>
     <style jsx>{`
       .box {
@@ -370,7 +372,7 @@ export default withServerProps(_ => (
         importing it from typography.com using Pluralsight's assigned CSS Key.
       </P>
       <Code lang="css">
-        @import url(https://cloud.typography.com/6966154/691568/css/fonts.css);
+        @import url(https://cloud.typography.com/6966154/6397212/css/fonts.css);
       </Code>
 
       <SectionHeading>Font family</SectionHeading>
@@ -404,7 +406,8 @@ export default withServerProps(_ => (
           target="_blank"
         >
           Source Code Pro
-        </Link>.
+        </Link>
+        .
       </P>
       <MonospaceFont />
     </Content>
