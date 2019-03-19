@@ -7,7 +7,7 @@ import Button from '@pluralsight/ps-design-system-button/react'
 import core from '@pluralsight/ps-design-system-core'
 import Link from '@pluralsight/ps-design-system-link/react'
 
-import { AsideLayout, EqualColumnLayout, PageHeadingLayout } from '..'
+import { AsideLayout, EqualColumnLayout, PageHeadingLayout } from '../index.js'
 
 const mockActions = [
   <Button key="action-1">Wow, an action</Button>,

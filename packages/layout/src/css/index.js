@@ -1,6 +1,6 @@
-import AAsideLayout from './aside-layout'
-import AEqualColumnLayout from './equal-column-layout'
-import APageHeadingLayout from './page-heading-layout'
+import AAsideLayout from './aside-layout.js'
+import AEqualColumnLayout from './equal-column-layout.js'
+import APageHeadingLayout from './page-heading-layout.js'
 
 export const AsideLayout = AAsideLayout
 export const EqualColumnLayout = AEqualColumnLayout

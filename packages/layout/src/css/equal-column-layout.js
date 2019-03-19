@@ -1,14 +1,14 @@
 import core from '@pluralsight/ps-design-system-core'
 
-import { EqualColumnLayout as vars } from '../vars'
+import { EqualColumnLayout as vars } from '../vars/index.js'
 
 export default {
-  ['.psds-equal-column-layout']: {
+  '.psds-equal-column-layout': {
     display: 'flex',
     flexWrap: 'wrap',
     margin: `calc(${core.layout.spacingLarge} / -2)`
   },
-  ['.psds-equal-column-layout__column']: {
+  '.psds-equal-column-layout__column': {
     margin: `calc(${core.layout.spacingLarge} / 2)`
   },
   [`.psds-equal-column-layout__column--count-${vars.counts.two}`]: {

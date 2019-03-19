@@ -2,8 +2,8 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { AsideLayout as vars } from '../vars'
-import { AsideLayout as css } from '../css'
+import { AsideLayout as vars } from '../vars/index.js'
+import { AsideLayout as css } from '../css/index.js'
 
 const styleLayout = props =>
   glamor.css(
@@ -51,12 +51,17 @@ const AsideLayout = props => (
   </div>
 )
 
-const Aside = props => (
-  <div {...styleAside(props)} {...rmNonHtmlProps(props)}>
-    {props.children}
-  </div>
-)
+function Aside(props) {
+  return (
+    <div {...styleAside(props)} {...rmNonHtmlProps(props)}>
+      {props.children}
+    </div>
+  )
+}
 Aside.displayName = 'AsideLayout.Aside'
+Aside.propTypes = {
+  children: PropTypes.any
+}
 
 const Main = props => (
   <div {...styleMain(props)} {...props}>
@@ -64,6 +69,9 @@ const Main = props => (
   </div>
 )
 Main.displayName = 'AsideLayout.Main'
+Main.propTypes = {
+  children: PropTypes.any
+}
 
 AsideLayout.displayName = 'AsideLayout'
 
@@ -75,7 +83,9 @@ AsideLayout.Main = Main
 AsideLayout.propTypes = {
   main: PropTypes.element.isRequired, // AsideLayout.Main
   aside: PropTypes.element.isRequired, // AsideLayout.Aside
-  asidePosition: PropTypes.oneOf(Object.keys(vars.asidePositions))
+  asidePosition: PropTypes.oneOf(
+    Object.keys(vars.asidePositions).map(key => vars.asidePositions[key])
+  )
 }
 AsideLayout.defaultProps = {
   asidePosition: vars.asidePositions.first
