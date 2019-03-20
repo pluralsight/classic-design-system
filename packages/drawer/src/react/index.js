@@ -97,13 +97,13 @@ class Drawer extends React.Component {
   }
 
   handleClick(evt) {
-    if (this.isClickOnDrawerBase(evt)) this.toggle()
+    if (this.isClickOnDrawerBase(evt)) this.toggle(evt)
   }
 
-  toggle() {
+  toggle(evt) {
     const isOpen = !this.isOpen
 
-    if (this.props.onToggle) this.props.onToggle(isOpen)
+    if (this.props.onToggle) this.props.onToggle(isOpen, evt)
 
     if (!this.isControlledByProps) this.setState({ isOpen })
   }

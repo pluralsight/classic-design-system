@@ -186,6 +186,94 @@ exports[`Storyshots drawer default 1`] = `
 </div>
 `;
 
+exports[`Storyshots drawer prevent toggle 1`] = `
+<div
+  style={
+    Object {
+      "padding": 48,
+    }
+  }
+>
+  <div>
+    <div
+      data-css-1fq8nx6=""
+    >
+      <div
+        data-css-1oot5vc=""
+        onClick={[Function]}
+      >
+        <div
+          data-css-euzj8=""
+        >
+          <div
+            style={
+              Object {
+                "padding": "10px 0",
+              }
+            }
+          >
+            <p
+              data-css-145tgfu=""
+            >
+              Drawer Base Here
+            </p>
+          </div>
+        </div>
+        <div
+          data-css-qs2rg7=""
+        >
+          <button
+            aria-label="Expand"
+            data-css-7jbmom=""
+            onClick={[Function]}
+          >
+            <div
+              data-css-1byjzqg=""
+            >
+              <div
+                data-css-otejxm=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        data-css-1i2htk9=""
+      >
+        <div
+          data-css-1j3g0qd=""
+        >
+          <div
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <p
+              data-css-145tgfu=""
+            >
+              Drawer Base Here
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots drawer row component with actions 1`] = `
 <div
   style={
