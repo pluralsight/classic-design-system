@@ -3,7 +3,7 @@ import Text from '@pluralsight/ps-design-system-text/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { PageHeadingLayout as css } from '../css'
+import { PageHeadingLayout as css } from '../css/index.js'
 
 const styles = {
   actions: _ =>
@@ -33,25 +33,25 @@ const styles = {
   layout: _ => glamor.css(css['.psds-page-heading-layout'])
 }
 
-const PageHeadingLayout = props => (
-  <div {...styles.layout(props)}>
-    <div {...styles.heading(props)}>
-      <Text.Heading size={Text.Heading.sizes.large}>
-        {props.heading}
-      </Text.Heading>
-      {Array.isArray(props.actions) &&
-        props.actions.length > 0 && (
+function PageHeadingLayout(props) {
+  return (
+    <div {...styles.layout(props)}>
+      <div {...styles.heading(props)}>
+        <Text.Heading size={Text.Heading.sizes.large}>
+          {props.heading}
+        </Text.Heading>
+        {Array.isArray(props.actions) && props.actions.length > 0 && (
           <div {...styles.actions(props)}>{props.actions}</div>
         )}
+      </div>
+      {props.children}
     </div>
-    {props.children}
-  </div>
-)
-
+  )
+}
 PageHeadingLayout.displayName = 'PageHeadingLayout'
-
 PageHeadingLayout.propTypes = {
   actions: PropTypes.arrayOf(PropTypes.element),
+  children: PropTypes.any,
   heading: PropTypes.element.isRequired
 }
 PageHeadingLayout.defaultProps = {

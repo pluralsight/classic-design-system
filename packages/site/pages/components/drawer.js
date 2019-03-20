@@ -1,6 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import Drawer from '@pluralsight/ps-design-system-drawer/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import React from 'react'
 import Row from '@pluralsight/ps-design-system-row/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
@@ -9,8 +10,6 @@ import {
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
@@ -102,6 +101,9 @@ const PinkBox = props => (
     `}</style>
   </div>
 )
+PinkBox.propTypes = {
+  children: PropTypes.any
+}
 
 export default withServerProps(_ => (
   <Chrome>
@@ -143,7 +145,7 @@ export default withServerProps(_ => (
           ]),
           PropTypes.row([
             'onToggle',
-            <code>boolean => ()</code>,
+            <code>(boolean, Event) => ()</code>,
             null,
             null,
             'triggered when the drawer opens or closes'

@@ -2,8 +2,8 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { EqualColumnLayout as vars } from '../vars'
-import { EqualColumnLayout as css } from '../css'
+import { EqualColumnLayout as vars } from '../vars/index.js'
+import { EqualColumnLayout as css } from '../css/index.js'
 
 const styleLayout = props => glamor.css(css['.psds-equal-column-layout'])
 
@@ -24,7 +24,7 @@ const rmNonHtmlProps = props => {
   return rest
 }
 
-const EqualColumnLayout = props => {
+function EqualColumnLayout(props) {
   const useCustomMarkup = React.Children.count(props.children) === 1
   const parentProps = {
     ...styleLayout(props),
@@ -40,12 +40,10 @@ const EqualColumnLayout = props => {
     <div {...parentProps}>{children}</div>
   )
 }
-
 EqualColumnLayout.displayName = 'EqualColumnLayout'
-
 EqualColumnLayout.counts = vars.counts
-
 EqualColumnLayout.propTypes = {
+  children: PropTypes.any,
   count: PropTypes.oneOf(Object.keys(vars.counts).map(key => vars.counts[key]))
 }
 EqualColumnLayout.defaultProps = {
