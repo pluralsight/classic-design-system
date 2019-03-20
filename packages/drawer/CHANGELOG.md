@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@2.0.1...@pluralsight/ps-design-system-drawer@2.1.0) (2019-03-20)
+
+
+### Features
+
+* **drawer:** add event to 2nd param in onToggle ([a680529](https://github.com/pluralsight/design-system/commit/a680529))
+
+
+
+
+
 ## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@2.0.0...@pluralsight/ps-design-system-drawer@2.0.1) (2019-03-12)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-drawer
