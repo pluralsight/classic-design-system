@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@11.1.1...@pluralsight/ps-design-system-icon@11.2.0) (2019-04-08)
+
+
+### Features
+
+* **icon:** new video icon ([46e7d4e](https://github.com/pluralsight/design-system/commit/46e7d4e))
+
+
+
+
+
 ## [11.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@11.1.0...@pluralsight/ps-design-system-icon@11.1.1) (2019-03-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon
