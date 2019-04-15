@@ -153,10 +153,10 @@ DialogWrapper.propTypes = {
   disableCloseButton: PropTypes.bool,
   disableCloseOnEscape: PropTypes.bool,
   disableCloseOnOverlayClick: PropTypes.bool,
-  modal: PropTypes.bool,
   disableFocusOnMount: PropTypes.bool,
-  tailPosition: PropTypes.oneOf(Object.keys(vars.tailPositions)),
-  onClose: PropTypes.func
+  modal: PropTypes.bool,
+  onClose: PropTypes.func,
+  tailPosition: PropTypes.oneOf(Object.keys(vars.tailPositions))
 }
 
 DialogWrapper.defaultProps = {

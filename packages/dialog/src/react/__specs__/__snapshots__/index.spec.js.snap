@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dialog exports tailPositions 1`] = `
+Object {
+  "bottomCenter": "bottomCenter",
+  "bottomLeft": "bottomLeft",
+  "bottomRight": "bottomRight",
+  "topCenter": "topCenter",
+  "topLeft": "topLeft",
+  "topRight": "topRight",
+}
+`;
