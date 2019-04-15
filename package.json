@@ -61,7 +61,7 @@
   "dependencies": {
     "babel-eslint": "^10.0.1",
     "glamor": "^2.20.0",
-    "react": "^16.3.0",
+    "react": "^16.8.6",
     "react-dom": "^16.3.0"
   },
   "devDependencies": {
@@ -90,6 +90,7 @@
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-hooks": "^1.6.0",
     "eslint-plugin-standard": "^4.0.0",
     "format-package": "^4.5.0",
     "gulp": "^3.9.1",

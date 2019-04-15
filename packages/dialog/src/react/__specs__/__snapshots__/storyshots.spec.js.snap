@@ -52,7 +52,6 @@ exports[`Storyshots modal no click overlay 1`] = `
         . Halvah icing pudding pastry ice cream gingerbread tart candy canes dragée. Pie gingerbread icing.
       </p>
       <div
-        aria-label="Storybook Modal"
         data-css-1v49ac=""
         id="psds-dialog__overlay"
         onClick={[Function]}
@@ -61,9 +60,10 @@ exports[`Storyshots modal no click overlay 1`] = `
         <div
           data-css-xf9ugk=""
           onKeyDown={[Function]}
-          onKeyUp={[Function]}
         >
-          <div>
+          <div
+            aria-label="Storybook Modal"
+          >
             <button
               aria-label="Close dialog"
               data-css-1uhqcv0=""
@@ -212,7 +212,6 @@ exports[`Storyshots modal no close button 1`] = `
         . Halvah icing pudding pastry ice cream gingerbread tart candy canes dragée. Pie gingerbread icing.
       </p>
       <div
-        aria-label="Storybook Modal"
         data-css-1v49ac=""
         id="psds-dialog__overlay"
         onClick={[Function]}
@@ -221,9 +220,10 @@ exports[`Storyshots modal no close button 1`] = `
         <div
           data-css-xf9ugk=""
           onKeyDown={[Function]}
-          onKeyUp={[Function]}
         >
-          <div>
+          <div
+            aria-label="Storybook Modal"
+          >
             <h1
               data-css-7941k5=""
               size="large"
@@ -356,7 +356,6 @@ exports[`Storyshots modal no escape key 1`] = `
         . Halvah icing pudding pastry ice cream gingerbread tart candy canes dragée. Pie gingerbread icing.
       </p>
       <div
-        aria-label="Storybook Modal"
         data-css-1v49ac=""
         id="psds-dialog__overlay"
         onClick={[Function]}
@@ -366,7 +365,9 @@ exports[`Storyshots modal no escape key 1`] = `
           data-css-xf9ugk=""
           onKeyDown={[Function]}
         >
-          <div>
+          <div
+            aria-label="Storybook Modal"
+          >
             <button
               aria-label="Close dialog"
               data-css-1uhqcv0=""
@@ -515,7 +516,6 @@ exports[`Storyshots modal no focus on mount 1`] = `
         . Halvah icing pudding pastry ice cream gingerbread tart candy canes dragée. Pie gingerbread icing.
       </p>
       <div
-        aria-label="Storybook Modal"
         data-css-1v49ac=""
         id="psds-dialog__overlay"
         onClick={[Function]}
@@ -524,9 +524,10 @@ exports[`Storyshots modal no focus on mount 1`] = `
         <div
           data-css-xf9ugk=""
           onKeyDown={[Function]}
-          onKeyUp={[Function]}
         >
-          <div>
+          <div
+            aria-label="Storybook Modal"
+          >
             <button
               aria-label="Close dialog"
               data-css-1uhqcv0=""
@@ -731,7 +732,6 @@ exports[`Storyshots modal with close button 1`] = `
         . Halvah icing pudding pastry ice cream gingerbread tart candy canes dragée. Pie gingerbread icing.
       </p>
       <div
-        aria-label="Storybook Modal"
         data-css-1v49ac=""
         id="psds-dialog__overlay"
         onClick={[Function]}
@@ -740,9 +740,10 @@ exports[`Storyshots modal with close button 1`] = `
         <div
           data-css-xf9ugk=""
           onKeyDown={[Function]}
-          onKeyUp={[Function]}
         >
-          <div>
+          <div
+            aria-label="Storybook Modal"
+          >
             <button
               aria-label="Close dialog"
               data-css-1uhqcv0=""
@@ -853,7 +854,6 @@ exports[`Storyshots onClose with onClose 1`] = `
     <div
       data-css-2hqpvr=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
     >
       <div>
         <button

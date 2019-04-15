@@ -174,7 +174,7 @@ storiesOf('modal', module)
   .add('no focusable child element, no lock', _ => (
     <ModalStory modalDefaultsOpen={false}>
       {_ => (
-        <Dialog>
+        <Dialog aria-label="Storybook Modal" modal>
           <Text.Heading>
             <h1>Wowzers, a Dialog</h1>
           </Text.Heading>

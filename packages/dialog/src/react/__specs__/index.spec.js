@@ -36,7 +36,7 @@ describe('Dialog', () => {
       </Dialog>
     )
     const child = await waitForElement(() => getByTestId('mock-child'))
-    fireEvent.keyUp(child, { keyCode: 27 })
+    fireEvent.keyUp(child, { key: 'Escape' })
 
     expect(onClose).toHaveBeenCalled()
   })
@@ -51,7 +51,7 @@ describe('Dialog', () => {
         </Dialog>
       )
       const child = await waitForElement(() => getByTestId('mock-child'))
-      fireEvent.keyUp(child, { keyCode: 27 })
+      fireEvent.keyUp(child, { key: 'Escape' })
 
       expect(onClose).not.toHaveBeenCalled()
     })
@@ -68,7 +68,7 @@ describe('Dialog', () => {
       )
 
       const overlay = await waitForElement(() =>
-        container.querySelector('[aria-label="test-modal-label"]')
+        container.querySelector('#psds-dialog__overlay')
       )
       fireEvent.click(overlay)
 
@@ -92,7 +92,7 @@ describe('Dialog', () => {
       )
 
       const overlay = await waitForElement(() =>
-        container.querySelector('[aria-label="test-modal-label"]')
+        container.querySelector('#psds-dialog__overlay')
       )
       fireEvent.click(overlay)
 

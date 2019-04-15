@@ -92,8 +92,8 @@ export default {
     width: '24px',
     fill: core.colors.gray03
   },
-  // __overlay
-  [`.psds-dialog__overlay`]: {
+  // __backdrop
+  [`.psds-dialog__backdrop`]: {
     position: 'fixed',
     top: 0,
     left: 0,
