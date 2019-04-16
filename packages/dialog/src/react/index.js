@@ -10,8 +10,7 @@ import css from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 import useOnKeyUp from './use-onkeyup.js'
-
-const BACKDROP_ID = 'psds-dialog__overlay'
+import useOnClickOutside from './use-onclick-outside'
 
 const isFunction = fn => typeof fn === 'function'
 
@@ -44,23 +43,23 @@ export default function Dialog(props) {
   const {
     disableCloseButton,
     disableCloseOnEscape,
-    disableCloseOnOverlayClick,
+    disableCloseOnOutsideClick,
     modal,
     onClose
   } = props
+
+  useOnClickOutside(ref, evt => {
+    if (disableCloseOnOutsideClick || !isFunction(onClose)) return
+    onClose(evt)
+  })
 
   useOnKeyUp('Escape', evt => {
     if (disableCloseOnEscape || !isFunction(onClose)) return
     onClose(evt)
   })
 
-  const handleBackdropClick = evt => {
-    if (disableCloseOnOverlayClick || !isFunction(onClose)) return
-    if (evt.target.id === BACKDROP_ID) onClose(evt)
-  }
-
   const conditionallyRenderAsModal = modal
-    ? children => <Backdrop onClick={handleBackdropClick}>{children}</Backdrop>
+    ? children => <Backdrop>{children}</Backdrop>
     : children => children
 
   const showCloseBtn = !disableCloseButton && isFunction(onClose)
@@ -85,7 +84,7 @@ Dialog.propTypes = {
   children: PropTypes.node,
   disableCloseButton: PropTypes.bool,
   disableCloseOnEscape: PropTypes.bool,
-  disableCloseOnOverlayClick: PropTypes.bool,
+  disableCloseOnOutsideClick: PropTypes.bool,
   disableFocusOnMount: PropTypes.bool,
   modal: PropTypes.bool,
   onClose: PropTypes.func,
@@ -95,7 +94,7 @@ Dialog.propTypes = {
 Dialog.defaultProps = {
   disableCloseButton: false,
   disableCloseOnEscape: false,
-  disableCloseOnOverlayClick: false,
+  disableCloseOnOutsideClick: false,
   disableFocusOnMount: false,
   modal: false
 }
@@ -104,12 +103,7 @@ Dialog.tailPositions = vars.tailPositions
 export const tailPositions = Dialog.tailPositions
 
 const Backdrop = props => (
-  <div
-    id={BACKDROP_ID}
-    role="region"
-    {...styles.backdrop(props)}
-    {...filterReactProps(props)}
-  />
+  <div role="region" {...styles.backdrop(props)} {...filterReactProps(props)} />
 )
 
 const CloseButton = props => (

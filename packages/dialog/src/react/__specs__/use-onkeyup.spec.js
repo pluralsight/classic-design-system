@@ -1,7 +1,7 @@
 import React from 'react'
-import { cleanup, fireEvent, render } from 'react-testing-library' // import { renderHook, cleanup, act } from 'react-hooks-testing-library'
+import { cleanup, fireEvent, render } from 'react-testing-library'
 
-import useKeyUp from '../use-onkeyup.js'
+import useOnKeyUp from '../use-onkeyup.js'
 
 describe('useOnKeyUp', () => {
   afterEach(cleanup)
@@ -14,7 +14,7 @@ describe('useOnKeyUp', () => {
     handler = jest.fn()
 
     const TestHook = props => {
-      useKeyUp(targetKey, handler)
+      useOnKeyUp(targetKey, handler)
       return <div {...props} />
     }
 

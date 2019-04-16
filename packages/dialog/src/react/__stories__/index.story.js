@@ -147,11 +147,11 @@ storiesOf('modal', module)
       )}
     </ModalStory>
   ))
-  .add('no click overlay', _ => (
+  .add('no outside click', _ => (
     <ModalStory>
       {({ close }) => (
         <Content
-          disableCloseOnOverlayClick
+          disableCloseOnOutsideClick
           onClose={close}
           aria-label="Storybook Modal"
           modal

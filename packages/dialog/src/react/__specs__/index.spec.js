@@ -58,43 +58,35 @@ describe('Dialog', () => {
   })
 
   describe('when `modal` is true', () => {
-    it('triggers closes when overlay is clicked', async () => {
+    it('triggers closes on outside click', () => {
       const onClose = jest.fn()
 
-      const { container } = render(
+      render(
         <Dialog onClose={onClose} modal aria-label="test-modal-label">
           <MockChild />
         </Dialog>
       )
-
-      const overlay = await waitForElement(() =>
-        container.querySelector('#psds-dialog__overlay')
-      )
-      fireEvent.click(overlay)
+      fireEvent.click(document)
 
       expect(onClose).toHaveBeenCalled()
     })
   })
 
-  describe('when `modal` and `disableCloseOnOverlayClick` are true', () => {
-    it('does NOT trigger close when overlay is clicked', async () => {
+  describe('when `modal` and `disableCloseOnOutsideClick` are true', () => {
+    it('does NOT trigger closes on outside click', () => {
       const onClose = jest.fn()
 
-      const { container } = render(
+      render(
         <Dialog
-          aria-label="test-modal-label"
-          disableCloseOnOverlayClick
-          modal
+          disableCloseOnOutsideClick
           onClose={onClose}
+          modal
+          aria-label="test-modal-label"
         >
           <MockChild />
         </Dialog>
       )
-
-      const overlay = await waitForElement(() =>
-        container.querySelector('#psds-dialog__overlay')
-      )
-      fireEvent.click(overlay)
+      fireEvent.click(document)
 
       expect(onClose).not.toHaveBeenCalled()
     })
