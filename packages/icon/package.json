@@ -27,7 +27,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.4.2",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.3",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.7.0"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^3.0.24",
