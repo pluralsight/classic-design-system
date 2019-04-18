@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-avatar",
-  "version": "3.0.0",
+  "version": "3.0.2",
   "description": "Design System component for avatar ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -27,7 +27,7 @@
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^3.0.24",
     "glamor": "^2.20.0",
-    "react": ">=0.16.3 < 17.0.0"
+    "react": ">=16.3.0 < 17.0.0"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.9.2",

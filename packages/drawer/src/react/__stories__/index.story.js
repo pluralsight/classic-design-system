@@ -63,6 +63,37 @@ class ControlledDrawerStory extends React.Component {
   }
 }
 
+class PreventToggleDrawerStory extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { isOpen: false }
+    this.handleToggle = this.handleToggle.bind(this)
+  }
+  handleToggle(isOpen, evt) {
+    const isCaret =
+      evt &&
+      evt.target &&
+      evt.target.attributes['aria-label'] &&
+      evt.target.attributes['aria-label'].value === 'caret down icon'
+    if (isCaret) {
+      this.setState({ isOpen })
+    }
+  }
+  render() {
+    return (
+      <div>
+        <Drawer
+          base={<DrawerBase />}
+          isOpen={this.state.isOpen}
+          onToggle={this.handleToggle}
+        >
+          <DrawerContent />
+        </Drawer>
+      </div>
+    )
+  }
+}
+
 class OnToggleDrawerStory extends React.Component {
   constructor(props) {
     super(props)
@@ -209,3 +240,4 @@ storiesOf('drawer', module)
       <DrawerContent />
     </Drawer>
   ))
+  .add('prevent toggle', () => <PreventToggleDrawerStory />)

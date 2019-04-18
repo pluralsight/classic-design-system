@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-banner",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "Design System component for banner ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -22,14 +22,14 @@
   "keywords": [],
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.4.2",
-    "@pluralsight/ps-design-system-icon": "^11.1.0",
-    "@pluralsight/ps-design-system-link": "^6.0.0",
+    "@pluralsight/ps-design-system-icon": "^11.2.0",
+    "@pluralsight/ps-design-system-link": "^6.0.1",
     "prop-types": "^15.7.0"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^3.0.24",
     "glamor": "^2.20.0",
-    "react": ">=0.16.3 < 17.0.0"
+    "react": ">=16.3.0 < 17.0.0"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.9.2",

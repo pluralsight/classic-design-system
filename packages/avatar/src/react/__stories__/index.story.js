@@ -70,3 +70,23 @@ storyInitials.add('alpha-order names w/ varied colors', () => (
     <Avatar name="Brian O'Mally" src="https://example.com/image.jpg" />
   </div>
 ))
+
+storiesOf('Image cases', module)
+  .add('tall, thin', () => (
+    <Avatar
+      name={'Will Ferrill'}
+      src="https://akns-images.eonline.com/eol_images/Entire_Site/2010330/293.WillFerrell.tg.043010.jpg"
+    />
+  ))
+  .add('flat, long', () => (
+    <Avatar
+      name="Chris Rock"
+      src="https://cdn1.thr.com/sites/default/files/2019/03/chrisrocknaacp.jpg"
+    />
+  ))
+  .add('square', () => (
+    <Avatar
+      name="Jake Trentsky"
+      src="https://gravatar.com/avatar/63a1fa126f541c0f0ecf1d74f7a40640?s=320&r=g"
+    />
+  ))

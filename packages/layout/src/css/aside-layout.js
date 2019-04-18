@@ -1,9 +1,9 @@
 import core from '@pluralsight/ps-design-system-core'
 
-import { AsideLayout as vars } from '../vars'
+import { AsideLayout as vars } from '../vars/index.js'
 
 export default {
-  ['.psds-aside-layout']: {
+  '.psds-aside-layout': {
     display: 'flex'
   },
   [`.psds-aside-layout--aside-position-${vars.asidePositions.first}`]: {
@@ -25,7 +25,7 @@ export default {
     [`.psds-aside-layout--aside-position-${vars.asidePositions.last}`]: {
       flexDirection: 'row-reverse'
     },
-    ['.psds-aside-layout__aside']: {
+    '.psds-aside-layout__aside': {
       width: 'calc(25%)'
     },
     [`.psds-aside-layout__aside--aside-position-${
@@ -38,7 +38,7 @@ export default {
       marginTop: 0,
       marginLeft: core.layout.spacingLarge
     },
-    ['.psds-aside-layout__main']: {
+    '.psds-aside-layout__main': {
       width: 'calc(75%)'
     }
   }
