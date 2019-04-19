@@ -89,6 +89,7 @@ const titleStory = storiesOf('title', module)
       }
     />
   ))
+
 Object.keys(Row.sizes).forEach(size =>
   titleStory.add(`${size} long title`, _ => (
     <Row
@@ -99,6 +100,31 @@ Object.keys(Row.sizes).forEach(size =>
     />
   ))
 )
+
+for (const num of [2, 3, 4]) {
+  const longTitle = `We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy.`
+
+  titleStory.add(`truncate to ${num} lines`, _ => (
+    <div
+      style={{
+        maxWidth: 400,
+        outline: '1px solid red',
+        padding: `10px 20px`
+      }}
+    >
+      <Row title={longTitle} titleMaxLines={num} />
+
+      <Row
+        title={
+          <Row.TextLink>
+            <a href="http://google.com">{longTitle}</a>
+          </Row.TextLink>
+        }
+        titleMaxLines={num}
+      />
+    </div>
+  ))
+}
 
 const progressStory = storiesOf('progress', module)
 ;[0, 66.6667, 100].forEach(progress =>
