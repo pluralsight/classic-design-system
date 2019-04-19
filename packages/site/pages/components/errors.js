@@ -1,4 +1,5 @@
-import core from '@pluralsight/ps-design-system-core'
+import React from 'react'
+
 import {
   ForbiddenErrorPage,
   NotFoundErrorPage,
@@ -11,7 +12,6 @@ import {
   Code,
   Content,
   Example,
-  Heading,
   Intro,
   P,
   PageHeading,
@@ -91,7 +91,7 @@ export default withServerProps(_ => (
             'action',
             'string',
             null,
-            <code>/library/search</code>,
+            <code>/search</code>,
             <span>
               Search form destination; handles <code>q</code> query string
             </span>
