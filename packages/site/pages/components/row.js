@@ -171,11 +171,18 @@ export default withServerProps(_ => (
             PropTypes.row([
               'title',
               <span>
-                <code>Row.TextLink > a > Row.Text</code> | <code>Row.Text</code>
+                string | <code>Row.TextLink > a > string</code>
               </span>,
               true,
               null,
               'row title or linked title'
+            ]),
+            PropTypes.row([
+              'truncatedTitle',
+              'boolean',
+              null,
+              <code>false</code>,
+              'limit title to 2 lines'
             ])
           ],
           'Row.Action': [
