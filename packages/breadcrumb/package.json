@@ -23,7 +23,7 @@
     "@pluralsight/ps-design-system-button": "^11.0.3",
     "@pluralsight/ps-design-system-core": "^4.4.2",
     "@pluralsight/ps-design-system-icon": "^11.2.0",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.7.0"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^3.0.24",
