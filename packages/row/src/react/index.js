@@ -226,7 +226,7 @@ const Text = props => <span {...filterReactProps(props, { tagName: 'span' })} />
 Text.displayName = 'Row.Text'
 
 const TextLink = withTheme(props => {
-  const { children, titleMaxLines } = props
+  const { children, truncated } = props
 
   const anchor = React.Children.only(children)
   const anchorText = anchor.props.children
@@ -239,8 +239,8 @@ const TextLink = withTheme(props => {
     >
       <a {...anchor.props}>
         <ConditionalWrap
-          shouldWrap={!!titleMaxLines && childIsString}
-          wrapper={c => <Shave lines={titleMaxLines}>{c}</Shave>}
+          shouldWrap={truncated && childIsString}
+          wrapper={c => <Shave lines={2}>{c}</Shave>}
         >
           {anchorText}
         </ConditionalWrap>
@@ -249,19 +249,22 @@ const TextLink = withTheme(props => {
   )
 })
 TextLink.displayName = 'Row.TextLink'
+TextLink.defaultProps = {
+  truncated: false
+}
 TextLink.propTypes = {
-  children: PropTypes.oneOfType([elementOfType('a')]),
-  titleMaxLines: PropTypes.number
+  children: PropTypes.oneOfType([elementOfType('a')]).isRequired,
+  truncated: PropTypes.bool
 }
 
-const Title = withTheme(({ titleMaxLines, children, ...rest }) => {
+const Title = withTheme(({ truncated, children, ...rest }) => {
   const childIsString = typeof children === 'string'
 
-  const wrapAsLink = c => React.cloneElement(c, { titleMaxLines })
+  const wrapAsLink = c => React.cloneElement(c, { truncated })
   const wrapWithShave = child => (
     <ConditionalWrap
-      shouldWrap={!!titleMaxLines}
-      wrapper={c => <Shave lines={titleMaxLines}>{c}</Shave>}
+      shouldWrap={truncated}
+      wrapper={c => <Shave lines={2}>{c}</Shave>}
     >
       {child}
     </ConditionalWrap>
@@ -273,13 +276,12 @@ const Title = withTheme(({ titleMaxLines, children, ...rest }) => {
     </div>
   )
 })
+Title.defaultProps = {
+  truncated: false
+}
 Title.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.string,
-    elementOfType(Text),
-    elementOfType(TextLink)
-  ]),
-  titleMaxLines: PropTypes.number
+  children: PropTypes.oneOfType([PropTypes.string, elementOfType(TextLink)]),
+  truncated: PropTypes.bool
 }
 
 const Words = props => (
@@ -372,12 +374,12 @@ renderProgress.propTypes = {
 
 // NOTE: the `title` prop clashes with a native html attr so we're exclude it
 //       from being mistakenly used in any child component
-const Row = ({ title, titleMaxLines, ...props }) => (
+const Row = ({ title, titleTruncated, ...props }) => (
   <div {...styles.row(props)} {...filterReactProps(props)}>
     {renderOverlays(props)}
 
     <Words image={props.image} size={props.size} actionBar={props.actionBar}>
-      <Title size={props.size} titleMaxLines={titleMaxLines}>
+      <Title size={props.size} truncated={titleTruncated}>
         {title}
       </Title>
 
@@ -420,7 +422,7 @@ Row.propTypes = {
     elementOfType(Text),
     elementOfType(TextLink)
   ]),
-  titleMaxLines: PropTypes.number
+  titleTruncated: PropTypes.bool
 }
 
 Row.defaultProps = {

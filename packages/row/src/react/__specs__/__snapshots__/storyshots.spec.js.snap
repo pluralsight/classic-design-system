@@ -2074,6 +2074,53 @@ exports[`Storyshots title link 1`] = `
 </div>
 `;
 
+exports[`Storyshots title link truncated 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "margin": "24px auto",
+        "maxWidth": "calc(100vw - 64px)",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "maxWidth": 400,
+        }
+      }
+    >
+      <div
+        data-css-vl7fes=""
+      >
+        <div
+          data-css-1tiyrld=""
+        >
+          <div
+            data-css-1jlgfae=""
+          >
+            <span
+              data-css-1le2bq0=""
+            >
+              <a
+                href="http://google.com"
+              >
+                <div>
+                  We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy.
+                </div>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots title medium long title 1`] = `
 <div
   data-css-claeju=""
@@ -2186,7 +2233,7 @@ exports[`Storyshots title string 1`] = `
 </div>
 `;
 
-exports[`Storyshots title truncate to 2 lines 1`] = `
+exports[`Storyshots title string truncated 1`] = `
 <div
   data-css-claeju=""
 >
@@ -2202,8 +2249,6 @@ exports[`Storyshots title truncate to 2 lines 1`] = `
       style={
         Object {
           "maxWidth": 400,
-          "outline": "1px solid red",
-          "padding": "10px 20px",
         }
       }
     >
@@ -2219,157 +2264,6 @@ exports[`Storyshots title truncate to 2 lines 1`] = `
             <div>
               We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy.
             </div>
-          </div>
-        </div>
-      </div>
-      <div
-        data-css-vl7fes=""
-      >
-        <div
-          data-css-1tiyrld=""
-        >
-          <div
-            data-css-1jlgfae=""
-          >
-            <span
-              data-css-1le2bq0=""
-            >
-              <a
-                href="http://google.com"
-              >
-                <div>
-                  We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy.
-                </div>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots title truncate to 3 lines 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
-  >
-    <div
-      style={
-        Object {
-          "maxWidth": 400,
-          "outline": "1px solid red",
-          "padding": "10px 20px",
-        }
-      }
-    >
-      <div
-        data-css-vl7fes=""
-      >
-        <div
-          data-css-1tiyrld=""
-        >
-          <div
-            data-css-1jlgfae=""
-          >
-            <div>
-              We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        data-css-vl7fes=""
-      >
-        <div
-          data-css-1tiyrld=""
-        >
-          <div
-            data-css-1jlgfae=""
-          >
-            <span
-              data-css-1le2bq0=""
-            >
-              <a
-                href="http://google.com"
-              >
-                <div>
-                  We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy.
-                </div>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots title truncate to 4 lines 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
-  >
-    <div
-      style={
-        Object {
-          "maxWidth": 400,
-          "outline": "1px solid red",
-          "padding": "10px 20px",
-        }
-      }
-    >
-      <div
-        data-css-vl7fes=""
-      >
-        <div
-          data-css-1tiyrld=""
-        >
-          <div
-            data-css-1jlgfae=""
-          >
-            <div>
-              We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        data-css-vl7fes=""
-      >
-        <div
-          data-css-1tiyrld=""
-        >
-          <div
-            data-css-1jlgfae=""
-          >
-            <span
-              data-css-1le2bq0=""
-            >
-              <a
-                href="http://google.com"
-              >
-                <div>
-                  We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy.
-                </div>
-              </a>
-            </span>
           </div>
         </div>
       </div>
