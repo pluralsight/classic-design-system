@@ -9,13 +9,10 @@ class Shave extends React.Component {
   constructor(props) {
     super(props)
 
-    this.bindRef = this.bindRef.bind(this)
+    this.elRef = React.createRef()
+
     this.reset = this.reset.bind(this)
     this.truncate = this.truncate.bind(this)
-  }
-
-  bindRef(el) {
-    this.el = el
   }
 
   componentDidMount() {
@@ -37,16 +34,16 @@ class Shave extends React.Component {
   }
 
   reset() {
-    this.el.innerHTML = this.props.children
+    this.elRef.current.innerHTML = this.props.children
   }
 
   truncate() {
     const maxHeight = this.props.lineHeight * this.props.lines
-    shave(this.el, maxHeight, { character: this.props.character })
+    shave(this.elRef.current, maxHeight, { character: this.props.character })
   }
 
   render() {
-    return <div ref={this.bindRef} {...filterReactProps(this.props)} />
+    return <div ref={this.elRef} {...filterReactProps(this.props)} />
   }
 }
 
