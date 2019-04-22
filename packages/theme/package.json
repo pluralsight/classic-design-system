@@ -18,7 +18,7 @@
   "keywords": [],
   "dependencies": {
     "hoist-non-react-statics": "^3.2.1",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.7.0"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^3.0.24",
