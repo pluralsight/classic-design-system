@@ -11,6 +11,9 @@ import css from '../css/index.js'
 import { toPercentageString } from '../js/index.js'
 import * as vars from '../vars/index.js'
 
+import ConditionalWrap from './conditional-wrap'
+import Shave from './shave'
+
 const formatImageWidth = ({ image, size }) =>
   image && size !== vars.sizes.small
     ? `(${vars.style.overlaysWidth} + ${vars.style.overlaysMarginRight})`
@@ -222,17 +225,64 @@ ProgressBar.propTypes = {
 const Text = props => <span {...filterReactProps(props, { tagName: 'span' })} />
 Text.displayName = 'Row.Text'
 
-const TextLink = withTheme(props => (
-  <span
-    {...styles.textLink(props)}
-    {...filterReactProps(props, { tagName: 'span' })}
-  />
-))
-TextLink.displayName = 'Row.TextLink'
+const TextLink = withTheme(props => {
+  const { children, truncated } = props
 
-const Title = withTheme(props => (
-  <div {...styles.title(props)} {...filterReactProps(props)} />
-))
+  const anchor = React.Children.only(children)
+  const anchorText = anchor.props.children
+  const childIsString = typeof anchorText === 'string'
+
+  return (
+    <span
+      {...styles.textLink(props)}
+      {...filterReactProps(props, { tagName: 'span' })}
+    >
+      <a {...anchor.props}>
+        <ConditionalWrap
+          shouldWrap={truncated && childIsString}
+          wrapper={c => <Shave lines={2}>{c}</Shave>}
+        >
+          {anchorText}
+        </ConditionalWrap>
+      </a>
+    </span>
+  )
+})
+TextLink.displayName = 'Row.TextLink'
+TextLink.defaultProps = {
+  truncated: false
+}
+TextLink.propTypes = {
+  children: PropTypes.oneOfType([elementOfType('a')]).isRequired,
+  truncated: PropTypes.bool
+}
+
+const Title = withTheme(({ truncated, children, ...rest }) => {
+  const childIsString = typeof children === 'string'
+
+  const wrapAsLink = c => React.cloneElement(c, { truncated })
+  const wrapWithShave = child => (
+    <ConditionalWrap
+      shouldWrap={truncated}
+      wrapper={c => <Shave lines={2}>{c}</Shave>}
+    >
+      {child}
+    </ConditionalWrap>
+  )
+
+  return (
+    <div {...styles.title(rest)} {...filterReactProps(rest)}>
+      {childIsString ? wrapWithShave(children) : wrapAsLink(children)}
+    </div>
+  )
+})
+Title.defaultProps = {
+  truncated: false
+}
+Title.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.string, elementOfType(TextLink)]),
+  truncated: PropTypes.bool
+}
 
 const Words = props => (
   <div {...styles.words(props)} {...filterReactProps(props)} />
@@ -324,12 +374,15 @@ renderProgress.propTypes = {
 
 // NOTE: the `title` prop clashes with a native html attr so we're exclude it
 //       from being mistakenly used in any child component
-const Row = ({ title, ...props }) => (
+const Row = ({ title, titleTruncated, ...props }) => (
   <div {...styles.row(props)} {...filterReactProps(props)}>
     {renderOverlays(props)}
 
     <Words image={props.image} size={props.size} actionBar={props.actionBar}>
-      <Title size={props.size}>{title}</Title>
+      <Title size={props.size} truncated={titleTruncated}>
+        {title}
+      </Title>
+
       {renderMetaData(props, props.metadata1)}
       {renderMetaData(props, props.metadata2)}
     </Words>
@@ -368,7 +421,8 @@ Row.propTypes = {
     PropTypes.string,
     elementOfType(Text),
     elementOfType(TextLink)
-  ])
+  ]),
+  titleTruncated: PropTypes.bool
 }
 
 Row.defaultProps = {

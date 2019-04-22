@@ -80,6 +80,14 @@ Object.keys(Row.sizes).forEach(size =>
 
 const titleStory = storiesOf('title', module)
   .add('string', _ => <Row title="A String Title" />)
+  .add('string truncated', _ => (
+    <div style={{ maxWidth: 400 }}>
+      <Row
+        title="We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy."
+        titleTruncated
+      />
+    </div>
+  ))
   .add('link', _ => (
     <Row
       title={
@@ -89,6 +97,24 @@ const titleStory = storiesOf('title', module)
       }
     />
   ))
+  .add('link truncated', _ => (
+    <div style={{ maxWidth: 400 }}>
+      <Row
+        title={
+          <Row.TextLink>
+            <a href="http://google.com">
+              We'll have a super time. You can create the world you want to see
+              and be a part of. You have that power. These things happen
+              automatically. All you have to do is just let them happen. Only
+              think about one thing at a time. Don't get greedy.
+            </a>
+          </Row.TextLink>
+        }
+        titleTruncated
+      />
+    </div>
+  ))
+
 Object.keys(Row.sizes).forEach(size =>
   titleStory.add(`${size} long title`, _ => (
     <Row

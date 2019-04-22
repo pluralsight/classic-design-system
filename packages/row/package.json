@@ -26,7 +26,8 @@
     "@pluralsight/ps-design-system-prop-types": "^2.0.0",
     "@pluralsight/ps-design-system-theme": "^2.0.0",
     "@pluralsight/ps-design-system-util": "^2.0.0",
-    "prop-types": "^15.7.0"
+    "prop-types": "^15.7.2",
+    "shave": "^2.5.3"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^3.0.24",
