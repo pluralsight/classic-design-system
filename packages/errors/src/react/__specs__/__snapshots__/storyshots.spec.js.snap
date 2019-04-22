@@ -113,7 +113,7 @@ exports[`Storyshots pages 404 1`] = `
       </h2>
     </div>
     <form
-      action="/library/search"
+      action="/search"
       data-css-oxne5y=""
       method="get"
     >
