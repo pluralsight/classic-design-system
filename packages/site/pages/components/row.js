@@ -162,10 +162,11 @@ export default withServerProps(_ => (
             PropTypes.row([
               'size',
               PropTypes.union(Row.sizes),
+              false,
               null,
-              <code>medium</code>,
               <span>
-                size of row (from <code>Row.sizes</code>)
+                disable resizing layout and set explicit size (from{' '}
+                <code>Row.sizes</code>)
               </span>
             ]),
             PropTypes.row([
