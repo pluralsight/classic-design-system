@@ -16,17 +16,10 @@ exports[`Storyshots actionBar locked visible 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-6x74ml=""
-        />
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
         </div>
@@ -77,7 +70,7 @@ exports[`Storyshots actionBar long title 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
         </div>
@@ -125,17 +118,10 @@ exports[`Storyshots actionBar long title with image 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-6x74ml=""
-        />
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
         </div>
@@ -186,7 +172,7 @@ exports[`Storyshots actionBar one action 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Ready, Action, Bar!
         </div>
@@ -234,53 +220,10 @@ exports[`Storyshots combo everything 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
-      >
-        <span
-          data-css-15yq56v=""
-        >
-          <a
-            href="http://google.com?query=image"
-          >
-            <div
-              data-css-6x74ml=""
-            />
-          </a>
-        </span>
-        <div
-          data-css-i223qf=""
-        >
-          <span
-            data-css-1fxa3fl=""
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            <a
-              href="http://google.com?query=overlay"
-            >
-              <div
-                data-css-6f8y6t=""
-              >
-                <svg
-                  aria-label="play circle icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
-                  />
-                </svg>
-              </div>
-            </a>
-          </span>
-        </div>
-      </div>
-      <div
-        data-css-l77jv6=""
+        data-css-1dgg89l=""
       >
         <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           <span
             data-css-1le2bq0=""
@@ -293,7 +236,7 @@ exports[`Storyshots combo everything 1`] = `
           </span>
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -348,7 +291,7 @@ exports[`Storyshots combo everything 1`] = `
           </span>
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -436,28 +379,10 @@ exports[`Storyshots fullOverlay element 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-6x74ml=""
-        />
-        <div
-          data-css-t9uarq=""
-        >
-          <span
-            data-css-1fxa3fl=""
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Element
-          </span>
-        </div>
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Overlay This!
         </div>
@@ -483,32 +408,10 @@ exports[`Storyshots fullOverlay link 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-6x74ml=""
-        />
-        <div
-          data-css-t9uarq=""
-        >
-          <span
-            data-css-1fxa3fl=""
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            <a
-              href="http://google.com?query=overlay"
-            >
-              Click me
-            </a>
-          </span>
-        </div>
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Overlay This!
         </div>
@@ -534,45 +437,10 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-6x74ml=""
-        />
-        <div
-          data-css-t9uarq=""
-        >
-          <span
-            data-css-1fxa3fl=""
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            <a
-              href="http://google.com?query=overlay"
-            >
-              <div
-                data-css-6f8y6t=""
-              >
-                <svg
-                  aria-label="play circle icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
-                  />
-                </svg>
-              </div>
-            </a>
-          </span>
-        </div>
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Overlay This!
         </div>
@@ -598,53 +466,10 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
-      >
-        <span
-          data-css-15yq56v=""
-        >
-          <a
-            href="http://google.com?query=image"
-          >
-            <div
-              data-css-6x74ml=""
-            />
-          </a>
-        </span>
-        <div
-          data-css-t9uarq=""
-        >
-          <span
-            data-css-1fxa3fl=""
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            <a
-              href="http://google.com?query=overlay"
-            >
-              <div
-                data-css-6f8y6t=""
-              >
-                <svg
-                  aria-label="play circle icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
-                  />
-                </svg>
-              </div>
-            </a>
-          </span>
-        </div>
-      </div>
-      <div
-        data-css-kxulf3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Both Icon and Image Have Separate Click Targets
         </div>
@@ -670,30 +495,15 @@ exports[`Storyshots image link 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
-      >
-        <span
-          data-css-15yq56v=""
-        >
-          <a
-            href="http://google.com?query=image"
-          >
-            <div
-              data-css-6x74ml=""
-            />
-          </a>
-        </span>
-      </div>
-      <div
-        data-css-kxulf3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Linked Image
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -726,12 +536,12 @@ exports[`Storyshots image no image 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           No Image
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -764,12 +574,12 @@ exports[`Storyshots image no image with overlay 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           No Image, With Overlay (Not Shown)
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -799,22 +609,15 @@ exports[`Storyshots image small image 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-1i8n1ua=""
-        />
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Small Image
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -844,22 +647,15 @@ exports[`Storyshots image tall image 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-7revsj=""
-        />
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Tall Image
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -889,22 +685,15 @@ exports[`Storyshots image wide image 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-6pi6a=""
-        />
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Wide Image
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -934,22 +723,15 @@ exports[`Storyshots image with image 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-6x74ml=""
-        />
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           With Image
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -979,33 +761,15 @@ exports[`Storyshots image with image with overlay 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-6x74ml=""
-        />
-        <div
-          data-css-t9uarq=""
-        >
-          <span
-            data-css-1fxa3fl=""
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Element
-          </span>
-        </div>
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           With Image
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1035,22 +799,15 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-6x74ml=""
-        />
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Course thing you do
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1086,22 +843,15 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-6x74ml=""
-        />
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Course thing you do
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1389,12 +1139,12 @@ exports[`Storyshots metadata link 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Meta With Links
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1435,12 +1185,12 @@ exports[`Storyshots metadata long links 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Meta With Links
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1519,12 +1269,12 @@ exports[`Storyshots metadata long strings 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           The Longest Strings in El Mundo
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1576,22 +1326,15 @@ exports[`Storyshots metadata long strings with image 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-6x74ml=""
-        />
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Long Strings AND Los Imagereo
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1646,12 +1389,12 @@ exports[`Storyshots metadata string 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Meta with Strings
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1681,22 +1424,15 @@ exports[`Storyshots metadata super long first string 1`] = `
       data-css-vl7fes=""
     >
       <div
-        data-css-js3ti3=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-6x74ml=""
-        />
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Long Strings AND Los Imagereo
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1751,12 +1487,12 @@ exports[`Storyshots metadata two lines 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           Meta With Links
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -1787,7 +1523,7 @@ exports[`Storyshots metadata two lines 1`] = `
           </span>
         </div>
         <div
-          data-css-cnfu1f=""
+          data-css-5jxdga=""
         >
           <span
             data-css-1kcrbi9=""
@@ -2056,7 +1792,7 @@ exports[`Storyshots title link 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           <span
             data-css-1le2bq0=""
@@ -2100,7 +1836,7 @@ exports[`Storyshots title link truncated 1`] = `
           data-css-1tiyrld=""
         >
           <div
-            data-css-1jlgfae=""
+            data-css-1vvatyd=""
           >
             <span
               data-css-1le2bq0=""
@@ -2223,7 +1959,7 @@ exports[`Storyshots title string 1`] = `
         data-css-1tiyrld=""
       >
         <div
-          data-css-1jlgfae=""
+          data-css-1vvatyd=""
         >
           A String Title
         </div>
@@ -2259,7 +1995,7 @@ exports[`Storyshots title string truncated 1`] = `
           data-css-1tiyrld=""
         >
           <div
-            data-css-1jlgfae=""
+            data-css-1vvatyd=""
           >
             <div>
               We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy.

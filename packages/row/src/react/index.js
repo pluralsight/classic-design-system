@@ -13,6 +13,7 @@ import * as vars from '../vars/index.js'
 
 import ConditionalWrap from './conditional-wrap'
 import Shave from './shave'
+import useMatchMedia from './use-match-media'
 
 const formatImageWidth = ({ image, size }) =>
   image && size !== vars.sizes.small
@@ -374,22 +375,27 @@ renderProgress.propTypes = {
 
 // NOTE: the `title` prop clashes with a native html attr so we're exclude it
 //       from being mistakenly used in any child component
-const Row = ({ title, titleTruncated, ...props }) => (
-  <div {...styles.row(props)} {...filterReactProps(props)}>
-    {renderOverlays(props)}
+const Row = ({ title, titleTruncated, ...props }) => {
+  const desktop = useMatchMedia('(min-width: 769px)')
+  if (!props.size) props.size = desktop ? vars.sizes.medium : vars.sizes.small
 
-    <Words image={props.image} size={props.size} actionBar={props.actionBar}>
-      <Title size={props.size} truncated={titleTruncated}>
-        {title}
-      </Title>
+  return (
+    <div {...styles.row(props)} {...filterReactProps(props)}>
+      {renderOverlays(props)}
 
-      {renderMetaData(props, props.metadata1)}
-      {renderMetaData(props, props.metadata2)}
-    </Words>
+      <Words image={props.image} size={props.size} actionBar={props.actionBar}>
+        <Title size={props.size} truncated={titleTruncated}>
+          {title}
+        </Title>
 
-    {renderActionBar(props)}
-  </div>
-)
+        {renderMetaData(props, props.metadata1)}
+        {renderMetaData(props, props.metadata2)}
+      </Words>
+
+      {renderActionBar(props)}
+    </div>
+  )
+}
 
 Row.propTypes = {
   actionBar: PropTypes.arrayOf(elementOfType(ActionBarAction)),
@@ -427,8 +433,7 @@ Row.propTypes = {
 
 Row.defaultProps = {
   actionBarVisible: false,
-  fullOverlayVisible: false,
-  size: vars.sizes.medium
+  fullOverlayVisible: false
 }
 
 Row.sizes = vars.sizes
