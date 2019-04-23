@@ -45,6 +45,7 @@ const transformFile = filePath => {
   )
 
   content = content.replace('fill-rule', 'fillRule')
+  content = content.replace('clip-rule', 'clipRule')
 
   return content
 }
