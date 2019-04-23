@@ -143,13 +143,14 @@ storiesOf('drawer', module)
     <Drawer
       base={
         <Row
-          image={<Row.Image src="https://cataas.com/cat" />}
-          title="Look at me! I'm a <Row />!"
-          metadata1={['Kitten McCatbuns', '23 hours of cuteness']}
-          actionBarVisible
           actionBar={[
             <Row.Action key="iHeartCats" icon={<Icon id="more" />} />
           ]}
+          actionBarVisible
+          image={<Row.Image src="https://cataas.com/cat" />}
+          metadata1={['Kitten McCatbuns', '23 hours of cuteness']}
+          size={Row.sizes.medium}
+          title="Look at me! I'm a <Row />!"
         />
       }
     >
@@ -160,32 +161,6 @@ storiesOf('drawer', module)
     <Drawer
       base={
         <Row
-          image={
-            <Row.ImageLink>
-              <a href="https://duckduckgo.com?q=image">
-                <img src="https://cataas.com/cat" />
-              </a>
-            </Row.ImageLink>
-          }
-          title={
-            <Row.TextLink>
-              <a href="https://duckduckgo.com?q=title">
-                I'm a Row with Actions
-              </a>
-            </Row.TextLink>
-          }
-          metadata1={[
-            <Row.TextLink>
-              <a href="https://duckduckgo.com?q=cats">Kitten McCatbuns</a>
-            </Row.TextLink>,
-            '23 hours of cuteness'
-          ]}
-          fullOverlay={
-            <Row.FullOverlayLink>
-              <a href="https://duckduckgo.com?q=overlay">Overlay</a>
-            </Row.FullOverlayLink>
-          }
-          actionBarVisible
           actionBar={[
             <Row.Action
               key="iHeartCats"
@@ -193,6 +168,33 @@ storiesOf('drawer', module)
               onClick={action('action')}
             />
           ]}
+          actionBarVisible
+          fullOverlay={
+            <Row.FullOverlayLink>
+              <a href="https://duckduckgo.com?q=overlay">Overlay</a>
+            </Row.FullOverlayLink>
+          }
+          metadata1={[
+            <Row.TextLink>
+              <a href="https://duckduckgo.com?q=cats">Kitten McCatbuns</a>
+            </Row.TextLink>,
+            '23 hours of cuteness'
+          ]}
+          image={
+            <Row.ImageLink>
+              <a href="https://duckduckgo.com?q=image">
+                <img src="https://cataas.com/cat" />
+              </a>
+            </Row.ImageLink>
+          }
+          size={Row.sizes.medium}
+          title={
+            <Row.TextLink>
+              <a href="https://duckduckgo.com?q=title">
+                I'm a Row with Actions
+              </a>
+            </Row.TextLink>
+          }
         />
       }
     >
