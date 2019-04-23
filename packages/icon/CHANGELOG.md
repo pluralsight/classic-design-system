@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@11.2.0...@pluralsight/ps-design-system-icon@11.2.1) (2019-04-23)
+
+
+### Bug Fixes
+
+* **icon:** build to transform clip-rule for react ([3ce6ba0](https://github.com/pluralsight/design-system/commit/3ce6ba0))
+* dependency range ([e6e59f9](https://github.com/pluralsight/design-system/commit/e6e59f9))
+
+
+
+
+
 # [11.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@11.1.1...@pluralsight/ps-design-system-icon@11.2.0) (2019-04-08)
 
 

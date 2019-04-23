@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@3.0.3...@pluralsight/ps-design-system-errors@3.1.0) (2019-04-23)
+
+
+### Bug Fixes
+
+* dependency range ([e6e59f9](https://github.com/pluralsight/design-system/commit/e6e59f9))
+
+
+### Features
+
+* **errors:** update search path ([66c8c7a](https://github.com/pluralsight/design-system/commit/66c8c7a))
+
+
+
+
+
 ## [3.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@3.0.2...@pluralsight/ps-design-system-errors@3.0.3) (2019-04-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-errors
