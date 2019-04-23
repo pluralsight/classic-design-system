@@ -16,11 +16,13 @@ module.exports = {
     'prettier/standard',
     'plugin:jest/recommended'
   ],
-  plugins: ['jest', 'react'],
+  plugins: ['jest', 'react', 'react-hooks'],
   env: {
     'jest/globals': true
   },
   rules: {
+    'react-hooks/exhaustive-deps': WARNING,
+    'react-hooks/rules-of-hooks': ERROR,
     'react/jsx-no-bind': [IGNORE]
   }
 }
