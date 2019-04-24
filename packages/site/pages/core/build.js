@@ -1,10 +1,8 @@
 import React from 'react'
 import {
   Chrome,
-  Code,
   Content,
   Doc,
-  P,
   PageHeading,
   withServerProps
 } from '../../src/ui'
@@ -19,7 +17,7 @@ export default withServerProps(_ => (
 To setup your own PostCSS config to consume the CSSNext variables, you'll want install the needed dependencies for PostCSS:
 
 \`\`\`bash
-npm install postcss-import postcss-cssnext
+npm install postcss-import postcss-preset-env
 \`\`\`
 
 Then adjust your \`postcss.config.js\` to include those plugins:
@@ -28,7 +26,7 @@ Then adjust your \`postcss.config.js\` to include those plugins:
 module.exports = {
   plugins: {
     'postcss-import': {},
-    'postcss-cssnext': { browsers: ['Last 2 versions', 'IE >= 10'] }
+    'postcss-preset-env': { browsers: ['Last 2 versions', 'IE >= 11'] }
   }
 }
 \`\`\`
