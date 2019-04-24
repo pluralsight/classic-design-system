@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-linearprogress",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Linear Progress UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -23,9 +23,9 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.4.2",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.3",
-    "@pluralsight/ps-design-system-icon": "^11.2.0",
-    "@pluralsight/ps-design-system-theme": "^2.0.0",
-    "@pluralsight/ps-design-system-util": "^2.0.0",
+    "@pluralsight/ps-design-system-icon": "^11.2.1",
+    "@pluralsight/ps-design-system-theme": "^2.0.1",
+    "@pluralsight/ps-design-system-util": "^2.0.1",
     "prop-types": "^15.7.0"
   },
   "peerDependencies": {
@@ -35,8 +35,8 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.9.2",
-    "@pluralsight/ps-design-system-storybook-addon-center": "^2.0.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^2.0.0",
+    "@pluralsight/ps-design-system-storybook-addon-center": "^2.0.1",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^2.0.1",
     "@storybook/addon-actions": "^4.0.0",
     "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/addons": "^4.0.0",
