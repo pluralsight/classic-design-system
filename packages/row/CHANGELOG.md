@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@4.1.0...@pluralsight/ps-design-system-row@5.0.0) (2019-04-24)
+
+
+### Features
+
+* **row:** change size depending on viewport ([97c7776](https://github.com/pluralsight/design-system/commit/97c7776))
+
+
+### BREAKING CHANGES
+
+* **row:** React v16.8 required. size will change depending on the viewport width
+
+
+
+
+
 # [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@4.0.3...@pluralsight/ps-design-system-row@4.1.0) (2019-04-23)
 
 
