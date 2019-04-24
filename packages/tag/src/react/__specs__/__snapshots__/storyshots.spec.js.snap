@@ -2,19 +2,19 @@
 
 exports[`Storyshots actions button 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
       >
         <div
-          data-css-qgf2xw=""
+          data-css-1lg7khg=""
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -33,19 +33,19 @@ exports[`Storyshots actions button 1`] = `
 
 exports[`Storyshots actions button w/ icon button 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
       >
         <div
-          data-css-1b60kkx=""
+          data-css-il56id=""
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -79,13 +79,13 @@ exports[`Storyshots actions button w/ icon button 1`] = `
 
 exports[`Storyshots actions just icon button 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
@@ -122,19 +122,19 @@ exports[`Storyshots actions just icon button 1`] = `
 
 exports[`Storyshots actions link 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
       >
         <a
-          data-css-qgf2xw=""
+          data-css-1lg7khg=""
           href="https://duckduckgo.com/"
         >
           <span
@@ -151,19 +151,19 @@ exports[`Storyshots actions link 1`] = `
 
 exports[`Storyshots actions link with target 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
       >
         <a
-          data-css-qgf2xw=""
+          data-css-1lg7khg=""
           href="https://duckduckgo.com/"
           target="_blank"
         >
@@ -181,19 +181,19 @@ exports[`Storyshots actions link with target 1`] = `
 
 exports[`Storyshots actions small button 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
       >
         <div
-          data-css-upxcka=""
+          data-css-mi8a0w=""
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -212,13 +212,13 @@ exports[`Storyshots actions small button 1`] = `
 
 exports[`Storyshots appearance accent 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
@@ -240,13 +240,13 @@ exports[`Storyshots appearance accent 1`] = `
 
 exports[`Storyshots appearance basic 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
@@ -268,13 +268,13 @@ exports[`Storyshots appearance basic 1`] = `
 
 exports[`Storyshots appearance bright 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
@@ -296,13 +296,13 @@ exports[`Storyshots appearance bright 1`] = `
 
 exports[`Storyshots error default 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-11lyqbs=""
@@ -324,19 +324,19 @@ exports[`Storyshots error default 1`] = `
 
 exports[`Storyshots error focusable 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-11lyqbs=""
       >
         <div
-          data-css-qgf2xw=""
+          data-css-1lg7khg=""
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -355,13 +355,13 @@ exports[`Storyshots error focusable 1`] = `
 
 exports[`Storyshots icon accent medium 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
@@ -398,13 +398,13 @@ exports[`Storyshots icon accent medium 1`] = `
 
 exports[`Storyshots icon accent small 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
@@ -441,13 +441,13 @@ exports[`Storyshots icon accent small 1`] = `
 
 exports[`Storyshots icon basic medium 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
@@ -484,13 +484,13 @@ exports[`Storyshots icon basic medium 1`] = `
 
 exports[`Storyshots icon basic small 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
@@ -527,13 +527,13 @@ exports[`Storyshots icon basic small 1`] = `
 
 exports[`Storyshots icon bright medium 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
@@ -570,13 +570,13 @@ exports[`Storyshots icon bright medium 1`] = `
 
 exports[`Storyshots icon bright small 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
@@ -613,20 +613,20 @@ exports[`Storyshots icon bright small 1`] = `
 
 exports[`Storyshots isPressed button 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
       >
         <div
           aria-pressed={true}
-          data-css-7esa94=""
+          data-css-1m48m1a=""
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -645,20 +645,20 @@ exports[`Storyshots isPressed button 1`] = `
 
 exports[`Storyshots isPressed button w/ icon button 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
       >
         <div
           aria-pressed={true}
-          data-css-1g24xph=""
+          data-css-1wpnhe2=""
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -692,20 +692,20 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
 
 exports[`Storyshots isPressed link 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
       >
         <a
           aria-pressed={true}
-          data-css-7esa94=""
+          data-css-1m48m1a=""
           href="https://duckduckgo.com/"
         >
           <span
@@ -722,13 +722,13 @@ exports[`Storyshots isPressed link 1`] = `
 
 exports[`Storyshots long string 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
@@ -750,13 +750,13 @@ exports[`Storyshots long string 1`] = `
 
 exports[`Storyshots long with icon 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
@@ -793,13 +793,13 @@ exports[`Storyshots long with icon 1`] = `
 
 exports[`Storyshots size medium 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""
@@ -821,13 +821,13 @@ exports[`Storyshots size medium 1`] = `
 
 exports[`Storyshots size small 1`] = `
 <div
-  data-css-wx7ofq=""
+  data-css-claeju=""
 >
   <div
-    data-css-1nnsngu=""
+    data-css-wx7ofq=""
   >
     <div
-      data-css-claeju=""
+      data-css-1nnsngu=""
     >
       <div
         data-css-480533=""

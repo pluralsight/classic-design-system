@@ -34,12 +34,7 @@ const styles = {
   }) =>
     glamor.css(
       css['.psds-tag'],
-      (href || onClick) && {
-        ':hover': css['.psds-tag--clickable:hover'],
-        ':focus': {
-          ...css['.psds-tag--clickable:focus']
-        }
-      },
+      (href || onClick) && css['.psds-tag--clickable'],
       css[`.psds-tag--appearance-${appearance}`],
       css[`.psds-tag--size-${size}`],
       icon && css['.psds-tag--icon'],
