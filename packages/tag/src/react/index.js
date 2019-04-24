@@ -6,8 +6,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 
-import css from '../css'
-import * as vars from '../vars'
+import css from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const tagHtmlPropsWhitelist = [
   'href',

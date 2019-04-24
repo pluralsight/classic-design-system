@@ -1,7 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 const hover = {
   backgroundColor: core.colors.gray02,

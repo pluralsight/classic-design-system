@@ -24,6 +24,7 @@
     "@pluralsight/ps-design-system-core": "^4.4.2",
     "@pluralsight/ps-design-system-halo": "^3.0.3",
     "@pluralsight/ps-design-system-icon": "^11.2.2",
+    "@pluralsight/ps-design-system-storybook-addon-center": "^2.0.2",
     "@pluralsight/ps-design-system-theme": "^2.0.2",
     "@pluralsight/ps-design-system-util": "^2.0.2",
     "prop-types": "^15.7.0"
