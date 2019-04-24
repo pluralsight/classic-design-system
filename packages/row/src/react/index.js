@@ -376,8 +376,8 @@ renderProgress.propTypes = {
 // NOTE: the `title` prop clashes with a native html attr so we're exclude it
 //       from being mistakenly used in any child component
 const Row = ({ title, titleTruncated, ...props }) => {
-  const desktop = useMatchMedia('(min-width: 769px)')
-  if (!props.size) props.size = desktop ? vars.sizes.medium : vars.sizes.small
+  const isDesktop = useMatchMedia('(min-width: 769px)')
+  if (!props.size) props.size = isDesktop ? vars.sizes.medium : vars.sizes.small
 
   return (
     <div {...styles.row(props)} {...filterReactProps(props)}>
