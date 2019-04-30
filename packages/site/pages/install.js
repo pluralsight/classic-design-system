@@ -52,7 +52,7 @@ If you write your CSS in JavaScript, no additional configuration is required.  O
 Install any required plugins you don't have yet for PostCSS:
 
 \`\`\`bash
-npm install postcss-cssnext postcss-import
+npm install postcss-preset-env postcss-import
 \`\`\`
 
 Adjust your \`postcss.config.js\` to include the required plugins:
@@ -61,7 +61,7 @@ Adjust your \`postcss.config.js\` to include the required plugins:
 module.exports = {
   plugins: {
     'postcss-import': {},
-    'postcss-cssnext': { browsers: ['Last 2 versions', 'IE >= 10'] }
+    'postcss-preset-env': { browsers: ['Last 2 versions', 'IE >= 11'] }
   }
 }
 \`\`\`
