@@ -140,6 +140,11 @@ export default {
     transition: `opacity ${core.motion.speedNormal}`,
     pointerEvents: 'none',
     opacity: 0,
+    zIndex: 10,
+
+    '> *': {
+      pointerEvents: 'all'
+    },
 
     '&:focus-within, &[focus-within]': {
       opacity: 1
@@ -154,7 +159,6 @@ export default {
 
   // __action-bar__button
   '.psds-card__action-bar__button': {
-    pointerEvents: 'all',
     fontSize: core.type.fontSizeXSmall,
     padding: 0,
     cursor: 'pointer',
