@@ -11,10 +11,10 @@ export default function useMatchMedia(query) {
 
     update()
 
-    window.matchMedia(query).addEventListener('change', update)
+    window.matchMedia(query).addListener(update)
 
     return () => {
-      window.matchMedia(query).removeEventListener('change', update)
+      window.matchMedia(query).removeListener(update)
     }
   }, [query])
 
