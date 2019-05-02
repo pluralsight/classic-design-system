@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-row",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "Design System component for row ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.9.2",
-    "@pluralsight/ps-design-system-drawer": "^2.1.4",
+    "@pluralsight/ps-design-system-drawer": "^2.1.5",
     "@pluralsight/ps-design-system-icon": "^12.0.0",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^2.0.2",
     "@storybook/addon-actions": "^4.0.0",

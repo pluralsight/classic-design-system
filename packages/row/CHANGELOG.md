@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@5.0.1...@pluralsight/ps-design-system-row@5.0.2) (2019-05-02)
+
+
+### Bug Fixes
+
+* **row:** issues with safari and matchmedia ([892b97e](https://github.com/pluralsight/design-system/commit/892b97e))
+
+
+
+
+
 ## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@5.0.0...@pluralsight/ps-design-system-row@5.0.1) (2019-05-01)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-row
