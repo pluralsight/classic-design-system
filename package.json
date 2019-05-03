@@ -79,7 +79,7 @@
     "camelize": "^1.0.0",
     "copy-template-dir": "^1.4.0",
     "danger": "^6.1.12",
-    "danger-plugin-toolbox": "^1.4.0",
+    "danger-plugin-toolbox": "^1.10.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "eslint": "^5.7.0",
