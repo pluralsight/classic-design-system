@@ -4,10 +4,10 @@ import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/vars'
 import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
-import css from '../css'
-import * as vars from '../vars'
+import css from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const tagHtmlPropsWhitelist = [
   'href',
@@ -22,31 +22,22 @@ const tagHtmlPropsWhitelist = [
 ]
 
 const styles = {
-  tag: ({
-    appearance,
-    error,
-    href,
-    icon,
-    isPressed,
-    onClick,
-    size,
-    themeName
-  }) =>
+  tag: ({ href, icon, isPressed, onClick, size, themeName }) =>
     glamor.css(
       css['.psds-tag'],
-      (href || onClick) && {
-        ':hover': css['.psds-tag--clickable:hover'],
-        ':focus': {
-          ...css['.psds-tag--clickable:focus']
-        }
-      },
-      css[`.psds-tag--appearance-${appearance}`],
+      css[`.psds-tag.psds-theme--${themeName}`],
+      (href || onClick) && css['.psds-tag--clickable'],
+      (href || onClick) && css[`.psds-tag--clickable.psds-theme--${themeName}`],
       css[`.psds-tag--size-${size}`],
       icon && css['.psds-tag--icon'],
       isPressed && css['.psds-tag--isPressed']
     ),
-  label: ({ icon }) =>
-    glamor.css(css['.psds-tag__label'], icon && css['.psds-tag__label--icon'])
+  label: ({ icon, themeName }) =>
+    glamor.css(
+      css['.psds-tag__label'],
+      css[`.psds-tag__label.psds-theme--${themeName}`],
+      icon && css['.psds-tag__label--icon']
+    )
 }
 
 const renderIcon = props =>
@@ -64,36 +55,30 @@ const renderIcon = props =>
       })
     : null
 
-const Tag = (props, context) => {
-  const allProps = {
-    ...props,
-    themeName: context.themeName || themeDefaultName
-  }
-  const tagName = allProps.href ? 'a' : 'div'
+const Tag = withTheme((props, context) => {
+  const tagName = props.href ? 'a' : 'div'
   return (
-    <Halo error={allProps.error} shape={Halo.shapes.pill} inline>
+    <Halo error={props.error} shape={Halo.shapes.pill} inline>
       {React.createElement(
         tagName,
         {
-          ...styles.tag(allProps),
-          ...propsUtil.whitelistProps(allProps, tagHtmlPropsWhitelist),
-          ...(allProps.target ? { target: allProps.target } : null),
-          ...(allProps.isPressed ? { 'aria-pressed': true } : null),
-          ...(allProps.onClick ? { role: 'button', tabIndex: 0 } : null)
+          ...styles.tag(props),
+          ...propsUtil.whitelistProps(props, tagHtmlPropsWhitelist),
+          ...(props.target ? { target: props.target } : null),
+          ...(props.isPressed ? { 'aria-pressed': true } : null),
+          ...(props.onClick ? { role: 'button', tabIndex: 0 } : null)
         },
-        <span {...styles.label(allProps)}>{props.children}</span>,
+        <span {...styles.label(props)}>{props.children}</span>,
         renderIcon(props)
       )}
     </Halo>
   )
-}
+})
 
 Tag.displayName = 'Tag'
-Tag.appearances = vars.appearances
 Tag.sizes = vars.sizes
 
 Tag.propTypes = {
-  appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
   children: PropTypes.node.isRequired,
   error: PropTypes.bool,
   href: PropTypes.string,
@@ -103,14 +88,12 @@ Tag.propTypes = {
   size: PropTypes.oneOf(Object.keys(vars.sizes))
 }
 Tag.defaultProps = {
-  appearance: vars.appearances.basic,
   isPressed: false,
   size: vars.sizes.medium
 }
 Tag.contextTypes = {
   themeName: PropTypes.string
 }
-export const appearances = vars.appearances
 export const sizes = vars.sizes
 
 export default Tag
