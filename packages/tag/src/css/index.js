@@ -34,51 +34,6 @@ export default {
       color: core.colors.black,
       cursor: 'pointer',
       outline: 'none'
-    },
-    ['&:focus:before, &' + base + '--error:before']: {
-      content: ' ',
-      position: 'absolute',
-      top: '-1px',
-      left: '-1px',
-      right: '-1px',
-      bottom: '-1px',
-      background: core.colors.black,
-      zIndex: '-1',
-      borderRadius: '16px'
-    },
-    [`&.psds-theme--${
-      themeNames.light
-    }:focus:before, &${base}--error.psds-theme--${themeNames.light}:before`]: {
-      top: '-2px',
-      left: '-2px',
-      right: '-2px',
-      bottom: '-2px',
-      background: core.colors.bone
-    },
-    '&:focus:after, &.psds-tag--error:after': {
-      content: ' ',
-      position: 'absolute',
-      top: '-4px',
-      left: '-4px',
-      right: '-4px',
-      bottom: '-4px',
-      zIndex: '-2',
-      borderRadius: '18px'
-    },
-    [`&.psds-theme--${
-      themeNames.light
-    }:focus:after, &${base}--error.psds-theme--${themeNames.light}:after`]: {
-      top: '-5px',
-      left: '-5px',
-      right: '-5px',
-      bottom: '-5px',
-      borderRadius: '20px'
-    },
-    '&:focus:after': {
-      background: core.colors.blue
-    },
-    [`&${base}--error:after`]: {
-      background: core.colors.red
     }
   },
   [base + '--clickable' + '.psds-theme--' + themeNames.light]: {
