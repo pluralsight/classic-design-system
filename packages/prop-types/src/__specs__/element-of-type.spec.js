@@ -22,6 +22,19 @@ describe('elementOfType', () => {
     )
   })
 
+  it('should not throw error when expected element is a circular json', () => {
+    const fn = elementOfType(Uno)
+
+    const circularJSON = { outter: { inner: null } }
+    circularJSON.outter.inner = circularJSON.outter
+
+    const props = { [PROP_NAME]: circularJSON }
+
+    expect(() => {
+      fn(props, PROP_NAME, COMPONENT_NAME, PROP_LOCATION)
+    }).not.toThrow()
+  })
+
   it('should warn when expected element is of the wrong type', () => {
     const fn = elementOfType(Uno)
 

@@ -3,7 +3,11 @@
 //       https://github.com/wzrdzl/react-element-proptypes
 
 import PropTypeError from './prop-type-error'
-import { createChainableTypeChecker, getDisplayName } from './utils'
+import {
+  createChainableTypeChecker,
+  getDisplayName,
+  getCircularReplacer
+} from './utils'
 
 export default function elementOfType(ExpectedElementType) {
   function validate(props, propName, componentName, location, propFullName) {
@@ -17,7 +21,7 @@ export default function elementOfType(ExpectedElementType) {
 
       if (!hasComponentType) {
         // prettier-ignore
-        const msg = `Invalid ${location} \`${propFullName}\` with value \`${JSON.stringify(prop)}\` supplied to ${componentName}, expected element of type \`${expectedTypeName}\``
+        const msg = `Invalid ${location} \`${propFullName}\` with value \`${JSON.stringify(prop, getCircularReplacer())}\` supplied to ${componentName}, expected element of type \`${expectedTypeName}\``
         return new PropTypeError(msg)
       }
 
