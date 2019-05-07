@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@2.0.6...@pluralsight/ps-design-system-tag@3.0.0) (2019-05-07)
+
+
+### Bug Fixes
+
+* **tag:** remove interferring old focus styles ([76aa9bc](https://github.com/pluralsight/design-system/commit/76aa9bc))
+
+
+### Code Refactoring
+
+* **tag:** remove appearance ([6500825](https://github.com/pluralsight/design-system/commit/6500825))
+
+
+### BREAKING CHANGES
+
+* **tag:** remove appearance prop
+
+
+
+
+
 ## [2.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@2.0.5...@pluralsight/ps-design-system-tag@2.0.6) (2019-05-01)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tag

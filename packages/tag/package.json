@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-tag",
-  "version": "2.0.6",
+  "version": "3.0.0",
   "description": "Design System component for tag ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
