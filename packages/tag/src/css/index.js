@@ -3,10 +3,6 @@ import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
 import * as vars from '../vars/index.js'
 
-const accent = {
-  color: core.colors.white,
-  backgroundColor: core.colors.blue
-}
 const base = '.psds-tag'
 
 export default {
@@ -19,12 +15,17 @@ export default {
     borderRadius: '16px',
     fontWeight: core.type.fontWeightMedium,
     textDecoration: 'none',
-    border: 'none',
+    border: '1px solid transparent',
     color: core.colors.bone,
     backgroundColor: core.colors.gray03,
     transition: `background-color ${core.motion.speedXFast} linear, color ${
       core.motion.speedXFast
     } linear`
+  },
+  [base + '.psds-theme--' + themeNames.light]: {
+    backgroundColor: core.colors.white,
+    borderColor: core.colors.gray02,
+    color: core.colors.gray06
   },
 
   [base + '--clickable']: {
@@ -80,6 +81,12 @@ export default {
       background: core.colors.red
     }
   },
+  [base + '--clickable' + '.psds-theme--' + themeNames.light]: {
+    '&:hover, &:focus': {
+      backgroundColor: core.colors.bone,
+      borderColor: core.colors.gray03
+    }
+  },
 
   [`${base}--size-${vars.sizes.small}`]: {
     height: '24px',
@@ -98,7 +105,11 @@ export default {
     paddingRight: core.layout.spacingXXSmall
   },
 
-  [base + '--isPressed']: accent,
+  [base + '--isPressed']: {
+    color: core.colors.white,
+    backgroundColor: core.colors.blue,
+    borderColor: 'transparent'
+  },
 
   [base + '__label']: {
     display: 'inline-block',
