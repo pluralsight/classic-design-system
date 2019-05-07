@@ -20,6 +20,8 @@ export default {
     fontWeight: core.type.fontWeightMedium,
     textDecoration: 'none',
     border: 'none',
+    color: core.colors.bone,
+    backgroundColor: core.colors.gray03,
     transition: `background-color ${core.motion.speedXFast} linear, color ${
       core.motion.speedXFast
     } linear`
@@ -77,17 +79,6 @@ export default {
     [`&${base}--error:after`]: {
       background: core.colors.red
     }
-  },
-
-  [`${base}--appearance-${vars.appearances.accent}`]: accent,
-  [`${base}--appearance-${vars.appearances.basic}`]: {
-    color: core.colors.bone,
-    backgroundColor: core.colors.gray03
-  },
-  [`${base}--appearance-${vars.appearances.bright}`]: {
-    color: core.colors.gray06,
-    backgroundColor: core.colors.white,
-    border: `1px solid ${core.colors.gray02}`
   },
 
   [`${base}--size-${vars.sizes.small}`]: {

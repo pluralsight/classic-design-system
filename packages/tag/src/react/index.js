@@ -22,20 +22,10 @@ const tagHtmlPropsWhitelist = [
 ]
 
 const styles = {
-  tag: ({
-    appearance,
-    error,
-    href,
-    icon,
-    isPressed,
-    onClick,
-    size,
-    themeName
-  }) =>
+  tag: ({ href, icon, isPressed, onClick, size, themeName }) =>
     glamor.css(
       css['.psds-tag'],
       (href || onClick) && css['.psds-tag--clickable'],
-      css[`.psds-tag--appearance-${appearance}`],
       css[`.psds-tag--size-${size}`],
       icon && css['.psds-tag--icon'],
       isPressed && css['.psds-tag--isPressed']
@@ -84,11 +74,9 @@ const Tag = (props, context) => {
 }
 
 Tag.displayName = 'Tag'
-Tag.appearances = vars.appearances
 Tag.sizes = vars.sizes
 
 Tag.propTypes = {
-  appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
   children: PropTypes.node.isRequired,
   error: PropTypes.bool,
   href: PropTypes.string,
@@ -98,14 +86,12 @@ Tag.propTypes = {
   size: PropTypes.oneOf(Object.keys(vars.sizes))
 }
 Tag.defaultProps = {
-  appearance: vars.appearances.basic,
   isPressed: false,
   size: vars.sizes.medium
 }
 Tag.contextTypes = {
   themeName: PropTypes.string
 }
-export const appearances = vars.appearances
 export const sizes = vars.sizes
 
 export default Tag

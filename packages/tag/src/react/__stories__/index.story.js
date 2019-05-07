@@ -5,26 +5,18 @@ import { storiesOf } from '@storybook/react'
 
 import Tag from '../index.js'
 
-const appearanceStory = storiesOf('appearance', module)
-
-Object.keys(Tag.appearances).forEach(app =>
-  appearanceStory.add(app, _ => <Tag appearance={app}>{app}</Tag>)
-)
-
 const sizeStory = storiesOf('size', module)
 Object.keys(Tag.sizes).forEach(size =>
   sizeStory.add(size, _ => <Tag size={size}>{size}</Tag>)
 )
 
 const iconStory = storiesOf('icon', module)
-Object.keys(Tag.appearances).forEach(app =>
-  Object.keys(Tag.sizes).forEach(size =>
-    iconStory.add(`${app} ${size}`, _ => (
-      <Tag appearance={app} size={size} icon={<Icon id={Icon.ids.close} />}>
-        With Icon
-      </Tag>
-    ))
-  )
+Object.keys(Tag.sizes).forEach(size =>
+  iconStory.add(size, _ => (
+    <Tag size={size} icon={<Icon id={Icon.ids.close} />}>
+      With Icon
+    </Tag>
+  ))
 )
 
 storiesOf('actions', module)
@@ -89,10 +81,8 @@ storiesOf('long', module)
     </Tag>
   ))
 
-storiesOf('error', module)
-  .add('default', _ => <Tag error>I have a problem</Tag>)
-  .add('focusable', _ => (
-    <Tag onClick={action('button click')} error>
-      I have a problem
-    </Tag>
-  ))
+storiesOf('error', module).add('focusable', _ => (
+  <Tag onClick={action('button click')} error>
+    I have a problem
+  </Tag>
+))

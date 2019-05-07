@@ -14,7 +14,7 @@ exports[`Storyshots actions button 1`] = `
         data-css-480533=""
       >
         <div
-          data-css-1lg7khg=""
+          data-css-tbbky8=""
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -45,7 +45,7 @@ exports[`Storyshots actions button w/ icon button 1`] = `
         data-css-480533=""
       >
         <div
-          data-css-il56id=""
+          data-css-12ww42d=""
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -91,7 +91,7 @@ exports[`Storyshots actions just icon button 1`] = `
         data-css-480533=""
       >
         <div
-          data-css-1fxgkih=""
+          data-css-bso28m=""
         >
           <span
             data-css-13bnfv4=""
@@ -134,7 +134,7 @@ exports[`Storyshots actions link 1`] = `
         data-css-480533=""
       >
         <a
-          data-css-1lg7khg=""
+          data-css-tbbky8=""
           href="https://duckduckgo.com/"
         >
           <span
@@ -163,7 +163,7 @@ exports[`Storyshots actions link with target 1`] = `
         data-css-480533=""
       >
         <a
-          data-css-1lg7khg=""
+          data-css-tbbky8=""
           href="https://duckduckgo.com/"
           target="_blank"
         >
@@ -193,7 +193,7 @@ exports[`Storyshots actions small button 1`] = `
         data-css-480533=""
       >
         <div
-          data-css-mi8a0w=""
+          data-css-1cb128n=""
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -202,118 +202,6 @@ exports[`Storyshots actions small button 1`] = `
             data-css-1997kh1=""
           >
             As a button
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance accent 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    data-css-wx7ofq=""
-  >
-    <div
-      data-css-1nnsngu=""
-    >
-      <div
-        data-css-480533=""
-      >
-        <div
-          data-css-47hvh8=""
-        >
-          <span
-            data-css-1997kh1=""
-          >
-            accent
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance basic 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    data-css-wx7ofq=""
-  >
-    <div
-      data-css-1nnsngu=""
-    >
-      <div
-        data-css-480533=""
-      >
-        <div
-          data-css-1n5vxb9=""
-        >
-          <span
-            data-css-1997kh1=""
-          >
-            basic
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance bright 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    data-css-wx7ofq=""
-  >
-    <div
-      data-css-1nnsngu=""
-    >
-      <div
-        data-css-480533=""
-      >
-        <div
-          data-css-itkkn2=""
-        >
-          <span
-            data-css-1997kh1=""
-          >
-            bright
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots error default 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    data-css-wx7ofq=""
-  >
-    <div
-      data-css-1nnsngu=""
-    >
-      <div
-        data-css-11lyqbs=""
-      >
-        <div
-          data-css-1n5vxb9=""
-        >
-          <span
-            data-css-1997kh1=""
-          >
-            I have a problem
           </span>
         </div>
       </div>
@@ -336,7 +224,7 @@ exports[`Storyshots error focusable 1`] = `
         data-css-11lyqbs=""
       >
         <div
-          data-css-1lg7khg=""
+          data-css-tbbky8=""
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -353,7 +241,7 @@ exports[`Storyshots error focusable 1`] = `
 </div>
 `;
 
-exports[`Storyshots icon accent medium 1`] = `
+exports[`Storyshots icon medium 1`] = `
 <div
   data-css-claeju=""
 >
@@ -367,7 +255,7 @@ exports[`Storyshots icon accent medium 1`] = `
         data-css-480533=""
       >
         <div
-          data-css-cakr6m=""
+          data-css-bso28m=""
         >
           <span
             data-css-13bnfv4=""
@@ -396,7 +284,7 @@ exports[`Storyshots icon accent medium 1`] = `
 </div>
 `;
 
-exports[`Storyshots icon accent small 1`] = `
+exports[`Storyshots icon small 1`] = `
 <div
   data-css-claeju=""
 >
@@ -410,179 +298,7 @@ exports[`Storyshots icon accent small 1`] = `
         data-css-480533=""
       >
         <div
-          data-css-1swczt7=""
-        >
-          <span
-            data-css-13bnfv4=""
-          >
-            With Icon
-          </span>
-          <div
-            data-css-12f5sv2=""
-            onClick={[Function]}
-          >
-            <svg
-              aria-label="close icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots icon basic medium 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    data-css-wx7ofq=""
-  >
-    <div
-      data-css-1nnsngu=""
-    >
-      <div
-        data-css-480533=""
-      >
-        <div
-          data-css-1fxgkih=""
-        >
-          <span
-            data-css-13bnfv4=""
-          >
-            With Icon
-          </span>
-          <div
-            data-css-otejxm=""
-            onClick={[Function]}
-          >
-            <svg
-              aria-label="close icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots icon basic small 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    data-css-wx7ofq=""
-  >
-    <div
-      data-css-1nnsngu=""
-    >
-      <div
-        data-css-480533=""
-      >
-        <div
-          data-css-1g26r3r=""
-        >
-          <span
-            data-css-13bnfv4=""
-          >
-            With Icon
-          </span>
-          <div
-            data-css-12f5sv2=""
-            onClick={[Function]}
-          >
-            <svg
-              aria-label="close icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots icon bright medium 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    data-css-wx7ofq=""
-  >
-    <div
-      data-css-1nnsngu=""
-    >
-      <div
-        data-css-480533=""
-      >
-        <div
-          data-css-1uxvgmp=""
-        >
-          <span
-            data-css-13bnfv4=""
-          >
-            With Icon
-          </span>
-          <div
-            data-css-otejxm=""
-            onClick={[Function]}
-          >
-            <svg
-              aria-label="close icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots icon bright small 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    data-css-wx7ofq=""
-  >
-    <div
-      data-css-1nnsngu=""
-    >
-      <div
-        data-css-480533=""
-      >
-        <div
-          data-css-psmlat=""
+          data-css-1bv6fup=""
         >
           <span
             data-css-13bnfv4=""
@@ -626,7 +342,7 @@ exports[`Storyshots isPressed button 1`] = `
       >
         <div
           aria-pressed={true}
-          data-css-1m48m1a=""
+          data-css-114oc74=""
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -658,7 +374,7 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
       >
         <div
           aria-pressed={true}
-          data-css-1wpnhe2=""
+          data-css-1brtmtm=""
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -705,7 +421,7 @@ exports[`Storyshots isPressed link 1`] = `
       >
         <a
           aria-pressed={true}
-          data-css-1m48m1a=""
+          data-css-114oc74=""
           href="https://duckduckgo.com/"
         >
           <span
@@ -734,7 +450,7 @@ exports[`Storyshots long string 1`] = `
         data-css-480533=""
       >
         <div
-          data-css-1n5vxb9=""
+          data-css-die9vt=""
         >
           <span
             data-css-1997kh1=""
@@ -762,7 +478,7 @@ exports[`Storyshots long with icon 1`] = `
         data-css-480533=""
       >
         <div
-          data-css-1fxgkih=""
+          data-css-bso28m=""
         >
           <span
             data-css-13bnfv4=""
@@ -805,7 +521,7 @@ exports[`Storyshots size medium 1`] = `
         data-css-480533=""
       >
         <div
-          data-css-1n5vxb9=""
+          data-css-die9vt=""
         >
           <span
             data-css-1997kh1=""
@@ -833,7 +549,7 @@ exports[`Storyshots size small 1`] = `
         data-css-480533=""
       >
         <div
-          data-css-uqnvqs=""
+          data-css-dddhy8=""
         >
           <span
             data-css-1997kh1=""
