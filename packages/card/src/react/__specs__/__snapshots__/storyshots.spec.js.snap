@@ -26,10 +26,10 @@ exports[`Storyshots actionBar locked visible 1`] = `
           }
         />
         <div
-          data-css-1di4zm0=""
+          data-css-1kb1o0e=""
         >
           <button
-            data-css-z6g59z=""
+            data-css-226xmr=""
             title="Bookmark"
           >
             <div
@@ -175,10 +175,10 @@ exports[`Storyshots actionBar multiple actions 1`] = `
           }
         />
         <div
-          data-css-1ifisgx=""
+          data-css-4ed7vx=""
         >
           <button
-            data-css-z6g59z=""
+            data-css-226xmr=""
             title="Bookmark"
           >
             <div
@@ -197,7 +197,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
             </div>
           </button>
           <button
-            data-css-z6g59z=""
+            data-css-226xmr=""
             title="More"
           >
             <div
@@ -343,10 +343,10 @@ exports[`Storyshots actionBar single action 1`] = `
           }
         />
         <div
-          data-css-1ifisgx=""
+          data-css-4ed7vx=""
         >
           <button
-            data-css-z6g59z=""
+            data-css-226xmr=""
             title="Bookmark"
           >
             <div
@@ -801,10 +801,10 @@ exports[`Storyshots combo everything focusable 1`] = `
           </span>
         </div>
         <div
-          data-css-acm057=""
+          data-css-ldsotz=""
         >
           <button
-            data-css-z6g59z=""
+            data-css-226xmr=""
             title="Bookmark"
           >
             <div
@@ -823,7 +823,7 @@ exports[`Storyshots combo everything focusable 1`] = `
             </div>
           </button>
           <button
-            data-css-z6g59z=""
+            data-css-226xmr=""
             title="Settings"
           >
             <div
@@ -842,7 +842,7 @@ exports[`Storyshots combo everything focusable 1`] = `
             </div>
           </button>
           <button
-            data-css-z6g59z=""
+            data-css-226xmr=""
             title="More"
           >
             <div
@@ -1074,10 +1074,10 @@ exports[`Storyshots combo everything locked 1`] = `
           </span>
         </div>
         <div
-          data-css-1di4zm0=""
+          data-css-1kb1o0e=""
         >
           <button
-            data-css-z6g59z=""
+            data-css-226xmr=""
             title="Bookmark"
           >
             <div
@@ -1096,7 +1096,7 @@ exports[`Storyshots combo everything locked 1`] = `
             </div>
           </button>
           <button
-            data-css-z6g59z=""
+            data-css-226xmr=""
             title="Settings"
           >
             <div
@@ -1115,7 +1115,7 @@ exports[`Storyshots combo everything locked 1`] = `
             </div>
           </button>
           <button
-            data-css-z6g59z=""
+            data-css-226xmr=""
             title="More"
           >
             <div

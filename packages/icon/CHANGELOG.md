@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@11.2.2...@pluralsight/ps-design-system-icon@12.0.0) (2019-05-01)
+
+
+### Features
+
+* **icon:** code, trend up, and clock icons ([fd4bfd9](https://github.com/pluralsight/design-system/commit/fd4bfd9)), closes [#494](https://github.com/pluralsight/design-system/issues/494)
+
+
+### BREAKING CHANGES
+
+* **icon:** previous code icon is now called `code-branded`
+
+
+
+
+
 ## [11.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@11.2.1...@pluralsight/ps-design-system-icon@11.2.2) (2019-04-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon

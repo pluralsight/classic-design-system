@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@9.0.5...@pluralsight/ps-design-system-card@9.0.6) (2019-05-01)
+
+
+### Bug Fixes
+
+* **card:** fix action-bar z-index & pointer events ([597105f](https://github.com/pluralsight/design-system/commit/597105f))
+
+
+
+
+
 ## [9.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@9.0.4...@pluralsight/ps-design-system-card@9.0.5) (2019-04-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-card
