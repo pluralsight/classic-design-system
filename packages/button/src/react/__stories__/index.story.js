@@ -7,7 +7,7 @@ import React from 'react'
 
 import Icon from '@pluralsight/ps-design-system-icon/react'
 
-import Button from '..'
+import Button from '../index.js'
 
 const appearanceStory = storiesOf('Button / appearance', module)
 Object.keys(Button.appearances).forEach(app =>
@@ -192,3 +192,28 @@ loadingExample.add('no icon, hidden text', _ => (
     </Button>
   </SwitchToLoading>
 ))
+
+storiesOf('Button / in row', module).add('same vertical height', _ => {
+  return (
+    <div>
+      {Object.values(Button.sizes).map(size => (
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: Object.values(Button.appearances)
+              .map(_ => 'auto')
+              .join(' '),
+            gap: '8px',
+            marginBottom: '8px'
+          }}
+        >
+          {Object.values(Button.appearances).map(appearance => (
+            <Button size={size} appearance={appearance}>
+              button
+            </Button>
+          ))}
+        </div>
+      ))}
+    </div>
+  )
+})
