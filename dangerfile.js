@@ -1,13 +1,4 @@
-const { danger, warn } = require('danger')
 const toolbox = require('danger-plugin-toolbox')
-
-const checkDescription = ({ minLength = 10 } = {}) => {
-  const { github } = danger
-
-  if (github.pr.body && github.pr.body.length > minLength) return
-
-  warn(':pencil2: Please add a description.')
-}
 
 void (async function main() {
   // thank new contributors
@@ -23,5 +14,5 @@ void (async function main() {
   // are there skipped or focused tests
   toolbox.jsTestShortcuts({ logTypeSkipped: 'message', logTypeFocused: 'fail' })
 
-  checkDescription()
+  toolbox.commonPrDescription({ minLength: 10, msg: ':pencil2: Please add a description.' })
 })()
