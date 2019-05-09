@@ -179,7 +179,7 @@ export default withServerProps(_ => (
               'row title or linked title'
             ]),
             PropTypes.row([
-              'truncatedTitle',
+              'titleTruncated',
               'boolean',
               null,
               <code>false</code>,
