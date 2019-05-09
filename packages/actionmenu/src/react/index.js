@@ -256,8 +256,7 @@ class Item extends React.Component {
           ),
           isKeyboarding: this.props._isKeyboarding,
           onClose: this.handleNestedClose,
-          origin: this.props._origin,
-          shouldFocusOnMount: this.props.shouldFocusOnMount
+          origin: this.props._origin
         })
       : null
   }
