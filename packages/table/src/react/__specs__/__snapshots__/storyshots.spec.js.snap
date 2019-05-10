@@ -450,7 +450,7 @@ exports[`Storyshots columnHeader align center w/ sort 1`] = `
     >
       Header sortable, aligned center
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -503,7 +503,7 @@ exports[`Storyshots columnHeader align left w/ sort 1`] = `
     >
       Header sortable, aligned left
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -556,7 +556,7 @@ exports[`Storyshots columnHeader align right w/ sort 1`] = `
     >
       Header sortable, aligned right
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -634,7 +634,7 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
     >
        Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned center
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -654,7 +654,7 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
     >
       Short header, same align
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -687,7 +687,7 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
     >
        Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned left
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -707,7 +707,7 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
     >
       Short header, same align
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -740,7 +740,7 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
     >
        Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable Long header sortable, aligned right
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -760,7 +760,7 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
     >
       Short header, same align
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -793,7 +793,7 @@ exports[`Storyshots columnHeader sort asc 1`] = `
     >
       sorted header
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -829,7 +829,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
     >
       active header
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -852,7 +852,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
     >
       other sortable
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -892,7 +892,7 @@ exports[`Storyshots columnHeader sort default 1`] = `
     >
       header text
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -926,7 +926,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
     >
       active header
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -947,7 +947,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
     >
       other sortable
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -980,7 +980,7 @@ exports[`Storyshots columnHeader sort desc 1`] = `
     >
       sorted header
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -1016,7 +1016,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
     >
       active header
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -1039,7 +1039,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
     >
       other sortable
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -1099,7 +1099,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
     >
       header text
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -1119,7 +1119,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
     >
       header2 text
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -1221,7 +1221,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
     >
       header text
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg
@@ -1241,7 +1241,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
     >
       header2 text
       <div
-        data-css-7lxb9e=""
+        data-css-1pv1hob=""
         data-css-otejxm=""
       >
         <svg

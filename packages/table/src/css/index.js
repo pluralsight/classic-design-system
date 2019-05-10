@@ -149,6 +149,7 @@ export default {
 
   '.psds-table__column-header__icon': {
     position: 'relative',
+    flexShrink: '0',
     bottom: `calc(-1 * (${core.layout.spacingSmall} - ${
       core.layout.spacingXSmall
     }))`
