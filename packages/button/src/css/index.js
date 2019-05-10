@@ -22,7 +22,6 @@ export default {
     border: 0,
     borderRadius: '2px',
     fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightStandard,
     fontWeight: core.type.fontWeightMedium,
     textAlign: 'center',
     color: core.colors.white,
@@ -58,25 +57,21 @@ export default {
   // --size
   [`.psds-button--size-${vars.sizes.xSmall}`]: {
     fontSize: core.type.fontSizeXSmall,
-    lineHeight: core.type.lineHeightStandard,
     padding: `0 ${core.layout.spacingXSmall}`,
     height: '24px'
   },
   [`.psds-button--size-${vars.sizes.small}`]: {
     fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightStandard,
     padding: `${core.layout.spacingXXSmall} ${core.layout.spacingXSmall}`,
     height: '32px'
   },
   [`.psds-button--size-${vars.sizes.medium}`]: {
     fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightStandard,
     padding: `${core.layout.spacingXXSmall} ${core.layout.spacingMedium}`,
     height: '40px'
   },
   [`.psds-button--size-${vars.sizes.large}`]: {
     fontSize: core.type.fontSizeMedium,
-    lineHeight: core.type.lineHeightExtra,
     padding: `${core.layout.spacingXXSmall} ${core.layout.spacingMedium}`,
     height: '48px'
   },
