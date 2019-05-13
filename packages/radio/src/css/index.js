@@ -14,12 +14,19 @@ export default {
   },
 
   '.psds-radio-button': {
+    display: 'flex',
+    alignItems: 'center',
     padding: `${core.layout.spacingXXSmall} 0`,
     cursor: 'pointer'
   },
 
   '.psds-radio-button__halo': {
     transform: 'translateY(3px)'
+  },
+
+  '.psds-radio-button__circle-outer': {
+    width: '16px',
+    marginRight: core.layout.spacingSmall
   },
 
   '.psds-radio-button__circle': {
@@ -56,8 +63,6 @@ export default {
   },
 
   '.psds-radio-button__label': {
-    display: 'inline-block',
-    marginLeft: core.layout.spacingSmall,
     color: core.colors.bone,
     fontSize: core.type.fontSizeSmall,
     lineHeight: core.type.lineHeightStandard,

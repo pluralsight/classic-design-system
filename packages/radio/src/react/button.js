@@ -31,6 +31,7 @@ const styles = {
       checked && css['.psds-radio-button__circle--checked'],
       { ':focus': css['.psds-radio-button__circle:focus'] }
     ),
+  circleOuter: () => glamor.css(css['.psds-radio-button__circle-outer']),
   circleInner: ({ checked }) =>
     glamor.css(css['.psds-radio-button__circle-inner']),
   halo: () => glamor.css(css['.psds-radio-button__halo']),
@@ -69,25 +70,29 @@ class Button extends React.Component {
         onClick={props._disabled ? null : this.handleClick}
         {...styles.button(allProps)}
       >
-        <Halo
-          error={allProps._error}
-          inline
-          shape={Halo.shapes.pill}
-          visibleOnFocus={!allProps._disabled}
-          visible={allProps._isFocused}
-          {...styles.halo()}
-        >
-          <div
-            role="radio"
-            aria-checked={allProps.checked}
-            tabIndex="-1"
-            onFocus={props._disabled ? null : _ => props._onFocus(props.value)}
-            ref={el => (this.circle = el)}
-            {...styles.circle(allProps)}
+        <div {...styles.circleOuter()}>
+          <Halo
+            error={allProps._error}
+            inline
+            shape={Halo.shapes.pill}
+            visibleOnFocus={!allProps._disabled}
+            visible={allProps._isFocused}
+            {...styles.halo()}
           >
-            {allProps.checked && <div {...styles.circleInner(allProps)} />}
-          </div>
-        </Halo>
+            <div
+              role="radio"
+              aria-checked={allProps.checked}
+              tabIndex="-1"
+              onFocus={
+                props._disabled ? null : _ => props._onFocus(props.value)
+              }
+              ref={el => (this.circle = el)}
+              {...styles.circle(allProps)}
+            >
+              {allProps.checked && <div {...styles.circleInner(allProps)} />}
+            </div>
+          </Halo>
+        </div>
         <input
           {...propsUtil.whitelistProps(allProps, radioButtonHtmlPropsWhitelist)}
           tabIndex="-1"

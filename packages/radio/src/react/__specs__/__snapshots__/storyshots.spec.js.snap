@@ -22,20 +22,24 @@ exports[`Storyshots Radio default 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-130mzdl=""
+          data-css-kn3wr0=""
           onClick={[Function]}
         >
           <div
-            data-css-480533=""
-            data-css-iwspcj=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={false}
-              data-css-dbvyuf=""
-              onFocus={[Function]}
-              role="radio"
-              tabIndex="-1"
-            />
+              data-css-480533=""
+              data-css-iwspcj=""
+            >
+              <div
+                aria-checked={false}
+                data-css-dbvyuf=""
+                onFocus={[Function]}
+                role="radio"
+                tabIndex="-1"
+              />
+            </div>
           </div>
           <input
             checked={false}
@@ -46,7 +50,7 @@ exports[`Storyshots Radio default 1`] = `
             value="red"
           />
           <div
-            data-css-13elow3=""
+            data-css-cgsoeo=""
           >
             Red
           </div>
@@ -56,20 +60,24 @@ exports[`Storyshots Radio default 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-130mzdl=""
+          data-css-kn3wr0=""
           onClick={[Function]}
         >
           <div
-            data-css-480533=""
-            data-css-iwspcj=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={false}
-              data-css-dbvyuf=""
-              onFocus={[Function]}
-              role="radio"
-              tabIndex="-1"
-            />
+              data-css-480533=""
+              data-css-iwspcj=""
+            >
+              <div
+                aria-checked={false}
+                data-css-dbvyuf=""
+                onFocus={[Function]}
+                role="radio"
+                tabIndex="-1"
+              />
+            </div>
           </div>
           <input
             checked={false}
@@ -80,7 +88,7 @@ exports[`Storyshots Radio default 1`] = `
             value="green"
           />
           <div
-            data-css-13elow3=""
+            data-css-cgsoeo=""
           >
             Green
           </div>
@@ -90,20 +98,24 @@ exports[`Storyshots Radio default 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-130mzdl=""
+          data-css-kn3wr0=""
           onClick={[Function]}
         >
           <div
-            data-css-480533=""
-            data-css-iwspcj=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={false}
-              data-css-dbvyuf=""
-              onFocus={[Function]}
-              role="radio"
-              tabIndex="-1"
-            />
+              data-css-480533=""
+              data-css-iwspcj=""
+            >
+              <div
+                aria-checked={false}
+                data-css-dbvyuf=""
+                onFocus={[Function]}
+                role="radio"
+                tabIndex="-1"
+              />
+            </div>
           </div>
           <input
             checked={false}
@@ -114,7 +126,7 @@ exports[`Storyshots Radio default 1`] = `
             value="blue"
           />
           <div
-            data-css-13elow3=""
+            data-css-cgsoeo=""
           >
             Blue
           </div>
@@ -147,20 +159,24 @@ exports[`Storyshots Radio disabled & error 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-130mzdl=""
+          data-css-kn3wr0=""
           onClick={null}
         >
           <div
-            data-css-8x851q=""
-            data-css-iwspcj=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={false}
-              data-css-dbvyuf=""
-              onFocus={null}
-              role="radio"
-              tabIndex="-1"
-            />
+              data-css-8x851q=""
+              data-css-iwspcj=""
+            >
+              <div
+                aria-checked={false}
+                data-css-dbvyuf=""
+                onFocus={null}
+                role="radio"
+                tabIndex="-1"
+              />
+            </div>
           </div>
           <input
             checked={false}
@@ -171,7 +187,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
             value="red"
           />
           <div
-            data-css-13elow3=""
+            data-css-cgsoeo=""
           >
             Red
           </div>
@@ -181,23 +197,27 @@ exports[`Storyshots Radio disabled & error 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-130mzdl=""
+          data-css-kn3wr0=""
           onClick={null}
         >
           <div
-            data-css-8x851q=""
-            data-css-iwspcj=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={true}
-              data-css-4a14oy=""
-              onFocus={null}
-              role="radio"
-              tabIndex="-1"
+              data-css-8x851q=""
+              data-css-iwspcj=""
             >
               <div
-                data-css-16yi4o9=""
-              />
+                aria-checked={true}
+                data-css-4a14oy=""
+                onFocus={null}
+                role="radio"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-16yi4o9=""
+                />
+              </div>
             </div>
           </div>
           <input
@@ -209,7 +229,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
             value="green"
           />
           <div
-            data-css-13elow3=""
+            data-css-cgsoeo=""
           >
             Green
           </div>
@@ -219,20 +239,24 @@ exports[`Storyshots Radio disabled & error 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-130mzdl=""
+          data-css-kn3wr0=""
           onClick={null}
         >
           <div
-            data-css-8x851q=""
-            data-css-iwspcj=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={false}
-              data-css-dbvyuf=""
-              onFocus={null}
-              role="radio"
-              tabIndex="-1"
-            />
+              data-css-8x851q=""
+              data-css-iwspcj=""
+            >
+              <div
+                aria-checked={false}
+                data-css-dbvyuf=""
+                onFocus={null}
+                role="radio"
+                tabIndex="-1"
+              />
+            </div>
           </div>
           <input
             checked={false}
@@ -243,7 +267,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
             value="blue"
           />
           <div
-            data-css-13elow3=""
+            data-css-cgsoeo=""
           >
             Blue
           </div>
@@ -276,20 +300,24 @@ exports[`Storyshots Radio disabled 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-130mzdl=""
+          data-css-kn3wr0=""
           onClick={null}
         >
           <div
-            data-css-iwspcj=""
-            data-css-jg1k2y=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={false}
-              data-css-dbvyuf=""
-              onFocus={null}
-              role="radio"
-              tabIndex="-1"
-            />
+              data-css-iwspcj=""
+              data-css-jg1k2y=""
+            >
+              <div
+                aria-checked={false}
+                data-css-dbvyuf=""
+                onFocus={null}
+                role="radio"
+                tabIndex="-1"
+              />
+            </div>
           </div>
           <input
             checked={false}
@@ -300,7 +328,7 @@ exports[`Storyshots Radio disabled 1`] = `
             value="red"
           />
           <div
-            data-css-13elow3=""
+            data-css-cgsoeo=""
           >
             Red
           </div>
@@ -310,23 +338,27 @@ exports[`Storyshots Radio disabled 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-130mzdl=""
+          data-css-kn3wr0=""
           onClick={null}
         >
           <div
-            data-css-iwspcj=""
-            data-css-jg1k2y=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={true}
-              data-css-4a14oy=""
-              onFocus={null}
-              role="radio"
-              tabIndex="-1"
+              data-css-iwspcj=""
+              data-css-jg1k2y=""
             >
               <div
-                data-css-16yi4o9=""
-              />
+                aria-checked={true}
+                data-css-4a14oy=""
+                onFocus={null}
+                role="radio"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-16yi4o9=""
+                />
+              </div>
             </div>
           </div>
           <input
@@ -338,7 +370,7 @@ exports[`Storyshots Radio disabled 1`] = `
             value="green"
           />
           <div
-            data-css-13elow3=""
+            data-css-cgsoeo=""
           >
             Green
           </div>
@@ -348,20 +380,24 @@ exports[`Storyshots Radio disabled 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-130mzdl=""
+          data-css-kn3wr0=""
           onClick={null}
         >
           <div
-            data-css-iwspcj=""
-            data-css-jg1k2y=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={false}
-              data-css-dbvyuf=""
-              onFocus={null}
-              role="radio"
-              tabIndex="-1"
-            />
+              data-css-iwspcj=""
+              data-css-jg1k2y=""
+            >
+              <div
+                aria-checked={false}
+                data-css-dbvyuf=""
+                onFocus={null}
+                role="radio"
+                tabIndex="-1"
+              />
+            </div>
           </div>
           <input
             checked={false}
@@ -372,7 +408,7 @@ exports[`Storyshots Radio disabled 1`] = `
             value="blue"
           />
           <div
-            data-css-13elow3=""
+            data-css-cgsoeo=""
           >
             Blue
           </div>
@@ -405,20 +441,24 @@ exports[`Storyshots Radio error 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-130mzdl=""
+          data-css-kn3wr0=""
           onClick={[Function]}
         >
           <div
-            data-css-11lyqbs=""
-            data-css-iwspcj=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={false}
-              data-css-dbvyuf=""
-              onFocus={[Function]}
-              role="radio"
-              tabIndex="-1"
-            />
+              data-css-11lyqbs=""
+              data-css-iwspcj=""
+            >
+              <div
+                aria-checked={false}
+                data-css-dbvyuf=""
+                onFocus={[Function]}
+                role="radio"
+                tabIndex="-1"
+              />
+            </div>
           </div>
           <input
             checked={false}
@@ -429,7 +469,7 @@ exports[`Storyshots Radio error 1`] = `
             value="red"
           />
           <div
-            data-css-13elow3=""
+            data-css-cgsoeo=""
           >
             Red
           </div>
@@ -439,23 +479,27 @@ exports[`Storyshots Radio error 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-130mzdl=""
+          data-css-kn3wr0=""
           onClick={[Function]}
         >
           <div
-            data-css-11lyqbs=""
-            data-css-iwspcj=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={true}
-              data-css-4a14oy=""
-              onFocus={[Function]}
-              role="radio"
-              tabIndex="-1"
+              data-css-11lyqbs=""
+              data-css-iwspcj=""
             >
               <div
-                data-css-16yi4o9=""
-              />
+                aria-checked={true}
+                data-css-4a14oy=""
+                onFocus={[Function]}
+                role="radio"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-16yi4o9=""
+                />
+              </div>
             </div>
           </div>
           <input
@@ -467,7 +511,7 @@ exports[`Storyshots Radio error 1`] = `
             value="green"
           />
           <div
-            data-css-13elow3=""
+            data-css-cgsoeo=""
           >
             Green
           </div>
@@ -477,20 +521,24 @@ exports[`Storyshots Radio error 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-130mzdl=""
+          data-css-kn3wr0=""
           onClick={[Function]}
         >
           <div
-            data-css-11lyqbs=""
-            data-css-iwspcj=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={false}
-              data-css-dbvyuf=""
-              onFocus={[Function]}
-              role="radio"
-              tabIndex="-1"
-            />
+              data-css-11lyqbs=""
+              data-css-iwspcj=""
+            >
+              <div
+                aria-checked={false}
+                data-css-dbvyuf=""
+                onFocus={[Function]}
+                role="radio"
+                tabIndex="-1"
+              />
+            </div>
           </div>
           <input
             checked={false}
@@ -501,7 +549,7 @@ exports[`Storyshots Radio error 1`] = `
             value="blue"
           />
           <div
-            data-css-13elow3=""
+            data-css-cgsoeo=""
           >
             Blue
           </div>
@@ -534,20 +582,24 @@ exports[`Storyshots Radio one selected 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-130mzdl=""
+          data-css-kn3wr0=""
           onClick={[Function]}
         >
           <div
-            data-css-480533=""
-            data-css-iwspcj=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={false}
-              data-css-dbvyuf=""
-              onFocus={[Function]}
-              role="radio"
-              tabIndex="-1"
-            />
+              data-css-480533=""
+              data-css-iwspcj=""
+            >
+              <div
+                aria-checked={false}
+                data-css-dbvyuf=""
+                onFocus={[Function]}
+                role="radio"
+                tabIndex="-1"
+              />
+            </div>
           </div>
           <input
             checked={false}
@@ -558,7 +610,7 @@ exports[`Storyshots Radio one selected 1`] = `
             value="red"
           />
           <div
-            data-css-13elow3=""
+            data-css-cgsoeo=""
           >
             Red
           </div>
@@ -568,23 +620,27 @@ exports[`Storyshots Radio one selected 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-130mzdl=""
+          data-css-kn3wr0=""
           onClick={[Function]}
         >
           <div
-            data-css-480533=""
-            data-css-iwspcj=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={true}
-              data-css-4a14oy=""
-              onFocus={[Function]}
-              role="radio"
-              tabIndex="-1"
+              data-css-480533=""
+              data-css-iwspcj=""
             >
               <div
-                data-css-16yi4o9=""
-              />
+                aria-checked={true}
+                data-css-4a14oy=""
+                onFocus={[Function]}
+                role="radio"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-16yi4o9=""
+                />
+              </div>
             </div>
           </div>
           <input
@@ -596,7 +652,7 @@ exports[`Storyshots Radio one selected 1`] = `
             value="green"
           />
           <div
-            data-css-13elow3=""
+            data-css-cgsoeo=""
           >
             Green
           </div>
@@ -606,20 +662,24 @@ exports[`Storyshots Radio one selected 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-130mzdl=""
+          data-css-kn3wr0=""
           onClick={[Function]}
         >
           <div
-            data-css-480533=""
-            data-css-iwspcj=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={false}
-              data-css-dbvyuf=""
-              onFocus={[Function]}
-              role="radio"
-              tabIndex="-1"
-            />
+              data-css-480533=""
+              data-css-iwspcj=""
+            >
+              <div
+                aria-checked={false}
+                data-css-dbvyuf=""
+                onFocus={[Function]}
+                role="radio"
+                tabIndex="-1"
+              />
+            </div>
           </div>
           <input
             checked={false}
@@ -630,7 +690,7 @@ exports[`Storyshots Radio one selected 1`] = `
             value="blue"
           />
           <div
-            data-css-13elow3=""
+            data-css-cgsoeo=""
           >
             Blue
           </div>
@@ -674,23 +734,27 @@ exports[`Storyshots Radio state demo 1`] = `
           data-css-xp79s5=""
         >
           <label
-            data-css-130mzdl=""
+            data-css-kn3wr0=""
             onClick={[Function]}
           >
             <div
-              data-css-480533=""
-              data-css-iwspcj=""
+              data-css-1gbdc34=""
             >
               <div
-                aria-checked={true}
-                data-css-4a14oy=""
-                onFocus={[Function]}
-                role="radio"
-                tabIndex="-1"
+                data-css-480533=""
+                data-css-iwspcj=""
               >
                 <div
-                  data-css-16yi4o9=""
-                />
+                  aria-checked={true}
+                  data-css-4a14oy=""
+                  onFocus={[Function]}
+                  role="radio"
+                  tabIndex="-1"
+                >
+                  <div
+                    data-css-16yi4o9=""
+                  />
+                </div>
               </div>
             </div>
             <input
@@ -702,7 +766,7 @@ exports[`Storyshots Radio state demo 1`] = `
               value="red"
             />
             <div
-              data-css-13elow3=""
+              data-css-cgsoeo=""
             >
               Red
             </div>
@@ -712,20 +776,24 @@ exports[`Storyshots Radio state demo 1`] = `
           data-css-xp79s5=""
         >
           <label
-            data-css-130mzdl=""
+            data-css-kn3wr0=""
             onClick={[Function]}
           >
             <div
-              data-css-480533=""
-              data-css-iwspcj=""
+              data-css-1gbdc34=""
             >
               <div
-                aria-checked={false}
-                data-css-dbvyuf=""
-                onFocus={[Function]}
-                role="radio"
-                tabIndex="-1"
-              />
+                data-css-480533=""
+                data-css-iwspcj=""
+              >
+                <div
+                  aria-checked={false}
+                  data-css-dbvyuf=""
+                  onFocus={[Function]}
+                  role="radio"
+                  tabIndex="-1"
+                />
+              </div>
             </div>
             <input
               checked={false}
@@ -736,7 +804,7 @@ exports[`Storyshots Radio state demo 1`] = `
               value="green"
             />
             <div
-              data-css-13elow3=""
+              data-css-cgsoeo=""
             >
               Green
             </div>
@@ -746,20 +814,24 @@ exports[`Storyshots Radio state demo 1`] = `
           data-css-xp79s5=""
         >
           <label
-            data-css-130mzdl=""
+            data-css-kn3wr0=""
             onClick={[Function]}
           >
             <div
-              data-css-480533=""
-              data-css-iwspcj=""
+              data-css-1gbdc34=""
             >
               <div
-                aria-checked={false}
-                data-css-dbvyuf=""
-                onFocus={[Function]}
-                role="radio"
-                tabIndex="-1"
-              />
+                data-css-480533=""
+                data-css-iwspcj=""
+              >
+                <div
+                  aria-checked={false}
+                  data-css-dbvyuf=""
+                  onFocus={[Function]}
+                  role="radio"
+                  tabIndex="-1"
+                />
+              </div>
             </div>
             <input
               checked={false}
@@ -770,7 +842,7 @@ exports[`Storyshots Radio state demo 1`] = `
               value="blue"
             />
             <div
-              data-css-13elow3=""
+              data-css-cgsoeo=""
             >
               Blue
             </div>
