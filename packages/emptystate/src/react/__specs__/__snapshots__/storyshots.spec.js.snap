@@ -78,7 +78,7 @@ exports[`Storyshots EmptyState combo 1`] = `
       data-css-aelvpu=""
     >
       <button
-        data-css-k922kt=""
+        data-css-1srt63x=""
         disabled={false}
         style={Object {}}
       >
@@ -178,7 +178,7 @@ exports[`Storyshots EmptyState in a small fixed size container 1`] = `
         data-css-aelvpu=""
       >
         <button
-          data-css-k922kt=""
+          data-css-1srt63x=""
           disabled={false}
           style={Object {}}
         >
@@ -287,7 +287,7 @@ exports[`Storyshots EmptyState/actions with an input 1`] = `
             />
           </div>
           <div
-            data-css-hgugth=""
+            data-css-1x5ndtu=""
           >
             <div
               data-css-otejxm=""
@@ -406,7 +406,7 @@ exports[`Storyshots EmptyState/actions with buttons 1`] = `
           }
         >
           <button
-            data-css-r0o8hq=""
+            data-css-1q6fyq5=""
             disabled={false}
             style={Object {}}
           >
@@ -426,7 +426,7 @@ exports[`Storyshots EmptyState/actions with buttons 1`] = `
           }
         >
           <button
-            data-css-r0o8hq=""
+            data-css-1q6fyq5=""
             disabled={false}
             style={Object {}}
           >
@@ -446,7 +446,7 @@ exports[`Storyshots EmptyState/actions with buttons 1`] = `
           }
         >
           <button
-            data-css-r0o8hq=""
+            data-css-1q6fyq5=""
             disabled={false}
             style={Object {}}
           >
@@ -466,7 +466,7 @@ exports[`Storyshots EmptyState/actions with buttons 1`] = `
           }
         >
           <button
-            data-css-r0o8hq=""
+            data-css-1q6fyq5=""
             disabled={false}
             style={Object {}}
           >
@@ -486,7 +486,7 @@ exports[`Storyshots EmptyState/actions with buttons 1`] = `
           }
         >
           <button
-            data-css-r0o8hq=""
+            data-css-1q6fyq5=""
             disabled={false}
             style={Object {}}
           >
@@ -506,7 +506,7 @@ exports[`Storyshots EmptyState/actions with buttons 1`] = `
           }
         >
           <button
-            data-css-r0o8hq=""
+            data-css-1q6fyq5=""
             disabled={false}
             style={Object {}}
           >
@@ -1980,7 +1980,7 @@ exports[`Storyshots EmptyState/sizes large 1`] = `
     data-css-aelvpu=""
   >
     <button
-      data-css-k922kt=""
+      data-css-1srt63x=""
       disabled={false}
       style={Object {}}
     >
@@ -2063,7 +2063,7 @@ exports[`Storyshots EmptyState/sizes small 1`] = `
     data-css-aelvpu=""
   >
     <button
-      data-css-k922kt=""
+      data-css-1srt63x=""
       disabled={false}
       style={Object {}}
     >
