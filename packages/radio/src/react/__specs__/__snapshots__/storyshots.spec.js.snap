@@ -22,11 +22,12 @@ exports[`Storyshots Radio default 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-kn3wr0=""
+          data-css-130mzdl=""
           onClick={[Function]}
         >
           <div
             data-css-480533=""
+            data-css-iwspcj=""
           >
             <div
               aria-checked={false}
@@ -45,7 +46,7 @@ exports[`Storyshots Radio default 1`] = `
             value="red"
           />
           <div
-            data-css-pgc406=""
+            data-css-13elow3=""
           >
             Red
           </div>
@@ -55,11 +56,12 @@ exports[`Storyshots Radio default 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-kn3wr0=""
+          data-css-130mzdl=""
           onClick={[Function]}
         >
           <div
             data-css-480533=""
+            data-css-iwspcj=""
           >
             <div
               aria-checked={false}
@@ -78,7 +80,7 @@ exports[`Storyshots Radio default 1`] = `
             value="green"
           />
           <div
-            data-css-pgc406=""
+            data-css-13elow3=""
           >
             Green
           </div>
@@ -88,11 +90,12 @@ exports[`Storyshots Radio default 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-kn3wr0=""
+          data-css-130mzdl=""
           onClick={[Function]}
         >
           <div
             data-css-480533=""
+            data-css-iwspcj=""
           >
             <div
               aria-checked={false}
@@ -111,7 +114,7 @@ exports[`Storyshots Radio default 1`] = `
             value="blue"
           />
           <div
-            data-css-pgc406=""
+            data-css-13elow3=""
           >
             Blue
           </div>
@@ -144,11 +147,12 @@ exports[`Storyshots Radio disabled & error 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-kn3wr0=""
+          data-css-130mzdl=""
           onClick={null}
         >
           <div
             data-css-8x851q=""
+            data-css-iwspcj=""
           >
             <div
               aria-checked={false}
@@ -167,7 +171,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
             value="red"
           />
           <div
-            data-css-pgc406=""
+            data-css-13elow3=""
           >
             Red
           </div>
@@ -177,11 +181,12 @@ exports[`Storyshots Radio disabled & error 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-kn3wr0=""
+          data-css-130mzdl=""
           onClick={null}
         >
           <div
             data-css-8x851q=""
+            data-css-iwspcj=""
           >
             <div
               aria-checked={true}
@@ -204,7 +209,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
             value="green"
           />
           <div
-            data-css-pgc406=""
+            data-css-13elow3=""
           >
             Green
           </div>
@@ -214,11 +219,12 @@ exports[`Storyshots Radio disabled & error 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-kn3wr0=""
+          data-css-130mzdl=""
           onClick={null}
         >
           <div
             data-css-8x851q=""
+            data-css-iwspcj=""
           >
             <div
               aria-checked={false}
@@ -237,7 +243,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
             value="blue"
           />
           <div
-            data-css-pgc406=""
+            data-css-13elow3=""
           >
             Blue
           </div>
@@ -270,10 +276,11 @@ exports[`Storyshots Radio disabled 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-kn3wr0=""
+          data-css-130mzdl=""
           onClick={null}
         >
           <div
+            data-css-iwspcj=""
             data-css-jg1k2y=""
           >
             <div
@@ -293,7 +300,7 @@ exports[`Storyshots Radio disabled 1`] = `
             value="red"
           />
           <div
-            data-css-pgc406=""
+            data-css-13elow3=""
           >
             Red
           </div>
@@ -303,10 +310,11 @@ exports[`Storyshots Radio disabled 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-kn3wr0=""
+          data-css-130mzdl=""
           onClick={null}
         >
           <div
+            data-css-iwspcj=""
             data-css-jg1k2y=""
           >
             <div
@@ -330,7 +338,7 @@ exports[`Storyshots Radio disabled 1`] = `
             value="green"
           />
           <div
-            data-css-pgc406=""
+            data-css-13elow3=""
           >
             Green
           </div>
@@ -340,10 +348,11 @@ exports[`Storyshots Radio disabled 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-kn3wr0=""
+          data-css-130mzdl=""
           onClick={null}
         >
           <div
+            data-css-iwspcj=""
             data-css-jg1k2y=""
           >
             <div
@@ -363,7 +372,7 @@ exports[`Storyshots Radio disabled 1`] = `
             value="blue"
           />
           <div
-            data-css-pgc406=""
+            data-css-13elow3=""
           >
             Blue
           </div>
@@ -396,11 +405,12 @@ exports[`Storyshots Radio error 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-kn3wr0=""
+          data-css-130mzdl=""
           onClick={[Function]}
         >
           <div
             data-css-11lyqbs=""
+            data-css-iwspcj=""
           >
             <div
               aria-checked={false}
@@ -419,7 +429,7 @@ exports[`Storyshots Radio error 1`] = `
             value="red"
           />
           <div
-            data-css-pgc406=""
+            data-css-13elow3=""
           >
             Red
           </div>
@@ -429,11 +439,12 @@ exports[`Storyshots Radio error 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-kn3wr0=""
+          data-css-130mzdl=""
           onClick={[Function]}
         >
           <div
             data-css-11lyqbs=""
+            data-css-iwspcj=""
           >
             <div
               aria-checked={true}
@@ -456,7 +467,7 @@ exports[`Storyshots Radio error 1`] = `
             value="green"
           />
           <div
-            data-css-pgc406=""
+            data-css-13elow3=""
           >
             Green
           </div>
@@ -466,11 +477,12 @@ exports[`Storyshots Radio error 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-kn3wr0=""
+          data-css-130mzdl=""
           onClick={[Function]}
         >
           <div
             data-css-11lyqbs=""
+            data-css-iwspcj=""
           >
             <div
               aria-checked={false}
@@ -489,7 +501,7 @@ exports[`Storyshots Radio error 1`] = `
             value="blue"
           />
           <div
-            data-css-pgc406=""
+            data-css-13elow3=""
           >
             Blue
           </div>
@@ -522,11 +534,12 @@ exports[`Storyshots Radio one selected 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-kn3wr0=""
+          data-css-130mzdl=""
           onClick={[Function]}
         >
           <div
             data-css-480533=""
+            data-css-iwspcj=""
           >
             <div
               aria-checked={false}
@@ -545,7 +558,7 @@ exports[`Storyshots Radio one selected 1`] = `
             value="red"
           />
           <div
-            data-css-pgc406=""
+            data-css-13elow3=""
           >
             Red
           </div>
@@ -555,11 +568,12 @@ exports[`Storyshots Radio one selected 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-kn3wr0=""
+          data-css-130mzdl=""
           onClick={[Function]}
         >
           <div
             data-css-480533=""
+            data-css-iwspcj=""
           >
             <div
               aria-checked={true}
@@ -582,7 +596,7 @@ exports[`Storyshots Radio one selected 1`] = `
             value="green"
           />
           <div
-            data-css-pgc406=""
+            data-css-13elow3=""
           >
             Green
           </div>
@@ -592,11 +606,12 @@ exports[`Storyshots Radio one selected 1`] = `
         data-css-xp79s5=""
       >
         <label
-          data-css-kn3wr0=""
+          data-css-130mzdl=""
           onClick={[Function]}
         >
           <div
             data-css-480533=""
+            data-css-iwspcj=""
           >
             <div
               aria-checked={false}
@@ -615,7 +630,7 @@ exports[`Storyshots Radio one selected 1`] = `
             value="blue"
           />
           <div
-            data-css-pgc406=""
+            data-css-13elow3=""
           >
             Blue
           </div>
@@ -659,11 +674,12 @@ exports[`Storyshots Radio state demo 1`] = `
           data-css-xp79s5=""
         >
           <label
-            data-css-kn3wr0=""
+            data-css-130mzdl=""
             onClick={[Function]}
           >
             <div
               data-css-480533=""
+              data-css-iwspcj=""
             >
               <div
                 aria-checked={true}
@@ -686,7 +702,7 @@ exports[`Storyshots Radio state demo 1`] = `
               value="red"
             />
             <div
-              data-css-pgc406=""
+              data-css-13elow3=""
             >
               Red
             </div>
@@ -696,11 +712,12 @@ exports[`Storyshots Radio state demo 1`] = `
           data-css-xp79s5=""
         >
           <label
-            data-css-kn3wr0=""
+            data-css-130mzdl=""
             onClick={[Function]}
           >
             <div
               data-css-480533=""
+              data-css-iwspcj=""
             >
               <div
                 aria-checked={false}
@@ -719,7 +736,7 @@ exports[`Storyshots Radio state demo 1`] = `
               value="green"
             />
             <div
-              data-css-pgc406=""
+              data-css-13elow3=""
             >
               Green
             </div>
@@ -729,11 +746,12 @@ exports[`Storyshots Radio state demo 1`] = `
           data-css-xp79s5=""
         >
           <label
-            data-css-kn3wr0=""
+            data-css-130mzdl=""
             onClick={[Function]}
           >
             <div
               data-css-480533=""
+              data-css-iwspcj=""
             >
               <div
                 aria-checked={false}
@@ -752,7 +770,7 @@ exports[`Storyshots Radio state demo 1`] = `
               value="blue"
             />
             <div
-              data-css-pgc406=""
+              data-css-13elow3=""
             >
               Blue
             </div>

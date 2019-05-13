@@ -5,7 +5,7 @@ import React from 'react'
 import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
 import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
-import css from '../css'
+import css from '../css/index.js'
 
 const radioButtonHtmlPropsWhitelist = [
   'type',
@@ -33,6 +33,7 @@ const styles = {
     ),
   circleInner: ({ checked }) =>
     glamor.css(css['.psds-radio-button__circle-inner']),
+  halo: () => glamor.css(css['.psds-radio-button__halo']),
   input: () => glamor.css(css['.psds-radio-button__input']),
   label: ({ themeName }) =>
     glamor.css(
@@ -74,6 +75,7 @@ class Button extends React.Component {
           shape={Halo.shapes.pill}
           visibleOnFocus={!allProps._disabled}
           visible={allProps._isFocused}
+          {...styles.halo()}
         >
           <div
             role="radio"
@@ -107,6 +109,7 @@ Button.propTypes = {
   checked: PropTypes.bool,
   innerRef: PropTypes.func,
   label: PropTypes.node.isRequired,
+  onClick: PropTypes.func,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   _disabled: PropTypes.bool,
   _error: PropTypes.bool,
