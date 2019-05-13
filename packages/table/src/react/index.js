@@ -9,6 +9,8 @@ import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-t
 import css from '../css'
 import * as vars from '../vars'
 
+const drawerDisplayNameRegex = new RegExp(drawerVars.drawerDisplayName)
+
 const styles = {
   cell: ({ align, emphasis, themeName }) =>
     glamor.css(
@@ -210,7 +212,7 @@ class Table extends React.Component {
       child =>
         child &&
         child.type &&
-        child.type.displayName === drawerVars.drawerDisplayName
+        drawerDisplayNameRegex.test(child.type.displayName)
     ).some(bool => bool)
 
     return (
