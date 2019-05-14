@@ -82,6 +82,154 @@ describe('#styleBelow', () => {
   })
 })
 
+describe('#styleAbove', () => {
+  it('returns undefined if no relativeEl given', () => {
+    expect(position.styleAbove()).toBeUndefined()
+  })
+
+  it('returns undefined if no el given', async () => {
+    const { getByTestId } = render(<div data-testid="relative-el" />)
+    const relativeEl = await waitForElement(() => getByTestId('relative-el'))
+    expect(position.styleAbove(relativeEl)).toBeUndefined()
+  })
+
+  it('adjusts for relative placement and dimensions', async () => {
+    const relativeEl = await createEl({
+      top: 100,
+      left: 25,
+      height: 200,
+      width: 200
+    })
+    const el = await createEl({
+      width: 100,
+      height: 50
+    })
+
+    expect(position.styleAbove(relativeEl, el)).toEqual({
+      position: 'absolute',
+      top: '38px',
+      left: '75px'
+    })
+  })
+
+  it('adjusts for element width', async () => {
+    const relativeEl = await createEl({
+      top: 100,
+      left: 25,
+      height: 200,
+      width: 200
+    })
+    const el = await createEl({
+      width: 300,
+      height: 50
+    })
+
+    expect(position.styleAbove(relativeEl, el)).toEqual({
+      position: 'absolute',
+      top: '38px',
+      left: '-25px'
+    })
+  })
+})
+
+describe('#styleRightOf', () => {
+  it('returns undefined if no relativeEl given', () => {
+    expect(position.styleRightOf()).toBeUndefined()
+  })
+
+  it('returns undefined if no el given', async () => {
+    const { getByTestId } = render(<div data-testid="relative-el" />)
+    const relativeEl = await waitForElement(() => getByTestId('relative-el'))
+    expect(position.styleRightOf(relativeEl)).toBeUndefined()
+  })
+
+  it('adjusts for relative dimensions and placement', async () => {
+    const relativeEl = await createEl({
+      top: 50,
+      height: 200,
+      width: 200
+    })
+    const el = await createEl({
+      width: 100,
+      height: 50
+    })
+
+    expect(position.styleRightOf(relativeEl, el)).toEqual({
+      position: 'absolute',
+      top: '125px',
+      left: '212px'
+    })
+  })
+
+  it('adjusts for element height', async () => {
+    const relativeEl = await createEl({
+      top: 50,
+      height: 200,
+      width: 200
+    })
+    const el = await createEl({
+      width: 100,
+      height: 250
+    })
+
+    expect(position.styleRightOf(relativeEl, el)).toEqual({
+      position: 'absolute',
+      top: '25px',
+      left: '212px'
+    })
+  })
+})
+
+describe('#styleLeftOf', () => {
+  it('returns undefined if no relativeEl given', () => {
+    expect(position.styleLeftOf()).toBeUndefined()
+  })
+
+  it('returns undefined if no el given', async () => {
+    const { getByTestId } = render(<div data-testid="relative-el" />)
+    const relativeEl = await waitForElement(() => getByTestId('relative-el'))
+    expect(position.styleLeftOf(relativeEl)).toBeUndefined()
+  })
+
+  it('adjusts for relative dimensions and placement', async () => {
+    const relativeEl = await createEl({
+      top: 50,
+      left: 300,
+      height: 200,
+      width: 200
+    })
+    const el = await createEl({
+      width: 100,
+      height: 50
+    })
+
+    expect(position.styleLeftOf(relativeEl, el)).toEqual({
+      position: 'absolute',
+      top: '125px',
+      left: '188px'
+    })
+  })
+
+  it('adjusts for element width', async () => {
+    const relativeEl = await createEl({
+      top: 50,
+      left: 300,
+      height: 200,
+      width: 200
+    })
+    const el = await createEl({
+      width: 25,
+      height: 50
+    })
+
+    expect(position.styleLeftOf(relativeEl, el)).toEqual({
+      position: 'absolute',
+      top: '125px',
+      left: '263px'
+    })
+  })
+})
+
 function randStr() {
   return (
     Math.random()
