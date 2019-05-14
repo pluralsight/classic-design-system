@@ -15,35 +15,96 @@ describe('#styleBelow', () => {
   })
 
   it('returns styles', async () => {
-    const relativeElRender = render(
-      <div
-        data-testid="relative-el"
-        style={{ position: 'absolute', top: '100px' }}
-      />
-    )
-    const relativeEl = await waitForElement(() =>
-      relativeElRender.getByTestId('relative-el')
-    )
-    relativeEl.getBoundingClientRect = () => ({
-      width: 200,
-      height: 100,
-      top: 300,
-      left: 0,
-      right: 0,
-      bottom: 0
-    })
-
-    const elRender = render(<div data-testid="el" />)
-    const el = await waitForElement(() => elRender.getByTestId('el'))
-    el.getBoundingClientRect = () => ({
+    const relativeEl = await createEl()
+    const el = await createEl({
       width: 100,
-      height: 500
+      height: 100
     })
 
     expect(position.styleBelow(relativeEl, el)).toEqual({
       position: 'absolute',
-      top: '412px',
+      top: '12px',
+      left: '-50px'
+    })
+  })
+
+  it('adjusts for relative dimensions', async () => {
+    const relativeEl = await createEl({
+      height: 200,
+      width: 200
+    })
+    const el = await createEl({
+      width: 100,
+      height: 100
+    })
+
+    expect(position.styleBelow(relativeEl, el)).toEqual({
+      position: 'absolute',
+      top: '212px',
       left: '50px'
     })
   })
+
+  it('adjusts for relative placement', async () => {
+    const relativeEl = await createEl({
+      height: 200,
+      width: 200,
+      top: 50,
+      left: 25
+    })
+    const el = await createEl({
+      width: 100,
+      height: 100
+    })
+
+    expect(position.styleBelow(relativeEl, el)).toEqual({
+      position: 'absolute',
+      top: '262px',
+      left: '75px'
+    })
+  })
+
+  it('adjusts for element width', async () => {
+    const relativeEl = await createEl({
+      height: 200,
+      width: 200
+    })
+    const el = await createEl({
+      width: 200,
+      height: 100
+    })
+
+    expect(position.styleBelow(relativeEl, el)).toEqual({
+      position: 'absolute',
+      top: '212px',
+      left: '0px'
+    })
+  })
 })
+
+function randStr() {
+  return (
+    Math.random()
+      .toString(36)
+      .substring(2, 15) +
+    Math.random()
+      .toString(36)
+      .substring(2, 15)
+  )
+}
+
+async function createEl(boundingClientRectOpts) {
+  const id = randStr()
+  const { getByTestId } = render(<div data-testid={id} />)
+  const el = await waitForElement(() => getByTestId(id))
+  el.getBoundingClientRect = () => ({
+    width: 0,
+    height: 0,
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    ...boundingClientRectOpts
+  })
+  return el
+}
