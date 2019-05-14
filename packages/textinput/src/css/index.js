@@ -68,6 +68,8 @@ export default {
   '.psds-text-input__icon': {
     position: 'absolute',
     left: core.layout.spacingXSmall,
+    top: '50%',
+    transform: 'translateY(-50%)',
     display: 'flex',
     alignItems: 'center',
     color: core.colors.gray03
