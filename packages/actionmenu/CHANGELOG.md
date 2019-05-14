@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@4.1.6...@pluralsight/ps-design-system-actionmenu@4.1.7) (2019-05-14)
+
+
+### Bug Fixes
+
+* **actionmenu:** force nested menus to focus on mount ([cdc50a7](https://github.com/pluralsight/design-system/commit/cdc50a7)), closes [#448](https://github.com/pluralsight/design-system/issues/448)
+
+
+
+
+
 ## [4.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@4.1.5...@pluralsight/ps-design-system-actionmenu@4.1.6) (2019-05-01)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu

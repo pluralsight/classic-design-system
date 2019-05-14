@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@1.0.6...@pluralsight/ps-design-system-textinput@1.0.7) (2019-05-14)
+
+
+### Bug Fixes
+
+* **textinput:** [ie11] vert center icon ([bb2e00d](https://github.com/pluralsight/design-system/commit/bb2e00d)), closes [#457](https://github.com/pluralsight/design-system/issues/457)
+
+
+
+
+
 ## [1.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@1.0.5...@pluralsight/ps-design-system-textinput@1.0.6) (2019-05-01)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textinput

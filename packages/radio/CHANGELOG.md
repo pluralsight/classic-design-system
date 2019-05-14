@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@1.0.6...@pluralsight/ps-design-system-radio@1.0.7) (2019-05-14)
+
+
+### Bug Fixes
+
+* **radio:** [ie11] dont collapse margin on label ([efd5e33](https://github.com/pluralsight/design-system/commit/efd5e33)), closes [#458](https://github.com/pluralsight/design-system/issues/458)
+* **radio:** readd flex solution back for better label wrapping ([f547942](https://github.com/pluralsight/design-system/commit/f547942))
+
+
+
+
+
 ## [1.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@1.0.5...@pluralsight/ps-design-system-radio@1.0.6) (2019-05-01)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-radio

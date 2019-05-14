@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@12.0.0...@pluralsight/ps-design-system-icon@12.0.1) (2019-05-14)
+
+
+### Bug Fixes
+
+* **icon:** fix a couple icons ([57902f3](https://github.com/pluralsight/design-system/commit/57902f3))
+
+
+
+
+
 # [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@11.2.2...@pluralsight/ps-design-system-icon@12.0.0) (2019-05-01)
 
 

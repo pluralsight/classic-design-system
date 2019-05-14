@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-prop-types@2.0.2...@pluralsight/ps-design-system-prop-types@2.0.3) (2019-05-14)
+
+
+### Bug Fixes
+
+* **prop-types:** workaround circular json error on array validations ([2ea410e](https://github.com/pluralsight/design-system/commit/2ea410e))
+
+
+
+
+
 ## [2.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-prop-types@2.0.1...@pluralsight/ps-design-system-prop-types@2.0.2) (2019-04-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-prop-types
