@@ -384,7 +384,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   tabIndex="-1"
                 />
                 <button
-                  data-css-ay0j88=""
+                  data-css-a5xmu1=""
                   disabled={false}
                   onClick={[Function]}
                 >
@@ -478,15 +478,20 @@ exports[`Storyshots Sample Form sample 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  data-css-480533=""
+                  data-css-1gbdc34=""
                 >
                   <div
-                    aria-checked={false}
-                    data-css-dbvyuf=""
-                    onFocus={[Function]}
-                    role="radio"
-                    tabIndex="-1"
-                  />
+                    data-css-480533=""
+                    data-css-iwspcj=""
+                  >
+                    <div
+                      aria-checked={false}
+                      data-css-dbvyuf=""
+                      onFocus={[Function]}
+                      role="radio"
+                      tabIndex="-1"
+                    />
+                  </div>
                 </div>
                 <input
                   checked={false}
@@ -497,7 +502,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   value="full"
                 />
                 <div
-                  data-css-pgc406=""
+                  data-css-cgsoeo=""
                 >
                   Full-time employement
                 </div>
@@ -511,15 +516,20 @@ exports[`Storyshots Sample Form sample 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  data-css-480533=""
+                  data-css-1gbdc34=""
                 >
                   <div
-                    aria-checked={false}
-                    data-css-dbvyuf=""
-                    onFocus={[Function]}
-                    role="radio"
-                    tabIndex="-1"
-                  />
+                    data-css-480533=""
+                    data-css-iwspcj=""
+                  >
+                    <div
+                      aria-checked={false}
+                      data-css-dbvyuf=""
+                      onFocus={[Function]}
+                      role="radio"
+                      tabIndex="-1"
+                    />
+                  </div>
                 </div>
                 <input
                   checked={false}
@@ -530,7 +540,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   value="part"
                 />
                 <div
-                  data-css-pgc406=""
+                  data-css-cgsoeo=""
                 >
                   Part-time employement
                 </div>
@@ -641,7 +651,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-k922kt=""
+                data-css-1srt63x=""
                 disabled={false}
                 style={Object {}}
               >
@@ -656,7 +666,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-1aqsr4g=""
+                data-css-mtq3v8=""
                 disabled={false}
                 style={Object {}}
               >

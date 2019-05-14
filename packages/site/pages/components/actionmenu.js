@@ -5,6 +5,7 @@ import Button from '@pluralsight/ps-design-system-button/react'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
+import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import {
   Chrome,
@@ -17,6 +18,132 @@ import {
   SectionHeading,
   withServerProps
 } from '../../src/ui'
+
+function InAppExample(props) {
+  const categories = [
+    {
+      name: 'Channels',
+      options: ['Dev', 'Ops', 'Design']
+    },
+    {
+      name: 'Socialz',
+      options: ['Twitz', 'DaBook', 'Instas']
+    }
+  ]
+  const [isOpen, setOpen] = React.useState(false)
+  const [selected, select] = React.useState(null)
+  function handleItemClick(opt) {
+    return _ => {
+      select(opt)
+      setOpen(false)
+    }
+  }
+  return (
+    <Theme>
+      <div className="example">
+        <Button
+          appearance={Button.appearances.secondary}
+          size={Button.sizes.small}
+          icon={<Icon id={Icon.ids.more} />}
+          onClick={_ => setOpen(!isOpen)}
+        />
+        <div
+          style={{ position: 'relative', marginTop: core.layout.spacingXSmall }}
+        >
+          {isOpen && (
+            <ActionMenu>
+              {categories.map(cat => (
+                <ActionMenu.Item
+                  key={cat}
+                  nested={
+                    <ActionMenu>
+                      {cat.options.map(opt => (
+                        <ActionMenu.Item onClick={handleItemClick(opt)}>
+                          {opt}
+                        </ActionMenu.Item>
+                      ))}
+                    </ActionMenu>
+                  }
+                >
+                  {cat.name}
+                </ActionMenu.Item>
+              ))}
+            </ActionMenu>
+          )}
+        </div>
+        <div className="label">Clicked Item: {selected}</div>
+      </div>
+
+      <Code collapsible language="javascript">{`function InAppExample(props) {
+  const categories = [ 
+    {   
+      name: 'Channels',
+      options: ['Dev', 'Ops', 'Design']
+    },  
+    {   
+      name: 'Socialz',
+      options: ['Twitz', 'DaBook', 'Instas']
+    }   
+  ]
+  const [isOpen, setOpen] = React.useState(false)
+  const [selected, select] = React.useState(null)
+  function handleItemClick(opt) {
+    return _ => {
+      select(opt)
+      setOpen(false)
+    }   
+  }
+  return (                                                                                                                                                            
+    <div>
+      <Button appearance={Button.appearances.secondary}
+        size={Button.sizes.small}
+        icon={<Icon id={Icon.ids.more} />} 
+        onClick={_ => setOpen(!isOpen)}
+      />
+      <div
+        style={{ position: 'relative', marginTop: core.layout.spacingXSmall }}
+      >
+        {isOpen && (
+          <ActionMenu>
+            {categories.map(cat => (
+              <ActionMenu.Item
+                key={cat}
+                nested={
+                  <ActionMenu>
+                    {cat.options.map(opt => (
+                      <ActionMenu.Item onClick={handleItemClick(opt)}>
+                        {opt}
+                      </ActionMenu.Item>
+                    ))}
+                  </ActionMenu>
+                }
+              >
+                {cat.name}
+              </ActionMenu.Item>
+            ))}
+          </ActionMenu>
+        )}
+      </div>
+      <div>Clicked Item: {selected}</div>
+    </div>
+  )
+}`}</Code>
+
+      <style jsx>{`
+        .example {
+          padding: ${core.layout.spacingLarge};
+          background: ${core.colors.gray06};
+          color: ${core.colors.white};
+          min-height: 200px;
+        }
+        .label {
+          padding: ${core.layout.spacingLarge} 0;
+          font-size: ${core.type.fontSizeMedium};
+        }
+      `}</style>
+    </Theme>
+  )
+}
 
 export default withServerProps(_ => (
   <Chrome>
@@ -102,39 +229,13 @@ export default withServerProps(_ => (
         }}
       />
 
-      <SectionHeading>Triggers</SectionHeading>
+      <SectionHeading>In-app example</SectionHeading>
       <P>
         Menus can originate from various affordance types: buttons, dropdowns,
         and stand-alone icons. All menus left align with the affordance by
         default.
       </P>
-      <Example.React
-        includes={{ ActionMenu, Button, Icon }}
-        codes={[
-          `
-<div>
-  <Button
-    appearance={Button.appearances.flat}
-    size={Button.sizes.small}
-    icon={<Icon id={Icon.ids.more} />}
-  />
-  <div style={{ position: 'relative' }}>
-    <ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
-      <ActionMenu.Item>
-        One menu item
-      </ActionMenu.Item>
-      <ActionMenu.Item>
-        Two menu item
-      </ActionMenu.Item>
-      <ActionMenu.Item>
-        Three menu item
-      </ActionMenu.Item>
-    </ActionMenu>
-  </div>
-</div>
-`
-        ]}
-      />
+      <InAppExample />
 
       <SectionHeading>Icons</SectionHeading>
       <P>Use icons to add context and recognition to action menu items.</P>

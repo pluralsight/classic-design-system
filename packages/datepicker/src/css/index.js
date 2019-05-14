@@ -81,9 +81,11 @@ export default {
   // __icon
   '.psds-date-picker__icon': {
     position: 'absolute',
+    top: '0',
     left: 'auto',
     right: core.layout.spacingXSmall,
     display: 'flex',
+    alignItems: 'center',
     height: '100%',
     color: core.colors.gray03,
     cursor: 'pointer',
