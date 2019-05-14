@@ -384,7 +384,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   tabIndex="-1"
                 />
                 <button
-                  data-css-ay0j88=""
+                  data-css-a5xmu1=""
                   disabled={false}
                   onClick={[Function]}
                 >
@@ -641,7 +641,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-k922kt=""
+                data-css-1srt63x=""
                 disabled={false}
                 style={Object {}}
               >
@@ -656,7 +656,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-1aqsr4g=""
+                data-css-mtq3v8=""
                 disabled={false}
                 style={Object {}}
               >
