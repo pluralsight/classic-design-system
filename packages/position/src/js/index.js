@@ -7,7 +7,7 @@ export function above(target) {
     styleFor(el, options) {
       if (!el) return
 
-      const opts = { ...options, ...defaultOptions }
+      const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
       const elRect = el.getBoundingClientRect()
       const x =
@@ -29,7 +29,7 @@ export function rightOf(target) {
     styleFor(el, options) {
       if (!el) return
 
-      const opts = { ...options, ...defaultOptions }
+      const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
       const elRect = el.getBoundingClientRect()
       const x =
@@ -54,7 +54,7 @@ export function below(target) {
     styleFor(el, options) {
       if (!el) return
 
-      const opts = { ...options, ...defaultOptions }
+      const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
       const elRect = el.getBoundingClientRect()
       const x =
@@ -79,7 +79,7 @@ export function leftOf(target) {
     styleFor(el, options) {
       if (!el) return
 
-      const opts = { ...options, ...defaultOptions }
+      const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
       const elRect = el.getBoundingClientRect()
       const x =
@@ -92,6 +92,10 @@ export function leftOf(target) {
       return formatOutputAsStyles(x, y)
     }
   }
+}
+
+function overrideDefaultOpts(opts) {
+  return { ...opts, ...defaultOptions }
 }
 
 function formatOutputAsStyles(x, y) {
