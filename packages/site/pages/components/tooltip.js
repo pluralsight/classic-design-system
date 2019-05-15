@@ -90,22 +90,22 @@ TooltipGuideline.propTypes = {
 class TooltipPositioner extends React.Component {
   constructor(props) {
     super(props)
-    this.el = null
+    this.ref = React.createRef()
     this.state = { rect: { top: 0, left: 0 } }
   }
   componentDidMount() {
-    this.setState({ rect: this.el.getBoundingClientRect() })
+    this.setState({ rect: this.ref.current.getBoundingClientRect() })
   }
   render() {
     return React.cloneElement(this.props.children, {
-      innerRef: el => (this.el = el),
-      style: this.props.styleBy(this.el)
+      ref: this.ref,
+      style: this.props.styleBy(this.ref.current)
     })
   }
 }
 TooltipPositioner.propTypes = {
-  children: PropTypes.element.isRequired,
-  styleBy: PropTypes.func.isRequired
+  children: ReactPropTypes.element.isRequired,
+  styleBy: ReactPropTypes.func.isRequired
 }
 
 class InAppExample extends React.Component {
