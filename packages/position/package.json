@@ -21,7 +21,8 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "4.4.2"
+    "@pluralsight/ps-design-system-core": "4.4.2",
+    "prop-types": "^15.7.2"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "*",
