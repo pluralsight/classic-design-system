@@ -1,17 +1,17 @@
 import createReactContext from 'create-react-context'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
-import css, { sizeClasses, themeClasses } from '../css'
-import * as vars from '../vars'
+import css, { sizeClasses, themeClasses } from '../css/index.js'
+import * as vars from '../vars/index.js'
 
-import * as illustrations from './illustrations'
-import ResizeObserver from './resize-observer'
+import * as illustrations from './illustrations/index.js'
+import useResizeObserver from './use-resize-observer.js'
 
 const Context = createReactContext({
   size: null,
@@ -110,55 +110,35 @@ Illustration.propTypes = {
   name: PropTypes.oneOf(Object.values(Illustration.names))
 }
 
-class EmptyState extends React.PureComponent {
-  constructor(props) {
-    super(props)
+const EmptyState = withTheme(function EmptyState(props) {
+  const [hasRenderedOnce, setHasRenderedOnce] = useState(false)
+  const [ref, { width }] = useResizeObserver()
 
-    this.renderSmallIfElementLessThan = 450
-  }
+  useEffect(() => {
+    setHasRenderedOnce(true)
+  }, [])
 
-  renderContent(ctx) {
-    return (
-      <Context.Provider value={ctx}>
-        <div
-          {...styles.emptyState(this.props, ctx)}
-          {...filterReactProps(this.props)}
-        >
-          {this.props.illustration}
-          {this.props.heading}
-          {this.props.caption}
-          {this.props.actions}
-        </div>
-      </Context.Provider>
-    )
-  }
+  const hasPropSizeOverride = !!props.size
+  const observableSize = width <= 450 ? vars.sizes.small : vars.sizes.large
 
-  render() {
-    const { size, themeName } = this.props
+  const size = hasPropSizeOverride ? props.size : observableSize
+  const ctx = { hasRenderedOnce, size, themeName: props.themeName }
 
-    const hasSizeOverride = !!size
-
-    if (hasSizeOverride) {
-      const ctx = { hasRenderedOnce: true, size, themeName }
-      return this.renderContent(ctx)
-    }
-
-    return (
-      <ResizeObserver observeHeight={false}>
-        {({ width }) => {
-          const hasRenderedOnce = !!width
-          const size =
-            hasRenderedOnce && width <= this.renderSmallIfElementLessThan
-              ? vars.sizes.small
-              : vars.sizes.large
-
-          const ctx = { hasRenderedOnce, size, themeName }
-          return this.renderContent(ctx)
-        }}
-      </ResizeObserver>
-    )
-  }
-}
+  return (
+    <Context.Provider value={ctx}>
+      <div
+        {...styles.emptyState(props, ctx)}
+        {...filterReactProps(props)}
+        ref={ref}
+      >
+        {props.illustration}
+        {props.heading}
+        {props.caption}
+        {props.actions}
+      </div>
+    </Context.Provider>
+  )
+})
 
 EmptyState.sizes = vars.sizes
 
@@ -183,4 +163,4 @@ EmptyState.Heading.displayName = 'EmptyState.Heading'
 EmptyState.Illustration = Illustration
 EmptyState.Illustration.displayName = 'EmptyState.Illustration'
 
-export default withTheme(EmptyState)
+export default EmptyState
