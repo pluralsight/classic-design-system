@@ -1,19 +1,13 @@
 import { render, waitForElement } from 'react-testing-library'
 import React from 'react'
 
-import { relativeTo } from '../index.js'
+import { above, below, leftOf, rightOf } from '../index.js'
 
-describe('#relativeTo', () => {
-  it('throws if no relativeEl given', () => {
-    expect(_ => relativeTo()).toThrow(/relative element required/)
-  })
-})
-
-describe('#styleBelow', () => {
+describe('#below', () => {
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="relative-el" />)
     const relativeEl = await waitForElement(() => getByTestId('relative-el'))
-    expect(relativeTo(relativeEl).styleBelow()).toBeUndefined()
+    expect(below(relativeEl).styleFor()).toBeUndefined()
   })
 
   it('returns styles', async () => {
@@ -23,7 +17,7 @@ describe('#styleBelow', () => {
       height: 100
     })
 
-    expect(relativeTo(relativeEl).styleBelow(el)).toEqual({
+    expect(below(relativeEl).styleFor(el)).toEqual({
       position: 'absolute',
       top: '12px',
       left: '-50px'
@@ -40,7 +34,7 @@ describe('#styleBelow', () => {
       height: 100
     })
 
-    expect(relativeTo(relativeEl).styleBelow(el)).toEqual({
+    expect(below(relativeEl).styleFor(el)).toEqual({
       position: 'absolute',
       top: '212px',
       left: '50px'
@@ -59,7 +53,7 @@ describe('#styleBelow', () => {
       height: 100
     })
 
-    expect(relativeTo(relativeEl).styleBelow(el)).toEqual({
+    expect(below(relativeEl).styleFor(el)).toEqual({
       position: 'absolute',
       top: '262px',
       left: '75px'
@@ -76,7 +70,7 @@ describe('#styleBelow', () => {
       height: 100
     })
 
-    expect(relativeTo(relativeEl).styleBelow(el)).toEqual({
+    expect(below(relativeEl).styleFor(el)).toEqual({
       position: 'absolute',
       top: '212px',
       left: '0px'
@@ -84,11 +78,11 @@ describe('#styleBelow', () => {
   })
 })
 
-describe('#styleAbove', () => {
+describe('#above', () => {
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="relative-el" />)
     const relativeEl = await waitForElement(() => getByTestId('relative-el'))
-    expect(relativeTo(relativeEl).styleAbove()).toBeUndefined()
+    expect(above(relativeEl).styleFor()).toBeUndefined()
   })
 
   it('adjusts for relative placement and dimensions', async () => {
@@ -103,7 +97,7 @@ describe('#styleAbove', () => {
       height: 50
     })
 
-    expect(relativeTo(relativeEl).styleAbove(el)).toEqual({
+    expect(above(relativeEl).styleFor(el)).toEqual({
       position: 'absolute',
       top: '38px',
       left: '75px'
@@ -122,7 +116,7 @@ describe('#styleAbove', () => {
       height: 50
     })
 
-    expect(relativeTo(relativeEl).styleAbove(el)).toEqual({
+    expect(above(relativeEl).styleFor(el)).toEqual({
       position: 'absolute',
       top: '38px',
       left: '-25px'
@@ -130,11 +124,11 @@ describe('#styleAbove', () => {
   })
 })
 
-describe('#styleRightOf', () => {
+describe('#rightOf', () => {
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="relative-el" />)
     const relativeEl = await waitForElement(() => getByTestId('relative-el'))
-    expect(relativeTo(relativeEl).styleRightOf()).toBeUndefined()
+    expect(rightOf(relativeEl).styleFor()).toBeUndefined()
   })
 
   it('adjusts for relative dimensions and placement', async () => {
@@ -148,7 +142,7 @@ describe('#styleRightOf', () => {
       height: 50
     })
 
-    expect(relativeTo(relativeEl).styleRightOf(el)).toEqual({
+    expect(rightOf(relativeEl).styleFor(el)).toEqual({
       position: 'absolute',
       top: '125px',
       left: '212px'
@@ -166,7 +160,7 @@ describe('#styleRightOf', () => {
       height: 250
     })
 
-    expect(relativeTo(relativeEl).styleRightOf(el)).toEqual({
+    expect(rightOf(relativeEl).styleFor(el)).toEqual({
       position: 'absolute',
       top: '25px',
       left: '212px'
@@ -174,11 +168,11 @@ describe('#styleRightOf', () => {
   })
 })
 
-describe('#styleLeftOf', () => {
+describe('#leftOf', () => {
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="relative-el" />)
     const relativeEl = await waitForElement(() => getByTestId('relative-el'))
-    expect(relativeTo(relativeEl).styleLeftOf()).toBeUndefined()
+    expect(leftOf(relativeEl).styleFor()).toBeUndefined()
   })
 
   it('adjusts for relative dimensions and placement', async () => {
@@ -193,7 +187,7 @@ describe('#styleLeftOf', () => {
       height: 50
     })
 
-    expect(relativeTo(relativeEl).styleLeftOf(el)).toEqual({
+    expect(leftOf(relativeEl).styleFor(el)).toEqual({
       position: 'absolute',
       top: '125px',
       left: '188px'
@@ -212,7 +206,7 @@ describe('#styleLeftOf', () => {
       height: 50
     })
 
-    expect(relativeTo(relativeEl).styleLeftOf(el)).toEqual({
+    expect(leftOf(relativeEl).styleFor(el)).toEqual({
       position: 'absolute',
       top: '125px',
       left: '263px'

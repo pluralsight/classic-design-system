@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import React from 'react'
 import Tooltip from '@pluralsight/ps-design-system-tooltip/react'
 
-import { relativeTo } from '../../js/index.js'
+import * as position from '../../js/index.js'
 
 // NOTE: old style refs to make storybook/storyshots happy
 class StyleStory2 extends React.Component {
@@ -15,7 +15,9 @@ class StyleStory2 extends React.Component {
     const { props } = this
     if (this.boxEl && this.tooltipEl)
       this.setState({
-        styles: relativeTo(this.boxEl)[props.styleFunction](this.tooltipEl)
+        styles: position[props.styleFunction](this.boxEl).styleFor(
+          this.tooltipEl
+        )
       })
   }
   render() {
@@ -68,9 +70,8 @@ class StyleStory2 extends React.Component {
 }
 
 const styleStory = storiesOf('Position', module)
-;['styleAbove', 'styleRightOf', 'styleBelow', 'styleLeftOf'].forEach(
-  styleFunction =>
-    styleStory.add(styleFunction, _ => {
-      return <StyleStory2 styleFunction={styleFunction} />
-    })
+;['above', 'rightOf', 'below', 'leftOf'].forEach(styleFunction =>
+  styleStory.add(styleFunction, _ => {
+    return <StyleStory2 styleFunction={styleFunction} />
+  })
 )

@@ -1,15 +1,14 @@
 const defaultOptions = { bufferWidth: 12 }
 
-export function relativeTo(target, options) {
+export function above(target) {
   if (!target) throw new TypeError('relative element required')
 
-  const opts = { ...options, ...defaultOptions }
-  const bufferWidth = opts.bufferWidth
-  const targetRect = target.getBoundingClientRect()
-
   return {
-    styleAbove(el) {
+    styleFor(el, options) {
       if (!el) return
+
+      const opts = { ...options, ...defaultOptions }
+      const targetRect = target.getBoundingClientRect()
       const elRect = el.getBoundingClientRect()
       const x =
         window.pageXOffset +
@@ -17,23 +16,46 @@ export function relativeTo(target, options) {
         targetRect.width / 2 -
         elRect.width / 2
       const y =
-        window.pageYOffset + targetRect.top - elRect.height - bufferWidth
+        window.pageYOffset + targetRect.top - elRect.height - opts.bufferWidth
       return formatOutputAsStyles(x, y)
-    },
-    styleRightOf(el) {
+    }
+  }
+}
+
+export function rightOf(target) {
+  if (!target) throw new TypeError('relative element required')
+
+  return {
+    styleFor(el, options) {
       if (!el) return
+
+      const opts = { ...options, ...defaultOptions }
+      const targetRect = target.getBoundingClientRect()
       const elRect = el.getBoundingClientRect()
       const x =
-        window.pageXOffset + targetRect.left + targetRect.width + bufferWidth
+        window.pageXOffset +
+        targetRect.left +
+        targetRect.width +
+        opts.bufferWidth
       const y =
         window.pageYOffset +
         targetRect.top +
         targetRect.height / 2 -
         elRect.height / 2
       return formatOutputAsStyles(x, y)
-    },
-    styleBelow(el) {
+    }
+  }
+}
+
+export function below(target) {
+  if (!target) throw new TypeError('relative element required')
+
+  return {
+    styleFor(el, options) {
       if (!el) return
+
+      const opts = { ...options, ...defaultOptions }
+      const targetRect = target.getBoundingClientRect()
       const elRect = el.getBoundingClientRect()
       const x =
         window.pageXOffset +
@@ -41,14 +63,27 @@ export function relativeTo(target, options) {
         targetRect.width / 2 -
         elRect.width / 2
       const y =
-        window.pageYOffset + targetRect.top + targetRect.height + bufferWidth
+        window.pageYOffset +
+        targetRect.top +
+        targetRect.height +
+        opts.bufferWidth
       return formatOutputAsStyles(x, y)
-    },
-    styleLeftOf(el) {
+    }
+  }
+}
+
+export function leftOf(target) {
+  if (!target) throw new TypeError('relative element required')
+
+  return {
+    styleFor(el, options) {
       if (!el) return
+
+      const opts = { ...options, ...defaultOptions }
+      const targetRect = target.getBoundingClientRect()
       const elRect = el.getBoundingClientRect()
       const x =
-        window.pageXOffset + targetRect.left - elRect.width - bufferWidth
+        window.pageXOffset + targetRect.left - elRect.width - opts.bufferWidth
       const y =
         window.pageYOffset +
         targetRect.top +
