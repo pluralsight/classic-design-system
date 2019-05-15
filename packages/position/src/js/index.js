@@ -6,14 +6,16 @@ export function relativeTo(target, options) {
   const opts = { ...options, ...defaultOptions }
   const bufferWidth = opts.bufferWidth
   const targetRect = target.getBoundingClientRect()
-  const targetHorzCenter = targetRect.left + targetRect.width / 2
-  const targetVertCenter = targetRect.top + targetRect.height / 2
 
   return {
     styleAbove(el) {
       if (!el) return
       const elRect = el.getBoundingClientRect()
-      const x = window.pageXOffset + targetHorzCenter - elRect.width / 2
+      const x =
+        window.pageXOffset +
+        targetRect.left +
+        targetRect.width / 2 -
+        elRect.width / 2
       const y =
         window.pageYOffset + targetRect.top - elRect.height - bufferWidth
       return formatOutputAsStyles(x, y)
@@ -21,15 +23,23 @@ export function relativeTo(target, options) {
     styleRightOf(el) {
       if (!el) return
       const elRect = el.getBoundingClientRect()
-      const y = window.pageYOffset + targetVertCenter - elRect.height / 2
       const x =
         window.pageXOffset + targetRect.left + targetRect.width + bufferWidth
+      const y =
+        window.pageYOffset +
+        targetRect.top +
+        targetRect.height / 2 -
+        elRect.height / 2
       return formatOutputAsStyles(x, y)
     },
     styleBelow(el) {
       if (!el) return
       const elRect = el.getBoundingClientRect()
-      const x = window.pageXOffset + targetHorzCenter - elRect.width / 2
+      const x =
+        window.pageXOffset +
+        targetRect.left +
+        targetRect.width / 2 -
+        elRect.width / 2
       const y =
         window.pageYOffset + targetRect.top + targetRect.height + bufferWidth
       return formatOutputAsStyles(x, y)
@@ -37,9 +47,13 @@ export function relativeTo(target, options) {
     styleLeftOf(el) {
       if (!el) return
       const elRect = el.getBoundingClientRect()
-      const y = window.pageYOffset + targetVertCenter - elRect.height / 2
       const x =
         window.pageXOffset + targetRect.left - elRect.width - bufferWidth
+      const y =
+        window.pageYOffset +
+        targetRect.top +
+        targetRect.height / 2 -
+        elRect.height / 2
       return formatOutputAsStyles(x, y)
     }
   }
