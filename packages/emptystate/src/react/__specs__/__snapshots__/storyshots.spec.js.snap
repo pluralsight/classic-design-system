@@ -2,10 +2,10 @@
 
 exports[`Storyshots EmptyState combo 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
@@ -92,10 +92,10 @@ exports[`Storyshots EmptyState in a small fixed size container 1`] = `
   }
 >
   <div
-    data-css-14nvwmy=""
+    data-css-1cq7bc2=""
   >
     <div
-      data-css-18lr9oz=""
+      data-css-1gwvklx=""
     >
       <svg
         aria-hidden={true}
@@ -176,10 +176,10 @@ exports[`Storyshots EmptyState in a small fixed size container 1`] = `
 
 exports[`Storyshots EmptyState/actions with an input 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
@@ -283,10 +283,10 @@ exports[`Storyshots EmptyState/actions with an input 1`] = `
 
 exports[`Storyshots EmptyState/actions with buttons 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
@@ -485,10 +485,10 @@ exports[`Storyshots EmptyState/actions with buttons 1`] = `
 
 exports[`Storyshots EmptyState/actions with tags 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
@@ -699,10 +699,10 @@ exports[`Storyshots EmptyState/actions with tags 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/large bookmark 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-1neb9ds=""
+    data-css-11zs1jp=""
   >
     <svg
       aria-hidden={true}
@@ -744,10 +744,10 @@ exports[`Storyshots EmptyState/illustrations/large bookmark 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/large channel 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-1neb9ds=""
+    data-css-11zs1jp=""
   >
     <svg
       aria-hidden={true}
@@ -796,10 +796,10 @@ exports[`Storyshots EmptyState/illustrations/large channel 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/large cloud 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-1neb9ds=""
+    data-css-11zs1jp=""
   >
     <svg
       aria-hidden={true}
@@ -847,10 +847,10 @@ exports[`Storyshots EmptyState/illustrations/large cloud 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/large code 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-1neb9ds=""
+    data-css-11zs1jp=""
   >
     <svg
       aria-hidden={true}
@@ -935,10 +935,10 @@ exports[`Storyshots EmptyState/illustrations/large code 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/large custom 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-1neb9ds=""
+    data-css-11zs1jp=""
   >
     <svg
       aria-hidden={true}
@@ -961,10 +961,10 @@ exports[`Storyshots EmptyState/illustrations/large custom 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/large data 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-1neb9ds=""
+    data-css-11zs1jp=""
   >
     <svg
       aria-hidden={true}
@@ -1018,10 +1018,10 @@ exports[`Storyshots EmptyState/illustrations/large data 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/large document 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-1neb9ds=""
+    data-css-11zs1jp=""
   >
     <svg
       aria-hidden={true}
@@ -1098,10 +1098,10 @@ exports[`Storyshots EmptyState/illustrations/large document 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/large magnify 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-1neb9ds=""
+    data-css-11zs1jp=""
   >
     <svg
       aria-hidden={true}
@@ -1167,10 +1167,10 @@ exports[`Storyshots EmptyState/illustrations/large magnify 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/large signal 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-1neb9ds=""
+    data-css-11zs1jp=""
   >
     <svg
       aria-hidden={true}
@@ -1225,10 +1225,10 @@ exports[`Storyshots EmptyState/illustrations/large signal 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/large video 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-1neb9ds=""
+    data-css-11zs1jp=""
   >
     <svg
       aria-hidden={true}
@@ -1265,10 +1265,10 @@ exports[`Storyshots EmptyState/illustrations/large video 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/large zen 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-1neb9ds=""
+    data-css-11zs1jp=""
   >
     <svg
       aria-hidden={true}
@@ -1318,10 +1318,10 @@ exports[`Storyshots EmptyState/illustrations/large zen 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/small bookmark 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
@@ -1358,10 +1358,10 @@ exports[`Storyshots EmptyState/illustrations/small bookmark 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/small channel 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
@@ -1415,10 +1415,10 @@ exports[`Storyshots EmptyState/illustrations/small channel 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/small cloud 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
@@ -1455,10 +1455,10 @@ exports[`Storyshots EmptyState/illustrations/small cloud 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/small code 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
@@ -1538,10 +1538,10 @@ exports[`Storyshots EmptyState/illustrations/small code 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/small custom 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
@@ -1564,10 +1564,10 @@ exports[`Storyshots EmptyState/illustrations/small custom 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/small data 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
@@ -1601,10 +1601,10 @@ exports[`Storyshots EmptyState/illustrations/small data 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/small document 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
@@ -1664,10 +1664,10 @@ exports[`Storyshots EmptyState/illustrations/small document 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/small magnify 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
@@ -1727,10 +1727,10 @@ exports[`Storyshots EmptyState/illustrations/small magnify 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/small signal 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
@@ -1766,10 +1766,10 @@ exports[`Storyshots EmptyState/illustrations/small signal 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/small video 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
@@ -1798,10 +1798,10 @@ exports[`Storyshots EmptyState/illustrations/small video 1`] = `
 
 exports[`Storyshots EmptyState/illustrations/small zen 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
@@ -1870,10 +1870,10 @@ Array [
     unmount
   </button>,
   <div
-    data-css-14nvwmy=""
+    data-css-1cq7bc2=""
   >
     <div
-      data-css-18lr9oz=""
+      data-css-1gwvklx=""
     >
       <svg
         aria-hidden={true}
@@ -1954,10 +1954,10 @@ Array [
 
 exports[`Storyshots EmptyState/sizes large 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-1neb9ds=""
+    data-css-11zs1jp=""
   >
     <svg
       aria-hidden={true}
@@ -2043,10 +2043,10 @@ exports[`Storyshots EmptyState/sizes large 1`] = `
 
 exports[`Storyshots EmptyState/sizes small 1`] = `
 <div
-  data-css-14nvwmy=""
+  data-css-1cq7bc2=""
 >
   <div
-    data-css-18lr9oz=""
+    data-css-1gwvklx=""
   >
     <svg
       aria-hidden={true}
