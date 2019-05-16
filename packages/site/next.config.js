@@ -1,4 +1,6 @@
 const { parsed: localEnv } = require('dotenv').config()
+
+const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
@@ -68,6 +70,7 @@ module.exports = {
       }
       return entries
     }
+
     config.plugins = config.plugins
       .filter(
         plugin =>
@@ -76,6 +79,12 @@ module.exports = {
           plugin.constructor.name !== 'UglifyJsPlugin'
       )
       .concat([new webpack.EnvironmentPlugin(localEnv)])
+
+    config.resolve = Object.assign({}, config.resolve, {
+      alias: Object.assign({}, (config.resolve || {}).alias, {
+        react: path.resolve(__dirname, '..', '..', 'node_modules', 'react')
+      })
+    })
     return config
   }
 }
