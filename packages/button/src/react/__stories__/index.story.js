@@ -11,32 +11,48 @@ import Button from '../index.js'
 
 const appearanceStory = storiesOf('Button / appearance', module)
 Object.keys(Button.appearances).forEach(app =>
-  appearanceStory.add(app, _ => <Button appearance={app}>Click me</Button>)
+  appearanceStory.add(app, _ => (
+    <Button key={app} appearance={app}>
+      Click me
+    </Button>
+  ))
 )
 
 const sizeStory = storiesOf('Button / size', module)
 Object.keys(Button.sizes).forEach(size =>
-  sizeStory.add(size, _ => <Button size={size}>Click me</Button>)
+  sizeStory.add(size, _ => (
+    <Button key={size} size={size}>
+      Click me
+    </Button>
+  ))
 )
 
 const iconStory = storiesOf('Button / icon', module)
 Object.keys(Button.appearances).forEach(app =>
   iconStory.add(app, _ => (
-    <Button appearance={app} icon={<Icon id={Icon.ids.check} />}>
+    <Button
+      key={app}
+      appearance={app}
+      icon={<Icon key={app} id={Icon.ids.check} />}
+    >
       With Icon
     </Button>
   ))
 )
 Object.keys(Button.iconAligns).forEach(iconAlign =>
   iconStory.add(iconAlign, _ => (
-    <Button iconAlign={iconAlign} icon={<Icon id={Icon.ids.check} />}>
+    <Button
+      key={iconAlign}
+      iconAlign={iconAlign}
+      icon={<Icon id={Icon.ids.check} />}
+    >
       With Icon
     </Button>
   ))
 )
 Object.keys(Button.sizes).forEach(size =>
   iconStory.add(size, _ => (
-    <Button size={size} icon={<Icon id={Icon.ids.check} />}>
+    <Button key={size} size={size} icon={<Icon id={Icon.ids.check} />}>
       With Icon
     </Button>
   ))
@@ -45,6 +61,7 @@ Object.keys(Button.appearances).forEach(app =>
   Object.keys(Button.sizes).forEach(size =>
     iconStory.add(`lone ${app} ${size}`, _ => (
       <Button
+        key={`${app} ${size}`}
         appearance={app}
         size={size}
         icon={<Icon id={Icon.ids.check} />}
@@ -138,14 +155,19 @@ storiesOf('Button / props pass through', module)
 const loadingExample = storiesOf('Button / loading', module)
 Object.keys(Button.sizes).forEach(size =>
   loadingExample.add(size, _ => (
-    <Button onClick={action('is disabled')} size={size} loading>
+    <Button key={size} onClick={action('is disabled')} size={size} loading>
       Loading...
     </Button>
   ))
 )
 Object.keys(Button.appearances).forEach(appearance =>
   loadingExample.add(appearance, _ => (
-    <Button appearance={appearance} size={Button.sizes.large} loading>
+    <Button
+      key={appearance}
+      appearance={appearance}
+      size={Button.sizes.large}
+      loading
+    >
       Loading...
     </Button>
   ))
@@ -198,6 +220,7 @@ storiesOf('Button / in row', module).add('same vertical height', _ => {
     <div>
       {Object.values(Button.sizes).map(size => (
         <div
+          key={size}
           style={{
             display: 'grid',
             gridTemplateColumns: Object.values(Button.appearances)
@@ -208,7 +231,7 @@ storiesOf('Button / in row', module).add('same vertical height', _ => {
           }}
         >
           {Object.values(Button.appearances).map(appearance => (
-            <Button size={size} appearance={appearance}>
+            <Button key={appearance} size={size} appearance={appearance}>
               button
             </Button>
           ))}
