@@ -26,7 +26,7 @@
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.1",
     "@pluralsight/ps-design-system-prop-types": "^2.0.3",
     "@pluralsight/ps-design-system-theme": "1.4.1",
-    "prop-types": "^15.7.0",
+    "prop-types": "^15.7.2",
     "resize-observer-polyfill": "^1.5.1"
   },
   "peerDependencies": {
