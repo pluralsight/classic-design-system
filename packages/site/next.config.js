@@ -82,9 +82,25 @@ module.exports = {
 
     config.resolve = Object.assign({}, config.resolve, {
       alias: Object.assign({}, (config.resolve || {}).alias, {
-        react: path.resolve(__dirname, '..', '..', 'node_modules', 'react')
+        react: path.resolve(
+          __dirname,
+          '..',
+          '..',
+          'node_modules',
+          'react',
+          'index.js'
+        ),
+        'react-dom': path.resolve(
+          __dirname,
+          '..',
+          '..',
+          'node_modules',
+          'react-dom',
+          'index.js'
+        )
       })
     })
+
     return config
   }
 }
