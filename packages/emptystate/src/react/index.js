@@ -1,7 +1,6 @@
-import createReactContext from 'create-react-context'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
-import React, { useEffect, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
@@ -13,10 +12,9 @@ import * as vars from '../vars/index.js'
 import * as illustrations from './illustrations/index.js'
 import useResizeObserver from './use-resize-observer.js'
 
-const Context = createReactContext({
+const Context = createContext({
   size: null,
-  themeName: null,
-  hasRenderedOnce: false
+  themeName: null
 })
 
 const combineClasses = (className, { size, themeName }) =>
@@ -27,10 +25,10 @@ const combineClasses = (className, { size, themeName }) =>
   )
 
 const styles = {
-  emptyState: (_, ctx) => {
+  emptyState: (_, ctx, { hasRenderedOnce }) => {
     return glamor.compose(
       combineClasses('.psds-emptystate', ctx),
-      !ctx.hasRenderedOnce && css['.psds-emptystate--hidden']
+      !hasRenderedOnce && css['.psds-emptystate--hidden']
     )
   },
   actions: (_, ctx) => combineClasses('.psds-emptystate__actions', ctx),
@@ -122,12 +120,12 @@ const EmptyState = withTheme(function EmptyState(props) {
   const observableSize = width <= 450 ? vars.sizes.small : vars.sizes.large
 
   const size = hasPropSizeOverride ? props.size : observableSize
-  const ctx = { hasRenderedOnce, size, themeName: props.themeName }
+  const ctx = { size, themeName: props.themeName }
 
   return (
     <Context.Provider value={ctx}>
       <div
-        {...styles.emptyState(props, ctx)}
+        {...styles.emptyState(props, ctx, { hasRenderedOnce })}
         {...filterReactProps(props)}
         ref={ref}
       >
