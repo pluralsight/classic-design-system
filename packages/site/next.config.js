@@ -38,6 +38,13 @@ module.exports = {
       '/components/layout': { page: '/components/layout' },
       '/components/linearprogress': { page: '/components/linearprogress' },
       '/components/link': { page: '/components/link' },
+      '/components/position': { page: '/components/position' },
+      '/components/position-portal-example': {
+        page: '/components/position-portal-example'
+      },
+      '/components/position-positions-example': {
+        page: '/components/position-positions-example'
+      },
       '/components/radio': { page: '/components/radio' },
       '/components/row': { page: '/components/row' },
       '/components/starrating': { page: '/components/starrating' },
