@@ -6,19 +6,19 @@ import React from 'react'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
-import css, { BASE_CLASSNAME } from '../css'
-import * as vars from '../vars'
+import css, { BASE_CLASSNAME, themeClasses } from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
 const styles = {
   halo: props => {
     const base = BASE_CLASSNAME
-    const theme = `${BASE_CLASSNAME}--theme-${props.themeName}`
+    const theme = base + themeClasses[props.themeName]
     const shape = `${BASE_CLASSNAME}--shape-${props.shape}`
     const gapSize = `${BASE_CLASSNAME}--gap-size-${props.gapSize}`
 
-    const gapTheme = gapSize + theme
+    const gapTheme = gapSize + themeClasses[props.themeName]
 
     const visible = `${BASE_CLASSNAME}--visible`
     const visibleOnFocus = `${BASE_CLASSNAME}--visible-on-focus`

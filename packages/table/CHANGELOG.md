@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@3.0.6...@pluralsight/ps-design-system-table@3.0.7) (2019-05-14)
+
+
+### Bug Fixes
+
+* **table:** align column headers with rows that are tables ([8a2372b](https://github.com/pluralsight/design-system/commit/8a2372b)), closes [#467](https://github.com/pluralsight/design-system/issues/467)
+* **table:** don't smush sort icon when column header is large ([12070c2](https://github.com/pluralsight/design-system/commit/12070c2)), closes [#463](https://github.com/pluralsight/design-system/issues/463)
+
+
+
+
+
 ## [3.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@3.0.5...@pluralsight/ps-design-system-table@3.0.6) (2019-05-01)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table

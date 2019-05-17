@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@11.0.6...@pluralsight/ps-design-system-button@11.0.7) (2019-05-14)
+
+
+### Bug Fixes
+
+* **button:** xSmall and xmall button vert center text ([916e255](https://github.com/pluralsight/design-system/commit/916e255)), closes [#469](https://github.com/pluralsight/design-system/issues/469)
+
+
+
+
+
 ## [11.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@11.0.5...@pluralsight/ps-design-system-button@11.0.6) (2019-05-01)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-button

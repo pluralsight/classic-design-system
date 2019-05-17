@@ -2,8 +2,6 @@ import core from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
 export default {
-  // group
-
   '.psds-radio-group:focus': {
     outline: 'none'
   },
@@ -11,12 +9,10 @@ export default {
     opacity: '0.5'
   },
 
-  // __button-container
   '.psds-radio-group__button-container': {
     padding: `${core.layout.spacingXXSmall} 0`
   },
 
-  // button
   '.psds-radio-button': {
     display: 'flex',
     alignItems: 'center',
@@ -24,7 +20,15 @@ export default {
     cursor: 'pointer'
   },
 
-  // __circle
+  '.psds-radio-button__halo': {
+    transform: 'translateY(3px)'
+  },
+
+  '.psds-radio-button__circle-outer': {
+    width: '16px',
+    marginRight: core.layout.spacingSmall
+  },
+
   '.psds-radio-button__circle': {
     position: 'relative',
     display: 'inline-block',
@@ -45,7 +49,6 @@ export default {
     borderColor: core.colors.blue
   },
 
-  // __circle-inner
   '.psds-radio-button__circle-inner': {
     display: 'block',
     height: 'calc(100% - 4px)',
@@ -55,14 +58,11 @@ export default {
     background: core.colors.blue
   },
 
-  // __input
   '.psds-radio-button__input': {
     display: 'none'
   },
 
-  // __label
   '.psds-radio-button__label': {
-    marginLeft: core.layout.spacingSmall,
     color: core.colors.bone,
     fontSize: core.type.fontSizeSmall,
     lineHeight: core.type.lineHeightStandard,

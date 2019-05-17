@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-switch",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Design System component for switch ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -22,7 +22,7 @@
   "keywords": [],
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.4.2",
-    "@pluralsight/ps-design-system-halo": "^3.0.3",
+    "@pluralsight/ps-design-system-halo": "^4.0.0",
     "@pluralsight/ps-design-system-theme": "^2.0.2",
     "@pluralsight/ps-design-system-util": "^2.0.2",
     "prop-types": "^15.7.0"

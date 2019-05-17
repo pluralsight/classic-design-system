@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.2.1...@pluralsight/ps-design-system-site@12.3.0) (2019-05-14)
+
+
+### Bug Fixes
+
+* **site:** row titleTruncated typo ([18f6332](https://github.com/pluralsight/design-system/commit/18f6332)), closes [#513](https://github.com/pluralsight/design-system/issues/513)
+
+
+### Features
+
+* **site:** add in-app example for actionmenu ([491aa45](https://github.com/pluralsight/design-system/commit/491aa45))
+
+
+
+
+
 ## [12.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.2.0...@pluralsight/ps-design-system-site@12.2.1) (2019-05-07)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site
