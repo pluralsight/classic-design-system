@@ -56,8 +56,8 @@ function Position(props) {
   )
 }
 Position.propTypes = {
-  children: PropTypes.element,
-  inNode: PropTypes.instanceOf(window.Element),
+  children: PropTypes.element.isRequired,
+  inNode: PropTypes.any, // NOTE: really HTML Element, but SSR not happy when mentioned.
   position: PropTypes.func,
   show: PropTypes.element,
   when: PropTypes.bool
