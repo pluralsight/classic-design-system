@@ -31,7 +31,7 @@ function Position(props) {
 
   React.useLayoutEffect(
     () => {
-      if (targetRef.current && elRef.current)
+      if (props.when && targetRef.current && elRef.current)
         setStyle(props.position(targetRef.current).styleFor(elRef.current))
     },
     [props]
@@ -42,18 +42,23 @@ function Position(props) {
       {React.cloneElement(child, {
         ref: targetRef
       })}
-      {React.cloneElement(props.show, {
-        ref: elRef,
-        style: {
-          ...child.props.style,
-          ...style
-        }
-      })}
+      {props.when &&
+        React.cloneElement(props.show, {
+          ref: elRef,
+          style: {
+            ...child.props.style,
+            ...style
+          }
+        })}
     </React.Fragment>
   )
 }
 Position.propTypes = {
   children: PropTypes.element,
   position: PropTypes.func,
-  show: PropTypes.element
+  show: PropTypes.element,
+  when: PropTypes.bool
+}
+Position.defaultProps = {
+  when: true
 }

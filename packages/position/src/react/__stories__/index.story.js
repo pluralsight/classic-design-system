@@ -86,3 +86,9 @@ const reactStory = storiesOf('react', module)
     </Position>
   ))
 )
+
+reactStory.add('when=false', () => (
+  <Below when={false} show={<Tooltip>The tip</Tooltip>}>
+    <Box>Hidden</Box>
+  </Below>
+))

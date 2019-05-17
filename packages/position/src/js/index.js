@@ -1,7 +1,7 @@
 const defaultOptions = { bufferWidth: 12 }
 
 export function above(target) {
-  if (!target) throw new TypeError('relative element required')
+  if (!target) throw new TypeError('target element required')
 
   return {
     styleFor(el, options) {
@@ -23,7 +23,7 @@ export function above(target) {
 }
 
 export function rightOf(target) {
-  if (!target) throw new TypeError('relative element required')
+  if (!target) throw new TypeError('target element required')
 
   return {
     styleFor(el, options) {
@@ -48,7 +48,7 @@ export function rightOf(target) {
 }
 
 export function below(target) {
-  if (!target) throw new TypeError('relative element required')
+  if (!target) throw new TypeError('target element required')
 
   return {
     styleFor(el, options) {
@@ -67,13 +67,14 @@ export function below(target) {
         targetRect.top +
         targetRect.height +
         opts.bufferWidth
+
       return formatOutputAsStyles(x, y)
     }
   }
 }
 
 export function leftOf(target) {
-  if (!target) throw new TypeError('relative element required')
+  if (!target) throw new TypeError('target element required')
 
   return {
     styleFor(el, options) {
