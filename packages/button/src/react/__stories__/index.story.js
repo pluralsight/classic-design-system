@@ -110,9 +110,16 @@ storiesOf('Button / as link', module)
     </Button>
   ))
 
-storiesOf('Button / with ref', module).add('ref to handle focus', _ => (
-  <Button innerRef={el => el && el.focus()}>Should be focused</Button>
-))
+storiesOf('Button / with ref', module).add('ref to handle focus', _ => {
+  function FocusStory() {
+    const ref = React.createRef()
+    React.useEffect(() => {
+      if (ref && ref.current) ref.current.focus()
+    })
+    return <Button ref={ref}>Should be focused</Button>
+  }
+  return <FocusStory />
+})
 
 storiesOf('Button / with onClick', module).add('clicks once', _ => (
   <Button onClick={action('click count')} icon={<Icon id={Icon.ids.check} />}>
@@ -142,12 +149,14 @@ storiesOf('Button / props pass through', module)
     <Button data-something="wow">Custom data attributes</Button>
   ))
   .add('title', _ => <Button title="My caption">With title</Button>)
-  .add('anchor download', _ => (
+  .add('anchor supports download', _ => (
     <Button href="/somewhere" download>
       Link with download
     </Button>
   ))
-  .add('button download', _ => <Button download>Button with download</Button>)
+  .add('button doesnt support download', _ => (
+    <Button download>Button with download</Button>
+  ))
   .add('not supported', _ => (
     <Button onMouseOver={action('mouse over')}>Should not mouseover</Button>
   ))
