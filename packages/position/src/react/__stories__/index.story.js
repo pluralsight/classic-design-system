@@ -17,6 +17,7 @@ const Box = React.forwardRef((props, ref) => (
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
+      textAlign: 'center',
       color: core.colors.pink,
       fontSize: core.type.fontSizeMedium,
       fontWeight: core.type.fontWeightBold,
@@ -92,3 +93,39 @@ reactStory.add('when=false', () => (
     <Box>Hidden</Box>
   </Below>
 ))
+
+reactStory.add('test.skip inNode', () => {
+  function InNodeStory() {
+    const portal = React.useRef()
+    const [node, setNode] = React.useState(portal.current)
+
+    React.useEffect(
+      () => {
+        setNode(portal.current)
+      },
+      [portal]
+    )
+
+    return (
+      <React.Fragment>
+        <div
+          style={{
+            position: 'relative',
+            top: '-200px',
+            left: '-100px',
+            border: `1px dashed ${core.colors.orange}`,
+            height: '300px',
+            width: '300px'
+          }}
+        >
+          <Below show={<Tooltip>The tip</Tooltip>} inNode={node}>
+            <Box>Below box stuck in relative space</Box>
+          </Below>
+        </div>
+        <div ref={portal} />
+      </React.Fragment>
+    )
+  }
+
+  return <InNodeStory />
+})

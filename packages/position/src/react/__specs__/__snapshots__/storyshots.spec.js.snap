@@ -13,6 +13,7 @@ exports[`Storyshots js above 1`] = `
         "fontWeight": 700,
         "height": "200px",
         "justifyContent": "center",
+        "textAlign": "center",
         "width": "200px",
       }
     }
@@ -51,6 +52,7 @@ exports[`Storyshots js below 1`] = `
         "fontWeight": 700,
         "height": "200px",
         "justifyContent": "center",
+        "textAlign": "center",
         "width": "200px",
       }
     }
@@ -89,6 +91,7 @@ exports[`Storyshots js leftOf 1`] = `
         "fontWeight": 700,
         "height": "200px",
         "justifyContent": "center",
+        "textAlign": "center",
         "width": "200px",
       }
     }
@@ -123,6 +126,7 @@ exports[`Storyshots js rightOf 1`] = `
         "fontWeight": 700,
         "height": "200px",
         "justifyContent": "center",
+        "textAlign": "center",
         "width": "200px",
       }
     }
@@ -157,6 +161,7 @@ Array [
         "fontWeight": 700,
         "height": "200px",
         "justifyContent": "center",
+        "textAlign": "center",
         "width": "200px",
       }
     }
@@ -191,6 +196,7 @@ Array [
         "fontWeight": 700,
         "height": "200px",
         "justifyContent": "center",
+        "textAlign": "center",
         "width": "200px",
       }
     }
@@ -225,6 +231,7 @@ Array [
         "fontWeight": 700,
         "height": "200px",
         "justifyContent": "center",
+        "textAlign": "center",
         "width": "200px",
       }
     }
@@ -259,6 +266,7 @@ Array [
         "fontWeight": 700,
         "height": "200px",
         "justifyContent": "center",
+        "textAlign": "center",
         "width": "200px",
       }
     }
@@ -292,6 +300,7 @@ exports[`Storyshots react when=false 1`] = `
       "fontWeight": 700,
       "height": "200px",
       "justifyContent": "center",
+      "textAlign": "center",
       "width": "200px",
     }
   }

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import ReactDOM from 'react-dom'
 
 import { above, below, leftOf, rightOf } from '../js/index.js'
 
@@ -34,27 +35,29 @@ function Position(props) {
       if (props.when && targetRef.current && elRef.current)
         setStyle(props.position(targetRef.current).styleFor(elRef.current))
     },
-    [props]
+    [props.when, targetRef, elRef, props]
   )
 
+  const show = React.cloneElement(props.show, {
+    ref: elRef,
+    style: {
+      ...child.props.style,
+      ...style
+    }
+  })
   return (
     <React.Fragment>
       {React.cloneElement(child, {
         ref: targetRef
       })}
       {props.when &&
-        React.cloneElement(props.show, {
-          ref: elRef,
-          style: {
-            ...child.props.style,
-            ...style
-          }
-        })}
+        (props.inNode ? ReactDOM.createPortal(show, props.inNode) : show)}
     </React.Fragment>
   )
 }
 Position.propTypes = {
   children: PropTypes.element,
+  inNode: PropTypes.instanceOf(window.Element),
   position: PropTypes.func,
   show: PropTypes.element,
   when: PropTypes.bool

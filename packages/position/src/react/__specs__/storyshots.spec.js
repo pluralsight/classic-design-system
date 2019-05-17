@@ -10,5 +10,6 @@ const createNodeMock = el => document.createElement('div')
 
 initStoryshots({
   configPath: path.resolve(__dirname, '..', '..', '..', '.storybook'),
-  test: snapshotWithOptions({ createNodeMock })
+  test: snapshotWithOptions({ createNodeMock }),
+  storyNameRegex: /^((?!.*?test\.skip).)*$/
 })
