@@ -1,7 +1,9 @@
-import { render, waitForElement } from 'react-testing-library'
+import { cleanup, render, waitForElement } from 'react-testing-library'
 import React from 'react'
 
 import { above, below, leftOf, rightOf } from '../index.js'
+
+afterEach(cleanup)
 
 describe('#below', () => {
   it('throws if no target el given', () => {
