@@ -121,15 +121,15 @@ const renderIcon = props =>
   ) : null
 
 const Button = withTheme(
-  React.forwardRef((props, forwardedRef) => {
-    const ref = React.useRef(forwardedRef)
+  React.forwardRef((props, ref) => {
+    if (!ref) ref = React.useRef()
     const nonLoadingWidth = React.useMemo(
       () => {
         if (props.loading && ref && ref.current) {
           return ref.current.offsetWidth
         }
       },
-      [props.loading]
+      [props.loading, ref]
     )
 
     const tagName = props.href ? 'a' : 'button'
