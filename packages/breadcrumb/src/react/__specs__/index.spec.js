@@ -30,10 +30,10 @@ test('click on disabled button with href does not trigger onClick', () => {
   expect(callCount).toBe(0)
 })
 
-test('custom innerRef function called', () => {
-  const innerRef = jest.fn()
+test('passes ref to button', () => {
+  const ref = React.createRef(0)
 
-  mount(<Breadcrumb innerRef={innerRef} />)
+  mount(<Breadcrumb ref={ref} />)
 
-  expect(innerRef).toHaveBeenCalled()
+  expect(ref.current).not.toBeUndefined()
 })
