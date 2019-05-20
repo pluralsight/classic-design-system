@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@2.0.7...@pluralsight/ps-design-system-breadcrumb@3.0.0) (2019-05-20)
+
+
+### Features
+
+* **breadcrumb:** support forwardRef ([cf6886f](https://github.com/pluralsight/design-system/commit/cf6886f))
+
+
+### BREAKING CHANGES
+
+* **breadcrumb:** support forwardRef
+
+
+
+
+
 ## [2.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@2.0.6...@pluralsight/ps-design-system-breadcrumb@2.0.7) (2019-05-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
