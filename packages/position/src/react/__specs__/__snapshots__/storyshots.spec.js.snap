@@ -1,0 +1,310 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots js above 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    above
+  </div>
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "0px",
+        "position": "absolute",
+        "top": "-12px",
+      }
+    }
+  >
+    The tip
+    <div
+      aria-hidden={true}
+      data-css-1d2693s=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots js below 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    below
+  </div>
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "0px",
+        "position": "absolute",
+        "top": "12px",
+      }
+    }
+  >
+    The tip
+    <div
+      aria-hidden={true}
+      data-css-ni1fj4=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots js leftOf 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    leftOf
+  </div>
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "-12px",
+        "position": "absolute",
+        "top": "0px",
+      }
+    }
+  >
+    The tip
+  </div>
+</div>
+`;
+
+exports[`Storyshots js rightOf 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    rightOf
+  </div>
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "12px",
+        "position": "absolute",
+        "top": "0px",
+      }
+    }
+  >
+    The tip
+  </div>
+</div>
+`;
+
+exports[`Storyshots react Above 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    &lt;Above/&gt;
+  </div>,
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "0px",
+        "position": "absolute",
+        "top": "-12px",
+      }
+    }
+  >
+    The tip
+  </div>,
+]
+`;
+
+exports[`Storyshots react Below 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    &lt;Below/&gt;
+  </div>,
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "0px",
+        "position": "absolute",
+        "top": "12px",
+      }
+    }
+  >
+    The tip
+  </div>,
+]
+`;
+
+exports[`Storyshots react LeftOf 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    &lt;LeftOf/&gt;
+  </div>,
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "-12px",
+        "position": "absolute",
+        "top": "0px",
+      }
+    }
+  >
+    The tip
+  </div>,
+]
+`;
+
+exports[`Storyshots react RightOf 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    &lt;RightOf/&gt;
+  </div>,
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "12px",
+        "position": "absolute",
+        "top": "0px",
+      }
+    }
+  >
+    The tip
+  </div>,
+]
+`;
+
+exports[`Storyshots react when=false 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "border": "4px dashed #e80a89",
+      "color": "#e80a89",
+      "display": "flex",
+      "fontSize": "18px",
+      "fontWeight": 700,
+      "height": "200px",
+      "justifyContent": "center",
+      "textAlign": "center",
+      "width": "200px",
+    }
+  }
+>
+  Hidden
+</div>
+`;
