@@ -2,32 +2,11 @@ import { mount } from 'enzyme'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { defaultName as themeDefaultName } from '..'
-import withTheme from '../with-theme'
+import Theme, { withTheme, defaultName } from '../index.js'
 
 describe('withTheme', () => {
-  const providerThemeName = 'provider-theme-name'
-
-  class ThemeProvider extends React.Component {
-    getChildContext() {
-      return { themeName: providerThemeName }
-    }
-
-    render() {
-      return <React.Fragment {...this.props} />
-    }
-  }
-
-  ThemeProvider.childContextTypes = {
-    themeName: PropTypes.string.isRequired
-  }
-
-  ThemeProvider.propTypes = {
-    children: PropTypes.node.isRequired
-  }
-
   function mountWithThemeProvider(child) {
-    return mount(<ThemeProvider>{child}</ThemeProvider>)
+    return mount(<Theme>{child}</Theme>)
   }
 
   const MockComponent = props => (
@@ -60,7 +39,7 @@ describe('withTheme', () => {
       const wrapper = mountWithThemeProvider(<EnhancedComponent />)
       const comp = wrapper.find(MockComponent)
 
-      expect(comp.prop('themeName')).toEqual(providerThemeName)
+      expect(comp.prop('themeName')).toEqual(defaultName)
     })
   })
 
@@ -69,7 +48,7 @@ describe('withTheme', () => {
       const wrapper = mount(<EnhancedComponent />)
       const comp = wrapper.find(MockComponent)
 
-      expect(comp.prop('themeName')).toEqual(themeDefaultName)
+      expect(comp.prop('themeName')).toEqual(defaultName)
     })
   })
 })
