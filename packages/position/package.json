@@ -1,0 +1,48 @@
+{
+  "name": "@pluralsight/ps-design-system-position",
+  "version": "1.1.0",
+  "description": "Position UI Component for the Pluralsight Design System",
+  "license": "Apache-2.0",
+  "repository": "pluralsight/design-system",
+  "main": "index.js",
+  "module": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "run-s build:js build:css",
+    "build:css": "build-css",
+    "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build:watch": "npm run build:js -- --watch",
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "test": "../../node_modules/.bin/jest",
+    "test:updateSnapshot": "npm run test -- --updateSnapshot",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "dependencies": {
+    "@pluralsight/ps-design-system-core": "4.4.2",
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "@pluralsight/ps-design-system-normalize": "*",
+    "glamor": "^2.x.x",
+    "react": ">=16.8.6 < 17.0.0"
+  },
+  "devDependencies": {
+    "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-storybook-addon-center": "*",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "*",
+    "@pluralsight/ps-design-system-tooltip": "^4.0.0",
+    "@storybook/addon-actions": "^4.0.0",
+    "@storybook/addon-storyshots": "^4.0.0",
+    "@storybook/addons": "^4.0.0",
+    "@storybook/react": "^4.0.0",
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "npm-run-all": "^4.1.2",
+    "react-testing-library": "^7.0.0"
+  }
+}

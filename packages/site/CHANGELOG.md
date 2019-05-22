@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.3.0...@pluralsight/ps-design-system-site@12.4.0) (2019-05-20)
+
+
+### Bug Fixes
+
+* **site:** point at single react and react-dom for hooks ([311c865](https://github.com/pluralsight/design-system/commit/311c865))
+* **site:** support position component with hooks ([5aa74f2](https://github.com/pluralsight/design-system/commit/5aa74f2)), closes [/github.com/facebook/react/issues/13991#issuecomment-435587809](https://github.com//github.com/facebook/react/issues/13991/issues/issuecomment-435587809)
+
+
+### Features
+
+* **site:** position component docs ([8d68098](https://github.com/pluralsight/design-system/commit/8d68098))
+
+
+
+
+
 # [12.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.2.1...@pluralsight/ps-design-system-site@12.3.0) (2019-05-14)
 
 

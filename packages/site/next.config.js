@@ -1,4 +1,6 @@
 const { parsed: localEnv } = require('dotenv').config()
+
+const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
@@ -36,6 +38,13 @@ module.exports = {
       '/components/layout': { page: '/components/layout' },
       '/components/linearprogress': { page: '/components/linearprogress' },
       '/components/link': { page: '/components/link' },
+      '/components/position': { page: '/components/position' },
+      '/components/position-portal-example': {
+        page: '/components/position-portal-example'
+      },
+      '/components/position-positions-example': {
+        page: '/components/position-positions-example'
+      },
       '/components/radio': { page: '/components/radio' },
       '/components/row': { page: '/components/row' },
       '/components/starrating': { page: '/components/starrating' },
@@ -68,6 +77,7 @@ module.exports = {
       }
       return entries
     }
+
     config.plugins = config.plugins
       .filter(
         plugin =>
@@ -76,6 +86,28 @@ module.exports = {
           plugin.constructor.name !== 'UglifyJsPlugin'
       )
       .concat([new webpack.EnvironmentPlugin(localEnv)])
+
+    config.resolve = Object.assign({}, config.resolve, {
+      alias: Object.assign({}, (config.resolve || {}).alias, {
+        react: path.resolve(
+          __dirname,
+          '..',
+          '..',
+          'node_modules',
+          'react',
+          'index.js'
+        ),
+        'react-dom': path.resolve(
+          __dirname,
+          '..',
+          '..',
+          'node_modules',
+          'react-dom',
+          'index.js'
+        )
+      })
+    })
+
     return config
   }
 }

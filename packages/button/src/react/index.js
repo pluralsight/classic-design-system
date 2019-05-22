@@ -1,14 +1,14 @@
 import * as glamor from 'glamor'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Icon, {
   sizes as iconSizes
 } from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
-import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
-import css from '../css'
-import * as vars from '../vars'
+import css from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const spin = glamor.css.keyframes(
   css['@keyframes psds-button__keyframes__spin']
@@ -93,22 +93,6 @@ const styles = {
   text: _ => glamor.css(css[`.psds-button__text`])
 }
 
-const buttonHtmlPropsWhitelist = [
-  'href',
-  'onClick',
-  'disabled',
-  'download',
-  'className',
-  'role',
-  'style',
-  'title',
-  'tabIndex',
-  'target',
-  /onMouse/,
-  /^aria-/,
-  /^data-/
-]
-
 const mapIconSize = props => {
   const btnToIconSizes = {
     [vars.sizes.xSmall]: iconSizes.small,
@@ -136,42 +120,42 @@ const renderIcon = props =>
     </div>
   ) : null
 
-class Button extends React.Component {
-  componentWillReceiveProps(nextProps) {
-    const isSwitchFromNonLoadingToLoading =
-      !this.props.loading && nextProps.loading
-    if (isSwitchFromNonLoadingToLoading && !this.props.icon && this.el) {
-      this.nonLoadingWidth = this.el.offsetWidth
-    } else {
-      this.nonLoadingWidth = null
-    }
-  }
-  render() {
-    const { context, props } = this
-    const isLoadingWithNoText = !!this.nonLoadingWidth
+const Button = withTheme(
+  React.forwardRef((props, ref) => {
+    if (!ref) ref = React.useRef()
+    const nonLoadingWidth = React.useMemo(
+      () => {
+        if (props.loading && ref && ref.current) {
+          return ref.current.offsetWidth
+        }
+      },
+      [props.loading, ref]
+    )
+
+    const tagName = props.href ? 'a' : 'button'
+    const isLoadingWithNoText = !!nonLoadingWidth
     const allProps = {
       ...props,
       isLoadingWithNoText,
-      iconOnly: React.Children.count(props.children) <= 0,
-      themeName: context.themeName || themeDefaultName
+      iconOnly: React.Children.count(props.children) <= 0
     }
+
+    const isDisabledLink = allProps.disabled && allProps.href
+    let filteredProps = filterReactProps(props, { tagName })
+    delete filteredProps.icon
+    if (isDisabledLink) {
+      delete filteredProps.onClick
+    }
+
     return React.createElement(
-      this.props.href ? 'a' : 'button',
+      tagName,
       {
         ...styles.button(allProps),
-        ...propsUtil.whitelistProps(
-          allProps,
-          allProps.disabled && allProps.href
-            ? buttonHtmlPropsWhitelist.filter(prop => prop !== 'onClick')
-            : buttonHtmlPropsWhitelist
-        ),
-        disabled: this.props.disabled || this.props.loading,
-        ref: el => {
-          this.el = el
-          if (typeof props.innerRef === 'function') props.innerRef(el)
-        },
+        ...filteredProps,
+        disabled: props.disabled || props.loading,
+        ref,
         style: isLoadingWithNoText
-          ? { ...props.style, width: this.nonLoadingWidth }
+          ? { ...props.style, width: nonLoadingWidth }
           : props.style || {}
       },
       renderIcon(allProps),
@@ -179,17 +163,20 @@ class Button extends React.Component {
         <span {...styles.text(allProps)}>{allProps.children}</span>
       )
     )
-  }
-}
+  })
+)
 
 Button.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
+  children: PropTypes.any,
   disabled: PropTypes.bool,
+  href: PropTypes.string,
   icon: PropTypes.element,
   iconAlign: PropTypes.oneOf(Object.keys(vars.iconAligns)),
   innerRef: PropTypes.func,
   loading: PropTypes.bool,
-  size: PropTypes.oneOf(Object.keys(vars.sizes))
+  size: PropTypes.oneOf(Object.keys(vars.sizes)),
+  style: PropTypes.object
 }
 Button.defaultProps = {
   appearance: vars.appearances.primary,

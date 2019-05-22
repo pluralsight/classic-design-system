@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@3.0.3...@pluralsight/ps-design-system-tooltip@4.0.0) (2019-05-20)
+
+
+### Features
+
+* **tooltip:** add React.forwardRef ([292928d](https://github.com/pluralsight/design-system/commit/292928d))
+
+
+### BREAKING CHANGES
+
+* **tooltip:** support React.forwardRef
+
+
+
+
+
 ## [3.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@3.0.2...@pluralsight/ps-design-system-tooltip@3.0.3) (2019-04-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tooltip

@@ -2,7 +2,7 @@ import { mount, shallow } from 'enzyme'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
 
-import Button from '../index'
+import Button from '../index.js'
 
 test('click on button triggered once', () => {
   let callCount = 0
@@ -38,10 +38,10 @@ test('click on disabled button with href does not trigger onClick', () => {
   expect(callCount).toBe(0)
 })
 
-test('custom innerRef function called', () => {
-  const innerRef = jest.fn()
-  mount(<Button innerRef={innerRef} />)
-  expect(innerRef).toHaveBeenCalled()
+test('forwards a ref', () => {
+  const ref = React.createRef()
+  mount(<Button ref={ref} />)
+  expect(ref.current).not.toBeNull()
 })
 
 // TODO: once enzyme supports event propagation, impl test for clicking icon
