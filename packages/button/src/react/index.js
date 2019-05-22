@@ -123,14 +123,11 @@ const renderIcon = props =>
 const Button = React.forwardRef((props, ref) => {
   const themeName = useTheme()
   if (!ref) ref = React.useRef()
-  const nonLoadingWidth = React.useMemo(
-    () => {
-      if (props.loading && ref && ref.current) {
-        return ref.current.offsetWidth
-      }
-    },
-    [props.loading, ref]
-  )
+  const nonLoadingWidth = React.useMemo(() => {
+    if (props.loading && ref && ref.current) {
+      return ref.current.offsetWidth
+    }
+  }, [props.loading, ref])
 
   const tagName = props.href ? 'a' : 'button'
   const isLoadingWithNoText = !!nonLoadingWidth
