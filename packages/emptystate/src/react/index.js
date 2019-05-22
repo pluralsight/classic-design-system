@@ -108,16 +108,19 @@ Illustration.propTypes = {
   name: PropTypes.oneOf(Object.values(Illustration.names))
 }
 
+const renderSmallIfElementLessThan = 450
+
 const EmptyState = withTheme(function EmptyState(props) {
   const [hasRenderedOnce, setHasRenderedOnce] = useState(false)
-  const [ref, { width }] = useResizeObserver()
+  const { ref, width } = useResizeObserver()
 
   useEffect(() => {
     setHasRenderedOnce(true)
   }, [])
 
   const hasPropSizeOverride = !!props.size
-  const observableSize = width <= 450 ? vars.sizes.small : vars.sizes.large
+  const observableSize =
+    width <= renderSmallIfElementLessThan ? vars.sizes.small : vars.sizes.large
 
   const size = hasPropSizeOverride ? props.size : observableSize
   const ctx = { size, themeName: props.themeName }

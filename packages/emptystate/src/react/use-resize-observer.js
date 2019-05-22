@@ -33,7 +33,7 @@ export default function useResizeObserver() {
     }
   }, [])
 
-  return [ref, { width, height }]
+  return { ref, width, height }
 }
 
 function debounce(delay, fn) {
