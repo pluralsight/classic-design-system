@@ -20,7 +20,7 @@ class InAppExample extends React.Component {
   constructor(props) {
     super(props)
     this.state = { activeIndex: 2 }
-    this.menus = [1, 2, 3, 4, 5].map(i => ({
+    this.menus = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map(i => ({
       id: `example${i}`,
       label: `Menu ${i}`,
       content: `Menu stuff ${i}`
@@ -63,7 +63,7 @@ class InAppExample extends React.Component {
   constructor(props) {
     super(props)
     this.state = { activeIndex: 2 }
-    this.menus = [1, 2, 3, 4, 5].map(i => ({
+    this.menus = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map(i => ({
       id: 'example' + i,
       label: 'Menu ' + i,
       content: 'Menu stuff ' + i
