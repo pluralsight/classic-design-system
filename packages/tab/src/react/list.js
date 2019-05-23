@@ -24,6 +24,7 @@ const styles = {
       css[`.psds-tab__overflow-button.psds-theme--${themeName}`],
       css[`.psds-tab__overflow-button--${position}.psds-theme--${themeName}`]
     ),
+  overflowButtonIcon: () => glamor.css(css['.psds-tab__overflow-button__icon']),
   slider: () => glamor.css(css['.psds-tab__slider'])
 }
 
@@ -31,11 +32,15 @@ const OverflowButton = withTheme(props => {
   const { themeName, ...rest } = props
   return (
     <button {...styles.overflowButton(props)} tabIndex="-1" {...rest}>
-      <Icon
-        id={
-          props.position === 'right' ? Icon.ids.caretRight : Icon.ids.caretLeft
-        }
-      />
+      <div {...styles.overflowButtonIcon()}>
+        <Icon
+          id={
+            props.position === 'right'
+              ? Icon.ids.caretRight
+              : Icon.ids.caretLeft
+          }
+        />
+      </div>
     </button>
   )
 })

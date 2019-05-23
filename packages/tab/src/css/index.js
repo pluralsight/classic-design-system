@@ -83,7 +83,12 @@ export default {
     border: 0,
     zIndex: 1,
     cursor: 'pointer',
-    outline: 'none'
+    outline: 'none',
+
+    // > __icon
+    '&:hover > div': {
+      background: core.colors.gray03
+    }
   },
   '.psds-tab__overflow-button--left': {
     left: 0,
@@ -117,6 +122,15 @@ export default {
       0.1,
       core.colors.white
     )} 50%)`
+  },
+  '.psds-tab__overflow-button__icon': {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '32px',
+    width: '32px',
+    borderRadius: '50%',
+    transition: `all ${core.motion.speedFast} ease-in-out`
   },
 
   // __list-item
