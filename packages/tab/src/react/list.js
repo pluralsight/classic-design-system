@@ -45,8 +45,11 @@ const List = React.forwardRef(function List(props, ref) {
   const [activeIndex, setActiveIndex] = React.useState(
     activeIndexFromProps > -1 ? activeIndexFromProps : 0
   )
-  const itemRefs = React.Children.map(props.children, () => React.createRef())
-  React.useMemo(
+  const itemRefs = React.useMemo(
+    _ => React.Children.map(props.children, () => React.createRef()),
+    [props.children]
+  )
+  React.useEffect(
     () => {
       if (activeIndex !== activeIndexFromProps && activeIndexFromProps !== -1)
         setActiveIndex(activeIndexFromProps)
