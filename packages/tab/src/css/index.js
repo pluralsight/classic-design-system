@@ -112,6 +112,7 @@ export default {
 
   // __list-item
   '.psds-tab__list-item': {
+    flexShrink: '0',
     height: '100%',
     background: 'none',
     border: 0,
