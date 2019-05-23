@@ -56,4 +56,5 @@ ListItem.defaultProps = {
   active: false
 }
 
+// TODO: need to upgrade withTheme from the new useTheme branch
 export default withTheme(ListItem)
