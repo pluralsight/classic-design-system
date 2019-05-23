@@ -20,7 +20,7 @@ exports[`Storyshots default as links 1`] = `
           tabIndex="0"
         >
           <div
-            data-css-1mwad1w=""
+            data-css-1j58npp=""
             style={
               Object {
                 "transform": "translateX(0px)",
@@ -75,7 +75,7 @@ exports[`Storyshots default default 1`] = `
             tabIndex="0"
           >
             <div
-              data-css-1mwad1w=""
+              data-css-1j58npp=""
               style={
                 Object {
                   "transform": "translateX(0px)",
@@ -211,7 +211,7 @@ exports[`Storyshots default no items 1`] = `
           tabIndex="0"
         >
           <div
-            data-css-1mwad1w=""
+            data-css-1j58npp=""
             style={
               Object {
                 "transform": "translateX(0px)",
@@ -245,7 +245,7 @@ exports[`Storyshots default super long item 1`] = `
           tabIndex="0"
         >
           <div
-            data-css-1mwad1w=""
+            data-css-1j58npp=""
             style={
               Object {
                 "transform": "translateX(0px)",
@@ -335,7 +335,7 @@ exports[`Storyshots scrolling 10 count 1`] = `
             tabIndex="0"
           >
             <div
-              data-css-1mwad1w=""
+              data-css-1j58npp=""
               style={
                 Object {
                   "transform": "translateX(0px)",
@@ -562,7 +562,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
             tabIndex="0"
           >
             <div
-              data-css-1mwad1w=""
+              data-css-1j58npp=""
               style={
                 Object {
                   "transform": "translateX(0px)",
@@ -969,7 +969,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
             tabIndex="0"
           >
             <div
-              data-css-1mwad1w=""
+              data-css-1j58npp=""
               style={
                 Object {
                   "transform": "translateX(0px)",
@@ -1556,7 +1556,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
             tabIndex="0"
           >
             <div
-              data-css-1mwad1w=""
+              data-css-1j58npp=""
               style={
                 Object {
                   "transform": "translateX(0px)",
@@ -2241,7 +2241,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
               tabIndex="0"
             >
               <div
-                data-css-1mwad1w=""
+                data-css-1j58npp=""
                 style={
                   Object {
                     "transform": "translateX(0px)",
@@ -2923,7 +2923,7 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
           tabIndex="0"
         >
           <div
-            data-css-1mwad1w=""
+            data-css-1j58npp=""
             style={
               Object {
                 "transform": "translateX(0px)",
@@ -2976,7 +2976,7 @@ exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
           tabIndex="0"
         >
           <div
-            data-css-1mwad1w=""
+            data-css-1j58npp=""
             style={
               Object {
                 "transform": "translateX(0px)",
@@ -3035,7 +3035,7 @@ exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
             tabIndex="0"
           >
             <div
-              data-css-1mwad1w=""
+              data-css-1j58npp=""
               style={
                 Object {
                   "transform": "translateX(0px)",

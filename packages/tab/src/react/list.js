@@ -1,3 +1,4 @@
+import core from '@pluralsight/ps-design-system-core'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
 import Icon from '@pluralsight/ps-design-system-icon/react'
@@ -6,6 +7,8 @@ import React from 'react'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
+
+const slideAnimationLength = parseInt(core.motion.speedSlow) + 1
 
 const styles = {
   list: ({ themeName }) =>
@@ -70,20 +73,29 @@ const List = React.forwardRef(function List(props, listRef) {
   )
   // TODO: handle window resize
 
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms))
+  }
+
   React.useEffect(
     () => {
-      const listWidth = getWidth(listRef)
-      const sliderWidth = getWidth(sliderRef)
-      const isOverflowingRight = sliderWidth + xOffset > listWidth
+      async function calcOverflow() {
+        await sleep(slideAnimationLength)
+        const listWidth = getWidth(listRef)
+        const sliderWidth = getWidth(sliderRef)
+        const isOverflowingRight = sliderWidth + xOffset > listWidth
 
-      const listLeftX = getLeftX(listRef)
-      const sliderLeftX = getLeftX(sliderRef)
-      const isOverflowingLeft = sliderLeftX + xOffset < listLeftX
+        const listLeftX = getLeftX(listRef)
+        const sliderLeftX = getLeftX(sliderRef)
+        const isOverflowingLeft = sliderLeftX + xOffset < listLeftX
 
-      setDims({
-        isOverflowingLeft,
-        isOverflowingRight
-      })
+        setDims({
+          isOverflowingLeft,
+          isOverflowingRight
+        })
+      }
+
+      calcOverflow()
     },
     [listRef, sliderRef, xOffset]
   )

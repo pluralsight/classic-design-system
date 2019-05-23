@@ -67,8 +67,8 @@ export default {
     left: 0,
     display: 'flex',
     height: '64px',
-    transform: 'translateX(0)'
-    // transition: `transform ${core.motion.speedSlow} ease-in-out`
+    transform: 'translateX(0)',
+    transition: `transform ${core.motion.speedSlow} ease-in-out`
   },
 
   '.psds-tab__overflow-button': {
