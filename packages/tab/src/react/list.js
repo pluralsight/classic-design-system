@@ -7,6 +7,7 @@ import React from 'react'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
+import useResizeObserver from './use-resize-observer.js'
 
 const slideAnimationLength = parseInt(core.motion.speedSlow) + 1
 
@@ -45,8 +46,9 @@ OverflowButton.propTypes = {
 const findActiveIndex = els =>
   React.Children.toArray(els).findIndex(el => el && el.props.active)
 
-const List = React.forwardRef(function List(props, listRef) {
-  if (!listRef) listRef = React.useRef() // eslint-disable-line react-hooks/rules-of-hooks
+function List(props) {
+  const { ref: listRef, width: listWidth } = useResizeObserver()
+
   const sliderRef = React.useRef()
   const activeIndexFromProps = findActiveIndex(props.children)
 
@@ -71,33 +73,53 @@ const List = React.forwardRef(function List(props, listRef) {
     },
     [activeIndex, activeIndexFromProps]
   )
-  // TODO: handle window resize
-
-  function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms))
-  }
 
   React.useEffect(
     () => {
-      async function calcOverflow() {
-        await sleep(slideAnimationLength)
-        const listWidth = getWidth(listRef)
-        const sliderWidth = getWidth(sliderRef)
-        const isOverflowingRight = sliderWidth + xOffset > listWidth
+      let timer
+      function calcOverflow() {
+        timer = setTimeout(() => {
+          const sliderWidth = getWidth(sliderRef)
+          const isOverflowingRight = sliderWidth + xOffset > listWidth
 
-        const listLeftX = getLeftX(listRef)
-        const sliderLeftX = getLeftX(sliderRef)
-        const isOverflowingLeft = sliderLeftX + xOffset < listLeftX
+          const listLeftX = getLeftX(listRef)
+          const sliderLeftX = getLeftX(sliderRef)
+          const isOverflowingLeft = sliderLeftX + xOffset < listLeftX
 
-        setDims({
-          isOverflowingLeft,
-          isOverflowingRight
-        })
+          setDims({
+            isOverflowingLeft,
+            isOverflowingRight
+          })
+        }, slideAnimationLength)
       }
 
       calcOverflow()
+
+      return () => {
+        clearTimeout(timer)
+        timer = null
+      }
     },
-    [listRef, sliderRef, xOffset]
+    [listRef, sliderRef, xOffset, listWidth]
+  )
+
+  React.useEffect(
+    function recalcSliderPosition() {
+      const sliderWidth = getWidth(sliderRef)
+      const sliderDoesntNeedOverflow = listWidth > sliderWidth
+      if (sliderDoesntNeedOverflow) {
+        setXOffset(0)
+      } else {
+        const sliderRightX = getRightX(sliderRef)
+        const listRightX = getRightX(listRef)
+        const overflowedExcessivelyToTheRight = listRightX > sliderRightX
+        if (overflowedExcessivelyToTheRight) {
+          const sliderWidth = getWidth(sliderRef)
+          setXOffset(-1 * sliderWidth + listWidth)
+        }
+      }
+    },
+    [listRef, listWidth]
   )
 
   // TODO: try to move most of these out
@@ -139,20 +161,18 @@ const List = React.forwardRef(function List(props, listRef) {
 
   function handlePageLeft(evt) {
     evt.preventDefault()
-    const pageWidth = getWidth(listRef)
     const offscreenLeftWidth = getLeftX(listRef) - getLeftX(sliderRef)
-    const smallestNeededWidth = Math.min(pageWidth, offscreenLeftWidth)
+    const smallestNeededWidth = Math.min(listWidth, offscreenLeftWidth)
     const lesserXOffset = Math.min(xOffset + smallestNeededWidth, 0)
     setXOffset(lesserXOffset)
   }
 
   function handlePageRight(evt) {
     evt.preventDefault()
-    const pageWidth = getWidth(listRef)
     const sliderWidth = getWidth(sliderRef)
-    const maxXOffset = -1 * sliderWidth + pageWidth
+    const maxXOffset = -1 * sliderWidth + listWidth
     const offscreenRightWidth = getRightX(sliderRef) - getRightX(listRef)
-    const smallestNeededWidth = Math.min(pageWidth, offscreenRightWidth)
+    const smallestNeededWidth = Math.min(listWidth, offscreenRightWidth)
     const furtherXOffset = Math.max(xOffset - smallestNeededWidth, maxXOffset)
     setXOffset(furtherXOffset)
   }
@@ -195,7 +215,7 @@ const List = React.forwardRef(function List(props, listRef) {
       )}
     </div>
   )
-})
+}
 List.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,

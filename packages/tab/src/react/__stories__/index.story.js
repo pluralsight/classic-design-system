@@ -6,8 +6,14 @@ import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import Tab from '../index.js'
 
-function NavigableExample({ count = 5 }) {
+function randomIntBetween(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+function NavigableExample({ count = 5, resizeEvery }) {
   const [activeIndex, setActiveIndex] = React.useState(2)
+  const [width, setWidth] = React.useState(100)
+  const [runOnce, setRunOnce] = React.useState(false)
   const menus = Array(count)
     .fill(null)
     .map((_, i) => ({
@@ -15,13 +21,32 @@ function NavigableExample({ count = 5 }) {
       label: `Menu ${i}`,
       content: `Menu stuff ${i}`
     }))
+  React.useEffect(
+    () => {
+      let timer
+      if (!runOnce) {
+        setRunOnce(true)
+        if (resizeEvery) {
+          timer = setInterval(() => {
+            setWidth(randomIntBetween(25, 100))
+          }, resizeEvery)
+        }
+      }
+
+      return () => {
+        clearInterval(timer)
+        timer = null
+      }
+    },
+    [resizeEvery, runOnce]
+  )
 
   function handleTabClick(i) {
     setActiveIndex(i)
   }
 
   return (
-    <div>
+    <div style={{ width: width + '%', outline: '1px solid red' }}>
       <Tab.List>
         {menus.map((menu, i) => (
           <Tab.ListItem id={menu.id} key={menu.id} onClick={handleTabClick}>
@@ -40,7 +65,8 @@ function NavigableExample({ count = 5 }) {
   )
 }
 NavigableExample.propTypes = {
-  count: PropTypes.number
+  count: PropTypes.number,
+  resizeEvery: PropTypes.number
 }
 
 storiesOf('default', module)
@@ -80,6 +106,12 @@ storiesOf('scrolling', module)
     <div style={{ outline: '1px solid red', width: '50%' }}>
       <NavigableExample count={35} />
     </div>
+  ))
+  .add('short list, resizing container', _ => (
+    <NavigableExample count={7} resizeEvery={3000} />
+  ))
+  .add('long list, resizing container', _ => (
+    <NavigableExample count={35} resizeEvery={3000} />
   ))
 
 storiesOf('style overrides', module)
