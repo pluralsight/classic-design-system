@@ -41,6 +41,7 @@ const listItemBarActiveActive = {
 export default {
   // __list
   '.psds-tab__list': {
+    position: 'relative',
     display: 'flex',
     width: '100%',
     height: '64px',
@@ -59,6 +60,34 @@ export default {
   },
   [`.psds-tab__list.psds-theme--${themeDefaultName}`]: {
     borderBottom: `1px solid ${core.colors.gray04}`
+  },
+
+  '.psds-tab__overflow-button': {
+    position: 'absolute',
+    top: 0,
+    display: 'flex',
+    alignItems: 'center',
+    height: 'calc(100% + 1px)',
+    width: '64px',
+    color: core.colors.white,
+    border: 0,
+    zIndex: 1
+  },
+  '.psds-tab__overflow-button--left': {
+    left: 0,
+    justifyContent: 'flex-start',
+    background: `linear-gradient(to left, transparent, ${
+      core.colors.gray06
+    } 50%)`,
+    paddingLeft: core.layout.spacingMedium
+  },
+  '.psds-tab__overflow-button--right': {
+    right: 0,
+    justifyContent: 'flex-end',
+    background: `linear-gradient(to right, transparent, ${
+      core.colors.gray06
+    } 50%)`,
+    paddingRight: core.layout.spacingMedium
   },
 
   // __list-item

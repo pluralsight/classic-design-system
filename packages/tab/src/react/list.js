@@ -1,5 +1,6 @@
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
+import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
@@ -11,7 +12,27 @@ const styles = {
     glamor.css(
       css['.psds-tab__list'],
       css[`.psds-tab__list.psds-theme--${themeName}`]
+    ),
+  overflowButton: ({ position, themeName }) =>
+    glamor.css(
+      css['.psds-tab__overflow-button'],
+      css[`.psds-tab__overflow-button--${position}`]
     )
+}
+
+function OverflowButton(props) {
+  return (
+    <button {...styles.overflowButton(props)} tabIndex="-1">
+      <Icon
+        id={
+          props.position === 'right' ? Icon.ids.caretRight : Icon.ids.caretLeft
+        }
+      />
+    </button>
+  )
+}
+OverflowButton.propTypes = {
+  position: PropTypes.oneOf(['left', 'right'])
 }
 
 const findActiveIndex = els =>
@@ -57,6 +78,7 @@ const List = React.forwardRef(function List(props, ref) {
   }
   return (
     <div {...filterReactProps(listProps)} {...styles.list(listProps)} ref={ref}>
+      <OverflowButton position="left" />
       {React.Children.map(
         props.children,
         (comp, i) =>
@@ -68,6 +90,7 @@ const List = React.forwardRef(function List(props, ref) {
             ref: itemRefs[i]
           })
       )}
+      <OverflowButton position="right" />
     </div>
   )
 })

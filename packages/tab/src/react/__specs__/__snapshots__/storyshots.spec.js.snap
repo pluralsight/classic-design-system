@@ -14,11 +14,30 @@ exports[`Storyshots default as links 1`] = `
         data-css-claeju=""
       >
         <div
-          data-css-1vci3cx=""
+          data-css-pp5aob=""
           onKeyDown={[Function]}
           role="tablist"
           tabIndex="0"
         >
+          <button
+            data-css-1qr8tem=""
+            tabIndex="-1"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
           <a
             aria-selected={true}
             data-css-bn3734=""
@@ -38,6 +57,25 @@ exports[`Storyshots default as links 1`] = `
               />
             </div>
           </a>
+          <button
+            data-css-4l6fne=""
+            tabIndex="-1"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
         </div>
       </div>
     </div>
@@ -60,11 +98,30 @@ exports[`Storyshots default default 1`] = `
       >
         <div>
           <div
-            data-css-1vci3cx=""
+            data-css-pp5aob=""
             onKeyDown={[Function]}
             role="tablist"
             tabIndex="0"
           >
+            <button
+              data-css-1qr8tem=""
+              tabIndex="-1"
+            >
+              <div
+                data-css-otejxm=""
+              >
+                <svg
+                  aria-label="caret left icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  />
+                </svg>
+              </div>
+            </button>
             <button
               aria-selected={true}
               data-css-bn3734=""
@@ -155,6 +212,25 @@ exports[`Storyshots default default 1`] = `
                 />
               </div>
             </button>
+            <button
+              data-css-4l6fne=""
+              tabIndex="-1"
+            >
+              <div
+                data-css-otejxm=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </button>
           </div>
           <div
             aria-labelledby="example3"
@@ -187,11 +263,50 @@ exports[`Storyshots default no items 1`] = `
         data-css-claeju=""
       >
         <div
-          data-css-1vci3cx=""
+          data-css-pp5aob=""
           onKeyDown={[Function]}
           role="tablist"
           tabIndex="0"
-        />
+        >
+          <button
+            data-css-1qr8tem=""
+            tabIndex="-1"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+          <button
+            data-css-4l6fne=""
+            tabIndex="-1"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -212,7 +327,7 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
         data-css-claeju=""
       >
         <div
-          data-css-1vci3cx=""
+          data-css-pp5aob=""
           onKeyDown={[Function]}
           role="tablist"
           style={
@@ -222,6 +337,25 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
           }
           tabIndex="0"
         >
+          <button
+            data-css-1qr8tem=""
+            tabIndex="-1"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
           <button
             aria-selected={true}
             data-css-bn3734=""
@@ -238,6 +372,25 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
               <span
                 data-css-1s34vsj=""
               />
+            </div>
+          </button>
+          <button
+            data-css-4l6fne=""
+            tabIndex="-1"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
             </div>
           </button>
         </div>
@@ -261,11 +414,30 @@ exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
         data-css-claeju=""
       >
         <div
-          data-css-1vci3cx=""
+          data-css-pp5aob=""
           onKeyDown={[Function]}
           role="tablist"
           tabIndex="0"
         >
+          <button
+            data-css-1qr8tem=""
+            tabIndex="-1"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
           <button
             aria-selected={true}
             data-css-bn3734=""
@@ -287,6 +459,25 @@ exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
               <span
                 data-css-1s34vsj=""
               />
+            </div>
+          </button>
+          <button
+            data-css-4l6fne=""
+            tabIndex="-1"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
             </div>
           </button>
         </div>
@@ -311,11 +502,30 @@ exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
       >
         <div>
           <div
-            data-css-1vci3cx=""
+            data-css-pp5aob=""
             onKeyDown={[Function]}
             role="tablist"
             tabIndex="0"
           >
+            <button
+              data-css-1qr8tem=""
+              tabIndex="-1"
+            >
+              <div
+                data-css-otejxm=""
+              >
+                <svg
+                  aria-label="caret left icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  />
+                </svg>
+              </div>
+            </button>
             <button
               aria-selected={true}
               data-css-bn3734=""
@@ -337,6 +547,25 @@ exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
                 <span
                   data-css-1s34vsj=""
                 />
+              </div>
+            </button>
+            <button
+              data-css-4l6fne=""
+              tabIndex="-1"
+            >
+              <div
+                data-css-otejxm=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
               </div>
             </button>
           </div>
