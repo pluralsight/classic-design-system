@@ -2,7 +2,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
 
@@ -17,67 +17,60 @@ const styles = {
 const findActiveIndex = els =>
   React.Children.toArray(els).findIndex(el => el && el.props.active)
 
-class List extends React.Component {
-  constructor(props) {
-    super(props)
-    const activeIndex = findActiveIndex(this.props.children)
-    this.state = { activeIndex: activeIndex > -1 ? activeIndex : 0 }
-    this.itemEls = []
-    this.handleListItemClick = this.handleListItemClick.bind(this)
-    this.handleKeyDown = this.handleKeyDown.bind(this)
+const List = React.forwardRef(function List(props, ref) {
+  const activeIndexFromProps = findActiveIndex(props.children)
+  const [activeIndex, setActiveIndex] = React.useState(
+    activeIndexFromProps > -1 ? activeIndexFromProps : 0
+  )
+  const itemRefs = React.Children.map(props.children, () => React.createRef())
+  React.useMemo(
+    () => {
+      if (activeIndex !== activeIndexFromProps && activeIndexFromProps !== -1)
+        setActiveIndex(activeIndexFromProps)
+    },
+    [activeIndex, activeIndexFromProps]
+  )
+
+  function handleListItemClick(i, originalOnClick, evt) {
+    setActiveIndex(i)
+    if (typeof originalOnClick === 'function') originalOnClick(i, evt)
   }
-  componentWillReceiveProps(nextProps) {
-    const nextActiveIndex = findActiveIndex(nextProps.children)
-    if (this.state.activeIndex !== nextActiveIndex && nextActiveIndex !== -1) {
-      this.setState({ activeIndex: nextActiveIndex })
-    }
-  }
-  handleListItemClick(i, originalOnClick, evt) {
-    this.setState({ activeIndex: i }, _ => {
-      if (typeof originalOnClick === 'function') originalOnClick(i, evt)
-    })
-  }
-  handleKeyDown(evt) {
+  function handleKeyDown(evt) {
     if (evt.key !== 'ArrowRight' && evt.key !== 'ArrowLeft') return
 
     evt.stopPropagation()
     evt.preventDefault()
     const delta = evt.key === 'ArrowRight' ? 1 : -1
-    const nextItem = this.itemEls[this.state.activeIndex + delta]
+    const nextRef = itemRefs[activeIndex + delta]
+    if (nextRef && nextRef.current) {
+      nextRef.current.focus()
+      nextRef.current.click()
+    }
+  }
 
-    if (nextItem) {
-      nextItem.focus()
-      nextItem.click()
-    }
+  const { children, ...rest } = props
+  const listProps = {
+    ...rest,
+    role: 'tablist',
+    onKeyDown: handleKeyDown,
+    tabIndex: '0'
   }
-  render() {
-    const { children, ...rest } = this.props
-    const listProps = {
-      ...rest,
-      role: 'tablist',
-      onKeyDown: this.handleKeyDown,
-      tabIndex: '0',
-      // TODO: use withTheme instead
-      themeName: this.context.themeName || themeDefaultName
-    }
-    return (
-      <div {...filterReactProps(listProps)} {...styles.list(listProps)}>
-        {React.Children.map(
-          this.props.children,
-          (el, i) =>
-            el &&
-            React.cloneElement(el, {
-              active: this.state.activeIndex === i,
-              key: el.id,
-              onClick: evt =>
-                this.handleListItemClick(i, el.props.onClick, evt),
-              innerRef: itemEl => (this.itemEls[i] = itemEl)
-            })
-        )}
-      </div>
-    )
-  }
-}
+  return (
+    <div {...filterReactProps(listProps)} {...styles.list(listProps)} ref={ref}>
+      {React.Children.map(
+        props.children,
+        (comp, i) =>
+          comp &&
+          React.cloneElement(comp, {
+            active: activeIndex === i,
+            key: comp.id,
+            onClick: evt => handleListItemClick(i, comp.props.onClick, evt),
+            ref: itemRefs[i]
+          })
+      )}
+    </div>
+  )
+})
 List.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
@@ -87,5 +80,4 @@ List.propTypes = {
 List.contextTypes = {
   themeName: PropTypes.string
 }
-
-export default List
+export default withTheme(List)

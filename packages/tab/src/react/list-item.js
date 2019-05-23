@@ -23,18 +23,18 @@ const styles = {
   textWidth: _ => glamor.css(css['.psds-tab__list-item__text'])
 }
 
-const ListItem = (props, context) => {
+const ListItem = React.forwardRef((props, ref) => {
   const tagName = props.href ? 'a' : 'button'
   return React.createElement(
     tagName,
     filterReactProps(
       {
         ...props,
-        role: 'tab',
+        ...styles.listItem(props),
         'aria-selected': props.active,
-        ref: props.innerRef,
-        tabIndex: '-1',
-        ...styles.listItem(props)
+        ref,
+        role: 'tab',
+        tabIndex: '-1'
       },
       { tagName }
     ),
@@ -43,7 +43,7 @@ const ListItem = (props, context) => {
       <span {...styles.bar(props)} />
     </div>
   )
-}
+})
 ListItem.propTypes = {
   active: PropTypes.bool,
   children: PropTypes.string,
