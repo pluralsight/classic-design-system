@@ -105,6 +105,8 @@ function List(props) {
 
   React.useEffect(
     function recalcSliderPosition() {
+      if (xOffset === 0) return
+
       const sliderWidth = getWidth(sliderRef)
       const sliderDoesntNeedOverflow = listWidth > sliderWidth
       if (sliderDoesntNeedOverflow) {
@@ -119,7 +121,7 @@ function List(props) {
         }
       }
     },
-    [listRef, listWidth]
+    [listRef, listWidth, xOffset]
   )
 
   // TODO: try to move most of these out
