@@ -39,12 +39,12 @@ const listItemBarActiveActive = {
 }
 
 export default {
-  // __list
   '.psds-tab__list': {
     position: 'relative',
-    display: 'flex',
     width: '100%',
     height: '64px',
+    outline: '1px solid red',
+    overflow: 'hidden',
     '&:focus': {
       outline: 'none',
       borderBottomWidth: '4px',
@@ -60,6 +60,15 @@ export default {
   },
   [`.psds-tab__list.psds-theme--${themeDefaultName}`]: {
     borderBottom: `1px solid ${core.colors.gray04}`
+  },
+
+  '.psds-tab__slider': {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    display: 'flex',
+    height: '64px',
+    transform: 'translateX(0)'
   },
 
   '.psds-tab__overflow-button': {

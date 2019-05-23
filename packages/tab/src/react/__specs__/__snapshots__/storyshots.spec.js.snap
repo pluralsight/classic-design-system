@@ -14,68 +14,34 @@ exports[`Storyshots default as links 1`] = `
         data-css-claeju=""
       >
         <div
-          data-css-pp5aob=""
+          data-css-1f140p2=""
           onKeyDown={[Function]}
           role="tablist"
           tabIndex="0"
         >
-          <button
-            data-css-1qr8tem=""
-            tabIndex="-1"
+          <div
+            data-css-1mwad1w=""
           >
-            <div
-              data-css-otejxm=""
-            >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
-          <a
-            aria-selected={true}
-            data-css-bn3734=""
-            href="https://duckduckgo.com"
-            id={1}
-            onClick={[Function]}
-            role="tab"
-            tabIndex="-1"
-          >
-            <div
-              data-css-sgoz4b=""
+            <a
+              aria-selected={true}
+              data-css-bn3734=""
+              href="https://duckduckgo.com"
+              id={1}
+              onClick={[Function]}
+              role="tab"
               tabIndex="-1"
             >
-              External link
-              <span
-                data-css-1s34vsj=""
-              />
-            </div>
-          </a>
-          <button
-            data-css-4l6fne=""
-            tabIndex="-1"
-          >
-            <div
-              data-css-otejxm=""
-            >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                data-css-sgoz4b=""
+                tabIndex="-1"
               >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                External link
+                <span
+                  data-css-1s34vsj=""
                 />
-              </svg>
-            </div>
-          </button>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -98,148 +64,114 @@ exports[`Storyshots default default 1`] = `
       >
         <div>
           <div
-            data-css-pp5aob=""
+            data-css-1f140p2=""
             onKeyDown={[Function]}
             role="tablist"
             tabIndex="0"
           >
-            <button
-              data-css-1qr8tem=""
-              tabIndex="-1"
+            <div
+              data-css-1mwad1w=""
             >
-              <div
-                data-css-otejxm=""
+              <button
+                aria-selected={true}
+                data-css-bn3734=""
+                id="example0"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
               >
-                <svg
-                  aria-label="caret left icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
                 >
-                  <path
-                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  Menu 0
+                  <span
+                    data-css-1s34vsj=""
                   />
-                </svg>
-              </div>
-            </button>
-            <button
-              aria-selected={true}
-              data-css-bn3734=""
-              id="example1"
-              onClick={[Function]}
-              role="tab"
-              tabIndex="-1"
-            >
-              <div
-                data-css-sgoz4b=""
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example1"
+                onClick={[Function]}
+                role="tab"
                 tabIndex="-1"
               >
-                Menu 1
-                <span
-                  data-css-1s34vsj=""
-                />
-              </div>
-            </button>
-            <button
-              aria-selected={false}
-              data-css-dp4ver=""
-              id="example2"
-              onClick={[Function]}
-              role="tab"
-              tabIndex="-1"
-            >
-              <div
-                data-css-sgoz4b=""
-                tabIndex="-1"
-              >
-                Menu 2
-                <span
-                  data-css-1s34vsj=""
-                />
-              </div>
-            </button>
-            <button
-              aria-selected={false}
-              data-css-dp4ver=""
-              id="example3"
-              onClick={[Function]}
-              role="tab"
-              tabIndex="-1"
-            >
-              <div
-                data-css-sgoz4b=""
-                tabIndex="-1"
-              >
-                Menu 3
-                <span
-                  data-css-1s34vsj=""
-                />
-              </div>
-            </button>
-            <button
-              aria-selected={false}
-              data-css-dp4ver=""
-              id="example4"
-              onClick={[Function]}
-              role="tab"
-              tabIndex="-1"
-            >
-              <div
-                data-css-sgoz4b=""
-                tabIndex="-1"
-              >
-                Menu 4
-                <span
-                  data-css-1s34vsj=""
-                />
-              </div>
-            </button>
-            <button
-              aria-selected={false}
-              data-css-dp4ver=""
-              id="example5"
-              onClick={[Function]}
-              role="tab"
-              tabIndex="-1"
-            >
-              <div
-                data-css-sgoz4b=""
-                tabIndex="-1"
-              >
-                Menu 5
-                <span
-                  data-css-1s34vsj=""
-                />
-              </div>
-            </button>
-            <button
-              data-css-4l6fne=""
-              tabIndex="-1"
-            >
-              <div
-                data-css-otejxm=""
-              >
-                <svg
-                  aria-label="caret right icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
                 >
-                  <path
-                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  Menu 1
+                  <span
+                    data-css-1s34vsj=""
                   />
-                </svg>
-              </div>
-            </button>
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example2"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 2
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example3"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 3
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example4"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 4
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+            </div>
           </div>
           <div
-            aria-labelledby="example3"
+            aria-labelledby="example2"
             role="tabpanel"
           >
             <div
               className="content"
             >
-              Menu stuff 3
+              Menu stuff 2
             </div>
           </div>
         </div>
@@ -263,49 +195,1220 @@ exports[`Storyshots default no items 1`] = `
         data-css-claeju=""
       >
         <div
-          data-css-pp5aob=""
+          data-css-1f140p2=""
           onKeyDown={[Function]}
           role="tablist"
           tabIndex="0"
         >
-          <button
-            data-css-1qr8tem=""
-            tabIndex="-1"
+          <div
+            data-css-1mwad1w=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots scrolling 10 count 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-wx7ofq=""
+  >
+    <div
+      data-css-1nnsngu=""
+    >
+      <div
+        data-css-claeju=""
+      >
+        <div>
+          <div
+            data-css-1f140p2=""
+            onKeyDown={[Function]}
+            role="tablist"
+            tabIndex="0"
           >
             <div
-              data-css-otejxm=""
+              data-css-1mwad1w=""
             >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <button
+                aria-selected={true}
+                data-css-bn3734=""
+                id="example0"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
               >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 0
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example1"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 1
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example2"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 2
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example3"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 3
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example4"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 4
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example5"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 5
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example6"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 6
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example7"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 7
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example8"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 8
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example9"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 9
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example10"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 10
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example11"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 11
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example12"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 12
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example13"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 13
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example14"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 14
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example15"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 15
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example16"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 16
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example17"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 17
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example18"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 18
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example19"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 19
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
             </div>
-          </button>
-          <button
-            data-css-4l6fne=""
-            tabIndex="-1"
+          </div>
+          <div
+            aria-labelledby="example2"
+            role="tabpanel"
           >
             <div
-              data-css-otejxm=""
+              className="content"
             >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
+              Menu stuff 2
             </div>
-          </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots scrolling 20 count 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-wx7ofq=""
+  >
+    <div
+      data-css-1nnsngu=""
+    >
+      <div
+        data-css-claeju=""
+      >
+        <div>
+          <div
+            data-css-1f140p2=""
+            onKeyDown={[Function]}
+            role="tablist"
+            tabIndex="0"
+          >
+            <div
+              data-css-1mwad1w=""
+            >
+              <button
+                aria-selected={true}
+                data-css-bn3734=""
+                id="example0"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 0
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example1"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 1
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example2"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 2
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example3"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 3
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example4"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 4
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example5"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 5
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example6"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 6
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example7"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 7
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example8"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 8
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example9"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 9
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example10"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 10
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example11"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 11
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example12"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 12
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example13"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 13
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example14"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 14
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example15"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 15
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example16"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 16
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example17"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 17
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example18"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 18
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example19"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 19
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+          <div
+            aria-labelledby="example2"
+            role="tabpanel"
+          >
+            <div
+              className="content"
+            >
+              Menu stuff 2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots scrolling 30 count 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-wx7ofq=""
+  >
+    <div
+      data-css-1nnsngu=""
+    >
+      <div
+        data-css-claeju=""
+      >
+        <div>
+          <div
+            data-css-1f140p2=""
+            onKeyDown={[Function]}
+            role="tablist"
+            tabIndex="0"
+          >
+            <div
+              data-css-1mwad1w=""
+            >
+              <button
+                aria-selected={true}
+                data-css-bn3734=""
+                id="example0"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 0
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example1"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 1
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example2"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 2
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example3"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 3
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example4"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 4
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example5"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 5
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example6"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 6
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example7"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 7
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example8"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 8
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example9"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 9
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example10"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 10
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example11"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 11
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example12"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 12
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example13"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 13
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example14"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 14
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example15"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 15
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example16"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 16
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example17"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 17
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example18"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 18
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+              <button
+                aria-selected={false}
+                data-css-dp4ver=""
+                id="example19"
+                onClick={[Function]}
+                role="tab"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
+                >
+                  Menu 19
+                  <span
+                    data-css-1s34vsj=""
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+          <div
+            aria-labelledby="example2"
+            role="tabpanel"
+          >
+            <div
+              className="content"
+            >
+              Menu stuff 2
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -327,7 +1430,7 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
         data-css-claeju=""
       >
         <div
-          data-css-pp5aob=""
+          data-css-1f140p2=""
           onKeyDown={[Function]}
           role="tablist"
           style={
@@ -337,62 +1440,28 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
           }
           tabIndex="0"
         >
-          <button
-            data-css-1qr8tem=""
-            tabIndex="-1"
+          <div
+            data-css-1mwad1w=""
           >
-            <div
-              data-css-otejxm=""
-            >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
-          <button
-            aria-selected={true}
-            data-css-bn3734=""
-            id="wow"
-            onClick={[Function]}
-            role="tab"
-            tabIndex="-1"
-          >
-            <div
-              data-css-sgoz4b=""
+            <button
+              aria-selected={true}
+              data-css-bn3734=""
+              id="wow"
+              onClick={[Function]}
+              role="tab"
               tabIndex="-1"
             >
-              Wow
-              <span
-                data-css-1s34vsj=""
-              />
-            </div>
-          </button>
-          <button
-            data-css-4l6fne=""
-            tabIndex="-1"
-          >
-            <div
-              data-css-otejxm=""
-            >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                data-css-sgoz4b=""
+                tabIndex="-1"
               >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                Wow
+                <span
+                  data-css-1s34vsj=""
                 />
-              </svg>
-            </div>
-          </button>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -414,118 +1483,14 @@ exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
         data-css-claeju=""
       >
         <div
-          data-css-pp5aob=""
+          data-css-1f140p2=""
           onKeyDown={[Function]}
           role="tablist"
           tabIndex="0"
         >
-          <button
-            data-css-1qr8tem=""
-            tabIndex="-1"
-          >
-            <div
-              data-css-otejxm=""
-            >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
-          <button
-            aria-selected={true}
-            data-css-bn3734=""
-            id="wow"
-            onClick={[Function]}
-            role="tab"
-            style={
-              Object {
-                "opacity": 0.5,
-              }
-            }
-            tabIndex="-1"
-          >
-            <div
-              data-css-sgoz4b=""
-              tabIndex="-1"
-            >
-              Disabled look
-              <span
-                data-css-1s34vsj=""
-              />
-            </div>
-          </button>
-          <button
-            data-css-4l6fne=""
-            tabIndex="-1"
-          >
-            <div
-              data-css-otejxm=""
-            >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    data-css-wx7ofq=""
-  >
-    <div
-      data-css-1nnsngu=""
-    >
-      <div
-        data-css-claeju=""
-      >
-        <div>
           <div
-            data-css-pp5aob=""
-            onKeyDown={[Function]}
-            role="tablist"
-            tabIndex="0"
+            data-css-1mwad1w=""
           >
-            <button
-              data-css-1qr8tem=""
-              tabIndex="-1"
-            >
-              <div
-                data-css-otejxm=""
-              >
-                <svg
-                  aria-label="caret left icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                  />
-                </svg>
-              </div>
-            </button>
             <button
               aria-selected={true}
               data-css-bn3734=""
@@ -549,25 +1514,61 @@ exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
                 />
               </div>
             </button>
-            <button
-              data-css-4l6fne=""
-              tabIndex="-1"
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-wx7ofq=""
+  >
+    <div
+      data-css-1nnsngu=""
+    >
+      <div
+        data-css-claeju=""
+      >
+        <div>
+          <div
+            data-css-1f140p2=""
+            onKeyDown={[Function]}
+            role="tablist"
+            tabIndex="0"
+          >
+            <div
+              data-css-1mwad1w=""
             >
-              <div
-                data-css-otejxm=""
+              <button
+                aria-selected={true}
+                data-css-bn3734=""
+                id="wow"
+                onClick={[Function]}
+                role="tab"
+                style={
+                  Object {
+                    "opacity": 0.5,
+                  }
+                }
+                tabIndex="-1"
               >
-                <svg
-                  aria-label="caret right icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  data-css-sgoz4b=""
+                  tabIndex="-1"
                 >
-                  <path
-                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  Disabled look
+                  <span
+                    data-css-1s34vsj=""
                   />
-                </svg>
-              </div>
-            </button>
+                </div>
+              </button>
+            </div>
           </div>
           <div
             aria-labelledby="wow"

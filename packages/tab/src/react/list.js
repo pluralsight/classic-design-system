@@ -19,7 +19,8 @@ const styles = {
       css[`.psds-tab__overflow-button--${position}`],
       css[`.psds-tab__overflow-button.psds-theme--${themeName}`],
       css[`.psds-tab__overflow-button--${position}.psds-theme--${themeName}`]
-    )
+    ),
+  slider: () => glamor.css(css['.psds-tab__slider'])
 }
 
 const OverflowButton = withTheme(props => {
@@ -40,8 +41,16 @@ OverflowButton.propTypes = {
 const findActiveIndex = els =>
   React.Children.toArray(els).findIndex(el => el && el.props.active)
 
-const List = React.forwardRef(function List(props, ref) {
+const List = React.forwardRef(function List(props, listRef) {
+  if (!listRef) listRef = React.useRef() // eslint-disable-line react-hooks/rules-of-hooks
+  const sliderRef = React.useRef()
   const activeIndexFromProps = findActiveIndex(props.children)
+
+  const [dims, setDims] = React.useState({
+    isOverflowingLeft: false,
+    isOverflowingRight: false
+  })
+
   const [activeIndex, setActiveIndex] = React.useState(
     activeIndexFromProps > -1 ? activeIndexFromProps : 0
   )
@@ -57,6 +66,34 @@ const List = React.forwardRef(function List(props, ref) {
     [activeIndex, activeIndexFromProps]
   )
 
+  React.useEffect(
+    () => {
+      const listWidth = getWidth(listRef)
+      const sliderWidth = getWidth(sliderRef)
+      const isOverflowingRight = sliderWidth > listWidth
+
+      const listLeftX = getLeftX(listRef)
+      const sliderLeftX = getLeftX(sliderRef)
+      const isOverflowingLeft = sliderLeftX < listLeftX
+
+      setDims({
+        isOverflowingLeft,
+        isOverflowingRight
+      })
+    },
+    [listRef, sliderRef]
+  )
+
+  function getWidth(ref) {
+    if (!(ref && ref.current)) return 0
+    const rect = ref.current.getBoundingClientRect()
+    return rect.width
+  }
+  function getLeftX(ref) {
+    if (!(ref && ref.current)) return 0
+    const rect = ref.current.getBoundingClientRect()
+    return window.pageXOffset + rect.left
+  }
   function handleListItemClick(i, originalOnClick, evt) {
     setActiveIndex(i)
     if (typeof originalOnClick === 'function') originalOnClick(i, evt)
@@ -82,20 +119,26 @@ const List = React.forwardRef(function List(props, ref) {
     tabIndex: '0'
   }
   return (
-    <div {...filterReactProps(listProps)} {...styles.list(listProps)} ref={ref}>
-      <OverflowButton position="left" />
-      {React.Children.map(
-        props.children,
-        (comp, i) =>
-          comp &&
-          React.cloneElement(comp, {
-            active: activeIndex === i,
-            key: comp.id,
-            onClick: evt => handleListItemClick(i, comp.props.onClick, evt),
-            ref: itemRefs[i]
-          })
-      )}
-      <OverflowButton position="right" />
+    <div
+      {...filterReactProps(listProps)}
+      {...styles.list(listProps)}
+      ref={listRef}
+    >
+      {dims.isOverflowingLeft && <OverflowButton position="left" />}
+      <div {...styles.slider(rest)} ref={sliderRef}>
+        {React.Children.map(
+          props.children,
+          (comp, i) =>
+            comp &&
+            React.cloneElement(comp, {
+              active: activeIndex === i,
+              key: comp.id,
+              onClick: evt => handleListItemClick(i, comp.props.onClick, evt),
+              ref: itemRefs[i]
+            })
+        )}
+      </div>
+      {dims.isOverflowingRight && <OverflowButton position="right" />}
     </div>
   )
 })

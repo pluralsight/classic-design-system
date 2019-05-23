@@ -1,17 +1,20 @@
 import addons from '@storybook/addons'
+import PropTypes from 'prop-types'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import Tab from '../index.js'
 
-function InAppExample() {
+function NavigableExample({ count = 5 }) {
   const [activeIndex, setActiveIndex] = React.useState(2)
-  const menus = [1, 2, 3, 4, 5].map(i => ({
-    id: `example${i}`,
-    label: `Menu ${i}`,
-    content: `Menu stuff ${i}`
-  }))
+  const menus = Array(count)
+    .fill(null)
+    .map((_, i) => ({
+      id: `example${i}`,
+      label: `Menu ${i}`,
+      content: `Menu stuff ${i}`
+    }))
 
   function handleTabClick(i) {
     setActiveIndex(i)
@@ -36,10 +39,13 @@ function InAppExample() {
     </div>
   )
 }
+NavigableExample.propTypes = {
+  count: PropTypes.number
+}
 
 storiesOf('default', module)
   .addDecorator(themeDecorator(addons))
-  .add('default', _ => <InAppExample />)
+  .add('default', _ => <NavigableExample />)
   .add('no items', _ => <Tab.List />)
   .add('as links', _ => (
     <Tab.List>
@@ -48,6 +54,12 @@ storiesOf('default', module)
       </Tab.ListItem>
     </Tab.List>
   ))
+
+storiesOf('scrolling', module)
+  .addDecorator(themeDecorator(addons))
+  .add('10 count', _ => <NavigableExample count={20} />)
+  .add('20 count', _ => <NavigableExample count={20} />)
+  .add('30 count', _ => <NavigableExample count={20} />)
 
 storiesOf('style overrides', module)
   .addDecorator(themeDecorator(addons))
