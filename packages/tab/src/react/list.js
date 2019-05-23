@@ -24,8 +24,9 @@ const styles = {
 }
 
 const OverflowButton = withTheme(props => {
+  const { themeName, ...rest } = props
   return (
-    <button {...styles.overflowButton(props)} tabIndex="-1">
+    <button {...styles.overflowButton(props)} tabIndex="-1" {...rest}>
       <Icon
         id={
           props.position === 'right' ? Icon.ids.caretRight : Icon.ids.caretLeft
@@ -46,10 +47,12 @@ const List = React.forwardRef(function List(props, listRef) {
   const sliderRef = React.useRef()
   const activeIndexFromProps = findActiveIndex(props.children)
 
+  // TODO: likely rename
   const [dims, setDims] = React.useState({
     isOverflowingLeft: false,
     isOverflowingRight: false
   })
+  const [xOffset, setXOffset] = React.useState(0)
 
   const [activeIndex, setActiveIndex] = React.useState(
     activeIndexFromProps > -1 ? activeIndexFromProps : 0
@@ -65,25 +68,30 @@ const List = React.forwardRef(function List(props, listRef) {
     },
     [activeIndex, activeIndexFromProps]
   )
+  // TODO: handle window resize
 
   React.useEffect(
     () => {
       const listWidth = getWidth(listRef)
       const sliderWidth = getWidth(sliderRef)
-      const isOverflowingRight = sliderWidth > listWidth
+      const isOverflowingRight = sliderWidth + xOffset > listWidth
 
       const listLeftX = getLeftX(listRef)
       const sliderLeftX = getLeftX(sliderRef)
-      const isOverflowingLeft = sliderLeftX < listLeftX
+      const isOverflowingLeft = sliderLeftX + xOffset < listLeftX
 
       setDims({
         isOverflowingLeft,
         isOverflowingRight
       })
     },
-    [listRef, sliderRef]
+    [listRef, sliderRef, xOffset]
   )
 
+  // TODO: try to move most of these out
+  function styleForXOffset(xOffset) {
+    return { transform: `translateX(${xOffset}px)` }
+  }
   function getWidth(ref) {
     if (!(ref && ref.current)) return 0
     const rect = ref.current.getBoundingClientRect()
@@ -93,6 +101,12 @@ const List = React.forwardRef(function List(props, listRef) {
     if (!(ref && ref.current)) return 0
     const rect = ref.current.getBoundingClientRect()
     return window.pageXOffset + rect.left
+  }
+  // TODO: test if we WANT scroll left worked into this (since always a container)
+  function getRightX(ref) {
+    if (!(ref && ref.current)) return 0
+    const rect = ref.current.getBoundingClientRect()
+    return window.pageXOffset + rect.left + rect.width
   }
   function handleListItemClick(i, originalOnClick, evt) {
     setActiveIndex(i)
@@ -111,6 +125,24 @@ const List = React.forwardRef(function List(props, listRef) {
     }
   }
 
+  function handlePageLeft(evt) {
+    evt.preventDefault()
+    const pageWidth = getWidth(listRef)
+    const offscreenLeftWidth = getLeftX(listRef) - getLeftX(sliderRef)
+    const smallestNeededWidth = Math.min(pageWidth, offscreenLeftWidth)
+    const lesserXOffset = xOffset + smallestNeededWidth
+    setXOffset(lesserXOffset)
+  }
+
+  function handlePageRight(evt) {
+    evt.preventDefault()
+    const pageWidth = getWidth(listRef)
+    const offscreenRightWidth = getRightX(sliderRef) - getRightX(listRef)
+    const smallestNeededWidth = Math.min(pageWidth, offscreenRightWidth)
+    const furtherXOffset = xOffset - smallestNeededWidth
+    setXOffset(furtherXOffset)
+  }
+
   const { children, ...rest } = props
   const listProps = {
     ...rest,
@@ -124,8 +156,14 @@ const List = React.forwardRef(function List(props, listRef) {
       {...styles.list(listProps)}
       ref={listRef}
     >
-      {dims.isOverflowingLeft && <OverflowButton position="left" />}
-      <div {...styles.slider(rest)} ref={sliderRef}>
+      {dims.isOverflowingLeft && (
+        <OverflowButton position="left" onClick={handlePageLeft} />
+      )}
+      <div
+        {...styles.slider(rest)}
+        ref={sliderRef}
+        style={styleForXOffset(xOffset)}
+      >
         {React.Children.map(
           props.children,
           (comp, i) =>
@@ -138,7 +176,9 @@ const List = React.forwardRef(function List(props, listRef) {
             })
         )}
       </div>
-      {dims.isOverflowingRight && <OverflowButton position="right" />}
+      {dims.isOverflowingRight && (
+        <OverflowButton position="right" onClick={handlePageRight} />
+      )}
     </div>
   )
 })

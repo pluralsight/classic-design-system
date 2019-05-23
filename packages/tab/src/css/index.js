@@ -43,7 +43,6 @@ export default {
     position: 'relative',
     width: '100%',
     height: '64px',
-    outline: '1px solid red',
     overflow: 'hidden',
     '&:focus': {
       outline: 'none',
@@ -69,6 +68,7 @@ export default {
     display: 'flex',
     height: '64px',
     transform: 'translateX(0)'
+    // transition: `transform ${core.motion.speedSlow} ease-in-out`
   },
 
   '.psds-tab__overflow-button': {

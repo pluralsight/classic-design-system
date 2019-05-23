@@ -57,9 +57,15 @@ storiesOf('default', module)
 
 storiesOf('scrolling', module)
   .addDecorator(themeDecorator(addons))
-  .add('10 count', _ => <NavigableExample count={20} />)
+  .add('10 count', _ => <NavigableExample count={10} />)
   .add('20 count', _ => <NavigableExample count={20} />)
-  .add('30 count', _ => <NavigableExample count={20} />)
+  .add('30 count', _ => <NavigableExample count={30} />)
+  .add('35 count', _ => <NavigableExample count={35} />)
+  .add('thinner container', _ => (
+    <div style={{ outline: '1px solid red', width: '50%' }}>
+      <NavigableExample count={35} />
+    </div>
+  ))
 
 storiesOf('style overrides', module)
   .addDecorator(themeDecorator(addons))
