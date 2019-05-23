@@ -16,11 +16,13 @@ const styles = {
   overflowButton: ({ position, themeName }) =>
     glamor.css(
       css['.psds-tab__overflow-button'],
-      css[`.psds-tab__overflow-button--${position}`]
+      css[`.psds-tab__overflow-button--${position}`],
+      css[`.psds-tab__overflow-button.psds-theme--${themeName}`],
+      css[`.psds-tab__overflow-button--${position}.psds-theme--${themeName}`]
     )
 }
 
-function OverflowButton(props) {
+const OverflowButton = withTheme(props => {
   return (
     <button {...styles.overflowButton(props)} tabIndex="-1">
       <Icon
@@ -30,7 +32,7 @@ function OverflowButton(props) {
       />
     </button>
   )
-}
+})
 OverflowButton.propTypes = {
   position: PropTypes.oneOf(['left', 'right'])
 }

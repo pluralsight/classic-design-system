@@ -89,6 +89,17 @@ export default {
     } 50%)`,
     paddingRight: core.layout.spacingMedium
   },
+  [`.psds-tab__overflow-button.psds-theme--${themeNames.light}`]: {
+    color: core.colors.gray03
+  },
+  [`.psds-tab__overflow-button--left.psds-theme--${themeNames.light}`]: {
+    background: `linear-gradient(to left, transparent, ${core.colors.bone} 50%)`
+  },
+  [`.psds-tab__overflow-button--right.psds-theme--${themeNames.light}`]: {
+    background: `linear-gradient(to right, transparent, ${
+      core.colors.bone
+    } 50%)`
+  },
 
   // __list-item
   '.psds-tab__list-item': {
