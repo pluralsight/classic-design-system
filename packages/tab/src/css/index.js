@@ -3,6 +3,7 @@ import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme/vars'
+import { transparentize } from '@pluralsight/ps-design-system-util/color'
 
 const listItemTextLightHover = {
   color: core.colors.gray06
@@ -80,34 +81,42 @@ export default {
     width: '64px',
     color: core.colors.white,
     border: 0,
-    zIndex: 1
+    zIndex: 1,
+    cursor: 'pointer',
+    outline: 'none'
   },
   '.psds-tab__overflow-button--left': {
     left: 0,
     justifyContent: 'flex-start',
-    background: `linear-gradient(to left, transparent, ${
-      core.colors.gray06
-    } 50%)`,
+    background: `linear-gradient(to left, transparent, ${transparentize(
+      0.1,
+      core.colors.gray05
+    )} 50%)`,
     paddingLeft: core.layout.spacingMedium
   },
   '.psds-tab__overflow-button--right': {
     right: 0,
     justifyContent: 'flex-end',
-    background: `linear-gradient(to right, transparent, ${
-      core.colors.gray06
-    } 50%)`,
+    background: `linear-gradient(to right, transparent, ${transparentize(
+      0.1,
+      core.colors.gray05
+    )} 50%)`,
     paddingRight: core.layout.spacingMedium
   },
   [`.psds-tab__overflow-button.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03
+    color: core.colors.gray06
   },
   [`.psds-tab__overflow-button--left.psds-theme--${themeNames.light}`]: {
-    background: `linear-gradient(to left, transparent, ${core.colors.bone} 50%)`
+    background: `linear-gradient(to left, transparent, ${transparentize(
+      0.1,
+      core.colors.white
+    )} 50%)`
   },
   [`.psds-tab__overflow-button--right.psds-theme--${themeNames.light}`]: {
-    background: `linear-gradient(to right, transparent, ${
-      core.colors.bone
-    } 50%)`
+    background: `linear-gradient(to right, transparent, ${transparentize(
+      0.1,
+      core.colors.white
+    )} 50%)`
   },
 
   // __list-item
