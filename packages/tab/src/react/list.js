@@ -130,16 +130,18 @@ const List = React.forwardRef(function List(props, listRef) {
     const pageWidth = getWidth(listRef)
     const offscreenLeftWidth = getLeftX(listRef) - getLeftX(sliderRef)
     const smallestNeededWidth = Math.min(pageWidth, offscreenLeftWidth)
-    const lesserXOffset = xOffset + smallestNeededWidth
+    const lesserXOffset = Math.min(xOffset + smallestNeededWidth, 0)
     setXOffset(lesserXOffset)
   }
 
   function handlePageRight(evt) {
     evt.preventDefault()
     const pageWidth = getWidth(listRef)
+    const sliderWidth = getWidth(sliderRef)
+    const maxXOffset = -1 * sliderWidth + pageWidth
     const offscreenRightWidth = getRightX(sliderRef) - getRightX(listRef)
     const smallestNeededWidth = Math.min(pageWidth, offscreenRightWidth)
-    const furtherXOffset = xOffset - smallestNeededWidth
+    const furtherXOffset = Math.max(xOffset - smallestNeededWidth, maxXOffset)
     setXOffset(furtherXOffset)
   }
 
