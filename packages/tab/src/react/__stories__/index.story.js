@@ -54,6 +54,21 @@ storiesOf('default', module)
       </Tab.ListItem>
     </Tab.List>
   ))
+  .add('super long item', _ => (
+    <Tab.List>
+      <Tab.ListItem id={1} key={1}>
+        This is the song that doesn't end; yes, it goes on and on, my friend;
+        some people started singing it, not knowing what it was; and they'll
+        continue singing it forever just because
+      </Tab.ListItem>
+      <Tab.ListItem id={2} key={2}>
+        Short
+      </Tab.ListItem>
+      <Tab.ListItem id={3} key={3}>
+        A little less ridiculous but still long
+      </Tab.ListItem>
+    </Tab.List>
+  ))
 
 storiesOf('scrolling', module)
   .addDecorator(themeDecorator(addons))

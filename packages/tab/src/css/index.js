@@ -118,6 +118,7 @@ export default {
     cursor: 'pointer',
     padding: `0 calc(${core.layout.spacingXLarge} / 2)`,
     textDecoration: 'none',
+    maxWidth: '300px',
     '&:focus': {
       outline: 'none'
     },
