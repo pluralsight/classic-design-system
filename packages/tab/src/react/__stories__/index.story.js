@@ -5,44 +5,36 @@ import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import Tab from '../index.js'
 
-class InAppExample extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { activeIndex: 2 }
-    this.menus = [1, 2, 3, 4, 5].map(i => ({
-      id: `example${i}`,
-      label: `Menu ${i}`,
-      content: `Menu stuff ${i}`
-    }))
-    this.handleTabClick = this.handleTabClick.bind(this)
+function InAppExample() {
+  const [activeIndex, setActiveIndex] = React.useState(2)
+  const menus = [1, 2, 3, 4, 5].map(i => ({
+    id: `example${i}`,
+    label: `Menu ${i}`,
+    content: `Menu stuff ${i}`
+  }))
+
+  function handleTabClick(i) {
+    setActiveIndex(i)
   }
-  handleTabClick(i) {
-    this.setState({ activeIndex: i })
-  }
-  render() {
-    return (
-      <div>
-        <Tab.List>
-          {this.menus.map((menu, i) => (
-            <Tab.ListItem
-              id={menu.id}
-              key={menu.id}
-              onClick={this.handleTabClick}
-            >
-              {menu.label}
-            </Tab.ListItem>
-          ))}
-        </Tab.List>
-        {this.menus.map((menu, i) =>
-          i === this.state.activeIndex ? (
-            <Tab.Panel labelledBy={menu.id} key={menu.id}>
-              <div className="content">{menu.content}</div>
-            </Tab.Panel>
-          ) : null
-        )}
-      </div>
-    )
-  }
+
+  return (
+    <div>
+      <Tab.List>
+        {menus.map((menu, i) => (
+          <Tab.ListItem id={menu.id} key={menu.id} onClick={handleTabClick}>
+            {menu.label}
+          </Tab.ListItem>
+        ))}
+      </Tab.List>
+      {menus.map((menu, i) =>
+        i === activeIndex ? (
+          <Tab.Panel labelledBy={menu.id} key={menu.id}>
+            <div className="content">{menu.content}</div>
+          </Tab.Panel>
+        ) : null
+      )}
+    </div>
+  )
 }
 
 storiesOf('default', module)
