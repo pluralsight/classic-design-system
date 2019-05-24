@@ -9,8 +9,8 @@
     "@pluralsight/ps-design-system-normalize": "^3.0.47",
     "@pluralsight/ps-design-system-text": "^10.7.16",
     "glamor": "^2.20.40",
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1",
+    "react": "^16.8.6",
+    "react-dom": "16.8.6",
     "react-scripts": "2.1.1"
   },
   "scripts": {
