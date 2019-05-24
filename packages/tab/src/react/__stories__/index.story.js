@@ -13,7 +13,6 @@ function randomIntBetween(min, max) {
 function NavigableExample({ count = 5, resizeEvery }) {
   const [activeIndex, setActiveIndex] = React.useState(2)
   const [width, setWidth] = React.useState(100)
-  const [runOnce, setRunOnce] = React.useState(false)
   const menus = Array(count)
     .fill(null)
     .map((_, i) => ({
@@ -24,21 +23,17 @@ function NavigableExample({ count = 5, resizeEvery }) {
   React.useEffect(
     () => {
       let timer
-      if (!runOnce) {
-        setRunOnce(true)
-        if (resizeEvery) {
-          timer = setInterval(() => {
-            setWidth(randomIntBetween(25, 100))
-          }, resizeEvery)
-        }
+      if (resizeEvery) {
+        timer = setInterval(() => {
+          setWidth(randomIntBetween(25, 100))
+        }, resizeEvery)
       }
-
       return () => {
         clearInterval(timer)
         timer = null
       }
     },
-    [resizeEvery, runOnce]
+    [resizeEvery]
   )
 
   function handleTabClick(i) {
