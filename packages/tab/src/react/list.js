@@ -177,7 +177,25 @@ function List(props) {
     evt.preventDefault()
     const delta = evt.key === 'ArrowRight' ? 1 : -1
     const nextRef = itemRefs[activeIndex + delta]
+
     if (nextRef && nextRef.current) {
+      if (delta === 1) {
+        const itemRightX = getRightX(nextRef)
+        const listRightX = getRightX(listRef)
+        const isOffscreenRight = itemRightX > listRightX
+        if (isOffscreenRight) {
+          setXOffset(xOffset - (itemRightX - listRightX))
+        }
+      } else {
+        const itemLeftX = getLeftX(nextRef)
+        const listLeftX = getLeftX(listRef)
+        const isOffscreenLeft = itemLeftX < listLeftX
+        console.log({ itemLeftX, listLeftX, isOffscreenLeft })
+        if (isOffscreenLeft) {
+          setXOffset(xOffset - itemLeftX)
+        }
+      }
+
       nextRef.current.focus()
       nextRef.current.click()
     }
