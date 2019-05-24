@@ -49,7 +49,7 @@ export default {
       outline: 'none',
       borderBottomWidth: '4px',
       // __text
-      '& div': {
+      '& > div': {
         height: 'calc(100% + 4px)',
         marginBottom: '-4px'
       }
