@@ -196,7 +196,10 @@ export default {
     }
   },
   '.psds-tab__list-item__text-inner': {
-    overflow: 'hidden'
+    overflow: 'hidden',
+    '&:focus': {
+      outline: 'none'
+    }
   },
 
   // __list-item__bar
