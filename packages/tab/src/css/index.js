@@ -66,7 +66,7 @@ export default {
     position: 'absolute',
     top: 0,
     left: 0,
-    display: 'flex',
+    whiteSpace: 'nowrap',
     height: '64px',
     transform: 'translateX(0)',
     transition: `transform ${core.motion.speedSlow} ease-in-out`
@@ -135,7 +135,7 @@ export default {
 
   // __list-item
   '.psds-tab__list-item': {
-    flexShrink: '0',
+    display: 'inline-block',
     height: '100%',
     background: 'none',
     border: 0,
@@ -143,6 +143,7 @@ export default {
     padding: `0 calc(${core.layout.spacingXLarge} / 2)`,
     textDecoration: 'none',
     maxWidth: '300px',
+    whiteSpace: 'normal',
     '&:focus': {
       outline: 'none'
     },
@@ -193,6 +194,9 @@ export default {
     '&:focus': {
       outline: 'none'
     }
+  },
+  '.psds-tab__list-item__text-inner': {
+    overflow: 'hidden'
   },
 
   // __list-item__bar

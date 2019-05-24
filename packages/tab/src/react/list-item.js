@@ -20,6 +20,7 @@ const styles = {
           }`
         ]
     ),
+  textInner: _ => glamor.css(css['.psds-tab__list-item__text-inner']),
   textWidth: _ => glamor.css(css['.psds-tab__list-item__text'])
 }
 
@@ -39,7 +40,9 @@ const ListItem = React.forwardRef((props, ref) => {
       { tagName }
     ),
     <div {...styles.textWidth(props)} tabIndex="-1">
-      {props.children}
+      <div {...styles.textInner(props)} tabIndex="-1">
+        {props.children}
+      </div>
       <span {...styles.bar(props)} />
     </div>
   )
