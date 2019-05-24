@@ -9,7 +9,7 @@ import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 import css from '../css/index.js'
 import useResizeObserver from './use-resize-observer.js'
 
-const slideAnimationLength = parseInt(core.motion.speedSlow) + 1
+const slideAnimationLength = parseInt(core.motion.speedFast) + 1
 
 const styles = {
   list: ({ themeName }) =>
@@ -196,8 +196,11 @@ function List(props) {
         }
       }
 
-      nextRef.current.focus()
-      nextRef.current.click()
+      // NOTE: makes it slow but doesn't let focus get ahead of viewport
+      setTimeout(() => {
+        nextRef.current.focus()
+        nextRef.current.click()
+      }, slideAnimationLength)
     }
   }
 

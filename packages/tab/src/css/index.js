@@ -69,7 +69,8 @@ export default {
     whiteSpace: 'nowrap',
     height: '64px',
     transform: 'translateX(0)',
-    transition: `transform ${core.motion.speedSlow} ease-in-out`
+    /* TODO: make separate transition-durations for arrowing vs paging */
+    transition: `transform ${core.motion.speedFast} ease-in-out`
   },
 
   '.psds-tab__overflow-button': {
