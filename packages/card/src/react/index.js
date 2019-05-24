@@ -7,8 +7,7 @@ import Shiitake from 'shiitake'
 
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
 import { toPercentageString } from '../js/index.js'
@@ -242,32 +241,45 @@ const renderTag = props =>
 const Text = props => <span {...filterReactProps(props, { tagName: 'span' })} />
 Text.displayName = 'Card.Text'
 
-const TextLink = withTheme(props => (
-  <span
-    {...styles.textLink(props)}
-    {...filterReactProps(props, { tagName: 'span' })}
-  />
-))
+const TextLink = props => {
+  const themeName = useTheme()
+  const allProps = { themeName, ...props }
+
+  return (
+    <span
+      {...styles.textLink(allProps)}
+      {...filterReactProps(allProps, { tagName: 'span' })}
+    />
+  )
+}
 TextLink.displayName = 'Card.TextLink'
 
 const TitleContainer = props => (
   <div {...styles.titleContainer(props)} {...filterReactProps(props)} />
 )
 
-const Title = withTheme(props => (
-  <div {...styles.title(props)} {...filterReactProps(props)}>
-    <Shiitake lines={2}>{props.children}</Shiitake>
-  </div>
-))
+const Title = props => {
+  const themeName = useTheme()
+  const allProps = { themeName, ...props }
+
+  return (
+    <div {...styles.title(allProps)} {...filterReactProps(allProps)}>
+      <Shiitake lines={2}>{allProps.children}</Shiitake>
+    </div>
+  )
+}
 Title.displayName = 'Card.Title'
 
 const renderTitle = (props, title) => {
   return <TitleContainer {...props}>{title}</TitleContainer>
 }
 
-const Metadata = withTheme(props => (
-  <div {...styles.metadata(props)} {...filterReactProps(props)} />
-))
+const Metadata = props => {
+  const themeName = useTheme()
+  const allProps = { themeName, ...props }
+
+  return <div {...styles.metadata(allProps)} {...filterReactProps(allProps)} />
+}
 
 const MetadataDatum = props => (
   <span
@@ -354,8 +366,7 @@ CardComponent.propTypes = {
 CardComponent.defaultProps = {
   actionBarVisible: false,
   fullOverlayVisible: false,
-  size: vars.sizes.medium,
-  themeName: PropTypes.oneOf(Object.values(themeNames)).isRequired
+  size: vars.sizes.medium
 }
 
 export const sizes = vars.sizes
