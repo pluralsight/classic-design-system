@@ -95,6 +95,36 @@ storiesOf('default', module)
       </Tab.ListItem>
     </Tab.List>
   ))
+  .add('active item offscreen', _ => (
+    <div style={{ width: '500px', outline: '1px solid red' }}>
+      <Tab.List>
+        <Tab.ListItem id={1} key={1}>
+          One thing
+        </Tab.ListItem>
+        <Tab.ListItem id={2} key={2}>
+          Two thing
+        </Tab.ListItem>
+        <Tab.ListItem id={3} key={3}>
+          Three thing
+        </Tab.ListItem>
+        <Tab.ListItem id={4} key={4}>
+          Four thing
+        </Tab.ListItem>
+        <Tab.ListItem id={5} key={5} active>
+          ACTIVE thing
+        </Tab.ListItem>
+        <Tab.ListItem id={6} key={6}>
+          Six thing
+        </Tab.ListItem>
+        <Tab.ListItem id={7} key={7}>
+          Six thing
+        </Tab.ListItem>
+        <Tab.ListItem id={8} key={8}>
+          Six thing
+        </Tab.ListItem>
+      </Tab.List>
+    </div>
+  ))
 
 storiesOf('scrolling', module)
   .addDecorator(themeDecorator(addons))

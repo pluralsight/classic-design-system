@@ -57,6 +57,8 @@ function List(props) {
   const sliderRef = React.useRef()
   const activeIndexFromProps = findActiveIndex(props.children)
 
+  const [isRenderedOnce, setRenderedOnce] = React.useState(false)
+
   // TODO: likely rename
   const [dims, setDims] = React.useState({
     isOverflowingLeft: false,
@@ -71,6 +73,21 @@ function List(props) {
     _ => React.Children.map(props.children, () => React.createRef()),
     [props.children]
   )
+  React.useEffect(
+    function ensureActiveItemOnscreen() {
+      if (!isRenderedOnce) {
+        const itemRightX = getRightX(itemRefs[activeIndex])
+        const listRightX = getRightX(listRef)
+        const isItemOffscreen = itemRightX > listRightX
+        if (isItemOffscreen) {
+          setXOffset(-1 * (itemRightX - listRightX))
+        }
+        setRenderedOnce(true)
+      }
+    },
+    [activeIndex, isRenderedOnce, itemRefs, listRef]
+  )
+
   React.useEffect(
     () => {
       if (activeIndex !== activeIndexFromProps && activeIndexFromProps !== -1)
