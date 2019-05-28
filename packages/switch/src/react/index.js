@@ -1,4 +1,4 @@
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 import * as glamor from 'glamor'
 import Halo from '@pluralsight/ps-design-system-halo/react'
 import PropTypes from 'prop-types'
@@ -69,29 +69,30 @@ class Switch extends React.Component {
   }
 
   render() {
-    const themeName = this.context.themeName || themeDefaultName
     const { isFocused } = this.state
-
     const { children, disabled, error } = this.props
-    const allProps = { ...this.props, themeName }
 
     const switchProps = {
-      ...styles.switch(allProps),
-      ...(allProps.style ? { style: allProps.style } : null),
-      ...(allProps.className ? { className: allProps.className } : null),
+      ...styles.switch(this.props),
+      ...(this.props.style ? { style: this.props.style } : null),
+      ...(this.props.className ? { className: this.props.className } : null),
       ...(!disabled && {
         onBlur: this.handleBlur,
         onClick: this.handleClick,
         onFocus: this.handleFocus
       }),
-      tabIndex: disabled ? '-1' : allProps.tabIndex || '0'
+      tabIndex: disabled ? '-1' : this.props.tabIndex || '0'
     }
 
     return (
-      <button {...switchProps} aria-checked={allProps.checked} role="checkbox">
+      <button
+        {...switchProps}
+        aria-checked={this.props.checked}
+        role="checkbox"
+      >
         <Halo error={error} shape={Halo.shapes.pill} inline visible={isFocused}>
-          <div {...styles.track(allProps)}>
-            <div {...styles.thumb(allProps)} />
+          <div {...styles.track(this.props)}>
+            <div {...styles.thumb(this.props)} />
           </div>
         </Halo>
 
@@ -99,11 +100,11 @@ class Switch extends React.Component {
           tabIndex="-1"
           type="checkbox"
           readOnly
-          checked={allProps.checked}
-          {...styles.checkbox(allProps)}
+          checked={this.props.checked}
+          {...styles.checkbox(this.props)}
         />
 
-        {children && <label {...styles.label(allProps)}>{children}</label>}
+        {children && <label {...styles.label(this.props)}>{children}</label>}
       </button>
     )
   }
@@ -112,12 +113,15 @@ class Switch extends React.Component {
 Switch.propTypes = {
   checked: PropTypes.bool,
   children: PropTypes.node,
+  className: PropTypes.string,
   color: PropTypes.oneOf(Object.keys(vars.colors)),
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   labelAlign: PropTypes.oneOf(Object.keys(vars.labelAligns)),
   onClick: PropTypes.func,
-  size: PropTypes.oneOf(Object.keys(vars.sizes))
+  size: PropTypes.oneOf(Object.keys(vars.sizes)),
+  style: PropTypes.object,
+  tabIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
 }
 
 Switch.defaultProps = {
@@ -129,10 +133,6 @@ Switch.defaultProps = {
   size: vars.sizes.large
 }
 
-Switch.contextTypes = {
-  themeName: PropTypes.string
-}
-
 Switch.colors = vars.colors
 Switch.sizes = vars.sizes
 Switch.labelAligns = vars.labelAligns
@@ -141,4 +141,4 @@ export const colors = vars.colors
 export const sizes = vars.sizes
 export const labelAligns = vars.labelAligns
 
-export default Switch
+export default withTheme(Switch)
