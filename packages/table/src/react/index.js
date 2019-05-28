@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
+
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
 import * as drawerVars from '@pluralsight/ps-design-system-drawer/vars'
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
 import * as vars from '../vars'
@@ -66,7 +68,7 @@ const getToggledSort = props =>
     [vars.sorts.desc]: vars.sorts.asc
   }[props.sort] || vars.sorts.asc)
 
-class ColumnHeader extends React.Component {
+class _ColumnHeader extends React.Component {
   constructor(props) {
     super(props)
     this.handleClick = this.handleClick.bind(this)
@@ -78,12 +80,11 @@ class ColumnHeader extends React.Component {
   }
 
   render() {
-    const { context, props } = this
+    const { props } = this
 
     const allProps = {
       ...props,
-      active: vars.sorts[props.sort] && typeof props.onClick === 'function',
-      themeName: context.themeName || themeDefaultName
+      active: vars.sorts[props.sort] && typeof props.onClick === 'function'
     }
     const style = allProps.style || {}
 
@@ -111,9 +112,9 @@ class ColumnHeader extends React.Component {
   }
 }
 
+const ColumnHeader = withTheme(_ColumnHeader)
 ColumnHeader.displayName = 'Table.ColumnHeader'
 
-/* eslint-disable react/no-unused-prop-types */
 ColumnHeader.propTypes = {
   align: PropTypes.oneOf(Object.keys(vars.aligns)),
   children: PropTypes.string.isRequired,
@@ -121,40 +122,30 @@ ColumnHeader.propTypes = {
   onClick: PropTypes.func,
   sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)])
 }
-/* eslint-enable react/no-unused-prop-types */
 
 ColumnHeader.defaultProps = {
   align: vars.aligns.left
 }
-ColumnHeader.contextTypes = {
-  themeName: PropTypes.string
-}
 
-class Cell extends React.Component {
+class _Cell extends React.Component {
   render() {
-    const { context, props } = this
-    const allProps = {
-      ...props,
-      themeName: context.themeName || themeDefaultName
-    }
-    const style = allProps.style || {}
-    if (
-      (!allProps.styles || (allProps.styles && !allProps.styles.flex)) &&
-      allProps.flex
-    )
-      style.flex = allProps.flex
+    const { props } = this
+    const style = props.style || {}
+    if ((!props.styles || (props.styles && !props.styles.flex)) && props.flex)
+      style.flex = props.flex
     return (
       <div
         role="cell"
-        {...styles.cell(allProps)}
-        {...(allProps.className ? { className: allProps.className } : null)}
+        {...styles.cell(props)}
+        {...(props.className ? { className: props.className } : null)}
         style={style}
       >
-        {allProps.children}
+        {props.children}
       </div>
     )
   }
 }
+const Cell = withTheme(_Cell)
 Cell.propTypes = {
   align: PropTypes.oneOf(Object.keys(vars.aligns)),
   emphasis: PropTypes.bool,
@@ -164,30 +155,24 @@ Cell.defaultProps = {
   align: vars.aligns.left,
   emphasis: false
 }
-Cell.contextTypes = {
-  themeName: PropTypes.string
-}
 Cell.displayName = 'Table.Cell'
 
-class Row extends React.Component {
+class _Row extends React.Component {
   render() {
-    const { context, props } = this
-    const allProps = {
-      ...props,
-      themeName: context.themeName || themeDefaultName
-    }
+    const { props } = this
     return (
       <div
         role="row"
-        {...styles.row(allProps)}
-        {...(allProps.className ? { className: allProps.className } : null)}
-        {...(allProps.style ? { style: allProps.style } : null)}
+        {...styles.row(props)}
+        {...(props.className ? { className: props.className } : null)}
+        {...(props.style ? { style: props.style } : null)}
       >
-        {allProps.children}
+        {props.children}
       </div>
     )
   }
 }
+const Row = withTheme(_Row)
 Row.displayName = 'Table.Row'
 Row.propTypes = {
   _tableHasDrawers: PropTypes.bool
@@ -195,20 +180,13 @@ Row.propTypes = {
 Row.defaultProps = {
   _tableHasDrawers: false
 }
-Row.contextTypes = {
-  themeName: PropTypes.string
-}
 
 class Table extends React.Component {
   render() {
-    const { context, props } = this
-    const allProps = {
-      ...props,
-      themeName: context.themeName || themeDefaultName
-    }
+    const { props } = this
 
     const _tableHasDrawers = React.Children.map(
-      allProps.children || [],
+      props.children || [],
       child =>
         child &&
         child.type &&
@@ -218,11 +196,11 @@ class Table extends React.Component {
     return (
       <div
         role="table"
-        {...styles.table(allProps)}
+        {...styles.table(props)}
         {...(props.className ? { className: props.className } : null)}
         {...(props.style ? { style: props.style } : null)}
       >
-        {React.Children.map(allProps.children || [], child =>
+        {React.Children.map(props.children || [], child =>
           child && child.type && child.type.displayName === Row.displayName
             ? React.cloneElement(child, { _tableHasDrawers })
             : child
@@ -238,9 +216,6 @@ Table.propTypes = {
 Table.defaultProps = {
   inDrawer: false
 }
-Table.contextTypes = {
-  themeName: PropTypes.string
-}
 
 Table.Row = Row
 Table.Cell = Cell
@@ -252,4 +227,4 @@ Table.sorts = vars.sorts
 export const aligns = vars.aligns
 export const sorts = vars.sorts
 
-export default Table
+export default withTheme(Table)
