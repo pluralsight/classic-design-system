@@ -4,7 +4,7 @@ import Halo from '@pluralsight/ps-design-system-halo/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
 import * as vars from '../vars/index.js'
@@ -52,7 +52,7 @@ const styles = {
 }
 
 const TextInput = (props, context) => {
-  const themeName = context.themeName || themeDefaultName
+  const themeName = useTheme()
   const allProps = { ...props, themeName }
   const { error, label, icon, style, subLabel, ...inputProps } = allProps
 
@@ -104,9 +104,6 @@ TextInput.defaultProps = {
   disabled: false,
   error: false,
   iconAlign: vars.iconAligns.left
-}
-TextInput.contextTypes = {
-  themeName: PropTypes.string
 }
 
 TextInput.appearances = vars.appearances
