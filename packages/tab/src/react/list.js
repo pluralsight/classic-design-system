@@ -2,7 +2,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
 
@@ -56,9 +56,7 @@ class List extends React.Component {
       ...rest,
       role: 'tablist',
       onKeyDown: this.handleKeyDown,
-      tabIndex: '0',
-      // TODO: use withTheme instead
-      themeName: this.context.themeName || themeDefaultName
+      tabIndex: '0'
     }
     return (
       <div {...filterReactProps(listProps)} {...styles.list(listProps)}>
@@ -84,8 +82,5 @@ List.propTypes = {
     PropTypes.arrayOf(PropTypes.element)
   ])
 }
-List.contextTypes = {
-  themeName: PropTypes.string
-}
 
-export default List
+export default withTheme(List)
