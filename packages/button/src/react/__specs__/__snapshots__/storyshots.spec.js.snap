@@ -1787,17 +1787,41 @@ exports[`Storyshots Button / size xSmall 1`] = `
 `;
 
 exports[`Storyshots Button / theme nested 1`] = `
-<button
-  data-css-mtq3v8=""
-  disabled={false}
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
+Array [
+  <button
+    data-css-mtq3v8=""
+    disabled={false}
+    style={Object {}}
   >
-    dark
-  </span>
-</button>
+    <span
+      data-css-15b13by=""
+    >
+      dark
+    </span>
+  </button>,
+  <button
+    data-css-qguorc=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      light
+    </span>
+  </button>,
+  <button
+    data-css-mtq3v8=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      dark
+    </span>
+  </button>,
+]
 `;
 
 exports[`Storyshots Button / with onClick clicks once 1`] = `
