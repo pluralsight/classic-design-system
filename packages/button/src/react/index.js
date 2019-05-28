@@ -182,10 +182,6 @@ Button.defaultProps = {
   loading: false,
   size: vars.sizes.medium
 }
-Button.contextTypes = {
-  themeName: PropTypes.string
-}
-
 Button.appearances = vars.appearances
 Button.iconAligns = vars.iconAligns
 Button.sizes = vars.sizes
