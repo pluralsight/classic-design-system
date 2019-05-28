@@ -78,9 +78,6 @@ CircularProgress.propTypes = {
 CircularProgress.defaultProps = {
   size: vars.sizes.medium
 }
-CircularProgress.contextTypes = {
-  themeName: PropTypes.string
-}
 
 CircularProgress.sizes = vars.sizes
 export const sizes = vars.sizes
