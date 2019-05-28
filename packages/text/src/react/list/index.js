@@ -1,8 +1,7 @@
-import core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import ListItem from './list-item'
 
@@ -23,24 +22,27 @@ const rmNonHtmlProps = props => {
   return rest
 }
 
-const List = (props, context) =>
-  React.createElement(
+const List = (props, context) => {
+  const themeName = useTheme()
+  return React.createElement(
     getTagName(props),
     {
       ...rmNonHtmlProps(props),
-      className: formatClassName({ ...props, themeName: context.themeName })
+      className: formatClassName({ ...props, themeName })
     },
     props.children
   )
+}
 
+/* eslint-disable react/no-unused-prop-types */
 List.propTypes = {
+  children: PropTypes.node,
   type: PropTypes.oneOf(Object.keys(vars.listTypes))
 }
+/* eslint-enable react/no-unused-prop-types */
+
 List.defaultProps = {
   type: vars.listTypes.default
-}
-List.contextTypes = {
-  themeName: PropTypes.string
 }
 
 List.types = vars.listTypes
