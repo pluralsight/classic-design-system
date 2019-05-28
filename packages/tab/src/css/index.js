@@ -66,7 +66,7 @@ export default {
     position: 'absolute',
     top: 0,
     left: 0,
-    whiteSpace: 'nowrap',
+    display: 'flex',
     height: '64px',
     transform: 'translateX(0)',
     /* TODO: make separate transition-durations for arrowing vs paging */
@@ -136,7 +136,7 @@ export default {
 
   // __list-item
   '.psds-tab__list-item': {
-    display: 'inline-block',
+    flexShrink: '0',
     height: '100%',
     background: 'none',
     border: 0,
@@ -144,7 +144,6 @@ export default {
     padding: `0 calc(${core.layout.spacingXLarge} / 2)`,
     textDecoration: 'none',
     maxWidth: '300px',
-    whiteSpace: 'normal',
     '&:focus': {
       outline: 'none'
     },
