@@ -3,7 +3,7 @@ import initStoryshots, {
   snapshotWithOptions
 } from '@storybook/addon-storyshots'
 
-// jest.mock('@pluralsigt/ps-design-system-storybook-addon-theme')
+jest.mock('@pluralsight/ps-design-system-storybook-addon-theme')
 
 const createNodeMock = el => document.createElement('div')
 
