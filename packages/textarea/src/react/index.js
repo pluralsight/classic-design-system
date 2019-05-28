@@ -5,7 +5,7 @@ import Halo from '@pluralsight/ps-design-system-halo/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
 
@@ -59,10 +59,9 @@ const styles = {
 }
 
 const TextArea = (props, context) => {
-  const allProps = {
-    ...props,
-    themeName: context.themeName || themeDefaultName
-  }
+  const themeName = useTheme()
+  const allProps = { ...props, themeName }
+
   return (
     <label
       {...styles.textarea(allProps)}
@@ -109,9 +108,6 @@ TextArea.defaultProps = {
   disabled: false,
   error: false,
   rows: 4
-}
-TextArea.contextTypes = {
-  themeName: PropTypes.string
 }
 
 export default TextArea
