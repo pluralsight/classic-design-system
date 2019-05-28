@@ -137,8 +137,4 @@ Checkbox.defaultProps = {
   disabled: false,
   error: false
 }
-Checkbox.contextTypes = {
-  themeName: PropTypes.string
-}
-
 export default Checkbox
