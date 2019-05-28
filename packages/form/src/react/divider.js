@@ -1,5 +1,4 @@
 import * as glamor from 'glamor'
-import PropTypes from 'prop-types'
 import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
@@ -26,8 +25,5 @@ const Divider = props => {
   )
 }
 Divider.displayName = 'Divider'
-Divider.contextTypes = {
-  themeName: PropTypes.string
-}
 
 export default Divider
