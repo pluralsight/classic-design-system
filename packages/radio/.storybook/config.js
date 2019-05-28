@@ -1,9 +1,12 @@
-/* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
+import addons from '@storybook/addons'
+import { addDecorator, configure } from '@storybook/react'
 
-import { configure } from '@storybook/react'
+import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-function loadStories() {
-  require('../stories')
+addDecorator(themeDecorator(addons))
+
+function loadStory() {
+  require('../src/react/__stories__/index.story.js')
 }
 
-configure(loadStories, module)
+configure(loadStory, module)
