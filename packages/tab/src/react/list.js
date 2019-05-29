@@ -59,10 +59,9 @@ function List(props) {
 
   const [isRenderedOnce, setRenderedOnce] = React.useState(false)
 
-  // TODO: likely rename
-  const [dims, setDims] = React.useState({
-    isOverflowingLeft: false,
-    isOverflowingRight: false
+  const [overflows, setOverflows] = React.useState({
+    toLeft: false,
+    toRight: false
   })
   const [xOffset, setXOffset] = React.useState(0)
   const [sliderWidth, setSliderWidth] = React.useState(0)
@@ -111,15 +110,15 @@ function List(props) {
   React.useEffect(
     () => {
       function calcOverflow() {
-        const isOverflowingRight = sliderWidth + xOffset > listWidth
+        const toRight = sliderWidth + xOffset > listWidth
 
         const listLeftX = getLeftX(listRef)
         const sliderLeftX = getLeftX(sliderRef)
-        const isOverflowingLeft = sliderLeftX + xOffset < listLeftX
+        const toLeft = sliderLeftX + xOffset < listLeftX
 
-        setDims({
-          isOverflowingLeft,
-          isOverflowingRight
+        setOverflows({
+          toLeft,
+          toRight
         })
       }
 
@@ -237,7 +236,7 @@ function List(props) {
       {...styles.list(listProps)}
       ref={listRef}
     >
-      {dims.isOverflowingLeft && (
+      {overflows.toLeft && (
         <OverflowButton position="left" onClick={handlePageLeft} />
       )}
       <div
@@ -257,7 +256,7 @@ function List(props) {
             })
         )}
       </div>
-      {dims.isOverflowingRight && (
+      {overflows.toRight && (
         <OverflowButton position="right" onClick={handlePageRight} />
       )}
     </div>
