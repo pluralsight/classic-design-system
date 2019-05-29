@@ -86,7 +86,7 @@ export default {
     cursor: 'pointer',
     outline: 'none',
 
-    // > __icon
+    // __icon
     '&:hover > div': {
       background: core.colors.gray03
     }
@@ -110,7 +110,12 @@ export default {
     paddingRight: core.layout.spacingMedium
   },
   [`.psds-tab__overflow-button.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray06
+    color: core.colors.gray06,
+
+    // __icon
+    '&:hover > div': {
+      background: core.colors.gray01
+    }
   },
   [`.psds-tab__overflow-button--left.psds-theme--${themeNames.light}`]: {
     background: `linear-gradient(to left, transparent, ${transparentize(
@@ -124,6 +129,7 @@ export default {
       core.colors.white
     )} 50%)`
   },
+
   '.psds-tab__overflow-button__icon': {
     display: 'flex',
     alignItems: 'center',
