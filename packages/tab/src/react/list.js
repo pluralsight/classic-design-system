@@ -104,26 +104,6 @@ function List(props) {
     [listRef, sliderRef, xOffset, listWidth, sliderWidth]
   )
 
-  React.useEffect(
-    () => {
-      function recalcSliderPosition() {
-        if (xOffset === 0) return
-
-        const sliderDoesntNeedOverflow = listWidth > sliderWidth
-        if (sliderDoesntNeedOverflow) {
-          setXOffset(0)
-        }
-      }
-
-      const timer = setTimeout(recalcSliderPosition, slideAnimationLength)
-
-      return () => {
-        clearTimeout(timer)
-      }
-    },
-    [listWidth, sliderWidth, xOffset]
-  )
-
   function handleListItemClick(i, originalOnClick, evt) {
     setActiveIndex(i)
     if (typeof originalOnClick === 'function') originalOnClick(i, evt)
