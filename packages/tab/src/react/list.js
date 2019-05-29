@@ -28,44 +28,17 @@ const styles = {
   slider: () => glamor.css(css['.psds-tab__slider'])
 }
 
-const OverflowButton = withTheme(props => {
-  const { themeName, ...rest } = props
-  return (
-    <button {...styles.overflowButton(props)} tabIndex="-1" {...rest}>
-      <div {...styles.overflowButtonIcon()}>
-        <Icon
-          id={
-            props.position === 'right'
-              ? Icon.ids.caretRight
-              : Icon.ids.caretLeft
-          }
-        />
-      </div>
-    </button>
-  )
-})
-OverflowButton.propTypes = {
-  position: PropTypes.oneOf(['left', 'right'])
-}
-
-const findActiveIndex = els =>
-  React.Children.toArray(els).findIndex(el => el && el.props.active)
-
 function List(props) {
   const { ref: listRef, width: listWidth } = useResizeObserver()
-
   const sliderRef = React.useRef()
-  const activeIndexFromProps = findActiveIndex(props.children)
-
   const [isRenderedOnce, setRenderedOnce] = React.useState(false)
-
   const [overflows, setOverflows] = React.useState({
     toLeft: false,
     toRight: false
   })
   const [xOffset, setXOffset] = React.useState(0)
   const [sliderWidth, setSliderWidth] = React.useState(0)
-
+  const activeIndexFromProps = findActiveIndex(props.children)
   const [activeIndex, setActiveIndex] = React.useState(
     activeIndexFromProps > -1 ? activeIndexFromProps : 0
   )
@@ -75,7 +48,7 @@ function List(props) {
   )
 
   React.useEffect(
-    () => {
+    function calcSliderWidth() {
       if (itemRefs)
         setSliderWidth(
           itemRefs.reduce((totalWidth, ref) => totalWidth + getWidth(ref), 0)
@@ -100,7 +73,7 @@ function List(props) {
   )
 
   React.useEffect(
-    () => {
+    function setActiveIndexFromProps() {
       if (activeIndex !== activeIndexFromProps && activeIndexFromProps !== -1)
         setActiveIndex(activeIndexFromProps)
     },
@@ -151,30 +124,11 @@ function List(props) {
     [listWidth, sliderWidth, xOffset]
   )
 
-  // TODO: try to move most of these out
-  function styleForXOffset(xOffset) {
-    return { transform: `translateX(${xOffset}px)` }
-  }
-  function getWidth(ref) {
-    if (!(ref && ref.current)) return 0
-    const rect = ref.current.getBoundingClientRect()
-    return rect.width
-  }
-  function getLeftX(ref) {
-    if (!(ref && ref.current)) return 0
-    const rect = ref.current.getBoundingClientRect()
-    return window.pageXOffset + rect.left
-  }
-  // TODO: test if we WANT scroll left worked into this (since always a container)
-  function getRightX(ref) {
-    if (!(ref && ref.current)) return 0
-    const rect = ref.current.getBoundingClientRect()
-    return window.pageXOffset + rect.left + rect.width
-  }
   function handleListItemClick(i, originalOnClick, evt) {
     setActiveIndex(i)
     if (typeof originalOnClick === 'function') originalOnClick(i, evt)
   }
+
   function handleKeyDown(evt) {
     if (evt.key !== 'ArrowRight' && evt.key !== 'ArrowLeft') return
 
@@ -223,6 +177,7 @@ function List(props) {
     const furtherXOffset = Math.max(xOffset - listWidth, maxXOffset)
     setXOffset(furtherXOffset)
   }
+
   const { children, ...rest } = props
   const listProps = {
     ...rest,
@@ -262,13 +217,62 @@ function List(props) {
     </div>
   )
 }
+
 List.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)
   ])
 }
+
 List.contextTypes = {
   themeName: PropTypes.string
 }
+
 export default withTheme(List)
+
+const OverflowButton = withTheme(props => {
+  const { themeName, ...rest } = props
+  return (
+    <button {...styles.overflowButton(props)} tabIndex="-1" {...rest}>
+      <div {...styles.overflowButtonIcon()}>
+        <Icon
+          id={
+            props.position === 'right'
+              ? Icon.ids.caretRight
+              : Icon.ids.caretLeft
+          }
+        />
+      </div>
+    </button>
+  )
+})
+OverflowButton.propTypes = {
+  position: PropTypes.oneOf(['left', 'right'])
+}
+
+function styleForXOffset(xOffset) {
+  return { transform: `translateX(${xOffset}px)` }
+}
+
+function getWidth(ref) {
+  if (!(ref && ref.current)) return 0
+  const rect = ref.current.getBoundingClientRect()
+  return rect.width
+}
+
+function getLeftX(ref) {
+  if (!(ref && ref.current)) return 0
+  const rect = ref.current.getBoundingClientRect()
+  return window.pageXOffset + rect.left
+}
+
+function getRightX(ref) {
+  if (!(ref && ref.current)) return 0
+  const rect = ref.current.getBoundingClientRect()
+  return window.pageXOffset + rect.left + rect.width
+}
+
+function findActiveIndex(els) {
+  return React.Children.toArray(els).findIndex(el => el && el.props.active)
+}
