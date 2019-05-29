@@ -71,15 +71,16 @@ function List(props) {
     activeIndexFromProps > -1 ? activeIndexFromProps : 0
   )
   const itemRefs = React.useMemo(
-    _ => React.Children.map(props.children, () => React.createRef()),
+    _ => React.Children.map(props.children, () => React.createRef()) || [],
     [props.children]
   )
 
   React.useEffect(
     () => {
-      setSliderWidth(
-        itemRefs.reduce((totalWidth, ref) => totalWidth + getWidth(ref), 0)
-      )
+      if (itemRefs)
+        setSliderWidth(
+          itemRefs.reduce((totalWidth, ref) => totalWidth + getWidth(ref), 0)
+        )
     },
     [itemRefs]
   )
@@ -109,49 +110,46 @@ function List(props) {
 
   React.useEffect(
     () => {
-      let timer
       function calcOverflow() {
-        timer = setTimeout(() => {
-          const isOverflowingRight = sliderWidth + xOffset > listWidth
+        const isOverflowingRight = sliderWidth + xOffset > listWidth
 
-          const listLeftX = getLeftX(listRef)
-          const sliderLeftX = getLeftX(sliderRef)
-          const isOverflowingLeft = sliderLeftX + xOffset < listLeftX
+        const listLeftX = getLeftX(listRef)
+        const sliderLeftX = getLeftX(sliderRef)
+        const isOverflowingLeft = sliderLeftX + xOffset < listLeftX
 
-          setDims({
-            isOverflowingLeft,
-            isOverflowingRight
-          })
-        }, slideAnimationLength)
+        setDims({
+          isOverflowingLeft,
+          isOverflowingRight
+        })
       }
 
-      calcOverflow()
+      const timer = setTimeout(calcOverflow, slideAnimationLength)
 
       return () => {
         clearTimeout(timer)
-        timer = null
       }
     },
     [listRef, sliderRef, xOffset, listWidth, sliderWidth]
   )
 
   React.useEffect(
-    function recalcSliderPosition() {
-      if (xOffset === 0) return
+    () => {
+      function recalcSliderPosition() {
+        if (xOffset === 0) return
 
-      const sliderDoesntNeedOverflow = listWidth > sliderWidth
-      if (sliderDoesntNeedOverflow) {
-        setXOffset(0)
-      } else {
-        const sliderRightX = getRightX(sliderRef)
-        const listRightX = getRightX(listRef)
-        const overflowedExcessivelyToTheRight = listRightX > sliderRightX
-        if (overflowedExcessivelyToTheRight) {
-          setXOffset(-1 * sliderWidth + listWidth)
+        const sliderDoesntNeedOverflow = listWidth > sliderWidth
+        if (sliderDoesntNeedOverflow) {
+          setXOffset(0)
         }
       }
+
+      const timer = setTimeout(recalcSliderPosition, slideAnimationLength)
+
+      return () => {
+        clearTimeout(timer)
+      }
     },
-    [listRef, listWidth, sliderWidth, xOffset]
+    [listWidth, sliderWidth, xOffset]
   )
 
   // TODO: try to move most of these out
@@ -203,7 +201,6 @@ function List(props) {
         }
       }
 
-      // NOTE: makes it slow but doesn't let focus get ahead of viewport
       setTimeout(() => {
         if (nextRef && nextRef.current) {
           nextRef.current.focus()
@@ -224,12 +221,9 @@ function List(props) {
   function handlePageRight(evt) {
     evt.preventDefault()
     const maxXOffset = -1 * sliderWidth + listWidth
-    const offscreenRightWidth = getRightX(sliderRef) - getRightX(listRef)
-    const smallestNeededWidth = Math.min(listWidth, offscreenRightWidth)
-    const furtherXOffset = Math.max(xOffset - smallestNeededWidth, maxXOffset)
+    const furtherXOffset = Math.max(xOffset - listWidth, maxXOffset)
     setXOffset(furtherXOffset)
   }
-
   const { children, ...rest } = props
   const listProps = {
     ...rest,
