@@ -399,6 +399,9 @@ const SideNav = withHeadings(props => (
       <NavLink href="/components/row" headings={props.headings}>
         Row
       </NavLink>
+      <NavLink href="/components/searchinput" headings={props.headings}>
+        Search Input
+      </NavLink>
       <NavLink href="/components/starrating" headings={props.headings}>
         Star Rating
       </NavLink>

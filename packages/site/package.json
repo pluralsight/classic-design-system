@@ -45,6 +45,7 @@
     "@pluralsight/ps-design-system-normalize": "^3.1.2",
     "@pluralsight/ps-design-system-radio": "^1.0.7",
     "@pluralsight/ps-design-system-row": "^5.0.4",
+    "@pluralsight/ps-design-system-searchinput": "^1.0.0",
     "@pluralsight/ps-design-system-starrating": "^2.0.7",
     "@pluralsight/ps-design-system-switch": "^2.0.4",
     "@pluralsight/ps-design-system-tab": "^9.0.3",
