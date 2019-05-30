@@ -1786,6 +1786,20 @@ exports[`Storyshots Button / size xSmall 1`] = `
 </button>
 `;
 
+exports[`Storyshots Button / theme nested 1`] = `
+<button
+  data-css-mtq3v8=""
+  disabled={false}
+  style={Object {}}
+>
+  <span
+    data-css-15b13by=""
+  >
+    dark
+  </span>
+</button>
+`;
+
 exports[`Storyshots Button / with onClick clicks once 1`] = `
 <button
   data-css-t7n654=""
