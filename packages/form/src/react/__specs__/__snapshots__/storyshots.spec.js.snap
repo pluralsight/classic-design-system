@@ -59,11 +59,15 @@ exports[`Storyshots Sample Form sample 1`] = `
               <div
                 data-css-1xm24a9=""
               >
-                <input
-                  data-css-ly16us=""
-                  disabled={false}
-                  placeholder="What's your name?"
-                />
+                <div
+                  data-css-177hkuc=""
+                >
+                  <input
+                    data-css-azf86w=""
+                    disabled={false}
+                    placeholder="What's your name?"
+                  />
+                </div>
               </div>
             </div>
           </label>
@@ -90,11 +94,15 @@ exports[`Storyshots Sample Form sample 1`] = `
               <div
                 data-css-1xm24a9=""
               >
-                <input
-                  data-css-ly16us=""
-                  disabled={false}
-                  placeholder="Do you have a nick name?"
-                />
+                <div
+                  data-css-177hkuc=""
+                >
+                  <input
+                    data-css-azf86w=""
+                    disabled={false}
+                    placeholder="Do you have a nick name?"
+                  />
+                </div>
               </div>
             </div>
             <div
@@ -126,11 +134,15 @@ exports[`Storyshots Sample Form sample 1`] = `
               <div
                 data-css-utxo7p=""
               >
-                <input
-                  data-css-ly16us=""
-                  disabled={false}
-                  value="steve@example.com"
-                />
+                <div
+                  data-css-177hkuc=""
+                >
+                  <input
+                    data-css-azf86w=""
+                    disabled={false}
+                    value="steve@example.com"
+                  />
+                </div>
               </div>
               <div
                 data-css-loo18p=""
