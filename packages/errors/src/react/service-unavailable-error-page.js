@@ -1,7 +1,6 @@
-import PropTypes from 'prop-types'
 import React from 'react'
 
-import ErrorPage from './error-page'
+import ErrorPage from './error-page.js'
 
 const ServiceUnavailableErrorPage = props => (
   <ErrorPage

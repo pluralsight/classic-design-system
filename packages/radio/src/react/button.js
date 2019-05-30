@@ -2,7 +2,7 @@ import * as glamor from 'glamor'
 import Halo from '@pluralsight/ps-design-system-halo/react'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
 import css from '../css/index.js'
@@ -60,51 +60,48 @@ class Button extends React.Component {
     this.selectButton(evt)
   }
   render() {
-    const { context, props } = this
-    const allProps = {
-      ...props,
-      themeName: context.themeName || themeDefaultName
-    }
+    const { props } = this
+
     return (
       <label
         onClick={props._disabled ? null : this.handleClick}
-        {...styles.button(allProps)}
+        {...styles.button(props)}
       >
         <div {...styles.circleOuter()}>
           <Halo
-            error={allProps._error}
+            error={props._error}
             inline
             shape={Halo.shapes.pill}
-            visibleOnFocus={!allProps._disabled}
-            visible={allProps._isFocused}
+            visibleOnFocus={!props._disabled}
+            visible={props._isFocused}
             {...styles.halo()}
           >
             <div
               role="radio"
-              aria-checked={allProps.checked}
+              aria-checked={props.checked}
               tabIndex="-1"
               onFocus={
                 props._disabled ? null : _ => props._onFocus(props.value)
               }
               ref={el => (this.circle = el)}
-              {...styles.circle(allProps)}
+              {...styles.circle(props)}
             >
-              {allProps.checked && <div {...styles.circleInner(allProps)} />}
+              {props.checked && <div {...styles.circleInner(props)} />}
             </div>
           </Halo>
         </div>
         <input
-          {...propsUtil.whitelistProps(allProps, radioButtonHtmlPropsWhitelist)}
+          {...propsUtil.whitelistProps(props, radioButtonHtmlPropsWhitelist)}
           tabIndex="-1"
           type="radio"
           readOnly
           name={props._name}
-          checked={allProps.checked}
-          value={allProps.value}
-          ref={allProps.innerRef}
-          {...styles.input(allProps)}
+          checked={props.checked}
+          value={props.value}
+          ref={props.innerRef}
+          {...styles.input(props)}
         />
-        <div {...styles.label(allProps)}>{allProps.label}</div>
+        <div {...styles.label(props)}>{props.label}</div>
       </label>
     )
   }
@@ -126,8 +123,5 @@ Button.propTypes = {
 Button.defaultProps = {
   checked: false
 }
-Button.contextTypes = {
-  themeName: PropTypes.string
-}
 
-export default Button
+export default withTheme(Button)

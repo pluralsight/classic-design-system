@@ -1,31 +1,30 @@
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
 import Halo from '@pluralsight/ps-design-system-halo/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
+import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 const styles = {
   error: _ => glamor.css(css['.psds-text-input__error']),
-  field: ({ appearance, error, icon, iconAlign, themeName }) =>
+  field: ({ appearance, error, fieldAfter, icon, iconAlign, themeName }) =>
     glamor.css(
       css['.psds-text-input__field'],
       css[`.psds-text-input__field--appearance-${appearance}`],
-      icon && css[`.psds-text-input__field--icon-align-${iconAlign}`],
       css[`.psds-text-input__field.psds-theme--${themeName}`],
-      error && css[`.psds-text-input__field--error.psds-theme--${themeName}`],
-      {
-        ':focus': {
-          ...css['.psds-text-input__field:focus'],
-          ...css[`.psds-text-input__field.psds-theme--${themeName}:focus`]
-        }
-      }
+      css[
+        `.psds-text-input__field--appearance-${appearance}.psds-theme--${themeName}`
+      ],
+      fieldAfter && css[`.psds-text-input__field--w-after`],
+      icon && css[`.psds-text-input__field--icon-align-${iconAlign}`],
+      error && css[`.psds-text-input__field--error.psds-theme--${themeName}`]
     ),
   fieldContainer: _ => glamor.css(css['.psds-text-input__field-container']),
+  fieldInput: _ => glamor.css(css['.psds-text-input__field-input']),
   icon: ({ appearance, icon, iconAlign, themeName }) =>
     glamor.css(
       css['.psds-text-input__icon'],
@@ -33,11 +32,10 @@ const styles = {
       css[`.psds-text-input__icon--appearance-${appearance}`],
       css[`.psds-text-input__icon.psds-theme--${themeName}`]
     ),
-  input: ({ disabled, css: propsCss }) =>
+  textInput: ({ disabled }) =>
     glamor.css(
       css['.psds-text-input'],
-      disabled && css['.psds-text-input--disabled'],
-      propsCss
+      disabled && css['.psds-text-input--disabled']
     ),
   label: ({ themeName }) =>
     glamor.css(
@@ -52,13 +50,21 @@ const styles = {
 }
 
 const TextInput = (props, context) => {
-  const themeName = context.themeName || themeDefaultName
+  const themeName = useTheme()
   const allProps = { ...props, themeName }
-  const { error, label, icon, style, subLabel, ...inputProps } = allProps
+  const {
+    error,
+    fieldAfter,
+    label,
+    icon,
+    style,
+    subLabel,
+    ...inputProps
+  } = allProps
 
   return (
     <label
-      {...styles.input(allProps)}
+      {...styles.textInput(allProps)}
       {...(allProps.style ? { style: allProps.style } : null)}
       {...(allProps.className ? { className: allProps.className } : null)}
     >
@@ -66,13 +72,16 @@ const TextInput = (props, context) => {
 
       <div {...styles.fieldContainer(allProps)}>
         <Halo error={error} gapSize={Halo.gapSizes.small}>
-          <input
-            {...filterReactProps(inputProps, { tagName: 'input' })}
-            {...styles.field(allProps)}
-            disabled={allProps.disabled}
-            placeholder={allProps.placeholder}
-            ref={allProps.innerRef}
-          />
+          <div {...styles.field(allProps)}>
+            <input
+              {...filterReactProps(inputProps, { tagName: 'input' })}
+              {...styles.fieldInput(allProps)}
+              disabled={allProps.disabled}
+              placeholder={allProps.placeholder}
+              ref={allProps.innerRef}
+            />
+            {fieldAfter}
+          </div>
         </Halo>
 
         {icon && <div {...styles.icon(allProps)}>{icon}</div>}
@@ -93,6 +102,7 @@ TextInput.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
   disabled: PropTypes.bool,
   error: PropTypes.bool,
+  fieldAfter: PropTypes.node,
   icon: PropTypes.element,
   iconAlign: PropTypes.oneOf(Object.keys(vars.iconAligns)),
   label: PropTypes.node,
@@ -104,9 +114,6 @@ TextInput.defaultProps = {
   disabled: false,
   error: false,
   iconAlign: vars.iconAligns.left
-}
-TextInput.contextTypes = {
-  themeName: PropTypes.string
 }
 
 TextInput.appearances = vars.appearances

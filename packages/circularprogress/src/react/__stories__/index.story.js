@@ -1,28 +1,20 @@
-import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
-import * as glamor from 'glamor'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import CircularProgress from '../react'
+import CircularProgress from '../'
 
-const valueStory = storiesOf('value', module).addDecorator(
-  themeDecorator(addons)
-)
+const valueStory = storiesOf('value', module)
 ;[0, 25, 50, 75, 100, 33, 66].forEach(value =>
   valueStory.add(`value ${value}`, _ => <CircularProgress value={value} />)
 )
 
-const sizeStory = storiesOf('size', module).addDecorator(themeDecorator(addons))
+const sizeStory = storiesOf('size', module)
 Object.keys(CircularProgress.sizes).forEach(size =>
   sizeStory.add(size, _ => <CircularProgress size={size} value={75} />)
 )
 
-const indeterminateStory = storiesOf('indeterminate', module).addDecorator(
-  themeDecorator(addons)
-)
+const indeterminateStory = storiesOf('indeterminate', module)
 Object.keys(CircularProgress.sizes).forEach(size =>
   indeterminateStory.add(size, _ => <CircularProgress size={size} />)
 )
@@ -55,12 +47,11 @@ class AnimationDemo extends React.Component {
   }
 }
 
-const animationStory = storiesOf('animation', module)
-  .addDecorator(themeDecorator(addons))
-  .add('animates to new values', _ => <AnimationDemo />)
+storiesOf('animation', module).add('animates to new values', _ => (
+  <AnimationDemo />
+))
 
-const styleStory = storiesOf('style overrides', module)
-  .addDecorator(themeDecorator(addons))
+storiesOf('style overrides', module)
   .add('style', _ => <CircularProgress style={{ outline: '1px solid red' }} />)
   .add('className (no viz change)', _ => (
     <CircularProgress className="someString" />

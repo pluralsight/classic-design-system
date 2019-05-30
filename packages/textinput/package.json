@@ -10,7 +10,7 @@
   "scripts": {
     "build": "run-s build:js build:css",
     "build-storybook": "build-storybook",
-    "build:css": "build-css",
+    "build:css": "build-css --useGlamor",
     "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
@@ -21,17 +21,18 @@
   },
   "keywords": [],
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.4.2",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.3",
-    "@pluralsight/ps-design-system-halo": "^4.0.0",
-    "@pluralsight/ps-design-system-icon": "^12.0.1",
-    "@pluralsight/ps-design-system-theme": "^2.0.2",
-    "prop-types": "^15.7.0"
+    "@pluralsight/ps-design-system-core": "*",
+    "@pluralsight/ps-design-system-button": "*",
+    "@pluralsight/ps-design-system-filter-react-props": "*",
+    "@pluralsight/ps-design-system-halo": "*",
+    "@pluralsight/ps-design-system-icon": "*",
+    "@pluralsight/ps-design-system-theme": "*",
+    "prop-types": "^15.7.2"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^3.0.24",
     "glamor": "^2.20.0",
-    "react": ">=16.3.0 < 17.0.0"
+    "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.9.2",

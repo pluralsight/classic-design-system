@@ -47,6 +47,7 @@ module.exports = {
       },
       '/components/radio': { page: '/components/radio' },
       '/components/row': { page: '/components/row' },
+      '/components/searchinput': { page: '/components/searchinput' },
       '/components/starrating': { page: '/components/starrating' },
       '/components/switch': { page: '/components/switch' },
       '/components/tab': { page: '/components/tab' },

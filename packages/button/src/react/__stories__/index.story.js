@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import Button from '../index.js'
 
@@ -249,3 +250,15 @@ storiesOf('Button / in row', module).add('same vertical height', _ => {
     </div>
   )
 })
+
+storiesOf('Button / theme', module).add('nested', _ => (
+  <Theme name={Theme.names.dark}>
+    <Button appearance={Button.appearances.flat}>{Theme.names.dark}</Button>
+    <Theme name={Theme.names.light}>
+      <Button appearance={Button.appearances.flat}>{Theme.names.light}</Button>
+      <Theme name={Theme.names.dark}>
+        <Button appearance={Button.appearances.flat}>{Theme.names.dark}</Button>
+      </Theme>
+    </Theme>
+  </Theme>
+))

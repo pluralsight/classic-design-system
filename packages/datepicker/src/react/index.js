@@ -3,7 +3,7 @@ import Halo from '@pluralsight/ps-design-system-halo/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
 import Calendar from './calendar.js'
@@ -155,7 +155,12 @@ class DatePicker extends React.Component {
     this.handleKeyDown = this.handleKeyDown.bind(this)
   }
   componentWillReceiveProps(nextProps) {
-    if (this.props.value === nextProps.value) return
+    if (
+      this.props.value === nextProps.value &&
+      this.props.themeName === nextProps.themeName
+    ) {
+      return
+    }
 
     const { mm, dd, yyyy } = parseDate(nextProps.value)
     this.setState({ mm, dd, yyyy })
@@ -234,27 +239,22 @@ class DatePicker extends React.Component {
     )
   }
   render() {
-    const { context, props, state } = this
-    const allProps = {
-      ...props,
-      themeName: context.themeName || themeDefaultName
-    }
+    const { props, state } = this
+
     return (
       <label
-        {...styles.input(allProps)}
+        {...styles.input(props)}
         onFocus={this.handleFocus}
         onBlur={this.handleBlur}
         onKeyDown={this.handleKeyDown}
-        {...(allProps.style ? { style: allProps.style } : null)}
-        {...(allProps.className ? { className: allProps.className } : null)}
+        {...(props.style ? { style: props.style } : null)}
+        {...(props.className ? { className: props.className } : null)}
       >
-        {allProps.label && (
-          <div {...styles.label(allProps)}>{allProps.label}</div>
-        )}
-        <Halo error={allProps.error} gapSize={Halo.gapSizes.small}>
-          <div {...styles.fieldContainer(allProps, state)}>
+        {props.label && <div {...styles.label(props)}>{props.label}</div>}
+        <Halo error={props.error} gapSize={Halo.gapSizes.small}>
+          <div {...styles.fieldContainer(props, state)}>
             <SubField
-              appearance={allProps.appearance}
+              appearance={props.appearance}
               onChange={this.handleChange}
               onFocus={this.handleSubFieldFocus}
               onBlur={this.handleSubFieldBlur}
@@ -265,7 +265,7 @@ class DatePicker extends React.Component {
             />
             <SubFieldDivider appearance={props.appearance} />
             <SubField
-              appearance={allProps.appearance}
+              appearance={props.appearance}
               onChange={this.handleChange}
               onFocus={this.handleSubFieldFocus}
               onBlur={this.handleSubFieldBlur}
@@ -276,7 +276,7 @@ class DatePicker extends React.Component {
             />
             <SubFieldDivider appearance={props.appearance} />
             <SubField
-              appearance={allProps.appearance}
+              appearance={props.appearance}
               onChange={this.handleChange}
               onFocus={this.handleSubFieldFocus}
               onBlur={this.handleSubFieldBlur}
@@ -288,26 +288,23 @@ class DatePicker extends React.Component {
             <input
               tabIndex="-1"
               readOnly
-              {...styles.field(allProps)}
-              {...propsUtil.whitelistProps(
-                allProps,
-                datePickerHtmlPropsWhitelist
-              )}
-              disabled={allProps.disabled}
+              {...styles.field(props)}
+              {...propsUtil.whitelistProps(props, datePickerHtmlPropsWhitelist)}
+              disabled={props.disabled}
               onBlur={this.handleBlur}
               onFocus={this.handleFocus}
-              ref={allProps.innerRef}
-              value={allProps.value}
+              ref={props.innerRef}
+              value={props.value}
             />
             <button
               disabled={props.disabled}
-              {...styles.icon(allProps)}
+              {...styles.icon(props)}
               onClick={this.handleIconClick}
             >
               <Icon id={Icon.ids.calendar} />
             </button>
-            {allProps.error && (
-              <div {...styles.error(allProps)}>
+            {props.error && (
+              <div {...styles.error(props)}>
                 <Icon id={Icon.ids.warning} />
               </div>
             )}
@@ -315,7 +312,7 @@ class DatePicker extends React.Component {
         </Halo>
         {state.isOpen && [
           <Overlay onClick={this.handleOverlayClick} key="dialog-overlay" />,
-          <div {...styles.calendarContainer(allProps)} key="dialog-calender">
+          <div {...styles.calendarContainer(props)} key="dialog-calender">
             <Calendar
               mm={state.mm}
               dd={state.dd}
@@ -324,8 +321,8 @@ class DatePicker extends React.Component {
             />
           </div>
         ]}
-        {allProps.subLabel && (
-          <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
+        {props.subLabel && (
+          <div {...styles.subLabel(props)}>{props.subLabel}</div>
         )}
       </label>
     )
@@ -339,6 +336,7 @@ DatePicker.propTypes = {
   label: PropTypes.node,
   onSelect: PropTypes.func,
   subLabel: PropTypes.node,
+  themeName: PropTypes.string,
   value: PropTypes.string
 }
 DatePicker.defaultProps = {
@@ -346,11 +344,8 @@ DatePicker.defaultProps = {
   disabled: false,
   error: false
 }
-DatePicker.contextTypes = {
-  themeName: PropTypes.string
-}
 
 DatePicker.appearances = vars.appearances
 
 export const appearances = vars.appearances
-export default DatePicker
+export default withTheme(DatePicker)

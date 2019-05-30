@@ -91,9 +91,7 @@ Tag.defaultProps = {
   isPressed: false,
   size: vars.sizes.medium
 }
-Tag.contextTypes = {
-  themeName: PropTypes.string
-}
+
 export const sizes = vars.sizes
 
 export default Tag

@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
 import { defaultWithColor, subtleThemeWithColor } from '../js'
@@ -19,10 +19,11 @@ const styles = {
     )
 }
 
-const Badge = props => (
-  <div {...styles.badge(props)} {...filterReactProps(props)} />
-)
-
+export default function Badge(props) {
+  const themeName = useTheme()
+  const allProps = { themeName, ...props }
+  return <div {...styles.badge(allProps)} {...filterReactProps(allProps)} />
+}
 Badge.appearances = vars.appearances
 Badge.colors = vars.colors
 
@@ -38,5 +39,3 @@ Badge.defaultProps = {
 
 export const appearances = vars.appearances
 export const colors = vars.colors
-
-export default withTheme(Badge)

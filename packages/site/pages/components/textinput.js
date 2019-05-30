@@ -153,19 +153,19 @@ export default withServerProps(_ => (
 
       <SectionHeading>Appearance</SectionHeading>
       <P>
-        When using the <Text.Code>dark</Text.Code> theme, a{' '}
-        <Text.Code>subtle</Text.Code> appearance is available.{' '}
+        For a more subtle look, use <Text.Code>subtle</Text.Code> appearance. So
+        subtle.
       </P>
       <Example.React
         orient="vertical"
         includes={{ TextInput, Theme }}
+        themeToggle
         codes={[
-          `<Theme name={Theme.names.dark}>
-  <TextInput
-    appearance={TextInput.appearances.subtle}
-    icon={<Icon id={Icon.ids.search} />}
-    placeholder="Search" />
-</Theme>`
+          `<TextInput
+  appearance={TextInput.appearances.subtle}
+  icon={<Icon id={Icon.ids.search} />}
+  placeholder="Search" 
+/>`
         ]}
       />
 

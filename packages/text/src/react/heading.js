@@ -1,7 +1,7 @@
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
 import * as vars from '../vars/index.js'
@@ -18,24 +18,24 @@ const style = props =>
 
 const rmChildren = ({ children, ...rest }) => rest
 
-const Heading = (props, context) =>
-  React.cloneElement(React.Children.only(props.children), {
+const Heading = (props, context) => {
+  const themeName = useTheme()
+
+  return React.cloneElement(React.Children.only(props.children), {
     ...rmChildren(props),
     ...style({
       ...props,
-      themeName: context.themeName || themeDefaultName
+      themeName
     }),
     className: props.className
   })
+}
 
 Heading.propTypes = {
   size: PropTypes.oneOf(Object.keys(vars.headingSizes))
 }
 Heading.defaultProps = {
   size: vars.headingSizes.large
-}
-Heading.contextTypes = {
-  themeName: PropTypes.string
 }
 
 Heading.sizes = vars.headingSizes

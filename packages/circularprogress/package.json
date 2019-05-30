@@ -24,16 +24,17 @@
     "@pluralsight/ps-design-system-core": "^4.4.2",
     "@pluralsight/ps-design-system-theme": "^2.0.2",
     "@pluralsight/ps-design-system-util": "^2.0.2",
-    "prop-types": "^15.7.0"
+    "prop-types": "^15.7.2"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^3.0.24",
     "glamor": "^2.20.0",
-    "react": ">=16.3.0 < 17.0.0"
+    "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.9.2",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^2.0.2",
+    "@pluralsight/ps-design-system-storybook-addon-center": "*",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "*",
     "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/addons": "^4.0.0",
     "@storybook/react": "^4.0.0",

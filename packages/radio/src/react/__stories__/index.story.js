@@ -1,10 +1,8 @@
-import addons from '@storybook/addons'
 import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Radio from '../react'
+import Radio from '..'
 
 const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
@@ -37,7 +35,6 @@ class StateDemo extends React.Component {
 
 storiesOf('Radio', module)
   .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
   .add('default', _ => (
     <Radio.Group>
       <Radio.Button value="red" label="Red" />

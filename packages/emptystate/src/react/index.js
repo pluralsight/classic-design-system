@@ -4,7 +4,7 @@ import React, { createContext, useEffect, useState } from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css, { sizeClasses, themeClasses } from '../css/index.js'
 import * as vars from '../vars/index.js'
@@ -110,9 +110,10 @@ Illustration.propTypes = {
 
 const renderSmallIfElementLessThan = 450
 
-const EmptyState = withTheme(function EmptyState(props) {
+export default function EmptyState(props) {
   const [hasRenderedOnce, setHasRenderedOnce] = useState(false)
   const { ref, width } = useResizeObserver()
+  const themeName = useTheme()
 
   useEffect(() => {
     setHasRenderedOnce(true)
@@ -123,7 +124,7 @@ const EmptyState = withTheme(function EmptyState(props) {
     width <= renderSmallIfElementLessThan ? vars.sizes.small : vars.sizes.large
 
   const size = hasPropSizeOverride ? props.size : observableSize
-  const ctx = { size, themeName: props.themeName }
+  const ctx = { size, themeName }
 
   return (
     <Context.Provider value={ctx}>
@@ -139,7 +140,7 @@ const EmptyState = withTheme(function EmptyState(props) {
       </div>
     </Context.Provider>
   )
-})
+}
 
 EmptyState.sizes = vars.sizes
 
@@ -163,5 +164,3 @@ EmptyState.Heading.displayName = 'EmptyState.Heading'
 
 EmptyState.Illustration = Illustration
 EmptyState.Illustration.displayName = 'EmptyState.Illustration'
-
-export default EmptyState

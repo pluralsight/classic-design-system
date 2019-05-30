@@ -1,6 +1,5 @@
 import textCss from '@pluralsight/ps-design-system-text/css'
-import * as textVars from '@pluralsight/ps-design-system-text/vars'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/vars'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -17,8 +16,8 @@ const styles = {
     )
 }
 
-const Heading = (props, context) => {
-  const themeName = context.themeName || themeDefaultName
+const Heading = props => {
+  const themeName = useTheme()
 
   return React.cloneElement(React.Children.only(props.children), {
     ...rmChildren(props),
@@ -27,10 +26,6 @@ const Heading = (props, context) => {
 }
 
 Heading.propTypes = {
-  themeName: PropTypes.string
-}
-
-Heading.contextTypes = {
   themeName: PropTypes.string
 }
 
