@@ -6,8 +6,8 @@ const path = require('path')
 const inquirer = require('inquirer')
 const copyTemplateDir = require('copy-template-dir')
 
-const { getPackages, toPackageName } = require('../utils/packages')
-const { smush, pascalize } = require('../utils/string')
+const { getPackages, toPackageName } = require('../utils/packages.js')
+const { smush, pascalize } = require('../utils/string.js')
 
 const packagesDir = path.resolve(__dirname, '..', '..', 'packages')
 const templateDir = path.resolve(__dirname, 'package-template')
