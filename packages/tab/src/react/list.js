@@ -9,7 +9,7 @@ import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 import css from '../css/index.js'
 import useResizeObserver from './use-resize-observer.js'
 
-const slideAnimationLength = parseInt(core.motion.speedFast) + 1
+const slideAnimationLength = parseInt(core.motion.speedFast) + 10
 
 const styles = {
   list: ({ themeName }) =>
