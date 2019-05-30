@@ -25,7 +25,7 @@ export default {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    transition: `opacity ${core.motion.speedFast}`
+    transition: `opacity ${core.motion.speedXFast} ${core.motion.speedNormal}`
   },
   '.psds-emptystate--hidden': {
     opacity: 0
@@ -75,7 +75,8 @@ export default {
   // __illustration
   '.psds-emptystate__illustration': {
     display: 'inline-block',
-    marginBottom: core.layout.spacingLarge
+    marginBottom: core.layout.spacingLarge,
+    transition: `all ${core.motion.speedXFast}`
   },
   ['.psds-emptystate__illustration' + sizeClasses.small]: {
     width: 64,

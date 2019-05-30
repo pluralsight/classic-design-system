@@ -1625,7 +1625,7 @@ exports[`Storyshots Button / override styles with style 1`] = `
 </button>
 `;
 
-exports[`Storyshots Button / props pass through anchor download 1`] = `
+exports[`Storyshots Button / props pass through anchor supports download 1`] = `
 <a
   data-css-1srt63x=""
   disabled={false}
@@ -1656,11 +1656,10 @@ exports[`Storyshots Button / props pass through aria-expanded 1`] = `
 </button>
 `;
 
-exports[`Storyshots Button / props pass through button download 1`] = `
+exports[`Storyshots Button / props pass through button doesnt support download 1`] = `
 <button
   data-css-1srt63x=""
   disabled={false}
-  download={true}
   style={Object {}}
 >
   <span

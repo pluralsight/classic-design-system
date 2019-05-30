@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@12.0.0...@pluralsight/ps-design-system-button@12.0.1) (2019-05-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-button
+
+
+
+
+
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@11.0.7...@pluralsight/ps-design-system-button@12.0.0) (2019-05-20)
+
+
+### Bug Fixes
+
+* **button:** allow ref to fallback correctly ([7f7f9c5](https://github.com/pluralsight/design-system/commit/7f7f9c5))
+
+
+### Features
+
+* **button:** add forwardRef; withTheme; filterReactProps ([de9b175](https://github.com/pluralsight/design-system/commit/de9b175))
+
+
+### BREAKING CHANGES
+
+* **button:** add forwardRef support, compatible with new Tooltip
+
+
+
+
+
 ## [11.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@11.0.6...@pluralsight/ps-design-system-button@11.0.7) (2019-05-14)
 
 

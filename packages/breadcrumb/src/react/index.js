@@ -10,7 +10,7 @@ const styles = {
   breadcrumb: _ => glamor.css(css['.psds-breadcrumb'])
 }
 
-const Breadcrumb = props => {
+const Breadcrumb = React.forwardRef((props, ref) => {
   const breadcrumbProps = {
     ...styles.breadcrumb(props),
     ...(props.style ? { style: props.style } : null),
@@ -21,17 +21,19 @@ const Breadcrumb = props => {
     <div {...breadcrumbProps}>
       <Button
         {...props}
+        ref={ref}
         icon={<Icon id={Icon.ids.caretLeft} />}
         appearance={Button.appearances.flat}
         size={Button.sizes.small}
       />
     </div>
   )
-}
+})
 
 Breadcrumb.propTypes = {
+  className: PropTypes.string,
   disabled: PropTypes.bool,
-  innerRef: PropTypes.func
+  style: PropTypes.object
 }
 Breadcrumb.defaultProps = {
   disabled: false

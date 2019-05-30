@@ -393,6 +393,9 @@ const SideNav = withHeadings(props => (
       </NavLink>
       <NavLink href="/components/linearprogress">Linear Progress</NavLink>
       <NavLink href="/components/link">Link</NavLink>
+      <NavLink href="/components/position" headings={props.headings}>
+        Position
+      </NavLink>
       <NavLink href="/components/radio" headings={props.headings}>
         Radio
       </NavLink>
