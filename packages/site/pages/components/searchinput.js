@@ -47,7 +47,7 @@ export default withServerProps(_ => (
             'loading',
             'boolean',
             null,
-            false,
+            <code>false</code>,
             'show progress indicator'
           ]),
           PropTypes.row([
