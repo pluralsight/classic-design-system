@@ -69,7 +69,6 @@ export default {
     display: 'flex',
     height: '64px',
     transform: 'translateX(0)',
-    /* TODO: make separate transition-durations for arrowing vs paging */
     transition: `transform ${core.motion.speedFast} ease-in-out`
   },
 
