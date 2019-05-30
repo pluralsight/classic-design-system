@@ -179,3 +179,37 @@ storiesOf('EmptyState/actions', module)
       }
     />
   ))
+
+const Show = ({ children, if: showIf, placeholder = null }) => (
+  <React.Fragment>{showIf ? children : placeholder}</React.Fragment>
+)
+Show.propTypes = {
+  children: PropTypes.node.isRequired,
+  if: PropTypes.bool.isRequired,
+  placeholder: PropTypes.node
+}
+
+const MountStory = props => {
+  const [shown, setShown] = React.useState(true)
+
+  return (
+    <React.Fragment>
+      <button
+        onClick={() => setShown(!shown)}
+        style={{ position: 'fixed', top: 20, left: 20 }}
+      >
+        {shown ? 'unmount' : 'mount'}
+      </button>
+      <Show if={shown}>{props.children}</Show>
+    </React.Fragment>
+  )
+}
+MountStory.propTypes = {
+  children: PropTypes.node.isRequired
+}
+
+storiesOf('EmptyState/mounting', module).add('toggle show/hide', _ => (
+  <MountStory>
+    <EmptyStateWithDefaults />
+  </MountStory>
+))
