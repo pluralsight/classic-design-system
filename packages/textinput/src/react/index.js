@@ -77,7 +77,7 @@ const TextInput = (props, context) => {
               placeholder={allProps.placeholder}
               ref={allProps.innerRef}
             />
-            {fieldAfter && fieldAfter}
+            {fieldAfter}
           </div>
         </Halo>
 
