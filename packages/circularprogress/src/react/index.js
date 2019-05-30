@@ -1,7 +1,7 @@
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
 import * as vars from '../vars/index.js'
@@ -37,10 +37,9 @@ const styles = {
 }
 
 const CircularProgress = (props, context) => {
-  const allProps = {
-    ...props,
-    themeName: context.themeName || themeDefaultName
-  }
+  const themeName = useTheme()
+  const allProps = { ...props, themeName }
+
   const value = typeof allProps.value === 'undefined' ? 25 : allProps.value
   const dashOffset = ((100 - value) / 100) * circumference
 
@@ -78,9 +77,6 @@ CircularProgress.propTypes = {
 }
 CircularProgress.defaultProps = {
   size: vars.sizes.medium
-}
-CircularProgress.contextTypes = {
-  themeName: PropTypes.string
 }
 
 CircularProgress.sizes = vars.sizes

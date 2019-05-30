@@ -2,7 +2,7 @@ import * as glamor from 'glamor'
 import Halo from '@pluralsight/ps-design-system-halo/react'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
 import css from '../css'
@@ -59,72 +59,67 @@ const Checkmark = _ => (
   </svg>
 )
 
-class Checkbox extends React.Component {
-  constructor(props) {
-    super(props)
-    this.handleClick = this.handleClick.bind(this)
-    this.handleKeyDown = this.handleKeyDown.bind(this)
-  }
-  handleKeyDown(evt) {
+function Checkbox(props) {
+  const themeName = useTheme()
+  const allProps = { themeName, ...props }
+
+  const square = React.createRef()
+
+  const handleKeyDown = evt => {
     if (evt.key === 'Enter' || evt.key === ' ') {
-      this.handleClick(evt)
+      handleClick(evt)
     }
   }
-  handleClick(evt) {
+
+  const handleClick = evt => {
     evt.preventDefault()
     evt.stopPropagation()
-    if (typeof this.props.onCheck === 'function')
-      this.props.onCheck(
-        evt,
-        !this.props.checked,
-        this.props.value,
-        this.props.name
-      )
-    this.square.focus()
-  }
-  render() {
-    const { context, props } = this
-    const allProps = {
-      ...props,
-      themeName: context.themeName || themeDefaultName
+
+    const { onCheck } = props
+    if (typeof onCheck === 'function') {
+      onCheck(evt, !props.checked, props.value, props.name)
     }
-    return (
-      <label
-        onClick={allProps.disabled ? null : this.handleClick}
-        onKeyDown={allProps.disabled ? null : this.handleKeyDown}
-        {...styles.checkbox(allProps)}
-      >
-        <Halo
-          error={allProps.error}
-          inline
-          gapSize={Halo.gapSizes.small}
-          visibleOnFocus={!allProps.disabled}
-        >
-          <div
-            role="checkbox"
-            aria-checked={allProps.checked}
-            tabIndex={allProps.disabled ? '-1' : '0'}
-            ref={el => (this.square = el)}
-            {...styles.square(allProps)}
-          >
-            {allProps.checked && <Checkmark />}
-          </div>
-        </Halo>
-        <input
-          {...propsUtil.whitelistProps(allProps, checkboxHtmlPropsWhitelist)}
-          tabIndex="-1"
-          type="checkbox"
-          readOnly
-          name={allProps.name}
-          checked={allProps.checked}
-          value={allProps.value}
-          ref={allProps.innerRef}
-          {...styles.input(allProps)}
-        />
-        <div {...styles.label(allProps)}>{allProps.label}</div>
-      </label>
-    )
+    if (square.current) square.current.focus()
   }
+
+  return (
+    <label
+      onClick={allProps.disabled ? null : handleClick}
+      onKeyDown={allProps.disabled ? null : handleKeyDown}
+      {...styles.checkbox(allProps)}
+    >
+      <Halo
+        error={allProps.error}
+        inline
+        gapSize={Halo.gapSizes.small}
+        visibleOnFocus={!allProps.disabled}
+      >
+        <div
+          role="checkbox"
+          aria-checked={allProps.checked}
+          tabIndex={allProps.disabled ? '-1' : '0'}
+          ref={square}
+          {...styles.square(allProps)}
+        >
+          {allProps.checked && <Checkmark />}
+        </div>
+      </Halo>
+
+      <input
+        {...propsUtil.whitelistProps(allProps, checkboxHtmlPropsWhitelist)}
+        tabIndex="-1"
+        type="checkbox"
+        readOnly
+        name={allProps.name}
+        checked={allProps.checked}
+        value={allProps.value}
+        ref={allProps.innerRef}
+        {...styles.input(allProps)}
+      />
+
+      <div {...styles.label(allProps)}>{allProps.label}</div>
+    </label>
+  )
 }
 
 Checkbox.propTypes = {
@@ -142,8 +137,4 @@ Checkbox.defaultProps = {
   disabled: false,
   error: false
 }
-Checkbox.contextTypes = {
-  themeName: PropTypes.string
-}
-
 export default Checkbox

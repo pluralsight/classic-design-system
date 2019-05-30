@@ -4,11 +4,11 @@ import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button/react'
 import * as textVars from '@pluralsight/ps-design-system-text/vars'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
-import css from '../css'
-import Heading from './heading'
-import icons from './icons'
+import css from '../css/index.js'
+import Heading from './heading.js'
+import icons from './icons.js'
 
 const styles = {
   page: ({ themeName }) =>
@@ -56,11 +56,15 @@ const SearchForm = props => (
     />
   </form>
 )
+SearchForm.propTypes = {
+  action: PropTypes.string
+}
 
-const ErrorPage = (props, context) => {
+const ErrorPage = props => {
+  const themeName = useTheme()
   const allProps = {
     ...props,
-    themeName: context.themeName || themeDefaultName
+    themeName
   }
   return (
     <div {...styles.page(allProps)}>
@@ -88,9 +92,6 @@ ErrorPage.propTypes = {
   href: PropTypes.string,
   iconId: PropTypes.oneOf(Object.keys(icons)),
   text: PropTypes.string
-}
-ErrorPage.contextTypes = {
-  themeName: PropTypes.string
 }
 
 export default ErrorPage

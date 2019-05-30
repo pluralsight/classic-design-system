@@ -1,7 +1,6 @@
 import * as glamor from 'glamor'
-import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
 
@@ -13,17 +12,18 @@ const styles = {
     )
 }
 
-const Divider = (props, context) => (
-  <div
-    {...styles.divider({
-      ...props,
-      themeName: context.themeName || themeDefaultName
-    })}
-  />
-)
-Divider.displayName = 'Divider'
-Divider.contextTypes = {
-  themeName: PropTypes.string
+const Divider = props => {
+  const themeName = useTheme()
+
+  return (
+    <div
+      {...styles.divider({
+        ...props,
+        themeName
+      })}
+    />
+  )
 }
+Divider.displayName = 'Divider'
 
 export default Divider

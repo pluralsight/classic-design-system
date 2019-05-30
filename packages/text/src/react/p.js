@@ -1,7 +1,7 @@
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
 
@@ -12,7 +12,7 @@ const style = ({ themeName }) =>
   })
 
 const P = (props, context) => {
-  const themeName = context.themeName || themeDefaultName
+  const themeName = useTheme()
 
   return (
     <p {...props} {...style({ ...props, themeName })}>
@@ -20,11 +20,9 @@ const P = (props, context) => {
     </p>
   )
 }
+
 P.propTypes = {
   children: PropTypes.node
-}
-P.contextTypes = {
-  themeName: PropTypes.string
 }
 
 export default P

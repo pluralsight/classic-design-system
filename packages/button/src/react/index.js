@@ -5,7 +5,7 @@ import Icon, {
 } from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
 import * as vars from '../vars/index.js'
@@ -120,48 +120,53 @@ const renderIcon = props =>
     </div>
   ) : null
 
-const Button = withTheme(
-  React.forwardRef((props, ref) => {
-    if (!ref) ref = React.useRef()
-    const nonLoadingWidth = React.useMemo(() => {
-      if (props.loading && ref && ref.current) {
-        return ref.current.offsetWidth
-      }
-    }, [props.loading, ref])
+renderIcon.propTypes = {
+  loading: PropTypes.bool,
+  icon: PropTypes.element
+}
 
-    const tagName = props.href ? 'a' : 'button'
-    const isLoadingWithNoText = !!nonLoadingWidth
-    const allProps = {
-      ...props,
-      isLoadingWithNoText,
-      iconOnly: React.Children.count(props.children) <= 0
+const Button = React.forwardRef((props, ref) => {
+  const themeName = useTheme()
+  if (!ref) ref = React.useRef()
+  const nonLoadingWidth = React.useMemo(() => {
+    if (props.loading && ref && ref.current) {
+      return ref.current.offsetWidth
     }
+  }, [props.loading, ref])
 
-    const isDisabledLink = allProps.disabled && allProps.href
-    let filteredProps = filterReactProps(props, { tagName })
-    delete filteredProps.icon
-    if (isDisabledLink) {
-      delete filteredProps.onClick
-    }
+  const tagName = props.href ? 'a' : 'button'
+  const isLoadingWithNoText = !!nonLoadingWidth
+  const allProps = {
+    ...props,
+    isLoadingWithNoText,
+    iconOnly: React.Children.count(props.children) <= 0,
+    themeName
+  }
 
-    return React.createElement(
-      tagName,
-      {
-        ...styles.button(allProps),
-        ...filteredProps,
-        disabled: props.disabled || props.loading,
-        ref,
-        style: isLoadingWithNoText
-          ? { ...props.style, width: nonLoadingWidth }
-          : props.style || {}
-      },
-      renderIcon(allProps),
-      !isLoadingWithNoText && (
-        <span {...styles.text(allProps)}>{allProps.children}</span>
-      )
+  const isDisabledLink = allProps.disabled && allProps.href
+  let filteredProps = filterReactProps(props, { tagName })
+  delete filteredProps.icon
+  if (isDisabledLink) {
+    delete filteredProps.onClick
+  }
+
+  return React.createElement(
+    tagName,
+    {
+      ...styles.button(allProps),
+      ...filteredProps,
+      disabled: props.disabled || props.loading,
+      ref,
+      style: isLoadingWithNoText
+        ? { ...props.style, width: nonLoadingWidth }
+        : props.style || {}
+    },
+    renderIcon(allProps),
+    !isLoadingWithNoText && (
+      <span {...styles.text(allProps)}>{allProps.children}</span>
     )
-  })
-)
+  )
+})
 
 Button.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
@@ -182,10 +187,6 @@ Button.defaultProps = {
   loading: false,
   size: vars.sizes.medium
 }
-Button.contextTypes = {
-  themeName: PropTypes.string
-}
-
 Button.appearances = vars.appearances
 Button.iconAligns = vars.iconAligns
 Button.sizes = vars.sizes

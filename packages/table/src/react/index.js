@@ -4,7 +4,7 @@ import React from 'react'
 
 import * as drawerVars from '@pluralsight/ps-design-system-drawer/vars'
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css'
 import * as vars from '../vars'
@@ -66,49 +66,36 @@ const getToggledSort = props =>
     [vars.sorts.desc]: vars.sorts.asc
   }[props.sort] || vars.sorts.asc)
 
-class ColumnHeader extends React.Component {
-  constructor(props) {
-    super(props)
-    this.handleClick = this.handleClick.bind(this)
+function ColumnHeader(props) {
+  const themeName = useTheme()
+  const allProps = {
+    ...props,
+    active: vars.sorts[props.sort] && typeof props.onClick === 'function',
+    themeName
   }
 
-  handleClick() {
-    const { onClick } = this.props
-    if (typeof onClick === 'function') onClick(getToggledSort(this.props))
+  const { onClick } = allProps
+  const style = allProps.style || {}
+
+  if (
+    (!allProps.styles || (allProps.styles && !allProps.styles.flex)) &&
+    allProps.flex
+  ) {
+    style.flex = allProps.flex
   }
 
-  render() {
-    const { context, props } = this
-
-    const allProps = {
-      ...props,
-      active: vars.sorts[props.sort] && typeof props.onClick === 'function',
-      themeName: context.themeName || themeDefaultName
-    }
-    const style = allProps.style || {}
-
-    if (
-      (!allProps.styles || (allProps.styles && !allProps.styles.flex)) &&
-      allProps.flex
-    ) {
-      style.flex = allProps.flex
-    }
-
-    return React.createElement(
-      props.onClick ? 'button' : 'div',
-      {
-        role: 'columnheader',
-        ...(allProps.className ? { className: allProps.className } : null),
-        ...styles.columnHeader(allProps),
-        ...(props.onClick
-          ? { onClick: _ => props.onClick(getToggledSort(props)) }
-          : null),
-        style
-      },
-      allProps.children,
-      allProps.sort && getSortIcon(allProps)
-    )
-  }
+  return React.createElement(
+    onClick ? 'button' : 'div',
+    {
+      role: 'columnheader',
+      ...(allProps.className ? { className: allProps.className } : null),
+      ...styles.columnHeader(allProps),
+      ...(onClick ? { onClick: _ => onClick(getToggledSort(props)) } : null),
+      style
+    },
+    allProps.children,
+    allProps.sort && getSortIcon(allProps)
+  )
 }
 
 ColumnHeader.displayName = 'Table.ColumnHeader'
@@ -126,34 +113,29 @@ ColumnHeader.propTypes = {
 ColumnHeader.defaultProps = {
   align: vars.aligns.left
 }
-ColumnHeader.contextTypes = {
-  themeName: PropTypes.string
-}
 
-class Cell extends React.Component {
-  render() {
-    const { context, props } = this
-    const allProps = {
-      ...props,
-      themeName: context.themeName || themeDefaultName
-    }
-    const style = allProps.style || {}
-    if (
-      (!allProps.styles || (allProps.styles && !allProps.styles.flex)) &&
-      allProps.flex
-    )
-      style.flex = allProps.flex
-    return (
-      <div
-        role="cell"
-        {...styles.cell(allProps)}
-        {...(allProps.className ? { className: allProps.className } : null)}
-        style={style}
-      >
-        {allProps.children}
-      </div>
-    )
+function Cell(props) {
+  const themeName = useTheme()
+  const allProps = { ...props, themeName }
+
+  const style = allProps.style || {}
+  if (
+    (!allProps.styles || (allProps.styles && !allProps.styles.flex)) &&
+    allProps.flex
+  ) {
+    style.flex = allProps.flex
   }
+
+  return (
+    <div
+      role="cell"
+      {...styles.cell(allProps)}
+      {...(allProps.className ? { className: allProps.className } : null)}
+      style={style}
+    >
+      {allProps.children}
+    </div>
+  )
 }
 Cell.propTypes = {
   align: PropTypes.oneOf(Object.keys(vars.aligns)),
@@ -164,29 +146,22 @@ Cell.defaultProps = {
   align: vars.aligns.left,
   emphasis: false
 }
-Cell.contextTypes = {
-  themeName: PropTypes.string
-}
 Cell.displayName = 'Table.Cell'
 
-class Row extends React.Component {
-  render() {
-    const { context, props } = this
-    const allProps = {
-      ...props,
-      themeName: context.themeName || themeDefaultName
-    }
-    return (
-      <div
-        role="row"
-        {...styles.row(allProps)}
-        {...(allProps.className ? { className: allProps.className } : null)}
-        {...(allProps.style ? { style: allProps.style } : null)}
-      >
-        {allProps.children}
-      </div>
-    )
-  }
+function Row(props) {
+  const themeName = useTheme()
+  const allProps = { ...props, themeName }
+
+  return (
+    <div
+      role="row"
+      {...styles.row(allProps)}
+      {...(allProps.className ? { className: allProps.className } : null)}
+      {...(allProps.style ? { style: allProps.style } : null)}
+    >
+      {allProps.children}
+    </div>
+  )
 }
 Row.displayName = 'Table.Row'
 Row.propTypes = {
@@ -195,51 +170,31 @@ Row.propTypes = {
 Row.defaultProps = {
   _tableHasDrawers: false
 }
-Row.contextTypes = {
-  themeName: PropTypes.string
-}
 
-class Table extends React.Component {
-  render() {
-    const { context, props } = this
-    const allProps = {
-      ...props,
-      themeName: context.themeName || themeDefaultName
-    }
+export default function Table(props) {
+  const themeName = useTheme()
+  const allProps = { ...props, themeName }
 
-    const _tableHasDrawers = React.Children.map(
-      allProps.children || [],
-      child =>
-        child &&
-        child.type &&
-        drawerDisplayNameRegex.test(child.type.displayName)
-    ).some(bool => bool)
+  const _tableHasDrawers = React.Children.map(
+    allProps.children || [],
+    child =>
+      child && child.type && drawerDisplayNameRegex.test(child.type.displayName)
+  ).some(bool => bool)
 
-    return (
-      <div
-        role="table"
-        {...styles.table(allProps)}
-        {...(props.className ? { className: props.className } : null)}
-        {...(props.style ? { style: props.style } : null)}
-      >
-        {React.Children.map(allProps.children || [], child =>
-          child && child.type && child.type.displayName === Row.displayName
-            ? React.cloneElement(child, { _tableHasDrawers })
-            : child
-        )}
-      </div>
-    )
-  }
-}
-Table.displayName = 'Table'
-Table.propTypes = {
-  inDrawer: PropTypes.bool
-}
-Table.defaultProps = {
-  inDrawer: false
-}
-Table.contextTypes = {
-  themeName: PropTypes.string
+  return (
+    <div
+      role="table"
+      {...styles.table(allProps)}
+      {...(allProps.className ? { className: allProps.className } : null)}
+      {...(allProps.style ? { style: allProps.style } : null)}
+    >
+      {React.Children.map(allProps.children || [], child =>
+        child && child.type && child.type.displayName === Row.displayName
+          ? React.cloneElement(child, { _tableHasDrawers })
+          : child
+      )}
+    </div>
+  )
 }
 
 Table.Row = Row
@@ -251,5 +206,3 @@ Table.sorts = vars.sorts
 
 export const aligns = vars.aligns
 export const sorts = vars.sorts
-
-export default Table

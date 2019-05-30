@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { mount } from 'enzyme'
 
 import * as vars from '../../vars'
 
@@ -11,11 +11,13 @@ describe('DatePicker', () => {
   })
 
   it('renders', () => {
-    expect(() => shallow(<DatePicker />)).not.toThrow()
+    expect(() => mount(<DatePicker />)).not.toThrow()
   })
 
+  // TODO: because we're using a function component to inject theme, enzyme
+  //       can't be used to check state. we should refactor to use react-test-library
   it('should derive initial state from value prop', () => {
-    const wrapper = shallow(<DatePicker value="1/20/1993" />)
+    const wrapper = mount(<DatePicker.BaseComponent value="1/20/1993" />)
     const { mm, dd, yyyy } = wrapper.state()
 
     expect(mm).toEqual(1)
@@ -23,8 +25,10 @@ describe('DatePicker', () => {
     expect(yyyy).toEqual(1993)
   })
 
+  // TODO: because we're using a function component to inject theme, enzyme
+  //       can't be used to check state. we should refactor to use react-test-library
   it('should update state when the value prop changes', () => {
-    const wrapper = shallow(<DatePicker value="1/20/1993" />)
+    const wrapper = mount(<DatePicker.BaseComponent value="1/20/1993" />)
 
     wrapper.setProps({ value: '2/10/2000' })
     const { mm, dd, yyyy } = wrapper.state()
