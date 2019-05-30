@@ -22,7 +22,10 @@ const SearchInput = withTheme(props => {
   const inputRef = useRef()
 
   const handleClear = evt => {
-    if (inputRef.current) inputRef.current.focus()
+    if (inputRef.current) {
+      inputRef.current.value = ''
+      inputRef.current.focus()
+    }
     onClear(evt)
   }
 
