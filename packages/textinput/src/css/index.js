@@ -14,31 +14,45 @@ export default {
 
   // __field
   '.psds-text-input__field': {
-    position: 'relative',
+    alignItems: 'center',
+    background: core.colors.bone,
+    borderRadius: '2px',
+    color: core.colors.gray03,
+    display: 'flex',
+    fontWeight: core.type.fontWeightBook,
     height: '40px',
     minWidth: '192px',
-    width: '100%',
-    borderRadius: '2px',
-    background: core.colors.bone,
+    padding: `${core.layout.spacingXSmall} ${core.layout.spacingMedium}`,
+    position: 'relative',
+    width: '100%'
+  },
+  '.psds-text-input__field--w-after': {
+    paddingRight: 0
+  },
+  '.psds-text-input__field-input': {
+    background: 'none',
+    border: 'none',
+    color: 'inherit',
     fontSize: core.type.fontSizeSmall,
     lineHeight: core.type.lineHeightStandard,
-    fontWeight: core.type.fontWeightBook,
-    color: core.colors.gray03,
-    padding: `${core.layout.spacingXSmall} ${core.layout.spacingMedium}`,
-    border: 'none'
-  },
-  '.psds-text-input__field:focus': {
-    outline: 'none'
-  },
-  [`.psds-text-input__field.psds-theme--${themeNames.light}:focus`]: {
-    border: '1px solid transparent'
-  },
-  [`.psds-text-input__field--error.psds-theme--${themeNames.light}`]: {
-    border: '1px solid transparent'
+    outline: 'none',
+    padding: 0,
+
+    '&:focus': {
+      outline: 'none'
+    }
   },
   [`.psds-text-input__field.psds-theme--${themeNames.light}`]: {
     background: core.colors.white,
-    border: `1px solid ${core.colors.gray02}`
+    border: `1px solid ${core.colors.gray02}`,
+
+    '&:focus': {
+      border: '1px solid transparent'
+    }
+  },
+
+  [`.psds-text-input__field--error.psds-theme--${themeNames.light}`]: {
+    border: '1px solid transparent'
   },
   [`.psds-text-input__field--appearance-${vars.appearances.subtle}`]: {
     color: core.colors.gray01,

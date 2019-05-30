@@ -6,7 +6,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import TextInput from '../react'
+import TextInput from '..'
 
 const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
@@ -58,6 +58,16 @@ Object.keys(TextInput.appearances).forEach(appearance =>
     <TextInput appearance={appearance} error label="Problem field" />
   ))
 )
+
+storiesOf('after field', module)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
+  .add('w/icon', _ => (
+    <TextInput
+      fieldAfter={<Icon id={Icon.ids.close} />}
+      placeholder="Some placeholder"
+    />
+  ))
 
 storiesOf('disabled', module)
   .addDecorator(PaddingDecorator)
@@ -134,19 +144,5 @@ storiesOf('layouts', module)
         />
       </div>
       <div style={{ border: '3px solid green', height: '50px' }} />
-    </div>
-  ))
-
-storiesOf('style override', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
-  .add('css', _ => (
-    <div>
-      <div>
-        <TextInput css={{ '& input': { minWidth: 0, width: '51px' } }} />
-      </div>
-      <div>
-        <TextInput error css={{ '& input': { minWidth: 0, width: '51px' } }} />
-      </div>
     </div>
   ))

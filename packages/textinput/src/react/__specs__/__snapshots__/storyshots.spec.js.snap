@@ -1,5 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots after field w/icon 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-w0yocm=""
+    >
+      <div
+        data-css-1r967oi=""
+      >
+        <div
+          data-css-1xm24a9=""
+        >
+          <div
+            data-css-1oolqwv=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+              placeholder="Some placeholder"
+            />
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="close icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
 exports[`Storyshots appearance default w/ error 1`] = `
 <div
   data-css-claeju=""
@@ -25,10 +75,14 @@ exports[`Storyshots appearance default w/ error 1`] = `
         <div
           data-css-utxo7p=""
         >
-          <input
-            data-css-ly16us=""
-            disabled={false}
-          />
+          <div
+            data-css-177hkuc=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+            />
+          </div>
         </div>
         <div
           data-css-loo18p=""
@@ -74,11 +128,15 @@ exports[`Storyshots appearance default w/ iconAlign left 1`] = `
         <div
           data-css-1xm24a9=""
         >
-          <input
-            data-css-1bkxplq=""
-            disabled={false}
-            placeholder="The placeholder "
-          />
+          <div
+            data-css-1ir2txp=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+              placeholder="The placeholder "
+            />
+          </div>
         </div>
         <div
           data-css-1w67sw9=""
@@ -124,11 +182,15 @@ exports[`Storyshots appearance default w/ iconAlign right 1`] = `
         <div
           data-css-1xm24a9=""
         >
-          <input
-            data-css-i8twf8=""
-            disabled={false}
-            placeholder="The placeholder "
-          />
+          <div
+            data-css-ajs356=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+              placeholder="The placeholder "
+            />
+          </div>
         </div>
         <div
           data-css-121dxw3=""
@@ -179,10 +241,14 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         <div
           data-css-utxo7p=""
         >
-          <input
-            data-css-1fhke6k=""
-            disabled={false}
-          />
+          <div
+            data-css-1talm5x=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+            />
+          </div>
         </div>
         <div
           data-css-loo18p=""
@@ -228,11 +294,15 @@ exports[`Storyshots appearance subtle w/ iconAlign left 1`] = `
         <div
           data-css-1xm24a9=""
         >
-          <input
-            data-css-1u1pc12=""
-            disabled={false}
-            placeholder="The placeholder "
-          />
+          <div
+            data-css-1e3i43a=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+              placeholder="The placeholder "
+            />
+          </div>
         </div>
         <div
           data-css-1x5ndtu=""
@@ -278,11 +348,15 @@ exports[`Storyshots appearance subtle w/ iconAlign right 1`] = `
         <div
           data-css-1xm24a9=""
         >
-          <input
-            data-css-11d30wl=""
-            disabled={false}
-            placeholder="The placeholder "
-          />
+          <div
+            data-css-g760uo=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+              placeholder="The placeholder "
+            />
+          </div>
         </div>
         <div
           data-css-13qmv6x=""
@@ -334,11 +408,15 @@ exports[`Storyshots disabled compare 1`] = `
           <div
             data-css-1xm24a9=""
           >
-            <input
-              data-css-ly16us=""
-              disabled={false}
-              placeholder="I'm normal, see"
-            />
+            <div
+              data-css-177hkuc=""
+            >
+              <input
+                data-css-azf86w=""
+                disabled={false}
+                placeholder="I'm normal, see"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -361,11 +439,15 @@ exports[`Storyshots disabled compare 1`] = `
           <div
             data-css-1xm24a9=""
           >
-            <input
-              data-css-ly16us=""
-              disabled={true}
-              placeholder="I'm untouchable"
-            />
+            <div
+              data-css-177hkuc=""
+            >
+              <input
+                data-css-azf86w=""
+                disabled={true}
+                placeholder="I'm untouchable"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -388,11 +470,15 @@ exports[`Storyshots disabled compare 1`] = `
           <div
             data-css-utxo7p=""
           >
-            <input
-              data-css-ly16us=""
-              disabled={true}
-              placeholder="I'm untouchable"
-            />
+            <div
+              data-css-177hkuc=""
+            >
+              <input
+                data-css-azf86w=""
+                disabled={true}
+                placeholder="I'm untouchable"
+              />
+            </div>
           </div>
           <div
             data-css-loo18p=""
@@ -449,11 +535,15 @@ exports[`Storyshots labels all 1`] = `
         <div
           data-css-1xm24a9=""
         >
-          <input
-            data-css-ly16us=""
-            disabled={false}
-            placeholder="Some placeholder"
-          />
+          <div
+            data-css-177hkuc=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+              placeholder="Some placeholder"
+            />
+          </div>
         </div>
       </div>
       <div
@@ -491,11 +581,15 @@ exports[`Storyshots labels all w/error 1`] = `
         <div
           data-css-utxo7p=""
         >
-          <input
-            data-css-ly16us=""
-            disabled={false}
-            placeholder="Some placeholder"
-          />
+          <div
+            data-css-177hkuc=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+              placeholder="Some placeholder"
+            />
+          </div>
         </div>
         <div
           data-css-loo18p=""
@@ -551,10 +645,14 @@ exports[`Storyshots labels label 1`] = `
         <div
           data-css-1xm24a9=""
         >
-          <input
-            data-css-ly16us=""
-            disabled={false}
-          />
+          <div
+            data-css-177hkuc=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+            />
+          </div>
         </div>
       </div>
     </label>
@@ -587,10 +685,14 @@ exports[`Storyshots labels label and subLabel 1`] = `
         <div
           data-css-1xm24a9=""
         >
-          <input
-            data-css-ly16us=""
-            disabled={false}
-          />
+          <div
+            data-css-177hkuc=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+            />
+          </div>
         </div>
       </div>
       <div
@@ -623,10 +725,14 @@ exports[`Storyshots labels none 1`] = `
         <div
           data-css-1xm24a9=""
         >
-          <input
-            data-css-ly16us=""
-            disabled={false}
-          />
+          <div
+            data-css-177hkuc=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+            />
+          </div>
         </div>
       </div>
     </label>
@@ -654,11 +760,15 @@ exports[`Storyshots labels placeholder 1`] = `
         <div
           data-css-1xm24a9=""
         >
-          <input
-            data-css-ly16us=""
-            disabled={false}
-            placeholder="some placeholder"
-          />
+          <div
+            data-css-177hkuc=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+              placeholder="some placeholder"
+            />
+          </div>
         </div>
       </div>
     </label>
@@ -686,10 +796,14 @@ exports[`Storyshots labels subLabel 1`] = `
         <div
           data-css-1xm24a9=""
         >
-          <input
-            data-css-ly16us=""
-            disabled={false}
-          />
+          <div
+            data-css-177hkuc=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+            />
+          </div>
         </div>
       </div>
       <div
@@ -741,10 +855,14 @@ exports[`Storyshots layouts full width 1`] = `
           <div
             data-css-1xm24a9=""
           >
-            <input
-              data-css-ly16us=""
-              disabled={false}
-            />
+            <div
+              data-css-177hkuc=""
+            >
+              <input
+                data-css-azf86w=""
+                disabled={false}
+              />
+            </div>
           </div>
         </div>
       </label>
@@ -768,10 +886,14 @@ exports[`Storyshots layouts full width 1`] = `
           <div
             data-css-utxo7p=""
           >
-            <input
-              data-css-ly16us=""
-              disabled={false}
-            />
+            <div
+              data-css-177hkuc=""
+            >
+              <input
+                data-css-azf86w=""
+                disabled={false}
+              />
+            </div>
           </div>
           <div
             data-css-loo18p=""
@@ -813,10 +935,14 @@ exports[`Storyshots layouts full width 1`] = `
           <div
             data-css-1xm24a9=""
           >
-            <input
-              data-css-1fhke6k=""
-              disabled={false}
-            />
+            <div
+              data-css-1talm5x=""
+            >
+              <input
+                data-css-azf86w=""
+                disabled={false}
+              />
+            </div>
           </div>
         </div>
       </label>
@@ -840,10 +966,14 @@ exports[`Storyshots layouts full width 1`] = `
           <div
             data-css-utxo7p=""
           >
-            <input
-              data-css-1fhke6k=""
-              disabled={false}
-            />
+            <div
+              data-css-1talm5x=""
+            >
+              <input
+                data-css-azf86w=""
+                disabled={false}
+              />
+            </div>
           </div>
           <div
             data-css-loo18p=""
@@ -905,11 +1035,15 @@ exports[`Storyshots layouts right-aligned 1`] = `
             <div
               data-css-1xm24a9=""
             >
-              <input
-                data-css-1u1pc12=""
-                disabled={false}
-                placeholder="Search"
-              />
+              <div
+                data-css-1e3i43a=""
+              >
+                <input
+                  data-css-azf86w=""
+                  disabled={false}
+                  placeholder="Search"
+                />
+              </div>
             </div>
             <div
               data-css-1x5ndtu=""
@@ -945,77 +1079,6 @@ exports[`Storyshots layouts right-aligned 1`] = `
 </div>
 `;
 
-exports[`Storyshots style override css 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <div>
-      <div>
-        <label
-          data-css-lsmfyz=""
-        >
-          <div
-            data-css-1r967oi=""
-          >
-            <div
-              data-css-1xm24a9=""
-            >
-              <input
-                data-css-ly16us=""
-                disabled={false}
-              />
-            </div>
-          </div>
-        </label>
-      </div>
-      <div>
-        <label
-          data-css-lsmfyz=""
-        >
-          <div
-            data-css-1r967oi=""
-          >
-            <div
-              data-css-utxo7p=""
-            >
-              <input
-                data-css-ly16us=""
-                disabled={false}
-              />
-            </div>
-            <div
-              data-css-loo18p=""
-            >
-              <div
-                data-css-otejxm=""
-              >
-                <svg
-                  aria-label="warning icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </label>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots whitelist name 1`] = `
 <div
   data-css-claeju=""
@@ -1036,12 +1099,16 @@ exports[`Storyshots whitelist name 1`] = `
         <div
           data-css-1xm24a9=""
         >
-          <input
-            data-css-ly16us=""
-            disabled={false}
-            name="myFieldNameOfPower"
-            placeholder="I have a form name"
-          />
+          <div
+            data-css-177hkuc=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+              name="myFieldNameOfPower"
+              placeholder="I have a form name"
+            />
+          </div>
         </div>
       </div>
     </label>
@@ -1069,12 +1136,16 @@ exports[`Storyshots whitelist onChange 1`] = `
         <div
           data-css-1xm24a9=""
         >
-          <input
-            data-css-ly16us=""
-            disabled={false}
-            onChange={[Function]}
-            placeholder="Change me"
-          />
+          <div
+            data-css-177hkuc=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+              onChange={[Function]}
+              placeholder="Change me"
+            />
+          </div>
         </div>
       </div>
     </label>
@@ -1102,11 +1173,15 @@ exports[`Storyshots whitelist title 1`] = `
         <div
           data-css-1xm24a9=""
         >
-          <input
-            data-css-ly16us=""
-            disabled={false}
-            title="some title"
-          />
+          <div
+            data-css-177hkuc=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+              title="some title"
+            />
+          </div>
         </div>
       </div>
     </label>
@@ -1134,12 +1209,16 @@ exports[`Storyshots whitelist type=date 1`] = `
         <div
           data-css-1xm24a9=""
         >
-          <input
-            data-css-ly16us=""
-            disabled={false}
-            placeholder="Date"
-            type="date"
-          />
+          <div
+            data-css-177hkuc=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+              placeholder="Date"
+              type="date"
+            />
+          </div>
         </div>
       </div>
     </label>
@@ -1167,12 +1246,16 @@ exports[`Storyshots whitelist type=password 1`] = `
         <div
           data-css-1xm24a9=""
         >
-          <input
-            data-css-ly16us=""
-            disabled={false}
-            placeholder="Password"
-            type="password"
-          />
+          <div
+            data-css-177hkuc=""
+          >
+            <input
+              data-css-azf86w=""
+              disabled={false}
+              placeholder="Password"
+              type="password"
+            />
+          </div>
         </div>
       </div>
     </label>
