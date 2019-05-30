@@ -59,6 +59,11 @@ export default {
     background: core.colors.gray06,
     border: `1px solid ${core.colors.gray03}`
   },
+  [`.psds-text-input__field--appearance-${
+    vars.appearances.subtle
+  }.psds-theme--${themeNames.light}`]: {
+    color: core.colors.gray05
+  },
   [`.psds-text-input__field--icon-align-${vars.iconAligns.left}`]: {
     padding: `0 ${core.layout.spacingMedium} 0 calc(${
       core.layout.spacingXSmall

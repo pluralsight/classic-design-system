@@ -16,6 +16,9 @@ const styles = {
       css['.psds-text-input__field'],
       css[`.psds-text-input__field--appearance-${appearance}`],
       css[`.psds-text-input__field.psds-theme--${themeName}`],
+      css[
+        `.psds-text-input__field--appearance-${appearance}.psds-theme--${themeName}`
+      ],
       fieldAfter && css[`.psds-text-input__field--w-after`],
       icon && css[`.psds-text-input__field--icon-align-${iconAlign}`],
       error && css[`.psds-text-input__field--error.psds-theme--${themeName}`]
@@ -77,7 +80,7 @@ const TextInput = (props, context) => {
               placeholder={allProps.placeholder}
               ref={allProps.innerRef}
             />
-            {fieldAfter && fieldAfter}
+            {fieldAfter}
           </div>
         </Halo>
 
