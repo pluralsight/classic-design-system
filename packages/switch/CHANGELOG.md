@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@2.0.4...@pluralsight/ps-design-system-switch@3.0.0) (2019-05-31)
+
+
+### Code Refactoring
+
+* **switch:** use new theme context ([4c4df0e](https://github.com/pluralsight/design-system/commit/4c4df0e))
+
+
+### BREAKING CHANGES
+
+* **switch:** update React peerDep to 16.8.6
+
+
+
+
+
 ## [2.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@2.0.3...@pluralsight/ps-design-system-switch@2.0.4) (2019-05-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-switch
