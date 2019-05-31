@@ -44,7 +44,7 @@ function Datawell(props) {
 }
 
 Datawell.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
   label: PropTypes.string.isRequired,
   subLabel: PropTypes.node
 }
