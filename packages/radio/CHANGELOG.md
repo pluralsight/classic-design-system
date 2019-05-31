@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@1.0.7...@pluralsight/ps-design-system-radio@2.0.0) (2019-05-31)
+
+
+### Code Refactoring
+
+* **radio:** use new theme context ([979bd4a](https://github.com/pluralsight/design-system/commit/979bd4a))
+
+
+### BREAKING CHANGES
+
+* **radio:** update React peerDep to 16.8.6
+
+
+
+
+
 ## [1.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@1.0.6...@pluralsight/ps-design-system-radio@1.0.7) (2019-05-14)
 
 

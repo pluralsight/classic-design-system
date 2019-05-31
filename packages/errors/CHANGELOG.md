@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@3.1.5...@pluralsight/ps-design-system-errors@4.0.0) (2019-05-31)
+
+
+### Code Refactoring
+
+* **errors:** use withTheme HOC to get theme from context ([d00d038](https://github.com/pluralsight/design-system/commit/d00d038))
+
+
+### BREAKING CHANGES
+
+* **errors:** update React peerDep to 16.8.6
+
+
+
+
+
 ## [3.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@3.1.4...@pluralsight/ps-design-system-errors@3.1.5) (2019-05-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-errors

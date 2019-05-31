@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@9.0.7...@pluralsight/ps-design-system-card@10.0.0) (2019-05-31)
+
+
+### Code Refactoring
+
+* **card:** use new theme context ([4b5714e](https://github.com/pluralsight/design-system/commit/4b5714e))
+
+
+### BREAKING CHANGES
+
+* **card:** upgrade React peerDep to 16.8.6
+
+
+
+
+
 ## [9.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@9.0.6...@pluralsight/ps-design-system-card@9.0.7) (2019-05-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-card

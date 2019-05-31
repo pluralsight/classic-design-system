@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@1.0.4...@pluralsight/ps-design-system-checkbox@2.0.0) (2019-05-31)
+
+
+### Code Refactoring
+
+* **checkbox:** use new theme context; update storybook config ([87e2492](https://github.com/pluralsight/design-system/commit/87e2492))
+
+
+### BREAKING CHANGES
+
+* **checkbox:** upgrade react peerDep to 16.8.6
+
+
+
+
+
 ## [1.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@1.0.3...@pluralsight/ps-design-system-checkbox@1.0.4) (2019-05-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-checkbox

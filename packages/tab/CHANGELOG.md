@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@9.0.3...@pluralsight/ps-design-system-tab@10.0.0) (2019-05-31)
+
+
+### Code Refactoring
+
+* **tab:** use new react context ([d45e190](https://github.com/pluralsight/design-system/commit/d45e190))
+
+
+### BREAKING CHANGES
+
+* **tab:** upgrade React peerDep to 16.8.6
+
+
+
+
+
 ## [9.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@9.0.2...@pluralsight/ps-design-system-tab@9.0.3) (2019-04-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tab

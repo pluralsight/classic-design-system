@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@3.0.9...@pluralsight/ps-design-system-table@4.0.0) (2019-05-31)
+
+
+### Code Refactoring
+
+* **table:** use new theme context ([42cab02](https://github.com/pluralsight/design-system/commit/42cab02))
+
+
+### BREAKING CHANGES
+
+* **table:** upgrade React peerDeps to 16.8.6
+
+
+
+
+
 ## [3.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@3.0.8...@pluralsight/ps-design-system-table@3.0.9) (2019-05-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table
