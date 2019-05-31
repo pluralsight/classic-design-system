@@ -1,11 +1,11 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Datawell from '../index.js'
+import DataWell from '../index.js'
 
-describe('Datawell', () => {
+describe('DataWell', () => {
   it('renders', () =>
     expect(() =>
-      shallow(<Datawell label="Not throwing">Up</Datawell>)
+      shallow(<DataWell label="Not throwing">Up</DataWell>)
     ).not.toThrow())
 })

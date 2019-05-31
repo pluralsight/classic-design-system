@@ -29,7 +29,7 @@ const styles = {
     )
 }
 
-function Datawell(props) {
+function DataWell(props) {
   const themeName = useTheme()
   const allProps = { ...props, themeName }
   return (
@@ -43,10 +43,10 @@ function Datawell(props) {
   )
 }
 
-Datawell.propTypes = {
+DataWell.propTypes = {
   children: PropTypes.node.isRequired,
   label: PropTypes.string.isRequired,
   subLabel: PropTypes.node
 }
 
-export default Datawell
+export default DataWell

@@ -1,7 +1,7 @@
 {
   "name": "@pluralsight/ps-design-system-datawell",
   "version": "1.0.0",
-  "description": "Datawell UI Component for the Pluralsight Design System",
+  "description": "Data Well UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "main": "index.js",

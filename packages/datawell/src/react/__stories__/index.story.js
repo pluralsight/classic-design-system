@@ -2,14 +2,14 @@ import { css } from 'glamor'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import Datawell from '../index.js'
+import DataWell from '../index.js'
 
-storiesOf('Datawell', module)
-  .add('label/data', _ => <Datawell label="Dog count">123</Datawell>)
+storiesOf('DataWell', module)
+  .add('label/data', _ => <DataWell label="Dog count">123</DataWell>)
   .add('label/data/subLabel', _ => (
-    <Datawell label="Dog count" subLabel="All the doggies">
+    <DataWell label="Dog count" subLabel="All the doggies">
       234,345
-    </Datawell>
+    </DataWell>
   ))
   .add('row', _ => (
     <div
@@ -17,17 +17,17 @@ storiesOf('Datawell', module)
         display: 'flex'
       }}
     >
-      <Datawell label="Dog count" subLabel="All the doggies">
+      <DataWell label="Dog count" subLabel="All the doggies">
         234,345
-      </Datawell>
-      <Datawell label="Cat count">123</Datawell>
-      <Datawell label="Rafters on the River">12/23</Datawell>
-      <Datawell
+      </DataWell>
+      <DataWell label="Cat count">123</DataWell>
+      <DataWell label="Rafters on the River">12/23</DataWell>
+      <DataWell
         label="Flotsam"
         subLabel="The icky stuff that is not cats or dogs, floating in the river"
       >
         About 3
-      </Datawell>
+      </DataWell>
     </div>
   ))
   .add('fixed width in row, no spaces', _ => (
@@ -39,11 +39,11 @@ storiesOf('Datawell', module)
         }
       })}
     >
-      <Datawell label="Dog count" subLabel="All the doggies">
+      <DataWell label="Dog count" subLabel="All the doggies">
         234,345
-      </Datawell>
-      <Datawell label="Cat count">123</Datawell>
-      <Datawell label="Rafters on the River">1,345/23,235</Datawell>
-      <Datawell label="Flotsam">About 3</Datawell>
+      </DataWell>
+      <DataWell label="Cat count">123</DataWell>
+      <DataWell label="Rafters on the River">1,345/23,235</DataWell>
+      <DataWell label="Flotsam">About 3</DataWell>
     </div>
   ))

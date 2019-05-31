@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Datawell fixed width in row, no spaces 1`] = `
+exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
 <div
   data-css-1s5t7h8=""
 >
@@ -85,7 +85,7 @@ exports[`Storyshots Datawell fixed width in row, no spaces 1`] = `
 </div>
 `;
 
-exports[`Storyshots Datawell label/data 1`] = `
+exports[`Storyshots DataWell label/data 1`] = `
 <div
   data-css-12p1bh2=""
 >
@@ -107,7 +107,7 @@ exports[`Storyshots Datawell label/data 1`] = `
 </div>
 `;
 
-exports[`Storyshots Datawell label/data/subLabel 1`] = `
+exports[`Storyshots DataWell label/data/subLabel 1`] = `
 <div
   data-css-12p1bh2=""
 >
@@ -131,7 +131,7 @@ exports[`Storyshots Datawell label/data/subLabel 1`] = `
 </div>
 `;
 
-exports[`Storyshots Datawell row 1`] = `
+exports[`Storyshots DataWell row 1`] = `
 <div
   style={
     Object {
