@@ -4,7 +4,7 @@ import * as glamor from 'glamor'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
 import useResizeObserver from './use-resize-observer.js'
@@ -29,6 +29,11 @@ const styles = {
 }
 
 function List(props) {
+  const themeName = useTheme()
+  const allProps = {
+    ...props,
+    themeName
+  }
   const { ref: listRef, width: listWidth } = useResizeObserver()
   const sliderRef = React.useRef()
   const [isRenderedOnce, setRenderedOnce] = React.useState(false)
@@ -38,13 +43,13 @@ function List(props) {
   })
   const [xOffset, setXOffset] = React.useState(0)
   const [sliderWidth, setSliderWidth] = React.useState(0)
-  const activeIndexFromProps = findActiveIndex(props.children)
+  const activeIndexFromProps = findActiveIndex(allProps.children)
   const [activeIndex, setActiveIndex] = React.useState(
     activeIndexFromProps > -1 ? activeIndexFromProps : 0
   )
   const itemRefs = React.useMemo(
-    _ => React.Children.map(props.children, () => React.createRef()) || [],
-    [props.children]
+    _ => React.Children.map(allProps.children, () => React.createRef()) || [],
+    [allProps.children]
   )
 
   React.useEffect(
@@ -158,7 +163,7 @@ function List(props) {
     setXOffset(furtherXOffset)
   }
 
-  const { children, ...rest } = props
+  const { children, ...rest } = allProps
   const listProps = {
     ...rest,
     role: 'tablist',
@@ -180,7 +185,7 @@ function List(props) {
         style={styleForXOffset(xOffset)}
       >
         {React.Children.map(
-          props.children,
+          allProps.children,
           (comp, i) =>
             comp &&
             React.cloneElement(comp, {
@@ -205,20 +210,20 @@ List.propTypes = {
   ])
 }
 
-List.contextTypes = {
-  themeName: PropTypes.string
-}
+export default List
 
-export default withTheme(List)
-
-const OverflowButton = withTheme(props => {
-  const { themeName, ...rest } = props
+function OverflowButton(props) {
+  const themeName = useTheme()
+  const allProps = {
+    ...props,
+    themeName
+  }
   return (
-    <button {...styles.overflowButton(props)} tabIndex="-1" {...rest}>
+    <button {...styles.overflowButton(allProps)} tabIndex="-1" {...props}>
       <div {...styles.overflowButtonIcon()}>
         <Icon
           id={
-            props.position === 'right'
+            allProps.position === 'right'
               ? Icon.ids.caretRight
               : Icon.ids.caretLeft
           }
@@ -226,7 +231,7 @@ const OverflowButton = withTheme(props => {
       </div>
     </button>
   )
-})
+}
 OverflowButton.propTypes = {
   position: PropTypes.oneOf(['left', 'right'])
 }
