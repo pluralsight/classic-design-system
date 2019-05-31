@@ -1,3 +1,4 @@
+import { css } from 'glamor'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
@@ -27,5 +28,22 @@ storiesOf('Datawell', module)
       >
         About 3
       </Datawell>
+    </div>
+  ))
+  .add('fixed width in row, no spaces', _ => (
+    <div
+      {...css({
+        display: 'flex',
+        '& > div': {
+          width: '25%'
+        }
+      })}
+    >
+      <Datawell label="Dog count" subLabel="All the doggies">
+        234,345
+      </Datawell>
+      <Datawell label="Cat count">123</Datawell>
+      <Datawell label="Rafters on the River">1,345/23,235</Datawell>
+      <Datawell label="Flotsam">About 3</Datawell>
     </div>
   ))

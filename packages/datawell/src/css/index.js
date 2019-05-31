@@ -22,7 +22,8 @@ export default {
     fontSize: core.type.fontSizeXXLarge,
     lineHeight: core.type.lineHeightHuge,
     color: core.colors.white,
-    marginBottom: core.layout.spacingMedium
+    marginBottom: core.layout.spacingMedium,
+    wordWrap: 'break-word'
   },
   [`.psds-datawell__data.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray06
