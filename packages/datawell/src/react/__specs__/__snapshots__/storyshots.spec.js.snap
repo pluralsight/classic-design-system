@@ -2,17 +2,17 @@
 
 exports[`Storyshots Datawell label/data 1`] = `
 <div
-  data-css-16xa5gf=""
+  data-css-12p1bh2=""
 >
   <div
     data-css-1oooiac=""
-    data-css-2q37a4=""
+    data-css-chiflz=""
     size="smallCaps"
   >
     Dog count
   </div>
   <div
-    data-css-1v1tgd=""
+    data-css-1hdp1kc=""
   >
     123
   </div>
@@ -24,17 +24,17 @@ exports[`Storyshots Datawell label/data 1`] = `
 
 exports[`Storyshots Datawell label/data/subLabel 1`] = `
 <div
-  data-css-16xa5gf=""
+  data-css-12p1bh2=""
 >
   <div
     data-css-1oooiac=""
-    data-css-2q37a4=""
+    data-css-chiflz=""
     size="smallCaps"
   >
     Dog count
   </div>
   <div
-    data-css-1v1tgd=""
+    data-css-1hdp1kc=""
   >
     234,345
   </div>
@@ -55,17 +55,17 @@ exports[`Storyshots Datawell row 1`] = `
   }
 >
   <div
-    data-css-16xa5gf=""
+    data-css-12p1bh2=""
   >
     <div
       data-css-1oooiac=""
-      data-css-2q37a4=""
+      data-css-chiflz=""
       size="smallCaps"
     >
       Dog count
     </div>
     <div
-      data-css-1v1tgd=""
+      data-css-1hdp1kc=""
     >
       234,345
     </div>
@@ -76,17 +76,17 @@ exports[`Storyshots Datawell row 1`] = `
     </div>
   </div>
   <div
-    data-css-16xa5gf=""
+    data-css-12p1bh2=""
   >
     <div
       data-css-1oooiac=""
-      data-css-2q37a4=""
+      data-css-chiflz=""
       size="smallCaps"
     >
       Cat count
     </div>
     <div
-      data-css-1v1tgd=""
+      data-css-1hdp1kc=""
     >
       123
     </div>
@@ -95,17 +95,17 @@ exports[`Storyshots Datawell row 1`] = `
     />
   </div>
   <div
-    data-css-16xa5gf=""
+    data-css-12p1bh2=""
   >
     <div
       data-css-1oooiac=""
-      data-css-2q37a4=""
+      data-css-chiflz=""
       size="smallCaps"
     >
       Rafters on the River
     </div>
     <div
-      data-css-1v1tgd=""
+      data-css-1hdp1kc=""
     >
       12/23
     </div>
@@ -114,17 +114,17 @@ exports[`Storyshots Datawell row 1`] = `
     />
   </div>
   <div
-    data-css-16xa5gf=""
+    data-css-12p1bh2=""
   >
     <div
       data-css-1oooiac=""
-      data-css-2q37a4=""
+      data-css-chiflz=""
       size="smallCaps"
     >
       Flotsam
     </div>
     <div
-      data-css-1v1tgd=""
+      data-css-1hdp1kc=""
     >
       About 3
     </div>

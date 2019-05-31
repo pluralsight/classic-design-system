@@ -4,7 +4,7 @@ import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 export default {
   '.psds-datawell': {
     borderLeft: `1px solid ${core.colors.gray03}`,
-    minHeight: '106px',
+    minHeight: '104px',
     padding: `0 ${core.layout.spacingMedium} ${core.layout.spacingMedium} ${
       core.layout.spacingLarge
     }`
@@ -13,16 +13,16 @@ export default {
     borderLeft: `1px solid ${core.colors.gray01}`
   },
   '.psds-datawell__label': {
-    margin: '0 0 4px 0',
+    margin: 0,
     fontSize: core.type.fontSizeXSmall,
-    lineHeight: '12px'
+    lineHeight: '16px'
   },
   '.psds-datawell__data': {
     fontWeight: core.type.fontWeightMedium,
     fontSize: core.type.fontSizeXXLarge,
-    lineHeight: '48px',
+    lineHeight: core.type.lineHeightHuge,
     color: core.colors.white,
-    marginBottom: core.layout.spacingSmall
+    marginBottom: core.layout.spacingMedium
   },
   [`.psds-datawell__data.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray06
