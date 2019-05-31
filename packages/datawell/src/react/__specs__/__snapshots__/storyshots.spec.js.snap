@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Datawell label/data 1`] = `
+<div
+  data-css-16xa5gf=""
+>
+  <div
+    data-css-1oooiac=""
+    data-css-2q37a4=""
+    size="smallCaps"
+  >
+    Dog count
+  </div>
+  <div
+    data-css-1v1tgd=""
+  >
+    123
+  </div>
+  <div
+    data-css-qnx2q6=""
+  />
+</div>
+`;
+
+exports[`Storyshots Datawell label/data/subLabel 1`] = `
+<div
+  data-css-16xa5gf=""
+>
+  <div
+    data-css-1oooiac=""
+    data-css-2q37a4=""
+    size="smallCaps"
+  >
+    Dog count
+  </div>
+  <div
+    data-css-1v1tgd=""
+  >
+    234,345
+  </div>
+  <div
+    data-css-qnx2q6=""
+  >
+    All the doggies
+  </div>
+</div>
+`;
+
+exports[`Storyshots Datawell row 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <div
+    data-css-16xa5gf=""
+  >
+    <div
+      data-css-1oooiac=""
+      data-css-2q37a4=""
+      size="smallCaps"
+    >
+      Dog count
+    </div>
+    <div
+      data-css-1v1tgd=""
+    >
+      234,345
+    </div>
+    <div
+      data-css-qnx2q6=""
+    >
+      All the doggies
+    </div>
+  </div>
+  <div
+    data-css-16xa5gf=""
+  >
+    <div
+      data-css-1oooiac=""
+      data-css-2q37a4=""
+      size="smallCaps"
+    >
+      Cat count
+    </div>
+    <div
+      data-css-1v1tgd=""
+    >
+      123
+    </div>
+    <div
+      data-css-qnx2q6=""
+    />
+  </div>
+  <div
+    data-css-16xa5gf=""
+  >
+    <div
+      data-css-1oooiac=""
+      data-css-2q37a4=""
+      size="smallCaps"
+    >
+      Rafters on the River
+    </div>
+    <div
+      data-css-1v1tgd=""
+    >
+      12/23
+    </div>
+    <div
+      data-css-qnx2q6=""
+    />
+  </div>
+  <div
+    data-css-16xa5gf=""
+  >
+    <div
+      data-css-1oooiac=""
+      data-css-2q37a4=""
+      size="smallCaps"
+    >
+      Flotsam
+    </div>
+    <div
+      data-css-1v1tgd=""
+    >
+      About 3
+    </div>
+    <div
+      data-css-qnx2q6=""
+    >
+      The icky stuff that is not cats or dogs, floating in the river
+    </div>
+  </div>
+</div>
+`;
