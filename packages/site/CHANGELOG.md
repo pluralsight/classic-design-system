@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.5.1...@pluralsight/ps-design-system-site@12.6.0) (2019-06-03)
+
+
+### Features
+
+* **site:** add datawell docs ([e119df2](https://github.com/pluralsight/design-system/commit/e119df2))
+
+
+
+
+
 ## [12.5.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.5.0...@pluralsight/ps-design-system-site@12.5.1) (2019-05-31)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site
