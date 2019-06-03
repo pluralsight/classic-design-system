@@ -56,6 +56,11 @@ export default {
       // __bar
       '& span': {
         bottom: '-1px'
+      },
+
+      // __overflow-button
+      '& > button': {
+        height: 'calc(100% + 4px)'
       }
     }
   },
