@@ -106,6 +106,7 @@ export default withServerProps(_ => (
         <Text.Code>subLabel</Text.Code> is optional
       </P>
       <Example.React
+        themeToggle
         includes={{ DataWell }}
         codes={[
           `<DataWell 
