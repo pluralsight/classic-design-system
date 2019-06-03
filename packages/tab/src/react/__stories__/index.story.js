@@ -1,53 +1,72 @@
 import addons from '@storybook/addons'
+import PropTypes from 'prop-types'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import Tab from '../index.js'
 
-class InAppExample extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { activeIndex: 2 }
-    this.menus = [1, 2, 3, 4, 5].map(i => ({
+function randomIntBetween(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+function NavigableExample({ count = 5, resizeEvery }) {
+  const [activeIndex, setActiveIndex] = React.useState(2)
+  const [width, setWidth] = React.useState(100)
+  const menus = Array(count)
+    .fill(null)
+    .map((_, i) => ({
       id: `example${i}`,
       label: `Menu ${i}`,
       content: `Menu stuff ${i}`
     }))
-    this.handleTabClick = this.handleTabClick.bind(this)
+  React.useEffect(
+    () => {
+      let timer
+      if (resizeEvery) {
+        timer = setInterval(() => {
+          setWidth(randomIntBetween(25, 100))
+        }, resizeEvery)
+      }
+      return () => {
+        clearInterval(timer)
+        timer = null
+      }
+    },
+    [resizeEvery]
+  )
+
+  function handleTabClick(i) {
+    setActiveIndex(i)
   }
-  handleTabClick(i) {
-    this.setState({ activeIndex: i })
-  }
-  render() {
-    return (
-      <div>
-        <Tab.List>
-          {this.menus.map((menu, i) => (
-            <Tab.ListItem
-              id={menu.id}
-              key={menu.id}
-              onClick={this.handleTabClick}
-            >
-              {menu.label}
-            </Tab.ListItem>
-          ))}
-        </Tab.List>
-        {this.menus.map((menu, i) =>
-          i === this.state.activeIndex ? (
-            <Tab.Panel labelledBy={menu.id} key={menu.id}>
-              <div className="content">{menu.content}</div>
-            </Tab.Panel>
-          ) : null
-        )}
-      </div>
-    )
-  }
+
+  return (
+    <div style={{ width: width + '%', outline: '1px solid red' }}>
+      <Tab.List>
+        {menus.map((menu, i) => (
+          <Tab.ListItem id={menu.id} key={menu.id} onClick={handleTabClick}>
+            {menu.label}
+          </Tab.ListItem>
+        ))}
+      </Tab.List>
+      {menus.map((menu, i) =>
+        i === activeIndex ? (
+          <Tab.Panel labelledBy={menu.id} key={menu.id}>
+            <div className="content">{menu.content}</div>
+          </Tab.Panel>
+        ) : null
+      )}
+    </div>
+  )
+}
+NavigableExample.propTypes = {
+  count: PropTypes.number,
+  resizeEvery: PropTypes.number
 }
 
 storiesOf('default', module)
   .addDecorator(themeDecorator(addons))
-  .add('default', _ => <InAppExample />)
+  .add('default', _ => <NavigableExample />)
   .add('no items', _ => <Tab.List />)
   .add('as links', _ => (
     <Tab.List>
@@ -55,6 +74,69 @@ storiesOf('default', module)
         External link
       </Tab.ListItem>
     </Tab.List>
+  ))
+  .add('super long item', _ => (
+    <Tab.List>
+      <Tab.ListItem id={1} key={1}>
+        This is the song that doesn't end; yes, it goes on and on, my friend;
+        some people started singing it, not knowing what it was; and they'll
+        continue singing it forever just because
+      </Tab.ListItem>
+      <Tab.ListItem id={2} key={2}>
+        Short
+      </Tab.ListItem>
+      <Tab.ListItem id={3} key={3}>
+        A little less ridiculous but still long
+      </Tab.ListItem>
+    </Tab.List>
+  ))
+  .add('active item offscreen', _ => (
+    <div style={{ width: '500px', outline: '1px solid red' }}>
+      <Tab.List>
+        <Tab.ListItem id={1} key={1}>
+          One thing
+        </Tab.ListItem>
+        <Tab.ListItem id={2} key={2}>
+          Two thing
+        </Tab.ListItem>
+        <Tab.ListItem id={3} key={3}>
+          Three thing
+        </Tab.ListItem>
+        <Tab.ListItem id={4} key={4}>
+          Four thing
+        </Tab.ListItem>
+        <Tab.ListItem id={5} key={5} active>
+          ACTIVE thing
+        </Tab.ListItem>
+        <Tab.ListItem id={6} key={6}>
+          Six thing
+        </Tab.ListItem>
+        <Tab.ListItem id={7} key={7}>
+          Six thing
+        </Tab.ListItem>
+        <Tab.ListItem id={8} key={8}>
+          Six thing
+        </Tab.ListItem>
+      </Tab.List>
+    </div>
+  ))
+
+storiesOf('scrolling', module)
+  .addDecorator(themeDecorator(addons))
+  .add('10 count', _ => <NavigableExample count={10} />)
+  .add('20 count', _ => <NavigableExample count={20} />)
+  .add('30 count', _ => <NavigableExample count={30} />)
+  .add('35 count', _ => <NavigableExample count={35} />)
+  .add('thinner container', _ => (
+    <div style={{ outline: '1px solid red', width: '50%' }}>
+      <NavigableExample count={35} />
+    </div>
+  ))
+  .add('short list, resizing container', _ => (
+    <NavigableExample count={7} resizeEvery={3000} />
+  ))
+  .add('long list, resizing container', _ => (
+    <NavigableExample count={35} resizeEvery={3000} />
   ))
 
 storiesOf('style overrides', module)

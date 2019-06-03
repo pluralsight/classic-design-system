@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@4.1.10...@pluralsight/ps-design-system-actionmenu@4.1.11) (2019-05-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+## [4.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@4.1.9...@pluralsight/ps-design-system-actionmenu@4.1.10) (2019-05-31)
+
+
+### Bug Fixes
+
+* **actionmenu:** put ps-design-system-prop-types in deps ([d629068](https://github.com/pluralsight/design-system/commit/d629068)), closes [#533](https://github.com/pluralsight/design-system/issues/533)
+
+
+
+
+
 ## [4.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@4.1.8...@pluralsight/ps-design-system-actionmenu@4.1.9) (2019-05-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu

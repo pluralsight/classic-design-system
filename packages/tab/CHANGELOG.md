@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@10.0.0...@pluralsight/ps-design-system-tab@11.0.0) (2019-05-31)
+
+
+### Bug Fixes
+
+* **tab:** avoid slide-in animation on mount if no overflow ([46e5a3e](https://github.com/pluralsight/design-system/commit/46e5a3e))
+* **tab:** diff calc of slider width; workaround flexbox container width ([62e3094](https://github.com/pluralsight/design-system/commit/62e3094))
+* **tab:** dont let items focus outside visible list container ([f76fbb6](https://github.com/pluralsight/design-system/commit/f76fbb6))
+* **tab:** firefox has enough time to recalc overflow ([469cb7a](https://github.com/pluralsight/design-system/commit/469cb7a))
+* **tab:** fix resizeEvery story to keep running on interval ([00eac9f](https://github.com/pluralsight/design-system/commit/00eac9f))
+* **tab:** make the light theme overflow button correct ([7d27acd](https://github.com/pluralsight/design-system/commit/7d27acd))
+* **tab:** more specific css to compensate extra text div ([ade2df5](https://github.com/pluralsight/design-system/commit/ade2df5))
+* **tab:** properly calculate nowrap slider length ([e39f149](https://github.com/pluralsight/design-system/commit/e39f149))
+* **tab:** unstyle focus on extra inner text div ([1793d42](https://github.com/pluralsight/design-system/commit/1793d42))
+* **tab:** wait for animation, fix paging recalcs ([d6ba890](https://github.com/pluralsight/design-system/commit/d6ba890))
+
+
+### Code Refactoring
+
+* **tab:** convert to react16 functional components ([6ab4c0b](https://github.com/pluralsight/design-system/commit/6ab4c0b))
+* **tab:** require react 16.8 ([acc0a4d](https://github.com/pluralsight/design-system/commit/acc0a4d))
+
+
+### Features
+
+* **tab:** add overflow button hover style ([2f4eb98](https://github.com/pluralsight/design-system/commit/2f4eb98))
+* **tab:** add transition to slide ([e5d5056](https://github.com/pluralsight/design-system/commit/e5d5056))
+* **tab:** click overflow button to page ([9513567](https://github.com/pluralsight/design-system/commit/9513567))
+* **tab:** handle overflow calc on element resize ([274fc9c](https://github.com/pluralsight/design-system/commit/274fc9c))
+* **tab:** items on slider, detect horz overflow, hide buttons ([062aaec](https://github.com/pluralsight/design-system/commit/062aaec))
+* **tab:** keep arrowed to list items in view ([745f20c](https://github.com/pluralsight/design-system/commit/745f20c))
+* **tab:** offscreen active item scrolls into view on mount ([a1c2b3b](https://github.com/pluralsight/design-system/commit/a1c2b3b))
+* **tab:** style overflow buttons ([ecb4950](https://github.com/pluralsight/design-system/commit/ecb4950))
+* **tab:** style overflow buttons for light theme ([a0b7170](https://github.com/pluralsight/design-system/commit/a0b7170))
+
+
+### BREAKING CHANGES
+
+* **tab:** support React.forwardRef on Tab.List and Tab.ListItem
+* **tab:** require react 16.8.6
+
+
+
+
+
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@9.0.3...@pluralsight/ps-design-system-tab@10.0.0) (2019-05-31)
+
+
+### Code Refactoring
+
+* **tab:** use new react context ([d45e190](https://github.com/pluralsight/design-system/commit/d45e190))
+
+
+### BREAKING CHANGES
+
+* **tab:** upgrade React peerDep to 16.8.6
+
+
+
+
+
 ## [9.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@9.0.2...@pluralsight/ps-design-system-tab@9.0.3) (2019-04-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tab

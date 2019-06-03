@@ -99,9 +99,12 @@ reactStory.add('test.skip inNode', () => {
     const portal = React.useRef()
     const [node, setNode] = React.useState(portal.current)
 
-    React.useEffect(() => {
-      setNode(portal.current)
-    }, [portal])
+    React.useEffect(
+      () => {
+        setNode(portal.current)
+      },
+      [portal]
+    )
 
     return (
       <React.Fragment>

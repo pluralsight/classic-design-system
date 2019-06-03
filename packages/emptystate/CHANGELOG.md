@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@4.0.1...@pluralsight/ps-design-system-emptystate@4.0.2) (2019-05-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-emptystate
+
+
+
+
+
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@4.0.0...@pluralsight/ps-design-system-emptystate@4.0.1) (2019-05-31)
+
+
+### Bug Fixes
+
+* **emptystate:** update with useTheme hook ([a18daa6](https://github.com/pluralsight/design-system/commit/a18daa6))
+
+
+
+
+
 # [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@3.0.9...@pluralsight/ps-design-system-emptystate@4.0.0) (2019-05-22)
 
 

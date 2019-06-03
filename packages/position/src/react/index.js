@@ -30,10 +30,13 @@ function Position(props) {
   const child = React.Children.only(props.children)
   const [style, setStyle] = React.useState({ position: 'absolute' })
 
-  React.useLayoutEffect(() => {
-    if (props.when && targetRef.current && elRef.current)
-      setStyle(props.position(targetRef.current).styleFor(elRef.current))
-  }, [props.when, targetRef, elRef, props])
+  React.useLayoutEffect(
+    () => {
+      if (props.when && targetRef.current && elRef.current)
+        setStyle(props.position(targetRef.current).styleFor(elRef.current))
+    },
+    [props.when, targetRef, elRef, props]
+  )
 
   const show = React.cloneElement(props.show, {
     ref: elRef,

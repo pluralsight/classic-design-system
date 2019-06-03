@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.5.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.5.0...@pluralsight/ps-design-system-site@12.5.1) (2019-05-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-site
+
+
+
+
+
+# [12.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.4.1...@pluralsight/ps-design-system-site@12.5.0) (2019-05-31)
+
+
+### Features
+
+* **searchinput:** new component ([3d81e0a](https://github.com/pluralsight/design-system/commit/3d81e0a)), closes [#228](https://github.com/pluralsight/design-system/issues/228)
+* **site:** add subtle light theme doc to textinput ([a1f55c3](https://github.com/pluralsight/design-system/commit/a1f55c3))
+
+
+
+
+
 ## [12.4.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.4.0...@pluralsight/ps-design-system-site@12.4.1) (2019-05-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site

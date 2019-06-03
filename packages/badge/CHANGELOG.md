@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@4.0.3...@pluralsight/ps-design-system-badge@5.0.0) (2019-05-31)
+
+
+### Code Refactoring
+
+* **badge:** use new theme context ([de26f92](https://github.com/pluralsight/design-system/commit/de26f92))
+
+
+### BREAKING CHANGES
+
+* **badge:** upgrade React peerDep to 16.8.6
+
+
+
+
+
 ## [4.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@4.0.2...@pluralsight/ps-design-system-badge@4.0.3) (2019-04-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-badge

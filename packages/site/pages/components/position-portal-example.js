@@ -9,9 +9,12 @@ import { Head, withServerProps } from '../../src/ui/index.js'
 export default withServerProps(function PortalExample() {
   const portal = React.useRef()
   const [node, setNode] = React.useState(portal.current)
-  React.useEffect(() => {
-    if (portal.current) setNode(portal.current)
-  }, [portal])
+  React.useEffect(
+    () => {
+      if (portal.current) setNode(portal.current)
+    },
+    [portal]
+  )
 
   return (
     <div>

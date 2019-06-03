@@ -3,6 +3,7 @@ import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme/vars'
+import { transparentize } from '@pluralsight/ps-design-system-util/color'
 
 const listItemTextLightHover = {
   color: core.colors.gray06
@@ -39,16 +40,16 @@ const listItemBarActiveActive = {
 }
 
 export default {
-  // __list
   '.psds-tab__list': {
-    display: 'flex',
+    position: 'relative',
     width: '100%',
     height: '64px',
+    overflow: 'hidden',
     '&:focus': {
       outline: 'none',
       borderBottomWidth: '4px',
       // __text
-      '& div': {
+      '& > div': {
         height: 'calc(100% + 4px)',
         marginBottom: '-4px'
       }
@@ -61,14 +62,93 @@ export default {
     borderBottom: `1px solid ${core.colors.gray04}`
   },
 
+  '.psds-tab__slider': {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    display: 'flex',
+    height: '64px',
+    transform: 'translateX(0)',
+    transition: `transform ${core.motion.speedFast} ease-in-out`
+  },
+
+  '.psds-tab__overflow-button': {
+    position: 'absolute',
+    top: 0,
+    display: 'flex',
+    alignItems: 'center',
+    height: 'calc(100% + 1px)',
+    width: '64px',
+    color: core.colors.white,
+    border: 0,
+    zIndex: 1,
+    cursor: 'pointer',
+    outline: 'none',
+
+    // __icon
+    '&:hover > div': {
+      background: core.colors.gray03
+    }
+  },
+  '.psds-tab__overflow-button--left': {
+    left: 0,
+    justifyContent: 'flex-start',
+    background: `linear-gradient(to left, transparent, ${transparentize(
+      0.1,
+      core.colors.gray05
+    )} 50%)`,
+    paddingLeft: core.layout.spacingMedium
+  },
+  '.psds-tab__overflow-button--right': {
+    right: 0,
+    justifyContent: 'flex-end',
+    background: `linear-gradient(to right, transparent, ${transparentize(
+      0.1,
+      core.colors.gray05
+    )} 50%)`,
+    paddingRight: core.layout.spacingMedium
+  },
+  [`.psds-tab__overflow-button.psds-theme--${themeNames.light}`]: {
+    color: core.colors.gray06,
+
+    // __icon
+    '&:hover > div': {
+      background: core.colors.gray01
+    }
+  },
+  [`.psds-tab__overflow-button--left.psds-theme--${themeNames.light}`]: {
+    background: `linear-gradient(to left, transparent, ${transparentize(
+      0.1,
+      core.colors.white
+    )} 50%)`
+  },
+  [`.psds-tab__overflow-button--right.psds-theme--${themeNames.light}`]: {
+    background: `linear-gradient(to right, transparent, ${transparentize(
+      0.1,
+      core.colors.white
+    )} 50%)`
+  },
+
+  '.psds-tab__overflow-button__icon': {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '32px',
+    width: '32px',
+    borderRadius: '50%',
+    transition: `all ${core.motion.speedFast} ease-in-out`
+  },
+
   // __list-item
   '.psds-tab__list-item': {
+    flexShrink: '0',
     height: '100%',
     background: 'none',
     border: 0,
     cursor: 'pointer',
     padding: `0 calc(${core.layout.spacingXLarge} / 2)`,
     textDecoration: 'none',
+    maxWidth: '300px',
     '&:focus': {
       outline: 'none'
     },
@@ -116,6 +196,12 @@ export default {
     fontWeight: core.type.fontWeightBook,
     padding: `0 0 ${core.layout.spacingXXSmall} 0`,
     transition: `color ${core.motion.speedXFast} linear`,
+    '&:focus': {
+      outline: 'none'
+    }
+  },
+  '.psds-tab__list-item__text-inner': {
+    overflow: 'hidden',
     '&:focus': {
       outline: 'none'
     }

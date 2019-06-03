@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@12.0.2...@pluralsight/ps-design-system-button@12.0.3) (2019-05-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-button
+
+
+
+
+
+## [12.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@12.0.1...@pluralsight/ps-design-system-button@12.0.2) (2019-05-31)
+
+
+### Bug Fixes
+
+* **button:** useTheme to get context.themeName correctly ([350f239](https://github.com/pluralsight/design-system/commit/350f239)), closes [#532](https://github.com/pluralsight/design-system/issues/532)
+* **button:** useTheme to get context.themeName correctly ([98a4e73](https://github.com/pluralsight/design-system/commit/98a4e73)), closes [#532](https://github.com/pluralsight/design-system/issues/532)
+
+
+
+
+
 ## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@12.0.0...@pluralsight/ps-design-system-button@12.0.1) (2019-05-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-button

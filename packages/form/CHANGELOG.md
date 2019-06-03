@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@2.0.0...@pluralsight/ps-design-system-form@2.0.1) (2019-05-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-form
+
+
+
+
+
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@1.0.11...@pluralsight/ps-design-system-form@2.0.0) (2019-05-31)
+
+
+### Code Refactoring
+
+* **form:** convert to use useTheme ([5470f17](https://github.com/pluralsight/design-system/commit/5470f17))
+
+
+### BREAKING CHANGES
+
+* **form:** update React peerDep to 16.8.6
+
+
+
+
+
 ## [1.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@1.0.10...@pluralsight/ps-design-system-form@1.0.11) (2019-05-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-form

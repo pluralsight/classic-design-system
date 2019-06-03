@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@2.0.0...@pluralsight/ps-design-system-datepicker@2.0.1) (2019-05-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@1.0.9...@pluralsight/ps-design-system-datepicker@2.0.0) (2019-05-31)
+
+
+### Code Refactoring
+
+* **datepicker:** use withTheme HOC to get theme from contextw ([1d24150](https://github.com/pluralsight/design-system/commit/1d24150))
+
+
+### BREAKING CHANGES
+
+* **datepicker:** update React peerDep to 16.8.6
+
+
+
+
+
 ## [1.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@1.0.8...@pluralsight/ps-design-system-datepicker@1.0.9) (2019-05-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
