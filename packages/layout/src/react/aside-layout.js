@@ -1,3 +1,4 @@
+import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -81,8 +82,8 @@ AsideLayout.Aside = Aside
 AsideLayout.Main = Main
 
 AsideLayout.propTypes = {
-  main: PropTypes.element.isRequired, // AsideLayout.Main
-  aside: PropTypes.element.isRequired, // AsideLayout.Aside
+  main: elementOfType(Main).isRequired,
+  aside: elementOfType(Aside).isRequired,
   asidePosition: PropTypes.oneOf(
     Object.keys(vars.asidePositions).map(key => vars.asidePositions[key])
   )

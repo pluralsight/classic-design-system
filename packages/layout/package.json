@@ -20,6 +20,7 @@
   "keywords": [],
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.4.2",
+    "@pluralsight/ps-design-system-prop-types": "^2.0.5",
     "@pluralsight/ps-design-system-text": "^12.0.1",
     "prop-types": "^15.7.0"
   },
