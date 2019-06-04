@@ -1,3 +1,400 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Note basic 1`] = `<div />`;
+exports[`Storyshots Note basic 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-erm8sl=""
+  >
+    <div
+      data-css-1kfsc44=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-1pii7we=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="//picsum.photos/128"
+        />
+        <div
+          aria-label="Bob Ross"
+          data-css-x99j9q=""
+          style={
+            Object {
+              "backgroundColor": "#1F964E",
+            }
+          }
+        >
+          BR
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-yeyge6=""
+    >
+      <div
+        data-css-1aib205=""
+      >
+        Bob Ross
+      </div>
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-193dx7i=""
+      >
+        <span
+          data-css-1esmvqj=""
+        >
+          meta first
+        </span>
+        <span
+          aria-hidden={true}
+          data-css-kykfz1=""
+        >
+          ·
+        </span>
+        <span
+          data-css-1esmvqj=""
+        >
+          meta second
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note in a list 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div>
+    <div
+      data-css-erm8sl=""
+    >
+      <div
+        data-css-1kfsc44=""
+      >
+        <div
+          aria-hidden={true}
+          data-css-1pii7we=""
+        >
+          <img
+            data-css-d7y6x2=""
+            onError={[Function]}
+            onLoad={[Function]}
+            src="//picsum.photos/128"
+          />
+          <div
+            aria-label="Bob Ross"
+            data-css-x99j9q=""
+            style={
+              Object {
+                "backgroundColor": "#1F964E",
+              }
+            }
+          >
+            BR
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-yeyge6=""
+      >
+        <div
+          data-css-1aib205=""
+        >
+          Bob Ross
+        </div>
+        <p>
+          If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+        </p>
+        <div
+          data-css-193dx7i=""
+        >
+          <span
+            data-css-1esmvqj=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-1esmvqj=""
+          >
+            meta second
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-erm8sl=""
+    >
+      <div
+        data-css-1kfsc44=""
+      >
+        <div
+          aria-hidden={true}
+          data-css-1pii7we=""
+        >
+          <img
+            data-css-d7y6x2=""
+            onError={[Function]}
+            onLoad={[Function]}
+            src="//picsum.photos/128"
+          />
+          <div
+            aria-label="Bob Ross"
+            data-css-x99j9q=""
+            style={
+              Object {
+                "backgroundColor": "#1F964E",
+              }
+            }
+          >
+            BR
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-yeyge6=""
+      >
+        <div
+          data-css-1aib205=""
+        >
+          Bob Ross
+        </div>
+        <p>
+          If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+        </p>
+        <div
+          data-css-193dx7i=""
+        >
+          <span
+            data-css-1esmvqj=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-1esmvqj=""
+          >
+            meta second
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-erm8sl=""
+    >
+      <div
+        data-css-1kfsc44=""
+      >
+        <div
+          aria-hidden={true}
+          data-css-1pii7we=""
+        >
+          <img
+            data-css-d7y6x2=""
+            onError={[Function]}
+            onLoad={[Function]}
+            src="//picsum.photos/128"
+          />
+          <div
+            aria-label="Bob Ross"
+            data-css-x99j9q=""
+            style={
+              Object {
+                "backgroundColor": "#1F964E",
+              }
+            }
+          >
+            BR
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-yeyge6=""
+      >
+        <div
+          data-css-1aib205=""
+        >
+          Bob Ross
+        </div>
+        <p>
+          If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+        </p>
+        <div
+          data-css-193dx7i=""
+        >
+          <span
+            data-css-1esmvqj=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-1esmvqj=""
+          >
+            meta second
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note with DS Text components 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-erm8sl=""
+  >
+    <div
+      data-css-1kfsc44=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-1pii7we=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="//picsum.photos/128"
+        />
+        <div
+          aria-label="Bob Ross"
+          data-css-x99j9q=""
+          style={
+            Object {
+              "backgroundColor": "#1F964E",
+            }
+          }
+        >
+          BR
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-yeyge6=""
+    >
+      <div
+        data-css-1aib205=""
+      >
+        <h3
+          data-css-1fxxvvr=""
+          size="medium"
+        >
+          Bob Ross
+        </h3>
+      </div>
+      <p
+        data-css-145tgfu=""
+      >
+        Be so very light. Be a gentle whisper. If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. It is a lot of fun.
+      </p>
+      <p
+        data-css-145tgfu=""
+      >
+        So often we avoid running water, and running water is a lot of fun. Just beat the devil out of it. Work that paint. A beautiful little sunset. This painting comes right out of your heart.
+      </p>
+      <div
+        data-css-193dx7i=""
+      >
+        <span
+          data-css-1esmvqj=""
+        >
+          meta first
+        </span>
+        <span
+          aria-hidden={true}
+          data-css-kykfz1=""
+        >
+          ·
+        </span>
+        <span
+          data-css-1esmvqj=""
+        >
+          meta second
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note without author 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-erm8sl=""
+  >
+    <div
+      data-css-yeyge6=""
+    >
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-193dx7i=""
+      >
+        <span
+          data-css-1esmvqj=""
+        >
+          meta first
+        </span>
+        <span
+          aria-hidden={true}
+          data-css-kykfz1=""
+        >
+          ·
+        </span>
+        <span
+          data-css-1esmvqj=""
+        >
+          meta second
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
