@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
+<div
+  data-css-1s5t7h8=""
+>
+  <div
+    data-css-12p1bh2=""
+  >
+    <div
+      data-css-1oooiac=""
+      data-css-chiflz=""
+      size="smallCaps"
+    >
+      Dog count
+    </div>
+    <div
+      data-css-176w4cm=""
+    >
+      234,345
+    </div>
+    <div
+      data-css-qnx2q6=""
+    >
+      All the doggies
+    </div>
+  </div>
+  <div
+    data-css-12p1bh2=""
+  >
+    <div
+      data-css-1oooiac=""
+      data-css-chiflz=""
+      size="smallCaps"
+    >
+      Cat count
+    </div>
+    <div
+      data-css-176w4cm=""
+    >
+      123
+    </div>
+    <div
+      data-css-qnx2q6=""
+    />
+  </div>
+  <div
+    data-css-12p1bh2=""
+  >
+    <div
+      data-css-1oooiac=""
+      data-css-chiflz=""
+      size="smallCaps"
+    >
+      Rafters on the River
+    </div>
+    <div
+      data-css-176w4cm=""
+    >
+      1,345/23,235
+    </div>
+    <div
+      data-css-qnx2q6=""
+    />
+  </div>
+  <div
+    data-css-12p1bh2=""
+  >
+    <div
+      data-css-1oooiac=""
+      data-css-chiflz=""
+      size="smallCaps"
+    >
+      Flotsam
+    </div>
+    <div
+      data-css-176w4cm=""
+    >
+      About 3
+    </div>
+    <div
+      data-css-qnx2q6=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataWell label/data 1`] = `
+<div
+  data-css-12p1bh2=""
+>
+  <div
+    data-css-1oooiac=""
+    data-css-chiflz=""
+    size="smallCaps"
+  >
+    Dog count
+  </div>
+  <div
+    data-css-176w4cm=""
+  >
+    123
+  </div>
+  <div
+    data-css-qnx2q6=""
+  />
+</div>
+`;
+
+exports[`Storyshots DataWell label/data/subLabel 1`] = `
+<div
+  data-css-12p1bh2=""
+>
+  <div
+    data-css-1oooiac=""
+    data-css-chiflz=""
+    size="smallCaps"
+  >
+    Dog count
+  </div>
+  <div
+    data-css-176w4cm=""
+  >
+    234,345
+  </div>
+  <div
+    data-css-qnx2q6=""
+  >
+    All the doggies
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataWell row 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <div
+    data-css-12p1bh2=""
+  >
+    <div
+      data-css-1oooiac=""
+      data-css-chiflz=""
+      size="smallCaps"
+    >
+      Dog count
+    </div>
+    <div
+      data-css-176w4cm=""
+    >
+      234,345
+    </div>
+    <div
+      data-css-qnx2q6=""
+    >
+      All the doggies
+    </div>
+  </div>
+  <div
+    data-css-12p1bh2=""
+  >
+    <div
+      data-css-1oooiac=""
+      data-css-chiflz=""
+      size="smallCaps"
+    >
+      Cat count
+    </div>
+    <div
+      data-css-176w4cm=""
+    >
+      123
+    </div>
+    <div
+      data-css-qnx2q6=""
+    />
+  </div>
+  <div
+    data-css-12p1bh2=""
+  >
+    <div
+      data-css-1oooiac=""
+      data-css-chiflz=""
+      size="smallCaps"
+    >
+      Rafters on the River
+    </div>
+    <div
+      data-css-176w4cm=""
+    >
+      12/23
+    </div>
+    <div
+      data-css-qnx2q6=""
+    />
+  </div>
+  <div
+    data-css-12p1bh2=""
+  >
+    <div
+      data-css-1oooiac=""
+      data-css-chiflz=""
+      size="smallCaps"
+    >
+      Flotsam
+    </div>
+    <div
+      data-css-176w4cm=""
+    >
+      About 3
+    </div>
+    <div
+      data-css-qnx2q6=""
+    >
+      The icky stuff that is not cats or dogs, floating in the river
+    </div>
+  </div>
+</div>
+`;

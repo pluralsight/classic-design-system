@@ -364,6 +364,9 @@ const SideNav = withHeadings(props => (
       <NavLink href="/components/code" headings={props.headings}>
         Code
       </NavLink>
+      <NavLink href="/components/datawell" headings={props.headings}>
+        Data Well
+      </NavLink>
       <NavLink href="/components/datepicker" headings={props.headings}>
         Date Picker
       </NavLink>

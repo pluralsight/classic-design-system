@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-avatar",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "Design System component for avatar ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -31,8 +31,8 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.9.2",
-    "@pluralsight/ps-design-system-storybook-addon-center": "^2.0.3",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^2.0.3",
+    "@pluralsight/ps-design-system-storybook-addon-center": "^2.0.4",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^2.0.4",
     "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/addons": "^4.0.0",
     "@storybook/react": "^4.0.0",
