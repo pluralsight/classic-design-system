@@ -3,6 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Avatar from '@pluralsight/ps-design-system-avatar/react'
+import Icon from '@pluralsight/ps-design-system-icon/react'
 import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
@@ -16,12 +17,20 @@ const styles = {
       glamor.css(css[`.psds-note.psds-theme--${themeName}`])
     ),
 
+  actionBar: themeName =>
+    glamor.compose(
+      glamor.css(css['.psds-note__action-bar']),
+      glamor.css(css[`.psds-note__action-bar.psds-theme--${themeName}`])
+    ),
+  action: _ => glamor.css(css['.psds-note__action']),
   aside: _ => glamor.css(css['.psds-note__aside']),
   contents: themeName =>
     glamor.compose(
       glamor.css(css['.psds-note__contents']),
       glamor.css(css[`.psds-note__contents.psds-theme--${themeName}`])
     ),
+  footer: _ => glamor.css(css['.psds-note__footer']),
+  header: _ => glamor.css(css['.psds-note__header']),
   heading: _ => glamor.css(css['.psds-note__heading']),
   noteList: _ => glamor.css(css['.psds-note__list']),
   metadata: themeName =>
@@ -35,8 +44,19 @@ const styles = {
 
 export default function Note(props) {
   const themeName = useTheme()
+
+  const hasActions = !!props.actionBar && props.actionBar.length > 0
   const hasAside = !!props.avatar
+  const hasHeading = !!props.heading
   const hasMeta = !!props.metadata && props.metadata.length > 0
+
+  const actionBar = hasActions ? (
+    <ActionBar>
+      {props.actionBar.map((action, key) => {
+        return React.cloneElement(action, { key })
+      })}
+    </ActionBar>
+  ) : null
 
   return (
     <div {...styles.note(themeName, props)} {...filterReactProps(props)}>
@@ -47,33 +67,56 @@ export default function Note(props) {
       )}
 
       <Contents>
-        {props.heading && <Heading>{props.heading}</Heading>}
+        {hasHeading && (
+          <Header>
+            {props.heading && <Heading>{props.heading}</Heading>}
+            {actionBar}
+          </Header>
+        )}
+
         {props.message}
 
-        {hasMeta && (
-          <Metadata>
-            {props.metadata.map((datum, i) => {
-              const hasNext = i < props.metadata.length - 1
+        <Footer>
+          {hasMeta && (
+            <Metadata>
+              {props.metadata.map((datum, i) => {
+                const hasNext = i < props.metadata.length - 1
 
-              return (
-                <React.Fragment key={`datum-${i}`}>
-                  <MetadataDatum>{datum}</MetadataDatum>
-                  {hasNext && <MetadataDot />}
-                </React.Fragment>
-              )
-            })}
-          </Metadata>
-        )}
+                return (
+                  <React.Fragment key={`datum-${i}`}>
+                    <MetadataDatum>{datum}</MetadataDatum>
+                    {hasNext && <MetadataDot />}
+                  </React.Fragment>
+                )
+              })}
+            </Metadata>
+          )}
+          {!hasHeading && actionBar}
+        </Footer>
       </Contents>
     </div>
   )
 }
 
-Note.propTypes = {
-  avatar: elementOfType(Avatar),
-  heading: PropTypes.node,
-  message: PropTypes.node.isRequired,
-  metadata: PropTypes.arrayOf(PropTypes.string)
+function ActionBar(props) {
+  const themeName = useTheme()
+  return <div {...styles.actionBar(themeName)} {...props} />
+}
+
+const Action = React.forwardRef((props, ref) => (
+  <button
+    ref={ref}
+    {...styles.action()}
+    {...filterReactProps(props, { tagName: 'button' })}
+  >
+    {props.icon}
+  </button>
+))
+
+Action.displayName = 'Note.Action'
+Action.propTypes = {
+  icon: elementOfType(Icon).isRequired,
+  title: PropTypes.string.isRequired
 }
 
 function Aside(props) {
@@ -85,6 +128,14 @@ function Contents(props) {
   return <div {...styles.contents(themeName)} {...props} />
 }
 
+function Footer(props) {
+  return <div {...styles.footer()} {...props} />
+}
+
+function Header(props) {
+  return <div {...styles.header()} {...props} />
+}
+
 function Heading(props) {
   return <div {...styles.heading()} {...props} />
 }
@@ -93,7 +144,6 @@ function NoteList(props) {
   return <div {...styles.noteList()} {...filterReactProps(props)} />
 }
 
-Note.List = NoteList
 NoteList.displayName = 'Note.List'
 
 function Metadata(props) {
@@ -111,4 +161,15 @@ function MetadataDot(props) {
       &middot;
     </span>
   )
+}
+
+Note.Action = Action
+Note.List = NoteList
+
+Note.propTypes = {
+  actionBar: PropTypes.arrayOf(PropTypes.node),
+  avatar: elementOfType(Avatar),
+  heading: PropTypes.node,
+  message: PropTypes.node.isRequired,
+  metadata: PropTypes.arrayOf(PropTypes.string)
 }

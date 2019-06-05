@@ -24,6 +24,7 @@
     "@pluralsight/ps-design-system-avatar": "*",
     "@pluralsight/ps-design-system-core": "*",
     "@pluralsight/ps-design-system-filter-react-props": "*",
+    "@pluralsight/ps-design-system-icon": "*",
     "@pluralsight/ps-design-system-prop-types": "*",
     "@pluralsight/ps-design-system-theme": "*"
   },
@@ -34,6 +35,8 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-actionmenu": "*",
+    "@pluralsight/ps-design-system-position": "*",
     "@pluralsight/ps-design-system-storybook-addon-center": "*",
     "@pluralsight/ps-design-system-storybook-addon-theme": "*",
     "@pluralsight/ps-design-system-text": "*",

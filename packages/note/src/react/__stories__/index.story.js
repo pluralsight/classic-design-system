@@ -1,10 +1,19 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
 import Avatar from '@pluralsight/ps-design-system-avatar/react'
+import Icon from '@pluralsight/ps-design-system-icon/react'
+import { Below } from '@pluralsight/ps-design-system-position/react'
 import Text from '@pluralsight/ps-design-system-text/react'
 
 import Note from '../index.js'
+
+const longStringsMetaData = [
+  'It is impossible to count the grand contributions of this great author',
+  'Levels heretofore unknown in the battle for truth and knowledge',
+  'A length of such amazing lengthitude so-as to blow the mind'
+]
 
 const ConstrainWidth = props => <div {...props} style={{ maxWidth: '420px' }} />
 
@@ -51,7 +60,86 @@ storiesOf('Note', module)
       }
     />
   ))
-  .add('in a list', _ => (
+
+storiesOf('Note/metadata', module)
+  .addDecorator(fn => <ConstrainWidth>{fn()}</ConstrainWidth>)
+  .add('with long strings', _ => (
+    <NoteWithDefaults metadata={longStringsMetaData} />
+  ))
+
+storiesOf('Note/actions', module)
+  .addDecorator(fn => <ConstrainWidth>{fn()}</ConstrainWidth>)
+  .add('one action', _ => (
+    <NoteWithDefaults
+      actionBar={[
+        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+      ]}
+    />
+  ))
+  .add('two actions', _ => (
+    <NoteWithDefaults
+      actionBar={[
+        <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
+        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+      ]}
+    />
+  ))
+  .add('with long heading', _ => (
+    <NoteWithDefaults
+      heading="This is probably the greatest thing that's ever happened in my life"
+      actionBar={[
+        <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
+        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+      ]}
+    />
+  ))
+  .add('without author', _ => (
+    <NoteWithDefaults
+      actionBar={[
+        <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
+        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+      ]}
+      avatar={null}
+      heading={null}
+    />
+  ))
+  .add('with an action menu', _ => {
+    const Story = props => {
+      const [isOpen, setIsOpen] = React.useState(false)
+
+      return (
+        <React.Fragment>
+          <NoteWithDefaults
+            actionBar={[
+              <Below
+                when={isOpen}
+                show={
+                  <div style={{ position: 'relative' }}>
+                    <ActionMenu origin={ActionMenu.origins.topRight}>
+                      <ActionMenu.Item>Edit</ActionMenu.Item>
+                      <ActionMenu.Item>Delete</ActionMenu.Item>
+                    </ActionMenu>
+                  </div>
+                }
+              >
+                <Note.Action
+                  icon={<Icon id={Icon.ids.more} />}
+                  onClick={_ => setIsOpen(!isOpen)}
+                  title="More"
+                />
+              </Below>
+            ]}
+          />
+        </React.Fragment>
+      )
+    }
+
+    return <Story />
+  })
+
+storiesOf('Note/in a list', module)
+  .addDecorator(fn => <ConstrainWidth>{fn()}</ConstrainWidth>)
+  .add('basic', _ => (
     <Note.List>
       <NoteWithDefaults />
       <NoteWithDefaults />
