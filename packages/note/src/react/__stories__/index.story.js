@@ -4,6 +4,7 @@ import React from 'react'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
 import Avatar from '@pluralsight/ps-design-system-avatar/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import Link from '@pluralsight/ps-design-system-link/react'
 import { Below } from '@pluralsight/ps-design-system-position/react'
 import Text from '@pluralsight/ps-design-system-text/react'
 
@@ -35,7 +36,31 @@ NoteWithDefaults.defaultProps = {
 storiesOf('Note', module)
   .addDecorator(fn => <ConstrainWidth>{fn()}</ConstrainWidth>)
   .add('basic', _ => <NoteWithDefaults />)
-  .add('without author', _ => <NoteWithDefaults avatar={null} heading={null} />)
+  .add('with linked avatar', _ => (
+    <NoteWithDefaults
+      avatar={
+        <Note.AvatarLink>
+          <a href="#">
+            <Avatar name="Bob Ross" src="//picsum.photos/128" />
+          </a>
+        </Note.AvatarLink>
+      }
+    />
+  ))
+  .add('with linked heading', _ => (
+    <NoteWithDefaults
+      heading={
+        <p>
+          <Link appearance={Link.appearances.subtle}>
+            <a href="#">Bob Ross</a>
+          </Link>
+        </p>
+      }
+    />
+  ))
+  .add('without avatar and author', _ => (
+    <NoteWithDefaults avatar={null} heading={null} />
+  ))
   .add('with DS Text components', _ => (
     <NoteWithDefaults
       heading={
@@ -65,6 +90,18 @@ storiesOf('Note/metadata', module)
   .addDecorator(fn => <ConstrainWidth>{fn()}</ConstrainWidth>)
   .add('with long strings', _ => (
     <NoteWithDefaults metadata={longStringsMetaData} />
+  ))
+  .add('as a link', _ => (
+    <NoteWithDefaults
+      metadata={[
+        <Link>
+          <a href="#">i'm a link</a>
+        </Link>,
+        <Link appearance={Link.appearances.subtle}>
+          <a href="#">i'm a subtle link</a>
+        </Link>
+      ]}
+    />
   ))
 
 storiesOf('Note/actions', module)

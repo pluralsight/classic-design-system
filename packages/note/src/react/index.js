@@ -119,6 +119,27 @@ Action.propTypes = {
   title: PropTypes.string.isRequired
 }
 
+function AvatarLink(props) {
+  const link = props.children
+  const avatar = link.props.children
+
+  return (
+    <React.Fragment>
+      {React.cloneElement(link, {
+        children: React.cloneElement(avatar, { size: Avatar.sizes.xSmall })
+      })}
+    </React.Fragment>
+  )
+}
+AvatarLink.propTypes = {
+  children: PropTypes.shape({
+    type: PropTypes.oneOf(['a']),
+    props: PropTypes.shape({
+      children: elementOfType(Avatar).isRequired
+    }).isRequired
+  }).isRequired
+}
+
 function Aside(props) {
   return <div {...styles.aside()} {...props} />
 }
@@ -164,12 +185,18 @@ function MetadataDot(props) {
 }
 
 Note.Action = Action
+Note.AvatarLink = AvatarLink
 Note.List = NoteList
 
 Note.propTypes = {
   actionBar: PropTypes.arrayOf(PropTypes.node),
-  avatar: elementOfType(Avatar),
-  heading: PropTypes.node,
+  avatar: PropTypes.oneOfType([
+    elementOfType(Avatar),
+    elementOfType(Note.AvatarLink)
+  ]),
+  heading: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   message: PropTypes.node.isRequired,
-  metadata: PropTypes.arrayOf(PropTypes.string)
+  metadata: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.string, PropTypes.node])
+  )
 }
