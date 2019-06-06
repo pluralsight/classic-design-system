@@ -4,6 +4,7 @@ import * as stubs from '../stubs'
 test('should export type checkers', () => {
   expect(checkers).toMatchInlineSnapshot(`
 Object {
+  "arrayOfMaxLength": [Function],
   "elementOfType": [Function],
 }
 `)
