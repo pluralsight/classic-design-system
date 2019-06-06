@@ -5,7 +5,10 @@ import PropTypes from 'prop-types'
 import Avatar from '@pluralsight/ps-design-system-avatar/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import { useTheme } from '@pluralsight/ps-design-system-theme/react'
-import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
+import {
+  arrayOfMaxLength,
+  elementOfType
+} from '@pluralsight/ps-design-system-prop-types'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import css from '../css/index.js'
@@ -189,7 +192,7 @@ Note.AvatarLink = AvatarLink
 Note.List = NoteList
 
 Note.propTypes = {
-  actionBar: PropTypes.arrayOf(PropTypes.node),
+  actionBar: arrayOfMaxLength(2, PropTypes.node),
   avatar: PropTypes.oneOfType([
     elementOfType(Avatar),
     elementOfType(Note.AvatarLink)
