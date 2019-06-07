@@ -15,6 +15,7 @@ const styles = {
   cell: ({ align, emphasis, themeName }) =>
     glamor.css(
       css['.psds-table__cell'],
+      css[`.psds-table__cell.psds-theme--${themeName}`],
       emphasis && css['.psds-table__cell--emphasis'],
       emphasis && css[`.psds-table__cell--emphasis.psds-theme--${themeName}`],
       align && css[`.psds-table__cell--align-${align}`]
