@@ -23,21 +23,24 @@ export const resetButton = {
 }
 
 export default {
+  '.psds-note__list': {
+    listStyle: 'none',
+    marginLeft: 0
+  },
+
   '.psds-note': {
     alignItems: 'flex-start',
-    borderTop: `1px solid ${core.colors.gray03}`,
     display: 'flex',
     fontWeight: core.type.fontWeightMedium,
     lineHeight: core.type.lineHeightStandard,
     padding: `${core.layout.spacingLarge} ${core.layout.spacingMedium}`,
 
-    '&:first-of-type': { borderTop: 'none' }
+    'li &': { borderTop: `1px solid ${core.colors.gray03}` },
+    'li:first-of-type &': { borderTop: 'none' }
   },
   [`.psds-note.psds-theme--${themeNames.light}`]: {
     borderColor: core.colors.gray01
   },
-
-  '.psds-note__list': {},
 
   '.psds-note__action-bar': {
     color: core.colors.gray02,

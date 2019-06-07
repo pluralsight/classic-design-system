@@ -101,6 +101,21 @@ export default function Note(props) {
   )
 }
 
+function NoteList({ children, ...props }) {
+  return (
+    <ol {...styles.noteList()} {...filterReactProps(props)}>
+      {React.Children.map(children, child => (
+        <li>{child}</li>
+      ))}
+    </ol>
+  )
+}
+
+NoteList.displayName = 'Note.List'
+NoteList.propTypes = {
+  children: PropTypes.node
+}
+
 function ActionBar(props) {
   const themeName = useTheme()
   return <div {...styles.actionBar(themeName)} {...props} />
@@ -163,12 +178,6 @@ function Header(props) {
 function Heading(props) {
   return <div {...styles.heading()} {...props} />
 }
-
-function NoteList(props) {
-  return <div {...styles.noteList()} {...filterReactProps(props)} />
-}
-
-NoteList.displayName = 'Note.List'
 
 function Metadata(props) {
   const themeName = useTheme()
