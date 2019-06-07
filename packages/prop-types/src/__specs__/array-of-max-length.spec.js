@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import arrayOfMaxLength from '../array-of-max-length'
 
 describe('arrayOfMaxLength', () => {
@@ -12,6 +14,16 @@ describe('arrayOfMaxLength', () => {
     expect(result).toBeInstanceOf(Error)
     expect(result.message).toMatchInlineSnapshot(
       `"Invalid prop-location \`testProp\` with value \`\\"string - not an array\\"\` supplied to MockComponent, expected an array"`
+    )
+  })
+
+  it("should warn when prop doesn't match taype", () => {
+    const fn = arrayOfMaxLength(2, PropTypes.string)
+    const props = { [PROP_NAME]: [true] }
+    const result = fn(props, PROP_NAME, COMPONENT_NAME, PROP_LOCATION)
+    expect(result).toBeInstanceOf(Error)
+    expect(result.message).toMatchInlineSnapshot(
+      `"Invalid prop: \`prop-location\` supplied to \`testProp[0]\`."`
     )
   })
 

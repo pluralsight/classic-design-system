@@ -23,12 +23,19 @@ export default function arrayOfMaxLength(
     }
 
     for (var i = 0; i < prop.length; i++) {
-      PropTypes.checkPropTypes(
-        { tempKey: typeChecker },
-        { tempKey: prop[i] },
-        location,
-        propFullName + '[' + i + ']'
-      )
+      try {
+        PropTypes.checkPropTypes(
+          { tempKey: typeChecker },
+          { tempKey: prop[i] },
+          location,
+          propFullName + '[' + i + ']'
+        )
+      } catch (err) {
+        // prettier-ignore
+        const msg = `Invalid prop: \`${location}\` supplied to \`${propFullName}[${i}]\`.`
+
+        return new PropTypeError(msg)
+      }
     }
 
     return null
