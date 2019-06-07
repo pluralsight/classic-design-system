@@ -7,6 +7,7 @@ import {
 import Badge from '@pluralsight/ps-design-system-badge/react'
 import Button from '@pluralsight/ps-design-system-button/react'
 import React from 'react'
+import ReactPropTypes from 'prop-types'
 import Text from '@pluralsight/ps-design-system-text/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
@@ -38,6 +39,9 @@ const BlueBox = props => (
     `}</style>
   </div>
 )
+BlueBox.propTypes = {
+  children: ReactPropTypes.any
+}
 
 const PageHeadingLayoutOutput = _ => (
   <div className="page">
@@ -350,7 +354,7 @@ export default withServerProps(_ => (
         props={[
           PropTypes.row([
             'aside',
-            'React.element',
+            <code>AsideLayout.Aside</code>,
             true,
             null,
             <span>Content for aside</span>
@@ -366,7 +370,7 @@ export default withServerProps(_ => (
           ]),
           PropTypes.row([
             'main',
-            'React.element',
+            <code>AsideLayout.Main</code>,
             true,
             null,
             <span>Main content</span>
