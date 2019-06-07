@@ -27,7 +27,9 @@ const styles = {
       active && css['.psds-table__column-header--active'],
       active &&
         css[`.psds-table__column-header--active.psds-theme--${themeName}`],
-      onClick && css['.psds-table__column-header--onclick']
+      onClick && css['.psds-table__column-header--onclick'],
+      onClick &&
+        css[`.psds-table__column-header--onclick.psds-theme--${themeName}`]
     ),
   columnHeaderIcon: _ => glamor.css(css['.psds-table__column-header__icon']),
   row: ({ _tableHasDrawers, themeName }) =>
