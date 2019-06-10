@@ -52,6 +52,15 @@ export default {
       '& > div': {
         height: 'calc(100% + 4px)',
         marginBottom: '-4px'
+      },
+      // __bar
+      '& span': {
+        bottom: '-1px'
+      },
+
+      // __overflow-button
+      '& > button': {
+        height: 'calc(100% + 4px)'
       }
     }
   },
@@ -175,9 +184,7 @@ export default {
     // __span
     '&:active span, &:hover span, &:focus span, & span': listItemBarActiveActive
   },
-  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
-    themeNames.light
-  }`]: {
+  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeNames.light}`]: {
     // __text
     '&:hover div, &:focus div, & div': listItemTextLightActive
   },
@@ -191,8 +198,7 @@ export default {
     position: 'relative',
     display: 'flex',
     alignItems: 'center',
-    height: 'calc(100% + 1px)',
-    marginBottom: '-1px',
+    height: 'calc(100% - 2px)',
     fontWeight: core.type.fontWeightBook,
     padding: `0 0 ${core.layout.spacingXXSmall} 0`,
     transition: `color ${core.motion.speedXFast} linear`,
@@ -217,8 +223,6 @@ export default {
     display: 'block',
     height: 0,
     opacity: 0,
-    transition: `height ${core.motion.speedNormal} ease-in-out, opacity ${
-      core.motion.speedNormal
-    } ease-in-out`
+    transition: `height ${core.motion.speedNormal} ease-in-out, opacity ${core.motion.speedNormal} ease-in-out`
   }
 }

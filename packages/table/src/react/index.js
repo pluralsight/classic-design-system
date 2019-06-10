@@ -15,6 +15,7 @@ const styles = {
   cell: ({ align, emphasis, themeName }) =>
     glamor.css(
       css['.psds-table__cell'],
+      css[`.psds-table__cell.psds-theme--${themeName}`],
       emphasis && css['.psds-table__cell--emphasis'],
       emphasis && css[`.psds-table__cell--emphasis.psds-theme--${themeName}`],
       align && css[`.psds-table__cell--align-${align}`]
@@ -27,7 +28,9 @@ const styles = {
       active && css['.psds-table__column-header--active'],
       active &&
         css[`.psds-table__column-header--active.psds-theme--${themeName}`],
-      onClick && css['.psds-table__column-header--onclick']
+      onClick && css['.psds-table__column-header--onclick'],
+      onClick &&
+        css[`.psds-table__column-header--onclick.psds-theme--${themeName}`]
     ),
   columnHeaderIcon: _ => glamor.css(css['.psds-table__column-header__icon']),
   row: ({ _tableHasDrawers, themeName }) =>
