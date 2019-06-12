@@ -19,7 +19,6 @@ const styles = {
       glamor.css(css['.psds-note']),
       glamor.css(css[`.psds-note.psds-theme--${themeName}`])
     ),
-
   actionBar: themeName =>
     glamor.compose(
       glamor.css(css['.psds-note__action-bar']),
