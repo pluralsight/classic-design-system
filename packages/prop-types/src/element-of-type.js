@@ -14,9 +14,7 @@ export default function elementOfType(ExpectedElementType) {
     const prop = props[propName]
     const hasComponentType = !!prop.type
 
-    const ofExpectedType = hasComponentType && prop.type === ExpectedElementType
-
-    if (prop && !ofExpectedType) {
+    if (prop) {
       const expectedTypeName = getDisplayName(ExpectedElementType)
 
       if (!hasComponentType) {
@@ -26,8 +24,13 @@ export default function elementOfType(ExpectedElementType) {
       }
 
       const receivedTypeName = getDisplayName(prop.type)
-      const msg = `Invalid ${location} \`${propFullName}\` of element type \`${receivedTypeName}\` supplied to ${componentName}, expected element of type \`${expectedTypeName}\``
-      return new PropTypeError(msg)
+      const ofExpectedType = expectedTypeName === receivedTypeName
+
+      if (!ofExpectedType) {
+        // prettier-ignore
+        const msg = `Invalid ${location} \`${propFullName}\` of element type \`${receivedTypeName}\` supplied to ${componentName}, expected element of type \`${expectedTypeName}\``
+        return new PropTypeError(msg)
+      }
     }
 
     return null
