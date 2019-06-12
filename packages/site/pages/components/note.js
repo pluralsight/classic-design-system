@@ -111,12 +111,40 @@ export default withServerProps(_ => (
   message={(
     <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
   )}
+/>
+        `
+        ]}
+      />
+
+      <SectionHeading>Metadata</SectionHeading>
+      <p>
+        Metadata is free-form strings or displayable elements like links. Each
+        bit of metadata is separated by an interpunct.
+      </p>
+
+      <p>
+        Metadata is constrained to a single line, overflowing with an ellipsis
+        indicated. The first datum is given display space precendence.
+      </p>
+
+      <Example.React
+        themeToggle
+        includes={{ Avatar, Note }}
+        codes={[
+          `
+<Note
+  avatar={<Avatar name="Mark Twain" src="//placebear.com/128/128" />}
+  heading="Mark Twain"
+  message={(
+    <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
+  )}
   metadata={['Lorem ipsum dolor sit amet', 'Curabitur dolor sapien']}
 />
         `
         ]}
       />
 
+      <SectionHeading>Hyperlink Support</SectionHeading>
       <P>Avatar, Heading and Metadata can all be expressed at hyperlinks.</P>
       <Example.React
         themeToggle

@@ -69,7 +69,8 @@ export default {
   '.psds-note__contents': {
     flex: 1,
     paddingTop: core.layout.spacingXXSmall,
-    width: '100%',
+    maxWidth: '100%',
+    minWidth: 0,
 
     '& :first-child': { marginTop: 0 },
     '& :last-child': { marginBottom: 0 }
@@ -79,13 +80,6 @@ export default {
   },
   [`.psds-note__contents.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray06
-  },
-
-  '.psds-note__footer': {
-    alignItems: 'center',
-    display: 'flex',
-    marginTop: core.layout.spacingSmall,
-    width: '100%'
   },
 
   '.psds-note__header': {
@@ -99,6 +93,13 @@ export default {
     fontWeight: core.type.fontWeightBold,
     lineHeight: core.type.lineHeightTight,
     marginRight: 'auto'
+  },
+
+  '.psds-note__footer': {
+    alignItems: 'center',
+    display: 'flex',
+    marginTop: core.layout.spacingSmall,
+    maxWidth: '100%'
   },
 
   '.psds-note__metadata': {
@@ -116,10 +117,14 @@ export default {
   },
 
   '.psds-note__metadata-datum': {
-    minWidth: 0,
+    flexShrink: 2,
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap'
+    whiteSpace: 'nowrap',
+
+    '&:nth-of-type(1)': {
+      flexShrink: 1
+    }
   },
 
   '.psds-note__metadata-dot': {
