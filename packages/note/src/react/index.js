@@ -14,7 +14,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import css from '../css/index.js'
 
 const styles = {
-  note: (themeName, props) =>
+  note: themeName =>
     glamor.compose(
       glamor.css(css['.psds-note']),
       glamor.css(css[`.psds-note.psds-theme--${themeName}`])
