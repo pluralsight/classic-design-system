@@ -21,6 +21,7 @@ module.exports = {
     'jest/globals': true
   },
   rules: {
+    'import/extensions': [WARNING, 'always', { ignorePackages: true }],
     'react-hooks/exhaustive-deps': WARNING,
     'react-hooks/rules-of-hooks': ERROR,
     'react/jsx-no-bind': [IGNORE]
