@@ -31,7 +31,7 @@ export default {
   '.psds-note': {
     alignItems: 'flex-start',
     display: 'flex',
-    fontWeight: core.type.fontWeightMedium,
+    fontWeight: core.type.fontWeightBook,
     lineHeight: core.type.lineHeightStandard,
     padding: `${core.layout.spacingLarge} ${core.layout.spacingMedium}`,
 
