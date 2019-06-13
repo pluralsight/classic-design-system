@@ -51,7 +51,8 @@ export default withServerProps(_ => (
                 <code>Note.AvatarLink</code>
               </span>,
               null,
-              null
+              null,
+              `a user's avatar`
             ]),
             PropTypes.row([
               'heading',
@@ -61,9 +62,16 @@ export default withServerProps(_ => (
                 <code>node</code>
               </span>,
               null,
-              null
+              null,
+              'the note heading'
             ]),
-            PropTypes.row(['message', <code>node</code>, true, null]),
+            PropTypes.row([
+              'message',
+              <code>node</code>,
+              true,
+              null,
+              'the main message body'
+            ]),
             PropTypes.row([
               'metadata',
               <span>
@@ -72,24 +80,43 @@ export default withServerProps(_ => (
                 <code>node[]</code>
               </span>,
               null,
-              null
+              null,
+              'a row of metadata'
             ])
           ],
           'Note.Action': [
-            PropTypes.row(['icon', <code>Icon</code>, true, null, '']),
-            PropTypes.row(['title', <code>string</code>, true, null, ''])
+            PropTypes.row([
+              'icon',
+              <code>Icon</code>,
+              true,
+              null,
+              'icon representing action'
+            ]),
+            PropTypes.row([
+              'title',
+              <code>string</code>,
+              true,
+              null,
+              'text representing action'
+            ])
           ],
           'Note.AvatarLink': [
             PropTypes.row([
-              'actionBar',
-              <code>Note.Action[]</code>,
+              'children',
+              <code>a > Avatar</code>,
               true,
               null,
-              ''
+              'hyperlinked avatar'
             ])
           ],
           'Note.List': [
-            PropTypes.row(['children', <code>Note[]</code>, true, null, ''])
+            PropTypes.row([
+              'children',
+              <code>Note[]</code>,
+              true,
+              null,
+              'Notes to be placed in list'
+            ])
           ]
         }}
       />
