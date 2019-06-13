@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types'
 
-import PropTypeError from './prop-type-error'
-import { createChainableTypeChecker, getCircularReplacer } from './utils'
+import PropTypeError from './prop-type-error.js'
+import {
+  createChainableTypeChecker,
+  getCircularReplacer
+} from './utils/index.js'
 
 export default function arrayOfMaxLength(
   maxLength,

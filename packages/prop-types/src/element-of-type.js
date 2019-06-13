@@ -2,12 +2,12 @@
 //       https://github.com/facebook/prop-types/blob/master/factoryWithTypeCheckers.js
 //       https://github.com/wzrdzl/react-element-proptypes
 
-import PropTypeError from './prop-type-error'
+import PropTypeError from './prop-type-error.js'
 import {
   createChainableTypeChecker,
   getDisplayName,
   getCircularReplacer
-} from './utils'
+} from './utils/index.js'
 
 export default function elementOfType(ExpectedElementType) {
   function validate(props, propName, componentName, location, propFullName) {

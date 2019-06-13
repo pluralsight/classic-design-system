@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import arrayOfMaxLength from '../array-of-max-length'
+import arrayOfMaxLength from '../array-of-max-length.js'
 
 describe('arrayOfMaxLength', () => {
   var COMPONENT_NAME = 'MockComponent'
