@@ -101,6 +101,7 @@ export default function Note(props) {
               })}
             </Metadata>
           )}
+
           {!hasHeading && actionBar}
         </Footer>
       </Contents>

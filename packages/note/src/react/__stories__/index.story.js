@@ -140,6 +140,28 @@ storiesOf('Note/actions', module)
       heading={null}
     />
   ))
+  .add('no author - long metadata', _ => (
+    <NoteWithDefaults
+      actionBar={[
+        <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
+        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+      ]}
+      avatar={null}
+      heading={null}
+      metadata={longStringsMetaData}
+    />
+  ))
+  .add('no author - no metadata', _ => (
+    <NoteWithDefaults
+      actionBar={[
+        <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
+        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+      ]}
+      avatar={null}
+      heading={null}
+      metadata={null}
+    />
+  ))
   .add('with an action menu', _ => {
     const Story = props => {
       const [isOpen, setIsOpen] = React.useState(false)

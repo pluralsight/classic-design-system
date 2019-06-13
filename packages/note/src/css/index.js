@@ -45,6 +45,7 @@ export default {
   '.psds-note__action-bar': {
     color: core.colors.gray02,
     display: 'flex',
+    marginLeft: 'auto',
 
     'div + &': { marginLeft: core.layout.spacingMedium }
   },
@@ -127,7 +128,8 @@ export default {
     fontWeight: core.type.fontWeightBook,
     lineHeight: core.type.lineHeightTight,
     marginRight: 'auto',
-    maxWidth: '100%'
+    maxWidth: '100%',
+    minWidth: 0
   },
   [`.psds-note__metadata.psds-theme--${themeNames.light}`]: {
     color: core.colors.black
