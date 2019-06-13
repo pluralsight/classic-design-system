@@ -44,7 +44,7 @@ exports[`Storyshots Note basic 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-8zjckc=""
+          data-css-2geye7=""
         >
           Bob Ross
         </div>
@@ -59,7 +59,7 @@ exports[`Storyshots Note basic 1`] = `
           data-css-1x8bh9i=""
         >
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta first
           </span>
@@ -70,7 +70,7 @@ exports[`Storyshots Note basic 1`] = `
             ·
           </span>
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta second
           </span>
@@ -125,7 +125,7 @@ exports[`Storyshots Note with DS Text components 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-8zjckc=""
+          data-css-2geye7=""
         >
           <h3
             data-css-1fxxvvr=""
@@ -152,7 +152,7 @@ exports[`Storyshots Note with DS Text components 1`] = `
           data-css-1x8bh9i=""
         >
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta first
           </span>
@@ -163,7 +163,7 @@ exports[`Storyshots Note with DS Text components 1`] = `
             ·
           </span>
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta second
           </span>
@@ -222,7 +222,7 @@ exports[`Storyshots Note with linked avatar 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-8zjckc=""
+          data-css-2geye7=""
         >
           Bob Ross
         </div>
@@ -237,7 +237,7 @@ exports[`Storyshots Note with linked avatar 1`] = `
           data-css-1x8bh9i=""
         >
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta first
           </span>
@@ -248,7 +248,7 @@ exports[`Storyshots Note with linked avatar 1`] = `
             ·
           </span>
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta second
           </span>
@@ -303,7 +303,7 @@ exports[`Storyshots Note with linked heading 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-8zjckc=""
+          data-css-2geye7=""
         >
           <p>
             <a
@@ -325,7 +325,7 @@ exports[`Storyshots Note with linked heading 1`] = `
           data-css-1x8bh9i=""
         >
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta first
           </span>
@@ -336,7 +336,7 @@ exports[`Storyshots Note with linked heading 1`] = `
             ·
           </span>
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta second
           </span>
@@ -371,7 +371,7 @@ exports[`Storyshots Note without avatar and author 1`] = `
           data-css-1x8bh9i=""
         >
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta first
           </span>
@@ -382,7 +382,7 @@ exports[`Storyshots Note without avatar and author 1`] = `
             ·
           </span>
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta second
           </span>
@@ -437,7 +437,7 @@ exports[`Storyshots Note/actions one action 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-8zjckc=""
+          data-css-2geye7=""
         >
           Bob Ross
         </div>
@@ -481,7 +481,7 @@ exports[`Storyshots Note/actions one action 1`] = `
           data-css-1x8bh9i=""
         >
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta first
           </span>
@@ -492,7 +492,7 @@ exports[`Storyshots Note/actions one action 1`] = `
             ·
           </span>
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta second
           </span>
@@ -547,7 +547,7 @@ exports[`Storyshots Note/actions two actions 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-8zjckc=""
+          data-css-2geye7=""
         >
           Bob Ross
         </div>
@@ -616,7 +616,7 @@ exports[`Storyshots Note/actions two actions 1`] = `
           data-css-1x8bh9i=""
         >
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta first
           </span>
@@ -627,7 +627,7 @@ exports[`Storyshots Note/actions two actions 1`] = `
             ·
           </span>
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta second
           </span>
@@ -682,7 +682,7 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-8zjckc=""
+          data-css-2geye7=""
         >
           Bob Ross
         </div>
@@ -727,7 +727,7 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
           data-css-1x8bh9i=""
         >
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta first
           </span>
@@ -738,7 +738,7 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
             ·
           </span>
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta second
           </span>
@@ -793,7 +793,7 @@ exports[`Storyshots Note/actions with long heading 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-8zjckc=""
+          data-css-2geye7=""
         >
           This is probably the greatest thing that's ever happened in my life
         </div>
@@ -862,7 +862,7 @@ exports[`Storyshots Note/actions with long heading 1`] = `
           data-css-1x8bh9i=""
         >
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta first
           </span>
@@ -873,7 +873,7 @@ exports[`Storyshots Note/actions with long heading 1`] = `
             ·
           </span>
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta second
           </span>
@@ -908,7 +908,7 @@ exports[`Storyshots Note/actions without author 1`] = `
           data-css-1x8bh9i=""
         >
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta first
           </span>
@@ -919,7 +919,7 @@ exports[`Storyshots Note/actions without author 1`] = `
             ·
           </span>
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             meta second
           </span>
@@ -1032,7 +1032,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
             data-css-1wkpnw7=""
           >
             <div
-              data-css-8zjckc=""
+              data-css-2geye7=""
             >
               Bob Ross
             </div>
@@ -1047,7 +1047,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
               data-css-1x8bh9i=""
             >
               <span
-                data-css-15jiixh=""
+                data-css-uiygjz=""
               >
                 meta first
               </span>
@@ -1058,7 +1058,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
                 ·
               </span>
               <span
-                data-css-15jiixh=""
+                data-css-uiygjz=""
               >
                 meta second
               </span>
@@ -1104,7 +1104,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
             data-css-1wkpnw7=""
           >
             <div
-              data-css-8zjckc=""
+              data-css-2geye7=""
             >
               Bob Ross
             </div>
@@ -1119,7 +1119,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
               data-css-1x8bh9i=""
             >
               <span
-                data-css-15jiixh=""
+                data-css-uiygjz=""
               >
                 meta first
               </span>
@@ -1130,7 +1130,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
                 ·
               </span>
               <span
-                data-css-15jiixh=""
+                data-css-uiygjz=""
               >
                 meta second
               </span>
@@ -1176,7 +1176,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
             data-css-1wkpnw7=""
           >
             <div
-              data-css-8zjckc=""
+              data-css-2geye7=""
             >
               Bob Ross
             </div>
@@ -1191,7 +1191,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
               data-css-1x8bh9i=""
             >
               <span
-                data-css-15jiixh=""
+                data-css-uiygjz=""
               >
                 meta first
               </span>
@@ -1202,7 +1202,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
                 ·
               </span>
               <span
-                data-css-15jiixh=""
+                data-css-uiygjz=""
               >
                 meta second
               </span>
@@ -1259,7 +1259,7 @@ exports[`Storyshots Note/metadata as a link 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-8zjckc=""
+          data-css-2geye7=""
         >
           Bob Ross
         </div>
@@ -1274,7 +1274,7 @@ exports[`Storyshots Note/metadata as a link 1`] = `
           data-css-1x8bh9i=""
         >
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             <a
               data-css-1skajya=""
@@ -1290,7 +1290,7 @@ exports[`Storyshots Note/metadata as a link 1`] = `
             ·
           </span>
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             <a
               data-css-1vzf57m=""
@@ -1350,7 +1350,7 @@ exports[`Storyshots Note/metadata with long strings 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-8zjckc=""
+          data-css-2geye7=""
         >
           Bob Ross
         </div>
@@ -1365,7 +1365,7 @@ exports[`Storyshots Note/metadata with long strings 1`] = `
           data-css-1x8bh9i=""
         >
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             It is impossible to count the grand contributions of this great author
           </span>
@@ -1376,7 +1376,7 @@ exports[`Storyshots Note/metadata with long strings 1`] = `
             ·
           </span>
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             Levels heretofore unknown in the battle for truth and knowledge
           </span>
@@ -1387,7 +1387,7 @@ exports[`Storyshots Note/metadata with long strings 1`] = `
             ·
           </span>
           <span
-            data-css-15jiixh=""
+            data-css-uiygjz=""
           >
             A length of such amazing lengthitude so-as to blow the mind
           </span>

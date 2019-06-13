@@ -33,14 +33,22 @@ const styles = {
     ),
   footer: _ => glamor.css(css['.psds-note__footer']),
   header: _ => glamor.css(css['.psds-note__header']),
-  heading: _ => glamor.css(css['.psds-note__heading']),
+  heading: themeName =>
+    glamor.compose(
+      glamor.css(css['.psds-note__heading']),
+      glamor.css(css[`.psds-note__heading.psds-theme--${themeName}`])
+    ),
   noteList: _ => glamor.css(css['.psds-note__list']),
   metadata: themeName =>
     glamor.compose(
       glamor.css(css['.psds-note__metadata']),
       glamor.css(css[`.psds-note__metadata.psds-theme--${themeName}`])
     ),
-  metadataDatum: _ => glamor.css(css['.psds-note__metadata-datum']),
+  metadataDatum: themeName =>
+    glamor.compose(
+      glamor.css(css['.psds-note__metadata-datum']),
+      glamor.css(css[`.psds-note__metadata-datum.psds-theme--${themeName}`])
+    ),
   metadataDot: _ => glamor.css(css['.psds-note__metadata-dot'])
 }
 
@@ -175,7 +183,8 @@ function Header(props) {
 }
 
 function Heading(props) {
-  return <div {...styles.heading()} {...props} />
+  const themeName = useTheme()
+  return <div {...styles.heading(themeName)} {...props} />
 }
 
 function Metadata(props) {
@@ -184,7 +193,8 @@ function Metadata(props) {
 }
 
 function MetadataDatum(props) {
-  return <span {...styles.metadataDatum()} {...props} />
+  const themeName = useTheme()
+  return <span {...styles.metadataDatum(themeName)} {...props} />
 }
 
 function MetadataDot(props) {

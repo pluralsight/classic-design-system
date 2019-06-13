@@ -92,7 +92,24 @@ export default {
     fontSize: core.type.fontSizeSmall,
     fontWeight: core.type.fontWeightBold,
     lineHeight: core.type.lineHeightTight,
-    marginRight: 'auto'
+    marginRight: 'auto',
+
+    '& a': {
+      color: 'inherit',
+      cursor: 'pointer',
+      textDecoration: 'none',
+
+      '&:hover, &:active': {
+        textDecoration: 'underline',
+        transition: `all ${core.motion.speedNormal}`
+      }
+    }
+  },
+  [`.psds-note__heading.psds-theme--${themeNames.dark}`]: {
+    '& a:hover, & a:active': { color: core.colors.white }
+  },
+  [`.psds-note__heading.psds-theme--${themeNames.light}`]: {
+    '& a:hover, & a:active': { color: core.colors.gray03 }
   },
 
   '.psds-note__footer': {
@@ -124,7 +141,24 @@ export default {
 
     '&:nth-of-type(1)': {
       flexShrink: 1
+    },
+
+    '& a': {
+      color: 'inherit',
+      cursor: 'pointer',
+      textDecoration: 'none',
+
+      '&:hover, &:active': {
+        textDecoration: 'underline',
+        transition: `all ${core.motion.speedNormal}`
+      }
     }
+  },
+  [`.psds-note__metadata-datum.psds-theme--${themeNames.dark}`]: {
+    '& a:hover, & a:active': { color: core.colors.white }
+  },
+  [`.psds-note__metadata-datum.psds-theme--${themeNames.light}`]: {
+    '& a:hover, & a:active': { color: core.colors.gray03 }
   },
 
   '.psds-note__metadata-dot': {
