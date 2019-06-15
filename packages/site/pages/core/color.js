@@ -162,7 +162,7 @@ const Swatch = props => (
         flex-direction: column;
         justify-content: center;
         height: 120px;
-        width: 150px;
+        width: calc(25% - ${core.layout.spacingLarge});
         padding: ${core.layout.spacingSmall};
         margin: calc(${core.layout.spacingLarge} / 2);
       }
@@ -227,8 +227,8 @@ export default withServerProps(_ => (
         <Palette>
           <DarkSwatch hex={core.colors.pink} var="Pink" />
           <DarkSwatch hex={core.colors.red} var="Red" />
-          <DarkSwatch hex={core.colors.orange} var="Orange" />
-          <DarkSwatch hex={core.colors.orangeLight} var="OrangeLight" />
+          <DarkSwatch hex={core.colors.interactive.default} var="InteractiveDefault" />
+          <DarkSwatch hex={core.colors.interactive.hover} var="InteractiveHover" />
           <DarkSwatch hex={core.colors.yellow} var="Yellow" />
           <DarkSwatch hex={core.colors.greenLight} var="GreenLight" />
           <DarkSwatch hex={core.colors.green} var="Green" />
@@ -238,7 +238,7 @@ export default withServerProps(_ => (
         <br />
         <Code language="css">{`@import "@pluralsight/ps-design-system-core";
 .mySelector {
-  color: var(--psColorsOrange);
+  color: var(--psInteractiveDefault);
 }`}</Code>
       </div>
 
