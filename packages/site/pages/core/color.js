@@ -152,7 +152,7 @@ const VertGradient = props => (
 const Swatch = props => (
   <div
     className={`swatch ${props.light ? 'swatchLight' : 'swatchDark'}`}
-    style={{ backgroundColor: '#' + props.hex }}
+    style={{ backgroundColor: props.hex }}
   >
     <div className="hex">{props.hex}</div>
     <div className="var">psColors{props.var}</div>
@@ -201,15 +201,15 @@ export default withServerProps(_ => (
       <P>Grayscale colors are used for containers, text, lines and borders.</P>
       <div>
         <Palette>
-          <LightSwatch hex="FFFFFF" var="White" />
-          <LightSwatch hex="F2F2F2" var="Bone" />
-          <DarkSwatch hex="CCCCCC" var="Gray01" />
-          <DarkSwatch hex="AAAAAA" var="Gray02" />
-          <DarkSwatch hex="555555" var="Gray03" />
-          <DarkSwatch hex="363636" var="Gray04" />
-          <DarkSwatch hex="222222" var="Gray05" />
-          <DarkSwatch hex="181818" var="Gray06" />
-          <DarkSwatch hex="000000" var="Black" />
+          <LightSwatch hex={core.colors.white} var="White" />
+          <LightSwatch hex={core.colors.bone} var="Bone" />
+          <DarkSwatch hex={core.colors.gray01} var="Gray01" />
+          <DarkSwatch hex={core.colors.gray02} var="Gray02" />
+          <DarkSwatch hex={core.colors.gray03} var="Gray03" />
+          <DarkSwatch hex={core.colors.gray04} var="Gray04" />
+          <DarkSwatch hex={core.colors.gray05} var="Gray05" />
+          <DarkSwatch hex={core.colors.gray06} var="Gray06" />
+          <DarkSwatch hex={core.colors.black} var="Black" />
         </Palette>
         <br />
         <Code language="css">{`@import "@pluralsight/ps-design-system-core";
@@ -225,14 +225,14 @@ export default withServerProps(_ => (
       </P>
       <div>
         <Palette>
-          <DarkSwatch hex="E80A89" var="Pink" />
-          <DarkSwatch hex="DE3636" var="Red" />
-          <DarkSwatch hex="F96816" var="Orange" />
-          <DarkSwatch hex="FF7B39" var="OrangeLight" />
-          <DarkSwatch hex="FFC200" var="Yellow" />
-          <DarkSwatch hex="86CE21" var="GreenLight" />
-          <DarkSwatch hex="23AA5A" var="Green" />
-          <DarkSwatch hex="137BC2" var="Blue" />
+          <DarkSwatch hex={core.colors.pink} var="Pink" />
+          <DarkSwatch hex={core.colors.red} var="Red" />
+          <DarkSwatch hex={core.colors.orange} var="Orange" />
+          <DarkSwatch hex={core.colors.orangeLight} var="OrangeLight" />
+          <DarkSwatch hex={core.colors.yellow} var="Yellow" />
+          <DarkSwatch hex={core.colors.greenLight} var="GreenLight" />
+          <DarkSwatch hex={core.colors.green} var="Green" />
+          <DarkSwatch hex={core.colors.blue} var="Blue" />
         </Palette>
 
         <br />
@@ -251,19 +251,19 @@ export default withServerProps(_ => (
         <Palette>
           <Gradient var={core.colors.gradientHorz}>
             <div>
-              <GradientStop>F05A28</GradientStop>
+              <GradientStop>#F05A28</GradientStop>
               <GradientVar>psColorsGradientHorz</GradientVar>
             </div>
             <div className="gradientHorzStop2">
-              <GradientStop>E80A89</GradientStop>
+              <GradientStop>#E80A89</GradientStop>
             </div>
           </Gradient>
           <Gradient var={core.colors.gradientVert}>
             <div className="gradientVert">
-              <GradientStop>F05A28</GradientStop>
+              <GradientStop>#F05A28</GradientStop>
               <GradientVar>psColorsGradientVert</GradientVar>
               <div className="gradientVertStop2">
-                <GradientStop>E80A89</GradientStop>
+                <GradientStop>#E80A89</GradientStop>
               </div>
             </div>
           </Gradient>

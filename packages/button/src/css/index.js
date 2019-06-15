@@ -24,15 +24,15 @@ export default {
     fontSize: core.type.fontSizeSmall,
     fontWeight: core.type.fontWeightMedium,
     textAlign: 'center',
-    color: core.colors.white,
-    background: core.colors.orange,
+    color: core.colors.text.onInteractive,
+    background: core.colors.interactive.default,
     whiteSpace: 'nowrap',
     textDecoration: 'none',
     transition: `all ${core.motion.speedNormal}`,
     verticalAlign: 'middle'
   },
   '.psds-button:hover': {
-    background: core.colors.orangeLight,
+    background: core.colors.interactive.hover,
     cursor: 'pointer'
   },
   '.psds-button:focus': {
@@ -84,15 +84,11 @@ export default {
     color: core.colors.white,
     background: transparentize(0.65, core.colors.gray02)
   },
-  [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${
-    themeNames.light
-  }`]: {
+  [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03,
     background: transparentize(0.65, core.colors.gray01)
   },
-  [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${
-    themeNames.light
-  }:hover`]: {
+  [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeNames.light}:hover`]: {
     color: core.colors.gray06,
     background: transparentize(0.35, core.colors.gray01)
   },
@@ -110,50 +106,36 @@ export default {
     border: 'none',
     background: 'none'
   },
-  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${
-    themeNames.light
-  }`]: {
+  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03
   },
-  [`.psds-button--appearance-${
-    vars.appearances.flat
-  }.psds-theme--${themeDefaultName}`]: {
+  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeDefaultName}`]: {
     color: core.colors.gray02
   },
-  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${
-    themeNames.light
-  }:hover`]: {
+  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeNames.light}:hover`]: {
     background: transparentize(0.85, core.colors.gray03)
   },
-  [`.psds-button--appearance-${
-    vars.appearances.flat
-  }.psds-theme--${themeDefaultName}:hover`]: {
+  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeDefaultName}:hover`]: {
     color: core.colors.white,
     background: transparentize(0.85, core.colors.white)
   },
   // --disabled
   [`.psds-button--disabled`]: {
-    color: core.colors.gray02,
-    background: core.colors.gray03,
+    color: core.colors.text.onDisabled,
+    background: core.colors.interactive.disabled,
     cursor: 'default'
   },
   [`.psds-button--disabled.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03,
     background: core.colors.gray01
   },
-  [`.psds-button--disabled.psds-button--appearance-${
-    vars.appearances.primary
-  }`]: {
+  [`.psds-button--disabled.psds-button--appearance-${vars.appearances.primary}`]: {
     opacity: 0.5
   },
-  [`.psds-button--disabled.psds-button--appearance-${
-    vars.appearances.secondary
-  }`]: {
+  [`.psds-button--disabled.psds-button--appearance-${vars.appearances.secondary}`]: {
     opacity: 0.5
   },
-  [`.psds-button--disabled.psds-button--appearance-${
-    vars.appearances.stroke
-  }`]: {
+  [`.psds-button--disabled.psds-button--appearance-${vars.appearances.stroke}`]: {
     border: 'none',
     opacity: 0.5
   },
@@ -165,24 +147,16 @@ export default {
   [`.psds-button--iconAlign-${vars.iconAligns.right}`]: {
     flexDirection: 'row-reverse'
   },
-  [`.psds-button--iconAlign-${
-    vars.iconAligns.right
-  }.psds-button--not-iconOnly`]: {
+  [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly`]: {
     paddingRight: core.layout.spacingXSmall
   },
-  [`.psds-button--iconAlign-${
-    vars.iconAligns.left
-  }.psds-button--not-iconOnly`]: {
+  [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly`]: {
     paddingLeft: core.layout.spacingXSmall
   },
-  [`.psds-button--iconAlign-${
-    vars.iconAligns.right
-  }.psds-button--not-iconOnly.psds-button--size-${vars.sizes.large}`]: {
+  [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.large}`]: {
     paddingRight: core.layout.spacingSmall
   },
-  [`.psds-button--iconAlign-${
-    vars.iconAligns.left
-  }.psds-button--not-iconOnly.psds-button--size-${vars.sizes.large}`]: {
+  [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.large}`]: {
     paddingLeft: core.layout.spacingSmall
   },
   [`.psds-button--iconOnly`]: {
@@ -238,9 +212,7 @@ export default {
     borderColor: transparentize(0.8, core.colors.gray01),
     borderTopColor: core.colors.gray01
   },
-  [`.psds-button__loading--appearance-${
-    vars.appearances.secondary
-  }.psds-button__loading--theme-${themeNames.light}`]: {
+  [`.psds-button__loading--appearance-${vars.appearances.secondary}.psds-button__loading--theme-${themeNames.light}`]: {
     borderColor: transparentize(0.8, core.colors.gray04),
     borderTopColor: core.colors.gray04
   },
@@ -248,15 +220,11 @@ export default {
     borderColor: transparentize(0.8, core.colors.white),
     borderTopColor: core.colors.orange
   },
-  [`.psds-button__loading--appearance-${
-    vars.appearances.flat
-  }.psds-button__loading--theme-${themeNames.light}`]: {
+  [`.psds-button__loading--appearance-${vars.appearances.flat}.psds-button__loading--theme-${themeNames.light}`]: {
     borderColor: transparentize(0.8, core.colors.gray04),
     borderTopColor: core.colors.gray04
   },
-  [`.psds-button__loading--appearance-${
-    vars.appearances.flat
-  }.psds-button__loading--theme-${themeDefaultName}`]: {
+  [`.psds-button__loading--appearance-${vars.appearances.flat}.psds-button__loading--theme-${themeDefaultName}`]: {
     borderColor: transparentize(0.8, core.colors.white),
     borderTopColor: core.colors.white
   },
