@@ -227,8 +227,14 @@ export default withServerProps(_ => (
         <Palette>
           <DarkSwatch hex={core.colors.pink} var="Pink" />
           <DarkSwatch hex={core.colors.red} var="Red" />
-          <DarkSwatch hex={core.colors.interactive.default} var="InteractiveDefault" />
-          <DarkSwatch hex={core.colors.interactive.hover} var="InteractiveHover" />
+          <DarkSwatch
+            hex={core.colors.interactive.default}
+            var="InteractiveDefault"
+          />
+          <DarkSwatch
+            hex={core.colors.interactive.hover}
+            var="InteractiveHover"
+          />
           <DarkSwatch hex={core.colors.yellow} var="Yellow" />
           <DarkSwatch hex={core.colors.greenLight} var="GreenLight" />
           <DarkSwatch hex={core.colors.green} var="Green" />
