@@ -244,7 +244,7 @@ export default withServerProps(_ => (
         <br />
         <Code language="css">{`@import "@pluralsight/ps-design-system-core";
 .mySelector {
-  color: var(--psInteractiveDefault);
+  color: var(--psColorsInteractiveDefault);
 }`}</Code>
       </div>
 

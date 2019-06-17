@@ -1,7 +1,7 @@
 const core = {
   // abstract token names
   color: {
-    white: '#ffffff',
+    white: '#FFFFFF',
     black: '#000000',
     // the numbers below represents the 'L' in the color's HSL value
     neutral: {
@@ -50,7 +50,7 @@ const core = {
 module.exports = {
   // specific token names mapped to abstracts above
   text: {
-    onInteractve: core.color.white,
+    onInteractive: core.color.white,
     onDisabled: core.color.neutral[68]
   },
 

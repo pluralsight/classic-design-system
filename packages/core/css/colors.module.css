@@ -1,11 +1,11 @@
 :root {
   /* specific token names mapped to abstracts */
-  --psTextOnInteractive: #000000;
-  --psTextOnDisabled: #aaaaaa;
+  --psColorsTextOnInteractive: #000000;
+  --psColorsTextOnDisabled: #aaaaaa;
 
-  --psInteractiveDefault: #f96816;
-  --psInteractiveHover: #ff7b39;
-  --psInteractiveDisabled: #555555;
+  --psColorsInteractiveDefault: #f96816;
+  --psColorsInteractiveHover: #ff7b39;
+  --psColorsInteractiveDisabled: #555555;
 
   /* ui colors */
   --psColorsWhite: #ffffff;
