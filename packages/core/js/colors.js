@@ -48,7 +48,8 @@ const core = {
 }
 
 module.exports = {
-  // specific token names mapped to abstracts above
+  // meaningful design token names to bridge the gap between naming and use.
+  // specific token names mapped to abstracts above.
   text: {
     onInteractive: core.color.white,
     onDisabled: core.color.neutral[68]
