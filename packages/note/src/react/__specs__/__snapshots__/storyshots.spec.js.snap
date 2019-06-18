@@ -9,7 +9,7 @@ exports[`Storyshots Note basic 1`] = `
   }
 >
   <div
-    data-css-13k5my=""
+    data-css-ae1vww=""
   >
     <div
       data-css-1kfsc44=""
@@ -90,7 +90,7 @@ exports[`Storyshots Note with DS Text components 1`] = `
   }
 >
   <div
-    data-css-13k5my=""
+    data-css-ae1vww=""
   >
     <div
       data-css-1kfsc44=""
@@ -183,7 +183,7 @@ exports[`Storyshots Note with linked avatar 1`] = `
   }
 >
   <div
-    data-css-13k5my=""
+    data-css-ae1vww=""
   >
     <div
       data-css-1kfsc44=""
@@ -268,7 +268,7 @@ exports[`Storyshots Note with linked heading 1`] = `
   }
 >
   <div
-    data-css-13k5my=""
+    data-css-ae1vww=""
   >
     <div
       data-css-1kfsc44=""
@@ -356,7 +356,7 @@ exports[`Storyshots Note without avatar and author 1`] = `
   }
 >
   <div
-    data-css-13k5my=""
+    data-css-ae1vww=""
   >
     <div
       data-css-1e0ri2d=""
@@ -402,7 +402,7 @@ exports[`Storyshots Note/actions no author - long metadata 1`] = `
   }
 >
   <div
-    data-css-13k5my=""
+    data-css-ae1vww=""
   >
     <div
       data-css-1e0ri2d=""
@@ -513,7 +513,7 @@ exports[`Storyshots Note/actions no author - no metadata 1`] = `
   }
 >
   <div
-    data-css-13k5my=""
+    data-css-ae1vww=""
   >
     <div
       data-css-1e0ri2d=""
@@ -593,7 +593,7 @@ exports[`Storyshots Note/actions one action 1`] = `
   }
 >
   <div
-    data-css-13k5my=""
+    data-css-ae1vww=""
   >
     <div
       data-css-1kfsc44=""
@@ -703,7 +703,7 @@ exports[`Storyshots Note/actions two actions 1`] = `
   }
 >
   <div
-    data-css-13k5my=""
+    data-css-ae1vww=""
   >
     <div
       data-css-1kfsc44=""
@@ -838,7 +838,7 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
   }
 >
   <div
-    data-css-13k5my=""
+    data-css-ae1vww=""
   >
     <div
       data-css-1kfsc44=""
@@ -949,7 +949,7 @@ exports[`Storyshots Note/actions with long heading 1`] = `
   }
 >
   <div
-    data-css-13k5my=""
+    data-css-ae1vww=""
   >
     <div
       data-css-1kfsc44=""
@@ -1084,7 +1084,7 @@ exports[`Storyshots Note/actions without author 1`] = `
   }
 >
   <div
-    data-css-13k5my=""
+    data-css-ae1vww=""
   >
     <div
       data-css-1e0ri2d=""
@@ -1186,9 +1186,11 @@ exports[`Storyshots Note/in a list basic 1`] = `
   <ol
     data-css-17bsnt1=""
   >
-    <li>
+    <li
+      data-css-qrekpk=""
+    >
       <div
-        data-css-13k5my=""
+        data-css-ae1vww=""
       >
         <div
           data-css-1kfsc44=""
@@ -1258,9 +1260,11 @@ exports[`Storyshots Note/in a list basic 1`] = `
         </div>
       </div>
     </li>
-    <li>
+    <li
+      data-css-qrekpk=""
+    >
       <div
-        data-css-13k5my=""
+        data-css-ae1vww=""
       >
         <div
           data-css-1kfsc44=""
@@ -1330,9 +1334,11 @@ exports[`Storyshots Note/in a list basic 1`] = `
         </div>
       </div>
     </li>
-    <li>
+    <li
+      data-css-qrekpk=""
+    >
       <div
-        data-css-13k5my=""
+        data-css-ae1vww=""
       >
         <div
           data-css-1kfsc44=""
@@ -1415,7 +1421,7 @@ exports[`Storyshots Note/metadata as a link 1`] = `
   }
 >
   <div
-    data-css-13k5my=""
+    data-css-ae1vww=""
   >
     <div
       data-css-1kfsc44=""
@@ -1506,7 +1512,7 @@ exports[`Storyshots Note/metadata with long strings 1`] = `
   }
 >
   <div
-    data-css-13k5my=""
+    data-css-ae1vww=""
   >
     <div
       data-css-1kfsc44=""

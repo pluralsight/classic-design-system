@@ -27,16 +27,18 @@ export default {
     listStyle: 'none',
     marginLeft: 0
   },
+  '.psds-note__list-item': {
+    borderTop: `1px solid ${core.colors.gray03}`,
+
+    '&:first-of-type': { borderTop: 'none' }
+  },
 
   '.psds-note': {
     alignItems: 'flex-start',
     display: 'flex',
     fontWeight: core.type.fontWeightBook,
     lineHeight: core.type.lineHeightStandard,
-    padding: `${core.layout.spacingLarge} ${core.layout.spacingMedium}`,
-
-    'li &': { borderTop: `1px solid ${core.colors.gray03}` },
-    'li:first-of-type &': { borderTop: 'none' }
+    padding: `${core.layout.spacingLarge} ${core.layout.spacingMedium}`
   },
   [`.psds-note.psds-theme--${themeNames.light}`]: {
     borderColor: core.colors.gray01
