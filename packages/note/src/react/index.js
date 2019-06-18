@@ -2,9 +2,9 @@ import * as glamor from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Avatar from '@pluralsight/ps-design-system-avatar/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+import Avatar from '@pluralsight/ps-design-system-avatar/react.js'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
 import {
   arrayOfMaxLength,
   elementOfType
@@ -19,10 +19,13 @@ const styles = {
       glamor.css(css['.psds-note']),
       glamor.css(css[`.psds-note.psds-theme--${themeName}`])
     ),
-  actionBar: themeName =>
+  actionBar: (themeName, props) =>
     glamor.compose(
       glamor.css(css['.psds-note__action-bar']),
-      glamor.css(css[`.psds-note__action-bar.psds-theme--${themeName}`])
+      glamor.css(css[`.psds-note__action-bar.psds-theme--${themeName}`]),
+      props.hasMetadata &&
+        !props.hasHeading &&
+        glamor.css(css['.psds-note__action-bar--meta-sibling'])
     ),
   action: _ => glamor.css(css['.psds-note__action']),
   aside: _ => glamor.css(css['.psds-note__aside']),
@@ -59,10 +62,10 @@ export default function Note(props) {
   const hasActions = !!props.actionBar && props.actionBar.length > 0
   const hasAside = !!props.avatar
   const hasHeading = !!props.heading
-  const hasMeta = !!props.metadata && props.metadata.length > 0
+  const hasMetadata = !!props.metadata && props.metadata.length > 0
 
   const actionBar = hasActions ? (
-    <ActionBar>
+    <ActionBar hasHeading={hasHeading} hasMetadata={hasMetadata}>
       {props.actionBar.map((action, key) => {
         return React.cloneElement(action, { key })
       })}
@@ -88,7 +91,7 @@ export default function Note(props) {
         {props.message}
 
         <Footer>
-          {hasMeta && (
+          {hasMetadata && (
             <Metadata>
               {props.metadata.map((datum, i) => {
                 const hasNext = i < props.metadata.length - 1
@@ -127,7 +130,10 @@ NoteList.propTypes = {
 
 function ActionBar(props) {
   const themeName = useTheme()
-  return <div {...styles.actionBar(themeName)} {...props} />
+  return <div {...styles.actionBar(themeName, props)}>{props.children}</div>
+}
+ActionBar.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
 }
 
 const Action = React.forwardRef((props, ref) => (

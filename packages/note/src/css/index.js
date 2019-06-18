@@ -1,5 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars.js'
 
 export const resetButton = {
   background: 'transparent',
@@ -47,12 +47,13 @@ export default {
   '.psds-note__action-bar': {
     color: core.colors.gray02,
     display: 'flex',
-    marginLeft: 'auto',
-
-    'div + &': { marginLeft: core.layout.spacingMedium }
+    marginLeft: 'auto'
   },
   [`.psds-note__action-bar.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03
+  },
+  '.psds-note__action-bar--meta-sibling': {
+    marginLeft: core.layout.spacingMedium
   },
 
   '.psds-note__action': {
