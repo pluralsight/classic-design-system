@@ -133,55 +133,60 @@ export default withServerProps(_ => (
         A user generated list is a common container layout that one might
         encounter in the product.{' '}
       </P>
+      <P>Use a List to display a group of related Notes.</P>
       <Example.React
         themeToggle
-        includes={{ Avatar, Note }}
+        themeName="light"
+        includes={{ Avatar, Note, Icon }}
         codes={[
           `
-<Note
-  avatar={<Avatar name="Mark Twain" src="//placebear.com/128/128" />}
-  heading="Mark Twain"
-  message={(
-    <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
-  )}
-/>
+  <Note.List>
+    <Note
+      actionBar={[
+        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+      ]}
+      avatar={<Avatar name="Mark Twain" src="//placebear.com/128/128" />}
+      heading="Mark Twain"
+      message={(
+        <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
+        )}
+      metadata={['June 18, 2019', '10:30am']}   
+    />
+
+    <Note
+      actionBar={[
+        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+      ]}
+      avatar={<Avatar name="Samuel Lanhorne Clemens" src="//placebear.com/128/128" />}
+      heading="Samuel Lanhorne Clemens"
+      message={(
+        <p>There are those who imagine that the unlucky accidents of life—life's 'experiences'—are in some way useful to us. I wish I could find out how. I never know one of them to happen twice. They always change off and swap around and catch you on your inexperienced side.</p>
+      )}
+      metadata={['June 18, 2019', '10:30am']}
+    />
+
+    <Note
+    actionBar={[
+      <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+    ]}
+      avatar={<Avatar name="Mark Twain" src="//placebear.com/128/128" />}
+      heading="Mark Twain"
+      message={(
+        <p>Clothes make the man. Naked people have little or no influence on society.</p>
+      )}
+      metadata={['June 18, 2019', '10:30am']}
+    />
+  </Note.List>
         `
         ]}
       />
 
-      <SectionHeading>Metadata</SectionHeading>
-      <p>
-        Metadata is free-form strings or displayable elements like links. Each
-        bit of metadata is separated by an interpunct.
-      </p>
-
-      <p>
-        Metadata is constrained to a single line, overflowing with an ellipsis
-        indicated. The first datum is given display space precendence.
-      </p>
-
+      <SectionHeading>Title and Avatar</SectionHeading>
+      <P>Title and avatar are useful to depict the author of a note. </P>
       <Example.React
         themeToggle
+        themeName="light"
         includes={{ Avatar, Note }}
-        codes={[
-          `
-<Note
-  avatar={<Avatar name="Mark Twain" src="//placebear.com/128/128" />}
-  heading="Mark Twain"
-  message={(
-    <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
-  )}
-  metadata={['Lorem ipsum dolor sit amet', 'Curabitur dolor sapien']}
-/>
-        `
-        ]}
-      />
-
-      <SectionHeading>Hyperlink Support</SectionHeading>
-      <P>Avatar, Heading and Metadata can all be expressed at hyperlinks.</P>
-      <Example.React
-        themeToggle
-        includes={{ Avatar, Link, Note, Text }}
         codes={[
           `
 <Note
@@ -202,9 +207,50 @@ export default withServerProps(_ => (
   message={(
     <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
   )}
+/>
+        `
+        ]}
+      />
+
+      <SectionHeading>Metadata</SectionHeading>
+      <P>
+        Metadata is free-form strings or displayable elements like links. Each
+        bit of metadata is separated by an interpunct.
+      </P>
+
+      <Example.React
+        themeToggle
+        themeName="light"
+        includes={{ Avatar, Note }}
+        codes={[
+          `
+<Note
+  actionBar={[
+    <Note.Action icon={<Icon id={Icon.ids.pencil} />} title="Edit" />,
+    <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+  ]}
+  avatar={
+    <Note.AvatarLink>
+      <a href="#">
+        <Avatar name="Mark Twain" src="//placebear.com/128/128" />
+      </a>
+    </Note.AvatarLink>
+  }
+  heading={
+    <Text.P>
+      <Link appearance={Link.appearances.subtle}>
+        <a href="#">Mark Twain</a>
+      </Link>
+    </Text.P>
+  }
+  message={(
+    <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
+  )}
   metadata={[
+    'Metadata 1', 
+    'Metadata 2', 
     <Link appearance={Link.appearances.subtle}>
-      <a href="#">Lorem ipusm dolor sit amet</a>
+      <a href="#">14 minutes ago</a>
     </Link>
   ]}
 />
@@ -212,39 +258,61 @@ export default withServerProps(_ => (
         ]}
       />
 
-      <SectionHeading>Action Bar</SectionHeading>
+      <SectionHeading>Action bar</SectionHeading>
       <P>
-        The action bar contains the on-row affordances a user can take besides
-        linking straight to the content.
+        The action bar contains the on-note affordances a user can take. These
+        are usually icon buttons. The actions can be displayed always, on hover,
+        or without without the title.
       </P>
+      <P>Note with the action bar</P>
       <Example.React
         themeToggle
-        includes={{ Avatar, Note, Icon }}
+        themeName="light"
+        includes={{ Avatar, Link, Note, Text }}
         codes={[
           `
 <Note
   actionBar={[
-    <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
+    <Note.Action icon={<Icon id={Icon.ids.pencil} />} title="Edit" />,
     <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
   ]}
-  avatar={<Avatar name="Mark Twain" src="//placebear.com/128/128" />}
-  heading="Mark Twain"
+  avatar={
+    <Note.AvatarLink>
+      <a href="#">
+        <Avatar name="Mark Twain" src="//placebear.com/128/128" />
+      </a>
+    </Note.AvatarLink>
+  }
+  heading={
+    <Text.P>
+      <Link appearance={Link.appearances.subtle}>
+        <a href="#">Mark Twain</a>
+      </Link>
+    </Text.P>
+  }
   message={(
     <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
   )}
-  metadata={['Lorem ipsum dolor sit amet', 'Curabitur dolor sapien']}
+  metadata={[
+    'Metadata 1', 
+    'Metadata 2', 
+    <Link appearance={Link.appearances.subtle}>
+      <a href="#">14 minutes ago</a>
+    </Link>
+  ]}
 />
         `
         ]}
       />
 
-      <SectionHeading>Without Attribution</SectionHeading>
+      <SectionHeading>Without attribution</SectionHeading>
       <P>
-        A note can also be used without author attribution. The actions will be
-        moved to the bottom next to the metadata.
+        A note can also be used without the avatar and heading. The actions will
+        be moved to the bottom next to the metadata.
       </P>
       <Example.React
         themeToggle
+        themeName="light"
         includes={{ Note }}
         codes={[
           `
@@ -256,44 +324,15 @@ export default withServerProps(_ => (
   message={(
     <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
   )}
-  metadata={['Lorem ipsum dolor sit amet', 'Curabitur dolor sapien']}
+  metadata={[
+    'Metadata 1', 
+    'Metadata 2', 
+    <Link appearance={Link.appearances.subtle}>
+      <a href="#">14 minutes ago</a>
+    </Link>
+  ]}
 />
         `
-        ]}
-      />
-      <SectionHeading>List</SectionHeading>
-      <P>Use a List when display a group of related Notes.</P>
-      <Example.React
-        themeToggle
-        includes={{ Note }}
-        codes={[
-          `
-<Note.List>
-  <Note
-    avatar={<Avatar name="Mark Twain" src="//placebear.com/128/128" />}
-    heading="Mark Twain"
-    message={(
-      <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
-    )}
-  />
-
-  <Note
-    avatar={<Avatar name="Samuel Lanhorne Clemens" src="//placebear.com/128/128" />}
-    heading="Samuel Lanhorne Clemens"
-    message={(
-      <p>There are those who imagine that the unlucky accidents of life—life's 'experiences'—are in some way useful to us. I wish I could find out how. I never know one of them to happen twice. They always change off and swap around and catch you on your inexperienced side.</p>
-    )}
-  />
-
-  <Note
-    avatar={<Avatar name="Mark Twain" src="//placebear.com/128/128" />}
-    heading="Mark Twain"
-    message={(
-      <p>Clothes make the man. Naked people have little or no influence on society.</p>
-    )}
-  />
-</Note.List>
-`
         ]}
       />
     </Content>
