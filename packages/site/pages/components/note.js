@@ -12,6 +12,7 @@ import {
   Content,
   Example,
   P,
+  Intro,
   PageHeading,
   PropTypes,
   SectionHeading,
@@ -21,8 +22,13 @@ import {
 export default withServerProps(_ => (
   <Chrome>
     <Content title="Note">
-      <PageHeading packageName="note">Note</PageHeading>
+      <PageHeading packageName="note">Note (comment)</PageHeading>
+      <Intro>
+        Use the note component for conversational elements. A note may have an
+        author, metadata and available actions.
+      </Intro>
 
+      <br />
       <P>Install the component dependency:</P>
       <Code language="bash">
         npm install @pluralsight/ps-design-system-note
@@ -121,11 +127,11 @@ export default withServerProps(_ => (
         }}
       />
 
-      <SectionHeading>Basic Examples</SectionHeading>
+      <SectionHeading>In-app example</SectionHeading>
       <P>
-        The row is a flexible component that will expand to fit the container
-        it's in. The height and width will grow indefinitely. Define your own
-        constrains with parent elements.
+        The note is a flexible component that will fit the container it's given.
+        A user generated list is a common container layout that one might
+        encounter in the product.{' '}
       </P>
       <Example.React
         themeToggle
