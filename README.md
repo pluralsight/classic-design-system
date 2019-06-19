@@ -16,7 +16,10 @@ Light WIP -- 50% less fat!
 
 ## Run locally
 
+Install [nvm](https://github.com/nvm-sh/nvm)
+
 ```
+nvm install
 nvm use
 npm install
 npm run bootstrap
