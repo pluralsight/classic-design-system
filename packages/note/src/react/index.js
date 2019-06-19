@@ -12,6 +12,7 @@ import {
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import css from '../css/index.js'
+import useHover from './use-hover.js'
 
 const styles = {
   note: themeName =>
@@ -23,6 +24,8 @@ const styles = {
     glamor.compose(
       glamor.css(css['.psds-note__action-bar']),
       glamor.css(css[`.psds-note__action-bar.psds-theme--${themeName}`]),
+      props.actionBarVisible &&
+        glamor.css(css[`.psds-note__action-bar--action-bar-visible`]),
       props.hasMetadata &&
         !props.hasHeading &&
         glamor.css(css['.psds-note__action-bar--meta-sibling'])
@@ -58,6 +61,7 @@ const styles = {
 
 export default function Note(props) {
   const themeName = useTheme()
+  const { ref, isHovered } = useHover()
 
   const hasActions = !!props.actionBar && props.actionBar.length > 0
   const hasAside = !!props.avatar
@@ -65,7 +69,11 @@ export default function Note(props) {
   const hasMetadata = !!props.metadata && props.metadata.length > 0
 
   const actionBar = hasActions ? (
-    <ActionBar hasHeading={hasHeading} hasMetadata={hasMetadata}>
+    <ActionBar
+      hasHeading={hasHeading}
+      hasMetadata={hasMetadata}
+      actionBarVisible={props.actionBarVisible || isHovered}
+    >
       {props.actionBar.map((action, key) => {
         return React.cloneElement(action, { key })
       })}
@@ -73,7 +81,11 @@ export default function Note(props) {
   ) : null
 
   return (
-    <div {...styles.note(themeName, props)} {...filterReactProps(props)}>
+    <div
+      {...styles.note(themeName, props)}
+      {...filterReactProps(props)}
+      ref={ref}
+    >
       {hasAside && (
         <Aside>
           {React.cloneElement(props.avatar, { size: Avatar.sizes.xSmall })}
@@ -219,6 +231,7 @@ Note.List = NoteList
 
 Note.propTypes = {
   actionBar: arrayOfMaxLength(2, PropTypes.node),
+  actionBarVisible: PropTypes.bool,
   avatar: PropTypes.oneOfType([
     elementOfType(Avatar),
     elementOfType(Note.AvatarLink)

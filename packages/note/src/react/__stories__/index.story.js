@@ -20,6 +20,7 @@ const ConstrainWidth = props => <div {...props} style={{ maxWidth: '420px' }} />
 
 const NoteWithDefaults = props => <Note {...props} />
 NoteWithDefaults.defaultProps = {
+  actionBarVisible: true,
   avatar: <Avatar name="Bob Ross" src="//picsum.photos/128" />,
   heading: 'Bob Ross',
   message: (
@@ -106,6 +107,14 @@ storiesOf('Note/metadata', module)
 
 storiesOf('Note/actions', module)
   .addDecorator(fn => <ConstrainWidth>{fn()}</ConstrainWidth>)
+  .add('basic/unlocked', _ => (
+    <NoteWithDefaults
+      actionBar={[
+        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+      ]}
+      actionBarVisible={false}
+    />
+  ))
   .add('one action', _ => (
     <NoteWithDefaults
       actionBar={[

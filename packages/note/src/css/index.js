@@ -47,10 +47,15 @@ export default {
   '.psds-note__action-bar': {
     color: core.colors.gray02,
     display: 'flex',
-    marginLeft: 'auto'
+    marginLeft: 'auto',
+    opacity: 0,
+    transition: `opacity ${core.motion.speedNormal}`
   },
   [`.psds-note__action-bar.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03
+  },
+  '.psds-note__action-bar--action-bar-visible': {
+    opacity: 1
   },
   '.psds-note__action-bar--meta-sibling': {
     marginLeft: core.layout.spacingMedium
