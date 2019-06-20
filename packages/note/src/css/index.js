@@ -70,6 +70,9 @@ export default {
     '&:hover, &:active': { color: core.colors.white },
     '& + &': { marginLeft: core.layout.spacingSmall }
   },
+  [`.psds-note__action.psds-theme--${themeNames.light}`]: {
+    '&:hover, &:active': { color: core.colors.gray03 }
+  },
 
   '.psds-note__aside': {
     marginRight: core.layout.spacingMedium

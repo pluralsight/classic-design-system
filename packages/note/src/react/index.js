@@ -29,7 +29,11 @@ const styles = {
         !props.hasHeading &&
         glamor.css(css['.psds-note__action-bar--meta-sibling'])
     ),
-  action: _ => glamor.css(css['.psds-note__action']),
+  action: themeName =>
+    glamor.compose(
+      glamor.css(css['.psds-note__action']),
+      glamor.css(css[`.psds-note__action.psds-theme--${themeName}`])
+    ),
   aside: _ => glamor.css(css['.psds-note__aside']),
   contents: themeName =>
     glamor.compose(
@@ -158,15 +162,18 @@ ActionBar.propTypes = {
   children: PropTypes.arrayOf(PropTypes.node)
 }
 
-const Action = React.forwardRef((props, ref) => (
-  <button
-    ref={ref}
-    {...styles.action()}
-    {...filterReactProps(props, { tagName: 'button' })}
-  >
-    {props.icon}
-  </button>
-))
+const Action = React.forwardRef((props, ref) => {
+  const themeName = useTheme()
+  return (
+    <button
+      ref={ref}
+      {...styles.action(themeName)}
+      {...filterReactProps(props, { tagName: 'button' })}
+    >
+      {props.icon}
+    </button>
+  )
+})
 
 Action.displayName = 'Note.Action'
 Action.propTypes = {
