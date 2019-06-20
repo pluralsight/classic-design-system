@@ -184,9 +184,7 @@ export default {
     // __span
     '&:active span, &:hover span, &:focus span, & span': listItemBarActiveActive
   },
-  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
-    themeNames.light
-  }`]: {
+  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeNames.light}`]: {
     // __text
     '&:hover div, &:focus div, & div': listItemTextLightActive
   },
@@ -225,8 +223,6 @@ export default {
     display: 'block',
     height: 0,
     opacity: 0,
-    transition: `height ${core.motion.speedNormal} ease-in-out, opacity ${
-      core.motion.speedNormal
-    } ease-in-out`
+    transition: `height ${core.motion.speedNormal} ease-in-out, opacity ${core.motion.speedNormal} ease-in-out`
   }
 }

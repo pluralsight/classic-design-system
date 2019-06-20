@@ -1,0 +1,1742 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Note basic 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1kfsc44=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-1pii7we=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="//picsum.photos/128"
+        />
+        <div
+          aria-label="Bob Ross"
+          data-css-x99j9q=""
+          style={
+            Object {
+              "backgroundColor": "#1F964E",
+            }
+          }
+        >
+          BR
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1e0ri2d=""
+    >
+      <div
+        data-css-1wkpnw7=""
+      >
+        <div
+          data-css-2geye7=""
+        >
+          Bob Ross
+        </div>
+      </div>
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            meta second
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note with DS Text components 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1kfsc44=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-1pii7we=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="//picsum.photos/128"
+        />
+        <div
+          aria-label="Bob Ross"
+          data-css-x99j9q=""
+          style={
+            Object {
+              "backgroundColor": "#1F964E",
+            }
+          }
+        >
+          BR
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1e0ri2d=""
+    >
+      <div
+        data-css-1wkpnw7=""
+      >
+        <div
+          data-css-2geye7=""
+        >
+          <h3
+            data-css-1fxxvvr=""
+            size="medium"
+          >
+            Bob Ross
+          </h3>
+        </div>
+      </div>
+      <p
+        data-css-145tgfu=""
+      >
+        Be so very light. Be a gentle whisper. If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. It is a lot of fun.
+      </p>
+      <p
+        data-css-145tgfu=""
+      >
+        So often we avoid running water, and running water is a lot of fun. Just beat the devil out of it. Work that paint. A beautiful little sunset. This painting comes right out of your heart.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            meta second
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note with linked avatar 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1kfsc44=""
+    >
+      <a
+        href="#"
+      >
+        <div
+          aria-hidden={true}
+          data-css-1pii7we=""
+        >
+          <img
+            data-css-d7y6x2=""
+            onError={[Function]}
+            onLoad={[Function]}
+            src="//picsum.photos/128"
+          />
+          <div
+            aria-label="Bob Ross"
+            data-css-x99j9q=""
+            style={
+              Object {
+                "backgroundColor": "#1F964E",
+              }
+            }
+          >
+            BR
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      data-css-1e0ri2d=""
+    >
+      <div
+        data-css-1wkpnw7=""
+      >
+        <div
+          data-css-2geye7=""
+        >
+          Bob Ross
+        </div>
+      </div>
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            meta second
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note with linked heading 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1kfsc44=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-1pii7we=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="//picsum.photos/128"
+        />
+        <div
+          aria-label="Bob Ross"
+          data-css-x99j9q=""
+          style={
+            Object {
+              "backgroundColor": "#1F964E",
+            }
+          }
+        >
+          BR
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1e0ri2d=""
+    >
+      <div
+        data-css-1wkpnw7=""
+      >
+        <div
+          data-css-2geye7=""
+        >
+          <p>
+            <a
+              data-css-1vzf57m=""
+              href="#"
+            >
+              Bob Ross
+            </a>
+          </p>
+        </div>
+      </div>
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            meta second
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note without avatar and author 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1e0ri2d=""
+    >
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            meta second
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note/actions no author - long metadata 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1e0ri2d=""
+    >
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            It is impossible to count the grand contributions of this great author
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            Levels heretofore unknown in the battle for truth and knowledge
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            A length of such amazing lengthitude so-as to blow the mind
+          </span>
+        </div>
+        <div
+          data-css-88uwpz=""
+        >
+          <button
+            data-css-tqgxbw=""
+            icon={
+              <Icon
+                id="bookmark"
+                size="medium"
+              />
+            }
+            title="Bookmark"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="bookmark icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                />
+              </svg>
+            </div>
+          </button>
+          <button
+            data-css-tqgxbw=""
+            icon={
+              <Icon
+                id="more"
+                size="medium"
+              />
+            }
+            title="More"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note/actions no author - no metadata 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1e0ri2d=""
+    >
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1ttz8q1=""
+        >
+          <button
+            data-css-tqgxbw=""
+            icon={
+              <Icon
+                id="bookmark"
+                size="medium"
+              />
+            }
+            title="Bookmark"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="bookmark icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                />
+              </svg>
+            </div>
+          </button>
+          <button
+            data-css-tqgxbw=""
+            icon={
+              <Icon
+                id="more"
+                size="medium"
+              />
+            }
+            title="More"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note/actions one action 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1kfsc44=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-1pii7we=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="//picsum.photos/128"
+        />
+        <div
+          aria-label="Bob Ross"
+          data-css-x99j9q=""
+          style={
+            Object {
+              "backgroundColor": "#1F964E",
+            }
+          }
+        >
+          BR
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1e0ri2d=""
+    >
+      <div
+        data-css-1wkpnw7=""
+      >
+        <div
+          data-css-2geye7=""
+        >
+          Bob Ross
+        </div>
+        <div
+          data-css-1ttz8q1=""
+        >
+          <button
+            data-css-tqgxbw=""
+            icon={
+              <Icon
+                id="more"
+                size="medium"
+              />
+            }
+            title="More"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            meta second
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note/actions two actions 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1kfsc44=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-1pii7we=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="//picsum.photos/128"
+        />
+        <div
+          aria-label="Bob Ross"
+          data-css-x99j9q=""
+          style={
+            Object {
+              "backgroundColor": "#1F964E",
+            }
+          }
+        >
+          BR
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1e0ri2d=""
+    >
+      <div
+        data-css-1wkpnw7=""
+      >
+        <div
+          data-css-2geye7=""
+        >
+          Bob Ross
+        </div>
+        <div
+          data-css-1ttz8q1=""
+        >
+          <button
+            data-css-tqgxbw=""
+            icon={
+              <Icon
+                id="bookmark"
+                size="medium"
+              />
+            }
+            title="Bookmark"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="bookmark icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                />
+              </svg>
+            </div>
+          </button>
+          <button
+            data-css-tqgxbw=""
+            icon={
+              <Icon
+                id="more"
+                size="medium"
+              />
+            }
+            title="More"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            meta second
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note/actions visible on hover 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1kfsc44=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-1pii7we=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="//picsum.photos/128"
+        />
+        <div
+          aria-label="Bob Ross"
+          data-css-x99j9q=""
+          style={
+            Object {
+              "backgroundColor": "#1F964E",
+            }
+          }
+        >
+          BR
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1e0ri2d=""
+    >
+      <div
+        data-css-1wkpnw7=""
+      >
+        <div
+          data-css-2geye7=""
+        >
+          Bob Ross
+        </div>
+        <div
+          data-css-16ufoco=""
+        >
+          <button
+            data-css-tqgxbw=""
+            icon={
+              <Icon
+                id="more"
+                size="medium"
+              />
+            }
+            title="More"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            meta second
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note/actions with an action menu 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1kfsc44=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-1pii7we=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="//picsum.photos/128"
+        />
+        <div
+          aria-label="Bob Ross"
+          data-css-x99j9q=""
+          style={
+            Object {
+              "backgroundColor": "#1F964E",
+            }
+          }
+        >
+          BR
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1e0ri2d=""
+    >
+      <div
+        data-css-1wkpnw7=""
+      >
+        <div
+          data-css-2geye7=""
+        >
+          Bob Ross
+        </div>
+        <div
+          data-css-1ttz8q1=""
+        >
+          <button
+            data-css-tqgxbw=""
+            icon={
+              <Icon
+                id="more"
+                size="medium"
+              />
+            }
+            onClick={[Function]}
+            title="More"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            meta second
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note/actions with long heading 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1kfsc44=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-1pii7we=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="//picsum.photos/128"
+        />
+        <div
+          aria-label="Bob Ross"
+          data-css-x99j9q=""
+          style={
+            Object {
+              "backgroundColor": "#1F964E",
+            }
+          }
+        >
+          BR
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1e0ri2d=""
+    >
+      <div
+        data-css-1wkpnw7=""
+      >
+        <div
+          data-css-2geye7=""
+        >
+          This is probably the greatest thing that's ever happened in my life
+        </div>
+        <div
+          data-css-1ttz8q1=""
+        >
+          <button
+            data-css-tqgxbw=""
+            icon={
+              <Icon
+                id="bookmark"
+                size="medium"
+              />
+            }
+            title="Bookmark"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="bookmark icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                />
+              </svg>
+            </div>
+          </button>
+          <button
+            data-css-tqgxbw=""
+            icon={
+              <Icon
+                id="more"
+                size="medium"
+              />
+            }
+            title="More"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            meta second
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note/actions without author 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1e0ri2d=""
+    >
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            meta second
+          </span>
+        </div>
+        <div
+          data-css-88uwpz=""
+        >
+          <button
+            data-css-tqgxbw=""
+            icon={
+              <Icon
+                id="bookmark"
+                size="medium"
+              />
+            }
+            title="Bookmark"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="bookmark icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                />
+              </svg>
+            </div>
+          </button>
+          <button
+            data-css-tqgxbw=""
+            icon={
+              <Icon
+                id="more"
+                size="medium"
+              />
+            }
+            title="More"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note/in a list basic 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <ol
+    data-css-17bsnt1=""
+  >
+    <li
+      data-css-qrekpk=""
+    >
+      <div
+        data-css-ae1vww=""
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+      >
+        <div
+          data-css-1kfsc44=""
+        >
+          <div
+            aria-hidden={true}
+            data-css-1pii7we=""
+          >
+            <img
+              data-css-d7y6x2=""
+              onError={[Function]}
+              onLoad={[Function]}
+              src="//picsum.photos/128"
+            />
+            <div
+              aria-label="Bob Ross"
+              data-css-x99j9q=""
+              style={
+                Object {
+                  "backgroundColor": "#1F964E",
+                }
+              }
+            >
+              BR
+            </div>
+          </div>
+        </div>
+        <div
+          data-css-1e0ri2d=""
+        >
+          <div
+            data-css-1wkpnw7=""
+          >
+            <div
+              data-css-2geye7=""
+            >
+              Bob Ross
+            </div>
+          </div>
+          <p>
+            If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+          </p>
+          <div
+            data-css-126k7w0=""
+          >
+            <div
+              data-css-1n0mdtj=""
+            >
+              <span
+                data-css-uiygjz=""
+              >
+                meta first
+              </span>
+              <span
+                aria-hidden={true}
+                data-css-kykfz1=""
+              >
+                ·
+              </span>
+              <span
+                data-css-uiygjz=""
+              >
+                meta second
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li
+      data-css-qrekpk=""
+    >
+      <div
+        data-css-ae1vww=""
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+      >
+        <div
+          data-css-1kfsc44=""
+        >
+          <div
+            aria-hidden={true}
+            data-css-1pii7we=""
+          >
+            <img
+              data-css-d7y6x2=""
+              onError={[Function]}
+              onLoad={[Function]}
+              src="//picsum.photos/128"
+            />
+            <div
+              aria-label="Bob Ross"
+              data-css-x99j9q=""
+              style={
+                Object {
+                  "backgroundColor": "#1F964E",
+                }
+              }
+            >
+              BR
+            </div>
+          </div>
+        </div>
+        <div
+          data-css-1e0ri2d=""
+        >
+          <div
+            data-css-1wkpnw7=""
+          >
+            <div
+              data-css-2geye7=""
+            >
+              Bob Ross
+            </div>
+          </div>
+          <p>
+            If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+          </p>
+          <div
+            data-css-126k7w0=""
+          >
+            <div
+              data-css-1n0mdtj=""
+            >
+              <span
+                data-css-uiygjz=""
+              >
+                meta first
+              </span>
+              <span
+                aria-hidden={true}
+                data-css-kykfz1=""
+              >
+                ·
+              </span>
+              <span
+                data-css-uiygjz=""
+              >
+                meta second
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li
+      data-css-qrekpk=""
+    >
+      <div
+        data-css-ae1vww=""
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+      >
+        <div
+          data-css-1kfsc44=""
+        >
+          <div
+            aria-hidden={true}
+            data-css-1pii7we=""
+          >
+            <img
+              data-css-d7y6x2=""
+              onError={[Function]}
+              onLoad={[Function]}
+              src="//picsum.photos/128"
+            />
+            <div
+              aria-label="Bob Ross"
+              data-css-x99j9q=""
+              style={
+                Object {
+                  "backgroundColor": "#1F964E",
+                }
+              }
+            >
+              BR
+            </div>
+          </div>
+        </div>
+        <div
+          data-css-1e0ri2d=""
+        >
+          <div
+            data-css-1wkpnw7=""
+          >
+            <div
+              data-css-2geye7=""
+            >
+              Bob Ross
+            </div>
+          </div>
+          <p>
+            If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+          </p>
+          <div
+            data-css-126k7w0=""
+          >
+            <div
+              data-css-1n0mdtj=""
+            >
+              <span
+                data-css-uiygjz=""
+              >
+                meta first
+              </span>
+              <span
+                aria-hidden={true}
+                data-css-kykfz1=""
+              >
+                ·
+              </span>
+              <span
+                data-css-uiygjz=""
+              >
+                meta second
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`Storyshots Note/metadata as a link 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1kfsc44=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-1pii7we=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="//picsum.photos/128"
+        />
+        <div
+          aria-label="Bob Ross"
+          data-css-x99j9q=""
+          style={
+            Object {
+              "backgroundColor": "#1F964E",
+            }
+          }
+        >
+          BR
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1e0ri2d=""
+    >
+      <div
+        data-css-1wkpnw7=""
+      >
+        <div
+          data-css-2geye7=""
+        >
+          Bob Ross
+        </div>
+      </div>
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            <a
+              data-css-1skajya=""
+              href="#"
+            >
+              i'm a link
+            </a>
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            <a
+              data-css-1vzf57m=""
+              href="#"
+            >
+              i'm a subtle link
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note/metadata with long strings 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1kfsc44=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-1pii7we=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="//picsum.photos/128"
+        />
+        <div
+          aria-label="Bob Ross"
+          data-css-x99j9q=""
+          style={
+            Object {
+              "backgroundColor": "#1F964E",
+            }
+          }
+        >
+          BR
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1e0ri2d=""
+    >
+      <div
+        data-css-1wkpnw7=""
+      >
+        <div
+          data-css-2geye7=""
+        >
+          Bob Ross
+        </div>
+      </div>
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            It is impossible to count the grand contributions of this great author
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            Levels heretofore unknown in the battle for truth and knowledge
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            A length of such amazing lengthitude so-as to blow the mind
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
