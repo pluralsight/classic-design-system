@@ -20,7 +20,6 @@ const ConstrainWidth = props => <div {...props} style={{ maxWidth: '420px' }} />
 
 const NoteWithDefaults = props => <Note {...props} />
 NoteWithDefaults.defaultProps = {
-  actionBarVisible: true,
   avatar: <Avatar name="Bob Ross" src="//picsum.photos/128" />,
   heading: 'Bob Ross',
   message: (
@@ -107,7 +106,7 @@ storiesOf('Note/metadata', module)
 
 storiesOf('Note/actions', module)
   .addDecorator(fn => <ConstrainWidth>{fn()}</ConstrainWidth>)
-  .add('basic/unlocked', _ => (
+  .add('visible on hover', _ => (
     <NoteWithDefaults
       actionBar={[
         <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
@@ -120,6 +119,7 @@ storiesOf('Note/actions', module)
       actionBar={[
         <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
       ]}
+      actionBarVisible
     />
   ))
   .add('two actions', _ => (
@@ -128,6 +128,7 @@ storiesOf('Note/actions', module)
         <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
         <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
       ]}
+      actionBarVisible
     />
   ))
   .add('with long heading', _ => (
@@ -137,6 +138,7 @@ storiesOf('Note/actions', module)
         <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
         <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
       ]}
+      actionBarVisible
     />
   ))
   .add('without author', _ => (
@@ -145,6 +147,7 @@ storiesOf('Note/actions', module)
         <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
         <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
       ]}
+      actionBarVisible
       avatar={null}
       heading={null}
     />
@@ -155,6 +158,7 @@ storiesOf('Note/actions', module)
         <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
         <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
       ]}
+      actionBarVisible
       avatar={null}
       heading={null}
       metadata={longStringsMetaData}
@@ -166,6 +170,7 @@ storiesOf('Note/actions', module)
         <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
         <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
       ]}
+      actionBarVisible
       avatar={null}
       heading={null}
       metadata={null}
@@ -197,6 +202,7 @@ storiesOf('Note/actions', module)
                 />
               </Below>
             ]}
+            actionBarVisible
           />
         </React.Fragment>
       )

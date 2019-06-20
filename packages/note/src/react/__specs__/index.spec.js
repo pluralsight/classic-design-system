@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'react-testing-library'
+import { fireEvent, render, waitForElement } from 'react-testing-library'
 
 import Note from '../index.js'
 
@@ -27,5 +27,31 @@ describe('Note', () => {
 
     expect(container).toHaveTextContent('meta1')
     expect(container).toHaveTextContent('meta2')
+  })
+
+  it('supports onMouseOver prop', async () => {
+    const spy = jest.fn()
+
+    const { getByTestId } = render(
+      <Note data-testid="note" message={'message'} onMouseOver={spy} />
+    )
+
+    const el = await waitForElement(() => getByTestId('note'))
+    fireEvent.mouseOver(el)
+
+    expect(spy).toHaveBeenCalled()
+  })
+
+  it('supports onMouseOut prop', async () => {
+    const spy = jest.fn()
+
+    const { getByTestId } = render(
+      <Note data-testid="note" message={'message'} onMouseOut={spy} />
+    )
+
+    const el = await waitForElement(() => getByTestId('note'))
+    fireEvent.mouseOut(el)
+
+    expect(spy).toHaveBeenCalled()
   })
 })

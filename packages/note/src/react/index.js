@@ -12,7 +12,6 @@ import {
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import css from '../css/index.js'
-import useHover from './use-hover.js'
 
 const styles = {
   note: themeName =>
@@ -61,7 +60,17 @@ const styles = {
 
 export default function Note(props) {
   const themeName = useTheme()
-  const { ref, isHovered } = useHover()
+  const [isHovered, setIsHovered] = React.useState(false)
+
+  const handleMouseOver = (...args) => {
+    setIsHovered(true)
+    if (props.onMouseOver) props.onMouseOver(...args)
+  }
+
+  const handleMouseOut = (...args) => {
+    setIsHovered(false)
+    if (props.onMouseOut) props.onMouseOut(...args)
+  }
 
   const hasActions = !!props.actionBar && props.actionBar.length > 0
   const hasAside = !!props.avatar
@@ -84,7 +93,8 @@ export default function Note(props) {
     <div
       {...styles.note(themeName, props)}
       {...filterReactProps(props)}
-      ref={ref}
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}
     >
       {hasAside && (
         <Aside>
@@ -240,5 +250,7 @@ Note.propTypes = {
   message: PropTypes.node.isRequired,
   metadata: PropTypes.arrayOf(
     PropTypes.oneOfType([PropTypes.string, PropTypes.node])
-  )
+  ),
+  onMouseOut: PropTypes.func,
+  onMouseOver: PropTypes.func
 }

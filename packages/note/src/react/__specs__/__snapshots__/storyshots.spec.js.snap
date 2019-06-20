@@ -10,6 +10,8 @@ exports[`Storyshots Note basic 1`] = `
 >
   <div
     data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   >
     <div
       data-css-1kfsc44=""
@@ -91,6 +93,8 @@ exports[`Storyshots Note with DS Text components 1`] = `
 >
   <div
     data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   >
     <div
       data-css-1kfsc44=""
@@ -184,6 +188,8 @@ exports[`Storyshots Note with linked avatar 1`] = `
 >
   <div
     data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   >
     <div
       data-css-1kfsc44=""
@@ -269,6 +275,8 @@ exports[`Storyshots Note with linked heading 1`] = `
 >
   <div
     data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   >
     <div
       data-css-1kfsc44=""
@@ -357,120 +365,12 @@ exports[`Storyshots Note without avatar and author 1`] = `
 >
   <div
     data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   >
     <div
       data-css-1e0ri2d=""
     >
-      <p>
-        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
-      </p>
-      <div
-        data-css-126k7w0=""
-      >
-        <div
-          data-css-1n0mdtj=""
-        >
-          <span
-            data-css-uiygjz=""
-          >
-            meta first
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
-          >
-            ·
-          </span>
-          <span
-            data-css-uiygjz=""
-          >
-            meta second
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Note/actions basic/unlocked 1`] = `
-<div
-  style={
-    Object {
-      "maxWidth": "420px",
-    }
-  }
->
-  <div
-    data-css-ae1vww=""
-  >
-    <div
-      data-css-1kfsc44=""
-    >
-      <div
-        aria-hidden={true}
-        data-css-1pii7we=""
-      >
-        <img
-          data-css-d7y6x2=""
-          onError={[Function]}
-          onLoad={[Function]}
-          src="//picsum.photos/128"
-        />
-        <div
-          aria-label="Bob Ross"
-          data-css-x99j9q=""
-          style={
-            Object {
-              "backgroundColor": "#1F964E",
-            }
-          }
-        >
-          BR
-        </div>
-      </div>
-    </div>
-    <div
-      data-css-1e0ri2d=""
-    >
-      <div
-        data-css-1wkpnw7=""
-      >
-        <div
-          data-css-2geye7=""
-        >
-          Bob Ross
-        </div>
-        <div
-          data-css-16ufoco=""
-        >
-          <button
-            data-css-tqgxbw=""
-            icon={
-              <Icon
-                id="more"
-                size="medium"
-              />
-            }
-            title="More"
-          >
-            <div
-              data-css-otejxm=""
-            >
-              <svg
-                aria-label="more icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </div>
       <p>
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -513,6 +413,8 @@ exports[`Storyshots Note/actions no author - long metadata 1`] = `
 >
   <div
     data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   >
     <div
       data-css-1e0ri2d=""
@@ -624,6 +526,8 @@ exports[`Storyshots Note/actions no author - no metadata 1`] = `
 >
   <div
     data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   >
     <div
       data-css-1e0ri2d=""
@@ -704,6 +608,8 @@ exports[`Storyshots Note/actions one action 1`] = `
 >
   <div
     data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   >
     <div
       data-css-1kfsc44=""
@@ -814,6 +720,8 @@ exports[`Storyshots Note/actions two actions 1`] = `
 >
   <div
     data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   >
     <div
       data-css-1kfsc44=""
@@ -939,6 +847,118 @@ exports[`Storyshots Note/actions two actions 1`] = `
 </div>
 `;
 
+exports[`Storyshots Note/actions visible on hover 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1kfsc44=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-1pii7we=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="//picsum.photos/128"
+        />
+        <div
+          aria-label="Bob Ross"
+          data-css-x99j9q=""
+          style={
+            Object {
+              "backgroundColor": "#1F964E",
+            }
+          }
+        >
+          BR
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1e0ri2d=""
+    >
+      <div
+        data-css-1wkpnw7=""
+      >
+        <div
+          data-css-2geye7=""
+        >
+          Bob Ross
+        </div>
+        <div
+          data-css-16ufoco=""
+        >
+          <button
+            data-css-tqgxbw=""
+            icon={
+              <Icon
+                id="more"
+                size="medium"
+              />
+            }
+            title="More"
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <p>
+        If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            meta second
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Note/actions with an action menu 1`] = `
 <div
   style={
@@ -949,6 +969,8 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
 >
   <div
     data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   >
     <div
       data-css-1kfsc44=""
@@ -1060,6 +1082,8 @@ exports[`Storyshots Note/actions with long heading 1`] = `
 >
   <div
     data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   >
     <div
       data-css-1kfsc44=""
@@ -1195,6 +1219,8 @@ exports[`Storyshots Note/actions without author 1`] = `
 >
   <div
     data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   >
     <div
       data-css-1e0ri2d=""
@@ -1301,6 +1327,8 @@ exports[`Storyshots Note/in a list basic 1`] = `
     >
       <div
         data-css-ae1vww=""
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
       >
         <div
           data-css-1kfsc44=""
@@ -1375,6 +1403,8 @@ exports[`Storyshots Note/in a list basic 1`] = `
     >
       <div
         data-css-ae1vww=""
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
       >
         <div
           data-css-1kfsc44=""
@@ -1449,6 +1479,8 @@ exports[`Storyshots Note/in a list basic 1`] = `
     >
       <div
         data-css-ae1vww=""
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
       >
         <div
           data-css-1kfsc44=""
@@ -1532,6 +1564,8 @@ exports[`Storyshots Note/metadata as a link 1`] = `
 >
   <div
     data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   >
     <div
       data-css-1kfsc44=""
@@ -1623,6 +1657,8 @@ exports[`Storyshots Note/metadata with long strings 1`] = `
 >
   <div
     data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   >
     <div
       data-css-1kfsc44=""
