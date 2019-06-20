@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.6.1...@pluralsight/ps-design-system-site@12.7.0) (2019-06-20)
+
+
+### Bug Fixes
+
+* **note:** update metadata columns and squash overflow bug ([5e4d798](https://github.com/pluralsight/design-system/commit/5e4d798))
+
+
+### Features
+
+* **site:** add actionBarVisible to note proptypes ([38504c1](https://github.com/pluralsight/design-system/commit/38504c1))
+
+
+
+
+
 ## [12.6.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.6.0...@pluralsight/ps-design-system-site@12.6.1) (2019-06-04)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site

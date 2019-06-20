@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-note",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Note UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -25,7 +25,7 @@
     "@pluralsight/ps-design-system-core": "*",
     "@pluralsight/ps-design-system-filter-react-props": "*",
     "@pluralsight/ps-design-system-icon": "*",
-    "@pluralsight/ps-design-system-prop-types": "*",
+    "@pluralsight/ps-design-system-prop-types": "^2.0.6",
     "@pluralsight/ps-design-system-theme": "*"
   },
   "peerDependencies": {
@@ -34,7 +34,7 @@
     "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "*",
+    "@pluralsight/ps-design-system-actionmenu": "^4.1.13",
     "@pluralsight/ps-design-system-build": "*",
     "@pluralsight/ps-design-system-link": "*",
     "@pluralsight/ps-design-system-position": "*",

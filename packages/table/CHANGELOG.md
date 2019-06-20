@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@4.0.2...@pluralsight/ps-design-system-table@4.0.3) (2019-06-20)
+
+
+### Bug Fixes
+
+* **table:** apply theme class to cell ([7c4ccf1](https://github.com/pluralsight/design-system/commit/7c4ccf1))
+* **table:** column header hover state contrast ok in light theme ([cc9bf9c](https://github.com/pluralsight/design-system/commit/cc9bf9c)), closes [#540](https://github.com/pluralsight/design-system/issues/540)
+
+
+
+
+
 ## [4.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@4.0.1...@pluralsight/ps-design-system-table@4.0.2) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table
