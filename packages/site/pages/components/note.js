@@ -50,6 +50,13 @@ export default withServerProps(_ => (
               'action buttons'
             ]),
             PropTypes.row([
+              'actionBarVisible',
+              <code>boolean</code>,
+              null,
+              <code>false</code>,
+              'locks actionBar visible'
+            ]),
+            PropTypes.row([
               'avatar',
               <span>
                 <code>Avatar</code>
