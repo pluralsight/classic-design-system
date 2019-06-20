@@ -48,7 +48,11 @@ const styles = {
       glamor.css(css[`.psds-note__heading.psds-theme--${themeName}`])
     ),
   noteList: _ => glamor.css(css['.psds-note__list']),
-  noteListItem: _ => glamor.css(css['.psds-note__list-item']),
+  noteListItem: themeName =>
+    glamor.compose(
+      glamor.css(css['.psds-note__list-item']),
+      glamor.css(css[`.psds-note__list-item.psds-theme--${themeName}`])
+    ),
   metadata: themeName =>
     glamor.compose(
       glamor.css(css['.psds-note__metadata']),
@@ -140,10 +144,11 @@ export default function Note(props) {
 }
 
 function NoteList({ children, ...props }) {
+  const themeName = useTheme()
   return (
     <ol {...styles.noteList()} {...filterReactProps(props)}>
       {React.Children.map(children, child => (
-        <li {...styles.noteListItem()}>{child}</li>
+        <li {...styles.noteListItem(themeName)}>{child}</li>
       ))}
     </ol>
   )

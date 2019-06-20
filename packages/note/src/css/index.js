@@ -32,6 +32,9 @@ export default {
 
     '&:first-of-type': { borderTop: 'none' }
   },
+  [`.psds-note__list-item.psds-theme--${themeNames.light}`]: {
+    borderTop: `1px solid ${core.colors.gray01}`
+  },
 
   '.psds-note': {
     alignItems: 'flex-start',
