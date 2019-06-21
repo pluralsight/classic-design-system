@@ -46,7 +46,7 @@ exports[`Storyshots Note basic 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-2geye7=""
+          data-css-1qsfjxo=""
         >
           Bob Ross
         </div>
@@ -129,7 +129,7 @@ exports[`Storyshots Note with DS Text components 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-2geye7=""
+          data-css-1qsfjxo=""
         >
           <h3
             data-css-1fxxvvr=""
@@ -137,6 +137,98 @@ exports[`Storyshots Note with DS Text components 1`] = `
           >
             Bob Ross
           </h3>
+        </div>
+      </div>
+      <p
+        data-css-145tgfu=""
+      >
+        Be so very light. Be a gentle whisper. If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. It is a lot of fun.
+      </p>
+      <p
+        data-css-145tgfu=""
+      >
+        So often we avoid running water, and running water is a lot of fun. Just beat the devil out of it. Work that paint. A beautiful little sunset. This painting comes right out of your heart.
+      </p>
+      <div
+        data-css-126k7w0=""
+      >
+        <div
+          data-css-1n0mdtj=""
+        >
+          <span
+            data-css-uiygjz=""
+          >
+            meta first
+          </span>
+          <span
+            aria-hidden={true}
+            data-css-kykfz1=""
+          >
+            ·
+          </span>
+          <span
+            data-css-uiygjz=""
+          >
+            meta second
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Note with h1 in heading 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "420px",
+    }
+  }
+>
+  <div
+    data-css-ae1vww=""
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <div
+      data-css-1kfsc44=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-1pii7we=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="//picsum.photos/128"
+        />
+        <div
+          aria-label="Bob Ross"
+          data-css-x99j9q=""
+          style={
+            Object {
+              "backgroundColor": "#1F964E",
+            }
+          }
+        >
+          BR
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1e0ri2d=""
+    >
+      <div
+        data-css-1wkpnw7=""
+      >
+        <div
+          data-css-1qsfjxo=""
+        >
+          <h1>
+            Bob Ross
+          </h1>
         </div>
       </div>
       <p
@@ -228,7 +320,7 @@ exports[`Storyshots Note with linked avatar 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-2geye7=""
+          data-css-1qsfjxo=""
         >
           Bob Ross
         </div>
@@ -311,7 +403,7 @@ exports[`Storyshots Note with linked heading 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-2geye7=""
+          data-css-1qsfjxo=""
         >
           <p>
             <a
@@ -644,7 +736,7 @@ exports[`Storyshots Note/actions one action 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-2geye7=""
+          data-css-1qsfjxo=""
         >
           Bob Ross
         </div>
@@ -756,7 +848,7 @@ exports[`Storyshots Note/actions two actions 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-2geye7=""
+          data-css-1qsfjxo=""
         >
           Bob Ross
         </div>
@@ -893,7 +985,7 @@ exports[`Storyshots Note/actions visible on hover 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-2geye7=""
+          data-css-1qsfjxo=""
         >
           Bob Ross
         </div>
@@ -1005,7 +1097,7 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-2geye7=""
+          data-css-1qsfjxo=""
         >
           Bob Ross
         </div>
@@ -1118,7 +1210,7 @@ exports[`Storyshots Note/actions with long heading 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-2geye7=""
+          data-css-1qsfjxo=""
         >
           This is probably the greatest thing that's ever happened in my life
         </div>
@@ -1363,7 +1455,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
             data-css-1wkpnw7=""
           >
             <div
-              data-css-2geye7=""
+              data-css-1qsfjxo=""
             >
               Bob Ross
             </div>
@@ -1439,7 +1531,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
             data-css-1wkpnw7=""
           >
             <div
-              data-css-2geye7=""
+              data-css-1qsfjxo=""
             >
               Bob Ross
             </div>
@@ -1515,7 +1607,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
             data-css-1wkpnw7=""
           >
             <div
-              data-css-2geye7=""
+              data-css-1qsfjxo=""
             >
               Bob Ross
             </div>
@@ -1600,7 +1692,7 @@ exports[`Storyshots Note/metadata as a link 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-2geye7=""
+          data-css-1qsfjxo=""
         >
           Bob Ross
         </div>
@@ -1693,7 +1785,7 @@ exports[`Storyshots Note/metadata with long strings 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-2geye7=""
+          data-css-1qsfjxo=""
         >
           Bob Ross
         </div>
