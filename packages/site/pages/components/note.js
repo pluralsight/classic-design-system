@@ -146,45 +146,43 @@ export default withServerProps(_ => (
         themeName="light"
         includes={{ Avatar, Note, Icon }}
         codes={[
-          `
-  <Note.List>
-    <Note
-      actionBar={[
-        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
-      ]}
-      avatar={<Avatar name="Mark Twain" src="//placebear.com/128/128" />}
-      heading="Mark Twain"
-      message={(
-        <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
-        )}
-      metadata={['June 18, 2019', '10:30am']}   
-    />
-
-    <Note
-      actionBar={[
-        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
-      ]}
-      avatar={<Avatar name="Samuel Lanhorne Clemens" src="//placebear.com/128/128" />}
-      heading="Samuel Lanhorne Clemens"
-      message={(
-        <p>There are those who imagine that the unlucky accidents of life—life's 'experiences'—are in some way useful to us. I wish I could find out how. I never know one of them to happen twice. They always change off and swap around and catch you on your inexperienced side.</p>
-      )}
-      metadata={['June 18, 2019', '10:30am']}
-    />
-
-    <Note
+          `<Note.List>
+  <Note
     actionBar={[
       <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
     ]}
-      avatar={<Avatar name="Mark Twain" src="//placebear.com/128/128" />}
-      heading="Mark Twain"
-      message={(
-        <p>Clothes make the man. Naked people have little or no influence on society.</p>
+    avatar={<Avatar name="Mark Twain" src="//placebear.com/128/128" />}
+    heading="Mark Twain"
+    message={(
+      <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
       )}
-      metadata={['June 18, 2019', '10:30am']}
-    />
-  </Note.List>
-        `
+    metadata={['June 18, 2019', '10:30am']}   
+  />
+
+  <Note
+    actionBar={[
+      <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+    ]}
+    avatar={<Avatar name="Samuel Lanhorne Clemens" src="//placebear.com/128/128" />}
+    heading="Samuel Lanhorne Clemens"
+    message={(
+      <p>There are those who imagine that the unlucky accidents of life—life's 'experiences'—are in some way useful to us. I wish I could find out how. I never know one of them to happen twice. They always change off and swap around and catch you on your inexperienced side.</p>
+    )}
+    metadata={['June 18, 2019', '10:30am']}
+  />
+
+  <Note
+  actionBar={[
+    <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+  ]}
+    avatar={<Avatar name="Mark Twain" src="//placebear.com/128/128" />}
+    heading="Mark Twain"
+    message={(
+      <p>Clothes make the man. Naked people have little or no influence on society.</p>
+    )}
+    metadata={['June 18, 2019', '10:30am']}
+  />
+</Note.List>`
         ]}
       />
 
@@ -195,8 +193,7 @@ export default withServerProps(_ => (
         themeName="light"
         includes={{ Avatar, Link, Note, Text }}
         codes={[
-          `
-<Note
+          `<Note
   avatar={
     <Note.AvatarLink>
       <a href="#">
@@ -214,8 +211,7 @@ export default withServerProps(_ => (
   message={(
     <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
   )}
-/>
-        `
+/>`
         ]}
       />
 
@@ -230,38 +226,18 @@ export default withServerProps(_ => (
         themeName="light"
         includes={{ Avatar, Link, Note, Text }}
         codes={[
-          `
-<Note
-  actionBar={[
-    <Note.Action icon={<Icon id={Icon.ids.pencil} />} title="Edit" />,
-    <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
-  ]}
-  avatar={
-    <Note.AvatarLink>
-      <a href="#">
-        <Avatar name="Mark Twain" src="//placebear.com/128/128" />
-      </a>
-    </Note.AvatarLink>
-  }
-  heading={
-    <Text.P>
-      <Link appearance={Link.appearances.subtle}>
-        <a href="#">Mark Twain</a>
-      </Link>
-    </Text.P>
-  }
+          `<Note
   message={(
     <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
   )}
   metadata={[
-    'Metadata 1', 
-    'Metadata 2', 
+    'Great American author', 
+    'Satirist', 
     <Link appearance={Link.appearances.subtle}>
       <a href="#">14 minutes ago</a>
     </Link>
   ]}
-/>
-        `
+/>`
         ]}
       />
 
@@ -271,44 +247,27 @@ export default withServerProps(_ => (
         are usually icon buttons. The actions can be displayed always, on hover,
         or without without the title.
       </P>
-      <P>Note with the action bar</P>
       <Example.React
         themeToggle
         themeName="light"
-        includes={{ Avatar, Link, Note, Text }}
+        includes={{ Avatar, Note }}
         codes={[
-          `
-<Note
+          `<Note
   actionBar={[
     <Note.Action icon={<Icon id={Icon.ids.pencil} />} title="Edit" />,
     <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
   ]}
+  actionBarVisible
   avatar={
-    <Note.AvatarLink>
-      <a href="#">
-        <Avatar name="Mark Twain" src="//placebear.com/128/128" />
-      </a>
-    </Note.AvatarLink>
+    <Avatar name="Mark Twain" src="//placebear.com/128/128" />
   }
   heading={
-    <Text.P>
-      <Link appearance={Link.appearances.subtle}>
-        <a href="#">Mark Twain</a>
-      </Link>
-    </Text.P>
+    <h2>Mark Twain</h2>
   }
   message={(
     <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
   )}
-  metadata={[
-    'Metadata 1', 
-    'Metadata 2', 
-    <Link appearance={Link.appearances.subtle}>
-      <a href="#">14 minutes ago</a>
-    </Link>
-  ]}
-/>
-        `
+/>`
         ]}
       />
 
@@ -322,24 +281,21 @@ export default withServerProps(_ => (
         themeName="light"
         includes={{ Note, Link }}
         codes={[
-          `
-<Note
+          `<Note
   actionBar={[
     <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
     <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
   ]}
+  actionBarVisible
   message={(
     <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
   )}
   metadata={[
     'Metadata 1', 
     'Metadata 2', 
-    <Link appearance={Link.appearances.subtle}>
-      <a href="#">14 minutes ago</a>
-    </Link>
+    '14 minutes ago'
   ]}
-/>
-        `
+/>`
         ]}
       />
     </Content>
