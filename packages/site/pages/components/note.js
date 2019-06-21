@@ -193,7 +193,7 @@ export default withServerProps(_ => (
       <Example.React
         themeToggle
         themeName="light"
-        includes={{ Avatar, Note }}
+        includes={{ Avatar, Link, Note, Text }}
         codes={[
           `
 <Note
@@ -228,7 +228,7 @@ export default withServerProps(_ => (
       <Example.React
         themeToggle
         themeName="light"
-        includes={{ Avatar, Note }}
+        includes={{ Avatar, Link, Note, Text }}
         codes={[
           `
 <Note
@@ -320,7 +320,7 @@ export default withServerProps(_ => (
       <Example.React
         themeToggle
         themeName="light"
-        includes={{ Note }}
+        includes={{ Note, Link }}
         codes={[
           `
 <Note
