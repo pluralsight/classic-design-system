@@ -85,6 +85,26 @@ storiesOf('Note', module)
       }
     />
   ))
+  .add('with h1 in heading', _ => (
+    <NoteWithDefaults
+      heading={<h1>Bob Ross</h1>}
+      message={
+        <React.Fragment>
+          <Text.P>
+            Be so very light. Be a gentle whisper. If these lines aren't
+            straight, your water's going to run right out of your painting and
+            get your floor wet. It is a lot of fun.
+          </Text.P>
+
+          <Text.P>
+            So often we avoid running water, and running water is a lot of fun.
+            Just beat the devil out of it. Work that paint. A beautiful little
+            sunset. This painting comes right out of your heart.
+          </Text.P>
+        </React.Fragment>
+      }
+    />
+  ))
 
 storiesOf('Note/metadata', module)
   .addDecorator(fn => <ConstrainWidth>{fn()}</ConstrainWidth>)

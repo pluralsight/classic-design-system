@@ -109,6 +109,11 @@ export default {
     lineHeight: core.type.lineHeightTight,
     marginRight: 'auto',
 
+    '& > *': {
+      fontSize: core.type.fontSizeSmall,
+      fontWeight: core.type.fontWeightBold,
+      lineHeight: core.type.lineHeightTight
+    },
     '& a': {
       color: 'inherit',
       cursor: 'pointer',
