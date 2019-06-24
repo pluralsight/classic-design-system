@@ -1,9 +1,10 @@
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
-import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
-import PropTypes from 'prop-types'
 import React from 'react'
+import PropTypes from 'prop-types'
+
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { vars as iconVars } from '@pluralsight/ps-design-system-icon'
 
 import { calcNextIndex } from '../js/index.js'
 import css from '../css/index.js'
@@ -15,8 +16,7 @@ const slide = glamor.css.keyframes(
   css['@keyframes psds-actionmenu__keyframes__slide']
 )
 const styles = {
-  arrow: ({ _isKeyboarding }) =>
-    glamor.css(css['.psds-actionmenu__item__arrow']),
+  arrow: () => glamor.css(css['.psds-actionmenu__item__arrow']),
   divider: () => glamor.css(css['.psds-actionmenu__divider']),
   menu: props =>
     glamor.css(
@@ -308,26 +308,19 @@ Item.propTypes = {
   _origin: PropTypes.oneOf(Object.keys(vars.origins).map(k => vars.origins[k]))
 }
 
-class Divider extends React.Component {
-  componentDidMount() {
-    if (this.props.isActive) this.props._onDividerFocus()
-  }
-  componentDidUpdate() {
-    if (this.props.isActive) this.props._onDividerFocus()
-  }
-  render() {
-    return (
-      <div
-        {...styles.divider(this.props)}
-        tabIndex="-1"
-        {...filterReactProps(this.props)}
-      />
-    )
-  }
+const Divider = props => {
+  React.useEffect(() => {
+    if (props.isActive) props._onDividerFocus()
+  })
+
+  return <div {...styles.divider(props)} {...filterReactProps(props)} />
 }
 Divider.propTypes = {
   _onDividerFocus: PropTypes.func,
   isActive: PropTypes.bool
+}
+Divider.defaultProps = {
+  tabIndex: '-1'
 }
 
 const Overlay = props => (
