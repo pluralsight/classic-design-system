@@ -151,7 +151,7 @@ export default {
     minWidth: 0
   },
   [`.psds-note__metadata.psds-theme--${themeNames.light}`]: {
-    color: core.colors.black
+    color: core.colors.gray03
   },
 
   '.psds-note__metadata-datum': {
