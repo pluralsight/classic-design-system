@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.7.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.7.0...@pluralsight/ps-design-system-site@12.7.1) (2019-06-24)
+
+
+### Bug Fixes
+
+* **site:** add vars to examples needing them ([63c5028](https://github.com/pluralsight/design-system/commit/63c5028))
+
+
+
+
+
 # [12.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.6.1...@pluralsight/ps-design-system-site@12.7.0) (2019-06-20)
 
 

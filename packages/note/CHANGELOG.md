@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-note@1.1.0...@pluralsight/ps-design-system-note@1.1.1) (2019-06-24)
+
+
+### Bug Fixes
+
+* **note:** maintain heading size with h1, etc ([deedac1](https://github.com/pluralsight/design-system/commit/deedac1))
+* **note:** update metadata color on light theme ([024762b](https://github.com/pluralsight/design-system/commit/024762b)), closes [#557](https://github.com/pluralsight/design-system/issues/557)
+
+
+
+
+
 # 1.1.0 (2019-06-20)
 
 
