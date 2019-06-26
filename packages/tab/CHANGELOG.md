@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.3...@pluralsight/ps-design-system-tab@11.0.4) (2019-06-26)
+
+
+### Bug Fixes
+
+* **tab:** remove vars reference ([e2d4d0a](https://github.com/pluralsight/design-system/commit/e2d4d0a))
+
+
+
+
+
 ## [11.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.2...@pluralsight/ps-design-system-tab@11.0.3) (2019-06-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tab
