@@ -199,7 +199,7 @@ function usePrevious(value) {
 
 const Item = props => {
   const { icon, isActive, ...rest } = props
-  const Tag = props.href ? 'a' : 'button'
+  const TagName = props.href ? 'a' : 'button'
   const prevIsActive = usePrevious(isActive)
 
   const itemEl = React.useRef()
@@ -259,8 +259,8 @@ const Item = props => {
 
   return (
     <div {...styles.itemContainer(props)}>
-      <Tag
-        {...filterReactProps(rest, { tagName: Tag })}
+      <TagName
+        {...filterReactProps(rest, { tagName: TagName })}
         {...styles.item(props)}
         aria-haspopup={!!props.nested}
         onFocus={handleFocus}
@@ -280,7 +280,7 @@ const Item = props => {
         {props.children}
 
         {props.nested && <NestedArrow _isKeyboarding={props._isKeyboarding} />}
-      </Tag>
+      </TagName>
 
       {nestedMenu}
     </div>
