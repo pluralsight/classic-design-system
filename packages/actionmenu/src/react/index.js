@@ -64,9 +64,9 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
     if (evt.key === 'ArrowLeft' || evt.key === 'Escape') {
       navigateOut(evt)
     } else if (evt.key === 'ArrowDown') {
-      navigate('down', evt)
+      navigate(evt, 'down')
     } else if (evt.key === 'ArrowUp') {
-      navigate('up', evt)
+      navigate(evt, 'up')
     } else if (evt.key === 'Tab') {
       navigateTab(evt)
     }
@@ -202,16 +202,16 @@ const Item = props => {
   const TagName = props.href ? 'a' : 'button'
   const prevIsActive = usePrevious(isActive)
 
-  const itemEl = React.useRef()
+  const itemRef = React.useRef()
   const [isNestedRendered, setIsNestedRendered] = React.useState(false)
 
   React.useEffect(() => {
-    if (isActive && props.shouldFocusOnMount) itemEl.current.focus()
+    if (isActive && props.shouldFocusOnMount) itemRef.current.focus()
   }, [isActive, props.shouldFocusOnMount])
 
   React.useEffect(() => {
     if (!prevIsActive && isActive && !isNestedRendered) {
-      itemEl.current.focus()
+      itemRef.current.focus()
     }
   }, [isActive, isNestedRendered, prevIsActive])
 
@@ -240,7 +240,7 @@ const Item = props => {
 
   const handleNestedClose = evt => {
     setIsNestedRendered(false)
-    itemEl.focus()
+    itemRef.current.focus()
   }
 
   const nestedMenu =
@@ -249,7 +249,7 @@ const Item = props => {
     isActive &&
     React.cloneElement(props.nested, {
       css: calcNestedMenuPosition(
-        itemEl.current.getBoundingClientRect().width,
+        itemRef.current.getBoundingClientRect().width,
         props._origin
       ),
       isKeyboarding: props._isKeyboarding,
@@ -266,7 +266,7 @@ const Item = props => {
         onFocus={handleFocus}
         onKeyDown={handleKeyDown}
         onMouseOver={handleMouseOver}
-        ref={itemEl}
+        ref={itemRef}
         role="menuitem"
         tabIndex="0"
         {...(props.disabled && {
