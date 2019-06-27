@@ -60,7 +60,7 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
 
   const [isKeyboarding, setIsKeyboarding] = React.useState(props.isKeyboarding)
 
-  const handleKeyDown = evt => {
+  function handleKeyDown(evt) {
     if (evt.key === 'ArrowLeft' || evt.key === 'Escape') {
       navigateOut(evt)
     } else if (evt.key === 'ArrowDown') {
@@ -72,7 +72,7 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
     }
   }
 
-  const handleDividerFocus = () => {
+  function handleDividerFocus() {
     if (activeDirection === 'down') {
       const newIndex = activeIndex + 1
       const itemsCount = React.Children.count(props.children)
@@ -90,16 +90,16 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
     }
   }
 
-  const focusItemAtIndex = index => {
+  function focusItemAtIndex(index) {
     setActiveIndex(index)
   }
 
-  const focusItemAtIndexWithMouse = index => {
+  function focusItemAtIndexWithMouse(index) {
     focusItemAtIndex(index)
     setIsKeyboarding(false)
   }
 
-  const navigate = (evt, direction) => {
+  function navigate(evt, direction) {
     evt.stopPropagation()
     evt.preventDefault()
 
@@ -113,13 +113,15 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
     setActiveIndex(nextActiveIndex)
     setIsKeyboarding(true)
   }
-  const navigateOut = evt => {
+
+  function navigateOut(evt) {
     evt.stopPropagation()
     evt.preventDefault()
 
     if (typeof props.onClose === 'function') props.onClose(evt)
   }
-  const navigateTab = evt => {
+
+  function navigateTab(evt) {
     const direction = evt.shiftKey ? 'up' : 'down'
     const lastIndex = React.Children.count(props.children) - 1
     const atEdge =
@@ -215,11 +217,11 @@ const Item = props => {
     }
   }, [isActive, isNestedRendered, prevIsActive])
 
-  const handleFocus = evt => {
+  function handleFocus(evt) {
     props._onItemFocus(props._i)
   }
 
-  const handleKeyDown = evt => {
+  function handleKeyDown(evt) {
     if (
       (evt.key === 'ArrowRight' || evt.key === ' ' || evt.key === 'Enter') &&
       props.nested
@@ -231,14 +233,14 @@ const Item = props => {
     }
   }
 
-  const handleMouseOver = evt => {
+  function handleMouseOver(evt) {
     if (!props.disabled) {
       if (props.nested) setIsNestedRendered(true)
       props._onMouseOver(props._i)
     }
   }
 
-  const handleNestedClose = evt => {
+  function handleNestedClose(evt) {
     setIsNestedRendered(false)
     itemRef.current.focus()
   }
