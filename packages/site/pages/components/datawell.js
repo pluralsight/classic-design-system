@@ -1,9 +1,7 @@
 import React from 'react'
 
-import DataWell from '@pluralsight/ps-design-system-datawell/react'
-import core from '@pluralsight/ps-design-system-core'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import DataWell from '@pluralsight/ps-design-system-datawell/react.js'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
 
 import {
   Chrome,
@@ -17,40 +15,6 @@ import {
   SectionHeading,
   withServerProps
 } from '../../src/ui/index.js'
-
-// function InAppExample(props) {
-//   return (
-//     <Theme>
-//       <div className="example">
-//         <div style={{ display: 'flex' }}>
-//           <DataWell label="Active learners">7.2 Billion</DataWell>
-//           <DataWell label="Pluralsight ROI">Vast</DataWell>
-//           <DataWell label="Lives changed" subLabel="Up to 11">
-//             11/10
-//           </DataWell>
-//         </div>
-//       </div>
-
-//       <Code
-//         collapsible
-//         language="javascript"
-//       >{`<div style={{ display: 'flex' }}>
-//   <DataWell label="Active learners">7.2 Billion</DataWell>
-//   <DataWell label="Pluralsight ROI">Vast</DataWell>
-//   <DataWell label="Lives changed" subLabel="Up to 11">11/10</DataWell>
-// </div>`}</Code>
-
-//       <style jsx>{`
-//         .example {
-//           padding: ${core.layout.spacingLarge};
-//           background: ${core.colors.gray06};
-//           color: ${core.colors.white};
-//           min-height: 200px;
-//         }
-//       `}</style>
-//     </Theme>
-//   )
-// }
 
 export default withServerProps(_ => (
   <Chrome>
@@ -93,7 +57,7 @@ export default withServerProps(_ => (
         ]}
       />
 
-      <SectionHeading>Example</SectionHeading>
+      <SectionHeading>Labels</SectionHeading>
       <P>
         Often Data Wells are shown in a row. Data Well is designed to fit inside
         this experience. Simply wrap them in a flex container. Labels should
@@ -121,37 +85,17 @@ export default withServerProps(_ => (
       <P>Keep labels, sublabels, and values short as possible.</P>
       <Guideline
         do={
-          <div
-            style={{
-              background: core.colors.gray04,
-              borderRadius: '4px',
-              padding: core.layout.spacingLarge
-            }}
-          >
-            <Theme>
-              <DataWell label="Royalty Payments" subLabel="Last 30 days">
-                $123M
-              </DataWell>
-            </Theme>
-          </div>
+          <DataWell label="Royalty Payments" subLabel="Last 30 days">
+            $123M
+          </DataWell>
         }
         dont={
-          <div
-            style={{
-              background: core.colors.gray04,
-              borderRadius: '4px',
-              padding: core.layout.spacingLarge
-            }}
+          <DataWell
+            label="Royalties Paid to Authors"
+            subLabel="For the period of the last thirty days"
           >
-            <Theme>
-              <DataWell
-                label="Royalties Paid to Authors"
-                subLabel="For the period of the last thirty days"
-              >
-                $123,456,789,123.03
-              </DataWell>
-            </Theme>
-          </div>
+            $123,456,789.03
+          </DataWell>
         }
       />
     </Content>
