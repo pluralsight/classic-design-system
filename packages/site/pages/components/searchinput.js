@@ -37,11 +37,25 @@ export default withServerProps(_ => (
       <PropTypes
         props={[
           PropTypes.row([
+            'label',
+            'string',
+            null,
+            null,
+            'non-standard above-field label'
+          ]),
+          PropTypes.row([
             'onClear',
             'function',
             null,
             null,
             'show clear button and trigger when button is clicked'
+          ]),
+          PropTypes.row([
+            'error',
+            'boolean',
+            null,
+            <code>false</code>,
+            'show error state'
           ]),
           PropTypes.row([
             'loading',
@@ -55,7 +69,14 @@ export default withServerProps(_ => (
             'string',
             null,
             null,
-            'in-field usage hint'
+            'standard in-field usage hint'
+          ]),
+          PropTypes.row([
+            'subLabel',
+            'string',
+            null,
+            null,
+            'non-standard below-field label or error message'
           ])
         ]}
       />
