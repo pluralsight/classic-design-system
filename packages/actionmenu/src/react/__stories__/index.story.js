@@ -6,9 +6,11 @@ import { action } from '@storybook/addon-actions'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import core from '@pluralsight/ps-design-system-core'
-import Button from '@pluralsight/ps-design-system-button/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import { Below } from '@pluralsight/ps-design-system-position/react'
+import {
+  BelowLeft,
+  BelowRight
+} from '@pluralsight/ps-design-system-position/react'
 
 import ActionMenu from '../index.js'
 
@@ -313,37 +315,61 @@ storiesOf('disabled', module)
 
 storiesOf('with Position', module)
   .addDecorator(themeDecorator(addons))
-  .add('example', _ => {
-    const Story = () => {
-      const [isOpen, setIsOpen] = React.useState(true)
-
-      return (
-        <div style={{ margin: core.layout.spacingMedium }}>
-          <Below
-            when={isOpen}
-            show={
-              <div>
-                <ActionMenu
-                  origin={ActionMenu.origins.topLeft}
-                  shouldFocusOnMount={false}
-                >
-                  <ActionMenu.Item>One item</ActionMenu.Item>
-                  <ActionMenu.Item>Two item</ActionMenu.Item>
-                  <ActionMenu.Item>Three item</ActionMenu.Item>
-                </ActionMenu>
-              </div>
-            }
-          >
-            <Button
-              appearance={Button.appearances.secondary}
-              size={Button.sizes.small}
-              icon={<Icon id={Icon.ids.more} />}
-              onClick={_ => setIsOpen(!isOpen)}
-            />
-          </Below>
+  .add('BelowLeft', () => (
+    <div style={{ margin: core.layout.spacingMedium }}>
+      <BelowLeft
+        when
+        show={
+          <div>
+            <ActionMenu
+              origin={ActionMenu.origins.topLeft}
+              shouldFocusOnMount={false}
+            >
+              <ActionMenu.Item>One item</ActionMenu.Item>
+              <ActionMenu.Item>Two item</ActionMenu.Item>
+              <ActionMenu.Item>Three item</ActionMenu.Item>
+            </ActionMenu>
+          </div>
+        }
+      >
+        <div
+          style={{
+            background: 'pink',
+            display: 'inline-block',
+            padding: core.layout.spacingXXSmall
+          }}
+        >
+          anchor
         </div>
-      )
-    }
-
-    return <Story />
-  })
+      </BelowLeft>
+    </div>
+  ))
+  .add('BelowRight', () => (
+    <div style={{ margin: core.layout.spacingMedium, float: 'right' }}>
+      <BelowRight
+        when
+        show={
+          <div>
+            <ActionMenu
+              origin={ActionMenu.origins.topRight}
+              shouldFocusOnMount={false}
+            >
+              <ActionMenu.Item>One item</ActionMenu.Item>
+              <ActionMenu.Item>Two item</ActionMenu.Item>
+              <ActionMenu.Item>Three item</ActionMenu.Item>
+            </ActionMenu>
+          </div>
+        }
+      >
+        <div
+          style={{
+            background: 'pink',
+            display: 'inline-block',
+            padding: core.layout.spacingXXSmall
+          }}
+        >
+          anchor
+        </div>
+      </BelowRight>
+    </div>
+  ))

@@ -1385,7 +1385,7 @@ exports[`Storyshots shouldFocusOnMount false 1`] = `
 </div>
 `;
 
-exports[`Storyshots with Position example 1`] = `
+exports[`Storyshots with Position BelowLeft 1`] = `
 <div
   data-css-claeju=""
 >
@@ -1396,38 +1396,24 @@ exports[`Storyshots with Position example 1`] = `
       }
     }
   >
-    <button
-      data-css-fu22rr=""
-      disabled={false}
-      onClick={[Function]}
-      style={Object {}}
-    >
-      <div
-        data-css-y80vay=""
-      >
-        <div
-          data-css-otejxm=""
-        >
-          <svg
-            aria-label="more icon"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
-            />
-          </svg>
-        </div>
-      </div>
-      <span
-        data-css-15b13by=""
-      />
-    </button>
     <div
       style={
         Object {
+          "background": "pink",
+          "display": "inline-block",
+          "padding": "4px",
+        }
+      }
+    >
+      anchor
+    </div>
+    <div
+      style={
+        Object {
+          "background": "pink",
+          "display": "inline-block",
           "left": "0px",
+          "padding": "4px",
           "position": "absolute",
           "top": "12px",
         }
@@ -1435,6 +1421,97 @@ exports[`Storyshots with Position example 1`] = `
     >
       <div
         data-css-1pg0ko5=""
+        onKeyDown={[Function]}
+        role="menu"
+      >
+        <div
+          data-css-13azwyo=""
+        >
+          <button
+            aria-haspopup={false}
+            data-css-1stw8mg=""
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseOver={[Function]}
+            role="menuitem"
+            tabIndex="0"
+          >
+            One item
+          </button>
+        </div>
+        <div
+          data-css-13azwyo=""
+        >
+          <button
+            aria-haspopup={false}
+            data-css-1stw8mg=""
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseOver={[Function]}
+            role="menuitem"
+            tabIndex="0"
+          >
+            Two item
+          </button>
+        </div>
+        <div
+          data-css-13azwyo=""
+        >
+          <button
+            aria-haspopup={false}
+            data-css-1stw8mg=""
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseOver={[Function]}
+            role="menuitem"
+            tabIndex="0"
+          >
+            Three item
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots with Position BelowRight 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "float": "right",
+        "margin": "16px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "pink",
+          "display": "inline-block",
+          "padding": "4px",
+        }
+      }
+    >
+      anchor
+    </div>
+    <div
+      style={
+        Object {
+          "background": "pink",
+          "display": "inline-block",
+          "left": "0px",
+          "padding": "4px",
+          "position": "absolute",
+          "top": "12px",
+        }
+      }
+    >
+      <div
+        data-css-kv78c9=""
         onKeyDown={[Function]}
         role="menu"
       >

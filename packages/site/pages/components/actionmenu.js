@@ -4,7 +4,7 @@ import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
 import Button from '@pluralsight/ps-design-system-button/react'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import { Below } from '@pluralsight/ps-design-system-position/react'
+import { BelowLeft } from '@pluralsight/ps-design-system-position/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
@@ -56,7 +56,7 @@ function InAppExample(props) {
 
       <Theme>
         <div className="example">
-          <Below
+          <BelowLeft
             when={isOpen}
             show={
               <div>
@@ -89,7 +89,7 @@ function InAppExample(props) {
               icon={<Icon id={Icon.ids.more} />}
               onClick={_ => setIsOpen(!isOpen)}
             />
-          </Below>
+          </BelowLeft>
 
           <div className="label">Clicked Item: {selected}</div>
         </div>
@@ -117,7 +117,7 @@ function InAppExample(props) {
 
   return (
     <div className="example">
-      <Below
+      <BelowLeft
         when={isOpen}
         show={
           <div>
@@ -150,7 +150,7 @@ function InAppExample(props) {
           icon={<Icon id={Icon.ids.more} />}
           onClick={_ => setIsOpen(!isOpen)}
         />
-      </Below>
+      </BelowLeft>
 
       <div className="label">Clicked Item: {selected}</div>
     </div>
