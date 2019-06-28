@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@1.1.2...@pluralsight/ps-design-system-searchinput@1.2.0) (2019-06-28)
+
+
+### Features
+
+* **site:** add label props to searchinput doc ([4b881ea](https://github.com/pluralsight/design-system/commit/4b881ea))
+
+
+
+
+
 ## [1.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@1.1.1...@pluralsight/ps-design-system-searchinput@1.1.2) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-searchinput
