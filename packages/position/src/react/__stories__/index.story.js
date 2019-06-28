@@ -118,7 +118,7 @@ reactStory.add('test.skip inNode', () => {
       <React.Fragment>
         <div
           style={{
-            positionFns: 'relative',
+            position: 'relative',
             top: '-200px',
             left: '-100px',
             border: `1px dashed ${core.colors.orange}`,
