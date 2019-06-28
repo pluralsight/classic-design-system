@@ -4,8 +4,8 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Tooltip from '@pluralsight/ps-design-system-tooltip/react'
 
-import { Above, Below, LeftOf, RightOf } from '../index.js'
-import * as position from '../../js/index.js'
+import * as positionFns from '../../js/index.js'
+import * as positionComponents from '../index.js'
 
 const Box = React.forwardRef((props, ref) => (
   <div
@@ -34,36 +34,44 @@ Box.propTypes = {
 
 // NOTE: old style refs to make storybook/storyshots happy
 class JsStory extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
+
     this.state = { style: {} }
     this.tooltipRef = React.createRef()
   }
+
   componentDidMount() {
-    const { props } = this
-    if (this.boxEl && this.tooltipRef.current)
-      this.setState({
-        styles: position[props.styleFunction](this.boxEl).styleFor(
-          this.tooltipRef.current
-        )
-      })
+    if (!this.boxEl || !this.tooltipRef.current) return
+
+    const fn = positionFns[this.props.positionType]
+
+    const nextStyles = fn(this.boxEl).styleFor(this.tooltipRef.current)
+    this.setState({ styles: nextStyles })
   }
+
   render() {
-    const { props } = this
+    const { positionType } = this.props
     const tailPositions = {
       above: Tooltip.tailPositions.bottomCenter,
+      aboveLeft: Tooltip.tailPositions.bottomLeft,
+      aboveRight: Tooltip.tailPositions.bottomRight,
       rightOf: null,
       below: Tooltip.tailPositions.topCenter,
+      belowLeft: Tooltip.tailPositions.topLeft,
+      belowRight: Tooltip.tailPositions.topRight,
       leftOf: null
     }
+    const tailPosition = tailPositions[positionType]
 
     return (
       <div>
-        <Box ref={el => (this.boxEl = el)}>{props.styleFunction}</Box>
+        <Box ref={el => (this.boxEl = el)}>{positionType}</Box>
+
         <Tooltip
           ref={this.tooltipRef}
           style={{ position: 'absolute', ...this.state.styles }}
-          tailPosition={tailPositions[props.styleFunction]}
+          tailPosition={tailPosition}
         >
           The tip
         </Tooltip>
@@ -72,22 +80,25 @@ class JsStory extends React.Component {
   }
 }
 
+JsStory.propTypes = {
+  positionType: PropTypes.oneOf(Object.keys(positionFns)).isRequired
+}
+
 const jsStory = storiesOf('js', module)
-;['above', 'rightOf', 'below', 'leftOf'].forEach(styleFunction =>
-  jsStory.add(styleFunction, _ => {
-    return <JsStory styleFunction={styleFunction} />
-  })
+Object.keys(positionFns).forEach(pos =>
+  jsStory.add(pos, _ => <JsStory positionType={pos} />)
 )
 
 const reactStory = storiesOf('react', module)
-;[Above, RightOf, Below, LeftOf].forEach(Position =>
-  reactStory.add(Position.displayName, () => (
-    <Position show={<Tooltip>The tip</Tooltip>}>
-      <Box>{'<' + Position.displayName + '/>'}</Box>
-    </Position>
+Object.values(positionComponents).forEach(Comp =>
+  reactStory.add(Comp.displayName, () => (
+    <Comp show={<Tooltip>The tip</Tooltip>}>
+      <Box>{'<' + Comp.displayName + '/>'}</Box>
+    </Comp>
   ))
 )
 
+const { Below } = positionComponents
 reactStory.add('when=false', () => (
   <Below when={false} show={<Tooltip>The tip</Tooltip>}>
     <Box>Hidden</Box>
@@ -99,18 +110,15 @@ reactStory.add('test.skip inNode', () => {
     const portal = React.useRef()
     const [node, setNode] = React.useState(portal.current)
 
-    React.useEffect(
-      () => {
-        setNode(portal.current)
-      },
-      [portal]
-    )
+    React.useEffect(() => {
+      setNode(portal.current)
+    }, [portal])
 
     return (
       <React.Fragment>
         <div
           style={{
-            position: 'relative',
+            positionFns: 'relative',
             top: '-200px',
             left: '-100px',
             border: `1px dashed ${core.colors.orange}`,
