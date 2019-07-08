@@ -1,14 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Carousel working example 1`] = `
-Array [
+<div
+  style={
+    Object {
+      "margin": 20,
+      "maxWidth": 1200,
+    }
+  }
+>
   <div
     data-css-10y4hkd=""
-    style={
-      Object {
-        "width": 1200,
-      }
-    }
   >
     <div>
       <button
@@ -34,19 +36,14 @@ Array [
             data-css-1oosafx=""
           >
             item: 
-            0
-          </div>
-        </div>
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-          >
-            item: 
             1
           </div>
         </div>
+      </div>
+      <div
+        data-css-bxro55=""
+        data-css-s4eyew=""
+      >
         <div
           data-css-1gthxiq=""
         >
@@ -72,6 +69,11 @@ Array [
             3
           </div>
         </div>
+      </div>
+      <div
+        data-css-bxro55=""
+        data-css-s4eyew=""
+      >
         <div
           data-css-1gthxiq=""
         >
@@ -82,6 +84,11 @@ Array [
             4
           </div>
         </div>
+      </div>
+      <div
+        data-css-bxro55=""
+        data-css-s4eyew=""
+      >
         <div
           data-css-1gthxiq=""
         >
@@ -107,6 +114,11 @@ Array [
             6
           </div>
         </div>
+      </div>
+      <div
+        data-css-bxro55=""
+        data-css-s4eyew=""
+      >
         <div
           data-css-1gthxiq=""
         >
@@ -117,6 +129,11 @@ Array [
             7
           </div>
         </div>
+      </div>
+      <div
+        data-css-bxro55=""
+        data-css-s4eyew=""
+      >
         <div
           data-css-1gthxiq=""
         >
@@ -142,6 +159,11 @@ Array [
             9
           </div>
         </div>
+      </div>
+      <div
+        data-css-bxro55=""
+        data-css-s4eyew=""
+      >
         <div
           data-css-1gthxiq=""
         >
@@ -153,159 +175,10 @@ Array [
           </div>
         </div>
       </div>
-    </div>
-  </div>,
-  <br />,
-  <div
-    data-css-10y4hkd=""
-    style={
-      Object {
-        "width": 1200,
-      }
-    }
-  >
-    <div>
-      <button
-        data-css-1611p8f=""
-        onClick={[Function]}
-      />
-      <button
-        data-css-1bxvhct=""
-        onClick={[Function]}
-      />
-    </div>
-    <div
-      data-css-1mz97k5=""
-    >
       <div
         data-css-bxro55=""
         data-css-s4eyew=""
       >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-          >
-            item: 
-            0
-          </div>
-        </div>
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-          >
-            item: 
-            1
-          </div>
-        </div>
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-          >
-            item: 
-            2
-          </div>
-        </div>
-      </div>
-      <div
-        data-css-bxro55=""
-        data-css-s4eyew=""
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-          >
-            item: 
-            3
-          </div>
-        </div>
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-          >
-            item: 
-            4
-          </div>
-        </div>
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-          >
-            item: 
-            5
-          </div>
-        </div>
-      </div>
-      <div
-        data-css-bxro55=""
-        data-css-s4eyew=""
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-          >
-            item: 
-            6
-          </div>
-        </div>
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-          >
-            item: 
-            7
-          </div>
-        </div>
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-          >
-            item: 
-            8
-          </div>
-        </div>
-      </div>
-      <div
-        data-css-bxro55=""
-        data-css-s4eyew=""
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-          >
-            item: 
-            9
-          </div>
-        </div>
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-          >
-            item: 
-            10
-          </div>
-        </div>
         <div
           data-css-1gthxiq=""
         >
@@ -331,6 +204,11 @@ Array [
             12
           </div>
         </div>
+      </div>
+      <div
+        data-css-bxro55=""
+        data-css-s4eyew=""
+      >
         <div
           data-css-1gthxiq=""
         >
@@ -341,18 +219,8 @@ Array [
             13
           </div>
         </div>
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-          >
-            item: 
-            14
-          </div>
-        </div>
       </div>
     </div>
-  </div>,
-]
+  </div>
+</div>
 `;

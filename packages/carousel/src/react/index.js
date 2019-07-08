@@ -1,62 +1,98 @@
 import * as glamor from 'glamor'
-import React, { Fragment, useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
+import { chunk } from '../js/utils.js'
+import * as vars from '../vars/index.js'
 
-const chunk = (arr, size) =>
-  arr.reduce((acc, item, index) => {
-    if (index % size === 0) acc.push([item])
-    else acc[acc.length - 1].push(item)
-
-    return acc
-  }, [])
-
-const combineFns = (...fns) => (...args) =>
-  fns.filter(isFunction).forEach(fn => fn(...args))
-
-const isFunction = fn => typeof fn === 'function'
+import CarouselContext from './context.js'
+import { Controls, Control } from './controls.js'
+import useResizeObserver from './use-resize-observer.js'
 
 const styles = {
   carousel: () => glamor.css(css['.psds-carousel']),
-  controls: () => glamor.css(css['.psds-carousel__controls']),
-  control: (themeName, { direction }) =>
-    glamor.compose(
-      glamor.css(css['.psds-carousel__controls__control']),
-      glamor.css(css[`.psds-carousel__controls__control--${direction}`])
-    ),
   pages: () => glamor.css(css['.psds-carousel__pages']),
   page: () => glamor.css(css['.psds-carousel__page']),
   item: () => glamor.css(css['.psds-carousel__item'])
 }
 
-const CarouselContext = React.createContext()
+export default function Carousel({ controls, size, ...props }) {
+  const { ref, width } = useResizeObserver()
 
-const Carousel = ({ controls, ...props }) => {
-  const pagesRef = React.useRef()
-  const [activePage, setActivePage] = useState(0)
-  const [offset, setOffset] = useState(0)
+  const constraints = vars.constraints[size]
+  const perPage = calcItemsPerPage(constraints, width)
 
-  // TODO:
-  //       - get item count
-  //       - calc num of pages
-  //       - shim missing els
+  const childArr = React.Children.toArray(props.children)
+  const pages = chunk(childArr, perPage).map(page => insertShims(page, perPage))
 
-  const perPage = 3
-  const pages = chunk(React.Children.toArray(props.children), perPage)
+  const { ref: pagesRef, next, prev, offset } = usePager(pages, [width])
+
+  return (
+    <CarouselContext.Provider value={{ next, prev, offset }}>
+      <div {...styles.carousel()} {...filterReactProps(props)} ref={ref}>
+        {controls}
+
+        <div {...styles.pages()} ref={pagesRef}>
+          {pages.map((items, i) => (
+            <Page key={i}>
+              {items.map((item, j) => (
+                <Item key={j}>{item}</Item>
+              ))}
+            </Page>
+          ))}
+        </div>
+      </div>
+    </CarouselContext.Provider>
+  )
+}
+
+Carousel.Controls = Controls
+Carousel.Control = Control
+
+Carousel.sizes = vars.sizes
+
+Carousel.propTypes = {
+  controls: PropTypes.node,
+  children: PropTypes.node.isRequired,
+  size: PropTypes.oneOf(Object.keys(Carousel.sizes))
+}
+Carousel.defaultProps = {
+  controls: <Controls />,
+  size: Carousel.sizes.narrow
+}
+
+function calcItemsPerPage(constraints, width) {
+  const minItemSize = constraints.minWidth + constraints.gutter
+  const perPage = Math.floor(width / (minItemSize - constraints.gutter))
+
+  return perPage <= 0 ? 1 : perPage
+}
+
+function insertShims(page, perPage) {
+  if (page.length >= perPage) return page
+
+  return page.concat(new Array(perPage - page.length).fill(<ItemShim />))
+}
+
+function usePager(pages, runOnChange = []) {
+  const [activePage, setActivePage] = React.useState(0)
+  const [offset, setOffset] = React.useState(0)
+
+  const ref = React.useRef()
 
   React.useEffect(() => {
-    const { current: parentEl } = pagesRef
+    const { current: parentEl } = ref
     const nextPageEl = parentEl.children[activePage]
 
-    // NOTE: this is to fix storyshots. find out why it's undefined
+    // NOTE: this is to fix storyshots.
+    // TODO: find out why it's this is undefined in tests
     if (!nextPageEl) return
 
     setOffset(parentEl.offsetLeft - nextPageEl.offsetLeft)
-  }, [activePage])
+  }, [activePage, ...runOnChange])
 
   const next = () => {
     const nextPage = activePage + 1
@@ -71,27 +107,18 @@ const Carousel = ({ controls, ...props }) => {
 
     setActivePage(nextPage)
   }
-
-  return (
-    <CarouselContext.Provider value={{ next, prev, offset }}>
-      <div {...styles.carousel()} {...filterReactProps(props)}>
-        {controls}
-
-        <div {...styles.pages()} ref={pagesRef}>
-          {pages.map((pageItems, pageIndex) => (
-            <Page key={pageIndex}>
-              {pageItems.map((item, itemIndex) => (
-                <Item key={pageIndex + ':' + itemIndex}>{item}</Item>
-              ))}
-            </Page>
-          ))}
-        </div>
-      </div>
-    </CarouselContext.Provider>
-  )
+  return { ref, next, prev, offset, activePage }
 }
 
-const Page = props => {
+function Item(props) {
+  return <div {...styles.item()} {...props} />
+}
+
+function ItemShim() {
+  return null
+}
+
+function Page(props) {
   const { offset } = React.useContext(CarouselContext)
 
   return (
@@ -102,57 +129,3 @@ const Page = props => {
     />
   )
 }
-
-const Item = props => <div {...styles.item()} {...props} />
-
-const Controls = props => (
-  <div {...styles.controls()} {...filterReactProps(props)} />
-)
-Controls.propTypes = {
-  children: PropTypes.node.isRequired // TODO: better validator
-}
-
-const Control = props => {
-  const themeName = useTheme()
-  const { next, prev } = React.useContext(CarouselContext)
-
-  const handleClick = combineFns(
-    props.direction === 'next' ? next : prev,
-    props.onClick
-  )
-
-  return (
-    <button
-      {...styles.control(themeName, props)}
-      {...filterReactProps(props, { tagName: 'button' })}
-      onClick={handleClick}
-    />
-  )
-}
-Control.directions = { prev: 'prev', next: 'next' }
-Control.propTypes = {
-  onClick: PropTypes.func,
-  direction: PropTypes.oneOf(Object.keys(Control.directions)).isRequired
-}
-
-Controls.defaultProps = {
-  children: (
-    <Fragment>
-      <Control direction={Control.directions.prev} />
-      <Control direction={Control.directions.next} />
-    </Fragment>
-  )
-}
-
-Carousel.Controls = Controls
-Carousel.Control = Control
-
-Carousel.propTypes = {
-  controls: PropTypes.element, // TODO: better validator
-  children: PropTypes.node.isRequired
-}
-Carousel.defaultProps = {
-  controls: <Controls />
-}
-
-export default Carousel

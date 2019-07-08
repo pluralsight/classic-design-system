@@ -19,19 +19,11 @@ const MockItem = props => (
 )
 
 storiesOf('Carousel', module).add('working example', _ => (
-  <React.Fragment>
-    <Carousel style={{ width: 1200 }}>
-      {new Array(11).fill(null).map((_, index) => (
-        <MockItem key={index}>item: {index}</MockItem>
+  <div style={{ margin: 20, maxWidth: 1200 }}>
+    <Carousel>
+      {new Array(13).fill(null).map((_, index) => (
+        <MockItem key={index}>item: {index + 1}</MockItem>
       ))}
     </Carousel>
-
-    <br />
-
-    <Carousel style={{ width: 1200 }}>
-      {new Array(15).fill(null).map((_, index) => (
-        <MockItem key={index}>item: {index}</MockItem>
-      ))}
-    </Carousel>
-  </React.Fragment>
+  </div>
 ))
