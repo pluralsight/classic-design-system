@@ -39,6 +39,7 @@ module.exports = {
       '/components/layout': { page: '/components/layout' },
       '/components/linearprogress': { page: '/components/linearprogress' },
       '/components/link': { page: '/components/link' },
+      '/components/note': { page: '/components/note' },
       '/components/position': { page: '/components/position' },
       '/components/position-portal-example': {
         page: '/components/position-portal-example'
