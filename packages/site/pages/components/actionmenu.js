@@ -4,6 +4,7 @@ import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
 import Button from '@pluralsight/ps-design-system-button/react'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import { BelowLeft } from '@pluralsight/ps-design-system-position/react'
 import * as Text from '@pluralsight/ps-design-system-text/react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
@@ -30,105 +31,16 @@ function InAppExample(props) {
       options: ['Twitz', 'DaBook', 'Instas']
     }
   ]
-  const [isOpen, setOpen] = React.useState(false)
+  const [isOpen, setIsOpen] = React.useState(false)
   const [selected, select] = React.useState(null)
-  function handleItemClick(opt) {
-    return _ => {
-      select(opt)
-      setOpen(false)
-    }
+
+  const handleItemClick = (evt, opt) => {
+    select(opt)
+    setIsOpen(false)
   }
+
   return (
-    <Theme>
-      <div className="example">
-        <Button
-          appearance={Button.appearances.secondary}
-          size={Button.sizes.small}
-          icon={<Icon id={Icon.ids.more} />}
-          onClick={_ => setOpen(!isOpen)}
-        />
-        <div
-          style={{ position: 'relative', marginTop: core.layout.spacingXSmall }}
-        >
-          {isOpen && (
-            <ActionMenu>
-              {categories.map(cat => (
-                <ActionMenu.Item
-                  key={cat}
-                  nested={
-                    <ActionMenu>
-                      {cat.options.map(opt => (
-                        <ActionMenu.Item onClick={handleItemClick(opt)}>
-                          {opt}
-                        </ActionMenu.Item>
-                      ))}
-                    </ActionMenu>
-                  }
-                >
-                  {cat.name}
-                </ActionMenu.Item>
-              ))}
-            </ActionMenu>
-          )}
-        </div>
-        <div className="label">Clicked Item: {selected}</div>
-      </div>
-
-      <Code collapsible language="javascript">{`function InAppExample(props) {
-  const categories = [ 
-    {   
-      name: 'Channels',
-      options: ['Dev', 'Ops', 'Design']
-    },  
-    {   
-      name: 'Socialz',
-      options: ['Twitz', 'DaBook', 'Instas']
-    }   
-  ]
-  const [isOpen, setOpen] = React.useState(false)
-  const [selected, select] = React.useState(null)
-  function handleItemClick(opt) {
-    return _ => {
-      select(opt)
-      setOpen(false)
-    }   
-  }
-  return (                                                                                                                                                            
-    <div>
-      <Button appearance={Button.appearances.secondary}
-        size={Button.sizes.small}
-        icon={<Icon id={Icon.ids.more} />} 
-        onClick={_ => setOpen(!isOpen)}
-      />
-      <div
-        style={{ position: 'relative', marginTop: core.layout.spacingXSmall }}
-      >
-        {isOpen && (
-          <ActionMenu>
-            {categories.map(cat => (
-              <ActionMenu.Item
-                key={cat}
-                nested={
-                  <ActionMenu>
-                    {cat.options.map(opt => (
-                      <ActionMenu.Item onClick={handleItemClick(opt)}>
-                        {opt}
-                      </ActionMenu.Item>
-                    ))}
-                  </ActionMenu>
-                }
-              >
-                {cat.name}
-              </ActionMenu.Item>
-            ))}
-          </ActionMenu>
-        )}
-      </div>
-      <div>Clicked Item: {selected}</div>
-    </div>
-  )
-}`}</Code>
-
+    <React.Fragment>
       <style jsx>{`
         .example {
           padding: ${core.layout.spacingLarge};
@@ -141,7 +53,111 @@ function InAppExample(props) {
           font-size: ${core.type.fontSizeMedium};
         }
       `}</style>
-    </Theme>
+
+      <Theme>
+        <div className="example">
+          <BelowLeft
+            when={isOpen}
+            show={
+              <div>
+                <ActionMenu origin={ActionMenu.origins.topLeft}>
+                  {categories.map(cat => (
+                    <ActionMenu.Item
+                      key={cat}
+                      nested={
+                        <ActionMenu>
+                          {cat.options.map(opt => (
+                            <ActionMenu.Item
+                              onClick={e => handleItemClick(e, opt)}
+                            >
+                              {opt}
+                            </ActionMenu.Item>
+                          ))}
+                        </ActionMenu>
+                      }
+                    >
+                      {cat.name}
+                    </ActionMenu.Item>
+                  ))}
+                </ActionMenu>
+              </div>
+            }
+          >
+            <Button
+              appearance={Button.appearances.secondary}
+              size={Button.sizes.small}
+              icon={<Icon id={Icon.ids.more} />}
+              onClick={_ => setIsOpen(!isOpen)}
+            />
+          </BelowLeft>
+
+          <div className="label">Clicked Item: {selected}</div>
+        </div>
+      </Theme>
+
+      <Code collapsible language="javascript">
+        {`function InAppExample() {
+  const categories = [
+    {
+      name: 'Channels',
+      options: ['Dev', 'Ops', 'Design']
+    },
+    {
+      name: 'Socialz',
+      options: ['Twitz', 'DaBook', 'Instas']
+    }
+  ]
+  const [isOpen, setIsOpen] = React.useState(false)
+  const [selected, select] = React.useState(null)
+
+  const handleItemClick = (evt, opt) => {
+    select(opt)
+    setIsOpen(false)
+  }
+
+  return (
+    <div className="example">
+      <BelowLeft
+        when={isOpen}
+        show={
+          <div>
+            <ActionMenu origin={ActionMenu.origins.topLeft}>
+              {categories.map(cat => (
+                <ActionMenu.Item
+                  key={cat}
+                  nested={
+                    <ActionMenu>
+                      {cat.options.map(opt => (
+                        <ActionMenu.Item
+                          onClick={e => handleItemClick(e, opt)}
+                        >
+                          {opt}
+                        </ActionMenu.Item>
+                      ))}
+                    </ActionMenu>
+                  }
+                >
+                  {cat.name}
+                </ActionMenu.Item>
+              ))}
+            </ActionMenu>
+          </div>
+        }
+      >
+        <Button
+          appearance={Button.appearances.secondary}
+          size={Button.sizes.small}
+          icon={<Icon id={Icon.ids.more} />}
+          onClick={_ => setIsOpen(!isOpen)}
+        />
+      </BelowLeft>
+
+      <div className="label">Clicked Item: {selected}</div>
+    </div>
+  )
+}`}
+      </Code>
+    </React.Fragment>
   )
 }
 

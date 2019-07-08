@@ -1,11 +1,13 @@
 import { cleanup, render, waitForElement } from 'react-testing-library'
 import React from 'react'
 
-import { above, below, leftOf, rightOf } from '../index.js'
+import * as positionFns from '../index.js'
 
 afterEach(cleanup)
 
 describe('#below', () => {
+  const { below } = positionFns
+
   it('throws if no target el given', () => {
     expect(_ => below()).toThrow(/target element required/)
   })
@@ -84,7 +86,168 @@ describe('#below', () => {
   })
 })
 
+describe('#belowLeft', () => {
+  const { belowLeft } = positionFns
+
+  it('throws if no target el given', () => {
+    expect(_ => belowLeft()).toThrow(/target element required/)
+  })
+
+  it('returns undefined if no el given', async () => {
+    const { getByTestId } = render(<div data-testid="target-el" />)
+    const targetEl = await waitForElement(() => getByTestId('target-el'))
+    expect(belowLeft(targetEl).styleFor()).toBeUndefined()
+  })
+
+  it('returns styles', async () => {
+    const targetEl = await createEl()
+    const el = await createEl({
+      width: 100,
+      height: 100
+    })
+
+    expect(belowLeft(targetEl).styleFor(el)).toEqual({
+      position: 'absolute',
+      top: '12px',
+      left: '0px'
+    })
+  })
+
+  it('adjusts for target dimensions', async () => {
+    const targetEl = await createEl({
+      height: 200,
+      width: 200
+    })
+    const el = await createEl({
+      width: 100,
+      height: 100
+    })
+
+    expect(belowLeft(targetEl).styleFor(el)).toEqual({
+      position: 'absolute',
+      top: '212px',
+      left: '0px'
+    })
+  })
+
+  it('adjusts for target placement', async () => {
+    const targetEl = await createEl({
+      height: 200,
+      width: 200,
+      top: 50,
+      left: 25
+    })
+    const el = await createEl({
+      width: 100,
+      height: 100
+    })
+
+    expect(belowLeft(targetEl).styleFor(el)).toEqual({
+      position: 'absolute',
+      top: '262px',
+      left: '25px'
+    })
+  })
+
+  it('adjusts for element width', async () => {
+    const targetEl = await createEl({
+      height: 200,
+      width: 200
+    })
+    const el = await createEl({
+      width: 200,
+      height: 100
+    })
+
+    expect(belowLeft(targetEl).styleFor(el)).toEqual({
+      position: 'absolute',
+      top: '212px',
+      left: '0px'
+    })
+  })
+})
+
+describe('#belowRight', () => {
+  const { belowRight } = positionFns
+
+  it('throws if no target el given', () => {
+    expect(_ => belowRight()).toThrow(/target element required/)
+  })
+
+  it('returns undefined if no el given', async () => {
+    const { getByTestId } = render(<div data-testid="target-el" />)
+    const targetEl = await waitForElement(() => getByTestId('target-el'))
+    expect(belowRight(targetEl).styleFor()).toBeUndefined()
+  })
+
+  it('returns styles', async () => {
+    const targetEl = await createEl()
+    const el = await createEl({ width: 150, height: 100 })
+
+    expect(belowRight(targetEl).styleFor(el)).toEqual({
+      position: 'absolute',
+      top: '12px',
+      left: '-150px'
+    })
+  })
+
+  it('adjusts for target dimensions', async () => {
+    const targetEl = await createEl({
+      height: 200,
+      width: 100
+    })
+    const el = await createEl({
+      width: 150,
+      height: 100
+    })
+
+    expect(belowRight(targetEl).styleFor(el)).toEqual({
+      position: 'absolute',
+      top: '212px',
+      left: '-50px'
+    })
+  })
+
+  it('adjusts for target placement', async () => {
+    const targetEl = await createEl({
+      height: 200,
+      width: 150,
+      top: 50,
+      left: 125
+    })
+    const el = await createEl({
+      width: 150,
+      height: 100
+    })
+
+    expect(belowRight(targetEl).styleFor(el)).toEqual({
+      position: 'absolute',
+      top: '262px',
+      left: '125px'
+    })
+  })
+
+  it('adjusts for element width', async () => {
+    const targetEl = await createEl({
+      height: 200,
+      width: 200
+    })
+    const el = await createEl({
+      width: 200,
+      height: 100
+    })
+
+    expect(belowRight(targetEl).styleFor(el)).toEqual({
+      position: 'absolute',
+      top: '212px',
+      left: '0px'
+    })
+  })
+})
+
 describe('#above', () => {
+  const { above } = positionFns
+
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
@@ -130,7 +293,105 @@ describe('#above', () => {
   })
 })
 
+describe('#aboveLeft', () => {
+  const { aboveLeft } = positionFns
+
+  it('returns undefined if no el given', async () => {
+    const { getByTestId } = render(<div data-testid="target-el" />)
+    const targetEl = await waitForElement(() => getByTestId('target-el'))
+    expect(aboveLeft(targetEl).styleFor()).toBeUndefined()
+  })
+
+  it('adjusts for target placement and dimensions', async () => {
+    const targetEl = await createEl({
+      top: 100,
+      left: 25,
+      height: 200,
+      width: 200
+    })
+    const el = await createEl({
+      width: 100,
+      height: 50
+    })
+
+    expect(aboveLeft(targetEl).styleFor(el)).toEqual({
+      position: 'absolute',
+      top: '38px',
+      left: '25px'
+    })
+  })
+
+  it('adjusts for element width', async () => {
+    const targetEl = await createEl({
+      top: 100,
+      left: 25,
+      height: 200,
+      width: 200
+    })
+    const el = await createEl({
+      width: 300,
+      height: 50
+    })
+
+    expect(aboveLeft(targetEl).styleFor(el)).toEqual({
+      position: 'absolute',
+      top: '38px',
+      left: '25px'
+    })
+  })
+})
+
+describe('#aboveRight', () => {
+  const { aboveRight } = positionFns
+
+  it('returns undefined if no el given', async () => {
+    const { getByTestId } = render(<div data-testid="target-el" />)
+    const targetEl = await waitForElement(() => getByTestId('target-el'))
+    expect(aboveRight(targetEl).styleFor()).toBeUndefined()
+  })
+
+  it('adjusts for target placement and dimensions', async () => {
+    const targetEl = await createEl({
+      top: 100,
+      left: 25,
+      height: 200,
+      width: 200
+    })
+    const el = await createEl({
+      width: 100,
+      height: 50
+    })
+
+    expect(aboveRight(targetEl).styleFor(el)).toEqual({
+      position: 'absolute',
+      top: '38px',
+      left: '125px'
+    })
+  })
+
+  it('adjusts for element width', async () => {
+    const targetEl = await createEl({
+      top: 100,
+      left: 25,
+      height: 200,
+      width: 200
+    })
+    const el = await createEl({
+      width: 300,
+      height: 50
+    })
+
+    expect(aboveRight(targetEl).styleFor(el)).toEqual({
+      position: 'absolute',
+      top: '38px',
+      left: '-75px'
+    })
+  })
+})
+
 describe('#rightOf', () => {
+  const { rightOf } = positionFns
+
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
@@ -175,6 +436,8 @@ describe('#rightOf', () => {
 })
 
 describe('#leftOf', () => {
+  const { leftOf } = positionFns
+
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))

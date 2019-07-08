@@ -2,25 +2,45 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { above, below, leftOf, rightOf } from '../js/index.js'
+import * as positionFns from '../js/index.js'
 
 export function Above(props) {
-  return <Position position={above} {...props} />
+  return <Position position={positionFns.above} {...props} />
 }
 Above.displayName = 'Above'
 
+export function AboveLeft(props) {
+  return <Position position={positionFns.aboveLeft} {...props} />
+}
+AboveLeft.displayName = 'AboveLeft'
+
+export function AboveRight(props) {
+  return <Position position={positionFns.aboveRight} {...props} />
+}
+AboveRight.displayName = 'AboveRight'
+
 export function Below(props) {
-  return <Position position={below} {...props} />
+  return <Position position={positionFns.below} {...props} />
 }
 Below.displayName = 'Below'
 
+export function BelowLeft(props) {
+  return <Position position={positionFns.belowLeft} {...props} />
+}
+BelowLeft.displayName = 'BelowLeft'
+
+export function BelowRight(props) {
+  return <Position position={positionFns.belowRight} {...props} />
+}
+BelowRight.displayName = 'BelowRight'
+
 export function RightOf(props) {
-  return <Position position={rightOf} {...props} />
+  return <Position position={positionFns.rightOf} {...props} />
 }
 RightOf.displayName = 'RightOf'
 
 export function LeftOf(props) {
-  return <Position position={leftOf} {...props} />
+  return <Position position={positionFns.leftOf} {...props} />
 }
 LeftOf.displayName = 'LeftOf'
 
@@ -30,13 +50,10 @@ function Position(props) {
   const child = React.Children.only(props.children)
   const [style, setStyle] = React.useState({ position: 'absolute' })
 
-  React.useLayoutEffect(
-    () => {
-      if (props.when && targetRef.current && elRef.current)
-        setStyle(props.position(targetRef.current).styleFor(elRef.current))
-    },
-    [props.when, targetRef, elRef, props]
-  )
+  React.useLayoutEffect(() => {
+    if (props.when && targetRef.current && elRef.current)
+      setStyle(props.position(targetRef.current).styleFor(elRef.current))
+  }, [props.when, targetRef, elRef, props])
 
   const show = React.cloneElement(props.show, {
     ref: elRef,
@@ -45,6 +62,7 @@ function Position(props) {
       ...style
     }
   })
+
   return (
     <React.Fragment>
       {React.cloneElement(child, {

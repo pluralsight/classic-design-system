@@ -1384,3 +1384,184 @@ exports[`Storyshots shouldFocusOnMount false 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots with Position BelowLeft 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "margin": "16px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "pink",
+          "display": "inline-block",
+          "padding": "4px",
+        }
+      }
+    >
+      anchor
+    </div>
+    <div
+      style={
+        Object {
+          "background": "pink",
+          "display": "inline-block",
+          "left": "0px",
+          "padding": "4px",
+          "position": "absolute",
+          "top": "12px",
+        }
+      }
+    >
+      <div
+        data-css-1pg0ko5=""
+        onKeyDown={[Function]}
+        role="menu"
+      >
+        <div
+          data-css-13azwyo=""
+        >
+          <button
+            aria-haspopup={false}
+            data-css-1stw8mg=""
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseOver={[Function]}
+            role="menuitem"
+            tabIndex="0"
+          >
+            One item
+          </button>
+        </div>
+        <div
+          data-css-13azwyo=""
+        >
+          <button
+            aria-haspopup={false}
+            data-css-1stw8mg=""
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseOver={[Function]}
+            role="menuitem"
+            tabIndex="0"
+          >
+            Two item
+          </button>
+        </div>
+        <div
+          data-css-13azwyo=""
+        >
+          <button
+            aria-haspopup={false}
+            data-css-1stw8mg=""
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseOver={[Function]}
+            role="menuitem"
+            tabIndex="0"
+          >
+            Three item
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots with Position BelowRight 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "float": "right",
+        "margin": "16px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "pink",
+          "display": "inline-block",
+          "padding": "4px",
+        }
+      }
+    >
+      anchor
+    </div>
+    <div
+      style={
+        Object {
+          "background": "pink",
+          "display": "inline-block",
+          "left": "0px",
+          "padding": "4px",
+          "position": "absolute",
+          "top": "12px",
+        }
+      }
+    >
+      <div
+        data-css-kv78c9=""
+        onKeyDown={[Function]}
+        role="menu"
+      >
+        <div
+          data-css-13azwyo=""
+        >
+          <button
+            aria-haspopup={false}
+            data-css-1stw8mg=""
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseOver={[Function]}
+            role="menuitem"
+            tabIndex="0"
+          >
+            One item
+          </button>
+        </div>
+        <div
+          data-css-13azwyo=""
+        >
+          <button
+            aria-haspopup={false}
+            data-css-1stw8mg=""
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseOver={[Function]}
+            role="menuitem"
+            tabIndex="0"
+          >
+            Two item
+          </button>
+        </div>
+        <div
+          data-css-13azwyo=""
+        >
+          <button
+            aria-haspopup={false}
+            data-css-1stw8mg=""
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseOver={[Function]}
+            role="menuitem"
+            tabIndex="0"
+          >
+            Three item
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

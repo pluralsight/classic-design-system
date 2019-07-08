@@ -1,10 +1,16 @@
+import React from 'react'
+
 import addons from '@storybook/addons'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import React from 'react'
-
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
+
+import core from '@pluralsight/ps-design-system-core'
+import Icon from '@pluralsight/ps-design-system-icon/react'
+import {
+  BelowLeft,
+  BelowRight
+} from '@pluralsight/ps-design-system-position/react'
 
 import ActionMenu from '../index.js'
 
@@ -305,4 +311,65 @@ storiesOf('disabled', module)
         Nested but disabled
       </ActionMenu.Item>
     </ActionMenu>
+  ))
+
+storiesOf('with Position', module)
+  .addDecorator(themeDecorator(addons))
+  .add('BelowLeft', () => (
+    <div style={{ margin: core.layout.spacingMedium }}>
+      <BelowLeft
+        when
+        show={
+          <div>
+            <ActionMenu
+              origin={ActionMenu.origins.topLeft}
+              shouldFocusOnMount={false}
+            >
+              <ActionMenu.Item>One item</ActionMenu.Item>
+              <ActionMenu.Item>Two item</ActionMenu.Item>
+              <ActionMenu.Item>Three item</ActionMenu.Item>
+            </ActionMenu>
+          </div>
+        }
+      >
+        <div
+          style={{
+            background: 'pink',
+            display: 'inline-block',
+            padding: core.layout.spacingXXSmall
+          }}
+        >
+          anchor
+        </div>
+      </BelowLeft>
+    </div>
+  ))
+  .add('BelowRight', () => (
+    <div style={{ margin: core.layout.spacingMedium, float: 'right' }}>
+      <BelowRight
+        when
+        show={
+          <div>
+            <ActionMenu
+              origin={ActionMenu.origins.topRight}
+              shouldFocusOnMount={false}
+            >
+              <ActionMenu.Item>One item</ActionMenu.Item>
+              <ActionMenu.Item>Two item</ActionMenu.Item>
+              <ActionMenu.Item>Three item</ActionMenu.Item>
+            </ActionMenu>
+          </div>
+        }
+      >
+        <div
+          style={{
+            background: 'pink',
+            display: 'inline-block',
+            padding: core.layout.spacingXXSmall
+          }}
+        >
+          anchor
+        </div>
+      </BelowRight>
+    </div>
   ))

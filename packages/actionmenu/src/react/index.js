@@ -1,9 +1,10 @@
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
-import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
-import PropTypes from 'prop-types'
 import React from 'react'
+import PropTypes from 'prop-types'
+
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { vars as iconVars } from '@pluralsight/ps-design-system-icon'
 
 import { calcNextIndex } from '../js/index.js'
 import css from '../css/index.js'
@@ -15,8 +16,7 @@ const slide = glamor.css.keyframes(
   css['@keyframes psds-actionmenu__keyframes__slide']
 )
 const styles = {
-  arrow: ({ _isKeyboarding }) =>
-    glamor.css(css['.psds-actionmenu__item__arrow']),
+  arrow: () => glamor.css(css['.psds-actionmenu__item__arrow']),
   divider: () => glamor.css(css['.psds-actionmenu__divider']),
   menu: props =>
     glamor.css(
@@ -24,6 +24,9 @@ const styles = {
       css[`.psds-actionmenu--origin-${props.origin}`],
       props.css
     ),
+  overlay: () => glamor.css(css['.psds-actionmenu__overlay']),
+  itemContainer: () => glamor.css(css['.psds-actionmenu__item-container']),
+  itemIcon: () => glamor.css(css['.psds-actionmenu__item__icon']),
   item: ({ _isKeyboarding, disabled, icon, isActive, nested }) =>
     glamor.css(
       css['.psds-actionmenu__item'],
@@ -45,120 +48,113 @@ const styles = {
     )
 }
 
-class ActionMenu extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      activeIndex: props.shouldFocusOnMount
-        ? calcNextIndex(
-            React.Children.map(this.props.children, c => c.props),
-            1,
-            -1
-          )
-        : -1,
-      activeDirection: 'down',
-      isKeyboarding: props.isKeyboarding
-    }
-    this.handleKeyDown = this.handleKeyDown.bind(this)
-    this.handleDividerFocus = this.handleDividerFocus.bind(this)
-    this.focusItemAtIndex = this.focusItemAtIndex.bind(this)
-    this.focusItemAtIndexWithMouse = this.focusItemAtIndexWithMouse.bind(this)
-  }
-  handleKeyDown(evt) {
+const ActionMenu = React.forwardRef((props, forwardedRef) => {
+  const ref = forwardedRef || React.useRef()
+
+  const initialIndex = props.shouldFocusOnMount
+    ? calcNextIndex(React.Children.map(props.children, c => c.props), 1, -1)
+    : -1
+  const [activeIndex, setActiveIndex] = React.useState(initialIndex)
+
+  const [activeDirection, setActiveDirection] = React.useState('down')
+
+  const [isKeyboarding, setIsKeyboarding] = React.useState(props.isKeyboarding)
+
+  function handleKeyDown(evt) {
     if (evt.key === 'ArrowLeft' || evt.key === 'Escape') {
-      this.navigateOut(evt)
+      navigateOut(evt)
     } else if (evt.key === 'ArrowDown') {
-      this.navigate('down', evt)
+      navigate(evt, 'down')
     } else if (evt.key === 'ArrowUp') {
-      this.navigate('up', evt)
+      navigate(evt, 'up')
     } else if (evt.key === 'Tab') {
-      this.navigateTab(evt)
+      navigateTab(evt)
     }
   }
-  handleDividerFocus() {
-    if (this.state.activeDirection === 'down') {
-      const newIndex = this.state.activeIndex + 1
-      const itemsCount = React.Children.count(this.props.children)
-      const activeIndex = newIndex > itemsCount - 1 ? itemsCount - 1 : newIndex
-      this.setState({ activeIndex, activeDirection: 'down' })
-    } else if (this.state.activeDirection === 'up') {
-      const newIndex = this.state.activeIndex - 1
-      const activeIndex = newIndex <= 0 ? 0 : newIndex
-      this.setState({ activeIndex, activeDirection: 'up' })
+
+  function handleDividerFocus() {
+    if (activeDirection === 'down') {
+      const newIndex = activeIndex + 1
+      const itemsCount = React.Children.count(props.children)
+      const nextActiveIndex =
+        newIndex > itemsCount - 1 ? itemsCount - 1 : newIndex
+
+      setActiveIndex(nextActiveIndex)
+      setActiveDirection('down')
+    } else if (activeDirection === 'up') {
+      const newIndex = activeIndex - 1
+      const nextActiveIndex = newIndex <= 0 ? 0 : newIndex
+
+      setActiveIndex(nextActiveIndex)
+      setActiveDirection('up')
     }
   }
-  focusItemAtIndex(i) {
-    this.setState({ activeIndex: i })
+
+  function focusItemAtIndex(index) {
+    setActiveIndex(index)
   }
-  focusItemAtIndexWithMouse(i) {
-    this.focusItemAtIndex(i)
-    this.setState({ isKeyboarding: false })
+
+  function focusItemAtIndexWithMouse(index) {
+    focusItemAtIndex(index)
+    setIsKeyboarding(false)
   }
-  navigateOut(evt) {
+
+  function navigate(evt, direction) {
     evt.stopPropagation()
     evt.preventDefault()
-    if (typeof this.props.onClose === 'function') this.props.onClose()
-  }
-  navigate(direction, evt) {
-    evt.stopPropagation()
-    evt.preventDefault()
-    const activeIndex = calcNextIndex(
-      React.Children.map(this.props.children, c => c.props),
+
+    const nextActiveIndex = calcNextIndex(
+      React.Children.map(props.children, c => c.props),
       direction === 'down' ? 1 : -1,
-      this.state.activeIndex
+      activeIndex
     )
 
-    this.setState({
-      activeIndex,
-      activeDirection: direction,
-      isKeyboarding: true
-    })
+    setActiveDirection(direction)
+    setActiveIndex(nextActiveIndex)
+    setIsKeyboarding(true)
   }
-  navigateTab(evt) {
+
+  function navigateOut(evt) {
+    evt.stopPropagation()
+    evt.preventDefault()
+
+    if (typeof props.onClose === 'function') props.onClose(evt)
+  }
+
+  function navigateTab(evt) {
     const direction = evt.shiftKey ? 'up' : 'down'
-    const { activeIndex } = this.state
-    const lastIndex = React.Children.count(this.props.children) - 1
+    const lastIndex = React.Children.count(props.children) - 1
     const atEdge =
       (direction === 'up' && activeIndex === 0) ||
       (direction === 'down' && activeIndex === lastIndex)
 
-    if (atEdge) {
-      this.navigateOut(evt)
-    } else {
-      this.navigate(direction, evt)
-    }
+    if (atEdge) navigateOut(evt)
+    else navigate(evt, direction)
   }
-  render() {
-    const { ref: innerRef, ...rest } = this.props
 
-    return (
-      <Menu
-        {...rest}
-        innerRef={innerRef}
-        onKeyDown={this.handleKeyDown}
-        role="menu"
-      >
-        {React.Children.map(this.props.children, (child, i) =>
-          React.cloneElement(child, {
-            isActive: i === this.state.activeIndex,
-            shouldFocusOnMount: this.props.shouldFocusOnMount,
-            _i: i,
-            _isKeyboarding: this.state.isKeyboarding,
-            _onItemFocus: this.focusItemAtIndex,
-            _onDividerFocus: this.handleDividerFocus,
-            _onMouseOver: this.focusItemAtIndexWithMouse,
-            _origin: this.props.origin
-          })
-        )}
-      </Menu>
-    )
-  }
-}
+  return (
+    <Menu onKeyDown={handleKeyDown} ref={ref} role="menu" {...props}>
+      {React.Children.map(props.children, (child, i) =>
+        React.cloneElement(child, {
+          isActive: i === activeIndex,
+          shouldFocusOnMount: props.shouldFocusOnMount,
+
+          _i: i,
+          _isKeyboarding: isKeyboarding,
+          _onDividerFocus: handleDividerFocus,
+          _onItemFocus: focusItemAtIndex,
+          _onMouseOver: focusItemAtIndexWithMouse,
+          _origin: props.origin
+        })
+      )}
+    </Menu>
+  )
+})
 ActionMenu.displayName = 'ActionMenu'
 
 const ItemIcon = props => {
   return (
-    <div {...glamor.css(css['.psds-actionmenu__item__icon'])}>
+    <div {...styles.itemIcon(props)}>
       {React.cloneElement(props.children, { size: iconVars.sizes.medium })}
     </div>
   )
@@ -193,104 +189,106 @@ const calcNestedMenuPosition = (menuWidth, origin) =>
     }
   }[origin])
 
-class Item extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isNestedRendered: false
+function usePrevious(value) {
+  const ref = React.useRef()
+
+  React.useEffect(() => {
+    ref.current = value
+  }, [value])
+
+  return ref.current
+}
+
+const Item = props => {
+  const { icon, isActive, ...rest } = props
+  const TagName = props.href ? 'a' : 'button'
+  const prevIsActive = usePrevious(isActive)
+
+  const itemRef = React.useRef()
+  const [isNestedRendered, setIsNestedRendered] = React.useState(false)
+
+  React.useEffect(() => {
+    if (isActive && props.shouldFocusOnMount) itemRef.current.focus()
+  }, [isActive, props.shouldFocusOnMount])
+
+  React.useEffect(() => {
+    if (!prevIsActive && isActive && !isNestedRendered) {
+      itemRef.current.focus()
     }
-    this.handleKeyDown = this.handleKeyDown.bind(this)
-    this.handleNestedClose = this.handleNestedClose.bind(this)
-    this.handleMouseOver = this.handleMouseOver.bind(this)
-    this.handleMouseOut = this.handleMouseOut.bind(this)
-    this.handleFocus = this.handleFocus.bind(this)
+  }, [isActive, isNestedRendered, prevIsActive])
+
+  function handleFocus(evt) {
+    props._onItemFocus(props._i)
   }
-  componentDidMount() {
-    if (this.props.isActive && this.props.shouldFocusOnMount) this.item.focus()
-  }
-  componentDidUpdate(prevProps) {
-    if (
-      !prevProps.isActive &&
-      this.props.isActive &&
-      !this.state.isNestedRendered
-    )
-      this.item.focus()
-  }
-  handleKeyDown(evt) {
+
+  function handleKeyDown(evt) {
     if (
       (evt.key === 'ArrowRight' || evt.key === ' ' || evt.key === 'Enter') &&
-      this.props.nested
+      props.nested
     ) {
       evt.stopPropagation()
       evt.preventDefault()
-      this.setState({ isNestedRendered: true })
-    }
-  }
-  handleNestedClose() {
-    this.setState({ isNestedRendered: false })
 
-    this.item.focus()
-  }
-  handleMouseOver() {
-    if (!this.props.disabled) {
-      if (this.props.nested) this.setState({ isNestedRendered: true })
-      this.props._onMouseOver(this.props._i)
+      setIsNestedRendered(true)
     }
   }
-  handleMouseOut() {
-    if (!this.props.disabled) {
-      if (this.props.nested) this.setState({ isNestedRendered: false })
+
+  function handleMouseOver(evt) {
+    if (!props.disabled) {
+      if (props.nested) setIsNestedRendered(true)
+      props._onMouseOver(props._i)
     }
   }
-  handleFocus() {
-    this.props._onItemFocus(this.props._i)
+
+  function handleNestedClose(evt) {
+    setIsNestedRendered(false)
+    itemRef.current.focus()
   }
-  renderNested() {
-    return this.state.isNestedRendered &&
-      this.props.nested &&
-      this.props.isActive
-      ? React.cloneElement(this.props.nested, {
-          css: calcNestedMenuPosition(
-            this.item.getBoundingClientRect().width,
-            this.props._origin
-          ),
-          isKeyboarding: this.props._isKeyboarding,
-          onClose: this.handleNestedClose,
-          origin: this.props._origin
-        })
-      : null
-  }
-  render() {
-    const tagName = this.props.href ? 'a' : 'button'
-    const { href, icon, ...potentialValidHtmlProps } = this.props
-    return (
-      <div {...glamor.css(css['.psds-actionmenu__item-container'])}>
-        {React.createElement(
-          tagName,
-          {
-            ...filterReactProps(potentialValidHtmlProps, { tagName }),
-            'aria-haspopup': !!this.props.nested,
-            ...(!this.props.disabled ? { href: this.props.href } : null),
-            ref: el => (this.item = el),
-            onClick: this.props.onClick,
-            onKeyDown: this.handleKeyDown,
-            onMouseOver: this.handleMouseOver,
-            ...(!this.props.disabled ? { onFocus: this.handleFocus } : null),
-            role: 'menuitem',
-            ...styles.item(this.props),
-            tabIndex: this.props.disabled ? '-1' : '0'
-          },
-          this.props.icon && <ItemIcon>{this.props.icon}</ItemIcon>,
-          this.props.children,
-          this.props.nested && (
-            <NestedArrow _isKeyboarding={this.props._isKeyboarding} />
-          )
-        )}
-        {this.renderNested()}
-      </div>
-    )
-  }
+
+  const nestedMenu =
+    isNestedRendered &&
+    props.nested &&
+    isActive &&
+    React.cloneElement(props.nested, {
+      css: calcNestedMenuPosition(
+        itemRef.current.getBoundingClientRect().width,
+        props._origin
+      ),
+      isKeyboarding: props._isKeyboarding,
+      onClose: handleNestedClose,
+      origin: props._origin
+    })
+
+  return (
+    <div {...styles.itemContainer(props)}>
+      <TagName
+        {...filterReactProps(rest, { tagName: TagName })}
+        {...styles.item(props)}
+        aria-haspopup={!!props.nested}
+        onFocus={handleFocus}
+        onKeyDown={handleKeyDown}
+        onMouseOver={handleMouseOver}
+        ref={itemRef}
+        role="menuitem"
+        tabIndex="0"
+        {...(props.disabled && {
+          href: undefined,
+          onFocus: undefined,
+          tabIndex: '-1'
+        })}
+      >
+        {icon && <ItemIcon>{icon}</ItemIcon>}
+
+        {props.children}
+
+        {props.nested && <NestedArrow _isKeyboarding={props._isKeyboarding} />}
+      </TagName>
+
+      {nestedMenu}
+    </div>
+  )
 }
+
 Item.displayName = 'ActionMenu.Item'
 Item.propTypes = {
   children: PropTypes.node,
@@ -303,51 +301,41 @@ Item.propTypes = {
   shouldFocusOnMount: PropTypes.bool,
   _i: PropTypes.number,
   _isKeyboarding: PropTypes.bool,
-  _onMouseOver: PropTypes.func,
   _onItemFocus: PropTypes.func,
+  _onMouseOver: PropTypes.func,
   _origin: PropTypes.oneOf(Object.keys(vars.origins).map(k => vars.origins[k]))
 }
 
-class Divider extends React.Component {
-  componentDidMount() {
-    if (this.props.isActive) this.props._onDividerFocus()
-  }
-  componentDidUpdate() {
-    if (this.props.isActive) this.props._onDividerFocus()
-  }
-  render() {
-    return (
-      <div
-        {...styles.divider(this.props)}
-        tabIndex="-1"
-        {...filterReactProps(this.props)}
-      />
-    )
-  }
+const Divider = props => {
+  React.useEffect(() => {
+    if (props.isActive) props._onDividerFocus()
+  })
+
+  return <div {...styles.divider(props)} {...filterReactProps(props)} />
 }
 Divider.propTypes = {
   _onDividerFocus: PropTypes.func,
   isActive: PropTypes.bool
 }
+Divider.defaultProps = {
+  tabIndex: '-1'
+}
 
 const Overlay = props => (
-  <div
-    {...glamor.css(css['.psds-actionmenu__overlay'])}
-    onClick={props.onClick}
-  />
+  <div {...styles.overlay(props)} onClick={props.onClick} />
 )
 Overlay.propTypes = {
   onClick: PropTypes.func
 }
 
-const Menu = props => (
-  <div {...styles.menu(props)} {...filterReactProps(props)} />
-)
+const Menu = React.forwardRef((props, ref) => (
+  <div {...styles.menu(props)} {...filterReactProps(props)} ref={ref} />
+))
 
 ActionMenu.Item = Item
 ActionMenu.Divider = Divider
 ActionMenu.Overlay = Overlay
-ActionMenu.origins = vars.origins
+
 ActionMenu.propTypes = {
   children: PropTypes.oneOfType([
     elementOfType(Item),
@@ -359,7 +347,6 @@ ActionMenu.propTypes = {
   isKeyboarding: PropTypes.bool,
   onClose: PropTypes.func,
   origin: PropTypes.oneOf(Object.keys(vars.origins).map(k => vars.origins[k])),
-  ref: PropTypes.func,
   shouldFocusOnMount: PropTypes.bool
 }
 ActionMenu.defaultProps = {
@@ -368,6 +355,7 @@ ActionMenu.defaultProps = {
   shouldFocusOnMount: true
 }
 
+ActionMenu.origins = vars.origins
 export const origins = vars.origins
 
 export default ActionMenu
