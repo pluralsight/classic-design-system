@@ -1,11 +1,11 @@
 import { action } from '@storybook/addon-actions'
 import addons from '@storybook/addons'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Breadcrumb from '..'
+import Breadcrumb from '../index.js'
 
 storiesOf('normal', module)
   .addDecorator(themeDecorator(addons))
