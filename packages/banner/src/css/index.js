@@ -14,7 +14,6 @@ export default {
     padding: `${core.layout.spacingXSmall} ${core.layout.spacingSmall}`
   },
 
-  // --color
   [`.psds-banner--color-${vars.colors.blue}`]: {
     color: core.colors.white,
     backgroundColor: core.colors.blue
@@ -32,7 +31,6 @@ export default {
     backgroundColor: core.colors.red
   },
 
-  // __text
   '.psds-banner__text': {
     flex: '1',
     textAlign: 'center',
@@ -50,7 +48,6 @@ export default {
     }
   },
 
-  // __dismiss
   '.psds-banner__dismiss': {
     display: 'flex',
     alignItems: 'flex-start',
