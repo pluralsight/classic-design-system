@@ -1,19 +1,19 @@
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import css from '../css'
-import { sizes, widths } from '../vars'
-import { getColorByName, getInitials, transformSrc } from '../js'
+import stylesheet from '../css/index.js'
+import { sizes, widths } from '../vars/index.js'
+import { getColorByName, getInitials, transformSrc } from '../js/index.js'
 
 const styles = {
   avatar: ({ size }) =>
-    glamor.css({
-      ...css['.psds-avatar'],
-      ...css[`.psds-avatar--size-${size}`]
+    css({
+      ...stylesheet['.psds-avatar'],
+      ...stylesheet[`.psds-avatar--size-${size}`]
     }),
-  image: _ => glamor.css(css['.psds-avatar__image']),
-  initials: ({ name }) => glamor.css(css['.psds-avatar__initials'])
+  image: _ => css(stylesheet['.psds-avatar__image']),
+  initials: ({ name }) => css(stylesheet['.psds-avatar__initials'])
 }
 
 class Avatar extends React.Component {
