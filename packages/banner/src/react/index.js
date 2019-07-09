@@ -14,10 +14,10 @@ const styles = {
   text: () => css(stylesheet['.psds-banner__text'])
 }
 
-function Banner(props) {
+const Banner = React.forwardRef((props, ref) => {
   const { onClick, ...rest } = props
   return (
-    <div {...styles.banner(props)} {...filterReactProps(rest)}>
+    <div {...styles.banner(props)} {...filterReactProps(rest)} ref={ref}>
       <div {...styles.text(props)}>{props.children}</div>
       {props.onClick && (
         <button {...styles.dismiss(props)} onClick={onClick}>
@@ -26,7 +26,7 @@ function Banner(props) {
       )}
     </div>
   )
-}
+})
 
 Banner.displayName = 'Banner'
 Banner.propTypes = {
