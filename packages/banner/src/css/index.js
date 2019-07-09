@@ -1,6 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 const anchorHover = {
   color: 'inherit',

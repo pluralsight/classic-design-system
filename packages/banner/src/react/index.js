@@ -1,10 +1,10 @@
 import * as glamor from 'glamor'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import css from '../css'
-import * as vars from '../vars'
+import css from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const styles = {
   banner: ({ color }) =>
