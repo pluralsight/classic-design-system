@@ -1,5 +1,6 @@
 import * as glamor from 'glamor'
 import Button from '@pluralsight/ps-design-system-button/react.js'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -11,14 +12,9 @@ const styles = {
 }
 
 const Breadcrumb = React.forwardRef((props, ref) => {
-  const breadcrumbProps = {
-    ...styles.breadcrumb(props),
-    ...(props.style ? { style: props.style } : null),
-    ...(props.className ? { className: props.className } : null)
-  }
-
+  const { onClick, ...rest } = props
   return (
-    <div {...breadcrumbProps}>
+    <div {...filterReactProps(rest)} {...styles.breadcrumb(props)}>
       <Button
         {...props}
         ref={ref}
@@ -33,6 +29,7 @@ const Breadcrumb = React.forwardRef((props, ref) => {
 Breadcrumb.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
+  onClick: PropTypes.func,
   style: PropTypes.object
 }
 Breadcrumb.defaultProps = {

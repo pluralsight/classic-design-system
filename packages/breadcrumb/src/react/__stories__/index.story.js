@@ -1,6 +1,5 @@
 import { action } from '@storybook/addon-actions'
 import addons from '@storybook/addons'
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
@@ -28,10 +27,5 @@ storiesOf('as link', module)
 storiesOf('with onClick', module)
   .addDecorator(themeDecorator(addons))
   .add('clicks once', _ => (
-    <Breadcrumb
-      onClick={action('click count')}
-      icon={<Icon id={Icon.ids.check} />}
-    >
-      Clicks once
-    </Breadcrumb>
+    <Breadcrumb onClick={action('click count')}>Clicks once</Breadcrumb>
   ))
