@@ -82,7 +82,7 @@ Avatar.defaultProps = {
 Avatar.propTypes = {
   alt: PropTypes.string,
   name: PropTypes.string,
-  size: PropTypes.oneOf(Object.keys(sizes)),
+  size: PropTypes.oneOf(Object.keys(sizes).map(key => sizes[key])),
   src: PropTypes.string
 }
 
