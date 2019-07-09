@@ -2,12 +2,6 @@ import core from '@pluralsight/ps-design-system-core'
 
 import * as vars from '../vars/index.js'
 
-const anchorHover = {
-  color: 'inherit',
-  transition: `all ${core.motion.speedNormal}`,
-  opacity: '0.65'
-}
-
 export default {
   '.psds-banner': {
     display: 'flex',
@@ -41,16 +35,20 @@ export default {
   // __text
   '.psds-banner__text': {
     flex: '1',
-    textAlign: 'center'
+    textAlign: 'center',
+
+    '& a': {
+      color: 'inherit',
+      cursor: 'pointer',
+      textDecoration: 'underline',
+
+      '&:hover, &:active, &:focus': {
+        color: 'inherit',
+        transition: `all ${core.motion.speedNormal}`,
+        opacity: '0.65'
+      }
+    }
   },
-  '.psds-banner__text a': {
-    color: 'inherit',
-    cursor: 'pointer',
-    textDecoration: 'underline'
-  },
-  '.psds-banner__text a:hover': anchorHover,
-  '.psds-banner__text a:active': anchorHover,
-  '.psds-banner__text a:focus': anchorHover,
 
   // __dismiss
   '.psds-banner__dismiss': {
@@ -61,9 +59,10 @@ export default {
     marginLeft: 'auto',
     padding: `0 0 0 ${core.layout.spacingSmall}`,
     color: core.colors.white,
-    cursor: 'pointer'
-  },
-  '.psds-banner__dismiss:hover': {
-    opacity: '0.65'
+    cursor: 'pointer',
+
+    '&:hover': {
+      opacity: '0.65'
+    }
   }
 }

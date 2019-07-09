@@ -9,17 +9,8 @@ import * as vars from '../vars/index.js'
 const styles = {
   banner: ({ color }) =>
     css(stylesheet['.psds-banner'], stylesheet[`.psds-banner--color-${color}`]),
-  dismiss: () =>
-    css(stylesheet['.psds-banner__dismiss'], {
-      ':hover': stylesheet['.psds-banner__dismiss:hover']
-    }),
-  text: () =>
-    css(stylesheet['.psds-banner__text'], {
-      '& a': stylesheet['.psds-banner__text a'],
-      '& a:hover': stylesheet['.psds-banner__text a:hover'],
-      '& a:active': stylesheet['.psds-banner__text a:active'],
-      '& a:focus': stylesheet['.psds-banner__text a:focus']
-    })
+  dismiss: () => css(stylesheet['.psds-banner__dismiss']),
+  text: () => css(stylesheet['.psds-banner__text'])
 }
 
 const Banner = props => (
