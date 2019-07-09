@@ -14,7 +14,7 @@ const styles = {
   text: () => css(stylesheet['.psds-banner__text'])
 }
 
-const Banner = props => {
+function Banner(props) {
   const { onClick, ...rest } = props
   return (
     <div {...styles.banner(props)} {...filterReactProps(rest)}>
@@ -27,9 +27,10 @@ const Banner = props => {
     </div>
   )
 }
+
 Banner.displayName = 'Banner'
 Banner.propTypes = {
-  color: PropTypes.oneOf(Object.keys(vars.colors)),
+  color: PropTypes.oneOf(Object.keys(vars.colors).map(key => vars.colors[key])),
   children: PropTypes.node.isRequired,
   onClick: PropTypes.func
 }
