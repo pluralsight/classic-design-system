@@ -1,10 +1,10 @@
-import { transparentize } from '@pluralsight/ps-design-system-util/color'
+import { transparentize } from '@pluralsight/ps-design-system-util/color.js'
 
 import core from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars.js'
 
-import { defaultWithColor, subtleThemeWithColor } from '../js'
-import { colors } from '../vars'
+import { defaultWithColor, subtleThemeWithColor } from '../js/index.js'
+import { colors } from '../vars/index.js'
 
 export default {
   '.psds-badge': {
