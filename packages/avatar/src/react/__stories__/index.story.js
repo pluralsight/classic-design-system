@@ -21,6 +21,20 @@ storySizes.add('light image', () => (
     name="Jake Trent"
   />
 ))
+storySizes.add('style override', () => (
+  <Avatar
+    style={{ border: '3px solid red' }}
+    src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
+    name="Jake Trent"
+  />
+))
+storySizes.add('className override', () => (
+  <Avatar
+    className="fakeClassName"
+    src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
+    name="Jake Trent"
+  />
+))
 
 const names = [
   '% Special Characters',

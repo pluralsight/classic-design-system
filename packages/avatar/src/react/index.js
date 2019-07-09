@@ -1,4 +1,5 @@
 import { css } from 'glamor'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -34,7 +35,7 @@ class Avatar extends React.Component {
   }
 
   render() {
-    const { alt, className, name, size, src, style } = this.props
+    const { alt, name, size, src } = this.props
     const { imageState } = this.state
 
     const shouldShowImg = src && imageState !== 'error'
@@ -44,9 +45,8 @@ class Avatar extends React.Component {
     const hideFromScreenReaders = shouldShowImg && !alt
 
     const avatarProps = {
+      ...filterReactProps(this.props),
       ...styles.avatar({ size }),
-      ...(className ? { className } : null),
-      ...(style ? { style } : null),
       ...(hideFromScreenReaders ? { 'aria-hidden': true } : null)
     }
 
@@ -81,7 +81,6 @@ Avatar.defaultProps = {
 
 Avatar.propTypes = {
   alt: PropTypes.string,
-  className: PropTypes.string,
   name: PropTypes.string,
   size: PropTypes.oneOf(Object.keys(sizes)),
   src: PropTypes.string
