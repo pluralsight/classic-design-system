@@ -19,13 +19,17 @@ const styles = {
     )
 }
 
-export default function Badge(props) {
+const Badge = React.forwardRef((props, ref) => {
   const themeName = useTheme()
   const allProps = { themeName, ...props }
-  return <div {...styles.badge(allProps)} {...filterReactProps(allProps)} />
-}
-Badge.appearances = vars.appearances
-Badge.colors = vars.colors
+  return (
+    <div
+      {...styles.badge(allProps)}
+      {...filterReactProps(allProps)}
+      ref={ref}
+    />
+  )
+})
 
 Badge.propTypes = {
   appearance: PropTypes.oneOf(Object.values(vars.appearances)),
@@ -37,5 +41,10 @@ Badge.defaultProps = {
   color: vars.colors.gray
 }
 
+Badge.appearances = vars.appearances
+Badge.colors = vars.colors
+
 export const appearances = vars.appearances
 export const colors = vars.colors
+
+export default Badge
