@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 
-import { colorByLetter, fallbackPixel } from '../vars'
+import { colorByLetter, fallbackPixel } from '../vars/index.js'
 
 export const getInitials = fullname => {
   if (!fullname || !fullname.length) return
