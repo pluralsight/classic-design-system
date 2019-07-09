@@ -1,21 +1,21 @@
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 import { defaultWithColor, subtleThemeWithColor } from '../js/index.js'
 import * as vars from '../vars/index.js'
 
 const styles = {
   badge: props =>
-    glamor.css(
-      css['.psds-badge'],
+    css(
+      stylesheet['.psds-badge'],
       props.appearance === appearances.default
-        ? css[defaultWithColor(props.color)]
-        : css[subtleThemeWithColor(props.themeName, props.color)]
+        ? stylesheet[defaultWithColor(props.color)]
+        : stylesheet[subtleThemeWithColor(props.themeName, props.color)]
     )
 }
 
