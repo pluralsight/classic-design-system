@@ -17,7 +17,7 @@ const styles = {
   initials: ({ name }) => css(stylesheet['.psds-avatar__initials'])
 }
 
-const Avatar = props => {
+const Avatar = React.forwardRef((props, ref) => {
   const [imageState, setImageState] = React.useState('loading')
 
   function handleImageLoadSuccess(evt) {
@@ -44,7 +44,7 @@ const Avatar = props => {
   }
 
   return (
-    <div {...avatarProps}>
+    <div {...avatarProps} ref={ref}>
       {shouldShowImg && (
         <img
           alt={alt}
@@ -65,7 +65,7 @@ const Avatar = props => {
       )}
     </div>
   )
-}
+})
 
 Avatar.defaultProps = {
   size: sizes.medium
