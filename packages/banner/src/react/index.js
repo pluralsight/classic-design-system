@@ -1,4 +1,5 @@
 import { css } from 'glamor'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -13,20 +14,19 @@ const styles = {
   text: () => css(stylesheet['.psds-banner__text'])
 }
 
-const Banner = props => (
-  <div
-    {...styles.banner(props)}
-    {...(props.style ? { style: props.style } : null)}
-    {...(props.className ? { className: props.className } : null)}
-  >
-    <div {...styles.text(props)}>{props.children}</div>
-    {props.onClick && (
-      <button {...styles.dismiss(props)} onClick={props.onClick}>
-        <Icon id={Icon.ids.close} />
-      </button>
-    )}
-  </div>
-)
+const Banner = props => {
+  const { onClick, ...rest } = props
+  return (
+    <div {...styles.banner(props)} {...filterReactProps(rest)}>
+      <div {...styles.text(props)}>{props.children}</div>
+      {props.onClick && (
+        <button {...styles.dismiss(props)} onClick={onClick}>
+          <Icon id={Icon.ids.close} />
+        </button>
+      )}
+    </div>
+  )
+}
 Banner.displayName = 'Banner'
 Banner.propTypes = {
   color: PropTypes.oneOf(Object.keys(vars.colors)),
