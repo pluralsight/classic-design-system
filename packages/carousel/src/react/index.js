@@ -1,16 +1,17 @@
 import { compose, css } from 'glamor'
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import stylesheet from '../css/index.js'
-import { chunk, pick } from '../js/utils.js'
+import { combineFns, chunk, pick } from '../js/utils.js'
 import * as vars from '../vars/index.js'
 
 import CarouselContext from './context.js'
-import Control from './control.js'
+import { Controls, Control } from './controls.js'
 import useResizeObserver from './use-resize-observer.js'
+import useUniqueId from './use-unique-id.js'
 
 const styles = {
   carousel: ({ ready }) =>
@@ -20,10 +21,12 @@ const styles = {
     ),
   pages: () => css(stylesheet['.psds-carousel__pages']),
   page: () => css(stylesheet['.psds-carousel__page']),
+  instructions: () => css(stylesheet['.psds-carousel__instructions']),
   item: () => css(stylesheet['.psds-carousel__item'])
 }
 
 export default function Carousel({ controls, size, ...props }) {
+  const id = useUniqueId('carousel-')
   const { ref, width } = useResizeObserver()
 
   const constraints = vars.constraints[size]
@@ -38,6 +41,7 @@ export default function Carousel({ controls, size, ...props }) {
 
   const contextValue = {
     ...pick(pager, ['activePage', 'next', 'offset', 'prev']),
+    id,
     pageCount,
     perPage
   }
@@ -49,22 +53,25 @@ export default function Carousel({ controls, size, ...props }) {
         {...filterReactProps(props)}
         ref={ref}
       >
-        <div {...styles.pages()} ref={pager.ref}>
+        <Pages ref={pager.ref} id={id}>
           {pages.map((items, i) => (
-            <Page key={i}>
+            <Page key={i} isActivePage={pager.activePage === i}>
               {items.map((item, j) => (
                 <Item key={j}>{item}</Item>
               ))}
             </Page>
           ))}
-        </div>
+        </Pages>
 
         {controls}
+
+        <Instructions />
       </div>
     </CarouselContext.Provider>
   )
 }
 
+Carousel.Controls = Controls
 Carousel.Control = Control
 
 Carousel.sizes = vars.sizes
@@ -76,12 +83,71 @@ Carousel.propTypes = {
 }
 Carousel.defaultProps = {
   controls: (
-    <Fragment>
+    <Controls>
       <Control direction={Control.directions.prev} />
       <Control direction={Control.directions.next} />
-    </Fragment>
+    </Controls>
   ),
   size: Carousel.sizes.narrow
+}
+
+function Instructions(props) {
+  const context = React.useContext(CarouselContext)
+  const id = `${context.id}__instructions`
+
+  return (
+    <div {...styles.instructions()} {...props} id={id}>
+      <p>use your arrow keys for more</p>
+    </div>
+  )
+}
+
+function Item(props) {
+  return <div {...styles.item()} {...props} />
+}
+
+const Pages = React.forwardRef((props, ref) => {
+  const context = React.useContext(CarouselContext)
+
+  const handleKeyDown = combineFns(evt => {
+    if (isLeftArrow(evt)) context.prev()
+    if (isRightArrow(evt)) context.next()
+  }, props.onKeyDown)
+
+  return (
+    <ul
+      aria-describedby={`${context.id}__instructions`}
+      aria-label="carousel"
+      id={context.id}
+      onKeyDown={handleKeyDown}
+      ref={ref}
+      role="region"
+      tabIndex="0"
+      {...styles.pages()}
+      {...props}
+    />
+  )
+})
+
+Pages.propTypes = {
+  onKeyDown: PropTypes.func
+}
+
+function Page({ isActivePage, ...props }) {
+  const { offset } = React.useContext(CarouselContext)
+
+  return (
+    <li
+      {...styles.page()}
+      {...css({ transform: `translate3d(${offset}px, 0, 0)` })}
+      {...(!isActivePage && { 'aria-hidden': true, tabIndex: -1 })}
+      {...props}
+    />
+  )
+}
+
+Page.propTypes = {
+  isActivePage: PropTypes.bool.isRequired
 }
 
 function calcItemsPerPage(constraints, width) {
@@ -96,6 +162,10 @@ function insertShims(page, perPage) {
 
   return page.concat(new Array(perPage - page.length).fill(null))
 }
+
+const isLeftArrow = evt => evt.keyCode === 37
+
+const isRightArrow = evt => evt.keyCode === 39
 
 function usePager(pageCount, additionalSideEffectTriggers = []) {
   const [activePage, setActivePage] = React.useState(0)
@@ -131,21 +201,4 @@ function usePager(pageCount, additionalSideEffectTriggers = []) {
     prev,
     ref
   }
-}
-
-function Item(props) {
-  return <div data-testid="carousel__item" {...styles.item()} {...props} />
-}
-
-function Page(props) {
-  const { offset } = React.useContext(CarouselContext)
-
-  return (
-    <div
-      data-testid="carousel__page"
-      {...styles.page()}
-      {...css({ transform: `translate3d(${offset}px, 0, 0)` })}
-      {...props}
-    />
-  )
 }

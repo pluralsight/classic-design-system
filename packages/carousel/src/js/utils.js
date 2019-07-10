@@ -22,6 +22,21 @@ export function isPlainObject(obj) {
   return obj && !Array.isArray(obj) && typeof obj === 'object'
 }
 
+export const uniqueId = (function() {
+  let counter = 0
+
+  const _unique = (prefix = '') => {
+    counter++
+    return String(prefix) + counter
+  }
+
+  _unique.reset = () => {
+    counter = 0
+  }
+
+  return _unique
+})()
+
 export function pick(obj, props = []) {
   if (!isPlainObject(obj)) throw new TypeError('#pick input must be an object')
 

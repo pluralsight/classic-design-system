@@ -1,4 +1,4 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -6,23 +6,38 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 import { combineFns } from '../js/utils.js'
 
 import CarouselContext from './context.js'
 
 const styles = {
+  controls: () => css(stylesheet['.psds-carousel__controls']),
   control: (themeName, { direction }) =>
-    glamor.compose(
-      glamor.css(css['.psds-carousel__controls__control']),
-      glamor.css(
-        css[`.psds-carousel__controls__control.psds-theme--${themeName}`]
+    compose(
+      css(stylesheet['.psds-carousel__controls__control']),
+      css(
+        stylesheet[`.psds-carousel__controls__control.psds-theme--${themeName}`]
       ),
-      glamor.css(css[`.psds-carousel__controls__control--${direction}`])
+      css(stylesheet[`.psds-carousel__controls__control--${direction}`])
     )
 }
 
-export default function Control(props) {
+export const Controls = React.forwardRef((props, ref) => {
+  const context = React.useContext(CarouselContext)
+
+  return (
+    <ul
+      aria-controls={context.id}
+      aria-label="carousel controls"
+      ref={ref}
+      {...styles.controls()}
+      {...props}
+    />
+  )
+})
+
+export function Control(props) {
   const context = React.useContext(CarouselContext)
   const themeName = useTheme()
 
@@ -37,13 +52,16 @@ export default function Control(props) {
   const handleClick = combineFns(isPrev ? prev : next, props.onClick)
 
   return (
-    <button
-      {...styles.control(themeName, props)}
-      {...filterReactProps(props, { tagName: 'button' })}
-      onClick={handleClick}
-    >
-      <Icon id={iconId} size={Icon.sizes.medium} />
-    </button>
+    <li>
+      <button
+        aria-label={isPrev ? 'previous' : 'next'}
+        {...styles.control(themeName, props)}
+        {...filterReactProps(props, { tagName: 'button' })}
+        onClick={handleClick}
+      >
+        <Icon aria-hidden id={iconId} size={Icon.sizes.medium} />
+      </button>
+    </li>
   )
 }
 

@@ -1,7 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
-export const resetButton = {
+const resetButton = {
   background: 'transparent',
   border: 'none',
   color: 'inherit',
@@ -22,12 +22,23 @@ export const resetButton = {
   }
 }
 
+const resetList = {
+  lineHeight: 'initial',
+  listStyle: 'none',
+  margin: 0,
+  padding: 0
+}
+
 export default {
   '.psds-carousel': {
     position: 'relative',
     opacity: 0
   },
   '.psds-carousel--ready': { opacity: 1 },
+
+  '.psds-carousel__controls': {
+    ...resetList
+  },
 
   '.psds-carousel__controls__control': {
     ...resetButton,
@@ -61,6 +72,7 @@ export default {
   },
 
   '.psds-carousel__pages': {
+    ...resetList,
     display: 'flex',
     overflow: 'hidden',
     width: '100%'
@@ -83,5 +95,9 @@ export default {
 
     '&:first-child': { marginLeft: 0 },
     '&:last-child': { marginRight: 0 }
+  },
+
+  '.psds-carousel__instructions': {
+    ...core.accessibility.screenReaderOnly
   }
 }

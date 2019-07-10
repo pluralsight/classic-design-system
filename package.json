@@ -70,6 +70,7 @@
     "@commitlint/config-angular": "^7.1.2",
     "@commitlint/config-lerna-scopes": "^7.2.1",
     "@octopusdeploy/gulp-octo": "0.0.10",
+    "@testing-library/react-hooks": "^1.1.0",
     "babel-jest": "^20.0.1",
     "babel-plugin-syntax-export-extensions": "^6.13.0",
     "babel-plugin-transform-export-extensions": "^6.22.0",
