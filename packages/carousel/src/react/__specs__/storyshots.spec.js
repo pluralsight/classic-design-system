@@ -1,5 +1,14 @@
-// NOTE: these storyshots are disabled because of dom errors that i can't fix.
-//       try to renabled after storybook/babel/react-dom are upgraded
+import path from 'path'
+import initStoryshots, {
+  snapshotWithOptions
+} from '@storybook/addon-storyshots'
 
-// NOTE: this is placeholder test reminder
-it.skip('storyshots', () => {})
+jest.mock('@pluralsight/ps-design-system-storybook-addon-center')
+jest.mock('@pluralsight/ps-design-system-storybook-addon-theme')
+
+const createNodeMock = el => document.createElement('div')
+
+initStoryshots({
+  configPath: path.resolve(__dirname, '..', '..', '..', '.storybook'),
+  test: snapshotWithOptions({ createNodeMock })
+})
