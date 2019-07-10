@@ -9,6 +9,11 @@
     "npm": ">= 4.2"
   },
   "author": "jaketrent",
+  "keywords": [
+    "pluralsight",
+    "design system",
+    "pattern library"
+  ],
   "main": "packages/site/index.js",
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
@@ -24,6 +29,12 @@
     "site": "cd packages/site && npm start",
     "start": "npm run site",
     "test": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e",
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "ignore": [
@@ -47,17 +58,6 @@
     }
   },
   "browserslist": "last 4 versions",
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e",
-      "pre-commit": "lint-staged"
-    }
-  },
-  "keywords": [
-    "pluralsight",
-    "design system",
-    "pattern library"
-  ],
   "dependencies": {
     "babel-eslint": "^10.0.1",
     "glamor": "^2.20.0",
@@ -109,6 +109,7 @@
     "prettier": "^1.7.4",
     "prettier-eslint-cli": "^4.7.1",
     "raf": "^3.4.0",
+    "react-test-renderer": "^16.8.6",
     "react-testing-library": "^6.1.2",
     "webpack": "^4.0.0",
     "yargs": "^11.0.0"

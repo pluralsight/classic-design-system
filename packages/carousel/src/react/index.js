@@ -1,22 +1,26 @@
-import * as glamor from 'glamor'
-import React from 'react'
+import { compose, css } from 'glamor'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
-import css from '../css/index.js'
-import { chunk } from '../js/utils.js'
+import stylesheet from '../css/index.js'
+import { chunk, pick } from '../js/utils.js'
 import * as vars from '../vars/index.js'
 
 import CarouselContext from './context.js'
-import { Controls, Control } from './controls.js'
+import Control from './control.js'
 import useResizeObserver from './use-resize-observer.js'
 
 const styles = {
-  carousel: () => glamor.css(css['.psds-carousel']),
-  pages: () => glamor.css(css['.psds-carousel__pages']),
-  page: () => glamor.css(css['.psds-carousel__page']),
-  item: () => glamor.css(css['.psds-carousel__item'])
+  carousel: ({ ready }) =>
+    compose(
+      css(stylesheet['.psds-carousel']),
+      ready && css(stylesheet['.psds-carousel--ready'])
+    ),
+  pages: () => css(stylesheet['.psds-carousel__pages']),
+  page: () => css(stylesheet['.psds-carousel__page']),
+  item: () => css(stylesheet['.psds-carousel__item'])
 }
 
 export default function Carousel({ controls, size, ...props }) {
@@ -27,15 +31,25 @@ export default function Carousel({ controls, size, ...props }) {
 
   const childArr = React.Children.toArray(props.children)
   const pages = chunk(childArr, perPage).map(page => insertShims(page, perPage))
+  const pageCount = pages.length
 
-  const { ref: pagesRef, next, prev, offset } = usePager(pages, [width])
+  const pager = usePager(pageCount, [width])
+  const ready = width && width > 0
+
+  const contextValue = {
+    ...pick(pager, ['activePage', 'next', 'offset', 'prev']),
+    pageCount,
+    perPage
+  }
 
   return (
-    <CarouselContext.Provider value={{ next, prev, offset }}>
-      <div {...styles.carousel()} {...filterReactProps(props)} ref={ref}>
-        {controls}
-
-        <div {...styles.pages()} ref={pagesRef}>
+    <CarouselContext.Provider value={contextValue}>
+      <div
+        {...styles.carousel({ ready })}
+        {...filterReactProps(props)}
+        ref={ref}
+      >
+        <div {...styles.pages()} ref={pager.ref}>
           {pages.map((items, i) => (
             <Page key={i}>
               {items.map((item, j) => (
@@ -44,12 +58,13 @@ export default function Carousel({ controls, size, ...props }) {
             </Page>
           ))}
         </div>
+
+        {controls}
       </div>
     </CarouselContext.Provider>
   )
 }
 
-Carousel.Controls = Controls
 Carousel.Control = Control
 
 Carousel.sizes = vars.sizes
@@ -60,7 +75,12 @@ Carousel.propTypes = {
   size: PropTypes.oneOf(Object.keys(Carousel.sizes))
 }
 Carousel.defaultProps = {
-  controls: <Controls />,
+  controls: (
+    <Fragment>
+      <Control direction={Control.directions.prev} />
+      <Control direction={Control.directions.next} />
+    </Fragment>
+  ),
   size: Carousel.sizes.narrow
 }
 
@@ -74,29 +94,18 @@ function calcItemsPerPage(constraints, width) {
 function insertShims(page, perPage) {
   if (page.length >= perPage) return page
 
-  return page.concat(new Array(perPage - page.length).fill(<ItemShim />))
+  return page.concat(new Array(perPage - page.length).fill(null))
 }
 
-function usePager(pages, runOnChange = []) {
+function usePager(pageCount, additionalSideEffectTriggers = []) {
   const [activePage, setActivePage] = React.useState(0)
   const [offset, setOffset] = React.useState(0)
 
   const ref = React.useRef()
 
-  React.useEffect(() => {
-    const { current: parentEl } = ref
-    const nextPageEl = parentEl.children[activePage]
-
-    // NOTE: this is to fix storyshots.
-    // TODO: find out why it's this is undefined in tests
-    if (!nextPageEl) return
-
-    setOffset(parentEl.offsetLeft - nextPageEl.offsetLeft)
-  }, [activePage, ...runOnChange])
-
   const next = () => {
     const nextPage = activePage + 1
-    if (nextPage > pages.length - 1) return
+    if (nextPage > pageCount - 1) return
 
     setActivePage(nextPage)
   }
@@ -107,15 +116,25 @@ function usePager(pages, runOnChange = []) {
 
     setActivePage(nextPage)
   }
-  return { ref, next, prev, offset, activePage }
+
+  React.useEffect(() => {
+    const nextPageEl = ref.current.childNodes[activePage]
+    const nextOffset = ref.current.offsetLeft - nextPageEl.offsetLeft
+
+    setOffset(nextOffset)
+  }, [activePage, pageCount, ...additionalSideEffectTriggers])
+
+  return {
+    activePage,
+    next,
+    offset,
+    prev,
+    ref
+  }
 }
 
 function Item(props) {
-  return <div {...styles.item()} {...props} />
-}
-
-function ItemShim() {
-  return null
+  return <div data-testid="carousel__item" {...styles.item()} {...props} />
 }
 
 function Page(props) {
@@ -123,8 +142,9 @@ function Page(props) {
 
   return (
     <div
+      data-testid="carousel__page"
       {...styles.page()}
-      {...glamor.css({ transform: `translate3d(${offset}px, 0, 0)` })}
+      {...css({ transform: `translate3d(${offset}px, 0, 0)` })}
       {...props}
     />
   )

@@ -23,6 +23,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "*",
     "@pluralsight/ps-design-system-filter-react-props": "*",
+    "@pluralsight/ps-design-system-icon": "*",
     "@pluralsight/ps-design-system-theme": "*",
     "resize-observer-polyfill": "^1.5.1"
   },

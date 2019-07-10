@@ -14,16 +14,39 @@ const MockItem = props => (
       height: '150px',
       justifyContent: 'center'
     })}
+    data-testid="mock-item"
     {...props}
   />
 )
 
-storiesOf('Carousel', module).add('working example', _ => (
-  <div style={{ margin: 20, maxWidth: 1200 }}>
+storiesOf('Carousel/items', module)
+  .add('one item', _ => (
     <Carousel>
+      <MockItem>just one item</MockItem>
+    </Carousel>
+  ))
+  .add('two items', _ => (
+    <Carousel>
+      <MockItem>first item</MockItem>
+      <MockItem>second item</MockItem>
+    </Carousel>
+  ))
+  .add('many items', _ => (
+    <Carousel>
+      {new Array(21).fill(null).map((_, index) => (
+        <MockItem key={index}>item: {index + 1}</MockItem>
+      ))}
+    </Carousel>
+  ))
+
+const sizeStories = storiesOf('Carousel/size', module)
+
+Object.values(Carousel.sizes).forEach(size => {
+  sizeStories.add(size, _ => (
+    <Carousel size={size}>
       {new Array(13).fill(null).map((_, index) => (
         <MockItem key={index}>item: {index + 1}</MockItem>
       ))}
     </Carousel>
-  </div>
-))
+  ))
+})
