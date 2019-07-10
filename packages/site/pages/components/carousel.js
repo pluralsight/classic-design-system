@@ -61,11 +61,90 @@ export default withServerProps(_ => (
       <Example.React
         themeToggle
         themeName="light"
-        includes={{ Carousel, Card }}
+        includes={{
+          Carousel,
+          Card,
+          data: {
+            courses: [
+              {
+                author: 'Jim Cooper',
+                id: '1',
+                image: '/static/img/course1.jpg',
+                level: 'Advanced',
+                title: 'Why JS is the Best'
+              },
+              {
+                author: 'Jim Cooper',
+                id: '2',
+                image: '/static/img/course1.jpg',
+                level: 'Advanced',
+                title: 'Why JS is the Best'
+              },
+              {
+                author: 'Jim Cooper',
+                id: '3',
+                image: '/static/img/course1.jpg',
+                level: 'Advanced',
+                title: 'Why JS is the Best'
+              },
+              {
+                author: 'Jim Cooper',
+                id: '4',
+                image: '/static/img/course1.jpg',
+                level: 'Advanced',
+                title: 'Why JS is the Best'
+              },
+              {
+                author: 'Jim Cooper',
+                id: '5',
+                image: '/static/img/course1.jpg',
+                level: 'Advanced',
+                title: 'Why JS is the Best'
+              },
+              {
+                author: 'Jim Cooper',
+                id: '6',
+                image: '/static/img/course1.jpg',
+                level: 'Advanced',
+                title: 'Why JS is the Best'
+              },
+              {
+                author: 'Jim Cooper',
+                id: '7',
+                image: '/static/img/course1.jpg',
+                level: 'Advanced',
+                title: 'Why JS is the Best'
+              },
+              {
+                author: 'Jim Cooper',
+                id: '8',
+                image: '/static/img/course1.jpg',
+                level: 'Advanced',
+                title: 'Why JS is the Best'
+              },
+              {
+                author: 'Jim Cooper',
+                id: '9',
+                image: '/static/img/course1.jpg',
+                level: 'Advanced',
+                title: 'Why JS is the Best'
+              }
+            ]
+          }
+        }}
         codes={[
           `
-// TODO: example here
-          `
+<Carousel >
+  {data.courses.map(course => (
+    <Card
+      key={course.id}
+      image={<Card.Image src={course.image} />}
+      metadata1={[course.author, course.level]}
+      title={<Card.Title>{course.title}</Card.Title>}
+    />
+  ))}
+</Carousel>
+`
         ]}
       />
     </Content>
