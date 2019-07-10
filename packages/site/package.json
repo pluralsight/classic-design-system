@@ -27,6 +27,7 @@
     "@pluralsight/ps-design-system-banner": "^2.0.9",
     "@pluralsight/ps-design-system-breadcrumb": "^3.0.4",
     "@pluralsight/ps-design-system-button": "^12.0.4",
+    "@pluralsight/ps-design-system-carousel": "^1.0.0",
     "@pluralsight/ps-design-system-card": "^10.0.1",
     "@pluralsight/ps-design-system-checkbox": "^2.0.1",
     "@pluralsight/ps-design-system-circularprogress": "^3.0.1",

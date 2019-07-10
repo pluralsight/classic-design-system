@@ -41,7 +41,7 @@ export default withServerProps(_ => (
 
       <PropTypes
         props={{
-          Row: [
+          Note: [
             PropTypes.row([
               'actionBar',
               <code>Note.Action[]</code>,
@@ -156,7 +156,7 @@ export default withServerProps(_ => (
     message={(
       <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
       )}
-    metadata={['June 18, 2019', '10:30am']}   
+    metadata={['June 18, 2019', '10:30am']}
   />
 
   <Note
@@ -231,8 +231,8 @@ export default withServerProps(_ => (
     <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
   )}
   metadata={[
-    'Great American author', 
-    'Satirist', 
+    'Great American author',
+    'Satirist',
     <Link appearance={Link.appearances.subtle}>
       <a href="#">14 minutes ago</a>
     </Link>
@@ -291,8 +291,8 @@ export default withServerProps(_ => (
     <p>Customs do not concern themselves with right or wrong or reason. But they have to be obeyed; one reasons all around them until he is tired, but he must not transgress them, it is sternly forbidden.</p>
   )}
   metadata={[
-    'Metadata 1', 
-    'Metadata 2', 
+    'Metadata 1',
+    'Metadata 2',
     '14 minutes ago'
   ]}
 />`
