@@ -18,24 +18,29 @@ describe('Carousel', () => {
   })
 
   describe('with a single item', () => {
-    let controls
+    let container
     let pages
 
     beforeEach(() => {
-      const { container } = render(
+      const { container: _container } = render(
         <Carousel>
           <div />
         </Carousel>
       )
 
-      controls = container.querySelectorAll(
-        '[aria-label="carousel controls"] > li'
-      )
+      container = _container
+
       pages = container.querySelectorAll('[aria-label="carousel"] > li')
     })
 
-    it('should NOT have controls', () => {
-      expect(controls).toHaveLength(0)
+    it('should hide the prev button', () => {
+      const btn = container.querySelector('[aria-label="previous"]')
+      expect(btn).toHaveAttribute('hidden')
+    })
+
+    it('should hide the next button', () => {
+      const btn = container.querySelector('[aria-label="next"]')
+      expect(btn).toHaveAttribute('hidden')
     })
 
     it('should NOT hide the active page from screen readers', () => {
@@ -111,13 +116,14 @@ describe('Carousel', () => {
     })
 
     it('should show the next button', () => {
-      const nextButton = container.querySelector('[aria-label="next"]')
-      expect(nextButton).toBeDefined()
+      const btn = container.querySelector('[aria-label="next"]')
+      expect(btn).toBeDefined()
+      expect(btn).not.toHaveAttribute('hidden')
     })
 
-    it('should NOT show the prev button', () => {
-      const prevButton = container.querySelector('[aria-label="prev"]')
-      expect(prevButton).toBeNull()
+    it('should hide the prev button', () => {
+      const btn = container.querySelector('[aria-label="previous"]')
+      expect(btn).toHaveAttribute('hidden')
     })
   })
 

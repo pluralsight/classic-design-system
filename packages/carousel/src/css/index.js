@@ -50,6 +50,7 @@ export default {
     justifyContent: 'center',
     position: 'absolute',
     top: '50%',
+    transition: `transform ${core.motion.speedFast} ease-in-out`,
     width: '36px',
 
     '&:hover': { cursor: 'pointer' }
@@ -64,11 +65,15 @@ export default {
   },
   '.psds-carousel__controls__control--prev': {
     left: 0,
-    transform: 'translate(-50%, -50%)'
+    transform: 'translate(-50%, -50%)',
+
+    '&[hidden]': { transform: 'translate(-50%, -50%) scale(0)' }
   },
   '.psds-carousel__controls__control--next': {
     right: 0,
-    transform: 'translate(50%, -50%)'
+    transform: 'translate(50%, -50%)',
+
+    '&[hidden]': { transform: 'translate(50%, -50%) scale(0)' }
   },
 
   '.psds-carousel__pages': {

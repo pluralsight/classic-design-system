@@ -46,8 +46,6 @@ export function Control(props) {
   const isPrev = props.direction === Control.directions.prev
   const visible = isPrev ? activePage > 0 : activePage !== pageCount - 1
 
-  if (!visible) return null
-
   const iconId = isPrev ? Icon.ids.caretLeft : Icon.ids.caretRight
   const handleClick = combineFns(isPrev ? prev : next, props.onClick)
 
@@ -55,6 +53,7 @@ export function Control(props) {
     <li>
       <button
         aria-label={isPrev ? 'previous' : 'next'}
+        hidden={!visible}
         {...styles.control(themeName, props)}
         {...filterReactProps(props, { tagName: 'button' })}
         onClick={handleClick}
