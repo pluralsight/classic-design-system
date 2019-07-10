@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-card": "*",
     "@pluralsight/ps-design-system-storybook-addon-center": "*",
     "@pluralsight/ps-design-system-storybook-addon-theme": "*",
     "@storybook/addon-actions": "^4.0.0",

@@ -3,7 +3,15 @@ import { storiesOf } from '@storybook/react'
 import * as glamor from 'glamor'
 import React, { Fragment } from 'react'
 
+import Card from '@pluralsight/ps-design-system-card/react'
 import Carousel from '../index.js'
+
+const MockCard = props => <Card {...props} />
+MockCard.defaultProps = {
+  title: <Card.Title>Card Title</Card.Title>,
+  image: <Card.Image src={`//picsum.photos/680/320?image=42&gravity=north`} />,
+  metadata1: ['meta', 'like...so meta']
+}
 
 const MockItem = props => (
   <div
@@ -74,6 +82,27 @@ storiesOf('Carousel/items', module)
     return <DynamicItems />
   })
 
+storiesOf('Carousel/controls', module).add('custom alignment', _ => (
+  <Carousel
+    controls={
+      <Carousel.Controls>
+        <Carousel.Control
+          direction={Carousel.Control.directions.prev}
+          style={{ top: '33%' }}
+        />
+        <Carousel.Control
+          direction={Carousel.Control.directions.next}
+          style={{ top: '33%' }}
+        />
+      </Carousel.Controls>
+    }
+  >
+    {new Array(9).fill(null).map((_, index) => (
+      <MockItem key={index}>item: {index + 1}</MockItem>
+    ))}
+  </Carousel>
+))
+
 const sizeStories = storiesOf('Carousel/size', module)
 
 Object.values(Carousel.sizes).forEach(size => {
@@ -81,6 +110,18 @@ Object.values(Carousel.sizes).forEach(size => {
     <Carousel size={size}>
       {new Array(13).fill(null).map((_, index) => (
         <MockItem key={index}>item: {index + 1}</MockItem>
+      ))}
+    </Carousel>
+  ))
+})
+
+const cardStories = storiesOf('Carousel/with Card', module)
+
+Object.values(Carousel.sizes).forEach(size => {
+  cardStories.add(size, _ => (
+    <Carousel size={size}>
+      {new Array(13).fill(null).map((_, index) => (
+        <MockCard key={index} />
       ))}
     </Carousel>
   ))
