@@ -173,6 +173,19 @@ function usePager(pageCount, additionalSideEffectTriggers = []) {
 
   const ref = React.useRef()
 
+  React.useEffect(() => {
+    if (pageCount - 1 <= activePage) setActivePage(pageCount - 1)
+  }, [activePage, pageCount])
+
+  React.useEffect(() => {
+    const nextPageEl = ref.current.childNodes[activePage]
+    if (!nextPageEl) return
+
+    const nextOffset = ref.current.offsetLeft - nextPageEl.offsetLeft
+
+    setOffset(nextOffset)
+  }, [activePage, pageCount, ...additionalSideEffectTriggers])
+
   const next = () => {
     const nextPage = activePage + 1
     if (nextPage > pageCount - 1) return
@@ -186,13 +199,6 @@ function usePager(pageCount, additionalSideEffectTriggers = []) {
 
     setActivePage(nextPage)
   }
-
-  React.useEffect(() => {
-    const nextPageEl = ref.current.childNodes[activePage]
-    const nextOffset = ref.current.offsetLeft - nextPageEl.offsetLeft
-
-    setOffset(nextOffset)
-  }, [activePage, pageCount, ...additionalSideEffectTriggers])
 
   return {
     activePage,
