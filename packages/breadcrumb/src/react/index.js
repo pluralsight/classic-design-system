@@ -12,23 +12,31 @@ const styles = {
 }
 
 const Breadcrumb = React.forwardRef((props, ref) => {
-  const { onClick, ...rest } = props
+  const { disabled, href, loading, onClick, ...rest } = props
   return (
     <div {...filterReactProps(rest)} {...styles.breadcrumb(props)}>
       <Button
-        {...props}
-        ref={ref}
-        icon={<Icon id={Icon.ids.caretLeft} />}
         appearance={Button.appearances.flat}
+        href={href}
+        disabled={disabled}
+        icon={<Icon id={Icon.ids.caretLeft} />}
+        loading={loading}
+        onClick={onClick}
+        ref={ref}
         size={Button.sizes.small}
-      />
+      >
+        {props.children}
+      </Button>
     </div>
   )
 })
 
 Breadcrumb.propTypes = {
   className: PropTypes.string,
+  children: PropTypes.node,
   disabled: PropTypes.bool,
+  href: PropTypes.string,
+  loading: PropTypes.bool,
   onClick: PropTypes.func,
   style: PropTypes.object
 }
