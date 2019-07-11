@@ -186,7 +186,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
       <li>
         <button
           aria-label="previous"
-          data-css-1lw2r3q=""
+          data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
           style={
@@ -215,7 +215,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
       <li>
         <button
           aria-label="next"
-          data-css-1tu0w1u=""
+          data-css-n705st=""
           hidden={false}
           onClick={[Function]}
           style={
@@ -350,7 +350,7 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
       <li>
         <button
           aria-label="previous"
-          data-css-1lw2r3q=""
+          data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
         >
@@ -374,7 +374,7 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
       <li>
         <button
           aria-label="next"
-          data-css-1tu0w1u=""
+          data-css-n705st=""
           hidden={false}
           onClick={[Function]}
         >
@@ -825,7 +825,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
       <li>
         <button
           aria-label="previous"
-          data-css-1lw2r3q=""
+          data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
         >
@@ -849,7 +849,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
       <li>
         <button
           aria-label="next"
-          data-css-1tu0w1u=""
+          data-css-n705st=""
           hidden={false}
           onClick={[Function]}
         >
@@ -924,7 +924,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
       <li>
         <button
           aria-label="previous"
-          data-css-1lw2r3q=""
+          data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
         >
@@ -948,7 +948,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
       <li>
         <button
           aria-label="next"
-          data-css-1tu0w1u=""
+          data-css-n705st=""
           hidden={true}
           onClick={[Function]}
         >
@@ -1040,7 +1040,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
       <li>
         <button
           aria-label="previous"
-          data-css-1lw2r3q=""
+          data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
         >
@@ -1064,7 +1064,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
       <li>
         <button
           aria-label="next"
-          data-css-1tu0w1u=""
+          data-css-n705st=""
           hidden={false}
           onClick={[Function]}
         >
@@ -1356,7 +1356,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
       <li>
         <button
           aria-label="previous"
-          data-css-1lw2r3q=""
+          data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
         >
@@ -1380,7 +1380,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
       <li>
         <button
           aria-label="next"
-          data-css-1tu0w1u=""
+          data-css-n705st=""
           hidden={false}
           onClick={[Function]}
         >
@@ -1672,7 +1672,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
       <li>
         <button
           aria-label="previous"
-          data-css-1lw2r3q=""
+          data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
         >
@@ -1696,7 +1696,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
       <li>
         <button
           aria-label="next"
-          data-css-1tu0w1u=""
+          data-css-n705st=""
           hidden={false}
           onClick={[Function]}
         >
@@ -3574,7 +3574,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
       <li>
         <button
           aria-label="previous"
-          data-css-1lw2r3q=""
+          data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
         >
@@ -3598,7 +3598,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
       <li>
         <button
           aria-label="next"
-          data-css-1tu0w1u=""
+          data-css-n705st=""
           hidden={false}
           onClick={[Function]}
         >
@@ -5476,7 +5476,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
       <li>
         <button
           aria-label="previous"
-          data-css-1lw2r3q=""
+          data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
         >
@@ -5500,7 +5500,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
       <li>
         <button
           aria-label="next"
-          data-css-1tu0w1u=""
+          data-css-n705st=""
           hidden={false}
           onClick={[Function]}
         >

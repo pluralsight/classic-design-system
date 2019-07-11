@@ -57,11 +57,15 @@ export default {
   },
   [`.psds-carousel__controls__control.psds-theme--${themeNames.dark}`]: {
     background: core.colors.gray03,
-    color: core.colors.white
+    color: core.colors.white,
+
+    '&:hover, &:focus': { background: core.colors.gray04 }
   },
   [`.psds-carousel__controls__control.psds-theme--${themeNames.light}`]: {
     background: core.colors.white,
-    color: core.colors.gray04
+    color: core.colors.gray04,
+
+    '&:hover, &:focus': { background: core.colors.bone }
   },
   '.psds-carousel__controls__control--prev': {
     left: 0,
