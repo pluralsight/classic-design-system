@@ -14,6 +14,8 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
       data-css-1ltsxrp=""
       id="carousel-5"
       onKeyDown={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
       role="region"
       tabIndex="0"
     >
@@ -268,6 +270,8 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
       data-css-1ltsxrp=""
       id="carousel-4"
       onKeyDown={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
       role="region"
       tabIndex="0"
     >
@@ -437,6 +441,8 @@ exports[`Storyshots Carousel/items many items 1`] = `
       data-css-1ltsxrp=""
       id="carousel-3"
       onKeyDown={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
       role="region"
       tabIndex="0"
     >
@@ -897,6 +903,8 @@ exports[`Storyshots Carousel/items one item 1`] = `
       data-css-1ltsxrp=""
       id="carousel-1"
       onKeyDown={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
       role="region"
       tabIndex="0"
     >
@@ -996,6 +1004,8 @@ exports[`Storyshots Carousel/items two items 1`] = `
       data-css-1ltsxrp=""
       id="carousel-2"
       onKeyDown={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
       role="region"
       tabIndex="0"
     >
@@ -1112,6 +1122,8 @@ exports[`Storyshots Carousel/size narrow 1`] = `
       data-css-1ltsxrp=""
       id="carousel-6"
       onKeyDown={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
       role="region"
       tabIndex="0"
     >
@@ -1428,6 +1440,8 @@ exports[`Storyshots Carousel/size wide 1`] = `
       data-css-1ltsxrp=""
       id="carousel-7"
       onKeyDown={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
       role="region"
       tabIndex="0"
     >
@@ -1744,6 +1758,8 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
       data-css-1ltsxrp=""
       id="carousel-8"
       onKeyDown={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
       role="region"
       tabIndex="0"
     >
@@ -3646,6 +3662,8 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
       data-css-1ltsxrp=""
       id="carousel-9"
       onKeyDown={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
       role="region"
       tabIndex="0"
     >

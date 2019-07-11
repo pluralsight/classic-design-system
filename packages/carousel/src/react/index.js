@@ -5,12 +5,13 @@ import PropTypes from 'prop-types'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import stylesheet from '../css/index.js'
-import { combineFns, chunk, pick } from '../js/utils.js'
+import { chunk, pick } from '../js/utils.js'
 import * as vars from '../vars/index.js'
 
 import CarouselContext from './context.js'
 import { Controls, Control } from './controls.js'
 import useResizeObserver from './use-resize-observer.js'
+import useSwipeEvents from './use-swipe-events.js'
 import useUniqueId from './use-unique-id.js'
 
 const styles = {
@@ -53,7 +54,16 @@ export default function Carousel({ controls, size, ...props }) {
         {...filterReactProps(props)}
         ref={ref}
       >
-        <Pages ref={pager.ref} id={id}>
+        <Pages
+          ref={pager.ref}
+          id={id}
+          onKeyDown={evt => {
+            if (isLeftArrow(evt)) pager.prev()
+            if (isRightArrow(evt)) pager.next()
+          }}
+          onSwipeLeft={pager.next}
+          onSwipeRight={pager.prev}
+        >
           {pages.map((items, i) => (
             <Page key={i} isActivePage={pager.activePage === i}>
               {items.map((item, j) => (
@@ -108,29 +118,26 @@ function Item(props) {
 
 const Pages = React.forwardRef((props, ref) => {
   const context = React.useContext(CarouselContext)
-
-  const handleKeyDown = combineFns(evt => {
-    if (isLeftArrow(evt)) context.prev()
-    if (isRightArrow(evt)) context.next()
-  }, props.onKeyDown)
+  const [swipeEvents] = useSwipeEvents(props)
 
   return (
     <ul
       aria-describedby={`${context.id}__instructions`}
       aria-label="carousel"
       id={context.id}
-      onKeyDown={handleKeyDown}
       ref={ref}
       role="region"
       tabIndex="0"
       {...styles.pages()}
-      {...props}
+      {...filterReactProps(props)}
+      {...swipeEvents}
     />
   )
 })
 
 Pages.propTypes = {
-  onKeyDown: PropTypes.func
+  onSwipeLeft: PropTypes.func,
+  onSwipeRight: PropTypes.func
 }
 
 function Page({ isActivePage, ...props }) {
