@@ -11,7 +11,7 @@ import * as vars from '../vars/index.js'
 import CarouselContext from './context.js'
 import { Controls, Control } from './controls.js'
 import useResizeObserver from './use-resize-observer.js'
-import useSwipeEvents from './use-swipe-events.js'
+import useSwipe from './use-swipe.js'
 import useUniqueId from './use-unique-id.js'
 
 const styles = {
@@ -118,7 +118,11 @@ function Item(props) {
 
 const Pages = React.forwardRef((props, ref) => {
   const context = React.useContext(CarouselContext)
-  const [swipeEvents] = useSwipeEvents(props)
+
+  useSwipe(ref, {
+    onSwipeLeft: props.onSwipeLeft,
+    onSwipeRight: props.onSwipeRight
+  })
 
   return (
     <ul
@@ -130,14 +134,13 @@ const Pages = React.forwardRef((props, ref) => {
       tabIndex="0"
       {...styles.pages()}
       {...filterReactProps(props)}
-      {...swipeEvents}
     />
   )
 })
 
 Pages.propTypes = {
-  onSwipeLeft: PropTypes.func,
-  onSwipeRight: PropTypes.func
+  onSwipeLeft: PropTypes.func.isRequired,
+  onSwipeRight: PropTypes.func.isRequired
 }
 
 function Page({ isActivePage, ...props }) {
