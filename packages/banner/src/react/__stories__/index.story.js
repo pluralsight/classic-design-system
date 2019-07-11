@@ -1,11 +1,11 @@
 import { action } from '@storybook/addon-actions'
 import addons from '@storybook/addons'
-import Link from '@pluralsight/ps-design-system-link/react'
+import Link from '@pluralsight/ps-design-system-link/react.js'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Banner from '..'
+import Banner from '../index.js'
 
 const colorStory = storiesOf('color', module).addDecorator(
   themeDecorator(addons)
