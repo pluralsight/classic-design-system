@@ -1,7 +1,7 @@
 import { mount, shallow } from 'enzyme'
 import React from 'react'
 
-import Breadcrumb from '../index'
+import Breadcrumb from '../index.js'
 
 test('click on button triggered once', () => {
   let callCount = 0
