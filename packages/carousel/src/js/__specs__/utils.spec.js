@@ -96,28 +96,24 @@ describe('utils', () => {
   describe('#uniqueId', () => {
     const { uniqueId } = utils
 
-    beforeEach(() => {
-      uniqueId.reset()
-    })
-
     it('returns a string', () => {
       const output = uniqueId()
       expect(typeof output).toEqual('string')
     })
 
-    it('should increment ids', function() {
-      expect(uniqueId()).toEqual('1')
-      expect(uniqueId()).toEqual('2')
-      expect(uniqueId()).toEqual('3')
-      expect(uniqueId()).toEqual('4')
-      expect(uniqueId()).toEqual('5')
+    it('should return unique ids', function() {
+      const ids = new Array(5).fill(null).map(uniqueId)
+      const uniqued = [...new Set(ids)]
+
+      expect(ids).toHaveLength(5)
+      expect(uniqued).toHaveLength(5)
     })
 
     it('supports an optional prefix', function() {
-      expect(uniqueId('a-')).toEqual('a-1')
-      expect(uniqueId('b-')).toEqual('b-2')
-      expect(uniqueId('c:')).toEqual('c:3')
-      expect(uniqueId('word_')).toEqual('word_4')
+      expect(uniqueId('a-')).toContain('a-')
+      expect(uniqueId('b-')).toContain('b-')
+      expect(uniqueId('c:')).toContain('c:')
+      expect(uniqueId('word_')).toContain('word_')
     })
   })
 

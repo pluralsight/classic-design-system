@@ -1,7 +1,13 @@
-import { useRef } from 'react'
+import { useLayoutEffect, useState } from 'react'
 
-import { uniqueId } from '../js/utils'
+import { uniqueId } from '../js/utils.js'
 
 export default function useUniqueId(prefix = '') {
-  return useRef(uniqueId(prefix)).current
+  const [id, setId] = useState('')
+
+  useLayoutEffect(() => {
+    setId(uniqueId(prefix))
+  }, [prefix])
+
+  return id
 }

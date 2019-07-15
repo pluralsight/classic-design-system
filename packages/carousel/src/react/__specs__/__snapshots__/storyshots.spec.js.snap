@@ -9,10 +9,10 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
     data-css-rumlay=""
   >
     <ul
-      aria-describedby="carousel-5__instructions"
+      aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
       data-css-1ltsxrp=""
-      id="carousel-5"
+      id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
       tabIndex="0"
@@ -83,7 +83,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
       />
     </ul>
     <ul
-      aria-controls="carousel-5"
+      aria-controls="carousel-mock_unique_id"
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
@@ -148,7 +148,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
     </ul>
     <div
       data-css-6wu9td=""
-      id="carousel-5__instructions"
+      id="carousel-mock_unique_id__instructions"
     >
       <p>
         Currently on page 
@@ -174,10 +174,10 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
     data-css-rumlay=""
   >
     <ul
-      aria-describedby="carousel-4__instructions"
+      aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
       data-css-1ltsxrp=""
-      id="carousel-4"
+      id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
       tabIndex="0"
@@ -218,7 +218,7 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
       />
     </ul>
     <ul
-      aria-controls="carousel-4"
+      aria-controls="carousel-mock_unique_id"
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
@@ -273,7 +273,7 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
     </ul>
     <div
       data-css-6wu9td=""
-      id="carousel-4__instructions"
+      id="carousel-mock_unique_id__instructions"
     >
       <p>
         Currently on page 
@@ -314,10 +314,10 @@ exports[`Storyshots Carousel/items many items 1`] = `
     data-css-rumlay=""
   >
     <ul
-      aria-describedby="carousel-3__instructions"
+      aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
       data-css-1ltsxrp=""
-      id="carousel-3"
+      id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
       tabIndex="0"
@@ -460,7 +460,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
       />
     </ul>
     <ul
-      aria-controls="carousel-3"
+      aria-controls="carousel-mock_unique_id"
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
@@ -515,7 +515,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
     </ul>
     <div
       data-css-6wu9td=""
-      id="carousel-3__instructions"
+      id="carousel-mock_unique_id__instructions"
     >
       <p>
         Currently on page 
@@ -541,10 +541,10 @@ exports[`Storyshots Carousel/items one item 1`] = `
     data-css-rumlay=""
   >
     <ul
-      aria-describedby="carousel-1__instructions"
+      aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
       data-css-1ltsxrp=""
-      id="carousel-1"
+      id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
       tabIndex="0"
@@ -566,7 +566,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
       </li>
     </ul>
     <ul
-      aria-controls="carousel-1"
+      aria-controls="carousel-mock_unique_id"
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
@@ -623,7 +623,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
     </ul>
     <div
       data-css-6wu9td=""
-      id="carousel-1__instructions"
+      id="carousel-mock_unique_id__instructions"
     >
       <p>
         Currently on page 
@@ -649,10 +649,10 @@ exports[`Storyshots Carousel/items two items 1`] = `
     data-css-rumlay=""
   >
     <ul
-      aria-describedby="carousel-2__instructions"
+      aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
       data-css-1ltsxrp=""
-      id="carousel-2"
+      id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
       tabIndex="0"
@@ -680,7 +680,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
       />
     </ul>
     <ul
-      aria-controls="carousel-2"
+      aria-controls="carousel-mock_unique_id"
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
@@ -735,7 +735,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
     </ul>
     <div
       data-css-6wu9td=""
-      id="carousel-2__instructions"
+      id="carousel-mock_unique_id__instructions"
     >
       <p>
         Currently on page 
@@ -761,10 +761,10 @@ exports[`Storyshots Carousel/size narrow 1`] = `
     data-css-rumlay=""
   >
     <ul
-      aria-describedby="carousel-6__instructions"
+      aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
       data-css-1ltsxrp=""
-      id="carousel-6"
+      id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
       tabIndex="0"
@@ -859,7 +859,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
       />
     </ul>
     <ul
-      aria-controls="carousel-6"
+      aria-controls="carousel-mock_unique_id"
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
@@ -914,7 +914,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
     </ul>
     <div
       data-css-6wu9td=""
-      id="carousel-6__instructions"
+      id="carousel-mock_unique_id__instructions"
     >
       <p>
         Currently on page 
@@ -940,10 +940,10 @@ exports[`Storyshots Carousel/size wide 1`] = `
     data-css-rumlay=""
   >
     <ul
-      aria-describedby="carousel-7__instructions"
+      aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
       data-css-1ltsxrp=""
-      id="carousel-7"
+      id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
       tabIndex="0"
@@ -1038,7 +1038,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
       />
     </ul>
     <ul
-      aria-controls="carousel-7"
+      aria-controls="carousel-mock_unique_id"
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
@@ -1093,7 +1093,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
     </ul>
     <div
       data-css-6wu9td=""
-      id="carousel-7__instructions"
+      id="carousel-mock_unique_id__instructions"
     >
       <p>
         Currently on page 
@@ -1119,10 +1119,10 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
     data-css-rumlay=""
   >
     <ul
-      aria-describedby="carousel-8__instructions"
+      aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
       data-css-1ltsxrp=""
-      id="carousel-8"
+      id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
       tabIndex="0"
@@ -1344,7 +1344,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
       />
     </ul>
     <ul
-      aria-controls="carousel-8"
+      aria-controls="carousel-mock_unique_id"
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
@@ -1399,7 +1399,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
     </ul>
     <div
       data-css-6wu9td=""
-      id="carousel-8__instructions"
+      id="carousel-mock_unique_id__instructions"
     >
       <p>
         Currently on page 
@@ -1425,10 +1425,10 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
     data-css-rumlay=""
   >
     <ul
-      aria-describedby="carousel-9__instructions"
+      aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
       data-css-1ltsxrp=""
-      id="carousel-9"
+      id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
       tabIndex="0"
@@ -1650,7 +1650,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
       />
     </ul>
     <ul
-      aria-controls="carousel-9"
+      aria-controls="carousel-mock_unique_id"
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
@@ -1705,7 +1705,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
     </ul>
     <div
       data-css-6wu9td=""
-      id="carousel-9__instructions"
+      id="carousel-mock_unique_id__instructions"
     >
       <p>
         Currently on page 
