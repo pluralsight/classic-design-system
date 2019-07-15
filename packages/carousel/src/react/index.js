@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import stylesheet from '../css/index.js'
+import { calcItemsPerPage, isLeftArrow, isRightArrow } from '../js/index.js'
 import { chunk, pick } from '../js/utils.js'
 import * as vars from '../vars/index.js'
 
@@ -178,22 +179,11 @@ Page.propTypes = {
   isActivePage: PropTypes.bool.isRequired
 }
 
-function calcItemsPerPage(constraints, width) {
-  const minItemSize = constraints.minWidth + constraints.gutter
-  const perPage = Math.floor(width / (minItemSize - constraints.gutter))
-
-  return perPage <= 0 ? 1 : perPage
-}
-
 function insertShims(page, perPage) {
   if (page.length >= perPage) return page
 
   return page.concat(new Array(perPage - page.length).fill(null))
 }
-
-const isLeftArrow = evt => evt.keyCode === 37
-
-const isRightArrow = evt => evt.keyCode === 39
 
 function usePager(pageCount, additionalSideEffectTriggers = []) {
   const [activePage, setActivePage] = React.useState(0)
