@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@2.0.9...@pluralsight/ps-design-system-banner@3.0.0) (2019-07-15)
+
+
+### Bug Fixes
+
+* **banner:** change proptypes for color to values ([7adbd07](https://github.com/pluralsight/design-system/commit/7adbd07))
+
+
+### Build System
+
+* **banner:** bump react to version 16.8.6 ([fa6ebfc](https://github.com/pluralsight/design-system/commit/fa6ebfc))
+
+
+### Features
+
+* **banner:** enable forwardRef ([d5ccbbd](https://github.com/pluralsight/design-system/commit/d5ccbbd))
+* **banner:** filter in all supported html attributes ([edf52d1](https://github.com/pluralsight/design-system/commit/edf52d1))
+
+
+### BREAKING CHANGES
+
+* **banner:** enable forwardRef
+* **banner:** bump react to version 16.8.6
+
+
+
+
+
 ## [2.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@2.0.8...@pluralsight/ps-design-system-banner@2.0.9) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-banner

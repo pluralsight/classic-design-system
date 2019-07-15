@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@3.0.4...@pluralsight/ps-design-system-breadcrumb@4.0.0) (2019-07-15)
+
+
+### Code Refactoring
+
+* **breadcrumb:** only pass Button props to inner button ([85c4ccc](https://github.com/pluralsight/design-system/commit/85c4ccc))
+
+
+### Features
+
+* **breadcrumb:** filter props into root div ([2757887](https://github.com/pluralsight/design-system/commit/2757887))
+
+
+### BREAKING CHANGES
+
+* **breadcrumb:** spread props onto root div not inner button
+
+
+
+
+
 ## [3.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@3.0.3...@pluralsight/ps-design-system-breadcrumb@3.0.4) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb

@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@4.1.13...@pluralsight/ps-design-system-actionmenu@5.0.0) (2019-07-15)
+
+
+### Bug Fixes
+
+* **actionmenu:** fixes regession when keyboarding ([32ce90e](https://github.com/pluralsight/design-system/commit/32ce90e))
+
+
+### Code Refactoring
+
+* **actionmenu:** bump required react minimum version to 16.8.6 ([d2829b5](https://github.com/pluralsight/design-system/commit/d2829b5))
+
+
+### BREAKING CHANGES
+
+* **actionmenu:** requires react 16.8.6 or higher
+
+
+
+
+
 ## [4.1.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@4.1.12...@pluralsight/ps-design-system-actionmenu@4.1.13) (2019-06-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu

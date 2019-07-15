@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.9.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.8.0...@pluralsight/ps-design-system-site@12.9.0) (2019-07-15)
+
+
+### Bug Fixes
+
+* **site:** make note page navigable ([1928451](https://github.com/pluralsight/design-system/commit/1928451))
+* **site:** spelling and typos ([588e4c2](https://github.com/pluralsight/design-system/commit/588e4c2))
+
+
+### Features
+
+* **site:** update Guildeline component for vert(1 col) examples ([5283101](https://github.com/pluralsight/design-system/commit/5283101))
+
+
+
+
+
 # [12.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.7.2...@pluralsight/ps-design-system-site@12.8.0) (2019-06-28)
 
 

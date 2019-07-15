@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@1.1.4...@pluralsight/ps-design-system-position@1.2.0) (2019-07-15)
+
+
+### Features
+
+* **position:** adds left/right positioning above and below ([5d22e25](https://github.com/pluralsight/design-system/commit/5d22e25))
+
+
+
+
+
 ## [1.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@1.1.3...@pluralsight/ps-design-system-position@1.1.4) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-position
