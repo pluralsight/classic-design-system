@@ -225,7 +225,7 @@ const EmptyStateDocumentation = withServerProps(props => (
 
       <SectionHeading>Alternatives</SectionHeading>
       <P>
-        Consider alternatives to empty states. Instad of an empty experience,
+        Consider alternatives to empty states. Instead of an empty experience,
         might there be starter, educational, or sample content to present to
         users to help them learn about the product and start using it right
         away?
@@ -236,7 +236,7 @@ const EmptyStateDocumentation = withServerProps(props => (
 If the screen is intended to be populated with content by a user, consider suggesting samples or recommendations to ease the effort of getting started.
 
 ### 👉 Educational content
-A single graphic and message may not be enough to convey the purpose of a feature. Consider animated or video walkthroughs, but keep them brief and dismissable.
+A single graphic and message may not be enough to convey the purpose of a feature. Consider animated or video walkthroughs, but keep them brief and dismissible.
 
 ### 👉 Best match suggestion
 If the absence of data occurs due to a user query such as a search, consider displaying a best match instead of nothing at all.
@@ -246,7 +246,7 @@ If the absence of data occurs due to a user query such as a search, consider dis
       <P>
         Follow{' '}
         <Link href="/patterns/voice-tone">voice and tone guidelines</Link> when
-        writing copy for empty states. Apppropriate empty statement consist of a
+        writing copy for empty states. Appropriate empty statement consist of a
         short declarative statement of what occurred, followed by a brief
         sentence giving more context if necessary. Provide a clear CTA button
         that’s no more than 2-3 words. Write clearly and conversationally like

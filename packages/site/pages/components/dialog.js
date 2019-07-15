@@ -221,7 +221,7 @@ export default withServerProps(_ => (
       <P>
         Dialogs can be shown with or without a tail (a directional indicator).
         To make the tail appear, use a{' '}
-        <Text.Code>Dialog.tailPositions</Text.Code> option.tion.
+        <Text.Code>Dialog.tailPositions</Text.Code> option.
       </P>
       <Example.React
         includes={{ Dialog, ExampleContent }}
@@ -243,7 +243,7 @@ export default withServerProps(_ => (
         close button, clicking the overlay (in the case of a{' '}
         <Text.Code>modal</Text.Code> Dialog), and pressing the escape key. One
         or all of these methods, if available, will call the{' '}
-        <Text.Code>onClose</Text.Code> function when triggered.ered.
+        <Text.Code>onClose</Text.Code> function when triggered.
       </P>
       <Example.React
         includes={{ Dialog, ExampleContent }}
@@ -401,7 +401,7 @@ export default withServerProps(_ => (
       />
 
       <P>
-        Be explicit as possible when writing dialog buttons. Use affirimitive
+        Be explicit as possible when writing dialog buttons. Use affirmative
         action text to clearly indicate the outcome of the decision. [
         <Link
           appearance={Link.appearances.subtle}

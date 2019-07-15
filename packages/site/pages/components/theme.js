@@ -105,7 +105,7 @@ export default withServerProps(_ => (
       <P>
         The product is mostly presented within a "dark" interface theme. This is
         the default, but the <Text.Code>Theme</Text.Code> component can change
-        that for a page or subset of themable components.
+        that for a page or subset of themeable components.
       </P>
       <P>
         Here's an example of the <Text.Code>Button</Text.Code> component in both

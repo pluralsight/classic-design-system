@@ -31,7 +31,7 @@ Include this vanilla CSS in your application in a method appropriate for your pr
 
 Many components in the the Design System depend on features in more modern versions of ecmascript(es6 and es7). Older browsers and devices that we support do not provide these natively (e.g. IE 11) so you'll need to include a global polyfill in your bundled application, such as \`core-js\` or \`babel-polyfill\`.
 
-To explore features by version you can visit the [ECMAScript Compatibitily Table](https://kangax.github.io/compat-table/es6/).
+To explore features by version you can visit the [ECMAScript Compatibility Table](https://kangax.github.io/compat-table/es6/).
 
 ## Use Core
 

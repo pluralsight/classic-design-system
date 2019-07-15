@@ -133,7 +133,7 @@ export default withServerProps(_ => (
       <P>
         Buttons may include an icon without a label. Please provide a{' '}
         <Text.Code>title</Text.Code> prop to display the native tooltip as well
-        as to support assitive technology(i.e. screen readers).
+        as to support assistive technology(i.e. screen readers).
       </P>
       <P>
         Read more <Link href="/components/icon">icon docs</Link>.

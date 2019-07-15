@@ -499,7 +499,7 @@ export default withServerProps(_ => (
       </P>
       <P>
         Metadata is constrained to a single line, overflowing with an ellipsis
-        indicated. The first datum is given display space precendence.
+        indicated. The first datum is given display space precedence.
       </P>
       <Example.React
         themeToggle

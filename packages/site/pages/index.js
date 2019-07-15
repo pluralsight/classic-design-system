@@ -113,7 +113,7 @@ export default withServerProps(_ => (
         <Point title="Components">
           Components include a variety of common UI elements to bootstrap
           experiences and ensure consistent interaction and style as well as
-          accessibility optimizations . These are React components.
+          accessibility optimizations. These are React components.
         </Point>
       </div>
       <Action href="/install">Install the Design System</Action>
