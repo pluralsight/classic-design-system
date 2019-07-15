@@ -285,6 +285,7 @@ export default withServerProps(_ => (
         By that measure, place your actions at the bottom/right, with the
         primary action on the right.{' '}
       </P>
+
       <Guideline
         do={
           <Dialog disableFocusOnMount>

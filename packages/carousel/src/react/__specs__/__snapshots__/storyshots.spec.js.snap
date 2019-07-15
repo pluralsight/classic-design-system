@@ -1,0 +1,1723 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Carousel/controls custom alignment 1`] = `
+<div
+  data-css-x7zjce=""
+  data-testid="story-wrapper"
+>
+  <div
+    data-css-rumlay=""
+  >
+    <ul
+      aria-describedby="carousel-mock_unique_id__instructions"
+      aria-label="carousel"
+      data-css-1ltsxrp=""
+      id="carousel-mock_unique_id"
+      onKeyDown={[Function]}
+      role="region"
+      tabIndex="0"
+    >
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+      >
+        <div
+          data-css-1gthxiq=""
+        >
+          <div
+            data-css-1oosafx=""
+            data-testid="mock-item"
+          >
+            item: 
+            1
+          </div>
+        </div>
+      </li>
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+    </ul>
+    <ul
+      aria-controls="carousel-mock_unique_id"
+      aria-label="carousel controls"
+      data-css-b3afd4=""
+    >
+      <li>
+        <button
+          aria-label="previous"
+          data-css-1wkjkcr=""
+          hidden={true}
+          onClick={[Function]}
+          style={
+            Object {
+              "top": "33%",
+            }
+          }
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="next"
+          data-css-n705st=""
+          onClick={[Function]}
+          style={
+            Object {
+              "top": "33%",
+            }
+          }
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+    </ul>
+    <div
+      data-css-6wu9td=""
+      id="carousel-mock_unique_id__instructions"
+    >
+      <p>
+        Currently on page 
+        1
+         of 
+        9
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel/items dynamic items 1`] = `
+<div
+  data-css-x7zjce=""
+  data-testid="story-wrapper"
+>
+  <div
+    data-css-rumlay=""
+  >
+    <ul
+      aria-describedby="carousel-mock_unique_id__instructions"
+      aria-label="carousel"
+      data-css-1ltsxrp=""
+      id="carousel-mock_unique_id"
+      onKeyDown={[Function]}
+      role="region"
+      tabIndex="0"
+    >
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+      >
+        <div
+          data-css-1gthxiq=""
+        >
+          <div
+            data-css-1oosafx=""
+            data-testid="mock-item"
+          >
+            item: 
+            1
+          </div>
+        </div>
+      </li>
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+    </ul>
+    <ul
+      aria-controls="carousel-mock_unique_id"
+      aria-label="carousel controls"
+      data-css-b3afd4=""
+    >
+      <li>
+        <button
+          aria-label="previous"
+          data-css-1wkjkcr=""
+          hidden={true}
+          onClick={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="next"
+          data-css-n705st=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+    </ul>
+    <div
+      data-css-6wu9td=""
+      id="carousel-mock_unique_id__instructions"
+    >
+      <p>
+        Currently on page 
+        1
+         of 
+        4
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
+      </p>
+    </div>
+  </div>
+  <div
+    data-css-18ma6i3=""
+  >
+    <button
+      disabled={false}
+      onClick={[Function]}
+    >
+      remove
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      add
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel/items many items 1`] = `
+<div
+  data-css-x7zjce=""
+  data-testid="story-wrapper"
+>
+  <div
+    data-css-rumlay=""
+  >
+    <ul
+      aria-describedby="carousel-mock_unique_id__instructions"
+      aria-label="carousel"
+      data-css-1ltsxrp=""
+      id="carousel-mock_unique_id"
+      onKeyDown={[Function]}
+      role="region"
+      tabIndex="0"
+    >
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+      >
+        <div
+          data-css-1gthxiq=""
+        >
+          <div
+            data-css-1oosafx=""
+            data-testid="mock-item"
+          >
+            item: 
+            1
+          </div>
+        </div>
+      </li>
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+    </ul>
+    <ul
+      aria-controls="carousel-mock_unique_id"
+      aria-label="carousel controls"
+      data-css-b3afd4=""
+    >
+      <li>
+        <button
+          aria-label="previous"
+          data-css-1wkjkcr=""
+          hidden={true}
+          onClick={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="next"
+          data-css-n705st=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+    </ul>
+    <div
+      data-css-6wu9td=""
+      id="carousel-mock_unique_id__instructions"
+    >
+      <p>
+        Currently on page 
+        1
+         of 
+        21
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel/items one item 1`] = `
+<div
+  data-css-x7zjce=""
+  data-testid="story-wrapper"
+>
+  <div
+    data-css-rumlay=""
+  >
+    <ul
+      aria-describedby="carousel-mock_unique_id__instructions"
+      aria-label="carousel"
+      data-css-1ltsxrp=""
+      id="carousel-mock_unique_id"
+      onKeyDown={[Function]}
+      role="region"
+      tabIndex="0"
+    >
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+      >
+        <div
+          data-css-1gthxiq=""
+        >
+          <div
+            data-css-1oosafx=""
+            data-testid="mock-item"
+          >
+            just one item
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ul
+      aria-controls="carousel-mock_unique_id"
+      aria-label="carousel controls"
+      data-css-b3afd4=""
+    >
+      <li>
+        <button
+          aria-label="previous"
+          data-css-1wkjkcr=""
+          hidden={true}
+          onClick={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="next"
+          data-css-n705st=""
+          hidden={true}
+          onClick={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+    </ul>
+    <div
+      data-css-6wu9td=""
+      id="carousel-mock_unique_id__instructions"
+    >
+      <p>
+        Currently on page 
+        1
+         of 
+        1
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel/items two items 1`] = `
+<div
+  data-css-x7zjce=""
+  data-testid="story-wrapper"
+>
+  <div
+    data-css-rumlay=""
+  >
+    <ul
+      aria-describedby="carousel-mock_unique_id__instructions"
+      aria-label="carousel"
+      data-css-1ltsxrp=""
+      id="carousel-mock_unique_id"
+      onKeyDown={[Function]}
+      role="region"
+      tabIndex="0"
+    >
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+      >
+        <div
+          data-css-1gthxiq=""
+        >
+          <div
+            data-css-1oosafx=""
+            data-testid="mock-item"
+          >
+            first item
+          </div>
+        </div>
+      </li>
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+    </ul>
+    <ul
+      aria-controls="carousel-mock_unique_id"
+      aria-label="carousel controls"
+      data-css-b3afd4=""
+    >
+      <li>
+        <button
+          aria-label="previous"
+          data-css-1wkjkcr=""
+          hidden={true}
+          onClick={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="next"
+          data-css-n705st=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+    </ul>
+    <div
+      data-css-6wu9td=""
+      id="carousel-mock_unique_id__instructions"
+    >
+      <p>
+        Currently on page 
+        1
+         of 
+        2
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel/size narrow 1`] = `
+<div
+  data-css-x7zjce=""
+  data-testid="story-wrapper"
+>
+  <div
+    data-css-rumlay=""
+  >
+    <ul
+      aria-describedby="carousel-mock_unique_id__instructions"
+      aria-label="carousel"
+      data-css-1ltsxrp=""
+      id="carousel-mock_unique_id"
+      onKeyDown={[Function]}
+      role="region"
+      tabIndex="0"
+    >
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+      >
+        <div
+          data-css-1gthxiq=""
+        >
+          <div
+            data-css-1oosafx=""
+            data-testid="mock-item"
+          >
+            item: 
+            1
+          </div>
+        </div>
+      </li>
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+    </ul>
+    <ul
+      aria-controls="carousel-mock_unique_id"
+      aria-label="carousel controls"
+      data-css-b3afd4=""
+    >
+      <li>
+        <button
+          aria-label="previous"
+          data-css-1wkjkcr=""
+          hidden={true}
+          onClick={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="next"
+          data-css-n705st=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+    </ul>
+    <div
+      data-css-6wu9td=""
+      id="carousel-mock_unique_id__instructions"
+    >
+      <p>
+        Currently on page 
+        1
+         of 
+        13
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel/size wide 1`] = `
+<div
+  data-css-x7zjce=""
+  data-testid="story-wrapper"
+>
+  <div
+    data-css-rumlay=""
+  >
+    <ul
+      aria-describedby="carousel-mock_unique_id__instructions"
+      aria-label="carousel"
+      data-css-1ltsxrp=""
+      id="carousel-mock_unique_id"
+      onKeyDown={[Function]}
+      role="region"
+      tabIndex="0"
+    >
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+      >
+        <div
+          data-css-1gthxiq=""
+        >
+          <div
+            data-css-1oosafx=""
+            data-testid="mock-item"
+          >
+            item: 
+            1
+          </div>
+        </div>
+      </li>
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+    </ul>
+    <ul
+      aria-controls="carousel-mock_unique_id"
+      aria-label="carousel controls"
+      data-css-b3afd4=""
+    >
+      <li>
+        <button
+          aria-label="previous"
+          data-css-1wkjkcr=""
+          hidden={true}
+          onClick={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="next"
+          data-css-n705st=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+    </ul>
+    <div
+      data-css-6wu9td=""
+      id="carousel-mock_unique_id__instructions"
+    >
+      <p>
+        Currently on page 
+        1
+         of 
+        13
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel/with Card narrow 1`] = `
+<div
+  data-css-x7zjce=""
+  data-testid="story-wrapper"
+>
+  <div
+    data-css-rumlay=""
+  >
+    <ul
+      aria-describedby="carousel-mock_unique_id__instructions"
+      aria-label="carousel"
+      data-css-1ltsxrp=""
+      id="carousel-mock_unique_id"
+      onKeyDown={[Function]}
+      role="region"
+      tabIndex="0"
+    >
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+      >
+        <div
+          data-css-1gthxiq=""
+        >
+          <div
+            data-css-1ybvkp1=""
+          >
+            <div
+              data-css-x1twjb=""
+            >
+              <div
+                data-css-i7gti2=""
+                style={
+                  Object {
+                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+                  }
+                }
+              />
+            </div>
+            <div
+              data-css-piydn8=""
+            >
+              <span
+                data-css-1202ll4=""
+              >
+                <a
+                  href="#"
+                >
+                  <div
+                    data-css-1tlmf72=""
+                  >
+                    <div
+                      className=""
+                    >
+                      <span
+                        style={
+                          Object {
+                            "display": "block",
+                            "maxHeight": "0px",
+                            "overflow": "hidden",
+                            "position": "relative",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "block",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          Card 0
+                        </span>
+                        <span
+                          aria-hidden="true"
+                          style={
+                            Object {
+                              "display": "block",
+                              "height": "0px",
+                              "overflow": "hidden",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          Card 0
+                        </span>
+                        <span
+                          aria-hidden="true"
+                          style={
+                            Object {
+                              "display": "block",
+                              "left": "-20000px",
+                              "position": "absolute",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "display": "block",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              W
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              W
+                            </span>
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "display": "block",
+                              }
+                            }
+                          >
+                            Card 0
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </span>
+            </div>
+            <div
+              data-css-sb1dn8=""
+            >
+              <span
+                data-css-1tz10dh=""
+              >
+                <span
+                  data-css-1202ll4=""
+                >
+                  <a
+                    href="#"
+                  >
+                    meta
+                  </a>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+    </ul>
+    <ul
+      aria-controls="carousel-mock_unique_id"
+      aria-label="carousel controls"
+      data-css-b3afd4=""
+    >
+      <li>
+        <button
+          aria-label="previous"
+          data-css-1wkjkcr=""
+          hidden={true}
+          onClick={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="next"
+          data-css-n705st=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+    </ul>
+    <div
+      data-css-6wu9td=""
+      id="carousel-mock_unique_id__instructions"
+    >
+      <p>
+        Currently on page 
+        1
+         of 
+        13
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel/with Card wide 1`] = `
+<div
+  data-css-x7zjce=""
+  data-testid="story-wrapper"
+>
+  <div
+    data-css-rumlay=""
+  >
+    <ul
+      aria-describedby="carousel-mock_unique_id__instructions"
+      aria-label="carousel"
+      data-css-1ltsxrp=""
+      id="carousel-mock_unique_id"
+      onKeyDown={[Function]}
+      role="region"
+      tabIndex="0"
+    >
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+      >
+        <div
+          data-css-1gthxiq=""
+        >
+          <div
+            data-css-1ybvkp1=""
+          >
+            <div
+              data-css-x1twjb=""
+            >
+              <div
+                data-css-i7gti2=""
+                style={
+                  Object {
+                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+                  }
+                }
+              />
+            </div>
+            <div
+              data-css-piydn8=""
+            >
+              <span
+                data-css-1202ll4=""
+              >
+                <a
+                  href="#"
+                >
+                  <div
+                    data-css-1tlmf72=""
+                  >
+                    <div
+                      className=""
+                    >
+                      <span
+                        style={
+                          Object {
+                            "display": "block",
+                            "maxHeight": "0px",
+                            "overflow": "hidden",
+                            "position": "relative",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "block",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          Card 0
+                        </span>
+                        <span
+                          aria-hidden="true"
+                          style={
+                            Object {
+                              "display": "block",
+                              "height": "0px",
+                              "overflow": "hidden",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          Card 0
+                        </span>
+                        <span
+                          aria-hidden="true"
+                          style={
+                            Object {
+                              "display": "block",
+                              "left": "-20000px",
+                              "position": "absolute",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "display": "block",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              W
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              W
+                            </span>
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "display": "block",
+                              }
+                            }
+                          >
+                            Card 0
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </span>
+            </div>
+            <div
+              data-css-sb1dn8=""
+            >
+              <span
+                data-css-1tz10dh=""
+              >
+                <span
+                  data-css-1202ll4=""
+                >
+                  <a
+                    href="#"
+                  >
+                    meta
+                  </a>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+    </ul>
+    <ul
+      aria-controls="carousel-mock_unique_id"
+      aria-label="carousel controls"
+      data-css-b3afd4=""
+    >
+      <li>
+        <button
+          aria-label="previous"
+          data-css-1wkjkcr=""
+          hidden={true}
+          onClick={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="next"
+          data-css-n705st=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+    </ul>
+    <div
+      data-css-6wu9td=""
+      id="carousel-mock_unique_id__instructions"
+    >
+      <p>
+        Currently on page 
+        1
+         of 
+        13
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
+      </p>
+    </div>
+  </div>
+</div>
+`;

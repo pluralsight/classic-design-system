@@ -48,6 +48,7 @@ const OutputDecorationGlobalStyles = _ => (
     .outputChild {
       margin: ${core.layout.spacingLarge} 0 0 0;
       color: ${core.colors.white};
+      width: 100%;
     }
     .outputChild:first-child {
       margin-top: 0;

@@ -1,0 +1,17 @@
+{
+  "*.js": {
+    "alternate": [
+      "{dirname}/__specs__/{basename}.spec.js",
+      "{dirname}/__stories__/{basename}.story.js"
+    ],
+    "type": "component"
+  },
+  "**/__specs__/*.spec.js": {
+    "alternate": ["{dirname}/__stories__/{basename}.story.js", "{}.js"],
+    "type": "test"
+  },
+  "**/__stories__/*.story.js": {
+    "alternate": ["{}.js", "{dirname}/__specs__/{basename}.spec.js"],
+    "type": "story"
+  }
+}

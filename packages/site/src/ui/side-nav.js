@@ -355,6 +355,9 @@ const SideNav = withHeadings(props => (
       <NavLink href="/components/card" headings={props.headings}>
         Card
       </NavLink>
+      <NavLink href="/components/carousel" headings={props.headings}>
+        Carousel
+      </NavLink>
       <NavLink href="/components/checkbox" headings={props.headings}>
         Checkbox
       </NavLink>

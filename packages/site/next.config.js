@@ -21,6 +21,7 @@ module.exports = {
       '/components/breadcrumb': { page: '/components/breadcrumb' },
       '/components/button': { page: '/components/button' },
       '/components/card': { page: '/components/card' },
+      '/components/carousel': { page: '/components/carousel' },
       '/components/checkbox': { page: '/components/checkbox' },
       '/components/circularprogress': { page: '/components/circularprogress' },
       '/components/code': { page: '/components/code' },
