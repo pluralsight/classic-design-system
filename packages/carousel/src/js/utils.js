@@ -45,3 +45,11 @@ export function pick(obj, props = []) {
     return acc
   }, {})
 }
+
+export function toValues(obj) {
+  if (!isPlainObject(obj)) {
+    throw new TypeError('#toValues input must be an object')
+  }
+
+  return Object.keys(obj).map(key => obj[key])
+}

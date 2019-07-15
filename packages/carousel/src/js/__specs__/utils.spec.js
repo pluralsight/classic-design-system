@@ -153,4 +153,27 @@ describe('utils', () => {
       expect(() => pick([])).toThrow(/must be an object/)
     })
   })
+
+  describe('#toValues', () => {
+    const { toValues } = utils
+
+    it('returns an array', () => {
+      const output = toValues({})
+      expect(output).toBeInstanceOf(Array)
+    })
+
+    it('throws with invalid input', () => {
+      expect(() => toValues(null)).toThrow(/must be an object/)
+      expect(() => toValues(123)).toThrow(/must be an object/)
+      expect(() => toValues([])).toThrow(/must be an object/)
+    })
+
+    it('returns the object values', () => {
+      const input = { a: true, b: true, c: false }
+
+      const output = toValues(input)
+
+      expect(output).toEqual([true, true, false])
+    })
+  })
 })

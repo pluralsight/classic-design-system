@@ -7,7 +7,7 @@ import Icon from '@pluralsight/ps-design-system-icon/react'
 import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import stylesheet from '../css/index.js'
-import { combineFns } from '../js/utils.js'
+import { combineFns, toValues } from '../js/utils.js'
 
 import CarouselContext from './context.js'
 
@@ -68,5 +68,5 @@ Control.directions = { prev: 'prev', next: 'next' }
 
 Control.propTypes = {
   onClick: PropTypes.func,
-  direction: PropTypes.oneOf(Object.keys(Control.directions)).isRequired
+  direction: PropTypes.oneOf(toValues(Control.directions)).isRequired
 }
