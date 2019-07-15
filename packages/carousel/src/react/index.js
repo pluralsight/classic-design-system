@@ -37,7 +37,9 @@ export default function Carousel({ controls, size, ...props }) {
   const perPage = calcItemsPerPage(constraints, width)
 
   const childArr = React.Children.toArray(props.children)
-  const pages = chunk(childArr, perPage).map(page => insertShims(page, perPage))
+  const pages = chunk(childArr, perPage).map(page =>
+    insertEmptyItems(page, perPage)
+  )
   const pageCount = pages.length
 
   const pager = usePager(pageCount, [width])
@@ -179,7 +181,7 @@ Page.propTypes = {
   isActivePage: PropTypes.bool.isRequired
 }
 
-function insertShims(page, perPage) {
+function insertEmptyItems(page, perPage) {
   if (page.length >= perPage) return page
 
   return page.concat(new Array(perPage - page.length).fill(null))
@@ -191,18 +193,24 @@ function usePager(pageCount, additionalSideEffectTriggers = []) {
 
   const ref = React.useRef()
 
-  React.useEffect(() => {
-    if (pageCount - 1 <= activePage) setActivePage(pageCount - 1)
-  }, [activePage, pageCount])
+  React.useEffect(
+    function respondToActivePageRemoval() {
+      if (pageCount - 1 <= activePage) setActivePage(pageCount - 1)
+    },
+    [activePage, pageCount]
+  )
 
-  React.useEffect(() => {
-    const nextPageEl = ref.current.childNodes[activePage]
-    if (!nextPageEl) return
+  React.useEffect(
+    function updateOffset() {
+      const activePageEl = ref.current.childNodes[activePage]
+      if (!activePageEl) return
 
-    const nextOffset = ref.current.offsetLeft - nextPageEl.offsetLeft
+      const nextOffset = ref.current.offsetLeft - activePageEl.offsetLeft
 
-    setOffset(nextOffset)
-  }, [activePage, pageCount, ...additionalSideEffectTriggers])
+      setOffset(nextOffset)
+    },
+    [activePage, pageCount, ...additionalSideEffectTriggers]
+  )
 
   const next = () => {
     const nextPage = activePage + 1
