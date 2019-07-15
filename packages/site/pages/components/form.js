@@ -50,9 +50,7 @@ class TagExample extends React.Component {
             key={tag}
             style={{
               display: 'inline-block',
-              margin: `0 ${core.layout.spacingXSmall} ${
-                core.layout.spacingXSmall
-              } 0`
+              margin: `0 ${core.layout.spacingXSmall} ${core.layout.spacingXSmall} 0`
             }}
           >
             <Tag
@@ -791,7 +789,7 @@ export default withServerProps(_ => (
       <SectionHeading>Guidelines</SectionHeading>
       <P>
         Write labels in sentence case. Capital case is not optimal for
-        scanability..
+        scannability.
       </P>
       <Guideline
         do={

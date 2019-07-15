@@ -324,7 +324,7 @@ const MonospaceFont = _ => (
       <div className="fontLabel">MEDIUM (500)</div>
     </div>
     <P>
-      Use monspace font when presenting code. Refrain from using for any other
+      Use monospace font when presenting code. Refrain from using for any other
       purpose. When displaying code, try keeping the font size consistent at{' '}
       <DSCode>psTypeFontSizeSmall</DSCode> size whenever possible. Add
       consistent{' '}

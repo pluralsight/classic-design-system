@@ -221,7 +221,7 @@ export default withServerProps(_ => (
       <SectionHeading>UI colors</SectionHeading>
       <P>
         UI colors emphasize interface elements such as buttons, links, accents
-        and vizualization.
+        and visualization.
       </P>
       <div>
         <Palette>

@@ -66,7 +66,7 @@ export default withServerProps(_ => (
         )}
       />
 
-      <SectionHeading>Dismissable</SectionHeading>
+      <SectionHeading>Dismissible</SectionHeading>
       <P>
         Banners that a user can dismiss should use the{' '}
         <Text.Code>onClick</Text.Code> event handler to display an "X" icon in

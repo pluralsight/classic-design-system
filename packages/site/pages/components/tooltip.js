@@ -190,7 +190,7 @@ export default withServerProps(_ => (
       <Intro>
         The purpose of a tooltip is to provide context and explain the function
         of a user interface element or feature. The content of a tooltip is
-        limited to styled text. If more cutomization is necessary, consider the{' '}
+        limited to styled text. If more customization is necessary, consider the{' '}
         <Link href="/components/dialog">Dialog</Link> component which builds on
         the patterns of the tooltip.
       </Intro>
@@ -300,7 +300,7 @@ export default withServerProps(_ => (
         dont={<TooltipGuideline>Bookmark This Course</TooltipGuideline>}
       />
 
-      <P>Write your tooltips to be consice and scannable.</P>
+      <P>Write your tooltips to be concise and scannable.</P>
       <Guideline
         do={<TooltipGuideline>Bookmark this course</TooltipGuideline>}
         dont={
