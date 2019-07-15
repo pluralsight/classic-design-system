@@ -1,6 +1,8 @@
 import core from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
+import { controlDirections as directions } from '../vars/index.js'
+
 const resetButton = {
   background: 'transparent',
   border: 'none',
@@ -67,13 +69,13 @@ export default {
 
     '&:hover, &:focus': { background: core.colors.bone }
   },
-  '.psds-carousel__controls__control--prev': {
+  [`.psds-carousel__controls__control--${directions.prev}`]: {
     left: 0,
     transform: 'translate(-50%, -50%)',
 
     '&[hidden]': { transform: 'translate(-50%, -50%) scale(0)' }
   },
-  '.psds-carousel__controls__control--next': {
+  [`.psds-carousel__controls__control--${directions.next}`]: {
     right: 0,
     transform: 'translate(50%, -50%)',
 

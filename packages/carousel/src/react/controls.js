@@ -8,6 +8,7 @@ import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import stylesheet from '../css/index.js'
 import { combineFns, toValues } from '../js/utils.js'
+import * as vars from '../vars/index.js'
 
 import CarouselContext from './context.js'
 
@@ -64,7 +65,7 @@ export function Control(props) {
   )
 }
 
-Control.directions = { prev: 'prev', next: 'next' }
+Control.directions = vars.controlDirections
 
 Control.propTypes = {
   onClick: PropTypes.func,
