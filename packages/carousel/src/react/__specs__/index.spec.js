@@ -88,11 +88,11 @@ describe('Carousel', () => {
       expect(pages[0]).not.toHaveAttribute('aria-hidden')
     })
 
-    it('should hide inactive pages from screen readers', () => {
+    it('should hide inactive pages', () => {
       const inactive = Array.from(pages).slice(1)
 
       for (const page of inactive) {
-        expect(page).toHaveAttribute('aria-hidden')
+        expect(page).toHaveAttribute('hidden')
         expect(page).toHaveAttribute('tabIndex', '-1')
       }
     })

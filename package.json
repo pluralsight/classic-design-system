@@ -63,7 +63,8 @@
     "glamor": "^2.20.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-transition-group": "^4.2.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",

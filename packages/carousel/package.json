@@ -25,6 +25,7 @@
     "@pluralsight/ps-design-system-filter-react-props": "*",
     "@pluralsight/ps-design-system-icon": "*",
     "@pluralsight/ps-design-system-theme": "*",
+    "react-transition-group": "^4.2.1",
     "resize-observer-polyfill": "^1.5.1"
   },
   "peerDependencies": {

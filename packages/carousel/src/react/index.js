@@ -1,5 +1,6 @@
 import { compose, css } from 'glamor'
 import React from 'react'
+import { Transition } from 'react-transition-group'
 import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
@@ -10,6 +11,7 @@ import * as vars from '../vars/index.js'
 
 import CarouselContext from './context.js'
 import { Controls, Control } from './controls.js'
+
 import useResizeObserver from './use-resize-observer.js'
 import useSwipe from './use-swipe.js'
 import useUniqueId from './use-unique-id.js'
@@ -107,7 +109,10 @@ function Instructions(props) {
 
   return (
     <div {...styles.instructions()} {...props} id={id}>
-      <p>use your arrow keys for more</p>
+      <p>
+        Currently on page {context.activePage + 1} of {context.pageCount}.
+      </p>
+      <p>Use left and right arrow keys for navigation.</p>
     </div>
   )
 }
@@ -144,16 +149,29 @@ Pages.propTypes = {
 }
 
 function Page({ isActivePage, ...props }) {
+  const ref = React.useRef()
   const { offset } = React.useContext(CarouselContext)
 
   return (
     <li
+      ref={ref}
       {...styles.page()}
       {...css({ transform: `translate3d(${offset}px, 0, 0)` })}
-      {...(!isActivePage && { 'aria-hidden': true, tabIndex: -1 })}
       {...props}
-    />
+      {...(!isActivePage && { hidden: true, tabIndex: -1 })}
+    >
+      <Transition in={isActivePage} timeout={500}>
+        {transitionState => {
+          if (transitionState === 'exited') return null
+          return props.children
+        }}
+      </Transition>
+    </li>
   )
+}
+Page.propTypes = {
+  children: PropTypes.node,
+  onKeyDown: PropTypes.func
 }
 
 Page.propTypes = {

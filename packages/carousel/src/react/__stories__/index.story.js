@@ -2,15 +2,33 @@ import { storiesOf } from '@storybook/react'
 
 import * as glamor from 'glamor'
 import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
 
 import Card from '@pluralsight/ps-design-system-card/react'
 import Carousel from '../index.js'
 
-const MockCard = props => <Card {...props} />
-MockCard.defaultProps = {
-  title: <Card.Title>Card Title</Card.Title>,
-  image: <Card.Image src={`//picsum.photos/680/320?image=42&gravity=north`} />,
-  metadata1: ['meta', 'like...so meta']
+const MockCard = props => (
+  <Card
+    title={
+      <Card.TextLink>
+        <a href="#">
+          <Card.Title>{props.titleText}</Card.Title>
+        </a>
+      </Card.TextLink>
+    }
+    image={
+      <Card.Image src={`//picsum.photos/680/320?image=42&gravity=north`} />
+    }
+    metadata1={[
+      <Card.TextLink>
+        <a href="#">meta</a>
+      </Card.TextLink>
+    ]}
+    {...props}
+  />
+)
+MockCard.propTypes = {
+  titleText: PropTypes.string.isRequired
 }
 
 const MockItem = props => (
@@ -119,10 +137,12 @@ const cardStories = storiesOf('Carousel/with Card', module)
 
 Object.values(Carousel.sizes).forEach(size => {
   cardStories.add(size, _ => (
-    <Carousel size={size}>
-      {new Array(13).fill(null).map((_, index) => (
-        <MockCard key={index} />
-      ))}
-    </Carousel>
+    <Fragment>
+      <Carousel size={size}>
+        {new Array(13).fill(null).map((_, index) => (
+          <MockCard key={index} titleText={`Card ${index}`} />
+        ))}
+      </Carousel>
+    </Fragment>
   ))
 })

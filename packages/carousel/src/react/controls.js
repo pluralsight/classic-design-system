@@ -53,9 +53,9 @@ export function Control(props) {
     <li>
       <button
         aria-label={isPrev ? 'previous' : 'next'}
-        hidden={!visible}
         {...styles.control(themeName, props)}
         {...filterReactProps(props, { tagName: 'button' })}
+        {...(!visible && { hidden: true, tabIndex: -1 })}
         onClick={handleClick}
       >
         <Icon aria-hidden id={iconId} size={Icon.sizes.medium} />

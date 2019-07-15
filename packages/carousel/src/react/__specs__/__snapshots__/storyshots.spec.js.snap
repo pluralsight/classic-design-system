@@ -34,149 +34,53 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         </div>
       </li>
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            2
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            3
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            4
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            5
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            6
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            7
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            8
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            9
-          </div>
-        </div>
-      </li>
+      />
     </ul>
     <ul
       aria-controls="carousel-5"
@@ -194,6 +98,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
               "top": "33%",
             }
           }
+          tabIndex={-1}
         >
           <div
             aria-hidden={true}
@@ -216,7 +121,6 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         <button
           aria-label="next"
           data-css-n705st=""
-          hidden={false}
           onClick={[Function]}
           style={
             Object {
@@ -247,7 +151,14 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
       id="carousel-5__instructions"
     >
       <p>
-        use your arrow keys for more
+        Currently on page 
+        1
+         of 
+        9
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
       </p>
     </div>
   </div>
@@ -288,59 +199,23 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
         </div>
       </li>
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            2
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            3
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            4
-          </div>
-        </div>
-      </li>
+      />
     </ul>
     <ul
       aria-controls="carousel-4"
@@ -353,6 +228,7 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
           data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
+          tabIndex={-1}
         >
           <div
             aria-hidden={true}
@@ -375,7 +251,6 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
         <button
           aria-label="next"
           data-css-n705st=""
-          hidden={false}
           onClick={[Function]}
         >
           <div
@@ -401,7 +276,14 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
       id="carousel-4__instructions"
     >
       <p>
-        use your arrow keys for more
+        Currently on page 
+        1
+         of 
+        4
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
       </p>
     </div>
   </div>
@@ -457,365 +339,125 @@ exports[`Storyshots Carousel/items many items 1`] = `
         </div>
       </li>
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            2
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            3
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            4
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            5
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            6
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            7
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            8
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            9
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            10
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            11
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            12
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            13
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            14
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            15
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            16
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            17
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            18
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            19
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            20
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            21
-          </div>
-        </div>
-      </li>
+      />
     </ul>
     <ul
       aria-controls="carousel-3"
@@ -828,6 +470,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
           data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
+          tabIndex={-1}
         >
           <div
             aria-hidden={true}
@@ -850,7 +493,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         <button
           aria-label="next"
           data-css-n705st=""
-          hidden={false}
           onClick={[Function]}
         >
           <div
@@ -876,7 +518,14 @@ exports[`Storyshots Carousel/items many items 1`] = `
       id="carousel-3__instructions"
     >
       <p>
-        use your arrow keys for more
+        Currently on page 
+        1
+         of 
+        21
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
       </p>
     </div>
   </div>
@@ -927,6 +576,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
           data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
+          tabIndex={-1}
         >
           <div
             aria-hidden={true}
@@ -951,6 +601,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
           data-css-n705st=""
           hidden={true}
           onClick={[Function]}
+          tabIndex={-1}
         >
           <div
             aria-hidden={true}
@@ -975,7 +626,14 @@ exports[`Storyshots Carousel/items one item 1`] = `
       id="carousel-1__instructions"
     >
       <p>
-        use your arrow keys for more
+        Currently on page 
+        1
+         of 
+        1
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
       </p>
     </div>
   </div>
@@ -1015,22 +673,11 @@ exports[`Storyshots Carousel/items two items 1`] = `
         </div>
       </li>
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            second item
-          </div>
-        </div>
-      </li>
+      />
     </ul>
     <ul
       aria-controls="carousel-2"
@@ -1043,6 +690,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
           data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
+          tabIndex={-1}
         >
           <div
             aria-hidden={true}
@@ -1065,7 +713,6 @@ exports[`Storyshots Carousel/items two items 1`] = `
         <button
           aria-label="next"
           data-css-n705st=""
-          hidden={false}
           onClick={[Function]}
         >
           <div
@@ -1091,7 +738,14 @@ exports[`Storyshots Carousel/items two items 1`] = `
       id="carousel-2__instructions"
     >
       <p>
-        use your arrow keys for more
+        Currently on page 
+        1
+         of 
+        2
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
       </p>
     </div>
   </div>
@@ -1132,221 +786,77 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         </div>
       </li>
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            2
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            3
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            4
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            5
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            6
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            7
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            8
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            9
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            10
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            11
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            12
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            13
-          </div>
-        </div>
-      </li>
+      />
     </ul>
     <ul
       aria-controls="carousel-6"
@@ -1359,6 +869,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
           data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
+          tabIndex={-1}
         >
           <div
             aria-hidden={true}
@@ -1381,7 +892,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         <button
           aria-label="next"
           data-css-n705st=""
-          hidden={false}
           onClick={[Function]}
         >
           <div
@@ -1407,7 +917,14 @@ exports[`Storyshots Carousel/size narrow 1`] = `
       id="carousel-6__instructions"
     >
       <p>
-        use your arrow keys for more
+        Currently on page 
+        1
+         of 
+        13
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
       </p>
     </div>
   </div>
@@ -1448,221 +965,77 @@ exports[`Storyshots Carousel/size wide 1`] = `
         </div>
       </li>
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            2
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            3
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            4
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            5
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            6
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            7
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            8
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            9
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            10
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            11
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            12
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1oosafx=""
-            data-testid="mock-item"
-          >
-            item: 
-            13
-          </div>
-        </div>
-      </li>
+      />
     </ul>
     <ul
       aria-controls="carousel-7"
@@ -1675,6 +1048,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
           data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
+          tabIndex={-1}
         >
           <div
             aria-hidden={true}
@@ -1697,7 +1071,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
         <button
           aria-label="next"
           data-css-n705st=""
-          hidden={false}
           onClick={[Function]}
         >
           <div
@@ -1723,7 +1096,14 @@ exports[`Storyshots Carousel/size wide 1`] = `
       id="carousel-7__instructions"
     >
       <p>
-        use your arrow keys for more
+        Currently on page 
+        1
+         of 
+        13
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
       </p>
     </div>
   </div>
@@ -1772,60 +1152,25 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             <div
               data-css-piydn8=""
             >
-              <div
-                data-css-1tlmf72=""
+              <span
+                data-css-1202ll4=""
               >
-                <div
-                  className=""
+                <a
+                  href="#"
                 >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
+                  <div
+                    data-css-1tlmf72=""
                   >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
+                    <div
+                      className=""
                     >
                       <span
                         style={
                           Object {
                             "display": "block",
+                            "maxHeight": "0px",
+                            "overflow": "hidden",
+                            "position": "relative",
                           }
                         }
                       >
@@ -1833,34 +1178,77 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                           style={
                             Object {
                               "display": "block",
+                              "width": "100%",
                             }
                           }
                         >
-                          W
+                          Card 0
                         </span>
                         <span
+                          aria-hidden="true"
                           style={
                             Object {
                               "display": "block",
+                              "height": "0px",
+                              "overflow": "hidden",
+                              "width": "100%",
                             }
                           }
                         >
-                          W
+                          Card 0
+                        </span>
+                        <span
+                          aria-hidden="true"
+                          style={
+                            Object {
+                              "display": "block",
+                              "left": "-20000px",
+                              "position": "absolute",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "display": "block",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              W
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              W
+                            </span>
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "display": "block",
+                              }
+                            }
+                          >
+                            Card 0
+                          </span>
                         </span>
                       </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
+                    </div>
+                  </div>
+                </a>
+              </span>
             </div>
             <div
               data-css-sb1dn8=""
@@ -1868,1703 +1256,92 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               <span
                 data-css-1tz10dh=""
               >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
+                <span
+                  data-css-1202ll4=""
+                >
+                  <a
+                    href="#"
+                  >
+                    meta
+                  </a>
+                </span>
               </span>
             </div>
           </div>
         </div>
       </li>
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
     </ul>
     <ul
       aria-controls="carousel-8"
@@ -3577,6 +1354,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
           data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
+          tabIndex={-1}
         >
           <div
             aria-hidden={true}
@@ -3599,7 +1377,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         <button
           aria-label="next"
           data-css-n705st=""
-          hidden={false}
           onClick={[Function]}
         >
           <div
@@ -3625,7 +1402,14 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
       id="carousel-8__instructions"
     >
       <p>
-        use your arrow keys for more
+        Currently on page 
+        1
+         of 
+        13
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
       </p>
     </div>
   </div>
@@ -3674,60 +1458,25 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             <div
               data-css-piydn8=""
             >
-              <div
-                data-css-1tlmf72=""
+              <span
+                data-css-1202ll4=""
               >
-                <div
-                  className=""
+                <a
+                  href="#"
                 >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
+                  <div
+                    data-css-1tlmf72=""
                   >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
+                    <div
+                      className=""
                     >
                       <span
                         style={
                           Object {
                             "display": "block",
+                            "maxHeight": "0px",
+                            "overflow": "hidden",
+                            "position": "relative",
                           }
                         }
                       >
@@ -3735,34 +1484,77 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                           style={
                             Object {
                               "display": "block",
+                              "width": "100%",
                             }
                           }
                         >
-                          W
+                          Card 0
                         </span>
                         <span
+                          aria-hidden="true"
                           style={
                             Object {
                               "display": "block",
+                              "height": "0px",
+                              "overflow": "hidden",
+                              "width": "100%",
                             }
                           }
                         >
-                          W
+                          Card 0
+                        </span>
+                        <span
+                          aria-hidden="true"
+                          style={
+                            Object {
+                              "display": "block",
+                              "left": "-20000px",
+                              "position": "absolute",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "display": "block",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              W
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              W
+                            </span>
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "display": "block",
+                              }
+                            }
+                          >
+                            Card 0
+                          </span>
                         </span>
                       </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
+                    </div>
+                  </div>
+                </a>
+              </span>
             </div>
             <div
               data-css-sb1dn8=""
@@ -3770,1703 +1562,92 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               <span
                 data-css-1tz10dh=""
               >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
+                <span
+                  data-css-1202ll4=""
+                >
+                  <a
+                    href="#"
+                  >
+                    meta
+                  </a>
+                </span>
               </span>
             </div>
           </div>
         </div>
       </li>
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
       <li
-        aria-hidden={true}
         data-css-bxro55=""
         data-css-qkb1g2=""
+        hidden={true}
         tabIndex={-1}
-      >
-        <div
-          data-css-1gthxiq=""
-        >
-          <div
-            data-css-1ybvkp1=""
-          >
-            <div
-              data-css-x1twjb=""
-            >
-              <div
-                data-css-i7gti2=""
-                style={
-                  Object {
-                    "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-piydn8=""
-            >
-              <div
-                data-css-1tlmf72=""
-              >
-                <div
-                  className=""
-                >
-                  <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "maxHeight": "0px",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "height": "0px",
-                          "overflow": "hidden",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      Card Title
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      style={
-                        Object {
-                          "display": "block",
-                          "left": "-20000px",
-                          "position": "absolute",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          W
-                        </span>
-                      </span>
-                      <span
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
-                      >
-                        Card Title
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-sb1dn8=""
-            >
-              <span
-                data-css-1tz10dh=""
-              >
-                meta
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                like...so meta
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
+      />
     </ul>
     <ul
       aria-controls="carousel-9"
@@ -5479,6 +1660,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
           data-css-1wkjkcr=""
           hidden={true}
           onClick={[Function]}
+          tabIndex={-1}
         >
           <div
             aria-hidden={true}
@@ -5501,7 +1683,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         <button
           aria-label="next"
           data-css-n705st=""
-          hidden={false}
           onClick={[Function]}
         >
           <div
@@ -5527,7 +1708,14 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
       id="carousel-9__instructions"
     >
       <p>
-        use your arrow keys for more
+        Currently on page 
+        1
+         of 
+        13
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
       </p>
     </div>
   </div>
