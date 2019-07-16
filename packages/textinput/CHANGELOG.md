@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@2.0.2...@pluralsight/ps-design-system-textinput@2.0.3) (2019-07-16)
+
+
+### Bug Fixes
+
+* **textinput:** make inner input field stretch across whole ui border ([2c6ece7](https://github.com/pluralsight/design-system/commit/2c6ece7))
+
+
+
+
+
 ## [2.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@2.0.1...@pluralsight/ps-design-system-textinput@2.0.2) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textinput
