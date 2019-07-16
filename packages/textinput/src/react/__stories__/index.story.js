@@ -17,6 +17,12 @@ storiesOf('labels', module)
   .addDecorator(themeDecorator(addons))
   .add('none', _ => <TextInput />)
   .add('placeholder', _ => <TextInput placeholder="some placeholder" />)
+  .add('long placeholder', _ => (
+    <TextInput
+      placeholder="some placeholder that goes on forever when the little things can't handle it"
+      style={{ width: '100%' }}
+    />
+  ))
   .add('label', _ => <TextInput label="Some label" />)
   .add('subLabel', _ => <TextInput subLabel="Some sublabel" />)
   .add('label and subLabel', _ => (

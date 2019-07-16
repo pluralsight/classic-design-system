@@ -30,6 +30,7 @@ export default {
     paddingRight: 0
   },
   '.psds-text-input__field-input': {
+    width: '100%',
     background: 'none',
     border: 'none',
     color: 'inherit',
