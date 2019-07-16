@@ -9,17 +9,11 @@
     "npm": ">= 4.2"
   },
   "author": "jaketrent",
-  "keywords": [
-    "pluralsight",
-    "design system",
-    "pattern library"
-  ],
   "main": "packages/site/index.js",
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
     "clean": "lerna clean",
     "component:create": "node ./scripts/create-component/index.js",
-    "danger": "danger",
     "lint": "eslint .",
     "lint:no-fail": "eslint .; exit 0",
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
@@ -29,12 +23,6 @@
     "site": "cd packages/site && npm start",
     "start": "npm run site",
     "test": "jest"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e",
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "ignore": [
@@ -58,6 +46,17 @@
     }
   },
   "browserslist": "last 4 versions",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "keywords": [
+    "pluralsight",
+    "design system",
+    "pattern library"
+  ],
   "dependencies": {
     "babel-eslint": "^10.0.1",
     "glamor": "^2.20.0",
@@ -80,8 +79,6 @@
     "babel-preset-stage-2": "^6.24.1",
     "camelize": "^1.0.0",
     "copy-template-dir": "^1.4.0",
-    "danger": "^6.1.12",
-    "danger-plugin-toolbox": "^1.10.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "eslint": "^5.7.0",
