@@ -24,7 +24,7 @@ exports[`Storyshots after field w/icon 1`] = `
             data-css-1oolqwv=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="Some placeholder"
             />
@@ -79,7 +79,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
             />
           </div>
@@ -132,7 +132,7 @@ exports[`Storyshots appearance default w/ iconAlign left 1`] = `
             data-css-1ir2txp=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="The placeholder "
             />
@@ -186,7 +186,7 @@ exports[`Storyshots appearance default w/ iconAlign right 1`] = `
             data-css-ajs356=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="The placeholder "
             />
@@ -245,7 +245,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
             data-css-1talm5x=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
             />
           </div>
@@ -298,7 +298,7 @@ exports[`Storyshots appearance subtle w/ iconAlign left 1`] = `
             data-css-1e3i43a=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="The placeholder "
             />
@@ -352,7 +352,7 @@ exports[`Storyshots appearance subtle w/ iconAlign right 1`] = `
             data-css-g760uo=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="The placeholder "
             />
@@ -412,7 +412,7 @@ exports[`Storyshots disabled compare 1`] = `
               data-css-177hkuc=""
             >
               <input
-                data-css-azf86w=""
+                data-css-lzb8ea=""
                 disabled={false}
                 placeholder="I'm normal, see"
               />
@@ -443,7 +443,7 @@ exports[`Storyshots disabled compare 1`] = `
               data-css-177hkuc=""
             >
               <input
-                data-css-azf86w=""
+                data-css-lzb8ea=""
                 disabled={true}
                 placeholder="I'm untouchable"
               />
@@ -474,7 +474,7 @@ exports[`Storyshots disabled compare 1`] = `
               data-css-177hkuc=""
             >
               <input
-                data-css-azf86w=""
+                data-css-lzb8ea=""
                 disabled={true}
                 placeholder="I'm untouchable"
               />
@@ -539,7 +539,7 @@ exports[`Storyshots labels all 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="Some placeholder"
             />
@@ -585,7 +585,7 @@ exports[`Storyshots labels all w/error 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="Some placeholder"
             />
@@ -649,7 +649,7 @@ exports[`Storyshots labels label 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
             />
           </div>
@@ -689,7 +689,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
             />
           </div>
@@ -699,6 +699,47 @@ exports[`Storyshots labels label and subLabel 1`] = `
         data-css-1de0a6a=""
       >
         Some sublabel
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots labels long placeholder 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-w0yocm=""
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        data-css-1r967oi=""
+      >
+        <div
+          data-css-1xm24a9=""
+        >
+          <div
+            data-css-177hkuc=""
+          >
+            <input
+              data-css-lzb8ea=""
+              disabled={false}
+              placeholder="some placeholder that goes on forever when the little things can't handle it"
+            />
+          </div>
+        </div>
       </div>
     </label>
   </div>
@@ -729,7 +770,7 @@ exports[`Storyshots labels none 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
             />
           </div>
@@ -764,7 +805,7 @@ exports[`Storyshots labels placeholder 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="some placeholder"
             />
@@ -800,7 +841,7 @@ exports[`Storyshots labels subLabel 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
             />
           </div>
@@ -859,7 +900,7 @@ exports[`Storyshots layouts full width 1`] = `
               data-css-177hkuc=""
             >
               <input
-                data-css-azf86w=""
+                data-css-lzb8ea=""
                 disabled={false}
               />
             </div>
@@ -890,7 +931,7 @@ exports[`Storyshots layouts full width 1`] = `
               data-css-177hkuc=""
             >
               <input
-                data-css-azf86w=""
+                data-css-lzb8ea=""
                 disabled={false}
               />
             </div>
@@ -939,7 +980,7 @@ exports[`Storyshots layouts full width 1`] = `
               data-css-1talm5x=""
             >
               <input
-                data-css-azf86w=""
+                data-css-lzb8ea=""
                 disabled={false}
               />
             </div>
@@ -970,7 +1011,7 @@ exports[`Storyshots layouts full width 1`] = `
               data-css-1talm5x=""
             >
               <input
-                data-css-azf86w=""
+                data-css-lzb8ea=""
                 disabled={false}
               />
             </div>
@@ -1039,7 +1080,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
                 data-css-1e3i43a=""
               >
                 <input
-                  data-css-azf86w=""
+                  data-css-lzb8ea=""
                   disabled={false}
                   placeholder="Search"
                 />
@@ -1103,7 +1144,7 @@ exports[`Storyshots whitelist name 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               name="myFieldNameOfPower"
               placeholder="I have a form name"
@@ -1140,7 +1181,7 @@ exports[`Storyshots whitelist onChange 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               onChange={[Function]}
               placeholder="Change me"
@@ -1177,7 +1218,7 @@ exports[`Storyshots whitelist title 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               title="some title"
             />
@@ -1213,7 +1254,7 @@ exports[`Storyshots whitelist type=date 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="Date"
               type="date"
@@ -1250,7 +1291,7 @@ exports[`Storyshots whitelist type=password 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="Password"
               type="password"
