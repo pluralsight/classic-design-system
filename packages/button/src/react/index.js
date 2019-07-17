@@ -1,5 +1,5 @@
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import Icon, {
   sizes as iconSizes
 } from '@pluralsight/ps-design-system-icon/react.js'
@@ -7,11 +7,11 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
-const spin = glamor.css.keyframes(
-  css['@keyframes psds-button__keyframes__spin']
+const spin = css.keyframes(
+  stylesheet['@keyframes psds-button__keyframes__spin']
 )
 
 const styles = {
@@ -26,71 +26,76 @@ const styles = {
     size,
     themeName
   }) =>
-    glamor.css(
+    css(
       {
-        ...css['.psds-button'],
+        ...stylesheet['.psds-button'],
         ':focus': {
-          ...css['.psds-button:focus'],
+          ...stylesheet['.psds-button:focus'],
           ':before': {
-            ...css['.psds-button:focus:before'],
-            ...css[`.psds-button.psds-theme--${themeName}:focus:before`]
+            ...stylesheet['.psds-button:focus:before'],
+            ...stylesheet[`.psds-button.psds-theme--${themeName}:focus:before`]
           },
           ':after': {
-            ...css['.psds-button:focus:after'],
-            ...css[`.psds-button.psds-theme--${themeName}:focus:after`]
+            ...stylesheet['.psds-button:focus:after'],
+            ...stylesheet[`.psds-button.psds-theme--${themeName}:focus:after`]
           }
         }
       },
-      css[`.psds-button--size-${size}`],
-      css[`.psds-button--appearance-${appearance}`],
-      css[`.psds-button--appearance-${appearance}.psds-theme--${themeName}`],
+      stylesheet[`.psds-button--size-${size}`],
+      stylesheet[`.psds-button--appearance-${appearance}`],
+      stylesheet[
+        `.psds-button--appearance-${appearance}.psds-theme--${themeName}`
+      ],
       !disabled &&
         !loading && {
           ':hover': {
-            ...css['.psds-button:hover'],
-            ...css[`.psds-button--appearance-${appearance}:hover`],
-            ...css[
+            ...stylesheet['.psds-button:hover'],
+            ...stylesheet[`.psds-button--appearance-${appearance}:hover`],
+            ...stylesheet[
               `.psds-button--appearance-${appearance}.psds-theme--${themeName}:hover`
             ]
           }
         },
       disabled && {
-        ...css[`.psds-button--disabled`],
-        ...css[`.psds-button--disabled.psds-theme--${themeName}`],
-        ...css[`.psds-button--disabled.psds-button--appearance-${appearance}`]
+        ...stylesheet[`.psds-button--disabled`],
+        ...stylesheet[`.psds-button--disabled.psds-theme--${themeName}`],
+        ...stylesheet[
+          `.psds-button--disabled.psds-button--appearance-${appearance}`
+        ]
       },
       icon &&
         !iconOnly && {
-          ...css[
+          ...stylesheet[
             `.psds-button--iconAlign-${iconAlign}.psds-button--not-iconOnly`
           ],
-          ...css[
+          ...stylesheet[
             `.psds-button--iconAlign-${iconAlign}.psds-button--not-iconOnly.psds-button--size-${size}`
           ]
         },
       iconAlign === vars.iconAligns.right &&
-        css[`.psds-button--iconAlign-${iconAlign}`],
+        stylesheet[`.psds-button--iconAlign-${iconAlign}`],
       iconOnly && {
-        ...css[`.psds-button--iconOnly`],
-        ...css[`.psds-button--iconOnly.psds-button--size-${size}`]
+        ...stylesheet[`.psds-button--iconOnly`],
+        ...stylesheet[`.psds-button--iconOnly.psds-button--size-${size}`]
       },
       cssProp
     ),
   loading: ({ appearance, themeName }) =>
-    glamor.css(
-      css[`.psds-button__loading`]({ spin }),
-      css[`.psds-button__loading--appearance-${appearance}`],
-      css[
+    css(
+      stylesheet[`.psds-button__loading`]({ spin }),
+      stylesheet[`.psds-button__loading--appearance-${appearance}`],
+      stylesheet[
         `.psds-button__loading--appearance-${appearance}.psds-button__loading--theme-${themeName}`
       ]
     ),
   icon: ({ iconAlign, iconOnly, isLoadingWithNoText }) =>
-    glamor.css(
-      css['.psds-button__icon'],
-      css[`.psds-button__icon--iconAlign-${iconAlign}`],
-      (iconOnly || isLoadingWithNoText) && css['.psds-button__icon--iconOnly']
+    css(
+      stylesheet['.psds-button__icon'],
+      stylesheet[`.psds-button__icon--iconAlign-${iconAlign}`],
+      (iconOnly || isLoadingWithNoText) &&
+        stylesheet['.psds-button__icon--iconOnly']
     ),
-  text: _ => glamor.css(css[`.psds-button__text`])
+  text: _ => css(stylesheet[`.psds-button__text`])
 }
 
 const mapIconSize = props => {
