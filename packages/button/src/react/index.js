@@ -27,35 +27,12 @@ const styles = {
     themeName
   }) =>
     css(
-      {
-        ...stylesheet['.psds-button'],
-        ':focus': {
-          ...stylesheet['.psds-button:focus'],
-          ':before': {
-            ...stylesheet['.psds-button:focus:before'],
-            ...stylesheet[`.psds-button.psds-theme--${themeName}:focus:before`]
-          },
-          ':after': {
-            ...stylesheet['.psds-button:focus:after'],
-            ...stylesheet[`.psds-button.psds-theme--${themeName}:focus:after`]
-          }
-        }
-      },
+      stylesheet['.psds-button'],
       stylesheet[`.psds-button--size-${size}`],
       stylesheet[`.psds-button--appearance-${appearance}`],
       stylesheet[
         `.psds-button--appearance-${appearance}.psds-theme--${themeName}`
       ],
-      !disabled &&
-        !loading && {
-          ':hover': {
-            ...stylesheet['.psds-button:hover'],
-            ...stylesheet[`.psds-button--appearance-${appearance}:hover`],
-            ...stylesheet[
-              `.psds-button--appearance-${appearance}.psds-theme--${themeName}:hover`
-            ]
-          }
-        },
       disabled && {
         ...stylesheet[`.psds-button--disabled`],
         ...stylesheet[`.psds-button--disabled.psds-theme--${themeName}`],

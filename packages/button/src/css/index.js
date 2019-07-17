@@ -5,7 +5,7 @@ import {
 } from '@pluralsight/ps-design-system-theme/vars.js'
 import { transparentize } from '@pluralsight/ps-design-system-util/color.js'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 export default {
   '@keyframes psds-button__keyframes__spin': {
@@ -29,32 +29,28 @@ export default {
     whiteSpace: 'nowrap',
     textDecoration: 'none',
     transition: `all ${core.motion.speedNormal}`,
-    verticalAlign: 'middle'
-  },
-  '.psds-button:hover': {
-    background: core.colors.orangeLight,
-    cursor: 'pointer'
-  },
-  '.psds-button:focus': {
-    outline: 'none'
+    verticalAlign: 'middle',
+
+    '&:not([disabled]):hover': {
+      background: core.colors.orangeLight,
+      cursor: 'pointer'
+    },
+    '&:focus': {
+      outline: 'none',
+
+      '&:before': {
+        content: ' ',
+        position: 'absolute',
+        top: '-4px',
+        left: '-4px',
+        right: '-4px',
+        bottom: '-4px',
+        border: `3px solid ${core.colors.blue}`,
+        borderRadius: '4px'
+      }
+    }
   },
 
-  // :focus
-  [`.psds-button.psds-theme--${themeNames.light}:focus`]: {
-    border: '1px solid transparent'
-  },
-  '.psds-button:focus:before': {
-    content: ' ',
-    position: 'absolute',
-    top: '-4px',
-    left: '-4px',
-    right: '-4px',
-    bottom: '-4px',
-    border: `3px solid ${core.colors.blue}`,
-    borderRadius: '4px'
-  },
-
-  // --size
   [`.psds-button--size-${vars.sizes.xSmall}`]: {
     fontSize: core.type.fontSizeXSmall,
     padding: `0 ${core.layout.spacingXSmall}`,
@@ -75,67 +71,74 @@ export default {
     padding: `${core.layout.spacingXXSmall} ${core.layout.spacingMedium}`,
     height: '48px'
   },
-  // --appearance
+
   [`.psds-button--appearance-${vars.appearances.secondary}`]: {
     color: core.colors.gray01,
-    background: transparentize(0.75, core.colors.gray02)
-  },
-  [`.psds-button--appearance-${vars.appearances.secondary}:hover`]: {
-    color: core.colors.white,
-    background: transparentize(0.65, core.colors.gray02)
+    background: transparentize(0.75, core.colors.gray02),
+
+    '&:not([disabled]):hover': {
+      color: core.colors.white,
+      background: transparentize(0.65, core.colors.gray02)
+    }
   },
   [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${
     themeNames.light
   }`]: {
     color: core.colors.gray03,
-    background: transparentize(0.65, core.colors.gray01)
-  },
-  [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${
-    themeNames.light
-  }:hover`]: {
-    color: core.colors.gray06,
-    background: transparentize(0.35, core.colors.gray01)
+    background: transparentize(0.65, core.colors.gray01),
+
+    '&:not([disabled]):hover': {
+      color: core.colors.gray06,
+      background: transparentize(0.35, core.colors.gray01)
+    }
   },
   [`.psds-button--appearance-${vars.appearances.stroke}`]: {
     border: `1px solid ${core.colors.orange}`,
     color: core.colors.orange,
-    background: 'none'
-  },
-  [`.psds-button--appearance-${vars.appearances.stroke}:hover`]: {
-    border: `1px solid ${core.colors.orangeLight}`,
-    color: core.colors.orangeLight,
-    background: 'none'
+    background: 'none',
+
+    '&:not([disabled]):hover': {
+      border: `1px solid ${core.colors.orangeLight}`,
+      color: core.colors.orangeLight,
+      background: 'none'
+    }
   },
   [`.psds-button--appearance-${vars.appearances.flat}`]: {
     border: 'none',
-    background: 'none'
+    background: 'none',
+
+    '&:not([disabled]):hover': {
+      color: core.colors.white,
+      background: transparentize(0.85, core.colors.white)
+    }
   },
   [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${
     themeNames.light
   }`]: {
-    color: core.colors.gray03
+    color: core.colors.gray03,
+
+    '&:not([disabled]):hover': {
+      color: 'inherit',
+      background: transparentize(0.85, core.colors.gray03)
+    }
   },
   [`.psds-button--appearance-${
     vars.appearances.flat
   }.psds-theme--${themeDefaultName}`]: {
     color: core.colors.gray02
   },
-  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${
-    themeNames.light
-  }:hover`]: {
-    background: transparentize(0.85, core.colors.gray03)
-  },
-  [`.psds-button--appearance-${
-    vars.appearances.flat
-  }.psds-theme--${themeDefaultName}:hover`]: {
-    color: core.colors.white,
-    background: transparentize(0.85, core.colors.white)
-  },
+
   // --disabled
   [`.psds-button--disabled`]: {
     color: core.colors.gray02,
     background: core.colors.gray03,
-    cursor: 'default'
+    cursor: 'default',
+
+    '&:not([disabled]):hover': {
+      color: 'inherit',
+      background: 'inherit',
+      border: 'inherit'
+    }
   },
   [`.psds-button--disabled.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03,
