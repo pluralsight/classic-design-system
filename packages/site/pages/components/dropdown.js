@@ -63,7 +63,7 @@ class InAppExample extends React.Component {
         >{`class InAppExample extends React.Component {
   constructor() {
     super()
-    this.state = { value: null }
+    this.state = { value: 'int' }
   }
   render() {
     const options = [
@@ -75,7 +75,10 @@ class InAppExample extends React.Component {
       <div>
         <Dropdown
           label="Level"
-          placeholder="Select"
+          placeholder={
+            options.find(opt => opt.value === this.state.value).label ||
+            'Select'
+          }
           menu={
             <ActionMenu>
               {options.map(opt => (
