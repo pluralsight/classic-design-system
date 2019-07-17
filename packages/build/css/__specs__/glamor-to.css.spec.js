@@ -73,4 +73,29 @@ describe('#glamorToCss', () => {
 
     expect(result).toEqual('.abc{font-size:4px;}')
   })
+
+  it('converts keyframes mixed with selectors', () => {
+    expect(
+      glamorToCss({
+        '@keyframes foo__zers': {
+          from: {
+            opacity: 0
+          },
+          to: {
+            opacity: 1
+          }
+        },
+        '.amaze': { zing: 'showman' }
+      })
+    ).toEqual(
+      `@keyframes foo__zers {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}.amaze{zing:showman;}`
+    )
+  })
 })
