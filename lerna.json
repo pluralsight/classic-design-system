@@ -1,5 +1,5 @@
 {
-  "packages": ["packages/build", "packages/normalize"],
+  "packages": ["packages/build", "packages/core", "packages/normalize"],
   "version": "independent",
   "command": {
     "bootstrap": {
