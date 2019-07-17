@@ -128,7 +128,6 @@ export default {
     color: core.colors.gray02
   },
 
-  // --disabled
   [`.psds-button--disabled`]: {
     color: core.colors.gray02,
     background: core.colors.gray03,
@@ -164,7 +163,7 @@ export default {
     opacity: 0.4,
     background: 'none'
   },
-  // --iconAlign / iconOnly
+
   [`.psds-button--iconAlign-${vars.iconAligns.right}`]: {
     flexDirection: 'row-reverse'
   },
@@ -203,7 +202,7 @@ export default {
   [`.psds-button--iconOnly.psds-button--size-${vars.sizes.large}`]: {
     width: '48px'
   },
-  // __icon
+
   [`.psds-button__icon`]: {
     display: 'flex',
     alignItems: 'center',
@@ -222,7 +221,7 @@ export default {
     width: '100%',
     margin: 0
   },
-  // __loading
+
   [`.psds-button__loading`]: ({ spin }) => ({
     display: 'inline-block',
     height: 'calc(100% - 4px)',
@@ -263,7 +262,7 @@ export default {
     borderColor: transparentize(0.8, core.colors.white),
     borderTopColor: core.colors.white
   },
-  // __text
+
   [`.psds-button__text`]: {
     alignItems: 'center',
     display: 'inline-flex',
