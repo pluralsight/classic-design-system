@@ -4,9 +4,6 @@ import initStoryshots, {
 
 jest.mock('@pluralsight/ps-design-system-storybook-addon-center')
 jest.mock('@pluralsight/ps-design-system-storybook-addon-theme')
-// jest.mock('@pluralsight/ps-design-system-storybook-addon-theme', () => fn => {
-//   return fn()
-// })
 
 const createNodeMock = el => document.createElement('div')
 
