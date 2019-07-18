@@ -17,13 +17,7 @@ const styles = {
       css['.psds-dropdown__field'],
       css[`.psds-dropdown__field--appearance-${appearance}`],
       css[`.psds-dropdown__field.psds-theme--${themeName}`],
-      error && css[`.psds-dropdown__field--error.psds-theme--${themeName}`],
-      {
-        ':focus': {
-          ...css['.psds-dropdown__field:focus'],
-          ...css[`.psds-dropdown__field.psds-theme--${themeName}:focus`]
-        }
-      }
+      error && css[`.psds-dropdown__field--error.psds-theme--${themeName}`]
     ),
   fieldAligner: _ => glamor.css(css['.psds-dropdown__field-aligner']),
   fieldContainer: _ => glamor.css(css['.psds-dropdown__field-container']),
