@@ -1,6 +1,8 @@
 import core from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
+import * as vars from '../vars/index.js'
+
 const newStackingContextForFocusRingVisibility = {
   position: 'relative',
   zIndex: '0'
@@ -9,6 +11,9 @@ const newStackingContextForFocusRingVisibility = {
 export default {
   '.psds-form-button-row': {
     display: 'flex'
+  },
+  [`.psds-form-button-row--align-${vars.aligns.right}`]: {
+    justifyContent: 'flex-end'
   },
   '.psds-form-button-row__button': {
     marginRight: core.layout.spacingLarge

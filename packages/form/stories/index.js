@@ -101,3 +101,20 @@ storiesOf('Sample Form', module)
       </Form.ButtonRow>
     </Form.VerticalLayout>
   ))
+
+const alignsStories = storiesOf('Form.ButtonRow | aligns', module)
+  .addDecorator(FormContainer)
+  .addDecorator(PaddingDecorator)
+  .addDecorator(themeDecorator(addons))
+
+Object.keys(Form.ButtonRow.aligns).forEach(a =>
+  alignsStories.add(a, _ => (
+    <Form.VerticalLayout>
+      <div>form stuff</div>
+      <Form.ButtonRow align={a}>
+        <Button>Save</Button>
+        <Button appearance={Button.appearances.flat}>Cancel</Button>
+      </Form.ButtonRow>
+    </Form.VerticalLayout>
+  ))
+)
