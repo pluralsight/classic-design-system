@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-dropdown",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Design system components for dropdown",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,10 +21,10 @@
   },
   "keywords": [],
   "dependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^5.0.0",
-    "@pluralsight/ps-design-system-core": "^4.4.2",
-    "@pluralsight/ps-design-system-halo": "^4.0.2",
-    "@pluralsight/ps-design-system-icon": "^12.0.3",
+    "@pluralsight/ps-design-system-actionmenu": "^5.0.1",
+    "@pluralsight/ps-design-system-core": "^4.4.3",
+    "@pluralsight/ps-design-system-halo": "^4.0.3",
+    "@pluralsight/ps-design-system-icon": "^12.0.4",
     "@pluralsight/ps-design-system-theme": "^3.0.1",
     "@pluralsight/ps-design-system-util": "^2.0.4",
     "prop-types": "^15.7.2"
@@ -35,8 +35,8 @@
     "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.9.2",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^2.0.4",
+    "@pluralsight/ps-design-system-build": "^1.10.0",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^2.0.5",
     "@storybook/addon-actions": "^4.0.0",
     "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/react": "^4.0.0",

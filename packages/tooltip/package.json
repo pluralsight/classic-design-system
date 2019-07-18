@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-tooltip",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "Design System component for tooltip ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,7 +21,7 @@
   },
   "keywords": [],
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.4.2",
+    "@pluralsight/ps-design-system-core": "^4.4.3",
     "@pluralsight/ps-design-system-util": "^2.0.4",
     "prop-types": "^15.7.0"
   },
@@ -31,8 +31,8 @@
     "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.9.2",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^2.0.4",
+    "@pluralsight/ps-design-system-build": "^1.10.0",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^2.0.5",
     "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/addons": "^4.0.0",
     "@storybook/react": "^4.0.0",
