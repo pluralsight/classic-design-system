@@ -3,6 +3,7 @@
     "packages/build",
     "packages/core",
     "packages/storybook-addon-center",
+    "packages/storybook-addon-theme",
     "packages/filter-react-props",
     "packages/normalize"
   ],
