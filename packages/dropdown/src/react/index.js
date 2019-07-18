@@ -4,7 +4,7 @@ import Halo from '@pluralsight/ps-design-system-halo/react.js'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react.js'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
 
 import css from '../css/index.js'
 import * as vars from '../vars/index.js'
@@ -59,6 +59,8 @@ const CaretDown = _ => (
 )
 
 const Dropdown = React.forwardRef((props, forwardedRef) => {
+  const themeName = useTheme()
+  const allProps = { ...props, themeName }
   const [isKeyboarding, setKeyboarding] = React.useState(false)
   const [isOpen, setOpen] = React.useState(false)
   const [selectedLabel, setSelectedLabel] = React.useState(null)
@@ -67,7 +69,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
     evt.preventDefault()
     evt.stopPropagation()
     setOpen(!isOpen)
-    if (typeof props.onClick === 'function') props.onClick(evt)
+    if (typeof allProps.onClick === 'function') allProps.onClick(evt)
   }
 
   function handleKeyDown(evt) {
@@ -89,8 +91,8 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
       setSelectedLabel(target.innerText)
       setOpen(false)
     }
-    if (props.menu && typeof props.menu.props.onClick === 'function')
-      props.menu.props.onClick(evt)
+    if (allProps.menu && typeof allProps.menu.props.onClick === 'function')
+      allProps.menu.props.onClick(evt)
   }
 
   function handleOverlayClick() {
@@ -135,68 +137,70 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
     }
 
     return getLongestState(
-      { hasIcon: false, label: props.placeholder || '' },
-      props.menu
+      { hasIcon: false, label: allProps.placeholder || '' },
+      allProps.menu
     )
   }
 
   const ref = forwardedRef || React.createRef()
-  const { style, className, ...buttonProps } = props
+  const { style, className, ...buttonProps } = allProps
   const longestMenuItemState = getLongestMenuLabelState()
   return (
     <React.Fragment>
       {isOpen && (
-        <div {...styles.pageOverlay(props)} onClick={handleOverlayClick} />
+        <div {...styles.pageOverlay(allProps)} onClick={handleOverlayClick} />
       )}
       <label
-        {...styles.dropdown(props)}
+        {...styles.dropdown(allProps)}
         {...(style ? { style: style } : null)}
         {...(className ? { className: className } : null)}
         onKeyDown={handleKeyDown}
       >
-        {props.label && <div {...styles.label(props)}>{props.label}</div>}
-        <div {...styles.fieldContainer(props)}>
-          <Halo error={props.error} gapSize={Halo.gapSizes.small}>
-            <div {...styles.fieldAligner(props)}>
+        {allProps.label && (
+          <div {...styles.label(allProps)}>{allProps.label}</div>
+        )}
+        <div {...styles.fieldContainer(allProps)}>
+          <Halo error={allProps.error} gapSize={Halo.gapSizes.small}>
+            <div {...styles.fieldAligner(allProps)}>
               <button
                 {...filterReactProps(buttonProps, { tagName: 'button' })}
-                {...styles.field(props)}
-                disabled={props.disabled}
-                onClick={props.disabled ? null : handleToggleOpen}
+                {...styles.field(allProps)}
+                disabled={allProps.disabled}
+                onClick={allProps.disabled ? null : handleToggleOpen}
                 ref={ref}
               >
-                <span aria-hidden {...styles.buttonSizer(props)}>
-                  {longestMenuItemState.label || props.placeholder}
+                <span aria-hidden {...styles.buttonSizer(allProps)}>
+                  {longestMenuItemState.label || allProps.placeholder}
                 </span>
-                <span {...styles.placeholder(props)}>
-                  {selectedLabel || props.placeholder}
+                <span {...styles.placeholder(allProps)}>
+                  {selectedLabel || allProps.placeholder}
                 </span>
               </button>
-              <div {...styles.icon(props)}>
+              <div {...styles.icon(allProps)}>
                 <Icon>
                   <CaretDown />
                 </Icon>
               </div>
             </div>
           </Halo>
-          {props.error && (
-            <div {...styles.error(props)}>
+          {allProps.error && (
+            <div {...styles.error(allProps)}>
               <Icon id={Icon.ids.warning} />
             </div>
           )}
         </div>
-        {props.menu && isOpen && (
-          <div {...styles.menu(props)}>
-            {React.cloneElement(props.menu, {
+        {allProps.menu && isOpen && (
+          <div {...styles.menu(allProps)}>
+            {React.cloneElement(allProps.menu, {
               isKeyboarding: isKeyboarding,
-              onClick: props.disabled ? null : handleMenuClick,
+              onClick: allProps.disabled ? null : handleMenuClick,
               onClose: _ => {
                 setOpen(false)
-                if (typeof props.menu.props.onClose === 'function')
-                  props.menu.props.onClose()
+                if (typeof allProps.menu.props.onClose === 'function')
+                  allProps.menu.props.onClose()
               },
               style: {
-                ...props.menu.props.style,
+                ...allProps.menu.props.style,
                 minWidth: '0',
                 maxWidth: 'none',
                 width: ref.current
@@ -206,8 +210,8 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
             })}
           </div>
         )}
-        {props.subLabel && (
-          <div {...styles.subLabel(props)}>{props.subLabel}</div>
+        {allProps.subLabel && (
+          <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
         )}
       </label>
     </React.Fragment>
@@ -240,5 +244,4 @@ Dropdown.appearances = vars.appearances
 
 export const appearances = vars.appearances
 
-// TODO: replace with useTheme
-export default withTheme(Dropdown)
+export default Dropdown
