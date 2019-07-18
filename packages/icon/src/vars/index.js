@@ -1,10 +1,21 @@
+import camelize from 'camelize'
+import importAll from 'import-all.macro'
+
 import core from '@pluralsight/ps-design-system-core'
 
-import icons from '../js/icon-transformer'
+const imported = importAll.sync('../react/icons/*.dist.js')
 
-export const ids = Object.keys(icons).reduce((acc, id) => {
-  acc[id] = `${id}`
-  return acc
+const convertToIconId = filePath => {
+  const trimmed = filePath
+    .replace('../react/icons/', '')
+    .replace('-icon.dist.js', '')
+
+  return camelize(trimmed)
+}
+
+export const ids = Object.keys(imported).reduce((acc, filePath) => {
+  const id = convertToIconId(filePath)
+  return { ...acc, [id]: id }
 }, {})
 
 export const sizes = {
