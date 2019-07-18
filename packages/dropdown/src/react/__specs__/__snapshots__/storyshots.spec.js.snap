@@ -696,6 +696,65 @@ exports[`Storyshots disabled compare 1`] = `
 </div>
 `;
 
+exports[`Storyshots focus autofocus with ref 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1812rv9=""
+    >
+      <div
+        data-css-1xm24a9=""
+      >
+        <div
+          data-css-1r44zeb=""
+        >
+          <button
+            data-css-8bndf1=""
+            disabled={false}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-e6fvyw=""
+            />
+            <span
+              data-css-5m5yd6=""
+            />
+          </button>
+          <div
+            data-css-cstzed=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
 exports[`Storyshots focus disabled 1`] = `
 <div
   style={

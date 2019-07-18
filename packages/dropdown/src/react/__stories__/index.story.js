@@ -5,7 +5,7 @@ import React from 'react'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 
-import Dropdown from '..'
+import Dropdown from '../index.js'
 
 const Empty = () => null
 
@@ -374,6 +374,16 @@ storiesOf('props whitelist', module).add('title', _ => (
   />
 ))
 
+function AutofocusStory(props) {
+  const ref = React.createRef()
+
+  React.useEffect(_ => {
+    ref.current.focus()
+  })
+
+  return <Dropdown {...props} ref={ref} menu={<Empty />} />
+}
+
 storiesOf('focus', module)
   .add('onFocus', _ => <DropdownWithDefaults onFocus={action('focused')} />)
   .add('onBlur', _ => <DropdownWithDefaults onBlur={action('blurred')} />)
@@ -384,3 +394,4 @@ storiesOf('focus', module)
       onFocus={action('focused')}
     />
   ))
+  .add('autofocus with ref', _ => <AutofocusStory />)

@@ -58,7 +58,7 @@ const CaretDown = _ => (
   </svg>
 )
 
-const Dropdown = props => {
+const Dropdown = React.forwardRef((props, forwardedRef) => {
   const [isKeyboarding, setKeyboarding] = React.useState(false)
   const [isOpen, setOpen] = React.useState(false)
   const [selectedLabel, setSelectedLabel] = React.useState(null)
@@ -110,7 +110,6 @@ const Dropdown = props => {
       hasIcon: hasIcon(item),
       label: getLabel(item)
     })
-    // TODO: rename state
     const itemIsLonger = (state, item) =>
       getLabel(item).length > state.label.length
     const newStateIsLonger = (oldState, newState) =>
@@ -141,9 +140,7 @@ const Dropdown = props => {
     )
   }
 
-  // TODO: forwardRef && deprecate innerRef
-
-  const ref = React.createRef()
+  const ref = forwardedRef || React.createRef()
   const { style, className, ...buttonProps } = props
   const longestMenuItemState = getLongestMenuLabelState()
   return (
@@ -215,7 +212,7 @@ const Dropdown = props => {
       </label>
     </React.Fragment>
   )
-}
+})
 
 Dropdown.propTypes = {
   appearance: PropTypes.oneOf(
@@ -224,7 +221,6 @@ Dropdown.propTypes = {
   disabled: PropTypes.bool,
   className: PropTypes.string,
   error: PropTypes.bool,
-  innerRef: PropTypes.func,
   label: PropTypes.node,
   menu: PropTypes.element.isRequired,
   onBlur: PropTypes.func,
