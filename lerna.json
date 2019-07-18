@@ -1,5 +1,6 @@
 {
   "packages": [
+    "packages/avatar",
     "packages/build",
     "packages/core",
     "packages/storybook-addon-center",
