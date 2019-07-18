@@ -255,7 +255,7 @@ exports[`Storyshots EmptyState/actions with an input 1`] = `
             data-css-1e3i43a=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="Find Something"
             />
