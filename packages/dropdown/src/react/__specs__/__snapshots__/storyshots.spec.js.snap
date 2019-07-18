@@ -24,9 +24,7 @@ exports[`Storyshots appearance default 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -94,9 +92,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -180,9 +176,7 @@ exports[`Storyshots appearance gaps 1`] = `
               <button
                 data-css-8bndf1=""
                 disabled={false}
-                onBlur={[Function]}
                 onClick={[Function]}
-                onFocus={[Function]}
               >
                 <span
                   aria-hidden={true}
@@ -237,9 +231,7 @@ exports[`Storyshots appearance gaps 1`] = `
               <button
                 data-css-8bndf1=""
                 disabled={false}
-                onBlur={[Function]}
                 onClick={[Function]}
-                onFocus={[Function]}
               >
                 <span
                   aria-hidden={true}
@@ -312,9 +304,7 @@ exports[`Storyshots appearance gaps 1`] = `
               <button
                 data-css-1e7y5c2=""
                 disabled={false}
-                onBlur={[Function]}
                 onClick={[Function]}
-                onFocus={[Function]}
               >
                 <span
                   aria-hidden={true}
@@ -369,9 +359,7 @@ exports[`Storyshots appearance gaps 1`] = `
               <button
                 data-css-1e7y5c2=""
                 disabled={false}
-                onBlur={[Function]}
                 onClick={[Function]}
-                onFocus={[Function]}
               >
                 <span
                   aria-hidden={true}
@@ -450,9 +438,7 @@ exports[`Storyshots appearance subtle 1`] = `
           <button
             data-css-1e7y5c2=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -520,9 +506,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           <button
             data-css-1e7y5c2=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -605,9 +589,7 @@ exports[`Storyshots disabled compare 1`] = `
             <button
               data-css-8bndf1=""
               disabled={false}
-              onBlur={[Function]}
               onClick={[Function]}
-              onFocus={[Function]}
             >
               <span
                 aria-hidden={true}
@@ -669,9 +651,7 @@ exports[`Storyshots disabled compare 1`] = `
             <button
               data-css-8bndf1=""
               disabled={true}
-              onBlur={null}
               onClick={null}
-              onFocus={null}
             >
               <span
                 aria-hidden={true}
@@ -716,6 +696,187 @@ exports[`Storyshots disabled compare 1`] = `
 </div>
 `;
 
+exports[`Storyshots focus disabled 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1h53i33=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1812rv9=""
+    >
+      <div
+        data-css-1xm24a9=""
+      >
+        <div
+          data-css-1r44zeb=""
+        >
+          <button
+            data-css-8bndf1=""
+            disabled={true}
+            onBlur={[Function]}
+            onClick={null}
+            onFocus={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-e6fvyw=""
+            />
+            <span
+              data-css-5m5yd6=""
+            />
+          </button>
+          <div
+            data-css-cstzed=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots focus onBlur 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1812rv9=""
+    >
+      <div
+        data-css-1xm24a9=""
+      >
+        <div
+          data-css-1r44zeb=""
+        >
+          <button
+            data-css-8bndf1=""
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-e6fvyw=""
+            />
+            <span
+              data-css-5m5yd6=""
+            />
+          </button>
+          <div
+            data-css-cstzed=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots focus onFocus 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1812rv9=""
+    >
+      <div
+        data-css-1xm24a9=""
+      >
+        <div
+          data-css-1r44zeb=""
+        >
+          <button
+            data-css-8bndf1=""
+            disabled={false}
+            onClick={[Function]}
+            onFocus={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-e6fvyw=""
+            />
+            <span
+              data-css-5m5yd6=""
+            />
+          </button>
+          <div
+            data-css-cstzed=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
 exports[`Storyshots labels all 1`] = `
 <div
   style={
@@ -745,9 +906,7 @@ exports[`Storyshots labels all 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -820,9 +979,7 @@ exports[`Storyshots labels label 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -886,9 +1043,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -952,9 +1107,7 @@ exports[`Storyshots labels none 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -1013,9 +1166,7 @@ exports[`Storyshots labels placeholder 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -1078,9 +1229,7 @@ exports[`Storyshots labels subLabel 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -1163,9 +1312,7 @@ exports[`Storyshots layouts full width 1`] = `
             <button
               data-css-8bndf1=""
               disabled={false}
-              onBlur={[Function]}
               onClick={[Function]}
-              onFocus={[Function]}
             >
               <span
                 aria-hidden={true}
@@ -1224,9 +1371,7 @@ exports[`Storyshots layouts full width 1`] = `
             <button
               data-css-8bndf1=""
               disabled={false}
-              onBlur={[Function]}
               onClick={[Function]}
-              onFocus={[Function]}
             >
               <span
                 aria-hidden={true}
@@ -1303,9 +1448,7 @@ exports[`Storyshots layouts full width 1`] = `
             <button
               data-css-1e7y5c2=""
               disabled={false}
-              onBlur={[Function]}
               onClick={[Function]}
-              onFocus={[Function]}
             >
               <span
                 aria-hidden={true}
@@ -1364,9 +1507,7 @@ exports[`Storyshots layouts full width 1`] = `
             <button
               data-css-1e7y5c2=""
               disabled={false}
-              onBlur={[Function]}
               onClick={[Function]}
-              onFocus={[Function]}
             >
               <span
                 aria-hidden={true}
@@ -1459,9 +1600,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
               <button
                 data-css-1e7y5c2=""
                 disabled={false}
-                onBlur={[Function]}
                 onClick={[Function]}
-                onFocus={[Function]}
               >
                 <span
                   aria-hidden={true}
@@ -1539,9 +1678,7 @@ exports[`Storyshots menu divider 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -1609,9 +1746,7 @@ exports[`Storyshots menu in stack 1`] = `
               <button
                 data-css-8bndf1=""
                 disabled={false}
-                onBlur={[Function]}
                 onClick={[Function]}
-                onFocus={[Function]}
               >
                 <span
                   aria-hidden={true}
@@ -1670,9 +1805,7 @@ exports[`Storyshots menu in stack 1`] = `
               <button
                 data-css-8bndf1=""
                 disabled={false}
-                onBlur={[Function]}
                 onClick={[Function]}
-                onFocus={[Function]}
               >
                 <span
                   aria-hidden={true}
@@ -1742,9 +1875,7 @@ exports[`Storyshots menu nested 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -1812,9 +1943,7 @@ exports[`Storyshots menu onClicks 1`] = `
           <button
             data-css-1e7y5c2=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -1900,9 +2029,7 @@ exports[`Storyshots menu single list 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -1968,9 +2095,7 @@ exports[`Storyshots menu single list w/ icon 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -2038,9 +2163,7 @@ exports[`Storyshots menu super long 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -2106,9 +2229,7 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -2174,9 +2295,7 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -2244,9 +2363,7 @@ exports[`Storyshots menu w/ subLabel 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -2312,9 +2429,7 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -2382,9 +2497,7 @@ exports[`Storyshots props whitelist title 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
             title="This title should be present"
           >
             <span
@@ -2447,9 +2560,7 @@ exports[`Storyshots whitelist name 1`] = `
             data-css-8bndf1=""
             disabled={false}
             name="myFieldNameOfPower"
-            onBlur={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}
@@ -2512,10 +2623,8 @@ exports[`Storyshots whitelist onChange 1`] = `
           <button
             data-css-8bndf1=""
             disabled={false}
-            onBlur={[Function]}
             onChange={[Function]}
             onClick={[Function]}
-            onFocus={[Function]}
           >
             <span
               aria-hidden={true}

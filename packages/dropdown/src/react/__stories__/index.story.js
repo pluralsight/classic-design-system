@@ -373,3 +373,14 @@ storiesOf('props whitelist', module).add('title', _ => (
     }
   />
 ))
+
+storiesOf('focus', module)
+  .add('onFocus', _ => <DropdownWithDefaults onFocus={action('focused')} />)
+  .add('onBlur', _ => <DropdownWithDefaults onBlur={action('blurred')} />)
+  .add('disabled', _ => (
+    <DropdownWithDefaults
+      disabled
+      onBlur={action('blurred')}
+      onFocus={action('focused')}
+    />
+  ))
