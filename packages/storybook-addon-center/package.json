@@ -6,7 +6,7 @@
   "repository": "pluralsight/design-system",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist --ignore spec.js",
+    "build": "babel --root-mode upward src --out-dir dist",
     "build:watch": "npm run build -- --watch",
     "prepublish": "npm run build"
   },
@@ -16,11 +16,5 @@
   "peerDependencies": {
     "@storybook/addons": "^4.0.0",
     "react": ">=16.8.6 < 17.0.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1"
   }
 }

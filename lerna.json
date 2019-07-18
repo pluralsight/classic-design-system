@@ -2,6 +2,7 @@
   "packages": [
     "packages/build",
     "packages/core",
+    "packages/storybook-addon-center",
     "packages/filter-react-props",
     "packages/normalize"
   ],
