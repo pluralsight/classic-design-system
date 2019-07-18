@@ -8,6 +8,7 @@
     "packages/filter-react-props",
     "packages/normalize",
     "packages/prop-types",
+    "packages/theme",
     "packages/util"
   ],
   "version": "independent",
