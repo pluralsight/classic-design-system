@@ -1,28 +1,13 @@
 import * as glamor from 'glamor'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo/react.js'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import PropTypes from 'prop-types'
-import * as propsUtil from '@pluralsight/ps-design-system-util/props.js'
 import React from 'react'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react.js'
 
 import css from '../css/index.js'
 import * as vars from '../vars/index.js'
-
-const dropdownHtmlPropsWhitelist = [
-  'name',
-  'autocomplete',
-  'autofocus',
-  'role',
-  'tabIndex',
-  'value',
-  'defaultValue',
-  'title',
-  /^on/,
-  /^aria-/,
-  /^data-/,
-  /^form/
-]
 
 const styles = {
   buttonSizer: _ => glamor.css(css['.psds-dropdown__button-sizer']),
@@ -175,6 +160,7 @@ class Dropdown extends React.Component {
   }
   render() {
     const { props, state } = this
+    const { style, className, ...buttonProps } = props
     const longestMenuItemState = this.getLongestMenuLabelState()
     return (
       <React.Fragment>
@@ -186,8 +172,8 @@ class Dropdown extends React.Component {
         )}
         <label
           {...styles.dropdown(props)}
-          {...(props.style ? { style: props.style } : null)}
-          {...(props.className ? { className: props.className } : null)}
+          {...(style ? { style: style } : null)}
+          {...(className ? { className: className } : null)}
           onKeyDown={this.handleKeyDown}
         >
           {props.label && <div {...styles.label(props)}>{props.label}</div>}
@@ -195,10 +181,7 @@ class Dropdown extends React.Component {
             <Halo error={props.error} gapSize={Halo.gapSizes.small}>
               <div {...styles.fieldAligner(props)}>
                 <button
-                  {...propsUtil.whitelistProps(
-                    props,
-                    dropdownHtmlPropsWhitelist
-                  )}
+                  {...filterReactProps(buttonProps, { tagName: 'button' })}
                   {...styles.field(props)}
                   disabled={props.disabled}
                   onClick={props.disabled ? null : this.handleToggleOpen}
