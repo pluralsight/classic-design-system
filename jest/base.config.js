@@ -9,6 +9,7 @@ module.exports = {
   transform: {
     '^.+\\.js$': '<rootDir>/jest/babel-transformer.js'
   },
+  transformIgnorePatterns: ['<rootDir>/node_modules', '<rootDir>/.*/dist'],
   watchPlugins: [
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname'

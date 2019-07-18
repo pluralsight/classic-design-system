@@ -1,7 +1,7 @@
 module.exports = api => {
   const isTest = api.env('test')
 
-  let ignore = []
+  let ignore = ['**/dist/']
 
   if (!isTest) ignore = ignore.concat(['**/__specs__/', '**/__stories__/'])
 
