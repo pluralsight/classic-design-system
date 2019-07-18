@@ -106,7 +106,7 @@ export default withServerProps(_ => (
       />
 
       <SectionHeading>Size</SectionHeading>
-      <P>Icons can take on four standard sizes.</P>
+      <P>Icons can take on {Object.keys(Icon.sizes).length} standard sizes.</P>
       <Example.React
         includes={{ Icon }}
         codes={Object.keys(Icon.sizes).map(
