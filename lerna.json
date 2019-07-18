@@ -6,7 +6,8 @@
     "packages/storybook-addon-center",
     "packages/storybook-addon-theme",
     "packages/filter-react-props",
-    "packages/normalize"
+    "packages/normalize",
+    "packages/prop-types"
   ],
   "version": "independent",
   "command": {
