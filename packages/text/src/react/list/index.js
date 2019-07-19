@@ -1,52 +1,45 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
+
 import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
-import ListItem from './list-item'
+import stylesheet from '../../css/index.js'
+import * as vars from '../../vars/index.js'
 
-import css from '../../css'
-import * as vars from '../../vars'
-
-const formatClassName = props =>
-  glamor.css({
-    ...css[`.psds-text__list.psds-theme--${props.themeName}`],
-    ...css[`.psds-text__list`],
-    ...css[`.psds-text__list--type-${props.type}`]
-  })
-
-const getTagName = props => (props.type === 'numbered' ? 'ol' : 'ul')
-
-const rmNonHtmlProps = props => {
-  const { type, ...rest } = props
-  return rest
+const styles = {
+  list: (themeName, props) =>
+    compose(
+      css(stylesheet[`.psds-text__list.psds-theme--${themeName}`]),
+      css(stylesheet[`.psds-text__list`]),
+      css(stylesheet[`.psds-text__list--type-${props.type}`])
+    )
 }
 
-const List = (props, context) => {
+export default function List({ type, ...props }) {
   const themeName = useTheme()
-  return React.createElement(
-    getTagName(props),
-    {
-      ...rmNonHtmlProps(props),
-      className: formatClassName({ ...props, themeName })
-    },
-    props.children
+  const TagName = type === 'numbered' ? 'ol' : 'ul'
+
+  return (
+    <TagName
+      {...styles.list(themeName, { type })}
+      {...filterReactProps(props, { tagName: TagName })}
+    />
   )
 }
 
-/* eslint-disable react/no-unused-prop-types */
 List.propTypes = {
-  children: PropTypes.node,
   type: PropTypes.oneOf(Object.keys(vars.listTypes))
 }
-/* eslint-enable react/no-unused-prop-types */
 
 List.defaultProps = {
   type: vars.listTypes.default
 }
 
-List.types = vars.listTypes
+function ListItem(props) {
+  return <li {...props} />
+}
 
-// TODO: how to do this with es6 exports?!
-module.exports = List
-module.exports.Item = ListItem
+List.types = vars.listTypes
+List.Item = ListItem
