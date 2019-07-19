@@ -1,7 +1,7 @@
 import React from 'react'
-import { render } from 'react-testing-library'
+import { render } from '@testing-library/react'
 
-import Shave from '../shave'
+import Shave from '../shave.js'
 
 jest.mock('shave')
 

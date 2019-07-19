@@ -11,6 +11,7 @@
     "packages/halo",
     "packages/normalize",
     "packages/prop-types",
+    "packages/row",
     "packages/storybook-addon-center",
     "packages/storybook-addon-theme",
     "packages/table",
