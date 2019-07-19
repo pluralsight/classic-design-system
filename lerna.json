@@ -11,7 +11,8 @@
     "packages/normalize",
     "packages/prop-types",
     "packages/theme",
-    "packages/util"
+    "packages/util",
+    "packages/viewtoggle"
   ],
   "version": "independent",
   "command": {

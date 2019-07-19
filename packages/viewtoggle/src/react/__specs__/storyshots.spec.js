@@ -1,15 +1,10 @@
-import path from 'path'
 import initStoryshots, {
   snapshotWithOptions
 } from '@storybook/addon-storyshots'
 
-function createNodeMock(element) {
-  return { offsetLeft: 0, style: {} }
-}
+const createNodeMock = el => document.createElement('div')
 
 initStoryshots({
-  configPath: path.resolve(__dirname, '..', '..', '..', '.storybook'),
-  test: snapshotWithOptions({
-    createNodeMock
-  })
+  framework: 'react',
+  test: snapshotWithOptions({ createNodeMock })
 })
