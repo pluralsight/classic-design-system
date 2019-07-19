@@ -20,22 +20,30 @@ import {
   withServerProps
 } from '../../src/ui'
 
-function InAppExample(props) {
+function InAppExample() {
   const categories = [
     {
       name: 'Channels',
-      options: ['Dev', 'Ops', 'Design']
+      options: [
+        { value: 'dev', label: 'Development' },
+        { value: 'ops', label: 'Operations' },
+        { value: 'des', label: 'Design' }
+      ]
     },
     {
       name: 'Socialz',
-      options: ['Twitz', 'DaBook', 'Instas']
+      options: [
+        { value: 't', label: 'Twitz' },
+        { value: 'd', label: 'DaBook' },
+        { value: 'i', label: 'Instas' }
+      ]
     }
   ]
   const [isOpen, setIsOpen] = React.useState(false)
-  const [selected, select] = React.useState(null)
+  const [selected, select] = React.useState({})
 
-  const handleItemClick = (evt, opt) => {
-    select(opt)
+  function handleSelect(evt, value, label) {
+    select({ value, label })
     setIsOpen(false)
   }
 
@@ -60,17 +68,19 @@ function InAppExample(props) {
             when={isOpen}
             show={
               <div>
-                <ActionMenu origin={ActionMenu.origins.topLeft}>
+                <ActionMenu
+                  origin={ActionMenu.origins.topLeft}
+                  onSelect={handleSelect}
+                  whoa="adsf"
+                >
                   {categories.map(cat => (
                     <ActionMenu.Item
-                      key={cat}
+                      key={cat.name}
                       nested={
                         <ActionMenu>
                           {cat.options.map(opt => (
-                            <ActionMenu.Item
-                              onClick={e => handleItemClick(e, opt)}
-                            >
-                              {opt}
+                            <ActionMenu.Item value={opt.value} key={opt.value}>
+                              {opt.label}
                             </ActionMenu.Item>
                           ))}
                         </ActionMenu>
@@ -91,7 +101,9 @@ function InAppExample(props) {
             />
           </BelowLeft>
 
-          <div className="label">Clicked Item: {selected}</div>
+          <div className="label">
+            Clicked Item: {selected.label} ({selected.value})
+          </div>
         </div>
       </Theme>
 
@@ -100,38 +112,48 @@ function InAppExample(props) {
   const categories = [
     {
       name: 'Channels',
-      options: ['Dev', 'Ops', 'Design']
+      options: [
+        { value: 'dev', label: 'Development' },
+        { value: 'ops', label: 'Operations' },
+        { value: 'des', label: 'Design' }
+      ]
     },
     {
       name: 'Socialz',
-      options: ['Twitz', 'DaBook', 'Instas']
+      options: [
+        { value: 't', label: 'Twitz' },
+        { value: 'd', label: 'DaBook' },
+        { value: 'i', label: 'Instas' }
+      ]
     }
   ]
   const [isOpen, setIsOpen] = React.useState(false)
-  const [selected, select] = React.useState(null)
+  const [selected, select] = React.useState({})
 
-  const handleItemClick = (evt, opt) => {
-    select(opt)
+  function handleSelect(evt, value, label) {
+    select({ value, label })
     setIsOpen(false)
   }
 
   return (
-    <div className="example">
+    <React.Fragment>
       <BelowLeft
         when={isOpen}
         show={
           <div>
-            <ActionMenu origin={ActionMenu.origins.topLeft}>
+            <ActionMenu
+              origin={ActionMenu.origins.topLeft}
+              onSelect={handleSelect}
+              whoa="adsf"
+            >
               {categories.map(cat => (
                 <ActionMenu.Item
-                  key={cat}
+                  key={cat.name}
                   nested={
                     <ActionMenu>
                       {cat.options.map(opt => (
-                        <ActionMenu.Item
-                          onClick={e => handleItemClick(e, opt)}
-                        >
-                          {opt}
+                        <ActionMenu.Item value={opt.value} key={opt.value}>
+                          {opt.label}
                         </ActionMenu.Item>
                       ))}
                     </ActionMenu>
@@ -152,8 +174,10 @@ function InAppExample(props) {
         />
       </BelowLeft>
 
-      <div className="label">Clicked Item: {selected}</div>
-    </div>
+      <div className="label">
+        Clicked Item: {selected.label} ({selected.value})
+      </div>
+    </React.Fragment>
   )
 }`}
       </Code>
@@ -185,6 +209,13 @@ export default withServerProps(_ => (
               null,
               null,
               'triggered when a menu collapses'
+            ]),
+            PropTypes.row([
+              'onSelect',
+              'function',
+              null,
+              null,
+              'triggered when an item selected'
             ]),
             PropTypes.row([
               'origin',
@@ -240,6 +271,15 @@ export default withServerProps(_ => (
               null,
               null,
               'triggered on item click'
+            ]),
+            PropTypes.row([
+              'value',
+              <code>string | number</code>,
+              null,
+              null,
+              <span>
+                value sent to <code>Menu#onSelect</code>
+              </span>
             ])
           ]
         }}
