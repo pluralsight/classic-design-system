@@ -1,4 +1,4 @@
-import { cleanup, render, waitForElement } from 'react-testing-library'
+import { cleanup, render, waitForElement } from '@testing-library/react'
 import React from 'react'
 
 import * as positionFns from '../index.js'

@@ -11,6 +11,7 @@
     "packages/filter-react-props",
     "packages/halo",
     "packages/normalize",
+    "packages/position",
     "packages/prop-types",
     "packages/row",
     "packages/storybook-addon-center",
