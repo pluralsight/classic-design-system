@@ -277,6 +277,7 @@ const Item = props => {
       ),
       isKeyboarding: props._isKeyboarding,
       onClose: handleNestedClose,
+      onSelect: props._onSelect,
       origin: props._origin
     })
 
