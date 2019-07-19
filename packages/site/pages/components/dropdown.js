@@ -166,13 +166,6 @@ export default withServerProps(_ => (
             'error state flag'
           ]),
           PropTypes.row([
-            'innerRef',
-            'DOM element => ()',
-            null,
-            null,
-            'input field react ref callback'
-          ]),
-          PropTypes.row([
             'label',
             'string',
             null,

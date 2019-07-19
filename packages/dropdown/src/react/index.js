@@ -1,28 +1,13 @@
 import * as glamor from 'glamor'
-import Halo from '@pluralsight/ps-design-system-halo/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import Halo from '@pluralsight/ps-design-system-halo/react.js'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import PropTypes from 'prop-types'
-import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 import React from 'react'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
 
 import css from '../css/index.js'
 import * as vars from '../vars/index.js'
-
-const dropdownHtmlPropsWhitelist = [
-  'name',
-  'autocomplete',
-  'autofocus',
-  'role',
-  'tabIndex',
-  'value',
-  'defaultValue',
-  'title',
-  /^on/,
-  /^aria-/,
-  /^data-/,
-  /^form/
-]
 
 const styles = {
   buttonSizer: _ => glamor.css(css['.psds-dropdown__button-sizer']),
@@ -32,13 +17,7 @@ const styles = {
       css['.psds-dropdown__field'],
       css[`.psds-dropdown__field--appearance-${appearance}`],
       css[`.psds-dropdown__field.psds-theme--${themeName}`],
-      error && css[`.psds-dropdown__field--error.psds-theme--${themeName}`],
-      {
-        ':focus': {
-          ...css['.psds-dropdown__field:focus'],
-          ...css[`.psds-dropdown__field.psds-theme--${themeName}:focus`]
-        }
-      }
+      error && css[`.psds-dropdown__field--error.psds-theme--${themeName}`]
     ),
   fieldAligner: _ => glamor.css(css['.psds-dropdown__field-aligner']),
   fieldContainer: _ => glamor.css(css['.psds-dropdown__field-container']),
@@ -79,60 +58,49 @@ const CaretDown = _ => (
   </svg>
 )
 
-class Dropdown extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isFocused: false,
-      isKeyboarding: false,
-      isOpen: false,
-      selectedLabel: null
-    }
-    this.handleFocus = this.handleFocus.bind(this)
-    this.handleToggleOpen = this.handleToggleOpen.bind(this)
-    this.handleBlur = this.handleBlur.bind(this)
-    this.handleKeyDown = this.handleKeyDown.bind(this)
-    this.handleMenuClick = this.handleMenuClick.bind(this)
-    this.handleOverlayClick = this.handleOverlayClick.bind(this)
-  }
-  handleToggleOpen(evt) {
+const Dropdown = React.forwardRef((props, forwardedRef) => {
+  const themeName = useTheme()
+  const allProps = { ...props, themeName }
+  const [isKeyboarding, setKeyboarding] = React.useState(false)
+  const [isOpen, setOpen] = React.useState(false)
+  const [selectedLabel, setSelectedLabel] = React.useState(null)
+
+  function handleToggleOpen(evt) {
     evt.preventDefault()
     evt.stopPropagation()
-    this.setState({ isOpen: !this.state.isOpen })
-    if (typeof this.props.onClick === 'function') this.props.onClick(evt)
+    setOpen(!isOpen)
+    if (typeof allProps.onClick === 'function') allProps.onClick(evt)
   }
-  handleFocus(evt) {
-    this.setState(_ => ({ isFocused: true }))
-    if (typeof this.props.onFocus === 'function') this.props.onFocus(evt)
-  }
-  handleBlur(evt) {
-    this.setState(_ => ({ isFocused: false }))
-    if (typeof this.props.onBlur === 'function') this.props.onBlur(evt)
-  }
-  handleKeyDown(evt) {
+
+  function handleKeyDown(evt) {
     if (evt.key === 'ArrowDown' || evt.key === ' ' || evt.key === 'Enter') {
-      this.setState({ isKeyboarding: true })
+      setKeyboarding(true)
     }
     if (evt.key === 'ArrowDown') {
-      this.setState(_ => ({ isOpen: true }))
+      setOpen(true)
     }
   }
-  handleMenuClick(evt) {
+
+  function handleMenuClick(evt) {
     evt.preventDefault()
     evt.stopPropagation()
 
     const target = evt.target
     const isItem = target.getAttribute('role') === 'menuitem'
     if (isItem) {
-      this.setState({ selectedLabel: target.innerText, isOpen: false })
+      setSelectedLabel(target.innerText)
+      setOpen(false)
     }
-    if (this.props.menu && typeof this.props.menu.props.onClick === 'function')
-      this.props.menu.props.onClick(evt)
+    if (allProps.menu && typeof allProps.menu.props.onClick === 'function')
+      allProps.menu.props.onClick(evt)
   }
-  handleOverlayClick() {
-    this.setState({ isOpen: false, isKeyboarding: false })
+
+  function handleOverlayClick() {
+    setOpen(false)
+    setKeyboarding(false)
   }
-  getLongestMenuLabelState() {
+
+  function getLongestMenuLabelState() {
     const getMenuItems = menu =>
       menu ? React.Children.toArray(menu.props.children) : []
     const getNestedMenu = item => item && item.props.nested
@@ -169,108 +137,102 @@ class Dropdown extends React.Component {
     }
 
     return getLongestState(
-      { hasIcon: false, label: this.props.placeholder || '' },
-      this.props.menu
+      { hasIcon: false, label: allProps.placeholder || '' },
+      allProps.menu
     )
   }
-  render() {
-    const { props, state } = this
-    const longestMenuItemState = this.getLongestMenuLabelState()
-    return (
-      <React.Fragment>
-        {state.isOpen && (
-          <div
-            {...styles.pageOverlay(props)}
-            onClick={this.handleOverlayClick}
-          />
+
+  const ref = forwardedRef || React.createRef()
+  const { style, className, ...buttonProps } = allProps
+  const longestMenuItemState = getLongestMenuLabelState()
+  return (
+    <React.Fragment>
+      {isOpen && (
+        <div {...styles.pageOverlay(allProps)} onClick={handleOverlayClick} />
+      )}
+      <label
+        {...styles.dropdown(allProps)}
+        {...(style ? { style: style } : null)}
+        {...(className ? { className: className } : null)}
+        onKeyDown={handleKeyDown}
+      >
+        {allProps.label && (
+          <div {...styles.label(allProps)}>{allProps.label}</div>
         )}
-        <label
-          {...styles.dropdown(props)}
-          {...(props.style ? { style: props.style } : null)}
-          {...(props.className ? { className: props.className } : null)}
-          onKeyDown={this.handleKeyDown}
-        >
-          {props.label && <div {...styles.label(props)}>{props.label}</div>}
-          <div {...styles.fieldContainer(props)}>
-            <Halo error={props.error} gapSize={Halo.gapSizes.small}>
-              <div {...styles.fieldAligner(props)}>
-                <button
-                  {...propsUtil.whitelistProps(
-                    props,
-                    dropdownHtmlPropsWhitelist
-                  )}
-                  {...styles.field(props)}
-                  disabled={props.disabled}
-                  onClick={props.disabled ? null : this.handleToggleOpen}
-                  onBlur={props.disabled ? null : this.handleBlur}
-                  onFocus={props.disabled ? null : this.handleFocus}
-                  ref={el => {
-                    this.field = el
-                    if (typeof props.innerRef === 'function') props.innerRef(el)
-                  }}
-                >
-                  <span aria-hidden {...styles.buttonSizer(props)}>
-                    {longestMenuItemState.label || props.placeholder}
-                  </span>
-                  <span {...styles.placeholder(props)}>
-                    {state.selectedLabel || props.placeholder}
-                  </span>
-                </button>
-                <div {...styles.icon(props)}>
-                  <Icon>
-                    <CaretDown />
-                  </Icon>
-                </div>
+        <div {...styles.fieldContainer(allProps)}>
+          <Halo error={allProps.error} gapSize={Halo.gapSizes.small}>
+            <div {...styles.fieldAligner(allProps)}>
+              <button
+                {...filterReactProps(buttonProps, { tagName: 'button' })}
+                {...styles.field(allProps)}
+                disabled={allProps.disabled}
+                onClick={allProps.disabled ? null : handleToggleOpen}
+                ref={ref}
+              >
+                <span aria-hidden {...styles.buttonSizer(allProps)}>
+                  {longestMenuItemState.label || allProps.placeholder}
+                </span>
+                <span {...styles.placeholder(allProps)}>
+                  {selectedLabel || allProps.placeholder}
+                </span>
+              </button>
+              <div {...styles.icon(allProps)}>
+                <Icon>
+                  <CaretDown />
+                </Icon>
               </div>
-            </Halo>
-            {props.error && (
-              <div {...styles.error(props)}>
-                <Icon id={Icon.ids.warning} />
-              </div>
-            )}
-          </div>
-          {props.menu && state.isOpen && (
-            <div {...styles.menu(props)}>
-              {React.cloneElement(props.menu, {
-                isKeyboarding: state.isKeyboarding,
-                onClick: props.disabled ? null : this.handleMenuClick,
-                onClose: _ => {
-                  this.setState(_ => ({ isOpen: false }))
-                  if (typeof props.menu.props.onClose === 'function')
-                    props.menu.props.onClose()
-                },
-                style: {
-                  ...props.menu.props.style,
-                  minWidth: '0',
-                  maxWidth: 'none',
-                  width: this.field
-                    ? this.field.getBoundingClientRect().width
-                    : 'auto'
-                }
-              })}
+            </div>
+          </Halo>
+          {allProps.error && (
+            <div {...styles.error(allProps)}>
+              <Icon id={Icon.ids.warning} />
             </div>
           )}
-          {props.subLabel && (
-            <div {...styles.subLabel(props)}>{props.subLabel}</div>
-          )}
-        </label>
-      </React.Fragment>
-    )
-  }
-}
+        </div>
+        {allProps.menu && isOpen && (
+          <div {...styles.menu(allProps)}>
+            {React.cloneElement(allProps.menu, {
+              isKeyboarding: isKeyboarding,
+              onClick: allProps.disabled ? null : handleMenuClick,
+              onClose: _ => {
+                setOpen(false)
+                if (typeof allProps.menu.props.onClose === 'function')
+                  allProps.menu.props.onClose()
+              },
+              style: {
+                ...allProps.menu.props.style,
+                minWidth: '0',
+                maxWidth: 'none',
+                width: ref.current
+                  ? ref.current.getBoundingClientRect().width
+                  : 'auto'
+              }
+            })}
+          </div>
+        )}
+        {allProps.subLabel && (
+          <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
+        )}
+      </label>
+    </React.Fragment>
+  )
+})
 
 Dropdown.propTypes = {
-  appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
+  appearance: PropTypes.oneOf(
+    Object.keys(vars.appearances).map(k => vars.appearances[k])
+  ),
   disabled: PropTypes.bool,
+  className: PropTypes.string,
   error: PropTypes.bool,
-  innerRef: PropTypes.func,
   label: PropTypes.node,
   menu: PropTypes.element.isRequired,
   onBlur: PropTypes.func,
   onClick: PropTypes.func,
   onFocus: PropTypes.func,
   placeholder: PropTypes.string,
-  subLabel: PropTypes.node
+  subLabel: PropTypes.node,
+  style: PropTypes.object
 }
 Dropdown.defaultProps = {
   appearance: vars.appearances.default,
@@ -281,4 +243,5 @@ Dropdown.defaultProps = {
 Dropdown.appearances = vars.appearances
 
 export const appearances = vars.appearances
-export default withTheme(Dropdown)
+
+export default Dropdown

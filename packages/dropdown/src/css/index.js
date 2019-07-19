@@ -1,6 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
-import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+import * as iconVars from '@pluralsight/ps-design-system-icon/vars.js'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars.js'
 
 import * as vars from '../vars/index.js'
 
@@ -29,18 +29,20 @@ export default {
     } + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`,
     border: 'none',
     textAlign: 'left',
-    cursor: 'pointer'
-  },
-  '.psds-dropdown__field:focus': {
-    outline: 'none'
-  },
-  [`.psds-dropdown__field.psds-theme--${themeNames.light}:focus`]: {
-    border: '1px solid transparent'
+    cursor: 'pointer',
+
+    '&:focus': {
+      outline: 'none'
+    }
   },
   [`.psds-dropdown__field.psds-theme--${themeNames.light}`]: {
     background: core.colors.white,
     color: core.colors.gray05,
-    border: `1px solid ${core.colors.gray02}`
+    border: `1px solid ${core.colors.gray02}`,
+
+    '&:focus': {
+      border: '1px solid transparent'
+    }
   },
   [`.psds-dropdown__field--error.psds-theme--${themeNames.light}`]: {
     border: '1px solid transparent'
