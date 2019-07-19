@@ -74,13 +74,14 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
         props.value
       )
   }
+  // TODO: can we get rid of this and just calc in useEffect
   const [selectedOption, setSelected] = React.useState({
     value: props.value,
     label: itemMatchingValueProp && itemMatchingValueProp.props.children
   })
 
   React.useEffect(
-    () => {
+    function findSelectedOptionFromValue() {
       const itemMatchingValueProp = findMatchingActionMenuItem(
         props.menu,
         props.value
@@ -98,6 +99,13 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
     [props.menu, props.value]
   )
 
+  function handleChange(evt, value, label) {
+    console.log('in handle change', value, label)
+    setSelected({ value, label })
+    setOpen(false)
+    if (typeof props.onChange === 'function') props.onChange(evt, value, label)
+  }
+
   function handleToggleOpen(evt) {
     evt.preventDefault()
     evt.stopPropagation()
@@ -114,19 +122,19 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
     }
   }
 
-  function handleMenuClick(evt) {
-    evt.preventDefault()
-    evt.stopPropagation()
+  // function handleMenuClick(evt) {
+  //   evt.preventDefault()
+  //   evt.stopPropagation()
 
-    const target = evt.target
-    const isItem = target.getAttribute('role') === 'menuitem'
-    if (isItem) {
-      setSelected({ label: target.innerText })
-      setOpen(false)
-    }
-    if (allProps.menu && typeof allProps.menu.props.onClick === 'function')
-      allProps.menu.props.onClick(evt)
-  }
+  //   const target = evt.target
+  //   const isItem = target.getAttribute('role') === 'menuitem'
+  //   if (isItem) {
+  //     setSelected({ label: target.innerText })
+  //     setOpen(false)
+  //   }
+  //   if (allProps.menu && typeof allProps.menu.props.onClick === 'function')
+  //     allProps.menu.props.onClick(evt)
+  // }
 
   function handleOverlayClick() {
     setOpen(false)
@@ -226,7 +234,9 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
           <div {...styles.menu(allProps)}>
             {React.cloneElement(allProps.menu, {
               isKeyboarding: isKeyboarding,
-              onClick: allProps.disabled ? null : handleMenuClick,
+              // TODO: pickup: why isn't this called in the "new value onChange" story?
+              onChange: handleChange,
+              // onClick: allProps.disabled ? null : handleMenuClick,
               onClose: _ => {
                 setOpen(false)
                 if (typeof allProps.menu.props.onClose === 'function')
@@ -239,7 +249,8 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
                 width: ref.current
                   ? ref.current.getBoundingClientRect().width
                   : 'auto'
-              }
+              },
+              value: selectedOption.value
             })}
           </div>
         )}
@@ -263,6 +274,7 @@ Dropdown.propTypes = {
   onBlur: PropTypes.func,
   onClick: PropTypes.func,
   onFocus: PropTypes.func,
+  onChange: PropTypes.func,
   placeholder: PropTypes.string,
   subLabel: PropTypes.node,
   style: PropTypes.object,

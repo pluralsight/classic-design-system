@@ -396,15 +396,44 @@ storiesOf('focus', module)
   ))
   .add('autofocus with ref', _ => <AutofocusStory />)
 
-storiesOf('value', module).add('set initial value', _ => (
-  <Dropdown
-    value="two"
-    menu={
-      <ActionMenu>
-        <ActionMenu.Item>One item</ActionMenu.Item>
-        <ActionMenu.Item value="two">Two item</ActionMenu.Item>
-        <ActionMenu.Item>Three item</ActionMenu.Item>
-      </ActionMenu>
+storiesOf('value', module)
+  .add('set initial value', _ => (
+    <Dropdown
+      value="two"
+      menu={
+        <ActionMenu>
+          <ActionMenu.Item>One item</ActionMenu.Item>
+          <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+          <ActionMenu.Item>Three item</ActionMenu.Item>
+        </ActionMenu>
+      }
+    />
+  ))
+  .add('new value exposed in onChange', () => {
+    class OnChangeStory extends React.Component {
+      constructor() {
+        super()
+        this.state = { value: 'two', label: 'Two Thing' }
+      }
+      render() {
+        return (
+          <div>
+            <Dropdown
+              value={this.state.value}
+              onChange={(_, value, label) => this.setState({ value, label })}
+              menu={
+                <ActionMenu>
+                  <ActionMenu.Item value="one">One item</ActionMenu.Item>
+                  <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+                  <ActionMenu.Item value="three">Three item</ActionMenu.Item>
+                </ActionMenu>
+              }
+            />
+            <div style={{ color: '#151515' }}>Selected: {this.state.label}</div>
+          </div>
+        )
+      }
     }
-  />
-))
+
+    return <OnChangeStory />
+  })
