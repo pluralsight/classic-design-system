@@ -16,6 +16,7 @@
     "packages/emptystate",
     "packages/icon",
     "packages/filter-react-props",
+    "packages/focusmanager",
     "packages/halo",
     "packages/normalize",
     "packages/position",
