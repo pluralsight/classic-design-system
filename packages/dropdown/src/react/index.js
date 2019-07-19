@@ -79,11 +79,24 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
     label: itemMatchingValueProp && itemMatchingValueProp.props.children
   })
 
-  // TODO: after update test
-  // React.useEffect(() => {
-  //   const item = findMatchingActionMenuItem(props.menu, props.value)
-  //   setSelected({ value: props.value, label: item.children })
-  // }, [props.value])
+  React.useEffect(
+    () => {
+      const itemMatchingValueProp = findMatchingActionMenuItem(
+        props.menu,
+        props.value
+      )
+      if (!itemMatchingValueProp)
+        throw new Error(
+          'cannot set value to non-existent item value',
+          props.value
+        )
+      setSelected({
+        value: props.value,
+        label: itemMatchingValueProp.props.children
+      })
+    },
+    [props.menu, props.value]
+  )
 
   function handleToggleOpen(evt) {
     evt.preventDefault()

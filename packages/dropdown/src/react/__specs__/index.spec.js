@@ -24,3 +24,36 @@ it('selects initial display label with value', () => {
 
   expect(displayLabel).toBeInTheDocument()
 })
+
+it('reselects on value prop change', () => {
+  const { getAllByText, rerender } = render(
+    <Dropdown
+      value="two"
+      menu={
+        <ActionMenu>
+          <ActionMenu.Item value="one">One Item</ActionMenu.Item>
+          <ActionMenu.Item value="two">Two Item</ActionMenu.Item>
+          <ActionMenu.Item value="three">Three Item</ActionMenu.Item>
+        </ActionMenu>
+      }
+    />
+  )
+
+  rerender(
+    <Dropdown
+      value="three"
+      menu={
+        <ActionMenu>
+          <ActionMenu.Item value="one">One Item</ActionMenu.Item>
+          <ActionMenu.Item value="two">Two Item</ActionMenu.Item>
+          <ActionMenu.Item value="three">Three Item</ActionMenu.Item>
+        </ActionMenu>
+      }
+    />
+  )
+
+  const labels = getAllByText('Three Item')
+  const displayLabel = labels.find(n => !n.hasAttribute('aria-hidden'))
+
+  expect(displayLabel).toBeInTheDocument()
+})
