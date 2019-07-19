@@ -16,6 +16,7 @@
     "packages/row",
     "packages/storybook-addon-center",
     "packages/storybook-addon-theme",
+    "packages/switch",
     "packages/table",
     "packages/tab",
     "packages/tag",
