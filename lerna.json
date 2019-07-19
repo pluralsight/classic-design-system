@@ -9,6 +9,7 @@
     "packages/card",
     "packages/carousel",
     "packages/checkbox",
+    "packages/circularprogress",
     "packages/core",
     "packages/drawer",
     "packages/emptystate",
