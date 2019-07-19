@@ -12,6 +12,7 @@
     "packages/prop-types",
     "packages/storybook-addon-center",
     "packages/storybook-addon-theme",
+    "packages/table",
     "packages/tag",
     "packages/text",
     "packages/textarea",
