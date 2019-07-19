@@ -23,7 +23,6 @@ exports[`Storyshots as link hrefs 1`] = `
             aria-label="caret left icon"
             role="img"
             viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
           >
             <path
               d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
@@ -64,7 +63,6 @@ exports[`Storyshots disabled disabled 1`] = `
             aria-label="caret left icon"
             role="img"
             viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
           >
             <path
               d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
@@ -104,7 +102,6 @@ exports[`Storyshots normal looks great 1`] = `
             aria-label="caret left icon"
             role="img"
             viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
           >
             <path
               d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
@@ -145,7 +142,6 @@ exports[`Storyshots with onClick clicks once 1`] = `
             aria-label="caret left icon"
             role="img"
             viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
           >
             <path
               d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"

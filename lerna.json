@@ -1,6 +1,9 @@
 {
   "packages": [
     "packages/avatar",
+    "packages/badge",
+    "packages/banner",
+    "packages/breadcrumb",
     "packages/build",
     "packages/button",
     "packages/carousel",
