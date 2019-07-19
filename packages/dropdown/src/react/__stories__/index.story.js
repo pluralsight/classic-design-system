@@ -395,3 +395,16 @@ storiesOf('focus', module)
     />
   ))
   .add('autofocus with ref', _ => <AutofocusStory />)
+
+storiesOf('value', module).add('set initial value', _ => (
+  <Dropdown
+    value="two"
+    menu={
+      <ActionMenu>
+        <ActionMenu.Item>One item</ActionMenu.Item>
+        <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+        <ActionMenu.Item>Three item</ActionMenu.Item>
+      </ActionMenu>
+    }
+  />
+))

@@ -7,6 +7,7 @@ import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
 
 import css from '../css/index.js'
+import { findMatchingActionMenuItem } from '../js/index.js'
 import * as vars from '../vars/index.js'
 
 const styles = {
@@ -63,7 +64,26 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
   const allProps = { ...props, themeName }
   const [isKeyboarding, setKeyboarding] = React.useState(false)
   const [isOpen, setOpen] = React.useState(false)
-  const [selectedLabel, setSelectedLabel] = React.useState(null)
+
+  let itemMatchingValueProp
+  if (props.value) {
+    itemMatchingValueProp = findMatchingActionMenuItem(props.menu, props.value)
+    if (!itemMatchingValueProp)
+      throw new Error(
+        'cannot set value to non-existent item value',
+        props.value
+      )
+  }
+  const [selectedOption, setSelected] = React.useState({
+    value: props.value,
+    label: itemMatchingValueProp && itemMatchingValueProp.props.children
+  })
+
+  // TODO: after update test
+  // React.useEffect(() => {
+  //   const item = findMatchingActionMenuItem(props.menu, props.value)
+  //   setSelected({ value: props.value, label: item.children })
+  // }, [props.value])
 
   function handleToggleOpen(evt) {
     evt.preventDefault()
@@ -88,7 +108,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
     const target = evt.target
     const isItem = target.getAttribute('role') === 'menuitem'
     if (isItem) {
-      setSelectedLabel(target.innerText)
+      setSelected({ label: target.innerText })
       setOpen(false)
     }
     if (allProps.menu && typeof allProps.menu.props.onClick === 'function')
@@ -173,7 +193,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
                   {longestMenuItemState.label || allProps.placeholder}
                 </span>
                 <span {...styles.placeholder(allProps)}>
-                  {selectedLabel || allProps.placeholder}
+                  {selectedOption.label || allProps.placeholder}
                 </span>
               </button>
               <div {...styles.icon(allProps)}>
@@ -232,7 +252,8 @@ Dropdown.propTypes = {
   onFocus: PropTypes.func,
   placeholder: PropTypes.string,
   subLabel: PropTypes.node,
-  style: PropTypes.object
+  style: PropTypes.object,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 Dropdown.defaultProps = {
   appearance: vars.appearances.default,
