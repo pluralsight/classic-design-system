@@ -1,21 +1,17 @@
 import { action } from '@storybook/addon-actions'
-import addons from '@storybook/addons'
-import Link from '@pluralsight/ps-design-system-link/react.js'
-import React from 'react'
 import { storiesOf } from '@storybook/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
+import React from 'react'
+
+import Link from '@pluralsight/ps-design-system-link/react.js'
 import Banner from '../index.js'
 
-const colorStory = storiesOf('color', module).addDecorator(
-  themeDecorator(addons)
-)
+const colorStory = storiesOf('color', module)
 Object.keys(Banner.colors).forEach(color =>
   colorStory.add(color, _ => <Banner color={color}>{color}</Banner>)
 )
 
 storiesOf('onClick', module)
-  .addDecorator(themeDecorator(addons))
   .add('displays X', () => (
     <Banner onClick={action('click X')}>this is the text</Banner>
   ))
@@ -29,7 +25,6 @@ storiesOf('onClick', module)
   ))
 
 storiesOf('styling', module)
-  .addDecorator(themeDecorator(addons))
   .add('style prop ', () => (
     <Banner style={{ outline: '3px solid red' }} onClick={action('click X')}>
       this is the text
