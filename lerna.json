@@ -12,6 +12,7 @@
     "packages/prop-types",
     "packages/storybook-addon-center",
     "packages/storybook-addon-theme",
+    "packages/textarea",
     "packages/textinput",
     "packages/theme",
     "packages/tooltip",

@@ -1,14 +1,9 @@
 import { action } from '@storybook/addon-actions'
-import core from '@pluralsight/ps-design-system-core'
-import React from 'react'
 import { storiesOf } from '@storybook/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import TextInput from '../react'
+import React from 'react'
 
-const PaddingDecorator = storyFn => (
-  <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
-)
+import TextInput from '../index.js'
 
 storiesOf('labels', module)
   .add('none', _ => <TextInput />)
