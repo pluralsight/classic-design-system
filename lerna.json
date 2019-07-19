@@ -4,6 +4,7 @@
     "packages/build",
     "packages/button",
     "packages/core",
+    "packages/drawer",
     "packages/emptystate",
     "packages/icon",
     "packages/filter-react-props",
