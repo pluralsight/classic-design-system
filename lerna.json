@@ -11,6 +11,7 @@
     "packages/checkbox",
     "packages/circularprogress",
     "packages/core",
+    "packages/datawell",
     "packages/drawer",
     "packages/emptystate",
     "packages/icon",
