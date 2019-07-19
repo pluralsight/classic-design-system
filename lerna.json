@@ -3,6 +3,7 @@
     "packages/avatar",
     "packages/build",
     "packages/core",
+    "packages/emptystate",
     "packages/icon",
     "packages/storybook-addon-center",
     "packages/storybook-addon-theme",

@@ -30,7 +30,6 @@ ${exports}`
 module.exports = {
   dimensions: false,
   icon: true,
-  ref: false, // TODO: enabled when React.forwardRef is supported (16.3)
   replaceAttrValues: {
     '#fff': 'currentColor',
     '#FFFFFF': 'currentColor',
