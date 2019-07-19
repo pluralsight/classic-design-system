@@ -17,6 +17,7 @@
     "packages/storybook-addon-center",
     "packages/storybook-addon-theme",
     "packages/table",
+    "packages/tab",
     "packages/tag",
     "packages/text",
     "packages/textarea",
