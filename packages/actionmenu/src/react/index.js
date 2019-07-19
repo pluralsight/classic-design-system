@@ -132,6 +132,10 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
     else navigate(evt, direction)
   }
 
+  function handleSelect(evt, value, label) {
+    if (typeof props.onSelect === 'function') props.onSelect(evt, value, label)
+  }
+
   return (
     <Menu onKeyDown={handleKeyDown} ref={ref} role="menu" {...props}>
       {React.Children.map(props.children, (child, i) =>
@@ -144,6 +148,7 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
           _onDividerFocus: handleDividerFocus,
           _onItemFocus: focusItemAtIndex,
           _onMouseOver: focusItemAtIndexWithMouse,
+          _onSelect: handleSelect,
           _origin: props.origin
         })
       )}
@@ -192,9 +197,12 @@ const calcNestedMenuPosition = (menuWidth, origin) =>
 function usePrevious(value) {
   const ref = React.useRef()
 
-  React.useEffect(() => {
-    ref.current = value
-  }, [value])
+  React.useEffect(
+    () => {
+      ref.current = value
+    },
+    [value]
+  )
 
   return ref.current
 }
@@ -207,21 +215,29 @@ const Item = props => {
   const itemRef = React.useRef()
   const [isNestedRendered, setIsNestedRendered] = React.useState(false)
 
-  React.useEffect(() => {
-    if (isActive && props.shouldFocusOnMount) itemRef.current.focus()
-  }, [isActive, props.shouldFocusOnMount])
+  React.useEffect(
+    () => {
+      if (isActive && props.shouldFocusOnMount) itemRef.current.focus()
+    },
+    [isActive, props.shouldFocusOnMount]
+  )
 
-  React.useEffect(() => {
-    if (!prevIsActive && isActive && !isNestedRendered) {
-      itemRef.current.focus()
-    }
-  }, [isActive, isNestedRendered, prevIsActive])
+  React.useEffect(
+    () => {
+      if (!prevIsActive && isActive && !isNestedRendered) {
+        itemRef.current.focus()
+      }
+    },
+    [isActive, isNestedRendered, prevIsActive]
+  )
 
   function handleFocus(evt) {
     props._onItemFocus(props._i)
   }
 
   function handleKeyDown(evt) {
+    if (evt.key === 'Enter') props._onSelect(evt, props.value, props.children)
+
     if (
       (evt.key === 'ArrowRight' || evt.key === ' ' || evt.key === 'Enter') &&
       props.nested
@@ -245,6 +261,11 @@ const Item = props => {
     itemRef.current.focus()
   }
 
+  function handleSelect(evt) {
+    props._onSelect(evt, props.value, props.children)
+    if (typeof props.onClick === 'function') props.onClick(evt)
+  }
+
   const nestedMenu =
     isNestedRendered &&
     props.nested &&
@@ -265,17 +286,18 @@ const Item = props => {
         {...filterReactProps(rest, { tagName: TagName })}
         {...styles.item(props)}
         aria-haspopup={!!props.nested}
+        onClick={handleSelect}
         onFocus={handleFocus}
         onKeyDown={handleKeyDown}
         onMouseOver={handleMouseOver}
         ref={itemRef}
         role="menuitem"
         tabIndex="0"
-        {...(props.disabled && {
+        {...props.disabled && {
           href: undefined,
           onFocus: undefined,
           tabIndex: '-1'
-        })}
+        }}
       >
         {icon && <ItemIcon>{icon}</ItemIcon>}
 
@@ -299,10 +321,12 @@ Item.propTypes = {
   nested: elementOfType(ActionMenu),
   onClick: PropTypes.func,
   shouldFocusOnMount: PropTypes.bool,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   _i: PropTypes.number,
   _isKeyboarding: PropTypes.bool,
   _onItemFocus: PropTypes.func,
   _onMouseOver: PropTypes.func,
+  _onSelect: PropTypes.func,
   _origin: PropTypes.oneOf(Object.keys(vars.origins).map(k => vars.origins[k]))
 }
 
@@ -346,6 +370,7 @@ ActionMenu.propTypes = {
   ]),
   isKeyboarding: PropTypes.bool,
   onClose: PropTypes.func,
+  onSelect: PropTypes.func,
   origin: PropTypes.oneOf(Object.keys(vars.origins).map(k => vars.origins[k])),
   shouldFocusOnMount: PropTypes.bool
 }

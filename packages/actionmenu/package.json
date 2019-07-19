@@ -41,6 +41,7 @@
     "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/addons": "^4.0.0",
     "@storybook/react": "^4.0.0",
+    "@testing-library/react": "^8.0.5",
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
