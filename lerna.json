@@ -6,6 +6,7 @@
     "packages/breadcrumb",
     "packages/build",
     "packages/button",
+    "packages/card",
     "packages/carousel",
     "packages/core",
     "packages/drawer",
