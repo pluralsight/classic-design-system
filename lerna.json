@@ -2,6 +2,7 @@
   "packages": [
     "packages/avatar",
     "packages/build",
+    "packages/button",
     "packages/core",
     "packages/emptystate",
     "packages/icon",
