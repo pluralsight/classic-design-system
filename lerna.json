@@ -3,6 +3,7 @@
     "packages/avatar",
     "packages/build",
     "packages/button",
+    "packages/carousel",
     "packages/core",
     "packages/drawer",
     "packages/emptystate",

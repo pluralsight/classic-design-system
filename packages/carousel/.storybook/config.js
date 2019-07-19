@@ -1,4 +1,5 @@
-import addons from '@storybook/addons'
+import requireContext from 'require-context.macro'
+
 import { addDecorator, configure } from '@storybook/react'
 
 import * as glamor from 'glamor'
@@ -19,10 +20,12 @@ const StoryWrapper = props => (
 )
 
 addDecorator(storyFn => <StoryWrapper>{storyFn()}</StoryWrapper>)
-addDecorator(themeDecorator(addons))
+addDecorator(themeDecorator)
 
-function loadStory() {
-  require('../src/react/__stories__/index.story.js')
+const req = requireContext('../src', true, /\.story\.js$/)
+
+function loadStories() {
+  req.keys().forEach(filename => req(filename))
 }
 
-configure(loadStory, module)
+configure(loadStories, module)

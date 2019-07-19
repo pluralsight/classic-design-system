@@ -108,7 +108,6 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
               aria-label="caret left icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
@@ -136,7 +135,6 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
               aria-label="caret right icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
@@ -238,7 +236,6 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
               aria-label="caret left icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
@@ -261,7 +258,6 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
               aria-label="caret right icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
@@ -480,7 +476,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
               aria-label="caret left icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
@@ -503,7 +498,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
               aria-label="caret right icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
@@ -586,7 +580,6 @@ exports[`Storyshots Carousel/items one item 1`] = `
               aria-label="caret left icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
@@ -611,7 +604,6 @@ exports[`Storyshots Carousel/items one item 1`] = `
               aria-label="caret right icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
@@ -700,7 +692,6 @@ exports[`Storyshots Carousel/items two items 1`] = `
               aria-label="caret left icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
@@ -723,7 +714,6 @@ exports[`Storyshots Carousel/items two items 1`] = `
               aria-label="caret right icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
@@ -879,7 +869,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
               aria-label="caret left icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
@@ -902,7 +891,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
               aria-label="caret right icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
@@ -1058,7 +1046,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
               aria-label="caret left icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
@@ -1081,7 +1068,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
               aria-label="caret right icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
@@ -1364,7 +1350,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               aria-label="caret left icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
@@ -1387,7 +1372,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               aria-label="caret right icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
@@ -1670,7 +1654,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               aria-label="caret left icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
@@ -1693,7 +1676,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               aria-label="caret right icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
