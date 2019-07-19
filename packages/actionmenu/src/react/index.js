@@ -132,8 +132,8 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
     else navigate(evt, direction)
   }
 
-  function handleSelect(evt, value, label) {
-    if (typeof props.onSelect === 'function') props.onSelect(evt, value, label)
+  function handleChange(evt, value, label) {
+    if (typeof props.onChange === 'function') props.onChange(evt, value, label)
   }
 
   return (
@@ -148,7 +148,7 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
           _onDividerFocus: handleDividerFocus,
           _onItemFocus: focusItemAtIndex,
           _onMouseOver: focusItemAtIndexWithMouse,
-          _onSelect: handleSelect,
+          _onChange: handleChange,
           _origin: props.origin
         })
       )}
@@ -236,7 +236,7 @@ const Item = props => {
   }
 
   function handleKeyDown(evt) {
-    if (evt.key === 'Enter') props._onSelect(evt, props.value, props.children)
+    if (evt.key === 'Enter') props._onChange(evt, props.value, props.children)
 
     if (
       (evt.key === 'ArrowRight' || evt.key === ' ' || evt.key === 'Enter') &&
@@ -261,8 +261,8 @@ const Item = props => {
     itemRef.current.focus()
   }
 
-  function handleSelect(evt) {
-    props._onSelect(evt, props.value, props.children)
+  function handleChange(evt) {
+    props._onChange(evt, props.value, props.children)
     if (typeof props.onClick === 'function') props.onClick(evt)
   }
 
@@ -277,7 +277,7 @@ const Item = props => {
       ),
       isKeyboarding: props._isKeyboarding,
       onClose: handleNestedClose,
-      onSelect: props._onSelect,
+      onChange: props._onChange,
       origin: props._origin
     })
 
@@ -287,7 +287,7 @@ const Item = props => {
         {...filterReactProps(rest, { tagName: TagName })}
         {...styles.item(props)}
         aria-haspopup={!!props.nested}
-        onClick={handleSelect}
+        onClick={handleChange}
         onFocus={handleFocus}
         onKeyDown={handleKeyDown}
         onMouseOver={handleMouseOver}
@@ -327,7 +327,7 @@ Item.propTypes = {
   _isKeyboarding: PropTypes.bool,
   _onItemFocus: PropTypes.func,
   _onMouseOver: PropTypes.func,
-  _onSelect: PropTypes.func,
+  _onChange: PropTypes.func,
   _origin: PropTypes.oneOf(Object.keys(vars.origins).map(k => vars.origins[k]))
 }
 
@@ -371,7 +371,7 @@ ActionMenu.propTypes = {
   ]),
   isKeyboarding: PropTypes.bool,
   onClose: PropTypes.func,
-  onSelect: PropTypes.func,
+  onChange: PropTypes.func,
   origin: PropTypes.oneOf(Object.keys(vars.origins).map(k => vars.origins[k])),
   shouldFocusOnMount: PropTypes.bool
 }

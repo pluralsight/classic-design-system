@@ -17,15 +17,15 @@ describe('ActionMenu', () => {
     expect(el).toBe(refToForward.current)
   })
 
-  it('fires onSelect on option click', done => {
-    function handleSelect(evt, value, label) {
+  it('fires onChange on option click', done => {
+    function handleChange(evt, value, label) {
       expect(value).toEqual('two')
       expect(label).toEqual('Two item')
       done()
     }
 
     const { getByTestId } = render(
-      <ActionMenu data-testid="under-test" onSelect={handleSelect}>
+      <ActionMenu data-testid="under-test" onChange={handleChange}>
         <ActionMenu.Item value="one">One item</ActionMenu.Item>
         <ActionMenu.Item value="two" data-testid="testtwo">
           Two item
@@ -37,15 +37,15 @@ describe('ActionMenu', () => {
     fireEvent.click(opt)
   })
 
-  it('fires onSelect on option keyPress', done => {
-    function handleSelect(evt, value, label) {
+  it('fires onChange on option keyPress', done => {
+    function handleChange(evt, value, label) {
       expect(value).toEqual('two')
       expect(label).toEqual('Two item')
       done()
     }
 
     const { getByTestId } = render(
-      <ActionMenu data-testid="under-test" onSelect={handleSelect}>
+      <ActionMenu data-testid="under-test" onChange={handleChange}>
         <ActionMenu.Item value="one">One item</ActionMenu.Item>
         <ActionMenu.Item value="two" data-testid="testtwo">
           Two item

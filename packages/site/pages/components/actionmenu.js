@@ -70,8 +70,7 @@ function InAppExample() {
               <div>
                 <ActionMenu
                   origin={ActionMenu.origins.topLeft}
-                  onSelect={handleSelect}
-                  whoa="adsf"
+                  onChange={handleSelect}
                 >
                   {categories.map(cat => (
                     <ActionMenu.Item
@@ -143,7 +142,7 @@ function InAppExample() {
           <div>
             <ActionMenu
               origin={ActionMenu.origins.topLeft}
-              onSelect={handleSelect}
+              onChange={handleSelect}
               whoa="adsf"
             >
               {categories.map(cat => (
@@ -211,7 +210,7 @@ export default withServerProps(_ => (
               'triggered when a menu collapses'
             ]),
             PropTypes.row([
-              'onSelect',
+              'onChange',
               'function',
               null,
               null,
@@ -278,7 +277,7 @@ export default withServerProps(_ => (
               null,
               null,
               <span>
-                value sent to <code>Menu#onSelect</code>
+                value sent to <code>Menu#onChange</code>
               </span>
             ])
           ]
