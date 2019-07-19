@@ -11,7 +11,7 @@
     "build": "run-s build:svg build:js build:css",
     "build:css": "build-css",
     "build:js": "babel --root-mode upward src --out-dir dist",
-    "build:svg": "svgr --svg-props role=img --svg-props xmlns=http://www.w3.org/2000/svg --filename-case kebab --ext \"dist.js\" -d src/react/icons src/svg",
+    "build:svg": "svgr --filename-case kebab --ext \"dist.js\" -d src/react/icons src/svg",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "storybook": "start-storybook",
