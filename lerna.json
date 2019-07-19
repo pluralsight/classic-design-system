@@ -11,6 +11,7 @@
     "packages/normalize",
     "packages/prop-types",
     "packages/theme",
+    "packages/tooltip",
     "packages/util",
     "packages/viewtoggle"
   ],

@@ -1,26 +1,25 @@
-import addons from '@storybook/addons'
-import core from '@pluralsight/ps-design-system-core'
-import * as glamor from 'glamor'
-import React from 'react'
 import { storiesOf } from '@storybook/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Tooltip from '../react'
+import React from 'react'
+
+import core from '@pluralsight/ps-design-system-core'
+
+import Tooltip from '../index.js'
 
 const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingXLarge }}>{storyFn()}</div>
 )
 
-const appearanceStory = storiesOf('appearance', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
+const appearanceStory = storiesOf('appearance', module).addDecorator(
+  PaddingDecorator
+)
 Object.keys(Tooltip.appearances).forEach(app =>
   appearanceStory.add(app, _ => <Tooltip appearance={app}>Some text</Tooltip>)
 )
 
-const tailPositionStory = storiesOf('tailPosition', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
+const tailPositionStory = storiesOf('tailPosition', module).addDecorator(
+  PaddingDecorator
+)
 Object.keys(Tooltip.appearances).forEach(appearance =>
   Object.keys(Tooltip.tailPositions).forEach(tailPosition =>
     tailPositionStory.add(`${appearance} ${tailPosition}`, _ => (
@@ -31,9 +30,7 @@ Object.keys(Tooltip.appearances).forEach(appearance =>
   )
 )
 
-const closeStory = storiesOf('onClose', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
+const closeStory = storiesOf('onClose', module).addDecorator(PaddingDecorator)
 Object.keys(Tooltip.appearances).forEach(appearance =>
   closeStory.add(appearance, _ => (
     <Tooltip appearance={appearance} onClose={_ => {}}>
