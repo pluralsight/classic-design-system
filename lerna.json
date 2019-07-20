@@ -16,6 +16,7 @@
     "packages/dialog",
     "packages/drawer",
     "packages/emptystate",
+    "packages/errors",
     "packages/icon",
     "packages/filter-react-props",
     "packages/focusmanager",
