@@ -21,6 +21,7 @@
     "packages/normalize",
     "packages/position",
     "packages/prop-types",
+    "packages/radio",
     "packages/row",
     "packages/searchinput",
     "packages/starrating",
