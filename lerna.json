@@ -23,6 +23,7 @@
     "packages/focusmanager",
     "packages/halo",
     "packages/normalize",
+    "packages/layout",
     "packages/position",
     "packages/prop-types",
     "packages/radio",
