@@ -12,6 +12,7 @@
     "packages/circularprogress",
     "packages/core",
     "packages/datawell",
+    "packages/datepicker",
     "packages/drawer",
     "packages/emptystate",
     "packages/icon",
