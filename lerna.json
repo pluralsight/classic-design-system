@@ -22,6 +22,7 @@
     "packages/position",
     "packages/prop-types",
     "packages/row",
+    "packages/searchinput",
     "packages/starrating",
     "packages/storybook-addon-center",
     "packages/storybook-addon-theme",
