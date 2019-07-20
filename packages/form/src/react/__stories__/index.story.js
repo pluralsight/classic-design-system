@@ -1,10 +1,8 @@
 import React from 'react'
 
-import addons from '@storybook/addons'
 import { storiesOf } from '@storybook/react'
 
 import core from '@pluralsight/ps-design-system-core'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 // Form controls:
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
@@ -19,7 +17,7 @@ import Text from '@pluralsight/ps-design-system-text/react'
 import TextArea from '@pluralsight/ps-design-system-textarea/react'
 import TextInput from '@pluralsight/ps-design-system-textinput/react'
 
-import Form from '../react'
+import Form from '../index.js'
 
 const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge, width: '50%' }}>
@@ -33,7 +31,6 @@ const FormContainer = storyFn => (
 storiesOf('Sample Form', module)
   .addDecorator(FormContainer)
   .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
   .add('sample', _ => (
     <Form.VerticalLayout>
       <Text.Heading>

@@ -17,6 +17,7 @@
     "packages/drawer",
     "packages/emptystate",
     "packages/errors",
+    "packages/form",
     "packages/icon",
     "packages/filter-react-props",
     "packages/focusmanager",
