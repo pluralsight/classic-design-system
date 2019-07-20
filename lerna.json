@@ -13,6 +13,7 @@
     "packages/core",
     "packages/datawell",
     "packages/datepicker",
+    "packages/dialog",
     "packages/drawer",
     "packages/emptystate",
     "packages/icon",
