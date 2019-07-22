@@ -16,6 +16,7 @@
     "packages/datepicker",
     "packages/dialog",
     "packages/drawer",
+    "packages/dropdown",
     "packages/emptystate",
     "packages/errors",
     "packages/form",
