@@ -356,9 +356,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   <button
                     data-css-8bndf1=""
                     disabled={false}
-                    onBlur={[Function]}
                     onClick={[Function]}
-                    onFocus={[Function]}
                   >
                     <span
                       aria-hidden={true}
