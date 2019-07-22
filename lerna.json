@@ -29,6 +29,7 @@
     "packages/linearprogress",
     "packages/link",
     "packages/note",
+    "packages/packages-api",
     "packages/position",
     "packages/prop-types",
     "packages/radio",

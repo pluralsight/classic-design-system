@@ -6,6 +6,8 @@ module.exports = api => {
   if (!isTest) ignore = ignore.concat(['**/__specs__/', '**/__stories__/'])
 
   return {
+    babelrcRoots: ['.', './packages/*'],
+
     ignore,
 
     presets: [
