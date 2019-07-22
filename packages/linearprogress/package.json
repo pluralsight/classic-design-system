@@ -17,7 +17,6 @@
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
-    "test:updateSnapsho": "npm run test -- --updateSnapshot",
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {

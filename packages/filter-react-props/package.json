@@ -13,7 +13,6 @@
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "test": "jest",
-    "test:updateSnapshot": "npm run test -- --updateSnapshot",
     "test:watch": "npm run test -- --watchAll"
   },
   "keywords": [],
