@@ -1,3 +1,5 @@
+const { packages } = require('./lerna.json')
+
 module.exports = api => {
   const isTest = api.env('test')
 
@@ -6,7 +8,7 @@ module.exports = api => {
   if (!isTest) ignore = ignore.concat(['**/__specs__/', '**/__stories__/'])
 
   return {
-    babelrcRoots: ['.', './packages/*'],
+    babelrcRoots: ['.', ...packages],
 
     ignore,
 
