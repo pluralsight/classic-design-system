@@ -1,5 +1,5 @@
 import React from 'react'
-import { fireEvent, render, waitForElement } from 'react-testing-library'
+import { fireEvent, render, waitForElement } from '@testing-library/react'
 
 import Note from '../index.js'
 
