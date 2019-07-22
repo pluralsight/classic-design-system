@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-checkbox",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Design system components for checkbox",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -32,7 +32,8 @@
     "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.9.2",
+    "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-storybook-addon-center": "*",
     "@pluralsight/ps-design-system-storybook-addon-theme": "*"
   }
 }

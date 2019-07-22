@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.9.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.9.1...@pluralsight/ps-design-system-site@12.9.2) (2019-07-18)
+
+
+### Bug Fixes
+
+* **site:** match code to working example of dropdown ([d51597d](https://github.com/pluralsight/design-system/commit/d51597d))
+
+
+
+
+
+## [12.9.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.9.0...@pluralsight/ps-design-system-site@12.9.1) (2019-07-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-site
+
+
+
+
+
 # [12.9.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.8.0...@pluralsight/ps-design-system-site@12.9.0) (2019-07-15)
 
 

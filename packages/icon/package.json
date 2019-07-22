@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-icon",
-  "version": "12.0.3",
+  "version": "12.0.4",
   "description": "Design System component for icon ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -14,7 +14,7 @@
     "build:svg": "svgr --filename-case kebab --ext \"dist.js\" -d src/react/icons src/svg",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
-    "storybook": "start-storybook",
+    "storybook": "start-storybook -p 6006",
     "test": "jest",
     "test:updateSnapshot": "npm run test -- --updateSnapshot",
     "test:watch": "npm run test -- --watchAll"

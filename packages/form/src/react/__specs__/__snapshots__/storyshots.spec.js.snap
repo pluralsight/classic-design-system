@@ -1,5 +1,163 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+        "width": "50%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid blue",
+        }
+      }
+    >
+      <div
+        data-css-15rjys7=""
+      >
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            form stuff
+          </div>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            data-css-1cqgl9p=""
+          >
+            <div
+              data-css-7d5932=""
+            >
+              <button
+                data-css-126c1n5=""
+                disabled={false}
+                style={Object {}}
+              >
+                <span
+                  data-css-15b13by=""
+                >
+                  Save
+                </span>
+              </button>
+            </div>
+            <div
+              data-css-7d5932=""
+            >
+              <button
+                data-css-1oaxr3i=""
+                disabled={false}
+                style={Object {}}
+              >
+                <span
+                  data-css-15b13by=""
+                >
+                  Cancel
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+        "width": "50%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid blue",
+        }
+      }
+    >
+      <div
+        data-css-15rjys7=""
+      >
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            form stuff
+          </div>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            data-css-5osg3l=""
+          >
+            <div
+              data-css-7d5932=""
+            >
+              <button
+                data-css-126c1n5=""
+                disabled={false}
+                style={Object {}}
+              >
+                <span
+                  data-css-15b13by=""
+                >
+                  Save
+                </span>
+              </button>
+            </div>
+            <div
+              data-css-7d5932=""
+            >
+              <button
+                data-css-1oaxr3i=""
+                disabled={false}
+                style={Object {}}
+              >
+                <span
+                  data-css-15b13by=""
+                >
+                  Cancel
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Sample Form sample 1`] = `
 <div
   data-css-claeju=""
@@ -661,7 +819,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-1srt63x=""
+                data-css-126c1n5=""
                 disabled={false}
                 style={Object {}}
               >
@@ -676,7 +834,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-mtq3v8=""
+                data-css-1oaxr3i=""
                 disabled={false}
                 style={Object {}}
               >

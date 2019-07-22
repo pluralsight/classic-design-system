@@ -1177,7 +1177,6 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
                 aria-label="caret down icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -1319,7 +1318,6 @@ exports[`Storyshots drawer mulitple 1`] = `
                 aria-label="caret down icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -1381,7 +1379,6 @@ exports[`Storyshots drawer mulitple 1`] = `
                 aria-label="caret down icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -1465,7 +1462,6 @@ exports[`Storyshots drawer nested table 1`] = `
                 aria-label="caret down icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -1617,7 +1613,6 @@ exports[`Storyshots drawer single 1`] = `
                 aria-label="caret down icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -1702,7 +1697,6 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
                 aria-label="caret down icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -1779,7 +1773,6 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
                 aria-label="caret down icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -1856,7 +1849,6 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
                 aria-label="caret down icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"

@@ -132,6 +132,10 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
     else navigate(evt, direction)
   }
 
+  function handleChange(evt, value, label) {
+    if (typeof props.onChange === 'function') props.onChange(evt, value, label)
+  }
+
   return (
     <Menu onKeyDown={handleKeyDown} ref={ref} role="menu" {...props}>
       {React.Children.map(props.children, (child, i) =>
@@ -144,6 +148,7 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
           _onDividerFocus: handleDividerFocus,
           _onItemFocus: focusItemAtIndex,
           _onMouseOver: focusItemAtIndexWithMouse,
+          _onChange: handleChange,
           _origin: props.origin
         })
       )}
@@ -222,6 +227,8 @@ const Item = props => {
   }
 
   function handleKeyDown(evt) {
+    if (evt.key === 'Enter') props._onChange(evt, props.value, props.children)
+
     if (
       (evt.key === 'ArrowRight' || evt.key === ' ' || evt.key === 'Enter') &&
       props.nested
@@ -245,6 +252,11 @@ const Item = props => {
     itemRef.current.focus()
   }
 
+  function handleChange(evt) {
+    props._onChange(evt, props.value, props.children)
+    if (typeof props.onClick === 'function') props.onClick(evt)
+  }
+
   const nestedMenu =
     isNestedRendered &&
     props.nested &&
@@ -256,6 +268,7 @@ const Item = props => {
       ),
       isKeyboarding: props._isKeyboarding,
       onClose: handleNestedClose,
+      onChange: props._onChange,
       origin: props._origin
     })
 
@@ -265,6 +278,7 @@ const Item = props => {
         {...filterReactProps(rest, { tagName: TagName })}
         {...styles.item(props)}
         aria-haspopup={!!props.nested}
+        onClick={handleChange}
         onFocus={handleFocus}
         onKeyDown={handleKeyDown}
         onMouseOver={handleMouseOver}
@@ -299,10 +313,12 @@ Item.propTypes = {
   nested: elementOfType(ActionMenu),
   onClick: PropTypes.func,
   shouldFocusOnMount: PropTypes.bool,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   _i: PropTypes.number,
   _isKeyboarding: PropTypes.bool,
   _onItemFocus: PropTypes.func,
   _onMouseOver: PropTypes.func,
+  _onChange: PropTypes.func,
   _origin: PropTypes.oneOf(Object.keys(vars.origins).map(k => vars.origins[k]))
 }
 
@@ -346,6 +362,7 @@ ActionMenu.propTypes = {
   ]),
   isKeyboarding: PropTypes.bool,
   onClose: PropTypes.func,
+  onChange: PropTypes.func,
   origin: PropTypes.oneOf(Object.keys(vars.origins).map(k => vars.origins[k])),
   shouldFocusOnMount: PropTypes.bool
 }
