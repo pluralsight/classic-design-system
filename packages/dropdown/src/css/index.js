@@ -24,9 +24,7 @@ export default {
     lineHeight: core.type.lineHeightStandard,
     fontWeight: core.type.fontWeightMedium,
     color: core.colors.gray03,
-    padding: `0 calc(${core.layout.spacingXSmall} + ${
-      iconVars.widths.medium
-    } + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`,
+    padding: `0 calc(${core.layout.spacingXSmall} + ${iconVars.widths.medium} + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`,
     border: 'none',
     textAlign: 'left',
     cursor: 'pointer',
@@ -111,9 +109,7 @@ export default {
   // __error
   '.psds-dropdown__error': {
     position: 'absolute',
-    right: `calc(-1 * (${iconVars.widths.medium} + ${
-      core.layout.spacingXSmall
-    }))`,
+    right: `calc(-1 * (${iconVars.widths.medium} + ${core.layout.spacingXSmall}))`,
     display: 'flex',
     alignItems: 'center',
     color: core.colors.red,

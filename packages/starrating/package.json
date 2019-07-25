@@ -10,12 +10,11 @@
   "scripts": {
     "build": "run-s build:js build:css",
     "build:css": "build-css --useGlamor",
-    "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build:js": "babel --root-mode upward src --out-dir dist",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
-    "test": "../../node_modules/.bin/jest",
-    "test:updateSnapshot": "npm run test -- --updateSnapshot",
+    "test": "jest",
     "test:watch": "npm run test -- --watchAll"
   },
   "keywords": [],
@@ -23,28 +22,20 @@
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.4.3",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.5",
-    "@pluralsight/ps-design-system-icon": "^12.0.4",
-    "@pluralsight/ps-design-system-theme": "^3.0.1",
-    "prop-types": "^15.7.0"
+    "@pluralsight/ps-design-system-core": "*",
+    "@pluralsight/ps-design-system-filter-react-props": "*",
+    "@pluralsight/ps-design-system-icon": "*",
+    "@pluralsight/ps-design-system-theme": "*",
+    "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^3.0.24",
+    "@pluralsight/ps-design-system-normalize": "*",
+    "glamor": "^2.20.0",
     "react": ">=16.3.0 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.10.0",
-    "@pluralsight/ps-design-system-storybook-addon-center": "^2.0.4",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^2.0.5",
-    "@storybook/addon-actions": "^4.0.0",
-    "@storybook/addon-storyshots": "^4.0.0",
-    "@storybook/addons": "^4.0.0",
-    "@storybook/react": "^4.0.0",
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "npm-run-all": "^4.1.2"
+    "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-storybook-addon-center": "*",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "*"
   }
 }

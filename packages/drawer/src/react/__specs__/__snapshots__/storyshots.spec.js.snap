@@ -10,7 +10,7 @@ exports[`Storyshots drawer controlled 1`] = `
 >
   <div>
     <button
-      data-css-1srt63x=""
+      data-css-126c1n5=""
       disabled={false}
       onClick={[Function]}
       style={Object {}}
@@ -63,7 +63,6 @@ exports[`Storyshots drawer controlled 1`] = `
                   aria-label="caret down icon"
                   role="img"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -150,7 +149,6 @@ exports[`Storyshots drawer default 1`] = `
                 aria-label="caret down icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -237,7 +235,6 @@ exports[`Storyshots drawer prevent toggle 1`] = `
                   aria-label="caret down icon"
                   role="img"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -384,10 +381,9 @@ exports[`Storyshots drawer row component with actions 1`] = `
                   aria-label="more icon"
                   role="img"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                    d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
                   />
                 </svg>
               </div>
@@ -413,7 +409,6 @@ exports[`Storyshots drawer row component with actions 1`] = `
                 aria-label="caret down icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -500,7 +495,6 @@ exports[`Storyshots drawer stack of drawers 1`] = `
                   aria-label="caret down icon"
                   role="img"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -575,7 +569,6 @@ exports[`Storyshots drawer stack of drawers 1`] = `
                   aria-label="caret down icon"
                   role="img"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -650,7 +643,6 @@ exports[`Storyshots drawer stack of drawers 1`] = `
                   aria-label="caret down icon"
                   role="img"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -739,7 +731,6 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
                     aria-label="caret down icon"
                     role="img"
                     viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -816,7 +807,6 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
                     aria-label="caret down icon"
                     role="img"
                     viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -893,7 +883,6 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
                     aria-label="caret down icon"
                     role="img"
                     viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -981,7 +970,6 @@ exports[`Storyshots drawer using custom aria label 1`] = `
                 aria-label="caret down icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -1069,7 +1057,6 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
                   aria-label="caret down icon"
                   role="img"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -1156,7 +1143,6 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
                 aria-label="caret down icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
@@ -1262,10 +1248,9 @@ exports[`Storyshots drawer with row component 1`] = `
                   aria-label="more icon"
                   role="img"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                    d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
                   />
                 </svg>
               </div>
@@ -1291,7 +1276,6 @@ exports[`Storyshots drawer with row component 1`] = `
                 aria-label="caret down icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"

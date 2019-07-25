@@ -1,7 +1,7 @@
 import React from 'react'
-import { render, waitForElement } from 'react-testing-library'
+import { render, waitForElement } from '@testing-library/react'
 
-import ConditionalWrap from '../conditional-wrap'
+import ConditionalWrap from '../conditional-wrap.js'
 
 describe('ConditionalWrap', () => {
   it('wraps children if condition is met', async () => {

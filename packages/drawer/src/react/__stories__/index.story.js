@@ -3,16 +3,13 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import addons from '@storybook/addons'
-
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import Button from '@pluralsight/ps-design-system-button/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import Row from '@pluralsight/ps-design-system-row/react'
 import Text from '@pluralsight/ps-design-system-text/react'
 
-import Drawer from '..'
+import Drawer from '../index.js'
 
 const DrawerBase = props => (
   <div style={{ padding: '10px 0' }}>
@@ -126,7 +123,6 @@ class OnToggleDrawerStory extends React.Component {
 
 storiesOf('drawer', module)
   .addDecorator(story => <div style={{ padding: 48 }}>{story()}</div>)
-  .addDecorator(themeDecorator(addons))
   .add('default', () => (
     <Drawer base={<DrawerBase />}>
       <DrawerContent />

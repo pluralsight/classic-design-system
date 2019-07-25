@@ -1,39 +1,39 @@
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import css from '../css/index.js'
-import icons from '../js/icon-transformer.js'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+
+import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
+import icons from './icon-loader'
+
 const style = {
-  icon: ({ css: propCSS = {}, color, size }) =>
-    glamor.css({
-      ...css['.psds-icon'],
-      ...css[`.psds-icon--size-${size}`],
+  icon: ({ color, size }) =>
+    css({
+      ...stylesheet['.psds-icon'],
+      ...stylesheet[`.psds-icon--size-${size}`],
 
       '> svg': color
-        ? css[`.psds-icon--color-${color} > svg`]
-        : css['.psds-icon > svg']
+        ? stylesheet[`.psds-icon--color-${color} > svg`]
+        : stylesheet['.psds-icon > svg']
     })
 }
 
 const IconNotFound = () => null
 
-class Icon extends React.PureComponent {
-  render() {
-    const { id, 'aria-label': ariaLabel, ...props } = this.props
-    const Comp = icons[id] ? icons[id](React, filterReactProps) : IconNotFound
+const Icon = ({ id, 'aria-label': ariaLabel, ...props }) => {
+  const isCustom = !!props.children
+  let Comp = icons[id] || IconNotFound
 
-    return (
-      <div {...style.icon(props)} {...filterReactProps(props)}>
-        {this.props.children || (
-          <Comp {...ariaLabel && { 'aria-label': ariaLabel }} />
-        )}
-      </div>
-    )
-  }
+  if (isCustom) Comp = () => props.children
+
+  return (
+    <div {...style.icon(props)} {...filterReactProps(props)}>
+      <Comp {...(ariaLabel && { 'aria-label': ariaLabel })} />
+    </div>
+  )
 }
 
 Icon.propTypes = {

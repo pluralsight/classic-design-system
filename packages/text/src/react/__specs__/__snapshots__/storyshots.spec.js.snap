@@ -311,11 +311,7 @@ exports[`Storyshots List type: bulleted 1`] = `
     }
   >
     <ul
-      className={
-        Object {
-          "data-css-12zx3gr": "",
-        }
-      }
+      data-css-12zx3gr=""
     >
       <li>
         one
@@ -349,11 +345,7 @@ exports[`Storyshots List type: default 1`] = `
     }
   >
     <ul
-      className={
-        Object {
-          "data-css-1o7kfj5": "",
-        }
-      }
+      data-css-1o7kfj5=""
     >
       <li>
         one
@@ -387,11 +379,7 @@ exports[`Storyshots List type: numbered 1`] = `
     }
   >
     <ol
-      className={
-        Object {
-          "data-css-1lkx3qm": "",
-        }
-      }
+      data-css-1lkx3qm=""
     >
       <li>
         one

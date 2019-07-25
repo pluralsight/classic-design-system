@@ -1,8 +1,6 @@
-import addons from '@storybook/addons'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import Tab from '../index.js'
 
@@ -20,21 +18,18 @@ function NavigableExample({ count = 5, resizeEvery }) {
       label: `Menu ${i}`,
       content: `Menu stuff ${i}`
     }))
-  React.useEffect(
-    () => {
-      let timer
-      if (resizeEvery) {
-        timer = setInterval(() => {
-          setWidth(randomIntBetween(25, 100))
-        }, resizeEvery)
-      }
-      return () => {
-        clearInterval(timer)
-        timer = null
-      }
-    },
-    [resizeEvery]
-  )
+  React.useEffect(() => {
+    let timer
+    if (resizeEvery) {
+      timer = setInterval(() => {
+        setWidth(randomIntBetween(25, 100))
+      }, resizeEvery)
+    }
+    return () => {
+      clearInterval(timer)
+      timer = null
+    }
+  }, [resizeEvery])
 
   function handleTabClick(i) {
     setActiveIndex(i)
@@ -65,7 +60,6 @@ NavigableExample.propTypes = {
 }
 
 storiesOf('default', module)
-  .addDecorator(themeDecorator(addons))
   .add('default', _ => <NavigableExample />)
   .add('no items', _ => <Tab.List />)
   .add('as links', _ => (
@@ -122,7 +116,6 @@ storiesOf('default', module)
   ))
 
 storiesOf('scrolling', module)
-  .addDecorator(themeDecorator(addons))
   .add('10 count', _ => <NavigableExample count={10} />)
   .add('20 count', _ => <NavigableExample count={20} />)
   .add('30 count', _ => <NavigableExample count={30} />)
@@ -140,7 +133,6 @@ storiesOf('scrolling', module)
   ))
 
 storiesOf('style overrides', module)
-  .addDecorator(themeDecorator(addons))
   .add('list no borderBottom (style)', _ => (
     <Tab.List style={{ borderBottom: 'none' }}>
       <Tab.ListItem id="wow">Wow</Tab.ListItem>

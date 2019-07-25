@@ -197,12 +197,9 @@ const calcNestedMenuPosition = (menuWidth, origin) =>
 function usePrevious(value) {
   const ref = React.useRef()
 
-  React.useEffect(
-    () => {
-      ref.current = value
-    },
-    [value]
-  )
+  React.useEffect(() => {
+    ref.current = value
+  }, [value])
 
   return ref.current
 }
@@ -215,21 +212,15 @@ const Item = props => {
   const itemRef = React.useRef()
   const [isNestedRendered, setIsNestedRendered] = React.useState(false)
 
-  React.useEffect(
-    () => {
-      if (isActive && props.shouldFocusOnMount) itemRef.current.focus()
-    },
-    [isActive, props.shouldFocusOnMount]
-  )
+  React.useEffect(() => {
+    if (isActive && props.shouldFocusOnMount) itemRef.current.focus()
+  }, [isActive, props.shouldFocusOnMount])
 
-  React.useEffect(
-    () => {
-      if (!prevIsActive && isActive && !isNestedRendered) {
-        itemRef.current.focus()
-      }
-    },
-    [isActive, isNestedRendered, prevIsActive]
-  )
+  React.useEffect(() => {
+    if (!prevIsActive && isActive && !isNestedRendered) {
+      itemRef.current.focus()
+    }
+  }, [isActive, isNestedRendered, prevIsActive])
 
   function handleFocus(evt) {
     props._onItemFocus(props._i)
@@ -294,11 +285,11 @@ const Item = props => {
         ref={itemRef}
         role="menuitem"
         tabIndex="0"
-        {...props.disabled && {
+        {...(props.disabled && {
           href: undefined,
           onFocus: undefined,
           tabIndex: '-1'
-        }}
+        })}
       >
         {icon && <ItemIcon>{icon}</ItemIcon>}
 

@@ -88,10 +88,9 @@ exports[`Storyshots Button / as link with icon 1`] = `
         aria-label="pencil icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M5.2762 15.862L5 19l3.1392-.275 8.0858-8.0858-2.863-2.863-8.0858 8.0858zm12.363-6.637l.7668-.7667c.384-.3842.5922-.887.5922-1.4318 0-.5455-.208-1.048-.5932-1.4328-.3838-.3838-.885-.5912-1.4308-.5912-.5446 0-1.047.208-1.4318.5932l-.7662.7663 2.863 2.863zm-.665-6.2225c1.076 0 2.086.418 2.845 1.177.761.76 1.179 1.772 1.179 2.847 0 1.074-.418 2.086-1.178 2.846l-10.409 10.409c-.128.128-.289.22-.464.263l-4.705.427c-.34.085-.702-.015-.949-.264-.248-.247-.348-.608-.264-.949l.427-4.704c.044-.176.135-.336.263-.464l10.409-10.409c.76-.761 1.772-1.179 2.846-1.179z"
+          d="M5.276 15.862L5 19l3.14-.275 8.085-8.086-2.863-2.863-8.086 8.086zM17.64 9.225l.767-.767a2 2 0 00.592-1.431c0-.546-.208-1.048-.593-1.433a1.996 1.996 0 00-1.43-.591c-.545 0-1.048.208-1.433.593l-.766.766 2.863 2.863zm-.665-6.222c1.076 0 2.086.418 2.845 1.177A3.997 3.997 0 0121 7.027a4 4 0 01-1.179 2.846L9.411 20.282a.995.995 0 01-.464.263l-4.705.427a1.002 1.002 0 01-1.213-1.213l.427-4.704a.998.998 0 01.263-.464L14.13 4.18a3.997 3.997 0 012.845-1.179z"
         />
       </svg>
     </div>
@@ -225,10 +224,9 @@ exports[`Storyshots Button / disabled with icon 1`] = `
         aria-label="pencil icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M5.2762 15.862L5 19l3.1392-.275 8.0858-8.0858-2.863-2.863-8.0858 8.0858zm12.363-6.637l.7668-.7667c.384-.3842.5922-.887.5922-1.4318 0-.5455-.208-1.048-.5932-1.4328-.3838-.3838-.885-.5912-1.4308-.5912-.5446 0-1.047.208-1.4318.5932l-.7662.7663 2.863 2.863zm-.665-6.2225c1.076 0 2.086.418 2.845 1.177.761.76 1.179 1.772 1.179 2.847 0 1.074-.418 2.086-1.178 2.846l-10.409 10.409c-.128.128-.289.22-.464.263l-4.705.427c-.34.085-.702-.015-.949-.264-.248-.247-.348-.608-.264-.949l.427-4.704c.044-.176.135-.336.263-.464l10.409-10.409c.76-.761 1.772-1.179 2.846-1.179z"
+          d="M5.276 15.862L5 19l3.14-.275 8.085-8.086-2.863-2.863-8.086 8.086zM17.64 9.225l.767-.767a2 2 0 00.592-1.431c0-.546-.208-1.048-.593-1.433a1.996 1.996 0 00-1.43-.591c-.545 0-1.048.208-1.433.593l-.766.766 2.863 2.863zm-.665-6.222c1.076 0 2.086.418 2.845 1.177A3.997 3.997 0 0121 7.027a4 4 0 01-1.179 2.846L9.411 20.282a.995.995 0 01-.464.263l-4.705.427a1.002 1.002 0 01-1.213-1.213l.427-4.704a.998.998 0 01.263-.464L14.13 4.18a3.997 3.997 0 012.845-1.179z"
         />
       </svg>
     </div>
@@ -257,7 +255,6 @@ exports[`Storyshots Button / icon flat 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -289,7 +286,6 @@ exports[`Storyshots Button / icon large 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -321,7 +317,6 @@ exports[`Storyshots Button / icon left 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -353,7 +348,6 @@ exports[`Storyshots Button / icon lone flat large 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -383,7 +377,6 @@ exports[`Storyshots Button / icon lone flat medium 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -413,7 +406,6 @@ exports[`Storyshots Button / icon lone flat small 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -443,7 +435,6 @@ exports[`Storyshots Button / icon lone flat xSmall 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -473,7 +464,6 @@ exports[`Storyshots Button / icon lone primary large 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -503,7 +493,6 @@ exports[`Storyshots Button / icon lone primary medium 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -533,7 +522,6 @@ exports[`Storyshots Button / icon lone primary small 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -563,7 +551,6 @@ exports[`Storyshots Button / icon lone primary xSmall 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -593,7 +580,6 @@ exports[`Storyshots Button / icon lone secondary large 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -623,7 +609,6 @@ exports[`Storyshots Button / icon lone secondary medium 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -653,7 +638,6 @@ exports[`Storyshots Button / icon lone secondary small 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -683,7 +667,6 @@ exports[`Storyshots Button / icon lone secondary xSmall 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -713,7 +696,6 @@ exports[`Storyshots Button / icon lone stroke large 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -743,7 +725,6 @@ exports[`Storyshots Button / icon lone stroke medium 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -773,7 +754,6 @@ exports[`Storyshots Button / icon lone stroke small 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -803,7 +783,6 @@ exports[`Storyshots Button / icon lone stroke xSmall 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -833,7 +812,6 @@ exports[`Storyshots Button / icon medium 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -865,7 +843,6 @@ exports[`Storyshots Button / icon primary 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -897,7 +874,6 @@ exports[`Storyshots Button / icon right 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -929,7 +905,6 @@ exports[`Storyshots Button / icon secondary 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -961,7 +936,6 @@ exports[`Storyshots Button / icon small 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -993,7 +967,6 @@ exports[`Storyshots Button / icon stroke 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -1026,7 +999,6 @@ exports[`Storyshots Button / icon vertically aligned rows 1`] = `
           aria-label="check icon"
           role="img"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <path
             d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -1070,7 +1042,6 @@ exports[`Storyshots Button / icon xSmall 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -1573,7 +1544,6 @@ exports[`Storyshots Button / override styles with className 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -1609,7 +1579,6 @@ exports[`Storyshots Button / override styles with style 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"
@@ -1841,7 +1810,6 @@ exports[`Storyshots Button / with onClick clicks once 1`] = `
         aria-label="check icon"
         role="img"
         viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9.59 14.58l-3.17-3.17L5 12.82l4.59 4.59 10-10L18.18 6"

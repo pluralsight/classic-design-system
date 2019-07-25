@@ -1,10 +1,14 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-
-import * as vars from '../../vars/index.js'
+import { render } from '@testing-library/react'
 
 import {{componentName}} from '../index.js'
 
 describe('{{componentName}}', () => {
-  it('renders', () => expect(() => shallow(<{{componentName}} />)).not.toThrow())
+  it('renders', () => {
+    const { getByTestId } = render(
+      <{{componentName}} data-testid="mock-component" />
+    )
+
+    expect(getByTestId('mock-component')).toBeInTheDocument()
+  })
 })

@@ -1,9 +1,7 @@
 import React from 'react'
 
-import addons from '@storybook/addons'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
@@ -15,7 +13,6 @@ import {
 import ActionMenu from '../index.js'
 
 storiesOf('menu items', module)
-  .addDecorator(themeDecorator(addons))
   .add('one', _ => (
     <ActionMenu>
       <ActionMenu.Item>One item</ActionMenu.Item>
@@ -63,7 +60,6 @@ storiesOf('menu items', module)
   ))
 
 storiesOf('dividers', module)
-  .addDecorator(themeDecorator(addons))
   .add('edge', _ => (
     <ActionMenu>
       <ActionMenu.Item>One item</ActionMenu.Item>
@@ -79,15 +75,13 @@ storiesOf('dividers', module)
     </ActionMenu>
   ))
 
-storiesOf('shouldFocusOnMount', module)
-  .addDecorator(themeDecorator(addons))
-  .add('false', _ => (
-    <ActionMenu shouldFocusOnMount={false}>
-      <ActionMenu.Item>One item</ActionMenu.Item>
-      <ActionMenu.Item>Two item</ActionMenu.Item>
-      <ActionMenu.Item>Three item</ActionMenu.Item>
-    </ActionMenu>
-  ))
+storiesOf('shouldFocusOnMount', module).add('false', _ => (
+  <ActionMenu shouldFocusOnMount={false}>
+    <ActionMenu.Item>One item</ActionMenu.Item>
+    <ActionMenu.Item>Two item</ActionMenu.Item>
+    <ActionMenu.Item>Three item</ActionMenu.Item>
+  </ActionMenu>
+))
 
 const calcContainerStyle = origin => ({
   position: 'absolute',
@@ -111,9 +105,7 @@ const calcContainerStyle = origin => ({
   }[origin]
 })
 
-const nestedStory = storiesOf('nested', module).addDecorator(
-  themeDecorator(addons)
-)
+const nestedStory = storiesOf('nested', module)
 Object.keys(ActionMenu.origins).forEach(origin =>
   nestedStory.add(`origin ${origin}`, _ => (
     <div style={calcContainerStyle(origin)}>
@@ -157,7 +149,6 @@ Object.keys(ActionMenu.origins).forEach(origin =>
 )
 
 storiesOf('onClick', module)
-  .addDecorator(themeDecorator(addons))
   .add('flat', _ => (
     <ActionMenu>
       <ActionMenu.Item onClick={action('one')}>One item</ActionMenu.Item>
@@ -227,34 +218,29 @@ storiesOf('onClick', module)
     </ActionMenu>
   ))
 
-storiesOf('customized styles', module)
-  .addDecorator(themeDecorator(addons))
-  .add('item style', _ => (
-    <ActionMenu>
-      <ActionMenu.Item style={{ outline: '1px solid red' }}>
-        One item
-      </ActionMenu.Item>
-      <ActionMenu.Item style={{ outline: '1px solid blue' }}>
-        Two item
-      </ActionMenu.Item>
-      <ActionMenu.Item style={{ outline: '1px solid green' }}>
-        Three item
-      </ActionMenu.Item>
-    </ActionMenu>
-  ))
+storiesOf('customized styles', module).add('item style', _ => (
+  <ActionMenu>
+    <ActionMenu.Item style={{ outline: '1px solid red' }}>
+      One item
+    </ActionMenu.Item>
+    <ActionMenu.Item style={{ outline: '1px solid blue' }}>
+      Two item
+    </ActionMenu.Item>
+    <ActionMenu.Item style={{ outline: '1px solid green' }}>
+      Three item
+    </ActionMenu.Item>
+  </ActionMenu>
+))
 
-storiesOf('link', module)
-  .addDecorator(themeDecorator(addons))
-  .add('a w/ href', _ => (
-    <ActionMenu>
-      <ActionMenu.Item href="https://duckduckgo.com">
-        Links to web
-      </ActionMenu.Item>
-    </ActionMenu>
-  ))
+storiesOf('link', module).add('a w/ href', _ => (
+  <ActionMenu>
+    <ActionMenu.Item href="https://duckduckgo.com">
+      Links to web
+    </ActionMenu.Item>
+  </ActionMenu>
+))
 
 storiesOf('disabled', module)
-  .addDecorator(themeDecorator(addons))
   .add('single, disabled', _ => (
     <ActionMenu>
       <ActionMenu.Item disabled>Single, disabled</ActionMenu.Item>
@@ -314,7 +300,6 @@ storiesOf('disabled', module)
   ))
 
 storiesOf('with Position', module)
-  .addDecorator(themeDecorator(addons))
   .add('BelowLeft', () => (
     <div style={{ margin: core.layout.spacingMedium }}>
       <BelowLeft

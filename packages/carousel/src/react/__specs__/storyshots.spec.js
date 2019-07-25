@@ -16,6 +16,7 @@ jest.mock('../../js/utils.js', () => ({
 const createNodeMock = el => document.createElement('div')
 
 initStoryshots({
-  configPath: path.resolve(__dirname, '..', '..', '..', '.storybook'),
+  configPath: path.resolve(__dirname, '../../../.storybook'),
+  framework: 'react',
   test: snapshotWithOptions({ createNodeMock })
 })

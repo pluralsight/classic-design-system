@@ -3,13 +3,13 @@ import initStoryshots, {
   snapshotWithOptions
 } from '@storybook/addon-storyshots'
 
-function createNodeMock(element) {
-  return { offsetLeft: 0, style: {} }
-}
+jest.mock('@pluralsight/ps-design-system-storybook-addon-center')
+jest.mock('@pluralsight/ps-design-system-storybook-addon-theme')
+
+const createNodeMock = el => document.createElement('div')
 
 initStoryshots({
-  configPath: path.resolve(__dirname, '..', '..', '..', '.storybook'),
-  test: snapshotWithOptions({
-    createNodeMock
-  })
+  configPath: path.resolve(__dirname, '../../../.storybook'),
+  framework: 'react',
+  test: snapshotWithOptions({ createNodeMock })
 })

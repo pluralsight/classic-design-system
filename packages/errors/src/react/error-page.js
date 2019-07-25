@@ -7,8 +7,9 @@ import * as textVars from '@pluralsight/ps-design-system-text/vars'
 import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
+
 import Heading from './heading.js'
-import icons from './icons.js'
+import icons from './icon-loader.js'
 
 const styles = {
   page: ({ themeName }) =>
@@ -47,7 +48,7 @@ const styles = {
 
 const SearchForm = props => (
   <form action={props.action} method="get" {...styles.search(props)}>
-    <div {...styles.searchIcon(props)}>{icons.search(React)}</div>
+    <div {...styles.searchIcon(props)}>{icons.search()}</div>
     <input
       {...styles.searchInput(props)}
       type="text"
@@ -69,7 +70,7 @@ const ErrorPage = props => {
   return (
     <div {...styles.page(allProps)}>
       {allProps.iconId && icons[allProps.iconId] && (
-        <div {...styles.icon(allProps)}>{icons[allProps.iconId](React)}</div>
+        <div {...styles.icon(allProps)}>{icons[allProps.iconId]()}</div>
       )}
       <div {...styles.text(allProps)}>
         <Heading size={textVars.headingSizes.medium}>
