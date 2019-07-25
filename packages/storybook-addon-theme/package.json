@@ -18,10 +18,10 @@
     "@pluralsight/ps-design-system-core": "*",
     "@pluralsight/ps-design-system-theme": "*",
     "@storybook/addons": "^5.1.9",
-    "@storybook/core-events": "^5.1.9",
-    "glamor": "^2.20.0"
+    "@storybook/core-events": "^5.1.9"
   },
   "peerDependencies": {
+    "glamor": "^2.20.0",
     "react": ">=16.8.6 < 17.0.0"
   }
 }
