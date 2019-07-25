@@ -30,6 +30,7 @@
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "*",
+    "glamor": "^2.20.0",
     "react": ">=16.3.0 < 17.0.0"
   },
   "devDependencies": {
