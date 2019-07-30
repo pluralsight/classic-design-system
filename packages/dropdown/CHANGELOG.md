@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@1.0.16...@pluralsight/ps-design-system-dropdown@2.0.0) (2019-07-30)
+
+
+### Features
+
+* **dropdown:** support React.forwardRef ([5482bc5](https://github.com/pluralsight/design-system/commit/5482bc5))
+
+
+### BREAKING CHANGES
+
+* **dropdown:** Support React.forwardRef
+* **dropdown:** Remove innerRef; use ref instead
+
+
+
+
+
 ## [1.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@1.0.15...@pluralsight/ps-design-system-dropdown@1.0.16) (2019-07-18)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

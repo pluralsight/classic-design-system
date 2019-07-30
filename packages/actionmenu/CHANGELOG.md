@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@5.0.1...@pluralsight/ps-design-system-actionmenu@5.1.0) (2019-07-30)
+
+
+### Bug Fixes
+
+* **actionmenu:** pass onSelect from root menu to nested ([c27c9b5](https://github.com/pluralsight/design-system/commit/c27c9b5))
+
+
+### Features
+
+* **actionmenu:** add onSelect and item value props ([afdeb46](https://github.com/pluralsight/design-system/commit/afdeb46))
+
+
+
+
+
 ## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@5.0.0...@pluralsight/ps-design-system-actionmenu@5.0.1) (2019-07-18)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu

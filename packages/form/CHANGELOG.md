@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@2.0.6...@pluralsight/ps-design-system-form@2.1.0) (2019-07-30)
+
+
+### Features
+
+* **form:** add align prop to ButtonRow ([dcd8e14](https://github.com/pluralsight/design-system/commit/dcd8e14))
+
+
+
+
+
 ## [2.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@2.0.5...@pluralsight/ps-design-system-form@2.0.6) (2019-07-18)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-form

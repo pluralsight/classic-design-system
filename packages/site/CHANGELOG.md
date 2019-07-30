@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.10.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.9.2...@pluralsight/ps-design-system-site@12.10.0) (2019-07-30)
+
+
+### Bug Fixes
+
+* **site:** fix number of icon sizes ([ff76705](https://github.com/pluralsight/design-system/commit/ff76705)), closes [#579](https://github.com/pluralsight/design-system/issues/579)
+
+
+### Features
+
+* **site:** add onSelect and value to actionmenu props and examples ([dbd3e52](https://github.com/pluralsight/design-system/commit/dbd3e52))
+
+
+
+
+
 ## [12.9.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.9.1...@pluralsight/ps-design-system-site@12.9.2) (2019-07-18)
 
 
