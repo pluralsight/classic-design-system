@@ -1,34 +1,20 @@
 import * as glamor from 'glamor'
-import Halo from '@pluralsight/ps-design-system-halo/react'
-import PropTypes from 'prop-types'
 import React from 'react'
+import PropTypes from 'prop-types'
+
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import Halo from '@pluralsight/ps-design-system-halo/react'
 import { useTheme } from '@pluralsight/ps-design-system-theme/react'
-import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
-import css from '../css'
-
-const checkboxHtmlPropsWhitelist = [
-  'type',
-  'name',
-  'autocomplete',
-  'autofocus',
-  'role',
-  'tabIndex',
-  'value',
-  'defaultValue',
-  /^on((?!Check).)*$/,
-  /^aria-/,
-  /^data-/,
-  /^form/
-]
+import css from '../css/index.js'
 
 const styles = {
-  checkbox: ({ disabled }) =>
+  checkbox: (themeName, { disabled }) =>
     glamor.css(
       css['.psds-checkbox'],
       disabled && css['.psds-checkbox--disabled']
     ),
-  square: ({ checked, disabled, error, themeName }) =>
+  square: (themeName, { checked, disabled, error }) =>
     glamor.css(
       css['.psds-checkbox__square'],
       css[`.psds-checkbox__square.psds-theme--${themeName}`],
@@ -39,36 +25,19 @@ const styles = {
     ),
   checkmark: _ => glamor.css(css['.psds-checkbox__checkmark']),
   input: () => glamor.css(css['.psds-checkbox__input']),
-  label: ({ themeName }) =>
+  label: themeName =>
     glamor.css(
       css['.psds-checkbox__label'],
       css[`.psds-checkbox__label.psds-theme--${themeName}`]
     )
 }
 
-const Checkmark = _ => (
-  <svg
-    role="img"
-    aria-label="Checkmark"
-    {...styles.checkmark()}
-    viewBox="0 0 16 16"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <polygon points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473" />
-  </svg>
-)
-
-function Checkbox(props) {
+const Checkbox = React.forwardRef((props, ref) => {
   const themeName = useTheme()
-  const allProps = { themeName, ...props }
-
   const square = React.createRef()
 
   const handleKeyDown = evt => {
-    if (evt.key === 'Enter' || evt.key === ' ') {
-      handleClick(evt)
-    }
+    if (evt.key === 'Enter' || evt.key === ' ') handleClick(evt)
   }
 
   const handleClick = evt => {
@@ -79,48 +48,46 @@ function Checkbox(props) {
     if (typeof onCheck === 'function') {
       onCheck(evt, !props.checked, props.value, props.name)
     }
+
     if (square.current) square.current.focus()
   }
 
   return (
     <label
-      onClick={allProps.disabled ? null : handleClick}
-      onKeyDown={allProps.disabled ? null : handleKeyDown}
-      {...styles.checkbox(allProps)}
+      onClick={props.disabled ? null : handleClick}
+      onKeyDown={props.disabled ? null : handleKeyDown}
+      {...styles.checkbox(themeName, props)}
     >
       <Halo
-        error={allProps.error}
-        inline
+        error={props.error}
         gapSize={Halo.gapSizes.small}
-        visibleOnFocus={!allProps.disabled}
+        inline
+        visibleOnFocus={!props.disabled}
       >
         <div
-          role="checkbox"
-          aria-checked={allProps.checked}
-          tabIndex={allProps.disabled ? '-1' : '0'}
+          aria-checked={props.checked}
           ref={square}
-          {...styles.square(allProps)}
+          role="checkbox"
+          tabIndex={props.disabled ? '-1' : '0'}
+          {...styles.square(themeName, props)}
         >
-          {allProps.checked && <Checkmark />}
+          {props.checked && <Checkmark />}
         </div>
       </Halo>
 
       <input
-        {...propsUtil.whitelistProps(allProps, checkboxHtmlPropsWhitelist)}
+        readOnly
+        ref={ref}
         tabIndex="-1"
         type="checkbox"
-        readOnly
-        name={allProps.name}
-        checked={allProps.checked}
-        value={allProps.value}
-        ref={allProps.innerRef}
-        {...styles.input(allProps)}
+        value={props.value}
+        {...styles.input(themeName, props)}
+        {...filterReactProps(props, { tagName: 'input' })}
       />
-
-      <div {...styles.label(allProps)}>{allProps.label}</div>
+      <div {...styles.label(themeName, props)}>{props.label}</div>
     </label>
   )
-}
+})
 
 Checkbox.propTypes = {
   checked: PropTypes.bool,
@@ -132,9 +99,25 @@ Checkbox.propTypes = {
   onCheck: PropTypes.func,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 }
+
 Checkbox.defaultProps = {
   checked: false,
   disabled: false,
   error: false
 }
+
 export default Checkbox
+
+const Checkmark = props => (
+  <svg
+    role="img"
+    aria-label="Checkmark"
+    viewBox="0 0 16 16"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    {...styles.checkmark()}
+    {...props}
+  >
+    <polygon points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473" />
+  </svg>
+)

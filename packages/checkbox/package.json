@@ -20,9 +20,9 @@
   "keywords": [],
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.4.4",
+    "@pluralsight/ps-design-system-filter-react-props": "*",
     "@pluralsight/ps-design-system-halo": "^4.0.4",
     "@pluralsight/ps-design-system-theme": "^3.0.2",
-    "@pluralsight/ps-design-system-util": "^2.0.5",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
