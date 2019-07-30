@@ -12,13 +12,7 @@ module.exports = api => {
 
     ignore,
 
-    presets: [
-      '@babel/preset-react',
-      [
-        '@babel/preset-env',
-        { targets: { node: 'current' }, corejs: 2, useBuiltIns: 'usage' }
-      ]
-    ],
+    presets: ['@babel/preset-react', '@babel/preset-env'],
 
     plugins: [
       ['@babel/plugin-proposal-class-properties', { loose: true }],
