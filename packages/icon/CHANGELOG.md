@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@12.0.5...@pluralsight/ps-design-system-icon@12.0.6) (2019-07-30)
+
+
+### Bug Fixes
+
+* **icon:** missing dependency ([ba0d201](https://github.com/pluralsight/design-system/commit/ba0d201))
+
+
+
+
+
 ## [12.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@12.0.4...@pluralsight/ps-design-system-icon@12.0.5) (2019-07-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon
