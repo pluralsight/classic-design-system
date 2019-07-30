@@ -92,7 +92,6 @@
     "@testing-library/react-hooks": "^1.1.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-macros": "^2.6.1",
-    "camelize": "^1.0.0",
     "copy-template-dir": "^1.4.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
