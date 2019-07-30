@@ -27,6 +27,7 @@
     "publish:beta": "npm run publish -- --npm-tag=beta",
     "site": "cd packages/site && npm start",
     "start": "npm run site",
+    "storybook": "start-storybook -p 6006",
     "test": "jest"
   },
   "husky": {
