@@ -2,7 +2,7 @@ import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import ViewToggle from '..'
+import ViewToggle from '../index.js'
 
 storiesOf('options count', module)
   .add('one', _ => (
