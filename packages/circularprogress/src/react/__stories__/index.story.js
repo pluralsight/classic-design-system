@@ -2,7 +2,7 @@ import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import CircularProgress from '../'
+import CircularProgress from '../index.js'
 
 const valueStory = storiesOf('value', module)
 ;[0, 25, 50, 75, 100, 33, 66].forEach(value =>
@@ -19,37 +19,30 @@ Object.keys(CircularProgress.sizes).forEach(size =>
   indeterminateStory.add(size, _ => <CircularProgress size={size} />)
 )
 
-class AnimationDemo extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { value: 0 }
-  }
+storiesOf('animation', module).add('animates to new values', _ => {
+  const AnimationDemo = props => {
+    const [value, updateValue] = React.useState(0)
 
-  componentDidMount() {
-    this.interval = setInterval(() => {
-      const rando = Math.random() * 115
-      this.setState({ value: rando > 100 ? 100 : rando })
-    }, 1500)
-  }
-  componentWillUnmount() {
-    clearInterval(this.interval)
-  }
+    React.useEffect(function() {
+      const interval = setInterval(() => {
+        const rando = Math.random() * 115
+        updateValue(rando)
+      }, 1500)
 
-  render() {
+      return () => clearInterval(interval)
+    }, [])
+
     return (
       <div>
-        <CircularProgress value={this.state.value} />
-        <div style={{ color: core.colors.gray02 }}>
-          Value: {this.state.value}
-        </div>
+        <CircularProgress value={value} />
+
+        <div style={{ color: core.colors.gray02 }}>Value: {value}</div>
       </div>
     )
   }
-}
 
-storiesOf('animation', module).add('animates to new values', _ => (
-  <AnimationDemo />
-))
+  return <AnimationDemo />
+})
 
 storiesOf('style overrides', module)
   .add('style', _ => <CircularProgress style={{ outline: '1px solid red' }} />)

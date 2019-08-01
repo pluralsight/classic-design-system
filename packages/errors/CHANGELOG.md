@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@4.0.4...@pluralsight/ps-design-system-errors@4.0.5) (2019-07-30)
+
+
+### Bug Fixes
+
+* **errors:** missing dependency ([e3278f5](https://github.com/pluralsight/design-system/commit/e3278f5))
+
+
+
+
+
 ## [4.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@4.0.3...@pluralsight/ps-design-system-errors@4.0.4) (2019-07-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-errors
