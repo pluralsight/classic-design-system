@@ -8,60 +8,6 @@ const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
 )
 
-class StateDemo extends React.Component {
-  constructor() {
-    super()
-    this.state = { values: {} }
-    this.handleCheck = this.handleCheck.bind(this)
-  }
-
-  handleCheck(evt, checked, value, name) {
-    if (checked) {
-      this.setState({ values: { ...this.state.values, [name]: value } })
-    } else {
-      const { [name]: omit, ...values } = this.state.values
-      this.setState({ values })
-    }
-  }
-
-  render() {
-    const colorNames = Object.keys(this.state.values)
-    const checked = name => colorNames.indexOf(name) > -1
-
-    return (
-      <div>
-        <div style={{ color: core.colors.gray03 }}>
-          Checked:{' '}
-          {colorNames
-            .map(name => `${name}: ${this.state.values[name]}`)
-            .join('; ')}
-        </div>
-        <Checkbox
-          onCheck={this.handleCheck}
-          name="colorRed"
-          value="red"
-          label="Red"
-          checked={checked('colorRed')}
-        />
-        <Checkbox
-          onCheck={this.handleCheck}
-          name="colorGreen"
-          value="green"
-          label="Green"
-          checked={checked('colorGreen')}
-        />
-        <Checkbox
-          onCheck={this.handleCheck}
-          name="colorBlue"
-          value="blue"
-          label="Blue"
-          checked={checked('colorBlue')}
-        />
-      </div>
-    )
-  }
-}
-
 storiesOf('Checkbox', module)
   .addDecorator(PaddingDecorator)
   .add('default', _ => <Checkbox name="colorRed" value="red" label="Red" />)
@@ -80,4 +26,55 @@ storiesOf('Checkbox', module)
   .add('disabled & errored', _ => (
     <Checkbox disabled error name="colorRed" value="red" label="Red" />
   ))
-  .add('state demo', _ => <StateDemo />)
+  .add('state demo', _ => {
+    function StateDemo() {
+      const [values, updateValues] = React.useState([])
+
+      function handleCheck(evt, checked, value, name) {
+        let nextValues = { ...values }
+
+        if (checked) nextValues[name] = value
+        else delete nextValues[name]
+
+        updateValues(nextValues)
+      }
+
+      const colorNames = Object.keys(values)
+      const checked = name => colorNames.indexOf(name) > -1
+
+      return (
+        <div>
+          <div style={{ color: core.colors.gray03 }}>
+            Checked:{' '}
+            {colorNames.map(name => `${name}: ${values[name]}`).join('; ')}
+          </div>
+
+          <Checkbox
+            onCheck={handleCheck}
+            name="colorRed"
+            value="red"
+            label="Red"
+            checked={checked('colorRed')}
+          />
+
+          <Checkbox
+            onCheck={handleCheck}
+            name="colorGreen"
+            value="green"
+            label="Green"
+            checked={checked('colorGreen')}
+          />
+
+          <Checkbox
+            onCheck={handleCheck}
+            name="colorBlue"
+            value="blue"
+            label="Blue"
+            checked={checked('colorBlue')}
+          />
+        </div>
+      )
+    }
+
+    return <StateDemo />
+  })

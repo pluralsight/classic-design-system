@@ -21,7 +21,7 @@ exports[`Storyshots Checkbox checked 1`] = `
       >
         <div
           aria-checked={true}
-          data-css-1erplld=""
+          data-css-1sxo0xr=""
           role="checkbox"
           tabIndex="0"
         >
@@ -42,6 +42,7 @@ exports[`Storyshots Checkbox checked 1`] = `
       <input
         checked={true}
         data-css-gyrv08=""
+        disabled={false}
         name="colorRed"
         readOnly={true}
         tabIndex="-1"
@@ -79,7 +80,7 @@ exports[`Storyshots Checkbox default 1`] = `
       >
         <div
           aria-checked={false}
-          data-css-4f5v7u=""
+          data-css-v2gdam=""
           role="checkbox"
           tabIndex="0"
         />
@@ -87,6 +88,7 @@ exports[`Storyshots Checkbox default 1`] = `
       <input
         checked={false}
         data-css-gyrv08=""
+        disabled={false}
         name="colorRed"
         readOnly={true}
         tabIndex="-1"
@@ -124,7 +126,7 @@ exports[`Storyshots Checkbox disabled & errored 1`] = `
       >
         <div
           aria-checked={false}
-          data-css-4f5v7u=""
+          data-css-v2gdam=""
           role="checkbox"
           tabIndex="-1"
         />
@@ -132,6 +134,7 @@ exports[`Storyshots Checkbox disabled & errored 1`] = `
       <input
         checked={false}
         data-css-gyrv08=""
+        disabled={true}
         name="colorRed"
         readOnly={true}
         tabIndex="-1"
@@ -169,7 +172,7 @@ exports[`Storyshots Checkbox disabled 1`] = `
       >
         <div
           aria-checked={false}
-          data-css-4f5v7u=""
+          data-css-v2gdam=""
           role="checkbox"
           tabIndex="-1"
         />
@@ -177,6 +180,7 @@ exports[`Storyshots Checkbox disabled 1`] = `
       <input
         checked={false}
         data-css-gyrv08=""
+        disabled={true}
         name="colorRed"
         readOnly={true}
         tabIndex="-1"
@@ -215,7 +219,7 @@ exports[`Storyshots Checkbox error 1`] = `
         >
           <div
             aria-checked={true}
-            data-css-1erplld=""
+            data-css-1sxo0xr=""
             role="checkbox"
             tabIndex="0"
           >
@@ -236,6 +240,7 @@ exports[`Storyshots Checkbox error 1`] = `
         <input
           checked={true}
           data-css-gyrv08=""
+          disabled={false}
           name="colorRed"
           readOnly={true}
           tabIndex="-1"
@@ -258,7 +263,7 @@ exports[`Storyshots Checkbox error 1`] = `
         >
           <div
             aria-checked={false}
-            data-css-4f5v7u=""
+            data-css-v2gdam=""
             role="checkbox"
             tabIndex="0"
           />
@@ -266,6 +271,7 @@ exports[`Storyshots Checkbox error 1`] = `
         <input
           checked={false}
           data-css-gyrv08=""
+          disabled={false}
           name="colorRed"
           readOnly={true}
           tabIndex="-1"
@@ -316,7 +322,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         >
           <div
             aria-checked={false}
-            data-css-4f5v7u=""
+            data-css-v2gdam=""
             role="checkbox"
             tabIndex="0"
           />
@@ -324,6 +330,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         <input
           checked={false}
           data-css-gyrv08=""
+          disabled={false}
           name="colorRed"
           readOnly={true}
           tabIndex="-1"
@@ -346,7 +353,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         >
           <div
             aria-checked={false}
-            data-css-4f5v7u=""
+            data-css-v2gdam=""
             role="checkbox"
             tabIndex="0"
           />
@@ -354,6 +361,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         <input
           checked={false}
           data-css-gyrv08=""
+          disabled={false}
           name="colorGreen"
           readOnly={true}
           tabIndex="-1"
@@ -376,7 +384,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         >
           <div
             aria-checked={false}
-            data-css-4f5v7u=""
+            data-css-v2gdam=""
             role="checkbox"
             tabIndex="0"
           />
@@ -384,6 +392,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         <input
           checked={false}
           data-css-gyrv08=""
+          disabled={false}
           name="colorBlue"
           readOnly={true}
           tabIndex="-1"
