@@ -1,21 +1,21 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 const styles = {
   optionButton: props =>
-    glamor.css(
-      css['.psds-viewtoggle__option'],
-      props.active && css['.psds-viewtoggle__option--active']
+    compose(
+      css(stylesheet['.psds-viewtoggle__option']),
+      props.active && css(stylesheet['.psds-viewtoggle__option--active'])
     ),
-  list: props => glamor.css(css['.psds-viewtoggle']),
-  activePillBg: props => glamor.css(css['.psds-viewtoggle__option-bg']),
-  pillBgSpacer: props => glamor.css(css['.psds-viewtoggle__option-bg__spacer'])
+  list: () => css(stylesheet['.psds-viewtoggle']),
+  activePillBg: () => css(stylesheet['.psds-viewtoggle__option-bg']),
+  pillBgSpacer: () => css(stylesheet['.psds-viewtoggle__option-bg__spacer'])
 }
 
 const ViewToggle = React.forwardRef(({ onSelect, ...props }, forwardedRef) => {
