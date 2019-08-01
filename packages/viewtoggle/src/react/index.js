@@ -20,6 +20,7 @@ const styles = {
 
 const ViewToggle = React.forwardRef(({ onSelect, ...props }, forwardedRef) => {
   const ref = forwardedRef || React.useRef()
+  const hasRenderedOnce = useHasRenderedOnce()
 
   const initialIndex = findActiveIndex(props.children)
   const [activeIndex, setActiveIndex] = React.useState(initialIndex)
@@ -39,11 +40,14 @@ const ViewToggle = React.forwardRef(({ onSelect, ...props }, forwardedRef) => {
 
   function renderActivePill() {
     const activeEl = React.Children.toArray(props.children)[activeIndex]
-    const activeNode =
-      ref.current &&
-      ref.current.querySelector(`button:nth-of-type(${activeIndex + 1})`)
 
-    const activePillStyle = activeNode ? { left: activeNode.offsetLeft } : {}
+    let activePillStyle = {}
+    if (hasRenderedOnce && ref.current) {
+      const selector = `button:nth-of-type(${activeIndex + 1})`
+      const activeNode = ref.current.querySelector(selector)
+
+      if (activeNode) activePillStyle = { left: activeNode.offsetLeft }
+    }
 
     return (
       <ActivePillBg aria-hidden style={activePillStyle}>
@@ -128,6 +132,16 @@ function findActiveIndex(els) {
 
 function isFunction(fn) {
   return typeof fn === 'function'
+}
+
+function useHasRenderedOnce() {
+  const [hasRenderedOnce, setHasRenderedOnce] = React.useState(false)
+
+  React.useEffect(() => {
+    setHasRenderedOnce(true)
+  }, [])
+
+  return hasRenderedOnce
 }
 
 ViewToggle.Option = Option
