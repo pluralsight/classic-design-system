@@ -586,7 +586,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             >
               <div
                 aria-checked={true}
-                data-css-1erplld=""
+                data-css-1sxo0xr=""
                 role="checkbox"
                 tabIndex="0"
               >
@@ -607,7 +607,13 @@ exports[`Storyshots Sample Form sample 1`] = `
             <input
               checked={true}
               data-css-gyrv08=""
+              disabled={false}
               readOnly={true}
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
               tabIndex="-1"
               type="checkbox"
               value="someVal"
