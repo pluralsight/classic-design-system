@@ -1,8 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/vars'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 
 export default {
   '.psds-checkbox': {
@@ -29,10 +26,9 @@ export default {
   },
   [`.psds-checkbox__square.psds-theme--${themeNames.light}`]: {
     background: core.colors.white,
-    borderColor: core.colors.gray04
-  },
-  '.psds-checkbox__square:focus': {
-    outline: 'none'
+    borderColor: core.colors.gray04,
+
+    '&:focus': { outline: 'none' }
   },
   '.psds-checkbox__square:focus:before .psds-checkbox__square--error:before': {
     content: ' ',
@@ -44,11 +40,7 @@ export default {
     zIndex: '-1',
     borderRadius: '2px'
   },
-  [`.psds-checkbox__square.psds-theme--${
-    themeNames.light
-  }:focus:before .psds-checkbox__square--error.psds-theme--${
-    themeNames.light
-  }:before`]: {
+  [`.psds-checkbox__square.psds-theme--${themeNames.light}:focus:before .psds-checkbox__square--error.psds-theme--${themeNames.light}:before`]: {
     top: '-4px',
     left: '-4px',
     right: '-4px',
@@ -64,11 +56,7 @@ export default {
     zIndex: '-2',
     borderRadius: '4px'
   },
-  [`.psds-checkbox__square.psds-theme--${
-    themeNames.light
-  }:focus:after .psds-checkbox__square--error.psds-theme--${
-    themeNames.light
-  }:after`]: {
+  [`.psds-checkbox__square.psds-theme--${themeNames.light}:focus:after .psds-checkbox__square--error.psds-theme--${themeNames.light}:after`]: {
     top: '-7px',
     left: '-7px',
     right: '-7px',
@@ -102,11 +90,7 @@ export default {
     right: '-1px',
     bottom: '-1px'
   },
-  [`.psds-checkbox__square--checked.psds-theme--${
-    themeNames.light
-  }:focus:before, .psds-checkbox__square--checked--error.psds-theme--${
-    themeNames.light
-  }:before`]: {
+  [`.psds-checkbox__square--checked.psds-theme--${themeNames.light}:focus:before, .psds-checkbox__square--checked--error.psds-theme--${themeNames.light}:before`]: {
     top: '-2px',
     left: '-2px',
     right: '-2px',
@@ -118,11 +102,7 @@ export default {
     right: '-4px',
     bottom: '-4px'
   },
-  [`.psds-checkbox__square--checked.psds-theme--${
-    themeNames.light
-  }:focus:after, .psds-checkbox__square--checked--error.psds-theme--${
-    themeNames.light
-  }:after`]: {
+  [`.psds-checkbox__square--checked.psds-theme--${themeNames.light}:focus:after, .psds-checkbox__square--checked--error.psds-theme--${themeNames.light}:after`]: {
     top: '-5px',
     left: '-5px',
     right: '-5px',

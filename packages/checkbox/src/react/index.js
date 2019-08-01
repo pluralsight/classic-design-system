@@ -1,4 +1,4 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -6,29 +6,26 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo/react'
 import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 
 const styles = {
   checkbox: (themeName, { disabled }) =>
-    glamor.css(
-      css['.psds-checkbox'],
-      disabled && css['.psds-checkbox--disabled']
+    compose(
+      css(stylesheet['.psds-checkbox']),
+      disabled && css(stylesheet['.psds-checkbox--disabled'])
     ),
-  square: (themeName, { checked, disabled, error }) =>
-    glamor.css(
-      css['.psds-checkbox__square'],
-      css[`.psds-checkbox__square.psds-theme--${themeName}`],
-      checked && css['.psds-checkbox__square--checked'],
-      {
-        ':focus': css['.psds-checkbox__square:focus']
-      }
+  square: (themeName, { checked }) =>
+    compose(
+      css(stylesheet['.psds-checkbox__square']),
+      css(stylesheet[`.psds-checkbox__square.psds-theme--${themeName}`]),
+      checked && css(stylesheet['.psds-checkbox__square--checked'])
     ),
-  checkmark: _ => glamor.css(css['.psds-checkbox__checkmark']),
-  input: () => glamor.css(css['.psds-checkbox__input']),
+  checkmark: () => css(stylesheet['.psds-checkbox__checkmark']),
+  input: () => css(stylesheet['.psds-checkbox__input']),
   label: themeName =>
-    glamor.css(
-      css['.psds-checkbox__label'],
-      css[`.psds-checkbox__label.psds-theme--${themeName}`]
+    compose(
+      css(stylesheet['.psds-checkbox__label']),
+      css(stylesheet[`.psds-checkbox__label.psds-theme--${themeName}`])
     )
 }
 
