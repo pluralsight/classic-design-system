@@ -22,7 +22,9 @@ const ViewToggle = React.forwardRef(({ onSelect, ...props }, forwardedRef) => {
   const ref = forwardedRef || React.useRef()
   const hasRenderedOnce = useHasRenderedOnce()
 
-  const initialIndex = findActiveIndex(props.children)
+  const initialIndex = React.useMemo(() => findActiveIndex(props.children), [
+    props.children
+  ])
   const [activeIndex, setActiveIndex] = React.useState(initialIndex)
 
   React.useEffect(() => {
