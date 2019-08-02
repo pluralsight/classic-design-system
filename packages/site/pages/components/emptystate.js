@@ -19,7 +19,7 @@ import {
   SectionHeading,
   ThemeToggle,
   withServerProps
-} from '../../src/ui'
+} from '../../src/ui/index.js'
 
 const titleize = str =>
   str.toLowerCase().replace(/(?:^|\s|-)\S/g, x => x.toUpperCase())
@@ -37,7 +37,7 @@ class IllustrationPreviewGrid extends React.Component {
     return Object.values(EmptyState.Illustration.names)
   }
 
-  handleSizeChange(index, event) {
+  handleSizeChange(evt, index) {
     this.setState({ activeSize: this.sizes[index] })
   }
 

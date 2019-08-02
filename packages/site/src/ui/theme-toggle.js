@@ -1,72 +1,78 @@
-import core from '@pluralsight/ps-design-system-core'
 import PropTypes from 'prop-types'
 import React from 'react'
+
+import core from '@pluralsight/ps-design-system-core'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react'
 import { string as stringUtil } from '@pluralsight/ps-design-system-util'
 
-class Themeable extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      themeName: props.themeName || Theme.defaultName
-    }
-    this.handleThemeSelect = this.handleThemeSelect.bind(this)
-  }
-  handleThemeSelect(i) {
-    const themeName = Theme.names[Object.keys(Theme.names)[i]]
-    this.setState({ themeName })
-  }
-  render() {
-    const { props, state } = this
-    return (
-      <div className={`themeable themeable-${state.themeName}`}>
-        <ThemeToggle
-          activeThemeName={state.themeName}
-          onSelect={this.handleThemeSelect}
-        />
-        <Theme name={state.themeName}>{props.children}</Theme>
-        <style jsx>{`
-          .themeable {
-            position: relative;
-          }
-          .themeable-dark {
-            background: ${core.colors.gray06};
-          }
-          .themeable-light {
-            background: ${core.colors.bone};
-          }
-        `}</style>
+function ThemeToggle(props) {
+  console.log({ props })
+  return (
+    <React.Fragment>
+      <style jsx>{`
+        .toggle {
+          position: absolute;
+          top: ${core.layout.spacingMedium};
+          right: ${core.layout.spacingMedium};
+          z-index: 1;
+        }
+      `}</style>
+
+      <div className="toggle">
+        <ViewToggle onSelect={props.onSelect}>
+          {Object.keys(Theme.names).map(themeName => (
+            <ViewToggle.Option
+              key={themeName}
+              active={themeName === props.activeThemeName}
+            >
+              {stringUtil.capitalize(themeName)}
+            </ViewToggle.Option>
+          ))}
+        </ViewToggle>
       </div>
-    )
-  }
+    </React.Fragment>
+  )
 }
 
-const ThemeToggle = props => (
-  <div className="toggle">
-    <ViewToggle onSelect={props.onSelect}>
-      {Object.keys(Theme.names).map(themeName => (
-        <ViewToggle.Option
-          key={themeName}
-          active={themeName === props.activeThemeName}
-        >
-          {stringUtil.capitalize(themeName)}
-        </ViewToggle.Option>
-      ))}
-    </ViewToggle>
-    <style jsx>{`
-      .toggle {
-        position: absolute;
-        top: ${core.layout.spacingMedium};
-        right: ${core.layout.spacingMedium};
-        z-index: 1;
-      }
-    `}</style>
-  </div>
-)
 ThemeToggle.propTypes = {
   activeThemeName: PropTypes.string.isRequired,
   onSelect: PropTypes.func.isRequired
+}
+
+function Themeable(props) {
+  const [themeName, setThemeName] = React.useState(Theme.defaultName)
+
+  const handleSelect = (evt, index) => {
+    const nextTheme = Theme.names[Object.keys(Theme.names)[index]]
+    console.log(nextTheme, themeName, Theme.defaultName)
+    setThemeName(nextTheme)
+  }
+
+  return (
+    <React.Fragment>
+      <style jsx>{`
+        .themeable {
+          position: relative;
+        }
+        .themeable-dark {
+          background: ${core.colors.gray06};
+        }
+        .themeable-light {
+          background: ${core.colors.bone};
+        }
+      `}</style>
+
+      <div className={`themeable themeable-${themeName}`}>
+        <ThemeToggle activeThemeName={themeName} onSelect={handleSelect} />
+        <Theme name={themeName}>{props.children}</Theme>
+      </div>
+    </React.Fragment>
+  )
+}
+
+Themeable.propTypes = {
+  children: PropTypes.node
 }
 
 ThemeToggle.Container = Themeable

@@ -35,9 +35,7 @@ const ViewToggle = React.forwardRef(({ onSelect, ...props }, forwardedRef) => {
   function handleSelect(evt, index) {
     setActiveIndex(index)
 
-    // TODO: update this prop callback so that Event is the first param.
-    //       this would be a breaking change
-    if (evt && isFunction(onSelect)) onSelect(index, evt)
+    if (evt && isFunction(onSelect)) onSelect(evt, index)
   }
 
   function renderActivePill() {
