@@ -1,22 +1,15 @@
 import core from '@pluralsight/ps-design-system-core'
-import Button from '@pluralsight/ps-design-system-button/react'
 import Dialog from '@pluralsight/ps-design-system-dialog/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react'
 import React from 'react'
-import ReactDOM from 'react-dom'
 
 import {
   Chrome,
-  Code,
   Content,
-  Example,
-  Heading,
   Intro,
   Link,
   P,
   PageHeading,
-  PropTypes,
   SectionHeading,
   withServerProps
 } from '../../src/ui'
@@ -95,18 +88,10 @@ export default withServerProps(_ => (
         adding an{' '}
         <Link href="https://github.com/pluralsight/design-system/issues/new">
           issue in Github
-        </Link>. For implementation instructions, visit the{' '}
+        </Link>
+        . For implementation instructions, visit the{' '}
         <Link href="/components/icon">Icon component page</Link>.
       </Intro>
-      <Button
-        href="/static/img/patterns/iconography/icon-grid-template.sketch"
-        iconAlign={Button.iconAligns.right}
-        icon={<Icon id={Icon.ids.download} />}
-        size={Button.sizes.large}
-        appearance={Button.appearances.stroke}
-      >
-        Download Sketch template
-      </Button>
 
       <SectionHeading>Canvas Size, Padding, Live Area</SectionHeading>
       <Boxes>
