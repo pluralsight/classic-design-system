@@ -85,8 +85,11 @@ export default {
   '.psds-carousel__pages': {
     ...resetList,
     display: 'flex',
-    overflow: 'hidden',
     width: '100%'
+  },
+
+  '.psds-carousel__pages--transitioning': {
+    overflow: 'hidden'
   },
 
   '.psds-carousel__page': {
