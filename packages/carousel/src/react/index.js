@@ -1,5 +1,5 @@
 import { compose, css } from 'glamor'
-import React from 'react'
+import React, { cloneElement } from 'react'
 import { Transition } from 'react-transition-group'
 import PropTypes from 'prop-types'
 
@@ -7,7 +7,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import stylesheet from '../css/index.js'
 import { calcItemsPerPage, isLeftArrow, isRightArrow } from '../js/index.js'
-import { chunk, pick } from '../js/utils.js'
+import { chunk, isFunction, pick } from '../js/utils.js'
 import * as vars from '../vars/index.js'
 
 import CarouselContext from './context.js'
@@ -69,13 +69,27 @@ export default function Carousel({ controls, size, ...props }) {
           onSwipeLeft={pager.next}
           onSwipeRight={pager.prev}
         >
-          {pages.map((items, i) => (
-            <Page key={i} isActivePage={pager.activePage === i}>
-              {items.map((item, j) => (
-                <Item key={j}>{item}</Item>
-              ))}
-            </Page>
-          ))}
+          {pages.map((items, pageIndex) => {
+            const isActivePage = pager.activePage === pageIndex
+
+            return (
+              <Page key={pageIndex} isActivePage={isActivePage}>
+                {items.map((item, itemIndex) => {
+                  const wrapped = isOfComponentType(item, Item)
+                  if (!wrapped) item = <Item key={itemIndex}>{item}</Item>
+
+                  return cloneElement(item, {
+                    key: itemIndex,
+
+                    isActivePage,
+                    itemIndex,
+                    pageCount,
+                    pageIndex
+                  })
+                })}
+              </Page>
+            )
+          })}
         </Pages>
 
         {controls}
@@ -86,8 +100,37 @@ export default function Carousel({ controls, size, ...props }) {
   )
 }
 
+function Item({ children, ...props }) {
+  return (
+    <div {...styles.item()} {...filterReactProps(props)}>
+      {isFunction(children)
+        ? children({
+            isActivePage: props.isActivePage,
+            itemIndex: props.itemIndex,
+            pageCount: props.pageCount,
+            pageIndex: props.pageIndex
+          })
+        : children}
+    </div>
+  )
+}
+
+Item.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
+  isActivePage: PropTypes.bool,
+  itemIndex: PropTypes.number,
+  pageCount: PropTypes.number,
+  pageIndex: PropTypes.number
+}
+
 Carousel.Controls = Controls
+Carousel.Controls.displayName = 'Carousel.Controls'
+
 Carousel.Control = Control
+Carousel.Control.displayName = 'Carousel.Control'
+
+Carousel.Item = Item
+Carousel.Item.displayName = 'Carousel.Item'
 
 Carousel.sizes = vars.sizes
 
@@ -118,10 +161,6 @@ function Instructions(props) {
       <p>Use left and right arrow keys for navigation.</p>
     </div>
   )
-}
-
-function Item(props) {
-  return <div {...styles.item()} {...props} />
 }
 
 const Pages = React.forwardRef((props, ref) => {
@@ -185,6 +224,10 @@ function insertEmptyItems(page, perPage) {
   if (page.length >= perPage) return page
 
   return page.concat(new Array(perPage - page.length).fill(null))
+}
+
+function isOfComponentType(instance, el) {
+  return instance && instance.type.displayName === el.displayName
 }
 
 function usePager(pageCount, additionalSideEffectTriggers = []) {

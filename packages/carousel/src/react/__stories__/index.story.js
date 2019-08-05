@@ -138,6 +138,29 @@ Object.values(Carousel.sizes).forEach(size => {
     </Carousel>
   ))
 })
+storiesOf('Carousel/Item', module)
+  .add('with child nodes', _ => (
+    <Carousel size={Carousel.sizes.wide}>
+      {new Array(9).fill(null).map((_, index) => (
+        <Carousel.Item key={index}>
+          <MockItem />
+        </Carousel.Item>
+      ))}
+    </Carousel>
+  ))
+  .add('with render props', _ => (
+    <Carousel size={Carousel.sizes.wide}>
+      {new Array(9).fill(null).map((_, index) => (
+        <Carousel.Item key={index}>
+          {data => (
+            <MockItem>
+              <pre>{JSON.stringify(data, null, 2)}</pre>
+            </MockItem>
+          )}
+        </Carousel.Item>
+      ))}
+    </Carousel>
+  ))
 
 const cardStories = storiesOf('Carousel/with Card', module)
 
