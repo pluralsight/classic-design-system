@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@1.1.3...@pluralsight/ps-design-system-carousel@1.1.4) (2019-08-05)
+
+
+### Bug Fixes
+
+* **carousel:** ensure all carousel items are the same width ([4baba52](https://github.com/pluralsight/design-system/commit/4baba52)), closes [#594](https://github.com/pluralsight/design-system/issues/594)
+
+
+
+
+
 ## [1.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@1.1.2...@pluralsight/ps-design-system-carousel@1.1.3) (2019-07-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel
