@@ -155,7 +155,7 @@ export default {
     background: 'none',
     border: 0,
     cursor: 'pointer',
-    padding: `0 calc(${core.layout.spacingXLarge} / 2)`,
+    padding: `0 calc(32px / 2)`,
     textDecoration: 'none',
     maxWidth: '300px',
     '&:focus': {

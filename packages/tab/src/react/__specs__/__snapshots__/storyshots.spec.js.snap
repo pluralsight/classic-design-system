@@ -25,7 +25,7 @@ exports[`Storyshots default active item offscreen 1`] = `
     >
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id={1}
         onClick={[Function]}
         role="tab"
@@ -48,7 +48,7 @@ exports[`Storyshots default active item offscreen 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id={2}
         onClick={[Function]}
         role="tab"
@@ -71,7 +71,7 @@ exports[`Storyshots default active item offscreen 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id={3}
         onClick={[Function]}
         role="tab"
@@ -94,7 +94,7 @@ exports[`Storyshots default active item offscreen 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id={4}
         onClick={[Function]}
         role="tab"
@@ -117,7 +117,7 @@ exports[`Storyshots default active item offscreen 1`] = `
       </button>
       <button
         aria-selected={true}
-        data-css-8cstl3=""
+        data-css-1grzcdu=""
         id={5}
         onClick={[Function]}
         role="tab"
@@ -140,7 +140,7 @@ exports[`Storyshots default active item offscreen 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id={6}
         onClick={[Function]}
         role="tab"
@@ -163,7 +163,7 @@ exports[`Storyshots default active item offscreen 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id={7}
         onClick={[Function]}
         role="tab"
@@ -186,7 +186,7 @@ exports[`Storyshots default active item offscreen 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id={8}
         onClick={[Function]}
         role="tab"
@@ -229,7 +229,7 @@ exports[`Storyshots default as links 1`] = `
   >
     <a
       aria-selected={true}
-      data-css-8cstl3=""
+      data-css-1grzcdu=""
       href="https://duckduckgo.com"
       id={1}
       onClick={[Function]}
@@ -280,7 +280,7 @@ exports[`Storyshots default default 1`] = `
     >
       <button
         aria-selected={true}
-        data-css-8cstl3=""
+        data-css-1grzcdu=""
         id="example0"
         onClick={[Function]}
         role="tab"
@@ -303,7 +303,7 @@ exports[`Storyshots default default 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example1"
         onClick={[Function]}
         role="tab"
@@ -326,7 +326,7 @@ exports[`Storyshots default default 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example2"
         onClick={[Function]}
         role="tab"
@@ -349,7 +349,7 @@ exports[`Storyshots default default 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example3"
         onClick={[Function]}
         role="tab"
@@ -372,7 +372,7 @@ exports[`Storyshots default default 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example4"
         onClick={[Function]}
         role="tab"
@@ -443,7 +443,7 @@ exports[`Storyshots default super long item 1`] = `
   >
     <button
       aria-selected={true}
-      data-css-8cstl3=""
+      data-css-1grzcdu=""
       id={1}
       onClick={[Function]}
       role="tab"
@@ -466,7 +466,7 @@ exports[`Storyshots default super long item 1`] = `
     </button>
     <button
       aria-selected={false}
-      data-css-1snvy0t=""
+      data-css-19dj59a=""
       id={2}
       onClick={[Function]}
       role="tab"
@@ -489,7 +489,7 @@ exports[`Storyshots default super long item 1`] = `
     </button>
     <button
       aria-selected={false}
-      data-css-1snvy0t=""
+      data-css-19dj59a=""
       id={3}
       onClick={[Function]}
       role="tab"
@@ -539,7 +539,7 @@ exports[`Storyshots scrolling 10 count 1`] = `
     >
       <button
         aria-selected={true}
-        data-css-8cstl3=""
+        data-css-1grzcdu=""
         id="example0"
         onClick={[Function]}
         role="tab"
@@ -562,7 +562,7 @@ exports[`Storyshots scrolling 10 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example1"
         onClick={[Function]}
         role="tab"
@@ -585,7 +585,7 @@ exports[`Storyshots scrolling 10 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example2"
         onClick={[Function]}
         role="tab"
@@ -608,7 +608,7 @@ exports[`Storyshots scrolling 10 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example3"
         onClick={[Function]}
         role="tab"
@@ -631,7 +631,7 @@ exports[`Storyshots scrolling 10 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example4"
         onClick={[Function]}
         role="tab"
@@ -654,7 +654,7 @@ exports[`Storyshots scrolling 10 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example5"
         onClick={[Function]}
         role="tab"
@@ -677,7 +677,7 @@ exports[`Storyshots scrolling 10 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example6"
         onClick={[Function]}
         role="tab"
@@ -700,7 +700,7 @@ exports[`Storyshots scrolling 10 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example7"
         onClick={[Function]}
         role="tab"
@@ -723,7 +723,7 @@ exports[`Storyshots scrolling 10 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example8"
         onClick={[Function]}
         role="tab"
@@ -746,7 +746,7 @@ exports[`Storyshots scrolling 10 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example9"
         onClick={[Function]}
         role="tab"
@@ -807,7 +807,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
     >
       <button
         aria-selected={true}
-        data-css-8cstl3=""
+        data-css-1grzcdu=""
         id="example0"
         onClick={[Function]}
         role="tab"
@@ -830,7 +830,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example1"
         onClick={[Function]}
         role="tab"
@@ -853,7 +853,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example2"
         onClick={[Function]}
         role="tab"
@@ -876,7 +876,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example3"
         onClick={[Function]}
         role="tab"
@@ -899,7 +899,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example4"
         onClick={[Function]}
         role="tab"
@@ -922,7 +922,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example5"
         onClick={[Function]}
         role="tab"
@@ -945,7 +945,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example6"
         onClick={[Function]}
         role="tab"
@@ -968,7 +968,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example7"
         onClick={[Function]}
         role="tab"
@@ -991,7 +991,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example8"
         onClick={[Function]}
         role="tab"
@@ -1014,7 +1014,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example9"
         onClick={[Function]}
         role="tab"
@@ -1037,7 +1037,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example10"
         onClick={[Function]}
         role="tab"
@@ -1060,7 +1060,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example11"
         onClick={[Function]}
         role="tab"
@@ -1083,7 +1083,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example12"
         onClick={[Function]}
         role="tab"
@@ -1106,7 +1106,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example13"
         onClick={[Function]}
         role="tab"
@@ -1129,7 +1129,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example14"
         onClick={[Function]}
         role="tab"
@@ -1152,7 +1152,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example15"
         onClick={[Function]}
         role="tab"
@@ -1175,7 +1175,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example16"
         onClick={[Function]}
         role="tab"
@@ -1198,7 +1198,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example17"
         onClick={[Function]}
         role="tab"
@@ -1221,7 +1221,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example18"
         onClick={[Function]}
         role="tab"
@@ -1244,7 +1244,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example19"
         onClick={[Function]}
         role="tab"
@@ -1305,7 +1305,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
     >
       <button
         aria-selected={true}
-        data-css-8cstl3=""
+        data-css-1grzcdu=""
         id="example0"
         onClick={[Function]}
         role="tab"
@@ -1328,7 +1328,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example1"
         onClick={[Function]}
         role="tab"
@@ -1351,7 +1351,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example2"
         onClick={[Function]}
         role="tab"
@@ -1374,7 +1374,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example3"
         onClick={[Function]}
         role="tab"
@@ -1397,7 +1397,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example4"
         onClick={[Function]}
         role="tab"
@@ -1420,7 +1420,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example5"
         onClick={[Function]}
         role="tab"
@@ -1443,7 +1443,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example6"
         onClick={[Function]}
         role="tab"
@@ -1466,7 +1466,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example7"
         onClick={[Function]}
         role="tab"
@@ -1489,7 +1489,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example8"
         onClick={[Function]}
         role="tab"
@@ -1512,7 +1512,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example9"
         onClick={[Function]}
         role="tab"
@@ -1535,7 +1535,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example10"
         onClick={[Function]}
         role="tab"
@@ -1558,7 +1558,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example11"
         onClick={[Function]}
         role="tab"
@@ -1581,7 +1581,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example12"
         onClick={[Function]}
         role="tab"
@@ -1604,7 +1604,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example13"
         onClick={[Function]}
         role="tab"
@@ -1627,7 +1627,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example14"
         onClick={[Function]}
         role="tab"
@@ -1650,7 +1650,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example15"
         onClick={[Function]}
         role="tab"
@@ -1673,7 +1673,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example16"
         onClick={[Function]}
         role="tab"
@@ -1696,7 +1696,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example17"
         onClick={[Function]}
         role="tab"
@@ -1719,7 +1719,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example18"
         onClick={[Function]}
         role="tab"
@@ -1742,7 +1742,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example19"
         onClick={[Function]}
         role="tab"
@@ -1765,7 +1765,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example20"
         onClick={[Function]}
         role="tab"
@@ -1788,7 +1788,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example21"
         onClick={[Function]}
         role="tab"
@@ -1811,7 +1811,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example22"
         onClick={[Function]}
         role="tab"
@@ -1834,7 +1834,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example23"
         onClick={[Function]}
         role="tab"
@@ -1857,7 +1857,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example24"
         onClick={[Function]}
         role="tab"
@@ -1880,7 +1880,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example25"
         onClick={[Function]}
         role="tab"
@@ -1903,7 +1903,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example26"
         onClick={[Function]}
         role="tab"
@@ -1926,7 +1926,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example27"
         onClick={[Function]}
         role="tab"
@@ -1949,7 +1949,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example28"
         onClick={[Function]}
         role="tab"
@@ -1972,7 +1972,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example29"
         onClick={[Function]}
         role="tab"
@@ -2033,7 +2033,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
     >
       <button
         aria-selected={true}
-        data-css-8cstl3=""
+        data-css-1grzcdu=""
         id="example0"
         onClick={[Function]}
         role="tab"
@@ -2056,7 +2056,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example1"
         onClick={[Function]}
         role="tab"
@@ -2079,7 +2079,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example2"
         onClick={[Function]}
         role="tab"
@@ -2102,7 +2102,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example3"
         onClick={[Function]}
         role="tab"
@@ -2125,7 +2125,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example4"
         onClick={[Function]}
         role="tab"
@@ -2148,7 +2148,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example5"
         onClick={[Function]}
         role="tab"
@@ -2171,7 +2171,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example6"
         onClick={[Function]}
         role="tab"
@@ -2194,7 +2194,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example7"
         onClick={[Function]}
         role="tab"
@@ -2217,7 +2217,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example8"
         onClick={[Function]}
         role="tab"
@@ -2240,7 +2240,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example9"
         onClick={[Function]}
         role="tab"
@@ -2263,7 +2263,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example10"
         onClick={[Function]}
         role="tab"
@@ -2286,7 +2286,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example11"
         onClick={[Function]}
         role="tab"
@@ -2309,7 +2309,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example12"
         onClick={[Function]}
         role="tab"
@@ -2332,7 +2332,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example13"
         onClick={[Function]}
         role="tab"
@@ -2355,7 +2355,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example14"
         onClick={[Function]}
         role="tab"
@@ -2378,7 +2378,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example15"
         onClick={[Function]}
         role="tab"
@@ -2401,7 +2401,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example16"
         onClick={[Function]}
         role="tab"
@@ -2424,7 +2424,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example17"
         onClick={[Function]}
         role="tab"
@@ -2447,7 +2447,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example18"
         onClick={[Function]}
         role="tab"
@@ -2470,7 +2470,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example19"
         onClick={[Function]}
         role="tab"
@@ -2493,7 +2493,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example20"
         onClick={[Function]}
         role="tab"
@@ -2516,7 +2516,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example21"
         onClick={[Function]}
         role="tab"
@@ -2539,7 +2539,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example22"
         onClick={[Function]}
         role="tab"
@@ -2562,7 +2562,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example23"
         onClick={[Function]}
         role="tab"
@@ -2585,7 +2585,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example24"
         onClick={[Function]}
         role="tab"
@@ -2608,7 +2608,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example25"
         onClick={[Function]}
         role="tab"
@@ -2631,7 +2631,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example26"
         onClick={[Function]}
         role="tab"
@@ -2654,7 +2654,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example27"
         onClick={[Function]}
         role="tab"
@@ -2677,7 +2677,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example28"
         onClick={[Function]}
         role="tab"
@@ -2700,7 +2700,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example29"
         onClick={[Function]}
         role="tab"
@@ -2723,7 +2723,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example30"
         onClick={[Function]}
         role="tab"
@@ -2746,7 +2746,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example31"
         onClick={[Function]}
         role="tab"
@@ -2769,7 +2769,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example32"
         onClick={[Function]}
         role="tab"
@@ -2792,7 +2792,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example33"
         onClick={[Function]}
         role="tab"
@@ -2815,7 +2815,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example34"
         onClick={[Function]}
         role="tab"
@@ -2876,7 +2876,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
     >
       <button
         aria-selected={true}
-        data-css-8cstl3=""
+        data-css-1grzcdu=""
         id="example0"
         onClick={[Function]}
         role="tab"
@@ -2899,7 +2899,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example1"
         onClick={[Function]}
         role="tab"
@@ -2922,7 +2922,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example2"
         onClick={[Function]}
         role="tab"
@@ -2945,7 +2945,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example3"
         onClick={[Function]}
         role="tab"
@@ -2968,7 +2968,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example4"
         onClick={[Function]}
         role="tab"
@@ -2991,7 +2991,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example5"
         onClick={[Function]}
         role="tab"
@@ -3014,7 +3014,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example6"
         onClick={[Function]}
         role="tab"
@@ -3037,7 +3037,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example7"
         onClick={[Function]}
         role="tab"
@@ -3060,7 +3060,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example8"
         onClick={[Function]}
         role="tab"
@@ -3083,7 +3083,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example9"
         onClick={[Function]}
         role="tab"
@@ -3106,7 +3106,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example10"
         onClick={[Function]}
         role="tab"
@@ -3129,7 +3129,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example11"
         onClick={[Function]}
         role="tab"
@@ -3152,7 +3152,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example12"
         onClick={[Function]}
         role="tab"
@@ -3175,7 +3175,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example13"
         onClick={[Function]}
         role="tab"
@@ -3198,7 +3198,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example14"
         onClick={[Function]}
         role="tab"
@@ -3221,7 +3221,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example15"
         onClick={[Function]}
         role="tab"
@@ -3244,7 +3244,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example16"
         onClick={[Function]}
         role="tab"
@@ -3267,7 +3267,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example17"
         onClick={[Function]}
         role="tab"
@@ -3290,7 +3290,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example18"
         onClick={[Function]}
         role="tab"
@@ -3313,7 +3313,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example19"
         onClick={[Function]}
         role="tab"
@@ -3336,7 +3336,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example20"
         onClick={[Function]}
         role="tab"
@@ -3359,7 +3359,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example21"
         onClick={[Function]}
         role="tab"
@@ -3382,7 +3382,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example22"
         onClick={[Function]}
         role="tab"
@@ -3405,7 +3405,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example23"
         onClick={[Function]}
         role="tab"
@@ -3428,7 +3428,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example24"
         onClick={[Function]}
         role="tab"
@@ -3451,7 +3451,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example25"
         onClick={[Function]}
         role="tab"
@@ -3474,7 +3474,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example26"
         onClick={[Function]}
         role="tab"
@@ -3497,7 +3497,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example27"
         onClick={[Function]}
         role="tab"
@@ -3520,7 +3520,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example28"
         onClick={[Function]}
         role="tab"
@@ -3543,7 +3543,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example29"
         onClick={[Function]}
         role="tab"
@@ -3566,7 +3566,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example30"
         onClick={[Function]}
         role="tab"
@@ -3589,7 +3589,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example31"
         onClick={[Function]}
         role="tab"
@@ -3612,7 +3612,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example32"
         onClick={[Function]}
         role="tab"
@@ -3635,7 +3635,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example33"
         onClick={[Function]}
         role="tab"
@@ -3658,7 +3658,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example34"
         onClick={[Function]}
         role="tab"
@@ -3719,7 +3719,7 @@ exports[`Storyshots scrolling short list, resizing container 1`] = `
     >
       <button
         aria-selected={true}
-        data-css-8cstl3=""
+        data-css-1grzcdu=""
         id="example0"
         onClick={[Function]}
         role="tab"
@@ -3742,7 +3742,7 @@ exports[`Storyshots scrolling short list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example1"
         onClick={[Function]}
         role="tab"
@@ -3765,7 +3765,7 @@ exports[`Storyshots scrolling short list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example2"
         onClick={[Function]}
         role="tab"
@@ -3788,7 +3788,7 @@ exports[`Storyshots scrolling short list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example3"
         onClick={[Function]}
         role="tab"
@@ -3811,7 +3811,7 @@ exports[`Storyshots scrolling short list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example4"
         onClick={[Function]}
         role="tab"
@@ -3834,7 +3834,7 @@ exports[`Storyshots scrolling short list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example5"
         onClick={[Function]}
         role="tab"
@@ -3857,7 +3857,7 @@ exports[`Storyshots scrolling short list, resizing container 1`] = `
       </button>
       <button
         aria-selected={false}
-        data-css-1snvy0t=""
+        data-css-19dj59a=""
         id="example6"
         onClick={[Function]}
         role="tab"
@@ -3926,7 +3926,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
       >
         <button
           aria-selected={true}
-          data-css-8cstl3=""
+          data-css-1grzcdu=""
           id="example0"
           onClick={[Function]}
           role="tab"
@@ -3949,7 +3949,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example1"
           onClick={[Function]}
           role="tab"
@@ -3972,7 +3972,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example2"
           onClick={[Function]}
           role="tab"
@@ -3995,7 +3995,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example3"
           onClick={[Function]}
           role="tab"
@@ -4018,7 +4018,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example4"
           onClick={[Function]}
           role="tab"
@@ -4041,7 +4041,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example5"
           onClick={[Function]}
           role="tab"
@@ -4064,7 +4064,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example6"
           onClick={[Function]}
           role="tab"
@@ -4087,7 +4087,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example7"
           onClick={[Function]}
           role="tab"
@@ -4110,7 +4110,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example8"
           onClick={[Function]}
           role="tab"
@@ -4133,7 +4133,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example9"
           onClick={[Function]}
           role="tab"
@@ -4156,7 +4156,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example10"
           onClick={[Function]}
           role="tab"
@@ -4179,7 +4179,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example11"
           onClick={[Function]}
           role="tab"
@@ -4202,7 +4202,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example12"
           onClick={[Function]}
           role="tab"
@@ -4225,7 +4225,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example13"
           onClick={[Function]}
           role="tab"
@@ -4248,7 +4248,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example14"
           onClick={[Function]}
           role="tab"
@@ -4271,7 +4271,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example15"
           onClick={[Function]}
           role="tab"
@@ -4294,7 +4294,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example16"
           onClick={[Function]}
           role="tab"
@@ -4317,7 +4317,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example17"
           onClick={[Function]}
           role="tab"
@@ -4340,7 +4340,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example18"
           onClick={[Function]}
           role="tab"
@@ -4363,7 +4363,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example19"
           onClick={[Function]}
           role="tab"
@@ -4386,7 +4386,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example20"
           onClick={[Function]}
           role="tab"
@@ -4409,7 +4409,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example21"
           onClick={[Function]}
           role="tab"
@@ -4432,7 +4432,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example22"
           onClick={[Function]}
           role="tab"
@@ -4455,7 +4455,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example23"
           onClick={[Function]}
           role="tab"
@@ -4478,7 +4478,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example24"
           onClick={[Function]}
           role="tab"
@@ -4501,7 +4501,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example25"
           onClick={[Function]}
           role="tab"
@@ -4524,7 +4524,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example26"
           onClick={[Function]}
           role="tab"
@@ -4547,7 +4547,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example27"
           onClick={[Function]}
           role="tab"
@@ -4570,7 +4570,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example28"
           onClick={[Function]}
           role="tab"
@@ -4593,7 +4593,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example29"
           onClick={[Function]}
           role="tab"
@@ -4616,7 +4616,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example30"
           onClick={[Function]}
           role="tab"
@@ -4639,7 +4639,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example31"
           onClick={[Function]}
           role="tab"
@@ -4662,7 +4662,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example32"
           onClick={[Function]}
           role="tab"
@@ -4685,7 +4685,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example33"
           onClick={[Function]}
           role="tab"
@@ -4708,7 +4708,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
         </button>
         <button
           aria-selected={false}
-          data-css-1snvy0t=""
+          data-css-19dj59a=""
           id="example34"
           onClick={[Function]}
           role="tab"
@@ -4767,7 +4767,7 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
   >
     <button
       aria-selected={true}
-      data-css-8cstl3=""
+      data-css-1grzcdu=""
       id="wow"
       onClick={[Function]}
       role="tab"
@@ -4809,7 +4809,7 @@ exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
   >
     <button
       aria-selected={true}
-      data-css-8cstl3=""
+      data-css-1grzcdu=""
       id="wow"
       onClick={[Function]}
       role="tab"
@@ -4857,7 +4857,7 @@ exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
     >
       <button
         aria-selected={true}
-        data-css-8cstl3=""
+        data-css-1grzcdu=""
         id="wow"
         onClick={[Function]}
         role="tab"
