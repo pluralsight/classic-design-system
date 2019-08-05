@@ -22,7 +22,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-qkb1g2=""
       >
         <div
-          data-css-a8uf5t=""
+          data-css-1gthxiq=""
         >
           <div
             data-css-1oosafx=""
@@ -185,7 +185,7 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
         data-css-qkb1g2=""
       >
         <div
-          data-css-a8uf5t=""
+          data-css-1gthxiq=""
         >
           <div
             data-css-1oosafx=""
@@ -323,7 +323,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-qkb1g2=""
       >
         <div
-          data-css-a8uf5t=""
+          data-css-1gthxiq=""
         >
           <div
             data-css-1oosafx=""
@@ -548,7 +548,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
         data-css-qkb1g2=""
       >
         <div
-          data-css-a8uf5t=""
+          data-css-1gthxiq=""
         >
           <div
             data-css-1oosafx=""
@@ -654,7 +654,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
         data-css-qkb1g2=""
       >
         <div
-          data-css-a8uf5t=""
+          data-css-1gthxiq=""
         >
           <div
             data-css-1oosafx=""
@@ -764,7 +764,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-qkb1g2=""
       >
         <div
-          data-css-a8uf5t=""
+          data-css-1gthxiq=""
         >
           <div
             data-css-1oosafx=""
@@ -941,7 +941,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-qkb1g2=""
       >
         <div
-          data-css-a8uf5t=""
+          data-css-1gthxiq=""
         >
           <div
             data-css-1oosafx=""
@@ -1118,7 +1118,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-qkb1g2=""
       >
         <div
-          data-css-a8uf5t=""
+          data-css-1gthxiq=""
         >
           <div
             data-css-1ybvkp1=""
@@ -1168,7 +1168,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             }
                           }
                         >
-                          Title Here
+                          Card 0
                         </span>
                         <span
                           aria-hidden="true"
@@ -1181,7 +1181,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             }
                           }
                         >
-                          Title Here
+                          Card 0
                         </span>
                         <span
                           aria-hidden="true"
@@ -1227,7 +1227,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                               }
                             }
                           >
-                            Title Here
+                            Card 0
                           </span>
                         </span>
                       </span>
@@ -1242,40 +1242,20 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               <span
                 data-css-1tz10dh=""
               >
-                It is impossible to count the grand contributions of this great author
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                Levels heretofore unknown in the battle for truth and knowledge
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                A length of such amazing lengthitude so-as to blow the mind
+                <span
+                  data-css-1202ll4=""
+                >
+                  <a
+                    href="#"
+                  >
+                    meta
+                  </a>
+                </span>
               </span>
             </div>
           </div>
         </div>
       </li>
-      <li
-        data-css-bxro55=""
-        data-css-qkb1g2=""
-        hidden={true}
-        tabIndex={-1}
-      />
       <li
         data-css-bxro55=""
         data-css-qkb1g2=""
@@ -1409,7 +1389,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         Currently on page 
         1
          of 
-        14
+        13
         .
       </p>
       <p>
@@ -1442,7 +1422,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-qkb1g2=""
       >
         <div
-          data-css-a8uf5t=""
+          data-css-1gthxiq=""
         >
           <div
             data-css-1ybvkp1=""
@@ -1492,7 +1472,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             }
                           }
                         >
-                          Title Here
+                          Card 0
                         </span>
                         <span
                           aria-hidden="true"
@@ -1505,7 +1485,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             }
                           }
                         >
-                          Title Here
+                          Card 0
                         </span>
                         <span
                           aria-hidden="true"
@@ -1551,7 +1531,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                               }
                             }
                           >
-                            Title Here
+                            Card 0
                           </span>
                         </span>
                       </span>
@@ -1566,40 +1546,20 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               <span
                 data-css-1tz10dh=""
               >
-                It is impossible to count the grand contributions of this great author
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                Levels heretofore unknown in the battle for truth and knowledge
-              </span>
-              <span
-                aria-hidden={true}
-                data-css-kykfz1=""
-              >
-                ·
-              </span>
-              <span
-                data-css-1tz10dh=""
-              >
-                A length of such amazing lengthitude so-as to blow the mind
+                <span
+                  data-css-1202ll4=""
+                >
+                  <a
+                    href="#"
+                  >
+                    meta
+                  </a>
+                </span>
               </span>
             </div>
           </div>
         </div>
       </li>
-      <li
-        data-css-bxro55=""
-        data-css-qkb1g2=""
-        hidden={true}
-        tabIndex={-1}
-      />
       <li
         data-css-bxro55=""
         data-css-qkb1g2=""
@@ -1733,7 +1693,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         Currently on page 
         1
          of 
-        14
+        13
         .
       </p>
       <p>
