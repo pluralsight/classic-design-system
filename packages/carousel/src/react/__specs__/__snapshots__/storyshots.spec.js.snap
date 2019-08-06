@@ -11,7 +11,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1ltsxrp=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -19,13 +19,13 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
         >
           <div
-            data-css-1oosafx=""
+            data-css-1f7uvld=""
             data-testid="mock-item"
           >
             item: 
@@ -34,50 +34,50 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
@@ -174,7 +174,7 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1ltsxrp=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -182,13 +182,13 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
         >
           <div
-            data-css-1oosafx=""
+            data-css-1f7uvld=""
             data-testid="mock-item"
           >
             item: 
@@ -197,20 +197,20 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
@@ -312,7 +312,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1ltsxrp=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -320,13 +320,13 @@ exports[`Storyshots Carousel/items many items 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
         >
           <div
-            data-css-1oosafx=""
+            data-css-1f7uvld=""
             data-testid="mock-item"
           >
             item: 
@@ -335,122 +335,122 @@ exports[`Storyshots Carousel/items many items 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
@@ -537,7 +537,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1ltsxrp=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -545,13 +545,13 @@ exports[`Storyshots Carousel/items one item 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
         >
           <div
-            data-css-1oosafx=""
+            data-css-1f7uvld=""
             data-testid="mock-item"
           >
             just one item
@@ -643,7 +643,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1ltsxrp=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -651,13 +651,13 @@ exports[`Storyshots Carousel/items two items 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
         >
           <div
-            data-css-1oosafx=""
+            data-css-1f7uvld=""
             data-testid="mock-item"
           >
             first item
@@ -665,8 +665,8 @@ exports[`Storyshots Carousel/items two items 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
@@ -753,7 +753,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1ltsxrp=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -761,13 +761,13 @@ exports[`Storyshots Carousel/size narrow 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
         >
           <div
-            data-css-1oosafx=""
+            data-css-1f7uvld=""
             data-testid="mock-item"
           >
             item: 
@@ -776,74 +776,74 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
@@ -930,7 +930,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1ltsxrp=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -938,13 +938,13 @@ exports[`Storyshots Carousel/size wide 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
         >
           <div
-            data-css-1oosafx=""
+            data-css-1f7uvld=""
             data-testid="mock-item"
           >
             item: 
@@ -953,74 +953,74 @@ exports[`Storyshots Carousel/size wide 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
@@ -1096,6 +1096,345 @@ exports[`Storyshots Carousel/size wide 1`] = `
 </div>
 `;
 
+exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
+<div
+  data-css-x7zjce=""
+  data-testid="story-wrapper"
+>
+  <div
+    style={
+      Object {
+        "border": "1px solid red",
+        "maxWidth": 400,
+        "padding": 10,
+      }
+    }
+  >
+    <div
+      data-css-rumlay=""
+    >
+      <ul
+        aria-describedby="carousel-mock_unique_id__instructions"
+        aria-label="carousel"
+        data-css-1f0n9j9=""
+        id="carousel-mock_unique_id"
+        onKeyDown={[Function]}
+        role="region"
+        tabIndex="0"
+      >
+        <li
+          data-css-bxro55=""
+          data-css-fx3xhe=""
+        >
+          <div
+            data-css-a8uf5t=""
+          >
+            <div
+              data-css-1f7uvld=""
+              data-testid="mock-item"
+            >
+              <div
+                data-css-1pg0ko5=""
+                onKeyDown={[Function]}
+                role="menu"
+                style={
+                  Object {
+                    "left": 20,
+                    "top": 20,
+                  }
+                }
+              >
+                <div
+                  data-css-13azwyo=""
+                >
+                  <button
+                    aria-haspopup={false}
+                    data-css-1qr74j9=""
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseOver={[Function]}
+                    role="menuitem"
+                    tabIndex="0"
+                  >
+                    item: 
+                    0
+                  </button>
+                </div>
+                <div
+                  data-css-13azwyo=""
+                >
+                  <button
+                    aria-haspopup={false}
+                    data-css-1stw8mg=""
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseOver={[Function]}
+                    role="menuitem"
+                    tabIndex="0"
+                  >
+                    item: 
+                    1
+                  </button>
+                </div>
+                <div
+                  data-css-13azwyo=""
+                >
+                  <button
+                    aria-haspopup={false}
+                    data-css-1stw8mg=""
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseOver={[Function]}
+                    role="menuitem"
+                    tabIndex="0"
+                  >
+                    item: 
+                    2
+                  </button>
+                </div>
+                <div
+                  data-css-13azwyo=""
+                >
+                  <button
+                    aria-haspopup={false}
+                    data-css-1stw8mg=""
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseOver={[Function]}
+                    role="menuitem"
+                    tabIndex="0"
+                  >
+                    item: 
+                    3
+                  </button>
+                </div>
+                <div
+                  data-css-13azwyo=""
+                >
+                  <button
+                    aria-haspopup={false}
+                    data-css-1stw8mg=""
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseOver={[Function]}
+                    role="menuitem"
+                    tabIndex="0"
+                  >
+                    item: 
+                    4
+                  </button>
+                </div>
+                <div
+                  data-css-13azwyo=""
+                >
+                  <button
+                    aria-haspopup={false}
+                    data-css-1stw8mg=""
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseOver={[Function]}
+                    role="menuitem"
+                    tabIndex="0"
+                  >
+                    item: 
+                    5
+                  </button>
+                </div>
+                <div
+                  data-css-13azwyo=""
+                >
+                  <button
+                    aria-haspopup={false}
+                    data-css-1stw8mg=""
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseOver={[Function]}
+                    role="menuitem"
+                    tabIndex="0"
+                  >
+                    item: 
+                    6
+                  </button>
+                </div>
+                <div
+                  data-css-13azwyo=""
+                >
+                  <button
+                    aria-haspopup={false}
+                    data-css-1stw8mg=""
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseOver={[Function]}
+                    role="menuitem"
+                    tabIndex="0"
+                  >
+                    item: 
+                    7
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+      </ul>
+      <ul
+        aria-controls="carousel-mock_unique_id"
+        aria-label="carousel controls"
+        data-css-b3afd4=""
+      >
+        <li>
+          <button
+            aria-label="previous"
+            data-css-1wkjkcr=""
+            hidden={true}
+            onClick={[Function]}
+            tabIndex={-1}
+          >
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="next"
+            data-css-n705st=""
+            onClick={[Function]}
+          >
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </li>
+      </ul>
+      <div
+        data-css-6wu9td=""
+        id="carousel-mock_unique_id__instructions"
+      >
+        <p>
+          Currently on page 
+          1
+           of 
+          14
+          .
+        </p>
+        <p>
+          Use left and right arrow keys for navigation.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Carousel/with Card narrow 1`] = `
 <div
   data-css-x7zjce=""
@@ -1107,7 +1446,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1ltsxrp=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -1115,7 +1454,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
@@ -1271,80 +1610,80 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
@@ -1431,7 +1770,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1ltsxrp=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -1439,7 +1778,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
@@ -1595,80 +1934,80 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
