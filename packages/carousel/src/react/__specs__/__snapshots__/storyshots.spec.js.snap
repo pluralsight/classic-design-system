@@ -1,5 +1,314 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Carousel/Item with child nodes 1`] = `
+<div
+  data-css-x7zjce=""
+  data-testid="story-wrapper"
+>
+  <div
+    data-css-rumlay=""
+  >
+    <ul
+      aria-describedby="carousel-mock_unique_id__instructions"
+      aria-label="carousel"
+      data-css-1ltsxrp=""
+      id="carousel-mock_unique_id"
+      onKeyDown={[Function]}
+      role="region"
+      tabIndex="0"
+    >
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+      >
+        <div
+          data-css-a8uf5t=""
+        >
+          <div
+            data-css-1oosafx=""
+            data-testid="mock-item"
+          />
+        </div>
+      </li>
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+    </ul>
+    <ul
+      aria-controls="carousel-mock_unique_id"
+      aria-label="carousel controls"
+      data-css-b3afd4=""
+    >
+      <li>
+        <button
+          aria-label="previous"
+          data-css-1wkjkcr=""
+          hidden={true}
+          onClick={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="next"
+          data-css-n705st=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+    </ul>
+    <div
+      data-css-6wu9td=""
+      id="carousel-mock_unique_id__instructions"
+    >
+      <p>
+        Currently on page 
+        1
+         of 
+        9
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel/Item with render props 1`] = `
+<div
+  data-css-x7zjce=""
+  data-testid="story-wrapper"
+>
+  <div
+    data-css-rumlay=""
+  >
+    <ul
+      aria-describedby="carousel-mock_unique_id__instructions"
+      aria-label="carousel"
+      data-css-1ltsxrp=""
+      id="carousel-mock_unique_id"
+      onKeyDown={[Function]}
+      role="region"
+      tabIndex="0"
+    >
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+      >
+        <div
+          data-css-a8uf5t=""
+        >
+          <div
+            data-css-1oosafx=""
+            data-testid="mock-item"
+          >
+            <pre>
+              {
+  "isActivePage": true,
+  "itemIndex": 0,
+  "pageCount": 9,
+  "pageIndex": 0
+}
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+      <li
+        data-css-bxro55=""
+        data-css-qkb1g2=""
+        hidden={true}
+        tabIndex={-1}
+      />
+    </ul>
+    <ul
+      aria-controls="carousel-mock_unique_id"
+      aria-label="carousel controls"
+      data-css-b3afd4=""
+    >
+      <li>
+        <button
+          aria-label="previous"
+          data-css-1wkjkcr=""
+          hidden={true}
+          onClick={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="next"
+          data-css-n705st=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </li>
+    </ul>
+    <div
+      data-css-6wu9td=""
+      id="carousel-mock_unique_id__instructions"
+    >
+      <p>
+        Currently on page 
+        1
+         of 
+        9
+        .
+      </p>
+      <p>
+        Use left and right arrow keys for navigation.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Carousel/controls custom alignment 1`] = `
 <div
   data-css-x7zjce=""
