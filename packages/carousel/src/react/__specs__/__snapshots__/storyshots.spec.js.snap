@@ -11,7 +11,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-10pemkz=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -19,7 +19,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-1gthxiq=""
@@ -34,50 +34,50 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
@@ -174,7 +174,7 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-10pemkz=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -182,7 +182,7 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-1gthxiq=""
@@ -197,20 +197,20 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
@@ -312,7 +312,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-10pemkz=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -320,7 +320,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-1gthxiq=""
@@ -335,122 +335,122 @@ exports[`Storyshots Carousel/items many items 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
@@ -537,7 +537,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-10pemkz=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -545,7 +545,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-1gthxiq=""
@@ -643,7 +643,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-10pemkz=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -651,7 +651,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-1gthxiq=""
@@ -665,8 +665,8 @@ exports[`Storyshots Carousel/items two items 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
@@ -753,7 +753,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-10pemkz=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -761,7 +761,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-1gthxiq=""
@@ -776,74 +776,74 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
@@ -930,7 +930,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-10pemkz=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -938,7 +938,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-1gthxiq=""
@@ -953,74 +953,74 @@ exports[`Storyshots Carousel/size wide 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
@@ -1116,7 +1116,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
       <ul
         aria-describedby="carousel-mock_unique_id__instructions"
         aria-label="carousel"
-        data-css-10pemkz=""
+        data-css-1f0n9j9=""
         id="carousel-mock_unique_id"
         onKeyDown={[Function]}
         role="region"
@@ -1124,7 +1124,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
       >
         <li
           data-css-bxro55=""
-          data-css-qkb1g2=""
+          data-css-fx3xhe=""
         >
           <div
             data-css-1gthxiq=""
@@ -1285,80 +1285,80 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           </div>
         </li>
         <li
+          data-css-17v35en=""
           data-css-bxro55=""
-          data-css-qkb1g2=""
           hidden={true}
           tabIndex={-1}
         />
         <li
+          data-css-17v35en=""
           data-css-bxro55=""
-          data-css-qkb1g2=""
           hidden={true}
           tabIndex={-1}
         />
         <li
+          data-css-17v35en=""
           data-css-bxro55=""
-          data-css-qkb1g2=""
           hidden={true}
           tabIndex={-1}
         />
         <li
+          data-css-17v35en=""
           data-css-bxro55=""
-          data-css-qkb1g2=""
           hidden={true}
           tabIndex={-1}
         />
         <li
+          data-css-17v35en=""
           data-css-bxro55=""
-          data-css-qkb1g2=""
           hidden={true}
           tabIndex={-1}
         />
         <li
+          data-css-17v35en=""
           data-css-bxro55=""
-          data-css-qkb1g2=""
           hidden={true}
           tabIndex={-1}
         />
         <li
+          data-css-17v35en=""
           data-css-bxro55=""
-          data-css-qkb1g2=""
           hidden={true}
           tabIndex={-1}
         />
         <li
+          data-css-17v35en=""
           data-css-bxro55=""
-          data-css-qkb1g2=""
           hidden={true}
           tabIndex={-1}
         />
         <li
+          data-css-17v35en=""
           data-css-bxro55=""
-          data-css-qkb1g2=""
           hidden={true}
           tabIndex={-1}
         />
         <li
+          data-css-17v35en=""
           data-css-bxro55=""
-          data-css-qkb1g2=""
           hidden={true}
           tabIndex={-1}
         />
         <li
+          data-css-17v35en=""
           data-css-bxro55=""
-          data-css-qkb1g2=""
           hidden={true}
           tabIndex={-1}
         />
         <li
+          data-css-17v35en=""
           data-css-bxro55=""
-          data-css-qkb1g2=""
           hidden={true}
           tabIndex={-1}
         />
         <li
+          data-css-17v35en=""
           data-css-bxro55=""
-          data-css-qkb1g2=""
           hidden={true}
           tabIndex={-1}
         />
@@ -1446,7 +1446,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-10pemkz=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -1454,7 +1454,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-1gthxiq=""
@@ -1596,74 +1596,74 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
@@ -1750,7 +1750,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-10pemkz=""
+      data-css-1f0n9j9=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -1758,7 +1758,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
     >
       <li
         data-css-bxro55=""
-        data-css-qkb1g2=""
+        data-css-fx3xhe=""
       >
         <div
           data-css-1gthxiq=""
@@ -1900,74 +1900,74 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         </div>
       </li>
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />
       <li
+        data-css-17v35en=""
         data-css-bxro55=""
-        data-css-qkb1g2=""
         hidden={true}
         tabIndex={-1}
       />

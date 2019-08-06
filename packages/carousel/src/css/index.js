@@ -24,6 +24,13 @@ const resetButton = {
   }
 }
 
+const resetFocus = {
+  '&:focus': {
+    outline: 'none',
+    boxShadow: '0 0 0 2px rgba(0, 123, 255, .5)'
+  }
+}
+
 const resetList = {
   lineHeight: 'initial',
   listStyle: 'none',
@@ -84,6 +91,7 @@ export default {
 
   '.psds-carousel__pages': {
     ...resetList,
+    ...resetFocus,
     display: 'flex',
     width: '100%'
   },
@@ -97,11 +105,14 @@ export default {
     display: 'flex',
     flex: '1 0 100%',
     margin: `0 calc(${core.layout.spacingSmall}/2)`,
+    pointerEvents: 'none',
     transition: `transform ${core.motion.speedXSlow} ease-in-out`,
 
     '&:first-child': { marginLeft: 0 },
     '&:last-child': { marginRight: 0 }
   },
+
+  '.psds-carousel__page--active': { pointerEvents: 'auto' },
 
   '.psds-carousel__item': {
     margin: `0 calc(${core.layout.spacingSmall}/2)`,

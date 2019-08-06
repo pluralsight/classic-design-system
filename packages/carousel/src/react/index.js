@@ -31,7 +31,11 @@ const styles = {
       css(stylesheet['.psds-carousel__pages']),
       transitioning && css(stylesheet['.psds-carousel__pages--transitioning'])
     ),
-  page: () => css(stylesheet['.psds-carousel__page']),
+  page: props =>
+    compose(
+      css(stylesheet['.psds-carousel__page']),
+      props.isActivePage && css(stylesheet['.psds-carousel__page--active'])
+    ),
   instructions: () => css(stylesheet['.psds-carousel__instructions']),
   item: () => css(stylesheet['.psds-carousel__item'])
 }
@@ -176,22 +180,24 @@ Pages.propTypes = {
   onSwipeRight: PropTypes.func.isRequired
 }
 
-function Page({ isActivePage, ...props }) {
+function Page(props) {
   const ref = React.useRef()
+
+  const { children, isActivePage, ...rest } = props
   const { offset } = React.useContext(CarouselContext)
 
   return (
     <li
       ref={ref}
-      {...styles.page()}
+      {...styles.page(props)}
       {...css({ transform: `translate3d(${offset}px, 0, 0)` })}
-      {...props}
+      {...rest}
       {...(!isActivePage && { hidden: true, tabIndex: -1 })}
     >
       <Transition in={isActivePage} timeout={TRANSITION_DURATION_MS}>
         {state => {
           if (state === 'exited') return null
-          return props.children
+          return children
         }}
       </Transition>
     </li>
