@@ -17,7 +17,7 @@ import {
   PropTypes,
   SectionHeading,
   withServerProps
-} from '../../src/ui'
+} from '../../src/ui/index.js'
 
 const MOCK_DATA = {
   courses: [
@@ -201,6 +201,40 @@ export default withServerProps(_ => (
               <code>narrow</code>,
               'size of carousel items'
             ])
+          ],
+          'Carousel.Controls': [
+            PropTypes.row([
+              'children',
+              <span>
+                <code>node</code>
+              </span>,
+              true,
+              null
+            ])
+          ],
+          'Carousel.Control': [
+            PropTypes.row([
+              'direction',
+              PropTypes.union(Carousel.Control.directions),
+              true,
+              null,
+              <span>
+                (from <code>Carousel.Control.directions</code>)
+              </span>
+            ])
+          ],
+          'Carousel.Item': [
+            PropTypes.row([
+              'children',
+              <span>
+                <code>node</code>
+                {' | '}
+                <code>() => node</code>
+              </span>,
+              true,
+              null,
+              'render prop used to access item and page metadata'
+            ])
           ]
         }}
       />
@@ -278,6 +312,36 @@ export default withServerProps(_ => (
         ]}
       />
 
+      <SectionHeading>Access to page and item metadata</SectionHeading>
+      <P>
+        If you need additional metadata about the carousel and its items you can
+        get it with this one simple trick.
+      </P>
+
+      <Example.React
+        themeToggle
+        includes={{
+          Carousel,
+          Card,
+          data: MOCK_DATA,
+          randomInt
+        }}
+        codes={[
+          `
+<Carousel size={Carousel.sizes.wide}>
+  {new Array(9).fill(null).map((_, index) => (
+    <Carousel.Item key={index}>
+      {data => (
+        <div>
+          <pre>{JSON.stringify(data, null, 2)}</pre>
+        </div>
+      )}
+    </Carousel.Item>
+  ))}
+</Carousel>
+`
+        ]}
+      />
       <SectionHeading>Guidelines</SectionHeading>
       <P>
         The height of the carousel adapts to the height of the content it
