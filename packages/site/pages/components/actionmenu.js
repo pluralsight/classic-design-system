@@ -211,7 +211,7 @@ export default withServerProps(_ => (
             ]),
             PropTypes.row([
               'onChange',
-              'function',
+              <span>(Event, value, label) => ()</span>,
               null,
               null,
               'triggered when an item selected'
