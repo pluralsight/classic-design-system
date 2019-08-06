@@ -1,4 +1,4 @@
-import core from '@pluralsight/ps-design-system-core'
+import React from 'react'
 import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react'
 
 import {
@@ -6,14 +6,13 @@ import {
   Code,
   Content,
   Example,
-  Heading,
   P,
   PageHeading,
   PropTypes,
   SectionHeading,
   TextLink,
   withServerProps
-} from '../../src/ui'
+} from '../../src/ui/index.js'
 
 export default withServerProps(_ => (
   <Chrome>

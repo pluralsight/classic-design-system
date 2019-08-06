@@ -139,8 +139,8 @@ class ReactExample extends React.Component {
     this.setState(_ => ({ codes }), debounce(this.renderOutput, 200))
   }
 
-  handleThemeSelect(i) {
-    const themeName = Theme.names[Object.keys(Theme.names)[i]]
+  handleThemeSelect(evt, index) {
+    const themeName = Theme.names[Object.keys(Theme.names)[index]]
     this.setState({ themeName })
   }
 

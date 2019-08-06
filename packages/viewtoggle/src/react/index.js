@@ -1,60 +1,112 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import ReactDOM from 'react-dom'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
-import css from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const styles = {
   optionButton: props =>
-    glamor.css(
-      css['.psds-viewtoggle__option'],
-      props.active && css['.psds-viewtoggle__option--active']
+    compose(
+      css(stylesheet['.psds-viewtoggle__option']),
+      props.active && css(stylesheet['.psds-viewtoggle__option--active'])
     ),
-  list: props => glamor.css(css['.psds-viewtoggle']),
-  activePillBg: props => glamor.css(css['.psds-viewtoggle__option-bg']),
-  pillBgSpacer: props => glamor.css(css['.psds-viewtoggle__option-bg__spacer'])
+  list: () => css(stylesheet['.psds-viewtoggle']),
+  activePillBg: () => css(stylesheet['.psds-viewtoggle__option-bg']),
+  pillBgSpacer: () => css(stylesheet['.psds-viewtoggle__option-bg__spacer'])
 }
 
-const OptionButton = props => (
-  <button
-    {...styles.optionButton(props)}
-    {...filterReactProps(props, { tagName: 'button' })}
-  />
-)
+const ViewToggle = React.forwardRef(({ onSelect, ...props }, forwardedRef) => {
+  const ref = forwardedRef || React.useRef()
+  const hasRenderedOnce = useHasRenderedOnce()
 
-class Option extends React.Component {
-  constructor(props) {
-    super(props)
-    this.handleClick = this.handleClick.bind(this)
+  const initialIndex = React.useMemo(() => findActiveIndex(props.children), [
+    props.children
+  ])
+  const [activeIndex, setActiveIndex] = React.useState(initialIndex)
+
+  React.useEffect(() => {
+    const index = findActiveIndex(props.children)
+    setActiveIndex(index)
+  }, [props.children])
+
+  function handleSelect(evt, index) {
+    setActiveIndex(index)
+
+    if (evt && isFunction(onSelect)) onSelect(evt, index)
   }
 
-  componentDidMount() {
-    if (this.props.active) setTimeout(_ => this.handleClick(), 0)
-  }
+  function renderActivePill() {
+    const activeEl = React.Children.toArray(props.children)[activeIndex]
 
-  handleClick(evt) {
-    this.props._onSelect(this.props._i, evt)
-  }
+    let activePillStyle = {}
+    if (hasRenderedOnce && ref.current) {
+      const selector = `button:nth-of-type(${activeIndex + 1})`
+      const activeNode = ref.current.querySelector(selector)
 
-  render() {
+      if (activeNode) activePillStyle = { left: activeNode.offsetLeft }
+    }
+
     return (
-      <OptionButton
-        active={this.props.active}
-        onClick={this.handleClick}
-        role="radio"
-        aria-selected={this.props.active}
-      >
-        {this.props.children}
-      </OptionButton>
+      <ActivePillBg aria-hidden style={activePillStyle}>
+        <PillBgSpacer>{activeEl.props.children}</PillBgSpacer>
+      </ActivePillBg>
     )
   }
+
+  function renderChildren() {
+    return React.Children.map(props.children, (child, i) => {
+      if (i >= vars.maxOptionsCount) return null
+
+      return React.cloneElement(child, {
+        _i: i,
+        _onSelect: handleSelect,
+        active: activeIndex === i
+      })
+    })
+  }
+
+  return (
+    <List ref={ref} role="radiogroup" {...props}>
+      {renderActivePill()}
+      {renderChildren()}
+    </List>
+  )
+})
+
+ViewToggle.propTypes = {
+  children: PropTypes.node,
+  onSelect: PropTypes.func
 }
 
-Option.displayName = 'ViewToggle.Option'
+const List = React.forwardRef((props, ref) => (
+  <div ref={ref} {...styles.list(props)} {...filterReactProps(props)} />
+))
+
+const ActivePillBg = props => <div {...styles.activePillBg(props)} {...props} />
+
+const PillBgSpacer = props => (
+  <span {...styles.pillBgSpacer(props)} {...props} />
+)
+
+const Option = React.forwardRef((props, ref) => {
+  function handleClick(evt) {
+    props._onSelect(evt, props._i)
+  }
+
+  return (
+    <OptionButton
+      aria-selected={props.active}
+      onClick={handleClick}
+      ref={ref}
+      role="radio"
+      {...props}
+    />
+  )
+})
+
 Option.propTypes = {
   _i: PropTypes.number,
   _onSelect: PropTypes.func,
@@ -65,92 +117,34 @@ Option.defaultProps = {
   active: false
 }
 
-const List = props => (
-  <div {...styles.list(props)} {...filterReactProps(props)} />
-)
+const OptionButton = React.forwardRef((props, ref) => (
+  <button
+    ref={ref}
+    {...styles.optionButton(props)}
+    {...filterReactProps(props, { tagName: 'button' })}
+  />
+))
 
-const ActivePillBg = props => <div {...styles.activePillBg(props)} {...props} />
-
-const PillBgSpacer = props => (
-  <span {...styles.pillBgSpacer(props)} {...props} />
-)
-
-const findActiveIndex = els =>
-  React.Children.toArray(els).findIndex(el => el.props.active)
-
-class ViewToggle extends React.Component {
-  constructor(props) {
-    super(props)
-    const activeIndex = findActiveIndex(this.props.children)
-    this.state = {
-      activeIndex: activeIndex > -1 ? activeIndex : 0
-    }
-    this.handleSelect = this.handleSelect.bind(this)
-    this.childrenEls = []
-  }
-
-  componentWillReceiveProps(nextProps) {
-    const nextActiveIndex = findActiveIndex(nextProps.children)
-
-    if (this.state.activeIndex !== nextActiveIndex && nextActiveIndex !== -1) {
-      this.setState({ activeIndex: nextActiveIndex })
-    }
-  }
-
-  handleSelect(i, evt) {
-    this.setState({ activeIndex: i }, _ => {
-      if (typeof this.props.onSelect === 'function' && evt)
-        this.props.onSelect(i, evt)
-    })
-  }
-
-  renderChildren(children, props) {
-    return React.Children.map(children, (child, i) => {
-      if (i < vars.maxOptionsCount)
-        return React.cloneElement(child, {
-          _i: i,
-          _onSelect: this.handleSelect,
-          active: this.state.activeIndex === i,
-          ref: el => {
-            this.childrenEls[i] = ReactDOM.findDOMNode(el)
-            if (typeof child.ref === 'function') child.ref(el)
-          }
-        })
-    })
-  }
-
-  renderActivePill() {
-    const activeIndex = this.state.activeIndex
-
-    const activeNode = this.childrenEls[activeIndex]
-    const activeEl = React.Children.toArray(this.props.children)[activeIndex]
-
-    const style = {
-      ...(activeNode && { left: activeNode.offsetLeft })
-    }
-
-    return (
-      <ActivePillBg style={style} aria-hidden>
-        <PillBgSpacer>{activeEl.props.children}</PillBgSpacer>
-      </ActivePillBg>
-    )
-  }
-
-  render() {
-    return (
-      <List role="radiogroup">
-        {this.renderActivePill()}
-        {this.renderChildren(this.props.children, this.props)}
-      </List>
-    )
-  }
+function findActiveIndex(els) {
+  const index = React.Children.toArray(els).findIndex(el => el.props.active)
+  return index >= 0 ? index : 0
 }
-ViewToggle.displayName = 'ViewToggle'
-ViewToggle.propTypes = {
-  children: PropTypes.node,
-  onSelect: PropTypes.func
+
+function isFunction(fn) {
+  return typeof fn === 'function'
+}
+
+function useHasRenderedOnce() {
+  const [hasRenderedOnce, setHasRenderedOnce] = React.useState(false)
+
+  React.useEffect(() => {
+    setHasRenderedOnce(true)
+  }, [])
+
+  return hasRenderedOnce
 }
 
 ViewToggle.Option = Option
+ViewToggle.Option.displayName = 'ViewToggle.Option'
 
 export default ViewToggle
