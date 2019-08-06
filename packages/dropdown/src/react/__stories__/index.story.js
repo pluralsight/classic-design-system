@@ -128,6 +128,44 @@ storiesOf('whitelist', module)
     }
     return <ChangeStory />
   })
+  .add('clear', _ => {
+    class ClearStory extends React.Component {
+      constructor() {
+        super()
+        this.state = { value: 'two' }
+        this.handleChange = this.handleChange.bind(this)
+        this.handleClear = this.handleClear.bind(this)
+      }
+      handleChange(evt, value, label) {
+        this.setState({ value })
+      }
+      handleClear() {
+        this.setState({ value: null })
+      }
+      render() {
+        return (
+          <div>
+            <div style={{ color: '#ababab' }}>Value: {this.state.value}</div>
+            <button onClick={this.handleClear}>Clear</button>
+            <Dropdown
+              placeholder="Change me"
+              label="Thing to change"
+              menu={
+                <ActionMenu>
+                  <ActionMenu.Item value="one">One item</ActionMenu.Item>
+                  <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+                  <ActionMenu.Item value="three">Three item</ActionMenu.Item>
+                </ActionMenu>
+              }
+              onChange={this.handleChange}
+              value={this.state.value}
+            />
+          </div>
+        )
+      }
+    }
+    return <ClearStory />
+  })
 
 storiesOf('layouts', module)
   .add('full width', _ => (

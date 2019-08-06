@@ -65,11 +65,23 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
   const [isKeyboarding, setKeyboarding] = React.useState(false)
   const [isOpen, setOpen] = React.useState(false)
 
-  const itemMatchingValue = React.useMemo(_ => {
-    return findMatchingActionMenuItem(props.menu, props.value)
-  }, [props.menu, props.value])
+  const itemMatchingValue = React.useMemo(
+    _ => {
+      return findMatchingActionMenuItem(props.menu, props.value)
+    },
+    [props.menu, props.value]
+  )
   const [selectedLabel, setSelectedLabel] = React.useState(
     itemMatchingValue ? itemMatchingValue.props.children : null
+  )
+
+  React.useEffect(
+    _ => {
+      setSelectedLabel(
+        itemMatchingValue ? itemMatchingValue.props.children : null
+      )
+    },
+    [itemMatchingValue]
   )
 
   function handleToggleOpen(evt) {
