@@ -96,74 +96,67 @@ storiesOf('whitelist', module)
     />
   ))
   .add('onChange', _ => {
-    class ChangeStory extends React.Component {
-      constructor() {
-        super()
-        this.state = { value: 'two' }
-        this.handleChange = this.handleChange.bind(this)
+    function ChangeStory() {
+      const [value, setValue] = React.useState('two')
+
+      function handleChange(evt, value, label) {
+        setValue(value)
       }
-      handleChange(evt, value, label) {
-        this.setState({ value })
-      }
-      render() {
-        return (
-          <div>
-            <div style={{ color: '#ababab' }}>Value: {this.state.value}</div>
-            <Dropdown
-              placeholder="Change me"
-              label="Thing to change"
-              menu={
-                <ActionMenu>
-                  <ActionMenu.Item value="one">One item</ActionMenu.Item>
-                  <ActionMenu.Item value="two">Two item</ActionMenu.Item>
-                  <ActionMenu.Item value="three">Three item</ActionMenu.Item>
-                </ActionMenu>
-              }
-              onChange={this.handleChange}
-              value={this.state.value}
-            />
-          </div>
-        )
-      }
+
+      return (
+        <div>
+          <div style={{ color: '#ababab' }}>Value: {value}</div>
+          <Dropdown
+            placeholder="Change me"
+            label="Thing to change"
+            menu={
+              <ActionMenu>
+                <ActionMenu.Item value="one">One item</ActionMenu.Item>
+                <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+                <ActionMenu.Item value="three">Three item</ActionMenu.Item>
+              </ActionMenu>
+            }
+            onChange={handleChange}
+            value={value}
+          />
+        </div>
+      )
     }
     return <ChangeStory />
   })
   .add('clear', _ => {
-    class ClearStory extends React.Component {
-      constructor() {
-        super()
-        this.state = { value: 'two' }
-        this.handleChange = this.handleChange.bind(this)
-        this.handleClear = this.handleClear.bind(this)
+    function ClearStory(props) {
+      const [value, setValue] = React.useState('two')
+
+      function handleChange(evt, value, label) {
+        setValue(value)
       }
-      handleChange(evt, value, label) {
-        this.setState({ value })
+
+      function handleClear() {
+        setValue(null)
       }
-      handleClear() {
-        this.setState({ value: null })
-      }
-      render() {
-        return (
-          <div>
-            <div style={{ color: '#ababab' }}>Value: {this.state.value}</div>
-            <button onClick={this.handleClear}>Clear</button>
-            <Dropdown
-              placeholder="Change me"
-              label="Thing to change"
-              menu={
-                <ActionMenu>
-                  <ActionMenu.Item value="one">One item</ActionMenu.Item>
-                  <ActionMenu.Item value="two">Two item</ActionMenu.Item>
-                  <ActionMenu.Item value="three">Three item</ActionMenu.Item>
-                </ActionMenu>
-              }
-              onChange={this.handleChange}
-              value={this.state.value}
-            />
-          </div>
-        )
-      }
+
+      return (
+        <div>
+          <div style={{ color: '#ababab' }}>Value: {value}</div>
+          <button onClick={handleClear}>Clear</button>
+          <Dropdown
+            placeholder="Change me"
+            label="Thing to change"
+            menu={
+              <ActionMenu>
+                <ActionMenu.Item value="one">One item</ActionMenu.Item>
+                <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+                <ActionMenu.Item value="three">Three item</ActionMenu.Item>
+              </ActionMenu>
+            }
+            onChange={handleChange}
+            value={value}
+          />
+        </div>
+      )
     }
+
     return <ClearStory />
   })
 
