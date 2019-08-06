@@ -2668,12 +2668,17 @@ exports[`Storyshots whitelist onChange 1`] = `
       }
     >
       Value: 
-      one
+      two
     </div>
     <label
       data-css-1hniuff=""
       onKeyDown={[Function]}
     >
+      <div
+        data-css-n53zhn=""
+      >
+        Thing to change
+      </div>
       <div
         data-css-1812rv9=""
       >
@@ -2688,6 +2693,7 @@ exports[`Storyshots whitelist onChange 1`] = `
               disabled={false}
               onChange={[Function]}
               onClick={[Function]}
+              value="two"
             >
               <span
                 aria-hidden={true}
@@ -2698,7 +2704,7 @@ exports[`Storyshots whitelist onChange 1`] = `
               <span
                 data-css-5m5yd6=""
               >
-                Change me
+                Two item
               </span>
             </button>
             <div

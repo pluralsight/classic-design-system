@@ -99,7 +99,7 @@ storiesOf('whitelist', module)
     class ChangeStory extends React.Component {
       constructor() {
         super()
-        this.state = { value: 'one' }
+        this.state = { value: 'two' }
         this.handleChange = this.handleChange.bind(this)
       }
       handleChange(evt, value, label) {
@@ -111,6 +111,7 @@ storiesOf('whitelist', module)
             <div style={{ color: '#ababab' }}>Value: {this.state.value}</div>
             <Dropdown
               placeholder="Change me"
+              label="Thing to change"
               menu={
                 <ActionMenu>
                   <ActionMenu.Item value="one">One item</ActionMenu.Item>
@@ -119,6 +120,7 @@ storiesOf('whitelist', module)
                 </ActionMenu>
               }
               onChange={this.handleChange}
+              value={this.state.value}
             />
           </div>
         )
