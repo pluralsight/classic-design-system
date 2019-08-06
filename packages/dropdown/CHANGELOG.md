@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@2.0.1...@pluralsight/ps-design-system-dropdown@2.1.0) (2019-08-06)
+
+
+### Features
+
+* **dropdown:** add onChange prop support ([bec3d55](https://github.com/pluralsight/design-system/commit/bec3d55))
+* **dropdown:** set initial value with value prop ([720f800](https://github.com/pluralsight/design-system/commit/720f800))
+* **dropdown:** support clearing value with value reset ([cf66bf6](https://github.com/pluralsight/design-system/commit/cf66bf6))
+
+
+
+
+
 ## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@2.0.0...@pluralsight/ps-design-system-dropdown@2.0.1) (2019-07-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

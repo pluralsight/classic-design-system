@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@1.1.4...@pluralsight/ps-design-system-carousel@1.2.0) (2019-08-06)
+
+
+### Bug Fixes
+
+* **carousel:** better focus style ([a92cd94](https://github.com/pluralsight/design-system/commit/a92cd94))
+
+
+### Features
+
+* **carousel:** export Carousel.Item and provide meta data ([3d9a245](https://github.com/pluralsight/design-system/commit/3d9a245))
+* **carousel:** only hide overflow during transition ([9832da2](https://github.com/pluralsight/design-system/commit/9832da2))
+
+
+
+
+
 ## [1.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@1.1.3...@pluralsight/ps-design-system-carousel@1.1.4) (2019-08-05)
 
 
