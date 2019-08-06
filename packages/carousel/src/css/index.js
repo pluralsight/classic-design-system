@@ -116,7 +116,8 @@ export default {
 
   '.psds-carousel__item': {
     margin: `0 calc(${core.layout.spacingSmall}/2)`,
-    flex: 1,
+    flex: '1 1 100%',
+    width: 0,
 
     '&:first-child': { marginLeft: 0 },
     '&:last-child': { marginRight: 0 }

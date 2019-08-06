@@ -33,6 +33,12 @@ MockCard.propTypes = {
   titleText: PropTypes.string.isRequired
 }
 
+const longStringsMetaData = [
+  'It is impossible to count the grand contributions of this great author',
+  'Levels heretofore unknown in the battle for truth and knowledge',
+  'A length of such amazing lengthitude so-as to blow the mind'
+]
+
 const MockItem = props => (
   <div
     {...glamor.css({
@@ -142,6 +148,8 @@ Object.values(Carousel.sizes).forEach(size => {
   cardStories.add(size, _ => (
     <Fragment>
       <Carousel size={size}>
+        <MockCard metadata1={longStringsMetaData} titleText="Title Here" />
+
         {new Array(13).fill(null).map((_, index) => (
           <MockCard key={index} titleText={`Card ${index}`} />
         ))}
