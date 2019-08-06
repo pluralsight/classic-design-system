@@ -2659,58 +2659,70 @@ exports[`Storyshots whitelist onChange 1`] = `
     }
   }
 >
-  <label
-    data-css-1hniuff=""
-    onKeyDown={[Function]}
-  >
+  <div>
     <div
-      data-css-1812rv9=""
+      style={
+        Object {
+          "color": "#ababab",
+        }
+      }
+    >
+      Value: 
+      one
+    </div>
+    <label
+      data-css-1hniuff=""
+      onKeyDown={[Function]}
     >
       <div
-        data-css-1xm24a9=""
+        data-css-1812rv9=""
       >
         <div
-          data-css-1r44zeb=""
+          data-css-1xm24a9=""
         >
-          <button
-            data-css-8bndf1=""
-            disabled={false}
-            onChange={[Function]}
-            onClick={[Function]}
-          >
-            <span
-              aria-hidden={true}
-              data-css-e6fvyw=""
-            >
-              Change me
-            </span>
-            <span
-              data-css-5m5yd6=""
-            >
-              Change me
-            </span>
-          </button>
           <div
-            data-css-cstzed=""
+            data-css-1r44zeb=""
           >
-            <div
-              data-css-otejxm=""
+            <button
+              data-css-8bndf1=""
+              disabled={false}
+              onChange={[Function]}
+              onClick={[Function]}
             >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                aria-hidden={true}
+                data-css-e6fvyw=""
               >
-                <path
-                  d="M12.5 14L8 10h9z"
-                />
-              </svg>
+                Three item
+              </span>
+              <span
+                data-css-5m5yd6=""
+              >
+                Change me
+              </span>
+            </button>
+            <div
+              data-css-cstzed=""
+            >
+              <div
+                data-css-otejxm=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </label>
+    </label>
+  </div>
 </div>
 `;

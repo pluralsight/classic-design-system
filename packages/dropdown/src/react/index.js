@@ -193,6 +193,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
           <div {...styles.menu(allProps)}>
             {React.cloneElement(allProps.menu, {
               isKeyboarding: isKeyboarding,
+              onChange: allProps.onChange,
               onClick: allProps.disabled ? null : handleMenuClick,
               onClose: _ => {
                 setOpen(false)
@@ -228,6 +229,7 @@ Dropdown.propTypes = {
   label: PropTypes.node,
   menu: PropTypes.element.isRequired,
   onBlur: PropTypes.func,
+  onChange: PropTypes.func,
   onClick: PropTypes.func,
   onFocus: PropTypes.func,
   placeholder: PropTypes.string,

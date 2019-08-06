@@ -95,12 +95,37 @@ storiesOf('whitelist', module)
       name="myFieldNameOfPower"
     />
   ))
-  .add('onChange', _ => (
-    <DropdownWithDefaults
-      placeholder="Change me"
-      onChange={action('I changed')}
-    />
-  ))
+  .add('onChange', _ => {
+    class ChangeStory extends React.Component {
+      constructor() {
+        super()
+        this.state = { value: 'one' }
+        this.handleChange = this.handleChange.bind(this)
+      }
+      handleChange(evt, value, label) {
+        this.setState({ value })
+      }
+      render() {
+        return (
+          <div>
+            <div style={{ color: '#ababab' }}>Value: {this.state.value}</div>
+            <Dropdown
+              placeholder="Change me"
+              menu={
+                <ActionMenu>
+                  <ActionMenu.Item value="one">One item</ActionMenu.Item>
+                  <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+                  <ActionMenu.Item value="three">Three item</ActionMenu.Item>
+                </ActionMenu>
+              }
+              onChange={this.handleChange}
+            />
+          </div>
+        )
+      }
+    }
+    return <ChangeStory />
+  })
 
 storiesOf('layouts', module)
   .add('full width', _ => (
