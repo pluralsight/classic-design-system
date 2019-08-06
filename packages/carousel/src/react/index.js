@@ -3,6 +3,7 @@ import React from 'react'
 import { Transition } from 'react-transition-group'
 import PropTypes from 'prop-types'
 
+import core from '@pluralsight/ps-design-system-core'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import stylesheet from '../css/index.js'
@@ -17,7 +18,7 @@ import useResizeObserver from './use-resize-observer.js'
 import useSwipe from './use-swipe.js'
 import useUniqueId from './use-unique-id.js'
 
-const TRANSITION_DURATION_MS = 500
+const TRANSITION_DURATION_MS = parseInt(core.motion.speedXSlow, 10)
 
 const styles = {
   carousel: (props, { ready }) =>
