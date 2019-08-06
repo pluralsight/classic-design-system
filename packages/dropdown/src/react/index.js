@@ -7,6 +7,7 @@ import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
 
 import css from '../css/index.js'
+import { findMatchingActionMenuItem } from './utils.js'
 import * as vars from '../vars/index.js'
 
 const styles = {
@@ -63,7 +64,25 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
   const allProps = { ...props, themeName }
   const [isKeyboarding, setKeyboarding] = React.useState(false)
   const [isOpen, setOpen] = React.useState(false)
-  const [selectedLabel, setSelectedLabel] = React.useState(null)
+
+  const itemMatchingValue = React.useMemo(
+    _ => {
+      return findMatchingActionMenuItem(props.menu, props.value)
+    },
+    [props.menu, props.value]
+  )
+  const [selectedLabel, setSelectedLabel] = React.useState(
+    itemMatchingValue ? itemMatchingValue.props.children : null
+  )
+
+  React.useEffect(
+    _ => {
+      setSelectedLabel(
+        itemMatchingValue ? itemMatchingValue.props.children : null
+      )
+    },
+    [itemMatchingValue]
+  )
 
   function handleToggleOpen(evt) {
     evt.preventDefault()
@@ -85,14 +104,15 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
     evt.preventDefault()
     evt.stopPropagation()
 
-    const target = evt.target
-    const isItem = target.getAttribute('role') === 'menuitem'
-    if (isItem) {
-      setSelectedLabel(target.innerText)
-      setOpen(false)
-    }
     if (allProps.menu && typeof allProps.menu.props.onClick === 'function')
       allProps.menu.props.onClick(evt)
+  }
+
+  function handleMenuChange(evt, value, label) {
+    setSelectedLabel(label)
+    setOpen(false)
+    if (typeof allProps.onChange === 'function')
+      allProps.onChange(evt, value, label)
   }
 
   function handleOverlayClick() {
@@ -193,7 +213,8 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
           <div {...styles.menu(allProps)}>
             {React.cloneElement(allProps.menu, {
               isKeyboarding: isKeyboarding,
-              onClick: allProps.disabled ? null : handleMenuClick,
+              onChange: handleMenuChange,
+              onClick: handleMenuClick,
               onClose: _ => {
                 setOpen(false)
                 if (typeof allProps.menu.props.onClose === 'function')
@@ -228,11 +249,13 @@ Dropdown.propTypes = {
   label: PropTypes.node,
   menu: PropTypes.element.isRequired,
   onBlur: PropTypes.func,
+  onChange: PropTypes.func,
   onClick: PropTypes.func,
   onFocus: PropTypes.func,
   placeholder: PropTypes.string,
   subLabel: PropTypes.node,
-  style: PropTypes.object
+  style: PropTypes.object,
+  value: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
 }
 Dropdown.defaultProps = {
   appearance: vars.appearances.default,

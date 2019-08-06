@@ -95,12 +95,70 @@ storiesOf('whitelist', module)
       name="myFieldNameOfPower"
     />
   ))
-  .add('onChange', _ => (
-    <DropdownWithDefaults
-      placeholder="Change me"
-      onChange={action('I changed')}
-    />
-  ))
+  .add('onChange', _ => {
+    function ChangeStory() {
+      const [value, setValue] = React.useState('two')
+
+      function handleChange(evt, value, label) {
+        setValue(value)
+      }
+
+      return (
+        <div>
+          <div style={{ color: '#ababab' }}>Value: {value}</div>
+          <Dropdown
+            placeholder="Change me"
+            label="Thing to change"
+            menu={
+              <ActionMenu>
+                <ActionMenu.Item value="one">One item</ActionMenu.Item>
+                <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+                <ActionMenu.Item value="three">Three item</ActionMenu.Item>
+              </ActionMenu>
+            }
+            onChange={handleChange}
+            value={value}
+          />
+        </div>
+      )
+    }
+    return <ChangeStory />
+  })
+  .add('clear', _ => {
+    function ClearStory(props) {
+      const [value, setValue] = React.useState('two')
+
+      function handleChange(evt, value, label) {
+        setValue(value)
+      }
+
+      function handleClear() {
+        setValue(null)
+      }
+
+      return (
+        <div>
+          <div style={{ color: '#ababab' }}>Value: {value}</div>
+          <button onClick={handleClear}>Clear</button>
+          <Dropdown
+            placeholder="Change me"
+            label="Thing to change"
+            menu={
+              <ActionMenu>
+                <ActionMenu.Item value="one">One item</ActionMenu.Item>
+                <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+                <ActionMenu.Item value="three">Three item</ActionMenu.Item>
+              </ActionMenu>
+            }
+            onChange={handleChange}
+            value={value}
+          />
+        </div>
+      )
+    }
+
+    return <ClearStory />
+  })
 
 storiesOf('layouts', module)
   .add('full width', _ => (
