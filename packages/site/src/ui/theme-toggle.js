@@ -7,7 +7,6 @@ import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react'
 import { string as stringUtil } from '@pluralsight/ps-design-system-util'
 
 function ThemeToggle(props) {
-  console.log({ props })
   return (
     <React.Fragment>
       <style jsx>{`
@@ -45,7 +44,6 @@ function Themeable(props) {
 
   const handleSelect = (evt, index) => {
     const nextTheme = Theme.names[Object.keys(Theme.names)[index]]
-    console.log(nextTheme, themeName, Theme.defaultName)
     setThemeName(nextTheme)
   }
 
