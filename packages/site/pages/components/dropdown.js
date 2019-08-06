@@ -180,6 +180,13 @@ export default withServerProps(_ => (
             'menu for dropdown contents'
           ]),
           PropTypes.row([
+            'onChange',
+            <span>(Event, value, label) => ()</span>,
+            null,
+            null,
+            'triggered when an item selected'
+          ]),
+          PropTypes.row([
             'placeholder',
             'string',
             null,
