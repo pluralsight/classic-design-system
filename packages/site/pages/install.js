@@ -27,6 +27,7 @@ npm install @pluralsight/ps-design-system-normalize
 
 Include this vanilla CSS in your application in a method appropriate for your project. For usage options, follow the [Core Usage docs](/core/usage) patterns.
 
+
 ## JavaScript Environment Requirements
 
 Many components in the the Design System depend on features in more modern versions of ecmascript(es6 and es7). Older browsers and devices that we support do not provide these natively (e.g. IE 11) so you'll need to include a global polyfill in your bundled application, such as \`core-js\` or \`babel-polyfill\`.
@@ -82,6 +83,12 @@ For usage details, see the [Core Usage docs](/core/usage).
 
 \`\`\`bash
 npm install glamor
+\`\`\`
+
+All components support theming and have a peer dependency on the Theme package. Install with:
+
+\`\`\`bash
+npm install @pluralsight/ps-design-system-theme
 \`\`\`
 
 Each component is installed separately.  The JavaScript is prebuilt Node modules.  Assets are inlined.  Find and use what you need.  For example:
