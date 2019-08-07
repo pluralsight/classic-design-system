@@ -20,7 +20,7 @@
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "*",
+    "@pluralsight/ps-design-system-normalize": "v3.1.4",
     "glamor": "^2.20.0",
     "react": ">=16.8.6 < 17.0.0"
   }
