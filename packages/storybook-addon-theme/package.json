@@ -16,12 +16,15 @@
   ],
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.4.4",
-    "@pluralsight/ps-design-system-theme": "^3.0.2",
     "@storybook/addons": "^5.1.9",
     "@storybook/core-events": "^5.1.9"
   },
   "peerDependencies": {
+    "@pluralsight/ps-design-system-theme": "^3.0.2",
     "glamor": "^2.20.0",
     "react": ">=16.8.6 < 17.0.0"
+  },
+  "devDependencies": {
+    "@pluralsight/ps-design-system-theme": "^3.0.2"
   }
 }
