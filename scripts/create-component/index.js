@@ -32,8 +32,7 @@ async function main() {
     'button',
     'core',
     'filter-react-props',
-    'icon',
-    'theme'
+    'icon'
   ].map(toPackageName)
 
   const questions = [
