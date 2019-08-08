@@ -1,43 +1,31 @@
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
+
 import PropTypes from 'prop-types'
 import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
-import TextInput from '@pluralsight/ps-design-system-textinput/react'
+import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
 
-import DatePicker from '..'
+import DatePicker from '../index.js'
 
-class StateDemo extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { value: props.value || '' }
-    this.handleDatePickerSelect = this.handleDatePickerSelect.bind(this)
+function StateDemo(props) {
+  const [value, setValue] = React.useState(props.value)
+
+  const handleDatePickerSelect = nextValue => {
+    setValue(nextValue)
   }
 
-  handleDatePickerSelect(value) {
-    console.log('called select w/ value', value)
-    this.setState({ value })
-  }
+  return (
+    <div>
+      <div style={{ color: core.colors.gray03 }}>Selected: {value}</div>
 
-  render() {
-    return (
-      <div>
-        <div style={{ color: core.colors.gray03 }}>
-          Selected: {this.state.value}
-        </div>
-        <DatePicker
-          value={this.state.value}
-          onSelect={this.handleDatePickerSelect}
-        />
-      </div>
-    )
-  }
+      <DatePicker value={value} onSelect={handleDatePickerSelect} />
+    </div>
+  )
 }
 
-StateDemo.propTypes = {
-  value: PropTypes.string
-}
+StateDemo.propTypes = { value: PropTypes.string }
 
 storiesOf('labels', module)
   .add('none', _ => <DatePicker />)
@@ -46,6 +34,7 @@ storiesOf('labels', module)
       <div style={{ marginBottom: core.layout.spacingSmall }}>
         <DatePicker />
       </div>
+
       <div>
         <TextInput type="date" />
       </div>
