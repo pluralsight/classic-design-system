@@ -29,16 +29,9 @@ const styles = {
   days: () => css(stylesheet['.psds-date-picker__calendar__days']),
   day: ({ isSelected }) =>
     compose(
-      css({
-        ...stylesheet['.psds-date-picker__calendar__day'],
-        ':hover': stylesheet['.psds-date-picker__calendar__day:hover']
-      }),
+      css(stylesheet['.psds-date-picker__calendar__day']),
       isSelected &&
-        css({
-          ...stylesheet['.psds-date-picker__calendar__day--selected'],
-          ':hover':
-            stylesheet['.psds-date-picker__calendar__day--selected:hover']
-        })
+        css(stylesheet['.psds-date-picker__calendar__day--selected'])
     ),
   skippedDay: () => css(stylesheet['.psds-date-picker__calendar__skipped-day']),
   switcher: () => css(stylesheet['.psds-date-picker__calendar__switcher']),

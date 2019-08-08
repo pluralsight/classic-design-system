@@ -61,9 +61,6 @@ const styles = {
   subField: ({ appearance }) =>
     compose(
       css(stylesheet['.psds-date-picker__sub-field']),
-      css({
-        ':focus': stylesheet['.psds-date-picker__sub-field:focus']
-      }),
       css(stylesheet[`.psds-date-picker__sub-field--appearance-${appearance}`])
     ),
   subFieldDivider: ({ appearance }) =>
