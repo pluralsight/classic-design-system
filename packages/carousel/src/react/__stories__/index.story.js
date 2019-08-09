@@ -4,7 +4,9 @@ import * as glamor from 'glamor'
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
 import Card from '@pluralsight/ps-design-system-card/react'
+
 import Carousel from '../index.js'
 
 const MockCard = props => (
@@ -44,7 +46,8 @@ const MockItem = props => (
       background: 'pink',
       display: 'flex',
       height: '150px',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      position: 'relative'
     })}
     data-testid="mock-item"
     {...props}
@@ -138,6 +141,29 @@ Object.values(Carousel.sizes).forEach(size => {
     </Carousel>
   ))
 })
+storiesOf('Carousel/Item', module)
+  .add('with child nodes', _ => (
+    <Carousel size={Carousel.sizes.wide}>
+      {new Array(9).fill(null).map((_, index) => (
+        <Carousel.Item key={index}>
+          <MockItem />
+        </Carousel.Item>
+      ))}
+    </Carousel>
+  ))
+  .add('with render props', _ => (
+    <Carousel size={Carousel.sizes.wide}>
+      {new Array(9).fill(null).map((_, index) => (
+        <Carousel.Item key={index}>
+          {data => (
+            <MockItem>
+              <pre>{JSON.stringify(data, null, 2)}</pre>
+            </MockItem>
+          )}
+        </Carousel.Item>
+      ))}
+    </Carousel>
+  ))
 
 const cardStories = storiesOf('Carousel/with Card', module)
 
@@ -154,3 +180,21 @@ Object.values(Carousel.sizes).forEach(size => {
     </Fragment>
   ))
 })
+
+storiesOf('Carousel/with ActionMenu', module).add('positioned child', () => (
+  <div style={{ border: '1px solid red', maxWidth: 400, padding: 10 }}>
+    <Carousel size={Carousel.sizes.wide}>
+      <MockItem>
+        <ActionMenu style={{ left: 20, top: 20 }}>
+          {new Array(8).fill(null).map((_, index) => (
+            <ActionMenu.Item key={index}>item: {index}</ActionMenu.Item>
+          ))}
+        </ActionMenu>
+      </MockItem>
+
+      {new Array(13).fill(null).map((_, index) => (
+        <MockItem key={index} />
+      ))}
+    </Carousel>
+  </div>
+))

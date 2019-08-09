@@ -1,13 +1,14 @@
 import { compose, css } from 'glamor'
-import React from 'react'
+import React, { cloneElement } from 'react'
 import { Transition } from 'react-transition-group'
 import PropTypes from 'prop-types'
 
+import core from '@pluralsight/ps-design-system-core'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import stylesheet from '../css/index.js'
 import { calcItemsPerPage, isLeftArrow, isRightArrow } from '../js/index.js'
-import { chunk, pick } from '../js/utils.js'
+import { chunk, isFunction, pick } from '../js/utils.js'
 import * as vars from '../vars/index.js'
 
 import CarouselContext from './context.js'
@@ -17,14 +18,24 @@ import useResizeObserver from './use-resize-observer.js'
 import useSwipe from './use-swipe.js'
 import useUniqueId from './use-unique-id.js'
 
+const TRANSITION_DURATION_MS = parseInt(core.motion.speedXSlow, 10)
+
 const styles = {
-  carousel: ({ ready }) =>
+  carousel: (props, { ready }) =>
     compose(
       css(stylesheet['.psds-carousel']),
       ready && css(stylesheet['.psds-carousel--ready'])
     ),
-  pages: () => css(stylesheet['.psds-carousel__pages']),
-  page: () => css(stylesheet['.psds-carousel__page']),
+  pages: (props, { transitioning }) =>
+    compose(
+      css(stylesheet['.psds-carousel__pages']),
+      transitioning && css(stylesheet['.psds-carousel__pages--transitioning'])
+    ),
+  page: props =>
+    compose(
+      css(stylesheet['.psds-carousel__page']),
+      props.isActivePage && css(stylesheet['.psds-carousel__page--active'])
+    ),
   instructions: () => css(stylesheet['.psds-carousel__instructions']),
   item: () => css(stylesheet['.psds-carousel__item'])
 }
@@ -55,7 +66,7 @@ export default function Carousel({ controls, size, ...props }) {
   return (
     <CarouselContext.Provider value={contextValue}>
       <div
-        {...styles.carousel({ ready })}
+        {...styles.carousel(props, { ready })}
         {...filterReactProps(props)}
         ref={ref}
       >
@@ -69,13 +80,27 @@ export default function Carousel({ controls, size, ...props }) {
           onSwipeLeft={pager.next}
           onSwipeRight={pager.prev}
         >
-          {pages.map((items, i) => (
-            <Page key={i} isActivePage={pager.activePage === i}>
-              {items.map((item, j) => (
-                <Item key={j}>{item}</Item>
-              ))}
-            </Page>
-          ))}
+          {pages.map((items, pageIndex) => {
+            const isActivePage = pager.activePage === pageIndex
+
+            return (
+              <Page key={pageIndex} isActivePage={isActivePage}>
+                {items.map((item, itemIndex) => {
+                  const wrapped = isOfComponentType(item, Item)
+                  if (!wrapped) item = <Item key={itemIndex}>{item}</Item>
+
+                  return cloneElement(item, {
+                    key: itemIndex,
+
+                    isActivePage,
+                    itemIndex,
+                    pageCount,
+                    pageIndex
+                  })
+                })}
+              </Page>
+            )
+          })}
         </Pages>
 
         {controls}
@@ -86,8 +111,37 @@ export default function Carousel({ controls, size, ...props }) {
   )
 }
 
+function Item({ children, ...props }) {
+  return (
+    <div {...styles.item()} {...filterReactProps(props)}>
+      {isFunction(children)
+        ? children({
+            isActivePage: props.isActivePage,
+            itemIndex: props.itemIndex,
+            pageCount: props.pageCount,
+            pageIndex: props.pageIndex
+          })
+        : children}
+    </div>
+  )
+}
+
+Item.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
+  isActivePage: PropTypes.bool,
+  itemIndex: PropTypes.number,
+  pageCount: PropTypes.number,
+  pageIndex: PropTypes.number
+}
+
 Carousel.Controls = Controls
+Carousel.Controls.displayName = 'Carousel.Controls'
+
 Carousel.Control = Control
+Carousel.Control.displayName = 'Carousel.Control'
+
+Carousel.Item = Item
+Carousel.Item.displayName = 'Carousel.Item'
 
 Carousel.sizes = vars.sizes
 
@@ -120,12 +174,26 @@ function Instructions(props) {
   )
 }
 
-function Item(props) {
-  return <div {...styles.item()} {...props} />
-}
-
 const Pages = React.forwardRef((props, ref) => {
   const context = React.useContext(CarouselContext)
+  const prevActivePage = usePrevious(context.activePage)
+  const [transitioning, setTransitioning] = React.useState(false)
+
+  React.useEffect(() => {
+    let timer
+    const starting =
+      prevActivePage !== undefined && prevActivePage !== context.activePage
+
+    if (starting) {
+      setTransitioning(true)
+    } else {
+      timer = setTimeout(() => {
+        setTransitioning(false)
+      }, TRANSITION_DURATION_MS)
+    }
+
+    return () => clearTimeout(timer)
+  }, [context.activePage, prevActivePage])
 
   useSwipe(ref, {
     onSwipeLeft: props.onSwipeLeft,
@@ -140,7 +208,7 @@ const Pages = React.forwardRef((props, ref) => {
       ref={ref}
       role="region"
       tabIndex="0"
-      {...styles.pages()}
+      {...styles.pages(props, { transitioning })}
       {...filterReactProps(props)}
     />
   )
@@ -151,22 +219,24 @@ Pages.propTypes = {
   onSwipeRight: PropTypes.func.isRequired
 }
 
-function Page({ isActivePage, ...props }) {
+function Page(props) {
   const ref = React.useRef()
+
+  const { children, isActivePage, ...rest } = props
   const { offset } = React.useContext(CarouselContext)
 
   return (
     <li
       ref={ref}
-      {...styles.page()}
+      {...styles.page(props)}
       {...css({ transform: `translate3d(${offset}px, 0, 0)` })}
-      {...props}
+      {...rest}
       {...(!isActivePage && { hidden: true, tabIndex: -1 })}
     >
-      <Transition in={isActivePage} timeout={500}>
-        {transitionState => {
-          if (transitionState === 'exited') return null
-          return props.children
+      <Transition in={isActivePage} timeout={TRANSITION_DURATION_MS}>
+        {state => {
+          if (state === 'exited') return null
+          return children
         }}
       </Transition>
     </li>
@@ -185,6 +255,10 @@ function insertEmptyItems(page, perPage) {
   if (page.length >= perPage) return page
 
   return page.concat(new Array(perPage - page.length).fill(null))
+}
+
+function isOfComponentType(instance, el) {
+  return instance && instance.type.displayName === el.displayName
 }
 
 function usePager(pageCount, additionalSideEffectTriggers = []) {
@@ -233,4 +307,14 @@ function usePager(pageCount, additionalSideEffectTriggers = []) {
     prev,
     ref
   }
+}
+
+function usePrevious(value) {
+  const ref = React.useRef()
+
+  React.useEffect(() => {
+    ref.current = value
+  }, [value])
+
+  return ref.current
 }

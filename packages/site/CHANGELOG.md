@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.10.3...@pluralsight/ps-design-system-site@13.0.0) (2019-08-06)
+
+
+### Code Refactoring
+
+* **viewtoggle:** change onSelect param order ([7607cd0](https://github.com/pluralsight/design-system/commit/7607cd0))
+
+
+### Features
+
+* **site:** doc onChange in dropdown ([a8565b5](https://github.com/pluralsight/design-system/commit/a8565b5))
+
+
+### BREAKING CHANGES
+
+* **viewtoggle:** onSelect param order changed. the Event is the first parameter and the option index
+is the second
+
+
+
+
+
 ## [12.10.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.10.2...@pluralsight/ps-design-system-site@12.10.3) (2019-08-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site

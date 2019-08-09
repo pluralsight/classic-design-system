@@ -1,10 +1,10 @@
 import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
-import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
+import Dropdown from '@pluralsight/ps-design-system-dropdown/react.js'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
   Chrome,
@@ -18,112 +18,91 @@ import {
   SectionHeading,
   TextLink,
   withServerProps
-} from '../../src/ui'
+} from '../../src/ui/index.js'
 
-class InAppExample extends React.Component {
-  constructor() {
-    super()
-    this.state = { value: 'int' }
-  }
-  render() {
-    const options = [
-      { value: 'beg', label: 'Beginner' },
-      { value: 'int', label: 'Intermediate' },
-      { value: 'adv', label: 'Advanced' }
-    ]
-    return (
-      <div>
-        <div className="example">
-          <div className="dropdown">
-            <Dropdown
-              label="Level"
-              placeholder={
-                options.find(opt => opt.value === this.state.value).label ||
-                'Select'
-              }
-              menu={
-                <ActionMenu>
-                  {options.map(opt => (
-                    <ActionMenu.Item
-                      key={opt.value}
-                      onClick={_ => this.setState({ value: opt.value })}
-                    >
-                      {opt.label}
-                    </ActionMenu.Item>
-                  ))}
-                </ActionMenu>
-              }
-            />
-          </div>
-          <div className="selection">Selected: {this.state.value}</div>
+function InAppExample() {
+  const options = [
+    { value: 'beg', label: 'Beginner' },
+    { value: 'int', label: 'Intermediate' },
+    { value: 'adv', label: 'Advanced' }
+  ]
+  const [value, setValue] = React.useState(options[1].value)
+  return (
+    <div>
+      <div className="example">
+        <div className="dropdown">
+          <Dropdown
+            label="Level"
+            placeholder="Select"
+            onChange={(evt, value, label) => setValue(value)}
+            menu={
+              <ActionMenu>
+                {options.map(opt => (
+                  <ActionMenu.Item key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </ActionMenu.Item>
+                ))}
+              </ActionMenu>
+            }
+            value={value}
+          />
         </div>
-        <Code
-          lang="javascript"
-          collapsible
-        >{`class InAppExample extends React.Component {
-  constructor() {
-    super()
-    this.state = { value: 'int' }
-  }
-  render() {
-    const options = [
-      { value: 'beg', label: 'Beginner' },
-      { value: 'int', label: 'Intermediate' },
-      { value: 'adv', label: 'Advanced' }
-    ]
-    return (
-      <div>
-        <Dropdown
-          label="Level"
-          placeholder={
-            options.find(opt => opt.value === this.state.value).label ||
-            'Select'
-          }
-          menu={
-            <ActionMenu>
-              {options.map(opt => (
-                <ActionMenu.Item
-                  key={opt.value}
-                  onClick={_ => this.setState({ value: opt.value })}
-                >
-                  {opt.label}
-                </ActionMenu.Item>
-              ))}
-            </ActionMenu>
-          }
-        />
-        <div>Selected: {this.state.value}</div>
+        <div className="selection">Selected: {value}</div>
       </div>
-    )
-  }
+      <Code lang="javascript" collapsible>{`function InAppExample() {
+  const options = [
+    { value: 'beg', label: 'Beginner' },
+    { value: 'int', label: 'Intermediate' },
+    { value: 'adv', label: 'Advanced' }
+  ]
+  const [value, setValue] = React.useState(options[1].value)
+  return (
+    <div>
+      <Dropdown
+        label="Level"
+        placeholder="Select"
+        onChange={(evt, value, label) => setValue(value)}
+        menu={
+          <ActionMenu>
+            {options.map(opt => (
+              <ActionMenu.Item key={opt.value} value={opt.value}>
+                {opt.label}
+              </ActionMenu.Item>
+            ))}
+          </ActionMenu>
+        }
+        value={value}
+      />
+      <div>Selected: {value}</div>
+    </div>
+  )
 }`}</Code>
-        <style jsx>{`
-          .example {
-            display: flex;
-            margin-bottom: ${core.layout.spacingMedium};
-          }
-          .selection {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            margin: ${core.layout.spacingMedium} 0 0 0;
-            padding: ${core.layout.spacingLarge};
-            font-size: ${core.type.fontSizeMedium};
-            color: ${core.colors.gray04};
-            background: ${core.colors.bone};
-            border-radius: 12px;
-          }
-          .dropdown {
-            flex: 1;
-            position: relative;
-            z-index: 0;
-            padding: ${core.layout.spacingLarge} ${core.layout.spacingLarge}
-              104px ${core.layout.spacingLarge};
-          }
-        `}</style>
-      </div>
-    )
-  }
+      <style jsx>{`
+        .example {
+          display: flex;
+          margin-bottom: ${core.layout.spacingMedium};
+        }
+        .selection {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          margin: ${core.layout.spacingMedium} 0 0 0;
+          padding: ${core.layout.spacingLarge};
+          font-size: ${core.type.fontSizeMedium};
+          color: ${core.colors.gray04};
+          background: ${core.colors.bone};
+          border-radius: 12px;
+        }
+        .dropdown {
+          flex: 1;
+          position: relative;
+          z-index: 0;
+          padding: ${core.layout.spacingLarge} ${core.layout.spacingLarge} 104px
+            ${core.layout.spacingLarge};
+        }
+      `}</style>
+    </div>
+  )
 }
 
 export default withServerProps(_ => (
@@ -180,6 +159,13 @@ export default withServerProps(_ => (
             'menu for dropdown contents'
           ]),
           PropTypes.row([
+            'onChange',
+            <span>(Event, value, label) => ()</span>,
+            null,
+            null,
+            'triggered when an item selected'
+          ]),
+          PropTypes.row([
             'placeholder',
             'string',
             null,
@@ -201,8 +187,10 @@ export default withServerProps(_ => (
 
       <SectionHeading>In-app example</SectionHeading>
       <P>
-        The Dropdown menu is provided by the{' '}
-        <Link href="/components/actionmenu">ActionMenu</Link>.
+        Keep your own app state. Feed it to the dropdown with{' '}
+        <Text.Code>value</Text.Code>. Listen for changes in the menu selection
+        using <Text.Code>onChange</Text.Code>. The Dropdown menu is provided by
+        the <Link href="/components/actionmenu">ActionMenu</Link>.
       </P>
       <InAppExample />
 
