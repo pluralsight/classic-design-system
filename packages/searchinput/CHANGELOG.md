@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@1.2.5...@pluralsight/ps-design-system-searchinput@2.0.0) (2019-08-09)
+
+
+### Build System
+
+* **searchinput:** move theme package to peerDeps ([f8f0076](https://github.com/pluralsight/design-system/commit/f8f0076))
+
+
+### BREAKING CHANGES
+
+* **searchinput:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
 ## [1.2.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@1.2.4...@pluralsight/ps-design-system-searchinput@1.2.5) (2019-08-02)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-searchinput

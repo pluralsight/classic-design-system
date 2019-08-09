@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-storybook-addon-theme",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Storybook addon for Theme switching",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -25,6 +25,6 @@
     "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-theme": "^3.0.2"
+    "@pluralsight/ps-design-system-theme": "^3.0.3"
   }
 }

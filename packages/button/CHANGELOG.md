@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@12.0.7...@pluralsight/ps-design-system-button@13.0.0) (2019-08-09)
+
+
+### Build System
+
+* **button:** move theme package to peerDeps ([aa11363](https://github.com/pluralsight/design-system/commit/aa11363))
+
+
+### BREAKING CHANGES
+
+* **button:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
 ## [12.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@12.0.6...@pluralsight/ps-design-system-button@12.0.7) (2019-07-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-button

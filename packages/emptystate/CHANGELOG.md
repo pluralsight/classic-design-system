@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@4.0.8...@pluralsight/ps-design-system-emptystate@5.0.0) (2019-08-09)
+
+
+### Build System
+
+* **emptystate:** move theme package to peerDeps ([3e07209](https://github.com/pluralsight/design-system/commit/3e07209))
+
+
+### BREAKING CHANGES
+
+* **emptystate:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
 ## [4.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@4.0.7...@pluralsight/ps-design-system-emptystate@4.0.8) (2019-07-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-emptystate

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@2.1.17...@pluralsight/ps-design-system-drawer@3.0.0) (2019-08-09)
+
+
+### Build System
+
+* **drawer:** move theme package to peerDeps ([234dd75](https://github.com/pluralsight/design-system/commit/234dd75))
+
+
+### BREAKING CHANGES
+
+* **drawer:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
 ## [2.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@2.1.16...@pluralsight/ps-design-system-drawer@2.1.17) (2019-08-02)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-drawer

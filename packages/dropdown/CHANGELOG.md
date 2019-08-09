@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@2.1.0...@pluralsight/ps-design-system-dropdown@3.0.0) (2019-08-09)
+
+
+### Build System
+
+* **dropdown:** move theme package to peerDeps ([10db734](https://github.com/pluralsight/design-system/commit/10db734))
+
+
+### BREAKING CHANGES
+
+* **dropdown:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
 # [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@2.0.1...@pluralsight/ps-design-system-dropdown@2.1.0) (2019-08-06)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-link",
-  "version": "6.0.7",
+  "version": "6.0.8",
   "description": "Design System component for link/anchor ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -30,6 +30,6 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.10.1",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^3.0.0"
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^4.0.0"
   }
 }

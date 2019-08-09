@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-note@1.1.6...@pluralsight/ps-design-system-note@2.0.0) (2019-08-09)
+
+
+### Build System
+
+* **note:** move theme package to peerDeps ([1a484aa](https://github.com/pluralsight/design-system/commit/1a484aa))
+
+
+### BREAKING CHANGES
+
+* **note:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
 ## [1.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-note@1.1.5...@pluralsight/ps-design-system-note@1.1.6) (2019-08-02)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-note
