@@ -32,7 +32,6 @@ export default {
     padding: `${vars.style.menuPaddingVert} 0`,
     minWidth: '160px',
     maxWidth: '320px',
-    // overflow: 'hidden',
     listStyle: 'none',
     boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
     fontSize: core.type.fontSizeSmall,
@@ -42,7 +41,6 @@ export default {
     } forwards`
   }),
 
-  // --origin
   [`.psds-actionmenu--origin-${vars.origins.topRight}`]: {
     ...menuOriginTop,
     right: 0,
@@ -69,12 +67,10 @@ export default {
   [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.topLeft}`]: menuOriginLeft,
   [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: menuOriginLeft,
 
-  // __item-container
   '.psds-actionmenu__item-container': {
     position: 'relative'
   },
 
-  // __item
   '.psds-actionmenu__item': {
     display: 'flex',
     width: '100%',
@@ -108,22 +104,18 @@ export default {
     color: core.colors.white
   },
 
-  // __item--link
   '.psds-actionmenu__item--link': {
     color: core.colors.gray05
   },
 
-  // __item--icon
   '.psds-actionmenu__item--icon': {
     paddingLeft: core.layout.spacingXSmall
   },
 
-  // __item--nested
   '.psds-actionmenu__item--nested': {
     paddingRight: core.layout.spacingXSmall
   },
 
-  // __item--isActive
   '.psds-actionmenu__item--isActive': {
     background: core.colors.bone,
     outline: 'none'
@@ -135,7 +127,6 @@ export default {
     outline: 'none'
   },
 
-  // __divider
   '.psds-actionmenu__divider': {
     height: '1px',
     width: '100%',
@@ -143,20 +134,17 @@ export default {
     margin: `${core.layout.spacingXXSmall} 0`
   },
 
-  // __item__icon
   '.psds-actionmenu__item__icon': {
     display: 'inline-flex',
     alignItems: 'center',
     marginRight: core.layout.spacingXSmall
   },
 
-  // __item__arrow
   '.psds-actionmenu__item__arrow': {
     color: '#888',
     marginLeft: 'auto',
     paddingLeft: core.layout.spacingXSmall
   },
-  // TODO: rm or verify
   '.psds-actionmenu__item__arrow--focus-keyboard': {
     color: core.colors.white
   },
@@ -164,7 +152,6 @@ export default {
     fill: 'currentColor'
   },
 
-  // __overlay
   '.psds-actionmenu__overlay': {
     position: 'fixed',
     height: '100vh',
