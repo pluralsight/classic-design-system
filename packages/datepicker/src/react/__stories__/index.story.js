@@ -12,7 +12,7 @@ import DatePicker from '../index.js'
 function StateDemo(props) {
   const [value, setValue] = React.useState(props.value)
 
-  const handleDatePickerSelect = nextValue => {
+  function handleDatePickerSelect(nextValue) {
     setValue(nextValue)
   }
 

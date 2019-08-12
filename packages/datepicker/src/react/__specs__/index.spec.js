@@ -3,7 +3,7 @@ import { render } from '@testing-library/react'
 
 import * as vars from '../../vars/index.js'
 
-import DatePicker from '../index'
+import DatePicker from '../index.js'
 
 describe('DatePicker', () => {
   describe('.appearances', () => {

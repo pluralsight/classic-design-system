@@ -25,17 +25,17 @@ const slide = css.keyframes(
 )
 
 const styles = {
-  calendar: () => css(stylesheet['.psds-date-picker__calendar']({ slide })),
-  days: () => css(stylesheet['.psds-date-picker__calendar__days']),
+  calendar: _ => css(stylesheet['.psds-date-picker__calendar']({ slide })),
+  days: _ => css(stylesheet['.psds-date-picker__calendar__days']),
   day: ({ isSelected }) =>
     compose(
       css(stylesheet['.psds-date-picker__calendar__day']),
       isSelected &&
         css(stylesheet['.psds-date-picker__calendar__day--selected'])
     ),
-  skippedDay: () => css(stylesheet['.psds-date-picker__calendar__skipped-day']),
-  switcher: () => css(stylesheet['.psds-date-picker__calendar__switcher']),
-  switcherMonth: () =>
+  skippedDay: _ => css(stylesheet['.psds-date-picker__calendar__skipped-day']),
+  switcher: _ => css(stylesheet['.psds-date-picker__calendar__switcher']),
+  switcherMonth: _ =>
     css(stylesheet['.psds-date-picker__calendar__switcher__month']),
   weekHeading: _ =>
     css(stylesheet['.psds-date-picker__calendar__week-heading']),
@@ -43,49 +43,55 @@ const styles = {
     css(stylesheet['.psds-date-picker__calendar__week-heading__day'])
 }
 
-function Calendar({ date, ...props }) {
+function Calendar(props) {
   const ref = React.useRef()
   const selectedDayRef = React.useRef()
 
-  const initialDisplayed = React.useMemo(() => {
-    const today = new Date()
+  const { date } = props
 
-    return {
-      dd: date.dd,
-      mm: date.mm || today.getMonth() + 1,
-      yyyy: date.yyyy || today.getFullYear()
-    }
-  }, [date])
+  const initialDisplayed = React.useMemo(
+    function getDerivedDisplayedDate() {
+      const today = new Date()
 
-  console.log(initialDisplayed)
+      return {
+        dd: date.dd,
+        mm: date.mm || today.getMonth() + 1,
+        yyyy: date.yyyy || today.getFullYear()
+      }
+    },
+    [date]
+  )
 
   const [displayed, setDisplayed] = React.useState(initialDisplayed)
   const [selected, setSelected] = React.useState(date)
 
-  React.useEffect(() => {
-    setSelected(date)
-  }, [date])
+  React.useEffect(
+    function updateSelectedOnPropChange() {
+      setSelected(date)
+    },
+    [date]
+  )
 
-  React.useEffect(() => {
+  React.useEffect(function focusCurrentOnMount() {
     if (selectedDayRef.current) selectedDayRef.current.focus()
     else ref.current.focus()
   }, [])
 
-  const handlePrevClick = evt => {
+  function handlePrevClick(evt) {
     evt.preventDefault()
 
     const nextDisplayed = getPrevMonthYear(displayed)
     setDisplayed(nextDisplayed)
   }
 
-  const handleNextClick = evt => {
+  function handleNextClick(evt) {
     evt.preventDefault()
 
     const nextDisplayed = getNextMonthYear(displayed)
     setDisplayed(nextDisplayed)
   }
 
-  const handleDayClick = (evt, dd) => {
+  function handleDayClick(evt, dd) {
     evt.preventDefault()
 
     const nextSelected = { ...displayed, dd }

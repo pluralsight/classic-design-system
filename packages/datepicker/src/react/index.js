@@ -22,7 +22,7 @@ import * as vars from '../vars/index.js'
 import Calendar from './calendar.js'
 
 const styles = {
-  calendarContainer: () =>
+  calendarContainer: _ =>
     css(stylesheet['.psds-date-picker__calendar-container']),
   datePicker: (themeName, { disabled }) =>
     compose(
@@ -30,8 +30,8 @@ const styles = {
       css(stylesheet[`.psds-date-picker.psds-theme--${themeName}`]),
       disabled && css(stylesheet['.psds-date-picker--disabled'])
     ),
-  error: () => compose(css(stylesheet['.psds-date-picker__error'])),
-  field: () => compose(css(stylesheet['.psds-date-picker__field'])),
+  error: _ => compose(css(stylesheet['.psds-date-picker__error'])),
+  field: _ => compose(css(stylesheet['.psds-date-picker__field'])),
   fieldContainer: (themeName, { appearance }) =>
     compose(
       css(stylesheet['.psds-date-picker__field-container']),
@@ -57,7 +57,7 @@ const styles = {
       css(stylesheet[`.psds-date-picker__icon--appearance-${appearance}`]),
       css(stylesheet[`.psds-date-picker__icon.psds-theme--${themeName}`])
     ),
-  overlay: () => css(stylesheet['.psds-date-picker__overlay']),
+  overlay: _ => css(stylesheet['.psds-date-picker__overlay']),
   subField: ({ appearance }) =>
     compose(
       css(stylesheet['.psds-date-picker__sub-field']),
@@ -83,16 +83,19 @@ const DatePicker = React.forwardRef((props, ref) => {
   const themeName = useTheme()
   const value = React.useMemo(() => parseDate(props.value), [props.value])
 
-  React.useEffect(() => {
-    setDate(value)
-  }, [value])
+  React.useEffect(
+    function updateDateOnPropChange() {
+      setDate(value)
+    },
+    [value]
+  )
 
   const [date, setDate] = React.useState(value)
 
   const [isOpen, setIsOpen] = React.useState(false)
   const toggleIsOpen = (nextIsOpen = !isOpen) => setIsOpen(nextIsOpen)
 
-  const handleCalendarSelect = value => {
+  function handleCalendarSelect(value) {
     const nextDate = parseDate(value)
     setDate(nextDate)
     setIsOpen(false)
@@ -102,7 +105,7 @@ const DatePicker = React.forwardRef((props, ref) => {
     }
   }
 
-  const handleChange = evt => {
+  function handleChange(evt) {
     const { name, value } = evt.target
     const updateRules = {
       mm: /^\d{0,2}$/,
@@ -116,7 +119,7 @@ const DatePicker = React.forwardRef((props, ref) => {
     }
   }
 
-  const handleIconClick = evt => {
+  function handleIconClick(evt) {
     evt.preventDefault()
     toggleIsOpen()
   }
@@ -126,15 +129,16 @@ const DatePicker = React.forwardRef((props, ref) => {
 
     evt.stopPropagation()
     evt.preventDefault()
+
     setIsOpen(false)
   }, props.onKeyDown)
 
-  const handleOverlayClick = evt => {
+  function handleOverlayClick(evt) {
     evt.preventDefault()
     setIsOpen(false)
   }
 
-  const handleSubFieldBlur = evt => {
+  function handleSubFieldBlur(evt) {
     const { name, value } = evt.target
     const forceValidValueFor = {
       dd: forceValidDay,
@@ -161,7 +165,7 @@ const DatePicker = React.forwardRef((props, ref) => {
     }
   }
 
-  const handleSubFieldFocus = () => {
+  function handleSubFieldFocus() {
     setIsOpen(false)
   }
 
@@ -321,7 +325,7 @@ function isEscape(evt) {
   return evt.key === 'Escape'
 }
 
-const isValidDate = ({ mm, dd, yyyy }) => {
+function isValidDate({ mm, dd, yyyy }) {
   const date = new Date(yyyy, mm - 1, dd)
   const someFields = mm || dd || yyyy
   const jsDateWorks = date && date.getMonth() + 1 === mm
