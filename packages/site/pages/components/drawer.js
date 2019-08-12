@@ -203,24 +203,6 @@ export default withServerProps(_ => (
 </Drawer>`
         ]}
       />
-
-      <SectionHeading>Light Theme</SectionHeading>
-      <P>
-        To specify the light theme, wrap your components in a <code>Theme</code>{' '}
-        component.
-      </P>
-      <Example.React
-        includes={{ Drawer, Theme }}
-        themeName={Theme.names.light}
-        orient="vertical"
-        codes={[
-          `<Theme name={Theme.names.light}>
-  <Drawer startOpen base={<div style={{ height: 100 }} />}>
-    <div style={{ height: 128 }} />
-  </Drawer>
-</Theme>`
-        ]}
-      />
     </Content>
   </Chrome>
 ))
