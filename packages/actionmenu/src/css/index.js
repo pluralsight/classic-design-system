@@ -145,6 +145,7 @@ export default {
     marginLeft: 'auto',
     paddingLeft: core.layout.spacingXSmall
   },
+  // TODO: rm or verify
   '.psds-actionmenu__item__arrow--focus-keyboard': {
     color: core.colors.white
   },

@@ -1,3 +1,5 @@
+import * as vars from '../vars/index.js'
+
 export function calcNextIndex(childrenProps, direction, currentIndex) {
   const count = childrenProps.length
   const next = currentIndex + direction
@@ -30,4 +32,25 @@ function find(iterate, base, props, start, from) {
   } else {
     return i
   }
+}
+
+export function calcNestedMenuPosition(menuWidth, origin) {
+  return {
+    topLeft: {
+      left: menuWidth + vars.style.nestedMenuHorzOverlap,
+      top: `calc(-1 * ${vars.style.menuPaddingVert})`
+    },
+    topRight: {
+      right: menuWidth + vars.style.nestedMenuHorzOverlap,
+      top: `calc(-1 * ${vars.style.menuPaddingVert})`
+    },
+    bottomRight: {
+      right: menuWidth + vars.style.nestedMenuHorzOverlap,
+      bottom: `calc(-1 * ${vars.style.menuPaddingVert})`
+    },
+    bottomLeft: {
+      left: menuWidth + vars.style.nestedMenuHorzOverlap,
+      bottom: `calc(-1 * ${vars.style.menuPaddingVert})`
+    }
+  }[origin]
 }
