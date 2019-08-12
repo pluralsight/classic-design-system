@@ -1,6 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
-import Dialog from '@pluralsight/ps-design-system-dialog/react'
-import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react'
+import Dialog from '@pluralsight/ps-design-system-dialog/react.js'
+import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react.js'
+import PropTypes from 'prop-types'
 import React from 'react'
 
 import {
@@ -12,7 +13,7 @@ import {
   PageHeading,
   SectionHeading,
   withServerProps
-} from '../../src/ui'
+} from '../../src/ui/index.js'
 
 class Boxes extends React.Component {
   constructor(props) {
@@ -75,6 +76,10 @@ class Boxes extends React.Component {
     )
   }
 }
+Boxes.propTypes = {
+  children: PropTypes.node,
+  count: PropTypes.number
+}
 
 export default withServerProps(_ => (
   <Chrome>
@@ -92,6 +97,15 @@ export default withServerProps(_ => (
         . For implementation instructions, visit the{' '}
         <Link href="/components/icon">Icon component page</Link>.
       </Intro>
+
+      <SectionHeading>Design asset</SectionHeading>
+      <P>
+        To design on this grid, you might want to use the{' '}
+        <Link href="https://www.figma.com/file/XCSM7mJXGr1pC3y3Tfgu6bLS/Icon-Grid-Template?node-id=0%3A1">
+          icon grid template Figma file
+        </Link>
+        .
+      </P>
 
       <SectionHeading>Canvas Size, Padding, Live Area</SectionHeading>
       <Boxes>
