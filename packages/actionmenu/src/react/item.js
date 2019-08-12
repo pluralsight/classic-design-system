@@ -100,7 +100,8 @@ function Item(props) {
       isKeyboarding: props._isKeyboarding,
       onClose: handleNestedClose,
       onChange: props._onChange,
-      origin: props._origin
+      origin: props._origin,
+      _isNested: true
     })
 
   return (

@@ -3,16 +3,22 @@ import core from '@pluralsight/ps-design-system-core'
 import * as vars from '../vars/index.js'
 
 const menuOriginRight = {
-  transform: `translateX(${core.layout.spacingXSmall})`
+  transform: `translate(${core.layout.spacingXSmall}, 0)`
 }
 const menuOriginLeft = {
-  transform: `translateX(calc(-1 * ${core.layout.spacingXSmall}))`
+  transform: `translate(calc(-1 * ${core.layout.spacingXSmall}), 0)`
+}
+const menuOriginTop = {
+  transform: `translate(0, calc(-1 * ${core.layout.spacingXSmall}))`
+}
+const menuOriginBottom = {
+  transform: `translate(0, ${core.layout.spacingXSmall})`
 }
 
 export default {
   '@keyframes psds-actionmenu__keyframes__slide': {
     '100%': {
-      transform: 'translateX(0)',
+      transform: 'translate(0,0)',
       opacity: 1
     }
   },
@@ -38,25 +44,30 @@ export default {
 
   // --origin
   [`.psds-actionmenu--origin-${vars.origins.topRight}`]: {
-    ...menuOriginRight,
+    ...menuOriginTop,
     right: 0,
     top: 0
   },
   [`.psds-actionmenu--origin-${vars.origins.bottomRight}`]: {
-    ...menuOriginRight,
+    ...menuOriginBottom,
     bottom: 0,
     right: 0
   },
   [`.psds-actionmenu--origin-${vars.origins.topLeft}`]: {
-    ...menuOriginLeft,
+    ...menuOriginTop,
     left: 0,
     top: 0
   },
   [`.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: {
-    ...menuOriginLeft,
+    ...menuOriginBottom,
     left: 0,
     bottom: 0
   },
+
+  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.topRight}`]: menuOriginRight,
+  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.bottomRight}`]: menuOriginRight,
+  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.topLeft}`]: menuOriginLeft,
+  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: menuOriginLeft,
 
   // __item-container
   '.psds-actionmenu__item-container': {

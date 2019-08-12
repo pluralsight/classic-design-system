@@ -17,6 +17,10 @@ const styles = {
     css(
       stylesheet['.psds-actionmenu']({ slide }),
       stylesheet[`.psds-actionmenu--origin-${props.origin}`],
+      props._isNested &&
+        stylesheet[
+          `.psds-actionmenu--nested.psds-actionmenu--origin-${props.origin}`
+        ],
       props.css
     )
 }

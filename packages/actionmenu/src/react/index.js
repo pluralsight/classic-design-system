@@ -26,7 +26,8 @@ ActionMenu.propTypes = {
   onClose: PropTypes.func,
   onChange: PropTypes.func,
   origin: PropTypes.oneOf(Object.keys(vars.origins).map(k => vars.origins[k])),
-  shouldFocusOnMount: PropTypes.bool
+  shouldFocusOnMount: PropTypes.bool,
+  _isNested: PropTypes.bool
 }
 ActionMenu.defaultProps = {
   isKeyboarding: false,
