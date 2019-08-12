@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@1.2.0...@pluralsight/ps-design-system-carousel@2.0.0) (2019-08-09)
+
+
+### Build System
+
+* **carousel:** move theme package to peerDeps ([d2ff76c](https://github.com/pluralsight/design-system/commit/d2ff76c))
+
+
+### BREAKING CHANGES
+
+* **carousel:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
 # [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@1.1.4...@pluralsight/ps-design-system-carousel@1.2.0) (2019-08-06)
 
 

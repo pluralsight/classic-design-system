@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.12...@pluralsight/ps-design-system-starrating@3.0.0) (2019-08-09)
+
+
+### Build System
+
+* **starrating:** move theme package to peerDeps ([3c3cee0](https://github.com/pluralsight/design-system/commit/3c3cee0))
+
+
+### BREAKING CHANGES
+
+* **starrating:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
 ## [2.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.11...@pluralsight/ps-design-system-starrating@2.0.12) (2019-07-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-starrating

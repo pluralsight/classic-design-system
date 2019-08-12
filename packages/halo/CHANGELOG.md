@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@4.0.4...@pluralsight/ps-design-system-halo@5.0.0) (2019-08-09)
+
+
+### Build System
+
+* **halo:** move theme package to peerDeps ([2295b6e](https://github.com/pluralsight/design-system/commit/2295b6e))
+
+
+### BREAKING CHANGES
+
+* **halo:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
 ## [4.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@4.0.3...@pluralsight/ps-design-system-halo@4.0.4) (2019-07-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-halo

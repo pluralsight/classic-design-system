@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@3.0.0...@pluralsight/ps-design-system-viewtoggle@4.0.0) (2019-08-09)
+
+
+### Bug Fixes
+
+* **viewtoggle:** dep range character ([e62529a](https://github.com/pluralsight/design-system/commit/e62529a))
+
+
+### Build System
+
+* **viewtoggle:** move theme package to peerDeps ([26ed7d7](https://github.com/pluralsight/design-system/commit/26ed7d7))
+
+
+### BREAKING CHANGES
+
+* **viewtoggle:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
 # [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.12...@pluralsight/ps-design-system-viewtoggle@3.0.0) (2019-08-06)
 
 

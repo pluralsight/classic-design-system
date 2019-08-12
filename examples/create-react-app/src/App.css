@@ -1,5 +1,5 @@
 /* DS: import (better if postcss-import is configured) core css vars (can also use in css-in-js) */
-@import "../node_modules/@pluralsight/ps-design-system-core/css/index.css";
+@import '../node_modules/@pluralsight/ps-design-system-core/css/index.css';
 
 .App {
   text-align: center;

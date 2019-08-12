@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-theme",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Design System component for theming",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -20,7 +20,7 @@
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "*",
+    "@pluralsight/ps-design-system-normalize": "^3.1.4",
     "glamor": "^2.20.0",
     "react": ">=16.8.6 < 17.0.0"
   }

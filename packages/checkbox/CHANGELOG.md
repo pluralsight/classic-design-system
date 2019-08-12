@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@3.0.0...@pluralsight/ps-design-system-checkbox@4.0.0) (2019-08-09)
+
+
+### Build System
+
+* **checkbox:** move theme package to peerDeps ([620c5a3](https://github.com/pluralsight/design-system/commit/620c5a3))
+
+
+### BREAKING CHANGES
+
+* **checkbox:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
 # [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@2.0.3...@pluralsight/ps-design-system-checkbox@3.0.0) (2019-08-02)
 
 

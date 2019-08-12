@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@3.0.0...@pluralsight/ps-design-system-storybook-addon-theme@4.0.0) (2019-08-09)
+
+
+### Build System
+
+* **storybook-addon-theme:** move theme package to peerDeps ([5be21cf](https://github.com/pluralsight/design-system/commit/5be21cf))
+
+
+### BREAKING CHANGES
+
+* **storybook-addon-theme:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
 # [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@2.0.5...@pluralsight/ps-design-system-storybook-addon-theme@3.0.0) (2019-07-30)
 
 
