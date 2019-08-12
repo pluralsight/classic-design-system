@@ -1,5 +1,5 @@
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -7,44 +7,45 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { vars as iconVars } from '@pluralsight/ps-design-system-icon'
 
 import { calcNextIndex } from '../js/index.js'
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 import Arrow from './arrow.js'
 
-const slide = glamor.css.keyframes(
-  css['@keyframes psds-actionmenu__keyframes__slide']
+const slide = css.keyframes(
+  stylesheet['@keyframes psds-actionmenu__keyframes__slide']
 )
 const styles = {
-  arrow: () => glamor.css(css['.psds-actionmenu__item__arrow']),
-  divider: () => glamor.css(css['.psds-actionmenu__divider']),
+  arrow: () => css(stylesheet['.psds-actionmenu__item__arrow']),
+  divider: () => css(stylesheet['.psds-actionmenu__divider']),
   menu: props =>
-    glamor.css(
-      css['.psds-actionmenu']({ slide }),
-      css[`.psds-actionmenu--origin-${props.origin}`],
+    css(
+      stylesheet['.psds-actionmenu']({ slide }),
+      stylesheet[`.psds-actionmenu--origin-${props.origin}`],
       props.css
     ),
-  overlay: () => glamor.css(css['.psds-actionmenu__overlay']),
-  itemContainer: () => glamor.css(css['.psds-actionmenu__item-container']),
-  itemIcon: () => glamor.css(css['.psds-actionmenu__item__icon']),
+  overlay: () => css(stylesheet['.psds-actionmenu__overlay']),
+  itemContainer: () => css(stylesheet['.psds-actionmenu__item-container']),
+  itemIcon: () => css(stylesheet['.psds-actionmenu__item__icon']),
   item: ({ _isKeyboarding, disabled, icon, isActive, nested }) =>
-    glamor.css(
-      css['.psds-actionmenu__item'],
+    css(
+      stylesheet['.psds-actionmenu__item'],
       _isKeyboarding
         ? !disabled && {
-            ':focus': css['.psds-actionmenu__item--focus-keyboard'],
-            ':focus div': css['.psds-actionmenu__item__arrow--focus-keyboard']
+            ':focus': stylesheet['.psds-actionmenu__item--focus-keyboard'],
+            ':focus div':
+              stylesheet['.psds-actionmenu__item__arrow--focus-keyboard']
           }
         : !disabled && {
-            ':focus': css['.psds-actionmenu__item:focus'],
-            ':hover': css['.psds-actionmenu__item--link'],
-            ':active': css['.psds-actionmenu__item--link'],
-            ':visited': css['.psds-actionmenu__item--link']
+            ':focus': stylesheet['.psds-actionmenu__item:focus'],
+            ':hover': stylesheet['.psds-actionmenu__item--link'],
+            ':active': stylesheet['.psds-actionmenu__item--link'],
+            ':visited': stylesheet['.psds-actionmenu__item--link']
           },
-      icon ? css['.psds-actionmenu__item--icon'] : null,
-      nested ? css['.psds-actionmenu__item--nested'] : null,
-      isActive ? css['.psds-actionmenu__item--isActive'] : null,
-      disabled && css['.psds-actionmenu__item--disabled']
+      icon ? stylesheet['.psds-actionmenu__item--icon'] : null,
+      nested ? stylesheet['.psds-actionmenu__item--nested'] : null,
+      isActive ? stylesheet['.psds-actionmenu__item--isActive'] : null,
+      disabled && stylesheet['.psds-actionmenu__item--disabled']
     )
 }
 
