@@ -46,7 +46,7 @@ class Boxes extends React.Component {
           ))}
         </EqualColumnLayout>
         {this.state.modalSrc && (
-          <Dialog modal onClose={this.handleClose}>
+          <Dialog modal onClose={this.handleClose} aria-label="Enlarge graphic">
             <img className="imageLarge" src={this.state.modalSrc} />
           </Dialog>
         )}
