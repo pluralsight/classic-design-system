@@ -1,4 +1,3 @@
-import classnames from 'classnames'
 import core from '@pluralsight/ps-design-system-core'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -44,11 +43,9 @@ const dimension = side =>
   side === 'left' || side === 'right' ? 'width' : 'height'
 
 function SingleLine(props) {
-  const className = classnames({
-    line: true,
-    lineSingleSide: props.sides !== 'all',
-    ['line' + capitalize(props.side)]: !!props.side
-  })
+  const className = `line line${capitalize(props.side)}${
+    props.sides !== 'all' ? ' lineSingleSide' : ''
+  }`
 
   return (
     <div style={{ [dimension(props.side)]: props.width }} className={className}>
@@ -238,7 +235,7 @@ const IndividualSpacing = props => (
     <div className="example">
       <Spacing.Parent>
         {incrementExamples.map((x, i) => (
-          <Spacing.Example key={i} width={24} sides={x.side} />
+          <Spacing.Example key={i} width={24} side={x.side} />
         ))}
       </Spacing.Parent>
     </div>
