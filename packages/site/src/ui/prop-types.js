@@ -1,11 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-
-import Badge from '@pluralsight/ps-design-system-badge/react'
+import Badge from '@pluralsight/ps-design-system-badge/react.js'
 import core from '@pluralsight/ps-design-system-core'
-import Table from '@pluralsight/ps-design-system-table/react'
+import PropTypes from 'prop-types'
+import React from 'react'
+import Table from '@pluralsight/ps-design-system-table/react.js'
 
-import { Heading, SectionHeading } from './index'
+import { Heading, SectionHeading } from './index.js'
 
 const BadgeSpacer = () => <span style={{ width: core.layout.spacingXSmall }} />
 

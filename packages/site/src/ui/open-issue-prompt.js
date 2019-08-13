@@ -1,8 +1,7 @@
+import Button from '@pluralsight/ps-design-system-button/react.js'
 import React from 'react'
 
-import Button from '@pluralsight/ps-design-system-button/react'
-
-import { GithubIcon } from '.'
+import { GithubIcon } from './index.js'
 
 class OpenIssuePrompt extends React.PureComponent {
   render() {

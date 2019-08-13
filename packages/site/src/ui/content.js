@@ -1,7 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import PropTypes from 'prop-types'
 import React from 'react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 class Headings {
   constructor() {
@@ -56,7 +56,7 @@ export const withHeadings = WrappedComponent =>
 
 export const addHeading = headings.add
 
-export default class extends React.Component {
+export default class Content extends React.Component {
   componentDidMount() {
     headings.reset()
   }
@@ -83,4 +83,7 @@ export default class extends React.Component {
       </div>
     )
   }
+}
+Content.propTypes = {
+  children: PropTypes.node
 }

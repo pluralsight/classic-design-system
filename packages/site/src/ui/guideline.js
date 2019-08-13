@@ -2,9 +2,9 @@ import classnames from 'classnames'
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
-import Badge from '@pluralsight/ps-design-system-badge/react'
+import Badge from '@pluralsight/ps-design-system-badge/react.js'
 import core from '@pluralsight/ps-design-system-core'
-import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react'
+import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react.js'
 
 function Guideline(props) {
   const isSingleCol = props.columnCount === 1

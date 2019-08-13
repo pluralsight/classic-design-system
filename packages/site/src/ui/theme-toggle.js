@@ -2,8 +2,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
-import Theme from '@pluralsight/ps-design-system-theme/react'
-import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react.js'
 import { string as stringUtil } from '@pluralsight/ps-design-system-util'
 
 function ThemeToggle(props) {
