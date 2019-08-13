@@ -1,11 +1,11 @@
 import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
-import Table from '@pluralsight/ps-design-system-table/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
+import Table from '@pluralsight/ps-design-system-table/react.js'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
 
-import { Chrome, Content, Doc, PageHeading, withServerProps } from '../src/ui'
+import { Chrome, Content, Doc, PageHeading } from '../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Design assets">
       <PageHeading>Design assets</PageHeading>
@@ -81,4 +81,4 @@ Sketch libraries are available [here](https://github.com/pluralsight/design-syst
       </Doc>
     </Content>
   </Chrome>
-))
+)

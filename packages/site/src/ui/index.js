@@ -22,7 +22,6 @@ import ATextLink from './text-link.js'
 import AThemeToggle from './theme-toggle.js'
 import ATitleLogo from './title-logo.js'
 import ATopBar from './top-bar.js'
-import AwithServerProps from './with-server-props.js'
 
 export const ChangeLog = AChangeLog
 export const Chrome = AChrome
@@ -48,4 +47,3 @@ export const TextLink = ATextLink
 export const ThemeToggle = AThemeToggle
 export const TitleLogo = ATitleLogo
 export const TopBar = ATopBar
-export const withServerProps = AwithServerProps

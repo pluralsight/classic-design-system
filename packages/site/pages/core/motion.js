@@ -7,8 +7,7 @@ import {
   Content,
   P,
   PageHeading,
-  SectionHeading,
-  withServerProps
+  SectionHeading
 } from '../../src/ui/index.js'
 
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
@@ -582,7 +581,7 @@ const Rotation = _ => (
   </div>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Motion">
       <PageHeading>Motion</PageHeading>
@@ -630,4 +629,4 @@ export default withServerProps(_ => (
 }`}</Code>
     </Content>
   </Chrome>
-))
+)

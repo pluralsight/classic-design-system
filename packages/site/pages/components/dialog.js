@@ -1,8 +1,8 @@
 import core from '@pluralsight/ps-design-system-core'
-import Button from '@pluralsight/ps-design-system-button/react'
-import Dialog from '@pluralsight/ps-design-system-dialog/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import { transparentize } from '@pluralsight/ps-design-system-util/color'
+import Button from '@pluralsight/ps-design-system-button/react.js'
+import Dialog from '@pluralsight/ps-design-system-dialog/react.js'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import { transparentize } from '@pluralsight/ps-design-system-util/color.js'
 import React from 'react'
 
 import {
@@ -16,8 +16,7 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
+  SectionHeading
 } from '../../src/ui/index.js'
 
 const ContentGridVisual = _ => (
@@ -124,7 +123,7 @@ const ModalIframe = _ => (
   </div>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Dialog">
       <PageHeading packageName="dialog">Dialog</PageHeading>
@@ -456,4 +455,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

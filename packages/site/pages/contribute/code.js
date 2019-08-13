@@ -1,15 +1,8 @@
-import core from '@pluralsight/ps-design-system-core'
+import React from 'react'
 
-import {
-  Chrome,
-  Content,
-  Doc,
-  P,
-  PageHeading,
-  withServerProps
-} from '../../src/ui'
+import { Chrome, Content, Doc, PageHeading } from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Install">
       <PageHeading>Contribute Code</PageHeading>
@@ -66,4 +59,4 @@ It worked!  Let’s do that again.
 `}</Doc>
     </Content>
   </Chrome>
-))
+)

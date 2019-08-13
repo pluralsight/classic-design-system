@@ -1,20 +1,17 @@
-import { Above } from '@pluralsight/ps-design-system-position/react'
+import { Above } from '@pluralsight/ps-design-system-position/react.js'
 import core from '@pluralsight/ps-design-system-core'
-import Button from '@pluralsight/ps-design-system-button/react'
+import Button from '@pluralsight/ps-design-system-button/react.js'
 import React from 'react'
-import Tooltip from '@pluralsight/ps-design-system-tooltip/react'
+import Tooltip from '@pluralsight/ps-design-system-tooltip/react.js'
 
-import { Head, withServerProps } from '../../src/ui/index.js'
+import { Head } from '../../src/ui/index.js'
 
-export default withServerProps(function PortalExample() {
+export default function PortalExample() {
   const portal = React.useRef()
   const [node, setNode] = React.useState(portal.current)
-  React.useEffect(
-    () => {
-      if (portal.current) setNode(portal.current)
-    },
-    [portal]
-  )
+  React.useEffect(() => {
+    if (portal.current) setNode(portal.current)
+  }, [portal])
 
   return (
     <div>
@@ -66,4 +63,4 @@ export default withServerProps(function PortalExample() {
       `}</style>
     </div>
   )
-})
+}

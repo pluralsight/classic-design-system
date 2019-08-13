@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Avatar from '@pluralsight/ps-design-system-avatar/react'
-import Button from '@pluralsight/ps-design-system-button/react'
-import Card from '@pluralsight/ps-design-system-card/react'
+import Avatar from '@pluralsight/ps-design-system-avatar/react.js'
+import Button from '@pluralsight/ps-design-system-button/react.js'
+import Card from '@pluralsight/ps-design-system-card/react.js'
 import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import * as Layout from '@pluralsight/ps-design-system-layout/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import * as Layout from '@pluralsight/ps-design-system-layout/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
   Chrome,
@@ -17,9 +17,8 @@ import {
   PageHeading,
   PropTypes,
   SectionHeading,
-  TextLink,
-  withServerProps
-} from '../../src/ui'
+  TextLink
+} from '../../src/ui/index.js'
 
 const decorateCards = (sizes, props, state) => {
   const cardMaxWidths = {
@@ -221,7 +220,7 @@ const InAppExample = props => (
   </Theme>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Card">
       <PageHeading packageName="card">Card</PageHeading>
@@ -675,4 +674,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

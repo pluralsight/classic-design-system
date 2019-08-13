@@ -1,7 +1,7 @@
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import React from 'react'
-import Tag from '@pluralsight/ps-design-system-tag/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
+import Tag from '@pluralsight/ps-design-system-tag/react.js'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
 
 import {
   Chrome,
@@ -11,11 +11,10 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Tag">
       <PageHeading packageName="tag">Tag</PageHeading>
@@ -131,4 +130,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

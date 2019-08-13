@@ -1,9 +1,9 @@
 import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import Row from '@pluralsight/ps-design-system-row/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import Row from '@pluralsight/ps-design-system-row/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
   Chrome,
@@ -13,9 +13,8 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const InAppExample = props => (
   <Theme>
@@ -88,7 +87,7 @@ const InAppExample = props => (
   </Theme>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Row">
       <PageHeading packageName="row">Row</PageHeading>
@@ -482,4 +481,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

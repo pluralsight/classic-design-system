@@ -1,10 +1,10 @@
 import core from '@pluralsight/ps-design-system-core'
+import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb/react.js'
+import { PageHeadingLayout } from '@pluralsight/ps-design-system-layout/react.js'
 import React from 'react'
-import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb/react'
-import { PageHeadingLayout } from '@pluralsight/ps-design-system-layout/react'
-import Tab from '@pluralsight/ps-design-system-tab/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
-import { transparentize } from '@pluralsight/ps-design-system-util/color'
+import Tab from '@pluralsight/ps-design-system-tab/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import { transparentize } from '@pluralsight/ps-design-system-util/color.js'
 
 import {
   Chrome,
@@ -15,8 +15,7 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
+  SectionHeading
 } from '../../src/ui/index.js'
 
 const PinkBox = props => (
@@ -70,7 +69,7 @@ const InAppExample = _ => (
   </div>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Breadcrumb">
       <PageHeading packageName="breadcrumb">Breadcrumb</PageHeading>
@@ -136,4 +135,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

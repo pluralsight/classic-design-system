@@ -16,8 +16,7 @@ import {
   PageHeading,
   PropTypes,
   SectionHeading,
-  TextLink,
-  withServerProps
+  TextLink
 } from '../../src/ui/index.js'
 
 function InAppExample() {
@@ -105,7 +104,7 @@ function InAppExample() {
   )
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Dropdown">
       <PageHeading packageName="dropdown">Dropdown</PageHeading>
@@ -339,4 +338,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

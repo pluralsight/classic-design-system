@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Avatar from '@pluralsight/ps-design-system-avatar/react'
-import Card from '@pluralsight/ps-design-system-card/react'
-import Carousel from '@pluralsight/ps-design-system-carousel/react'
-import Note from '@pluralsight/ps-design-system-note/react'
+import Avatar from '@pluralsight/ps-design-system-avatar/react.js'
+import Card from '@pluralsight/ps-design-system-card/react.js'
+import Carousel from '@pluralsight/ps-design-system-carousel/react.js'
+import Note from '@pluralsight/ps-design-system-note/react.js'
 
 import {
   Chrome,
@@ -15,8 +15,7 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
+  SectionHeading
 } from '../../src/ui/index.js'
 
 const MOCK_DATA = {
@@ -160,7 +159,7 @@ function MockItem(props) {
   return <div {...props} style={style} />
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Carousel">
       <PageHeading packageName="carousel">Carousel</PageHeading>
@@ -410,4 +409,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

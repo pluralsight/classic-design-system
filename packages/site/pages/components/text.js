@@ -1,5 +1,5 @@
 import React from 'react'
-import Text from '@pluralsight/ps-design-system-text/react'
+import Text from '@pluralsight/ps-design-system-text/react.js'
 
 import {
   Chrome,
@@ -9,11 +9,10 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Text">
       <PageHeading packageName="text">Text</PageHeading>
@@ -133,4 +132,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

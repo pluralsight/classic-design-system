@@ -12,11 +12,10 @@ import {
   Guideline,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
+  SectionHeading
 } from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Data Well">
       <PageHeading packageName="datawell">Data Well</PageHeading>
@@ -100,4 +99,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

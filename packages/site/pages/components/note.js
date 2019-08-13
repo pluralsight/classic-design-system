@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Avatar from '@pluralsight/ps-design-system-avatar/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import Link from '@pluralsight/ps-design-system-link/react'
-import Note from '@pluralsight/ps-design-system-note/react'
-import Text from '@pluralsight/ps-design-system-text/react'
+import Avatar from '@pluralsight/ps-design-system-avatar/react.js'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import Link from '@pluralsight/ps-design-system-link/react.js'
+import Note from '@pluralsight/ps-design-system-note/react.js'
+import Text from '@pluralsight/ps-design-system-text/react.js'
 
 import {
   Chrome,
@@ -15,11 +15,10 @@ import {
   Intro,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Note">
       <PageHeading packageName="note">Note (comment)</PageHeading>
@@ -300,4 +299,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

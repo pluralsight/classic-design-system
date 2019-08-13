@@ -5,7 +5,7 @@ import {
   NotFoundErrorPage,
   InternalServerErrorPage,
   ServiceUnavailableErrorPage
-} from '@pluralsight/ps-design-system-errors/react'
+} from '@pluralsight/ps-design-system-errors/react.js'
 
 import {
   Chrome,
@@ -17,11 +17,10 @@ import {
   PageHeading,
   PropTypes,
   SectionHeading,
-  TextLink,
-  withServerProps
-} from '../../src/ui'
+  TextLink
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Errors">
       <PageHeading packageName="errors">Errors</PageHeading>
@@ -142,4 +141,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

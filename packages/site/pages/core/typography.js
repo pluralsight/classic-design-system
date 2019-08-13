@@ -2,7 +2,7 @@
 
 import React from 'react'
 import core from '@pluralsight/ps-design-system-core'
-import { Code as DSCode } from '@pluralsight/ps-design-system-text/react'
+import { Code as DSCode } from '@pluralsight/ps-design-system-text/react.js'
 
 import {
   Chrome,
@@ -11,9 +11,8 @@ import {
   Link,
   P,
   PageHeading,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const FontFamily = props => (
   <div>
@@ -364,7 +363,7 @@ const MonospaceFont = _ => (
   </div>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Typography">
       <PageHeading>Typography</PageHeading>
@@ -415,4 +414,4 @@ export default withServerProps(_ => (
       <MonospaceFont />
     </Content>
   </Chrome>
-))
+)

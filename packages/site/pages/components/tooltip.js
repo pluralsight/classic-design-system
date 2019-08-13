@@ -18,8 +18,7 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
+  SectionHeading
 } from '../../src/ui/index.js'
 
 function TooltipGuideline(props) {
@@ -172,7 +171,7 @@ function HoverExampleOnly() {
   )
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Tooltip">
       <PageHeading packageName="tooltip">Tooltip</PageHeading>
@@ -329,4 +328,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

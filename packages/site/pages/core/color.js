@@ -6,13 +6,10 @@ import {
   Chrome,
   Code,
   Content,
-  Example,
-  Link,
   P,
   PageHeading,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const Palette = props => (
   <div className="palette">
@@ -27,6 +24,9 @@ const Palette = props => (
     `}</style>
   </div>
 )
+Palette.propTypes = {
+  children: PropTypes.node
+}
 
 const GradientStop = props => (
   <div className="stop">
@@ -39,6 +39,9 @@ const GradientStop = props => (
     `}</style>
   </div>
 )
+GradientStop.propTypes = {
+  children: PropTypes.node
+}
 
 const GradientVar = props => (
   <div className="var">
@@ -53,6 +56,9 @@ const GradientVar = props => (
     `}</style>
   </div>
 )
+GradientVar.propTypes = {
+  children: PropTypes.node
+}
 
 const Gradient = props => (
   <div
@@ -73,81 +79,10 @@ const Gradient = props => (
     `}</style>
   </div>
 )
-
-const HorzGradient = props => (
-  <div
-    className="root"
-    style={{
-      background: `linear-gradient(to right, #${props.start}, #${props.stop})`
-    }}
-  >
-    <div>
-      <div className="start">{props.start}</div>
-      <div className="var">psColorsGradientHorz</div>
-    </div>
-    <div className="stop">{props.stop}</div>
-    <style jsx>{`
-      .root {
-        flex: 1 0 auto;
-        display: flex;
-        width: calc(50% - (2 * var(--psLayoutSpacingLarge)));
-        height: 120px;
-        padding: var(--psLayoutSpacingLarge) var(--psLayoutSpacingSmall);
-        margin: calc(${core.layout.spacingLarge} / 2);
-      }
-      .start,
-      .stop,
-      .var {
-        color: var(--psColorsWhite);
-        white-space: nowrap;
-      }
-      .root .stop {
-        margin-left: auto;
-      }
-      .var {
-        opacity: 0.75;
-        font-size: var(--psTypeFontSizeXSmall);
-      }
-    `}</style>
-  </div>
-)
-
-const VertGradient = props => (
-  <div
-    className="root"
-    style={{
-      background: `linear-gradient(to bottom, #${props.start}, #${props.stop})`
-    }}
-  >
-    <div className="start">{props.start}</div>
-    <div className="var">psColorsGradientVert</div>
-    <div className="stop">{props.stop}</div>
-    <style jsx>{`
-      .root {
-        flex: 1 0 auto;
-        flex-direction: column;
-        display: flex;
-        width: calc(50% - (2 * var(--psLayoutSpacingLarge)));
-        height: 120px;
-        padding: var(--psLayoutSpacingLarge) var(--psLayoutSpacingSmall);
-        margin: calc(${core.layout.spacingLarge} / 2);
-      }
-      .start,
-      .stop,
-      .var {
-        color: var(--psColorsWhite);
-        white-space: nowrap;
-      }
-      .root .stop {
-        margin-top: auto;
-      }
-      .var {
-        opacity: 0.75;
-        font-size: var(--psTypeFontSizeXSmall);
-      }
-    `}</style>
-  </div>
-)
+Gradient.propTypes = {
+  children: PropTypes.node,
+  var: PropTypes.string
+}
 
 const Swatch = props => (
   <div
@@ -188,11 +123,16 @@ const Swatch = props => (
     `}</style>
   </div>
 )
+Swatch.propTypes = {
+  hex: PropTypes.string,
+  light: PropTypes.bool,
+  var: PropTypes.string
+}
 
 const DarkSwatch = props => <Swatch {...props} />
 const LightSwatch = props => <Swatch {...props} light />
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Color">
       <PageHeading>Color</PageHeading>
@@ -289,4 +229,4 @@ export default withServerProps(_ => (
       }
     `}</style>
   </Chrome>
-))
+)
