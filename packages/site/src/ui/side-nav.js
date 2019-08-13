@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import { withRouter } from 'next/router.js'
 
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
@@ -104,12 +105,12 @@ InternalLinks.propTypes = {
   headings: PropTypes.array
 }
 
-class NavLink extends React.Component {
+class RouterUnawareNavLink extends React.Component {
   render() {
     const isActive =
       (typeof window !== 'undefined' &&
         window.location.pathname === this.props.href) ||
-      this.context.pathname === this.props.href
+      this.props.router.pathname === this.props.href
     return (
       <div className="navLink">
         <Link href={this.props.href}>
@@ -163,19 +164,20 @@ class NavLink extends React.Component {
     )
   }
 }
-NavLink.propTypes = {
+RouterUnawareNavLink.propTypes = {
   children: PropTypes.node,
   headings: PropTypes.arrayOf(PropTypes.object),
   href: PropTypes.string
 }
-NavLink.contextTypes = {
-  pathname: PropTypes.string
-}
-NavLink.propTypes = {
+RouterUnawareNavLink.propTypes = {
   children: PropTypes.node,
   headings: PropTypes.arrayOf(PropTypes.any),
-  href: PropTypes.string
+  href: PropTypes.string,
+  router: PropTypes.shape({
+    pathname: PropTypes.string
+  })
 }
+const NavLink = withRouter(RouterUnawareNavLink)
 
 const LogoSvg = _ => (
   <svg
