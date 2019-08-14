@@ -1,5 +1,7 @@
 const num = n => parseInt(n, 10)
 
+export const arrayOf = num => Array.apply(null, Array(num || 0))
+
 export const getDaysInMonth = ({ mm, yyyy }) => {
   const lastDayInPreviousMonth = 0
   return new Date(yyyy, mm, lastDayInPreviousMonth).getDate()
@@ -70,3 +72,34 @@ export const parseDate = value => {
 
 export const formatDate = ({ mm, dd, yyyy } = {}) =>
   mm && dd && yyyy ? mm + '/' + dd + '/' + yyyy : null
+
+export function combineFns(...fns) {
+  return (...args) => fns.filter(isFunction).forEach(fn => fn(...args))
+}
+
+export function isFunction(fn) {
+  return typeof fn === 'function'
+}
+
+export function isNil(val) {
+  // NOTE: i know this isn't strict equality, it's by design to also get NaN
+  return val == null
+}
+
+export function shallowEqual(a, b) {
+  if (a === b) return true
+  if (isNil(a) || isNil(b)) return false
+
+  const aKeys = Object.keys(a)
+  const bKeys = Object.keys(b)
+
+  if (bKeys.length !== aKeys.length) return false
+
+  for (let i = 0; i < aKeys.length; i++) {
+    const key = aKeys[i]
+
+    if (a[key] !== b[key]) return false
+  }
+
+  return true
+}
