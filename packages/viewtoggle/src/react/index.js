@@ -40,6 +40,7 @@ const ViewToggle = React.forwardRef(({ onSelect, ...props }, forwardedRef) => {
 
   function renderActivePill() {
     const activeEl = React.Children.toArray(props.children)[activeIndex]
+    if (!activeEl) return null
 
     let activePillStyle = {}
     if (hasRenderedOnce && ref.current) {
