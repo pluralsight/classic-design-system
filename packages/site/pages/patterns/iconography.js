@@ -11,8 +11,7 @@ import {
   Link,
   P,
   PageHeading,
-  SectionHeading,
-  withServerProps
+  SectionHeading
 } from '../../src/ui/index.js'
 
 class Boxes extends React.Component {
@@ -47,7 +46,7 @@ class Boxes extends React.Component {
           ))}
         </EqualColumnLayout>
         {this.state.modalSrc && (
-          <Dialog modal onClose={this.handleClose}>
+          <Dialog modal onClose={this.handleClose} aria-label="Enlarge graphic">
             <img className="imageLarge" src={this.state.modalSrc} />
           </Dialog>
         )}
@@ -81,7 +80,7 @@ Boxes.propTypes = {
   count: PropTypes.number
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Iconography">
       <PageHeading>Iconography</PageHeading>
@@ -215,4 +214,4 @@ export default withServerProps(_ => (
       </Boxes>
     </Content>
   </Chrome>
-))
+)

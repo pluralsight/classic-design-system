@@ -1,8 +1,8 @@
-import Button from '@pluralsight/ps-design-system-button/react'
+import Button from '@pluralsight/ps-design-system-button/react.js'
 import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
-import Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import Text from '@pluralsight/ps-design-system-text/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
   Chrome,
@@ -12,9 +12,8 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const ContrastingExample = _ => (
   <div className="contrast">
@@ -54,7 +53,7 @@ const ContrastingExample = _ => (
   </div>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Button">
       <PageHeading packageName="theme">Theme</PageHeading>
@@ -114,4 +113,4 @@ export default withServerProps(_ => (
       <ContrastingExample />
     </Content>
   </Chrome>
-))
+)

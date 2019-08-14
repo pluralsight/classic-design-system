@@ -1,15 +1,14 @@
 import 'isomorphic-fetch'
 
 import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import PropTypes from 'prop-types'
 import React from 'react'
 
-import { GithubIcon, TextLink } from './index'
+import { GithubIcon, TextLink } from './index.js'
 
 const ChangeLog = props => {
-  const changeLogUrl = `https://github.com/pluralsight/design-system/blob/master/packages/${
-    props.packageName
-  }/CHANGELOG.md`
+  const changeLogUrl = `https://github.com/pluralsight/design-system/blob/master/packages/${props.packageName}/CHANGELOG.md`
   const label = props.version ? `v${props.version}` : 'CHANGELOG'
   return (
     <div className="version">
@@ -38,6 +37,10 @@ const ChangeLog = props => {
     </div>
   )
 }
+ChangeLog.propTypes = {
+  packageName: PropTypes.string,
+  version: PropTypes.string
+}
 
 const getPackagesApiHost = _ => {
   const host = process.env.PACKAGES_API_HOST
@@ -45,7 +48,7 @@ const getPackagesApiHost = _ => {
   return host
 }
 
-export default class extends React.Component {
+export default class ChangeLogContainer extends React.Component {
   constructor(props) {
     super(props)
     this.state = { packages: null }
@@ -53,7 +56,7 @@ export default class extends React.Component {
   async fetchPackages() {
     console.log('fetching packages...')
     try {
-      const res = await fetch(getPackagesApiHost() + '/api/v2/packages')
+      const res = await fetch(getPackagesApiHost() + '/api/v2/packages') // eslint-disable-line no-undef
       const json = await res.json()
       if (res.ok) {
         console.log('res.ok', res, json)
@@ -82,4 +85,7 @@ export default class extends React.Component {
       <ChangeLog packageName={this.props.packageName} />
     )
   }
+}
+ChangeLogContainer.propTypes = {
+  packageName: PropTypes.string
 }

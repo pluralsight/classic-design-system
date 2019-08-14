@@ -1,7 +1,7 @@
 import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
 
 import {
   Chrome,
@@ -13,9 +13,8 @@ import {
   PageHeading,
   PropTypes,
   SectionHeading,
-  TextLink,
-  withServerProps
-} from '../../src/ui'
+  TextLink
+} from '../../src/ui/index.js'
 
 const CommonSet = props => (
   <div>
@@ -58,7 +57,7 @@ const CommonSet = props => (
   </div>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Icon">
       <PageHeading packageName="icon">Icon</PageHeading>
@@ -164,4 +163,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

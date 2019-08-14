@@ -1,8 +1,8 @@
 import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
-import Tab from '@pluralsight/ps-design-system-tab/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import Tab from '@pluralsight/ps-design-system-tab/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
   Chrome,
@@ -12,8 +12,7 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
+  SectionHeading
 } from '../../src/ui/index.js'
 
 class InAppExample extends React.Component {
@@ -114,7 +113,7 @@ class InAppExample extends React.Component {
   }
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Tab">
       <PageHeading packageName="tab">Tab</PageHeading>
@@ -223,4 +222,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

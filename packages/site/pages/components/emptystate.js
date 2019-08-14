@@ -1,10 +1,10 @@
 import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
-import Button from '@pluralsight/ps-design-system-button/react'
-import EmptyState from '@pluralsight/ps-design-system-emptystate/react'
-import Text from '@pluralsight/ps-design-system-text/react'
-import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react'
+import Button from '@pluralsight/ps-design-system-button/react.js'
+import EmptyState from '@pluralsight/ps-design-system-emptystate/react.js'
+import Text from '@pluralsight/ps-design-system-text/react.js'
+import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react.js'
 
 import {
   Code,
@@ -17,8 +17,7 @@ import {
   PageHeading,
   PropTypes,
   SectionHeading,
-  ThemeToggle,
-  withServerProps
+  ThemeToggle
 } from '../../src/ui/index.js'
 
 const titleize = str =>
@@ -99,7 +98,7 @@ class IllustrationPreviewGrid extends React.Component {
   }
 }
 
-const EmptyStateDocumentation = withServerProps(props => (
+const EmptyStateDocumentation = props => (
   <Chrome>
     <Content title="Empty state">
       <PageHeading packageName="emptystate">Empty State</PageHeading>
@@ -303,6 +302,6 @@ If the absence of data occurs due to a user query such as a search, consider dis
       />
     </Content>
   </Chrome>
-))
+)
 
 export default EmptyStateDocumentation

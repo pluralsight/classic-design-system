@@ -41,3 +41,23 @@ exports[`Storyshots appearance subtle 1`] = `
   </p>
 </div>
 `;
+
+exports[`Storyshots tagNames button 1`] = `
+<div
+  data-css-claeju=""
+>
+  <p
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <button
+      data-css-1skajya=""
+    >
+      Click me
+    </button>
+  </p>
+</div>
+`;

@@ -1,14 +1,12 @@
-import classnames from 'classnames'
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
-import Badge from '@pluralsight/ps-design-system-badge/react'
+import Badge from '@pluralsight/ps-design-system-badge/react.js'
 import core from '@pluralsight/ps-design-system-core'
-import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react'
+import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react.js'
 
 function Guideline(props) {
   const isSingleCol = props.columnCount === 1
-  const boxClassName = classnames('box', { 'box--vertical': isSingleCol })
 
   const Layout = isSingleCol
     ? layoutProps => <Fragment {...layoutProps} />
@@ -48,7 +46,10 @@ function Guideline(props) {
       `}</style>
 
       <Layout>
-        <div className={boxClassName} style={props.doStyle}>
+        <div
+          className={`box${isSingleCol ? ' box--vertical' : ''}`}
+          style={props.doStyle}
+        >
           {props.do}
 
           <div className="badgeWrapper">
@@ -58,7 +59,10 @@ function Guideline(props) {
           </div>
         </div>
 
-        <div className={boxClassName} style={props.dontStyle}>
+        <div
+          className={`box${isSingleCol ? ' box--vertical' : ''}`}
+          style={props.dontStyle}
+        >
           {props.dont}
 
           <div className="badgeWrapper">

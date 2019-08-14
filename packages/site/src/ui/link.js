@@ -1,35 +1,39 @@
-import Link from 'next/link'
+import DSLink from '@pluralsight/ps-design-system-link/react.js'
+import NextLink from 'next/link.js'
+import PropTypes from 'prop-types'
 import React from 'react'
-import StyledLink from '@pluralsight/ps-design-system-link/react'
 
+// TODO: consolidate text-link.js usages into this
 // TODO: make handle activeClassName-type thing
-class LinkComponent extends React.Component {
-  constructor(props) {
-    super(props)
-    this.handleClick = this.handleClick.bind(this)
-  }
-  handleClick(evt) {
+const Link = React.forwardRef((props, ref) => {
+  function handleClick(evt) {
     if (document)
       document.body.scrollTop = document.documentElement.scrollTop = 0
-    if (this.props.onClick) this.props.onClick(evt)
+    if (typeof props.onClick === 'function') props.onClick(evt)
   }
-  render() {
-    return /^http/.test(this.props.href) ? (
-      <StyledLink appearance={this.props.appearance}>
-        <a {...this.props} href={this.props.href}>
-          {this.props.children}
+  return /^http/.test(props.href) ? (
+    <DSLink appearance={props.appearance}>
+      <a {...props} href={props.href} ref={ref}>
+        {props.children}
+      </a>
+    </DSLink>
+  ) : (
+    <NextLink href={props.href}>
+      <DSLink appearance={props.appearance}>
+        <a {...props} onClick={handleClick} ref={ref}>
+          {props.children}
         </a>
-      </StyledLink>
-    ) : (
-      <Link href={this.props.href}>
-        <StyledLink appearance={this.props.appearance}>
-          <a {...this.props} onClick={this.handleClick}>
-            {this.props.children}
-          </a>
-        </StyledLink>
-      </Link>
-    )
-  }
+      </DSLink>
+    </NextLink>
+  )
+})
+Link.appearances = DSLink.appearances
+Link.propTypes = {
+  appearance: PropTypes.oneOf(
+    Object.keys(DSLink.appearances).map(k => DSLink.appearances[k])
+  ),
+  children: PropTypes.node,
+  href: PropTypes.string,
+  onClick: PropTypes.func
 }
-LinkComponent.appearances = StyledLink.appearances
-export default LinkComponent
+export default Link

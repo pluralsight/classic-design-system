@@ -1,12 +1,12 @@
 import React from 'react'
 
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
-import Button from '@pluralsight/ps-design-system-button/react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
+import Button from '@pluralsight/ps-design-system-button/react.js'
 import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import { BelowLeft } from '@pluralsight/ps-design-system-position/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import { BelowLeft } from '@pluralsight/ps-design-system-position/react.js'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
   Chrome,
@@ -16,9 +16,8 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 function InAppExample() {
   const categories = [
@@ -184,7 +183,7 @@ function InAppExample() {
   )
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Action Menu">
       <PageHeading packageName="actionmenu">Action Menu</PageHeading>
@@ -500,4 +499,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

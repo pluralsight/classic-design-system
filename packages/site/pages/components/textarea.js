@@ -1,6 +1,6 @@
 import React from 'react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import TextArea from '@pluralsight/ps-design-system-textarea/react'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import TextArea from '@pluralsight/ps-design-system-textarea/react.js'
 
 import {
   Chrome,
@@ -10,11 +10,10 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Text Area">
       <PageHeading packageName="textarea">Text Area</PageHeading>
@@ -142,4 +141,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

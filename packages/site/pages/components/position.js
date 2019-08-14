@@ -1,11 +1,11 @@
-import Button from '@pluralsight/ps-design-system-button/react'
+import Button from '@pluralsight/ps-design-system-button/react.js'
 import core from '@pluralsight/ps-design-system-core'
-import { below } from '@pluralsight/ps-design-system-position/js'
-import { Below } from '@pluralsight/ps-design-system-position/react'
+import { below } from '@pluralsight/ps-design-system-position/js.js'
+import { Below } from '@pluralsight/ps-design-system-position/react.js'
 import React from 'react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
-import Tooltip from '@pluralsight/ps-design-system-tooltip/react'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import Tooltip from '@pluralsight/ps-design-system-tooltip/react.js'
 
 import {
   Chrome,
@@ -15,11 +15,10 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Position">
       <PageHeading packageName="position">Position</PageHeading>
@@ -170,7 +169,7 @@ export default withServerProps(_ => (
       }
     `}</style>
   </Chrome>
-))
+)
 
 function JsExample() {
   const targetRef = React.useRef()

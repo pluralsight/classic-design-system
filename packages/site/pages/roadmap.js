@@ -1,6 +1,6 @@
-import Badge from '@pluralsight/ps-design-system-badge/react'
+import Badge from '@pluralsight/ps-design-system-badge/react.js'
 import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -12,9 +12,8 @@ import {
   P,
   PageHeading,
   SectionHeading,
-  TextLink,
-  withServerProps
-} from '../src/ui'
+  TextLink
+} from '../src/ui/index.js'
 
 const work = {
   short: [
@@ -214,6 +213,7 @@ class Task extends React.Component {
 Task.propTypes = {
   item: PropTypes.shape({
     href: PropTypes.string,
+    helpers: PropTypes.arrayOf(PropTypes.string),
     tags: PropTypes.arrayOf(PropTypes.string),
     title: PropTypes.string
   })
@@ -289,7 +289,7 @@ Task.Tag.propTypes = {
   children: PropTypes.node
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Install">
       <PageHeading>Roadmap</PageHeading>
@@ -325,7 +325,7 @@ export default withServerProps(_ => (
       <Tasks color={core.colors.yellow} tasks={work.short} />
     </Content>
   </Chrome>
-))
+)
 /*
 
 

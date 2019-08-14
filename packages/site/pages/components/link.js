@@ -1,4 +1,5 @@
-import Link from '@pluralsight/ps-design-system-link/react'
+import Link from '@pluralsight/ps-design-system-link/react.js'
+import React from 'react'
 
 import {
   Chrome,
@@ -8,11 +9,10 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Link">
       <PageHeading packageName="link">Link</PageHeading>
@@ -70,4 +70,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

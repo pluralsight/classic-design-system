@@ -9,9 +9,8 @@ import {
   Doc,
   P,
   PageHeading,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const Bar = props => (
   <div className="bar">
@@ -116,7 +115,7 @@ LevelList.propTypes = {
   children: PropTypes.node
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Install">
       <PageHeading>Contribute</PageHeading>
@@ -223,4 +222,4 @@ The design group meets together regularly to review the Style Guide and the late
 `}</Doc>
     </Content>
   </Chrome>
-))
+)

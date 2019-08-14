@@ -1,8 +1,8 @@
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import React from 'react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import TextInput from '@pluralsight/ps-design-system-textinput/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
   Chrome,
@@ -13,11 +13,10 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Text Input">
       <PageHeading packageName="textinput">Text Input</PageHeading>
@@ -192,4 +191,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

@@ -1,5 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import * as Text from '@pluralsight/ps-design-system-text/react'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -11,9 +11,8 @@ import {
   Link,
   P,
   PageHeading,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const formatVarName = name => 'psColors' + name[0].toUpperCase() + name.slice(1)
 const ColorDesc = props => (
@@ -96,7 +95,7 @@ const CodeColors = _ => (
   </div>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Code">
       <PageHeading packageName="text">Code</PageHeading>
@@ -160,4 +159,4 @@ console.log('Design System' + what)`}</Code>
       <CodeColors />
     </Content>
   </Chrome>
-))
+)

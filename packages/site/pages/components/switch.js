@@ -1,7 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
-import Switch from '@pluralsight/ps-design-system-switch/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
+import Switch from '@pluralsight/ps-design-system-switch/react.js'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
 
 import {
   Chrome,
@@ -11,9 +11,8 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 class InAppExample extends React.Component {
   constructor(props) {
@@ -66,7 +65,7 @@ class InAppExample extends React.Component {
   }
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Switch">
       <PageHeading packageName="switch">Switch</PageHeading>
@@ -203,4 +202,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

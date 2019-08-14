@@ -1,7 +1,7 @@
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import DatePicker from '@pluralsight/ps-design-system-datepicker/react'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import DatePicker from '@pluralsight/ps-design-system-datepicker/react.js'
 import React from 'react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
   Chrome,
@@ -11,11 +11,10 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Date Picker">
       <PageHeading packageName="datepicker">Date Picker</PageHeading>
@@ -159,4 +158,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

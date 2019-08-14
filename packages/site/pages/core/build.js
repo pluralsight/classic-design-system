@@ -1,13 +1,7 @@
 import React from 'react'
-import {
-  Chrome,
-  Content,
-  Doc,
-  PageHeading,
-  withServerProps
-} from '../../src/ui'
+import { Chrome, Content, Doc, PageHeading } from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Core Build">
       <PageHeading>Core CSS Build Config</PageHeading>
@@ -94,4 +88,4 @@ See the [core usage docs](/core/usage) for usage syntax details.
 `}</Doc>
     </Content>
   </Chrome>
-))
+)

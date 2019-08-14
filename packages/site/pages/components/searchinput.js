@@ -1,9 +1,9 @@
 import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
-import SearchInput from '@pluralsight/ps-design-system-searchinput/react'
-import Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import SearchInput from '@pluralsight/ps-design-system-searchinput/react.js'
+import Text from '@pluralsight/ps-design-system-text/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
   Chrome,
@@ -14,11 +14,10 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Search Input">
       <PageHeading packageName="searchinput">Search Input</PageHeading>
@@ -148,4 +147,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

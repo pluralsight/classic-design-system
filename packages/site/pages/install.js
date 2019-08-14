@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Badge from '@pluralsight/ps-design-system-badge/react'
+import Badge from '@pluralsight/ps-design-system-badge/react.js'
 
 import {
   Chrome,
@@ -8,11 +8,10 @@ import {
   Doc,
   P,
   PageHeading,
-  TextLink,
-  withServerProps
-} from '../src/ui'
+  TextLink
+} from '../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Install">
       <PageHeading>Install FTW!</PageHeading>
@@ -103,4 +102,4 @@ For full, working project examples, see [github](https://github.com/pluralsight/
 `}</Doc>
     </Content>
   </Chrome>
-))
+)

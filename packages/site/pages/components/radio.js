@@ -1,6 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import Radio from '@pluralsight/ps-design-system-radio/react'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import Radio from '@pluralsight/ps-design-system-radio/react.js'
 import React from 'react'
 
 import {
@@ -11,9 +11,8 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 class InAppExample extends React.Component {
   constructor() {
@@ -90,7 +89,7 @@ class InAppExample extends React.Component {
   }
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Radio">
       <PageHeading packageName="radio">Radio</PageHeading>
@@ -226,4 +225,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

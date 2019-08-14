@@ -14,3 +14,11 @@ Object.keys(Link.appearances).forEach(appearance =>
     </p>
   ))
 )
+
+storiesOf('tagNames', module).add('button', _ => (
+  <p style={{ color: 'white' }}>
+    <Link>
+      <button>Click me</button>
+    </Link>
+  </p>
+))
