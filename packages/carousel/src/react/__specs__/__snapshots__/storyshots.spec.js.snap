@@ -182,6 +182,7 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
               {
   "isActivePage": true,
   "itemIndex": 0,
+  "itemsPerPage": 1,
   "pageCount": 9,
   "pageIndex": 0
 }
