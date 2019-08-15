@@ -1,27 +1,7 @@
 import React from 'react'
-import { mount } from 'enzyme'
+import { fireEvent, render } from '@testing-library/react'
 
-import FocusManager from '../index'
-
-const children = (
-  <ul>
-    <li>
-      <a href="#">first</a>
-    </li>
-    <li>
-      <a href="#">second</a>
-    </li>
-    <li>
-      <a href="#">third</a>
-    </li>
-    <li>
-      <a href="#">forth</a>
-    </li>
-    <li>
-      <a href="#">fifth</a>
-    </li>
-  </ul>
-)
+import FocusManager from '../index.js'
 
 describe('FocusManager', () => {
   beforeEach(() => {
@@ -38,83 +18,178 @@ Object {
 `)
   })
 
-  describe('WITH focusable children', () => {
-    it('renders successfully', () => {
-      expect(() => mount(<FocusManager>{children}</FocusManager>)).not.toThrow()
-    })
+  it('renders', () => {
+    const { getByTestId } = render(
+      <FocusManager data-testid="mock-component" />
+    )
+
+    expect(getByTestId('mock-component')).toBeInTheDocument()
   })
 
-  describe('WITHOUT focusable children', () => {
-    it('renders successfully', () => {
-      expect(() =>
-        mount(<FocusManager>unfocusable</FocusManager>)
-      ).not.toThrow()
-    })
+  it('forwards refs', () => {
+    const ref = React.createRef()
+
+    render(<FocusManager ref={ref} />)
+
+    expect(ref.current).not.toBeNull()
   })
 
-  describe('autofocus', () => {
-    describe('when enabled', () => {
-      it('focuses the first focusable child', () => {
-        const wrapper = mount(<FocusManager autofocus>{children}</FocusManager>)
-
-        const el = wrapper.find('a[href]').first()
-
-        expect(document.activeElement).toEqual(el.getDOMNode())
-      })
-    })
-
-    describe('when disabled', () => {
-      it('does NOT focus any children', () => {
-        mount(<FocusManager autofocus={false}>{children}</FocusManager>)
-
-        expect(document.activeElement).toEqual(document.body)
-      })
-    })
-  })
-
-  describe('on keydown', () => {
-    describe('when first child tabs backward', () => {
-      it('focuses the last child', () => {
-        const wrapper = mount(<FocusManager>{children}</FocusManager>)
-
-        const firstEl = wrapper.find('a[href]').first()
-        const lastEl = wrapper.find('a[href]').last()
-
-        firstEl.getDOMNode().focus()
-        firstEl.simulate('keydown', { key: 'Tab', shiftKey: true })
-
-        expect(document.activeElement).toEqual(lastEl.getDOMNode())
-      })
-    })
-
-    describe('when last child tabs forward', () => {
-      it('focuses the first child', () => {
-        const wrapper = mount(<FocusManager>{children}</FocusManager>)
-
-        const firstEl = wrapper.find('a[href]').first()
-        const lastEl = wrapper.find('a[href]').last()
-
-        lastEl.getDOMNode().focus()
-        lastEl.simulate('keydown', { key: 'Tab' })
-
-        expect(document.activeElement).toEqual(firstEl.getDOMNode())
-      })
-    })
-  })
-
-  describe('on unmount', () => {
+  describe('when returnFocus is enabled', () => {
     it('returns focus to the prev active element', () => {
       const button = document.createElement('button')
       document.body.appendChild(button)
       button.focus()
+      const { container, unmount } = render(
+        <FocusManager>
+          <ul>
+            <li>
+              <a href="#">first</a>
+            </li>
+          </ul>
+        </FocusManager>
+      )
+      const link = container.querySelectorAll('li>a')[0]
+      expect(link).toEqual(document.activeElement)
 
-      const wrapper = mount(<FocusManager>{children}</FocusManager>)
-      const lastEl = wrapper.find('a[href]').last()
+      unmount()
 
-      lastEl.getDOMNode().focus()
-      wrapper.unmount()
-
-      expect(document.activeElement).toEqual(button)
+      expect(button).toEqual(document.activeElement)
     })
+  })
+
+  describe('when autofocus is enabled', () => {
+    it('focuses the first focusable child', () => {
+      const { container } = render(
+        <FocusManager>
+          <ul>
+            <li>
+              <a href="#">first</a>
+            </li>
+            <li>
+              <a href="#">second</a>
+            </li>
+          </ul>
+        </FocusManager>
+      )
+
+      const links = container.querySelectorAll('li>a')
+      expect(links[0]).toBe(document.activeElement)
+    })
+
+    it('focuses parent if children are not focusable', () => {
+      const { container } = render(
+        <FocusManager>
+          <ul>
+            <li>first</li>
+            <li>second</li>
+          </ul>
+        </FocusManager>
+      )
+
+      expect(container.childNodes[0]).toBe(document.activeElement)
+    })
+  })
+
+  describe('when autofocus is NOT enabled', () => {
+    it('does not autofocus', () => {
+      const { container } = render(
+        <FocusManager autofocus={false}>
+          <ul>
+            <li>
+              <a href="#">first</a>
+            </li>
+            <li>
+              <a href="#">second</a>
+            </li>
+          </ul>
+        </FocusManager>
+      )
+
+      const links = container.querySelectorAll('li>a')
+      expect(links).not.toContain(document.activeElement)
+
+      expect(container.childNodes[0]).not.toBe(document.activeElement)
+    })
+  })
+
+  describe('when trapped is enabled', () => {
+    let links = []
+
+    beforeEach(() => {
+      const { container } = render(
+        <FocusManager>
+          <ul>
+            <li>
+              <a href="#">first</a>
+            </li>
+            <li>
+              <a href="#">second</a>
+            </li>
+            <li>
+              <a href="#">third</a>
+            </li>
+            <li>
+              <a href="#">fourth</a>
+            </li>
+          </ul>
+        </FocusManager>
+      )
+
+      links = container.querySelectorAll('li>a')
+    })
+
+    describe('with backward tab on first child', () => {
+      it('moves focus to last child', () => {
+        links[0].focus()
+
+        fireEvent.keyDown(document.activeElement, {
+          key: 'Tab',
+          shiftKey: true
+        })
+
+        expect(links[links.length - 1]).toEqual(document.activeElement)
+      })
+    })
+
+    describe('with forward tab on last child', () => {
+      it('moves focus to first child', () => {
+        links[links.length - 1].focus()
+
+        fireEvent.keyDown(document.activeElement, {
+          key: 'Tab',
+          shiftKey: false
+        })
+
+        expect(links[0]).toEqual(document.activeElement)
+      })
+    })
+
+    //     describe('when first child tabs backward', () => {
+    //       it('focuses the last child', () => {
+    //         const wrapper = mount(<FocusManager>{children}</FocusManager>)
+
+    //         const firstEl = wrapper.find('a[href]').first()
+    //         const lastEl = wrapper.find('a[href]').last()
+
+    //         firstEl.getDOMNode().focus()
+    //         firstEl.simulate('keydown', { key: 'Tab', shiftKey: true })
+
+    //         expect(document.activeElement).toEqual(lastEl.getDOMNode())
+    //       })
+    //     })
+
+    //     describe('when last child tabs forward', () => {
+    //       it('focuses the first child', () => {
+    //         const wrapper = mount(<FocusManager>{children}</FocusManager>)
+
+    //         const firstEl = wrapper.find('a[href]').first()
+    //         const lastEl = wrapper.find('a[href]').last()
+
+    //         lastEl.getDOMNode().focus()
+    //         lastEl.simulate('keydown', { key: 'Tab' })
+
+    //         expect(document.activeElement).toEqual(firstEl.getDOMNode())
+    //       })
+    //     })
   })
 })
