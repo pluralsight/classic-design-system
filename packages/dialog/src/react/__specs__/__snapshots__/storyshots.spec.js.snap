@@ -619,7 +619,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
 </div>
 `;
 
-exports[`Storyshots modal no focusable child element, no lock 1`] = `
+exports[`Storyshots modal no focusable child element 1`] = `
 <div
   data-css-claeju=""
 >

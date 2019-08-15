@@ -4,41 +4,45 @@ import PropTypes from 'prop-types'
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 
-import Button from '@pluralsight/ps-design-system-button/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
+import Button from '@pluralsight/ps-design-system-button/react.js'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
 
-import Dialog from '..'
+import Dialog from '../index.js'
 
 const closeAction = action('close')
 const openAction = action('open')
 
-const Content = props => (
-  <Dialog {...props}>
-    <Text.Heading>
-      <h1>Wowzers, a Dialog</h1>
-    </Text.Heading>
+const Content = props => <Dialog {...props} />
 
-    <Text.P>
-      <a href="#">Brownie bear claw</a> liquorice dragée candy canes pastry
-      topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut.
-      Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o
-      croissant lollipop liquorice. <a href="#">Tart donut</a> lollipop dragée
-      tootsie roll wafer lemon drops cupcake chocolate bar.
-    </Text.P>
+Content.defaultProps = {
+  children: (
+    <React.Fragment>
+      <Text.Heading>
+        <h1>Wowzers, a Dialog</h1>
+      </Text.Heading>
 
-    <Text.P>
-      Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon
-      drops tiramisu. Cotton candy powder oat cake toffee{' '}
-      <a href="#">cotton candy</a> muffin soufflé marshmallow biscuit.
-    </Text.P>
+      <Text.P>
+        <a href="#">Brownie bear claw</a> liquorice dragée candy canes pastry
+        topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut.
+        Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o
+        croissant lollipop liquorice. <a href="#">Tart donut</a> lollipop dragée
+        tootsie roll wafer lemon drops cupcake chocolate bar.
+      </Text.P>
 
-    <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-      <Button appearance={Button.appearances.stroke}>Secondary CTA</Button>
-      <span style={{ marginLeft: 10 }} />
-      <Button>Primary CTA</Button>
-    </div>
-  </Dialog>
-)
+      <Text.P>
+        Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon
+        drops tiramisu. Cotton candy powder oat cake toffee{' '}
+        <a href="#">cotton candy</a> muffin soufflé marshmallow biscuit.
+      </Text.P>
+
+      <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+        <Button appearance={Button.appearances.stroke}>Secondary CTA</Button>
+        <span style={{ marginLeft: 10 }} />
+        <Button>Primary CTA</Button>
+      </div>
+    </React.Fragment>
+  )
+}
 
 class ModalStory extends React.Component {
   constructor(props) {
@@ -171,14 +175,14 @@ storiesOf('modal', module)
       )}
     </ModalStory>
   ))
-  .add('no focusable child element, no lock', _ => (
+  .add('no focusable child element', _ => (
     <ModalStory modalDefaultsOpen={false}>
-      {_ => (
-        <Dialog>
+      {({ close }) => (
+        <Content aria-label="Storybook Modal" modal onClose={close}>
           <Text.Heading>
             <h1>Wowzers, a Dialog</h1>
           </Text.Heading>
-        </Dialog>
+        </Content>
       )}
     </ModalStory>
   ))
