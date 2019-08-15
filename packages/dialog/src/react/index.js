@@ -1,38 +1,33 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import FocusManager from '@pluralsight/ps-design-system-focusmanager/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import FocusManager from '@pluralsight/ps-design-system-focusmanager/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 const ESCAPE_KEYCODE = 27
 const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
 
-const fade = glamor.css.keyframes(
-  css[`@keyframes psds-dialog__keyframes__fade`]
+const fade = css.keyframes(
+  stylesheet['@keyframes psds-dialog__keyframes__fade']
 )
 
 const styles = {
   dialog: ({ modal, onClose, tailPosition }) =>
-    glamor.css({
-      ...css[`.psds-dialog`]({ fade }),
-      ...(modal ? css[`.psds-dialog--modal`] : null),
-      ':after': tailPosition
-        ? {
-            ...css[`.psds-dialog:after`],
-            ...css[`.psds-dialog--tailPosition-${tailPosition}:after`]
-          }
-        : null
-    }),
-  close: _ =>
-    glamor.css({
-      ...css[`.psds-dialog__close`],
-      '> svg': css[`.psds-dialog__close > svg`]
-    }),
-  overlay: _ => glamor.css(css[`.psds-dialog__overlay`])
+    compose(
+      css(stylesheet['.psds-dialog']({ fade })),
+      modal && css(stylesheet['.psds-dialog--modal']),
+      tailPosition &&
+        compose(
+          stylesheet['.psds-dialog--w-tail'],
+          stylesheet[`.psds-dialog--tailPosition-${tailPosition}`]
+        )
+    ),
+  close: _ => css(stylesheet['.psds-dialog__close']),
+  overlay: _ => css(stylesheet['.psds-dialog__overlay'])
 }
 
 const CloseButton = props => (
@@ -130,6 +125,7 @@ class Dialog extends React.Component {
   }
 }
 Dialog.propTypes = {
+  children: PropTypes.node,
   className: PropTypes.string,
   disableCloseButton: PropTypes.bool,
   disableCloseOnEscape: PropTypes.bool,
