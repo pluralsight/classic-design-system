@@ -163,33 +163,5 @@ Object {
         expect(links[0]).toEqual(document.activeElement)
       })
     })
-
-    //     describe('when first child tabs backward', () => {
-    //       it('focuses the last child', () => {
-    //         const wrapper = mount(<FocusManager>{children}</FocusManager>)
-
-    //         const firstEl = wrapper.find('a[href]').first()
-    //         const lastEl = wrapper.find('a[href]').last()
-
-    //         firstEl.getDOMNode().focus()
-    //         firstEl.simulate('keydown', { key: 'Tab', shiftKey: true })
-
-    //         expect(document.activeElement).toEqual(lastEl.getDOMNode())
-    //       })
-    //     })
-
-    //     describe('when last child tabs forward', () => {
-    //       it('focuses the first child', () => {
-    //         const wrapper = mount(<FocusManager>{children}</FocusManager>)
-
-    //         const firstEl = wrapper.find('a[href]').first()
-    //         const lastEl = wrapper.find('a[href]').last()
-
-    //         lastEl.getDOMNode().focus()
-    //         lastEl.simulate('keydown', { key: 'Tab' })
-
-    //         expect(document.activeElement).toEqual(firstEl.getDOMNode())
-    //       })
-    //     })
   })
 })
