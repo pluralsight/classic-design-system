@@ -43,3 +43,6 @@ jspm_packages
 .env*
 
 .cache
+
+# workspace config
+.vim
