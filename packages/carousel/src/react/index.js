@@ -94,6 +94,7 @@ export default function Carousel({ controls, size, ...props }) {
 
                     isActivePage,
                     itemIndex,
+                    itemsPerPage: perPage,
                     pageCount,
                     pageIndex
                   })
@@ -118,6 +119,7 @@ function Item({ children, ...props }) {
         ? children({
             isActivePage: props.isActivePage,
             itemIndex: props.itemIndex,
+            itemsPerPage: props.itemsPerPage,
             pageCount: props.pageCount,
             pageIndex: props.pageIndex
           })
@@ -130,6 +132,7 @@ Item.propTypes = {
   children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
   isActivePage: PropTypes.bool,
   itemIndex: PropTypes.number,
+  itemsPerPage: PropTypes.number,
   pageCount: PropTypes.number,
   pageIndex: PropTypes.number
 }
