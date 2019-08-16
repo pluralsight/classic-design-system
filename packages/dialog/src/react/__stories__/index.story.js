@@ -12,10 +12,8 @@ import Dialog from '../index.js'
 const closeAction = action('close')
 const openAction = action('open')
 
-const Content = props => <Dialog {...props} />
-
-Content.defaultProps = {
-  children: (
+function MockDialog(props) {
+  const children = props.children || (
     <React.Fragment>
       <Text.Heading>
         <h1>Wowzers, a Dialog</h1>
@@ -42,147 +40,105 @@ Content.defaultProps = {
       </div>
     </React.Fragment>
   )
+
+  return <Dialog {...props}>{children}</Dialog>
 }
 
-class ModalStory extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { modalIsOpen: props.modalDefaultsOpen }
-
-    this.open = this.open.bind(this)
-    this.close = this.close.bind(this)
-  }
-
-  open(event) {
-    this.setState(() => ({ modalIsOpen: true }))
-    openAction(event)
-  }
-
-  close(event) {
-    this.setState(() => ({ modalIsOpen: false }))
-    closeAction(event)
-  }
-
-  render() {
-    const { modalIsOpen } = this.state
-
-    return (
-      <div>
-        <Text.P>
-          Macaroon danish I love candy macaroon danish toffee muffin. Cotton
-          candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake
-          cupcake cookie muffin liquorice. I love I love I love jelly-o
-          fruitcake <a href="#">I love chocolate cake</a> wafer chupa chups.
-        </Text.P>
-
-        <Text.P>
-          Sesame snaps cake pudding I love chupa chups I love. Cotton candy
-          biscuit oat cake dessert donut I love lemon drops. Cookie croissant
-          dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o
-          cheesecake I love cheesecake.
-        </Text.P>
-
-        <Button onClick={modalIsOpen ? this.close : this.open}>
-          {(modalIsOpen ? 'close' : 'open') + ' modal'}
-        </Button>
-
-        <Text.P>
-          Sweet soufflé <a href="#">apple pie</a>. Halvah icing pudding pastry
-          ice cream gingerbread tart candy canes dragée. Pie gingerbread icing.
-        </Text.P>
-
-        {modalIsOpen &&
-          this.props.children({ close: this.close, open: this.open })}
-      </div>
-    )
-  }
-}
-
-ModalStory.propTypes = {
-  children: PropTypes.func.isRequired,
-  modalDefaultsOpen: PropTypes.bool
-}
-ModalStory.defaultProps = {
-  modalDefaultsOpen: true
-}
-
-const tailPositionStory = storiesOf('tailPosition', module)
-tailPositionStory.add('none', _ => <Content />)
-
-Object.keys(Dialog.tailPositions).forEach(tailPosition =>
-  tailPositionStory.add(tailPosition, _ => (
-    <Content tailPosition={tailPosition} />
-  ))
-)
+MockDialog.propTypes = { children: PropTypes.node }
 
 storiesOf('onClose', module).add('with onClose', _ => (
-  <Content onClose={closeAction} />
+  <MockDialog onClose={closeAction} />
 ))
 
+const positionStories = storiesOf('tailPosition', module)
+positionStories.add('none', _ => <MockDialog />)
+
+Object.keys(Dialog.tailPositions).forEach(pos =>
+  positionStories.add(pos, _ => <MockDialog tailPosition={pos} />)
+)
+
+function ModalStory(props) {
+  const [isOpen, setIsOpen] = React.useState(true)
+
+  const open = evt => {
+    setIsOpen(true)
+    openAction(evt)
+  }
+
+  const close = evt => {
+    setIsOpen(false)
+    closeAction(evt)
+  }
+
+  const storyProps = {
+    'aria-label': 'Storybook Modal',
+    onClose: close,
+    modal: true
+  }
+
+  return (
+    <div>
+      <Text.P>
+        Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy
+        chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake
+        cookie muffin liquorice. I love I love I love jelly-o fruitcake
+        <a href="#">I love chocolate cake</a> wafer chupa chups.
+      </Text.P>
+
+      <Text.P>
+        Sesame snaps cake pudding I love chupa chups I love. Cotton candy
+        biscuit oat cake dessert donut I love lemon drops. Cookie croissant
+        dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o
+        cheesecake I love cheesecake.
+      </Text.P>
+
+      <Button onClick={isOpen ? close : open}>
+        {(isOpen ? 'close' : 'open') + ' modal'}
+      </Button>
+
+      <Text.P>
+        Sweet soufflé <a href="#">apple pie</a>. Halvah icing pudding pastry ice
+        cream gingerbread tart candy canes dragée. Pie gingerbread icing.
+      </Text.P>
+
+      {isOpen && props.children(storyProps, { close, open })}
+    </div>
+  )
+}
+ModalStory.propTypes = { children: PropTypes.func }
+
 storiesOf('modal', module)
-  .add('with close button', _ => (
+  .add('default', _ => (
+    <ModalStory>{props => <MockDialog {...props} />}</ModalStory>
+  ))
+  .add('no close button', _ => (
     <ModalStory>
-      {({ close }) => (
-        <Content onClose={close} aria-label="Storybook Modal" modal />
-      )}
+      {props => <MockDialog {...props} disableCloseButton />}
     </ModalStory>
   ))
   .add('no focus on mount', _ => (
     <ModalStory>
-      {({ close }) => (
-        <Content
-          disableFocusOnMount
-          onClose={close}
-          aria-label="Storybook Modal"
-          modal
-        />
-      )}
-    </ModalStory>
-  ))
-  .add('no close button', _ => (
-    <ModalStory>
-      {({ close }) => (
-        <Content
-          disableCloseButton
-          onClose={close}
-          aria-label="Storybook Modal"
-          modal
-        />
-      )}
+      {props => <MockDialog {...props} disableFocusOnMount />}
     </ModalStory>
   ))
   .add('no click overlay', _ => (
     <ModalStory>
-      {({ close }) => (
-        <Content
-          disableCloseOnOverlayClick
-          onClose={close}
-          aria-label="Storybook Modal"
-          modal
-        />
-      )}
+      {props => <MockDialog {...props} disableCloseOnOverlayClick />}
     </ModalStory>
   ))
   .add('no escape key', _ => (
     <ModalStory>
-      {({ close }) => (
-        <Content
-          disableCloseOnEscape
-          onClose={close}
-          aria-label="Storybook Modal"
-          modal
-        />
-      )}
+      {props => <MockDialog {...props} disableCloseOnEscape />}
     </ModalStory>
   ))
-  .add('no focusable child element', _ => (
-    <ModalStory modalDefaultsOpen={false}>
-      {({ close }) => (
-        <Content aria-label="Storybook Modal" modal onClose={close}>
+  .add('no focusable child elements', _ => (
+    <ModalStory>
+      {props => (
+        <MockDialog {...props}>
           <Text.Heading>
             <h1>Wowzers, a Dialog</h1>
           </Text.Heading>
-        </Content>
+        </MockDialog>
       )}
     </ModalStory>
   ))
