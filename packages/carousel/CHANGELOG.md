@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@2.0.0...@pluralsight/ps-design-system-carousel@2.1.0) (2019-08-16)
+
+
+### Features
+
+* **carousel:** include itemsPerPage meta data in render prop args ([77c9b1c](https://github.com/pluralsight/design-system/commit/77c9b1c))
+
+
+
+
+
 # [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@1.2.0...@pluralsight/ps-design-system-carousel@2.0.0) (2019-08-09)
 
 
