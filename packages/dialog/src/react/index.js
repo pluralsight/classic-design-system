@@ -87,7 +87,7 @@ Dialog.propTypes = {
   disableFocusOnMount: PropTypes.bool,
   modal: PropTypes.bool,
   onClose: PropTypes.func,
-  tailPosition: PropTypes.oneOf(Object.keys(Dialog.tailPositions))
+  tailPosition: PropTypes.oneOf(Object.values(Dialog.tailPositions))
 }
 
 Dialog.defaultProps = {
