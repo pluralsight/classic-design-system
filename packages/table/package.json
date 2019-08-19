@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-table",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Design System component for table ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.10.1",
-    "@pluralsight/ps-design-system-link": "^6.0.8",
+    "@pluralsight/ps-design-system-link": "^7.0.0",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^4.0.0",
     "@pluralsight/ps-design-system-theme": "^3.0.3"
   }

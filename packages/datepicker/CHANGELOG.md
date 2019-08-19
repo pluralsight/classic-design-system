@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@3.0.0...@pluralsight/ps-design-system-datepicker@4.0.0) (2019-08-16)
+
+
+### Code Refactoring
+
+* **datepicker:** update to use reactv16 style patterns/syntax ([467ce12](https://github.com/pluralsight/design-system/commit/467ce12))
+
+
+### BREAKING CHANGES
+
+* **datepicker:** innerRef is no longer available in favor of using ref/forwardRef
+
+
+
+
+
 # [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@2.0.6...@pluralsight/ps-design-system-datepicker@3.0.0) (2019-08-09)
 
 

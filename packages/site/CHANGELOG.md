@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@13.0.1...@pluralsight/ps-design-system-site@13.1.0) (2019-08-16)
+
+
+### Bug Fixes
+
+* **site:** add missing aria-label to icon modal ([4412ec0](https://github.com/pluralsight/design-system/commit/4412ec0))
+* **site:** restore missing deps recently removed ([eea0c02](https://github.com/pluralsight/design-system/commit/eea0c02))
+
+
+### Features
+
+* **site:** add icon figma link ([0f6e3b7](https://github.com/pluralsight/design-system/commit/0f6e3b7))
+
+
+
+
+
 ## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@13.0.0...@pluralsight/ps-design-system-site@13.0.1) (2019-08-09)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site
