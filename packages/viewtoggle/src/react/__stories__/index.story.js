@@ -1,6 +1,8 @@
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
-import React from 'react'
+
+import { css } from 'glamor'
+import React, { Fragment } from 'react'
 
 import ViewToggle from '../index.js'
 
@@ -33,6 +35,45 @@ storiesOf('options count', module)
       <ViewToggle.Option>Should not show up</ViewToggle.Option>
     </ViewToggle>
   ))
+  .add('dynamic', _ => {
+    function DynamicOptions() {
+      const [count, updateCount] = React.useState(2)
+
+      const add = () => updateCount(count + 1)
+      const remove = () => updateCount(count - 1)
+
+      return (
+        <Fragment>
+          <ViewToggle>
+            {new Array(count).fill(null).map((_, index) => (
+              <ViewToggle.Option key={index}>
+                item: {index + 1}
+              </ViewToggle.Option>
+            ))}
+          </ViewToggle>
+
+          <div
+            {...css({
+              alignItems: 'center',
+              display: 'flex',
+              justifyContent: 'center',
+              margin: '10px auto'
+            })}
+          >
+            <button disabled={count <= 1} onClick={remove}>
+              remove
+            </button>
+
+            <button disabled={count >= 3} onClick={add}>
+              add
+            </button>
+          </div>
+        </Fragment>
+      )
+    }
+
+    return <DynamicOptions />
+  })
 
 storiesOf('active', module)
   .add('default first', _ => (

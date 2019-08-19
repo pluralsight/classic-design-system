@@ -258,6 +258,62 @@ exports[`Storyshots onSelect handles click 1`] = `
 </div>
 `;
 
+exports[`Storyshots options count dynamic 1`] = `
+Array [
+  <div
+    data-css-1ifazk6=""
+    role="radiogroup"
+  >
+    <div
+      aria-hidden={true}
+      data-css-ztmayk=""
+      style={Object {}}
+    >
+      <span
+        data-css-1jyyyen=""
+      >
+        item: 
+        1
+      </span>
+    </div>
+    <button
+      aria-selected={true}
+      data-css-1p9dg7s=""
+      onClick={[Function]}
+      role="radio"
+    >
+      item: 
+      1
+    </button>
+    <button
+      aria-selected={false}
+      data-css-1eee2k7=""
+      onClick={[Function]}
+      role="radio"
+    >
+      item: 
+      2
+    </button>
+  </div>,
+  <div
+    data-css-18ma6i3=""
+  >
+    <button
+      disabled={false}
+      onClick={[Function]}
+    >
+      remove
+    </button>
+    <button
+      disabled={false}
+      onClick={[Function]}
+    >
+      add
+    </button>
+  </div>,
+]
+`;
+
 exports[`Storyshots options count more than max 1`] = `
 <div
   data-css-1ifazk6=""
