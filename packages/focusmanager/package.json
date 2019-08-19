@@ -19,10 +19,13 @@
   "publishConfig": {
     "access": "public"
   },
+  "dependencies": {
+    "@pluralsight/ps-design-system-filter-react-props": "*"
+  },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^3.1.4",
     "glamor": "^2.x.x",
-    "react": ">=16.3.0 < 17.0.0"
+    "react": ">=16.8.0 < 17.0.0"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.10.1",

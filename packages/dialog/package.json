@@ -9,7 +9,7 @@
   "module": "index.js",
   "scripts": {
     "build": "run-s build:js build:css",
-    "build:css": "build-css",
+    "build:css": "build-css --useGlamor",
     "build:js": "babel src --root-mode upward --out-dir dist",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
@@ -20,6 +20,7 @@
   "keywords": [],
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.4.4",
+    "@pluralsight/ps-design-system-filter-react-props": "*",
     "@pluralsight/ps-design-system-focusmanager": "^2.0.9",
     "@pluralsight/ps-design-system-util": "^2.0.5",
     "prop-types": "^15.7.2"
@@ -28,7 +29,7 @@
     "@pluralsight/ps-design-system-normalize": "^3.1.4",
     "@pluralsight/ps-design-system-theme": "^3.0.2",
     "glamor": "^2.20.0",
-    "react": ">=16.3.0 < 17.0.0"
+    "react": ">=16.8.0 < 17.0.0"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.10.1",
