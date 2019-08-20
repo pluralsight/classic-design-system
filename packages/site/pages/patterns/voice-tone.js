@@ -275,17 +275,6 @@ export default _ => (
         don’t get too technical. Write in a way that anyone could easily
         understand without using jargon.
       </P>
-      <P>
-        <ExampleHeader>2. Suggest a next step</ExampleHeader>
-        After you explain what happened, tell the user what they can do to
-        resolve the issue. If possible include a button, a link, or another call
-        to action.
-      </P>
-      <P>
-        <ExampleHeader>3. Match the tone to the context</ExampleHeader>
-        Avoid being robotic or silly. Remember, something went wrong, now's your
-        time to help them through it in a friendly way.
-      </P>
 
       <Guideline
         do={
@@ -301,6 +290,13 @@ export default _ => (
           </div>
         }
       />
+
+      <P>
+        <ExampleHeader>2. Suggest a next step</ExampleHeader>
+        After you explain what happened, tell the user what they can do to
+        resolve the issue. If possible include a button, a link, or another call
+        to action.
+      </P>
 
       <Guideline
         do={
@@ -318,6 +314,12 @@ export default _ => (
           </div>
         }
       />
+
+      <P>
+        <ExampleHeader>3. Match the tone to the context</ExampleHeader>
+        Avoid being robotic or silly. Remember, something went wrong, now's your
+        time to help them through it in a friendly way.
+      </P>
 
       <Guideline
         do={
