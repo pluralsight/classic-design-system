@@ -81,7 +81,11 @@ const Tooltip = React.forwardRef((props, ref) => {
 
 Tooltip.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+    PropTypes.string.isRequired
+  ]),
   className: PropTypes.string,
   style: PropTypes.object,
   tailPosition: PropTypes.oneOf(Object.keys(vars.tailPositions)),

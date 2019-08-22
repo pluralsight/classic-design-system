@@ -106,7 +106,11 @@ ColumnHeader.displayName = 'Table.ColumnHeader'
 /* eslint-disable react/no-unused-prop-types */
 ColumnHeader.propTypes = {
   align: PropTypes.oneOf(Object.keys(vars.aligns)),
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+    PropTypes.string.isRequired
+  ]),
   flex: PropTypes.string,
   onClick: PropTypes.func,
   sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)])
