@@ -37,6 +37,13 @@ export default _ => (
             'used to generate intials as a fallback image'
           ]),
           PropTypes.row([
+            'onImageStateChange',
+            '(next, prev) => ()',
+            null,
+            null,
+            'triggered when image loading state changes'
+          ]),
+          PropTypes.row([
             'size',
             PropTypes.union(Avatar.sizes),
             null,
