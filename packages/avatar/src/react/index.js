@@ -19,13 +19,23 @@ const styles = {
 
 const Avatar = React.forwardRef((props, ref) => {
   const [imageState, setImageState] = React.useState('loading')
+  const prevImageState = usePrevious(imageState)
+
+  React.useEffect(() => {
+    if (!props.onImageStateChange) return
+
+    const isNewImageState = prevImageState !== imageState
+    if (!isNewImageState) return
+
+    props.onImageStateChange(imageState, prevImageState)
+  }, [prevImageState, imageState, props])
 
   function handleImageLoadSuccess(evt) {
     const isFallbackPixel = evt.target.naturalWidth === 1
     setImageState(isFallbackPixel ? 'error' : 'success')
   }
 
-  function handleImageLoadError() {
+  function handleImageLoadError(evt) {
     setImageState('error')
   }
 
@@ -74,6 +84,7 @@ Avatar.defaultProps = {
 Avatar.propTypes = {
   alt: PropTypes.string,
   name: PropTypes.string,
+  onImageStateChange: PropTypes.func,
   size: PropTypes.oneOf(Object.keys(sizes).map(key => sizes[key])),
   src: PropTypes.string
 }
@@ -82,3 +93,13 @@ Avatar.sizes = sizes
 Avatar.widths = widths
 
 export default Avatar
+
+function usePrevious(value) {
+  const ref = React.useRef()
+
+  React.useEffect(() => {
+    ref.current = value
+  }, [value])
+
+  return ref.current
+}
