@@ -2,7 +2,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useState, useEffect, Fragment } from 'react'
 import {
   names as themeNames,
   withTheme
@@ -14,9 +14,9 @@ import Collapsible from './collapsible.js'
 if (typeof window !== 'undefined') require('element-closest')
 
 const styles = {
-  drawer: ({ themeName }) =>
+  drawer: themeName =>
     glamor.css(css[`.psds-drawer.psds-theme--${themeName}`]),
-  base: ({ isOpen }) =>
+  base: isOpen =>
     glamor.css(
       css['.psds-drawer__base'],
       isOpen && css['.psds-drawer__base--isOpen']
@@ -27,119 +27,80 @@ const styles = {
       isOpen && css[`.psds-drawer__panel.psds-theme--${themeName}`]
     ),
   panelContent: () => glamor.css(css[`.psds-drawer__panel-content`]),
-  rotatable: ({ isRotated }) =>
+  rotatable: isRotated =>
     glamor.css(
       css['.psds-drawer__rotatable'],
       isRotated && css['.psds-drawer__rotatable--isOpen']
     ),
   toggleButtonContainer: () =>
     glamor.css(css[`.psds-drawer__toggle-button-container`]),
-  toggleButton: ({ themeName }) =>
+  toggleButton: themeName =>
     glamor.css(
       css[`.psds-drawer__toggle-button`],
       css[`.psds-drawer__toggle-button.psds-theme--${themeName}`]
     )
 }
-
-const DrawerBase = props => (
-  <div {...styles.base(props)} {...filterReactProps(props)} />
-)
-
-const DrawerPanel = props => (
-  <div {...styles.panel(props)} {...filterReactProps(props)} />
-)
-
-const DrawerPanelContent = props => (
-  <div {...styles.panelContent(props)} {...filterReactProps(props)} />
-)
-
-const ToggleButtonContainer = props => (
-  <div {...styles.toggleButtonContainer(props)} {...filterReactProps(props)} />
-)
-
-const ToggleButton = props => (
-  <button
-    {...styles.toggleButton(props)}
-    {...filterReactProps(props, { tagName: 'button' })}
-  />
-)
-
-const Rotatable = props => (
-  <div {...styles.rotatable(props)} {...filterReactProps(props)} />
-)
-
-class Drawer extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.handleClick = this.handleClick.bind(this)
-    this.toggle = this.toggle.bind(this)
-
-    this.state = { isOpen: this.props.startOpen }
-  }
-
-  get isControlledByProps() {
-    return this.props.isOpen !== undefined && this.props.isOpen !== null
-  }
-
-  get isOpen() {
-    return this.isControlledByProps ? this.props.isOpen : this.state.isOpen
-  }
-
-  getButtonAriaLabel() {
-    const { toggleButtonAriaLabel } = this.props
-    const prefix = this.isOpen ? 'Collapse' : 'Expand'
+const Drawer = ({
+  startOpen,
+  isOpen,
+  toggleButtonAriaLabel,
+  themeName,
+  children,
+  onToggle,
+  base,
+  ...rest
+}) => {
+  const [_open, setOpen] = useState(startOpen)
+  const [controlled, setControlled] = useState()
+  useEffect(() => {
+    if(controlled !== undefined){
+      return
+    }
+    setControlled(isOpen !== undefined)
+  }, [isOpen, controlled])
+  const open = isOpen !== undefined ? isOpen : _open
+  const getButtonAriaLabel = () => {
+    const prefix = open ? 'Collapse' : 'Expand'
     return toggleButtonAriaLabel ? `${prefix} ${toggleButtonAriaLabel}` : prefix
   }
 
-  isClickOnDrawerBase(evt) {
-    return !evt.target.closest('a, button')
+  const isClickOnDrawerBase = evt => !evt.target.closest('a, button');
+  
+  const toggle = evt => {
+    const nextOpen = !open;
+    onToggle && onToggle(nextOpen, evt)
+    !controlled && setOpen(nextOpen)
   }
 
-  handleClick(evt) {
-    if (this.isClickOnDrawerBase(evt)) this.toggle(evt)
-  }
-
-  toggle(evt) {
-    const isOpen = !this.isOpen
-
-    if (this.props.onToggle) this.props.onToggle(isOpen, evt)
-
-    if (!this.isControlledByProps) this.setState({ isOpen })
-  }
-
-  render() {
-    const { themeName } = this.props
-    const { handleClick, isOpen } = this
-
-    const ariaLabel = this.getButtonAriaLabel()
-
-    return (
-      <div {...styles.drawer(this.props)} {...filterReactProps(this.props)}>
-        <DrawerBase isOpen={isOpen} onClick={handleClick}>
-          <DrawerPanelContent themeName={themeName}>
-            {this.props.base}
-          </DrawerPanelContent>
-
-          <ToggleButtonContainer>
-            <ToggleButton
-              onClick={this.toggle}
-              themeName={themeName}
-              aria-label={ariaLabel}
+  const handleClick = evt => {
+    isClickOnDrawerBase(evt) && toggle(evt)
+  };
+  
+  return (
+    <Fragment>
+      <div {...styles.drawer(themeName)} {...filterReactProps(rest)}>
+        <div {...styles.base(open)} onClick={ handleClick }>
+          <div {...styles.panelContent()}>
+            {base}
+          </div>
+          <div {...styles.toggleButtonContainer()}>
+            <button
+              onClick={toggle}
+              aria-label={getButtonAriaLabel()}
+              {...styles.toggleButton(themeName)}
             >
-              <Rotatable isRotated={isOpen}>
+              <div {...styles.rotatable(open)}>
                 <Icon id={Icon.ids.caretDown} />
-              </Rotatable>
-            </ToggleButton>
-          </ToggleButtonContainer>
-        </DrawerBase>
-
-        <DrawerPanel isOpen={isOpen} themeName={themeName}>
-          <Collapsible isOpen={isOpen}>{this.props.children}</Collapsible>
-        </DrawerPanel>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div {...styles.panel({themeName, open})} >
+          <Collapsible isOpen={open}>{children}</Collapsible>
+        </div>
       </div>
-    )
-  }
+    </Fragment>
+  )
 }
 
 Drawer.displayName = 'Drawer'
