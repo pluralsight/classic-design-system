@@ -109,8 +109,8 @@ ColumnHeader.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
-    PropTypes.string.isRequired
-  ]),
+    PropTypes.string
+  ]).isRequired,
   flex: PropTypes.string,
   onClick: PropTypes.func,
   sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)])

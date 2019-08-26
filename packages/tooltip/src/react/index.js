@@ -84,8 +84,8 @@ Tooltip.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
-    PropTypes.string.isRequired
-  ]),
+    PropTypes.string
+  ]).isRequired,
   className: PropTypes.string,
   style: PropTypes.object,
   tailPosition: PropTypes.oneOf(Object.keys(vars.tailPositions)),
