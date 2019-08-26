@@ -644,6 +644,51 @@ exports[`Storyshots menu items multiple 1`] = `
 </div>
 `;
 
+exports[`Storyshots menu items null item 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-13za233=""
+    onKeyDown={[Function]}
+    role="menu"
+  >
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1qr74j9=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        One item
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        Skip to three item
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots menu items one 1`] = `
 <div
   data-css-claeju=""
