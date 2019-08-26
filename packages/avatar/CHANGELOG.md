@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@4.0.3...@pluralsight/ps-design-system-avatar@4.0.4) (2019-08-26)
+
+
+### Bug Fixes
+
+* **avatar:** edgecase with single char name ([badb09e](https://github.com/pluralsight/design-system/commit/badb09e))
+
+
+
+
+
 ## [4.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@4.0.2...@pluralsight/ps-design-system-avatar@4.0.3) (2019-08-09)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-avatar

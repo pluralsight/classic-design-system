@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-dialog",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "Design System component for dialog ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,7 +21,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.4.4",
     "@pluralsight/ps-design-system-filter-react-props": "*",
-    "@pluralsight/ps-design-system-focusmanager": "^2.0.9",
+    "@pluralsight/ps-design-system-focusmanager": "^3.0.0",
     "@pluralsight/ps-design-system-util": "^2.0.5",
     "prop-types": "^15.7.2"
   },
