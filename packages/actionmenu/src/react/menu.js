@@ -29,7 +29,11 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
   const ref = forwardedRef || React.useRef()
 
   const initialIndex = props.shouldFocusOnMount
-    ? calcNextIndex(React.Children.map(props.children, c => c.props), 1, -1)
+    ? calcNextIndex(
+        React.Children.map(props.children, c => c && c.props),
+        1,
+        -1
+      )
     : -1
   const [activeIndex, setActiveIndex] = React.useState(initialIndex)
 
@@ -122,18 +126,20 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
       role="menu"
     >
       {React.Children.map(props.children, (child, i) =>
-        React.cloneElement(child, {
-          isActive: i === activeIndex,
-          shouldFocusOnMount: props.shouldFocusOnMount,
+        child
+          ? React.cloneElement(child, {
+              isActive: i === activeIndex,
+              shouldFocusOnMount: props.shouldFocusOnMount,
 
-          _i: i,
-          _isKeyboarding: isKeyboarding,
-          _onDividerFocus: handleDividerFocus,
-          _onItemFocus: focusItemAtIndex,
-          _onMouseOver: focusItemAtIndexWithMouse,
-          _onChange: handleChange,
-          _origin: props.origin
-        })
+              _i: i,
+              _isKeyboarding: isKeyboarding,
+              _onDividerFocus: handleDividerFocus,
+              _onItemFocus: focusItemAtIndex,
+              _onMouseOver: focusItemAtIndexWithMouse,
+              _onChange: handleChange,
+              _origin: props.origin
+            })
+          : null
       )}
     </div>
   )
