@@ -14,7 +14,7 @@ const styles = {
       ...stylesheet[`.psds-avatar--size-${size}`]
     }),
   image: _ => css(stylesheet['.psds-avatar__image']),
-  initials: ({ name }) => css(stylesheet['.psds-avatar__initials'])
+  initials: _ => css(stylesheet['.psds-avatar__initials'])
 }
 
 const Avatar = React.forwardRef((props, ref) => {
@@ -56,7 +56,7 @@ const Avatar = React.forwardRef((props, ref) => {
       )}
       {shouldShowInitials && (
         <div
-          {...styles.initials({ name })}
+          {...styles.initials()}
           aria-label={name}
           style={{ backgroundColor: getColorByName(name) }}
         >

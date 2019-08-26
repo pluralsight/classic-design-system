@@ -792,6 +792,28 @@ exports[`Storyshots Using Initials null name, no src 1`] = `
 </div>
 `;
 
+exports[`Storyshots Using Initials single string name, no src 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-7fe6v0=""
+  >
+    <div
+      aria-label="x"
+      data-css-x99j9q=""
+      style={
+        Object {
+          "backgroundColor": "#2D4E82",
+        }
+      }
+    >
+      X
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
 <div
   data-css-claeju=""
