@@ -30,10 +30,10 @@ const Avatar = React.forwardRef((props, ref) => {
   }
 
   const { alt, name, size, src } = props
+  const initials = getInitials(name)
 
   const shouldShowImg = src && imageState !== 'error'
-  const shouldShowInitials =
-    name && (imageState === 'error' || imageState === 'loading')
+  const shouldShowInitials = imageState === 'error' || imageState === 'loading'
 
   const hideFromScreenReaders = shouldShowImg && !alt
 
@@ -54,13 +54,14 @@ const Avatar = React.forwardRef((props, ref) => {
           src={transformSrc(src)}
         />
       )}
+
       {shouldShowInitials && (
         <div
           {...styles.initials()}
           aria-label={name}
           style={{ backgroundColor: getColorByName(name) }}
         >
-          {getInitials(name)}
+          {initials}
         </div>
       )}
     </div>
