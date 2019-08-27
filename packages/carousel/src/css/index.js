@@ -104,6 +104,7 @@ export default {
     alignItems: 'flex-start',
     display: 'flex',
     flex: '1 0 100%',
+    height: 0,
     margin: `0 calc(${core.layout.spacingSmall}/2)`,
     pointerEvents: 'none',
     transition: `transform ${core.motion.speedXSlow} ease-in-out`,
@@ -112,7 +113,10 @@ export default {
     '&:last-child': { marginRight: 0 }
   },
 
-  '.psds-carousel__page--active': { pointerEvents: 'auto' },
+  '.psds-carousel__page--active': {
+    height: 'auto',
+    pointerEvents: 'auto'
+  },
 
   '.psds-carousel__item': {
     margin: `0 calc(${core.layout.spacingSmall}/2)`,

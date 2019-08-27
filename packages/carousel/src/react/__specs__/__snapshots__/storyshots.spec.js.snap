@@ -18,8 +18,8 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
       tabIndex="0"
     >
       <li
+        data-css-1dvjrax=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
@@ -31,50 +31,50 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         </div>
       </li>
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
@@ -168,8 +168,8 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
       tabIndex="0"
     >
       <li
+        data-css-1dvjrax=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
@@ -191,50 +191,50 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         </div>
       </li>
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
@@ -328,8 +328,8 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
       tabIndex="0"
     >
       <li
+        data-css-1dvjrax=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
@@ -344,50 +344,50 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         </div>
       </li>
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
@@ -491,8 +491,8 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
       tabIndex="0"
     >
       <li
+        data-css-1dvjrax=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
@@ -507,20 +507,20 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
         </div>
       </li>
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
@@ -629,8 +629,8 @@ exports[`Storyshots Carousel/items many items 1`] = `
       tabIndex="0"
     >
       <li
+        data-css-1dvjrax=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
@@ -645,122 +645,122 @@ exports[`Storyshots Carousel/items many items 1`] = `
         </div>
       </li>
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
@@ -854,8 +854,8 @@ exports[`Storyshots Carousel/items one item 1`] = `
       tabIndex="0"
     >
       <li
+        data-css-1dvjrax=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
@@ -960,8 +960,8 @@ exports[`Storyshots Carousel/items two items 1`] = `
       tabIndex="0"
     >
       <li
+        data-css-1dvjrax=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
@@ -975,8 +975,8 @@ exports[`Storyshots Carousel/items two items 1`] = `
         </div>
       </li>
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
@@ -1070,8 +1070,8 @@ exports[`Storyshots Carousel/size narrow 1`] = `
       tabIndex="0"
     >
       <li
+        data-css-1dvjrax=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
@@ -1086,74 +1086,74 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         </div>
       </li>
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
@@ -1247,8 +1247,8 @@ exports[`Storyshots Carousel/size wide 1`] = `
       tabIndex="0"
     >
       <li
+        data-css-1dvjrax=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
@@ -1263,74 +1263,74 @@ exports[`Storyshots Carousel/size wide 1`] = `
         </div>
       </li>
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
@@ -1433,8 +1433,8 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
         tabIndex="0"
       >
         <li
+          data-css-1dvjrax=""
           data-css-bxro55=""
-          data-css-fx3xhe=""
         >
           <div
             data-css-a8uf5t=""
@@ -1595,80 +1595,80 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           </div>
         </li>
         <li
-          data-css-17v35en=""
           data-css-bxro55=""
+          data-css-zjbf3z=""
           hidden={true}
           tabIndex={-1}
         />
         <li
-          data-css-17v35en=""
           data-css-bxro55=""
+          data-css-zjbf3z=""
           hidden={true}
           tabIndex={-1}
         />
         <li
-          data-css-17v35en=""
           data-css-bxro55=""
+          data-css-zjbf3z=""
           hidden={true}
           tabIndex={-1}
         />
         <li
-          data-css-17v35en=""
           data-css-bxro55=""
+          data-css-zjbf3z=""
           hidden={true}
           tabIndex={-1}
         />
         <li
-          data-css-17v35en=""
           data-css-bxro55=""
+          data-css-zjbf3z=""
           hidden={true}
           tabIndex={-1}
         />
         <li
-          data-css-17v35en=""
           data-css-bxro55=""
+          data-css-zjbf3z=""
           hidden={true}
           tabIndex={-1}
         />
         <li
-          data-css-17v35en=""
           data-css-bxro55=""
+          data-css-zjbf3z=""
           hidden={true}
           tabIndex={-1}
         />
         <li
-          data-css-17v35en=""
           data-css-bxro55=""
+          data-css-zjbf3z=""
           hidden={true}
           tabIndex={-1}
         />
         <li
-          data-css-17v35en=""
           data-css-bxro55=""
+          data-css-zjbf3z=""
           hidden={true}
           tabIndex={-1}
         />
         <li
-          data-css-17v35en=""
           data-css-bxro55=""
+          data-css-zjbf3z=""
           hidden={true}
           tabIndex={-1}
         />
         <li
-          data-css-17v35en=""
           data-css-bxro55=""
+          data-css-zjbf3z=""
           hidden={true}
           tabIndex={-1}
         />
         <li
-          data-css-17v35en=""
           data-css-bxro55=""
+          data-css-zjbf3z=""
           hidden={true}
           tabIndex={-1}
         />
         <li
-          data-css-17v35en=""
           data-css-bxro55=""
+          data-css-zjbf3z=""
           hidden={true}
           tabIndex={-1}
         />
@@ -1763,8 +1763,8 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
       tabIndex="0"
     >
       <li
+        data-css-1dvjrax=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
@@ -1920,80 +1920,80 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         </div>
       </li>
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
@@ -2087,8 +2087,8 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
       tabIndex="0"
     >
       <li
+        data-css-1dvjrax=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
       >
         <div
           data-css-a8uf5t=""
@@ -2244,80 +2244,80 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         </div>
       </li>
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
       <li
-        data-css-17v35en=""
         data-css-bxro55=""
+        data-css-zjbf3z=""
         hidden={true}
         tabIndex={-1}
       />
