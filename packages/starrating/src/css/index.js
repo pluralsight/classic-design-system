@@ -1,7 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
-
-export const BASE_CLASSNAME = '.psds-starrating'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars.js'
 
 const hideVisually = {
   border: 0,
@@ -43,45 +41,43 @@ const resetButton = {
 }
 
 export default {
-  [BASE_CLASSNAME]: {},
-
-  [`${BASE_CLASSNAME}__star`]: {
+  [`.psds-starrating__star`]: {
     ...resetButton,
     lineHeight: 0
   },
 
-  [`${BASE_CLASSNAME}__star--theme-${themeNames.dark}`]: {
+  [`.psds-starrating__star--theme-${themeNames.dark}`]: {
     color: core.colors.gray04
   },
-  [`${BASE_CLASSNAME}__star--theme-${themeNames.light}`]: {
+  [`.psds-starrating__star--theme-${themeNames.light}`]: {
     color: core.colors.gray01
   },
 
-  [`${BASE_CLASSNAME}__star__half__secondary`]: {},
-  [`${BASE_CLASSNAME}__star__half__secondary--theme-${themeNames.dark}`]: {
+  [`.psds-starrating__star__half__secondary`]: {},
+  [`.psds-starrating__star__half__secondary--theme-${themeNames.dark}`]: {
     color: core.colors.gray04,
     fill: core.colors.gray04 // safari needs this
   },
-  [`${BASE_CLASSNAME}__star__half__secondary--theme-${themeNames.light}`]: {
+  [`.psds-starrating__star__half__secondary--theme-${themeNames.light}`]: {
     color: core.colors.gray01,
     fill: core.colors.gray01 // safari needs this
   },
 
-  [`${BASE_CLASSNAME}__star--active`]: {
+  [`.psds-starrating__star--active`]: {
     color: core.colors.yellow
   },
-  [`${BASE_CLASSNAME}__star--bright`]: {
+  [`.psds-starrating__star--bright`]: {
     color: core.colors.gray02
   },
-  [`${BASE_CLASSNAME}__star--interactive`]: {
+  [`.psds-starrating__star--interactive`]: {
     cursor: 'pointer'
   },
 
-  [`${BASE_CLASSNAME}__screen-reader-input`]: {
+  [`.psds-starrating__screen-reader-input`]: {
     ...hideVisually
   },
 
-  [`${BASE_CLASSNAME}__screen-reader-text`]: {
+  [`.psds-starrating__screen-reader-text`]: {
     ...hideVisually
   }
 }

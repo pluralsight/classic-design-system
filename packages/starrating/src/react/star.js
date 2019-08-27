@@ -1,11 +1,11 @@
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import { withTheme } from '@pluralsight/ps-design-system-theme/react'
 
-import css, { BASE_CLASSNAME } from '../css'
+import stylesheet from '../css/index.js'
 
 const APPEARANCES = {
   empty: 'empty',
@@ -15,21 +15,23 @@ const APPEARANCES = {
 
 const styles = {
   star: props =>
-    glamor.css(
-      css[`${BASE_CLASSNAME}__star`],
-      css[`${BASE_CLASSNAME}__star--theme-${props.themeName}`],
-      props.bright && css[`${BASE_CLASSNAME}__star--bright`],
-      props.active && css[`${BASE_CLASSNAME}__star--active`],
-      props.interactive && css[`${BASE_CLASSNAME}__star--interactive`]
+    css(
+      stylesheet[`.psds-starrating__star`],
+      stylesheet[`.psds-starrating__star--theme-${props.themeName}`],
+      props.bright && stylesheet[`.psds-starrating__star--bright`],
+      props.active && stylesheet[`.psds-starrating__star--active`],
+      props.interactive && stylesheet[`.psds-starrating__star--interactive`]
     ),
   halfStarSecondary: props =>
-    glamor.css(
-      css[`${BASE_CLASSNAME}__star__half__secondary`],
-      css[`${BASE_CLASSNAME}__star__half__secondary--theme-${props.themeName}`]
+    css(
+      stylesheet[`.psds-starrating__star__half__secondary`],
+      stylesheet[
+        `.psds-starrating__star__half__secondary--theme-${props.themeName}`
+      ]
     )
 }
 
-const HalfStarIcon = props => {
+function HalfStarIcon(props) {
   const { themeName, ...filteredProps } = props
 
   return (

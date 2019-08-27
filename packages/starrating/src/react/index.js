@@ -1,21 +1,20 @@
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars.js'
+import { withTheme } from '@pluralsight/ps-design-system-theme/react.js'
 
-import Star from './star'
+import Star from './star.js'
 
-import css, { BASE_CLASSNAME } from '../css'
+import stylesheet from '../css/index.js'
 
 const styles = {
-  starRating: () => glamor.css(css[BASE_CLASSNAME]),
   screenReaderInput: () =>
-    glamor.css(css[`${BASE_CLASSNAME}__screen-reader-input`]),
+    css(stylesheet[`.psds-starrating__screen-reader-input`]),
   screenReaderText: () =>
-    glamor.css(css[`${BASE_CLASSNAME}__screen-reader-text`])
+    css(stylesheet[`.psds-starrating__screen-reader-text`])
 }
 
 const ScreenReaderInput = props => (
@@ -47,12 +46,12 @@ class StarRating extends React.PureComponent {
     this.props.onChange(index + 1, event)
   }
 
-  handleStarEnter(index, event) {
+  handleStarEnter(index) {
     if (!this.isInteractive) return
     this.setState(() => ({ hoverIndex: index }))
   }
 
-  handleStarLeave(index, event) {
+  handleStarLeave(index) {
     if (!this.isInteractive) return
     this.setState(() => ({ hoverIndex: null }))
   }
@@ -122,7 +121,7 @@ class StarRating extends React.PureComponent {
     delete filteredProps.onChange
 
     return (
-      <div {...styles.starRating(this.props)} {...filteredProps}>
+      <div {...filteredProps}>
         {this.isInteractive && (
           <label>
             <ScreenReaderText>Rate</ScreenReaderText>
