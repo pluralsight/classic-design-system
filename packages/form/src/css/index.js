@@ -1,5 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars.js'
 
 import * as vars from '../vars/index.js'
 
@@ -16,10 +16,10 @@ export default {
     justifyContent: 'flex-end'
   },
   '.psds-form-button-row__button': {
-    marginRight: core.layout.spacingLarge
-  },
-  '.psds-form-button-row__button:last-child': {
-    marginRight: 0
+    marginRight: core.layout.spacingLarge,
+    '&:last-child': {
+      marginRight: 0
+    }
   },
 
   '.psds-form-divider': {
@@ -36,9 +36,9 @@ export default {
     width: '100%'
   },
   '.psds-form-vertical-layout__child': {
-    marginBottom: core.layout.spacingLarge
-  },
-  '.psds-form-vertical-layout__child:last-child': {
-    marginBottom: 0
+    marginBottom: core.layout.spacingLarge,
+    '&:last-child': {
+      marginBottom: 0
+    }
   }
 }

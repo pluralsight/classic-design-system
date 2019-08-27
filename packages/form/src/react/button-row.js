@@ -1,19 +1,19 @@
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 const styles = {
   buttonRow: props =>
-    glamor.compose(
-      glamor.css(css['.psds-form-button-row']),
-      glamor.css(css[`.psds-form-button-row--align-${props.align}`])
+    css(
+      stylesheet['.psds-form-button-row'],
+      stylesheet[`.psds-form-button-row--align-${props.align}`]
     ),
   button: _ =>
-    glamor.css(css['.psds-form-button-row__button'], {
-      ':last-child': css['.psds-form-button-row__button:last-child']
+    css(stylesheet['.psds-form-button-row__button'], {
+      ':last-child': stylesheet['.psds-form-button-row__button:last-child']
     })
 }
 

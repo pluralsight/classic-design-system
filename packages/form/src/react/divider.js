@@ -1,14 +1,14 @@
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import React from 'react'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 
 const styles = {
   divider: ({ themeName }) =>
-    glamor.css(
-      css['.psds-form-divider'],
-      css[`.psds-form-divider.psds-theme--${themeName}`]
+    css(
+      stylesheet['.psds-form-divider'],
+      stylesheet[`.psds-form-divider.psds-theme--${themeName}`]
     )
 }
 

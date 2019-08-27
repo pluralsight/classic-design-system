@@ -1,15 +1,12 @@
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 
 const styles = {
-  layout: _ => glamor.css(css['.psds-form-vertical-layout']),
-  child: _ =>
-    glamor.css(css['.psds-form-vertical-layout__child'], {
-      ':last-child': css['.psds-form-vertical-layout__child:last-child']
-    })
+  layout: _ => css(stylesheet['.psds-form-vertical-layout']),
+  child: _ => css(stylesheet['.psds-form-vertical-layout__child'])
 }
 
 const VerticalLayout = (props, context) => (
