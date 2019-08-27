@@ -3,11 +3,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars.js'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react.js'
 
 import Star from './star.js'
-
 import stylesheet from '../css/index.js'
 
 const styles = {
@@ -17,53 +14,43 @@ const styles = {
     css(stylesheet[`.psds-starrating__screen-reader-text`])
 }
 
-const ScreenReaderInput = props => (
-  <input {...styles.screenReaderInput(props)} tabIndex={-1} {...props} />
-)
+function ScreenReaderInput(props) {
+  return <input {...styles.screenReaderInput(props)} tabIndex={-1} {...props} />
+}
 
-const ScreenReaderText = props => (
-  <span {...styles.screenReaderText(props)} {...props} />
-)
+function ScreenReaderText(props) {
+  return <span {...styles.screenReaderText(props)} {...props} />
+}
 
-class StarRating extends React.PureComponent {
-  constructor(props) {
-    super(props)
+function StarRating(props) {
+  const [hoverIndex, setHoverIndex] = React.useState(null)
+  const isInteractive = !!props.onChange
+  const { starCount, value } = props
 
-    this.handleStarClicked = this.handleStarClicked.bind(this)
-    this.handleStarEnter = this.handleStarEnter.bind(this)
-    this.handleStarLeave = this.handleStarLeave.bind(this)
+  const filteredProps = filterReactProps(props)
+  delete filteredProps.onChange
 
-    this.state = { hoverIndex: null }
+  function handleInputChanged(evt) {
+    if (!isInteractive) return
+    props.onChange(evt.target.value, evt)
   }
 
-  handleInputChanged(event) {
-    if (!this.isInteractive) return
-    this.props.onChange(event.target.value, event)
+  function handleStarClicked(index, evt) {
+    if (!isInteractive) return
+    props.onChange(index + 1, evt)
   }
 
-  handleStarClicked(index, event) {
-    if (!this.isInteractive) return
-    this.props.onChange(index + 1, event)
+  function handleStarEnter(index) {
+    if (!isInteractive) return
+    setHoverIndex(index)
   }
 
-  handleStarEnter(index) {
-    if (!this.isInteractive) return
-    this.setState(() => ({ hoverIndex: index }))
+  function handleStarLeave(index) {
+    if (!isInteractive) return
+    setHoverIndex(null)
   }
 
-  handleStarLeave(index) {
-    if (!this.isInteractive) return
-    this.setState(() => ({ hoverIndex: null }))
-  }
-
-  get isInteractive() {
-    return !!this.props.onChange
-  }
-
-  get stars() {
-    const { hoverIndex } = this.state
-    const { starCount, value } = this.props
-
+  const stars = (() => {
     const hasValidRating = !Number.isNaN(parseFloat(value))
     const isHovering = hoverIndex !== null
 
@@ -84,7 +71,7 @@ class StarRating extends React.PureComponent {
           appearance = Star.appearances.empty
         }
       } else {
-        if (this.isInteractive && !hasValidRating) {
+        if (isInteractive && !hasValidRating) {
           appearance = Star.appearances.empty
           bright = true
         } else if (index < fullStars) {
@@ -104,55 +91,46 @@ class StarRating extends React.PureComponent {
           appearance={appearance}
           bright={bright}
           index={index}
-          interactive={this.isInteractive}
+          interactive={isInteractive}
           key={index}
-          onClick={this.handleStarClicked}
-          onEnter={this.handleStarEnter}
-          onLeave={this.handleStarLeave}
+          onClick={handleStarClicked}
+          onEnter={handleStarEnter}
+          onLeave={handleStarLeave}
         />
       )
     })
-  }
+  })()
 
-  render() {
-    const { starCount, value } = this.props
+  return (
+    <div {...filteredProps}>
+      {isInteractive && (
+        <label>
+          <ScreenReaderText>Rate</ScreenReaderText>
+          <ScreenReaderInput
+            type="range"
+            onChange={handleInputChanged}
+            min={1}
+            max={starCount}
+            step={1}
+            value={value || 0}
+          />
+        </label>
+      )}
 
-    const filteredProps = filterReactProps(this.props)
-    delete filteredProps.onChange
+      {stars}
 
-    return (
-      <div {...filteredProps}>
-        {this.isInteractive && (
-          <label>
-            <ScreenReaderText>Rate</ScreenReaderText>
-            <ScreenReaderInput
-              type="range"
-              onChange={this.handleInputChanged}
-              min={1}
-              max={starCount}
-              step={1}
-              value={value || 0}
-            />
-          </label>
-        )}
-
-        {this.stars}
-
-        <ScreenReaderText>This is rated {value}</ScreenReaderText>
-      </div>
-    )
-  }
+      <ScreenReaderText>This is rated {value}</ScreenReaderText>
+    </div>
+  )
 }
 
 StarRating.propTypes = {
   onChange: PropTypes.func,
   starCount: PropTypes.number,
-  themeName: PropTypes.oneOf(Object.keys(themeNames)).isRequired,
   value: PropTypes.number
 }
-
 StarRating.defaultProps = {
   starCount: 5
 }
 
-export default withTheme(StarRating)
+export default StarRating

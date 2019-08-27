@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
 import stylesheet from '../css/index.js'
 
@@ -14,28 +14,25 @@ const APPEARANCES = {
 }
 
 const styles = {
-  star: props =>
+  star: (props, themeName) =>
     css(
       stylesheet[`.psds-starrating__star`],
-      stylesheet[`.psds-starrating__star--theme-${props.themeName}`],
+      stylesheet[`.psds-starrating__star--theme-${themeName}`],
       props.bright && stylesheet[`.psds-starrating__star--bright`],
       props.active && stylesheet[`.psds-starrating__star--active`],
       props.interactive && stylesheet[`.psds-starrating__star--interactive`]
     ),
-  halfStarSecondary: props =>
+  halfStarSecondary: (props, themeName) =>
     css(
       stylesheet[`.psds-starrating__star__half__secondary`],
-      stylesheet[
-        `.psds-starrating__star__half__secondary--theme-${props.themeName}`
-      ]
+      stylesheet[`.psds-starrating__star__half__secondary--theme-${themeName}`]
     )
 }
 
 function HalfStarIcon(props) {
-  const { themeName, ...filteredProps } = props
-
+  const themeName = useTheme()
   return (
-    <Icon {...filteredProps}>
+    <Icon {...props}>
       <svg
         role="img"
         aria-label="star half icon"
@@ -51,12 +48,10 @@ function HalfStarIcon(props) {
             <rect width="50%" height="100%" fill="white" />
           </mask>
         </defs>
-
         <use
           xlinkHref="#psds-starrating__half-star__star"
-          {...styles.halfStarSecondary(props)}
+          {...styles.halfStarSecondary(props, themeName)}
         />
-
         <use
           xlinkHref="#psds-starrating__half-star__star"
           mask="url(#psds-starrating__half-star__maskHalf)"
@@ -66,102 +61,81 @@ function HalfStarIcon(props) {
   )
 }
 
-HalfStarIcon.propTypes = {
-  themeName: PropTypes.string.isRequired
-}
+function Star(props) {
+  const themeName = useTheme()
+  const {
+    active,
+    appearance,
+    bright,
+    index,
+    interactive,
+    onClick,
+    onEnter,
+    onLeave,
+    ...filteredProps
+  } = props
 
-class Star extends React.PureComponent {
-  constructor(props) {
-    super(props)
+  const Tag = interactive ? 'button' : 'span'
+  const iconSize = Icon.sizes.small
+  const value = props.index + 1
+  const label = `Rate ${value} Star${value > 1 ? 's' : ''}`
 
-    this.handleClicked = this.handleClicked.bind(this)
-    this.handleEnter = this.handleEnter.bind(this)
-    this.handleLeave = this.handleLeave.bind(this)
-  }
-
-  handleClicked(event) {
-    const { onClick, index } = this.props
+  function handleClicked(event) {
+    const { onClick, index } = props
     if (onClick) onClick(index, event)
   }
 
-  handleEnter(event) {
-    const { onEnter, index } = this.props
+  function handleEnter(event) {
+    const { onEnter, index } = props
     if (onEnter) onEnter(index, event)
   }
 
-  handleLeave(event) {
-    const { onLeave, index } = this.props
+  function handleLeave(event) {
+    const { onLeave, index } = props
     if (onLeave) onLeave(index, event)
   }
 
-  get label() {
-    const value = this.props.index + 1
-    return `Rate ${value} Star${value > 1 ? 's' : ''}`
-  }
+  // TODO: filter props
+  return (
+    <Tag
+      {...styles.star(props, themeName)}
+      {...filteredProps}
+      aria-label={label}
+      title={label}
+      onBlur={handleLeave}
+      onClick={handleClicked}
+      onFocus={handleEnter}
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+    >
+      {appearance === APPEARANCES.full && (
+        <Icon id={Icon.ids.starFill} size={iconSize} />
+      )}
 
-  render() {
-    const {
-      active,
-      appearance,
-      bright,
-      index,
-      interactive,
-      onClick,
-      onEnter,
-      onLeave,
-      themeName,
-      ...filteredProps
-    } = this.props
+      {appearance === APPEARANCES.empty && (
+        <Icon id={Icon.ids.star} size={iconSize} />
+      )}
 
-    const Tag = interactive ? 'button' : 'span'
-    const iconSize = Icon.sizes.small
-
-    return (
-      <Tag
-        {...styles.star(this.props)}
-        {...filteredProps}
-        aria-label={this.label}
-        title={this.label}
-        onBlur={this.handleLeave}
-        onClick={this.handleClicked}
-        onFocus={this.handleEnter}
-        onMouseEnter={this.handleEnter}
-        onMouseLeave={this.handleLeave}
-      >
-        {appearance === APPEARANCES.full && (
-          <Icon id={Icon.ids.starFill} size={iconSize} />
-        )}
-
-        {appearance === APPEARANCES.empty && (
-          <Icon id={Icon.ids.star} size={iconSize} />
-        )}
-
-        {appearance === APPEARANCES.half && (
-          <HalfStarIcon size={iconSize} themeName={themeName} />
-        )}
-      </Tag>
-    )
-  }
+      {appearance === APPEARANCES.half && <HalfStarIcon size={iconSize} />}
+    </Tag>
+  )
 }
-
 Star.propTypes = {
   active: PropTypes.bool,
-  appearance: PropTypes.oneOf(Object.values(APPEARANCES)).isRequired,
+  appearance: PropTypes.oneOf(Object.keys(APPEARANCES).map(k => APPEARANCES[k]))
+    .isRequired,
   bright: PropTypes.bool,
   index: PropTypes.number.isRequired,
   interactive: PropTypes.bool,
   onClick: PropTypes.func,
   onEnter: PropTypes.func,
-  onLeave: PropTypes.func,
-  themeName: PropTypes.string
+  onLeave: PropTypes.func
 }
-
 Star.defaultProps = {
   active: false,
   bright: false,
   interactive: false
 }
-
 Star.appearances = APPEARANCES
 
-export default withTheme(Star)
+export default Star
