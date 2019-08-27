@@ -1,114 +1,116 @@
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
-import * as glamor from 'glamor'
-import Halo from '@pluralsight/ps-design-system-halo/react'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import css from '../css/index.js'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import Halo from '@pluralsight/ps-design-system-halo/react.js'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
+
+import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 const styles = {
-  switch: ({ disabled, labelAlign }) =>
-    glamor.css(
-      css['.psds-switch'],
-      css[`.psds-switch--labelAlign-${labelAlign}`],
-      disabled && css['.psds-switch--disabled'],
-      {
-        ':focus': css['.psds-switch:focus']
-      }
+  switch: (themeName, { disabled, labelAlign }) =>
+    compose(
+      css(stylesheet['.psds-switch']),
+      css(stylesheet[`.psds-switch--labelAlign-${labelAlign}`]),
+      disabled && css(stylesheet['.psds-switch--disabled'])
     ),
-  track: ({ checked, color, disabled, error, isFocused, size, themeName }) =>
-    glamor.css(
-      css['.psds-switch__track'],
+
+  track: (themeName, { checked, color, size }) =>
+    compose(
+      css(stylesheet['.psds-switch__track']),
       checked &&
-        css[`.psds-switch__track--checked.psds-switch__track--color-${color}`],
-      css[`.psds-switch__track.psds-switch__track--size-${size}`]
+        css(
+          stylesheet[
+            `.psds-switch__track--checked.psds-switch__track--color-${color}`
+          ]
+        ),
+      css(stylesheet[`.psds-switch__track.psds-switch__track--size-${size}`])
     ),
-  thumb: ({ checked, size }) =>
-    glamor.css({
-      ...css[`.psds-switch__thumb`],
-      ...css[`.psds-switch__thumb--size-${size}`],
-      ...(checked
-        ? css[`.psds-switch__thumb--checked.psds-switch__thumb--size-${size}`]
-        : null)
-    }),
-  label: ({ labelAlign, size, themeName }) =>
-    glamor.css({
-      ...css['.psds-switch__label'],
-      ...css[`.psds-switch__label--size-${size}`],
-      ...css[
-        `.psds-switch__label--size-${size}.psds-switch__label--labelAlign-${labelAlign}`
-      ],
-      ...css[`.psds-switch__label.psds-theme--${themeName}`]
-    }),
-  checkbox: _ => glamor.css(css['.psds-switch__checkbox'])
+
+  thumb: (themeName, { checked, size }) =>
+    compose(
+      css(stylesheet['.psds-switch__thumb']),
+      css(stylesheet[`.psds-switch__thumb--size-${size}`]),
+      checked &&
+        css(
+          stylesheet[
+            `.psds-switch__thumb--checked.psds-switch__thumb--size-${size}`
+          ]
+        )
+    ),
+
+  label: (themeName, { labelAlign, checked, size }) =>
+    compose(
+      css(stylesheet['.psds-switch__label']),
+      css(stylesheet[`.psds-switch__label--size-${size}`]),
+      css(
+        stylesheet[
+          `.psds-switch__label--size-${size}.psds-switch__label--labelAlign-${labelAlign}`
+        ]
+      ),
+      css(stylesheet[`.psds-switch__label.psds-theme--${themeName}`])
+    ),
+
+  checkbox: _ => css(stylesheet['.psds-switch__checkbox'])
 }
 
-class Switch extends React.Component {
-  constructor(props) {
-    super(props)
+const Switch = React.forwardRef((props, forwardedRef) => {
+  const { checked, children, disabled, error, ...rest } = props
 
-    this.handleClick = this.handleClick.bind(this)
-    this.handleBlur = this.handleBlur.bind(this)
-    this.handleFocus = this.handleFocus.bind(this)
+  const ref = React.useRef()
+  React.useImperativeHandle(forwardedRef, () => ref.current)
 
-    this.state = { isFocused: false }
+  const themeName = useTheme()
+  const [isFocused, setIsFocused] = React.useState(false)
+
+  const handleBlur = combineFns(() => {
+    setIsFocused(false)
+  }, props.onBlur)
+
+  function handleClick(evt) {
+    if (disabled || !isFunction(props.onClick)) return
+
+    props.onClick(!props.checked)
   }
 
-  handleClick() {
-    if (typeof this.props.onClick === 'function')
-      this.props.onClick(!this.props.checked)
-  }
+  const handleFocus = combineFns(() => {
+    setIsFocused(true)
+  }, props.onFocus)
 
-  handleFocus() {
-    this.setState(_ => ({ isFocused: true }))
-  }
+  return (
+    <button
+      aria-checked={checked}
+      role="checkbox"
+      {...styles.switch(themeName, props)}
+      {...filterReactProps(rest, { tagName: 'button' })}
+      {...(disabled && { tabIndex: -1 })}
+      onClick={handleClick}
+      onBlur={handleBlur}
+      onFocus={handleFocus}
+    >
+      <Halo error={error} shape={Halo.shapes.pill} inline visible={isFocused}>
+        <div {...styles.track(themeName, props)}>
+          <div {...styles.thumb(themeName, props)} />
+        </div>
+      </Halo>
 
-  handleBlur() {
-    this.setState(_ => ({ isFocused: false }))
-  }
+      <input
+        checked={checked}
+        readOnly
+        ref={ref}
+        tabIndex="-1"
+        type="checkbox"
+        {...styles.checkbox()}
+      />
 
-  render() {
-    const { isFocused } = this.state
-    const { children, disabled, error } = this.props
-
-    const switchProps = {
-      ...styles.switch(this.props),
-      ...(this.props.style ? { style: this.props.style } : null),
-      ...(this.props.className ? { className: this.props.className } : null),
-      ...(!disabled && {
-        onBlur: this.handleBlur,
-        onClick: this.handleClick,
-        onFocus: this.handleFocus
-      }),
-      tabIndex: disabled ? '-1' : this.props.tabIndex || '0'
-    }
-
-    return (
-      <button
-        {...switchProps}
-        aria-checked={this.props.checked}
-        role="checkbox"
-      >
-        <Halo error={error} shape={Halo.shapes.pill} inline visible={isFocused}>
-          <div {...styles.track(this.props)}>
-            <div {...styles.thumb(this.props)} />
-          </div>
-        </Halo>
-
-        <input
-          tabIndex="-1"
-          type="checkbox"
-          readOnly
-          checked={this.props.checked}
-          {...styles.checkbox(this.props)}
-        />
-
-        {children && <label {...styles.label(this.props)}>{children}</label>}
-      </button>
-    )
-  }
-}
+      {children && (
+        <label {...styles.label(themeName, props)}>{children}</label>
+      )}
+    </button>
+  )
+})
 
 Switch.propTypes = {
   checked: PropTypes.bool,
@@ -118,7 +120,9 @@ Switch.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   labelAlign: PropTypes.oneOf(Object.keys(vars.labelAligns)),
+  onBlur: PropTypes.func,
   onClick: PropTypes.func,
+  onFocus: PropTypes.func,
   size: PropTypes.oneOf(Object.keys(vars.sizes)),
   style: PropTypes.object,
   tabIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
@@ -130,7 +134,8 @@ Switch.defaultProps = {
   disabled: false,
   error: false,
   labelAlign: vars.labelAligns.right,
-  size: vars.sizes.large
+  size: vars.sizes.large,
+  tabIndex: 0
 }
 
 Switch.colors = vars.colors
@@ -141,4 +146,12 @@ export const colors = vars.colors
 export const sizes = vars.sizes
 export const labelAligns = vars.labelAligns
 
-export default withTheme(Switch)
+export default Switch
+
+function combineFns(...fns) {
+  return (...args) => fns.filter(isFunction).forEach(fn => fn(...args))
+}
+
+function isFunction(fn) {
+  return typeof fn === 'function'
+}
