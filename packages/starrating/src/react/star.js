@@ -2,6 +2,7 @@ import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
@@ -63,43 +64,27 @@ function HalfStarIcon(props) {
 
 function Star(props) {
   const themeName = useTheme()
-  const {
-    active,
-    appearance,
-    bright,
-    index,
-    interactive,
-    onClick,
-    onEnter,
-    onLeave,
-    ...filteredProps
-  } = props
-
-  const Tag = interactive ? 'button' : 'span'
+  const Tag = props.interactive ? 'button' : 'span'
   const iconSize = Icon.sizes.small
   const value = props.index + 1
   const label = `Rate ${value} Star${value > 1 ? 's' : ''}`
 
   function handleClicked(event) {
-    const { onClick, index } = props
-    if (onClick) onClick(index, event)
+    if (typeof props.onClick === 'function') props.onClick(props.index, event)
   }
 
   function handleEnter(event) {
-    const { onEnter, index } = props
-    if (onEnter) onEnter(index, event)
+    if (typeof props.onEnter === 'function') props.onEnter(props.index, event)
   }
 
   function handleLeave(event) {
-    const { onLeave, index } = props
-    if (onLeave) onLeave(index, event)
+    if (typeof props.onLeave === 'function') props.onLeave(props.index, event)
   }
 
-  // TODO: filter props
   return (
     <Tag
       {...styles.star(props, themeName)}
-      {...filteredProps}
+      {...filterReactProps(props, { tagName: Tag })}
       aria-label={label}
       title={label}
       onBlur={handleLeave}
@@ -108,15 +93,17 @@ function Star(props) {
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
     >
-      {appearance === APPEARANCES.full && (
+      {props.appearance === APPEARANCES.full && (
         <Icon id={Icon.ids.starFill} size={iconSize} />
       )}
 
-      {appearance === APPEARANCES.empty && (
+      {props.appearance === APPEARANCES.empty && (
         <Icon id={Icon.ids.star} size={iconSize} />
       )}
 
-      {appearance === APPEARANCES.half && <HalfStarIcon size={iconSize} />}
+      {props.appearance === APPEARANCES.half && (
+        <HalfStarIcon size={iconSize} />
+      )}
     </Tag>
   )
 }

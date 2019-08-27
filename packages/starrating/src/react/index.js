@@ -27,8 +27,7 @@ function StarRating(props) {
   const isInteractive = !!props.onChange
   const { starCount, value } = props
 
-  const filteredProps = filterReactProps(props)
-  delete filteredProps.onChange
+  const { onChange, ...filteredProps } = filterReactProps(props)
 
   function handleInputChanged(evt) {
     if (!isInteractive) return
