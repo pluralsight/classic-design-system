@@ -23,6 +23,13 @@ storiesOf('onClick', module)
       long text. this is the long text. this is the long text.{' '}
     </Banner>
   ))
+  .add('side by side', () =>
+    Object.keys(Banner.colors).map(color => (
+      <Banner key={color} color={color} onClick={action('click X')}>
+        this is the text
+      </Banner>
+    ))
+  )
 
 storiesOf('styling', module)
   .add('style prop ', () => (
