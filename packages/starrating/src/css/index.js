@@ -41,7 +41,7 @@ const resetButton = {
 }
 
 export default {
-  [`.psds-starrating__star`]: {
+  '.psds-starrating__star': {
     ...resetButton,
     lineHeight: 0
   },
@@ -53,7 +53,6 @@ export default {
     color: core.colors.gray01
   },
 
-  [`.psds-starrating__star__half__secondary`]: {},
   [`.psds-starrating__star__half__secondary--theme-${themeNames.dark}`]: {
     color: core.colors.gray04,
     fill: core.colors.gray04 // safari needs this
@@ -63,21 +62,16 @@ export default {
     fill: core.colors.gray01 // safari needs this
   },
 
-  [`.psds-starrating__star--active`]: {
+  '.psds-starrating__star--active': {
     color: core.colors.yellow
   },
-  [`.psds-starrating__star--bright`]: {
+  '.psds-starrating__star--bright': {
     color: core.colors.gray02
   },
-  [`.psds-starrating__star--interactive`]: {
+  '.psds-starrating__star--interactive': {
     cursor: 'pointer'
   },
 
-  [`.psds-starrating__screen-reader-input`]: {
-    ...hideVisually
-  },
-
-  [`.psds-starrating__screen-reader-text`]: {
-    ...hideVisually
-  }
+  '.psds-starrating__screen-reader-input': hideVisually,
+  '.psds-starrating__screen-reader-text': hideVisually
 }

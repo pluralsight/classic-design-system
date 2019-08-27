@@ -17,15 +17,14 @@ const APPEARANCES = {
 const styles = {
   star: (props, themeName) =>
     css(
-      stylesheet[`.psds-starrating__star`],
+      stylesheet['.psds-starrating__star'],
       stylesheet[`.psds-starrating__star--theme-${themeName}`],
-      props.bright && stylesheet[`.psds-starrating__star--bright`],
-      props.active && stylesheet[`.psds-starrating__star--active`],
-      props.interactive && stylesheet[`.psds-starrating__star--interactive`]
+      props.bright && stylesheet['.psds-starrating__star--bright'],
+      props.active && stylesheet['.psds-starrating__star--active'],
+      props.interactive && stylesheet['.psds-starrating__star--interactive']
     ),
   halfStarSecondary: (props, themeName) =>
     css(
-      stylesheet[`.psds-starrating__star__half__secondary`],
       stylesheet[`.psds-starrating__star__half__secondary--theme-${themeName}`]
     )
 }
