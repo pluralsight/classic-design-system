@@ -11,10 +11,7 @@ const styles = {
       stylesheet['.psds-form-button-row'],
       stylesheet[`.psds-form-button-row--align-${props.align}`]
     ),
-  button: _ =>
-    css(stylesheet['.psds-form-button-row__button'], {
-      ':last-child': stylesheet['.psds-form-button-row__button:last-child']
-    })
+  button: _ => css(stylesheet['.psds-form-button-row__button'])
 }
 
 const ButtonRow = (props, context) => (
