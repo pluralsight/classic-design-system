@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@13.1.1...@pluralsight/ps-design-system-site@13.1.2) (2019-08-27)
+
+
+### Bug Fixes
+
+* **site:** remove flash of unstyled content with custom document ([f7e942b](https://github.com/pluralsight/design-system/commit/f7e942b))
+
+
+
+
+
 ## [13.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@13.1.0...@pluralsight/ps-design-system-site@13.1.1) (2019-08-26)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site

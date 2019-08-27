@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@4.0.4...@pluralsight/ps-design-system-avatar@4.1.0) (2019-08-27)
+
+
+### Features
+
+* **avatar:** text smiley face fallback ([5e37003](https://github.com/pluralsight/design-system/commit/5e37003)), closes [#632](https://github.com/pluralsight/design-system/issues/632)
+
+
+
+
+
 ## [4.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@4.0.3...@pluralsight/ps-design-system-avatar@4.0.4) (2019-08-26)
 
 
