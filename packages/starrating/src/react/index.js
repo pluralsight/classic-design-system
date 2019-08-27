@@ -22,7 +22,7 @@ function ScreenReaderText(props) {
   return <span {...styles.screenReaderText(props)} {...props} />
 }
 
-function StarRating(props) {
+const StarRating = React.forwardRef((props, ref) => {
   const [hoverIndex, setHoverIndex] = React.useState(null)
   const isInteractive = !!props.onChange
   const { starCount, value } = props
@@ -44,7 +44,7 @@ function StarRating(props) {
     setHoverIndex(index)
   }
 
-  function handleStarLeave(index) {
+  function handleStarLeave() {
     if (!isInteractive) return
     setHoverIndex(null)
   }
@@ -101,7 +101,7 @@ function StarRating(props) {
   })()
 
   return (
-    <div {...filteredProps}>
+    <div {...filteredProps} ref={ref}>
       {isInteractive && (
         <label>
           <ScreenReaderText>Rate</ScreenReaderText>
@@ -121,7 +121,7 @@ function StarRating(props) {
       <ScreenReaderText>This is rated {value}</ScreenReaderText>
     </div>
   )
-}
+})
 
 StarRating.propTypes = {
   onChange: PropTypes.func,
