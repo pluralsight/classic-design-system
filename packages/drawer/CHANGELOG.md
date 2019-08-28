@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@3.0.0...@pluralsight/ps-design-system-drawer@4.0.0) (2019-08-28)
+
+
+### Code Refactoring
+
+* **drawer:** upgrade to functional components ([8e6daa8](https://github.com/pluralsight/design-system/commit/8e6daa8))
+
+
+### BREAKING CHANGES
+
+* **drawer:** react 16.8.0 is minimum version required
+
+
+
+
+
 # [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@2.1.17...@pluralsight/ps-design-system-drawer@3.0.0) (2019-08-09)
 
 
