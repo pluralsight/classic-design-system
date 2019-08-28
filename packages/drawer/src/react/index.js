@@ -14,8 +14,7 @@ import Collapsible from './collapsible.js'
 if (typeof window !== 'undefined') require('element-closest')
 
 const styles = {
-  drawer: themeName =>
-    glamor.css(css[`.psds-drawer.psds-theme--${themeName}`]),
+  drawer: themeName => glamor.css(css[`.psds-drawer.psds-theme--${themeName}`]),
   base: isOpen =>
     glamor.css(
       css['.psds-drawer__base'],
@@ -50,39 +49,37 @@ const Drawer = ({
   base,
   ...rest
 }) => {
-  const [_open, setOpen] = useState(startOpen)
+  const [openState, setOpenState] = useState(startOpen)
   const [controlled, setControlled] = useState()
   useEffect(() => {
-    if(controlled !== undefined){
+    if (controlled !== undefined) {
       return
     }
     setControlled(isOpen !== undefined)
   }, [isOpen, controlled])
-  const open = isOpen !== undefined ? isOpen : _open
+  const open = isOpen !== undefined ? isOpen : openState
   const getButtonAriaLabel = () => {
     const prefix = open ? 'Collapse' : 'Expand'
     return toggleButtonAriaLabel ? `${prefix} ${toggleButtonAriaLabel}` : prefix
   }
 
-  const isClickOnDrawerBase = evt => !evt.target.closest('a, button');
-  
+  const isClickOnDrawerBase = evt => !evt.target.closest('a, button')
+
   const toggle = evt => {
-    const nextOpen = !open;
+    const nextOpen = !open
     onToggle && onToggle(nextOpen, evt)
-    !controlled && setOpen(nextOpen)
+    !controlled && setOpenState(nextOpen)
   }
 
   const handleClick = evt => {
     isClickOnDrawerBase(evt) && toggle(evt)
-  };
-  
+  }
+
   return (
     <Fragment>
       <div {...styles.drawer(themeName)} {...filterReactProps(rest)}>
-        <div {...styles.base(open)} onClick={ handleClick }>
-          <div {...styles.panelContent()}>
-            {base}
-          </div>
+        <div {...styles.base(open)} onClick={handleClick}>
+          <div {...styles.panelContent()}>{base}</div>
           <div {...styles.toggleButtonContainer()}>
             <button
               onClick={toggle}
@@ -95,7 +92,7 @@ const Drawer = ({
             </button>
           </div>
         </div>
-        <div {...styles.panel({themeName, open})} >
+        <div {...styles.panel({ themeName, open })}>
           <Collapsible isOpen={open}>{children}</Collapsible>
         </div>
       </div>
