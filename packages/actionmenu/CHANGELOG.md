@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@5.1.3...@pluralsight/ps-design-system-actionmenu@5.1.4) (2019-08-26)
+
+
+### Bug Fixes
+
+* **actionmenu:** handle null child ([1551bea](https://github.com/pluralsight/design-system/commit/1551bea))
+
+
+
+
+
 ## [5.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@5.1.2...@pluralsight/ps-design-system-actionmenu@5.1.3) (2019-08-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu

@@ -58,6 +58,13 @@ storiesOf('menu items', module)
       </ActionMenu.Item>
     </ActionMenu>
   ))
+  .add('null item', _ => (
+    <ActionMenu>
+      <ActionMenu.Item>One item</ActionMenu.Item>
+      {null}
+      <ActionMenu.Item>Skip to three item</ActionMenu.Item>
+    </ActionMenu>
+  ))
 
 storiesOf('dividers', module)
   .add('edge', _ => (

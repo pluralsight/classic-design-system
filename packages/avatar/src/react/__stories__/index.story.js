@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Avatar from '..'
+import Avatar from '../index.js'
 
 const storySizes = storiesOf('Default', module)
 
@@ -53,6 +53,7 @@ const names = [
 const storyInitials = storiesOf('Using Initials', module)
   .add('empty name, no src', () => <Avatar name={''} />)
   .add('null name, no src', () => <Avatar name={null} />)
+  .add('single string name, no src', () => <Avatar name={'x'} />)
   .add('error-out image src, with name', () => (
     <Avatar name="Bill Dill" src="https://jaketrent.com/fake.jpg" />
   ))

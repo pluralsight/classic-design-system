@@ -49,17 +49,20 @@ export default {
   },
 
   '.psds-banner__dismiss': {
+    position: 'relative',
     display: 'flex',
     alignItems: 'flex-start',
     background: 'none',
     border: 'none',
-    marginLeft: 'auto',
-    padding: `0 0 0 ${core.layout.spacingSmall}`,
-    color: core.colors.white,
+    marginLeft: core.layout.spacingSmall,
+    padding: '0',
+    color: 'currentColor',
     cursor: 'pointer',
 
-    '&:hover': {
-      opacity: '0.65'
+    '&:hover, &:focus, &:active': {
+      outline: 'none',
+      borderRadius: '2px',
+      boxShadow: '0 0 2px currentColor, inset 0 0 2px currentColor'
     }
   }
 }

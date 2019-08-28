@@ -5,8 +5,8 @@ import { fallbackPixel } from '../../vars'
 describe('avatar/utils', () => {
   describe('#getInitials', () => {
     test('empty cases', () => {
-      expect(utils.getInitials(null)).toEqual(undefined)
-      expect(utils.getInitials('')).toEqual(undefined)
+      expect(utils.getInitials(null)).toEqual(':)')
+      expect(utils.getInitials('')).toEqual(':)')
     })
 
     test('should return proper initials', () => {

@@ -3,12 +3,14 @@
 import { colorByLetter, fallbackPixel } from '../vars/index.js'
 
 export const getInitials = fullname => {
-  if (!fullname || !fullname.length) return
+  if (!fullname || !fullname.length) return ':)'
 
   const names = fullname.trim().split(' ')
 
   const first = names[0][0]
-  const second = names.length === 1 ? names[0][1] : names[names.length - 1][0]
+
+  let second = names.length === 1 ? names[0][1] : names[names.length - 1][0]
+  if (!second) second = ''
 
   return `${first}${second}`.toUpperCase()
 }
