@@ -1,36 +1,38 @@
-import * as glamor from 'glamor'
-import Text from '@pluralsight/ps-design-system-text/react'
+import { css } from 'glamor'
+import Text from '@pluralsight/ps-design-system-text/react.js'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { PageHeadingLayout as css } from '../css/index.js'
+import { PageHeadingLayout as stylesheet } from '../css/index.js'
 
 const styles = {
   actions: _ =>
-    glamor.css(css['.psds-page-heading-layout__actions'], {
-      '& > *': css['.psds-page-head-layout__actions > *'],
+    css(stylesheet['.psds-page-heading-layout__actions'], {
+      '& > *': stylesheet['.psds-page-head-layout__actions > *'],
       '@media (min-width: 769px)': {
-        ...css['@media (min-width: 769px)'][
+        ...stylesheet['@media (min-width: 769px)'][
           '.psds-page-heading-layout__actions'
         ],
         ...{
           '& > *':
-            css['@media (min-width: 769px)'][
+            stylesheet['@media (min-width: 769px)'][
               '.psds-page-head-layout__actions > *'
             ],
           '& > * + *':
-            css['@media (min-width: 769px)'][
+            stylesheet['@media (min-width: 769px)'][
               '.psds-page-head-layout__actions > * + *'
             ]
         }
       }
     }),
   heading: _ =>
-    glamor.css(css['.psds-page-heading-layout__heading'], {
+    css(stylesheet['.psds-page-heading-layout__heading'], {
       '@media (min-width: 769px)':
-        css['@media (min-width: 769px)']['.psds-page-heading-layout__heading']
+        stylesheet['@media (min-width: 769px)'][
+          '.psds-page-heading-layout__heading'
+        ]
     }),
-  layout: _ => glamor.css(css['.psds-page-heading-layout'])
+  layout: _ => css(stylesheet['.psds-page-heading-layout'])
 }
 
 function PageHeadingLayout(props) {
