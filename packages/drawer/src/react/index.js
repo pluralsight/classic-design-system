@@ -2,7 +2,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
-import React, { useState, useEffect, Fragment } from 'react'
+import React, { useState, useEffect } from 'react'
 import {
   names as themeNames,
   withTheme
@@ -76,27 +76,25 @@ const Drawer = ({
   }
 
   return (
-    <Fragment>
-      <div {...styles.drawer(themeName)} {...filterReactProps(rest)}>
-        <div {...styles.base(open)} onClick={handleClick}>
-          <div {...styles.panelContent()}>{base}</div>
-          <div {...styles.toggleButtonContainer()}>
-            <button
-              onClick={toggle}
-              aria-label={getButtonAriaLabel()}
-              {...styles.toggleButton(themeName)}
-            >
-              <div {...styles.rotatable(open)}>
-                <Icon id={Icon.ids.caretDown} />
-              </div>
-            </button>
-          </div>
-        </div>
-        <div {...styles.panel({ themeName, open })}>
-          <Collapsible isOpen={open}>{children}</Collapsible>
+    <div {...styles.drawer(themeName)} {...filterReactProps(rest)}>
+      <div {...styles.base(open)} onClick={handleClick}>
+        <div {...styles.panelContent()}>{base}</div>
+        <div {...styles.toggleButtonContainer()}>
+          <button
+            onClick={toggle}
+            aria-label={getButtonAriaLabel()}
+            {...styles.toggleButton(themeName)}
+          >
+            <div {...styles.rotatable(open)}>
+              <Icon id={Icon.ids.caretDown} />
+            </div>
+          </button>
         </div>
       </div>
-    </Fragment>
+      <div {...styles.panel({ themeName, open })}>
+        <Collapsible isOpen={open}>{children}</Collapsible>
+      </div>
+    </div>
   )
 }
 
