@@ -1,11 +1,12 @@
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
-import css, { BASE_CLASSNAME } from '../css'
+import stylesheet from '../css/index.js'
 
 const APPEARANCES = {
   empty: 'empty',
@@ -14,26 +15,24 @@ const APPEARANCES = {
 }
 
 const styles = {
-  star: props =>
-    glamor.css(
-      css[`${BASE_CLASSNAME}__star`],
-      css[`${BASE_CLASSNAME}__star--theme-${props.themeName}`],
-      props.bright && css[`${BASE_CLASSNAME}__star--bright`],
-      props.active && css[`${BASE_CLASSNAME}__star--active`],
-      props.interactive && css[`${BASE_CLASSNAME}__star--interactive`]
+  star: (props, themeName) =>
+    css(
+      stylesheet['.psds-starrating__star'],
+      stylesheet[`.psds-starrating__star--theme-${themeName}`],
+      props.bright && stylesheet['.psds-starrating__star--bright'],
+      props.active && stylesheet['.psds-starrating__star--active'],
+      props.interactive && stylesheet['.psds-starrating__star--interactive']
     ),
-  halfStarSecondary: props =>
-    glamor.css(
-      css[`${BASE_CLASSNAME}__star__half__secondary`],
-      css[`${BASE_CLASSNAME}__star__half__secondary--theme-${props.themeName}`]
+  halfStarSecondary: (props, themeName) =>
+    css(
+      stylesheet[`.psds-starrating__star__half__secondary--theme-${themeName}`]
     )
 }
 
-const HalfStarIcon = props => {
-  const { themeName, ...filteredProps } = props
-
+function HalfStarIcon(props) {
+  const themeName = useTheme()
   return (
-    <Icon {...filteredProps}>
+    <Icon {...props}>
       <svg
         role="img"
         aria-label="star half icon"
@@ -49,12 +48,10 @@ const HalfStarIcon = props => {
             <rect width="50%" height="100%" fill="white" />
           </mask>
         </defs>
-
         <use
           xlinkHref="#psds-starrating__half-star__star"
-          {...styles.halfStarSecondary(props)}
+          {...styles.halfStarSecondary(props, themeName)}
         />
-
         <use
           xlinkHref="#psds-starrating__half-star__star"
           mask="url(#psds-starrating__half-star__maskHalf)"
@@ -64,102 +61,67 @@ const HalfStarIcon = props => {
   )
 }
 
-HalfStarIcon.propTypes = {
-  themeName: PropTypes.string.isRequired
+function Star(props) {
+  const themeName = useTheme()
+  const Tag = props.interactive ? 'button' : 'span'
+  const iconSize = Icon.sizes.small
+  const value = props.index + 1
+  const label = `Rate ${value} Star${value > 1 ? 's' : ''}`
+
+  function handleClicked(event) {
+    if (typeof props.onClick === 'function') props.onClick(props.index, event)
+  }
+
+  function handleEnter(event) {
+    if (typeof props.onEnter === 'function') props.onEnter(props.index, event)
+  }
+
+  function handleLeave(event) {
+    if (typeof props.onLeave === 'function') props.onLeave(props.index, event)
+  }
+
+  return (
+    <Tag
+      {...styles.star(props, themeName)}
+      {...filterReactProps(props, { tagName: Tag })}
+      aria-label={label}
+      title={label}
+      onBlur={handleLeave}
+      onClick={handleClicked}
+      onFocus={handleEnter}
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+    >
+      {props.appearance === APPEARANCES.full && (
+        <Icon id={Icon.ids.starFill} size={iconSize} />
+      )}
+
+      {props.appearance === APPEARANCES.empty && (
+        <Icon id={Icon.ids.star} size={iconSize} />
+      )}
+
+      {props.appearance === APPEARANCES.half && (
+        <HalfStarIcon size={iconSize} />
+      )}
+    </Tag>
+  )
 }
-
-class Star extends React.PureComponent {
-  constructor(props) {
-    super(props)
-
-    this.handleClicked = this.handleClicked.bind(this)
-    this.handleEnter = this.handleEnter.bind(this)
-    this.handleLeave = this.handleLeave.bind(this)
-  }
-
-  handleClicked(event) {
-    const { onClick, index } = this.props
-    if (onClick) onClick(index, event)
-  }
-
-  handleEnter(event) {
-    const { onEnter, index } = this.props
-    if (onEnter) onEnter(index, event)
-  }
-
-  handleLeave(event) {
-    const { onLeave, index } = this.props
-    if (onLeave) onLeave(index, event)
-  }
-
-  get label() {
-    const value = this.props.index + 1
-    return `Rate ${value} Star${value > 1 ? 's' : ''}`
-  }
-
-  render() {
-    const {
-      active,
-      appearance,
-      bright,
-      index,
-      interactive,
-      onClick,
-      onEnter,
-      onLeave,
-      themeName,
-      ...filteredProps
-    } = this.props
-
-    const Tag = interactive ? 'button' : 'span'
-    const iconSize = Icon.sizes.small
-
-    return (
-      <Tag
-        {...styles.star(this.props)}
-        {...filteredProps}
-        aria-label={this.label}
-        title={this.label}
-        onBlur={this.handleLeave}
-        onClick={this.handleClicked}
-        onFocus={this.handleEnter}
-        onMouseEnter={this.handleEnter}
-        onMouseLeave={this.handleLeave}
-      >
-        {appearance === APPEARANCES.full && (
-          <Icon id={Icon.ids.starFill} size={iconSize} />
-        )}
-
-        {appearance === APPEARANCES.empty && (
-          <Icon id={Icon.ids.star} size={iconSize} />
-        )}
-
-        {appearance === APPEARANCES.half && (
-          <HalfStarIcon size={iconSize} themeName={themeName} />
-        )}
-      </Tag>
-    )
-  }
-}
-
 Star.propTypes = {
   active: PropTypes.bool,
-  appearance: PropTypes.oneOf(Object.values(APPEARANCES)).isRequired,
+  appearance: PropTypes.oneOf(Object.keys(APPEARANCES).map(k => APPEARANCES[k]))
+    .isRequired,
   bright: PropTypes.bool,
   index: PropTypes.number.isRequired,
   interactive: PropTypes.bool,
   onClick: PropTypes.func,
   onEnter: PropTypes.func,
-  onLeave: PropTypes.func,
-  themeName: PropTypes.string
+  onLeave: PropTypes.func
 }
-
 Star.defaultProps = {
   active: false,
   bright: false,
   interactive: false
 }
-
 Star.appearances = APPEARANCES
 
-export default withTheme(Star)
+export default Star
