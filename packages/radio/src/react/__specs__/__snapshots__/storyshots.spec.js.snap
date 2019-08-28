@@ -13,7 +13,7 @@ exports[`Storyshots Radio default 1`] = `
     onFocus={[Function]}
     onKeyDown={[Function]}
     role="radiogroup"
-    tabIndex="0"
+    tabIndex={0}
   >
     <div
       data-css-xp79s5=""
@@ -31,7 +31,7 @@ exports[`Storyshots Radio default 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-96titz=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -69,7 +69,7 @@ exports[`Storyshots Radio default 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-96titz=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -107,7 +107,7 @@ exports[`Storyshots Radio default 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-96titz=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -142,11 +142,11 @@ exports[`Storyshots Radio disabled & error 1`] = `
   }
 >
   <div
-    data-css-d41p20=""
-    onFocus={null}
-    onKeyDown={null}
+    data-css-sz0dtt=""
+    onFocus={[Function]}
+    onKeyDown={[Function]}
     role="radiogroup"
-    tabIndex="0"
+    tabIndex={0}
   >
     <div
       data-css-xp79s5=""
@@ -164,7 +164,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-96titz=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
@@ -202,7 +202,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-4a14oy=""
+              data-css-1nlp0zx=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
@@ -244,7 +244,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-96titz=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
@@ -279,11 +279,11 @@ exports[`Storyshots Radio disabled 1`] = `
   }
 >
   <div
-    data-css-d41p20=""
-    onFocus={null}
-    onKeyDown={null}
+    data-css-sz0dtt=""
+    onFocus={[Function]}
+    onKeyDown={[Function]}
     role="radiogroup"
-    tabIndex="0"
+    tabIndex={0}
   >
     <div
       data-css-xp79s5=""
@@ -301,7 +301,7 @@ exports[`Storyshots Radio disabled 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-96titz=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
@@ -339,7 +339,7 @@ exports[`Storyshots Radio disabled 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-4a14oy=""
+              data-css-1nlp0zx=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
@@ -381,7 +381,7 @@ exports[`Storyshots Radio disabled 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-96titz=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
@@ -420,7 +420,7 @@ exports[`Storyshots Radio error 1`] = `
     onFocus={[Function]}
     onKeyDown={[Function]}
     role="radiogroup"
-    tabIndex="0"
+    tabIndex={0}
   >
     <div
       data-css-xp79s5=""
@@ -438,7 +438,7 @@ exports[`Storyshots Radio error 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-96titz=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -476,7 +476,7 @@ exports[`Storyshots Radio error 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-4a14oy=""
+              data-css-1nlp0zx=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -518,7 +518,7 @@ exports[`Storyshots Radio error 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-96titz=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -557,7 +557,7 @@ exports[`Storyshots Radio one selected 1`] = `
     onFocus={[Function]}
     onKeyDown={[Function]}
     role="radiogroup"
-    tabIndex="0"
+    tabIndex={0}
   >
     <div
       data-css-xp79s5=""
@@ -575,7 +575,7 @@ exports[`Storyshots Radio one selected 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-96titz=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -613,7 +613,7 @@ exports[`Storyshots Radio one selected 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-4a14oy=""
+              data-css-1nlp0zx=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -655,7 +655,7 @@ exports[`Storyshots Radio one selected 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-96titz=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -704,8 +704,9 @@ exports[`Storyshots Radio state demo 1`] = `
       data-css-1a26704=""
       onFocus={[Function]}
       onKeyDown={[Function]}
+      onSelect={[Function]}
       role="radiogroup"
-      tabIndex="0"
+      tabIndex={0}
     >
       <div
         data-css-xp79s5=""
@@ -723,7 +724,7 @@ exports[`Storyshots Radio state demo 1`] = `
             >
               <div
                 aria-checked={true}
-                data-css-4a14oy=""
+                data-css-1nlp0zx=""
                 onFocus={[Function]}
                 role="radio"
                 tabIndex="-1"
@@ -765,7 +766,7 @@ exports[`Storyshots Radio state demo 1`] = `
             >
               <div
                 aria-checked={false}
-                data-css-dbvyuf=""
+                data-css-96titz=""
                 onFocus={[Function]}
                 role="radio"
                 tabIndex="-1"
@@ -803,7 +804,7 @@ exports[`Storyshots Radio state demo 1`] = `
             >
               <div
                 aria-checked={false}
-                data-css-dbvyuf=""
+                data-css-96titz=""
                 onFocus={[Function]}
                 role="radio"
                 tabIndex="-1"
