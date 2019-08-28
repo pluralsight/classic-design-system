@@ -74,9 +74,10 @@ exports[`Storyshots drawer controlled 1`] = `
         </div>
       </div>
       <div
-        data-css-ule0ur=""
+        data-css-1i2htk9=""
       >
         <div
+          aria-hidden={false}
           data-css-1j3g0qd=""
         >
           <div
@@ -89,7 +90,7 @@ exports[`Storyshots drawer controlled 1`] = `
             <p
               data-css-145tgfu=""
             >
-              Drawer Base Here
+              Drawer Content Here
             </p>
           </div>
         </div>
@@ -163,6 +164,7 @@ exports[`Storyshots drawer default 1`] = `
       data-css-1i2htk9=""
     >
       <div
+        aria-hidden={true}
         data-css-1j3g0qd=""
       >
         <div
@@ -175,7 +177,7 @@ exports[`Storyshots drawer default 1`] = `
           <p
             data-css-145tgfu=""
           >
-            Drawer Base Here
+            Drawer Content Here
           </p>
         </div>
       </div>
@@ -249,6 +251,7 @@ exports[`Storyshots drawer prevent toggle 1`] = `
         data-css-1i2htk9=""
       >
         <div
+          aria-hidden={true}
           data-css-1j3g0qd=""
         >
           <div
@@ -261,7 +264,7 @@ exports[`Storyshots drawer prevent toggle 1`] = `
             <p
               data-css-145tgfu=""
             >
-              Drawer Base Here
+              Drawer Content Here
             </p>
           </div>
         </div>
@@ -423,6 +426,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
       data-css-1i2htk9=""
     >
       <div
+        aria-hidden={true}
         data-css-1j3g0qd=""
       >
         <div
@@ -435,7 +439,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
           <p
             data-css-145tgfu=""
           >
-            Drawer Base Here
+            Drawer Content Here
           </p>
         </div>
       </div>
@@ -509,6 +513,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         data-css-1i2htk9=""
       >
         <div
+          aria-hidden={true}
           data-css-1j3g0qd=""
         >
           <div
@@ -521,7 +526,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
             <p
               data-css-145tgfu=""
             >
-              Drawer Base Here
+              Drawer Content Here
             </p>
           </div>
         </div>
@@ -583,6 +588,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         data-css-1i2htk9=""
       >
         <div
+          aria-hidden={true}
           data-css-1j3g0qd=""
         >
           <div
@@ -595,7 +601,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
             <p
               data-css-145tgfu=""
             >
-              Drawer Base Here
+              Drawer Content Here
             </p>
           </div>
         </div>
@@ -657,6 +663,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         data-css-1i2htk9=""
       >
         <div
+          aria-hidden={true}
           data-css-1j3g0qd=""
         >
           <div
@@ -669,7 +676,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
             <p
               data-css-145tgfu=""
             >
-              Drawer Base Here
+              Drawer Content Here
             </p>
           </div>
         </div>
@@ -745,6 +752,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           data-css-1i2htk9=""
         >
           <div
+            aria-hidden={true}
             data-css-1j3g0qd=""
           >
             <div
@@ -757,7 +765,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               <p
                 data-css-145tgfu=""
               >
-                Drawer Base Here
+                Drawer Content Here
               </p>
             </div>
           </div>
@@ -821,6 +829,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           data-css-1i2htk9=""
         >
           <div
+            aria-hidden={true}
             data-css-1j3g0qd=""
           >
             <div
@@ -833,7 +842,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               <p
                 data-css-145tgfu=""
               >
-                Drawer Base Here
+                Drawer Content Here
               </p>
             </div>
           </div>
@@ -897,6 +906,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           data-css-1i2htk9=""
         >
           <div
+            aria-hidden={true}
             data-css-1j3g0qd=""
           >
             <div
@@ -909,7 +919,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               <p
                 data-css-145tgfu=""
               >
-                Drawer Base Here
+                Drawer Content Here
               </p>
             </div>
           </div>
@@ -984,6 +994,7 @@ exports[`Storyshots drawer using custom aria label 1`] = `
       data-css-1i2htk9=""
     >
       <div
+        aria-hidden={true}
         data-css-1j3g0qd=""
       >
         <div
@@ -996,7 +1007,7 @@ exports[`Storyshots drawer using custom aria label 1`] = `
           <p
             data-css-145tgfu=""
           >
-            Drawer Base Here
+            Drawer Content Here
           </p>
         </div>
       </div>
@@ -1071,6 +1082,7 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
         data-css-1i2htk9=""
       >
         <div
+          aria-hidden={true}
           data-css-1j3g0qd=""
         >
           <div
@@ -1083,7 +1095,7 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
             <p
               data-css-145tgfu=""
             >
-              Drawer Base Here
+              Drawer Content Here
             </p>
           </div>
         </div>
@@ -1154,9 +1166,10 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
       </div>
     </div>
     <div
-      data-css-ule0ur=""
+      data-css-1i2htk9=""
     >
       <div
+        aria-hidden={false}
         data-css-1j3g0qd=""
       >
         <div
@@ -1169,7 +1182,7 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
           <p
             data-css-145tgfu=""
           >
-            Drawer Base Here
+            Drawer Content Here
           </p>
         </div>
       </div>
@@ -1290,6 +1303,7 @@ exports[`Storyshots drawer with row component 1`] = `
       data-css-1i2htk9=""
     >
       <div
+        aria-hidden={true}
         data-css-1j3g0qd=""
       >
         <div
@@ -1302,7 +1316,7 @@ exports[`Storyshots drawer with row component 1`] = `
           <p
             data-css-145tgfu=""
           >
-            Drawer Base Here
+            Drawer Content Here
           </p>
         </div>
       </div>
