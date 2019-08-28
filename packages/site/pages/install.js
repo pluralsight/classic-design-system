@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Badge from '@pluralsight/ps-design-system-badge/react'
+import Badge from '@pluralsight/ps-design-system-badge/react.js'
 
 import {
   Chrome,
@@ -8,11 +8,10 @@ import {
   Doc,
   P,
   PageHeading,
-  TextLink,
-  withServerProps
-} from '../src/ui'
+  TextLink
+} from '../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Install">
       <PageHeading>Install FTW!</PageHeading>
@@ -27,11 +26,12 @@ npm install @pluralsight/ps-design-system-normalize
 
 Include this vanilla CSS in your application in a method appropriate for your project. For usage options, follow the [Core Usage docs](/core/usage) patterns.
 
+
 ## JavaScript Environment Requirements
 
 Many components in the the Design System depend on features in more modern versions of ecmascript(es6 and es7). Older browsers and devices that we support do not provide these natively (e.g. IE 11) so you'll need to include a global polyfill in your bundled application, such as \`core-js\` or \`babel-polyfill\`.
 
-To explore features by version you can visit the [ECMAScript Compatibitily Table](https://kangax.github.io/compat-table/es6/).
+To explore features by version you can visit the [ECMAScript Compatibility Table](https://kangax.github.io/compat-table/es6/).
 
 ## Use Core
 
@@ -84,6 +84,12 @@ For usage details, see the [Core Usage docs](/core/usage).
 npm install glamor
 \`\`\`
 
+All components support theming and have a peer dependency on the Theme package. Install with:
+
+\`\`\`bash
+npm install @pluralsight/ps-design-system-theme
+\`\`\`
+
 Each component is installed separately.  The JavaScript is prebuilt Node modules.  Assets are inlined.  Find and use what you need.  For example:
 
 \`\`\`bash
@@ -96,4 +102,4 @@ For full, working project examples, see [github](https://github.com/pluralsight/
 `}</Doc>
     </Content>
   </Chrome>
-))
+)

@@ -1,6 +1,8 @@
-import Button from '@pluralsight/ps-design-system-button/react'
+import Button from '@pluralsight/ps-design-system-button/react.js'
 import core from '@pluralsight/ps-design-system-core'
-import Robot from '../src/ui/robot'
+import PropTypes from 'prop-types'
+import React from 'react'
+import Robot from '../src/ui/robot.js'
 
 import {
   Chrome,
@@ -9,9 +11,8 @@ import {
   Link,
   P,
   TextLink,
-  TitleLogo,
-  withServerProps
-} from '../src/ui'
+  TitleLogo
+} from '../src/ui/index.js'
 
 const Point = props => (
   <div className="point">
@@ -36,6 +37,10 @@ const Point = props => (
     `}</style>
   </div>
 )
+Point.propTypes = {
+  children: PropTypes.node,
+  title: PropTypes.string
+}
 
 const Action = props => (
   <span className="action">
@@ -55,6 +60,10 @@ const Action = props => (
     `}</style>
   </span>
 )
+Action.propTypes = {
+  children: PropTypes.node,
+  href: PropTypes.string
+}
 
 const Header = props => (
   <header className="header">
@@ -92,7 +101,7 @@ const Header = props => (
   </header>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Header />
     <Content title="Welcome">
@@ -113,7 +122,7 @@ export default withServerProps(_ => (
         <Point title="Components">
           Components include a variety of common UI elements to bootstrap
           experiences and ensure consistent interaction and style as well as
-          accessibility optimizations . These are React components.
+          accessibility optimizations. These are React components.
         </Point>
       </div>
       <Action href="/install">Install the Design System</Action>
@@ -130,4 +139,4 @@ export default withServerProps(_ => (
       }
     `}</style>
   </Chrome>
-))
+)

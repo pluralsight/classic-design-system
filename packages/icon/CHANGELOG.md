@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@12.0.6...@pluralsight/ps-design-system-icon@13.0.0) (2019-08-09)
+
+
+### Build System
+
+* **icon:** move theme package to peerDeps ([e2b567b](https://github.com/pluralsight/design-system/commit/e2b567b))
+
+
+### BREAKING CHANGES
+
+* **icon:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+## [12.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@12.0.5...@pluralsight/ps-design-system-icon@12.0.6) (2019-07-30)
+
+
+### Bug Fixes
+
+* **icon:** missing dependency ([ba0d201](https://github.com/pluralsight/design-system/commit/ba0d201))
+
+
+
+
+
+## [12.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@12.0.4...@pluralsight/ps-design-system-icon@12.0.5) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+## [12.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@12.0.3...@pluralsight/ps-design-system-icon@12.0.4) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
 ## [12.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@12.0.2...@pluralsight/ps-design-system-icon@12.0.3) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon

@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@2.0.4...@pluralsight/ps-design-system-textarea@3.0.0) (2019-08-09)
+
+
+### Build System
+
+* **textarea:** move theme package to peerDeps ([0cd9b29](https://github.com/pluralsight/design-system/commit/0cd9b29))
+
+
+### BREAKING CHANGES
+
+* **textarea:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+## [2.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@2.0.3...@pluralsight/ps-design-system-textarea@2.0.4) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textarea
+
+
+
+
+
+## [2.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@2.0.2...@pluralsight/ps-design-system-textarea@2.0.3) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textarea
+
+
+
+
+
+## [2.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@2.0.1...@pluralsight/ps-design-system-textarea@2.0.2) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textarea
+
+
+
+
+
 ## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@2.0.0...@pluralsight/ps-design-system-textarea@2.0.1) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textarea

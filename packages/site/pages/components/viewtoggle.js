@@ -1,21 +1,19 @@
-import core from '@pluralsight/ps-design-system-core'
-import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react'
+import React from 'react'
+import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react.js'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
   P,
   PageHeading,
   PropTypes,
   SectionHeading,
-  TextLink,
-  withServerProps
-} from '../../src/ui'
+  TextLink
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="View Toggle">
       <PageHeading packageName="viewtoggle">View Toggle</PageHeading>
@@ -108,4 +106,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

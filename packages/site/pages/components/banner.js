@@ -1,22 +1,19 @@
-import Banner from '@pluralsight/ps-design-system-banner/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
+import Banner from '@pluralsight/ps-design-system-banner/react.js'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import React from 'react'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Banner">
       <PageHeading packageName="banner">Banner</PageHeading>
@@ -66,7 +63,7 @@ export default withServerProps(_ => (
         )}
       />
 
-      <SectionHeading>Dismissable</SectionHeading>
+      <SectionHeading>Dismissible</SectionHeading>
       <P>
         Banners that a user can dismiss should use the{' '}
         <Text.Code>onClick</Text.Code> event handler to display an "X" icon in
@@ -81,4 +78,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

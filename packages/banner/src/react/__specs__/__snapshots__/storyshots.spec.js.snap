@@ -8,7 +8,7 @@ exports[`Storyshots color blue 1`] = `
     data-css-13j4h8v=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       blue
     </div>
@@ -24,7 +24,7 @@ exports[`Storyshots color green 1`] = `
     data-css-g8uz7t=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       green
     </div>
@@ -40,7 +40,7 @@ exports[`Storyshots color red 1`] = `
     data-css-1j58ngq=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       red
     </div>
@@ -56,7 +56,7 @@ exports[`Storyshots color yellow 1`] = `
     data-css-jrrxjl=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       yellow
     </div>
@@ -72,12 +72,12 @@ exports[`Storyshots onClick displays X 1`] = `
     data-css-13j4h8v=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       this is the text
     </div>
     <button
-      data-css-1j8ux48=""
+      data-css-1nptnaw=""
       onClick={[Function]}
     >
       <div
@@ -87,7 +87,121 @@ exports[`Storyshots onClick displays X 1`] = `
           aria-label="close icon"
           role="img"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots onClick side by side 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-13j4h8v=""
+  >
+    <div
+      data-css-s10s6t=""
+    >
+      this is the text
+    </div>
+    <button
+      data-css-1nptnaw=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-otejxm=""
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </div>
+    </button>
+  </div>
+  <div
+    data-css-g8uz7t=""
+  >
+    <div
+      data-css-s10s6t=""
+    >
+      this is the text
+    </div>
+    <button
+      data-css-1nptnaw=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-otejxm=""
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </div>
+    </button>
+  </div>
+  <div
+    data-css-jrrxjl=""
+  >
+    <div
+      data-css-s10s6t=""
+    >
+      this is the text
+    </div>
+    <button
+      data-css-1nptnaw=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-otejxm=""
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+          />
+        </svg>
+      </div>
+    </button>
+  </div>
+  <div
+    data-css-1j58ngq=""
+  >
+    <div
+      data-css-s10s6t=""
+    >
+      this is the text
+    </div>
+    <button
+      data-css-1nptnaw=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-otejxm=""
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
         >
           <path
             d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
@@ -107,13 +221,13 @@ exports[`Storyshots onClick w/ long text 1`] = `
     data-css-13j4h8v=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text.
        
     </div>
     <button
-      data-css-1j8ux48=""
+      data-css-1nptnaw=""
       onClick={[Function]}
     >
       <div
@@ -123,7 +237,6 @@ exports[`Storyshots onClick w/ long text 1`] = `
           aria-label="close icon"
           role="img"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <path
             d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
@@ -143,7 +256,7 @@ exports[`Storyshots styling child Link component auto-styled 1`] = `
     data-css-13j4h8v=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       this is the text with an
        
@@ -167,7 +280,7 @@ exports[`Storyshots styling child anchor tag auto-styled 1`] = `
     data-css-13j4h8v=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       this is the text with an 
       <a
@@ -189,7 +302,7 @@ exports[`Storyshots styling child anchor tag auto-styled in yellow 1`] = `
     data-css-jrrxjl=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       this is the text with an 
       <a
@@ -212,12 +325,12 @@ exports[`Storyshots styling className prop  1`] = `
     data-css-13j4h8v=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       this is the text
     </div>
     <button
-      data-css-1j8ux48=""
+      data-css-1nptnaw=""
       onClick={[Function]}
     >
       <div
@@ -227,7 +340,6 @@ exports[`Storyshots styling className prop  1`] = `
           aria-label="close icon"
           role="img"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <path
             d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
@@ -252,12 +364,12 @@ exports[`Storyshots styling style prop  1`] = `
     }
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       this is the text
     </div>
     <button
-      data-css-1j8ux48=""
+      data-css-1nptnaw=""
       onClick={[Function]}
     >
       <div
@@ -267,7 +379,6 @@ exports[`Storyshots styling style prop  1`] = `
           aria-label="close icon"
           role="img"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <path
             d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"

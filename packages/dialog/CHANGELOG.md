@@ -3,6 +3,76 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@5.0.0...@pluralsight/ps-design-system-dialog@6.0.0) (2019-08-26)
+
+
+### Bug Fixes
+
+* **dialog:** use object.values instead of .keys ([6830741](https://github.com/pluralsight/design-system/commit/6830741))
+
+
+### Code Refactoring
+
+* **dialog:** convert to use functional component and forward refs ([7add398](https://github.com/pluralsight/design-system/commit/7add398))
+
+
+### BREAKING CHANGES
+
+* **dialog:** react v16.8 is the minimum version
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@4.0.16...@pluralsight/ps-design-system-dialog@5.0.0) (2019-08-09)
+
+
+### Build System
+
+* **dialog:** move theme package to peerDeps ([5596a43](https://github.com/pluralsight/design-system/commit/5596a43))
+
+
+### BREAKING CHANGES
+
+* **dialog:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+## [4.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@4.0.15...@pluralsight/ps-design-system-dialog@4.0.16) (2019-08-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
+## [4.0.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@4.0.14...@pluralsight/ps-design-system-dialog@4.0.15) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
+## [4.0.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@4.0.13...@pluralsight/ps-design-system-dialog@4.0.14) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
+## [4.0.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@4.0.12...@pluralsight/ps-design-system-dialog@4.0.13) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
 ## [4.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@4.0.11...@pluralsight/ps-design-system-dialog@4.0.12) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog

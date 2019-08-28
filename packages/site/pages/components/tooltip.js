@@ -1,11 +1,11 @@
-import { Below } from '@pluralsight/ps-design-system-position/react'
-import Button from '@pluralsight/ps-design-system-button/react'
+import { Below } from '@pluralsight/ps-design-system-position/react.js'
+import Button from '@pluralsight/ps-design-system-button/react.js'
 import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import ReactPropTypes from 'prop-types'
 import React from 'react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
-import Tooltip from '@pluralsight/ps-design-system-tooltip/react'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import Tooltip from '@pluralsight/ps-design-system-tooltip/react.js'
 
 import {
   Chrome,
@@ -18,45 +18,34 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-class TooltipGuideline extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { el: null }
-  }
-  componentDidMount() {
-    this.setState({ el: this.el })
-  }
-  render() {
-    return (
-      <Theme name={Theme.names.light}>
-        <Button
-          appearance={Button.appearances.flat}
-          innerRef={el => (this.el = el)}
-          icon={<Icon id={Icon.ids.bookmark} />}
-        />
-        <div className="tooltipWrapper">
-          <Tooltip
-            appearance={this.props.appearance}
-            onClose={this.props.onClose}
-            tailPosition={Tooltip.tailPositions.topLeft}
-          >
-            {this.props.children}
-          </Tooltip>
-        </div>
-        <style jsx>{`
-          .tooltipWrapper {
-            position: relative;
-            top: 12px;
-            left: -2px;
-          }
-        `}</style>
-      </Theme>
-    )
-  }
+function TooltipGuideline(props) {
+  return (
+    <Theme name={Theme.names.light}>
+      <Button
+        appearance={Button.appearances.flat}
+        icon={<Icon id={Icon.ids.bookmark} />}
+      />
+      <div className="tooltipWrapper">
+        <Tooltip
+          appearance={props.appearance}
+          onClose={props.onClose}
+          tailPosition={Tooltip.tailPositions.topLeft}
+        >
+          {props.children}
+        </Tooltip>
+      </div>
+      <style jsx>{`
+        .tooltipWrapper {
+          position: relative;
+          top: 12px;
+          left: -2px;
+        }
+      `}</style>
+    </Theme>
+  )
 }
 TooltipGuideline.propTypes = {
   appearance: ReactPropTypes.oneOf(
@@ -182,7 +171,7 @@ function HoverExampleOnly() {
   )
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Tooltip">
       <PageHeading packageName="tooltip">Tooltip</PageHeading>
@@ -190,7 +179,7 @@ export default withServerProps(_ => (
       <Intro>
         The purpose of a tooltip is to provide context and explain the function
         of a user interface element or feature. The content of a tooltip is
-        limited to styled text. If more cutomization is necessary, consider the{' '}
+        limited to styled text. If more customization is necessary, consider the{' '}
         <Link href="/components/dialog">Dialog</Link> component which builds on
         the patterns of the tooltip.
       </Intro>
@@ -300,7 +289,7 @@ export default withServerProps(_ => (
         dont={<TooltipGuideline>Bookmark This Course</TooltipGuideline>}
       />
 
-      <P>Write your tooltips to be consice and scannable.</P>
+      <P>Write your tooltips to be concise and scannable.</P>
       <Guideline
         do={<TooltipGuideline>Bookmark this course</TooltipGuideline>}
         dont={
@@ -339,4 +328,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

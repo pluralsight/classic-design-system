@@ -3,6 +3,96 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@4.0.0...@pluralsight/ps-design-system-viewtoggle@4.0.1) (2019-08-26)
+
+
+### Bug Fixes
+
+* **viewtoggle:** error that happens when the active option is removed ([ad13efc](https://github.com/pluralsight/design-system/commit/ad13efc))
+
+
+
+
+
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@3.0.0...@pluralsight/ps-design-system-viewtoggle@4.0.0) (2019-08-09)
+
+
+### Bug Fixes
+
+* **viewtoggle:** dep range character ([e62529a](https://github.com/pluralsight/design-system/commit/e62529a))
+
+
+### Build System
+
+* **viewtoggle:** move theme package to peerDeps ([26ed7d7](https://github.com/pluralsight/design-system/commit/26ed7d7))
+
+
+### BREAKING CHANGES
+
+* **viewtoggle:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.12...@pluralsight/ps-design-system-viewtoggle@3.0.0) (2019-08-06)
+
+
+### Bug Fixes
+
+* **viewtoggle:** active item bg on initial render ([936dd82](https://github.com/pluralsight/design-system/commit/936dd82))
+
+
+### Code Refactoring
+
+* **viewtoggle:** change onSelect param order ([7607cd0](https://github.com/pluralsight/design-system/commit/7607cd0))
+
+
+### Features
+
+* **viewtoggle:** use hooks and forward refs ([99237ad](https://github.com/pluralsight/design-system/commit/99237ad))
+
+
+### Performance Improvements
+
+* **viewtoggle:** memoize initial index lookup ([33eea39](https://github.com/pluralsight/design-system/commit/33eea39))
+
+
+### BREAKING CHANGES
+
+* **viewtoggle:** onSelect param order changed. the Event is the first parameter and the option index
+is the second
+* **viewtoggle:** latest react (v16.8.6) is now a requirement
+
+
+
+
+
+## [2.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.11...@pluralsight/ps-design-system-viewtoggle@2.0.12) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [2.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.10...@pluralsight/ps-design-system-viewtoggle@2.0.11) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [2.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.9...@pluralsight/ps-design-system-viewtoggle@2.0.10) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
 ## [2.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.8...@pluralsight/ps-design-system-viewtoggle@2.0.9) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle

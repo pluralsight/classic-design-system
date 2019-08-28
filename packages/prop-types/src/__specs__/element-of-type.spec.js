@@ -1,6 +1,6 @@
 import React from 'react'
 
-import elementOfType from '../element-of-type'
+import elementOfType from '../element-of-type.js'
 
 const Uno = () => null
 const Dos = () => null

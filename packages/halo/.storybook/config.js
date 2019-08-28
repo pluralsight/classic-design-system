@@ -1,14 +1,17 @@
-import addons from '@storybook/addons'
+import requireContext from 'require-context.macro'
+
 import { addDecorator, configure } from '@storybook/react'
 
 import centerDecorator from '@pluralsight/ps-design-system-storybook-addon-center'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 addDecorator(centerDecorator)
-addDecorator(themeDecorator(addons))
+addDecorator(themeDecorator)
+
+const req = requireContext('../src', true, /\.story\.js$/)
 
 function loadStories() {
-  require('../stories')
+  req.keys().forEach(filename => req(filename))
 }
 
 configure(loadStories, module)

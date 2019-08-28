@@ -3,6 +3,80 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@4.0.4...@pluralsight/ps-design-system-avatar@4.1.0) (2019-08-27)
+
+
+### Features
+
+* **avatar:** text smiley face fallback ([5e37003](https://github.com/pluralsight/design-system/commit/5e37003)), closes [#632](https://github.com/pluralsight/design-system/issues/632)
+
+
+
+
+
+## [4.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@4.0.3...@pluralsight/ps-design-system-avatar@4.0.4) (2019-08-26)
+
+
+### Bug Fixes
+
+* **avatar:** edgecase with single char name ([badb09e](https://github.com/pluralsight/design-system/commit/badb09e))
+
+
+
+
+
+## [4.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@4.0.2...@pluralsight/ps-design-system-avatar@4.0.3) (2019-08-09)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-avatar
+
+
+
+
+
+## [4.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@4.0.1...@pluralsight/ps-design-system-avatar@4.0.2) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-avatar
+
+
+
+
+
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@4.0.0...@pluralsight/ps-design-system-avatar@4.0.1) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-avatar
+
+
+
+
+
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@3.0.6...@pluralsight/ps-design-system-avatar@4.0.0) (2019-07-15)
+
+
+### Bug Fixes
+
+* **avatar:** use size values instead of keys in proptypes ([868e812](https://github.com/pluralsight/design-system/commit/868e812))
+
+
+### Code Refactoring
+
+* **avatar:** bump react peerDependency to 16.8.6 ([ab9b188](https://github.com/pluralsight/design-system/commit/ab9b188))
+
+
+### Features
+
+* **avatar:** enable forwardRef ([96a0078](https://github.com/pluralsight/design-system/commit/96a0078))
+* **avatar:** filter html-legal attrs into element ([7f28900](https://github.com/pluralsight/design-system/commit/7f28900))
+
+
+### BREAKING CHANGES
+
+* **avatar:** require react 16.8.6
+* **avatar:** enable forwardRef
+
+
+
+
+
 ## [3.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@3.0.5...@pluralsight/ps-design-system-avatar@3.0.6) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-avatar

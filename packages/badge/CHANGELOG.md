@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@6.0.2...@pluralsight/ps-design-system-badge@7.0.0) (2019-08-09)
+
+
+### Build System
+
+* **badge:** move theme package to peerDeps ([575f619](https://github.com/pluralsight/design-system/commit/575f619))
+
+
+### BREAKING CHANGES
+
+* **badge:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+## [6.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@6.0.1...@pluralsight/ps-design-system-badge@6.0.2) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-badge
+
+
+
+
+
+## [6.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@6.0.0...@pluralsight/ps-design-system-badge@6.0.1) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-badge
+
+
+
+
+
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@5.0.1...@pluralsight/ps-design-system-badge@6.0.0) (2019-07-15)
+
+
+### Features
+
+* **badge:** enable forwardRef ([2b250ef](https://github.com/pluralsight/design-system/commit/2b250ef))
+
+
+### BREAKING CHANGES
+
+* **badge:** enable forwardRef
+
+
+
+
+
 ## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@5.0.0...@pluralsight/ps-design-system-badge@5.0.1) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-badge

@@ -1,11 +1,11 @@
-import Avatar from '@pluralsight/ps-design-system-avatar/react'
+import Avatar from '@pluralsight/ps-design-system-avatar/react.js'
 import core from '@pluralsight/ps-design-system-core'
-import Drawer from '@pluralsight/ps-design-system-drawer/react'
+import Drawer from '@pluralsight/ps-design-system-drawer/react.js'
 import PT from 'prop-types'
 import React from 'react'
-import Table from '@pluralsight/ps-design-system-table/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
+import Table from '@pluralsight/ps-design-system-table/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
 
 import {
   Chrome,
@@ -17,9 +17,8 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const PinkBox = props => (
   <div className="pink-box">
@@ -139,11 +138,14 @@ class InAppExample extends React.Component {
     )
   }
 }
+InAppExample.propTypes = {
+  themeName: PropTypes.string
+}
 InAppExample.defaultProps = {
   themeName: Theme.names.dark
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Table">
       <PageHeading packageName="table">Table</PageHeading>
@@ -480,4 +482,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

@@ -3,6 +3,101 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@3.0.1...@pluralsight/ps-design-system-dropdown@3.0.2) (2019-08-26)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
+## [3.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@3.0.0...@pluralsight/ps-design-system-dropdown@3.0.1) (2019-08-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@2.1.0...@pluralsight/ps-design-system-dropdown@3.0.0) (2019-08-09)
+
+
+### Build System
+
+* **dropdown:** move theme package to peerDeps ([10db734](https://github.com/pluralsight/design-system/commit/10db734))
+
+
+### BREAKING CHANGES
+
+* **dropdown:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@2.0.1...@pluralsight/ps-design-system-dropdown@2.1.0) (2019-08-06)
+
+
+### Features
+
+* **dropdown:** add onChange prop support ([bec3d55](https://github.com/pluralsight/design-system/commit/bec3d55))
+* **dropdown:** set initial value with value prop ([720f800](https://github.com/pluralsight/design-system/commit/720f800))
+* **dropdown:** support clearing value with value reset ([cf66bf6](https://github.com/pluralsight/design-system/commit/cf66bf6))
+
+
+
+
+
+## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@2.0.0...@pluralsight/ps-design-system-dropdown@2.0.1) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@1.0.16...@pluralsight/ps-design-system-dropdown@2.0.0) (2019-07-30)
+
+
+### Features
+
+* **dropdown:** support React.forwardRef ([5482bc5](https://github.com/pluralsight/design-system/commit/5482bc5))
+
+
+### BREAKING CHANGES
+
+* **dropdown:** Support React.forwardRef
+* **dropdown:** Remove innerRef; use ref instead
+
+
+
+
+
+## [1.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@1.0.15...@pluralsight/ps-design-system-dropdown@1.0.16) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
+## [1.0.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@1.0.14...@pluralsight/ps-design-system-dropdown@1.0.15) (2019-07-15)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
+## [1.0.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@1.0.13...@pluralsight/ps-design-system-dropdown@1.0.14) (2019-06-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
 ## [1.0.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@1.0.12...@pluralsight/ps-design-system-dropdown@1.0.13) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

@@ -1,12 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 
-import * as vars from '../vars'
-
-const anchorHover = {
-  color: 'inherit',
-  transition: `all ${core.motion.speedNormal}`,
-  opacity: '0.65'
-}
+import * as vars from '../vars/index.js'
 
 export default {
   '.psds-banner': {
@@ -20,7 +14,6 @@ export default {
     padding: `${core.layout.spacingXSmall} ${core.layout.spacingSmall}`
   },
 
-  // --color
   [`.psds-banner--color-${vars.colors.blue}`]: {
     color: core.colors.white,
     backgroundColor: core.colors.blue
@@ -38,32 +31,38 @@ export default {
     backgroundColor: core.colors.red
   },
 
-  // __text
   '.psds-banner__text': {
     flex: '1',
-    textAlign: 'center'
-  },
-  '.psds-banner__text a': {
-    color: 'inherit',
-    cursor: 'pointer',
-    textDecoration: 'underline'
-  },
-  '.psds-banner__text a:hover': anchorHover,
-  '.psds-banner__text a:active': anchorHover,
-  '.psds-banner__text a:focus': anchorHover,
+    textAlign: 'center',
 
-  // __dismiss
+    '& a': {
+      color: 'inherit',
+      cursor: 'pointer',
+      textDecoration: 'underline',
+
+      '&:hover, &:active, &:focus': {
+        color: 'inherit',
+        transition: `all ${core.motion.speedNormal}`,
+        opacity: '0.65'
+      }
+    }
+  },
+
   '.psds-banner__dismiss': {
+    position: 'relative',
     display: 'flex',
     alignItems: 'flex-start',
     background: 'none',
     border: 'none',
-    marginLeft: 'auto',
-    padding: `0 0 0 ${core.layout.spacingSmall}`,
-    color: core.colors.white,
-    cursor: 'pointer'
-  },
-  '.psds-banner__dismiss:hover': {
-    opacity: '0.65'
+    marginLeft: core.layout.spacingSmall,
+    padding: '0',
+    color: 'currentColor',
+    cursor: 'pointer',
+
+    '&:hover, &:focus, &:active': {
+      outline: 'none',
+      borderRadius: '2px',
+      boxShadow: '0 0 2px currentColor, inset 0 0 2px currentColor'
+    }
   }
 }

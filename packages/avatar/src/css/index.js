@@ -1,6 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 export default {
   '.psds-avatar': {
@@ -10,7 +10,7 @@ export default {
     position: 'relative',
     borderRadius: '100%'
   },
-  // --size
+
   [`.psds-avatar--size-${vars.sizes.xSmall}`]: {
     width: vars.widths.xSmall,
     height: vars.widths.xSmall,
@@ -36,7 +36,7 @@ export default {
     height: vars.widths.xLarge,
     fontSize: core.type.fontSizeXLarge
   },
-  // __image
+
   '.psds-avatar__image': {
     position: 'absolute',
     top: '0',
@@ -45,7 +45,7 @@ export default {
     height: '100%',
     objectFit: 'cover'
   },
-  // __initials
+
   '.psds-avatar__initials': {
     width: 'auto',
     height: '100%',

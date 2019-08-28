@@ -3,6 +3,94 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@5.1.3...@pluralsight/ps-design-system-actionmenu@5.1.4) (2019-08-26)
+
+
+### Bug Fixes
+
+* **actionmenu:** handle null child ([1551bea](https://github.com/pluralsight/design-system/commit/1551bea))
+
+
+
+
+
+## [5.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@5.1.2...@pluralsight/ps-design-system-actionmenu@5.1.3) (2019-08-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+## [5.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@5.1.1...@pluralsight/ps-design-system-actionmenu@5.1.2) (2019-08-09)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+## [5.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@5.1.0...@pluralsight/ps-design-system-actionmenu@5.1.1) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@5.0.1...@pluralsight/ps-design-system-actionmenu@5.1.0) (2019-07-30)
+
+
+### Bug Fixes
+
+* **actionmenu:** pass onSelect from root menu to nested ([c27c9b5](https://github.com/pluralsight/design-system/commit/c27c9b5))
+
+
+### Features
+
+* **actionmenu:** add onSelect and item value props ([afdeb46](https://github.com/pluralsight/design-system/commit/afdeb46))
+
+
+
+
+
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@5.0.0...@pluralsight/ps-design-system-actionmenu@5.0.1) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@4.1.13...@pluralsight/ps-design-system-actionmenu@5.0.0) (2019-07-15)
+
+
+### Bug Fixes
+
+* **actionmenu:** fixes regession when keyboarding ([32ce90e](https://github.com/pluralsight/design-system/commit/32ce90e))
+
+
+### Code Refactoring
+
+* **actionmenu:** bump required react minimum version to 16.8.6 ([d2829b5](https://github.com/pluralsight/design-system/commit/d2829b5))
+
+
+### BREAKING CHANGES
+
+* **actionmenu:** requires react 16.8.6 or higher
+
+
+
+
+
+## [4.1.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@4.1.12...@pluralsight/ps-design-system-actionmenu@4.1.13) (2019-06-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
 ## [4.1.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@4.1.11...@pluralsight/ps-design-system-actionmenu@4.1.12) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu

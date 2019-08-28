@@ -14,3 +14,12 @@ storiesOf('SearchInput', module)
   .add('default', _ => <SearchInputWithDefaults />)
   .add('when loading', _ => <SearchInputWithDefaults loading />)
   .add('with onClear prop', _ => <SearchInputWithDefaults onClear={noop} />)
+  .add('with TextInput-type props', _ => (
+    <SearchInputWithDefaults
+      onClear={noop}
+      error
+      label="Label"
+      placeholder="Le placeholder"
+      subLabel="Sub label"
+    />
+  ))

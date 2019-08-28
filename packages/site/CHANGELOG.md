@@ -3,6 +3,205 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@13.1.2...@pluralsight/ps-design-system-site@13.1.3) (2019-08-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-site
+
+
+
+
+
+## [13.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@13.1.1...@pluralsight/ps-design-system-site@13.1.2) (2019-08-27)
+
+
+### Bug Fixes
+
+* **site:** remove flash of unstyled content with custom document ([f7e942b](https://github.com/pluralsight/design-system/commit/f7e942b))
+
+
+
+
+
+## [13.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@13.1.0...@pluralsight/ps-design-system-site@13.1.1) (2019-08-26)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-site
+
+
+
+
+
+# [13.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@13.0.1...@pluralsight/ps-design-system-site@13.1.0) (2019-08-16)
+
+
+### Bug Fixes
+
+* **site:** add missing aria-label to icon modal ([4412ec0](https://github.com/pluralsight/design-system/commit/4412ec0))
+* **site:** restore missing deps recently removed ([eea0c02](https://github.com/pluralsight/design-system/commit/eea0c02))
+
+
+### Features
+
+* **site:** add icon figma link ([0f6e3b7](https://github.com/pluralsight/design-system/commit/0f6e3b7))
+
+
+
+
+
+## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@13.0.0...@pluralsight/ps-design-system-site@13.0.1) (2019-08-09)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-site
+
+
+
+
+
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.10.3...@pluralsight/ps-design-system-site@13.0.0) (2019-08-06)
+
+
+### Code Refactoring
+
+* **viewtoggle:** change onSelect param order ([7607cd0](https://github.com/pluralsight/design-system/commit/7607cd0))
+
+
+### Features
+
+* **site:** doc onChange in dropdown ([a8565b5](https://github.com/pluralsight/design-system/commit/a8565b5))
+
+
+### BREAKING CHANGES
+
+* **viewtoggle:** onSelect param order changed. the Event is the first parameter and the option index
+is the second
+
+
+
+
+
+## [12.10.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.10.2...@pluralsight/ps-design-system-site@12.10.3) (2019-08-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-site
+
+
+
+
+
+## [12.10.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.10.1...@pluralsight/ps-design-system-site@12.10.2) (2019-08-02)
+
+
+### Bug Fixes
+
+* **site:** update iconography page ([e5336d1](https://github.com/pluralsight/design-system/commit/e5336d1))
+
+
+
+
+
+## [12.10.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.10.0...@pluralsight/ps-design-system-site@12.10.1) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-site
+
+
+
+
+
+# [12.10.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.9.2...@pluralsight/ps-design-system-site@12.10.0) (2019-07-30)
+
+
+### Bug Fixes
+
+* **site:** fix number of icon sizes ([ff76705](https://github.com/pluralsight/design-system/commit/ff76705)), closes [#579](https://github.com/pluralsight/design-system/issues/579)
+
+
+### Features
+
+* **site:** add onSelect and value to actionmenu props and examples ([dbd3e52](https://github.com/pluralsight/design-system/commit/dbd3e52))
+
+
+
+
+
+## [12.9.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.9.1...@pluralsight/ps-design-system-site@12.9.2) (2019-07-18)
+
+
+### Bug Fixes
+
+* **site:** match code to working example of dropdown ([d51597d](https://github.com/pluralsight/design-system/commit/d51597d))
+
+
+
+
+
+## [12.9.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.9.0...@pluralsight/ps-design-system-site@12.9.1) (2019-07-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-site
+
+
+
+
+
+# [12.9.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.8.0...@pluralsight/ps-design-system-site@12.9.0) (2019-07-15)
+
+
+### Bug Fixes
+
+* **site:** make note page navigable ([1928451](https://github.com/pluralsight/design-system/commit/1928451))
+* **site:** spelling and typos ([588e4c2](https://github.com/pluralsight/design-system/commit/588e4c2))
+
+
+### Features
+
+* **site:** update Guildeline component for vert(1 col) examples ([5283101](https://github.com/pluralsight/design-system/commit/5283101))
+
+
+
+
+
+# [12.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.7.2...@pluralsight/ps-design-system-site@12.8.0) (2019-06-28)
+
+
+### Features
+
+* **site:** add label props to searchinput doc ([00163d4](https://github.com/pluralsight/design-system/commit/00163d4))
+
+
+
+
+
+## [12.7.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.7.1...@pluralsight/ps-design-system-site@12.7.2) (2019-06-26)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-site
+
+
+
+
+
+## [12.7.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.7.0...@pluralsight/ps-design-system-site@12.7.1) (2019-06-24)
+
+
+### Bug Fixes
+
+* **site:** add vars to examples needing them ([63c5028](https://github.com/pluralsight/design-system/commit/63c5028))
+
+
+
+
+
+# [12.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.6.1...@pluralsight/ps-design-system-site@12.7.0) (2019-06-20)
+
+
+### Bug Fixes
+
+* **note:** update metadata columns and squash overflow bug ([5e4d798](https://github.com/pluralsight/design-system/commit/5e4d798))
+
+
+### Features
+
+* **site:** add actionBarVisible to note proptypes ([38504c1](https://github.com/pluralsight/design-system/commit/38504c1))
+
+
+
+
+
 ## [12.6.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@12.6.0...@pluralsight/ps-design-system-site@12.6.1) (2019-06-04)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site

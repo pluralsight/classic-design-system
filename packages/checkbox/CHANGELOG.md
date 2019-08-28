@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@3.0.0...@pluralsight/ps-design-system-checkbox@4.0.0) (2019-08-09)
+
+
+### Build System
+
+* **checkbox:** move theme package to peerDeps ([620c5a3](https://github.com/pluralsight/design-system/commit/620c5a3))
+
+
+### BREAKING CHANGES
+
+* **checkbox:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@2.0.3...@pluralsight/ps-design-system-checkbox@3.0.0) (2019-08-02)
+
+
+### Code Refactoring
+
+* **checkbox:** update ref forwarding and dynamically filter props ([0137735](https://github.com/pluralsight/design-system/commit/0137735))
+
+
+### BREAKING CHANGES
+
+* **checkbox:** remove innerRef prop support; use ref prop instead
+
+
+
+
+
+## [2.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@2.0.2...@pluralsight/ps-design-system-checkbox@2.0.3) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [2.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@2.0.1...@pluralsight/ps-design-system-checkbox@2.0.2) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
 ## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@2.0.0...@pluralsight/ps-design-system-checkbox@2.0.1) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-checkbox

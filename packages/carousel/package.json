@@ -1,0 +1,43 @@
+{
+  "name": "@pluralsight/ps-design-system-carousel",
+  "version": "2.1.1",
+  "description": "Carousel UI Component for the Pluralsight Design System",
+  "license": "Apache-2.0",
+  "repository": "pluralsight/design-system",
+  "main": "index.js",
+  "module": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "run-s build:js build:css",
+    "build:css": "build-css --useGlamor",
+    "build:js": "babel --root-mode upward src --out-dir dist",
+    "build:watch": "npm run build:js -- --watch",
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "test": "jest",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "dependencies": {
+    "@pluralsight/ps-design-system-core": "^4.4.4",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.1.6",
+    "@pluralsight/ps-design-system-icon": "^13.0.0",
+    "react-transition-group": "^4.2.1",
+    "resize-observer-polyfill": "^1.5.1"
+  },
+  "peerDependencies": {
+    "@pluralsight/ps-design-system-normalize": "^3.1.4",
+    "@pluralsight/ps-design-system-theme": "^3.0.2",
+    "glamor": "^2.x.x",
+    "react": ">=16.8.6 < 17.0.0"
+  },
+  "devDependencies": {
+    "@pluralsight/ps-design-system-actionmenu": "^5.1.4",
+    "@pluralsight/ps-design-system-build": "^1.10.1",
+    "@pluralsight/ps-design-system-card": "^11.0.0",
+    "@pluralsight/ps-design-system-storybook-addon-center": "^2.0.5",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^4.0.0",
+    "@pluralsight/ps-design-system-theme": "^3.0.3"
+  }
+}

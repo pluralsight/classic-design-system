@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-form",
-  "version": "2.0.2",
+  "version": "3.0.3",
   "description": "Design system components for form layout",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -9,14 +9,12 @@
   "module": "index.js",
   "scripts": {
     "build": "run-s build:js build:css",
-    "build-storybook": "build-storybook",
-    "build:css": "build-css",
-    "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build:css": "build-css --useGlamor",
+    "build:js": "babel src --root-mode upward --out-dir dist",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
-    "test": "../../node_modules/.bin/jest",
-    "test:updateSnapshot": "npm run test -- --updateSnapshot",
+    "test": "jest",
     "test:watch": "npm run test -- --watchAll"
   },
   "keywords": [
@@ -25,37 +23,30 @@
     "form ui"
   ],
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.4.2",
-    "@pluralsight/ps-design-system-theme": "^3.0.1",
-    "@pluralsight/ps-design-system-util": "^2.0.4",
+    "@pluralsight/ps-design-system-core": "^4.4.4",
+    "@pluralsight/ps-design-system-util": "^2.0.5",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^3.0.24",
+    "@pluralsight/ps-design-system-normalize": "^3.1.4",
+    "@pluralsight/ps-design-system-theme": "^3.0.2",
     "glamor": "^2.20.0",
     "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^4.1.12",
-    "@pluralsight/ps-design-system-build": "^1.9.2",
-    "@pluralsight/ps-design-system-button": "^12.0.4",
-    "@pluralsight/ps-design-system-checkbox": "^2.0.1",
-    "@pluralsight/ps-design-system-datepicker": "^2.0.2",
-    "@pluralsight/ps-design-system-dropdown": "^1.0.13",
-    "@pluralsight/ps-design-system-radio": "^2.0.1",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^2.0.4",
-    "@pluralsight/ps-design-system-switch": "^3.0.1",
-    "@pluralsight/ps-design-system-tag": "^3.0.3",
-    "@pluralsight/ps-design-system-text": "^12.0.1",
-    "@pluralsight/ps-design-system-textarea": "^2.0.1",
-    "@pluralsight/ps-design-system-textinput": "^2.0.2",
-    "@storybook/addon-actions": "^4.0.0",
-    "@storybook/addon-storyshots": "^4.0.0",
-    "@storybook/react": "^4.0.0",
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "npm-run-all": "^4.1.2"
+    "@pluralsight/ps-design-system-actionmenu": "^5.1.4",
+    "@pluralsight/ps-design-system-build": "^1.10.1",
+    "@pluralsight/ps-design-system-button": "^13.0.0",
+    "@pluralsight/ps-design-system-checkbox": "^4.0.0",
+    "@pluralsight/ps-design-system-datepicker": "^4.0.0",
+    "@pluralsight/ps-design-system-dropdown": "^3.0.2",
+    "@pluralsight/ps-design-system-radio": "^3.0.0",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^4.0.0",
+    "@pluralsight/ps-design-system-switch": "^4.0.0",
+    "@pluralsight/ps-design-system-tag": "^4.0.0",
+    "@pluralsight/ps-design-system-text": "^13.0.0",
+    "@pluralsight/ps-design-system-textarea": "^3.0.0",
+    "@pluralsight/ps-design-system-textinput": "^3.0.0",
+    "@pluralsight/ps-design-system-theme": "^3.0.3"
   }
 }

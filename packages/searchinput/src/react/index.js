@@ -18,7 +18,7 @@ const styles = {
 }
 
 const SearchInput = withTheme(props => {
-  const { loading, onClear, placeholder, label, subLabel, ...rest } = props
+  const { loading, onClear, ...rest } = props
   const inputRef = useRef()
 
   const handleClear = evt => {
@@ -43,7 +43,6 @@ const SearchInput = withTheme(props => {
       fieldAfter={clearBtn}
       icon={icon}
       innerRef={inputRef}
-      placeholder={placeholder}
       type="search"
       {...rest}
     />

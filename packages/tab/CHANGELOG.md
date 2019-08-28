@@ -3,6 +3,74 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.8...@pluralsight/ps-design-system-tab@12.0.0) (2019-08-09)
+
+
+### Build System
+
+* **tab:** move theme package to peerDeps ([421494a](https://github.com/pluralsight/design-system/commit/421494a))
+
+
+### BREAKING CHANGES
+
+* **tab:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+## [11.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.7...@pluralsight/ps-design-system-tab@11.0.8) (2019-08-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [11.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.6...@pluralsight/ps-design-system-tab@11.0.7) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [11.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.5...@pluralsight/ps-design-system-tab@11.0.6) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [11.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.4...@pluralsight/ps-design-system-tab@11.0.5) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [11.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.3...@pluralsight/ps-design-system-tab@11.0.4) (2019-06-26)
+
+
+### Bug Fixes
+
+* **tab:** remove vars reference ([e2d4d0a](https://github.com/pluralsight/design-system/commit/e2d4d0a))
+
+
+
+
+
+## [11.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.2...@pluralsight/ps-design-system-tab@11.0.3) (2019-06-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
 ## [11.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.1...@pluralsight/ps-design-system-tab@11.0.2) (2019-06-04)
 
 

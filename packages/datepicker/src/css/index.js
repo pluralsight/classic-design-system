@@ -30,10 +30,9 @@ export default {
     border: 'none',
     display: 'inline-block',
     background: 'none',
-    color: core.colors.gray05
-  },
-  '.psds-date-picker__sub-field:focus': {
-    outline: 'none'
+    color: core.colors.gray05,
+
+    '&:focus': { outline: 'none' }
   },
   [`.psds-date-picker__sub-field--appearance-${vars.appearances.subtle}`]: {
     color: core.colors.gray01
@@ -44,9 +43,7 @@ export default {
     border: 'none',
     color: core.colors.gray05
   },
-  [`.psds-date-picker__sub-field-divider--appearance-${
-    vars.appearances.subtle
-  }`]: {
+  [`.psds-date-picker__sub-field-divider--appearance-${vars.appearances.subtle}`]: {
     color: core.colors.gray01
   },
 
@@ -58,21 +55,15 @@ export default {
     alignItems: 'center',
     width: '100%',
     height: '40px',
-    minWidth: `calc(192px + ${iconVars.widths.medium} + ${
-      core.layout.spacingXSmall
-    })`,
-    padding: `0 calc(${core.layout.spacingXSmall} + ${
-      iconVars.widths.medium
-    } + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`,
+    minWidth: `calc(192px + ${iconVars.widths.medium} + ${core.layout.spacingXSmall})`,
+    padding: `0 calc(${core.layout.spacingXSmall} + ${iconVars.widths.medium} + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`,
     background: core.colors.bone
   },
   [`.psds-date-picker__field-container.psds-theme--${themeNames.light}`]: {
     background: core.colors.white,
     border: `1px solid ${core.colors.gray02}`
   },
-  [`.psds-date-picker__field-container--appearance-${
-    vars.appearances.subtle
-  }`]: {
+  [`.psds-date-picker__field-container--appearance-${vars.appearances.subtle}`]: {
     color: core.colors.gray01,
     background: core.colors.gray06,
     border: `1px solid ${core.colors.gray03}`
@@ -126,9 +117,7 @@ export default {
   // __error
   '.psds-date-picker__error': {
     position: 'absolute',
-    right: `calc(-1 * (${iconVars.widths.medium} + ${
-      core.layout.spacingXSmall
-    }))`,
+    right: `calc(-1 * (${iconVars.widths.medium} + ${core.layout.spacingXSmall}))`,
     display: 'flex',
     alignItems: 'center',
     color: core.colors.red,
@@ -204,17 +193,15 @@ export default {
     lineHeight: '1em',
     fontWeight: core.type.fontWeightMedium,
     background: 'none',
-    cursor: 'pointer'
-  },
-  '.psds-date-picker__calendar__day:hover': {
-    border: `3px solid ${core.colors.blue}`
+    cursor: 'pointer',
+
+    '&:hover': { border: `3px solid ${core.colors.blue}` }
   },
   '.psds-date-picker__calendar__day--selected': {
     background: core.colors.blue,
-    color: core.colors.white
-  },
-  '.psds-date-picker__calendar__day--selected:hover': {
-    border: '3px solid transparent'
+    color: core.colors.white,
+
+    '&:hover': { border: '3px solid transparent' }
   },
 
   // __calendar__skipped-day

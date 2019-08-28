@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@6.0.8...@pluralsight/ps-design-system-link@7.0.0) (2019-08-16)
+
+
+### Features
+
+* **link:** enable React.forwardRef ([ce30cf9](https://github.com/pluralsight/design-system/commit/ce30cf9))
+
+
+### BREAKING CHANGES
+
+* **link:** enable React.forwardRef
+
+
+
+
+
+## [6.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@6.0.7...@pluralsight/ps-design-system-link@6.0.8) (2019-08-09)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
+## [6.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@6.0.6...@pluralsight/ps-design-system-link@6.0.7) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
+## [6.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@6.0.5...@pluralsight/ps-design-system-link@6.0.6) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
 ## [6.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@6.0.4...@pluralsight/ps-design-system-link@6.0.5) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-link

@@ -1,11 +1,12 @@
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
+
 import React from 'react'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 
-import Dropdown from '..'
+import Dropdown from '../index.js'
 
 const Empty = () => null
 
@@ -94,12 +95,70 @@ storiesOf('whitelist', module)
       name="myFieldNameOfPower"
     />
   ))
-  .add('onChange', _ => (
-    <DropdownWithDefaults
-      placeholder="Change me"
-      onChange={action('I changed')}
-    />
-  ))
+  .add('onChange', _ => {
+    function ChangeStory() {
+      const [value, setValue] = React.useState('two')
+
+      function handleChange(evt, value, label) {
+        setValue(value)
+      }
+
+      return (
+        <div>
+          <div style={{ color: '#ababab' }}>Value: {value}</div>
+          <Dropdown
+            placeholder="Change me"
+            label="Thing to change"
+            menu={
+              <ActionMenu>
+                <ActionMenu.Item value="one">One item</ActionMenu.Item>
+                <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+                <ActionMenu.Item value="three">Three item</ActionMenu.Item>
+              </ActionMenu>
+            }
+            onChange={handleChange}
+            value={value}
+          />
+        </div>
+      )
+    }
+    return <ChangeStory />
+  })
+  .add('clear', _ => {
+    function ClearStory(props) {
+      const [value, setValue] = React.useState('two')
+
+      function handleChange(evt, value, label) {
+        setValue(value)
+      }
+
+      function handleClear() {
+        setValue(null)
+      }
+
+      return (
+        <div>
+          <div style={{ color: '#ababab' }}>Value: {value}</div>
+          <button onClick={handleClear}>Clear</button>
+          <Dropdown
+            placeholder="Change me"
+            label="Thing to change"
+            menu={
+              <ActionMenu>
+                <ActionMenu.Item value="one">One item</ActionMenu.Item>
+                <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+                <ActionMenu.Item value="three">Three item</ActionMenu.Item>
+              </ActionMenu>
+            }
+            onChange={handleChange}
+            value={value}
+          />
+        </div>
+      )
+    }
+
+    return <ClearStory />
+  })
 
 storiesOf('layouts', module)
   .add('full width', _ => (
@@ -373,3 +432,25 @@ storiesOf('props whitelist', module).add('title', _ => (
     }
   />
 ))
+
+function AutofocusStory(props) {
+  const ref = React.createRef()
+
+  React.useEffect(_ => {
+    ref.current.focus()
+  })
+
+  return <Dropdown {...props} ref={ref} menu={<Empty />} />
+}
+
+storiesOf('focus', module)
+  .add('onFocus', _ => <DropdownWithDefaults onFocus={action('focused')} />)
+  .add('onBlur', _ => <DropdownWithDefaults onBlur={action('blurred')} />)
+  .add('disabled', _ => (
+    <DropdownWithDefaults
+      disabled
+      onBlur={action('blurred')}
+      onFocus={action('focused')}
+    />
+  ))
+  .add('autofocus with ref', _ => <AutofocusStory />)

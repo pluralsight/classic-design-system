@@ -1,28 +1,23 @@
 {
   "name": "@pluralsight/ps-design-system-util",
-  "version": "2.0.4",
-  "description": "Runtime dependencies for utilitarian tasks.  Analogous to a lodash.",
+  "version": "2.0.5",
+  "description": "Runtime dependencies for utilitarian tasks. Analogous to a lodash.",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build": "babel --root-mode upward src --out-dir dist",
     "build:watch": "npm run build -- --watch",
-    "test": "../../node_modules/.bin/jest",
+    "test": "jest",
     "test:watch": "npm run test -- --watch",
     "prepublish": "npm run build"
   },
   "keywords": [],
   "dependencies": {
-    "prop-types": "^15.7.0"
+    "prop-types": "^15.7.2"
   },
   "peerDependencies": {
     "react": ">=16.3.0 < 17.0.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-2": "^6.24.1"
   }
 }

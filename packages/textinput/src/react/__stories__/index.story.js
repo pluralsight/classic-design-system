@@ -1,12 +1,12 @@
 import { action } from '@storybook/addon-actions'
-import addons from '@storybook/addons'
+import { storiesOf } from '@storybook/react'
+
+import React from 'react'
+
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import TextInput from '..'
+import TextInput from '../index.js'
 
 const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
@@ -14,9 +14,14 @@ const PaddingDecorator = storyFn => (
 
 storiesOf('labels', module)
   .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
   .add('none', _ => <TextInput />)
   .add('placeholder', _ => <TextInput placeholder="some placeholder" />)
+  .add('long placeholder', _ => (
+    <TextInput
+      placeholder="some placeholder that goes on forever when the little things can't handle it"
+      style={{ width: '100%' }}
+    />
+  ))
   .add('label', _ => <TextInput label="Some label" />)
   .add('subLabel', _ => <TextInput subLabel="Some sublabel" />)
   .add('label and subLabel', _ => (
@@ -38,9 +43,10 @@ storiesOf('labels', module)
     />
   ))
 
-const appearanceStory = storiesOf('appearance', module)
-  .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
+const appearanceStory = storiesOf('appearance', module).addDecorator(
+  PaddingDecorator
+)
+
 Object.keys(TextInput.appearances).forEach(appearance =>
   Object.keys(TextInput.iconAligns).forEach(iconAlign =>
     appearanceStory.add(`${appearance} w/ iconAlign ${iconAlign}`, _ => (
@@ -61,7 +67,6 @@ Object.keys(TextInput.appearances).forEach(appearance =>
 
 storiesOf('after field', module)
   .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
   .add('w/icon', _ => (
     <TextInput
       fieldAfter={<Icon id={Icon.ids.close} />}
@@ -71,7 +76,6 @@ storiesOf('after field', module)
 
 storiesOf('disabled', module)
   .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
   .add('compare', _ => (
     <div>
       <TextInput
@@ -97,7 +101,6 @@ storiesOf('disabled', module)
 
 storiesOf('whitelist', module)
   .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
   .add('title', _ => <TextInput title="some title" />)
   .add('type=password', _ => (
     <TextInput placeholder="Password" type="password" />
@@ -112,7 +115,6 @@ storiesOf('whitelist', module)
 
 storiesOf('layouts', module)
   .addDecorator(PaddingDecorator)
-  .addDecorator(themeDecorator(addons))
   .add('full width', _ => (
     <div style={{ border: '1px solid blue', width: '500px' }}>
       <TextInput label="First" style={{ display: 'block', width: '100%' }} />

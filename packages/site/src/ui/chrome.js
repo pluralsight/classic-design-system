@@ -8,7 +8,7 @@ import {
   MobileMenuBar,
   OpenIssuePrompt,
   SideNav
-} from './index'
+} from './index.js'
 
 class Chrome extends React.Component {
   constructor(props) {

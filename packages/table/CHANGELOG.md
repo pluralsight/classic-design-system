@@ -3,6 +3,88 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@5.0.1...@pluralsight/ps-design-system-table@5.0.2) (2019-08-27)
+
+
+### Bug Fixes
+
+* allow basic nodes inside of column headers and tooltips ([b0be205](https://github.com/pluralsight/design-system/commit/b0be205))
+* move the isRequired restriction to cover the whole prop ([714278c](https://github.com/pluralsight/design-system/commit/714278c))
+* simplify PropTypes declaration for ColumnHeader.children ([497f745](https://github.com/pluralsight/design-system/commit/497f745))
+
+
+
+
+
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@5.0.0...@pluralsight/ps-design-system-table@5.0.1) (2019-08-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@4.0.7...@pluralsight/ps-design-system-table@5.0.0) (2019-08-09)
+
+
+### Build System
+
+* **table:** move theme package to peerDeps ([917194b](https://github.com/pluralsight/design-system/commit/917194b))
+
+
+### BREAKING CHANGES
+
+* **table:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+## [4.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@4.0.6...@pluralsight/ps-design-system-table@4.0.7) (2019-08-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [4.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@4.0.5...@pluralsight/ps-design-system-table@4.0.6) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [4.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@4.0.4...@pluralsight/ps-design-system-table@4.0.5) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [4.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@4.0.3...@pluralsight/ps-design-system-table@4.0.4) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [4.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@4.0.2...@pluralsight/ps-design-system-table@4.0.3) (2019-06-20)
+
+
+### Bug Fixes
+
+* **table:** apply theme class to cell ([7c4ccf1](https://github.com/pluralsight/design-system/commit/7c4ccf1))
+* **table:** column header hover state contrast ok in light theme ([cc9bf9c](https://github.com/pluralsight/design-system/commit/cc9bf9c)), closes [#540](https://github.com/pluralsight/design-system/issues/540)
+
+
+
+
+
 ## [4.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@4.0.1...@pluralsight/ps-design-system-table@4.0.2) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table

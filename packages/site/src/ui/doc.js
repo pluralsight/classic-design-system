@@ -1,11 +1,11 @@
 import core from '@pluralsight/ps-design-system-core'
-import Markdown from 'react-markdown/with-html'
+import Markdown from 'react-markdown/with-html.js'
 import PropTypes from 'prop-types'
 import React from 'react'
-import Router from 'next/router'
+import Router from 'next/router.js'
 
-import CodeMirrorCss from '../../vendor/codemirror-css'
-import CodeMirrorPsTheme from './codemirror-ps-theme'
+import CodeMirrorCss from '../../vendor/codemirror-css.js'
+import CodeMirrorPsTheme from './codemirror-ps-theme.js'
 
 let CodeMirror
 let codemirrorLoaded = false

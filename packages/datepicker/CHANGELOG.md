@@ -3,6 +3,71 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@3.0.0...@pluralsight/ps-design-system-datepicker@4.0.0) (2019-08-16)
+
+
+### Code Refactoring
+
+* **datepicker:** update to use reactv16 style patterns/syntax ([467ce12](https://github.com/pluralsight/design-system/commit/467ce12))
+
+
+### BREAKING CHANGES
+
+* **datepicker:** innerRef is no longer available in favor of using ref/forwardRef
+
+
+
+
+
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@2.0.6...@pluralsight/ps-design-system-datepicker@3.0.0) (2019-08-09)
+
+
+### Build System
+
+* **datepicker:** move theme package to peerDeps ([e9d2554](https://github.com/pluralsight/design-system/commit/e9d2554))
+
+
+### BREAKING CHANGES
+
+* **datepicker:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+## [2.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@2.0.5...@pluralsight/ps-design-system-datepicker@2.0.6) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
+## [2.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@2.0.4...@pluralsight/ps-design-system-datepicker@2.0.5) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
+## [2.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@2.0.3...@pluralsight/ps-design-system-datepicker@2.0.4) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
+## [2.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@2.0.2...@pluralsight/ps-design-system-datepicker@2.0.3) (2019-07-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
 ## [2.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@2.0.1...@pluralsight/ps-design-system-datepicker@2.0.2) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker

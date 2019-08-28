@@ -3,7 +3,7 @@ import React from 'react'
 import css from '../css/index.js'
 import * as vars from '../vars/index.js'
 
-const {{componentName}} = props => <div>{{componentName}}</div>
+const {{componentName}} = props => <div {...props}>{{componentName}}</div>
 
 {{componentName}}.propTypes = {}
 

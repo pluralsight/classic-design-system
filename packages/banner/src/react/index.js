@@ -1,44 +1,36 @@
-import * as glamor from 'glamor'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import { css } from 'glamor'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import css from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const styles = {
   banner: ({ color }) =>
-    glamor.css(css['.psds-banner'], css[`.psds-banner--color-${color}`]),
-  dismiss: () =>
-    glamor.css(css['.psds-banner__dismiss'], {
-      ':hover': css['.psds-banner__dismiss:hover']
-    }),
-  text: () =>
-    glamor.css(css['.psds-banner__text'], {
-      '& a': css['.psds-banner__text a'],
-      '& a:hover': css['.psds-banner__text a:hover'],
-      '& a:active': css['.psds-banner__text a:active'],
-      '& a:focus': css['.psds-banner__text a:focus']
-    })
+    css(stylesheet['.psds-banner'], stylesheet[`.psds-banner--color-${color}`]),
+  dismiss: () => css(stylesheet['.psds-banner__dismiss']),
+  text: () => css(stylesheet['.psds-banner__text'])
 }
 
-const Banner = props => (
-  <div
-    {...styles.banner(props)}
-    {...(props.style ? { style: props.style } : null)}
-    {...(props.className ? { className: props.className } : null)}
-  >
-    <div {...styles.text(props)}>{props.children}</div>
-    {props.onClick && (
-      <button {...styles.dismiss(props)} onClick={props.onClick}>
-        <Icon id={Icon.ids.close} />
-      </button>
-    )}
-  </div>
-)
+const Banner = React.forwardRef((props, ref) => {
+  const { onClick, ...rest } = props
+  return (
+    <div {...styles.banner(props)} {...filterReactProps(rest)} ref={ref}>
+      <div {...styles.text(props)}>{props.children}</div>
+      {props.onClick && (
+        <button {...styles.dismiss(props)} onClick={onClick}>
+          <Icon id={Icon.ids.close} />
+        </button>
+      )}
+    </div>
+  )
+})
+
 Banner.displayName = 'Banner'
 Banner.propTypes = {
-  color: PropTypes.oneOf(Object.keys(vars.colors)),
+  color: PropTypes.oneOf(Object.keys(vars.colors).map(key => vars.colors[key])),
   children: PropTypes.node.isRequired,
   onClick: PropTypes.func
 }

@@ -2,43 +2,35 @@ import * as glamor from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import core from '@pluralsight/ps-design-system-core'
+import { names } from '@pluralsight/ps-design-system-theme/react'
 
-import Swatch from './swatch'
+import { EVENTS } from './constants.js'
+import Swatch from './swatch.js'
 
 const styles = {
-  panel: props => glamor.css({ padding: '10px 15px' })
+  panel: () => glamor.css({ padding: core.layout.spacingXSmall })
 }
 
-class ThemePanel extends React.Component {
-  constructor (props) {
-    super(props)
-    this.handleThemeSelect = this.handleThemeSelect.bind(this)
+export default function ThemePanel({ active, api, ...props }) {
+  function handleThemeSelect(evt, themeName) {
+    api.emit(EVENTS.change, themeName)
   }
 
-  handleThemeSelect (event, themeName) {
-    this.props.channel.emit('theme', themeName)
-    this.props.api.setQueryParams({ themeName })
-  }
+  if (!active) return null
 
-  render () {
-    return (
-      <div {...styles.panel(this.props)} {...this.props}>
-        {Object.values(Theme.names).map(name => (
-          <Swatch key={name} name={name} onSelect={this.handleThemeSelect} />
-        ))}
-      </div>
-    )
-  }
+  return (
+    <div {...styles.panel(props)} {...props}>
+      {Object.values(names).map(name => (
+        <Swatch key={name} name={name} onSelect={handleThemeSelect} />
+      ))}
+    </div>
+  )
 }
 
 ThemePanel.propTypes = {
+  active: PropTypes.bool.isRequired,
   api: PropTypes.shape({
-    setQueryParams: PropTypes.func.isRequired
-  }).isRequired,
-  channel: PropTypes.shape({
     emit: PropTypes.func.isRequired
   }).isRequired
 }
-
-export default ThemePanel

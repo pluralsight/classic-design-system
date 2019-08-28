@@ -1,9 +1,9 @@
 import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
-import SearchInput from '@pluralsight/ps-design-system-searchinput/react'
-import Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import SearchInput from '@pluralsight/ps-design-system-searchinput/react.js'
+import Text from '@pluralsight/ps-design-system-text/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
   Chrome,
@@ -14,11 +14,10 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Search Input">
       <PageHeading packageName="searchinput">Search Input</PageHeading>
@@ -37,11 +36,25 @@ export default withServerProps(_ => (
       <PropTypes
         props={[
           PropTypes.row([
+            'label',
+            'string',
+            null,
+            null,
+            'non-standard above-field label'
+          ]),
+          PropTypes.row([
             'onClear',
             'function',
             null,
             null,
             'show clear button and trigger when button is clicked'
+          ]),
+          PropTypes.row([
+            'error',
+            'boolean',
+            null,
+            <code>false</code>,
+            'show error state'
           ]),
           PropTypes.row([
             'loading',
@@ -55,7 +68,14 @@ export default withServerProps(_ => (
             'string',
             null,
             null,
-            'in-field usage hint'
+            'standard in-field usage hint'
+          ]),
+          PropTypes.row([
+            'subLabel',
+            'string',
+            null,
+            null,
+            'non-standard below-field label or error message'
           ])
         ]}
       />
@@ -127,4 +147,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

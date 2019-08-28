@@ -1,15 +1,8 @@
-import core from '@pluralsight/ps-design-system-core'
+import React from 'react'
 
-import {
-  Chrome,
-  Content,
-  Doc,
-  P,
-  PageHeading,
-  withServerProps
-} from '../../src/ui'
+import { Chrome, Content, Doc, PageHeading } from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Install">
       <PageHeading>Contribute Code</PageHeading>
@@ -26,7 +19,7 @@ One of the [main goals](/) of the Design System is visual consistency and a shar
 Don’t feel bad if all good ideas don’t get included in the Design System or if we ask for changes during reviews.  We’re glad you’re here to help.  That's why we're here too!  Our shared goal is the betterment of the Design System and Pluralsight product as a whole.
 
 ## One-time code drop
-It’s totally ok to make a contribution where you can help and then be done with it the next day.  You don’t have to share in the maintenance.  You don't have to stick aruond forever if you're not ready to call the Design System home yet.  You can make a contribution and then move on.  Come back and help when you’re ready again.
+It’s totally ok to make a contribution where you can help and then be done with it the next day.  You don’t have to share in the maintenance.  You don't have to stick around forever if you're not ready to call the Design System home yet.  You can make a contribution and then move on.  Come back and help when you’re ready again.
 
 ## Become a Partner
 We highly value contributors who make major contributions over time, thus becoming a trusted Partner with shared ownership in a part of the Design System.  You become someone with deep knowledge and expertise around some parts of the Design System.  You help the Design System product and project become stronger.  It’s going to be awesome to spend time and effort with you on the project, look back, and see the significant contributions that you’ve made!
@@ -66,4 +59,4 @@ It worked!  Let’s do that again.
 `}</Doc>
     </Content>
   </Chrome>
-))
+)

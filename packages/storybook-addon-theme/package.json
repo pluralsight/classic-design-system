@@ -1,13 +1,13 @@
 {
   "name": "@pluralsight/ps-design-system-storybook-addon-theme",
-  "version": "2.0.4",
+  "version": "4.0.0",
   "description": "Storybook addon for Theme switching",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist --ignore spec.js",
+    "build": "babel --root-mode upward src --out-dir dist",
     "build:watch": "npm run build -- --watch",
     "prepublish": "npm run build"
   },
@@ -15,19 +15,16 @@
     "react-storybook"
   ],
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.4.2",
-    "@pluralsight/ps-design-system-theme": "^3.0.1",
-    "glamor": "^2.20.0",
-    "prop-types": "^15.7.0"
+    "@pluralsight/ps-design-system-core": "^4.4.4",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/core-events": "^5.1.9"
   },
   "peerDependencies": {
-    "@storybook/addons": "^4.0.0",
+    "@pluralsight/ps-design-system-theme": "^3.0.2",
+    "glamor": "^2.20.0",
     "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1"
+    "@pluralsight/ps-design-system-theme": "^3.0.3"
   }
 }

@@ -39,6 +39,84 @@ exports[`Storyshots js above 1`] = `
 </div>
 `;
 
+exports[`Storyshots js aboveLeft 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    aboveLeft
+  </div>
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "0px",
+        "position": "absolute",
+        "top": "-12px",
+      }
+    }
+  >
+    The tip
+    <div
+      aria-hidden={true}
+      data-css-mya4sa=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots js aboveRight 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    aboveRight
+  </div>
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "0px",
+        "position": "absolute",
+        "top": "-12px",
+      }
+    }
+  >
+    The tip
+    <div
+      aria-hidden={true}
+      data-css-8n8xau=""
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots js below 1`] = `
 <div>
   <div
@@ -73,6 +151,84 @@ exports[`Storyshots js below 1`] = `
     <div
       aria-hidden={true}
       data-css-ni1fj4=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots js belowLeft 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    belowLeft
+  </div>
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "0px",
+        "position": "absolute",
+        "top": "12px",
+      }
+    }
+  >
+    The tip
+    <div
+      aria-hidden={true}
+      data-css-14lk3e7=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots js belowRight 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    belowRight
+  </div>
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "0px",
+        "position": "absolute",
+        "top": "12px",
+      }
+    }
+  >
+    The tip
+    <div
+      aria-hidden={true}
+      data-css-4vi0t8=""
     />
   </div>
 </div>
@@ -183,6 +339,76 @@ Array [
 ]
 `;
 
+exports[`Storyshots react AboveLeft 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    &lt;AboveLeft/&gt;
+  </div>,
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "0px",
+        "position": "absolute",
+        "top": "-12px",
+      }
+    }
+  >
+    The tip
+  </div>,
+]
+`;
+
+exports[`Storyshots react AboveRight 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    &lt;AboveRight/&gt;
+  </div>,
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "0px",
+        "position": "absolute",
+        "top": "-12px",
+      }
+    }
+  >
+    The tip
+  </div>,
+]
+`;
+
 exports[`Storyshots react Below 1`] = `
 Array [
   <div
@@ -202,6 +428,76 @@ Array [
     }
   >
     &lt;Below/&gt;
+  </div>,
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "0px",
+        "position": "absolute",
+        "top": "12px",
+      }
+    }
+  >
+    The tip
+  </div>,
+]
+`;
+
+exports[`Storyshots react BelowLeft 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    &lt;BelowLeft/&gt;
+  </div>,
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "left": "0px",
+        "position": "absolute",
+        "top": "12px",
+      }
+    }
+  >
+    The tip
+  </div>,
+]
+`;
+
+exports[`Storyshots react BelowRight 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #e80a89",
+        "color": "#e80a89",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "width": "200px",
+      }
+    }
+  >
+    &lt;BelowRight/&gt;
   </div>,
   <div
     data-css-1luw3o6=""

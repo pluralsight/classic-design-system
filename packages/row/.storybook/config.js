@@ -1,10 +1,10 @@
-import React from 'react'
-import addons from '@storybook/addons'
-import { addDecorator, configure } from '@storybook/react'
+import requireContext from 'require-context.macro'
 
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
+import { addDecorator, configure } from '@storybook/react'
+import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
+import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 addDecorator(fn => (
   <div
@@ -16,10 +16,12 @@ addDecorator(fn => (
     {fn()}
   </div>
 ))
-addDecorator(themeDecorator(addons))
+addDecorator(themeDecorator)
 
-function loadStory() {
-  require('../src/react/__stories__/index.story.js')
+const req = requireContext('../src', true, /\.story\.js$/)
+
+function loadStories() {
+  req.keys().forEach(filename => req(filename))
 }
 
-configure(loadStory, module)
+configure(loadStories, module)

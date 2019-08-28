@@ -1,8 +1,8 @@
 import core from '@pluralsight/ps-design-system-core'
-import Button from '@pluralsight/ps-design-system-button/react'
-import Dialog from '@pluralsight/ps-design-system-dialog/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import { transparentize } from '@pluralsight/ps-design-system-util/color'
+import Button from '@pluralsight/ps-design-system-button/react.js'
+import Dialog from '@pluralsight/ps-design-system-dialog/react.js'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import { transparentize } from '@pluralsight/ps-design-system-util/color.js'
 import React from 'react'
 
 import {
@@ -16,8 +16,7 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
+  SectionHeading
 } from '../../src/ui/index.js'
 
 const ContentGridVisual = _ => (
@@ -124,7 +123,7 @@ const ModalIframe = _ => (
   </div>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Dialog">
       <PageHeading packageName="dialog">Dialog</PageHeading>
@@ -221,7 +220,7 @@ export default withServerProps(_ => (
       <P>
         Dialogs can be shown with or without a tail (a directional indicator).
         To make the tail appear, use a{' '}
-        <Text.Code>Dialog.tailPositions</Text.Code> option.tion.
+        <Text.Code>Dialog.tailPositions</Text.Code> option.
       </P>
       <Example.React
         includes={{ Dialog, ExampleContent }}
@@ -243,7 +242,7 @@ export default withServerProps(_ => (
         close button, clicking the overlay (in the case of a{' '}
         <Text.Code>modal</Text.Code> Dialog), and pressing the escape key. One
         or all of these methods, if available, will call the{' '}
-        <Text.Code>onClose</Text.Code> function when triggered.ered.
+        <Text.Code>onClose</Text.Code> function when triggered.
       </P>
       <Example.React
         includes={{ Dialog, ExampleContent }}
@@ -285,6 +284,7 @@ export default withServerProps(_ => (
         By that measure, place your actions at the bottom/right, with the
         primary action on the right.{' '}
       </P>
+
       <Guideline
         do={
           <Dialog disableFocusOnMount>
@@ -401,7 +401,7 @@ export default withServerProps(_ => (
       />
 
       <P>
-        Be explicit as possible when writing dialog buttons. Use affirimitive
+        Be explicit as possible when writing dialog buttons. Use affirmative
         action text to clearly indicate the outcome of the decision. [
         <Link
           appearance={Link.appearances.subtle}
@@ -455,4 +455,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

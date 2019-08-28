@@ -1,20 +1,21 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
-import Banner from '@pluralsight/ps-design-system-banner/react'
-import Button from '@pluralsight/ps-design-system-button/react'
-import Checkbox from '@pluralsight/ps-design-system-checkbox/react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
+import Banner from '@pluralsight/ps-design-system-banner/react.js'
+import Button from '@pluralsight/ps-design-system-button/react.js'
+import Checkbox from '@pluralsight/ps-design-system-checkbox/react.js'
 import core from '@pluralsight/ps-design-system-core'
-import DatePicker from '@pluralsight/ps-design-system-datepicker/react'
-import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
-import Form from '@pluralsight/ps-design-system-form/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import Tag from '@pluralsight/ps-design-system-tag/react'
-import Text from '@pluralsight/ps-design-system-text/react'
-import TextInput from '@pluralsight/ps-design-system-textinput/react'
-import TextArea from '@pluralsight/ps-design-system-textarea/react'
-import Radio from '@pluralsight/ps-design-system-radio/react'
-import Switch from '@pluralsight/ps-design-system-switch/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import DatePicker from '@pluralsight/ps-design-system-datepicker/react.js'
+import Dropdown from '@pluralsight/ps-design-system-dropdown/react.js'
+import Form from '@pluralsight/ps-design-system-form/react.js'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import PropTypes from 'prop-types'
+import Tag from '@pluralsight/ps-design-system-tag/react.js'
+import Text from '@pluralsight/ps-design-system-text/react.js'
+import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
+import TextArea from '@pluralsight/ps-design-system-textarea/react.js'
+import Radio from '@pluralsight/ps-design-system-radio/react.js'
+import React from 'react'
 import { string as stringUtil } from '@pluralsight/ps-design-system-util'
+import Switch from '@pluralsight/ps-design-system-switch/react.js'
 
 import {
   Chrome,
@@ -22,16 +23,13 @@ import {
   Content,
   Example,
   Guideline,
-  Heading,
   Intro,
   P,
   PageHeading,
-  PropTypes,
   SectionHeading,
   TextLink,
-  ThemeToggle,
-  withServerProps
-} from '../../src/ui'
+  ThemeToggle
+} from '../../src/ui/index.js'
 
 class TagExample extends React.Component {
   constructor() {
@@ -50,9 +48,7 @@ class TagExample extends React.Component {
             key={tag}
             style={{
               display: 'inline-block',
-              margin: `0 ${core.layout.spacingXSmall} ${
-                core.layout.spacingXSmall
-              } 0`
+              margin: `0 ${core.layout.spacingXSmall} ${core.layout.spacingXSmall} 0`
             }}
           >
             <Tag
@@ -181,6 +177,12 @@ const Comp = props => (
     `}</style>
   </div>
 )
+Comp.propTypes = {
+  children: PropTypes.node,
+  desc: PropTypes.node,
+  href: PropTypes.string,
+  title: PropTypes.node
+}
 
 const validate = state => {
   const rules = {
@@ -267,7 +269,7 @@ class InAppExample extends React.Component {
     this.setState(initialState)
   }
   render() {
-    const { props, state } = this
+    const { state } = this
     const errorMsg = name => state.errors[name]
     const isError = name => !!errorMsg(name)
     const hasErrors = Object.keys(state.errors).length > 0
@@ -559,8 +561,11 @@ const FormFocusable = props => (
     `}</style>
   </div>
 )
+FormFocusable.propTypes = {
+  children: PropTypes.node
+}
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Form">
       <PageHeading packageName="form">Form</PageHeading>
@@ -791,7 +796,7 @@ export default withServerProps(_ => (
       <SectionHeading>Guidelines</SectionHeading>
       <P>
         Write labels in sentence case. Capital case is not optimal for
-        scanability..
+        scannability.
       </P>
       <Guideline
         do={
@@ -959,4 +964,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

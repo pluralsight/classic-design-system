@@ -1,8 +1,8 @@
-import LinearProgress from '@pluralsight/ps-design-system-linearprogress/react'
+import LinearProgress from '@pluralsight/ps-design-system-linearprogress/react.js'
 import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
   Chrome,
@@ -12,9 +12,8 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 class AnimationDemo extends React.Component {
   constructor(props) {
@@ -76,7 +75,7 @@ class AnimationDemo extends React.Component {
   }
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Linear Progress">
       <PageHeading packageName="linearprogress">Linear Progress</PageHeading>
@@ -128,4 +127,4 @@ export default withServerProps(_ => (
       <AnimationDemo />
     </Content>
   </Chrome>
-))
+)

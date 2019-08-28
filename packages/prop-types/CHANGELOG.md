@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-prop-types@2.0.6...@pluralsight/ps-design-system-prop-types@2.0.7) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-prop-types
+
+
+
+
+
+## [2.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-prop-types@2.0.5...@pluralsight/ps-design-system-prop-types@2.0.6) (2019-06-20)
+
+
+### Bug Fixes
+
+* **prop-types:** use element name comparison when checking elementOfType ([09fd1f8](https://github.com/pluralsight/design-system/commit/09fd1f8))
+
+
+
+
+
 ## [2.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-prop-types@2.0.4...@pluralsight/ps-design-system-prop-types@2.0.5) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-prop-types

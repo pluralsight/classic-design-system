@@ -32,8 +32,7 @@ async function main() {
     'button',
     'core',
     'filter-react-props',
-    'icon',
-    'theme'
+    'icon'
   ].map(toPackageName)
 
   const questions = [
@@ -49,10 +48,7 @@ async function main() {
       message: 'Dependencies',
       choices: suggestedDependencies.map(name => ({ name })),
       filter: keys => {
-        const depMap = keys.reduce(
-          (acc, name) => ({ ...acc, [name]: packagesMap[name] }),
-          {}
-        )
+        const depMap = keys.reduce((acc, name) => ({ ...acc, [name]: '*' }), {})
         return JSON.stringify(depMap)
       }
     }

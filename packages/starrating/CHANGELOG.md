@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@3.0.0...@pluralsight/ps-design-system-starrating@4.0.0) (2019-08-28)
+
+
+### Features
+
+* **starrating:** support React.forwardRef ([3b3a698](https://github.com/pluralsight/design-system/commit/3b3a698))
+
+
+### BREAKING CHANGES
+
+* **starrating:** Require react 16.9 as a peer dependency
+* **starrating:** Support React.forwardRef
+
+
+
+
+
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.12...@pluralsight/ps-design-system-starrating@3.0.0) (2019-08-09)
+
+
+### Build System
+
+* **starrating:** move theme package to peerDeps ([3c3cee0](https://github.com/pluralsight/design-system/commit/3c3cee0))
+
+
+### BREAKING CHANGES
+
+* **starrating:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+## [2.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.11...@pluralsight/ps-design-system-starrating@2.0.12) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [2.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.10...@pluralsight/ps-design-system-starrating@2.0.11) (2019-07-30)
+
+
+### Bug Fixes
+
+* **starrating:** add glamor as a peerDep ([d654790](https://github.com/pluralsight/design-system/commit/d654790))
+
+
+
+
+
+## [2.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.9...@pluralsight/ps-design-system-starrating@2.0.10) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
 ## [2.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.8...@pluralsight/ps-design-system-starrating@2.0.9) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-starrating

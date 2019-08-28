@@ -15,12 +15,10 @@ const styles = {
       display: 'inline-block',
       overflow: 'hidden',
       padding: 0,
+      margin: core.layout.spacingXSmall,
       textAlign: 'left',
       width: 150,
-      wordWrap: 'break-word',
-
-      '& + &': { marginLeft: 10 },
-      '&:first-child': { marginLeft: 0 }
+      wordWrap: 'break-word'
     }),
   preview: props => {
     const base = glamor.css({
@@ -47,8 +45,29 @@ const styles = {
       color: 'inherit',
       fontWeight: 'bold',
       fontSize: 12,
+      padding: `${core.layout.spacingXSmall} 0`,
       textTransform: 'uppercase'
     })
+}
+
+export default function Swatch({ onSelect, name, ...props }) {
+  function handleClick(evt) {
+    onSelect(evt, name)
+  }
+
+  return (
+    <Container onClick={handleClick}>
+      <Preview name={name} />
+      <Info>
+        <Title>{name}</Title>
+      </Info>
+    </Container>
+  )
+}
+
+Swatch.propTypes = {
+  name: PropTypes.oneOf(Object.values(Theme.names)).isRequired,
+  onSelect: PropTypes.func.isRequired
 }
 
 const Container = props => <button {...styles.container()} {...props} />
@@ -62,32 +81,3 @@ const Title = props => <h2 {...styles.title()} {...props} />
 Title.propTypes = {
   children: PropTypes.string.isRequired
 }
-
-class Swatch extends React.Component {
-  constructor (props) {
-    super(props)
-    this.handleClick = this.handleClick.bind(this)
-  }
-
-  handleClick (event) {
-    this.props.onSelect(event, this.props.name)
-  }
-
-  render () {
-    return (
-      <Container onClick={this.handleClick}>
-        <Preview name={this.props.name} />
-        <Info>
-          <Title>{this.props.name}</Title>
-        </Info>
-      </Container>
-    )
-  }
-}
-
-Swatch.propTypes = {
-  name: PropTypes.oneOf(Object.values(Theme.names)).isRequired,
-  onSelect: PropTypes.func.isRequired
-}
-
-module.exports = Swatch

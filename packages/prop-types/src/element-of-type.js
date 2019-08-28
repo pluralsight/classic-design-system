@@ -2,21 +2,19 @@
 //       https://github.com/facebook/prop-types/blob/master/factoryWithTypeCheckers.js
 //       https://github.com/wzrdzl/react-element-proptypes
 
-import PropTypeError from './prop-type-error'
+import PropTypeError from './prop-type-error.js'
 import {
   createChainableTypeChecker,
   getDisplayName,
   getCircularReplacer
-} from './utils'
+} from './utils/index.js'
 
 export default function elementOfType(ExpectedElementType) {
   function validate(props, propName, componentName, location, propFullName) {
     const prop = props[propName]
     const hasComponentType = !!prop.type
 
-    const ofExpectedType = hasComponentType && prop.type === ExpectedElementType
-
-    if (prop && !ofExpectedType) {
+    if (prop) {
       const expectedTypeName = getDisplayName(ExpectedElementType)
 
       if (!hasComponentType) {
@@ -26,8 +24,13 @@ export default function elementOfType(ExpectedElementType) {
       }
 
       const receivedTypeName = getDisplayName(prop.type)
-      const msg = `Invalid ${location} \`${propFullName}\` of element type \`${receivedTypeName}\` supplied to ${componentName}, expected element of type \`${expectedTypeName}\``
-      return new PropTypeError(msg)
+      const ofExpectedType = expectedTypeName === receivedTypeName
+
+      if (!ofExpectedType) {
+        // prettier-ignore
+        const msg = `Invalid ${location} \`${propFullName}\` of element type \`${receivedTypeName}\` supplied to ${componentName}, expected element of type \`${expectedTypeName}\``
+        return new PropTypeError(msg)
+      }
     }
 
     return null

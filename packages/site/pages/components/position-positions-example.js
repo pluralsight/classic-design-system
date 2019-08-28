@@ -3,15 +3,15 @@ import {
   Below,
   LeftOf,
   RightOf
-} from '@pluralsight/ps-design-system-position/react'
+} from '@pluralsight/ps-design-system-position/react.js'
 import core from '@pluralsight/ps-design-system-core'
-import Button from '@pluralsight/ps-design-system-button/react'
+import Button from '@pluralsight/ps-design-system-button/react.js'
 import React from 'react'
-import Tooltip from '@pluralsight/ps-design-system-tooltip/react'
+import Tooltip from '@pluralsight/ps-design-system-tooltip/react.js'
 
-import { Head, withServerProps } from '../../src/ui/index.js'
+import { Head } from '../../src/ui/index.js'
 
-export default withServerProps(function PositionExample(props) {
+export default function PositionExample(props) {
   return (
     <ul className="positions">
       <Head />
@@ -51,4 +51,4 @@ export default withServerProps(function PositionExample(props) {
       `}</style>
     </ul>
   )
-})
+}

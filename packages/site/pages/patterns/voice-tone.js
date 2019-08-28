@@ -1,8 +1,8 @@
 import core from '@pluralsight/ps-design-system-core'
-import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react'
+import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react.js'
 import PropTypes from 'prop-types'
 import React from 'react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
+import * as Text from '@pluralsight/ps-design-system-text/react.js'
 
 import {
   Chrome,
@@ -11,9 +11,8 @@ import {
   Link,
   P,
   PageHeading,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const Divider = _ => (
   <div className="divider">
@@ -114,7 +113,7 @@ QuoteBox.propTypes = {
   children: PropTypes.node
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Voice & tone">
       <PageHeading>Voice & tone</PageHeading>
@@ -331,4 +330,4 @@ export default withServerProps(_ => (
       </EqualColumnLayout>
     </Content>
   </Chrome>
-))
+)

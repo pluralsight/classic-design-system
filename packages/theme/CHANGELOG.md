@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@3.0.2...@pluralsight/ps-design-system-theme@3.0.3) (2019-08-09)
+
+
+### Bug Fixes
+
+* **theme:** fix dep range ([651380d](https://github.com/pluralsight/design-system/commit/651380d))
+
+
+
+
+
+## [3.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@3.0.1...@pluralsight/ps-design-system-theme@3.0.2) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-theme
+
+
+
+
+
 ## [3.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@3.0.0...@pluralsight/ps-design-system-theme@3.0.1) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-theme

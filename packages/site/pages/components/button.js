@@ -1,8 +1,8 @@
 import core from '@pluralsight/ps-design-system-core'
-import Button from '@pluralsight/ps-design-system-button/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import Button from '@pluralsight/ps-design-system-button/react.js'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import React from 'react'
-import Text from '@pluralsight/ps-design-system-text/react'
+import Text from '@pluralsight/ps-design-system-text/react.js'
 
 import {
   Chrome,
@@ -15,11 +15,10 @@ import {
   PropTypes,
   SectionHeading,
   TextLink,
-  ThemeToggle,
-  withServerProps
-} from '../../src/ui'
+  ThemeToggle
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Button">
       <PageHeading packageName="button">Button</PageHeading>
@@ -133,7 +132,7 @@ export default withServerProps(_ => (
       <P>
         Buttons may include an icon without a label. Please provide a{' '}
         <Text.Code>title</Text.Code> prop to display the native tooltip as well
-        as to support assitive technology(i.e. screen readers).
+        as to support assistive technology(i.e. screen readers).
       </P>
       <P>
         Read more <Link href="/components/icon">icon docs</Link>.
@@ -242,4 +241,4 @@ const ButtonLink = withRouter(props => (
       />
     </Content>
   </Chrome>
-))
+)

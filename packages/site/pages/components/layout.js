@@ -3,13 +3,13 @@ import {
   PageHeadingLayout,
   AsideLayout,
   EqualColumnLayout
-} from '@pluralsight/ps-design-system-layout/react'
-import Badge from '@pluralsight/ps-design-system-badge/react'
-import Button from '@pluralsight/ps-design-system-button/react'
+} from '@pluralsight/ps-design-system-layout/react.js'
+import Badge from '@pluralsight/ps-design-system-badge/react.js'
+import Button from '@pluralsight/ps-design-system-button/react.js'
 import React from 'react'
 import ReactPropTypes from 'prop-types'
-import Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import Text from '@pluralsight/ps-design-system-text/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
   Chrome,
@@ -19,9 +19,8 @@ import {
   PageHeading,
   PropTypes,
   SectionHeading,
-  TextLink,
-  withServerProps
-} from '../../src/ui'
+  TextLink
+} from '../../src/ui/index.js'
 
 const BlueBox = props => (
   <div className="bluebox" {...props}>
@@ -278,7 +277,7 @@ const VerticalGridVisual = _ => (
   </div>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Layout">
       <PageHeading packageName="layout">Layout</PageHeading>
@@ -450,4 +449,4 @@ export default withServerProps(_ => (
       <VerticalGridVisual />
     </Content>
   </Chrome>
-))
+)

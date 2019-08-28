@@ -1,13 +1,9 @@
-import addons from '@storybook/addons'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
-import Link from '..'
+import Link from '../index.js'
 
-const appearanceStory = storiesOf('appearance', module).addDecorator(
-  themeDecorator(addons)
-)
+const appearanceStory = storiesOf('appearance', module)
 
 Object.keys(Link.appearances).forEach(appearance =>
   appearanceStory.add(appearance, _ => (
@@ -18,3 +14,11 @@ Object.keys(Link.appearances).forEach(appearance =>
     </p>
   ))
 )
+
+storiesOf('tagNames', module).add('button', _ => (
+  <p style={{ color: 'white' }}>
+    <Link>
+      <button>Click me</button>
+    </Link>
+  </p>
+))

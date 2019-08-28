@@ -24,7 +24,7 @@ exports[`Storyshots after field w/icon 1`] = `
             data-css-1oolqwv=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="Some placeholder"
             />
@@ -35,7 +35,6 @@ exports[`Storyshots after field w/icon 1`] = `
                 aria-label="close icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
@@ -79,7 +78,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
             />
           </div>
@@ -94,10 +93,9 @@ exports[`Storyshots appearance default w/ error 1`] = `
               aria-label="warning icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
+                d="M2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10S2 17.514 2 12zm2 0c0 4.411 3.589 8 8 8s8-3.589 8-8-3.589-8-8-8-8 3.589-8 8zm8.5 6h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
               />
             </svg>
           </div>
@@ -132,7 +130,7 @@ exports[`Storyshots appearance default w/ iconAlign left 1`] = `
             data-css-1ir2txp=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="The placeholder "
             />
@@ -148,7 +146,6 @@ exports[`Storyshots appearance default w/ iconAlign left 1`] = `
               aria-label="info icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"
@@ -186,7 +183,7 @@ exports[`Storyshots appearance default w/ iconAlign right 1`] = `
             data-css-ajs356=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="The placeholder "
             />
@@ -202,7 +199,6 @@ exports[`Storyshots appearance default w/ iconAlign right 1`] = `
               aria-label="info icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"
@@ -245,7 +241,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
             data-css-1talm5x=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
             />
           </div>
@@ -260,10 +256,9 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
               aria-label="warning icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
+                d="M2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10S2 17.514 2 12zm2 0c0 4.411 3.589 8 8 8s8-3.589 8-8-3.589-8-8-8-8 3.589-8 8zm8.5 6h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
               />
             </svg>
           </div>
@@ -298,7 +293,7 @@ exports[`Storyshots appearance subtle w/ iconAlign left 1`] = `
             data-css-1e3i43a=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="The placeholder "
             />
@@ -314,7 +309,6 @@ exports[`Storyshots appearance subtle w/ iconAlign left 1`] = `
               aria-label="info icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"
@@ -352,7 +346,7 @@ exports[`Storyshots appearance subtle w/ iconAlign right 1`] = `
             data-css-g760uo=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="The placeholder "
             />
@@ -368,7 +362,6 @@ exports[`Storyshots appearance subtle w/ iconAlign right 1`] = `
               aria-label="info icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"
@@ -412,7 +405,7 @@ exports[`Storyshots disabled compare 1`] = `
               data-css-177hkuc=""
             >
               <input
-                data-css-azf86w=""
+                data-css-lzb8ea=""
                 disabled={false}
                 placeholder="I'm normal, see"
               />
@@ -443,7 +436,7 @@ exports[`Storyshots disabled compare 1`] = `
               data-css-177hkuc=""
             >
               <input
-                data-css-azf86w=""
+                data-css-lzb8ea=""
                 disabled={true}
                 placeholder="I'm untouchable"
               />
@@ -474,7 +467,7 @@ exports[`Storyshots disabled compare 1`] = `
               data-css-177hkuc=""
             >
               <input
-                data-css-azf86w=""
+                data-css-lzb8ea=""
                 disabled={true}
                 placeholder="I'm untouchable"
               />
@@ -490,10 +483,9 @@ exports[`Storyshots disabled compare 1`] = `
                 aria-label="warning icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
+                  d="M2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10S2 17.514 2 12zm2 0c0 4.411 3.589 8 8 8s8-3.589 8-8-3.589-8-8-8-8 3.589-8 8zm8.5 6h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
                 />
               </svg>
             </div>
@@ -539,7 +531,7 @@ exports[`Storyshots labels all 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="Some placeholder"
             />
@@ -585,7 +577,7 @@ exports[`Storyshots labels all w/error 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="Some placeholder"
             />
@@ -601,10 +593,9 @@ exports[`Storyshots labels all w/error 1`] = `
               aria-label="warning icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
+                d="M2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10S2 17.514 2 12zm2 0c0 4.411 3.589 8 8 8s8-3.589 8-8-3.589-8-8-8-8 3.589-8 8zm8.5 6h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
               />
             </svg>
           </div>
@@ -649,7 +640,7 @@ exports[`Storyshots labels label 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
             />
           </div>
@@ -689,7 +680,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
             />
           </div>
@@ -699,6 +690,47 @@ exports[`Storyshots labels label and subLabel 1`] = `
         data-css-1de0a6a=""
       >
         Some sublabel
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots labels long placeholder 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-w0yocm=""
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        data-css-1r967oi=""
+      >
+        <div
+          data-css-1xm24a9=""
+        >
+          <div
+            data-css-177hkuc=""
+          >
+            <input
+              data-css-lzb8ea=""
+              disabled={false}
+              placeholder="some placeholder that goes on forever when the little things can't handle it"
+            />
+          </div>
+        </div>
       </div>
     </label>
   </div>
@@ -729,7 +761,7 @@ exports[`Storyshots labels none 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
             />
           </div>
@@ -764,7 +796,7 @@ exports[`Storyshots labels placeholder 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="some placeholder"
             />
@@ -800,7 +832,7 @@ exports[`Storyshots labels subLabel 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
             />
           </div>
@@ -859,7 +891,7 @@ exports[`Storyshots layouts full width 1`] = `
               data-css-177hkuc=""
             >
               <input
-                data-css-azf86w=""
+                data-css-lzb8ea=""
                 disabled={false}
               />
             </div>
@@ -890,7 +922,7 @@ exports[`Storyshots layouts full width 1`] = `
               data-css-177hkuc=""
             >
               <input
-                data-css-azf86w=""
+                data-css-lzb8ea=""
                 disabled={false}
               />
             </div>
@@ -905,10 +937,9 @@ exports[`Storyshots layouts full width 1`] = `
                 aria-label="warning icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
+                  d="M2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10S2 17.514 2 12zm2 0c0 4.411 3.589 8 8 8s8-3.589 8-8-3.589-8-8-8-8 3.589-8 8zm8.5 6h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
                 />
               </svg>
             </div>
@@ -939,7 +970,7 @@ exports[`Storyshots layouts full width 1`] = `
               data-css-1talm5x=""
             >
               <input
-                data-css-azf86w=""
+                data-css-lzb8ea=""
                 disabled={false}
               />
             </div>
@@ -970,7 +1001,7 @@ exports[`Storyshots layouts full width 1`] = `
               data-css-1talm5x=""
             >
               <input
-                data-css-azf86w=""
+                data-css-lzb8ea=""
                 disabled={false}
               />
             </div>
@@ -985,10 +1016,9 @@ exports[`Storyshots layouts full width 1`] = `
                 aria-label="warning icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
+                  d="M2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10S2 17.514 2 12zm2 0c0 4.411 3.589 8 8 8s8-3.589 8-8-3.589-8-8-8-8 3.589-8 8zm8.5 6h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
                 />
               </svg>
             </div>
@@ -1039,7 +1069,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
                 data-css-1e3i43a=""
               >
                 <input
-                  data-css-azf86w=""
+                  data-css-lzb8ea=""
                   disabled={false}
                   placeholder="Search"
                 />
@@ -1055,10 +1085,9 @@ exports[`Storyshots layouts right-aligned 1`] = `
                   aria-label="search icon"
                   role="img"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M21.707 20.294L16.314 14.9C17.403 13.504 18 11.799 18 10c0-2.137-.833-4.144-2.344-5.656C14.145 2.832 12.137 2 10 2c-2.137 0-4.146.832-5.656 2.344C2.832 5.856 2 7.863 2 10c0 2.137.832 4.146 2.344 5.656C5.854 17.168 7.863 18 10 18c1.799 0 3.504-.596 4.9-1.685l5.393 5.393 1.414-1.414zM10 16c-1.603 0-3.109-.624-4.242-1.757C4.624 13.11 4 11.603 4 10c0-1.602.624-3.109 1.758-4.242C6.891 4.624 8.397 4 10 4c1.602 0 3.109.624 4.242 1.758C15.376 6.891 16 8.398 16 10c0 1.603-.624 3.11-1.758 4.243C13.109 15.376 11.602 16 10 16z"
+                    d="M21.707 20.294L16.314 14.9A7.928 7.928 0 0018 10a7.948 7.948 0 00-2.344-5.656A7.942 7.942 0 0010 2a7.94 7.94 0 00-5.656 2.344A7.944 7.944 0 002 10a7.94 7.94 0 002.344 5.656A7.94 7.94 0 0010 18a7.927 7.927 0 004.9-1.685l5.393 5.393 1.414-1.414zM10 16a5.959 5.959 0 01-4.242-1.757A5.958 5.958 0 014 10c0-1.602.624-3.109 1.758-4.242A5.956 5.956 0 0110 4c1.602 0 3.109.624 4.242 1.758A5.957 5.957 0 0116 10c0 1.603-.624 3.11-1.758 4.243A5.96 5.96 0 0110 16z"
                   />
                 </svg>
               </div>
@@ -1103,7 +1132,7 @@ exports[`Storyshots whitelist name 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               name="myFieldNameOfPower"
               placeholder="I have a form name"
@@ -1140,7 +1169,7 @@ exports[`Storyshots whitelist onChange 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               onChange={[Function]}
               placeholder="Change me"
@@ -1177,7 +1206,7 @@ exports[`Storyshots whitelist title 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               title="some title"
             />
@@ -1213,7 +1242,7 @@ exports[`Storyshots whitelist type=date 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="Date"
               type="date"
@@ -1250,7 +1279,7 @@ exports[`Storyshots whitelist type=password 1`] = `
             data-css-177hkuc=""
           >
             <input
-              data-css-azf86w=""
+              data-css-lzb8ea=""
               disabled={false}
               placeholder="Password"
               type="password"

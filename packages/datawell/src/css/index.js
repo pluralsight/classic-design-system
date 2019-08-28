@@ -5,9 +5,7 @@ export default {
   '.psds-datawell': {
     borderLeft: `1px solid ${core.colors.gray03}`,
     minHeight: '104px',
-    padding: `0 ${core.layout.spacingMedium} ${core.layout.spacingMedium} ${
-      core.layout.spacingLarge
-    }`
+    padding: `0 ${core.layout.spacingMedium} ${core.layout.spacingMedium} ${core.layout.spacingLarge}`
   },
   [`.psds-datawell.psds-theme--${themeNames.light}`]: {
     borderLeft: `1px solid ${core.colors.gray01}`

@@ -1,10 +1,10 @@
 import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
-import Button from '@pluralsight/ps-design-system-button/react'
-import EmptyState from '@pluralsight/ps-design-system-emptystate/react'
-import Text from '@pluralsight/ps-design-system-text/react'
-import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react'
+import Button from '@pluralsight/ps-design-system-button/react.js'
+import EmptyState from '@pluralsight/ps-design-system-emptystate/react.js'
+import Text from '@pluralsight/ps-design-system-text/react.js'
+import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react.js'
 
 import {
   Code,
@@ -17,9 +17,8 @@ import {
   PageHeading,
   PropTypes,
   SectionHeading,
-  ThemeToggle,
-  withServerProps
-} from '../../src/ui'
+  ThemeToggle
+} from '../../src/ui/index.js'
 
 const titleize = str =>
   str.toLowerCase().replace(/(?:^|\s|-)\S/g, x => x.toUpperCase())
@@ -37,7 +36,7 @@ class IllustrationPreviewGrid extends React.Component {
     return Object.values(EmptyState.Illustration.names)
   }
 
-  handleSizeChange(index, event) {
+  handleSizeChange(evt, index) {
     this.setState({ activeSize: this.sizes[index] })
   }
 
@@ -99,7 +98,7 @@ class IllustrationPreviewGrid extends React.Component {
   }
 }
 
-const EmptyStateDocumentation = withServerProps(props => (
+const EmptyStateDocumentation = props => (
   <Chrome>
     <Content title="Empty state">
       <PageHeading packageName="emptystate">Empty State</PageHeading>
@@ -225,7 +224,7 @@ const EmptyStateDocumentation = withServerProps(props => (
 
       <SectionHeading>Alternatives</SectionHeading>
       <P>
-        Consider alternatives to empty states. Instad of an empty experience,
+        Consider alternatives to empty states. Instead of an empty experience,
         might there be starter, educational, or sample content to present to
         users to help them learn about the product and start using it right
         away?
@@ -236,7 +235,7 @@ const EmptyStateDocumentation = withServerProps(props => (
 If the screen is intended to be populated with content by a user, consider suggesting samples or recommendations to ease the effort of getting started.
 
 ### 👉 Educational content
-A single graphic and message may not be enough to convey the purpose of a feature. Consider animated or video walkthroughs, but keep them brief and dismissable.
+A single graphic and message may not be enough to convey the purpose of a feature. Consider animated or video walkthroughs, but keep them brief and dismissible.
 
 ### 👉 Best match suggestion
 If the absence of data occurs due to a user query such as a search, consider displaying a best match instead of nothing at all.
@@ -246,7 +245,7 @@ If the absence of data occurs due to a user query such as a search, consider dis
       <P>
         Follow{' '}
         <Link href="/patterns/voice-tone">voice and tone guidelines</Link> when
-        writing copy for empty states. Apppropriate empty statement consist of a
+        writing copy for empty states. Appropriate empty statement consist of a
         short declarative statement of what occurred, followed by a brief
         sentence giving more context if necessary. Provide a clear CTA button
         that’s no more than 2-3 words. Write clearly and conversationally like
@@ -303,6 +302,6 @@ If the absence of data occurs due to a user query such as a search, consider dis
       />
     </Content>
   </Chrome>
-))
+)
 
 export default EmptyStateDocumentation

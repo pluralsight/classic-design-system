@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@4.0.19...@pluralsight/ps-design-system-layout@4.0.20) (2019-08-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-layout
+
+
+
+
+
+## [4.0.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@4.0.18...@pluralsight/ps-design-system-layout@4.0.19) (2019-08-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-layout
+
+
+
+
+
+## [4.0.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@4.0.17...@pluralsight/ps-design-system-layout@4.0.18) (2019-08-09)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-layout
+
+
+
+
+
+## [4.0.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@4.0.16...@pluralsight/ps-design-system-layout@4.0.17) (2019-08-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-layout
+
+
+
+
+
+## [4.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@4.0.15...@pluralsight/ps-design-system-layout@4.0.16) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-layout
+
+
+
+
+
+## [4.0.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@4.0.14...@pluralsight/ps-design-system-layout@4.0.15) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-layout
+
+
+
+
+
+## [4.0.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@4.0.13...@pluralsight/ps-design-system-layout@4.0.14) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-layout
+
+
+
+
+
+## [4.0.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@4.0.12...@pluralsight/ps-design-system-layout@4.0.13) (2019-06-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-layout
+
+
+
+
+
 ## [4.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@4.0.11...@pluralsight/ps-design-system-layout@4.0.12) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-layout

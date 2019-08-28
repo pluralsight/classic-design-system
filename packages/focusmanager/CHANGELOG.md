@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@2.0.9...@pluralsight/ps-design-system-focusmanager@3.0.0) (2019-08-26)
+
+
+### Code Refactoring
+
+* **focusmanager:** convert to hooks ([5f32f7d](https://github.com/pluralsight/design-system/commit/5f32f7d))
+
+
+### BREAKING CHANGES
+
+* **focusmanager:** react v16.8 is now the minimum react dependency
+
+
+
+
+
+## [2.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@2.0.8...@pluralsight/ps-design-system-focusmanager@2.0.9) (2019-08-09)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
+
+
+
+
+
+## [2.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@2.0.7...@pluralsight/ps-design-system-focusmanager@2.0.8) (2019-08-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
+
+
+
+
+
+## [2.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@2.0.6...@pluralsight/ps-design-system-focusmanager@2.0.7) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
+
+
+
+
+
+## [2.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@2.0.5...@pluralsight/ps-design-system-focusmanager@2.0.6) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
+
+
+
+
+
 ## [2.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@2.0.4...@pluralsight/ps-design-system-focusmanager@2.0.5) (2019-06-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager

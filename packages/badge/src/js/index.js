@@ -1,4 +1,4 @@
-import { appearances } from '../vars'
+import { appearances } from '../vars/index.js'
 
 export function defaultWithColor(c) {
   return appearance(appearances.default) + color(c)

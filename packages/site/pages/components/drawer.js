@@ -1,9 +1,9 @@
 import core from '@pluralsight/ps-design-system-core'
-import Drawer from '@pluralsight/ps-design-system-drawer/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import Drawer from '@pluralsight/ps-design-system-drawer/react.js'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import React from 'react'
-import Row from '@pluralsight/ps-design-system-row/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import Row from '@pluralsight/ps-design-system-row/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
   Chrome,
@@ -13,9 +13,8 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const ExampleDrawerBase = () => (
   <div>
@@ -105,7 +104,7 @@ PinkBox.propTypes = {
   children: PropTypes.any
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Drawer">
       <PageHeading packageName="drawer">Drawer</PageHeading>
@@ -203,24 +202,6 @@ export default withServerProps(_ => (
 </Drawer>`
         ]}
       />
-
-      <SectionHeading>Light Theme</SectionHeading>
-      <P>
-        To specify the light theme, wrap your components in a <code>Theme</code>{' '}
-        component.
-      </P>
-      <Example.React
-        includes={{ Drawer, Theme }}
-        themeName={Theme.names.light}
-        orient="vertical"
-        codes={[
-          `<Theme name={Theme.names.light}>
-  <Drawer startOpen base={<div style={{ height: 100 }} />}>
-    <div style={{ height: 128 }} />
-  </Drawer>
-</Theme>`
-        ]}
-      />
     </Content>
   </Chrome>
-))
+)

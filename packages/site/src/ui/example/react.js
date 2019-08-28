@@ -8,11 +8,11 @@ import CodeMirror from 'react-codemirror'
 import ReactDOM from 'react-dom'
 
 import core from '@pluralsight/ps-design-system-core'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
-import CodeMirrorCss from '../../../vendor/codemirror-css'
-import CodeMirrorPsTheme from '../codemirror-ps-theme'
-import ThemeToggle from '../theme-toggle'
+import CodeMirrorCss from '../../../vendor/codemirror-css.js'
+import CodeMirrorPsTheme from '../codemirror-ps-theme.js'
+import ThemeToggle from '../theme-toggle.js'
 
 let modeLoaded = false
 if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
@@ -48,6 +48,7 @@ const OutputDecorationGlobalStyles = _ => (
     .outputChild {
       margin: ${core.layout.spacingLarge} 0 0 0;
       color: ${core.colors.white};
+      width: 100%;
     }
     .outputChild:first-child {
       margin-top: 0;
@@ -111,6 +112,7 @@ const getOutputClassName = (props, state) =>
 class ReactExample extends React.Component {
   constructor(props) {
     super(props)
+    this.outputEl = React.createRef()
     this.state = { codes: props.codes, error: null, themeName: props.themeName }
     this.handleCodeChange = this.handleCodeChange.bind(this)
     this.handleThemeSelect = this.handleThemeSelect.bind(this)
@@ -129,7 +131,7 @@ class ReactExample extends React.Component {
   }
 
   componentWillUnmount() {
-    unmountOutput(this.outputEl)
+    unmountOutput(this.outputEl.current)
   }
 
   handleCodeChange(code, i) {
@@ -138,15 +140,15 @@ class ReactExample extends React.Component {
     this.setState(_ => ({ codes }), debounce(this.renderOutput, 200))
   }
 
-  handleThemeSelect(i) {
-    const themeName = Theme.names[Object.keys(Theme.names)[i]]
+  handleThemeSelect(evt, index) {
+    const themeName = Theme.names[Object.keys(Theme.names)[index]]
     this.setState({ themeName })
   }
 
   renderOutput() {
     if (typeof window === 'undefined') return
 
-    unmountOutput(this.outputEl)
+    unmountOutput(this.outputEl.current)
     this.setState(
       _ => ({ error: null }),
       _ => {
@@ -158,10 +160,10 @@ class ReactExample extends React.Component {
           const compiled = compileSrc(src)
           makeGlobalsAvailable(this.props.includes)
           const evaled = evalSrc(compiled)
-          renderOutput(this.state.themeName, evaled, this.outputEl)
+          renderOutput(this.state.themeName, evaled, this.outputEl.current)
         } catch (err) {
           console.log('err', err)
-          unmountOutput(this.outputEl)
+          unmountOutput(this.outputEl.current)
           this.setState(_ => ({ error: err.toString() }))
         }
       }
@@ -225,7 +227,7 @@ class ReactExample extends React.Component {
           />
         )}
 
-        <div ref={el => (this.outputEl = el)} />
+        <div ref={this.outputEl} />
 
         <OutputDecorationGlobalStyles />
 

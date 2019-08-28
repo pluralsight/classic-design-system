@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme'
 import React from 'react'
 
-import Card from '../index'
+import Card from '../index.js'
 
 test('click on Card.Title triggered once', () => {
   let callCount = 0
