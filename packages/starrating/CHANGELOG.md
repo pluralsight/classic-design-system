@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@3.0.0...@pluralsight/ps-design-system-starrating@4.0.0) (2019-08-28)
+
+
+### Features
+
+* **starrating:** support React.forwardRef ([3b3a698](https://github.com/pluralsight/design-system/commit/3b3a698))
+
+
+### BREAKING CHANGES
+
+* **starrating:** Require react 16.9 as a peer dependency
+* **starrating:** Support React.forwardRef
+
+
+
+
+
 # [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.12...@pluralsight/ps-design-system-starrating@3.0.0) (2019-08-09)
 
 
