@@ -26,11 +26,7 @@ const styles = {
       css(stylesheet['.psds-carousel']),
       ready && css(stylesheet['.psds-carousel--ready'])
     ),
-  pages: (props, { transitioning }) =>
-    compose(
-      css(stylesheet['.psds-carousel__pages']),
-      transitioning && css(stylesheet['.psds-carousel__pages--transitioning'])
-    ),
+  pages: props => compose(css(stylesheet['.psds-carousel__pages'])),
   page: props =>
     compose(
       css(stylesheet['.psds-carousel__page']),
@@ -179,24 +175,6 @@ function Instructions(props) {
 
 const Pages = React.forwardRef((props, ref) => {
   const context = React.useContext(CarouselContext)
-  const prevActivePage = usePrevious(context.activePage)
-  const [transitioning, setTransitioning] = React.useState(false)
-
-  React.useEffect(() => {
-    let timer
-    const starting =
-      prevActivePage !== undefined && prevActivePage !== context.activePage
-
-    if (starting) {
-      setTransitioning(true)
-    } else {
-      timer = setTimeout(() => {
-        setTransitioning(false)
-      }, TRANSITION_DURATION_MS)
-    }
-
-    return () => clearTimeout(timer)
-  }, [context.activePage, prevActivePage])
 
   useSwipe(ref, {
     onSwipeLeft: props.onSwipeLeft,
@@ -211,7 +189,7 @@ const Pages = React.forwardRef((props, ref) => {
       ref={ref}
       role="region"
       tabIndex="0"
-      {...styles.pages(props, { transitioning })}
+      {...styles.pages(props)}
       {...filterReactProps(props)}
     />
   )
@@ -310,14 +288,4 @@ function usePager(pageCount, additionalSideEffectTriggers = []) {
     prev,
     ref
   }
-}
-
-function usePrevious(value) {
-  const ref = React.useRef()
-
-  React.useEffect(() => {
-    ref.current = value
-  }, [value])
-
-  return ref.current
 }

@@ -36,6 +36,7 @@
     "@pluralsight/ps-design-system-actionmenu": "^5.1.4",
     "@pluralsight/ps-design-system-build": "^1.10.1",
     "@pluralsight/ps-design-system-card": "^11.0.0",
+    "@pluralsight/ps-design-system-position": "*",
     "@pluralsight/ps-design-system-storybook-addon-center": "^2.0.5",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^4.0.0",
     "@pluralsight/ps-design-system-theme": "^3.0.3"

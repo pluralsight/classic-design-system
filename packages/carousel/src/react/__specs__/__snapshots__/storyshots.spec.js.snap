@@ -11,7 +11,7 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1f0n9j9=""
+      data-css-1d3rq9b=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -161,7 +161,7 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1f0n9j9=""
+      data-css-1d3rq9b=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -321,7 +321,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1f0n9j9=""
+      data-css-1d3rq9b=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -484,7 +484,7 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1f0n9j9=""
+      data-css-1d3rq9b=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -622,7 +622,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1f0n9j9=""
+      data-css-1d3rq9b=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -847,7 +847,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1f0n9j9=""
+      data-css-1d3rq9b=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -953,7 +953,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1f0n9j9=""
+      data-css-1d3rq9b=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -1063,7 +1063,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1f0n9j9=""
+      data-css-1d3rq9b=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -1240,7 +1240,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1f0n9j9=""
+      data-css-1d3rq9b=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -1406,6 +1406,289 @@ exports[`Storyshots Carousel/size wide 1`] = `
 </div>
 `;
 
+exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
+<div
+  data-css-x7zjce=""
+  data-testid="story-wrapper"
+>
+  <div
+    style={
+      Object {
+        "border": "1px solid red",
+        "maxWidth": 600,
+        "padding": 10,
+      }
+    }
+  >
+    <div
+      data-css-rumlay=""
+    >
+      <ul
+        aria-describedby="carousel-mock_unique_id__instructions"
+        aria-label="carousel"
+        data-css-1d3rq9b=""
+        id="carousel-mock_unique_id"
+        onKeyDown={[Function]}
+        role="region"
+        tabIndex="0"
+      >
+        <li
+          data-css-bxro55=""
+          data-css-fx3xhe=""
+        >
+          <div
+            data-css-a8uf5t=""
+          >
+            <div
+              data-css-1ybvkp1=""
+            >
+              <div
+                data-css-x1twjb=""
+              >
+                <div
+                  data-css-i7gti2=""
+                  style={
+                    Object {
+                      "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+                    }
+                  }
+                />
+                <div
+                  data-css-1kb1o0e=""
+                >
+                  <button
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="asdf"
+                  >
+                    <div
+                      data-css-otejxm=""
+                    >
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div
+                data-css-piydn8=""
+              >
+                <span
+                  data-css-1202ll4=""
+                >
+                  <a
+                    href="#"
+                  >
+                    <div
+                      data-css-1tlmf72=""
+                    >
+                      <div
+                        className=""
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "block",
+                              "maxHeight": "0px",
+                              "overflow": "hidden",
+                              "position": "relative",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "display": "block",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Yahoo
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "height": "0px",
+                                "overflow": "hidden",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Yahoo
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "left": "-20000px",
+                                "position": "absolute",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              Yahoo
+                            </span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </span>
+              </div>
+              <div
+                data-css-sb1dn8=""
+              >
+                <span
+                  data-css-1tz10dh=""
+                >
+                  <span
+                    data-css-1202ll4=""
+                  >
+                    <a
+                      href="#"
+                    >
+                      meta
+                    </a>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+        <li
+          data-css-17v35en=""
+          data-css-bxro55=""
+          hidden={true}
+          tabIndex={-1}
+        />
+      </ul>
+      <ul
+        aria-controls="carousel-mock_unique_id"
+        aria-label="carousel controls"
+        data-css-b3afd4=""
+      >
+        <li>
+          <button
+            aria-label="previous"
+            data-css-1wkjkcr=""
+            hidden={true}
+            onClick={[Function]}
+            tabIndex={-1}
+          >
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="next"
+            data-css-n705st=""
+            onClick={[Function]}
+          >
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </li>
+      </ul>
+      <div
+        data-css-6wu9td=""
+        id="carousel-mock_unique_id__instructions"
+      >
+        <p>
+          Currently on page 
+          1
+           of 
+          4
+          .
+        </p>
+        <p>
+          Use left and right arrow keys for navigation.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
 <div
   data-css-x7zjce=""
@@ -1426,7 +1709,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
       <ul
         aria-describedby="carousel-mock_unique_id__instructions"
         aria-label="carousel"
-        data-css-1f0n9j9=""
+        data-css-1d3rq9b=""
         id="carousel-mock_unique_id"
         onKeyDown={[Function]}
         role="region"
@@ -1756,7 +2039,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1f0n9j9=""
+      data-css-1d3rq9b=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
@@ -2080,7 +2363,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
     <ul
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1f0n9j9=""
+      data-css-1d3rq9b=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"

@@ -1,11 +1,13 @@
 import { storiesOf } from '@storybook/react'
 
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
-import Card from '@pluralsight/ps-design-system-card/react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
+import Card from '@pluralsight/ps-design-system-card/react.js'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import { BelowRight } from '@pluralsight/ps-design-system-position/react.js'
 
 import Carousel from '../index.js'
 
@@ -41,7 +43,7 @@ const longStringsMetaData = [
 
 const MockItem = props => (
   <div
-    {...glamor.css({
+    {...css({
       alignItems: 'center',
       background: 'pink',
       display: 'flex',
@@ -89,7 +91,7 @@ storiesOf('Carousel/items', module)
           </Carousel>
 
           <div
-            {...glamor.css({
+            {...css({
               alignItems: 'center',
               display: 'flex',
               justifyContent: 'center',
@@ -181,20 +183,77 @@ Object.values(Carousel.sizes).forEach(size => {
   ))
 })
 
-storiesOf('Carousel/with ActionMenu', module).add('positioned child', () => (
-  <div style={{ border: '1px solid red', maxWidth: 400, padding: 10 }}>
-    <Carousel size={Carousel.sizes.wide}>
-      <MockItem>
-        <ActionMenu style={{ left: 20, top: 20 }}>
-          {new Array(8).fill(null).map((_, index) => (
-            <ActionMenu.Item key={index}>item: {index}</ActionMenu.Item>
-          ))}
-        </ActionMenu>
-      </MockItem>
+storiesOf('Carousel/with ActionMenu', module)
+  .add('positioned child', () => (
+    <div style={{ border: '1px solid red', maxWidth: 400, padding: 10 }}>
+      <Carousel size={Carousel.sizes.wide}>
+        <MockItem>
+          <ActionMenu style={{ left: 20, top: 20 }}>
+            {new Array(8).fill(null).map((_, index) => (
+              <ActionMenu.Item key={index}>item: {index}</ActionMenu.Item>
+            ))}
+          </ActionMenu>
+        </MockItem>
 
-      {new Array(13).fill(null).map((_, index) => (
-        <MockItem key={index} />
-      ))}
-    </Carousel>
-  </div>
-))
+        {new Array(13).fill(null).map((_, index) => (
+          <MockItem key={index} />
+        ))}
+      </Carousel>
+    </div>
+  ))
+  .add('in portal', () => {
+    function PortalStory() {
+      const [isOpen, setOpen] = React.useState(false)
+      return (
+        <div style={{ border: '1px solid red', maxWidth: 600, padding: 10 }}>
+          <Carousel
+            size={Carousel.sizes.wide}
+            controls={
+              <Carousel.Controls>
+                <Carousel.Control
+                  direction={Carousel.Control.directions.prev}
+                  onClick={_ => setOpen(false)}
+                />
+                <Carousel.Control
+                  direction={Carousel.Control.directions.next}
+                  onClick={_ => setOpen(false)}
+                />
+              </Carousel.Controls>
+            }
+          >
+            <MockCard
+              actionBarVisible
+              actionBar={[
+                <BelowRight
+                  inNode={document.body}
+                  when={isOpen}
+                  show={
+                    <ActionMenu>
+                      {new Array(8).fill(null).map((_, index) => (
+                        <ActionMenu.Item key={index}>
+                          item: {index}
+                        </ActionMenu.Item>
+                      ))}
+                    </ActionMenu>
+                  }
+                  key="a"
+                >
+                  <Card.Action
+                    title="asdf"
+                    icon={<Icon id={Icon.ids.more} />}
+                    key="asdf"
+                    onClick={_ => setOpen(!isOpen)}
+                  />
+                </BelowRight>
+              ]}
+              titleText="Yahoo"
+            />
+            {new Array(3).fill(null).map((_, index) => (
+              <MockItem key={index} />
+            ))}
+          </Carousel>
+        </div>
+      )
+    }
+    return <PortalStory />
+  })
