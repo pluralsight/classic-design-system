@@ -86,17 +86,15 @@ const ActionBar = props => (
   <div {...styles.actionBar(props)} {...filterReactProps(props)} />
 )
 
-const ActionButton = props => (
+const ActionBarAction = React.forwardRef(({ icon, ...props }, ref) => (
   <button
     {...styles.actionButton(props)}
     {...filterReactProps(props, { tagName: 'button' })}
-  />
-)
-
-const ActionBarAction = ({ icon, ...props }) => (
-  <ActionButton {...filterReactProps(props)}>{icon}</ActionButton>
-)
-
+    ref={ref}
+  >
+    {icon}
+  </button>
+))
 ActionBarAction.displayName = 'Card.Action'
 ActionBarAction.propTypes = {
   icon: PropTypes.element.isRequired,
