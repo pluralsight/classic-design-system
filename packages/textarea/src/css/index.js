@@ -42,9 +42,7 @@ export default {
     position: 'relative',
     display: 'flex',
     alignItems: 'center',
-    minWidth: `calc(192px + ${iconVars.widths.medium} + ${
-      core.layout.spacingXSmall
-    })`
+    minWidth: `calc(192px + ${iconVars.widths.medium} + ${core.layout.spacingXSmall})`
   },
 
   '.psds-text-area__label': {
@@ -72,9 +70,7 @@ export default {
 
   '.psds-text-area__error': {
     position: 'absolute',
-    right: `calc(-1 * (${iconVars.widths.medium} + ${
-      core.layout.spacingXSmall
-    }))`,
+    right: `calc(-1 * (${iconVars.widths.medium} + ${core.layout.spacingXSmall}))`,
     display: 'flex',
     alignItems: 'flex-start',
     height: '100%',
@@ -86,9 +82,6 @@ export default {
   '@media (min-width: 433px)': {
     '.psds-text-area': {
       width: 'auto'
-    },
-    '.psds-text-area__field': {
-      minWidth: '433px'
     }
   }
 }

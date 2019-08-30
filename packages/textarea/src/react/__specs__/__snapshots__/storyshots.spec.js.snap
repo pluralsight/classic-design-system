@@ -26,7 +26,7 @@ exports[`Storyshots disabled compare 1`] = `
               data-css-1xm24a9=""
             >
               <textarea
-                data-css-1vpjki6=""
+                data-css-12a0glg=""
                 disabled={false}
                 placeholder="I'm normal, see"
                 rows={4}
@@ -59,7 +59,7 @@ exports[`Storyshots disabled compare 1`] = `
               data-css-1xm24a9=""
             >
               <textarea
-                data-css-1vpjki6=""
+                data-css-12a0glg=""
                 disabled={true}
                 placeholder="I'm untouchable"
                 rows={4}
@@ -109,7 +109,7 @@ exports[`Storyshots error compare 1`] = `
               data-css-1xm24a9=""
             >
               <textarea
-                data-css-1vpjki6=""
+                data-css-12a0glg=""
                 disabled={false}
                 placeholder="I'm normal, see"
                 rows={4}
@@ -142,7 +142,7 @@ exports[`Storyshots error compare 1`] = `
               data-css-utxo7p=""
             >
               <textarea
-                data-css-1vpjki6=""
+                data-css-12a0glg=""
                 disabled={false}
                 rows={4}
                 style={
@@ -203,7 +203,7 @@ exports[`Storyshots focus onFocus/onBlur 1`] = `
             data-css-1xm24a9=""
           >
             <textarea
-              data-css-1vpjki6=""
+              data-css-12a0glg=""
               disabled={false}
               onBlur={[Function]}
               onFocus={[Function]}
@@ -248,7 +248,7 @@ exports[`Storyshots labels all 1`] = `
             data-css-1xm24a9=""
           >
             <textarea
-              data-css-1vpjki6=""
+              data-css-12a0glg=""
               disabled={false}
               placeholder="Some placeholder"
               rows={4}
@@ -296,7 +296,7 @@ exports[`Storyshots labels label 1`] = `
             data-css-1xm24a9=""
           >
             <textarea
-              data-css-1vpjki6=""
+              data-css-12a0glg=""
               disabled={false}
               rows={4}
               style={
@@ -338,7 +338,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
             data-css-1xm24a9=""
           >
             <textarea
-              data-css-1vpjki6=""
+              data-css-12a0glg=""
               disabled={false}
               rows={4}
               style={
@@ -380,7 +380,7 @@ exports[`Storyshots labels none 1`] = `
             data-css-1xm24a9=""
           >
             <textarea
-              data-css-1vpjki6=""
+              data-css-12a0glg=""
               disabled={false}
               rows={4}
               style={
@@ -417,7 +417,7 @@ exports[`Storyshots labels placeholder 1`] = `
             data-css-1xm24a9=""
           >
             <textarea
-              data-css-1vpjki6=""
+              data-css-12a0glg=""
               disabled={false}
               placeholder="some placeholder"
               rows={4}
@@ -455,7 +455,7 @@ exports[`Storyshots labels subLabel 1`] = `
             data-css-1xm24a9=""
           >
             <textarea
-              data-css-1vpjki6=""
+              data-css-12a0glg=""
               disabled={false}
               rows={4}
               style={
@@ -516,7 +516,7 @@ exports[`Storyshots layouts full width 1`] = `
               data-css-1xm24a9=""
             >
               <textarea
-                data-css-1vpjki6=""
+                data-css-12a0glg=""
                 disabled={false}
                 rows={4}
                 style={
@@ -549,7 +549,7 @@ exports[`Storyshots layouts full width 1`] = `
               data-css-utxo7p=""
             >
               <textarea
-                data-css-1vpjki6=""
+                data-css-12a0glg=""
                 disabled={false}
                 rows={4}
                 style={
@@ -609,7 +609,7 @@ exports[`Storyshots rows less than 4 1`] = `
             data-css-1xm24a9=""
           >
             <textarea
-              data-css-1vpjki6=""
+              data-css-12a0glg=""
               disabled={false}
               rows={1}
               style={
@@ -651,7 +651,7 @@ exports[`Storyshots rows more than 4 1`] = `
             data-css-1xm24a9=""
           >
             <textarea
-              data-css-1vpjki6=""
+              data-css-12a0glg=""
               disabled={false}
               rows={6}
               style={
@@ -688,7 +688,7 @@ exports[`Storyshots whitelist name 1`] = `
             data-css-1xm24a9=""
           >
             <textarea
-              data-css-1vpjki6=""
+              data-css-12a0glg=""
               disabled={false}
               name="myFieldNameOfPower"
               placeholder="I have a form name"
@@ -727,7 +727,7 @@ exports[`Storyshots whitelist onChange 1`] = `
             data-css-1xm24a9=""
           >
             <textarea
-              data-css-1vpjki6=""
+              data-css-12a0glg=""
               disabled={false}
               onChange={[Function]}
               placeholder="Change me"

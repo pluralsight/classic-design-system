@@ -728,7 +728,7 @@ exports[`Storyshots Sample Form sample 1`] = `
         >
           <button
             aria-checked={false}
-            data-css-1fg1tn7=""
+            data-css-nq9iqf=""
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -738,7 +738,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 "width": "100%",
               }
             }
-            tabIndex="0"
+            tabIndex={0}
           >
             <div
               data-css-480533=""
