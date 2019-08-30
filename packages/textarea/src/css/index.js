@@ -5,7 +5,8 @@ import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
 export default {
   '.psds-text-area': {
     display: 'inline-block',
-    width: '100%'
+    width: '100%',
+    maxWidth: '496px'
   },
   '.psds-text-area--disabled': {
     opacity: 0.5
@@ -41,8 +42,7 @@ export default {
   '.psds-text-area__field-container': {
     position: 'relative',
     display: 'flex',
-    alignItems: 'center',
-    minWidth: `calc(192px + ${iconVars.widths.medium} + ${core.layout.spacingXSmall})`
+    alignItems: 'center'
   },
 
   '.psds-text-area__label': {
@@ -77,11 +77,5 @@ export default {
     paddingTop: core.layout.spacingXSmall,
     marginLeft: core.layout.spacingXSmall,
     color: core.colors.red
-  },
-
-  '@media (min-width: 433px)': {
-    '.psds-text-area': {
-      width: 'auto'
-    }
   }
 }
