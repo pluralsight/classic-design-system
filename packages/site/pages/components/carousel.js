@@ -1,9 +1,15 @@
 import React from 'react'
 
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
 import Avatar from '@pluralsight/ps-design-system-avatar/react.js'
+import { BelowRight } from '@pluralsight/ps-design-system-position/react.js'
 import Card from '@pluralsight/ps-design-system-card/react.js'
 import Carousel from '@pluralsight/ps-design-system-carousel/react.js'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import core from '@pluralsight/ps-design-system-core'
 import Note from '@pluralsight/ps-design-system-note/react.js'
+import Text from '@pluralsight/ps-design-system-text/react.js'
+import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
   Chrome,
@@ -12,6 +18,7 @@ import {
   Example,
   Guideline,
   Intro,
+  Link,
   P,
   PageHeading,
   PropTypes,
@@ -238,7 +245,7 @@ export default _ => (
         }}
       />
 
-      <SectionHeading>In-app example</SectionHeading>
+      <SectionHeading>Auto paging</SectionHeading>
       <P>The number and width of items are handled automatically.</P>
 
       <Example.React
@@ -265,6 +272,20 @@ export default _ => (
 `
         ]}
       />
+
+      <SectionHeading>Using portals</SectionHeading>
+      <P>
+        If there are any UI elements that need to appear in the same visual
+        space as the carousel container, they will need to be rendered outside
+        the <Text.Code>Carousel</Text.Code> DOM. This is because the Carousel
+        container solution requires being styled{' '}
+        <Text.Code>overflow: hidden</Text.Code>. A{' '}
+        <Link href="https://reactjs.org/docs/portals.html">React Portal</Link>{' '}
+        is a great solution. A common example could be an{' '}
+        <Text.Code>ActionMenu</Text.Code> rendered from a{' '}
+        <Text.Code>Card</Text.Code>. Here is some example code:
+      </P>
+      <PortalExample />
 
       <SectionHeading>Size</SectionHeading>
       <P>
@@ -410,3 +431,85 @@ export default _ => (
     </Content>
   </Chrome>
 )
+
+function PortalExample() {
+  const [courseIdForOpenMenu, openCourseMenu] = React.useState(-1)
+
+  function handleClickMore(evt, courseId) {
+    evt.preventDefault()
+    console.log('click more', { courseId })
+    if (courseId === courseIdForOpenMenu) {
+      openCourseMenu(-1)
+    } else {
+      openCourseMenu(courseId)
+    }
+  }
+
+  return (
+    <Theme>
+      <style jsx>{`
+        .example {
+          padding: ${core.layout.spacingLarge};
+          background: ${core.colors.gray06};
+          color: ${core.colors.white};
+          min-height: 200px;
+        }
+        .label {
+          padding: ${core.layout.spacingLarge} 0;
+          font-size: ${core.type.fontSizeMedium};
+        }
+      `}</style>
+
+      <div className="example">
+        <Carousel
+          size={Carousel.sizes.wide}
+          controls={
+            <Carousel.Controls>
+              <Carousel.Control
+                direction={Carousel.Control.directions.prev}
+                onClick={_ => openCourseMenu(-1)}
+              />
+              <Carousel.Control
+                direction={Carousel.Control.directions.next}
+                onClick={_ => openCourseMenu(-1)}
+              />
+            </Carousel.Controls>
+          }
+        >
+          {MOCK_DATA.courses.map(course => (
+            <Card
+              key={course.id}
+              image={<Card.Image src={course.image} />}
+              metadata1={[course.author, course.level]}
+              title={<Card.Title>{course.title}</Card.Title>}
+              actionBarVisible
+              actionBar={[
+                <BelowRight
+                  inNode={typeof document !== 'undefined' && document.body}
+                  when={course.id === courseIdForOpenMenu}
+                  show={
+                    <ActionMenu>
+                      {new Array(8).fill(null).map((_, index) => (
+                        <ActionMenu.Item key={index}>
+                          Useless menu item {index}
+                        </ActionMenu.Item>
+                      ))}
+                    </ActionMenu>
+                  }
+                  key="a"
+                >
+                  <Card.Action
+                    title="See more"
+                    icon={<Icon id={Icon.ids.more} />}
+                    key="more"
+                    onClick={evt => handleClickMore(evt, course.id)}
+                  />
+                </BelowRight>
+              ]}
+            />
+          ))}
+        </Carousel>
+      </div>
+    </Theme>
+  )
+}
