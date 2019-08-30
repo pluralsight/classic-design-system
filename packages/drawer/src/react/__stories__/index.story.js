@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useState } from 'react'
 
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
@@ -32,32 +32,19 @@ DrawerContent.propTypes = {
   children: PropTypes.node
 }
 DrawerContent.defaultProps = {
-  children: 'Drawer Base Here'
+  children: 'Drawer Content Here'
 }
 
-class ControlledDrawerStory extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.toggle = this.toggle.bind(this)
-    this.state = { isOpen: true }
-  }
-
-  toggle() {
-    this.setState({ isOpen: !this.state.isOpen })
-  }
-
-  render() {
-    return (
-      <div>
-        <Button onClick={this.toggle}>Toggle drawer</Button>
-
-        <Drawer base={<DrawerBase />} isOpen={this.state.isOpen}>
-          <DrawerContent />
-        </Drawer>
-      </div>
-    )
-  }
+const ControlledDrawerStory = () => {
+  const [open, setOpen] = useState(true)
+  return (
+    <div>
+      <Button onClick={() => setOpen(!open)}>Toggle drawer</Button>
+      <Drawer base={<DrawerBase />} startOpen isOpen={open}>
+        <DrawerContent />
+      </Drawer>
+    </div>
+  )
 }
 
 class PreventToggleDrawerStory extends React.Component {

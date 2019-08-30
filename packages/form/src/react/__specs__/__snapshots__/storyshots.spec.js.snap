@@ -467,8 +467,6 @@ exports[`Storyshots Sample Form sample 1`] = `
         >
           <label
             data-css-w0yocm=""
-            onBlur={[Function]}
-            onFocus={[Function]}
             onKeyDown={[Function]}
             style={
               Object {
@@ -503,7 +501,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   value=""
                 />
                 <span
-                  data-css-vk5b0l=""
+                  data-css-p5zzy=""
                 >
                   /
                 </span>
@@ -523,7 +521,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   value=""
                 />
                 <span
-                  data-css-vk5b0l=""
+                  data-css-p5zzy=""
                 >
                   /
                 </span>
@@ -545,8 +543,6 @@ exports[`Storyshots Sample Form sample 1`] = `
                 <input
                   data-css-gyrv08=""
                   disabled={false}
-                  onBlur={[Function]}
-                  onFocus={[Function]}
                   readOnly={true}
                   tabIndex="-1"
                 />

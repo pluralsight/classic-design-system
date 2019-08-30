@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@5.0.2...@pluralsight/ps-design-system-table@5.0.3) (2019-08-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [5.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@5.0.1...@pluralsight/ps-design-system-table@5.0.2) (2019-08-27)
+
+
+### Bug Fixes
+
+* allow basic nodes inside of column headers and tooltips ([b0be205](https://github.com/pluralsight/design-system/commit/b0be205))
+* move the isRequired restriction to cover the whole prop ([714278c](https://github.com/pluralsight/design-system/commit/714278c))
+* simplify PropTypes declaration for ColumnHeader.children ([497f745](https://github.com/pluralsight/design-system/commit/497f745))
+
+
+
+
+
 ## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@5.0.0...@pluralsight/ps-design-system-table@5.0.1) (2019-08-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table

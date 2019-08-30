@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-note",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Note UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -20,7 +20,7 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-avatar": "^4.0.4",
+    "@pluralsight/ps-design-system-avatar": "^4.1.0",
     "@pluralsight/ps-design-system-core": "^4.4.4",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.6",
     "@pluralsight/ps-design-system-icon": "^13.0.0",
