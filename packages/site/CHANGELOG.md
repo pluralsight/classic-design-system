@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@13.1.4...@pluralsight/ps-design-system-site@13.1.5) (2019-08-30)
+
+
+### Bug Fixes
+
+* **site:** restore http-server needed for runtime ([a71ba38](https://github.com/pluralsight/design-system/commit/a71ba38))
+
+
+
+
+
 ## [13.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@13.1.3...@pluralsight/ps-design-system-site@13.1.4) (2019-08-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site
