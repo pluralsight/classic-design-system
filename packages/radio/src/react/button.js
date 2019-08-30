@@ -1,4 +1,4 @@
-import { css } from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -11,10 +11,10 @@ import stylesheet from '../css/index.js'
 const styles = {
   button: () => css(stylesheet['.psds-radio-button']),
   circle: (themeName, { checked }) =>
-    css(
-      stylesheet['.psds-radio-button__circle'],
-      stylesheet[`.psds-radio-button__circle.psds-theme--${themeName}`],
-      checked && stylesheet['.psds-radio-button__circle--checked']
+    compose(
+      css(stylesheet['.psds-radio-button__circle']),
+      css(stylesheet[`.psds-radio-button__circle.psds-theme--${themeName}`]),
+      checked && css(stylesheet['.psds-radio-button__circle--checked'])
     ),
   circleOuter: () => css(stylesheet['.psds-radio-button__circle-outer']),
   circleInner: (themeName, { checked }) =>
@@ -22,9 +22,9 @@ const styles = {
   halo: () => css(stylesheet['.psds-radio-button__halo']),
   input: () => css(stylesheet['.psds-radio-button__input']),
   label: themeName =>
-    css(
-      stylesheet['.psds-radio-button__label'],
-      stylesheet[`.psds-radio-button__label.psds-theme--${themeName}`]
+    compose(
+      css(stylesheet['.psds-radio-button__label']),
+      css(stylesheet[`.psds-radio-button__label.psds-theme--${themeName}`])
     )
 }
 
