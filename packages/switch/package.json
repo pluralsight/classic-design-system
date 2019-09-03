@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-switch",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Design System component for switch ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -9,7 +9,7 @@
   "module": "index.js",
   "scripts": {
     "build": "run-s build:js build:css",
-    "build:css": "build-css",
+    "build:css": "build-css --useGlamor",
     "build:js": "babel --root-mode upward src --out-dir dist",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
@@ -20,6 +20,7 @@
   "keywords": [],
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.4.4",
+    "@pluralsight/ps-design-system-filter-react-props": "*",
     "@pluralsight/ps-design-system-halo": "^5.0.0",
     "@pluralsight/ps-design-system-util": "^2.0.5",
     "prop-types": "^15.7.2"
