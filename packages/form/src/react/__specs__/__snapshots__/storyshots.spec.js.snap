@@ -636,7 +636,12 @@ exports[`Storyshots Sample Form sample 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             role="radiogroup"
-            tabIndex="0"
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+            tabIndex={0}
           >
             <div
               data-css-xp79s5=""

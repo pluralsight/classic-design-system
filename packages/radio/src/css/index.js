@@ -1,9 +1,9 @@
 import core from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars.js'
 
 export default {
-  '.psds-radio-group:focus': {
-    outline: 'none'
+  '.psds-radio-group': {
+    '&:focus': { outline: 'none' }
   },
   '.psds-radio-group--disabled': {
     opacity: '0.5'
@@ -36,14 +36,13 @@ export default {
     width: '16px',
     borderRadius: '50%',
     border: `2px solid ${core.colors.gray02}`,
-    background: core.colors.gray05
+    background: core.colors.gray05,
+
+    '&:focus': { outline: 'none' }
   },
   [`.psds-radio-button__circle.psds-theme--${themeNames.light}`]: {
     background: core.colors.white,
     borderColor: core.colors.gray04
-  },
-  '.psds-radio-button__circle:focus': {
-    outline: 'none'
   },
   '.psds-radio-button__circle--checked': {
     borderColor: core.colors.blue
