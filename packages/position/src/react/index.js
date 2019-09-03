@@ -55,13 +55,15 @@ function Position(props) {
       setStyle(props.position(targetRef.current).styleFor(elRef.current))
   }, [props.when, targetRef, elRef, props])
 
-  const show = React.cloneElement(props.show, {
-    ref: elRef,
-    style: {
-      ...child.props.style,
-      ...style
-    }
-  })
+  const show =
+    props.when &&
+    React.cloneElement(props.show, {
+      ref: elRef,
+      style: {
+        ...child.props.style,
+        ...style
+      }
+    })
 
   return (
     <React.Fragment>
