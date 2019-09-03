@@ -16,9 +16,6 @@ export default _ => (
 
 Design components, color styles, and text styles are available in [Figma](http://figma.com). Pluralsight team members should find Design System Core and Web libraries enabled by default in all drafts.
 
-[How to use team libraries?](https://help.figma.com/article/29-team-library)
-
-[How to use color and text styles?](https://help.figma.com/article/188-styles-applying-styles)
 `}
       </Doc>
 
@@ -96,16 +93,6 @@ Design components, color styles, and text styles are available in [Figma](http:/
           <Table.Cell>Pluralsight Logos</Table.Cell>
         </Table.Row>
       </Table>
-
-      <Doc>
-        {`
-## UI Kit
-
-A UI kit is found on the [first page of \`PSDS - Web\`](https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/PSDS-Web). It is built on top of team libraries, and can be used as a visual tool kit from which to copy.
-
-![UI Kit](https://github.com/pluralsight/design-system-assets/raw/master/readme-images/ui-kit.png)
-`}
-      </Doc>
     </Content>
   </Chrome>
 )
