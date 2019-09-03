@@ -984,6 +984,7 @@ exports[`Storyshots in drawer medium 1`] = `
         data-css-1i2htk9=""
       >
         <div
+          aria-hidden={true}
           data-css-1j3g0qd=""
         >
           <div>
@@ -1095,6 +1096,7 @@ exports[`Storyshots in drawer small 1`] = `
         data-css-1i2htk9=""
       >
         <div
+          aria-hidden={true}
           data-css-1j3g0qd=""
         >
           <div>
