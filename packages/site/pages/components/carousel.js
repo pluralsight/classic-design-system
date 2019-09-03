@@ -489,11 +489,14 @@ function PortalExample() {
                   when={course.id === courseIdForOpenMenu}
                   show={
                     <ActionMenu>
-                      {new Array(8).fill(null).map((_, index) => (
-                        <ActionMenu.Item key={index}>
-                          Useless menu item {index}
-                        </ActionMenu.Item>
-                      ))}
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
                     </ActionMenu>
                   }
                   key="a"
@@ -501,7 +504,6 @@ function PortalExample() {
                   <Card.Action
                     title="See more"
                     icon={<Icon id={Icon.ids.more} />}
-                    key="more"
                     onClick={evt => handleClickMore(evt, course.id)}
                   />
                 </BelowRight>

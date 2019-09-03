@@ -291,16 +291,6 @@ storiesOf('Carousel/with ActionMenu', module)
         }
       }
 
-      const actionMenu = (
-        <ActionMenu>
-          {new Array(8).fill(null).map((_, index) => (
-            <ActionMenu.Item key={index}>
-              Useless menu item {index}
-            </ActionMenu.Item>
-          ))}
-        </ActionMenu>
-      )
-
       return (
         <div style={{ border: '1px solid red', maxWidth: 600, padding: 10 }}>
           <Carousel
@@ -329,7 +319,18 @@ storiesOf('Carousel/with ActionMenu', module)
                   <BelowRight
                     inNode={typeof document !== 'undefined' && document.body}
                     when={course.id === courseIdForOpenMenu}
-                    show={actionMenu}
+                    show={
+                      <ActionMenu>
+                        <ActionMenu.Item key={0}>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item key={1}>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item key={2}>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item key={3}>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item key={4}>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item key={5}>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item key={6}>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item key={7}>Useless item</ActionMenu.Item>
+                      </ActionMenu>
+                    }
                     key="a"
                   >
                     <Card.Action
