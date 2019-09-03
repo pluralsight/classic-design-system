@@ -241,7 +241,6 @@ storiesOf('Carousel/with ActionMenu', module)
                   <Card.Action
                     title="asdf"
                     icon={<Icon id={Icon.ids.more} />}
-                    key="asdf"
                     onClick={_ => setOpen(!isOpen)}
                   />
                 </BelowRight>
@@ -256,4 +255,95 @@ storiesOf('Carousel/with ActionMenu', module)
       )
     }
     return <PortalStory />
+  })
+  .add('perf: many cards in portals', () => {
+    const MOCK_DATA = { courses: genData(40) }
+
+    function genData(count) {
+      function randStr() {
+        return Math.random()
+          .toString(36)
+          .substring(7)
+      }
+
+      function genDatum(id) {
+        return {
+          author: randStr(),
+          id,
+          image: '//picsum.photos/680/320?image=42&gravity=north',
+          level: 'Advanced',
+          title: randStr()
+        }
+      }
+      return new Array(count).fill(null).map((_, i) => genDatum(i + 1))
+    }
+
+    function PerfPortalStory() {
+      const [courseIdForOpenMenu, openCourseMenu] = React.useState(-1)
+
+      function handleClickMore(evt, courseId) {
+        evt.preventDefault()
+        console.log('click more', { courseId })
+        if (courseId === courseIdForOpenMenu) {
+          openCourseMenu(-1)
+        } else {
+          openCourseMenu(courseId)
+        }
+      }
+
+      const actionMenu = (
+        <ActionMenu>
+          {new Array(8).fill(null).map((_, index) => (
+            <ActionMenu.Item key={index}>
+              Useless menu item {index}
+            </ActionMenu.Item>
+          ))}
+        </ActionMenu>
+      )
+
+      return (
+        <div style={{ border: '1px solid red', maxWidth: 600, padding: 10 }}>
+          <Carousel
+            size={Carousel.sizes.wide}
+            controls={
+              <Carousel.Controls>
+                <Carousel.Control
+                  direction={Carousel.Control.directions.prev}
+                  onClick={_ => openCourseMenu(-1)}
+                />
+                <Carousel.Control
+                  direction={Carousel.Control.directions.next}
+                  onClick={_ => openCourseMenu(-1)}
+                />
+              </Carousel.Controls>
+            }
+          >
+            {MOCK_DATA.courses.map(course => (
+              <Card
+                key={course.id}
+                image={<Card.Image src={course.image} />}
+                metadata1={[course.author, course.level]}
+                title={<Card.Title>{course.title}</Card.Title>}
+                actionBarVisible
+                actionBar={[
+                  <BelowRight
+                    inNode={typeof document !== 'undefined' && document.body}
+                    when={course.id === courseIdForOpenMenu}
+                    show={actionMenu}
+                    key="a"
+                  >
+                    <Card.Action
+                      title="See more"
+                      icon={<Icon id={Icon.ids.more} />}
+                      onClick={evt => handleClickMore(evt, course.id)}
+                    />
+                  </BelowRight>
+                ]}
+              />
+            ))}
+          </Carousel>
+        </div>
+      )
+    }
+    return <PerfPortalStory />
   })
