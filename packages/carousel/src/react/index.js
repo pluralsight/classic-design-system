@@ -1,9 +1,7 @@
 import { compose, css } from 'glamor'
 import React, { cloneElement } from 'react'
-import { Transition } from 'react-transition-group'
 import PropTypes from 'prop-types'
 
-import core from '@pluralsight/ps-design-system-core'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import stylesheet from '../css/index.js'
@@ -17,8 +15,6 @@ import { Controls, Control } from './controls.js'
 import useResizeObserver from './use-resize-observer.js'
 import useSwipe from './use-swipe.js'
 import useUniqueId from './use-unique-id.js'
-
-const TRANSITION_DURATION_MS = parseInt(core.motion.speedXSlow, 10)
 
 const styles = {
   carousel: (props, { ready }) =>
@@ -214,12 +210,7 @@ function Page(props) {
       {...rest}
       {...(!isActivePage && { hidden: true, tabIndex: -1 })}
     >
-      <Transition in={isActivePage} timeout={TRANSITION_DURATION_MS}>
-        {state => {
-          if (state === 'exited') return null
-          return children
-        }}
-      </Transition>
+      {children}
     </li>
   )
 }
