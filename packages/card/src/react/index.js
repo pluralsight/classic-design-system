@@ -5,9 +5,9 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Shiitake from 'shiitake'
 
-import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
+import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react.js'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
 
 import css from '../css/index.js'
 import { toPercentageString } from '../js/index.js'
@@ -93,12 +93,19 @@ const ActionButton = props => (
   />
 )
 
-const ActionBarAction = ({ icon, ...props }) => (
-  <ActionButton {...filterReactProps(props)}>{icon}</ActionButton>
-)
+const ActionBarAction = ({ icon, ...props }) => {
+  const ariaLabel = props['aria-label'] || props.title
+
+  return (
+    <ActionButton {...filterReactProps(props)} aria-label={ariaLabel}>
+      {icon}
+    </ActionButton>
+  )
+}
 
 ActionBarAction.displayName = 'Card.Action'
 ActionBarAction.propTypes = {
+  'aria-label': PropTypes.string,
   icon: PropTypes.element.isRequired,
   title: PropTypes.string.isRequired
 }

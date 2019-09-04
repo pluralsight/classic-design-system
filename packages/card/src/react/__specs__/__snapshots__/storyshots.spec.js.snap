@@ -29,6 +29,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
           data-css-1kb1o0e=""
         >
           <button
+            aria-label="Bookmark"
             data-css-226xmr=""
             title="Bookmark"
           >
@@ -175,6 +176,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
           data-css-4ed7vx=""
         >
           <button
+            aria-label="Bookmark"
             data-css-226xmr=""
             title="Bookmark"
           >
@@ -193,6 +195,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
             </div>
           </button>
           <button
+            aria-label="More"
             data-css-226xmr=""
             title="More"
           >
@@ -339,6 +342,7 @@ exports[`Storyshots actionBar single action 1`] = `
           data-css-4ed7vx=""
         >
           <button
+            aria-label="Bookmark"
             data-css-226xmr=""
             title="Bookmark"
           >
@@ -788,6 +792,7 @@ exports[`Storyshots combo everything focusable 1`] = `
           data-css-ldsotz=""
         >
           <button
+            aria-label="Bookmark"
             data-css-226xmr=""
             title="Bookmark"
           >
@@ -806,6 +811,7 @@ exports[`Storyshots combo everything focusable 1`] = `
             </div>
           </button>
           <button
+            aria-label="Settings"
             data-css-226xmr=""
             title="Settings"
           >
@@ -824,6 +830,7 @@ exports[`Storyshots combo everything focusable 1`] = `
             </div>
           </button>
           <button
+            aria-label="More"
             data-css-226xmr=""
             title="More"
           >
@@ -1054,6 +1061,7 @@ exports[`Storyshots combo everything locked 1`] = `
           data-css-1kb1o0e=""
         >
           <button
+            aria-label="Bookmark"
             data-css-226xmr=""
             title="Bookmark"
           >
@@ -1072,6 +1080,7 @@ exports[`Storyshots combo everything locked 1`] = `
             </div>
           </button>
           <button
+            aria-label="Settings"
             data-css-226xmr=""
             title="Settings"
           >
@@ -1090,6 +1099,7 @@ exports[`Storyshots combo everything locked 1`] = `
             </div>
           </button>
           <button
+            aria-label="More"
             data-css-226xmr=""
             title="More"
           >
