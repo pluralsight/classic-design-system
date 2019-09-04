@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Typeahead default 1`] = `
+<div>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-1xm24a9=""
+      >
+        <div
+          data-css-177hkuc=""
+        >
+          <input
+            data-css-lzb8ea=""
+            disabled={false}
+            onChange={[Function]}
+            onFocus={[Function]}
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
