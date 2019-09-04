@@ -169,8 +169,8 @@ const InAppExample = props => (
     <li>
       <Card
         actionBar={[
-          <Card.Action key="1" title="Bookmark action" icon={<Icon id={Icon.ids.bookmark} />} />,
-          <Card.Action key="2" title="More action" icon={<Icon id={Icon.ids.more} />} />
+          <Card.Action key="1" title="Bookmark" icon={<Icon id={Icon.ids.bookmark} />} />,
+          <Card.Action key="2" title="More" icon={<Icon id={Icon.ids.more} />} />
         ]}
         title={
           <Card.Title>
@@ -194,8 +194,8 @@ const InAppExample = props => (
     <li>
       <Card
         actionBar={[
-          <Card.Action key="1" title="Bookmark action" icon={<Icon id={Icon.ids.bookmark} />} />,
-          <Card.Action key="2" title="More action" icon={<Icon id={Icon.ids.more} />} />
+          <Card.Action key="1" title="Bookmark" icon={<Icon id={Icon.ids.bookmark} />} />,
+          <Card.Action key="2" title="More" icon={<Icon id={Icon.ids.more} />} />
         ]}
         actionBarVisible
         title={<Card.Title>Webpack Fundamentals"</Card.Title>}
@@ -337,7 +337,8 @@ export default _ => (
               true,
               null,
               'icon representing action'
-            ])
+            ]),
+            PropTypes.row(['title', 'string', true])
           ],
           'Card.Image': [
             PropTypes.row(['src', 'string', true, null, 'image url'])
