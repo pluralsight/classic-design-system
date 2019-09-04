@@ -235,8 +235,7 @@ Tag.propTypes = {
   icon: PropTypes.element
 }
 
-const renderTag = props =>
-  props.tag && props.size !== 'small' ? props.tag : null
+const renderTag = props => props.tag
 
 const Text = props => <span {...filterReactProps(props, { tagName: 'span' })} />
 Text.displayName = 'Card.Text'

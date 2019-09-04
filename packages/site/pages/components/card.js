@@ -607,7 +607,7 @@ export default _ => (
 <Card
   size={Card.sizes.small}
   tag={<Card.Tag icon={<Icon id={Icon.ids.channel} />}>Channel</Card.Tag>}
-  title={<Card.Title>Tag hidden if card small</Card.Title>}
+  title={<Card.Title>Icon and text on card small</Card.Title>}
   image={
     <Card.Image src="/static/img/course3.jpg" />
   }
