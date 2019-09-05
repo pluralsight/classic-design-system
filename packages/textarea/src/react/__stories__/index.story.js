@@ -1,4 +1,5 @@
 import { action } from '@storybook/addon-actions'
+import Form from '@pluralsight/ps-design-system-form/react.js'
 import { storiesOf } from '@storybook/react'
 
 import React from 'react'
@@ -65,16 +66,25 @@ storiesOf('whitelist', module)
     <TextInput placeholder="Change me" onChange={action('I changed')} />
   ))
 
-storiesOf('layouts', module).add('full width', _ => (
-  <div style={{ border: '1px solid blue', width: '500px' }}>
-    <TextInput label="First" style={{ display: 'block', width: '100%' }} />
-    <TextInput
-      error
-      label="Second"
-      style={{ display: 'block', width: '100%' }}
-    />
-  </div>
-))
+storiesOf('layouts', module)
+  .add('full width', _ => (
+    <div style={{ border: '1px solid blue', width: '800px' }}>
+      <TextInput
+        label="max-width still applies"
+        style={{ display: 'block', width: '100%' }}
+      />
+      <TextInput
+        error
+        label="remove max-width"
+        style={{ display: 'block', width: '100%', maxWidth: 'none' }}
+      />
+    </div>
+  ))
+  .add('Form.VerticalLayout', () => (
+    <Form.VerticalLayout>
+      {[<TextInput key="a" label="Inside Form.VerticalLayout" />]}
+    </Form.VerticalLayout>
+  ))
 
 storiesOf('focus', module).add('onFocus/onBlur', _ => (
   <TextInput

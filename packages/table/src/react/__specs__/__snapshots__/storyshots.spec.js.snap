@@ -1191,7 +1191,6 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
       data-css-1i2htk9=""
     >
       <div
-        aria-hidden={true}
         data-css-1j3g0qd=""
       >
         Panel contnet
@@ -1333,7 +1332,6 @@ exports[`Storyshots drawer mulitple 1`] = `
       data-css-1i2htk9=""
     >
       <div
-        aria-hidden={true}
         data-css-1j3g0qd=""
       >
         This is panel content
@@ -1395,7 +1393,6 @@ exports[`Storyshots drawer mulitple 1`] = `
       data-css-1i2htk9=""
     >
       <div
-        aria-hidden={true}
         data-css-1j3g0qd=""
       >
         This is panel content
@@ -1476,10 +1473,9 @@ exports[`Storyshots drawer nested table 1`] = `
       </div>
     </div>
     <div
-      data-css-1i2htk9=""
+      data-css-ule0ur=""
     >
       <div
-        aria-hidden={false}
         data-css-1j3g0qd=""
       >
         <div
@@ -1631,7 +1627,6 @@ exports[`Storyshots drawer single 1`] = `
       data-css-1i2htk9=""
     >
       <div
-        aria-hidden={true}
         data-css-1j3g0qd=""
       >
         This is panel content
@@ -1716,7 +1711,6 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
       data-css-1i2htk9=""
     >
       <div
-        aria-hidden={true}
         data-css-1j3g0qd=""
       >
         This is panel content
@@ -1793,7 +1787,6 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
       data-css-1i2htk9=""
     >
       <div
-        aria-hidden={true}
         data-css-1j3g0qd=""
       >
         This is panel content
@@ -1870,7 +1863,6 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
       data-css-1i2htk9=""
     >
       <div
-        aria-hidden={true}
         data-css-1j3g0qd=""
       >
         This is panel content
