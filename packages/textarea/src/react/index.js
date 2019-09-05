@@ -29,10 +29,6 @@ const styles = {
           ...css['.psds-text-area__field:focus'],
           ...css[`.psds-text-area__field.psds-theme--${themeName}:focus`]
         }
-      },
-      {
-        '@media (min-width: 433px)':
-          css['@media (min-width: 433px)']['.psds-text-area__field']
       }
     ),
   fieldContainer: ({ themeName }) =>
@@ -40,11 +36,7 @@ const styles = {
   textarea: ({ disabled }) =>
     glamor.css(
       css['.psds-text-area'],
-      disabled && css['.psds-text-area--disabled'],
-      {
-        '@media (min-width: 433px)':
-          css['@media (min-width: 433px)']['.psds-text-area']
-      }
+      disabled && css['.psds-text-area--disabled']
     ),
   label: ({ themeName }) =>
     glamor.css(

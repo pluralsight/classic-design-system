@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@11.0.0...@pluralsight/ps-design-system-card@11.1.0) (2019-09-05)
+
+
+### Bug Fixes
+
+* **card:** adds tag to small card for issue ([c4b0225](https://github.com/pluralsight/design-system/commit/c4b0225)), closes [#549](https://github.com/pluralsight/design-system/issues/549) [#551](https://github.com/pluralsight/design-system/issues/551)
+
+
+### Features
+
+* **card:** derive aria-label from title prop ([d158446](https://github.com/pluralsight/design-system/commit/d158446))
+
+
+
+
+
 # [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@10.0.4...@pluralsight/ps-design-system-card@11.0.0) (2019-08-09)
 
 
