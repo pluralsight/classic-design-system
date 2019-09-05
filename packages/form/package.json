@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-form",
-  "version": "3.0.5",
+  "version": "3.1.0",
   "description": "Design system components for form layout",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -45,7 +45,7 @@
     "@pluralsight/ps-design-system-switch": "^4.0.1",
     "@pluralsight/ps-design-system-tag": "^4.0.0",
     "@pluralsight/ps-design-system-text": "^13.0.0",
-    "@pluralsight/ps-design-system-textarea": "^3.0.0",
+    "@pluralsight/ps-design-system-textarea": "^3.0.1",
     "@pluralsight/ps-design-system-textinput": "^3.0.0",
     "@pluralsight/ps-design-system-theme": "^3.0.3"
   }
