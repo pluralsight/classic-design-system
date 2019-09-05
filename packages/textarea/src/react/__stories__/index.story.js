@@ -82,7 +82,7 @@ storiesOf('layouts', module)
   ))
   .add('Form.VerticalLayout', () => (
     <Form.VerticalLayout>
-      <TextInput label="Inside Form.VerticalLayout" />
+      {[<TextInput key="a" label="Inside Form.VerticalLayout" />]}
     </Form.VerticalLayout>
   ))
 
