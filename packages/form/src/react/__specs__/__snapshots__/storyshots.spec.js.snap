@@ -646,12 +646,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             role="radiogroup"
-            style={
-              Object {
-                "width": "100%",
-              }
-            }
-            tabIndex={0}
+            tabIndex="0"
           >
             <div
               data-css-xp79s5=""
@@ -743,7 +738,7 @@ exports[`Storyshots Sample Form sample 1`] = `
         >
           <button
             aria-checked={false}
-            data-css-nq9iqf=""
+            data-css-1fg1tn7=""
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -754,7 +749,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 "width": "100%",
               }
             }
-            tabIndex={0}
+            tabIndex="0"
           >
             <div
               data-css-480533=""
@@ -806,7 +801,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               Comment
             </div>
             <div
-              data-css-1ios7mb=""
+              data-css-1ghdxx6=""
             >
               <div
                 data-css-1xm24a9=""
