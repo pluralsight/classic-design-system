@@ -1,32 +1,45 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import Typeahead from '../index.js'
+import { combineFns } from '../utils.js'
 
-const suggestions = [
-  { label: 'First' },
-  { label: 'Second' },
-  { label: 'Third' }
-]
+import US_STATES from './fixtures/us-states.json'
 
-storiesOf('Typeahead', module).add('default', _ => {
-  function Story() {
-    const [value, setValue] = React.useState(suggestions[0].value)
-
-    function handleChange(evt, nextValue) {
-      setValue(nextValue)
-    }
-
-    return (
-      <Typeahead onChange={handleChange} value={value}>
-        {suggestions.map((suggestion, key) => (
-          <Typeahead.Suggestion key={key}>
-            {suggestion.label}
-          </Typeahead.Suggestion>
-        ))}
-      </Typeahead>
-    )
-  }
-
-  return <Story />
+storiesOf('Components | Typeahead / uncontrolled', module).add('default', _ => {
+  return (
+    <Typeahead>
+      {US_STATES.map(state => (
+        <Typeahead.Suggestion key={state.abbreviation}>
+          {state.name}
+        </Typeahead.Suggestion>
+      ))}
+    </Typeahead>
+  )
 })
+storiesOf('Components | Typeahead / controlled', module).add('default', _ => (
+  <ControlledStory />
+))
+
+function ControlledStory(props) {
+  const defaultValue = US_STATES[0].name
+  const [value, setValue] = React.useState(defaultValue)
+
+  const handleChange = combineFns((evt, nextValue) => {
+    setValue(nextValue)
+  }, props.onChange)
+
+  return (
+    <Typeahead onChange={handleChange} value={value} {...props}>
+      {US_STATES.map(state => (
+        <Typeahead.Suggestion key={state.abbreviation}>
+          {state.name}
+        </Typeahead.Suggestion>
+      ))}
+    </Typeahead>
+  )
+}
+ControlledStory.propTypes = {
+  onChange: PropTypes.func
+}

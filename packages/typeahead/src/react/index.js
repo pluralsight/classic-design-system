@@ -1,5 +1,5 @@
 import { css } from 'glamor'
-import React from 'react'
+import React, { Children } from 'react'
 import PropTypes from 'prop-types'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
@@ -28,65 +28,54 @@ const styles = {
 }
 
 const Typeahead = React.forwardRef((props, forwardedRef) => {
+  const { children, onChange, value } = props
+
   const ref = React.useRef()
   React.useImperativeHandle(forwardedRef, () => ref.current)
 
-  const [currentValue, setCurrentValue] = React.useState(props.value)
-  const [searchTerm, setSearchTerm] = React.useState('')
-  const [menuIsOpen, setMenuIsOpen] = React.useState(false)
+  const suggestions = React.useMemo(
+    () =>
+      Children.toArray(children).map((comp, index) => ({
+        comp,
+        index,
+        value: comp.props.children
+      })),
+    [children]
+  )
+
+  const controlled = React.useMemo(() => !!onChange, [onChange])
+
+  const [innerValue, setInnerValue] = React.useState(value)
+  const [open, setOpen] = React.useState(false)
 
   React.useEffect(() => {
-    setCurrentValue(props.value)
-  }, [props.value])
+    if (controlled) setInnerValue(value)
+  }, [controlled, value])
 
-  React.useEffect(() => {
-    if (!props.onChange) return
-    props.onChange(currentValue)
-  }, [currentValue, props])
+  const handleChange = (evt, nextValue) => {
+    if (!nextValue) nextValue = evt.target.value
 
-  React.useEffect(() => {
-    setMenuIsOpen(false)
-  }, [currentValue])
-
-  const handleInputChange = evt => {
-    const { value: nextValue } = evt.target
-    setSearchTerm(nextValue)
+    if (controlled) onChange(evt, nextValue)
+    else setInnerValue(nextValue)
   }
 
-  const handleInputFocus = evt => {
-    setMenuIsOpen(true)
+  const handleFocus = evt => {
+    setOpen(true)
   }
 
-  const handleMenuChange = (evt, nextValue) => {
-    setCurrentValue(nextValue)
+  const handleSuggestionMenuChange = (evt, nextValue) => {
+    setOpen(false)
+    handleChange(evt, nextValue)
   }
-
-  const options = useCollectOptions(props.children)
-
-  const currentLabel = React.useMemo(() => {
-    const selected = options.find(option => option.value === currentValue)
-    return selected && selected.label
-  }, [currentValue, options])
-
-  const displayValue = React.useMemo(() => searchTerm || currentLabel || '', [
-    searchTerm,
-    currentLabel
-  ])
 
   return (
     <BelowLeft
-      when={menuIsOpen}
+      when={open}
       show={
-        <ActionMenu
-          onChange={handleMenuChange}
-          origin={ActionMenu.origins.topLeft}
-        >
-          {options.map(({ comp, index, value }) => (
-            <ActionMenu.Item key={index} value={value}>
-              {comp}
-            </ActionMenu.Item>
-          ))}
-        </ActionMenu>
+        <SuggestionsMenu
+          onChange={handleSuggestionMenuChange}
+          suggestions={suggestions}
+        />
       }
     >
       <div
@@ -96,20 +85,45 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
       >
         <TextInput
           {...pick(props, TEXT_INPUT_PROPS)}
-          onChange={handleInputChange}
-          onFocus={handleInputFocus}
-          value={displayValue}
+          onChange={handleChange}
+          onFocus={handleFocus}
+          value={innerValue}
         />
       </div>
     </BelowLeft>
   )
 })
 
-const Suggestion = React.forwardRef((props, forwardedRef) => {
-  const ref = React.useRef()
-  React.useImperativeHandle(forwardedRef, () => ref.current)
+const SuggestionsMenu = React.forwardRef((props, forwardedRef) => {
+  return (
+    <ActionMenu
+      {...props}
+      ref={forwardedRef}
+      origin={ActionMenu.origins.topLeft}
+      shouldFocusOnMount={false}
+    >
+      {props.suggestions.map(({ comp, index, value }) => (
+        <ActionMenu.Item key={index} value={value}>
+          {comp}
+        </ActionMenu.Item>
+      ))}
+    </ActionMenu>
+  )
+})
 
-  return <div ref={ref} {...props} />
+SuggestionsMenu.propTypes = {
+  onChange: PropTypes.func,
+  suggestions: PropTypes.arrayOf(
+    PropTypes.shape({
+      comp: PropTypes.node.isRequired,
+      index: PropTypes.number.isRequired,
+      value: PropTypes.string.isRequired
+    })
+  ).isRequired
+}
+
+const Suggestion = React.forwardRef((props, forwardedRef) => {
+  return <div ref={forwardedRef} {...props} />
 })
 
 Suggestion.propTypes = {
@@ -144,15 +158,3 @@ Typeahead.Suggestion = Suggestion
 export const appearances = vars.appearances
 
 export default Typeahead
-
-function useCollectOptions(children) {
-  return React.useMemo(
-    () =>
-      React.Children.toArray(children).map((comp, index) => ({
-        comp,
-        index,
-        value: comp.props.children
-      })),
-    [children]
-  )
-}
