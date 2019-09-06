@@ -18,7 +18,7 @@ describe('Button', () => {
     let container
 
     beforeEach(() => {
-      ;({ container } = render(
+      const { container: _container } = render(
         <Button
           disabled
           onClick={handleClick}
@@ -26,7 +26,9 @@ describe('Button', () => {
         >
           Can't Be Clicked
         </Button>
-      ))
+      )
+
+      container = _container
     })
 
     afterEach(() => {

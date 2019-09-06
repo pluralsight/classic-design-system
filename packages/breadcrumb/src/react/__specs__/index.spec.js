@@ -16,23 +16,15 @@ describe('Breadcrumb', () => {
   })
 
   describe('when disabled', () => {
-    const handleClick = jest.fn()
-    let container, button
-
-    beforeEach(() => {
-      ;({ container } = render(
+    it('does not allow clicks', () => {
+      const handleClick = jest.fn()
+      const { container } = render(
         <Breadcrumb disabled href="" onClick={handleClick}>
           Clicks once
         </Breadcrumb>
-      ))
-      button = container.querySelector('button')
-    })
+      )
+      const button = container.querySelector('button')
 
-    afterEach(() => {
-      handleClick.mockClear()
-    })
-
-    it('does not allow clicks', () => {
       fireEvent.click(button)
 
       expect(handleClick).not.toHaveBeenCalled()
