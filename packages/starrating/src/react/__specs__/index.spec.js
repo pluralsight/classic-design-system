@@ -21,14 +21,9 @@ describe('StarRating', () => {
   })
 
   describe('with default props', () => {
-    let container, stars
-
-    beforeEach(() => {
-      ;({ container } = render(<StarRating />))
-      stars = collectStarNodes(container)
-    })
-
     it('renders stars as NOT interactive(span NOT button)', () => {
+      const { container } = render(<StarRating />)
+      const stars = collectStarNodes(container)
       expect.assertions(5)
 
       stars.forEach(node => {
@@ -38,15 +33,10 @@ describe('StarRating', () => {
   })
 
   describe('with onChange prop', () => {
-    let container, stars
-
-    beforeEach(() => {
-      const handleChange = jest.fn()
-      ;({ container } = render(<StarRating onChange={handleChange} />))
-      stars = collectStarNodes(container)
-    })
-
     it('renders stars as interactive(button NOT span)', () => {
+      const handleChange = jest.fn()
+      const { container } = render(<StarRating onChange={handleChange} />)
+      const stars = collectStarNodes(container)
       expect.assertions(5)
 
       stars.forEach(node => {
