@@ -46,19 +46,19 @@ LeftOf.displayName = 'LeftOf'
 
 function Position(props) {
   const targetRef = React.useRef()
-  const elRef = React.useRef()
+  const showRef = React.useRef()
   const child = React.Children.only(props.children)
   const [style, setStyle] = React.useState({ position: 'absolute' })
 
   React.useLayoutEffect(() => {
-    if (props.when && targetRef.current && elRef.current)
-      setStyle(props.position(targetRef.current).styleFor(elRef.current))
-  }, [props.when, targetRef, elRef, props])
+    if (props.when && targetRef.current && showRef.current)
+      setStyle(props.position(targetRef.current).styleFor(showRef.current))
+  }, [props.when, targetRef, showRef, props])
 
   const show =
     props.when &&
     React.cloneElement(props.show, {
-      ref: elRef,
+      ref: showRef,
       style: {
         ...child.props.style,
         ...style
