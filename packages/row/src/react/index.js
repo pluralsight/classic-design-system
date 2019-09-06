@@ -1,6 +1,6 @@
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useState } from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
@@ -22,9 +22,7 @@ const formatImageWidth = ({ image, size }) =>
 
 const formatActionBarWidth = ({ actionBar }) =>
   Array.isArray(actionBar) && actionBar.length > 1
-    ? `(${actionBar.length} * ${vars.style.actionBarActionWidth} + ${
-        actionBar.length
-      } * ${vars.style.actionBarActionMarginLeft})`
+    ? `(${actionBar.length} * ${vars.style.actionBarActionWidth} + ${actionBar.length} * ${vars.style.actionBarActionMarginLeft})`
     : '0px'
 
 const styles = {
@@ -116,35 +114,25 @@ const ActionBarAction = withTheme(
 ActionBarAction.displayName = 'Row.Action'
 ActionBarAction.propTypes = { icon: PropTypes.element.isRequired }
 
-class FullOverlayFocusManager extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { isFocused: false }
-    this.handleFocus = this.handleFocus.bind(this)
-    this.handleBlur = this.handleBlur.bind(this)
+const FullOverlayFocusManager = ({ fullOverlayVisible, fullOverlay }) => {
+  const [isFocused, setFocused] = useState(false)
+
+  const handleFocus = _ => {
+    setFocused(true)
   }
 
-  handleFocus() {
-    this.setState({ isFocused: true })
+  const handleBlur = _ => {
+    setFocused(false)
   }
 
-  handleBlur() {
-    this.setState({ isFocused: false })
-  }
-
-  render() {
-    return this.props.fullOverlay ? (
-      <FullOverlay
-        isFocused={this.state.isFocused}
-        fullOverlayVisible={this.props.fullOverlayVisible}
-      >
-        {React.cloneElement(this.props.fullOverlay, {
-          onFocus: this.handleFocus,
-          onBlur: this.handleBlur
-        })}
-      </FullOverlay>
-    ) : null
-  }
+  return fullOverlay ? (
+    <FullOverlay isFocused={isFocused} fullOverlayVisible={fullOverlayVisible}>
+      {React.cloneElement(fullOverlay, {
+        onFocus: handleFocus,
+        onBlur: handleBlur
+      })}
+    </FullOverlay>
+  ) : null
 }
 FullOverlayFocusManager.propTypes = {
   fullOverlay: PropTypes.node,

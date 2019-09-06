@@ -2,7 +2,7 @@ import PropType from 'prop-types'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Switch from '..'
+import Switch from '../index.js'
 
 const sizeStory = storiesOf('size', module)
 Object.keys(Switch.sizes).forEach(size =>
@@ -12,24 +12,6 @@ Object.keys(Switch.sizes).forEach(size =>
 storiesOf('checked', module)
   .add('false', _ => <Switch>Click me</Switch>)
   .add('true', _ => <Switch checked>Click me</Switch>)
-
-class ClickDemo extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { checked: false }
-    this.handleClick = this.handleClick.bind(this)
-  }
-  handleClick(checked) {
-    this.setState({ checked })
-  }
-  render() {
-    return React.cloneElement(this.props.children, {
-      onClick: this.handleClick,
-      checked: this.state.checked
-    })
-  }
-}
-ClickDemo.propTypes = { children: PropType.node }
 
 const colorStory = storiesOf('color', module)
 Object.keys(Switch.colors).forEach(color =>
@@ -43,12 +25,20 @@ Object.keys(Switch.colors).forEach(color =>
 storiesOf('click', module)
   .add('large toggles', _ => (
     <ClickDemo>
-      <Switch />
+      {({ checked, handleCheck }) => (
+        <Switch checked={checked} onClick={handleCheck} />
+      )}
     </ClickDemo>
   ))
   .add('small toggles', _ => (
     <ClickDemo>
-      <Switch size={Switch.sizes.small} />
+      {({ checked, handleCheck }) => (
+        <Switch
+          size={Switch.sizes.small}
+          checked={checked}
+          onClick={handleCheck}
+        />
+      )}
     </ClickDemo>
   ))
 
@@ -66,30 +56,51 @@ Object.keys(Switch.sizes).forEach(size =>
 storiesOf('disabled', module)
   .add('false', _ => (
     <ClickDemo>
-      <Switch />
+      {({ checked, handleCheck }) => (
+        <Switch disabled={false} checked={checked} onClick={handleCheck} />
+      )}
     </ClickDemo>
   ))
   .add('true', _ => (
     <ClickDemo>
-      <Switch disabled />
+      {({ checked, handleCheck }) => (
+        <Switch disabled checked={checked} onClick={handleCheck} />
+      )}
     </ClickDemo>
   ))
 
 storiesOf('error', module)
   .add('false', _ => (
     <ClickDemo>
-      <Switch />
+      {({ checked, handleCheck }) => (
+        <Switch error={false} checked={checked} onClick={handleCheck} />
+      )}
     </ClickDemo>
   ))
   .add('true', _ => (
     <ClickDemo>
-      <Switch error>Clickable in error state</Switch>
+      {({ checked, handleCheck }) => (
+        <Switch error checked={checked} onClick={handleCheck}>
+          Clickable in error state
+        </Switch>
+      )}
     </ClickDemo>
   ))
   .add('true w/ disabled', _ => (
     <ClickDemo>
-      <Switch error disabled>
-        Such errors
-      </Switch>
+      {({ checked, handleCheck }) => (
+        <Switch error disabled checked={checked} onClick={handleCheck}>
+          Such errors
+        </Switch>
+      )}
     </ClickDemo>
   ))
+
+function ClickDemo(props) {
+  const [checked, setChecked] = React.useState(false)
+  const handleCheck = nextChecked => setChecked(nextChecked)
+
+  return props.children({ checked, handleCheck })
+}
+
+ClickDemo.propTypes = { children: PropType.func }

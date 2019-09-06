@@ -5,9 +5,9 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Shiitake from 'shiitake'
 
-import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
+import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react.js'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
 
 import css from '../css/index.js'
 import { toPercentageString } from '../js/index.js'
@@ -86,17 +86,22 @@ const ActionBar = props => (
   <div {...styles.actionBar(props)} {...filterReactProps(props)} />
 )
 
-const ActionBarAction = React.forwardRef(({ icon, ...props }, ref) => (
-  <button
-    {...styles.actionButton(props)}
-    {...filterReactProps(props, { tagName: 'button' })}
-    ref={ref}
-  >
-    {icon}
-  </button>
-))
+const ActionBarAction = React.forwardRef(({ icon, ...props }, ref) => {
+  const ariaLabel = props['aria-label'] || props.title
+  return (
+    <button
+      {...styles.actionButton(props)}
+      {...filterReactProps(props, { tagName: 'button' })}
+      aria-label={ariaLabel}
+      ref={ref}
+    >
+      {icon}
+    </button>
+  )
+})
 ActionBarAction.displayName = 'Card.Action'
 ActionBarAction.propTypes = {
+  'aria-label': PropTypes.string,
   icon: PropTypes.element.isRequired,
   title: PropTypes.string.isRequired
 }
@@ -233,8 +238,7 @@ Tag.propTypes = {
   icon: PropTypes.element
 }
 
-const renderTag = props =>
-  props.tag && props.size !== 'small' ? props.tag : null
+const renderTag = props => props.tag
 
 const Text = props => <span {...filterReactProps(props, { tagName: 'span' })} />
 Text.displayName = 'Card.Text'

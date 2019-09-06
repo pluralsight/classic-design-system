@@ -1,50 +1,32 @@
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useEffect, useRef, useCallback } from 'react'
 import shave from 'shave'
 
 import core from '@pluralsight/ps-design-system-core'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
-class Shave extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.elRef = React.createRef()
-
-    this.reset = this.reset.bind(this)
-    this.truncate = this.truncate.bind(this)
+const reset = (children, current) => {
+  if (current) {
+    current.innerHTML = children
   }
+}
+const Shave = ({ children, lineHeight, lines, character, ...rest }) => {
+  const elRef = useRef()
+  useEffect(() => {
+    reset(children, elRef.current)
+  }, [children])
+  const truncate = useCallback(() => {
+    const maxHeight = lineHeight * lines
+    shave(elRef.current, maxHeight, { character: character })
+  }, [lineHeight, lines, character])
+  useEffect(() => {
+    window.addEventListener('resize', truncate)
+    truncate()
+    return _ => {
+      window.removeEventListener('resize', truncate)
+    }
+  }, [truncate])
 
-  componentDidMount() {
-    window.addEventListener('resize', this.truncate)
-    this.truncate()
-  }
-
-  componentWillUpdate() {
-    this.reset()
-  }
-
-  componentDidUpdate() {
-    this.truncate()
-  }
-
-  componentWillUnmount() {
-    this.reset()
-    window.removeEventListener('resize', this.truncate)
-  }
-
-  reset() {
-    this.elRef.current.innerHTML = this.props.children
-  }
-
-  truncate() {
-    const maxHeight = this.props.lineHeight * this.props.lines
-    shave(this.elRef.current, maxHeight, { character: this.props.character })
-  }
-
-  render() {
-    return <div ref={this.elRef} {...filterReactProps(this.props)} />
-  }
+  return <div ref={elRef} children={children} {...rest} />
 }
 
 Shave.defaultProps = {

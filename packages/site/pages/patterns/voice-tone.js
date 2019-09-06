@@ -3,12 +3,14 @@ import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react.js
 import PropTypes from 'prop-types'
 import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import Button from '@pluralsight/ps-design-system-button/react'
 
 import {
   Chrome,
   Content,
   Intro,
   Link,
+  Guideline,
   P,
   PageHeading,
   SectionHeading
@@ -258,6 +260,92 @@ export default _ => (
           </div>
         </QuoteBox>
       </EqualColumnLayout>
+
+      <Divider />
+
+      <SectionHeading>Error messages</SectionHeading>
+      <P>
+        Do all you can to prevent errors, but when they occur, use the
+        opportunity to help users understand what happened and how to get
+        through it. Follow these 3 guidelines when writing error messages:
+      </P>
+
+      <P
+        style={{
+          marginTop: core.layout.spacingXLarge
+        }}
+      >
+        <ExampleHeader>1. Explain what happened and why</ExampleHeader>
+        Be clear about what’s going on. Give the right amount of detail, but
+        don’t get too technical. Write in a way that anyone could easily
+        understand without using jargon.
+      </P>
+
+      <Guideline
+        do={
+          <div style={{ textAlign: 'center' }}>
+            <strong>Your credit card has expired</strong> <br />
+            Update your payment method to restore your subscription.
+          </div>
+        }
+        dont={
+          <div style={{ textAlign: 'center' }}>
+            <strong>Billing error</strong>
+          </div>
+        }
+      />
+
+      <P
+        style={{
+          marginTop: core.layout.spacingXLarge
+        }}
+      >
+        <ExampleHeader>2. Suggest a next step</ExampleHeader>
+        After you explain what happened, tell the user what they can do to
+        resolve the issue. If possible include a button, a link, or another call
+        to action.
+      </P>
+
+      <Guideline
+        do={
+          <div style={{ textAlign: 'center' }}>
+            <strong>There was a problem loading the video</strong> <br />
+            <br />
+            <Button appearance={Button.appearances.primary}>Try again</Button>
+          </div>
+        }
+        dont={
+          <div style={{ textAlign: 'center' }}>
+            <strong>Error 7007</strong>
+            <br />
+            Unable to play video
+          </div>
+        }
+      />
+
+      <P
+        style={{
+          marginTop: core.layout.spacingXLarge
+        }}
+      >
+        <ExampleHeader>3. Match the tone to the context</ExampleHeader>
+        Avoid being robotic or silly. Remember, something went wrong, now's your
+        time to help them through it in a friendly way.
+      </P>
+
+      <Guideline
+        do={
+          <div style={{ textAlign: 'center' }}>
+            That password doesn’t match. Try again?
+          </div>
+        }
+        dont={
+          <div style={{ textAlign: 'center' }}>
+            Yo, big problemo! The password you provided doesn’t match. Wanna try
+            that again?
+          </div>
+        }
+      />
 
       <Divider />
 
