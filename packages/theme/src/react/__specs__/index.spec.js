@@ -2,8 +2,9 @@ import { render } from '@testing-library/react'
 import { renderHook } from '@testing-library/react-hooks'
 
 import React from 'react'
+import PropTypes from 'prop-types'
 
-import Theme, { useTheme, defaultName } from '../index.js'
+import Theme, { defaultName, useTheme, withTheme } from '../index.js'
 
 describe('Theme', () => {
   function MockComponent(props) {
@@ -78,5 +79,50 @@ describe('useTheme', () => {
   it('should return the themeName', () => {
     const { result } = renderHook(() => useTheme())
     expect(result.current).toEqual(defaultName)
+  })
+})
+
+describe('withTheme', () => {
+  function MockComponent({ themeName, ...props }) {
+    return <div {...props}>{themeName}</div>
+  }
+  MockComponent.propTypes = { themeName: PropTypes.string }
+
+  let EnhancedComponent
+
+  beforeAll(() => {
+    EnhancedComponent = withTheme(MockComponent)
+  })
+
+  it('enhances the Component', () => {
+    expect(EnhancedComponent).not.toBeNull()
+  })
+
+  it('exposes the original Component', () => {
+    expect(EnhancedComponent.BaseComponent).toBe(MockComponent)
+  })
+
+  it('adds a debuggable displayName', () => {
+    expect(EnhancedComponent.displayName).toBe('withTheme(MockComponent)')
+  })
+
+  describe('when wrapped in a ThemeProvider', () => {
+    it('injects the themeName from context', () => {
+      const { container } = render(
+        <Theme name={Theme.names.light}>
+          <EnhancedComponent />
+        </Theme>
+      )
+
+      expect(container).toHaveTextContent(Theme.names.light)
+    })
+  })
+
+  describe('when NOT wrapped in a ThemeProvider', () => {
+    it('falls back to the default theme', () => {
+      const { container } = render(<EnhancedComponent />)
+
+      expect(container).toHaveTextContent(defaultName)
+    })
   })
 })
