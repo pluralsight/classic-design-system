@@ -260,22 +260,13 @@ storiesOf('Carousel/with ActionMenu', module)
     const MOCK_DATA = { courses: genData(40) }
 
     function genData(count) {
-      function randStr() {
-        return Math.random()
-          .toString(36)
-          .substring(7)
-      }
-
-      function genDatum(id) {
-        return {
-          author: randStr(),
-          id,
-          image: '//picsum.photos/680/320?image=42&gravity=north',
-          level: 'Advanced',
-          title: randStr()
-        }
-      }
-      return new Array(count).fill(null).map((_, i) => genDatum(i + 1))
+      return new Array(count).fill(null).map((_, i) => ({
+        author: 'Some Author',
+        id: i + 1,
+        image: '//picsum.photos/680/320?image=42&gravity=north',
+        level: 'Advanced',
+        title: 'Some Title'
+      }))
     }
 
     function PerfPortalStory() {
