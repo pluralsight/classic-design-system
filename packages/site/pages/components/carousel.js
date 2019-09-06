@@ -433,18 +433,6 @@ export default _ => (
 )
 
 function PortalExample() {
-  const [courseIdForOpenMenu, openCourseMenu] = React.useState(-1)
-
-  function handleClickMore(evt, courseId) {
-    evt.preventDefault()
-    console.log('click more', { courseId })
-    if (courseId === courseIdForOpenMenu) {
-      openCourseMenu(-1)
-    } else {
-      openCourseMenu(courseId)
-    }
-  }
-
   return (
     <Theme>
       <style jsx>{`
@@ -461,57 +449,59 @@ function PortalExample() {
       `}</style>
 
       <div className="example">
-        <Carousel
-          size={Carousel.sizes.wide}
-          controls={
-            <Carousel.Controls>
-              <Carousel.Control
-                direction={Carousel.Control.directions.prev}
-                onClick={_ => openCourseMenu(-1)}
-              />
-              <Carousel.Control
-                direction={Carousel.Control.directions.next}
-                onClick={_ => openCourseMenu(-1)}
-              />
-            </Carousel.Controls>
-          }
-        >
+        <Carousel size={Carousel.sizes.wide}>
           {MOCK_DATA.courses.map(course => (
-            <Card
-              key={course.id}
-              image={<Card.Image src={course.image} />}
-              metadata1={[course.author, course.level]}
-              title={<Card.Title>{course.title}</Card.Title>}
-              actionBarVisible
-              actionBar={[
-                <BelowRight
-                  inNode={typeof document !== 'undefined' && document.body}
-                  when={course.id === courseIdForOpenMenu}
-                  show={
-                    <ActionMenu>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                    </ActionMenu>
-                  }
-                  key="a"
-                >
-                  <Card.Action
-                    title="See more"
-                    icon={<Icon id={Icon.ids.more} />}
-                    onClick={evt => handleClickMore(evt, course.id)}
-                  />
-                </BelowRight>
-              ]}
-            />
+            <Toggle>
+              {({ active, toggle }) => (
+                <Card
+                  key={course.id}
+                  image={<Card.Image src={course.image} />}
+                  metadata1={[course.author, course.level]}
+                  title={<Card.Title>{course.title}</Card.Title>}
+                  actionBarVisible
+                  actionBar={[
+                    <BelowRight
+                      inNode={typeof document !== 'undefined' && document.body}
+                      when={active}
+                      show={
+                        <ActionMenu onClose={toggle}>
+                          <ActionMenu.Item>Useless item</ActionMenu.Item>
+                          <ActionMenu.Item>Useless item</ActionMenu.Item>
+                          <ActionMenu.Item>Useless item</ActionMenu.Item>
+                          <ActionMenu.Item>Useless item</ActionMenu.Item>
+                          <ActionMenu.Item>Useless item</ActionMenu.Item>
+                          <ActionMenu.Item>Useless item</ActionMenu.Item>
+                          <ActionMenu.Item>Useless item</ActionMenu.Item>
+                          <ActionMenu.Item>Useless item</ActionMenu.Item>
+                        </ActionMenu>
+                      }
+                      key="a"
+                    >
+                      <Card.Action
+                        title="See more"
+                        icon={<Icon id={Icon.ids.more} />}
+                        onClick={toggle}
+                      />
+                    </BelowRight>
+                  ]}
+                />
+              )}
+            </Toggle>
           ))}
         </Carousel>
       </div>
     </Theme>
   )
+}
+
+function Toggle(props) {
+  const [active, setActive] = React.useState(
+    typeof props.active === 'undefined' ? !!props.startActive : !!props.active
+  )
+
+  function toggle() {
+    setActive(!active)
+  }
+
+  return props.children({ active, toggle })
 }
