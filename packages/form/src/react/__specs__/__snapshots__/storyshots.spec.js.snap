@@ -646,14 +646,19 @@ exports[`Storyshots Sample Form sample 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             role="radiogroup"
-            tabIndex="0"
+            style={
+              Object {
+                "maxWidth": "none",
+                "width": "100%",
+              }
+            }
+            tabIndex={0}
           >
             <div
               data-css-xp79s5=""
             >
               <label
                 data-css-kn3wr0=""
-                onClick={[Function]}
               >
                 <div
                   data-css-1gbdc34=""
@@ -674,6 +679,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 <input
                   checked={false}
                   data-css-gyrv08=""
+                  onClick={[Function]}
                   readOnly={true}
                   tabIndex="-1"
                   type="radio"
@@ -691,7 +697,6 @@ exports[`Storyshots Sample Form sample 1`] = `
             >
               <label
                 data-css-kn3wr0=""
-                onClick={[Function]}
               >
                 <div
                   data-css-1gbdc34=""
@@ -712,6 +717,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 <input
                   checked={false}
                   data-css-gyrv08=""
+                  onClick={[Function]}
                   readOnly={true}
                   tabIndex="-1"
                   type="radio"
@@ -738,7 +744,7 @@ exports[`Storyshots Sample Form sample 1`] = `
         >
           <button
             aria-checked={false}
-            data-css-1fg1tn7=""
+            data-css-nq9iqf=""
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -749,7 +755,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 "width": "100%",
               }
             }
-            tabIndex="0"
+            tabIndex={0}
           >
             <div
               data-css-480533=""
@@ -801,7 +807,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               Comment
             </div>
             <div
-              data-css-1ghdxx6=""
+              data-css-1ios7mb=""
             >
               <div
                 data-css-1xm24a9=""
