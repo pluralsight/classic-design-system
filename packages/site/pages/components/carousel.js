@@ -6,10 +6,8 @@ import { BelowRight } from '@pluralsight/ps-design-system-position/react.js'
 import Card from '@pluralsight/ps-design-system-card/react.js'
 import Carousel from '@pluralsight/ps-design-system-carousel/react.js'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
-import core from '@pluralsight/ps-design-system-core'
 import Note from '@pluralsight/ps-design-system-note/react.js'
 import Text from '@pluralsight/ps-design-system-text/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
   Chrome,
@@ -434,63 +432,61 @@ export default _ => (
 
 function PortalExample() {
   return (
-    <Theme>
-      <style jsx>{`
-        .example {
-          padding: ${core.layout.spacingLarge};
-          background: ${core.colors.gray06};
-          color: ${core.colors.white};
-          min-height: 200px;
-        }
-        .label {
-          padding: ${core.layout.spacingLarge} 0;
-          font-size: ${core.type.fontSizeMedium};
-        }
-      `}</style>
-
-      <div className="example">
-        <Carousel size={Carousel.sizes.wide}>
-          {MOCK_DATA.courses.map(course => (
-            <Toggle>
-              {({ active, toggle }) => (
-                <Card
-                  key={course.id}
-                  image={<Card.Image src={course.image} />}
-                  metadata1={[course.author, course.level]}
-                  title={<Card.Title>{course.title}</Card.Title>}
-                  actionBarVisible
-                  actionBar={[
-                    <BelowRight
-                      inNode={typeof document !== 'undefined' && document.body}
-                      when={active}
-                      show={
-                        <ActionMenu onClose={toggle}>
-                          <ActionMenu.Item>Useless item</ActionMenu.Item>
-                          <ActionMenu.Item>Useless item</ActionMenu.Item>
-                          <ActionMenu.Item>Useless item</ActionMenu.Item>
-                          <ActionMenu.Item>Useless item</ActionMenu.Item>
-                          <ActionMenu.Item>Useless item</ActionMenu.Item>
-                          <ActionMenu.Item>Useless item</ActionMenu.Item>
-                          <ActionMenu.Item>Useless item</ActionMenu.Item>
-                          <ActionMenu.Item>Useless item</ActionMenu.Item>
-                        </ActionMenu>
-                      }
-                      key="a"
-                    >
-                      <Card.Action
-                        title="See more"
-                        icon={<Icon id={Icon.ids.more} />}
-                        onClick={toggle}
-                      />
-                    </BelowRight>
-                  ]}
-                />
-              )}
-            </Toggle>
-          ))}
-        </Carousel>
-      </div>
-    </Theme>
+    <Example.React
+      themeToggle
+      includes={{
+        ActionMenu,
+        BelowRight,
+        Carousel,
+        Card,
+        data: MOCK_DATA,
+        Icon,
+        Toggle
+      }}
+      outputStyle={{ paddingBottom: '96px' }}
+      codes={[
+        `<Carousel size={Carousel.sizes.wide}>
+  {data.courses.map(course => (
+    <Toggle>
+      {({ active, toggle }) => (
+        <Card
+          key={course.id}
+          image={<Card.Image src={course.image} />}
+          metadata1={[course.author, course.level]}
+          title={<Card.Title>{course.title}</Card.Title>}
+          actionBarVisible
+          actionBar={[
+            <BelowRight
+              inNode={typeof document !== 'undefined' && document.body}
+              when={active}
+              show={
+                <ActionMenu onClose={toggle}>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                </ActionMenu>
+              }
+              key="a"
+            >
+              <Card.Action
+                title="See more"
+                icon={<Icon id={Icon.ids.more} />}
+                onClick={toggle}
+              />
+            </BelowRight>
+          ]}
+        />
+      )}
+    </Toggle>
+  ))}
+</Carousel>`
+      ]}
+    />
   )
 }
 
