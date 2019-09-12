@@ -2352,6 +2352,7 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="asdf"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="asdf"
@@ -2662,6 +2663,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -2825,6 +2827,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -2988,6 +2991,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -3151,6 +3155,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -3314,6 +3319,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -3477,6 +3483,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -3640,6 +3647,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -3803,6 +3811,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -3966,6 +3975,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -4129,6 +4139,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -4292,6 +4303,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -4455,6 +4467,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -4618,6 +4631,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -4781,6 +4795,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -4944,6 +4959,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -5107,6 +5123,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -5270,6 +5287,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -5433,6 +5451,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -5596,6 +5615,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -5759,6 +5779,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -5922,6 +5943,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -6085,6 +6107,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -6248,6 +6271,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -6411,6 +6435,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -6574,6 +6599,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -6737,6 +6763,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -6900,6 +6927,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -7063,6 +7091,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -7226,6 +7255,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -7389,6 +7419,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -7552,6 +7583,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -7715,6 +7747,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -7878,6 +7911,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -8041,6 +8075,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -8204,6 +8239,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -8367,6 +8403,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -8530,6 +8567,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -8693,6 +8731,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -8856,6 +8895,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"
@@ -9019,6 +9059,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                   data-css-1kb1o0e=""
                 >
                   <button
+                    aria-label="See more"
                     data-css-226xmr=""
                     onClick={[Function]}
                     title="See more"

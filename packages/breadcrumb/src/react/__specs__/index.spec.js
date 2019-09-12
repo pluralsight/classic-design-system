@@ -1,39 +1,33 @@
-import { mount, shallow } from 'enzyme'
+import { fireEvent, render } from '@testing-library/react'
 import React from 'react'
 
 import Breadcrumb from '../index.js'
 
-test('click on button triggered once', () => {
-  let callCount = 0
-  const onClick = _ => {
-    callCount += 1
-  }
-  const breadcrumb = shallow(
-    <Breadcrumb onClick={onClick}>Clicks once</Breadcrumb>
-  )
-  breadcrumb.childAt(0).simulate('click')
-  expect(callCount).toBe(1)
-})
+describe('Breadcrumb', () => {
+  it('forwards refs', () => {
+    const ref = React.createRef()
+    render(
+      <Breadcrumb onClick={jest.fn()} ref={ref}>
+        Clicks once
+      </Breadcrumb>
+    )
 
-test('click on disabled button with href does not trigger onClick', () => {
-  let callCount = 0
-  const onClick = _ => {
-    callCount += 1
-  }
-  const breadcrumb = mount(
-    <Breadcrumb disabled onClick={onClick} href="https://foo.com">
-      Can't Be Clicked
-    </Breadcrumb>
-  )
-  breadcrumb.childAt(0).simulate('click')
+    expect(ref.current).not.toBeNull()
+  })
 
-  expect(callCount).toBe(0)
-})
+  describe('when disabled', () => {
+    it('does not allow clicks', () => {
+      const handleClick = jest.fn()
+      const { container } = render(
+        <Breadcrumb disabled href="" onClick={handleClick}>
+          Clicks once
+        </Breadcrumb>
+      )
+      const button = container.querySelector('button')
 
-test('passes ref to button', () => {
-  const ref = React.createRef(0)
+      fireEvent.click(button)
 
-  mount(<Breadcrumb ref={ref} />)
-
-  expect(ref.current).not.toBeUndefined()
+      expect(handleClick).not.toHaveBeenCalled()
+    })
+  })
 })

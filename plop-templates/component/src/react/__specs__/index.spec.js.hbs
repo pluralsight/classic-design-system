@@ -1,14 +1,12 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import DataWell from '../index.js'
+import {{pascalCase name}} from '../index.js'
 
-describe('DataWell', () => {
+describe('{{pascalCase name}}', () => {
   it('renders', () => {
     const { getByTestId } = render(
-      <DataWell data-testid="undertest" label="Dog count">
-        234,345
-      </DataWell>
+      <{{pascalCase name}} data-testid="undertest" />
     )
 
     expect(getByTestId('undertest')).toBeInTheDocument()
@@ -17,10 +15,8 @@ describe('DataWell', () => {
   it('forwards refs', () => {
     const ref = React.createRef()
 
-    render(
-      <DataWell ref={ref} label="Dog count">
-        234,345
-      </DataWell>
+    const { getByTestId } = render(
+      <{{pascalCase name}} ref={ref} />
     )
 
     expect(ref.current).not.toBeNull()

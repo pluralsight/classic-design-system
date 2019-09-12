@@ -14,7 +14,7 @@ Please collaborate with the Design System team in [#design-system-help](slack://
 
 ## Create your component
 
-1. From the project root run \`npm run component:create\`
+1. From the project root run \`npm run generate\`
 1. Write your component.  Copy conventions you see in other components.  TODO: list some of these conventions somewhere. :)
 1. Commit to a feature branch.  (An [example commit](https://github.com/pluralsight/design-system/commit/ec0fc78ecc6ebf9f91056e59c581bfaaee8ee7cd) of a new component)
 1. Send up the [Pull Request](https://github.com/pluralsight/design-system/pulls).  Include relevant details in the PR template on Github.
