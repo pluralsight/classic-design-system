@@ -1,80 +1,47 @@
+import { render } from '@testing-library/react'
 import React from 'react'
-import { mount } from 'enzyme'
 
-import StarRating from '..'
-
-jest.mock('../star', () => {
-  const Star = () => null
-
-  Star.appearances = {
-    empty: 'empty',
-    half: 'half',
-    full: 'full'
-  }
-
-  return Star
-})
+import StarRating from '../index.js'
 
 describe('StarRating', () => {
-  describe('prop forwarding', () => {
-    const propsToCheck = ['className', 'style']
+  function collectStarNodes(container) {
+    const nodeList = container.querySelectorAll('span, button')
 
-    it.each(propsToCheck)(`should forward "%s"`, propName => {
-      const wrapper = mount(<StarRating {...{ [propName]: null }} />)
-      expect(wrapper.prop(propName)).toBeDefined()
+    return [...nodeList].filter(node => {
+      const label = node.getAttribute('aria-label')
+      return label && label.includes('Rate')
     })
+  }
+
+  it('forwards refs', () => {
+    const ref = React.createRef()
+    render(<StarRating ref={ref} />)
+
+    expect(ref.current).not.toBeNull()
   })
 
   describe('with default props', () => {
-    let stars, wrapper
+    it('renders stars as NOT interactive(span NOT button)', () => {
+      const { container } = render(<StarRating />)
+      const stars = collectStarNodes(container)
+      expect.assertions(5)
 
-    beforeEach(() => {
-      wrapper = mount(<StarRating />)
-      stars = wrapper.find('Star')
-
-      expect(stars).toHaveLength(5)
-    })
-
-    it('renders stars as NOT interactive', () => {
-      stars.forEach(star => expect(star.prop('interactive')).toBe(false))
+      stars.forEach(node => {
+        expect(node.tagName.toLowerCase()).toBe('span')
+      })
     })
   })
 
-  describe('when onChange is defined (interactive mode)', () => {
-    let stars, wrapper
+  describe('with onChange prop', () => {
+    it('renders stars as interactive(button NOT span)', () => {
+      const handleChange = jest.fn()
+      const { container } = render(<StarRating onChange={handleChange} />)
+      const stars = collectStarNodes(container)
+      expect.assertions(5)
 
-    beforeEach(() => {
-      wrapper = mount(<StarRating onChange={jest.fn()} />)
-      stars = wrapper.find('Star')
-
-      expect(stars).toHaveLength(5)
-    })
-
-    it('renders stars as interactive', () => {
-      stars.forEach(star => expect(star.prop('interactive')).toBe(true))
-    })
-  })
-
-  describe('when interactive but WITHOUT a value', () => {
-    let stars, wrapper
-
-    beforeEach(() => {
-      wrapper = mount(<StarRating onChange={jest.fn()} />)
-      stars = wrapper.find('Star')
-
-      expect(stars).toHaveLength(5)
-    })
-
-    it('renders stars with empty appearance', () => {
-      stars.forEach(star => expect(star.prop('appearance')).toBe('empty'))
-    })
-
-    it('renders stars as NOT active', () => {
-      stars.forEach(star => expect(star.prop('active')).toBe(false))
-    })
-
-    it('renders stars as bright', () => {
-      stars.forEach(star => expect(star.prop('bright')).toBe(true))
+      stars.forEach(node => {
+        expect(node.tagName.toLowerCase()).toBe('button')
+      })
     })
   })
 })

@@ -1,47 +1,57 @@
 import { css } from 'glamor'
 import React from 'react'
-import { Heading } from '@pluralsight/ps-design-system-text/react'
 import PropTypes from 'prop-types'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { Heading } from '@pluralsight/ps-design-system-text/react.js'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
 
 import stylesheet from '../css/index.js'
 
 const styles = {
-  dataWell: props =>
+  dataWell: themeName =>
     css(
       stylesheet['.psds-datawell'],
-      stylesheet[`.psds-datawell.psds-theme--${props.themeName}`]
+      stylesheet[`.psds-datawell.psds-theme--${themeName}`]
     ),
-  label: props =>
+  label: themeName =>
     css(
       stylesheet['.psds-datawell__label'],
-      stylesheet[`.psds-datawell__label.psds-theme--${props.themeName}`]
+      stylesheet[`.psds-datawell__label.psds-theme--${themeName}`]
     ),
-  data: props =>
+  data: themeName =>
     css(
       stylesheet['.psds-datawell__data'],
-      stylesheet[`.psds-datawell__data.psds-theme--${props.themeName}`]
+      stylesheet[`.psds-datawell__data.psds-theme--${themeName}`]
     ),
-  subLabel: props =>
+  subLabel: themeName =>
     css(
       stylesheet['.psds-datawell__sublabel'],
-      stylesheet[`.psds-datawell__sublabel.psds-theme--${props.themeName}`]
+      stylesheet[`.psds-datawell__sublabel.psds-theme--${themeName}`]
     )
 }
 
-function DataWell(props) {
+const DataWell = React.forwardRef((props, ref) => {
   const themeName = useTheme()
-  const allProps = { ...props, themeName }
+
   return (
-    <div {...styles.dataWell(allProps)}>
-      <Heading {...styles.label(allProps)} size={Heading.sizes.smallCaps}>
+    <div
+      ref={ref}
+      {...styles.dataWell(themeName, props)}
+      {...filterReactProps(props)}
+    >
+      <Heading
+        {...styles.label(themeName, props)}
+        size={Heading.sizes.smallCaps}
+      >
         <div>{props.label}</div>
       </Heading>
-      <div {...styles.data(allProps)}>{props.children}</div>
-      <div {...styles.subLabel(allProps)}>{props.subLabel}</div>
+
+      <div {...styles.data(themeName, props)}>{props.children}</div>
+      <div {...styles.subLabel(themeName, props)}>{props.subLabel}</div>
     </div>
   )
-}
+})
 
 DataWell.propTypes = {
   children: PropTypes.node.isRequired,
