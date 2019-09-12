@@ -86,23 +86,19 @@ const ActionBar = props => (
   <div {...styles.actionBar(props)} {...filterReactProps(props)} />
 )
 
-const ActionButton = props => (
-  <button
-    {...styles.actionButton(props)}
-    {...filterReactProps(props, { tagName: 'button' })}
-  />
-)
-
-const ActionBarAction = ({ icon, ...props }) => {
+const ActionBarAction = React.forwardRef(({ icon, ...props }, ref) => {
   const ariaLabel = props['aria-label'] || props.title
-
   return (
-    <ActionButton {...filterReactProps(props)} aria-label={ariaLabel}>
+    <button
+      {...styles.actionButton(props)}
+      {...filterReactProps(props, { tagName: 'button' })}
+      aria-label={ariaLabel}
+      ref={ref}
+    >
       {icon}
-    </ActionButton>
+    </button>
   )
-}
-
+})
 ActionBarAction.displayName = 'Card.Action'
 ActionBarAction.propTypes = {
   'aria-label': PropTypes.string,

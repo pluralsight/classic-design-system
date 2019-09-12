@@ -1,5 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars.js'
 
 import { controlDirections as directions } from '../vars/index.js'
 
@@ -93,10 +93,7 @@ export default {
     ...resetList,
     ...resetFocus,
     display: 'flex',
-    width: '100%'
-  },
-
-  '.psds-carousel__pages--transitioning': {
+    width: '100%',
     overflow: 'hidden'
   },
 

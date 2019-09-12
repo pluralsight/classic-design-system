@@ -1,9 +1,13 @@
 import React from 'react'
 
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
 import Avatar from '@pluralsight/ps-design-system-avatar/react.js'
+import { BelowRight } from '@pluralsight/ps-design-system-position/react.js'
 import Card from '@pluralsight/ps-design-system-card/react.js'
 import Carousel from '@pluralsight/ps-design-system-carousel/react.js'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import Note from '@pluralsight/ps-design-system-note/react.js'
+import Text from '@pluralsight/ps-design-system-text/react.js'
 
 import {
   Chrome,
@@ -12,6 +16,7 @@ import {
   Example,
   Guideline,
   Intro,
+  Link,
   P,
   PageHeading,
   PropTypes,
@@ -238,7 +243,7 @@ export default _ => (
         }}
       />
 
-      <SectionHeading>In-app example</SectionHeading>
+      <SectionHeading>Auto paging</SectionHeading>
       <P>The number and width of items are handled automatically.</P>
 
       <Example.React
@@ -265,6 +270,20 @@ export default _ => (
 `
         ]}
       />
+
+      <SectionHeading>Using portals</SectionHeading>
+      <P>
+        If there are any UI elements that need to appear in the same visual
+        space as the carousel container, they will need to be rendered outside
+        the <Text.Code>Carousel</Text.Code> DOM. This is because the Carousel
+        container solution requires being styled{' '}
+        <Text.Code>overflow: hidden</Text.Code>. A{' '}
+        <Link href="https://reactjs.org/docs/portals.html">React Portal</Link>{' '}
+        is a great solution. A common example could be an{' '}
+        <Text.Code>ActionMenu</Text.Code> rendered from a{' '}
+        <Text.Code>Card</Text.Code>. Here is some example code:
+      </P>
+      <PortalExample />
 
       <SectionHeading>Size</SectionHeading>
       <P>
@@ -410,3 +429,75 @@ export default _ => (
     </Content>
   </Chrome>
 )
+
+function PortalExample() {
+  return (
+    <Example.React
+      themeToggle
+      includes={{
+        ActionMenu,
+        BelowRight,
+        Carousel,
+        Card,
+        data: MOCK_DATA,
+        Icon,
+        Toggle
+      }}
+      outputStyle={{ paddingBottom: '96px' }}
+      codes={[
+        `<Carousel size={Carousel.sizes.wide}>
+  {data.courses.map(course => (
+    <Toggle>
+      {({ active, toggle }) => (
+        <Card
+          key={course.id}
+          image={<Card.Image src={course.image} />}
+          metadata1={[course.author, course.level]}
+          title={<Card.Title>{course.title}</Card.Title>}
+          actionBarVisible
+          actionBar={[
+            <BelowRight
+              inNode={typeof document !== 'undefined' && document.body}
+              when={active}
+              show={
+                <ActionMenu onClose={toggle}>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                  <ActionMenu.Item>Useless item</ActionMenu.Item>
+                </ActionMenu>
+              }
+              key="a"
+            >
+              <Card.Action
+                title="See more"
+                icon={<Icon id={Icon.ids.more} />}
+                onClick={toggle}
+              />
+            </BelowRight>
+          ]}
+        />
+      )}
+    </Toggle>
+  ))}
+</Carousel>`
+      ]}
+    />
+  )
+}
+
+function Toggle(props) {
+  const [active, setActive] = React.useState(
+    typeof props.active === 'undefined' ? !!props.startActive : !!props.active
+  )
+
+  function toggle() {
+    setActive(!active)
+  }
+
+  return props.children({ active, toggle })
+}

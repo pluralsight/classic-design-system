@@ -22,9 +22,7 @@ const formatImageWidth = ({ image, size }) =>
 
 const formatActionBarWidth = ({ actionBar }) =>
   Array.isArray(actionBar) && actionBar.length > 1
-    ? `(${actionBar.length} * ${vars.style.actionBarActionWidth} + ${
-        actionBar.length
-      } * ${vars.style.actionBarActionMarginLeft})`
+    ? `(${actionBar.length} * ${vars.style.actionBarActionWidth} + ${actionBar.length} * ${vars.style.actionBarActionMarginLeft})`
     : '0px'
 
 const styles = {
@@ -117,7 +115,7 @@ ActionBarAction.displayName = 'Row.Action'
 ActionBarAction.propTypes = { icon: PropTypes.element.isRequired }
 
 const FullOverlayFocusManager = ({ fullOverlayVisible, fullOverlay }) => {
-  const [isFocused, setFocused] = useState(false);
+  const [isFocused, setFocused] = useState(false)
 
   const handleFocus = _ => {
     setFocused(true)
@@ -128,10 +126,7 @@ const FullOverlayFocusManager = ({ fullOverlayVisible, fullOverlay }) => {
   }
 
   return fullOverlay ? (
-    <FullOverlay
-      isFocused={isFocused}
-      fullOverlayVisible={fullOverlayVisible}
-    >
+    <FullOverlay isFocused={isFocused} fullOverlayVisible={fullOverlayVisible}>
       {React.cloneElement(fullOverlay, {
         onFocus: handleFocus,
         onBlur: handleBlur
