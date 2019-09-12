@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@3.0.0...@pluralsight/ps-design-system-radio@4.0.0) (2019-09-05)
+
+
+### Bug Fixes
+
+* **radio:** remove circle default focus outline ([8b19409](https://github.com/pluralsight/design-system/commit/8b19409))
+
+
+### Code Refactoring
+
+* **radio:** upgrade to react16 patterns ([ad3d179](https://github.com/pluralsight/design-system/commit/ad3d179))
+
+
+### BREAKING CHANGES
+
+* **radio:** using forwardRef. innerRef is no longer supported
+
+
+
+
+
 # [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@2.0.4...@pluralsight/ps-design-system-radio@3.0.0) (2019-08-09)
 
 

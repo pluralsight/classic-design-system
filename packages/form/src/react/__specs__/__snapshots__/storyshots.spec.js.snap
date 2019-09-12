@@ -28,6 +28,7 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
           <div
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
@@ -107,6 +108,7 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
           <div
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
@@ -188,6 +190,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             size="large"
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
@@ -202,6 +205,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-w0yocm=""
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
@@ -237,6 +241,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-w0yocm=""
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
@@ -277,6 +282,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-w0yocm=""
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
@@ -335,6 +341,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             onKeyDown={[Function]}
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
@@ -400,6 +407,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             style={
               Object {
                 "display": "flex",
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
@@ -470,6 +478,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             onKeyDown={[Function]}
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
@@ -607,6 +616,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               readOnly={true}
               style={
                 Object {
+                  "maxWidth": "none",
                   "width": "100%",
                 }
               }
@@ -638,6 +648,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             role="radiogroup"
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
@@ -740,6 +751,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             role="checkbox"
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
@@ -781,9 +793,10 @@ exports[`Storyshots Sample Form sample 1`] = `
           data-css-4l6uky=""
         >
           <label
-            data-css-1p1sjwu=""
+            data-css-na8jqt=""
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
@@ -794,13 +807,13 @@ exports[`Storyshots Sample Form sample 1`] = `
               Comment
             </div>
             <div
-              data-css-1ghdxx6=""
+              data-css-1ios7mb=""
             >
               <div
                 data-css-1xm24a9=""
               >
                 <textarea
-                  data-css-1vpjki6=""
+                  data-css-12a0glg=""
                   disabled={false}
                   placeholder="Anything else to report?"
                   rows={4}

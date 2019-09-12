@@ -14,7 +14,7 @@ const VerticalLayout = (props, context) => (
     {React.Children.map(props.children, (child, i) => (
       <div {...styles.child(props)}>
         {React.cloneElement(child, {
-          style: { ...child.props.style, width: '100%' }
+          style: { ...child.props.style, width: '100%', maxWidth: 'none' }
         })}
       </div>
     ))}

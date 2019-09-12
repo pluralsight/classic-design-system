@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@3.0.5...@pluralsight/ps-design-system-form@3.1.0) (2019-09-05)
+
+
+### Features
+
+* **form:** expand in spite of maxWidth for VerticalLayout ([9b06afc](https://github.com/pluralsight/design-system/commit/9b06afc))
+
+
+
+
+
+## [3.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@3.0.4...@pluralsight/ps-design-system-form@3.0.5) (2019-09-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-form
+
+
+
+
+
 ## [3.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@3.0.3...@pluralsight/ps-design-system-form@3.0.4) (2019-08-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-form

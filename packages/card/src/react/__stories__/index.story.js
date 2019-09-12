@@ -392,3 +392,16 @@ storiesOf('tag', module)
       }
     />
   ))
+
+const sizesWithTagsStory = storiesOf('sizes with tags', module)
+Object.values(Card.sizes).forEach(size =>
+  sizesWithTagsStory.add(size, _ =>
+    ConstrainSizeDecorator(size)(_ => (
+      <CardWithDefaults
+        size={size}
+        title={<Card.Title>{`${size} Card with tag`}</Card.Title>}
+        tag={<Card.Tag icon={<Icon id={Icon.ids.channel} />}>Channel</Card.Tag>}
+      />
+    ))
+  )
+)

@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render } from '@testing-library/react'
+import { fireEvent, render } from '@testing-library/react'
 import React from 'react'
 
 import ActionMenu from '../index.js'
@@ -57,5 +57,3 @@ describe('ActionMenu', () => {
     fireEvent.keyDown(opt, { key: 'Enter', code: 13 })
   })
 })
-
-afterEach(cleanup)

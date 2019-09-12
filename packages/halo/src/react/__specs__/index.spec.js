@@ -1,9 +1,9 @@
+import { render } from '@testing-library/react'
 import React from 'react'
-import { shallow } from 'enzyme'
 
-import * as vars from '../../vars'
+import * as vars from '../../vars/index.js'
 
-import Halo from '../index'
+import Halo from '../index.js'
 
 describe('Halo', () => {
   describe('.gapSizes', () => {
@@ -18,18 +18,8 @@ describe('Halo', () => {
     })
   })
 
-  it('renders', () => {
-    expect(() => shallow(<Halo />)).not.toThrow()
-  })
-
   it('renders children', () => {
-    const Child = jest.fn(() => 'child')
-    const wrapper = shallow(
-      <Halo>
-        <Child />
-      </Halo>
-    )
-
-    expect(wrapper.find(Child)).toHaveLength(1)
+    const { container } = render(<Halo>child</Halo>)
+    expect(container).toHaveTextContent('child')
   })
 })
