@@ -35,7 +35,7 @@ const styles = {
     )
 }
 
-function Item(props) {
+export default function Item(props) {
   const { icon, isActive, ...rest } = props
   const TagName = props.href ? 'a' : 'button'
   const prevIsActive = usePrevious(isActive)
@@ -44,17 +44,19 @@ function Item(props) {
   const [isNestedRendered, setIsNestedRendered] = React.useState(false)
 
   React.useEffect(() => {
-    if (isActive && props.shouldFocusOnMount) itemRef.current.focus()
+    if (isActive && props.shouldFocusOnMount) {
+      delayUntilNextTick(_ => itemRef.current && itemRef.current.focus())
+    }
   }, [isActive, props.shouldFocusOnMount])
 
   React.useEffect(() => {
     if (!prevIsActive && isActive && !isNestedRendered) {
-      itemRef.current.focus()
+      delayUntilNextTick(_ => itemRef.current && itemRef.current.focus())
     }
   }, [isActive, isNestedRendered, prevIsActive])
 
   function handleFocus(evt) {
-    props._onItemFocus(props._i)
+    delayUntilNextTick(_ => props._onItemFocus(props._i))
   }
 
   function handleKeyDown(evt) {
@@ -164,4 +166,6 @@ function usePrevious(value) {
   return ref.current
 }
 
-export default Item
+function delayUntilNextTick(fn) {
+  setTimeout(fn, 0)
+}

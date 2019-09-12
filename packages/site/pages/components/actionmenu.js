@@ -206,7 +206,7 @@ export default _ => (
               'function',
               null,
               null,
-              'triggered when a menu collapses'
+              'triggered when a menu collapses; providing it renders an overlay that triggers this function on click'
             ]),
             PropTypes.row([
               'onChange',
