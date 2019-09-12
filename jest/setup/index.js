@@ -1,8 +1,6 @@
-import 'raf/polyfill'
+import 'raf/polyfill.js'
 import 'jest-prop-type-error'
 
-import '@testing-library/react/cleanup-after-each'
-import '@testing-library/jest-dom/extend-expect'
+import '@testing-library/jest-dom/extend-expect.js'
 
-import './enzyme.js'
 import './match-media.js'
