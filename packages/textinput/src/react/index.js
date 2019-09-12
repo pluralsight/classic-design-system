@@ -1,55 +1,57 @@
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import * as glamor from 'glamor'
-import Halo from '@pluralsight/ps-design-system-halo/react'
+import { css } from 'glamor'
 import PropTypes from 'prop-types'
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import React from 'react'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 
-import css from '../css/index.js'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import Halo from '@pluralsight/ps-design-system-halo/react.js'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
+
+import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 const styles = {
-  error: _ => glamor.css(css['.psds-text-input__error']),
+  error: _ => css(stylesheet['.psds-text-input__error']),
   field: ({ appearance, error, fieldAfter, icon, iconAlign, themeName }) =>
-    glamor.css(
-      css['.psds-text-input__field'],
-      css[`.psds-text-input__field--appearance-${appearance}`],
-      css[`.psds-text-input__field.psds-theme--${themeName}`],
-      css[
+    css(
+      stylesheet['.psds-text-input__field'],
+      stylesheet[`.psds-text-input__field--appearance-${appearance}`],
+      stylesheet[`.psds-text-input__field.psds-theme--${themeName}`],
+      stylesheet[
         `.psds-text-input__field--appearance-${appearance}.psds-theme--${themeName}`
       ],
-      fieldAfter && css[`.psds-text-input__field--w-after`],
-      icon && css[`.psds-text-input__field--icon-align-${iconAlign}`],
-      error && css[`.psds-text-input__field--error.psds-theme--${themeName}`]
+      fieldAfter && stylesheet[`.psds-text-input__field--w-after`],
+      icon && stylesheet[`.psds-text-input__field--icon-align-${iconAlign}`],
+      error &&
+        stylesheet[`.psds-text-input__field--error.psds-theme--${themeName}`]
     ),
-  fieldContainer: _ => glamor.css(css['.psds-text-input__field-container']),
-  fieldInput: _ => glamor.css(css['.psds-text-input__field-input']),
+  fieldContainer: _ => css(stylesheet['.psds-text-input__field-container']),
+  fieldInput: _ => css(stylesheet['.psds-text-input__field-input']),
   icon: ({ appearance, icon, iconAlign, themeName }) =>
-    glamor.css(
-      css['.psds-text-input__icon'],
-      icon && css[`.psds-text-input__icon--icon-align-${iconAlign}`],
-      css[`.psds-text-input__icon--appearance-${appearance}`],
-      css[`.psds-text-input__icon.psds-theme--${themeName}`]
+    css(
+      stylesheet['.psds-text-input__icon'],
+      icon && stylesheet[`.psds-text-input__icon--icon-align-${iconAlign}`],
+      stylesheet[`.psds-text-input__icon--appearance-${appearance}`],
+      stylesheet[`.psds-text-input__icon.psds-theme--${themeName}`]
     ),
   textInput: ({ disabled }) =>
-    glamor.css(
-      css['.psds-text-input'],
-      disabled && css['.psds-text-input--disabled']
+    css(
+      stylesheet['.psds-text-input'],
+      disabled && stylesheet['.psds-text-input--disabled']
     ),
   label: ({ themeName }) =>
-    glamor.css(
-      css['.psds-text-input__label'],
-      css[`.psds-text-input__label.psds-theme--${themeName}`]
+    css(
+      stylesheet['.psds-text-input__label'],
+      stylesheet[`.psds-text-input__label.psds-theme--${themeName}`]
     ),
   subLabel: ({ themeName }) =>
-    glamor.css(
-      css['.psds-text-input__sub-label'],
-      css[`.psds-text-input__sub-label.psds-theme--${themeName}`]
+    css(
+      stylesheet['.psds-text-input__sub-label'],
+      stylesheet[`.psds-text-input__sub-label.psds-theme--${themeName}`]
     )
 }
 
-const TextInput = (props, context) => {
+const TextInput = React.forwardRef((props, forwardedRef) => {
   const themeName = useTheme()
   const allProps = { ...props, themeName }
   const {
@@ -78,7 +80,7 @@ const TextInput = (props, context) => {
               {...styles.fieldInput(allProps)}
               disabled={allProps.disabled}
               placeholder={allProps.placeholder}
-              ref={allProps.innerRef}
+              ref={forwardedRef}
             />
             {fieldAfter}
           </div>
@@ -96,7 +98,7 @@ const TextInput = (props, context) => {
       {subLabel && <div {...styles.subLabel(allProps)}>{subLabel}</div>}
     </label>
   )
-}
+})
 
 TextInput.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),

@@ -73,13 +73,6 @@ export default _ => (
             </span>
           ]),
           PropTypes.row([
-            'innerRef',
-            'DOM element => ()',
-            null,
-            null,
-            'input field react ref callback'
-          ]),
-          PropTypes.row([
             'label',
             'string',
             null,
@@ -163,7 +156,7 @@ export default _ => (
           `<TextInput
   appearance={TextInput.appearances.subtle}
   icon={<Icon id={Icon.ids.search} />}
-  placeholder="Search" 
+  placeholder="Search"
 />`
         ]}
       />
