@@ -49,6 +49,7 @@
     "@pluralsight/ps-design-system-textarea": "^3.0.1",
     "@pluralsight/ps-design-system-textinput": "*",
     "@pluralsight/ps-design-system-theme": "*",
+    "@pluralsight/ps-design-system-typeahead": "*",
     "@pluralsight/ps-design-system-tooltip": "*",
     "@pluralsight/ps-design-system-util": "*",
     "@pluralsight/ps-design-system-viewtoggle": "^4.0.1",
