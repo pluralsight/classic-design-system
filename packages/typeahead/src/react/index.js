@@ -11,6 +11,8 @@ import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
 import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
+import useDebounce from './use-debounce.js'
+import useOnClickOutside from './use-on-click-outside.js'
 import { omit, pick } from './utils.js'
 
 const TEXT_INPUT_PROPS = [
@@ -19,8 +21,10 @@ const TEXT_INPUT_PROPS = [
   'error',
   'label',
   'name',
+  'onChange',
   'placeholder',
-  'subLabel'
+  'subLabel',
+  'value'
 ]
 
 const styles = {
@@ -28,29 +32,33 @@ const styles = {
 }
 
 const Typeahead = React.forwardRef((props, forwardedRef) => {
-  const { children, onChange, value } = props
+  const { children, filterFn, onChange, value } = props
 
   const ref = React.useRef()
-  React.useImperativeHandle(forwardedRef, () => ref.current)
 
-  const suggestions = React.useMemo(
-    () =>
-      Children.toArray(children).map((comp, index) => ({
-        comp,
-        index,
-        value: comp.props.children
-      })),
-    [children]
-  )
+  const inputRef = React.useRef()
+  React.useImperativeHandle(forwardedRef, () => inputRef.current)
 
   const controlled = React.useMemo(() => !!onChange, [onChange])
+  const [open, setOpen] = React.useState(false)
 
   const [innerValue, setInnerValue] = React.useState(value)
-  const [open, setOpen] = React.useState(false)
+  const searchTerm = useDebounce(innerValue, 300)
 
   React.useEffect(() => {
     if (controlled) setInnerValue(value)
   }, [controlled, value])
+
+  const suggestions = React.useMemo(() => {
+    const childArray = Children.toArray(children)
+    const filtered = filterFn(searchTerm, childArray)
+
+    return filtered.map((child, index) => ({
+      comp: child,
+      index,
+      value: getSuggestionValue(child)
+    }))
+  }, [children, filterFn, searchTerm])
 
   const handleChange = (evt, nextValue) => {
     if (!nextValue) nextValue = evt.target.value
@@ -68,45 +76,67 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
     handleChange(evt, nextValue)
   }
 
+  useOnClickOutside(ref, evt => {
+    setOpen(false)
+  })
+
   return (
-    <BelowLeft
-      when={open}
-      show={
-        <SuggestionsMenu
-          onChange={handleSuggestionMenuChange}
-          suggestions={suggestions}
-        />
-      }
+    <div
+      {...filterReactProps(omit(props, TEXT_INPUT_PROPS))}
+      {...styles.typeahead()}
+      ref={ref}
     >
-      <div
-        {...filterReactProps(omit(props, TEXT_INPUT_PROPS))}
-        {...styles.typeahead()}
-        ref={ref}
+      <BelowLeft
+        when={open}
+        show={
+          <SuggestionsMenu
+            onChange={handleSuggestionMenuChange}
+            suggestions={suggestions}
+          />
+        }
       >
-        <TextInput
-          {...pick(props, TEXT_INPUT_PROPS)}
-          onChange={handleChange}
-          onFocus={handleFocus}
-          value={innerValue}
-        />
-      </div>
-    </BelowLeft>
+        <div>
+          <TextInput
+            {...pick(props, TEXT_INPUT_PROPS)}
+            onChange={handleChange}
+            onFocus={handleFocus}
+            ref={inputRef}
+            value={innerValue}
+          />
+        </div>
+      </BelowLeft>
+    </div>
   )
 })
 
 const SuggestionsMenu = React.forwardRef((props, forwardedRef) => {
+  const { suggestions, ...rest } = props
+
+  const items = React.useMemo(() => {
+    if (suggestions.length <= 0)
+      return (
+        <React.Fragment>
+          <ActionMenu.Item disabled value="">
+            no results found
+          </ActionMenu.Item>
+        </React.Fragment>
+      )
+
+    return suggestions.map(sug => (
+      <ActionMenu.Item key={sug.index} value={sug.value}>
+        {sug.comp}
+      </ActionMenu.Item>
+    ))
+  }, [suggestions])
+
   return (
     <ActionMenu
-      {...props}
+      {...rest}
       ref={forwardedRef}
       origin={ActionMenu.origins.topLeft}
       shouldFocusOnMount={false}
     >
-      {props.suggestions.map(({ comp, index, value }) => (
-        <ActionMenu.Item key={index} value={value}>
-          {comp}
-        </ActionMenu.Item>
-      ))}
+      {items}
     </ActionMenu>
   )
 })
@@ -131,12 +161,16 @@ Suggestion.propTypes = {
 }
 
 Typeahead.propTypes = {
-  children: PropTypes.arrayOf(elementOfType(Suggestion)),
+  children: PropTypes.oneOfType([
+    elementOfType(Suggestion),
+    PropTypes.arrayOf(elementOfType(Suggestion))
+  ]),
+  filterFn: PropTypes.func,
   loading: PropTypes.bool,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
-  value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  value: PropTypes.string,
 
   // props used by underlying TextInput
   appearance: PropTypes.any,
@@ -148,6 +182,7 @@ Typeahead.propTypes = {
   subLabel: PropTypes.any
 }
 Typeahead.defaultProps = {
+  filterFn: filterSuggestions,
   value: ''
 }
 
@@ -158,3 +193,19 @@ Typeahead.Suggestion = Suggestion
 export const appearances = vars.appearances
 
 export default Typeahead
+
+function getSuggestionValue(suggestionInst) {
+  return suggestionInst.props.children
+}
+
+function filterSuggestions(searchTerm, children) {
+  if (!searchTerm || searchTerm.length <= 1) return children
+  const term = searchTerm.toLowerCase()
+
+  const matches = child => {
+    const value = getSuggestionValue(child)
+    return value.toLowerCase().includes(term)
+  }
+
+  return children.filter(matches)
+}

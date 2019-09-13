@@ -1,9 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import Typeahead from '../index.js'
-import { combineFns } from '../utils.js'
 
 import US_STATES from './fixtures/us-states.json'
 
@@ -18,17 +16,37 @@ storiesOf('Components | Typeahead / uncontrolled', module).add('default', _ => {
     </Typeahead>
   )
 })
+
 storiesOf('Components | Typeahead / controlled', module).add('default', _ => (
   <ControlledStory />
 ))
 
-function ControlledStory(props) {
-  const defaultValue = US_STATES[0].name
-  const [value, setValue] = React.useState(defaultValue)
+storiesOf('Components | Typeahead / form props', module)
+  .add('label and subLabel', _ => (
+    <ControlledStory label="Some label" subLabel="Some sublabel" />
+  ))
+  .add('all', _ => (
+    <ControlledStory
+      label="Some label"
+      subLabel="Some sublabel"
+      placeholder="Some placeholder"
+    />
+  ))
+  .add('all w/error', _ => (
+    <ControlledStory
+      error
+      label="Some label"
+      subLabel="Some sublabel"
+      placeholder="Some placeholder"
+    />
+  ))
 
-  const handleChange = combineFns((evt, nextValue) => {
+function ControlledStory(props) {
+  const [value, setValue] = React.useState('')
+
+  const handleChange = (evt, nextValue) => {
     setValue(nextValue)
-  }, props.onChange)
+  }
 
   return (
     <Typeahead onChange={handleChange} value={value} {...props}>
@@ -39,7 +57,4 @@ function ControlledStory(props) {
       ))}
     </Typeahead>
   )
-}
-ControlledStory.propTypes = {
-  onChange: PropTypes.func
 }

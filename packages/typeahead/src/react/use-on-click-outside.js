@@ -12,10 +12,10 @@ export default function useOnClickOutside(ref, handler) {
       document.addEventListener('touchstart', handleMouseDown)
 
       return function unbindEvents() {
-        document.addEventListener('mousedown', handleMouseDown)
-        document.addEventListener('touchstart', handleMouseDown)
+        document.removeEventListener('mousedown', handleMouseDown)
+        document.removeEventListener('touchstart', handleMouseDown)
       }
     },
-    [ref, handler]
+    [handler, ref]
   )
 }
