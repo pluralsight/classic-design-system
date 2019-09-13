@@ -27,7 +27,8 @@ const styles = {
 }
 
 const ActionMenu = React.forwardRef((props, forwardedRef) => {
-  const ref = forwardedRef || React.useRef()
+  const ref = React.useRef()
+  React.useImperativeHandle(forwardedRef, () => ref.current)
 
   const initialIndex = props.shouldFocusOnMount
     ? calcNextIndex(
