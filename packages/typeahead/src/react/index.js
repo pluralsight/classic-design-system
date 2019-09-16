@@ -13,7 +13,6 @@ import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 import useDebounce from './use-debounce.js'
-import useOnClickOutside from './use-on-click-outside.js'
 import { omit, pick } from './utils.js'
 
 const TEXT_INPUT_PROPS = [
@@ -29,14 +28,14 @@ const TEXT_INPUT_PROPS = [
 ]
 
 const styles = {
-  typeahead: (themeName, props) => css(stylesheet['.psds-typeahead'])
+  typeahead: () => css(stylesheet['.psds-typeahead'])
 }
 
 const Typeahead = React.forwardRef((props, forwardedRef) => {
   const { children, filterFn, onChange, value } = props
 
+  const portal = usePortal()
   const ref = React.useRef()
-
   const inputRef = React.useRef()
   React.useImperativeHandle(forwardedRef, () => inputRef.current)
 
@@ -50,16 +49,28 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
     if (controlled) setInnerValue(value)
   }, [controlled, value])
 
+  useOnDocumentClick(evt => {
+    if (!ref.current) return
+
+    const { target } = evt
+    if (ref.current.contains(target) || portal.current.contains(target)) return
+
+    setOpen(false)
+  })
+
   const suggestions = React.useMemo(() => {
     const childArray = Children.toArray(children)
-    const filtered = filterFn(searchTerm, childArray)
-
-    return filtered.map((child, index) => ({
+    return childArray.map((child, index) => ({
       comp: child,
       index,
       value: getSuggestionValue(child)
     }))
-  }, [children, filterFn, searchTerm])
+  }, [children])
+
+  const filteredSuggestions = React.useMemo(
+    () => filterFn(searchTerm, suggestions),
+    [filterFn, searchTerm, suggestions]
+  )
 
   const handleChange = (evt, nextValue) => {
     if (!nextValue) nextValue = evt.target.value
@@ -77,10 +88,6 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
     handleChange(evt, nextValue)
   }
 
-  useOnClickOutside(ref, evt => {
-    setOpen(false)
-  })
-
   return (
     <div
       {...filterReactProps(omit(props, TEXT_INPUT_PROPS))}
@@ -88,12 +95,12 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
       ref={ref}
     >
       <BelowLeft
-        inNode={document.body}
+        inNode={portal.current}
         when={open}
         show={
           <SuggestionsMenu
             onChange={handleSuggestionMenuChange}
-            suggestions={suggestions}
+            suggestions={filteredSuggestions}
           />
         }
         target={inputRef}
@@ -201,12 +208,36 @@ function getSuggestionValue(suggestionInst) {
 
 function filterSuggestions(searchTerm, children) {
   if (!searchTerm || searchTerm.length <= 1) return children
-  const term = searchTerm.toLowerCase()
 
-  const matches = child => {
-    const value = getSuggestionValue(child)
-    return value.toLowerCase().includes(term)
-  }
+  const term = searchTerm.toLowerCase()
+  const matches = ({ value }) => value.toLowerCase().includes(term)
 
   return children.filter(matches)
+}
+
+function useOnDocumentClick(handler) {
+  React.useEffect(() => {
+    document.addEventListener('mousedown', handler)
+    document.addEventListener('touchstart', handler)
+
+    return () => {
+      document.removeEventListener('mousedown', handler)
+      document.removeEventListener('touchstart', handler)
+    }
+  }, [handler])
+}
+
+function usePortal() {
+  const ref = React.useRef(document.createElement('div'))
+
+  React.useEffect(() => {
+    const { current } = ref
+    document.body.appendChild(current)
+
+    return () => {
+      document.body.removeChild(current)
+    }
+  }, [])
+
+  return ref
 }
