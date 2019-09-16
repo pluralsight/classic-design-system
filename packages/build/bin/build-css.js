@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-
+// eslint-disable-next-line no-global-assign
+require = require('esm')(module)
 const chalk = require('chalk')
 const program = require('commander')
 const path = require('path')
