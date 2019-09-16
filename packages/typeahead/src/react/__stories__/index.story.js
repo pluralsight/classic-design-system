@@ -41,6 +41,12 @@ storiesOf('Components | Typeahead / form props', module)
     />
   ))
 
+const appearances = storiesOf('Components | Typeahead / appearances', module)
+
+for (const appearance in Typeahead.appearances) {
+  appearances.add(appearance, _ => <ControlledStory appearance={appearance} />)
+}
+
 function ControlledStory(props) {
   const [value, setValue] = React.useState('')
 

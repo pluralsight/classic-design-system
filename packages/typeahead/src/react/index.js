@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import { BelowLeft } from '@pluralsight/ps-design-system-position/react.js'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
@@ -87,6 +88,7 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
       ref={ref}
     >
       <BelowLeft
+        inNode={document.body}
         when={open}
         show={
           <SuggestionsMenu
@@ -94,16 +96,17 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
             suggestions={suggestions}
           />
         }
+        target={inputRef}
       >
-        <div>
-          <TextInput
-            {...pick(props, TEXT_INPUT_PROPS)}
-            onChange={handleChange}
-            onFocus={handleFocus}
-            ref={inputRef}
-            value={innerValue}
-          />
-        </div>
+        <TextInput
+          {...pick(props, TEXT_INPUT_PROPS)}
+          iconAlign={TextInput.iconAligns.right}
+          icon={<Icon id={Icon.ids.caretDown} />}
+          onChange={handleChange}
+          onFocus={handleFocus}
+          ref={inputRef}
+          value={innerValue}
+        />
       </BelowLeft>
     </div>
   )
@@ -115,11 +118,9 @@ const SuggestionsMenu = React.forwardRef((props, forwardedRef) => {
   const items = React.useMemo(() => {
     if (suggestions.length <= 0)
       return (
-        <React.Fragment>
-          <ActionMenu.Item disabled value="">
-            no results found
-          </ActionMenu.Item>
-        </React.Fragment>
+        <ActionMenu.Item disabled value="">
+          no results found
+        </ActionMenu.Item>
       )
 
     return suggestions.map(sug => (

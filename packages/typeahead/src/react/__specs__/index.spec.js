@@ -11,7 +11,13 @@ jest.mock('../use-debounce.js', () => ({
 
 describe('Typeahead', () => {
   it('renders', () => {
-    const { getByTestId } = render(<Typeahead data-testid="undertest" />)
+    const { getByTestId } = render(
+      <Typeahead data-testid="undertest">
+        <Typeahead.Suggestion>first</Typeahead.Suggestion>
+        <Typeahead.Suggestion>second</Typeahead.Suggestion>
+        <Typeahead.Suggestion>third</Typeahead.Suggestion>
+      </Typeahead>
+    )
     expect(getByTestId('undertest')).toBeInTheDocument()
   })
 
@@ -54,7 +60,7 @@ describe('Typeahead', () => {
     it('is visible on input focus', () => {
       fireEvent.focus(input)
 
-      const menu = container.querySelector('[role="menu"]')
+      const menu = document.querySelector('[role="menu"]')
       expect(menu).toBeInTheDocument()
     })
 
@@ -68,7 +74,7 @@ describe('Typeahead', () => {
       )
       fireEvent.focus(input)
 
-      const menu = container.querySelector('[role="menu"]')
+      const menu = document.querySelector('[role="menu"]')
 
       expect(menu).toHaveTextContent('first')
       expect(menu).toHaveTextContent('second')
@@ -85,7 +91,7 @@ describe('Typeahead', () => {
       )
       fireEvent.focus(input)
 
-      const menu = container.querySelector('[role="menu"]')
+      const menu = document.querySelector('[role="menu"]')
 
       expect(menu).toHaveTextContent('second')
 
@@ -104,7 +110,7 @@ describe('Typeahead', () => {
 
       fireEvent.focus(input)
 
-      const menu = container.querySelector('[role="menu"]')
+      const menu = document.querySelector('[role="menu"]')
       expect(menu).toHaveTextContent('no results found')
     })
   })

@@ -1,200 +1,365 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components | Typeahead / controlled default 1`] = `
+exports[`Storyshots Components | Typeahead / appearances default 1`] = `
 <div>
-  <div>
-    <label
-      data-css-w0yocm=""
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1r967oi=""
     >
       <div
-        data-css-1r967oi=""
+        data-css-1xm24a9=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ajs356=""
         >
-          <div
-            data-css-177hkuc=""
-          >
-            <input
-              data-css-lzb8ea=""
-              disabled={false}
-              onChange={[Function]}
-              onFocus={[Function]}
-              value=""
-            />
-          </div>
+          <input
+            data-css-lzb8ea=""
+            disabled={false}
+            onChange={[Function]}
+            onFocus={[Function]}
+            value=""
+          />
         </div>
       </div>
-    </label>
-  </div>
+      <div
+        data-css-121dxw3=""
+      >
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components | Typeahead / appearances subtle 1`] = `
+<div>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-1xm24a9=""
+      >
+        <div
+          data-css-g760uo=""
+        >
+          <input
+            data-css-lzb8ea=""
+            disabled={false}
+            onChange={[Function]}
+            onFocus={[Function]}
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-13qmv6x=""
+      >
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components | Typeahead / controlled default 1`] = `
+<div>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-1xm24a9=""
+      >
+        <div
+          data-css-ajs356=""
+        >
+          <input
+            data-css-lzb8ea=""
+            disabled={false}
+            onChange={[Function]}
+            onFocus={[Function]}
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-121dxw3=""
+      >
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots Components | Typeahead / form props all 1`] = `
 <div>
-  <div>
-    <label
-      data-css-w0yocm=""
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-n53zhn=""
+    >
+      Some label
+    </div>
+    <div
+      data-css-1r967oi=""
     >
       <div
-        data-css-n53zhn=""
-      >
-        Some label
-      </div>
-      <div
-        data-css-1r967oi=""
+        data-css-1xm24a9=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ajs356=""
         >
-          <div
-            data-css-177hkuc=""
-          >
-            <input
-              data-css-lzb8ea=""
-              disabled={false}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="Some placeholder"
-              value=""
-            />
-          </div>
+          <input
+            data-css-lzb8ea=""
+            disabled={false}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+            value=""
+          />
         </div>
       </div>
       <div
-        data-css-1de0a6a=""
+        data-css-121dxw3=""
       >
-        Some sublabel
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
       </div>
-    </label>
-  </div>
+    </div>
+    <div
+      data-css-1de0a6a=""
+    >
+      Some sublabel
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots Components | Typeahead / form props all w/error 1`] = `
 <div>
-  <div>
-    <label
-      data-css-w0yocm=""
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-n53zhn=""
+    >
+      Some label
+    </div>
+    <div
+      data-css-1r967oi=""
     >
       <div
-        data-css-n53zhn=""
-      >
-        Some label
-      </div>
-      <div
-        data-css-1r967oi=""
+        data-css-utxo7p=""
       >
         <div
-          data-css-utxo7p=""
+          data-css-ajs356=""
         >
-          <div
-            data-css-177hkuc=""
+          <input
+            data-css-lzb8ea=""
+            disabled={false}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-121dxw3=""
+      >
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            <input
-              data-css-lzb8ea=""
-              disabled={false}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="Some placeholder"
-              value=""
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
-          </div>
-        </div>
-        <div
-          data-css-loo18p=""
-        >
-          <div
-            data-css-otejxm=""
-          >
-            <svg
-              aria-label="warning icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10S2 17.514 2 12zm2 0c0 4.411 3.589 8 8 8s8-3.589 8-8-3.589-8-8-8-8 3.589-8 8zm8.5 6h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-              />
-            </svg>
-          </div>
+          </svg>
         </div>
       </div>
       <div
-        data-css-1de0a6a=""
+        data-css-loo18p=""
       >
-        Some sublabel
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="warning icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10S2 17.514 2 12zm2 0c0 4.411 3.589 8 8 8s8-3.589 8-8-3.589-8-8-8-8 3.589-8 8zm8.5 6h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+            />
+          </svg>
+        </div>
       </div>
-    </label>
-  </div>
+    </div>
+    <div
+      data-css-1de0a6a=""
+    >
+      Some sublabel
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots Components | Typeahead / form props label and subLabel 1`] = `
 <div>
-  <div>
-    <label
-      data-css-w0yocm=""
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-n53zhn=""
+    >
+      Some label
+    </div>
+    <div
+      data-css-1r967oi=""
     >
       <div
-        data-css-n53zhn=""
-      >
-        Some label
-      </div>
-      <div
-        data-css-1r967oi=""
+        data-css-1xm24a9=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ajs356=""
         >
-          <div
-            data-css-177hkuc=""
-          >
-            <input
-              data-css-lzb8ea=""
-              disabled={false}
-              onChange={[Function]}
-              onFocus={[Function]}
-              value=""
-            />
-          </div>
+          <input
+            data-css-lzb8ea=""
+            disabled={false}
+            onChange={[Function]}
+            onFocus={[Function]}
+            value=""
+          />
         </div>
       </div>
       <div
-        data-css-1de0a6a=""
+        data-css-121dxw3=""
       >
-        Some sublabel
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
       </div>
-    </label>
-  </div>
+    </div>
+    <div
+      data-css-1de0a6a=""
+    >
+      Some sublabel
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots Components | Typeahead / uncontrolled default 1`] = `
 <div>
-  <div>
-    <label
-      data-css-w0yocm=""
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1r967oi=""
     >
       <div
-        data-css-1r967oi=""
+        data-css-1xm24a9=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ajs356=""
         >
-          <div
-            data-css-177hkuc=""
-          >
-            <input
-              data-css-lzb8ea=""
-              disabled={false}
-              onChange={[Function]}
-              onFocus={[Function]}
-              value=""
-            />
-          </div>
+          <input
+            data-css-lzb8ea=""
+            disabled={false}
+            onChange={[Function]}
+            onFocus={[Function]}
+            value=""
+          />
         </div>
       </div>
-    </label>
-  </div>
+      <div
+        data-css-121dxw3=""
+      >
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </label>
 </div>
 `;
