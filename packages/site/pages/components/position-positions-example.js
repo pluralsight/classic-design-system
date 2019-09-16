@@ -1,13 +1,10 @@
-import {
-  Above,
-  Below,
-  LeftOf,
-  RightOf
-} from '@pluralsight/ps-design-system-position/react.js'
+import React from 'react'
+
 import core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button/react.js'
-import React from 'react'
 import Tooltip from '@pluralsight/ps-design-system-tooltip/react.js'
+
+import * as components from '@pluralsight/ps-design-system-position/react.js'
 
 import { Head } from '../../src/ui/index.js'
 
@@ -15,17 +12,22 @@ export default function PositionExample(props) {
   return (
     <ul className="positions">
       <Head />
-      {[Above, Below, LeftOf, RightOf].map(Position => (
-        <li className="position" key={Position.displayName}>
-          <div className="box">
-            <Position
-              show={<Tooltip>{'<' + Position.displayName + '/>'}</Tooltip>}
-            >
-              <Button>Button</Button>
-            </Position>
-          </div>
-        </li>
-      ))}
+
+      {Object.keys(components).map(key => {
+        const Position = components[key]
+        const name = `<${Position.displayName} />`
+
+        return (
+          <li className="position" key={key}>
+            <div className="box">
+              <Position show={<Tooltip>{name}</Tooltip>}>
+                <Button>Button</Button>
+              </Position>
+            </div>
+          </li>
+        )
+      })}
+
       <style jsx>{`
         .positions {
           display: grid;
