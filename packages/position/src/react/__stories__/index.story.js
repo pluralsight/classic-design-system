@@ -41,7 +41,33 @@ const MockToolip = React.forwardRef((props, forwardedRef) => {
   )
 })
 
-const basicStories = storiesOf('Components | Position / basic')
+const ScrollContainer = props => {
+  const containerClass = css({
+    border: `4px dashed ${core.colors.orange}`,
+    color: core.colors.bone,
+    height: 500,
+    overflow: 'scroll',
+    padding: 20,
+    width: 500
+  })
+  const shimClass = css({
+    border: `1px dashed ${core.colors.bone}`,
+    height: 200,
+    margin: '20px 0',
+    opacity: 0.4
+  })
+
+  return (
+    <div className={containerClass} {...props}>
+      <div className={shimClass} />
+      {props.children}
+      <div className={shimClass} />
+    </div>
+  )
+}
+ScrollContainer.propTypes = { children: PropTypes.node }
+
+const basicStories = storiesOf('Components | Position / basic', module)
 Object.values(positionComponents).forEach(Comp => {
   const { displayName } = Comp
   const name = `<${Comp.displayName} />`
@@ -53,7 +79,7 @@ Object.values(positionComponents).forEach(Comp => {
   ))
 })
 
-const targetStories = storiesOf('Components | Position / custom target')
+const targetStories = storiesOf('Components | Position / custom target', module)
 Object.values(positionComponents).forEach(Comp => {
   function TargetStory(props) {
     const customRef = React.useRef()
@@ -74,41 +100,65 @@ Object.values(positionComponents).forEach(Comp => {
   targetStories.add(displayName, () => <TargetStory />)
 })
 
-storiesOf('Components | Position / portals').add('test.skip inNode', () => {
-  const { Below } = positionComponents
+storiesOf('Components | Position / in scrollable container', module).add(
+  'RightOf',
+  () => {
+    const { RightOf } = positionComponents
 
-  function InNodeStory() {
-    const portal = React.useRef()
-    const [node, setNode] = React.useState(portal.current)
+    function ScrollStory() {
+      const target = React.useRef()
 
-    React.useEffect(() => {
-      setNode(portal.current)
-    }, [portal])
+      return (
+        <ScrollContainer>
+          <RightOf show={<Tooltip>The tip</Tooltip>} target={target}>
+            <Box ref={target}>target</Box>
+          </RightOf>
+        </ScrollContainer>
+      )
+    }
 
-    return (
-      <React.Fragment>
-        <div
-          style={{
-            position: 'relative',
-            top: '-200px',
-            left: '-100px',
-            border: `1px dashed ${core.colors.orange}`,
-            height: '300px',
-            width: '300px'
-          }}
-        >
-          <Below show={<Tooltip>The tip</Tooltip>} inNode={node}>
-            <Box>Below box stuck in relative space</Box>
-          </Below>
-        </div>
-
-        <div ref={portal} />
-      </React.Fragment>
-    )
+    return <ScrollStory />
   }
+)
 
-  return <InNodeStory />
-})
+storiesOf('Components | Position / portals', module).add(
+  'test.skip inNode',
+  () => {
+    const { Below } = positionComponents
+
+    function InNodeStory() {
+      const portal = React.useRef()
+      const [node, setNode] = React.useState(portal.current)
+
+      React.useEffect(() => {
+        setNode(portal.current)
+      }, [portal])
+
+      return (
+        <React.Fragment>
+          <div
+            style={{
+              position: 'relative',
+              top: '-200px',
+              left: '-100px',
+              border: `1px dashed ${core.colors.orange}`,
+              height: '300px',
+              width: '300px'
+            }}
+          >
+            <Below show={<Tooltip>The tip</Tooltip>} inNode={node}>
+              <Box>Below box stuck in relative space</Box>
+            </Below>
+          </div>
+
+          <div ref={portal} />
+        </React.Fragment>
+      )
+    }
+
+    return <InNodeStory />
+  }
+)
 
 const jsStory = storiesOf('Utilities | Position / position fns', module)
 Object.keys(positionFns).forEach(pos =>

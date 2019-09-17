@@ -464,6 +464,50 @@ Array [
 ]
 `;
 
+exports[`Storyshots Components | Position / in scrollable container RightOf 1`] = `
+<div
+  className={
+    Object {
+      "data-css-s48i2c": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1ezr34k": "",
+      }
+    }
+  />
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    target
+  </div>
+  <div
+    data-css-1luw3o6=""
+    style={
+      Object {
+        "position": "absolute",
+      }
+    }
+  >
+    The tip
+  </div>
+  <div
+    className={
+      Object {
+        "data-css-1ezr34k": "",
+      }
+    }
+  />
+</div>
+`;
+
 exports[`Storyshots Utilities | Position / position fns above 1`] = `
 <div>
   <div

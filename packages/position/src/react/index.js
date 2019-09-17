@@ -57,14 +57,20 @@ const Position = React.forwardRef((props, forwardedRef) => {
     style: { ...child.props.style, ...style }
   })
 
-  React.useEffect(() => {
+  const updateStyle = React.useCallback(() => {
     const targetNode = props.target ? props.target.current : ref.current
-
     if (props.when && targetNode && tetheredRef.current) {
       const nextStyle = props.position(targetNode).styleFor(tetheredRef.current)
       setStyle(nextStyle)
     }
-  }, [props, props.position, props.target, props.when])
+  }, [props])
+
+  React.useEffect(() => {
+    updateStyle()
+  }, [updateStyle])
+
+  useOnWindowResize(updateStyle)
+  useOnWindowScroll(updateStyle)
 
   const inPortal = props.inNode
 
@@ -91,4 +97,59 @@ Position.propTypes = {
 
 Position.defaultProps = {
   when: true
+}
+
+function useDebounceCallback(fn, delay = 100) {
+  const timeout = React.useRef()
+
+  const debounced = React.useCallback(
+    function() {
+      const self = this
+      const args = arguments
+
+      function later() {
+        timeout.current = null
+        fn.apply(self, args)
+      }
+
+      clearTimeout(timeout.current)
+      timeout.current = setTimeout(later, delay)
+    },
+    [fn, delay]
+  )
+
+  React.useEffect(
+    () => () => {
+      if (!timeout.current) return
+      clearTimeout(timeout.current)
+      timeout.current = null
+    },
+    [fn, delay]
+  )
+
+  return debounced
+}
+
+function useOnWindowResize(handler) {
+  const handleScroll = useDebounceCallback(handler, 10)
+
+  React.useEffect(() => {
+    window.addEventListener('resize', handleScroll)
+
+    return () => {
+      window.removeEventListener('resize', handleScroll)
+    }
+  }, [handleScroll])
+}
+
+function useOnWindowScroll(handler) {
+  const handleScroll = useDebounceCallback(handler, 10)
+
+  React.useEffect(() => {
+    window.addEventListener('scroll', handleScroll, true)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [handleScroll])
 }
