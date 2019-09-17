@@ -35,7 +35,9 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
   const { children, filterFn, onChange, value } = props
 
   const portal = usePortal()
-  const ref = React.useRef()
+  const containerRef = React.useRef()
+
+  const fieldRef = React.useRef()
   const inputRef = React.useRef()
   React.useImperativeHandle(forwardedRef, () => inputRef.current)
 
@@ -50,10 +52,12 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
   }, [controlled, value])
 
   useOnDocumentClick(evt => {
-    if (!ref.current) return
+    const isInnerClick =
+      !containerRef.current ||
+      containerRef.current.contains(evt.target) ||
+      portal.current.contains(evt.target)
 
-    const { target } = evt
-    if (ref.current.contains(target) || portal.current.contains(target)) return
+    if (isInnerClick) return
 
     setOpen(false)
   })
@@ -92,7 +96,7 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
     <div
       {...filterReactProps(omit(props, TEXT_INPUT_PROPS))}
       {...styles.typeahead()}
-      ref={ref}
+      ref={containerRef}
     >
       <BelowLeft
         inNode={portal.current}
@@ -103,7 +107,7 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
             suggestions={filteredSuggestions}
           />
         }
-        target={inputRef}
+        target={fieldRef}
       >
         <TextInput
           {...pick(props, TEXT_INPUT_PROPS)}
@@ -111,7 +115,7 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
           icon={<Icon id={Icon.ids.caretDown} />}
           onChange={handleChange}
           onFocus={handleFocus}
-          ref={inputRef}
+          ref={{ field: fieldRef, input: inputRef }}
           value={innerValue}
         />
       </BelowLeft>
