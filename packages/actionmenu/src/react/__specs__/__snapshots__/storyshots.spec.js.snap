@@ -5,7 +5,7 @@ exports[`Storyshots customized styles item style 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -81,7 +81,7 @@ exports[`Storyshots disabled item 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -158,7 +158,7 @@ exports[`Storyshots disabled links 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -235,7 +235,7 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -280,7 +280,7 @@ exports[`Storyshots disabled nested 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -340,7 +340,7 @@ exports[`Storyshots disabled single, disabled 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -369,7 +369,7 @@ exports[`Storyshots dividers edge 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -402,7 +402,7 @@ exports[`Storyshots dividers sandwich 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -467,7 +467,7 @@ exports[`Storyshots link a w/ href 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -497,7 +497,7 @@ exports[`Storyshots menu items long text 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -542,7 +542,7 @@ exports[`Storyshots menu items long text with icon 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -583,12 +583,535 @@ exports[`Storyshots menu items long text with icon 1`] = `
 </div>
 `;
 
+exports[`Storyshots menu items lots 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-2gh4m0=""
+    onKeyDown={[Function]}
+    role="menu"
+  >
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1qr74j9=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        0
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        1
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        2
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        3
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        4
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        5
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        6
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        7
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        8
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        9
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        10
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        11
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        12
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        13
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        14
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        15
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        16
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        17
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        18
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        19
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        20
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        21
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        22
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        23
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        24
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        25
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        26
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        27
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        28
+      </button>
+    </div>
+    <div
+      data-css-13azwyo=""
+    >
+      <button
+        aria-haspopup={false}
+        data-css-1stw8mg=""
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOver={[Function]}
+        role="menuitem"
+        tabIndex="0"
+      >
+        index: 
+        29
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots menu items multiple 1`] = `
 <div
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -649,7 +1172,7 @@ exports[`Storyshots menu items null item 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -694,7 +1217,7 @@ exports[`Storyshots menu items one 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -723,7 +1246,7 @@ exports[`Storyshots menu items with icons 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -844,7 +1367,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
     }
   >
     <div
-      data-css-ldprua=""
+      data-css-mftrkt=""
       onKeyDown={[Function]}
       role="menu"
     >
@@ -914,7 +1437,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
     }
   >
     <div
-      data-css-10akat2=""
+      data-css-1xcv9nl=""
       onKeyDown={[Function]}
       role="menu"
     >
@@ -984,7 +1507,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
     }
   >
     <div
-      data-css-13za233=""
+      data-css-2gh4m0=""
       onKeyDown={[Function]}
       role="menu"
     >
@@ -1054,7 +1577,7 @@ exports[`Storyshots nested origin topRight 1`] = `
     }
   >
     <div
-      data-css-ib4mvs=""
+      data-css-1757y9o=""
       onKeyDown={[Function]}
       role="menu"
     >
@@ -1115,7 +1638,7 @@ exports[`Storyshots onClick flat 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -1176,7 +1699,7 @@ exports[`Storyshots onClick nested 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -1412,7 +1935,7 @@ exports[`Storyshots shouldFocusOnMount false 1`] = `
   data-css-claeju=""
 >
   <div
-    data-css-13za233=""
+    data-css-2gh4m0=""
     onKeyDown={[Function]}
     role="menu"
   >
@@ -1479,31 +2002,31 @@ exports[`Storyshots with Position BelowLeft 1`] = `
       }
     }
   >
-    <div
-      style={
-        Object {
-          "background": "pink",
-          "display": "inline-block",
-          "padding": "4px",
+    <div>
+      <div
+        style={
+          Object {
+            "background": "pink",
+            "display": "inline-block",
+            "padding": "4px",
+          }
         }
-      }
-    >
-      anchor
+      >
+        anchor
+      </div>
     </div>
     <div
       style={
         Object {
           "background": "pink",
           "display": "inline-block",
-          "left": "0px",
           "padding": "4px",
           "position": "absolute",
-          "top": "12px",
         }
       }
     >
       <div
-        data-css-13za233=""
+        data-css-2gh4m0=""
         onKeyDown={[Function]}
         role="menu"
       >
@@ -1573,31 +2096,31 @@ exports[`Storyshots with Position BelowRight 1`] = `
       }
     }
   >
-    <div
-      style={
-        Object {
-          "background": "pink",
-          "display": "inline-block",
-          "padding": "4px",
+    <div>
+      <div
+        style={
+          Object {
+            "background": "pink",
+            "display": "inline-block",
+            "padding": "4px",
+          }
         }
-      }
-    >
-      anchor
+      >
+        anchor
+      </div>
     </div>
     <div
       style={
         Object {
           "background": "pink",
           "display": "inline-block",
-          "left": "0px",
           "padding": "4px",
           "position": "absolute",
-          "top": "12px",
         }
       }
     >
       <div
-        data-css-ib4mvs=""
+        data-css-1757y9o=""
         onKeyDown={[Function]}
         role="menu"
       >
