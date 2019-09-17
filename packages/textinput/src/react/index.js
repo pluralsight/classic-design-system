@@ -64,6 +64,8 @@ const TextInput = React.forwardRef((props, forwardedRef) => {
     ...inputProps
   } = allProps
 
+  const { fieldRef, inputRef } = useMultipleRefs(forwardedRef)
+
   return (
     <label
       {...styles.textInput(allProps)}
@@ -74,13 +76,13 @@ const TextInput = React.forwardRef((props, forwardedRef) => {
 
       <div {...styles.fieldContainer(allProps)}>
         <Halo error={error} gapSize={Halo.gapSizes.small}>
-          <div {...styles.field(allProps)}>
+          <div ref={fieldRef} {...styles.field(allProps)}>
             <input
               {...filterReactProps(inputProps, { tagName: 'input' })}
               {...styles.fieldInput(allProps)}
               disabled={allProps.disabled}
               placeholder={allProps.placeholder}
-              ref={forwardedRef}
+              ref={inputRef}
             />
             {fieldAfter}
           </div>
@@ -124,3 +126,34 @@ TextInput.iconAligns = vars.iconAligns
 export const appearances = vars.appearances
 export const iconAligns = vars.iconAligns
 export default TextInput
+
+function isRef(ref) {
+  if (!isPlainObject(ref)) return false
+
+  return ref.hasOwnProperty('current')
+}
+
+function isRefs(refs) {
+  if (!isPlainObject(refs)) return false
+
+  return Object.keys(refs).every(key => isRef(refs[key]))
+}
+
+function isPlainObject(obj) {
+  return obj && !Array.isArray(obj) && typeof obj === 'object'
+}
+
+function useMultipleRefs(refs) {
+  const hasMultiple = isRefs(refs)
+
+  const prevFieldRef = hasMultiple ? refs['field'] : React.createRef()
+  const prevInputRef = hasMultiple ? refs['input'] : refs
+
+  const fieldRef = React.useRef(prevFieldRef)
+  const inputRef = React.useRef(prevInputRef)
+
+  React.useImperativeHandle(prevFieldRef, () => fieldRef.current)
+  React.useImperativeHandle(prevInputRef, () => inputRef.current)
+
+  return { fieldRef, inputRef }
+}
