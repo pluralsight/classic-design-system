@@ -4,11 +4,6 @@ import React from 'react'
 
 import Typeahead from '../index.js'
 
-jest.mock('../use-debounce.js', () => ({
-  __esModule: true,
-  default: jest.fn().mockImplementation(value => value)
-}))
-
 describe('Typeahead', () => {
   it('renders', () => {
     const { getByTestId } = render(
@@ -30,13 +25,12 @@ describe('Typeahead', () => {
 
   describe('suggestion menu', () => {
     const handleChange = jest.fn()
-    const initialValue = ''
 
     let container, input, rerender
 
     beforeEach(() => {
       const result = render(
-        <Typeahead onChange={handleChange} value={initialValue}>
+        <Typeahead onChange={handleChange}>
           <Typeahead.Suggestion>first</Typeahead.Suggestion>
           <Typeahead.Suggestion>second</Typeahead.Suggestion>
           <Typeahead.Suggestion>third</Typeahead.Suggestion>
@@ -64,9 +58,9 @@ describe('Typeahead', () => {
       expect(menu).toBeInTheDocument()
     })
 
-    it('shows all suggestions when value is empty', () => {
+    it('shows all suggestions when no search input', () => {
       rerender(
-        <Typeahead onChange={handleChange} value="">
+        <Typeahead onChange={handleChange}>
           <Typeahead.Suggestion>first</Typeahead.Suggestion>
           <Typeahead.Suggestion>second</Typeahead.Suggestion>
           <Typeahead.Suggestion>third</Typeahead.Suggestion>
@@ -81,15 +75,17 @@ describe('Typeahead', () => {
       expect(menu).toHaveTextContent('third')
     })
 
-    it('filters suggestions that match the value', () => {
+    it('filters suggestions when input value is updated', () => {
       rerender(
-        <Typeahead onChange={handleChange} value="second">
+        <Typeahead onChange={handleChange}>
           <Typeahead.Suggestion>first</Typeahead.Suggestion>
           <Typeahead.Suggestion>second</Typeahead.Suggestion>
           <Typeahead.Suggestion>third</Typeahead.Suggestion>
         </Typeahead>
       )
+
       fireEvent.focus(input)
+      fireEvent.change(input, { target: { value: 'second' } })
 
       const menu = document.querySelector('[role="menu"]')
 
@@ -101,7 +97,7 @@ describe('Typeahead', () => {
 
     it('shows empty state if no suggestions are found', () => {
       rerender(
-        <Typeahead onChange={handleChange} value="no match">
+        <Typeahead onChange={handleChange}>
           <Typeahead.Suggestion>first</Typeahead.Suggestion>
           <Typeahead.Suggestion>second</Typeahead.Suggestion>
           <Typeahead.Suggestion>third</Typeahead.Suggestion>
@@ -109,6 +105,7 @@ describe('Typeahead', () => {
       )
 
       fireEvent.focus(input)
+      fireEvent.change(input, { target: { value: 'no match' } })
 
       const menu = document.querySelector('[role="menu"]')
       expect(menu).toHaveTextContent('no results found')

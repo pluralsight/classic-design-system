@@ -1,4 +1,3 @@
-import { css } from 'glamor'
 import React, { Children } from 'react'
 import PropTypes from 'prop-types'
 
@@ -9,10 +8,8 @@ import { BelowLeft } from '@pluralsight/ps-design-system-position/react.js'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
 
-import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
-import useDebounce from './use-debounce.js'
 import { omit, pick } from './utils.js'
 
 const TEXT_INPUT_PROPS = [
@@ -26,11 +23,6 @@ const TEXT_INPUT_PROPS = [
   'subLabel',
   'value'
 ]
-
-const styles = {
-  typeahead: () => css(stylesheet['.psds-typeahead'])
-}
-
 const Typeahead = React.forwardRef((props, forwardedRef) => {
   const { children, filterFn, onChange, value } = props
 
@@ -45,11 +37,15 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
   const [open, setOpen] = React.useState(false)
 
   const [innerValue, setInnerValue] = React.useState(value)
-  const searchTerm = useDebounce(innerValue, 300)
+  const [searchTerm, setSearchTerm] = React.useState('')
 
   React.useEffect(() => {
     if (controlled) setInnerValue(value)
   }, [controlled, value])
+
+  React.useEffect(() => {
+    if (!open) setSearchTerm('')
+  }, [open])
 
   useOnDocumentClick(evt => {
     const isInnerClick =
@@ -78,6 +74,7 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
 
   const handleChange = (evt, nextValue) => {
     if (!nextValue) nextValue = evt.target.value
+    setSearchTerm(nextValue)
 
     if (controlled) onChange(evt, nextValue)
     else setInnerValue(nextValue)
@@ -95,7 +92,6 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
   return (
     <div
       {...filterReactProps(omit(props, TEXT_INPUT_PROPS))}
-      {...styles.typeahead()}
       ref={containerRef}
     >
       <BelowLeft
