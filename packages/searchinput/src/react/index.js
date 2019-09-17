@@ -2,14 +2,13 @@ import * as glamor from 'glamor'
 import React, { useRef } from 'react'
 import PropTypes from 'prop-types'
 
-import Button from '@pluralsight/ps-design-system-button/react'
-import CircularProgress from '@pluralsight/ps-design-system-circularprogress/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import TextInput from '@pluralsight/ps-design-system-textinput/react'
+import Button from '@pluralsight/ps-design-system-button/react.js'
+import CircularProgress from '@pluralsight/ps-design-system-circularprogress/react.js'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
 import Theme, {
-  names as themeNames,
-  withTheme
-} from '@pluralsight/ps-design-system-theme/react'
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme/react.js'
 
 import css from '../css/index.js'
 
@@ -17,15 +16,18 @@ const styles = {
   clear: _ => glamor.css(css['.psds-searchinput-clear'])
 }
 
-const SearchInput = withTheme(props => {
+const SearchInput = React.forwardRef((props, forwardedRef) => {
   const { loading, onClear, ...rest } = props
-  const inputRef = useRef()
+
+  const ref = useRef()
+  React.useImperativeHandle(forwardedRef, () => ref.current)
 
   const handleClear = evt => {
-    if (inputRef.current) {
-      inputRef.current.value = ''
-      inputRef.current.focus()
+    if (ref.current) {
+      ref.current.value = ''
+      ref.current.focus()
     }
+
     onClear(evt)
   }
 
@@ -42,7 +44,7 @@ const SearchInput = withTheme(props => {
       appearance={TextInput.appearances.subtle}
       fieldAfter={clearBtn}
       icon={icon}
-      innerRef={inputRef}
+      ref={ref}
       type="search"
       {...rest}
     />
