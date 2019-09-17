@@ -659,7 +659,6 @@ exports[`Storyshots Sample Form sample 1`] = `
             >
               <label
                 data-css-kn3wr0=""
-                onClick={[Function]}
               >
                 <div
                   data-css-1gbdc34=""
@@ -680,6 +679,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 <input
                   checked={false}
                   data-css-gyrv08=""
+                  onClick={[Function]}
                   readOnly={true}
                   tabIndex="-1"
                   type="radio"
@@ -697,7 +697,6 @@ exports[`Storyshots Sample Form sample 1`] = `
             >
               <label
                 data-css-kn3wr0=""
-                onClick={[Function]}
               >
                 <div
                   data-css-1gbdc34=""
@@ -718,6 +717,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 <input
                   checked={false}
                   data-css-gyrv08=""
+                  onClick={[Function]}
                   readOnly={true}
                   tabIndex="-1"
                   type="radio"

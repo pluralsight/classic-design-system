@@ -49,10 +49,7 @@ const Button = React.forwardRef((props, forwardedRef) => {
   const { _disabled, _error, _isFocused, _onFocus, _name } = props
 
   return (
-    <label
-      onClick={_disabled ? null : handleClick}
-      {...styles.button(themeName, props)}
-    >
+    <label {...styles.button(themeName, props)}>
       <div {...styles.circleOuter()}>
         <Halo
           error={_error}
@@ -77,6 +74,7 @@ const Button = React.forwardRef((props, forwardedRef) => {
 
       <input
         {...filterReactProps(props, { tagName: 'input' })}
+        onClick={_disabled ? null : handleClick}
         tabIndex="-1"
         type="radio"
         readOnly
