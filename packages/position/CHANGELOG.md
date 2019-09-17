@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@1.2.3...@pluralsight/ps-design-system-position@1.2.4) (2019-09-17)
+
+
+### Performance Improvements
+
+* **position:** dont clone element to show unless conditional true ([fcb631c](https://github.com/pluralsight/design-system/commit/fcb631c))
+
+
+
+
+
 ## [1.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@1.2.2...@pluralsight/ps-design-system-position@1.2.3) (2019-08-09)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-position

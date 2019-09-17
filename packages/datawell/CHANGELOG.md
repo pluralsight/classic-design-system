@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@2.0.0...@pluralsight/ps-design-system-datawell@2.1.0) (2019-09-17)
+
+
+### Features
+
+* **datawell:** pass filtered props and forward ref ([3fc17a6](https://github.com/pluralsight/design-system/commit/3fc17a6))
+
+
+
+
+
 # [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@1.1.4...@pluralsight/ps-design-system-datawell@2.0.0) (2019-08-09)
 
 
