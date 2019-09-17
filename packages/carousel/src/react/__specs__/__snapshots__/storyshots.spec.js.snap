@@ -9389,7 +9389,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
               data-testid="mock-item"
             >
               <div
-                data-css-13za233=""
+                data-css-2gh4m0=""
                 onKeyDown={[Function]}
                 role="menu"
                 style={
