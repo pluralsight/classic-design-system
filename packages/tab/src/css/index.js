@@ -47,21 +47,7 @@ export default {
     overflow: 'hidden',
     '&:focus': {
       outline: 'none',
-      borderBottomWidth: '4px',
-      // __text
-      '& > div': {
-        height: 'calc(100% + 4px)',
-        marginBottom: '-4px'
-      },
-      // __bar
-      '& span': {
-        bottom: '-1px'
-      },
-
-      // __overflow-button
-      '& > button': {
-        height: 'calc(100% + 4px)'
-      }
+      boxShadow: '0 0 0 2px rgba(0, 123, 255, .5)'
     }
   },
   [`.psds-tab__list.psds-theme--${themeNames.light}`]: {
@@ -198,7 +184,7 @@ export default {
     position: 'relative',
     display: 'flex',
     alignItems: 'center',
-    height: 'calc(100% - 2px)',
+    height: '100%',
     fontWeight: core.type.fontWeightBook,
     padding: `0 0 ${core.layout.spacingXXSmall} 0`,
     transition: `color ${core.motion.speedXFast} linear`,
@@ -218,7 +204,7 @@ export default {
     position: 'absolute',
     left: 0,
     right: 0,
-    bottom: 0,
+    bottom: '1px',
     width: '100%',
     display: 'block',
     height: 0,

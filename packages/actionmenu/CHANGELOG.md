@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@5.1.4...@pluralsight/ps-design-system-actionmenu@5.2.0) (2019-09-17)
+
+
+### Features
+
+* **actionmenu:** render overlay for triggering close ([e473069](https://github.com/pluralsight/design-system/commit/e473069))
+
+
+
+
+
 ## [5.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@5.1.3...@pluralsight/ps-design-system-actionmenu@5.1.4) (2019-08-26)
 
 

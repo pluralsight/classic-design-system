@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@4.0.0...@pluralsight/ps-design-system-radio@4.0.1) (2019-09-17)
+
+
+### Bug Fixes
+
+* **radio:** stops onSelect firing twice every time we click a radio ([15c5c87](https://github.com/pluralsight/design-system/commit/15c5c87)), closes [#657](https://github.com/pluralsight/design-system/issues/657)
+
+
+
+
+
 # [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@3.0.0...@pluralsight/ps-design-system-radio@4.0.0) (2019-09-05)
 
 
