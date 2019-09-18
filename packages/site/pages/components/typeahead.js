@@ -71,7 +71,7 @@ export default () => (
               '(Event, nextValue) => ()',
               null,
               null,
-              <span>enables controlled mode. triggered when value changes</span>
+              <span>triggered when value changes</span>
             ]),
             PropTypes.row([
               'placeholder',
@@ -107,6 +107,7 @@ export default () => (
         }}
       />
       <SectionHeading>In-app example</SectionHeading>
+      <br />
       <InAppExample />
 
       <SectionHeading>Appearance</SectionHeading>
