@@ -2,6 +2,7 @@ import React, { Children } from 'react'
 import PropTypes from 'prop-types'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
+import core from '@pluralsight/ps-design-system-core'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import { BelowLeft } from '@pluralsight/ps-design-system-position/react.js'
@@ -10,7 +11,7 @@ import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
 
 import * as vars from '../vars/index.js'
 
-import { omit, pick } from './utils.js'
+import { combineFns, omit, pick } from './utils.js'
 
 const TEXT_INPUT_PROPS = [
   'appearance',
@@ -33,10 +34,10 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
   const inputRef = React.useRef()
   React.useImperativeHandle(forwardedRef, () => inputRef.current)
 
-  const controlled = React.useMemo(() => !!onChange, [onChange])
+  const [controlled] = React.useState(typeof value !== 'undefined')
   const [open, setOpen] = React.useState(false)
 
-  const [innerValue, setInnerValue] = React.useState(value)
+  const [innerValue, setInnerValue] = React.useState(value || '')
   const [searchTerm, setSearchTerm] = React.useState('')
 
   React.useEffect(() => {
@@ -76,13 +77,13 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
     if (!nextValue) nextValue = evt.target.value
     setSearchTerm(nextValue)
 
-    if (controlled) onChange(evt, nextValue)
-    else setInnerValue(nextValue)
+    if (!controlled) setInnerValue(nextValue)
+    if (onChange) onChange(evt, nextValue)
   }
 
-  const handleFocus = evt => {
+  const handleFocus = combineFns(evt => {
     setOpen(true)
-  }
+  }, props.onFocus)
 
   const handleSuggestionMenuChange = (evt, nextValue) => {
     setOpen(false)
@@ -99,6 +100,7 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
         when={open}
         show={
           <SuggestionsMenu
+            activeValue={innerValue}
             onChange={handleSuggestionMenuChange}
             suggestions={filteredSuggestions}
           />
@@ -119,8 +121,16 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
   )
 })
 
+function CheckIcon({ visible, ...props }) {
+  const style = { color: visible ? core.colors.blue : 'transparent' }
+  return <Icon id={Icon.ids.check} style={style} />
+}
+CheckIcon.propTypes = {
+  visible: PropTypes.bool.isRequired
+}
+
 const SuggestionsMenu = React.forwardRef((props, forwardedRef) => {
-  const { suggestions, ...rest } = props
+  const { activeValue, suggestions, ...rest } = props
 
   const items = React.useMemo(() => {
     if (suggestions.length <= 0)
@@ -131,11 +141,15 @@ const SuggestionsMenu = React.forwardRef((props, forwardedRef) => {
       )
 
     return suggestions.map(sug => (
-      <ActionMenu.Item key={sug.index} value={sug.value}>
+      <ActionMenu.Item
+        key={sug.index}
+        icon={<CheckIcon visible={sug.value === activeValue} />}
+        value={sug.value}
+      >
         {sug.comp}
       </ActionMenu.Item>
     ))
-  }, [suggestions])
+  }, [activeValue, suggestions])
 
   return (
     <ActionMenu
@@ -150,6 +164,7 @@ const SuggestionsMenu = React.forwardRef((props, forwardedRef) => {
 })
 
 SuggestionsMenu.propTypes = {
+  activeValue: PropTypes.string.isRequired,
   onChange: PropTypes.func,
   suggestions: PropTypes.arrayOf(
     PropTypes.shape({
@@ -190,8 +205,7 @@ Typeahead.propTypes = {
   subLabel: PropTypes.any
 }
 Typeahead.defaultProps = {
-  filterFn: filterSuggestions,
-  value: ''
+  filterFn: filterSuggestions
 }
 
 Typeahead.appearances = vars.appearances

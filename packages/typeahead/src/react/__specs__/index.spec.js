@@ -23,6 +23,16 @@ describe('Typeahead', () => {
     expect(ref.current).not.toBeNull()
   })
 
+  it('calls onFocus prop when input is focused', () => {
+    const handleFocus = jest.fn()
+    const { container } = render(<Typeahead onFocus={handleFocus} />)
+
+    const input = container.querySelector('input')
+    fireEvent.focus(input)
+
+    expect(handleFocus).toHaveBeenCalled()
+  })
+
   describe('suggestion menu', () => {
     const handleChange = jest.fn()
 
@@ -113,18 +123,28 @@ describe('Typeahead', () => {
   })
 
   describe('when value is uncontrolled', () => {
-    it('updates the inner input on change', () => {
+    const handleChange = jest.fn()
+
+    let input
+
+    beforeEach(() => {
       const { container } = render(
-        <Typeahead>
+        <Typeahead onChange={handleChange}>
           <Typeahead.Suggestion>first</Typeahead.Suggestion>
           <Typeahead.Suggestion>second</Typeahead.Suggestion>
         </Typeahead>
       )
-      const input = container.querySelector('input')
+      input = container.querySelector('input')
+    })
 
+    it('updates the inner input on change', () => {
       fireEvent.change(input, { target: { value: 'next value' } })
-
       expect(input).toHaveValue('next value')
+    })
+
+    it('calls the onChange prop on input change', () => {
+      fireEvent.change(input, { target: { value: 'next value' } })
+      expect(handleChange).toHaveBeenCalledWith(expect.anything(), 'next value')
     })
   })
 
