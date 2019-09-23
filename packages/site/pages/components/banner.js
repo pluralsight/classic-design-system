@@ -29,24 +29,31 @@ export default _ => (
       </Code>
 
       <PropTypes
-        props={[
-          PropTypes.row([
-            'color',
-            PropTypes.union(Banner.colors),
-            null,
-            <code>{Banner.colors.blue}</code>,
-            <span>
-              banner color (from <code>Banner.colors</code>)
-            </span>
-          ]),
-          PropTypes.row([
-            'onClick',
-            'Event => ()',
-            null,
-            null,
-            'displays dismiss button, triggered on click'
-          ])
-        ]}
+        props={{
+          Banner: [
+            PropTypes.row([
+              'color',
+              PropTypes.union(Banner.colors),
+              null,
+              <code>{Banner.colors.blue}</code>,
+              <span>
+                banner color (from <code>Banner.colors</code>)
+              </span>
+            ]),
+            PropTypes.row([
+              'onClick',
+              'Event => ()',
+              null,
+              null,
+              'displays dismiss button, triggered on click'
+            ])
+          ],
+          'Banner.Button': [
+            PropTypes.row(['children', 'string', true, null]),
+            PropTypes.row(['href', 'string', null, null]),
+            PropTypes.row(['onClick', 'Event => ()', null, null])
+          ]
+        }}
       />
 
       <SectionHeading>Color</SectionHeading>
@@ -74,6 +81,22 @@ export default _ => (
         includes={{ Banner }}
         codes={[
           `<Banner onClick={_ => alert('Clicked to dismiss!')}>User should be able to dismiss this.</Banner>`
+        ]}
+      />
+
+      <SectionHeading>Inline Buttons</SectionHeading>
+      <P>
+        For little added oomph to get your point across, you can inline a
+        button.
+      </P>
+      <Example.React
+        orient="vertical"
+        includes={{ Banner }}
+        codes={[
+          `
+<Banner>
+  Maybe you've got a message and then BAM...it's a <Banner.Button>button</Banner.Button>
+</Banner>`
         ]}
       />
     </Content>

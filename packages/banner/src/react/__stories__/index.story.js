@@ -4,6 +4,7 @@ import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import Link from '@pluralsight/ps-design-system-link/react.js'
+
 import Banner from '../index.js'
 
 const colorStory = storiesOf('color', module)
@@ -31,13 +32,22 @@ storiesOf('onClick', module)
     ))
   )
 
+const buttonStory = storiesOf('Button', module)
+Object.keys(Banner.colors).forEach(color =>
+  buttonStory.add(color, _ => (
+    <Banner color={color}>
+      this is the text with a <Banner.Button>button</Banner.Button>
+    </Banner>
+  ))
+)
+
 storiesOf('styling', module)
-  .add('style prop ', () => (
+  .add('style prop', () => (
     <Banner style={{ outline: '3px solid red' }} onClick={action('click X')}>
       this is the text
     </Banner>
   ))
-  .add('className prop ', () => (
+  .add('className prop', () => (
     <Banner className="someClass" onClick={action('click X')}>
       this is the text
     </Banner>

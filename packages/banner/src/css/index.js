@@ -31,6 +31,13 @@ export default {
     backgroundColor: core.colors.red
   },
 
+  '.psds-banner__button': {
+    '&:hover, &:active, &:focus': {
+      transition: `all ${core.motion.speedNormal}`,
+      opacity: '0.65'
+    }
+  },
+
   '.psds-banner__text': {
     flex: '1',
     textAlign: 'center',
