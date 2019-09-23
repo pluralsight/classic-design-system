@@ -72,13 +72,6 @@ export default _ => (
             </span>
           ]),
           PropTypes.row([
-            'innerRef',
-            'DOM element => ()',
-            null,
-            null,
-            'react ref callback'
-          ]),
-          PropTypes.row([
             'loading',
             'boolean',
             null,
