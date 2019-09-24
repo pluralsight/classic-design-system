@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@3.0.7...@pluralsight/ps-design-system-banner@3.1.0) (2019-09-24)
+
+
+### Features
+
+* **banner:** add button component ([c3dc993](https://github.com/pluralsight/design-system/commit/c3dc993))
+
+
+
+
+
 ## [3.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@3.0.6...@pluralsight/ps-design-system-banner@3.0.7) (2019-09-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-banner
