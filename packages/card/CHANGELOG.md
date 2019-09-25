@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@11.1.0...@pluralsight/ps-design-system-card@11.2.0) (2019-09-17)
+
+
+### Features
+
+* **card:** support forwardRef on Card.Action ([bbe78e4](https://github.com/pluralsight/design-system/commit/bbe78e4))
+
+
+
+
+
 # [11.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@11.0.0...@pluralsight/ps-design-system-card@11.1.0) (2019-09-05)
 
 

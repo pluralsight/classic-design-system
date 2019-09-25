@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from '@testing-library/react'
+import { render, fireEvent } from '@testing-library/react'
 
 import Radio from '../index.js'
 
@@ -18,5 +18,18 @@ describe('Radio', () => {
 
     expect(group.current).not.toBeNull()
     expect(button.current).not.toBeNull()
+  })
+  it('fires event once', () => {
+    const spy = jest.fn()
+    const { container } = render(
+      <Radio.Group onSelect={spy}>
+        <Radio.Button value="red" label="Red" />
+        <Radio.Button value="green" label="Green" />
+        <Radio.Button value="blue" label="Blue" />
+      </Radio.Group>
+    )
+    const radio = container.querySelector('label')
+    fireEvent.click(radio)
+    expect(spy).toHaveBeenCalledTimes(1)
   })
 })

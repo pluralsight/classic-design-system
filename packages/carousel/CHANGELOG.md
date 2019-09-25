@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@2.1.2...@pluralsight/ps-design-system-carousel@3.0.0) (2019-09-17)
+
+
+### Code Refactoring
+
+* **carousel:** overflow hidden all the time ([972280e](https://github.com/pluralsight/design-system/commit/972280e))
+
+
+### BREAKING CHANGES
+
+* **carousel:** overflow hidden always now requires portal rendering of
+widgets larger than the carousel container
+
+
+
+
+
 ## [2.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@2.1.1...@pluralsight/ps-design-system-carousel@2.1.2) (2019-09-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel

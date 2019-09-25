@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@12.0.0...@pluralsight/ps-design-system-tab@12.0.1) (2019-09-17)
+
+
+### Bug Fixes
+
+* **tab:** focus borderline jump ([87da7f1](https://github.com/pluralsight/design-system/commit/87da7f1))
+
+
+
+
+
 # [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.8...@pluralsight/ps-design-system-tab@12.0.0) (2019-08-09)
 
 
