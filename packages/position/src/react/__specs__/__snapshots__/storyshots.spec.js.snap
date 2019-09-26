@@ -2,16 +2,14 @@
 
 exports[`Storyshots Components | Position / basic Above 1`] = `
 Array [
-  <div>
-    <div
-      className={
-        Object {
-          "data-css-1erb2v7": "",
-        }
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
       }
-    >
-      &lt;Above /&gt;
-    </div>
+    }
+  >
+    &lt;Above /&gt;
   </div>,
   <div
     data-css-1luw3o6=""
@@ -28,16 +26,14 @@ Array [
 
 exports[`Storyshots Components | Position / basic AboveLeft 1`] = `
 Array [
-  <div>
-    <div
-      className={
-        Object {
-          "data-css-1erb2v7": "",
-        }
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
       }
-    >
-      &lt;AboveLeft /&gt;
-    </div>
+    }
+  >
+    &lt;AboveLeft /&gt;
   </div>,
   <div
     data-css-1luw3o6=""
@@ -54,16 +50,14 @@ Array [
 
 exports[`Storyshots Components | Position / basic AboveRight 1`] = `
 Array [
-  <div>
-    <div
-      className={
-        Object {
-          "data-css-1erb2v7": "",
-        }
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
       }
-    >
-      &lt;AboveRight /&gt;
-    </div>
+    }
+  >
+    &lt;AboveRight /&gt;
   </div>,
   <div
     data-css-1luw3o6=""
@@ -80,16 +74,14 @@ Array [
 
 exports[`Storyshots Components | Position / basic Below 1`] = `
 Array [
-  <div>
-    <div
-      className={
-        Object {
-          "data-css-1erb2v7": "",
-        }
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
       }
-    >
-      &lt;Below /&gt;
-    </div>
+    }
+  >
+    &lt;Below /&gt;
   </div>,
   <div
     data-css-1luw3o6=""
@@ -106,16 +98,14 @@ Array [
 
 exports[`Storyshots Components | Position / basic BelowLeft 1`] = `
 Array [
-  <div>
-    <div
-      className={
-        Object {
-          "data-css-1erb2v7": "",
-        }
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
       }
-    >
-      &lt;BelowLeft /&gt;
-    </div>
+    }
+  >
+    &lt;BelowLeft /&gt;
   </div>,
   <div
     data-css-1luw3o6=""
@@ -132,16 +122,14 @@ Array [
 
 exports[`Storyshots Components | Position / basic BelowRight 1`] = `
 Array [
-  <div>
-    <div
-      className={
-        Object {
-          "data-css-1erb2v7": "",
-        }
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
       }
-    >
-      &lt;BelowRight /&gt;
-    </div>
+    }
+  >
+    &lt;BelowRight /&gt;
   </div>,
   <div
     data-css-1luw3o6=""
@@ -158,16 +146,14 @@ Array [
 
 exports[`Storyshots Components | Position / basic LeftOf 1`] = `
 Array [
-  <div>
-    <div
-      className={
-        Object {
-          "data-css-1erb2v7": "",
-        }
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
       }
-    >
-      &lt;LeftOf /&gt;
-    </div>
+    }
+  >
+    &lt;LeftOf /&gt;
   </div>,
   <div
     data-css-1luw3o6=""
@@ -184,16 +170,14 @@ Array [
 
 exports[`Storyshots Components | Position / basic RightOf 1`] = `
 Array [
-  <div>
-    <div
-      className={
-        Object {
-          "data-css-1erb2v7": "",
-        }
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
       }
-    >
-      &lt;RightOf /&gt;
-    </div>
+    }
+  >
+    &lt;RightOf /&gt;
   </div>,
   <div
     data-css-1luw3o6=""

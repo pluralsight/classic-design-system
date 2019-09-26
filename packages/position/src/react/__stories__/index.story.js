@@ -79,15 +79,63 @@ Object.values(positionComponents).forEach(Comp => {
   ))
 })
 
+const portalStories = storiesOf('Components | Position / portals', module)
+Object.values(positionComponents).forEach(Comp => {
+  const { displayName } = Comp
+  const name = `<${Comp.displayName} />`
+
+  const Outer = props => {
+    const className = css({
+      border: `4px dashed ${core.colors.orange}`,
+      color: core.colors.bone,
+      height: 500,
+      padding: 20,
+      width: 500
+    })
+    return <div {...props} className={className} />
+  }
+
+  function usePortal() {
+    const ref = React.useRef(document.createElement('div'))
+
+    React.useEffect(() => {
+      const { current } = ref
+      document.body.appendChild(current)
+
+      return () => {
+        document.body.removeChild(current)
+      }
+    }, [])
+
+    return ref
+  }
+
+  function PortalStory(props) {
+    const portal = usePortal()
+    return <Outer>{props.children({ portal })}</Outer>
+  }
+  PortalStory.propTypes = { children: PropTypes.func.isRequired }
+
+  portalStories.add('test.skip ' + displayName, () => (
+    <PortalStory>
+      {({ portal }) => (
+        <Comp show={<MockToolip />} inNode={portal.current}>
+          <Box>{name}</Box>
+        </Comp>
+      )}
+    </PortalStory>
+  ))
+})
+
 const targetStories = storiesOf('Components | Position / custom target', module)
 Object.values(positionComponents).forEach(Comp => {
   function TargetStory(props) {
-    const customRef = React.useRef()
+    const ref = React.useRef()
 
     return (
-      <Comp show={<MockToolip />} target={customRef}>
+      <Comp show={<MockToolip />} target={ref}>
         <Box>
-          <div ref={customRef} style={{ border: '1px solid yellow' }}>
+          <div ref={ref} style={{ border: '1px solid yellow' }}>
             {name}
           </div>
         </Box>
@@ -106,57 +154,18 @@ storiesOf('Components | Position / in scrollable container', module).add(
     const { RightOf } = positionComponents
 
     function ScrollStory() {
-      const target = React.useRef()
+      const ref = React.useRef()
 
       return (
         <ScrollContainer>
-          <RightOf show={<Tooltip>The tip</Tooltip>} target={target}>
-            <Box ref={target}>target</Box>
+          <RightOf show={<Tooltip>The tip</Tooltip>} target={ref}>
+            <Box ref={ref}>target</Box>
           </RightOf>
         </ScrollContainer>
       )
     }
 
     return <ScrollStory />
-  }
-)
-
-storiesOf('Components | Position / portals', module).add(
-  'test.skip inNode',
-  () => {
-    const { Below } = positionComponents
-
-    function InNodeStory() {
-      const portal = React.useRef()
-      const [node, setNode] = React.useState(portal.current)
-
-      React.useEffect(() => {
-        setNode(portal.current)
-      }, [portal])
-
-      return (
-        <React.Fragment>
-          <div
-            style={{
-              position: 'relative',
-              top: '-200px',
-              left: '-100px',
-              border: `1px dashed ${core.colors.orange}`,
-              height: '300px',
-              width: '300px'
-            }}
-          >
-            <Below show={<Tooltip>The tip</Tooltip>} inNode={node}>
-              <Box>Below box stuck in relative space</Box>
-            </Below>
-          </div>
-
-          <div ref={portal} />
-        </React.Fragment>
-      )
-    }
-
-    return <InNodeStory />
   }
 )
 

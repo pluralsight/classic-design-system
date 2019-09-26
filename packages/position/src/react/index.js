@@ -58,11 +58,16 @@ const Position = React.forwardRef((props, forwardedRef) => {
   })
 
   const updateStyle = React.useCallback(() => {
+    if (!props.when) return
+
     const targetNode = props.target ? props.target.current : ref.current
-    if (props.when && targetNode && tetheredRef.current) {
+    if (!targetNode) return
+
+    setTimeout(() => {
+      if (!tetheredRef.current) return
       const nextStyle = props.position(targetNode).styleFor(tetheredRef.current)
       setStyle(nextStyle)
-    }
+    }, 1)
   }, [props])
 
   React.useEffect(() => {
@@ -76,7 +81,7 @@ const Position = React.forwardRef((props, forwardedRef) => {
 
   return (
     <React.Fragment>
-      {props.target ? child : <div ref={ref}>{child}</div>}
+      {props.target ? child : React.cloneElement(child, { ref })}
 
       {props.when &&
         (inPortal
