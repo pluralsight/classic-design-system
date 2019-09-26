@@ -33,7 +33,7 @@ export default {
     minWidth: '160px',
     maxWidth: '320px',
     maxHeight: '277px',
-    overflowX: 'scroll',
+    overflowY: 'auto',
     listStyle: 'none',
     boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
     fontSize: core.type.fontSizeSmall,
