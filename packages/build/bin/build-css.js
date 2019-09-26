@@ -1,19 +1,17 @@
 #!/usr/bin/env node
-// eslint-disable-next-line no-global-assign
-require = require('esm')(module)
 const chalk = require('chalk')
 const program = require('commander')
 const path = require('path')
 
 const { css } = require('../index')
-const defaultInputFilePath = path.join(process.cwd(), 'dist', 'css', 'index.js')
-const defaultOutputDirectoryPath = path.join(process.cwd(), 'dist', 'css')
+const defaultInputFilePath = 'dist/css/index.js'
+const defaultOutputDirectoryPath = 'dist/'
 
 const prefix = '[build-css] '
 const log = str => console.log(chalk.dim(prefix + str))
 const logError = str => console.log(chalk.red(prefix + str))
 const logSuccess = str => console.log(chalk.green(prefix + str))
-
+console.log(defaultInputFilePath)
 program
   .version(require('../package.json').version)
   .option(
@@ -29,8 +27,8 @@ program
   .option('-g, --useGlamor', 'Compile css using glamor', false)
   .parse(process.argv)
 
-const inputFilePath = program.input
-const outputDirectoryPath = program.output
+const inputFilePath = path.join(process.cwd(), program.input)
+const outputDirectoryPath = path.join(process.cwd(), program.output)
 
 log('Building css...')
 log(`Using input:  "${inputFilePath}"`)

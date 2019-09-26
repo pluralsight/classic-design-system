@@ -1,5 +1,5 @@
 const { packages } = require('./lerna.json')
-const esm = process.env.ESM;
+const esm = process.env.ESM
 module.exports = api => {
   const isTest = api.env('test')
 
@@ -12,17 +12,19 @@ module.exports = api => {
 
     ignore,
 
-    presets: ['@babel/preset-react', !esm && '@babel/preset-env'].filter(Boolean),
+    presets: ['@babel/preset-react', !esm && '@babel/preset-env'].filter(
+      Boolean
+    ),
 
     plugins: [
       ['@babel/plugin-proposal-class-properties', { loose: true }],
       '@babel/plugin-proposal-export-default-from',
       '@babel/plugin-proposal-export-namespace-from',
       '@babel/plugin-proposal-json-strings',
-      !esm && '@babel/plugin-proposal-object-rest-spread',
+      '@babel/plugin-proposal-object-rest-spread',
       '@babel/plugin-syntax-dynamic-import',
       '@babel/plugin-syntax-import-meta',
       'macros'
-    ].filter(Boolean)
+    ]
   }
 }
