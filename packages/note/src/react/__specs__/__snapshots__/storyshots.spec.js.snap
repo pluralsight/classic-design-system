@@ -1096,33 +1096,31 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
         <div
           data-css-1ttz8q1=""
         >
-          <div>
-            <button
-              data-css-tqgxbw=""
-              icon={
-                <Icon
-                  id="more"
-                  size="medium"
-                />
-              }
-              onClick={[Function]}
-              title="More"
+          <button
+            data-css-tqgxbw=""
+            icon={
+              <Icon
+                id="more"
+                size="medium"
+              />
+            }
+            onClick={[Function]}
+            title="More"
+          >
+            <div
+              data-css-otejxm=""
             >
-              <div
-                data-css-otejxm=""
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  aria-label="more icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
+                <path
+                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                />
+              </svg>
+            </div>
+          </button>
         </div>
       </div>
       <p>

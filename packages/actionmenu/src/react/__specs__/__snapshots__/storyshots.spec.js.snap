@@ -2002,18 +2002,16 @@ exports[`Storyshots with Position BelowLeft 1`] = `
       }
     }
   >
-    <div>
-      <div
-        style={
-          Object {
-            "background": "pink",
-            "display": "inline-block",
-            "padding": "4px",
-          }
+    <div
+      style={
+        Object {
+          "background": "pink",
+          "display": "inline-block",
+          "padding": "4px",
         }
-      >
-        anchor
-      </div>
+      }
+    >
+      anchor
     </div>
     <div
       style={
@@ -2096,18 +2094,16 @@ exports[`Storyshots with Position BelowRight 1`] = `
       }
     }
   >
-    <div>
-      <div
-        style={
-          Object {
-            "background": "pink",
-            "display": "inline-block",
-            "padding": "4px",
-          }
+    <div
+      style={
+        Object {
+          "background": "pink",
+          "display": "inline-block",
+          "padding": "4px",
         }
-      >
-        anchor
-      </div>
+      }
+    >
+      anchor
     </div>
     <div
       style={

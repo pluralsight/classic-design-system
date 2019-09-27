@@ -2351,28 +2351,26 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="asdf"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="asdf"
+                  <button
+                    aria-label="asdf"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="asdf"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -2664,28 +2662,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -2830,28 +2826,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -2996,28 +2990,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -3162,28 +3154,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -3328,28 +3318,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -3494,28 +3482,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -3660,28 +3646,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -3826,28 +3810,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -3992,28 +3974,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -4158,28 +4138,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -4324,28 +4302,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -4490,28 +4466,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -4656,28 +4630,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -4822,28 +4794,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -4988,28 +4958,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -5154,28 +5122,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -5320,28 +5286,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -5486,28 +5450,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -5652,28 +5614,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -5818,28 +5778,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -5984,28 +5942,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -6150,28 +6106,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -6316,28 +6270,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -6482,28 +6434,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -6648,28 +6598,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -6814,28 +6762,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -6980,28 +6926,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -7146,28 +7090,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -7312,28 +7254,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -7478,28 +7418,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -7644,28 +7582,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -7810,28 +7746,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -7976,28 +7910,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -8142,28 +8074,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -8308,28 +8238,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -8474,28 +8402,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -8640,28 +8566,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -8806,28 +8730,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -8972,28 +8894,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -9138,28 +9058,26 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 <div
                   data-css-1kb1o0e=""
                 >
-                  <div>
-                    <button
-                      aria-label="See more"
-                      data-css-226xmr=""
-                      onClick={[Function]}
-                      title="See more"
+                  <button
+                    aria-label="See more"
+                    data-css-226xmr=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-otejxm=""
                     >
-                      <div
-                        data-css-otejxm=""
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-label="more icon"
-                          role="img"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
               <div
@@ -9389,7 +9307,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
               data-testid="mock-item"
             >
               <div
-                data-css-2gh4m0=""
+                data-css-100wg4i=""
                 onKeyDown={[Function]}
                 role="menu"
                 style={
