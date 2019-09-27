@@ -87,6 +87,13 @@ export default _ => (
             'in-field usage hint'
           ]),
           PropTypes.row([
+            'ref',
+            'Ref || { field: Ref,input: Ref, }',
+            null,
+            null,
+            'refs to access underlying elements'
+          ]),
+          PropTypes.row([
             'subLabel',
             'string',
             null,
