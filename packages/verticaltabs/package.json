@@ -1,7 +1,7 @@
 {
-  "name": "@pluralsight/ps-design-system-{{kebabCase name}}",
+  "name": "@pluralsight/ps-design-system-verticaltabs",
   "version": "1.0.0",
-  "description": "{{pascalCase name}} UI Component for the Pluralsight Design System",
+  "description": "Verticaltab UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "main": "index.js",
@@ -20,6 +20,10 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-filter-react-props": "*",
+    "@pluralsight/ps-design-system-theme": "*",
+    "@pluralsight/ps-design-system-collapsible": "^1.0.0",
+    "@pluralsight/ps-design-system-icon": "^13.0.1",
+    "@pluralsight/ps-design-system-prop-types": "^2.0.7",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {

@@ -1,8 +1,6 @@
-import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React, { useEffect, useRef } from 'react'
-
-import css from '../css'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 // NOTE: see https://stackoverflow.com/a/3485654
 const forceRepaint = element => {
@@ -73,7 +71,7 @@ const close = (element, isOpen) => {
   })
 }
 
-const Collapsible = ({ isOpen, children }) => {
+const Collapsible = ({ isOpen, tagName, ...rest }) => {
   const containerElement = useRef()
 
   useEffect(() => {
@@ -88,12 +86,11 @@ const Collapsible = ({ isOpen, children }) => {
       containerElement.current && close(containerElement.current, isOpen)
     }
   }, [isOpen])
-
+  const TagName = tagName
   return (
-    <div
+    <TagName
       aria-hidden={!isOpen}
-      {...glamor.css(css['.psds-drawer__collapsible'])}
-      children={children}
+      {...filterReactProps(rest)}
       ref={containerElement}
     />
   )
@@ -102,10 +99,13 @@ const Collapsible = ({ isOpen, children }) => {
 Collapsible.displayName = 'Collapsible'
 
 Collapsible.propTypes = {
-  isOpen: PropTypes.bool.isRequired,
-  children: PropTypes.node
+  isOpen: PropTypes.bool,
+  tagName: PropTypes.string,
 }
 Collapsible.defaultProps = {
   isOpen: false
+}
+Collapsible.defaultProps = {
+  tagName: 'div'
 }
 export default Collapsible

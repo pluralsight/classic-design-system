@@ -550,6 +550,82 @@ exports[`Storyshots id all ids 1`] = `
         viewBox="0 0 24 24"
       >
         <path
+          clipRule="evenodd"
+          d="M12.166 13.852a.25.25 0 01-.332 0L7.99 10.438A.25.25 0 018.158 10h7.684a.25.25 0 01.167.437l-3.843 3.415z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    data-css-1abx40i=""
+  >
+    <div
+      data-css-10dvu6c=""
+    >
+      <svg
+        aria-label="caret left icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          clipRule="evenodd"
+          d="M9.148 12.166a.25.25 0 010-.332l3.415-3.842a.25.25 0 01.437.166v7.685a.25.25 0 01-.437.166l-3.415-3.843z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    data-css-1abx40i=""
+  >
+    <div
+      data-css-10dvu6c=""
+    >
+      <svg
+        aria-label="caret right icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          clipRule="evenodd"
+          d="M14.852 12.166a.25.25 0 000-.332l-3.415-3.842a.25.25 0 00-.437.166v7.685c0 .23.284.337.437.166l3.415-3.843z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    data-css-1abx40i=""
+  >
+    <div
+      data-css-10dvu6c=""
+    >
+      <svg
+        aria-label="caret up icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          clipRule="evenodd"
+          d="M12.166 10.148a.25.25 0 00-.332 0l-3.842 3.415a.25.25 0 00.166.437h7.684a.25.25 0 00.167-.437l-3.843-3.415z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    data-css-1abx40i=""
+  >
+    <div
+      data-css-10dvu6c=""
+    >
+      <svg
+        aria-label="caret down icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
           d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
         />
       </svg>
@@ -1145,6 +1221,23 @@ exports[`Storyshots id all ids 1`] = `
       data-css-10dvu6c=""
     >
       <svg
+        fill="none"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    data-css-1abx40i=""
+  >
+    <div
+      data-css-10dvu6c=""
+    >
+      <svg
         aria-label="play circle icon"
         role="img"
         viewBox="0 0 24 24"
@@ -1695,6 +1788,78 @@ exports[`Storyshots id calendar 1`] = `
   >
     <path
       d="M8 7H4v3h16V7h-4v1.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V7h-4v1.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V7zm2-2h4V3.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V5h5a1 1 0 011 1v14a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1h5V3.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V5zm10 7H4v7h16v-7zM5 13h2v2H5v-2zm0 3h2v2H5v-2zm3-3h2v2H8v-2zm0 3h2v2H8v-2zm3-3h2v2h-2v-2zm0 3h2v2h-2v-2zm3-3h2v2h-2v-2zm0 3h2v2h-2v-2zm3-3h2v2h-2v-2zm0 3h2v2h-2v-2z"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots id caretAltDown 1`] = `
+<div
+  data-css-6f8y6t=""
+>
+  <svg
+    aria-label="caret down icon"
+    role="img"
+    viewBox="0 0 24 24"
+  >
+    <path
+      clipRule="evenodd"
+      d="M12.166 13.852a.25.25 0 01-.332 0L7.99 10.438A.25.25 0 018.158 10h7.684a.25.25 0 01.167.437l-3.843 3.415z"
+      fillRule="evenodd"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots id caretAltLeft 1`] = `
+<div
+  data-css-6f8y6t=""
+>
+  <svg
+    aria-label="caret left icon"
+    role="img"
+    viewBox="0 0 24 24"
+  >
+    <path
+      clipRule="evenodd"
+      d="M9.148 12.166a.25.25 0 010-.332l3.415-3.842a.25.25 0 01.437.166v7.685a.25.25 0 01-.437.166l-3.415-3.843z"
+      fillRule="evenodd"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots id caretAltRight 1`] = `
+<div
+  data-css-6f8y6t=""
+>
+  <svg
+    aria-label="caret right icon"
+    role="img"
+    viewBox="0 0 24 24"
+  >
+    <path
+      clipRule="evenodd"
+      d="M14.852 12.166a.25.25 0 000-.332l-3.415-3.842a.25.25 0 00-.437.166v7.685c0 .23.284.337.437.166l3.415-3.843z"
+      fillRule="evenodd"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots id caretAltUp 1`] = `
+<div
+  data-css-6f8y6t=""
+>
+  <svg
+    aria-label="caret up icon"
+    role="img"
+    viewBox="0 0 24 24"
+  >
+    <path
+      clipRule="evenodd"
+      d="M12.166 10.148a.25.25 0 00-.332 0l-3.842 3.415a.25.25 0 00.166.437h7.684a.25.25 0 00.167-.437l-3.843-3.415z"
+      fillRule="evenodd"
     />
   </svg>
 </div>
@@ -2260,6 +2425,22 @@ exports[`Storyshots id pencil 1`] = `
   >
     <path
       d="M5.276 15.862L5 19l3.14-.275 8.085-8.086-2.863-2.863-8.086 8.086zM17.64 9.225l.767-.767a2 2 0 00.592-1.431c0-.546-.208-1.048-.593-1.433a1.996 1.996 0 00-1.43-.591c-.545 0-1.048.208-1.433.593l-.766.766 2.863 2.863zm-.665-6.222c1.076 0 2.086.418 2.845 1.177A3.997 3.997 0 0121 7.027a4 4 0 01-1.179 2.846L9.411 20.282a.995.995 0 01-.464.263l-4.705.427a1.002 1.002 0 01-1.213-1.213l.427-4.704a.998.998 0 01.263-.464L14.13 4.18a3.997 3.997 0 012.845-1.179z"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots id placeholder 1`] = `
+<div
+  data-css-6f8y6t=""
+>
+  <svg
+    fill="none"
+    role="img"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
     />
   </svg>
 </div>
