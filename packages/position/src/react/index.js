@@ -4,6 +4,9 @@ import ReactDOM from 'react-dom'
 
 import * as positionFns from '../js/index.js'
 
+import useOnWindowResize from './use-on-window-resize.js'
+import useOnWindowScroll from './use-on-window-scroll.js'
+
 export const Above = React.forwardRef((props, ref) => {
   return <Position position={positionFns.above} ref={ref} {...props} />
 })
@@ -45,6 +48,7 @@ export const LeftOf = React.forwardRef((props, ref) => {
 LeftOf.displayName = 'LeftOf'
 
 const Position = React.forwardRef((props, forwardedRef) => {
+  const { target, position: positionFn, when } = props
   const [style, setStyle] = React.useState({ position: 'absolute' })
 
   const ref = React.useRef()
@@ -58,17 +62,17 @@ const Position = React.forwardRef((props, forwardedRef) => {
   })
 
   const updateStyle = React.useCallback(() => {
-    if (!props.when) return
+    if (!when) return
 
-    const targetNode = props.target ? props.target.current : ref.current
+    const targetNode = target ? target.current : ref.current
     if (!targetNode) return
 
     setTimeout(() => {
       if (!tetheredRef.current) return
-      const nextStyle = props.position(targetNode).styleFor(tetheredRef.current)
+      const nextStyle = positionFn(targetNode).styleFor(tetheredRef.current)
       setStyle(nextStyle)
     }, 1)
-  }, [props])
+  }, [positionFn, target, when])
 
   React.useEffect(() => {
     updateStyle()
@@ -81,9 +85,9 @@ const Position = React.forwardRef((props, forwardedRef) => {
 
   return (
     <React.Fragment>
-      {props.target ? child : React.cloneElement(child, { ref })}
+      {target ? child : React.cloneElement(child, { ref })}
 
-      {props.when &&
+      {when &&
         (inPortal
           ? ReactDOM.createPortal(tetheredEl, props.inNode)
           : tetheredEl)}
@@ -102,59 +106,4 @@ Position.propTypes = {
 
 Position.defaultProps = {
   when: true
-}
-
-function useDebounceCallback(fn, delay = 100) {
-  const timeout = React.useRef()
-
-  const debounced = React.useCallback(
-    function() {
-      const self = this
-      const args = arguments
-
-      function later() {
-        timeout.current = null
-        fn.apply(self, args)
-      }
-
-      clearTimeout(timeout.current)
-      timeout.current = setTimeout(later, delay)
-    },
-    [fn, delay]
-  )
-
-  React.useEffect(
-    () => () => {
-      if (!timeout.current) return
-      clearTimeout(timeout.current)
-      timeout.current = null
-    },
-    [fn, delay]
-  )
-
-  return debounced
-}
-
-function useOnWindowResize(handler) {
-  const handleScroll = useDebounceCallback(handler, 10)
-
-  React.useEffect(() => {
-    window.addEventListener('resize', handleScroll)
-
-    return () => {
-      window.removeEventListener('resize', handleScroll)
-    }
-  }, [handleScroll])
-}
-
-function useOnWindowScroll(handler) {
-  const handleScroll = useDebounceCallback(handler, 10)
-
-  React.useEffect(() => {
-    window.addEventListener('scroll', handleScroll, true)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [handleScroll])
 }
