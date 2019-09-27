@@ -146,14 +146,14 @@ function isPlainObject(obj) {
 function useMultipleRefs(refs) {
   const hasMultiple = isRefs(refs)
 
-  const prevFieldRef = hasMultiple ? refs['field'] : React.createRef()
-  const prevInputRef = hasMultiple ? refs['input'] : refs
+  const forwardedFieldRef = hasMultiple ? refs['field'] : React.createRef()
+  const forwardedInputRef = hasMultiple ? refs['input'] : refs
 
-  const fieldRef = React.useRef(prevFieldRef)
-  const inputRef = React.useRef(prevInputRef)
+  const fieldRef = React.useRef(forwardedFieldRef)
+  const inputRef = React.useRef(forwardedInputRef)
 
-  React.useImperativeHandle(prevFieldRef, () => fieldRef.current)
-  React.useImperativeHandle(prevInputRef, () => inputRef.current)
+  React.useImperativeHandle(forwardedFieldRef, () => fieldRef.current)
+  React.useImperativeHandle(forwardedInputRef, () => inputRef.current)
 
   return { fieldRef, inputRef }
 }
