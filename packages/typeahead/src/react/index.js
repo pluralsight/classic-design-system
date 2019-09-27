@@ -40,13 +40,19 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
   const [innerValue, setInnerValue] = React.useState(value || '')
   const [searchTerm, setSearchTerm] = React.useState('')
 
-  React.useEffect(() => {
-    if (controlled) setInnerValue(value)
-  }, [controlled, value])
+  React.useEffect(
+    function updateControlledValue() {
+      if (controlled) setInnerValue(value)
+    },
+    [controlled, value]
+  )
 
-  React.useEffect(() => {
-    if (!open) setSearchTerm('')
-  }, [open])
+  React.useEffect(
+    function clearSearchTermOnClose() {
+      if (!open) setSearchTerm('')
+    },
+    [open]
+  )
 
   useOnDocumentClick(evt => {
     const isInnerClick =
