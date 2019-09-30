@@ -4,8 +4,8 @@ const program = require('commander')
 const path = require('path')
 
 const { css } = require('../index')
-const defaultInputFilePath = 'dist/css/index.js'
-const defaultOutputDirectoryPath = 'dist/'
+const defaultInputFilePath = path.join('dist', 'css', 'index.js')
+const defaultOutputDirectoryPath = path.join('dist')
 
 const prefix = '[build-css] '
 const log = str => console.log(chalk.dim(prefix + str))
