@@ -11,7 +11,7 @@ const prefix = '[build-css] '
 const log = str => console.log(chalk.dim(prefix + str))
 const logError = str => console.log(chalk.red(prefix + str))
 const logSuccess = str => console.log(chalk.green(prefix + str))
-console.log(defaultInputFilePath)
+
 program
   .version(require('../package.json').version)
   .option(

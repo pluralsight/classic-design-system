@@ -12,9 +12,10 @@ module.exports = api => {
 
     ignore,
 
-    presets: ['@babel/preset-react', !esm && '@babel/preset-env'].filter(
-      Boolean
-    ),
+    presets: [
+      '@babel/preset-react',
+      esm ? ['@babel/preset-env', { modules: false }] : '@babel/preset-env'
+    ],
 
     plugins: [
       ['@babel/plugin-proposal-class-properties', { loose: true }],
