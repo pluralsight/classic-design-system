@@ -11,6 +11,8 @@ import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
 
 import * as vars from '../vars/index.js'
 
+import useOnDocumentClick from './use-on-document-click.js'
+import usePortal from './use-portal.js'
 import { combineFns, omit, pick } from './utils.js'
 
 const TEXT_INPUT_PROPS = [
@@ -68,8 +70,8 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
   const suggestions = React.useMemo(() => {
     const childArray = Children.toArray(children)
     return childArray.map((child, index) => ({
-      comp: child,
       index,
+      label: getSuggestionLabel(child),
       value: getSuggestionValue(child)
     }))
   }, [children])
@@ -80,16 +82,21 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
   )
 
   const handleChange = (evt, nextValue) => {
-    if (!nextValue) nextValue = evt.target.value
     setSearchTerm(nextValue)
 
     if (!controlled) setInnerValue(nextValue)
     if (onChange) onChange(evt, nextValue)
   }
 
-  const handleFocus = combineFns(evt => {
+  const handleInputFocus = combineFns(evt => {
     setOpen(true)
   }, props.onFocus)
+
+  const handleInputChange = evt => {
+    const nextValue = evt.target.value
+
+    handleChange(evt, nextValue)
+  }
 
   const handleSuggestionMenuChange = (evt, nextValue) => {
     setOpen(false)
@@ -117,8 +124,8 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
           {...pick(props, TEXT_INPUT_PROPS)}
           iconAlign={TextInput.iconAligns.right}
           icon={<Icon id={Icon.ids.caretDown} />}
-          onChange={handleChange}
-          onFocus={handleFocus}
+          onChange={handleInputChange}
+          onFocus={handleInputFocus}
           ref={{ field: fieldRef, input: inputRef }}
           value={innerValue}
         />
@@ -152,7 +159,7 @@ const SuggestionsMenu = React.forwardRef((props, forwardedRef) => {
         icon={<CheckIcon visible={sug.value === activeValue} />}
         value={sug.value}
       >
-        {sug.comp}
+        {sug.label}
       </ActionMenu.Item>
     ))
   }, [activeValue, suggestions])
@@ -174,9 +181,9 @@ SuggestionsMenu.propTypes = {
   onChange: PropTypes.func,
   suggestions: PropTypes.arrayOf(
     PropTypes.shape({
-      comp: PropTypes.node.isRequired,
       index: PropTypes.number.isRequired,
-      value: PropTypes.string.isRequired
+      label: PropTypes.string.isRequired,
+      value: PropTypes.string
     })
   ).isRequired
 }
@@ -186,29 +193,28 @@ const Suggestion = React.forwardRef((props, forwardedRef) => {
 })
 
 Suggestion.propTypes = {
-  children: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired,
+  value: PropTypes.string
 }
 
 Typeahead.propTypes = {
+  appearance: PropTypes.any,
   children: PropTypes.oneOfType([
     elementOfType(Suggestion),
     PropTypes.arrayOf(elementOfType(Suggestion))
   ]),
+  disabled: PropTypes.any,
+  error: PropTypes.any,
   filterFn: PropTypes.func,
+  label: PropTypes.any,
   loading: PropTypes.bool,
+  name: PropTypes.any,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
-  value: PropTypes.string,
-
-  // props used by underlying TextInput
-  appearance: PropTypes.any,
-  disabled: PropTypes.any,
-  error: PropTypes.any,
-  label: PropTypes.any,
-  name: PropTypes.any,
   placeholder: PropTypes.any,
-  subLabel: PropTypes.any
+  subLabel: PropTypes.any,
+  value: PropTypes.string
 }
 Typeahead.defaultProps = {
   filterFn: filterSuggestions
@@ -222,42 +228,23 @@ export const appearances = vars.appearances
 
 export default Typeahead
 
-function getSuggestionValue(suggestionInst) {
-  return suggestionInst.props.children
+function getSuggestionLabel(sug) {
+  return sug.props.children
+}
+
+function getSuggestionValue(sug) {
+  return sug.props.value || sug.props.children
 }
 
 function filterSuggestions(searchTerm, children) {
   if (!searchTerm || searchTerm.length <= 1) return children
 
   const term = searchTerm.toLowerCase()
-  const matches = ({ value }) => value.toLowerCase().includes(term)
+  const matches = ({ label, value }) => {
+    return (
+      label.toLowerCase().includes(term) || value.toLowerCase().includes(term)
+    )
+  }
 
   return children.filter(matches)
-}
-
-function useOnDocumentClick(handler) {
-  React.useEffect(() => {
-    document.addEventListener('mousedown', handler)
-    document.addEventListener('touchstart', handler)
-
-    return () => {
-      document.removeEventListener('mousedown', handler)
-      document.removeEventListener('touchstart', handler)
-    }
-  }, [handler])
-}
-
-function usePortal() {
-  const ref = React.useRef(document.createElement('div'))
-
-  React.useEffect(() => {
-    const { current } = ref
-    document.body.appendChild(current)
-
-    return () => {
-      document.body.removeChild(current)
-    }
-  }, [])
-
-  return ref
 }

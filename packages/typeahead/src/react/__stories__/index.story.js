@@ -51,13 +51,22 @@ function ControlledStory(props) {
   const [value, setValue] = React.useState('')
 
   const handleChange = (evt, nextValue) => {
-    setValue(nextValue)
+    const nextState = US_STATES.find(state => state.abbreviation === nextValue)
+
+    if (nextState) {
+      setValue(nextState.name)
+    } else {
+      setValue(nextValue)
+    }
   }
 
   return (
     <Typeahead onChange={handleChange} value={value} {...props}>
       {US_STATES.map(state => (
-        <Typeahead.Suggestion key={state.abbreviation}>
+        <Typeahead.Suggestion
+          key={state.abbreviation}
+          value={state.abbreviation}
+        >
           {state.name}
         </Typeahead.Suggestion>
       ))}
