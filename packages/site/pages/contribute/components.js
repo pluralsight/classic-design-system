@@ -10,7 +10,7 @@ export default _ => (
 
 ## Before you start
 
-Please collaborate with the Design System team in [#design-system-help](slack://channel?team=pluralsight&id=design-system-help) on the whats, whys, and hows of your component.  The [Contribute Code](/contribute/code) doc has some relevant insights into how and why we collaborate.
+Please collaborate with the Design System team in [#design-system](slack://channel?team=pluralsight&id=design-system) on the whats, whys, and hows of your component.  The [Contribute Code](/contribute/code) doc has some relevant insights into how and why we collaborate.
 
 ## Create your component
 
