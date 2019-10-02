@@ -20,7 +20,7 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^13.0.2",
+    "@pluralsight/ps-design-system-button": "^14.0.0-beta.0",
     "@pluralsight/ps-design-system-circularprogress": "^4.0.1",
     "@pluralsight/ps-design-system-core": "^4.4.4",
     "@pluralsight/ps-design-system-icon": "^13.0.1",

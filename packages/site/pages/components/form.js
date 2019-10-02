@@ -1,6 +1,6 @@
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
 import Banner from '@pluralsight/ps-design-system-banner/react.js'
-import Button from '@pluralsight/ps-design-system-button/react.js'
+import Button from '@pluralsight/ps-design-system-button'
 import Checkbox from '@pluralsight/ps-design-system-checkbox/react.js'
 import core from '@pluralsight/ps-design-system-core'
 import DatePicker from '@pluralsight/ps-design-system-datepicker/react.js'

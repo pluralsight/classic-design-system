@@ -10,13 +10,26 @@
     "build": "next build && next export -o dist",
     "start": "next -p 1337"
   },
+  "dependencies": {
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-standalone": "^6.26.0",
+    "core-js": "^3.2.1",
+    "debounce": "^1.0.2",
+    "dotenv": "^8.0.0",
+    "http-server": "^0.11.1",
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^9.0.3",
+    "react-codemirror": "^1.0.0",
+    "react-markdown": "^4.0.0"
+  },
   "devDependencies": {
     "@pluralsight/ps-design-system-actionmenu": "^5.2.0",
     "@pluralsight/ps-design-system-avatar": "^4.1.1",
     "@pluralsight/ps-design-system-badge": "^7.0.1",
     "@pluralsight/ps-design-system-banner": "^3.1.0",
     "@pluralsight/ps-design-system-breadcrumb": "^4.0.6",
-    "@pluralsight/ps-design-system-button": "^13.0.2",
+    "@pluralsight/ps-design-system-button": "^14.0.0-beta.0",
     "@pluralsight/ps-design-system-card": "^11.2.0",
     "@pluralsight/ps-design-system-carousel": "^3.0.0",
     "@pluralsight/ps-design-system-checkbox": "^4.0.1",
@@ -53,18 +66,5 @@
     "@pluralsight/ps-design-system-util": "*",
     "@pluralsight/ps-design-system-viewtoggle": "^4.0.2",
     "prop-types": "^15.7.2"
-  },
-  "dependencies": {
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-2": "^6.24.1",
-    "babel-standalone": "^6.26.0",
-    "core-js": "^3.2.1",
-    "debounce": "^1.0.2",
-    "dotenv": "^8.0.0",
-    "http-server": "^0.11.1",
-    "isomorphic-fetch": "^2.2.1",
-    "next": "^9.0.3",
-    "react-codemirror": "^1.0.0",
-    "react-markdown": "^4.0.0"
   }
 }

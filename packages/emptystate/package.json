@@ -11,9 +11,9 @@
   },
   "scripts": {
     "build": "run-s build:svg build:js build:css",
-    "build:svg": "svgr --filename-case kebab --ext \"dist.js\" -d src/react/illustrations src/svg",
     "build:css": "build-css",
     "build:js": "babel src --root-mode upward --out-dir dist",
+    "build:svg": "svgr --filename-case kebab --ext \"dist.js\" -d src/react/illustrations src/svg",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.10.1",
-    "@pluralsight/ps-design-system-button": "^13.0.2",
+    "@pluralsight/ps-design-system-button": "^14.0.0-beta.0",
     "@pluralsight/ps-design-system-icon": "^13.0.1",
     "@pluralsight/ps-design-system-storybook-addon-center": "^2.0.5",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^4.0.1",

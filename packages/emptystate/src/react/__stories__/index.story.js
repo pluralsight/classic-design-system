@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import Button from '@pluralsight/ps-design-system-button/react'
+import Button from '@pluralsight/ps-design-system-button'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import Tag from '@pluralsight/ps-design-system-tag/react'
 import TextInput from '@pluralsight/ps-design-system-textinput/react'
