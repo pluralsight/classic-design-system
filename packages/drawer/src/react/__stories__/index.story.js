@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
-import Button from '@pluralsight/ps-design-system-button/react'
+import Button from '@pluralsight/ps-design-system-button'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import Row from '@pluralsight/ps-design-system-row/react'
 import Text from '@pluralsight/ps-design-system-text/react'

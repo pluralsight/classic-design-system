@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import Button from '@pluralsight/ps-design-system-button/react'
+import Button from '@pluralsight/ps-design-system-button'
 import core from '@pluralsight/ps-design-system-core'
 import Link from '@pluralsight/ps-design-system-link/react'
 

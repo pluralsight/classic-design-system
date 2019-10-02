@@ -2,7 +2,7 @@ import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import BaseButton from '@pluralsight/ps-design-system-button/react.js'
+import BaseButton from '@pluralsight/ps-design-system-button'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 

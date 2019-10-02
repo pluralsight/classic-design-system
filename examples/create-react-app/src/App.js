@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react'
 
-import Button from '@pluralsight/ps-design-system-button/react'
+import Button from '@pluralsight/ps-design-system-button'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import Text from '@pluralsight/ps-design-system-text/react'
 
