@@ -1,6 +1,6 @@
 const { packages } = require('./lerna.json')
 
-const esm = process.env.ESM
+const esm = Boolean(process.env.ESM)
 module.exports = api => {
   const isTest = api.env('test')
 
@@ -15,7 +15,7 @@ module.exports = api => {
 
     presets: [
       '@babel/preset-react',
-      esm ? ['@babel/preset-env', { modules: false }] : '@babel/preset-env'
+      ['@babel/preset-env', { modules: esm ? !esm : 'auto' }]
     ],
 
     plugins: [
