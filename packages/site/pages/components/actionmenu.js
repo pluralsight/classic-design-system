@@ -106,7 +106,11 @@ function InAppExample() {
       </Theme>
 
       <Code collapsible language="javascript">
-        {`function InAppExample() {
+        {`import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
+import { BelowLeft } from '@pluralsight/ps-design-system-position/react.js'
+import Button from '@pluralsight/ps-design-system-button/react.js'
+
+function InAppExample() {
   const categories = [
     {
       name: 'Channels',
