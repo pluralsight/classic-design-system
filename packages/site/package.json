@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-site",
-  "version": "13.4.2",
+  "version": "13.4.3",
   "description": "Reference site",
   "license": "Apache-2.0",
   "private": true,
@@ -31,7 +31,7 @@
     "@pluralsight/ps-design-system-breadcrumb": "^4.0.7",
     "@pluralsight/ps-design-system-button": "^14.0.0-beta.1",
     "@pluralsight/ps-design-system-card": "^11.2.1",
-    "@pluralsight/ps-design-system-carousel": "^3.0.1",
+    "@pluralsight/ps-design-system-carousel": "^3.0.2",
     "@pluralsight/ps-design-system-checkbox": "^4.0.2",
     "@pluralsight/ps-design-system-circularprogress": "^4.0.2",
     "@pluralsight/ps-design-system-core": "^4.4.5",
