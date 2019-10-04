@@ -5,11 +5,14 @@ import useDebounceCallback from './use-debounce-callback.js'
 export default function useOnWindowResize(handler) {
   const handleScroll = useDebounceCallback(handler, 10)
 
-  React.useEffect(() => {
-    window.addEventListener('resize', handleScroll)
+  React.useEffect(
+    function bindResizeEvent() {
+      window.addEventListener('resize', handleScroll)
 
-    return () => {
-      window.removeEventListener('resize', handleScroll)
-    }
-  }, [handleScroll])
+      return function unbind() {
+        window.removeEventListener('resize', handleScroll)
+      }
+    },
+    [handleScroll]
+  )
 }
