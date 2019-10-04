@@ -18,7 +18,11 @@ describe('Icon', () => {
     it('should be exposed', () => expect(Icon.ids).toEqual(vars.ids))
   })
 
-  it.todo('forwards refs')
+  it('forwards refs', () => {
+    const ref = React.createRef()
+    render(<Icon ref={ref} />)
+    expect(ref.current).not.toBeNull()
+  })
 
   describe.each(Object.values(Icon.ids))('with id "%s"', id => {
     it('should render', () => {
