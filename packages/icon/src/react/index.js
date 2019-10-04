@@ -7,7 +7,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
-import icons from './icon-loader'
+import icons from './icon-loader.js'
 
 const style = {
   icon: ({ color, size }) =>
@@ -23,18 +23,20 @@ const style = {
 
 const IconNotFound = () => null
 
-const Icon = ({ id, 'aria-label': ariaLabel, ...props }) => {
-  const isCustom = !!props.children
-  let Comp = icons[id] || IconNotFound
+const Icon = React.forwardRef(
+  ({ id, 'aria-label': ariaLabel, ...props }, ref) => {
+    const isCustom = !!props.children
+    let Comp = icons[id] || IconNotFound
 
-  if (isCustom) Comp = () => props.children
+    if (isCustom) Comp = () => props.children
 
-  return (
-    <div {...style.icon(props)} {...filterReactProps(props)}>
-      <Comp {...(ariaLabel && { 'aria-label': ariaLabel })} />
-    </div>
-  )
-}
+    return (
+      <div {...style.icon(props)} {...filterReactProps(props)} ref={ref}>
+        <Comp {...(ariaLabel && { 'aria-label': ariaLabel })} />
+      </div>
+    )
+  }
+)
 
 Icon.propTypes = {
   'aria-label': PropTypes.string,
