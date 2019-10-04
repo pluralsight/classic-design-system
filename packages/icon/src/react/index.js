@@ -23,20 +23,21 @@ const style = {
 
 const IconNotFound = () => null
 
-const Icon = React.forwardRef(
-  ({ id, 'aria-label': ariaLabel, ...props }, ref) => {
-    const isCustom = !!props.children
-    let Comp = icons[id] || IconNotFound
+const Icon = React.forwardRef(function Icon(
+  { id, 'aria-label': ariaLabel, ...props },
+  ref
+) {
+  const isCustom = !!props.children
+  let Comp = icons[id] || IconNotFound
 
-    if (isCustom) Comp = () => props.children
+  if (isCustom) Comp = () => props.children
 
-    return (
-      <div {...style.icon(props)} {...filterReactProps(props)} ref={ref}>
-        <Comp {...(ariaLabel && { 'aria-label': ariaLabel })} />
-      </div>
-    )
-  }
-)
+  return (
+    <div {...style.icon(props)} {...filterReactProps(props)} ref={ref}>
+      <Comp {...(ariaLabel && { 'aria-label': ariaLabel })} />
+    </div>
+  )
+})
 
 Icon.propTypes = {
   'aria-label': PropTypes.string,
