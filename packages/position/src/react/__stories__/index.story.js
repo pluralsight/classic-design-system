@@ -79,7 +79,10 @@ Object.values(positionComponents).forEach(Comp => {
   ))
 })
 
-const portalStories = storiesOf('Components | Position / portals', module)
+const portalStories = storiesOf(
+  'Components | Position / in custom portal',
+  module
+)
 Object.values(positionComponents).forEach(Comp => {
   const { displayName } = Comp
   const name = `<${Comp.displayName} />`
@@ -116,7 +119,7 @@ Object.values(positionComponents).forEach(Comp => {
   }
   PortalStory.propTypes = { children: PropTypes.func.isRequired }
 
-  portalStories.add('test.skip ' + displayName, () => (
+  portalStories.add(displayName, () => (
     <PortalStory>
       {({ portal }) => (
         <Comp show={<MockToolip />} inNode={portal.current}>

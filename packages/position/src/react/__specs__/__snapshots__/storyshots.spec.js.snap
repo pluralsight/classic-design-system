@@ -12,14 +12,22 @@ Array [
     &lt;Above /&gt;
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
 `;
@@ -36,14 +44,22 @@ Array [
     &lt;AboveLeft /&gt;
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
 `;
@@ -60,14 +76,22 @@ Array [
     &lt;AboveRight /&gt;
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
 `;
@@ -84,14 +108,22 @@ Array [
     &lt;Below /&gt;
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
 `;
@@ -108,14 +140,22 @@ Array [
     &lt;BelowLeft /&gt;
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
 `;
@@ -132,14 +172,22 @@ Array [
     &lt;BelowRight /&gt;
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
 `;
@@ -156,14 +204,22 @@ Array [
     &lt;LeftOf /&gt;
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
 `;
@@ -180,14 +236,22 @@ Array [
     &lt;RightOf /&gt;
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
 `;
@@ -212,14 +276,22 @@ Array [
     </div>
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
 `;
@@ -244,14 +316,22 @@ Array [
     </div>
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
 `;
@@ -276,14 +356,22 @@ Array [
     </div>
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
 `;
@@ -308,14 +396,22 @@ Array [
     </div>
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
 `;
@@ -340,14 +436,22 @@ Array [
     </div>
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
 `;
@@ -372,14 +476,22 @@ Array [
     </div>
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
 `;
@@ -404,14 +516,22 @@ Array [
     </div>
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
 `;
@@ -436,16 +556,328 @@ Array [
     </div>
   </div>,
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>,
 ]
+`;
+
+exports[`Storyshots Components | Position / in custom portal Above 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;Above /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Position / in custom portal AboveLeft 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;AboveLeft /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Position / in custom portal AboveRight 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;AboveRight /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Position / in custom portal Below 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;Below /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Position / in custom portal BelowLeft 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;BelowLeft /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Position / in custom portal BelowRight 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;BelowRight /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Position / in custom portal LeftOf 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;LeftOf /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Position / in custom portal RightOf 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;RightOf /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Components | Position / in scrollable container RightOf 1`] = `
@@ -473,14 +905,22 @@ exports[`Storyshots Components | Position / in scrollable container RightOf 1`] 
     target
   </div>
   <div
-    data-css-1luw3o6=""
     style={
       Object {
-        "position": "absolute",
+        "visibility": "hidden",
       }
     }
   >
-    The tip
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
   </div>
   <div
     className={

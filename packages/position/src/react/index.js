@@ -49,48 +49,52 @@ LeftOf.displayName = 'LeftOf'
 
 const Position = React.forwardRef((props, forwardedRef) => {
   const { target, position: positionFn, when } = props
+  const [shownOnce, setShownOnce] = React.useState(false)
   const [style, setStyle] = React.useState({ position: 'absolute' })
 
   const ref = React.useRef()
   React.useImperativeHandle(forwardedRef, () => ref.current)
 
   const child = React.Children.only(props.children)
-  const tetheredRef = React.useRef()
-  const tetheredEl = React.cloneElement(props.show, {
-    ref: tetheredRef,
+  const showRef = React.useRef()
+  const showEl = React.cloneElement(props.show, {
+    ref: showRef,
     style: { ...child.props.style, ...style }
   })
 
   const updateStyle = React.useCallback(() => {
-    if (!when) return
-
     const targetNode = target ? target.current : ref.current
-    if (!targetNode) return
+    if (!showRef.current || !targetNode) return
 
-    setTimeout(() => {
-      if (!tetheredRef.current) return
-      const nextStyle = positionFn(targetNode).styleFor(tetheredRef.current)
-      setStyle(nextStyle)
-    }, 1)
-  }, [positionFn, target, when])
+    const nextStyle = positionFn(targetNode).styleFor(showRef.current)
+    setStyle(nextStyle)
+    setShownOnce(true)
+  }, [positionFn, target])
 
-  React.useEffect(() => {
+  useOnWindowResize(evt => updateStyle())
+  useOnWindowScroll(evt => {
+    const isInner = !showRef.current || showRef.current.contains(evt.target)
+    if (isInner) return
+
     updateStyle()
-  }, [updateStyle])
+  })
+  React.useEffect(() => {
+    if (!when) return
+    const timerId = delayUntilNextTick(() => updateStyle())
 
-  useOnWindowResize(updateStyle)
-  useOnWindowScroll(updateStyle)
-
-  const inPortal = props.inNode
+    return () => clearTimeout(timerId)
+  }, [updateStyle, when])
 
   return (
     <React.Fragment>
       {target ? child : React.cloneElement(child, { ref })}
 
-      {when &&
-        (inPortal
-          ? ReactDOM.createPortal(tetheredEl, props.inNode)
-          : tetheredEl)}
+      {createUniversalPortal(
+        <div style={{ visibility: shownOnce ? 'visible' : 'hidden' }}>
+          {when && showEl}
+        </div>,
+        props.inNode
+      )}
     </React.Fragment>
   )
 })
@@ -105,5 +109,23 @@ Position.propTypes = {
 }
 
 Position.defaultProps = {
+  inNode: canUseDOM() ? document.body : null,
   when: true
+}
+
+function canUseDOM() {
+  return !!(
+    typeof window !== 'undefined' &&
+    window.document &&
+    window.document.createElement
+  )
+}
+
+function createUniversalPortal() {
+  if (!canUseDOM()) return null
+  return ReactDOM.createPortal(...arguments)
+}
+
+function delayUntilNextTick(fn) {
+  return setTimeout(fn, 1)
 }
