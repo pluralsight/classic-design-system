@@ -5,7 +5,7 @@ import {
   EqualColumnLayout
 } from '@pluralsight/ps-design-system-layout/react.js'
 import Badge from '@pluralsight/ps-design-system-badge/react.js'
-import Button from '@pluralsight/ps-design-system-button/react.js'
+import Button from '@pluralsight/ps-design-system-button'
 import React from 'react'
 import ReactPropTypes from 'prop-types'
 import Text from '@pluralsight/ps-design-system-text/react.js'

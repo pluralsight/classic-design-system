@@ -1,5 +1,5 @@
 import * as glamor from 'glamor'
-import Button from '@pluralsight/ps-design-system-button/react.js'
+import Button from '@pluralsight/ps-design-system-button'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import PropTypes from 'prop-types'

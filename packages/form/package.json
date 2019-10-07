@@ -1,10 +1,15 @@
 {
   "name": "@pluralsight/ps-design-system-form",
-  "version": "3.1.1",
+  "version": "3.1.4",
   "description": "Design system components for form layout",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
+  "keywords": [
+    "pluralsight",
+    "design system",
+    "form ui"
+  ],
   "main": "index.js",
   "module": "index.js",
   "scripts": {
@@ -17,13 +22,8 @@
     "test": "jest",
     "test:watch": "npm run test -- --watchAll"
   },
-  "keywords": [
-    "pluralsight",
-    "design system",
-    "form ui"
-  ],
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.4.4",
+    "@pluralsight/ps-design-system-core": "^4.4.5",
     "@pluralsight/ps-design-system-util": "^2.0.5",
     "prop-types": "^15.7.2"
   },
@@ -34,19 +34,19 @@
     "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^5.2.0",
-    "@pluralsight/ps-design-system-build": "^1.10.1",
-    "@pluralsight/ps-design-system-button": "^13.0.1",
-    "@pluralsight/ps-design-system-checkbox": "^4.0.1",
-    "@pluralsight/ps-design-system-datepicker": "^4.0.1",
-    "@pluralsight/ps-design-system-dropdown": "^3.0.3",
-    "@pluralsight/ps-design-system-radio": "^4.0.1",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^4.0.1",
-    "@pluralsight/ps-design-system-switch": "^4.0.2",
-    "@pluralsight/ps-design-system-tag": "^4.0.1",
-    "@pluralsight/ps-design-system-text": "^13.0.1",
-    "@pluralsight/ps-design-system-textarea": "^3.0.2",
-    "@pluralsight/ps-design-system-textinput": "^3.0.1",
+    "@pluralsight/ps-design-system-actionmenu": "^5.2.2",
+    "@pluralsight/ps-design-system-build": "^1.11.0",
+    "@pluralsight/ps-design-system-button": "^14.0.0-beta.2",
+    "@pluralsight/ps-design-system-checkbox": "^4.0.2",
+    "@pluralsight/ps-design-system-datepicker": "^4.0.4",
+    "@pluralsight/ps-design-system-dropdown": "^3.0.5",
+    "@pluralsight/ps-design-system-radio": "^4.0.3",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^4.0.2",
+    "@pluralsight/ps-design-system-switch": "^4.0.3",
+    "@pluralsight/ps-design-system-tag": "^4.0.3",
+    "@pluralsight/ps-design-system-text": "^13.0.2",
+    "@pluralsight/ps-design-system-textarea": "^3.0.5",
+    "@pluralsight/ps-design-system-textinput": "^3.0.4",
     "@pluralsight/ps-design-system-theme": "^3.0.4"
   }
 }

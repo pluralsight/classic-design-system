@@ -1,5 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import Button from '@pluralsight/ps-design-system-button/react.js'
+import Button from '@pluralsight/ps-design-system-button'
 import Dialog from '@pluralsight/ps-design-system-dialog/react.js'
 import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'

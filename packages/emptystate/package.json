@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-emptystate",
-  "version": "5.0.1",
+  "version": "5.0.4",
   "description": "EmptyState UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -11,9 +11,9 @@
   },
   "scripts": {
     "build": "run-s build:svg build:js build:css",
-    "build:svg": "svgr --filename-case kebab --ext \"dist.js\" -d src/react/illustrations src/svg",
     "build:css": "build-css",
     "build:js": "babel src --root-mode upward --out-dir dist",
+    "build:svg": "svgr --filename-case kebab --ext \"dist.js\" -d src/react/illustrations src/svg",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
@@ -21,7 +21,7 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.4.4",
+    "@pluralsight/ps-design-system-core": "^4.4.5",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.6",
     "@pluralsight/ps-design-system-prop-types": "^2.0.7",
     "prop-types": "^15.7.2",
@@ -34,13 +34,13 @@
     "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.10.1",
-    "@pluralsight/ps-design-system-button": "^13.0.1",
-    "@pluralsight/ps-design-system-icon": "^13.0.1",
+    "@pluralsight/ps-design-system-build": "^1.11.0",
+    "@pluralsight/ps-design-system-button": "^14.0.0-beta.2",
+    "@pluralsight/ps-design-system-icon": "^13.1.0",
     "@pluralsight/ps-design-system-storybook-addon-center": "^2.0.5",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^4.0.1",
-    "@pluralsight/ps-design-system-tag": "^4.0.1",
-    "@pluralsight/ps-design-system-textinput": "^3.0.1",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^4.0.2",
+    "@pluralsight/ps-design-system-tag": "^4.0.3",
+    "@pluralsight/ps-design-system-textinput": "^3.0.4",
     "@pluralsight/ps-design-system-theme": "^3.0.4"
   }
 }

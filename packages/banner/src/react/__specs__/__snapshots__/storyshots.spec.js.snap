@@ -1,5 +1,137 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Button blue 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-13j4h8v=""
+  >
+    <div
+      data-css-s10s6t=""
+    >
+      this is the text with a 
+      <button
+        data-css-8e2uc6=""
+        data-css-mdmyt1=""
+        disabled={false}
+        style={
+          Object {
+            "borderColor": "currentColor",
+            "color": "currentColor",
+          }
+        }
+      >
+        <span
+          data-css-15b13by=""
+        >
+          button
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button green 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-g8uz7t=""
+  >
+    <div
+      data-css-s10s6t=""
+    >
+      this is the text with a 
+      <button
+        data-css-8e2uc6=""
+        data-css-mdmyt1=""
+        disabled={false}
+        style={
+          Object {
+            "borderColor": "currentColor",
+            "color": "currentColor",
+          }
+        }
+      >
+        <span
+          data-css-15b13by=""
+        >
+          button
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button red 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-1j58ngq=""
+  >
+    <div
+      data-css-s10s6t=""
+    >
+      this is the text with a 
+      <button
+        data-css-8e2uc6=""
+        data-css-mdmyt1=""
+        disabled={false}
+        style={
+          Object {
+            "borderColor": "currentColor",
+            "color": "currentColor",
+          }
+        }
+      >
+        <span
+          data-css-15b13by=""
+        >
+          button
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button yellow 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    data-css-jrrxjl=""
+  >
+    <div
+      data-css-s10s6t=""
+    >
+      this is the text with a 
+      <button
+        data-css-8e2uc6=""
+        data-css-mdmyt1=""
+        disabled={false}
+        style={
+          Object {
+            "borderColor": "currentColor",
+            "color": "currentColor",
+          }
+        }
+      >
+        <span
+          data-css-15b13by=""
+        >
+          button
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots color blue 1`] = `
 <div
   data-css-claeju=""
@@ -316,7 +448,7 @@ exports[`Storyshots styling child anchor tag auto-styled in yellow 1`] = `
 </div>
 `;
 
-exports[`Storyshots styling className prop  1`] = `
+exports[`Storyshots styling className prop 1`] = `
 <div
   data-css-claeju=""
 >
@@ -351,7 +483,7 @@ exports[`Storyshots styling className prop  1`] = `
 </div>
 `;
 
-exports[`Storyshots styling style prop  1`] = `
+exports[`Storyshots styling style prop 1`] = `
 <div
   data-css-claeju=""
 >

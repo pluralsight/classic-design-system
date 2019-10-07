@@ -1,5 +1,5 @@
 import { Below } from '@pluralsight/ps-design-system-position/react.js'
-import Button from '@pluralsight/ps-design-system-button/react.js'
+import Button from '@pluralsight/ps-design-system-button'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import ReactPropTypes from 'prop-types'
@@ -122,7 +122,7 @@ function InAppExample() {
       <Code
         collapsible
         lang="javascript"
-      >{`import Button from '@pluralsight/ps-design-system-button/react'
+      >{`import Button from '@pluralsight/ps-design-system-button'
 import { Below } from '@pluralsight/ps-design-system-position/react'
 import Tooltip from '@pluralsight/ps-design-system-tooltip/react'
 

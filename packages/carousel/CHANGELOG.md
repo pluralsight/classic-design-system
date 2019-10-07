@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@3.0.2...@pluralsight/ps-design-system-carousel@3.0.3) (2019-10-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-carousel
+
+
+
+
+
+## [3.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@3.0.1...@pluralsight/ps-design-system-carousel@3.0.2) (2019-10-04)
+
+
+### Bug Fixes
+
+* **carousel:** flexbox bug in ff ([6febf5a](https://github.com/pluralsight/design-system/commit/6febf5a))
+
+
+
+
+
+## [3.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@3.0.0...@pluralsight/ps-design-system-carousel@3.0.1) (2019-10-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-carousel
+
+
+
+
+
 # [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@2.1.2...@pluralsight/ps-design-system-carousel@3.0.0) (2019-09-17)
 
 

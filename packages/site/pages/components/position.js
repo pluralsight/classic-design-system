@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Button from '@pluralsight/ps-design-system-button/react.js'
+import Button from '@pluralsight/ps-design-system-button'
 import core from '@pluralsight/ps-design-system-core'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
 import Theme from '@pluralsight/ps-design-system-theme/react.js'
@@ -226,8 +226,11 @@ function JsExample() {
           </div>
         </Theme>
       </div>
-      <Code collapsible lang="javascript">{`
-import Button from '@pluralsight/ps-design-system-button/react'
+      <Code
+        collapsible
+        lang="javascript"
+      >{`import Button from '@pluralsight/ps-design-system-button'
+import { below } from '@pluralsight/ps-design-system-position/js'
 import Tooltip from '@pluralsight/ps-design-system-position/react'
 
 import { rightOf } from '@pluralsight/ps-design-system-position/js'
@@ -326,7 +329,7 @@ function ReactExample() {
       <Code
         collapsible
         lang="javascript"
-      >{`import Button from '@pluralsight/ps-design-system-button/react'
+      >{`import Button from '@pluralsight/ps-design-system-button'
 import { Below } from '@pluralsight/ps-design-system-position/react'
 import Tooltip from '@pluralsight/ps-design-system-position/react'
 

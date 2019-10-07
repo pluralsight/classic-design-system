@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@3.1.5...@pluralsight/ps-design-system-normalize@3.1.6) (2019-10-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-normalize
+
+
+
+
+
+## [3.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@3.1.4...@pluralsight/ps-design-system-normalize@3.1.5) (2019-09-24)
+
+
+### Bug Fixes
+
+* **button:** fix css output that should not contain nested selectors ([e93f523](https://github.com/pluralsight/design-system/commit/e93f523))
+* **normalize:** fix css nested selector ([d29337f](https://github.com/pluralsight/design-system/commit/d29337f))
+
+
+
+
+
 ## [3.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@3.1.3...@pluralsight/ps-design-system-normalize@3.1.4) (2019-07-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-normalize

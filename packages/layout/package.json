@@ -1,10 +1,11 @@
 {
   "name": "@pluralsight/ps-design-system-layout",
-  "version": "4.0.21",
+  "version": "4.0.24",
   "description": "Design system components for ui layouts",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
+  "keywords": [],
   "main": "index.js",
   "module": "index.js",
   "scripts": {
@@ -15,11 +16,10 @@
     "test": "jest",
     "test:watch": "npm run test -- --watchAll"
   },
-  "keywords": [],
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.4.4",
+    "@pluralsight/ps-design-system-core": "^4.4.5",
     "@pluralsight/ps-design-system-prop-types": "^2.0.7",
-    "@pluralsight/ps-design-system-text": "^13.0.1",
+    "@pluralsight/ps-design-system-text": "^13.0.2",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
@@ -28,8 +28,8 @@
     "react": ">=16.3.0 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-button": "^13.0.1",
-    "@pluralsight/ps-design-system-link": "^7.0.1",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^4.0.1"
+    "@pluralsight/ps-design-system-button": "^14.0.0-beta.2",
+    "@pluralsight/ps-design-system-link": "^7.0.2",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^4.0.2"
   }
 }
