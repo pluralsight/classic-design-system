@@ -42,6 +42,13 @@ exports[`Storyshots Components | Typeahead / appearances default 1`] = `
       </div>
     </div>
   </label>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
 </div>
 `;
 
@@ -87,6 +94,13 @@ exports[`Storyshots Components | Typeahead / appearances subtle 1`] = `
       </div>
     </div>
   </label>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
 </div>
 `;
 
@@ -132,6 +146,13 @@ exports[`Storyshots Components | Typeahead / controlled default 1`] = `
       </div>
     </div>
   </label>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
 </div>
 `;
 
@@ -188,6 +209,13 @@ exports[`Storyshots Components | Typeahead / form props all 1`] = `
       Some sublabel
     </div>
   </label>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
 </div>
 `;
 
@@ -261,6 +289,13 @@ exports[`Storyshots Components | Typeahead / form props all w/error 1`] = `
       Some sublabel
     </div>
   </label>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
 </div>
 `;
 
@@ -316,6 +351,13 @@ exports[`Storyshots Components | Typeahead / form props label and subLabel 1`] =
       Some sublabel
     </div>
   </label>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
 </div>
 `;
 
@@ -361,5 +403,12 @@ exports[`Storyshots Components | Typeahead / uncontrolled default 1`] = `
       </div>
     </div>
   </label>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
 </div>
 `;
