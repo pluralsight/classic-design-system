@@ -185,6 +185,13 @@ export default _ => (
             <code>false</code>,
             'error state flag'
           ]),
+          PropTypes.row([
+            'indeterminate',
+            'boolean',
+            null,
+            <code>false</code>,
+            'marks as indeterminate'
+          ]),
           PropTypes.row(['name', 'string', null, null, 'form data identifier']),
           PropTypes.row(['label', 'node', true, null, 'display name']),
           PropTypes.row([
@@ -213,7 +220,7 @@ export default _ => (
       <SectionHeading>Checked</SectionHeading>
       <P>
         Passing the <Text.Code>checked</Text.Code> indicates that the checkbox
-        is active.
+        is selected.
       </P>
       <Example.React
         themeToggle
@@ -225,6 +232,20 @@ export default _ => (
         ]}
       />
 
+      <SectionHeading>Indeterminate</SectionHeading>
+      <P>
+        Passing the <Text.Code>indeterminate</Text.Code> indicates that the
+        checkbox value is indeterminate.
+      </P>
+      <Example.React
+        themeToggle
+        orient="vertical"
+        includes={{ Checkbox }}
+        codes={[
+          `<Checkbox indeterminate label="I'm indeterminate" />`,
+          `<Checkbox checked indeterminate label="I'm checked but still indeterminate" />`
+        ]}
+      />
       <SectionHeading>Disabled</SectionHeading>
       <P>Disabled checkboxes are unmodifiable and diminished visually.</P>
       <Example.React
