@@ -185,13 +185,6 @@ export default _ => (
             <code>false</code>,
             'error state flag'
           ]),
-          PropTypes.row([
-            'innerRef',
-            'DOM element => ()',
-            null,
-            null,
-            'input field react ref callback'
-          ]),
           PropTypes.row(['name', 'string', null, null, 'form data identifier']),
           PropTypes.row(['label', 'node', true, null, 'display name']),
           PropTypes.row([

@@ -3,8 +3,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import Halo from '@pluralsight/ps-design-system-halo/react'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+import Halo from '@pluralsight/ps-design-system-halo/react.js'
+import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
 
 import stylesheet from '../css/index.js'
 
@@ -90,7 +90,6 @@ Checkbox.propTypes = {
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
-  innerRef: PropTypes.func,
   name: PropTypes.string,
   label: PropTypes.node.isRequired,
   onCheck: PropTypes.func,
