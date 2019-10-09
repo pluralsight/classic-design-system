@@ -63,6 +63,7 @@
     "@pluralsight/ps-design-system-textinput": "^3.0.4",
     "@pluralsight/ps-design-system-theme": "^3.0.4",
     "@pluralsight/ps-design-system-tooltip": "^4.0.8",
+    "@pluralsight/ps-design-system-typeahead": "*",
     "@pluralsight/ps-design-system-util": "*",
     "@pluralsight/ps-design-system-viewtoggle": "^4.0.4",
     "prop-types": "^15.7.2"

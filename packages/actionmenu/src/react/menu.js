@@ -27,15 +27,19 @@ const styles = {
 }
 
 const ActionMenu = React.forwardRef((props, forwardedRef) => {
-  const ref = forwardedRef || React.useRef()
+  const ref = React.useRef()
+  React.useImperativeHandle(forwardedRef, () => ref.current)
 
-  const initialIndex = props.shouldFocusOnMount
-    ? calcNextIndex(
-        React.Children.map(props.children, c => c && c.props),
-        1,
-        -1
-      )
-    : -1
+  const initialIndex = React.useMemo(() => {
+    if (!props.shouldFocusOnMount) return -1
+
+    return calcNextIndex(
+      React.Children.map(props.children, c => c && c.props),
+      1,
+      -1
+    )
+  }, [props.children, props.shouldFocusOnMount])
+
   const [activeIndex, setActiveIndex] = React.useState(initialIndex)
 
   const [activeDirection, setActiveDirection] = React.useState('down')

@@ -1,0 +1,42 @@
+{
+  "name": "@pluralsight/ps-design-system-typeahead",
+  "version": "1.0.0",
+  "description": "Typeahead UI Component for the Pluralsight Design System",
+  "license": "Apache-2.0",
+  "repository": "pluralsight/design-system",
+  "main": "index.js",
+  "module": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "run-s build:js build:css",
+    "build:css": "build-css --useGlamor",
+    "build:js": "babel --root-mode upward src --out-dir dist",
+    "build:watch": "npm run build:js -- --watch",
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "test": "jest",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "dependencies": {
+    "@pluralsight/ps-design-system-core": "*",
+    "@pluralsight/ps-design-system-filter-react-props": "*",
+    "@pluralsight/ps-design-system-icon": "*",
+    "@pluralsight/ps-design-system-position": "*",
+    "@pluralsight/ps-design-system-prop-types": "*",
+    "@pluralsight/ps-design-system-textinput": "*",
+    "@pluralsight/ps-design-system-theme": "*"
+  },
+  "peerDependencies": {
+    "@pluralsight/ps-design-system-normalize": "^3.1.4",
+    "@pluralsight/ps-design-system-theme": "^3.0.2",
+    "glamor": "^2.x.x",
+    "react": ">=16.8.6 < 17.0.0"
+  },
+  "devDependencies": {
+    "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-storybook-addon-center": "*",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "*"
+  }
+}

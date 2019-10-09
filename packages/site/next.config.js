@@ -61,6 +61,7 @@ module.exports = {
       '/components/textinput': { page: '/components/textinput' },
       '/components/theme': { page: '/components/theme' },
       '/components/tooltip': { page: '/components/tooltip' },
+      '/components/typeahead': { page: '/components/typeahead' },
       '/components/viewtoggle': { page: '/components/viewtoggle' },
       '/core/build': { page: '/core/build' },
       '/core/usage': { page: '/core/usage' },

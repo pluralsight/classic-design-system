@@ -1121,6 +1121,13 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
               </svg>
             </div>
           </button>
+          <div
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          />
         </div>
       </div>
       <p>
