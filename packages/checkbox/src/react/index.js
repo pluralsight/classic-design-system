@@ -14,13 +14,14 @@ const styles = {
       css(stylesheet['.psds-checkbox']),
       disabled && css(stylesheet['.psds-checkbox--disabled'])
     ),
-  square: (themeName, { checked }) =>
+  square: (themeName, { checked, indeterminate }) =>
     compose(
       css(stylesheet['.psds-checkbox__square']),
       css(stylesheet[`.psds-checkbox__square.psds-theme--${themeName}`]),
-      checked && css(stylesheet['.psds-checkbox__square--checked'])
+      (checked || indeterminate) &&
+        css(stylesheet['.psds-checkbox__square--active'])
     ),
-  checkmark: () => css(stylesheet['.psds-checkbox__checkmark']),
+  icon: () => css(stylesheet['.psds-checkbox__icon']),
   input: () => css(stylesheet['.psds-checkbox__input']),
   label: themeName =>
     compose(
@@ -29,9 +30,21 @@ const styles = {
     )
 }
 
-const Checkbox = React.forwardRef((props, ref) => {
+const Checkbox = React.forwardRef((props, forwardedRef) => {
   const themeName = useTheme()
+
+  const ref = React.useRef()
+  React.useImperativeHandle(forwardedRef, () => ref.current)
+
   const square = React.createRef()
+
+  React.useEffect(
+    function updateIndetermiateAttr() {
+      if (!ref.current) return
+      ref.current.indeterminate = props.indeterminate
+    },
+    [props.indeterminate]
+  )
 
   const handleKeyDown = evt => {
     if (evt.key === 'Enter' || evt.key === ' ') handleClick(evt)
@@ -68,7 +81,8 @@ const Checkbox = React.forwardRef((props, ref) => {
           tabIndex={props.disabled ? '-1' : '0'}
           {...styles.square(themeName, props)}
         >
-          {props.checked && <Checkmark />}
+          {props.indeterminate && <Indeterminate />}
+          {props.checked && !props.indeterminate && <Checkmark />}
         </div>
       </Halo>
 
@@ -90,8 +104,9 @@ Checkbox.propTypes = {
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
-  name: PropTypes.string,
+  indeterminate: PropTypes.bool,
   label: PropTypes.node.isRequired,
+  name: PropTypes.string,
   onCheck: PropTypes.func,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 }
@@ -99,7 +114,8 @@ Checkbox.propTypes = {
 Checkbox.defaultProps = {
   checked: false,
   disabled: false,
-  error: false
+  error: false,
+  indeterminate: false
 }
 
 export default Checkbox
@@ -111,9 +127,23 @@ const Checkmark = props => (
     viewBox="0 0 16 16"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    {...styles.checkmark()}
+    {...styles.icon()}
     {...props}
   >
     <polygon points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473" />
+  </svg>
+)
+
+const Indeterminate = props => (
+  <svg
+    role="img"
+    aria-label="Indeterminate Mark"
+    viewBox="0 0 16 16"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    {...styles.icon()}
+    {...props}
+  >
+    <rect x="3" y="7" width="10" height="2" />
   </svg>
 )

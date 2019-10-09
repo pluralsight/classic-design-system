@@ -1,5 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Checkbox checked & indeterminate 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-kn3wr0=""
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-vzrwad=""
+      >
+        <div
+          aria-checked={true}
+          data-css-1sxo0xr=""
+          role="checkbox"
+          tabIndex="0"
+        >
+          <svg
+            aria-label="Indeterminate Mark"
+            data-css-a3uikz=""
+            role="img"
+            version="1.1"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="2"
+              width="10"
+              x="3"
+              y="7"
+            />
+          </svg>
+        </div>
+      </div>
+      <input
+        checked={true}
+        data-css-gyrv08=""
+        disabled={false}
+        name="colorRed"
+        readOnly={true}
+        tabIndex="-1"
+        type="checkbox"
+        value="red"
+      />
+      <div
+        data-css-pgc406=""
+      >
+        Red
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Checkbox checked 1`] = `
 <div
   data-css-claeju=""
@@ -285,6 +347,68 @@ exports[`Storyshots Checkbox error 1`] = `
         </div>
       </label>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Checkbox indeterminate 1`] = `
+<div
+  data-css-claeju=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      data-css-kn3wr0=""
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-vzrwad=""
+      >
+        <div
+          aria-checked={false}
+          data-css-1sxo0xr=""
+          role="checkbox"
+          tabIndex="0"
+        >
+          <svg
+            aria-label="Indeterminate Mark"
+            data-css-a3uikz=""
+            role="img"
+            version="1.1"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="2"
+              width="10"
+              x="3"
+              y="7"
+            />
+          </svg>
+        </div>
+      </div>
+      <input
+        checked={false}
+        data-css-gyrv08=""
+        disabled={false}
+        name="colorRed"
+        readOnly={true}
+        tabIndex="-1"
+        type="checkbox"
+        value="red"
+      />
+      <div
+        data-css-pgc406=""
+      >
+        Red
+      </div>
+    </label>
   </div>
 </div>
 `;

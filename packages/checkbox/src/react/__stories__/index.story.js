@@ -14,6 +14,12 @@ storiesOf('Checkbox', module)
   .add('checked', _ => (
     <Checkbox checked name="colorRed" value="red" label="Red" />
   ))
+  .add('indeterminate', _ => (
+    <Checkbox indeterminate name="colorRed" value="red" label="Red" />
+  ))
+  .add('checked & indeterminate', _ => (
+    <Checkbox checked indeterminate name="colorRed" value="red" label="Red" />
+  ))
   .add('error', _ => (
     <div>
       <Checkbox checked error name="colorRed" value="red" label="Red" />
