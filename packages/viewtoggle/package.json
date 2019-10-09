@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-viewtoggle",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "Design System component for view toggle ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,7 +21,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^4.4.5",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.6",
-    "@pluralsight/ps-design-system-icon": "^13.1.0",
+    "@pluralsight/ps-design-system-icon": "^13.2.0",
     "glamorous": "^4.1.0",
     "prop-types": "^15.7.2"
   },

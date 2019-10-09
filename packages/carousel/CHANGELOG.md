@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@3.0.3...@pluralsight/ps-design-system-carousel@4.0.0) (2019-10-09)
+
+
+### Bug Fixes
+
+* **actionmenu:** remove height constraints ([666ba11](https://github.com/pluralsight/design-system/commit/666ba11))
+
+
+### Features
+
+* **actionmenu:** restrict maximum height ([352f58d](https://github.com/pluralsight/design-system/commit/352f58d))
+* **position:** always render in portal; smoother initial mount w/pos ([d6bd520](https://github.com/pluralsight/design-system/commit/d6bd520))
+
+
+### BREAKING CHANGES
+
+* **actionmenu:** ActionMenu now has a default maximum height
+
+
+
+
+
 ## [3.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@3.0.2...@pluralsight/ps-design-system-carousel@3.0.3) (2019-10-04)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel

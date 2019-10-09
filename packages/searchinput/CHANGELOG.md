@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@2.0.4...@pluralsight/ps-design-system-searchinput@2.0.5) (2019-10-09)
+
+
+### Bug Fixes
+
+* **searchinput:** use ref on textinput; fix clear button ([5aa5484](https://github.com/pluralsight/design-system/commit/5aa5484))
+
+
+
+
+
 ## [2.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@2.0.3...@pluralsight/ps-design-system-searchinput@2.0.4) (2019-10-04)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-searchinput

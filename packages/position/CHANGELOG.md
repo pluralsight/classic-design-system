@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@1.2.5...@pluralsight/ps-design-system-position@1.3.0) (2019-10-09)
+
+
+### Bug Fixes
+
+* **position:** portals and position ([c61c6df](https://github.com/pluralsight/design-system/commit/c61c6df))
+
+
+### Features
+
+* **position:** always render in portal; smoother initial mount w/pos ([d6bd520](https://github.com/pluralsight/design-system/commit/d6bd520))
+* **position:** forward refs; custom target ref ([ca0c505](https://github.com/pluralsight/design-system/commit/ca0c505))
+* **position:** recalc position on window scroll or resize ([2c1b068](https://github.com/pluralsight/design-system/commit/2c1b068))
+
+
+
+
+
 ## [1.2.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@1.2.4...@pluralsight/ps-design-system-position@1.2.5) (2019-10-02)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-position

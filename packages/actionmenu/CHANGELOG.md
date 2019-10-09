@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@5.2.2...@pluralsight/ps-design-system-actionmenu@6.0.0) (2019-10-09)
+
+
+### Bug Fixes
+
+* **actionmenu:** overflow height; only show scrollbar if needed ([f924938](https://github.com/pluralsight/design-system/commit/f924938))
+* **actionmenu:** remove height constraints ([666ba11](https://github.com/pluralsight/design-system/commit/666ba11))
+
+
+### Features
+
+* **actionmenu:** restrict maximum height ([352f58d](https://github.com/pluralsight/design-system/commit/352f58d))
+* **actionmenu:** use imperative ref to forward ref ([20745d4](https://github.com/pluralsight/design-system/commit/20745d4))
+
+
+### Performance Improvements
+
+* **actionmenu:** memoize initialState ([0f7243f](https://github.com/pluralsight/design-system/commit/0f7243f))
+
+
+### BREAKING CHANGES
+
+* **actionmenu:** ActionMenu now has a default maximum height
+
+
+
+
+
 ## [5.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@5.2.1...@pluralsight/ps-design-system-actionmenu@5.2.2) (2019-10-04)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu

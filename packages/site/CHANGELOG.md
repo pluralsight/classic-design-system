@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@13.4.4...@pluralsight/ps-design-system-site@14.0.0) (2019-10-09)
+
+
+### Code Refactoring
+
+* **textinput:** use forwardRef ([6e31a30](https://github.com/pluralsight/design-system/commit/6e31a30))
+
+
+### Features
+
+* **position:** forward refs; custom target ref ([ca0c505](https://github.com/pluralsight/design-system/commit/ca0c505))
+
+
+### BREAKING CHANGES
+
+* **textinput:** innerRef is no longer supported
+
+
+
+
+
 ## [13.4.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@13.4.3...@pluralsight/ps-design-system-site@13.4.4) (2019-10-04)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site
