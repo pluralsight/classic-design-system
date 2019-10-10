@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-site",
-  "version": "14.0.0",
+  "version": "14.0.1",
   "description": "Reference site",
   "license": "Apache-2.0",
   "private": true,
@@ -63,7 +63,7 @@
     "@pluralsight/ps-design-system-textinput": "^4.0.0",
     "@pluralsight/ps-design-system-theme": "^3.0.4",
     "@pluralsight/ps-design-system-tooltip": "^4.0.8",
-    "@pluralsight/ps-design-system-typeahead": "^1.1.0",
+    "@pluralsight/ps-design-system-typeahead": "^1.1.1",
     "@pluralsight/ps-design-system-util": "*",
     "@pluralsight/ps-design-system-viewtoggle": "^4.0.5",
     "prop-types": "^15.7.2"

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@1.1.0...@pluralsight/ps-design-system-typeahead@1.1.1) (2019-10-10)
+
+
+### Bug Fixes
+
+* **typeahead:** guards for SSR ([9313e07](https://github.com/pluralsight/design-system/commit/9313e07))
+
+
+
+
+
 # 1.1.0 (2019-10-09)
 
 
