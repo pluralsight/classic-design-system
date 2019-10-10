@@ -234,8 +234,9 @@ export default _ => (
 
       <SectionHeading>Indeterminate</SectionHeading>
       <P>
-        Passing the <Text.Code>indeterminate</Text.Code> indicates that the
-        checkbox value is indeterminate.
+        Passing the <Text.Code>indeterminate</Text.Code> flag indicates that the
+        checkbox selection should be obscured as if the control was in a third,
+        indeterminate, state.
       </P>
       <Example.React
         themeToggle
