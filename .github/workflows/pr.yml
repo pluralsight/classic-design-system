@@ -6,30 +6,32 @@ on:
     - master
 
 jobs:
-  build:
-    name: Build
+  lint_code:
+    name: Lint Code
+    runs-on: ubuntu-latest
+    # env:
+    #   GITHUB_TOKEN: ${{ secrets.COMMITLINT_GITHUB_TOKEN }}
+    steps:
+    - uses: actions/checkout@v1
+    - uses: dcodeIO/setup-node-nvm@master
+    - run: npm install
+    - run: npm run lint
+    # - name: ESLint checks
+    #   uses: gimenete/eslint-action@1.0
+
+  unit_test:
+    name: Unit Tests
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
     - uses: dcodeIO/setup-node-nvm@master
     - run: npm install
     - run: npm run bootstrap
-
-  lint_code:
-    name: Lint Code
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - uses: dcodeIO/setup-node-nvm@master
-    - run: npm run lint:no-fail
-
-  unit_test:
-    name: Unit Tests
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - uses: dcodeIO/setup-node-nvm@master
     - run: npm test
+    # - name: Bootstrap Packages
+    #   uses: m19c/action-lerna@1.0.0
+    #   with:
+    #     args: bootstrap
+    # - name: Run Jest
+    #   uses: stefanoeb/jest-action@1.0.0
 
