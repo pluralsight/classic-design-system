@@ -554,7 +554,7 @@ exports[`Storyshots Note/actions no author - long metadata 1`] = `
           <button
             data-css-tqgxbw=""
             icon={
-              <Icon
+              <ForwardRef(Icon)
                 id="bookmark"
                 size="medium"
               />
@@ -578,7 +578,7 @@ exports[`Storyshots Note/actions no author - long metadata 1`] = `
           <button
             data-css-tqgxbw=""
             icon={
-              <Icon
+              <ForwardRef(Icon)
                 id="more"
                 size="medium"
               />
@@ -634,7 +634,7 @@ exports[`Storyshots Note/actions no author - no metadata 1`] = `
           <button
             data-css-tqgxbw=""
             icon={
-              <Icon
+              <ForwardRef(Icon)
                 id="bookmark"
                 size="medium"
               />
@@ -658,7 +658,7 @@ exports[`Storyshots Note/actions no author - no metadata 1`] = `
           <button
             data-css-tqgxbw=""
             icon={
-              <Icon
+              <ForwardRef(Icon)
                 id="more"
                 size="medium"
               />
@@ -742,7 +742,7 @@ exports[`Storyshots Note/actions one action 1`] = `
           <button
             data-css-tqgxbw=""
             icon={
-              <Icon
+              <ForwardRef(Icon)
                 id="more"
                 size="medium"
               />
@@ -853,7 +853,7 @@ exports[`Storyshots Note/actions two actions 1`] = `
           <button
             data-css-tqgxbw=""
             icon={
-              <Icon
+              <ForwardRef(Icon)
                 id="bookmark"
                 size="medium"
               />
@@ -877,7 +877,7 @@ exports[`Storyshots Note/actions two actions 1`] = `
           <button
             data-css-tqgxbw=""
             icon={
-              <Icon
+              <ForwardRef(Icon)
                 id="more"
                 size="medium"
               />
@@ -988,7 +988,7 @@ exports[`Storyshots Note/actions visible on hover 1`] = `
           <button
             data-css-tqgxbw=""
             icon={
-              <Icon
+              <ForwardRef(Icon)
                 id="more"
                 size="medium"
               />
@@ -1099,7 +1099,7 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
           <button
             data-css-tqgxbw=""
             icon={
-              <Icon
+              <ForwardRef(Icon)
                 id="more"
                 size="medium"
               />
@@ -1121,6 +1121,13 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
               </svg>
             </div>
           </button>
+          <div
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          />
         </div>
       </div>
       <p>
@@ -1211,7 +1218,7 @@ exports[`Storyshots Note/actions with long heading 1`] = `
           <button
             data-css-tqgxbw=""
             icon={
-              <Icon
+              <ForwardRef(Icon)
                 id="bookmark"
                 size="medium"
               />
@@ -1235,7 +1242,7 @@ exports[`Storyshots Note/actions with long heading 1`] = `
           <button
             data-css-tqgxbw=""
             icon={
-              <Icon
+              <ForwardRef(Icon)
                 id="more"
                 size="medium"
               />
@@ -1338,7 +1345,7 @@ exports[`Storyshots Note/actions without author 1`] = `
           <button
             data-css-tqgxbw=""
             icon={
-              <Icon
+              <ForwardRef(Icon)
                 id="bookmark"
                 size="medium"
               />
@@ -1362,7 +1369,7 @@ exports[`Storyshots Note/actions without author 1`] = `
           <button
             data-css-tqgxbw=""
             icon={
-              <Icon
+              <ForwardRef(Icon)
                 id="more"
                 size="medium"
               />

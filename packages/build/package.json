@@ -1,10 +1,11 @@
 {
   "name": "@pluralsight/ps-design-system-build",
-  "version": "1.10.1",
+  "version": "1.11.0",
   "description": "Utilities for building and configuring Design System packages",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
+  "keywords": [],
   "bin": {
     "build-css": "./bin/build-css.js"
   },
@@ -13,7 +14,6 @@
     "test": "jest",
     "test:watch": "npm run test -- --watchAll"
   },
-  "keywords": [],
   "dependencies": {
     "chalk": "^2.3.0",
     "commander": "^2.14.1",

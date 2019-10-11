@@ -1,11 +1,13 @@
-import Button from '@pluralsight/ps-design-system-button/react.js'
-import core from '@pluralsight/ps-design-system-core'
-import { below } from '@pluralsight/ps-design-system-position/js.js'
-import { Below } from '@pluralsight/ps-design-system-position/react.js'
 import React from 'react'
+
+import Button from '@pluralsight/ps-design-system-button'
+import core from '@pluralsight/ps-design-system-core'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
 import Theme from '@pluralsight/ps-design-system-theme/react.js'
 import Tooltip from '@pluralsight/ps-design-system-tooltip/react.js'
+
+import * as fns from '@pluralsight/ps-design-system-position/js.js'
+import * as components from '@pluralsight/ps-design-system-position/react.js'
 
 import {
   Chrome,
@@ -17,6 +19,9 @@ import {
   PropTypes,
   SectionHeading
 } from '../../src/ui/index.js'
+
+const { rightOf } = fns
+const { Below } = components
 
 export default _ => (
   <Chrome>
@@ -66,6 +71,13 @@ export default _ => (
             'Element placed in relation to target'
           ]),
           PropTypes.row([
+            'target',
+            <code>ref</code>,
+            null,
+            null,
+            'reference to custom target'
+          ]),
+          PropTypes.row([
             'when',
             <code>boolean</code>,
             null,
@@ -87,7 +99,7 @@ export default _ => (
       </P>
       <iframe
         className="iframe"
-        style={{ height: `calc(160px * 2 + ${core.layout.spacingLarge})` }}
+        style={{ height: `calc((160px + ${core.layout.spacingLarge}) * 4)` }}
         src="/components/position-positions-example"
       />
 
@@ -109,7 +121,7 @@ export default _ => (
       />
       <Code collapsible lang="javascript">{`function PortalExample() {
   const portal = React.useRef()
-  // NOTE: this node setup is often unneeded if you have 
+  // NOTE: this node setup is often unneeded if you have
   // a <div id="put-portal-stuff-here" /> already
   const [node, setNode] = React.useState(portal.current)
   React.useEffect(
@@ -162,6 +174,7 @@ export default _ => (
       <P>Use the JavaScript function to get the positioning style desired.</P>
       <JsExample />
     </Content>
+
     <style jsx>{`
       .iframe {
         border: 0;
@@ -172,90 +185,105 @@ export default _ => (
 )
 
 function JsExample() {
-  const targetRef = React.useRef()
-  const elRef = React.useRef()
-  const [isHovered, setHovered] = React.useState(false)
+  const button = React.useRef()
+  const tooltip = React.useRef()
+
+  const [isHovered, setHovered] = React.useState(true)
   const [style, setStyle] = React.useState({ position: 'absolute' })
+
+  const hide = () => setHovered(false)
+  const show = () => setHovered(true)
+
   React.useEffect(() => {
-    if ((targetRef.current, elRef.current))
-      setStyle(below(targetRef.current).styleFor(elRef.current))
+    if (!button.current || !tooltip.current) return
+
+    const nextStyle = rightOf(button.current).styleFor(tooltip.current)
+    setStyle(nextStyle)
   }, [])
 
   return (
-    <div>
+    <React.Fragment>
       <div className="examples">
         <Theme name={Theme.names.dark}>
           <div className="example">
             <Button
-              ref={targetRef}
+              ref={button}
               appearance={Button.appearances.secondary}
               className="text"
-              onMouseEnter={_ => setHovered(true)}
-              onMouseOut={_ => setHovered(false)}
+              onMouseEnter={show}
+              onMouseOut={hide}
             >
               Hover me
             </Button>
-            {isHovered && (
-              <Tooltip
-                style={style}
-                ref={elRef}
-                tailPosition={Tooltip.tailPositions.topCenter}
-              >
-                Tooltip
-              </Tooltip>
-            )}
+
+            <Tooltip
+              ref={tooltip}
+              style={{ ...style, display: isHovered ? 'block' : 'none' }}
+              visible={false}
+            >
+              Tooltip
+            </Tooltip>
           </div>
         </Theme>
       </div>
       <Code
         collapsible
         lang="javascript"
-      >{`import Button from '@pluralsight/ps-design-system-button/react'
+      >{`import Button from '@pluralsight/ps-design-system-button'
 import { below } from '@pluralsight/ps-design-system-position/js'
 import Tooltip from '@pluralsight/ps-design-system-position/react'
 
-function JsExample() {
-  const targetRef = React.useRef()
-  const elRef = React.useRef()
-  const [isHovered, setHovered] = React.useState(false)
+import { rightOf } from '@pluralsight/ps-design-system-position/js'
+
+function Example(){
+  const button = React.useRef()
+  const tooltip = React.useRef()
+
+  const [isHovered, setHovered] = React.useState(true)
   const [style, setStyle] = React.useState({ position: 'absolute' })
+
+  const hide = () => setHovered(false)
+  const show = () => setHovered(true)
+
   React.useEffect(() => {
-    if ((targetRef.current, elRef.current))
-      setStyle(below(targetRef.current).styleFor(elRef.current))
-  })
+    if (!button.current || !tooltip.current) return
+
+    const nextStyle = rightOf(button.current).styleFor(tooltip.current)
+    setStyle(nextStyle)
+  }, [])
 
   return (
     <div>
       <Button
-        ref={targetRef}
+        ref={button}
         appearance={Button.appearances.secondary}
         className="text"
-        onMouseEnter={_ => setHovered(true)}
-        onMouseOut={_ => setHovered(false)}
+        onMouseEnter={show}
+        onMouseOut={hide}
       >
         Hover me
       </Button>
-      {isHovered && (
-        <Tooltip
-          style={style}
-          ref={elRef}
-          tailPosition={Tooltip.tailPositions.topCenter}
-        >
-          Tooltip
-        </Tooltip>
-      )}
+
+      <Tooltip
+        ref={tooltip}
+        style={{ ...style, display: isHovered ? 'block' : 'none' }}
+        visible={false}
+      >
+        Tooltip
+      </Tooltip>
     </div>
   )
-}`}</Code>
+}
+  `}</Code>
 
       <style jsx>{`
         .examples {
-          display: flex;
-          padding: ${core.layout.spacingLarge};
-          padding-bottom: 88px;
-          color: ${core.colors.gray02};
-          font-weight: ${core.type.fontWeightMedium};
           background: ${core.colors.gray06};
+          color: ${core.colors.gray02};
+          display: flex;
+          font-weight: ${core.type.fontWeightMedium};
+          padding-bottom: 88px;
+          padding: ${core.layout.spacingLarge};
         }
         .example {
           margin-right: calc(${core.layout.spacingLarge} * 2);
@@ -267,7 +295,7 @@ function JsExample() {
           margin-right: 0;
         }
       `}</style>
-    </div>
+    </React.Fragment>
   )
 }
 
@@ -301,7 +329,7 @@ function ReactExample() {
       <Code
         collapsible
         lang="javascript"
-      >{`import Button from '@pluralsight/ps-design-system-button/react'
+      >{`import Button from '@pluralsight/ps-design-system-button'
 import { Below } from '@pluralsight/ps-design-system-position/react'
 import Tooltip from '@pluralsight/ps-design-system-position/react'
 

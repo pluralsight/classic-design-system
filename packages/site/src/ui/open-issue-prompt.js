@@ -1,4 +1,4 @@
-import Button from '@pluralsight/ps-design-system-button/react.js'
+import Button from '@pluralsight/ps-design-system-button'
 import React from 'react'
 
 import { GithubIcon } from './index.js'

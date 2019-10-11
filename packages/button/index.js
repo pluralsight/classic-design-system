@@ -1,5 +1,6 @@
-const css = require('./css')
-const React = require('./react')
-const vars = require('./vars')
+import Button from './dist/esm/react/index.js'
+import * as vars from './dist/esm/vars/index.js'
+import css from './dist/esm/css/index.js'
 
-module.exports = { css: css, react: React, vars: vars }
+export default Button
+export { vars, css }

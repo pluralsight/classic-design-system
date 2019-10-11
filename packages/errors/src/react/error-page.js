@@ -2,7 +2,7 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import Button from '@pluralsight/ps-design-system-button/react'
+import Button from '@pluralsight/ps-design-system-button'
 import * as textVars from '@pluralsight/ps-design-system-text/vars'
 import { useTheme } from '@pluralsight/ps-design-system-theme/react'
 

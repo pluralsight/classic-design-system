@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-note@2.0.6...@pluralsight/ps-design-system-note@3.0.0) (2019-10-09)
+
+
+### Features
+
+* **actionmenu:** restrict maximum height ([352f58d](https://github.com/pluralsight/design-system/commit/352f58d))
+* **position:** always render in portal; smoother initial mount w/pos ([d6bd520](https://github.com/pluralsight/design-system/commit/d6bd520))
+
+
+### BREAKING CHANGES
+
+* **actionmenu:** ActionMenu now has a default maximum height
+
+
+
+
+
+## [2.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-note@2.0.5...@pluralsight/ps-design-system-note@2.0.6) (2019-10-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-note
+
+
+
+
+
+## [2.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-note@2.0.4...@pluralsight/ps-design-system-note@2.0.5) (2019-10-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-note
+
+
+
+
+
 ## [2.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-note@2.0.3...@pluralsight/ps-design-system-note@2.0.4) (2019-09-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-note

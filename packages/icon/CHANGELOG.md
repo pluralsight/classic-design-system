@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@13.1.0...@pluralsight/ps-design-system-icon@13.2.0) (2019-10-09)
+
+
+### Features
+
+* **icon:** alternate caret icons ([85d9cb0](https://github.com/pluralsight/design-system/commit/85d9cb0))
+
+
+
+
+
+# [13.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@13.0.2...@pluralsight/ps-design-system-icon@13.1.0) (2019-10-04)
+
+
+### Features
+
+* **icon:** forward refs ([389d260](https://github.com/pluralsight/design-system/commit/389d260))
+
+
+
+
+
+## [13.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@13.0.1...@pluralsight/ps-design-system-icon@13.0.2) (2019-10-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
 ## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@13.0.0...@pluralsight/ps-design-system-icon@13.0.1) (2019-09-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon

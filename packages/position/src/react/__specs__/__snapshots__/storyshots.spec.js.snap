@@ -1,20 +1,943 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots js above 1`] = `
-<div>
+exports[`Storyshots Components | Position / basic Above 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;Above /&gt;
+  </div>,
   <div
     style={
       Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / basic AboveLeft 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;AboveLeft /&gt;
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / basic AboveRight 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;AboveRight /&gt;
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / basic Below 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;Below /&gt;
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / basic BelowLeft 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;BelowLeft /&gt;
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / basic BelowRight 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;BelowRight /&gt;
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / basic LeftOf 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;LeftOf /&gt;
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / basic RightOf 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;RightOf /&gt;
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / custom target Above 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid yellow",
+        }
+      }
+    >
+      &lt;Above /&gt;
+    </div>
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / custom target AboveLeft 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid yellow",
+        }
+      }
+    >
+      &lt;AboveLeft /&gt;
+    </div>
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / custom target AboveRight 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid yellow",
+        }
+      }
+    >
+      &lt;AboveRight /&gt;
+    </div>
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / custom target Below 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid yellow",
+        }
+      }
+    >
+      &lt;Below /&gt;
+    </div>
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / custom target BelowLeft 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid yellow",
+        }
+      }
+    >
+      &lt;BelowLeft /&gt;
+    </div>
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / custom target BelowRight 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid yellow",
+        }
+      }
+    >
+      &lt;BelowRight /&gt;
+    </div>
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / custom target LeftOf 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid yellow",
+        }
+      }
+    >
+      &lt;LeftOf /&gt;
+    </div>
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / custom target RightOf 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid yellow",
+        }
+      }
+    >
+      &lt;RightOf /&gt;
+    </div>
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components | Position / in custom portal Above 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;Above /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Position / in custom portal AboveLeft 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;AboveLeft /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Position / in custom portal AboveRight 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;AboveRight /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Position / in custom portal Below 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;Below /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Position / in custom portal BelowLeft 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;BelowLeft /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Position / in custom portal BelowRight 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;BelowRight /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Position / in custom portal LeftOf 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;LeftOf /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Position / in custom portal RightOf 1`] = `
+<div
+  className={
+    Object {
+      "data-css-vpj4z2": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    &lt;RightOf /&gt;
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Position / in scrollable container RightOf 1`] = `
+<div
+  className={
+    Object {
+      "data-css-s48i2c": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-1ezr34k": "",
+      }
+    }
+  />
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
+      }
+    }
+  >
+    target
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-1luw3o6=""
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>
+  <div
+    className={
+      Object {
+        "data-css-1ezr34k": "",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Utilities | Position / position fns above 1`] = `
+<div>
+  <div
+    className={
+      Object {
+        "data-css-1erb2v7": "",
       }
     }
   >
@@ -24,9 +947,7 @@ exports[`Storyshots js above 1`] = `
     data-css-1luw3o6=""
     style={
       Object {
-        "left": "0px",
         "position": "absolute",
-        "top": "-12px",
       }
     }
   >
@@ -39,21 +960,12 @@ exports[`Storyshots js above 1`] = `
 </div>
 `;
 
-exports[`Storyshots js aboveLeft 1`] = `
+exports[`Storyshots Utilities | Position / position fns aboveLeft 1`] = `
 <div>
   <div
-    style={
+    className={
       Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
+        "data-css-1erb2v7": "",
       }
     }
   >
@@ -63,9 +975,7 @@ exports[`Storyshots js aboveLeft 1`] = `
     data-css-1luw3o6=""
     style={
       Object {
-        "left": "0px",
         "position": "absolute",
-        "top": "-12px",
       }
     }
   >
@@ -78,21 +988,12 @@ exports[`Storyshots js aboveLeft 1`] = `
 </div>
 `;
 
-exports[`Storyshots js aboveRight 1`] = `
+exports[`Storyshots Utilities | Position / position fns aboveRight 1`] = `
 <div>
   <div
-    style={
+    className={
       Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
+        "data-css-1erb2v7": "",
       }
     }
   >
@@ -102,9 +1003,7 @@ exports[`Storyshots js aboveRight 1`] = `
     data-css-1luw3o6=""
     style={
       Object {
-        "left": "0px",
         "position": "absolute",
-        "top": "-12px",
       }
     }
   >
@@ -117,21 +1016,12 @@ exports[`Storyshots js aboveRight 1`] = `
 </div>
 `;
 
-exports[`Storyshots js below 1`] = `
+exports[`Storyshots Utilities | Position / position fns below 1`] = `
 <div>
   <div
-    style={
+    className={
       Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
+        "data-css-1erb2v7": "",
       }
     }
   >
@@ -141,9 +1031,7 @@ exports[`Storyshots js below 1`] = `
     data-css-1luw3o6=""
     style={
       Object {
-        "left": "0px",
         "position": "absolute",
-        "top": "12px",
       }
     }
   >
@@ -156,21 +1044,12 @@ exports[`Storyshots js below 1`] = `
 </div>
 `;
 
-exports[`Storyshots js belowLeft 1`] = `
+exports[`Storyshots Utilities | Position / position fns belowLeft 1`] = `
 <div>
   <div
-    style={
+    className={
       Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
+        "data-css-1erb2v7": "",
       }
     }
   >
@@ -180,9 +1059,7 @@ exports[`Storyshots js belowLeft 1`] = `
     data-css-1luw3o6=""
     style={
       Object {
-        "left": "0px",
         "position": "absolute",
-        "top": "12px",
       }
     }
   >
@@ -195,21 +1072,12 @@ exports[`Storyshots js belowLeft 1`] = `
 </div>
 `;
 
-exports[`Storyshots js belowRight 1`] = `
+exports[`Storyshots Utilities | Position / position fns belowRight 1`] = `
 <div>
   <div
-    style={
+    className={
       Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
+        "data-css-1erb2v7": "",
       }
     }
   >
@@ -219,9 +1087,7 @@ exports[`Storyshots js belowRight 1`] = `
     data-css-1luw3o6=""
     style={
       Object {
-        "left": "0px",
         "position": "absolute",
-        "top": "12px",
       }
     }
   >
@@ -234,21 +1100,12 @@ exports[`Storyshots js belowRight 1`] = `
 </div>
 `;
 
-exports[`Storyshots js leftOf 1`] = `
+exports[`Storyshots Utilities | Position / position fns leftOf 1`] = `
 <div>
   <div
-    style={
+    className={
       Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
+        "data-css-1erb2v7": "",
       }
     }
   >
@@ -258,9 +1115,7 @@ exports[`Storyshots js leftOf 1`] = `
     data-css-1luw3o6=""
     style={
       Object {
-        "left": "-12px",
         "position": "absolute",
-        "top": "0px",
       }
     }
   >
@@ -269,21 +1124,12 @@ exports[`Storyshots js leftOf 1`] = `
 </div>
 `;
 
-exports[`Storyshots js rightOf 1`] = `
+exports[`Storyshots Utilities | Position / position fns rightOf 1`] = `
 <div>
   <div
-    style={
+    className={
       Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
+        "data-css-1erb2v7": "",
       }
     }
   >
@@ -293,314 +1139,11 @@ exports[`Storyshots js rightOf 1`] = `
     data-css-1luw3o6=""
     style={
       Object {
-        "left": "12px",
         "position": "absolute",
-        "top": "0px",
       }
     }
   >
     The tip
   </div>
-</div>
-`;
-
-exports[`Storyshots react Above 1`] = `
-Array [
-  <div
-    style={
-      Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
-      }
-    }
-  >
-    &lt;Above/&gt;
-  </div>,
-  <div
-    data-css-1luw3o6=""
-    style={
-      Object {
-        "left": "0px",
-        "position": "absolute",
-        "top": "-12px",
-      }
-    }
-  >
-    The tip
-  </div>,
-]
-`;
-
-exports[`Storyshots react AboveLeft 1`] = `
-Array [
-  <div
-    style={
-      Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
-      }
-    }
-  >
-    &lt;AboveLeft/&gt;
-  </div>,
-  <div
-    data-css-1luw3o6=""
-    style={
-      Object {
-        "left": "0px",
-        "position": "absolute",
-        "top": "-12px",
-      }
-    }
-  >
-    The tip
-  </div>,
-]
-`;
-
-exports[`Storyshots react AboveRight 1`] = `
-Array [
-  <div
-    style={
-      Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
-      }
-    }
-  >
-    &lt;AboveRight/&gt;
-  </div>,
-  <div
-    data-css-1luw3o6=""
-    style={
-      Object {
-        "left": "0px",
-        "position": "absolute",
-        "top": "-12px",
-      }
-    }
-  >
-    The tip
-  </div>,
-]
-`;
-
-exports[`Storyshots react Below 1`] = `
-Array [
-  <div
-    style={
-      Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
-      }
-    }
-  >
-    &lt;Below/&gt;
-  </div>,
-  <div
-    data-css-1luw3o6=""
-    style={
-      Object {
-        "left": "0px",
-        "position": "absolute",
-        "top": "12px",
-      }
-    }
-  >
-    The tip
-  </div>,
-]
-`;
-
-exports[`Storyshots react BelowLeft 1`] = `
-Array [
-  <div
-    style={
-      Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
-      }
-    }
-  >
-    &lt;BelowLeft/&gt;
-  </div>,
-  <div
-    data-css-1luw3o6=""
-    style={
-      Object {
-        "left": "0px",
-        "position": "absolute",
-        "top": "12px",
-      }
-    }
-  >
-    The tip
-  </div>,
-]
-`;
-
-exports[`Storyshots react BelowRight 1`] = `
-Array [
-  <div
-    style={
-      Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
-      }
-    }
-  >
-    &lt;BelowRight/&gt;
-  </div>,
-  <div
-    data-css-1luw3o6=""
-    style={
-      Object {
-        "left": "0px",
-        "position": "absolute",
-        "top": "12px",
-      }
-    }
-  >
-    The tip
-  </div>,
-]
-`;
-
-exports[`Storyshots react LeftOf 1`] = `
-Array [
-  <div
-    style={
-      Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
-      }
-    }
-  >
-    &lt;LeftOf/&gt;
-  </div>,
-  <div
-    data-css-1luw3o6=""
-    style={
-      Object {
-        "left": "-12px",
-        "position": "absolute",
-        "top": "0px",
-      }
-    }
-  >
-    The tip
-  </div>,
-]
-`;
-
-exports[`Storyshots react RightOf 1`] = `
-Array [
-  <div
-    style={
-      Object {
-        "alignItems": "center",
-        "border": "4px dashed #e80a89",
-        "color": "#e80a89",
-        "display": "flex",
-        "fontSize": "18px",
-        "fontWeight": 700,
-        "height": "200px",
-        "justifyContent": "center",
-        "textAlign": "center",
-        "width": "200px",
-      }
-    }
-  >
-    &lt;RightOf/&gt;
-  </div>,
-  <div
-    data-css-1luw3o6=""
-    style={
-      Object {
-        "left": "12px",
-        "position": "absolute",
-        "top": "0px",
-      }
-    }
-  >
-    The tip
-  </div>,
-]
-`;
-
-exports[`Storyshots react when=false 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "border": "4px dashed #e80a89",
-      "color": "#e80a89",
-      "display": "flex",
-      "fontSize": "18px",
-      "fontWeight": 700,
-      "height": "200px",
-      "justifyContent": "center",
-      "textAlign": "center",
-      "width": "200px",
-    }
-  }
->
-  Hidden
 </div>
 `;

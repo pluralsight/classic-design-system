@@ -4,11 +4,11 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
 import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import {
   BelowLeft,
   BelowRight
-} from '@pluralsight/ps-design-system-position/react'
+} from '@pluralsight/ps-design-system-position/react.js'
 
 import ActionMenu from '../index.js'
 
@@ -23,6 +23,13 @@ storiesOf('menu items', module)
       <ActionMenu.Item>One item</ActionMenu.Item>
       <ActionMenu.Item>Two item</ActionMenu.Item>
       <ActionMenu.Item>Three item</ActionMenu.Item>
+    </ActionMenu>
+  ))
+  .add('lots', _ => (
+    <ActionMenu>
+      {new Array(30).fill(null).map((_, index) => (
+        <ActionMenu.Item key={index}>index: {index}</ActionMenu.Item>
+      ))}
     </ActionMenu>
   ))
   .add('with icons', _ => (

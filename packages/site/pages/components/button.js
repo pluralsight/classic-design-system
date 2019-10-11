@@ -1,5 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import Button from '@pluralsight/ps-design-system-button/react.js'
+import Button from '@pluralsight/ps-design-system-button'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import React from 'react'
 import Text from '@pluralsight/ps-design-system-text/react.js'
@@ -28,7 +28,7 @@ export default _ => (
       </Code>
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Button from '@pluralsight/ps-design-system-button/react'
+        import Button from '@pluralsight/ps-design-system-button'
       </Code>
       <PropTypes
         props={[
@@ -194,7 +194,7 @@ export default _ => (
       <Code
         lang="javascript"
         collapsible
-      >{`import Button from "@pluralsight/ps-design-system-button/react"
+      >{`import Button from "@pluralsight/ps-design-system-button"
 import { withRouter } from "react-router-dom"
 
 // #1 Define your react-router-specific ButtonLink

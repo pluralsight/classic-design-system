@@ -3,7 +3,7 @@ import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react.js
 import PropTypes from 'prop-types'
 import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
-import Button from '@pluralsight/ps-design-system-button/react'
+import Button from '@pluralsight/ps-design-system-button'
 
 import {
   Chrome,

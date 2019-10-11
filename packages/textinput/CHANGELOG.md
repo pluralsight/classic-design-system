@@ -3,6 +3,43 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@3.0.4...@pluralsight/ps-design-system-textinput@4.0.0) (2019-10-09)
+
+
+### Code Refactoring
+
+* **textinput:** use forwardRef ([6e31a30](https://github.com/pluralsight/design-system/commit/6e31a30))
+
+
+### Features
+
+* **textinput:** allow forwarding ref for field element ([9911e9d](https://github.com/pluralsight/design-system/commit/9911e9d))
+
+
+### BREAKING CHANGES
+
+* **textinput:** innerRef is no longer supported
+
+
+
+
+
+## [3.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@3.0.3...@pluralsight/ps-design-system-textinput@3.0.4) (2019-10-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textinput
+
+
+
+
+
+## [3.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@3.0.2...@pluralsight/ps-design-system-textinput@3.0.3) (2019-10-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textinput
+
+
+
+
+
 ## [3.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@3.0.1...@pluralsight/ps-design-system-textinput@3.0.2) (2019-09-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textinput

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 
-import Button from '@pluralsight/ps-design-system-button/react.js'
+import Button from '@pluralsight/ps-design-system-button'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
 
 import Dialog from '../index.js'

@@ -1,12 +1,11 @@
 #!/usr/bin/env node
-
 const chalk = require('chalk')
 const program = require('commander')
 const path = require('path')
 
 const { css } = require('../index')
-const defaultInputFilePath = path.join(process.cwd(), 'dist', 'css', 'index.js')
-const defaultOutputDirectoryPath = path.join(process.cwd(), 'dist', 'css')
+const defaultInputFilePath = path.join('dist', 'css', 'index.js')
+const defaultOutputDirectoryPath = path.join('dist')
 
 const prefix = '[build-css] '
 const log = str => console.log(chalk.dim(prefix + str))
@@ -28,8 +27,8 @@ program
   .option('-g, --useGlamor', 'Compile css using glamor', false)
   .parse(process.argv)
 
-const inputFilePath = program.input
-const outputDirectoryPath = program.output
+const inputFilePath = path.join(process.cwd(), program.input)
+const outputDirectoryPath = path.join(process.cwd(), program.output)
 
 log('Building css...')
 log(`Using input:  "${inputFilePath}"`)
