@@ -2,7 +2,7 @@
 
 exports[`Storyshots Checkbox checked 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -61,7 +61,7 @@ exports[`Storyshots Checkbox checked 1`] = `
 
 exports[`Storyshots Checkbox default 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -107,7 +107,7 @@ exports[`Storyshots Checkbox default 1`] = `
 
 exports[`Storyshots Checkbox disabled & errored 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -153,7 +153,7 @@ exports[`Storyshots Checkbox disabled & errored 1`] = `
 
 exports[`Storyshots Checkbox disabled 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -199,7 +199,7 @@ exports[`Storyshots Checkbox disabled 1`] = `
 
 exports[`Storyshots Checkbox error 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -291,7 +291,7 @@ exports[`Storyshots Checkbox error 1`] = `
 
 exports[`Storyshots Checkbox state demo 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={

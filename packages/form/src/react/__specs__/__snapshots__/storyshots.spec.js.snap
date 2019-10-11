@@ -2,7 +2,7 @@
 
 exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -82,7 +82,7 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
 
 exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -162,7 +162,7 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
 
 exports[`Storyshots Sample Form sample 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
