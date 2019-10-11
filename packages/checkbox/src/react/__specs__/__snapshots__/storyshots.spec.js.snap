@@ -2,7 +2,7 @@
 
 exports[`Storyshots Checkbox checked & indeterminate 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -353,7 +353,7 @@ exports[`Storyshots Checkbox error 1`] = `
 
 exports[`Storyshots Checkbox indeterminate 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
