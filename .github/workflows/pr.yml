@@ -1,0 +1,40 @@
+name: Main Workflow
+
+on:
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  lint_commits:
+    name: Lint Commits
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v1
+      - uses: wagoid/commitlint-github-action@v1.1.1
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: dcodeIO/setup-node-nvm@master
+    - run: npm install
+    - run: npm run bootstrap
+
+  lint_code:
+    name: Lint Code
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - run: npm lint:no-fail
+
+  unit_test:
+    name: Unit Tests
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - run: npm test
+
