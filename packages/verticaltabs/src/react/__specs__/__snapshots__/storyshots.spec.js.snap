@@ -113,6 +113,7 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
         data-css-1qwecpt=""
       >
         <button
+          aria-label="Collapse"
           data-css-nhugdf=""
           onClick={[Function]}
         >
@@ -369,6 +370,7 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
         data-css-1qwecpt=""
       >
         <button
+          aria-label="Expand"
           data-css-nhugdf=""
           onClick={[Function]}
         >
@@ -407,6 +409,7 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
         data-css-1qwecpt=""
       >
         <button
+          aria-label="Expand"
           data-css-nhugdf=""
           onClick={[Function]}
         >
@@ -859,7 +862,7 @@ exports[`Storyshots VerticalTabs Href changes tier tag to link 1`] = `
           <span
             data-css-9nfe05=""
           >
-            Tier 1 Link
+            Tier 1 link
           </span>
         </a>
       </div>
@@ -912,6 +915,7 @@ exports[`Storyshots VerticalTabs Long text 1`] = `
         data-css-1qwecpt=""
       >
         <button
+          aria-label="Expand"
           data-css-nhugdf=""
           onClick={[Function]}
         >
@@ -1302,7 +1306,7 @@ exports[`Storyshots VerticalTabs onClick no href changes tier tag to button 1`] 
           <span
             data-css-9nfe05=""
           >
-            Tier 1 Link
+            Tier 1 button
           </span>
         </button>
       </div>
@@ -1317,7 +1321,7 @@ exports[`Storyshots VerticalTabs onClick no href changes tier tag to button 1`] 
           data-css-mbxfai=""
           onClick={[Function]}
         >
-          Tier 2 link
+          Tier 2 button
         </button>
       </div>
     </li>
