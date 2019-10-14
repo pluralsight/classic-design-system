@@ -447,6 +447,9 @@ const SideNav = withHeadings(props => (
       <NavLink href="/components/typeahead" headings={props.headings}>
         Typeahead
       </NavLink>
+      <NavLink href="/components/verticaltabs" headings={props.headings}>
+        Vertical Tabs
+      </NavLink>
       <NavLink href="/components/viewtoggle" headings={props.headings}>
         View Toggle
       </NavLink>

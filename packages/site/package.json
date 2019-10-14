@@ -65,6 +65,7 @@
     "@pluralsight/ps-design-system-tooltip": "^4.0.8",
     "@pluralsight/ps-design-system-typeahead": "^1.1.1",
     "@pluralsight/ps-design-system-util": "*",
+    "@pluralsight/ps-design-system-verticaltabs": "*",
     "@pluralsight/ps-design-system-viewtoggle": "^4.0.5",
     "prop-types": "^15.7.2"
   }
