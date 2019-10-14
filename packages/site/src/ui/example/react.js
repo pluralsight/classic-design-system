@@ -38,7 +38,7 @@ const OutputDecorationGlobalStyles = _ => (
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      padding: ${core.layout.spacingLarge};
+      padding: ${core.layout.spacingXLarge} ${core.layout.spacingLarge};
       background: ${core.colors.gray06};
       overflow: hidden;
     }
