@@ -1,5 +1,5 @@
 import { css } from 'glamor'
-import React, { cloneElement, forwardRef, useEffect, useState } from 'react'
+import React, { cloneElement, forwardRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
@@ -85,7 +85,7 @@ const styles = {
 }
 
 const CollapsibleGroupHeader = forwardRef(
-  ({ children, open, tagName, toggle, ...rest }, ref) => {
+  ({ children, open, tagName, toggle, getButtonAriaLabel, ...rest }, ref) => {
     const themeName = useTheme()
     const TagName = tagName
     return (
@@ -94,7 +94,11 @@ const CollapsibleGroupHeader = forwardRef(
         ref={ref}
         {...filterReactProps(rest, { tagName })}
       >
-        <button onClick={toggle} {...styles.groupButton()}>
+        <button
+          onClick={toggle}
+          {...styles.groupButton()}
+          aria-label={getButtonAriaLabel()}
+        >
           <div {...styles.groupButtonInner()}>
             <span {...styles.tierHeaderLabel()}>{children}</span>
             <Icon
@@ -108,9 +112,9 @@ const CollapsibleGroupHeader = forwardRef(
     )
   }
 )
-CollapsibleGroupHeader.displayName = 'VerticalTabs.CollapsibleGroupHeader'
+CollapsibleGroupHeader.displayName = 'VerticalTabs.CollapsibleGroup.Header'
 CollapsibleGroupHeader.propTypes = {
-  ariaLabel: PropTypes.string,
+  getButtonAriaLabel: PropTypes.func,
   children: PropTypes.string,
   open: PropTypes.bool,
   tagName: PropTypes.string,
@@ -121,39 +125,16 @@ CollapsibleGroupHeader.defaultProps = {
 }
 
 const CollapsibleGroup = forwardRef(
-  (
-    {
-      children,
-      drawerType,
-      header,
-      isOpen,
-      onToggle,
-      startOpen,
-      toggleButtonAriaLabel,
-      ...rest
-    },
-    ref
-  ) => {
-    const [openState, setOpenState] = useState(startOpen)
-    const [controlled, setControlled] = useState()
-    useEffect(() => {
-      if (controlled !== undefined) {
-        return
-      }
-      setControlled(isOpen !== undefined)
-    }, [isOpen, controlled])
-    const open = isOpen !== undefined ? isOpen : openState
+  ({ children, header, startOpen, groupButtonAriaLabel, ...rest }, ref) => {
+    const [open, setOpenState] = useState(startOpen)
     const getButtonAriaLabel = () => {
       const prefix = open ? 'Collapse' : 'Expand'
-      return toggleButtonAriaLabel
-        ? `${prefix} ${toggleButtonAriaLabel}`
-        : prefix
+      return groupButtonAriaLabel ? `${prefix} ${groupButtonAriaLabel}` : prefix
     }
 
     const toggle = evt => {
       const nextOpen = !open
-      onToggle && onToggle(nextOpen, evt)
-      !controlled && setOpenState(nextOpen)
+      setOpenState(nextOpen)
     }
     return (
       <div {...filterReactProps(rest)} ref={ref}>
@@ -175,12 +156,9 @@ CollapsibleGroup.propTypes = {
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)
   ]),
-  drawerType: PropTypes.string,
   header: PropTypes.node,
-  isOpen: PropTypes.bool,
-  onToggle: PropTypes.func,
   startOpen: PropTypes.bool,
-  toggleButtonAriaLabel: PropTypes.string
+  groupButtonAriaLabel: PropTypes.string
 }
 CollapsibleGroup.Header = CollapsibleGroupHeader
 

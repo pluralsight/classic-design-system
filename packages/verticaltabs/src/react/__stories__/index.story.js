@@ -358,7 +358,7 @@ storiesOf('VerticalTabs', module)
       <VerticalTabs.Tier1
         header={
           <VerticalTabs.Tier1.Header href=" ">
-            Tier 1 Link
+            Tier 1 link
           </VerticalTabs.Tier1.Header>
         }
       />
@@ -376,14 +376,14 @@ storiesOf('VerticalTabs', module)
       <VerticalTabs.Tier1
         header={
           <VerticalTabs.Tier1.Header onClick={_ => {}}>
-            Tier 1 Link
+            Tier 1 button
           </VerticalTabs.Tier1.Header>
         }
       />
       <VerticalTabs.Tier2
         header={
           <VerticalTabs.Tier2.Header onClick={_ => {}}>
-            Tier 2 link
+            Tier 2 button
           </VerticalTabs.Tier2.Header>
         }
       />
