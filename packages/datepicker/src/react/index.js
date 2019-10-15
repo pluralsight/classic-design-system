@@ -154,6 +154,7 @@ const DatePicker = React.forwardRef((props, ref) => {
     )
 
     const nextDate = {
+      ...currentDateOverwrittenByEventValue,
       dd: alwaysReValidateDay,
       [name]: forceValidValueFor[name](currentDateOverwrittenByEventValue)
     }

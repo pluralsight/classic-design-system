@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from '@testing-library/react'
+import { render, fireEvent } from '@testing-library/react'
 
 import * as vars from '../../vars/index.js'
 
@@ -22,6 +22,28 @@ describe('DatePicker', () => {
     render(<DatePicker ref={ref} />)
 
     expect(ref.current).not.toBeNull()
+  })
+
+  describe('onSelect prop', () => {
+    it('should call onSelect when onBlur is called for a valid date', () => {
+      const onSelectMock = jest.fn()
+      const { getByDisplayValue } = render(
+        <DatePicker value="8/14/2001" onSelect={onSelectMock} />
+      )
+      fireEvent.blur(getByDisplayValue('2001'))
+      expect(onSelectMock).toHaveBeenCalledTimes(1)
+    })
+
+    it('should not call onSelect when onBlur is called for an invalid date', () => {
+      const onSelectMock = jest.fn()
+      const { getByDisplayValue } = render(
+        <DatePicker value="8/14/2001" onSelect={onSelectMock} />
+      )
+      const yearSubField = getByDisplayValue('2001')
+      fireEvent.change(yearSubField, { target: { value: '' } })
+      fireEvent.blur(yearSubField)
+      expect(onSelectMock).not.toHaveBeenCalled()
+    })
   })
 
   describe('with a controlled value', () => {
