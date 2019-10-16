@@ -19,8 +19,8 @@ import {
 
 export default _ => (
   <Chrome>
-    <Content title="Tab">
-      <PageHeading packageName="tab">Vertical Tabs</PageHeading>
+    <Content title="VerticalTabs">
+      <PageHeading packageName="verticaltabs">Vertical Tabs</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -29,7 +29,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Tab from '@pluralsight/ps-design-system-verticaltabs/react'
+        import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs/react'
       </Code>
 
       <PropTypes

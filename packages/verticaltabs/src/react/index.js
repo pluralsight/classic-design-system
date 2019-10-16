@@ -281,7 +281,7 @@ Tier2.Header = forwardRef(({ active, children, ...rest }, ref) => {
     <TagName
       {...styles.itemTag(TagName)}
       {...styles.tier2Header()}
-      {...filterReactProps(rest, { tagName: 'tier2' })}
+      {...filterReactProps(rest, { tagName: TagName })}
       ref={ref}
     >
       {children}
@@ -308,7 +308,7 @@ const VerticalTabs = forwardRef(({ children, ...rest }, ref) => {
     <ul
       ref={ref}
       {...styles.verticaltabs(themeName)}
-      {...filterReactProps(rest)}
+      {...filterReactProps(rest, { tagName: 'ul' })}
     >
       {children}
     </ul>
