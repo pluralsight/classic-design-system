@@ -875,6 +875,7 @@ exports[`Storyshots VerticalTabs Href changes tier tag to link 1`] = `
         <a
           data-css-10d53uz=""
           data-css-mbxfai=""
+          href=" "
         >
           Tier 2 link
         </a>
