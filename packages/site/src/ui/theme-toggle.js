@@ -12,8 +12,8 @@ function ThemeToggle(props) {
       <style jsx>{`
         .toggle {
           position: absolute;
-          top: ${core.layout.spacingMedium};
-          right: ${core.layout.spacingMedium};
+          top: ${core.layout.spacingXSmall};
+          right: ${core.layout.spacingXSmall};
           z-index: 1;
         }
       `}</style>
