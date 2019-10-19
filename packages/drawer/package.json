@@ -23,6 +23,7 @@
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.6",
     "@pluralsight/ps-design-system-icon": "^13.2.0",
     "@pluralsight/ps-design-system-util": "^2.0.5",
+    "@pluralsight/ps-design-system-collapsible": "^1.0.0",
     "element-closest": "^2.0.2",
     "prop-types": "^15.7.2"
   },

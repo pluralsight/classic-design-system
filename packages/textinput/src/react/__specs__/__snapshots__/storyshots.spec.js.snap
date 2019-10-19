@@ -2,7 +2,7 @@
 
 exports[`Storyshots after field w/icon 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -51,7 +51,7 @@ exports[`Storyshots after field w/icon 1`] = `
 
 exports[`Storyshots appearance default w/ error 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -108,7 +108,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
 
 exports[`Storyshots appearance default w/ iconAlign left 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -161,7 +161,7 @@ exports[`Storyshots appearance default w/ iconAlign left 1`] = `
 
 exports[`Storyshots appearance default w/ iconAlign right 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -214,7 +214,7 @@ exports[`Storyshots appearance default w/ iconAlign right 1`] = `
 
 exports[`Storyshots appearance subtle w/ error 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -271,7 +271,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
 
 exports[`Storyshots appearance subtle w/ iconAlign left 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -324,7 +324,7 @@ exports[`Storyshots appearance subtle w/ iconAlign left 1`] = `
 
 exports[`Storyshots appearance subtle w/ iconAlign right 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -377,7 +377,7 @@ exports[`Storyshots appearance subtle w/ iconAlign right 1`] = `
 
 exports[`Storyshots disabled compare 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -504,7 +504,7 @@ exports[`Storyshots disabled compare 1`] = `
 
 exports[`Storyshots labels all 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -550,7 +550,7 @@ exports[`Storyshots labels all 1`] = `
 
 exports[`Storyshots labels all w/error 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -613,7 +613,7 @@ exports[`Storyshots labels all w/error 1`] = `
 
 exports[`Storyshots labels label 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -653,7 +653,7 @@ exports[`Storyshots labels label 1`] = `
 
 exports[`Storyshots labels label and subLabel 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -698,7 +698,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
 
 exports[`Storyshots labels long placeholder 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -739,7 +739,7 @@ exports[`Storyshots labels long placeholder 1`] = `
 
 exports[`Storyshots labels none 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -774,7 +774,7 @@ exports[`Storyshots labels none 1`] = `
 
 exports[`Storyshots labels placeholder 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -810,7 +810,7 @@ exports[`Storyshots labels placeholder 1`] = `
 
 exports[`Storyshots labels subLabel 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -850,7 +850,7 @@ exports[`Storyshots labels subLabel 1`] = `
 
 exports[`Storyshots layouts full width 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1032,7 +1032,7 @@ exports[`Storyshots layouts full width 1`] = `
 
 exports[`Storyshots layouts right-aligned 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1110,7 +1110,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
 
 exports[`Storyshots whitelist name 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1147,7 +1147,7 @@ exports[`Storyshots whitelist name 1`] = `
 
 exports[`Storyshots whitelist onChange 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1184,7 +1184,7 @@ exports[`Storyshots whitelist onChange 1`] = `
 
 exports[`Storyshots whitelist title 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1220,7 +1220,7 @@ exports[`Storyshots whitelist title 1`] = `
 
 exports[`Storyshots whitelist type=date 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1257,7 +1257,7 @@ exports[`Storyshots whitelist type=date 1`] = `
 
 exports[`Storyshots whitelist type=password 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={

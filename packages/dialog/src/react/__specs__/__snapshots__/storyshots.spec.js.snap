@@ -2,7 +2,7 @@
 
 exports[`Storyshots modal default 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -161,7 +161,7 @@ exports[`Storyshots modal default 1`] = `
 
 exports[`Storyshots modal no click overlay 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -320,7 +320,7 @@ exports[`Storyshots modal no click overlay 1`] = `
 
 exports[`Storyshots modal no close button 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -463,7 +463,7 @@ exports[`Storyshots modal no close button 1`] = `
 
 exports[`Storyshots modal no escape key 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -621,7 +621,7 @@ exports[`Storyshots modal no escape key 1`] = `
 
 exports[`Storyshots modal no focus on mount 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -780,7 +780,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
 
 exports[`Storyshots modal no focusable child elements 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -873,7 +873,7 @@ exports[`Storyshots modal no focusable child elements 1`] = `
 
 exports[`Storyshots onClose with onClose 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -983,7 +983,7 @@ exports[`Storyshots onClose with onClose 1`] = `
 
 exports[`Storyshots tailPosition bottomCenter 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1076,7 +1076,7 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
 
 exports[`Storyshots tailPosition bottomLeft 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1169,7 +1169,7 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
 
 exports[`Storyshots tailPosition bottomRight 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1262,7 +1262,7 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
 
 exports[`Storyshots tailPosition none 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1355,7 +1355,7 @@ exports[`Storyshots tailPosition none 1`] = `
 
 exports[`Storyshots tailPosition topCenter 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1448,7 +1448,7 @@ exports[`Storyshots tailPosition topCenter 1`] = `
 
 exports[`Storyshots tailPosition topLeft 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1541,7 +1541,7 @@ exports[`Storyshots tailPosition topLeft 1`] = `
 
 exports[`Storyshots tailPosition topRight 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={

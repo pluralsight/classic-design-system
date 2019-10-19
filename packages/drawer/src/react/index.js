@@ -1,6 +1,7 @@
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
 import Icon from '@pluralsight/ps-design-system-icon/react'
+import Collapsible from '@pluralsight/ps-design-system-collapsible'
 import PropTypes from 'prop-types'
 import React, { useState, useEffect } from 'react'
 import {
@@ -9,7 +10,6 @@ import {
 } from '@pluralsight/ps-design-system-theme/react'
 
 import css from '../css/index.js'
-import Collapsible from './collapsible.js'
 
 if (typeof window !== 'undefined') require('element-closest')
 
@@ -37,7 +37,8 @@ const styles = {
     glamor.css(
       css[`.psds-drawer__toggle-button`],
       css[`.psds-drawer__toggle-button.psds-theme--${themeName}`]
-    )
+    ),
+    collapsible: () => glamor.css(css['.psds-drawer__collapsible'])
 }
 const Drawer = ({
   startOpen,
@@ -92,7 +93,7 @@ const Drawer = ({
         </div>
       </div>
       <div {...styles.panel({ themeName, open })}>
-        <Collapsible isOpen={open}>{children}</Collapsible>
+        <Collapsible isOpen={open} {...styles.collapsible()}>{children}</Collapsible>
       </div>
     </div>
   )
