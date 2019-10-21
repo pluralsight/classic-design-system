@@ -81,6 +81,15 @@ export default () => (
               'in-field usage hint'
             ]),
             PropTypes.row([
+              'size',
+              PropTypes.union(Typeahead.sizes),
+              null,
+              <code>medium</code>,
+              <span>
+                horizontal icon placement (from <code>Typeahead.sizes</code>)
+              </span>
+            ]),
+            PropTypes.row([
               'subLabel',
               'string',
               null,
