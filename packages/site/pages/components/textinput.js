@@ -94,6 +94,15 @@ export default _ => (
             'refs to access underlying elements'
           ]),
           PropTypes.row([
+            'size',
+            PropTypes.union(TextInput.sizes),
+            null,
+            <code>medium</code>,
+            <span>
+              horizontal icon placement (from <code>TextInput.sizes</code>)
+            </span>
+          ]),
+          PropTypes.row([
             'subLabel',
             'string',
             null,

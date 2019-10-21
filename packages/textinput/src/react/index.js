@@ -12,8 +12,17 @@ import * as vars from '../vars/index.js'
 
 const styles = {
   error: _ => css(stylesheet['.psds-text-input__error']),
-  field: ({ appearance, error, fieldAfter, icon, iconAlign, themeName }) =>
-    css(
+  field: ({
+    appearance,
+    error,
+    fieldAfter,
+    icon,
+    iconAlign,
+    themeName,
+    size
+  }) => {
+    const small = size === vars.sizes.small
+    return css(
       stylesheet['.psds-text-input__field'],
       stylesheet[`.psds-text-input__field--appearance-${appearance}`],
       stylesheet[`.psds-text-input__field.psds-theme--${themeName}`],
@@ -21,10 +30,19 @@ const styles = {
         `.psds-text-input__field--appearance-${appearance}.psds-theme--${themeName}`
       ],
       fieldAfter && stylesheet[`.psds-text-input__field--w-after`],
-      icon && stylesheet[`.psds-text-input__field--icon-align-${iconAlign}`],
+      small && stylesheet['.psds-text-input__field.psds-text-input--small'],
+      icon &&
+        small &&
+        stylesheet[
+          `.psds-text-input__field--icon-align-${iconAlign}.psds-text-input--small`
+        ],
+      icon &&
+        !small &&
+        stylesheet[`.psds-text-input__field--icon-align-${iconAlign}`],
       error &&
         stylesheet[`.psds-text-input__field--error.psds-theme--${themeName}`]
-    ),
+    )
+  },
   fieldContainer: _ => css(stylesheet['.psds-text-input__field-container']),
   fieldInput: _ => css(stylesheet['.psds-text-input__field-input']),
   icon: ({ appearance, icon, iconAlign, themeName }) =>
@@ -117,13 +135,16 @@ TextInput.defaultProps = {
   appearance: vars.appearances.default,
   disabled: false,
   error: false,
-  iconAlign: vars.iconAligns.left
+  iconAlign: vars.iconAligns.left,
+  size: vars.sizes.medium
 }
 
 TextInput.appearances = vars.appearances
 TextInput.iconAligns = vars.iconAligns
+TextInput.sizes = vars.sizes
 
 export const appearances = vars.appearances
+export const sizes = vars.sizes
 export const iconAligns = vars.iconAligns
 export default TextInput
 

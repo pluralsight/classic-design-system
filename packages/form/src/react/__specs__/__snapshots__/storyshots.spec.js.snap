@@ -228,6 +228,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     data-css-lzb8ea=""
                     disabled={false}
                     placeholder="What's your name?"
+                    size="medium"
                   />
                 </div>
               </div>
@@ -264,6 +265,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     data-css-lzb8ea=""
                     disabled={false}
                     placeholder="Do you have a nick name?"
+                    size="medium"
                   />
                 </div>
               </div>
@@ -304,6 +306,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   <input
                     data-css-lzb8ea=""
                     disabled={false}
+                    size="medium"
                     value="steve@example.com"
                   />
                 </div>
