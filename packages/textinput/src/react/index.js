@@ -129,6 +129,7 @@ TextInput.propTypes = {
   iconAlign: PropTypes.oneOf(Object.keys(vars.iconAligns)),
   label: PropTypes.node,
   placeholder: PropTypes.string,
+  size: PropTypes.oneOf(Object.values(vars.sizes)),
   subLabel: PropTypes.node
 }
 TextInput.defaultProps = {

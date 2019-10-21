@@ -159,6 +159,7 @@ Typeahead.propTypes = {
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
   placeholder: PropTypes.any,
+  size: PropTypes.oneOf(Object.values(vars.sizes)),
   subLabel: PropTypes.any,
   value: PropTypes.string
 }

@@ -260,6 +260,7 @@ Dropdown.propTypes = {
   onClick: PropTypes.func,
   onFocus: PropTypes.func,
   placeholder: PropTypes.string,
+  size: PropTypes.oneOf(Object.values(vars.sizes)),
   subLabel: PropTypes.node,
   style: PropTypes.object,
   value: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
