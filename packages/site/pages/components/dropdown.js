@@ -172,6 +172,15 @@ export default _ => (
             'in-field usage hint'
           ]),
           PropTypes.row([
+            'size',
+            PropTypes.union(Dropdown.sizes),
+            null,
+            <code>medium</code>,
+            <span>
+              horizontal icon placement (from <code>Dropdown.sizes</code>)
+            </span>
+          ]),
+          PropTypes.row([
             'subLabel',
             'string',
             null,
