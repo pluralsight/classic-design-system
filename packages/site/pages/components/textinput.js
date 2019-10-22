@@ -198,6 +198,28 @@ export default _ => (
           `<TextInput error label="First name" subLabel="Field is required" />`
         ]}
       />
+      <SectionHeading>Size</SectionHeading>
+      <P>
+        The small text input is ideal for usage within table rows otherwise use
+        the default, medium size text input, in forms for example.
+      </P>
+      <Example.React
+        orient="vertical"
+        outputStyle={{ paddingBottom: '116px' }}
+        themeToggle
+        includes={{ TextInput }}
+        codes={[
+          `
+<TextInput
+placeholder="medium text input"
+/>`,
+          `<TextInput
+placeholder="small text input"
+size={TextInput.sizes.small}
+/>
+          `
+        ]}
+      />
     </Content>
   </Chrome>
 )

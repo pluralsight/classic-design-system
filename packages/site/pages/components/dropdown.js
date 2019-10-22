@@ -345,6 +345,40 @@ export default _ => (
 />`
         ]}
       />
+      <SectionHeading>Size</SectionHeading>
+      <P>
+        The small dropdown is ideal for usage within table rows otherwise use
+        the default, medium size dropdown, in forms for example.
+      </P>
+      <Example.React
+        orient="vertical"
+        outputStyle={{ paddingBottom: '116px' }}
+        themeToggle
+        includes={{ ActionMenu, Dropdown }}
+        codes={[
+          `<Dropdown
+  placeholder="medium dropdown"
+  menu={
+    <ActionMenu>
+      <ActionMenu.Item>Beginner</ActionMenu.Item>
+      <ActionMenu.Item>Intermediate</ActionMenu.Item>
+      <ActionMenu.Item>Advanced</ActionMenu.Item>
+    </ActionMenu>
+  }
+/>`,
+          `<Dropdown
+  size={Dropdown.sizes.small}
+  placeholder="Small dropdown"
+  menu={
+    <ActionMenu>
+      <ActionMenu.Item>Beginner</ActionMenu.Item>
+      <ActionMenu.Item>Intermediate</ActionMenu.Item>
+      <ActionMenu.Item>Advanced</ActionMenu.Item>
+    </ActionMenu>
+  }
+/>`
+        ]}
+      />
     </Content>
   </Chrome>
 )
