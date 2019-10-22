@@ -33,6 +33,10 @@ export default {
       outline: 'none'
     }
   },
+  '.psds-dropdown__field.psds-dropdown--small': {
+    height: '32px',
+    padding: `0 calc(${core.layout.spacingXSmall} + ${iconVars.widths.medium} + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingXSmall}`
+  },
   [`.psds-dropdown__field.psds-theme--${themeNames.light}`]: {
     background: core.colors.white,
     color: core.colors.gray05,
@@ -122,6 +126,10 @@ export default {
     top: core.layout.spacingXSmall,
     left: core.layout.spacingMedium,
     whiteSpace: 'nowrap'
+  },
+  '.psds-dropdown__placeholder.psds-dropdown--small': {
+    left: core.layout.spacingXSmall,
+    top: core.layout.spacingXXSmall
   },
 
   // __button-sizer

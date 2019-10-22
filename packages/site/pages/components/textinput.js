@@ -94,6 +94,15 @@ export default _ => (
             'refs to access underlying elements'
           ]),
           PropTypes.row([
+            'size',
+            PropTypes.union(TextInput.sizes),
+            null,
+            <code>medium</code>,
+            <span>
+              horizontal icon placement (from <code>TextInput.sizes</code>)
+            </span>
+          ]),
+          PropTypes.row([
             'subLabel',
             'string',
             null,
@@ -187,6 +196,28 @@ export default _ => (
         includes={{ TextInput }}
         codes={[
           `<TextInput error label="First name" subLabel="Field is required" />`
+        ]}
+      />
+      <SectionHeading>Size</SectionHeading>
+      <P>
+        The small text input is ideal for usage within table rows otherwise use
+        the default, medium size text input, in forms for example.
+      </P>
+      <Example.React
+        orient="vertical"
+        outputStyle={{ paddingBottom: '116px' }}
+        themeToggle
+        includes={{ TextInput }}
+        codes={[
+          `
+<TextInput
+placeholder="medium text input"
+/>`,
+          `<TextInput
+placeholder="small text input"
+size={TextInput.sizes.small}
+/>
+          `
         ]}
       />
     </Content>

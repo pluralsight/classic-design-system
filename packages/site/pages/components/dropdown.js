@@ -172,6 +172,15 @@ export default _ => (
             'in-field usage hint'
           ]),
           PropTypes.row([
+            'size',
+            PropTypes.union(Dropdown.sizes),
+            null,
+            <code>medium</code>,
+            <span>
+              horizontal icon placement (from <code>Dropdown.sizes</code>)
+            </span>
+          ]),
+          PropTypes.row([
             'subLabel',
             'string',
             null,
@@ -326,6 +335,40 @@ export default _ => (
   error
   label="Level"
   placeholder="Select level"
+  menu={
+    <ActionMenu>
+      <ActionMenu.Item>Beginner</ActionMenu.Item>
+      <ActionMenu.Item>Intermediate</ActionMenu.Item>
+      <ActionMenu.Item>Advanced</ActionMenu.Item>
+    </ActionMenu>
+  }
+/>`
+        ]}
+      />
+      <SectionHeading>Size</SectionHeading>
+      <P>
+        The small dropdown is ideal for usage within table rows otherwise use
+        the default, medium size dropdown, in forms for example.
+      </P>
+      <Example.React
+        orient="vertical"
+        outputStyle={{ paddingBottom: '116px' }}
+        themeToggle
+        includes={{ ActionMenu, Dropdown }}
+        codes={[
+          `<Dropdown
+  placeholder="medium dropdown"
+  menu={
+    <ActionMenu>
+      <ActionMenu.Item>Beginner</ActionMenu.Item>
+      <ActionMenu.Item>Intermediate</ActionMenu.Item>
+      <ActionMenu.Item>Advanced</ActionMenu.Item>
+    </ActionMenu>
+  }
+/>`,
+          `<Dropdown
+  size={Dropdown.sizes.small}
+  placeholder="Small dropdown"
   menu={
     <ActionMenu>
       <ActionMenu.Item>Beginner</ActionMenu.Item>

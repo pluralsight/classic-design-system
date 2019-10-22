@@ -81,6 +81,15 @@ export default () => (
               'in-field usage hint'
             ]),
             PropTypes.row([
+              'size',
+              PropTypes.union(Typeahead.sizes),
+              null,
+              <code>medium</code>,
+              <span>
+                horizontal icon placement (from <code>Typeahead.sizes</code>)
+              </span>
+            ]),
+            PropTypes.row([
               'subLabel',
               'string',
               null,
@@ -126,6 +135,28 @@ export default () => (
   placeholder="Search"
 />
 `
+        ]}
+      />
+      <SectionHeading>Size</SectionHeading>
+      <P>
+        The small typeahead is ideal for usage within table rows otherwise use
+        the default, medium size typeahead, in forms for example.
+      </P>
+      <Example.React
+        orient="vertical"
+        outputStyle={{ paddingBottom: '116px' }}
+        themeToggle
+        includes={{ Typeahead }}
+        codes={[
+          `
+<Typeahead
+placeholder="medium typeahead"
+/>`,
+          `<Typeahead
+placeholder="small typeahead"
+size={Typeahead.sizes.small}
+/>
+          `
         ]}
       />
     </Content>

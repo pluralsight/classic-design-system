@@ -23,7 +23,8 @@ const TEXT_INPUT_PROPS = [
   'onChange',
   'placeholder',
   'subLabel',
-  'value'
+  'value',
+  'size'
 ]
 const Typeahead = React.forwardRef((props, forwardedRef) => {
   const { children, filterFn, onChange, value } = props
@@ -158,6 +159,7 @@ Typeahead.propTypes = {
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
   placeholder: PropTypes.any,
+  size: PropTypes.oneOf(Object.values(vars.sizes)),
   subLabel: PropTypes.any,
   value: PropTypes.string
 }
@@ -166,9 +168,11 @@ Typeahead.defaultProps = {
 }
 
 Typeahead.appearances = vars.appearances
+Typeahead.sizes = vars.sizes
 
 Typeahead.Suggestion = Suggestion
 
+export const sizes = vars.sizes
 export const appearances = vars.appearances
 
 export default Typeahead

@@ -4,3 +4,5 @@ export const appearances = {
 }
 
 export const iconAligns = { left: 'left', right: 'right' }
+
+export const sizes = { medium: 'medium', small: 'small' }
