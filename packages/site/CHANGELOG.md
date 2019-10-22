@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@14.0.3...@pluralsight/ps-design-system-site@14.1.0) (2019-10-22)
+
+
+### Features
+
+* **dropdown:** adds small size dropdown ([3b628dd](https://github.com/pluralsight/design-system/commit/3b628dd))
+* **textinput:** adds small size textinput ([edf5d2d](https://github.com/pluralsight/design-system/commit/edf5d2d))
+* **typeahead:** adds small size typeahead ([c3cd0ff](https://github.com/pluralsight/design-system/commit/c3cd0ff))
+
+
+
+
+
 ## [14.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@14.0.2...@pluralsight/ps-design-system-site@14.0.3) (2019-10-21)
 
 

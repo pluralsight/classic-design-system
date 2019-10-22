@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@1.1.2...@pluralsight/ps-design-system-typeahead@1.2.0) (2019-10-22)
+
+
+### Bug Fixes
+
+* adds proptype checks ([89362f7](https://github.com/pluralsight/design-system/commit/89362f7))
+
+
+### Features
+
+* **textinput:** adds small size textinput ([edf5d2d](https://github.com/pluralsight/design-system/commit/edf5d2d))
+* **typeahead:** adds small size typeahead ([c3cd0ff](https://github.com/pluralsight/design-system/commit/c3cd0ff))
+
+
+
+
+
 ## [1.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@1.1.1...@pluralsight/ps-design-system-typeahead@1.1.2) (2019-10-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-typeahead

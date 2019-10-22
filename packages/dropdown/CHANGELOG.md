@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@3.0.7...@pluralsight/ps-design-system-dropdown@3.1.0) (2019-10-22)
+
+
+### Bug Fixes
+
+* adds proptype checks ([89362f7](https://github.com/pluralsight/design-system/commit/89362f7))
+
+
+### Features
+
+* **dropdown:** adds small size dropdown ([3b628dd](https://github.com/pluralsight/design-system/commit/3b628dd))
+
+
+
+
+
 ## [3.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@3.0.6...@pluralsight/ps-design-system-dropdown@3.0.7) (2019-10-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

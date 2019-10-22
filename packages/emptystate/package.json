@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-emptystate",
-  "version": "5.0.6",
+  "version": "5.1.0",
   "description": "EmptyState UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -40,7 +40,7 @@
     "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.0",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^4.1.0",
     "@pluralsight/ps-design-system-tag": "^4.0.5",
-    "@pluralsight/ps-design-system-textinput": "^4.0.1",
+    "@pluralsight/ps-design-system-textinput": "^4.1.0",
     "@pluralsight/ps-design-system-theme": "^3.0.4"
   }
 }
