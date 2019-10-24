@@ -1,4 +1,4 @@
-import Avatar from '@pluralsight/ps-design-system-avatar/react.js'
+import Avatar from '@pluralsight/ps-design-system-avatar'
 import core from '@pluralsight/ps-design-system-core'
 import Drawer from '@pluralsight/ps-design-system-drawer/react.js'
 import PT from 'prop-types'

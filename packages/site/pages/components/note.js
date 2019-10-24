@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Avatar from '@pluralsight/ps-design-system-avatar/react.js'
+import Avatar from '@pluralsight/ps-design-system-avatar'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import Link from '@pluralsight/ps-design-system-link/react.js'
 import Note from '@pluralsight/ps-design-system-note/react.js'
