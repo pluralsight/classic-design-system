@@ -1,5 +1,5 @@
 import Checkbox from '@pluralsight/ps-design-system-checkbox/react.js'
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
 

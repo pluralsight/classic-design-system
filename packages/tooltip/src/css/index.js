@@ -1,4 +1,4 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import { transparentize } from '@pluralsight/ps-design-system-util/color'
 
 import * as vars from '../vars/index.js'
@@ -100,9 +100,7 @@ export default {
     bottom: `calc(${diamondHeight} * -1)`,
     left: `calc(${tailDimension} - ${shadowBlurWidth})`
   },
-  [`.psds-tooltip__tail--tailPosition-${
-    vars.tailPositions.bottomLeft
-  }:after`]: {
+  [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.bottomLeft}:after`]: {
     transform: tailTransformBottom,
     boxShadow
   },
@@ -111,9 +109,7 @@ export default {
     left: '50%',
     transform: 'translateX(-50%)'
   },
-  [`.psds-tooltip__tail--tailPosition-${
-    vars.tailPositions.bottomCenter
-  }:after`]: {
+  [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.bottomCenter}:after`]: {
     transform: tailTransformBottom,
     boxShadow
   },
@@ -121,17 +117,13 @@ export default {
     bottom: `calc(${diamondHeight} * -1)`,
     right: `calc(${tailDimension} - ${shadowBlurWidth})`
   },
-  [`.psds-tooltip__tail--tailPosition-${
-    vars.tailPositions.bottomRight
-  }:after`]: {
+  [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.bottomRight}:after`]: {
     transform: tailTransformBottom,
     boxShadow
   },
   // --closeable
   [`.psds-tooltip--closeable`]: {
-    padding: `${core.layout.spacingMedium} calc(${
-      core.layout.spacingMedium
-    } * 2) ${core.layout.spacingMedium} ${core.layout.spacingLarge}`
+    padding: `${core.layout.spacingMedium} calc(${core.layout.spacingMedium} * 2) ${core.layout.spacingMedium} ${core.layout.spacingLarge}`
   },
   // __close
   [`.psds-tooltip__close`]: {

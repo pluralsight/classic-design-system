@@ -1,4 +1,4 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import { transparentize } from '@pluralsight/ps-design-system-util/color.js'
 
 import * as vars from '../vars/index.js'

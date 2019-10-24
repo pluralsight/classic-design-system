@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import Link from '@pluralsight/ps-design-system-link/react'
 
 import { AsideLayout, EqualColumnLayout, PageHeadingLayout } from '../index.js'

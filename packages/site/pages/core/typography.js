@@ -1,7 +1,7 @@
 /* eslint-disable no-useless-escape */
 
 import React from 'react'
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import { Code as DSCode } from '@pluralsight/ps-design-system-text/react.js'
 
 import {

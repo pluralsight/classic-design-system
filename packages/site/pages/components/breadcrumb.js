@@ -1,4 +1,4 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb/react.js'
 import { PageHeadingLayout } from '@pluralsight/ps-design-system-layout/react.js'
 import React from 'react'
