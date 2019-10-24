@@ -1,5 +1,5 @@
 import * as core from '@pluralsight/ps-design-system-core'
-import { transparentize } from '@pluralsight/ps-design-system-util/color'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import {
   defaultName as themeDefaultName,

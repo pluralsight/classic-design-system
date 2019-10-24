@@ -14,7 +14,7 @@ import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
 import TextArea from '@pluralsight/ps-design-system-textarea/react.js'
 import Radio from '@pluralsight/ps-design-system-radio/react.js'
 import React from 'react'
-import { string as stringUtil } from '@pluralsight/ps-design-system-util'
+import { capitalize } from '@pluralsight/ps-design-system-util'
 import Switch from '@pluralsight/ps-design-system-switch/react.js'
 
 import {
@@ -319,7 +319,7 @@ class InAppExample extends React.Component {
                           name="level"
                           onClick={_ => this.setState({ level })}
                         >
-                          {stringUtil.capitalize(level)}
+                          {capitalize(level)}
                         </ActionMenu.Item>
                       ))}
                     </ActionMenu>

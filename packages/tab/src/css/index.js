@@ -3,7 +3,7 @@ import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme/vars'
-import { transparentize } from '@pluralsight/ps-design-system-util/color'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 
 const listItemTextLightHover = {
   color: core.colors.gray06

@@ -3,7 +3,7 @@ import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme/react'
-import { transparentize } from '@pluralsight/ps-design-system-util/color'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars/index.js'
 
