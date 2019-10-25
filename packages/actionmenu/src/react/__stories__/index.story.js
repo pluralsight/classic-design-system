@@ -5,10 +5,7 @@ import { action } from '@storybook/addon-actions'
 
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
-import {
-  BelowLeft,
-  BelowRight
-} from '@pluralsight/ps-design-system-position/react.js'
+import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
 
 import ActionMenu from '../index.js'
 

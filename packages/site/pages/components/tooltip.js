@@ -1,4 +1,4 @@
-import { Below } from '@pluralsight/ps-design-system-position/react.js'
+import { Below } from '@pluralsight/ps-design-system-position'
 import Button from '@pluralsight/ps-design-system-button'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
@@ -123,7 +123,7 @@ function InAppExample() {
         collapsible
         lang="javascript"
       >{`import Button from '@pluralsight/ps-design-system-button'
-import { Below } from '@pluralsight/ps-design-system-position/react'
+import { Below } from '@pluralsight/ps-design-system-position'
 import Tooltip from '@pluralsight/ps-design-system-tooltip/react'
 
 function HoverExampleOnly() {

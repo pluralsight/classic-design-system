@@ -1,4 +1,4 @@
-import { Above } from '@pluralsight/ps-design-system-position/react.js'
+import { Above } from '@pluralsight/ps-design-system-position'
 import core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button'
 import React from 'react'

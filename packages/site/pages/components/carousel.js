@@ -2,7 +2,7 @@ import React from 'react'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
 import Avatar from '@pluralsight/ps-design-system-avatar'
-import { BelowRight } from '@pluralsight/ps-design-system-position/react.js'
+import { BelowRight } from '@pluralsight/ps-design-system-position'
 import Card from '@pluralsight/ps-design-system-card/react.js'
 import Carousel from '@pluralsight/ps-design-system-carousel/react.js'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'

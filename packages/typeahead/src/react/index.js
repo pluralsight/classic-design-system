@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
-import { BelowLeft } from '@pluralsight/ps-design-system-position/react.js'
+import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
 
