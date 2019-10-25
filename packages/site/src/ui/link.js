@@ -1,4 +1,4 @@
-import DSLink from '@pluralsight/ps-design-system-link/react.js'
+import DSLink from '@pluralsight/ps-design-system-link'
 import NextLink from 'next/link.js'
 import PropTypes from 'prop-types'
 import React from 'react'

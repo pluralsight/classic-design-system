@@ -2,7 +2,7 @@ import React from 'react'
 
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
-import Link from '@pluralsight/ps-design-system-link/react.js'
+import Link from '@pluralsight/ps-design-system-link'
 import Note from '@pluralsight/ps-design-system-note/react.js'
 import Text from '@pluralsight/ps-design-system-text/react.js'
 

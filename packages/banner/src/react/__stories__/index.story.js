@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 import React from 'react'
 
-import Link from '@pluralsight/ps-design-system-link/react.js'
+import Link from '@pluralsight/ps-design-system-link'
 
 import Banner from '../index.js'
 
