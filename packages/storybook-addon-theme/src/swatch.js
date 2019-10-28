@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import core from '@pluralsight/ps-design-system-core'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 const styles = {
   container: props =>

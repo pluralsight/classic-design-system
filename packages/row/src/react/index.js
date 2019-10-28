@@ -4,8 +4,10 @@ import React, { useState } from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+import {
+  withTheme,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme'
 
 import css from '../css/index.js'
 import { toPercentageString } from '../js/index.js'

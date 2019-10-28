@@ -2,7 +2,7 @@ import Button from '@pluralsight/ps-design-system-button'
 import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import Text from '@pluralsight/ps-design-system-text/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
@@ -70,7 +70,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Theme from '@pluralsight/ps-design-system-theme/react'
+        import Theme from '@pluralsight/ps-design-system-theme'
       </Code>
 
       <PropTypes

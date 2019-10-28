@@ -3,7 +3,7 @@ import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb/react.js'
 import { PageHeadingLayout } from '@pluralsight/ps-design-system-layout/react.js'
 import React from 'react'
 import Tab from '@pluralsight/ps-design-system-tab/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
 import { transparentize } from '@pluralsight/ps-design-system-util/color.js'
 
 import {

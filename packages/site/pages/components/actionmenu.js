@@ -6,7 +6,7 @@ import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,

@@ -4,7 +4,7 @@ import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index.js'
 

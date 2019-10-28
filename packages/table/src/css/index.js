@@ -2,7 +2,7 @@ import core from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
-} from '@pluralsight/ps-design-system-theme/react'
+} from '@pluralsight/ps-design-system-theme'
 import { vars as drawerVars } from '@pluralsight/ps-design-system-drawer'
 
 import * as vars from '../vars'
@@ -46,9 +46,7 @@ export default {
     flex: 1,
     display: 'flex',
     alignItems: 'center',
-    padding: `${core.layout.spacingSmall} calc(${
-      core.layout.spacingMedium
-    } / 2)`,
+    padding: `${core.layout.spacingSmall} calc(${core.layout.spacingMedium} / 2)`,
     overflow: 'hidden',
 
     '&:first-of-type': { paddingLeft: 0 },
@@ -100,9 +98,7 @@ export default {
     display: 'flex',
     flex: 1,
     alignItems: 'flex-end',
-    padding: `${core.layout.spacingSmall} calc(${
-      core.layout.spacingMedium
-    } / 2)`,
+    padding: `${core.layout.spacingSmall} calc(${core.layout.spacingMedium} / 2)`,
     fontSize: core.type.fontSizeXSmall,
     lineHeight: '16px',
     textTransform: 'uppercase',
@@ -150,8 +146,6 @@ export default {
   '.psds-table__column-header__icon': {
     position: 'relative',
     flexShrink: '0',
-    bottom: `calc(-1 * (${core.layout.spacingSmall} - ${
-      core.layout.spacingXSmall
-    }))`
+    bottom: `calc(-1 * (${core.layout.spacingSmall} - ${core.layout.spacingXSmall}))`
   }
 }

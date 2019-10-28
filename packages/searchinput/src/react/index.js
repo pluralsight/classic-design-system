@@ -6,9 +6,7 @@ import Button from '@pluralsight/ps-design-system-button'
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress/react.js'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
-import Theme, {
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/react.js'
+import Theme, { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 import css from '../css/index.js'
 

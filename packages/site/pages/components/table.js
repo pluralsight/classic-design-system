@@ -4,7 +4,7 @@ import Drawer from '@pluralsight/ps-design-system-drawer/react.js'
 import PT from 'prop-types'
 import React from 'react'
 import Table from '@pluralsight/ps-design-system-table/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
 
 import {

@@ -4,7 +4,7 @@ import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import ReactPropTypes from 'prop-types'
 import React from 'react'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
 import Tooltip from '@pluralsight/ps-design-system-tooltip/react.js'
 
 import {

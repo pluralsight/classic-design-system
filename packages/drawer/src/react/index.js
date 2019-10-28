@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react'
 import {
   names as themeNames,
   withTheme
-} from '@pluralsight/ps-design-system-theme/react'
+} from '@pluralsight/ps-design-system-theme'
 
 import css from '../css/index.js'
 
@@ -38,7 +38,7 @@ const styles = {
       css[`.psds-drawer__toggle-button`],
       css[`.psds-drawer__toggle-button.psds-theme--${themeName}`]
     ),
-    collapsible: () => glamor.css(css['.psds-drawer__collapsible'])
+  collapsible: () => glamor.css(css['.psds-drawer__collapsible'])
 }
 const Drawer = ({
   startOpen,
@@ -93,7 +93,9 @@ const Drawer = ({
         </div>
       </div>
       <div {...styles.panel({ themeName, open })}>
-        <Collapsible isOpen={open} {...styles.collapsible()}>{children}</Collapsible>
+        <Collapsible isOpen={open} {...styles.collapsible()}>
+          {children}
+        </Collapsible>
       </div>
     </div>
   )

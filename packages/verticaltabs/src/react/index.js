@@ -1,7 +1,7 @@
 import { css } from 'glamor'
 import React, { cloneElement, forwardRef, useState } from 'react'
 import PropTypes from 'prop-types'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Collapsible from '@pluralsight/ps-design-system-collapsible'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'

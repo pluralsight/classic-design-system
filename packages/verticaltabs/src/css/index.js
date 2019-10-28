@@ -1,7 +1,7 @@
 import {
   defaultName as themeDefaultName,
   names as themeNames
-} from '@pluralsight/ps-design-system-theme/react.js'
+} from '@pluralsight/ps-design-system-theme'
 import core from '@pluralsight/ps-design-system-core'
 
 export default {

@@ -4,7 +4,7 @@ import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/vars'
 import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme'
 
 import css from '../css/index.js'
 import * as vars from '../vars/index.js'

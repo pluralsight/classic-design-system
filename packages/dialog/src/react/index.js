@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import FocusManager from '@pluralsight/ps-design-system-focusmanager'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 

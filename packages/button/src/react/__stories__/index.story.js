@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import Icon from '@pluralsight/ps-design-system-icon/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import Button from '../index.js'
 

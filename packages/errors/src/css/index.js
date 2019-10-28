@@ -1,5 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
 
 export default {
@@ -51,9 +51,7 @@ export default {
   '.psds-error-page__search__input': {
     position: 'relative',
     height: '40px',
-    padding: `0 ${core.layout.spacingXSmall} 0 calc(${
-      core.layout.spacingXSmall
-    } + ${iconVars.widths.medium} + ${core.layout.spacingXSmall})`,
+    padding: `0 ${core.layout.spacingXSmall} 0 calc(${core.layout.spacingXSmall} + ${iconVars.widths.medium} + ${core.layout.spacingXSmall})`,
     color: core.colors.gray02,
     fontSize: core.type.fontSizeSmall,
     lineHeight: core.type.lineHeightStandard,

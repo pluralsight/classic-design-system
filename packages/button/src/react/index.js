@@ -5,7 +5,7 @@ import Icon, {
 } from '@pluralsight/ps-design-system-icon/react.js'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'

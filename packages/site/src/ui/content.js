@@ -1,7 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import PropTypes from 'prop-types'
 import React from 'react'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 class Headings {
   constructor() {

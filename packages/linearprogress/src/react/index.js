@@ -2,7 +2,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme'
 
 import css from '../css/index.js'
 import { toPercentageString } from '../js/index.js'
