@@ -2,7 +2,7 @@ import { Above } from '@pluralsight/ps-design-system-position'
 import core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button'
 import React from 'react'
-import Tooltip from '@pluralsight/ps-design-system-tooltip/react.js'
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
 
 import { Head } from '../../src/ui/index.js'
 
