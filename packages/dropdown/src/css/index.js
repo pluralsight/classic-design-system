@@ -1,5 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import * as iconVars from '@pluralsight/ps-design-system-icon/vars.js'
+import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 import * as vars from '../vars/index.js'
@@ -24,7 +24,7 @@ export default {
     lineHeight: core.type.lineHeightStandard,
     fontWeight: core.type.fontWeightMedium,
     color: core.colors.gray03,
-    padding: `0 calc(${core.layout.spacingXSmall} + ${iconVars.widths.medium} + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`,
+    padding: `0 calc(${core.layout.spacingXSmall} + ${iconWidths.medium} + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`,
     border: 'none',
     textAlign: 'left',
     cursor: 'pointer',
@@ -35,7 +35,7 @@ export default {
   },
   '.psds-dropdown__field.psds-dropdown--small': {
     height: '32px',
-    padding: `0 calc(${core.layout.spacingXSmall} + ${iconVars.widths.medium} + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingXSmall}`
+    padding: `0 calc(${core.layout.spacingXSmall} + ${iconWidths.medium} + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingXSmall}`
   },
   [`.psds-dropdown__field.psds-theme--${themeNames.light}`]: {
     background: core.colors.white,
@@ -61,7 +61,7 @@ export default {
     display: 'inline-flex',
     alignItems: 'center',
     width: '100%',
-    minWidth: `calc(${iconVars.widths.medium} + ${core.layout.spacingXSmall})`
+    minWidth: `calc(${iconWidths.medium} + ${core.layout.spacingXSmall})`
   },
   '.psds-dropdown__field-aligner': {
     display: 'inline-flex',
@@ -113,7 +113,7 @@ export default {
   // __error
   '.psds-dropdown__error': {
     position: 'absolute',
-    right: `calc(-1 * (${iconVars.widths.medium} + ${core.layout.spacingXSmall}))`,
+    right: `calc(-1 * (${iconWidths.medium} + ${core.layout.spacingXSmall}))`,
     display: 'flex',
     alignItems: 'center',
     color: core.colors.red,

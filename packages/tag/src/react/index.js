@@ -1,6 +1,6 @@
 import * as glamor from 'glamor'
 import Halo from '@pluralsight/ps-design-system-halo/react'
-import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/vars'
+import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 import PropTypes from 'prop-types'
 import React from 'react'

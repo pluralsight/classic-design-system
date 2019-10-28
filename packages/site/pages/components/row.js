@@ -1,7 +1,7 @@
 import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import Icon from '@pluralsight/ps-design-system-icon'
 import Row from '@pluralsight/ps-design-system-row/react.js'
 import Theme from '@pluralsight/ps-design-system-theme'
 

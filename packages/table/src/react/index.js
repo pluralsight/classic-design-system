@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import * as drawerVars from '@pluralsight/ps-design-system-drawer/vars'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import css from '../css'

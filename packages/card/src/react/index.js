@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Shiitake from 'shiitake'
 
-import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react.js'
+import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 

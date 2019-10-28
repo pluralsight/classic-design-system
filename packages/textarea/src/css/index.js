@@ -1,5 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
+import { widths as iconWidths } from '@pluralsight/ps-design-system-icon/vars'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 export default {
@@ -70,7 +70,7 @@ export default {
 
   '.psds-text-area__error': {
     position: 'absolute',
-    right: `calc(-1 * (${iconVars.widths.medium} + ${core.layout.spacingXSmall}))`,
+    right: `calc(-1 * (${iconWidths.medium} + ${core.layout.spacingXSmall}))`,
     display: 'flex',
     alignItems: 'flex-start',
     height: '100%',

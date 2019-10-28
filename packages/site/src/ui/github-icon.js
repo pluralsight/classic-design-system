@@ -1,4 +1,4 @@
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import Icon from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 
 export default props => (
