@@ -1,4 +1,4 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Banner from '@pluralsight/ps-design-system-banner/react.js'
 import Button from '@pluralsight/ps-design-system-button'
 import Checkbox from '@pluralsight/ps-design-system-checkbox/react.js'

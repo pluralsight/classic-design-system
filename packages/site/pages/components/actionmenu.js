@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Button from '@pluralsight/ps-design-system-button'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
@@ -106,7 +106,7 @@ function InAppExample() {
       </Theme>
 
       <Code collapsible language="javascript">
-        {`import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
+        {`import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import { BelowLeft } from '@pluralsight/ps-design-system-position/react.js'
 import Button from '@pluralsight/ps-design-system-button'
 
@@ -199,7 +199,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
+        import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
       </Code>
 
       <PropTypes
