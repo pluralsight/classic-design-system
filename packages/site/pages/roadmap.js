@@ -1,4 +1,4 @@
-import Badge from '@pluralsight/ps-design-system-badge/react.js'
+import Badge from '@pluralsight/ps-design-system-badge'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import PropTypes from 'prop-types'
