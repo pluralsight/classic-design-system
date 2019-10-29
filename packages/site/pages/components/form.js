@@ -1,5 +1,5 @@
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import Banner from '@pluralsight/ps-design-system-banner/react.js'
+import Banner from '@pluralsight/ps-design-system-banner'
 import Button from '@pluralsight/ps-design-system-button'
 import Checkbox from '@pluralsight/ps-design-system-checkbox/react.js'
 import core from '@pluralsight/ps-design-system-core'
