@@ -5,7 +5,7 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import Card from '@pluralsight/ps-design-system-card/react.js'
+import Card from '@pluralsight/ps-design-system-card'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import { BelowRight } from '@pluralsight/ps-design-system-position/react.js'
 

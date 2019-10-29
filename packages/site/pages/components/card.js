@@ -2,7 +2,7 @@ import React from 'react'
 
 import Avatar from '@pluralsight/ps-design-system-avatar/react.js'
 import Button from '@pluralsight/ps-design-system-button'
-import Card from '@pluralsight/ps-design-system-card/react.js'
+import Card from '@pluralsight/ps-design-system-card'
 import core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import * as Layout from '@pluralsight/ps-design-system-layout/react.js'
@@ -232,7 +232,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Card from '@pluralsight/ps-design-system-card/react'
+        import Card from '@pluralsight/ps-design-system-card'
       </Code>
 
       <PropTypes
