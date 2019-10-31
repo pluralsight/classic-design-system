@@ -1,4 +1,4 @@
-import LinearProgress from '@pluralsight/ps-design-system-linearprogress/react.js'
+import LinearProgress from '@pluralsight/ps-design-system-linearprogress'
 import core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
@@ -88,7 +88,7 @@ export default _ => (
       <P>Include a React component in your project:</P>
       <Code language="javascript">
         import LinearProgress from
-        '@pluralsight/ps-design-system-linearprogress/react'
+        '@pluralsight/ps-design-system-linearprogress'
       </Code>
 
       <PropTypes
