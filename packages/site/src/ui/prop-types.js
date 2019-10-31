@@ -2,7 +2,7 @@ import Badge from '@pluralsight/ps-design-system-badge/react.js'
 import core from '@pluralsight/ps-design-system-core'
 import PropTypes from 'prop-types'
 import React from 'react'
-import Table from '@pluralsight/ps-design-system-table/react.js'
+import Table from '@pluralsight/ps-design-system-table'
 
 import { Heading, SectionHeading } from './index.js'
 
