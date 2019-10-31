@@ -4,7 +4,7 @@ import core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button'
 import EmptyState from '@pluralsight/ps-design-system-emptystate/react.js'
 import * as Text from '@pluralsight/ps-design-system-text'
-import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react.js'
+import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'
 
 import {
   Code,
