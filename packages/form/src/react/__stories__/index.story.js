@@ -7,7 +7,7 @@ import core from '@pluralsight/ps-design-system-core'
 // Form controls:
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
 import Button from '@pluralsight/ps-design-system-button'
-import Checkbox from '@pluralsight/ps-design-system-checkbox/react'
+import Checkbox from '@pluralsight/ps-design-system-checkbox'
 import DatePicker from '@pluralsight/ps-design-system-datepicker/react'
 import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
 import Radio from '@pluralsight/ps-design-system-radio/react'
