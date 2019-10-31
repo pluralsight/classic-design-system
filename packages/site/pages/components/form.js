@@ -15,7 +15,7 @@ import TextArea from '@pluralsight/ps-design-system-textarea/react.js'
 import Radio from '@pluralsight/ps-design-system-radio'
 import React from 'react'
 import { string as stringUtil } from '@pluralsight/ps-design-system-util'
-import Switch from '@pluralsight/ps-design-system-switch/react.js'
+import Switch from '@pluralsight/ps-design-system-switch'
 
 import {
   Chrome,
