@@ -1,6 +1,6 @@
 import * as glamor from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import Halo from '@pluralsight/ps-design-system-halo/react.js'
+import Halo from '@pluralsight/ps-design-system-halo'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import PropTypes from 'prop-types'
 import React from 'react'
