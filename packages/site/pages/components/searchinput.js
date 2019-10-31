@@ -1,7 +1,7 @@
 import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
-import SearchInput from '@pluralsight/ps-design-system-searchinput/react.js'
+import SearchInput from '@pluralsight/ps-design-system-searchinput'
 import Text from '@pluralsight/ps-design-system-text/react.js'
 import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
@@ -29,8 +29,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import SearchInput from
-        '@pluralsight/ps-design-system-searchinput/react'
+        import SearchInput from '@pluralsight/ps-design-system-searchinput'
       </Code>
 
       <PropTypes
