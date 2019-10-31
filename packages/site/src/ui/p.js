@@ -1,5 +1,5 @@
 import core from '@pluralsight/ps-design-system-core'
-import { P } from '@pluralsight/ps-design-system-text/react.js'
+import { P } from '@pluralsight/ps-design-system-text'
 import PropTypes from 'prop-types'
 import React from 'react'
 

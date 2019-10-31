@@ -1,6 +1,6 @@
 import React from 'react'
 import Badge from '@pluralsight/ps-design-system-badge/react.js'
-import Text from '@pluralsight/ps-design-system-text/react.js'
+import * as Text from '@pluralsight/ps-design-system-text'
 
 import {
   Chrome,

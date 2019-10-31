@@ -1,6 +1,6 @@
 import React from 'react'
 
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import * as Text from '@pluralsight/ps-design-system-text'
 import StarRating from '@pluralsight/ps-design-system-starrating'
 
 import {

@@ -13,7 +13,7 @@ import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
 import Radio from '@pluralsight/ps-design-system-radio/react'
 import Switch from '@pluralsight/ps-design-system-switch/react'
 import Tag from '@pluralsight/ps-design-system-tag/react'
-import Text from '@pluralsight/ps-design-system-text/react'
+import * as Text from '@pluralsight/ps-design-system-text'
 import TextArea from '@pluralsight/ps-design-system-textarea/react'
 import TextInput from '@pluralsight/ps-design-system-textinput/react'
 

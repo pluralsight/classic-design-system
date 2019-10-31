@@ -7,7 +7,7 @@ import { action } from '@storybook/addon-actions'
 import Button from '@pluralsight/ps-design-system-button'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import Row from '@pluralsight/ps-design-system-row'
-import Text from '@pluralsight/ps-design-system-text/react'
+import * as Text from '@pluralsight/ps-design-system-text'
 
 import Drawer from '../index.js'
 

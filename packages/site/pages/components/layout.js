@@ -8,7 +8,7 @@ import Badge from '@pluralsight/ps-design-system-badge/react.js'
 import Button from '@pluralsight/ps-design-system-button'
 import React from 'react'
 import ReactPropTypes from 'prop-types'
-import Text from '@pluralsight/ps-design-system-text/react.js'
+import * as Text from '@pluralsight/ps-design-system-text'
 import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {

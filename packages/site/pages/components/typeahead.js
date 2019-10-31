@@ -1,7 +1,7 @@
 import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import * as Text from '@pluralsight/ps-design-system-text'
 import Theme from '@pluralsight/ps-design-system-theme/react.js'
 import Typeahead from '@pluralsight/ps-design-system-typeahead/react.js'
 

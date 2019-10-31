@@ -1,6 +1,6 @@
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import React from 'react'
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import * as Text from '@pluralsight/ps-design-system-text'
 import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
 import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
