@@ -2,7 +2,7 @@ import React from 'react'
 
 import core from '@pluralsight/ps-design-system-core'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
-import Dropdown from '@pluralsight/ps-design-system-dropdown/react.js'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
 import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
@@ -116,7 +116,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
+        import Dropdown from '@pluralsight/ps-design-system-dropdown'
       </Code>
       <PropTypes
         props={[
