@@ -3,7 +3,7 @@ import Text from '@pluralsight/ps-design-system-text/react.js'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { PageHeadingLayout as stylesheet } from '../css/index.js'
+import { pageHeadingLayoutCSS as stylesheet } from '../css/index.js'
 
 const styles = {
   actions: _ =>

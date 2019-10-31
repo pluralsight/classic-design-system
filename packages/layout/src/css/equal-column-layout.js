@@ -1,6 +1,6 @@
 import core from '@pluralsight/ps-design-system-core'
 
-import { EqualColumnLayout as vars } from '../vars/index.js'
+import { equalColumnLayout as vars } from '../vars/index.js'
 
 export default {
   '.psds-equal-column-layout': {
