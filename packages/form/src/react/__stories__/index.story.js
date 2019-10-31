@@ -15,7 +15,7 @@ import Switch from '@pluralsight/ps-design-system-switch/react'
 import Tag from '@pluralsight/ps-design-system-tag'
 import Text from '@pluralsight/ps-design-system-text/react'
 import TextArea from '@pluralsight/ps-design-system-textarea'
-import TextInput from '@pluralsight/ps-design-system-textinput/react'
+import TextInput from '@pluralsight/ps-design-system-textinput'
 
 import Form from '../index.js'
 

@@ -1,4 +1,1 @@
-export {
-  appearances,
-  sizes
-} from '@pluralsight/ps-design-system-textinput/vars.js'
+export { appearances, sizes } from '@pluralsight/ps-design-system-textinput'

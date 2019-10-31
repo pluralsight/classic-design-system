@@ -5,7 +5,7 @@ import React from 'react'
 import Button from '@pluralsight/ps-design-system-button'
 import Icon from '@pluralsight/ps-design-system-icon/react'
 import Tag from '@pluralsight/ps-design-system-tag'
-import TextInput from '@pluralsight/ps-design-system-textinput/react'
+import TextInput from '@pluralsight/ps-design-system-textinput'
 
 import EmptyState from '..'
 

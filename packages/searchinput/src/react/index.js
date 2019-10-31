@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import Button from '@pluralsight/ps-design-system-button'
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress/react.js'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
-import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
+import TextInput from '@pluralsight/ps-design-system-textinput'
 import Theme, {
   names as themeNames
 } from '@pluralsight/ps-design-system-theme/react.js'

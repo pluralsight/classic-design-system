@@ -1,7 +1,7 @@
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
-import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
+import TextInput from '@pluralsight/ps-design-system-textinput'
 import Theme from '@pluralsight/ps-design-system-theme/react.js'
 
 import {
@@ -28,7 +28,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import TextInput from '@pluralsight/ps-design-system-textinput/react'
+        import TextInput from '@pluralsight/ps-design-system-textinput'
       </Code>
 
       <PropTypes
