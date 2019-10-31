@@ -14,7 +14,7 @@ import Radio from '@pluralsight/ps-design-system-radio/react'
 import Switch from '@pluralsight/ps-design-system-switch/react'
 import Tag from '@pluralsight/ps-design-system-tag'
 import Text from '@pluralsight/ps-design-system-text/react'
-import TextArea from '@pluralsight/ps-design-system-textarea/react'
+import TextArea from '@pluralsight/ps-design-system-textarea'
 import TextInput from '@pluralsight/ps-design-system-textinput/react'
 
 import Form from '../index.js'
