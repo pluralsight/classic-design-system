@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/react'
 import * as glamor from 'glamor'
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 
 import List from '../list/index.js'
 import Code from '../code.js'

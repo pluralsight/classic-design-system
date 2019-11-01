@@ -1,11 +1,11 @@
-import Avatar from '@pluralsight/ps-design-system-avatar/react.js'
-import core from '@pluralsight/ps-design-system-core'
-import Drawer from '@pluralsight/ps-design-system-drawer/react.js'
+import Avatar from '@pluralsight/ps-design-system-avatar'
+import * as core from '@pluralsight/ps-design-system-core'
+import Drawer from '@pluralsight/ps-design-system-drawer'
 import PT from 'prop-types'
 import React from 'react'
 import Table from '@pluralsight/ps-design-system-table'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
+import * as Text from '@pluralsight/ps-design-system-text'
 
 import {
   Chrome,

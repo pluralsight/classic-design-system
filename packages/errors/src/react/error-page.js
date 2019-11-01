@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
-import * as textVars from '@pluralsight/ps-design-system-text/vars'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+import { headingSizes } from '@pluralsight/ps-design-system-text'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import css from '../css/index.js'
 
@@ -73,12 +73,12 @@ const ErrorPage = props => {
         <div {...styles.icon(allProps)}>{icons[allProps.iconId]()}</div>
       )}
       <div {...styles.text(allProps)}>
-        <Heading size={textVars.headingSizes.medium}>
+        <Heading size={headingSizes.medium}>
           <h1>{allProps.text}</h1>
         </Heading>
       </div>
       <div {...styles.code(allProps)}>
-        <Heading size={textVars.headingSizes.smallCaps}>
+        <Heading size={headingSizes.smallCaps}>
           <h2>Error code: {allProps.code}</h2>
         </Heading>
       </div>

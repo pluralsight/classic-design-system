@@ -2,7 +2,7 @@ import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import stylesheet from '../../css/index.js'

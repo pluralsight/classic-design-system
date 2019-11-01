@@ -1,5 +1,5 @@
 import { action } from '@storybook/addon-actions'
-import Form from '@pluralsight/ps-design-system-form/react.js'
+import Form from '@pluralsight/ps-design-system-form'
 import { storiesOf } from '@storybook/react'
 
 import React from 'react'

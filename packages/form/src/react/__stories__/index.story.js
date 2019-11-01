@@ -2,10 +2,10 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 
 // Form controls:
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Button from '@pluralsight/ps-design-system-button'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
 import DatePicker from '@pluralsight/ps-design-system-datepicker'
@@ -13,7 +13,7 @@ import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import Radio from '@pluralsight/ps-design-system-radio'
 import Switch from '@pluralsight/ps-design-system-switch'
 import Tag from '@pluralsight/ps-design-system-tag/react'
-import Text from '@pluralsight/ps-design-system-text/react'
+import * as Text from '@pluralsight/ps-design-system-text'
 import TextArea from '@pluralsight/ps-design-system-textarea/react'
 import TextInput from '@pluralsight/ps-design-system-textinput/react'
 

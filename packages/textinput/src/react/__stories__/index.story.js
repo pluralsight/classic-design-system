@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react'
 
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import * as core from '@pluralsight/ps-design-system-core'
+import Icon from '@pluralsight/ps-design-system-icon'
 
 import TextInput from '../index.js'
 

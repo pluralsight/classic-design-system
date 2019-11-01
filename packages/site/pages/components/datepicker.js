@@ -1,7 +1,7 @@
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import * as Text from '@pluralsight/ps-design-system-text'
 import DatePicker from '@pluralsight/ps-design-system-datepicker'
 import React from 'react'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,

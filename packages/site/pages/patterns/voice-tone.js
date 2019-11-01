@@ -1,8 +1,8 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
 import PropTypes from 'prop-types'
 import React from 'react'
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import * as Text from '@pluralsight/ps-design-system-text'
 import Button from '@pluralsight/ps-design-system-button'
 
 import {

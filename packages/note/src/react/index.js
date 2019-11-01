@@ -2,9 +2,9 @@ import * as glamor from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Avatar from '@pluralsight/ps-design-system-avatar/react.js'
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
+import Avatar from '@pluralsight/ps-design-system-avatar'
+import Icon from '@pluralsight/ps-design-system-icon'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   arrayOfMaxLength,
   elementOfType

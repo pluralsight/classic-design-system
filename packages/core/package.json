@@ -6,10 +6,12 @@
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
-  "main": "js/index.js",
+  "main": "dist/index.js",
   "module": "js/index.js",
   "scripts": {
-    "build": "node ./build",
+    "build": "run-s build:js build:css",
+    "build:css": "node ./build",
+    "build:js": "babel --root-mode upward js --out-dir dist",
     "prepublish": "npm run build"
   },
   "style": "css/index.css",

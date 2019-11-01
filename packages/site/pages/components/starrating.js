@@ -1,7 +1,7 @@
 import React from 'react'
 
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
-import StarRating from '@pluralsight/ps-design-system-starrating/react.js'
+import * as Text from '@pluralsight/ps-design-system-text'
+import StarRating from '@pluralsight/ps-design-system-starrating'
 
 import {
   Chrome,
@@ -26,7 +26,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import StarRating from '@pluralsight/ps-design-system-starrating/react'
+        import StarRating from '@pluralsight/ps-design-system-starrating'
       </Code>
 
       <PropTypes

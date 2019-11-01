@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   screenReaderOnly: {
     position: 'absolute',
     top: 'auto',

@@ -2,8 +2,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { withRouter } from 'next/router.js'
 
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import * as core from '@pluralsight/ps-design-system-core'
+import Icon from '@pluralsight/ps-design-system-icon'
 
 import { withHeadings } from './content.js'
 import Link from './link.js'

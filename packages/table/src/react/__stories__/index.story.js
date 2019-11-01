@@ -3,8 +3,8 @@ import React from 'react'
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 
-import Drawer from '@pluralsight/ps-design-system-drawer/react'
-import Link from '@pluralsight/ps-design-system-link/react'
+import Drawer from '@pluralsight/ps-design-system-drawer'
+import Link from '@pluralsight/ps-design-system-link'
 
 import Table from '..'
 
