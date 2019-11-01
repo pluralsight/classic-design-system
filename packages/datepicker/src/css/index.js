@@ -1,7 +1,7 @@
-import core from '@pluralsight/ps-design-system-core'
-import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
-import { transparentize } from '@pluralsight/ps-design-system-util/color'
+import * as core from '@pluralsight/ps-design-system-core'
+import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars/index.js'
 
@@ -55,8 +55,8 @@ export default {
     alignItems: 'center',
     width: '100%',
     height: '40px',
-    minWidth: `calc(192px + ${iconVars.widths.medium} + ${core.layout.spacingXSmall})`,
-    padding: `0 calc(${core.layout.spacingXSmall} + ${iconVars.widths.medium} + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`,
+    minWidth: `calc(192px + ${iconWidths.medium} + ${core.layout.spacingXSmall})`,
+    padding: `0 calc(${core.layout.spacingXSmall} + ${iconWidths.medium} + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`,
     background: core.colors.bone
   },
   [`.psds-date-picker__field-container.psds-theme--${themeNames.light}`]: {
@@ -117,7 +117,7 @@ export default {
   // __error
   '.psds-date-picker__error': {
     position: 'absolute',
-    right: `calc(-1 * (${iconVars.widths.medium} + ${core.layout.spacingXSmall}))`,
+    right: `calc(-1 * (${iconWidths.medium} + ${core.layout.spacingXSmall}))`,
     display: 'flex',
     alignItems: 'center',
     color: core.colors.red,

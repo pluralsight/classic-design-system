@@ -1,7 +1,7 @@
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import * as core from '@pluralsight/ps-design-system-core'
+import Icon from '@pluralsight/ps-design-system-icon'
 import Text from '@pluralsight/ps-design-system-text/react.js'
 
 import {
@@ -70,7 +70,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Icon from '@pluralsight/ps-design-system-icon/react'
+        import Icon from '@pluralsight/ps-design-system-icon'
       </Code>
 
       <PropTypes

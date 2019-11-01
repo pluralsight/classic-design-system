@@ -1,10 +1,10 @@
 import * as glamor from 'glamor'
 import Halo from '@pluralsight/ps-design-system-halo/react'
-import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/vars'
-import * as propsUtil from '@pluralsight/ps-design-system-util/props'
+import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
+import { whitelistProps } from '@pluralsight/ps-design-system-util'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme'
 
 import css from '../css/index.js'
 import * as vars from '../vars/index.js'
@@ -63,7 +63,7 @@ const Tag = withTheme((props, context) => {
         tagName,
         {
           ...styles.tag(props),
-          ...propsUtil.whitelistProps(props, tagHtmlPropsWhitelist),
+          ...whitelistProps(props, tagHtmlPropsWhitelist),
           ...(props.target ? { target: props.target } : null),
           ...(props.isPressed ? { 'aria-pressed': true } : null),
           ...(props.onClick ? { role: 'button', tabIndex: 0 } : null)

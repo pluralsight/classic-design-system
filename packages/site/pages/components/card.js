@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Avatar from '@pluralsight/ps-design-system-avatar/react.js'
+import Avatar from '@pluralsight/ps-design-system-avatar'
 import Button from '@pluralsight/ps-design-system-button'
 import Card from '@pluralsight/ps-design-system-card'
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import * as core from '@pluralsight/ps-design-system-core'
+import Icon from '@pluralsight/ps-design-system-icon'
 import * as Layout from '@pluralsight/ps-design-system-layout/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,

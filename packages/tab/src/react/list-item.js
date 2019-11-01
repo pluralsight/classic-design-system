@@ -2,7 +2,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import css from '../css/index.js'
 
@@ -15,9 +15,7 @@ const styles = {
       props.active && css[`.psds-tab__list-item.psds-tab__list-item--active`],
       props.active &&
         css[
-          `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${
-            props.themeName
-          }`
+          `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${props.themeName}`
         ]
     ),
   textInner: _ => glamor.css(css['.psds-tab__list-item__text-inner']),

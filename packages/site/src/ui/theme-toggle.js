@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import * as core from '@pluralsight/ps-design-system-core'
+import Theme from '@pluralsight/ps-design-system-theme'
 import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react.js'
-import { string as stringUtil } from '@pluralsight/ps-design-system-util'
+import { capitalize } from '@pluralsight/ps-design-system-util'
 
 function ThemeToggle(props) {
   return (
@@ -25,7 +25,7 @@ function ThemeToggle(props) {
               key={themeName}
               active={themeName === props.activeThemeName}
             >
-              {stringUtil.capitalize(themeName)}
+              {capitalize(themeName)}
             </ViewToggle.Option>
           ))}
         </ViewToggle>

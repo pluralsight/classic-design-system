@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   speedXFast: '100ms',
   speedFast: '200ms',
   speedNormal: '300ms',

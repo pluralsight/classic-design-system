@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import css from '../css/index.js'
 import * as vars from '../vars/index.js'

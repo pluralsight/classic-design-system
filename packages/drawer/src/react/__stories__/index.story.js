@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
 import Button from '@pluralsight/ps-design-system-button'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon'
 import Row from '@pluralsight/ps-design-system-row/react'
 import Text from '@pluralsight/ps-design-system-text/react'
 

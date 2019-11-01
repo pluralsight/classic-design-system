@@ -1,8 +1,8 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button'
 import Dialog from '@pluralsight/ps-design-system-dialog'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
-import { transparentize } from '@pluralsight/ps-design-system-util/color.js'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 import {
