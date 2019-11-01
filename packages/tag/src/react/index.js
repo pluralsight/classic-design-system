@@ -1,10 +1,10 @@
 import * as glamor from 'glamor'
 import Halo from '@pluralsight/ps-design-system-halo/react'
-import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/vars'
+import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import { whitelistProps } from '@pluralsight/ps-design-system-util'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import { withTheme } from '@pluralsight/ps-design-system-theme'
 
 import css from '../css/index.js'
 import * as vars from '../vars/index.js'

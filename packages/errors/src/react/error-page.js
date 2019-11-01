@@ -4,7 +4,7 @@ import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
 import * as textVars from '@pluralsight/ps-design-system-text/vars'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import css from '../css/index.js'
 

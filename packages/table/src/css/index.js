@@ -2,7 +2,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
-} from '@pluralsight/ps-design-system-theme/react'
+} from '@pluralsight/ps-design-system-theme'
 import { vars as drawerVars } from '@pluralsight/ps-design-system-drawer'
 
 import * as vars from '../vars'

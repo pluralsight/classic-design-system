@@ -1,6 +1,6 @@
 import * as core from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
-import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme'
+import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
 
 export default {
   '.psds-error-page': {
@@ -44,14 +44,14 @@ export default {
   '.psds-error-page__search__icon': {
     position: 'absolute',
     left: core.layout.spacingXSmall,
-    width: iconVars.widths.medium,
-    height: iconVars.widths.medium,
+    width: iconWidths.medium,
+    height: iconWidths.medium,
     fill: core.colors.gray02
   },
   '.psds-error-page__search__input': {
     position: 'relative',
     height: '40px',
-    padding: `0 ${core.layout.spacingXSmall} 0 calc(${core.layout.spacingXSmall} + ${iconVars.widths.medium} + ${core.layout.spacingXSmall})`,
+    padding: `0 ${core.layout.spacingXSmall} 0 calc(${core.layout.spacingXSmall} + ${iconWidths.medium} + ${core.layout.spacingXSmall})`,
     color: core.colors.gray02,
     fontSize: core.type.fontSizeSmall,
     lineHeight: core.type.lineHeightStandard,

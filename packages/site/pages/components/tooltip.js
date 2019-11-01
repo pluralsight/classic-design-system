@@ -1,11 +1,11 @@
-import { Below } from '@pluralsight/ps-design-system-position/react.js'
+import { Below } from '@pluralsight/ps-design-system-position'
 import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import Icon from '@pluralsight/ps-design-system-icon'
 import ReactPropTypes from 'prop-types'
 import React from 'react'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
-import Tooltip from '@pluralsight/ps-design-system-tooltip/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
 
 import {
   Chrome,
@@ -123,8 +123,8 @@ function InAppExample() {
         collapsible
         lang="javascript"
       >{`import Button from '@pluralsight/ps-design-system-button'
-import { Below } from '@pluralsight/ps-design-system-position/react'
-import Tooltip from '@pluralsight/ps-design-system-tooltip/react'
+import { Below } from '@pluralsight/ps-design-system-position'
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
 
 function HoverExampleOnly() {
   const [isHovered, setHovered] = React.useState(false)
@@ -191,7 +191,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Tooltip from '@pluralsight/ps-design-system-tooltip/react'
+        import Tooltip from '@pluralsight/ps-design-system-tooltip'
       </Code>
 
       <PropTypes

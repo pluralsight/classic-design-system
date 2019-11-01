@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import * as core from '@pluralsight/ps-design-system-core'
-import { names } from '@pluralsight/ps-design-system-theme/react'
+import { names } from '@pluralsight/ps-design-system-theme'
 
 import { EVENTS } from './constants.js'
 import Swatch from './swatch.js'

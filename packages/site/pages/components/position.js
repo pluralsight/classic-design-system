@@ -3,11 +3,10 @@ import React from 'react'
 import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
-import Tooltip from '@pluralsight/ps-design-system-tooltip/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
 
-import * as fns from '@pluralsight/ps-design-system-position/js.js'
-import * as components from '@pluralsight/ps-design-system-position/react.js'
+import { rightOf, Below } from '@pluralsight/ps-design-system-position'
 
 import {
   Chrome,
@@ -19,9 +18,6 @@ import {
   PropTypes,
   SectionHeading
 } from '../../src/ui/index.js'
-
-const { rightOf } = fns
-const { Below } = components
 
 export default _ => (
   <Chrome>
@@ -45,7 +41,7 @@ export default _ => (
   Below,
   LeftOf,
   RightOf
-} from '@pluralsight/ps-design-system-position/react'`}</Code>
+} from '@pluralsight/ps-design-system-position'`}</Code>
 
       <PropTypes
         props={[
@@ -169,7 +165,7 @@ export default _ => (
   below,
   leftOf,
   rightOf
-} from '@pluralsight/ps-design-system-position/js'`}</Code>
+} from '@pluralsight/ps-design-system-position'`}</Code>
 
       <P>Use the JavaScript function to get the positioning style desired.</P>
       <JsExample />
@@ -230,10 +226,9 @@ function JsExample() {
         collapsible
         lang="javascript"
       >{`import Button from '@pluralsight/ps-design-system-button'
-import { below } from '@pluralsight/ps-design-system-position/js'
-import Tooltip from '@pluralsight/ps-design-system-position/react'
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
 
-import { rightOf } from '@pluralsight/ps-design-system-position/js'
+import { rightOf } from '@pluralsight/ps-design-system-position'
 
 function Example(){
   const button = React.useRef()
@@ -330,8 +325,8 @@ function ReactExample() {
         collapsible
         lang="javascript"
       >{`import Button from '@pluralsight/ps-design-system-button'
-import { Below } from '@pluralsight/ps-design-system-position/react'
-import Tooltip from '@pluralsight/ps-design-system-position/react'
+import { Below } from '@pluralsight/ps-design-system-position'
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
 
 function HoverExampleOnly() {
   const [isHovered, setHovered] = React.useState(false)

@@ -1,11 +1,11 @@
 import React from 'react'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
-import Avatar from '@pluralsight/ps-design-system-avatar/react.js'
-import { BelowRight } from '@pluralsight/ps-design-system-position/react.js'
+import Avatar from '@pluralsight/ps-design-system-avatar'
+import { BelowRight } from '@pluralsight/ps-design-system-position'
 import Card from '@pluralsight/ps-design-system-card/react.js'
 import Carousel from '@pluralsight/ps-design-system-carousel/react.js'
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import Icon from '@pluralsight/ps-design-system-icon'
 import Note from '@pluralsight/ps-design-system-note/react.js'
 import Text from '@pluralsight/ps-design-system-text/react.js'
 

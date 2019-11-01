@@ -100,7 +100,7 @@ Collapsible.displayName = 'Collapsible'
 
 Collapsible.propTypes = {
   isOpen: PropTypes.bool,
-  tagName: PropTypes.string,
+  tagName: PropTypes.string
 }
 Collapsible.defaultProps = {
   isOpen: false

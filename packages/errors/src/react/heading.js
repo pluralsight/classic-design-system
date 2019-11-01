@@ -1,5 +1,5 @@
 import textCss from '@pluralsight/ps-design-system-text/css'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'

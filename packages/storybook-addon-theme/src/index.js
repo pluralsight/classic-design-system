@@ -6,7 +6,7 @@ import addons, { makeDecorator } from '@storybook/addons'
 import { STORY_CHANGED } from '@storybook/core-events'
 
 import * as core from '@pluralsight/ps-design-system-core'
-import Theme, { names } from '@pluralsight/ps-design-system-theme/react'
+import Theme, { names } from '@pluralsight/ps-design-system-theme'
 
 import { EVENTS } from './constants.js'
 

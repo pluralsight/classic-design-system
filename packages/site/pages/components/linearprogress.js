@@ -2,7 +2,7 @@ import LinearProgress from '@pluralsight/ps-design-system-linearprogress/react.j
 import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,

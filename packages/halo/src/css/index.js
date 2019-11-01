@@ -1,5 +1,5 @@
 import * as core from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 export const BASE_CLASSNAME = '.psds-halo'
 

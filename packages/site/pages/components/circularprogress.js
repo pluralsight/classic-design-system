@@ -1,7 +1,7 @@
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress/react.js'
 import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
