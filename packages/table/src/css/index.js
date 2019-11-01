@@ -2,8 +2,8 @@ import * as core from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
-} from '@pluralsight/ps-design-system-theme'
-import { vars as drawerVars } from '@pluralsight/ps-design-system-drawer'
+} from '@pluralsight/ps-design-system-theme/react'
+import { toggleAreaWidth } from '@pluralsight/ps-design-system-drawer'
 
 import * as vars from '../vars'
 
@@ -16,7 +16,7 @@ export default {
   },
   '.psds-table--in-drawer': {
     paddingLeft: core.layout.spacingMedium,
-    paddingRight: drawerVars.toggleAreaWidth
+    paddingRight: toggleAreaWidth
   },
   [`.psds-table.psds-theme--${themeDefaultName}`]: {
     color: core.colors.gray02
@@ -38,7 +38,7 @@ export default {
   },
   '.psds-table__row--drawers': {
     paddingLeft: core.layout.spacingMedium,
-    paddingRight: drawerVars.toggleAreaWidth
+    paddingRight: toggleAreaWidth
   },
 
   // __cell

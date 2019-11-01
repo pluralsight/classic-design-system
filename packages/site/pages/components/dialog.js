@@ -1,6 +1,6 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button'
-import Dialog from '@pluralsight/ps-design-system-dialog/react.js'
+import Dialog from '@pluralsight/ps-design-system-dialog'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
 import { transparentize } from '@pluralsight/ps-design-system-util'
 import React from 'react'
@@ -143,7 +143,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Dialog from '@pluralsight/ps-design-system-dialog/react'
+        import Dialog from '@pluralsight/ps-design-system-dialog'
       </Code>
 
       <PropTypes

@@ -1,5 +1,5 @@
 import * as core from '@pluralsight/ps-design-system-core'
-import Drawer from '@pluralsight/ps-design-system-drawer/react.js'
+import Drawer from '@pluralsight/ps-design-system-drawer'
 import Icon from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 import Row from '@pluralsight/ps-design-system-row/react.js'
@@ -116,7 +116,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Drawer from '@pluralsight/ps-design-system-drawer/react'
+        import Drawer from '@pluralsight/ps-design-system-drawer'
       </Code>
 
       <PropTypes

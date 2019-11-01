@@ -1,4 +1,4 @@
-import CircularProgress from '@pluralsight/ps-design-system-circularprogress/react.js'
+import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
 import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import Theme from '@pluralsight/ps-design-system-theme'
@@ -88,7 +88,7 @@ export default _ => (
       <P>Include a React component in your project:</P>
       <Code language="javascript">
         import CircularProgress from
-        '@pluralsight/ps-design-system-circularprogress/react'
+        '@pluralsight/ps-design-system-circularprogress'
       </Code>
 
       <PropTypes

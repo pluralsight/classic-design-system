@@ -1,6 +1,6 @@
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import * as core from '@pluralsight/ps-design-system-core'
-import Drawer from '@pluralsight/ps-design-system-drawer/react.js'
+import Drawer from '@pluralsight/ps-design-system-drawer'
 import PT from 'prop-types'
 import React from 'react'
 import Table from '@pluralsight/ps-design-system-table/react.js'

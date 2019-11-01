@@ -2,14 +2,14 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import * as drawerVars from '@pluralsight/ps-design-system-drawer/vars'
+import { drawerDisplayName } from '@pluralsight/ps-design-system-drawer'
 import Icon from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import css from '../css'
 import * as vars from '../vars'
 
-const drawerDisplayNameRegex = new RegExp(drawerVars.drawerDisplayName)
+const drawerDisplayNameRegex = new RegExp(drawerDisplayName)
 
 const styles = {
   cell: ({ align, emphasis, themeName }) =>

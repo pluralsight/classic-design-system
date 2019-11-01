@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 import React from 'react'
 
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Icon from '@pluralsight/ps-design-system-icon'
 
 import Dropdown from '../index.js'

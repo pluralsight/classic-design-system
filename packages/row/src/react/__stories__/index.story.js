@@ -2,7 +2,7 @@ import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import Drawer from '@pluralsight/ps-design-system-drawer/react'
+import Drawer from '@pluralsight/ps-design-system-drawer'
 import Icon from '@pluralsight/ps-design-system-icon'
 
 import Row from '..'

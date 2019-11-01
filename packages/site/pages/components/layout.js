@@ -4,7 +4,7 @@ import {
   AsideLayout,
   EqualColumnLayout
 } from '@pluralsight/ps-design-system-layout/react.js'
-import Badge from '@pluralsight/ps-design-system-badge/react.js'
+import Badge from '@pluralsight/ps-design-system-badge'
 import Button from '@pluralsight/ps-design-system-button'
 import React from 'react'
 import ReactPropTypes from 'prop-types'

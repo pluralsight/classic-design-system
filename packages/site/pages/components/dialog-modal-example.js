@@ -1,6 +1,6 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button'
-import Dialog from '@pluralsight/ps-design-system-dialog/react.js'
+import Dialog from '@pluralsight/ps-design-system-dialog'
 import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
 import { transparentize } from '@pluralsight/ps-design-system-util'

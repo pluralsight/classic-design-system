@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import Icon from '@pluralsight/ps-design-system-icon'
 import Link from '@pluralsight/ps-design-system-link'
