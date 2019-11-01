@@ -1,6 +1,6 @@
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button'
 import Tooltip from '@pluralsight/ps-design-system-tooltip/react.js'
 

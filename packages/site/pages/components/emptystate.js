@@ -1,6 +1,6 @@
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button'
 import EmptyState from '@pluralsight/ps-design-system-emptystate/react.js'
 import Text from '@pluralsight/ps-design-system-text/react.js'

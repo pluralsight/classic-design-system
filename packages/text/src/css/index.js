@@ -1,9 +1,9 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme/react'
-import { transparentize } from '@pluralsight/ps-design-system-util/color'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars/index.js'
 
@@ -45,14 +45,10 @@ export default {
     lineHeight: core.type.lineHeighTight,
     fontWeight: core.type.fontWeightMedium
   },
-  [`.psds-text__heading--size-${vars.headingSizes.smallCaps}.psds-theme--${
-    themeNames.light
-  }`]: {
+  [`.psds-text__heading--size-${vars.headingSizes.smallCaps}.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03
   },
-  [`.psds-text__heading--size-${
-    vars.headingSizes.smallCaps
-  }.psds-theme--${themeDefaultName}`]: {
+  [`.psds-text__heading--size-${vars.headingSizes.smallCaps}.psds-theme--${themeDefaultName}`]: {
     color: core.colors.gray02
   },
   [`.psds-text__heading--size-${vars.headingSizes.medium}`]: {

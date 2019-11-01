@@ -1,6 +1,6 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
-import { transparentize } from '@pluralsight/ps-design-system-util/color'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars/index.js'
 
@@ -130,9 +130,7 @@ export default {
     top: 0,
     right: 0,
     width: '100%',
-    padding: `${core.layout.spacingSmall} ${core.layout.spacingSmall} 0 ${
-      core.layout.spacingSmall
-    }`,
+    padding: `${core.layout.spacingSmall} ${core.layout.spacingSmall} 0 ${core.layout.spacingSmall}`,
     background: `linear-gradient(to bottom, ${transparentize(
       0.25,
       core.colors.black

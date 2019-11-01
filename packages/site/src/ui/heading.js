@@ -1,4 +1,4 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
 import { Heading } from '@pluralsight/ps-design-system-text/react.js'
 import PropTypes from 'prop-types'

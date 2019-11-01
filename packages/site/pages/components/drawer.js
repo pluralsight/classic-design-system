@@ -1,4 +1,4 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import Drawer from '@pluralsight/ps-design-system-drawer/react.js'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import React from 'react'

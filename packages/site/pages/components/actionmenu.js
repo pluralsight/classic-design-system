@@ -2,7 +2,7 @@ import React from 'react'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
 import Button from '@pluralsight/ps-design-system-button'
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon/react.js'
 import { BelowLeft } from '@pluralsight/ps-design-system-position/react.js'
 import * as Text from '@pluralsight/ps-design-system-text/react.js'
