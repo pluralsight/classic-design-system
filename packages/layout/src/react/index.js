@@ -1,7 +1,3 @@
-import APageHeadingLayout from './page-heading-layout.js'
-import AAsideLayout from './aside-layout.js'
-import AEqualColumnLayout from './equal-column-layout.js'
-
-export const PageHeadingLayout = APageHeadingLayout
-export const AsideLayout = AAsideLayout
-export const EqualColumnLayout = AEqualColumnLayout
+export { default as PageHeadingLayout } from './page-heading-layout.js'
+export { default as AsideLayout } from './aside-layout.js'
+export { default as EqualColumnLayout } from './equal-column-layout.js'

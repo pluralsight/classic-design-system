@@ -5,7 +5,7 @@ import {
   NotFoundErrorPage,
   InternalServerErrorPage,
   ServiceUnavailableErrorPage
-} from '@pluralsight/ps-design-system-errors/react.js'
+} from '@pluralsight/ps-design-system-errors'
 
 import {
   Chrome,
@@ -42,7 +42,7 @@ export default _ => (
   NotFoundErrorPage,
   InternalServerErrorPage,
   ServiceUnavailableErrorPage
-} from '@pluralsight/ps-design-system-errors/react'`}
+} from '@pluralsight/ps-design-system-errors'`}
       </Code>
 
       <SectionHeading>Forbidden Error Page</SectionHeading>

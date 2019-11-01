@@ -1,5 +1,5 @@
 import * as Text from '@pluralsight/ps-design-system-text'
-import DatePicker from '@pluralsight/ps-design-system-datepicker/react.js'
+import DatePicker from '@pluralsight/ps-design-system-datepicker'
 import React from 'react'
 import Theme from '@pluralsight/ps-design-system-theme'
 
@@ -26,7 +26,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import DatePicker from '@pluralsight/ps-design-system-datepicker/react'
+        import DatePicker from '@pluralsight/ps-design-system-datepicker'
       </Code>
 
       <PropTypes

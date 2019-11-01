@@ -5,7 +5,7 @@ import Button from '@pluralsight/ps-design-system-button'
 import Card from '@pluralsight/ps-design-system-card'
 import * as core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon'
-import * as Layout from '@pluralsight/ps-design-system-layout/react.js'
+import * as Layout from '@pluralsight/ps-design-system-layout'
 import Theme from '@pluralsight/ps-design-system-theme'
 
 import {

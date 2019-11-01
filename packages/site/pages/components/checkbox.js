@@ -1,4 +1,4 @@
-import Checkbox from '@pluralsight/ps-design-system-checkbox/react.js'
+import Checkbox from '@pluralsight/ps-design-system-checkbox'
 import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text'
@@ -159,7 +159,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Checkbox from '@pluralsight/ps-design-system-checkbox/react'
+        import Checkbox from '@pluralsight/ps-design-system-checkbox'
       </Code>
 
       <PropTypes

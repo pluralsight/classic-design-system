@@ -3,7 +3,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import Drawer from '@pluralsight/ps-design-system-drawer'
 import PT from 'prop-types'
 import React from 'react'
-import Table from '@pluralsight/ps-design-system-table/react.js'
+import Table from '@pluralsight/ps-design-system-table'
 import Theme from '@pluralsight/ps-design-system-theme'
 import * as Text from '@pluralsight/ps-design-system-text'
 
@@ -162,7 +162,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Button from '@pluralsight/ps-design-system-table/react'
+        import Button from '@pluralsight/ps-design-system-table'
       </Code>
 
       <PropTypes

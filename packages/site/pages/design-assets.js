@@ -1,6 +1,6 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
-import Table from '@pluralsight/ps-design-system-table/react.js'
+import Table from '@pluralsight/ps-design-system-table'
 import * as Text from '@pluralsight/ps-design-system-text'
 
 import { Chrome, Content, Doc, PageHeading } from '../src/ui/index.js'

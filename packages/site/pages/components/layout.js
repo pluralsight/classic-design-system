@@ -3,7 +3,7 @@ import {
   PageHeadingLayout,
   AsideLayout,
   EqualColumnLayout
-} from '@pluralsight/ps-design-system-layout/react.js'
+} from '@pluralsight/ps-design-system-layout'
 import Badge from '@pluralsight/ps-design-system-badge'
 import Button from '@pluralsight/ps-design-system-button'
 import React from 'react'
@@ -293,7 +293,7 @@ export default _ => (
   PageHeadingLayout,
   AsideLayout,
   EqualColumnLayout
-} from '@pluralsight/ps-design-system-layout/react'`}
+} from '@pluralsight/ps-design-system-layout'`}
       </Code>
 
       <SectionHeading>Page Heading Layout</SectionHeading>

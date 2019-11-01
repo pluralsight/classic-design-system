@@ -3,8 +3,8 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { AsideLayout as vars } from '../vars/index.js'
-import { AsideLayout as css } from '../css/index.js'
+import { asideLayout as vars } from '../vars/index.js'
+import { asideLayoutCSS as css } from '../css/index.js'
 
 const styleLayout = props =>
   glamor.css(
