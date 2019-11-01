@@ -24,26 +24,27 @@ describe('DatePicker', () => {
     expect(ref.current).not.toBeNull()
   })
 
-  describe('onSelect prop', () => {
-    it('should call onSelect when onBlur is called for a valid date', () => {
-      const onSelectMock = jest.fn()
+  describe('onBlur prop', () => {
+    it('should call onBlur when onBlur is called for a valid date', () => {
+      const onBlurMock = jest.fn()
       const { getByDisplayValue } = render(
-        <DatePicker value="8/14/2001" onSelect={onSelectMock} />
+        <DatePicker value="8/14/2001" onBlur={onBlurMock} />
       )
       fireEvent.blur(getByDisplayValue('2001'))
-      expect(onSelectMock).toHaveBeenCalledTimes(1)
+      expect(onBlurMock).toHaveBeenCalledTimes(1)
+      expect(onBlurMock).toHaveBeenCalledWith('8/14/2001')
     })
 
-    it('should call onSelect when onBlur is called for an invalid date', () => {
-      const onSelectMock = jest.fn()
+    it('should call onBlur when onBlur is called for an invalid date', () => {
+      const onBlurMock = jest.fn()
       const { getByDisplayValue } = render(
-        <DatePicker value="8/14/2001" onSelect={onSelectMock} />
+        <DatePicker value="8/14/2001" onBlur={onBlurMock} />
       )
       const yearSubField = getByDisplayValue('2001')
       fireEvent.change(yearSubField, { target: { value: '' } })
       fireEvent.blur(yearSubField)
-      expect(onSelectMock).toHaveBeenCalledTimes(1)
-      expect(onSelectMock).toHaveBeenCalledWith(null)
+      expect(onBlurMock).toHaveBeenCalledTimes(1)
+      expect(onBlurMock).toHaveBeenCalledWith(null)
     })
   })
 

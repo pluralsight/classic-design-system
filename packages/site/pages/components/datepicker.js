@@ -69,6 +69,13 @@ export default _ => (
             'identifying string for input'
           ]),
           PropTypes.row([
+            'onBlur',
+            "('mm/dd/yyyy') => ()",
+            null,
+            null,
+            'on subfield blur, returns null if invalid date'
+          ]),
+          PropTypes.row([
             'onSelect',
             "('mm/dd/yyyy') => ()",
             null,
