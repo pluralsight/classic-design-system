@@ -1,8 +1,8 @@
 import {
   defaultName as themeDefaultName,
   names as themeNames
-} from '@pluralsight/ps-design-system-theme/react.js'
-import core from '@pluralsight/ps-design-system-core'
+} from '@pluralsight/ps-design-system-theme'
+import * as core from '@pluralsight/ps-design-system-core'
 
 export default {
   '.psds-verticaltabs': {

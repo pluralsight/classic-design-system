@@ -1,5 +1,5 @@
-import core from '@pluralsight/ps-design-system-core'
-import Dialog from '@pluralsight/ps-design-system-dialog/react.js'
+import * as core from '@pluralsight/ps-design-system-core'
+import Dialog from '@pluralsight/ps-design-system-dialog'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react.js'
 import PropTypes from 'prop-types'
 import React from 'react'

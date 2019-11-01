@@ -4,7 +4,7 @@ import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
 import { headingSizes } from '@pluralsight/ps-design-system-text'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import css from '../css/index.js'
 

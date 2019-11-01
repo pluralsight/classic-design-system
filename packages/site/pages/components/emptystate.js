@@ -1,8 +1,8 @@
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button'
-import EmptyState from '@pluralsight/ps-design-system-emptystate/react.js'
+import EmptyState from '@pluralsight/ps-design-system-emptystate'
 import * as Text from '@pluralsight/ps-design-system-text'
 import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'
 
@@ -118,7 +118,7 @@ const EmptyStateDocumentation = props => (
       </Code>
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import EmptyState from '@pluralsight/ps-design-system-emptystate/react'
+        import EmptyState from '@pluralsight/ps-design-system-emptystate'
       </Code>
       <PropTypes
         props={{

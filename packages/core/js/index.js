@@ -1,7 +1,5 @@
-module.exports = {
-  accessibility: require('./accessibility'),
-  colors: require('./colors'),
-  layout: require('./layout'),
-  type: require('./type'),
-  motion: require('./motion')
-}
+export { default as accessibility } from './accessibility'
+export { default as colors } from './colors'
+export { default as layout } from './layout'
+export { default as type } from './type'
+export { default as motion } from './motion'

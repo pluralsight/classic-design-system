@@ -2,10 +2,10 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 
 // Form controls:
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Button from '@pluralsight/ps-design-system-button'
 import Checkbox from '@pluralsight/ps-design-system-checkbox/react'
 import DatePicker from '@pluralsight/ps-design-system-datepicker/react'

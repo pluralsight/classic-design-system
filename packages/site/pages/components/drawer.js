@@ -1,9 +1,9 @@
-import core from '@pluralsight/ps-design-system-core'
-import Drawer from '@pluralsight/ps-design-system-drawer/react.js'
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import * as core from '@pluralsight/ps-design-system-core'
+import Drawer from '@pluralsight/ps-design-system-drawer'
+import Icon from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 import Row from '@pluralsight/ps-design-system-row'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
@@ -116,7 +116,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Drawer from '@pluralsight/ps-design-system-drawer/react'
+        import Drawer from '@pluralsight/ps-design-system-drawer'
       </Code>
 
       <PropTypes

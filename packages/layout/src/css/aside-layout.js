@@ -1,4 +1,4 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 
 import { AsideLayout as vars } from '../vars/index.js'
 
@@ -28,9 +28,7 @@ export default {
     '.psds-aside-layout__aside': {
       width: 'calc(25%)'
     },
-    [`.psds-aside-layout__aside--aside-position-${
-      vars.asidePositions.first
-    }`]: {
+    [`.psds-aside-layout__aside--aside-position-${vars.asidePositions.first}`]: {
       marginBottom: 0,
       marginRight: core.layout.spacingLarge
     },

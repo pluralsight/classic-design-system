@@ -4,7 +4,7 @@ import React, { createContext, useEffect, useState } from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import css, { sizeClasses, themeClasses } from '../css/index.js'
 import * as vars from '../vars/index.js'

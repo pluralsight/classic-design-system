@@ -1,4 +1,4 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import Table from '@pluralsight/ps-design-system-table/react.js'
 import * as Text from '@pluralsight/ps-design-system-text'

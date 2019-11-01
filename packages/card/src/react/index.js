@@ -5,9 +5,9 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Shiitake from 'shiitake'
 
-import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react.js'
+import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import css from '../css/index.js'
 import { toPercentageString } from '../js/index.js'

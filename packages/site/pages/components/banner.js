@@ -1,4 +1,4 @@
-import Banner from '@pluralsight/ps-design-system-banner/react.js'
+import Banner from '@pluralsight/ps-design-system-banner'
 import * as Text from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
@@ -25,7 +25,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Banner from '@pluralsight/ps-design-system-banner/react'
+        import Banner from '@pluralsight/ps-design-system-banner'
       </Code>
 
       <PropTypes

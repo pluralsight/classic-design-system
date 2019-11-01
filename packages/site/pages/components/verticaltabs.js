@@ -1,9 +1,9 @@
 import React from 'react'
 
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import Icon from '@pluralsight/ps-design-system-icon'
 import * as Text from '@pluralsight/ps-design-system-text'
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import {
   Chrome,
   Code,
