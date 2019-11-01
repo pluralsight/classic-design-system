@@ -1,6 +1,6 @@
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import Tab from '@pluralsight/ps-design-system-tab/react.js'
 import Theme from '@pluralsight/ps-design-system-theme'
 

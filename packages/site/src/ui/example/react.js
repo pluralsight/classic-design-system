@@ -7,7 +7,7 @@ import React from 'react'
 import CodeMirror from 'react-codemirror'
 import ReactDOM from 'react-dom'
 
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import Theme from '@pluralsight/ps-design-system-theme'
 
 import CodeMirrorCss from '../../../vendor/codemirror-css.js'

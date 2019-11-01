@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import addons, { makeDecorator } from '@storybook/addons'
 import { STORY_CHANGED } from '@storybook/core-events'
 
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import Theme, { names } from '@pluralsight/ps-design-system-theme'
 
 import { EVENTS } from './constants.js'

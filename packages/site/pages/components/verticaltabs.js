@@ -3,7 +3,7 @@ import React from 'react'
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs/react.js'
 import Icon from '@pluralsight/ps-design-system-icon'
 import Text from '@pluralsight/ps-design-system-text/react.js'
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import {
   Chrome,
   Code,

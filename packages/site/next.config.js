@@ -62,6 +62,7 @@ module.exports = {
       '/components/theme': { page: '/components/theme' },
       '/components/tooltip': { page: '/components/tooltip' },
       '/components/typeahead': { page: '/components/typeahead' },
+      '/components/verticaltabs': { page: '/components/verticaltabs' },
       '/components/viewtoggle': { page: '/components/viewtoggle' },
       '/core/build': { page: '/core/build' },
       '/core/usage': { page: '/core/usage' },

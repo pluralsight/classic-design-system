@@ -2,7 +2,7 @@ import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
 import Banner from '@pluralsight/ps-design-system-banner/react.js'
 import Button from '@pluralsight/ps-design-system-button'
 import Checkbox from '@pluralsight/ps-design-system-checkbox/react.js'
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import DatePicker from '@pluralsight/ps-design-system-datepicker/react.js'
 import Dropdown from '@pluralsight/ps-design-system-dropdown/react.js'
 import Form from '@pluralsight/ps-design-system-form/react.js'
@@ -14,7 +14,7 @@ import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
 import TextArea from '@pluralsight/ps-design-system-textarea/react.js'
 import Radio from '@pluralsight/ps-design-system-radio/react.js'
 import React from 'react'
-import { string as stringUtil } from '@pluralsight/ps-design-system-util'
+import { capitalize } from '@pluralsight/ps-design-system-util'
 import Switch from '@pluralsight/ps-design-system-switch/react.js'
 
 import {
@@ -319,7 +319,7 @@ class InAppExample extends React.Component {
                           name="level"
                           onClick={_ => this.setState({ level })}
                         >
-                          {stringUtil.capitalize(level)}
+                          {capitalize(level)}
                         </ActionMenu.Item>
                       ))}
                     </ActionMenu>

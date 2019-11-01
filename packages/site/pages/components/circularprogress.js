@@ -1,5 +1,5 @@
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress/react.js'
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import Theme from '@pluralsight/ps-design-system-theme'
 

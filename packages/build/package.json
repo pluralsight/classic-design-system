@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "chalk": "^2.3.0",
+    "clean-css": "^4.2.1",
     "commander": "^2.14.1",
     "css-loader": "^0.28.4",
     "idempotent-fs": "^1.2.0",
