@@ -5,11 +5,11 @@ import Checkbox from '@pluralsight/ps-design-system-checkbox/react.js'
 import * as core from '@pluralsight/ps-design-system-core'
 import DatePicker from '@pluralsight/ps-design-system-datepicker/react.js'
 import Dropdown from '@pluralsight/ps-design-system-dropdown/react.js'
-import Form from '@pluralsight/ps-design-system-form/react.js'
+import Form from '@pluralsight/ps-design-system-form'
 import Icon from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import Tag from '@pluralsight/ps-design-system-tag/react.js'
-import Text from '@pluralsight/ps-design-system-text/react.js'
+import * as Text from '@pluralsight/ps-design-system-text'
 import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
 import TextArea from '@pluralsight/ps-design-system-textarea/react.js'
 import Radio from '@pluralsight/ps-design-system-radio/react.js'
@@ -582,7 +582,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        {`import Form from '@pluralsight/ps-design-system-form/react'`}
+        {`import Form from '@pluralsight/ps-design-system-form'`}
       </Code>
 
       <SectionHeading>In-app example</SectionHeading>

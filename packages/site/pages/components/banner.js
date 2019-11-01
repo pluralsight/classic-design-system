@@ -1,5 +1,5 @@
 import Banner from '@pluralsight/ps-design-system-banner'
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import * as Text from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
 import {

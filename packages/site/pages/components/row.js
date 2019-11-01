@@ -2,7 +2,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 
 import Icon from '@pluralsight/ps-design-system-icon'
-import Row from '@pluralsight/ps-design-system-row/react.js'
+import Row from '@pluralsight/ps-design-system-row'
 import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
@@ -97,7 +97,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Row from '@pluralsight/ps-design-system-row/react'
+        import Row from '@pluralsight/ps-design-system-row'
       </Code>
 
       <PropTypes

@@ -5,7 +5,7 @@ import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import * as Text from '@pluralsight/ps-design-system-text'
 import Theme from '@pluralsight/ps-design-system-theme'
 
 import {

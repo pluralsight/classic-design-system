@@ -1,5 +1,5 @@
 import * as glamor from 'glamor'
-import Halo from '@pluralsight/ps-design-system-halo/react'
+import Halo from '@pluralsight/ps-design-system-halo'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import { whitelistProps } from '@pluralsight/ps-design-system-util'
 import PropTypes from 'prop-types'

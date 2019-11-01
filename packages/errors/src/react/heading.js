@@ -1,4 +1,4 @@
-import textCss from '@pluralsight/ps-design-system-text/css'
+import { css as textCss } from '@pluralsight/ps-design-system-text'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'

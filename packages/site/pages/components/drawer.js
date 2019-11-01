@@ -2,7 +2,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import Drawer from '@pluralsight/ps-design-system-drawer'
 import Icon from '@pluralsight/ps-design-system-icon'
 import React from 'react'
-import Row from '@pluralsight/ps-design-system-row/react.js'
+import Row from '@pluralsight/ps-design-system-row'
 import Theme from '@pluralsight/ps-design-system-theme'
 
 import {

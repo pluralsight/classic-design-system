@@ -1,7 +1,7 @@
 import React from 'react'
 
 import DataWell from '@pluralsight/ps-design-system-datawell/react.js'
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import * as Text from '@pluralsight/ps-design-system-text'
 
 import {
   Chrome,

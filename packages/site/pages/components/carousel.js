@@ -6,8 +6,8 @@ import { BelowRight } from '@pluralsight/ps-design-system-position'
 import Card from '@pluralsight/ps-design-system-card'
 import Carousel from '@pluralsight/ps-design-system-carousel'
 import Icon from '@pluralsight/ps-design-system-icon'
-import Note from '@pluralsight/ps-design-system-note/react.js'
-import Text from '@pluralsight/ps-design-system-text/react.js'
+import Note from '@pluralsight/ps-design-system-note'
+import * as Text from '@pluralsight/ps-design-system-text'
 
 import {
   Chrome,

@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import * as core from '@pluralsight/ps-design-system-core'
 import Theme from '@pluralsight/ps-design-system-theme'
-import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react.js'
+import * as core from '@pluralsight/ps-design-system-core'
+import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'
 import { capitalize } from '@pluralsight/ps-design-system-util'
 
 function ThemeToggle(props) {

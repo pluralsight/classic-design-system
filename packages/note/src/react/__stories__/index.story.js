@@ -6,7 +6,7 @@ import Avatar from '@pluralsight/ps-design-system-avatar'
 import Icon from '@pluralsight/ps-design-system-icon'
 import Link from '@pluralsight/ps-design-system-link'
 import { Below } from '@pluralsight/ps-design-system-position'
-import Text from '@pluralsight/ps-design-system-text/react'
+import * as Text from '@pluralsight/ps-design-system-text'
 
 import Note from '../index.js'
 
