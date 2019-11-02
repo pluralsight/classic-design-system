@@ -3,7 +3,7 @@ import requireContext from 'require-context.macro'
 import { addDecorator, configure } from '@storybook/react'
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 const PaddingDecorator = storyFn => (

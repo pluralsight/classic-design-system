@@ -1,4 +1,4 @@
-import Avatar from '@pluralsight/ps-design-system-avatar/react.js'
+import Avatar from '@pluralsight/ps-design-system-avatar'
 import React from 'react'
 
 import {
@@ -24,7 +24,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Avatar from '@pluralsight/ps-design-system-avatar/react'
+        import Avatar from '@pluralsight/ps-design-system-avatar'
       </Code>
 
       <PropTypes

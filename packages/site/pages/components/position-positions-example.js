@@ -1,13 +1,30 @@
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button'
-import Tooltip from '@pluralsight/ps-design-system-tooltip/react.js'
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
 
-import * as components from '@pluralsight/ps-design-system-position/react.js'
+import {
+  Above,
+  AboveLeft,
+  AboveRight,
+  BelowLeft,
+  BelowRight,
+  RightOf,
+  LeftOf
+} from '@pluralsight/ps-design-system-position'
 
 import { Head } from '../../src/ui/index.js'
 
+const components = [
+  Above,
+  AboveLeft,
+  AboveRight,
+  BelowLeft,
+  BelowRight,
+  RightOf,
+  LeftOf
+]
 export default function PositionExample(props) {
   return (
     <ul className="positions">

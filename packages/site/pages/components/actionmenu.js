@@ -1,12 +1,12 @@
 import React from 'react'
 
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Button from '@pluralsight/ps-design-system-button'
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
-import { BelowLeft } from '@pluralsight/ps-design-system-position/react.js'
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import * as core from '@pluralsight/ps-design-system-core'
+import Icon from '@pluralsight/ps-design-system-icon'
+import { BelowLeft } from '@pluralsight/ps-design-system-position'
+import * as Text from '@pluralsight/ps-design-system-text'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
@@ -106,8 +106,8 @@ function InAppExample() {
       </Theme>
 
       <Code collapsible language="javascript">
-        {`import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
-import { BelowLeft } from '@pluralsight/ps-design-system-position/react.js'
+        {`import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import Button from '@pluralsight/ps-design-system-button'
 
 function InAppExample() {
@@ -199,7 +199,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
+        import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
       </Code>
 
       <PropTypes

@@ -1,5 +1,5 @@
 import React from 'react'
-import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react.js'
+import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'
 
 import {
   Chrome,
@@ -25,7 +25,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import ViewToggle from '@pluralsight/ps-design-system-viewtoggle/react'
+        import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'
       </Code>
 
       <PropTypes

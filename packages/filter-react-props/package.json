@@ -4,7 +4,9 @@
   "description": "Prop filter utility for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
+  "keywords": [],
   "main": "index.js",
+  "module": "src/index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -15,7 +17,6 @@
     "test": "jest",
     "test:watch": "npm run test -- --watchAll"
   },
-  "keywords": [],
   "dependencies": {
     "fast-memoize": "^2.5.1",
     "react-html-attributes": "^1.4.3"

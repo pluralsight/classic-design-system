@@ -1,5 +1,5 @@
 const glamor = require('glamor')
-
+const CleanCSS = require('clean-css')
 const jsToCss = require('./js-to-css.js')
 
 function glamorToCss(obj) {
@@ -15,12 +15,12 @@ function convertKeyframes(obj) {
 
 function convertCssWithGlamor(obj) {
   const name = glamor.css(obj).toString()
-  const dedupSelectors = /([^,{}]+),\1/g
-  return glamor
+  const input = glamor
     .cssFor(obj)
     .replace(new RegExp(`\\.${name}`, 'g'), '')
     .replace(new RegExp(`\\[data-${name}\\]`, 'g'), '')
-    .replace(dedupSelectors, '$1')
+  const output = new CleanCSS().minify(input)
+  return output.styles
 }
 
 function filterObject(predicate, obj) {

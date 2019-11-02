@@ -1,4 +1,4 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import React from 'react'
 
 import { findMatchingActionMenuItem } from '../utils.js'

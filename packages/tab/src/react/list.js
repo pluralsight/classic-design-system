@@ -1,10 +1,10 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import css from '../css/index.js'
 import useResizeObserver from './use-resize-observer.js'
@@ -85,29 +85,26 @@ function List(props) {
     [activeIndex, activeIndexFromProps]
   )
 
-  React.useEffect(
-    () => {
-      function calcOverflow() {
-        const toRight = sliderWidth + xOffset > listWidth
+  React.useEffect(() => {
+    function calcOverflow() {
+      const toRight = sliderWidth + xOffset > listWidth
 
-        const listLeftX = getLeftX(listRef)
-        const sliderLeftX = getLeftX(sliderRef)
-        const toLeft = sliderLeftX + xOffset < listLeftX
+      const listLeftX = getLeftX(listRef)
+      const sliderLeftX = getLeftX(sliderRef)
+      const toLeft = sliderLeftX + xOffset < listLeftX
 
-        setOverflows({
-          toLeft,
-          toRight
-        })
-      }
+      setOverflows({
+        toLeft,
+        toRight
+      })
+    }
 
-      const timer = setTimeout(calcOverflow, slideAnimationLength)
+    const timer = setTimeout(calcOverflow, slideAnimationLength)
 
-      return () => {
-        clearTimeout(timer)
-      }
-    },
-    [listRef, sliderRef, xOffset, listWidth, sliderWidth]
-  )
+    return () => {
+      clearTimeout(timer)
+    }
+  }, [listRef, sliderRef, xOffset, listWidth, sliderWidth])
 
   function handleListItemClick(i, originalOnClick, evt) {
     setActiveIndex(i)

@@ -1,5 +1,5 @@
-import core from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+import * as core from '@pluralsight/ps-design-system-core'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 import * as vars from '../vars/index.js'
 
@@ -18,9 +18,7 @@ export default {
     border: '1px solid transparent',
     color: core.colors.bone,
     backgroundColor: core.colors.gray03,
-    transition: `background-color ${core.motion.speedXFast} linear, color ${
-      core.motion.speedXFast
-    } linear`
+    transition: `background-color ${core.motion.speedXFast} linear, color ${core.motion.speedXFast} linear`
   },
   [base + '.psds-theme--' + themeNames.light]: {
     backgroundColor: core.colors.white,

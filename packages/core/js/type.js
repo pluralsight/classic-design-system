@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   fontFamily: '"Gotham SSm A", "Gotham SSm B", sans-serif',
   fontFamilyCode: '"Source Code Pro", monospace',
 

@@ -1,7 +1,7 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 
 export default {
-  ['.psds-page-heading-layout']: {
+  '.psds-page-heading-layout': {
     padding: core.layout.spacingLarge
   },
   '.psds-page-heading-layout__actions': {

@@ -3,7 +3,7 @@ import { compose, css } from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import Icon from '@pluralsight/ps-design-system-icon'
 
 import stylesheet from '../css/index.js'
 
