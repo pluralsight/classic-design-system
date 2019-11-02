@@ -5,7 +5,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Icon from '@pluralsight/ps-design-system-icon'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
-import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
+import TextInput from '@pluralsight/ps-design-system-textinput'
 
 import * as vars from '../vars/index.js'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text'
-import TextArea from '@pluralsight/ps-design-system-textarea/react.js'
+import TextArea from '@pluralsight/ps-design-system-textarea'
 
 import {
   Chrome,
@@ -25,7 +25,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import TextArea from '@pluralsight/ps-design-system-textarea/react'
+        import TextArea from '@pluralsight/ps-design-system-textarea'
       </Code>
 
       <PropTypes

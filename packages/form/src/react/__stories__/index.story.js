@@ -12,10 +12,10 @@ import DatePicker from '@pluralsight/ps-design-system-datepicker'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import Radio from '@pluralsight/ps-design-system-radio'
 import Switch from '@pluralsight/ps-design-system-switch'
-import Tag from '@pluralsight/ps-design-system-tag/react'
+import Tag from '@pluralsight/ps-design-system-tag'
 import * as Text from '@pluralsight/ps-design-system-text'
-import TextArea from '@pluralsight/ps-design-system-textarea/react'
-import TextInput from '@pluralsight/ps-design-system-textinput/react'
+import TextArea from '@pluralsight/ps-design-system-textarea'
+import TextInput from '@pluralsight/ps-design-system-textinput'
 
 import Form from '../index.js'
 
