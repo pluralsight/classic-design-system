@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@1.2.0...@pluralsight/ps-design-system-typeahead@2.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **position:** esm export refactor ([b66711a](https://github.com/pluralsight/design-system/commit/b66711a))
+* **textinput:** esm export refactor ([3df387f](https://github.com/pluralsight/design-system/commit/3df387f))
+* **typeahead:** esm export refactor ([d027b3c](https://github.com/pluralsight/design-system/commit/d027b3c))
+
+
+### BREAKING CHANGES
+
+* **typeahead:** import pattern
+* **textinput:** import pattern
+* **core:** import patterns
+* **position:** new import pattern
+
+
+
+
+
 # [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@1.1.2...@pluralsight/ps-design-system-typeahead@1.2.0) (2019-10-22)
 
 

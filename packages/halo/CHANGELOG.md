@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@5.0.3...@pluralsight/ps-design-system-halo@6.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **halo:** esm export refactor ([723a966](https://github.com/pluralsight/design-system/commit/723a966))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+
+
+### BREAKING CHANGES
+
+* **halo:** import pattern
+* **core:** import patterns
+* **theme:** new import pattern
+
+
+
+
+
 ## [5.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@5.0.2...@pluralsight/ps-design-system-halo@5.0.3) (2019-10-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-halo

@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@4.1.3...@pluralsight/ps-design-system-avatar@5.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **avatar:** esm export refactor ([e9a47ae](https://github.com/pluralsight/design-system/commit/e9a47ae))
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+
+
+### BREAKING CHANGES
+
+* **core:** import patterns
+* **avatar:** import patterns
+
+
+
+
+
 ## [4.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@4.1.2...@pluralsight/ps-design-system-avatar@4.1.3) (2019-10-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-avatar

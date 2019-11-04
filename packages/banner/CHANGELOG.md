@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@3.1.4...@pluralsight/ps-design-system-banner@4.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **banner:** esm export refactor ([739102c](https://github.com/pluralsight/design-system/commit/739102c))
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **link:** esm export refactor ([28c733e](https://github.com/pluralsight/design-system/commit/28c733e))
+
+
+### BREAKING CHANGES
+
+* **banner:** import pattern
+* **core:** import patterns
+* **link:** new import pattern
+
+
+
+
+
 ## [3.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@3.1.3...@pluralsight/ps-design-system-banner@3.1.4) (2019-10-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-banner

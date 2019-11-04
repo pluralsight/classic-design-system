@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@13.3.0...@pluralsight/ps-design-system-icon@14.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+
+
+### BREAKING CHANGES
+
+* **core:** import patterns
+
+
+
+
+
 # [13.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@13.2.0...@pluralsight/ps-design-system-icon@13.3.0) (2019-10-21)
 
 

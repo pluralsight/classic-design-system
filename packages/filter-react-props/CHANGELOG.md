@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-filter-react-props@1.1.6...@pluralsight/ps-design-system-filter-react-props@1.1.7) (2019-11-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-filter-react-props
+
+
+
+
+
 ## [1.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-filter-react-props@1.1.5...@pluralsight/ps-design-system-filter-react-props@1.1.6) (2019-07-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-filter-react-props

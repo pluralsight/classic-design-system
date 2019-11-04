@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@4.1.0...@pluralsight/ps-design-system-storybook-addon-theme@5.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+
+
+### BREAKING CHANGES
+
+* **core:** import patterns
+* **theme:** new import pattern
+
+
+
+
+
 # [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@4.0.2...@pluralsight/ps-design-system-storybook-addon-theme@4.1.0) (2019-10-21)
 
 

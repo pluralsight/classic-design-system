@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@4.0.1...@pluralsight/ps-design-system-carousel@5.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **actionmenu:** esm export refactor ([0858559](https://github.com/pluralsight/design-system/commit/0858559))
+* **card:** esm export refactor ([1cd5f17](https://github.com/pluralsight/design-system/commit/1cd5f17))
+* **carousel:** esm export refactor ([1d04738](https://github.com/pluralsight/design-system/commit/1d04738))
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **position:** esm export refactor ([b66711a](https://github.com/pluralsight/design-system/commit/b66711a))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+
+
+### BREAKING CHANGES
+
+* **carousel:** import pattern
+* **card:** import pattern
+* **actionmenu:** import pattern
+* **core:** import patterns
+* **theme:** new import pattern
+* **position:** new import pattern
+
+
+
+
+
 ## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@4.0.0...@pluralsight/ps-design-system-carousel@4.0.1) (2019-10-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel

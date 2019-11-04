@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@7.0.3...@pluralsight/ps-design-system-badge@8.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **badge:** esm export refactor ([708cfd9](https://github.com/pluralsight/design-system/commit/708cfd9))
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+* **util:** esm export ([55cbd9d](https://github.com/pluralsight/design-system/commit/55cbd9d))
+
+
+### BREAKING CHANGES
+
+* **badge:** import pattern
+* **util:** import patterns
+* **core:** import patterns
+* **theme:** new import pattern
+
+
+
+
+
 ## [7.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@7.0.2...@pluralsight/ps-design-system-badge@7.0.3) (2019-10-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-badge

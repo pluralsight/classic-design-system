@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@3.1.0...@pluralsight/ps-design-system-dropdown@4.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **actionmenu:** esm export refactor ([0858559](https://github.com/pluralsight/design-system/commit/0858559))
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **dropdown:** esm export refactor ([b485e69](https://github.com/pluralsight/design-system/commit/b485e69))
+* **halo:** esm export refactor ([723a966](https://github.com/pluralsight/design-system/commit/723a966))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+
+
+### BREAKING CHANGES
+
+* **dropdown:** import pattern
+* **halo:** import pattern
+* **actionmenu:** import pattern
+* **core:** import patterns
+* **theme:** new import pattern
+
+
+
+
+
 # [3.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@3.0.7...@pluralsight/ps-design-system-dropdown@3.1.0) (2019-10-22)
 
 

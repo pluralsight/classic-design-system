@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@7.0.3...@pluralsight/ps-design-system-link@8.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **link:** esm export refactor ([28c733e](https://github.com/pluralsight/design-system/commit/28c733e))
+
+
+### BREAKING CHANGES
+
+* **core:** import patterns
+* **link:** new import pattern
+
+
+
+
+
 ## [7.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@7.0.2...@pluralsight/ps-design-system-link@7.0.3) (2019-10-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-link

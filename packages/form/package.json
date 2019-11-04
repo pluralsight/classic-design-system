@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-form",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "description": "Design system components for form layout",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -24,8 +24,8 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.4.5",
-    "@pluralsight/ps-design-system-util": "^2.0.5",
+    "@pluralsight/ps-design-system-core": "^5.0.0",
+    "@pluralsight/ps-design-system-util": "^3.0.0",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
@@ -35,19 +35,19 @@
     "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^6.0.1",
-    "@pluralsight/ps-design-system-build": "^1.11.0",
-    "@pluralsight/ps-design-system-button": "^14.0.0-beta.4",
-    "@pluralsight/ps-design-system-checkbox": "^4.1.1",
-    "@pluralsight/ps-design-system-datepicker": "^4.1.0",
-    "@pluralsight/ps-design-system-dropdown": "^3.1.0",
-    "@pluralsight/ps-design-system-radio": "^4.0.5",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^4.1.0",
-    "@pluralsight/ps-design-system-switch": "^4.0.4",
-    "@pluralsight/ps-design-system-tag": "^4.0.5",
-    "@pluralsight/ps-design-system-text": "^13.0.3",
-    "@pluralsight/ps-design-system-textarea": "^3.0.9",
-    "@pluralsight/ps-design-system-textinput": "^4.1.0",
-    "@pluralsight/ps-design-system-theme": "^3.0.4"
+    "@pluralsight/ps-design-system-actionmenu": "^7.0.0",
+    "@pluralsight/ps-design-system-build": "^1.11.1",
+    "@pluralsight/ps-design-system-button": "^15.0.0",
+    "@pluralsight/ps-design-system-checkbox": "^5.0.0",
+    "@pluralsight/ps-design-system-datepicker": "^5.0.0",
+    "@pluralsight/ps-design-system-dropdown": "^4.0.0",
+    "@pluralsight/ps-design-system-radio": "^5.0.0",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.0",
+    "@pluralsight/ps-design-system-switch": "^5.0.0",
+    "@pluralsight/ps-design-system-tag": "^5.0.0",
+    "@pluralsight/ps-design-system-text": "^14.0.0",
+    "@pluralsight/ps-design-system-textarea": "^4.0.0",
+    "@pluralsight/ps-design-system-textinput": "^5.0.0",
+    "@pluralsight/ps-design-system-theme": "^4.0.0"
   }
 }

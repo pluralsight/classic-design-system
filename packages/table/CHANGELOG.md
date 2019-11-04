@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@5.0.10...@pluralsight/ps-design-system-table@6.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **drawer:** esm export refactor ([125ac4d](https://github.com/pluralsight/design-system/commit/125ac4d))
+* **link:** esm export refactor ([28c733e](https://github.com/pluralsight/design-system/commit/28c733e))
+* **table:** esm export refactor ([572d0f5](https://github.com/pluralsight/design-system/commit/572d0f5))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+
+
+### BREAKING CHANGES
+
+* **table:** import pattern
+* **drawer:** import pattern
+* **core:** import patterns
+* **theme:** new import pattern
+* **link:** new import pattern
+
+
+
+
+
 ## [5.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@5.0.9...@pluralsight/ps-design-system-table@5.0.10) (2019-10-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table
