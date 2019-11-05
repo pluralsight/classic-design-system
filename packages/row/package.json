@@ -25,13 +25,13 @@
     "@pluralsight/ps-design-system-prop-types": "^2.0.8",
     "@pluralsight/ps-design-system-util": "^3.0.0",
     "prop-types": "^15.7.2",
-    "shave": "^2.5.3"
+    "shave": "^2.5.6"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^3.1.4",
-    "@pluralsight/ps-design-system-theme": "^3.0.2",
-    "glamor": "^2.20.0",
-    "react": ">=16.8.6 < 17.0.0"
+    "@pluralsight/ps-design-system-normalize": "^3.1.7",
+    "@pluralsight/ps-design-system-theme": "^4.0.0",
+    "glamor": "^2.20.40",
+    "react": "^16.11.0"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.1",

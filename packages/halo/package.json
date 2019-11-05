@@ -22,15 +22,15 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^5.0.0",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.7",
-    "focus-within": "^2.0.0",
-    "hoist-non-react-statics": "^3.0.1",
+    "focus-within": "^3.0.2",
+    "hoist-non-react-statics": "^3.3.0",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^3.1.4",
-    "@pluralsight/ps-design-system-theme": "^3.0.2",
-    "glamor": "^2.20.0",
-    "react": ">=16.3.0 < 17.0.0"
+    "@pluralsight/ps-design-system-normalize": "^3.1.7",
+    "@pluralsight/ps-design-system-theme": "^4.0.0",
+    "glamor": "^2.20.40",
+    "react": "^16.11.0"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.1",

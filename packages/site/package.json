@@ -11,17 +11,17 @@
     "start": "next -p 1337"
   },
   "dependencies": {
-    "babel-preset-env": "^1.6.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
     "babel-standalone": "^6.26.0",
-    "core-js": "^3.2.1",
-    "debounce": "^1.0.2",
-    "dotenv": "^8.0.0",
+    "core-js": "^3.3.6",
+    "debounce": "^1.2.0",
+    "dotenv": "^8.2.0",
     "http-server": "^0.11.1",
     "isomorphic-fetch": "^2.2.1",
-    "next": "^9.0.3",
+    "next": "^9.1.2",
     "react-codemirror": "^1.0.0",
-    "react-markdown": "^4.0.0"
+    "react-markdown": "^4.2.2"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-actionmenu": "^7.0.0",

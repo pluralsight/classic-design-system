@@ -14,7 +14,7 @@
   "style": "dist/index.css",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^5.0.0",
-    "normalize.css": "^7.0.0"
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
