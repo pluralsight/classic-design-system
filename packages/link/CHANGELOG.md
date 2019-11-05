@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@8.0.0...@pluralsight/ps-design-system-link@8.0.1) (2019-11-05)
+
+
+### Bug Fixes
+
+* **link:** fix link typescript declaration file ([712b50c](https://github.com/pluralsight/design-system/commit/712b50c53f16a115083fe057164d976db805e9eb))
+
+
+
+
+
 # [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@7.0.3...@pluralsight/ps-design-system-link@8.0.0) (2019-11-04)
 
 
