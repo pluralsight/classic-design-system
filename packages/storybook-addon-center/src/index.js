@@ -3,28 +3,21 @@ import { css } from 'glamor'
 
 const styles = {
   outer: css({
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    bottom: 0,
-    right: 0,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '100vh',
-    width: '100vw',
+    height: '100%',
+    width: '100%',
     overflow: 'auto'
   }),
   inner: css({
     margin: 'auto',
-    maxHeight: '100%' // IE Hack
+    height: '100%' // IE Hack
   })
 }
 
 const Center = props => (
-  <div {...styles.outer}>
-    <div {...styles.inner}>{props.children}</div>
-  </div>
+  <div {...styles.outer}>{props.children}</div>
 )
 
 const centerDecorator = storyFn => <Center>{storyFn()}</Center>

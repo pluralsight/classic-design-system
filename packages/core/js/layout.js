@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   spacingXXSmall: '4px',
   spacingXSmall: '8px',
   spacingSmall: '12px',

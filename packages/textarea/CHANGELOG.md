@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@3.0.9...@pluralsight/ps-design-system-textarea@4.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **form:** esm export refactor ([2b75fc6](https://github.com/pluralsight/design-system/commit/2b75fc6))
+* **halo:** esm export refactor ([723a966](https://github.com/pluralsight/design-system/commit/723a966))
+* **textarea:** esm export refactor ([8be9bfc](https://github.com/pluralsight/design-system/commit/8be9bfc))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+
+
+### BREAKING CHANGES
+
+* **textarea:** import pattern
+* **halo:** import pattern
+* **form:** import pattern
+* **core:** import patterns
+* **theme:** new import pattern
+
+
+
+
+
+## [3.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@3.0.8...@pluralsight/ps-design-system-textarea@3.0.9) (2019-10-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textarea
+
+
+
+
+
+## [3.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@3.0.7...@pluralsight/ps-design-system-textarea@3.0.8) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textarea
+
+
+
+
+
 ## [3.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@3.0.6...@pluralsight/ps-design-system-textarea@3.0.7) (2019-10-11)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textarea

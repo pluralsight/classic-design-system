@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react'
 
 import React from 'react'
 
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import Icon from '@pluralsight/ps-design-system-icon'
 
 import Dropdown from '../index.js'
 
@@ -35,13 +35,16 @@ storiesOf('labels', module)
 
 const appearanceStory = storiesOf('appearance', module)
 
-Object.keys(Dropdown.appearances).forEach(appearance =>
-  appearanceStory.add(appearance, _ => (
-    <DropdownWithDefaults
-      appearance={appearance}
-      placeholder="The placeholder "
-    />
-  ))
+Object.keys(Dropdown.sizes).forEach(size =>
+  Object.keys(Dropdown.appearances).forEach(appearance =>
+    appearanceStory.add(`${size} ${appearance}`, _ => (
+      <DropdownWithDefaults
+        size={size}
+        appearance={appearance}
+        placeholder="The placeholder "
+      />
+    ))
+  )
 )
 Object.keys(Dropdown.appearances).forEach(appearance =>
   appearanceStory.add(`${appearance} w/ error`, _ => (

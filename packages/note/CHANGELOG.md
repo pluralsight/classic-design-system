@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-note@4.0.0...@pluralsight/ps-design-system-note@4.0.1) (2019-11-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-note
+
+
+
+
+
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-note@3.0.1...@pluralsight/ps-design-system-note@4.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **actionmenu:** esm export refactor ([0858559](https://github.com/pluralsight/design-system/commit/0858559))
+* **avatar:** esm export refactor ([e9a47ae](https://github.com/pluralsight/design-system/commit/e9a47ae))
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **link:** esm export refactor ([28c733e](https://github.com/pluralsight/design-system/commit/28c733e))
+* **note:** esm export refactor ([87001e9](https://github.com/pluralsight/design-system/commit/87001e9))
+* **position:** esm export refactor ([b66711a](https://github.com/pluralsight/design-system/commit/b66711a))
+* **text:** esm export refactor ([a1a6345](https://github.com/pluralsight/design-system/commit/a1a6345))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+
+
+### BREAKING CHANGES
+
+* **text:** import pattern
+* **note:** import pattern
+* **actionmenu:** import pattern
+* **core:** import patterns
+* **theme:** new import pattern
+* **position:** new import pattern
+* **link:** new import pattern
+* **avatar:** import patterns
+
+
+
+
+
+## [3.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-note@3.0.0...@pluralsight/ps-design-system-note@3.0.1) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-note
+
+
+
+
+
 # [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-note@2.0.6...@pluralsight/ps-design-system-note@3.0.0) (2019-10-09)
 
 

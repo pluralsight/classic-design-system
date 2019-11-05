@@ -1,10 +1,10 @@
 import * as glamor from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import Halo from '@pluralsight/ps-design-system-halo/react.js'
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import Halo from '@pluralsight/ps-design-system-halo'
+import Icon from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import css from '../css/index.js'
 import { findMatchingActionMenuItem } from './utils.js'
@@ -13,9 +13,11 @@ import * as vars from '../vars/index.js'
 const styles = {
   buttonSizer: _ => glamor.css(css['.psds-dropdown__button-sizer']),
   error: _ => glamor.css(css['.psds-dropdown__error']),
-  field: ({ appearance, error, icon, themeName }) =>
+  field: ({ appearance, error, icon, themeName, size }) =>
     glamor.css(
       css['.psds-dropdown__field'],
+      size === vars.sizes.small &&
+        css['.psds-dropdown__field.psds-dropdown--small'],
       css[`.psds-dropdown__field--appearance-${appearance}`],
       css[`.psds-dropdown__field.psds-theme--${themeName}`],
       error && css[`.psds-dropdown__field--error.psds-theme--${themeName}`]
@@ -39,7 +41,12 @@ const styles = {
       css[`.psds-dropdown__label.psds-theme--${themeName}`]
     ),
   menu: _ => glamor.css(css['.psds-dropdown__menu']),
-  placeholder: _ => glamor.css(css['.psds-dropdown__placeholder']),
+  placeholder: ({ size }) =>
+    glamor.css(
+      css['.psds-dropdown__placeholder'],
+      size === vars.sizes.small &&
+        css['.psds-dropdown__placeholder.psds-dropdown--small']
+    ),
   subLabel: ({ themeName }) =>
     glamor.css(
       css['.psds-dropdown__sub-label'],
@@ -253,6 +260,7 @@ Dropdown.propTypes = {
   onClick: PropTypes.func,
   onFocus: PropTypes.func,
   placeholder: PropTypes.string,
+  size: PropTypes.oneOf(Object.values(vars.sizes)),
   subLabel: PropTypes.node,
   style: PropTypes.object,
   value: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
@@ -260,11 +268,14 @@ Dropdown.propTypes = {
 Dropdown.defaultProps = {
   appearance: vars.appearances.default,
   disabled: false,
-  error: false
+  error: false,
+  size: vars.sizes.medium
 }
 
 Dropdown.appearances = vars.appearances
+Dropdown.sizes = vars.sizes
 
 export const appearances = vars.appearances
+export const sizes = vars.sizes
 
 export default Dropdown

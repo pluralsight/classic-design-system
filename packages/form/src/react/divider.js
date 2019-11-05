@@ -1,6 +1,6 @@
 import { css } from 'glamor'
 import React from 'react'
-import { useTheme } from '@pluralsight/ps-design-system-theme/react.js'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index.js'
 

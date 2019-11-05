@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-build",
-  "version": "1.11.0",
+  "version": "1.11.1",
   "description": "Utilities for building and configuring Design System packages",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "chalk": "^2.3.0",
+    "clean-css": "^4.2.1",
     "commander": "^2.14.1",
     "css-loader": "^0.28.4",
     "idempotent-fs": "^1.2.0",

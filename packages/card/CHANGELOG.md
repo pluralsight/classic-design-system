@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@11.2.4...@pluralsight/ps-design-system-card@12.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **card:** esm export refactor ([1cd5f17](https://github.com/pluralsight/design-system/commit/1cd5f17))
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+* **util:** esm export ([55cbd9d](https://github.com/pluralsight/design-system/commit/55cbd9d))
+
+
+### BREAKING CHANGES
+
+* **card:** import pattern
+* **util:** import patterns
+* **core:** import patterns
+* **theme:** new import pattern
+
+
+
+
+
+## [11.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@11.2.3...@pluralsight/ps-design-system-card@11.2.4) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-card
+
+
+
+
+
 ## [11.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@11.2.2...@pluralsight/ps-design-system-card@11.2.3) (2019-10-09)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-card

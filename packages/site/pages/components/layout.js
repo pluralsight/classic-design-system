@@ -1,15 +1,15 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import {
   PageHeadingLayout,
   AsideLayout,
   EqualColumnLayout
-} from '@pluralsight/ps-design-system-layout/react.js'
-import Badge from '@pluralsight/ps-design-system-badge/react.js'
+} from '@pluralsight/ps-design-system-layout'
+import Badge from '@pluralsight/ps-design-system-badge'
 import Button from '@pluralsight/ps-design-system-button'
 import React from 'react'
 import ReactPropTypes from 'prop-types'
-import Text from '@pluralsight/ps-design-system-text/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import * as Text from '@pluralsight/ps-design-system-text'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
@@ -293,7 +293,7 @@ export default _ => (
   PageHeadingLayout,
   AsideLayout,
   EqualColumnLayout
-} from '@pluralsight/ps-design-system-layout/react'`}
+} from '@pluralsight/ps-design-system-layout'`}
       </Code>
 
       <SectionHeading>Page Heading Layout</SectionHeading>

@@ -1,9 +1,9 @@
 import { css } from 'glamor'
-import Text from '@pluralsight/ps-design-system-text/react.js'
+import { Heading } from '@pluralsight/ps-design-system-text'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { PageHeadingLayout as stylesheet } from '../css/index.js'
+import { pageHeadingLayoutCSS as stylesheet } from '../css/index.js'
 
 const styles = {
   actions: _ =>
@@ -39,9 +39,7 @@ function PageHeadingLayout(props) {
   return (
     <div {...styles.layout(props)}>
       <div {...styles.heading(props)}>
-        <Text.Heading size={Text.Heading.sizes.large}>
-          {props.heading}
-        </Text.Heading>
+        <Heading size={Heading.sizes.large}>{props.heading}</Heading>
         {Array.isArray(props.actions) && props.actions.length > 0 && (
           <div {...styles.actions(props)}>{props.actions}</div>
         )}

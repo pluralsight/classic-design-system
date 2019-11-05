@@ -4,8 +4,8 @@ import { storiesOf } from '@storybook/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
-import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
+import * as core from '@pluralsight/ps-design-system-core'
+import TextInput from '@pluralsight/ps-design-system-textinput'
 
 import DatePicker from '../index.js'
 

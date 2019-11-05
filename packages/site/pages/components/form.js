@@ -1,21 +1,21 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
-import Banner from '@pluralsight/ps-design-system-banner/react.js'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import Banner from '@pluralsight/ps-design-system-banner'
 import Button from '@pluralsight/ps-design-system-button'
-import Checkbox from '@pluralsight/ps-design-system-checkbox/react.js'
-import core from '@pluralsight/ps-design-system-core'
-import DatePicker from '@pluralsight/ps-design-system-datepicker/react.js'
-import Dropdown from '@pluralsight/ps-design-system-dropdown/react.js'
-import Form from '@pluralsight/ps-design-system-form/react.js'
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import Checkbox from '@pluralsight/ps-design-system-checkbox'
+import * as core from '@pluralsight/ps-design-system-core'
+import DatePicker from '@pluralsight/ps-design-system-datepicker'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import Form from '@pluralsight/ps-design-system-form'
+import Icon from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
-import Tag from '@pluralsight/ps-design-system-tag/react.js'
-import Text from '@pluralsight/ps-design-system-text/react.js'
-import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
-import TextArea from '@pluralsight/ps-design-system-textarea/react.js'
-import Radio from '@pluralsight/ps-design-system-radio/react.js'
+import Tag from '@pluralsight/ps-design-system-tag'
+import * as Text from '@pluralsight/ps-design-system-text'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+import TextArea from '@pluralsight/ps-design-system-textarea'
+import Radio from '@pluralsight/ps-design-system-radio'
 import React from 'react'
-import { string as stringUtil } from '@pluralsight/ps-design-system-util'
-import Switch from '@pluralsight/ps-design-system-switch/react.js'
+import { capitalize } from '@pluralsight/ps-design-system-util'
+import Switch from '@pluralsight/ps-design-system-switch'
 
 import {
   Chrome,
@@ -319,7 +319,7 @@ class InAppExample extends React.Component {
                           name="level"
                           onClick={_ => this.setState({ level })}
                         >
-                          {stringUtil.capitalize(level)}
+                          {capitalize(level)}
                         </ActionMenu.Item>
                       ))}
                     </ActionMenu>
@@ -582,7 +582,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        {`import Form from '@pluralsight/ps-design-system-form/react'`}
+        {`import Form from '@pluralsight/ps-design-system-form'`}
       </Code>
 
       <SectionHeading>In-app example</SectionHeading>

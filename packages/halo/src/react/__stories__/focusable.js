@@ -2,8 +2,8 @@ import * as glamor from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import core from '@pluralsight/ps-design-system-core'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import * as core from '@pluralsight/ps-design-system-core'
+import { withTheme } from '@pluralsight/ps-design-system-theme'
 
 const css = {
   '.focusable': {

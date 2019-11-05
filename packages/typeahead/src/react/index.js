@@ -2,10 +2,10 @@ import React, { Children } from 'react'
 import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
-import { BelowLeft } from '@pluralsight/ps-design-system-position/react.js'
+import Icon from '@pluralsight/ps-design-system-icon'
+import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
-import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
+import TextInput from '@pluralsight/ps-design-system-textinput'
 
 import * as vars from '../vars/index.js'
 
@@ -23,7 +23,8 @@ const TEXT_INPUT_PROPS = [
   'onChange',
   'placeholder',
   'subLabel',
-  'value'
+  'value',
+  'size'
 ]
 const Typeahead = React.forwardRef((props, forwardedRef) => {
   const { children, filterFn, onChange, value } = props
@@ -158,6 +159,7 @@ Typeahead.propTypes = {
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
   placeholder: PropTypes.any,
+  size: PropTypes.oneOf(Object.values(vars.sizes)),
   subLabel: PropTypes.any,
   value: PropTypes.string
 }
@@ -166,9 +168,11 @@ Typeahead.defaultProps = {
 }
 
 Typeahead.appearances = vars.appearances
+Typeahead.sizes = vars.sizes
 
 Typeahead.Suggestion = Suggestion
 
+export const sizes = vars.sizes
 export const appearances = vars.appearances
 
 export default Typeahead

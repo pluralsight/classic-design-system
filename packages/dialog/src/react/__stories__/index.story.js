@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 
 import Button from '@pluralsight/ps-design-system-button'
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import * as Text from '@pluralsight/ps-design-system-text'
 
 import Dialog from '../index.js'
 

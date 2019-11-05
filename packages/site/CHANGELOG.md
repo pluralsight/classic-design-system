@@ -3,6 +3,137 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@15.0.0...@pluralsight/ps-design-system-site@15.0.1) (2019-11-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-site
+
+
+
+
+
+# [15.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@14.1.0...@pluralsight/ps-design-system-site@15.0.0) (2019-11-04)
+
+
+### Bug Fixes
+
+* **site:** add verticaltabs to next.config.js ([6740f13](https://github.com/pluralsight/design-system/commit/6740f13))
+
+
+### Code Refactoring
+
+* **actionmenu:** esm export refactor ([0858559](https://github.com/pluralsight/design-system/commit/0858559))
+* **avatar:** esm export refactor ([e9a47ae](https://github.com/pluralsight/design-system/commit/e9a47ae))
+* **badge:** esm export refactor ([708cfd9](https://github.com/pluralsight/design-system/commit/708cfd9))
+* **banner:** esm export refactor ([739102c](https://github.com/pluralsight/design-system/commit/739102c))
+* **breadcrumb:** esm export refactor ([429c64a](https://github.com/pluralsight/design-system/commit/429c64a))
+* **card:** esm export refactor ([1cd5f17](https://github.com/pluralsight/design-system/commit/1cd5f17))
+* **carousel:** esm export refactor ([1d04738](https://github.com/pluralsight/design-system/commit/1d04738))
+* **checkbox:** esm export refactor ([6465d79](https://github.com/pluralsight/design-system/commit/6465d79))
+* **circularprogress:** esm export refactor ([5594b9a](https://github.com/pluralsight/design-system/commit/5594b9a))
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **datawell:** esm export refactor ([0c874f5](https://github.com/pluralsight/design-system/commit/0c874f5))
+* **datepicker:** esm export refactor ([3c5097c](https://github.com/pluralsight/design-system/commit/3c5097c))
+* **dialog:** esm export refactor ([3e68220](https://github.com/pluralsight/design-system/commit/3e68220))
+* **drawer:** esm export refactor ([125ac4d](https://github.com/pluralsight/design-system/commit/125ac4d))
+* **dropdown:** esm export refactor ([b485e69](https://github.com/pluralsight/design-system/commit/b485e69))
+* **emptystate:** esm export refactor ([24f5c9a](https://github.com/pluralsight/design-system/commit/24f5c9a))
+* **errors:** esm export refactor ([d0c5e2d](https://github.com/pluralsight/design-system/commit/d0c5e2d))
+* **form:** esm export refactor ([2b75fc6](https://github.com/pluralsight/design-system/commit/2b75fc6))
+* **layout:** esm export refactor ([9a143d7](https://github.com/pluralsight/design-system/commit/9a143d7))
+* **linearprogress:** esm export refactor ([012b05a](https://github.com/pluralsight/design-system/commit/012b05a))
+* **link:** esm export refactor ([28c733e](https://github.com/pluralsight/design-system/commit/28c733e))
+* **note:** esm export refactor ([87001e9](https://github.com/pluralsight/design-system/commit/87001e9))
+* **position:** esm export refactor ([b66711a](https://github.com/pluralsight/design-system/commit/b66711a))
+* **radio:** esm export refactor ([650095b](https://github.com/pluralsight/design-system/commit/650095b))
+* **row:** esm export refactor ([f9a865e](https://github.com/pluralsight/design-system/commit/f9a865e))
+* **searchinput:** esm export refactor ([82f1860](https://github.com/pluralsight/design-system/commit/82f1860))
+* **starrating:** esm export refactor ([a319ccf](https://github.com/pluralsight/design-system/commit/a319ccf))
+* **switch:** esm export refactor ([1e973fa](https://github.com/pluralsight/design-system/commit/1e973fa))
+* **tab:** esm export refactor ([5101869](https://github.com/pluralsight/design-system/commit/5101869))
+* **table:** esm export refactor ([572d0f5](https://github.com/pluralsight/design-system/commit/572d0f5))
+* **tag:** esm export refactor ([c0a59f0](https://github.com/pluralsight/design-system/commit/c0a59f0))
+* **text:** esm export refactor ([a1a6345](https://github.com/pluralsight/design-system/commit/a1a6345))
+* **textarea:** esm export refactor ([8be9bfc](https://github.com/pluralsight/design-system/commit/8be9bfc))
+* **textinput:** esm export refactor ([3df387f](https://github.com/pluralsight/design-system/commit/3df387f))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+* **tooltip:** esm export refactor ([d9f65c6](https://github.com/pluralsight/design-system/commit/d9f65c6))
+* **typeahead:** esm export refactor ([d027b3c](https://github.com/pluralsight/design-system/commit/d027b3c))
+* **util:** esm export ([55cbd9d](https://github.com/pluralsight/design-system/commit/55cbd9d))
+* **verticaltabs:** esm export refactor ([a11904a](https://github.com/pluralsight/design-system/commit/a11904a))
+* **viewtoggle:** esm export refactor ([e4121b1](https://github.com/pluralsight/design-system/commit/e4121b1))
+
+
+### BREAKING CHANGES
+
+* **typeahead:** import pattern
+* **textinput:** import pattern
+* **textarea:** import pattern
+* **tag:** import pattern
+* **table:** import pattern
+* **switch:** import pattern
+* **searchinput:** import pattern
+* **radio:** import pattern
+* **layout:** import pattern
+* **errors:** import pattern
+* **dropdown:** import pattern
+* **datepicker:** import pattern
+* **datawell:** import pattern
+* **checkbox:** import pattern
+* **viewtoggle:** import pattern
+* **verticaltabs:** import pattern
+* **text:** import pattern
+* **tab:** import pattern
+* **starrating:** import pattern
+* **row:** import pattern
+* **note:** import pattern
+* **linearprogress:** import pattern
+* **form:** import pattern
+* **banner:** import pattern
+* **emptystate:** import pattern
+* **drawer:** import pattern
+* **dialog:** import pattern
+* **circularprogress:** import pattern
+* **carousel:** import pattern
+* **card:** import pattern
+* **breadcrumb:** import pattern
+* **badge:** import pattern
+* **actionmenu:** import pattern
+* **util:** import patterns
+* **core:** import patterns
+* **tooltip:** new import pattern
+* **theme:** new import pattern
+* **position:** new import pattern
+* **link:** new import pattern
+* **avatar:** import patterns
+
+
+
+
+
+# [14.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@14.0.3...@pluralsight/ps-design-system-site@14.1.0) (2019-10-22)
+
+
+### Features
+
+* **dropdown:** adds small size dropdown ([3b628dd](https://github.com/pluralsight/design-system/commit/3b628dd))
+* **textinput:** adds small size textinput ([edf5d2d](https://github.com/pluralsight/design-system/commit/edf5d2d))
+* **typeahead:** adds small size typeahead ([c3cd0ff](https://github.com/pluralsight/design-system/commit/c3cd0ff))
+
+
+
+
+
+## [14.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@14.0.2...@pluralsight/ps-design-system-site@14.0.3) (2019-10-21)
+
+
+### Bug Fixes
+
+* **verticaltabs:** apply review suggestions ([67437ab](https://github.com/pluralsight/design-system/commit/67437ab))
+
+
+
+
+
 ## [14.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@14.0.1...@pluralsight/ps-design-system-site@14.0.2) (2019-10-11)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site

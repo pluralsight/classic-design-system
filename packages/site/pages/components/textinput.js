@@ -1,8 +1,8 @@
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import Icon from '@pluralsight/ps-design-system-icon'
 import React from 'react'
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
-import TextInput from '@pluralsight/ps-design-system-textinput/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import * as Text from '@pluralsight/ps-design-system-text'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
@@ -28,7 +28,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import TextInput from '@pluralsight/ps-design-system-textinput/react'
+        import TextInput from '@pluralsight/ps-design-system-textinput'
       </Code>
 
       <PropTypes
@@ -92,6 +92,15 @@ export default _ => (
             null,
             null,
             'refs to access underlying elements'
+          ]),
+          PropTypes.row([
+            'size',
+            PropTypes.union(TextInput.sizes),
+            null,
+            <code>medium</code>,
+            <span>
+              horizontal icon placement (from <code>TextInput.sizes</code>)
+            </span>
           ]),
           PropTypes.row([
             'subLabel',
@@ -187,6 +196,28 @@ export default _ => (
         includes={{ TextInput }}
         codes={[
           `<TextInput error label="First name" subLabel="Field is required" />`
+        ]}
+      />
+      <SectionHeading>Size</SectionHeading>
+      <P>
+        The small text input is ideal for usage within table rows otherwise use
+        the default, medium size text input, in forms for example.
+      </P>
+      <Example.React
+        orient="vertical"
+        outputStyle={{ paddingBottom: '116px' }}
+        themeToggle
+        includes={{ TextInput }}
+        codes={[
+          `
+<TextInput
+placeholder="medium text input"
+/>`,
+          `<TextInput
+placeholder="small text input"
+size={TextInput.sizes.small}
+/>
+          `
         ]}
       />
     </Content>

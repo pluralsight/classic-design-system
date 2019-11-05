@@ -1,10 +1,13 @@
 /// <reference types="react" />
 
-type Appearance = 'default' | 'subtle'
+type AppearanceMap = { default: 'default'; subtle: 'subtle' }
 
+type Appearance = keyof AppearanceMap
 export interface LinkProps {
   appearance?: Appearance
 }
 
-export default function Link(props: LinkProps): React.Component<LinkProps>
-
+declare const Link: React.FunctionComponent<LinkProps> & {
+  appearances: AppearanceMap
+}
+export default Link

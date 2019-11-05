@@ -1,4 +1,4 @@
-import Link from '@pluralsight/ps-design-system-link/react.js'
+import Link from '@pluralsight/ps-design-system-link'
 import React from 'react'
 
 import {
@@ -24,7 +24,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Link from '@pluralsight/ps-design-system-link/react'
+        import Link from '@pluralsight/ps-design-system-link'
       </Code>
 
       <PropTypes

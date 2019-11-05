@@ -1,9 +1,9 @@
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
-import Typeahead from '@pluralsight/ps-design-system-typeahead/react.js'
+import * as core from '@pluralsight/ps-design-system-core'
+import * as Text from '@pluralsight/ps-design-system-text'
+import Theme from '@pluralsight/ps-design-system-theme'
+import Typeahead from '@pluralsight/ps-design-system-typeahead'
 
 import {
   Chrome,
@@ -30,7 +30,7 @@ export default () => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Typeahead from '@pluralsight/ps-design-system-typeahead/react'
+        import Typeahead from '@pluralsight/ps-design-system-typeahead'
       </Code>
 
       <PropTypes
@@ -81,6 +81,15 @@ export default () => (
               'in-field usage hint'
             ]),
             PropTypes.row([
+              'size',
+              PropTypes.union(Typeahead.sizes),
+              null,
+              <code>medium</code>,
+              <span>
+                horizontal icon placement (from <code>Typeahead.sizes</code>)
+              </span>
+            ]),
+            PropTypes.row([
               'subLabel',
               'string',
               null,
@@ -126,6 +135,28 @@ export default () => (
   placeholder="Search"
 />
 `
+        ]}
+      />
+      <SectionHeading>Size</SectionHeading>
+      <P>
+        The small typeahead is ideal for usage within table rows otherwise use
+        the default, medium size typeahead, in forms for example.
+      </P>
+      <Example.React
+        orient="vertical"
+        outputStyle={{ paddingBottom: '116px' }}
+        themeToggle
+        includes={{ Typeahead }}
+        codes={[
+          `
+<Typeahead
+placeholder="medium typeahead"
+/>`,
+          `<Typeahead
+placeholder="small typeahead"
+size={Typeahead.sizes.small}
+/>
+          `
         ]}
       />
     </Content>

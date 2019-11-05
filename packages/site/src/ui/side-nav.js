@@ -2,8 +2,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { withRouter } from 'next/router.js'
 
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import * as core from '@pluralsight/ps-design-system-core'
+import Icon from '@pluralsight/ps-design-system-icon'
 
 import { withHeadings } from './content.js'
 import Link from './link.js'
@@ -446,6 +446,9 @@ const SideNav = withHeadings(props => (
       </NavLink>
       <NavLink href="/components/typeahead" headings={props.headings}>
         Typeahead
+      </NavLink>
+      <NavLink href="/components/verticaltabs" headings={props.headings}>
+        Vertical Tabs
       </NavLink>
       <NavLink href="/components/viewtoggle" headings={props.headings}>
         View Toggle

@@ -1,10 +1,10 @@
-import core from '@pluralsight/ps-design-system-core'
-import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb/react.js'
-import { PageHeadingLayout } from '@pluralsight/ps-design-system-layout/react.js'
+import * as core from '@pluralsight/ps-design-system-core'
+import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb'
+import { PageHeadingLayout } from '@pluralsight/ps-design-system-layout'
 import React from 'react'
-import Tab from '@pluralsight/ps-design-system-tab/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
-import { transparentize } from '@pluralsight/ps-design-system-util/color.js'
+import Tab from '@pluralsight/ps-design-system-tab'
+import Theme from '@pluralsight/ps-design-system-theme'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import {
   Chrome,
@@ -86,7 +86,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb/react'
+        import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb'
       </Code>
 
       <PropTypes

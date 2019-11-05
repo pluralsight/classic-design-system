@@ -1,9 +1,9 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
-} from '@pluralsight/ps-design-system-theme/vars.js'
-import { transparentize } from '@pluralsight/ps-design-system-util/color.js'
+} from '@pluralsight/ps-design-system-theme'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars/index.js'
 

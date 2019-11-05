@@ -5,20 +5,17 @@ import PropTypes from 'prop-types'
 import addons, { makeDecorator } from '@storybook/addons'
 import { STORY_CHANGED } from '@storybook/core-events'
 
-import core from '@pluralsight/ps-design-system-core'
-import Theme, { names } from '@pluralsight/ps-design-system-theme/react'
+import * as core from '@pluralsight/ps-design-system-core'
+import Theme, { names } from '@pluralsight/ps-design-system-theme'
 
 import { EVENTS } from './constants.js'
 
 const styles = {
   decorator: ({ themeName }) => {
     const base = css({
-      overflow: 'scroll',
-      position: 'fixed',
-      top: 0,
-      right: 0,
-      bottom: 0,
-      left: 0,
+      overflow: 'auto',
+      width: '100%',
+      height: '100vh',
       transition: `background ${core.motion.speedNormal}`,
       backgroundSize: 'cover',
       background: 'transparent'

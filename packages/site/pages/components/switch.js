@@ -1,7 +1,7 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
-import Switch from '@pluralsight/ps-design-system-switch/react.js'
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import Switch from '@pluralsight/ps-design-system-switch'
+import * as Text from '@pluralsight/ps-design-system-text'
 
 import {
   Chrome,
@@ -77,7 +77,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Switch from '@pluralsight/ps-design-system-switch/react'
+        import Switch from '@pluralsight/ps-design-system-switch'
       </Code>
 
       <PropTypes

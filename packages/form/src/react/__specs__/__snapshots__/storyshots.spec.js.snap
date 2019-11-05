@@ -2,7 +2,7 @@
 
 exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -82,7 +82,7 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
 
 exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -162,7 +162,7 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
 
 exports[`Storyshots Sample Form sample 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -228,6 +228,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     data-css-lzb8ea=""
                     disabled={false}
                     placeholder="What's your name?"
+                    size="medium"
                   />
                 </div>
               </div>
@@ -264,6 +265,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     data-css-lzb8ea=""
                     disabled={false}
                     placeholder="Do you have a nick name?"
+                    size="medium"
                   />
                 </div>
               </div>
@@ -304,6 +306,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   <input
                     data-css-lzb8ea=""
                     disabled={false}
+                    size="medium"
                     value="steve@example.com"
                   />
                 </div>

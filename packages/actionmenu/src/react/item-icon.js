@@ -1,5 +1,5 @@
 import { css } from 'glamor'
-import { vars as iconVars } from '@pluralsight/ps-design-system-icon'
+import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -12,7 +12,7 @@ const styles = {
 const ItemIcon = props => {
   return (
     <div {...styles.itemIcon(props)}>
-      {React.cloneElement(props.children, { size: iconVars.sizes.medium })}
+      {React.cloneElement(props.children, { size: iconSizes.medium })}
     </div>
   )
 }

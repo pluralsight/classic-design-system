@@ -1,6 +1,6 @@
-import core from '@pluralsight/ps-design-system-core'
-import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+import * as core from '@pluralsight/ps-design-system-core'
+import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 import * as vars from '../vars/index.js'
 
@@ -25,6 +25,10 @@ export default {
     padding: `${core.layout.spacingXSmall} ${core.layout.spacingMedium}`,
     position: 'relative',
     width: '100%'
+  },
+  '.psds-text-input__field.psds-text-input--small': {
+    height: '32px',
+    padding: `6px ${core.layout.spacingXSmall}`
   },
   '.psds-text-input__field--w-after': {
     paddingRight: 0
@@ -60,20 +64,24 @@ export default {
     background: core.colors.gray06,
     border: `1px solid ${core.colors.gray03}`
   },
-  [`.psds-text-input__field--appearance-${
-    vars.appearances.subtle
-  }.psds-theme--${themeNames.light}`]: {
+  [`.psds-text-input__field--appearance-${vars.appearances.subtle}.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray05
   },
   [`.psds-text-input__field--icon-align-${vars.iconAligns.left}`]: {
-    padding: `0 ${core.layout.spacingMedium} 0 calc(${
-      core.layout.spacingXSmall
-    } + ${iconVars.widths.medium} + ${core.layout.spacingXSmall})`
+    padding: `0 ${core.layout.spacingMedium} 0 calc(${core.layout.spacingXSmall} + ${iconWidths.medium} + ${core.layout.spacingXSmall})`
   },
   [`.psds-text-input__field--icon-align-${vars.iconAligns.right}`]: {
-    padding: `0 calc(${core.layout.spacingXSmall} + ${
-      iconVars.widths.medium
-    } + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`
+    padding: `0 calc(${core.layout.spacingXSmall} + ${iconWidths.medium} + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`
+  },
+  [`.psds-text-input__field--icon-align-${vars.iconAligns.left}.psds-text-input--small`]: {
+    padding: `0 ${core.layout.spacingXSmall} 0 ${parseInt(
+      core.layout.spacingMedium,
+      10
+    ) + parseInt(iconWidths.medium, 10)}px`
+  },
+  [`.psds-text-input__field--icon-align-${vars.iconAligns.right}.psds-text-input--small`]: {
+    padding: `0 ${parseInt(core.layout.spacingMedium, 10) +
+      parseInt(iconWidths.medium, 10)}px 0 ${core.layout.spacingXSmall}`
   },
 
   // __field-container
@@ -132,9 +140,7 @@ export default {
   // __error
   '.psds-text-input__error': {
     position: 'absolute',
-    right: `calc(-1 * (${iconVars.widths.medium} + ${
-      core.layout.spacingXSmall
-    }))`,
+    right: `calc(-1 * (${iconWidths.medium} + ${core.layout.spacingXSmall}))`,
     display: 'flex',
     alignItems: 'center',
     color: core.colors.red,

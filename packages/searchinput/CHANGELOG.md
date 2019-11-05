@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@2.1.0...@pluralsight/ps-design-system-searchinput@3.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **circularprogress:** esm export refactor ([5594b9a](https://github.com/pluralsight/design-system/commit/5594b9a))
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **searchinput:** esm export refactor ([82f1860](https://github.com/pluralsight/design-system/commit/82f1860))
+* **textinput:** esm export refactor ([3df387f](https://github.com/pluralsight/design-system/commit/3df387f))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+
+
+### BREAKING CHANGES
+
+* **textinput:** import pattern
+* **searchinput:** import pattern
+* **circularprogress:** import pattern
+* **core:** import patterns
+* **theme:** new import pattern
+
+
+
+
+
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@2.0.6...@pluralsight/ps-design-system-searchinput@2.1.0) (2019-10-22)
+
+
+### Features
+
+* **textinput:** adds small size textinput ([edf5d2d](https://github.com/pluralsight/design-system/commit/edf5d2d))
+
+
+
+
+
+## [2.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@2.0.5...@pluralsight/ps-design-system-searchinput@2.0.6) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-searchinput
+
+
+
+
+
 ## [2.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@2.0.4...@pluralsight/ps-design-system-searchinput@2.0.5) (2019-10-09)
 
 

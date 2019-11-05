@@ -1,10 +1,10 @@
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react.js'
-import Dropdown from '@pluralsight/ps-design-system-dropdown/react.js'
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import * as core from '@pluralsight/ps-design-system-core'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import * as Text from '@pluralsight/ps-design-system-text'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
@@ -116,7 +116,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
+        import Dropdown from '@pluralsight/ps-design-system-dropdown'
       </Code>
       <PropTypes
         props={[
@@ -170,6 +170,15 @@ export default _ => (
             null,
             null,
             'in-field usage hint'
+          ]),
+          PropTypes.row([
+            'size',
+            PropTypes.union(Dropdown.sizes),
+            null,
+            <code>medium</code>,
+            <span>
+              horizontal icon placement (from <code>Dropdown.sizes</code>)
+            </span>
           ]),
           PropTypes.row([
             'subLabel',
@@ -326,6 +335,40 @@ export default _ => (
   error
   label="Level"
   placeholder="Select level"
+  menu={
+    <ActionMenu>
+      <ActionMenu.Item>Beginner</ActionMenu.Item>
+      <ActionMenu.Item>Intermediate</ActionMenu.Item>
+      <ActionMenu.Item>Advanced</ActionMenu.Item>
+    </ActionMenu>
+  }
+/>`
+        ]}
+      />
+      <SectionHeading>Size</SectionHeading>
+      <P>
+        The small dropdown is ideal for usage within table rows otherwise use
+        the default, medium size dropdown, in forms for example.
+      </P>
+      <Example.React
+        orient="vertical"
+        outputStyle={{ paddingBottom: '116px' }}
+        themeToggle
+        includes={{ ActionMenu, Dropdown }}
+        codes={[
+          `<Dropdown
+  placeholder="medium dropdown"
+  menu={
+    <ActionMenu>
+      <ActionMenu.Item>Beginner</ActionMenu.Item>
+      <ActionMenu.Item>Intermediate</ActionMenu.Item>
+      <ActionMenu.Item>Advanced</ActionMenu.Item>
+    </ActionMenu>
+  }
+/>`,
+          `<Dropdown
+  size={Dropdown.sizes.small}
+  placeholder="Small dropdown"
   menu={
     <ActionMenu>
       <ActionMenu.Item>Beginner</ActionMenu.Item>

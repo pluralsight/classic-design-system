@@ -1,7 +1,7 @@
-import { transparentize } from '@pluralsight/ps-design-system-util/color.js'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 
-import core from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars.js'
+import * as core from '@pluralsight/ps-design-system-core'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 import { defaultWithColor, subtleThemeWithColor } from '../js/index.js'
 import { colors } from '../vars/index.js'

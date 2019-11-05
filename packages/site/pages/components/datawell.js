@@ -1,7 +1,7 @@
 import React from 'react'
 
-import DataWell from '@pluralsight/ps-design-system-datawell/react.js'
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import DataWell from '@pluralsight/ps-design-system-datawell'
+import * as Text from '@pluralsight/ps-design-system-text'
 
 import {
   Chrome,
@@ -27,7 +27,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import DataWell from '@pluralsight/ps-design-system-datawell/react'
+        import DataWell from '@pluralsight/ps-design-system-datawell'
       </Code>
 
       <PropTypes

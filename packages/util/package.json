@@ -1,19 +1,20 @@
 {
   "name": "@pluralsight/ps-design-system-util",
-  "version": "2.0.5",
+  "version": "3.0.0",
   "description": "Runtime dependencies for utilitarian tasks. Analogous to a lodash.",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
-  "main": "index.js",
+  "keywords": [],
+  "main": "dist/index.js",
+  "module": "src/index.js",
   "scripts": {
     "build": "babel --root-mode upward src --out-dir dist",
     "build:watch": "npm run build -- --watch",
+    "prepublish": "npm run build",
     "test": "jest",
-    "test:watch": "npm run test -- --watch",
-    "prepublish": "npm run build"
+    "test:watch": "npm run test -- --watch"
   },
-  "keywords": [],
   "dependencies": {
     "prop-types": "^15.7.2"
   },

@@ -1,7 +1,7 @@
-import Icon from '@pluralsight/ps-design-system-icon/react.js'
+import Icon from '@pluralsight/ps-design-system-icon'
 import React from 'react'
-import Tag from '@pluralsight/ps-design-system-tag/react.js'
-import * as Text from '@pluralsight/ps-design-system-text/react.js'
+import Tag from '@pluralsight/ps-design-system-tag'
+import * as Text from '@pluralsight/ps-design-system-text'
 
 import {
   Chrome,
@@ -24,7 +24,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Tag from '@pluralsight/ps-design-system-tag/react'
+        import Tag from '@pluralsight/ps-design-system-tag'
       </Code>
 
       <PropTypes

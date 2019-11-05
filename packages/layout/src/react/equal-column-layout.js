@@ -2,8 +2,8 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { EqualColumnLayout as vars } from '../vars/index.js'
-import { EqualColumnLayout as css } from '../css/index.js'
+import { equalColumnLayout as vars } from '../vars/index.js'
+import { equalColumnLayoutCSS as css } from '../css/index.js'
 
 const styleLayout = props => glamor.css(css['.psds-equal-column-layout'])
 

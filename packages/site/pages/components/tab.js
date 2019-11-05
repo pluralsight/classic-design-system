@@ -1,8 +1,8 @@
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
-import Tab from '@pluralsight/ps-design-system-tab/react.js'
-import Theme from '@pluralsight/ps-design-system-theme/react.js'
+import * as core from '@pluralsight/ps-design-system-core'
+import Tab from '@pluralsight/ps-design-system-tab'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
@@ -123,7 +123,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Tab from '@pluralsight/ps-design-system-tab/react'
+        import Tab from '@pluralsight/ps-design-system-tab'
       </Code>
 
       <PropTypes

@@ -1,5 +1,5 @@
 import { action } from '@storybook/addon-actions'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import Icon from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 

@@ -1,20 +1,22 @@
 {
   "name": "@pluralsight/ps-design-system-core",
-  "version": "4.4.5",
+  "version": "5.0.0",
   "description": "Collection of Core design elements for the Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
-  "main": "js/index.js",
+  "main": "dist/index.js",
   "module": "js/index.js",
   "scripts": {
-    "build": "node ./build",
+    "build": "run-s build:js build:css",
+    "build:css": "node ./build",
+    "build:js": "babel --root-mode upward js --out-dir dist",
     "prepublish": "npm run build"
   },
   "style": "css/index.css",
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.0",
+    "@pluralsight/ps-design-system-build": "^1.11.1",
     "autoprefixer": "^7.1.1",
     "postcss-import": "^10.0.0"
   }

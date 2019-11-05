@@ -3,6 +3,43 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@4.1.0...@pluralsight/ps-design-system-drawer@5.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **drawer:** esm export refactor ([125ac4d](https://github.com/pluralsight/design-system/commit/125ac4d))
+* **row:** esm export refactor ([f9a865e](https://github.com/pluralsight/design-system/commit/f9a865e))
+* **text:** esm export refactor ([a1a6345](https://github.com/pluralsight/design-system/commit/a1a6345))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+* **util:** esm export ([55cbd9d](https://github.com/pluralsight/design-system/commit/55cbd9d))
+
+
+### BREAKING CHANGES
+
+* **text:** import pattern
+* **row:** import pattern
+* **drawer:** import pattern
+* **util:** import patterns
+* **core:** import patterns
+* **theme:** new import pattern
+
+
+
+
+
+# [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@4.0.7...@pluralsight/ps-design-system-drawer@4.1.0) (2019-10-21)
+
+
+### Features
+
+* **verticaltabs:** new verticaltabs component ([c1748e8](https://github.com/pluralsight/design-system/commit/c1748e8))
+
+
+
+
+
 ## [4.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@4.0.6...@pluralsight/ps-design-system-drawer@4.0.7) (2019-10-09)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-drawer

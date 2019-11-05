@@ -17,6 +17,7 @@ exports[`Storyshots SearchInput default 1`] = `
           data-css-lzb8ea=""
           disabled={false}
           placeholder="Search"
+          size="medium"
           type="search"
         />
       </div>
@@ -59,6 +60,7 @@ exports[`Storyshots SearchInput when loading 1`] = `
           data-css-lzb8ea=""
           disabled={false}
           placeholder="Search"
+          size="medium"
           type="search"
         />
       </div>
@@ -118,6 +120,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
           data-css-lzb8ea=""
           disabled={false}
           placeholder="Le placeholder"
+          size="medium"
           type="search"
         />
         <div
@@ -213,6 +216,7 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
           data-css-lzb8ea=""
           disabled={false}
           placeholder="Search"
+          size="medium"
           type="search"
         />
         <div

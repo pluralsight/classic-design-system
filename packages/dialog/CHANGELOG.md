@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@6.0.6...@pluralsight/ps-design-system-dialog@7.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **dialog:** esm export refactor ([3e68220](https://github.com/pluralsight/design-system/commit/3e68220))
+* **focusmanager:** esm export refactor ([0cd0620](https://github.com/pluralsight/design-system/commit/0cd0620))
+* **text:** esm export refactor ([a1a6345](https://github.com/pluralsight/design-system/commit/a1a6345))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+* **util:** esm export ([55cbd9d](https://github.com/pluralsight/design-system/commit/55cbd9d))
+
+
+### BREAKING CHANGES
+
+* **text:** import pattern
+* **dialog:** import pattern
+* **util:** import patterns
+* **core:** import patterns
+* **theme:** new import pattern
+* **focusmanager:** new import pattern
+
+
+
+
+
+## [6.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@6.0.5...@pluralsight/ps-design-system-dialog@6.0.6) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
 ## [6.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@6.0.4...@pluralsight/ps-design-system-dialog@6.0.5) (2019-10-09)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog

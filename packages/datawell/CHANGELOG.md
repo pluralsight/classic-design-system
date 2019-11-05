@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@2.1.2...@pluralsight/ps-design-system-datawell@3.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **datawell:** esm export refactor ([0c874f5](https://github.com/pluralsight/design-system/commit/0c874f5))
+* **text:** esm export refactor ([a1a6345](https://github.com/pluralsight/design-system/commit/a1a6345))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+
+
+### BREAKING CHANGES
+
+* **datawell:** import pattern
+* **text:** import pattern
+* **core:** import patterns
+* **theme:** new import pattern
+
+
+
+
+
+## [2.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@2.1.1...@pluralsight/ps-design-system-datawell@2.1.2) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datawell
+
+
+
+
+
 ## [2.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@2.1.0...@pluralsight/ps-design-system-datawell@2.1.1) (2019-10-02)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datawell

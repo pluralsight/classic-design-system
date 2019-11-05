@@ -1,7 +1,7 @@
 import camelize from 'camelize'
 import importAll from 'import-all.macro'
 
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 
 const imported = importAll.sync('../react/icons/*.dist.js')
 

@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react'
 
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import * as core from '@pluralsight/ps-design-system-core'
+import Icon from '@pluralsight/ps-design-system-icon'
 
 import TextInput from '../index.js'
 
@@ -43,20 +43,28 @@ storiesOf('labels', module)
     />
   ))
 
-const appearanceStory = storiesOf('appearance', module).addDecorator(
-  PaddingDecorator
-)
+const appearanceStory = storiesOf('appearance', module)
+  .addDecorator(PaddingDecorator)
+  .add(`small`, _ => (
+    <TextInput size={TextInput.sizes.small} placeholder="small input" />
+  ))
 
 Object.keys(TextInput.appearances).forEach(appearance =>
-  Object.keys(TextInput.iconAligns).forEach(iconAlign =>
-    appearanceStory.add(`${appearance} w/ iconAlign ${iconAlign}`, _ => (
-      <TextInput
-        appearance={appearance}
-        iconAlign={iconAlign}
-        icon={<Icon id={Icon.ids.info} />}
-        placeholder="The placeholder "
-      />
-    ))
+  Object.keys(TextInput.sizes).forEach(size =>
+    Object.keys(TextInput.iconAligns).forEach(iconAlign =>
+      appearanceStory.add(
+        `${appearance} ${size} w/ iconAlign ${iconAlign}`,
+        _ => (
+          <TextInput
+            size={size}
+            appearance={appearance}
+            iconAlign={iconAlign}
+            icon={<Icon id={Icon.ids.info} />}
+            placeholder="The placeholder "
+          />
+        )
+      )
+    )
   )
 )
 Object.keys(TextInput.appearances).forEach(appearance =>

@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@1.3.1...@pluralsight/ps-design-system-position@2.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **position:** esm export refactor ([b66711a](https://github.com/pluralsight/design-system/commit/b66711a))
+* **tooltip:** esm export refactor ([d9f65c6](https://github.com/pluralsight/design-system/commit/d9f65c6))
+
+
+### BREAKING CHANGES
+
+* **core:** import patterns
+* **tooltip:** new import pattern
+* **position:** new import pattern
+
+
+
+
+
+## [1.3.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@1.3.0...@pluralsight/ps-design-system-position@1.3.1) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-position
+
+
+
+
+
 # [1.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@1.2.5...@pluralsight/ps-design-system-position@1.3.0) (2019-10-09)
 
 

@@ -2,7 +2,7 @@
 
 exports[`Storyshots customized styles item style 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -78,7 +78,7 @@ exports[`Storyshots customized styles item style 1`] = `
 
 exports[`Storyshots disabled item 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -155,7 +155,7 @@ exports[`Storyshots disabled item 1`] = `
 
 exports[`Storyshots disabled links 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -232,7 +232,7 @@ exports[`Storyshots disabled links 1`] = `
 
 exports[`Storyshots disabled multiple, all disabled 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -277,7 +277,7 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
 
 exports[`Storyshots disabled nested 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -337,7 +337,7 @@ exports[`Storyshots disabled nested 1`] = `
 
 exports[`Storyshots disabled single, disabled 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -366,7 +366,7 @@ exports[`Storyshots disabled single, disabled 1`] = `
 
 exports[`Storyshots dividers edge 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -399,7 +399,7 @@ exports[`Storyshots dividers edge 1`] = `
 
 exports[`Storyshots dividers sandwich 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -464,7 +464,7 @@ exports[`Storyshots dividers sandwich 1`] = `
 
 exports[`Storyshots link a w/ href 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -494,7 +494,7 @@ exports[`Storyshots link a w/ href 1`] = `
 
 exports[`Storyshots menu items long text 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -539,7 +539,7 @@ exports[`Storyshots menu items long text 1`] = `
 
 exports[`Storyshots menu items long text with icon 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -585,7 +585,7 @@ exports[`Storyshots menu items long text with icon 1`] = `
 
 exports[`Storyshots menu items lots 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -1108,7 +1108,7 @@ exports[`Storyshots menu items lots 1`] = `
 
 exports[`Storyshots menu items multiple 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -1169,7 +1169,7 @@ exports[`Storyshots menu items multiple 1`] = `
 
 exports[`Storyshots menu items null item 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -1214,7 +1214,7 @@ exports[`Storyshots menu items null item 1`] = `
 
 exports[`Storyshots menu items one 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -1243,7 +1243,7 @@ exports[`Storyshots menu items one 1`] = `
 
 exports[`Storyshots menu items with icons 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -1355,7 +1355,7 @@ exports[`Storyshots menu items with icons 1`] = `
 
 exports[`Storyshots nested origin bottomLeft 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1425,7 +1425,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
 
 exports[`Storyshots nested origin bottomRight 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1495,7 +1495,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
 
 exports[`Storyshots nested origin topLeft 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1565,7 +1565,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
 
 exports[`Storyshots nested origin topRight 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1635,7 +1635,7 @@ exports[`Storyshots nested origin topRight 1`] = `
 
 exports[`Storyshots onClick flat 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -1696,7 +1696,7 @@ exports[`Storyshots onClick flat 1`] = `
 
 exports[`Storyshots onClick nested 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -1932,7 +1932,7 @@ exports[`Storyshots onClick nested 1`] = `
 
 exports[`Storyshots shouldFocusOnMount false 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-13za233=""
@@ -1993,7 +1993,7 @@ exports[`Storyshots shouldFocusOnMount false 1`] = `
 
 exports[`Storyshots with Position BelowLeft 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -2092,7 +2092,7 @@ exports[`Storyshots with Position BelowLeft 1`] = `
 
 exports[`Storyshots with Position BelowRight 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={

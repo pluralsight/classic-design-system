@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@4.0.5...@pluralsight/ps-design-system-starrating@5.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **starrating:** esm export refactor ([a319ccf](https://github.com/pluralsight/design-system/commit/a319ccf))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+
+
+### BREAKING CHANGES
+
+* **starrating:** import pattern
+* **core:** import patterns
+* **theme:** new import pattern
+
+
+
+
+
+## [4.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@4.0.4...@pluralsight/ps-design-system-starrating@4.0.5) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
 ## [4.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@4.0.3...@pluralsight/ps-design-system-starrating@4.0.4) (2019-10-09)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-starrating

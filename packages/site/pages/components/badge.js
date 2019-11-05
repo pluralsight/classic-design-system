@@ -1,6 +1,6 @@
 import React from 'react'
-import Badge from '@pluralsight/ps-design-system-badge/react.js'
-import Text from '@pluralsight/ps-design-system-text/react.js'
+import Badge from '@pluralsight/ps-design-system-badge'
+import * as Text from '@pluralsight/ps-design-system-text'
 
 import {
   Chrome,
@@ -25,7 +25,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Badge from '@pluralsight/ps-design-system-badge/react'
+        import Badge from '@pluralsight/ps-design-system-badge'
       </Code>
 
       <PropTypes

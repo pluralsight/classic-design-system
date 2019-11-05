@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@6.0.1...@pluralsight/ps-design-system-actionmenu@7.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **actionmenu:** esm export refactor ([0858559](https://github.com/pluralsight/design-system/commit/0858559))
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **position:** esm export refactor ([b66711a](https://github.com/pluralsight/design-system/commit/b66711a))
+
+
+### BREAKING CHANGES
+
+* **actionmenu:** import pattern
+* **core:** import patterns
+* **position:** new import pattern
+
+
+
+
+
+## [6.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@6.0.0...@pluralsight/ps-design-system-actionmenu@6.0.1) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
 # [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@5.2.2...@pluralsight/ps-design-system-actionmenu@6.0.0) (2019-10-09)
 
 

@@ -2,7 +2,7 @@
 
 exports[`Storyshots as link hrefs 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-nipl9k=""
@@ -42,7 +42,7 @@ exports[`Storyshots as link hrefs 1`] = `
 
 exports[`Storyshots disabled disabled 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-nipl9k=""
@@ -82,7 +82,7 @@ exports[`Storyshots disabled disabled 1`] = `
 
 exports[`Storyshots normal looks great 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-nipl9k=""
@@ -121,7 +121,7 @@ exports[`Storyshots normal looks great 1`] = `
 
 exports[`Storyshots with onClick clicks once 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-nipl9k=""

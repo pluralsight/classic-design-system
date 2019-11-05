@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.4.5...@pluralsight/ps-design-system-core@5.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+
+
+### BREAKING CHANGES
+
+* **core:** import patterns
+
+
+
+
+
 ## [4.4.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.4.4...@pluralsight/ps-design-system-core@4.4.5) (2019-10-02)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-core
