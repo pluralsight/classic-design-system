@@ -28,7 +28,7 @@ describe('DatePicker', () => {
     it('should call onBlur when onBlur is called for a valid date', () => {
       const onBlurMock = jest.fn()
       const { getByDisplayValue } = render(
-        <DatePicker value="8/14/2001" onBlur={onBlurMock} />
+        <DatePicker value="8/14/2001" onSubBlur={onBlurMock} />
       )
       fireEvent.blur(getByDisplayValue('2001'))
       expect(onBlurMock).toHaveBeenCalledTimes(1)
@@ -38,7 +38,7 @@ describe('DatePicker', () => {
     it('should call onBlur when onBlur is called for an invalid date', () => {
       const onBlurMock = jest.fn()
       const { getByDisplayValue } = render(
-        <DatePicker value="8/14/2001" onBlur={onBlurMock} />
+        <DatePicker value="8/14/2001" onSubBlur={onBlurMock} />
       )
       const yearSubField = getByDisplayValue('2001')
       fireEvent.change(yearSubField, { target: { value: '' } })

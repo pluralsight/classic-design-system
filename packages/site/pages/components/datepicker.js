@@ -69,7 +69,7 @@ export default _ => (
             'identifying string for input'
           ]),
           PropTypes.row([
-            'onBlur',
+            'onSubBlur',
             "('mm/dd/yyyy') => ()",
             null,
             null,
