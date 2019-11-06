@@ -1,4 +1,4 @@
-// TODO: how can I avoid doing this .default bit?	 module.exports = require('./dist/react')
+// TODO: how can I avoid doing this .default bit?	 module.exports = require('./dist/cjs/react')
 
 module.exports = {
   Code: require('./dist/cjs/react/code').default,

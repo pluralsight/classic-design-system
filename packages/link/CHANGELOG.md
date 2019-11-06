@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@8.0.1...@pluralsight/ps-design-system-link@8.0.2) (2019-11-06)
+
+
+### Bug Fixes
+
+* revert react dep ([c8d1a5a](https://github.com/pluralsight/design-system/commit/c8d1a5a5456e99e9cee64c9ccd8b1a98d0642ac0))
+
+
+
+
+
 ## [8.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@8.0.0...@pluralsight/ps-design-system-link@8.0.1) (2019-11-05)
 
 

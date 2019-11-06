@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-dialog",
-  "version": "7.0.0",
+  "version": "7.0.2",
   "description": "Design System component for dialog ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -20,24 +20,24 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^5.0.0",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.7",
-    "@pluralsight/ps-design-system-focusmanager": "^4.0.0",
-    "@pluralsight/ps-design-system-util": "^3.0.0",
+    "@pluralsight/ps-design-system-core": "^5.0.1",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.1.8",
+    "@pluralsight/ps-design-system-focusmanager": "^4.0.2",
+    "@pluralsight/ps-design-system-util": "^3.0.1",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^3.1.4",
-    "@pluralsight/ps-design-system-theme": "^3.0.2",
-    "glamor": "^2.20.0",
-    "react": ">=16.8.0 < 17.0.0"
+    "@pluralsight/ps-design-system-normalize": "^3.1.7",
+    "@pluralsight/ps-design-system-theme": "^4.0.0",
+    "glamor": "^2.20.40",
+    "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.1",
-    "@pluralsight/ps-design-system-button": "^15.0.0",
-    "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.0",
-    "@pluralsight/ps-design-system-text": "^14.0.0",
-    "@pluralsight/ps-design-system-theme": "^4.0.0"
+    "@pluralsight/ps-design-system-build": "^1.11.2",
+    "@pluralsight/ps-design-system-button": "^15.0.1",
+    "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.1",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.1",
+    "@pluralsight/ps-design-system-text": "^14.0.2",
+    "@pluralsight/ps-design-system-theme": "^4.0.1"
   }
 }
