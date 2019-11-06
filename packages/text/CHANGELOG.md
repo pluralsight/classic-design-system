@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.0...@pluralsight/ps-design-system-text@14.0.1) (2019-11-06)
+
+
+### Bug Fixes
+
+* cjs paths ([22702b3](https://github.com/pluralsight/design-system/commit/22702b3a7e20e417e7f40bf0d13cfedfb6c3b2ee))
+
+
+
+
+
 # [14.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@13.0.3...@pluralsight/ps-design-system-text@14.0.0) (2019-11-04)
 
 
