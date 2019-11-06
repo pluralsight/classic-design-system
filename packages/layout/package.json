@@ -26,9 +26,9 @@
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^3.1.4",
-    "glamor": "^2.20.0",
-    "react": ">=16.3.0 < 17.0.0"
+    "@pluralsight/ps-design-system-normalize": "^3.1.7",
+    "glamor": "^2.20.40",
+    "react": "^16.8.6"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-button": "^15.0.0",

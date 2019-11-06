@@ -25,14 +25,14 @@
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.7",
     "@pluralsight/ps-design-system-icon": "^14.0.0",
     "@pluralsight/ps-design-system-util": "^3.0.0",
-    "element-closest": "^2.0.2",
+    "element-closest": "^3.0.2",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^3.1.4",
-    "@pluralsight/ps-design-system-theme": "^3.0.2",
-    "glamor": "^2.20.0",
-    "react": ">=16.8.0 < 17.0.0"
+    "@pluralsight/ps-design-system-normalize": "^3.1.7",
+    "@pluralsight/ps-design-system-theme": "^4.0.0",
+    "glamor": "^2.20.40",
+    "react": "^16.8.6"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.1",
