@@ -158,8 +158,14 @@ const DatePicker = React.forwardRef((props, ref) => {
       [name]: forceValidValueFor[name](currentDateOverwrittenByEventValue)
     }
 
+    const onBlurDate = {
+      ...currentDateOverwrittenByEventValue,
+      ...nextDate
+    }
+
     setDate(nextDate)
 
+    isFunction(props.onSubBlur) && props.onSubBlur(formatDate(onBlurDate))
     if (isValidDate(nextDate) && isFunction(props.onSelect)) {
       props.onSelect(formatDate(nextDate), nextDate)
     }
@@ -274,6 +280,7 @@ DatePicker.propTypes = {
   label: PropTypes.node,
   onKeyDown: PropTypes.func,
   onSelect: PropTypes.func,
+  onSubBlur: PropTypes.func,
   style: PropTypes.object,
   subLabel: PropTypes.node,
   value: PropTypes.string

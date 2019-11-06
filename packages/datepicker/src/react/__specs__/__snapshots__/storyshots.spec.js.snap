@@ -1115,6 +1115,7 @@ exports[`Storyshots labels none 1`] = `
           <input
             data-css-gyrv08=""
             disabled={false}
+            onSelect={[Function]}
             readOnly={true}
             tabIndex="-1"
           />

@@ -28,7 +28,9 @@ function StateDemo(props) {
 StateDemo.propTypes = { value: PropTypes.string }
 
 storiesOf('labels', module)
-  .add('none', _ => <DatePicker />)
+  .add('none', _ => (
+    <DatePicker onSelect={action('onselect')} onSubBlur={action('onblur')} />
+  ))
   .add('compare w/ textinput', _ => (
     <div>
       <div style={{ marginBottom: core.layout.spacingSmall }}>
