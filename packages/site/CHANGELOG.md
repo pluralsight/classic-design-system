@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [15.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@15.0.3...@pluralsight/ps-design-system-site@15.1.0) (2019-11-06)
+
+
+### Features
+
+* **datepicker:** adds onSubBlur callback to datepicker ([f78c732](https://github.com/pluralsight/design-system/commit/f78c732a3ff4c45e48146ef067dd0a1a2be97d03))
+* **datepicker:** subfield onBlur callback ([e3750b6](https://github.com/pluralsight/design-system/commit/e3750b660c31d5523c28a7a25a46e807624cdaf8))
+
+
+
+
+
 ## [15.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@15.0.2...@pluralsight/ps-design-system-site@15.0.3) (2019-11-06)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site

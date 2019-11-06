@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@5.0.1...@pluralsight/ps-design-system-datepicker@5.1.0) (2019-11-06)
+
+
+### Bug Fixes
+
+* **datepicker:** fix onblur behavior for subfields in datepicker ([85d7238](https://github.com/pluralsight/design-system/commit/85d72386884c61f4cfbf27d3d27f983484f062b9))
+* **datepicker:** fix test for onselect when invalid date is provided ([c6e010f](https://github.com/pluralsight/design-system/commit/c6e010fd9f0b96866e79f7076560967fa9218e87))
+
+
+### Features
+
+* **datepicker:** adds onSubBlur callback to datepicker ([f78c732](https://github.com/pluralsight/design-system/commit/f78c732a3ff4c45e48146ef067dd0a1a2be97d03))
+* **datepicker:** subfield onBlur callback ([e3750b6](https://github.com/pluralsight/design-system/commit/e3750b660c31d5523c28a7a25a46e807624cdaf8))
+
+
+
+
+
 ## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@5.0.0...@pluralsight/ps-design-system-datepicker@5.0.1) (2019-11-06)
 
 
