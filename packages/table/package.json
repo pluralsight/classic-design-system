@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-table",
-  "version": "6.0.1",
+  "version": "6.0.2",
   "description": "Design System component for table ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^5.0.0",
-    "@pluralsight/ps-design-system-drawer": "^5.0.0",
+    "@pluralsight/ps-design-system-drawer": "^5.0.1",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.7",
     "@pluralsight/ps-design-system-icon": "^14.0.0",
     "prop-types": "^15.7.2"
