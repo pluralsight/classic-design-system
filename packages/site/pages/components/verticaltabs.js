@@ -1,7 +1,7 @@
 import React from 'react'
 
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {PlaceholderIcon} from '@pluralsight/ps-design-system-icon'
 import * as Text from '@pluralsight/ps-design-system-text'
 import * as core from '@pluralsight/ps-design-system-core'
 import {
@@ -125,7 +125,7 @@ export default _ => (
           ],
           'VerticalTabs.Tier1.Header': [
             PropTypes.row(['children', 'string', null, null, 'header text']),
-            PropTypes.row(['icon', 'Icon', null, null, 'Icon component'])
+            PropTypes.row(['icon', <code>*Icon</code>, null, null, 'Icon component'])
           ],
           'VerticalTabs.Tier2': [
             PropTypes.row([
@@ -145,7 +145,7 @@ export default _ => (
           ],
           'VerticalTabs.Tier2.Header': [
             PropTypes.row(['children', 'string', null, null, 'header text']),
-            PropTypes.row(['icon', 'Icon', null, null, 'Icon component'])
+            PropTypes.row(['icon', <code>*Icon</code>, null, null, 'Icon component'])
           ]
         }}
       />
@@ -169,7 +169,7 @@ export default _ => (
       <Example.React
         themeToggle
         orient="vertical"
-        includes={{ VerticalTabs, Icon }}
+        includes={{ VerticalTabs, PlaceholderIcon }}
         codes={[
           `
 <VerticalTabs>
@@ -202,7 +202,7 @@ export default _ => (
   <VerticalTabs.Tier1
     header={
       <VerticalTabs.Tier1.Header
-        icon={<Icon id={Icon.ids.placeholder} />}
+        icon={<PlaceholderIcon />}
       >
         Color
       </VerticalTabs.Tier1.Header>
@@ -211,7 +211,7 @@ export default _ => (
   <VerticalTabs.Tier1
     header={
       <VerticalTabs.Tier1.Header
-        icon={<Icon id={Icon.ids.placeholder} />}
+        icon={<PlaceholderIcon />}
       >
         Typography
       </VerticalTabs.Tier1.Header>
@@ -220,7 +220,7 @@ export default _ => (
   <VerticalTabs.Tier1
     header={
       <VerticalTabs.Tier1.Header
-        icon={<Icon id={Icon.ids.placeholder} />}
+        icon={<PlaceholderIcon />}
       >
         Spacing
       </VerticalTabs.Tier1.Header>
@@ -229,7 +229,7 @@ export default _ => (
   <VerticalTabs.Tier1
     header={
       <VerticalTabs.Tier1.Header
-        icon={<Icon id={Icon.ids.placeholder} />}
+        icon={<PlaceholderIcon />}
       >
         Iconography
       </VerticalTabs.Tier1.Header>
@@ -238,7 +238,7 @@ export default _ => (
   <VerticalTabs.Tier1
     header={
       <VerticalTabs.Tier1.Header
-        icon={<Icon id={Icon.ids.placeholder} />}
+        icon={<PlaceholderIcon />}
       >
         Voice & Tone
       </VerticalTabs.Tier1.Header>
@@ -291,7 +291,7 @@ startOpen
       <Example.React
         themeToggle
         orient="vertical"
-        includes={{ VerticalTabs, Icon }}
+        includes={{ VerticalTabs }}
         codes={[
           `
   <VerticalTabs>
@@ -321,7 +321,7 @@ startOpen
       <Example.React
         themeToggle
         orient="vertical"
-        includes={{ VerticalTabs, Icon }}
+        includes={{ VerticalTabs, PlaceholderIcon }}
         codes={[
           `
   <VerticalTabs>
@@ -364,7 +364,7 @@ startOpen
           <VerticalTabs.Tier1
             header={
               <VerticalTabs.Tier1.Header
-                icon={<Icon id={Icon.ids.placeholder} />}
+                icon={<PlaceholderIcon />}
               >
                 Header Link
               </VerticalTabs.Tier1.Header>

@@ -1,391 +1,200 @@
 import { storiesOf } from '@storybook/react'
+import { css } from 'glamor'
 import React from 'react'
-import Icon from '@pluralsight/ps-design-system-icon'
+
+import * as Icon from '@pluralsight/ps-design-system-icon'
+
 import VerticalTabs from '../index.js'
 
-storiesOf('VerticalTabs', module)
-  .addDecorator(story => (
-    <div style={{ height: '100%', width: '240px' }}>{story()}</div>
+const { CollapsibleGroup, Group, Tier1, Tier2 } = VerticalTabs
+
+const noop = () => null
+
+const longTitle = `Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.`
+
+const ContainerDecorator = (storyFn, _, parameters) => (
+  <div {...css({ height: '100%', width: '240px' })}>
+    <VerticalTabs>{storyFn()}</VerticalTabs>
+  </div>
+)
+
+const Placeholder = props => (
+  <div {...css({ height: 100, border: '1px dashed pink' })} {...props} />
+)
+
+storiesOf('components|VerticalTabs/Group', module)
+  .addDecorator(ContainerDecorator)
+  .add('basic', () => (
+    <Group>
+      <Tier1 header={<Tier1.Header>First</Tier1.Header>} />
+      <Tier1 header={<Tier1.Header>Second</Tier1.Header>} />
+      <Tier1 header={<Tier1.Header>Third</Tier1.Header>} />
+      <Tier1 header={<Tier1.Header>Fourth</Tier1.Header>} />
+    </Group>
   ))
-  .add('No Group', _ => (
-    <VerticalTabs>
-      <VerticalTabs.Tier1
-        header={
-          <VerticalTabs.Tier1.Header>Dashboard</VerticalTabs.Tier1.Header>
-        }
-      />
-      <VerticalTabs.Tier1
-        header={<VerticalTabs.Tier1.Header>Account</VerticalTabs.Tier1.Header>}
-      />
-      <VerticalTabs.Tier1
-        active
-        header={
-          <VerticalTabs.Tier1.Header icon={<Icon id={Icon.ids.placeholder} />}>
-            People
-          </VerticalTabs.Tier1.Header>
-        }
-      >
-        <VerticalTabs.Tier2
-          active
-          header={
-            <VerticalTabs.Tier2.Header>Organization</VerticalTabs.Tier2.Header>
-          }
-        />
-        <VerticalTabs.Tier2
-          header={<VerticalTabs.Tier2.Header>Admins</VerticalTabs.Tier2.Header>}
-        />
-        <VerticalTabs.Tier2
-          header={
-            <VerticalTabs.Tier2.Header>Managers</VerticalTabs.Tier2.Header>
-          }
-        />
-        <VerticalTabs.Tier2
-          header={
-            <VerticalTabs.Tier2.Header>
-              Unassigned users
-            </VerticalTabs.Tier2.Header>
-          }
-        />
-      </VerticalTabs.Tier1>
-      <VerticalTabs.Tier1
-        header={
-          <VerticalTabs.Tier1.Header icon={<Icon id={Icon.ids.placeholder} />}>
-            Pending invites
-          </VerticalTabs.Tier1.Header>
-        }
-      />
-      <VerticalTabs.Tier1
-        header={
-          <VerticalTabs.Tier1.Header icon={<Icon id={Icon.ids.placeholder} />}>
-            Analytics
-          </VerticalTabs.Tier1.Header>
-        }
-      />
-      <VerticalTabs.Tier1
-        header={
-          <VerticalTabs.Tier1.Header icon={<Icon id={Icon.ids.placeholder} />}>
-            Log
-          </VerticalTabs.Tier1.Header>
-        }
-      />
-      <VerticalTabs.Divider />
-      <VerticalTabs.Tier1
-        header={
-          <VerticalTabs.Tier1.Header icon={<Icon id={Icon.ids.placeholder} />}>
-            Item label
-          </VerticalTabs.Tier1.Header>
-        }
-      />
-      <VerticalTabs.Tier1
-        header={
-          <VerticalTabs.Tier1.Header icon={<Icon id={Icon.ids.placeholder} />}>
-            Item label
-          </VerticalTabs.Tier1.Header>
-        }
-      />
-    </VerticalTabs>
+  .add('header', () => (
+    <Group header={<Group.Header>Group Header</Group.Header>}>
+      <Tier1 header={<Tier1.Header>First</Tier1.Header>} />
+      <Tier1 header={<Tier1.Header>Second</Tier1.Header>} />
+      <Tier1 header={<Tier1.Header>Third</Tier1.Header>} />
+      <Tier1 header={<Tier1.Header>Fourth</Tier1.Header>} />
+    </Group>
   ))
-  .add('Group', _ => (
-    <VerticalTabs>
-      <VerticalTabs.Group
-        header={
-          <VerticalTabs.Group.Header>Introduction</VerticalTabs.Group.Header>
-        }
-      >
-        <VerticalTabs.Tier1
+  .add('tiers', () => (
+    <Group header={<Group.Header>Group Header</Group.Header>}>
+      <Tier1 header={<Tier1.Header>First</Tier1.Header>}>
+        <Tier2 header={<Tier2.Header>First</Tier2.Header>} />
+        <Tier2 header={<Tier2.Header>Second</Tier2.Header>} />
+        <Tier2 header={<Tier2.Header>Third</Tier2.Header>} />
+      </Tier1>
+
+      <Tier1 header={<Tier1.Header>Second</Tier1.Header>}>
+        <Tier2 header={<Tier2.Header>First</Tier2.Header>} />
+        <Tier2 header={<Tier2.Header>Second</Tier2.Header>} />
+        <Tier2 header={<Tier2.Header>Third</Tier2.Header>} />
+      </Tier1>
+    </Group>
+  ))
+  .add('active item', () => (
+    <Group header={<Group.Header>Group Header</Group.Header>}>
+      <Tier1 header={<Tier1.Header>First</Tier1.Header>} />
+      <Tier1 header={<Tier1.Header>Second</Tier1.Header>} />
+      <Tier1 active header={<Tier1.Header>Third</Tier1.Header>} />
+      <Tier1 header={<Tier1.Header>Fourth</Tier1.Header>} />
+    </Group>
+  ))
+  .add('collapsible', () => (
+    <CollapsibleGroup
+      header={<CollapsibleGroup.Header>Group Header</CollapsibleGroup.Header>}
+    >
+      <Tier1 header={<Tier1.Header>First</Tier1.Header>} />
+      <Tier1 header={<Tier1.Header>Second</Tier1.Header>} />
+      <Tier1 header={<Tier1.Header>Third</Tier1.Header>} />
+      <Tier1 header={<Tier1.Header>Fourth</Tier1.Header>} />
+    </CollapsibleGroup>
+  ))
+  .add('collapsible open', () => (
+    <CollapsibleGroup
+      header={<CollapsibleGroup.Header>Group Header</CollapsibleGroup.Header>}
+      startOpen
+    >
+      <Tier1 header={<Tier1.Header>First</Tier1.Header>} />
+      <Tier1 header={<Tier1.Header>Second</Tier1.Header>} />
+      <Tier1 header={<Tier1.Header>Third</Tier1.Header>} />
+      <Tier1 header={<Tier1.Header>Fourth</Tier1.Header>} />
+    </CollapsibleGroup>
+  ))
+
+storiesOf('components|VerticalTabs/Tier1', module)
+  .addDecorator(ContainerDecorator)
+  .add('basic', () => (
+    <Tier1
+      header={
+        <Tier1.Header icon={<Icon.PlaceholderIcon />}>
+          text here
+        </Tier1.Header>
+      }
+    />
+  ))
+  .add('link', () => (
+    <Tier1
+      header={
+        <Tier1.Header href="#" icon={<Icon.PlaceholderIcon />}>
+          text here
+        </Tier1.Header>
+      }
+    />
+  ))
+  .add('button', () => (
+    <Tier1
+      header={
+        <Tier1.Header onClick={noop} icon={<Icon.PlaceholderIcon />}>
+          text here
+        </Tier1.Header>
+      }
+    />
+  ))
+  .add('active', () => (
+    <Tier1
+      active
+      header={
+        <Tier1.Header icon={<Icon.PlaceholderIcon />}>
+          text here
+        </Tier1.Header>
+      }
+    />
+  ))
+  .add('collapsible', () => (
+    <Tier1
+      collapsible
+      header={
+        <Tier1.Header icon={<Icon.PlaceholderIcon />}>
+          text here
+        </Tier1.Header>
+      }
+    >
+      <Placeholder />
+    </Tier1>
+  ))
+
+storiesOf('components|VerticalTabs/Tier2', module)
+  .addDecorator(ContainerDecorator)
+  .add('basic', () => <Tier2 header={<Tier2.Header>text here</Tier2.Header>} />)
+  .add('link', () => (
+    <Tier2 header={<Tier2.Header href="#">text here</Tier2.Header>} />
+  ))
+  .add('button', () => (
+    <Tier2 header={<Tier2.Header onClick={noop}>text here</Tier2.Header>} />
+  ))
+  .add('active', () => (
+    <Tier2 active header={<Tier2.Header>text here</Tier2.Header>} />
+  ))
+
+storiesOf('components|VerticalTabs/truncation', module)
+  .addDecorator(ContainerDecorator)
+  .add('basic', () => (
+    <>
+      <Group header={<Group.Header>{longTitle}</Group.Header>}>
+        <Tier1 header={<Tier1.Header>{longTitle}</Tier1.Header>}>
+          <Tier2 header={<Tier2.Header>{longTitle}</Tier2.Header>} />
+          <Tier2 header={<Tier2.Header>{longTitle}</Tier2.Header>} />
+          <Tier2 header={<Tier2.Header>{longTitle}</Tier2.Header>} />
+        </Tier1>
+
+        <Tier1
           header={
-            <VerticalTabs.Tier1.Header>Install</VerticalTabs.Tier1.Header>
+            <Tier1.Header icon={<Icon.PlaceholderIcon />}>
+              {longTitle}
+            </Tier1.Header>
           }
-        />
-        <VerticalTabs.Tier1
-          header={
-            <VerticalTabs.Tier1.Header>Design assets</VerticalTabs.Tier1.Header>
-          }
-        />
-        <VerticalTabs.Tier1
-          header={
-            <VerticalTabs.Tier1.Header>Contribute</VerticalTabs.Tier1.Header>
-          }
-        />
-        <VerticalTabs.Tier1
-          header={
-            <VerticalTabs.Tier1.Header>Roadmap</VerticalTabs.Tier1.Header>
-          }
-        />
-      </VerticalTabs.Group>
-      <VerticalTabs.Divider />
-      <VerticalTabs.Group
-        header={
-          <VerticalTabs.Group.Header>Foundations</VerticalTabs.Group.Header>
-        }
-      >
-        <VerticalTabs.Tier1
-          header={
-            <VerticalTabs.Tier1.Header
-              icon={<Icon id={Icon.ids.placeholder} />}
-            >
-              Color
-            </VerticalTabs.Tier1.Header>
-          }
-        />
-        <VerticalTabs.Tier1
-          header={
-            <VerticalTabs.Tier1.Header
-              icon={<Icon id={Icon.ids.placeholder} />}
-            >
-              Typography
-            </VerticalTabs.Tier1.Header>
-          }
-        />
-        <VerticalTabs.Tier1
-          header={
-            <VerticalTabs.Tier1.Header
-              icon={<Icon id={Icon.ids.placeholder} />}
-            >
-              Spacing
-            </VerticalTabs.Tier1.Header>
-          }
-        />
-        <VerticalTabs.Tier1
-          header={
-            <VerticalTabs.Tier1.Header
-              icon={<Icon id={Icon.ids.placeholder} />}
-            >
-              Iconography
-            </VerticalTabs.Tier1.Header>
-          }
-        />
-        <VerticalTabs.Tier1
-          header={
-            <VerticalTabs.Tier1.Header
-              icon={<Icon id={Icon.ids.placeholder} />}
-            >
-              Voice & Tone
-            </VerticalTabs.Tier1.Header>
-          }
-        />
-      </VerticalTabs.Group>
-      <VerticalTabs.Divider />
-      <VerticalTabs.Group
-        header={
-          <VerticalTabs.Group.Header>Components</VerticalTabs.Group.Header>
-        }
-      >
-        <VerticalTabs.Tier1
-          active
-          header={<VerticalTabs.Tier1.Header>Avatar</VerticalTabs.Tier1.Header>}
         >
-          <VerticalTabs.Tier2
-            active
-            header={
-              <VerticalTabs.Tier2.Header>Prop types</VerticalTabs.Tier2.Header>
-            }
-          />
-          <VerticalTabs.Tier2
-            header={
-              <VerticalTabs.Tier2.Header>Guidelines</VerticalTabs.Tier2.Header>
-            }
-          />
-        </VerticalTabs.Tier1>
-        <VerticalTabs.Tier1
-          header={<VerticalTabs.Tier1.Header>Button</VerticalTabs.Tier1.Header>}
-        />
-        <VerticalTabs.Tier1
-          header={<VerticalTabs.Tier1.Header>Badge</VerticalTabs.Tier1.Header>}
-        />
-        <VerticalTabs.Tier1
-          header={
-            <VerticalTabs.Tier1.Header>Breadcrumb</VerticalTabs.Tier1.Header>
-          }
-        />
-      </VerticalTabs.Group>
-    </VerticalTabs>
-  ))
-  .add('CollapsibleGroup', _ => (
-    <VerticalTabs>
-      <VerticalTabs.Tier1
-        header={
-          <VerticalTabs.Tier1.Header icon={<Icon id={Icon.ids.placeholder} />}>
-            Reports home
-          </VerticalTabs.Tier1.Header>
-        }
-      />
-      <VerticalTabs.CollapsibleGroup
+          <Tier2 header={<Tier2.Header>{longTitle}</Tier2.Header>} />
+          <Tier2 header={<Tier2.Header>{longTitle}</Tier2.Header>} />
+          <Tier2 header={<Tier2.Header>{longTitle}</Tier2.Header>} />
+        </Tier1>
+      </Group>
+
+      <CollapsibleGroup
+        header={<CollapsibleGroup.Header>{longTitle}</CollapsibleGroup.Header>}
         startOpen
-        header={
-          <VerticalTabs.CollapsibleGroup.Header>
-            Operational Reports
-          </VerticalTabs.CollapsibleGroup.Header>
-        }
       >
-        <VerticalTabs.Tier1
+        <Tier1 header={<Tier1.Header>{longTitle}</Tier1.Header>}>
+          <Tier2 header={<Tier2.Header>{longTitle}</Tier2.Header>} />
+          <Tier2 header={<Tier2.Header>{longTitle}</Tier2.Header>} />
+          <Tier2 header={<Tier2.Header>{longTitle}</Tier2.Header>} />
+        </Tier1>
+
+        <Tier1
           header={
-            <VerticalTabs.Tier1.Header
-              icon={<Icon id={Icon.ids.placeholder} />}
-            >
-              Work log
-            </VerticalTabs.Tier1.Header>
+            <Tier1.Header icon={<Icon.PlaceholderIcon />}>
+              {longTitle}
+            </Tier1.Header>
           }
-        />
-        <VerticalTabs.Tier1
-          header={
-            <VerticalTabs.Tier1.Header
-              icon={<Icon id={Icon.ids.placeholder} />}
-            >
-              Project timeline
-            </VerticalTabs.Tier1.Header>
-          }
-        />
-        <VerticalTabs.Tier1
-          header={
-            <VerticalTabs.Tier1.Header
-              icon={<Icon id={Icon.ids.placeholder} />}
-            >
-              Leaderboard
-            </VerticalTabs.Tier1.Header>
-          }
-        />
-        <VerticalTabs.Tier1
-          header={
-            <VerticalTabs.Tier1.Header
-              icon={<Icon id={Icon.ids.placeholder} />}
-            >
-              Retrospective
-            </VerticalTabs.Tier1.Header>
-          }
-        />
-        <VerticalTabs.Tier1
-          header={
-            <VerticalTabs.Tier1.Header
-              icon={<Icon id={Icon.ids.placeholder} />}
-            >
-              Snapshot
-            </VerticalTabs.Tier1.Header>
-          }
-        />
-        <VerticalTabs.Tier1
-          header={
-            <VerticalTabs.Tier1.Header
-              icon={<Icon id={Icon.ids.placeholder} />}
-            >
-              Daily update
-            </VerticalTabs.Tier1.Header>
-          }
-        />
-        <VerticalTabs.Tier1
-          header={
-            <VerticalTabs.Tier1.Header
-              icon={<Icon id={Icon.ids.placeholder} />}
-            >
-              Spot check
-            </VerticalTabs.Tier1.Header>
-          }
-        />
-      </VerticalTabs.CollapsibleGroup>
-      <VerticalTabs.CollapsibleGroup
-        header={
-          <VerticalTabs.CollapsibleGroup.Header>
-            Reviews & Collaboration
-          </VerticalTabs.CollapsibleGroup.Header>
-        }
-      />
-      <VerticalTabs.CollapsibleGroup
-        header={
-          <VerticalTabs.CollapsibleGroup.Header>
-            Fundamentals
-          </VerticalTabs.CollapsibleGroup.Header>
-        }
-      />
-    </VerticalTabs>
-  ))
-  .add('Active tiers', _ => (
-    <VerticalTabs>
-      <VerticalTabs.Tier1
-        active
-        header={
-          <VerticalTabs.Tier1.Header
-            onClick={_ => {}}
-            icon={<Icon id={Icon.ids.placeholder} />}
-          >
-            Tier 1 active
-          </VerticalTabs.Tier1.Header>
-        }
-      />
-      <VerticalTabs.Tier2
-        active
-        header={
-          <VerticalTabs.Tier2.Header onClick={_ => {}}>
-            Tier 2 active
-          </VerticalTabs.Tier2.Header>
-        }
-      />
-    </VerticalTabs>
-  ))
-  .add('Long text', _ => (
-    <VerticalTabs>
-      <VerticalTabs.Group
-        header={
-          <VerticalTabs.Group.Header>
-            The technology skills platform
-          </VerticalTabs.Group.Header>
-        }
-      />
-      <VerticalTabs.CollapsibleGroup
-        header={
-          <VerticalTabs.CollapsibleGroup.Header>
-            The technology skills platform
-          </VerticalTabs.CollapsibleGroup.Header>
-        }
-      />
-      <VerticalTabs.Tier1
-        header={
-          <VerticalTabs.Tier1.Header>
-            The technology skills platform
-          </VerticalTabs.Tier1.Header>
-        }
-      />
-      <VerticalTabs.Tier2
-        header={
-          <VerticalTabs.Tier2.Header>
-            The technology skills platform
-          </VerticalTabs.Tier2.Header>
-        }
-      />
-    </VerticalTabs>
-  ))
-  .add('Href changes tier tag to link', _ => (
-    <VerticalTabs>
-      <VerticalTabs.Tier1
-        header={
-          <VerticalTabs.Tier1.Header href=" ">
-            Tier 1 link
-          </VerticalTabs.Tier1.Header>
-        }
-      />
-      <VerticalTabs.Tier2
-        header={
-          <VerticalTabs.Tier2.Header href=" ">
-            Tier 2 link
-          </VerticalTabs.Tier2.Header>
-        }
-      />
-    </VerticalTabs>
-  ))
-  .add('onClick no href changes tier tag to button', _ => (
-    <VerticalTabs>
-      <VerticalTabs.Tier1
-        header={
-          <VerticalTabs.Tier1.Header onClick={_ => {}}>
-            Tier 1 button
-          </VerticalTabs.Tier1.Header>
-        }
-      />
-      <VerticalTabs.Tier2
-        header={
-          <VerticalTabs.Tier2.Header onClick={_ => {}}>
-            Tier 2 button
-          </VerticalTabs.Tier2.Header>
-        }
-      />
-    </VerticalTabs>
+        >
+          <Tier2 header={<Tier2.Header>{longTitle}</Tier2.Header>} />
+          <Tier2 header={<Tier2.Header>{longTitle}</Tier2.Header>} />
+          <Tier2 header={<Tier2.Header>{longTitle}</Tier2.Header>} />
+        </Tier1>
+      </CollapsibleGroup>
+    </>
   ))

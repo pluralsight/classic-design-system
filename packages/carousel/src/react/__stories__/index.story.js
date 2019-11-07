@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Card from '@pluralsight/ps-design-system-card'
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 import { BelowRight } from '@pluralsight/ps-design-system-position'
 
 import Carousel from '../index.js'
@@ -240,7 +240,7 @@ storiesOf('Carousel/with ActionMenu', module)
                 >
                   <Card.Action
                     title="asdf"
-                    icon={<Icon id={Icon.ids.more} />}
+                    icon={<Icon.MoreIcon />}
                     onClick={_ => setOpen(!isOpen)}
                   />
                 </BelowRight>
@@ -326,7 +326,7 @@ storiesOf('Carousel/with ActionMenu', module)
                   >
                     <Card.Action
                       title="See more"
-                      icon={<Icon id={Icon.ids.more} />}
+                      icon={<Icon.MoreIcon />}
                       onClick={evt => handleClickMore(evt, course.id)}
                     />
                   </BelowRight>

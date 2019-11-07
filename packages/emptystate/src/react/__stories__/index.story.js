@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 
@@ -53,7 +53,7 @@ const EmptyStateWithDefaults = props => {
 const SearchInput = props => <TextInput {...props} />
 SearchInput.defaultProps = {
   appearance: TextInput.appearances.subtle,
-  icon: <Icon id={Icon.ids.search} />,
+  icon: <Icon.SearchIcon />,
   placeholder: 'Find Something'
 }
 

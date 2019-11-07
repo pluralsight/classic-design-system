@@ -2,7 +2,7 @@ import React, { Children } from 'react'
 import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {CaretDownIcon} from '@pluralsight/ps-design-system-icon'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import TextInput from '@pluralsight/ps-design-system-textinput'
@@ -123,7 +123,7 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
         <TextInput
           {...pick(props, TEXT_INPUT_PROPS)}
           iconAlign={TextInput.iconAligns.right}
-          icon={<Icon id={Icon.ids.caretDown} />}
+          icon={<CaretDownIcon />}
           onChange={handleInputChange}
           onFocus={handleInputFocus}
           ref={{ field: fieldRef, input: inputRef }}

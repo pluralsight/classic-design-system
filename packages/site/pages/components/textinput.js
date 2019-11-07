@@ -1,4 +1,4 @@
-import Icon from '@pluralsight/ps-design-system-icon'
+import {SearchIcon} from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text'
 import TextInput from '@pluralsight/ps-design-system-textinput'
@@ -58,7 +58,7 @@ export default _ => (
           ]),
           PropTypes.row([
             'icon',
-            <code>Icon</code>,
+            <code>*Icon</code>,
             null,
             null,
             'Icon component'
@@ -145,14 +145,14 @@ export default _ => (
       <Example.React
         orient="vertical"
         themeToggle
-        includes={{ TextInput, Icon }}
+        includes={{ TextInput, SearchIcon }}
         codes={[
           `<TextInput
-  icon={<Icon id={Icon.ids.search} />}
+  icon={<SearchIcon />}
   placeholder="Search"
 />`,
           `<TextInput
-  icon={<Icon id={Icon.ids.search} />}
+  icon={<SearchIcon />}
   iconAlign={TextInput.iconAligns.right}
   placeholder="Search"
 />`
@@ -166,12 +166,12 @@ export default _ => (
       </P>
       <Example.React
         orient="vertical"
-        includes={{ TextInput, Theme }}
+        includes={{ TextInput, Theme, SearchIcon }}
         themeToggle
         codes={[
           `<TextInput
   appearance={TextInput.appearances.subtle}
-  icon={<Icon id={Icon.ids.search} />}
+  icon={<SearchIcon />}
   placeholder="Search"
 />`
         ]}

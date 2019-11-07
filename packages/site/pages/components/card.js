@@ -4,9 +4,11 @@ import Avatar from '@pluralsight/ps-design-system-avatar'
 import Button from '@pluralsight/ps-design-system-button'
 import Card from '@pluralsight/ps-design-system-card'
 import * as core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon'
 import * as Layout from '@pluralsight/ps-design-system-layout'
 import Theme from '@pluralsight/ps-design-system-theme'
+import {
+  PathIcon, BookmarkIcon, MoreIcon, PlayCircleIcon, ChannelIcon
+} from '@pluralsight/ps-design-system-icon'
 
 import {
   Chrome,
@@ -53,7 +55,7 @@ const InAppExample = props => (
         <ul>
           <li>
             <Card
-              tag={<Card.Tag icon={<Icon id={Icon.ids.path} />}>Path</Card.Tag>}
+              tag={<Card.Tag icon={<PathIcon />}>Path</Card.Tag>}
               title={<Card.Title>Advanced TypeScript</Card.Title>}
               progress={0}
               image={<Card.Image src="/static/img/course1.jpg" />}
@@ -83,12 +85,12 @@ const InAppExample = props => (
                 <Card.Action
                   key="1"
                   title="Book action"
-                  icon={<Icon id={Icon.ids.bookmark} />}
+                  icon={<BookmarkIcon />}
                 />,
                 <Card.Action
                   key="2"
                   title="More action"
-                  icon={<Icon id={Icon.ids.more} />}
+                  icon={<MoreIcon />}
                 />
               ]}
               title={
@@ -99,7 +101,7 @@ const InAppExample = props => (
               fullOverlay={
                 <Card.FullOverlayLink>
                   <a>
-                    <Icon id={Icon.ids.playCircle} size={Icon.sizes.large} />
+                    <PlayCircleIcon size={PlayCircleIcon.sizes.large} />
                   </a>
                 </Card.FullOverlayLink>
               }
@@ -116,12 +118,12 @@ const InAppExample = props => (
                 <Card.Action
                   key="1"
                   title="Bookmark action"
-                  icon={<Icon id={Icon.ids.bookmark} />}
+                  icon={<BookmarkIcon />}
                 />,
                 <Card.Action
                   key="2"
                   title="More action"
-                  icon={<Icon id={Icon.ids.more} />}
+                  icon={<MoreIcon />}
                 />
               ]}
               actionBarVisible
@@ -142,7 +144,7 @@ const InAppExample = props => (
   <ul>
     <li>
       <Card
-        tag={<Card.Tag icon={<Icon id={Icon.ids.path} />}>Path</Card.Tag>}
+        tag={<Card.Tag icon={<PathIcon />}>Path</Card.Tag>}
         title={<Card.Title>Advanced TypeScript</Card.Title>}
         progress={0}
         image={<Card.Image src="/static/img/course1.jpg" />}
@@ -169,8 +171,8 @@ const InAppExample = props => (
     <li>
       <Card
         actionBar={[
-          <Card.Action key="1" title="Bookmark" icon={<Icon id={Icon.ids.bookmark} />} />,
-          <Card.Action key="2" title="More" icon={<Icon id={Icon.ids.more} />} />
+          <Card.Action key="1" title="Bookmark" icon={<BookmarkIcon />} />,
+          <Card.Action key="2" title="More" icon={<MoreIcon />} />
         ]}
         title={
           <Card.Title>
@@ -180,7 +182,7 @@ const InAppExample = props => (
         fullOverlay={
           <Card.FullOverlayLink>
             <a>
-              <Icon id={Icon.ids.playCircle} size={Icon.sizes.large} />
+              <Icon id={PlayCircleIcon size={PlayCircleIcon.sizes.large} />
             </a>
           </Card.FullOverlayLink>
         }
@@ -194,8 +196,8 @@ const InAppExample = props => (
     <li>
       <Card
         actionBar={[
-          <Card.Action key="1" title="Bookmark" icon={<Icon id={Icon.ids.bookmark} />} />,
-          <Card.Action key="2" title="More" icon={<Icon id={Icon.ids.more} />} />
+          <Card.Action key="1" title="Bookmark" icon={<BookmarkIcon />} />,
+          <Card.Action key="2" title="More" icon={<MoreIcon />} />
         ]}
         actionBarVisible
         title={<Card.Title>Webpack Fundamentals"</Card.Title>}
@@ -344,7 +346,7 @@ export default _ => (
             PropTypes.row(['src', 'string', true, null, 'image url'])
           ],
           'Card.Tag': [
-            PropTypes.row(['icon', <code>Icon</code>, null, null, 'tag icon'])
+            PropTypes.row(['icon', <code>*Icon</code>, null, null, 'tag icon'])
           ]
         }}
       />
@@ -368,7 +370,7 @@ export default _ => (
       <Example.React
         themeToggle
         decorateCodes={decorateCardsSML}
-        includes={{ Button, Card, Icon }}
+        includes={{ Button, Card }}
         codes={Object.keys(Card.sizes).map(
           s => `
 <Card
@@ -389,7 +391,7 @@ export default _ => (
       <Example.React
         themeToggle
         decorateCodes={decorateCardsM}
-        includes={{ Button, Card, Icon }}
+        includes={{ Button, Card, BookmarkIcon }}
         codes={[
           `
 <Card
@@ -413,7 +415,7 @@ export default _ => (
     </Card.ImageLink>
   }
   title={<Card.Title>Linked image with other overlays</Card.Title>}
-  actionBar={[<Card.Action key="1" title="Bookmark action" icon={<Icon id="bookmark" />} />]}
+  actionBar={[<Card.Action key="1" title="Bookmark action" icon={<BookmarkIcon />} />]}
   fullOverlay={
     <Card.FullOverlayLink>
       <a href="https://google.com?q=full%20overlay" target="_blank">
@@ -434,7 +436,7 @@ export default _ => (
       <Example.React
         themeToggle
         decorateCodes={decorateCardsM}
-        includes={{ Button, Card, Icon }}
+        includes={{ Button, Card }}
         codes={[
           `
 <Card
@@ -469,7 +471,7 @@ export default _ => (
       <Example.React
         themeToggle
         decorateCodes={decorateCardsM}
-        includes={{ Button, Card, Icon }}
+        includes={{ Button, Card }}
         codes={[
           `
 <Card
@@ -504,7 +506,7 @@ export default _ => (
       <Example.React
         themeToggle
         decorateCodes={decorateCardsM}
-        includes={{ Button, Card, Icon }}
+        includes={{ Button, Card }}
         codes={[
           `
 <Card
@@ -546,11 +548,11 @@ export default _ => (
       <Example.React
         themeToggle
         decorateCodes={decorateCardsM}
-        includes={{ Button, Card, Icon }}
+        includes={{ Button, Card, BookmarkIcon, MoreIcon }}
         codes={[
           `
 <Card
-  actionBar={[<Card.Action key="1" title="Bookmark action" icon={<Icon id={Icon.ids.bookmark} />} />]}
+  actionBar={[<Card.Action key="1" title="Bookmark action" icon={<BookmarkIcon />} />]}
   title={<Card.Title>Action bar appears on hover</Card.Title>}
   image={<Card.Image src="/static/img/course2.jpg" />}
 />
@@ -558,8 +560,8 @@ export default _ => (
           `
 <Card
   actionBar={[
-    <Card.Action key="1" title="Bookmark action" icon={<Icon id={Icon.ids.bookmark} />} />,
-    <Card.Action key="2" title="More action" icon={<Icon id={Icon.ids.more} />} />
+    <Card.Action key="1" title="Bookmark action" icon={<BookmarkIcon />} />,
+    <Card.Action key="2" title="More action" icon={<MoreIcon />} />
   ]}
   title={<Card.Title>Multiple actions</Card.Title>}
   image={<Card.Image src="/static/img/course2.jpg" />}
@@ -568,8 +570,8 @@ export default _ => (
           `
 <Card
   actionBar={[
-    <Card.Action title="Bookmark action" icon={<Icon id={Icon.ids.bookmark} />} />,
-    <Card.Action title="More action" icon={<Icon id={Icon.ids.more} />} />
+    <Card.Action title="Bookmark action" icon={<BookmarkIcon />} />,
+    <Card.Action title="More action" icon={<MoreIcon />} />
   ]}
   actionBarVisible
   title={<Card.Title>Action bar locked visible</Card.Title>}
@@ -584,11 +586,11 @@ export default _ => (
       <Example.React
         themeToggle
         decorateCodes={decorateCardsM}
-        includes={{ Button, Card, Icon }}
+        includes={{ Button, Card, PathIcon, ChannelIcon }}
         codes={[
           `
 <Card
-  tag={<Card.Tag icon={<Icon id={Icon.ids.path} />}>Path</Card.Tag>}
+  tag={<Card.Tag icon={<PathIcon />}>Path</Card.Tag>}
   title={<Card.Title>Icon and text</Card.Title>}
   image={
     <Card.Image src="/static/img/course3.jpg" />
@@ -607,7 +609,7 @@ export default _ => (
           `
 <Card
   size={Card.sizes.small}
-  tag={<Card.Tag icon={<Icon id={Icon.ids.channel} />}>Channel</Card.Tag>}
+  tag={<Card.Tag icon={<ChannelIcon />}>Channel</Card.Tag>}
   title={<Card.Title>Icon and text on card small</Card.Title>}
   image={
     <Card.Image src="/static/img/course3.jpg" />
@@ -625,7 +627,7 @@ export default _ => (
       <Example.React
         themeToggle
         decorateCodes={decorateCardsM}
-        includes={{ Button, Card, Icon }}
+        includes={{ Button, Card, BookmarkIcon, ChannelIcon }}
         codes={[
           `
 <Card
@@ -645,8 +647,8 @@ export default _ => (
           `
 <Card
   fullOverlay={<Card.FullOverlayLink><a>Custom Thing</a></Card.FullOverlayLink>}
-  actionBar={[<Card.Action title="Bookmark action" icon={<Icon id={Icon.ids.bookmark} />} />]}
-  tag={<Card.Tag icon={<Icon id={Icon.ids.channel} />}>Channel</Card.Tag>}
+  actionBar={[<Card.Action title="Bookmark action" icon={<BookmarkIcon />} />]}
+  tag={<Card.Tag icon={<ChannelIcon />}>Channel</Card.Tag>}
   title={<Card.Title>Combined with other overlays</Card.Title>}
   image={<Card.Image src="/static/img/course4.jpg" />}
 />
@@ -662,7 +664,7 @@ export default _ => (
       <Example.React
         themeToggle
         decorateCodes={decorateCardsM}
-        includes={{ Button, Card, Icon }}
+        includes={{ Button, Card }}
         codes={[
           `
 <Card

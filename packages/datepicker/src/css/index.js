@@ -1,4 +1,4 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {colors, layout, type, motion} from '@pluralsight/ps-design-system-core'
 import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 import { transparentize } from '@pluralsight/ps-design-system-util'
@@ -8,7 +8,7 @@ import * as vars from '../vars/index.js'
 const dayDimensions = {
   height: '32px',
   width: '32px',
-  margin: `0 2px ${core.layout.spacingXSmall} 0`,
+  margin: `0 2px ${layout.spacingXSmall} 0`,
   border: '3px solid transparent'
 }
 
@@ -30,21 +30,21 @@ export default {
     border: 'none',
     display: 'inline-block',
     background: 'none',
-    color: core.colors.gray05,
+    color: colors.gray05,
 
     '&:focus': { outline: 'none' }
   },
   [`.psds-date-picker__sub-field--appearance-${vars.appearances.subtle}`]: {
-    color: core.colors.gray01
+    color: colors.gray01
   },
 
   // __sub-field-divider
   '.psds-date-picker__sub-field-divider': {
     border: 'none',
-    color: core.colors.gray05
+    color: colors.gray05
   },
   [`.psds-date-picker__sub-field-divider--appearance-${vars.appearances.subtle}`]: {
-    color: core.colors.gray01
+    color: colors.gray01
   },
 
   // __field-container
@@ -55,18 +55,18 @@ export default {
     alignItems: 'center',
     width: '100%',
     height: '40px',
-    minWidth: `calc(192px + ${iconWidths.medium} + ${core.layout.spacingXSmall})`,
-    padding: `0 calc(${core.layout.spacingXSmall} + ${iconWidths.medium} + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`,
-    background: core.colors.bone
+    minWidth: `calc(192px + ${iconWidths.medium} + ${layout.spacingXSmall})`,
+    padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall}) 0 ${layout.spacingMedium}`,
+    background: colors.bone
   },
   [`.psds-date-picker__field-container.psds-theme--${themeNames.light}`]: {
-    background: core.colors.white,
-    border: `1px solid ${core.colors.gray02}`
+    background: colors.white,
+    border: `1px solid ${colors.gray02}`
   },
   [`.psds-date-picker__field-container--appearance-${vars.appearances.subtle}`]: {
-    color: core.colors.gray01,
-    background: core.colors.gray06,
-    border: `1px solid ${core.colors.gray03}`
+    color: colors.gray01,
+    background: colors.gray06,
+    border: `1px solid ${colors.gray03}`
   },
 
   // __icon
@@ -74,61 +74,61 @@ export default {
     position: 'absolute',
     top: '0',
     left: 'auto',
-    right: core.layout.spacingXSmall,
+    right: layout.spacingXSmall,
     display: 'flex',
     alignItems: 'center',
     height: '100%',
-    color: core.colors.gray03,
+    color: colors.gray03,
     cursor: 'pointer',
     background: 'none',
     border: 'none'
   },
   [`.psds-date-picker__icon.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray02
+    color: colors.gray02
   },
   [`.psds-date-picker__icon--appearance-${vars.appearances.subtle}`]: {
-    color: core.colors.gray02
+    color: colors.gray02
   },
 
   // __label
   '.psds-date-picker__label': {
-    color: core.colors.bone,
-    fontSize: core.type.fontSizeSmall,
+    color: colors.bone,
+    fontSize: type.fontSizeSmall,
     lineHeight: '16px',
-    fontWeight: core.type.fontWeightMedium,
-    paddingBottom: core.layout.spacingXSmall
+    fontWeight: type.fontWeightMedium,
+    paddingBottom: layout.spacingXSmall
   },
   [`.psds-date-picker__label.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray05
+    color: colors.gray05
   },
 
   // __sub-label
   '.psds-date-picker__sub-label': {
-    color: core.colors.gray02,
-    fontSize: core.type.fontSizeXSmall,
+    color: colors.gray02,
+    fontSize: type.fontSizeXSmall,
     lineHeight: '16px',
-    fontWeight: core.type.fontWeightMedium,
-    paddingTop: core.layout.spacingXSmall
+    fontWeight: type.fontWeightMedium,
+    paddingTop: layout.spacingXSmall
   },
   [`.psds-date-picker__sub-label.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03
+    color: colors.gray03
   },
 
   // __error
   '.psds-date-picker__error': {
     position: 'absolute',
-    right: `calc(-1 * (${iconWidths.medium} + ${core.layout.spacingXSmall}))`,
+    right: `calc(-1 * (${iconWidths.medium} + ${layout.spacingXSmall}))`,
     display: 'flex',
     alignItems: 'center',
-    color: core.colors.red,
-    marginLeft: core.layout.spacingXSmall
+    color: colors.red,
+    marginLeft: layout.spacingXSmall
   },
 
   // __calendar-container
   '.psds-date-picker__calendar-container': {
     position: 'absolute',
     zIndex: '1',
-    marginTop: core.layout.spacingXXSmall
+    marginTop: layout.spacingXXSmall
   },
 
   '@keyframes psds-date-picker__calendar__keyframes__slide': {
@@ -144,17 +144,17 @@ export default {
     zIndex: '0',
     width: '286px',
     maxHeight: '352px',
-    background: core.colors.white,
-    color: core.colors.gray03,
+    background: colors.white,
+    color: colors.gray03,
     borderRadius: '2px',
-    padding: `${core.layout.spacingMedium} ${core.layout.spacingLarge}`,
-    fontSize: core.type.fontSizeXSmall,
-    fontWeight: core.type.fontWeightMedium,
-    boxShadow: `0 2px 4px ${transparentize(0.5, core.colors.black)}`,
+    padding: `${layout.spacingMedium} ${layout.spacingLarge}`,
+    fontSize: type.fontSizeXSmall,
+    fontWeight: type.fontWeightMedium,
+    boxShadow: `0 2px 4px ${transparentize(0.5, colors.black)}`,
     opacity: 0,
-    transform: `translateY(calc(-1 * ${core.layout.spacingXSmall}))`,
+    transform: `translateY(calc(-1 * ${layout.spacingXSmall}))`,
     animation: `${slide || 'psds-date-picker__calendar__keyframes__slide'} ${
-      core.motion.speedNormal
+      motion.speedNormal
     } forwards`
   }),
 
@@ -162,9 +162,9 @@ export default {
   '.psds-date-picker__calendar__week-heading': {
     display: 'flex',
     justifyContent: 'flex-start',
-    color: core.colors.gray02,
+    color: colors.gray02,
     textTransform: 'uppercase',
-    marginBottom: core.layout.spacingSmall
+    marginBottom: layout.spacingSmall
   },
 
   // __calendar__week-heading__day
@@ -179,7 +179,7 @@ export default {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'flex-start',
-    color: core.colors.gray02,
+    color: colors.gray02,
     textTransform: 'uppercase'
   },
 
@@ -191,15 +191,15 @@ export default {
     ...dayDimensions,
     borderRadius: '50%',
     lineHeight: '1em',
-    fontWeight: core.type.fontWeightMedium,
+    fontWeight: type.fontWeightMedium,
     background: 'none',
     cursor: 'pointer',
 
-    '&:hover': { border: `3px solid ${core.colors.blue}` }
+    '&:hover': { border: `3px solid ${colors.blue}` }
   },
   '.psds-date-picker__calendar__day--selected': {
-    background: core.colors.blue,
-    color: core.colors.white,
+    background: colors.blue,
+    color: colors.white,
 
     '&:hover': { border: '3px solid transparent' }
   },
@@ -212,11 +212,11 @@ export default {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: core.layout.spacingMedium
+    marginBottom: layout.spacingMedium
   },
 
   // __calendar__switcher__month
   '.psds-date-picker__calendar__switcher__month': {
-    fontSize: core.type.fontSizeSmall
+    fontSize: type.fontSizeSmall
   }
 }

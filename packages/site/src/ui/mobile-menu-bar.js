@@ -1,5 +1,5 @@
 import * as core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {MenuIcon} from '@pluralsight/ps-design-system-icon'
 import { Link, TitleLogo, TopBar } from './index.js'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -9,7 +9,7 @@ export default function MobileMenuBar(props) {
     <div>
       <div className="bar">
         <button className="burger" onClick={props.onBurgerClick}>
-          <Icon id={Icon.ids.menu} />
+          <MenuIcon />
         </button>
         <div className="title">
           <Link href="/">

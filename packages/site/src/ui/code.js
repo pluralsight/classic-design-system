@@ -1,7 +1,7 @@
 import Button from '@pluralsight/ps-design-system-button'
 import CodeMirror from 'react-codemirror'
 import * as core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {CodeIcon} from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -24,7 +24,7 @@ const CollapsibleButton = props => (
       color: core.colors.gray02,
       zIndex: 10 /* TODO: arbitrary; above code mirror; come back when ready to systemize */
     }}
-    icon={<Icon id={Icon.ids.code} />}
+    icon={<CodeIcon />}
     appearance={Button.appearances.flat}
     onClick={props.onClick}
     size={Button.sizes.xSmall}

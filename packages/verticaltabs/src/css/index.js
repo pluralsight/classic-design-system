@@ -4,6 +4,33 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import * as core from '@pluralsight/ps-design-system-core'
 
+const resetButton = {
+  background: 'transparent',
+  border: 'none',
+  color: 'inherit',
+  font: 'inherit',
+  lineHeight: 'normal',
+  margin: 0,
+  overflow: 'visible',
+  padding: 0,
+  width: 'auto',
+
+  MozOsxFontSmoothing: 'inherit',
+  WebkitAppearance: 'none',
+  WebkitFontSmoothing: 'inherit',
+
+  '&::-moz-focus-inner': {
+    border: 0,
+    padding: 0
+  }
+}
+
+const truncate = {
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+  whiteSpace: 'nowrap'
+}
+
 export default {
   '.psds-verticaltabs': {
     height: '100%',
@@ -18,8 +45,9 @@ export default {
   [`.psds-verticaltabs.psds-theme--${themeDefaultName}`]: {
     backgroundColor: core.colors.gray05
   },
+
   '.psds-verticaltabs__divider': {
-    margin: `${core.layout.spacingXSmall} 0`,
+    margin: `${core.layout.spacingMedium} 0`,
     borderWidth: '1px 0 0 0',
     borderStyle: 'solid'
   },
@@ -29,163 +57,215 @@ export default {
   [`.psds-verticaltabs__divider.psds-theme--${themeDefaultName}`]: {
     borderColor: core.colors.gray03
   },
-  '.psds-verticaltabs__item': {
-    boxSizing: 'border-box',
-    display: 'flex',
-    alignItems: 'center'
+
+  '.psds-verticaltabs__list': {
+    listStyle: 'none',
+    margin: 0,
+    padding: 0
   },
+  '.psds-verticaltabs__list--collapsible': {
+    overflow: 'hidden',
+    transition: `height ${core.motion.speedNormal}`,
+    visibility: 'hidden'
+  },
+
+  '.psds-verticaltabs__item': {
+    alignItems: 'center',
+    display: 'flex',
+    position: 'relative',
+
+    '& > *': {
+      ...resetButton,
+      color: 'inherit',
+      textDecoration: 'none',
+      height: '100%',
+      width: '100%'
+    }
+  },
+  [`.psds-verticaltabs__item.psds-theme--${themeNames.light}`]: {
+    color: core.colors.gray03,
+
+    '& > a, & > button': {
+      cursor: 'pointer',
+
+      '&:focus, &:hover': {
+        backgroundColor: 'rgb(225, 225, 225)',
+        color: core.colors.black
+      }
+    }
+  },
+  [`.psds-verticaltabs__item.psds-theme--${themeDefaultName}`]: {
+    color: core.colors.gray02,
+
+    '& > a, & > button': {
+      cursor: 'pointer',
+
+      '&:focus, &:hover': {
+        backgroundColor: core.colors.gray04,
+        color: core.colors.white
+      }
+    }
+  },
+
+  '.psds-verticaltabs__item__icon': {
+    flexShrink: 0,
+    marginRight: core.layout.spacingSmall
+  },
+
   '.psds-verticaltabs__tier1': {
-    lineHeight: '24px',
     fontSize: core.type.fontSizeSmall,
     fontWeight: core.type.fontWeightMedium,
-    paddingLeft: '20px',
-    paddingRight: '24px',
-    borderLeftWidth: '4px',
-    borderLeftStyle: 'solid',
-    borderLeftColor: 'transparent',
-    height: '40px'
+    height: '40px',
+
+    '&:before': {
+      content: ' ',
+      display: 'block',
+      height: 0,
+      left: 0,
+      position: 'absolute',
+      top: '50%',
+      transform: 'translateY(-50%)',
+      width: '4px'
+    },
+
+    '& > *': {
+      padding: `${core.layout.spacingXSmall} ${core.layout.spacingLarge}`
+    },
+
+    '&[data-active]': {
+      '&:before': {
+        height: `calc(100% - ${core.layout.spacingXSmall})`,
+        transition: `height ${core.motion.speedNormal} ease-out`
+      }
+    }
   },
   [`.psds-verticaltabs__tier1.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray04,
-    '&[data-active]': {
-      color: core.colors.gray06,
-      borderLeftColor: core.colors.gray04
-    }
+    '&:before': { background: core.colors.black },
+    '&[data-active]': { color: core.colors.black }
   },
   [`.psds-verticaltabs__tier1.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.bone,
-    '&[data-active]': {
-      color: core.colors.white,
-      borderLeftColor: core.colors.white
+    '&:before': { background: core.colors.white },
+    '&[data-active]': { color: core.colors.white }
+  },
+
+  '.psds-verticaltabs__tier1__header': {
+    alignItems: 'center',
+    display: 'flex',
+    transition: `color ${core.motion.speedXFast} linear`,
+    width: '100%',
+
+    '& > span': { ...truncate }
+  },
+
+  '.psds-verticaltabs__tier2': {
+    position: 'relative',
+
+    '&:before': {
+      content: ' ',
+      display: 'block',
+      height: '100%',
+      left: '36px',
+      position: 'absolute',
+      top: '50%',
+      transform: 'translateY(-50%)',
+      transition: `height ${core.motion.speedXFast} linear`,
+      width: '1px'
+    },
+
+    '& > *': {
+      ...truncate,
+      fontSize: core.type.fontSizeXSmall,
+      fontWeight: core.type.fontWeightBook,
+      marginLeft: '37px',
+      minHeight: '32px',
+      padding: `${core.layout.spacingXSmall} ${core.layout.spacingLarge}`,
+      textAlign: 'left'
     }
   },
-  '.pds-verticaltabs__tier1__header': {
-    display: 'flex',
-    alignItems: 'center',
-    width: '100%'
-  },
-  '.pds-verticaltabs__header__label': {
-    lineHeight: 'inherit',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap'
-  },
-  '.psds-verticaltabs__tier2': {
-    lineHeight: '16px',
-    marginLeft: '35px',
-    paddingLeft: '20px',
-    paddingRight: '24px',
-    fontSize: core.type.fontSizeXSmall,
-    fontWeight: core.type.fontWeightBook,
-    borderLeftWidth: '1px',
-    borderLeftStyle: 'solid',
-    minHeight: '32px'
-  },
   [`.psds-verticaltabs__tier2.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03,
-    borderLeftColor: core.colors.gray01,
+    '&:before': { background: core.colors.gray01 },
     '&[data-active]': {
-      color: core.colors.gray06,
-      borderLeftColor: core.colors.gray04
+      color: core.colors.black,
+
+      '&:before': { background: core.colors.black }
     }
   },
   [`.psds-verticaltabs__tier2.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.bone,
-    borderLeftColor: core.colors.gray03,
+    '&:before': { background: core.colors.gray03 },
+
     '&[data-active]': {
       color: core.colors.white,
-      borderLeftColor: core.colors.white
+      '&:before': { background: core.colors.white }
     }
   },
-  '.pds-verticaltabs__tier2__header': {
-    display: 'block',
-    overflowWrap: 'break-word',
-    width: '100%'
+
+  '.psds-verticaltabs__tier2__header': {
+    transition: `color ${core.motion.speedXFast} ease-out`
   },
-  '.psds-verticaltabs__item__icon': {
-    flex: 'none',
-    marginRight: core.layout.spacingSmall
-  },
-  [`.psds-verticaltabs__item__icon.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03,
-    '&[data-active]': {
-      color: core.colors.gray06
-    }
-  },
-  [`.psds-verticaltabs__item__icon.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.gray01,
-    '&[data-active]': {
-      color: core.colors.bone
-    }
-  },
-  '.psds-verticaltabs__item__link': {
-    textDecoration: 'none',
-    cursor: 'pointer',
-    color: 'inherit',
-    font: 'inherit'
-  },
-  '.psds-verticaltabs__button': {
-    background: 'transparent',
-    border: 'none',
-    color: 'inherit',
-    font: 'inherit',
-    margin: 0,
-    padding: 0,
-    width: 'auto',
-    MozOsxFontSmoothing: 'inherit',
-    WebkitAppearance: 'none',
-    WebkitFontSmoothing: 'inherit',
-    cursor: 'pointer',
-    '&::-moz-focus-inner': {
-      border: 0,
-      padding: 0
-    }
-  },
-  '.psds-verticaltabs__item__span': {
-    color: 'inherit',
-    font: 'inherit',
-    margin: 0
-  },
+
   '.psds-verticaltabs__group__header': {
-    textTransform: 'uppercase',
-    fontSize: '11px',
-    lineHeight: '16px',
-    height: '32px',
-    display: 'flex',
     alignItems: 'center',
+    display: 'flex',
+    fontSize: '11px',
     fontWeight: core.type.fontWeightBold,
-    padding: `0 ${core.layout.spacingLarge}`
+    textTransform: 'uppercase',
+
+    '& > a, & > button, & > div': {
+      alignItems: 'center',
+      display: 'flex',
+      height: '100%',
+      justifyContent: 'space-between',
+      padding: `${core.layout.spacingSmall} ${core.layout.spacingLarge}`,
+      textAlign: 'left',
+      textTransform: 'inherit',
+      width: '100%'
+    }
   },
+  '.psds-verticaltabs__group__header__inner': {},
   [`.psds-verticaltabs__group__header.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03
   },
   [`.psds-verticaltabs__group__header.psds-theme--${themeDefaultName}`]: {
     color: core.colors.gray02
   },
-  '.psds-verticaltabs__group__button': {
-    width: '100%',
-    textTransform: 'inherit'
+
+  '.psds-verticaltabs__header__label': {
+    ...truncate,
+    flex: 1,
+    textAlign: 'left'
   },
-  '.psds-verticaltabs__button__inner': {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center'
+
+  '.psds-verticaltabs__header__label--hide-labels': {
+    color: 'transparent'
   },
-  '.psds-verticaltabs__list': {
-    listStyle: 'none',
-    margin: 0,
-    padding: 0
+
+  '.psds-verticaltabs__header__label__icon': {
+    flexShrink: 0,
+    flexGrow: 0,
+    transform: 'translateX(10px) rotateZ(180deg)',
+    transition: `transform ${core.motion.speedNormal} linear`
   },
+
+  '.psds-verticaltabs__header__label__icon--collapsed': {
+    transform: 'translateX(10px)'
+  },
+
+  '.psds-verticaltabs__group__button': { ...resetButton, cursor: 'pointer' },
+
   '.psds-verticaltabs__group__collapsible-list': {
     overflow: 'hidden',
-    visibility: 'hidden',
-    transition: `height ${core.motion.speedNormal}`
+    transition: `height ${core.motion.speedNormal}`,
+    visibility: 'hidden'
   },
+
   [`.psds-verticaltabs__rotatable`]: {
-    transition: `transform ${core.motion.speedNormal}`,
-    lineHeight: 0
+    flexShrink: 0,
+    flexGrow: 0,
+    transform: 'translateX(10px)',
+    transition: `transform ${core.motion.speedNormal}`
   },
+
   [`.psds-verticaltabs__rotatable--isOpen`]: {
-    transform: 'rotateZ(180deg)'
+    transform: 'translateX(10px) rotateZ(180deg)'
   }
 }

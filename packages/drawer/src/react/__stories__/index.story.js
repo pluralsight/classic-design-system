@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
 import Button from '@pluralsight/ps-design-system-button'
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 import Row from '@pluralsight/ps-design-system-row'
 import * as Text from '@pluralsight/ps-design-system-text'
 
@@ -127,7 +127,7 @@ storiesOf('drawer', module)
       base={
         <Row
           actionBar={[
-            <Row.Action key="iHeartCats" icon={<Icon id="more" />} />
+            <Row.Action key="iHeartCats" icon={<Icon.MoreIcon />} />
           ]}
           actionBarVisible
           image={<Row.Image src="https://cataas.com/cat" />}
@@ -147,7 +147,7 @@ storiesOf('drawer', module)
           actionBar={[
             <Row.Action
               key="iHeartCats"
-              icon={<Icon id="more" />}
+              icon={<Icon.MoreIcon />}
               onClick={action('action')}
             />
           ]}

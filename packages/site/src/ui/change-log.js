@@ -1,7 +1,7 @@
 import 'isomorphic-fetch'
 
 import * as core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {colors as iconColors} from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -16,7 +16,7 @@ const ChangeLog = props => {
         <span className="text">
           {label}
           <div className="icon">
-            <GithubIcon color={Icon.colors.orange} />
+            <GithubIcon color={iconColors.orange} />
           </div>
         </span>
       </TextLink>

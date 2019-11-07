@@ -6,7 +6,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import DatePicker from '@pluralsight/ps-design-system-datepicker'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import Form from '@pluralsight/ps-design-system-form'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {CloseIcon, CaretRightIcon} from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import Tag from '@pluralsight/ps-design-system-tag'
 import * as Text from '@pluralsight/ps-design-system-text'
@@ -53,8 +53,7 @@ class TagExample extends React.Component {
           >
             <Tag
               icon={
-                <Icon
-                  id={Icon.ids.close}
+                <CloseIcon
                   why
                   he
                   onClick={this.handleClick.bind(this, tag)}
@@ -144,7 +143,7 @@ const Comp = props => (
         <span className="desc">{props.desc}</span>
         <span className="link">
           <TextLink href={props.href}>Docs</TextLink>
-          <Icon id={Icon.ids.caretRight} size={Icon.sizes.small} />
+          <CaretRightIcon size={CaretRightIcon.sizes.small} />
         </span>
       </div>
     </div>

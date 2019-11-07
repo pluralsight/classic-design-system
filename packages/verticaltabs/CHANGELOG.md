@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@2.1.1...@pluralsight/ps-design-system-verticaltabs@2.2.0) (2019-11-14)
+
+
+### Features
+
+* **verticaltabs:** collapsible tier1 headers ([ecd085c](https://github.com/pluralsight/design-system/commit/ecd085c0f09306939adf27c119e15923aceebd8d))
+* **verticaltabs:** prop to force list closed ([8ee237d](https://github.com/pluralsight/design-system/commit/8ee237de61987870916bc85da3d0585a4b8bae88))
+* **verticaltabs:** prop to hide labels ([b397620](https://github.com/pluralsight/design-system/commit/b3976203dbeb91ea836d1448b6915e5027cb8fb0))
+
+
+
+
+
+## [2.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@2.1.0...@pluralsight/ps-design-system-verticaltabs@2.1.1) (2019-11-08)
+
+
+### Bug Fixes
+
+* **verticaltabs:** update item truncation ([ee7cfcd](https://github.com/pluralsight/design-system/commit/ee7cfcd02d87699a1f9d92ccfb2901e2e05452ec))
+
+
+
+
+
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@2.0.1...@pluralsight/ps-design-system-verticaltabs@2.1.0) (2019-11-08)
+
+
+### Features
+
+* **verticaltabs:** hover states and refinements for color contrast ([8992751](https://github.com/pluralsight/design-system/commit/8992751cead15a91cd00e865ce74b5389df7df40))
+
+
+
+
+
 ## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@2.0.0...@pluralsight/ps-design-system-verticaltabs@2.0.1) (2019-11-06)
 
 

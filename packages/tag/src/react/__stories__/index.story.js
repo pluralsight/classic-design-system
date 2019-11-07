@@ -1,5 +1,5 @@
 import { action } from '@storybook/addon-actions'
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
@@ -13,7 +13,7 @@ Object.keys(Tag.sizes).forEach(size =>
 const iconStory = storiesOf('icon', module)
 Object.keys(Tag.sizes).forEach(size =>
   iconStory.add(size, _ => (
-    <Tag size={size} icon={<Icon id={Icon.ids.close} />}>
+    <Tag size={size} icon={<Icon.CloseIcon />}>
       With Icon
     </Tag>
   ))
@@ -33,14 +33,14 @@ storiesOf('actions', module)
     </Tag>
   ))
   .add('just icon button', _ => (
-    <Tag icon={<Icon id={Icon.ids.close} onClick={action('icon clicked')} />}>
+    <Tag icon={<Icon.CloseIcon onClick={action('icon clicked')} />}>
       As a button
     </Tag>
   ))
   .add('button w/ icon button', _ => (
     <Tag
       onClick={action('button clicked')}
-      icon={<Icon id={Icon.ids.close} onClick={action('icon clicked')} />}
+      icon={<Icon.CloseIcon onClick={action('icon clicked')} />}
     >
       As a button
     </Tag>
@@ -61,7 +61,7 @@ storiesOf('isPressed', module)
     <Tag
       isPressed
       onClick={action('button clicked')}
-      icon={<Icon id={Icon.ids.close} onClick={action('icon clicked')} />}
+      icon={<Icon.CloseIcon onClick={action('icon clicked')} />}
     >
       As a button
     </Tag>
@@ -75,7 +75,7 @@ storiesOf('long', module)
     </Tag>
   ))
   .add('with icon', _ => (
-    <Tag icon={<Icon id={Icon.ids.check} />}>
+    <Tag icon={<Icon.CheckIcon />}>
       This is the string that goes on forever and always. There really isn't an
       end. Wow.
     </Tag>
