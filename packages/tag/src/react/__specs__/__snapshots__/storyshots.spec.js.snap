@@ -299,7 +299,7 @@ exports[`Storyshots isPressed button 1`] = `
     >
       <div
         aria-pressed={true}
-        data-css-maj9fw=""
+        data-css-uehscn=""
         onClick={[Function]}
         role="button"
         tabIndex={0}
@@ -327,7 +327,7 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
     >
       <div
         aria-pressed={true}
-        data-css-rj1ykj=""
+        data-css-1kwjqf=""
         onClick={[Function]}
         role="button"
         tabIndex={0}
@@ -369,8 +369,11 @@ exports[`Storyshots isPressed link 1`] = `
     >
       <a
         aria-pressed={true}
-        data-css-maj9fw=""
+        data-css-uehscn=""
         href="https://duckduckgo.com/"
+        onClick={[Function]}
+        role="button"
+        tabIndex={0}
       >
         <span
           data-css-1997kh1=""
