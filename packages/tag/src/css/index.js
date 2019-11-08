@@ -61,7 +61,12 @@ export default {
   [base + '--isPressed']: {
     color: core.colors.white,
     backgroundColor: core.colors.blue,
-    borderColor: 'transparent'
+    borderColor: 'transparent',
+    '&:hover, &:focus': {
+      backgroundColor: core.colors.blue,
+      borderColor: 'transparent',
+      color: core.colors.white
+    }
   },
 
   [base + '__label']: {
