@@ -1,4 +1,4 @@
-import { css } from 'glamor'
+import { compose, css } from 'glamor'
 import React, { cloneElement, forwardRef } from 'react'
 import PropTypes from 'prop-types'
 
@@ -11,45 +11,37 @@ import List from './list.js'
 import stylesheet from '../css/index.js'
 
 const styles = {
-  item: _ => css(stylesheet['.psds-verticaltabs__item']),
+  item: themeName => {
+    const label = 'verticaltabs__item'
 
-  itemTag: tag =>
-    css(
-      tag === 'button'
-        ? stylesheet['.psds-verticaltabs__button']
-        : tag === 'a'
-        ? stylesheet['.psds-verticaltabs__item__link']
-        : stylesheet['.psds-verticaltabs__item__span']
-    ),
+    return compose(
+      css({ label }),
+      css(stylesheet[`.psds-${label}`]),
+      css(stylesheet[`.psds-${label}.psds-theme--${themeName}`])
+    )
+  },
 
-  itemIcon: themeName =>
-    css(
-      stylesheet['.psds-verticaltabs__item__icon'],
-      stylesheet[`.psds-verticaltabs__item__icon.psds-theme--${themeName}`]
-    ),
-  itemIconActive: themeName =>
-    css(
-      stylesheet['.psds-verticaltabs__item__icon--active'],
-      stylesheet[
-        `.psds-verticaltabs__item__icon--active.psds-theme--${themeName}`
-      ]
-    ),
+  itemIcon: () => css(stylesheet['.psds-verticaltabs__item__icon']),
+  itemIconActive: () =>
+    css(stylesheet['.psds-verticaltabs__item__icon--active']),
 
-  itemTier: (themeName, tier) =>
-    tier === 'tier1'
-      ? css(
-          stylesheet['.psds-verticaltabs__tier1'],
-          stylesheet[`.psds-verticaltabs__tier1.psds-theme--${themeName}`]
-        )
-      : css(
-          stylesheet['.psds-verticaltabs__tier2'],
-          stylesheet[`.psds-verticaltabs__tier2.psds-theme--${themeName}`]
-        ),
+  itemTier: (themeName, tierName) => {
+    const label = `verticaltabs__${tierName}`
+
+    return compose(
+      css({ label }),
+      css(stylesheet[`.psds-${label}`]),
+      css(stylesheet[`.psds-${label}.psds-theme--${themeName}`])
+    )
+  },
+
   tier1Header: _ => css(stylesheet['.pds-verticaltabs__tier1__header']),
+  tier2Header: _ => css(stylesheet['.pds-verticaltabs__tier2__header']),
+
   tier1HeaderInner: _ =>
     css(stylesheet['.pds-verticaltabs__tier1__header__inner']),
-  tierHeaderLabel: _ => css(stylesheet['.pds-verticaltabs__header__label']),
-  tier2Header: _ => css(stylesheet['.pds-verticaltabs__tier2__header'])
+
+  tierHeaderLabel: _ => css(stylesheet['.pds-verticaltabs__header__label'])
 }
 
 const Item = forwardRef((props, ref) => {
@@ -59,7 +51,7 @@ const Item = forwardRef((props, ref) => {
   return (
     <li {...filterReactProps(rest, { tagName: 'li' })} ref={ref}>
       <div
-        {...styles.item()}
+        {...styles.item(themeName)}
         {...styles.itemTier(themeName, itemType)}
         {...(active && { 'data-active': true })}
       >
@@ -87,12 +79,10 @@ const Tier1 = props => <Item {...props} itemType="tier1" />
 
 Tier1.Header = forwardRef((props, ref) => {
   const { active, children, icon, ...rest } = props
-  const themeName = useTheme()
   const TagName = rest.href ? 'a' : rest.onClick ? 'button' : 'span'
 
   return (
     <TagName
-      {...styles.itemTag(TagName)}
       {...styles.tier1Header()}
       {...filterReactProps(rest, { tagName: TagName })}
       ref={ref}
@@ -100,7 +90,7 @@ Tier1.Header = forwardRef((props, ref) => {
       {icon &&
         cloneElement(icon, {
           size: Icon.sizes.medium,
-          ...styles.itemIcon(themeName),
+          ...styles.itemIcon(),
           ...(active ? { 'data-active': true } : {})
         })}
       <span {...styles.tierHeaderLabel()}>{children}</span>
@@ -136,7 +126,6 @@ Tier2.Header = forwardRef(({ active, children, ...rest }, ref) => {
 
   return (
     <TagName
-      {...styles.itemTag(TagName)}
       {...styles.tier2Header()}
       {...filterReactProps(rest, { tagName: TagName })}
       ref={ref}

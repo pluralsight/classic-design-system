@@ -1,4 +1,4 @@
-import { css } from 'glamor'
+import { compose, css } from 'glamor'
 import React, { cloneElement, forwardRef, useState } from 'react'
 import PropTypes from 'prop-types'
 
@@ -12,27 +12,25 @@ import List from './list.js'
 import stylesheet from '../css/index.js'
 
 const styles = {
-  groupHeader: themeName =>
-    css(
-      stylesheet['.psds-verticaltabs__group__header'],
-      stylesheet[`.psds-verticaltabs__group__header.psds-theme--${themeName}`]
-    ),
-  groupHeaderCollapsible: themeName =>
-    css(
-      stylesheet['.psds-verticaltabs__group__header'],
-      stylesheet[`.psds-verticaltabs__group__header.psds-theme--${themeName}`]
-    ),
+  group: () => css({ label: 'verticaltabs__group' }),
+
+  groupHeader: themeName => {
+    const label = 'verticaltabs__group__header'
+
+    return compose(
+      css({ label }),
+      css(stylesheet[`.psds-${label}`]),
+      css(stylesheet[`.psds-${label}.psds-theme--${themeName}`])
+    )
+  },
+
+  groupButton: _ => css(stylesheet['.psds-verticaltabs__group__button']),
+
   groupCollapsibleList: _ =>
-    css(
-      stylesheet['.psds-verticaltabs__list'],
-      stylesheet['.psds-verticaltabs__group__collapsible-list']
+    compose(
+      css(stylesheet['.psds-verticaltabs__list']),
+      css(stylesheet['.psds-verticaltabs__group__collapsible-list'])
     ),
-  groupButton: _ =>
-    css(
-      stylesheet['.psds-verticaltabs__button'],
-      stylesheet['.psds-verticaltabs__group__button']
-    ),
-  groupButtonInner: _ => css(stylesheet['.psds-verticaltabs__button__inner']),
 
   rotatable: open =>
     css(
@@ -40,12 +38,16 @@ const styles = {
       open && stylesheet['.psds-verticaltabs__rotatable--isOpen']
     ),
 
-  headerLabel: _ => css(stylesheet['.pds-verticaltabs__header__label'])
+  headerLabel: _ => css(stylesheet['.psds-verticaltabs__header__label'])
 }
 
 const Group = forwardRef(({ children, header, ...rest }, ref) => {
   return (
-    <li ref={ref} {...filterReactProps(rest, { tagName: 'li' })}>
+    <li
+      ref={ref}
+      {...styles.group()}
+      {...filterReactProps(rest, { tagName: 'li' })}
+    >
       {header}
 
       <List>{children}</List>
@@ -63,7 +65,6 @@ Group.propTypes = {
 
 const GroupHeader = forwardRef(({ children, tagName, ...rest }, ref) => {
   const themeName = useTheme()
-
   const TagName = tagName
 
   return (
@@ -150,14 +151,13 @@ const CollapsibleGroupHeader = forwardRef((props, ref) => {
         aria-label={getButtonAriaLabel()}
         onClick={toggle}
       >
-        <div {...styles.groupButtonInner()}>
-          <span {...styles.headerLabel()}>{children}</span>
-          <Icon
-            size={Icon.sizes.small}
-            id={Icon.ids.caretDown}
-            {...styles.rotatable(open)}
-          />
-        </div>
+        <span {...styles.headerLabel()}>{children}</span>
+
+        <Icon
+          size={Icon.sizes.small}
+          id={Icon.ids.caretDown}
+          {...styles.rotatable(open)}
+        />
       </button>
     </TagName>
   )
