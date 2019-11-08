@@ -96,7 +96,10 @@ export default {
     }
   },
 
-  '.psds-verticaltabs__item__icon': { marginRight: core.layout.spacingSmall },
+  '.psds-verticaltabs__item__icon': {
+    flexShrink: 0,
+    marginRight: core.layout.spacingSmall
+  },
 
   '.psds-verticaltabs__tier1': {
     fontSize: core.type.fontSizeSmall,
@@ -137,7 +140,13 @@ export default {
   '.pds-verticaltabs__tier1__header': {
     display: 'flex',
     alignItems: 'center',
-    width: '100%'
+    width: '100%',
+
+    '& > span': {
+      overflowX: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
+    }
   },
 
   '.psds-verticaltabs__tier2': {

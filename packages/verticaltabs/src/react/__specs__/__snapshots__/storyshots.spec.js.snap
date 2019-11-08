@@ -19,13 +19,13 @@ exports[`Storyshots VerticalTabs Active tiers 1`] = `
         data-css-1b8plv5=""
       >
         <button
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
           onClick={[Function]}
         >
           <div
             data-active={true}
+            data-css-1kqp8s2=""
             data-css-otejxm=""
-            data-css-pfebor=""
           >
             <svg
               fill="none"
@@ -79,11 +79,11 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
         data-css-1b8plv5=""
       >
         <span
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <div
+            data-css-1kqp8s2=""
             data-css-otejxm=""
-            data-css-pfebor=""
           >
             <svg
               fill="none"
@@ -141,11 +141,11 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -169,11 +169,11 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -197,11 +197,11 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -225,11 +225,11 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -253,11 +253,11 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -281,11 +281,11 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -309,11 +309,11 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -440,7 +440,7 @@ exports[`Storyshots VerticalTabs Group 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <span>
                 Install
@@ -454,7 +454,7 @@ exports[`Storyshots VerticalTabs Group 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <span>
                 Design assets
@@ -468,7 +468,7 @@ exports[`Storyshots VerticalTabs Group 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <span>
                 Contribute
@@ -482,7 +482,7 @@ exports[`Storyshots VerticalTabs Group 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <span>
                 Roadmap
@@ -516,11 +516,11 @@ exports[`Storyshots VerticalTabs Group 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -544,11 +544,11 @@ exports[`Storyshots VerticalTabs Group 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -572,11 +572,11 @@ exports[`Storyshots VerticalTabs Group 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -600,11 +600,11 @@ exports[`Storyshots VerticalTabs Group 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -628,11 +628,11 @@ exports[`Storyshots VerticalTabs Group 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -677,7 +677,7 @@ exports[`Storyshots VerticalTabs Group 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <span>
                 Avatar
@@ -720,7 +720,7 @@ exports[`Storyshots VerticalTabs Group 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <span>
                 Button
@@ -734,7 +734,7 @@ exports[`Storyshots VerticalTabs Group 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <span>
                 Badge
@@ -748,7 +748,7 @@ exports[`Storyshots VerticalTabs Group 1`] = `
             data-css-1b8plv5=""
           >
             <span
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <span>
                 Breadcrumb
@@ -780,7 +780,7 @@ exports[`Storyshots VerticalTabs Href changes tier tag to link 1`] = `
         data-css-1b8plv5=""
       >
         <a
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
           href=" "
         >
           <span>
@@ -875,7 +875,7 @@ exports[`Storyshots VerticalTabs Long text 1`] = `
         data-css-1b8plv5=""
       >
         <span
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <span>
             The technology skills platform
@@ -917,7 +917,7 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
         data-css-1b8plv5=""
       >
         <span
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <span>
             Dashboard
@@ -931,7 +931,7 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
         data-css-1b8plv5=""
       >
         <span
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <span>
             Account
@@ -946,12 +946,12 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
         data-css-1b8plv5=""
       >
         <span
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <div
             data-active={true}
+            data-css-1kqp8s2=""
             data-css-otejxm=""
-            data-css-pfebor=""
           >
             <svg
               fill="none"
@@ -1028,11 +1028,11 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
         data-css-1b8plv5=""
       >
         <span
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <div
+            data-css-1kqp8s2=""
             data-css-otejxm=""
-            data-css-pfebor=""
           >
             <svg
               fill="none"
@@ -1056,11 +1056,11 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
         data-css-1b8plv5=""
       >
         <span
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <div
+            data-css-1kqp8s2=""
             data-css-otejxm=""
-            data-css-pfebor=""
           >
             <svg
               fill="none"
@@ -1084,11 +1084,11 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
         data-css-1b8plv5=""
       >
         <span
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <div
+            data-css-1kqp8s2=""
             data-css-otejxm=""
-            data-css-pfebor=""
           >
             <svg
               fill="none"
@@ -1115,11 +1115,11 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
         data-css-1b8plv5=""
       >
         <span
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <div
+            data-css-1kqp8s2=""
             data-css-otejxm=""
-            data-css-pfebor=""
           >
             <svg
               fill="none"
@@ -1143,11 +1143,11 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
         data-css-1b8plv5=""
       >
         <span
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <div
+            data-css-1kqp8s2=""
             data-css-otejxm=""
-            data-css-pfebor=""
           >
             <svg
               fill="none"
@@ -1195,12 +1195,12 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1262,12 +1262,12 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1293,12 +1293,12 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1324,12 +1324,12 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1355,12 +1355,12 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1386,12 +1386,12 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1417,12 +1417,12 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1484,12 +1484,12 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1515,12 +1515,12 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1547,13 +1547,13 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
                 data-active={true}
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1579,12 +1579,12 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1610,12 +1610,12 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1677,12 +1677,12 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1744,12 +1744,12 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1775,12 +1775,12 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1806,12 +1806,12 @@ exports[`Storyshots VerticalTabs gitprime example 1`] = `
             data-css-1b8plv5=""
           >
             <a
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
               href="#"
             >
               <div
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
-                data-css-pfebor=""
               >
                 <svg
                   fill="none"
@@ -1853,7 +1853,7 @@ exports[`Storyshots VerticalTabs onClick no href changes tier tag to button 1`] 
         data-css-1b8plv5=""
       >
         <button
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
           onClick={[Function]}
         >
           <span>
