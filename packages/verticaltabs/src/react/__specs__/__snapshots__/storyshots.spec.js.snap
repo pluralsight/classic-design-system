@@ -15,17 +15,16 @@ exports[`Storyshots VerticalTabs Active tiers 1`] = `
     <li>
       <div
         data-active={true}
-        data-css-19euw49=""
-        data-css-1hxx1qx=""
+        data-css-13xqjhl=""
+        data-css-1b8plv5=""
       >
         <button
-          data-css-1ahtnia=""
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
           onClick={[Function]}
         >
           <div
             data-active={true}
-            data-css-1u6ueg5=""
+            data-css-1kqp8s2=""
             data-css-otejxm=""
           >
             <svg
@@ -38,9 +37,7 @@ exports[`Storyshots VerticalTabs Active tiers 1`] = `
               />
             </svg>
           </div>
-          <span
-            data-css-9nfe05=""
-          >
+          <span>
             Tier 1 active
           </span>
         </button>
@@ -49,11 +46,10 @@ exports[`Storyshots VerticalTabs Active tiers 1`] = `
     <li>
       <div
         data-active={true}
-        data-css-1dhocok=""
-        data-css-1hxx1qx=""
+        data-css-1b8plv5=""
+        data-css-nh4zmc=""
       >
         <button
-          data-css-1ahtnia=""
           data-css-mbxfai=""
           onClick={[Function]}
         >
@@ -79,15 +75,14 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
   >
     <li>
       <div
-        data-css-19euw49=""
-        data-css-1hxx1qx=""
+        data-css-13xqjhl=""
+        data-css-1b8plv5=""
       >
         <span
-          data-css-194prvg=""
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <div
-            data-css-1u6ueg5=""
+            data-css-1kqp8s2=""
             data-css-otejxm=""
           >
             <svg
@@ -100,9 +95,7 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
               />
             </svg>
           </div>
-          <span
-            data-css-9nfe05=""
-          >
+          <span>
             Reports home
           </span>
         </span>
@@ -110,53 +103,48 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
     </li>
     <div>
       <h2
-        data-css-1qwecpt=""
+        data-css-dk3o27=""
       >
         <button
           aria-label="Collapse"
-          data-css-nhugdf=""
+          data-css-h54kwj=""
           onClick={[Function]}
         >
-          <div
-            data-css-4gnhqq=""
+          <span
+            data-css-rl0fow=""
           >
-            <span
-              data-css-9nfe05=""
+            Operational Reports
+          </span>
+          <div
+            data-css-12f5sv2=""
+            data-css-18aymev=""
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              Operational Reports
-            </span>
-            <div
-              data-css-12f5sv2=""
-              data-css-xnveog=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
-            </div>
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
           </div>
         </button>
       </h2>
       <ul
         aria-hidden={false}
-        data-css-r5lswg=""
+        data-css-1y8i23u=""
       >
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
-                data-css-1u6ueg5=""
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
               >
                 <svg
@@ -169,9 +157,7 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
                   />
                 </svg>
               </div>
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Work log
               </span>
             </span>
@@ -179,15 +165,14 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
-                data-css-1u6ueg5=""
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
               >
                 <svg
@@ -200,9 +185,7 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
                   />
                 </svg>
               </div>
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Project timeline
               </span>
             </span>
@@ -210,15 +193,14 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
-                data-css-1u6ueg5=""
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
               >
                 <svg
@@ -231,9 +213,7 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
                   />
                 </svg>
               </div>
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Leaderboard
               </span>
             </span>
@@ -241,15 +221,14 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
-                data-css-1u6ueg5=""
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
               >
                 <svg
@@ -262,9 +241,7 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
                   />
                 </svg>
               </div>
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Retrospective
               </span>
             </span>
@@ -272,15 +249,14 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
-                data-css-1u6ueg5=""
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
               >
                 <svg
@@ -293,9 +269,7 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
                   />
                 </svg>
               </div>
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Snapshot
               </span>
             </span>
@@ -303,15 +277,14 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
-                data-css-1u6ueg5=""
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
               >
                 <svg
@@ -324,9 +297,7 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
                   />
                 </svg>
               </div>
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Daily update
               </span>
             </span>
@@ -334,15 +305,14 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
-                data-css-1u6ueg5=""
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
               >
                 <svg
@@ -355,9 +325,7 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
                   />
                 </svg>
               </div>
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Spot check
               </span>
             </span>
@@ -367,80 +335,72 @@ exports[`Storyshots VerticalTabs CollapsibleGroup 1`] = `
     </div>
     <div>
       <h2
-        data-css-1qwecpt=""
+        data-css-dk3o27=""
       >
         <button
           aria-label="Expand"
-          data-css-nhugdf=""
+          data-css-h54kwj=""
           onClick={[Function]}
         >
-          <div
-            data-css-4gnhqq=""
+          <span
+            data-css-rl0fow=""
           >
-            <span
-              data-css-9nfe05=""
+            Reviews & Collaboration
+          </span>
+          <div
+            data-css-10afqa=""
+            data-css-12f5sv2=""
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              Reviews & Collaboration
-            </span>
-            <div
-              data-css-12f5sv2=""
-              data-css-1byjzqg=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
-            </div>
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
           </div>
         </button>
       </h2>
       <ul
         aria-hidden={true}
-        data-css-r5lswg=""
+        data-css-1y8i23u=""
       />
     </div>
     <div>
       <h2
-        data-css-1qwecpt=""
+        data-css-dk3o27=""
       >
         <button
           aria-label="Expand"
-          data-css-nhugdf=""
+          data-css-h54kwj=""
           onClick={[Function]}
         >
-          <div
-            data-css-4gnhqq=""
+          <span
+            data-css-rl0fow=""
           >
-            <span
-              data-css-9nfe05=""
+            Fundamentals
+          </span>
+          <div
+            data-css-10afqa=""
+            data-css-12f5sv2=""
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              Fundamentals
-            </span>
-            <div
-              data-css-12f5sv2=""
-              data-css-1byjzqg=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
-            </div>
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
           </div>
         </button>
       </h2>
       <ul
         aria-hidden={true}
-        data-css-r5lswg=""
+        data-css-1y8i23u=""
       />
     </div>
   </ul>
@@ -459,12 +419,14 @@ exports[`Storyshots VerticalTabs Group 1`] = `
   <ul
     data-css-nqd4p3=""
   >
-    <li>
+    <li
+      data-css-1268me8=""
+    >
       <h2
-        data-css-1qwecpt=""
+        data-css-dk3o27=""
       >
         <span
-          data-css-9nfe05=""
+          data-css-rl0fow=""
         >
           Introduction
         </span>
@@ -474,16 +436,13 @@ exports[`Storyshots VerticalTabs Group 1`] = `
       >
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Install
               </span>
             </span>
@@ -491,16 +450,13 @@ exports[`Storyshots VerticalTabs Group 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Design assets
               </span>
             </span>
@@ -508,16 +464,13 @@ exports[`Storyshots VerticalTabs Group 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Contribute
               </span>
             </span>
@@ -525,16 +478,13 @@ exports[`Storyshots VerticalTabs Group 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Roadmap
               </span>
             </span>
@@ -543,14 +493,16 @@ exports[`Storyshots VerticalTabs Group 1`] = `
       </ul>
     </li>
     <hr
-      data-css-1ap4iwc=""
+      data-css-1luso1=""
     />
-    <li>
+    <li
+      data-css-1268me8=""
+    >
       <h2
-        data-css-1qwecpt=""
+        data-css-dk3o27=""
       >
         <span
-          data-css-9nfe05=""
+          data-css-rl0fow=""
         >
           Foundations
         </span>
@@ -560,15 +512,14 @@ exports[`Storyshots VerticalTabs Group 1`] = `
       >
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
-                data-css-1u6ueg5=""
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
               >
                 <svg
@@ -581,9 +532,7 @@ exports[`Storyshots VerticalTabs Group 1`] = `
                   />
                 </svg>
               </div>
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Color
               </span>
             </span>
@@ -591,15 +540,14 @@ exports[`Storyshots VerticalTabs Group 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
-                data-css-1u6ueg5=""
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
               >
                 <svg
@@ -612,9 +560,7 @@ exports[`Storyshots VerticalTabs Group 1`] = `
                   />
                 </svg>
               </div>
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Typography
               </span>
             </span>
@@ -622,15 +568,14 @@ exports[`Storyshots VerticalTabs Group 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
-                data-css-1u6ueg5=""
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
               >
                 <svg
@@ -643,9 +588,7 @@ exports[`Storyshots VerticalTabs Group 1`] = `
                   />
                 </svg>
               </div>
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Spacing
               </span>
             </span>
@@ -653,15 +596,14 @@ exports[`Storyshots VerticalTabs Group 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
-                data-css-1u6ueg5=""
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
               >
                 <svg
@@ -674,9 +616,7 @@ exports[`Storyshots VerticalTabs Group 1`] = `
                   />
                 </svg>
               </div>
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Iconography
               </span>
             </span>
@@ -684,15 +624,14 @@ exports[`Storyshots VerticalTabs Group 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
               <div
-                data-css-1u6ueg5=""
+                data-css-1kqp8s2=""
                 data-css-otejxm=""
               >
                 <svg
@@ -705,9 +644,7 @@ exports[`Storyshots VerticalTabs Group 1`] = `
                   />
                 </svg>
               </div>
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Voice & Tone
               </span>
             </span>
@@ -716,14 +653,16 @@ exports[`Storyshots VerticalTabs Group 1`] = `
       </ul>
     </li>
     <hr
-      data-css-1ap4iwc=""
+      data-css-1luso1=""
     />
-    <li>
+    <li
+      data-css-1268me8=""
+    >
       <h2
-        data-css-1qwecpt=""
+        data-css-dk3o27=""
       >
         <span
-          data-css-9nfe05=""
+          data-css-rl0fow=""
         >
           Components
         </span>
@@ -734,16 +673,13 @@ exports[`Storyshots VerticalTabs Group 1`] = `
         <li>
           <div
             data-active={true}
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Avatar
               </span>
             </span>
@@ -754,11 +690,10 @@ exports[`Storyshots VerticalTabs Group 1`] = `
             <li>
               <div
                 data-active={true}
-                data-css-1dhocok=""
-                data-css-1hxx1qx=""
+                data-css-1b8plv5=""
+                data-css-nh4zmc=""
               >
                 <span
-                  data-css-194prvg=""
                   data-css-mbxfai=""
                 >
                   Prop types
@@ -767,11 +702,10 @@ exports[`Storyshots VerticalTabs Group 1`] = `
             </li>
             <li>
               <div
-                data-css-1dhocok=""
-                data-css-1hxx1qx=""
+                data-css-1b8plv5=""
+                data-css-nh4zmc=""
               >
                 <span
-                  data-css-194prvg=""
                   data-css-mbxfai=""
                 >
                   Guidelines
@@ -782,16 +716,13 @@ exports[`Storyshots VerticalTabs Group 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Button
               </span>
             </span>
@@ -799,16 +730,13 @@ exports[`Storyshots VerticalTabs Group 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Badge
               </span>
             </span>
@@ -816,16 +744,13 @@ exports[`Storyshots VerticalTabs Group 1`] = `
         </li>
         <li>
           <div
-            data-css-19euw49=""
-            data-css-1hxx1qx=""
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
           >
             <span
-              data-css-194prvg=""
-              data-css-f6e4dj=""
+              data-css-17sdelb=""
             >
-              <span
-                data-css-9nfe05=""
-              >
+              <span>
                 Breadcrumb
               </span>
             </span>
@@ -851,17 +776,14 @@ exports[`Storyshots VerticalTabs Href changes tier tag to link 1`] = `
   >
     <li>
       <div
-        data-css-19euw49=""
-        data-css-1hxx1qx=""
+        data-css-13xqjhl=""
+        data-css-1b8plv5=""
       >
         <a
-          data-css-10d53uz=""
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
           href=" "
         >
-          <span
-            data-css-9nfe05=""
-          >
+          <span>
             Tier 1 link
           </span>
         </a>
@@ -869,11 +791,10 @@ exports[`Storyshots VerticalTabs Href changes tier tag to link 1`] = `
     </li>
     <li>
       <div
-        data-css-1dhocok=""
-        data-css-1hxx1qx=""
+        data-css-1b8plv5=""
+        data-css-nh4zmc=""
       >
         <a
-          data-css-10d53uz=""
           data-css-mbxfai=""
           href=" "
         >
@@ -897,12 +818,14 @@ exports[`Storyshots VerticalTabs Long text 1`] = `
   <ul
     data-css-nqd4p3=""
   >
-    <li>
+    <li
+      data-css-1268me8=""
+    >
       <h2
-        data-css-1qwecpt=""
+        data-css-dk3o27=""
       >
         <span
-          data-css-9nfe05=""
+          data-css-rl0fow=""
         >
           The technology skills platform
         </span>
@@ -913,55 +836,48 @@ exports[`Storyshots VerticalTabs Long text 1`] = `
     </li>
     <div>
       <h2
-        data-css-1qwecpt=""
+        data-css-dk3o27=""
       >
         <button
           aria-label="Expand"
-          data-css-nhugdf=""
+          data-css-h54kwj=""
           onClick={[Function]}
         >
-          <div
-            data-css-4gnhqq=""
+          <span
+            data-css-rl0fow=""
           >
-            <span
-              data-css-9nfe05=""
+            The technology skills platform
+          </span>
+          <div
+            data-css-10afqa=""
+            data-css-12f5sv2=""
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              The technology skills platform
-            </span>
-            <div
-              data-css-12f5sv2=""
-              data-css-1byjzqg=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
-            </div>
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
           </div>
         </button>
       </h2>
       <ul
         aria-hidden={true}
-        data-css-r5lswg=""
+        data-css-1y8i23u=""
       />
     </div>
     <li>
       <div
-        data-css-19euw49=""
-        data-css-1hxx1qx=""
+        data-css-13xqjhl=""
+        data-css-1b8plv5=""
       >
         <span
-          data-css-194prvg=""
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
-          <span
-            data-css-9nfe05=""
-          >
+          <span>
             The technology skills platform
           </span>
         </span>
@@ -969,11 +885,10 @@ exports[`Storyshots VerticalTabs Long text 1`] = `
     </li>
     <li>
       <div
-        data-css-1dhocok=""
-        data-css-1hxx1qx=""
+        data-css-1b8plv5=""
+        data-css-nh4zmc=""
       >
         <span
-          data-css-194prvg=""
           data-css-mbxfai=""
         >
           The technology skills platform
@@ -998,16 +913,13 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
   >
     <li>
       <div
-        data-css-19euw49=""
-        data-css-1hxx1qx=""
+        data-css-13xqjhl=""
+        data-css-1b8plv5=""
       >
         <span
-          data-css-194prvg=""
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
-          <span
-            data-css-9nfe05=""
-          >
+          <span>
             Dashboard
           </span>
         </span>
@@ -1015,16 +927,13 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
     </li>
     <li>
       <div
-        data-css-19euw49=""
-        data-css-1hxx1qx=""
+        data-css-13xqjhl=""
+        data-css-1b8plv5=""
       >
         <span
-          data-css-194prvg=""
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
-          <span
-            data-css-9nfe05=""
-          >
+          <span>
             Account
           </span>
         </span>
@@ -1033,16 +942,15 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
     <li>
       <div
         data-active={true}
-        data-css-19euw49=""
-        data-css-1hxx1qx=""
+        data-css-13xqjhl=""
+        data-css-1b8plv5=""
       >
         <span
-          data-css-194prvg=""
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <div
             data-active={true}
-            data-css-1u6ueg5=""
+            data-css-1kqp8s2=""
             data-css-otejxm=""
           >
             <svg
@@ -1055,9 +963,7 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
               />
             </svg>
           </div>
-          <span
-            data-css-9nfe05=""
-          >
+          <span>
             People
           </span>
         </span>
@@ -1068,11 +974,10 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
         <li>
           <div
             data-active={true}
-            data-css-1dhocok=""
-            data-css-1hxx1qx=""
+            data-css-1b8plv5=""
+            data-css-nh4zmc=""
           >
             <span
-              data-css-194prvg=""
               data-css-mbxfai=""
             >
               Organization
@@ -1081,11 +986,10 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
         </li>
         <li>
           <div
-            data-css-1dhocok=""
-            data-css-1hxx1qx=""
+            data-css-1b8plv5=""
+            data-css-nh4zmc=""
           >
             <span
-              data-css-194prvg=""
               data-css-mbxfai=""
             >
               Admins
@@ -1094,11 +998,10 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
         </li>
         <li>
           <div
-            data-css-1dhocok=""
-            data-css-1hxx1qx=""
+            data-css-1b8plv5=""
+            data-css-nh4zmc=""
           >
             <span
-              data-css-194prvg=""
               data-css-mbxfai=""
             >
               Managers
@@ -1107,11 +1010,10 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
         </li>
         <li>
           <div
-            data-css-1dhocok=""
-            data-css-1hxx1qx=""
+            data-css-1b8plv5=""
+            data-css-nh4zmc=""
           >
             <span
-              data-css-194prvg=""
               data-css-mbxfai=""
             >
               Unassigned users
@@ -1122,15 +1024,14 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
     </li>
     <li>
       <div
-        data-css-19euw49=""
-        data-css-1hxx1qx=""
+        data-css-13xqjhl=""
+        data-css-1b8plv5=""
       >
         <span
-          data-css-194prvg=""
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <div
-            data-css-1u6ueg5=""
+            data-css-1kqp8s2=""
             data-css-otejxm=""
           >
             <svg
@@ -1143,9 +1044,7 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
               />
             </svg>
           </div>
-          <span
-            data-css-9nfe05=""
-          >
+          <span>
             Pending invites
           </span>
         </span>
@@ -1153,15 +1052,14 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
     </li>
     <li>
       <div
-        data-css-19euw49=""
-        data-css-1hxx1qx=""
+        data-css-13xqjhl=""
+        data-css-1b8plv5=""
       >
         <span
-          data-css-194prvg=""
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <div
-            data-css-1u6ueg5=""
+            data-css-1kqp8s2=""
             data-css-otejxm=""
           >
             <svg
@@ -1174,9 +1072,7 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
               />
             </svg>
           </div>
-          <span
-            data-css-9nfe05=""
-          >
+          <span>
             Analytics
           </span>
         </span>
@@ -1184,15 +1080,14 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
     </li>
     <li>
       <div
-        data-css-19euw49=""
-        data-css-1hxx1qx=""
+        data-css-13xqjhl=""
+        data-css-1b8plv5=""
       >
         <span
-          data-css-194prvg=""
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <div
-            data-css-1u6ueg5=""
+            data-css-1kqp8s2=""
             data-css-otejxm=""
           >
             <svg
@@ -1205,28 +1100,25 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
               />
             </svg>
           </div>
-          <span
-            data-css-9nfe05=""
-          >
+          <span>
             Log
           </span>
         </span>
       </div>
     </li>
     <hr
-      data-css-1ap4iwc=""
+      data-css-1luso1=""
     />
     <li>
       <div
-        data-css-19euw49=""
-        data-css-1hxx1qx=""
+        data-css-13xqjhl=""
+        data-css-1b8plv5=""
       >
         <span
-          data-css-194prvg=""
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <div
-            data-css-1u6ueg5=""
+            data-css-1kqp8s2=""
             data-css-otejxm=""
           >
             <svg
@@ -1239,9 +1131,7 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
               />
             </svg>
           </div>
-          <span
-            data-css-9nfe05=""
-          >
+          <span>
             Item label
           </span>
         </span>
@@ -1249,15 +1139,14 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
     </li>
     <li>
       <div
-        data-css-19euw49=""
-        data-css-1hxx1qx=""
+        data-css-13xqjhl=""
+        data-css-1b8plv5=""
       >
         <span
-          data-css-194prvg=""
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
         >
           <div
-            data-css-1u6ueg5=""
+            data-css-1kqp8s2=""
             data-css-otejxm=""
           >
             <svg
@@ -1270,14 +1159,678 @@ exports[`Storyshots VerticalTabs No Group 1`] = `
               />
             </svg>
           </div>
-          <span
-            data-css-9nfe05=""
-          >
+          <span>
             Item label
           </span>
         </span>
       </div>
     </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots VerticalTabs gitprime example 1`] = `
+<div
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
+>
+  <ul
+    data-css-nqd4p3=""
+  >
+    <li
+      data-css-1268me8=""
+    >
+      <ul
+        data-css-gkw1j5=""
+      >
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Reports Home
+              </span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <div>
+      <h2
+        data-css-dk3o27=""
+      >
+        <button
+          aria-label="Collapse"
+          data-css-h54kwj=""
+          onClick={[Function]}
+        >
+          <span
+            data-css-rl0fow=""
+          >
+            Operational Reports
+          </span>
+          <div
+            data-css-12f5sv2=""
+            data-css-18aymev=""
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
+          </div>
+        </button>
+      </h2>
+      <ul
+        aria-hidden={false}
+        data-css-1y8i23u=""
+      >
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Work Log
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Project Timeline
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Leaderboard
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Snapshot
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Daily Updates
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Spot Check
+              </span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2
+        data-css-dk3o27=""
+      >
+        <button
+          aria-label="Collapse"
+          data-css-h54kwj=""
+          onClick={[Function]}
+        >
+          <span
+            data-css-rl0fow=""
+          >
+            Review & Collaborate
+          </span>
+          <div
+            data-css-12f5sv2=""
+            data-css-18aymev=""
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
+          </div>
+        </button>
+      </h2>
+      <ul
+        aria-hidden={false}
+        data-css-1y8i23u=""
+      >
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Review Workflow
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Review Collaboration
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-active={true}
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-active={true}
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                PR Resolution
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Knowledge Sharing
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Player Card
+              </span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2
+        data-css-dk3o27=""
+      >
+        <button
+          aria-label="Collapse"
+          data-css-h54kwj=""
+          onClick={[Function]}
+        >
+          <span
+            data-css-rl0fow=""
+          >
+            Delivery
+          </span>
+          <div
+            data-css-12f5sv2=""
+            data-css-18aymev=""
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
+          </div>
+        </button>
+      </h2>
+      <ul
+        aria-hidden={false}
+        data-css-1y8i23u=""
+      >
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Retrospective
+              </span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2
+        data-css-dk3o27=""
+      >
+        <button
+          aria-label="Collapse"
+          data-css-h54kwj=""
+          onClick={[Function]}
+        >
+          <span
+            data-css-rl0fow=""
+          >
+            Fundamentals
+          </span>
+          <div
+            data-css-12f5sv2=""
+            data-css-18aymev=""
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
+          </div>
+        </button>
+      </h2>
+      <ul
+        aria-hidden={false}
+        data-css-1y8i23u=""
+      >
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Code
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Submit
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          <div
+            data-css-13xqjhl=""
+            data-css-1b8plv5=""
+          >
+            <a
+              data-css-17sdelb=""
+              href="#"
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-otejxm=""
+              >
+                <svg
+                  fill="none"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Review
+              </span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
   </ul>
 </div>
 `;
@@ -1296,17 +1849,14 @@ exports[`Storyshots VerticalTabs onClick no href changes tier tag to button 1`] 
   >
     <li>
       <div
-        data-css-19euw49=""
-        data-css-1hxx1qx=""
+        data-css-13xqjhl=""
+        data-css-1b8plv5=""
       >
         <button
-          data-css-1ahtnia=""
-          data-css-f6e4dj=""
+          data-css-17sdelb=""
           onClick={[Function]}
         >
-          <span
-            data-css-9nfe05=""
-          >
+          <span>
             Tier 1 button
           </span>
         </button>
@@ -1314,11 +1864,10 @@ exports[`Storyshots VerticalTabs onClick no href changes tier tag to button 1`] 
     </li>
     <li>
       <div
-        data-css-1dhocok=""
-        data-css-1hxx1qx=""
+        data-css-1b8plv5=""
+        data-css-nh4zmc=""
       >
         <button
-          data-css-1ahtnia=""
           data-css-mbxfai=""
           onClick={[Function]}
         >
