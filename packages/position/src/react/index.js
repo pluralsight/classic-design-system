@@ -86,7 +86,7 @@ const Position = React.forwardRef((props, forwardedRef) => {
   }, [updateStyle, when])
 
   return (
-    <React.Fragment>
+    <>
       {target ? child : React.cloneElement(child, { ref })}
 
       {createUniversalPortal(
@@ -95,7 +95,7 @@ const Position = React.forwardRef((props, forwardedRef) => {
         </div>,
         props.inNode
       )}
-    </React.Fragment>
+    </>
   )
 })
 
@@ -116,8 +116,8 @@ Position.defaultProps = {
 function canUseDOM() {
   return !!(
     typeof window !== 'undefined' &&
-    window.document &&
-    window.document.createElement
+    typeof window.document !== 'undefined' &&
+    typeof window.document.createElement !== 'undefined'
   )
 }
 
