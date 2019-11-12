@@ -2,10 +2,9 @@ import { storiesOf } from '@storybook/react'
 import React from 'react'
 import Icon from '@pluralsight/ps-design-system-icon'
 
-import * as fixtures from './fixtures.js'
 import VerticalTabs from '../index.js'
 
-storiesOf('VerticalTabs', module)
+storiesOf('components|VerticalTabs', module)
   .addDecorator(story => (
     <div style={{ height: '100%', width: '240px' }}>{story()}</div>
   ))
@@ -391,56 +390,3 @@ storiesOf('VerticalTabs', module)
       />
     </VerticalTabs>
   ))
-  .add('gitprime example', () => {
-    const { GITPRIME_NAV } = fixtures
-
-    const GitPrimeStory = props => {
-      const [activeId, setActiveId] = React.useState('pr-resolution')
-      const isActive = id => activeId === id
-
-      const activate = (evt, id) => {
-        evt.preventDefault()
-        setActiveId(id)
-      }
-
-      return (
-        <VerticalTabs {...props}>
-          {GITPRIME_NAV.map((group, groupKey) => {
-            const Group = group.collapsible
-              ? VerticalTabs.CollapsibleGroup
-              : VerticalTabs.Group
-
-            const header = group.header && (
-              <Group.Header>{group.header.title}</Group.Header>
-            )
-
-            return (
-              <Group header={header} key={groupKey} startOpen>
-                {group.items.map((item, itemKey) => {
-                  const itemHeader = (
-                    <VerticalTabs.Tier1.Header
-                      href={item.href}
-                      icon={item.icon}
-                    >
-                      {item.title}
-                    </VerticalTabs.Tier1.Header>
-                  )
-
-                  return (
-                    <VerticalTabs.Tier1
-                      active={isActive(item.id)}
-                      header={itemHeader}
-                      onClick={evt => activate(evt, item.id)}
-                      key={itemKey}
-                    />
-                  )
-                })}
-              </Group>
-            )
-          })}
-        </VerticalTabs>
-      )
-    }
-
-    return <GitPrimeStory />
-  })

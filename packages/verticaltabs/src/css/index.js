@@ -4,7 +4,7 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import * as core from '@pluralsight/ps-design-system-core'
 
-export const resetButton = {
+const resetButton = {
   background: 'transparent',
   border: 'none',
   color: 'inherit',
@@ -23,6 +23,12 @@ export const resetButton = {
     border: 0,
     padding: 0
   }
+}
+
+const truncate = {
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+  whiteSpace: 'nowrap'
 }
 
 export default {
@@ -137,9 +143,10 @@ export default {
     '&[data-active]': { color: core.colors.white }
   },
 
-  '.pds-verticaltabs__tier1__header': {
-    display: 'flex',
+  '.psds-verticaltabs__tier1__header': {
     alignItems: 'center',
+    display: 'flex',
+    transition: `color ${core.motion.speedXFast} linear`,
     width: '100%',
 
     '& > span': {
@@ -160,14 +167,14 @@ export default {
       position: 'absolute',
       top: '50%',
       transform: 'translateY(-50%)',
-      transition: `height ${core.motion.speedXFast} ease-out`,
+      transition: `height ${core.motion.speedXFast} linear`,
       width: '1px'
     },
 
     '& > *': {
       fontSize: core.type.fontSizeXSmall,
       fontWeight: core.type.fontWeightBook,
-      marginLeft: '35px',
+      marginLeft: '37px',
       minHeight: '32px',
       padding: `${core.layout.spacingXSmall} ${core.layout.spacingLarge}`,
       textAlign: 'left'
@@ -190,10 +197,8 @@ export default {
     }
   },
 
-  '.pds-verticaltabs__tier2__header': {
-    display: 'block',
-    overflowWrap: 'break-word',
-    width: '100%'
+  '.psds-verticaltabs__tier2__header': {
+    transition: `color ${core.motion.speedXFast} ease-out`
   },
 
   '.psds-verticaltabs__group__header': {
@@ -222,10 +227,12 @@ export default {
   },
 
   '.psds-verticaltabs__header__label': {
-    lineHeight: '1em',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap'
+    ...truncate,
+    lineHeight: '1em'
+  },
+
+  '.psds-verticaltabs__header__label--hide-labels': {
+    color: 'transparent'
   },
 
   '.psds-verticaltabs__group__button': { ...resetButton, cursor: 'pointer' },
@@ -237,6 +244,7 @@ export default {
   },
 
   [`.psds-verticaltabs__rotatable`]: {
+    flexShrink: 0,
     flexGrow: 0,
     transform: 'translateX(10px)',
     transition: `transform ${core.motion.speedNormal}`

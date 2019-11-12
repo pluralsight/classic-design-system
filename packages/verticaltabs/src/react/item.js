@@ -6,6 +6,7 @@ import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Icon from '@pluralsight/ps-design-system-icon'
 
+import { useHideLabels } from './context.js'
 import List from './list.js'
 
 import stylesheet from '../css/index.js'
@@ -25,8 +26,8 @@ const styles = {
   itemIconActive: () =>
     css(stylesheet['.psds-verticaltabs__item__icon--active']),
 
-  itemTier: (themeName, tierName) => {
-    const label = `verticaltabs__${tierName}`
+  itemTier: (themeName, { type }) => {
+    const label = `verticaltabs__${type}`
 
     return compose(
       css({ label }),
@@ -35,24 +36,52 @@ const styles = {
     )
   },
 
-  tier1Header: _ => css(stylesheet['.pds-verticaltabs__tier1__header']),
-  tier2Header: _ => css(stylesheet['.pds-verticaltabs__tier2__header']),
+  tier1Header: () => {
+    const label = `verticaltabs__tier1__header`
 
-  tier1HeaderInner: _ =>
-    css(stylesheet['.pds-verticaltabs__tier1__header__inner']),
+    return compose(
+      css({ label }),
+      css(stylesheet[`.psds-${label}`])
+    )
+  },
+  tier1HeaderInner: () => {
+    const label = `verticaltabs__tier1__header__inner`
 
-  tierHeaderLabel: _ => css(stylesheet['.pds-verticaltabs__header__label'])
+    return compose(
+      css({ label }),
+      css(stylesheet[`.psds-${label}`])
+    )
+  },
+
+  tier2Header: () => {
+    const label = `verticaltabs__tier2__header`
+
+    return compose(
+      css({ label }),
+      css(stylesheet[`.psds-${label}`])
+    )
+  },
+
+  tierHeaderLabel: (_, { hideLabels }) => {
+    const label = `verticaltabs__header__label`
+
+    return compose(
+      css({ label }),
+      css(stylesheet[`.psds-${label}`]),
+      hideLabels && css(stylesheet[`.psds-${label}--hide-labels`])
+    )
+  }
 }
 
 const Item = forwardRef((props, ref) => {
-  const { active, children, header, itemType, ...rest } = props
+  const { active, children, header, itemType: type, ...rest } = props
   const themeName = useTheme()
 
   return (
     <li {...filterReactProps(rest, { tagName: 'li' })} ref={ref}>
       <div
         {...styles.item(themeName)}
-        {...styles.itemTier(themeName, itemType)}
+        {...styles.itemTier(themeName, { type })}
         {...(active && { 'data-active': true })}
       >
         {cloneElement(header, { active })}
@@ -79,6 +108,8 @@ const Tier1 = props => <Item {...props} itemType="tier1" />
 
 Tier1.Header = forwardRef((props, ref) => {
   const { active, children, icon, ...rest } = props
+  const hideLabels = useHideLabels()
+
   const TagName = rest.href ? 'a' : rest.onClick ? 'button' : 'span'
 
   return (
@@ -93,7 +124,8 @@ Tier1.Header = forwardRef((props, ref) => {
           ...styles.itemIcon(),
           ...(active ? { 'data-active': true } : {})
         })}
-      <span {...styles.tierHeaderLabel()}>{children}</span>
+
+      <span {...styles.tierHeaderLabel(null, { hideLabels })}>{children}</span>
     </TagName>
   )
 })
@@ -110,9 +142,10 @@ Tier1.Header.propTypes = {
 Tier1.displayName = 'VerticalTabs.Tier1'
 Tier1.Header.displayName = 'VerticalTabs.Tier1.Header'
 
-const Tier2 = ({ children, icon, ...props }) => (
-  <Item {...props} itemType="tier2" />
-)
+const Tier2 = ({ children, icon, ...props }) => {
+  return <Item {...props} itemType="tier2" />
+}
+
 Tier2.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.node,
@@ -122,15 +155,16 @@ Tier2.propTypes = {
 }
 
 Tier2.Header = forwardRef(({ active, children, ...rest }, ref) => {
+  const hideLabels = useHideLabels()
   const TagName = rest.href ? 'a' : rest.onClick ? 'button' : 'span'
 
   return (
     <TagName
-      {...styles.tier2Header()}
+      {...styles.tier2Header}
       {...filterReactProps(rest, { tagName: TagName })}
       ref={ref}
     >
-      {children}
+      <span {...styles.tierHeaderLabel(null, { hideLabels })}>{children}</span>
     </TagName>
   )
 })

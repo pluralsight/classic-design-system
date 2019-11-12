@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
+import Context from './context.js'
 import Divider from './divider.js'
 import { Group, CollapsibleGroup } from './group.js'
 import { Tier1, Tier2 } from './item.js'
@@ -18,17 +19,23 @@ const styles = {
       stylesheet[`.psds-verticaltabs.psds-theme--${themeName}`]
     )
 }
-const VerticalTabs = forwardRef(({ children, ...rest }, ref) => {
+
+const VerticalTabs = forwardRef((props, ref) => {
+  const { children, hideLabels = false, ...rest } = props
+
   const themeName = useTheme()
+  const contextValue = React.useMemo(() => ({ hideLabels }), [hideLabels])
 
   return (
-    <ul
-      ref={ref}
-      {...styles.verticaltabs(themeName)}
-      {...filterReactProps(rest, { tagName: 'ul' })}
-    >
-      {children}
-    </ul>
+    <Context.Provider value={contextValue}>
+      <ul
+        ref={ref}
+        {...styles.verticaltabs(themeName)}
+        {...filterReactProps(rest, { tagName: 'ul' })}
+      >
+        {children}
+      </ul>
+    </Context.Provider>
   )
 })
 
@@ -36,7 +43,8 @@ VerticalTabs.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)
-  ])
+  ]),
+  hideLabels: PropTypes.bool
 }
 
 VerticalTabs.displayName = 'VerticalTabs'
