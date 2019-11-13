@@ -102,8 +102,8 @@ export const FLOW_NAV = [
     ]
   },
   {
+    collapsible: true,
     header: {
-      collapsible: true,
       icon: <Icon id={Icon.ids.placeholder} />,
       id: 'fundamentals',
       title: 'Fundamentals'

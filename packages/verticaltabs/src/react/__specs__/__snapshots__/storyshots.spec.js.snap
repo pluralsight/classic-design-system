@@ -38,7 +38,7 @@ exports[`Storyshots components|VerticalTabs Active tiers 1`] = `
             </svg>
           </div>
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Tier 1 active
           </span>
@@ -55,7 +55,7 @@ exports[`Storyshots components|VerticalTabs Active tiers 1`] = `
           onClick={[Function]}
         >
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Tier 2 active
           </span>
@@ -101,7 +101,7 @@ exports[`Storyshots components|VerticalTabs CollapsibleGroup 1`] = `
             </svg>
           </div>
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Reports home
           </span>
@@ -118,7 +118,7 @@ exports[`Storyshots components|VerticalTabs CollapsibleGroup 1`] = `
           onClick={[Function]}
         >
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Operational Reports
           </span>
@@ -165,7 +165,7 @@ exports[`Storyshots components|VerticalTabs CollapsibleGroup 1`] = `
                 </svg>
               </div>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Work log
               </span>
@@ -195,7 +195,7 @@ exports[`Storyshots components|VerticalTabs CollapsibleGroup 1`] = `
                 </svg>
               </div>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Project timeline
               </span>
@@ -225,7 +225,7 @@ exports[`Storyshots components|VerticalTabs CollapsibleGroup 1`] = `
                 </svg>
               </div>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Leaderboard
               </span>
@@ -255,7 +255,7 @@ exports[`Storyshots components|VerticalTabs CollapsibleGroup 1`] = `
                 </svg>
               </div>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Retrospective
               </span>
@@ -285,7 +285,7 @@ exports[`Storyshots components|VerticalTabs CollapsibleGroup 1`] = `
                 </svg>
               </div>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Snapshot
               </span>
@@ -315,7 +315,7 @@ exports[`Storyshots components|VerticalTabs CollapsibleGroup 1`] = `
                 </svg>
               </div>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Daily update
               </span>
@@ -345,7 +345,7 @@ exports[`Storyshots components|VerticalTabs CollapsibleGroup 1`] = `
                 </svg>
               </div>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Spot check
               </span>
@@ -364,7 +364,7 @@ exports[`Storyshots components|VerticalTabs CollapsibleGroup 1`] = `
           onClick={[Function]}
         >
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Reviews & Collaboration
           </span>
@@ -399,7 +399,7 @@ exports[`Storyshots components|VerticalTabs CollapsibleGroup 1`] = `
           onClick={[Function]}
         >
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Fundamentals
           </span>
@@ -447,7 +447,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
         data-css-dk3o27=""
       >
         <span
-          data-css-yw1xlf=""
+          data-css-g3sz87=""
         >
           Introduction
         </span>
@@ -464,7 +464,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
               data-css-lqdu28=""
             >
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Install
               </span>
@@ -480,7 +480,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
               data-css-lqdu28=""
             >
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Design assets
               </span>
@@ -496,7 +496,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
               data-css-lqdu28=""
             >
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Contribute
               </span>
@@ -512,7 +512,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
               data-css-lqdu28=""
             >
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Roadmap
               </span>
@@ -531,7 +531,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
         data-css-dk3o27=""
       >
         <span
-          data-css-yw1xlf=""
+          data-css-g3sz87=""
         >
           Foundations
         </span>
@@ -562,7 +562,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
                 </svg>
               </div>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Color
               </span>
@@ -592,7 +592,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
                 </svg>
               </div>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Typography
               </span>
@@ -622,7 +622,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
                 </svg>
               </div>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Spacing
               </span>
@@ -652,7 +652,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
                 </svg>
               </div>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Iconography
               </span>
@@ -682,7 +682,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
                 </svg>
               </div>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Voice & Tone
               </span>
@@ -701,7 +701,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
         data-css-dk3o27=""
       >
         <span
-          data-css-yw1xlf=""
+          data-css-g3sz87=""
         >
           Components
         </span>
@@ -719,7 +719,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
               data-css-lqdu28=""
             >
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Avatar
               </span>
@@ -736,7 +736,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
               >
                 <span>
                   <span
-                    data-css-yw1xlf=""
+                    data-css-g3sz87=""
                   >
                     Prop types
                   </span>
@@ -750,7 +750,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
               >
                 <span>
                   <span
-                    data-css-yw1xlf=""
+                    data-css-g3sz87=""
                   >
                     Guidelines
                   </span>
@@ -768,7 +768,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
               data-css-lqdu28=""
             >
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Button
               </span>
@@ -784,7 +784,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
               data-css-lqdu28=""
             >
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Badge
               </span>
@@ -800,7 +800,7 @@ exports[`Storyshots components|VerticalTabs Group 1`] = `
               data-css-lqdu28=""
             >
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Breadcrumb
               </span>
@@ -835,7 +835,7 @@ exports[`Storyshots components|VerticalTabs Href changes tier tag to link 1`] = 
           href=" "
         >
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Tier 1 link
           </span>
@@ -851,7 +851,7 @@ exports[`Storyshots components|VerticalTabs Href changes tier tag to link 1`] = 
           href=" "
         >
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Tier 2 link
           </span>
@@ -881,7 +881,7 @@ exports[`Storyshots components|VerticalTabs Long text 1`] = `
         data-css-dk3o27=""
       >
         <span
-          data-css-yw1xlf=""
+          data-css-g3sz87=""
         >
           The technology skills platform
         </span>
@@ -900,7 +900,7 @@ exports[`Storyshots components|VerticalTabs Long text 1`] = `
           onClick={[Function]}
         >
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             The technology skills platform
           </span>
@@ -934,7 +934,7 @@ exports[`Storyshots components|VerticalTabs Long text 1`] = `
           data-css-lqdu28=""
         >
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             The technology skills platform
           </span>
@@ -948,7 +948,7 @@ exports[`Storyshots components|VerticalTabs Long text 1`] = `
       >
         <span>
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             The technology skills platform
           </span>
@@ -980,7 +980,7 @@ exports[`Storyshots components|VerticalTabs No Group 1`] = `
           data-css-lqdu28=""
         >
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Dashboard
           </span>
@@ -996,7 +996,7 @@ exports[`Storyshots components|VerticalTabs No Group 1`] = `
           data-css-lqdu28=""
         >
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Account
           </span>
@@ -1028,7 +1028,7 @@ exports[`Storyshots components|VerticalTabs No Group 1`] = `
             </svg>
           </div>
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             People
           </span>
@@ -1045,7 +1045,7 @@ exports[`Storyshots components|VerticalTabs No Group 1`] = `
           >
             <span>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Organization
               </span>
@@ -1059,7 +1059,7 @@ exports[`Storyshots components|VerticalTabs No Group 1`] = `
           >
             <span>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Admins
               </span>
@@ -1073,7 +1073,7 @@ exports[`Storyshots components|VerticalTabs No Group 1`] = `
           >
             <span>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Managers
               </span>
@@ -1087,7 +1087,7 @@ exports[`Storyshots components|VerticalTabs No Group 1`] = `
           >
             <span>
               <span
-                data-css-yw1xlf=""
+                data-css-g3sz87=""
               >
                 Unassigned users
               </span>
@@ -1119,7 +1119,7 @@ exports[`Storyshots components|VerticalTabs No Group 1`] = `
             </svg>
           </div>
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Pending invites
           </span>
@@ -1149,7 +1149,7 @@ exports[`Storyshots components|VerticalTabs No Group 1`] = `
             </svg>
           </div>
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Analytics
           </span>
@@ -1179,7 +1179,7 @@ exports[`Storyshots components|VerticalTabs No Group 1`] = `
             </svg>
           </div>
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Log
           </span>
@@ -1212,7 +1212,7 @@ exports[`Storyshots components|VerticalTabs No Group 1`] = `
             </svg>
           </div>
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Item label
           </span>
@@ -1242,7 +1242,7 @@ exports[`Storyshots components|VerticalTabs No Group 1`] = `
             </svg>
           </div>
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Item label
           </span>
@@ -1275,7 +1275,7 @@ exports[`Storyshots components|VerticalTabs onClick no href changes tier tag to 
           onClick={[Function]}
         >
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Tier 1 button
           </span>
@@ -1291,7 +1291,7 @@ exports[`Storyshots components|VerticalTabs onClick no href changes tier tag to 
           onClick={[Function]}
         >
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
             Tier 2 button
           </span>
@@ -1340,9 +1340,9 @@ exports[`Storyshots components|VerticalTabs/Tier1 Item active 1`] = `
             </svg>
           </div>
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
-            header here
+            text here
           </span>
         </a>
       </div>
@@ -1351,7 +1351,7 @@ exports[`Storyshots components|VerticalTabs/Tier1 Item active 1`] = `
 </div>
 `;
 
-exports[`Storyshots components|VerticalTabs/Tier1 Item collapsible 1`] = `
+exports[`Storyshots components|VerticalTabs/Tier1 Item basic 1`] = `
 <div
   style={
     Object {
@@ -1386,14 +1386,76 @@ exports[`Storyshots components|VerticalTabs/Tier1 Item collapsible 1`] = `
             </svg>
           </div>
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
-            header here
+            text here
           </span>
         </span>
       </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots components|VerticalTabs/Tier1 Item collapsible 1`] = `
+<div
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
+>
+  <ul
+    data-css-nqd4p3=""
+  >
+    <li>
+      <div
+        data-css-13xqjhl=""
+        data-css-1b8plv5=""
+      >
+        <button
+          data-css-lqdu28=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-1kqp8s2=""
+            data-css-otejxm=""
+          >
+            <svg
+              fill="none"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 3h-2v2h2V3zM13 3v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zM3 11v2h2v-2H3zM3 17v-2h2v2H3zM3 19v1.1a.9.9 0 00.9.9H5v-2H3zM7 19v2h2v-2H7zM11 19v2h2v-2h-2zM15 19v2h2v-2h-2zM19 19v2h1.1a.9.9 0 00.9-.9V19h-2zM21 15h-2v2h2v-2zM21 11v2h-2v-2h2zM21 9V7h-2v2h2zM21 3.9V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+              />
+            </svg>
+          </div>
+          <span
+            data-css-g3sz87=""
+          >
+            text here
+          </span>
+          <div
+            data-css-12f5sv2=""
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
       <ul
+        aria-hidden={false}
         data-css-gkw1j5=""
+        data-css-jlpnjv=""
       >
         <div
           data-css-120tbc1=""
@@ -1440,9 +1502,9 @@ exports[`Storyshots components|VerticalTabs/Tier1 Item link 1`] = `
             </svg>
           </div>
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
-            header here
+            text here
           </span>
         </a>
       </div>
@@ -1473,11 +1535,41 @@ exports[`Storyshots components|VerticalTabs/Tier2 Item active 1`] = `
           href="#"
         >
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
-            header here
+            text here
           </span>
         </a>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots components|VerticalTabs/Tier2 Item basic 1`] = `
+<div
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
+>
+  <ul
+    data-css-nqd4p3=""
+  >
+    <li>
+      <div
+        data-css-1b8plv5=""
+        data-css-1uz4955=""
+      >
+        <span>
+          <span
+            data-css-g3sz87=""
+          >
+            text here
+          </span>
+        </span>
       </div>
     </li>
   </ul>
@@ -1505,9 +1597,9 @@ exports[`Storyshots components|VerticalTabs/Tier2 Item link 1`] = `
           href="#"
         >
           <span
-            data-css-yw1xlf=""
+            data-css-g3sz87=""
           >
-            header here
+            text here
           </span>
         </a>
       </div>
@@ -1568,7 +1660,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                   </svg>
                 </div>
                 <span
-                  data-css-8crn8x=""
+                  data-css-yut0gq=""
                 >
                   Reports Home
                 </span>
@@ -1583,8 +1675,9 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               data-css-13xqjhl=""
               data-css-1b8plv5=""
             >
-              <span
+              <button
                 data-css-lqdu28=""
+                onClick={[Function]}
               >
                 <div
                   data-css-1kqp8s2=""
@@ -1601,14 +1694,29 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                   </svg>
                 </div>
                 <span
-                  data-css-8crn8x=""
+                  data-css-yut0gq=""
                 >
                   Operational Reports
                 </span>
-              </span>
+                <div
+                  data-css-12f5sv2=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                    />
+                  </svg>
+                </div>
+              </button>
             </div>
             <ul
+              aria-hidden={false}
               data-css-gkw1j5=""
+              data-css-jlpnjv=""
             >
               <li>
                 <div
@@ -1620,7 +1728,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                     onClick={[Function]}
                   >
                     <span
-                      data-css-8crn8x=""
+                      data-css-yut0gq=""
                     >
                       Work Log
                     </span>
@@ -1637,7 +1745,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                     onClick={[Function]}
                   >
                     <span
-                      data-css-8crn8x=""
+                      data-css-yut0gq=""
                     >
                       Project Timeline
                     </span>
@@ -1654,7 +1762,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                     onClick={[Function]}
                   >
                     <span
-                      data-css-8crn8x=""
+                      data-css-yut0gq=""
                     >
                       Leaderboard
                     </span>
@@ -1671,7 +1779,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                     onClick={[Function]}
                   >
                     <span
-                      data-css-8crn8x=""
+                      data-css-yut0gq=""
                     >
                       Snapshot
                     </span>
@@ -1688,7 +1796,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                     onClick={[Function]}
                   >
                     <span
-                      data-css-8crn8x=""
+                      data-css-yut0gq=""
                     >
                       Daily Updates
                     </span>
@@ -1705,7 +1813,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                     onClick={[Function]}
                   >
                     <span
-                      data-css-8crn8x=""
+                      data-css-yut0gq=""
                     >
                       Spot Check
                     </span>
@@ -1719,8 +1827,9 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               data-css-13xqjhl=""
               data-css-1b8plv5=""
             >
-              <span
+              <button
                 data-css-lqdu28=""
+                onClick={[Function]}
               >
                 <div
                   data-css-1kqp8s2=""
@@ -1737,14 +1846,29 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                   </svg>
                 </div>
                 <span
-                  data-css-8crn8x=""
+                  data-css-yut0gq=""
                 >
                   Review & Collaborate
                 </span>
-              </span>
+                <div
+                  data-css-12f5sv2=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                    />
+                  </svg>
+                </div>
+              </button>
             </div>
             <ul
+              aria-hidden={false}
               data-css-gkw1j5=""
+              data-css-jlpnjv=""
             >
               <li>
                 <div
@@ -1756,7 +1880,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                     onClick={[Function]}
                   >
                     <span
-                      data-css-8crn8x=""
+                      data-css-yut0gq=""
                     >
                       Review Workflow
                     </span>
@@ -1773,7 +1897,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                     onClick={[Function]}
                   >
                     <span
-                      data-css-8crn8x=""
+                      data-css-yut0gq=""
                     >
                       Review Collaboration
                     </span>
@@ -1791,7 +1915,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                     onClick={[Function]}
                   >
                     <span
-                      data-css-8crn8x=""
+                      data-css-yut0gq=""
                     >
                       PR Resolution
                     </span>
@@ -1808,7 +1932,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                     onClick={[Function]}
                   >
                     <span
-                      data-css-8crn8x=""
+                      data-css-yut0gq=""
                     >
                       Knowledge Sharing
                     </span>
@@ -1825,7 +1949,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                     onClick={[Function]}
                   >
                     <span
-                      data-css-8crn8x=""
+                      data-css-yut0gq=""
                     >
                       Player Card
                     </span>
@@ -1839,8 +1963,9 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               data-css-13xqjhl=""
               data-css-1b8plv5=""
             >
-              <span
+              <button
                 data-css-lqdu28=""
+                onClick={[Function]}
               >
                 <div
                   data-css-1kqp8s2=""
@@ -1857,14 +1982,29 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                   </svg>
                 </div>
                 <span
-                  data-css-8crn8x=""
+                  data-css-yut0gq=""
                 >
                   Delivery
                 </span>
-              </span>
+                <div
+                  data-css-12f5sv2=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                    />
+                  </svg>
+                </div>
+              </button>
             </div>
             <ul
+              aria-hidden={false}
               data-css-gkw1j5=""
+              data-css-jlpnjv=""
             >
               <li>
                 <div
@@ -1876,7 +2016,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                     onClick={[Function]}
                   >
                     <span
-                      data-css-8crn8x=""
+                      data-css-yut0gq=""
                     >
                       Retrospective
                     </span>
@@ -1890,8 +2030,9 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               data-css-13xqjhl=""
               data-css-1b8plv5=""
             >
-              <span
+              <button
                 data-css-lqdu28=""
+                onClick={[Function]}
               >
                 <div
                   data-css-1kqp8s2=""
@@ -1908,14 +2049,29 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                   </svg>
                 </div>
                 <span
-                  data-css-8crn8x=""
+                  data-css-yut0gq=""
                 >
                   Fundamentals
                 </span>
-              </span>
+                <div
+                  data-css-12f5sv2=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                    />
+                  </svg>
+                </div>
+              </button>
             </div>
             <ul
+              aria-hidden={false}
               data-css-gkw1j5=""
+              data-css-jlpnjv=""
             >
               <li>
                 <div
@@ -1927,7 +2083,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                     onClick={[Function]}
                   >
                     <span
-                      data-css-8crn8x=""
+                      data-css-yut0gq=""
                     >
                       Code
                     </span>
@@ -1944,7 +2100,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                     onClick={[Function]}
                   >
                     <span
-                      data-css-8crn8x=""
+                      data-css-yut0gq=""
                     >
                       Submit
                     </span>
@@ -1961,7 +2117,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                     onClick={[Function]}
                   >
                     <span
-                      data-css-8crn8x=""
+                      data-css-yut0gq=""
                     >
                       Review
                     </span>

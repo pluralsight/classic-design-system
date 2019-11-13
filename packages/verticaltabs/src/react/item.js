@@ -7,7 +7,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Icon from '@pluralsight/ps-design-system-icon'
 
 import { useHideLabels } from './context.js'
-import List from './list.js'
+import { List, CollapsibleList } from './list.js'
 
 import stylesheet from '../css/index.js'
 
@@ -74,8 +74,21 @@ const styles = {
 }
 
 const Item = forwardRef((props, ref) => {
-  const { active, children, header, itemType: type, ...rest } = props
+  const {
+    active,
+    collapsed: _collapsed = false,
+    collapsible = false,
+    children,
+    header,
+    itemType: type,
+    ...rest
+  } = props
   const themeName = useTheme()
+
+  const [collapsed, setCollapsed] = React.useState(_collapsed)
+
+  const handleToggle = () => setCollapsed(!collapsed)
+  const ListComp = collapsible ? CollapsibleList : List
 
   return (
     <li {...filterReactProps(rest, { tagName: 'li' })} ref={ref}>
@@ -84,16 +97,23 @@ const Item = forwardRef((props, ref) => {
         {...styles.itemTier(themeName, { type })}
         {...(active && { 'data-active': true })}
       >
-        {cloneElement(header, { active })}
+        {cloneElement(header, {
+          active,
+          collapsed,
+          collapsible,
+          ...(collapsible && { onClick: handleToggle })
+        })}
       </div>
 
-      {children && <List>{children}</List>}
+      {children && <ListComp collapsed={collapsed}>{children}</ListComp>}
     </li>
   )
 })
 
 Item.propTypes = {
   active: PropTypes.bool,
+  collapsed: PropTypes.bool,
+  collapsible: PropTypes.bool,
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)
@@ -107,7 +127,7 @@ Item.displayName = 'VerticalTabs.Item'
 const Tier1 = props => <Item {...props} itemType="tier1" />
 
 Tier1.Header = forwardRef((props, ref) => {
-  const { active, children, icon, ...rest } = props
+  const { active, collapsed, collapsible, children, icon, ...rest } = props
   const hideLabels = useHideLabels()
 
   const TagName = rest.href ? 'a' : rest.onClick ? 'button' : 'span'
@@ -126,6 +146,8 @@ Tier1.Header = forwardRef((props, ref) => {
         })}
 
       <span {...styles.tierHeaderLabel(null, { hideLabels })}>{children}</span>
+
+      {collapsible && <Icon size={Icon.sizes.small} id={Icon.ids.caretDown} />}
     </TagName>
   )
 })
@@ -136,6 +158,8 @@ Tier1.Header.propTypes = {
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)
   ]),
+  collapsed: PropTypes.bool,
+  collapsible: PropTypes.bool,
   icon: PropTypes.node
 }
 

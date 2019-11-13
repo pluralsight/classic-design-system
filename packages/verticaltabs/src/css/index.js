@@ -63,6 +63,11 @@ export default {
     margin: 0,
     padding: 0
   },
+  '.psds-verticaltabs__list--collapsible': {
+    overflow: 'hidden',
+    transition: `height ${core.motion.speedNormal}`,
+    visibility: 'hidden'
+  },
 
   '.psds-verticaltabs__item': {
     alignItems: 'center',
@@ -228,7 +233,9 @@ export default {
 
   '.psds-verticaltabs__header__label': {
     ...truncate,
-    lineHeight: '1em'
+    lineHeight: '1em',
+    flex: 1,
+    textAlign: 'left'
   },
 
   '.psds-verticaltabs__header__label--hide-labels': {

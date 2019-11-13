@@ -19,11 +19,20 @@ const ContainerDecorator = storyFn => (
 
 storiesOf('components|VerticalTabs/Tier1 Item', module)
   .addDecorator(ContainerDecorator)
+  .add('basic', () => (
+    <Tier1
+      header={
+        <Tier1.Header icon={<Icon id={Icon.ids.placeholder} />}>
+          text here
+        </Tier1.Header>
+      }
+    />
+  ))
   .add('link', () => (
     <Tier1
       header={
         <Tier1.Header href="#" icon={<Icon id={Icon.ids.placeholder} />}>
-          header here
+          text here
         </Tier1.Header>
       }
     />
@@ -33,7 +42,7 @@ storiesOf('components|VerticalTabs/Tier1 Item', module)
       active
       header={
         <Tier1.Header href="#" icon={<Icon id={Icon.ids.placeholder} />}>
-          header here
+          text here
         </Tier1.Header>
       }
     />
@@ -43,7 +52,7 @@ storiesOf('components|VerticalTabs/Tier1 Item', module)
       collapsible
       header={
         <Tier1.Header icon={<Icon id={Icon.ids.placeholder} />}>
-          header here
+          text here
         </Tier1.Header>
       }
     >
@@ -53,9 +62,10 @@ storiesOf('components|VerticalTabs/Tier1 Item', module)
 
 storiesOf('components|VerticalTabs/Tier2 Item', module)
   .addDecorator(ContainerDecorator)
+  .add('basic', () => <Tier2 header={<Tier2.Header>text here</Tier2.Header>} />)
   .add('link', () => (
-    <Tier2 header={<Tier2.Header href="#">header here</Tier2.Header>} />
+    <Tier2 header={<Tier2.Header href="#">text here</Tier2.Header>} />
   ))
   .add('active', () => (
-    <Tier2 active header={<Tier2.Header href="#">header here</Tier2.Header>} />
+    <Tier2 active header={<Tier2.Header href="#">text here</Tier2.Header>} />
   ))
