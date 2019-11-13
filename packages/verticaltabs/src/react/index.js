@@ -21,10 +21,18 @@ const styles = {
 }
 
 const VerticalTabs = forwardRef((props, ref) => {
-  const { children, hideLabels = false, ...rest } = props
+  const {
+    children,
+    forceCollapsed = false,
+    hideLabels = false,
+    ...rest
+  } = props
 
   const themeName = useTheme()
-  const contextValue = React.useMemo(() => ({ hideLabels }), [hideLabels])
+  const contextValue = React.useMemo(() => ({ forceCollapsed, hideLabels }), [
+    forceCollapsed,
+    hideLabels
+  ])
 
   return (
     <Context.Provider value={contextValue}>
@@ -44,6 +52,7 @@ VerticalTabs.propTypes = {
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)
   ]),
+  forceCollapsed: PropTypes.bool,
   hideLabels: PropTypes.bool
 }
 

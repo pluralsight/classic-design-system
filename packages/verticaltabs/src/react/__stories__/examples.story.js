@@ -23,7 +23,7 @@ storiesOf('components|VerticalTabs/examples', module)
   })
   .add('Admin Tools', () => {
     function AdminToolsNav(props) {
-      const [collapsed, setCollapsed] = React.useState(true)
+      const [open, setOpen] = React.useState(false)
       const [activeId, setActiveId] = React.useState('admins')
       const isActive = id => activeId === id
 
@@ -32,16 +32,13 @@ storiesOf('components|VerticalTabs/examples', module)
         setActiveId(id)
       }
 
-      const open = () => setCollapsed(false)
-      const close = () => setCollapsed(true)
-
       return (
         <div
-          onMouseEnter={open}
-          onMouseLeave={close}
-          style={{ width: collapsed ? 72 : 240 }}
+          onMouseEnter={() => setOpen(true)}
+          onMouseLeave={() => setOpen(false)}
+          style={{ width: open ? 240 : 72 }}
         >
-          <VerticalTabs {...props} hideLabels={collapsed}>
+          <VerticalTabs {...props} hideLabels={!open}>
             <Group>
               {ADMIN_TOOLS_NAV.map((section, sectionKey) => {
                 const sectionHeader = section.header && (
@@ -163,7 +160,7 @@ storiesOf('components|VerticalTabs/examples', module)
   })
   .add('FLOW', () => {
     function FlowNav(props) {
-      const [collapsed, setCollapsed] = React.useState(true)
+      const [open, setOpen] = React.useState(false)
       const [activeId, setActiveId] = React.useState('pr-resolution')
       const isActive = id => activeId === id
 
@@ -172,16 +169,13 @@ storiesOf('components|VerticalTabs/examples', module)
         setActiveId(id)
       }
 
-      const open = () => setCollapsed(false)
-      const close = () => setCollapsed(true)
-
       return (
         <div
-          onMouseEnter={open}
-          onMouseLeave={close}
-          style={{ width: collapsed ? 72 : 240 }}
+          onMouseEnter={() => setOpen(true)}
+          onMouseLeave={() => setOpen(false)}
+          style={{ width: open ? 240 : 72 }}
         >
-          <VerticalTabs {...props} hideLabels={collapsed}>
+          <VerticalTabs {...props} forceCollapsed={!open} hideLabels={!open}>
             <Group>
               {FLOW_NAV.map((section, sectionKey) => {
                 const sectionHeader = section.header && (
@@ -191,7 +185,7 @@ storiesOf('components|VerticalTabs/examples', module)
                 )
 
                 return (
-                  <VerticalTabs.Tier1
+                  <Tier1
                     collapsible={section.collapsible}
                     key={sectionKey}
                     header={sectionHeader}
@@ -215,7 +209,7 @@ storiesOf('components|VerticalTabs/examples', module)
                         />
                       )
                     })}
-                  </VerticalTabs.Tier1>
+                  </Tier1>
                 )
               })}
             </Group>

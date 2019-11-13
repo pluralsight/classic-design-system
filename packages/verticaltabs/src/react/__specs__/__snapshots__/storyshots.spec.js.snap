@@ -1852,7 +1852,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               </button>
             </div>
             <ul
-              aria-hidden={false}
+              aria-hidden={true}
               data-css-gkw1j5=""
               data-css-jlpnjv=""
             >
@@ -2005,7 +2005,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               </button>
             </div>
             <ul
-              aria-hidden={false}
+              aria-hidden={true}
               data-css-gkw1j5=""
               data-css-jlpnjv=""
             >
@@ -2142,7 +2142,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               </button>
             </div>
             <ul
-              aria-hidden={false}
+              aria-hidden={true}
               data-css-gkw1j5=""
               data-css-jlpnjv=""
             >
@@ -2210,7 +2210,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               </button>
             </div>
             <ul
-              aria-hidden={false}
+              aria-hidden={true}
               data-css-gkw1j5=""
               data-css-jlpnjv=""
             >

@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import Collapsible from '@pluralsight/ps-design-system-collapsible'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
+import { useForceCollapsed } from './context.js'
 import stylesheet from '../css/index.js'
 
 const styles = {
@@ -19,6 +20,7 @@ export const List = props => {
 }
 
 export const CollapsibleList = props => {
+  const forceCollapsed = useForceCollapsed()
   const [open, setOpen] = React.useState(!props.collapsed)
 
   React.useEffect(() => {
@@ -27,7 +29,7 @@ export const CollapsibleList = props => {
 
   return (
     <Collapsible
-      isOpen={open}
+      isOpen={!forceCollapsed && open}
       tagName="ul"
       {...filterReactProps(props, { tagName: 'ul' })}
       {...styles.list()}
