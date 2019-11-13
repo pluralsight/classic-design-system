@@ -70,6 +70,15 @@ const styles = {
       css(stylesheet[`.psds-${label}`]),
       hideLabels && css(stylesheet[`.psds-${label}--hide-labels`])
     )
+  },
+  tierHeaderLabelIcon: (_, { collapsed }) => {
+    const label = `verticaltabs__header__label__icon`
+
+    return compose(
+      css({ label }),
+      css(stylesheet[`.psds-${label}`]),
+      collapsed && css(stylesheet[`.psds-${label}--collapsed`])
+    )
   }
 }
 
@@ -147,7 +156,13 @@ Tier1.Header = forwardRef((props, ref) => {
 
       <span {...styles.tierHeaderLabel(null, { hideLabels })}>{children}</span>
 
-      {collapsible && <Icon size={Icon.sizes.small} id={Icon.ids.caretDown} />}
+      {collapsible && (
+        <Icon
+          size={Icon.sizes.small}
+          id={Icon.ids.caretDown}
+          {...styles.tierHeaderLabelIcon(null, { collapsed })}
+        />
+      )}
     </TagName>
   )
 })

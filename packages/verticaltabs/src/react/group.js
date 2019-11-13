@@ -73,7 +73,9 @@ const GroupHeader = forwardRef(({ children, tagName, ...rest }, ref) => {
       {...filterReactProps(rest, { tagName })}
       ref={ref}
     >
-      <span {...styles.headerLabel()}>{children}</span>
+      <div>
+        <span {...styles.headerLabel()}>{children}</span>
+      </div>
     </TagName>
   )
 })

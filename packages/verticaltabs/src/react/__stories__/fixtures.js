@@ -1,6 +1,164 @@
 import React from 'react'
 import Icon from '@pluralsight/ps-design-system-icon'
 
+export const ADMIN_TOOLS_NAV = [
+  {
+    collapsible: false,
+    header: {
+      href: '#',
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'dashboard',
+      title: 'Dashboard'
+    },
+    items: []
+  },
+  {
+    collapsible: false,
+    header: {
+      href: '#',
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'account',
+      title: 'Account'
+    },
+    items: []
+  },
+  {
+    collapsible: true,
+    header: {
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'people',
+      title: 'People'
+    },
+    items: [
+      { href: '#', id: 'org', title: 'Organization' },
+      { href: '#', id: 'admins', title: 'Admins' },
+      { href: '#', id: 'managers', title: 'Managers' },
+      { href: '#', id: 'unassigned', title: 'Unassigned users' },
+      { href: '#', id: 'pending', title: 'Pending invites' }
+    ]
+  },
+  {
+    collapsible: false,
+    header: {
+      href: '#',
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'analytics',
+      title: 'Analytics'
+    },
+    items: []
+  },
+  {
+    collapsible: false,
+    header: {
+      href: '#',
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'log',
+      title: 'Log'
+    },
+    items: []
+  }
+]
+
+export const DESIGN_SYSTEM_NAV = [
+  {
+    collapsible: false,
+    header: { title: 'Introduction' },
+    sections: [
+      { id: 'install', header: { href: '#', title: 'Install' } },
+      { id: 'design-assets', header: { href: '#', title: 'Design assets' } },
+      { id: 'contrib', header: { href: '#', title: 'Contribute' } },
+      { id: 'roadmap', header: { href: '#', title: 'Roadmap' } }
+    ]
+  },
+  {
+    collapsible: false,
+    header: { title: 'Foundations' },
+    sections: [
+      {
+        id: 'color',
+        header: {
+          href: '#',
+          icon: <Icon id={Icon.ids.placeholder} />,
+          title: 'Color'
+        }
+      },
+      {
+        id: 'typography',
+        header: {
+          href: '#',
+          icon: <Icon id={Icon.ids.placeholder} />,
+          title: 'Typography'
+        }
+      },
+      {
+        id: 'spacing',
+        header: {
+          href: '#',
+          icon: <Icon id={Icon.ids.placeholder} />,
+          title: 'Spacing'
+        }
+      },
+      {
+        id: 'iconography',
+        header: {
+          href: '#',
+          icon: <Icon id={Icon.ids.placeholder} />,
+          title: 'Iconography'
+        }
+      },
+      {
+        id: 'voice-tone',
+        header: {
+          href: '#',
+          icon: <Icon id={Icon.ids.placeholder} />,
+          title: 'Voice & Tone'
+        }
+      }
+    ]
+  },
+  {
+    collapsible: false,
+    header: { title: 'Components' },
+    sections: [
+      {
+        id: 'avatar',
+        header: {
+          href: '#',
+          title: 'Avatar'
+        },
+        items: [
+          {
+            href: '#',
+            id: 'avatar-prop-types',
+            title: 'PropTypes'
+          },
+          {
+            href: '#',
+            id: 'avatar-guidelines',
+            title: 'Guidelines'
+          }
+        ]
+      },
+      {
+        id: 'badge',
+        header: {
+          href: '#',
+          title: 'Badge'
+        },
+        items: []
+      },
+      {
+        id: 'breadcrumb',
+        header: {
+          href: '#',
+          title: 'Breadcrumb'
+        },
+        items: []
+      }
+    ]
+  }
+]
+
 export const FLOW_NAV = [
   {
     collapsible: false,

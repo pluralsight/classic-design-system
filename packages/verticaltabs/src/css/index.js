@@ -154,11 +154,7 @@ export default {
     transition: `color ${core.motion.speedXFast} linear`,
     width: '100%',
 
-    '& > span': {
-      overflowX: 'hidden',
-      textOverflow: 'ellipsis',
-      whiteSpace: 'nowrap'
-    }
+    '& > span': { ...truncate }
   },
 
   '.psds-verticaltabs__tier2': {
@@ -177,6 +173,7 @@ export default {
     },
 
     '& > *': {
+      ...truncate,
       fontSize: core.type.fontSizeXSmall,
       fontWeight: core.type.fontWeightBook,
       marginLeft: '37px',
@@ -213,7 +210,7 @@ export default {
     fontWeight: core.type.fontWeightBold,
     textTransform: 'uppercase',
 
-    '& > a, & > button, & > span': {
+    '& > a, & > button, & > div': {
       alignItems: 'center',
       display: 'flex',
       height: '100%',
@@ -224,6 +221,7 @@ export default {
       width: '100%'
     }
   },
+  '.psds-verticaltabs__group__header__inner': {},
   [`.psds-verticaltabs__group__header.psds-theme--${themeNames.light}`]: {
     color: core.colors.gray03
   },
@@ -233,13 +231,23 @@ export default {
 
   '.psds-verticaltabs__header__label': {
     ...truncate,
-    lineHeight: '1em',
     flex: 1,
     textAlign: 'left'
   },
 
   '.psds-verticaltabs__header__label--hide-labels': {
     color: 'transparent'
+  },
+
+  '.psds-verticaltabs__header__label__icon': {
+    flexShrink: 0,
+    flexGrow: 0,
+    transform: 'translateX(10px) rotateZ(180deg)',
+    transition: `transform ${core.motion.speedNormal} linear`
+  },
+
+  '.psds-verticaltabs__header__label__icon--collapsed': {
+    transform: 'translateX(10px)'
   },
 
   '.psds-verticaltabs__group__button': { ...resetButton, cursor: 'pointer' },
