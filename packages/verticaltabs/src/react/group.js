@@ -7,7 +7,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Collapsible from '@pluralsight/ps-design-system-collapsible'
 import Icon from '@pluralsight/ps-design-system-icon'
 
-import List from './list.js'
+import { List } from './list.js'
 
 import stylesheet from '../css/index.js'
 
@@ -73,7 +73,9 @@ const GroupHeader = forwardRef(({ children, tagName, ...rest }, ref) => {
       {...filterReactProps(rest, { tagName })}
       ref={ref}
     >
-      <span {...styles.headerLabel()}>{children}</span>
+      <div>
+        <span {...styles.headerLabel()}>{children}</span>
+      </div>
     </TagName>
   )
 })

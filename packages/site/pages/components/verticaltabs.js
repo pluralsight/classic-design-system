@@ -4,6 +4,7 @@ import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import Icon from '@pluralsight/ps-design-system-icon'
 import * as Text from '@pluralsight/ps-design-system-text'
 import * as core from '@pluralsight/ps-design-system-core'
+
 import {
   Chrome,
   Code,
@@ -37,17 +38,31 @@ export default _ => (
           'VerticalTabs.Group': [
             PropTypes.row([
               'children',
-              'VerticalTabs.Tier1',
+              <code key="comp">VerticalTabs.Tier1</code>,
               null,
               null,
               'VerticalTabs.Tier1 components'
             ]),
             PropTypes.row([
               'header',
-              'VerticalTabs.Group.Header',
+              <code key="comp">VerticalTabs.Group.Header</code>,
               null,
               null,
               'slot group header into position'
+            ]),
+            PropTypes.row([
+              'forceCollapsed',
+              'boolean',
+              null,
+              'false',
+              'force lists to be collapsed'
+            ]),
+            PropTypes.row([
+              'hideLabels',
+              'boolean',
+              null,
+              'false',
+              'hide text labels'
             ])
           ],
           'VerticalTabs.Group.Header': [
@@ -55,7 +70,7 @@ export default _ => (
               'tagName',
               'string',
               null,
-              <code>h2</code>,
+              <code key="tag">h2</code>,
               'change default tag of header root tag'
             ]),
             PropTypes.row(['children', 'string', null, null, 'header text'])
@@ -96,7 +111,7 @@ export default _ => (
               'tagName',
               'string',
               null,
-              <code>h2</code>,
+              <code key="tag">h2</code>,
               'change default tag of header root tag'
             ])
           ],
@@ -150,140 +165,49 @@ export default _ => (
         }}
       />
 
-      <SectionHeading>VerticalTabs</SectionHeading>
-      <P>
-        Using VerticalTabs sub components example
-        <ul>
-          <li>VerticalTabs</li>
-          <li>VerticalTabs.Divider</li>
-          <li>VerticalTabs.Group</li>
-          <li>VerticalTabs.Group.Header</li>
-          <li>VerticalTabs.CollapsibleGroup</li>
-          <li>VerticalTabs.CollapsibleGroup.Header</li>
-          <li>VerticalTabs.Tier1</li>
-          <li>VerticalTabs.Tier1.Header</li>
-          <li>VerticalTabs.Tier2</li>
-          <li>VerticalTabs.Tier2.Header</li>
-        </ul>
-      </P>
-      <Example.React
-        themeToggle
-        orient="vertical"
-        includes={{ VerticalTabs, Icon }}
-        codes={[
-          `
-<VerticalTabs>
-  <VerticalTabs.Tier1
-    header={
-      <VerticalTabs.Tier1.Header>Install</VerticalTabs.Tier1.Header>
-    }
-  />
-  <VerticalTabs.Tier1
-    header={
-      <VerticalTabs.Tier1.Header>Design assets</VerticalTabs.Tier1.Header>
-    }
-  />
-  <VerticalTabs.Tier1
-    header={
-      <VerticalTabs.Tier1.Header>Contribute</VerticalTabs.Tier1.Header>
-    }
-  />
-  <VerticalTabs.Tier1
-    header={
-      <VerticalTabs.Tier1.Header>Roadmap</VerticalTabs.Tier1.Header>
-    }
-  />
-<VerticalTabs.Divider />
-<VerticalTabs.Group
-  header={
-    <VerticalTabs.Group.Header>Foundations</VerticalTabs.Group.Header>
-  }
->
-  <VerticalTabs.Tier1
-    header={
-      <VerticalTabs.Tier1.Header
-        icon={<Icon id={Icon.ids.placeholder} />}
-      >
-        Color
-      </VerticalTabs.Tier1.Header>
-    }
-  />
-  <VerticalTabs.Tier1
-    header={
-      <VerticalTabs.Tier1.Header
-        icon={<Icon id={Icon.ids.placeholder} />}
-      >
-        Typography
-      </VerticalTabs.Tier1.Header>
-    }
-  />
-  <VerticalTabs.Tier1
-    header={
-      <VerticalTabs.Tier1.Header
-        icon={<Icon id={Icon.ids.placeholder} />}
-      >
-        Spacing
-      </VerticalTabs.Tier1.Header>
-    }
-  />
-  <VerticalTabs.Tier1
-    header={
-      <VerticalTabs.Tier1.Header
-        icon={<Icon id={Icon.ids.placeholder} />}
-      >
-        Iconography
-      </VerticalTabs.Tier1.Header>
-    }
-  />
-  <VerticalTabs.Tier1
-    header={
-      <VerticalTabs.Tier1.Header
-        icon={<Icon id={Icon.ids.placeholder} />}
-      >
-        Voice & Tone
-      </VerticalTabs.Tier1.Header>
-    }
-  />
-</VerticalTabs.Group>
-<VerticalTabs.Divider />
-<VerticalTabs.CollapsibleGroup
-startOpen
-  header={
-    <VerticalTabs.CollapsibleGroup.Header>Components</VerticalTabs.CollapsibleGroup.Header>
-  }
->
-  <VerticalTabs.Tier1
-    active
-    header={<VerticalTabs.Tier1.Header>Avatar</VerticalTabs.Tier1.Header>}
-  >
-    <VerticalTabs.Tier2
-      active
-      header={
-        <VerticalTabs.Tier2.Header>Prop types</VerticalTabs.Tier2.Header>
-      }
-    />
-    <VerticalTabs.Tier2
-      header={
-        <VerticalTabs.Tier2.Header>Guidelines</VerticalTabs.Tier2.Header>
-      }
-    />
-  </VerticalTabs.Tier1>
-  <VerticalTabs.Tier1
-    header={<VerticalTabs.Tier1.Header>Button</VerticalTabs.Tier1.Header>}
-  />
-  <VerticalTabs.Tier1
-    header={<VerticalTabs.Tier1.Header>Badge</VerticalTabs.Tier1.Header>}
-  />
-  <VerticalTabs.Tier1
-    header={
-      <VerticalTabs.Tier1.Header>Breadcrumb</VerticalTabs.Tier1.Header>
-    }
-  />
-</VerticalTabs.CollapsibleGroup>
-</VerticalTabs>
-`
-        ]}
-      />
+      <SectionHeading>In-app example</SectionHeading>
+      <br />
+
+      <ThemeToggle.Container>
+        <FlowNavExample />
+      </ThemeToggle.Container>
+
+      <Code lang="javascript" collapsible>
+        {`
+const FLOW_NAV_ITEMS = [...]
+
+const [open, setOpen] = React.useState(...)
+
+return (
+  <VerticalTabs forceCollapsed={!open} hideLabels={!open}>
+    <VerticalTabs.Group>
+      {FLOW_NAV_ITEMS.map(section => {
+        const sectionHeader = (
+          <VerticalTabs.Tier1.Header icon={section.header.icon}>
+            {section.header.title}
+          </VerticalTabs.Tier1.Header>
+        )
+
+        return (
+          <VerticalTabs.Tier1 header={sectionHeader}>
+            {section.items.map(item => {
+              const itemHeader = (
+                <VerticalTabs.Tier2.Header href={item.href}>
+                  {item.title}
+                </VerticalTabs.Tier2.Header>
+              )
+
+              return <VerticalTabs.Tier2 header={itemHeader} />
+            })}
+          </VerticalTabs.Tier1>
+        )
+      })}
+    </VerticalTabs.Group>
+  </VerticalTabs>
+)
+`}
+      </Code>
+
       <SectionHeading>Tiers as links</SectionHeading>
       <P>
         To use Tiers as links pass a href with or without onClick to Tier header
@@ -397,3 +321,197 @@ const HeaderLink = withRouter(props => [
     </Content>
   </Chrome>
 )
+
+function FlowNavExample(props) {
+  const [open, setOpen] = React.useState(false)
+  const [activeId, setActiveId] = React.useState('pr-resolution')
+  const isActive = id => activeId === id
+
+  const activate = (evt, id) => {
+    evt.preventDefault()
+    setActiveId(id)
+  }
+  return (
+    <div
+      style={{
+        display: 'flex',
+        height: '100%',
+        justifyContent: 'start',
+        minHeight: 1000
+      }}
+    >
+      <div
+        onMouseEnter={() => setOpen(true)}
+        onMouseLeave={() => setOpen(false)}
+        style={{ width: open ? 240 : 72 }}
+      >
+        <VerticalTabs {...props} forceCollapsed={!open} hideLabels={!open}>
+          <VerticalTabs.Group>
+            {FLOW_NAV.map((section, sectionKey) => {
+              const sectionHeader = section.header && (
+                <VerticalTabs.Tier1.Header icon={section.header.icon}>
+                  {section.header.title}
+                </VerticalTabs.Tier1.Header>
+              )
+
+              return (
+                <VerticalTabs.Tier1
+                  collapsible={section.collapsible}
+                  key={sectionKey}
+                  header={sectionHeader}
+                >
+                  {section.items.map((item, itemKey) => {
+                    const active = isActive(item.id)
+                    const itemHeader = (
+                      <VerticalTabs.Tier2.Header
+                        href={item.href}
+                        onClick={evt => activate(evt, item.id)}
+                      >
+                        {item.title}
+                      </VerticalTabs.Tier2.Header>
+                    )
+
+                    return (
+                      <VerticalTabs.Tier2
+                        active={active}
+                        header={itemHeader}
+                        key={itemKey}
+                      />
+                    )
+                  })}
+                </VerticalTabs.Tier1>
+              )
+            })}
+          </VerticalTabs.Group>
+        </VerticalTabs>
+      </div>
+    </div>
+  )
+}
+
+export const FLOW_NAV = [
+  {
+    collapsible: false,
+    header: {
+      href: '#',
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'reports-home',
+      title: 'Reports Home'
+    },
+    items: []
+  },
+  {
+    collapsible: true,
+    header: {
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'operational-reports',
+      title: 'Operational Reports'
+    },
+    items: [
+      {
+        href: '#',
+        id: 'work-log',
+        title: 'Work Log'
+      },
+      {
+        href: '#',
+        id: 'project-timeline',
+        title: 'Project Timeline'
+      },
+      {
+        href: '#',
+        id: 'leaderboard',
+        title: 'Leaderboard'
+      },
+      {
+        href: '#',
+        id: 'snapshot',
+        title: 'Snapshot'
+      },
+      {
+        href: '#',
+        id: 'daily-updates',
+        title: 'Daily Updates'
+      },
+      {
+        href: '#',
+        id: 'spot-check',
+        title: 'Spot Check'
+      }
+    ]
+  },
+  {
+    collapsible: true,
+    header: {
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'review-collaborate',
+      title: 'Review & Collaborate'
+    },
+    items: [
+      {
+        href: '#',
+        id: 'review-workflow',
+        title: 'Review Workflow'
+      },
+      {
+        href: '#',
+        id: 'review-collab',
+        title: 'Review Collaboration'
+      },
+      {
+        href: '#',
+        id: 'pr-resolution',
+        title: 'PR Resolution'
+      },
+      {
+        href: '#',
+        id: 'knowledge-sharing',
+        title: 'Knowledge Sharing'
+      },
+      {
+        href: '#',
+        id: 'player-card',
+        title: 'Player Card'
+      }
+    ]
+  },
+  {
+    collapsible: true,
+    header: {
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'delivery',
+      title: 'Delivery'
+    },
+    items: [
+      {
+        href: '#',
+        title: 'Retrospective'
+      }
+    ]
+  },
+  {
+    collapsible: true,
+    header: {
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'fundamentals',
+      title: 'Fundamentals'
+    },
+    items: [
+      {
+        href: '#',
+        id: 'fundamentals-code',
+        title: 'Code'
+      },
+      {
+        href: '#',
+        id: 'fundamentals-submit',
+        title: 'Submit'
+      },
+      {
+        href: '#',
+        id: 'fundamentals-review',
+        title: 'Review'
+      }
+    ]
+  }
+]

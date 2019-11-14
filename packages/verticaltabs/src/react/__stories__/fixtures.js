@@ -1,57 +1,210 @@
 import React from 'react'
 import Icon from '@pluralsight/ps-design-system-icon'
 
-export const GITPRIME_NAV = [
+export const ADMIN_TOOLS_NAV = [
   {
     collapsible: false,
-    items: [
-      {
-        href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
-        id: 'reports-home',
-        title: 'Reports Home'
-      }
-    ]
+    header: {
+      href: '#',
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'dashboard',
+      title: 'Dashboard'
+    },
+    items: []
+  },
+  {
+    collapsible: false,
+    header: {
+      href: '#',
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'account',
+      title: 'Account'
+    },
+    items: []
   },
   {
     collapsible: true,
     header: {
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'people',
+      title: 'People'
+    },
+    items: [
+      { href: '#', id: 'org', title: 'Organization' },
+      { href: '#', id: 'admins', title: 'Admins' },
+      { href: '#', id: 'managers', title: 'Managers' },
+      { href: '#', id: 'unassigned', title: 'Unassigned users' },
+      { href: '#', id: 'pending', title: 'Pending invites' }
+    ]
+  },
+  {
+    collapsible: false,
+    header: {
+      href: '#',
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'analytics',
+      title: 'Analytics'
+    },
+    items: []
+  },
+  {
+    collapsible: false,
+    header: {
+      href: '#',
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'log',
+      title: 'Log'
+    },
+    items: []
+  }
+]
+
+export const DESIGN_SYSTEM_NAV = [
+  {
+    collapsible: false,
+    header: { title: 'Introduction' },
+    sections: [
+      { id: 'install', header: { href: '#', title: 'Install' } },
+      { id: 'design-assets', header: { href: '#', title: 'Design assets' } },
+      { id: 'contrib', header: { href: '#', title: 'Contribute' } },
+      { id: 'roadmap', header: { href: '#', title: 'Roadmap' } }
+    ]
+  },
+  {
+    collapsible: false,
+    header: { title: 'Foundations' },
+    sections: [
+      {
+        id: 'color',
+        header: {
+          href: '#',
+          icon: <Icon id={Icon.ids.placeholder} />,
+          title: 'Color'
+        }
+      },
+      {
+        id: 'typography',
+        header: {
+          href: '#',
+          icon: <Icon id={Icon.ids.placeholder} />,
+          title: 'Typography'
+        }
+      },
+      {
+        id: 'spacing',
+        header: {
+          href: '#',
+          icon: <Icon id={Icon.ids.placeholder} />,
+          title: 'Spacing'
+        }
+      },
+      {
+        id: 'iconography',
+        header: {
+          href: '#',
+          icon: <Icon id={Icon.ids.placeholder} />,
+          title: 'Iconography'
+        }
+      },
+      {
+        id: 'voice-tone',
+        header: {
+          href: '#',
+          icon: <Icon id={Icon.ids.placeholder} />,
+          title: 'Voice & Tone'
+        }
+      }
+    ]
+  },
+  {
+    collapsible: false,
+    header: { title: 'Components' },
+    sections: [
+      {
+        id: 'avatar',
+        header: {
+          href: '#',
+          title: 'Avatar'
+        },
+        items: [
+          {
+            href: '#',
+            id: 'avatar-prop-types',
+            title: 'PropTypes'
+          },
+          {
+            href: '#',
+            id: 'avatar-guidelines',
+            title: 'Guidelines'
+          }
+        ]
+      },
+      {
+        id: 'badge',
+        header: {
+          href: '#',
+          title: 'Badge'
+        },
+        items: []
+      },
+      {
+        id: 'breadcrumb',
+        header: {
+          href: '#',
+          title: 'Breadcrumb'
+        },
+        items: []
+      }
+    ]
+  }
+]
+
+export const FLOW_NAV = [
+  {
+    collapsible: false,
+    header: {
+      href: '#',
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'reports-home',
+      title: 'Reports Home'
+    },
+    items: []
+  },
+  {
+    collapsible: true,
+    header: {
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'operational-reports',
       title: 'Operational Reports'
     },
     items: [
       {
         href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
         id: 'work-log',
         title: 'Work Log'
       },
       {
         href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
         id: 'project-timeline',
         title: 'Project Timeline'
       },
       {
         href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
         id: 'leaderboard',
         title: 'Leaderboard'
       },
       {
         href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
         id: 'snapshot',
         title: 'Snapshot'
       },
       {
         href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
         id: 'daily-updates',
         title: 'Daily Updates'
       },
       {
         href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
         id: 'spot-check',
         title: 'Spot Check'
       }
@@ -60,36 +213,33 @@ export const GITPRIME_NAV = [
   {
     collapsible: true,
     header: {
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'review-collaborate',
       title: 'Review & Collaborate'
     },
     items: [
       {
         href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
         id: 'review-workflow',
         title: 'Review Workflow'
       },
       {
         href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
         id: 'review-collab',
         title: 'Review Collaboration'
       },
       {
         href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
         id: 'pr-resolution',
         title: 'PR Resolution'
       },
       {
         href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
         id: 'knowledge-sharing',
         title: 'Knowledge Sharing'
       },
       {
         href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
         id: 'player-card',
         title: 'Player Card'
       }
@@ -98,12 +248,13 @@ export const GITPRIME_NAV = [
   {
     collapsible: true,
     header: {
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'delivery',
       title: 'Delivery'
     },
     items: [
       {
         href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
         title: 'Retrospective'
       }
     ]
@@ -111,24 +262,23 @@ export const GITPRIME_NAV = [
   {
     collapsible: true,
     header: {
+      icon: <Icon id={Icon.ids.placeholder} />,
+      id: 'fundamentals',
       title: 'Fundamentals'
     },
     items: [
       {
         href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
         id: 'fundamentals-code',
         title: 'Code'
       },
       {
         href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
         id: 'fundamentals-submit',
         title: 'Submit'
       },
       {
         href: '#',
-        icon: <Icon id={Icon.ids.placeholder} />,
         id: 'fundamentals-review',
         title: 'Review'
       }
