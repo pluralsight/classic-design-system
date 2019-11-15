@@ -9,7 +9,7 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "scripts": {
-    "build": "run-s build:js build:cjs",
+    "build": "run-s build:js build:cjs build:css",
     "build:cjs": "babel --root-mode upward src --out-dir dist/cjs",
     "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
     "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
@@ -31,6 +31,7 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
+    "@pluralsight/ps-design-system-build": "^1.11.2",
     "@pluralsight/ps-design-system-button": "^15.0.1",
     "@pluralsight/ps-design-system-link": "^8.0.2",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.1"
