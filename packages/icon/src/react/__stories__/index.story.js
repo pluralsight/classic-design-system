@@ -36,15 +36,15 @@ Object.values(Icon.sizes).forEach(size =>
   ))
 )
 
-const idStory = storiesOf('id', module)
-idStory.add('all ids', () => (
+const idStory = storiesOf('names', module)
+idStory.add('all export names', () => (
   <Grid>
     {Object.keys(Icons).map(id => {
       const Comp = Icons[id]
       return (
-      <GridItem key={`item-${id}`}>
-        <Comp color={Icon.colors.white} />
-      </GridItem>
+        <GridItem key={`item-${id}`}>
+          <Comp color={Icon.colors.white} />
+        </GridItem>
       )
     })}
   </Grid>
@@ -57,7 +57,7 @@ Object.keys(Icons).forEach(id =>
 )
 
 storiesOf('custom props', module).add('aria-label', () => (
-  <Icons.CheckIcon color={Icon.colors.white} aria-label="completed"/>
+  <Icons.CheckIcon color={Icon.colors.white} aria-label="completed" />
 ))
 
 const SvgAccounticon = props => (
@@ -68,6 +68,6 @@ const SvgAccounticon = props => (
 
 storiesOf('custom icon', module).add('aria-label', () => (
   <Icon color={Icon.colors.white}>
-    <SvgAccounticon/>
+    <SvgAccounticon />
   </Icon>
 ))

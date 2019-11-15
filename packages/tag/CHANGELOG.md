@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@5.0.1...@pluralsight/ps-design-system-tag@5.0.2) (2019-11-14)
+
+
+### Bug Fixes
+
+* **tag:** selectivity fix ([3e46047](https://github.com/pluralsight/design-system/commit/3e460475eb224c1f74ead6d70ed7e2d860e5d3b8))
+
+
+
+
+
 ## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@5.0.0...@pluralsight/ps-design-system-tag@5.0.1) (2019-11-06)
 
 

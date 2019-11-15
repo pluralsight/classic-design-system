@@ -1,6 +1,6 @@
 import { action } from '@storybook/addon-actions'
 import * as Icon from '@pluralsight/ps-design-system-icon'
-import React from 'react'
+import React, { useState } from 'react'
 import { storiesOf } from '@storybook/react'
 
 import Tag from '../index.js'
@@ -18,6 +18,13 @@ Object.keys(Tag.sizes).forEach(size =>
     </Tag>
   ))
 )
+
+const PressedTag = props => {
+  const [pressed, setPressed] = useState(true)
+  return (
+    <Tag isPressed={pressed} {...props} onClick={() => setPressed(!pressed)} />
+  )
+}
 
 storiesOf('actions', module)
   .add('link', _ => <Tag href="https://duckduckgo.com/">As a link</Tag>)
@@ -48,23 +55,13 @@ storiesOf('actions', module)
 
 storiesOf('isPressed', module)
   .add('link', _ => (
-    <Tag isPressed href="https://duckduckgo.com/">
-      As a link
-    </Tag>
+    <PressedTag href="https://duckduckgo.com/">As a link</PressedTag>
   ))
-  .add('button', _ => (
-    <Tag isPressed onClick={action('button clicked')}>
-      As a button
-    </Tag>
-  ))
+  .add('button', _ => <PressedTag>As a button</PressedTag>)
   .add('button w/ icon button', _ => (
-    <Tag
-      isPressed
-      onClick={action('button clicked')}
-      icon={<Icon.CloseIcon onClick={action('icon clicked')} />}
-    >
+    <PressedTag icon={<Icon.CloseIcon onClick={action('icon clicked')} />}>
       As a button
-    </Tag>
+    </PressedTag>
   ))
 
 storiesOf('long', module)
