@@ -61,12 +61,14 @@ export default {
     display: 'inline-flex',
     alignItems: 'center',
     width: '100%',
-    minWidth: `calc(${iconWidths.medium} + ${core.layout.spacingXSmall})`
+    minWidth: `calc(${iconWidths.medium} + ${core.layout.spacingXSmall})`,
+    maxWidth: '100%',
   },
   '.psds-dropdown__field-aligner': {
     display: 'inline-flex',
     alignItems: 'center',
-    width: '100%'
+    width: '100%',
+    maxWidth: '100%',
   },
 
   // __icon
@@ -154,5 +156,8 @@ export default {
     right: 0,
     bottom: 0,
     left: 0
-  }
+  },
+  '.psds-dropdown__field-halo': {
+    maxWidth: '100%'
+  }  
 }

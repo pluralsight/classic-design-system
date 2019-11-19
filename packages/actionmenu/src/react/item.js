@@ -32,7 +32,8 @@ const styles = {
       nested ? stylesheet['.psds-actionmenu__item--nested'] : null,
       isActive ? stylesheet['.psds-actionmenu__item--isActive'] : null,
       disabled && stylesheet['.psds-actionmenu__item--disabled']
-    )
+    ),
+  inner: _ => css(stylesheet['.psds-actionmenu__item-inner'])
 }
 
 export default function Item(props) {
@@ -127,7 +128,7 @@ export default function Item(props) {
       >
         {icon && <ItemIcon>{icon}</ItemIcon>}
 
-        {props.children}
+        <span {...styles.inner()}>{props.children}</span>
 
         {props.nested && <Arrow _isKeyboarding={props._isKeyboarding} />}
       </TagName>

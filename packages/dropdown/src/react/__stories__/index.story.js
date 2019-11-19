@@ -101,7 +101,6 @@ storiesOf('whitelist', module)
   .add('onChange', _ => {
     function ChangeStory() {
       const [value, setValue] = React.useState('two')
-
       function handleChange(evt, value, label) {
         setValue(value)
       }
@@ -112,9 +111,10 @@ storiesOf('whitelist', module)
           <Dropdown
             placeholder="Change me"
             label="Thing to change"
+            style={{width: 150}}
             menu={
               <ActionMenu>
-                <ActionMenu.Item value="one">One item</ActionMenu.Item>
+                <ActionMenu.Item value="one">One item One item One item One item One item One item</ActionMenu.Item>
                 <ActionMenu.Item value="two">Two item</ActionMenu.Item>
                 <ActionMenu.Item value="three">Three item</ActionMenu.Item>
               </ActionMenu>

@@ -52,7 +52,8 @@ const styles = {
       css['.psds-dropdown__sub-label'],
       css[`.psds-dropdown__sub-label.psds-theme--${themeName}`]
     ),
-  pageOverlay: _ => glamor.css(css['.psds-dropdown__page-overlay'])
+  pageOverlay: _ => glamor.css(css['.psds-dropdown__page-overlay']),
+  halo: _ => glamor.css(css['.psds-dropdown__field-halo'])
 }
 
 const CaretDown = _ => (
@@ -65,12 +66,24 @@ const CaretDown = _ => (
     <path d="M12.5 14L8 10h9z" />
   </svg>
 )
-
+const useMeasuredWidth = ref => {
+  const width = ref.current
+    ? ref.current.getBoundingClientRect().width
+    : 'auto'
+  const maxWidth = width === 'auto' || width < 320
+    ? 320
+    : width
+  return {
+    maxWidth,
+    width,
+  };
+}
 const Dropdown = React.forwardRef((props, forwardedRef) => {
   const themeName = useTheme()
   const allProps = { ...props, themeName }
   const [isKeyboarding, setKeyboarding] = React.useState(false)
   const [isOpen, setOpen] = React.useState(false)
+  
 
   const itemMatchingValue = React.useMemo(
     _ => {
@@ -168,12 +181,13 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
       allProps.menu
     )
   }
-
+  
   const ref = forwardedRef || React.createRef()
   const { style, className, ...buttonProps } = allProps
-  const longestMenuItemState = getLongestMenuLabelState()
+  const longestMenuItemState = getLongestMenuLabelState() 
+  const { width, maxWidth} = useMeasuredWidth(ref)
   return (
-    <React.Fragment>
+    <>
       {isOpen && (
         <div {...styles.pageOverlay(allProps)} onClick={handleOverlayClick} />
       )}
@@ -187,7 +201,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
           <div {...styles.label(allProps)}>{allProps.label}</div>
         )}
         <div {...styles.fieldContainer(allProps)}>
-          <Halo error={allProps.error} gapSize={Halo.gapSizes.small}>
+          <Halo error={allProps.error} gapSize={Halo.gapSizes.small} {...styles.halo()}>
             <div {...styles.fieldAligner(allProps)}>
               <button
                 {...filterReactProps(buttonProps, { tagName: 'button' })}
@@ -230,10 +244,8 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
               style: {
                 ...allProps.menu.props.style,
                 minWidth: '0',
-                maxWidth: 'none',
-                width: ref.current
-                  ? ref.current.getBoundingClientRect().width
-                  : 'auto'
+                maxWidth,
+                width,
               }
             })}
           </div>
@@ -242,7 +254,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
           <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
         )}
       </label>
-    </React.Fragment>
+    </>
   )
 })
 

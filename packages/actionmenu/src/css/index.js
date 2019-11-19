@@ -77,9 +77,6 @@ export default {
     alignItems: 'center',
     lineHeight: core.type.lineHeightExtra,
     fontWeight: core.type.fontWeightMedium,
-    whiteSpace: 'nowrap',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
     textAlign: 'left',
     cursor: 'pointer',
     border: 'none',
@@ -92,7 +89,12 @@ export default {
     textDecoration: 'none',
     transition: `background ${core.motion.speedXFast}`
   },
-
+  '.psds-actionmenu__item-inner': {
+    flex: 1,
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis'
+  },
   '.psds-actionmenu__item:focus': {
     background: core.colors.bone,
     outline: 'none',
