@@ -1,4 +1,4 @@
-import { css } from 'glamor'
+import { compose, css } from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -9,10 +9,10 @@ import { getColorByName, getInitials, transformSrc } from '../js/index.js'
 
 const styles = {
   avatar: ({ size }) =>
-    css({
-      ...stylesheet['.psds-avatar'],
-      ...stylesheet[`.psds-avatar--size-${size}`]
-    }),
+    compose(
+      css(stylesheet['.psds-avatar']),
+      css(stylesheet[`.psds-avatar--size-${size}`])
+    ),
   image: _ => css(stylesheet['.psds-avatar__image']),
   initials: _ => css(stylesheet['.psds-avatar__initials'])
 }

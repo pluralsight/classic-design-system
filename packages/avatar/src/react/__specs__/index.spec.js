@@ -27,6 +27,14 @@ describe('Avatar', () => {
     expect(el).toHaveClass('testclass')
   })
 
+  it('should forward ref', () => {
+    const ref = React.createRef()
+
+    render(<Avatar ref={ref} />)
+
+    expect(ref).not.toBeNull()
+  })
+
   describe('with an image src and an alt attr', () => {
     let container, el, image
 
