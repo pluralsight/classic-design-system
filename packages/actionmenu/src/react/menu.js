@@ -1,7 +1,7 @@
 // NOTE: proptypes linking Item is done in index.js to avoid circular menu-item dependency
 /* eslint react/prop-types: 0 */
 
-import { css } from 'glamor'
+import { compose, css } from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import React from 'react'
 
@@ -14,16 +14,18 @@ const slide = css.keyframes(
 )
 
 const styles = {
-  menu: props =>
-    css(
-      stylesheet['.psds-actionmenu']({ slide }),
-      stylesheet[`.psds-actionmenu--origin-${props.origin}`],
-      props._isNested &&
-        stylesheet[
-          `.psds-actionmenu--nested.psds-actionmenu--origin-${props.origin}`
-        ],
-      props.css
+  menu: ({ _isNested, origin }) => {
+    return compose(
+      css(stylesheet['.psds-actionmenu']({ slide })),
+      css(stylesheet[`.psds-actionmenu--origin-${origin}`]),
+      _isNested &&
+        css(
+          stylesheet[
+            `.psds-actionmenu--nested.psds-actionmenu--origin-${origin}`
+          ]
+        )
     )
+  }
 }
 
 const ActionMenu = React.forwardRef((props, forwardedRef) => {
@@ -123,7 +125,7 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
   }
 
   return (
-    <React.Fragment>
+    <>
       {!props._isNested && typeof props.onClose === 'function' && (
         <Overlay onClose={navigateOut} />
       )}
@@ -151,7 +153,7 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
             : null
         )}
       </div>
-    </React.Fragment>
+    </>
   )
 })
 

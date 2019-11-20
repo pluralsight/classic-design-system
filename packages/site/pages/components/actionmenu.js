@@ -47,7 +47,7 @@ function InAppExample() {
   }
 
   return (
-    <React.Fragment>
+    <>
       <style jsx>{`
         .example {
           padding: ${core.layout.spacingLarge};
@@ -183,7 +183,7 @@ function InAppExample() {
   )
 }`}
       </Code>
-    </React.Fragment>
+    </>
   )
 }
 
@@ -301,7 +301,7 @@ export default _ => (
         includes={{ ActionMenu, Icon }}
         codes={[
           `
-<ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
+<ActionMenu style={{ position: 'relative' }} shouldFocusOnMount={false}>
   <ActionMenu.Item icon={<Icon id={Icon.ids.channel} />}>
     Channels
   </ActionMenu.Item>
@@ -325,7 +325,7 @@ export default _ => (
         includes={{ ActionMenu }}
         codes={[
           `
-<ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
+<ActionMenu style={{ position: 'relative' }} shouldFocusOnMount={false}>
   <ActionMenu.Item>
     One item
   </ActionMenu.Item>
@@ -354,7 +354,7 @@ export default _ => (
         }}
         codes={[
           `
-<ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
+<ActionMenu style={{ position: 'relative' }} shouldFocusOnMount={false}>
   <ActionMenu.Item>
     One item
   </ActionMenu.Item>
