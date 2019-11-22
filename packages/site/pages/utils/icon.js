@@ -37,10 +37,10 @@ export default _ => (
 
       <SectionHeading>Formating</SectionHeading>
       <P>
-        Icons must be monochromatic. Flattening SVGs before usage is
-        recommended.
+        Icons must be monochromatic and their filenames dash-cased. Flattening
+        SVGs before usage is recommended.
       </P>
-      <P>Formating svg files:</P>
+      <P>Formating svg files(dash-cased.svg):</P>
       <Doc>
         {`- **viewbox**: \`0 0 24 24\`
 - **role**: \`img\`
