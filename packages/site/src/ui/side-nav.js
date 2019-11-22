@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import { withRouter } from 'next/router.js'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import * as core from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon'
@@ -12,172 +14,6 @@ const css = {
   linkActiveWidth: '8px',
   sidenavWidth: '200px'
 }
-
-const Group = props => (
-  <div className="group">
-    {props.children}
-    <style jsx>{`
-      .group {
-        padding: ${core.layout.spacingSmall} ${core.layout.spacingLarge};
-        border-top: 1px solid ${core.colors.gray01};
-      }
-    `}</style>
-  </div>
-)
-Group.propTypes = {
-  children: PropTypes.node
-}
-
-const GroupTitle = props => (
-  <div className="groupTitle">
-    {props.children}
-
-    <style jsx>{`
-      .groupTitle {
-        margin: 0;
-        color: ${core.colors.black};
-        font-size: ${core.type.fontSizeXSmall};
-        line-height: ${core.type.lineHeightExtra};
-        font-weight: ${core.type.fontWeightMedium};
-        text-transform: uppercase;
-      }
-    `}</style>
-  </div>
-)
-GroupTitle.propTypes = {
-  children: PropTypes.node
-}
-
-const InternalLinks = ({ headings = [] }) => {
-  if (headings.length <= 0) return null
-
-  return (
-    <div className="links">
-      {headings.map(h => (
-        <a className="link" href={h.href} key={h.href}>
-          {h.label}
-        </a>
-      ))}
-
-      <style jsx>{`
-        @keyframes grow {
-          100% {
-            height: auto;
-          }
-        }
-        .links {
-          position: relative;
-          margin-top: ${core.layout.spacingXXSmall};
-          margin-bottom: ${core.layout.spacingXSmall};
-          margin-left: calc(${css.linkActiveWidth} / 2);
-          padding-left: ${core.layout.spacingMedium};
-          height: 0;
-          animation: grow ${core.motion.speedXSlow} forwards;
-        }
-        .links:after {
-          position: absolute;
-          top: ${core.layout.spacingXSmall};
-          left: -1px;
-          content: '';
-          display: block;
-          height: calc(100% - (2 * ${core.layout.spacingXSmall}));
-          width: 0;
-          border-left: 1px solid ${core.colors.gray01};
-        }
-        .link {
-          display: block;
-          font-size: ${core.type.fontSizeXSmall};
-          line-height: ${core.type.lineHeightExtra};
-          color: ${core.colors.gray03};
-          white-space: nowrap;
-          cursor: pointer;
-          transition: all ${core.motion.speedXFast} ease-in-out;
-        }
-        .link:hover {
-          color: ${core.colors.black};
-          text-decoration: none;
-        }
-      `}</style>
-    </div>
-  )
-}
-InternalLinks.propTypes = {
-  headings: PropTypes.array
-}
-
-class RouterUnawareNavLink extends React.Component {
-  render() {
-    const isActive =
-      (typeof window !== 'undefined' &&
-        window.location.pathname === this.props.href) ||
-      this.props.router.pathname === this.props.href
-    return (
-      <div className="navLink">
-        <Link href={this.props.href}>
-          <span className={`link ${isActive ? 'linkActive' : ''}`}>
-            <span aria-hidden="true" className="box" />
-            {this.props.children}
-          </span>
-        </Link>
-        {isActive && <InternalLinks headings={this.props.headings} />}
-        <style jsx>{`
-          .box {
-            display: inline-block;
-            height: 8px;
-            width: 0px;
-            margin-right: 0px;
-            background: ${core.colors.gradientHorz};
-            transition: all ${core.motion.speedXFast} ease-in-out;
-          }
-          .navLink :global(a) {
-            text-decoration: none;
-          }
-          .navLink .link {
-            display: flex;
-            align-items: center;
-            font-size: ${core.type.fontSizeSmall};
-            line-height: ${core.type.lineHeightExtra};
-            color: ${core.colors.gray03};
-            white-space: nowrap;
-            transition: all ${core.motion.speedXFast} ease-in-out;
-          }
-          .navLink .link:hover {
-            color: ${core.colors.black};
-            text-decoration: none;
-          }
-          .link:hover .box {
-            width: 8px;
-            padding-left: 8px;
-            margin-right: 12px;
-          }
-          .linkActive {
-            color: ${core.colors.black};
-            font-weight: ${core.type.fontWeightBold};
-          }
-          .linkActive .box {
-            width: ${css.linkActiveWidth};
-            padding-left: 8px;
-            margin-right: 12px;
-          }
-        `}</style>
-      </div>
-    )
-  }
-}
-RouterUnawareNavLink.propTypes = {
-  children: PropTypes.node,
-  headings: PropTypes.arrayOf(PropTypes.object),
-  href: PropTypes.string
-}
-RouterUnawareNavLink.propTypes = {
-  children: PropTypes.node,
-  headings: PropTypes.arrayOf(PropTypes.any),
-  href: PropTypes.string,
-  router: PropTypes.shape({
-    pathname: PropTypes.string
-  })
-}
-const NavLink = withRouter(RouterUnawareNavLink)
 
 const LogoSvg = _ => (
   <svg
@@ -384,57 +220,105 @@ const links = [
   }
 ]
 
-const SideNav = withHeadings(props => (
-  <nav className={`sidenav ${props.isOpen ? 'sidenavOpen' : ''}`}>
-    <Close onCloseClick={props.onCloseClick} />
+function isTier1LinkActive(router, tier1Link) {
+  return router.pathname === tier1Link.href
+}
 
-    <Logo />
+function isTier2LinkActive(router, tier2Link) {
+  const hash = router.asPath.replace(/^[^#]*#?(.+)$/, '#$1')
+  return hash === tier2Link.href
+}
 
-    {// TODO: handle  headings={props.headings}
-    links.map(tier1 => (
-      <Group key={tier1.title}>
-        <GroupTitle>{tier1.title}</GroupTitle>
-        {tier1.links.map(tier2 => (
-          <NavLink key={tier2.href} href={tier2.href}>
-            {tier2.title}
-          </NavLink>
-        ))}
-      </Group>
-    ))}
+const SideNav = withRouter(
+  withHeadings(props => (
+    <nav className={`sidenav ${props.isOpen ? 'sidenavOpen' : ''}`}>
+      <Close onCloseClick={props.onCloseClick} />
 
-    <style jsx>{`
-      .sidenav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        border-right: 1px solid ${core.colors.gray01};
-        transform: translateX(calc(-1 * ${css.sidenavWidth}));
-        height: 100vh;
-        width: ${css.sidenavWidth};
-        background: ${core.colors.bone};
-        overflow-x: hidden;
-        overflow-y: auto;
-        transition: transform ${core.motion.speedXFast} ease-in-out;
-      }
-      .sidenavOpen {
-        transform: translateX(0);
-        box-shadow: 0 2px 17px rgba(0, 0, 0, 0.5);
-        z-index: 10; /* TODO: arbitrary; above code mirror; come back when ready to systemize */
-      }
-      @media screen and (min-width: 769px) {
+      <Logo />
+
+      <Theme name={Theme.names.light}>
+        <VerticalTabs>
+          {links.map(group => [
+            <VerticalTabs.Divider key="div" />,
+            <VerticalTabs.Group
+              key={group.title}
+              header={
+                <VerticalTabs.Group.Header>
+                  {group.title}
+                </VerticalTabs.Group.Header>
+              }
+            >
+              {group.links.map(tier1 => {
+                const active = isTier1LinkActive(props.router, tier1)
+                return (
+                  <VerticalTabs.Tier1
+                    active={active}
+                    header={
+                      <VerticalTabs.Tier1.Header href={tier1.href}>
+                        {tier1.title}
+                      </VerticalTabs.Tier1.Header>
+                    }
+                    key={tier1.href}
+                  >
+                    {active &&
+                      (props.headings || []).map(pageSectionHeading => (
+                        <VerticalTabs.Tier2
+                          active={isTier2LinkActive(
+                            props.router,
+                            pageSectionHeading
+                          )}
+                          header={
+                            <VerticalTabs.Tier2.Header
+                              href={pageSectionHeading.href}
+                            >
+                              {pageSectionHeading.label}
+                            </VerticalTabs.Tier2.Header>
+                          }
+                          key={pageSectionHeading.href}
+                        />
+                      ))}
+                  </VerticalTabs.Tier1>
+                )
+              })}
+            </VerticalTabs.Group>
+          ])}
+        </VerticalTabs>
+      </Theme>
+
+      <style jsx>{`
         .sidenav {
-          transition: none;
           position: fixed;
-          box-shadow: none;
-          transform: translateX(0);
-          min-height: 100%;
-          border-top: none;
-          flex-direction: column;
+          top: 0;
+          left: 0;
+          border-right: 1px solid ${core.colors.gray01};
+          transform: translateX(calc(-1 * ${css.sidenavWidth}));
+          height: 100vh;
+          width: ${css.sidenavWidth};
+          background: ${core.colors.bone};
+          overflow-x: hidden;
+          overflow-y: auto;
+          transition: transform ${core.motion.speedXFast} ease-in-out;
         }
-      }
-    `}</style>
-  </nav>
-))
+        .sidenavOpen {
+          transform: translateX(0);
+          box-shadow: 0 2px 17px rgba(0, 0, 0, 0.5);
+          z-index: 10; /* TODO: arbitrary; above code mirror; come back when ready to systemize */
+        }
+        @media screen and (min-width: 769px) {
+          .sidenav {
+            transition: none;
+            position: fixed;
+            box-shadow: none;
+            transform: translateX(0);
+            min-height: 100%;
+            border-top: none;
+            flex-direction: column;
+          }
+        }
+      `}</style>
+    </nav>
+  ))
+)
 
 SideNav.propTypes = {
   isOpen: PropTypes.bool
