@@ -310,160 +310,97 @@ Close.propTypes = {
   onCloseClick: PropTypes.func.isRequired
 }
 
+const links = [
+  {
+    title: 'Introduction',
+    links: [
+      { title: 'Install', href: '/install' },
+      { title: 'Design assets', href: '/design-assets' },
+      { title: 'Contribute', href: '/contribute' },
+      { title: 'Roadmap', href: '/roadmap' }
+    ]
+  },
+  {
+    title: 'Core',
+    links: [
+      { title: 'Color', href: '/core/color' },
+      { title: 'Motion', href: '/core/motion' },
+      { title: 'Spacing', href: '/core/spacing' },
+      { title: 'Typography', href: '/core/typography' }
+    ]
+  },
+  {
+    title: 'Components',
+    links: [
+      { title: 'Action Menu', href: '/components/actionmenu' },
+      { title: 'Avatar', href: '/components/avatar' },
+      { title: 'Badge', href: '/components/badge' },
+      { title: 'Banner', href: '/components/banner' },
+      { title: 'Breadcrumb', href: '/components/breadcrumb' },
+      { title: 'Button', href: '/components/button' },
+      { title: 'Card', href: '/components/card' },
+      { title: 'Carousel', href: '/components/carousel' },
+      { title: 'Checkbox', href: '/components/checkbox' },
+      { title: 'Circular Progres', href: '/components/circularprogress' },
+      { title: 'Code', href: '/components/code' },
+      { title: 'Data Well', href: '/components/datawell' },
+      { title: 'Date Picker', href: '/components/datepicker' },
+      { title: 'Dialog', href: '/components/dialog' },
+      { title: 'Drawer', href: '/components/drawer' },
+      { title: 'Dropdown', href: '/components/dropdown' },
+      { title: 'Empty State', href: '/components/emptystate' },
+      { title: 'Errors', href: '/components/errors' },
+      { title: 'Form', href: '/components/form' },
+      { title: 'Icon', href: '/components/icon' },
+      { title: 'Layout', href: '/components/layout' },
+      { title: 'Linear Progress', href: '/components/linearprogress' },
+      { title: 'Link', href: '/components/link' },
+      { title: 'Note', href: '/components/note' },
+      { title: 'Position', href: '/components/position' },
+      { title: 'Radio', href: '/components/radio' },
+      { title: 'Row', href: '/components/row' },
+      { title: 'Search Input', href: '/components/searchinput' },
+      { title: 'Star Rating', href: '/components/starrating' },
+      { title: 'Switch', href: '/components/switch' },
+      { title: 'Tab', href: '/components/tab' },
+      { title: 'Table', href: '/components/table' },
+      { title: 'Tag', href: '/components/tag' },
+      { title: 'Text', href: '/components/text' },
+      { title: 'Text Area', href: '/components/textarea' },
+      { title: 'Text Input', href: '/components/textinput' },
+      { title: 'Theme', href: '/components/theme' },
+      { title: 'Tooltip', href: '/components/tooltip' },
+      { title: 'Typeahead', href: '/components/typeahead' },
+      { title: 'Vertical Tabs', href: '/components/verticaltabs' },
+      { title: 'View Toggle', href: '/components/viewtoggle' }
+    ]
+  },
+  {
+    title: 'Patterns',
+    links: [
+      { title: 'Iconography', href: '/patterns/iconography' },
+      { title: 'Voice & tone', href: '/patterns/voice-tone' }
+    ]
+  }
+]
+
 const SideNav = withHeadings(props => (
   <nav className={`sidenav ${props.isOpen ? 'sidenavOpen' : ''}`}>
     <Close onCloseClick={props.onCloseClick} />
 
     <Logo />
 
-    <Group>
-      <GroupTitle>Introduction</GroupTitle>
-      <NavLink href="/install">Install</NavLink>
-      <NavLink href="/design-assets">Design assets</NavLink>
-      <NavLink href="/contribute" headings={props.headings}>
-        Contribute
-      </NavLink>
-      <NavLink href="/roadmap">Roadmap</NavLink>
-    </Group>
-
-    <Group>
-      <GroupTitle>Core</GroupTitle>
-      <NavLink href="/core/color">Color</NavLink>
-      <NavLink href="/core/motion">Motion</NavLink>
-      <NavLink href="/core/spacing">Spacing</NavLink>
-      <NavLink href="/core/typography">Typography</NavLink>
-    </Group>
-
-    <Group>
-      <GroupTitle>Components</GroupTitle>
-      <NavLink href="/components/actionmenu" headings={props.headings}>
-        Action Menu
-      </NavLink>
-      <NavLink href="/components/avatar" headings={props.headings}>
-        Avatar
-      </NavLink>
-      <NavLink href="/components/badge" headings={props.headings}>
-        Badge
-      </NavLink>
-      <NavLink href="/components/banner" headings={props.headings}>
-        Banner
-      </NavLink>
-      <NavLink href="/components/breadcrumb" headings={props.headings}>
-        Breadcrumb
-      </NavLink>
-      <NavLink href="/components/button" headings={props.headings}>
-        Button
-      </NavLink>
-      <NavLink href="/components/card" headings={props.headings}>
-        Card
-      </NavLink>
-      <NavLink href="/components/carousel" headings={props.headings}>
-        Carousel
-      </NavLink>
-      <NavLink href="/components/checkbox" headings={props.headings}>
-        Checkbox
-      </NavLink>
-      <NavLink href="/components/circularprogress" headings={props.headings}>
-        Circular Progress
-      </NavLink>
-      <NavLink href="/components/code" headings={props.headings}>
-        Code
-      </NavLink>
-      <NavLink href="/components/datawell" headings={props.headings}>
-        Data Well
-      </NavLink>
-      <NavLink href="/components/datepicker" headings={props.headings}>
-        Date Picker
-      </NavLink>
-      <NavLink href="/components/dialog" headings={props.headings}>
-        Dialog
-      </NavLink>
-      <NavLink href="/components/drawer" headings={props.headings}>
-        Drawer
-      </NavLink>
-      <NavLink href="/components/dropdown" headings={props.headings}>
-        Dropdown
-      </NavLink>
-      <NavLink href="/components/emptystate" headings={props.headings}>
-        Empty State
-      </NavLink>
-      <NavLink href="/components/errors" headings={props.headings}>
-        Errors
-      </NavLink>
-      <NavLink href="/components/form" headings={props.headings}>
-        Form
-      </NavLink>
-      <NavLink href="/components/icon" headings={props.headings}>
-        Icon
-      </NavLink>
-      <NavLink href="/components/layout" headings={props.headings}>
-        Layout
-      </NavLink>
-      <NavLink href="/components/linearprogress">Linear Progress</NavLink>
-      <NavLink href="/components/link">Link</NavLink>
-      <NavLink href="/components/note">Note</NavLink>
-      <NavLink href="/components/position" headings={props.headings}>
-        Position
-      </NavLink>
-      <NavLink href="/components/radio" headings={props.headings}>
-        Radio
-      </NavLink>
-      <NavLink href="/components/row" headings={props.headings}>
-        Row
-      </NavLink>
-      <NavLink href="/components/searchinput" headings={props.headings}>
-        Search Input
-      </NavLink>
-      <NavLink href="/components/starrating" headings={props.headings}>
-        Star Rating
-      </NavLink>
-      <NavLink href="/components/switch" headings={props.headings}>
-        Switch
-      </NavLink>
-      <NavLink href="/components/tab" headings={props.headings}>
-        Tab
-      </NavLink>
-      <NavLink href="/components/table" headings={props.headings}>
-        Table
-      </NavLink>
-      <NavLink href="/components/tag" headings={props.headings}>
-        Tag
-      </NavLink>
-      <NavLink href="/components/text" headings={props.headings}>
-        Text
-      </NavLink>
-      <NavLink href="/components/textarea" headings={props.headings}>
-        Text Area
-      </NavLink>
-      <NavLink href="/components/textinput" headings={props.headings}>
-        Text Input
-      </NavLink>
-      <NavLink href="/components/theme" headings={props.headings}>
-        Theme
-      </NavLink>
-      <NavLink href="/components/tooltip" headings={props.headings}>
-        Tooltip
-      </NavLink>
-      <NavLink href="/components/typeahead" headings={props.headings}>
-        Typeahead
-      </NavLink>
-      <NavLink href="/components/verticaltabs" headings={props.headings}>
-        Vertical Tabs
-      </NavLink>
-      <NavLink href="/components/viewtoggle" headings={props.headings}>
-        View Toggle
-      </NavLink>
-    </Group>
-
-    <Group>
-      <GroupTitle>Patterns</GroupTitle>
-      <NavLink href="/patterns/iconography" headings={props.headings}>
-        Iconography
-      </NavLink>
-      <NavLink href="/patterns/voice-tone" headings={props.headings}>
-        Voice & tone
-      </NavLink>
-    </Group>
+    {// TODO: handle  headings={props.headings}
+    links.map(tier1 => (
+      <Group key={tier1.title}>
+        <GroupTitle>{tier1.title}</GroupTitle>
+        {tier1.links.map(tier2 => (
+          <NavLink key={tier2.href} href={tier2.href}>
+            {tier2.title}
+          </NavLink>
+        ))}
+      </Group>
+    ))}
 
     <style jsx>{`
       .sidenav {
