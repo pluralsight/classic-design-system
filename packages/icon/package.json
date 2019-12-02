@@ -1,16 +1,16 @@
 {
   "name": "@pluralsight/ps-design-system-icon",
-  "version": "14.0.1",
+  "version": "15.0.0",
   "description": "Design System component for icon ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
   "bin": {
     "psds-icon": "bin/icon"
   },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "scripts": {
     "build": "run-s build:svg build:js build:cjs build:css",
     "build:cjs": "babel --root-mode upward src --out-dir dist/cjs",

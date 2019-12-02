@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [15.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@14.0.1...@pluralsight/ps-design-system-icon@15.0.0) (2019-12-02)
+
+
+### Bug Fixes
+
+* **icon:** dash-case aria|data attrs, camelcase other attrs ([7b3c0a5](https://github.com/pluralsight/design-system/commit/7b3c0a5dd0574b74284c57d96973de0275d8d62b))
+
+
+### Features
+
+* **icon:** named icon exports and cli util ([15e1e08](https://github.com/pluralsight/design-system/commit/15e1e08a8f04ac6a0aa2bf3cf78efeb412cd6dd6))
+
+
+### BREAKING CHANGES
+
+* **icon:** Icons must be refactored to used Named exports inatad of id prop. Please see docs for example
+
+
+
+
+
 ## [14.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@14.0.0...@pluralsight/ps-design-system-icon@14.0.1) (2019-11-06)
 
 
