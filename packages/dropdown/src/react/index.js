@@ -1,7 +1,7 @@
 import * as glamor from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
-import Icon from '@pluralsight/ps-design-system-icon'
+import Icon, { WarningIcon } from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
@@ -212,7 +212,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
           </Halo>
           {allProps.error && (
             <div {...styles.error(allProps)}>
-              <Icon id={Icon.ids.warning} />
+              <WarningIcon />
             </div>
           )}
         </div>

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import Halo from '@pluralsight/ps-design-system-halo'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {CalendarIcon, WarningIcon} from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
@@ -241,12 +241,12 @@ const DatePicker = React.forwardRef((props, ref) => {
             disabled={props.disabled}
             onClick={handleIconClick}
           >
-            <Icon id={Icon.ids.calendar} />
+            <CalendarIcon />
           </button>
 
           {props.error && (
             <div {...styles.error(themeName, props)}>
-              <Icon id={Icon.ids.warning} />
+              <WarningIcon />
             </div>
           )}
         </div>

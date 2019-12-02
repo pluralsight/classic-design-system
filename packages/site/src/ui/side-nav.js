@@ -3,7 +3,7 @@ import React from 'react'
 import { withRouter } from 'next/router.js'
 
 import * as core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {CloseIcon} from '@pluralsight/ps-design-system-icon'
 
 import { withHeadings } from './content.js'
 import Link from './link.js'
@@ -274,7 +274,7 @@ const Logo = _ => (
 const Close = props => (
   <div className="close">
     <button className="button" onClick={props.onCloseClick}>
-      <Icon id={Icon.ids.close} />
+      <CloseIcon />
     </button>
 
     <style jsx>{`
@@ -332,6 +332,16 @@ const SideNav = withHeadings(props => (
       <NavLink href="/core/motion">Motion</NavLink>
       <NavLink href="/core/spacing">Spacing</NavLink>
       <NavLink href="/core/typography">Typography</NavLink>
+    </Group>
+
+    <Group>
+      <GroupTitle>Patterns</GroupTitle>
+      <NavLink href="/patterns/iconography" headings={props.headings}>
+        Iconography
+      </NavLink>
+      <NavLink href="/patterns/voice-tone" headings={props.headings}>
+        Voice & tone
+      </NavLink>
     </Group>
 
     <Group>
@@ -456,12 +466,9 @@ const SideNav = withHeadings(props => (
     </Group>
 
     <Group>
-      <GroupTitle>Patterns</GroupTitle>
-      <NavLink href="/patterns/iconography" headings={props.headings}>
-        Iconography
-      </NavLink>
-      <NavLink href="/patterns/voice-tone" headings={props.headings}>
-        Voice & tone
+      <GroupTitle>Utils</GroupTitle>
+      <NavLink href="/utils/icon" headings={props.headings}>
+        Icon CLI
       </NavLink>
     </Group>
 

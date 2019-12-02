@@ -1,6 +1,6 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {CheckIcon, ChannelIcon, PlayIcon, UserIcon, PencilIcon} from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 import * as Text from '@pluralsight/ps-design-system-text'
 
@@ -57,7 +57,7 @@ export default _ => (
           ]),
           PropTypes.row([
             'icon',
-            <code>Icon</code>,
+            <code>*Icon</code>,
             null,
             null,
             'Icon component'
@@ -93,7 +93,7 @@ export default _ => (
       <P>Buttons come in three standard visual styles.</P>
       <Example.React
         themeToggle
-        includes={{ Button, Icon }}
+        includes={{ Button }}
         codes={Object.keys(Button.appearances).map(
           a => `<Button appearance={Button.appearances.${a}}>Click me</Button>`
         )}
@@ -102,23 +102,23 @@ export default _ => (
       <P>Buttons come in four standard sizes. The default size is 'medium'.</P>
       <Example.React
         themeToggle
-        includes={{ Button, Icon }}
+        includes={{ Button }}
         codes={Object.keys(Button.sizes).map(
           s => `<Button size={Button.sizes.${s}}>Click me</Button>`
         )}
       />
-      <SectionHeading>Icon</SectionHeading>
+      <SectionHeading>Icon </SectionHeading>
       <P>
         Buttons may include an icon to the left or right of the label. Read more{' '}
         <Link href="/components/icon">icon docs</Link>.
       </P>
       <Example.React
         themeToggle
-        includes={{ Button, Icon }}
+        includes={{ Button, CheckIcon, ChannelIcon, PlayIcon }}
         codes={[
-          `<Button icon={<Icon id={Icon.ids.check} />}>With Icon</Button>`,
-          `<Button icon={<Icon id={Icon.ids.channel} />} appearance={Button.appearances.stroke}>With Icon</Button>`,
-          `<Button icon={<Icon id={Icon.ids.play} />} iconAlign={Button.iconAligns.right} appearance={Button.appearances.flat}>Aligned to Right</Button>`
+          `<Button icon={<CheckIcon />}>With Icon</Button>`,
+          `<Button icon={<ChannelIcon />} appearance={Button.appearances.stroke}>With Icon</Button>`,
+          `<Button icon={<PlayIcon />} iconAlign={Button.iconAligns.right} appearance={Button.appearances.flat}>Aligned to Right</Button>`
         ]}
       />
       <SectionHeading>Icon only</SectionHeading>
@@ -132,12 +132,12 @@ export default _ => (
       </P>
       <Example.React
         themeToggle
-        includes={{ Button, Icon }}
+        includes={{ Button, UserIcon }}
         codes={[
-          `<Button icon={<Icon id={Icon.ids.user} />} title="Profile" />`,
+          `<Button icon={<UserIcon />} title="Profile" />`,
           `
 <Button
-  icon={<Icon id={Icon.ids.user} />}
+  icon={<UserIcon />}
   appearance={Button.appearances.flat}
   title="Profile"
 />`
@@ -150,12 +150,12 @@ export default _ => (
       </P>
       <Example.React
         themeToggle
-        includes={{ Button, Icon }}
+        includes={{ Button, PencilIcon }}
         codes={[
           `<Button disabled>Disabled</Button>`,
           `<Button disabled appearance={Button.appearances.stroke}>Disabled</Button>`,
           `<Button disabled appearance={Button.appearances.flat}>Disabled</Button>`,
-          `<Button disabled icon={<Icon id={Icon.ids.pencil} />}>Disabled</Button>`
+          `<Button disabled icon={<PencilIcon />}>Disabled</Button>`
         ]}
       />
       <SectionHeading>As Link</SectionHeading>
@@ -167,10 +167,10 @@ export default _ => (
       </P>
       <Example.React
         themeToggle
-        includes={{ Button, Icon }}
+        includes={{ Button, PencilIcon }}
         codes={[
           `<Button href="https://duckduckgo.com?q=pluralsight" target="_blank">Link</Button>`,
-          `<Button href="https://duckduckgo.com?q=pluralsight%20icons" target="_blank" icon={<Icon id={Icon.ids.pencil} />}>Link with icon</Button>`
+          `<Button href="https://duckduckgo.com?q=pluralsight%20icons" target="_blank" icon={<PencilIcon />}>Link with icon</Button>`
         ]}
       />
       <SectionHeading>With react-router</SectionHeading>
@@ -222,11 +222,11 @@ const ButtonLink = withRouter(props => (
       <Example.React
         themeToggle
         orient="vertical"
-        includes={{ Button }}
+        includes={{ Button, UserIcon }}
         codes={[
           `
 <Button
-  icon={<Icon id={Icon.ids.user} />}
+  icon={<UserIcon />}
   loading
 >Loading...</Button>
 `

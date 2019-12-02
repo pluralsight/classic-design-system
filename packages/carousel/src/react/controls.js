@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {CaretLeftIcon, CaretRightIcon, sizes as iconSizes} from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index.js'
@@ -47,7 +47,7 @@ export function Control(props) {
   const isPrev = props.direction === Control.directions.prev
   const visible = isPrev ? activePage > 0 : activePage !== pageCount - 1
 
-  const iconId = isPrev ? Icon.ids.caretLeft : Icon.ids.caretRight
+  const IconCaret = isPrev ? CaretLeftIcon : CaretRightIcon
   const handleClick = combineFns(isPrev ? prev : next, props.onClick)
 
   return (
@@ -59,7 +59,7 @@ export function Control(props) {
         {...(!visible && { hidden: true, tabIndex: -1 })}
         onClick={handleClick}
       >
-        <Icon aria-hidden id={iconId} size={Icon.sizes.medium} />
+        <IconCaret aria-hidden size={iconSizes.medium} />
       </button>
     </li>
   )

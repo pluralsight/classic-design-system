@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {CaretDownIcon} from '@pluralsight/ps-design-system-icon'
 
 import { useHideLabels } from './context.js'
 import { List, CollapsibleList } from './list.js'
@@ -149,7 +149,7 @@ Tier1.Header = forwardRef((props, ref) => {
     >
       {icon &&
         cloneElement(icon, {
-          size: Icon.sizes.medium,
+          size: CaretDownIcon.sizes.medium,
           ...styles.itemIcon(),
           ...(active ? { 'data-active': true } : {})
         })}
@@ -157,9 +157,8 @@ Tier1.Header = forwardRef((props, ref) => {
       <span {...styles.tierHeaderLabel(null, { hideLabels })}>{children}</span>
 
       {collapsible && (
-        <Icon
-          size={Icon.sizes.small}
-          id={Icon.ids.caretDown}
+        <CaretDownIcon
+          size={CaretDownIcon.sizes.small}
           {...styles.tierHeaderLabelIcon(null, { collapsed })}
         />
       )}

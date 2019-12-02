@@ -1,7 +1,8 @@
 import React from 'react'
 
 import * as core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon'
+import Icon, {colors, widths, sizes, CodeIcon, PathIcon} from '@pluralsight/ps-design-system-icon'
+import * as Icons from '@pluralsight/ps-design-system-icon/dist/cjs/react/icons'
 import * as Text from '@pluralsight/ps-design-system-text'
 
 import {
@@ -28,12 +29,15 @@ const CommonSet = props => (
       .
     </P>
     <div className="icons">
-      {Object.keys(Icon.ids).map((id, i) => (
+      {Object.keys(Icons).map((id, i) => {
+        const Comp = Icons[id]
+        return (
         <div className="icon" key={i}>
-          <Icon id={id} size={Icon.sizes.large} />
+          <Comp size={sizes.large} className="svg"/>
           <div className="iconLabel">{id}</div>
         </div>
-      ))}
+        )
+      })}
     </div>
     <style jsx>{`
       .icons {
@@ -45,14 +49,17 @@ const CommonSet = props => (
       }
       .icon {
         display: flex;
+        flex-direction: column;
         width: 165px;
         height: 48px;
         align-items: center;
         margin: ${core.layout.spacingLarge};
       }
       .iconLabel {
-        margin-left: ${core.layout.spacingMedium};
         font-size: ${core.type.fontSizeXSmall};
+      }
+      .svg {
+        flex: 0;
       }
     `}</style>
   </div>
@@ -70,24 +77,15 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Icon from '@pluralsight/ps-design-system-icon'
+        {`import {CodeIcon, /* OtherNamedIcons */} from '@pluralsight/ps-design-system-icon'`}
       </Code>
 
       <PropTypes
         props={[
           PropTypes.row([
-            'id',
-            <span>
-              <code>Icon.ids</code> enum
-            </span>,
-            null,
-            null,
-            'id for svg to render'
-          ]),
-          PropTypes.row([
             'color',
             <span>
-              <code>Icon.colors</code> enum
+              <code>*Icon.colors</code> enum
             </span>,
             null,
             null,
@@ -95,24 +93,24 @@ export default _ => (
           ]),
           PropTypes.row([
             'size',
-            PropTypes.union(Icon.sizes),
+            PropTypes.union(sizes),
             null,
             null,
             <span>
-              icon size (from <code>Icon.sizes</code>)
+              icon size (from <code>*Icon.sizes</code>)
             </span>
           ])
         ]}
       />
 
       <SectionHeading>Size</SectionHeading>
-      <P>Icons can take on {Object.keys(Icon.sizes).length} standard sizes.</P>
+      <P>Icons can take on {Object.keys(sizes).length} standard sizes.</P>
       <Example.React
-        includes={{ Icon }}
-        codes={Object.keys(Icon.sizes).map(
+        includes={{ CodeIcon }}
+        codes={Object.keys(sizes).map(
           s =>
             `
-<Icon id={Icon.ids.code} size={Icon.sizes.${s}} />
+<CodeIcon size={CodeIcon.sizes.${s}} />
 `
         )}
       />
@@ -124,18 +122,18 @@ export default _ => (
         fill.
       </P>
       <Example.React
-        includes={{ Icon }}
+        includes={{ PathIcon }}
         codes={[
           `
 <div style={{ color: '#ffffff' }}>
-  <Icon id={Icon.ids.path} size={Icon.sizes.large} />
+  <PathIcon size={CodeIcon.sizes.large} />
 </div>
 `,
           `
-<Icon style={{ color: 'red' }} id={Icon.ids.path} size={Icon.sizes.large} />
+<PathIcon style={{ color: 'red' }} size={CodeIcon.sizes.large} />
 `,
           `
-<Icon id={Icon.ids.path} color={Icon.colors.orange} size={Icon.sizes.large} />
+<PathIcon color={PathIcon.colors.orange} size={CodeIcon.sizes.large} />
  `
         ]}
       />
@@ -143,16 +141,19 @@ export default _ => (
       <CommonSet />
 
       <SectionHeading>Custom SVG</SectionHeading>
+      <Code language="javascript">
+        import Icon from '@pluralsight/ps-design-system-icon'
+      </Code>
       <P>
         What an icon that adheres to the style guide but contains your own
         custom SVG? Pass the inline SVG instead of an `id`.
       </P>
 
       <Example.React
-        includes={{ Icon }}
+        includes={{ sizes, Icon }}
         codes={[
           `
-<Icon size={Icon.sizes.large} >
+<Icon size={sizes.large} >
   <svg viewBox="0 0 256 230" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
     <path d="M.754 114.75c0 19.215 18.763 37.152 48.343 47.263-5.907 29.737-1.058 53.706 15.136 63.045 16.645 9.6 41.443 2.955 64.98-17.62 22.943 19.744 46.13 27.514 62.31 18.148 16.63-9.627 21.687-35.221 15.617-65.887 30.81-10.186 48.044-25.481 48.044-44.949 0-18.769-18.797-35.006-47.979-45.052 6.535-31.933.998-55.32-15.867-65.045-16.259-9.376-39.716-1.204-62.996 19.056C104.122 2.205 80.897-4.36 64.05 5.392 47.806 14.795 43.171 39.2 49.097 69.487 20.515 79.452.754 96.057.754 114.75z" fill="#FFF"/>
     <path d="M201.025 79.674a151.364 151.364 0 0 0-7.274-2.292 137.5 137.5 0 0 0 1.124-4.961c5.506-26.728 1.906-48.26-10.388-55.348-11.787-6.798-31.065.29-50.535 17.233a151.136 151.136 0 0 0-5.626 5.163 137.573 137.573 0 0 0-3.744-3.458c-20.405-18.118-40.858-25.752-53.139-18.643-11.776 6.817-15.264 27.06-10.307 52.39a150.91 150.91 0 0 0 1.67 7.484c-2.894.822-5.689 1.698-8.363 2.63-23.922 8.34-39.2 21.412-39.2 34.97 0 14.004 16.4 28.05 41.318 36.566a128.44 128.44 0 0 0 6.11 1.91 147.813 147.813 0 0 0-1.775 8.067c-4.726 24.89-1.035 44.653 10.71 51.428 12.131 6.995 32.491-.195 52.317-17.525 1.567-1.37 3.14-2.823 4.715-4.346a148.34 148.34 0 0 0 6.108 5.573c19.204 16.525 38.17 23.198 49.905 16.405 12.12-7.016 16.058-28.247 10.944-54.078-.39-1.973-.845-3.988-1.355-6.04 1.43-.422 2.833-.858 4.202-1.312 25.904-8.582 42.757-22.457 42.757-36.648 0-13.607-15.77-26.767-40.174-35.168z" fill="#53C1DE"/>
@@ -161,13 +162,13 @@ export default _ => (
   </svg>
 </Icon>
 `,
-          `<Icon size={Icon.sizes.large} style={{ color: 'red' }} >
+          `<Icon size={sizes.large} style={{ color: 'red' }} >
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.48609 6.48609 2 12 2C17.5139 2 22 6.48609 22 12C22 17.5139 17.5139 22 12 22C6.48609 22 2 17.5139 2 12ZM4 12C4 7.58887 7.58887 4 12 4C16.4111 4 20 7.58887 20 12C20 16.4111 16.4111 20 12 20C7.58887 20 4 16.4111 4 12ZM6.64645 13.0607C6.45118 12.8654 6.45118 12.5488 6.64645 12.3536L7.35355 11.6464C7.54882 11.4512 7.8654 11.4512 8.06066 11.6464L10 13.5858L15.9393 7.64645C16.1346 7.45118 16.4512 7.45118 16.6464 7.64645L17.3536 8.35355C17.5488 8.54882 17.5488 8.8654 17.3536 9.06066L10.3536 16.0607C10.1583 16.2559 9.84171 16.2559 9.64645 16.0607L6.64645 13.0607Z" />
   </svg>
 </Icon>
 `,
-          `<Icon size={Icon.sizes.medium}>
+          `<Icon size={sizes.medium}>
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12ZM4 12C4 16.41 7.59 20 12 20C16.41 20 20 16.41 20 12C20 7.59 16.41 4 12 4C7.59 4 4 7.59 4 12ZM12.5 7C12.7761 7 13 7.22386 13 7.5V11H16.5C16.7761 11 17 11.2239 17 11.5V12.5C17 12.7761 16.7761 13 16.5 13H13V16.5C13 16.7761 12.7761 17 12.5 17H11.5C11.2239 17 11 16.7761 11 16.5V13H7.5C7.22386 13 7 12.7761 7 12.5V11.5C7 11.2239 7.22386 11 7.5 11H11V7.5C11 7.22386 11.2239 7 11.5 7H12.5Z" />
   </svg>

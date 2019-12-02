@@ -1,6 +1,6 @@
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {CaretDownIcon} from '@pluralsight/ps-design-system-icon'
 import Collapsible from '@pluralsight/ps-design-system-collapsible'
 import PropTypes from 'prop-types'
 import React, { useState, useEffect } from 'react'
@@ -87,7 +87,7 @@ const Drawer = ({
             {...styles.toggleButton(themeName)}
           >
             <div {...styles.rotatable(open)}>
-              <Icon id={Icon.ids.caretDown} />
+              <CaretDownIcon />
             </div>
           </button>
         </div>

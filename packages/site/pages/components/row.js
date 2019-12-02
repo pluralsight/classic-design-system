@@ -1,7 +1,7 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 
-import Icon from '@pluralsight/ps-design-system-icon'
+import {BookmarkIcon, MoreIcon} from '@pluralsight/ps-design-system-icon'
 import Row from '@pluralsight/ps-design-system-row'
 import Theme from '@pluralsight/ps-design-system-theme'
 
@@ -189,7 +189,7 @@ export default _ => (
             PropTypes.row([
               'icon',
               <span>
-                <code>Icon</code>
+                <code>*Icon</code>
               </span>,
               true,
               null,
@@ -214,7 +214,7 @@ export default _ => (
       <P>The size will determine certain base measurements.</P>
       <Example.React
         orient="vertical"
-        includes={{ Row, Icon }}
+        includes={{ Row }}
         themeToggle
         codes={[
           `
@@ -243,7 +243,7 @@ export default _ => (
       </P>
       <Example.React
         orient="vertical"
-        includes={{ Row, Icon }}
+        includes={{ Row, BookmarkIcon }}
         themeToggle
         codes={[
           `
@@ -268,7 +268,7 @@ export default _ => (
     </Row.ImageLink>
   }
   title="Linked image with other overlays"
-  actionBar={[<Row.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
+  actionBar={[<Row.Action key="bookmark" icon={<BookmarkIcon />} />]}
   fullOverlay={
     <Row.FullOverlayLink>
       <a href="https://google.com?q=full%20overlay" target="_blank">
@@ -288,7 +288,7 @@ export default _ => (
       </P>
       <Example.React
         orient="vertical"
-        includes={{ Row, Icon }}
+        includes={{ Row }}
         themeToggle
         codes={[
           `
@@ -319,7 +319,7 @@ export default _ => (
       <P>The title will grow indefinitely, never truncating.</P>
       <Example.React
         orient="vertical"
-        includes={{ Row, Icon }}
+        includes={{ Row }}
         themeToggle
         codes={[
           `
@@ -358,7 +358,7 @@ export default _ => (
       </P>
       <Example.React
         orient="vertical"
-        includes={{ Row, Icon }}
+        includes={{ Row }}
         themeToggle
         codes={[
           `
@@ -400,12 +400,12 @@ export default _ => (
       </P>
       <Example.React
         orient="vertical"
-        includes={{ Row, Icon }}
+        includes={{ Row, BookmarkIcon, MoreIcon }}
         themeToggle
         codes={[
           `
 <Row
-  actionBar={[<Row.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
+  actionBar={[<Row.Action key="bookmark" icon={<BookmarkIcon />} />]}
   title="Action bar appears on hover"
   image={<Row.Image src="/static/img/course2.jpg" />}
 />
@@ -414,8 +414,8 @@ export default _ => (
           `
 <Row
   actionBar={[
-    <Row.Action key="bookmark" icon={<Icon id="bookmark" />} />,
-    <Row.Action key="more" icon={<Icon id="more" />} />
+    <Row.Action key="bookmark" icon={<BookmarkIcon />} />,
+    <Row.Action key="more" icon={<MoreIcon />} />
   ]}
   title="Multiple actions"
   image={<Row.Image src="/static/img/course2.jpg" />}
@@ -425,8 +425,8 @@ export default _ => (
           `
 <Row
   actionBar={[
-    <Row.Action key="bookmark" icon={<Icon id="bookmark" />} />,
-    <Row.Action key="more" icon={<Icon id="more" />} />
+    <Row.Action key="bookmark" icon={<BookmarkIcon />} />,
+    <Row.Action key="more" icon={<MoreIcon />} />
   ]}
   actionBarVisible
   title="Action bar locked visible"
@@ -447,7 +447,7 @@ export default _ => (
       </P>
       <Example.React
         orient="vertical"
-        includes={{ Row, Icon }}
+        includes={{ Row, BookmarkIcon }}
         themeToggle
         codes={[
           `
@@ -472,7 +472,7 @@ export default _ => (
       <a href="https://pluralsight.com" target="_blank">Custom Link</a>
     </Row.FullOverlayLink>
   }
-  actionBar={[<Row.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
+  actionBar={[<Row.Action key="bookmark" icon={<BookmarkIcon />} />]}
   title="Combined with other overlays"
   image={<Row.Image src="/static/img/course3.jpg" />}
 />

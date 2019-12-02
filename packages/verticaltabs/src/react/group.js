@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Collapsible from '@pluralsight/ps-design-system-collapsible'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {CaretDownIcon} from '@pluralsight/ps-design-system-icon'
 
 import { List } from './list.js'
 
@@ -155,9 +155,8 @@ const CollapsibleGroupHeader = forwardRef((props, ref) => {
       >
         <span {...styles.headerLabel()}>{children}</span>
 
-        <Icon
-          size={Icon.sizes.small}
-          id={Icon.ids.caretDown}
+        <CaretDownIcon
+          size={CaretDownIcon.sizes.small}
           {...styles.rotatable(open)}
         />
       </button>

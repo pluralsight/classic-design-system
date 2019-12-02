@@ -5,7 +5,7 @@ import Avatar from '@pluralsight/ps-design-system-avatar'
 import { BelowRight } from '@pluralsight/ps-design-system-position'
 import Card from '@pluralsight/ps-design-system-card'
 import Carousel from '@pluralsight/ps-design-system-carousel'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {MoreIcon} from '@pluralsight/ps-design-system-icon'
 import Note from '@pluralsight/ps-design-system-note'
 import * as Text from '@pluralsight/ps-design-system-text'
 
@@ -440,7 +440,7 @@ function PortalExample() {
         Carousel,
         Card,
         data: MOCK_DATA,
-        Icon,
+        MoreIcon,
         Toggle
       }}
       outputStyle={{ paddingBottom: '96px' }}
@@ -475,7 +475,7 @@ function PortalExample() {
             >
               <Card.Action
                 title="See more"
-                icon={<Icon id={Icon.ids.more} />}
+                icon={<MoreIcon />}
                 onClick={toggle}
               />
             </BelowRight>

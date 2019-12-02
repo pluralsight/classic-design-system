@@ -1,7 +1,7 @@
 import React from 'react'
 
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
-import Icon from '@pluralsight/ps-design-system-icon'
+import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import * as Text from '@pluralsight/ps-design-system-text'
 import * as core from '@pluralsight/ps-design-system-core'
 
@@ -140,7 +140,7 @@ export default _ => (
           ],
           'VerticalTabs.Tier1.Header': [
             PropTypes.row(['children', 'string', null, null, 'header text']),
-            PropTypes.row(['icon', 'Icon', null, null, 'Icon component'])
+            PropTypes.row(['icon', '*Icon', null, null, 'Icon component'])
           ],
           'VerticalTabs.Tier2': [
             PropTypes.row([
@@ -160,7 +160,7 @@ export default _ => (
           ],
           'VerticalTabs.Tier2.Header': [
             PropTypes.row(['children', 'string', null, null, 'header text']),
-            PropTypes.row(['icon', 'Icon', null, null, 'Icon component'])
+            PropTypes.row(['icon', '*Icon', null, null, 'Icon component'])
           ]
         }}
       />
@@ -215,7 +215,7 @@ return (
       <Example.React
         themeToggle
         orient="vertical"
-        includes={{ VerticalTabs, Icon }}
+        includes={{ VerticalTabs }}
         codes={[
           `
   <VerticalTabs>
@@ -245,7 +245,7 @@ return (
       <Example.React
         themeToggle
         orient="vertical"
-        includes={{ VerticalTabs, Icon }}
+        includes={{ VerticalTabs, PlaceholderIcon }}
         codes={[
           `
   <VerticalTabs>
@@ -287,9 +287,7 @@ return (
         >
           <VerticalTabs.Tier1
             header={
-              <VerticalTabs.Tier1.Header
-                icon={<Icon id={Icon.ids.placeholder} />}
-              >
+              <VerticalTabs.Tier1.Header icon={<PlaceholderIcon />}>
                 Header Link
               </VerticalTabs.Tier1.Header>
             }
@@ -394,7 +392,7 @@ export const FLOW_NAV = [
     collapsible: false,
     header: {
       href: '#',
-      icon: <Icon id={Icon.ids.placeholder} />,
+      icon: <PlaceholderIcon />,
       id: 'reports-home',
       title: 'Reports Home'
     },
@@ -403,7 +401,7 @@ export const FLOW_NAV = [
   {
     collapsible: true,
     header: {
-      icon: <Icon id={Icon.ids.placeholder} />,
+      icon: <PlaceholderIcon />,
       id: 'operational-reports',
       title: 'Operational Reports'
     },
@@ -443,7 +441,7 @@ export const FLOW_NAV = [
   {
     collapsible: true,
     header: {
-      icon: <Icon id={Icon.ids.placeholder} />,
+      icon: <PlaceholderIcon />,
       id: 'review-collaborate',
       title: 'Review & Collaborate'
     },
@@ -478,7 +476,7 @@ export const FLOW_NAV = [
   {
     collapsible: true,
     header: {
-      icon: <Icon id={Icon.ids.placeholder} />,
+      icon: <PlaceholderIcon />,
       id: 'delivery',
       title: 'Delivery'
     },
@@ -492,7 +490,7 @@ export const FLOW_NAV = [
   {
     collapsible: true,
     header: {
-      icon: <Icon id={Icon.ids.placeholder} />,
+      icon: <PlaceholderIcon />,
       id: 'fundamentals',
       title: 'Fundamentals'
     },

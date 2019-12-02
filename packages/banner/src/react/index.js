@@ -4,7 +4,7 @@ import React from 'react'
 
 import BaseButton from '@pluralsight/ps-design-system-button'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {CloseIcon} from '@pluralsight/ps-design-system-icon'
 
 import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
@@ -27,7 +27,7 @@ const Banner = React.forwardRef((props, ref) => {
       <div {...styles.text(props)}>{props.children}</div>
       {props.onClick && (
         <button {...styles.dismiss(props)} onClick={onClick}>
-          <Icon id={Icon.ids.close} />
+          <CloseIcon />
         </button>
       )}
     </div>

@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
 import * as core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
 
 import ActionMenu from '../index.js'
@@ -31,13 +31,13 @@ storiesOf('menu items', module)
   ))
   .add('with icons', _ => (
     <ActionMenu>
-      <ActionMenu.Item icon={<Icon id={Icon.ids.channel} />}>
+      <ActionMenu.Item icon={<Icon.ChannelIcon />}>
         One item
       </ActionMenu.Item>
-      <ActionMenu.Item icon={<Icon id={Icon.ids.path} />}>
+      <ActionMenu.Item icon={<Icon.PathIcon />}>
         Two item
       </ActionMenu.Item>
-      <ActionMenu.Item icon={<Icon id={Icon.ids.report} />}>
+      <ActionMenu.Item icon={<Icon.ReportIcon />}>
         Three item
       </ActionMenu.Item>
     </ActionMenu>
@@ -56,7 +56,7 @@ storiesOf('menu items', module)
   ))
   .add('long text with icon', _ => (
     <ActionMenu>
-      <ActionMenu.Item icon={<Icon id={Icon.ids.channel} />}>
+      <ActionMenu.Item icon={<Icon.ChannelIcon />}>
         One item that has text that goes on forever and onward into the
         universes yet to be
       </ActionMenu.Item>
