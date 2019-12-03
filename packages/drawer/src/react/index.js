@@ -1,44 +1,45 @@
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import * as glamor from 'glamor'
-import Icon from '@pluralsight/ps-design-system-icon'
-import Collapsible from '@pluralsight/ps-design-system-collapsible'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React, { useState, useEffect } from 'react'
+
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import Icon from '@pluralsight/ps-design-system-icon'
+import Collapsible from '@pluralsight/ps-design-system-collapsible'
 import {
   names as themeNames,
   withTheme
 } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 
 if (typeof window !== 'undefined') require('element-closest')
 
 const styles = {
-  drawer: themeName => glamor.css(css[`.psds-drawer.psds-theme--${themeName}`]),
+  drawer: themeName => css(stylesheet[`.psds-drawer.psds-theme--${themeName}`]),
   base: isOpen =>
-    glamor.css(
-      css['.psds-drawer__base'],
-      isOpen && css['.psds-drawer__base--isOpen']
+    compose(
+      css(stylesheet['.psds-drawer__base']),
+      isOpen && css(stylesheet['.psds-drawer__base--isOpen'])
     ),
   panel: ({ isOpen, themeName }) =>
-    glamor.css(
-      css['.psds-drawer__panel'],
-      isOpen && css[`.psds-drawer__panel.psds-theme--${themeName}`]
+    compose(
+      css(stylesheet['.psds-drawer__panel']),
+      isOpen && css(stylesheet[`.psds-drawer__panel.psds-theme--${themeName}`])
     ),
-  panelContent: () => glamor.css(css[`.psds-drawer__panel-content`]),
+  panelContent: () => css(stylesheet[`.psds-drawer__panel-content`]),
   rotatable: isRotated =>
-    glamor.css(
-      css['.psds-drawer__rotatable'],
-      isRotated && css['.psds-drawer__rotatable--isOpen']
+    compose(
+      css(stylesheet['.psds-drawer__rotatable']),
+      isRotated && css(stylesheet['.psds-drawer__rotatable--isOpen'])
     ),
   toggleButtonContainer: () =>
-    glamor.css(css[`.psds-drawer__toggle-button-container`]),
+    css(stylesheet[`.psds-drawer__toggle-button-container`]),
   toggleButton: themeName =>
-    glamor.css(
-      css[`.psds-drawer__toggle-button`],
-      css[`.psds-drawer__toggle-button.psds-theme--${themeName}`]
+    compose(
+      css(stylesheet[`.psds-drawer__toggle-button`]),
+      css(stylesheet[`.psds-drawer__toggle-button.psds-theme--${themeName}`])
     ),
-  collapsible: () => glamor.css(css['.psds-drawer__collapsible'])
+  collapsible: () => css(stylesheet['.psds-drawer__collapsible'])
 }
 const Drawer = ({
   startOpen,
