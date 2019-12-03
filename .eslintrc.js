@@ -30,7 +30,7 @@ module.exports = {
     {
       files: ['packages/site/pages/**/*.js', '**/__stories__/*.js'],
       rules: {
-        'react/jsx-key': [IGNORE]
+        'react/jsx-key': [WARNING]
       }
     }
   ]
