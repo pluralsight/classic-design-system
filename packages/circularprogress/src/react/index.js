@@ -1,16 +1,16 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 const radius = vars.style.width / 2 - vars.style.strokeWidth / 2
 const circumference = 2 * Math.PI * radius
-const spin = glamor.css.keyframes({
+const spin = css.keyframes({
   to: {
     transform: 'rotate(270deg)'
   }
@@ -18,24 +18,29 @@ const spin = glamor.css.keyframes({
 
 const styles = {
   circularprogress: (themeName, { size }) =>
-    glamor.css(css[`.psds-circularprogress--size-${size}`]),
-  svg: (themeName, { value }) =>
-    glamor.css({
-      ...css['.psds-circularprogress__svg'],
-      ...(typeof value === 'undefined'
-        ? css['.psds-circularprogress__svg--no-value']({ spin })
-        : null)
-    }),
+    css(stylesheet[`.psds-circularprogress--size-${size}`]),
+
+  svg: (themeName, { value }) => {
+    const noValue = typeof value === 'undefined'
+
+    return compose(
+      css(stylesheet['.psds-circularprogress__svg']),
+      noValue &&
+        css(stylesheet['.psds-circularprogress__svg--no-value']({ spin }))
+    )
+  },
+
   bg: themeName =>
-    glamor.css({
-      ...css['.psds-circularprogress__bg'],
-      ...css[`.psds-circularprogress__bg.psds-theme--${themeName}`]
-    }),
+    compose(
+      css(stylesheet['.psds-circularprogress__bg']),
+      css(stylesheet[`.psds-circularprogress__bg.psds-theme--${themeName}`])
+    ),
+
   fg: themeName =>
-    glamor.css({
-      ...css[`.psds-circularprogress__fg`],
-      ...css[`.psds-circularprogress__fg.psds-theme--${themeName}`]
-    })
+    compose(
+      css(stylesheet['.psds-circularprogress__fg']),
+      css(stylesheet[`.psds-circularprogress__fg.psds-theme--${themeName}`])
+    )
 }
 
 const CircularProgress = React.forwardRef((props, ref) => {
