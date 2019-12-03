@@ -22,6 +22,10 @@ const setTransitionEnabled = (enabled, element) => {
 }
 
 const waitForHeightTransitionToEnd = element => {
+  const isAlreadyAtTargetHeight =
+    element.style.height === `${element.getBoundingClientRect().height}px`
+  if (isAlreadyAtTargetHeight) return Promise.resolve()
+
   return new Promise(resolve => {
     element.addEventListener(
       'transitionend',
@@ -42,12 +46,15 @@ const updateOverflowStyle = ({ element, isOpen, isTransitioning = false }) => {
   }
 }
 
-const open = (element, isOpen) => {
+const isClosed = element => element.getBoundingClientRect().height === 0
+
+const open = element => {
   setHeightToAuto(element)
   updateOverflowStyle({ element, isOpen: true, isTransitioning: true })
-  return waitForHeightTransitionToEnd(element).then(() => {
-    if (isOpen) {
-      updateOverflowStyle(true, false)
+
+  waitForHeightTransitionToEnd(element).then(() => {
+    if (!isClosed(element)) {
+      updateOverflowStyle({ element, isOpen: true, isTransitioning: false })
       setTransitionEnabled(false, element)
       element.style.height = 'auto'
       forceRepaint(element)
@@ -56,7 +63,7 @@ const open = (element, isOpen) => {
   })
 }
 
-const close = (element, isOpen) => {
+const close = element => {
   setTransitionEnabled(false, element)
   element.style.height = window.getComputedStyle(element).height
   forceRepaint(element)
@@ -64,10 +71,9 @@ const close = (element, isOpen) => {
   setTransitionEnabled(true, element)
   element.style.height = '0px'
 
-  return waitForHeightTransitionToEnd(element).then(() => {
-    if (!isOpen) {
-      updateOverflowStyle(false, false)
-    }
+  waitForHeightTransitionToEnd(element).then(() => {
+    if (isClosed(element))
+      updateOverflowStyle({ element, isOpen: false, isTransitioning: false })
   })
 }
 
@@ -75,16 +81,12 @@ const Collapsible = ({ isOpen, tagName, ...rest }) => {
   const containerElement = useRef()
 
   useEffect(() => {
-    if (isOpen)
-      setTimeout(
-        () =>
-          containerElement.current && open(containerElement.current, isOpen),
-        0
-      )
-    else {
-      containerElement.current.style.height = 0
-      containerElement.current && close(containerElement.current, isOpen)
-    }
+    setTimeout(() => {
+      const element = containerElement.current
+      if (!element) return
+
+      isOpen ? open(element) : close(element)
+    }, 0)
   }, [isOpen])
   const TagName = tagName
   return (
