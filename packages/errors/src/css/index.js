@@ -68,11 +68,12 @@ export default {
       paddingTop: '92px'
     },
 
-    // __text > h1
-    '.psds-error-page__text > h1': {
-      fontSize: core.type.fontSizeLarge,
-      lineHeight: core.type.lineHeightExtra,
-      fontWeight: core.type.fontWeightBook
+    '.psds-error-page__text': {
+      '& > h1': {
+        fontSize: core.type.fontSizeLarge,
+        fontWeight: core.type.fontWeightBook,
+        lineHeight: core.type.lineHeightExtra
+      }
     }
   }
 }
