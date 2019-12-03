@@ -1,7 +1,7 @@
 import { fireEvent, render } from '@testing-library/react'
 import React from 'react'
 
-import Icon from '@pluralsight/ps-design-system-icon'
+import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 
 import Button from '../index.js'
 
@@ -22,7 +22,7 @@ describe('Button', () => {
         <Button
           disabled
           onClick={handleClick}
-          icon={<Icon id={Icon.ids.check} data-testid="icon" />}
+          icon={<CheckIcon data-testid="icon" />}
         >
           Can't Be Clicked
         </Button>

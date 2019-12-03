@@ -1,7 +1,7 @@
 import * as glamor from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
-import Icon from '@pluralsight/ps-design-system-icon'
+import Icon, { WarningIcon } from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
@@ -67,23 +67,18 @@ const CaretDown = _ => (
   </svg>
 )
 const useMeasuredWidth = ref => {
-  const width = ref.current
-    ? ref.current.getBoundingClientRect().width
-    : 'auto'
-  const maxWidth = width === 'auto' || width < 320
-    ? 320
-    : width
+  const width = ref.current ? ref.current.getBoundingClientRect().width : 'auto'
+  const maxWidth = width === 'auto' || width < 320 ? 320 : width
   return {
     maxWidth,
-    width,
-  };
+    width
+  }
 }
 const Dropdown = React.forwardRef((props, forwardedRef) => {
   const themeName = useTheme()
   const allProps = { ...props, themeName }
   const [isKeyboarding, setKeyboarding] = React.useState(false)
   const [isOpen, setOpen] = React.useState(false)
-  
 
   const itemMatchingValue = React.useMemo(
     _ => {
@@ -181,11 +176,11 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
       allProps.menu
     )
   }
-  
+
   const ref = forwardedRef || React.createRef()
   const { style, className, ...buttonProps } = allProps
-  const longestMenuItemState = getLongestMenuLabelState() 
-  const { width, maxWidth} = useMeasuredWidth(ref)
+  const longestMenuItemState = getLongestMenuLabelState()
+  const { width, maxWidth } = useMeasuredWidth(ref)
   return (
     <>
       {isOpen && (
@@ -201,7 +196,11 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
           <div {...styles.label(allProps)}>{allProps.label}</div>
         )}
         <div {...styles.fieldContainer(allProps)}>
-          <Halo error={allProps.error} gapSize={Halo.gapSizes.small} {...styles.halo()}>
+          <Halo
+            error={allProps.error}
+            gapSize={Halo.gapSizes.small}
+            {...styles.halo()}
+          >
             <div {...styles.fieldAligner(allProps)}>
               <button
                 {...filterReactProps(buttonProps, { tagName: 'button' })}
@@ -226,7 +225,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
           </Halo>
           {allProps.error && (
             <div {...styles.error(allProps)}>
-              <Icon id={Icon.ids.warning} />
+              <WarningIcon />
             </div>
           )}
         </div>
@@ -245,7 +244,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
                 ...allProps.menu.props.style,
                 minWidth: '0',
                 maxWidth,
-                width,
+                width
               }
             })}
           </div>

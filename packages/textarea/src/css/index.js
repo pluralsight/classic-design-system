@@ -1,4 +1,4 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import { colors, layout, type } from '@pluralsight/ps-design-system-core'
 import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
@@ -17,12 +17,12 @@ export default {
     minHeight: '104px',
     width: '100%',
     borderRadius: '2px',
-    background: core.colors.bone,
-    fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightStandard,
-    fontWeight: core.type.fontWeightBook,
-    color: core.colors.gray03,
-    padding: `${core.layout.spacingXSmall} ${core.layout.spacingMedium}`,
+    background: colors.bone,
+    fontSize: type.fontSizeSmall,
+    lineHeight: type.lineHeightStandard,
+    fontWeight: type.fontWeightBook,
+    color: colors.gray03,
+    padding: `${layout.spacingXSmall} ${layout.spacingMedium}`,
     border: 'none'
   },
   '.psds-text-area__field:focus': {
@@ -35,8 +35,8 @@ export default {
     border: '1px solid transparent'
   },
   [`.psds-text-area__field.psds-theme--${themeNames.light}`]: {
-    background: core.colors.white,
-    border: `1px solid ${core.colors.gray02}`
+    background: colors.white,
+    border: `1px solid ${colors.gray02}`
   },
 
   '.psds-text-area__field-container': {
@@ -47,35 +47,35 @@ export default {
 
   '.psds-text-area__label': {
     width: '100%',
-    color: core.colors.bone,
-    fontSize: core.type.fontSizeSmall,
+    color: colors.bone,
+    fontSize: type.fontSizeSmall,
     lineHeight: '16px',
-    fontWeight: core.type.fontWeightMedium,
-    paddingBottom: core.layout.spacingXSmall
+    fontWeight: type.fontWeightMedium,
+    paddingBottom: layout.spacingXSmall
   },
   [`.psds-text-area__label.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray05
+    color: colors.gray05
   },
 
   '.psds-text-area__sub-label': {
-    color: core.colors.gray02,
-    fontSize: core.type.fontSizeXSmall,
+    color: colors.gray02,
+    fontSize: type.fontSizeXSmall,
     lineHeight: '16px',
-    fontWeight: core.type.fontWeightMedium,
-    paddingTop: core.layout.spacingXSmall
+    fontWeight: type.fontWeightMedium,
+    paddingTop: layout.spacingXSmall
   },
   [`.psds-text-area__sub-label.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03
+    color: colors.gray03
   },
 
   '.psds-text-area__error': {
     position: 'absolute',
-    right: `calc(-1 * (${iconWidths.medium} + ${core.layout.spacingXSmall}))`,
+    right: `calc(-1 * (${iconWidths.medium} + ${layout.spacingXSmall}))`,
     display: 'flex',
     alignItems: 'flex-start',
     height: '100%',
-    paddingTop: core.layout.spacingXSmall,
-    marginLeft: core.layout.spacingXSmall,
-    color: core.colors.red
+    paddingTop: layout.spacingXSmall,
+    marginLeft: layout.spacingXSmall,
+    color: colors.red
   }
 }

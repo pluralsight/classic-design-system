@@ -3,7 +3,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Avatar from '@pluralsight/ps-design-system-avatar'
-import Icon from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   arrayOfMaxLength,
@@ -182,7 +181,7 @@ const Action = React.forwardRef((props, ref) => {
 
 Action.displayName = 'Note.Action'
 Action.propTypes = {
-  icon: elementOfType(Icon).isRequired,
+  icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired
 }
 
@@ -191,11 +190,11 @@ function AvatarLink(props) {
   const avatar = link.props.children
 
   return (
-    <React.Fragment>
+    <>
       {React.cloneElement(link, {
         children: React.cloneElement(avatar, { size: Avatar.sizes.xSmall })
       })}
-    </React.Fragment>
+    </>
   )
 }
 AvatarLink.propTypes = {

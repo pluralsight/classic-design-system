@@ -3,7 +3,7 @@ import { compose, css } from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Icon from '@pluralsight/ps-design-system-icon'
+import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 
 import stylesheet from '../css/index.js'
 
@@ -59,7 +59,7 @@ SuggestionsMenu.propTypes = {
 function MenuItem({ children, selected, value, ...rest }) {
   return (
     <button {...rest} {...styles.menuItem()}>
-      <Icon id={Icon.ids.check} {...styles.menuItemIcon({ selected })} />
+      <CheckIcon {...styles.menuItemIcon({ selected })} />
 
       {children}
     </button>

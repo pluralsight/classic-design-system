@@ -1,7 +1,7 @@
 import * as glamor from 'glamor'
 import Button from '@pluralsight/ps-design-system-button'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import Icon from '@pluralsight/ps-design-system-icon'
+import { CaretLeftIcon } from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -19,7 +19,7 @@ const Breadcrumb = React.forwardRef((props, ref) => {
         appearance={Button.appearances.flat}
         href={href}
         disabled={disabled}
-        icon={<Icon id={Icon.ids.caretLeft} />}
+        icon={<CaretLeftIcon />}
         loading={loading}
         onClick={onClick}
         ref={ref}

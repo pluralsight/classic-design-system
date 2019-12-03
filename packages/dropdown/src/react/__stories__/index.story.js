@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import Dropdown from '../index.js'
 
@@ -111,10 +111,12 @@ storiesOf('whitelist', module)
           <Dropdown
             placeholder="Change me"
             label="Thing to change"
-            style={{width: 150}}
+            style={{ width: 150 }}
             menu={
               <ActionMenu>
-                <ActionMenu.Item value="one">One item One item One item One item One item One item</ActionMenu.Item>
+                <ActionMenu.Item value="one">
+                  One item One item One item One item One item One item
+                </ActionMenu.Item>
                 <ActionMenu.Item value="two">Two item</ActionMenu.Item>
                 <ActionMenu.Item value="three">Three item</ActionMenu.Item>
               </ActionMenu>
@@ -250,7 +252,7 @@ storiesOf('menu', module)
           <ActionMenu.Item>One item</ActionMenu.Item>
           <ActionMenu.Item>Two item</ActionMenu.Item>
           <ActionMenu.Item>Three item</ActionMenu.Item>
-          <ActionMenu.Item icon={<Icon id={Icon.ids.check} />}>
+          <ActionMenu.Item icon={<Icon.CheckIcon />}>
             Three and the amazing item
           </ActionMenu.Item>
         </ActionMenu>
@@ -282,7 +284,7 @@ storiesOf('menu', module)
               <ActionMenu.Item>One item</ActionMenu.Item>
               <ActionMenu.Item>Two item</ActionMenu.Item>
               <ActionMenu.Item>Three item</ActionMenu.Item>
-              <ActionMenu.Item icon={<Icon id={Icon.ids.check} />}>
+              <ActionMenu.Item icon={<Icon.CheckIcon />}>
                 Three and the amazing item
               </ActionMenu.Item>
             </ActionMenu>
@@ -298,7 +300,7 @@ storiesOf('menu', module)
               <ActionMenu.Item>One item</ActionMenu.Item>
               <ActionMenu.Item>Two item</ActionMenu.Item>
               <ActionMenu.Item>Three item</ActionMenu.Item>
-              <ActionMenu.Item icon={<Icon id={Icon.ids.check} />}>
+              <ActionMenu.Item icon={<Icon.CheckIcon />}>
                 Three and the amazing item
               </ActionMenu.Item>
             </ActionMenu>
@@ -330,7 +332,7 @@ storiesOf('menu', module)
           <ActionMenu.Item>Two item</ActionMenu.Item>
           <ActionMenu.Item>Three item</ActionMenu.Item>
           <ActionMenu.Item
-            icon={<Icon id={Icon.ids.check} />}
+            icon={<Icon.CheckIcon />}
             nested={
               <ActionMenu>
                 <ActionMenu.Item>3 - One item</ActionMenu.Item>
@@ -359,7 +361,7 @@ storiesOf('menu', module)
             Three item
           </ActionMenu.Item>
           <ActionMenu.Item
-            icon={<Icon id={Icon.ids.check} />}
+            icon={<Icon.CheckIcon />}
             nested={
               <ActionMenu>
                 <ActionMenu.Item onClick={action('three - One')}>

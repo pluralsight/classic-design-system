@@ -71,7 +71,8 @@ module.exports = {
       '/core/spacing': { page: '/core/spacing' },
       '/core/typography': { page: '/core/typography' },
       '/patterns/iconography': { page: '/patterns/iconography' },
-      '/patterns/voice-tone': { page: '/patterns/voice-tone' }
+      '/patterns/voice-tone': { page: '/patterns/voice-tone' },
+      '/utils/icon': { page: '/utils/icon' }
     }
   },
   webpack(config) {

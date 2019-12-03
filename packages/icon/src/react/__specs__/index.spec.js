@@ -4,6 +4,7 @@ import React from 'react'
 import * as vars from '../../vars/index.js'
 
 import Icon from '../index.js'
+import * as Icons from '../icons/index.js'
 
 describe('Icon', () => {
   describe('.colors', () => {
@@ -14,27 +15,14 @@ describe('Icon', () => {
     it('should be exposed', () => expect(Icon.sizes).toEqual(vars.sizes))
   })
 
-  describe('.ids', () => {
-    it('should be exposed', () => expect(Icon.ids).toEqual(vars.ids))
-  })
-
   it('forwards refs', () => {
     const ref = React.createRef()
     render(<Icon ref={ref} />)
     expect(ref.current).not.toBeNull()
   })
 
-  describe.each(Object.values(Icon.ids))('with id "%s"', id => {
-    it('should render', () => {
-      const { getByTestId } = render(<Icon data-testid={id} id={id} />)
-      expect(getByTestId(id)).not.toBeNull()
-    })
-  })
-
   it('should allow overriding the aria-label of the svg', () => {
-    const { container } = render(
-      <Icon id={Icon.ids.search} aria-label="test label" />
-    )
+    const { container } = render(<Icons.SearchIcon aria-label="test label" />)
     const svg = container.querySelector('svg')
     expect(svg).toHaveAttribute('aria-label', 'test label')
   })

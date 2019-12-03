@@ -3,7 +3,7 @@ import React from 'react'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Avatar from '@pluralsight/ps-design-system-avatar'
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 import Link from '@pluralsight/ps-design-system-link'
 import { Below } from '@pluralsight/ps-design-system-position'
 import * as Text from '@pluralsight/ps-design-system-text'
@@ -69,7 +69,7 @@ storiesOf('Note', module)
         </Text.Heading>
       }
       message={
-        <React.Fragment>
+        <>
           <Text.P>
             Be so very light. Be a gentle whisper. If these lines aren't
             straight, your water's going to run right out of your painting and
@@ -81,7 +81,7 @@ storiesOf('Note', module)
             Just beat the devil out of it. Work that paint. A beautiful little
             sunset. This painting comes right out of your heart.
           </Text.P>
-        </React.Fragment>
+        </>
       }
     />
   ))
@@ -89,7 +89,7 @@ storiesOf('Note', module)
     <NoteWithDefaults
       heading={<h1>Bob Ross</h1>}
       message={
-        <React.Fragment>
+        <>
           <Text.P>
             Be so very light. Be a gentle whisper. If these lines aren't
             straight, your water's going to run right out of your painting and
@@ -101,7 +101,7 @@ storiesOf('Note', module)
             Just beat the devil out of it. Work that paint. A beautiful little
             sunset. This painting comes right out of your heart.
           </Text.P>
-        </React.Fragment>
+        </>
       }
     />
   ))
@@ -128,25 +128,21 @@ storiesOf('Note/actions', module)
   .addDecorator(fn => <ConstrainWidth>{fn()}</ConstrainWidth>)
   .add('visible on hover', _ => (
     <NoteWithDefaults
-      actionBar={[
-        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
-      ]}
+      actionBar={[<Note.Action icon={<Icon.MoreIcon />} title="More" />]}
       actionBarVisible={false}
     />
   ))
   .add('one action', _ => (
     <NoteWithDefaults
-      actionBar={[
-        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
-      ]}
+      actionBar={[<Note.Action icon={<Icon.MoreIcon />} title="More" />]}
       actionBarVisible
     />
   ))
   .add('two actions', _ => (
     <NoteWithDefaults
       actionBar={[
-        <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
-        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+        <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
+        <Note.Action icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
     />
@@ -155,8 +151,8 @@ storiesOf('Note/actions', module)
     <NoteWithDefaults
       heading="This is probably the greatest thing that's ever happened in my life"
       actionBar={[
-        <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
-        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+        <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
+        <Note.Action icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
     />
@@ -164,8 +160,8 @@ storiesOf('Note/actions', module)
   .add('without author', _ => (
     <NoteWithDefaults
       actionBar={[
-        <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
-        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+        <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
+        <Note.Action icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
       avatar={null}
@@ -175,8 +171,8 @@ storiesOf('Note/actions', module)
   .add('no author - long metadata', _ => (
     <NoteWithDefaults
       actionBar={[
-        <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
-        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+        <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
+        <Note.Action icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
       avatar={null}
@@ -187,8 +183,8 @@ storiesOf('Note/actions', module)
   .add('no author - no metadata', _ => (
     <NoteWithDefaults
       actionBar={[
-        <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
-        <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+        <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
+        <Note.Action icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
       avatar={null}
@@ -201,7 +197,7 @@ storiesOf('Note/actions', module)
       const [isOpen, setIsOpen] = React.useState(false)
 
       return (
-        <React.Fragment>
+        <>
           <NoteWithDefaults
             actionBar={[
               <Below
@@ -216,7 +212,7 @@ storiesOf('Note/actions', module)
                 }
               >
                 <Note.Action
-                  icon={<Icon id={Icon.ids.more} />}
+                  icon={<Icon.MoreIcon />}
                   onClick={_ => setIsOpen(!isOpen)}
                   title="More"
                 />
@@ -224,7 +220,7 @@ storiesOf('Note/actions', module)
             ]}
             actionBarVisible
           />
-        </React.Fragment>
+        </>
       )
     }
 

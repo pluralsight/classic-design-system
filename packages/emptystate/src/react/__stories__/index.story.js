@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 
-import EmptyState from '..'
+import EmptyState from '../index.js'
 
 const CustomIllustration = () => (
   <svg viewBox="0 0 128 128" aria-hidden role="img">
@@ -53,7 +53,7 @@ const EmptyStateWithDefaults = props => {
 const SearchInput = props => <TextInput {...props} />
 SearchInput.defaultProps = {
   appearance: TextInput.appearances.subtle,
-  icon: <Icon id={Icon.ids.search} />,
+  icon: <Icon.SearchIcon />,
   placeholder: 'Find Something'
 }
 
@@ -181,7 +181,7 @@ storiesOf('EmptyState/actions', module)
   ))
 
 const Show = ({ children, if: showIf, placeholder = null }) => (
-  <React.Fragment>{showIf ? children : placeholder}</React.Fragment>
+  <>{showIf ? children : placeholder}</>
 )
 Show.propTypes = {
   children: PropTypes.node.isRequired,
@@ -193,7 +193,7 @@ const MountStory = props => {
   const [shown, setShown] = React.useState(true)
 
   return (
-    <React.Fragment>
+    <>
       <button
         onClick={() => setShown(!shown)}
         style={{ position: 'fixed', top: 20, left: 20 }}
@@ -201,7 +201,7 @@ const MountStory = props => {
         {shown ? 'unmount' : 'mount'}
       </button>
       <Show if={shown}>{props.children}</Show>
-    </React.Fragment>
+    </>
   )
 }
 MountStory.propTypes = {

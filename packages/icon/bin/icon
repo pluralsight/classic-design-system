@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+const arg = require('arg');
+const args = arg({
+  '--dest': String,
+  '--src': String,
+  '--ext': String,
+  '-d': '--dest',
+  '-s': '--src',
+  '-e': '--ext',
+});
+const {
+  _: extra,
+  '--dest': dest,
+  '--src': src,
+  '--ext': ext,
+} = args;
+
+const { buildSvgIcon } = require('../cli/buildSvgIcon')
+buildSvgIcon({dest, src, ext, core: extra.includes('core')})

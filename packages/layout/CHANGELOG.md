@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@5.0.3...@pluralsight/ps-design-system-layout@5.0.4) (2019-12-02)
+
+
+### Bug Fixes
+
+* **layout:** now generates css and sccs files ([22c49e4](https://github.com/pluralsight/design-system/commit/22c49e431d43331987d794348174323b760b3269))
+
+
+
+
+
 ## [5.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@5.0.2...@pluralsight/ps-design-system-layout@5.0.3) (2019-11-06)
 
 

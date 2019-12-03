@@ -1,7 +1,11 @@
 import React from 'react'
 
 import Avatar from '@pluralsight/ps-design-system-avatar'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {
+  MoreIcon,
+  PencilIcon,
+  BookmarkIcon
+} from '@pluralsight/ps-design-system-icon'
 import Link from '@pluralsight/ps-design-system-link'
 import Note from '@pluralsight/ps-design-system-note'
 import * as Text from '@pluralsight/ps-design-system-text'
@@ -58,9 +62,7 @@ export default _ => (
             PropTypes.row([
               'avatar',
               <span>
-                <code>Avatar</code>
-                {' | '}
-                <code>Note.AvatarLink</code>
+                <code>Avatar</code>|<code>Note.AvatarLink</code>
               </span>,
               null,
               null,
@@ -69,9 +71,7 @@ export default _ => (
             PropTypes.row([
               'heading',
               <span>
-                <code>string</code>
-                {' | '}
-                <code>node</code>
+                <code>string</code>|<code>node</code>
               </span>,
               null,
               null,
@@ -87,9 +87,7 @@ export default _ => (
             PropTypes.row([
               'metadata',
               <span>
-                <code>string[]</code>
-                {' | '}
-                <code>node[]</code>
+                <code>string[]</code>|<code>node[]</code>
               </span>,
               null,
               null,
@@ -143,12 +141,12 @@ export default _ => (
       <Example.React
         themeToggle
         themeName="light"
-        includes={{ Avatar, Note, Icon }}
+        includes={{ Avatar, Note, MoreIcon }}
         codes={[
           `<Note.List>
   <Note
     actionBar={[
-      <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+      <Note.Action icon={<MoreIcon />} title="More" />
     ]}
     avatar={<Avatar name="Mark Twain" src="//placebear.com/128/128" />}
     heading="Mark Twain"
@@ -160,7 +158,7 @@ export default _ => (
 
   <Note
     actionBar={[
-      <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+      <Note.Action icon={<MoreIcon />} title="More" />
     ]}
     avatar={<Avatar name="Samuel Lanhorne Clemens" src="//placebear.com/128/128" />}
     heading="Samuel Lanhorne Clemens"
@@ -172,7 +170,7 @@ export default _ => (
 
   <Note
   actionBar={[
-    <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+    <Note.Action icon={<MoreIcon />} title="More" />
   ]}
     avatar={<Avatar name="Mark Twain" src="//placebear.com/128/128" />}
     heading="Mark Twain"
@@ -249,12 +247,12 @@ export default _ => (
       <Example.React
         themeToggle
         themeName="light"
-        includes={{ Avatar, Note }}
+        includes={{ Avatar, Note, MoreIcon, PencilIcon }}
         codes={[
           `<Note
   actionBar={[
-    <Note.Action icon={<Icon id={Icon.ids.pencil} />} title="Edit" />,
-    <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+    <Note.Action icon={<PencilIcon />} title="Edit" />,
+    <Note.Action icon={<MoreIcon />} title="More" />
   ]}
   actionBarVisible
   avatar={
@@ -278,12 +276,12 @@ export default _ => (
       <Example.React
         themeToggle
         themeName="light"
-        includes={{ Note, Link }}
+        includes={{ Note, Link, BookmarkIcon, MoreIcon }}
         codes={[
           `<Note
   actionBar={[
-    <Note.Action icon={<Icon id={Icon.ids.bookmark} />} title="Bookmark" />,
-    <Note.Action icon={<Icon id={Icon.ids.more} />} title="More" />
+    <Note.Action icon={<BookmarkIcon />} title="Bookmark" />,
+    <Note.Action icon={<MoreIcon />} title="More" />
   ]}
   actionBarVisible
   message={(

@@ -6,7 +6,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import DatePicker from '@pluralsight/ps-design-system-datepicker'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import Form from '@pluralsight/ps-design-system-form'
-import Icon from '@pluralsight/ps-design-system-icon'
+import { CloseIcon, CaretRightIcon } from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import Tag from '@pluralsight/ps-design-system-tag'
 import * as Text from '@pluralsight/ps-design-system-text'
@@ -37,9 +37,11 @@ class TagExample extends React.Component {
     this.state = { tags: ['javascript', 'flowtype', 'static-types'] }
     this.handleClick = this.handleClick.bind(this)
   }
+
   handleClick(tag) {
     this.setState({ tags: this.state.tags.filter(t => t !== tag) })
   }
+
   render() {
     return (
       <div>
@@ -53,12 +55,7 @@ class TagExample extends React.Component {
           >
             <Tag
               icon={
-                <Icon
-                  id={Icon.ids.close}
-                  why
-                  he
-                  onClick={this.handleClick.bind(this, tag)}
-                />
+                <CloseIcon why he onClick={this.handleClick.bind(this, tag)} />
               }
             >
               {tag}
@@ -76,6 +73,7 @@ class CheckboxExample extends React.Component {
     this.state = { values: {} }
     this.handleCheck = this.handleCheck.bind(this)
   }
+
   handleCheck(evt, checked, value, name) {
     if (checked) {
       this.setState({ values: { ...this.state.values, [name]: value } })
@@ -84,6 +82,7 @@ class CheckboxExample extends React.Component {
       this.setState({ values })
     }
   }
+
   render() {
     const features = Object.keys(this.state.values)
     const checked = name => features.indexOf(name) > -1
@@ -121,9 +120,11 @@ class SwitchExample extends React.Component {
     this.state = { checked: false }
     this.handleClick = this.handleClick.bind(this)
   }
+
   handleClick(checked) {
     this.setState({ checked })
   }
+
   render() {
     const { state } = this
     return (
@@ -144,7 +145,7 @@ const Comp = props => (
         <span className="desc">{props.desc}</span>
         <span className="link">
           <TextLink href={props.href}>Docs</TextLink>
-          <Icon id={Icon.ids.caretRight} size={Icon.sizes.small} />
+          <CaretRightIcon size={CaretRightIcon.sizes.small} />
         </span>
       </div>
     </div>
@@ -241,12 +242,14 @@ class InAppExample extends React.Component {
     this.handleChange = this.handleChange.bind(this)
     this.reset = this.reset.bind(this)
   }
+
   handleChange(evt) {
     const { name, value } = evt.target
     this.setState({
       [name]: value
     })
   }
+
   handleSubmit(evt) {
     evt.preventDefault()
     const errors = validate(this.state)
@@ -265,9 +268,11 @@ class InAppExample extends React.Component {
       })
     }
   }
+
   reset(evt) {
     this.setState(initialState)
   }
+
   render() {
     const { state } = this
     const errorMsg = name => state.errors[name]
@@ -582,7 +587,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        {`import Form from '@pluralsight/ps-design-system-form'`}
+        import Form from '@pluralsight/ps-design-system-form'
       </Code>
 
       <SectionHeading>In-app example</SectionHeading>

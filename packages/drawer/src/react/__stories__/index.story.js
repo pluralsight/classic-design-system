@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
 import Button from '@pluralsight/ps-design-system-button'
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 import Row from '@pluralsight/ps-design-system-row'
 import * as Text from '@pluralsight/ps-design-system-text'
 
@@ -53,6 +53,7 @@ class PreventToggleDrawerStory extends React.Component {
     this.state = { isOpen: false }
     this.handleToggle = this.handleToggle.bind(this)
   }
+
   handleToggle(isOpen, evt) {
     const isCaret =
       evt &&
@@ -63,6 +64,7 @@ class PreventToggleDrawerStory extends React.Component {
       this.setState({ isOpen })
     }
   }
+
   render() {
     return (
       <div>
@@ -126,9 +128,7 @@ storiesOf('drawer', module)
     <Drawer
       base={
         <Row
-          actionBar={[
-            <Row.Action key="iHeartCats" icon={<Icon id="more" />} />
-          ]}
+          actionBar={[<Row.Action key="iHeartCats" icon={<Icon.MoreIcon />} />]}
           actionBarVisible
           image={<Row.Image src="https://cataas.com/cat" />}
           metadata1={['Kitten McCatbuns', '23 hours of cuteness']}
@@ -147,7 +147,7 @@ storiesOf('drawer', module)
           actionBar={[
             <Row.Action
               key="iHeartCats"
-              icon={<Icon id="more" />}
+              icon={<Icon.MoreIcon />}
               onClick={action('action')}
             />
           ]}

@@ -3,7 +3,10 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import Icon from '@pluralsight/ps-design-system-icon'
+import Icon, {
+  StarFillIcon,
+  StarIcon
+} from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index.js'
@@ -93,12 +96,10 @@ function Star(props) {
       onMouseLeave={handleLeave}
     >
       {props.appearance === APPEARANCES.full && (
-        <Icon id={Icon.ids.starFill} size={iconSize} />
+        <StarFillIcon size={iconSize} />
       )}
 
-      {props.appearance === APPEARANCES.empty && (
-        <Icon id={Icon.ids.star} size={iconSize} />
-      )}
+      {props.appearance === APPEARANCES.empty && <StarIcon size={iconSize} />}
 
       {props.appearance === APPEARANCES.half && (
         <HalfStarIcon size={iconSize} />

@@ -5,7 +5,7 @@ import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 import Theme from '@pluralsight/ps-design-system-theme'
 
 import Button from '../index.js'
@@ -31,29 +31,21 @@ Object.keys(Button.sizes).forEach(size =>
 const iconStory = storiesOf('Button / icon', module)
 Object.keys(Button.appearances).forEach(app =>
   iconStory.add(app, _ => (
-    <Button
-      key={app}
-      appearance={app}
-      icon={<Icon key={app} id={Icon.ids.check} />}
-    >
+    <Button key={app} appearance={app} icon={<Icon.CheckIcon key={app} />}>
       With Icon
     </Button>
   ))
 )
 Object.keys(Button.iconAligns).forEach(iconAlign =>
   iconStory.add(iconAlign, _ => (
-    <Button
-      key={iconAlign}
-      iconAlign={iconAlign}
-      icon={<Icon id={Icon.ids.check} />}
-    >
+    <Button key={iconAlign} iconAlign={iconAlign} icon={<Icon.CheckIcon />}>
       With Icon
     </Button>
   ))
 )
 Object.keys(Button.sizes).forEach(size =>
   iconStory.add(size, _ => (
-    <Button key={size} size={size} icon={<Icon id={Icon.ids.check} />}>
+    <Button key={size} size={size} icon={<Icon.CheckIcon />}>
       With Icon
     </Button>
   ))
@@ -65,14 +57,14 @@ Object.keys(Button.appearances).forEach(app =>
         key={`${app} ${size}`}
         appearance={app}
         size={size}
-        icon={<Icon id={Icon.ids.check} />}
+        icon={<Icon.CheckIcon />}
       />
     ))
   )
 )
 iconStory.add('vertically aligned rows', _ => (
   <div>
-    <Button icon={<Icon id={Icon.ids.check} />}>With icon</Button>
+    <Button icon={<Icon.CheckIcon />}>With icon</Button>
     <Button>Without icon</Button>
   </div>
 ))
@@ -96,7 +88,7 @@ disabledStory.add('all', _ => (
 ))
 
 disabledStory.add('with icon', _ => (
-  <Button disabled icon={<Icon id={Icon.ids.pencil} />}>
+  <Button disabled icon={<Icon.PencilIcon />}>
     Disabled
   </Button>
 ))
@@ -106,7 +98,7 @@ storiesOf('Button / as link', module)
     <Button href="https://duckduckgo.com">Click as link</Button>
   ))
   .add('with icon', _ => (
-    <Button href="https://duckduckgo.com" icon={<Icon id={Icon.ids.pencil} />}>
+    <Button href="https://duckduckgo.com" icon={<Icon.PencilIcon />}>
       Click as link
     </Button>
   ))
@@ -123,21 +115,21 @@ storiesOf('Button / with ref', module).add('ref to handle focus', _ => {
 })
 
 storiesOf('Button / with onClick', module).add('clicks once', _ => (
-  <Button onClick={action('click count')} icon={<Icon id={Icon.ids.check} />}>
+  <Button onClick={action('click count')} icon={<Icon.CheckIcon />}>
     Clicks once
   </Button>
 ))
 
 storiesOf('Button / override styles', module)
   .add('with style', _ => (
-    <Button style={{ background: 'red' }} icon={<Icon id={Icon.ids.check} />}>
+    <Button style={{ background: 'red' }} icon={<Icon.CheckIcon />}>
       Red Button
     </Button>
   ))
   .add('with className', _ => {
     const className = glamor.css({ background: 'green !important' })
     return (
-      <Button className={className} icon={<Icon id={Icon.ids.check} />}>
+      <Button className={className} icon={<Icon.CheckIcon />}>
         Green Button
       </Button>
     )
@@ -183,11 +175,7 @@ Object.keys(Button.appearances).forEach(appearance =>
   ))
 )
 loadingExample.add('lone icon', _ => (
-  <Button
-    icon={<Icon id={Icon.ids.check} />}
-    size={Button.sizes.large}
-    loading
-  />
+  <Button icon={<Icon.CheckIcon />} size={Button.sizes.large} loading />
 ))
 
 class SwitchToLoading extends React.Component {

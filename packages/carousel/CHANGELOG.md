@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@5.0.3...@pluralsight/ps-design-system-carousel@6.0.0) (2019-12-02)
+
+
+### Features
+
+* **icon:** named icon exports and cli util ([15e1e08](https://github.com/pluralsight/design-system/commit/15e1e08a8f04ac6a0aa2bf3cf78efeb412cd6dd6))
+
+
+### BREAKING CHANGES
+
+* **icon:** Icons must be refactored to used Named exports inatad of id prop. Please see docs for example
+
+
+
+
+
 ## [5.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@5.0.2...@pluralsight/ps-design-system-carousel@5.0.3) (2019-11-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel

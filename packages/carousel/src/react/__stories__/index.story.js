@@ -1,12 +1,12 @@
 import { storiesOf } from '@storybook/react'
 
 import { css } from 'glamor'
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Card from '@pluralsight/ps-design-system-card'
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 import { BelowRight } from '@pluralsight/ps-design-system-position'
 
 import Carousel from '../index.js'
@@ -20,9 +20,7 @@ const MockCard = props => (
         </a>
       </Card.TextLink>
     }
-    image={
-      <Card.Image src={`//picsum.photos/680/320?image=42&gravity=north`} />
-    }
+    image={<Card.Image src="//picsum.photos/680/320?image=42&gravity=north" />}
     metadata1={[
       <Card.TextLink>
         <a href="#">meta</a>
@@ -83,7 +81,7 @@ storiesOf('Carousel/items', module)
       const remove = () => updateCount(count - 1)
 
       return (
-        <Fragment>
+        <>
           <Carousel>
             {new Array(count).fill(null).map((_, index) => (
               <MockItem key={index}>item: {index + 1}</MockItem>
@@ -104,7 +102,7 @@ storiesOf('Carousel/items', module)
 
             <button onClick={add}>add</button>
           </div>
-        </Fragment>
+        </>
       )
     }
 
@@ -171,7 +169,7 @@ const cardStories = storiesOf('Carousel/with Card', module)
 
 Object.values(Carousel.sizes).forEach(size => {
   cardStories.add(size, _ => (
-    <Fragment>
+    <>
       <Carousel size={size}>
         <MockCard metadata1={longStringsMetaData} titleText="Title Here" />
 
@@ -179,7 +177,7 @@ Object.values(Carousel.sizes).forEach(size => {
           <MockCard key={index} titleText={`Card ${index}`} />
         ))}
       </Carousel>
-    </Fragment>
+    </>
   ))
 })
 
@@ -240,7 +238,7 @@ storiesOf('Carousel/with ActionMenu', module)
                 >
                   <Card.Action
                     title="asdf"
-                    icon={<Icon id={Icon.ids.more} />}
+                    icon={<Icon.MoreIcon />}
                     onClick={_ => setOpen(!isOpen)}
                   />
                 </BelowRight>
@@ -326,7 +324,7 @@ storiesOf('Carousel/with ActionMenu', module)
                   >
                     <Card.Action
                       title="See more"
-                      icon={<Icon id={Icon.ids.more} />}
+                      icon={<Icon.MoreIcon />}
                       onClick={evt => handleClickMore(evt, course.id)}
                     />
                   </BelowRight>

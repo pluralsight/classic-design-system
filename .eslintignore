@@ -3,5 +3,5 @@ node_modules/*
 **/dist/*
 .cache
 .github
-examples
+examples/*
 scripts/create-component

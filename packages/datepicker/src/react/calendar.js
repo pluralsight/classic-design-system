@@ -3,7 +3,10 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {
+  CaretLeftIcon,
+  CaretRightIcon
+} from '@pluralsight/ps-design-system-icon'
 import Theme from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index.js'
@@ -108,7 +111,7 @@ function Calendar(props) {
         <div {...styles.switcher(props)}>
           <Button
             onClick={handlePrevClick}
-            icon={<Icon id={Icon.ids.caretLeft} />}
+            icon={<CaretLeftIcon />}
             size={Button.sizes.small}
             appearance={Button.appearances.flat}
           />
@@ -119,7 +122,7 @@ function Calendar(props) {
 
           <Button
             onClick={handleNextClick}
-            icon={<Icon id={Icon.ids.caretRight} />}
+            icon={<CaretRightIcon />}
             size={Button.sizes.small}
             appearance={Button.appearances.flat}
           />
