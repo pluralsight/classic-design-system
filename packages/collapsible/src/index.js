@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import React, { useEffect, useRef } from 'react'
+import React, { useCallback } from 'react'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 // NOTE: see https://stackoverflow.com/a/3485654
@@ -78,22 +78,19 @@ const close = element => {
 }
 
 const Collapsible = ({ isOpen, tagName, ...rest }) => {
-  const containerElement = useRef()
+  const containerRef = useCallback(
+    node => {
+      if (node) isOpen ? open(node) : close(node)
+    },
+    [isOpen]
+  )
 
-  useEffect(() => {
-    setTimeout(() => {
-      const element = containerElement.current
-      if (!element) return
-
-      isOpen ? open(element) : close(element)
-    }, 0)
-  }, [isOpen])
   const TagName = tagName
   return (
     <TagName
       aria-hidden={!isOpen}
       {...filterReactProps(rest)}
-      ref={containerElement}
+      ref={containerRef}
     />
   )
 }
