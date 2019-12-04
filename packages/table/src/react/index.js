@@ -1,4 +1,4 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -6,45 +6,56 @@ import { drawerDisplayName } from '@pluralsight/ps-design-system-drawer'
 import Icon from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const drawerDisplayNameRegex = new RegExp(drawerDisplayName)
 
 const styles = {
-  cell: ({ align, emphasis, themeName }) =>
-    glamor.css(
-      css['.psds-table__cell'],
-      css[`.psds-table__cell.psds-theme--${themeName}`],
-      emphasis && css['.psds-table__cell--emphasis'],
-      emphasis && css[`.psds-table__cell--emphasis.psds-theme--${themeName}`],
-      align && css[`.psds-table__cell--align-${align}`]
-    ),
-  columnHeader: ({ active, align, onClick, sort, themeName }) =>
-    glamor.css(
-      css['.psds-table__column-header'],
-      css[`.psds-table__column-header.psds-theme--${themeName}`],
-      css[`.psds-table__column-header--align-${align}`],
-      active && css['.psds-table__column-header--active'],
-      active &&
-        css[`.psds-table__column-header--active.psds-theme--${themeName}`],
-      onClick && css['.psds-table__column-header--onclick'],
-      onClick &&
-        css[`.psds-table__column-header--onclick.psds-theme--${themeName}`]
-    ),
-  columnHeaderIcon: _ => glamor.css(css['.psds-table__column-header__icon']),
-  row: ({ _tableHasDrawers, themeName }) =>
-    glamor.css(
-      css['.psds-table__row'],
-      css[`.psds-table__row--${themeName}`],
-      _tableHasDrawers && css['.psds-table__row--drawers']
-    ),
-  table: ({ inDrawer, themeName }) =>
-    glamor.css(
-      css['.psds-table'],
-      inDrawer && css['.psds-table--in-drawer'],
-      css[`.psds-table.psds-theme--${themeName}`]
+  cell: ({ align, emphasis, themeName }) => {
+    const label = 'psds-table__cell'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      emphasis && css(stylesheet[`.${label}--emphasis`]),
+      emphasis &&
+        css(stylesheet[`.${label}--emphasis.psds-theme--${themeName}`]),
+      align && css(stylesheet[`.${label}--align-${align}`])
     )
+  },
+  columnHeader: ({ active, align, onClick, sort, themeName }) => {
+    const label = 'psds-table__column-header'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      css(stylesheet[`.${label}--align-${align}`]),
+      active && css(stylesheet[`.${label}--active`]),
+      active && css(stylesheet[`.${label}--active.psds-theme--${themeName}`]),
+      onClick && css(stylesheet[`.${label}--onclick`]),
+      onClick && css(stylesheet[`.${label}--onclick.psds-theme--${themeName}`])
+    )
+  },
+  columnHeaderIcon: _ => css(stylesheet['.psds-table__column-header__icon']),
+  row: ({ _tableHasDrawers, themeName }) => {
+    const label = 'psds-table__row'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      _tableHasDrawers && css(stylesheet[`.${label}--drawers`])
+    )
+  },
+  table: ({ inDrawer, themeName }) => {
+    const label = 'psds-table'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      inDrawer && css(stylesheet[`.${label}--in-drawer`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    )
+  }
 }
 
 const SortIconAsc = _ => (
