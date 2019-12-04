@@ -1,23 +1,26 @@
-import * as glamor from 'glamor'
+import { compose, css, media } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
 import { equalColumnLayout as vars } from '../vars/index.js'
-import { equalColumnLayoutCSS as css } from '../css/index.js'
+import { equalColumnLayoutCSS as stylesheet } from '../css/index.js'
 
-const styleLayout = props => glamor.css(css['.psds-equal-column-layout'])
+const styleLayout = props => css(stylesheet['.psds-equal-column-layout'])
 
-const styleColumn = props =>
-  glamor.css(
-    css['.psds-equal-column-layout__column'],
-    css[`.psds-equal-column-layout__column--count-${props.count}`],
-    {
-      '@media (min-width: 769px)':
-        css['@media (min-width: 769px)'][
-          `.psds-equal-column-layout__column--count-${props.count}`
-        ]
-    }
+const styleColumn = props => {
+  const label = 'psds-equal-column-layout__column'
+  const count = `${label}--count-${props.count}`
+
+  return compose(
+    css(stylesheet[`.${label}`]),
+    css(stylesheet[`.${count}`]),
+
+    media(
+      '(min-width: 769px)',
+      css(stylesheet['@media (min-width: 769px)'][`.${count}`])
+    )
   )
+}
 
 const rmNonHtmlProps = props => {
   const { count, ...rest } = props
