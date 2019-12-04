@@ -1,4 +1,4 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -11,59 +11,59 @@ import {
 } from '@pluralsight/ps-design-system-prop-types'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 
 const styles = {
   note: themeName =>
-    glamor.compose(
-      glamor.css(css['.psds-note']),
-      glamor.css(css[`.psds-note.psds-theme--${themeName}`])
+    compose(
+      css(stylesheet['.psds-note']),
+      css(stylesheet[`.psds-note.psds-theme--${themeName}`])
     ),
   actionBar: (themeName, props) =>
-    glamor.compose(
-      glamor.css(css['.psds-note__action-bar']),
-      glamor.css(css[`.psds-note__action-bar.psds-theme--${themeName}`]),
+    compose(
+      css(stylesheet['.psds-note__action-bar']),
+      css(stylesheet[`.psds-note__action-bar.psds-theme--${themeName}`]),
       props.actionBarVisible &&
-        glamor.css(css[`.psds-note__action-bar--action-bar-visible`]),
+        css(stylesheet[`.psds-note__action-bar--action-bar-visible`]),
       props.hasMetadata &&
         !props.hasHeading &&
-        glamor.css(css['.psds-note__action-bar--meta-sibling'])
+        css(stylesheet['.psds-note__action-bar--meta-sibling'])
     ),
   action: themeName =>
-    glamor.compose(
-      glamor.css(css['.psds-note__action']),
-      glamor.css(css[`.psds-note__action.psds-theme--${themeName}`])
+    compose(
+      css(stylesheet['.psds-note__action']),
+      css(stylesheet[`.psds-note__action.psds-theme--${themeName}`])
     ),
-  aside: _ => glamor.css(css['.psds-note__aside']),
+  aside: _ => css(stylesheet['.psds-note__aside']),
   contents: themeName =>
-    glamor.compose(
-      glamor.css(css['.psds-note__contents']),
-      glamor.css(css[`.psds-note__contents.psds-theme--${themeName}`])
+    compose(
+      css(stylesheet['.psds-note__contents']),
+      css(stylesheet[`.psds-note__contents.psds-theme--${themeName}`])
     ),
-  footer: _ => glamor.css(css['.psds-note__footer']),
-  header: _ => glamor.css(css['.psds-note__header']),
+  footer: _ => css(stylesheet['.psds-note__footer']),
+  header: _ => css(stylesheet['.psds-note__header']),
   heading: themeName =>
-    glamor.compose(
-      glamor.css(css['.psds-note__heading']),
-      glamor.css(css[`.psds-note__heading.psds-theme--${themeName}`])
+    compose(
+      css(stylesheet['.psds-note__heading']),
+      css(stylesheet[`.psds-note__heading.psds-theme--${themeName}`])
     ),
-  noteList: _ => glamor.css(css['.psds-note__list']),
+  noteList: _ => css(stylesheet['.psds-note__list']),
   noteListItem: themeName =>
-    glamor.compose(
-      glamor.css(css['.psds-note__list-item']),
-      glamor.css(css[`.psds-note__list-item.psds-theme--${themeName}`])
+    compose(
+      css(stylesheet['.psds-note__list-item']),
+      css(stylesheet[`.psds-note__list-item.psds-theme--${themeName}`])
     ),
   metadata: themeName =>
-    glamor.compose(
-      glamor.css(css['.psds-note__metadata']),
-      glamor.css(css[`.psds-note__metadata.psds-theme--${themeName}`])
+    compose(
+      css(stylesheet['.psds-note__metadata']),
+      css(stylesheet[`.psds-note__metadata.psds-theme--${themeName}`])
     ),
   metadataDatum: themeName =>
-    glamor.compose(
-      glamor.css(css['.psds-note__metadata-datum']),
-      glamor.css(css[`.psds-note__metadata-datum.psds-theme--${themeName}`])
+    compose(
+      css(stylesheet['.psds-note__metadata-datum']),
+      css(stylesheet[`.psds-note__metadata-datum.psds-theme--${themeName}`])
     ),
-  metadataDot: _ => glamor.css(css['.psds-note__metadata-dot'])
+  metadataDot: _ => css(stylesheet['.psds-note__metadata-dot'])
 }
 
 export default function Note(props) {
@@ -191,11 +191,11 @@ function AvatarLink(props) {
   const avatar = link.props.children
 
   return (
-    <React.Fragment>
+    <>
       {React.cloneElement(link, {
         children: React.cloneElement(avatar, { size: Avatar.sizes.xSmall })
       })}
-    </React.Fragment>
+    </>
   )
 }
 AvatarLink.propTypes = {
