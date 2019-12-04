@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const ConditionalWrap = ({ shouldWrap, children, wrapper }) =>
-  shouldWrap ? wrapper(children) : <React.Fragment>{children}</React.Fragment>
+  shouldWrap ? wrapper(children) : <>{children}</>
 
 ConditionalWrap.propTypes = {
   shouldWrap: PropTypes.bool.isRequired,
