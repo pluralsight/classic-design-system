@@ -27,7 +27,11 @@ exports[`Storyshots customized styles item style 1`] = `
         }
         tabIndex="0"
       >
-        One item
+        <span
+          data-css-3fe0zw=""
+        >
+          One item
+        </span>
       </button>
     </div>
     <div
@@ -48,7 +52,11 @@ exports[`Storyshots customized styles item style 1`] = `
         }
         tabIndex="0"
       >
-        Two item
+        <span
+          data-css-3fe0zw=""
+        >
+          Two item
+        </span>
       </button>
     </div>
     <div
@@ -69,7 +77,11 @@ exports[`Storyshots customized styles item style 1`] = `
         }
         tabIndex="0"
       >
-        Three item
+        <span
+          data-css-3fe0zw=""
+        >
+          Three item
+        </span>
       </button>
     </div>
   </div>
@@ -98,7 +110,11 @@ exports[`Storyshots disabled item 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Enabled
+        <span
+          data-css-3fe0zw=""
+        >
+          Enabled
+        </span>
       </button>
     </div>
     <div
@@ -114,7 +130,11 @@ exports[`Storyshots disabled item 1`] = `
         role="menuitem"
         tabIndex="-1"
       >
-        Disabled
+        <span
+          data-css-3fe0zw=""
+        >
+          Disabled
+        </span>
       </button>
     </div>
     <div
@@ -130,7 +150,11 @@ exports[`Storyshots disabled item 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Enabled
+        <span
+          data-css-3fe0zw=""
+        >
+          Enabled
+        </span>
       </button>
     </div>
     <div
@@ -146,7 +170,11 @@ exports[`Storyshots disabled item 1`] = `
         role="menuitem"
         tabIndex="-1"
       >
-        Disabled
+        <span
+          data-css-3fe0zw=""
+        >
+          Disabled
+        </span>
       </button>
     </div>
   </div>
@@ -176,7 +204,11 @@ exports[`Storyshots disabled links 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Enabled
+        <span
+          data-css-3fe0zw=""
+        >
+          Enabled
+        </span>
       </a>
     </div>
     <div
@@ -191,7 +223,11 @@ exports[`Storyshots disabled links 1`] = `
         role="menuitem"
         tabIndex="-1"
       >
-        Disabled
+        <span
+          data-css-3fe0zw=""
+        >
+          Disabled
+        </span>
       </a>
     </div>
     <div
@@ -208,7 +244,11 @@ exports[`Storyshots disabled links 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Enabled
+        <span
+          data-css-3fe0zw=""
+        >
+          Enabled
+        </span>
       </a>
     </div>
     <div
@@ -223,7 +263,11 @@ exports[`Storyshots disabled links 1`] = `
         role="menuitem"
         tabIndex="-1"
       >
-        Disabled
+        <span
+          data-css-3fe0zw=""
+        >
+          Disabled
+        </span>
       </a>
     </div>
   </div>
@@ -252,7 +296,11 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
         role="menuitem"
         tabIndex="-1"
       >
-        Mult 1, disabled
+        <span
+          data-css-3fe0zw=""
+        >
+          Mult 1, disabled
+        </span>
       </button>
     </div>
     <div
@@ -268,7 +316,11 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
         role="menuitem"
         tabIndex="-1"
       >
-        Mult 2, disabled
+        <span
+          data-css-3fe0zw=""
+        >
+          Mult 2, disabled
+        </span>
       </button>
     </div>
   </div>
@@ -297,7 +349,11 @@ exports[`Storyshots disabled nested 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Enabled
+        <span
+          data-css-3fe0zw=""
+        >
+          Enabled
+        </span>
       </button>
     </div>
     <div
@@ -313,7 +369,11 @@ exports[`Storyshots disabled nested 1`] = `
         role="menuitem"
         tabIndex="-1"
       >
-        Nested but disabled
+        <span
+          data-css-3fe0zw=""
+        >
+          Nested but disabled
+        </span>
         <div
           data-css-14lvci6=""
         >
@@ -357,7 +417,11 @@ exports[`Storyshots disabled single, disabled 1`] = `
         role="menuitem"
         tabIndex="-1"
       >
-        Single, disabled
+        <span
+          data-css-3fe0zw=""
+        >
+          Single, disabled
+        </span>
       </button>
     </div>
   </div>
@@ -386,7 +450,11 @@ exports[`Storyshots dividers edge 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        One item
+        <span
+          data-css-3fe0zw=""
+        >
+          One item
+        </span>
       </button>
     </div>
     <div
@@ -419,7 +487,11 @@ exports[`Storyshots dividers sandwich 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        One item
+        <span
+          data-css-3fe0zw=""
+        >
+          One item
+        </span>
       </button>
     </div>
     <div
@@ -439,7 +511,11 @@ exports[`Storyshots dividers sandwich 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Two item
+        <span
+          data-css-3fe0zw=""
+        >
+          Two item
+        </span>
       </button>
     </div>
     <div
@@ -455,7 +531,11 @@ exports[`Storyshots dividers sandwich 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Three item
+        <span
+          data-css-3fe0zw=""
+        >
+          Three item
+        </span>
       </button>
     </div>
   </div>
@@ -485,7 +565,11 @@ exports[`Storyshots link a w/ href 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Links to web
+        <span
+          data-css-3fe0zw=""
+        >
+          Links to web
+        </span>
       </a>
     </div>
   </div>
@@ -514,7 +598,11 @@ exports[`Storyshots menu items long text 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        One item that has text that goes on forever and onward into the universes yet to be
+        <span
+          data-css-3fe0zw=""
+        >
+          One item that has text that goes on forever and onward into the universes yet to be
+        </span>
       </button>
     </div>
     <div
@@ -530,7 +618,11 @@ exports[`Storyshots menu items long text 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Another item that takes a long time to explain in the context of everything that is in a line.
+        <span
+          data-css-3fe0zw=""
+        >
+          Another item that takes a long time to explain in the context of everything that is in a line.
+        </span>
       </button>
     </div>
   </div>
@@ -576,7 +668,11 @@ exports[`Storyshots menu items long text with icon 1`] = `
             </svg>
           </div>
         </div>
-        One item that has text that goes on forever and onward into the universes yet to be
+        <span
+          data-css-3fe0zw=""
+        >
+          One item that has text that goes on forever and onward into the universes yet to be
+        </span>
       </button>
     </div>
   </div>
@@ -605,8 +701,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        0
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          0
+        </span>
       </button>
     </div>
     <div
@@ -622,8 +722,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        1
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          1
+        </span>
       </button>
     </div>
     <div
@@ -639,8 +743,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        2
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          2
+        </span>
       </button>
     </div>
     <div
@@ -656,8 +764,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        3
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          3
+        </span>
       </button>
     </div>
     <div
@@ -673,8 +785,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        4
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          4
+        </span>
       </button>
     </div>
     <div
@@ -690,8 +806,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        5
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          5
+        </span>
       </button>
     </div>
     <div
@@ -707,8 +827,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        6
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          6
+        </span>
       </button>
     </div>
     <div
@@ -724,8 +848,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        7
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          7
+        </span>
       </button>
     </div>
     <div
@@ -741,8 +869,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        8
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          8
+        </span>
       </button>
     </div>
     <div
@@ -758,8 +890,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        9
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          9
+        </span>
       </button>
     </div>
     <div
@@ -775,8 +911,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        10
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          10
+        </span>
       </button>
     </div>
     <div
@@ -792,8 +932,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        11
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          11
+        </span>
       </button>
     </div>
     <div
@@ -809,8 +953,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        12
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          12
+        </span>
       </button>
     </div>
     <div
@@ -826,8 +974,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        13
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          13
+        </span>
       </button>
     </div>
     <div
@@ -843,8 +995,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        14
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          14
+        </span>
       </button>
     </div>
     <div
@@ -860,8 +1016,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        15
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          15
+        </span>
       </button>
     </div>
     <div
@@ -877,8 +1037,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        16
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          16
+        </span>
       </button>
     </div>
     <div
@@ -894,8 +1058,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        17
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          17
+        </span>
       </button>
     </div>
     <div
@@ -911,8 +1079,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        18
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          18
+        </span>
       </button>
     </div>
     <div
@@ -928,8 +1100,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        19
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          19
+        </span>
       </button>
     </div>
     <div
@@ -945,8 +1121,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        20
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          20
+        </span>
       </button>
     </div>
     <div
@@ -962,8 +1142,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        21
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          21
+        </span>
       </button>
     </div>
     <div
@@ -979,8 +1163,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        22
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          22
+        </span>
       </button>
     </div>
     <div
@@ -996,8 +1184,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        23
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          23
+        </span>
       </button>
     </div>
     <div
@@ -1013,8 +1205,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        24
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          24
+        </span>
       </button>
     </div>
     <div
@@ -1030,8 +1226,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        25
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          25
+        </span>
       </button>
     </div>
     <div
@@ -1047,8 +1247,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        26
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          26
+        </span>
       </button>
     </div>
     <div
@@ -1064,8 +1268,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        27
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          27
+        </span>
       </button>
     </div>
     <div
@@ -1081,8 +1289,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        28
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          28
+        </span>
       </button>
     </div>
     <div
@@ -1098,8 +1310,12 @@ exports[`Storyshots menu items lots 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        index: 
-        29
+        <span
+          data-css-3fe0zw=""
+        >
+          index: 
+          29
+        </span>
       </button>
     </div>
   </div>
@@ -1128,7 +1344,11 @@ exports[`Storyshots menu items multiple 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        One item
+        <span
+          data-css-3fe0zw=""
+        >
+          One item
+        </span>
       </button>
     </div>
     <div
@@ -1144,7 +1364,11 @@ exports[`Storyshots menu items multiple 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Two item
+        <span
+          data-css-3fe0zw=""
+        >
+          Two item
+        </span>
       </button>
     </div>
     <div
@@ -1160,7 +1384,11 @@ exports[`Storyshots menu items multiple 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Three item
+        <span
+          data-css-3fe0zw=""
+        >
+          Three item
+        </span>
       </button>
     </div>
   </div>
@@ -1189,7 +1417,11 @@ exports[`Storyshots menu items null item 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        One item
+        <span
+          data-css-3fe0zw=""
+        >
+          One item
+        </span>
       </button>
     </div>
     <div
@@ -1205,7 +1437,11 @@ exports[`Storyshots menu items null item 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Skip to three item
+        <span
+          data-css-3fe0zw=""
+        >
+          Skip to three item
+        </span>
       </button>
     </div>
   </div>
@@ -1234,7 +1470,11 @@ exports[`Storyshots menu items one 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        One item
+        <span
+          data-css-3fe0zw=""
+        >
+          One item
+        </span>
       </button>
     </div>
   </div>
@@ -1280,7 +1520,11 @@ exports[`Storyshots menu items with icons 1`] = `
             </svg>
           </div>
         </div>
-        One item
+        <span
+          data-css-3fe0zw=""
+        >
+          One item
+        </span>
       </button>
     </div>
     <div
@@ -1313,7 +1557,11 @@ exports[`Storyshots menu items with icons 1`] = `
             </svg>
           </div>
         </div>
-        Two item
+        <span
+          data-css-3fe0zw=""
+        >
+          Two item
+        </span>
       </button>
     </div>
     <div
@@ -1346,7 +1594,11 @@ exports[`Storyshots menu items with icons 1`] = `
             </svg>
           </div>
         </div>
-        Three item
+        <span
+          data-css-3fe0zw=""
+        >
+          Three item
+        </span>
       </button>
     </div>
   </div>
@@ -1384,7 +1636,11 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
           role="menuitem"
           tabIndex="0"
         >
-          One
+          <span
+            data-css-3fe0zw=""
+          >
+            One
+          </span>
           <div
             data-css-14lvci6=""
           >
@@ -1415,7 +1671,11 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
           role="menuitem"
           tabIndex="0"
         >
-          Two
+          <span
+            data-css-3fe0zw=""
+          >
+            Two
+          </span>
         </button>
       </div>
     </div>
@@ -1454,7 +1714,11 @@ exports[`Storyshots nested origin bottomRight 1`] = `
           role="menuitem"
           tabIndex="0"
         >
-          One
+          <span
+            data-css-3fe0zw=""
+          >
+            One
+          </span>
           <div
             data-css-14lvci6=""
           >
@@ -1485,7 +1749,11 @@ exports[`Storyshots nested origin bottomRight 1`] = `
           role="menuitem"
           tabIndex="0"
         >
-          Two
+          <span
+            data-css-3fe0zw=""
+          >
+            Two
+          </span>
         </button>
       </div>
     </div>
@@ -1524,7 +1792,11 @@ exports[`Storyshots nested origin topLeft 1`] = `
           role="menuitem"
           tabIndex="0"
         >
-          One
+          <span
+            data-css-3fe0zw=""
+          >
+            One
+          </span>
           <div
             data-css-14lvci6=""
           >
@@ -1555,7 +1827,11 @@ exports[`Storyshots nested origin topLeft 1`] = `
           role="menuitem"
           tabIndex="0"
         >
-          Two
+          <span
+            data-css-3fe0zw=""
+          >
+            Two
+          </span>
         </button>
       </div>
     </div>
@@ -1594,7 +1870,11 @@ exports[`Storyshots nested origin topRight 1`] = `
           role="menuitem"
           tabIndex="0"
         >
-          One
+          <span
+            data-css-3fe0zw=""
+          >
+            One
+          </span>
           <div
             data-css-14lvci6=""
           >
@@ -1625,7 +1905,11 @@ exports[`Storyshots nested origin topRight 1`] = `
           role="menuitem"
           tabIndex="0"
         >
-          Two
+          <span
+            data-css-3fe0zw=""
+          >
+            Two
+          </span>
         </button>
       </div>
     </div>
@@ -1655,7 +1939,11 @@ exports[`Storyshots onClick flat 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        One item
+        <span
+          data-css-3fe0zw=""
+        >
+          One item
+        </span>
       </button>
     </div>
     <div
@@ -1671,7 +1959,11 @@ exports[`Storyshots onClick flat 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Two item
+        <span
+          data-css-3fe0zw=""
+        >
+          Two item
+        </span>
       </button>
     </div>
     <div
@@ -1687,7 +1979,11 @@ exports[`Storyshots onClick flat 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Three item
+        <span
+          data-css-3fe0zw=""
+        >
+          Three item
+        </span>
       </button>
     </div>
   </div>
@@ -1716,7 +2012,11 @@ exports[`Storyshots onClick nested 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        0
+        <span
+          data-css-3fe0zw=""
+        >
+          0
+        </span>
       </button>
     </div>
     <div
@@ -1732,7 +2032,11 @@ exports[`Storyshots onClick nested 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        1
+        <span
+          data-css-3fe0zw=""
+        >
+          1
+        </span>
         <div
           data-css-14lvci6=""
         >
@@ -1763,7 +2067,11 @@ exports[`Storyshots onClick nested 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        2
+        <span
+          data-css-3fe0zw=""
+        >
+          2
+        </span>
       </button>
     </div>
     <div
@@ -1779,7 +2087,11 @@ exports[`Storyshots onClick nested 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        3
+        <span
+          data-css-3fe0zw=""
+        >
+          3
+        </span>
       </button>
     </div>
     <div
@@ -1795,7 +2107,11 @@ exports[`Storyshots onClick nested 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        4
+        <span
+          data-css-3fe0zw=""
+        >
+          4
+        </span>
       </button>
     </div>
     <div
@@ -1811,7 +2127,11 @@ exports[`Storyshots onClick nested 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        5
+        <span
+          data-css-3fe0zw=""
+        >
+          5
+        </span>
       </button>
     </div>
     <div
@@ -1827,7 +2147,11 @@ exports[`Storyshots onClick nested 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        6
+        <span
+          data-css-3fe0zw=""
+        >
+          6
+        </span>
       </button>
     </div>
     <div
@@ -1843,7 +2167,11 @@ exports[`Storyshots onClick nested 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        7
+        <span
+          data-css-3fe0zw=""
+        >
+          7
+        </span>
       </button>
     </div>
     <div
@@ -1859,7 +2187,11 @@ exports[`Storyshots onClick nested 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        8
+        <span
+          data-css-3fe0zw=""
+        >
+          8
+        </span>
       </button>
     </div>
     <div
@@ -1875,7 +2207,11 @@ exports[`Storyshots onClick nested 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        9
+        <span
+          data-css-3fe0zw=""
+        >
+          9
+        </span>
       </button>
     </div>
     <div
@@ -1891,7 +2227,11 @@ exports[`Storyshots onClick nested 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        10
+        <span
+          data-css-3fe0zw=""
+        >
+          10
+        </span>
       </button>
     </div>
     <div
@@ -1907,7 +2247,11 @@ exports[`Storyshots onClick nested 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        11
+        <span
+          data-css-3fe0zw=""
+        >
+          11
+        </span>
       </button>
     </div>
     <div
@@ -1923,7 +2267,11 @@ exports[`Storyshots onClick nested 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        12
+        <span
+          data-css-3fe0zw=""
+        >
+          12
+        </span>
       </button>
     </div>
   </div>
@@ -1952,7 +2300,11 @@ exports[`Storyshots shouldFocusOnMount false 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        One item
+        <span
+          data-css-3fe0zw=""
+        >
+          One item
+        </span>
       </button>
     </div>
     <div
@@ -1968,7 +2320,11 @@ exports[`Storyshots shouldFocusOnMount false 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Two item
+        <span
+          data-css-3fe0zw=""
+        >
+          Two item
+        </span>
       </button>
     </div>
     <div
@@ -1984,7 +2340,11 @@ exports[`Storyshots shouldFocusOnMount false 1`] = `
         role="menuitem"
         tabIndex="0"
       >
-        Three item
+        <span
+          data-css-3fe0zw=""
+        >
+          Three item
+        </span>
       </button>
     </div>
   </div>
@@ -2048,7 +2408,11 @@ exports[`Storyshots with Position BelowLeft 1`] = `
               role="menuitem"
               tabIndex="0"
             >
-              One item
+              <span
+                data-css-3fe0zw=""
+              >
+                One item
+              </span>
             </button>
           </div>
           <div
@@ -2064,7 +2428,11 @@ exports[`Storyshots with Position BelowLeft 1`] = `
               role="menuitem"
               tabIndex="0"
             >
-              Two item
+              <span
+                data-css-3fe0zw=""
+              >
+                Two item
+              </span>
             </button>
           </div>
           <div
@@ -2080,7 +2448,11 @@ exports[`Storyshots with Position BelowLeft 1`] = `
               role="menuitem"
               tabIndex="0"
             >
-              Three item
+              <span
+                data-css-3fe0zw=""
+              >
+                Three item
+              </span>
             </button>
           </div>
         </div>
@@ -2148,7 +2520,11 @@ exports[`Storyshots with Position BelowRight 1`] = `
               role="menuitem"
               tabIndex="0"
             >
-              One item
+              <span
+                data-css-3fe0zw=""
+              >
+                One item
+              </span>
             </button>
           </div>
           <div
@@ -2164,7 +2540,11 @@ exports[`Storyshots with Position BelowRight 1`] = `
               role="menuitem"
               tabIndex="0"
             >
-              Two item
+              <span
+                data-css-3fe0zw=""
+              >
+                Two item
+              </span>
             </button>
           </div>
           <div
@@ -2180,7 +2560,11 @@ exports[`Storyshots with Position BelowRight 1`] = `
               role="menuitem"
               tabIndex="0"
             >
-              Three item
+              <span
+                data-css-3fe0zw=""
+              >
+                Three item
+              </span>
             </button>
           </div>
         </div>

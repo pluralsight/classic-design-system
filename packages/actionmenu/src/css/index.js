@@ -93,6 +93,13 @@ export default {
     transition: `background ${core.motion.speedXFast}`
   },
 
+  '.psds-actionmenu__item-inner': {
+    flex: 1,
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis'
+  },
+
   '.psds-actionmenu__item:focus': {
     background: core.colors.bone,
     outline: 'none',
