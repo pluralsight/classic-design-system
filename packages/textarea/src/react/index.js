@@ -1,13 +1,14 @@
-import * as core from '@pluralsight/ps-design-system-core'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import * as glamor from 'glamor'
-import Halo from '@pluralsight/ps-design-system-halo'
-import Icon from '@pluralsight/ps-design-system-icon'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
+
+import * as core from '@pluralsight/ps-design-system-core'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import Halo from '@pluralsight/ps-design-system-halo'
+import Icon from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 
 const calcRowsPxHeight = rows => {
   const int = varVal => parseInt(varVal.replace('px', ''), 10)
@@ -18,84 +19,92 @@ const calcRowsPxHeight = rows => {
 }
 
 const styles = {
-  error: _ => glamor.css(css['.psds-text-area__error']),
-  field: ({ error, themeName }) =>
-    glamor.css(
-      css['.psds-text-area__field'],
-      css[`.psds-text-area__field.psds-theme--${themeName}`],
-      error && css[`.psds-text-area__field--error.psds-theme--${themeName}`],
-      {
-        ':focus': {
-          ...css['.psds-text-area__field:focus'],
-          ...css[`.psds-text-area__field.psds-theme--${themeName}:focus`]
-        }
-      }
-    ),
-  fieldContainer: ({ themeName }) =>
-    glamor.css(css['.psds-text-area__field-container']),
-  textarea: ({ disabled }) =>
-    glamor.css(
-      css['.psds-text-area'],
-      disabled && css['.psds-text-area--disabled']
-    ),
-  label: ({ themeName }) =>
-    glamor.css(
-      css['.psds-text-area__label'],
-      css[`.psds-text-area__label.psds-theme--${themeName}`]
-    ),
-  subLabel: ({ themeName }) =>
-    glamor.css(
-      css['.psds-text-area__sub-label'],
-      css[`.psds-text-area__sub-label.psds-theme--${themeName}`]
+  error: _ => css(stylesheet['.psds-text-area__error']),
+  field: (themeName, { error }) => {
+    const label = 'psds-text-area__field'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      error && css(stylesheet[`.${label}--error.psds-theme--${themeName}`])
     )
+  },
+  fieldContainer: themeName =>
+    css(stylesheet['.psds-text-area__field-container']),
+  textarea: (themeName, { disabled }) => {
+    const label = 'psds-text-area'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      disabled && css(stylesheet[`.${label}--disabled`])
+    )
+  },
+  label: themeName => {
+    const label = 'psds-text-area__label'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    )
+  },
+  subLabel: themeName => {
+    const label = 'psds-text-area__sub-label'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    )
+  }
 }
 
 const TextArea = (props, context) => {
   const themeName = useTheme()
-  const allProps = { ...props, themeName }
 
   return (
     <label
-      {...styles.textarea(allProps)}
-      {...(allProps.style ? { style: allProps.style } : null)}
-      {...(allProps.className ? { className: allProps.className } : null)}
+      {...styles.textarea(themeName, props)}
+      {...(props.style ? { style: props.style } : null)}
+      {...(props.className ? { className: props.className } : null)}
     >
-      {allProps.label && (
-        <div {...styles.label(allProps)}>{allProps.label}</div>
-      )}
-      <div {...styles.fieldContainer(allProps)}>
-        <Halo error={allProps.error} gapSize={Halo.gapSizes.small}>
+      {props.label && <div {...styles.label(themeName)}>{props.label}</div>}
+      <div {...styles.fieldContainer(themeName)}>
+        <Halo error={props.error} gapSize={Halo.gapSizes.small}>
           <textarea
-            {...filterReactProps(allProps, { tagName: 'textarea' })}
-            {...styles.field(allProps)}
-            disabled={allProps.disabled}
-            placeholder={allProps.placeholder}
-            ref={allProps.innerRef}
-            style={{ height: calcRowsPxHeight(allProps.rows) }}
+            {...filterReactProps(props, { tagName: 'textarea' })}
+            {...styles.field(themeName, props)}
+            disabled={props.disabled}
+            placeholder={props.placeholder}
+            ref={props.innerRef}
+            style={{ height: calcRowsPxHeight(props.rows) }}
           />
         </Halo>
-        {allProps.error && (
-          <div {...styles.error(allProps)}>
+
+        {props.error && (
+          <div {...styles.error(themeName)}>
             <Icon id={Icon.ids.warning} />
           </div>
         )}
       </div>
-      {allProps.subLabel && (
-        <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
+
+      {props.subLabel && (
+        <div {...styles.subLabel(themeName)}>{props.subLabel}</div>
       )}
     </label>
   )
 }
 
 TextArea.propTypes = {
+  className: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   innerRef: PropTypes.func,
   label: PropTypes.node,
   placeholder: PropTypes.string,
   rows: PropTypes.number,
+  style: PropTypes.object,
   subLabel: PropTypes.node
 }
+
 TextArea.defaultProps = {
   disabled: false,
   error: false,

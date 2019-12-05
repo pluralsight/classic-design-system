@@ -23,14 +23,14 @@ export default {
     fontWeight: core.type.fontWeightBook,
     color: core.colors.gray03,
     padding: `${core.layout.spacingXSmall} ${core.layout.spacingMedium}`,
-    border: 'none'
+    border: 'none',
+
+    '&:focus': { outline: 'none' }
   },
-  '.psds-text-area__field:focus': {
-    outline: 'none'
+  [`.psds-text-area__field.psds-theme--${themeNames.light}`]: {
+    '&:focus': { border: '1px solid transparent' }
   },
-  [`.psds-text-area__field.psds-theme--${themeNames.light}:focus`]: {
-    border: '1px solid transparent'
-  },
+
   [`.psds-text-area__field--error.psds-theme--${themeNames.light}`]: {
     border: '1px solid transparent'
   },
