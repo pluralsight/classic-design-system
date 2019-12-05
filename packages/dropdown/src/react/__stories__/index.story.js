@@ -199,6 +199,52 @@ storiesOf('layouts', module)
       <div style={{ border: '3px solid green', height: '50px' }} />
     </div>
   ))
+  .add('custom width', _ => {
+    function ChangeStory() {
+      const [value, setValue] = React.useState('two')
+      function handleChange(evt, value, label) {
+        setValue(value)
+      }
+
+      return (
+        <div>
+          <div style={{ color: '#ababab' }}>Value: {value}</div>
+          <Dropdown
+            placeholder="Change me"
+            label="Width 150"
+            style={{ width: 150 }}
+            menu={
+              <ActionMenu>
+                <ActionMenu.Item value="one">
+                  One item One item One item One item One item One item
+                </ActionMenu.Item>
+                <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+                <ActionMenu.Item value="three">Three item</ActionMenu.Item>
+              </ActionMenu>
+            }
+            onChange={handleChange}
+            value={value}
+          />
+          <Dropdown
+            placeholder="Change me"
+            label="Width determined by longest item"
+            menu={
+              <ActionMenu>
+                <ActionMenu.Item value="one">
+                  One item One item One item One item One item One item
+                </ActionMenu.Item>
+                <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+                <ActionMenu.Item value="three">Three item</ActionMenu.Item>
+              </ActionMenu>
+            }
+            onChange={handleChange}
+            value={value}
+          />
+        </div>
+      )
+    }
+    return <ChangeStory />
+  })
 
 storiesOf('placeholder', module).add('as pre-selected item', _ => (
   <DropdownWithDefaults

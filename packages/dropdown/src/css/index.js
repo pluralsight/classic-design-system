@@ -1,4 +1,4 @@
-import {colors, type, layout} from '@pluralsight/ps-design-system-core'
+import { colors, type, layout } from '@pluralsight/ps-design-system-core'
 import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
@@ -24,7 +24,6 @@ export default {
     lineHeight: type.lineHeightStandard,
     fontWeight: type.fontWeightMedium,
     color: colors.gray03,
-    padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall}) 0 ${layout.spacingMedium}`,
     border: 'none',
     textAlign: 'left',
     cursor: 'pointer',
@@ -61,12 +60,14 @@ export default {
     display: 'inline-flex',
     alignItems: 'center',
     width: '100%',
-    minWidth: `calc(${iconWidths.medium} + ${layout.spacingXSmall})`
+    minWidth: `calc(${iconWidths.medium} + ${layout.spacingXSmall})`,
+    maxWidth: '100%'
   },
   '.psds-dropdown__field-aligner': {
     display: 'inline-flex',
     alignItems: 'center',
-    width: '100%'
+    width: '100%',
+    maxWidth: '100%'
   },
 
   // __icon
@@ -122,10 +123,14 @@ export default {
 
   // __placeholder
   '.psds-dropdown__placeholder': {
+    padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall}) 0 ${layout.spacingMedium}`,
     position: 'absolute',
     top: layout.spacingXSmall,
-    left: layout.spacingMedium,
-    whiteSpace: 'nowrap'
+    left: 0,
+    width: '100%',
+    overflow: 'hidden',
+    whiteSpace: 'nowrap',
+    textOverflow: 'ellipsis'
   },
   '.psds-dropdown__placeholder.psds-dropdown--small': {
     left: layout.spacingXSmall,
@@ -136,7 +141,8 @@ export default {
   '.psds-dropdown__button-sizer': {
     visibility: 'hidden',
     display: 'inline-block',
-    whiteSpace: 'nowrap'
+    whiteSpace: 'nowrap',
+    padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall}) 0 ${layout.spacingMedium}`
   },
 
   // __menu
@@ -154,5 +160,8 @@ export default {
     right: 0,
     bottom: 0,
     left: 0
+  },
+  '.psds-dropdown__field-halo': {
+    maxWidth: '100%'
   }
 }
