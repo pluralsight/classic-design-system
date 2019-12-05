@@ -3,7 +3,7 @@ import React from 'react'
 import { withRouter } from 'next/router.js'
 
 import * as core from '@pluralsight/ps-design-system-core'
-import {CloseIcon} from '@pluralsight/ps-design-system-icon'
+import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 
 import { withHeadings } from './content.js'
 import Link from './link.js'
@@ -423,6 +423,9 @@ const SideNav = withHeadings(props => (
       </NavLink>
       <NavLink href="/components/searchinput" headings={props.headings}>
         Search Input
+      </NavLink>
+      <NavLink href="/components/screenreaderonly" headings={props.headings}>
+        Screen Reader Only
       </NavLink>
       <NavLink href="/components/starrating" headings={props.headings}>
         Star Rating

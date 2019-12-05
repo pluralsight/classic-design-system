@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots ScreenReaderOnly basic 1`] = `
+<div>
+  <p>
+    you should not see the following
+  </p>
+  <div
+    data-css-s2krq8=""
+  />
+</div>
+`;
