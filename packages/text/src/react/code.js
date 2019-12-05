@@ -1,15 +1,15 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 
 const style = ({ themeName }) =>
-  glamor.css({
-    ...css[`.psds-text__code`],
-    ...css[`.psds-text__code.psds-theme--${themeName}`]
-  })
+  compose(
+    css(stylesheet[`.psds-text__code`]),
+    css(stylesheet[`.psds-text__code.psds-theme--${themeName}`])
+  )
 
 const Code = (props, context) => {
   const themeName = useTheme()
