@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { renderHook } from '@testing-library/react-hooks'
-import { createRef, useImperativeHandle } from 'react'
+import { createRef, useImperativeHandle, useCallback, useState } from 'react'
 import { useCombinedRefs } from '../useCombinedRefs.js'
 
 describe('useCombinedRefs', () => {
@@ -42,5 +42,20 @@ describe('useCombinedRefs', () => {
     })
     expect(result.current.outer).toEqual({ current: null })
     expect(result.current.inner).toEqual({ current: null })
+  })
+  test('callbackRef', () => {
+    const { result } = renderHook(() => {
+      const [height, setHeight] = useState(0)
+      const outer = createRef()
+      const inner = useCallback(node => {
+        if (node !== null) {
+          setHeight(5)
+        }
+      }, [])
+      useCombinedRefs(inner, outer)
+      return { height, outer }
+    })
+    expect(result.current.height).toEqual(5)
+    expect(result.current.outer).toEqual({ current: null })
   })
 })
