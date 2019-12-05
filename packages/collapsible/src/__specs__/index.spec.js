@@ -12,7 +12,7 @@ describe('Collapsible', () => {
     )
     const wrapper = container.querySelector('[aria-hidden]')
     expect(wrapper).toHaveAttribute('aria-hidden', 'false')
-    expect(wrapper).not.toHaveStyle(`height: 0`)
+    expect(wrapper).toHaveStyle(`height: auto`)
     rerender(
       <Collapsible isOpen={false}>
         <div>content</div>
