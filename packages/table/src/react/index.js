@@ -4,7 +4,11 @@ import React, { Children } from 'react'
 
 import { drawerDisplayName } from '@pluralsight/ps-design-system-drawer'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {
+  SortAscIcon,
+  SortDescIcon,
+  SortIcon
+} from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index.js'
@@ -60,17 +64,11 @@ const styles = {
   }
 }
 
-const SortIconAsc = _ => (
-  <Icon id={Icon.ids.sortAsc} {...styles.columnHeaderIcon()} />
-)
+const SortIconAsc = _ => <SortAscIcon {...styles.columnHeaderIcon()} />
 
-const SortIconDesc = _ => (
-  <Icon id={Icon.ids.sortDesc} {...styles.columnHeaderIcon()} />
-)
+const SortIconDesc = _ => <SortDescIcon {...styles.columnHeaderIcon()} />
 
-const SortIconDefault = _ => (
-  <Icon id={Icon.ids.sort} {...styles.columnHeaderIcon()} />
-)
+const SortIconDefault = _ => <SortIcon {...styles.columnHeaderIcon()} />
 
 const getSortIcon = props =>
   ({

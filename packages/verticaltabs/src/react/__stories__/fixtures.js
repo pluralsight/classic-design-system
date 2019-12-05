@@ -1,12 +1,12 @@
 import React from 'react'
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 
 export const ADMIN_TOOLS_NAV = [
   {
     collapsible: false,
     header: {
       href: '#',
-      icon: <Icon id={Icon.ids.placeholder} />,
+      icon: <Icon.PlaceholderIcon />,
       id: 'dashboard',
       title: 'Dashboard'
     },
@@ -16,7 +16,7 @@ export const ADMIN_TOOLS_NAV = [
     collapsible: false,
     header: {
       href: '#',
-      icon: <Icon id={Icon.ids.placeholder} />,
+      icon: <Icon.PlaceholderIcon />,
       id: 'account',
       title: 'Account'
     },
@@ -25,7 +25,7 @@ export const ADMIN_TOOLS_NAV = [
   {
     collapsible: true,
     header: {
-      icon: <Icon id={Icon.ids.placeholder} />,
+      icon: <Icon.PlaceholderIcon />,
       id: 'people',
       title: 'People'
     },
@@ -41,7 +41,7 @@ export const ADMIN_TOOLS_NAV = [
     collapsible: false,
     header: {
       href: '#',
-      icon: <Icon id={Icon.ids.placeholder} />,
+      icon: <Icon.PlaceholderIcon />,
       id: 'analytics',
       title: 'Analytics'
     },
@@ -51,7 +51,7 @@ export const ADMIN_TOOLS_NAV = [
     collapsible: false,
     header: {
       href: '#',
-      icon: <Icon id={Icon.ids.placeholder} />,
+      icon: <Icon.PlaceholderIcon />,
       id: 'log',
       title: 'Log'
     },
@@ -78,7 +78,7 @@ export const DESIGN_SYSTEM_NAV = [
         id: 'color',
         header: {
           href: '#',
-          icon: <Icon id={Icon.ids.placeholder} />,
+          icon: <Icon.PlaceholderIcon />,
           title: 'Color'
         }
       },
@@ -86,7 +86,7 @@ export const DESIGN_SYSTEM_NAV = [
         id: 'typography',
         header: {
           href: '#',
-          icon: <Icon id={Icon.ids.placeholder} />,
+          icon: <Icon.PlaceholderIcon />,
           title: 'Typography'
         }
       },
@@ -94,7 +94,7 @@ export const DESIGN_SYSTEM_NAV = [
         id: 'spacing',
         header: {
           href: '#',
-          icon: <Icon id={Icon.ids.placeholder} />,
+          icon: <Icon.PlaceholderIcon />,
           title: 'Spacing'
         }
       },
@@ -102,7 +102,7 @@ export const DESIGN_SYSTEM_NAV = [
         id: 'iconography',
         header: {
           href: '#',
-          icon: <Icon id={Icon.ids.placeholder} />,
+          icon: <Icon.PlaceholderIcon />,
           title: 'Iconography'
         }
       },
@@ -110,7 +110,7 @@ export const DESIGN_SYSTEM_NAV = [
         id: 'voice-tone',
         header: {
           href: '#',
-          icon: <Icon id={Icon.ids.placeholder} />,
+          icon: <Icon.PlaceholderIcon />,
           title: 'Voice & Tone'
         }
       }
@@ -164,7 +164,7 @@ export const FLOW_NAV = [
     collapsible: false,
     header: {
       href: '#',
-      icon: <Icon id={Icon.ids.placeholder} />,
+      icon: <Icon.PlaceholderIcon />,
       id: 'reports-home',
       title: 'Reports Home'
     },
@@ -173,7 +173,7 @@ export const FLOW_NAV = [
   {
     collapsible: true,
     header: {
-      icon: <Icon id={Icon.ids.placeholder} />,
+      icon: <Icon.PlaceholderIcon />,
       id: 'operational-reports',
       title: 'Operational Reports'
     },
@@ -213,7 +213,7 @@ export const FLOW_NAV = [
   {
     collapsible: true,
     header: {
-      icon: <Icon id={Icon.ids.placeholder} />,
+      icon: <Icon.PlaceholderIcon />,
       id: 'review-collaborate',
       title: 'Review & Collaborate'
     },
@@ -248,7 +248,7 @@ export const FLOW_NAV = [
   {
     collapsible: true,
     header: {
-      icon: <Icon id={Icon.ids.placeholder} />,
+      icon: <Icon.PlaceholderIcon />,
       id: 'delivery',
       title: 'Delivery'
     },
@@ -262,7 +262,7 @@ export const FLOW_NAV = [
   {
     collapsible: true,
     header: {
-      icon: <Icon id={Icon.ids.placeholder} />,
+      icon: <Icon.PlaceholderIcon />,
       id: 'fundamentals',
       title: 'Fundamentals'
     },

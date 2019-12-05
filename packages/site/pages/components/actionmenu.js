@@ -3,7 +3,12 @@ import React from 'react'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {
+  MoreIcon,
+  ChannelIcon,
+  PathIcon,
+  ReportIcon
+} from '@pluralsight/ps-design-system-icon'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import * as Text from '@pluralsight/ps-design-system-text'
 import Theme from '@pluralsight/ps-design-system-theme'
@@ -94,7 +99,7 @@ function InAppExample() {
             <Button
               appearance={Button.appearances.secondary}
               size={Button.sizes.small}
-              icon={<Icon id={Icon.ids.more} />}
+              icon={<MoreIcon />}
               onClick={_ => setIsOpen(!isOpen)}
             />
           </BelowLeft>
@@ -171,7 +176,7 @@ function InAppExample() {
         <Button
           appearance={Button.appearances.secondary}
           size={Button.sizes.small}
-          icon={<Icon id={Icon.ids.more} />}
+          icon={<MoreIcon />}
           onClick={_ => setIsOpen(!isOpen)}
         />
       </BelowLeft>
@@ -248,7 +253,7 @@ export default _ => (
             PropTypes.row(['href', 'string', null, null, 'anchor tag uri']),
             PropTypes.row([
               'icon',
-              <code>Icon</code>,
+              <code>*Icon</code>,
               null,
               null,
               'Icon component'
@@ -298,17 +303,17 @@ export default _ => (
       <SectionHeading>Icons</SectionHeading>
       <P>Use icons to add context and recognition to action menu items.</P>
       <Example.React
-        includes={{ ActionMenu, Icon }}
+        includes={{ ActionMenu, ChannelIcon, PathIcon, ReportIcon }}
         codes={[
           `
-<ActionMenu style={{ position: 'relative' }} shouldFocusOnMount={false}>
-  <ActionMenu.Item icon={<Icon id={Icon.ids.channel} />}>
+<ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
+  <ActionMenu.Item icon={<ChannelIcon />}>
     Channels
   </ActionMenu.Item>
-  <ActionMenu.Item icon={<Icon id={Icon.ids.path} />}>
+  <ActionMenu.Item icon={<PathIcon />}>
     Paths
   </ActionMenu.Item>
-  <ActionMenu.Item icon={<Icon id={Icon.ids.report} />}>
+  <ActionMenu.Item icon={<ReportIcon />}>
     Reports
   </ActionMenu.Item>
 </ActionMenu>

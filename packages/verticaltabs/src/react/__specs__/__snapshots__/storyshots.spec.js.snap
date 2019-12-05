@@ -670,6 +670,7 @@ exports[`Storyshots components|VerticalTabs/Tier1 active 1`] = `
             data-css-otejxm=""
           >
             <svg
+              aria-label="placeholder icon"
               fill="none"
               role="img"
               viewBox="0 0 24 24"
@@ -711,6 +712,7 @@ exports[`Storyshots components|VerticalTabs/Tier1 basic 1`] = `
             data-css-otejxm=""
           >
             <svg
+              aria-label="placeholder icon"
               fill="none"
               role="img"
               viewBox="0 0 24 24"
@@ -753,6 +755,7 @@ exports[`Storyshots components|VerticalTabs/Tier1 button 1`] = `
             data-css-otejxm=""
           >
             <svg
+              aria-label="placeholder icon"
               fill="none"
               role="img"
               viewBox="0 0 24 24"
@@ -795,6 +798,7 @@ exports[`Storyshots components|VerticalTabs/Tier1 collapsible 1`] = `
             data-css-otejxm=""
           >
             <svg
+              aria-label="placeholder icon"
               fill="none"
               role="img"
               viewBox="0 0 24 24"
@@ -860,6 +864,7 @@ exports[`Storyshots components|VerticalTabs/Tier1 link 1`] = `
             data-css-otejxm=""
           >
             <svg
+              aria-label="placeholder icon"
               fill="none"
               role="img"
               viewBox="0 0 24 24"
@@ -1029,6 +1034,7 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
                   data-css-otejxm=""
                 >
                   <svg
+                    aria-label="placeholder icon"
                     fill="none"
                     role="img"
                     viewBox="0 0 24 24"
@@ -1063,6 +1069,7 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
                   data-css-otejxm=""
                 >
                   <svg
+                    aria-label="placeholder icon"
                     fill="none"
                     role="img"
                     viewBox="0 0 24 24"
@@ -1097,6 +1104,7 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
                   data-css-otejxm=""
                 >
                   <svg
+                    aria-label="placeholder icon"
                     fill="none"
                     role="img"
                     viewBox="0 0 24 24"
@@ -1234,6 +1242,7 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
                   data-css-otejxm=""
                 >
                   <svg
+                    aria-label="placeholder icon"
                     fill="none"
                     role="img"
                     viewBox="0 0 24 24"
@@ -1268,6 +1277,7 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
                   data-css-otejxm=""
                 >
                   <svg
+                    aria-label="placeholder icon"
                     fill="none"
                     role="img"
                     viewBox="0 0 24 24"
@@ -1454,6 +1464,7 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
                   data-css-otejxm=""
                 >
                   <svg
+                    aria-label="placeholder icon"
                     fill="none"
                     role="img"
                     viewBox="0 0 24 24"
@@ -1489,6 +1500,7 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
                   data-css-otejxm=""
                 >
                   <svg
+                    aria-label="placeholder icon"
                     fill="none"
                     role="img"
                     viewBox="0 0 24 24"
@@ -1524,6 +1536,7 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
                   data-css-otejxm=""
                 >
                   <svg
+                    aria-label="placeholder icon"
                     fill="none"
                     role="img"
                     viewBox="0 0 24 24"
@@ -1559,6 +1572,7 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
                   data-css-otejxm=""
                 >
                   <svg
+                    aria-label="placeholder icon"
                     fill="none"
                     role="img"
                     viewBox="0 0 24 24"
@@ -1594,6 +1608,7 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
                   data-css-otejxm=""
                 >
                   <svg
+                    aria-label="placeholder icon"
                     fill="none"
                     role="img"
                     viewBox="0 0 24 24"
@@ -1787,6 +1802,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                   data-css-otejxm=""
                 >
                   <svg
+                    aria-label="placeholder icon"
                     fill="none"
                     role="img"
                     viewBox="0 0 24 24"
@@ -1821,6 +1837,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                   data-css-otejxm=""
                 >
                   <svg
+                    aria-label="placeholder icon"
                     fill="none"
                     role="img"
                     viewBox="0 0 24 24"
@@ -1974,6 +1991,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                   data-css-otejxm=""
                 >
                   <svg
+                    aria-label="placeholder icon"
                     fill="none"
                     role="img"
                     viewBox="0 0 24 24"
@@ -2111,6 +2129,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                   data-css-otejxm=""
                 >
                   <svg
+                    aria-label="placeholder icon"
                     fill="none"
                     role="img"
                     viewBox="0 0 24 24"
@@ -2179,6 +2198,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                   data-css-otejxm=""
                 >
                   <svg
+                    aria-label="placeholder icon"
                     fill="none"
                     role="img"
                     viewBox="0 0 24 24"
@@ -2373,6 +2393,7 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
                 data-css-otejxm=""
               >
                 <svg
+                  aria-label="placeholder icon"
                   fill="none"
                   role="img"
                   viewBox="0 0 24 24"
@@ -2547,6 +2568,7 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
                 data-css-otejxm=""
               >
                 <svg
+                  aria-label="placeholder icon"
                   fill="none"
                   role="img"
                   viewBox="0 0 24 24"

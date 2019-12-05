@@ -1,7 +1,7 @@
 import { Below } from '@pluralsight/ps-design-system-position'
 import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon'
+import { BookmarkIcon } from '@pluralsight/ps-design-system-icon'
 import ReactPropTypes from 'prop-types'
 import React from 'react'
 import Theme from '@pluralsight/ps-design-system-theme'
@@ -24,10 +24,7 @@ import {
 function TooltipGuideline(props) {
   return (
     <Theme name={Theme.names.light}>
-      <Button
-        appearance={Button.appearances.flat}
-        icon={<Icon id={Icon.ids.bookmark} />}
-      />
+      <Button appearance={Button.appearances.flat} icon={<BookmarkIcon />} />
       <div className="tooltipWrapper">
         <Tooltip
           appearance={props.appearance}

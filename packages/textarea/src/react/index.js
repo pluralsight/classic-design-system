@@ -5,7 +5,7 @@ import React from 'react'
 import * as core from '@pluralsight/ps-design-system-core'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
-import Icon from '@pluralsight/ps-design-system-icon'
+import { WarningIcon } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index.js'
@@ -81,7 +81,7 @@ const TextArea = React.forwardRef((props, ref) => {
 
         {props.error && (
           <div {...styles.error(themeName)}>
-            <Icon id={Icon.ids.warning} />
+            <WarningIcon />
           </div>
         )}
       </div>

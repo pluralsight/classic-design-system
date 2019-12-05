@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/react'
 import { css } from 'glamor'
 import React from 'react'
 
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import VerticalTabs from '../index.js'
 
@@ -90,16 +90,14 @@ storiesOf('components|VerticalTabs/Tier1', module)
   .add('basic', () => (
     <Tier1
       header={
-        <Tier1.Header icon={<Icon id={Icon.ids.placeholder} />}>
-          text here
-        </Tier1.Header>
+        <Tier1.Header icon={<Icon.PlaceholderIcon />}>text here</Tier1.Header>
       }
     />
   ))
   .add('link', () => (
     <Tier1
       header={
-        <Tier1.Header href="#" icon={<Icon id={Icon.ids.placeholder} />}>
+        <Tier1.Header href="#" icon={<Icon.PlaceholderIcon />}>
           text here
         </Tier1.Header>
       }
@@ -108,7 +106,7 @@ storiesOf('components|VerticalTabs/Tier1', module)
   .add('button', () => (
     <Tier1
       header={
-        <Tier1.Header onClick={noop} icon={<Icon id={Icon.ids.placeholder} />}>
+        <Tier1.Header onClick={noop} icon={<Icon.PlaceholderIcon />}>
           text here
         </Tier1.Header>
       }
@@ -118,9 +116,7 @@ storiesOf('components|VerticalTabs/Tier1', module)
     <Tier1
       active
       header={
-        <Tier1.Header icon={<Icon id={Icon.ids.placeholder} />}>
-          text here
-        </Tier1.Header>
+        <Tier1.Header icon={<Icon.PlaceholderIcon />}>text here</Tier1.Header>
       }
     />
   ))
@@ -128,9 +124,7 @@ storiesOf('components|VerticalTabs/Tier1', module)
     <Tier1
       collapsible
       header={
-        <Tier1.Header icon={<Icon id={Icon.ids.placeholder} />}>
-          text here
-        </Tier1.Header>
+        <Tier1.Header icon={<Icon.PlaceholderIcon />}>text here</Tier1.Header>
       }
     >
       <Placeholder />
@@ -163,7 +157,7 @@ storiesOf('components|VerticalTabs/truncation', module)
 
         <Tier1
           header={
-            <Tier1.Header icon={<Icon id={Icon.ids.placeholder} />}>
+            <Tier1.Header icon={<Icon.PlaceholderIcon />}>
               {longTitle}
             </Tier1.Header>
           }
@@ -186,7 +180,7 @@ storiesOf('components|VerticalTabs/truncation', module)
 
         <Tier1
           header={
-            <Tier1.Header icon={<Icon id={Icon.ids.placeholder} />}>
+            <Tier1.Header icon={<Icon.PlaceholderIcon />}>
               {longTitle}
             </Tier1.Header>
           }

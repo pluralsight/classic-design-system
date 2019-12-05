@@ -4,8 +4,9 @@ import React from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
-import Icon from '@pluralsight/ps-design-system-icon'
+import Icon, { WarningIcon } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
+import { useCombinedRefs } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css/index.js'
 import { findMatchingActionMenuItem } from './utils.js'
@@ -71,7 +72,8 @@ const styles = {
       css(stylesheet[`.${label}.psds-theme--${themeName}`])
     )
   },
-  pageOverlay: _ => css(stylesheet['.psds-dropdown__page-overlay'])
+  pageOverlay: _ => css(stylesheet['.psds-dropdown__page-overlay']),
+  halo: _ => css(css['.psds-dropdown__field-halo'])
 }
 
 const CaretDown = _ => (
@@ -188,9 +190,14 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
     )
   }
 
-  const ref = forwardedRef || React.createRef()
   const { style, className, ...buttonProps } = allProps
   const longestMenuItemState = getLongestMenuLabelState()
+  const [width, setWidth] = React.useState('auto')
+  const innerRef = React.createRef(null)
+  const combinedRef = useCombinedRefs(forwardedRef, innerRef)
+  React.useLayoutEffect(() => {
+    setWidth(combinedRef.current.getBoundingClientRect().width)
+  }, [combinedRef, forwardedRef])
   return (
     <>
       {isOpen && (
@@ -206,14 +213,18 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
           <div {...styles.label(allProps)}>{allProps.label}</div>
         )}
         <div {...styles.fieldContainer(allProps)}>
-          <Halo error={allProps.error} gapSize={Halo.gapSizes.small}>
+          <Halo
+            error={allProps.error}
+            gapSize={Halo.gapSizes.small}
+            {...styles.halo()}
+          >
             <div {...styles.fieldAligner(allProps)}>
               <button
                 {...filterReactProps(buttonProps, { tagName: 'button' })}
                 {...styles.field(allProps)}
                 disabled={allProps.disabled}
                 onClick={allProps.disabled ? null : handleToggleOpen}
-                ref={ref}
+                ref={combinedRef}
               >
                 <span aria-hidden {...styles.buttonSizer(allProps)}>
                   {longestMenuItemState.label || allProps.placeholder}
@@ -231,7 +242,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
           </Halo>
           {allProps.error && (
             <div {...styles.error(allProps)}>
-              <Icon id={Icon.ids.warning} />
+              <WarningIcon />
             </div>
           )}
         </div>
@@ -250,9 +261,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
                 ...allProps.menu.props.style,
                 minWidth: '0',
                 maxWidth: 'none',
-                width: ref.current
-                  ? ref.current.getBoundingClientRect().width
-                  : 'auto'
+                width
               }
             })}
           </div>

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import Button from '@pluralsight/ps-design-system-button'
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
-import Icon from '@pluralsight/ps-design-system-icon'
+import { CloseIcon, SearchIcon } from '@pluralsight/ps-design-system-icon'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 import Theme, { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
@@ -34,7 +34,7 @@ const SearchInput = React.forwardRef((props, forwardedRef) => {
   const icon = loading ? (
     <CircularProgress size={CircularProgress.sizes.small} />
   ) : (
-    <Icon id={Icon.ids.search} />
+    <SearchIcon />
   )
 
   return (
@@ -63,7 +63,7 @@ const ClearButton = props => (
     <Theme name={themeNames.light}>
       <Button
         appearance={Button.appearances.flat}
-        icon={<Icon id={Icon.ids.close} />}
+        icon={<CloseIcon />}
         iconOnly
         size={Button.sizes.small}
         {...props}

@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import Dropdown from '../index.js'
 
@@ -199,6 +199,52 @@ storiesOf('layouts', module)
       <div style={{ border: '3px solid green', height: '50px' }} />
     </div>
   ))
+  .add('custom width', _ => {
+    function ChangeStory() {
+      const [value, setValue] = React.useState('two')
+      function handleChange(evt, value, label) {
+        setValue(value)
+      }
+
+      return (
+        <div>
+          <div style={{ color: '#ababab' }}>Value: {value}</div>
+          <Dropdown
+            placeholder="Change me"
+            label="Width 150"
+            style={{ width: 150 }}
+            menu={
+              <ActionMenu>
+                <ActionMenu.Item value="one">
+                  One item One item One item One item One item One item
+                </ActionMenu.Item>
+                <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+                <ActionMenu.Item value="three">Three item</ActionMenu.Item>
+              </ActionMenu>
+            }
+            onChange={handleChange}
+            value={value}
+          />
+          <Dropdown
+            placeholder="Change me"
+            label="Width determined by longest item"
+            menu={
+              <ActionMenu>
+                <ActionMenu.Item value="one">
+                  One item One item One item One item One item One item
+                </ActionMenu.Item>
+                <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+                <ActionMenu.Item value="three">Three item</ActionMenu.Item>
+              </ActionMenu>
+            }
+            onChange={handleChange}
+            value={value}
+          />
+        </div>
+      )
+    }
+    return <ChangeStory />
+  })
 
 storiesOf('placeholder', module).add('as pre-selected item', _ => (
   <DropdownWithDefaults
@@ -250,7 +296,7 @@ storiesOf('menu', module)
           <ActionMenu.Item>One item</ActionMenu.Item>
           <ActionMenu.Item>Two item</ActionMenu.Item>
           <ActionMenu.Item>Three item</ActionMenu.Item>
-          <ActionMenu.Item icon={<Icon id={Icon.ids.check} />}>
+          <ActionMenu.Item icon={<Icon.CheckIcon />}>
             Three and the amazing item
           </ActionMenu.Item>
         </ActionMenu>
@@ -282,7 +328,7 @@ storiesOf('menu', module)
               <ActionMenu.Item>One item</ActionMenu.Item>
               <ActionMenu.Item>Two item</ActionMenu.Item>
               <ActionMenu.Item>Three item</ActionMenu.Item>
-              <ActionMenu.Item icon={<Icon id={Icon.ids.check} />}>
+              <ActionMenu.Item icon={<Icon.CheckIcon />}>
                 Three and the amazing item
               </ActionMenu.Item>
             </ActionMenu>
@@ -298,7 +344,7 @@ storiesOf('menu', module)
               <ActionMenu.Item>One item</ActionMenu.Item>
               <ActionMenu.Item>Two item</ActionMenu.Item>
               <ActionMenu.Item>Three item</ActionMenu.Item>
-              <ActionMenu.Item icon={<Icon id={Icon.ids.check} />}>
+              <ActionMenu.Item icon={<Icon.CheckIcon />}>
                 Three and the amazing item
               </ActionMenu.Item>
             </ActionMenu>
@@ -330,7 +376,7 @@ storiesOf('menu', module)
           <ActionMenu.Item>Two item</ActionMenu.Item>
           <ActionMenu.Item>Three item</ActionMenu.Item>
           <ActionMenu.Item
-            icon={<Icon id={Icon.ids.check} />}
+            icon={<Icon.CheckIcon />}
             nested={
               <ActionMenu>
                 <ActionMenu.Item>3 - One item</ActionMenu.Item>
@@ -359,7 +405,7 @@ storiesOf('menu', module)
             Three item
           </ActionMenu.Item>
           <ActionMenu.Item
-            icon={<Icon id={Icon.ids.check} />}
+            icon={<Icon.CheckIcon />}
             nested={
               <ActionMenu>
                 <ActionMenu.Item onClick={action('three - One')}>

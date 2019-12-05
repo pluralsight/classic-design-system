@@ -4,7 +4,7 @@ import React from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
-import Icon from '@pluralsight/ps-design-system-icon'
+import { WarningIcon } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index.js'
@@ -110,7 +110,7 @@ const TextInput = React.forwardRef((props, forwardedRef) => {
 
         {error && (
           <div {...styles.error(allProps)}>
-            <Icon id={Icon.ids.warning} />
+            <WarningIcon />
           </div>
         )}
       </div>
@@ -168,8 +168,8 @@ function isPlainObject(obj) {
 function useMultipleRefs(refs) {
   const hasMultiple = isRefs(refs)
 
-  const forwardedFieldRef = hasMultiple ? refs['field'] : React.createRef()
-  const forwardedInputRef = hasMultiple ? refs['input'] : refs
+  const forwardedFieldRef = hasMultiple ? refs.field : React.createRef()
+  const forwardedInputRef = hasMultiple ? refs.input : refs
 
   const fieldRef = React.useRef(forwardedFieldRef)
   const inputRef = React.useRef(forwardedInputRef)

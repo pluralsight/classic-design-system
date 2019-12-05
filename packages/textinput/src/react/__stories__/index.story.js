@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import * as core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import TextInput from '../index.js'
 
@@ -59,7 +59,7 @@ Object.keys(TextInput.appearances).forEach(appearance =>
             size={size}
             appearance={appearance}
             iconAlign={iconAlign}
-            icon={<Icon id={Icon.ids.info} />}
+            icon={<Icon.InfoIcon />}
             placeholder="The placeholder "
           />
         )
@@ -76,10 +76,7 @@ Object.keys(TextInput.appearances).forEach(appearance =>
 storiesOf('after field', module)
   .addDecorator(PaddingDecorator)
   .add('w/icon', _ => (
-    <TextInput
-      fieldAfter={<Icon id={Icon.ids.close} />}
-      placeholder="Some placeholder"
-    />
+    <TextInput fieldAfter={<Icon.CloseIcon />} placeholder="Some placeholder" />
   ))
 
 storiesOf('disabled', module)
@@ -149,7 +146,7 @@ storiesOf('layouts', module)
       <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <TextInput
           placeholder="Search"
-          icon={<Icon id={Icon.ids.search} />}
+          icon={<Icon.SearchIcon />}
           appearance={TextInput.appearances.subtle}
         />
       </div>

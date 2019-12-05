@@ -1,4 +1,4 @@
-import Icon from '@pluralsight/ps-design-system-icon'
+import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 import Tag from '@pluralsight/ps-design-system-tag'
 import * as Text from '@pluralsight/ps-design-system-text'
@@ -38,7 +38,7 @@ export default _ => (
           ]),
           PropTypes.row([
             'icon',
-            <code>Icon</code>,
+            <code>*Icon</code>,
             null,
             null,
             'Icon component, right-aligned'
@@ -82,11 +82,11 @@ export default _ => (
       </P>
       <Example.React
         themeToggle
-        includes={{ Tag, Icon }}
+        includes={{ Tag, CloseIcon }}
         codes={[
-          `<Tag icon={<Icon id={Icon.ids.close} />}>With Icon</Tag>`,
-          `<Tag icon={<Icon id={Icon.ids.close} />} size={Tag.sizes.small}>With Icon</Tag>`,
-          `<Tag icon={<Icon id={Icon.ids.close} onClick={_ => alert('icon clicked')} />} size={Tag.sizes.small}>With Icon</Tag>`
+          `<Tag icon={<CloseIcon />}>With Icon</Tag>`,
+          `<Tag icon={<CloseIcon />} size={Tag.sizes.small}>With Icon</Tag>`,
+          `<Tag icon={<CloseIcon onClick={_ => alert('icon clicked')} />} size={Tag.sizes.small}>With Icon</Tag>`
         ]}
       />
 
@@ -98,7 +98,7 @@ export default _ => (
       </P>
       <Example.React
         themeToggle
-        includes={{ Tag, Icon }}
+        includes={{ Tag }}
         codes={[
           `<Tag onClick={_ => alert('click')}>With Click</Tag>`,
           `<Tag href="https://duckduckgo.com">With Link</Tag>`
@@ -114,7 +114,7 @@ export default _ => (
       </P>
       <Example.React
         themeToggle
-        includes={{ Tag, Icon }}
+        includes={{ Tag }}
         codes={[`<Tag isPressed>Toggled on</Tag>`, `<Tag>Toggled off</Tag>`]}
       />
 

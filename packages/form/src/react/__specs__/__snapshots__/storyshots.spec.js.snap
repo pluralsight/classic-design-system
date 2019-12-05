@@ -355,27 +355,27 @@ exports[`Storyshots Sample Form sample 1`] = `
               Occupation
             </div>
             <div
-              data-css-1812rv9=""
+              data-css-8u2q7u=""
             >
               <div
                 data-css-1xm24a9=""
               >
                 <div
-                  data-css-1r44zeb=""
+                  data-css-ne3jjf=""
                 >
                   <button
-                    data-css-8bndf1=""
+                    data-css-1fhymn9=""
                     disabled={false}
                     onClick={[Function]}
                   >
                     <span
                       aria-hidden={true}
-                      data-css-e6fvyw=""
+                      data-css-1pnvt9=""
                     >
                       Select your occupation...
                     </span>
                     <span
-                      data-css-5m5yd6=""
+                      data-css-1qy54zb=""
                     >
                       Select your occupation...
                     </span>

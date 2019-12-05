@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import * as core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import Card from '..'
 
@@ -53,10 +53,9 @@ storiesOf('combo', module)
       fullOverlay={
         <Card.FullOverlayLink>
           <a href="http://duckduckgo.com?q=overlay">
-            <Icon
+            <Icon.PlayCircleIcon
               size={Icon.sizes.large}
               css={{ '& svg': { fill: core.colors.white } }}
-              id={Icon.ids.playCircle}
             />
           </a>
         </Card.FullOverlayLink>
@@ -78,22 +77,14 @@ storiesOf('combo', module)
       actionBar={[
         <Card.Action
           key="bookmark"
-          icon={<Icon id={Icon.ids.bookmark} />}
+          icon={<Icon.BookmarkIcon />}
           title="Bookmark"
         />,
-        <Card.Action
-          key="gear"
-          icon={<Icon id={Icon.ids.gear} />}
-          title="Settings"
-        />,
-        <Card.Action
-          key="more"
-          icon={<Icon id={Icon.ids.more} />}
-          title="More"
-        />
+        <Card.Action key="gear" icon={<Icon.GearIcon />} title="Settings" />,
+        <Card.Action key="more" icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
-      tag={<Card.Tag icon={<Icon id={Icon.ids.path} />}>Path</Card.Tag>}
+      tag={<Card.Tag icon={<Icon.PathIcon />}>Path</Card.Tag>}
     />
   ))
   .add('everything focusable', _ => (
@@ -108,10 +99,9 @@ storiesOf('combo', module)
       fullOverlay={
         <Card.FullOverlayLink>
           <a href="http://duckduckgo.com?q=overlay">
-            <Icon
+            <Icon.PlayCircleIcon
               size={Icon.sizes.large}
               css={{ '& svg': { fill: core.colors.white } }}
-              id={Icon.ids.playCircle}
             />
           </a>
         </Card.FullOverlayLink>
@@ -131,21 +121,13 @@ storiesOf('combo', module)
       actionBar={[
         <Card.Action
           key="bookmark"
-          icon={<Icon id={Icon.ids.bookmark} />}
+          icon={<Icon.BookmarkIcon />}
           title="Bookmark"
         />,
-        <Card.Action
-          key="gear"
-          icon={<Icon id={Icon.ids.gear} />}
-          title="Settings"
-        />,
-        <Card.Action
-          key="more"
-          icon={<Icon id={Icon.ids.more} />}
-          title="More"
-        />
+        <Card.Action key="gear" icon={<Icon.GearIcon />} title="Settings" />,
+        <Card.Action key="more" icon={<Icon.MoreIcon />} title="More" />
       ]}
-      tag={<Card.Tag icon={<Icon id={Icon.ids.path} />}>Path</Card.Tag>}
+      tag={<Card.Tag icon={<Icon.PathIcon />}>Path</Card.Tag>}
     />
   ))
 
@@ -206,7 +188,7 @@ storiesOf('actionBar', module)
       actionBar={[
         <Card.Action
           key="bookmark"
-          icon={<Icon id="bookmark" />}
+          icon={<Icon.BookmarkIcon />}
           title="Bookmark"
         />
       ]}
@@ -217,14 +199,10 @@ storiesOf('actionBar', module)
       actionBar={[
         <Card.Action
           key="bookmark"
-          icon={<Icon id={Icon.ids.bookmark} />}
+          icon={<Icon.BookmarkIcon />}
           title="Bookmark"
         />,
-        <Card.Action
-          key="paths"
-          icon={<Icon id={Icon.ids.more} />}
-          title="More"
-        />
+        <Card.Action key="paths" icon={<Icon.MoreIcon />} title="More" />
       ]}
     />
   ))
@@ -233,7 +211,7 @@ storiesOf('actionBar', module)
       actionBar={[
         <Card.Action
           key="bookmark"
-          icon={<Icon id="bookmark" />}
+          icon={<Icon.BookmarkIcon />}
           title="Bookmark"
         />
       ]}
@@ -245,9 +223,7 @@ storiesOf('bonusBar', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .add('only text', _ => <CardWithDefaults bonusBar="Wow, I'm bonus." />)
   .add('some element', _ => (
-    <CardWithDefaults
-      bonusBar={<Icon id={Icon.ids.channel} size={Icon.sizes.large} />}
-    />
+    <CardWithDefaults bonusBar={<Icon.ChannelIcon size={Icon.sizes.large} />} />
   ))
 
 storiesOf('fullOverlay', module)
@@ -271,10 +247,9 @@ storiesOf('fullOverlay', module)
       fullOverlay={
         <Card.FullOverlayLink>
           <a href="http://duckduckgo.com?q=overlay">
-            <Icon
+            <Icon.PlayCircleIcon
               size={Icon.sizes.large}
               css={{ '& svg': { fill: core.colors.white } }}
-              id={Icon.ids.playCircle}
             />
           </a>
         </Card.FullOverlayLink>
@@ -286,10 +261,9 @@ storiesOf('fullOverlay', module)
       fullOverlay={
         <Card.FullOverlayLink>
           <a href="http://duckduckgo.com?q=overlay">
-            <Icon
+            <Icon.PlayCircleIcon
               size={Icon.sizes.large}
               css={{ '& svg': { fill: core.colors.white } }}
-              id={Icon.ids.playCircle}
             />
           </a>
         </Card.FullOverlayLink>
@@ -370,13 +344,13 @@ storiesOf('tag', module)
   ))
   .add('with icon', _ => (
     <CardWithDefaults
-      tag={<Card.Tag icon={<Icon id={Icon.ids.channel} />}>Channel</Card.Tag>}
+      tag={<Card.Tag icon={<Icon.ChannelIcon />}>Channel</Card.Tag>}
     />
   ))
   .add('long single word', _ => (
     <CardWithDefaults
       tag={
-        <Card.Tag icon={<Icon id={Icon.ids.channel} />}>
+        <Card.Tag icon={<Icon.ChannelIcon />}>
           ChannelChannelChannelChannelChannelChannelChannelChannelChannelChannelChannel
         </Card.Tag>
       }
@@ -385,7 +359,7 @@ storiesOf('tag', module)
   .add('long multi-word', _ => (
     <CardWithDefaults
       tag={
-        <Card.Tag icon={<Icon id={Icon.ids.channel} />}>
+        <Card.Tag icon={<Icon.ChannelIcon />}>
           Channel Channel Channel Channel Channel Channel Channel Channel
           Channel
         </Card.Tag>
@@ -400,7 +374,7 @@ Object.values(Card.sizes).forEach(size =>
       <CardWithDefaults
         size={size}
         title={<Card.Title>{`${size} Card with tag`}</Card.Title>}
-        tag={<Card.Tag icon={<Icon id={Icon.ids.channel} />}>Channel</Card.Tag>}
+        tag={<Card.Tag icon={<Icon.ChannelIcon />}>Channel</Card.Tag>}
       />
     ))
   )

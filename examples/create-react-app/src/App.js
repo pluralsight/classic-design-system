@@ -3,7 +3,7 @@
 import React, { Component } from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
-import Icon from '@pluralsight/ps-design-system-icon'
+import {CodeIcon} from '@pluralsight/ps-design-system-icon'
 import * as Text from '@pluralsight/ps-design-system-text'
 
 import './App.css'
@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Icon size={Icon.sizes.large} id={Icon.ids.code} className="App-logo" />
+        <CodeIcon size={CodeIcon.sizes.large} className="App-logo" />
 
         <Text.P>
           Edit <Text.Code>src/App.js</Text.Code> and save to reload.

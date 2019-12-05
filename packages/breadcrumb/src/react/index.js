@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import Button from '@pluralsight/ps-design-system-button'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import Icon from '@pluralsight/ps-design-system-icon'
+import { CaretLeftIcon } from '@pluralsight/ps-design-system-icon'
 
 import stylesheet from '../css/index.js'
 
@@ -20,7 +20,7 @@ const Breadcrumb = React.forwardRef((props, ref) => {
         appearance={Button.appearances.flat}
         href={href}
         disabled={disabled}
-        icon={<Icon id={Icon.ids.caretLeft} />}
+        icon={<CaretLeftIcon />}
         loading={loading}
         onClick={onClick}
         ref={ref}

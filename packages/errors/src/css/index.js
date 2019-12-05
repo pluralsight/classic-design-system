@@ -1,4 +1,4 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import { colors, layout, type } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
 
@@ -6,12 +6,12 @@ export default {
   '.psds-error-page': {
     maxWidth: '500px',
     margin: '0 auto',
-    padding: `${core.layout.spacingXLarge} ${core.layout.spacingLarge}`,
+    padding: `${layout.spacingXLarge} ${layout.spacingLarge}`,
     textAlign: 'center',
-    color: core.colors.white
+    color: colors.white
   },
   [`.psds-error-page.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray06
+    color: colors.gray06
   },
 
   // __icon
@@ -22,12 +22,12 @@ export default {
     width: '128px'
   },
   [`.psds-error-page__icon.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray04
+    color: colors.gray04
   },
 
   // __code
   '.psds-error-page__code': {
-    padding: `4px 0 ${core.layout.spacingSmall} 0`
+    padding: `4px 0 ${layout.spacingSmall} 0`
   },
 
   // __search
@@ -35,32 +35,32 @@ export default {
     position: 'relative',
     display: 'inline-flex',
     alignItems: 'center',
-    color: core.colors.gray02
+    color: colors.gray02
   },
   [`.psds-error-page__search.psds-theme--${themeNames.light}`]: {
-    background: core.colors.white,
-    color: core.colors.gray03
+    background: colors.white,
+    color: colors.gray03
   },
   '.psds-error-page__search__icon': {
     position: 'absolute',
-    left: core.layout.spacingXSmall,
+    left: layout.spacingXSmall,
     width: iconWidths.medium,
     height: iconWidths.medium,
-    fill: core.colors.gray02
+    fill: colors.gray02
   },
   '.psds-error-page__search__input': {
     position: 'relative',
     height: '40px',
-    padding: `0 ${core.layout.spacingXSmall} 0 calc(${core.layout.spacingXSmall} + ${iconWidths.medium} + ${core.layout.spacingXSmall})`,
-    color: core.colors.gray02,
-    fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightStandard,
+    padding: `0 ${layout.spacingXSmall} 0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall})`,
+    color: colors.gray02,
+    fontSize: type.fontSizeSmall,
+    lineHeight: type.lineHeightStandard,
     background: 'none',
-    border: `1px solid ${core.colors.gray03}`,
+    border: `1px solid ${colors.gray03}`,
     borderRadius: '2px'
   },
   [`.psds-error-page__search__input.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03
+    color: colors.gray03
   },
 
   '@media (min-width: 769px)': {
@@ -70,9 +70,9 @@ export default {
 
     '.psds-error-page__text': {
       '& > h1': {
-        fontSize: core.type.fontSizeLarge,
-        fontWeight: core.type.fontWeightBook,
-        lineHeight: core.type.lineHeightExtra
+        fontSize: type.fontSizeLarge,
+        fontWeight: type.fontWeightBook,
+        lineHeight: type.lineHeightExtra
       }
     }
   }
