@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [17.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@16.0.1...@pluralsight/ps-design-system-site@17.0.0) (2019-12-05)
+
+
+### Code Refactoring
+
+* **actionmenu:** update to use new glamor coding styles ([6048e3e](https://github.com/pluralsight/design-system/commit/6048e3e7ebae155f18fa7c8e4d0727ffc20dfbc9))
+
+
+### Features
+
+* **textarea:** convert to using forwardRef ([8d92050](https://github.com/pluralsight/design-system/commit/8d9205070410bfa14e08213154b3ff2ad48b2dcf))
+
+
+### BREAKING CHANGES
+
+* **textarea:** innerRef is no longer supported
+* **actionmenu:** drop support for css prop
+
+
+
+
+
 ## [16.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@16.0.0...@pluralsight/ps-design-system-site@16.0.1) (2019-12-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site
