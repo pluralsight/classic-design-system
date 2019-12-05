@@ -3,7 +3,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import {CaretLeftIcon, CaretRightIcon, sizes as iconSizes} from '@pluralsight/ps-design-system-icon'
+import {
+  CaretLeftIcon,
+  CaretRightIcon,
+  sizes as iconSizes
+} from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index.js'

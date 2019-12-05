@@ -1,42 +1,60 @@
-import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
-import * as glamor from 'glamor'
+import { compose, css, media } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
+
 import { asideLayout as vars } from '../vars/index.js'
-import { asideLayoutCSS as css } from '../css/index.js'
+import { asideLayoutCSS as stylesheet } from '../css/index.js'
 
-const styleLayout = props =>
-  glamor.css(
-    css['.psds-aside-layout'],
-    css[`.psds-aside-layout--aside-position-${props.asidePosition}`],
-    {
-      '@media (min-width: 769px)':
-        css['@media (min-width: 769px)'][
-          `.psds-aside-layout--aside-position-${props.asidePosition}`
-        ]
-    }
+const styleLayout = props => {
+  const label = 'psds-aside-layout'
+  const position = `${label}--aside-position-${props.asidePosition}`
+
+  return compose(
+    css(stylesheet[`.${label}`]),
+    css(stylesheet[`.${position}`]),
+
+    media(
+      '(min-width: 769px)',
+      compose(
+        css(stylesheet['@media (min-width: 769px)'][`.${label}`]),
+        css(stylesheet['@media (min-width: 769px)'][`.${position}`])
+      )
+    )
   )
+}
 
-const styleAside = props =>
-  glamor.css(
-    css['.psds-aside-layout__aside'],
-    css[`.psds-aside-layout__aside--aside-position-${props.asidePosition}`],
-    {
-      '@media (min-width: 769px)': {
-        ...css['@media (min-width: 769px)'][`.psds-aside-layout__aside`],
-        ...css['@media (min-width: 769px)'][
-          `.psds-aside-layout__aside--aside-position-${props.asidePosition}`
-        ]
-      }
-    }
+const styleAside = props => {
+  const label = 'psds-aside-layout__aside'
+  const position = `${label}--aside-position-${props.asidePosition}`
+
+  return compose(
+    css(stylesheet[`.${label}`]),
+    css(stylesheet[`.${position}`]),
+
+    media(
+      '(min-width: 769px)',
+      compose(
+        css(stylesheet['@media (min-width: 769px)'][`.${label}`]),
+        css(stylesheet['@media (min-width: 769px)'][`.${position}`])
+      )
+    )
   )
+}
 
-const styleMain = props =>
-  glamor.css(css['.psds-aside-layout__main'], {
-    '@media (min-width: 769px)':
-      css['@media (min-width: 769px)']['.psds-aside-layout__main']
-  })
+const styleMain = props => {
+  const label = 'psds-aside-layout__main'
+
+  return compose(
+    css(stylesheet[`.${label}`]),
+
+    media(
+      '(min-width: 769px)',
+      css(stylesheet['@media (min-width: 769px)'][`.${label}`])
+    )
+  )
+}
 
 const rmNonHtmlProps = props => {
   const { main, aside, asidePosition, ...rest } = props

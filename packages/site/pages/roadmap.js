@@ -1,6 +1,6 @@
 import Badge from '@pluralsight/ps-design-system-badge'
 import * as core from '@pluralsight/ps-design-system-core'
-import {colors as iconColors} from '@pluralsight/ps-design-system-icon'
+import { colors as iconColors } from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -145,12 +145,15 @@ class Task extends React.Component {
     this.handleMouseOut = this.handleMouseOut.bind(this)
     this.state = { isOver: false }
   }
+
   handleMouseOver() {
     this.setState({ isOver: true })
   }
+
   handleMouseOut() {
     this.setState({ isOver: false })
   }
+
   render() {
     const { item } = this.props
     const title =

@@ -1,4 +1,4 @@
-import * as glamor from 'glamor'
+import { compose, css, media } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -6,44 +6,58 @@ import Button from '@pluralsight/ps-design-system-button'
 import { headingSizes } from '@pluralsight/ps-design-system-text'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 
 import Heading from './heading.js'
 import icons from './icon-loader.js'
 
 const styles = {
-  page: ({ themeName }) =>
-    glamor.css(
-      css['.psds-error-page'],
-      css[`.psds-error-page.psds-theme--${themeName}`],
-      {
-        '@media (min-width: 769px)':
-          css['@media (min-width: 769px)']['.psds-error-page']
-      }
-    ),
-  icon: ({ themeName }) =>
-    glamor.css(
-      css['.psds-error-page__icon'],
-      css[`.psds-error-page__icon.psds-theme--${themeName}`]
-    ),
-  text: props =>
-    glamor.css({
-      '@media (min-width: 769px)': {
-        '> h1': css['@media (min-width: 769px)']['.psds-error-page__text > h1']
-      }
-    }),
-  code: props => glamor.css(css['.psds-error-page__code']),
-  search: ({ themeName }) =>
-    glamor.css(
-      css['.psds-error-page__search'],
-      css[`.psds-error-page__search.psds-theme--${themeName}`]
-    ),
-  searchIcon: _ => glamor.css(css['.psds-error-page__search__icon']),
-  searchInput: ({ themeName }) =>
-    glamor.css(
-      css['.psds-error-page__search__input'],
-      css[`.psds-error-page__search__input.psds-theme--${themeName}`]
+  page: ({ themeName }) => {
+    const label = 'psds-error-page'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      media(
+        '(min-width: 769px)',
+        stylesheet['@media (min-width: 769px)'][`.${label}`]
+      )
     )
+  },
+  icon: ({ themeName }) => {
+    const label = 'psds-error-page__icon'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    )
+  },
+  text: () => {
+    const label = 'psds-error-page__text'
+
+    return media(
+      '(min-width: 769px)',
+      stylesheet['@media (min-width: 769px)'][`.${label}`]
+    )
+  },
+  code: props => css(stylesheet['.psds-error-page__code']),
+  search: ({ themeName }) => {
+    const label = 'psds-error-page__search'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    )
+  },
+  searchIcon: _ => css(stylesheet['.psds-error-page__search__icon']),
+  searchInput: ({ themeName }) => {
+    const label = 'psds-error-page__search__input'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    )
+  }
 }
 
 const SearchForm = props => (

@@ -19,7 +19,11 @@ const style = {
     })
 }
 
-const Icon = React.forwardRef(({ children, ...props }, ref) => <div {...style.icon(props)} {...filterReactProps(props)} ref={ref}>{children}</div>)
+const Icon = React.forwardRef(({ children, ...props }, ref) => (
+  <div {...style.icon(props)} {...filterReactProps(props)} ref={ref}>
+    {children}
+  </div>
+))
 Icon.displayName = 'Icon'
 Icon.propTypes = {
   children: PropTypes.node,

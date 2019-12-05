@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import Halo from '@pluralsight/ps-design-system-halo'
-import {CalendarIcon, WarningIcon} from '@pluralsight/ps-design-system-icon'
+import { CalendarIcon, WarningIcon } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
@@ -149,7 +149,7 @@ const DatePicker = React.forwardRef((props, ref) => {
       ...date,
       [name]: value
     }
-    const alwaysReValidateDay = forceValidValueFor['dd'](
+    const alwaysReValidateDay = forceValidValueFor.dd(
       currentDateOverwrittenByEventValue
     )
 
@@ -253,13 +253,13 @@ const DatePicker = React.forwardRef((props, ref) => {
       </Halo>
 
       {isOpen && (
-        <React.Fragment>
+        <>
           <Overlay onClick={handleOverlayClick} />
 
           <div {...styles.calendarContainer(themeName, props)}>
             <Calendar date={date} onSelect={handleCalendarSelect} />
           </div>
-        </React.Fragment>
+        </>
       )}
 
       {props.subLabel && (

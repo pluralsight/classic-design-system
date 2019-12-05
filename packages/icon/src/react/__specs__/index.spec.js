@@ -22,9 +22,7 @@ describe('Icon', () => {
   })
 
   it('should allow overriding the aria-label of the svg', () => {
-    const { container } = render(
-      <Icons.SearchIcon  aria-label="test label" />
-    )
+    const { container } = render(<Icons.SearchIcon aria-label="test label" />)
     const svg = container.querySelector('svg')
     expect(svg).toHaveAttribute('aria-label', 'test label')
   })

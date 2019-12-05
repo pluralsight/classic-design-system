@@ -3,7 +3,7 @@ import React from 'react'
 import { withRouter } from 'next/router.js'
 
 import * as core from '@pluralsight/ps-design-system-core'
-import {CloseIcon} from '@pluralsight/ps-design-system-icon'
+import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 
 import { withHeadings } from './content.js'
 import Link from './link.js'

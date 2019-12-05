@@ -80,16 +80,8 @@ storiesOf('combo', module)
           icon={<Icon.BookmarkIcon />}
           title="Bookmark"
         />,
-        <Card.Action
-          key="gear"
-          icon={<Icon.GearIcon />}
-          title="Settings"
-        />,
-        <Card.Action
-          key="more"
-          icon={<Icon.MoreIcon />}
-          title="More"
-        />
+        <Card.Action key="gear" icon={<Icon.GearIcon />} title="Settings" />,
+        <Card.Action key="more" icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
       tag={<Card.Tag icon={<Icon.PathIcon />}>Path</Card.Tag>}
@@ -132,16 +124,8 @@ storiesOf('combo', module)
           icon={<Icon.BookmarkIcon />}
           title="Bookmark"
         />,
-        <Card.Action
-          key="gear"
-          icon={<Icon.GearIcon />}
-          title="Settings"
-        />,
-        <Card.Action
-          key="more"
-          icon={<Icon.MoreIcon />}
-          title="More"
-        />
+        <Card.Action key="gear" icon={<Icon.GearIcon />} title="Settings" />,
+        <Card.Action key="more" icon={<Icon.MoreIcon />} title="More" />
       ]}
       tag={<Card.Tag icon={<Icon.PathIcon />}>Path</Card.Tag>}
     />
@@ -218,11 +202,7 @@ storiesOf('actionBar', module)
           icon={<Icon.BookmarkIcon />}
           title="Bookmark"
         />,
-        <Card.Action
-          key="paths"
-          icon={<Icon.MoreIcon />}
-          title="More"
-        />
+        <Card.Action key="paths" icon={<Icon.MoreIcon />} title="More" />
       ]}
     />
   ))
@@ -243,9 +223,7 @@ storiesOf('bonusBar', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
   .add('only text', _ => <CardWithDefaults bonusBar="Wow, I'm bonus." />)
   .add('some element', _ => (
-    <CardWithDefaults
-      bonusBar={<Icon.ChannelIcon size={Icon.sizes.large} />}
-    />
+    <CardWithDefaults bonusBar={<Icon.ChannelIcon size={Icon.sizes.large} />} />
   ))
 
 storiesOf('fullOverlay', module)

@@ -76,10 +76,7 @@ Object.keys(TextInput.appearances).forEach(appearance =>
 storiesOf('after field', module)
   .addDecorator(PaddingDecorator)
   .add('w/icon', _ => (
-    <TextInput
-      fieldAfter={<Icon.CloseIcon />}
-      placeholder="Some placeholder"
-    />
+    <TextInput fieldAfter={<Icon.CloseIcon />} placeholder="Some placeholder" />
   ))
 
 storiesOf('disabled', module)

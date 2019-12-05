@@ -8,11 +8,12 @@ export default {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'left',
-    flexWrap: 'wrap'
-  },
-  '.psds-page-head-layout__actions > *': {
-    marginRight: core.layout.spacingSmall,
-    marginBottom: core.layout.spacingMedium
+    flexWrap: 'wrap',
+
+    '& > *': {
+      marginRight: core.layout.spacingSmall,
+      marginBottom: core.layout.spacingMedium
+    }
   },
   '@media (min-width: 769px)': {
     '.psds-page-heading-layout__heading': {
@@ -24,14 +25,15 @@ export default {
       paddingLeft: core.layout.spacingLarge,
       justifyContent: 'flex-end',
       alignItems: 'center',
-      flexWrap: 'nowrap'
-    },
-    '.psds-page-head-layout__actions > *': {
-      marginRight: 0,
-      marginBottom: 0
-    },
-    '.psds-page-head-layout__actions > * + *': {
-      marginLeft: core.layout.spacingSmall
+      flexWrap: 'nowrap',
+
+      '& > *': {
+        marginRight: 0,
+        marginBottom: 0
+      },
+      '& > * + *': {
+        marginLeft: core.layout.spacingSmall
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-import { css } from 'glamor'
+import { compose, css, media } from 'glamor'
 import { Heading } from '@pluralsight/ps-design-system-text'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -6,32 +6,30 @@ import React from 'react'
 import { pageHeadingLayoutCSS as stylesheet } from '../css/index.js'
 
 const styles = {
-  actions: _ =>
-    css(stylesheet['.psds-page-heading-layout__actions'], {
-      '& > *': stylesheet['.psds-page-head-layout__actions > *'],
-      '@media (min-width: 769px)': {
-        ...stylesheet['@media (min-width: 769px)'][
-          '.psds-page-heading-layout__actions'
-        ],
-        ...{
-          '& > *':
-            stylesheet['@media (min-width: 769px)'][
-              '.psds-page-head-layout__actions > *'
-            ],
-          '& > * + *':
-            stylesheet['@media (min-width: 769px)'][
-              '.psds-page-head-layout__actions > * + *'
-            ]
-        }
-      }
-    }),
-  heading: _ =>
-    css(stylesheet['.psds-page-heading-layout__heading'], {
-      '@media (min-width: 769px)':
-        stylesheet['@media (min-width: 769px)'][
-          '.psds-page-heading-layout__heading'
-        ]
-    }),
+  actions: _ => {
+    const label = 'psds-page-heading-layout__actions'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+
+      media(
+        '(min-width: 769px)',
+        css(stylesheet['@media (min-width: 769px)'][`.${label}`])
+      )
+    )
+  },
+  heading: _ => {
+    const label = 'psds-page-heading-layout__heading'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+
+      media(
+        '(min-width: 769px)',
+        css(stylesheet['@media (min-width: 769px)'][`.${label}`])
+      )
+    )
+  },
   layout: _ => css(stylesheet['.psds-page-heading-layout'])
 }
 

@@ -1,4 +1,4 @@
-import {colors, layout, type} from '@pluralsight/ps-design-system-core'
+import { colors, layout, type } from '@pluralsight/ps-design-system-core'
 import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
@@ -23,14 +23,14 @@ export default {
     fontWeight: type.fontWeightBook,
     color: colors.gray03,
     padding: `${layout.spacingXSmall} ${layout.spacingMedium}`,
-    border: 'none'
+    border: 'none',
+
+    '&:focus': { outline: 'none' }
   },
-  '.psds-text-area__field:focus': {
-    outline: 'none'
+  [`.psds-text-area__field.psds-theme--${themeNames.light}`]: {
+    '&:focus': { border: '1px solid transparent' }
   },
-  [`.psds-text-area__field.psds-theme--${themeNames.light}:focus`]: {
-    border: '1px solid transparent'
-  },
+
   [`.psds-text-area__field--error.psds-theme--${themeNames.light}`]: {
     border: '1px solid transparent'
   },

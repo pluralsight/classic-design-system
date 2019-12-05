@@ -1,60 +1,79 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
+import PropTypes from 'prop-types'
+import React from 'react'
+
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
 import Icon, { WarningIcon } from '@pluralsight/ps-design-system-icon'
-import PropTypes from 'prop-types'
-import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { useCombinedRefs } from '@pluralsight/ps-design-system-util'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 import { findMatchingActionMenuItem } from './utils.js'
 import * as vars from '../vars/index.js'
 
 const styles = {
-  buttonSizer: _ => glamor.css(css['.psds-dropdown__button-sizer']),
-  error: _ => glamor.css(css['.psds-dropdown__error']),
-  field: ({ appearance, error, icon, themeName, size }) =>
-    glamor.css(
-      css['.psds-dropdown__field'],
-      size === vars.sizes.small &&
-        css['.psds-dropdown__field.psds-dropdown--small'],
-      css[`.psds-dropdown__field--appearance-${appearance}`],
-      css[`.psds-dropdown__field.psds-theme--${themeName}`],
-      error && css[`.psds-dropdown__field--error.psds-theme--${themeName}`]
-    ),
-  fieldAligner: _ => glamor.css(css['.psds-dropdown__field-aligner']),
-  fieldContainer: _ => glamor.css(css['.psds-dropdown__field-container']),
-  icon: ({ appearance, icon, themeName }) =>
-    glamor.css(
-      css['.psds-dropdown__icon'],
-      css[`.psds-dropdown__icon--appearance-${appearance}`],
-      css[`.psds-dropdown__icon.psds-theme--${themeName}`]
-    ),
-  dropdown: ({ disabled }) =>
-    glamor.css(
-      css['.psds-dropdown'],
-      disabled && css['.psds-dropdown--disabled']
-    ),
-  label: ({ themeName }) =>
-    glamor.css(
-      css['.psds-dropdown__label'],
-      css[`.psds-dropdown__label.psds-theme--${themeName}`]
-    ),
-  menu: _ => glamor.css(css['.psds-dropdown__menu']),
-  placeholder: ({ size }) =>
-    glamor.css(
-      css['.psds-dropdown__placeholder'],
-      size === vars.sizes.small &&
-        css['.psds-dropdown__placeholder.psds-dropdown--small']
-    ),
-  subLabel: ({ themeName }) =>
-    glamor.css(
-      css['.psds-dropdown__sub-label'],
-      css[`.psds-dropdown__sub-label.psds-theme--${themeName}`]
-    ),
-  pageOverlay: _ => glamor.css(css['.psds-dropdown__page-overlay']),
-  halo: _ => glamor.css(css['.psds-dropdown__field-halo'])
+  buttonSizer: _ => css(stylesheet['.psds-dropdown__button-sizer']),
+  error: _ => css(stylesheet['.psds-dropdown__error']),
+  field: ({ appearance, error, themeName, size }) => {
+    const label = 'psds-dropdown__field'
+    const isSmall = size === vars.sizes.small
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      isSmall && css(stylesheet[`.${label}.psds-dropdown--small`]),
+      css(stylesheet[`.${label}--appearance-${appearance}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      error && css(stylesheet[`.${label}-error.psds-theme--${themeName}`])
+    )
+  },
+  fieldAligner: _ => css(stylesheet['.psds-dropdown__field-aligner']),
+  fieldContainer: _ => css(stylesheet['.psds-dropdown__field-container']),
+  icon: ({ appearance, icon, themeName }) => {
+    const label = 'psds-dropdown__icon'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}--appearance-${appearance}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    )
+  },
+  dropdown: ({ disabled }) => {
+    const label = 'psds-dropdown'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      disabled && css(stylesheet[`.${label}--disabled`])
+    )
+  },
+  label: ({ themeName }) => {
+    const label = 'psds-dropdown__label'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    )
+  },
+  menu: _ => css(stylesheet['.psds-dropdown__menu']),
+  placeholder: ({ size }) => {
+    const label = 'psds-dropdown__placeholder'
+    const isSmall = size === vars.sizes.small
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      isSmall && css(stylesheet[`.${label}.psds-dropdown--small`])
+    )
+  },
+  subLabel: ({ themeName }) => {
+    const label = 'psds-dropdown__sub-label'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    )
+  },
+  pageOverlay: _ => css(stylesheet['.psds-dropdown__page-overlay']),
+  halo: _ => css(css['.psds-dropdown__field-halo'])
 }
 
 const CaretDown = _ => (

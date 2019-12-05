@@ -1,7 +1,7 @@
 import 'isomorphic-fetch'
 
 import * as core from '@pluralsight/ps-design-system-core'
-import {colors as iconColors} from '@pluralsight/ps-design-system-icon'
+import { colors as iconColors } from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -53,6 +53,7 @@ export default class ChangeLogContainer extends React.Component {
     super(props)
     this.state = { packages: null }
   }
+
   async fetchPackages() {
     console.log('fetching packages...')
     try {
@@ -68,9 +69,11 @@ export default class ChangeLogContainer extends React.Component {
       console.log('err', err)
     }
   }
+
   componentDidMount() {
     if (this.props.packageName) this.fetchPackages()
   }
+
   render() {
     return this.state.packages ? (
       <ChangeLog

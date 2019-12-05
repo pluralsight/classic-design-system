@@ -1,4 +1,4 @@
-import {CloseIcon} from '@pluralsight/ps-design-system-icon'
+import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 import Tag from '@pluralsight/ps-design-system-tag'
 import * as Text from '@pluralsight/ps-design-system-text'

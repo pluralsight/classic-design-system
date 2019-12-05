@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Collapsible from '@pluralsight/ps-design-system-collapsible'
-import {CaretDownIcon} from '@pluralsight/ps-design-system-icon'
+import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 
 import { List } from './list.js'
 

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import {CaretDownIcon} from '@pluralsight/ps-design-system-icon'
+import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 
 import { useHideLabels } from './context.js'
 import { List, CollapsibleList } from './list.js'
@@ -39,27 +39,18 @@ const styles = {
   tier1Header: () => {
     const label = `verticaltabs__tier1__header`
 
-    return compose(
-      css({ label }),
-      css(stylesheet[`.psds-${label}`])
-    )
+    return compose(css({ label }), css(stylesheet[`.psds-${label}`]))
   },
   tier1HeaderInner: () => {
     const label = `verticaltabs__tier1__header__inner`
 
-    return compose(
-      css({ label }),
-      css(stylesheet[`.psds-${label}`])
-    )
+    return compose(css({ label }), css(stylesheet[`.psds-${label}`]))
   },
 
   tier2Header: () => {
     const label = `verticaltabs__tier2__header`
 
-    return compose(
-      css({ label }),
-      css(stylesheet[`.psds-${label}`])
-    )
+    return compose(css({ label }), css(stylesheet[`.psds-${label}`]))
   },
 
   tierHeaderLabel: (_, { hideLabels }) => {

@@ -90,9 +90,7 @@ storiesOf('components|VerticalTabs/Tier1', module)
   .add('basic', () => (
     <Tier1
       header={
-        <Tier1.Header icon={<Icon.PlaceholderIcon />}>
-          text here
-        </Tier1.Header>
+        <Tier1.Header icon={<Icon.PlaceholderIcon />}>text here</Tier1.Header>
       }
     />
   ))
@@ -118,9 +116,7 @@ storiesOf('components|VerticalTabs/Tier1', module)
     <Tier1
       active
       header={
-        <Tier1.Header icon={<Icon.PlaceholderIcon />}>
-          text here
-        </Tier1.Header>
+        <Tier1.Header icon={<Icon.PlaceholderIcon />}>text here</Tier1.Header>
       }
     />
   ))
@@ -128,9 +124,7 @@ storiesOf('components|VerticalTabs/Tier1', module)
     <Tier1
       collapsible
       header={
-        <Tier1.Header icon={<Icon.PlaceholderIcon />}>
-          text here
-        </Tier1.Header>
+        <Tier1.Header icon={<Icon.PlaceholderIcon />}>text here</Tier1.Header>
       }
     >
       <Placeholder />

@@ -1,17 +1,17 @@
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import React, { useRef } from 'react'
 import PropTypes from 'prop-types'
 
 import Button from '@pluralsight/ps-design-system-button'
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
-import {CloseIcon, SearchIcon} from '@pluralsight/ps-design-system-icon'
+import { CloseIcon, SearchIcon } from '@pluralsight/ps-design-system-icon'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 import Theme, { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 
 const styles = {
-  clear: _ => glamor.css(css['.psds-searchinput-clear'])
+  clear: _ => css(stylesheet['.psds-searchinput-clear'])
 }
 
 const SearchInput = React.forwardRef((props, forwardedRef) => {

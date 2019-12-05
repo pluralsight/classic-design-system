@@ -34,22 +34,15 @@ export default _ => (
             'disabled',
             'boolean',
             null,
-            <code>false</code>,
+            <code key="value">false</code>,
             'standard input disabled flag'
           ]),
           PropTypes.row([
             'error',
             'boolean',
             null,
-            <code>false</code>,
+            <code key="value">false</code>,
             'error state flag'
-          ]),
-          PropTypes.row([
-            'innerRef',
-            'DOM element => ()',
-            null,
-            null,
-            'textarea field react ref callback'
           ]),
           PropTypes.row([
             'label',
@@ -69,7 +62,7 @@ export default _ => (
             'rows',
             'number',
             null,
-            <code>4</code>,
+            <code key="value">4</code>,
             'expand the viewable rows (height)'
           ]),
           PropTypes.row([

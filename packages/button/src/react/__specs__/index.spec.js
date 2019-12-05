@@ -1,7 +1,7 @@
 import { fireEvent, render } from '@testing-library/react'
 import React from 'react'
 
-import {CheckIcon} from '@pluralsight/ps-design-system-icon'
+import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 
 import Button from '../index.js'
 

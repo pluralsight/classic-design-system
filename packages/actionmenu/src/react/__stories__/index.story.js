@@ -31,15 +31,9 @@ storiesOf('menu items', module)
   ))
   .add('with icons', _ => (
     <ActionMenu>
-      <ActionMenu.Item icon={<Icon.ChannelIcon />}>
-        One item
-      </ActionMenu.Item>
-      <ActionMenu.Item icon={<Icon.PathIcon />}>
-        Two item
-      </ActionMenu.Item>
-      <ActionMenu.Item icon={<Icon.ReportIcon />}>
-        Three item
-      </ActionMenu.Item>
+      <ActionMenu.Item icon={<Icon.ChannelIcon />}>One item</ActionMenu.Item>
+      <ActionMenu.Item icon={<Icon.PathIcon />}>Two item</ActionMenu.Item>
+      <ActionMenu.Item icon={<Icon.ReportIcon />}>Three item</ActionMenu.Item>
     </ActionMenu>
   ))
   .add('long text', _ => (

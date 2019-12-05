@@ -1,5 +1,5 @@
 import * as core from '@pluralsight/ps-design-system-core'
-import {MenuIcon} from '@pluralsight/ps-design-system-icon'
+import { MenuIcon } from '@pluralsight/ps-design-system-icon'
 import { Link, TitleLogo, TopBar } from './index.js'
 import PropTypes from 'prop-types'
 import React from 'react'

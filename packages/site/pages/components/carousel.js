@@ -5,7 +5,7 @@ import Avatar from '@pluralsight/ps-design-system-avatar'
 import { BelowRight } from '@pluralsight/ps-design-system-position'
 import Card from '@pluralsight/ps-design-system-card'
 import Carousel from '@pluralsight/ps-design-system-carousel'
-import {MoreIcon} from '@pluralsight/ps-design-system-icon'
+import { MoreIcon } from '@pluralsight/ps-design-system-icon'
 import Note from '@pluralsight/ps-design-system-note'
 import * as Text from '@pluralsight/ps-design-system-text'
 
@@ -384,7 +384,7 @@ export default _ => (
           <Carousel size={Carousel.sizes.wide}>
             <Note
               avatar={<Avatar name="Bob Ross" src="//picsum.photos/128" />}
-              heading={'Note'}
+              heading="Note"
               message={
                 <p>
                   If these lines aren't straight, your water's going to run
@@ -399,20 +399,20 @@ export default _ => (
             <Avatar name="Avatar" />
 
             <Card
-              image={<Card.Image src={'/static/img/course1.jpg'} />}
+              image={<Card.Image src="/static/img/course1.jpg" />}
               title={<Card.Title>Card</Card.Title>}
             />
 
             <Avatar name="Avatar" />
 
             <Card
-              image={<Card.Image src={'/static/img/course1.jpg'} />}
+              image={<Card.Image src="/static/img/course1.jpg" />}
               title={<Card.Title>Card</Card.Title>}
             />
 
             <Note
               avatar={<Avatar name="Bob Ross" src="//picsum.photos/128" />}
-              heading={'Note'}
+              heading="Note"
               message={
                 <p>
                   If these lines aren't straight, your water's going to run

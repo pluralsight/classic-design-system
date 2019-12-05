@@ -1,79 +1,61 @@
-import * as glamor from 'glamor'
-import Halo from '@pluralsight/ps-design-system-halo'
-import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
-import { whitelistProps } from '@pluralsight/ps-design-system-util'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { withTheme } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css/index.js'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import Halo from '@pluralsight/ps-design-system-halo'
+import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
+
+import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
-const tagHtmlPropsWhitelist = [
-  'href',
-  'className',
-  'style',
-  'title',
-  'tabIndex',
-  'target',
-  /^on/,
-  /^aria-/,
-  /^data-/
-]
-
 const styles = {
-  tag: ({ href, icon, isPressed, onClick, size, themeName }) =>
-    glamor.css(
-      css['.psds-tag'],
-      css[`.psds-tag.psds-theme--${themeName}`],
-      (href || onClick) && css['.psds-tag--clickable'],
-      (href || onClick) && css[`.psds-tag--clickable.psds-theme--${themeName}`],
-      css[`.psds-tag--size-${size}`],
-      icon && css['.psds-tag--icon'],
-      isPressed && css['.psds-tag--isPressed']
-    ),
-  label: ({ icon, themeName }) =>
-    glamor.css(
-      css['.psds-tag__label'],
-      css[`.psds-tag__label.psds-theme--${themeName}`],
-      icon && css['.psds-tag__label--icon']
+  tag: (themeName, { href, icon, isPressed, onClick, size }) => {
+    const label = 'psds-tag'
+    const clickable = href || onClick
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      clickable && css(stylesheet[`.${label}--clickable`]),
+      clickable &&
+        css(stylesheet[`.${label}--clickable.psds-theme--${themeName}`]),
+      css(stylesheet[`.${label}--size-${size}`]),
+      icon && css(stylesheet[`.${label}--icon`]),
+      isPressed && css(stylesheet[`.${label}--isPressed`])
     )
+  },
+  label: (themeName, { icon }) => {
+    const label = 'psds-tag__label'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      icon && stylesheet[`.${label}--icon`]
+    )
+  }
 }
 
-const renderIcon = props =>
-  props.icon
-    ? React.cloneElement(props.icon, {
-        css: {
-          cursor: props.icon.props.onClick ? 'pointer' : 'default'
-        },
-        onClick: evt => {
-          evt.stopPropagation()
-          if (props.icon.props.onClick) props.icon.props.onClick(evt)
-        },
-        size:
-          props.size === vars.sizes.small ? iconSizes.small : iconSizes.medium
-      })
-    : null
+const Tag = props => {
+  const TagName = props.href ? 'a' : 'div'
+  const themeName = useTheme()
 
-const Tag = withTheme((props, context) => {
-  const tagName = props.href ? 'a' : 'div'
   return (
     <Halo error={props.error} shape={Halo.shapes.pill} inline>
-      {React.createElement(
-        tagName,
-        {
-          ...styles.tag(props),
-          ...whitelistProps(props, tagHtmlPropsWhitelist),
-          ...(props.target ? { target: props.target } : null),
-          ...(props.isPressed ? { 'aria-pressed': true } : null),
-          ...(props.onClick ? { role: 'button', tabIndex: 0 } : null)
-        },
-        <span {...styles.label(props)}>{props.children}</span>,
-        renderIcon(props)
-      )}
+      <TagName
+        {...(props.isPressed && { 'aria-pressed': true })}
+        {...(props.onClick && { role: 'button', tabIndex: 0 })}
+        {...styles.tag(themeName, props)}
+        {...filterReactProps(props, { tagName: TagName })}
+        icon={undefined} // NOTE: prevent icon prop from passing through
+      >
+        <Label>{props.children}</Label>
+        {renderIcon(props)}
+      </TagName>
     </Halo>
   )
-})
+}
 
 Tag.displayName = 'Tag'
 Tag.sizes = vars.sizes
@@ -87,9 +69,32 @@ Tag.propTypes = {
   onClick: PropTypes.func,
   size: PropTypes.oneOf(Object.keys(vars.sizes))
 }
+
 Tag.defaultProps = {
   isPressed: false,
   size: vars.sizes.medium
+}
+
+const Label = props => {
+  const themeName = useTheme()
+
+  return <span {...styles.label(themeName, props)} {...props} />
+}
+
+const renderIcon = props => {
+  if (!props.icon) return null
+
+  const css = {
+    cursor: props.icon.props.onClick ? 'pointer' : 'default'
+  }
+  const onClick = evt => {
+    evt.stopPropagation()
+    if (props.icon.props.onClick) props.icon.props.onClick(evt)
+  }
+  const size =
+    props.size === vars.sizes.small ? iconSizes.small : iconSizes.medium
+
+  return React.cloneElement(props.icon, { css, onClick, size })
 }
 
 export const sizes = vars.sizes
