@@ -57,7 +57,7 @@ const styles = {
   }
 }
 
-const TextArea = (props, context) => {
+const TextArea = React.forwardRef((props, ref) => {
   const themeName = useTheme()
 
   return (
@@ -74,7 +74,7 @@ const TextArea = (props, context) => {
             {...styles.field(themeName, props)}
             disabled={props.disabled}
             placeholder={props.placeholder}
-            ref={props.innerRef}
+            ref={ref}
             style={{ height: calcRowsPxHeight(props.rows) }}
           />
         </Halo>
@@ -91,13 +91,12 @@ const TextArea = (props, context) => {
       )}
     </label>
   )
-}
+})
 
 TextArea.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
-  innerRef: PropTypes.func,
   label: PropTypes.node,
   placeholder: PropTypes.string,
   rows: PropTypes.number,
